@@ -1,0 +1,14 @@
+language: node_js
+
+node_js:
+  - "12.8.0"
+
+cache:
+  directories:
+    - "node_modules"
+
+script:
+  - '[ "$TRAVIS_PULL_REQUEST" = "false" ] && npm run verify || npm run test'
+
+git:
+  depth: 5
