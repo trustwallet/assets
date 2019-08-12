@@ -25,7 +25,7 @@ function checkRootDir () {
 checkBlockhainsFolder()
 
 function checkBlockhainsFolder(){
-    const currentBlockchains = 47
+    const currentBlockchains = 58
     const foundBlockchains = readDirSync('./blockchains')
 
     if (foundBlockchains.length !== currentBlockchains) {
@@ -121,7 +121,7 @@ async function getBinanceTokenSymbols() {
     })
 }
 
-const exitWithMsg = msg => {
+function exitWithMsg (msg) {
     console.log(msg)
     process.exit(1)
 }
