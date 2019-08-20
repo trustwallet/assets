@@ -1,7 +1,7 @@
 # Trust Wallet Assets Info
 ## Overview
 Hello and welcome to Trust Wallet assets info contribution guide. We appriciate your effort to open-source. 
-Token repository [https://github.com/TrustWallet/tokens](https://github.com/TrustWallet/tokens) (repo) is a source of images used by [Trust Wallet](https://trustwallet.com/) including:
+Token repository [https://github.com/trustwallet/assets](https://github.com/trustwallet/assets) (repo) is a source of images used by [Trust Wallet](https://trustwallet.com/) including:
 
 1. [ERC20](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md) tokens on Ethereum compatible networks supported by Trust Wallet such as:
   - [Ethereum (ETH)](https://ethereum.org/)
@@ -19,11 +19,11 @@ Token repository [https://github.com/TrustWallet/tokens](https://github.com/Trus
 
 4. [coins](https://github.com/satoshilabs/slips/blob/master/slip-0044.md) integrated in [Wallet Core](https://developer.trustwallet.com/wallet-core)
 
-5. dApp images available in `Browser` section in Trust Wallet and at https://dapps.trustwallet.com. [Folder for upload](https://github.com/TrustWallet/tokens/tree/master/dapps) 
+5. dApp images available in `Browser` section in Trust Wallet and at https://dapps.trustwallet.com. [Folder for upload](https://github.com/trustwallet/assets/tree/master/dapps) 
 
 6. Coming soon: token info, token price, blacklisted and whitelisted tokens (mostly scam/spam ones)
 
-<center><img src='https://raw.githubusercontent.com/TrustWallet/tokens/master/tutorial/trust-wallet.png'></center>
+<center><img src='https://raw.githubusercontent.com/trustwallet/assets/master/media/trust-wallet.png'></center>
 
 ## Contribution steps
 
@@ -74,9 +74,9 @@ Token repository [https://github.com/TrustWallet/tokens](https://github.com/Trus
 
 ## Common uploads
 Uploading:
-1. Ethereum ERC20 [token folder](https://github.com/TrustWallet/tokens/tree/master/blockchains/ethereum/assets)
-2. Binance DEX BEP2 token [token folder](https://github.com/TrustWallet/tokens/tree/master/blockchains/binannce/assets)
-3. TRON TRC10 token [token folder](https://github.com/TrustWallet/tokens/tree/master/blockchains/binannce/assets)
+1. Ethereum ERC20 [token folder](https://github.com/trustwallet/assets/tree/master/blockchains/ethereum/assets)
+2. Binance DEX BEP2 token [token folder](https://github.com/trustwallet/assets/tree/master/blockchains/binannce/assets)
+3. TRON TRC10 token [token folder](https://github.com/trustwallet/assets/tree/master/blockchains/binannce/assets)
 
 
 ## How To Add Asset
@@ -84,7 +84,7 @@ Process adding new tokens may look complicated at first glance, but once you com
 
 ### Easy way
 1. [Follow image requirements](#image-requirements)
-2. Proceed to [https://github.com/TrustWallet/tokens](https://github.com/TrustWallet/tokens)
+2. Proceed to [https://github.com/trustwallet/assets](https://github.com/trustwallet/assets)
 3. Press on `Fork` in the top right corner, wait for process to complete
 4. Navigate to desire chain folder you want to add asset
 5. Prepare folder with image on your computer
@@ -101,7 +101,7 @@ Process adding new tokens may look complicated at first glance, but once you com
 1. Fork the repo to your own github account
 2. Clone fork and crate new branch:
 ```bash
-git clone git@github.com:YOUR_HANDLE/token-profile.git
+git clone git@github.com:YOUR_HANDLE/assets.git
 cd tokens
 git branch <branch_name>
 git checkout <branch_name>
@@ -123,34 +123,34 @@ Both clients, Android and iOS keep old image cache for up to 7 days. In order to
 ## How to use it? (For Developers)
 Base URL for token image:
 ```js
-https://raw.githubusercontent.com/TrustWallet/tokens/master/blockchains/ethereum/assets/<contract_address_lowercase>/logo.png
+https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/<contract_address_lowercase>/logo.png
 ```
 
 Base URL for coin image:
 ```js
-https://raw.githubusercontent.com/TrustWallet/tokens/master/blockchains/<coin_name_lowercase>/info/logo.png
+https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/<coin_name_lowercase>/info/logo.png
 ```
 
 Examples:
 
 Coin logo, e.g Bitcoin:
 ```js
-https://raw.githubusercontent.com/TrustWallet/tokens/master/blockchains/bitcoin/info/logo.png
+https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/bitcoin/info/logo.png
 ```
 
 ERC20:
 ```js
-https://raw.githubusercontent.com/TrustWallet/tokens/master/blockchains/ethereum/assets/0x006bea43baa3f7a6f765f14f10a1a1b08334ef45/logo.png
+https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x006bea43baa3f7a6f765f14f10a1a1b08334ef45/logo.png
 ```
 
 BEP-2:
 ```js
-https://raw.githubusercontent.com/TrustWallet/tokens/master/blockchains/binance/assets/ankr-e97/logo.png
+https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/ankr-e97/logo.png
 ```
 
 TRC-10:
 ```js
-https://raw.githubusercontent.com/TrustWallet/tokens/master/blockchains/tron/assets/1002000/logo.png
+https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/tron/assets/1002000/logo.png
 ```
 
 ## Used in Applications
