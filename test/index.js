@@ -42,6 +42,10 @@ function checkBlockhainsFolder(){
             const assets = readDirSync(assetsPath)
 
             assets.forEach(asset => {
+                if (upperCaseExp.test(asset)) {
+                    exitWithMsg(`${asset} folder must be in lowercase`)
+                }
+
                 if (!isAddress(asset)) {
                     exitWithMsg(`Invalid asset naming "${assetsPath}"`)
                 }
