@@ -25,7 +25,7 @@ function checkRootDir () {
 checkBlockhainsFolder()
 
 function checkBlockhainsFolder(){
-    const currentBlockchains = 58
+    const currentBlockchains = 59
     const foundBlockchains = readDirSync('./blockchains')
 
     if (foundBlockchains.length !== currentBlockchains) {
