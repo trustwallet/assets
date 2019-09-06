@@ -28,8 +28,8 @@ function checkRootDir () {
 checkBlockhainsFolder()
 
 function checkBlockhainsFolder(){
-    const currentBlockchains = 59
-    
+    const currentBlockchains = 60;
+
     const foundBlockchains = readDirSync(blockchainsFolderPath)
 
     if (foundBlockchains.length !== currentBlockchains) {
@@ -49,7 +49,7 @@ function checkBlockhainsFolder(){
                 if (uppercaseExp.test(asset)) {
                     exitWithMsg(`${asset} folder must be in lowercase`)
                 }
-                
+
                 if (!isEthereumAddress(asset)) {
                     exitWithMsg(`Invalid asset naming "${assetsPath}"`)
                 }
@@ -160,7 +160,7 @@ function checkValidatorsFolder(networkPath) {
             if (keys.length !== 4) {
                 exitWithMsg(`Add test for new validator object key: ${keys.length}`)
             }
-            
+
             keys.forEach(key => {
                 const keyType = typeof key
                 if (keyType !== "string") {
