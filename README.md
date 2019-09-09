@@ -15,7 +15,7 @@ Token repository [https://github.com/trustwallet/assets](https://github.com/trus
 
 2. [BEP2](https://github.com/binance-chain/BEPs/blob/master/BEP2.md) Binance DEX token (native marketplace on Binance Chain)
 
-3. [TRC10](https://developer.trustwallet.com/add_new_token_image#how-to-generate-address-for-trc10-tron-based-token) tokens on TRON blockchain
+3. [TRC10, TRC20](https://developers.tron.network/docs/trc10-token) tokens on TRON blockchain
 
 4. [coins](https://github.com/satoshilabs/slips/blob/master/slip-0044.md) integrated in [Wallet Core](https://developer.trustwallet.com/wallet-core)
 
@@ -51,7 +51,7 @@ Token repository [https://github.com/trustwallet/assets](https://github.com/trus
 
 `blockchains` folder contains many subfolders and represents chains e.g. `ethereum`, `binance` ...
 
-`assets` folder contains token folders named by smart contract address in lowercase register and inside of it `logo.png` - image representation
+`assets` folder contains token folders named by smart contract address in `lowercase register` and inside of it `logo.png` - image representation
 
 `info` folder contains for now only `logo.png` that represents coin image
 
