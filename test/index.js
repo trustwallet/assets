@@ -51,7 +51,7 @@ function checkBlockhainsFolder(){
                 }
 
                 if (!isEthereumAddress(asset)) {
-                    exitWithMsg(`Invalid asset naming "${assetsPath}"`)
+                    exitWithMsg(`Invalid asset ${asset} naming "${assetsPath}"`)
                 }
 
                 // Check if asset folder contains logo.png image
