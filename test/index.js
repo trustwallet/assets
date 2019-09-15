@@ -1,13 +1,17 @@
 const fs = require('fs')
 const axios = require('axios')
 const path = require('path')
+const assert = require('assert')
 
 const pngExp = /\.png$/
-const upperCaseExp = /[A-F]/
+const uppercaseExp = /[A-F]/
 
-const isAddress = address => /^(0x)?[0-9a-f]{40}$/i.test(address) || /^(0x)?[0-9A-F]{40}$/.test(address)
+const isEthereumAddress = address => /^(0x)?[0-9a-f]{40}$/i.test(address) || /^(0x)?[0-9A-F]{40}$/.test(address)
 const isFilePng = name => pngExp.test(name)
 const readDirSync = path => fs.readdirSync(path)
+const isLowerCase = str => str.toLowerCase() === str
+const isPathExistsSync = path => fs.existsSync(path)
+const blockchainsFolderPath = './blockchains'
 
 checkRootDir()
 function checkRootDir () {
@@ -17,7 +21,7 @@ function checkRootDir () {
         }
     })
 
-    if(fs.existsSync("./images")) {
+    if(isPathExistsSync(`./images`)) {
         exitWithMsg(`Adding to ./image folder is restricted, please update your fork`)
     }
 }
@@ -25,8 +29,9 @@ function checkRootDir () {
 checkBlockhainsFolder()
 
 function checkBlockhainsFolder(){
-    const currentBlockchains = 59
-    const foundBlockchains = readDirSync('./blockchains')
+    const currentBlockchains = 60;
+
+    const foundBlockchains = readDirSync(blockchainsFolderPath)
 
     if (foundBlockchains.length !== currentBlockchains) {
         exitWithMsg(`Expected amount of chains in "./blockchains" = ${currentBlockchains}, found ${foundBlockchains.length}. Add tests for new folder`)
@@ -42,17 +47,17 @@ function checkBlockhainsFolder(){
             const assets = readDirSync(assetsPath)
 
             assets.forEach(asset => {
-                if (upperCaseExp.test(asset)) {
+                if (uppercaseExp.test(asset)) {
                     exitWithMsg(`${asset} folder must be in lowercase`)
                 }
-                
-                if (!isAddress(asset)) {
-                    exitWithMsg(`Invalid asset naming "${assetsPath}"`)
+
+                if (!isEthereumAddress(asset)) {
+                    exitWithMsg(`Invalid asset ${asset} naming "${assetsPath}"`)
                 }
 
                 // Check if asset folder contains logo.png image
                 const assetLogoPath = `${assetsPath}/${asset}/logo.png`
-                if (!fs.existsSync(assetLogoPath)) {
+                if (!isPathExistsSync(assetLogoPath)) {
                     exitWithMsg(`${assetLogoPath} mush have logo.png`)
                 }
             })
@@ -66,18 +71,24 @@ function checkBlockhainsFolder(){
             checkTron()
         }
 
+        // Check POS chains
+        const posChains = ["cosmos", "tezos"]
+        if (posChains.indexOf(folder) !== -1) {
+            checkValidatorFolder(folder)
+        }
+
 
         console.log(`Folder ${folder} passed all checks`)
     })
 }
 
 function commonChainCheck(folder) {
-    if (upperCaseExp.test(folder)) {
+    if (uppercaseExp.test(folder)) {
         exitWithMsg(`"${folder}" must be in lowercase register`)
     }
 
     const pathToInfo = path.join(__dirname, '..', `blockchains/${folder}/info/logo.png`)
-    if (!fs.existsSync(pathToInfo)) {
+    if (!isPathExistsSync(pathToInfo)) {
         exitWithMsg(`Can't find coin image inside "${pathToInfo}"`)
     }
 }
@@ -88,7 +99,7 @@ async function checkBinance() {
     const assets = readDirSync(path)
 
     assets.forEach(asset => {
-        if (upperCaseExp.test(asset)) {
+        if (uppercaseExp.test(asset)) {
             exitWithMsg(`${asset} folder must be in lowercase`)
         }
 
@@ -97,7 +108,7 @@ async function checkBinance() {
         }
 
         const assetLogoPath = `${path}/${asset}/logo.png`
-        if (!fs.existsSync(assetLogoPath)) {
+        if (!isPathExistsSync(assetLogoPath)) {
             exitWithMsg(`Path ${assetLogoPath} mush have logo.png`)
         }
     })
@@ -105,24 +116,99 @@ async function checkBinance() {
 
 function checkTron() {
     const path = `./blockchains/tron/assets`
-    const assets = readDirSync(path)
 
-    assets.forEach(asset => {
-        if (!(/^\d+$/.test(asset))) {
-            exitWithMsg(`${asset} folder must contain only digits`)
+    readDirSync(path).forEach(asset => {
+        if (isTRC10(asset)) {
+        } else {
+            isTRC20(asset)
         }
 
         const assetLogoPath = `${path}/${asset}/logo.png`
-        if (!fs.existsSync(assetLogoPath)) {
+        if (!isPathExistsSync(assetLogoPath)) {
             exitWithMsg(`Path ${assetLogoPath} mush have logo.png`)
         }
     })
 }
 
-async function getBinanceTokenSymbols() {
-    return axios.get(`https://dex-atlantic.binance.org/api/v1/tokens?limit=1000`).then(res => {
-        return res.data.map(token => token.symbol)
+function isTRC10(id) {
+    return (/^\d+$/.test(id))
+}
+
+// Check address to match TRC20 criteria
+function isTRC20(address) {
+    if (!isLowerCase(address) ||
+       address.length !== 34
+    ) {
+        exitWithMsg(`TRC20 ${address} fail to match criteria`)
+    }
+
+}
+
+function checkValidatorFolder(folder) {
+    const folderPath = `${blockchainsFolderPath}/${folder}`
+    const validatorsFolderPath = `${folderPath}/validators`
+
+    // Check validators folder existence
+    if (!isPathExistsSync(validatorsFolderPath)) {
+        exitWithMsg(`Validators folder doesn't exists at path ${networkPath}`)
+    }
+
+    const validatorsAssetsFolderPath = validatorsFolderPath + `/assets`
+    if (!isPathExistsSync(validatorsAssetsFolderPath)) {
+        exitWithMsg(`Validators assets folder doesn't exists at path ${validatorsAssetsFolderPath}`)
+    }
+
+    readDirSync(validatorsAssetsFolderPath).forEach(address => {
+        switch (folder) {
+            case "cosmos":
+                testCosmosAddress(address)
+            case "tezos":
+                testTezosAddress(address)
+            default:
+        }
+
+        const validatoAssetLogo = `${validatorsAssetsFolderPath}/${address}/logo.png`
+        if (!isPathExistsSync(validatoAssetLogo)) {
+            exitWithMsg(`Path ${validatoAssetLogo} mush have logo.png`)
+        }
     })
+
+    fs.readFile(validatorsFolderPath + `/list.json`, (err, data) => {
+        if (err) throw err
+       const validators = JSON.parse(data)
+
+       validators.forEach(validator => {
+           const keys = Object.keys(validator)
+            if (keys.length !== 4) {
+                exitWithMsg(`Add test for new validator object key: ${keys.length}`)
+            }
+
+            keys.forEach(key => {
+                const keyType = typeof key
+                if (keyType !== "string") {
+                    exitWithMsg(`Key ${key} must be "string" type, actual ${keyType}`)
+                }
+            })
+       })
+
+    })
+
+}
+
+function testCosmosAddress(address) {
+    if (!isLowerCase(address)) {
+        exitWithMsg(`Cosmos ${address} folder must be in lowercase`)
+    }
+}
+
+function testTezosAddress(address) {
+    if (!isLowerCase(address)) {
+        exitWithMsg(`Tezos ${address} folder must be in lowercase`)
+    }
+}
+
+async function getBinanceTokenSymbols() {
+    return axios.get(`https://dex-atlantic.binance.org/api/v1/tokens?limit=1000`).then(res => res.data.map(token => token.symbol))
 }
 
 function exitWithMsg (msg) {
