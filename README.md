@@ -61,10 +61,10 @@ Token repository [https://github.com/trustwallet/assets](https://github.com/trus
 ├── blockchains
 │   └──ethereum
 │   │   └──assets
-│   │   │  └──0x0a2d9370cf74da3fd3df5d764e394ca8205c50b6
-│   │   │     └──logo.png
+│   │   │  └──0x0a2d9370cf74da3fd3df5d764e394ca8205c50b6 // address folder
+│   │   │     └──logo.png // address logo
 │   │   └──info
-│   │      └──logo.png
+│   │      └──logo.png // coin logo
 |   └──binance
 │   │   └──assets
 │   │   │  └──one-5f9
