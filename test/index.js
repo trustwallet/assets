@@ -29,7 +29,7 @@ function checkRootDir () {
 checkBlockhainsFolder()
 
 function checkBlockhainsFolder(){
-    const currentBlockchains = 61;
+    const currentBlockchains = 62;
 
     const foundBlockchains = readDirSync(blockchainsFolderPath)
 
@@ -45,7 +45,6 @@ function checkBlockhainsFolder(){
         if (ethereumSidechains.indexOf(folder) !== -1) {
             const assetsPath = `./blockchains/${folder}/assets`
             const assets = readDirSync(assetsPath)
-
             assets.forEach(asset => {
                 if (uppercaseExp.test(asset)) {
                     exitWithMsg(`${asset} folder must be in lowercase`)
