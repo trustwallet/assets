@@ -10,6 +10,7 @@ const isEthereumAddress = address => /^(0x)?[0-9a-f]{40}$/i.test(address) || /^(
 const isFilePng = name => pngExp.test(name)
 const readDirSync = path => fs.readdirSync(path)
 const isLowerCase = str => str.toLowerCase() === str
+const isPathExistsSync = path => fs.existsSync(path)
 const blockchainsFolderPath = './blockchains'
 
 checkRootDir()
@@ -28,7 +29,7 @@ function checkRootDir () {
 checkBlockhainsFolder()
 
 function checkBlockhainsFolder(){
-    const currentBlockchains = 60;
+    const currentBlockchains = 62;
 
     const foundBlockchains = readDirSync(blockchainsFolderPath)
 
@@ -44,14 +45,13 @@ function checkBlockhainsFolder(){
         if (ethereumSidechains.indexOf(folder) !== -1) {
             const assetsPath = `./blockchains/${folder}/assets`
             const assets = readDirSync(assetsPath)
-
             assets.forEach(asset => {
                 if (uppercaseExp.test(asset)) {
                     exitWithMsg(`${asset} folder must be in lowercase`)
                 }
 
                 if (!isEthereumAddress(asset)) {
-                    exitWithMsg(`Invalid asset naming "${assetsPath}"`)
+                    exitWithMsg(`Invalid asset ${asset} naming "${assetsPath}"`)
                 }
 
                 // Check if asset folder contains logo.png image
@@ -70,11 +70,10 @@ function checkBlockhainsFolder(){
             checkTron()
         }
 
-        // Check staking supported chains
-        const stakingChains = ["cosmos"]
-        if (stakingChains.indexOf(folder) !== -1) {
-            const folderPath = `${blockchainsFolderPath}/${folder}`
-            checkValidatorsFolder(folderPath)
+        // Check POS chains
+        const posChains = ["cosmos", "tezos"]
+        if (posChains.indexOf(folder) !== -1) {
+            checkValidatorFolder(folder)
         }
 
 
@@ -116,11 +115,11 @@ async function checkBinance() {
 
 function checkTron() {
     const path = `./blockchains/tron/assets`
-    const assets = readDirSync(path)
 
-    assets.forEach(asset => {
-        if (!(/^\d+$/.test(asset))) {
-            exitWithMsg(`${asset} folder must contain only digits`)
+    readDirSync(path).forEach(asset => {
+        if (isTRC10(asset)) {
+        } else {
+            isTRC20(asset)
         }
 
         const assetLogoPath = `${path}/${asset}/logo.png`
@@ -130,9 +129,25 @@ function checkTron() {
     })
 }
 
-function checkValidatorsFolder(networkPath) {
-    const validatorsFolderPath = `${networkPath}/validators`
+function isTRC10(id) {
+    return (/^\d+$/.test(id))
+}
 
+// Check address to match TRC20 criteria
+function isTRC20(address) {
+    if (!isLowerCase(address) ||
+       address.length !== 34
+    ) {
+        exitWithMsg(`TRC20 ${address} fail to match criteria`)
+    }
+
+}
+
+function checkValidatorFolder(folder) {
+    const folderPath = `${blockchainsFolderPath}/${folder}`
+    const validatorsFolderPath = `${folderPath}/validators`
+
+    // Check validators folder existence
     if (!isPathExistsSync(validatorsFolderPath)) {
         exitWithMsg(`Validators folder doesn't exists at path ${networkPath}`)
     }
@@ -143,7 +158,13 @@ function checkValidatorsFolder(networkPath) {
     }
 
     readDirSync(validatorsAssetsFolderPath).forEach(address => {
-        testCosmosAddress(address)
+        switch (folder) {
+            case "cosmos":
+                testCosmosAddress(address)
+            case "tezos":
+                testTezosAddress(address)
+            default:
+        }
 
         const validatoAssetLogo = `${validatorsAssetsFolderPath}/${address}/logo.png`
         if (!isPathExistsSync(validatoAssetLogo)) {
@@ -175,12 +196,14 @@ function checkValidatorsFolder(networkPath) {
 
 function testCosmosAddress(address) {
     if (!isLowerCase(address)) {
-        exitWithMsg(`${address} folder must be in lowercase`)
+        exitWithMsg(`Cosmos ${address} folder must be in lowercase`)
     }
 }
 
-function isPathExistsSync(path) {
-    return fs.existsSync(path)
+function testTezosAddress(address) {
+    if (!isLowerCase(address)) {
+        exitWithMsg(`Tezos ${address} folder must be in lowercase`)
+    }
 }
 
 async function getBinanceTokenSymbols() {

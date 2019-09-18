@@ -61,10 +61,10 @@ Token repository [https://github.com/trustwallet/assets](https://github.com/trus
 ├── blockchains
 │   └──ethereum
 │   │   └──assets
-│   │   │  └──0x0a2d9370cf74da3fd3df5d764e394ca8205c50b6
-│   │   │     └──logo.png
+│   │   │  └──0x0a2d9370cf74da3fd3df5d764e394ca8205c50b6 // address folder
+│   │   │     └──logo.png // address logo
 │   │   └──info
-│   │      └──logo.png
+│   │      └──logo.png // coin logo
 |   └──binance
 │   │   └──assets
 │   │   │  └──one-5f9
@@ -72,11 +72,25 @@ Token repository [https://github.com/trustwallet/assets](https://github.com/trus
 │   │   └──info
 │   │      └──logo.png
 |   └──tron
-│      └──assets
-│      │  └──1002000
-│      │     └──logo.png
-│      └──info
-│         └──logo.png
+│   |  └──assets
+│   |  │  └──1002000
+│   |  │  |   └──logo.png
+|   |  |  └──tgbhcodq1jrwb3zywmfwsrth4rwbil2mzh
+|   |  |      └──logo.png
+|   |  | 
+│   |  └──info
+│   |     └──logo.png
+|   |
+|   └──cosmos
+│   │   └──info
+|   |   |  └──logo.png
+|   |   |
+│   │   └──validators
+│   │   |  └──assets
+|   |   |     └──cosmosvaloper1clpqr4nrk4khgkxj78fcwwh6dl3uw4epsluffn
+|   |   |        └──logo.png
+|   |   |
+|   |   └──list.json
 ├── ...
 ```
 
@@ -85,7 +99,9 @@ Token repository [https://github.com/trustwallet/assets](https://github.com/trus
 Uploading:
 1. Ethereum ERC20 [token folder](https://github.com/trustwallet/assets/tree/master/blockchains/ethereum/assets)
 2. Binance DEX BEP2 token [token folder](https://github.com/trustwallet/assets/tree/master/blockchains/binance/assets)
-3. TRON TRC10 token [token folder](https://github.com/trustwallet/assets/tree/master/blockchains/binannce/assets)
+3. TRON TRC10 token [token folder](https://github.com/trustwallet/assets/tree/master/blockchains/tron/assets)
+4. Add Cosmos validator info and image [](https://github.com/trustwallet/assets/tree/master/blockchains/cosmos/validators)
+5. Add Tezos validator info and image [](https://github.com/trustwallet/assets/tree/master/blockchains/tezos/validators)
 
 
 ## How To Add Asset
