@@ -10,7 +10,7 @@ const chalk = require('chalk')
     await bluebird.each(assetInfoList, async ({ asset, assetImg }) => {
         if (assetImg) {
             const assetLower = asset.toLowerCase()
-            const binanceDir = path.join(__dirname, `../blockchains/binance`)
+            const binanceDir = path.join(__dirname, `../blockchains/bnb`)
             const imagePath = `${binanceDir}/assets/${assetLower}/logo.png`
 
             if (fs.existsSync(imagePath)) {
