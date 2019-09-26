@@ -49,7 +49,7 @@ Token repository [https://github.com/trustwallet/assets](https://github.com/trus
 
 ## Repository structure
 
-`blockchains` folder contains many subfolders and represents chains e.g. `ethereum`, `binance` ...
+`blockchains` folder contains many subfolders and represents chains e.g. `ethereum`, `bnb` ...
 
 `assets` folder contains token folders named by smart contract address in `lowercase register` and inside of it `logo.png` - image representation
 
@@ -65,7 +65,7 @@ Token repository [https://github.com/trustwallet/assets](https://github.com/trus
 │   │   │     └──logo.png // address logo
 │   │   └──info
 │   │      └──logo.png // coin logo
-|   └──binance
+|   └──bnb
 │   │   └──assets
 │   │   │  └──one-5f9
 │   │   │     └──logo.png
@@ -98,7 +98,7 @@ Token repository [https://github.com/trustwallet/assets](https://github.com/trus
 ## Common uploads
 Uploading:
 1. Ethereum ERC20 [token folder](https://github.com/trustwallet/assets/tree/master/blockchains/ethereum/assets)
-2. Binance DEX BEP2 token [token folder](https://github.com/trustwallet/assets/tree/master/blockchains/binance/assets)
+2. Binance DEX BEP2 token [token folder](https://github.com/trustwallet/assets/tree/master/blockchains/bnb/assets)
 3. TRON TRC10 token [token folder](https://github.com/trustwallet/assets/tree/master/blockchains/tron/assets)
 4. Add Cosmos validator info and image [](https://github.com/trustwallet/assets/tree/master/blockchains/cosmos/validators)
 5. Add Tezos validator info and image [](https://github.com/trustwallet/assets/tree/master/blockchains/tezos/validators)
@@ -170,7 +170,7 @@ https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum
 
 BEP-2:
 ```js
-https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/ankr-e97/logo.png
+https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/bnb/assets/ankr-e97/logo.png
 ```
 
 TRC-10:
