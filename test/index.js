@@ -29,7 +29,7 @@ function checkRootDir () {
 checkBlockhainsFolder()
 
 function checkBlockhainsFolder(){
-    const currentBlockchains = 64;
+    const currentBlockchains = 63;
 
     const foundBlockchains = readDirSync(blockchainsFolderPath)
 
