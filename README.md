@@ -65,6 +65,8 @@ Token repository [https://github.com/trustwallet/assets](https://github.com/trus
 │   │   │     └──logo.png // address logo
 │   │   └──info
 │   │      └──logo.png // coin logo
+|   |
+|   └──binance // deprecated, will be removed in November
 |   └──bnb
 │   │   └──assets
 │   │   │  └──one-5f9
@@ -176,6 +178,11 @@ https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/bnb/asse
 TRC-10:
 ```js
 https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/tron/assets/1002000/logo.png
+```
+
+TRC-20:
+```js
+https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/tron/assets/tg37muxruah1e8dwsrrmoq79bnzn1yhztb/logo.png
 ```
 
 ## Used in Applications
