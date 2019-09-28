@@ -61,10 +61,11 @@ Token repository [https://github.com/trustwallet/assets](https://github.com/trus
 ├── blockchains
 │   └──ethereum
 │   │   └──assets
-│   │   │  └──0x0a2d9370cf74da3fd3df5d764e394ca8205c50b6
-│   │   │     └──logo.png
+│   │   │  └──0x0a2d9370cf74da3fd3df5d764e394ca8205c50b6 // address folder
+│   │   │     └──logo.png // address logo
 │   │   └──info
-│   │      └──logo.png
+│   │      └──logo.png // coin logo
+|   |
 |   └──binance
 │   │   └──assets
 │   │   │  └──one-5f9
@@ -176,6 +177,11 @@ https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/
 TRC-10:
 ```js
 https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/tron/assets/1002000/logo.png
+```
+
+TRC-20:
+```js
+https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/tron/assets/tg37muxruah1e8dwsrrmoq79bnzn1yhztb/logo.png
 ```
 
 ## Used in Applications
