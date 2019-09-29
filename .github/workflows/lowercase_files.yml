@@ -1,0 +1,15 @@
+name: Lowercase file names
+
+on:
+  pull_request:
+    branches:
+    - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Lowercase files in blockchain folder
+      run: |
+        find blockchains -type f -exec rename 'y/A-Z/a-z/' {} \;
