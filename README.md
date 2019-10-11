@@ -29,7 +29,7 @@ Token repository [https://github.com/trustwallet/assets](https://github.com/trus
 
 ## Contribution steps
 
-1. Prepare image [requriments](#image-requirements)
+1. Prepare image [requirements](#image-requirements)
 2. Get familiar with [folder strcture](#repository-structure), will give you understanding where asset image should be placed
 3. [Add asset guide](#how-to-add-asset)
 
