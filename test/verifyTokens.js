@@ -3,7 +3,7 @@ const fs = require('fs')
 
 const TRUST_API_URL = process.env.TRUST_API_URL
 const TOKEN_VERIFICATION_KEY = process.env.TOKEN_VERIFICATION_KEY
-const ethereumSidechains = ["ethereum", "classic", "poa", "tomochain", "gochain", "wanchain", "callisto", "thundertoken"]
+const ethereumSidechains = ["ethereum", "classic", "poa", "tomochain", "gochain", "wanchain", "thundertoken"]
 
 const addresses = []
 ethereumSidechains.forEach(chain => {
