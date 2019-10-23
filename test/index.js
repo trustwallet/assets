@@ -136,12 +136,9 @@ function isTRC10(id) {
 
 // Check address to match TRC20 criteria
 function isTRC20(address) {
-    if (!isLowerCase(address) ||
-       address.length !== 34
-    ) {
+    if (isLowerCase(address) || address.length !== 34) {
         exitWithMsg(`TRC20 ${address} fail to match criteria`)
     }
-
 }
 
 function checkValidatorFolder(folder) {
@@ -162,8 +159,10 @@ function checkValidatorFolder(folder) {
         switch (folder) {
             case "cosmos":
                 testCosmosAddress(address)
+                break;
             case "tezos":
                 testTezosAddress(address)
+                break;
             default:
         }
 
@@ -202,8 +201,8 @@ function testCosmosAddress(address) {
 }
 
 function testTezosAddress(address) {
-    if (!isLowerCase(address)) {
-        exitWithMsg(`Tezos ${address} folder must be in lowercase`)
+    if (isLowerCase(address)) {
+        exitWithMsg(`Tezos ${address} folder must not be in lowercase`)
     }
 }
 
