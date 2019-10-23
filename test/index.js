@@ -2,6 +2,7 @@ const fs = require('fs')
 const axios = require('axios')
 const path = require('path')
 const assert = require('assert')
+const { checkAddressChecksum } = require('ethereum-checksum-address')
 
 const pngExp = /\.png$/
 const uppercaseExp = /[A-F]/
@@ -46,8 +47,8 @@ function checkBlockhainsFolder(){
             const assetsPath = `./blockchains/${folder}/assets`
             const assets = readDirSync(assetsPath)
             assets.forEach(asset => {
-                if (uppercaseExp.test(asset)) {
-                    exitWithMsg(`${asset} folder must be in lowercase`)
+                if (!checkAddressChecksum(asset)) {
+                    exitWithMsg(`${asset} folder name must be checksum`)
                 }
 
                 if (!isEthereumAddress(asset)) {
