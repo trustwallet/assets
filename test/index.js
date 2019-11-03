@@ -42,7 +42,7 @@ function checkBlockhainsFolder(){
         commonChainCheck(folder)
 
         //Check Ethereum sidechains folders
-        const ethereumSidechains = ["ethereum", "classic", "poa", "tomochain", "gochain", "wanchain", "callisto", "thundertoken"]
+        const ethereumSidechains = ["ethereum", "classic", "poa", "tomochain", "gochain", "wanchain", "thundertoken"]
         if (ethereumSidechains.indexOf(folder) !== -1) {
             const assetsPath = `./blockchains/${folder}/assets`
             const assets = readDirSync(assetsPath)
