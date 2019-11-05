@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "verify": "node ./test/verifyTokens",
-    "test": "npm run pre-test && node ./test/index.js",
-    "test-jest": "npm run pre-test && jest",
+    "test": "npm run pre-test && jest",
     "pre-test": "find ./.. -name '.DS_Store' -type f -delete",
     "update-bep2": "node ./script/updateBEP2",
     "checksum": "npm run pre-test && node ./script/to_checksum"
@@ -40,9 +39,12 @@
     "bluebird": "^3.5.5",
     "chalk": "^2.4.2",
     "ethereum-checksum-address": "0.0.5",
+    "eztz-lib": "^0.1.2",
     "web3": "^1.2.2"
   },
   "jest": {
-    "setupFilesAfterEnv": ["jest-expect-message"]
+    "setupFilesAfterEnv": [
+      "jest-expect-message"
+    ]
   }
 }
