@@ -31,8 +31,7 @@
   "homepage": "https://github.com/trustwallet/assets#readme",
   "devDependencies": {
     "jest": "^24.9.0",
-    "jest-expect-message": "^1.0.2",
-    "mongoose": "^5.4.10"
+    "jest-expect-message": "^1.0.2"
   },
   "dependencies": {
     "axios": "^0.19.0",
