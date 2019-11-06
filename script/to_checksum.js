@@ -20,7 +20,7 @@ cheinsAddressesToChecksum.forEach(chain => {
             const checksum = web3.utils.toChecksumAddress(addr)
             const moveToChecksum = `git mv ${addr} ${checksum}-temp && git mv ${checksum}-temp ${checksum}`
             const renamed = execSync(`cd ${assetsPath} && ${moveToChecksum}`, {encoding: "utf-8"})
-            console.log(`Rsult renaming ${addr} : ${renamed}`)
+            console.log(`Result renaming ${addr} : ${renamed}`)
         }
     })
 });
