@@ -30,6 +30,7 @@
   },
   "homepage": "https://github.com/trustwallet/assets#readme",
   "devDependencies": {
+    "ethereum-checksum-address": "0.0.5",
     "jest": "^24.9.0",
     "jest-expect-message": "^1.0.2"
   },
@@ -37,7 +38,6 @@
     "axios": "^0.19.0",
     "bluebird": "^3.5.5",
     "chalk": "^2.4.2",
-    "ethereum-checksum-address": "0.0.5",
     "eztz-lib": "^0.1.2",
     "web3": "^1.2.2"
   },
