@@ -1,4 +1,5 @@
 const eztz = require('eztz-lib')
+
 import {
     BNB,
     Cosmos,
@@ -18,10 +19,10 @@ import {
     readFileSync,
     isLowerCase,
     isChecksum,
-    getBinanceTokenSymbols,
+    getBinanceBEP2Symbols,
     isTRC10,
-    isTRC20,
-} from "./helpers";
+    isTRC20
+} from "./helpers"
 
 describe("Check repository root dir", () => {
     const rootDirAllowedFiles = [
@@ -31,10 +32,10 @@ describe("Check repository root dir", () => {
         "media",
         "node_modules",
         "script",
-        "test",
+        "src",
         ".gitignore",
         ".travis.yml",
-        "babel.config.js",
+        "jest.config.js",
         "LICENSE",
         "package-lock.json",
         "package.json",
@@ -91,7 +92,7 @@ describe(`Test "blockchains" folder`, () => {
 
     describe(`Check "binace" folder`, () => {
         it("Asset must exist on chain and", async () => {
-            const tokenSymbols = await getBinanceTokenSymbols()
+            const tokenSymbols = await getBinanceBEP2Symbols()
             const assets = readDirSync(getChainAssetsPath(BNB))
 
             assets.forEach(asset => {
@@ -157,6 +158,7 @@ describe(`Test "blockchains" folder`, () => {
                 case TRON:
                         testTronValidatorsAssets(chainValidatorsAssetsList)
                         break;
+                // TODO Add LOOM
                 default:
                     break;
             }
@@ -194,3 +196,5 @@ function testCosmosValidatorsAddress(assets) {
         });
     })
 }
+
+// TODO test whitelist
