@@ -9,7 +9,7 @@
     "pre-test": "find ./.. -name '.DS_Store' -type f -delete",
     "update-bep2": "node ./script/updateBEP2",
     "checksum": "npm run pre-test && node ./script/to_checksum",
-    "gen-lists": "node ./script/get_list.js"
+    "list": "ts-node ./src/test/gen_list"
   },
   "repository": {
     "type": "git",
@@ -37,6 +37,7 @@
     "jest": "^24.9.0",
     "jest-expect-message": "^1.0.2",
     "ts-jest": "^24.1.0",
+    "ts-node": "^8.4.1",
     "typescript": "^3.7.2"
   },
   "dependencies": {
