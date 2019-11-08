@@ -15,10 +15,11 @@ export const getOpenseaCollectionAddresses = async () => {
 
         collections.forEach(c => {
             c.primary_asset_contracts.forEach(a => {
+                const checksum = toChecksum(a.address)
                 if (a.schema_name === "ERC20") {
-                    erc20Addresses.push(toChecksum(a.address))
+                    erc20Addresses.push(checksum)
                 } else {
-                    nftList.push(a.address)
+                    nftList.push(checksum)
                 }
             })
         })
