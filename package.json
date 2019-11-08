@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "verify": "node ./test/verifyTokens",
-    "test": "npm run pre-test && jest",
+    "test": "npm run cleanup && jest",
     "cleanup": "find ./.. -name '.DS_Store' -type f -delete",
     "update-bep2": "node ./script/updateBEP2",
     "checksum": "npm run cleanup && node ./script/to_checksum",
