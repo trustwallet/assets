@@ -1,5 +1,4 @@
-
-const fs = require('fs')
+import * as fs from "fs"
 const axios = require('axios')
 const path = require('path')
 const Web3 = require('web3')
@@ -7,10 +6,14 @@ const web3 = new Web3('ws://localhost:8546');
 
 export const BNB = 'binance'
 export const Cosmos = 'cosmos'
+export const Ethereum = 'ethereum'
 export const Tezos = 'tezos'
 export const TRON = 'tron'
 export const IoTeX = 'iotex'
 export const Waves = 'waves'
+
+const whiteList = 'whitelist.json'
+const blackList = 'blacklist.json'
 
 export const logo = `logo.png`
 export const chainsFolderPath = './blockchains'
@@ -24,16 +27,20 @@ export const getChainValidatorsAssets = chain => readDirSync(getChainValidatorsA
 export const getChainValidatorsListPath = chain => `${(getChainValidatorsPath(chain))}/list.json`
 export const getChainValidatorsAssetsPath = chain => `${getChainValidatorsPath(chain)}/assets`
 export const getChainValidatorAssetLogoPath = (chain, asset) => `${getChainValidatorsAssetsPath(chain)}/${asset}/${logo}`
+export const getChainWhitelistPath = chain => `${chainsFolderPath}/${chain}/${whiteList}`
+export const getChainBlacklistPath = chain => `${chainsFolderPath}/${chain}/${blackList}`
 
 export const readDirSync = path => fs.readdirSync(path)
 export const isPathExistsSync = path => fs.existsSync(path)
-export const readFileSync = path => fs.readFileSync(path, (err, data) => {
-    if (err) throw err
-    return data
-}) 
+export const isChainWhitelistExistSync = chain => isPathExistsSync(getChainWhitelistPath(chain))
+export const isChainBlacklistExistSync = chain => isPathExistsSync(getChainBlacklistPath(chain))
+export const readFileSync = path => fs.readFileSync(path, 'utf8')
+export const writeFileSync = (path, str) => fs.writeFileSync(path, str)
+
 export const isLowerCase = str => str.toLowerCase() === str
 export const isUpperCase = str => str.toUpperCase() === str
 export const isChecksum = address => web3.utils.checkAddressChecksum(address)
+export const toChecksum = address => web3.utils.toChecksumAddress(address)
 export const getBinanceBEP2Symbols = async () => axios.get(`https://dex-atlantic.binance.org/api/v1/tokens?limit=1000`).then(res => res.data.map(({symbol}) => symbol))
 
 export const isTRC10 = id => (/^\d+$/.test(id))
