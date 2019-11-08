@@ -6,10 +6,10 @@
   "scripts": {
     "verify": "node ./test/verifyTokens",
     "test": "npm run pre-test && jest",
-    "pre-test": "find ./.. -name '.DS_Store' -type f -delete",
+    "cleanup": "find ./.. -name '.DS_Store' -type f -delete",
     "update-bep2": "node ./script/updateBEP2",
-    "checksum": "npm run pre-test && node ./script/to_checksum",
-    "list": "ts-node ./src/test/gen_list"
+    "checksum": "npm run cleanup && node ./script/to_checksum",
+    "list": "npm run cleanup && ts-node ./src/test/gen_list"
   },
   "repository": {
     "type": "git",
