@@ -4,12 +4,12 @@
   "description": "Assets consumed by Trust Wallet",
   "main": "index.js",
   "scripts": {
-    "verify": "node ./test/verifyTokens",
+    "verify": "ts-node ./script/verifyTokens",
     "test": "npm run cleanup && jest",
     "cleanup": "find ./.. -name '.DS_Store' -type f -delete",
     "update-bep2": "node ./script/updateBEP2",
-    "checksum": "npm run cleanup && node ./script/to_checksum",
-    "list": "npm run cleanup && ts-node ./src/test/gen_list"
+    "checksum": "npm run cleanup && node ./script/erc20_to_checksum",
+    "list": "npm run cleanup && ts-node ./script/gen_list"
   },
   "repository": {
     "type": "git",

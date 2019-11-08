@@ -9,8 +9,9 @@ const addresses = []
 ethereumSidechains.forEach(chain => {
     addresses.push(fs.readdirSync(`./blockchains/${chain}/assets`))
 })
+const tokens = [].concat.apply([], addresses).map(a => a.toLowerCase())
 
-axios.post(TRUST_API_URL, {tokens: addresses.flat()}, {
+axios.post(TRUST_API_URL, tokens, {
     headers: {
         TOKEN_VERIFICATION_KEY
     }

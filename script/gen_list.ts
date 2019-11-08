@@ -1,5 +1,5 @@
 const fs = require('fs')
-import { getOpenseaCollectionAddresses } from "../../script/opesea_contrats"
+import { getOpenseaCollectionAddresses } from "./opesea_contrats"
 
 import {
     Ethereum,
@@ -14,7 +14,7 @@ import {
     sortDesc,
     getUnique,
     mapList
-} from './helpers'
+} from '../src/test/helpers'
 
 // Current chains where assets tokens supported by Trust Wallet
 // TODO auto create list based on assets folder presence
