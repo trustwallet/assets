@@ -1,4 +1,17 @@
 # Trust Wallet Assets Info
+
+```diff
+- On November 8th 2019 we made big changes to the repository, please read summary and recomnadations
+```
+
+### What changed:
+- Assets in fodler `assets` and validators assets in `validators/assets` were changed from lowercased format to checksum format e,g: Binance BEP2: busd-bd1 => BUSD-BD1, Ethreum ERC20 token: 0xfff3ada5a2555a2b59bff4f44dfad90146cce8cb => 0xffF3ada5A2555a2B59BfF4F44DFad90146CcE8CB
+- Added scripts that generates white and black list of contract assets list
+
+### What to do next:
+- If you first time contributor nothing required, just simple follow repository contribution guidelines
+- If you contributed before nad planning on continue please upgrade your fork from latest master or simple delete your fork and fork again to save your time dealing with merge conflicts
+
 ## Overview
 Hello and welcome to Trust Wallet assets info contribution guide. We appreciate your effort to open-source.
 Token repository [https://github.com/trustwallet/assets](https://github.com/trustwallet/assets) (repo) is a source of images used by [Trust Wallet](https://trustwallet.com/) including:
