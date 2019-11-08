@@ -1,16 +1,22 @@
 import * as fs from "fs"
 const axios = require('axios')
-const path = require('path')
 const Web3 = require('web3')
 const web3 = new Web3('ws://localhost:8546');
+import { CoinTypeUtils, CoinType } from "@trustwallet/types";
 
-export const BNB = 'binance'
-export const Cosmos = 'cosmos'
-export const Ethereum = 'ethereum'
-export const Tezos = 'tezos'
-export const TRON = 'tron'
-export const IoTeX = 'iotex'
-export const Waves = 'waves'
+export const Binance = getChainName(CoinType.binance)
+export const Cosmos = getChainName(CoinType.cosmos)
+export const Ethereum = getChainName(CoinType.ethereum)
+export const Tezos = getChainName(CoinType.tezos)
+export const Tron = getChainName(CoinType.tron)
+export const IoTeX = getChainName(CoinType.iotex)
+export const Waves = getChainName(CoinType.waves)
+export const Classic = getChainName(CoinType.classic)
+export const POA = getChainName(CoinType.poa)
+export const TomoChain = getChainName(CoinType.tomochain)
+export const GoChain = getChainName(CoinType.gochain)
+export const Wanchain = getChainName(CoinType.wanchain)
+export const ThunderCore = getChainName(CoinType.thundertoken)
 
 const whiteList = 'whitelist.json'
 const blackList = 'blacklist.json'
@@ -21,6 +27,7 @@ export const getChainLogoPath = chain => `${chainsFolderPath}/${chain}/info/${lo
 export function getChainAssetsPath (chain) {
     return `${chainsFolderPath}/${chain}/assets`
 }
+
 export const getChainAssetLogoPath = (chain, address) => `${getChainAssetsPath(chain)}/${address}/${logo}`
 export const getChainValidatorsPath = chain => `${chainsFolderPath}/${chain}/validators`
 export const getChainValidatorsAssets = chain => readDirSync(getChainValidatorsAssetsPath(chain))
@@ -58,4 +65,8 @@ export const mapList = arr => {
         acm[val] = ""
         return acm
     }, {})
+}
+
+function getChainName(id: CoinType): string {
+    return CoinTypeUtils.id(id)
 }

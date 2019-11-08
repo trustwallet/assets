@@ -2,11 +2,10 @@ const { execSync } = require('child_process');
 const fs = require('fs')
 const path = require('path')
 const axios = require('axios')
-
-const readdirSync = path => fs.readdirSync(path)
+import { readDirSync } from "../src/test/helpers";
 
 const assetsPath = path.resolve(`${__dirname}/../blockchains/tron/assets`) 
-const chainAddresses = readdirSync(assetsPath)
+const chainAddresses = readDirSync(assetsPath)
 
 chainAddresses.forEach(async addr => {
     const trc20Info = await axios.get(`https://apilist.tronscan.org/api/token_trc20?contract=${addr}&showAll=1`).then(({ data }) => data)

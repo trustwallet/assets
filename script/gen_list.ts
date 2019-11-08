@@ -3,7 +3,9 @@ import { getOpenseaCollectionAddresses } from "./opesea_contrats"
 
 import {
     Ethereum,
+    isPathExistsSync,
     getChainAssetsPath,
+    chainsFolderPath,
     readDirSync,
     readFileSync,
     isChainWhitelistExistSync,
@@ -16,25 +18,9 @@ import {
     mapList
 } from '../src/test/helpers'
 
-// Current chains where assets tokens supported by Trust Wallet
-// TODO auto create list based on assets folder presence
-const chainsSupportedWhiteAndBlacklist = [
-    'binance',
-    'classic',
-    'eos',
-    Ethereum,
-    'gochain',
-    'ontology',
-    'poa',
-    'theta',
-    'thundertoken',
-    'tomochain',
-    'tron',
-    'vechain',
-    'wanchain',
-]
+const assetsChains = readDirSync(chainsFolderPath).filter(chain => isPathExistsSync(getChainAssetsPath(chain)))
 
-chainsSupportedWhiteAndBlacklist.forEach(async chain => {
+assetsChains.forEach(async chain => {
     const assets = readDirSync(getChainAssetsPath(chain))
 
     const whitelistPath = getChainWhitelistPath(chain)

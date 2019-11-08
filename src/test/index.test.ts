@@ -1,12 +1,7 @@
 const eztz = require('eztz-lib')
 
 import {
-    BNB,
-    Cosmos,
-    Tezos,
-    TRON,
-    IoTeX,
-    Waves,
+    Ethereum, Binance, Cosmos, Tezos, Tron, IoTeX, Waves, Classic, POA, TomoChain, GoChain, Wanchain, ThunderCore,
     chainsFolderPath,
     getChainLogoPath,
     getChainAssetsPath,
@@ -20,8 +15,7 @@ import {
     isLowerCase,
     isChecksum,
     getBinanceBEP2Symbols,
-    isTRC10,
-    isTRC20
+    isTRC10, isTRC20
 } from "./helpers"
 
 describe("Check repository root dir", () => {
@@ -73,8 +67,8 @@ describe(`Test "blockchains" folder`, () => {
     });
 
     describe("Check Ethereum side-chain folders", () => {
-        const ethSidechains = ["ethereum", "classic", "poa", "tomochain", "gochain", "wanchain", "thundertoken"]
-        const ethSidechainSupportedBlacklist = ["ethereum"]
+        const ethSidechains = [Ethereum, Classic, POA, TomoChain, GoChain, Wanchain, ThunderCore]
+        const ethSidechainSupportedBlacklist = [Ethereum]
 
         ethSidechains.forEach(chain => {
             test(`Test chain ${chain} folder`, () => {
@@ -93,7 +87,7 @@ describe(`Test "blockchains" folder`, () => {
     describe(`Check "binace" folder`, () => {
         it("Asset must exist on chain and", async () => {
             const tokenSymbols = await getBinanceBEP2Symbols()
-            const assets = readDirSync(getChainAssetsPath(BNB))
+            const assets = readDirSync(getChainAssetsPath(Binance))
 
             assets.forEach(asset => {
                 expect(tokenSymbols.indexOf(asset), `Asset ${asset} missing on chain`).not.toBe(-1)
@@ -102,20 +96,20 @@ describe(`Test "blockchains" folder`, () => {
     })
 
     describe(`Check "tron" folder`, () => {
-        const path = getChainAssetsPath(TRON)
+        const path = getChainAssetsPath(Tron)
 
         test("Expect asset to be TRC10 or TRC20", () => {
             readDirSync(path).forEach(asset => {
                 expect(isTRC10(asset) || isTRC20(asset), `Asset ${asset} non TRC10 nor TRC20`).toBe(true)
 
-                const assetsLogoPath = getChainAssetLogoPath(TRON, asset)
+                const assetsLogoPath = getChainAssetLogoPath(Tron, asset)
                 expect(isPathExistsSync(assetsLogoPath), `Missing file at path "${assetsLogoPath}"`).toBe(true)
             });
         })
     })
 
     describe("Check Staking chains", () => {
-        const stakingChains = [Tezos, Cosmos, IoTeX, TRON, Waves]
+        const stakingChains = [Tezos, Cosmos, IoTeX, Tron, Waves]
 
         test("Make sure tests added for new staking chain", () => {
             expect(stakingChains.length).toBe(5)
@@ -152,13 +146,14 @@ describe(`Test "blockchains" folder`, () => {
                 case Tezos:
                     testTezosValidatorsAssets(chainValidatorsAssetsList)
                     break;
-                case TRON:
+                case Tron:
                     testTronValidatorsAssets(chainValidatorsAssetsList)
                     break;
-                case TRON:
-                        testTronValidatorsAssets(chainValidatorsAssetsList)
-                        break;
+                case Tron:
+                    testTronValidatorsAssets(chainValidatorsAssetsList)
+                    break;
                 // TODO Add LOOM
+                // TODO Add 
                 default:
                     break;
             }
