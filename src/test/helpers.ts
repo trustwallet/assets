@@ -50,3 +50,12 @@ export const isTRC20 = address => {
     isLowerCase(address) == false &&
     isUpperCase(address) == false
 }
+
+export const sortDesc = arr => arr.sort((a, b) => a - b)
+export const getUnique = arr => Array.from(new Set(arr))
+export const mapList = arr => {
+    return arr.reduce((acm, val) => {
+        acm[val] = ""
+        return acm
+    }, {})
+}
