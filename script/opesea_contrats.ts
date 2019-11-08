@@ -1,6 +1,7 @@
 var axios = require("axios");
 import { toChecksum } from "../src/test/helpers"
 
+// Returns array of ERC-721, ERC-1155 contract addresses in checksum 
 export const getOpenseaCollectionAddresses = async () => {
     const limit = 300 // max limit
     let offset = 0
