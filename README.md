@@ -32,7 +32,7 @@ Token repository [https://github.com/trustwallet/assets](https://github.com/trus
 
 4. [coins](https://github.com/satoshilabs/slips/blob/master/slip-0044.md) integrated in [Wallet Core](https://developer.trustwallet.com/wallet-core)
 
-5. dApp images available in `Browser` section in Trust Wallet and at https://dapps.trustwallet.com and bookmarks icons. [read requirments](#dApp-image-naming-requirments)
+5. dApp images available in `Browser` section in Trust Wallet and at https://dapps.trustwallet.com and bookmarks icons. [read requirments](#dApp-image-naming-requirments). Also you can submit dApp to our list [read more](#dApp-subbmition/listing-requirements)
 
 6. Staking validators info available on [Trust Wallet Staking Platform](https://github.com/trustwallet/developer/blob/master/platform/staking.md)
 
@@ -58,6 +58,10 @@ Token repository [https://github.com/trustwallet/assets](https://github.com/trus
 - `<subdomain>.<domain_name>.png` e.g:
   https://app.compound.finance/ => `app.compound.finance.png`
   https://kyberswap.com/ => `kyberswap.com.png`
+
+## dApp subbmition/listing requirements
+- We encourage you to integrate [deep linking](https://developer.trustwallet.com/deeplinking) first
+- [Fill in a form](https://docs.google.com/forms/d/e/1FAIpQLSd5p9L78zKXIiu9E5yFRPf5UkvsLZ7TbUDLFBRIi1qMd8Td4A/viewform)
 
 
 ## Repository structure
