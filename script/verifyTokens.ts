@@ -11,7 +11,7 @@ ethereumSidechains.forEach(chain => {
 })
 const tokens = [].concat.apply([], addresses).map(a => a.toLowerCase())
 
-axios.post(TRUST_API_URL, tokens, {
+axios.post(TRUST_API_URL, {tokens}, {
     headers: {
         TOKEN_VERIFICATION_KEY
     }
