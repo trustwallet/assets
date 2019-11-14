@@ -49,7 +49,7 @@ describe(`Test "blockchains" folder`, () => {
     const foundChains = readDirSync(chainsFolderPath)
 
     test("Check number of existing chains", () => {
-        const supportedChains = 64
+        const supportedChains = 65
         expect(supportedChains).toBe(foundChains.length)
     })
 
