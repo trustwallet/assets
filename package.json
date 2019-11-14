@@ -4,7 +4,6 @@
   "description": "Assets consumed by Trust Wallet",
   "main": "index.js",
   "scripts": {
-    "verify": "npm run cleanup && ts-node ./script/verifyTokens",
     "test": "npm run cleanup && jest",
     "cleanup": "find ./.. -iname '.DS_Store' -type f -delete",
     "update-bep2": "node ./script/updateBEP2",
