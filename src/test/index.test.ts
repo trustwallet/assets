@@ -35,6 +35,7 @@ describe("Check repository root dir", () => {
         "package.json",
         "README.md",
         ".git",
+        "pricing"
     ]
 
     const dirActualFiles = readDirSync(".")
@@ -68,7 +69,6 @@ describe(`Test "blockchains" folder`, () => {
 
     describe("Check Ethereum side-chain folders", () => {
         const ethSidechains = [Ethereum, Classic, POA, TomoChain, GoChain, Wanchain, ThunderCore]
-        const ethSidechainSupportedBlacklist = [Ethereum]
 
         ethSidechains.forEach(chain => {
             test(`Test chain ${chain} folder`, () => {
