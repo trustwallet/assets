@@ -49,11 +49,6 @@ describe("Check repository root dir", () => {
 describe(`Test "blockchains" folder`, () => {
     const foundChains = readDirSync(chainsFolderPath)
 
-    test("Check number of existing chains", () => {
-        const supportedChains = 65
-        expect(supportedChains).toBe(foundChains.length)
-    })
-
     test(`Chain should have "logo.png" image`, () => {
         foundChains.forEach(chain => {
             const chainLogoPath = getChainLogoPath(chain)
