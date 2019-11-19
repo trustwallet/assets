@@ -15,7 +15,8 @@ import {
     isLowerCase,
     isChecksum,
     getBinanceBEP2Symbols,
-    isTRC10, isTRC20
+    isTRC10, isTRC20,
+    isLogoOK,
 } from "./helpers"
 
 describe("Check repository root dir", () => {
@@ -53,14 +54,16 @@ describe(`Test "blockchains" folder`, () => {
         foundChains.forEach(chain => {
             const chainLogoPath = getChainLogoPath(chain)
             expect(isPathExistsSync(chainLogoPath), `File missing at path "${chainLogoPath}"`).toBe(true)
+            const [isOk, msg] = isLogoOK(chainLogoPath)
+            expect(isOk, msg).toBe(true)
         })
-    });
+    })
 
     test("Chain folder must have lowercase naming", () => {
         foundChains.forEach(chain => {
             expect(isLowerCase(chain), `Chain folder must be in lowercase "${chain}"`).toBe(true)
         })
-    });
+    })
 
     describe("Check Ethereum side-chain folders", () => {
         const ethSidechains = [Ethereum, Classic, POA, TomoChain, GoChain, Wanchain, ThunderCore]
@@ -74,6 +77,8 @@ describe(`Test "blockchains" folder`, () => {
 
                     const assetLogoPath = getChainAssetLogoPath(chain, addr)
                     expect(isPathExistsSync(assetLogoPath), `Missing file at path "${assetLogoPath}"`).toBe(true)
+                    const [isOk, msg] = isLogoOK(assetLogoPath)
+                    expect(isOk, msg).toBe(true)
                 })
             })
         })
@@ -99,7 +104,9 @@ describe(`Test "blockchains" folder`, () => {
 
                 const assetsLogoPath = getChainAssetLogoPath(Tron, asset)
                 expect(isPathExistsSync(assetsLogoPath), `Missing file at path "${assetsLogoPath}"`).toBe(true)
-            });
+                const [isOk, msg] = isLogoOK(assetsLogoPath)
+                expect(isOk, msg).toBe(true)
+            })
         })
     })
 
@@ -126,12 +133,15 @@ describe(`Test "blockchains" folder`, () => {
             })
 
             
-            test(`Chain ${chain} validator must have coresponding asset logo`, () => {
+            test(`Chain ${chain} validator must have corresponding asset logo`, () => {
                 validatorsList.forEach(({ id }) => {
                     const path = getChainValidatorAssetLogoPath(chain, id)
                     expect(isPathExistsSync(path), `Chain ${chain} asset ${id} logo must be present at path ${path}`).toBe(true)
+                    
+                    const [isOk, msg] = isLogoOK(path)
+                    expect(isOk, msg).toBe(true)
                 })
-            });
+            })
 
             const chainValidatorsAssetsList = getChainValidatorsAssets(chain)
             switch (chain) {
@@ -144,28 +154,25 @@ describe(`Test "blockchains" folder`, () => {
                 case Tron:
                     testTronValidatorsAssets(chainValidatorsAssetsList)
                     break;
-                case Tron:
-                    testTronValidatorsAssets(chainValidatorsAssetsList)
-                    break;
                 // TODO Add LOOM
-                // TODO Add 
+                // TODO Add Waves
+                // TODO Add IoTex
                 default:
                     break;
             }
             
             test("Make sure number of validators in the list match validators assets", () => {
                 expect(validatorsList.length).toBe(chainValidatorsAssetsList.length)
-            });
+            })
         })
-
-    });
+    })
 })
 
 function testTezosValidatorsAssets(assets) {
     test("Tezos assets must be correctly formated tz1 address", () => {
         assets.forEach(addr => {
             expect(eztz.crypto.checkAddress(addr), `Ivalid Tezos address: ${addr}`).toBe(true)
-        });
+        })
     })
 }
 
@@ -173,7 +180,7 @@ function testTronValidatorsAssets(assets) {
     test("TRON assets must be correctly formated", () => {
         assets.forEach(addr => {
             expect(isTRC20(addr), `Address ${addr} should be TRC20`).toBe(true)
-        });
+        })
     })
 }
 
@@ -183,7 +190,7 @@ function testCosmosValidatorsAddress(assets) {
             expect(addr.startsWith("cosmosvaloper1"), `Address ${addr} should start from "cosmosvaloper1"`).toBe(true)
             expect(addr.length, `Address ${addr} should have length 52`).toBe(52)
             expect(isLowerCase(addr), `Address ${addr} should be in lowercase`).toBe(true)
-        });
+        })
     })
 }
 

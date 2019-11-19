@@ -49,7 +49,7 @@ Token repository [https://github.com/trustwallet/assets](https://github.com/trus
 ## Image Requirements
 - file extension: `png`. Uppercase `PNG` considered invalid.
 - name：file name requirements for: `logo.png` name, but [folder naming](#repository-structure) where they placed is most important part of contribution
-- size: `256px by 256px`
+- size: `256px by 256px` or `512px by 512px`
 - background: preferably transparent
 - use simple drag and drop online service [tinypng](https://tinypng.com/) to optimize image size
 

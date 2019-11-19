@@ -3,7 +3,9 @@ const axios = require('axios')
 const Web3 = require('web3')
 const web3 = new Web3('ws://localhost:8546');
 import { CoinTypeUtils, CoinType } from "@trustwallet/types";
+const sizeOf = require("image-size");
 
+export const getChainName = (id: CoinType): string =>  CoinTypeUtils.id(id)
 export const Binance = getChainName(CoinType.binance)
 export const Cosmos = getChainName(CoinType.cosmos)
 export const Ethereum = getChainName(CoinType.ethereum)
@@ -24,9 +26,12 @@ const blackList = 'blacklist.json'
 export const logo = `logo.png`
 export const chainsFolderPath = './blockchains'
 export const getChainLogoPath = chain => `${chainsFolderPath}/${chain}/info/${logo}`
-export function getChainAssetsPath (chain) {
-    return `${chainsFolderPath}/${chain}/assets`
-}
+export const getChainAssetsPath = (chain: string): string => `${chainsFolderPath}/${chain}/assets`
+
+export const minLogoWidth = 64
+export const minLogoHeight = 64
+export const maxLogoWidth = 512
+export const maxLogoHeight = 512
 
 export const getChainAssetLogoPath = (chain, address) => `${getChainAssetsPath(chain)}/${address}/${logo}`
 export const getChainValidatorsPath = chain => `${chainsFolderPath}/${chain}/validators`
@@ -67,6 +72,19 @@ export const mapList = arr => {
     }, {})
 }
 
-function getChainName(id: CoinType): string {
-    return CoinTypeUtils.id(id)
+export const getImageDimentions = (path: string) => sizeOf(path)
+
+export const isLogoOK = (path: string): [boolean,  string] => {
+    const { width, height } =  getImageDimentions(path)
+    if (((width >= minLogoWidth && width <= maxLogoWidth) && (height >= minLogoHeight && height <= maxLogoHeight))) {
+        return [true, '']
+    } else {
+        return [false, `Image at path ${path} must have dimensions: min:${minLogoWidth}x${minLogoHeight} and max:${maxLogoWidth}x${maxLogoHeight} insted ${width}x${height}`]
+    }
 }
+
+export const calculateAspectRatioFit = (srcWidth: number, srcHeight: number, maxWidth: number, maxHeight: number) => {
+    const ratio = Math.min(maxWidth / srcWidth, maxHeight / srcHeight)
+    return { width: Math.round(srcWidth * ratio), height: Math.round(srcHeight * ratio) }
+ }
+ 
