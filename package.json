@@ -4,10 +4,11 @@
   "description": "Assets consumed by Trust Wallet",
   "main": "index.js",
   "scripts": {
-    "verify": "node ./test/verifyTokens",
-    "test": "npm run pre-test && node ./test/index.js",
-    "pre-test": "find ./.. -name '.DS_Store' -type f -delete",
-    "update-bep2": "node ./script/updateBEP2"
+    "test": "npm run cleanup && jest",
+    "cleanup": "find ./.. -iname '.DS_Store' -type f -delete",
+    "update-bep2": "node ./script/updateBEP2",
+    "checksum": "npm run cleanup && node ./script/erc20_to_checksum",
+    "list": "npm run cleanup && ts-node ./script/gen_list"
   },
   "repository": {
     "type": "git",
@@ -29,11 +30,26 @@
   },
   "homepage": "https://github.com/trustwallet/assets#readme",
   "devDependencies": {
-    "mongoose": "^5.4.10"
+    "@trustwallet/types": "^0.1.16",
+    "@types/jest": "^24.0.22",
+    "@types/jest-expect-message": "^1.0.1",
+    "ethereum-checksum-address": "0.0.5",
+    "jest": "^24.9.0",
+    "jest-expect-message": "^1.0.2",
+    "ts-jest": "^24.1.0",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.7.2"
   },
   "dependencies": {
     "axios": "^0.19.0",
     "bluebird": "^3.5.5",
-    "chalk": "^2.4.2"
+    "chalk": "^2.4.2",
+    "eztz-lib": "^0.1.2",
+    "web3": "^1.2.2"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "jest-expect-message"
+    ]
   }
 }
