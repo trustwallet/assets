@@ -209,6 +209,7 @@ https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/tron/ass
 
 ## Used in Applications
 - [Trust Wallet](https://trustwallet.com) - [iOS](https://itunes.apple.com/us/app/trust-ethereum-wallet/id1288339409) and [Android](https://play.google.com/store/apps/details?id=com.wallet.crypto.trustapp)
-- [0x Tracker](https://0xtracker.com) - The 0x Protocol Trade Explorer and news aggregator
+- [0x Tracker](https://0xtracker.com) - The 0x Protocol Trade Explorer and news aggregator.
 - [Uniswap](https://uniswap.exchange) - Uniswap is a protocol for automated token exchange on Ethereum.
 - [LinkDrop](https://linkdrop.io/) - A customer acquisition platform for DApps. The easiest crypto onboarding.
+- [Aragon](https://aragon.org/) − Aragon is platform and network for decentralized organizations.
