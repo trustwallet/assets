@@ -150,11 +150,6 @@
         "id": 161
     },
     {
-        "coin": 202,
-        "type": "coin",
-        "id": 168
-    },
-    {
         "coin": 10,
         "type": "coin",
         "id": 170
@@ -386,26 +381,9 @@
         "id": 819
     },
     {
-        "coin": 60,
-        "type": "token",
-        "token_id": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
-        "id": 825
-    },
-    {
-        "coin": 195,
-        "type": "token",
-        "token_id": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
-        "id": 825
-    },
-    {
         "coin": 84,
         "type": "coin",
         "id": 833
-    },
-    {
-        "coin": 186,
-        "type": "coin",
-        "id": 869
     },
     {
         "coin": 43,
@@ -452,6 +430,11 @@
         "coin": 168,
         "type": "coin",
         "id": 1004
+    },
+    {
+        "coin": 289,
+        "type": "coin",
+        "id": 1008
     },
     {
         "coin": 60,
@@ -598,12 +581,6 @@
         "id": 1343
     },
     {
-        "coin": 60,
-        "type": "token",
-        "token_id": "0x020C710646e23AB868dbE5B88004892797fE4eFb",
-        "id": 1375
-    },
-    {
         "coin": 888,
         "type": "coin",
         "id": 1376
@@ -743,6 +720,11 @@
         "type": "token",
         "token_id": "0xB9e7F8568e08d5659f5D29C4997173d84CdF2607",
         "id": 1562
+    },
+    {
+        "coin": 165,
+        "type": "coin",
+        "id": 1567
     },
     {
         "coin": 323,
@@ -2098,7 +2080,7 @@
     {
         "coin": 714,
         "type": "token",
-        "token_id": "",
+        "token_id": "WISH-2D5",
         "id": 2236
     },
     {
@@ -2142,6 +2124,11 @@
         "type": "token",
         "token_id": "0x88A3E4F35D64aAD41A6d4030ac9AFE4356cB84fA",
         "id": 2245
+    },
+    {
+        "coin": 1122,
+        "type": "coin",
+        "id": 2246
     },
     {
         "coin": 60,
@@ -2213,12 +2200,6 @@
         "type": "token",
         "token_id": "0x672a1AD4f667FB18A333Af13667aa0Af1F5b5bDD",
         "id": 2271
-    },
-    {
-        "coin": 60,
-        "type": "token",
-        "token_id": "0x63b992e6246d88f07fc35A056d2C365E6D441A3D",
-        "id": 2272
     },
     {
         "coin": 60,
@@ -2447,6 +2428,11 @@
         "type": "token",
         "token_id": "0x1234567461d3f8Db7496581774Bd869C83D51c93",
         "id": 2334
+    },
+    {
+        "coin": 998,
+        "type": "coin",
+        "id": 2335
     },
     {
         "coin": 60,
@@ -2795,12 +2781,6 @@
     {
         "coin": 60,
         "type": "token",
-        "token_id": "0x687174f8C49ceb7729D925C3A961507ea4Ac7b28",
-        "id": 2425
-    },
-    {
-        "coin": 60,
-        "type": "token",
         "token_id": "0x2567c677473d110D75a8360C35309e63B1d52429",
         "id": 2426
     },
@@ -3036,7 +3016,7 @@
     {
         "coin": 714,
         "type": "token",
-        "token_id": "",
+        "token_id": "EQL-586",
         "id": 2479
     },
     {
@@ -3790,6 +3770,12 @@
     {
         "coin": 60,
         "type": "token",
+        "token_id": "0x8B40761142B9aa6dc8964e61D0585995425C3D94",
+        "id": 2661
+    },
+    {
+        "coin": 60,
+        "type": "token",
         "token_id": "0xF41e5Fbc2F6Aac200Dd8619E121CE1f05D150077",
         "id": 2664
     },
@@ -4400,7 +4386,7 @@
     {
         "coin": 714,
         "type": "token",
-        "token_id": "",
+        "token_id": "TM2-0C4",
         "id": 2850
     },
     {
@@ -4640,12 +4626,6 @@
         "type": "token",
         "token_id": "0xd37532D304214D588aeeaC4c365E8F1d72e2304A",
         "id": 2904
-    },
-    {
-        "coin": 60,
-        "type": "token",
-        "token_id": "0x076a93a40Bf9E0D21d3F75dd1E0584DdbE0f9D1a",
-        "id": 2905
     },
     {
         "coin": 60,
@@ -4970,14 +4950,13 @@
     {
         "coin": 60,
         "type": "token",
-        "token_id": "0xe7D7b37e72510309Db27C460378f957B1B04Bd5d",
-        "id": 2973
-    },
-    {
-        "coin": 60,
-        "type": "token",
         "token_id": "0xbF5496122CF1bB778E0cBE5eaB936f2BE5fC0940",
         "id": 2975
+    },
+    {
+        "coin": 382,
+        "type": "coin",
+        "id": 2976
     },
     {
         "coin": 60,
@@ -5080,12 +5059,6 @@
         "id": 3011
     },
     {
-        "coin": 818,
-        "type": "token",
-        "token_id": "0x0000000000000000000000000000456E65726779",
-        "id": 3012
-    },
-    {
         "coin": 60,
         "type": "token",
         "token_id": "0x8D5682941cE456900b12d47ac06a88b47C764CE1",
@@ -5148,17 +5121,6 @@
         "type": "token",
         "token_id": "0x0223fc70574214F65813fE336D870Ac47E147fAe",
         "id": 3040
-    },
-    {
-        "coin": 2941,
-        "type": "coin",
-        "id": 3046
-    },
-    {
-        "coin": 60,
-        "type": "token",
-        "token_id": "0xc7C03B8a3FC5719066E185ea616e87B88eba44a3",
-        "id": 3052
     },
     {
         "coin": 60,
@@ -5689,12 +5651,6 @@
         "type": "token",
         "token_id": "0xDE1E0AE6101b46520cF66fDC0B1059c5cC3d106c",
         "id": 3216
-    },
-    {
-        "coin": 1024,
-        "type": "token",
-        "token_id": "ong",
-        "id": 3217
     },
     {
         "coin": 9797,
@@ -6653,12 +6609,6 @@
     {
         "coin": 60,
         "type": "token",
-        "token_id": "0x5874548C51822Da642661b235e101D6d636b6feb",
-        "id": 3522
-    },
-    {
-        "coin": 60,
-        "type": "token",
         "token_id": "0x26CB3641aaA43911f1D4cB2ce544eb652AAc7c47",
         "id": 3580
     },
@@ -6855,7 +6805,7 @@
         "id": 3632
     },
     {
-        "coin": 714,
+        "coin": 195,
         "type": "token",
         "token_id": "TG37mUxRUaH1E8DWSrrmoQ79BnZn1yHztb",
         "id": 3633
@@ -7078,12 +7028,6 @@
     {
         "coin": 60,
         "type": "token",
-        "token_id": "0x33B919F54692dDbf702065763EA2b50Ca02e6bfF",
-        "id": 3689
-    },
-    {
-        "coin": 60,
-        "type": "token",
         "token_id": "0x0775C81A273B355e6a5b76e240BF708701F00279",
         "id": 3690
     },
@@ -7186,7 +7130,7 @@
         "id": 3717
     },
     {
-        "coin": 714,
+        "coin": 195,
         "type": "token",
         "token_id": "1002000",
         "id": 3718
@@ -7265,12 +7209,6 @@
     {
         "coin": 60,
         "type": "token",
-        "token_id": "0x1254E59712e6e727dC71E0E3121Ae952b2c4c3b6",
-        "id": 3736
-    },
-    {
-        "coin": 60,
-        "type": "token",
         "token_id": "0xb683D83a532e2Cb7DFa5275eED3698436371cc9f",
         "id": 3737
     },
@@ -7327,12 +7265,6 @@
         "type": "token",
         "token_id": "0x4bD70556ae3F8a6eC6C4080A0C327B24325438f3",
         "id": 3748
-    },
-    {
-        "coin": 60,
-        "type": "token",
-        "token_id": "0xa573661b5FB2063d7AB12336ee24589F7A79fdab",
-        "id": 3749
     },
     {
         "coin": 398,
@@ -7473,12 +7405,6 @@
     {
         "coin": 60,
         "type": "token",
-        "token_id": "0xD178b20c6007572bD1FD01D205cC20D32B4A6015",
-        "id": 3785
-    },
-    {
-        "coin": 60,
-        "type": "token",
         "token_id": "0x8CC3E2BdC17682c622eB789EDA23FbD6988C84Da",
         "id": 3787
     },
@@ -7556,12 +7482,6 @@
         "type": "token",
         "token_id": "0x26fb86579e371c7AEdc461b2DdEF0A8628c93d3B",
         "id": 3801
-    },
-    {
-        "coin": 60,
-        "type": "token",
-        "token_id": "0x259059f137CB9B8F60AE27Bd199d97aBb69E539B",
-        "id": 3804
     },
     {
         "coin": 60,
@@ -7646,12 +7566,6 @@
         "type": "token",
         "token_id": "0xbD149D3F7614B52f8A5E7e8986aFd77E5d0E57CF",
         "id": 3820
-    },
-    {
-        "coin": 500,
-        "type": "token",
-        "token_id": "tfuel",
-        "id": 3822
     },
     {
         "coin": 60,
@@ -8010,13 +7924,18 @@
         "id": 3917
     },
     {
+        "coin": 19165,
+        "type": "coin",
+        "id": 3918
+    },
+    {
         "coin": 60,
         "type": "token",
         "token_id": "0x10c71515602429C19d53011EA7040B87a4894838",
         "id": 3920
     },
     {
-        "coin": 714,
+        "coin": 195,
         "type": "token",
         "token_id": "TVimprG4oe3i2HapWzPuTh4WtuosRAh5Ew",
         "id": 3922
@@ -8128,8 +8047,9 @@
         "id": 3944
     },
     {
-        "coin": 1023,
-        "type": "coin",
+        "coin": 714,
+        "type": "token",
+        "token_id": "ONE-5F9",
         "id": 3945
     },
     {
@@ -8434,7 +8354,7 @@
     {
         "coin": 714,
         "type": "token",
-        "token_id": "bnb1vdjhrkgvt4y76ykyvrvh68pzqg3lvv0y5yfxyf",
+        "token_id": "RAVEN-F66",
         "id": 4024
     },
     {
@@ -8520,7 +8440,7 @@
         "id": 4053
     },
     {
-        "coin": 714,
+        "coin": 195,
         "type": "token",
         "token_id": "TVQ6jYV5yTtRsKcD8aRc1a4Kei4V45ixLn",
         "id": 4054
@@ -8581,12 +8501,6 @@
     {
         "coin": 60,
         "type": "token",
-        "token_id": "0x0ED8343dfdEE32E38b4c4cE15a3b00A59E90F3dB",
-        "id": 4068
-    },
-    {
-        "coin": 60,
-        "type": "token",
         "token_id": "0x91cA1146073B0cc9f57A1Dde38a0CCB1ab2a3317",
         "id": 4069
     },
@@ -8629,7 +8543,7 @@
     {
         "coin": 714,
         "type": "token",
-        "token_id": " bnb1m5uzzfxs7x05sl28gg96zyecn9jwgtkpyeftyn",
+        "token_id": "ERD-D06",
         "id": 4086
     },
     {
@@ -8799,6 +8713,12 @@
         "id": 4139
     },
     {
+        "coin": 60,
+        "type": "token",
+        "token_id": "0x225927F8fa71d16EE07968B8746364D1d9F839bD",
+        "id": 4141
+    },
+    {
         "coin": 714,
         "type": "token",
         "token_id": "CBIX-3C9",
@@ -8830,7 +8750,7 @@
     {
         "coin": 714,
         "type": "token",
-        "token_id": " bnb1e4q8whcufp6d72w8nwmpuhxd96r4n0fstegyuy",
+        "token_id": "RUNE-B1A",
         "id": 4157
     },
     {
@@ -8975,7 +8895,7 @@
         "id": 4205
     },
     {
-        "coin": 714,
+        "coin": 195,
         "type": "token",
         "token_id": "TLa2f6VPqDgRE67v1736s7bJ8Ray5wYjU7",
         "id": 4206
@@ -9284,6 +9204,12 @@
         "id": 4452
     },
     {
+        "coin": 714,
+        "type": "token",
+        "token_id": "ECO-083",
+        "id": 4466
+    },
+    {
         "coin": 60,
         "type": "token",
         "token_id": "0x65cCD72c0813CE6f2703593B633202a0F3Ca6a0c",
@@ -9314,7 +9240,7 @@
         "id": 4494
     },
     {
-        "coin": 714,
+        "coin": 195,
         "type": "token",
         "token_id": "TUL5yxRKeSWvceLZ3BSU5iNJcQmNxkWayh",
         "id": 4495
@@ -9418,7 +9344,7 @@
     {
         "coin": 60,
         "type": "token",
-        "token_id": "0x0794ce7d4459105926Da230F318c1e34BC790517",
+        "token_id": "0x301C755bA0fcA00B1923768Fffb3Df7f4E63aF31",
         "id": 4678
     },
     {
@@ -9590,7 +9516,7 @@
     {
         "coin": 714,
         "type": "token",
-        "token_id": "",
+        "token_id": "VOTE-FD4",
         "id": 4792
     },
     {
@@ -9680,7 +9606,13 @@
     {
         "coin": 60,
         "type": "token",
-        "token_id": "0xA1F18BA7a1FA1F2c15EAE5C42e722278F1235b7a",
+        "token_id": "0xBA8c0244FBDEB10f19f6738750dAeEDF7a5081eb",
+        "id": 4841
+    },
+    {
+        "coin": 60,
+        "type": "token",
+        "token_id": "0xA8eBb13B9895E52Ab7d815CE7F63591402581624",
         "id": 4845
     },
     {
@@ -9708,7 +9640,7 @@
         "id": 4862
     },
     {
-        "coin": 714,
+        "coin": 195,
         "type": "token",
         "token_id": "1002413",
         "id": 4867
@@ -9718,6 +9650,12 @@
         "type": "token",
         "token_id": "0xbACA8D824f471a6b20fdbac25E9e8943B9cD743B",
         "id": 4868
+    },
+    {
+        "coin": 60,
+        "type": "token",
+        "token_id": "0x322f4f6a48329690957a3BCBd1301516C2B83c1F",
+        "id": 4870
     },
     {
         "coin": 60,
@@ -9746,6 +9684,12 @@
     {
         "coin": 60,
         "type": "token",
+        "token_id": "0x5978708d6ccE1CC9640Eed47422D64c91BbD5171",
+        "id": 4936
+    },
+    {
+        "coin": 60,
+        "type": "token",
         "token_id": "0xF70d160102cF7a22c1E432d6928a9d625Db91170",
         "id": 4940
     },
@@ -9760,5 +9704,40 @@
         "type": "token",
         "token_id": "0x0d16450D347c12C086d6C94c76c5Aaac35eA07E0",
         "id": 4942
+    },
+    {
+        "coin": 60,
+        "type": "token",
+        "token_id": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+        "id": 4943
+    },
+    {
+        "coin": 60,
+        "type": "token",
+        "token_id": "0x0Ba45A8b5d5575935B8158a88C631E9F9C95a2e5",
+        "id": 4944
+    },
+    {
+        "coin": 60,
+        "type": "token",
+        "token_id": "0x3DB99ab08006aeFcC9600972eCA8C202396B4300",
+        "id": 4946
+    },
+    {
+        "coin": 309,
+        "type": "coin",
+        "id": 4948
+    },
+    {
+        "coin": 60,
+        "type": "token",
+        "token_id": "0xE1bAD922F84b198A08292FB600319300ae32471b",
+        "id": 4953
+    },
+    {
+        "coin": 60,
+        "type": "token",
+        "token_id": "0x6096d2460CF5177E40B515223428DC005ad35123",
+        "id": 4958
     }
 ]
