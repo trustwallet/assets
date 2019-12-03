@@ -60,9 +60,10 @@ Token repository [https://github.com/trustwallet/assets](https://github.com/trus
   https://kyberswap.com/ => `kyberswap.com.png`
 
 ## dApp subbmition and listing requirements
-- We encourage you to integrate [deep linking](https://developer.trustwallet.com/deeplinking) first
-- [Fill in a form](https://docs.google.com/forms/d/e/1FAIpQLSd5p9L78zKXIiu9E5yFRPf5UkvsLZ7TbUDLFBRIi1qMd8Td4A/viewform)
-
+- Integrate [deep linking](https://developer.trustwallet.com/deeplinking) first
+- Add [logo](https://trustwallet.com/press) as dApp supported wallet
+- Test dApp inside Trust Wallet on iOS and Android devices
+- [Submit form for review](https://docs.google.com/forms/d/e/1FAIpQLSd5p9L78zKXIiu9E5yFRPf5UkvsLZ7TbUDLFBRIi1qMd8Td4A/viewform)
 
 ## Repository structure
 
