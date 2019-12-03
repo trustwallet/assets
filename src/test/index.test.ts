@@ -19,6 +19,11 @@ import {
     isLogoOK,
 } from "./helpers"
 
+enum TickerType {
+    Token = "token",
+    Coin = "coin"
+}
+
 describe("Check repository root dir", () => {
     const rootDirAllowedFiles = [
         ".github",
@@ -194,4 +199,69 @@ function testCosmosValidatorsAddress(assets) {
     })
 }
 
+describe("Test Coinmarketcap mapping", () => {
+    const cmcMap = JSON.parse(readFileSync("./pricing/coinmarketcap/mapping.json"))
+
+    test("Must have items", () => {
+        expect(cmcMap.length, `CMC map must have items`).toBeGreaterThan(0)
+    })
+
+    test("Items must be sorted by id in desc order", () => {
+        cmcMap.forEach((el, i) => {
+            if (i > 0) {
+                const previousID = cmcMap[i - 1].id
+                const currentID = el.id
+                expect(currentID, `Item ${currentID} must be greather or equal to ${previousID} `).toBeGreaterThanOrEqual(previousID)
+            }
+        })
+    })
+
+    test("Properies value shoud not contain spaces", () => {
+        cmcMap.forEach(el => {
+            Object.keys(el).forEach(key => {
+                const val = el[key]
+                if (typeof val === "string") {
+                    expect(val.indexOf(" ") >= 0, ` Property value "${val}" should not contain space`).toBe(false)
+                }
+            })
+        })
+    });
+    
+    test("Params should have value and correct type", () => {
+        cmcMap.forEach(el => {
+            const {coin, type, id, token_id} = el
+            
+            expect(typeof coin, `Coin ${coin} must be type "number"`).toBe("number")
+
+            expect(["token", "coin"], `Element with id ${id} has wrong type: "${type}"`).toContain(type)
+            if (type === "token") {
+                expect(token_id, `token_id ${token_id} with id ${id} must be type not empty`).toBeTruthy()
+            }
+
+            if (type === "coin") {
+                expect(el, `Element with id ${id} should not have property "token_id"`).not.toHaveProperty("token_id")
+            }
+        });
+    });
+
+    test(`"token_id" should be in correct format`, async () => {
+        const tokenSymbols = await getBinanceBEP2Symbols()
+
+        cmcMap.forEach(el => {
+            const {coin, token_id, type, id} = el
+            switch (coin) {
+                case 60 && type === TickerType.Token:
+                    expect(isChecksum(token_id), `"token_id" ${token_id} with id ${id} must be in checksum`).toBe(true)
+                    break;
+                case 195 && type === TickerType.Token:
+                    expect(isTRC10(token_id) || isTRC20(token_id), `"token_id" ${token_id} with id ${id} must be in TRC10 or TRC20`).toBe(true)
+                    break;
+                case 714 && type === TickerType.Token:
+                    expect(tokenSymbols.indexOf(token_id), `"token_id" ${token_id} with id ${id} must be BEP2 symbol`).toBe(true)
+                default:
+                    break;
+            }
+        })
+    })
+})
 // TODO test whitelist
