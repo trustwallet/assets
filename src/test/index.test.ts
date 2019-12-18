@@ -166,8 +166,18 @@ describe(`Test "blockchains" folder`, () => {
                     break;
             }
             
-            test("Make sure number of validators in the list match validators assets", () => {
-                expect(validatorsList.length).toBe(chainValidatorsAssetsList.length)
+            test("Make sure validator has corresponding logo", () => {
+                validatorsList.forEach(val => {
+                    expect(chainValidatorsAssetsList.indexOf(val.id), `Expecting image asset for validator ${val.id} on chain ${chain}`)
+                        .toBeGreaterThanOrEqual(0)
+                })
+            })
+
+            test("Make sure validator asset logo has corresponding info", () => {
+                chainValidatorsAssetsList.forEach(valAssetLogoID => {
+                    expect(validatorsList.filter(v => v.id === valAssetLogoID).length, `Expect validator logo ${valAssetLogoID} to have info`)
+                        .toBe(1)
+                })
             })
         })
     })
