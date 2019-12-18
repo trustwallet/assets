@@ -214,3 +214,4 @@ https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/tron/ass
 - [Uniswap](https://uniswap.exchange) - Uniswap is a protocol for automated token exchange on Ethereum.
 - [LinkDrop](https://linkdrop.io/) - A customer acquisition platform for DApps. The easiest crypto onboarding.
 - [Aragon](https://aragon.org/) − Aragon is platform and network for decentralized organizations.
+- [SpiderDEX](https://www.spiderdex.com) - Decentralized exchange for crypto collectibles.
