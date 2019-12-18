@@ -216,12 +216,33 @@ describe("Test Coinmarketcap mapping", () => {
         expect(cmcMap.length, `CMC map must have items`).toBeGreaterThan(0)
     })
 
-    test("Items must be sorted by id in desc order", () => {
+    test(`Items must be sorted by "id" in ascending order`, () => {
         cmcMap.forEach((el, i) => {
             if (i > 0) {
-                const previousID = cmcMap[i - 1].id
-                const currentID = el.id
-                expect(currentID, `Item ${currentID} must be greather or equal to ${previousID} `).toBeGreaterThanOrEqual(previousID)
+                const prevID = cmcMap[i - 1].id
+                const curID = el.id
+                expect(curID, `Item ${curID} must be greather or equal to ${prevID}`)
+                    .toBeGreaterThanOrEqual(prevID)
+            }
+        })
+    })
+
+    test(`Items must be sorted by "coin" in ascending order if have same "id"`, () => {
+        cmcMap.forEach((el, i) => {
+            if (i > 0) {
+                const prevEl = cmcMap[i - 1]
+
+                const prevCoin = prevEl.coin
+                const prevID = cmcMap[i - 1].id
+
+                const curCoin = el.coin
+                const curID = el.id
+
+                if (prevID == curID) {
+                    expect(curCoin, `Item ${JSON.stringify(el)} must be greather or equal to ${JSON.stringify(prevEl)}`)
+                        .toBeGreaterThanOrEqual(prevCoin)
+                }
+
             }
         })
     })
