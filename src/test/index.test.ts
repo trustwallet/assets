@@ -128,7 +128,7 @@ describe(`Test "blockchains" folder`, () => {
             test(`Make sure ${chain} validators list has correct structure`, () => {
                 validatorsList.forEach(val => {
                     const keys = Object.keys(val)
-                    expect(keys.length, `Wrong keys amount`).toBe(4)
+                    expect(keys.length, `Wrong keys amount`).toBeGreaterThanOrEqual(4)
 
                     keys.forEach(key => {
                         const type = typeof key
