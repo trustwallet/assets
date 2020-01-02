@@ -11,7 +11,7 @@
     "list": "npm run cleanup && ts-node ./script/gen_list",
     "resize": "npm run cleanup && ts-node ./script/resize_images",
     "map-cmc": "npm run cleanup && ts-node ./pricing/coinmarketcap/script",
-    "magic": "npm run cleanup && npm run update-bep2 && npm run checksum-erc20 && npm run resize && npm run list && npm run test"
+    "magic": "npm run update-bep2 && npm run checksum-erc20 && npm run resize && npm run list && npm run test"
   },
   "repository": {
     "type": "git",
