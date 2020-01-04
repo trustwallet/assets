@@ -7,18 +7,18 @@ const sizeOf = require("image-size");
 
 export const getChainName = (id: CoinType): string =>  CoinTypeUtils.id(id)
 export const Binance = getChainName(CoinType.binance)
+export const Classic = getChainName(CoinType.classic)
 export const Cosmos = getChainName(CoinType.cosmos)
 export const Ethereum = getChainName(CoinType.ethereum)
-export const Tezos = getChainName(CoinType.tezos)
-export const Tron = getChainName(CoinType.tron)
-export const IoTeX = getChainName(CoinType.iotex)
-export const Waves = getChainName(CoinType.waves)
-export const Classic = getChainName(CoinType.classic)
-export const POA = getChainName(CoinType.poa)
-export const TomoChain = getChainName(CoinType.tomochain)
 export const GoChain = getChainName(CoinType.gochain)
-export const Wanchain = getChainName(CoinType.wanchain)
+export const IoTeX = getChainName(CoinType.iotex)
+export const POA = getChainName(CoinType.poa)
+export const Tezos = getChainName(CoinType.tezos)
 export const ThunderCore = getChainName(CoinType.thundertoken)
+export const TomoChain = getChainName(CoinType.tomochain)
+export const Tron = getChainName(CoinType.tron)
+export const Wanchain = getChainName(CoinType.wanchain)
+export const Waves = getChainName(CoinType.waves)
 
 const whiteList = 'whitelist.json'
 const blackList = 'blacklist.json'
