@@ -16,9 +16,7 @@ import {
 } from "../src/test/helpers"
 const sharp = require('sharp')
 const bluebird = require("bluebird")
-
 const foundChains = readDirSync(chainsFolderPath)
-
 
 function downsize() {
     console.log(`Start resizing`)
