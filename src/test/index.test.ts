@@ -17,6 +17,9 @@ import {
     getBinanceBEP2Symbols,
     isTRC10, isTRC20,
     isLogoOK,
+    getChainWhitelistPath,
+    getChainBlacklistPath,
+    mapList
 } from "./helpers"
 
 enum TickerType {
@@ -295,4 +298,31 @@ describe("Test Coinmarketcap mapping", () => {
         })
     })
 })
-// TODO test whitelist
+
+// Enable when better solution handaling erc20 from opensea erc721 list
+describe.skip("Test blacklist and whitelist", () => {
+    const assetsChains = readDirSync(chainsFolderPath).filter(chain => isPathExistsSync(getChainAssetsPath(chain)))
+
+    assetsChains.forEach(chain => {
+        const whiteList = JSON.parse(readFileSync(getChainWhitelistPath(chain)))
+        const blackList = JSON.parse(readFileSync(getChainBlacklistPath(chain)))
+
+        const whitelistMap = mapList(whiteList)
+        const blacklistMap = mapList(blackList)
+
+        test(`Whitelist should not contain assets from blacklist on ${chain} chain`, () => {
+            whiteList.forEach(a => {
+                const isWhitelistInBlacklist = blacklistMap.hasOwnProperty(a)
+                expect(isWhitelistInBlacklist, `Found whitelist asset ${a} in blacklist on chain ${chain}`).toBe(false)
+            })
+        })
+
+        test(`Blacklist should not contain assets from whitelist on ${chain} chain`, () => {
+            blackList.forEach(a => {
+                const isBlacklistInWhitelist = whitelistMap.hasOwnProperty(a)
+                expect(isBlacklistInWhitelist, `Found blacklist asset ${a} in whitelist on chain ${chain}`).toBe(false)
+            })
+        })
+    })
+})
+

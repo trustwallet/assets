@@ -44,6 +44,7 @@ assetsChains.forEach(async chain => {
             newBlackList = currentBlacklist.concat(nftList)
             break;
         default:
+            newBlackList = newBlackList.concat(currentBlacklist)
             break;
     }
  
