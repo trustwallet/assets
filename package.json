@@ -4,10 +4,14 @@
   "description": "Assets consumed by Trust Wallet",
   "main": "index.js",
   "scripts": {
-    "verify": "node ./test/verifyTokens",
-    "test": "npm run pre-test && node ./test/index.js",
-    "pre-test": "find ./.. -name '.DS_Store' -type f -delete",
-    "update-bep2": "node ./script/updateBEP2"
+    "test": "npm run cleanup && jest",
+    "cleanup": "find ./.. -iname '.DS_Store' -type f -delete",
+    "update-bep2": "npm run cleanup && node ./script/updateBEP2",
+    "checksum-erc20": "npm run cleanup && node ./script/erc20_to_checksum",
+    "list": "npm run cleanup && ts-node ./script/gen_list",
+    "resize": "npm run cleanup && ts-node ./script/resize_images",
+    "map-cmc": "npm run cleanup && ts-node ./pricing/coinmarketcap/script",
+    "magic": "npm run update-bep2 && npm run checksum-erc20 && npm run resize && npm run list && npm t"
   },
   "repository": {
     "type": "git",
@@ -16,6 +20,7 @@
   "keywords": [
     "ERC20 token images",
     "TRC-10 token images",
+    "TRC-20 token images",
     "BEP-2 token images"
   ],
   "engines": {
@@ -28,11 +33,28 @@
   },
   "homepage": "https://github.com/trustwallet/assets#readme",
   "devDependencies": {
-    "mongoose": "^5.4.10"
-  },
-  "dependencies": {
+    "@trustwallet/types": "^0.1.16",
+    "@types/jest": "^24.0.23",
+    "@types/jest-expect-message": "^1.0.1",
     "axios": "^0.19.0",
-    "bluebird": "^3.5.5",
-    "chalk": "^2.4.2"
+    "bip44-constants": "^8.0.5",
+    "bluebird": "^3.7.1",
+    "chalk": "^3.0.0",
+    "ethereum-checksum-address": "0.0.5",
+    "eztz-lib": "^0.1.2",
+    "image-size": "^0.8.3",
+    "jest": "^24.9.0",
+    "jest-expect-message": "^1.0.2",
+    "sharp": "^0.23.3",
+    "ts-jest": "^24.1.0",
+    "ts-node": "^8.5.2",
+    "typescript": "^3.7.2",
+    "web3": "^1.2.4"
+  },
+  "dependencies": {},
+  "jest": {
+    "setupFilesAfterEnv": [
+      "jest-expect-message"
+    ]
   }
 }
