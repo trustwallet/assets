@@ -2,10 +2,8 @@ const fs = require('fs')
 import { getOpenseaCollectionAddresses } from "./opesea_contrats"
 
 import {
-    Ethereum,
-    isPathExistsSync,
+    Ethereum, Classic, POA, TomoChain, GoChain, Wanchain, ThunderCore, Terra, Tron,
     getChainAssetsPath,
-    chainsFolderPath,
     readDirSync,
     readFileSync,
     isChainWhitelistExistSync,
@@ -18,7 +16,7 @@ import {
     mapList
 } from '../src/test/helpers'
 
-const assetsChains = readDirSync(chainsFolderPath).filter(chain => isPathExistsSync(getChainAssetsPath(chain)))
+const assetsChains = [Ethereum, Classic, POA, TomoChain, GoChain, Wanchain, ThunderCore, Terra, Tron]
 
 assetsChains.forEach(async chain => {
     const assets = readDirSync(getChainAssetsPath(chain))
@@ -35,31 +33,30 @@ assetsChains.forEach(async chain => {
         writeFileSync(blacklistPath, `[]`)
     }
 
-    const currentWhitelist = assets.concat(JSON.parse(readFileSync(whitelistPath)))
-    let currentBlacklist = JSON.parse(readFileSync(blacklistPath))
+    const currentWhitelist = JSON.parse(readFileSync(whitelistPath))
+    const currentBlacklist = JSON.parse(readFileSync(blacklistPath))
 
+    let newBlackList = []
     // Some chains required pulling lists from other sources
     switch (chain) {
         case Ethereum:
             const nftList = await getOpenseaCollectionAddresses()
-            currentBlacklist = currentBlacklist.concat(nftList)
+            newBlackList = currentBlacklist.concat(nftList)
             break;
         default:
+            newBlackList = newBlackList.concat(currentBlacklist)
             break;
     }
+ 
+    const removedAssets = getRemovedAddressesFromAssets(assets, currentWhitelist)
+    newBlackList = newBlackList.concat(removedAssets)
 
-    const mappedWhiteList = mapList(currentWhitelist)
-    const mappedBlackList = mapList(currentBlacklist)
-
-    // Make sure whitelist do not contain assets from blacklist and oposite
-    const filteredWhitelist = currentWhitelist.filter(a => !mappedBlackList[a])
-    const filteredBlacklist = currentBlacklist.filter(a => !mappedWhiteList[a])
-    
-    const finalWhiteList = sortDesc(getUnique(filteredWhitelist))
-    const finalBlackList = sortDesc(getUnique(filteredBlacklist))
-
-    fs.writeFileSync(whitelistPath, JSON.stringify(finalWhiteList, null, 4))
-    fs.writeFileSync(blacklistPath, JSON.stringify(finalBlackList, null, 4))
+    fs.writeFileSync(whitelistPath, JSON.stringify(sortDesc(assets), null, 4))
+    fs.writeFileSync(blacklistPath, JSON.stringify(getUnique(sortDesc(newBlackList)), null, 4))
 })
 
-
+function getRemovedAddressesFromAssets(assets: string[], whiteList: string[]): string[] {
+    const mappedAssets = mapList(assets)
+    const removed = whiteList.filter(a => !mappedAssets.hasOwnProperty(a))
+    return removed
+}

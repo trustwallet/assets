@@ -17,6 +17,9 @@ import {
     getBinanceBEP2Symbols,
     isTRC10, isTRC20,
     isLogoOK,
+    getChainWhitelistPath,
+    getChainBlacklistPath,
+    mapList
 } from "./helpers"
 
 enum TickerType {
@@ -128,7 +131,7 @@ describe(`Test "blockchains" folder`, () => {
             test(`Make sure ${chain} validators list has correct structure`, () => {
                 validatorsList.forEach(val => {
                     const keys = Object.keys(val)
-                    expect(keys.length, `Wrong keys amount`).toBe(4)
+                    expect(keys.length, `Wrong keys amount`).toBeGreaterThanOrEqual(4)
 
                     keys.forEach(key => {
                         const type = typeof key
@@ -166,8 +169,18 @@ describe(`Test "blockchains" folder`, () => {
                     break;
             }
             
-            test("Make sure number of validators in the list match validators assets", () => {
-                expect(validatorsList.length).toBe(chainValidatorsAssetsList.length)
+            test("Make sure validator has corresponding logo", () => {
+                validatorsList.forEach(val => {
+                    expect(chainValidatorsAssetsList.indexOf(val.id), `Expecting image asset for validator ${val.id} on chain ${chain}`)
+                        .toBeGreaterThanOrEqual(0)
+                })
+            })
+
+            test("Make sure validator asset logo has corresponding info", () => {
+                chainValidatorsAssetsList.forEach(valAssetLogoID => {
+                    expect(validatorsList.filter(v => v.id === valAssetLogoID).length, `Expect validator logo ${valAssetLogoID} to have info`)
+                        .toBe(1)
+                })
             })
         })
     })
@@ -206,12 +219,33 @@ describe("Test Coinmarketcap mapping", () => {
         expect(cmcMap.length, `CMC map must have items`).toBeGreaterThan(0)
     })
 
-    test("Items must be sorted by id in desc order", () => {
+    test(`Items must be sorted by "id" in ascending order`, () => {
         cmcMap.forEach((el, i) => {
             if (i > 0) {
-                const previousID = cmcMap[i - 1].id
-                const currentID = el.id
-                expect(currentID, `Item ${currentID} must be greather or equal to ${previousID} `).toBeGreaterThanOrEqual(previousID)
+                const prevID = cmcMap[i - 1].id
+                const curID = el.id
+                expect(curID, `Item ${curID} must be greather or equal to ${prevID}`)
+                    .toBeGreaterThanOrEqual(prevID)
+            }
+        })
+    })
+
+    test(`Items must be sorted by "coin" in ascending order if have same "id"`, () => {
+        cmcMap.forEach((el, i) => {
+            if (i > 0) {
+                const prevEl = cmcMap[i - 1]
+
+                const prevCoin = prevEl.coin
+                const prevID = cmcMap[i - 1].id
+
+                const curCoin = el.coin
+                const curID = el.id
+
+                if (prevID == curID) {
+                    expect(curCoin, `Item ${JSON.stringify(el)} must be greather or equal to ${JSON.stringify(prevEl)}`)
+                        .toBeGreaterThanOrEqual(prevCoin)
+                }
+
             }
         })
     })
@@ -264,4 +298,31 @@ describe("Test Coinmarketcap mapping", () => {
         })
     })
 })
-// TODO test whitelist
+
+// Enable when better solution handaling erc20 from opensea erc721 list
+describe.skip("Test blacklist and whitelist", () => {
+    const assetsChains = readDirSync(chainsFolderPath).filter(chain => isPathExistsSync(getChainAssetsPath(chain)))
+
+    assetsChains.forEach(chain => {
+        const whiteList = JSON.parse(readFileSync(getChainWhitelistPath(chain)))
+        const blackList = JSON.parse(readFileSync(getChainBlacklistPath(chain)))
+
+        const whitelistMap = mapList(whiteList)
+        const blacklistMap = mapList(blackList)
+
+        test(`Whitelist should not contain assets from blacklist on ${chain} chain`, () => {
+            whiteList.forEach(a => {
+                const isWhitelistInBlacklist = blacklistMap.hasOwnProperty(a)
+                expect(isWhitelistInBlacklist, `Found whitelist asset ${a} in blacklist on chain ${chain}`).toBe(false)
+            })
+        })
+
+        test(`Blacklist should not contain assets from whitelist on ${chain} chain`, () => {
+            blackList.forEach(a => {
+                const isBlacklistInWhitelist = whitelistMap.hasOwnProperty(a)
+                expect(isBlacklistInWhitelist, `Found blacklist asset ${a} in whitelist on chain ${chain}`).toBe(false)
+            })
+        })
+    })
+})
+
