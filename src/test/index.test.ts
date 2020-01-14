@@ -3,6 +3,7 @@ const eztz = require('eztz-lib')
 import {
     Ethereum, Binance, Cosmos, Tezos, Tron, IoTeX, Waves, Classic, POA, TomoChain, GoChain, Wanchain, ThunderCore,
     chainsFolderPath,
+    pricingFolderPath,
     getChainLogoPath,
     getChainAssetsPath,
     getChainAssetLogoPath,
@@ -19,7 +20,9 @@ import {
     isLogoOK,
     getChainWhitelistPath,
     getChainBlacklistPath,
-    mapList
+    mapList,
+    findFiles,
+    isValidJSON
 } from "./helpers"
 
 enum TickerType {
@@ -324,5 +327,17 @@ describe.skip("Test blacklist and whitelist", () => {
             })
         })
     })
+})
+
+describe("Test all JSON files to have valid content", () => {
+
+    const files = [
+        ...findFiles(chainsFolderPath, 'json'),
+        ...findFiles(pricingFolderPath, 'json')
+    ]
+
+    files.forEach(file => { 
+        expect(isValidJSON(file), `${file} path contains invalid JSON`).toBe(true)
+    });
 })
 
