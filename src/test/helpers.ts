@@ -1,4 +1,6 @@
 import * as fs from "fs"
+import * as path from "path"
+
 const axios = require('axios')
 const Web3 = require('web3')
 const web3 = new Web3('ws://localhost:8546');
@@ -25,7 +27,9 @@ const whiteList = 'whitelist.json'
 const blackList = 'blacklist.json'
 
 export const logo = `logo.png`
+export const root = './'
 export const chainsFolderPath = './blockchains'
+export const pricingFolderPath = './pricing'
 export const getChainLogoPath = chain => `${chainsFolderPath}/${chain}/info/${logo}`
 export const getChainAssetsPath = (chain: string): string => `${chainsFolderPath}/${chain}/assets`
 
@@ -89,3 +93,31 @@ export const calculateAspectRatioFit = (srcWidth: number, srcHeight: number, max
     return { width: Math.round(srcWidth * ratio), height: Math.round(srcHeight * ratio) }
  }
  
+ export const findFiles = (base: string, ext: string, files: string[] = [], result: string[] = []) => {
+    files = fs.readdirSync(base) || files
+    result = result || result
+
+    files.forEach( 
+        function (file) {
+            var newbase = path.join(base, file)
+            if ( fs.statSync(newbase).isDirectory()) {
+                result = findFiles(newbase, ext, fs.readdirSync(newbase), result)
+            } else {
+                if ( file.substr(-1*(ext.length+1)) == '.' + ext) {
+                    result.push(newbase)
+                }
+            }
+        }
+    )
+    return result
+ }
+
+ export const isValidJSON = (path: string) => {
+    let rawdata = fs.readFileSync(path, 'utf8')
+    try {
+        JSON.parse(rawdata)
+        return true
+    } catch {
+        return false
+    }
+ }
