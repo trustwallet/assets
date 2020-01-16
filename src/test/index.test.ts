@@ -302,8 +302,7 @@ describe("Test Coinmarketcap mapping", () => {
     })
 })
 
-// Enable when better solution handaling erc20 from opensea erc721 list
-describe.skip("Test blacklist and whitelist", () => {
+describe("Test blacklist and whitelist", () => {
     const assetsChains = readDirSync(chainsFolderPath).filter(chain => isPathExistsSync(getChainAssetsPath(chain)))
 
     assetsChains.forEach(chain => {
