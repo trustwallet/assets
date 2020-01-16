@@ -34,7 +34,7 @@
   "homepage": "https://github.com/trustwallet/assets#readme",
   "devDependencies": {
     "@trustwallet/types": "^0.1.37",
-    "@types/jest": "^24.0.25",
+    "@types/jest": "^24.9.0",
     "@types/jest-expect-message": "^1.0.1",
     "axios": "^0.19.1",
     "bip44-constants": "^8.0.5",
@@ -47,7 +47,7 @@
     "jest-expect-message": "^1.0.2",
     "sharp": "^0.23.4",
     "ts-jest": "^24.3.0",
-    "ts-node": "^8.6.1",
+    "ts-node": "^8.6.2",
     "typescript": "^3.7.4",
     "web3": "^1.2.4"
   },
