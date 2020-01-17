@@ -2,8 +2,9 @@ const fs = require('fs')
 import { getOpenseaCollectionAddresses } from "./opesea_contrats"
 
 import {
-    Ethereum, Classic, POA, TomoChain, GoChain, Wanchain, ThunderCore, Terra, Tron,
+    Ethereum, Terra, Tron,
     getChainAssetsPath,
+    ethSidechains,
     readDirSync,
     readFileSync,
     isChainWhitelistExistSync,
@@ -16,7 +17,7 @@ import {
     mapList
 } from '../src/test/helpers'
 
-const assetsChains = [Ethereum, Classic, POA, TomoChain, GoChain, Wanchain, ThunderCore, Terra, Tron]
+const assetsChains = ethSidechains.concat([Terra, Tron])
 
 assetsChains.forEach(async chain => {
     const assets = readDirSync(getChainAssetsPath(chain))
