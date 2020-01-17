@@ -1,0 +1,25 @@
+trigger:
+    - master
+
+pool:
+    vmImage: 'ubuntu-latest'
+
+variables:
+    npm_config_cache: '$(Pipeline.Workspace)/.npm'
+
+steps:
+    - task: NodeTool@0
+      inputs:
+        versionSpec: '12.x'
+      displayName: Install Node.js
+
+    - script: npm install
+      displayName: Install project dependencies
+
+    - task: Cache@2
+      inputs:
+        key: 'npm | "$(Agent.OS)" | package-lock.json'
+        path: $(npm_config_cache)
+      displayName: Cache npm
+
+    - script: npm t
