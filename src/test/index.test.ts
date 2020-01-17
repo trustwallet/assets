@@ -40,7 +40,7 @@ describe("Check repository root dir", () => {
         "script",
         "src",
         ".gitignore",
-        ".travis.yml",
+        "azure-pipelines.yml",
         "jest.config.js",
         "LICENSE",
         "package-lock.json",
