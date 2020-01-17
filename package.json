@@ -4,6 +4,7 @@
   "description": "Assets consumed by Trust Wallet",
   "main": "index.js",
   "scripts": {
+    "pre-test": "",
     "test": "npm run cleanup && jest",
     "cleanup": "find ./.. -iname '.DS_Store' -type f -delete",
     "update-bep2": "npm run cleanup && node ./script/updateBEP2",
@@ -45,10 +46,10 @@
     "image-size": "^0.8.3",
     "jest": "^24.9.0",
     "jest-expect-message": "^1.0.2",
-    "sharp": "^0.23.4",
+    "sharp": "^0.24.0",
     "ts-jest": "^24.3.0",
     "ts-node": "^8.6.2",
-    "typescript": "^3.7.4",
+    "typescript": "^3.7.5",
     "web3": "^1.2.4"
   },
   "dependencies": {},
