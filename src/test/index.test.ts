@@ -1,7 +1,8 @@
 const eztz = require('eztz-lib')
 
 import {
-    Ethereum, Binance, Cosmos, Tezos, Tron, IoTeX, Waves, Classic, POA, TomoChain, GoChain, Wanchain, ThunderCore,
+    Binance, Cosmos, Tezos, Tron, IoTeX, Waves,
+    ethSidechains,
     chainsFolderPath,
     pricingFolderPath,
     getChainLogoPath,
@@ -77,14 +78,18 @@ describe(`Test "blockchains" folder`, () => {
     })
 
     describe("Check Ethereum side-chain folders", () => {
-        const ethSidechains = [Ethereum, Classic, POA, TomoChain, GoChain, Wanchain, ThunderCore]
-
         ethSidechains.forEach(chain => {
             test(`Test chain ${chain} folder`, () => {
                 const assetsPath = getChainAssetsPath(chain)
 
                 readDirSync(assetsPath).forEach(addr => {
-                    expect(isChecksum(addr), `Address ${addr} on chain ${chain} must be in checksum`).toBe(true)
+                    const checksum: boolean = isChecksum(addr)
+                    expect(checksum, `Address ${addr} on chain ${chain} must be in checksum`).toBe(true)
+                    
+                    const lowercase: boolean = isLowerCase(addr)
+                    if (lowercase) {
+                        expect(checksum, `Lowercase address ${addr} on chain ${chain} should be in checksum`).toBe(true)
+                    }
 
                     const assetLogoPath = getChainAssetLogoPath(chain, addr)
                     expect(isPathExistsSync(assetLogoPath), `Missing file at path "${assetLogoPath}"`).toBe(true)

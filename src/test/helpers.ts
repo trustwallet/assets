@@ -23,6 +23,8 @@ export const Tron = getChainName(CoinType.tron)
 export const Wanchain = getChainName(CoinType.wanchain)
 export const Waves = getChainName(CoinType.waves)
 
+export const ethSidechains = [Ethereum, Classic, POA, TomoChain, GoChain, Wanchain, ThunderCore]
+
 const whiteList = 'whitelist.json'
 const blackList = 'blacklist.json'
 
