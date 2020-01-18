@@ -1,0 +1,29 @@
+{
+   "name": "Ethereum",
+   "website": "https://ethereum.org/",
+   "source_code": "https://github.com/ethereum",
+   "whitepaper": "https://github.com/ethereum/wiki/wiki/White-Paper",
+   "explorers": [
+       {
+           "name": "Ethereum",
+           "url": "https://etherscan.io/"
+       }
+   ],
+   "socials": [
+       {
+           "name": "Twitter",
+           "url": "https://twitter.com/ethereum"
+       },
+       {
+           "name": "Reddit",
+           "url": "https://www.reddit.com/r/ethereum/"
+       }
+   ],
+   "details": [
+       {
+           "language": "en",
+           "description": "Open source platform to write and distribute decentralized applications."
+       }
+   ],
+   "data_source": "crowd"
+}
