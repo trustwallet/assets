@@ -29,10 +29,12 @@ const whiteList = 'whitelist.json'
 const blackList = 'blacklist.json'
 
 export const logo = `logo.png`
+export const info = `info.json`
 export const root = './'
 export const chainsFolderPath = './blockchains'
 export const pricingFolderPath = './pricing'
 export const getChainLogoPath = (chain: string): string => `${chainsFolderPath}/${chain}/info/${logo}`
+export const getChainInfoPath = (chain: string): string => `${chainsFolderPath}/${chain}/info/${info}`
 export const getChainAssetsPath = (chain: string): string => `${chainsFolderPath}/${chain}/assets`
 
 export const minLogoWidth = 64
@@ -49,10 +51,11 @@ export const getChainValidatorAssetLogoPath = (chain: string, asset: string): st
 export const getChainWhitelistPath = (chain: string): string => `${chainsFolderPath}/${chain}/${whiteList}`
 export const getChainBlacklistPath = (chain: string): string => `${chainsFolderPath}/${chain}/${blackList}`
 
-export const readDirSync = path => fs.readdirSync(path)
+export const readDirSync = (path: string): string[] => fs.readdirSync(path)
 export const isPathExistsSync = (path: string): boolean => fs.existsSync(path)
 export const isChainWhitelistExistSync = (chain: string): boolean => isPathExistsSync(getChainWhitelistPath(chain))
 export const isChainBlacklistExistSync = (chain: string): boolean => isPathExistsSync(getChainBlacklistPath(chain))
+export const isChainInfoExistSync = (chain: string): boolean => isPathExistsSync(getChainInfoPath(chain))
 export const readFileSync = (path: string) => fs.readFileSync(path, 'utf8')
 export const writeFileSync = (path: string, str: string) => fs.writeFileSync(path, str)
 

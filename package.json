@@ -10,6 +10,7 @@
     "update-bep2": "npm run cleanup && node ./script/updateBEP2",
     "checksum-erc20": "npm run cleanup && node ./script/erc20_to_checksum",
     "list": "npm run cleanup && ts-node ./script/gen_list",
+    "gen:info": "ts-node ./script/gen_info",
     "resize": "npm run cleanup && ts-node ./script/resize_images",
     "map-cmc": "npm run cleanup && ts-node ./pricing/coinmarketcap/script",
     "magic": "npm run update-bep2 && npm run checksum-erc20 && npm run resize && npm run list && npm t"
