@@ -13,35 +13,13 @@ steps:
         versionSpec: '12.x'
       displayName: Install Node.js
 
+    - script: npm install
+      displayName: Install project dependencies
+
     - task: Cache@2
       inputs:
         key: 'npm | "$(Agent.OS)" | package-lock.json'
-        restoreKeys: |
-          npm | "$(Agent.OS)"
-          npm
         path: $(npm_config_cache)
-        cacheHitVar: NPM_CACHE_RESTORED
-      continueOnError: true
-      enabled: false
       displayName: Cache npm
-    
-    - task: Npm@1
-      inputs:
-        command: 'install'
-      condition: ne(variables.NPM_CACHE_RESTORED, 'true')
-      displayName: Install npm dependencies
-    
-    - script: |
-        git config --global user.email "bot@trustwallet.com"
-        git config --global user.name "TrustWalletBot"
-    - checkout: self
-      persistCredentials: true
 
-    - script: npm run checksum-erc20
-
-    - task: ShellScript@2
-      inputs:
-        scriptPath: './script/commit.sh'
-        failOnStandardError: true
-      
     - script: npm t
