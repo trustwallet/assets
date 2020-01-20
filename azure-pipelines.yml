@@ -23,7 +23,8 @@ steps:
           npm
       displayName: Cache npm
 
-    - script: npm ci --cache $(npm_config_cache)
+    - script: npm install
+      displayName: Install dependency
 
     - script: |
         git config --global user.email "bot@trustwallet.com"
