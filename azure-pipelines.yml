@@ -21,4 +21,18 @@ steps:
 
     - script: npm ci --cache $(npm_config_cache)
 
+    - script: |
+        git config --global user.email "bot@trustwallet.com"
+        git config --global user.name "TrustWalletBot"
+    - checkout: self
+      persistCredentials: true
+
+    - script: npm run checksum-erc20
+      displayName: Checksumming addresses
+
+    - task: ShellScript@2
+      inputs:
+        scriptPath: './script/commit.sh'
+        failOnStandardError: true
+
     - script: npm t
