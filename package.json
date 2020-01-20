@@ -8,7 +8,7 @@
     "test": "npm run cleanup && jest",
     "cleanup": "find ./.. -iname '.DS_Store' -type f -delete",
     "update-bep2": "npm run cleanup && node ./script/updateBEP2",
-    "checksum-erc20": "npm run cleanup && node ./script/erc20_to_checksum",
+    "checksum-erc20": "npm run cleanup && ts-node ./script/erc20_to_checksum",
     "list": "npm run cleanup && ts-node ./script/gen_list",
     "gen:info": "ts-node ./script/gen_info",
     "resize": "npm run cleanup && ts-node ./script/resize_images",
