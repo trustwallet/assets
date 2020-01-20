@@ -13,6 +13,9 @@ steps:
         versionSpec: '12.x'
       displayName: Install Node.js
 
+    - script: npm install
+      displayName: Install dependency
+
     - task: Cache@2
       enabled: false
       inputs:
@@ -22,9 +25,6 @@ steps:
           npm | "$(Agent.OS)"
           npm
       displayName: Cache npm
-
-    - script: npm install
-      displayName: Install dependency
 
     - script: |
         git config --global user.email "bot@trustwallet.com"
