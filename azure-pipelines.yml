@@ -17,6 +17,9 @@ steps:
       inputs:
         key: 'npm | "$(Agent.OS)" | package-lock.json'
         path: $(npm_config_cache)
+        restoreKeys: |
+          npm | "$(Agent.OS)"
+          npm
       displayName: Cache npm
 
     - script: npm ci --cache $(npm_config_cache)
