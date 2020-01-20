@@ -14,6 +14,7 @@ steps:
       displayName: Install Node.js
 
     - task: Cache@2
+      enabled: false
       inputs:
         key: 'npm | "$(Agent.OS)" | package-lock.json'
         path: $(npm_config_cache)
