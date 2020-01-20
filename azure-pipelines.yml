@@ -22,6 +22,7 @@ steps:
         path: $(npm_config_cache)
         cacheHitVar: NPM_CACHE_RESTORED
       continueOnError: true
+      enabled: false
       displayName: Cache npm
     
     - task: Npm@1
