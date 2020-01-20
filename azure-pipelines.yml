@@ -23,6 +23,7 @@ steps:
           npm | "$(Agent.OS)"
           npm
         path: $(npm_config_cache)
+      continueOnError: true
       displayName: Cache npm
     
     - script: |
