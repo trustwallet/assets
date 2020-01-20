@@ -12,7 +12,7 @@ steps:
       inputs:
         versionSpec: '10.x'
       displayName: Install Node.js
-
+    
     - task: Cache@2
       inputs:
         key: 'npm | "$(Agent.OS)" | package-lock.json'
@@ -20,16 +20,11 @@ steps:
           npm | "$(Agent.OS)"
           npm
         path: $(npm_config_cache)
-        cacheHitVar: NPM_CACHE_RESTORED
       continueOnError: true
       displayName: Cache npm
     
-    - task: Npm@1
-      inputs:
-        command: 'install'
-      condition: ne(variables.NPM_CACHE_RESTORED, 'true')
-      displayName: Install npm dependencies
-    
+    - script: npm ci --cache $(npm_config_cache)
+
     - script: |
         git config --global user.email "bot@trustwallet.com"
         git config --global user.name "TrustWalletBot"
