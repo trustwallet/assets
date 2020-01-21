@@ -23,9 +23,10 @@ import {
     getChainBlacklistPath,
     mapList,
     findFiles,
-    isValidJSON
+    isValidJSON,
+    isValidatorHasAllKeys
 } from "./helpers"
-
+import { ValidatorModel } from "./models";
 enum TickerType {
     Token = "token",
     Coin = "coin"
@@ -135,16 +136,9 @@ describe(`Test "blockchains" folder`, () => {
 
         stakingChains.forEach(chain => {
             const validatorsList = JSON.parse(readFileSync(getChainValidatorsListPath(chain)))
-
             test(`Make sure ${chain} validators list has correct structure`, () => {
-                validatorsList.forEach(val => {
-                    const keys = Object.keys(val)
-                    expect(keys.length, `Wrong keys amount`).toBeGreaterThanOrEqual(4)
-
-                    keys.forEach(key => {
-                        const type = typeof key
-                        expect(type, `Wrong key type`).toBe("string")
-                    })
+                validatorsList.forEach((val: ValidatorModel) => {
+                    expect(isValidatorHasAllKeys(val), `Come key and/or type missing for validator ${JSON.stringify(val)}`).toBe(true)
                 })
             })
 

@@ -1,6 +1,6 @@
 import * as fs from "fs"
 import * as path from "path"
-
+import { ValidatorModel } from "./models";
 const axios = require('axios')
 const Web3 = require('web3')
 const web3 = new Web3('ws://localhost:8546');
@@ -126,3 +126,10 @@ export const calculateAspectRatioFit = (srcWidth: number, srcHeight: number, max
         return false
     }
  }
+
+export const isValidatorHasAllKeys = (val: ValidatorModel): boolean => {
+    return typeof val.id === "string"
+        && typeof val.name === "string"
+        && typeof val.description === "string"
+        && typeof val.website === "string"
+}
