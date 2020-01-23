@@ -13,17 +13,17 @@ steps:
         versionSpec: '10.x'
       displayName: Install Node.js
 
-    - task: Cache@2
-      inputs:
-        key: 'npm | $(Build.SourcesDirectory)/package-lock.json'
-        path: $(Build.SourcesDirectory)/node_modules
-        cacheHitVar: CACHE_RESTORED
-      displayName: Cache npm
+    # - task: Cache@2
+    #   inputs:
+    #     key: 'npm | $(Build.SourcesDirectory)/package-lock.json'
+    #     path: $(Build.SourcesDirectory)/node_modules
+    #     cacheHitVar: CACHE_RESTORED
+    #   displayName: Cache npm
     
     - task: Npm@1
       inputs:
         command: 'install'
-      condition: ne(variables.CACHE_RESTORED, 'true')
+      # condition: ne(variables.CACHE_RESTORED, 'true')
       displayName: Install project dependencies
 
     - script: |
