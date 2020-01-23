@@ -21,7 +21,7 @@ steps:
     #   displayName: Cache npm
     - script: echo `pwd`
     - script: ls -la
-    - script: ls '$(Pipeline.Workspace)/.npm'
+    - script: ls '$(Pipeline.Workspace)'
     - script: npm ci
       workingDirectory: '$(Build.SourcesDirectory)'
       displayName: 'npm ci'
