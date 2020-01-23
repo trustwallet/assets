@@ -19,7 +19,8 @@ steps:
     #     path: $(Build.SourcesDirectory)/node_modules
     #     cacheHitVar: CACHE_RESTORED
     #   displayName: Cache npm
-    - script: cd '$(Build.SourcesDirectory)' && ls -la
+    - script: echo `pwd`
+    - script: ls -la
 
     - script: npm ci
       workingDirectory: '$(Build.SourcesDirectory)'
