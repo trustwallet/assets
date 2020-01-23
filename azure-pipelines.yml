@@ -22,6 +22,7 @@ steps:
     - script: echo `pwd`
     - script: ls -la
     - script: ls '$(Pipeline.Workspace)'
+    - script: ls '$(Build.SourcesDirectory)'
     - script: npm ci
       workingDirectory: '$(Build.SourcesDirectory)'
       displayName: 'npm ci'
