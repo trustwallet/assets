@@ -20,11 +20,14 @@ steps:
     #     cacheHitVar: CACHE_RESTORED
     #   displayName: Cache npm
     
-    - task: Npm@1
-      inputs:
-        command: 'install'
-      # condition: ne(variables.CACHE_RESTORED, 'true')
-      displayName: Install project dependencies
+    - script: npm ci
+      workingDirectory: '$(Build.SourcesDirectory)'
+      displayName: 'npm ci'
+    # - task: Npm@1
+    #   inputs:
+    #     command: 'ci'
+    #   # condition: ne(variables.CACHE_RESTORED, 'true')
+    #   displayName: Install project dependencies
 
     - script: |
         git config --global user.email "bot@trustwallet.com"
