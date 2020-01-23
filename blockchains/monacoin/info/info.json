@@ -1,12 +1,12 @@
 {
-    "name": "",
-    "website": "",
-    "source_code": "",
-    "whitepaper": "",
+    "name": "MonaCoin",
+    "website": "http://monacoin.org",
+    "source_code": "https://github.com/monacoinproject/monacoin",
+    "whitepaper": "https://monacoin.org/#about",
     "explorers": [
         {
-            "name": "",
-            "url": ""
+            "name": "Insight",
+            "url": "https://mona.chainsight.info"
         }
     ],
     "socials": [
@@ -16,13 +16,13 @@
         },
         {
             "name": "Reddit",
-            "url": ""
+            "url": "https://reddit.com/r/monacoin"
         }
     ],
     "details": [
         {
             "language": "en",
-            "description": ""
+            "description": "MonaCoin (MONA) is an open source peer-to-peer payment network. It was thrust into the limelight when it was featured on WBS TV Network Tokyo, which reported a man purchasing a plot of land in Nagano with MonaCoin. The idea of MonaCoin was conceived from a Japan-based bulletin board called 2-Channel (2?????) by a user who goes by the handle of 'Mr Watanabe'."
         }
     ],
     "data_source": "crowd"

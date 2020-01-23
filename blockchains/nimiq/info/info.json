@@ -1,28 +1,28 @@
 {
-    "name": "",
-    "website": "",
-    "source_code": "",
-    "whitepaper": "",
+    "name": "Nimiq",
+    "website": "https://nimiq.com",
+    "source_code": "https://github.com/nimiq",
+    "whitepaper": "https://nimiq.com/whitepaper",
     "explorers": [
         {
-            "name": "",
-            "url": ""
+            "name": "Nimiq Watch",
+            "url": "https://nimiq.watch"
         }
     ],
     "socials": [
         {
             "name": "Twitter",
-            "url": ""
+            "url": "https://twitter.com/nimiq"
         },
         {
             "name": "Reddit",
-            "url": ""
+            "url": "https://reddit.com/r/Nimiq"
         }
     ],
     "details": [
         {
             "language": "en",
-            "description": ""
+            "description": "Nimiq describes itself as blockchain technology inspired by Bitcoin but designed for the browser.\r\n\r\nImplemented in Rust and JavaScript, Nimiq aims to empower web developers to easily access and build on it. The project claims that only three lines of code connect any web application directly to the blockchain, making it accessible to web-based businesses and projects.\r\n\r\nNimiq reportedly does not require a third-party node to send transactions directly from the browser, which would theoretically enhance accessibility and user experience without compromising on decentralization or censorship-resistance.\r\n\r\nLearn more: https://nimiq.com/en/#onepager"
         }
     ],
     "data_source": "crowd"
