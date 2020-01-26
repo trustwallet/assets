@@ -9,7 +9,8 @@ export const getOpenseaCollectionAddresses = async () => {
     const nftList = []
 
     while(true) {
-        const collections = await axios.get(`https://api.opensea.io/api/v1/collections?limit=${limit}&offset=${offset}`)
+        const url = `https://api.opensea.io/api/v1/collections?limit=${limit}&offset=${offset}`
+        const collections = await axios.get(url)
             .then(res => res.data.collections)
             .catch(e => console.log(e.message))
 

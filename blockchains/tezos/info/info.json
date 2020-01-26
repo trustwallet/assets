@@ -1,0 +1,29 @@
+{
+    "name": "Tezos",
+    "website": "https://www.tezos.com/",
+    "source_code": "https://gitlab.com/tezos/tezos",
+    "whitepaper": "https://www.tezos.com/static/papers/white_paper.pdf",
+    "explorers": [
+        {
+            "name": "Tezos.ID",
+            "url": "https://tezos.id"
+        }
+    ],
+    "socials": [
+        {
+            "name": "Twitter",
+            "url": "https://twitter.com/tezos"
+        },
+        {
+            "name": "Reddit",
+            "url": "https://reddit.com/r/tezos"
+        }
+    ],
+    "details": [
+        {
+            "language": "en",
+            "description": "Developed by ex-Morgan Stanley analyst Arthur Breitman. Tezos (XTZ) is a multi-purpose platform that supports dApps and smart contracts. It aims to combine a self-correcting protocol and on-chain governance to manage network modifications. Tezos is powered by XTZ, which is created through 'baking'. Bakers put up deposits and are rewarded for signing and publishing blocks. Witnesses then validate the blocks. Dishonest bakers lose their XTZ deposits. Tezos uses delegated proof-of-stake (DPoS) and supports Turing complete smart contracts. Tezos is implemented in the OCaml programming language, which is said to offer 'functional, imperative, and object-oriented styles'."
+        }
+    ],
+    "data_source": "crowd"
+}

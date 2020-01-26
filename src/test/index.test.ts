@@ -1,8 +1,10 @@
 const eztz = require('eztz-lib')
 
 import {
-    Ethereum, Binance, Cosmos, Tezos, Tron, IoTeX, Waves, Classic, POA, TomoChain, GoChain, Wanchain, ThunderCore,
+    Binance, Cosmos, Tezos, Tron, IoTeX, Waves,
+    ethSidechains,
     chainsFolderPath,
+    pricingFolderPath,
     getChainLogoPath,
     getChainAssetsPath,
     getChainAssetLogoPath,
@@ -17,8 +19,14 @@ import {
     getBinanceBEP2Symbols,
     isTRC10, isTRC20,
     isLogoOK,
+    getChainWhitelistPath,
+    getChainBlacklistPath,
+    mapList,
+    findFiles,
+    isValidJSON,
+    isValidatorHasAllKeys
 } from "./helpers"
-
+import { ValidatorModel } from "./models";
 enum TickerType {
     Token = "token",
     Coin = "coin"
@@ -34,7 +42,7 @@ describe("Check repository root dir", () => {
         "script",
         "src",
         ".gitignore",
-        ".travis.yml",
+        "azure-pipelines.yml",
         "jest.config.js",
         "LICENSE",
         "package-lock.json",
@@ -71,14 +79,18 @@ describe(`Test "blockchains" folder`, () => {
     })
 
     describe("Check Ethereum side-chain folders", () => {
-        const ethSidechains = [Ethereum, Classic, POA, TomoChain, GoChain, Wanchain, ThunderCore]
-
         ethSidechains.forEach(chain => {
             test(`Test chain ${chain} folder`, () => {
                 const assetsPath = getChainAssetsPath(chain)
 
                 readDirSync(assetsPath).forEach(addr => {
-                    expect(isChecksum(addr), `Address ${addr} on chain ${chain} must be in checksum`).toBe(true)
+                    const checksum: boolean = isChecksum(addr)
+                    expect(checksum, `Address ${addr} on chain ${chain} must be in checksum`).toBe(true)
+                    
+                    const lowercase: boolean = isLowerCase(addr)
+                    if (lowercase) {
+                        expect(checksum, `Lowercase address ${addr} on chain ${chain} should be in checksum`).toBe(true)
+                    }
 
                     const assetLogoPath = getChainAssetLogoPath(chain, addr)
                     expect(isPathExistsSync(assetLogoPath), `Missing file at path "${assetLogoPath}"`).toBe(true)
@@ -124,16 +136,9 @@ describe(`Test "blockchains" folder`, () => {
 
         stakingChains.forEach(chain => {
             const validatorsList = JSON.parse(readFileSync(getChainValidatorsListPath(chain)))
-
             test(`Make sure ${chain} validators list has correct structure`, () => {
-                validatorsList.forEach(val => {
-                    const keys = Object.keys(val)
-                    expect(keys.length, `Wrong keys amount`).toBeGreaterThanOrEqual(4)
-
-                    keys.forEach(key => {
-                        const type = typeof key
-                        expect(type, `Wrong key type`).toBe("string")
-                    })
+                validatorsList.forEach((val: ValidatorModel) => {
+                    expect(isValidatorHasAllKeys(val), `Come key and/or type missing for validator ${JSON.stringify(val)}`).toBe(true)
                 })
             })
 
@@ -295,4 +300,42 @@ describe("Test Coinmarketcap mapping", () => {
         })
     })
 })
-// TODO test whitelist
+
+describe("Test blacklist and whitelist", () => {
+    const assetsChains = readDirSync(chainsFolderPath).filter(chain => isPathExistsSync(getChainAssetsPath(chain)))
+
+    assetsChains.forEach(chain => {
+        const whiteList = JSON.parse(readFileSync(getChainWhitelistPath(chain)))
+        const blackList = JSON.parse(readFileSync(getChainBlacklistPath(chain)))
+
+        const whitelistMap = mapList(whiteList)
+        const blacklistMap = mapList(blackList)
+
+        test(`Whitelist should not contain assets from blacklist on ${chain} chain`, () => {
+            whiteList.forEach(a => {
+                const isWhitelistInBlacklist = blacklistMap.hasOwnProperty(a)
+                expect(isWhitelistInBlacklist, `Found whitelist asset ${a} in blacklist on chain ${chain}`).toBe(false)
+            })
+        })
+
+        test(`Blacklist should not contain assets from whitelist on ${chain} chain`, () => {
+            blackList.forEach(a => {
+                const isBlacklistInWhitelist = whitelistMap.hasOwnProperty(a)
+                expect(isBlacklistInWhitelist, `Found blacklist asset ${a} in whitelist on chain ${chain}`).toBe(false)
+            })
+        })
+    })
+})
+
+describe("Test all JSON files to have valid content", () => {
+
+    const files = [
+        ...findFiles(chainsFolderPath, 'json'),
+        ...findFiles(pricingFolderPath, 'json')
+    ]
+
+    files.forEach(file => { 
+        expect(isValidJSON(file), `${file} path contains invalid JSON`).toBe(true)
+    });
+})
+
