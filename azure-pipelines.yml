@@ -11,6 +11,7 @@ steps:
     - task: NodeTool@0
       inputs:
         versionSpec: '10.x'
+      target: host
       displayName: Install Node.js
 
     # - task: Cache@2
@@ -44,5 +45,7 @@ steps:
       inputs:
         scriptPath: './script/commit.sh'
         failOnStandardError: true
+      target: host
 
     - script: npm t
+      displayName: "Run tests"
