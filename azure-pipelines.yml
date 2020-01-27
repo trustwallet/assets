@@ -20,6 +20,7 @@ steps:
     #     path: $(Build.SourcesDirectory)/node_modules
     #     cacheHitVar: CACHE_RESTORED
     #   displayName: Cache npm
+    - script: which node
     - script: echo `pwd`
     - script: ls -la
     - script: ls '$(Pipeline.Workspace)'
