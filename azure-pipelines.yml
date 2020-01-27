@@ -16,11 +16,11 @@ steps:
     - script: npm install
       displayName: Install project dependencies
 
-    - task: Cache@2
-      inputs:
-        key: 'npm | "$(Agent.OS)" | package-lock.json'
-        path: $(npm_config_cache)
-      displayName: Cache npm
+    # - task: Cache@2
+    #   inputs:
+    #     key: 'npm | "$(Agent.OS)" | package-lock.json'
+    #     path: $(npm_config_cache)
+    #   displayName: Cache npm
     
     - script: |
         git config --global user.email "bot@trustwallet.com"
