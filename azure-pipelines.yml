@@ -21,5 +21,16 @@ steps:
         key: 'npm | "$(Agent.OS)" | package-lock.json'
         path: $(npm_config_cache)
       displayName: Cache npm
+    
+    - script: |
+      git config --global user.email "bot@trustwallet.com"
+      git config --global user.name "TrustWalletBot"
 
+    - checkout: self
+      persistCredentials: true
+
+    - script: npm run checksum-erc20
+
+    - bash: './script/commit.sh'
+      
     - script: npm t
