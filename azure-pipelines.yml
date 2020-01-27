@@ -23,8 +23,8 @@ steps:
       displayName: Cache npm
     
     - script: |
-      git config --global user.email "bot@trustwallet.com"
-      git config --global user.name "TrustWalletBot"
+        git config --global user.email "bot@trustwallet.com"
+        git config --global user.name "TrustWalletBot"
 
     - checkout: self
       persistCredentials: true
