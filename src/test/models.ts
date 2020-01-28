@@ -24,7 +24,7 @@ export interface InfoList {
   interface Social {
     name: string;
     url: string;
-    username: string;
+    handle: string;
   }
   
   interface Explorer {

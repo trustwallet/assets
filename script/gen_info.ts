@@ -26,12 +26,12 @@ const dafaultInfoTemplate: InfoList =
         {
             "name": "Twitter",
             "url": "",
-            "username": ""
+            "handle": ""
         },
         {
             "name": "Reddit",
             "url": "",
-            "username": ""
+            "handle": ""
         }
     ],
     "details": [
@@ -53,18 +53,25 @@ bluebird.mapSeries(readDirSync(chainsFolderPath), (chain: string) => {
 
     const infoList: InfoList = JSON.parse(readFileSync(chainInfoPath))
 
-    // Add "username" property to each social element
+    // Add "handle" property to each social element
     let newSocials = []
     infoList.socials.forEach(social => {
-        const usernameProp = "username"
-        if (!nestedProperty.isIn(social, usernameProp, { own: true})) {
-            nestedProperty.set(social, usernameProp, infoList.name)
+        const usernameProp = "handle"
+        if (nestedProperty.isIn(social, usernameProp, { own: true })) {
+            nestedProperty.set(social, usernameProp, getHandle(social.url))
             newSocials.push(social)
         }
     })
     nestedProperty.set(infoList, "socials", newSocials)
     writeToInfo(chainInfoPath, infoList)
 })
+
+// Get handle from Twitter and Reddit url
+export function getHandle(url: string): string {
+    if (!url) return ""
+
+    return url.slice(url.lastIndexOf("/") + 1, url.length)
+}
 
 function writeToInfo(path: string, info: InfoList) {
     writeFileSync(path, JSON.stringify(info, null, 4))
