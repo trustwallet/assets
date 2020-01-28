@@ -27,6 +27,7 @@ import {
     isValidatorHasAllKeys
 } from "./helpers"
 import { ValidatorModel } from "./models";
+import { getHandle } from "../../script/gen_info";
 enum TickerType {
     Token = "token",
     Coin = "coin"
@@ -327,6 +328,10 @@ describe("Test blacklist and whitelist", () => {
     })
 })
 
+describe("Test coins info.json file", () => {
+    
+});
+
 describe("Test all JSON files to have valid content", () => {
 
     const files = [
@@ -338,4 +343,23 @@ describe("Test all JSON files to have valid content", () => {
         expect(isValidJSON(file), `${file} path contains invalid JSON`).toBe(true)
     });
 })
+
+describe("Test helper functions", () => {
+    test(`Test getHandle`, () => {
+        const urls = [
+            {
+                url: "https://twitter.com/aeternity",
+                expected: "aeternity"
+            },
+            {
+                url: "https://www.reddit.com/r/Aeternity",
+                expected: "Aeternity"
+            }
+        ]
+
+        urls.forEach(u => {
+            expect(getHandle(u.url), `Getting handle from url ${u}`).toBe(u.expected)
+        })
+    })
+});
 
