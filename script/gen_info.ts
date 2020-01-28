@@ -57,7 +57,7 @@ bluebird.mapSeries(readDirSync(chainsFolderPath), (chain: string) => {
     let newSocials = []
     infoList.socials.forEach(social => {
         const handle = "handle"
-        if (nestedProperty.isIn(social, handle, { own: true })) {
+        if (nestedProperty.hasOwn(social, handle)) {
             nestedProperty.set(social, handle, getHandle(social.url))
             newSocials.push(social)
         }
