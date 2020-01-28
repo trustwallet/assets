@@ -1,30 +1,30 @@
 {
-    "name": "",
-    "website": "",
-    "source_code": "",
-    "whitepaper": "",
+    "name": "Solana",
+    "website": "https://solana.com/",
+    "source_code": "https://github.com/solana-labs",
+    "whitepaper": "https://github.com/solana-labs/whitepaper",
     "explorers": [
         {
-            "name": "",
-            "url": ""
+            "name": "Edge Explorer",
+            "url": "https://edge.explorer.solana.com/"
         }
     ],
     "socials": [
         {
             "name": "Twitter",
-            "url": "",
-            "username": ""
+            "url": "https://twitter.com/solana",
+            "username": "solana"
         },
         {
             "name": "Reddit",
-            "url": "",
-            "username": ""
+            "url": "https://www.reddit.com/r/solana",
+            "username": "solana"
         }
     ],
     "details": [
         {
             "language": "en",
-            "description": ""
+            "description": "Solana is the worlds most performant blockchain in the world at 710k transactions per second. 710k TPS is achieved by encoding the passage of time as data. The company has headquarters in San Francisco, San Diego, and Boulder. Solana will be a Proof of Stake (PoS) network, and uses Proof of History (PoH) as our scaling solution (not sharding). Solana will have smart contract capability and will likely begin by supporting Solidity and JS, and later move toward a safer, established contract language that caters to our high-throughput pipeline."
         }
     ],
     "data_source": "crowd"
