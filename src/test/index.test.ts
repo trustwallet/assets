@@ -1,7 +1,8 @@
 const eztz = require('eztz-lib')
 
 import {
-    Ethereum, Binance, Cosmos, Tezos, Tron, IoTeX, Waves, Classic, POA, TomoChain, GoChain, Wanchain, ThunderCore,
+    Binance, Cosmos, Tezos, Tron, IoTeX, Waves,
+    ethSidechains,
     chainsFolderPath,
     pricingFolderPath,
     getChainLogoPath,
@@ -22,9 +23,10 @@ import {
     getChainBlacklistPath,
     mapList,
     findFiles,
-    isValidJSON
+    isValidJSON,
+    isValidatorHasAllKeys
 } from "./helpers"
-
+import { ValidatorModel } from "./models";
 enum TickerType {
     Token = "token",
     Coin = "coin"
@@ -40,7 +42,7 @@ describe("Check repository root dir", () => {
         "script",
         "src",
         ".gitignore",
-        ".travis.yml",
+        "azure-pipelines.yml",
         "jest.config.js",
         "LICENSE",
         "package-lock.json",
@@ -77,14 +79,18 @@ describe(`Test "blockchains" folder`, () => {
     })
 
     describe("Check Ethereum side-chain folders", () => {
-        const ethSidechains = [Ethereum, Classic, POA, TomoChain, GoChain, Wanchain, ThunderCore]
-
         ethSidechains.forEach(chain => {
             test(`Test chain ${chain} folder`, () => {
                 const assetsPath = getChainAssetsPath(chain)
 
                 readDirSync(assetsPath).forEach(addr => {
-                    expect(isChecksum(addr), `Address ${addr} on chain ${chain} must be in checksum`).toBe(true)
+                    const checksum: boolean = isChecksum(addr)
+                    expect(checksum, `Address ${addr} on chain ${chain} must be in checksum`).toBe(true)
+                    
+                    const lowercase: boolean = isLowerCase(addr)
+                    if (lowercase) {
+                        expect(checksum, `Lowercase address ${addr} on chain ${chain} should be in checksum`).toBe(true)
+                    }
 
                     const assetLogoPath = getChainAssetLogoPath(chain, addr)
                     expect(isPathExistsSync(assetLogoPath), `Missing file at path "${assetLogoPath}"`).toBe(true)
@@ -130,16 +136,9 @@ describe(`Test "blockchains" folder`, () => {
 
         stakingChains.forEach(chain => {
             const validatorsList = JSON.parse(readFileSync(getChainValidatorsListPath(chain)))
-
             test(`Make sure ${chain} validators list has correct structure`, () => {
-                validatorsList.forEach(val => {
-                    const keys = Object.keys(val)
-                    expect(keys.length, `Wrong keys amount`).toBeGreaterThanOrEqual(4)
-
-                    keys.forEach(key => {
-                        const type = typeof key
-                        expect(type, `Wrong key type`).toBe("string")
-                    })
+                validatorsList.forEach((val: ValidatorModel) => {
+                    expect(isValidatorHasAllKeys(val), `Come key and/or type missing for validator ${JSON.stringify(val)}`).toBe(true)
                 })
             })
 
@@ -302,8 +301,7 @@ describe("Test Coinmarketcap mapping", () => {
     })
 })
 
-// Enable when better solution handaling erc20 from opensea erc721 list
-describe.skip("Test blacklist and whitelist", () => {
+describe("Test blacklist and whitelist", () => {
     const assetsChains = readDirSync(chainsFolderPath).filter(chain => isPathExistsSync(getChainAssetsPath(chain)))
 
     assetsChains.forEach(chain => {

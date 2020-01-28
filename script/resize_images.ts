@@ -67,5 +67,8 @@ async function resize(srcWidth: number, srcHeight: number, path: string) {
     console.log(`   Resizing image at ${path} from ${srcWidth}x${srcHeight} => ${width}x${height}`)
     await sharp(path).resize(width, height).toBuffer()
         .then(data => writeFileSync(path, data))
-        .catch(e => console.log(e))
+        .catch(e => {
+            console.log(e.message)
+            // process.exit(1)
+        })
 }
