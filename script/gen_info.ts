@@ -56,9 +56,9 @@ bluebird.mapSeries(readDirSync(chainsFolderPath), (chain: string) => {
     // Add "handle" property to each social element
     let newSocials = []
     infoList.socials.forEach(social => {
-        const usernameProp = "handle"
-        if (nestedProperty.isIn(social, usernameProp, { own: true })) {
-            nestedProperty.set(social, usernameProp, getHandle(social.url))
+        const handle = "handle"
+        if (nestedProperty.isIn(social, handle, { own: true })) {
+            nestedProperty.set(social, handle, getHandle(social.url))
             newSocials.push(social)
         }
     })
