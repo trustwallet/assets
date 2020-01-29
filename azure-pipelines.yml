@@ -19,7 +19,10 @@ steps:
 
     - script: npm install
       displayName: Install project dependencies
-
+    
+    - script: |
+        npm i -g ts-node
+      displayName: Install global dependency
     # - task: Cache@2
     #   inputs:
     #     key: 'npm | "$(Agent.OS)" | package-lock.json'
