@@ -21,7 +21,8 @@ steps:
       displayName: Install project dependencies
     
     - script: |
-        npm i -g ts-node
+        sudo npm i -g typescript
+        sudo npm i -g ts-node
       displayName: Install global dependency
     # - task: Cache@2
     #   inputs:
