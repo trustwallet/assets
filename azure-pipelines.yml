@@ -13,7 +13,7 @@ steps:
     #     versionSpec: '12.x'
     #   displayName: Install Node.js
     - script: |
-        curl -sL https://deb.nodesource.com/setup_10.x | -E bash -
+        curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
         apt install nodejs
       displayName: Install Node 10
 
