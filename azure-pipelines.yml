@@ -22,7 +22,7 @@ steps:
         sudo npm install -g ts-node
       displayName: Install global dependency
 
-    - script: npm ci --only=development
+    - script: npm ci --only=dev
       workingDirectory: $(Build.SourcesDirectory)
       displayName: Install project dependencies
     
