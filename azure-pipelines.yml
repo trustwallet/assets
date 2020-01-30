@@ -23,6 +23,7 @@ steps:
       displayName: Install global dependency
 
     - script: npm ci --only=development
+      workingDirectory: $(Build.SourcesDirectory)
       displayName: Install project dependencies
     
     # - task: Cache@2
@@ -35,10 +36,11 @@ steps:
         git config --global user.email "bot@trustwallet.com"
         git config --global user.name "TrustWalletBot"
 
-    - checkout: self
-      persistCredentials: true
+    # - checkout: self
+    #   persistCredentials: true
 
     - script: npm run checksum-erc20
+      workingDirectory: $(Build.SourcesDirectory)
 
     - bash: './script/commit.sh'
       
