@@ -22,7 +22,7 @@ steps:
         sudo npm install -g ts-node
       displayName: Install global dependency
 
-    - script: npm install
+    - script: npm ci
       displayName: Install project dependencies
     
     # - task: Cache@2
