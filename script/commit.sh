@@ -6,7 +6,7 @@ if [[ `git status --porcelain --untracked-files=no` ]]; then
     echo Current branch 
     echo Pushing changes to branch: $BUILD_SOURCEBRANCH
     git status
-    git push
+    git push origin HEAD:$BUILD_SOURCEBRANCH
     echo Complete
 else
     echo "Nothing to commit"
