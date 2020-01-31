@@ -8,14 +8,14 @@ variables:
     npm_config_cache: '$(Pipeline.Workspace)/.npm'
 
 steps:
-    # - task: NodeTool@0
-    #   inputs:
-    #     versionSpec: '12.x'
-    #   displayName: Install Node.js
-    - script: |
-        curl -sL https://deb.nodesource.com/setup_11.x | sudo -E bash -
-        sudo apt-get install -y nodejs
-      displayName: Install Node 10
+    - task: NodeTool@0
+      inputs:
+        versionSpec: '12.x'
+      displayName: Install Node.js
+    # - script: |
+    #     curl -sL https://deb.nodesource.com/setup_11.x | sudo -E bash -
+    #     sudo apt-get install -y nodejs
+    #   displayName: Install Node 10
       
     - script: |
         sudo npm install -g typescript
