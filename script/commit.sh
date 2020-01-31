@@ -5,7 +5,7 @@ if [[ `git status --porcelain --untracked-files=no` ]]; then
     git commit -m "Checksum ERC20 addresses [skip ci]"
     echo Current branch 
     echo Pushing changes to branch: $BUILD_SOURCEBRANCH
-    echo git status
+    git status
     git -c http.extraheader="AUTHORIZATION: bearer $SYSTEM_ACCESSTOKEN" push origin HEAD:$BUILD_SOURCEBRANCH
     echo Complete
 else
