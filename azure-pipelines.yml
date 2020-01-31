@@ -12,19 +12,11 @@ steps:
       inputs:
         versionSpec: '12.x'
       displayName: Install Node.js
-    # - script: |
-    #     curl -sL https://deb.nodesource.com/setup_11.x | sudo -E bash -
-    #     sudo apt-get install -y nodejs
-    #   displayName: Install Node 10
         
     - script: |
         sudo npm install -g typescript
         sudo npm install -g ts-node
       displayName: Install global dependency
-
-    # - script: npm ci --only=dev
-    #   workingDirectory: $(Build.SourcesDirectory)
-    #   displayName: Install project dependencies
     
     - task: Npm@1
       inputs:
@@ -41,8 +33,8 @@ steps:
         git config --global user.email "bot@trustwallet.com"
         git config --global user.name "TrustWalletBot"
 
-    # - checkout: self
-    #   persistCredentials: true
+    - checkout: none
+      persistCredentials: true
 
     - script: npm run checksum-erc20
       workingDirectory: $(Build.SourcesDirectory)
