@@ -16,16 +16,21 @@ steps:
     #     curl -sL https://deb.nodesource.com/setup_11.x | sudo -E bash -
     #     sudo apt-get install -y nodejs
     #   displayName: Install Node 10
-      
+        
     - script: |
         sudo npm install -g typescript
         sudo npm install -g ts-node
       displayName: Install global dependency
 
-    - script: npm ci --only=dev
-      workingDirectory: $(Build.SourcesDirectory)
-      displayName: Install project dependencies
+    # - script: npm ci --only=dev
+    #   workingDirectory: $(Build.SourcesDirectory)
+    #   displayName: Install project dependencies
     
+    - task: Npm@1
+      inputs:
+        command: install
+        verbose: true
+      displayName: Install dependencies
     # - task: Cache@2
     #   inputs:
     #     key: 'npm | "$(Agent.OS)" | package-lock.json'
@@ -41,7 +46,10 @@ steps:
 
     - script: npm run checksum-erc20
       workingDirectory: $(Build.SourcesDirectory)
+      displayName: Run checksum script
 
     - bash: './script/commit.sh'
+      displayName: Commit result of checksum script
       
     - script: npm t
+      displayName: Run tests
