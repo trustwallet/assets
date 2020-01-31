@@ -6,7 +6,7 @@ if [[ `git status --porcelain --untracked-files=no` ]]; then
     echo Current branch 
     echo Pushing changes to branch: $BUILD_SOURCEBRANCH
     echo git status
-    git push -c http.extraheader="AUTHORIZATION: bearer $SYSTEM_ACCESSTOKEN" origin HEAD:$BUILD_SOURCEBRANCH
+    git -c http.extraheader="AUTHORIZATION: bearer $SYSTEM_ACCESSTOKEN" push origin HEAD:$BUILD_SOURCEBRANCH
     echo Complete
 else
     echo "Nothing to commit"
