@@ -8,7 +8,7 @@ variables:
     npm_config_cache: '$(Pipeline.Workspace)/.npm'
 
 steps:
-    - checkout: none
+    - checkout: self
       persistCredentials: true
     
     - task: CmdLine@2
