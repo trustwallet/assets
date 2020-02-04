@@ -17,10 +17,7 @@ import { CoinType } from "@trustwallet/types";
 const CMC_PRO_API_KEY = `df781835-e5f4-4448-8b0a-fe31402ab3af` // Free Basic Plan api key is enough to run script
 const CMC_LATEST_BASE_URL = `https://pro-api.coinmarketcap.com/v1/global-metrics/quotes/latest?`
 const CONTRACTS_PATH = path.join(__dirname, 'mapping.json')
-
-// const saveToLogs = fs.createWriteStream(path.join(__dirname, '.syncTokensLog.txt')) // Uncomment to store script run logs in disk 
 const wstream = fs.createWriteStream(CONTRACTS_PATH)
-
 const typeToken = TickerType.Token
 const typeCoin = TickerType.Coin
 
@@ -41,6 +38,10 @@ const custom: mapTiker[] = [
     //
     {"coin": 60, "type": typeToken, "token_id": "0x2fe39f22EAC6d3c1C86DD9D143640EbB94609FCE", "id": 4929}, // JDC Coin ERC20
     {"coin": 60, "type": typeToken, "token_id": "0xdfbc9050F5B01DF53512DCC39B4f2B2BBaCD517A", "id": 4287}, // new Jobchain (JOB)
+]
+
+const permanentRemove = [
+    "0x17280DA053596E097604839C61A2eF5efb7d493f" // old Jobchain (JOB)
 ]
 
 const allContracts: mapTiker[] = [] // Temp storage for mapped assets
@@ -82,13 +83,15 @@ async function processCoin(coin) {
                 // log(`Ticker ${name}(${symbol}) is a token with address ${address} and CMC id ${id}`)
                 if (platform.token_address) {
                     const checksum = toChecksum(platform.token_address)
-                    log(`Added ${checksum}`)
-                    addToContractsList({
-                        coin: 60,
-                        type: typeToken,
-                        token_id: checksum,
-                        id
-                    })
+                    if (permanentRemove.indexOf(checksum) == -1) {
+                        log(`Added ${checksum}`)
+                        addToContractsList({
+                            coin: 60,
+                            type: typeToken,
+                            token_id: checksum,
+                            id
+                        })
+                    }
                     await getImageIfMissing(getChainName(CoinType.ethereum), checksum, id)
                 }
                 break
@@ -294,6 +297,7 @@ function log(string, cb?) {
     } else {
         console.log(string)
     }
+    const saveToLogs = fs.createWriteStream(path.join(__dirname, '.syncTokensLog.txt')) // Uncomment to store script run logs in disk 
     saveToLogs.write(`${string}\n`)
 }
 
