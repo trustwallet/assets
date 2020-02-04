@@ -3,6 +3,7 @@ import { toChecksum } from "../src/test/helpers"
 
 // Returns array of ERC-721, ERC-1155 contract addresses in checksum 
 export const getOpenseaCollectionAddresses = async () => {
+    console.log(`Fetching assets from OpenSea`)
     const limit = 300 // max limit
     let offset = 0
     const erc20Addresses = []
