@@ -1,5 +1,7 @@
 # Trust Wallet Assets Info
 
+[![Build Status](https://dev.azure.com/TrustWallet/Assets/_apis/build/status/trustwallet.assets?branchName=master)](https://dev.azure.com/TrustWallet/Assets/_build/latest?definitionId=42&branchName=master)
+
 ## Overview
 Hello and welcome to Trust Wallet assets info contribution guide. We appreciate your effort to open-source.
 Token repository [https://github.com/trustwallet/assets](https://github.com/trustwallet/assets) (repo) is a source of images used by [Trust Wallet](https://trustwallet.com/) including:
@@ -22,9 +24,11 @@ Token repository [https://github.com/trustwallet/assets](https://github.com/trus
 
 5. dApp images available in `Browser` section in Trust Wallet and at https://dapps.trustwallet.com and bookmarks icons. [read requirments](#dApp-image-naming-requirments). Also you can submit dApp to our list [read more](#dApp-subbmition-and-listing-requirements)
 
-6. Staking validators info available on [Trust Wallet Staking Platform](https://github.com/trustwallet/developer/blob/master/platform/staking.md)
+6. Staking validators info, such as name, image, validator id, website url. [Supported staking coins](https://trustwallet.com/staking/). [Read requirements](#Staking-validators-requirements)
 
-7. Coming soon: token info, token price
+7. Crypto price providers map: [CoinMarketCap](https://github.com/trustwallet/assets/blob/master/pricing/coinmarketcap/mapping.json)
+
+8. Coming soon: token info
 
 <center><img src='https://raw.githubusercontent.com/trustwallet/assets/master/media/trust-wallet.png'></center>
 
@@ -59,6 +63,9 @@ Whenever you updating or deleting asset on behalf of asset owner or just found o
 - Add [logo](https://trustwallet.com/press) as dApp supported wallet
 - Test dApp inside Trust Wallet on iOS and Android devices, test one more time
 - [Submit form for review](https://docs.google.com/forms/d/e/1FAIpQLSd5p9L78zKXIiu9E5yFRPf5UkvsLZ7TbUDLFBRIi1qMd8Td4A/viewform)
+
+## Staking validators requirements
+// TODO
 
 ## Repository structure
 
