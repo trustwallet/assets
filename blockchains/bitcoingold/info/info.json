@@ -1,0 +1,31 @@
+{
+    "name": "Bitcoin Gold",
+    "website": "https://bitcoingold.org/",
+    "source_code": "https://github.com/BTCGPU/BTCGPU",
+    "whitepaper": "https://github.com/BTCGPU/BTCGPU/wiki/Technical-Spec",
+    "explorers": [
+        {
+            "name": "Bitcoin Gold Explorer",
+            "url": "https://explorer.bitcoingold.org/insight/"
+        }
+    ],
+    "socials": [
+        {
+            "name": "Twitter",
+            "url": "https://twitter.com/bitcoingold",
+            "handle": "bitcoingold"
+        },
+        {
+            "name": "Reddit",
+            "url": "https://reddit.com/r/BitcoinGoldHQ",
+            "handle": "BitcoinGoldHQ"
+        }
+    ],
+    "details": [
+        {
+            "language": "en",
+            "description": "Bitcoin Gold (BTG) is a fork of Bitcoin that occurred on October 24, 2017 on block 419406. Bitcoin Gold changed Bitcoin’s proof-of-work algorithm from SHA256 to Equihash rendering specialised mining equipment obsolete in an attempt to democratise the Bitcoin mining process."
+        }
+    ],
+    "data_source": "crowd"
+}
