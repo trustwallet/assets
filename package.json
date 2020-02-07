@@ -12,7 +12,7 @@
     "list": "npm run cleanup && ts-node ./script/gen_list",
     "gen:info": "ts-node ./script/gen_info",
     "resize": "npm run cleanup && ts-node ./script/resize_images",
-    "map-cmc": "npm run cleanup && ts-node ./pricing/coinmarketcap/script",
+    "map:cmc": "ts-node ./pricing/coinmarketcap/script",
     "magic": "npm run update-bep2 && npm run checksum-erc20 && npm run resize && npm run list && npm t"
   },
   "repository": {

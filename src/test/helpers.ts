@@ -7,7 +7,7 @@ const web3 = new Web3('ws://localhost:8546');
 import { CoinTypeUtils, CoinType } from "@trustwallet/types";
 const sizeOf = require("image-size");
 
-export const getChainName = (id: CoinType): string =>  CoinTypeUtils.id(id)
+export const getChainName = (id: CoinType): string =>  CoinTypeUtils.id(id) // 60 => ethereum
 export const Binance = getChainName(CoinType.binance)
 export const Classic = getChainName(CoinType.classic)
 export const Cosmos = getChainName(CoinType.cosmos)
@@ -42,6 +42,7 @@ export const minLogoHeight = 64
 export const maxLogoWidth = 512
 export const maxLogoHeight = 512
 
+export const getChainAssetPath = (chain: string, address: string) => `${getChainAssetsPath(chain)}/${address}`
 export const getChainAssetLogoPath = (chain: string, address: string) => `${getChainAssetsPath(chain)}/${address}/${logo}`
 export const getChainValidatorsPath = (chain: string): string => `${chainsFolderPath}/${chain}/validators`
 export const getChainValidatorsAssets = (chain: string): string[] => readDirSync(getChainValidatorsAssetsPath(chain))
@@ -52,6 +53,7 @@ export const getChainWhitelistPath = (chain: string): string => `${chainsFolderP
 export const getChainBlacklistPath = (chain: string): string => `${chainsFolderPath}/${chain}/${blackList}`
 
 export const readDirSync = (path: string): string[] => fs.readdirSync(path)
+export const makeDirSync = (path: string) => fs.mkdirSync(path)
 export const isPathExistsSync = (path: string): boolean => fs.existsSync(path)
 export const isChainWhitelistExistSync = (chain: string): boolean => isPathExistsSync(getChainWhitelistPath(chain))
 export const isChainBlacklistExistSync = (chain: string): boolean => isPathExistsSync(getChainBlacklistPath(chain))
