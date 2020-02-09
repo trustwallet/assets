@@ -1,0 +1,31 @@
+{
+    "name": "Bitzec",
+    "website": "https://bitzec.github.io",
+    "source_code": "https://github.com/bitzec/bitzec",
+    "whitepaper": "https://github.com/bitzec/bitzec-patched-account-labeling/blob/master/protocol-bitzec.pdf",
+    "explorers": [
+        {
+            "name": "insightZChain",
+            "url": "http://108.59.85.49:3001/"
+        }
+    ],
+    "socials": [
+        {
+            "name": "Twitter",
+            "url": "https://twitter.com/bitzecorg",
+            "handle": "electriccoinco"
+        },
+        {
+            "name": "Reddit",
+            "url": "https://www.reddit.com/r/bitzec/",
+            "handle": ""
+        }
+    ],
+    "details": [
+        {
+            "language": "en",
+            "description": "Forked in  late 2018 from Zooko Wilcox-O’Hearn Zcash and based on the Zerocoin protocol, Bitzec (BZC) is an open-source privacy-focused cryptocurrency that enables selective transparency of transactions. Bitzec transactions can either be transparent or shielded through a zero-knowledge proof called zk-SNARKs. This allows the network to maintain a secure ledger of balances without disclosing the parties or amounts involved. Instead of publishing spend-authority and transaction values. The blcokreward of Bitzec decreases monthly"
+        }
+    ],
+    "data_source": "crowd"
+}
