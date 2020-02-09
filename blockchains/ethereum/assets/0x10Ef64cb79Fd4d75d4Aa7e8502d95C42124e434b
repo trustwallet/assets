@@ -1,0 +1,36 @@
+.
+├── blockchains
+│   └──ethereum
+│   │   └──assets
+│   │   │  └──0x10Ef64cb79Fd4d75d4Aa7e8502d95C42124e434b // address folder
+│   │   │     └──logo.png // address logo
+│   │   └──info
+│   │      └──logo.png // coin logo
+|   |
+|   └──binance
+│   │   └──assets
+│   │   │  └──ONE-5F9
+│   │   │     └──logo.png
+│   │   └──info
+│   │      └──logo.png
+|   └──tron
+│   |  └──assets
+│   |  │  └──1002000
+│   |  │  |   └──logo.png
+|   |  |  └──TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t
+|   |  |      └──logo.png
+|   |  | 
+│   |  └──info
+│   |     └──logo.png
+|   |
+|   └──cosmos
+│   │   └──info
+|   |   |  └──logo.png
+|   |   |
+│   │   └──validators
+│   │   |  └──assets
+|   |   |     └──cosmosvaloper1clpqr4nrk4khgkxj78fcwwh6dl3uw4epsluffn
+|   |   |        └──logo.png
+|   |   |
+|   |   └──list.json
+├── ...
