@@ -2,7 +2,9 @@
     "name": "Cosmos",
     "website": "https://cosmos.network/",
     "source_code": "https://github.com/cosmos",
-    "whitepaper": "https://cosmos.network/resources/whitepaper",
+    "white_paper": "https://cosmos.network/resources/whitepaper",
+    "short_description": "Cosmos is a secure & scalable blockchain ecosystem where thousands of dApps interoperate to create the foundation for a new token economy.",
+    "description": "",
     "explorers": [
         {
             "name": "Mintscan",
@@ -19,12 +21,6 @@
             "name": "Reddit",
             "url": "https://reddit.com/r/cosmosnetwork",
             "handle": "cosmosnetwork"
-        }
-    ],
-    "details": [
-        {
-            "language": "en",
-            "description": "Cosmos is a secure & scalable blockchain ecosystem where thousands of dApps interoperate to create the foundation for a new token economy."
         }
     ],
     "data_source": "crowd"

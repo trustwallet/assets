@@ -2,7 +2,9 @@
     "name": "Loom Network",
     "website": "https://loomx.io",
     "source_code": "https://github.com/loomnetwork",
-    "whitepaper": "https://medium.com/loom-network/introducing-loom-network-scaling-ethereum-today-9ea26b5b57c",
+    "white_paper": "https://medium.com/loom-network/introducing-loom-network-scaling-ethereum-today-9ea26b5b57c",
+    "short_scription": "",
+    "description": "Loom Network (LOOM) is a Platform as a Service intended to allow Ethereum-based Solidity applications to be run on side chains. With the belief that applications should be allowed to have more relaxed consensus mechanisms depending on their needs and potential threat model, Loom aims to make scaling decentralized applications faster and easier while remaining on the Ethereum network. Loom Network’s DPoS sidechains allow for truly scalable blockchain games and DApps with the security of Ethereum mainnet.",
     "explorers": [
         {
             "name": "Etherscan",
@@ -19,12 +21,6 @@
             "name": "Reddit",
             "url": "https://reddit.com/r/loomnetwork",
             "handle": "loomnetwork"
-        }
-    ],
-    "details": [
-        {
-            "language": "en",
-            "description": "Loom Network (LOOM) is a Platform as a Service intended to allow Ethereum-based Solidity applications to be run on side chains. With the belief that applications should be allowed to have more relaxed consensus mechanisms depending on their needs and potential threat model, Loom aims to make scaling decentralized applications faster and easier while remaining on the Ethereum network. Loom Network’s DPoS sidechains allow for truly scalable blockchain games and DApps with the security of Ethereum mainnet."
         }
     ],
     "data_source": "crowd"
