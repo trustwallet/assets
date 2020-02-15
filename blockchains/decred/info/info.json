@@ -3,6 +3,8 @@
     "website": "https://www.decred.org",
     "source_code": "https://github.com/decred",
     "whitepaper": "https://docs.decred.org/",
+    "short_scription": "",
+    "description": "Decred (DCR) is an open-source, Bitcoin fork that places emphasis on development funding, on-chain governance, and consensus mechanisms.\r\n\r\nLaunched in Feb 2016 by the Bitcoin developers behind btcsuite (an alternative full-node Bitcoin implementation written in Go (golang), Decred successfully orchestrated an on-chain user-activated consensus vote, which is emblematic of the project's emphasis on community-driven stakeholder governance. Other features of the project include a hybrid proof-of-work (PoW) proof-of-stake (PoS) consensus voting system, a public proposal platform, smart contracts, cross-chain atomic swaps, and cross-platform wallets.",
     "explorers": [
         {
             "name": "Decred Block Explorer",
@@ -19,12 +21,6 @@
             "name": "Reddit",
             "url": "https://reddit.com/r/decred",
             "handle": "decred"
-        }
-    ],
-    "details": [
-        {
-            "language": "en",
-            "description": "Decred (DCR) is an open-source, Bitcoin fork that places emphasis on development funding, on-chain governance, and consensus mechanisms.\r\n\r\nLaunched in Feb 2016 by the Bitcoin developers behind btcsuite (an alternative full-node Bitcoin implementation written in Go (golang), Decred successfully orchestrated an on-chain user-activated consensus vote, which is emblematic of the project's emphasis on community-driven stakeholder governance. Other features of the project include a hybrid proof-of-work (PoW) proof-of-stake (PoS) consensus voting system, a public proposal platform, smart contracts, cross-chain atomic swaps, and cross-platform wallets."
         }
     ],
     "data_source": "crowd"
