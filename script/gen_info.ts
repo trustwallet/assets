@@ -16,6 +16,7 @@ const dafaultInfoTemplate: InfoList =
     "website": "",
     "source_code": "",
     "whitepaper": "",
+    "short_description": "",
     "explorers": [
         {
             "name": "",
