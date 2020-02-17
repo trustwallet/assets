@@ -10,6 +10,7 @@ export interface InfoList {
     website: string;
     source_code: string;
     whitepaper: string;
+    short_description: string;
     explorers: Explorer[];
     socials: Social[];
     details: Detail[];
