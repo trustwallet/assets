@@ -41,7 +41,7 @@ steps:
       git config --global user.email "bot@trustwallet.com"
       git config --global user.name "TrustWalletBot"
 
-  - script: npm run checksum-erc20
+  - script: sudo npm run checksum-erc20
     workingDirectory: $(Build.SourcesDirectory)
     displayName: Run checksum script
 
