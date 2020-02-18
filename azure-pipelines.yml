@@ -11,10 +11,10 @@ steps:
   - checkout: self
     persistCredentials: true
   
-  - task: CmdLine@2
-    displayName: Checkout $(Build.SourceBranchName)
-    inputs:
-      script: 'git checkout $(Build.SourceBranchName)'
+  # - task: CmdLine@2
+  #   displayName: Checkout $(Build.SourceBranchName)
+  #   inputs:
+  #     script: 'git checkout $(Build.SourceBranchName)'
 
   - task: NodeTool@0
     inputs:
