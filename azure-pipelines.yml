@@ -1,25 +1,55 @@
 trigger:
-    - master
+  - master
 
 pool:
-    vmImage: 'ubuntu-latest'
+  vmImage: 'ubuntu-latest'
 
 variables:
-    npm_config_cache: '$(Pipeline.Workspace)/.npm'
+  npm_config_cache: '$(Pipeline.Workspace)/.npm'
 
 steps:
-    - task: NodeTool@0
-      inputs:
-        versionSpec: '12.x'
-      displayName: Install Node.js
+  - checkout: self
+    persistCredentials: true
+  
+  # - task: CmdLine@2
+  #   displayName: Checkout $(Build.SourceBranchName)
+  #   inputs:
+  #     script: 'git checkout $(Build.SourceBranchName)'
 
-    - script: npm install
-      displayName: Install project dependencies
+  - task: NodeTool@0
+    inputs:
+      versionSpec: '12.x'
+    displayName: Install Node.js
+      
+  - script: |
+      sudo npm install -g typescript
+      sudo npm install -g ts-node
+    displayName: Install global dependency
+  
+  - task: Npm@1
+    inputs:
+      command: install
+      verbose: true
+    displayName: Install dependencies
+  # - task: Cache@2
+  #   inputs:
+  #     key: 'npm | "$(Agent.OS)" | package-lock.json'
+  #     path: $(npm_config_cache)
+  #   displayName: Cache npm
+  
+  - script: |
+      git config --global user.email "bot@trustwallet.com"
+      git config --global user.name "TrustWalletBot"
 
-    - task: Cache@2
-      inputs:
-        key: 'npm | "$(Agent.OS)" | package-lock.json'
-        path: $(npm_config_cache)
-      displayName: Cache npm
+  - script: sudo npm run checksum-erc20
+    workingDirectory: $(Build.SourcesDirectory)
+    displayName: Run checksum script
 
-    - script: npm t
+  - task: Bash@3
+    displayName: Commit result of checksum script
+    inputs:
+      targetType: filePath
+      filePath: ./script/commit.sh
+    
+  - script: npm t
+    displayName: Run tests
