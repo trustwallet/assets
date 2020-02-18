@@ -45,7 +45,7 @@ steps:
     workingDirectory: $(Build.SourcesDirectory)
     displayName: Run checksum script
 
-  - bash: './script/commit.sh'
+  - bash: 'sudo ./script/commit.sh'
     displayName: Commit result of checksum script
     
   - script: npm t

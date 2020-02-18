@@ -1,5 +1,4 @@
 const { execSync } = require('child_process');
-const fs = require('fs')
 const path = require('path')
 const Web3 = require('web3')
 const web3 = new Web3('ws://localhost:8546');
