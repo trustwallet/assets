@@ -39,6 +39,7 @@ const custom: mapTiker[] = [
     {"coin": 60, "type": typeToken, "token_id": "0x2fe39f22EAC6d3c1C86DD9D143640EbB94609FCE", "id": 4929}, // JDC Coin ERC20
     {"coin": 60, "type": typeToken, "token_id": "0xdfbc9050F5B01DF53512DCC39B4f2B2BBaCD517A", "id": 4287}, // new Jobchain (JOB)
     {"coin": 60, "type": typeToken, "token_id": "0x5Cf04716BA20127F1E2297AdDCf4B5035000c9eb", "id": 2780}, // NKN (NKN)
+    {"coin": 714, "type": typeToken, "token_id": "CHZ-ECD", "id": 4066}, // Chilz (BEP-2)
 ]
 
 const permanentRemove = [
