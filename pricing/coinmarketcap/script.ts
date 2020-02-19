@@ -40,6 +40,8 @@ const custom: mapTiker[] = [
     {"coin": 60, "type": typeToken, "token_id": "0xdfbc9050F5B01DF53512DCC39B4f2B2BBaCD517A", "id": 4287}, // new Jobchain (JOB)
     {"coin": 60, "type": typeToken, "token_id": "0x5Cf04716BA20127F1E2297AdDCf4B5035000c9eb", "id": 2780}, // NKN (NKN)
     {"coin": 714, "type": typeToken, "token_id": "CHZ-ECD", "id": 4066}, // Chilz (BEP-2)
+    {"coin": 60, "type": typeToken, "token_id": "0xdF1D6405df92d981a2fB3ce68F6A03baC6C0E41F", "id": 3816}, // VERA (VRA)
+    // {"coin": 60, "type": typeToken, "token_id": "XXX", "id": XXX}, // XXX (XXX)
 ]
 
 const permanentRemove = [
