@@ -24,7 +24,10 @@ import {
     mapList,
     findFiles,
     isValidJSON,
-    isValidatorHasAllKeys
+    isValidatorHasAllKeys,
+    getChainAssetPath,
+    rootDirAllowedFiles,
+    assetFolderAllowedFiles
 } from "./helpers"
 import { ValidatorModel } from "./models";
 import { getHandle } from "../../script/gen_info";
@@ -34,25 +37,6 @@ enum TickerType {
 }
 
 describe("Check repository root dir", () => {
-    const rootDirAllowedFiles = [
-        ".github",
-        "blockchains",
-        "dapps",
-        "media",
-        "node_modules",
-        "script",
-        "src",
-        ".gitignore",
-        "azure-pipelines.yml",
-        "jest.config.js",
-        "LICENSE",
-        "package-lock.json",
-        "package.json",
-        "README.md",
-        ".git",
-        "pricing"
-    ]
-
     const dirActualFiles = readDirSync(".")
     test("Root should contains only predefined files", () => {
         dirActualFiles.forEach(file => {
@@ -76,6 +60,23 @@ describe(`Test "blockchains" folder`, () => {
     test("Chain folder must have lowercase naming", () => {
         foundChains.forEach(chain => {
             expect(isLowerCase(chain), `Chain folder must be in lowercase "${chain}"`).toBe(true)
+        })
+    })
+
+    describe(`Asset folder should contain only predifind list of filees`, () => {
+        readDirSync(chainsFolderPath).forEach(chain => {
+            const assetsPath = getChainAssetsPath(chain)
+
+            if (isPathExistsSync(assetsPath)) {
+                test(`Test asset folder allowed files on chain: ${chain}`, () => {
+                readDirSync(assetsPath).forEach(address => {
+                    const assetFiles = getChainAssetPath(chain, address)
+                    readDirSync(assetFiles).forEach(assetFolderFile => {
+                        expect(assetFolderAllowedFiles.indexOf(assetFolderFile),`File "${assetFolderFile}" not allowed at this path`).not.toBe(-1)
+                    })
+                }) 
+            })
+            }  
         })
     })
 

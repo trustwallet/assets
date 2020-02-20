@@ -135,3 +135,27 @@ export const isValidatorHasAllKeys = (val: ValidatorModel): boolean => {
         && typeof val.description === "string"
         && typeof val.website === "string"
 }
+
+export const rootDirAllowedFiles = [
+    ".github",
+    "blockchains",
+    "dapps",
+    "media",
+    "node_modules",
+    "script",
+    "src",
+    ".gitignore",
+    "azure-pipelines.yml",
+    "jest.config.js",
+    "LICENSE",
+    "package-lock.json",
+    "package.json",
+    "README.md",
+    ".git",
+    "pricing"
+]
+
+export const assetFolderAllowedFiles = [
+    "logo.png",
+    "info.json"
+]
