@@ -28,7 +28,11 @@ Token repository [https://github.com/trustwallet/assets](https://github.com/trus
 
 7. Crypto price providers map: [CoinMarketCap](https://github.com/trustwallet/assets/blob/master/pricing/coinmarketcap/mapping.json)
 
-8. Coming soon: token info
+8. Token and coin info
+
+9. Smart contract deprecation/upgrade [read more](#Update-or-remove-existing-asset)
+
+10. Coming soon: Coin pop up notification https://github.com/trustwallet/assets/issues/1274
 
 <center><img src='https://raw.githubusercontent.com/trustwallet/assets/master/media/trust-wallet.png'></center>
 
@@ -40,9 +44,27 @@ Token repository [https://github.com/trustwallet/assets](https://github.com/trus
 2. Get familiar with [folder strcture](#repository-structure), will give you understanding where asset should be placed
 3. [Add asset guide](#how-to-add-asset)
 
-### Update or remove existing asset
+### Update and remove existing asset
 
-Whenever you updating or deleting asset on behalf of asset owner or just found outdated information, please provide link to the source saying about changes. That will help to speed up review process
+Whenever you updating or deleting asset on behalf of asset owner or just found outdated information, please provide link to the source saying about changes. That will help to speed up review process.
+
+This instruction wil be helpwull if you want to:
+1. Update information about smart contract
+
+2. (Depreate)[#What-is-smart-contract-deprication] or update contract address
+
+Smart contract address update procedure:
+
+1. Rename old contract address in coreponding coin folder to new contract e.g:
+
+1. Remove smart contract e.g:
+
+```bash
+`rm -r ./blockchains/<COIN>/assets/<OLD_CONTRACT_ADDRESS>/`
+
+`rm -r ./blockchains/ethereum/assets/0x19fFfd124CD9089E21026d10dA97f8cD6B442Bff/`
+```
+2. Commit changes and make PR
 
 
 ## Image Requirements
@@ -87,6 +109,7 @@ Whenever you updating or deleting asset on behalf of asset owner or just found o
 │   │   └──assets
 │   │   │  └──0x0a2D9370cF74Da3FD3dF5d764e394Ca8205C50B6 // address folder
 │   │   │     └──logo.png // address logo
+|   |   |     └──info.json // info related to contract
 │   │   └──info
 │   │      └──logo.png // coin logo
 |   |
@@ -94,14 +117,17 @@ Whenever you updating or deleting asset on behalf of asset owner or just found o
 │   │   └──assets
 │   │   │  └──ONE-5F9
 │   │   │     └──logo.png
+|   |   |     └──info.json
 │   │   └──info
 │   │      └──logo.png
 |   └──tron
 │   |  └──assets
 │   |  │  └──1002000
 │   |  │  |   └──logo.png
+|   |  |  |   └──info.json
 |   |  |  └──TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t
 |   |  |      └──logo.png
+|   |  |      └──info.json
 |   |  | 
 │   |  └──info
 │   |     └──logo.png
@@ -174,6 +200,12 @@ Both clients, Android and iOS keep old image cache for up to 7 days. In order to
 
 ### Why i don't see my token in search after PR was merged ?
 After PR was merged, set of cron workers will update token status normally with in 10 minutes and sometimes up to 30 minutes and token became visible in search result.
+
+### What is smart contract deprication (removal)
+A process of removing smart contract information such as (token logo and info) from this repository.
+Removed contract address will be added to the blacklist and, as a result, will no longer be present in token search results inside the TW app.
+Why would you want to do this ?.
+You are contract owner or just good samaritan who noticed contract to be no longer "active" and was an upgrade and abandoned by owning organization, involved in a scam, mimicking by its name or/and symbol a real contract. All facts must be supported with a link to any resource proving these statements.
 
 ## How to use it? (For Developers)
 Base URL for token image:

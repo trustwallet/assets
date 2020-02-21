@@ -51,6 +51,18 @@ export const getChainValidatorsAssetsPath = (chain: string): string => `${getCha
 export const getChainValidatorAssetLogoPath = (chain: string, asset: string): string => `${getChainValidatorsAssetsPath(chain)}/${asset}/${logo}`
 export const getChainWhitelistPath = (chain: string): string => `${chainsFolderPath}/${chain}/${whiteList}`
 export const getChainBlacklistPath = (chain: string): string => `${chainsFolderPath}/${chain}/${blackList}`
+export const getChainWhitelist = (chain: string): string[] => {
+    if (isChainWhitelistExistSync(chain)) {
+        return JSON.parse(readFileSync(getChainWhitelistPath(chain)))
+    }
+    return []
+}
+export const getChainBlacklist = (chain: string): string[] => {
+    if (isChainBlacklistExistSync(chain)) {
+        return JSON.parse(readFileSync(getChainBlacklistPath(chain)))
+    }
+    return []
+}
 
 export const readDirSync = (path: string): string[] => fs.readdirSync(path)
 export const makeDirSync = (path: string) => fs.mkdirSync(path)
