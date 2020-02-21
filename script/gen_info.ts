@@ -53,16 +53,17 @@ bluebird.mapSeries(readDirSync(chainsFolderPath), (chain: string) => {
     }
 
     const infoList: InfoList = JSON.parse(readFileSync(chainInfoPath))
-
     // Add "handle" property to each social element
     let newSocials = []
-    infoList.socials.forEach(social => {
-        const handle = "handle"
-        if (nestedProperty.hasOwn(social, handle)) {
-            nestedProperty.set(social, handle, getHandle(social.url))
-            newSocials.push(social)
-        }
-    })
+    if ("socials" in infoList) {
+        infoList.socials.forEach(social => {
+            const handle = "handle"
+            if (nestedProperty.hasOwn(social, handle)) {
+                nestedProperty.set(social, handle, getHandle(social.url))
+                newSocials.push(social)
+            }
+        })
+    }
     nestedProperty.set(infoList, "socials", newSocials)
     writeToInfo(chainInfoPath, infoList)
 })
