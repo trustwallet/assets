@@ -2,7 +2,9 @@
     "name": "Ark",
     "website": "http://ark.io/",
     "source_code": "https://github.com/ArkEcosystem",
-    "whitepaper": "https://ark.io/Whitepaper.pdf",
+    "white_paper": "https://ark.io/Whitepaper.pdf",
+    "short_description": "ARK provides users, developers, and startups with innovative blockchain technologies. Aim to create an entire ecosystem of linked chains and a virtual spiderweb of endless use-cases that make ARK highly flexible, adaptable, and scalable.",
+    "description": "ARK (ARK) is a project that offers a suite of tools to create an ecosystem of interoperable blockchains. Using the Delegated Proof-of-Stake (DPoS) consensus algorithm, ARK's network is secured by delegates, who are appointed by ARK token holders through voting. ARK is also able to connect to external blockchains through the use of 'SmartBridges'.",
     "explorers": [
         {
             "name": "Ark Explorer",
@@ -19,12 +21,6 @@
             "name": "Reddit",
             "url": "https://reddit.com/r/ArkEcosystem",
             "handle": "ArkEcosystem"
-        }
-    ],
-    "details": [
-        {
-            "language": "en",
-            "description": "ARK (ARK) is a project that offers a suite of tools to create an ecosystem of interoperable blockchains. Using the Delegated Proof-of-Stake (DPoS) consensus algorithm, ARK's network is secured by delegates, who are appointed by ARK token holders through voting. ARK is also able to connect to external blockchains through the use of 'SmartBridges'."
         }
     ],
     "data_source": "crowd"

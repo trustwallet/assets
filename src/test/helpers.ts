@@ -51,6 +51,18 @@ export const getChainValidatorsAssetsPath = (chain: string): string => `${getCha
 export const getChainValidatorAssetLogoPath = (chain: string, asset: string): string => `${getChainValidatorsAssetsPath(chain)}/${asset}/${logo}`
 export const getChainWhitelistPath = (chain: string): string => `${chainsFolderPath}/${chain}/${whiteList}`
 export const getChainBlacklistPath = (chain: string): string => `${chainsFolderPath}/${chain}/${blackList}`
+export const getChainWhitelist = (chain: string): string[] => {
+    if (isChainWhitelistExistSync(chain)) {
+        return JSON.parse(readFileSync(getChainWhitelistPath(chain)))
+    }
+    return []
+}
+export const getChainBlacklist = (chain: string): string[] => {
+    if (isChainBlacklistExistSync(chain)) {
+        return JSON.parse(readFileSync(getChainBlacklistPath(chain)))
+    }
+    return []
+}
 
 export const readDirSync = (path: string): string[] => fs.readdirSync(path)
 export const makeDirSync = (path: string) => fs.mkdirSync(path)
@@ -135,3 +147,27 @@ export const isValidatorHasAllKeys = (val: ValidatorModel): boolean => {
         && typeof val.description === "string"
         && typeof val.website === "string"
 }
+
+export const rootDirAllowedFiles = [
+    ".github",
+    "blockchains",
+    "dapps",
+    "media",
+    "node_modules",
+    "script",
+    "src",
+    ".gitignore",
+    "azure-pipelines.yml",
+    "jest.config.js",
+    "LICENSE",
+    "package-lock.json",
+    "package.json",
+    "README.md",
+    ".git",
+    "pricing"
+]
+
+export const assetFolderAllowedFiles = [
+    "logo.png",
+    "info.json"
+]

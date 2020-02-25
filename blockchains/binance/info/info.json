@@ -1,8 +1,10 @@
 {
     "name": "BNB coin",
-    "website": "https://www.binance.com/",
+    "website": "https://binance.org/",
     "source_code": "https://github.com/binance-chain/",
-    "whitepaper": "https://www.binance.com/resources/ico/Binance_WhitePaper_en.pdf",
+    "white_paper": "https://www.binance.com/resources/ico/Binance_WhitePaper_en.pdf",
+    "short_description": "Fast and secure decentralized digital asset exchange. The new crypto currency trading standard is here.",
+    "description": "Fast and secure decentralized digital asset exchange. The new crypto currency trading standard is here.",
     "explorers": [
         {
             "name": "Binance Chain Explorer",
@@ -19,12 +21,6 @@
             "name": "Reddit",
             "url": "https://reddit.com/r/BinanceExchange",
             "handle": "BinanceExchange"
-        }
-    ],
-    "details": [
-        {
-            "language": "en",
-            "description": "Fast and secure decentralized digital asset exchange. The new crypto currency trading standard is here."
         }
     ],
     "data_source": "crowd"

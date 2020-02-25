@@ -1,8 +1,10 @@
 {
     "name": "Kava",
-    "website": "https://www.kava.io",
+    "website": "https://kava.io",
     "source_code": "https://github.com/kava-labs",
-    "whitepaper": "https://docsend.com/view/gwbwpc3",
+    "white_paper": "https://docsend.com/view/gwbwpc3",
+    "short_description": "Kava is a decentralized financial services platform. Kava's principle product is a DeFi lending platform for the world's biggest cryptocurrencies.",
+    "description": "Kava is a decentralized financial services platform. Kava's principle product is a DeFi lending platform for the world's biggest cryptocurrencies.",
     "explorers": [
         {
             "name": "MintScan",
@@ -19,12 +21,6 @@
             "name": "Reddit",
             "url": "",
             "handle": ""
-        }
-    ],
-    "details": [
-        {
-            "language": "en",
-            "description": "Kava describes itself as a cross-chain Defi platform for cryptoassets."
         }
     ],
     "data_source": "crowd"

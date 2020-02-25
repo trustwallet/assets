@@ -1,8 +1,10 @@
 {
     "name": "Thunder Token",
-    "website": "https://www.thundercore.com",
+    "website": "https://thundercore.com",
     "source_code": "https://github.com/thundertoken",
-    "whitepaper": "https://docs.thundercore.com/thunder-whitepaper.pdf",
+    "white_paper": "https://docs.thundercore.com/thunder-whitepaper.pdf",
+    "short_description": "ThunderCore is EVM-compatible and claims to have a throughput of 1,200+ TPS, sub-second confirmation times, and low gas costs, with a view towards making DApps easy to deploy and scale.",
+    "description": "ThunderCore describes itself as a blockchain with its own native cryptocurrency. It is EVM-compatible and claims to have a throughput of 1,200+ TPS, sub-second confirmation times, and low gas costs, with a view towards making it quick and easy for DApps to deploy and scale.",
     "explorers": [
         {
             "name": "Thunderscan",
@@ -19,12 +21,6 @@
             "name": "Reddit",
             "url": "https://reddit.com/r/thundertoken",
             "handle": "thundertoken"
-        }
-    ],
-    "details": [
-        {
-            "language": "en",
-            "description": "ThunderCore describes itself as a blockchain with its own native cryptocurrency. It is EVM-compatible and claims to have a throughput of 1,200+ TPS, sub-second confirmation times, and low gas costs, with a view towards making it quick and easy for DApps to deploy and scale."
         }
     ],
     "data_source": "crowd"
