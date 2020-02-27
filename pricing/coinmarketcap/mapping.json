@@ -4174,12 +4174,6 @@
     {
         "coin": 60,
         "type": "token",
-        "token_id": "0x78a73B6CBc5D183CE56e786f6e905CaDEC63547B",
-        "id": 2768
-    },
-    {
-        "coin": 60,
-        "type": "token",
         "token_id": "0x76960Dccd5a1fe799F7c29bE9F19ceB4627aEb2f",
         "id": 2771
     },
@@ -4199,6 +4193,12 @@
         "type": "token",
         "token_id": "0x1CCAA0F2a7210d76E1fDec740d5F323E2E1b1672",
         "id": 2775
+    },
+    {
+        "coin": 714,
+        "type": "token",
+        "token_id": "AVA-645",
+        "id": 2776
     },
     {
         "coin": 60,
@@ -9274,12 +9274,6 @@
         "id": 4687
     },
     {
-        "coin": 714,
-        "type": "token",
-        "token_id": "BUSD-BD1",
-        "id": 4687
-    },
-    {
         "coin": 60,
         "type": "token",
         "token_id": "0x60c87297A1fEaDC3C25993FfcadC54e99971e307",
@@ -9571,6 +9565,12 @@
     {
         "coin": 60,
         "type": "token",
+        "token_id": "0xeF1344bDf80BEf3Ff4428d8bECEC3eea4A2cF574",
+        "id": 4860
+    },
+    {
+        "coin": 60,
+        "type": "token",
         "token_id": "0x5B322514FF727253292637D9054301600c2C81e8",
         "id": 4862
     },
@@ -9639,6 +9639,12 @@
         "type": "token",
         "token_id": "0x41ad4093349C8A60DE591A3C37dcd184558EaAe3",
         "id": 4914
+    },
+    {
+        "coin": 60,
+        "type": "token",
+        "token_id": "0x725440512cb7b78bF56B334E50e31707418231CB",
+        "id": 4917
     },
     {
         "coin": 60,
@@ -10077,6 +10083,18 @@
     {
         "coin": 60,
         "type": "token",
+        "token_id": "0x9f8F7EA504588a58B8b24b832B5d25a4Aeb4706F",
+        "id": 5179
+    },
+    {
+        "coin": 60,
+        "type": "token",
+        "token_id": "0x708aA4e8AaeAaD6074dD09cc4e5C52A70452eB39",
+        "id": 5180
+    },
+    {
+        "coin": 60,
+        "type": "token",
         "token_id": "0x17E6616c45d267bC20A9892b58A01621c592B72d",
         "id": 5182
     },
@@ -10157,5 +10175,11 @@
         "type": "token",
         "token_id": "0xf51EBf9a26DbC02B13F8B3a9110dac47a4d62D78",
         "id": 5258
+    },
+    {
+        "coin": 60,
+        "type": "token",
+        "token_id": "0xBa5160Ba66b286f1B9B6f3a57A6ABCFa440E7aA2",
+        "id": 5262
     }
 ]
