@@ -298,7 +298,7 @@ async function fetchImage(url: string) {
 
 function exit(code?: number) {
     printContracts()
-    process.exit(1)
+    process.exit(code ?? 1)
 }
 
 function getTotalActiveCryptocurrencies() {
