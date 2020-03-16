@@ -306,14 +306,15 @@
       "website":"https://steakandbake.github.io",
       "payout":{
          "commission":5
-      },
+      }
+   },
    {
-      "id":"tz1XXayQohB8XRXN7kMoHbf2NFwNiH3oMRQQ",
-      "name":"Bit Cat",
-      "description":"Secure and stable Tezos baker service from China team",
-      "website":"https://www.bitcat365.com",
-      "payout":{
-         "commission":8
+      "id": "tz1QLXqnfN51dkjeghXvKHkJfhvGiM5gK4tc",
+      "name": "FreshTEZOS",
+      "description": "FreshTEZOS, one of the oldest Tezos bakers, runs on bare metal in a SSAE16 SOC2 certified Tier 3 datacenter, geographically distributed private peers, wrapped in 24/7 monitoring, alerting, and analytics.",
+      "website": "https://freshtezos.com/",
+      "payout": {
+         "commission": 10
       }
    }
 ]
