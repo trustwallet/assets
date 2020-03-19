@@ -280,6 +280,10 @@
       "website": "https://tezoshop.art",
       "payout": {
          "commission": 3
+      },
+      "status": {
+         "disabled": false,
+         "note:": "No more capacity"
       }
    },
    {
@@ -302,6 +306,15 @@
       "website":"https://steakandbake.github.io",
       "payout":{
          "commission":5
+      }
+   },
+   {
+      "id": "tz1XXayQohB8XRXN7kMoHbf2NFwNiH3oMRQQ",
+      "name": "Bit Cat",
+      "description": "Secure and stable Tezos baker service from China team",
+      "website": "https://www.bitcat365.com",
+      "payout": {
+         "commission": 8
       }
    }
 ]

@@ -20,11 +20,14 @@ steps:
     inputs:
       versionSpec: '12.x'
     displayName: Install Node.js
-      
-  - script: |
-      sudo npm install -g typescript
-      sudo npm install -g ts-node
+    
+  - task: Bash@3
     displayName: Install global dependency
+    inputs:
+      targetType: inline
+      script: |
+        sudo npm install -g typescript
+        sudo npm install -g ts-node
   
   - task: Npm@1
     inputs:
@@ -36,20 +39,25 @@ steps:
   #     key: 'npm | "$(Agent.OS)" | package-lock.json'
   #     path: $(npm_config_cache)
   #   displayName: Cache npm
-  
-  - script: |
-      git config --global user.email "bot@trustwallet.com"
-      git config --global user.name "TrustWalletBot"
-
-  - script: sudo npm run checksum-erc20
-    workingDirectory: $(Build.SourcesDirectory)
-    displayName: Run checksum script
 
   - task: Bash@3
-    displayName: Commit result of checksum script
+    displayName: Set git config
     inputs:
-      targetType: filePath
-      filePath: ./script/commit.sh
+      targetType: inline
+      script: |
+        git config --global user.email "bot@trustwallet.com"
+        git config --global user.name "TrustWalletBot"
+      
+
+  # - script: sudo npm run checksum:erc20
+  #   workingDirectory: $(Build.SourcesDirectory)
+  #   displayName: Run checksum script
+
+  # - task: Bash@3
+  #   displayName: Commit result of checksum script
+  #   inputs:
+  #     targetType: filePath
+  #     filePath: ./script/commit.sh
     
   - script: npm t
     displayName: Run tests

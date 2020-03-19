@@ -34,11 +34,11 @@ const mappedChainsBlacklistAssets = {} // {ethereum: {<0x...>: ""},}
 const mappedChainsWhitelistAssets = {} // {ethereum: {<0x...>: ""},}
 
 const custom: mapTiker[] = [
-    {coin: 60, "type": typeToken, "token_id": "0x6758B7d441a9739b98552B373703d8d3d14f9e62", "id": 2548}, // POA ERC20 on Foundation (POA20)
-    // {"coin": 0, "type": typeCoin, "id": 825}, // Tether OMNI
-    {"coin": 60, "type": typeToken, "token_id": "0xdAC17F958D2ee523a2206206994597C13D831ec7", "id": 825}, // Tether ERC20
-    {"coin": 195, "type": typeToken, "token_id": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t", "id": 825}, // Tether ERC20
-    {"coin": 1023, "type": typeCoin, "id": 3945}, // Harmony ONE mainet
+    {"coin": 60, "type": typeToken, "token_id": "0x6758B7d441a9739b98552B373703d8d3d14f9e62", "id": 2548}, // POA ERC20 on Foundation (POA20)
+    // {"coin": 0, "type": typeCoin, "id": 825}, // Tether (OMNI)
+    {"coin": 60, "type": typeToken, "token_id": "0xdAC17F958D2ee523a2206206994597C13D831ec7", "id": 825}, // Tether (ERC20)
+    {"coin": 195, "type": typeToken, "token_id": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t", "id": 825}, // Tether (TRC20)
+    {"coin": 1023, "type": typeCoin, "id": 3945}, // Harmony ONE mainnet
     {"coin": 60, "type": typeToken, "token_id": "0x799a4202c12ca952cB311598a024C80eD371a41e", "id": 3945}, // Harmony ONE (ERC20)
     {"coin": 60, "type": typeToken, "token_id": "0xB8c77482e45F1F44dE1745F52C74426C631bDD52", "id": 1839}, // BNB (ERC20)
     {"coin": 304, "type": typeCoin, "id": 2777}, // IoTex coin
@@ -48,12 +48,15 @@ const custom: mapTiker[] = [
     {"coin": 459, "type": typeCoin, "id": 4846}, // KAVA coin
     {"coin": 60, "type": typeToken, "token_id": "0xFA1a856Cfa3409CFa145Fa4e20Eb270dF3EB21ab", "id": 2405}, // IOST (ERC20)
     //
-    {"coin": 60, "type": typeToken, "token_id": "0x2fe39f22EAC6d3c1C86DD9D143640EbB94609FCE", "id": 4929}, // JDC Coin ERC20
+    {"coin": 60, "type": typeToken, "token_id": "0x2fe39f22EAC6d3c1C86DD9D143640EbB94609FCE", "id": 4929}, // JDC Coin (ERC20)
     {"coin": 60, "type": typeToken, "token_id": "0xdfbc9050F5B01DF53512DCC39B4f2B2BBaCD517A", "id": 4287}, // new Jobchain (JOB)
     {"coin": 60, "type": typeToken, "token_id": "0x5Cf04716BA20127F1E2297AdDCf4B5035000c9eb", "id": 2780}, // NKN (NKN)
-    {"coin": 714, "type": typeToken, "token_id": "CHZ-ECD", "id": 4066}, // Chilz (BEP-2)
+    {"coin": 714, "type": typeToken, "token_id": "CHZ-ECD", "id": 4066}, // Chiliz (BEP-2)
     {"coin": 60, "type": typeToken, "token_id": "0xdF1D6405df92d981a2fB3ce68F6A03baC6C0E41F", "id": 3816}, // VERA (VRA)
     {"coin": 60, "type": typeToken, "token_id": "0x467Bccd9d29f223BcE8043b84E8C8B282827790F", "id": 2394}, // Telcoin (TEL)
+    {"coin": 714, "type": typeToken, "token_id": "BUSD-BD1", "id": 4687}, // BUSD-BD1 (BEP2)
+    {"coin": 60, "type": typeToken, "token_id": "0xBD87447F48ad729C5c4b8bcb503e1395F62e8B98", "id": 3408}, // Pool Usdc (plUsdc)
+    {"coin": 60, "type": typeToken, "token_id": "0x49d716DFe60b37379010A75329ae09428f17118d", "id": 4943}, // Pool Dai (plDai)
     // {"coin": 60, "type": typeToken, "token_id": "XXX", "id": XXX}, // XXX (XXX)
 ]
 
@@ -250,7 +253,7 @@ function getSlip44Index(symbol: string, name: string): number {
 }
 
 // id referes to cmc internal id
-const getImageURL = (id: string | number): string => `https://s2.coinmarketcap.com/static/img/coins/128x128/${id}.png?_=cb31027`
+const getImageURL = (id: string | number): string => `https://s2.coinmarketcap.com/static/img/coins/128x128/${id}.png`
 
 async function getImageIfMissing(chain: string, address: string, id: string) {
     try {
@@ -298,7 +301,7 @@ async function fetchImage(url: string) {
 
 function exit(code?: number) {
     printContracts()
-    process.exit(1)
+    process.exit(code ?? 1)
 }
 
 function getTotalActiveCryptocurrencies() {
