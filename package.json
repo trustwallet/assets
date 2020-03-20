@@ -9,6 +9,7 @@
     "cleanup": "find ./.. -iname '.DS_Store' -type f -delete",
     "update:bep2": "npm run cleanup && node ./script/updateBEP2",
     "checksum:erc20": "npm run cleanup && ts-node ./script/erc20_to_checksum",
+    "format:all": "npm run cleanup && ts-node ./script/format_files_name",
     "gen:list": "npm run cleanup && ts-node ./script/gen_list",
     "gen:info": "npm run cleanup && ts-node ./script/gen_info",
     "resize": "npm run cleanup && ts-node ./script/resize_images",

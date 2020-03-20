@@ -72,7 +72,7 @@ describe(`Test "blockchains" folder`, () => {
                 readDirSync(assetsPath).forEach(address => {
                     const assetFiles = getChainAssetPath(chain, address)
                     readDirSync(assetFiles).forEach(assetFolderFile => {
-                        expect(assetFolderAllowedFiles.indexOf(assetFolderFile),`File "${assetFolderFile}" not allowed at this path`).not.toBe(-1)
+                        expect(assetFolderAllowedFiles.indexOf(assetFolderFile),`File "${assetFolderFile}" not allowed at this path: ${assetsPath}`).not.toBe(-1)
                     })
                 }) 
             })
