@@ -16,6 +16,7 @@ import {
     readFileSync,
     isLowerCase,
     isChecksum,
+    isPathDir,
     getBinanceBEP2Symbols,
     isTRC10, isTRC20,
     isLogoOK,
@@ -72,7 +73,7 @@ describe(`Test "blockchains" folder`, () => {
                 readDirSync(assetsPath).forEach(address => {
                     const assetFiles = getChainAssetPath(chain, address)
                     readDirSync(assetFiles).forEach(assetFolderFile => {
-                        expect(assetFolderAllowedFiles.indexOf(assetFolderFile),`File "${assetFolderFile}" not allowed at this path`).not.toBe(-1)
+                        expect(assetFolderAllowedFiles.indexOf(assetFolderFile),`File "${assetFolderFile}" not allowed at this path: ${assetsPath}`).not.toBe(-1)
                     })
                 }) 
             })
@@ -86,10 +87,13 @@ describe(`Test "blockchains" folder`, () => {
                 const assetsPath = getChainAssetsPath(chain)
 
                 readDirSync(assetsPath).forEach(addr => {
-                    const checksum: boolean = isChecksum(addr)
-                    expect(checksum, `Address ${addr} on chain ${chain} must be in checksum`).toBe(true)
+                    const assetPath = getChainAssetPath(chain, addr)
+                    expect(isPathDir(assetPath), `Expect directory at path: ${assetPath}`).toBe(true)
+
+                    const checksum = isChecksum(addr)
+                    expect(checksum, `Expect asset at path ${assetPath} in checksum`).toBe(true)
                     
-                    const lowercase: boolean = isLowerCase(addr)
+                    const lowercase = isLowerCase(addr)
                     if (lowercase) {
                         expect(checksum, `Lowercase address ${addr} on chain ${chain} should be in checksum`).toBe(true)
                     }

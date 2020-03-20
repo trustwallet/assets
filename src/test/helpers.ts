@@ -6,6 +6,7 @@ const Web3 = require('web3')
 const web3 = new Web3('ws://localhost:8546');
 import { CoinTypeUtils, CoinType } from "@trustwallet/types";
 const sizeOf = require("image-size");
+const { execSync } = require('child_process');
 
 export const getChainName = (id: CoinType): string =>  CoinTypeUtils.id(id) // 60 => ethereum
 export const Binance = getChainName(CoinType.binance)
@@ -25,11 +26,18 @@ export const Waves = getChainName(CoinType.waves)
 
 export const ethSidechains = [Ethereum, Classic, POA, TomoChain, GoChain, Wanchain, ThunderCore]
 
-const whiteList = 'whitelist.json'
-const blackList = 'blacklist.json'
+export const logoName = `logo`
+export const infoName = `info`
 
-export const logo = `logo.png`
-export const info = `info.json`
+export const logoExtension = "png"
+export const jsonExtension = "json"
+
+const whiteList = `whitelist.${jsonExtension}`
+const blackList = `blacklist.${jsonExtension}`
+
+export const logo = `${logoName}.${logoExtension}`
+export const info = `${infoName}.${jsonExtension}`
+
 export const root = './'
 export const chainsFolderPath = './blockchains'
 export const pricingFolderPath = './pricing'
@@ -44,9 +52,10 @@ export const maxLogoHeight = 512
 
 export const getChainAssetPath = (chain: string, address: string) => `${getChainAssetsPath(chain)}/${address}`
 export const getChainAssetLogoPath = (chain: string, address: string) => `${getChainAssetsPath(chain)}/${address}/${logo}`
+export const getChainAssetFilesList = (chain: string, address: string) => readDirSync(getChainAssetPath(chain, address))
 export const getChainValidatorsPath = (chain: string): string => `${chainsFolderPath}/${chain}/validators`
 export const getChainValidatorsAssets = (chain: string): string[] => readDirSync(getChainValidatorsAssetsPath(chain))
-export const getChainValidatorsListPath = (chain: string): string => `${(getChainValidatorsPath(chain))}/list.json`
+export const getChainValidatorsListPath = (chain: string): string => `${(getChainValidatorsPath(chain))}/list.${jsonExtension}`
 export const getChainValidatorsAssetsPath = (chain: string): string => `${getChainValidatorsPath(chain)}/assets`
 export const getChainValidatorAssetLogoPath = (chain: string, asset: string): string => `${getChainValidatorsAssetsPath(chain)}/${asset}/${logo}`
 export const getChainWhitelistPath = (chain: string): string => `${chainsFolderPath}/${chain}/${whiteList}`
@@ -79,12 +88,35 @@ export const isChecksum = (address: string): boolean => web3.utils.checkAddressC
 export const toChecksum = (address: string): string => web3.utils.toChecksumAddress(address)
 export const getBinanceBEP2Symbols = async () => axios.get(`https://dex-atlantic.binance.org/api/v1/tokens?limit=1000`).then(res => res.data.map(({symbol}) => symbol))
 
+export const getFileName = (fileName: string): string => path.basename(fileName, path.extname(fileName))
+export const getFileExt = (name: string): string => name.slice((Math.max(0, name.lastIndexOf(".")) || Infinity) + 1)
+
 export const isTRC10 = (string: string): boolean => (/^\d+$/.test(string))
 export const isTRC20 = address => {
     return address.length == 34 &&
     address.startsWith("T") &&
     isLowerCase(address) == false &&
     isUpperCase(address) == false
+}
+
+export const isPathDir = (path: string): boolean => {
+    try {
+        return fs.lstatSync(path).isDirectory()
+    } catch (e) {
+        console.log(`Path: ${path} is not a directory with error: ${e.message}`)
+        return false
+    }
+}
+
+export const makeDirIfDoestExist = async (dirPath: string, dirName: string) => {
+    const path = `${dirPath}/${dirName}`
+    await fs.mkdir(path, {recursive: true}, (err) => {
+        if (err) {
+            console.error(`Error creating dir at path ${path} with result ${err}`)
+        } else {
+            console.log(`Created direcotry at ${path}`)
+        }
+    })
 }
 
 export const sortDesc = arr => arr.sort((a, b) => a - b)
@@ -141,6 +173,14 @@ export const calculateAspectRatioFit = (srcWidth: number, srcHeight: number, max
     }
  }
 
+export function getMoveCommandFromTo(oldName: string, newName: string): string {
+    return `git mv ${oldName} ${newName}-temp && git mv ${newName}-temp ${newName}`
+}
+
+export function execRename(path: string, command: string) {
+    execSync(`cd ${path} && ${command}`, {encoding: "utf-8"})
+}
+
 export const isValidatorHasAllKeys = (val: ValidatorModel): boolean => {
     return typeof val.id === "string"
         && typeof val.name === "string"
@@ -168,6 +208,6 @@ export const rootDirAllowedFiles = [
 ]
 
 export const assetFolderAllowedFiles = [
-    "logo.png",
-    "info.json"
+    logo,
+    info
 ]
