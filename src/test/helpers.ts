@@ -99,6 +99,26 @@ export const isTRC20 = address => {
     isUpperCase(address) == false
 }
 
+export const isPathDir = (path: string): boolean => {
+    try {
+        return fs.lstatSync(path).isDirectory()
+    } catch (e) {
+        console.log(`Path: ${path} is not a directory with error: ${e.message}`)
+        return false
+    }
+}
+
+export const makeDirIfDoestExist = async (dirPath: string, dirName: string) => {
+    const path = `${dirPath}/${dirName}`
+    await fs.mkdir(path, {recursive: true}, (err) => {
+        if (err) {
+            console.error(`Error creating dir at path ${path} with result ${err}`)
+        } else {
+            console.log(`Created direcotry at ${path}`)
+        }
+    })
+}
+
 export const sortDesc = arr => arr.sort((a, b) => a - b)
 export const getUnique = arr => Array.from(new Set(arr))
 export const mapList = arr => {
