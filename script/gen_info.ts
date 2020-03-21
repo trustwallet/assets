@@ -49,14 +49,13 @@ bluebird.mapSeries(readDirSync(chainsFolderPath), (chain: string) => {
         writeToInfo(chainInfoPath, dafaultInfoTemplate)
     }
 
-    const infoList: InfoList = JSON.parse(readFileSync(chainInfoPath))
-    // if (nestedProperty.hasOwn(infoList, "data_source")) {
-        delete infoList["data_source"]
-        const newExplorer = nestedProperty.get(infoList, "explorers")
-        nestedProperty.set(infoList, "explorer", newExplorer)
-        delete infoList["explorers"]
-        writeToInfo(chainInfoPath, infoList)
-    // }
+    // const infoList: InfoList = JSON.parse(readFileSync(chainInfoPath))
+    // delete infoList["data_source"]
+    // const newExplorer = nestedProperty.get(infoList, "explorers")
+    // console.log({newExplorer}, chain)
+    // nestedProperty.set(infoList, "explorer", newExplorer)
+    // delete infoList["explorers"]
+    // writeToInfo(chainInfoPath, infoList)
     
     // if (isPathExistsSync(getChainAssetsPath(chain))) {
     //     readDirSync(getChainAssetsPath(chain)).forEach(asset => {
@@ -69,8 +68,7 @@ bluebird.mapSeries(readDirSync(chainsFolderPath), (chain: string) => {
     //             delete assetInfoList["explorers"]
     //             nestedProperty.set(assetInfoList, "explorer", newExplorers)
 
-    //             // writeToInfo(assetInfoPath, assetInfoList)
-    //             process.exit(44)
+    //             writeToInfo(assetInfoPath, assetInfoList)
     //         }
     //     })
     // }

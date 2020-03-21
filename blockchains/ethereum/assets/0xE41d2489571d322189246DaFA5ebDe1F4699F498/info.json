@@ -2,11 +2,5 @@
     "name": "0x",
     "website": "https://0x.org",
     "short_description": "0x (ZRX) is an open-source protocol that provides smart contract infrastructure and liquidity to enable the peer-to-peer exchange of tokens on the Ethereum blockchain.",
-    "explorers": [
-        {
-            "name": "Etherscan",
-            "url": "https://etherscan.io/token/ZRX"
-        }
-    ],
-    "data_source": "crowd"
+    "explorer": "https://etherscan.io/token/ZRX"
 }

@@ -5,12 +5,6 @@
     "white_paper": "",
     "short_description": "Utility token to increase adoption of cryptocurrency.",
     "description": "Utility token to increase adoption of cryptocurrency.",
-    "explorers": [
-        {
-            "name": "Binance Chain Explorer",
-            "url": "https://explorer.binance.org/asset/TWT-8C2"
-        }
-    ],
     "socials": [
         {
             "name": "Twitter",
@@ -23,5 +17,5 @@
             "handle": "TrustApp"
         }
     ],
-    "data_source": "crowd"
+    "explorer": "https://explorer.binance.org/asset/TWT-8C2"
 }
