@@ -5,12 +5,7 @@
     "white_paper": "https://harmony.one/pdf/whitepaper.pdf",
     "short_description": "Harmony aims to offer a high-throughput, low-latency, and low-fee consensus platform designed to power decentralized economies of the future.",
     "description": "Harmony aims to offer a high-throughput, low-latency, and low-fee consensus platform designed to power decentralized economies of the future.",
-    "explorers": [
-        {
-            "name": "Harmony Explorer",
-            "url": "https://explorer.harmony.one/"
-        }
-    ],
+    "explorers": "https://explorer.harmony.one/",
     "socials": [
         {
             "name": "Twitter",
@@ -22,6 +17,5 @@
             "url": "https://www.reddit.com/r/harmony_one",
             "handle": "harmony_one"
         }
-    ],
-    "data_source": "crowd"
+    ]
 }

@@ -5,12 +5,7 @@
     "white_paper": "https://qtum.org/uploads/files/a2772efe4dc8ed1100319c6480195fb1.pdf",
     "short_description": "Qtum is a proof of stake blockchain platform that combines the bitcoin blockchain architecture with multiple virtual machines on top.",
     "description": "Qtum (QTUM) is a Proof-of-Stake (PoS) smart contract blockchain platform and value transfer protocol. In PoS, node operators are rewarded for validating transactions. Qtum is built on Bitcoin's UTXO transaction model, with the added functionality of smart contract execution.",
-    "explorers": [
-        {
-            "name": "Qtum.info",
-            "url": "https://qtum.info"
-        }
-    ],
+    "explorers": "https://qtum.info",
     "socials": [
         {
             "name": "Twitter",
@@ -22,6 +17,5 @@
             "url": "https://reddit.com/r/Qtum",
             "handle": "Qtum"
         }
-    ],
-    "data_source": "crowd"
+    ]
 }

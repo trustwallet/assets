@@ -5,12 +5,7 @@
     "white_paper": "https://gochain.foundation/gochain-whitepaper-v2.1.2.pdf",
     "short_description": "GoChain is a scalable, smart contract blockchain that is fast, secure and green. It enables developers to lift and shift from Ethereum to GoChain for 100x increased performance. ",
     "description": "GoChain (GO) platform uses a Proof of Reputation consensus model which may take into account the reputation of all network participants. Said to be fully compatible with existing Ethereum wallets, smart contracts and other tools, GoChain aims to enable developers to deploy decentralized applications on a network with greater energy efficiency than that of Bitcoin or Ethereum.",
-    "explorers": [
-        {
-            "name": "GoChain Block Explorer",
-            "url": "https://explorer.gochain.io/home"
-        }
-    ],
+    "explorers": "https://explorer.gochain.io/home",
     "socials": [
         {
             "name": "Twitter",
@@ -22,6 +17,5 @@
             "url": "https://reddit.com/r/OfficialGoChain",
             "handle": "OfficialGoChain"
         }
-    ],
-    "data_source": "crowd"
+    ]
 }
