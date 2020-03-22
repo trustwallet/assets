@@ -5,12 +5,6 @@
     "white_paper": "https://test.ton.org/ton.pdf",
     "short_description": "The Telegram Open Network (TON) describes itself as a fast, secure and scalable blockchain and network project, reportedly capable of handling millions of transactions per second.",
     "description": "The Telegram Open Network (TON) platform aims to meld the features of its messaging platform with cryptocurrency and blockchain. The Telegram Open Network (TON) describes itself as a fast, secure and scalable blockchain and network project, reportedly capable of handling millions of transactions per second. The Telegram Open Network (TON) will utilize Gram tokens, with an estimated launch date of 31 Oct 2019.",
-    "explorers": [
-        {
-            "name": "",
-            "url": "https://test.ton.org/testnet/"
-        }
-    ],
     "socials": [
         {
             "name": "Twitter",
@@ -23,5 +17,5 @@
             "handle": ""
         }
     ],
-    "data_source": "crowd"
+    "explorer": "https://test.ton.org/testnet/"
 }

@@ -2,12 +2,6 @@
     "name": "STASIS EURO",
     "website": "https://stasis.net",
     "short_description": "Produced by STASIS, EURS was developed to tokenize the traditional fiat asset known around the world as the Euro.",
-    "explorers": [
-        {
-            "name": "Etherscan",
-            "url": "https://etherscan.io/token/0xdb25f211ab05b1c97d595516f45794528a807ad8"
-        }
-    ],
-    "data_source": "crowd",
-    "socials": []
+    "socials": [],
+    "explorer": "https://etherscan.io/token/0xdb25f211ab05b1c97d595516f45794528a807ad8"
 }
