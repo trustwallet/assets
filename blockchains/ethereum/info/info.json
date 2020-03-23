@@ -5,12 +5,6 @@
     "white_paper": "https://github.com/ethereum/wiki/wiki/White-Paper",
     "short_description": "Open source platform to write and distribute decentralized applications.",
     "description": "Open source platform to write and distribute decentralized applications.",
-    "explorers": [
-        {
-            "name": "Ethereum",
-            "url": "https://etherscan.io/"
-        }
-    ],
     "socials": [
         {
             "name": "Twitter",
@@ -23,5 +17,5 @@
             "handle": "ethereum"
         }
     ],
-    "data_source": "crowd"
+    "explorer": "https://etherscan.io/"
 }
