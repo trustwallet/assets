@@ -1,0 +1,21 @@
+{
+    "name": "Stellar",
+    "website": "https://stellar.org",
+    "source_code": "https://github.com/stellar",
+    "white_paper": "https://www.stellar.org/papers/stellar-consensus-protocol.pdf",
+    "short_description": "Stellar is an open platform for building financial products. It enables near instant payments, with almost zero fees, and a smart contract platform to create digital asset economy.",
+    "description": "The Stellar network is an open source, distributed, and community owned network used to facilitate cross-asset transfers of value. Stellar aims to help facilitate cross-asset transfer of value at a fraction of a penny while aiming to be an open financial system that gives people of all income levels access to low-cost financial services. Stellar can handle exchanges between fiat-based currencies and between cryptocurrencies. Stellar.org, the organization that supports Stellar, is centralized like XRP and meant to handle cross platform transactions and micro transactions like XRP. However, unlike Ripple, Stellar.org is non-profit and their platform itself is open source and decentralized. Through the use of its intermediary currency Lumens (XLM), a user can send any currency that they own to anyone else in a different currency.",
+    "socials": [
+        {
+            "name": "Twitter",
+            "url": "https://twitter.com/StellarOrg",
+            "handle": "StellarOrg"
+        },
+        {
+            "name": "Reddit",
+            "url": "https://reddit.com/r/stellar",
+            "handle": "stellar"
+        }
+    ],
+    "explorer": "https://dashboard.stellar.org/"
+}
