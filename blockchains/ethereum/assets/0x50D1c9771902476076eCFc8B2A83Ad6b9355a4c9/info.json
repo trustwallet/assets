@@ -2,11 +2,5 @@
     "name": "FTX Token",
     "website": "https://ftx.com",
     "short_description": "FTX’s leveraged tokens aim to provide a clean, automated way for users to get leverage. FTT is the FTX ecosystem utility token. ",
-    "explorers": [
-        {
-            "name": "Etherscan",
-            "url": "https://etherscan.io/token/0x50d1c9771902476076ecfc8b2a83ad6b9355a4c9"
-        }
-    ],
-    "data_source": "crowd"
+    "explorer": "https://etherscan.io/token/0x50d1c9771902476076ecfc8b2a83ad6b9355a4c9"
 }
