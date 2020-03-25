@@ -175,7 +175,7 @@ export const calculateAspectRatioFit = (srcWidth: number, srcHeight: number, max
  }
 
 export function getMoveCommandFromTo(oldName: string, newName: string): string {
-    return `git mv ${oldName} ${newName}-temp && git mv ${newName}-temp ${newName}`
+    return `git mv -f ${oldName} ${newName}-temp && git mv -f ${newName}-temp ${newName}`
 }
 
 export function execRename(path: string, command: string): string {
