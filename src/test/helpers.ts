@@ -39,8 +39,8 @@ export const logo = `${logoName}.${logoExtension}`
 export const info = `${infoName}.${jsonExtension}`
 
 export const root = './'
-export const chainsFolderPath = './blockchains'
-export const pricingFolderPath = './pricing'
+export const chainsFolderPath = path.join(process.cwd(), '/blockchains')
+export const pricingFolderPath = path.join(process.cwd(), '/pricing')
 export const getChainLogoPath = (chain: string): string => `${chainsFolderPath}/${chain}/info/${logo}`
 export const getChainInfoPath = (chain: string): string => `${chainsFolderPath}/${chain}/info/${info}`
 export const getChainAssetInfoPath = (chain: string, address: string): string => `${chainsFolderPath}/${chain}/assets/${address}/${info}`
