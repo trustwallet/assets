@@ -39,8 +39,8 @@ export const logo = `${logoName}.${logoExtension}`
 export const info = `${infoName}.${jsonExtension}`
 
 export const root = './'
-export const chainsFolderPath = './blockchains'
-export const pricingFolderPath = './pricing'
+export const chainsFolderPath = path.join(process.cwd(), '/blockchains')
+export const pricingFolderPath = path.join(process.cwd(), '/pricing')
 export const getChainLogoPath = (chain: string): string => `${chainsFolderPath}/${chain}/info/${logo}`
 export const getChainInfoPath = (chain: string): string => `${chainsFolderPath}/${chain}/info/${info}`
 export const getChainAssetInfoPath = (chain: string, address: string): string => `${chainsFolderPath}/${chain}/assets/${address}/${info}`
@@ -175,11 +175,11 @@ export const calculateAspectRatioFit = (srcWidth: number, srcHeight: number, max
  }
 
 export function getMoveCommandFromTo(oldName: string, newName: string): string {
-    return `git mv -f ${oldName} ${newName}-temp && git mv -f ${newName}-temp ${newName}`
+    return `git mv ${oldName} ${newName}-temp && git mv ${newName}-temp ${newName}`
 }
 
-export function execRename(path: string, command: string): string {
-    return execSync(`cd ${path} && ${command}`, {encoding: "utf-8"})
+export function execRename(path: string, command: string) {
+    execSync(`cd ${path} && ${command}`, {encoding: "utf-8"})
 }
 
 export const isValidatorHasAllKeys = (val: ValidatorModel): boolean => {
