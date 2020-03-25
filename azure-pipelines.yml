@@ -49,15 +49,15 @@ steps:
         git config --global user.name "TrustWalletBot"
       
 
-  # - script: sudo npm run checksum:erc20
-  #   workingDirectory: $(Build.SourcesDirectory)
-  #   displayName: Run checksum script
+  - script: sudo npm run checksum:erc20
+    workingDirectory: $(Build.SourcesDirectory)
+    displayName: Run checksum script
 
-  # - task: Bash@3
-  #   displayName: Commit result of checksum script
-  #   inputs:
-  #     targetType: filePath
-  #     filePath: ./script/commit.sh
+  - task: Bash@3
+    displayName: Commit result of checksum script
+    inputs:
+      targetType: filePath
+      filePath: ./script/commit.sh
     
   - script: npm t
     displayName: Run tests
