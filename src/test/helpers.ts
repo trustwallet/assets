@@ -178,8 +178,8 @@ export function getMoveCommandFromTo(oldName: string, newName: string): string {
     return `git mv ${oldName} ${newName}-temp && git mv ${newName}-temp ${newName}`
 }
 
-export function execRename(path: string, command: string) {
-    execSync(`cd ${path} && ${command}`, {encoding: "utf-8"})
+export function execRename(path: string, command: string): string {
+    return execSync(`cd ${path} && ${command}`, {encoding: "utf-8"})
 }
 
 export const isValidatorHasAllKeys = (val: ValidatorModel): boolean => {
