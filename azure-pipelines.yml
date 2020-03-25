@@ -49,7 +49,7 @@ steps:
         git config --global user.name "TrustWalletBot"
       
 
-  - script: sudo npm run checksum:erc20
+  - script: sudo npm run checksum
     workingDirectory: $(Build.SourcesDirectory)
     displayName: Run checksum script
 
