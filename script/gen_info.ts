@@ -20,7 +20,7 @@ const dafaultInfoTemplate: InfoList =
     "source_code": "",
     "whitepaper": "",
     "short_description": "",
-    "explorers": "",
+    "explorer": "",
     "socials": [
         {
             "name": "Twitter",
