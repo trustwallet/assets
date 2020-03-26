@@ -11,7 +11,7 @@ export interface InfoList {
     source_code: string;
     whitepaper: string;
     short_description: string;
-    explorers: string;
+    explorer: string;
     socials: Social[];
     details: Detail[];
   }
