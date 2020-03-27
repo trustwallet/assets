@@ -8,14 +8,14 @@
     "test": "npm run cleanup && jest",
     "cleanup": "find ./.. -iname '.DS_Store' -type f -delete",
     "update:bep2": "npm run cleanup && node ./script/updateBEP2",
-    "checksum:erc20": "npm run cleanup && ts-node ./script/erc20_to_checksum",
+    "checksum": "npm run cleanup && ts-node ./script/erc20_to_checksum",
     "format:all": "npm run cleanup && ts-node ./script/format_files_name",
     "arrange:all": "npm run cleanup && ts-node ./script/arrange_files",
     "gen:list": "npm run cleanup && ts-node ./script/gen_list",
     "gen:info": "npm run cleanup && ts-node ./script/gen_info",
     "resize": "npm run cleanup && ts-node ./script/resize_images",
     "map:cmc": "ts-node ./pricing/coinmarketcap/script",
-    "magic": "npm run update:bep2 && npm run checksum:erc20 && npm run resize && npm run gen:list && npm t"
+    "magic": "npm run update:bep2 && npm run checksum && npm run resize && npm run gen:list && npm t"
   },
   "repository": {
     "type": "git",
