@@ -1,0 +1,21 @@
+{
+    "name": "Zcash",
+    "website": "https://z.cash",
+    "source_code": "https://github.com/zcash/zcash",
+    "white_paper": "https://github.com/zcash/zips/blob/master/protocol/protocol.pdf",
+    "short_description": "Zcash is a decentralized and open-source cryptocurrency that provides strong privacy protections. Shielded transactions hide the sender, recipient, and value on the blockchain.",
+    "description": "Launched in 2016 by Zooko Wilcox-O’Hearn and based on the Zerocoin protocol, Zcash (ZEC) is a decentralized and open-source privacy-focused cryptocurrency that enables selective transparency of transactions. Zcash transactions can either be transparent or shielded through a zero-knowledge proof called zk-SNARKs. This allows the network to maintain a secure ledger of balances without disclosing the parties or amounts involved. Instead of publishing spend-authority and transaction values, the transaction metadata is encrypted and zk-SNARKs are used to prove that nobody is being dishonest.",
+    "socials": [
+        {
+            "name": "Twitter",
+            "url": "https://twitter.com/electriccoinco",
+            "handle": "electriccoinco"
+        },
+        {
+            "name": "Reddit",
+            "url": "https://www.reddit.com/r/zec/",
+            "handle": ""
+        }
+    ],
+    "explorer": "https://explorer.zcha.in"
+}
