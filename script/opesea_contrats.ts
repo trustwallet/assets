@@ -11,10 +11,10 @@ export const getOpenseaCollectionAddresses = async () => {
 
     while(true) {
         const url = `https://api.opensea.io/api/v1/collections?limit=${limit}&offset=${offset}`
+        console.log({url})
         const collections = await axios.get(url)
             .then(res => res.data.collections)
             .catch(e => console.log(e.message))
-
         collections.forEach(c => {
             c.primary_asset_contracts.forEach(a => {
                 const checksum = toChecksum(a.address)
