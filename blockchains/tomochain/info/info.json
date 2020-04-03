@@ -1,0 +1,21 @@
+{
+    "name": "TomoChain",
+    "website": "https://tomochain.com",
+    "source_code": "https://github.com/tomochain",
+    "white_paper": "https://tomochain.com/docs/technical-whitepaper--1.0.pdf",
+    "short_description": "TomoChain is a scalable blockchain powered via Proof-of-Stake Voting consensus and used commercially by companies globally.",
+    "description": "TomoChain (TOMO) bills itself as a solution to the scalability problem on blockchain platforms. TomoChain reportedly features a 150-Masternodes architecture with Proof of Stake Voting (POSV) consensus for near-zero fees and instant transaction confirmations. Security, stability, and chain finality are reportedly guaranteed via techniques such as double validation, staking via smart-contracts, and uniform randomization processes.\r\n\r\nTomoChain supports all EVM-compatible smart-contracts, protocols, and atomic cross-chain token transfers. Scaling techniques such as sharding, EVM parallelisation, private-chain generation, hardware integration will be continuously researched and integrated into TomoChain. The project aims to become 'an ideal scalable smart-contract public blockchain for decentralized apps, token issuance, and token integration for small and big businesses'.",
+    "socials": [
+        {
+            "name": "Twitter",
+            "url": "https://twitter.com/TomoChainANN",
+            "handle": "TomoChainANN"
+        },
+        {
+            "name": "Reddit",
+            "url": "https://reddit.com/r/Tomochain",
+            "handle": "Tomochain"
+        }
+    ],
+    "explorer": "https://scan.tomochain.com"
+}

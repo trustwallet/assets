@@ -1,0 +1,21 @@
+{
+    "name": "Aeternity",
+    "website": "https://aeternity.com",
+    "source_code": "https://github.com/aeternity",
+    "white_paper": "https://github.com/aeternity/white-paper/blob/master/paper.pdf",
+    "short_description": "Aeternity is a blockchain platform with turing complete smart contracts. The platform implemented decentralized oracles to make it possible for decentralized applications to use real world data.",
+    "description": "Aeternity (AE) is a blockchain platform that focuses on high bandwidth transacting, purely-functional smart contracts, and decentralized oracles. It was founded in 2017, and seeks to eliminate inefficiencies in the crypto market by increasing scalability of smart contracts and dApps, sharding, and off-chain contract execution. The Turing-complete smart contracts on the Aeternity chain allow for transaction execution without third parties or intermediaries. Aeternity also has state channels to enable off-chain smart contract settlements which only touch the blockchain should a disagreement in the contract arise, acting as a self-arbitrating crypto court. The Aeternity blockchain is also built upon state-of-the-art cryptographic data structures which give rise to robust efficiency, strong security, and the elimination “single point of failure” (SPOF) issues.",
+    "socials": [
+        {
+            "name": "Twitter",
+            "url": "https://twitter.com/aeternity",
+            "handle": "aeternity"
+        },
+        {
+            "name": "Reddit",
+            "url": "https://www.reddit.com/r/Aeternity",
+            "handle": "Aeternity"
+        }
+    ],
+    "explorer": "https://www.aeknow.org/"
+}
