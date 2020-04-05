@@ -23,7 +23,7 @@ formatWhiteBlackList()
 formatValidators()
 
 function formatWhiteBlackList() {
-    ethSidechains.forEach(async chain => {
+    ethSidechains.concat(Tron, Terra).forEach(async chain => {
         const assets = readDirSync(getChainAssetsPath(chain))
     
         const whitelistPath = getChainWhitelistPath(chain)
