@@ -11,50 +11,64 @@ import {
     isChainBlacklistExistSync,
     getChainWhitelistPath,
     getChainBlacklistPath,
+    getChainValidatorsListPath,
     writeFileSync,
     sortDesc,
     getUnique,
-    mapList
+    mapList,
+    stakingChains
 } from '../src/test/helpers'
 
-const assetsChains = ethSidechains.concat([Terra, Tron])
+formatWhiteBlackList()
+formatValidators()
 
-assetsChains.forEach(async chain => {
-    const assets = readDirSync(getChainAssetsPath(chain))
+function formatWhiteBlackList() {
+    ethSidechains.concat(Tron, Terra).forEach(async chain => {
+        const assets = readDirSync(getChainAssetsPath(chain))
+    
+        const whitelistPath = getChainWhitelistPath(chain)
+        const blacklistPath = getChainBlacklistPath(chain)
 
-    const whitelistPath = getChainWhitelistPath(chain)
-    const blacklistPath = getChainBlacklistPath(chain)
+        //Create inital lists if they do not exists 
+        if (!isChainWhitelistExistSync(chain)) {
+            writeFileSync(whitelistPath, `[]`)
+        }
+    
+        if (!isChainBlacklistExistSync(chain)) {
+            writeFileSync(blacklistPath, `[]`)
+        }
+    
+        const currentWhitelist = JSON.parse(readFileSync(whitelistPath))
+        const currentBlacklist = JSON.parse(readFileSync(blacklistPath))
+    
+        let newBlackList = []
+        // Some chains required pulling lists from other sources
+        switch (chain) {
+            case Ethereum:
+                const nftList = await getOpenseaCollectionAddresses()
+                newBlackList = currentBlacklist.concat(nftList)
+                break;
+            default:
+                newBlackList = newBlackList.concat(currentBlacklist)
+                break;
+        }
+     
+        const removedAssets = getRemovedAddressesFromAssets(assets, currentWhitelist)
+        newBlackList = newBlackList.concat(removedAssets)
+    
+        fs.writeFileSync(whitelistPath, JSON.stringify(sortDesc(assets), null, 4))
+        fs.writeFileSync(blacklistPath, JSON.stringify(getUnique(sortDesc(newBlackList)), null, 4))
+    })
+}
 
-    //Create inital lists if they do not exists 
-    if (!isChainWhitelistExistSync(chain)) {
-        writeFileSync(whitelistPath, `[]`)
-    }
+function formatValidators() {
+    stakingChains.forEach(chain => {    
+        const validatorsPath = getChainValidatorsListPath(chain)
+        const currentValidatorsList = JSON.parse(readFileSync(validatorsPath))
 
-    if (!isChainBlacklistExistSync(chain)) {
-        writeFileSync(blacklistPath, `[]`)
-    }
-
-    const currentWhitelist = JSON.parse(readFileSync(whitelistPath))
-    const currentBlacklist = JSON.parse(readFileSync(blacklistPath))
-
-    let newBlackList = []
-    // Some chains required pulling lists from other sources
-    switch (chain) {
-        case Ethereum:
-            const nftList = await getOpenseaCollectionAddresses()
-            newBlackList = currentBlacklist.concat(nftList)
-            break;
-        default:
-            newBlackList = newBlackList.concat(currentBlacklist)
-            break;
-    }
- 
-    const removedAssets = getRemovedAddressesFromAssets(assets, currentWhitelist)
-    newBlackList = newBlackList.concat(removedAssets)
-
-    fs.writeFileSync(whitelistPath, JSON.stringify(sortDesc(assets), null, 4))
-    fs.writeFileSync(blacklistPath, JSON.stringify(getUnique(sortDesc(newBlackList)), null, 4))
-})
+        fs.writeFileSync(validatorsPath, JSON.stringify(currentValidatorsList, null, 4))
+    })
+}
 
 function getRemovedAddressesFromAssets(assets: string[], whiteList: string[]): string[] {
     const mappedAssets = mapList(assets)
