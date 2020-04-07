@@ -28,7 +28,7 @@ function formatWhiteBlackList() {
     
         const whitelistPath = getChainWhitelistPath(chain)
         const blacklistPath = getChainBlacklistPath(chain)
-        const validatorsPath = getChainValidatorsListPath(chain)
+
         //Create inital lists if they do not exists 
         if (!isChainWhitelistExistSync(chain)) {
             writeFileSync(whitelistPath, `[]`)
