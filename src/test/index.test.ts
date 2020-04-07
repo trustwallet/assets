@@ -18,7 +18,7 @@ import {
     isChecksum,
     isPathDir,
     getBinanceBEP2Symbols,
-    isTRC10, isTRC20,
+    isTRC10, isTRC20, isWavesAddress,
     isLogoOK,
     getChainWhitelistPath,
     getChainBlacklistPath,
@@ -28,7 +28,10 @@ import {
     isValidatorHasAllKeys,
     getChainAssetPath,
     rootDirAllowedFiles,
-    assetFolderAllowedFiles
+    assetFolderAllowedFiles,
+    stakingChains,
+    Kava,
+    Terra
 } from "./helpers"
 import { ValidatorModel } from "./models";
 import { getHandle } from "../../script/gen_info";
@@ -134,17 +137,18 @@ describe(`Test "blockchains" folder`, () => {
     })
 
     describe("Check Staking chains", () => {
-        const stakingChains = [Tezos, Cosmos, IoTeX, Tron, Waves]
-
         test("Make sure tests added for new staking chain", () => {
-            expect(stakingChains.length).toBe(5)
+            expect(stakingChains.length).toBe(7)
         })
 
         stakingChains.forEach(chain => {
-            const validatorsList = JSON.parse(readFileSync(getChainValidatorsListPath(chain)))
-            test(`Make sure ${chain} validators list has correct structure`, () => {
+            const listPath = getChainValidatorsListPath(chain)
+            const validatorsList = JSON.parse(readFileSync(listPath))
+
+            test(`Chain ${chain} validator must have correct structure and valid JSON format`, () => {
                 validatorsList.forEach((val: ValidatorModel) => {
-                    expect(isValidatorHasAllKeys(val), `Come key and/or type missing for validator ${JSON.stringify(val)}`).toBe(true)
+                    expect(isValidatorHasAllKeys(val), `Some key and/or type missing for validator ${JSON.stringify(val)}`).toBe(true)
+                    expect(isValidJSON(listPath), `Not valid json file at path ${listPath}`).toBe(true)
                 })
             })
 
@@ -164,15 +168,22 @@ describe(`Test "blockchains" folder`, () => {
                 case Cosmos:
                     testCosmosValidatorsAddress(chainValidatorsAssetsList)
                     break;
+                case Kava:
+                    testKavaValidatorsAddress(chainValidatorsAssetsList)
+                    break;
+                case Terra:
+                    testTerraValidatorsAddress(chainValidatorsAssetsList)
+                    break;
                 case Tezos:
                     testTezosValidatorsAssets(chainValidatorsAssetsList)
                     break;
                 case Tron:
                     testTronValidatorsAssets(chainValidatorsAssetsList)
                     break;
-                // TODO Add LOOM
-                // TODO Add Waves
-                // TODO Add IoTex
+                case Waves:
+                    testWavesValidatorsAssets(chainValidatorsAssetsList)
+                    break;
+                // TODO Add IoTex when taking suported by Trust
                 default:
                     break;
             }
@@ -194,7 +205,7 @@ describe(`Test "blockchains" folder`, () => {
     })
 })
 
-function testTezosValidatorsAssets(assets) {
+function testTezosValidatorsAssets(assets: string[]) {
     test("Tezos assets must be correctly formated tz1 address", () => {
         assets.forEach(addr => {
             expect(eztz.crypto.checkAddress(addr), `Ivalid Tezos address: ${addr}`).toBe(true)
@@ -202,19 +213,46 @@ function testTezosValidatorsAssets(assets) {
     })
 }
 
-function testTronValidatorsAssets(assets) {
+function testTronValidatorsAssets(assets: string[]) {
     test("TRON assets must be correctly formated", () => {
         assets.forEach(addr => {
             expect(isTRC20(addr), `Address ${addr} should be TRC20`).toBe(true)
         })
     })
 }
+function testWavesValidatorsAssets(assets: string[]) {
+    test("WAVES assets must have correct format", () => {
+        assets.forEach(addr => {
+            expect(isWavesAddress(addr), `Address ${addr} should be WAVES formated`).toBe(true)
+        })
+    })
+}
 
-function testCosmosValidatorsAddress(assets) {
-    test("Cosmos assets must be correctly formated", () => {
+function testCosmosValidatorsAddress(assets: string[]) {
+    test("Cosmos assets must have correct format", () => {
         assets.forEach(addr => {
             expect(addr.startsWith("cosmosvaloper1"), `Address ${addr} should start from "cosmosvaloper1"`).toBe(true)
             expect(addr.length, `Address ${addr} should have length 52`).toBe(52)
+            expect(isLowerCase(addr), `Address ${addr} should be in lowercase`).toBe(true)
+        })
+    })
+}
+
+function testKavaValidatorsAddress(assets: string[]) {
+    test("Kava assets must have correct format", () => {
+        assets.forEach(addr => {
+            expect(addr.startsWith("kavavaloper1"), `Address ${addr} should start from "kavavaloper1"`).toBe(true)
+            expect(addr.length, `Address ${addr} should have length 50`).toBe(50)
+            expect(isLowerCase(addr), `Address ${addr} should be in lowercase`).toBe(true)
+        })
+    })
+}
+
+function testTerraValidatorsAddress(assets: string[]) {
+    test("Terra assets must have correct format", () => {
+        assets.forEach(addr => {
+            expect(addr.startsWith("terravaloper1"), `Address ${addr} should start from "terravaloper1"`).toBe(true)
+            expect(addr.length, `Address ${addr} should have length 51`).toBe(51)
             expect(isLowerCase(addr), `Address ${addr} should be in lowercase`).toBe(true)
         })
     })
@@ -338,7 +376,6 @@ describe("Test coins info.json file", () => {
 });
 
 describe("Test all JSON files to have valid content", () => {
-
     const files = [
         ...findFiles(chainsFolderPath, 'json'),
         ...findFiles(pricingFolderPath, 'json')
