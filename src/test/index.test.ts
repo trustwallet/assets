@@ -18,7 +18,7 @@ import {
     isChecksum,
     isPathDir,
     getBinanceBEP2Symbols,
-    isTRC10, isTRC20, isWavesAddress, isSolanaAddress,
+    isTRC10, isTRC20, isWavesAddress,
     isLogoOK,
     getChainWhitelistPath,
     getChainBlacklistPath,
@@ -31,8 +31,7 @@ import {
     assetFolderAllowedFiles,
     stakingChains,
     Kava,
-    Terra,
-    Solana
+    Terra
 } from "./helpers"
 import { ValidatorModel } from "./models";
 import { getHandle } from "../../script/gen_info";
@@ -184,9 +183,6 @@ describe(`Test "blockchains" folder`, () => {
                 case Waves:
                     testWavesValidatorsAssets(chainValidatorsAssetsList)
                     break;
-                // case Solana:
-                //     testSolanaValidatorsAssets(chainValidatorsAssetsList)
-                //     break;
                 // TODO Add IoTex when taking suported by Trust
                 default:
                     break;
@@ -228,14 +224,6 @@ function testWavesValidatorsAssets(assets: string[]) {
     test("WAVES assets must have correct format", () => {
         assets.forEach(addr => {
             expect(isWavesAddress(addr), `Address ${addr} should be WAVES formated`).toBe(true)
-        })
-    })
-}
-
-function testSolanaValidatorsAssets(assets: string[]) {
-    test("Solana assets must have correct format", () => {
-        assets.forEach(addr => {
-            expect(isSolanaAddress(addr), `Address ${addr} should be Solana formated`).toBe(true)
         })
     })
 }

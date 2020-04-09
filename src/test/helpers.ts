@@ -24,7 +24,6 @@ export const Tron = getChainName(CoinType.tron)
 export const Kava = "kava" // TODO add to kava to tw types
 export const Wanchain = getChainName(CoinType.wanchain)
 export const Waves = getChainName(CoinType.waves)
-export const Solana = "solana"
 
 export const ethSidechains = [Ethereum, Classic, POA, TomoChain, GoChain, Wanchain, ThunderCore]
 export const stakingChains = [Tezos, Cosmos, IoTeX, Tron, Waves, Kava, Terra]
@@ -108,11 +107,6 @@ export const isWavesAddress = (address: string) => {
     address.startsWith("3P") &&
     isLowerCase(address) == false &&
     isUpperCase(address) == false
-}
-
-export const isSolanaAddress = (address: string) => {
-    // return address.length == 44
-    return true
 }
 
 export const isPathDir = (path: string): boolean => {
