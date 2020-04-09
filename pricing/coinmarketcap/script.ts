@@ -104,17 +104,22 @@ async function processCoin(coin) {
             case PlatformType.Ethereum:
                 // log(`Ticker ${name}(${symbol}) is a token with address ${address} and CMC id ${id}`)
                 if (platform.token_address) {
-                    const checksum = toChecksum(platform.token_address)
-                    if (permanentRemove.indexOf(checksum) == -1) {
-                        log(`Added ${checksum}`)
-                        addToContractsList({
-                            coin: 60,
-                            type: typeToken,
-                            token_id: checksum,
-                            id
-                        })
+                    try {
+                        const checksum = toChecksum(platform.token_address)
+                        if (permanentRemove.indexOf(checksum) == -1) {
+                            log(`Added ${checksum}`)
+                            addToContractsList({
+                                coin: 60,
+                                type: typeToken,
+                                token_id: checksum,
+                                id
+                            })
+                        }
+                        await getImageIfMissing(getChainName(CoinType.ethereum), checksum, id)
+                    } catch (error) {
+                        console.log(`Etheruem platform error`, error)
+                        break
                     }
-                    await getImageIfMissing(getChainName(CoinType.ethereum), checksum, id)
                 }
                 break
             case PlatformType.Binance:

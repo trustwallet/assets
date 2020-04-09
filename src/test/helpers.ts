@@ -21,10 +21,13 @@ export const ThunderCore = getChainName(CoinType.thundertoken)
 export const Terra = getChainName(CoinType.terra)
 export const TomoChain = getChainName(CoinType.tomochain)
 export const Tron = getChainName(CoinType.tron)
+export const Kava = "kava" // TODO add to kava to tw types
 export const Wanchain = getChainName(CoinType.wanchain)
 export const Waves = getChainName(CoinType.waves)
+export const Solana = "solana"
 
 export const ethSidechains = [Ethereum, Classic, POA, TomoChain, GoChain, Wanchain, ThunderCore]
+export const stakingChains = [Tezos, Cosmos, IoTeX, Tron, Waves, Kava, Terra]
 
 export const logoName = `logo`
 export const infoName = `info`
@@ -92,12 +95,24 @@ export const getBinanceBEP2Symbols = async () => axios.get(`https://dex-atlantic
 export const getFileName = (fileName: string): string => path.basename(fileName, path.extname(fileName))
 export const getFileExt = (name: string): string => name.slice((Math.max(0, name.lastIndexOf(".")) || Infinity) + 1)
 
-export const isTRC10 = (string: string): boolean => (/^\d+$/.test(string))
-export const isTRC20 = address => {
+export const isTRC10 = (str: string): boolean => (/^\d+$/.test(str))
+export const isTRC20 = (address: string) => {
     return address.length == 34 &&
     address.startsWith("T") &&
     isLowerCase(address) == false &&
     isUpperCase(address) == false
+}
+
+export const isWavesAddress = (address: string) => {
+    return address.length == 35 &&
+    address.startsWith("3P") &&
+    isLowerCase(address) == false &&
+    isUpperCase(address) == false
+}
+
+export const isSolanaAddress = (address: string) => {
+    // return address.length == 44
+    return true
 }
 
 export const isPathDir = (path: string): boolean => {
@@ -152,10 +167,10 @@ export const calculateAspectRatioFit = (srcWidth: number, srcHeight: number, max
     files.forEach( 
         function (file) {
             var newbase = path.join(base, file)
-            if ( fs.statSync(newbase).isDirectory()) {
+            if (fs.statSync(newbase).isDirectory()) {
                 result = findFiles(newbase, ext, fs.readdirSync(newbase), result)
             } else {
-                if ( file.substr(-1*(ext.length+1)) == '.' + ext) {
+                if (file.substr(-1*(ext.length+1)) == '.' + ext) {
                     result.push(newbase)
                 }
             }
