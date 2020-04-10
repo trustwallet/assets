@@ -1,14 +1,10 @@
 {
     "name": "Dash",
-    "website": "https://www.dash.org/",
+    "website": "https://dash.org/",
     "source_code": "https://github.com/dashpay/dash",
-    "whitepaper": "https://github.com/dashpay/dash/wiki/Whitepaper",
-    "explorers": [
-        {
-            "name": "Blockchair",
-            "url": "https://blockchair.com/dash"
-        }
-    ],
+    "white_paper": "https://github.com/dashpay/dash/wiki/Whitepaper",
+    "short_description": "Dash (DASH) is digital cash designed to offer financial freedom to everyone. Payments are instant, easy and secure, with near-zero fees.",
+    "description": "Dash (DASH) is digital cash designed to offer financial freedom to everyone. Payments are instant, easy and secure, with near-zero fees.",
     "socials": [
         {
             "name": "Twitter",
@@ -21,11 +17,5 @@
             "handle": "dashpay"
         }
     ],
-    "details": [
-        {
-            "language": "en",
-            "description": "Dash (DASH) is digital cash designed to offer financial freedom to everyone. Payments are instant, easy and secure, with near-zero fees."
-        }
-    ],
-    "data_source": "crowd"
+    "explorer": "https://blockchair.com/dash"
 }

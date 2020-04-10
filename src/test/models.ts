@@ -10,10 +10,10 @@ export interface InfoList {
     website: string;
     source_code: string;
     whitepaper: string;
-    explorers: Explorer[];
+    short_description: string;
+    explorer: string;
     socials: Social[];
     details: Detail[];
-    data_source: string;
   }
   
   interface Detail {
@@ -25,11 +25,6 @@ export interface InfoList {
     name: string;
     url: string;
     handle: string;
-  }
-  
-  interface Explorer {
-    name: string;
-    url: string;
   }
   
 // CoinmarketCap
