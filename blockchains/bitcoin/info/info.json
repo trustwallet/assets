@@ -1,0 +1,21 @@
+{
+    "name": "Bitcoin",
+    "website": "https://bitcoin.org",
+    "source_code": "https://github.com/bitcoin",
+    "white_paper": "https://bitcoin.org/bitcoin.pdf",
+    "short_description": "Bitcoin is a cryptocurrency and worldwide payment system. It is the first decentralized digital currency, as the system works without a central bank or single administrator.",
+    "description": "The theory behind Bitcoin was first described by Satoshi Nakomoto in a paper Bitcoin: A Peer to Peer Electronic Cash System published to a cryptographic mailing list on the 31st of October 2008. \n\nIn this paper, Satoshi described the protocol (Proof of Work) that would solve the double-spend problem inherent in non-physical (digital) forms of currency.\n\nThe first or Genesis block was mined by Satoshi on the 3rd of January 2009, with the text The Times 03/Jan/2009 Chancellor on brink of second bailout for banks written into the coinbase of the block to act both as a timestamp and a rebuke to the economic instability caused by the widespread practice of fractional reserve banking. The total supply of Bitcoins is capped at 21 million coins (roughly 18 million are currently in circulation), with each coin being divisible to the 8th decimal place, with a single unit of the smallest division (0.00000001 BTC) being known colloquially as a Satoshi (or sat). The software to run miners and wallets is open source and decentralized, meaning that the network is accessible to anyone with a computer and an internet connection. Transactions are validated and written into the blockchain by miners selected via the Proof of Work (SHA-256) protocol. The difficulty of the Proof of Work algorithm is adjusted every 2016 blocks (roughly 2 weeks) to maintain an average block time of roughly 10 minutes. New Bitcoins are created (minted) as a reward to the miner that mined the valid block, with the reward currently sitting at 12.5 Bitcoins per block. This block reward is halved every 210,000 blocks (roughly 4 years) until it reaches zero. This block reward serves as an economic incentive for the miners to continue securing the Bitcoin network.",
+    "socials": [
+        {
+            "name": "Twitter",
+            "url": "https://twitter.com/Bitcoin",
+            "handle": "Bitcoin"
+        },
+        {
+            "name": "Reddit",
+            "url": "https://reddit.com/r/Bitcoin",
+            "handle": "Bitcoin"
+        }
+    ],
+    "explorer": "https://blockchain.info"
+}
