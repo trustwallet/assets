@@ -55,6 +55,8 @@ export const minLogoHeight = 64
 export const maxLogoWidth = 512
 export const maxLogoHeight = 512
 
+export const maxAssetLogoSizeInKilobyte = 100
+
 export const getChainAssetPath = (chain: string, address: string) => `${getChainAssetsPath(chain)}/${address}`
 export const getChainAssetLogoPath = (chain: string, address: string) => `${getChainAssetsPath(chain)}/${address}/${logo}`
 export const getChainAssetFilesList = (chain: string, address: string) => readDirSync(getChainAssetPath(chain, address))
@@ -149,13 +151,22 @@ export const mapList = arr => {
 
 export const getImageDimentions = (path: string) => sizeOf(path)
 
-export const isLogoOK = (path: string): [boolean,  string] => {
+export function isLogoDimentionOK(path: string): [boolean,  string] {
     const { width, height } =  getImageDimentions(path)
     if (((width >= minLogoWidth && width <= maxLogoWidth) && (height >= minLogoHeight && height <= maxLogoHeight))) {
         return [true, '']
     } else {
         return [false, `Image at path ${path} must have dimensions: min:${minLogoWidth}x${minLogoHeight} and max:${maxLogoWidth}x${maxLogoHeight} insted ${width}x${height}`]
     }
+}
+
+export function isLogoSizeOK(path: string): [boolean, string, number] {
+    const sizeInKylobyte = getFileSizeInKilobyte(path)
+
+    if (sizeInKylobyte <= maxAssetLogoSizeInKilobyte) {
+        return [true, ``, sizeInKylobyte]
+    }
+    return [false, `Logo at path ${path} with size ${sizeInKylobyte} exceeded max allowed size ${maxAssetLogoSizeInKilobyte} kB`, sizeInKylobyte]
 }
 
 export const calculateAspectRatioFit = (srcWidth: number, srcHeight: number, maxWidth: number, maxHeight: number) => {
@@ -230,6 +241,8 @@ export function isAssetInfoHasAllKeys(path: string): boolean {
     
     return isKeysCorrentType
 }
+
+export const getFileSizeInKilobyte = (path: string): number => fs.statSync(path).size / 1000
 
 export const rootDirAllowedFiles = [
     ".github",
