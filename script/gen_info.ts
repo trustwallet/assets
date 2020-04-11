@@ -11,9 +11,9 @@ import {
     getChainAssetsPath,
     isPathExistsSync
 } from "../src/test/helpers"
-import { InfoList } from "../src/test/models";
+import { CoinInfoList } from "../src/test/models";
 
-const dafaultInfoTemplate: InfoList = 
+const dafaultInfoTemplate: CoinInfoList = 
 {
     "name": "",
     "website": "",
@@ -80,6 +80,6 @@ export function getHandle(url: string): string {
     return url.slice(url.lastIndexOf("/") + 1, url.length)
 }
 
-function writeToInfo(path: string, info: InfoList) {
+function writeToInfo(path: string, info: CoinInfoList) {
     writeFileSync(path, JSON.stringify(info, null, 4))
 }
