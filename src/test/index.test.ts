@@ -1,41 +1,44 @@
 const eztz = require('eztz-lib')
 
 import {
-    Binance, Cosmos, Tezos, Tron, IoTeX, Waves,
-    ethSidechains,
+    Binance, Cosmos, Tezos, Tron, IoTeX, Waves, Kava, Terra,
+    assetFolderAllowedFiles,
     chainsFolderPath,
-    pricingFolderPath,
-    getChainLogoPath,
-    getChainAssetsPath,
+    ethSidechains,
+    findFiles,
+    getBinanceBEP2Symbols,
     getChainAssetLogoPath,
+    getChainAssetPath,
+    getChainAssetsPath,
+    getChainBlacklistPath,
+    getChainLogoPath,
+    getChainValidatorAssetLogoPath,
     getChainValidatorsAssets,
     getChainValidatorsListPath,
-    getChainValidatorAssetLogoPath,
-    readDirSync,
-    isPathExistsSync,
-    readFileSync,
-    isLowerCase,
-    isChecksum,
-    isPathDir,
-    getBinanceBEP2Symbols,
-    isTRC10, isTRC20, isWavesAddress, isSolanaAddress,
-    isLogoOK,
     getChainWhitelistPath,
-    getChainBlacklistPath,
-    mapList,
-    findFiles,
+    getChainAssetsList,
+    isChecksum,
+    isChainAssetInfoExistSync,
+    isLogoDimentionOK,
+    isLogoSizeOK,
+    isLowerCase,
+    isPathDir,
+    isPathExistsSync,
+    isTRC10, isTRC20, isWavesAddress,
     isValidJSON,
+    isAssetInfoOK,
     isValidatorHasAllKeys,
-    getChainAssetPath,
+    mapList,
+    pricingFolderPath,
+    readDirSync,
+    readFileSync,
     rootDirAllowedFiles,
-    assetFolderAllowedFiles,
     stakingChains,
-    Kava,
-    Terra,
     Solana
 } from "./helpers"
 import { ValidatorModel } from "./models";
 import { getHandle } from "../../script/gen_info";
+
 enum TickerType {
     Token = "token",
     Coin = "coin"
@@ -57,7 +60,7 @@ describe(`Test "blockchains" folder`, () => {
         foundChains.forEach(chain => {
             const chainLogoPath = getChainLogoPath(chain)
             expect(isPathExistsSync(chainLogoPath), `File missing at path "${chainLogoPath}"`).toBe(true)
-            const [isOk, msg] = isLogoOK(chainLogoPath)
+            const [isOk, msg] = isLogoDimentionOK(chainLogoPath)
             expect(isOk, msg).toBe(true)
         })
     })
@@ -88,24 +91,31 @@ describe(`Test "blockchains" folder`, () => {
     describe("Check Ethereum side-chain folders", () => {
         ethSidechains.forEach(chain => {
             test(`Test chain ${chain} folder`, () => {
-                const assetsPath = getChainAssetsPath(chain)
 
-                readDirSync(assetsPath).forEach(addr => {
-                    const assetPath = getChainAssetPath(chain, addr)
+                getChainAssetsList(chain).forEach(address => {
+                    const assetPath = getChainAssetPath(chain, address)
                     expect(isPathDir(assetPath), `Expect directory at path: ${assetPath}`).toBe(true)
 
-                    const checksum = isChecksum(addr)
+                    const checksum = isChecksum(address)
                     expect(checksum, `Expect asset at path ${assetPath} in checksum`).toBe(true)
                     
-                    const lowercase = isLowerCase(addr)
+                    const lowercase = isLowerCase(address)
                     if (lowercase) {
-                        expect(checksum, `Lowercase address ${addr} on chain ${chain} should be in checksum`).toBe(true)
+                        expect(checksum, `Lowercase address ${address} on chain ${chain} should be in checksum`).toBe(true)
                     }
 
-                    const assetLogoPath = getChainAssetLogoPath(chain, addr)
+                    const assetLogoPath = getChainAssetLogoPath(chain, address)
                     expect(isPathExistsSync(assetLogoPath), `Missing file at path "${assetLogoPath}"`).toBe(true)
-                    const [isOk, msg] = isLogoOK(assetLogoPath)
-                    expect(isOk, msg).toBe(true)
+
+                    const [isDimentionOK, dimensionMsg] = isLogoDimentionOK(assetLogoPath)
+                    expect(isDimentionOK, dimensionMsg).toBe(true)
+
+                    const [isLogoOK, sizeMsg] = isLogoSizeOK(assetLogoPath)
+                    expect(isLogoOK, sizeMsg).toBe(true)
+
+                    if (isChainAssetInfoExistSync(chain, address)) {
+                        expect(isAssetInfoOK(chain, address), `Asset file info at path ${assetPath} is not OK`).toBe(true)
+                    }
                 })
             })
         })
@@ -131,7 +141,7 @@ describe(`Test "blockchains" folder`, () => {
 
                 const assetsLogoPath = getChainAssetLogoPath(Tron, asset)
                 expect(isPathExistsSync(assetsLogoPath), `Missing file at path "${assetsLogoPath}"`).toBe(true)
-                const [isOk, msg] = isLogoOK(assetsLogoPath)
+                const [isOk, msg] = isLogoDimentionOK(assetsLogoPath)
                 expect(isOk, msg).toBe(true)
             })
         })
@@ -159,7 +169,7 @@ describe(`Test "blockchains" folder`, () => {
                     const path = getChainValidatorAssetLogoPath(chain, id)
                     expect(isPathExistsSync(path), `Chain ${chain} asset ${id} logo must be present at path ${path}`).toBe(true)
                     
-                    const [isOk, msg] = isLogoOK(path)
+                    const [isOk, msg] = isLogoDimentionOK(path)
                     expect(isOk, msg).toBe(true)
                 })
             })
@@ -232,13 +242,13 @@ function testWavesValidatorsAssets(assets: string[]) {
     })
 }
 
-function testSolanaValidatorsAssets(assets: string[]) {
-    test("Solana assets must have correct format", () => {
-        assets.forEach(addr => {
-            expect(isSolanaAddress(addr), `Address ${addr} should be Solana formated`).toBe(true)
-        })
-    })
-}
+// function testSolanaValidatorsAssets(assets: string[]) {
+//     test("Solana assets must have correct format", () => {
+//         assets.forEach(addr => {
+//             expect(isSolanaAddress(addr), `Address ${addr} should be Solana formated`).toBe(true)
+//         })
+//     })
+// }
 
 function testCosmosValidatorsAddress(assets: string[]) {
     test("Cosmos assets must have correct format", () => {

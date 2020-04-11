@@ -5,7 +5,15 @@ export interface ValidatorModel {
     website: string,
 }
 
-export interface InfoList {
+// Minimal property requirements for asset info file
+export interface AssetInfo {
+    explorer: string;
+    name: string;
+    short_description: string;
+    website: string;
+}
+
+export interface CoinInfoList {
     name: string;
     website: string;
     source_code: string;
