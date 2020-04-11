@@ -13,8 +13,7 @@ import {
     readFileSync,
     getChainValidatorsListPath,
     getChainValidatorAssetLogoPath,
-    isLogoSizeOK,
-    maxAsstLogoSizeInKilobyte as maxAssetLogoSizeInKilobyte,
+    maxAssetLogoSizeInKilobyte,
     getFileSizeInKilobyte
 } from "../src/test/helpers"
 const sharp = require('sharp')
