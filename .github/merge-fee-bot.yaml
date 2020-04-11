@@ -9,7 +9,7 @@ payments:
 # Message templates
 message:
     initial: |
-        In order to compensate for the efforts of adding a new asset, we kindly ask for a contribution.
+        Hi! In order to compensate for the efforts of adding a new asset, we kindly ask for a contribution.
         Please pay 1000 TWT to the address below (don't forget to set the *memo*). Alternatively, BNB is accepted as well.
         \n*You should pay*:
         $PAY_PARAMS
