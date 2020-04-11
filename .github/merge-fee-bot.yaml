@@ -9,13 +9,15 @@ payments:
 # Message templates
 message:
     initial: |
-        In order to compensate for the efforts of adding a new asset, we kindly ask for a contribution.
-        Please pay 1000 TWT to the address below (don't forget to set the *memo*!).
-        Trust Wallet Token is distributed to new users through the Referral program, see [TWT Referral Program](https://community.trustwallet.com/t/invite-a-friend-earn-trust-wallet-token-twt/4125)
-        Alternatively, BNB is accepted as well.
-        The team may waive the fee when justified.
-        \nPlease pay:
+        Hi! In order to compensate for the efforts of adding a new asset, we kindly ask for a contribution.
+        Please pay 1000 TWT to the address below (don't forget to set the *memo*). Alternatively, BNB is accepted as well.
+        \n*You should pay*:
         $PAY_PARAMS
+        \n*Notes*:
+        * Trust Wallet Tokens (TWT) are distributed to new users through our [Referral Program](https://community.trustwallet.com/t/invite-a-friend-earn-trust-wallet-token-twt/4125).
+        * Payment evaluation happens when there is activity on the PR -- write a comment if you have performed the payment.
+        * When payment is detected, an Accept Review is automatically placed on the PR, which is a condition for merge.  The merge is still done manually.
+        * We may waive the fee when justified.
     notReceived: Fee has not been received yet in full.\n\n$TX_LIST
     received: Fee payment received, thanks! \n\n$PAID_AMOUNT $PAID_CURRENCY\n\n$TX_LIST
     reviewed: Review is not needed any more, no more fee required.

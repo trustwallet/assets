@@ -12,11 +12,15 @@ import {
     writeFileSync,
     readFileSync,
     getChainValidatorsListPath,
-    getChainValidatorAssetLogoPath
+    getChainValidatorAssetLogoPath,
+    maxAssetLogoSizeInKilobyte,
+    getFileSizeInKilobyte
 } from "../src/test/helpers"
 const sharp = require('sharp')
 const bluebird = require("bluebird")
 const foundChains = readDirSync(chainsFolderPath)
+const tinify = require("tinify");
+tinify.key = "MXxhvmhjMkMM6CVccGrfyQm2RHpTf1G7"; // Key is free to get, gives 500 uploads per month
 
 function downsize() {
     console.log(`Start resizing`)
@@ -38,8 +42,16 @@ function downsize() {
                 if (isDownsizing(srcWidth, srcHeight)) {
                     await resize(srcWidth, srcHeight, assetPath)
                 }
+
+                // If size still > max limit, compress with tinypng
+                const sizeKilobyte = getFileSizeInKilobyte(assetPath)
+                if (sizeKilobyte > maxAssetLogoSizeInKilobyte) {
+                    await compressTinyPNG(assetPath)
+                    console.log(`Successfully resized iamge at path ${assetPath} from ${sizeKilobyte} => ${getFileSizeInKilobyte(assetPath)}`)
+                }
             })
         }
+
 
         // Check and resize if needed chain validators image
         const chainValidatorsList = getChainValidatorsListPath(chain)
@@ -51,6 +63,12 @@ function downsize() {
                     if (isDownsizing(srcWidth, srcHeight)) {
                         await resize(srcWidth, srcHeight, path)
                     }
+                
+                // If size still > max limit, compress with tinypng
+                const sizeKilobyte = getFileSizeInKilobyte(path)
+                if (sizeKilobyte > maxAssetLogoSizeInKilobyte) {
+                    await compressTinyPNG(path)
+                }
             })
         }
     })
@@ -69,6 +87,11 @@ async function resize(srcWidth: number, srcHeight: number, path: string) {
         .then(data => writeFileSync(path, data))
         .catch(e => {
             console.log(e.message)
-            // process.exit(1)
         })
+}
+
+export async function compressTinyPNG(path: string) {
+    const source = await tinify.fromFile(path);
+    await source.toFile(path);
+
 }
