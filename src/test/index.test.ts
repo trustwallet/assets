@@ -19,7 +19,8 @@ import {
     getChainAssetsList,
     isChecksum,
     isChainAssetInfoExistSync,
-    isLogoOK,
+    isLogoDimentionOK,
+    isLogoSizeOK,
     isLowerCase,
     isPathDir,
     isPathExistsSync,
@@ -59,7 +60,7 @@ describe(`Test "blockchains" folder`, () => {
         foundChains.forEach(chain => {
             const chainLogoPath = getChainLogoPath(chain)
             expect(isPathExistsSync(chainLogoPath), `File missing at path "${chainLogoPath}"`).toBe(true)
-            const [isOk, msg] = isLogoOK(chainLogoPath)
+            const [isOk, msg] = isLogoDimentionOK(chainLogoPath)
             expect(isOk, msg).toBe(true)
         })
     })
@@ -106,8 +107,11 @@ describe(`Test "blockchains" folder`, () => {
                     const assetLogoPath = getChainAssetLogoPath(chain, address)
                     expect(isPathExistsSync(assetLogoPath), `Missing file at path "${assetLogoPath}"`).toBe(true)
 
-                    const [isOk, msg] = isLogoOK(assetLogoPath)
-                    expect(isOk, msg).toBe(true)
+                    const [isDimentionOK, dimensionMsg] = isLogoDimentionOK(assetLogoPath)
+                    expect(isDimentionOK, dimensionMsg).toBe(true)
+
+                    const [isLogoOK, sizeMsg] = isLogoSizeOK(assetLogoPath)
+                    expect(isLogoOK, sizeMsg).toBe(true)
 
                     if (isChainAssetInfoExistSync(chain, address)) {
                         expect(isAssetInfoOK(chain, address), `Asset file info at path ${assetPath} is not OK`).toBe(true)
@@ -137,7 +141,7 @@ describe(`Test "blockchains" folder`, () => {
 
                 const assetsLogoPath = getChainAssetLogoPath(Tron, asset)
                 expect(isPathExistsSync(assetsLogoPath), `Missing file at path "${assetsLogoPath}"`).toBe(true)
-                const [isOk, msg] = isLogoOK(assetsLogoPath)
+                const [isOk, msg] = isLogoDimentionOK(assetsLogoPath)
                 expect(isOk, msg).toBe(true)
             })
         })
@@ -165,7 +169,7 @@ describe(`Test "blockchains" folder`, () => {
                     const path = getChainValidatorAssetLogoPath(chain, id)
                     expect(isPathExistsSync(path), `Chain ${chain} asset ${id} logo must be present at path ${path}`).toBe(true)
                     
-                    const [isOk, msg] = isLogoOK(path)
+                    const [isOk, msg] = isLogoDimentionOK(path)
                     expect(isOk, msg).toBe(true)
                 })
             })

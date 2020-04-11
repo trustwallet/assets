@@ -52,14 +52,13 @@
     "jest-expect-message": "^1.0.2",
     "nested-property": "^2.0.0",
     "sharp": "^0.25.2",
+    "tinify": "^1.6.0-beta.2",
     "ts-jest": "^25.3.1",
     "ts-node": "^8.8.2",
     "typescript": "^3.8.3",
     "web3": "^1.2.6"
   },
-  "dependencies": {
-    "npm-check-updates": "^4.1.1"
-  },
+  "dependencies": {},
   "jest": {
     "setupFilesAfterEnv": [
       "jest-expect-message"
