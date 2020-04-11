@@ -7,6 +7,7 @@ const web3 = new Web3('ws://localhost:8546');
 import { CoinTypeUtils, CoinType } from "@trustwallet/types";
 const sizeOf = require("image-size");
 const { execSync } = require('child_process');
+import { AssetInfo } from "../../src/test/models";
 
 export const getChainName = (id: CoinType): string =>  CoinTypeUtils.id(id) // 60 => ethereum
 export const Binance = getChainName(CoinType.binance)
@@ -57,6 +58,7 @@ export const maxLogoHeight = 512
 export const getChainAssetPath = (chain: string, address: string) => `${getChainAssetsPath(chain)}/${address}`
 export const getChainAssetLogoPath = (chain: string, address: string) => `${getChainAssetsPath(chain)}/${address}/${logo}`
 export const getChainAssetFilesList = (chain: string, address: string) => readDirSync(getChainAssetPath(chain, address))
+export const getChainAssetsList = (chain: string): string[] => readDirSync(getChainAssetsPath(chain))
 export const getChainValidatorsPath = (chain: string): string => `${chainsFolderPath}/${chain}/validators`
 export const getChainValidatorsAssets = (chain: string): string[] => readDirSync(getChainValidatorsAssetsPath(chain))
 export const getChainValidatorsListPath = (chain: string): string => `${(getChainValidatorsPath(chain))}/list.${jsonExtension}`
@@ -83,6 +85,7 @@ export const isPathExistsSync = (path: string): boolean => fs.existsSync(path)
 export const isChainWhitelistExistSync = (chain: string): boolean => isPathExistsSync(getChainWhitelistPath(chain))
 export const isChainBlacklistExistSync = (chain: string): boolean => isPathExistsSync(getChainBlacklistPath(chain))
 export const isChainInfoExistSync = (chain: string): boolean => isPathExistsSync(getChainInfoPath(chain))
+export const isChainAssetInfoExistSync = (chain: string, address: string) => isPathExistsSync(getChainAssetInfoPath(chain, address))
 export const readFileSync = (path: string) => fs.readFileSync(path, 'utf8')
 export const writeFileSync = (path: string, str: string) => fs.writeFileSync(path, str)
 
@@ -90,7 +93,7 @@ export const isLowerCase = (str: string): boolean => str.toLowerCase() === str
 export const isUpperCase = (str: string): boolean => str.toUpperCase() === str
 export const isChecksum = (address: string): boolean => web3.utils.checkAddressChecksum(address)
 export const toChecksum = (address: string): string => web3.utils.toChecksumAddress(address)
-export const getBinanceBEP2Symbols = async () => axios.get(`https://dex-atlantic.binance.org/api/v1/tokens?limit=1000`).then(res => res.data.map(({symbol}) => symbol))
+export const getBinanceBEP2Symbols = async () => axios.get(`https://dex-atlantic.binance.org/api/v1/tokens?limit=1000`).then(res => res.data.map(({ symbol }) => symbol))
 
 export const getFileName = (fileName: string): string => path.basename(fileName, path.extname(fileName))
 export const getFileExt = (name: string): string => name.slice((Math.max(0, name.lastIndexOf(".")) || Infinity) + 1)
@@ -202,6 +205,30 @@ export const isValidatorHasAllKeys = (val: ValidatorModel): boolean => {
         && typeof val.name === "string"
         && typeof val.description === "string"
         && typeof val.website === "string"
+}
+
+export function isAssetInfoOK(chain: string, address: string): boolean {
+    if (isChainAssetInfoExistSync(chain, address)) {
+        const assetInfoPath = getChainAssetInfoPath(chain, address)
+        const isInfoOK = isValidJSON(assetInfoPath)
+        if (isInfoOK && isAssetInfoHasAllKeys(assetInfoPath)) {
+            return true
+        }
+
+        return false
+    }
+    return true
+}
+
+export function isAssetInfoHasAllKeys(path: string): boolean {
+    const info: AssetInfo = JSON.parse(readFileSync(path))
+
+    const isKeysCorrentType = typeof info.explorer === "string" && info.explorer != ""
+    && typeof info.name === "string" && info.name != ""
+    && typeof info.website === "string"
+    && typeof info.short_description === "string"
+    
+    return isKeysCorrentType
 }
 
 export const rootDirAllowedFiles = [

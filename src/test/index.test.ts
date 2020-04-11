@@ -1,41 +1,43 @@
 const eztz = require('eztz-lib')
 
 import {
-    Binance, Cosmos, Tezos, Tron, IoTeX, Waves,
-    ethSidechains,
+    Binance, Cosmos, Tezos, Tron, IoTeX, Waves, Kava, Terra,
+    assetFolderAllowedFiles,
     chainsFolderPath,
-    pricingFolderPath,
-    getChainLogoPath,
-    getChainAssetsPath,
+    ethSidechains,
+    findFiles,
+    getBinanceBEP2Symbols,
     getChainAssetLogoPath,
+    getChainAssetPath,
+    getChainAssetsPath,
+    getChainBlacklistPath,
+    getChainLogoPath,
+    getChainValidatorAssetLogoPath,
     getChainValidatorsAssets,
     getChainValidatorsListPath,
-    getChainValidatorAssetLogoPath,
-    readDirSync,
-    isPathExistsSync,
-    readFileSync,
-    isLowerCase,
-    isChecksum,
-    isPathDir,
-    getBinanceBEP2Symbols,
-    isTRC10, isTRC20, isWavesAddress, isSolanaAddress,
-    isLogoOK,
     getChainWhitelistPath,
-    getChainBlacklistPath,
-    mapList,
-    findFiles,
+    getChainAssetsList,
+    isChecksum,
+    isChainAssetInfoExistSync,
+    isLogoOK,
+    isLowerCase,
+    isPathDir,
+    isPathExistsSync,
+    isTRC10, isTRC20, isWavesAddress,
     isValidJSON,
+    isAssetInfoOK,
     isValidatorHasAllKeys,
-    getChainAssetPath,
+    mapList,
+    pricingFolderPath,
+    readDirSync,
+    readFileSync,
     rootDirAllowedFiles,
-    assetFolderAllowedFiles,
     stakingChains,
-    Kava,
-    Terra,
     Solana
 } from "./helpers"
 import { ValidatorModel } from "./models";
 import { getHandle } from "../../script/gen_info";
+
 enum TickerType {
     Token = "token",
     Coin = "coin"
@@ -88,24 +90,28 @@ describe(`Test "blockchains" folder`, () => {
     describe("Check Ethereum side-chain folders", () => {
         ethSidechains.forEach(chain => {
             test(`Test chain ${chain} folder`, () => {
-                const assetsPath = getChainAssetsPath(chain)
 
-                readDirSync(assetsPath).forEach(addr => {
-                    const assetPath = getChainAssetPath(chain, addr)
+                getChainAssetsList(chain).forEach(address => {
+                    const assetPath = getChainAssetPath(chain, address)
                     expect(isPathDir(assetPath), `Expect directory at path: ${assetPath}`).toBe(true)
 
-                    const checksum = isChecksum(addr)
+                    const checksum = isChecksum(address)
                     expect(checksum, `Expect asset at path ${assetPath} in checksum`).toBe(true)
                     
-                    const lowercase = isLowerCase(addr)
+                    const lowercase = isLowerCase(address)
                     if (lowercase) {
-                        expect(checksum, `Lowercase address ${addr} on chain ${chain} should be in checksum`).toBe(true)
+                        expect(checksum, `Lowercase address ${address} on chain ${chain} should be in checksum`).toBe(true)
                     }
 
-                    const assetLogoPath = getChainAssetLogoPath(chain, addr)
+                    const assetLogoPath = getChainAssetLogoPath(chain, address)
                     expect(isPathExistsSync(assetLogoPath), `Missing file at path "${assetLogoPath}"`).toBe(true)
+
                     const [isOk, msg] = isLogoOK(assetLogoPath)
                     expect(isOk, msg).toBe(true)
+
+                    if (isChainAssetInfoExistSync(chain, address)) {
+                        expect(isAssetInfoOK(chain, address), `Asset file info at path ${assetPath} is not OK`).toBe(true)
+                    }
                 })
             })
         })
@@ -232,13 +238,13 @@ function testWavesValidatorsAssets(assets: string[]) {
     })
 }
 
-function testSolanaValidatorsAssets(assets: string[]) {
-    test("Solana assets must have correct format", () => {
-        assets.forEach(addr => {
-            expect(isSolanaAddress(addr), `Address ${addr} should be Solana formated`).toBe(true)
-        })
-    })
-}
+// function testSolanaValidatorsAssets(assets: string[]) {
+//     test("Solana assets must have correct format", () => {
+//         assets.forEach(addr => {
+//             expect(isSolanaAddress(addr), `Address ${addr} should be Solana formated`).toBe(true)
+//         })
+//     })
+// }
 
 function testCosmosValidatorsAddress(assets: string[]) {
     test("Cosmos assets must have correct format", () => {
