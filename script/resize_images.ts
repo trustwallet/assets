@@ -25,6 +25,7 @@ tinify.key = "MXxhvmhjMkMM6CVccGrfyQm2RHpTf1G7"; // Key is free to get, gives 50
 function downsize() {
     console.log(`Start resizing`)
     bluebird.map(foundChains, async chain => {
+        console.log(`Resizing assets on chain ${chain}`)
         const chainLogoPath = getChainLogoPath(chain)
         const { width: srcWidth, heigth: srcHeight } = getImageDimentions(chainLogoPath)
         
@@ -71,6 +72,8 @@ function downsize() {
                 }
             })
         }
+
+        console.log(`   Resizing assets on chain ${chain} completed`)
     })
 }
 
