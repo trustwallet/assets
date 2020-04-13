@@ -1,24 +1,71 @@
 require 'find'
 require 'image_size'
+require 'json-schema'
 
 assets_folder = './blockchains'
 allowed_extensions = ['png', 'json']
+allowed_file_names = ['info', 'list', 'logo', 'whitelist', 'blacklist']
 
 # Failures
 
 Find.find(assets_folder) do |file|
   file_extension = File.extname(file).delete('.')
+  file_name = File.basename(file, File.extname(file))
 
-  if allowed_extensions.include? file_extension == false
+  # Skip if directory
+  if File.directory?(file)
+    next
+  end
+
+  if !allowed_extensions.include? file_extension
     fail("Extension not allowed for file: " + file)
+  end
+
+  if !allowed_file_names.include? file_name
+    fail("Filename not allowed for file: " + file)
   end
 
   # Validate JSON content
   if file_extension == 'json'
+    value = nil
     begin
-      JSON.parse(File.open(file).read)
+      value = JSON.parse(File.open(file).read)
     rescue JSON::ParserError, TypeError => e
       fail("Wrong JSON content in file: " + file)
+    end
+
+    # Validate info.json
+    if file_name == 'info'
+      schema = {
+        "type" => "object",
+        "required" => ["name", "website", "short_description", "explorer"],
+        "properties" => {
+          "name" => {"type" => "string"},
+          "website" => {"type" => "string"},
+          "short_description" => {"type" => "string"},
+          "explorer" => {"type" => "string"}
+        }
+      }
+      errors = JSON::Validator.fully_validate(schema, value)
+      errors.each { |error| message("#{error} in file #{file}") } 
+    end
+
+    # Validate list.json for validators
+    if file_name == 'list'
+      schema = {
+        "type" => "array",
+        "items": {
+          "properties": {
+              "id": { "type": "string" },
+              "name": { "type": "string" },
+              "description": { "type": "string" },
+              "website": { "type": "string" }
+          },
+          "required": ["id", "name", "description", "website"]
+        }
+      }
+      errors = JSON::Validator.fully_validate(schema, value)
+      errors.each { |error| message("#{error} in file #{file}") } 
     end
   end
 
