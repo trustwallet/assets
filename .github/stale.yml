@@ -4,9 +4,9 @@ daysUntilStale: 1
 daysUntilClose: 2
 # Issues with these labels will never be considered stale
 exemptLabels:
+  - 'Payment: Paid'
   - pinned
   - security
-  - paid
 # Label to use when marking an issue as stale
 staleLabel: wontfix
 # Comment to post when marking an issue as stale. Set to `false` to disable
