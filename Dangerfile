@@ -7,6 +7,13 @@ allowed_extensions = ['png', 'json']
 allowed_file_names = ['info', 'list', 'logo', 'whitelist', 'blacklist']
 
 # Failures
+# Do not allow files in this directory
+Dir.foreach(assets_folder) \
+  .map { |x| File.expand_path("#{assets_folder}/#{x}") } \
+  .select { |x| File.file?(x) }
+  .map { |x| 
+  fail("Not allowed to have files inside blockchains folder itself. You have to add them inside specific blockchain folder as blockchain/ethereum or blockchain/binance for file: " + x)
+}
 
 Find.find(assets_folder) do |file|
   file_extension = File.extname(file).delete('.')
@@ -37,13 +44,13 @@ Find.find(assets_folder) do |file|
     # Validate info.json
     if file_name == 'info'
       schema = {
-        "type" => "object",
-        "required" => ["name", "website", "short_description", "explorer"],
-        "properties" => {
-          "name" => {"type" => "string"},
-          "website" => {"type" => "string"},
-          "short_description" => {"type" => "string"},
-          "explorer" => {"type" => "string"}
+        "type": "object",
+        "required": ["name", "website", "short_description", "explorer"],
+        "properties": {
+          "name": {"type": "string"},
+          "website": {"type": "string"},
+          "short_description": {"type": "string"},
+          "explorer": {"type": "string"}
         }
       }
       errors = JSON::Validator.fully_validate(schema, value)
@@ -53,7 +60,7 @@ Find.find(assets_folder) do |file|
     # Validate list.json for validators
     if file_name == 'list'
       schema = {
-        "type" => "array",
+        "type": "array",
         "items": {
           "properties": {
               "id": { "type": "string" },
@@ -67,17 +74,30 @@ Find.find(assets_folder) do |file|
       errors = JSON::Validator.fully_validate(schema, value)
       errors.each { |error| message("#{error} in file #{file}") } 
     end
+
+    # Validate whitelist, blacklist files
+    if file_name == 'whitelist' || file_name == 'blacklist'
+      schema = {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      }
+      errors = JSON::Validator.fully_validate(schema, value)
+      errors.each { |error| message("#{error} in file #{file}") } 
+    end
+  
   end
 
   # Validate images
-  if file_extension == '.png'
+  if file_extension == 'png'
     image_size = ImageSize.path(file)
 
     if image_size.width > 512 || image_size.height > 512
       fail("Image width or height is higher than 512px for file: " + file)
     end
 
-    if image_size.format == ':png'
+    if image_size.format == 'png'
       fail("Image should be PNG for file: " + file)
     end
 
