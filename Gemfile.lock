@@ -30,6 +30,7 @@ GEM
       faraday (~> 0.8)
     git (1.6.0)
       rchardet (~> 1.8)
+    image_size (2.0.2)
     kramdown (2.1.0)
     kramdown-parser-gfm (1.1.0)
       kramdown (~> 2.0)
@@ -54,6 +55,7 @@ PLATFORMS
 
 DEPENDENCIES
   danger
+  image_size (~> 2.0)
 
 BUNDLED WITH
    1.17.2
