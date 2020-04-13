@@ -1,3 +1,5 @@
+require 'find'
+
 # Failures
 
 # Validate JSON content
