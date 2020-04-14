@@ -11,12 +11,8 @@ message:
     initial: |
         Hi! In order to compensate for the efforts of processing PRs, we kindly ask for a contribution.
         See the [Pull Request Fee FAQ](https://developer.trustwallet.com/add_new_asset/pr-fee).
-        \nPlease pay
-        **$PAY1_AMOUNT $PAY1_CURRENCY**,
-        with the memo **$PAY1_MEMO**
-        to the address
-        `$PAY1_ADDRESS`.
-        Alternatively, 0.5 BNB is also accepted (same memo, same address).
+        \nPlease pay  **$PAY1_AMOUNT $PAY1_CURRENCY**  with the memo **$PAY1_MEMO**  to the address `$PAY1_ADDRESS`.
+        Alternatively, 0.5 BNB is also accepted (same memo & address).
         \n$QR1_SIMPLE
         \n*Notes*:
         * Trust Wallet Tokens (TWT) are distributed to new users through our [Referral Program](https://community.trustwallet.com/t/invite-a-friend-earn-trust-wallet-token-twt/4125).
