@@ -1,0 +1,21 @@
+{
+    "name": "Kusama",
+    "website": "https://kusama.network",
+    "source_code": "https://github.com/kusamanetwork",
+    "white_paper": "",
+    "short_description": "Kusama is described as a canary-net: It is an early, highly experimental version of Polkadot presenting real economic conditions.",
+    "description": "Kusama is an early, unaudited, and unrefined release of Polkadot. Kusama will serve as a proving ground, allowing teams and developers to build and deploy a parachain or try out Polkadot’s governance, staking, nomination and validation functionality in a real environment.\r\n\r\nKusama describes itself as a canary-net: It is an early, highly experimental version of Polkadot presenting real economic conditions. It is not economically centralized and there will be no central kill switch. Kusama will exist as long as its community maintains it and the team aims to cater to new, early, high-risk functionality and projects preparing to develop and deploy on Polkadot.",
+    "socials": [
+        {
+            "name": "Twitter",
+            "url": "https://twitter.com/kusamanetwork",
+            "handle": "kusamanetwork"
+        },
+        {
+            "name": "Reddit",
+            "url": "https://www.reddit.com/r/Kusama",
+            "handle": "Kusama"
+        }
+    ],
+    "explorer": "https://polkascan.io/pre/kusama-cc3"
+}
