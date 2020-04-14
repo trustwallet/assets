@@ -260,7 +260,10 @@ export const rootDirAllowedFiles = [
     "package.json",
     "README.md",
     ".git",
-    "pricing"
+    "pricing",
+    "Dangerfile",
+    "Gemfile",
+    "Gemfile.lock"
 ]
 
 export const assetFolderAllowedFiles = [
