@@ -19,10 +19,8 @@ jobs:
           git config --local user.email "trustbot@trustwallet.com"
           git config --local user.name "Trust Wallet Actions Bot"
           git commit -m "Generate whitelist and blacklist" -a
-          git remote set-url origin https://x-access-token:${DANGER_GITHUB_API_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-          git add .
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Generate list"; git push origin ${GITHUB_REF})
-      # - name: Push changes
-      #   uses: ad-m/github-push-action@master
-      #   with:
-      #     github_token: ${{ secrets.DANGER_GITHUB_API_TOKEN }}
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.DANGER_GITHUB_API_TOKEN }}
+          branch: ${{ GITHUB_REF }}
