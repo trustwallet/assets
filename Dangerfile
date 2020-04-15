@@ -2,20 +2,26 @@ require 'find'
 require 'image_size'
 require 'json-schema'
 
-assets_folder = './blockchains'
+blockchains_folder = './blockchains'
 allowed_extensions = ['png', 'json']
 allowed_file_names = ['info', 'list', 'logo', 'whitelist', 'blacklist']
 
+maxAssetLogoSizeInKilobyte = 100
+minLogoWidth = 64
+minLogoHeight = 64
+maxLogoWidth = 512
+maxLogoHeight = 512
+
 # Failures
 # Do not allow files in this directory
-Dir.foreach(assets_folder) \
-  .map { |x| File.expand_path("#{assets_folder}/#{x}") } \
+Dir.foreach(blockchains_folder) \
+  .map { |x| File.expand_path("#{blockchains_folder}/#{x}") } \
   .select { |x| File.file?(x) }
   .map { |x| 
   fail("Not allowed to have files inside blockchains folder itself. You have to add them inside specific blockchain folder as blockchain/ethereum or blockchain/binance for file: " + x)
 }
 
-Find.find(assets_folder) do |file|
+Find.find(blockchains_folder) do |file|
   file_extension = File.extname(file).delete('.')
   file_name = File.basename(file, File.extname(file))
 
@@ -93,7 +99,7 @@ Find.find(assets_folder) do |file|
   if file_extension == 'png'
     image_size = ImageSize.path(file)
 
-    if image_size.width > 512 || image_size.height > 512
+    if image_size.width > minLogoWidth || image_size.height > minLogoHeight
       fail("Image width or height is higher than 512px for file: " + file)
     end
 
@@ -102,7 +108,7 @@ Find.find(assets_folder) do |file|
     end
 
     # Make sure file size only 100kb
-    if File.size(file).to_f / 1024 > 100
+    if File.size(file).to_f / 1024 > maxAssetLogoSizeInKilobyte
       fail("Image should less than 100kb for file: " + file)
     end
   end

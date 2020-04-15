@@ -113,9 +113,8 @@ describe(`Test "blockchains" folder`, () => {
                     const [isLogoOK, sizeMsg] = isLogoSizeOK(assetLogoPath)
                     expect(isLogoOK, sizeMsg).toBe(true)
 
-                    if (isChainAssetInfoExistSync(chain, address)) {
-                        expect(isAssetInfoOK(chain, address), `Asset file info at path ${assetPath} is not OK`).toBe(true)
-                    }
+                    const [isInfoOK, InfoMsg] = isAssetInfoOK(chain, address)
+                    expect(isInfoOK, InfoMsg).toBe(true)
                 })
             })
         })
