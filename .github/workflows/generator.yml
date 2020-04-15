@@ -1,0 +1,25 @@
+name: Generator
+on:
+  pull_request:
+    branches:
+      - master
+jobs:
+  format:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+          with:
+            node-version: 12
+      - name: Generate whitelist and blacklist
+        run: |
+          npm install
+          npm run gen:list
+      - name: Commit generated list
+          git config --local user.email "trustbot@trustwallet.com"
+          git config --local user.name "Trust Wallet Actions Bot"
+          git commit -m "Generate whitelist and blacklist" -a
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+            github_token: ${{ secrets.DANGER_GITHUB_API_TOKEN }}
