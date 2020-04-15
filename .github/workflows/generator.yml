@@ -1,5 +1,7 @@
 name: Generator
 on:
+  push:
+    branches: [ master ]
   pull_request:
     branches: [ master ]
 jobs:
@@ -21,4 +23,4 @@ jobs:
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
-            github_token: ${{ secrets.DANGER_GITHUB_API_TOKEN }}
+          github_token: ${{ secrets.DANGER_GITHUB_API_TOKEN }}
