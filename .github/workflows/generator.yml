@@ -8,10 +8,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-          with:
-            node-version: 12
-      - name: Generate whitelist and blacklist
+      - name: Generate
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
         run: |
           npm install
           npm run gen:list
