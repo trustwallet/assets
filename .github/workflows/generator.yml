@@ -18,9 +18,10 @@ jobs:
           npm run gen:list
           git config --local user.email "trustbot@trustwallet.com"
           git config --local user.name "Trust Wallet Actions Bot"
+          git diff
           git commit -m "Generate whitelist and blacklist" -a
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
-          github_token: ${{ secrets.DANGER_GITHUB_API_TOKEN }}
-          branch: ${GITHUB_REF}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ GITHUB_REF }}
