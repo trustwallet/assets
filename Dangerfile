@@ -99,7 +99,7 @@ Find.find(blockchains_folder) do |file|
   if file_extension == 'png'
     image_size = ImageSize.path(file)
 
-    if image_size.width > minLogoWidth || image_size.height > minLogoHeight
+    if image_size.width > maxLogoWidth || image_size.height > maxLogoHeight
       fail("Image width or height is higher than 512px for file: " + file)
     end
 
