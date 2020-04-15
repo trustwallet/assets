@@ -23,4 +23,4 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.DANGER_GITHUB_API_TOKEN }}
-          branch: ${{ GITHUB_REF }}
+          branch: ${GITHUB_REF}
