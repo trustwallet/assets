@@ -10,13 +10,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1.4.1
-      - name: Generate
         with:
           node-version: 12
+      - name: Generate list
         run: |
           npm install
           npm run gen:list
-      - name: Commit generated list
           git config --local user.email "trustbot@trustwallet.com"
           git config --local user.name "Trust Wallet Actions Bot"
           git commit -m "Generate whitelist and blacklist" -a
