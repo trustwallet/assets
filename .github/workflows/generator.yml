@@ -9,8 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1.4.1
       - name: Generate
-        uses: actions/setup-node@v1.4.1
         with:
           node-version: 12
         run: |
