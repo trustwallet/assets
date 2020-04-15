@@ -1,15 +1,14 @@
 name: Generator
 on:
   pull_request:
-    branches:
-      - master
+    branches: [ master ]
 jobs:
   format:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: Generate
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v1.4.1
         with:
           node-version: 12
         run: |
