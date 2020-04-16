@@ -1,6 +1,6 @@
 name: Daily Update
 on:
-  push: 'master'
+  push: [ master ]
 jobs:
   daily_update:
     runs-on: ubuntu-latest
