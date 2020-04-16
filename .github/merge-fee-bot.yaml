@@ -21,3 +21,6 @@ message:
     notReceived: Fee has not been received yet in full.\n\n$TX_LIST
     received: Fee payment received, thanks! \n\n$PAID_AMOUNT $PAID_CURRENCY\n\n$TX_LIST
     reviewed: Review is not needed any more, no more fee required.
+label:
+  requested: 'Payment Status: Requested'
+  paid: 'Payment Status: Paid'
