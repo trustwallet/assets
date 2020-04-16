@@ -19,8 +19,7 @@ jobs:
         with:
           node-version: 12
       - name: Install Dependencies
-      - name: Generate list
-         run: npm install
+          run: npm install
       - name: Format and generate
         run: |
           npm run checksum
