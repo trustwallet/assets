@@ -28,9 +28,9 @@ jobs:
         run: npm ci
       - name: Format and generate
         run: |
+          npm run format:all
           npm run checksum
           npm run resize
-          npm run format:all
       - name: Commit daily changes if new updates
         uses: stefanzweifel/git-auto-commit-action@v4.1.2
         with:

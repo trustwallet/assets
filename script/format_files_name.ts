@@ -33,14 +33,12 @@ ethSidechains.forEach(chain => {
 
 export function checksumAssetsFolder(assetsFolderPath: string, addr: string) {
     if (!isChecksum(addr)) {
-        const checksumAddr = toChecksum(addr)
-        renameAndMove(assetsFolderPath, addr, checksumAddr)
+        renameAndMove(assetsFolderPath, addr, toChecksum(addr))
     }
 }
 
 export function renameAndMove(path: string, oldName: string, newName: string) {
-    console.log(`   Renaming file or folder at path ${path}: ${oldName} => ${newName} ...`)
-    const renamed = execRename(path, getMoveCommandFromTo(oldName, newName))
-    console.log(`       Result renaming: ${renamed}`)
+    console.log(`   Renaming file or folder at path ${path}: ${oldName} => ${newName}`)
+    execRename(path, getMoveCommandFromTo(oldName, newName))
 }
 

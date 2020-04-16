@@ -2,9 +2,9 @@ import { ethSidechains, readDirSync, getChainAssetsPath } from "../src/test/help
 import { checksumAssetsFolder } from './format_files_name'
 
 ethSidechains.forEach(chain => {
-    const assetsPath = getChainAssetsPath(chain) 
+    const chainAssetsPath = getChainAssetsPath(chain) 
 
-    readDirSync(assetsPath).forEach(addr => {
-        checksumAssetsFolder(assetsPath, addr)
+    readDirSync(chainAssetsPath).forEach(addr => {
+        checksumAssetsFolder(chainAssetsPath, addr)
     })
 })
