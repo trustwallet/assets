@@ -26,13 +26,9 @@ jobs:
           npm run checksum
           npm run resize
           npm run format:all
-          git config --local user.email "trustbot@trustwallet.com"
-          git config --local user.name "Trust Wallet Actions Bot"
-          git diff
-          git commit -m "Generate whitelist and blacklist" -a
       - name: Commit daily changes if new updates
         uses: stefanzweifel/git-auto-commit-action@v4.1.2
         with:
          commit_user_name: trust-wallet-merge-bot
          commit_user_email: mergebot@trustwallet.com
-         commit_message: Daily update
+         commit_message: Add formating
