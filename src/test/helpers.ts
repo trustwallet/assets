@@ -47,7 +47,7 @@ export const pricingFolderPath = path.join(process.cwd(), '/pricing')
 export const getChainLogoPath = (chain: string): string => `${chainsFolderPath}/${chain}/info/${logo}`
 export const getChainInfoPath = (chain: string): string => `${chainsFolderPath}/${chain}/info/${info}`
 export const getChainAssetInfoPath = (chain: string, address: string): string => `${chainsFolderPath}/${chain}/assets/${address}/${info}`
-export const getChainAssetsPath = (chain: string): string => `${chainsFolderPath}/${chain}/assets`
+export const getChainAssetsPath = (chain: string): string => `${chainsFolderPath}/${chain}/assets/`
 
 export const minLogoWidth = 64
 export const minLogoHeight = 64
@@ -207,7 +207,7 @@ export function getMoveCommandFromTo(oldName: string, newName: string): string {
 }
 
 export function execRename(path: string, command: string) {
-    execSync(`${command}`, {encoding: "utf-8", cwd: path})
+    execSync(command, {encoding: "utf-8", cwd: path})
 }
 
 export const isValidatorHasAllKeys = (val: ValidatorModel): boolean => {
