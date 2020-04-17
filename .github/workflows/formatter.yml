@@ -11,9 +11,9 @@ jobs:
   format:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2.1.0
+      - uses: actions/checkout@v2
         with:
-          ref: ${{ github.head_ref}}
+          ref: ${{ github.head_ref }}
           token: ${{ secrets.DANGER_GITHUB_API_TOKEN }}
       - uses: actions/setup-node@v1.4.1
         with:
