@@ -207,6 +207,7 @@ export function getMoveCommandFromTo(oldName: string, newName: string): string {
 }
 
 export function execRename(path: string, command: string) {
+    console.log(`Running command ${command}`)
     execSync(command, {encoding: "utf-8", cwd: path})
 }
 

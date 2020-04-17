@@ -17,9 +17,8 @@ import {
 
 ethSidechains.forEach(chain => {
     const assetsPath = getChainAssetsPath(chain)
-    const chainAddresses = readDirSync(assetsPath)
 
-    chainAddresses.forEach(address => {
+    readDirSync(assetsPath).forEach(address => {
         checksumAssetsFolder(assetsPath, address)
 
         getChainAssetFilesList(chain, address).forEach(file => {
