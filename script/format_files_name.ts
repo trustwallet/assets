@@ -19,14 +19,13 @@ ethSidechains.forEach(chain => {
     const assetsPath = getChainAssetsPath(chain)
 
     readDirSync(assetsPath).forEach(address => {
-        checksumAssetsFolder(assetsPath, address)
-
         getChainAssetFilesList(chain, address).forEach(file => {
             if (getFileName(file) == logoName && getFileExt(file) !== logoExtension) {
                 console.log(`Renaming incorrect asset logo extension ${file} ...`)
                 renameAndMove(getChainAssetPath(chain, address), file, logo)
             }
         })
+        checksumAssetsFolder(assetsPath, address)
     })
 })
 
