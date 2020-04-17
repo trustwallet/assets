@@ -7,7 +7,6 @@ const web3 = new Web3('ws://localhost:8546');
 import { CoinTypeUtils, CoinType } from "@trustwallet/types";
 const sizeOf = require("image-size");
 const { execSync } = require('child_process');
-import { AssetInfo } from "../../src/test/models";
 
 export const getChainName = (id: CoinType): string =>  CoinTypeUtils.id(id) // 60 => ethereum
 export const Binance = getChainName(CoinType.binance)
@@ -208,7 +207,8 @@ export function getMoveCommandFromTo(oldName: string, newName: string): string {
 }
 
 export function execRename(path: string, command: string) {
-    execSync(`cd ${path} && ${command}`, {encoding: "utf-8"})
+    console.log(`Running command ${command}`)
+    execSync(command, {encoding: "utf-8", cwd: path})
 }
 
 export const isValidatorHasAllKeys = (val: ValidatorModel): boolean => {
