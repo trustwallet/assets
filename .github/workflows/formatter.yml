@@ -24,7 +24,7 @@ jobs:
         if: steps.cache-npm.outputs.cache-hit != 'true'
         run: npm ci
       - name: Format and generate
-      - uses: actions/setup-node@v1.4.1
+        uses: actions/setup-node@v1.4.1
         with:
           node-version: '12.x'
         run: |
