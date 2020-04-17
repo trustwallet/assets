@@ -26,7 +26,6 @@ jobs:
       - name: Install Dependencies
         if: steps.cache-npm.outputs.cache-hit != 'true'
         run: npm ci
-      - name: Format and generate
       - run: npm run format:all
       - run: npm run checksum
       - run: npm run resize
