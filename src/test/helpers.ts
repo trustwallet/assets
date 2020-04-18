@@ -79,6 +79,7 @@ export const getChainBlacklist = (chain: string): string[] => {
     }
     return []
 }
+export const getRootDirFilesList = (): string[] => readDirSync(root)
 
 export const readDirSync = (path: string): string[] => fs.readdirSync(path)
 export const makeDirSync = (path: string) => fs.mkdirSync(path)
@@ -105,6 +106,10 @@ export const isTRC20 = (address: string) => {
     address.startsWith("T") &&
     isLowerCase(address) == false &&
     isUpperCase(address) == false
+}
+
+export const isEthereumAddress = (address: string): boolean => {
+    return web3.utils.isAddress(address)
 }
 
 export const isWavesAddress = (address: string) => {
@@ -258,10 +263,7 @@ export function isAssetInfoHasAllKeys(path: string): [boolean, string] {
     return [isKeysCorrentType, `Check keys ${requiredKeys} vs ${infoKeys}`]
 }
 
-function getArraysDiff(arr1 :string[], arr2: string[]): string[] {
-    return arr1.filter(d => !arr2.includes(d))
-}
-
+export const getArraysDiff = (arr1 :string[], arr2: string[]): string[] => arr1.filter(d => !arr2.includes(d))
 export const getFileSizeInKilobyte = (path: string): number => fs.statSync(path).size / 1000
 
 export const rootDirAllowedFiles = [
