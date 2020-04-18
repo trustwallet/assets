@@ -7,7 +7,6 @@ const web3 = new Web3('ws://localhost:8546');
 import { CoinTypeUtils, CoinType } from "@trustwallet/types";
 const sizeOf = require("image-size");
 const { execSync } = require('child_process');
-import { AssetInfo } from "../../src/test/models";
 
 export const getChainName = (id: CoinType): string =>  CoinTypeUtils.id(id) // 60 => ethereum
 export const Binance = getChainName(CoinType.binance)
@@ -80,6 +79,7 @@ export const getChainBlacklist = (chain: string): string[] => {
     }
     return []
 }
+export const getRootDirFilesList = (): string[] => readDirSync(root)
 
 export const readDirSync = (path: string): string[] => fs.readdirSync(path)
 export const makeDirSync = (path: string) => fs.mkdirSync(path)
@@ -106,6 +106,10 @@ export const isTRC20 = (address: string) => {
     address.startsWith("T") &&
     isLowerCase(address) == false &&
     isUpperCase(address) == false
+}
+
+export const isEthereumAddress = (address: string): boolean => {
+    return web3.utils.isAddress(address)
 }
 
 export const isWavesAddress = (address: string) => {
@@ -208,7 +212,8 @@ export function getMoveCommandFromTo(oldName: string, newName: string): string {
 }
 
 export function execRename(path: string, command: string) {
-    execSync(`cd ${path} && ${command}`, {encoding: "utf-8"})
+    console.log(`Running command ${command}`)
+    execSync(command, {encoding: "utf-8", cwd: path})
 }
 
 export const isValidatorHasAllKeys = (val: ValidatorModel): boolean => {
@@ -258,10 +263,7 @@ export function isAssetInfoHasAllKeys(path: string): [boolean, string] {
     return [isKeysCorrentType, `Check keys ${requiredKeys} vs ${infoKeys}`]
 }
 
-function getArraysDiff(arr1 :string[], arr2: string[]): string[] {
-    return arr1.filter(d => !arr2.includes(d))
-}
-
+export const getArraysDiff = (arr1 :string[], arr2: string[]): string[] => arr1.filter(d => !arr2.includes(d))
 export const getFileSizeInKilobyte = (path: string): number => fs.statSync(path).size / 1000
 
 export const rootDirAllowedFiles = [

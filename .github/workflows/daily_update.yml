@@ -1,0 +1,27 @@
+name: Daily Update
+on:
+  push:
+    branches: [ master ]
+jobs:
+  daily_update:
+    runs-on: ubuntu-latest
+    steps:
+     - uses: actions/checkout@v2
+       with:
+         token: ${{ secrets.DANGER_GITHUB_API_TOKEN }}
+     - uses: actions/setup-node@v1.4.1
+       with:
+         node-version: 12
+     - name: Install dependencies
+       run: npm i
+     - name: Generate list
+       run: |
+         npm run update:bep2
+         npm run gen:list
+     - name: Commit daily changes if new updates
+       uses: stefanzweifel/git-auto-commit-action@v4.1.2
+       with:
+        commit_user_name: trust-wallet-merge-bot
+        commit_user_email: mergebot@trustwallet.com
+        commit_message: Daily update
+        
