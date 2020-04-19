@@ -3,32 +3,34 @@ import { getOpenseaCollectionAddresses } from "./opesea_contrats"
 
 import {
     Ethereum, Terra, Tron,
-    getChainAssetsPath,
+    getChainAssetInfoPath,
+    getChainAssetsList,
     ethSidechains,
-    readDirSync,
-    readFileSync,
-    isChainWhitelistExistSync,
-    isChainBlacklistExistSync,
-    getChainWhitelistPath,
     getChainBlacklistPath,
     getChainValidatorsListPath,
-    writeFileSync,
-    sortDesc,
+    getChainWhitelistPath,
     getUnique,
+    isChainAssetInfoExistSync,
+    isChainBlacklistExistSync,
+    isChainWhitelistExistSync,
     mapList,
-    stakingChains
+    readFileSync,
+    sortDesc,
+    stakingChains,
+    writeFileSync,
 } from '../src/test/helpers'
 
 formatWhiteBlackList()
 formatValidators()
+formatInfo()
 
 function formatWhiteBlackList() {
     ethSidechains.concat(Tron, Terra).forEach(async chain => {
-        const assets = readDirSync(getChainAssetsPath(chain))
+        const assets = getChainAssetsList(chain)
     
         const whitelistPath = getChainWhitelistPath(chain)
         const blacklistPath = getChainBlacklistPath(chain)
-        const validatorsPath = getChainValidatorsListPath(chain)
+
         //Create inital lists if they do not exists 
         if (!isChainWhitelistExistSync(chain)) {
             writeFileSync(whitelistPath, `[]`)
@@ -67,6 +69,19 @@ function formatValidators() {
         const currentValidatorsList = JSON.parse(readFileSync(validatorsPath))
 
         fs.writeFileSync(validatorsPath, JSON.stringify(currentValidatorsList, null, 4))
+    })
+}
+
+function formatInfo() {
+    ethSidechains.forEach(chain => {
+        const chainAssets = getChainAssetsList(chain)
+        chainAssets.forEach(address => {
+            if (isChainAssetInfoExistSync(chain, address)) {
+                const chainAssetInfoPath = getChainAssetInfoPath(chain, address)
+                const currentAssetInfo = JSON.parse(readFileSync(chainAssetInfoPath))
+                fs.writeFileSync(chainAssetInfoPath, JSON.stringify(currentAssetInfo, null, 4))
+            }
+        })
     })
 }
 

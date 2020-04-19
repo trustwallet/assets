@@ -108,10 +108,11 @@ Smart contract address update procedure:
 │   └──ethereum
 │   │   └──assets
 │   │   │  └──0x0a2D9370cF74Da3FD3dF5d764e394Ca8205C50B6 // address folder
-│   │   │     └──logo.png // address logo
-|   |   |     └──info.json // info related to contract
+│   │   │     └──logo.png  // address logo
+|   |   |     └──info.json // info related to the contract
 │   │   └──info
-│   │      └──logo.png // coin logo
+│   │      └──logo.png  // coin logo
+|   |      └──info.json // coin info
 |   |
 |   └──binance
 │   │   └──assets
@@ -131,10 +132,12 @@ Smart contract address update procedure:
 |   |  | 
 │   |  └──info
 │   |     └──logo.png
+|   |     └──info.json 
 |   |
 |   └──cosmos
 │   │   └──info
 |   |   |  └──logo.png
+|   |   |  └──info.json
 |   |   |
 │   │   └──validators
 │   │   |  └──assets
