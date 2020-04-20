@@ -15,11 +15,13 @@ jobs:
      - name: Install Dependencies
        run: npm ci
      - name: Run scripts
-     - run: npm run update:bep2
-     - run: npm run resize
-     - run: npm run format:all
-     - run: npm run gen:list
-     - run: npm t
+       run: | 
+         npm run update:bep2
+         npm run resize
+         npm run format:all
+         npm run gen:list
+     - name: Run final test
+       run: npm t
      - name: Commit changes if any
        uses: stefanzweifel/git-auto-commit-action@v4.1.2
        with:
