@@ -1,11 +1,7 @@
 name: Danger
-
 on:
   push:
     branches: [ master ]
-  pull_request:
-    branches: [ master ]
-
 jobs:
   danger:
     runs-on: ubuntu-latest
