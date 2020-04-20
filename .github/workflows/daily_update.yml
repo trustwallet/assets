@@ -4,13 +4,11 @@ on:
     branches: [ master ]
 jobs:
   daily_update:
-    env:
-      TOKEN: ${{ secrets.DANGER_GITHUB_API_TOKEN }}
     runs-on: ubuntu-latest
     steps:
      - uses: actions/checkout@v2
        with:
-         token: $TOKEN
+         token: ${{ secrets.GITHUB_TOKEN }}
      - uses: actions/setup-node@v1.4.1
        with:
          node-version: 12
