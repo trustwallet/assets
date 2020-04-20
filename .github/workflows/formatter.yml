@@ -1,0 +1,37 @@
+name: Formatter
+on:
+  push:
+    branches:
+      - '*'
+      - '!master'
+  pull_request:
+    branches:
+      - 'master'
+jobs:
+  format:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.head_ref }}
+          token: ${{ secrets.DANGER_GITHUB_API_TOKEN }}
+      - uses: actions/setup-node@v1.4.1
+        with:
+          node-version: '12.x'
+      - name: Restore npm cache
+        uses: actions/cache@v1
+        with:
+          id: cache-npm
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+      - name: Install Dependencies
+        if: steps.cache-npm.outputs.cache-hit != 'true'
+        run: npm ci
+      - run: npm run format:all
+      - run: npm run resize
+      - name: Commit daily changes if new updates
+        uses: stefanzweifel/git-auto-commit-action@v4.1.2
+        with:
+         commit_user_name: trust-wallet-merge-bot
+         commit_user_email: mergebot@trustwallet.com
+         commit_message: Add formating

@@ -7,7 +7,6 @@ const web3 = new Web3('ws://localhost:8546');
 import { CoinTypeUtils, CoinType } from "@trustwallet/types";
 const sizeOf = require("image-size");
 const { execSync } = require('child_process');
-import { AssetInfo } from "../../src/test/models";
 
 export const getChainName = (id: CoinType): string =>  CoinTypeUtils.id(id) // 60 => ethereum
 export const Binance = getChainName(CoinType.binance)
@@ -80,6 +79,7 @@ export const getChainBlacklist = (chain: string): string[] => {
     }
     return []
 }
+export const getRootDirFilesList = (): string[] => readDirSync(root)
 
 export const readDirSync = (path: string): string[] => fs.readdirSync(path)
 export const makeDirSync = (path: string) => fs.mkdirSync(path)
@@ -106,6 +106,10 @@ export const isTRC20 = (address: string) => {
     address.startsWith("T") &&
     isLowerCase(address) == false &&
     isUpperCase(address) == false
+}
+
+export const isEthereumAddress = (address: string): boolean => {
+    return web3.utils.isAddress(address)
 }
 
 export const isWavesAddress = (address: string) => {
@@ -208,7 +212,8 @@ export function getMoveCommandFromTo(oldName: string, newName: string): string {
 }
 
 export function execRename(path: string, command: string) {
-    execSync(`cd ${path} && ${command}`, {encoding: "utf-8"})
+    console.log(`Running command ${command}`)
+    execSync(command, {encoding: "utf-8", cwd: path})
 }
 
 export const isValidatorHasAllKeys = (val: ValidatorModel): boolean => {
@@ -218,30 +223,47 @@ export const isValidatorHasAllKeys = (val: ValidatorModel): boolean => {
         && typeof val.website === "string"
 }
 
-export function isAssetInfoOK(chain: string, address: string): boolean {
-    if (isChainAssetInfoExistSync(chain, address)) {
-        const assetInfoPath = getChainAssetInfoPath(chain, address)
-        const isInfoOK = isValidJSON(assetInfoPath)
-        if (isInfoOK && isAssetInfoHasAllKeys(assetInfoPath)) {
-            return true
-        }
-
-        return false
+export function isAssetInfoOK(chain: string, address: string): [boolean, string] {
+    if (!isChainAssetInfoExistSync(chain, address)) {
+        return [true, `Info file doest exist, non eed to check`]
     }
-    return true
+
+    const assetInfoPath = getChainAssetInfoPath(chain, address)
+    const isInfoJSONValid = isValidJSON(assetInfoPath)
+    if (!isInfoJSONValid) {
+        console.log(`JSON at path: ${assetInfoPath} is invalid`)
+        return [false, `JSON at path: ${assetInfoPath} is invalid`]
+    }
+
+    const [hasAllKeys, msg] = isAssetInfoHasAllKeys(assetInfoPath)
+    if (!hasAllKeys) {
+        console.log({msg})
+        return [false, msg]
+    }
+
+    return [true, ``]
 }
 
-export function isAssetInfoHasAllKeys(path: string): boolean {
-    const info: AssetInfo = JSON.parse(readFileSync(path))
+export function isAssetInfoHasAllKeys(path: string): [boolean, string] {
+    const info = JSON.parse(readFileSync(path))
+    const infoKeys = Object.keys(info)
+    const requiredKeys = ["explorer", "name", "website", "short_description"] // Find better solution getting AssetInfo interface keys
+
+    const hasAllKeys = requiredKeys.every(k => info.hasOwnProperty(k))
+
+    if (!hasAllKeys) {
+        return [false, `Info at path ${path} missing next key(s): ${getArraysDiff(requiredKeys, infoKeys)}`]
+    }
 
     const isKeysCorrentType = typeof info.explorer === "string" && info.explorer != ""
     && typeof info.name === "string" && info.name != ""
     && typeof info.website === "string"
     && typeof info.short_description === "string"
     
-    return isKeysCorrentType
+    return [isKeysCorrentType, `Check keys ${requiredKeys} vs ${infoKeys}`]
 }
 
+export const getArraysDiff = (arr1 :string[], arr2: string[]): string[] => arr1.filter(d => !arr2.includes(d))
 export const getFileSizeInKilobyte = (path: string): number => fs.statSync(path).size / 1000
 
 export const rootDirAllowedFiles = [
@@ -260,7 +282,10 @@ export const rootDirAllowedFiles = [
     "package.json",
     "README.md",
     ".git",
-    "pricing"
+    "pricing",
+    "Dangerfile",
+    "Gemfile",
+    "Gemfile.lock"
 ]
 
 export const assetFolderAllowedFiles = [
