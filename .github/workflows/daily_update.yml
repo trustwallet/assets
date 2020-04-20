@@ -20,8 +20,6 @@ jobs:
          npm run resize
          npm run format:all
          npm run gen:list
-     - name: Run final test
-       run: npm t
      - name: Commit changes if any
        uses: stefanzweifel/git-auto-commit-action@v4.1.2
        with:
