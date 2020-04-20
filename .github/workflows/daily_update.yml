@@ -8,7 +8,7 @@ jobs:
     steps:
      - uses: actions/checkout@v2
        with:
-         token: ${{ secrets.GITHUB_TOKEN }}
+         token: ${{ secrets.DANGER_GITHUB_API_TOKEN }}
      - uses: actions/setup-node@v1.4.1
        with:
          node-version: 12
