@@ -26,4 +26,5 @@ label:
   requested: 'Payment Status: Requested'
   paid: 'Payment Status: Paid'
 timeout:
-  maxAgeHours: 72
+  maxAgeCloseHours: 72
+  maxIdleRemindHours: 13
