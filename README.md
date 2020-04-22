@@ -41,7 +41,7 @@ Token repository [https://github.com/trustwallet/assets](https://github.com/trus
 ### Add new asset
 
 1. Prepare asset, look at [image requirements](#image-requirements), [dapp requirements](#dApp-image-naming-requirments)  
-2. Get familiar with our [folder strcture](#repository-structure), it will give you an understanding where assets should be placed
+2. Get familiar with our [folder structure](#repository-structure), it will give you an understanding where assets should be placed
 3. [Add asset guide](#how-to-add-asset)
 
 ### Update and remove an existing asset
