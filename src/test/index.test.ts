@@ -113,9 +113,8 @@ describe(`Test "blockchains" folder`, () => {
                     const [isLogoOK, sizeMsg] = isLogoSizeOK(assetLogoPath)
                     expect(isLogoOK, sizeMsg).toBe(true)
 
-                    if (isChainAssetInfoExistSync(chain, address)) {
-                        expect(isAssetInfoOK(chain, address), `Asset file info at path ${assetPath} is not OK`).toBe(true)
-                    }
+                    const [isInfoOK, InfoMsg] = isAssetInfoOK(chain, address)
+                    expect(isInfoOK, InfoMsg).toBe(true)
                 })
             })
         })
@@ -374,20 +373,17 @@ describe("Test blacklist and whitelist", () => {
         const whiteList = JSON.parse(readFileSync(getChainWhitelistPath(chain)))
         const blackList = JSON.parse(readFileSync(getChainBlacklistPath(chain)))
 
-        const whitelistMap = mapList(whiteList)
-        const blacklistMap = mapList(blackList)
-
         test(`Whitelist should not contain assets from blacklist on ${chain} chain`, () => {
+            const blacklistMap = mapList(blackList)
             whiteList.forEach(a => {
-                const isWhitelistInBlacklist = blacklistMap.hasOwnProperty(a)
-                expect(isWhitelistInBlacklist, `Found whitelist asset ${a} in blacklist on chain ${chain}`).toBe(false)
+                expect(a in blacklistMap, `Found whitelist asset ${a} in blacklist on chain ${chain}`).toBe(false)
             })
         })
 
         test(`Blacklist should not contain assets from whitelist on ${chain} chain`, () => {
+            const whitelistMap = mapList(whiteList)
             blackList.forEach(a => {
-                const isBlacklistInWhitelist = whitelistMap.hasOwnProperty(a)
-                expect(isBlacklistInWhitelist, `Found blacklist asset ${a} in whitelist on chain ${chain}`).toBe(false)
+                expect(a in whitelistMap, `Found blacklist asset ${a} in whitelist on chain ${chain}`).toBe(false)
             })
         })
     })

@@ -94,6 +94,7 @@ async function resize(srcWidth: number, srcHeight: number, path: string) {
 }
 
 export async function compressTinyPNG(path: string) {
+    console.log(`Compressing image via tinypng at path ${path}`)
     const source = await tinify.fromFile(path);
     await source.toFile(path);
 
