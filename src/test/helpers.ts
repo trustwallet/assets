@@ -31,6 +31,7 @@ export const stakingChains = [Tezos, Cosmos, IoTeX, Tron, Waves, Kava, Terra]
 
 export const logoName = `logo`
 export const infoName = `info`
+export const listName = `list`
 
 export const logoExtension = "png"
 export const jsonExtension = "json"
@@ -38,8 +39,11 @@ export const jsonExtension = "json"
 const whiteList = `whitelist.${jsonExtension}`
 const blackList = `blacklist.${jsonExtension}`
 
+const validatorsList = `${listName}.${jsonExtension}`
+
 export const logo = `${logoName}.${logoExtension}`
 export const info = `${infoName}.${jsonExtension}`
+
 
 export const root = './'
 export const chainsFolderPath = path.join(process.cwd(), '/blockchains')
@@ -63,6 +67,7 @@ export const getChainAssetsList = (chain: string): string[] => readDirSync(getCh
 export const getChainValidatorsPath = (chain: string): string => `${chainsFolderPath}/${chain}/validators`
 export const getChainValidatorsAssets = (chain: string): string[] => readDirSync(getChainValidatorsAssetsPath(chain))
 export const getChainValidatorsListPath = (chain: string): string => `${(getChainValidatorsPath(chain))}/list.${jsonExtension}`
+export const getChainValidatorsList = (chain: string): ValidatorModel[] => JSON.parse(readFileSync(`${(getChainValidatorsPath(chain))}/${validatorsList}`))
 export const getChainValidatorsAssetsPath = (chain: string): string => `${getChainValidatorsPath(chain)}/assets`
 export const getChainValidatorAssetLogoPath = (chain: string, asset: string): string => `${getChainValidatorsAssetsPath(chain)}/${asset}/${logo}`
 export const getChainWhitelistPath = (chain: string): string => `${chainsFolderPath}/${chain}/${whiteList}`
@@ -90,6 +95,7 @@ export const isChainInfoExistSync = (chain: string): boolean => isPathExistsSync
 export const isChainAssetInfoExistSync = (chain: string, address: string) => isPathExistsSync(getChainAssetInfoPath(chain, address))
 export const readFileSync = (path: string) => fs.readFileSync(path, 'utf8')
 export const writeFileSync = (path: string, str: string) => fs.writeFileSync(path, str)
+export const writeJSONToPath = (path: string, data: any) => fs.writeFileSync(path, JSON.stringify(data, null, 4))
 
 export const isLowerCase = (str: string): boolean => str.toLowerCase() === str
 export const isUpperCase = (str: string): boolean => str.toUpperCase() === str
