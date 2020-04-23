@@ -3,7 +3,7 @@ payments:
   - amount: 2000
     token: TWT
     address: bnb1tqq9llyr3dyjd559dha6z5r5etk3qfwk07m098
-  - amount: 1.0
+  - amount: 1
     token: BNB
     address: bnb1tqq9llyr3dyjd559dha6z5r5etk3qfwk07m098
 # Message templates
@@ -12,7 +12,7 @@ message:
     Hi! In order to compensate for the efforts of processing PRs, we kindly ask for a contribution.
     See the [Pull Request Fee FAQ](https://developer.trustwallet.com/add_new_asset/pr-fee).
     \nPlease pay  **$PAY1_AMOUNT $PAY1_CURRENCY**  with the memo **$PAY1_MEMO**  to the address `$PAY1_ADDRESS`.
-    Alternatively, 0.5 BNB is also accepted (same memo & address).
+    Alternatively, 1 BNB is also accepted (same memo & address).
     \n$QR1_SIMPLE
     \n*Notes*:
     * Trust Wallet Tokens (TWT) are distributed to new users through our [Referral Program](https://community.trustwallet.com/t/invite-a-friend-earn-trust-wallet-token-twt/4125).
@@ -23,7 +23,7 @@ message:
   reviewed: Review is not needed any more, no more fee required.
   reminder: |
     $USER, kind reminder:  please pay fee:  **$PAY1_AMOUNT $PAY1_CURRENCY**  with the memo **$PAY1_MEMO**  to the address `$PAY1_ADDRESS`.
-    Alternatively, 0.5 BNB is also accepted (same memo & address).
+    Alternatively, 1 BNB is also accepted (same memo & address).
     \n$QR1_SIMPLE
     See the [Pull Request Fee FAQ](https://developer.trustwallet.com/add_new_asset/pr-fee).
   oldClosing: Maximum PR age reached, auto-closing PR
