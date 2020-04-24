@@ -554,5 +554,21 @@
             "minDelegation": 100,
             "openForDelegation": true
         }
+    },
+        {
+        "id": "tz1STeamwbp68THcny9zk3LsbG3H36DMvbRK",
+        "name": "StakingTeam",
+        "description": "An historical and trusted baker, from Italy with love.",
+        "website": "https://stakingteam.com/",
+        "payout": {
+            "commission": 0,
+            "payoutDelay": 6,
+            "payoutPeriod": 1
+        },
+        "staking": {
+            "freeSpace": 0,
+            "minDelegation": 10,
+            "openForDelegation": true
+        }
     }
 ]
