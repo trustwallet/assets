@@ -15,7 +15,7 @@ jobs:
      - name: Install Dependencies
        run: npm ci
      - name: Run scripts
-       run: | 
+       run: |
          npm run update:bep2
          npm run resize
          npm run format:all
