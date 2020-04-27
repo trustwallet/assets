@@ -38,7 +38,7 @@ ethSidechains.forEach(chain => {
     })
 })
 
-// Moves asset/0xXX...XX.png => assets/blockchains/assets/0xXX...XX/logo.png
+// Moves assets/0xXX...XX.png => assets/blockchains/assets/0xXX...XX/logo.png
 getRootDirFilesList().forEach(async file => {
     const fileName = getFileName(file)
     if(isImage(file) && !rootDirAllowedFiles.includes(file) && isEthereumAddress(fileName)) {
@@ -49,7 +49,3 @@ getRootDirFilesList().forEach(async file => {
         fs.renameSync(`./${file}`, `${ethreumAssetsPath}/${checksum}/${logo}`)
     }
 });
-
-
-
-
