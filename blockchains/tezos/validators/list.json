@@ -5,7 +5,14 @@
         "description": "Your Trusted Crypto Rewards",
         "website": "https://stakin.com",
         "payout": {
-            "commission": 8
+            "commission": 8,
+            "payoutDelay": 1,
+            "payoutPeriod": 1
+        },
+        "staking": {
+            "freeSpace": 7240,
+            "minDelegation": 0,
+            "openForDelegation": true
         }
     },
     {
@@ -14,7 +21,14 @@
         "description": "We were the first bakery to pay the frozen rewards in advance. Our offer is built with the sole aim of giving you peace of mind and tranquillity. Quality at heart. Welcome to At James Bakery :)",
         "website": "https://atjames.io",
         "payout": {
-            "commission": 7
+            "commission": 12,
+            "payoutDelay": 1,
+            "payoutPeriod": 5
+        },
+        "staking": {
+            "freeSpace": 2609045,
+            "minDelegation": 0,
+            "openForDelegation": true
         }
     },
     {
@@ -23,7 +37,14 @@
         "description": "Scandinavian based staking service. Get even lower fees with signup.",
         "website": "https://www.validators.com",
         "payout": {
-            "commission": 12.5
+            "commission": 30,
+            "payoutDelay": 6,
+            "payoutPeriod": 1
+        },
+        "staking": {
+            "freeSpace": 89691,
+            "minDelegation": 0,
+            "openForDelegation": true
         }
     },
     {
@@ -32,7 +53,14 @@
         "description": "HSM Baking - When Tezzigator earns, YOU earn.",
         "website": "https://www.tezzigator.com",
         "payout": {
-            "commission": 10
+            "commission": 10,
+            "payoutDelay": 6,
+            "payoutPeriod": 1
+        },
+        "staking": {
+            "freeSpace": 3432020,
+            "minDelegation": 0,
+            "openForDelegation": true
         }
     },
     {
@@ -41,7 +69,14 @@
         "description": "Secure and available validation from the Swiss Alps.",
         "website": "https://tezos.cryptium.ch/",
         "payout": {
-            "commission": 10
+            "commission": 10,
+            "payoutDelay": 6,
+            "payoutPeriod": 1
+        },
+        "staking": {
+            "freeSpace": 4469632,
+            "minDelegation": 0,
+            "openForDelegation": true
         }
     },
     {
@@ -50,7 +85,14 @@
         "description": "Tezos Capital Legacy is open and accepting new delegations.  The service serves over 1500 customers with a high performing, efficient service.",
         "website": "https://www.tezos.capital",
         "payout": {
-            "commission": 15
+            "commission": 15,
+            "payoutDelay": 6,
+            "payoutPeriod": 1
+        },
+        "staking": {
+            "freeSpace": 8778848,
+            "minDelegation": 0,
+            "openForDelegation": true
         }
     },
     {
@@ -59,7 +101,14 @@
         "description": "CryptoDelegate delegation service is the best alternative to running your own node. The easy way to grow your Tezos stake is to Delegate your XTZ Tezzies.",
         "website": "https://www.cryptodelegate.com",
         "payout": {
-            "commission": 25
+            "commission": 19,
+            "payoutDelay": 6,
+            "payoutPeriod": 1
+        },
+        "staking": {
+            "freeSpace": 2825610,
+            "minDelegation": 0,
+            "openForDelegation": true
         }
     },
     {
@@ -68,7 +117,14 @@
         "description": "Leading validator for Proof of Stake blockchains. Stake your cryptocurrencies with us. We know validating.",
         "website": "https://stake.fish/",
         "payout": {
-            "commission": 8
+            "commission": 8,
+            "payoutDelay": 1,
+            "payoutPeriod": 1
+        },
+        "staking": {
+            "freeSpace": 3230807,
+            "minDelegation": 0,
+            "openForDelegation": true
         }
     },
     {
@@ -77,11 +133,18 @@
         "description": "We are delegation service for Tezos, secure, anonymous",
         "website": "https://mytezosbaking.com/",
         "payout": {
-            "commission": 14
+            "commission": 14,
+            "payoutDelay": 6,
+            "payoutPeriod": 1
         },
         "status": {
             "disabled": true,
             "note:": "Minimum delegation 1000 XTZ"
+        },
+        "staking": {
+            "freeSpace": 430105,
+            "minDelegation": 1000,
+            "openForDelegation": true
         }
     },
     {
@@ -90,7 +153,14 @@
         "description": "State of the art validator infrastructure. More than $1,000,000 in generated customer rewards. One of the oldest and most profitable bakers. Access your staking dashboard on our website.",
         "website": "https://stakingfacilities.com/tezos",
         "payout": {
-            "commission": 12.5
+            "commission": 12.5,
+            "payoutDelay": 6,
+            "payoutPeriod": 1
+        },
+        "staking": {
+            "freeSpace": 1684027,
+            "minDelegation": 0,
+            "openForDelegation": true
         }
     },
     {
@@ -99,7 +169,14 @@
         "description": "World's leading cloud infrastructure and staking as a service provicer for blockchains. Supernodes on EOS, TRON, VeChain, Ontology, LOOM, IOST and many other chains.",
         "website": "https://infstones.io",
         "payout": {
-            "commission": 10
+            "commission": 40,
+            "payoutDelay": 6,
+            "payoutPeriod": 1
+        },
+        "staking": {
+            "freeSpace": 82929,
+            "minDelegation": 0,
+            "openForDelegation": true
         }
     },
     {
@@ -108,7 +185,14 @@
         "description": "Staked is the leading staking partner for the smartest investors in crypto, delivering staking rewards securely and reliably. Staked supports the largest number of chains and offers comprehensive reporting for tax & accounting.",
         "website": "https://staked.us/",
         "payout": {
-            "commission": 10
+            "commission": 10,
+            "payoutDelay": 6,
+            "payoutPeriod": 1
+        },
+        "staking": {
+            "freeSpace": 169410,
+            "minDelegation": 0,
+            "openForDelegation": true
         }
     },
     {
@@ -117,7 +201,14 @@
         "description": "You love Tezos and so do we ! Safely earn more by letting XTZ Delegate bake for you.",
         "website": "https://xtzdelegate.io/",
         "payout": {
-            "commission": 10
+            "commission": 10,
+            "payoutDelay": 6,
+            "payoutPeriod": 1
+        },
+        "staking": {
+            "freeSpace": 125160,
+            "minDelegation": 0,
+            "openForDelegation": true
         }
     },
     {
@@ -126,7 +217,14 @@
         "description": "Everstake - Staking Service Platform. Delegate XTZ with Everstake, your trusted staking partner.",
         "website": "https://everstake.one/",
         "payout": {
-            "commission": 5
+            "commission": 8,
+            "payoutDelay": 6,
+            "payoutPeriod": 1
+        },
+        "staking": {
+            "freeSpace": 1528540,
+            "minDelegation": 10,
+            "openForDelegation": true
         }
     },
     {
@@ -135,7 +233,14 @@
         "description": "Bake'n'Rolls - one of the first Tezos bakery. Our mission is to deliver freshly baked pretzels on every cycle.",
         "website": "https://bakenrolls.com/",
         "payout": {
-            "commission": 9
+            "commission": 9,
+            "payoutDelay": 6,
+            "payoutPeriod": 1
+        },
+        "staking": {
+            "freeSpace": 592574,
+            "minDelegation": 10,
+            "openForDelegation": true
         }
     },
     {
@@ -144,7 +249,14 @@
         "description": "Your Trusted Staking Partner: Offering institutional grade staking infrastructure, services & compliance tools for token holders and stake-based blockchains.",
         "website": "https://figment.network/networks/tezos",
         "payout": {
-            "commission": 8
+            "commission": 8,
+            "payoutDelay": 6,
+            "payoutPeriod": 1
+        },
+        "staking": {
+            "freeSpace": 273647,
+            "minDelegation": 0,
+            "openForDelegation": true
         }
     },
     {
@@ -153,7 +265,14 @@
         "description": "Staking Services for Private and Institutional Clients. This service is offered in full compliance with the law as a German company.",
         "website": "https://stakenow.de",
         "payout": {
-            "commission": 14.99
+            "commission": 14.99,
+            "payoutDelay": 6,
+            "payoutPeriod": 1
+        },
+        "staking": {
+            "freeSpace": 831367,
+            "minDelegation": 10,
+            "openForDelegation": true
         }
     },
     {
@@ -162,7 +281,14 @@
         "description": "PayTezos is a P2P cryptocurrency exchange, as well as the Tezos delegation service.",
         "website": "https://paytezos.com/tezos",
         "payout": {
-            "commission": 10
+            "commission": 10,
+            "payoutDelay": 6,
+            "payoutPeriod": 1
+        },
+        "staking": {
+            "freeSpace": 3496856,
+            "minDelegation": 0,
+            "openForDelegation": true
         }
     },
     {
@@ -171,7 +297,14 @@
         "description": "Anonstake.com allows people to delegate tokens and start staking on Proof-of-Stake blockchains.",
         "website": "https://anonstake.com",
         "payout": {
-            "commission": 8
+            "commission": 8,
+            "payoutDelay": 6,
+            "payoutPeriod": 1
+        },
+        "staking": {
+            "freeSpace": 141374,
+            "minDelegation": 100,
+            "openForDelegation": true
         }
     },
     {
@@ -180,7 +313,14 @@
         "description": "tezwhale.com is one of the most efficent tezos delegation service's.",
         "website": "https://tezwhale.com",
         "payout": {
-            "commission": 100
+            "commission": 24,
+            "payoutDelay": 1,
+            "payoutPeriod": 1
+        },
+        "staking": {
+            "freeSpace": 49444,
+            "minDelegation": 0,
+            "openForDelegation": true
         }
     },
     {
@@ -189,7 +329,14 @@
         "description": "Money Every 3 Days - Low fees, dependable payouts and active participant.",
         "website": "https://moneyevery3days.com",
         "payout": {
-            "commission": 4
+            "commission": 4,
+            "payoutDelay": 1,
+            "payoutPeriod": 1
+        },
+        "staking": {
+            "freeSpace": 681277,
+            "minDelegation": 0,
+            "openForDelegation": true
         }
     },
     {
@@ -198,7 +345,14 @@
         "description": "Tezos Alliance is a french secure node on Tezos",
         "website": "https://twitter.com/TezosAlliance",
         "payout": {
-            "commission": 10
+            "commission": 10,
+            "payoutDelay": 6,
+            "payoutPeriod": 1
+        },
+        "staking": {
+            "freeSpace": 9444,
+            "minDelegation": 1,
+            "openForDelegation": true
         }
     },
     {
@@ -207,7 +361,14 @@
         "description": "Your trusted baker, active since cycle 3",
         "website": "https://tezosteam.com/",
         "payout": {
-            "commission": 14
+            "commission": 0,
+            "payoutDelay": 6,
+            "payoutPeriod": 1
+        },
+        "staking": {
+            "freeSpace": 335639,
+            "minDelegation": 10,
+            "openForDelegation": true
         }
     },
     {
@@ -216,7 +377,14 @@
         "description": "We're currently the only non-promoted baker on Baking-Bad Top 10",
         "website": "https://mintcapital.tech/",
         "payout": {
-            "commission": 8
+            "commission": 14.99,
+            "payoutDelay": 6,
+            "payoutPeriod": 1
+        },
+        "staking": {
+            "freeSpace": 18475,
+            "minDelegation": 0,
+            "openForDelegation": true
         }
     },
     {
@@ -225,7 +393,14 @@
         "description": "Trustless Digital Asset Management",
         "website": "https://stake.capital",
         "payout": {
-            "commission": 10
+            "commission": 10,
+            "payoutDelay": 6,
+            "payoutPeriod": 1
+        },
+        "staking": {
+            "freeSpace": 410810,
+            "minDelegation": 0,
+            "openForDelegation": true
         }
     },
     {
@@ -234,7 +409,14 @@
         "description": "HappyTezos is your trusted Tezos Baker | Delegation Service based in EU. We have paid out over 600 000 XTZ to our delegators already! Using HSM and secure datacenters in Europe. Welcome on board!",
         "website": "https://www.happytezos.com/",
         "payout": {
-            "commission": 15
+            "commission": 15,
+            "payoutDelay": 6,
+            "payoutPeriod": 1
+        },
+        "staking": {
+            "freeSpace": 3419897,
+            "minDelegation": 0,
+            "openForDelegation": true
         }
     },
     {
@@ -243,7 +425,14 @@
         "description": "Secure Non-Custodial Staking",
         "website": "https://www.p2p.org",
         "payout": {
-            "commission": 9.95
+            "commission": 9.95,
+            "payoutDelay": 1,
+            "payoutPeriod": 1
+        },
+        "staking": {
+            "freeSpace": 1825196,
+            "minDelegation": 0,
+            "openForDelegation": true
         }
     },
     {
@@ -252,7 +441,14 @@
         "description": "Staking as a Service Provider based in Singapore and Japan. Start Earning Staking Rewards.　| Improve Blockchain UX and make it accessible for everyone.",
         "website": "https://stir.network/",
         "payout": {
-            "commission": 14
+            "commission": 14,
+            "payoutDelay": 6,
+            "payoutPeriod": 1
+        },
+        "staking": {
+            "freeSpace": 358732,
+            "minDelegation": 0,
+            "openForDelegation": true
         }
     },
     {
@@ -261,7 +457,14 @@
         "description": "Baking Tacos is a crunchy, delicious, and extremely satisfying Tezos baker. Our 'Awesome' payouts rating and 'AAA' ranking add to our sweet-n-savory flavor.",
         "website": "https://bakingtacos.com",
         "payout": {
-            "commission": 8
+            "commission": 8,
+            "payoutDelay": 6,
+            "payoutPeriod": 1
+        },
+        "staking": {
+            "freeSpace": 94740,
+            "minDelegation": 0,
+            "openForDelegation": true
         }
     },
     {
@@ -270,7 +473,14 @@
         "description": "FreshTEZOS, one of the oldest Tezos bakers, runs on bare metal in a SSAE16 SOC2 certified Tier 3 datacenter, geographically distributed private peers, wrapped in 24/7 monitoring, alerting, and analytics.",
         "website": "https://freshtezos.com/",
         "payout": {
-            "commission": 10
+            "commission": 14.99,
+            "payoutDelay": 6,
+            "payoutPeriod": 1
+        },
+        "staking": {
+            "freeSpace": 332583,
+            "minDelegation": 0,
+            "openForDelegation": true
         }
     },
     {
@@ -279,11 +489,18 @@
         "description": "TezoShop is PRO Tezos baker ",
         "website": "https://tezoshop.art",
         "payout": {
-            "commission": 3
+            "commission": 15,
+            "payoutDelay": 6,
+            "payoutPeriod": 1
         },
         "status": {
             "disabled": false,
             "note:": "No more capacity"
+        },
+        "staking": {
+            "freeSpace": 30448,
+            "minDelegation": 0,
+            "openForDelegation": true
         }
     },
     {
@@ -292,11 +509,18 @@
         "description": "Money Every 3 Days - Please switch to new baker address",
         "website": "https://moneyevery3days.com",
         "payout": {
-            "commission": 4
+            "commission": 4,
+            "payoutDelay": 1,
+            "payoutPeriod": 1
         },
         "status": {
             "disabled": true,
             "note:": "Outdated"
+        },
+        "staking": {
+            "freeSpace": 179750,
+            "minDelegation": 0,
+            "openForDelegation": true
         }
     },
     {
@@ -305,7 +529,14 @@
         "description": "easy as pie baking. 5% low fees. pro privacy. no signup. powerful secure servers. non-custodial staking. low minimums, 10 tez to start. start delegating today! thank you for supporting tezos.",
         "website": "https://steakandbake.github.io",
         "payout": {
-            "commission": 5
+            "commission": 5,
+            "payoutDelay": 6,
+            "payoutPeriod": 1
+        },
+        "staking": {
+            "freeSpace": 163875,
+            "minDelegation": 10,
+            "openForDelegation": true
         }
     },
     {
@@ -314,7 +545,14 @@
         "description": "Secure and stable Tezos baker service from China team",
         "website": "https://www.bitcat365.com",
         "payout": {
-            "commission": 8
+            "commission": 8,
+            "payoutDelay": 6,
+            "payoutPeriod": 1
+        },
+        "staking": {
+            "freeSpace": 110955,
+            "minDelegation": 100,
+            "openForDelegation": true
         }
     }
 ]
