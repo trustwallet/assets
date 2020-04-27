@@ -17,13 +17,11 @@ jobs:
     - name: Cache node modules
       uses: actions/cache@v1
       id: npm-cache
-      env:
-        cache-name: cache-node-modules
       with:
         path: ~/.npm # npm cache files are stored in `~/.npm` on Linux/macOS
         key: ${{ runner.os }}-build-${{ hashFiles('**/package-lock.json') }}
     - name: Install Dependencies
-      if: steps.npm-cache.outputs.cache-hit != 'true'
-      run: npm install
+      if: steps.npm-cache.outputs.cache-hit == 'false'
+      run: npm ci
     - name: Run test
       run: npm t
