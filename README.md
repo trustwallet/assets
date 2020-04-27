@@ -1,6 +1,6 @@
 # Trust Wallet Assets Info
 
-[![Build Status](https://dev.azure.com/TrustWallet/Assets/_apis/build/status/trustwallet.assets?branchName=master)](https://dev.azure.com/TrustWallet/Assets/_build/latest?definitionId=42&branchName=master)
+![CI](https://github.com/trustwallet/assets/workflows/Daily%20Update/badge.svg)
 
 ## Overview
 Hello and welcome to Trust Wallet assets info contribution guide. We appreciate your effort to open-source.
