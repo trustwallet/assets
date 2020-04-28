@@ -34,7 +34,8 @@ import { BakingBadBaker } from "../src/test/models";
             }
         }
 
-        // Enable baker if has capacity. TODO remoev check when implemented check on Blockatlas
+        // TODO remove check when implemented capacity cehck logic on Blockatlas
+        // Enable baker if has capacity
         if (freeSpace > 0 && val.hasOwnProperty("status")) {
             delete val.status
         }
