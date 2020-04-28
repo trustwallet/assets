@@ -34,11 +34,15 @@ import { BakingBadBaker } from "../src/test/models";
             }
         }
 
-        val["staking"] = {
-            freeSpace: freeSpace,
-            minDelegation: bakerInfo.minDelegation,
-            openForDelegation: bakerInfo.openForDelegation
+        // Enable baker if has capacity. TODO remoev check when implemented check on Blockatlas
+        if (freeSpace > 0 && val.hasOwnProperty("status")) {
+            delete val.status
         }
+
+        if (bakerInfo.minDelegation > 0 || bakerInfo.serviceHealth !== "active") {
+            return acm
+        }
+
         acm.push(val)
         return acm
     }, [])
