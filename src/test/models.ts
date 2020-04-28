@@ -5,6 +5,7 @@ export interface ValidatorModel {
     website: string,
     staking: Staking
     payout: Payout
+    status: ValidatorStatus
 }
 
 interface Staking {
@@ -17,6 +18,11 @@ interface Payout {
   commission: number // in %
   payoutDelay: number // in cycles
   payoutPeriod: number
+}
+
+interface ValidatorStatus {
+  disabled: boolean;
+  note: string;
 }
 
 // Minimal property requirements for asset info file

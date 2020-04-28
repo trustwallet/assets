@@ -25,8 +25,17 @@ import { BakingBadBaker } from "../src/test/models";
         val.payout.payoutDelay = bakerInfo.payoutDelay
         val.payout.payoutPeriod = bakerInfo.payoutPeriod
 
+        const freeSpace =  Number((bakerInfo.freeSpace).toFixed(0))
+        // Give baker status false if no more capacity
+        if (freeSpace <= 0) {
+            val.status = {
+                "disabled": true,
+                "note": "No more capacity"
+            }
+        }
+
         val["staking"] = {
-            freeSpace:Number((bakerInfo.freeSpace).toFixed(0)),
+            freeSpace: freeSpace,
             minDelegation: bakerInfo.minDelegation,
             openForDelegation: bakerInfo.openForDelegation
         }
