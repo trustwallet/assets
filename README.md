@@ -71,7 +71,7 @@ Smart contract address update procedure:
 - file extension: `png`. Uppercase `PNG` is considered as invalid
 - name：file name requirements for: `logo.png` name, but [folder naming](#repository-structure) where they placed is most important part of contribution
 - dimension: `256px by 256px` or `512px by 512px`
-- size: up to `100kb`. TIP: use free drag and drop online service [tinypng](https://tinypng.com/) to optimize image size
+- size: up to `100 KB`. TIP: use free drag and drop online service [tinypng](https://tinypng.com/) to optimize image size
 - background: preferably transparent
 
 ## dApp image naming requirements
@@ -98,7 +98,7 @@ We utilize [Beaking Bed API](https://baking-bad.org/docs/api) to collect and upd
 To remain in validators list:
 1. Baker must accept minimum `0` XTZ for delegation
 2. Baker must payout regularly
-3. Baker must maintaine available staking capacity (subject to temporary removal from the list when capacity reached below 0)
+3. Baker must maintain available staking capacity (subject to temporary removal from the list when capacity reached below 0)
 
 ## Repository structure
 
