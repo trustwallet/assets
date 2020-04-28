@@ -94,7 +94,7 @@ Smart contract address update procedure:
 
 ### Validators specific requirements
 ##### Tezos
-We utilize [Beaking Bed API](https://baking-bad.org/docs/api) to collect and update exciting bakers list.
+We utilize [Baking Bad API](https://baking-bad.org/docs/api) to collect and update existing bakers list.
 To remain in validators list:
 1. Baker must accept minimum `0` XTZ for delegation
 2. Baker must payout regularly
