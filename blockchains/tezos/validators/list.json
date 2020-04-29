@@ -10,7 +10,7 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "freeSpace": 7723,
+            "freeSpace": 8656,
             "minDelegation": 0,
             "openForDelegation": true
         }
@@ -26,7 +26,7 @@
             "payoutPeriod": 5
         },
         "staking": {
-            "freeSpace": 2616054,
+            "freeSpace": 2627586,
             "minDelegation": 0,
             "openForDelegation": true
         }
@@ -42,7 +42,7 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "freeSpace": 72927,
+            "freeSpace": 76470,
             "minDelegation": 0,
             "openForDelegation": true
         }
@@ -58,7 +58,7 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "freeSpace": 3472251,
+            "freeSpace": 3476678,
             "minDelegation": 0,
             "openForDelegation": true
         }
@@ -74,7 +74,7 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "freeSpace": 4445293,
+            "freeSpace": 4542131,
             "minDelegation": 0,
             "openForDelegation": true
         }
@@ -90,7 +90,7 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "freeSpace": 9096034,
+            "freeSpace": 9147322,
             "minDelegation": 0,
             "openForDelegation": true
         }
@@ -106,7 +106,7 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "freeSpace": 2840657,
+            "freeSpace": 2851394,
             "minDelegation": 0,
             "openForDelegation": true
         }
@@ -122,7 +122,7 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "freeSpace": 3220968,
+            "freeSpace": 3206242,
             "minDelegation": 0,
             "openForDelegation": true
         }
@@ -142,7 +142,7 @@
             "note:": "Minimum delegation 1000 XTZ"
         },
         "staking": {
-            "freeSpace": 435666,
+            "freeSpace": 433752,
             "minDelegation": 1000,
             "openForDelegation": true
         }
@@ -158,7 +158,7 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "freeSpace": 1685153,
+            "freeSpace": 1692519,
             "minDelegation": 0,
             "openForDelegation": true
         }
@@ -174,7 +174,7 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "freeSpace": 81672,
+            "freeSpace": 83133,
             "minDelegation": 0,
             "openForDelegation": true
         }
@@ -190,7 +190,7 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "freeSpace": 170305,
+            "freeSpace": 177012,
             "minDelegation": 0,
             "openForDelegation": true
         }
@@ -206,7 +206,7 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "freeSpace": 125944,
+            "freeSpace": 129281,
             "minDelegation": 0,
             "openForDelegation": true
         }
@@ -222,8 +222,8 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "freeSpace": 1537012,
-            "minDelegation": 10,
+            "freeSpace": 1547809,
+            "minDelegation": 0,
             "openForDelegation": true
         }
     },
@@ -238,8 +238,8 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "freeSpace": 601520,
-            "minDelegation": 10,
+            "freeSpace": 602592,
+            "minDelegation": 0,
             "openForDelegation": true
         }
     },
@@ -254,7 +254,7 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "freeSpace": 278819,
+            "freeSpace": 344285,
             "minDelegation": 0,
             "openForDelegation": true
         }
@@ -270,7 +270,7 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "freeSpace": 836724,
+            "freeSpace": 851975,
             "minDelegation": 10,
             "openForDelegation": true
         }
@@ -286,7 +286,7 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "freeSpace": 3529838,
+            "freeSpace": 3606267,
             "minDelegation": 0,
             "openForDelegation": true
         }
@@ -302,7 +302,7 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "freeSpace": 145790,
+            "freeSpace": 145484,
             "minDelegation": 100,
             "openForDelegation": true
         }
@@ -318,7 +318,7 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "freeSpace": 49905,
+            "freeSpace": 50412,
             "minDelegation": 0,
             "openForDelegation": true
         }
@@ -334,7 +334,7 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "freeSpace": 690702,
+            "freeSpace": 707796,
             "minDelegation": 0,
             "openForDelegation": true
         }
@@ -350,7 +350,7 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "freeSpace": 8105,
+            "freeSpace": 9040,
             "minDelegation": 1,
             "openForDelegation": true
         }
@@ -361,12 +361,12 @@
         "description": "Your trusted baker, active since cycle 3",
         "website": "https://tezosteam.com/",
         "payout": {
-            "commission": 0,
+            "commission": 25,
             "payoutDelay": 6,
             "payoutPeriod": 1
         },
         "staking": {
-            "freeSpace": 1875826,
+            "freeSpace": 1864411,
             "minDelegation": 10,
             "openForDelegation": true
         }
@@ -382,7 +382,7 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "freeSpace": 18759,
+            "freeSpace": 19767,
             "minDelegation": 0,
             "openForDelegation": true
         }
@@ -398,7 +398,7 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "freeSpace": 400355,
+            "freeSpace": 402887,
             "minDelegation": 0,
             "openForDelegation": true
         }
@@ -414,7 +414,7 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "freeSpace": 3416582,
+            "freeSpace": 3293616,
             "minDelegation": 0,
             "openForDelegation": true
         }
@@ -430,7 +430,7 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "freeSpace": 1841368,
+            "freeSpace": 1810020,
             "minDelegation": 0,
             "openForDelegation": true
         }
@@ -446,7 +446,7 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "freeSpace": 359718,
+            "freeSpace": 359866,
             "minDelegation": 0,
             "openForDelegation": true
         }
@@ -462,7 +462,7 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "freeSpace": 79967,
+            "freeSpace": 71127,
             "minDelegation": 0,
             "openForDelegation": true
         }
@@ -478,7 +478,7 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "freeSpace": 334750,
+            "freeSpace": 339720,
             "minDelegation": 0,
             "openForDelegation": true
         }
@@ -494,7 +494,7 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "freeSpace": 29337,
+            "freeSpace": 30286,
             "minDelegation": 0,
             "openForDelegation": true
         }
@@ -514,7 +514,7 @@
             "note:": "Outdated"
         },
         "staking": {
-            "freeSpace": 180441,
+            "freeSpace": 190028,
             "minDelegation": 0,
             "openForDelegation": true
         }
@@ -530,7 +530,7 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "freeSpace": 167574,
+            "freeSpace": 177222,
             "minDelegation": 10,
             "openForDelegation": true
         }
@@ -546,7 +546,7 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "freeSpace": 111361,
+            "freeSpace": 112007,
             "minDelegation": 100,
             "openForDelegation": true
         }
@@ -562,7 +562,7 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "freeSpace": -121765,
+            "freeSpace": -125575,
             "minDelegation": 10,
             "openForDelegation": true
         },
