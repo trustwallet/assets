@@ -34,14 +34,16 @@ import { BakingBadBaker } from "../src/test/models";
             }
         }
 
-        // TODO remove check when implemented capacity cehck logic on Blockatlas
-        // Enable baker if has capacity
+        // Enable baker if has capacity 
         if (freeSpace > 0 && val.hasOwnProperty("status")) {
             delete val.status
         }
 
         if (bakerInfo.minDelegation > 0 || bakerInfo.serviceHealth !== "active") {
-            return acm
+            val.status = {
+                "disabled": true,
+                "note": `Must allow minimum delegation 0, current ${bakerInfo.minDelegation} and to be active, current status ${bakerInfo.serviceHealth}`
+            }
         }
 
         acm.push(val)
