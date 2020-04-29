@@ -99,6 +99,17 @@
         }
     },
     {
+        "id": "tz1awXW7wuXy21c66vBudMXQVAPgRnqqwgTH",
+        "name": "InfStones",
+        "description": "World's leading cloud infrastructure and staking as a service provicer for blockchains. Supernodes on EOS, TRON, VeChain, Ontology, LOOM, IOST and many other chains.",
+        "website": "https://infstones.io",
+        "payout": {
+            "commission": 40,
+            "payoutDelay": 6,
+            "payoutPeriod": 1
+        }
+    },
+    {
         "id": "tz1RCFbB9GpALpsZtu6J58sb74dm8qe6XBzv",
         "name": "Staked",
         "description": "Staked is the leading staking partner for the smartest investors in crypto, delivering staking rewards securely and reliably. Staked supports the largest number of chains and offers comprehensive reporting for tax & accounting.",
@@ -116,6 +127,28 @@
         "website": "https://xtzdelegate.io/",
         "payout": {
             "commission": 10,
+            "payoutDelay": 6,
+            "payoutPeriod": 1
+        }
+    },
+    {
+        "id": "tz1MXFrtZoaXckE41bjUCSjAjAap3AFDSr3N",
+        "name": "Everstake",
+        "description": "Everstake - Staking Service Platform. Delegate XTZ with Everstake, your trusted staking partner.",
+        "website": "https://everstake.one/",
+        "payout": {
+            "commission": 8,
+            "payoutDelay": 6,
+            "payoutPeriod": 1
+        }
+    },
+    {
+        "id": "tz1NortRftucvAkD1J58L32EhSVrQEWJCEnB",
+        "name": "Bake'n'Rolls",
+        "description": "Bake'n'Rolls - one of the first Tezos bakery. Our mission is to deliver freshly baked pretzels on every cycle.",
+        "website": "https://bakenrolls.com/",
+        "payout": {
+            "commission": 9,
             "payoutDelay": 6,
             "payoutPeriod": 1
         }
