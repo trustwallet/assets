@@ -34,11 +34,18 @@ import { BakingBadBaker } from "../src/test/models";
             }
         }
 
-        val["staking"] = {
-            freeSpace: freeSpace,
-            minDelegation: bakerInfo.minDelegation,
-            openForDelegation: bakerInfo.openForDelegation
+        // Enable baker if has capacity 
+        if (freeSpace > 0 && val.hasOwnProperty("status")) {
+            delete val.status
         }
+
+        if (bakerInfo.minDelegation > 0 || bakerInfo.serviceHealth !== "active") {
+            val.status = {
+                "disabled": true,
+                "note": `Must allow minimum delegation 0, current ${bakerInfo.minDelegation} and to be active, current status ${bakerInfo.serviceHealth}`
+            }
+        }
+
         acm.push(val)
         return acm
     }, [])

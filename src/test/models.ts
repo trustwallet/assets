@@ -87,4 +87,5 @@ export interface BakingBadBaker {
   openForDelegation: boolean
   payoutDelay: number
   payoutPeriod: number
+  serviceHealth: string
 }
