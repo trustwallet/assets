@@ -19,6 +19,10 @@
             "commission": 12,
             "payoutDelay": 1,
             "payoutPeriod": 5
+        },
+        "status": {
+            "disabled": true,
+            "note": "Must allow minimum delegation 0, current 1000 and to be active, current status active"
         }
     },
     {
@@ -129,6 +133,10 @@
             "commission": 10,
             "payoutDelay": 6,
             "payoutPeriod": 1
+        },
+        "status": {
+            "disabled": true,
+            "note": "Must allow minimum delegation 0, current 20 and to be active, current status active"
         }
     },
     {
@@ -173,6 +181,10 @@
             "commission": 10,
             "payoutDelay": 6,
             "payoutPeriod": 1
+        },
+        "status": {
+            "disabled": true,
+            "note": "Must allow minimum delegation 0, current 10 and to be active, current status active"
         }
     },
     {
@@ -272,6 +284,10 @@
             "commission": 15,
             "payoutDelay": 6,
             "payoutPeriod": 1
+        },
+        "status": {
+            "disabled": true,
+            "note": "Must allow minimum delegation 0, current 100 and to be active, current status active"
         }
     }
 ]
