@@ -2,13 +2,9 @@
     "name": "Ethereum",
     "website": "https://ethereum.org/",
     "source_code": "https://github.com/ethereum",
-    "whitepaper": "https://github.com/ethereum/wiki/wiki/White-Paper",
-    "explorers": [
-        {
-            "name": "Ethereum",
-            "url": "https://etherscan.io/"
-        }
-    ],
+    "white_paper": "https://github.com/ethereum/wiki/wiki/White-Paper",
+    "short_description": "Open source platform to write and distribute decentralized applications.",
+    "description": "Open source platform to write and distribute decentralized applications.",
     "socials": [
         {
             "name": "Twitter",
@@ -21,11 +17,5 @@
             "handle": "ethereum"
         }
     ],
-    "details": [
-        {
-            "language": "en",
-            "description": "Open source platform to write and distribute decentralized applications."
-        }
-    ],
-    "data_source": "crowd"
+    "explorer": "https://etherscan.io/"
 }

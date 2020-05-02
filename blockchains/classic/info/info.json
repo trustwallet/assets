@@ -2,13 +2,9 @@
     "name": "Ethereum Classic",
     "website": "https://ethereumclassic.org/",
     "source_code": "https://github.com/ethereumclassic/",
-    "whitepaper": "https://whitepaperdatabase.com/ethereum-classic-etc-whitepaper/",
-    "explorers": [
-        {
-            "name": "Blockscout",
-            "url": "https://blockscout.com/etc/mainnet/"
-        }
-    ],
+    "white_paper": "https://whitepaperdatabase.com/ethereum-classic-etc-whitepaper/",
+    "short_description": "Ethereum Classic is an open-source, public, blockchain-based distributed computing platform featuring smart contract functionality.It is a continuation of the original Ethereum blockchain.",
+    "description": "After a loophole was exploited by a hacker on June 17th, 2016, resulting in millions of stolen Ether, Ethereum forked to a new chain that aimed to remedy the damages from the hack. Ethereum Classic is the continuation of the original Ethereum blockchain - the classic version.",
     "socials": [
         {
             "name": "Twitter",
@@ -21,11 +17,5 @@
             "handle": "EthereumClassic"
         }
     ],
-    "details": [
-        {
-            "language": "en",
-            "description": "After a loophole was exploited by a hacker on June 17th, 2016, resulting in millions of stolen Ether, Ethereum forked to a new chain that aimed to remedy the damages from the hack. Ethereum Classic is the continuation of the original Ethereum blockchain - the classic version."
-        }
-    ],
-    "data_source": "crowd"
+    "explorer": "https://blockscout.com/etc/mainnet/"
 }

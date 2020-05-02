@@ -2,13 +2,9 @@
     "name": "XRP",
     "website": "https://ripple.com/xrp/",
     "source_code": "https://github.com/ripple",
-    "whitepaper": "https://ripple.com/files/ripple_consensus_whitepaper.pdf",
-    "explorers": [
-        {
-            "name": "XRP Charts",
-            "url": "https://xrpcharts.ripple.com/#/graph/"
-        }
-    ],
+    "white_paper": "https://ripple.com/files/ripple_consensus_whitepaper.pdf",
+    "short_description": "Instantly move money to all corners of the world.",
+    "description": "Instantly move money to all corners of the world.",
     "socials": [
         {
             "name": "Twitter",
@@ -21,11 +17,5 @@
             "handle": "Ripple"
         }
     ],
-    "details": [
-        {
-            "language": "en",
-            "description": "Instantly move money to all corners of the world."
-        }
-    ],
-    "data_source": "crowd"
+    "explorer": "https://xrpcharts.ripple.com/#/graph/"
 }
