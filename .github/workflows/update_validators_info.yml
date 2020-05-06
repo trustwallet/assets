@@ -1,7 +1,7 @@
 name: Update Validators Info
 on:
   schedule:
-    # Run once per day at 19:00 UTC or 12pm PST
+    # Run once per day at 19:00 UTC or 12PM PST
     - cron:  '0 19 * * *'
 jobs:
   update-validators:
@@ -25,4 +25,4 @@ jobs:
        with:
          commit_user_name: trust-wallet-merge-bot
          commit_user_email: mergebot@trustwallet.com
-         commit_message: Daily update
+         commit_message: Update validators info

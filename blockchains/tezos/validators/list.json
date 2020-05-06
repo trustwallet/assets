@@ -8,6 +8,9 @@
             "commission": 8,
             "payoutDelay": 1,
             "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 0
         }
     },
     {
@@ -20,9 +23,8 @@
             "payoutDelay": 1,
             "payoutPeriod": 5
         },
-        "status": {
-            "disabled": true,
-            "note": "Must allow minimum delegation 0, current 1000 and to be active, current status active"
+        "staking": {
+            "minDelegation": 1000
         }
     },
     {
@@ -34,6 +36,9 @@
             "commission": 30,
             "payoutDelay": 6,
             "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 0
         }
     },
     {
@@ -45,6 +50,9 @@
             "commission": 10,
             "payoutDelay": 6,
             "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 0
         }
     },
     {
@@ -56,6 +64,9 @@
             "commission": 10,
             "payoutDelay": 6,
             "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 0
         }
     },
     {
@@ -67,6 +78,9 @@
             "commission": 15,
             "payoutDelay": 6,
             "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 0
         }
     },
     {
@@ -78,6 +92,9 @@
             "commission": 19,
             "payoutDelay": 6,
             "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 0
         }
     },
     {
@@ -89,6 +106,9 @@
             "commission": 8,
             "payoutDelay": 1,
             "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 0
         }
     },
     {
@@ -100,6 +120,9 @@
             "commission": 12.5,
             "payoutDelay": 6,
             "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 0
         }
     },
     {
@@ -111,6 +134,9 @@
             "commission": 40,
             "payoutDelay": 6,
             "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 0
         }
     },
     {
@@ -122,6 +148,9 @@
             "commission": 10,
             "payoutDelay": 6,
             "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 0
         }
     },
     {
@@ -134,9 +163,8 @@
             "payoutDelay": 6,
             "payoutPeriod": 1
         },
-        "status": {
-            "disabled": true,
-            "note": "Must allow minimum delegation 0, current 20 and to be active, current status active"
+        "staking": {
+            "minDelegation": 20
         }
     },
     {
@@ -148,6 +176,9 @@
             "commission": 8,
             "payoutDelay": 6,
             "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 0
         }
     },
     {
@@ -159,6 +190,9 @@
             "commission": 9,
             "payoutDelay": 6,
             "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 0
         }
     },
     {
@@ -170,6 +204,9 @@
             "commission": 8,
             "payoutDelay": 6,
             "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 0
         }
     },
     {
@@ -182,9 +219,8 @@
             "payoutDelay": 6,
             "payoutPeriod": 1
         },
-        "status": {
-            "disabled": true,
-            "note": "Must allow minimum delegation 0, current 10 and to be active, current status active"
+        "staking": {
+            "minDelegation": 10
         }
     },
     {
@@ -196,6 +232,9 @@
             "commission": 4,
             "payoutDelay": 1,
             "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 0
         }
     },
     {
@@ -207,6 +246,9 @@
             "commission": 14.99,
             "payoutDelay": 6,
             "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 0
         }
     },
     {
@@ -218,6 +260,9 @@
             "commission": 10,
             "payoutDelay": 6,
             "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 0
         }
     },
     {
@@ -229,6 +274,9 @@
             "commission": 15,
             "payoutDelay": 6,
             "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 0
         }
     },
     {
@@ -240,6 +288,9 @@
             "commission": 9.95,
             "payoutDelay": 1,
             "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 0
         }
     },
     {
@@ -251,6 +302,9 @@
             "commission": 14,
             "payoutDelay": 6,
             "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 0
         }
     },
     {
@@ -262,6 +316,9 @@
             "commission": 8,
             "payoutDelay": 6,
             "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 0
         }
     },
     {
@@ -273,6 +330,9 @@
             "commission": 14.99,
             "payoutDelay": 6,
             "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 0
         }
     },
     {
@@ -285,9 +345,8 @@
             "payoutDelay": 6,
             "payoutPeriod": 1
         },
-        "status": {
-            "disabled": true,
-            "note": "Must allow minimum delegation 0, current 100 and to be active, current status active"
+        "staking": {
+            "minDelegation": 100
         }
     }
 ]
