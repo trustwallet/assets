@@ -6,7 +6,7 @@ payments:
   - amount: 1
     token: BNB
     address: bnb1tqq9llyr3dyjd559dha6z5r5etk3qfwk07m098
-payment
+payment:
   # The tolerance for slightly lower amount, in percentage.  Valid range: 95 -- 100
   amountTolerancePct: 96
 # Message templates
