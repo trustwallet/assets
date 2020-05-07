@@ -24,13 +24,14 @@ import { BakingBadBaker } from "../src/test/models";
         val.payout.commission = Number((bakerInfo.fee * 100).toFixed(2))
         val.payout.payoutDelay = bakerInfo.payoutDelay
         val.payout.payoutPeriod = bakerInfo.payoutPeriod
+        val.staking.minDelegation = bakerInfo.minDelegation
 
         const freeSpace =  Number((bakerInfo.freeSpace).toFixed(0))
-        // Give baker status false if no more capacity
+        // Disable baker if no more capacity
         if (freeSpace <= 0) {
             val.status = {
                 "disabled": true,
-                "note": "No more capacity"
+                "note": `No more capacity: ${freeSpace}`
             }
         }
 
@@ -39,10 +40,10 @@ import { BakingBadBaker } from "../src/test/models";
             delete val.status
         }
 
-        if (bakerInfo.minDelegation > 0 || bakerInfo.serviceHealth !== "active") {
+        if (bakerInfo.serviceHealth !== "active") {
             val.status = {
                 "disabled": true,
-                "note": `Must allow minimum delegation 0, current ${bakerInfo.minDelegation} and to be active, current status ${bakerInfo.serviceHealth}`
+                "note": `According to Baking Bad API, baker is not active, current status ${bakerInfo.serviceHealth}, see: https://api.baking-bad.org/v2/bakers/${bakerInfo.address}`, 
             }
         }
 
