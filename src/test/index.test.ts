@@ -17,8 +17,8 @@ import {
     getChainValidatorsListPath,
     getChainWhitelistPath,
     getChainAssetsList,
+    getChainValidatorsList,
     isChecksum,
-    isChainAssetInfoExistSync,
     isLogoDimentionOK,
     isLogoSizeOK,
     isLowerCase,
@@ -34,7 +34,6 @@ import {
     readFileSync,
     rootDirAllowedFiles,
     stakingChains,
-    Solana
 } from "./helpers"
 import { ValidatorModel } from "./models";
 import { getHandle } from "../../script/gen_info";
@@ -152,13 +151,13 @@ describe(`Test "blockchains" folder`, () => {
         })
 
         stakingChains.forEach(chain => {
-            const listPath = getChainValidatorsListPath(chain)
-            const validatorsList = JSON.parse(readFileSync(listPath))
+            const validatorsListPath = getChainValidatorsListPath(chain)
+            const validatorsList = getChainValidatorsList(chain)
 
             test(`Chain ${chain} validator must have correct structure and valid JSON format`, () => {
                 validatorsList.forEach((val: ValidatorModel) => {
                     expect(isValidatorHasAllKeys(val), `Some key and/or type missing for validator ${JSON.stringify(val)}`).toBe(true)
-                    expect(isValidJSON(listPath), `Not valid json file at path ${listPath}`).toBe(true)
+                    expect(isValidJSON(validatorsListPath), `Not valid json file at path ${validatorsListPath}`).toBe(true)
                 })
             })
 
@@ -373,20 +372,17 @@ describe("Test blacklist and whitelist", () => {
         const whiteList = JSON.parse(readFileSync(getChainWhitelistPath(chain)))
         const blackList = JSON.parse(readFileSync(getChainBlacklistPath(chain)))
 
-        const whitelistMap = mapList(whiteList)
-        const blacklistMap = mapList(blackList)
-
         test(`Whitelist should not contain assets from blacklist on ${chain} chain`, () => {
+            const blacklistMap = mapList(blackList)
             whiteList.forEach(a => {
-                const isWhitelistInBlacklist = blacklistMap.hasOwnProperty(a)
-                expect(isWhitelistInBlacklist, `Found whitelist asset ${a} in blacklist on chain ${chain}`).toBe(false)
+                expect(a in blacklistMap, `Found whitelist asset ${a} in blacklist on chain ${chain}`).toBe(false)
             })
         })
 
         test(`Blacklist should not contain assets from whitelist on ${chain} chain`, () => {
+            const whitelistMap = mapList(whiteList)
             blackList.forEach(a => {
-                const isBlacklistInWhitelist = whitelistMap.hasOwnProperty(a)
-                expect(isBlacklistInWhitelist, `Found blacklist asset ${a} in whitelist on chain ${chain}`).toBe(false)
+                expect(a in whitelistMap, `Found blacklist asset ${a} in whitelist on chain ${chain}`).toBe(false)
             })
         })
     })

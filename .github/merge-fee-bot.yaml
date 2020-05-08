@@ -1,26 +1,43 @@
 # Expected Payment.  Can be more than one options.
 payments:
-  - amount: 1000
+  - amount: 2000
     token: TWT
     address: bnb1tqq9llyr3dyjd559dha6z5r5etk3qfwk07m098
-  - amount: 0.5
+  - amount: 1
     token: BNB
     address: bnb1tqq9llyr3dyjd559dha6z5r5etk3qfwk07m098
+payment:
+  # The tolerance for slightly lower amount, in percentage.  Valid range: 95 -- 100
+  amountTolerancePct: 96
 # Message templates
 message:
-    initial: |
-        Hi! In order to compensate for the efforts of processing PRs, we kindly ask for a contribution.
-        See the [Pull Request Fee FAQ](https://developer.trustwallet.com/add_new_asset/pr-fee).
-        \nPlease pay  **$PAY1_AMOUNT $PAY1_CURRENCY**  with the memo **$PAY1_MEMO**  to the address `$PAY1_ADDRESS`.
-        Alternatively, 0.5 BNB is also accepted (same memo & address).
-        \n$QR1_SIMPLE
-        \n*Notes*:
-        * Trust Wallet Tokens (TWT) are distributed to new users through our [Referral Program](https://community.trustwallet.com/t/invite-a-friend-earn-trust-wallet-token-twt/4125).
-        * Payment evaluation happens when there is activity on the PR -- write a comment if you have performed the payment.
-        * When payment is detected, an Accept Review is automatically placed on the PR, which is a condition for merge.  The merge is still done manually.
-    notReceived: Fee has not been received yet in full.\n\n$TX_LIST
-    received: Fee payment received, thanks! \n\n$PAID_AMOUNT $PAID_CURRENCY\n\n$TX_LIST
-    reviewed: Review is not needed any more, no more fee required.
+  initial: |
+    Hi! In order to compensate for the efforts of processing PRs, we kindly ask for a contribution.
+    See the [Pull Request Fee FAQ](https://developer.trustwallet.com/add_new_asset/pr-fee).
+    \nPlease pay  **$PAY1_AMOUNT $PAY1_CURRENCY**  with the memo **$PAY1_MEMO**  to the address `$PAY1_ADDRESS`.
+    Alternatively, 1 BNB is also accepted (same memo & address).
+    \n$QR1_SIMPLE
+    \n*Notes*:
+    * Trust Wallet Tokens (TWT) are distributed to new users through our [Referral Program](https://community.trustwallet.com/t/invite-a-friend-earn-trust-wallet-token-twt/4125).
+    * Payment evaluation happens when there is activity on the PR -- write a comment if you have performed the payment.
+    * When payment is detected, an Accept Review is automatically placed on the PR, which is a condition for merge.  The merge is still done manually.
+  notReceived: Fee has not been received yet in full.\n\n$TX_LIST
+  received: |
+    Fee payment received, thanks!
+    \nThe PR will be merged soon by a maintainer, and then new/updated logos should be visible in Trust Wallet.
+    Please note that the app caches logos for several days, so if you want to see changes immediately, use a new device, or reinstall Trust Wallet (make sure you have a backup of all your wallets first!).  See the [assets FAQ](https://github.com/trustwallet/assets#faq). 
+    \n$PAID_AMOUNT $PAID_CURRENCY
+    \n$TX_LIST
+  reviewed: Review is not needed any more, no more fee required.
+  reminder: |
+    $USER, kind reminder:  please pay fee:  **$PAY1_AMOUNT $PAY1_CURRENCY**  with the memo **$PAY1_MEMO**  to the address `$PAY1_ADDRESS`.
+    Alternatively, 1 BNB is also accepted (same memo & address).
+    \n$QR1_SIMPLE
+    See the [Pull Request Fee FAQ](https://developer.trustwallet.com/add_new_asset/pr-fee).
+  oldClosing: Maximum PR age reached, auto-closing PR
 label:
   requested: 'Payment Status: Requested'
   paid: 'Payment Status: Paid'
+timeout:
+  maxAgeCloseHours: 60
+  maxIdleRemindHours: 17

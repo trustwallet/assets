@@ -1,6 +1,6 @@
 # Trust Wallet Assets Info
 
-[![Build Status](https://dev.azure.com/TrustWallet/Assets/_apis/build/status/trustwallet.assets?branchName=master)](https://dev.azure.com/TrustWallet/Assets/_build/latest?definitionId=42&branchName=master)
+![CI](https://github.com/trustwallet/assets/workflows/Daily%20Update/badge.svg)
 
 ## Overview
 Hello and welcome to Trust Wallet assets info contribution guide. We appreciate your effort to open-source.
@@ -41,7 +41,7 @@ Token repository [https://github.com/trustwallet/assets](https://github.com/trus
 ### Add new asset
 
 1. Prepare asset, look at [image requirements](#image-requirements), [dapp requirements](#dApp-image-naming-requirments)  
-2. Get familiar with our [folder strcture](#repository-structure), it will give you an understanding where assets should be placed
+2. Get familiar with our [folder structure](#repository-structure), it will give you an understanding where assets should be placed
 3. [Add asset guide](#how-to-add-asset)
 
 ### Update and remove an existing asset
@@ -70,9 +70,9 @@ Smart contract address update procedure:
 ## Image Requirements
 - file extension: `png`. Uppercase `PNG` is considered as invalid
 - name：file name requirements for: `logo.png` name, but [folder naming](#repository-structure) where they placed is most important part of contribution
-- size: `256px by 256px` or `512px by 512px`
+- dimension: `256px by 256px` or `512px by 512px`
+- size: up to `100 KB`. TIP: use free drag and drop online service [tinypng](https://tinypng.com/) to optimize image size
 - background: preferably transparent
-- use simple drag and drop online service [tinypng](https://tinypng.com/) to optimize image size
 
 ## dApp image naming requirements
 - [Folder for upload](https://github.com/trustwallet/assets/tree/master/dapps)
@@ -87,13 +87,24 @@ Smart contract address update procedure:
 - [Submit form for review](https://docs.google.com/forms/d/e/1FAIpQLSd5p9L78zKXIiu9E5yFRPf5UkvsLZ7TbUDLFBRIi1qMd8Td4A/viewform)
 
 ## Staking validators requirements
-// TODO
+### General requirements
+1. Add validator basic information to the bottom of the list, see example for: [Kava](https://github.com/trustwallet/assets/tree/master/blockchains/kava/validators/list.json), [Cosmos](https://github.com/trustwallet/assets/tree/master/blockchains/cosmos/validators/list.json), [Tezos](https://github.com/trustwallet/assets/tree/master/blockchains/tezos/validators/list.json), [Tron](https://github.com/trustwallet/assets/tree/master/blockchains/tron/validators/list.json), [Solana](https://github.com/trustwallet/assets/tree/master/blockchains/solana/validators/list.json), [Harmony](https://github.com/trustwallet/assets/tree/master/blockchains/harmony/validators/list.json)
+2. Add validator logo image to `blockchains/<chain>/validators/assets/<validator_address>/logo.png` [see images requirements](#image-requirements)
+3. Check chain [specific](#validators-specific-requirements) requirements 
+
+### Validators specific requirements
+##### Tezos
+We utilize [Baking Bad API](https://baking-bad.org/docs/api) to collect and update existing bakers list.
+To remain in validators list:
+1. Baker must accept minimum `0` XTZ for delegation
+2. Baker must payout regularly
+3. Baker must maintain available staking capacity (subject to temporary removal from the list when capacity reached below 0)
 
 ## Repository structure
 
 `blockchains` folder contains many subfolders and represents chains e.g. `ethereum`, `binance` ...
 
-`assets` folder contains token folders named by smart contract address in `checksum address` for Ethereum like networks and inside of it `logo.png` - image representation. Note: Lowercase or uppercase contract addresses are considered as invalid. You can find the checksum address by searching on [ etherscan.io](https://etherscan.io), for example stablecoin [DAI](https://etherscan.io/address/0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359) the checksum address is located at the top left corner of the page and has both uppercase and lowercase characters. Or [convert Ethereum address to Checksum address](https://piyolab.github.io/sushiether/RunScrapboxCode/?web3=1.0.0-beta.33&code=https://scrapbox.io/api/code/sushiether/web3.js_-_Ethereum_%E3%81%AE%E3%82%A2%E3%83%89%E3%83%AC%E3%82%B9%E3%82%92%E3%83%81%E3%82%A7%E3%83%83%E3%82%AF%E3%82%B5%E3%83%A0%E4%BB%98%E3%81%8D%E3%82%A2%E3%83%89%E3%83%AC%E3%82%B9%E3%81%AB%E5%A4%89%E6%8F%9B%E3%81%99%E3%82%8B/demo.js). For other networks the address must be specified as it was originated on the chain, e.g TRON TRC10: `1002000`, TRON TRC20: `TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t` etc ...
+`assets` folder contains token folders named by smart contract address in `checksum address` for Ethereum like networks and inside of it `logo.png` - image representation. Note: Lowercase or uppercase contract addresses are considered as invalid. You can find the checksum address by searching on [etherscan.io](https://etherscan.io), for example stablecoin [DAI](https://etherscan.io/address/0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359) the checksum address is located at the top left corner of the page and has both uppercase and lowercase characters. Or [convert Ethereum address to Checksum address](https://piyolab.github.io/sushiether/RunScrapboxCode/?web3=1.0.0-beta.33&code=https://scrapbox.io/api/code/sushiether/web3.js_-_Ethereum_%E3%81%AE%E3%82%A2%E3%83%89%E3%83%AC%E3%82%B9%E3%82%92%E3%83%81%E3%82%A7%E3%83%83%E3%82%AF%E3%82%B5%E3%83%A0%E4%BB%98%E3%81%8D%E3%82%A2%E3%83%89%E3%83%AC%E3%82%B9%E3%81%AB%E5%A4%89%E6%8F%9B%E3%81%99%E3%82%8B/demo.js). For other networks the address must be specified as it was originated on the chain, e.g TRON TRC10: `1002000`, TRON TRC20: `TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t` etc ...
 
 `info` folder contains for now only `logo.png` that represents the coin image
 
