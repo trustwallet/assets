@@ -2,5 +2,11 @@
     "name": "Bitcoin ATM",
     "website": "https://bitcoinatm.ltd/",
     "short_description": "BATM coins are made for the purpose of expanding Crypto Currencies ATM around the world associated with the Altcoin listed on 365.stream.",
-    "explorer": "https://etherscan.io/token/0x05b8cb3F1f1F46cEAE3187c56AF5B223CF2D831A"
+    "explorer": [
+        {
+            "name": "Etherscan",
+            "url": "https://etherscan.io/token/0x05b8cb3F1f1F46cEAE3187c56AF5B223CF2D831A"
+        }
+    ],
+    "data_source": "crowd"
 }
