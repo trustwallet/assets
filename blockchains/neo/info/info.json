@@ -5,12 +5,6 @@
     "white_paper": "http://docs.neo.org/en-us",
     "short_description": "NEO is a non-profit community-based blockchain project that utilizes blockchain technology and digital identity to digitize assets, and to realize a smart economy with a distributed network.",
     "description": "Neo describes itself as an open-source platform driven by the community. It utilizes blockchain technology and digital identities to digitize and automate the management of assets using smart contracts. Using a distributed network, it aims to create a smart economy by building infrastructures of the next-gen Internet and creating a solid foundation for mass blockchain adoption. Learn more at (https://neo.org)",
-    "explorers": [
-        {
-            "name": "NeoScan",
-            "url": "https://neoscan.io"
-        }
-    ],
     "socials": [
         {
             "name": "Twitter",
@@ -23,5 +17,5 @@
             "handle": "NEO"
         }
     ],
-    "data_source": "crowd"
+    "explorer": "https://neoscan.io"
 }

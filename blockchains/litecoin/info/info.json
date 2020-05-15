@@ -5,12 +5,6 @@
     "white_paper": "https://www.allcryptowhitepapers.com/litecoin-whitepaper/",
     "short_description": "Litecoin is a peer-to-peer Internet currency that enables instant, near-zero cost payments to anyone in the world.",
     "description": "Litecoin is a peer-to-peer cryptocurrency created by Charlie Lee. It was created based on the Bitcoin protocol but differs in terms of the hashing algorithm used. Litecoin uses the memory intensive Scrypt proof of work mining algorithm. Scrypt allows consumer-grade hardware such as GPU to mine those coins.",
-    "explorers": [
-        {
-            "name": "Blockchair",
-            "url": "https://blockchair.com/litecoin"
-        }
-    ],
     "socials": [
         {
             "name": "Twitter",
@@ -23,5 +17,5 @@
             "handle": "litecoin"
         }
     ],
-    "data_source": "crowd"
+    "explorer": "https://blockchair.com/litecoin"
 }
