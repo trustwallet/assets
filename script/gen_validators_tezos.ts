@@ -24,12 +24,29 @@ import { BakingBadBaker } from "../src/test/models";
         val.payout.commission = Number((bakerInfo.fee * 100).toFixed(2))
         val.payout.payoutDelay = bakerInfo.payoutDelay
         val.payout.payoutPeriod = bakerInfo.payoutPeriod
+        val.staking.minDelegation = bakerInfo.minDelegation
 
-        val["staking"] = {
-            freeSpace:Number((bakerInfo.freeSpace).toFixed(0)),
-            minDelegation: bakerInfo.minDelegation,
-            openForDelegation: bakerInfo.openForDelegation
+        const freeSpace =  Number((bakerInfo.freeSpace).toFixed(0))
+        // Disable baker if no more capacity
+        if (freeSpace <= 0) {
+            val.status = {
+                "disabled": true,
+                "note": `No more capacity: ${freeSpace}`
+            }
         }
+
+        // Enable baker if has capacity 
+        if (freeSpace > 0 && val.hasOwnProperty("status")) {
+            delete val.status
+        }
+
+        if (bakerInfo.serviceHealth !== "active") {
+            val.status = {
+                "disabled": true,
+                "note": `According to Baking Bad API, baker is not active, current status ${bakerInfo.serviceHealth}, see: https://api.baking-bad.org/v2/bakers/${bakerInfo.address}`, 
+            }
+        }
+
         acm.push(val)
         return acm
     }, [])
