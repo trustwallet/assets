@@ -378,5 +378,19 @@
             "minDelegation": 0,
             "openForDelegation": true
         }
+    },
+    {
+        "id": "tz1LmaFsWRkjr7QMCx5PtV6xTUz3AmEpKQiF",
+        "name": "Block Power",
+        "description": "Blockpower Staking operates professional staking services for multiple Proof of Stake（and its variants) platforms.",
+        "website": "https://www.blockpower.capital/staking/index.html",
+        "payout": {
+            "commission": 10,
+            "payoutDelay": 6,
+            "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 10
+        }
     }
 ]
