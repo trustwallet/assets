@@ -57,6 +57,7 @@ const custom: mapTiker[] = [
     {"coin": 714, "type": typeToken, "token_id": "BUSD-BD1", "id": 4687}, // BUSD-BD1 (BEP2)
     {"coin": 60, "type": typeToken, "token_id": "0xBD87447F48ad729C5c4b8bcb503e1395F62e8B98", "id": 3408}, // Pool Usdc (plUsdc)
     {"coin": 60, "type": typeToken, "token_id": "0x49d716DFe60b37379010A75329ae09428f17118d", "id": 4943}, // Pool Dai (plDai)
+    {"coin": 60, "type": typeToken, "token_id": "0x589891a198195061Cb8ad1a75357A3b7DbaDD7Bc", "id": 4036}, // Contentos (COS)
     // {"coin": 60, "type": typeToken, "token_id": "XXX", "id": XXX}, // XXX (XXX)
 ]
 
@@ -104,17 +105,22 @@ async function processCoin(coin) {
             case PlatformType.Ethereum:
                 // log(`Ticker ${name}(${symbol}) is a token with address ${address} and CMC id ${id}`)
                 if (platform.token_address) {
-                    const checksum = toChecksum(platform.token_address)
-                    if (permanentRemove.indexOf(checksum) == -1) {
-                        log(`Added ${checksum}`)
-                        addToContractsList({
-                            coin: 60,
-                            type: typeToken,
-                            token_id: checksum,
-                            id
-                        })
+                    try {
+                        const checksum = toChecksum(platform.token_address)
+                        if (permanentRemove.indexOf(checksum) == -1) {
+                            log(`Added ${checksum}`)
+                            addToContractsList({
+                                coin: 60,
+                                type: typeToken,
+                                token_id: checksum,
+                                id
+                            })
+                        }
+                        await getImageIfMissing(getChainName(CoinType.ethereum), checksum, id)
+                    } catch (error) {
+                        console.log(`Etheruem platform error`, error)
+                        break
                     }
-                    await getImageIfMissing(getChainName(CoinType.ethereum), checksum, id)
                 }
                 break
             case PlatformType.Binance:
