@@ -61,6 +61,7 @@ export const maxLogoHeight = 512
 export const maxAssetLogoSizeInKilobyte = 100
 
 export const getChainAssetPath = (chain: string, address: string) => `${getChainAssetsPath(chain)}/${address}`
+export const getAllChainsList = (): string[] => readDirSync(chainsFolderPath)
 export const getChainAssetLogoPath = (chain: string, address: string) => `${getChainAssetsPath(chain)}/${address}/${logo}`
 export const getChainAssetFilesList = (chain: string, address: string) => readDirSync(getChainAssetPath(chain, address))
 export const getChainAssetsList = (chain: string): string[] => readDirSync(getChainAssetsPath(chain))
@@ -137,6 +138,23 @@ export const isPathDir = (path: string): boolean => {
         console.log(`Path: ${path} is not a directory with error: ${e.message}`)
         return false
     }
+}
+
+export const isPathDirEmpthy = (path: string): boolean => {
+    try {
+        if (isPathDir(path)) {
+            return fs.readdirSync(path).length == 0
+        } else {
+            false
+        }
+    } catch (error) {
+        console.log(`Error isPathDirEmpthy`, error)
+        process.exit(1)
+    }
+}
+
+export const removeDir = (path: string) => {
+    fs.rmdirSync(path, {recursive: true})
 }
 
 export const makeDirIfDoestExist = async (dirPath: string, dirName: string) => {
