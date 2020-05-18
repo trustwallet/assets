@@ -24,7 +24,8 @@ tinify.key = "MXxhvmhjMkMM6CVccGrfyQm2RHpTf1G7"; // Key is free to get, gives 50
 
 function downsize() {
     console.log(`Start resizing`)
-    bluebird.mapSeries(foundChains, async chain => {
+    bluebird.map(foundChains, async chain => {
+        console.log(`Resizing assets on chain ${chain}`)
         const chainLogoPath = getChainLogoPath(chain)
         const { width: srcWidth, heigth: srcHeight } = getImageDimentions(chainLogoPath)
         
@@ -71,6 +72,8 @@ function downsize() {
                 }
             })
         }
+
+        console.log(`   Resizing assets on chain ${chain} completed`)
     })
 }
 
@@ -91,6 +94,7 @@ async function resize(srcWidth: number, srcHeight: number, path: string) {
 }
 
 export async function compressTinyPNG(path: string) {
+    console.log(`Compressing image via tinypng at path ${path}`)
     const source = await tinify.fromFile(path);
     await source.toFile(path);
 
