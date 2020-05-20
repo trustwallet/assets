@@ -4,8 +4,8 @@
   "description": "Assets consumed by Trust Wallet",
   "main": "index.js",
   "scripts": {
-    "pre-test": "",
-    "test": "npm run cleanup && jest",
+    "pre-test": "npm run cleanup",
+    "test": "npm run pre-test && jest",
     "cleanup": "find ./.. -iname '.DS_Store' -type f -delete",
     "update:bep2": "npm run cleanup && node ./script/updateBEP2",
     "checksum": "npm run cleanup && ts-node ./script/erc20_to_checksum",
