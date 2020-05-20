@@ -26,8 +26,6 @@ import { CoinType } from "@trustwallet/types";
 
 const CMC_PRO_API_KEY = `df781835-e5f4-4448-8b0a-fe31402ab3af` // Free Basic Plan api key is enough to run script
 const CMC_LATEST_BASE_URL = `https://pro-api.coinmarketcap.com/v1/global-metrics/quotes/latest?`
-const CONTRACTS_PATH = path.join(__dirname, 'mapping.json')
-const wstream = fs.createWriteStream(CONTRACTS_PATH)
 const typeToken = TickerType.Token
 const typeCoin = TickerType.Coin
 const mappedChainsBlacklistAssets = {} // {ethereum: {<0x...>: ""},}
@@ -35,7 +33,6 @@ const mappedChainsWhitelistAssets = {} // {ethereum: {<0x...>: ""},}
 
 const custom: mapTiker[] = [
     {"coin": 60, "type": typeToken, "token_id": "0x6758B7d441a9739b98552B373703d8d3d14f9e62", "id": 2548}, // POA ERC20 on Foundation (POA20)
-    // {"coin": 0, "type": typeCoin, "id": 825}, // Tether (OMNI)
     {"coin": 60, "type": typeToken, "token_id": "0xdAC17F958D2ee523a2206206994597C13D831ec7", "id": 825}, // Tether (ERC20)
     {"coin": 195, "type": typeToken, "token_id": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t", "id": 825}, // Tether (TRC20)
     {"coin": 1023, "type": typeCoin, "id": 3945}, // Harmony ONE mainnet
@@ -47,9 +44,7 @@ const custom: mapTiker[] = [
     {"coin": 818, "type": typeToken, "token_id": "0x0000000000000000000000000000456E65726779", "id": 3012}, // VeThor Token (VTHO)
     {"coin": 459, "type": typeCoin, "id": 4846}, // KAVA coin
     {"coin": 60, "type": typeToken, "token_id": "0xFA1a856Cfa3409CFa145Fa4e20Eb270dF3EB21ab", "id": 2405}, // IOST (ERC20)
-    //
     {"coin": 60, "type": typeToken, "token_id": "0x2fe39f22EAC6d3c1C86DD9D143640EbB94609FCE", "id": 4929}, // JDC Coin (ERC20)
-    {"coin": 60, "type": typeToken, "token_id": "0xdfbc9050F5B01DF53512DCC39B4f2B2BBaCD517A", "id": 4287}, // new Jobchain (JOB)
     {"coin": 60, "type": typeToken, "token_id": "0x5Cf04716BA20127F1E2297AdDCf4B5035000c9eb", "id": 2780}, // NKN (NKN)
     {"coin": 714, "type": typeToken, "token_id": "CHZ-ECD", "id": 4066}, // Chiliz (BEP-2)
     {"coin": 60, "type": typeToken, "token_id": "0xdF1D6405df92d981a2fB3ce68F6A03baC6C0E41F", "id": 3816}, // VERA (VRA)
@@ -61,11 +56,6 @@ const custom: mapTiker[] = [
     // {"coin": 60, "type": typeToken, "token_id": "XXX", "id": XXX}, // XXX (XXX)
 ]
 
-const permanentRemove = [
-    "0x17280DA053596E097604839C61A2eF5efb7d493f", // old Jobchain (JOB)
-    "0x85e076361cc813A908Ff672F9BAd1541474402b2", // old Telcoin (TEL)
-]
-
 const allContracts: mapTiker[] = [] // Temp storage for mapped assets
 let bip44Constants = {}
 let bnbOwnerToSymbol = {} // e.g: bnb1tawge8u97slduhhtumm03l4xl4c46dwv5m9yzk: WISH-2D5
@@ -73,32 +63,23 @@ let bnbOriginalSymbolToSymbol = {} // e.g: WISH: WISH-2D5
 
 run()
 async function run() {
-    await initState()
     try {
-        const totalCrypto = await getTotalActiveCryptocurrencies()
-        await setBinanceTokens()
+        await Promise.all([initState(), setBinanceTokens()])
+        const [totalCrypto, coins] = await Promise.all([getTotalActiveCryptocurrencies(), getTickers()])
         // setBIP44Constants()
         log(`Found ${totalCrypto} on CMC`, chalk.yellowBright)
-        const maxLimit = 200
-        // for (let start = 1; start < totalCrypto; start += maxLimit) {
-            // const coins =  await getTickers({start, limit: maxLimit})
-            const coins =  await getTickers()
-            // log(`Processgin range ${start} - ${start +  maxLimit} of ${totalCrypto}`, chalk.yellow)
-            await BluebirbPromise.mapSeries(coins, processCoin)
-        // }
+        await BluebirbPromise.mapSeries(coins, processCoin)
+        
         addCustom()
         printContracts()
-
     } catch (error) {
         log(`Error at the end ${error.message}`)
-        wstream.write(`}`)
     }
 }
 
 async function processCoin(coin) {
     const { id, symbol, name, platform } = coin
     const platformType: PlatformType = platform == null ? "" : platform.name
-    
     log(`${symbol}:${platformType}`)
     // await BluebirbPromise.mapSeries(types, async type => {
         switch (platformType) {
@@ -107,7 +88,7 @@ async function processCoin(coin) {
                 if (platform.token_address) {
                     try {
                         const checksum = toChecksum(platform.token_address)
-                        if (permanentRemove.indexOf(checksum) == -1) {
+                        if (!isAddressInBlackList("ethereum", checksum)) {
                             log(`Added ${checksum}`)
                             addToContractsList({
                                 coin: 60,
@@ -116,7 +97,7 @@ async function processCoin(coin) {
                                 id
                             })
                         }
-                        await getImageIfMissing(getChainName(CoinType.ethereum), checksum, id)
+                        // await getImageIfMissing(getChainName(CoinType.ethereum), checksum, id)
                     } catch (error) {
                         console.log(`Etheruem platform error`, error)
                         break
@@ -205,14 +186,11 @@ async function mapChainsAssetsLists() {
     ethSidechains.forEach(chain => {
         Object.assign(mappedChainsWhitelistAssets, {[chain]: {}})
         Object.assign(mappedChainsBlacklistAssets, {[chain]: {}})
-
-        const whiteList = getChainWhitelist(chain)
-        const blackList = getChainBlacklist(chain)
         
-        whiteList.forEach(addr => {
+        getChainWhitelist(chain).forEach(addr => {
             Object.assign(mappedChainsWhitelistAssets[chain], {[addr]: ""})
         })
-        blackList.forEach(addr => {
+        getChainBlacklist(chain).forEach(addr => {
             Object.assign(mappedChainsBlacklistAssets[chain], {[addr]: ""})
         })
     })
@@ -241,6 +219,8 @@ function printContracts() {
         if (a.token_id < b.token_id) return -1
         if (a.token_id > b.token_id) return 1
     })
+
+    const wstream = fs.createWriteStream(path.join(__dirname, 'mapping.json'))
     wstream.write(JSON.stringify(sortedById, null, 4))
 }
 
@@ -306,13 +286,13 @@ async function fetchImage(url: string) {
 }
 
 function exit(code?: number) {
-    printContracts()
     process.exit(code ?? 1)
 }
 
 function getTotalActiveCryptocurrencies() {
-    const url = `${CMC_LATEST_BASE_URL}CMC_PRO_API_KEY=${CMC_PRO_API_KEY}`
-    return axios.get(url).then((res) => res.data.data.active_cryptocurrencies)
+    return axios.get(`${CMC_LATEST_BASE_URL}CMC_PRO_API_KEY=${CMC_PRO_API_KEY}`).then((res) => res.data.data.active_cryptocurrencies).catch(e => {
+        throw `Error getTotalActiveCryptocurrencies ${e.message}` 
+    })
 }
 
 async function setBinanceTokens () {
@@ -337,12 +317,8 @@ function readBEP2() {
 }
 
 async function getTickers() {
-    try {
         const url = `https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?&limit=3500&CMC_PRO_API_KEY=${CMC_PRO_API_KEY}`
-        return await axios.get(url).then(res => res.data.data)
-    } catch (error) {
-        log(`Error gettin tickers ${error.message}`)
-    }
+        return axios.get(url).then(res => res.data.data).catch(e => {throw `Error getTickers ${e.message}`})
 }
 
 function log(string, cb?) {
@@ -351,7 +327,7 @@ function log(string, cb?) {
     } else {
         console.log(string)
     }
-    const saveToLogs = fs.createWriteStream(path.join(__dirname, '.syncTokensLog.txt')) // Uncomment to store script run logs in disk 
+    const saveToLogs = fs.createWriteStream(path.join(__dirname, '.syncTokensLog.txt'))
     saveToLogs.write(`${string}\n`)
 }
 
