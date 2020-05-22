@@ -1,0 +1,21 @@
+{
+    "name": "Decred",
+    "website": "https://decred.org",
+    "source_code": "https://github.com/decred",
+    "white_paper": "https://docs.decred.org",
+    "short_description": "Decred is a community-directed cryptocurrency with built-in governance to make it a superior long-term store of value.",
+    "description": "Decred is a cryptocurrency designed to be a superior long-term store of value. The hybrid PoW+PoS consensus system provides an additional layer of network security, while stakeholders control budget and policy to make the currency more adaptable. With ten percent of each block reward going to the project Treasury, Decred is completely self-funded. This financial model reduces conflicts of interest and enables ongoing development powered by a unique contractor model that allows contributors to receive payment for work they find interesting. Together, these systems provide solid protection against value-loss events like chain splits and hard forks, giving Decred the resilience to stand the test of time.",
+    "socials": [
+        {
+            "name": "Twitter",
+            "url": "https://twitter.com/decredproject",
+            "handle": "decredproject"
+        },
+        {
+            "name": "Reddit",
+            "url": "https://reddit.com/r/decred",
+            "handle": "decred"
+        }
+    ],
+    "explorer": "https://dcrdata.decred.org"
+}
