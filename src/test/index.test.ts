@@ -17,8 +17,8 @@ import {
     getChainValidatorsListPath,
     getChainWhitelistPath,
     getChainAssetsList,
+    getChainValidatorsList,
     isChecksum,
-    isChainAssetInfoExistSync,
     isLogoDimentionOK,
     isLogoSizeOK,
     isLowerCase,
@@ -34,15 +34,9 @@ import {
     readFileSync,
     rootDirAllowedFiles,
     stakingChains,
-    Solana
 } from "./helpers"
-import { ValidatorModel } from "./models";
+import { ValidatorModel, mapTiker, TickerType } from "./models";
 import { getHandle } from "../../script/gen_info";
-
-enum TickerType {
-    Token = "token",
-    Coin = "coin"
-}
 
 describe("Check repository root dir", () => {
     const dirActualFiles = readDirSync(".")
@@ -71,7 +65,7 @@ describe(`Test "blockchains" folder`, () => {
         })
     })
 
-    describe(`Asset folder should contain only predifind list of filees`, () => {
+    describe(`Asset folder should contain only predefined list of filees`, () => {
         readDirSync(chainsFolderPath).forEach(chain => {
             const assetsPath = getChainAssetsPath(chain)
 
@@ -113,9 +107,8 @@ describe(`Test "blockchains" folder`, () => {
                     const [isLogoOK, sizeMsg] = isLogoSizeOK(assetLogoPath)
                     expect(isLogoOK, sizeMsg).toBe(true)
 
-                    if (isChainAssetInfoExistSync(chain, address)) {
-                        expect(isAssetInfoOK(chain, address), `Asset file info at path ${assetPath} is not OK`).toBe(true)
-                    }
+                    const [isInfoOK, InfoMsg] = isAssetInfoOK(chain, address)
+                    expect(isInfoOK, InfoMsg).toBe(true)
                 })
             })
         })
@@ -153,13 +146,13 @@ describe(`Test "blockchains" folder`, () => {
         })
 
         stakingChains.forEach(chain => {
-            const listPath = getChainValidatorsListPath(chain)
-            const validatorsList = JSON.parse(readFileSync(listPath))
+            const validatorsListPath = getChainValidatorsListPath(chain)
+            const validatorsList = getChainValidatorsList(chain)
 
             test(`Chain ${chain} validator must have correct structure and valid JSON format`, () => {
                 validatorsList.forEach((val: ValidatorModel) => {
                     expect(isValidatorHasAllKeys(val), `Some key and/or type missing for validator ${JSON.stringify(val)}`).toBe(true)
-                    expect(isValidJSON(listPath), `Not valid json file at path ${listPath}`).toBe(true)
+                    expect(isValidJSON(validatorsListPath), `Not valid json file at path ${validatorsListPath}`).toBe(true)
                 })
             })
 
@@ -281,7 +274,7 @@ function testTerraValidatorsAddress(assets: string[]) {
 }
 
 describe("Test Coinmarketcap mapping", () => {
-    const cmcMap = JSON.parse(readFileSync("./pricing/coinmarketcap/mapping.json"))
+    const cmcMap: mapTiker[] = JSON.parse(readFileSync("./pricing/coinmarketcap/mapping.json"))
 
     test("Must have items", () => {
         expect(cmcMap.length, `CMC map must have items`).toBeGreaterThan(0)
@@ -347,21 +340,47 @@ describe("Test Coinmarketcap mapping", () => {
     });
 
     test(`"token_id" should be in correct format`, async () => {
-        const tokenSymbols = await getBinanceBEP2Symbols()
+        const bep2Symbols = await getBinanceBEP2Symbols()
 
         cmcMap.forEach(el => {
             const {coin, token_id, type, id} = el
             switch (coin) {
-                case 60 && type === TickerType.Token:
-                    expect(isChecksum(token_id), `"token_id" ${token_id} with id ${id} must be in checksum`).toBe(true)
-                    break;
-                case 195 && type === TickerType.Token:
-                    expect(isTRC10(token_id) || isTRC20(token_id), `"token_id" ${token_id} with id ${id} must be in TRC10 or TRC20`).toBe(true)
-                    break;
-                case 714 && type === TickerType.Token:
-                    expect(tokenSymbols.indexOf(token_id), `"token_id" ${token_id} with id ${id} must be BEP2 symbol`).toBe(true)
+                case 60:
+                    if (type === TickerType.Token) {
+                        expect(isChecksum(token_id), `"token_id" ${token_id} with id ${id} must be in checksum`).toBe(true)
+                        break;
+                    }
+                case 195:
+                    if (type === TickerType.Token) {
+                        expect(isTRC10(token_id) || isTRC20(token_id), `"token_id" ${token_id} with id ${id} must be in TRC10 or TRC20`).toBe(true)
+                        break;
+                    }
+                case 714:
+                    if (type === TickerType.Token) {
+                        expect(bep2Symbols.indexOf(token_id), `"token_id" ${token_id} with id ${id} must be BEP2 symbol`).toBeGreaterThan(0)
+                        break;
+                    }
                 default:
                     break;
+            }
+        })
+    })
+
+    test(`"token_id" shoud be unique`, () => {
+        const mappedList = cmcMap.reduce((acm, val) => {
+            if (val.hasOwnProperty("token_id")) {
+                if (acm.hasOwnProperty(val.token_id)) {
+                    acm[val.token_id] == ++acm[val.token_id]
+                } else {
+                    acm[val.token_id] = 0
+                }
+            }
+            return acm
+        }, {})
+
+        cmcMap.forEach(el => {
+            if (el.hasOwnProperty("token_id")) {
+                expect(mappedList[el.token_id], `CMC map ticker with "token_id" ${el.token_id} shoud be unique`).toBeLessThanOrEqual(0)
             }
         })
     })
@@ -374,20 +393,17 @@ describe("Test blacklist and whitelist", () => {
         const whiteList = JSON.parse(readFileSync(getChainWhitelistPath(chain)))
         const blackList = JSON.parse(readFileSync(getChainBlacklistPath(chain)))
 
-        const whitelistMap = mapList(whiteList)
-        const blacklistMap = mapList(blackList)
-
         test(`Whitelist should not contain assets from blacklist on ${chain} chain`, () => {
+            const blacklistMap = mapList(blackList)
             whiteList.forEach(a => {
-                const isWhitelistInBlacklist = blacklistMap.hasOwnProperty(a)
-                expect(isWhitelistInBlacklist, `Found whitelist asset ${a} in blacklist on chain ${chain}`).toBe(false)
+                expect(a in blacklistMap, `Found whitelist asset ${a} in blacklist on chain ${chain}`).toBe(false)
             })
         })
 
         test(`Blacklist should not contain assets from whitelist on ${chain} chain`, () => {
+            const whitelistMap = mapList(whiteList)
             blackList.forEach(a => {
-                const isBlacklistInWhitelist = whitelistMap.hasOwnProperty(a)
-                expect(isBlacklistInWhitelist, `Found blacklist asset ${a} in whitelist on chain ${chain}`).toBe(false)
+                expect(a in whitelistMap, `Found blacklist asset ${a} in whitelist on chain ${chain}`).toBe(false)
             })
         })
     })
@@ -426,4 +442,3 @@ describe("Test helper functions", () => {
         })
     })
 });
-
