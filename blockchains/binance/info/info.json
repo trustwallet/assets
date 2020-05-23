@@ -5,12 +5,6 @@
     "white_paper": "https://www.binance.com/resources/ico/Binance_WhitePaper_en.pdf",
     "short_description": "Fast and secure decentralized digital asset exchange. The new crypto currency trading standard is here.",
     "description": "Fast and secure decentralized digital asset exchange. The new crypto currency trading standard is here.",
-    "explorers": [
-        {
-            "name": "Binance Chain Explorer",
-            "url": "https://explorer.binance.org/"
-        }
-    ],
     "socials": [
         {
             "name": "Twitter",
@@ -23,5 +17,5 @@
             "handle": "BinanceExchange"
         }
     ],
-    "data_source": "crowd"
+    "explorer": "https://explorer.binance.org/"
 }

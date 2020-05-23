@@ -2,12 +2,6 @@
     "name": "Decentraland",
     "website": "https://decentraland.org",
     "short_description": "Decentraland (MANA) defines itself as a virtual reality platform powered by the Ethereum blockchain that allows users to create, experience, and monetize content and applications.",
-    "explorers": [
-        {
-            "name": "Etherscan",
-            "url": "https://etherscan.io/token/decentraland"
-        }
-    ],
-    "data_source": "crowd",
-    "socials": []
+    "socials": [],
+    "explorer": "https://etherscan.io/token/decentraland"
 }

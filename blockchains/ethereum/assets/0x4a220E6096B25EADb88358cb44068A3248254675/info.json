@@ -2,12 +2,6 @@
     "name": "Quant",
     "website": "https://quant.network",
     "short_description": "The Quant Network team developed Quant as a cryptocurrency token based on the Ethereum blockchain. The solutions offered by Quant include Overledger OS and GoVerify.",
-    "explorers": [
-        {
-            "name": "Etherscan",
-            "url": "https://etherscan.io/token/0x4a220e6096b25eadb88358cb44068a3248254675"
-        }
-    ],
-    "data_source": "crowd",
-    "socials": []
+    "socials": [],
+    "explorer": "https://etherscan.io/token/0x4a220e6096b25eadb88358cb44068a3248254675"
 }
