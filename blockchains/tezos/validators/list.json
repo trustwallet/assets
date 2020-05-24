@@ -10,7 +10,7 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "minDelegation": 0
+            "minDelegation": 100
         }
     },
     {
@@ -364,7 +364,7 @@
         },
         "status": {
             "disabled": true,
-            "note": "No more capacity: -10048"
+            "note": "No more capacity: -16394"
         }
     },
     {
