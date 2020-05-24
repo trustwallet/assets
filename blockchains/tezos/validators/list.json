@@ -1,5 +1,19 @@
 [
     {
+        "id": "tz3QCNyySViKHmeSr45kzDxzchys7NiXCWoa",
+        "name": "Proof of Bake",
+        "description": "The world's best Tezos baking service",
+        "website": "https://proofofbake.com",
+        "payout": {
+            "commission": 8,
+            "payoutDelay": 1,
+            "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 100
+        }
+    },
+    {
         "id": "tz1Vyuu4EJ5Nym4JcrfRLnp3hpaq1DSEp1Ke",
         "name": "Stakin",
         "description": "Your Trusted Crypto Rewards",
@@ -187,7 +201,7 @@
         "description": "Bake'n'Rolls - one of the first Tezos bakery. Our mission is to deliver freshly baked pretzels on every cycle.",
         "website": "https://bakenrolls.com/",
         "payout": {
-            "commission": 9,
+            "commission": 5,
             "payoutDelay": 6,
             "payoutPeriod": 1
         },
@@ -347,6 +361,10 @@
         },
         "staking": {
             "minDelegation": 100
+        },
+        "status": {
+            "disabled": true,
+            "note": "No more capacity: -16394"
         }
     },
     {
