@@ -35,13 +35,8 @@ import {
     rootDirAllowedFiles,
     stakingChains,
 } from "./helpers"
-import { ValidatorModel } from "./models";
+import { ValidatorModel, mapTiker, TickerType } from "./models";
 import { getHandle } from "../../script/gen_info";
-
-enum TickerType {
-    Token = "token",
-    Coin = "coin"
-}
 
 describe("Check repository root dir", () => {
     const dirActualFiles = readDirSync(".")
@@ -70,7 +65,7 @@ describe(`Test "blockchains" folder`, () => {
         })
     })
 
-    describe(`Asset folder should contain only predifind list of filees`, () => {
+    describe(`Asset folder should contain only predefined list of filees`, () => {
         readDirSync(chainsFolderPath).forEach(chain => {
             const assetsPath = getChainAssetsPath(chain)
 
@@ -279,7 +274,7 @@ function testTerraValidatorsAddress(assets: string[]) {
 }
 
 describe("Test Coinmarketcap mapping", () => {
-    const cmcMap = JSON.parse(readFileSync("./pricing/coinmarketcap/mapping.json"))
+    const cmcMap: mapTiker[] = JSON.parse(readFileSync("./pricing/coinmarketcap/mapping.json"))
 
     test("Must have items", () => {
         expect(cmcMap.length, `CMC map must have items`).toBeGreaterThan(0)
@@ -345,21 +340,47 @@ describe("Test Coinmarketcap mapping", () => {
     });
 
     test(`"token_id" should be in correct format`, async () => {
-        const tokenSymbols = await getBinanceBEP2Symbols()
+        const bep2Symbols = await getBinanceBEP2Symbols()
 
         cmcMap.forEach(el => {
             const {coin, token_id, type, id} = el
             switch (coin) {
-                case 60 && type === TickerType.Token:
-                    expect(isChecksum(token_id), `"token_id" ${token_id} with id ${id} must be in checksum`).toBe(true)
-                    break;
-                case 195 && type === TickerType.Token:
-                    expect(isTRC10(token_id) || isTRC20(token_id), `"token_id" ${token_id} with id ${id} must be in TRC10 or TRC20`).toBe(true)
-                    break;
-                case 714 && type === TickerType.Token:
-                    expect(tokenSymbols.indexOf(token_id), `"token_id" ${token_id} with id ${id} must be BEP2 symbol`).toBe(true)
+                case 60:
+                    if (type === TickerType.Token) {
+                        expect(isChecksum(token_id), `"token_id" ${token_id} with id ${id} must be in checksum`).toBe(true)
+                        break;
+                    }
+                case 195:
+                    if (type === TickerType.Token) {
+                        expect(isTRC10(token_id) || isTRC20(token_id), `"token_id" ${token_id} with id ${id} must be in TRC10 or TRC20`).toBe(true)
+                        break;
+                    }
+                case 714:
+                    if (type === TickerType.Token) {
+                        expect(bep2Symbols.indexOf(token_id), `"token_id" ${token_id} with id ${id} must be BEP2 symbol`).toBeGreaterThan(0)
+                        break;
+                    }
                 default:
                     break;
+            }
+        })
+    })
+
+    test(`"token_id" shoud be unique`, () => {
+        const mappedList = cmcMap.reduce((acm, val) => {
+            if (val.hasOwnProperty("token_id")) {
+                if (acm.hasOwnProperty(val.token_id)) {
+                    acm[val.token_id] == ++acm[val.token_id]
+                } else {
+                    acm[val.token_id] = 0
+                }
+            }
+            return acm
+        }, {})
+
+        cmcMap.forEach(el => {
+            if (el.hasOwnProperty("token_id")) {
+                expect(mappedList[el.token_id], `CMC map ticker with "token_id" ${el.token_id} shoud be unique`).toBeLessThanOrEqual(0)
             }
         })
     })
@@ -421,4 +442,3 @@ describe("Test helper functions", () => {
         })
     })
 });
-
