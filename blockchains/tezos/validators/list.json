@@ -1,5 +1,19 @@
 [
     {
+        "id": "tz3QCNyySViKHmeSr45kzDxzchys7NiXCWoa",
+        "name": "Proof of Bake",
+        "description": "The world's best Tezos baking service",
+        "website": "https://proofofbake.com",
+        "payout": {
+            "commission": 8,
+            "payoutDelay": 1,
+            "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 100
+        }
+    },
+    {
         "id": "tz1Vyuu4EJ5Nym4JcrfRLnp3hpaq1DSEp1Ke",
         "name": "Stakin",
         "description": "Your Trusted Crypto Rewards",
@@ -8,6 +22,9 @@
             "commission": 8,
             "payoutDelay": 1,
             "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 0
         }
     },
     {
@@ -19,6 +36,9 @@
             "commission": 12,
             "payoutDelay": 1,
             "payoutPeriod": 5
+        },
+        "staking": {
+            "minDelegation": 1000
         }
     },
     {
@@ -30,6 +50,9 @@
             "commission": 30,
             "payoutDelay": 6,
             "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 0
         }
     },
     {
@@ -41,6 +64,9 @@
             "commission": 10,
             "payoutDelay": 6,
             "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 0
         }
     },
     {
@@ -52,6 +78,9 @@
             "commission": 10,
             "payoutDelay": 6,
             "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 0
         }
     },
     {
@@ -63,6 +92,9 @@
             "commission": 15,
             "payoutDelay": 6,
             "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 0
         }
     },
     {
@@ -74,6 +106,9 @@
             "commission": 19,
             "payoutDelay": 6,
             "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 0
         }
     },
     {
@@ -85,6 +120,9 @@
             "commission": 8,
             "payoutDelay": 1,
             "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 0
         }
     },
     {
@@ -96,6 +134,9 @@
             "commission": 12.5,
             "payoutDelay": 6,
             "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 0
         }
     },
     {
@@ -107,6 +148,9 @@
             "commission": 40,
             "payoutDelay": 6,
             "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 0
         }
     },
     {
@@ -118,6 +162,9 @@
             "commission": 10,
             "payoutDelay": 6,
             "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 0
         }
     },
     {
@@ -129,6 +176,9 @@
             "commission": 10,
             "payoutDelay": 6,
             "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 20
         }
     },
     {
@@ -140,6 +190,9 @@
             "commission": 8,
             "payoutDelay": 6,
             "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 0
         }
     },
     {
@@ -148,9 +201,12 @@
         "description": "Bake'n'Rolls - one of the first Tezos bakery. Our mission is to deliver freshly baked pretzels on every cycle.",
         "website": "https://bakenrolls.com/",
         "payout": {
-            "commission": 9,
+            "commission": 5,
             "payoutDelay": 6,
             "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 0
         }
     },
     {
@@ -162,6 +218,9 @@
             "commission": 8,
             "payoutDelay": 6,
             "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 0
         }
     },
     {
@@ -173,6 +232,9 @@
             "commission": 10,
             "payoutDelay": 6,
             "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 10
         }
     },
     {
@@ -184,6 +246,9 @@
             "commission": 4,
             "payoutDelay": 1,
             "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 0
         }
     },
     {
@@ -195,6 +260,9 @@
             "commission": 14.99,
             "payoutDelay": 6,
             "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 0
         }
     },
     {
@@ -206,6 +274,9 @@
             "commission": 10,
             "payoutDelay": 6,
             "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 0
         }
     },
     {
@@ -217,6 +288,9 @@
             "commission": 15,
             "payoutDelay": 6,
             "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 0
         }
     },
     {
@@ -228,6 +302,9 @@
             "commission": 9.95,
             "payoutDelay": 1,
             "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 0
         }
     },
     {
@@ -239,6 +316,9 @@
             "commission": 14,
             "payoutDelay": 6,
             "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 0
         }
     },
     {
@@ -250,6 +330,9 @@
             "commission": 8,
             "payoutDelay": 6,
             "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 0
         }
     },
     {
@@ -261,6 +344,9 @@
             "commission": 14.99,
             "payoutDelay": 6,
             "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 0
         }
     },
     {
@@ -269,9 +355,46 @@
         "description": "TezoShop is PRO Tezos baker ",
         "website": "https://tezoshop.art",
         "payout": {
-            "commission": 15,
+            "commission": 3,
             "payoutDelay": 6,
             "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 100
+        },
+        "status": {
+            "disabled": true,
+            "note": "No more capacity: -16327"
+        }
+    },
+    {
+        "id": "tz1LLNkQK4UQV6QcFShiXJ2vT2ELw449MzAA",
+        "name": "TezoSteam",
+        "description": "Your trusted baker, active since cycle 3",
+        "website": "https://tezosteam.com/",
+        "payout": {
+            "commission": 25,
+            "payoutDelay": 6,
+            "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 0
+        }
+    },
+    {
+        "id": "tz1STeamwbp68THcny9zk3LsbG3H36DMvbRK",
+        "name": "StakingTeam",
+        "description": "An historical and trusted baker, from Italy with love.",
+        "website": "https://stakingteam.com/",
+        "payout": {
+            "commission": 9.9,
+            "payoutDelay": 6,
+            "payoutPeriod": 1
+        },
+        "staking": {
+            "freeSpace": 0,
+            "minDelegation": 0,
+            "openForDelegation": true
         }
     }
 ]
