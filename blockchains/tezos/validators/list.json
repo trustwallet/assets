@@ -183,11 +183,25 @@
     },
     {
         "id": "tz1MXFrtZoaXckE41bjUCSjAjAap3AFDSr3N",
-        "name": "Everstake",
+        "name": "Everstake Legacy",
         "description": "Everstake - Staking Service Platform. Delegate XTZ with Everstake, your trusted staking partner.",
         "website": "https://everstake.one/",
         "payout": {
             "commission": 8,
+            "payoutDelay": 6,
+            "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 0
+        }
+    },
+    {
+        "id": "tz1aRoaRhSpRYvFdyvgWLL6TGyRoGF51wDjM",
+        "name": "Everstake",
+        "description": "Everstake - Staking Service Platform. Delegate XTZ with Everstake, your trusted staking partner.",
+        "website": "https://everstake.one/",
+        "payout": {
+            "commission": 5,
             "payoutDelay": 6,
             "payoutPeriod": 1
         },
