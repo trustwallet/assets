@@ -224,7 +224,7 @@
         },
         "status": {
             "disabled": true,
-            "note": "No more capacity: -22902"
+            "note": "No more capacity: -12187"
         }
     },
     {
@@ -382,7 +382,7 @@
         },
         "status": {
             "disabled": true,
-            "note": "No more capacity: -17366"
+            "note": "No more capacity: -16776"
         }
     },
     {
@@ -413,6 +413,20 @@
             "freeSpace": 0,
             "minDelegation": 0,
             "openForDelegation": true
+        }
+    },
+    {
+        "id": "tz1Lhf4J9Qxoe3DZ2nfe8FGDnvVj7oKjnMY6",
+        "name": "Tez Baker",
+        "description": "We Bake : You Make",
+        "website": "https://www.tezbaker.io/",
+        "payout": {
+            "commission": 9,
+            "payoutDelay": 6,
+            "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 100
         }
     }
 ]
