@@ -21,13 +21,13 @@ message:
     * Trust Wallet Tokens (TWT) are distributed to new users through our [Referral Program](https://community.trustwallet.com/t/invite-a-friend-earn-trust-wallet-token-twt/4125).
     * Payment evaluation happens when there is activity on the PR -- write a comment if you have performed the payment.
     * When payment is detected, an Accept Review is automatically placed on the PR, which is a condition for merge.  The merge is still done manually.
-  notReceived: Fee has not been received yet in full.\n\n$TX_LIST
+  notReceived: Fee has not been received yet (or not fully).\n\n$TX_LIST
   received: |
-    Fee payment received, thanks!
+    Fee is PAID, fantastic!  Thanks!
     \nThe PR will be merged soon by a maintainer, and then new/updated logos should be visible in Trust Wallet.
     Please note that the app caches logos for several days, so if you want to see changes immediately, use a new device, or reinstall Trust Wallet (make sure you have a backup of all your wallets first!).  See the [assets FAQ](https://github.com/trustwallet/assets#faq). 
-    \n$PAID_AMOUNT $PAID_CURRENCY
-    \n$TX_LIST
+    \n($PAID_AMOUNT $PAID_CURRENCY)
+  reviewCreated:
   reviewed: Review is not needed any more, no more fee required.
   reminder: |
     $USER, kind reminder:  please pay fee:  **$PAY1_AMOUNT $PAY1_CURRENCY**  with the memo **$PAY1_MEMO**  to the address `$PAY1_ADDRESS`.
