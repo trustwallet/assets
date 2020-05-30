@@ -65,7 +65,7 @@ describe(`Test "blockchains" folder`, () => {
         })
     })
 
-    describe(`Asset folder should contain only predefined list of filees`, () => {
+    describe(`Asset folder should contain only predefined list of files`, () => {
         readDirSync(chainsFolderPath).forEach(chain => {
             const assetsPath = getChainAssetsPath(chain)
 
@@ -130,7 +130,7 @@ describe(`Test "blockchains" folder`, () => {
 
         test("Expect asset to be TRC10 or TRC20", () => {
             readDirSync(path).forEach(asset => {
-                expect(isTRC10(asset) || isTRC20(asset), `Asset ${asset} non TRC10 nor TRC20`).toBe(true)
+                expect(isTRC10(asset) || isTRC20(asset), `Asset ${asset} at path ${path} non TRC10 nor TRC20`).toBe(true)
 
                 const assetsLogoPath = getChainAssetLogoPath(Tron, asset)
                 expect(isPathExistsSync(assetsLogoPath), `Missing file at path "${assetsLogoPath}"`).toBe(true)
