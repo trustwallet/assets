@@ -27,7 +27,7 @@ message:
     \nThe PR will be merged soon by a maintainer, and then new/updated logos should be visible in Trust Wallet.
     Please note that the app caches logos for several days, so if you want to see changes immediately, use a new device, or reinstall Trust Wallet (make sure you have a backup of all your wallets first!).  See the [assets FAQ](https://github.com/trustwallet/assets#faq). 
     \n($PAID_AMOUNT $PAID_CURRENCY)
-  reviewCreated:
+  reviewCreated: Fee paid, review added.
   reviewed: Review is not needed any more, no more fee required.
   reminder: |
     $USER, kind reminder:  please pay fee:  **$PAY1_AMOUNT $PAY1_CURRENCY**  with the memo **$PAY1_MEMO**  to the address `$PAY1_ADDRESS`.
