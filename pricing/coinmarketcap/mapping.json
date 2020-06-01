@@ -7108,12 +7108,6 @@
     {
         "coin": 60,
         "type": "token",
-        "token_id": "0x8CC3E2BdC17682c622eB789EDA23FbD6988C84Da",
-        "id": 3787
-    },
-    {
-        "coin": 60,
-        "type": "token",
         "token_id": "0xF29226914595052a04F5AFbe6410D0C3eD707548",
         "id": 3788
     },
@@ -7875,6 +7869,11 @@
         "type": "token",
         "token_id": "0x0C6144c16af288948C8fdB37fD8fEc94bfF3d1d9",
         "id": 3975
+    },
+    {
+        "coin": 426,
+        "type": "coin",
+        "id": 3976
     },
     {
         "coin": 60,
@@ -10859,5 +10858,11 @@
         "type": "token",
         "token_id": "0x675Ce995953136814cb05aaAA5d02327E7Dc8c93",
         "id": 5644
+    },
+    {
+        "coin": 60,
+        "type": "token",
+        "token_id": "0x8752bf7AD53D25A4165b9370F2becc22dD8aE838",
+        "id": 5648
     }
 ]
