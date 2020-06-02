@@ -1,5 +1,19 @@
 [
     {
+        "id": "tz3QCNyySViKHmeSr45kzDxzchys7NiXCWoa",
+        "name": "Proof of Bake",
+        "description": "The world's best Tezos baking service",
+        "website": "https://proofofbake.com",
+        "payout": {
+            "commission": 8,
+            "payoutDelay": 1,
+            "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 100
+        }
+    },
+    {
         "id": "tz1Vyuu4EJ5Nym4JcrfRLnp3hpaq1DSEp1Ke",
         "name": "Stakin",
         "description": "Your Trusted Crypto Rewards",
@@ -10,9 +24,7 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "freeSpace": 4937,
-            "minDelegation": 0,
-            "openForDelegation": true
+            "minDelegation": 0
         }
     },
     {
@@ -26,9 +38,7 @@
             "payoutPeriod": 5
         },
         "staking": {
-            "freeSpace": 2613537,
-            "minDelegation": 0,
-            "openForDelegation": true
+            "minDelegation": 1000
         }
     },
     {
@@ -42,9 +52,7 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "freeSpace": 74702,
-            "minDelegation": 0,
-            "openForDelegation": true
+            "minDelegation": 0
         }
     },
     {
@@ -58,9 +66,7 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "freeSpace": 3448951,
-            "minDelegation": 0,
-            "openForDelegation": true
+            "minDelegation": 0
         }
     },
     {
@@ -74,9 +80,7 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "freeSpace": 4397381,
-            "minDelegation": 0,
-            "openForDelegation": true
+            "minDelegation": 0
         }
     },
     {
@@ -90,9 +94,7 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "freeSpace": 9074513,
-            "minDelegation": 0,
-            "openForDelegation": true
+            "minDelegation": 0
         }
     },
     {
@@ -106,9 +108,7 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "freeSpace": 2835066,
-            "minDelegation": 0,
-            "openForDelegation": true
+            "minDelegation": 0
         }
     },
     {
@@ -122,29 +122,7 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "freeSpace": 3227705,
-            "minDelegation": 0,
-            "openForDelegation": true
-        }
-    },
-    {
-        "id": "tz1d6Fx42mYgVFnHUW8T8A7WBfJ6nD9pVok8",
-        "name": "MyTezosBaking",
-        "description": "We are delegation service for Tezos, secure, anonymous",
-        "website": "https://mytezosbaking.com/",
-        "payout": {
-            "commission": 14,
-            "payoutDelay": 6,
-            "payoutPeriod": 1
-        },
-        "status": {
-            "disabled": true,
-            "note:": "Minimum delegation 1000 XTZ"
-        },
-        "staking": {
-            "freeSpace": 433038,
-            "minDelegation": 1000,
-            "openForDelegation": true
+            "minDelegation": 0
         }
     },
     {
@@ -158,9 +136,7 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "freeSpace": 1681905,
-            "minDelegation": 0,
-            "openForDelegation": true
+            "minDelegation": 0
         }
     },
     {
@@ -174,9 +150,7 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "freeSpace": 81266,
-            "minDelegation": 0,
-            "openForDelegation": true
+            "minDelegation": 0
         }
     },
     {
@@ -190,9 +164,7 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "freeSpace": 163039,
-            "minDelegation": 0,
-            "openForDelegation": true
+            "minDelegation": 0
         }
     },
     {
@@ -206,14 +178,12 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "freeSpace": 125489,
-            "minDelegation": 0,
-            "openForDelegation": true
+            "minDelegation": 20
         }
     },
     {
         "id": "tz1MXFrtZoaXckE41bjUCSjAjAap3AFDSr3N",
-        "name": "Everstake",
+        "name": "Everstake Legacy",
         "description": "Everstake - Staking Service Platform. Delegate XTZ with Everstake, your trusted staking partner.",
         "website": "https://everstake.one/",
         "payout": {
@@ -222,9 +192,21 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "freeSpace": 1556298,
-            "minDelegation": 10,
-            "openForDelegation": true
+            "minDelegation": 0
+        }
+    },
+    {
+        "id": "tz1aRoaRhSpRYvFdyvgWLL6TGyRoGF51wDjM",
+        "name": "Everstake",
+        "description": "Everstake - Staking Service Platform. Delegate XTZ with Everstake, your trusted staking partner.",
+        "website": "https://everstake.one/",
+        "payout": {
+            "commission": 5,
+            "payoutDelay": 6,
+            "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 0
         }
     },
     {
@@ -233,14 +215,12 @@
         "description": "Bake'n'Rolls - one of the first Tezos bakery. Our mission is to deliver freshly baked pretzels on every cycle.",
         "website": "https://bakenrolls.com/",
         "payout": {
-            "commission": 9,
+            "commission": 5,
             "payoutDelay": 6,
             "payoutPeriod": 1
         },
         "staking": {
-            "freeSpace": 612452,
-            "minDelegation": 10,
-            "openForDelegation": true
+            "minDelegation": 0
         }
     },
     {
@@ -254,25 +234,7 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "freeSpace": 276573,
-            "minDelegation": 0,
-            "openForDelegation": true
-        }
-    },
-    {
-        "id": "tz1g8vkmcde6sWKaG2NN9WKzCkDM6Rziq194",
-        "name": "StakeNow",
-        "description": "Staking Services for Private and Institutional Clients. This service is offered in full compliance with the law as a German company.",
-        "website": "https://stakenow.de",
-        "payout": {
-            "commission": 14.99,
-            "payoutDelay": 6,
-            "payoutPeriod": 1
-        },
-        "staking": {
-            "freeSpace": 834201,
-            "minDelegation": 10,
-            "openForDelegation": true
+            "minDelegation": 0
         }
     },
     {
@@ -286,41 +248,7 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "freeSpace": 3518020,
-            "minDelegation": 0,
-            "openForDelegation": true
-        }
-    },
-    {
-        "id": "tz1XhnCdVENzgko5x1MMswLHSoQbJ5NPwLZ6",
-        "name": "Anonstake",
-        "description": "Anonstake.com allows people to delegate tokens and start staking on Proof-of-Stake blockchains.",
-        "website": "https://anonstake.com",
-        "payout": {
-            "commission": 8,
-            "payoutDelay": 6,
-            "payoutPeriod": 1
-        },
-        "staking": {
-            "freeSpace": 143060,
-            "minDelegation": 100,
-            "openForDelegation": true
-        }
-    },
-    {
-        "id": "tz1isXamBXpTUgbByQ6gXgZQg4GWNW7r6rKE",
-        "name": "tezwhale.com",
-        "description": "tezwhale.com is one of the most efficent tezos delegation service's.",
-        "website": "https://tezwhale.com",
-        "payout": {
-            "commission": 24,
-            "payoutDelay": 1,
-            "payoutPeriod": 1
-        },
-        "staking": {
-            "freeSpace": 49731,
-            "minDelegation": 0,
-            "openForDelegation": true
+            "minDelegation": 10
         }
     },
     {
@@ -334,41 +262,7 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "freeSpace": 687555,
-            "minDelegation": 0,
-            "openForDelegation": true
-        }
-    },
-    {
-        "id": "tz1RSWMYKGAykpizFteowByYMueCYv9TMn1L",
-        "name": "Tezos Alliance",
-        "description": "Tezos Alliance is a french secure node on Tezos",
-        "website": "https://twitter.com/TezosAlliance",
-        "payout": {
-            "commission": 10,
-            "payoutDelay": 6,
-            "payoutPeriod": 1
-        },
-        "staking": {
-            "freeSpace": 8111,
-            "minDelegation": 1,
-            "openForDelegation": true
-        }
-    },
-    {
-        "id": "tz1LLNkQK4UQV6QcFShiXJ2vT2ELw449MzAA",
-        "name": "TezoSteam",
-        "description": "Your trusted baker, active since cycle 3",
-        "website": "https://tezosteam.com/",
-        "payout": {
-            "commission": 0,
-            "payoutDelay": 6,
-            "payoutPeriod": 1
-        },
-        "staking": {
-            "freeSpace": 403021,
-            "minDelegation": 10,
-            "openForDelegation": true
+            "minDelegation": 0
         }
     },
     {
@@ -382,9 +276,7 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "freeSpace": 18652,
-            "minDelegation": 0,
-            "openForDelegation": true
+            "minDelegation": 0
         }
     },
     {
@@ -398,9 +290,7 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "freeSpace": 409838,
-            "minDelegation": 0,
-            "openForDelegation": true
+            "minDelegation": 0
         }
     },
     {
@@ -414,9 +304,7 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "freeSpace": 3436166,
-            "minDelegation": 0,
-            "openForDelegation": true
+            "minDelegation": 0
         }
     },
     {
@@ -430,9 +318,7 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "freeSpace": 1846971,
-            "minDelegation": 0,
-            "openForDelegation": true
+            "minDelegation": 0
         }
     },
     {
@@ -446,9 +332,7 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "freeSpace": 359438,
-            "minDelegation": 0,
-            "openForDelegation": true
+            "minDelegation": 0
         }
     },
     {
@@ -462,9 +346,7 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "freeSpace": 85903,
-            "minDelegation": 0,
-            "openForDelegation": true
+            "minDelegation": 0
         }
     },
     {
@@ -478,9 +360,7 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "freeSpace": 334268,
-            "minDelegation": 0,
-            "openForDelegation": true
+            "minDelegation": 0
         }
     },
     {
@@ -489,70 +369,30 @@
         "description": "TezoShop is PRO Tezos baker ",
         "website": "https://tezoshop.art",
         "payout": {
-            "commission": 15,
+            "commission": 3,
             "payoutDelay": 6,
             "payoutPeriod": 1
         },
-        "status": {
-            "disabled": false,
-            "note:": "No more capacity"
-        },
         "staking": {
-            "freeSpace": 29314,
-            "minDelegation": 0,
-            "openForDelegation": true
-        }
-    },
-    {
-        "id": "tz1egbN6RK2bM5vt4aAZw6r9j4nL8z49bPdS",
-        "name": "moneyevery3days.com old baking address",
-        "description": "Money Every 3 Days - Please switch to new baker address",
-        "website": "https://moneyevery3days.com",
-        "payout": {
-            "commission": 4,
-            "payoutDelay": 1,
-            "payoutPeriod": 1
+            "minDelegation": 100
         },
         "status": {
             "disabled": true,
-            "note:": "Outdated"
-        },
-        "staking": {
-            "freeSpace": 180386,
-            "minDelegation": 0,
-            "openForDelegation": true
+            "note": "No more capacity: -15667"
         }
     },
     {
-        "id": "tz1dNVDWPf3Q59SdJqnjdnu277iyvReiRS9M",
-        "name": "steak.and.bake",
-        "description": "easy as pie baking. 5% low fees. pro privacy. no signup. powerful secure servers. non-custodial staking. low minimums, 10 tez to start. start delegating today! thank you for supporting tezos.",
-        "website": "https://steakandbake.github.io",
+        "id": "tz1LLNkQK4UQV6QcFShiXJ2vT2ELw449MzAA",
+        "name": "TezoSteam",
+        "description": "Your trusted baker, active since cycle 3",
+        "website": "https://tezosteam.com/",
         "payout": {
-            "commission": 5,
+            "commission": 25,
             "payoutDelay": 6,
             "payoutPeriod": 1
         },
         "staking": {
-            "freeSpace": 166151,
-            "minDelegation": 10,
-            "openForDelegation": true
-        }
-    },
-    {
-        "id": "tz1XXayQohB8XRXN7kMoHbf2NFwNiH3oMRQQ",
-        "name": "Bit Cat🐱",
-        "description": "Secure and stable Tezos baker service from China team",
-        "website": "https://www.bitcat365.com",
-        "payout": {
-            "commission": 8,
-            "payoutDelay": 6,
-            "payoutPeriod": 1
-        },
-        "staking": {
-            "freeSpace": 111207,
-            "minDelegation": 100,
-            "openForDelegation": true
+            "minDelegation": 0
         }
     },
     {
@@ -566,9 +406,23 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "freeSpace": -51112,
-            "minDelegation": 10,
+            "freeSpace": 0,
+            "minDelegation": 0,
             "openForDelegation": true
+        }
+    },
+    {
+        "id": "tz1Lhf4J9Qxoe3DZ2nfe8FGDnvVj7oKjnMY6",
+        "name": "Tez Baker",
+        "description": "We Bake : You Make",
+        "website": "https://www.tezbaker.io/",
+        "payout": {
+            "commission": 9,
+            "payoutDelay": 6,
+            "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 0
         }
     }
 ]
