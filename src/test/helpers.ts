@@ -52,6 +52,7 @@ export const getChainLogoPath = (chain: string): string => `${chainsFolderPath}/
 export const getChainInfoPath = (chain: string): string => `${chainsFolderPath}/${chain}/info/${info}`
 export const getChainAssetInfoPath = (chain: string, address: string): string => `${chainsFolderPath}/${chain}/assets/${address}/${info}`
 export const getChainAssetsPath = (chain: string): string => `${chainsFolderPath}/${chain}/assets`
+export const getChainPath = (chain: string): string => `${chainsFolderPath}/${chain}`
 
 export const minLogoWidth = 64
 export const minLogoHeight = 64
@@ -64,6 +65,7 @@ export const getChainAssetPath = (chain: string, address: string) => `${getChain
 export const getAllChainsList = (): string[] => readDirSync(chainsFolderPath)
 export const getChainAssetLogoPath = (chain: string, address: string) => `${getChainAssetsPath(chain)}/${address}/${logo}`
 export const getChainAssetFilesList = (chain: string, address: string) => readDirSync(getChainAssetPath(chain, address))
+export const getChainFolderFilesList = (chain: string) => readDirSync(getChainPath(chain))
 export const getChainAssetsList = (chain: string): string[] => readDirSync(getChainAssetsPath(chain))
 export const getChainValidatorsPath = (chain: string): string => `${chainsFolderPath}/${chain}/validators`
 export const getChainValidatorsAssets = (chain: string): string[] => readDirSync(getChainValidatorsAssetsPath(chain))
@@ -315,4 +317,12 @@ export const rootDirAllowedFiles = [
 export const assetFolderAllowedFiles = [
     logo,
     info
+]
+
+export const chainFolderAllowedFiles = [
+    "assets",
+    "whitelist.json",
+    "blacklist.json",
+    "validators",
+    infoName
 ]

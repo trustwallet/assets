@@ -3,6 +3,7 @@ const eztz = require('eztz-lib')
 import {
     Binance, Cosmos, Tezos, Tron, IoTeX, Waves, Kava, Terra,
     assetFolderAllowedFiles,
+    chainFolderAllowedFiles,
     chainsFolderPath,
     ethSidechains,
     findFiles,
@@ -10,6 +11,7 @@ import {
     getChainAssetLogoPath,
     getChainAssetPath,
     getChainAssetsPath,
+    getChainFolderFilesList,
     getChainBlacklistPath,
     getChainLogoPath,
     getChainValidatorAssetLogoPath,
@@ -79,6 +81,14 @@ describe(`Test "blockchains" folder`, () => {
                 }) 
             })
             }  
+        })
+    })
+
+    describe(`Chain folder should contain only predefined list of files`, () => {
+        readDirSync(chainsFolderPath).forEach(chain => {
+            getChainFolderFilesList(chain).forEach(file => {
+                expect(chainFolderAllowedFiles.indexOf(file),`File "${typeof file}" ${file} not allowed in chain folder: ${chain}`).not.toBe(-1)
+            })
         })
     })
 
