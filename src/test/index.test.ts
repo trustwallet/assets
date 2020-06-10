@@ -125,7 +125,7 @@ describe(`Test "blockchains" folder`, () => {
     })
 
     describe(`Check "binace" folder`, () => {
-        it("Asset must exist on chain and", async () => {
+        it("Asset must exist on chain", async () => {
             const tokenSymbols = await getBinanceBEP2Symbols()
             const assets = readDirSync(getChainAssetsPath(Binance))
 

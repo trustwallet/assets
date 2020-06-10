@@ -1,21 +1,24 @@
 import * as fs from "fs"
 const isImage = require("is-image");
 import {
+    Ethereum,
+    chainsFolderPath,
     ethSidechains,
     getChainAssetPath,
     getChainAssetsPath,
+    getChainPath,
     getFileExt,
     getFileName,
+    getRootDirFilesList,
     isChecksum,
+    isEthereumAddress,
     isPathDir,
     logo,
     logoExtension,
     makeDirIfDoestExist,
     readDirSync,
-    toChecksum,
-    getRootDirFilesList,
     rootDirAllowedFiles,
-    isEthereumAddress
+    toChecksum,
 } from "../src/test/helpers"
 
 ethSidechains.forEach(chain => {
@@ -49,3 +52,20 @@ getRootDirFilesList().forEach(async file => {
         fs.renameSync(`./${file}`, `${ethreumAssetsPath}/${checksum}/${logo}`)
     }
 });
+
+// Moves blockchains/0xXX...XX.png => assets/blockchains/ethereum/0xXX...XX/logo.png
+readDirSync(chainsFolderPath).forEach(async chainFile => {
+    const chainPath = getChainPath(chainFile)
+    const isDir = isPathDir(chainPath)
+
+    if (!isDir) {
+        const checksum = toChecksum(getFileName(chainFile))
+        const chainAssetsPath = getChainAssetsPath(Ethereum)
+        
+        if (isChecksum(checksum) && getFileExt(chainFile).toLocaleLowerCase() === logoExtension) {
+            await makeDirIfDoestExist(chainAssetsPath, checksum)
+            const newPath = `${chainAssetsPath}/${checksum}/${logo}`
+            fs.renameSync(chainPath, newPath)
+        }
+    }
+})
