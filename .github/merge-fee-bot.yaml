@@ -39,6 +39,8 @@ message:
 label:
   requested: 'Payment Status: Requested'
   paid: 'Payment Status: Paid'
+user:
+  assignOnPay: kolya182
 timeout:
   maxAgeCloseHours: 60
   maxIdleRemindHours: 17
