@@ -19,6 +19,7 @@ import {
     readDirSync,
     rootDirAllowedFiles,
     toChecksum,
+    isDirContainLogo
 } from "../src/test/helpers"
 
 ethSidechains.forEach(chain => {
@@ -53,19 +54,29 @@ getRootDirFilesList().forEach(async file => {
     }
 });
 
-// Moves blockchains/0xXX...XX.png => assets/blockchains/ethereum/0xXX...XX/logo.png
-readDirSync(chainsFolderPath).forEach(async chainFile => {
-    const chainPath = getChainPath(chainFile)
+readDirSync(chainsFolderPath).forEach(async chainDir => {
+    const chainPath = getChainPath(chainDir)
     const isDir = isPathDir(chainPath)
+    const ethereumAssetsPath = getChainAssetsPath(Ethereum)
 
+    // Moves blockchains/0xXX...XX.png => assets/blockchains/ethereum/0xXX...XX/logo.png
     if (!isDir) {
-        const checksum = toChecksum(getFileName(chainFile))
-        const chainAssetsPath = getChainAssetsPath(Ethereum)
-        
-        if (isChecksum(checksum) && getFileExt(chainFile).toLocaleLowerCase() === logoExtension) {
-            await makeDirIfDoestExist(chainAssetsPath, checksum)
-            const newPath = `${chainAssetsPath}/${checksum}/${logo}`
+        const checksum = toChecksum(getFileName(chainDir))
+    
+        if (isChecksum(checksum) && getFileExt(chainDir).toLocaleLowerCase() === logoExtension) {
+            await makeDirIfDoestExist(ethereumAssetsPath, checksum)
+            const newPath = `${ethereumAssetsPath}/${checksum}/${logo}`
             fs.renameSync(chainPath, newPath)
         }
     }
+
+    // Moves blockchains/0xXX...XX/logo.png => assets/blockchains/ethereum/0xXX...XX/logo.png
+    if (isDir && isDirContainLogo(chainPath)) {
+        const checksum = toChecksum(getFileName(chainDir))
+        await makeDirIfDoestExist(ethereumAssetsPath, checksum)
+        const newPath = `${ethereumAssetsPath}/${checksum}`
+        fs.renameSync(chainPath, newPath)
+    }
 })
+
+
