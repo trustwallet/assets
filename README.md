@@ -68,11 +68,12 @@ Smart contract address update procedure:
 
 
 ## Image Requirements
-- file extension: `png`. Uppercase `PNG` is considered as invalid
-- name：file name requirements for: `logo.png` name, but [folder naming](#repository-structure) where they placed is most important part of contribution
-- dimension: `256px by 256px` or `512px by 512px`
-- size: up to `100 KB`. TIP: use free drag and drop online service [tinypng](https://tinypng.com/) to optimize image size
-- background: preferably transparent
+- File location: must be placed in the correct folder and subfolder within the [folder structure](#repository-structure).
+- File extension: `png`. Uppercase `PNG` is considered invalid.
+- File name：`logo.png`.
+- Dimension: `256px by 256px` or `512px by 512px`.
+- Background: preferably transparent (should fit dark mode as well; black logos need light border/background).
+- File size: maximum 100KB.  Tip: optimize image size, e.g. using simple drag-and-drop online service [tinypng](https://tinypng.com/).
 
 ## dApp image naming requirements
 - [Folder for upload](https://github.com/trustwallet/assets/tree/master/dapps)
