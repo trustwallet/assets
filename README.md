@@ -268,3 +268,8 @@ https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/tron/ass
 - [Aragon](https://aragon.org/) − Aragon is platform and network for decentralized organizations.
 - [SpiderDEX](https://www.spiderdex.com) - Decentralized exchange for crypto collectibles.
 - [Zerion](https://zerion.io) — A simple interface to decentralized finance.
+
+## Disclaimer
+Trust Wallet team allows anyone to submit new assets to this repository. However, this does not mean that we are in direct partnership with all of the projects. 
+Trust Wallet team will blacklist projects that are deemed as scams after careful review of the said assets.
+Trust Wallet team reserves the right to change the terms of asset submissions at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.
