@@ -35,7 +35,9 @@ message:
     Alternatively, 1 BNB is also accepted (same memo & address).
     \n$QR1_SIMPLE
     See the [Pull Request Fee FAQ](https://developer.trustwallet.com/add_new_asset/pr-fee).
-  oldClosing: Maximum PR age reached, auto-closing PR
+  oldClosing: |
+    This PR is being closed due to inactivity. If you wish to continue, please reopen the PR before sending your payment.
+    Do NOT send payments for closed PR, as the fee may by lost!
 label:
   requested: 'Payment Status: Requested'
   paid: 'Payment Status: Paid'
