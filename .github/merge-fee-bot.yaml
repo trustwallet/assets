@@ -36,8 +36,8 @@ message:
     \n$QR1_SIMPLE
     See the [Pull Request Fee FAQ](https://developer.trustwallet.com/add_new_asset/pr-fee).
   oldClosing: |
-    This PR is being closed due to inactivity. If you wish to continue, please reopen the PR before sending your payment!
-    Do not send payments for closed PR, as the fee may by lost.
+    This PR is being closed due to inactivity. If you wish to continue, please reopen the PR before sending your payment.
+    Do NOT send payments for closed PR, as the fee may by lost!
 label:
   requested: 'Payment Status: Requested'
   paid: 'Payment Status: Paid'
