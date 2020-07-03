@@ -33,7 +33,6 @@ const mappedChainsWhitelistAssets = {} // {ethereum: {<0x...>: ""},}
 
 const custom: mapTiker[] = [
     {"coin": 60, "type": typeToken, "token_id": "0x6758B7d441a9739b98552B373703d8d3d14f9e62", "id": 2548}, // POA ERC20 on Foundation (POA20)
-    {"coin": 60, "type": typeToken, "token_id": "0xdAC17F958D2ee523a2206206994597C13D831ec7", "id": 825}, // Tether (ERC20)
     {"coin": 195, "type": typeToken, "token_id": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t", "id": 825}, // Tether (TRC20)
     {"coin": 1023, "type": typeCoin, "id": 3945}, // Harmony ONE mainnet
     {"coin": 60, "type": typeToken, "token_id": "0x799a4202c12ca952cB311598a024C80eD371a41e", "id": 3945}, // Harmony ONE (ERC20)
