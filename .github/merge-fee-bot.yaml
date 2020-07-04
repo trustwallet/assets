@@ -26,6 +26,7 @@ message:
     Fee is PAID, fantastic!  Thanks!
     \nThe PR will be merged soon by a maintainer, and then new/updated logos should be visible in Trust Wallet.
     Please note that the app caches logos for several days, so if you want to see changes immediately, use a new device, or reinstall Trust Wallet (make sure you have a backup of all your wallets first!).  See the [assets FAQ](https://github.com/trustwallet/assets#faq). 
+    @zachzwei, please take note.
     \n([$PAID_AMOUNT $PAID_CURRENCY]($PAID1_EXPLORERLINK))
   reviewCreated: Fee paid, review added.
   reviewed: Review is not needed any more, no more fee required.
@@ -34,10 +35,14 @@ message:
     Alternatively, 1 BNB is also accepted (same memo & address).
     \n$QR1_SIMPLE
     See the [Pull Request Fee FAQ](https://developer.trustwallet.com/add_new_asset/pr-fee).
-  oldClosing: Maximum PR age reached, auto-closing PR
+  oldClosing: |
+    This PR is being closed due to inactivity. If you wish to continue, please reopen the PR before sending your payment.
+    Do NOT send payments for closed PR, as the fee may by lost!
 label:
   requested: 'Payment Status: Requested'
   paid: 'Payment Status: Paid'
+user:
+  assignOnPay: zachzwei
 timeout:
   maxAgeCloseHours: 60
   maxIdleRemindHours: 17
