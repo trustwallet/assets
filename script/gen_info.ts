@@ -6,22 +6,21 @@ import {
     isChainInfoExistSync,
     writeFileSync,
     readDirSync,
-    readFileSync
+    readFileSync,
+    getChainAssetInfoPath,
+    getChainAssetsPath,
+    isPathExistsSync
 } from "../src/test/helpers"
-import { InfoList } from "../src/test/models";
+import { CoinInfoList } from "../src/test/models";
 
-const dafaultInfoTemplate: InfoList = 
+const dafaultInfoTemplate: CoinInfoList = 
 {
     "name": "",
     "website": "",
     "source_code": "",
     "whitepaper": "",
-    "explorers": [
-        {
-            "name": "",
-            "url": ""
-        }
-    ],
+    "short_description": "",
+    "explorer": "",
     "socials": [
         {
             "name": "Twitter",
@@ -39,8 +38,7 @@ const dafaultInfoTemplate: InfoList =
             "language": "en",
             "description": ""
         }
-    ],
-    "data_source": "crowd"
+    ]
 }
 
 bluebird.mapSeries(readDirSync(chainsFolderPath), (chain: string) => {
@@ -51,28 +49,37 @@ bluebird.mapSeries(readDirSync(chainsFolderPath), (chain: string) => {
         writeToInfo(chainInfoPath, dafaultInfoTemplate)
     }
 
-    const infoList: InfoList = JSON.parse(readFileSync(chainInfoPath))
+    // const infoList: InfoList = JSON.parse(readFileSync(chainInfoPath))
+    // delete infoList["data_source"]
+    // const newExplorer = nestedProperty.get(infoList, "explorers")
+    // console.log({newExplorer}, chain)
+    // nestedProperty.set(infoList, "explorer", newExplorer)
+    // delete infoList["explorers"]
+    // writeToInfo(chainInfoPath, infoList)
+    
+    // if (isPathExistsSync(getChainAssetsPath(chain))) {
+    //     readDirSync(getChainAssetsPath(chain)).forEach(asset => {
+    //         const assetInfoPath = getChainAssetInfoPath(chain, asset)
+    //         if (isPathExistsSync(assetInfoPath)) {
+    //             const assetInfoList = JSON.parse(readFileSync(assetInfoPath))
+    //             delete assetInfoList["data_source"]
 
-    // Add "handle" property to each social element
-    let newSocials = []
-    infoList.socials.forEach(social => {
-        const handle = "handle"
-        if (nestedProperty.hasOwn(social, handle)) {
-            nestedProperty.set(social, handle, getHandle(social.url))
-            newSocials.push(social)
-        }
-    })
-    nestedProperty.set(infoList, "socials", newSocials)
-    writeToInfo(chainInfoPath, infoList)
+    //             const newExplorers = nestedProperty.get(assetInfoList, "explorers.0.url")
+    //             delete assetInfoList["explorers"]
+    //             nestedProperty.set(assetInfoList, "explorer", newExplorers)
+
+    //             writeToInfo(assetInfoPath, assetInfoList)
+    //         }
+    //     })
+    // }
 })
 
 // Get handle from Twitter and Reddit url
 export function getHandle(url: string): string {
     if (!url) return ""
-
     return url.slice(url.lastIndexOf("/") + 1, url.length)
 }
 
-function writeToInfo(path: string, info: InfoList) {
+function writeToInfo(path: string, info: CoinInfoList) {
     writeFileSync(path, JSON.stringify(info, null, 4))
 }

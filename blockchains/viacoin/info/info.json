@@ -1,31 +1,22 @@
 {
-    "name": "Viacoin",
-    "website": "http://viacoin.org",
-    "source_code": "https://github.com/viacoin/viacoin",
-    "whitepaper": "https://github.com/viacoin/documents/blob/master/whitepapers/Viacoin_fullcolor_whitepaper.pdf",
-    "explorers": [
-        {
-            "name": "cryptoID",
-            "url": "https://chainz.cryptoid.info/via"
-        }
-    ],
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/viacoin",
-            "handle": "viacoin"
-        },
-        {
-            "name": "Reddit",
-            "url": "https://reddit.com/r/viacoin",
-            "handle": "viacoin"
-        }
-    ],
-    "details": [
-        {
-            "language": "en",
-            "description": "Viacoin (VIA) is a cryptocurrency. Users are able to generate VIA through the process of mining. Viacoin has a current supply of 23,163,449.824. The last known price of Viacoin is $0.187001 USD and is down -0.18% over the last 24 hours. It is currently trading on 9 active market(s) with $131,580.342 traded over the last 24 hours. More information can be found at http://viacoin.org."
-        }
-    ],
-    "data_source": "crowd"
+  "name": "Viacoin",
+  "website": "http://viacoin.org",
+  "source_code": "https://github.com/viacoin/viacoin",
+  "white_paper": "https://github.com/viacoin/documents/blob/master/whitepapers/Viacoin_fullcolor_whitepaper.pdf",
+  "short_description": "Viacoin is an open source crypto-currency created in 2014, derived from the Bitcoin protocol that supports embedded consensus with an extended OP_RETURN of 120 byte.",
+  "description": "Viacoin (VIA) is a cryptocurrency. Users are able to generate VIA through the process of mining. Viacoin has a current supply of 23,163,449.824. More information can be found at http://viacoin.org.",
+  "socials": [
+    {
+      "name": "Twitter",
+      "url": "https://twitter.com/viacoin",
+      "handle": "viacoin"
+    },
+    {
+      "name": "Reddit",
+      "url": "https://reddit.com/r/viacoin",
+      "handle": "viacoin"
+    }
+  ],
+  "explorer": "https://chainz.cryptoid.info/via",
+  "research": "https://research.binance.com/en/projects/viacoin"
 }
