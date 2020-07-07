@@ -1,5 +1,6 @@
 # Trust Wallet Assets Info
 
+
 ![CI](https://github.com/trustwallet/assets/workflows/Daily%20Update/badge.svg)
 
 ## Overview
