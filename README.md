@@ -2,6 +2,7 @@
 
 ![CI](https://github.com/trustwallet/assets/workflows/Daily%20Update/badge.svg)
 
+
 ## Overview
 Hello and welcome to Trust Wallet assets info contribution guide. We appreciate your effort to open-source.
 Token repository [https://github.com/trustwallet/assets](https://github.com/trustwallet/assets) (repo) is a source of images used by [Trust Wallet](https://trustwallet.com/) including:
