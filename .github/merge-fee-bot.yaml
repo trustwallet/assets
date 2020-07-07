@@ -21,23 +21,28 @@ message:
     * Trust Wallet Tokens (TWT) are distributed to new users through our [Referral Program](https://community.trustwallet.com/t/invite-a-friend-earn-trust-wallet-token-twt/4125).
     * Payment evaluation happens when there is activity on the PR -- write a comment if you have performed the payment.
     * When payment is detected, an Accept Review is automatically placed on the PR, which is a condition for merge.  The merge is still done manually.
-  notReceived: Fee has not been received yet in full.\n\n$TX_LIST
+  notReceived: Fee has not been received yet (or not fully).\n\n$TX_LIST
   received: |
-    Fee payment received, thanks!
+    Fee is PAID, fantastic!  Thanks!
     \nThe PR will be merged soon by a maintainer, and then new/updated logos should be visible in Trust Wallet.
     Please note that the app caches logos for several days, so if you want to see changes immediately, use a new device, or reinstall Trust Wallet (make sure you have a backup of all your wallets first!).  See the [assets FAQ](https://github.com/trustwallet/assets#faq). 
-    \n$PAID_AMOUNT $PAID_CURRENCY
-    \n$TX_LIST
+    @zachzwei, please take note.
+    \n([$PAID_AMOUNT $PAID_CURRENCY]($PAID1_EXPLORERLINK))
+  reviewCreated: Fee paid, review added.
   reviewed: Review is not needed any more, no more fee required.
   reminder: |
     $USER, kind reminder:  please pay fee:  **$PAY1_AMOUNT $PAY1_CURRENCY**  with the memo **$PAY1_MEMO**  to the address `$PAY1_ADDRESS`.
     Alternatively, 1 BNB is also accepted (same memo & address).
     \n$QR1_SIMPLE
     See the [Pull Request Fee FAQ](https://developer.trustwallet.com/add_new_asset/pr-fee).
-  oldClosing: Maximum PR age reached, auto-closing PR
+  oldClosing: |
+    This PR is being closed due to inactivity. If you wish to continue, please reopen the PR before sending your payment.
+    Do NOT send payments for closed PR, as the fee may by lost!
 label:
   requested: 'Payment Status: Requested'
   paid: 'Payment Status: Paid'
+user:
+  assignOnPay: zachzwei
 timeout:
   maxAgeCloseHours: 60
   maxIdleRemindHours: 17

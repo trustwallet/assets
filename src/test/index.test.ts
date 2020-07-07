@@ -3,6 +3,7 @@ const eztz = require('eztz-lib')
 import {
     Binance, Cosmos, Tezos, Tron, IoTeX, Waves, Kava, Terra,
     assetFolderAllowedFiles,
+    chainFolderAllowedFiles,
     chainsFolderPath,
     ethSidechains,
     findFiles,
@@ -10,6 +11,7 @@ import {
     getChainAssetLogoPath,
     getChainAssetPath,
     getChainAssetsPath,
+    getChainFolderFilesList,
     getChainBlacklistPath,
     getChainLogoPath,
     getChainValidatorAssetLogoPath,
@@ -65,7 +67,7 @@ describe(`Test "blockchains" folder`, () => {
         })
     })
 
-    describe(`Asset folder should contain only predefined list of filees`, () => {
+    describe(`Asset folder should contain only predefined list of files`, () => {
         readDirSync(chainsFolderPath).forEach(chain => {
             const assetsPath = getChainAssetsPath(chain)
 
@@ -79,6 +81,14 @@ describe(`Test "blockchains" folder`, () => {
                 }) 
             })
             }  
+        })
+    })
+
+    describe(`Chain folder should contain only predefined list of files`, () => {
+        readDirSync(chainsFolderPath).forEach(chain => {
+            getChainFolderFilesList(chain).forEach(file => {
+                expect(chainFolderAllowedFiles.indexOf(file),`File "${typeof file}" ${file} not allowed in chain folder: ${chain}`).not.toBe(-1)
+            })
         })
     })
 
@@ -115,7 +125,7 @@ describe(`Test "blockchains" folder`, () => {
     })
 
     describe(`Check "binace" folder`, () => {
-        it("Asset must exist on chain and", async () => {
+        it("Asset must exist on chain", async () => {
             const tokenSymbols = await getBinanceBEP2Symbols()
             const assets = readDirSync(getChainAssetsPath(Binance))
 
@@ -130,7 +140,7 @@ describe(`Test "blockchains" folder`, () => {
 
         test("Expect asset to be TRC10 or TRC20", () => {
             readDirSync(path).forEach(asset => {
-                expect(isTRC10(asset) || isTRC20(asset), `Asset ${asset} non TRC10 nor TRC20`).toBe(true)
+                expect(isTRC10(asset) || isTRC20(asset), `Asset ${asset} at path ${path} non TRC10 nor TRC20`).toBe(true)
 
                 const assetsLogoPath = getChainAssetLogoPath(Tron, asset)
                 expect(isPathExistsSync(assetsLogoPath), `Missing file at path "${assetsLogoPath}"`).toBe(true)
