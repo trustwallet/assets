@@ -1,5 +1,19 @@
 [
     {
+        "id": "tz3QCNyySViKHmeSr45kzDxzchys7NiXCWoa",
+        "name": "Proof of Bake",
+        "description": "The world's best Tezos baking service",
+        "website": "https://proofofbake.com",
+        "payout": {
+            "commission": 8,
+            "payoutDelay": 1,
+            "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 100
+        }
+    },
+    {
         "id": "tz1Vyuu4EJ5Nym4JcrfRLnp3hpaq1DSEp1Ke",
         "name": "Stakin",
         "description": "Your Trusted Crypto Rewards",
@@ -169,11 +183,25 @@
     },
     {
         "id": "tz1MXFrtZoaXckE41bjUCSjAjAap3AFDSr3N",
+        "name": "Everstake Legacy",
+        "description": "Everstake - Staking Service Platform. Delegate XTZ with Everstake, your trusted staking partner.",
+        "website": "https://everstake.one/",
+        "payout": {
+            "commission": 15,
+            "payoutDelay": 6,
+            "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 0
+        }
+    },
+    {
+        "id": "tz1aRoaRhSpRYvFdyvgWLL6TGyRoGF51wDjM",
         "name": "Everstake",
         "description": "Everstake - Staking Service Platform. Delegate XTZ with Everstake, your trusted staking partner.",
         "website": "https://everstake.one/",
         "payout": {
-            "commission": 8,
+            "commission": 5,
             "payoutDelay": 6,
             "payoutPeriod": 1
         },
@@ -234,7 +262,7 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "minDelegation": 0
+            "minDelegation": 10
         }
     },
     {
@@ -338,7 +366,7 @@
     {
         "id": "tz1V3yg82mcrPJbegqVCPn6bC8w1CSTRp3f8",
         "name": "TezoShop",
-        "description": "TezoShop is PRO Tezos baker ",
+        "description": "TezoShop Tezos baker ",
         "website": "https://tezoshop.art",
         "payout": {
             "commission": 15,
@@ -369,7 +397,7 @@
         "description": "An historical and trusted baker, from Italy with love.",
         "website": "https://stakingteam.com/",
         "payout": {
-            "commission": 0,
+            "commission": 9.9,
             "payoutDelay": 6,
             "payoutPeriod": 1
         },
@@ -377,10 +405,20 @@
             "freeSpace": 0,
             "minDelegation": 0,
             "openForDelegation": true
+        }
+    },
+    {
+        "id": "tz1Lhf4J9Qxoe3DZ2nfe8FGDnvVj7oKjnMY6",
+        "name": "Tez Baker",
+        "description": "We Bake : You Make",
+        "website": "https://www.tezbaker.io/",
+        "payout": {
+            "commission": 12,
+            "payoutDelay": 6,
+            "payoutPeriod": 1
         },
-        "status": {
-            "disabled": true,
-            "note": "No more capacity: -108288"
+        "staking": {
+            "minDelegation": 0
         }
     }
 ]

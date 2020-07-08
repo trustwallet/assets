@@ -52,6 +52,7 @@ export const getChainLogoPath = (chain: string): string => `${chainsFolderPath}/
 export const getChainInfoPath = (chain: string): string => `${chainsFolderPath}/${chain}/info/${info}`
 export const getChainAssetInfoPath = (chain: string, address: string): string => `${chainsFolderPath}/${chain}/assets/${address}/${info}`
 export const getChainAssetsPath = (chain: string): string => `${chainsFolderPath}/${chain}/assets`
+export const getChainPath = (chain: string): string => `${chainsFolderPath}/${chain}`
 
 export const minLogoWidth = 64
 export const minLogoHeight = 64
@@ -61,8 +62,10 @@ export const maxLogoHeight = 512
 export const maxAssetLogoSizeInKilobyte = 100
 
 export const getChainAssetPath = (chain: string, address: string) => `${getChainAssetsPath(chain)}/${address}`
+export const getAllChainsList = (): string[] => readDirSync(chainsFolderPath)
 export const getChainAssetLogoPath = (chain: string, address: string) => `${getChainAssetsPath(chain)}/${address}/${logo}`
 export const getChainAssetFilesList = (chain: string, address: string) => readDirSync(getChainAssetPath(chain, address))
+export const getChainFolderFilesList = (chain: string) => readDirSync(getChainPath(chain))
 export const getChainAssetsList = (chain: string): string[] => readDirSync(getChainAssetsPath(chain))
 export const getChainValidatorsPath = (chain: string): string => `${chainsFolderPath}/${chain}/validators`
 export const getChainValidatorsAssets = (chain: string): string[] => readDirSync(getChainValidatorsAssetsPath(chain))
@@ -89,6 +92,7 @@ export const getRootDirFilesList = (): string[] => readDirSync(root)
 export const readDirSync = (path: string): string[] => fs.readdirSync(path)
 export const makeDirSync = (path: string) => fs.mkdirSync(path)
 export const isPathExistsSync = (path: string): boolean => fs.existsSync(path)
+export const isDirContainLogo = (path: string): boolean => fs.existsSync(`${path}/${logo}`)
 export const isChainWhitelistExistSync = (chain: string): boolean => isPathExistsSync(getChainWhitelistPath(chain))
 export const isChainBlacklistExistSync = (chain: string): boolean => isPathExistsSync(getChainBlacklistPath(chain))
 export const isChainInfoExistSync = (chain: string): boolean => isPathExistsSync(getChainInfoPath(chain))
@@ -103,7 +107,7 @@ export const isChecksum = (address: string): boolean => web3.utils.checkAddressC
 export const toChecksum = (address: string): string => web3.utils.toChecksumAddress(address)
 export const getBinanceBEP2Symbols = async () => axios.get(`https://dex-atlantic.binance.org/api/v1/tokens?limit=1000`).then(res => res.data.map(({ symbol }) => symbol))
 
-export const getFileName = (fileName: string): string => path.basename(fileName, path.extname(fileName))
+export const getFileName = (name: string): string => path.basename(name, path.extname(name))
 export const getFileExt = (name: string): string => name.slice((Math.max(0, name.lastIndexOf(".")) || Infinity) + 1)
 
 export const isTRC10 = (str: string): boolean => (/^\d+$/.test(str))
@@ -137,6 +141,23 @@ export const isPathDir = (path: string): boolean => {
         console.log(`Path: ${path} is not a directory with error: ${e.message}`)
         return false
     }
+}
+
+export const isPathDirEmpthy = (path: string): boolean => {
+    try {
+        if (isPathDir(path)) {
+            return fs.readdirSync(path).length == 0
+        } else {
+            false
+        }
+    } catch (error) {
+        console.log(`Error isPathDirEmpthy`, error)
+        process.exit(1)
+    }
+}
+
+export const removeDir = (path: string) => {
+    fs.rmdirSync(path, {recursive: true})
 }
 
 export const makeDirIfDoestExist = async (dirPath: string, dirName: string) => {
@@ -297,4 +318,12 @@ export const rootDirAllowedFiles = [
 export const assetFolderAllowedFiles = [
     logo,
     info
+]
+
+export const chainFolderAllowedFiles = [
+    "assets",
+    "whitelist.json",
+    "blacklist.json",
+    "validators",
+    infoName
 ]
