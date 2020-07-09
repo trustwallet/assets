@@ -3,6 +3,26 @@ export interface ValidatorModel {
     name: string,
     description: string,
     website: string,
+    staking: Staking
+    payout: Payout
+    status: ValidatorStatus
+}
+
+interface Staking {
+  freeSpace: number,
+  minDelegation: number
+  openForDelegation: boolean
+}
+
+interface Payout {
+  commission: number // in %
+  payoutDelay: number // in cycles
+  payoutPeriod: number
+}
+
+interface ValidatorStatus {
+  disabled: boolean;
+  note: string;
 }
 
 // Minimal property requirements for asset info file
@@ -56,4 +76,16 @@ export enum PlatformType {
     TRON = "TRON",
     OMNI = "Omni",
     VeChain = "VeChain"
+}
+
+export interface BakingBadBaker {
+  address: string,
+  freeSpace: number
+  // serviceHealth: string // active or Dead is a working baker who was a public baker but for some reason stopped paying his delegators, Closed is a permanently closed service (we store them for historical purposes only
+  fee: number
+  minDelegation: number
+  openForDelegation: boolean
+  payoutDelay: number
+  payoutPeriod: number
+  serviceHealth: string
 }

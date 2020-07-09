@@ -1,11 +1,7 @@
 name: Danger
-
 on:
   push:
     branches: [ master ]
-  pull_request:
-    branches: [ master ]
-
 jobs:
   danger:
     runs-on: ubuntu-latest
@@ -18,4 +14,4 @@ jobs:
     - name: Run Danger
       run: danger --verbose
       env:
-        GITHUB_TOKEN: ${{ secrets.DANGER_TOKEN }}
+        DANGER_GITHUB_API_TOKEN: ${{ secrets.DANGER_GITHUB_API_TOKEN }}
