@@ -25,7 +25,7 @@ formatValidators()
 formatInfo()
 
 function formatWhiteBlackList() {
-    ethSidechains.concat(Tron, Terra).forEach(async chain => {
+    ethSidechains.concat(Tron, Terra, "neo", 'nuls').forEach(async chain => {
         const assets = getChainAssetsList(chain)
     
         const whitelistPath = getChainWhitelistPath(chain)
