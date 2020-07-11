@@ -25,7 +25,7 @@ formatValidators()
 formatInfo()
 
 function formatWhiteBlackList() {
-    ethSidechains.concat(Tron, Terra).forEach(async chain => {
+    ethSidechains.concat(Tron, Terra, "neo", 'nuls').forEach(async chain => {
         const assets = getChainAssetsList(chain)
     
         const whitelistPath = getChainWhitelistPath(chain)
@@ -45,18 +45,18 @@ function formatWhiteBlackList() {
     
         let newBlackList = []
         // Some chains required pulling lists from other sources
-        switch (chain) {
-            case Ethereum:
-                const nftList = await getOpenseaCollectionAddresses()
-                newBlackList = currentBlacklist.concat(nftList)
-                break;
-            default:
-                newBlackList = newBlackList.concat(currentBlacklist)
-                break;
-        }
+        // switch (chain) {
+        //     case Ethereum:
+        //         const nftList = await getOpenseaCollectionAddresses()
+        //         newBlackList = currentBlacklist.concat(nftList)
+        //         break;
+        //     default:
+        //         newBlackList = newBlackList.concat(currentBlacklist)
+        //         break;
+        // }
      
         const removedAssets = getRemovedAddressesFromAssets(assets, currentWhitelist)
-        newBlackList = newBlackList.concat(removedAssets)
+        newBlackList = currentBlacklist.concat(removedAssets)
     
         fs.writeFileSync(whitelistPath, JSON.stringify(sortDesc(assets), null, 4))
         fs.writeFileSync(blacklistPath, JSON.stringify(getUnique(sortDesc(newBlackList)), null, 4))

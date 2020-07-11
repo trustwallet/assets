@@ -1,21 +1,25 @@
 import * as fs from "fs"
 const isImage = require("is-image");
 import {
+    Ethereum,
+    chainsFolderPath,
     ethSidechains,
     getChainAssetPath,
     getChainAssetsPath,
+    getChainPath,
     getFileExt,
     getFileName,
+    getRootDirFilesList,
     isChecksum,
+    isEthereumAddress,
     isPathDir,
     logo,
     logoExtension,
     makeDirIfDoestExist,
     readDirSync,
-    toChecksum,
-    getRootDirFilesList,
     rootDirAllowedFiles,
-    isEthereumAddress
+    toChecksum,
+    isDirContainLogo
 } from "../src/test/helpers"
 
 ethSidechains.forEach(chain => {
@@ -38,7 +42,7 @@ ethSidechains.forEach(chain => {
     })
 })
 
-// Moves asset/0xXX...XX.png => assets/blockchains/assets/0xXX...XX/logo.png
+// Moves assets/0xXX...XX.png => assets/blockchains/assets/0xXX...XX/logo.png
 getRootDirFilesList().forEach(async file => {
     const fileName = getFileName(file)
     if(isImage(file) && !rootDirAllowedFiles.includes(file) && isEthereumAddress(fileName)) {
@@ -50,6 +54,29 @@ getRootDirFilesList().forEach(async file => {
     }
 });
 
+readDirSync(chainsFolderPath).forEach(async chainDir => {
+    const chainPath = getChainPath(chainDir)
+    const isDir = isPathDir(chainPath)
+    const ethereumAssetsPath = getChainAssetsPath(Ethereum)
 
+    // Moves blockchains/0xXX...XX.png => assets/blockchains/ethereum/0xXX...XX/logo.png
+    if (!isDir) {
+        const checksum = toChecksum(getFileName(chainDir))
+    
+        if (isChecksum(checksum) && getFileExt(chainDir).toLocaleLowerCase() === logoExtension) {
+            await makeDirIfDoestExist(ethereumAssetsPath, checksum)
+            const newPath = `${ethereumAssetsPath}/${checksum}/${logo}`
+            fs.renameSync(chainPath, newPath)
+        }
+    }
+
+    // Moves blockchains/0xXX...XX/logo.png => assets/blockchains/ethereum/0xXX...XX/logo.png
+    if (isDir && isDirContainLogo(chainPath)) {
+        const checksum = toChecksum(getFileName(chainDir))
+        await makeDirIfDoestExist(ethereumAssetsPath, checksum)
+        const newPath = `${ethereumAssetsPath}/${checksum}`
+        fs.renameSync(chainPath, newPath)
+    }
+})
 
 
