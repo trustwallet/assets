@@ -17,7 +17,6 @@ import {
     getChainWhitelist,
 } from "../../src/test/helpers";
 import { TickerType, mapTiker, PlatformType } from "../../src/test/models";
-import { CoinType } from "@trustwallet/types";
 
 // Steps required to run this:
 // 1. (Optional) CMC API key already setup, use yours if needed. Install script deps "npm i" if hasn't been run before. 
@@ -96,7 +95,6 @@ async function processCoin(coin) {
                                 id
                             })
                         }
-                        // await getImageIfMissing(getChainName(CoinType.ethereum), checksum, id)
                     } catch (error) {
                         console.log(`Etheruem platform error`, error)
                         break
