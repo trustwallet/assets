@@ -9,7 +9,6 @@ import {
     readFileSync,
     getChainAssetLogoPath,
     isPathExistsSync,
-    getChainName,
     makeDirSync,
     getChainAssetPath,
     ethSidechains,
@@ -55,7 +54,6 @@ const custom: mapTiker[] = [
 ]
 
 const allContracts: mapTiker[] = [] // Temp storage for mapped assets
-let bip44Constants = {}
 let bnbOwnerToSymbol = {} // e.g: bnb1tawge8u97slduhhtumm03l4xl4c46dwv5m9yzk: WISH-2D5
 let bnbOriginalSymbolToSymbol = {} // e.g: WISH: WISH-2D5
 
