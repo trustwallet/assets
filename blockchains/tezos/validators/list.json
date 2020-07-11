@@ -187,7 +187,7 @@
         "description": "Everstake - Staking Service Platform. Delegate XTZ with Everstake, your trusted staking partner.",
         "website": "https://everstake.one/",
         "payout": {
-            "commission": 8,
+            "commission": 15,
             "payoutDelay": 6,
             "payoutPeriod": 1
         },
@@ -262,7 +262,7 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "minDelegation": 0
+            "minDelegation": 10
         }
     },
     {
@@ -366,10 +366,10 @@
     {
         "id": "tz1V3yg82mcrPJbegqVCPn6bC8w1CSTRp3f8",
         "name": "TezoShop",
-        "description": "TezoShop is PRO Tezos baker ",
+        "description": "TezoShop Tezos baker ",
         "website": "https://tezoshop.art",
         "payout": {
-            "commission": 3,
+            "commission": 15,
             "payoutDelay": 6,
             "payoutPeriod": 1
         },
@@ -397,7 +397,7 @@
         "description": "An historical and trusted baker, from Italy with love.",
         "website": "https://stakingteam.com/",
         "payout": {
-            "commission": 0,
+            "commission": 9.9,
             "payoutDelay": 6,
             "payoutPeriod": 1
         },
