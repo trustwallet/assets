@@ -1598,12 +1598,6 @@
     {
         "coin": 60,
         "type": "token",
-        "token_id": "0xCeD4E93198734dDaFf8492d525Bd258D49eb388E",
-        "id": 2057
-    },
-    {
-        "coin": 60,
-        "type": "token",
         "token_id": "0x27054b13b1B798B345b591a4d22e6562d47eA75a",
         "id": 2058
     },
@@ -3562,6 +3556,12 @@
         "type": "token",
         "token_id": "0xc12d099be31567add4e4e4d0D45691C3F58f5663",
         "id": 2653
+    },
+    {
+        "coin": 60,
+        "type": "token",
+        "token_id": "0xCCbf21ba6EF00802AB06637896B799f7101F54A2",
+        "id": 2654
     },
     {
         "coin": 60,
@@ -11079,5 +11079,17 @@
         "type": "token",
         "token_id": "0x37236CD05b34Cc79d3715AF2383E96dd7443dCF1",
         "id": 5824
+    },
+    {
+        "coin": 195,
+        "type": "token",
+        "token_id": "",
+        "id": 5828
+    },
+    {
+        "coin": 60,
+        "type": "token",
+        "token_id": "0xCC4304A31d09258b0029eA7FE63d032f52e44EFe",
+        "id": 5829
     }
 ]
