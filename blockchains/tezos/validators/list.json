@@ -262,7 +262,7 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "minDelegation": 10
+            "minDelegation": 100
         }
     },
     {
@@ -369,12 +369,12 @@
         "description": "Staking for best PoS blockchains in one place",
         "website": "https://www.stakingshop.live",
         "payout": {
-            "commission": 3,
+            "commission": 15,
             "payoutDelay": 6,
             "payoutPeriod": 1
         },
         "staking": {
-            "minDelegation": 50
+            "minDelegation": 100
         }
     },
     {
