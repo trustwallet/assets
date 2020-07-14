@@ -5,7 +5,7 @@ const chalk = require('chalk')
 const fs = require("fs")
 const path = require('path')
 const constants = require('bip44-constants')
-import { 
+import {
     readFileSync,
     getChainAssetLogoPath,
     isPathExistsSync,
@@ -68,7 +68,7 @@ async function run() {
         // setBIP44Constants()
         log(`Found ${totalCrypto} on CMC`, chalk.yellowBright)
         await BluebirbPromise.mapSeries(coins, processCoin)
-        
+
         addCustom()
         printContracts()
     } catch (error) {
@@ -81,98 +81,98 @@ async function processCoin(coin) {
     const platformType: PlatformType = platform == null ? "" : platform.name
     log(`${symbol}:${platformType}`)
     // await BluebirbPromise.mapSeries(types, async type => {
-        switch (platformType) {
-            case PlatformType.Ethereum:
-                // log(`Ticker ${name}(${symbol}) is a token with address ${address} and CMC id ${id}`)
-                if (platform.token_address) {
-                    try {
-                        const checksum = toChecksum(platform.token_address)
-                        if (!isAddressInBlackList("ethereum", checksum)) {
-                            log(`Added ${checksum}`)
-                            addToContractsList({
-                                coin: 60,
-                                type: typeToken,
-                                token_id: checksum,
-                                id
-                            })
-                        }
-                        // await getImageIfMissing(getChainName(CoinType.ethereum), checksum, id)
-                    } catch (error) {
-                        console.log(`Etheruem platform error`, error)
-                        break
+    switch (platformType) {
+        case PlatformType.Ethereum:
+            // log(`Ticker ${name}(${symbol}) is a token with address ${address} and CMC id ${id}`)
+            if (platform.token_address) {
+                try {
+                    const checksum = toChecksum(platform.token_address)
+                    if (!isAddressInBlackList("ethereum", checksum)) {
+                        log(`Added ${checksum}`)
+                        addToContractsList({
+                            coin: 60,
+                            type: typeToken,
+                            token_id: checksum,
+                            id
+                        })
                     }
+                    // await getImageIfMissing(getChainName(CoinType.ethereum), checksum, id)
+                } catch (error) {
+                    console.log(`Etheruem platform error`, error)
+                    break
                 }
+            }
+            break
+        case PlatformType.Binance:
+            if (symbol === "BNB") {
                 break
-            case PlatformType.Binance:
-                if (symbol === "BNB") {
-                    break
-                }
-                const ownerAddress = platform.token_address.trim()
-                log(`Symbol ${symbol}:${ownerAddress}:${id}`)
-                if (ownerAddress && (ownerAddress in bnbOwnerToSymbol)) {
-                    log(`Added ${bnbOwnerToSymbol[ownerAddress]}`)
-                    addToContractsList({
-                        coin: 714,
-                        type: typeToken,
-                        token_id: bnbOwnerToSymbol[ownerAddress],
-                        id
-                    })
-                    break
-                }
-
-                if (symbol in bnbOriginalSymbolToSymbol) {
-                    log(`Added Binance ${bnbOriginalSymbolToSymbol[symbol]}`)
-                    addToContractsList({
-                        coin: 714,
-                        type: typeToken,
-                        token_id: bnbOriginalSymbolToSymbol[symbol].trim(),
-                        id
-                    })
-                    break
-                }
+            }
+            const ownerAddress = platform.token_address.trim()
+            log(`Symbol ${symbol}:${ownerAddress}:${id}`)
+            if (ownerAddress && (ownerAddress in bnbOwnerToSymbol)) {
+                log(`Added ${bnbOwnerToSymbol[ownerAddress]}`)
+                addToContractsList({
+                    coin: 714,
+                    type: typeToken,
+                    token_id: bnbOwnerToSymbol[ownerAddress],
+                    id
+                })
                 break
-            case PlatformType.TRON:
-                    if (symbol === "TRX") {
-                        break
-                    }
-                    const tokenAddr = platform.token_address.trim()
-                    log(`tron: ${tokenAddr}`)
-                    addToContractsList({
-                        coin: 195,
-                        type: typeToken,
-                        token_id: tokenAddr,
-                        id
-                    })
-                    break
-            // case PlatformType.VeChain:
-            //         if (symbol === "VET") {
-            //             break
-            //         }
+            }
 
-            //         const addr = platform.token_address.trim()
-            //         log(`vechain: ${tokenAddr}`)
-            //         addToContractsList({
-            //             coin: 0,
-            //             type: typeCoin,
-            //             token_id: addr,
-            //             id
-            //         })
-            //         break
-            default:
-                const coinIndex = getSlip44Index(symbol, name)
-
-                if (coinIndex >= 0) {
-                    log(`Ticker ${name}(${symbol}) is a coin with id ${coinIndex}`)
-                    addToContractsList({
-                        coin: coinIndex,
-                        type: typeCoin,
-                        id
-                    })
-                } else {
-                    log(`Coin ${coinIndex} ${name}(${symbol}) not listed in slip44`)
-                } 
+            if (symbol in bnbOriginalSymbolToSymbol) {
+                log(`Added Binance ${bnbOriginalSymbolToSymbol[symbol]}`)
+                addToContractsList({
+                    coin: 714,
+                    type: typeToken,
+                    token_id: bnbOriginalSymbolToSymbol[symbol].trim(),
+                    id
+                })
                 break
-        }
+            }
+            break
+        case PlatformType.TRON:
+            if (symbol === "TRX") {
+                break
+            }
+            const tokenAddr = platform.token_address.trim()
+            log(`tron: ${tokenAddr}`)
+            addToContractsList({
+                coin: 195,
+                type: typeToken,
+                token_id: tokenAddr,
+                id
+            })
+            break
+        // case PlatformType.VeChain:
+        //         if (symbol === "VET") {
+        //             break
+        //         }
+
+        //         const addr = platform.token_address.trim()
+        //         log(`vechain: ${tokenAddr}`)
+        //         addToContractsList({
+        //             coin: 0,
+        //             type: typeCoin,
+        //             token_id: addr,
+        //             id
+        //         })
+        //         break
+        default:
+            const coinIndex = getSlip44Index(symbol, name)
+
+            if (coinIndex >= 0) {
+                log(`Ticker ${name}(${symbol}) is a coin with id ${coinIndex}`)
+                addToContractsList({
+                    coin: coinIndex,
+                    type: typeCoin,
+                    id
+                })
+            } else {
+                log(`Coin ${coinIndex} ${name}(${symbol}) not listed in slip44`)
+            }
+            break
+    }
     // })
 }
 
@@ -185,7 +185,7 @@ async function mapChainsAssetsLists() {
     ethSidechains.forEach(chain => {
         Object.assign(mappedChainsWhitelistAssets, {[chain]: {}})
         Object.assign(mappedChainsBlacklistAssets, {[chain]: {}})
-        
+
         getChainWhitelist(chain).forEach(addr => {
             Object.assign(mappedChainsWhitelistAssets[chain], {[addr]: ""})
         })
@@ -245,12 +245,12 @@ async function getImageIfMissing(chain: string, address: string, id: string) {
         const logoPath = getChainAssetLogoPath(chain, String(address))
         if (!isPathExistsSync(logoPath) && !isAddressInBlackList(chain, address)) {
             const imageStream = await fetchImage(getImageURL(id))
-            
+
             if (imageStream) {
                 const logoFolderPath = getChainAssetPath(chain, address)
                 if(!isPathExistsSync(logoFolderPath)) {
                     makeDirSync(logoFolderPath)
-                }   
+                }
                 imageStream.pipe(fs.createWriteStream(logoPath))
                 log(`Image saved to: ${logoPath}`, chalk.green)
             }
@@ -290,7 +290,7 @@ function exit(code?: number) {
 
 function getTotalActiveCryptocurrencies() {
     return axios.get(`${CMC_LATEST_BASE_URL}CMC_PRO_API_KEY=${CMC_PRO_API_KEY}`).then((res) => res.data.data.active_cryptocurrencies).catch(e => {
-        throw `Error getTotalActiveCryptocurrencies ${e.message}` 
+        throw `Error getTotalActiveCryptocurrencies ${e.message}`
     })
 }
 
@@ -305,7 +305,7 @@ async function setBinanceTokens () {
             acm[token.original_symbol] = token.symbol
             return acm
         }, {})
-    }).catch(error => {throw Error(`Error fetching Binance markets : ${error.message}`)}) 
+    }).catch(error => {throw Error(`Error fetching Binance markets : ${error.message}`)})
 }
 
 function readBEP2() {
@@ -316,8 +316,8 @@ function readBEP2() {
 }
 
 async function getTickers() {
-        const url = `https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?&limit=3500&CMC_PRO_API_KEY=${CMC_PRO_API_KEY}`
-        return axios.get(url).then(res => res.data.data).catch(e => {throw `Error getTickers ${e.message}`})
+    const url = `https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?&limit=3500&CMC_PRO_API_KEY=${CMC_PRO_API_KEY}`
+    return axios.get(url).then(res => res.data.data).catch(e => {throw `Error getTickers ${e.message}`})
 }
 
 function log(string, cb?) {
