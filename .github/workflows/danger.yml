@@ -1,0 +1,17 @@
+name: Danger
+on:
+  push:
+    branches: [ master ]
+jobs:
+  danger:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install gems
+      run: sudo gem install bundler --no-document
+    - name: Bundle update
+      run: bundle update --bundler
+    - name: Run Danger
+      run: danger --verbose
+      env:
+        DANGER_GITHUB_API_TOKEN: ${{ secrets.DANGER_GITHUB_API_TOKEN }}
