@@ -133,12 +133,14 @@ async function processCoin(coin) {
             }
             const tokenAddr = platform.token_address.trim()
             log(`tron: ${tokenAddr}`)
-            addToContractsList({
-                coin: 195,
-                type: typeToken,
-                token_id: tokenAddr,
-                id
-            })
+            if (tokenAddr.length > 0) {
+                addToContractsList({
+                    coin: 195,
+                    type: typeToken,
+                    token_id: tokenAddr,
+                    id
+                })
+            }
             break
         // case PlatformType.VeChain:
         //         if (symbol === "VET") {
