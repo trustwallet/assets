@@ -9,7 +9,6 @@ import {
     readFileSync,
     getChainAssetLogoPath,
     isPathExistsSync,
-    getChainName,
     makeDirSync,
     getChainAssetPath,
     ethSidechains,
@@ -17,7 +16,6 @@ import {
     getChainWhitelist,
 } from "../../src/test/helpers";
 import { TickerType, mapTiker, PlatformType } from "../../src/test/models";
-import { CoinType } from "@trustwallet/types";
 
 // Steps required to run this:
 // 1. (Optional) CMC API key already setup, use yours if needed. Install script deps "npm i" if hasn't been run before. 
@@ -56,7 +54,6 @@ const custom: mapTiker[] = [
 ]
 
 const allContracts: mapTiker[] = [] // Temp storage for mapped assets
-let bip44Constants = {}
 let bnbOwnerToSymbol = {} // e.g: bnb1tawge8u97slduhhtumm03l4xl4c46dwv5m9yzk: WISH-2D5
 let bnbOriginalSymbolToSymbol = {} // e.g: WISH: WISH-2D5
 
@@ -96,7 +93,6 @@ async function processCoin(coin) {
                                 id
                             })
                         }
-                        // await getImageIfMissing(getChainName(CoinType.ethereum), checksum, id)
                     } catch (error) {
                         console.log(`Etheruem platform error`, error)
                         break
