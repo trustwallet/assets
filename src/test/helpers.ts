@@ -4,11 +4,11 @@ import { ValidatorModel } from "./models";
 const axios = require('axios')
 const Web3 = require('web3')
 const web3 = new Web3('ws://localhost:8546');
-import { CoinTypeUtils, CoinType } from "@trustwallet/types";
+import { CoinType } from "@trustwallet/wallet-core";
 const sizeOf = require("image-size");
 const { execSync } = require('child_process');
 
-export const getChainName = (id: CoinType): string =>  CoinTypeUtils.id(id) // 60 => ethereum
+export const getChainName = (id: CoinType): string =>  CoinType.id(id) // 60 => ethereum
 export const Binance = getChainName(CoinType.binance)
 export const Classic = getChainName(CoinType.classic)
 export const Cosmos = getChainName(CoinType.cosmos)
