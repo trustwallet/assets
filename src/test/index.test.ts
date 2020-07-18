@@ -1,40 +1,44 @@
 const eztz = require('eztz-lib')
 
 import {
-    Binance, Cosmos, Tezos, Tron, IoTeX, Waves,
-    ethSidechains,
+    Binance, Cosmos, Tezos, Tron, IoTeX, Waves, Kava, Terra,
+    assetFolderAllowedFiles,
+    chainFolderAllowedFiles,
     chainsFolderPath,
-    pricingFolderPath,
-    getChainLogoPath,
-    getChainAssetsPath,
+    ethSidechains,
+    findFiles,
+    getBinanceBEP2Symbols,
     getChainAssetLogoPath,
+    getChainAssetPath,
+    getChainAssetsPath,
+    getChainFolderFilesList,
+    getChainBlacklistPath,
+    getChainLogoPath,
+    getChainValidatorAssetLogoPath,
     getChainValidatorsAssets,
     getChainValidatorsListPath,
-    getChainValidatorAssetLogoPath,
-    readDirSync,
-    isPathExistsSync,
-    readFileSync,
-    isLowerCase,
-    isChecksum,
-    getBinanceBEP2Symbols,
-    isTRC10, isTRC20,
-    isLogoOK,
     getChainWhitelistPath,
-    getChainBlacklistPath,
-    mapList,
-    findFiles,
+    getChainAssetsList,
+    getChainValidatorsList,
+    isChecksum,
+    isLogoDimentionOK,
+    isLogoSizeOK,
+    isLowerCase,
+    isPathDir,
+    isPathExistsSync,
+    isTRC10, isTRC20, isWavesAddress,
     isValidJSON,
+    isAssetInfoOK,
     isValidatorHasAllKeys,
-    getChainAssetPath,
+    mapList,
+    pricingFolderPath,
+    readDirSync,
+    readFileSync,
     rootDirAllowedFiles,
-    assetFolderAllowedFiles
+    stakingChains,
 } from "./helpers"
-import { ValidatorModel } from "./models";
+import { ValidatorModel, mapTiker, TickerType } from "./models";
 import { getHandle } from "../../script/gen_info";
-enum TickerType {
-    Token = "token",
-    Coin = "coin"
-}
 
 describe("Check repository root dir", () => {
     const dirActualFiles = readDirSync(".")
@@ -52,7 +56,7 @@ describe(`Test "blockchains" folder`, () => {
         foundChains.forEach(chain => {
             const chainLogoPath = getChainLogoPath(chain)
             expect(isPathExistsSync(chainLogoPath), `File missing at path "${chainLogoPath}"`).toBe(true)
-            const [isOk, msg] = isLogoOK(chainLogoPath)
+            const [isOk, msg] = isLogoDimentionOK(chainLogoPath)
             expect(isOk, msg).toBe(true)
         })
     })
@@ -63,7 +67,7 @@ describe(`Test "blockchains" folder`, () => {
         })
     })
 
-    describe(`Asset folder should contain only predifind list of filees`, () => {
+    describe(`Asset folder should contain only predefined list of files`, () => {
         readDirSync(chainsFolderPath).forEach(chain => {
             const assetsPath = getChainAssetsPath(chain)
 
@@ -72,7 +76,7 @@ describe(`Test "blockchains" folder`, () => {
                 readDirSync(assetsPath).forEach(address => {
                     const assetFiles = getChainAssetPath(chain, address)
                     readDirSync(assetFiles).forEach(assetFolderFile => {
-                        expect(assetFolderAllowedFiles.indexOf(assetFolderFile),`File "${assetFolderFile}" not allowed at this path`).not.toBe(-1)
+                        expect(assetFolderAllowedFiles.indexOf(assetFolderFile),`File "${assetFolderFile}" not allowed at this path: ${assetsPath}`).not.toBe(-1)
                     })
                 }) 
             })
@@ -80,31 +84,48 @@ describe(`Test "blockchains" folder`, () => {
         })
     })
 
+    describe(`Chain folder should contain only predefined list of files`, () => {
+        readDirSync(chainsFolderPath).forEach(chain => {
+            getChainFolderFilesList(chain).forEach(file => {
+                expect(chainFolderAllowedFiles.indexOf(file),`File "${typeof file}" ${file} not allowed in chain folder: ${chain}`).not.toBe(-1)
+            })
+        })
+    })
+
     describe("Check Ethereum side-chain folders", () => {
         ethSidechains.forEach(chain => {
             test(`Test chain ${chain} folder`, () => {
-                const assetsPath = getChainAssetsPath(chain)
 
-                readDirSync(assetsPath).forEach(addr => {
-                    const checksum: boolean = isChecksum(addr)
-                    expect(checksum, `Address ${addr} on chain ${chain} must be in checksum`).toBe(true)
+                getChainAssetsList(chain).forEach(address => {
+                    const assetPath = getChainAssetPath(chain, address)
+                    expect(isPathDir(assetPath), `Expect directory at path: ${assetPath}`).toBe(true)
+
+                    const checksum = isChecksum(address)
+                    expect(checksum, `Expect asset at path ${assetPath} in checksum`).toBe(true)
                     
-                    const lowercase: boolean = isLowerCase(addr)
+                    const lowercase = isLowerCase(address)
                     if (lowercase) {
-                        expect(checksum, `Lowercase address ${addr} on chain ${chain} should be in checksum`).toBe(true)
+                        expect(checksum, `Lowercase address ${address} on chain ${chain} should be in checksum`).toBe(true)
                     }
 
-                    const assetLogoPath = getChainAssetLogoPath(chain, addr)
+                    const assetLogoPath = getChainAssetLogoPath(chain, address)
                     expect(isPathExistsSync(assetLogoPath), `Missing file at path "${assetLogoPath}"`).toBe(true)
-                    const [isOk, msg] = isLogoOK(assetLogoPath)
-                    expect(isOk, msg).toBe(true)
+
+                    const [isDimentionOK, dimensionMsg] = isLogoDimentionOK(assetLogoPath)
+                    expect(isDimentionOK, dimensionMsg).toBe(true)
+
+                    const [isLogoOK, sizeMsg] = isLogoSizeOK(assetLogoPath)
+                    expect(isLogoOK, sizeMsg).toBe(true)
+
+                    const [isInfoOK, InfoMsg] = isAssetInfoOK(chain, address)
+                    expect(isInfoOK, InfoMsg).toBe(true)
                 })
             })
         })
     })
 
     describe(`Check "binace" folder`, () => {
-        it("Asset must exist on chain and", async () => {
+        it("Asset must exist on chain", async () => {
             const tokenSymbols = await getBinanceBEP2Symbols()
             const assets = readDirSync(getChainAssetsPath(Binance))
 
@@ -119,28 +140,29 @@ describe(`Test "blockchains" folder`, () => {
 
         test("Expect asset to be TRC10 or TRC20", () => {
             readDirSync(path).forEach(asset => {
-                expect(isTRC10(asset) || isTRC20(asset), `Asset ${asset} non TRC10 nor TRC20`).toBe(true)
+                expect(isTRC10(asset) || isTRC20(asset), `Asset ${asset} at path ${path} non TRC10 nor TRC20`).toBe(true)
 
                 const assetsLogoPath = getChainAssetLogoPath(Tron, asset)
                 expect(isPathExistsSync(assetsLogoPath), `Missing file at path "${assetsLogoPath}"`).toBe(true)
-                const [isOk, msg] = isLogoOK(assetsLogoPath)
+                const [isOk, msg] = isLogoDimentionOK(assetsLogoPath)
                 expect(isOk, msg).toBe(true)
             })
         })
     })
 
     describe("Check Staking chains", () => {
-        const stakingChains = [Tezos, Cosmos, IoTeX, Tron, Waves]
-
         test("Make sure tests added for new staking chain", () => {
-            expect(stakingChains.length).toBe(5)
+            expect(stakingChains.length).toBe(7)
         })
 
         stakingChains.forEach(chain => {
-            const validatorsList = JSON.parse(readFileSync(getChainValidatorsListPath(chain)))
-            test(`Make sure ${chain} validators list has correct structure`, () => {
+            const validatorsListPath = getChainValidatorsListPath(chain)
+            const validatorsList = getChainValidatorsList(chain)
+
+            test(`Chain ${chain} validator must have correct structure and valid JSON format`, () => {
                 validatorsList.forEach((val: ValidatorModel) => {
-                    expect(isValidatorHasAllKeys(val), `Come key and/or type missing for validator ${JSON.stringify(val)}`).toBe(true)
+                    expect(isValidatorHasAllKeys(val), `Some key and/or type missing for validator ${JSON.stringify(val)}`).toBe(true)
+                    expect(isValidJSON(validatorsListPath), `Not valid json file at path ${validatorsListPath}`).toBe(true)
                 })
             })
 
@@ -150,7 +172,7 @@ describe(`Test "blockchains" folder`, () => {
                     const path = getChainValidatorAssetLogoPath(chain, id)
                     expect(isPathExistsSync(path), `Chain ${chain} asset ${id} logo must be present at path ${path}`).toBe(true)
                     
-                    const [isOk, msg] = isLogoOK(path)
+                    const [isOk, msg] = isLogoDimentionOK(path)
                     expect(isOk, msg).toBe(true)
                 })
             })
@@ -160,15 +182,25 @@ describe(`Test "blockchains" folder`, () => {
                 case Cosmos:
                     testCosmosValidatorsAddress(chainValidatorsAssetsList)
                     break;
+                case Kava:
+                    testKavaValidatorsAddress(chainValidatorsAssetsList)
+                    break;
+                case Terra:
+                    testTerraValidatorsAddress(chainValidatorsAssetsList)
+                    break;
                 case Tezos:
                     testTezosValidatorsAssets(chainValidatorsAssetsList)
                     break;
                 case Tron:
                     testTronValidatorsAssets(chainValidatorsAssetsList)
                     break;
-                // TODO Add LOOM
-                // TODO Add Waves
-                // TODO Add IoTex
+                case Waves:
+                    testWavesValidatorsAssets(chainValidatorsAssetsList)
+                    break;
+                // case Solana:
+                //     testSolanaValidatorsAssets(chainValidatorsAssetsList)
+                //     break;
+                // TODO Add IoTex when taking suported by Trust
                 default:
                     break;
             }
@@ -190,7 +222,7 @@ describe(`Test "blockchains" folder`, () => {
     })
 })
 
-function testTezosValidatorsAssets(assets) {
+function testTezosValidatorsAssets(assets: string[]) {
     test("Tezos assets must be correctly formated tz1 address", () => {
         assets.forEach(addr => {
             expect(eztz.crypto.checkAddress(addr), `Ivalid Tezos address: ${addr}`).toBe(true)
@@ -198,16 +230,31 @@ function testTezosValidatorsAssets(assets) {
     })
 }
 
-function testTronValidatorsAssets(assets) {
+function testTronValidatorsAssets(assets: string[]) {
     test("TRON assets must be correctly formated", () => {
         assets.forEach(addr => {
             expect(isTRC20(addr), `Address ${addr} should be TRC20`).toBe(true)
         })
     })
 }
+function testWavesValidatorsAssets(assets: string[]) {
+    test("WAVES assets must have correct format", () => {
+        assets.forEach(addr => {
+            expect(isWavesAddress(addr), `Address ${addr} should be WAVES formated`).toBe(true)
+        })
+    })
+}
 
-function testCosmosValidatorsAddress(assets) {
-    test("Cosmos assets must be correctly formated", () => {
+// function testSolanaValidatorsAssets(assets: string[]) {
+//     test("Solana assets must have correct format", () => {
+//         assets.forEach(addr => {
+//             expect(isSolanaAddress(addr), `Address ${addr} should be Solana formated`).toBe(true)
+//         })
+//     })
+// }
+
+function testCosmosValidatorsAddress(assets: string[]) {
+    test("Cosmos assets must have correct format", () => {
         assets.forEach(addr => {
             expect(addr.startsWith("cosmosvaloper1"), `Address ${addr} should start from "cosmosvaloper1"`).toBe(true)
             expect(addr.length, `Address ${addr} should have length 52`).toBe(52)
@@ -216,8 +263,28 @@ function testCosmosValidatorsAddress(assets) {
     })
 }
 
+function testKavaValidatorsAddress(assets: string[]) {
+    test("Kava assets must have correct format", () => {
+        assets.forEach(addr => {
+            expect(addr.startsWith("kavavaloper1"), `Address ${addr} should start from "kavavaloper1"`).toBe(true)
+            expect(addr.length, `Address ${addr} should have length 50`).toBe(50)
+            expect(isLowerCase(addr), `Address ${addr} should be in lowercase`).toBe(true)
+        })
+    })
+}
+
+function testTerraValidatorsAddress(assets: string[]) {
+    test("Terra assets must have correct format", () => {
+        assets.forEach(addr => {
+            expect(addr.startsWith("terravaloper1"), `Address ${addr} should start from "terravaloper1"`).toBe(true)
+            expect(addr.length, `Address ${addr} should have length 51`).toBe(51)
+            expect(isLowerCase(addr), `Address ${addr} should be in lowercase`).toBe(true)
+        })
+    })
+}
+
 describe("Test Coinmarketcap mapping", () => {
-    const cmcMap = JSON.parse(readFileSync("./pricing/coinmarketcap/mapping.json"))
+    const cmcMap: mapTiker[] = JSON.parse(readFileSync("./pricing/coinmarketcap/mapping.json"))
 
     test("Must have items", () => {
         expect(cmcMap.length, `CMC map must have items`).toBeGreaterThan(0)
@@ -283,21 +350,47 @@ describe("Test Coinmarketcap mapping", () => {
     });
 
     test(`"token_id" should be in correct format`, async () => {
-        const tokenSymbols = await getBinanceBEP2Symbols()
+        const bep2Symbols = await getBinanceBEP2Symbols()
 
         cmcMap.forEach(el => {
             const {coin, token_id, type, id} = el
             switch (coin) {
-                case 60 && type === TickerType.Token:
-                    expect(isChecksum(token_id), `"token_id" ${token_id} with id ${id} must be in checksum`).toBe(true)
-                    break;
-                case 195 && type === TickerType.Token:
-                    expect(isTRC10(token_id) || isTRC20(token_id), `"token_id" ${token_id} with id ${id} must be in TRC10 or TRC20`).toBe(true)
-                    break;
-                case 714 && type === TickerType.Token:
-                    expect(tokenSymbols.indexOf(token_id), `"token_id" ${token_id} with id ${id} must be BEP2 symbol`).toBe(true)
+                case 60:
+                    if (type === TickerType.Token) {
+                        expect(isChecksum(token_id), `"token_id" ${token_id} with id ${id} must be in checksum`).toBe(true)
+                        break;
+                    }
+                case 195:
+                    if (type === TickerType.Token) {
+                        expect(isTRC10(token_id) || isTRC20(token_id), `"token_id" ${token_id} with id ${id} must be in TRC10 or TRC20`).toBe(true)
+                        break;
+                    }
+                case 714:
+                    if (type === TickerType.Token) {
+                        expect(bep2Symbols.indexOf(token_id), `"token_id" ${token_id} with id ${id} must be BEP2 symbol`).toBeGreaterThan(0)
+                        break;
+                    }
                 default:
                     break;
+            }
+        })
+    })
+
+    test(`"token_id" shoud be unique`, () => {
+        const mappedList = cmcMap.reduce((acm, val) => {
+            if (val.hasOwnProperty("token_id")) {
+                if (acm.hasOwnProperty(val.token_id)) {
+                    acm[val.token_id] == ++acm[val.token_id]
+                } else {
+                    acm[val.token_id] = 0
+                }
+            }
+            return acm
+        }, {})
+
+        cmcMap.forEach(el => {
+            if (el.hasOwnProperty("token_id")) {
+                expect(mappedList[el.token_id], `CMC map ticker with "token_id" ${el.token_id} shoud be unique`).toBeLessThanOrEqual(0)
             }
         })
     })
@@ -310,20 +403,17 @@ describe("Test blacklist and whitelist", () => {
         const whiteList = JSON.parse(readFileSync(getChainWhitelistPath(chain)))
         const blackList = JSON.parse(readFileSync(getChainBlacklistPath(chain)))
 
-        const whitelistMap = mapList(whiteList)
-        const blacklistMap = mapList(blackList)
-
         test(`Whitelist should not contain assets from blacklist on ${chain} chain`, () => {
+            const blacklistMap = mapList(blackList)
             whiteList.forEach(a => {
-                const isWhitelistInBlacklist = blacklistMap.hasOwnProperty(a)
-                expect(isWhitelistInBlacklist, `Found whitelist asset ${a} in blacklist on chain ${chain}`).toBe(false)
+                expect(a in blacklistMap, `Found whitelist asset ${a} in blacklist on chain ${chain}`).toBe(false)
             })
         })
 
         test(`Blacklist should not contain assets from whitelist on ${chain} chain`, () => {
+            const whitelistMap = mapList(whiteList)
             blackList.forEach(a => {
-                const isBlacklistInWhitelist = whitelistMap.hasOwnProperty(a)
-                expect(isBlacklistInWhitelist, `Found blacklist asset ${a} in whitelist on chain ${chain}`).toBe(false)
+                expect(a in whitelistMap, `Found blacklist asset ${a} in whitelist on chain ${chain}`).toBe(false)
             })
         })
     })
@@ -334,7 +424,6 @@ describe("Test coins info.json file", () => {
 });
 
 describe("Test all JSON files to have valid content", () => {
-
     const files = [
         ...findFiles(chainsFolderPath, 'json'),
         ...findFiles(pricingFolderPath, 'json')
@@ -363,4 +452,3 @@ describe("Test helper functions", () => {
         })
     })
 });
-
