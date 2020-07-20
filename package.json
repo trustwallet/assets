@@ -58,7 +58,9 @@
     "typescript": "^3.9.7",
     "web3": "^1.2.11"
   },
-  "dependencies": {},
+  "dependencies": {
+    "codecov": "^3.7.1"
+  },
   "jest": {
     "setupFilesAfterEnv": [
       "jest-expect-message"
