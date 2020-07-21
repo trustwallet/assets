@@ -96,19 +96,16 @@ describe(`Test "blockchains" folder`, () => {
 
     describe("Check Ethereum side-chain folders", () => {
         ethSidechains.forEach(chain => {
-            test(`Test chain ${chain} folder`, () => {
-
-                getChainAssetsList(chain).forEach(address => {
-                    const assetPath = getChainAssetPath(chain, address)
+            const assetsFolder = getChainAssetsPath(chain)
+            const assetsList = getChainAssetsList(chain)
+            test(`Test chain ${chain} folder, folder (${assetsList.length})`, () => {
+                assetsList.forEach(address => {
+                    const assetPath = `${assetsFolder}/${address}`
                     expect(isPathDir(assetPath), `Expect directory at path: ${assetPath}`).toBe(true)
 
                     const checksum = isChecksum(address)
                     expect(checksum, `Expect asset at path ${assetPath} in checksum`).toBe(true)
                     
-                    const lowercase = isLowerCase(address)
-                    if (lowercase) {
-                        expect(checksum, `Lowercase address ${address} on chain ${chain} should be in checksum`).toBe(true)
-                    }
 
                     const assetLogoPath = getChainAssetLogoPath(chain, address)
                     expect(isPathExistsSync(assetLogoPath), `Missing file at path "${assetLogoPath}"`).toBe(true)
@@ -406,7 +403,7 @@ describe("Test blacklist and whitelist", () => {
         // test by a single check: checking for duplicates in the concatenated list.
         const whiteList = JSON.parse(readFileSync(getChainWhitelistPath(chain)))
         const blackList = JSON.parse(readFileSync(getChainBlacklistPath(chain)))
-        test(`Blacklist and whitelist should have no common elements or duplicates`, () => {
+        test(`Blacklist and whitelist should have no common elements or duplicates (${chain})`, () => {
             expect(findCommonElementOrDuplicate(whiteList, blackList), `Found a duplicate or common element`).toBe(null)
         })
     })
