@@ -23,7 +23,7 @@ import {
     findDuplicate,
     findCommonElementOrDuplicate,
     isChecksum,
-    isLogoDimentionOK,
+    isLogoDimensionOK,
     isLogoSizeOK,
     isLowerCase,
     isPathDir,
@@ -58,7 +58,7 @@ describe(`Test "blockchains" folder`, () => {
         foundChains.forEach(chain => {
             const chainLogoPath = getChainLogoPath(chain)
             expect(isPathExistsSync(chainLogoPath), `File missing at path "${chainLogoPath}"`).toBe(true)
-            const [isOk, msg] = isLogoDimentionOK(chainLogoPath)
+            const [isOk, msg] = isLogoDimensionOK(chainLogoPath)
             expect(isOk, msg).toBe(true)
         })
     })
@@ -105,13 +105,12 @@ describe(`Test "blockchains" folder`, () => {
 
                     const checksum = isChecksum(address)
                     expect(checksum, `Expect asset at path ${assetPath} in checksum`).toBe(true)
-                    
 
                     const assetLogoPath = getChainAssetLogoPath(chain, address)
                     expect(isPathExistsSync(assetLogoPath), `Missing file at path "${assetLogoPath}"`).toBe(true)
 
-                    const [isDimentionOK, dimensionMsg] = isLogoDimentionOK(assetLogoPath)
-                    expect(isDimentionOK, dimensionMsg).toBe(true)
+                    const [isDimensionOK, dimensionMsg] = isLogoDimensionOK(assetLogoPath)
+                    expect(isDimensionOK, dimensionMsg).toBe(true)
 
                     const [isLogoOK, sizeMsg] = isLogoSizeOK(assetLogoPath)
                     expect(isLogoOK, sizeMsg).toBe(true)
@@ -143,7 +142,7 @@ describe(`Test "blockchains" folder`, () => {
 
                 const assetsLogoPath = getChainAssetLogoPath(Tron, asset)
                 expect(isPathExistsSync(assetsLogoPath), `Missing file at path "${assetsLogoPath}"`).toBe(true)
-                const [isOk, msg] = isLogoDimentionOK(assetsLogoPath)
+                const [isOk, msg] = isLogoDimensionOK(assetsLogoPath)
                 expect(isOk, msg).toBe(true)
             })
         })
@@ -171,7 +170,7 @@ describe(`Test "blockchains" folder`, () => {
                     const path = getChainValidatorAssetLogoPath(chain, id)
                     expect(isPathExistsSync(path), `Chain ${chain} asset ${id} logo must be present at path ${path}`).toBe(true)
                     
-                    const [isOk, msg] = isLogoDimentionOK(path)
+                    const [isOk, msg] = isLogoDimensionOK(path)
                     expect(isOk, msg).toBe(true)
                 })
             })
