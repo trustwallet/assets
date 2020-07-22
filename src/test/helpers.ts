@@ -199,10 +199,10 @@ export function findCommonElementOrDuplicate(list1: string[], list2: string[]) {
     return findDuplicate(list1.concat(list2))
 }
 
-export const getImageDimentions = (path: string) => sizeOf(path)
+export const getImageDimensions = (path: string) => sizeOf(path)
 
-export function isLogoDimentionOK(path: string): [boolean,  string] {
-    const { width, height } =  getImageDimentions(path)
+export function isLogoDimensionOK(path: string): [boolean,  string] {
+    const { width, height } =  getImageDimensions(path)
     if (((width >= minLogoWidth && width <= maxLogoWidth) && (height >= minLogoHeight && height <= maxLogoHeight))) {
         return [true, '']
     } else {
