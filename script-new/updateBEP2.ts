@@ -25,10 +25,9 @@ function fetchImage(url) {
     });
 }
 
-export async function update() {
-    const blacklist = require(getChainBlacklistPath(binanceChain));
-    const assetInfoList = await retrieveAssetList();
-
+/// Return: array with updated assets
+async function updateMissingImages(blacklist: any, assetInfoList: any): Promise<string[]> {
+    let updatedAssets: string[] = [];
     await bluebird.each(assetInfoList, async ({ asset, assetImg }) => {
         process.stdout.write(`.${asset} `);
         if (assetImg) {
@@ -47,6 +46,7 @@ export async function update() {
 
                     await fetchImage(assetImg).then(buffer => {
                         buffer.pipe(fs.createWriteStream(imagePath));
+                        updatedAssets.push(asset);
                         console.log(`Retrieved image ${imagePath} from ${assetImg}`)
                     });
                 }
@@ -54,4 +54,17 @@ export async function update() {
         }
     });
     console.log();
+    return updatedAssets;
+}
+
+export async function update() {
+    const blacklist = require(getChainBlacklistPath(binanceChain));
+    const assetInfoList = await retrieveAssetList();
+
+    const updatedAssets = await updateMissingImages(blacklist, assetInfoList);
+
+    if (updatedAssets.length > 0) {
+        console.log(`Updated ${updatedAssets.length} asset(s):`);
+        updatedAssets.forEach(asset => console.log(`  ${asset}`));
+    }
 }
