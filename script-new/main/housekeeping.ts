@@ -1,4 +1,4 @@
-import * as updateBEP2 from "./updateBEP2";
+import * as updateBEP2 from "../action/updateBEP2";
 
 function update() {
     try {

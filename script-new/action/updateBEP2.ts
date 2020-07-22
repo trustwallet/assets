@@ -7,7 +7,7 @@ import * as chalk from 'chalk';
 import {
     getChainAssetLogoPath,
     getChainBlacklistPath
-} from "./repo-structure";
+} from "../common/repo-structure";
 
 const binanceChain = "binance"
 const binanceAssetsUrl = "https://explorer.binance.org/api/v1/assets?page=1&rows=1000";
