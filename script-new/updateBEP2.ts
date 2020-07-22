@@ -1,12 +1,10 @@
-const axios = require("axios");
-const bluebird = require("bluebird");
-const fs = require("fs");
-const path = require("path");
-const chalk = require('chalk');
+import axios from "axios";
+import * as bluebird from "bluebird";
+import * as fs from "fs";
+import * as path from "path";
+import * as chalk from 'chalk';
 
 import {
-    getChainPath,
-    getChainAssetsPath,
     getChainAssetLogoPath,
     getChainBlacklistPath
 } from "./repo-structure";
@@ -36,7 +34,7 @@ export async function update() {
         if (assetImg) {
             if (blacklist.indexOf(asset) != -1) {
                 console.log();
-                console.log(`${asset} is denylisted`);
+                console.log(`${asset} is blacklisted`);
             } else {
                 const imagePath = getChainAssetLogoPath(binanceChain, asset);
 

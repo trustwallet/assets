@@ -1,4 +1,4 @@
-const updateBEP2 = require("./updateBEP2")
+import * as updateBEP2 from "./updateBEP2";
 
 function update() {
     try {
