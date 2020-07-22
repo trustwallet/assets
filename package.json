@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "update:bep2": "node ./script/updateBEP2",
     "checksum": "ts-node ./script/erc20_to_checksum",
     "format:all": "ts-node ./script/format_files_name",
     "arrange:all": "ts-node ./script/arrange_files",
