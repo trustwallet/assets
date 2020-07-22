@@ -20,6 +20,8 @@ import {
     getChainWhitelistPath,
     getChainAssetsList,
     getChainValidatorsList,
+    findDuplicate,
+    findCommonElementOrDuplicate,
     isChecksum,
     isLogoDimentionOK,
     isLogoSizeOK,
@@ -400,21 +402,12 @@ describe("Test blacklist and whitelist", () => {
     const assetsChains = readDirSync(chainsFolderPath).filter(chain => isPathExistsSync(getChainAssetsPath(chain)))
 
     assetsChains.forEach(chain => {
+        // Test uniqeness of blacklist and whitelist, and non-intersection among the two:
+        // test by a single check: checking for duplicates in the concatenated list.
         const whiteList = JSON.parse(readFileSync(getChainWhitelistPath(chain)))
         const blackList = JSON.parse(readFileSync(getChainBlacklistPath(chain)))
-
-        test(`Whitelist should not contain assets from blacklist on ${chain} chain`, () => {
-            const blacklistMap = mapList(blackList)
-            whiteList.forEach(a => {
-                expect(a in blacklistMap, `Found whitelist asset ${a} in blacklist on chain ${chain}`).toBe(false)
-            })
-        })
-
-        test(`Blacklist should not contain assets from whitelist on ${chain} chain`, () => {
-            const whitelistMap = mapList(whiteList)
-            blackList.forEach(a => {
-                expect(a in whitelistMap, `Found blacklist asset ${a} in whitelist on chain ${chain}`).toBe(false)
-            })
+        test(`Blacklist and whitelist should have no common elements or duplicates`, () => {
+            expect(findCommonElementOrDuplicate(whiteList, blackList), `Found a duplicate or common element`).toBe(null)
         })
     })
 })
@@ -450,5 +443,23 @@ describe("Test helper functions", () => {
         urls.forEach(u => {
             expect(getHandle(u.url), `Getting handle from url ${u}`).toBe(u.expected)
         })
+    })
+
+    test(`Test findDuplicate`, () => {
+        expect(findDuplicate(["a", "bb", "ccc"]), `No duplicates`).toBe(null)
+        expect(findDuplicate(["a", "bb", "ccc", "bb"]), `One double duplicate`).toBe("bb")
+        expect(findDuplicate([]), `Empty array`).toBe(null)
+        expect(findDuplicate(["a"]), `One element`).toBe(null)
+        expect(findDuplicate(["a", "bb", "ccc", "bb", "d", "bb"]), `One trip[le duplicate`).toBe("bb")
+        expect(findDuplicate(["a", "bb", "ccc", "bb", "a"]), `Two double duplicates`).toBe("a")
+    })
+
+    test(`Test findCommonElementOrDuplicate`, () => {
+        expect(findCommonElementOrDuplicate(["a", "bb", "ccc"], ["1", "22", "333"]), `No intersection or duplicates`).toBe(null)
+        expect(findCommonElementOrDuplicate(["a", "bb", "ccc"], ["1", "bb", "333"]), `Common element`).toBe("bb")
+        expect(findCommonElementOrDuplicate(["a", "bb", "ccc", "bb"], ["1", "22", "333"]), `Duplicate in first`).toBe("bb")
+        expect(findCommonElementOrDuplicate(["a", "bb", "ccc"], ["1", "22", "333", "22"]), `Duplicate in second`).toBe("22")
+        expect(findCommonElementOrDuplicate(["a", "bb", "ccc", "1", "bb"], ["1", "22", "333", "22"]), `Intersection and duplicates`).toBe("22")
+        expect(findCommonElementOrDuplicate([], []), `Empty lists`).toBe(null)
     })
 });
