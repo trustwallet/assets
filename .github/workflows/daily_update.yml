@@ -16,7 +16,6 @@ jobs:
        run: npm ci
      - name: Run scripts
        run: |
-         npm run update:bep2
          npm run resize
          npm run format:all
          npm run gen:list
