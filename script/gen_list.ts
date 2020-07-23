@@ -21,7 +21,7 @@ import {
 } from '../src/test/helpers'
 
 formatWhiteBlackList()
-formatValidators()
+//formatValidators()
 formatInfo()
 
 function formatWhiteBlackList() {
@@ -63,6 +63,7 @@ function formatWhiteBlackList() {
     })
 }
 
+/*
 function formatValidators() {
     stakingChains.forEach(chain => {    
         const validatorsPath = getChainValidatorsListPath(chain)
@@ -71,6 +72,7 @@ function formatValidators() {
         fs.writeFileSync(validatorsPath, JSON.stringify(currentValidatorsList, null, 4))
     })
 }
+*/
 
 function formatInfo() {
     ethSidechains.forEach(chain => {
