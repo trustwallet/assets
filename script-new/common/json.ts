@@ -2,10 +2,17 @@ import {
     readFileSync,
     writeFileSync
 } from "./filesystem";
+import { sortElements } from "./types";
 
-const sortElements = arr => arr.sort((a, b) => a - b);
+export function formatJsonFile(filename: string, silent: boolean = false) {
+    const jsonContent = JSON.parse(readFileSync(filename));
+    writeFileSync(filename, JSON.stringify(jsonContent, null, 4));
+    if (!silent) {
+        console.log(`Formatted json file ${filename}`);
+    }
+}
 
-export function formatJsonFile(filename: string) {
+export function formatSortJsonFile(filename: string) {
     const jsonContent = JSON.parse(readFileSync(filename));
     writeFileSync(filename, JSON.stringify(sortElements(jsonContent), null, 4));
     console.log(`Formatted json file ${filename}`);

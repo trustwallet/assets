@@ -1,14 +1,14 @@
 import { stakingChains } from "../common/blockchains";
 import { getChainValidatorsListPath } from "../common/repo-structure";
-import { formatJsonFile } from "../common/json";
+import { formatSortJsonFile } from "../common/json";
 
 function formatValidators() {
     stakingChains.forEach(chain => {    
         const validatorsPath = getChainValidatorsListPath(chain);
-        formatJsonFile(validatorsPath);
+        formatSortJsonFile(validatorsPath);
     })
 }
 
-export async function update() {
+export async function fix() {
     formatValidators();
 }

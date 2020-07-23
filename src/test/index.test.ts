@@ -32,7 +32,6 @@ import {
     isValidJSON,
     isAssetInfoOK,
     isValidatorHasAllKeys,
-    mapList,
     pricingFolderPath,
     readDirSync,
     readFileSync,
@@ -40,9 +39,16 @@ import {
     stakingChains,
 } from "./helpers"
 import { ValidatorModel, mapTiker, TickerType } from "./models";
+import {
+    mapList,
+    sortElements,
+    makeUnique,
+    arrayDiff
+} from "../../script-new/common/types";
 import { getHandle } from "../../script/gen_info";
-import { findImagesToFetch } from "../../script-new/action/updateBEP2";
+import { findImagesToFetch } from "../../script-new/action/binance";
 
+/*
 describe("Check repository root dir", () => {
     const dirActualFiles = readDirSync(".")
     test("Root should contains only predefined files", () => {
@@ -464,8 +470,27 @@ describe("Test helper functions", () => {
         expect(findCommonElementOrDuplicate([], []), `Empty lists`).toBe(null)
     })
 });
+*/
 
-describe("Test action updateBEP2", () => {
+describe("Test common helpers", () => {
+    test(`Test mapList`, () => {
+        expect(mapList(["a", "b", "c"]), `3 elems`).toEqual({"a": "", "b":"", "c": ""});
+    });
+    test(`Test sortElements`, () => {
+        expect(sortElements(["c", "a", "b"]), `3 elems`).toEqual(["a", "b", "c"]);
+        expect(sortElements(["C", "a", "b"]), `mixed case`).toEqual(["a", "b", "C"]);
+        expect(sortElements(["1", "2", "11"]), `numerical`).toEqual(["1", "2", "11"]);
+        expect(sortElements(["C", "a", "1", "b", "2", "11"]), `complex`).toEqual(["1", "2", "11", "a", "b", "C"]);
+    });
+    test(`Test makeUnique`, () => {
+        expect(makeUnique(["a", "b", "c", "b"]), `4 elems with 1 duplicate`).toEqual(["a", "b", "c"]);
+    });
+    test(`Test arrayDiff`, () => {
+        expect(arrayDiff(["a", "b", "c"], ["c"]), `4 elems with 1 duplicate`).toEqual(["a", "b"]);
+    });
+});
+
+describe("Test action binance", () => {
     test(`Test findImagesToFetch`, () => {
         const assetsInfoListNonexisting: any[] = [{asset: "A1", assetImg: "imgurl1"}, {asset: "A2", assetImg: "imgurl2"}];
         const assetsInfoListExisting: any[] = [{asset: "BUSD-BD1", assetImg: "imgurlBUSD"}, {asset: "ETH-1C9", assetImg: "imgurlETH"}];

@@ -51,7 +51,7 @@ export function findImagesToFetch(assetInfoList: any, blacklist: string[]): any[
 
 
 async function fetchMissingImages(toFetch: any[]): Promise<string[]> {
-    console.log(`Attempting to fetch ${toFetch.length} asset image(s) d`);
+    console.log(`Attempting to fetch ${toFetch.length} asset image(s)`);
     let fetchedAssets: string[] = [];
     await bluebird.each(toFetch, async ({ asset, assetImg }) => {
         if (assetImg) {
