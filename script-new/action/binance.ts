@@ -20,9 +20,11 @@ async function retrieveAssetList() {
 }
 
 function fetchImage(url) {
-    return axios.get(url, { responseType: "stream" }).then(r => r.data).catch(err => {
-        throw `Error fetchImage: ${url} ${err.message}`;
-    });
+    return axios.get(url, { responseType: "stream" })
+        .then(r => r.data)
+        .catch(err => {
+            throw `Error fetchImage: ${url} ${err.message}`;
+        });
 }
 
 /// Return: array with images to fetch; {asset, assetImg}

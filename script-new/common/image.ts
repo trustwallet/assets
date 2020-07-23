@@ -5,6 +5,7 @@ import {
     writeFileSync,
     getFileSizeInKilobyte
 } from "./filesystem";
+import * as chalk from 'chalk';
 
 //export const minLogoWidth = 64;
 //export const minLogoHeight = 64;
@@ -44,20 +45,27 @@ export async function resizeIfTooLarge(path: string): Promise<boolean> {
         const { width, height } = calculateTargetSize(srcWidth, srcHeight, maxLogoWidth, maxLogoHeight);
         console.log(`Resizing image at ${path} from ${srcWidth}x${srcHeight} => ${width}x${height}`)
         await sharp(path).resize(width, height).toBuffer()
-            .then(data => writeFileSync(path, data))
+            .then(data => {
+                writeFileSync(path, data);
+                updated = true;
+            })
             .catch(e => {
-                console.log(e.message)
+                console.log(chalk.red(e.message));
             });
-        updated = true;
     }
 
     // If file size > max limit, compress with tinypng
     const sizeKilobyte = getFileSizeInKilobyte(path);
     if (sizeKilobyte > maxLogoSizeInKilobyte) {
-        console.log(`Resizing image at path ${path} from ${sizeKilobyte}`);
-        await compressTinyPNG(path);
-        updated = true;
-        console.log(`Resized image at path ${path} from ${sizeKilobyte} => ${getFileSizeInKilobyte(path)}`);
+        console.log(`Resizing image at path ${path} from ${sizeKilobyte} kB`);
+        await compressTinyPNG(path)
+            .then(() => {
+                updated = true;
+                console.log(`Resized image at path ${path} from ${sizeKilobyte} kB => ${getFileSizeInKilobyte(path)} kB`);
+            })
+            .catch(e => {
+                console.log(chalk.red(e.message));
+            });
     }
 
    return updated;
