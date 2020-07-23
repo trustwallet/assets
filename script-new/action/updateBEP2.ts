@@ -13,9 +13,9 @@ const binanceChain = "binance"
 const binanceAssetsUrl = "https://explorer.binance.org/api/v1/assets?page=1&rows=1000";
 
 async function retrieveAssetList() {
-    console.log(`Retrieving asstest data from: ${binanceAssetsUrl}`);
+    console.log(`Retrieving assets info from: ${binanceAssetsUrl}`);
     const { assetInfoList } = await axios.get(binanceAssetsUrl).then(r => r.data);
-    console.log(`Retrieved ${assetInfoList.length} assets`);
+    console.log(`Retrieved ${assetInfoList.length} asset infos`);
     return assetInfoList
 }
 
@@ -25,10 +25,11 @@ function fetchImage(url) {
     });
 }
 
-/// Return: array with updated assets
-async function updateMissingImages(blacklist: any, assetInfoList: any): Promise<string[]> {
-    let updatedAssets: string[] = [];
-    await bluebird.each(assetInfoList, async ({ asset, assetImg }) => {
+/// Return: array with images to fetch; {asset, assetImg}
+export function findImagesToFetch(assetInfoList: any, blacklist: string[]): any[] {
+    let toFetch: any[] = [];
+    console.log(`Checking for asset images to be fetched`);
+    assetInfoList.forEach(({asset, assetImg}) => {
         process.stdout.write(`.${asset} `);
         if (assetImg) {
             if (blacklist.indexOf(asset) != -1) {
@@ -36,35 +37,48 @@ async function updateMissingImages(blacklist: any, assetInfoList: any): Promise<
                 console.log(`${asset} is blacklisted`);
             } else {
                 const imagePath = getChainAssetLogoPath(binanceChain, asset);
-
                 if (!fs.existsSync(imagePath)) {
-                    console.log();
                     console.log(chalk.red(`Missing image: ${asset}`));
-                    fs.mkdir(path.dirname(imagePath), err => {
-                        if (err && err.code != `EEXIST`) throw err;
-                    });
-
-                    await fetchImage(assetImg).then(buffer => {
-                        buffer.pipe(fs.createWriteStream(imagePath));
-                        updatedAssets.push(asset);
-                        console.log(`Retrieved image ${imagePath} from ${assetImg}`)
-                    });
+                    toFetch.push({asset, assetImg});
                 }
             }
         }
     });
     console.log();
-    return updatedAssets;
+    console.log(`${toFetch.length} asset image(s) to be fetched`);
+    return toFetch;
+}
+
+
+async function fetchMissingImages(toFetch: any[]): Promise<string[]> {
+    console.log(`Attempting to fetch ${toFetch.length} asset image(s) d`);
+    let fetchedAssets: string[] = [];
+    await bluebird.each(toFetch, async ({ asset, assetImg }) => {
+        if (assetImg) {
+            const imagePath = getChainAssetLogoPath(binanceChain, asset);
+            fs.mkdir(path.dirname(imagePath), err => {
+                if (err && err.code != `EEXIST`) throw err;
+            });
+            await fetchImage(assetImg).then(buffer => {
+                buffer.pipe(fs.createWriteStream(imagePath));
+                fetchedAssets.push(asset)
+                console.log(`Fetched image ${asset} ${imagePath} from ${assetImg}`)
+            });
+        }
+    });
+    console.log();
+    return fetchedAssets;
 }
 
 export async function update() {
-    const blacklist = require(getChainBlacklistPath(binanceChain));
     const assetInfoList = await retrieveAssetList();
+    const blacklist: string[] = require(getChainBlacklistPath(binanceChain));
 
-    const updatedAssets = await updateMissingImages(blacklist, assetInfoList);
+    const toFetch = findImagesToFetch(assetInfoList, blacklist);
+    const fetchedAssets = await fetchMissingImages(toFetch);
 
-    if (updatedAssets.length > 0) {
-        console.log(`Updated ${updatedAssets.length} asset(s):`);
-        updatedAssets.forEach(asset => console.log(`  ${asset}`));
+    if (fetchedAssets.length > 0) {
+        console.log(`Fetched ${fetchedAssets.length} asset(s):`);
+        fetchedAssets.forEach(asset => console.log(`  ${asset}`));
     }
 }

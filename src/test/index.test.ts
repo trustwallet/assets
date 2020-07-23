@@ -41,6 +41,7 @@ import {
 } from "./helpers"
 import { ValidatorModel, mapTiker, TickerType } from "./models";
 import { getHandle } from "../../script/gen_info";
+import { findImagesToFetch } from "../../script-new/action/updateBEP2";
 
 describe("Check repository root dir", () => {
     const dirActualFiles = readDirSync(".")
@@ -462,4 +463,17 @@ describe("Test helper functions", () => {
         expect(findCommonElementOrDuplicate(["a", "bb", "ccc", "1", "bb"], ["1", "22", "333", "22"]), `Intersection and duplicates`).toBe("22")
         expect(findCommonElementOrDuplicate([], []), `Empty lists`).toBe(null)
     })
+});
+
+describe("Test action updateBEP2", () => {
+    test(`Test findImagesToFetch`, () => {
+        const assetsInfoListNonexisting: any[] = [{asset: "A1", assetImg: "imgurl1"}, {asset: "A2", assetImg: "imgurl2"}];
+        const assetsInfoListExisting: any[] = [{asset: "BUSD-BD1", assetImg: "imgurlBUSD"}, {asset: "ETH-1C9", assetImg: "imgurlETH"}];
+        const blackListEmpty: string[] = [];
+        const blackListA1: string[] = ["A1"];
+        expect(findImagesToFetch(assetsInfoListNonexisting, blackListEmpty), `2 nonexisting`).toEqual(assetsInfoListNonexisting);
+        expect(findImagesToFetch(assetsInfoListNonexisting, blackListA1), `2 nonexisting with 1 blacklisted`).toEqual([{asset: "A2", assetImg: "imgurl2"}]);
+        expect(findImagesToFetch(assetsInfoListExisting, blackListEmpty), `2 existing`).toEqual([]);
+        expect(findImagesToFetch([], []), `empty`).toEqual([]);
+    });
 });
