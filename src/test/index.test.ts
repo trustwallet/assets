@@ -41,15 +41,19 @@ import { ValidatorModel, mapTiker, TickerType } from "./models";
 import { getHandle } from "../../script/gen_info";
 
 import {
+    isChecksum,
+    toChecksum
+} from "../../script-new/common/eth-web3";
+import {
+    isDimensionTooLarge,
+    calculateTargetSize
+} from "../../script-new/common/image";
+import {
     mapList,
     sortElements,
     makeUnique,
     arrayDiff
 } from "../../script-new/common/types";
-import {
-    isChecksum,
-    toChecksum
-} from "../../script-new/common/eth-web3";
 import { findImagesToFetch } from "../../script-new/action/binance";
 
 describe("Check repository root dir", () => {
@@ -470,6 +474,37 @@ describe("Test helper functions", () => {
     })
 });
 
+describe("Test eth-web3 helpers", () => {
+    test(`Test isChecksum`, () => {
+        expect(isChecksum("0x7Bb09bC8aDE747178e95B1D035ecBeEBbB18cFee"), `checksum`).toBe(true);
+        expect(isChecksum("0x7bb09bc8ade747178e95b1d035ecbeebbb18cfee"), `lowercase`).toBe(false);
+        expect(isChecksum("0x7Bb09bC8aDE747178e95B1D035ecBe"), `too short`).toBe(false);
+    });
+    test(`Test toChecksum`, () => {
+        expect(toChecksum("0x7bb09bc8ade747178e95b1d035ecbeebbb18cfee"), `from lowercase`).toEqual("0x7Bb09bC8aDE747178e95B1D035ecBeEBbB18cFee");
+        expect(toChecksum("0x7Bb09bC8aDE747178e95B1D035ecBeEBbB18cFee"), `from checksum`).toEqual("0x7Bb09bC8aDE747178e95B1D035ecBeEBbB18cFee");
+    });
+});
+
+describe("Test image helpers", () => {
+    test(`Test isDimensionTooLarge`, () => {
+        expect(isDimensionTooLarge(256, 256), `256x256`).toBe(false);
+        expect(isDimensionTooLarge(64, 64), `64x64`).toBe(false);
+        expect(isDimensionTooLarge(800, 800), `800x800`).toBe(true);
+        expect(isDimensionTooLarge(256, 800), `256x800`).toBe(true);
+        expect(isDimensionTooLarge(800, 256), `800x256`).toBe(true);
+    });
+    test(`Test calculateReducedSize`, () => {
+        expect(calculateTargetSize(256, 256, 512, 512), `small 1.0`).toEqual({width: 512, height: 512});
+        expect(calculateTargetSize(800, 800, 512, 512), `large 1.0`).toEqual({width: 512, height: 512});
+        expect(calculateTargetSize(200, 100, 512, 512), `small 2.0`).toEqual({width: 512, height: 256});
+        expect(calculateTargetSize(100, 200, 512, 512), `small 0.5`).toEqual({width: 256, height: 512});
+        expect(calculateTargetSize(1200, 600, 512, 512), `small 2.0`).toEqual({width: 512, height: 256});
+        expect(calculateTargetSize(600, 1200, 512, 512), `small 0.5`).toEqual({width: 256, height: 512});
+        expect(calculateTargetSize(256, 0, 512, 512), `zero`).toEqual({width: 512, height: 512});
+    });
+});
+
 describe("Test type helpers", () => {
     test(`Test mapList`, () => {
         expect(mapList(["a", "b", "c"]), `3 elems`).toEqual({"a": "", "b":"", "c": ""});
@@ -485,18 +520,6 @@ describe("Test type helpers", () => {
     });
     test(`Test arrayDiff`, () => {
         expect(arrayDiff(["a", "b", "c"], ["c"]), `4 elems with 1 duplicate`).toEqual(["a", "b"]);
-    });
-});
-
-describe("Test eth-web3 helpers", () => {
-    test(`Test isChecksum`, () => {
-        expect(isChecksum("0x7Bb09bC8aDE747178e95B1D035ecBeEBbB18cFee"), `checksum`).toBe(true);
-        expect(isChecksum("0x7bb09bc8ade747178e95b1d035ecbeebbb18cfee"), `lowercase`).toBe(false);
-        expect(isChecksum("0x7Bb09bC8aDE747178e95B1D035ecBe"), `too short`).toBe(false);
-    });
-    test(`Test toChecksum`, () => {
-        expect(toChecksum("0x7bb09bc8ade747178e95b1d035ecbeebbb18cfee"), `from lowercase`).toEqual("0x7Bb09bC8aDE747178e95B1D035ecBeEBbB18cFee");
-        expect(toChecksum("0x7Bb09bC8aDE747178e95B1D035ecBeEBbB18cFee"), `from checksum`).toEqual("0x7Bb09bC8aDE747178e95B1D035ecBeEBbB18cFee");
     });
 });
 

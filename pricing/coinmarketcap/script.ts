@@ -1,5 +1,5 @@
 import { toChecksum } from "../../src/test/helpers"
-const BluebirbPromise = require("bluebird")
+const BluebirdPromise = require("bluebird")
 const axios = require("axios")
 const chalk = require('chalk')
 const fs = require("fs")
@@ -64,7 +64,7 @@ async function run() {
         const [totalCrypto, coins] = await Promise.all([getTotalActiveCryptocurrencies(), getTickers()])
         // setBIP44Constants()
         log(`Found ${totalCrypto} on CMC`, chalk.yellowBright)
-        await BluebirbPromise.mapSeries(coins, processCoin)
+        await BluebirdPromise.mapSeries(coins, processCoin)
 
         addCustom()
         printContracts()
@@ -77,7 +77,7 @@ async function processCoin(coin) {
     const { id, symbol, name, platform } = coin
     const platformType: PlatformType = platform == null ? "" : platform.name
     log(`${symbol}:${platformType}`)
-    // await BluebirbPromise.mapSeries(types, async type => {
+    // await BluebirdPromise.mapSeries(types, async type => {
     switch (platformType) {
         case PlatformType.Ethereum:
             // log(`Ticker ${name}(${symbol}) is a token with address ${address} and CMC id ${id}`)

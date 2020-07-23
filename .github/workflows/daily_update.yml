@@ -17,7 +17,7 @@ jobs:
      - name: Run scripts
        run: |
          #npm run update:bep2
-         npm run resize
+         #npm run resize
          #npm run format:all
          #npm run gen:list
          npm run map:cmc

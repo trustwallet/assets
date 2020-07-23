@@ -9,6 +9,7 @@ export const readFileSync = (path: string) => fs.readFileSync(path, 'utf8');
 export const writeFileSync = (path: string, data: any) => fs.writeFileSync(path, data);
 export const readDirSync = (path: string): string[] => fs.readdirSync(path);
 export const isPathExistsSync = (path: string): boolean => fs.existsSync(path);
+export const getFileSizeInKilobyte = (path: string): number => fs.statSync(path).size / 1000;
 
 export function execRename(command: string, cwd: string) {
     console.log(`Running command ${command}`);
