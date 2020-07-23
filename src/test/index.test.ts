@@ -22,7 +22,6 @@ import {
     getChainValidatorsList,
     findDuplicate,
     findCommonElementOrDuplicate,
-    isChecksum,
     isLogoDimentionOK,
     isLogoSizeOK,
     isLowerCase,
@@ -39,16 +38,20 @@ import {
     stakingChains,
 } from "./helpers"
 import { ValidatorModel, mapTiker, TickerType } from "./models";
+import { getHandle } from "../../script/gen_info";
+
 import {
     mapList,
     sortElements,
     makeUnique,
     arrayDiff
 } from "../../script-new/common/types";
-import { getHandle } from "../../script/gen_info";
+import {
+    isChecksum,
+    toChecksum
+} from "../../script-new/common/eth-web3";
 import { findImagesToFetch } from "../../script-new/action/binance";
 
-/*
 describe("Check repository root dir", () => {
     const dirActualFiles = readDirSync(".")
     test("Root should contains only predefined files", () => {
@@ -470,9 +473,8 @@ describe("Test helper functions", () => {
         expect(findCommonElementOrDuplicate([], []), `Empty lists`).toBe(null)
     })
 });
-*/
 
-describe("Test common helpers", () => {
+describe("Test type helpers", () => {
     test(`Test mapList`, () => {
         expect(mapList(["a", "b", "c"]), `3 elems`).toEqual({"a": "", "b":"", "c": ""});
     });
@@ -487,6 +489,18 @@ describe("Test common helpers", () => {
     });
     test(`Test arrayDiff`, () => {
         expect(arrayDiff(["a", "b", "c"], ["c"]), `4 elems with 1 duplicate`).toEqual(["a", "b"]);
+    });
+});
+
+describe("Test eth-web3 helpers", () => {
+    test(`Test isChecksum`, () => {
+        expect(isChecksum("0x7Bb09bC8aDE747178e95B1D035ecBeEBbB18cFee"), `checksum`).toBe(true);
+        expect(isChecksum("0x7bb09bc8ade747178e95b1d035ecbeebbb18cfee"), `lowercase`).toBe(false);
+        expect(isChecksum("0x7Bb09bC8aDE747178e95B1D035ecBe"), `too short`).toBe(false);
+    });
+    test(`Test toChecksum`, () => {
+        expect(toChecksum("0x7bb09bc8ade747178e95b1d035ecbeebbb18cfee"), `from lowercase`).toEqual("0x7Bb09bC8aDE747178e95B1D035ecBeEBbB18cFee");
+        expect(toChecksum("0x7Bb09bC8aDE747178e95B1D035ecBeEBbB18cFee"), `from checksum`).toEqual("0x7Bb09bC8aDE747178e95B1D035ecBeEBbB18cFee");
     });
 });
 

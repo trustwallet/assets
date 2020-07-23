@@ -6,7 +6,6 @@
   "scripts": {
     "test": "jest",
     "checksum": "ts-node ./script/erc20_to_checksum",
-    "format:all": "ts-node ./script/format_files_name",
     "arrange:all": "ts-node ./script/arrange_files",
     "gen:info": "ts-node ./script/gen_info",
     "gen:validators:tezos": "ts-node ./script/gen_validators_tezos",

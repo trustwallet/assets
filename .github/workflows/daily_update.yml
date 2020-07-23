@@ -18,7 +18,7 @@ jobs:
        run: |
          #npm run update:bep2
          npm run resize
-         npm run format:all
+         #npm run format:all
          #npm run gen:list
          npm run map:cmc
      - name: Run test
