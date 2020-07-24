@@ -12,7 +12,7 @@
     "map:cmc": "ts-node ./pricing/coinmarketcap/script",
     "magic": "npm run update:bep2 && npm run checksum && npm run resize && npm run gen:list && npm t",
     "new-update": "ts-node ./script-new/main/update",
-    "new-fix": "ts-node ./script-new/main/correct"
+    "new-correct": "ts-node ./script-new/main/correct"
   },
   "repository": {
     "type": "git",
