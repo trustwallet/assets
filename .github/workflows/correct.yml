@@ -1,9 +1,9 @@
-name: Daily Update
+name: Correct
 on:
   push:
     branches: [ master ]
 jobs:
-  daily_update:
+  correct:
     runs-on: ubuntu-latest
     steps:
      - uses: actions/checkout@v2
@@ -29,5 +29,4 @@ jobs:
        with:
         commit_user_name: trust-wallet-merge-bot
         commit_user_email: mergebot@trustwallet.com
-        commit_message: Daily update
-        
+        commit_message: Correct
