@@ -23,7 +23,7 @@ import {
     findDuplicate,
     findCommonElementOrDuplicate,
     isChecksum,
-    isLogoDimentionOK,
+    isLogoDimensionOK,
     isLogoSizeOK,
     isLowerCase,
     isPathDir,
@@ -58,7 +58,7 @@ describe(`Test "blockchains" folder`, () => {
         foundChains.forEach(chain => {
             const chainLogoPath = getChainLogoPath(chain)
             expect(isPathExistsSync(chainLogoPath), `File missing at path "${chainLogoPath}"`).toBe(true)
-            const [isOk, msg] = isLogoDimentionOK(chainLogoPath)
+            const [isOk, msg] = isLogoDimensionOK(chainLogoPath)
             expect(isOk, msg).toBe(true)
         })
     })
@@ -96,25 +96,21 @@ describe(`Test "blockchains" folder`, () => {
 
     describe("Check Ethereum side-chain folders", () => {
         ethSidechains.forEach(chain => {
-            test(`Test chain ${chain} folder`, () => {
-
-                getChainAssetsList(chain).forEach(address => {
-                    const assetPath = getChainAssetPath(chain, address)
+            const assetsFolder = getChainAssetsPath(chain)
+            const assetsList = getChainAssetsList(chain)
+            test(`Test chain ${chain} folder, folder (${assetsList.length})`, () => {
+                assetsList.forEach(address => {
+                    const assetPath = `${assetsFolder}/${address}`
                     expect(isPathDir(assetPath), `Expect directory at path: ${assetPath}`).toBe(true)
 
                     const checksum = isChecksum(address)
                     expect(checksum, `Expect asset at path ${assetPath} in checksum`).toBe(true)
-                    
-                    const lowercase = isLowerCase(address)
-                    if (lowercase) {
-                        expect(checksum, `Lowercase address ${address} on chain ${chain} should be in checksum`).toBe(true)
-                    }
 
                     const assetLogoPath = getChainAssetLogoPath(chain, address)
                     expect(isPathExistsSync(assetLogoPath), `Missing file at path "${assetLogoPath}"`).toBe(true)
 
-                    const [isDimentionOK, dimensionMsg] = isLogoDimentionOK(assetLogoPath)
-                    expect(isDimentionOK, dimensionMsg).toBe(true)
+                    const [isDimensionOK, dimensionMsg] = isLogoDimensionOK(assetLogoPath)
+                    expect(isDimensionOK, dimensionMsg).toBe(true)
 
                     const [isLogoOK, sizeMsg] = isLogoSizeOK(assetLogoPath)
                     expect(isLogoOK, sizeMsg).toBe(true)
@@ -146,7 +142,7 @@ describe(`Test "blockchains" folder`, () => {
 
                 const assetsLogoPath = getChainAssetLogoPath(Tron, asset)
                 expect(isPathExistsSync(assetsLogoPath), `Missing file at path "${assetsLogoPath}"`).toBe(true)
-                const [isOk, msg] = isLogoDimentionOK(assetsLogoPath)
+                const [isOk, msg] = isLogoDimensionOK(assetsLogoPath)
                 expect(isOk, msg).toBe(true)
             })
         })
@@ -174,7 +170,7 @@ describe(`Test "blockchains" folder`, () => {
                     const path = getChainValidatorAssetLogoPath(chain, id)
                     expect(isPathExistsSync(path), `Chain ${chain} asset ${id} logo must be present at path ${path}`).toBe(true)
                     
-                    const [isOk, msg] = isLogoDimentionOK(path)
+                    const [isOk, msg] = isLogoDimensionOK(path)
                     expect(isOk, msg).toBe(true)
                 })
             })
@@ -406,7 +402,7 @@ describe("Test blacklist and whitelist", () => {
         // test by a single check: checking for duplicates in the concatenated list.
         const whiteList = JSON.parse(readFileSync(getChainWhitelistPath(chain)))
         const blackList = JSON.parse(readFileSync(getChainBlacklistPath(chain)))
-        test(`Blacklist and whitelist should have no common elements or duplicates`, () => {
+        test(`Blacklist and whitelist should have no common elements or duplicates (${chain})`, () => {
             expect(findCommonElementOrDuplicate(whiteList, blackList), `Found a duplicate or common element`).toBe(null)
         })
     })
