@@ -1,0 +1,90 @@
+#root{
+    background-image: url(../../assets/img/bitcoin-5281989.jpg);
+}
+#hero, #footer, #header{
+    background: transparent;
+}
+#hero div.container{
+    padding-bottom: 40px;
+    background-color: #080c46;
+}
+#hero div.container{
+    padding: 50px;
+    margin-top: 20px;
+    text-align: left;
+}
+#btnSmartContract {
+    background-color: #080c46!important;
+    padding: 8px 30px;
+    color: #fff;
+}
+#investSection{
+    color: #000;
+    padding: 40px;
+/*     background-color: #eee */
+}
+
+#investSection form.w-100,#investSection div#view_withdraw,.section-bg,#counts .count-box{
+    background-color: rgba(256,256,256,0.1);
+}
+
+#counts div.container{
+    padding:60px 40px;
+    background-color:#080c46;
+}
+.investmentPlan{
+    display:none;
+}
+.borderLeft{
+    border-left: 1px solid #ccc;
+}
+.p-3 div.text-center{
+    margin-bottom: 20px;
+}
+.p-3 .row + .row .pr-0{
+    padding-bottom: 20px!important;
+}
+.referral{
+    background-color: rgba(256,256,256,0.1);
+}
+.referral .text-muted{
+    color: #fff!important;
+}
+
+.bg-white{
+    background: #fff;
+}
+#footer div.container{
+    background-color: #080c46;
+}
+#investSection div.col-md-6{
+    padding: 0px;
+}
+.counts .count-box i{
+    background: #fff;
+    padding: 12px;
+    color: #ff002c;
+}
+/* 
+.h-100{
+    border: 1px solid #bbb;
+} */
+#btnSmartContract.btn-orange{
+    background-color: #ff8c3b!important;
+}
+#btnInvest.btn-green, #btnWithdraw.btn-green{
+    background-color: #3b9824;
+    border-color: #3b9824;
+    color: #fff;
+}
+.btn-primary{
+    background-color: #3459c1;
+    border-color: #3459c1;
+    border-radius: 0px;
+}
+.col-md-12{
+ margin-bottom: 80px;   
+}
+.icon-box.referral{
+    background-color: #fff;
+}

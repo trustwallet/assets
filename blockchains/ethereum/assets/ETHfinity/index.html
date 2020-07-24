@@ -1,0 +1,373 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>ETHfinity</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<meta property="og:type" content="website">
+<meta property="og:image:width" content="512px">
+<meta property="og:image:height" content="250px">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&amp;family=Poppins:ital,wght@0,500;0,700;0,900;1,500;1,700;1,900&amp;display=swap">
+<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/css/icofonts.min.css" rel="stylesheet">
+<link href="assets/css/boxicons.min.css" rel="stylesheet">
+<link href="assets/css/remixicon.css" rel="stylesheet">
+<link href="assets/css/style.css" rel="stylesheet">
+<link href="assets/css/main.css" rel="stylesheet">
+<link href="assets/css/jquery.toast.min.css" rel="stylesheet">
+<style>._3N0quac6MdEtIST6T8waUx {
+  background-color: var(--pallete-colors-3)
+}
+
+._3BGXL2a0wiRST655qIQ60c {
+  display:inline-block;
+  width:20px;
+  height:20px;
+  border:2px solid transparent;
+  background:0;
+  border-radius:999px;
+  border-top-color:deepskyblue;
+  border-left-color:deepskyblue;
+  animation: _1YMx5IRHJ8hh6x_NgtAVIS 0.7s infinite linear;
+}
+@keyframes _1YMx5IRHJ8hh6x_NgtAVIS {
+  from {
+	transform:rotate(0deg);
+  } 
+  to {
+	transform:rotate(360deg);
+  } 
+}</style><style>._37G9Ea5MXiAKx7Ehs7X-vs input, ._37G9Ea5MXiAKx7Ehs7X-vs select {
+  border: none;
+  color:  white !important;
+  min-height: var(--input-height-px);
+  background-color: transparent !important;
+  width: 100% !important;
+}
+
+.JmVjGRbi5F8I-1W3IMV3K {
+  min-height: calc(var(--input-height-px) + var(--input-error-height-px));
+}
+
+._37G9Ea5MXiAKx7Ehs7X-vs {
+  background-color: transparent;
+}
+
+._37G9Ea5MXiAKx7Ehs7X-vs b {
+  display: none !important;
+}
+
+._37G9Ea5MXiAKx7Ehs7X-vs label span {
+}
+
+._37G9Ea5MXiAKx7Ehs7X-vs:hover * {
+  transition: width 2s, height 4s;
+}
+
+._37G9Ea5MXiAKx7Ehs7X-vs input:focus, ._37G9Ea5MXiAKx7Ehs7X-vs select:focus {
+  
+  color: white !important;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+._37G9Ea5MXiAKx7Ehs7X-vs * {
+  font-size: 16px;
+  text-align: left;
+}
+
+._3293wTIc10mD3lttmTfTBi {
+  line-height: 120%;
+  font-size: 14px;
+  height: var(--input-error-height-px);
+  color: var(--pallete-red-1);
+  opacity: 0.7;
+  text-transform: lowercase;
+}</style>
+<link href="assets/css/mystyle.css" rel="stylesheet"/>
+</head>
+<body>
+
+<div id="root">
+	<div class="Toastify"></div>
+	<div>
+		<div>
+			<header id="header" class="fixed-top">
+				<div class="container d-flex align-items-center">
+					<img src="assets/img/icons/logo.png" style="height: 70px">
+				</div>
+			</header>
+			<section id="hero" class="d-flex align-items-center text-white">
+				<div class="container" align="center">
+				    <h1 class="bannterText"><strong style="color:#FFEB3B">8%</strong> Fresh Daily Income</h1>
+				    <h1 class="bannterText"><strong style="color:#FFEB3B">20%</strong> Referral Income*</h1>
+				    <br>
+					<div>
+						<a href="https://t.me/ethfinityofficial" target="_blank" class="btn bg-light btn-orange shadow" id="btnSmartContract">Telegram</a>
+						
+						<a href="https://etherscan.io/address/0xA76983d3d8c0Aa666050eE2e3B2725ab12E5f71A" target="_blank" class="btn bg-light btn-orange shadow" id="btnSmartContract">Verified Contract</a>
+					</div>
+				</div>
+			</section>
+			<section id="investSection" class="d-flex align-items-center">
+				<div class="container">
+				    
+							    
+					
+					<br>
+					
+					<div class="row row-eq-height align-items-center" >
+						<div class="col-md-12">
+							<form class="w-100" onsubmit="return false">
+								<div class=" p-4 mb-2 relative with-button bg-white">
+									<div class="pl-3 pt-3 pr-3 pb-1">
+										<h3>Account: <strong class="ml-1" id="data_accountAddress"></strong></h3>
+										<h4><a id="data_investTitle">Invest</a></h4>
+										<p>Your will receive <strong id="data_tierRate">&ndash;</strong> per day</p>
+										<p><strong>Min Investment of 0.05 ether</strong></p>
+										<div class="mt-2">
+											<!-- <small>invested:</small> -->
+											<div class="">Invested: <span id="data_invested"> &ndash;</span><img src="assets/img/icons/eth.png" class="ml-1 mt-1" height="16" width="16" style="max-height: 16px;" /></div>
+											<br>
+										</div>
+									</div>
+									<div class="">
+										<div class="text-left">
+											<div class="d-flex justify-content-between align-items-center p-0 pl-3 pr-3 undefined">
+												<div class="btn-list"><a id="btnMax">MAX</a></div>
+												<span class="react-numeric-input" style="position: relative; display: block;">
+													<input type="text" class="form-control p-0 pl-2 text-center" autocomplete="off" placeholder=" 0.000000" name="invest" value="" pattern=".*" style="padding-right: 3ex; box-sizing: border-box; font-size: inherit;" id="invest_input"/>
+												</span>
+												<div class="btn-list">
+													<div class="d-flex"><img src="assets/img/icons/eth.png" height="30" width="30" /></div>
+												</div>
+											</div>
+										</div>
+										<small class="_3293wTIc10mD3lttmTfTBi text-center form-text mt-0 undefined"></small>
+									</div>
+									<div class="d-flex justify-content-center">
+										<button type="submit" class="btn btn-green" id="btnInvest">INVEST <span id="invest_gascost"></span></button>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="col-md-12 h-100">
+							<div class=" p-4 mb-2 relative bg-white" id="view_withdraw" style="display: none">
+										
+							<h3>Acc Balance: <strong class="ml-1" id="data_walletBalance"></strong></h3>
+								<h4><a>Withdraw</a></h4>
+								<!--<p>Amount available to withdraw</p>-->
+								<div class="d-flex">
+									<div class="mt-2 p-2">
+										<div>
+											<h6>Available to Withdraw:
+											<span id="data_withdrawable">&ndash;</span><img src="assets/img/icons/eth.png" class="ml-1" height="16" width="16" style="max-height: 16px;" /> </h6>
+										</div>
+										
+										<br>
+										
+										<div>
+											<h6>withdrawn:
+											<span id="data_withdrawn">&ndash;</span><img src="assets/img/icons/eth.png" class="ml-1" height="16" width="16" style="max-height: 16px;" /></h6>
+										</div>
+									</div>
+								</div>
+								<div class="p-2">
+									withdraw tx fee: ~<span id="withdraw_gascost"></span><img src="assets/img/icons/eth.png" class="ml-1 mt-1" height="16" width="16" style="max-height: 16px;" />
+									<br>
+									<div class="mt-2">
+									reinvest tx fee: ~<span id="reinvest_gascost"></span><img src="assets/img/icons/eth.png" class="ml-1 mt-1" height="16" width="16" style="max-height: 16px;" /></div>
+								</div>
+								<br>
+								<div class="d-flex justify-content-center mt-1">
+									<button class="btn btn-green" id="btnWithdraw">WITHDRAW</button>
+									<button class="btn btn-danger" id="btnReinvest">REINVEST</button>
+								</div>
+							</div>
+
+							<div class=" p-4 relative mt-2" id="view_countdown" style="display: none">
+									<div class="p-5">
+										<h4><a id="data_countdown">LAUNCHING IN...</a><img src="assets/img/icons/rocket.png" class="ml-1" height="30" width="30" style="max-height: 30px;" /></h4>
+										<div class="d-flex justify-content-center">
+											<div class="mt-2">
+												<span>The system will launch on <strong>July 16, 2020 12:00 PM UTC</strong>.</span><br>
+												<span>pre-invest now and get upgraded to <strong>Platinum plan (40%)</strong>.</span>
+											</div>
+										</div>
+									</div>
+								</div>
+						</div>
+					</div>												
+				</div>
+			</section>
+			<section id="counts" class="counts section-bg investmentPlan">
+				<div class="container">
+					<h2 class="w-100 text-left pl-3">Investment Plans</h2>
+					<br>
+					<div class="row">
+						<div class="col-md-4">
+							<div class="card shadow text-center mb-3">
+								<div class="card-header">Standard(Default)</div>
+								<div class="card-body">
+									24%
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="card shadow text-center mb-3">
+								<div class="card-header">Gold</div>
+								<div class="card-body">
+									32%
+								</div>
+								<div class="card-footer p-0">
+									<button id="btn_tier1" class="btn btn-secondary w-100" disabled>Upgrade <span id="data_tierPrice1">0.2</span><img src="assets/img/icons/eth.png" class="ml-1" height="16" width="16" style="max-height: 16px;"></button>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="card shadow text-center">
+								<div class="card-header">Platinum</div>
+								<div class="card-body">
+									40%
+								</div>
+								<div class="card-footer p-0">
+									<button id="btn_tier2" class="btn btn-secondary w-100" disabled>Upgrade <span id="data_tierPrice2">0.5</span><img src="assets/img/icons/eth.png" class="ml-1" height="16" width="16" style="max-height: 16px;"></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="counts" class="counts section-bg">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-lg-6">
+							<div class="count-box">
+								<i class="icofont-money"></i><span><small id="data_totalETH">0</small> <img src="assets/img/icons/eth.png"  height="30" width="30" ></span>
+								<p>Invested <strong>ETH</strong></p>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-6 mt-5 mt-md-0">
+							<div class="count-box">
+								<i class="icofont-badge"></i><span><small id="data_totalUsers">0</small></span>
+								<p>Total Investors</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<main id="main">
+				<section id="why-us">
+					<div class="container">
+						<div class="row mt-4">
+							<h2 class="w-100 text-left pl-3">Referral program</h2>
+							<div class="col-12 d-flex align-items-stretch mb-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
+								<div class="icon-box referral iconbox-orange relative mt-2">
+									<div class="referral-header">
+										<div class="container h-100">
+											<div class="row h-100" id="btnCopyRefLink">
+												<div class="col-7 d-flex align-items-center btn btn-primary">
+													<a class="text-white link text-truncate" id="data_refaddress"></a>
+												</div>
+												<div class="col-5 d-flex align-items-center justify-content-end btn btn-primary">
+													<a class="text-white link">Copy Link</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="p-3">
+										<div class="text-center">
+											<div class="d-flex justify-content-center">Total Referral Income:&nbsp;<span id="data_refIncome">&ndash;</span><img src="assets/img/icons/eth.png" class="ml-1 mt-1" height="16" width="16" style="max-height: 16px;" /></div>
+										</div>
+										<div class="row">
+											<div class="col-6 col-md-6 pr-0 pr-md-3">
+												<div class="justify-content-between mt-4">
+													<div><span style="display: block; font-size: 20px; font-weight: 700;">1ST LVL</span></div>
+													<div><small class="text-muted">reward 10%</small></div>
+												</div>
+											</div>
+											<div class="col-6 col-md-6 pr-0 pr-md-3">
+												<div class="justify-content-between mt-4">
+													<div><span style="display: block; font-size: 20px; font-weight: 700;" id="data_refLevel1">0</span> referrals</div>
+												</div>
+											</div>
+											<div class="col-6 col-md-6 pl-0 pl-md-3 ">
+												<div class="justify-content-between mt-4">
+													<div><span style="display: block; font-size: 20px; font-weight: 700;">2ND LVL</span></div>
+													<div><small class="text-muted">reward 6%</small></div>
+												</div>
+											</div>
+											<div class="col-6 col-md-6 pl-0 pl-md-3">
+												<div class="justify-content-between mt-4">
+													<div><span style="display: block; font-size: 20px; font-weight: 700;"  id="data_refLevel2">0</span> referrals</div>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-6 col-md-6 pr-0 pr-md-3">
+												<div class="justify-content-between mt-4">
+													<div><span style="display: block; font-size: 20px; font-weight: 700;">3RD LVL</span></div>
+													<div><small class="text-muted">reward 2%</small></div>
+												</div>
+											</div>
+											<div class="col-6 col-md-6 pr-0 pr-md-3">
+												<div class="justify-content-between mt-4">
+													<div><span style="display: block; font-size: 20px; font-weight: 700;"  id="data_refLevel3">0</span> referrals</div>
+												</div>
+											</div>
+											<div class="col-6 col-md-6 pl-0 pl-md-3 ">
+												<div class="justify-content-between mt-4">
+													<div><span style="display: block; font-size: 20px; font-weight: 700;">4TH LVL</span></div>
+													<div><small class="text-muted">reward 2%</small></div>
+												</div>
+											</div>
+											<div class="col-6 col-md-6 pl-0 pl-md-3">
+												<div class="justify-content-between mt-4">
+													<div><span style="display: block; font-size: 20px; font-weight: 700;"  id="data_refLevel4">0</span> referrals</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer id="footer">
+				<div class="container d-md-flex py-4">
+					<div class="mr-md-auto text-center text-md-left">
+						<div class="copyright">
+							&copy; Copyright <strong><span></span></strong>. All Rights Reserved.
+						</div>
+						<div class="credits"></div>
+					</div>
+					<div class="social-links text-center text-md-right pt-3 pt-md-0">
+						<a href="" target="_blank" class="telegram"><i class="bx bxl-telegram"></i></a>
+					</div>
+				</div>
+			</footer>
+			<a href="#" class="back-to-top" style="display: inline;"><i class="icofont-simple-up"></i></a>
+		</div>
+	</div>
+</div>
+
+<script src="assets/js/web3.min.js"></script>
+<script src="assets/js/bignumber.min.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.toast.min.js"></script>
+<script src="assets/js/jquery.cookie.min.js"></script>
+<script src="assets/js/jquery.easing.min.js"></script>
+<script src="assets/js/jquery.waypoints.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/supreme.abi22ec.js?v=pre_2"></script>
+<script src="assets/js/supreme.min22ec.js?v=pre_2"></script>
+
+</body>
+</html>
