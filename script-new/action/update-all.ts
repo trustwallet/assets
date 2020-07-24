@@ -4,16 +4,18 @@ import * as validators from "./validators";
 import * as whitelists from "./whitelists";
 import * as binance from "./binance";
 
-export function fixAndUpdate(fixonly: boolean) {
-    // fixes
-    console.log("Running fixes ...");
-    eth_forks.fix();
-    logo_size.fix();
-    validators.fix();
-    whitelists.fix();
+export function correctAndUpdate(doCorrect: boolean, doUpdate: boolean) {
+    // corrections
+    if (doCorrect) {
+        console.log("Running corrections...");
+        eth_forks.correct();
+        logo_size.correct();
+        validators.correct();
+        whitelists.correct();
+    }
 
     // updates (using external data sources)
-    if (!fixonly) {
+    if (doUpdate) {
         console.log("Running updates (using external data sources) ...");
         binance.update();
     }

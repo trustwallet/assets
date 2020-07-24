@@ -56,7 +56,7 @@ async function downsize(chains) {
     console.log(`Checking logos completed, ${totalCountChecked} logos checked, ${totalCountUpdated} logos updated`);
 }
 
-export async function fix() {
+export async function correct() {
     const foundChains = readDirSync(chainsPath);
     await downsize(foundChains);
 }

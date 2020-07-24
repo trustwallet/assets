@@ -1,4 +1,4 @@
-name: Housekeeping - Dry run
+name: Corrections - Dry run
 on:
     push:
       branches:
@@ -7,7 +7,7 @@ on:
     pull_request:
       branches: [master]
 jobs:
-  daily_update:
+  correct-dryrun:
     runs-on: ubuntu-latest
     steps:
      - uses: actions/checkout@v2
@@ -16,8 +16,8 @@ jobs:
          node-version: 12
      - name: Install Dependencies
        run: npm ci
-     - name: Run update script
-       run: npm run new-housekeeping
+     - name: Run correct script
+       run: npm run new-correct
      - name: Run test
        run: npm t
      - name: Show git status

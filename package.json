@@ -11,8 +11,8 @@
     "gen:validators:tezos": "ts-node ./script/gen_validators_tezos",
     "map:cmc": "ts-node ./pricing/coinmarketcap/script",
     "magic": "npm run update:bep2 && npm run checksum && npm run resize && npm run gen:list && npm t",
-    "new-housekeeping": "ts-node ./script-new/main/housekeeping",
-    "new-fix": "ts-node ./script-new/main/fix"
+    "new-update": "ts-node ./script-new/main/update",
+    "new-fix": "ts-node ./script-new/main/correct"
   },
   "repository": {
     "type": "git",

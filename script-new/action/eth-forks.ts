@@ -60,7 +60,7 @@ function checkAddressChecksums() {
     });
 }
 
-export async function fix() {
+export async function correct() {
     formatInfos();
     checkAddressChecksums();
 }
