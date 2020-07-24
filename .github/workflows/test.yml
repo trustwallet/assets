@@ -1,9 +1,9 @@
-name: Check All
+name: Test
 on:
   push:
     branches: [ master ]
 jobs:
-  check-all:
+  test:
     runs-on: ubuntu-latest
     steps:
      - uses: actions/checkout@v2
