@@ -1,10 +1,10 @@
-name: Update Validators Info
+name: Periodic Update
 on:
   schedule:
-    # Run once per day at 19:00 UTC or 12PM PST
-    - cron:  '0 19 * * *'
+    # Run twice per day (at 7:00UTC/12amPST, 19:00UTC/12pmPST)
+    - cron:  '0 7,19 * * *'
 jobs:
-  update-validators:
+  periodic-update:
     runs-on: ubuntu-latest
     steps:
      - uses: actions/checkout@v2
@@ -29,4 +29,4 @@ jobs:
        with:
          commit_user_name: trust-wallet-merge-bot
          commit_user_email: mergebot@trustwallet.com
-         commit_message: Update validators info
+         commit_message: Periodic update
