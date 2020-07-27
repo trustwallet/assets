@@ -20,7 +20,7 @@ import { TickerType, mapTiker, PlatformType } from "../../src/test/models";
 // Steps required to run this:
 // 1. (Optional) CMC API key already setup, use yours if needed. Install script deps "npm i" if hasn't been run before.
 // 2. Pull down tokens repo https://github.com/trustwallet/assets and point COIN_IMAGE_BASE_PATH and TOKEN_IMAGE_BASE_PATH to it.
-// 3. Run: `npm run gen:list`
+// 3. Run: `npm run update`
 
 const CMC_PRO_API_KEY = `df781835-e5f4-4448-8b0a-fe31402ab3af` // Free Basic Plan api key is enough to run script
 const CMC_LATEST_BASE_URL = `https://pro-api.coinmarketcap.com/v1/global-metrics/quotes/latest?`

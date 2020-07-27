@@ -5,11 +5,6 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "checksum": "ts-node ./script/erc20_to_checksum",
-    "arrange:all": "ts-node ./script/arrange_files",
-    "gen:info": "ts-node ./script/gen_info",
-    "gen:validators:tezos": "ts-node ./script/gen_validators_tezos",
-    "magic": "npm run update:bep2 && npm run checksum && npm run resize && npm run gen:list && npm t",
     "new-update": "ts-node ./script-new/main/update",
     "new-fix": "ts-node ./script-new/main/fix"
   },

@@ -17,12 +17,8 @@ jobs:
      - name: Install Dependencies
        run: npm ci
      - name: Run scripts
-       run: |
-         #npm run gen:validators:tezos
-         #npm run update:bep2
-         #npm run map:cmc
-         npm run new-update
-     - name: Show git status
+       run: npm run new-update
+     - name: Show git status (diff)
        if: success()
        run: git status
      - name: Run test
