@@ -20,10 +20,8 @@ import {
     getChainWhitelistPath,
     getChainAssetsList,
     getChainValidatorsList,
-    findDuplicate,
-    findCommonElementOrDuplicate,
     isChecksum,
-    isLogoDimensionOK,
+    isLogoDimentionOK,
     isLogoSizeOK,
     isLowerCase,
     isPathDir,
@@ -58,7 +56,7 @@ describe(`Test "blockchains" folder`, () => {
         foundChains.forEach(chain => {
             const chainLogoPath = getChainLogoPath(chain)
             expect(isPathExistsSync(chainLogoPath), `File missing at path "${chainLogoPath}"`).toBe(true)
-            const [isOk, msg] = isLogoDimensionOK(chainLogoPath)
+            const [isOk, msg] = isLogoDimentionOK(chainLogoPath)
             expect(isOk, msg).toBe(true)
         })
     })
@@ -96,21 +94,25 @@ describe(`Test "blockchains" folder`, () => {
 
     describe("Check Ethereum side-chain folders", () => {
         ethSidechains.forEach(chain => {
-            const assetsFolder = getChainAssetsPath(chain)
-            const assetsList = getChainAssetsList(chain)
-            test(`Test chain ${chain} folder, folder (${assetsList.length})`, () => {
-                assetsList.forEach(address => {
-                    const assetPath = `${assetsFolder}/${address}`
+            test(`Test chain ${chain} folder`, () => {
+
+                getChainAssetsList(chain).forEach(address => {
+                    const assetPath = getChainAssetPath(chain, address)
                     expect(isPathDir(assetPath), `Expect directory at path: ${assetPath}`).toBe(true)
 
                     const checksum = isChecksum(address)
                     expect(checksum, `Expect asset at path ${assetPath} in checksum`).toBe(true)
+                    
+                    const lowercase = isLowerCase(address)
+                    if (lowercase) {
+                        expect(checksum, `Lowercase address ${address} on chain ${chain} should be in checksum`).toBe(true)
+                    }
 
                     const assetLogoPath = getChainAssetLogoPath(chain, address)
                     expect(isPathExistsSync(assetLogoPath), `Missing file at path "${assetLogoPath}"`).toBe(true)
 
-                    const [isDimensionOK, dimensionMsg] = isLogoDimensionOK(assetLogoPath)
-                    expect(isDimensionOK, dimensionMsg).toBe(true)
+                    const [isDimentionOK, dimensionMsg] = isLogoDimentionOK(assetLogoPath)
+                    expect(isDimentionOK, dimensionMsg).toBe(true)
 
                     const [isLogoOK, sizeMsg] = isLogoSizeOK(assetLogoPath)
                     expect(isLogoOK, sizeMsg).toBe(true)
@@ -142,7 +144,7 @@ describe(`Test "blockchains" folder`, () => {
 
                 const assetsLogoPath = getChainAssetLogoPath(Tron, asset)
                 expect(isPathExistsSync(assetsLogoPath), `Missing file at path "${assetsLogoPath}"`).toBe(true)
-                const [isOk, msg] = isLogoDimensionOK(assetsLogoPath)
+                const [isOk, msg] = isLogoDimentionOK(assetsLogoPath)
                 expect(isOk, msg).toBe(true)
             })
         })
@@ -170,7 +172,7 @@ describe(`Test "blockchains" folder`, () => {
                     const path = getChainValidatorAssetLogoPath(chain, id)
                     expect(isPathExistsSync(path), `Chain ${chain} asset ${id} logo must be present at path ${path}`).toBe(true)
                     
-                    const [isOk, msg] = isLogoDimensionOK(path)
+                    const [isOk, msg] = isLogoDimentionOK(path)
                     expect(isOk, msg).toBe(true)
                 })
             })
@@ -398,12 +400,21 @@ describe("Test blacklist and whitelist", () => {
     const assetsChains = readDirSync(chainsFolderPath).filter(chain => isPathExistsSync(getChainAssetsPath(chain)))
 
     assetsChains.forEach(chain => {
-        // Test uniqeness of blacklist and whitelist, and non-intersection among the two:
-        // test by a single check: checking for duplicates in the concatenated list.
         const whiteList = JSON.parse(readFileSync(getChainWhitelistPath(chain)))
         const blackList = JSON.parse(readFileSync(getChainBlacklistPath(chain)))
-        test(`Blacklist and whitelist should have no common elements or duplicates (${chain})`, () => {
-            expect(findCommonElementOrDuplicate(whiteList, blackList), `Found a duplicate or common element`).toBe(null)
+
+        test(`Whitelist should not contain assets from blacklist on ${chain} chain`, () => {
+            const blacklistMap = mapList(blackList)
+            whiteList.forEach(a => {
+                expect(a in blacklistMap, `Found whitelist asset ${a} in blacklist on chain ${chain}`).toBe(false)
+            })
+        })
+
+        test(`Blacklist should not contain assets from whitelist on ${chain} chain`, () => {
+            const whitelistMap = mapList(whiteList)
+            blackList.forEach(a => {
+                expect(a in whitelistMap, `Found blacklist asset ${a} in whitelist on chain ${chain}`).toBe(false)
+            })
         })
     })
 })
@@ -439,23 +450,5 @@ describe("Test helper functions", () => {
         urls.forEach(u => {
             expect(getHandle(u.url), `Getting handle from url ${u}`).toBe(u.expected)
         })
-    })
-
-    test(`Test findDuplicate`, () => {
-        expect(findDuplicate(["a", "bb", "ccc"]), `No duplicates`).toBe(null)
-        expect(findDuplicate(["a", "bb", "ccc", "bb"]), `One double duplicate`).toBe("bb")
-        expect(findDuplicate([]), `Empty array`).toBe(null)
-        expect(findDuplicate(["a"]), `One element`).toBe(null)
-        expect(findDuplicate(["a", "bb", "ccc", "bb", "d", "bb"]), `One trip[le duplicate`).toBe("bb")
-        expect(findDuplicate(["a", "bb", "ccc", "bb", "a"]), `Two double duplicates`).toBe("a")
-    })
-
-    test(`Test findCommonElementOrDuplicate`, () => {
-        expect(findCommonElementOrDuplicate(["a", "bb", "ccc"], ["1", "22", "333"]), `No intersection or duplicates`).toBe(null)
-        expect(findCommonElementOrDuplicate(["a", "bb", "ccc"], ["1", "bb", "333"]), `Common element`).toBe("bb")
-        expect(findCommonElementOrDuplicate(["a", "bb", "ccc", "bb"], ["1", "22", "333"]), `Duplicate in first`).toBe("bb")
-        expect(findCommonElementOrDuplicate(["a", "bb", "ccc"], ["1", "22", "333", "22"]), `Duplicate in second`).toBe("22")
-        expect(findCommonElementOrDuplicate(["a", "bb", "ccc", "1", "bb"], ["1", "22", "333", "22"]), `Intersection and duplicates`).toBe("22")
-        expect(findCommonElementOrDuplicate([], []), `Empty lists`).toBe(null)
     })
 });
