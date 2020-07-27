@@ -318,7 +318,7 @@ export const rootDirAllowedFiles = [
     "dapps",
     "media",
     "node_modules",
-    "script",
+    "script-old",
     "script-new",
     "src",
     ".gitignore",

@@ -38,7 +38,7 @@ import {
     stakingChains,
 } from "./helpers"
 import { ValidatorModel, mapTiker, TickerType } from "./models";
-import { getHandle } from "../../script/gen_info";
+import { getHandle } from "../../script-old/gen_info";
 
 import {
     isChecksum,
