@@ -337,3 +337,7 @@ function log(string, cb?) {
 //         }
 //     })
 // }
+
+export async function update() {
+    await run();
+}
