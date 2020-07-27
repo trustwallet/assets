@@ -6,12 +6,14 @@ import {
 
 export const logoName = `logo`;
 export const infoName = `info`;
+export const listName = `list`
 export const logoExtension = "png";
 export const jsonExtension = "json";
 export const logoFullName = `${logoName}.${logoExtension}`;
 export const infoFullName = `${infoName}.${jsonExtension}`;
 const whiteList = `whitelist.${jsonExtension}`;
 const blackList = `blacklist.${jsonExtension}`;
+export const validatorsList = `${listName}.${jsonExtension}`
 
 export const chainsPath: string = path.join(process.cwd(), '/blockchains');
 export const getChainPath = (chain: string): string => `${chainsPath}/${chain}`;

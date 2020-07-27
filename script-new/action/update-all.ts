@@ -4,6 +4,7 @@ import * as validators from "./validators";
 import * as whitelists from "./whitelists";
 import * as binance from "./binance";
 import * as coinmarketcap from "../../pricing/coinmarketcap/script";
+import * as tezos from "./tezos";
 
 export function fixAndUpdate(doFix: boolean, doUpdate: boolean) {
     // fixes
@@ -18,6 +19,7 @@ export function fixAndUpdate(doFix: boolean, doUpdate: boolean) {
     // updates (using external data sources)
     if (doUpdate) {
         console.log("Running updates (using external data sources) ...");
+        tezos.update();
         binance.update();
         coinmarketcap.update();
     }
