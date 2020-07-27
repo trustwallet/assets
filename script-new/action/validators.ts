@@ -9,6 +9,6 @@ function formatValidators() {
     })
 }
 
-export async function correct() {
+export async function fix() {
     formatValidators();
 }

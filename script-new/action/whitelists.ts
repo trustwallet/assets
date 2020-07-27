@@ -34,6 +34,6 @@ function formatWhiteBlackList() {
     })
 }
 
-export async function correct() {
+export async function fix() {
     formatWhiteBlackList();
 }
