@@ -18,7 +18,7 @@ jobs:
        run: npm ci
      - name: Run scripts
        run: |
-         npm run gen:validators:tezos
+         #npm run gen:validators:tezos
          #npm run update:bep2
          #npm run map:cmc
          npm run new-update
