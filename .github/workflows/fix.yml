@@ -1,9 +1,9 @@
-name: Correct
+name: Fixes and Consistency Updates
 on:
   push:
     branches: [ master ]
 jobs:
-  correct:
+  fix-consistency:
     runs-on: ubuntu-latest
     steps:
      - uses: actions/checkout@v2
@@ -27,4 +27,4 @@ jobs:
        with:
         commit_user_name: trust-wallet-merge-bot
         commit_user_email: mergebot@trustwallet.com
-        commit_message: Correct
+        commit_message: Fixes and Consistency Updates
