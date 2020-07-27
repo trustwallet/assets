@@ -1,8 +1,8 @@
-import { fixAndUpdate } from "../action/update-all";
+import { updateAll } from "../action/update-all";
 
 export function main() {
     try {
-        fixAndUpdate(false, true);
+        updateAll();
     } catch(err) {
         console.error(err);
         process.exit(1);
