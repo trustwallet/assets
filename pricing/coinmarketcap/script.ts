@@ -43,13 +43,14 @@ const custom: mapTiker[] = [
     {"coin": 60, "type": typeToken, "token_id": "0xFA1a856Cfa3409CFa145Fa4e20Eb270dF3EB21ab", "id": 2405}, // IOST (ERC20)
     {"coin": 60, "type": typeToken, "token_id": "0x2fe39f22EAC6d3c1C86DD9D143640EbB94609FCE", "id": 4929}, // JDC Coin (ERC20)
     {"coin": 60, "type": typeToken, "token_id": "0x5Cf04716BA20127F1E2297AdDCf4B5035000c9eb", "id": 2780}, // NKN (NKN)
-    {"coin": 714, "type": typeToken, "token_id": "CHZ-ECD", "id": 4066}, // Chiliz (BEP-2)
+    // {"coin": 714, "type": typeToken, "token_id": "CHZ-ECD", "id": 4066}, // Chiliz (BEP-2)
     {"coin": 60, "type": typeToken, "token_id": "0xdF1D6405df92d981a2fB3ce68F6A03baC6C0E41F", "id": 3816}, // VERA (VRA)
     {"coin": 60, "type": typeToken, "token_id": "0x467Bccd9d29f223BcE8043b84E8C8B282827790F", "id": 2394}, // Telcoin (TEL)
-    {"coin": 714, "type": typeToken, "token_id": "BUSD-BD1", "id": 4687}, // BUSD-BD1 (BEP2)
+    // {"coin": 714, "type": typeToken, "token_id": "BUSD-BD1", "id": 4687}, // BUSD-BD1 (BEP2)
     {"coin": 60, "type": typeToken, "token_id": "0xBD87447F48ad729C5c4b8bcb503e1395F62e8B98", "id": 3408}, // Pool Usdc (plUsdc)
     {"coin": 60, "type": typeToken, "token_id": "0x49d716DFe60b37379010A75329ae09428f17118d", "id": 4943}, // Pool Dai (plDai)
     {"coin": 60, "type": typeToken, "token_id": "0x589891a198195061Cb8ad1a75357A3b7DbaDD7Bc", "id": 4036}, // Contentos (COS)
+    {"coin": 60, "type": typeToken, "token_id": "0x30f271C9E86D2B7d00a6376Cd96A1cFBD5F0b9b3", "id": 5835}, // Decentr (DEC)
     // {"coin": 60, "type": typeToken, "token_id": "XXX", "id": XXX}, // XXX (XXX)
 ]
 
