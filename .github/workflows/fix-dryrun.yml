@@ -1,4 +1,4 @@
-name: Fixes and Consistency Updates - Dry run
+name: Fixes Dryrun -- TO REMOVE
 on:
     push:
       branches:
@@ -16,11 +16,12 @@ jobs:
          node-version: 12
      - name: Install Dependencies
        run: npm ci
-     - name: Run fix script
-       run: npm run new-fix
+     - name: Run fix scripts
+       run: |
+         #npm run resize
+         #npm run format:all
+         #npm run gen:list
      - name: Show git status (diff)
-       if: success()
        run: git status
      - name: Run test
        run: npm t
-
