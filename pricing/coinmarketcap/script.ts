@@ -1,5 +1,5 @@
 import { toChecksum } from "../../src/test/helpers"
-const BluebirbPromise = require("bluebird")
+const BluebirdPromise = require("bluebird")
 const axios = require("axios")
 const chalk = require('chalk')
 const fs = require("fs")
@@ -20,7 +20,7 @@ import { TickerType, mapTiker, PlatformType } from "../../src/test/models";
 // Steps required to run this:
 // 1. (Optional) CMC API key already setup, use yours if needed. Install script deps "npm i" if hasn't been run before.
 // 2. Pull down tokens repo https://github.com/trustwallet/assets and point COIN_IMAGE_BASE_PATH and TOKEN_IMAGE_BASE_PATH to it.
-// 3. Run: `npm run gen:list`
+// 3. Run: `npm run update`
 
 const CMC_PRO_API_KEY = `df781835-e5f4-4448-8b0a-fe31402ab3af` // Free Basic Plan api key is enough to run script
 const CMC_LATEST_BASE_URL = `https://pro-api.coinmarketcap.com/v1/global-metrics/quotes/latest?`
@@ -58,14 +58,13 @@ const allContracts: mapTiker[] = [] // Temp storage for mapped assets
 let bnbOwnerToSymbol = {} // e.g: bnb1tawge8u97slduhhtumm03l4xl4c46dwv5m9yzk: WISH-2D5
 let bnbOriginalSymbolToSymbol = {} // e.g: WISH: WISH-2D5
 
-run()
 async function run() {
     try {
         await Promise.all([initState(), setBinanceTokens()])
         const [totalCrypto, coins] = await Promise.all([getTotalActiveCryptocurrencies(), getTickers()])
         // setBIP44Constants()
         log(`Found ${totalCrypto} on CMC`, chalk.yellowBright)
-        await BluebirbPromise.mapSeries(coins, processCoin)
+        await BluebirdPromise.mapSeries(coins, processCoin)
 
         addCustom()
         printContracts()
@@ -78,7 +77,7 @@ async function processCoin(coin) {
     const { id, symbol, name, platform } = coin
     const platformType: PlatformType = platform == null ? "" : platform.name
     log(`${symbol}:${platformType}`)
-    // await BluebirbPromise.mapSeries(types, async type => {
+    // await BluebirdPromise.mapSeries(types, async type => {
     switch (platformType) {
         case PlatformType.Ethereum:
             // log(`Ticker ${name}(${symbol}) is a token with address ${address} and CMC id ${id}`)
@@ -337,3 +336,7 @@ function log(string, cb?) {
 //         }
 //     })
 // }
+
+export async function update() {
+    await run();
+}

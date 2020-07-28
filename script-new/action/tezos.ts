@@ -1,13 +1,23 @@
-const axios = require('axios')
-import { 
-    getChainValidatorsList,
-    getChainValidatorsListPath,
-    Tezos, 
-    writeJSONToPath
-} from "../src/test/helpers";
-import { BakingBadBaker } from "../src/test/models";
+import axios from "axios";
+import {
+    validatorsList,
+    getChainValidatorsPath,
+    getChainValidatorsListPath
+} from "../common/repo-structure";
+import { Tezos } from "../common/blockchains";
+import { readFileSync } from "../common/filesystem";
+import { writeJsonFile } from "../common/json";
 
-(async function(){
+import {
+    BakingBadBaker,
+    ValidatorModel
+} from "../../src/test/models";
+
+function getChainValidatorsList(chain: string): ValidatorModel[] {
+    return JSON.parse(readFileSync(`${(getChainValidatorsPath(chain))}/${validatorsList}`));
+}
+
+async function gen_validators_tezos() {
     const bakers: BakingBadBaker[] = await axios.get(`https://api.baking-bad.org/v2/bakers`).then(res => res.data)
     const bakersMap: {[key: string]: BakingBadBaker} = bakers.reduce((acm, val) => {
         acm[val.address] = val
@@ -51,5 +61,9 @@ import { BakingBadBaker } from "../src/test/models";
         return acm
     }, [])
 
-    writeJSONToPath(getChainValidatorsListPath(Tezos), newbakers)
-})()
+    writeJsonFile(getChainValidatorsListPath(Tezos), newbakers)
+}
+
+export async function update() {
+    await gen_validators_tezos();
+}
