@@ -13,7 +13,7 @@ jobs:
      - name: Install Dependencies
        run: npm ci
      - name: Run fix script
-       run: npm run new-fix
+       run: npm run fix
      - name: Show git status (diff)
        if: success()
        run: git status

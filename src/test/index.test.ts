@@ -43,18 +43,18 @@ import { getHandle } from "../../script-old/gen_info";
 import {
     isChecksum,
     toChecksum
-} from "../../script-new/common/eth-web3";
+} from "../../script/common/eth-web3";
 import {
     isDimensionTooLarge,
     calculateTargetSize
-} from "../../script-new/common/image";
+} from "../../script/common/image";
 import {
     mapList,
     sortElements,
     makeUnique,
     arrayDiff
-} from "../../script-new/common/types";
-import { findImagesToFetch } from "../../script-new/action/binance";
+} from "../../script/common/types";
+import { findImagesToFetch } from "../../script/action/binance";
 
 describe("Check repository root dir", () => {
     const dirActualFiles = readDirSync(".")

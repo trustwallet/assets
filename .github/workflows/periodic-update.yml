@@ -17,7 +17,7 @@ jobs:
      - name: Install Dependencies
        run: npm ci
      - name: Run scripts
-       run: npm run new-update
+       run: npm run update
      - name: Show git status (diff)
        if: success()
        run: git status

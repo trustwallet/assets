@@ -319,7 +319,7 @@ export const rootDirAllowedFiles = [
     "media",
     "node_modules",
     "script-old",
-    "script-new",
+    "script",
     "src",
     ".gitignore",
     "azure-pipelines.yml",

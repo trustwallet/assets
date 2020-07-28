@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "new-update": "ts-node ./script-new/main/update",
-    "new-fix": "ts-node ./script-new/main/fix"
+    "fix": "ts-node ./script/main/fix",
+    "update": "ts-node ./script/main/update"
   },
   "repository": {
     "type": "git",
