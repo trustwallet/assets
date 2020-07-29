@@ -74,37 +74,10 @@ async function run() {
     }
 }
 
-function platformTypeToCoin(platformType: string): number {
-    var coinIdx: number = -1
-    switch (platformType) {
-        case PlatformType.Ethereum:
-            return 60
-        case PlatformType.Binance:
-            return 714
-        case PlatformType.TRON:
-            return 195
-        default:
-            return -1
-    }
-}
-
 async function processCoin(coin) {
     const { id, symbol, name, platform } = coin
     const platformType: PlatformType = platform == null ? "" : platform.name
     log(`${symbol}:${platformType}`)
-
-    // platformType -> coin
-    var coinIdx: number = platformTypeToCoin(platformType)
-    if (!(coinIdx >= 0)) { // not the same as (coinIdx < 0)
-        // try lookup
-        coinIdx = getSlip44Index(symbol, name)
-        if (!(coinIdx >= 0)) {
-            log(`Coin ${coinIdx} ${name}(${symbol}) not listed in slip44`)
-            return
-        }
-        log(`Ticker ${name}(${symbol}) is a coin with id ${coinIdx}`)
-    }
-
     // await BluebirbPromise.mapSeries(types, async type => {
     switch (platformType) {
         case PlatformType.Ethereum:
@@ -115,7 +88,7 @@ async function processCoin(coin) {
                     if (!isAddressInBlackList("ethereum", checksum)) {
                         log(`Added ${checksum}`)
                         addToContractsList({
-                            coin: coinIdx,
+                            coin: 60,
                             type: typeToken,
                             token_id: checksum,
                             id
@@ -136,7 +109,7 @@ async function processCoin(coin) {
             if (ownerAddress && (ownerAddress in bnbOwnerToSymbol)) {
                 log(`Added ${bnbOwnerToSymbol[ownerAddress]}`)
                 addToContractsList({
-                    coin: coinIdx,
+                    coin: 714,
                     type: typeToken,
                     token_id: bnbOwnerToSymbol[ownerAddress],
                     id
@@ -147,7 +120,7 @@ async function processCoin(coin) {
             if (symbol in bnbOriginalSymbolToSymbol) {
                 log(`Added Binance ${bnbOriginalSymbolToSymbol[symbol]}`)
                 addToContractsList({
-                    coin: coinIdx,
+                    coin: 714,
                     type: typeToken,
                     token_id: bnbOriginalSymbolToSymbol[symbol].trim(),
                     id
@@ -163,7 +136,7 @@ async function processCoin(coin) {
             log(`tron: ${tokenAddr}`)
             if (tokenAddr.length > 0) {
                 addToContractsList({
-                    coin: coinIdx,
+                    coin: 195,
                     type: typeToken,
                     token_id: tokenAddr,
                     id
@@ -185,11 +158,18 @@ async function processCoin(coin) {
         //         })
         //         break
         default:
-            addToContractsList({
-                coin: coinIdx,
-                type: typeCoin,
-                id
-            })
+            const coinIndex = getSlip44Index(symbol, name)
+
+            if (coinIndex >= 0) {
+                log(`Ticker ${name}(${symbol}) is a coin with id ${coinIndex}`)
+                addToContractsList({
+                    coin: coinIndex,
+                    type: typeCoin,
+                    id
+                })
+            } else {
+                log(`Coin ${coinIndex} ${name}(${symbol}) not listed in slip44`)
+            }
             break
     }
     // })
