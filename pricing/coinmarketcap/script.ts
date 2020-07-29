@@ -74,11 +74,10 @@ async function run() {
     }
 }
 
-async function processCoin(coin) {
+function buildCoinEntry(coin: any): any {
     const { id, symbol, name, platform } = coin
     const platformType: PlatformType = platform == null ? "" : platform.name
     log(`${symbol}:${platformType}`)
-    // await BluebirbPromise.mapSeries(types, async type => {
     switch (platformType) {
         case PlatformType.Ethereum:
             // log(`Ticker ${name}(${symbol}) is a token with address ${address} and CMC id ${id}`)
@@ -86,13 +85,12 @@ async function processCoin(coin) {
                 try {
                     const checksum = toChecksum(platform.token_address)
                     if (!isAddressInBlackList("ethereum", checksum)) {
-                        log(`Added ${checksum}`)
-                        addToContractsList({
+                        return {
                             coin: 60,
                             type: typeToken,
                             token_id: checksum,
                             id
-                        })
+                        }
                     }
                 } catch (error) {
                     console.log(`Etheruem platform error`, error)
@@ -100,6 +98,7 @@ async function processCoin(coin) {
                 }
             }
             break
+
         case PlatformType.Binance:
             if (symbol === "BNB") {
                 break
@@ -107,27 +106,24 @@ async function processCoin(coin) {
             const ownerAddress = platform.token_address.trim()
             log(`Symbol ${symbol}:${ownerAddress}:${id}`)
             if (ownerAddress && (ownerAddress in bnbOwnerToSymbol)) {
-                log(`Added ${bnbOwnerToSymbol[ownerAddress]}`)
-                addToContractsList({
+                return {
                     coin: 714,
                     type: typeToken,
                     token_id: bnbOwnerToSymbol[ownerAddress],
                     id
-                })
-                break
+                }
             }
 
             if (symbol in bnbOriginalSymbolToSymbol) {
-                log(`Added Binance ${bnbOriginalSymbolToSymbol[symbol]}`)
-                addToContractsList({
+                return {
                     coin: 714,
                     type: typeToken,
                     token_id: bnbOriginalSymbolToSymbol[symbol].trim(),
                     id
-                })
-                break
+                }
             }
             break
+
         case PlatformType.TRON:
             if (symbol === "TRX") {
                 break
@@ -135,14 +131,15 @@ async function processCoin(coin) {
             const tokenAddr = platform.token_address.trim()
             log(`tron: ${tokenAddr}`)
             if (tokenAddr.length > 0) {
-                addToContractsList({
+                return {
                     coin: 195,
                     type: typeToken,
                     token_id: tokenAddr,
                     id
-                })
+                }
             }
             break
+
         // case PlatformType.VeChain:
         //         if (symbol === "VET") {
         //             break
@@ -157,22 +154,32 @@ async function processCoin(coin) {
         //             id
         //         })
         //         break
+
         default:
             const coinIndex = getSlip44Index(symbol, name)
 
             if (coinIndex >= 0) {
                 log(`Ticker ${name}(${symbol}) is a coin with id ${coinIndex}`)
-                addToContractsList({
+                return {
                     coin: coinIndex,
                     type: typeCoin,
                     id
-                })
-            } else {
-                log(`Coin ${coinIndex} ${name}(${symbol}) not listed in slip44`)
+                }
             }
+            log(`Coin ${coinIndex} ${name}(${symbol}) not listed in slip44`)
             break
     }
-    // })
+    log(`Could not process entry ${symbol}:${name}:${platformType}`)
+    return null
+}
+
+async function processCoin(coin) {
+    const entry = buildCoinEntry(coin)
+    if (!entry) {
+        return
+    }
+    log(`Added entry ${entry.token_id}`)
+    addToContractsList(entry)
 }
 
 // Iniitalize state necessary for faster data looup during script run
