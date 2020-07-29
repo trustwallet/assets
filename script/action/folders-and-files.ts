@@ -1,8 +1,8 @@
 import { readDirSync } from "../common/filesystem";
+import * as config from "../common/config";
 
-const rootDirAllowedFiles = [
-    ".github", "blockchains", "dapps", "media", "node_modules", "script-old", "script", "src", ".gitignore", "azure-pipelines.yml", "jest.config.js", "LICENSE", "package-lock.json", "package.json", "README.md", ".git", "pricing", "Dangerfile", "Gemfile", "Gemfile.lock"
-];
+const defaultRootDirAllowedFiles = [".github", "blockchains", "dapps", "media", "script", "src", ".gitignore", "LICENSE", "package-lock.json", "package.json", "README.md", ".git", "Gemfile", "Gemfile.lock"];
+const rootDirAllowedFiles = config.getConfig("folders_rootdir_allowed_files", defaultRootDirAllowedFiles);
 
 export function check(): {name: string, error: string} {
     var error: string = "";

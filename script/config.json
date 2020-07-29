@@ -2,5 +2,6 @@
     "image_max_logo_width": 512,
     "image_max_logo_height": 512,
     "image_logo_size_kb": 100,
+    "folders_rootdir_allowed_files": [".github", "blockchains", "dapps", "media", "node_modules", "script-old", "script", "src", ".gitignore", "azure-pipelines.yml", "jest.config.js", "LICENSE", "package-lock.json", "package.json", "README.md", ".git", "pricing", "Dangerfile", "Gemfile", "Gemfile.lock"],
     "binance_assets_url": "https://explorer.binance.org/api/v1/assets?page=1&rows=1000"
 }
