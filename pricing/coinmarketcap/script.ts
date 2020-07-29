@@ -51,6 +51,9 @@ const custom: mapTiker[] = [
     {"coin": 60, "type": typeToken, "token_id": "0x49d716DFe60b37379010A75329ae09428f17118d", "id": 4943}, // Pool Dai (plDai)
     {"coin": 60, "type": typeToken, "token_id": "0x589891a198195061Cb8ad1a75357A3b7DbaDD7Bc", "id": 4036}, // Contentos (COS)
     {"coin": 60, "type": typeToken, "token_id": "0x30f271C9E86D2B7d00a6376Cd96A1cFBD5F0b9b3", "id": 5835}, // Decentr (DEC)
+    // CMC returns multiple entries with 0x4Ddc2D193948926D02f9B1fE9e1daa0718270ED5 (2020-07-28), including them in the override to avoid duplicate
+    // 5636 5742 5743 5744 5745 5746
+    {"coin": 60, "type": typeToken, "token_id": "0x4Ddc2D193948926D02f9B1fE9e1daa0718270ED5", "id": 5636},
     // {"coin": 60, "type": typeToken, "token_id": "XXX", "id": XXX}, // XXX (XXX)
 ]
 
