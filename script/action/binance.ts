@@ -11,9 +11,9 @@ import {
 } from "../common/repo-structure";
 
 const binanceChain = "binance"
+const binanceAssetsUrl = config.getConfig("binance_assets_url", "https://explorer.binance.org/api/v1/assets?page=1&rows=1000");
 
 async function retrieveAssetList() {
-    const binanceAssetsUrl = config.getConfig("binanceAssetsUrl", "https://explorer.binance.org/api/v1/assets?page=1&rows=1000");
     console.log(`Retrieving assets info from: ${binanceAssetsUrl}`);
     const { assetInfoList } = await axios.get(binanceAssetsUrl).then(r => r.data);
     console.log(`Retrieved ${assetInfoList.length} asset infos`);

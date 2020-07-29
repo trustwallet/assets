@@ -6,12 +6,13 @@ import {
     getFileSizeInKilobyte
 } from "./filesystem";
 import * as chalk from 'chalk';
+import * as config from "../common/config";
 
 //export const minLogoWidth = 64;
 //export const minLogoHeight = 64;
-export const maxLogoWidth = 512;
-export const maxLogoHeight = 512;
-export const maxLogoSizeInKilobyte = 100;
+export const maxLogoWidth = config.getConfig("image_max_logo_width", 512);
+export const maxLogoHeight = config.getConfig("image_max_logo_height", 512);
+export const maxLogoSizeInKilobyte = config.getConfig("image_logo_size_kb", 100);
 
 export function isDimensionTooLarge(width: number, height: number): boolean {
     return (width > maxLogoWidth) || (height > maxLogoHeight);
