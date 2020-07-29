@@ -56,15 +56,6 @@ import {
 } from "../../script/common/types";
 import { findImagesToFetch } from "../../script/action/binance";
 
-describe("Check repository root dir", () => {
-    const dirActualFiles = readDirSync(".")
-    test("Root should contains only predefined files", () => {
-        dirActualFiles.forEach(file => {
-            expect(rootDirAllowedFiles.indexOf(file), `File "${file}" should not be in root or added to predifined list`).not.toBe(-1)
-        })
-    })
-})
-
 describe(`Test "blockchains" folder`, () => {
     const foundChains = readDirSync(chainsFolderPath)
 

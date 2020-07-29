@@ -15,4 +15,6 @@ jobs:
       with:
         node-version: '12.x'
     - uses: bahmutov/npm-install@v1
+    - name: Run check
+      run: npm run check
     - run: npm t
