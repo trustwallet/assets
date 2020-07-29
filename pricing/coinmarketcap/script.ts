@@ -1,5 +1,5 @@
 import { toChecksum } from "../../src/test/helpers"
-const BluebirbPromise = require("bluebird")
+const BluebirdPromise = require("bluebird")
 const axios = require("axios")
 const chalk = require('chalk')
 const fs = require("fs")
@@ -20,7 +20,7 @@ import { TickerType, mapTiker, PlatformType } from "../../src/test/models";
 // Steps required to run this:
 // 1. (Optional) CMC API key already setup, use yours if needed. Install script deps "npm i" if hasn't been run before.
 // 2. Pull down tokens repo https://github.com/trustwallet/assets and point COIN_IMAGE_BASE_PATH and TOKEN_IMAGE_BASE_PATH to it.
-// 3. Run: `npm run gen:list`
+// 3. Run: `npm run update`
 
 const CMC_PRO_API_KEY = `df781835-e5f4-4448-8b0a-fe31402ab3af` // Free Basic Plan api key is enough to run script
 const CMC_LATEST_BASE_URL = `https://pro-api.coinmarketcap.com/v1/global-metrics/quotes/latest?`
@@ -51,6 +51,9 @@ const custom: mapTiker[] = [
     {"coin": 60, "type": typeToken, "token_id": "0x49d716DFe60b37379010A75329ae09428f17118d", "id": 4943}, // Pool Dai (plDai)
     {"coin": 60, "type": typeToken, "token_id": "0x589891a198195061Cb8ad1a75357A3b7DbaDD7Bc", "id": 4036}, // Contentos (COS)
     {"coin": 60, "type": typeToken, "token_id": "0x30f271C9E86D2B7d00a6376Cd96A1cFBD5F0b9b3", "id": 5835}, // Decentr (DEC)
+    // CMC returns multiple entries with 0x4Ddc2D193948926D02f9B1fE9e1daa0718270ED5 (2020-07-28), including them in the override to avoid duplicate
+    // 5636 5742 5743 5744 5745 5746
+    {"coin": 60, "type": typeToken, "token_id": "0x4Ddc2D193948926D02f9B1fE9e1daa0718270ED5", "id": 5636},
     // {"coin": 60, "type": typeToken, "token_id": "XXX", "id": XXX}, // XXX (XXX)
 ]
 
@@ -58,14 +61,13 @@ const allContracts: mapTiker[] = [] // Temp storage for mapped assets
 let bnbOwnerToSymbol = {} // e.g: bnb1tawge8u97slduhhtumm03l4xl4c46dwv5m9yzk: WISH-2D5
 let bnbOriginalSymbolToSymbol = {} // e.g: WISH: WISH-2D5
 
-run()
 async function run() {
     try {
         await Promise.all([initState(), setBinanceTokens()])
         const [totalCrypto, coins] = await Promise.all([getTotalActiveCryptocurrencies(), getTickers()])
         // setBIP44Constants()
         log(`Found ${totalCrypto} on CMC`, chalk.yellowBright)
-        await BluebirbPromise.mapSeries(coins, processCoin)
+        await BluebirdPromise.mapSeries(coins, processCoin)
 
         addCustom()
         printContracts()
@@ -74,11 +76,10 @@ async function run() {
     }
 }
 
-async function processCoin(coin) {
+function buildCoinEntry(coin: any): any {
     const { id, symbol, name, platform } = coin
     const platformType: PlatformType = platform == null ? "" : platform.name
     log(`${symbol}:${platformType}`)
-    // await BluebirbPromise.mapSeries(types, async type => {
     switch (platformType) {
         case PlatformType.Ethereum:
             // log(`Ticker ${name}(${symbol}) is a token with address ${address} and CMC id ${id}`)
@@ -86,13 +87,12 @@ async function processCoin(coin) {
                 try {
                     const checksum = toChecksum(platform.token_address)
                     if (!isAddressInBlackList("ethereum", checksum)) {
-                        log(`Added ${checksum}`)
-                        addToContractsList({
+                        return {
                             coin: 60,
                             type: typeToken,
                             token_id: checksum,
                             id
-                        })
+                        }
                     }
                 } catch (error) {
                     console.log(`Etheruem platform error`, error)
@@ -100,6 +100,7 @@ async function processCoin(coin) {
                 }
             }
             break
+
         case PlatformType.Binance:
             if (symbol === "BNB") {
                 break
@@ -107,27 +108,24 @@ async function processCoin(coin) {
             const ownerAddress = platform.token_address.trim()
             log(`Symbol ${symbol}:${ownerAddress}:${id}`)
             if (ownerAddress && (ownerAddress in bnbOwnerToSymbol)) {
-                log(`Added ${bnbOwnerToSymbol[ownerAddress]}`)
-                addToContractsList({
+                return {
                     coin: 714,
                     type: typeToken,
                     token_id: bnbOwnerToSymbol[ownerAddress],
                     id
-                })
-                break
+                }
             }
 
             if (symbol in bnbOriginalSymbolToSymbol) {
-                log(`Added Binance ${bnbOriginalSymbolToSymbol[symbol]}`)
-                addToContractsList({
+                return {
                     coin: 714,
                     type: typeToken,
                     token_id: bnbOriginalSymbolToSymbol[symbol].trim(),
                     id
-                })
-                break
+                }
             }
             break
+
         case PlatformType.TRON:
             if (symbol === "TRX") {
                 break
@@ -135,14 +133,15 @@ async function processCoin(coin) {
             const tokenAddr = platform.token_address.trim()
             log(`tron: ${tokenAddr}`)
             if (tokenAddr.length > 0) {
-                addToContractsList({
+                return {
                     coin: 195,
                     type: typeToken,
                     token_id: tokenAddr,
                     id
-                })
+                }
             }
             break
+
         // case PlatformType.VeChain:
         //         if (symbol === "VET") {
         //             break
@@ -157,22 +156,37 @@ async function processCoin(coin) {
         //             id
         //         })
         //         break
+
         default:
             const coinIndex = getSlip44Index(symbol, name)
 
             if (coinIndex >= 0) {
                 log(`Ticker ${name}(${symbol}) is a coin with id ${coinIndex}`)
-                addToContractsList({
+                return {
                     coin: coinIndex,
                     type: typeCoin,
                     id
-                })
-            } else {
-                log(`Coin ${coinIndex} ${name}(${symbol}) not listed in slip44`)
+                }
             }
+            log(`Coin ${coinIndex} ${name}(${symbol}) not listed in slip44`)
             break
     }
-    // })
+    log(`Could not process entry ${symbol}:${name}:${platformType}`)
+    return null
+}
+
+async function processCoin(coin) {
+    const entry = buildCoinEntry(coin)
+    if (!entry) {
+        return
+    }
+    // check if it is in custom, in that case omit it
+    if (entry.token_id && custom.find(elem => elem.coin == entry.coin && elem.token_id === entry.token_id)) {
+        log(`Entry ${entry.token_id} is in custom, omitting`)
+        return
+    }
+    addToContractsList(entry)
+    log(`Added entry ${entry.token_id}`)
 }
 
 // Iniitalize state necessary for faster data looup during script run
@@ -337,3 +351,7 @@ function log(string, cb?) {
 //         }
 //     })
 // }
+
+export async function update() {
+    await run();
+}
