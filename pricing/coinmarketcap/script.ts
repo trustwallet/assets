@@ -178,8 +178,13 @@ async function processCoin(coin) {
     if (!entry) {
         return
     }
-    log(`Added entry ${entry.token_id}`)
+    // check if it is in custom, in that case omit it
+    if (entry.token_id && custom.find(elem => elem.coin == entry.coin && elem.token_id === entry.token_id)) {
+        log(`Entry ${entry.token_id} is in custom, omitting`)
+        return
+    }
     addToContractsList(entry)
+    log(`Added entry ${entry.token_id}`)
 }
 
 // Iniitalize state necessary for faster data looup during script run
