@@ -7,8 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        with:
-          token: ${{ secrets.DANGER_GITHUB_API_TOKEN }}
       - uses: actions/setup-node@v1
         with:
           node-version: 12
