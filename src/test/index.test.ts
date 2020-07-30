@@ -2,14 +2,12 @@ const eztz = require('eztz-lib')
 
 import {
     Binance, Cosmos, Tezos, Tron, IoTeX, Waves, Kava, Terra,
-    assetFolderAllowedFiles,
     chainFolderAllowedFiles,
     chainsFolderPath,
     ethSidechains,
     findFiles,
     getBinanceBEP2Symbols,
     getChainAssetLogoPath,
-    getChainAssetPath,
     getChainAssetsPath,
     getChainFolderFilesList,
     getChainBlacklistPath,
@@ -58,31 +56,8 @@ import { findImagesToFetch } from "../../script/action/binance";
 describe(`Test "blockchains" folder`, () => {
     const foundChains = readDirSync(chainsFolderPath)
 
-    test("Chain folder must have lowercase naming", () => {
-        foundChains.forEach(chain => {
-            expect(isLowerCase(chain), `Chain folder must be in lowercase "${chain}"`).toBe(true)
-        })
-    })
-
-    describe(`Asset folder should contain only predefined list of files`, () => {
-        readDirSync(chainsFolderPath).forEach(chain => {
-            const assetsPath = getChainAssetsPath(chain)
-
-            if (isPathExistsSync(assetsPath)) {
-                test(`Test asset folder allowed files on chain: ${chain}`, () => {
-                readDirSync(assetsPath).forEach(address => {
-                    const assetFiles = getChainAssetPath(chain, address)
-                    readDirSync(assetFiles).forEach(assetFolderFile => {
-                        expect(assetFolderAllowedFiles.indexOf(assetFolderFile),`File "${assetFolderFile}" not allowed at this path: ${assetsPath}`).not.toBe(-1)
-                    })
-                }) 
-            })
-            }  
-        })
-    })
-
     describe(`Chain folder should contain only predefined list of files`, () => {
-        readDirSync(chainsFolderPath).forEach(chain => {
+        foundChains.forEach(chain => {
             getChainFolderFilesList(chain).forEach(file => {
                 expect(chainFolderAllowedFiles.indexOf(file),`File "${typeof file}" ${file} not allowed in chain folder: ${chain}`).not.toBe(-1)
             })

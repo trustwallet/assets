@@ -15,6 +15,8 @@ const whiteList = `whitelist.${jsonExtension}`;
 const blackList = `blacklist.${jsonExtension}`;
 export const validatorsList = `${listName}.${jsonExtension}`
 
+export const assetFolderAllowedFiles = [logoName, infoName];
+
 export const chainsPath: string = path.join(process.cwd(), '/blockchains');
 export const getChainPath = (chain: string): string => `${chainsPath}/${chain}`;
 export const getChainLogoPath = (chain: string): string => `${getChainPath(chain)}/info/${logoFullName}`;
