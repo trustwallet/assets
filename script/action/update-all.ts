@@ -24,14 +24,20 @@ function checkList(actions: ActionInterface[]): number {
     var returnCode = 0;
 
     actions.forEach(action => {
-        if (action.check) {
-            console.log(`Running check '${action.getName()}'...`);
-            const error = action.check();
-            if (error && error.length > 0) {
-                console.log(`Check Error: '${action.getName()}': '${error}'`);
-                returnCode = 1;
-            } else {
-                console.log(`Check '${action.getName()}' ok`);
+        if (action.getChecks) {
+            const steps = action.getChecks();
+            if (steps && steps.length > 0) {
+                console.log(`Action '${action.getName()}' has ${steps.length} check steps`);
+                steps.forEach(step => {
+                    console.log(`Running check step '${step.getName()}'...`);
+                    const error = step.check();
+                    if (error && error.length > 0) {
+                        console.log(`Check step Error: '${step.getName()}': '${error}'`);
+                        returnCode = 1;
+                    } else {
+                        console.log(`Check step '${step.getName()}' ok`);
+                    }
+                });
             }
         }
     });

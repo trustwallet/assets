@@ -63,7 +63,7 @@ function checkAddressChecksums() {
 
 export class EthForks implements ActionInterface {
     getName(): string { return "Ethereum forks"; }
-    check = null;
+    getChecks = null;
     async fix(): Promise<void> {
         formatInfos();
         checkAddressChecksums();

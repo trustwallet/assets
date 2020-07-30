@@ -76,7 +76,7 @@ async function fetchMissingImages(toFetch: any[]): Promise<string[]> {
 
 export class Binance implements ActionInterface {
     getName(): string { return "Binance chain"; }
-    check = null;
+    getChecks = null;
     fix = null;
     async update(): Promise<void> {
         const assetInfoList = await retrieveAssetList();

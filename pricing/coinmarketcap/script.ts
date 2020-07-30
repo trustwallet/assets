@@ -355,7 +355,7 @@ function log(string, cb?) {
 
 export class Coinmarketcap implements ActionInterface {
     getName(): string { return "Coinmarketcap"; }
-    check = null;
+    getChecks = null;
     fix = null;
     async update(): Promise<void> {
         await run();

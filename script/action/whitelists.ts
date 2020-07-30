@@ -37,7 +37,7 @@ function formatWhiteBlackList() {
 
 export class Whitelist implements ActionInterface {
     getName(): string { return "Whitelists"; }
-    check = null;
+    getChecks = null;
     async fix(): Promise<void> {
         formatWhiteBlackList();
     }

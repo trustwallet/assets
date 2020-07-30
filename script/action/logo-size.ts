@@ -59,7 +59,7 @@ async function downsize(chains) {
 
 export class LogoSize implements ActionInterface {
     getName(): string { return "Logo sizes"; }
-    check = null;
+    getChecks = null;
     async fix(): Promise<void> {
         const foundChains = readDirSync(chainsPath);
         await downsize(foundChains);

@@ -12,7 +12,7 @@ function formatValidators() {
 
 export class Validators implements ActionInterface {
     getName(): string { return "Validators"; }
-    check = null;
+    getChecks = null;
     async fix(): Promise<void> {
         formatValidators();
     }

@@ -67,7 +67,7 @@ async function gen_validators_tezos() {
 
 export class TezosAction implements ActionInterface {
     getName(): string { return "Tezos"; }
-    check = null;
+    getChecks = null;
     fix = null;
     async update(): Promise<void> {
         await gen_validators_tezos();
