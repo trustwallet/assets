@@ -16,6 +16,7 @@ import {
     getChainWhitelist,
 } from "../../src/test/helpers";
 import { TickerType, mapTiker, PlatformType } from "../../src/test/models";
+import { ActionInterface } from "../../script/action/interface";
 
 // Steps required to run this:
 // 1. (Optional) CMC API key already setup, use yours if needed. Install script deps "npm i" if hasn't been run before.
@@ -352,6 +353,11 @@ function log(string, cb?) {
 //     })
 // }
 
-export async function update() {
-    await run();
+export class Coinmarketcap implements ActionInterface {
+    getName(): string { return "Coinmarketcap"; }
+    check = null;
+    fix = null;
+    async update(): Promise<void> {
+        await run();
+    }
 }

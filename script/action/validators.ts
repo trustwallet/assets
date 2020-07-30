@@ -1,6 +1,7 @@
 import { stakingChains } from "../common/blockchains";
 import { getChainValidatorsListPath } from "../common/repo-structure";
 import { formatSortJsonFile } from "../common/json";
+import { ActionInterface } from "./interface";
 
 function formatValidators() {
     stakingChains.forEach(chain => {    
@@ -9,6 +10,11 @@ function formatValidators() {
     })
 }
 
-export async function fix() {
-    formatValidators();
+export class Validators implements ActionInterface {
+    getName(): string { return "Validators"; }
+    check = null;
+    async fix(): Promise<void> {
+        formatValidators();
+    }
+    update = null;
 }

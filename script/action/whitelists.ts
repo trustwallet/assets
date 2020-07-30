@@ -2,6 +2,7 @@ import { chainsWithBlacklist } from "../common/blockchains";
 import { getChainAssetsList, getChainWhitelistPath, getChainBlacklistPath } from "../common/repo-structure";
 import { readFileSync, writeFileSync } from "../common/filesystem";
 import { sortElements, makeUnique, arrayDiff } from "../common/types";
+import { ActionInterface } from "./interface";
 
 function formatWhiteBlackList() {
     chainsWithBlacklist.forEach(async chain => {
@@ -34,6 +35,11 @@ function formatWhiteBlackList() {
     })
 }
 
-export async function fix() {
-    formatWhiteBlackList();
+export class Whitelist implements ActionInterface {
+    getName(): string { return "Whitelists"; }
+    check = null;
+    async fix(): Promise<void> {
+        formatWhiteBlackList();
+    }
+    update = null;
 }

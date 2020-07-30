@@ -13,6 +13,7 @@ import {
     isPathExistsSync
 } from "../common/filesystem";
 import { resizeIfTooLarge } from "../common/image";
+import { ActionInterface } from "./interface";
 
 async function downsize(chains) {
     console.log(`Checking all logos for downsizing ...`);
@@ -56,7 +57,12 @@ async function downsize(chains) {
     console.log(`Checking logos completed, ${totalCountChecked} logos checked, ${totalCountUpdated} logos updated`);
 }
 
-export async function fix() {
-    const foundChains = readDirSync(chainsPath);
-    await downsize(foundChains);
+export class LogoSize implements ActionInterface {
+    getName(): string { return "Logo sizes"; }
+    check = null;
+    async fix(): Promise<void> {
+        const foundChains = readDirSync(chainsPath);
+        await downsize(foundChains);
+    }
+    update = null;
 }

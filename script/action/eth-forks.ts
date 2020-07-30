@@ -18,6 +18,7 @@ import {
     readDirSync
 } from "../common/filesystem";
 import { isChecksum, toChecksum } from "../common/eth-web3";
+import { ActionInterface } from "./interface";
 
 function formatInfos() {
     console.log(`Formatting info files...`);
@@ -60,7 +61,12 @@ function checkAddressChecksums() {
     });
 }
 
-export async function fix() {
-    formatInfos();
-    checkAddressChecksums();
+export class EthForks implements ActionInterface {
+    getName(): string { return "Ethereum forks"; }
+    check = null;
+    async fix(): Promise<void> {
+        formatInfos();
+        checkAddressChecksums();
+    }
+    update = null;
 }

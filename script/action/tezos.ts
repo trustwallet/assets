@@ -7,6 +7,7 @@ import {
 import { Tezos } from "../common/blockchains";
 import { readFileSync } from "../common/filesystem";
 import { writeJsonFile } from "../common/json";
+import { ActionInterface } from "./interface";
 
 import {
     BakingBadBaker,
@@ -64,6 +65,11 @@ async function gen_validators_tezos() {
     writeJsonFile(getChainValidatorsListPath(Tezos), newbakers)
 }
 
-export async function update() {
-    await gen_validators_tezos();
+export class TezosAction implements ActionInterface {
+    getName(): string { return "Tezos"; }
+    check = null;
+    fix = null;
+    async update(): Promise<void> {
+        await gen_validators_tezos();
+    }
 }

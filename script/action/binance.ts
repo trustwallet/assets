@@ -4,6 +4,7 @@ import * as fs from "fs";
 import * as path from "path";
 import * as chalk from 'chalk';
 import * as config from "../common/config";
+import { ActionInterface } from "./interface";
 
 import {
     getChainAssetLogoPath,
@@ -73,15 +74,20 @@ async function fetchMissingImages(toFetch: any[]): Promise<string[]> {
     return fetchedAssets;
 }
 
-export async function update() {
-    const assetInfoList = await retrieveAssetList();
-    const blacklist: string[] = require(getChainBlacklistPath(binanceChain));
-
-    const toFetch = findImagesToFetch(assetInfoList, blacklist);
-    const fetchedAssets = await fetchMissingImages(toFetch);
-
-    if (fetchedAssets.length > 0) {
-        console.log(`Fetched ${fetchedAssets.length} asset(s):`);
-        fetchedAssets.forEach(asset => console.log(`  ${asset}`));
+export class Binance implements ActionInterface {
+    getName(): string { return "Binance chain"; }
+    check = null;
+    fix = null;
+    async update(): Promise<void> {
+        const assetInfoList = await retrieveAssetList();
+        const blacklist: string[] = require(getChainBlacklistPath(binanceChain));
+    
+        const toFetch = findImagesToFetch(assetInfoList, blacklist);
+        const fetchedAssets = await fetchMissingImages(toFetch);
+    
+        if (fetchedAssets.length > 0) {
+            console.log(`Fetched ${fetchedAssets.length} asset(s):`);
+            fetchedAssets.forEach(asset => console.log(`  ${asset}`));
+        }
     }
 }
