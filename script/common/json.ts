@@ -4,6 +4,16 @@ import {
 } from "./filesystem";
 import { sortElements } from "./types";
 
+export function isValidJSON(path: string): boolean {
+    try {
+        let rawdata = readFileSync(path);
+        JSON.parse(rawdata);
+        return true;
+    } catch {
+    }
+    return false;
+}
+
 export function formatJsonFile(filename: string, silent: boolean = false) {
     const jsonContent = JSON.parse(readFileSync(filename));
     writeFileSync(filename, JSON.stringify(jsonContent, null, 4));

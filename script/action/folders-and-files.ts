@@ -38,23 +38,6 @@ export class FoldersFiles implements ActionInterface {
                 }
             },
             {
-                getName: () => { return "Chain folders have logo, and correct size"},
-                check: () => {
-                    var error: string = "";
-                    foundChains.forEach(chain => {
-                        const chainLogoPath = getChainLogoPath(chain);
-                        if (!isPathExistsSync(chainLogoPath)) {
-                            error += `File missing at path "${chainLogoPath}"\n`;
-                        }
-                        const [isOk, error1] = isLogoDimensionOK(chainLogoPath);
-                        if (!isOk) {
-                            error += error1 + "\n";
-                        }
-                    });
-                    return error;
-                }
-            },
-            {
                 getName: () => { return "Chain folders are lowercase, contain only predefined list of files"},
                 check: () => {
                     var error: string = "";
@@ -67,6 +50,23 @@ export class FoldersFiles implements ActionInterface {
                                 error += `File '${file}' not allowed in chain folder: ${chain}\n`;
                             }
                         });
+                    });
+                    return error;
+                }
+            },
+            {
+                getName: () => { return "Chain folders have logo, and correct size"},
+                check: () => {
+                    var error: string = "";
+                    foundChains.forEach(chain => {
+                        const chainLogoPath = getChainLogoPath(chain);
+                        if (!isPathExistsSync(chainLogoPath)) {
+                            error += `File missing at path "${chainLogoPath}"\n`;
+                        }
+                        const [isOk, error1] = isLogoDimensionOK(chainLogoPath);
+                        if (!isOk) {
+                            error += error1 + "\n";
+                        }
                     });
                     return error;
                 }

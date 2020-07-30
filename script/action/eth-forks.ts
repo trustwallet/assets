@@ -8,17 +8,21 @@ import {
     isChainAssetInfoExistSync,
     logoName,
     logoExtension,
-    logoFullName
+    logoFullName,
+    getChainAssetLogoPath
 } from "../common/repo-structure";
 import { formatJsonFile } from "../common/json";
 import {
     getFileName,
     getFileExt,
     gitMove,
-    readDirSync
+    readDirSync,
+    isPathExistsSync,
 } from "../common/filesystem";
 import { isChecksum, toChecksum } from "../common/eth-web3";
-import { ActionInterface } from "./interface";
+import { ActionInterface, CheckStepInterface } from "./interface";
+import { isLogoDimensionOK, isLogoSizeOK } from "../common/image";
+import { isAssetInfoOK } from "../common/asset-info";
 
 function formatInfos() {
     console.log(`Formatting info files...`);
@@ -63,7 +67,46 @@ function checkAddressChecksums() {
 
 export class EthForks implements ActionInterface {
     getName(): string { return "Ethereum forks"; }
-    getChecks = null;
+    getChecks(): CheckStepInterface[] {
+        return [
+            {
+                getName: () => { return "Ethereum fork folder structure"},
+                check: () => {
+                    var error: string = "";
+                    ethForkChains.forEach(chain => {
+                        const assetsFolder = getChainAssetsPath(chain);
+                        const assetsList = getChainAssetsList(chain);
+                        assetsList.forEach(address => {
+                            const assetPath = `${assetsFolder}/${address}`;
+                            if (!isPathExistsSync(assetPath)) {
+                                error += `Expect directory at path: ${assetPath}\n`;
+                            }
+                            if (!isChecksum(address)) {
+                                error += `Expect asset at path ${assetPath} in checksum\n`;
+                            }
+                            const assetLogoPath = getChainAssetLogoPath(chain, address);
+                            if (!isPathExistsSync(assetLogoPath)) {
+                                error += `Missing file at path '${assetLogoPath}'\n`;
+                            }
+                            const [isDimensionOK, dimensionMsg] = isLogoDimensionOK(assetLogoPath);
+                            if (!isDimensionOK) {
+                                error += dimensionMsg + "\n";
+                            }
+                            const [isLogoOK, sizeMsg] = isLogoSizeOK(assetLogoPath);
+                            if (!isLogoOK) {
+                                error += sizeMsg + "\n";
+                            }
+                            const [isInfoOK, infoMsg] = isAssetInfoOK(chain, address);
+                            if (!isInfoOK) {
+                                error += infoMsg + "\n";
+                            }
+                        });
+                    });
+                    return error;
+                }
+            },
+        ];
+    }
     async fix(): Promise<void> {
         formatInfos();
         checkAddressChecksums();

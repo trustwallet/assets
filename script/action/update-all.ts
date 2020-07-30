@@ -48,7 +48,7 @@ function checkActionList(actions: ActionInterface[]): number {
             if (action.getChecks) {
                 const steps = action.getChecks();
                 if (steps && steps.length > 0) {
-                    console.log(`Action '${action.getName()}' has ${steps.length} check steps`);
+                    console.log(`   Action '${action.getName()}' has ${steps.length} check steps`);
                     const ret1 = checkStepList(steps);
                     if (ret1 != 0) {
                         returnCode = ret1;

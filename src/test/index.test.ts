@@ -3,7 +3,6 @@ const eztz = require('eztz-lib')
 import {
     Binance, Cosmos, Tezos, Tron, Waves, Kava, Terra,
     chainsFolderPath,
-    ethSidechains,
     findFiles,
     getBinanceBEP2Symbols,
     getChainAssetLogoPath,
@@ -13,18 +12,14 @@ import {
     getChainValidatorsAssets,
     getChainValidatorsListPath,
     getChainWhitelistPath,
-    getChainAssetsList,
     getChainValidatorsList,
     findDuplicate,
     findCommonElementOrDuplicate,
     isLogoDimensionOK,
-    isLogoSizeOK,
     isLowerCase,
-    isPathDir,
     isPathExistsSync,
     isTRC10, isTRC20, isWavesAddress,
     isValidJSON,
-    isAssetInfoOK,
     isValidatorHasAllKeys,
     pricingFolderPath,
     readDirSync,
@@ -52,34 +47,6 @@ import {
 import { findImagesToFetch } from "../../script/action/binance";
 
 describe(`Test "blockchains" folder`, () => {
-    describe("Check Ethereum side-chain folders", () => {
-        ethSidechains.forEach(chain => {
-            const assetsFolder = getChainAssetsPath(chain)
-            const assetsList = getChainAssetsList(chain)
-            test(`Test chain ${chain} folder, folder (${assetsList.length})`, () => {
-                assetsList.forEach(address => {
-                    const assetPath = `${assetsFolder}/${address}`
-                    expect(isPathDir(assetPath), `Expect directory at path: ${assetPath}`).toBe(true)
-
-                    const checksum = isChecksum(address)
-                    expect(checksum, `Expect asset at path ${assetPath} in checksum`).toBe(true)
-
-                    const assetLogoPath = getChainAssetLogoPath(chain, address)
-                    expect(isPathExistsSync(assetLogoPath), `Missing file at path "${assetLogoPath}"`).toBe(true)
-
-                    const [isDimensionOK, dimensionMsg] = isLogoDimensionOK(assetLogoPath)
-                    expect(isDimensionOK, dimensionMsg).toBe(true)
-
-                    const [isLogoOK, sizeMsg] = isLogoSizeOK(assetLogoPath)
-                    expect(isLogoOK, sizeMsg).toBe(true)
-
-                    const [isInfoOK, InfoMsg] = isAssetInfoOK(chain, address)
-                    expect(isInfoOK, InfoMsg).toBe(true)
-                })
-            })
-        })
-    })
-
     describe(`Check "binace" folder`, () => {
         it("Asset must exist on chain", async () => {
             const tokenSymbols = await getBinanceBEP2Symbols()

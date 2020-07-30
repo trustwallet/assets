@@ -50,6 +50,14 @@ async function compressTinyPNG(path: string) {
     await source.toFile(path);
 }
 
+export function isLogoSizeOK(path: string): [boolean, string] {
+    const sizeKilobyte = getFileSizeInKilobyte(path);
+    if (sizeKilobyte > maxLogoSizeInKilobyte) {
+        return [false, `Logo ${path} is too large, ${sizeKilobyte} kB instead of ${maxLogoSizeInKilobyte}`];
+    }
+    return [true, ''];
+}
+
 // return true if image updated
 export async function resizeIfTooLarge(path: string): Promise<boolean> {
     let updated: boolean = false;
