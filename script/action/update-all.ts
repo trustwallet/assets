@@ -25,13 +25,13 @@ async function checkStepList(steps: CheckStepInterface[]): Promise<number> {
     var returnCode = 0;
     await bluebird.each(steps, async (step) => {
         try {
-            console.log(`     Running check step '${step.getName()}'...`);
+            //console.log(`     Running check step '${step.getName()}'...`);
             const error = await step.check();
             if (error && error.length > 0) {
                 console.log(`-  ${chalk.red('X')} '${step.getName()}': '${error}'`);
                 returnCode = 1;
             } else {
-                console.log(`-  ${chalk.green('✓')} '${step.getName()}' ok`);
+                console.log(`-  ${chalk.green('✓')} '${step.getName()}' OK`);
             }
         } catch (error) {
             console.log(`-  ${chalk.red('X')} '${step.getName()}': Caught error: ${error.message}`);
@@ -53,6 +53,8 @@ async function checkActionList(actions: ActionInterface[]): Promise<number> {
                     const ret1 = await checkStepList(steps);
                     if (ret1 != 0) {
                         returnCode = ret1;
+                    } else {
+                        console.log(`- ${chalk.green('✓')} Action '${action.getName()}' OK, all ${steps.length} steps`);
                     }
                 }
             }
