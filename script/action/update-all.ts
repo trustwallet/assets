@@ -67,13 +67,13 @@ async function checkActionList(actions: ActionInterface[]): Promise<number> {
     return returnCode;
 }
 
-function fixByList(actions: ActionInterface[]) {
+async function fixByList(actions: ActionInterface[]) {
     console.log("Running fixes...");
-    actions.forEach(action => {
+    await bluebird.each(actions, async (action) => {
         try {
             if (action.fix) {
                 console.log(`Fix '${action.getName()}':`);
-                action.fix();
+                await action.fix();
             }
         } catch (error) {
             console.log(`Caught error: ${error.message}`);
@@ -82,13 +82,13 @@ function fixByList(actions: ActionInterface[]) {
     console.log("All fixes done.");
 }
 
-function updateByList(actions: ActionInterface[]) {
+async function updateByList(actions: ActionInterface[]) {
     console.log("Running updates (using external data sources) ...");
-    actions.forEach(action => {
+    await bluebird.each(actions, async (action) => {
         try {
             if (action.update) {
                 console.log(`Update '${action.getName()}':`);
-                action.update();
+                await action.update();
             }
         } catch (error) {
             console.log(`Caught error: ${error.message}`);
@@ -101,10 +101,10 @@ export async function checkAll(): Promise<number> {
     return await checkActionList(actionList);
 }
 
-export function fixAll() {
-    fixByList(actionList);
+export async function fixAll() {
+    await fixByList(actionList);
 }
 
-export function updateAll() {
-    updateByList(actionList);
+export async function updateAll() {
+    await updateByList(actionList);
 }
