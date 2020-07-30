@@ -8,14 +8,19 @@ import {
 import * as chalk from 'chalk';
 import * as config from "../common/config";
 
-//export const minLogoWidth = 64;
-//export const minLogoHeight = 64;
+export const minLogoWidth = config.getConfig("image_min_logo_width", 64);
+export const minLogoHeight = config.getConfig("image_min_logo_height", 64);
 export const maxLogoWidth = config.getConfig("image_max_logo_width", 512);
 export const maxLogoHeight = config.getConfig("image_max_logo_height", 512);
 export const maxLogoSizeInKilobyte = config.getConfig("image_logo_size_kb", 100);
 
 export function isDimensionTooLarge(width: number, height: number): boolean {
     return (width > maxLogoWidth) || (height > maxLogoHeight);
+}
+
+export function isDimensionOK(width: number, height: number): boolean {
+    return (width <= maxLogoWidth) && (height <= maxLogoHeight) &&
+        (width >= minLogoWidth) && (height >= minLogoHeight);
 }
 
 export function calculateTargetSize(srcWidth: number, srcHeight: number, targetWidth: number, targetHeight: number): {width: number, height: number} {
@@ -30,6 +35,14 @@ export function calculateTargetSize(srcWidth: number, srcHeight: number, targetW
 }
 
 const getImageDimensions = (path: string) => image_size.imageSize(path);
+
+export function isLogoDimensionOK(path: string): [boolean,  string] {
+    const { width, height } =  getImageDimensions(path)
+    if (isDimensionOK(width, height)) {
+        return [true, ""];
+    }
+    return [false, `Image at path ${path} must have dimensions: min: ${minLogoWidth}x${minLogoHeight} and max: ${maxLogoWidth}x${maxLogoHeight} instead ${width}x${height}`];
+}
 
 async function compressTinyPNG(path: string) {
     console.log(`Compressing image via tinypng at path ${path}`);

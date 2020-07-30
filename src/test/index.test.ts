@@ -13,7 +13,6 @@ import {
     getChainAssetsPath,
     getChainFolderFilesList,
     getChainBlacklistPath,
-    getChainLogoPath,
     getChainValidatorAssetLogoPath,
     getChainValidatorsAssets,
     getChainValidatorsListPath,
@@ -34,7 +33,6 @@ import {
     pricingFolderPath,
     readDirSync,
     readFileSync,
-    rootDirAllowedFiles,
     stakingChains,
 } from "./helpers"
 import { ValidatorModel, mapTiker, TickerType } from "./models";
@@ -46,6 +44,7 @@ import {
 } from "../../script/common/eth-web3";
 import {
     isDimensionTooLarge,
+    isDimensionOK,
     calculateTargetSize
 } from "../../script/common/image";
 import {
@@ -58,15 +57,6 @@ import { findImagesToFetch } from "../../script/action/binance";
 
 describe(`Test "blockchains" folder`, () => {
     const foundChains = readDirSync(chainsFolderPath)
-
-    test(`Chain should have "logo.png" image`, () => {
-        foundChains.forEach(chain => {
-            const chainLogoPath = getChainLogoPath(chain)
-            expect(isPathExistsSync(chainLogoPath), `File missing at path "${chainLogoPath}"`).toBe(true)
-            const [isOk, msg] = isLogoDimensionOK(chainLogoPath)
-            expect(isOk, msg).toBe(true)
-        })
-    })
 
     test("Chain folder must have lowercase naming", () => {
         foundChains.forEach(chain => {
@@ -484,6 +474,16 @@ describe("Test image helpers", () => {
         expect(isDimensionTooLarge(800, 800), `800x800`).toBe(true);
         expect(isDimensionTooLarge(256, 800), `256x800`).toBe(true);
         expect(isDimensionTooLarge(800, 256), `800x256`).toBe(true);
+    });
+    test(`Test isDimensionOK`, () => {
+        expect(isDimensionOK(256, 256), `256x256`).toBe(true);
+        expect(isDimensionOK(64, 64), `64x64`).toBe(true);
+        expect(isDimensionOK(800, 800), `800x800`).toBe(false);
+        expect(isDimensionOK(256, 800), `256x800`).toBe(false);
+        expect(isDimensionOK(800, 256), `800x256`).toBe(false);
+        expect(isDimensionOK(60, 60), `60x60`).toBe(false);
+        expect(isDimensionOK(64, 60), `64x60`).toBe(false);
+        expect(isDimensionOK(60, 64), `60x64`).toBe(false);
     });
     test(`Test calculateReducedSize`, () => {
         expect(calculateTargetSize(256, 256, 512, 512), `small 1.0`).toEqual({width: 512, height: 512});
