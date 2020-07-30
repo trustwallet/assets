@@ -99,6 +99,7 @@ export class BinanceAction implements ActionInterface {
                             error += `Asset ${asset} missing on chain\n`;
                         }
                     });
+                    console.log(`     ${assets.length} assets checked.`);
                     return error;
                 }
             },
