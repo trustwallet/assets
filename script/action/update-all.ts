@@ -7,18 +7,27 @@ import * as validators from "./validators";
 import * as whitelists from "./whitelists";
 import * as coinmarketcap from "../../pricing/coinmarketcap/script";
 
-export function checkAll(): number {
+function checkList(checks: any[]): number {
     console.log("Running checks...");
     var returnCode = 0;
 
-    const {name, error} = foldersfiles.check();
-    if (error && error.length > 0) {
-        console.log(`Check Error: "${name}": "${error}"`);
-        returnCode = 1;
-    }
-    console.log(`Check "${name}" ok`);
+    checks.forEach(check => {
+        const {name, error} = check();
+        if (error && error.length > 0) {
+            console.log(`Check Error: "${check.name}/${name}": "${error}"`);
+            returnCode = 1;
+        } else {
+            console.log(`Check "${check.name}/${name}" ok`);
+        }
+    });
 
     return returnCode;
+}
+
+export function checkAll(): number {
+    return checkList([
+        foldersfiles.check
+    ]);
 }
 
 export function fixAll() {
