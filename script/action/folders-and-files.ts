@@ -9,7 +9,9 @@ import {
     getChainLogoPath,
     getChainAssetsPath,
     getChainAssetPath,
-    assetFolderAllowedFiles
+    assetFolderAllowedFiles,
+    getChainFolderFilesList,
+    chainFolderAllowedFiles
 } from "../common/repo-structure";
 import { isLogoDimensionOK } from "../common/image";
 import { isLowerCase } from "../common/types";
@@ -36,13 +38,10 @@ export class FoldersFiles implements ActionInterface {
                 }
             },
             {
-                getName: () => { return "Chain folders are lowercase, have logo, and correct size"},
+                getName: () => { return "Chain folders have logo, and correct size"},
                 check: () => {
                     var error: string = "";
                     foundChains.forEach(chain => {
-                        if (!isLowerCase(chain)) {
-                            error += `Chain folder must be in lowercase "${chain}"\n`;
-                        }
                         const chainLogoPath = getChainLogoPath(chain);
                         if (!isPathExistsSync(chainLogoPath)) {
                             error += `File missing at path "${chainLogoPath}"\n`;
@@ -51,6 +50,23 @@ export class FoldersFiles implements ActionInterface {
                         if (!isOk) {
                             error += error1 + "\n";
                         }
+                    });
+                    return error;
+                }
+            },
+            {
+                getName: () => { return "Chain folders are lowercase, contain only predefined list of files"},
+                check: () => {
+                    var error: string = "";
+                    foundChains.forEach(chain => {
+                        if (!isLowerCase(chain)) {
+                            error += `Chain folder must be in lowercase "${chain}"\n`;
+                        }
+                        getChainFolderFilesList(chain).forEach(file => {
+                            if (!(chainFolderAllowedFiles.indexOf(file) >= 0)) {
+                                error += `File '${file}' not allowed in chain folder: ${chain}\n`;
+                            }
+                        });
                     });
                     return error;
                 }
@@ -65,7 +81,7 @@ export class FoldersFiles implements ActionInterface {
                             readDirSync(assetsPath).forEach(address => {
                                 const assetFiles = getChainAssetPath(chain, address)
                                 readDirSync(assetFiles).forEach(assetFolderFile => {
-                                    if (assetFolderAllowedFiles.indexOf(assetFolderFile) >= 0) {
+                                    if (!(assetFolderAllowedFiles.indexOf(assetFolderFile) >= 0)) {
                                         error += `File '${assetFolderFile}' not allowed at this path: ${assetsPath}\n`;
                                     }
                                 });

@@ -15,8 +15,14 @@ const whiteList = `whitelist.${jsonExtension}`;
 const blackList = `blacklist.${jsonExtension}`;
 export const validatorsList = `${listName}.${jsonExtension}`
 
-export const assetFolderAllowedFiles = [logoName, infoName];
-
+export const assetFolderAllowedFiles = [logoFullName, infoFullName];
+export const chainFolderAllowedFiles = [
+    "assets",
+    whiteList,
+    blackList,
+    "validators",
+    infoName
+]
 export const chainsPath: string = path.join(process.cwd(), '/blockchains');
 export const getChainPath = (chain: string): string => `${chainsPath}/${chain}`;
 export const getChainLogoPath = (chain: string): string => `${getChainPath(chain)}/info/${logoFullName}`;
@@ -34,5 +40,6 @@ export const getChainValidatorAssetLogoPath = (chain: string, asset: string): st
 
 export const isChainAssetInfoExistSync = (chain: string, address: string) => isPathExistsSync(getChainAssetInfoPath(chain, address));
 
+export const getChainFolderFilesList = (chain: string) => readDirSync(getChainPath(chain))
 export const getChainAssetsList = (chain: string): string[] => readDirSync(getChainAssetsPath(chain));
 export const getChainAssetFilesList = (chain: string, address: string) => readDirSync(getChainAssetPath(chain, address));
