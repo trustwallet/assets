@@ -1,7 +1,7 @@
 const eztz = require('eztz-lib')
 
 import {
-    Binance, Cosmos, Tezos, Tron, Waves, Kava, Terra,
+    Cosmos, Tezos, Tron, Waves, Kava, Terra,
     chainsFolderPath,
     findFiles,
     getBinanceBEP2Symbols,
@@ -47,17 +47,6 @@ import {
 import { findImagesToFetch } from "../../script/action/binance";
 
 describe(`Test "blockchains" folder`, () => {
-    describe(`Check "binace" folder`, () => {
-        it("Asset must exist on chain", async () => {
-            const tokenSymbols = await getBinanceBEP2Symbols()
-            const assets = readDirSync(getChainAssetsPath(Binance))
-
-            assets.forEach(asset => {
-                expect(tokenSymbols.indexOf(asset), `Asset ${asset} missing on chain`).not.toBe(-1)
-            })
-        })
-    })
-
     describe(`Check "tron" folder`, () => {
         const path = getChainAssetsPath(Tron)
 

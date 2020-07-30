@@ -1,4 +1,4 @@
-import { Binance } from "./binance";
+import { BinanceAction } from "./binance";
 import { EthForks } from "./eth-forks";
 import { FoldersFiles } from "./folders-and-files";
 import { LogoSize } from "./logo-size";
@@ -8,6 +8,7 @@ import { Whitelist } from "./whitelists";
 import { Coinmarketcap } from "../../pricing/coinmarketcap/script";
 import { ActionInterface, CheckStepInterface } from "./interface";
 import * as chalk from 'chalk';
+import * as bluebird from "bluebird";
 
 const actionList: ActionInterface[] = [
     new FoldersFiles(),
@@ -16,16 +17,16 @@ const actionList: ActionInterface[] = [
     new Whitelist(),
     new Validators(),
     new TezosAction(),
-    new Binance(),
+    new BinanceAction(),
     new Coinmarketcap()
 ];
 
-function checkStepList(steps: CheckStepInterface[]): number {
+async function checkStepList(steps: CheckStepInterface[]): Promise<number> {
     var returnCode = 0;
-    steps.forEach(step => {
+    await bluebird.each(steps, async (step) => {
         try {
             console.log(`     Running check step '${step.getName()}'...`);
-            const error = step.check();
+            const error = await step.check();
             if (error && error.length > 0) {
                 console.log(`-  ${chalk.red('X')} '${step.getName()}': '${error}'`);
                 returnCode = 1;
@@ -40,16 +41,16 @@ function checkStepList(steps: CheckStepInterface[]): number {
     return returnCode;
 }
 
-function checkActionList(actions: ActionInterface[]): number {
+async function checkActionList(actions: ActionInterface[]): Promise<number> {
     console.log("Running checks...");
     var returnCode = 0;
-    actions.forEach(action => {
+    await bluebird.each(actions, async (action) => {
         try {
             if (action.getChecks) {
                 const steps = action.getChecks();
                 if (steps && steps.length > 0) {
                     console.log(`   Action '${action.getName()}' has ${steps.length} check steps`);
-                    const ret1 = checkStepList(steps);
+                    const ret1 = await checkStepList(steps);
                     if (ret1 != 0) {
                         returnCode = ret1;
                     }
@@ -94,8 +95,8 @@ function updateByList(actions: ActionInterface[]) {
     console.log("All updates done.");
 }
 
-export function checkAll(): number {
-    return checkActionList(actionList);
+export async function checkAll(): Promise<number> {
+    return await checkActionList(actionList);
 }
 
 export function fixAll() {

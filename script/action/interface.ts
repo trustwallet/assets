@@ -2,7 +2,7 @@
 export interface CheckStepInterface {
     getName(): string;
     // return error or null/empty on success
-    check(): string;
+    check(): Promise<string>;
 }
 
 // An action for a check, fix, or update, or a combination.

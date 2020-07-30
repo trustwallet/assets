@@ -67,11 +67,12 @@ function checkAddressChecksums() {
 
 export class EthForks implements ActionInterface {
     getName(): string { return "Ethereum forks"; }
+    
     getChecks(): CheckStepInterface[] {
         return [
             {
                 getName: () => { return "Ethereum fork folder structure"},
-                check: () => {
+                check: async () => {
                     var error: string = "";
                     ethForkChains.forEach(chain => {
                         const assetsFolder = getChainAssetsPath(chain);
@@ -107,9 +108,11 @@ export class EthForks implements ActionInterface {
             },
         ];
     }
+    
     async fix(): Promise<void> {
         formatInfos();
         checkAddressChecksums();
     }
+    
     update = null;
 }

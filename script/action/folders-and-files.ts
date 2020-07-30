@@ -22,11 +22,12 @@ const foundChains = readDirSync(chainsPath)
 
 export class FoldersFiles implements ActionInterface {
     getName(): string { return "Folders and Files"; }
+    
     getChecks(): CheckStepInterface[] {
         return [
             {
                 getName: () => { return "Repository root dir"},
-                check: () => {
+                check: async () => {
                     var error: string = "";
                     const dirActualFiles = readDirSync(".");
                     dirActualFiles.forEach(file => {
@@ -39,7 +40,7 @@ export class FoldersFiles implements ActionInterface {
             },
             {
                 getName: () => { return "Chain folders are lowercase, contain only predefined list of files"},
-                check: () => {
+                check: async () => {
                     var error: string = "";
                     foundChains.forEach(chain => {
                         if (!isLowerCase(chain)) {
@@ -56,7 +57,7 @@ export class FoldersFiles implements ActionInterface {
             },
             {
                 getName: () => { return "Chain folders have logo, and correct size"},
-                check: () => {
+                check: async () => {
                     var error: string = "";
                     foundChains.forEach(chain => {
                         const chainLogoPath = getChainLogoPath(chain);
@@ -73,7 +74,7 @@ export class FoldersFiles implements ActionInterface {
             },
             {
                 getName: () => { return "Asset folders contain only predefined set of files"},
-                check: () => {
+                check: async () => {
                     var error: string = "";
                     foundChains.forEach(chain => {
                         const assetsPath = getChainAssetsPath(chain);
@@ -93,6 +94,8 @@ export class FoldersFiles implements ActionInterface {
             },
         ];
     }
+    
     fix = null;
+    
     update = null;
 }

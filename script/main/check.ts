@@ -1,8 +1,8 @@
 import { checkAll } from "../action/update-all";
 
-export function main() {
+export async function main() {
     try {
-        const returnCode = checkAll();
+        const returnCode = await checkAll();
         process.exit(returnCode);
     } catch(err) {
         console.error(err);

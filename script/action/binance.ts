@@ -4,7 +4,10 @@ import * as fs from "fs";
 import * as path from "path";
 import * as chalk from 'chalk';
 import * as config from "../common/config";
-import { ActionInterface } from "./interface";
+import { ActionInterface, CheckStepInterface } from "./interface";
+import { getChainAssetsPath } from "../common/repo-structure";
+import { Binance } from "../common/blockchains";
+import { readDirSync } from "../common/filesystem";
 
 import {
     getChainAssetLogoPath,
@@ -14,11 +17,17 @@ import {
 const binanceChain = "binance"
 const binanceAssetsUrl = config.getConfig("binance_assets_url", "https://explorer.binance.org/api/v1/assets?page=1&rows=1000");
 
-async function retrieveAssetList() {
+async function retrieveAssetList(): Promise<any[]>{
     console.log(`Retrieving assets info from: ${binanceAssetsUrl}`);
     const { assetInfoList } = await axios.get(binanceAssetsUrl).then(r => r.data);
     console.log(`Retrieved ${assetInfoList.length} asset infos`);
     return assetInfoList
+}
+
+async function retrieveAssetSymbols(): Promise<string[]> {
+    //axios.get(`https://dex-atlantic.binance.org/api/v1/tokens?limit=1000`).then(res => res.data.map(({ symbol }) => symbol))
+    const assetInfoList = await retrieveAssetList();
+    return assetInfoList.map(({ asset }) => asset);
 }
 
 function fetchImage(url) {
@@ -74,10 +83,30 @@ async function fetchMissingImages(toFetch: any[]): Promise<string[]> {
     return fetchedAssets;
 }
 
-export class Binance implements ActionInterface {
+export class BinanceAction implements ActionInterface {
     getName(): string { return "Binance chain"; }
-    getChecks = null;
+
+    getChecks(): CheckStepInterface[] {
+        return [
+            {
+                getName: () => { return "Binance chain; assets must exist on chain"},
+                check: async () => {
+                    var error: string = "";
+                    const tokenSymbols = await retrieveAssetSymbols();
+                    const assets = readDirSync(getChainAssetsPath(Binance));
+                    assets.forEach(asset => {
+                        if (!(tokenSymbols.indexOf(asset) >= 0)) {
+                            error += `Asset ${asset} missing on chain\n`;
+                        }
+                    });
+                    return error;
+                }
+            },
+        ];
+    }
+    
     fix = null;
+    
     async update(): Promise<void> {
         const assetInfoList = await retrieveAssetList();
         const blacklist: string[] = require(getChainBlacklistPath(binanceChain));
