@@ -5,16 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "update:bep2": "node ./script/updateBEP2",
-    "checksum": "ts-node ./script/erc20_to_checksum",
-    "format:all": "ts-node ./script/format_files_name",
-    "arrange:all": "ts-node ./script/arrange_files",
-    "gen:list": "ts-node ./script/gen_list",
-    "gen:info": "ts-node ./script/gen_info",
-    "gen:validators:tezos": "ts-node ./script/gen_validators_tezos",
-    "resize": "ts-node ./script/resize_images",
-    "map:cmc": "ts-node ./pricing/coinmarketcap/script",
-    "magic": "npm run update:bep2 && npm run checksum && npm run resize && npm run gen:list && npm t"
+    "fix": "ts-node ./script/main/fix",
+    "update": "ts-node ./script/main/update"
   },
   "repository": {
     "type": "git",
