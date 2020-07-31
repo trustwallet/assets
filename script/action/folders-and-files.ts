@@ -13,8 +13,9 @@ import {
     getChainFolderFilesList,
     chainFolderAllowedFiles
 } from "../common/repo-structure";
-import { isLogoDimensionOK } from "../common/image";
+import { isLogoOK } from "../common/image";
 import { isLowerCase } from "../common/types";
+import * as bluebird from "bluebird";
 
 const defaultRootDirAllowedFiles = [".github", "blockchains", "dapps", "media", "script", "src", ".gitignore", "LICENSE", "package-lock.json", "package.json", "README.md", ".git", "Gemfile", "Gemfile.lock"];
 const rootDirAllowedFiles = config.getConfig("folders_rootdir_allowed_files", defaultRootDirAllowedFiles);
@@ -59,12 +60,12 @@ export class FoldersFiles implements ActionInterface {
                 getName: () => { return "Chain folders have logo, and correct size"},
                 check: async () => {
                     var error: string = "";
-                    foundChains.forEach(chain => {
+                    await bluebird.each(foundChains, async (chain) => {
                         const chainLogoPath = getChainLogoPath(chain);
                         if (!isPathExistsSync(chainLogoPath)) {
                             error += `File missing at path "${chainLogoPath}"\n`;
                         }
-                        const [isOk, error1] = isLogoDimensionOK(chainLogoPath);
+                        const [isOk, error1] = await isLogoOK(chainLogoPath);
                         if (!isOk) {
                             error += error1 + "\n";
                         }

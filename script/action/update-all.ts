@@ -3,6 +3,7 @@ import { EthForks } from "./eth-forks";
 import { FoldersFiles } from "./folders-and-files";
 import { LogoSize } from "./logo-size";
 import { TezosAction } from "./tezos";
+import { TronAction } from "./tron";
 import { Validators } from "./validators";
 import { Whitelist } from "./whitelists";
 import { Coinmarketcap } from "../../pricing/coinmarketcap/script";
@@ -18,6 +19,7 @@ const actionList: ActionInterface[] = [
     new Validators(),
     new TezosAction(),
     new BinanceAction(),
+    new TronAction(),
     new Coinmarketcap()
 ];
 

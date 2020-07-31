@@ -34,9 +34,22 @@ export function calculateTargetSize(srcWidth: number, srcHeight: number, targetW
     };
 }
 
+// check logo dimensions (pixel) and size (kilobytes)
+export async function isLogoOK(path: string): Promise<[boolean, string]> {
+    var [isOK, msg] = await isLogoDimensionOK(path);
+    if (!isOK) {
+        return [false, msg];
+    }
+    [isOK, msg] = await isLogoSizeOK(path);
+    if (!isOK) {
+        return [false, msg];
+    }
+    return [true, ""];
+}
+
 const getImageDimensions = (path: string) => image_size.imageSize(path);
 
-export function isLogoDimensionOK(path: string): [boolean,  string] {
+export async function isLogoDimensionOK(path: string): Promise<[boolean,  string]> {
     const { width, height } =  getImageDimensions(path)
     if (isDimensionOK(width, height)) {
         return [true, ""];
@@ -50,7 +63,7 @@ async function compressTinyPNG(path: string) {
     await source.toFile(path);
 }
 
-export function isLogoSizeOK(path: string): [boolean, string] {
+export async function isLogoSizeOK(path: string): Promise<[boolean, string]> {
     const sizeKilobyte = getFileSizeInKilobyte(path);
     if (sizeKilobyte > maxLogoSizeInKilobyte) {
         return [false, `Logo ${path} is too large, ${sizeKilobyte} kB instead of ${maxLogoSizeInKilobyte}`];

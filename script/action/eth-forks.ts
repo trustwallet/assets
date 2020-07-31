@@ -21,8 +21,9 @@ import {
 } from "../common/filesystem";
 import { isChecksum, toChecksum } from "../common/eth-web3";
 import { ActionInterface, CheckStepInterface } from "./interface";
-import { isLogoDimensionOK, isLogoSizeOK } from "../common/image";
+import { isLogoOK } from "../common/image";
 import { isAssetInfoOK } from "../common/asset-info";
+import * as bluebird from "bluebird";
 
 function formatInfos() {
     console.log(`Formatting info files...`);
@@ -74,10 +75,11 @@ export class EthForks implements ActionInterface {
                 getName: () => { return "Ethereum fork folder structure"},
                 check: async () => {
                     var error: string = "";
-                    ethForkChains.forEach(chain => {
+                    await bluebird.each(ethForkChains, async (chain) => {
                         const assetsFolder = getChainAssetsPath(chain);
                         const assetsList = getChainAssetsList(chain);
-                        assetsList.forEach(address => {
+                        console.log(`     Found ${assetsList.length} assets for chain ${chain}`);
+                        await bluebird.each(assetsList, async (address) => {
                             const assetPath = `${assetsFolder}/${address}`;
                             if (!isPathExistsSync(assetPath)) {
                                 error += `Expect directory at path: ${assetPath}\n`;
@@ -89,13 +91,9 @@ export class EthForks implements ActionInterface {
                             if (!isPathExistsSync(assetLogoPath)) {
                                 error += `Missing file at path '${assetLogoPath}'\n`;
                             }
-                            const [isDimensionOK, dimensionMsg] = isLogoDimensionOK(assetLogoPath);
-                            if (!isDimensionOK) {
+                            const [isOK, dimensionMsg] = await isLogoOK(assetLogoPath);
+                            if (!isOK) {
                                 error += dimensionMsg + "\n";
-                            }
-                            const [isLogoOK, sizeMsg] = isLogoSizeOK(assetLogoPath);
-                            if (!isLogoOK) {
-                                error += sizeMsg + "\n";
                             }
                             const [isInfoOK, infoMsg] = isAssetInfoOK(chain, address);
                             if (!isInfoOK) {

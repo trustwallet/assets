@@ -1,4 +1,5 @@
 export const isLowerCase = (str: string): boolean => str.toLowerCase() === str;
+export const isUpperCase = (str: string): boolean => str.toUpperCase() === str;
 
 export const mapList = arr => {
     return arr.reduce((acm, val) => {
