@@ -292,24 +292,6 @@ describe("Test Coinmarketcap mapping", () => {
     })
 })
 
-describe("Test blacklist and whitelist", () => {
-    const assetsChains = readDirSync(chainsFolderPath).filter(chain => isPathExistsSync(getChainAssetsPath(chain)))
-
-    assetsChains.forEach(chain => {
-        // Test uniqeness of blacklist and whitelist, and non-intersection among the two:
-        // test by a single check: checking for duplicates in the concatenated list.
-        const whiteList = JSON.parse(readFileSync(getChainWhitelistPath(chain)))
-        const blackList = JSON.parse(readFileSync(getChainBlacklistPath(chain)))
-        test(`Blacklist and whitelist should have no common elements or duplicates (${chain})`, () => {
-            expect(findCommonElementOrDuplicate(whiteList, blackList), `Found a duplicate or common element`).toBe(null)
-        })
-    })
-})
-
-describe("Test coins info.json file", () => {
-    
-});
-
 describe("Test all JSON files to have valid content", () => {
     const files = [
         ...findFiles(chainsFolderPath, 'json'),
