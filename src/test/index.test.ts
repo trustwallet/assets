@@ -5,7 +5,6 @@ import {
     chainsFolderPath,
     findFiles,
     getBinanceBEP2Symbols,
-    getChainAssetLogoPath,
     getChainAssetsPath,
     getChainBlacklistPath,
     getChainValidatorAssetLogoPath,
@@ -47,21 +46,6 @@ import {
 import { findImagesToFetch } from "../../script/action/binance";
 
 describe(`Test "blockchains" folder`, () => {
-    describe(`Check "tron" folder`, () => {
-        const path = getChainAssetsPath(Tron)
-
-        test("Expect asset to be TRC10 or TRC20", () => {
-            readDirSync(path).forEach(asset => {
-                expect(isTRC10(asset) || isTRC20(asset), `Asset ${asset} at path ${path} non TRC10 nor TRC20`).toBe(true)
-
-                const assetsLogoPath = getChainAssetLogoPath(Tron, asset)
-                expect(isPathExistsSync(assetsLogoPath), `Missing file at path "${assetsLogoPath}"`).toBe(true)
-                const [isOk, msg] = isLogoDimensionOK(assetsLogoPath)
-                expect(isOk, msg).toBe(true)
-            })
-        })
-    })
-
     describe("Check Staking chains", () => {
         test("Make sure tests added for new staking chain", () => {
             expect(stakingChains.length).toBe(7)
