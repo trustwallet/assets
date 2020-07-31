@@ -6,7 +6,7 @@ import { TezosAction } from "./tezos";
 import { TronAction } from "./tron";
 import { Validators } from "./validators";
 import { Whitelist } from "./whitelists";
-import { Coinmarketcap } from "../../pricing/coinmarketcap/script";
+import { Coinmarketcap } from "../../pricing/coinmarketcap/cmc-action";
 import { ActionInterface, CheckStepInterface } from "./interface";
 import * as chalk from 'chalk';
 import * as bluebird from "bluebird";

@@ -7,11 +7,11 @@ import { isLowerCase, isUpperCase } from "../common/types";
 import { isLogoOK } from "../common/image";
 import * as bluebird from "bluebird";
 
-function isTRC10(str: string): boolean {
+export function isTRC10(str: string): boolean {
     return (/^\d+$/.test(str));
 }
 
-function isTRC20(address: string): boolean {
+export function isTRC20(address: string): boolean {
     return address.length == 34 &&
         address.startsWith("T") &&
         isLowerCase(address) == false &&

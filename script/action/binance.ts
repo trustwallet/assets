@@ -24,7 +24,7 @@ async function retrieveAssetList(): Promise<any[]>{
     return assetInfoList
 }
 
-async function retrieveAssetSymbols(): Promise<string[]> {
+export async function retrieveAssetSymbols(): Promise<string[]> {
     //axios.get(`https://dex-atlantic.binance.org/api/v1/tokens?limit=1000`).then(res => res.data.map(({ symbol }) => symbol))
     const assetInfoList = await retrieveAssetList();
     return assetInfoList.map(({ asset }) => asset);

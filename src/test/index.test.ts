@@ -4,25 +4,19 @@ import {
     Cosmos, Tezos, Tron, Waves, Kava, Terra,
     chainsFolderPath,
     findFiles,
-    getBinanceBEP2Symbols,
-    getChainAssetsPath,
-    getChainBlacklistPath,
     getChainValidatorAssetLogoPath,
     getChainValidatorsAssets,
     getChainValidatorsListPath,
-    getChainWhitelistPath,
     getChainValidatorsList,
     findDuplicate,
     findCommonElementOrDuplicate,
     isLogoDimensionOK,
     isLowerCase,
     isPathExistsSync,
-    isTRC10, isTRC20, isWavesAddress,
+    isTRC20, isWavesAddress,
     isValidJSON,
     isValidatorHasAllKeys,
     pricingFolderPath,
-    readDirSync,
-    readFileSync,
     stakingChains,
 } from "./helpers"
 import { ValidatorModel, mapTiker, TickerType } from "./models";
@@ -178,119 +172,6 @@ function testTerraValidatorsAddress(assets: string[]) {
         })
     })
 }
-
-describe("Test Coinmarketcap mapping", () => {
-    const cmcMap: mapTiker[] = JSON.parse(readFileSync("./pricing/coinmarketcap/mapping.json"))
-
-    test("Must have items", () => {
-        expect(cmcMap.length, `CMC map must have items`).toBeGreaterThan(0)
-    })
-
-    test(`Items must be sorted by "id" in ascending order`, () => {
-        cmcMap.forEach((el, i) => {
-            if (i > 0) {
-                const prevID = cmcMap[i - 1].id
-                const curID = el.id
-                expect(curID, `Item ${curID} must be greather or equal to ${prevID}`)
-                    .toBeGreaterThanOrEqual(prevID)
-            }
-        })
-    })
-
-    test(`Items must be sorted by "coin" in ascending order if have same "id"`, () => {
-        cmcMap.forEach((el, i) => {
-            if (i > 0) {
-                const prevEl = cmcMap[i - 1]
-
-                const prevCoin = prevEl.coin
-                const prevID = cmcMap[i - 1].id
-
-                const curCoin = el.coin
-                const curID = el.id
-
-                if (prevID == curID) {
-                    expect(curCoin, `Item ${JSON.stringify(el)} must be greather or equal to ${JSON.stringify(prevEl)}`)
-                        .toBeGreaterThanOrEqual(prevCoin)
-                }
-
-            }
-        })
-    })
-
-    test("Properies value shoud not contain spaces", () => {
-        cmcMap.forEach(el => {
-            Object.keys(el).forEach(key => {
-                const val = el[key]
-                if (typeof val === "string") {
-                    expect(val.indexOf(" ") >= 0, ` Property value "${val}" should not contain space`).toBe(false)
-                }
-            })
-        })
-    });
-    
-    test("Params should have value and correct type", () => {
-        cmcMap.forEach(el => {
-            const {coin, type, id, token_id} = el
-            
-            expect(typeof coin, `Coin ${coin} must be type "number"`).toBe("number")
-
-            expect(["token", "coin"], `Element with id ${id} has wrong type: "${type}"`).toContain(type)
-            if (type === "token") {
-                expect(token_id, `token_id ${token_id} with id ${id} must be type not empty`).toBeTruthy()
-            }
-
-            if (type === "coin") {
-                expect(el, `Element with id ${id} should not have property "token_id"`).not.toHaveProperty("token_id")
-            }
-        });
-    });
-
-    test(`"token_id" should be in correct format`, async () => {
-        const bep2Symbols = await getBinanceBEP2Symbols()
-
-        cmcMap.forEach(el => {
-            const {coin, token_id, type, id} = el
-            switch (coin) {
-                case 60:
-                    if (type === TickerType.Token) {
-                        expect(isChecksum(token_id), `"token_id" ${token_id} with id ${id} must be in checksum`).toBe(true)
-                        break;
-                    }
-                case 195:
-                    if (type === TickerType.Token) {
-                        expect(isTRC10(token_id) || isTRC20(token_id), `"token_id" ${token_id} with id ${id} must be in TRC10 or TRC20`).toBe(true)
-                        break;
-                    }
-                case 714:
-                    if (type === TickerType.Token) {
-                        expect(bep2Symbols.indexOf(token_id), `"token_id" ${token_id} with id ${id} must be BEP2 symbol`).toBeGreaterThan(0)
-                        break;
-                    }
-                default:
-                    break;
-            }
-        })
-    })
-
-    test(`"token_id" shoud be unique`, () => {
-        const mappedList = cmcMap.reduce((acm, val) => {
-            if (val.hasOwnProperty("token_id")) {
-                if (acm.hasOwnProperty(val.token_id)) {
-                    acm[val.token_id] == ++acm[val.token_id]
-                } else {
-                    acm[val.token_id] = 0
-                }
-            }
-            return acm
-        }, {})
-
-        cmcMap.forEach(el => {
-            if (el.hasOwnProperty("token_id")) {
-                expect(mappedList[el.token_id], `CMC map ticker with "token_id" ${el.token_id} shoud be unique`).toBeLessThanOrEqual(0)
-            }
-        })
-    })
-})
 
 describe("Test all JSON files to have valid content", () => {
     const files = [

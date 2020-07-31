@@ -16,7 +16,6 @@ import {
     getChainWhitelist,
 } from "../../src/test/helpers";
 import { TickerType, mapTiker, PlatformType } from "../../src/test/models";
-import { ActionInterface } from "../../script/action/interface";
 
 // Steps required to run this:
 // 1. (Optional) CMC API key already setup, use yours if needed. Install script deps "npm i" if hasn't been run before.
@@ -62,7 +61,7 @@ const allContracts: mapTiker[] = [] // Temp storage for mapped assets
 let bnbOwnerToSymbol = {} // e.g: bnb1tawge8u97slduhhtumm03l4xl4c46dwv5m9yzk: WISH-2D5
 let bnbOriginalSymbolToSymbol = {} // e.g: WISH: WISH-2D5
 
-async function run() {
+export async function run() {
     try {
         await Promise.all([initState(), setBinanceTokens()])
         const [totalCrypto, coins] = await Promise.all([getTotalActiveCryptocurrencies(), getTickers()])
@@ -352,12 +351,3 @@ function log(string, cb?) {
 //         }
 //     })
 // }
-
-export class Coinmarketcap implements ActionInterface {
-    getName(): string { return "Coinmarketcap"; }
-    getChecks = null;
-    fix = null;
-    async update(): Promise<void> {
-        await run();
-    }
-}
