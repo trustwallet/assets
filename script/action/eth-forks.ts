@@ -70,12 +70,13 @@ export class EthForks implements ActionInterface {
     getName(): string { return "Ethereum forks"; }
     
     getChecks(): CheckStepInterface[] {
-        return [
-            {
-                getName: () => { return "Ethereum fork folder structure"},
-                check: async () => {
-                    var error: string = "";
-                    await bluebird.each(ethForkChains, async (chain) => {
+        var steps: CheckStepInterface[] = [];
+        ethForkChains.forEach(chain => {
+            steps.push(
+                {
+                    getName: () => { return `Folder structure for chain ${chain} (ethereum fork)`;},
+                    check: async () => {
+                        var error: string = "";
                         const assetsFolder = getChainAssetsPath(chain);
                         const assetsList = getChainAssetsList(chain);
                         console.log(`     Found ${assetsList.length} assets for chain ${chain}`);
@@ -100,11 +101,12 @@ export class EthForks implements ActionInterface {
                                 error += infoMsg + "\n";
                             }
                         });
-                    });
-                    return error;
+                        return error;
+                    }    
                 }
-            },
-        ];
+            );
+        });
+        return steps;
     }
     
     async fix(): Promise<void> {
