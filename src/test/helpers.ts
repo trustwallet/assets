@@ -4,11 +4,11 @@ import { ValidatorModel } from "./models";
 const axios = require('axios')
 const Web3 = require('web3')
 const web3 = new Web3('ws://localhost:8546');
-import { CoinTypeUtils, CoinType } from "@trustwallet/types";
+import { CoinType } from "@trustwallet/wallet-core";
 const sizeOf = require("image-size");
 const { execSync } = require('child_process');
 
-export const getChainName = (id: CoinType): string =>  CoinTypeUtils.id(id) // 60 => ethereum
+export const getChainName = (id: CoinType): string =>  CoinType.id(id) // 60 => ethereum
 export const Binance = getChainName(CoinType.binance)
 export const Classic = getChainName(CoinType.classic)
 export const Cosmos = getChainName(CoinType.cosmos)
@@ -180,10 +180,29 @@ export const mapList = arr => {
     }, {})
 }
 
-export const getImageDimentions = (path: string) => sizeOf(path)
+export function findDuplicate(list: string[]): string {
+    let m = new Map<string, number>()
+    let duplicate: string = null
+    list.forEach(val => {
+        if (m.has(val)) {
+            duplicate = val
+        } else {
+            m.set(val, 0)
+        }
+    })
+    return duplicate
+}
 
-export function isLogoDimentionOK(path: string): [boolean,  string] {
-    const { width, height } =  getImageDimentions(path)
+// Check that two lists have no common elements, and no duplicates in either.
+// Do a single check: checking for duplicates in the concatenated list.
+export function findCommonElementOrDuplicate(list1: string[], list2: string[]) {
+    return findDuplicate(list1.concat(list2))
+}
+
+export const getImageDimensions = (path: string) => sizeOf(path)
+
+export function isLogoDimensionOK(path: string): [boolean,  string] {
+    const { width, height } =  getImageDimensions(path)
     if (((width >= minLogoWidth && width <= maxLogoWidth) && (height >= minLogoHeight && height <= maxLogoHeight))) {
         return [true, '']
     } else {
@@ -299,6 +318,7 @@ export const rootDirAllowedFiles = [
     "dapps",
     "media",
     "node_modules",
+    "script-old",
     "script",
     "src",
     ".gitignore",
