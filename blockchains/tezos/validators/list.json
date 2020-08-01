@@ -53,6 +53,10 @@
         },
         "staking": {
             "minDelegation": 0
+        },
+        "status": {
+            "disabled": true,
+            "note": "According to Baking Bad API, baker is not active, current status dead, see: https://api.baking-bad.org/v2/bakers/tz1Pwgj6j55akKCyvTwwr9X4np1RskSXpQY4"
         }
     },
     {
@@ -187,7 +191,7 @@
         "description": "Everstake - Staking Service Platform. Delegate XTZ with Everstake, your trusted staking partner.",
         "website": "https://everstake.one/",
         "payout": {
-            "commission": 8,
+            "commission": 15,
             "payoutDelay": 6,
             "payoutPeriod": 1
         },
@@ -262,7 +266,7 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "minDelegation": 0
+            "minDelegation": 100
         }
     },
     {
@@ -365,9 +369,9 @@
     },
     {
         "id": "tz1V3yg82mcrPJbegqVCPn6bC8w1CSTRp3f8",
-        "name": "TezoShop",
-        "description": "TezoShop is PRO Tezos baker ",
-        "website": "https://tezoshop.art",
+        "name": "Staking Shop",
+        "description": "Staking for best PoS blockchains in one place",
+        "website": "https://www.stakingshop.live",
         "payout": {
             "commission": 3,
             "payoutDelay": 6,
@@ -375,6 +379,10 @@
         },
         "staking": {
             "minDelegation": 100
+        },
+        "status": {
+            "disabled": true,
+            "note": "No more capacity: -9790"
         }
     },
     {
@@ -397,7 +405,7 @@
         "description": "An historical and trusted baker, from Italy with love.",
         "website": "https://stakingteam.com/",
         "payout": {
-            "commission": 0,
+            "commission": 9.9,
             "payoutDelay": 6,
             "payoutPeriod": 1
         },
@@ -413,7 +421,7 @@
         "description": "We Bake : You Make",
         "website": "https://www.tezbaker.io/",
         "payout": {
-            "commission": 9,
+            "commission": 12,
             "payoutDelay": 6,
             "payoutPeriod": 1
         },
