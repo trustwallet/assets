@@ -21,6 +21,7 @@ message:
     * Trust Wallet Tokens (TWT) are distributed to new users through our [Referral Program](https://community.trustwallet.com/t/invite-a-friend-earn-trust-wallet-token-twt/4125).
     * Payment evaluation happens when there is activity on the PR -- write a comment if you have performed the payment.
     * When payment is detected, an Accept Review is automatically placed on the PR, which is a condition for merge.  The merge is still done manually.
+    * One PR should be for a single project; PR's with more than 10 logos will be rejected.
   notReceived: Fee has not been received yet (or not fully).\n\n$TX_LIST
   received: |
     Fee is PAID, fantastic!  Thanks!
