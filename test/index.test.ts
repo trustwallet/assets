@@ -1,23 +1,23 @@
 import {
     findDuplicate,
     findCommonElementOrDuplicate,
-} from "../../script/common/types";
+} from "../script/common/types";
 import {
     isChecksum,
     toChecksum
-} from "../../script/common/eth-web3";
+} from "../script/common/eth-web3";
 import {
     isDimensionTooLarge,
     isDimensionOK,
     calculateTargetSize
-} from "../../script/common/image";
+} from "../script/common/image";
 import {
     mapList,
     sortElements,
     makeUnique,
     arrayDiff
-} from "../../script/common/types";
-import { findImagesToFetch } from "../../script/action/binance";
+} from "../script/common/types";
+import { findImagesToFetch } from "../script/action/binance";
 
 describe("Test eth-web3 helpers", () => {
     test(`Test isChecksum`, () => {

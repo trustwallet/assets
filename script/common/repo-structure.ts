@@ -47,5 +47,5 @@ export const getChainAssetsList = (chain: string): string[] => readDirSync(getCh
 export const getChainAssetFilesList = (chain: string, address: string) => readDirSync(getChainAssetPath(chain, address));
 export const getChainValidatorsAssets = (chain: string): string[] => readDirSync(getChainValidatorsAssetsPath(chain));
 
-const defaultRootDirAllowedFiles = [".github", "blockchains", "dapps", "media", "script", "src", ".gitignore", "LICENSE", "package-lock.json", "package.json", "README.md", ".git", "Gemfile", "Gemfile.lock"];
+const defaultRootDirAllowedFiles = [".github", "blockchains", "dapps", "media", "script", "test", ".gitignore", "LICENSE", "package-lock.json", "package.json", "README.md", ".git", "Gemfile", "Gemfile.lock"];
 export const rootDirAllowedFiles = config.getConfig("folders_rootdir_allowed_files", defaultRootDirAllowedFiles);
