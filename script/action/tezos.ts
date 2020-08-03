@@ -10,11 +10,19 @@ import { Tezos } from "../common/blockchains";
 import { readFileSync } from "../common/filesystem";
 import { writeJsonFile } from "../common/json";
 import { ActionInterface, CheckStepInterface } from "./interface";
+import { ValidatorModel } from "../common/validator-models";
 
-import {
-    BakingBadBaker,
-    ValidatorModel
-} from "../../src/test/models";
+interface BakingBadBaker {
+    address: string,
+    freeSpace: number
+    // serviceHealth: string // active or Dead is a working baker who was a public baker but for some reason stopped paying his delegators, Closed is a permanently closed service (we store them for historical purposes only
+    fee: number
+    minDelegation: number
+    openForDelegation: boolean
+    payoutDelay: number
+    payoutPeriod: number
+    serviceHealth: string
+}
 
 function getChainValidatorsList(chain: string): ValidatorModel[] {
     return JSON.parse(readFileSync(`${(getChainValidatorsPath(chain))}/${validatorsList}`));

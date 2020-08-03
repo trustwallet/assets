@@ -1,38 +1,3 @@
-export interface ValidatorModel {
-    id: string,
-    name: string,
-    description: string,
-    website: string,
-    staking: Staking
-    payout: Payout
-    status: ValidatorStatus
-}
-
-interface Staking {
-  freeSpace: number,
-  minDelegation: number
-  openForDelegation: boolean
-}
-
-interface Payout {
-  commission: number // in %
-  payoutDelay: number // in cycles
-  payoutPeriod: number
-}
-
-interface ValidatorStatus {
-  disabled: boolean;
-  note: string;
-}
-
-// Minimal property requirements for asset info file
-export interface AssetInfo {
-    explorer: string;
-    name: string;
-    short_description: string;
-    website: string;
-}
-
 export interface CoinInfoList {
     name: string;
     website: string;
@@ -42,18 +7,18 @@ export interface CoinInfoList {
     explorer: string;
     socials: Social[];
     details: Detail[];
-  }
+}
   
-  interface Detail {
+interface Detail {
     language: string;
     description: string;
-  }
+}
 
-  interface Social {
+interface Social {
     name: string;
     url: string;
     handle: string;
-  }
+}
   
 // CoinmarketCap
 export interface mapTiker {
@@ -63,7 +28,7 @@ export interface mapTiker {
     id: number
 }
 
-export type mapType = TickerType.Coin | TickerType.Token 
+type mapType = TickerType.Coin | TickerType.Token 
 
 export enum TickerType {
     Token = "token",
@@ -76,16 +41,4 @@ export enum PlatformType {
     TRON = "TRON",
     OMNI = "Omni",
     VeChain = "VeChain"
-}
-
-export interface BakingBadBaker {
-  address: string,
-  freeSpace: number
-  // serviceHealth: string // active or Dead is a working baker who was a public baker but for some reason stopped paying his delegators, Closed is a permanently closed service (we store them for historical purposes only
-  fee: number
-  minDelegation: number
-  openForDelegation: boolean
-  payoutDelay: number
-  payoutPeriod: number
-  serviceHealth: string
 }

@@ -8,7 +8,7 @@ import { isPathExistsSync } from "../common/filesystem";
 import { formatSortJsonFile, readJsonFile } from "../common/json";
 import { ActionInterface, CheckStepInterface } from "./interface";
 import { isValidJSON } from "../common/json";
-import { ValidatorModel } from "../../src/test/models";
+import { ValidatorModel } from "../common/validator-models";
 import { isLogoOK } from "../common/image";
 import * as bluebird from "bluebird";
 
