@@ -36,6 +36,10 @@ export function formatSortJsonFile(filename: string) {
     console.log(`Formatted json file ${filename}`);
 }
 
+export function readJsonFile(path: string): any {
+    return JSON.parse(readFileSync(path));
+}
+
 export function writeJsonFile(path: string, data: any) {
     writeFileSync(path, JSON.stringify(data, null, 4));
 }

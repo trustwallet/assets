@@ -2,7 +2,7 @@ import { ActionInterface, CheckStepInterface } from "./interface";
 import { getChainAssetsPath } from "../common/repo-structure";
 import { Tron } from "../common/blockchains";
 import { readDirSync, isPathExistsSync } from "../common/filesystem";
-import { getChainAssetLogoPath } from "../common/repo-structure";
+import { getChainAssetLogoPath, getChainValidatorsAssets } from "../common/repo-structure";
 import { isLowerCase, isUpperCase } from "../common/types";
 import { isLogoOK } from "../common/image";
 import * as bluebird from "bluebird";
@@ -45,6 +45,19 @@ export class TronAction implements ActionInterface {
                     return error;
                 }
             },
+            {
+                getName: () => { return "Tron validator assets must have correct format"},
+                check: async () => {
+                    var error: string = "";
+                    const assets = getChainValidatorsAssets(Tron);
+                    assets.forEach(addr => {
+                        if (!(isTRC20(addr))) {
+                            error += `Address ${addr} should be TRC20 address'\n`;
+                        }
+                    });
+                    return error;
+                }                
+            }
         ];
     }
     

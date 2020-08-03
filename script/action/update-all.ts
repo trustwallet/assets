@@ -1,10 +1,14 @@
 import { BinanceAction } from "./binance";
+import { CosmosAction } from "./cosmos";
 import { EthForks } from "./eth-forks";
 import { FoldersFiles } from "./folders-and-files";
+import { KavaAction } from "./kava";
 import { LogoSize } from "./logo-size";
+import { TerraAction } from "./terra";
 import { TezosAction } from "./tezos";
 import { TronAction } from "./tron";
 import { Validators } from "./validators";
+import { WavesAction } from "./waves";
 import { Whitelist } from "./whitelists";
 import { Coinmarketcap } from "../../pricing/coinmarketcap/cmc-action";
 import { ActionInterface, CheckStepInterface } from "./interface";
@@ -17,9 +21,13 @@ const actionList: ActionInterface[] = [
     new LogoSize(),
     new Whitelist(),
     new Validators(),
-    new TezosAction(),
     new BinanceAction(),
+    new CosmosAction(),
+    new KavaAction(),
+    new TerraAction(),
+    new TezosAction(),
     new TronAction(),
+    new WavesAction(),
     new Coinmarketcap()
 ];
 

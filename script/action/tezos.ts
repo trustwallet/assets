@@ -1,13 +1,15 @@
 import axios from "axios";
+import * as eztz from "eztz-lib";
 import {
     validatorsList,
     getChainValidatorsPath,
-    getChainValidatorsListPath
+    getChainValidatorsListPath,
+    getChainValidatorsAssets
 } from "../common/repo-structure";
 import { Tezos } from "../common/blockchains";
 import { readFileSync } from "../common/filesystem";
 import { writeJsonFile } from "../common/json";
-import { ActionInterface } from "./interface";
+import { ActionInterface, CheckStepInterface } from "./interface";
 
 import {
     BakingBadBaker,
@@ -67,8 +69,27 @@ async function gen_validators_tezos() {
 
 export class TezosAction implements ActionInterface {
     getName(): string { return "Tezos"; }
-    getChecks = null;
+
+    getChecks(): CheckStepInterface[] {
+        return [
+            {
+                getName: () => { return "Tezos validator assets must have correct format"},
+                check: async () => {
+                    var error: string = "";
+                    const assets = getChainValidatorsAssets(Tezos);
+                    assets.forEach(addr => {
+                        if (!(eztz.crypto.checkAddress(addr))) {
+                            error += `Address ${addr} must be valid Tezos address'\n`;
+                        }
+                    });
+                    return error;
+                }
+            },
+        ];
+    }
+
     fix = null;
+
     async update(): Promise<void> {
         await gen_validators_tezos();
     }

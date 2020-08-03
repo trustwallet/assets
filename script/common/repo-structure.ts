@@ -34,7 +34,7 @@ export const getChainWhitelistPath = (chain: string): string => `${getChainPath(
 export const getChainBlacklistPath = (chain: string): string => `${getChainPath(chain)}/${blackList}`;
 
 export const getChainValidatorsPath = (chain: string): string => `${getChainPath(chain)}/validators`;
-export const getChainValidatorsListPath = (chain: string): string => `${getChainValidatorsPath(chain)}/list.${jsonExtension}`;
+export const getChainValidatorsListPath = (chain: string): string => `${getChainValidatorsPath(chain)}/${validatorsList}`;
 export const getChainValidatorsAssetsPath = (chain: string): string => `${getChainValidatorsPath(chain)}/assets`
 export const getChainValidatorAssetLogoPath = (chain: string, asset: string): string => `${getChainValidatorsAssetsPath(chain)}/${asset}/${logoFullName}`
 
@@ -43,3 +43,4 @@ export const isChainAssetInfoExistSync = (chain: string, address: string) => isP
 export const getChainFolderFilesList = (chain: string) => readDirSync(getChainPath(chain))
 export const getChainAssetsList = (chain: string): string[] => readDirSync(getChainAssetsPath(chain));
 export const getChainAssetFilesList = (chain: string, address: string) => readDirSync(getChainAssetPath(chain, address));
+export const getChainValidatorsAssets = (chain: string): string[] => readDirSync(getChainValidatorsAssetsPath(chain));

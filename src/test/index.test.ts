@@ -1,25 +1,11 @@
-const eztz = require('eztz-lib')
-
 import {
-    Cosmos, Tezos, Tron, Waves, Kava, Terra,
     chainsFolderPath,
     findFiles,
-    getChainValidatorAssetLogoPath,
-    getChainValidatorsAssets,
-    getChainValidatorsListPath,
-    getChainValidatorsList,
     findDuplicate,
     findCommonElementOrDuplicate,
-    isLogoDimensionOK,
-    isLowerCase,
-    isPathExistsSync,
-    isTRC20, isWavesAddress,
     isValidJSON,
-    isValidatorHasAllKeys,
     pricingFolderPath,
-    stakingChains,
 } from "./helpers"
-import { ValidatorModel, mapTiker, TickerType } from "./models";
 import { getHandle } from "../../script-old/gen_info";
 
 import {
@@ -38,140 +24,6 @@ import {
     arrayDiff
 } from "../../script/common/types";
 import { findImagesToFetch } from "../../script/action/binance";
-
-describe(`Test "blockchains" folder`, () => {
-    describe("Check Staking chains", () => {
-        test("Make sure tests added for new staking chain", () => {
-            expect(stakingChains.length).toBe(7)
-        })
-
-        stakingChains.forEach(chain => {
-            const validatorsListPath = getChainValidatorsListPath(chain)
-            const validatorsList = getChainValidatorsList(chain)
-
-            test(`Chain ${chain} validator must have correct structure and valid JSON format`, () => {
-                validatorsList.forEach((val: ValidatorModel) => {
-                    expect(isValidatorHasAllKeys(val), `Some key and/or type missing for validator ${JSON.stringify(val)}`).toBe(true)
-                    expect(isValidJSON(validatorsListPath), `Not valid json file at path ${validatorsListPath}`).toBe(true)
-                })
-            })
-
-            
-            test(`Chain ${chain} validator must have corresponding asset logo`, () => {
-                validatorsList.forEach(({ id }) => {
-                    const path = getChainValidatorAssetLogoPath(chain, id)
-                    expect(isPathExistsSync(path), `Chain ${chain} asset ${id} logo must be present at path ${path}`).toBe(true)
-                    
-                    const [isOk, msg] = isLogoDimensionOK(path)
-                    expect(isOk, msg).toBe(true)
-                })
-            })
-
-            const chainValidatorsAssetsList = getChainValidatorsAssets(chain)
-            switch (chain) {
-                case Cosmos:
-                    testCosmosValidatorsAddress(chainValidatorsAssetsList)
-                    break;
-                case Kava:
-                    testKavaValidatorsAddress(chainValidatorsAssetsList)
-                    break;
-                case Terra:
-                    testTerraValidatorsAddress(chainValidatorsAssetsList)
-                    break;
-                case Tezos:
-                    testTezosValidatorsAssets(chainValidatorsAssetsList)
-                    break;
-                case Tron:
-                    testTronValidatorsAssets(chainValidatorsAssetsList)
-                    break;
-                case Waves:
-                    testWavesValidatorsAssets(chainValidatorsAssetsList)
-                    break;
-                // case Solana:
-                //     testSolanaValidatorsAssets(chainValidatorsAssetsList)
-                //     break;
-                // TODO Add IoTex when taking suported by Trust
-                default:
-                    break;
-            }
-            
-            test("Make sure validator has corresponding logo", () => {
-                validatorsList.forEach(val => {
-                    expect(chainValidatorsAssetsList.indexOf(val.id), `Expecting image asset for validator ${val.id} on chain ${chain}`)
-                        .toBeGreaterThanOrEqual(0)
-                })
-            })
-
-            test("Make sure validator asset logo has corresponding info", () => {
-                chainValidatorsAssetsList.forEach(valAssetLogoID => {
-                    expect(validatorsList.filter(v => v.id === valAssetLogoID).length, `Expect validator logo ${valAssetLogoID} to have info`)
-                        .toBe(1)
-                })
-            })
-        })
-    })
-})
-
-function testTezosValidatorsAssets(assets: string[]) {
-    test("Tezos assets must be correctly formated tz1 address", () => {
-        assets.forEach(addr => {
-            expect(eztz.crypto.checkAddress(addr), `Ivalid Tezos address: ${addr}`).toBe(true)
-        })
-    })
-}
-
-function testTronValidatorsAssets(assets: string[]) {
-    test("TRON assets must be correctly formated", () => {
-        assets.forEach(addr => {
-            expect(isTRC20(addr), `Address ${addr} should be TRC20`).toBe(true)
-        })
-    })
-}
-function testWavesValidatorsAssets(assets: string[]) {
-    test("WAVES assets must have correct format", () => {
-        assets.forEach(addr => {
-            expect(isWavesAddress(addr), `Address ${addr} should be WAVES formated`).toBe(true)
-        })
-    })
-}
-
-// function testSolanaValidatorsAssets(assets: string[]) {
-//     test("Solana assets must have correct format", () => {
-//         assets.forEach(addr => {
-//             expect(isSolanaAddress(addr), `Address ${addr} should be Solana formated`).toBe(true)
-//         })
-//     })
-// }
-
-function testCosmosValidatorsAddress(assets: string[]) {
-    test("Cosmos assets must have correct format", () => {
-        assets.forEach(addr => {
-            expect(addr.startsWith("cosmosvaloper1"), `Address ${addr} should start from "cosmosvaloper1"`).toBe(true)
-            expect(addr.length, `Address ${addr} should have length 52`).toBe(52)
-            expect(isLowerCase(addr), `Address ${addr} should be in lowercase`).toBe(true)
-        })
-    })
-}
-
-function testKavaValidatorsAddress(assets: string[]) {
-    test("Kava assets must have correct format", () => {
-        assets.forEach(addr => {
-            expect(addr.startsWith("kavavaloper1"), `Address ${addr} should start from "kavavaloper1"`).toBe(true)
-            expect(addr.length, `Address ${addr} should have length 50`).toBe(50)
-            expect(isLowerCase(addr), `Address ${addr} should be in lowercase`).toBe(true)
-        })
-    })
-}
-
-function testTerraValidatorsAddress(assets: string[]) {
-    test("Terra assets must have correct format", () => {
-        assets.forEach(addr => {
-            expect(addr.startsWith("terravaloper1"), `Address ${addr} should start from "terravaloper1"`).toBe(true)
-            expect(addr.length, `Address ${addr} should have length 51`).toBe(51)
-            expect(isLowerCase(addr), `Address ${addr} should be in lowercase`).toBe(true)
-        })
-    })
-}
 
 describe("Test all JSON files to have valid content", () => {
     const files = [
