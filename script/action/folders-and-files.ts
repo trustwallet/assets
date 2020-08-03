@@ -2,7 +2,6 @@ import {
     readDirSync,
     isPathExistsSync
 } from "../common/filesystem";
-import * as config from "../common/config";
 import { CheckStepInterface, ActionInterface } from "./interface";
 import {
     chainsPath,
@@ -11,14 +10,13 @@ import {
     getChainAssetPath,
     assetFolderAllowedFiles,
     getChainFolderFilesList,
-    chainFolderAllowedFiles
+    chainFolderAllowedFiles,
+    rootDirAllowedFiles
 } from "../common/repo-structure";
 import { isLogoOK } from "../common/image";
 import { isLowerCase } from "../common/types";
 import * as bluebird from "bluebird";
 
-const defaultRootDirAllowedFiles = [".github", "blockchains", "dapps", "media", "script", "src", ".gitignore", "LICENSE", "package-lock.json", "package.json", "README.md", ".git", "Gemfile", "Gemfile.lock"];
-const rootDirAllowedFiles = config.getConfig("folders_rootdir_allowed_files", defaultRootDirAllowedFiles);
 const foundChains = readDirSync(chainsPath)
 
 export class FoldersFiles implements ActionInterface {

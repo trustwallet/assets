@@ -3,6 +3,7 @@ import {
     isPathExistsSync,
     readDirSync
 } from "./filesystem";
+import * as config from "./config";
 
 export const logoName = `logo`;
 export const infoName = `info`;
@@ -45,3 +46,6 @@ export const getChainFolderFilesList = (chain: string) => readDirSync(getChainPa
 export const getChainAssetsList = (chain: string): string[] => readDirSync(getChainAssetsPath(chain));
 export const getChainAssetFilesList = (chain: string, address: string) => readDirSync(getChainAssetPath(chain, address));
 export const getChainValidatorsAssets = (chain: string): string[] => readDirSync(getChainValidatorsAssetsPath(chain));
+
+const defaultRootDirAllowedFiles = [".github", "blockchains", "dapps", "media", "script", "src", ".gitignore", "LICENSE", "package-lock.json", "package.json", "README.md", ".git", "Gemfile", "Gemfile.lock"];
+export const rootDirAllowedFiles = config.getConfig("folders_rootdir_allowed_files", defaultRootDirAllowedFiles);

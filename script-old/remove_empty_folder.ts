@@ -2,7 +2,7 @@ import {
     getChainAssetPath,
     getChainAssetsPath,
     isPathDir,
-    isPathDirEmpthy,
+    isPathDirEmpty,
     readDirSync,
     removeDir,
     getAllChainsList,
@@ -15,9 +15,9 @@ getAllChainsList().forEach(async chain => {
         readDirSync(chainAssetsPath).forEach(async (asset) => {
             const assetPath = getChainAssetPath(chain, asset);
             const isDir = await isPathDir(assetPath);
-            const isPathEmpthy = await isPathDirEmpthy(assetPath);
+            const isPathEmpty = await isPathDirEmpty(assetPath);
     
-            if (isDir && isPathEmpthy) {
+            if (isDir && isPathEmpty) {
                 removeDir(assetPath)
                 console.log(`Removed empty folder at path ${assetPath}`);
             }

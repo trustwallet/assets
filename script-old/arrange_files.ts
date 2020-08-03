@@ -1,14 +1,16 @@
 import * as fs from "fs"
 const isImage = require("is-image");
+import { rootDirAllowedFiles } from "../script/common/repo-structure";
+import { ethForkChains, Ethereum } from "../script/common/blockchains";
 import {
-    Ethereum,
+    getFileExt,
+    getFileName
+} from "../script/common/filesystem";
+import {
     chainsFolderPath,
-    ethSidechains,
     getChainAssetPath,
     getChainAssetsPath,
     getChainPath,
-    getFileExt,
-    getFileName,
     getRootDirFilesList,
     isChecksum,
     isEthereumAddress,
@@ -17,12 +19,11 @@ import {
     logoExtension,
     makeDirIfDoestExist,
     readDirSync,
-    rootDirAllowedFiles,
     toChecksum,
     isDirContainLogo
 } from "../src/test/helpers"
 
-ethSidechains.forEach(chain => {
+ethForkChains.forEach(chain => {
     const chainAssetsPath = getChainAssetsPath(chain)
 
     readDirSync(chainAssetsPath).forEach(async asset => {

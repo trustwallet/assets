@@ -1,17 +1,17 @@
-import { toChecksum } from "../../src/test/helpers"
 const BluebirdPromise = require("bluebird")
 const axios = require("axios")
 const chalk = require('chalk')
 const fs = require("fs")
 const path = require('path')
 const constants = require('bip44-constants')
+import { readFileSync } from "../../script/common/filesystem";
+import { ethForkChains } from "../../script/common/blockchains";
 import {
-    readFileSync,
+    toChecksum,
     getChainAssetLogoPath,
     isPathExistsSync,
     makeDirSync,
     getChainAssetPath,
-    ethSidechains,
     getChainBlacklist,
     getChainWhitelist,
 } from "../../src/test/helpers";
@@ -196,7 +196,7 @@ async function initState () {
 }
 
 async function mapChainsAssetsLists() {
-    ethSidechains.forEach(chain => {
+    ethForkChains.forEach(chain => {
         Object.assign(mappedChainsWhitelistAssets, {[chain]: {}})
         Object.assign(mappedChainsBlacklistAssets, {[chain]: {}})
 
