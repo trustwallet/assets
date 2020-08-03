@@ -24,3 +24,20 @@ export function gitMove(path: string, oldName: string, newName: string) {
     console.log(`Renaming file or folder at path ${path}: ${oldName} => ${newName}`);
     execRename(gitMoveCommand(oldName, newName), path);
 }
+
+export function findFiles(base: string, ext: string, files: string[] = [], result: string[] = []): string[] {
+    files = fs.readdirSync(base) || files;
+    result = result || result;
+
+    files.forEach(file => {
+        var newbase = path.join(base, file);
+        if (fs.statSync(newbase).isDirectory()) {
+            result = findFiles(newbase, ext, fs.readdirSync(newbase), result);
+        } else {
+            if (file.substr(-1*(ext.length+1)) == '.' + ext) {
+                result.push(newbase);
+            }
+        }
+    });
+    return result;
+ }

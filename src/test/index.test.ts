@@ -1,12 +1,7 @@
 import {
-    chainsFolderPath,
-    findFiles,
     findDuplicate,
     findCommonElementOrDuplicate,
-    isValidJSON,
-    pricingFolderPath,
 } from "./helpers"
-import { getHandle } from "../../script-old/gen_info";
 
 import {
     isChecksum,
@@ -25,41 +20,13 @@ import {
 } from "../../script/common/types";
 import { findImagesToFetch } from "../../script/action/binance";
 
-describe("Test all JSON files to have valid content", () => {
-    const files = [
-        ...findFiles(chainsFolderPath, 'json'),
-        ...findFiles(pricingFolderPath, 'json')
-    ]
-
-    files.forEach(file => { 
-        expect(isValidJSON(file), `${file} path contains invalid JSON`).toBe(true)
-    });
-})
-
-describe("Test helper functions", () => {
-    test(`Test getHandle`, () => {
-        const urls = [
-            {
-                url: "https://twitter.com/aeternity",
-                expected: "aeternity"
-            },
-            {
-                url: "https://www.reddit.com/r/Aeternity",
-                expected: "Aeternity"
-            }
-        ]
-
-        urls.forEach(u => {
-            expect(getHandle(u.url), `Getting handle from url ${u}`).toBe(u.expected)
-        })
-    })
-
+describe("Test old helper functions", () => {
     test(`Test findDuplicate`, () => {
         expect(findDuplicate(["a", "bb", "ccc"]), `No duplicates`).toBe(null)
         expect(findDuplicate(["a", "bb", "ccc", "bb"]), `One double duplicate`).toBe("bb")
         expect(findDuplicate([]), `Empty array`).toBe(null)
         expect(findDuplicate(["a"]), `One element`).toBe(null)
-        expect(findDuplicate(["a", "bb", "ccc", "bb", "d", "bb"]), `One trip[le duplicate`).toBe("bb")
+        expect(findDuplicate(["a", "bb", "ccc", "bb", "d", "bb"]), `One triple duplicate`).toBe("bb")
         expect(findDuplicate(["a", "bb", "ccc", "bb", "a"]), `Two double duplicates`).toBe("a")
     })
 

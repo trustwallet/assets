@@ -32,6 +32,7 @@ export const getChainAssetLogoPath = (chain: string, asset: string): string => `
 export const getChainAssetInfoPath = (chain: string, asset: string): string => `${getChainAssetPath(chain, asset)}/${infoFullName}`;
 export const getChainWhitelistPath = (chain: string): string => `${getChainPath(chain)}/${whiteList}`;
 export const getChainBlacklistPath = (chain: string): string => `${getChainPath(chain)}/${blackList}`;
+export const pricingFolderPath = path.join(process.cwd(), '/pricing');
 
 export const getChainValidatorsPath = (chain: string): string => `${getChainPath(chain)}/validators`;
 export const getChainValidatorsListPath = (chain: string): string => `${getChainValidatorsPath(chain)}/${validatorsList}`;

@@ -2,6 +2,7 @@ import { BinanceAction } from "./binance";
 import { CosmosAction } from "./cosmos";
 import { EthForks } from "./eth-forks";
 import { FoldersFiles } from "./folders-and-files";
+import { JsonAction } from "./json";
 import { KavaAction } from "./kava";
 import { LogoSize } from "./logo-size";
 import { TerraAction } from "./terra";
@@ -21,6 +22,8 @@ const actionList: ActionInterface[] = [
     new LogoSize(),
     new Whitelist(),
     new Validators(),
+    new JsonAction(),
+    // chains:
     new BinanceAction(),
     new CosmosAction(),
     new KavaAction(),
