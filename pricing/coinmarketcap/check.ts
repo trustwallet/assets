@@ -1,6 +1,6 @@
 import { CheckStepInterface } from "../../script/action/interface";
 import { readFileSync } from "../../script/common/filesystem";
-import { mapTiker, TickerType } from "../../src/test/models";
+import { mapTiker, TickerType } from "../../script-old/models";
 import { isChecksum } from "../../script/common/eth-web3";
 import { isTRC10, isTRC20 } from "../../script/action/tron";
 import { retrieveAssetSymbols } from "../../script/action/binance";

@@ -15,7 +15,7 @@ import {
     getChainBlacklist,
     getChainWhitelist,
 } from "../../script-old/helpers";
-import { TickerType, mapTiker, PlatformType } from "../../src/test/models";
+import { TickerType, mapTiker, PlatformType } from "../../script-old/models";
 
 // Steps required to run this:
 // 1. (Optional) CMC API key already setup, use yours if needed. Install script deps "npm i" if hasn't been run before.
