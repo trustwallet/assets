@@ -4,7 +4,7 @@ import {
     chainsFolderPath,
     getChainInfoPath,
     isChainInfoExistSync,
-} from "../src/test/helpers"
+} from "./helpers"
 import { CoinInfoList } from "../src/test/models";
 
 const dafaultInfoTemplate: CoinInfoList = 

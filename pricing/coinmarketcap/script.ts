@@ -14,7 +14,7 @@ import {
     getChainAssetPath,
     getChainBlacklist,
     getChainWhitelist,
-} from "../../src/test/helpers";
+} from "../../script-old/helpers";
 import { TickerType, mapTiker, PlatformType } from "../../src/test/models";
 
 // Steps required to run this:

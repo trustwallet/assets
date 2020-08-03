@@ -21,7 +21,7 @@ import {
     readDirSync,
     toChecksum,
     isDirContainLogo
-} from "../src/test/helpers"
+} from "./helpers"
 
 ethForkChains.forEach(chain => {
     const chainAssetsPath = getChainAssetsPath(chain)

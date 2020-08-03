@@ -6,7 +6,7 @@ import {
     readDirSync,
     removeDir,
     getAllChainsList,
-} from "../src/test/helpers"
+} from "./helpers"
 
 getAllChainsList().forEach(async chain => {
     const chainAssetsPath = getChainAssetsPath(chain)
