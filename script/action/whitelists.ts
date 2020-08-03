@@ -1,7 +1,7 @@
 import { chainsWithBlacklist } from "../common/blockchains";
 import { getChainAssetsList, getChainWhitelistPath, getChainBlacklistPath } from "../common/repo-structure";
 import { readFileSync, writeFileSync } from "../common/filesystem";
-import { arrayDiff } from "../common/types";
+import { arrayDiff, findCommonElementOrDuplicate } from "../common/types";
 import { ActionInterface, CheckStepInterface } from "./interface";
 import { formatSortJson, formatUniqueSortJson } from "../common/json";
 import * as bluebird from "bluebird";
@@ -18,9 +18,13 @@ async function checkUpdateWhiteBlackList(chain: string, checkOnly: boolean ): Pr
     const currentWhitelist = JSON.parse(currentWhitelistText);
     const currentBlacklist = JSON.parse(currentBlacklistText);
 
+    const commonElementsOrDuplicated = findCommonElementOrDuplicate(currentWhitelist, currentBlacklist);
+    if (commonElementsOrDuplicated && commonElementsOrDuplicated.length > 0) {
+        wrongMsg += `Blacklist and whitelist for chain ${chain} should have no common elements or duplicates, found ${commonElementsOrDuplicated.length}, ${commonElementsOrDuplicated[0]}\n`;
+    }
     const removedAssets = arrayDiff(currentWhitelist, assets);
-    if (removedAssets.length > 0) {
-        wrongMsg += `Blacklist and whitelist for chain ${chain} should have no common elements or duplicates, found ${removedAssets.length}, ${removedAssets[0]}\n`;
+    if (removedAssets && removedAssets.length > 0) {
+        wrongMsg += `Whitelist for chain ${chain} contains non-exitent assets, found ${removedAssets.length}, ${removedAssets[0]}\n`;
     }
 
     const niceWhite = formatSortJson(assets);

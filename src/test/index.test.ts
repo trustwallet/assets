@@ -1,8 +1,7 @@
 import {
     findDuplicate,
     findCommonElementOrDuplicate,
-} from "./helpers"
-
+} from "../../script/common/types";
 import {
     isChecksum,
     toChecksum
@@ -19,26 +18,6 @@ import {
     arrayDiff
 } from "../../script/common/types";
 import { findImagesToFetch } from "../../script/action/binance";
-
-describe("Test old helper functions", () => {
-    test(`Test findDuplicate`, () => {
-        expect(findDuplicate(["a", "bb", "ccc"]), `No duplicates`).toBe(null)
-        expect(findDuplicate(["a", "bb", "ccc", "bb"]), `One double duplicate`).toBe("bb")
-        expect(findDuplicate([]), `Empty array`).toBe(null)
-        expect(findDuplicate(["a"]), `One element`).toBe(null)
-        expect(findDuplicate(["a", "bb", "ccc", "bb", "d", "bb"]), `One triple duplicate`).toBe("bb")
-        expect(findDuplicate(["a", "bb", "ccc", "bb", "a"]), `Two double duplicates`).toBe("a")
-    })
-
-    test(`Test findCommonElementOrDuplicate`, () => {
-        expect(findCommonElementOrDuplicate(["a", "bb", "ccc"], ["1", "22", "333"]), `No intersection or duplicates`).toBe(null)
-        expect(findCommonElementOrDuplicate(["a", "bb", "ccc"], ["1", "bb", "333"]), `Common element`).toBe("bb")
-        expect(findCommonElementOrDuplicate(["a", "bb", "ccc", "bb"], ["1", "22", "333"]), `Duplicate in first`).toBe("bb")
-        expect(findCommonElementOrDuplicate(["a", "bb", "ccc"], ["1", "22", "333", "22"]), `Duplicate in second`).toBe("22")
-        expect(findCommonElementOrDuplicate(["a", "bb", "ccc", "1", "bb"], ["1", "22", "333", "22"]), `Intersection and duplicates`).toBe("22")
-        expect(findCommonElementOrDuplicate([], []), `Empty lists`).toBe(null)
-    })
-});
 
 describe("Test eth-web3 helpers", () => {
     test(`Test isChecksum`, () => {
@@ -96,6 +75,22 @@ describe("Test type helpers", () => {
     });
     test(`Test arrayDiff`, () => {
         expect(arrayDiff(["a", "b", "c"], ["c"]), `4 elems with 1 duplicate`).toEqual(["a", "b"]);
+    });
+    test(`Test findDuplicate`, () => {
+        expect(findDuplicate(["a", "bb", "ccc"]), `No duplicates`).toBe(null)
+        expect(findDuplicate(["a", "bb", "ccc", "bb"]), `One double duplicate`).toBe("bb")
+        expect(findDuplicate([]), `Empty array`).toBe(null)
+        expect(findDuplicate(["a"]), `One element`).toBe(null)
+        expect(findDuplicate(["a", "bb", "ccc", "bb", "d", "bb"]), `One triple duplicate`).toBe("bb")
+        expect(findDuplicate(["a", "bb", "ccc", "bb", "a"]), `Two double duplicates`).toBe("a")
+    });
+    test(`Test findCommonElementOrDuplicate`, () => {
+        expect(findCommonElementOrDuplicate(["a", "bb", "ccc"], ["1", "22", "333"]), `No intersection or duplicates`).toBe(null)
+        expect(findCommonElementOrDuplicate(["a", "bb", "ccc"], ["1", "bb", "333"]), `Common element`).toBe("bb")
+        expect(findCommonElementOrDuplicate(["a", "bb", "ccc", "bb"], ["1", "22", "333"]), `Duplicate in first`).toBe("bb")
+        expect(findCommonElementOrDuplicate(["a", "bb", "ccc"], ["1", "22", "333", "22"]), `Duplicate in second`).toBe("22")
+        expect(findCommonElementOrDuplicate(["a", "bb", "ccc", "1", "bb"], ["1", "22", "333", "22"]), `Intersection and duplicates`).toBe("22")
+        expect(findCommonElementOrDuplicate([], []), `Empty lists`).toBe(null)
     });
 });
 

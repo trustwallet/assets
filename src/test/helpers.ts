@@ -180,25 +180,6 @@ export const mapList = arr => {
     }, {})
 }
 
-export function findDuplicate(list: string[]): string {
-    let m = new Map<string, number>()
-    let duplicate: string = null
-    list.forEach(val => {
-        if (m.has(val)) {
-            duplicate = val
-        } else {
-            m.set(val, 0)
-        }
-    })
-    return duplicate
-}
-
-// Check that two lists have no common elements, and no duplicates in either.
-// Do a single check: checking for duplicates in the concatenated list.
-export function findCommonElementOrDuplicate(list1: string[], list2: string[]) {
-    return findDuplicate(list1.concat(list2))
-}
-
 export const getImageDimensions = (path: string) => sizeOf(path)
 
 export function isLogoDimensionOK(path: string): [boolean,  string] {
