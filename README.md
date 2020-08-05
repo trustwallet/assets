@@ -1,6 +1,6 @@
 # Trust Wallet Assets Info
 
-![CI](https://github.com/trustwallet/assets/workflows/Daily%20Update/badge.svg)
+![Periodic Update](https://github.com/trustwallet/assets/workflows/Periodic%20External%20Update/badge.svg)
 
 ## Overview
 Hello and welcome to Trust Wallet assets info contribution guide. We appreciate your effort to open-source.
