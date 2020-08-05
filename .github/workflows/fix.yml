@@ -17,7 +17,7 @@ jobs:
         run: npm ci
       - name: Run fix script
         run: npm run fix
-      - name: Show fix result (diff); run 'npm run fix' locally
+      - name: Show git status (diff)
         if: success()
         run: git status
       - name: Run test
