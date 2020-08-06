@@ -5,7 +5,7 @@ import {
     chainsFolderPath,
     getChainLogoPath,
     calculateAspectRatioFit,
-    getImageDimentions,
+    getImageDimensions,
     getChainAssetsPath,
     getChainAssetLogoPath,
     isPathExistsSync,
@@ -27,7 +27,7 @@ function downsize() {
     bluebird.map(foundChains, async chain => {
         console.log(`Resizing assets on chain ${chain}`)
         const chainLogoPath = getChainLogoPath(chain)
-        const { width: srcWidth, heigth: srcHeight } = getImageDimentions(chainLogoPath)
+        const { width: srcWidth, heigth: srcHeight } = getImageDimensions(chainLogoPath)
         
         // Check and resize if needed chain logo
         if (isDownsizing(srcWidth, srcHeight)) {
@@ -39,7 +39,7 @@ function downsize() {
         if (isPathExistsSync(assetsPath)) {
             bluebird.mapSeries(readDirSync(assetsPath), async asset => {
                 const assetPath = getChainAssetLogoPath(chain, asset)
-                const { width: srcWidth, height: srcHeight } = getImageDimentions(assetPath)
+                const { width: srcWidth, height: srcHeight } = getImageDimensions(assetPath)
                 if (isDownsizing(srcWidth, srcHeight)) {
                     await resize(srcWidth, srcHeight, assetPath)
                 }
@@ -60,7 +60,7 @@ function downsize() {
             const validatorsList = JSON.parse(readFileSync(getChainValidatorsListPath(chain)))
             bluebird.mapSeries(validatorsList, async ({ id }) => {
                 const path = getChainValidatorAssetLogoPath(chain, id)
-                const { width: srcWidth, height: srcHeight } = getImageDimentions(path)
+                const { width: srcWidth, height: srcHeight } = getImageDimensions(path)
                     if (isDownsizing(srcWidth, srcHeight)) {
                         await resize(srcWidth, srcHeight, path)
                     }
