@@ -1,8 +1,8 @@
 import { updateAll } from "../action/update-all";
 
-export function main() {
+export async function main() {
     try {
-        updateAll();
+        await updateAll();
     } catch(err) {
         console.error(err);
         process.exit(1);
