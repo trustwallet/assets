@@ -18,6 +18,7 @@ const binanceChain = "binance"
 const binanceUrlTokens2 = config.getConfig("binance_url_tokens2", "https://dex-atlantic.binance.org/api/v1/tokens?limit=1000");
 const binanceUrlTokens8 = config.getConfig("binance_url_tokens8", "https://dex-atlantic.binance.org/api/v1/mini/tokens?limit=1000");
 const binanceUrlTokenAssets = config.getConfig("binance_url_token_assets", "https://explorer.binance.org/api/v1/assets?page=1&rows=1000");
+var cachedAssets = [];
 
 async function retrieveBep2AssetList(): Promise<any[]> {
     console.log(`     Retrieving token asset infos from: ${binanceUrlTokenAssets}`);
@@ -26,13 +27,21 @@ async function retrieveBep2AssetList(): Promise<any[]> {
     return assetInfoList
 }
 
+async function retrieveAssets(): Promise<any[]> {
+    // cache results because of rate limit, used more than once
+    if (cachedAssets.length == 0) {
+        console.log(`     Retrieving token infos (${binanceUrlTokens2}, ${binanceUrlTokens8})`);
+        const bep2assets = await axios.get(binanceUrlTokens2);
+        const bep8assets = await axios.get(binanceUrlTokens8);
+        cachedAssets = bep2assets.data.concat(bep8assets.data);
+    }
+    console.log(`     Using ${cachedAssets.length} assets`);
+    return cachedAssets;
+}
+
 export async function retrieveAssetSymbols(): Promise<string[]> {
-    console.log(`     Retrieving token infos (${binanceUrlTokens2}, ${binanceUrlTokens8})`);
-    const bep2assets = await axios.get(binanceUrlTokens2);
-    const bep8assets = await axios.get(binanceUrlTokens8);
-    const symbols = bep2assets.data.map(({ symbol }) => symbol)
-        .concat(bep8assets.data.map(({ symbol }) => symbol));
-    console.log(`     Retrieved ${symbols.length} symbols`);
+    const assets = await retrieveAssets();
+    const symbols = assets.map(({ symbol }) => symbol);
     return symbols;
 }
 
