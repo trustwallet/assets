@@ -17,7 +17,7 @@ import {
 const binanceChain = "binance"
 const binanceAssetsUrl = config.getConfig("binance_assets_url", "https://explorer.binance.org/api/v1/assets?page=1&rows=1000");
 
-async function retrieveAssetList(): Promise<any[]>{
+async function retrieveBep2AssetList(): Promise<any[]> {
     console.log(`Retrieving assets info from: ${binanceAssetsUrl}`);
     const { assetInfoList } = await axios.get(binanceAssetsUrl).then(r => r.data);
     console.log(`Retrieved ${assetInfoList.length} asset infos`);
@@ -109,12 +109,13 @@ export class BinanceAction implements ActionInterface {
     fix = null;
     
     async update(): Promise<void> {
-        const assetInfoList = await retrieveAssetList();
+        // retrieve missing token images; BEP2 (bep8 not supported)
+        const bep2InfoList = await retrieveBep2AssetList();
         const blacklist: string[] = require(getChainBlacklistPath(binanceChain));
-    
-        const toFetch = findImagesToFetch(assetInfoList, blacklist);
+
+        const toFetch = findImagesToFetch(bep2InfoList, blacklist);
         const fetchedAssets = await fetchMissingImages(toFetch);
-    
+
         if (fetchedAssets.length > 0) {
             console.log(`Fetched ${fetchedAssets.length} asset(s):`);
             fetchedAssets.forEach(asset => console.log(`  ${asset}`));
