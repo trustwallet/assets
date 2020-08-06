@@ -1,6 +1,6 @@
 # Trust Wallet Assets Info
 
-![CI](https://github.com/trustwallet/assets/workflows/Daily%20Update/badge.svg)
+![Periodic Update](https://github.com/trustwallet/assets/workflows/Periodic%20External%20Update/badge.svg)
 
 ## Overview
 Hello and welcome to Trust Wallet assets info contribution guide. We appreciate your effort to open-source.
@@ -68,11 +68,12 @@ Smart contract address update procedure:
 
 
 ## Image Requirements
-- file extension: `png`. Uppercase `PNG` is considered as invalid
-- name：file name requirements for: `logo.png` name, but [folder naming](#repository-structure) where they placed is most important part of contribution
-- dimension: `256px by 256px` or `512px by 512px`
-- size: up to `100 KB`. TIP: use free drag and drop online service [tinypng](https://tinypng.com/) to optimize image size
-- background: preferably transparent
+- File location: must be placed in the correct folder and subfolder within the [folder structure](#repository-structure).
+- File extension: `png`. Uppercase `PNG` is considered invalid.
+- File name：`logo.png`.
+- Dimension: `256px by 256px` or `512px by 512px`.
+- Background: preferably transparent (should fit dark mode as well; black logos need light border/background).
+- File size: maximum 100KB.  Tip: optimize image size, e.g. using simple drag-and-drop online service [tinypng](https://tinypng.com/).
 
 ## dApp image naming requirements
 - [Folder for upload](https://github.com/trustwallet/assets/tree/master/dapps)
@@ -267,3 +268,8 @@ https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/tron/ass
 - [Aragon](https://aragon.org/) − Aragon is platform and network for decentralized organizations.
 - [SpiderDEX](https://www.spiderdex.com) - Decentralized exchange for crypto collectibles.
 - [Zerion](https://zerion.io) — A simple interface to decentralized finance.
+
+## Disclaimer
+Trust Wallet team allows anyone to submit new assets to this repository. However, this does not mean that we are in direct partnership with all of the projects. 
+Trust Wallet team will blacklist projects that are deemed as scams after careful review of the said assets.
+Trust Wallet team reserves the right to change the terms of asset submissions at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.
