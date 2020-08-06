@@ -15,19 +15,25 @@ import {
 } from "../common/repo-structure";
 
 const binanceChain = "binance"
-const binanceAssetsUrl = config.getConfig("binance_assets_url", "https://explorer.binance.org/api/v1/assets?page=1&rows=1000");
+const binanceUrlTokens2 = config.getConfig("binance_url_tokens2", "https://dex-atlantic.binance.org/api/v1/tokens?limit=1000");
+const binanceUrlTokens8 = config.getConfig("binance_url_tokens8", "https://dex-atlantic.binance.org/api/v1/mini/tokens?limit=1000");
+const binanceUrlTokenAssets = config.getConfig("binance_url_token_assets", "https://explorer.binance.org/api/v1/assets?page=1&rows=1000");
 
 async function retrieveBep2AssetList(): Promise<any[]> {
-    console.log(`Retrieving assets info from: ${binanceAssetsUrl}`);
-    const { assetInfoList } = await axios.get(binanceAssetsUrl).then(r => r.data);
-    console.log(`Retrieved ${assetInfoList.length} asset infos`);
+    console.log(`     Retrieving token asset infos from: ${binanceUrlTokenAssets}`);
+    const { assetInfoList } = await axios.get(binanceUrlTokenAssets).then(r => r.data);
+    console.log(`     Retrieved ${assetInfoList.length} token asset infos`);
     return assetInfoList
 }
 
 export async function retrieveAssetSymbols(): Promise<string[]> {
-    //axios.get(`https://dex-atlantic.binance.org/api/v1/tokens?limit=1000`).then(res => res.data.map(({ symbol }) => symbol))
-    const assetInfoList = await retrieveAssetList();
-    return assetInfoList.map(({ asset }) => asset);
+    console.log(`     Retrieving token infos (${binanceUrlTokens2}, ${binanceUrlTokens8})`);
+    const bep2assets = await axios.get(binanceUrlTokens2);
+    const bep8assets = await axios.get(binanceUrlTokens8);
+    const symbols = bep2assets.data.map(({ symbol }) => symbol)
+        .concat(bep8assets.data.map(({ symbol }) => symbol));
+    console.log(`     Retrieved ${symbols.length} symbols`);
+    return symbols;
 }
 
 function fetchImage(url) {
