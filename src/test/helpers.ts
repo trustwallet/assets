@@ -4,11 +4,11 @@ import { ValidatorModel } from "./models";
 const axios = require('axios')
 const Web3 = require('web3')
 const web3 = new Web3('ws://localhost:8546');
-import { CoinTypeUtils, CoinType } from "@trustwallet/types";
+import { CoinType } from "@trustwallet/wallet-core";
 const sizeOf = require("image-size");
 const { execSync } = require('child_process');
 
-export const getChainName = (id: CoinType): string =>  CoinTypeUtils.id(id) // 60 => ethereum
+export const getChainName = (id: CoinType): string =>  CoinType.id(id) // 60 => ethereum
 export const Binance = getChainName(CoinType.binance)
 export const Classic = getChainName(CoinType.classic)
 export const Cosmos = getChainName(CoinType.cosmos)
@@ -105,10 +105,16 @@ export const isLowerCase = (str: string): boolean => str.toLowerCase() === str
 export const isUpperCase = (str: string): boolean => str.toUpperCase() === str
 export const isChecksum = (address: string): boolean => web3.utils.checkAddressChecksum(address)
 export const toChecksum = (address: string): string => web3.utils.toChecksumAddress(address)
-export const getBinanceBEP2Symbols = async () => axios.get(`https://dex-atlantic.binance.org/api/v1/tokens?limit=1000`).then(res => res.data.map(({ symbol }) => symbol))
 
 export const getFileName = (name: string): string => path.basename(name, path.extname(name))
 export const getFileExt = (name: string): string => name.slice((Math.max(0, name.lastIndexOf(".")) || Infinity) + 1)
+
+export async function getBinanceTokenSymbols() {
+    const bep2assets = await axios.get(`https://dex-atlantic.binance.org/api/v1/tokens?limit=1000`);
+    const bep8assets = await axios.get(`https://dex-atlantic.binance.org/api/v1/mini/tokens?limit=1000`);
+    return bep2assets.data.map(({ symbol }) => symbol)
+        .concat(bep8assets.data.map(({ symbol }) => symbol));
+}
 
 export const isTRC10 = (str: string): boolean => (/^\d+$/.test(str))
 export const isTRC20 = (address: string) => {
@@ -180,10 +186,29 @@ export const mapList = arr => {
     }, {})
 }
 
-export const getImageDimentions = (path: string) => sizeOf(path)
+export function findDuplicate(list: string[]): string {
+    let m = new Map<string, number>()
+    let duplicate: string = null
+    list.forEach(val => {
+        if (m.has(val)) {
+            duplicate = val
+        } else {
+            m.set(val, 0)
+        }
+    })
+    return duplicate
+}
 
-export function isLogoDimentionOK(path: string): [boolean,  string] {
-    const { width, height } =  getImageDimentions(path)
+// Check that two lists have no common elements, and no duplicates in either.
+// Do a single check: checking for duplicates in the concatenated list.
+export function findCommonElementOrDuplicate(list1: string[], list2: string[]) {
+    return findDuplicate(list1.concat(list2))
+}
+
+export const getImageDimensions = (path: string) => sizeOf(path)
+
+export function isLogoDimensionOK(path: string): [boolean,  string] {
+    const { width, height } =  getImageDimensions(path)
     if (((width >= minLogoWidth && width <= maxLogoWidth) && (height >= minLogoHeight && height <= maxLogoHeight))) {
         return [true, '']
     } else {
@@ -299,6 +324,7 @@ export const rootDirAllowedFiles = [
     "dapps",
     "media",
     "node_modules",
+    "script-old",
     "script",
     "src",
     ".gitignore",
