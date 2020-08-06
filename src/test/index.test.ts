@@ -7,7 +7,7 @@ import {
     chainsFolderPath,
     ethSidechains,
     findFiles,
-    getBinanceBEP2Symbols,
+    getBinanceTokenSymbols,
     getChainAssetLogoPath,
     getChainAssetPath,
     getChainAssetsPath,
@@ -138,7 +138,8 @@ describe(`Test "blockchains" folder`, () => {
 
     describe(`Check "binace" folder`, () => {
         it("Asset must exist on chain", async () => {
-            const tokenSymbols = await getBinanceBEP2Symbols()
+            const tokenSymbols = await getBinanceTokenSymbols()
+            console.log(tokenSymbols);
             const assets = readDirSync(getChainAssetsPath(Binance))
 
             assets.forEach(asset => {
@@ -362,7 +363,7 @@ describe("Test Coinmarketcap mapping", () => {
     });
 
     test(`"token_id" should be in correct format`, async () => {
-        const bep2Symbols = await getBinanceBEP2Symbols()
+        const bepSymbols = await getBinanceTokenSymbols()
 
         cmcMap.forEach(el => {
             const {coin, token_id, type, id} = el
@@ -379,7 +380,7 @@ describe("Test Coinmarketcap mapping", () => {
                     }
                 case 714:
                     if (type === TickerType.Token) {
-                        expect(bep2Symbols.indexOf(token_id), `"token_id" ${token_id} with id ${id} must be BEP2 symbol`).toBeGreaterThan(0)
+                        expect(bepSymbols.indexOf(token_id), `"token_id" ${token_id} with id ${id} must be BEP2 or BEP8 symbol`).toBeGreaterThan(0)
                         break;
                     }
                 default:
