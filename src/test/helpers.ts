@@ -105,10 +105,16 @@ export const isLowerCase = (str: string): boolean => str.toLowerCase() === str
 export const isUpperCase = (str: string): boolean => str.toUpperCase() === str
 export const isChecksum = (address: string): boolean => web3.utils.checkAddressChecksum(address)
 export const toChecksum = (address: string): string => web3.utils.toChecksumAddress(address)
-export const getBinanceBEP2Symbols = async () => axios.get(`https://dex-atlantic.binance.org/api/v1/tokens?limit=1000`).then(res => res.data.map(({ symbol }) => symbol))
 
 export const getFileName = (name: string): string => path.basename(name, path.extname(name))
 export const getFileExt = (name: string): string => name.slice((Math.max(0, name.lastIndexOf(".")) || Infinity) + 1)
+
+export async function getBinanceTokenSymbols() {
+    const bep2assets = await axios.get(`https://dex-atlantic.binance.org/api/v1/tokens?limit=1000`);
+    const bep8assets = await axios.get(`https://dex-atlantic.binance.org/api/v1/mini/tokens?limit=1000`);
+    return bep2assets.data.map(({ symbol }) => symbol)
+        .concat(bep8assets.data.map(({ symbol }) => symbol));
+}
 
 export const isTRC10 = (str: string): boolean => (/^\d+$/.test(str))
 export const isTRC20 = (address: string) => {
