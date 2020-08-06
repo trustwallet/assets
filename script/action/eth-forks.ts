@@ -8,16 +8,22 @@ import {
     isChainAssetInfoExistSync,
     logoName,
     logoExtension,
-    logoFullName
+    logoFullName,
+    getChainAssetLogoPath
 } from "../common/repo-structure";
 import { formatJsonFile } from "../common/json";
 import {
     getFileName,
     getFileExt,
     gitMove,
-    readDirSync
+    readDirSync,
+    isPathExistsSync,
 } from "../common/filesystem";
 import { isChecksum, toChecksum } from "../common/eth-web3";
+import { ActionInterface, CheckStepInterface } from "./interface";
+import { isLogoOK } from "../common/image";
+import { isAssetInfoOK } from "../common/asset-info";
+import * as bluebird from "bluebird";
 
 function formatInfos() {
     console.log(`Formatting info files...`);
@@ -60,7 +66,53 @@ function checkAddressChecksums() {
     });
 }
 
-export async function fix() {
-    formatInfos();
-    checkAddressChecksums();
+export class EthForks implements ActionInterface {
+    getName(): string { return "Ethereum forks"; }
+    
+    getChecks(): CheckStepInterface[] {
+        var steps: CheckStepInterface[] = [];
+        ethForkChains.forEach(chain => {
+            steps.push(
+                {
+                    getName: () => { return `Folder structure for chain ${chain} (ethereum fork)`;},
+                    check: async () => {
+                        var error: string = "";
+                        const assetsFolder = getChainAssetsPath(chain);
+                        const assetsList = getChainAssetsList(chain);
+                        console.log(`     Found ${assetsList.length} assets for chain ${chain}`);
+                        await bluebird.each(assetsList, async (address) => {
+                            const assetPath = `${assetsFolder}/${address}`;
+                            if (!isPathExistsSync(assetPath)) {
+                                error += `Expect directory at path: ${assetPath}\n`;
+                            }
+                            if (!isChecksum(address)) {
+                                error += `Expect asset at path ${assetPath} in checksum\n`;
+                            }
+                            const assetLogoPath = getChainAssetLogoPath(chain, address);
+                            if (!isPathExistsSync(assetLogoPath)) {
+                                error += `Missing file at path '${assetLogoPath}'\n`;
+                            }
+                            const [isOK, dimensionMsg] = await isLogoOK(assetLogoPath);
+                            if (!isOK) {
+                                error += dimensionMsg + "\n";
+                            }
+                            const [isInfoOK, infoMsg] = isAssetInfoOK(chain, address);
+                            if (!isInfoOK) {
+                                error += infoMsg + "\n";
+                            }
+                        });
+                        return error;
+                    }    
+                }
+            );
+        });
+        return steps;
+    }
+    
+    async fix(): Promise<void> {
+        formatInfos();
+        checkAddressChecksums();
+    }
+    
+    update = null;
 }

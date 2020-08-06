@@ -1,3 +1,6 @@
+export const isLowerCase = (str: string): boolean => str.toLowerCase() === str;
+export const isUpperCase = (str: string): boolean => str.toUpperCase() === str;
+
 export const mapList = arr => {
     return arr.reduce((acm, val) => {
         acm[val] = "";
@@ -26,4 +29,23 @@ export const makeUnique = (arr: any[]): any[] => Array.from(new Set(arr));
 export function arrayDiff(a: string[], b: string[]): string[] {
     const mappedB = mapList(b);
     return a.filter(e => !mappedB.hasOwnProperty(e));
+}
+
+export function findDuplicate(list: string[]): string {
+    let m = new Map<string, number>();
+    let duplicate: string = null;
+    list.forEach(val => {
+        if (m.has(val)) {
+            duplicate = val;
+        } else {
+            m.set(val, 0);
+        }
+    });
+    return duplicate;
+}
+
+// Check that two lists have no common elements, and no duplicates in either.
+// Do a single check: checking for duplicates in the concatenated list.
+export function findCommonElementOrDuplicate(list1: string[], list2: string[]) {
+    return findDuplicate(list1.concat(list2));
 }

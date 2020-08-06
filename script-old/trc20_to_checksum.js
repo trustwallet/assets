@@ -1,7 +1,7 @@
 const { execSync } = require('child_process');
 const path = require('path')
 const axios = require('axios')
-import { readDirSync } from "../src/test/helpers";
+import { readDirSync } from "./helpers";
 
 const assetsPath = path.resolve(`${__dirname}/../blockchains/tron/assets`) 
 const chainAddresses = readDirSync(assetsPath)
