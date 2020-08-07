@@ -10,10 +10,6 @@ jobs:
   pull_request_ci:
     runs-on: ubuntu-latest
     steps:
-    - name: echo
-      run: |
-        echo ${{ github.repository_owner }}
-        echo ${{ github.repository }}
     - uses: actions/checkout@v2
     - uses: actions/setup-node@v1
       with:

@@ -7,10 +7,6 @@ jobs:
   fix:
     runs-on: ubuntu-latest
     steps:
-      - name: echo
-        run: |
-          echo ${{ github.repository_owner }}
-          echo ${{ github.repository }}
       - name: Checkout (trustwallet repo, secret token)
         if: github.repository_owner == 'trustwallet'
         uses: actions/checkout@v2

@@ -8,7 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - uses: jakejarvis/s3-sync-action@master
+    - name: Upload (from main repo only)
+      if: github.repository_owner == 'trustwallet'
+      uses: jakejarvis/s3-sync-action@master
       with:
         args: --acl public-read --follow-symlinks --delete --exclude '*' --include 'dapps/*' --include 'blockchains/*'
       env:
