@@ -4,7 +4,9 @@ on:
     branches:
       - '*'
       - '!master'
-  pull_request-target
+  # run in the PR source context, important because of checkins
+  pull_request_target:
+    types: [assigned, opened, synchronize, reopened]
 jobs:
   fix-pr:
     runs-on: ubuntu-latest
