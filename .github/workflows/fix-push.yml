@@ -1,8 +1,6 @@
 name: Fixes and Consistency Updates - Push
 on:
   push:
-    branches:
-      - '*'
     branches-ignore:
       - 'trustwallet/*'
 jobs:
