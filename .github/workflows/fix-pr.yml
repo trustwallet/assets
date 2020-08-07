@@ -16,9 +16,12 @@ jobs:
         run: echo ${{ github.ref }}
       - name: echo3
         run: echo ${{ github.base_ref }}
+      - name: echo4
+        run: echo ${{ github.repository }}
       - uses: actions/checkout@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          ref: ${{ github.head_ref }}
       - uses: actions/setup-node@v1
         with:
           node-version: 12
