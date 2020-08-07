@@ -1,0 +1,47 @@
+name: Fixes and Consistency Updates - Push
+on:
+  push:
+    branches:
+      - '*'
+    branches-ignore:
+      - 'trustwallet/*'
+jobs:
+  fix-push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo 
+        run: |
+          echo ${{ github.head_ref }}
+          echo ${{ github.base_ref }}
+          echo ${{ github.ref }}
+          echo ${{ github.repository }}
+          echo ${{ github.event.pull_request.head.sha }}
+          echo github.event.pull_request.number ${{ github.event.pull_request.number }}
+          echo ${{ github.event.pull_request.repository }}
+          echo ${{ github.event.pull_request.pull_request.issue }}
+          echo github.event.pull_request.pull_request.commits
+          echo ${{ github.event.pull_request.pull_request.commits }}
+      - uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          ref: ${{ github.ref }}
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - name: Install Dependencies
+        run: npm ci
+      - name: Run fix script
+        run: npm run fix
+      - name: Show fix result (diff); run 'npm run fix' locally
+        run: git status
+      - name: Run check
+        run: npm run check
+      - name: Run test
+        run: npm t
+      - name: Commit changes if any
+        if: success()
+        uses: stefanzweifel/git-auto-commit-action@v4.1.2
+        with:
+          commit_user_name: trust-wallet-merge-bot
+          commit_user_email: mergebot@trustwallet.com
+          commit_message: Fixes and Consistency Updates PR
