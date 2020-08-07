@@ -10,9 +10,9 @@ jobs:
   fix-pr:
     runs-on: ubuntu-latest
     steps:
-      - name echo 
+      - name: echo 
         run echo ${{ github.head_ref }}
-      - name echo 
+      - name: echo 
         run echo ${{ github.ref }}
       - uses: actions/checkout@v2
         with:
