@@ -10,6 +10,10 @@ jobs:
   fix-pr:
     runs-on: ubuntu-latest
     steps:
+      - name echo 
+        run echo ${{ github.head_ref }}
+      - name echo 
+        run echo ${{ github.ref }}
       - uses: actions/checkout@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
