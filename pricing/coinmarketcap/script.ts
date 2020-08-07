@@ -1,21 +1,21 @@
-import { toChecksum } from "../../src/test/helpers"
 const BluebirdPromise = require("bluebird")
 const axios = require("axios")
 const chalk = require('chalk')
 const fs = require("fs")
 const path = require('path')
 const constants = require('bip44-constants')
+import { readFileSync } from "../../script/common/filesystem";
+import { ethForkChains } from "../../script/common/blockchains";
 import {
-    readFileSync,
+    toChecksum,
     getChainAssetLogoPath,
     isPathExistsSync,
     makeDirSync,
     getChainAssetPath,
-    ethSidechains,
     getChainBlacklist,
     getChainWhitelist,
-} from "../../src/test/helpers";
-import { TickerType, mapTiker, PlatformType } from "../../src/test/models";
+} from "../../script-old/helpers";
+import { TickerType, mapTiker, PlatformType } from "../../script-old/models";
 
 // Steps required to run this:
 // 1. (Optional) CMC API key already setup, use yours if needed. Install script deps "npm i" if hasn't been run before.
@@ -54,6 +54,7 @@ const custom: mapTiker[] = [
     // CMC returns multiple entries with 0x4Ddc2D193948926D02f9B1fE9e1daa0718270ED5 (2020-07-28), including them in the override to avoid duplicate
     // 5636 5742 5743 5744 5745 5746
     {"coin": 60, "type": typeToken, "token_id": "0x4Ddc2D193948926D02f9B1fE9e1daa0718270ED5", "id": 5636},
+    {"coin": 60, "type": typeToken, "token_id": "0x41AB1b6fcbB2fA9DCEd81aCbdeC13Ea6315F2Bf2", "id": 2634},
     // {"coin": 60, "type": typeToken, "token_id": "XXX", "id": XXX}, // XXX (XXX)
 ]
 
@@ -61,7 +62,7 @@ const allContracts: mapTiker[] = [] // Temp storage for mapped assets
 let bnbOwnerToSymbol = {} // e.g: bnb1tawge8u97slduhhtumm03l4xl4c46dwv5m9yzk: WISH-2D5
 let bnbOriginalSymbolToSymbol = {} // e.g: WISH: WISH-2D5
 
-async function run() {
+export async function run() {
     try {
         await Promise.all([initState(), setBinanceTokens()])
         const [totalCrypto, coins] = await Promise.all([getTotalActiveCryptocurrencies(), getTickers()])
@@ -195,7 +196,7 @@ async function initState () {
 }
 
 async function mapChainsAssetsLists() {
-    ethSidechains.forEach(chain => {
+    ethForkChains.forEach(chain => {
         Object.assign(mappedChainsWhitelistAssets, {[chain]: {}})
         Object.assign(mappedChainsBlacklistAssets, {[chain]: {}})
 
@@ -351,7 +352,3 @@ function log(string, cb?) {
 //         }
 //     })
 // }
-
-export async function update() {
-    await run();
-}

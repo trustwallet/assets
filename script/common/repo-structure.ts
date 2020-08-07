@@ -3,6 +3,7 @@ import {
     isPathExistsSync,
     readDirSync
 } from "./filesystem";
+import * as config from "./config";
 
 export const logoName = `logo`;
 export const infoName = `info`;
@@ -15,6 +16,14 @@ const whiteList = `whitelist.${jsonExtension}`;
 const blackList = `blacklist.${jsonExtension}`;
 export const validatorsList = `${listName}.${jsonExtension}`
 
+export const assetFolderAllowedFiles = [logoFullName, infoFullName];
+export const chainFolderAllowedFiles = [
+    "assets",
+    whiteList,
+    blackList,
+    "validators",
+    infoName
+]
 export const chainsPath: string = path.join(process.cwd(), '/blockchains');
 export const getChainPath = (chain: string): string => `${chainsPath}/${chain}`;
 export const getChainLogoPath = (chain: string): string => `${getChainPath(chain)}/info/${logoFullName}`;
@@ -24,13 +33,19 @@ export const getChainAssetLogoPath = (chain: string, asset: string): string => `
 export const getChainAssetInfoPath = (chain: string, asset: string): string => `${getChainAssetPath(chain, asset)}/${infoFullName}`;
 export const getChainWhitelistPath = (chain: string): string => `${getChainPath(chain)}/${whiteList}`;
 export const getChainBlacklistPath = (chain: string): string => `${getChainPath(chain)}/${blackList}`;
+export const pricingFolderPath = path.join(process.cwd(), '/pricing');
 
 export const getChainValidatorsPath = (chain: string): string => `${getChainPath(chain)}/validators`;
-export const getChainValidatorsListPath = (chain: string): string => `${getChainValidatorsPath(chain)}/list.${jsonExtension}`;
+export const getChainValidatorsListPath = (chain: string): string => `${getChainValidatorsPath(chain)}/${validatorsList}`;
 export const getChainValidatorsAssetsPath = (chain: string): string => `${getChainValidatorsPath(chain)}/assets`
 export const getChainValidatorAssetLogoPath = (chain: string, asset: string): string => `${getChainValidatorsAssetsPath(chain)}/${asset}/${logoFullName}`
 
 export const isChainAssetInfoExistSync = (chain: string, address: string) => isPathExistsSync(getChainAssetInfoPath(chain, address));
 
+export const getChainFolderFilesList = (chain: string) => readDirSync(getChainPath(chain))
 export const getChainAssetsList = (chain: string): string[] => readDirSync(getChainAssetsPath(chain));
 export const getChainAssetFilesList = (chain: string, address: string) => readDirSync(getChainAssetPath(chain, address));
+export const getChainValidatorsAssets = (chain: string): string[] => readDirSync(getChainValidatorsAssetsPath(chain));
+
+const defaultRootDirAllowedFiles = [".github", "blockchains", "dapps", "media", "script", "test", ".gitignore", "LICENSE", "package-lock.json", "package.json", "README.md", ".git", "Gemfile", "Gemfile.lock"];
+export const rootDirAllowedFiles = config.getConfig("folders_rootdir_allowed_files", defaultRootDirAllowedFiles);
