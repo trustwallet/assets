@@ -46,6 +46,20 @@ export function findDuplicate(list: string[]): string {
 
 // Check that two lists have no common elements, and no duplicates in either.
 // Do a single check: checking for duplicates in the concatenated list.
-export function findCommonElementOrDuplicate(list1: string[], list2: string[]) {
+export function findCommonElementOrDuplicate(list1: string[], list2: string[]): string {
     return findDuplicate(list1.concat(list2));
+}
+
+// Compare two arrays, order does not matter
+export function arrayEqual(a1: any[], a2: any[]): boolean {
+    if (a1.length != a2.length) {
+        return false;
+    }
+    if (!(arrayDiff(a1, a2).length == 0)) {
+        return false;
+    }
+    if (!(arrayDiff(a2, a1).length == 0)) {
+        return false;
+    }
+    return true;
 }

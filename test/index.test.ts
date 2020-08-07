@@ -15,7 +15,8 @@ import {
     mapList,
     sortElements,
     makeUnique,
-    arrayDiff
+    arrayDiff,
+    arrayEqual
 } from "../script/common/types";
 import { findImagesToFetch } from "../script/action/binance";
 
@@ -75,6 +76,7 @@ describe("Test type helpers", () => {
     });
     test(`Test arrayDiff`, () => {
         expect(arrayDiff(["a", "b", "c"], ["c"]), `4 elems with 1 duplicate`).toEqual(["a", "b"]);
+        expect(arrayDiff(["a", "b", "c"], ["d"]), `4 elems with 0 duplicate`).toEqual(["a", "b", "c"]);
     });
     test(`Test findDuplicate`, () => {
         expect(findDuplicate(["a", "bb", "ccc"]), `No duplicates`).toBe(null)
@@ -91,6 +93,12 @@ describe("Test type helpers", () => {
         expect(findCommonElementOrDuplicate(["a", "bb", "ccc"], ["1", "22", "333", "22"]), `Duplicate in second`).toBe("22")
         expect(findCommonElementOrDuplicate(["a", "bb", "ccc", "1", "bb"], ["1", "22", "333", "22"]), `Intersection and duplicates`).toBe("22")
         expect(findCommonElementOrDuplicate([], []), `Empty lists`).toBe(null)
+    });
+    test(`Test arrayEqual`, () => {
+        expect(arrayEqual(["a", "b", "c"], ["a", "b", "c"]), `equal`).toBe(true);
+        expect(arrayEqual(["a", "b", "c", "d"], ["a", "b", "c"]), `length mismatch`).toBe(false);
+        expect(arrayEqual(["a", "b", "c"], ["a", "b", "b"]), `length mismatch`).toBe(false);
+        expect(arrayEqual(["a", "b", "b"], ["a", "b", "c"]), `length mismatch`).toBe(false);
     });
 });
 
