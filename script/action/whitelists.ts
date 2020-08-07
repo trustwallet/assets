@@ -3,7 +3,8 @@ import { getChainAssetsList, getChainWhitelistPath, getChainBlacklistPath } from
 import { readFileSync, writeFileSync } from "../common/filesystem";
 import {
     arrayDiff,
-    findCommonElementOrDuplicate,
+    arrayDiffNocase,
+    findCommonElementsOrDuplicates,
     makeUnique
 } from "../common/types";
 import { ActionInterface, CheckStepInterface } from "./interface";
@@ -22,9 +23,9 @@ async function checkUpdateWhiteBlackList(chain: string, checkOnly: boolean ): Pr
     const currentWhitelist = JSON.parse(currentWhitelistText);
     const currentBlacklist = JSON.parse(currentBlacklistText);
 
-    const commonElementsOrDuplicated = findCommonElementOrDuplicate(currentWhitelist, currentBlacklist);
-    if (commonElementsOrDuplicated && commonElementsOrDuplicated.length > 0) {
-        wrongMsg += `Blacklist and whitelist for chain ${chain} should have no common elements or duplicates, found ${commonElementsOrDuplicated}\n`;
+    const commonElementsOrDuplicates = findCommonElementsOrDuplicates(currentWhitelist, currentBlacklist);
+    if (commonElementsOrDuplicates && commonElementsOrDuplicates.length > 0) {
+        wrongMsg += `Blacklist and whitelist for chain ${chain} should have no common elements or duplicates, found ${commonElementsOrDuplicates.length} ${commonElementsOrDuplicates[0]}\n`;
     }
     const whitelistOrphan = arrayDiff(currentWhitelist, assets);
     if (whitelistOrphan && whitelistOrphan.length > 0) {
@@ -32,24 +33,24 @@ async function checkUpdateWhiteBlackList(chain: string, checkOnly: boolean ): Pr
     }
 
     const newBlack = makeUnique(currentBlacklist.concat(whitelistOrphan));
-    const newWhite = makeUnique(arrayDiff(assets, newBlack));
+    const newWhite = makeUnique(arrayDiffNocase(assets, newBlack));
     //console.log(currentWhitelist.length, "vs.", newWhite.length);
     //console.log(currentBlacklist.length, "vs.", newBlack.length);
 
-    const wDiff1 = arrayDiff(newWhite, currentWhitelist);
+    const wDiff1 = arrayDiffNocase(newWhite, currentWhitelist);
     if (wDiff1.length > 0) {
         wrongMsg += `Some elements are missing from whitelist for chain ${chain}: ${wDiff1.length} ${wDiff1[0]}\n`;
     }
-    const wDiff2 = arrayDiff(currentWhitelist, newWhite);
+    const wDiff2 = arrayDiffNocase(currentWhitelist, newWhite);
     if (wDiff2.length > 0) {
         wrongMsg += `Some elements should be removed from whitelist for chain ${chain}: ${wDiff2.length} ${wDiff2[0]}\n`;
     }
 
-    const bDiff1 = arrayDiff(newBlack, currentBlacklist);
+    const bDiff1 = arrayDiffNocase(newBlack, currentBlacklist);
     if (bDiff1.length > 0) {
         wrongMsg += `Some elements are missing from blacklist for chain ${chain}: ${bDiff1.length} ${bDiff1[0]}\n`;
     }
-    const bDiff2 = arrayDiff(currentBlacklist, newBlack);
+    const bDiff2 = arrayDiffNocase(currentBlacklist, newBlack);
     if (bDiff2.length > 0) {
         wrongMsg += `Some elements should be removed from blacklist for chain ${chain}: ${bDiff2.length} ${bDiff2[0]}\n`;
     }
