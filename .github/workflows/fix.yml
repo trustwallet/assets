@@ -7,7 +7,19 @@ jobs:
   fix:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: echo
+        run: |
+          echo ${{ github.repository_owner }}
+          echo ${{ github.repository }}
+      - name: Checkout (trustwallet)
+        if ${{ github.repository_owner }} == 'trustwallet'
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.DANGER_GITHUB_API_TOKEN }}
+          ref: ${{ github.ref }}
+      - name: Checkout (fork)
+        if ${{ github.repository_owner }} != 'trustwallet'
+        uses: actions/checkout@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           ref: ${{ github.ref }}
