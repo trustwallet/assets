@@ -1,4 +1,4 @@
-name: Fixes and Consistency Updates - PR
+name: Fixes and Consistency Updates - PRT
 on:
   push:
     branches:
@@ -8,9 +8,21 @@ on:
   pull_request_target:
     types: [assigned, opened, synchronize, reopened]
 jobs:
-  fix-pr:
+  fix-prt:
     runs-on: ubuntu-latest
     steps:
+      - name: echo 
+        run: |
+          echo ${{ github.head_ref }}
+          echo ${{ github.base_ref }}
+          echo ${{ github.ref }}
+          echo ${{ github.repository }}
+          echo ${{ github.event.pull_request.head.sha }}
+          echo github.event.pull_request.number ${{ github.event.pull_request.number }}
+          echo ${{ github.event.pull_request.repository }}
+          echo ${{ github.event.pull_request.pull_request.issue }}
+          echo github.event.pull_request.pull_request.commits
+          echo ${{ github.event.pull_request.pull_request.commits }}
       - uses: actions/checkout@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
