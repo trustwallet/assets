@@ -12,13 +12,13 @@ jobs:
           echo ${{ github.repository_owner }}
           echo ${{ github.repository }}
       - name: Checkout (trustwallet repo, secret token)
-        if: ${{ github.repository_owner }} == 'trustwallet'
+        if: github.repository_owner == 'trustwallet'
         uses: actions/checkout@v2
         with:
           token: ${{ secrets.DANGER_GITHUB_API_TOKEN }}
           ref: ${{ github.ref }}
       - name: Checkout (fork repo, default token)
-        if: ${{ github.repository_owner }} != 'trustwallet'
+        if: github.repository_owner != 'trustwallet'
         uses: actions/checkout@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
