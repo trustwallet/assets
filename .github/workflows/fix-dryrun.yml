@@ -1,9 +1,5 @@
 name: Fixes and Consistency Updates - Dry run
 on:
-    push:
-      branches:
-        - '*'
-        - '!master'
     pull_request:
       branches: [master]
 jobs:
@@ -18,9 +14,10 @@ jobs:
        run: npm ci
      - name: Run fix script
        run: npm run fix
-     - name: Show fix result (diff); run 'npm run fix' locally
-       if: success()
-       run: git status
+      - name: Show fix result (diff); run 'npm run fix' locally
+        run: |
+          git status
+          git diff
      - name: Run check
        run: npm run check
      - name: Run test

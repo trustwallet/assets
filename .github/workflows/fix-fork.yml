@@ -1,18 +1,15 @@
-name: Fixes and Consistency Updates - PR
+name: Fixes and Consistency Updates - Fork
 on:
-    push:
-      branches:
-        - '*'
-        - '!master'
-    pull_request:
-      branches: [master]
+  push:
+    branches-ignore: ['trustwallet/*']
 jobs:
-  fix-pr:
+  fix-fork:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          ref: ${{ github.ref }}
       - uses: actions/setup-node@v1
         with:
           node-version: 12
@@ -21,7 +18,9 @@ jobs:
       - name: Run fix script
         run: npm run fix
       - name: Show fix result (diff); run 'npm run fix' locally
-        run: git status
+        run: |
+          git status
+          git diff
       - name: Run check
         run: npm run check
       - name: Run test
@@ -32,4 +31,4 @@ jobs:
         with:
           commit_user_name: trust-wallet-merge-bot
           commit_user_email: mergebot@trustwallet.com
-          commit_message: Fixes and Consistency Updates PR
+          commit_message: Fixes and Consistency Updates on a Fork
