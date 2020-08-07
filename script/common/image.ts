@@ -71,37 +71,50 @@ async function isLogoSizeOK(path: string): Promise<[boolean, string]> {
     return [true, ''];
 }
 
-// return true if image updated
-export async function resizeIfTooLarge(path: string): Promise<boolean> {
+// return if image if too large, and if image has been updated
+export async function checkResizeIfTooLarge(path: string, checkOnly: boolean): Promise<[boolean, boolean]> {
+    let tooLarge = false;
     let updated: boolean = false;
-    
+
     const { width: srcWidth, height: srcHeight } = getImageDimensions(path);
+
+    if (!isDimensionOK(srcWidth, srcHeight)) {
+        tooLarge = true; // may be too small as well
+    }
+
     if (isDimensionTooLarge(srcWidth, srcHeight)) {
-        const { width, height } = calculateTargetSize(srcWidth, srcHeight, maxLogoWidth, maxLogoHeight);
-        console.log(`Resizing image at ${path} from ${srcWidth}x${srcHeight} => ${width}x${height}`)
-        await sharp(path).resize(width, height).toBuffer()
-            .then(data => {
-                writeFileSync(path, data);
-                updated = true;
-            })
-            .catch(e => {
-                console.log(chalk.red(e.message));
-            });
+        tooLarge = true;
+        if (!checkOnly) {
+            // resize
+            const { width, height } = calculateTargetSize(srcWidth, srcHeight, maxLogoWidth, maxLogoHeight);
+            console.log(`Resizing image at ${path} from ${srcWidth}x${srcHeight} => ${width}x${height}`)
+            await sharp(path).resize(width, height).toBuffer()
+                .then(data => {
+                    writeFileSync(path, data);
+                    updated = true;
+                })
+                .catch(e => {
+                    console.log(chalk.red(e.message));
+                });
+        }
     }
 
     // If file size > max limit, compress with tinypng
     const sizeKilobyte = getFileSizeInKilobyte(path);
     if (sizeKilobyte > maxLogoSizeInKilobyte) {
-        console.log(`Resizing image at path ${path} from ${sizeKilobyte} kB`);
-        await compressTinyPNG(path)
-            .then(() => {
-                updated = true;
-                console.log(`Resized image at path ${path} from ${sizeKilobyte} kB => ${getFileSizeInKilobyte(path)} kB`);
-            })
-            .catch(e => {
-                console.log(chalk.red(e.message));
-            });
+        tooLarge = true;
+        if (!checkOnly) {
+            console.log(`Resizing image at path ${path} from ${sizeKilobyte} kB`);
+            await compressTinyPNG(path)
+                .then(() => {
+                    updated = true;
+                    console.log(`Resized image at path ${path} from ${sizeKilobyte} kB => ${getFileSizeInKilobyte(path)} kB`);
+                })
+                .catch(e => {
+                    console.log(chalk.red(e.message));
+                });
+        }
     }
 
-   return updated;
+   return [tooLarge, updated];
 }
