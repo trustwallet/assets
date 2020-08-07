@@ -17,6 +17,7 @@ jobs:
           echo ${{ github.ref }}
           echo ${{ github.repository }}
           echo ${{ github.event.pull_request.head.sha }}
+          echo ${{ github.event.pull_request.repository }}
       - uses: actions/checkout@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
