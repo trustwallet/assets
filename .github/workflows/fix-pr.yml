@@ -1,11 +1,10 @@
 name: Fixes and Consistency Updates - PR
 on:
-    push:
-      branches:
-        - '*'
-        - '!master'
-    pull_request_target:
-      branches: [master]
+  push:
+    branches:
+      - '*'
+      - '!master'
+  pull_request_target
 jobs:
   fix-pr:
     runs-on: ubuntu-latest
