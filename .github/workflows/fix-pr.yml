@@ -12,8 +12,10 @@ jobs:
     steps:
       - name: echo 
         run: echo ${{ github.head_ref }}
-      - name: echo 
+      - name: echo2 
         run: echo ${{ github.ref }}
+      - name: echo3
+        run: echo ${{ github.base_ref }}
       - uses: actions/checkout@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
