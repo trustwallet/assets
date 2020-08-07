@@ -1,24 +1,12 @@
-name: Fixes and Consistency Updates - Push
+name: Fixes and Consistency Updates - Fork
 on:
   push:
     branches-ignore:
       - 'trustwallet/*'
 jobs:
-  fix-push:
+  fix-fork:
     runs-on: ubuntu-latest
     steps:
-      - name: echo 
-        run: |
-          echo ${{ github.head_ref }}
-          echo ${{ github.base_ref }}
-          echo ${{ github.ref }}
-          echo ${{ github.repository }}
-          echo ${{ github.event.pull_request.head.sha }}
-          echo github.event.pull_request.number ${{ github.event.pull_request.number }}
-          echo ${{ github.event.pull_request.repository }}
-          echo ${{ github.event.pull_request.pull_request.issue }}
-          echo github.event.pull_request.pull_request.commits
-          echo ${{ github.event.pull_request.pull_request.commits }}
       - uses: actions/checkout@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -31,7 +19,9 @@ jobs:
       - name: Run fix script
         run: npm run fix
       - name: Show fix result (diff); run 'npm run fix' locally
-        run: git status
+        run: |
+          git status
+          git diff
       - name: Run check
         run: npm run check
       - name: Run test
