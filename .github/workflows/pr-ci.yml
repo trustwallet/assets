@@ -6,6 +6,7 @@ on:
         - '!master'
     pull_request:
       branches: [master]
+  workflow_dispatch:
 jobs:
   pull_request_ci:
     runs-on: ubuntu-latest
