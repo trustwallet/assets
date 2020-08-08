@@ -1,17 +1,11 @@
 const bluebird = require("bluebird")
-const nestedProperty = require("nested-property");
+import { writeFileSync, readDirSync } from "../script/common/filesystem";
 import {
     chainsFolderPath,
     getChainInfoPath,
     isChainInfoExistSync,
-    writeFileSync,
-    readDirSync,
-    readFileSync,
-    getChainAssetInfoPath,
-    getChainAssetsPath,
-    isPathExistsSync
-} from "../src/test/helpers"
-import { CoinInfoList } from "../src/test/models";
+} from "./helpers"
+import { CoinInfoList } from "./models";
 
 const dafaultInfoTemplate: CoinInfoList = 
 {

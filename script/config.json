@@ -1,6 +1,11 @@
 {
     "image_max_logo_width": 512,
     "image_max_logo_height": 512,
+    "image_min_logo_width": 64,
+    "image_min_logo_height": 64,
     "image_logo_size_kb": 100,
-    "binance_assets_url": "https://explorer.binance.org/api/v1/assets?page=1&rows=1000"
+    "folders_rootdir_allowed_files": [".github", "blockchains", "dapps", "media", "node_modules", "script-old", "script", "test", ".gitignore", "azure-pipelines.yml", "jest.config.js", "LICENSE", "package-lock.json", "package.json", "README.md", ".git", "pricing", "Dangerfile", "Gemfile", "Gemfile.lock"],
+    "binance_url_tokens2": "https://dex-atlantic.binance.org/api/v1/tokens?limit=1000",
+    "binance_url_tokens8": "https://dex-atlantic.binance.org/api/v1/mini/tokens?limit=1000",
+    "binance_url_token_assets": "https://explorer.binance.org/api/v1/assets?page=1&rows=1000"
 }

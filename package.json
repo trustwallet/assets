@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
+    "check": "ts-node ./script/main/check",
     "fix": "ts-node ./script/main/fix",
     "update": "ts-node ./script/main/update"
   },
