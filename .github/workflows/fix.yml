@@ -1,0 +1,44 @@
+name: Fixes and Consistency Updates
+on:
+  push:
+    # This runs on fork branches too
+    branches: [ '*' ]
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout (trustwallet repo, secret token)
+        if: github.repository_owner == 'trustwallet'
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.DANGER_GITHUB_API_TOKEN }}
+          ref: ${{ github.ref }}
+      - name: Checkout (fork repo, default token)
+        if: github.repository_owner != 'trustwallet'
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          ref: ${{ github.ref }}
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - name: Install Dependencies
+        run: npm ci
+      - name: Run fix script
+        run: npm run fix
+      - name: Show fix result (diff); run 'npm run fix' locally
+        run: |
+          git status
+          git diff
+      - name: Run check
+        run: npm run check
+      - name: Run test
+        run: npm t
+      - name: Commit changes
+        # disabled on forks, commit there causes no CI run
+        if: success() && (github.repository_owner == 'trustwallet')
+        uses: stefanzweifel/git-auto-commit-action@v4.1.2
+        with:
+          commit_user_name: trust-wallet-merge-bot
+          commit_user_email: mergebot@trustwallet.com
+          commit_message: Fixes and Consistency Updates

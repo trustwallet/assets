@@ -1,6 +1,6 @@
 # Trust Wallet Assets Info
 
-![CI](https://github.com/trustwallet/assets/workflows/Daily%20Update/badge.svg)
+![Periodic Update](https://github.com/trustwallet/assets/workflows/Periodic%20External%20Update/badge.svg)
 
 ## Overview
 Hello and welcome to Trust Wallet assets info contribution guide. We appreciate your effort to open-source.
@@ -16,7 +16,9 @@ Token repository [https://github.com/trustwallet/assets](https://github.com/trus
   - [Callisto Network (CLO)](https://callisto.network/)
   - [Thunder Token (TT)](https://thundercore.com/)
 
-2. [BEP2](https://github.com/binance-chain/BEPs/blob/master/BEP2.md) Binance DEX token (native marketplace on Binance Chain)
+2. [BEP2](https://github.com/binance-chain/BEPs/blob/master/BEP2.md) 
+   [BEP8](https://github.com/binance-chain/BEPs/blob/master/BEP8.md)
+   Binance DEX token (native marketplace on Binance Chain)
 
 3. [TRC10, TRC20](https://developers.tron.network/docs/trc10-token) tokens on TRON blockchain
 
@@ -164,7 +166,7 @@ To remain in validators list:
 ## Common uploads
 Uploading:
 1. Ethereum ERC20 [token folder](https://github.com/trustwallet/assets/tree/master/blockchains/ethereum/assets)
-2. Binance DEX BEP2 token [token folder](https://github.com/trustwallet/assets/tree/master/blockchains/binance/assets)
+2. Binance DEX BEP2, BEP8 token [token folder](https://github.com/trustwallet/assets/tree/master/blockchains/binance/assets)
 3. TRON TRC10, TRC20 token [token folder](https://github.com/trustwallet/assets/tree/master/blockchains/tron/assets)
 4. Add Cosmos validator image [](https://github.com/trustwallet/assets/tree/master/blockchains/cosmos/validators)
 5. Add Tezos validator info [](https://github.com/trustwallet/assets/tree/master/blockchains/tezos/validators/list.json)
@@ -248,6 +250,11 @@ https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum
 BEP-2:
 ```js
 https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/ANKR-E97/logo.png
+```
+
+BEP-8:
+```js
+https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/BHC-3E8M/logo.png
 ```
 
 TRC-10:
