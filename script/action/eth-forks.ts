@@ -19,7 +19,7 @@ import {
     readDirSync,
     isPathExistsSync,
 } from "../common/filesystem";
-import { isChecksum, toChecksum } from "../common/eth-web3";
+import { toChecksum } from "../common/eth-web3";
 import { ActionInterface, CheckStepInterface } from "./interface";
 import { isLogoOK } from "../common/image";
 import { isAssetInfoOK } from "../common/asset-info";
@@ -42,8 +42,8 @@ function formatInfos() {
 }
 
 function checkAddressChecksum(assetsFolderPath: string, address: string) {
-    if (!isChecksum(address)) {
-        const checksumAddress = toChecksum(address);
+    const checksumAddress = toChecksum(address);
+    if (checksumAddress !== address) {
         gitMove(assetsFolderPath, address, checksumAddress);
         console.log(`Renamed to checksum format ${checksumAddress}`);
     }
@@ -85,8 +85,9 @@ export class EthForks implements ActionInterface {
                             if (!isPathExistsSync(assetPath)) {
                                 error += `Expect directory at path: ${assetPath}\n`;
                             }
-                            if (!isChecksum(address)) {
-                                error += `Expect asset at path ${assetPath} in checksum\n`;
+                            const inChecksum = toChecksum(address);
+                            if (address !== inChecksum) {
+                                error += `Expect asset at path ${assetPath} in checksum: '${inChecksum}'\n`;
                             }
                             const assetLogoPath = getChainAssetLogoPath(chain, address);
                             if (!isPathExistsSync(assetLogoPath)) {
