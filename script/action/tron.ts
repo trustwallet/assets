@@ -4,7 +4,6 @@ import { Tron } from "../common/blockchains";
 import { readDirSync, isPathExistsSync } from "../common/filesystem";
 import { getChainAssetLogoPath, getChainValidatorsAssets } from "../common/repo-structure";
 import { isLowerCase, isUpperCase } from "../common/types";
-import { isLogoOK } from "../common/image";
 import * as bluebird from "bluebird";
 
 export function isTRC10(str: string): boolean {
@@ -36,10 +35,6 @@ export class TronAction implements ActionInterface {
                         const assetsLogoPath = getChainAssetLogoPath(Tron, asset);
                         if (!isPathExistsSync(assetsLogoPath)) {
                             error += `Missing file at path '${assetsLogoPath}'\n`;
-                        }
-                        const [isOk, sizeMsg] = await isLogoOK(assetsLogoPath);
-                        if (!isOk) {
-                            error += sizeMsg + "\n";
                         }
                     });
                     return error;
