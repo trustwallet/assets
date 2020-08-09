@@ -2,8 +2,9 @@ name: Check
 on:
   push:
     branches: [ master ]
+  workflow_dispatch:
 jobs:
-  test:
+  check:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
