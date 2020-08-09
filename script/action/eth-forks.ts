@@ -19,18 +19,17 @@ import {
     readDirSync,
     isPathExistsSync,
 } from "../common/filesystem";
-import { isChecksum, toChecksum } from "../common/eth-web3";
+import { toChecksum } from "../common/eth-web3";
 import { ActionInterface, CheckStepInterface } from "./interface";
-import { isLogoOK } from "../common/image";
 import { isAssetInfoOK } from "../common/asset-info";
 import * as bluebird from "bluebird";
 
-function formatInfos() {
+async function formatInfos() {
     console.log(`Formatting info files...`);
-    ethForkChains.forEach(chain => {
+    await bluebird.each(ethForkChains, async (chain) => {
         let count: number = 0;
         const chainAssets = getChainAssetsList(chain);
-        chainAssets.forEach(address => {
+        await bluebird.each(chainAssets, async (address) => {
             if (isChainAssetInfoExistSync(chain, address)) {
                 const chainAssetInfoPath = getChainAssetInfoPath(chain, address);
                 formatJsonFile(chainAssetInfoPath, true);
@@ -42,20 +41,20 @@ function formatInfos() {
 }
 
 function checkAddressChecksum(assetsFolderPath: string, address: string) {
-    if (!isChecksum(address)) {
-        const checksumAddress = toChecksum(address);
+    const checksumAddress = toChecksum(address);
+    if (checksumAddress !== address) {
         gitMove(assetsFolderPath, address, checksumAddress);
         console.log(`Renamed to checksum format ${checksumAddress}`);
     }
 }
 
-function checkAddressChecksums() {
+async function checkAddressChecksums() {
     console.log(`Checking for checksum formats ...`);
-    ethForkChains.forEach(chain => {
+    await bluebird.each(ethForkChains, async (chain) => {
         const assetsPath = getChainAssetsPath(chain);
 
-        readDirSync(assetsPath).forEach(address => {
-            getChainAssetFilesList(chain, address).forEach(file => {
+        await bluebird.each(readDirSync(assetsPath), async (address) => {
+            await bluebird.each(getChainAssetFilesList(chain, address), async (file) => {
                 if (getFileName(file) == logoName && getFileExt(file) !== logoExtension) {
                     console.log(`Renaming incorrect asset logo extension ${file} ...`);
                     gitMove(getChainAssetPath(chain, address), file, logoFullName);
@@ -85,16 +84,13 @@ export class EthForks implements ActionInterface {
                             if (!isPathExistsSync(assetPath)) {
                                 error += `Expect directory at path: ${assetPath}\n`;
                             }
-                            if (!isChecksum(address)) {
-                                error += `Expect asset at path ${assetPath} in checksum\n`;
+                            const inChecksum = toChecksum(address);
+                            if (address !== inChecksum) {
+                                error += `Expect asset at path ${assetPath} in checksum: '${inChecksum}'\n`;
                             }
                             const assetLogoPath = getChainAssetLogoPath(chain, address);
                             if (!isPathExistsSync(assetLogoPath)) {
                                 error += `Missing file at path '${assetLogoPath}'\n`;
-                            }
-                            const [isOK, dimensionMsg] = await isLogoOK(assetLogoPath);
-                            if (!isOK) {
-                                error += dimensionMsg + "\n";
                             }
                             const [isInfoOK, infoMsg] = isAssetInfoOK(chain, address);
                             if (!isInfoOK) {
@@ -110,8 +106,8 @@ export class EthForks implements ActionInterface {
     }
     
     async fix(): Promise<void> {
-        formatInfos();
-        checkAddressChecksums();
+        await formatInfos();
+        await checkAddressChecksums();
     }
     
     update = null;

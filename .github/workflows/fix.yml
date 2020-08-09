@@ -3,6 +3,7 @@ on:
   push:
     # This runs on fork branches too
     branches: [ '*' ]
+  workflow_dispatch:
 jobs:
   fix:
     runs-on: ubuntu-latest
@@ -35,7 +36,8 @@ jobs:
       - name: Run test
         run: npm t
       - name: Commit changes
-        if: success()
+        # disabled on forks, commit there causes no CI run
+        if: success() && (github.repository_owner == 'trustwallet')
         uses: stefanzweifel/git-auto-commit-action@v4.1.2
         with:
           commit_user_name: trust-wallet-merge-bot
