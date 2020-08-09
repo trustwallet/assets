@@ -1,8 +1,8 @@
 import { fixAll } from "../action/update-all";
 
-export function main() {
+export async function main() {
     try {
-        fixAll();
+        await fixAll();
     } catch(err) {
         console.error(err);
         process.exit(1);
