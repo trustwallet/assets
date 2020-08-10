@@ -18,7 +18,8 @@ import {
     makeUnique,
     arrayDiff,
     arrayDiffNocase,
-    arrayEqual
+    arrayEqual,
+    reverseCase
 } from "../script/common/types";
 import { findImagesToFetch } from "../script/action/binance";
 
@@ -105,6 +106,10 @@ describe("Test type helpers", () => {
         expect(arrayEqual(["a", "b", "c", "d"], ["a", "b", "c"]), `length mismatch`).toBe(false);
         expect(arrayEqual(["a", "b", "c"], ["a", "b", "b"]), `length mismatch`).toBe(false);
         expect(arrayEqual(["a", "b", "b"], ["a", "b", "c"]), `length mismatch`).toBe(false);
+    });
+    test(`Test reverseCase`, () => {
+        expect(reverseCase("abCDef12+-"), `mixed`).toEqual("ABcdEF12+-");
+        expect(reverseCase("ABcdEF12+-"), `mixed`).toEqual("abCDef12+-");
     });
 });
 
