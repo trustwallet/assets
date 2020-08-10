@@ -68,7 +68,7 @@ async function checkAddressChecksums() {
 export class EthForks implements ActionInterface {
     getName(): string { return "Ethereum forks"; }
     
-    getChecks(): CheckStepInterface[] {
+    getSanityChecks(): CheckStepInterface[] {
         var steps: CheckStepInterface[] = [];
         ethForkChains.forEach(chain => {
             steps.push(
@@ -105,10 +105,14 @@ export class EthForks implements ActionInterface {
         return steps;
     }
     
-    async fix(): Promise<void> {
+    getConsistencyChecks = null;
+
+    async sanityFix(): Promise<void> {
         await formatInfos();
         await checkAddressChecksums();
     }
     
+    consistencyFix = null;
+
     update = null;
 }
