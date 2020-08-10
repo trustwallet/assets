@@ -75,7 +75,7 @@ async function checkDownsize(chains, checkOnly: boolean): Promise<string> {
 export class LogoSize implements ActionInterface {
     getName(): string { return "Logo sizes"; }
 
-    getChecks(): CheckStepInterface[] {
+    getSanityChecks(): CheckStepInterface[] {
         return [
             {
                 getName: () => { return "Check that logos are not too large"},
@@ -91,10 +91,14 @@ export class LogoSize implements ActionInterface {
         ];
     }
 
-    async fix(): Promise<void> {
+    getConsistencyChecks = null;
+
+    async sanityFix(): Promise<void> {
         const foundChains = readDirSync(chainsPath);
         await checkDownsize(foundChains, false);
     }
+
+    consistencyFix = null;
 
     update = null;
 }
