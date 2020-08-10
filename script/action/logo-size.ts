@@ -91,7 +91,7 @@ export class LogoSize implements ActionInterface {
         ];
     }
 
-    getConistencyChecks = null;
+    getConsistencyChecks = null;
     
     async sanityFix(): Promise<void> {
         const foundChains = readDirSync(chainsPath);

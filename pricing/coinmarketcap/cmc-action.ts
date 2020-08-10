@@ -7,7 +7,7 @@ export class Coinmarketcap implements ActionInterface {
 
     getSanityChecks(): CheckStepInterface[] { return getSanityChecks(); }
     
-    getConistencyChecks = null;
+    getConsistencyChecks = null;
 
     sanityFix = null;
     

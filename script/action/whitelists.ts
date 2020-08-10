@@ -88,7 +88,7 @@ export class Whitelist implements ActionInterface {
         return steps;
     }
 
-    getConistencyChecks = null;
+    getConsistencyChecks = null;
 
     async sanityFix(): Promise<void> {
         await bluebird.each(chainsWithBlacklist, async (chain) => await checkUpdateWhiteBlackList(chain, false));

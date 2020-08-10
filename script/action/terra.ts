@@ -32,7 +32,7 @@ export class TerraAction implements ActionInterface {
         ];
     }
     
-    getConistencyChecks = null;
+    getConsistencyChecks = null;
     
     sanityFix = null;
     

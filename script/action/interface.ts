@@ -11,7 +11,7 @@ export interface ActionInterface {
     // return check steps for sanity check (0, 1, or more)
     getSanityChecks(): CheckStepInterface[];
     // return check steps for consistenct check (0, 1, or more)
-    getConistencyChecks(): CheckStepInterface[];
+    getConsistencyChecks(): CheckStepInterface[];
     sanityFix(): Promise<void>;
     consistencyFix(): Promise<void>;
     update(): Promise<void>;

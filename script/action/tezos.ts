@@ -96,7 +96,7 @@ export class TezosAction implements ActionInterface {
         ];
     }
 
-    getConistencyChecks = null;
+    getConsistencyChecks = null;
     
     sanityFix = null;
 

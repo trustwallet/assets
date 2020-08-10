@@ -121,7 +121,7 @@ export class BinanceAction implements ActionInterface {
         ];
     }
 
-    getConistencyChecks = null;
+    getConsistencyChecks = null;
     
     sanityFix = null;
 
