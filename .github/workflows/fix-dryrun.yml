@@ -1,9 +1,9 @@
-name: Fixes and Consistency Updates - Dry run
+name: Fixes (sanity and consistency) - Dry run
 on:
   pull_request:
     branches: [master]
 jobs:
-  fix-dryrun:
+  fix-all-dryrun:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
