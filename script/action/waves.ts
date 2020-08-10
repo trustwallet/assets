@@ -13,7 +13,7 @@ export function isWavesAddress(address: string): boolean {
 export class WavesAction implements ActionInterface {
     getName(): string { return "Waves chain"; }
 
-    getChecks(): CheckStepInterface[] {
+    getSanityChecks(): CheckStepInterface[] {
         return [
             {
                 getName: () => { return "Waves validator assets must have correct format"},
@@ -31,7 +31,11 @@ export class WavesAction implements ActionInterface {
         ];
     }
     
-    fix = null;
+    getConsistencyChecks = null;
+
+    sanityFix = null;
+
+    consistencyFix = null;
     
     update = null;
 }
