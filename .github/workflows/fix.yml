@@ -3,6 +3,7 @@ on:
   push:
     # This runs on fork branches too
     branches: [ '*' ]
+  workflow_dispatch:
 jobs:
   fix:
     runs-on: ubuntu-latest

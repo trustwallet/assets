@@ -1,7 +1,7 @@
 name: Fixes and Consistency Updates - Dry run
 on:
-    pull_request:
-      branches: [master]
+  pull_request:
+    branches: [master]
 jobs:
   fix-dryrun:
     runs-on: ubuntu-latest
