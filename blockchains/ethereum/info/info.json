@@ -1,16 +1,22 @@
 {
-  "name": "DICE.FINANCE",
-  "website": "https://dice.finance/",
-  "source_code": "https://etherscan.io/address/0xcf67ced76e8356366291246a9222169f4dbdbe64#code",
-  "white_paper": "https://github.com/dice-finance/Whitepaper/blob/master/Dice.FinanceWP.md",
-  "short_description": "Dapp focused on powering decentralized casinos and enabling unstoppable bankroll, through staking.",
-  "description": "An unstoppable bankroll drives casino for thousands of users and hundreds of applications. DICE.FINANCE empowers players, developers, game providers and agency to participate in a game marketplace that is open and accessible to all.",
+  "name": "Ethereum",
+  "website": "https://ethereum.org/",
+  "source_code": "https://github.com/ethereum",
+  "white_paper": "https://github.com/ethereum/wiki/wiki/White-Paper",
+  "short_description": "Open source platform to write and distribute decentralized applications.",
+  "description": "Open source platform to write and distribute decentralized applications.",
   "socials": [
     {
       "name": "Twitter",
-      "url": "https://twitter.com/DiceFinance",
-      "handle": "DiceFinance"
+      "url": "https://twitter.com/ethereum",
+      "handle": "ethereum"
+    },
+    {
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/ethereum",
+      "handle": "ethereum"
     }
   ],
-  "explorer": "https://etherscan.io/token/0xcf67ced76e8356366291246a9222169f4dbdbe64"
+  "explorer": "https://etherscan.io/",
+  "research": "https://research.binance.com/en/projects/ethereum"
 }
