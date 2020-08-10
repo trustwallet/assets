@@ -78,7 +78,7 @@ async function gen_validators_tezos() {
 export class TezosAction implements ActionInterface {
     getName(): string { return "Tezos"; }
 
-    getChecks(): CheckStepInterface[] {
+    getSanityChecks(): CheckStepInterface[] {
         return [
             {
                 getName: () => { return "Tezos validator assets must have correct format"},
@@ -96,7 +96,11 @@ export class TezosAction implements ActionInterface {
         ];
     }
 
-    fix = null;
+    getConsistencyChecks = null;
+
+    sanityFix = null;
+
+    consistencyFix = null;
 
     async update(): Promise<void> {
         await gen_validators_tezos();

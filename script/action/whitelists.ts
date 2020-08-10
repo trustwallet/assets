@@ -8,7 +8,7 @@ import {
     makeUnique
 } from "../common/types";
 import { ActionInterface, CheckStepInterface } from "./interface";
-import { formatSortJson, formatUniqueSortJson } from "../common/json";
+import { formatSortJson } from "../common/json";
 import * as bluebird from "bluebird";
 
 async function checkUpdateWhiteBlackList(chain: string, checkOnly: boolean ): Promise<[boolean, string]> {
@@ -55,11 +55,22 @@ async function checkUpdateWhiteBlackList(chain: string, checkOnly: boolean ): Pr
         wrongMsg += `Some elements should be removed from blacklist for chain ${chain}: ${bDiff2.length} ${bDiff2[0]}\n`;
     }
 
+    // additionally check for nice formatting, sorting:
+    const newWhiteText = formatSortJson(newWhite);
+    const newBlackText = formatSortJson(newBlack);
+    if (newWhiteText !== currentWhitelistText) {
+        wrongMsg += `Whitelist for chain ${chain}: not formatted nicely \n`;
+    }
+    if (newBlackText !== currentBlacklistText) {
+        wrongMsg += `Blacklist for chain ${chain}: not formatted nicely \n`;
+    }
+
     if (wrongMsg.length > 0) {
+        // sg wrong, may need to fix
         if (!checkOnly) {
             // update
-            writeFileSync(whitelistPath, formatSortJson(newWhite));
-            writeFileSync(blacklistPath, formatSortJson(newBlack));
+            writeFileSync(whitelistPath, newWhiteText);
+            writeFileSync(blacklistPath, newBlackText);
             console.log(`Updated white and blacklists for chain ${chain}`);
         }
     }
@@ -69,7 +80,9 @@ async function checkUpdateWhiteBlackList(chain: string, checkOnly: boolean ): Pr
 export class Whitelist implements ActionInterface {
     getName(): string { return "Whitelists"; }
 
-    getChecks(): CheckStepInterface[] {
+    getSanityChecks = null;
+
+    getConsistencyChecks(): CheckStepInterface[] {
         const steps: CheckStepInterface[] = [];
         chainsWithBlacklist.forEach(chain => {
             steps.push(
@@ -88,8 +101,9 @@ export class Whitelist implements ActionInterface {
         return steps;
     }
 
+    sanityFix = null;
 
-    async fix(): Promise<void> {
+    async consistencyFix(): Promise<void> {
         await bluebird.each(chainsWithBlacklist, async (chain) => await checkUpdateWhiteBlackList(chain, false));
     }
 
