@@ -33,7 +33,7 @@ function isValidatorHasAllKeys(val: ValidatorModel): boolean {
 export class Validators implements ActionInterface {
     getName(): string { return "Validators"; }
 
-    getChecks(): CheckStepInterface[] {
+    getSanityChecks(): CheckStepInterface[] {
         var steps = [
             {
                 getName: () => { return "Make sure tests added for new staking chain"},
@@ -94,9 +94,13 @@ export class Validators implements ActionInterface {
         return steps;
     }
 
-    async fix(): Promise<void> {
+    getConsistencyChecks = null;
+
+    async sanityFix(): Promise<void> {
         formatValidators();
     }
+
+    consistencyFix = null;
 
     update = null;
 }
