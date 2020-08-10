@@ -29,7 +29,11 @@ export class JsonAction implements ActionInterface {
         ];
     }
     
+    getConistencyChecks = null;
+    
     sanityFix = null;
+
+    consistencyFix = null;
     
     update = null;
 }

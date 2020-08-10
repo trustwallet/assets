@@ -32,7 +32,11 @@ export class CosmosAction implements ActionInterface {
         ];
     }
     
+    getConistencyChecks = null;
+    
     sanityFix = null;
+    
+    consistencyFix = null;
     
     update = null;
 }

@@ -7,13 +7,6 @@ export async function main() {
         console.error(err);
         process.exit(1);
     }
-
-    try {
-        await consistencyFixAll();
-    } catch(err) {
-        console.error(err);
-        process.exit(1);
-    }
 }
 
 main();

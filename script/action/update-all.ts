@@ -76,7 +76,33 @@ async function sanityCheckByActionList(actions: ActionInterface[]): Promise<numb
             returnCode = 3;
         }
     });
-    console.log(`All checks done, returnCode ${returnCode}`);
+    console.log(`All sanity checks done, returnCode ${returnCode}`);
+    return returnCode;
+}
+
+async function consistencyCheckByActionList(actions: ActionInterface[]): Promise<number> {
+    console.log("Running consistency checks...");
+    var returnCode = 0;
+    await bluebird.each(actions, async (action) => {
+        try {
+            if (action.getConsistencyChecks) {
+                const steps = action.getConsistencyChecks();
+                if (steps && steps.length > 0) {
+                    console.log(`   Action '${action.getName()}' has ${steps.length} check steps`);
+                    const ret1 = await checkStepList(steps);
+                    if (ret1 != 0) {
+                        returnCode = ret1;
+                    } else {
+                        console.log(`- ${chalk.green('✓')} Action '${action.getName()}' OK, all ${steps.length} steps`);
+                    }
+                }
+            }
+        } catch (error) {
+            console.log(`-  ${chalk.red('X')} '${action.getName()}' Caught error: ${error.message}`);
+            returnCode = 3;
+        }
+    });
+    console.log(`All consistency checks done, returnCode ${returnCode}`);
     return returnCode;
 }
 
@@ -93,6 +119,21 @@ async function sanityFixByList(actions: ActionInterface[]) {
         }
     });
     console.log("All sanity fixes done.");
+}
+
+async function consistencyFixByList(actions: ActionInterface[]) {
+    console.log("Running consistency fixes...");
+    await bluebird.each(actions, async (action) => {
+        try {
+            if (action.consistencyFix) {
+                console.log(`Sanity fix '${action.getName()}':`);
+                await action.consistencyFix();
+            }
+        } catch (error) {
+            console.log(`Caught error: ${error.message}`);
+        }
+    });
+    console.log("All consistency fixes done.");
 }
 
 async function updateByList(actions: ActionInterface[]) {
@@ -114,8 +155,16 @@ export async function sanityCheckAll(): Promise<number> {
     return await sanityCheckByActionList(actionList);
 }
 
+export async function consistencyCheckAll(): Promise<number> {
+    return await consistencyCheckByActionList(actionList);
+}
+
 export async function sanityFixAll() {
     await sanityFixByList(actionList);
+}
+
+export async function consistencyFixAll() {
+    await consistencyFixByList(actionList);
 }
 
 export async function updateAll() {

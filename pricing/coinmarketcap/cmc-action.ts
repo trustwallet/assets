@@ -6,8 +6,12 @@ export class Coinmarketcap implements ActionInterface {
     getName(): string { return "Coinmarketcap mapping"; }
 
     getSanityChecks(): CheckStepInterface[] { return getSanityChecks(); }
+    
+    getConistencyChecks = null;
 
     sanityFix = null;
+    
+    consistencyFix = null;
 
     async update(): Promise<void> {
         await run();

@@ -31,7 +31,11 @@ export class WavesAction implements ActionInterface {
         ];
     }
     
+    getConistencyChecks = null;
+    
     sanityFix = null;
+
+    consistencyFix = null;
     
     update = null;
 }

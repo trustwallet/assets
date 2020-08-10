@@ -91,10 +91,14 @@ export class LogoSize implements ActionInterface {
         ];
     }
 
+    getConistencyChecks = null;
+    
     async sanityFix(): Promise<void> {
         const foundChains = readDirSync(chainsPath);
         await checkDownsize(foundChains, false);
     }
+
+    consistencyFix = null;
 
     update = null;
 }

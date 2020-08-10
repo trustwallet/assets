@@ -120,8 +120,12 @@ export class BinanceAction implements ActionInterface {
             },
         ];
     }
+
+    getConistencyChecks = null;
     
     sanityFix = null;
+
+    consistencyFix = null;
     
     async update(): Promise<void> {
         // retrieve missing token images; BEP2 (bep8 not supported)

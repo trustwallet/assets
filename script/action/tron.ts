@@ -56,7 +56,11 @@ export class TronAction implements ActionInterface {
         ];
     }
     
+    getConistencyChecks = null;
+    
     sanityFix = null;
+
+    consistencyFix = null;
 
     update = null;
 }

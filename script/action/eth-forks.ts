@@ -105,10 +105,14 @@ export class EthForks implements ActionInterface {
         return steps;
     }
     
+    getConistencyChecks = null;
+    
     async sanityFix(): Promise<void> {
         await formatInfos();
         await checkAddressChecksums();
     }
     
+    consistencyFix = null;
+
     update = null;
 }

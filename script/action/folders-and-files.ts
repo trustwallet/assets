@@ -94,7 +94,11 @@ export class FoldersFiles implements ActionInterface {
         ];
     }
     
+    getConistencyChecks = null;
+
     sanityFix = null;
     
+    consistencyFix = null;
+
     update = null;
 }
