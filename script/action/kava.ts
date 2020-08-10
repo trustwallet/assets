@@ -33,7 +33,7 @@ export class KavaAction implements ActionInterface {
     }
     
     getConsistencyChecks = null;
-    
+
     sanityFix = null;
 
     consistencyFix = null;

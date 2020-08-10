@@ -16,3 +16,10 @@ export interface ActionInterface {
     consistencyFix(): Promise<void>;
     update(): Promise<void>;
 }
+
+export enum FixCheckMode {
+    CheckSanityOnly = 1,
+    CheckAll,
+    FixSanityOnly,
+    FixAll
+}

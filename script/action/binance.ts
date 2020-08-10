@@ -122,7 +122,7 @@ export class BinanceAction implements ActionInterface {
     }
 
     getConsistencyChecks = null;
-    
+
     sanityFix = null;
 
     consistencyFix = null;
