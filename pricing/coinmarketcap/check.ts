@@ -5,7 +5,7 @@ import { isChecksum } from "../../script/common/eth-web3";
 import { isTRC10, isTRC20 } from "../../script/action/tron";
 import { retrieveAssetSymbols } from "../../script/action/binance";
 
-export function getChecks(): CheckStepInterface[] {
+export function getSanityChecks(): CheckStepInterface[] {
     const cmcMap: mapTiker[] = JSON.parse(readFileSync("./pricing/coinmarketcap/mapping.json"));
     return [
         {
