@@ -69,7 +69,7 @@ async function checkUpdateWhiteBlackList(chain: string, checkOnly: boolean ): Pr
 export class Whitelist implements ActionInterface {
     getName(): string { return "Whitelists"; }
 
-    getChecks(): CheckStepInterface[] {
+    getSanityChecks(): CheckStepInterface[] {
         const steps: CheckStepInterface[] = [];
         chainsWithBlacklist.forEach(chain => {
             steps.push(
@@ -89,7 +89,7 @@ export class Whitelist implements ActionInterface {
     }
 
 
-    async fix(): Promise<void> {
+    async sanityFix(): Promise<void> {
         await bluebird.each(chainsWithBlacklist, async (chain) => await checkUpdateWhiteBlackList(chain, false));
     }
 

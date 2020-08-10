@@ -9,7 +9,7 @@ export interface CheckStepInterface {
 export interface ActionInterface {
     getName(): string;
     // return check steps for check (0, 1, or more)
-    getChecks(): CheckStepInterface[];
-    fix(): Promise<void>;
+    getSanityChecks(): CheckStepInterface[];
+    sanityFix(): Promise<void>;
     update(): Promise<void>;
 }

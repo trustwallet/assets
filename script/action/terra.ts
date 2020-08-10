@@ -6,7 +6,7 @@ import { isLowerCase } from "../common/types";
 export class TerraAction implements ActionInterface {
     getName(): string { return "Terra chain"; }
 
-    getChecks(): CheckStepInterface[] {
+    getSanityChecks(): CheckStepInterface[] {
         return [
             {
                 getName: () => { return "Terra validator assets must have correct format"},
@@ -32,7 +32,7 @@ export class TerraAction implements ActionInterface {
         ];
     }
     
-    fix = null;
+    sanityFix = null;
     
     update = null;
 }

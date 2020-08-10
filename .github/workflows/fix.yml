@@ -1,11 +1,11 @@
-name: Fixes and Consistency Updates
+name: Fixes
 on:
   push:
     # This runs on fork branches too
     branches: [ '*' ]
   workflow_dispatch:
 jobs:
-  fix:
+  fix-all:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout (trustwallet repo, secret token)
@@ -42,4 +42,4 @@ jobs:
         with:
           commit_user_name: trust-wallet-merge-bot
           commit_user_email: mergebot@trustwallet.com
-          commit_message: Fixes and Consistency Updates
+          commit_message: Fixes (sanity and consistency, auto)

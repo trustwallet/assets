@@ -22,7 +22,7 @@ const foundChains = readDirSync(chainsPath)
 export class FoldersFiles implements ActionInterface {
     getName(): string { return "Folders and Files"; }
     
-    getChecks(): CheckStepInterface[] {
+    getSanityChecks(): CheckStepInterface[] {
         return [
             {
                 getName: () => { return "Repository root dir"},
@@ -94,7 +94,7 @@ export class FoldersFiles implements ActionInterface {
         ];
     }
     
-    fix = null;
+    sanityFix = null;
     
     update = null;
 }

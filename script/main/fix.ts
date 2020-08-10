@@ -1,8 +1,8 @@
-import { fixAll } from "../action/update-all";
+import { sanityFixAll } from "../action/update-all";
 
 export async function main() {
     try {
-        await fixAll();
+        await sanityFixAll();
     } catch(err) {
         console.error(err);
         process.exit(1);

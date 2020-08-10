@@ -7,7 +7,7 @@ import * as bluebird from "bluebird";
 export class JsonAction implements ActionInterface {
     getName(): string { return "Json files"; }
 
-    getChecks(): CheckStepInterface[] {
+    getSanityChecks(): CheckStepInterface[] {
         return [
             {
                 getName: () => { return "Check all JSON files to have valid content"},
@@ -29,7 +29,7 @@ export class JsonAction implements ActionInterface {
         ];
     }
     
-    fix = null;
+    sanityFix = null;
     
     update = null;
 }

@@ -6,7 +6,7 @@ import { isLowerCase } from "../common/types";
 export class CosmosAction implements ActionInterface {
     getName(): string { return "Cosmos chain"; }
 
-    getChecks(): CheckStepInterface[] {
+    getSanityChecks(): CheckStepInterface[] {
         return [
             {
                 getName: () => { return "Cosmos validator assets must have correct format"},
@@ -32,7 +32,7 @@ export class CosmosAction implements ActionInterface {
         ];
     }
     
-    fix = null;
+    sanityFix = null;
     
     update = null;
 }

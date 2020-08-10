@@ -101,7 +101,7 @@ async function fetchMissingImages(toFetch: any[]): Promise<string[]> {
 export class BinanceAction implements ActionInterface {
     getName(): string { return "Binance chain"; }
 
-    getChecks(): CheckStepInterface[] {
+    getSanityChecks(): CheckStepInterface[] {
         return [
             {
                 getName: () => { return "Binance chain; assets must exist on chain"},
@@ -121,7 +121,7 @@ export class BinanceAction implements ActionInterface {
         ];
     }
     
-    fix = null;
+    sanityFix = null;
     
     async update(): Promise<void> {
         // retrieve missing token images; BEP2 (bep8 not supported)

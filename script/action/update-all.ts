@@ -54,13 +54,13 @@ async function checkStepList(steps: CheckStepInterface[]): Promise<number> {
     return returnCode;
 }
 
-async function checkActionList(actions: ActionInterface[]): Promise<number> {
-    console.log("Running checks...");
+async function sanityCheckByActionList(actions: ActionInterface[]): Promise<number> {
+    console.log("Running sanity checks...");
     var returnCode = 0;
     await bluebird.each(actions, async (action) => {
         try {
-            if (action.getChecks) {
-                const steps = action.getChecks();
+            if (action.getSanityChecks) {
+                const steps = action.getSanityChecks();
                 if (steps && steps.length > 0) {
                     console.log(`   Action '${action.getName()}' has ${steps.length} check steps`);
                     const ret1 = await checkStepList(steps);
@@ -80,19 +80,19 @@ async function checkActionList(actions: ActionInterface[]): Promise<number> {
     return returnCode;
 }
 
-async function fixByList(actions: ActionInterface[]) {
-    console.log("Running fixes...");
+async function sanityFixByList(actions: ActionInterface[]) {
+    console.log("Running sanity fixes...");
     await bluebird.each(actions, async (action) => {
         try {
-            if (action.fix) {
-                console.log(`Fix '${action.getName()}':`);
-                await action.fix();
+            if (action.sanityFix) {
+                console.log(`Sanity fix '${action.getName()}':`);
+                await action.sanityFix();
             }
         } catch (error) {
             console.log(`Caught error: ${error.message}`);
         }
     });
-    console.log("All fixes done.");
+    console.log("All sanity fixes done.");
 }
 
 async function updateByList(actions: ActionInterface[]) {
@@ -110,12 +110,12 @@ async function updateByList(actions: ActionInterface[]) {
     console.log("All updates done.");
 }
 
-export async function checkAll(): Promise<number> {
-    return await checkActionList(actionList);
+export async function sanityCheckAll(): Promise<number> {
+    return await sanityCheckByActionList(actionList);
 }
 
-export async function fixAll() {
-    await fixByList(actionList);
+export async function sanityFixAll() {
+    await sanityFixByList(actionList);
 }
 
 export async function updateAll() {
