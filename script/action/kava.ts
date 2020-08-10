@@ -6,7 +6,7 @@ import { isLowerCase } from "../common/types";
 export class KavaAction implements ActionInterface {
     getName(): string { return "Kava chain"; }
 
-    getChecks(): CheckStepInterface[] {
+    getSanityChecks(): CheckStepInterface[] {
         return [
             {
                 getName: () => { return "Kava validator assets must have correct format"},
@@ -32,7 +32,11 @@ export class KavaAction implements ActionInterface {
         ];
     }
     
-    fix = null;
+    getConsistencyChecks = null;
+
+    sanityFix = null;
+
+    consistencyFix = null;
     
     update = null;
 }
