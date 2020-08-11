@@ -20,7 +20,7 @@ export function isTRC20(address: string): boolean {
 export class TronAction implements ActionInterface {
     getName(): string { return "Tron chain"; }
 
-    getChecks(): CheckStepInterface[] {
+    getSanityChecks(): CheckStepInterface[] {
         return [
             {
                 getName: () => { return "Tron assets should be TRC10 or TRC20, logo of correct size"; },
@@ -56,7 +56,11 @@ export class TronAction implements ActionInterface {
         ];
     }
     
-    fix = null;
+    getConsistencyChecks = null;
+
+    sanityFix = null;
+
+    consistencyFix = null;
 
     update = null;
 }

@@ -40,8 +40,8 @@ async function formatInfos() {
     })
 }
 
-function checkAddressChecksum(assetsFolderPath: string, address: string) {
-    const checksumAddress = toChecksum(address);
+function checkAddressChecksum(assetsFolderPath: string, address: string, chain: string) {
+    const checksumAddress = toChecksum(address, chain);
     if (checksumAddress !== address) {
         gitMove(assetsFolderPath, address, checksumAddress);
         console.log(`Renamed to checksum format ${checksumAddress}`);
@@ -60,7 +60,7 @@ async function checkAddressChecksums() {
                     gitMove(getChainAssetPath(chain, address), file, logoFullName);
                 }
             });
-            checkAddressChecksum(assetsPath, address);
+            checkAddressChecksum(assetsPath, address, chain);
         });
     });
 }
@@ -68,7 +68,7 @@ async function checkAddressChecksums() {
 export class EthForks implements ActionInterface {
     getName(): string { return "Ethereum forks"; }
     
-    getChecks(): CheckStepInterface[] {
+    getSanityChecks(): CheckStepInterface[] {
         var steps: CheckStepInterface[] = [];
         ethForkChains.forEach(chain => {
             steps.push(
@@ -84,7 +84,7 @@ export class EthForks implements ActionInterface {
                             if (!isPathExistsSync(assetPath)) {
                                 error += `Expect directory at path: ${assetPath}\n`;
                             }
-                            const inChecksum = toChecksum(address);
+                            const inChecksum = toChecksum(address, chain);
                             if (address !== inChecksum) {
                                 error += `Expect asset at path ${assetPath} in checksum: '${inChecksum}'\n`;
                             }
@@ -105,10 +105,14 @@ export class EthForks implements ActionInterface {
         return steps;
     }
     
-    async fix(): Promise<void> {
+    getConsistencyChecks = null;
+
+    async sanityFix(): Promise<void> {
         await formatInfos();
         await checkAddressChecksums();
     }
     
+    consistencyFix = null;
+
     update = null;
 }
