@@ -107,7 +107,7 @@
         "description": "CryptoDelegate delegation service is the best alternative to running your own node. The easy way to grow your Tezos stake is to Delegate your XTZ Tezzies.",
         "website": "https://www.cryptodelegate.com",
         "payout": {
-            "commission": 19,
+            "commission": 14,
             "payoutDelay": 6,
             "payoutPeriod": 1
         },
@@ -158,7 +158,7 @@
         },
         "status": {
             "disabled": true,
-            "note": "No more capacity: -189731"
+            "note": "No more capacity: -162870"
         }
     },
     {
@@ -209,7 +209,7 @@
         "description": "Everstake - Staking Service Platform. Delegate XTZ with Everstake, your trusted staking partner.",
         "website": "https://everstake.one/",
         "payout": {
-            "commission": 5,
+            "commission": 8,
             "payoutDelay": 6,
             "payoutPeriod": 1
         },
@@ -386,7 +386,7 @@
         },
         "status": {
             "disabled": true,
-            "note": "No more capacity: -25875"
+            "note": "No more capacity: -25653"
         }
     },
     {
