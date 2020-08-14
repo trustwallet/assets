@@ -1,8 +1,15 @@
-import { fixAll } from "../action/update-all";
+import { sanityFixAll, consistencyFixAll } from "../action/update-all";
 
-export function main() {
+export async function main() {
     try {
-        fixAll();
+        await sanityFixAll();
+    } catch(err) {
+        console.error(err);
+        process.exit(1);
+    }
+
+    try {
+        await consistencyFixAll();
     } catch(err) {
         console.error(err);
         process.exit(1);
