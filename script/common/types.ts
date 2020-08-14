@@ -76,3 +76,19 @@ export function arrayEqual(a1: any[], a2: any[]): boolean {
     }
     return true;
 }
+
+export function reverseCase(s: string): string {
+    const n = s.length;
+    var out: string = "";
+    for (var i = 0; i < n; ++i) {
+        const c = s[i];
+        if (isLowerCase(c)) {
+            out += c.toUpperCase();
+        } else if (isUpperCase(s[i])) {
+            out += c.toLowerCase();
+        } else {
+            out += c;
+        }
+    }
+    return out;
+}
