@@ -1,17 +1,28 @@
 import axios from "axios";
+import * as eztz from "eztz-lib";
 import {
     validatorsList,
     getChainValidatorsPath,
-    getChainValidatorsListPath
+    getChainValidatorsListPath,
+    getChainValidatorsAssets
 } from "../common/repo-structure";
 import { Tezos } from "../common/blockchains";
 import { readFileSync } from "../common/filesystem";
 import { writeJsonFile } from "../common/json";
+import { ActionInterface, CheckStepInterface } from "./interface";
+import { ValidatorModel } from "../common/validator-models";
 
-import {
-    BakingBadBaker,
-    ValidatorModel
-} from "../../src/test/models";
+interface BakingBadBaker {
+    address: string,
+    freeSpace: number
+    // serviceHealth: string // active or Dead is a working baker who was a public baker but for some reason stopped paying his delegators, Closed is a permanently closed service (we store them for historical purposes only
+    fee: number
+    minDelegation: number
+    openForDelegation: boolean
+    payoutDelay: number
+    payoutPeriod: number
+    serviceHealth: string
+}
 
 function getChainValidatorsList(chain: string): ValidatorModel[] {
     return JSON.parse(readFileSync(`${(getChainValidatorsPath(chain))}/${validatorsList}`));
@@ -64,6 +75,34 @@ async function gen_validators_tezos() {
     writeJsonFile(getChainValidatorsListPath(Tezos), newbakers)
 }
 
-export async function update() {
-    await gen_validators_tezos();
+export class TezosAction implements ActionInterface {
+    getName(): string { return "Tezos"; }
+
+    getSanityChecks(): CheckStepInterface[] {
+        return [
+            {
+                getName: () => { return "Tezos validator assets must have correct format"},
+                check: async () => {
+                    var error: string = "";
+                    const assets = getChainValidatorsAssets(Tezos);
+                    assets.forEach(addr => {
+                        if (!(eztz.crypto.checkAddress(addr))) {
+                            error += `Address ${addr} must be valid Tezos address'\n`;
+                        }
+                    });
+                    return error;
+                }
+            },
+        ];
+    }
+
+    getConsistencyChecks = null;
+
+    sanityFix = null;
+
+    consistencyFix = null;
+
+    async update(): Promise<void> {
+        await gen_validators_tezos();
+    }
 }
