@@ -53,6 +53,10 @@
         },
         "staking": {
             "minDelegation": 0
+        },
+        "status": {
+            "disabled": true,
+            "note": "According to Baking Bad API, baker is not active, current status dead, see: https://api.baking-bad.org/v2/bakers/tz1Pwgj6j55akKCyvTwwr9X4np1RskSXpQY4"
         }
     },
     {
@@ -103,7 +107,7 @@
         "description": "CryptoDelegate delegation service is the best alternative to running your own node. The easy way to grow your Tezos stake is to Delegate your XTZ Tezzies.",
         "website": "https://www.cryptodelegate.com",
         "payout": {
-            "commission": 19,
+            "commission": 14,
             "payoutDelay": 6,
             "payoutPeriod": 1
         },
@@ -151,6 +155,10 @@
         },
         "staking": {
             "minDelegation": 0
+        },
+        "status": {
+            "disabled": true,
+            "note": "No more capacity: -164506"
         }
     },
     {
@@ -201,7 +209,7 @@
         "description": "Everstake - Staking Service Platform. Delegate XTZ with Everstake, your trusted staking partner.",
         "website": "https://everstake.one/",
         "payout": {
-            "commission": 5,
+            "commission": 8,
             "payoutDelay": 6,
             "payoutPeriod": 1
         },
@@ -262,7 +270,7 @@
             "payoutPeriod": 1
         },
         "staking": {
-            "minDelegation": 0
+            "minDelegation": 100
         }
     },
     {
@@ -365,9 +373,9 @@
     },
     {
         "id": "tz1V3yg82mcrPJbegqVCPn6bC8w1CSTRp3f8",
-        "name": "TezoShop",
-        "description": "TezoShop is PRO Tezos baker ",
-        "website": "https://tezoshop.art",
+        "name": "Staking Shop",
+        "description": "Staking for best PoS blockchains in one place",
+        "website": "https://www.stakingshop.live",
         "payout": {
             "commission": 3,
             "payoutDelay": 6,
@@ -375,6 +383,10 @@
         },
         "staking": {
             "minDelegation": 100
+        },
+        "status": {
+            "disabled": true,
+            "note": "No more capacity: -20391"
         }
     },
     {
@@ -397,7 +409,7 @@
         "description": "An historical and trusted baker, from Italy with love.",
         "website": "https://stakingteam.com/",
         "payout": {
-            "commission": 0,
+            "commission": 9.9,
             "payoutDelay": 6,
             "payoutPeriod": 1
         },
