@@ -19,7 +19,7 @@ import {
     readDirSync,
     isPathExistsSync,
 } from "../common/filesystem";
-import { isChecksum, toChecksum } from "../common/eth-web3";
+import { toChecksum } from "../common/eth-web3";
 import { ActionInterface, CheckStepInterface } from "./interface";
 import { isAssetInfoOK } from "../common/asset-info";
 import * as bluebird from "bluebird";
@@ -40,9 +40,9 @@ async function formatInfos() {
     })
 }
 
-function checkAddressChecksum(assetsFolderPath: string, address: string) {
-    if (!isChecksum(address)) {
-        const checksumAddress = toChecksum(address);
+function checkAddressChecksum(assetsFolderPath: string, address: string, chain: string) {
+    const checksumAddress = toChecksum(address, chain);
+    if (checksumAddress !== address) {
         gitMove(assetsFolderPath, address, checksumAddress);
         console.log(`Renamed to checksum format ${checksumAddress}`);
     }
@@ -60,7 +60,7 @@ async function checkAddressChecksums() {
                     gitMove(getChainAssetPath(chain, address), file, logoFullName);
                 }
             });
-            checkAddressChecksum(assetsPath, address);
+            checkAddressChecksum(assetsPath, address, chain);
         });
     });
 }
@@ -68,7 +68,7 @@ async function checkAddressChecksums() {
 export class EthForks implements ActionInterface {
     getName(): string { return "Ethereum forks"; }
     
-    getChecks(): CheckStepInterface[] {
+    getSanityChecks(): CheckStepInterface[] {
         var steps: CheckStepInterface[] = [];
         ethForkChains.forEach(chain => {
             steps.push(
@@ -84,8 +84,9 @@ export class EthForks implements ActionInterface {
                             if (!isPathExistsSync(assetPath)) {
                                 error += `Expect directory at path: ${assetPath}\n`;
                             }
-                            if (!isChecksum(address)) {
-                                error += `Expect asset at path ${assetPath} in checksum\n`;
+                            const inChecksum = toChecksum(address, chain);
+                            if (address !== inChecksum) {
+                                error += `Expect asset at path ${assetPath} in checksum: '${inChecksum}'\n`;
                             }
                             const assetLogoPath = getChainAssetLogoPath(chain, address);
                             if (!isPathExistsSync(assetLogoPath)) {
@@ -104,10 +105,14 @@ export class EthForks implements ActionInterface {
         return steps;
     }
     
-    async fix(): Promise<void> {
+    getConsistencyChecks = null;
+
+    async sanityFix(): Promise<void> {
         await formatInfos();
         await checkAddressChecksums();
     }
     
+    consistencyFix = null;
+
     update = null;
 }

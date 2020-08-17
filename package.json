@@ -6,7 +6,9 @@
   "scripts": {
     "test": "jest",
     "check": "ts-node ./script/main/check",
+    "check-sanity": "ts-node ./script/main/check-sanity",
     "fix": "ts-node ./script/main/fix",
+    "fix-sanity": "ts-node ./script/main/fix-sanity",
     "update": "ts-node ./script/main/update"
   },
   "repository": {
@@ -37,6 +39,7 @@
     "bip44-constants": "^8.0.30",
     "bluebird": "^3.7.2",
     "chalk": "^4.1.0",
+    "danger": "^10.3.0",
     "ethereum-checksum-address": "0.0.5",
     "eztz-lib": "^0.1.2",
     "image-size": "^0.8.3",
