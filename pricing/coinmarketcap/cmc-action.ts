@@ -1,5 +1,5 @@
 import { ActionInterface, CheckStepInterface } from "../../script/action/interface";
-import { update, mergeCmcData } from "./script";
+import { run } from "./script";
 import { getSanityChecks } from "./check";
 
 export class Coinmarketcap implements ActionInterface {
@@ -11,12 +11,9 @@ export class Coinmarketcap implements ActionInterface {
 
     sanityFix = null;
     
-    async consistencyFix(): Promise<void> {
-        // do merge, for the case exceptions or script has been changed
-        await mergeCmcData();
-    }
+    consistencyFix = null;
 
     async update(): Promise<void> {
-        await update();
+        await run();
     }
 }

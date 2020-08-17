@@ -59,39 +59,22 @@ const custom: mapTiker[] = [
     // {"coin": 60, "type": typeToken, "token_id": "XXX", "id": XXX}, // XXX (XXX)
 ]
 
-var allContracts: mapTiker[] = [] // Temp storage for mapped assets
+const allContracts: mapTiker[] = [] // Temp storage for mapped assets
 let bnbOwnerToSymbol = {} // e.g: bnb1tawge8u97slduhhtumm03l4xl4c46dwv5m9yzk: WISH-2D5
 let bnbOriginalSymbolToSymbol = {} // e.g: WISH: WISH-2D5
 
-async function retrieveCmcData() {
-    allContracts = []
-    await Promise.all([initState(), setBinanceTokens()])
-    const [totalCrypto, coins] = await Promise.all([getTotalActiveCryptocurrencies(), getTickers()])
-    // setBIP44Constants()
-    log(`Found ${totalCrypto} on CMC`, chalk.yellowBright)
-    await BluebirdPromise.mapSeries(coins, processCoin)
-
-    sortContracts()
-    fs.writeFileSync(path.join(__dirname, 'cmc-data.json'), JSON.stringify(allContracts, null, 4))
-    allContracts = []
-}
-
-export async function mergeCmcData() {
+export async function run() {
     try {
-        allContracts = JSON.parse(readFileSync(path.join(__dirname, 'cmc-data.json')))
+        await Promise.all([initState(), setBinanceTokens()])
+        const [totalCrypto, coins] = await Promise.all([getTotalActiveCryptocurrencies(), getTickers()])
+        // setBIP44Constants()
+        log(`Found ${totalCrypto} on CMC`, chalk.yellowBright)
+        await BluebirdPromise.mapSeries(coins, processCoin)
+
         addCustom()
         printContracts()
     } catch (error) {
-        log(`Exception: ${error.message}`)
-    }
-}
-
-export async function update() {
-    try {
-        await retrieveCmcData()
-        await mergeCmcData()
-    } catch (error) {
-        log(`Exception: ${error.message}`)
+        log(`Error at the end ${error.message}`)
     }
 }
 
@@ -237,7 +220,7 @@ function addToContractsList(ticker: mapTiker) {
     allContracts.push(ticker)
 }
 
-function sortContracts() {
+function printContracts() {
     const sortedById = allContracts.sort((a,b) => {
         if (a.id < b.id) return -1
         if (a.id > b.id) return 1
@@ -250,14 +233,9 @@ function sortContracts() {
         if (a.token_id < b.token_id) return -1
         if (a.token_id > b.token_id) return 1
     })
-    allContracts = sortedById
-}
 
-
-function printContracts() {
-    sortContracts()
     const wstream = fs.createWriteStream(path.join(__dirname, 'mapping.json'))
-    wstream.write(JSON.stringify(allContracts, null, 4))
+    wstream.write(JSON.stringify(sortedById, null, 4))
 }
 
 function getSlip44Index(symbol: string, name: string): number {
