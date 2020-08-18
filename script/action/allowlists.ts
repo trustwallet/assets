@@ -77,6 +77,8 @@ async function checkUpdateAllowDenyList(chain: string, checkOnly: boolean ): Pro
             // update
             writeFileSync(allowlistPath, newAllowText);
             writeFileSync(denylistPath, newDenyText);
+            writeFileSync(allowlistPath.replace("allow", "white"), newAllowText); // interim
+            writeFileSync(denylistPath.replace("deny", "black"), newDenyText); // interim
             console.log(`Updated allow and denylists for chain ${chain}`);
         }
     }
