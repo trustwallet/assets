@@ -158,7 +158,7 @@
         },
         "status": {
             "disabled": true,
-            "note": "No more capacity: -165580"
+            "note": "No more capacity: -165219"
         }
     },
     {
@@ -341,6 +341,10 @@
         },
         "staking": {
             "minDelegation": 0
+        },
+        "status": {
+            "disabled": true,
+            "note": "No more capacity: -97855"
         }
     },
     {
@@ -386,7 +390,7 @@
         },
         "status": {
             "disabled": true,
-            "note": "No more capacity: -22731"
+            "note": "No more capacity: -34109"
         }
     },
     {
@@ -426,6 +430,20 @@
         "website": "https://www.tezbaker.io/",
         "payout": {
             "commission": 12,
+            "payoutDelay": 6,
+            "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 0
+        }
+    },
+    {
+        "id": "tz1XXayQohB8XRXN7kMoHbf2NFwNiH3oMRQQ",
+        "name": "Bit Cat🐱",
+        "description": "Secure and stable senior Tezos baker",
+        "website": "https://www.bitcat365.com",
+        "payout": {
+            "commission": 8,
             "payoutDelay": 6,
             "payoutPeriod": 1
         },
