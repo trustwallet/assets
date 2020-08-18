@@ -74,7 +74,7 @@ Smart contract address update procedure:
 - File extension: `png`. Uppercase `PNG` is considered invalid.
 - File name：`logo.png`.
 - Dimension: `256px by 256px` or `512px by 512px`.
-- Background: preferably transparent (should fit dark mode as well; black logos need light border/background).
+- Background: preferably transparent (should fit dark mode as well; dark logos need light border/background).
 - File size: maximum 100KB.  Tip: optimize image size, e.g. using simple drag-and-drop online service [tinypng](https://tinypng.com/).
 
 ## dApp image naming requirements
@@ -113,7 +113,7 @@ To remain in validators list:
 
 `validators` folder contains folders: `assets` same structure as above and `list.json` information about validators. 
 
-`blacklist.json` and `whitelist.json` files you may find in folders like `tron`, `ethereum` but not limited to, contain list of address approved based on many criterias (TODO add criterias) and disapproved based on factors such as scam, outdated, abandoned contracts etc ... .
+`denylist.json` and `allowlist.json` files you may find in folders like `tron`, `ethereum` but not limited to, contain list of address approved based on many criterias (TODO add criterias) and disapproved based on factors such as scam, outdated, abandoned contracts etc ... .
 
 
 ```
@@ -170,8 +170,8 @@ Uploading:
 3. TRON TRC10, TRC20 token [token folder](https://github.com/trustwallet/assets/tree/master/blockchains/tron/assets)
 4. Add Cosmos validator image [](https://github.com/trustwallet/assets/tree/master/blockchains/cosmos/validators)
 5. Add Tezos validator info [](https://github.com/trustwallet/assets/tree/master/blockchains/tezos/validators/list.json)
-6. Add Ethereum contract address to blacklist [](https://github.com/trustwallet/assets/tree/master/blockchains/ethereum/blacklist.json)
-7. Add TRON TRC10 ID or TRC20 owner contract address to whitelist [](https://github.com/trustwallet/assets/tree/master/blockchains/tron/whitelist.json)
+6. Add Ethereum contract address to denylist [](https://github.com/trustwallet/assets/tree/master/blockchains/ethereum/denylist.json)
+7. Add TRON TRC10 ID or TRC20 owner contract address to allowlist [](https://github.com/trustwallet/assets/tree/master/blockchains/tron/allowlist.json)
 
 
 ## How To Add Asset
@@ -220,7 +220,7 @@ After PR was merged, set of cron workers will update token status normally with 
 
 ### What is smart contract deprication (removal)?
 A process of removing smart contract information such as (token logo and info) from this repository.
-Removed contract address will be added to the blacklist and, as a result, will no longer be present in token search results inside the TW app.
+Removed contract address will be added to the denylist and, as a result, will no longer be present in token search results inside the TW app.
 Why would you want to do this ?.
 You are contract owner or just good samaritan who noticed contract to be no longer "active" and was an upgrade and abandoned by owning organization, involved in a scam, mimicking by its name or/and symbol a real contract. All facts must be supported with a link to any resource proving these statements.
 
@@ -278,5 +278,5 @@ https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/tron/ass
 
 ## Disclaimer
 Trust Wallet team allows anyone to submit new assets to this repository. However, this does not mean that we are in direct partnership with all of the projects. 
-Trust Wallet team will blacklist projects that are deemed as scams after careful review of the said assets.
+Trust Wallet team will denylist projects that are deemed as scams after careful review of the said assets.
 Trust Wallet team reserves the right to change the terms of asset submissions at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.
