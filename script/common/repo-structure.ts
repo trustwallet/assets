@@ -12,17 +12,19 @@ export const logoExtension = "png";
 export const jsonExtension = "json";
 export const logoFullName = `${logoName}.${logoExtension}`;
 export const infoFullName = `${infoName}.${jsonExtension}`;
-const whiteList = `whitelist.${jsonExtension}`;
-const blackList = `blacklist.${jsonExtension}`;
+const allowList = `allowlist.${jsonExtension}`;
+const denyList = `denylist.${jsonExtension}`;
 export const validatorsList = `${listName}.${jsonExtension}`
 
 export const assetFolderAllowedFiles = [logoFullName, infoFullName];
 export const chainFolderAllowedFiles = [
     "assets",
-    whiteList,
-    blackList,
+    allowList,
+    denyList,
     "validators",
-    infoName
+    infoName,
+    "whitelist.json", // interim
+    "blacklist.json"
 ]
 export const chainsPath: string = path.join(process.cwd(), '/blockchains');
 export const getChainPath = (chain: string): string => `${chainsPath}/${chain}`;
@@ -31,8 +33,8 @@ export const getChainAssetsPath = (chain: string): string => `${getChainPath(cha
 export const getChainAssetPath = (chain: string, asset: string) => `${getChainAssetsPath(chain)}/${asset}`;
 export const getChainAssetLogoPath = (chain: string, asset: string): string => `${getChainAssetPath(chain, asset)}/${logoFullName}`;
 export const getChainAssetInfoPath = (chain: string, asset: string): string => `${getChainAssetPath(chain, asset)}/${infoFullName}`;
-export const getChainWhitelistPath = (chain: string): string => `${getChainPath(chain)}/${whiteList}`;
-export const getChainBlacklistPath = (chain: string): string => `${getChainPath(chain)}/${blackList}`;
+export const getChainAllowlistPath = (chain: string): string => `${getChainPath(chain)}/${allowList}`;
+export const getChainDenylistPath = (chain: string): string => `${getChainPath(chain)}/${denyList}`;
 export const pricingFolderPath = path.join(process.cwd(), '/pricing');
 
 export const getChainValidatorsPath = (chain: string): string => `${getChainPath(chain)}/validators`;
