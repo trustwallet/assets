@@ -1,5 +1,10 @@
 import { chainsWithDenylist } from "../common/blockchains";
-import { getChainAssetsList, getChainAllowlistPath, getChainDenylistPath } from "../common/repo-structure";
+import {
+    getChainAssetsList,
+    getChainAllowlistPath,
+    getChainDenylistPath,
+    getChainPath
+} from "../common/repo-structure";
 import { readFileSync, writeFileSync } from "../common/filesystem";
 import {
     arrayDiff,
@@ -10,6 +15,7 @@ import {
 import { ActionInterface, CheckStepInterface } from "./interface";
 import { formatSortJson } from "../common/json";
 import * as bluebird from "bluebird";
+import { copyFile } from "fs";
 
 async function checkUpdateAllowDenyList(chain: string, checkOnly: boolean ): Promise<[boolean, string]> {
     let wrongMsg = "";
@@ -77,6 +83,19 @@ async function checkUpdateAllowDenyList(chain: string, checkOnly: boolean ): Pro
     return [(wrongMsg.length == 0), wrongMsg];
 }
 
+async function copyAllowListsTemp() {
+    // clone allow/denylist.txt to white/blacklist.txt, for backward compatibility
+    chainsWithDenylist.forEach(chain => {
+        copyFile(`${getChainPath(chain)}/allowlist.json`, `${getChainPath(chain)}/whitelist.json`, (err) => {
+            if (err) throw err;
+        });
+        copyFile(`${getChainPath(chain)}/denylist.json`, `${getChainPath(chain)}/blacklist.json`, (err) => {
+            if (err) throw err;
+        });
+    });
+    console.log("allowlist/blakclist files duplicated for backwards compatibility.");
+}
+
 export class Allowlist implements ActionInterface {
     getName(): string { return "Allowlists"; }
 
@@ -101,7 +120,9 @@ export class Allowlist implements ActionInterface {
         return steps;
     }
 
-    sanityFix = null;
+    async sanityFix(): Promise<void> {
+        await copyAllowListsTemp(); 
+    }
 
     async consistencyFix(): Promise<void> {
         await bluebird.each(chainsWithDenylist, async (chain) => await checkUpdateAllowDenyList(chain, false));
