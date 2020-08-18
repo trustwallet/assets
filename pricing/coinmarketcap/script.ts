@@ -12,8 +12,8 @@ import {
     isPathExistsSync,
     makeDirSync,
     getChainAssetPath,
-    getChainBlacklist,
-    getChainWhitelist,
+    getChainDenylist,
+    getChainAllowlist,
 } from "../../script-old/helpers";
 import { TickerType, mapTiker, PlatformType } from "../../script-old/models";
 
@@ -26,8 +26,8 @@ const CMC_PRO_API_KEY = `df781835-e5f4-4448-8b0a-fe31402ab3af` // Free Basic Pla
 const CMC_LATEST_BASE_URL = `https://pro-api.coinmarketcap.com/v1/global-metrics/quotes/latest?`
 const typeToken = TickerType.Token
 const typeCoin = TickerType.Coin
-const mappedChainsBlacklistAssets = {} // {ethereum: {<0x...>: ""},}
-const mappedChainsWhitelistAssets = {} // {ethereum: {<0x...>: ""},}
+const mappedChainsDenylistAssets = {} // {ethereum: {<0x...>: ""},}
+const mappedChainsAllowlistAssets = {} // {ethereum: {<0x...>: ""},}
 
 const custom: mapTiker[] = [
     {"coin": 60, "type": typeToken, "token_id": "0x6758B7d441a9739b98552B373703d8d3d14f9e62", "id": 2548}, // POA ERC20 on Foundation (POA20)
@@ -105,7 +105,7 @@ function buildCoinEntry(coin: any): any {
             if (platform.token_address) {
                 try {
                     const checksum = toChecksum(platform.token_address)
-                    if (!isAddressInBlackList("ethereum", checksum)) {
+                    if (!isAddressInDenyList("ethereum", checksum)) {
                         return {
                             coin: 60,
                             type: typeToken,
@@ -215,14 +215,14 @@ async function initState () {
 
 async function mapChainsAssetsLists() {
     ethForkChains.forEach(chain => {
-        Object.assign(mappedChainsWhitelistAssets, {[chain]: {}})
-        Object.assign(mappedChainsBlacklistAssets, {[chain]: {}})
+        Object.assign(mappedChainsAllowlistAssets, {[chain]: {}})
+        Object.assign(mappedChainsDenylistAssets, {[chain]: {}})
 
-        getChainWhitelist(chain).forEach(addr => {
-            Object.assign(mappedChainsWhitelistAssets[chain], {[addr]: ""})
+        getChainAllowlist(chain).forEach(addr => {
+            Object.assign(mappedChainsAllowlistAssets[chain], {[addr]: ""})
         })
-        getChainBlacklist(chain).forEach(addr => {
-            Object.assign(mappedChainsBlacklistAssets[chain], {[addr]: ""})
+        getChainDenylist(chain).forEach(addr => {
+            Object.assign(mappedChainsDenylistAssets[chain], {[addr]: ""})
         })
     })
 }
@@ -280,7 +280,7 @@ const getImageURL = (id: string | number): string => `https://s2.coinmarketcap.c
 async function getImageIfMissing(chain: string, address: string, id: string) {
     try {
         const logoPath = getChainAssetLogoPath(chain, String(address))
-        if (!isPathExistsSync(logoPath) && !isAddressInBlackList(chain, address)) {
+        if (!isPathExistsSync(logoPath) && !isAddressInDenyList(chain, address)) {
             const imageStream = await fetchImage(getImageURL(id))
 
             if (imageStream) {
@@ -300,8 +300,8 @@ async function getImageIfMissing(chain: string, address: string, id: string) {
 }
 
 
-function isAddressInBlackList(chain: string, address: string): boolean {
-    return mappedChainsBlacklistAssets[chain].hasOwnProperty(address)
+function isAddressInDenyList(chain: string, address: string): boolean {
+    return mappedChainsDenylistAssets[chain].hasOwnProperty(address)
 }
 
 async function fetchImage(url: string) {

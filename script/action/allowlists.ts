@@ -1,5 +1,5 @@
-import { chainsWithBlacklist } from "../common/blockchains";
-import { getChainAssetsList, getChainWhitelistPath, getChainBlacklistPath } from "../common/repo-structure";
+import { chainsWithDenylist } from "../common/blockchains";
+import { getChainAssetsList, getChainAllowlistPath, getChainDenylistPath } from "../common/repo-structure";
 import { readFileSync, writeFileSync } from "../common/filesystem";
 import {
     arrayDiff,
@@ -11,85 +11,85 @@ import { ActionInterface, CheckStepInterface } from "./interface";
 import { formatSortJson } from "../common/json";
 import * as bluebird from "bluebird";
 
-async function checkUpdateWhiteBlackList(chain: string, checkOnly: boolean ): Promise<[boolean, string]> {
+async function checkUpdateAllowDenyList(chain: string, checkOnly: boolean ): Promise<[boolean, string]> {
     let wrongMsg = "";
     const assets = getChainAssetsList(chain);
 
-    const whitelistPath = getChainWhitelistPath(chain);
-    const blacklistPath = getChainBlacklistPath(chain);
+    const allowlistPath = getChainAllowlistPath(chain);
+    const denylistPath = getChainDenylistPath(chain);
 
-    const currentWhitelistText = readFileSync(whitelistPath);
-    const currentBlacklistText = readFileSync(blacklistPath);
-    const currentWhitelist = JSON.parse(currentWhitelistText);
-    const currentBlacklist = JSON.parse(currentBlacklistText);
+    const currentAllowlistText = readFileSync(allowlistPath);
+    const currentDenylistText = readFileSync(denylistPath);
+    const currentAllowlist = JSON.parse(currentAllowlistText);
+    const currentDenylist = JSON.parse(currentDenylistText);
 
-    const commonElementsOrDuplicates = findCommonElementsOrDuplicates(currentWhitelist, currentBlacklist);
+    const commonElementsOrDuplicates = findCommonElementsOrDuplicates(currentAllowlist, currentDenylist);
     if (commonElementsOrDuplicates && commonElementsOrDuplicates.length > 0) {
-        wrongMsg += `Blacklist and whitelist for chain ${chain} should have no common elements or duplicates, found ${commonElementsOrDuplicates.length} ${commonElementsOrDuplicates[0]}\n`;
+        wrongMsg += `Denylist and allowlist for chain ${chain} should have no common elements or duplicates, found ${commonElementsOrDuplicates.length} ${commonElementsOrDuplicates[0]}\n`;
     }
-    const whitelistOrphan = arrayDiff(currentWhitelist, assets);
-    if (whitelistOrphan && whitelistOrphan.length > 0) {
-        wrongMsg += `Whitelist for chain ${chain} contains non-exitent assets, found ${whitelistOrphan.length}, ${whitelistOrphan[0]}\n`;
+    const allowlistOrphan = arrayDiff(currentAllowlist, assets);
+    if (allowlistOrphan && allowlistOrphan.length > 0) {
+        wrongMsg += `Allowlist for chain ${chain} contains non-exitent assets, found ${allowlistOrphan.length}, ${allowlistOrphan[0]}\n`;
     }
 
-    const newBlack = makeUnique(currentBlacklist.concat(whitelistOrphan));
-    const newWhite = makeUnique(arrayDiffNocase(assets, newBlack));
-    //console.log(currentWhitelist.length, "vs.", newWhite.length);
-    //console.log(currentBlacklist.length, "vs.", newBlack.length);
+    const newDeny = makeUnique(currentDenylist.concat(allowlistOrphan));
+    const newAllow = makeUnique(arrayDiffNocase(assets, newDeny));
+    //console.log(currentAllowlist.length, "vs.", newAllow.length);
+    //console.log(currentDenylist.length, "vs.", newDeny.length);
 
-    const wDiff1 = arrayDiffNocase(newWhite, currentWhitelist);
+    const wDiff1 = arrayDiffNocase(newAllow, currentAllowlist);
     if (wDiff1.length > 0) {
-        wrongMsg += `Some elements are missing from whitelist for chain ${chain}: ${wDiff1.length} ${wDiff1[0]}\n`;
+        wrongMsg += `Some elements are missing from allowlist for chain ${chain}: ${wDiff1.length} ${wDiff1[0]}\n`;
     }
-    const wDiff2 = arrayDiffNocase(currentWhitelist, newWhite);
+    const wDiff2 = arrayDiffNocase(currentAllowlist, newAllow);
     if (wDiff2.length > 0) {
-        wrongMsg += `Some elements should be removed from whitelist for chain ${chain}: ${wDiff2.length} ${wDiff2[0]}\n`;
+        wrongMsg += `Some elements should be removed from allowlist for chain ${chain}: ${wDiff2.length} ${wDiff2[0]}\n`;
     }
 
-    const bDiff1 = arrayDiffNocase(newBlack, currentBlacklist);
+    const bDiff1 = arrayDiffNocase(newDeny, currentDenylist);
     if (bDiff1.length > 0) {
-        wrongMsg += `Some elements are missing from blacklist for chain ${chain}: ${bDiff1.length} ${bDiff1[0]}\n`;
+        wrongMsg += `Some elements are missing from denylist for chain ${chain}: ${bDiff1.length} ${bDiff1[0]}\n`;
     }
-    const bDiff2 = arrayDiffNocase(currentBlacklist, newBlack);
+    const bDiff2 = arrayDiffNocase(currentDenylist, newDeny);
     if (bDiff2.length > 0) {
-        wrongMsg += `Some elements should be removed from blacklist for chain ${chain}: ${bDiff2.length} ${bDiff2[0]}\n`;
+        wrongMsg += `Some elements should be removed from denylist for chain ${chain}: ${bDiff2.length} ${bDiff2[0]}\n`;
     }
 
     // additionally check for nice formatting, sorting:
-    const newWhiteText = formatSortJson(newWhite);
-    const newBlackText = formatSortJson(newBlack);
-    if (newWhiteText !== currentWhitelistText) {
-        wrongMsg += `Whitelist for chain ${chain}: not formatted nicely \n`;
+    const newAllowText = formatSortJson(newAllow);
+    const newDenyText = formatSortJson(newDeny);
+    if (newAllowText !== currentAllowlistText) {
+        wrongMsg += `Allowlist for chain ${chain}: not formatted nicely \n`;
     }
-    if (newBlackText !== currentBlacklistText) {
-        wrongMsg += `Blacklist for chain ${chain}: not formatted nicely \n`;
+    if (newDenyText !== currentDenylistText) {
+        wrongMsg += `Denylist for chain ${chain}: not formatted nicely \n`;
     }
 
     if (wrongMsg.length > 0) {
         // sg wrong, may need to fix
         if (!checkOnly) {
             // update
-            writeFileSync(whitelistPath, newWhiteText);
-            writeFileSync(blacklistPath, newBlackText);
-            console.log(`Updated white and blacklists for chain ${chain}`);
+            writeFileSync(allowlistPath, newAllowText);
+            writeFileSync(denylistPath, newDenyText);
+            console.log(`Updated allow and denylists for chain ${chain}`);
         }
     }
     return [(wrongMsg.length == 0), wrongMsg];
 }
 
-export class Whitelist implements ActionInterface {
-    getName(): string { return "Whitelists"; }
+export class Allowlist implements ActionInterface {
+    getName(): string { return "Allowlists"; }
 
     getSanityChecks = null;
 
     getConsistencyChecks(): CheckStepInterface[] {
         const steps: CheckStepInterface[] = [];
-        chainsWithBlacklist.forEach(chain => {
+        chainsWithDenylist.forEach(chain => {
             steps.push(
                 {
-                    getName: () => { return `Whitelist and blacklist for ${chain} should be consistent with assets`},
+                    getName: () => { return `Allowlist and denylist for ${chain} should be consistent with assets`},
                     check: async () => {
-                        const [isOK, msg] = await checkUpdateWhiteBlackList(chain, true);
+                        const [isOK, msg] = await checkUpdateAllowDenyList(chain, true);
                         if (!isOK) {
                             return msg;
                         }
@@ -104,7 +104,7 @@ export class Whitelist implements ActionInterface {
     sanityFix = null;
 
     async consistencyFix(): Promise<void> {
-        await bluebird.each(chainsWithBlacklist, async (chain) => await checkUpdateWhiteBlackList(chain, false));
+        await bluebird.each(chainsWithDenylist, async (chain) => await checkUpdateAllowDenyList(chain, false));
     }
 
     update = null;
