@@ -22,9 +22,7 @@ export const chainFolderAllowedFiles = [
     allowList,
     denyList,
     "validators",
-    infoName,
-    "whitelist.json", // interim
-    "blacklist.json"
+    infoName
 ]
 export const chainsPath: string = path.join(process.cwd(), '/blockchains');
 export const getChainPath = (chain: string): string => `${chainsPath}/${chain}`;

@@ -77,25 +77,10 @@ async function checkUpdateAllowDenyList(chain: string, checkOnly: boolean ): Pro
             // update
             writeFileSync(allowlistPath, newAllowText);
             writeFileSync(denylistPath, newDenyText);
-            writeFileSync(allowlistPath.replace("allow", "white"), newAllowText); // interim
-            writeFileSync(denylistPath.replace("deny", "black"), newDenyText); // interim
             console.log(`Updated allow and denylists for chain ${chain}`);
         }
     }
     return [(wrongMsg.length == 0), wrongMsg];
-}
-
-async function copyAllowListsTemp() {
-    // clone allow/denylist.txt to white/blacklist.txt, for backward compatibility
-    chainsWithDenylist.forEach(chain => {
-        copyFile(`${getChainPath(chain)}/allowlist.json`, `${getChainPath(chain)}/whitelist.json`, (err) => {
-            if (err) throw err;
-        });
-        copyFile(`${getChainPath(chain)}/denylist.json`, `${getChainPath(chain)}/blacklist.json`, (err) => {
-            if (err) throw err;
-        });
-    });
-    console.log("allowlist/blakclist files duplicated for backwards compatibility.");
 }
 
 export class Allowlist implements ActionInterface {
@@ -122,9 +107,7 @@ export class Allowlist implements ActionInterface {
         return steps;
     }
 
-    async sanityFix(): Promise<void> {
-        await copyAllowListsTemp(); 
-    }
+    sanityFix = null;
 
     async consistencyFix(): Promise<void> {
         await bluebird.each(chainsWithDenylist, async (chain) => await checkUpdateAllowDenyList(chain, false));
