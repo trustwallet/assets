@@ -56,6 +56,7 @@ const custom: mapTiker[] = [
     {"coin": 60, "type": typeToken, "token_id": "0x4Ddc2D193948926D02f9B1fE9e1daa0718270ED5", "id": 5636},
     {"coin": 60, "type": typeToken, "token_id": "0x41AB1b6fcbB2fA9DCEd81aCbdeC13Ea6315F2Bf2", "id": 2634},
     {"coin": 60, "type": typeToken, "token_id": "0xC011A72400E58ecD99Ee497CF89E3775d4bd732F", "id": 2586},
+    {"coin": 354, "type": typeCoin, "id": 4129},
     // {"coin": 60, "type": typeToken, "token_id": "XXX", "id": XXX}, // XXX (XXX)
 ]
 
