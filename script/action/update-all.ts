@@ -10,7 +10,7 @@ import { TezosAction } from "./tezos";
 import { TronAction } from "./tron";
 import { Validators } from "./validators";
 import { WavesAction } from "./waves";
-import { Whitelist } from "./whitelists";
+import { Allowlist } from "./allowlists";
 import { Coinmarketcap } from "../../pricing/coinmarketcap/cmc-action";
 import { ActionInterface, CheckStepInterface } from "./interface";
 import * as chalk from 'chalk';
@@ -20,7 +20,7 @@ const actionList: ActionInterface[] = [
     new FoldersFiles(),
     new EthForks(),
     new LogoSize(),
-    new Whitelist(),
+    new Allowlist(),
     new Validators(),
     new JsonAction(),
     // chains:

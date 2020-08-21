@@ -9,8 +9,8 @@ export const infoName = `info`
 export const logoExtension = "png"
 export const jsonExtension = "json"
 
-const whiteList = `whitelist.${jsonExtension}`
-const blackList = `blacklist.${jsonExtension}`
+const allowList = `allowlist.${jsonExtension}`
+const denyList = `denylist.${jsonExtension}`
 
 export const logo = `${logoName}.${logoExtension}`
 export const info = `${infoName}.${jsonExtension}`
@@ -25,17 +25,17 @@ export const getChainPath = (chain: string): string => `${chainsFolderPath}/${ch
 export const getChainAssetPath = (chain: string, address: string) => `${getChainAssetsPath(chain)}/${address}`
 export const getAllChainsList = (): string[] => readDirSync(chainsFolderPath)
 export const getChainAssetLogoPath = (chain: string, address: string) => `${getChainAssetsPath(chain)}/${address}/${logo}`
-export const getChainWhitelistPath = (chain: string): string => `${chainsFolderPath}/${chain}/${whiteList}`
-export const getChainBlacklistPath = (chain: string): string => `${chainsFolderPath}/${chain}/${blackList}`
-export const getChainWhitelist = (chain: string): string[] => {
-    if (isChainWhitelistExistSync(chain)) {
-        return JSON.parse(readFileSync(getChainWhitelistPath(chain)))
+export const getChainAllowlistPath = (chain: string): string => `${chainsFolderPath}/${chain}/${allowList}`
+export const getChainDenylistPath = (chain: string): string => `${chainsFolderPath}/${chain}/${denyList}`
+export const getChainAllowlist = (chain: string): string[] => {
+    if (isChainAllowlistExistSync(chain)) {
+        return JSON.parse(readFileSync(getChainAllowlistPath(chain)))
     }
     return []
 }
-export const getChainBlacklist = (chain: string): string[] => {
-    if (isChainBlacklistExistSync(chain)) {
-        return JSON.parse(readFileSync(getChainBlacklistPath(chain)))
+export const getChainDenylist = (chain: string): string[] => {
+    if (isChainDenylistExistSync(chain)) {
+        return JSON.parse(readFileSync(getChainDenylistPath(chain)))
     }
     return []
 }
@@ -45,8 +45,8 @@ export const readDirSync = (path: string): string[] => fs.readdirSync(path)
 export const makeDirSync = (path: string) => fs.mkdirSync(path)
 export const isPathExistsSync = (path: string): boolean => fs.existsSync(path)
 export const isDirContainLogo = (path: string): boolean => fs.existsSync(`${path}/${logo}`)
-export const isChainWhitelistExistSync = (chain: string): boolean => isPathExistsSync(getChainWhitelistPath(chain))
-export const isChainBlacklistExistSync = (chain: string): boolean => isPathExistsSync(getChainBlacklistPath(chain))
+export const isChainAllowlistExistSync = (chain: string): boolean => isPathExistsSync(getChainAllowlistPath(chain))
+export const isChainDenylistExistSync = (chain: string): boolean => isPathExistsSync(getChainDenylistPath(chain))
 export const isChainInfoExistSync = (chain: string): boolean => isPathExistsSync(getChainInfoPath(chain))
 export const readFileSync = (path: string) => fs.readFileSync(path, 'utf8')
 

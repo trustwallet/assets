@@ -3,7 +3,7 @@ import * as bluebird from "bluebird";
 import * as fs from "fs";
 import * as path from "path";
 import * as chalk from 'chalk';
-import * as config from "../common/config";
+import * as config from "../config";
 import { ActionInterface, CheckStepInterface } from "./interface";
 import { getChainAssetsPath } from "../common/repo-structure";
 import { Binance } from "../common/blockchains";
@@ -11,13 +11,13 @@ import { readDirSync } from "../common/filesystem";
 
 import {
     getChainAssetLogoPath,
-    getChainBlacklistPath
+    getChainDenylistPath
 } from "../common/repo-structure";
 
 const binanceChain = "binance"
-const binanceUrlTokens2 = config.getConfig("binance_url_tokens2", "https://dex-atlantic.binance.org/api/v1/tokens?limit=1000");
-const binanceUrlTokens8 = config.getConfig("binance_url_tokens8", "https://dex-atlantic.binance.org/api/v1/mini/tokens?limit=1000");
-const binanceUrlTokenAssets = config.getConfig("binance_url_token_assets", "https://explorer.binance.org/api/v1/assets?page=1&rows=1000");
+const binanceUrlTokens2 = config.binanceUrlTokens2;
+const binanceUrlTokens8 = config.binanceUrlTokens8;
+const binanceUrlTokenAssets = config.binanceUrlTokenAssets;
 var cachedAssets = [];
 
 async function retrieveBep2AssetList(): Promise<any[]> {
@@ -54,15 +54,15 @@ function fetchImage(url) {
 }
 
 /// Return: array with images to fetch; {asset, assetImg}
-export function findImagesToFetch(assetInfoList: any, blacklist: string[]): any[] {
+export function findImagesToFetch(assetInfoList: any, denylist: string[]): any[] {
     let toFetch: any[] = [];
     console.log(`Checking for asset images to be fetched`);
     assetInfoList.forEach(({asset, assetImg}) => {
         process.stdout.write(`.${asset} `);
         if (assetImg) {
-            if (blacklist.indexOf(asset) != -1) {
+            if (denylist.indexOf(asset) != -1) {
                 console.log();
-                console.log(`${asset} is blacklisted`);
+                console.log(`${asset} is denylisted`);
             } else {
                 const imagePath = getChainAssetLogoPath(binanceChain, asset);
                 if (!fs.existsSync(imagePath)) {
@@ -130,9 +130,9 @@ export class BinanceAction implements ActionInterface {
     async update(): Promise<void> {
         // retrieve missing token images; BEP2 (bep8 not supported)
         const bep2InfoList = await retrieveBep2AssetList();
-        const blacklist: string[] = require(getChainBlacklistPath(binanceChain));
+        const denylist: string[] = require(getChainDenylistPath(binanceChain));
 
-        const toFetch = findImagesToFetch(bep2InfoList, blacklist);
+        const toFetch = findImagesToFetch(bep2InfoList, denylist);
         const fetchedAssets = await fetchMissingImages(toFetch);
 
         if (fetchedAssets.length > 0) {
