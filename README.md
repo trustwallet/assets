@@ -1,3 +1,5 @@
+# TEST
+
 # Trust Wallet Assets Info
 
 ![Periodic Update](https://github.com/trustwallet/assets/workflows/Periodic%20External%20Update/badge.svg)
