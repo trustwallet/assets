@@ -1,6 +1,4 @@
 <script>
-  // token search curl "https://api.trustwallet.com/v2/tokens/list?networks=60&query=ilk"
-
   function etherscanUrl(contract) {
     return `https://etherscan.io/token/${contract}`;
   }
@@ -144,7 +142,7 @@
     const files = await getPrFiles(prInfo.number);
     //console.log("files", files);
     document.getElementById("pr-info-files").innerHTML = "";
-    if (files.lenght == 0) {
+    if (files.length == 0) {
       alert(`Could not retrieve files from PR ${prNum}`);
       return;
     }
@@ -188,6 +186,33 @@
     const ctr = document.getElementById("pr-info-files").value;
     const repo = document.getElementById("pr-info-owner").innerText + "/" + document.getElementById("pr-info-repo").innerText;
     await loadToken("ethereum", ctr, repo, document.getElementById("pr-info-branch").innerText);
+  }
+
+  async function searchButton() {
+    const query = document.getElementById("search-input").value;
+    if (query.length < 2) {
+      // too short, do not search
+      return;
+    }
+    document.getElementById("search-result").innerHTML = "";
+    const url = `https://api.trustwallet.com/v2/tokens/list?networks=60,714&query=${query}`;
+    let resp = await fetch(url);
+    if (resp.status != 200) {
+      alert(`Error from ${url}, status ${resp.status} ${resp.statusText}`);
+      return null;
+    }
+    const respJson = await resp.json();
+    //console.log(respJson);
+    h = '';
+    if (respJson && respJson.docs) {
+      respJson.docs.forEach(t => h += `<option value="${t.address}">${t.symbol} ${t.name}</option>`);
+    }
+    document.getElementById("search-result").innerHTML = h;
+  }
+
+  function loadSearchResultButton() {
+    const query = document.getElementById("search-result").value;
+    loadToken("ethereum", query, "trustwallet/assets", "master");
   }
 
   async function init() {
@@ -235,6 +260,23 @@
                       onchange="LoadBySelectFromPrButton()">
                     </select>
                     <button onclick="LoadBySelectFromPrButton()">Load</button>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <div id="navigator-search">
+                  <p>Token Search</p>
+                  <div>
+                    <input id="search-input" placeholder="TWT" onkeypress="searchButton()">
+                    <button onclick="searchButton()">Search</button>
+                  </div>
+                  <select id="search-result" multiple size="8" onchange="loadSearchResultButton()">
+                    <option>(search results)</option>
+                  </select>
+                  <div>
+                    <button onclick="loadSearchResultButton()">Load</button>
                   </div>
                 </div>
               </td>
