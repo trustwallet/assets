@@ -7,8 +7,8 @@
     return `https://raw.githubusercontent.com/${repo}/${branch}/blockchains/${chain}/assets/${contract}/logo.png`;
   }
 
-  function logoImg(size, logoUrl) {
-    return `<img height="${size}" width="${size}" src="${logoUrl}"/>`;
+  function logoImg(size, logoUrl, dimmed) {
+    return `<img height="${size}" width="${size}" ${dimmed ? 'style="opacity: 0.6"' : ''} src="${logoUrl}"/>`;
   }
 
   const logoUrlBtc = "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/bitcoin/info/logo.png";
@@ -16,25 +16,27 @@
   const logoUrlBnb = "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/info/logo.png";
   const logoUrlEth = "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/info/logo.png";
 
-  function logoHtml(logoUrl) {
+  function logoHtml(logoUrl, smallOnly) {
     var h = '';
     h += `<table><tr>`;
     h += `<td><table>`;
-    h += `<tr><td style="padding: 5">${logoImg(32, logoUrlBtc)}</td></tr>`;
-    h += `<tr><td style="padding: 5">${logoImg(32, logoUrlTwt)}</td></tr>`;
-    h += `<tr><td style="padding: 5">${logoImg(32, logoUrl)}</td></tr>`;
-    h += `<tr><td style="padding: 5">${logoImg(32, logoUrlBnb)}</td></tr>`;
-    h += `<tr><td style="padding: 5">${logoImg(32, logoUrlEth)}</td></tr>`;
+    h += `<tr><td style="padding: 5">${logoImg(32, logoUrlBtc, true)}</td></tr>`;
+    h += `<tr><td style="padding: 5">${logoImg(32, logoUrlTwt, true)}</td></tr>`;
+    h += `<tr><td style="padding: 5">${logoImg(32, logoUrl, false)}</td></tr>`;
+    h += `<tr><td style="padding: 5">${logoImg(32, logoUrlBnb, true)}</td></tr>`;
+    h += `<tr><td style="padding: 5">${logoImg(32, logoUrlEth, true)}</td></tr>`;
     h += `</table></td>`;
-    h += `<td><table>`;
-    h += `<tr><td style="padding: 5">${logoImg(64, logoUrlBtc)}</td></tr>`;
-    h += `<tr><td style="padding: 5">${logoImg(64, logoUrl)}</td></tr>`;
-    h += `<tr><td style="padding: 5">${logoImg(64, logoUrlBnb)}</td></tr>`;
-    h += `</table></td>`;
-    h += `<td><table>`;
-    h += `<tr><td style="padding: 5">${logoImg(128, logoUrl)}</td></tr>`;
-    h += `</table></td>`;
-    h += `</tr></table>`;
+    if (!smallOnly) {
+      h += `<td><table>`;
+      h += `<tr><td style="padding: 5">${logoImg(64, logoUrlBtc, true)}</td></tr>`;
+      h += `<tr><td style="padding: 5">${logoImg(64, logoUrl, false)}</td></tr>`;
+      h += `<tr><td style="padding: 5">${logoImg(64, logoUrlBnb, true)}</td></tr>`;
+      h += `</table></td>`;
+      h += `<td><table>`;
+      h += `<tr><td style="padding: 5">${logoImg(128, logoUrl, false)}</td></tr>`;
+      h += `</table></td>`;
+      h += `</tr></table>`;
+    }
     return h;
   }
 
@@ -45,9 +47,8 @@
   async function loadToken(chain, contract, repo, branch) {
     document.getElementById("token-contract").innerText = contract;
     var loUrl = logoUrl(chain, contract, repo, branch);
-    var loHtml = logoHtml(loUrl);
-    document.getElementById("logo-preview-light").innerHTML = loHtml;
-    document.getElementById("logo-preview-dark").innerHTML = loHtml;
+    document.getElementById("logo-preview-light").innerHTML = logoHtml(loUrl, true);
+    document.getElementById("logo-preview-dark").innerHTML = logoHtml(loUrl, false);
     document.getElementById("logo-file").innerHTML = `<a target="_blank" rel="noopener noreferrer" href="${loUrl}">Logo file</a>`;
     var inUrl = infoUrl(chain, contract, repo, branch);
     document.getElementById("info-file").innerHTML = `<a target="_blank" rel="noopener noreferrer" href="${inUrl}">Info file</a>`;
