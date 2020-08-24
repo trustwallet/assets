@@ -115,7 +115,7 @@ export class BinanceAction implements ActionInterface {
                         }
                     });
                     console.log(`     ${assets.length} assets checked.`);
-                    return error;
+                    return [error, ""];
                 }
             },
         ];

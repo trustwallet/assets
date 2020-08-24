@@ -26,7 +26,7 @@ export class KavaAction implements ActionInterface {
                             error += `Address ${addr} should be in lowercase\n`;
                         }
                     });
-                    return error;
+                    return [error, ""];
                 }
             },
         ];
