@@ -35,7 +35,8 @@ async function checkUpdateAllowDenyList(chain: string, checkOnly: boolean ): Pro
     }
     const allowlistOrphan = arrayDiff(currentAllowlist, assets);
     if (allowlistOrphan && allowlistOrphan.length > 0) {
-        errorMsg += `Allowlist for chain ${chain} contains non-exitent assets, found ${allowlistOrphan.length}, ${allowlistOrphan[0]}\n`;
+        // warning only
+        warningMsg += `Allowlist for chain ${chain} contains non-exitent assets, found ${allowlistOrphan.length}, ${allowlistOrphan[0]}\n`;
     }
 
     const newDeny = makeUnique(currentDenylist.concat(allowlistOrphan));
@@ -45,30 +46,32 @@ async function checkUpdateAllowDenyList(chain: string, checkOnly: boolean ): Pro
 
     const wDiff1 = arrayDiffNocase(newAllow, currentAllowlist);
     if (wDiff1.length > 0) {
-        errorMsg += `Some elements are missing from allowlist for chain ${chain}: ${wDiff1.length} ${wDiff1[0]}\n`;
+        // warning only
+        warningMsg += `Some elements are missing from allowlist for chain ${chain}: ${wDiff1.length} ${wDiff1[0]}\n`;
     }
     const wDiff2 = arrayDiffNocase(currentAllowlist, newAllow);
     if (wDiff2.length > 0) {
-        errorMsg += `Some elements should be removed from allowlist for chain ${chain}: ${wDiff2.length} ${wDiff2[0]}\n`;
+        // warning only
+        warningMsg += `Some elements should be removed from allowlist for chain ${chain}: ${wDiff2.length} ${wDiff2[0]}\n`;
     }
 
     const bDiff1 = arrayDiffNocase(newDeny, currentDenylist);
     if (bDiff1.length > 0) {
-        errorMsg += `Some elements are missing from denylist for chain ${chain}: ${bDiff1.length} ${bDiff1[0]}\n`;
+        warningMsg += `Some elements are missing from denylist for chain ${chain}: ${bDiff1.length} ${bDiff1[0]}\n`;
     }
     const bDiff2 = arrayDiffNocase(currentDenylist, newDeny);
     if (bDiff2.length > 0) {
-        errorMsg += `Some elements should be removed from denylist for chain ${chain}: ${bDiff2.length} ${bDiff2[0]}\n`;
+        warningMsg += `Some elements should be removed from denylist for chain ${chain}: ${bDiff2.length} ${bDiff2[0]}\n`;
     }
 
     // additionally check for nice formatting, sorting:
     const newAllowText = formatSortJson(newAllow);
     const newDenyText = formatSortJson(newDeny);
     if (newAllowText !== currentAllowlistText) {
-        errorMsg += `Allowlist for chain ${chain}: not formatted nicely \n`;
+        warningMsg += `Allowlist for chain ${chain}: not formatted nicely \n`;
     }
     if (newDenyText !== currentDenylistText) {
-        errorMsg += `Denylist for chain ${chain}: not formatted nicely \n`;
+        warningMsg += `Denylist for chain ${chain}: not formatted nicely \n`;
     }
 
     if (errorMsg.length > 0 || warningMsg.length > 0) {
