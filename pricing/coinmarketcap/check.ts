@@ -12,9 +12,9 @@ export function getSanityChecks(): CheckStepInterface[] {
             getName: () => { return "Must have items";},
             check: async () => {
                 if (cmcMap.length == 0) {
-                    return `CMC map must have items`;
+                    return ["CMC map must have items", ""];
                 }
-                return "";
+                return ["", ""];
             }
         },
         {
@@ -30,7 +30,7 @@ export function getSanityChecks(): CheckStepInterface[] {
                         }
                     }
                 });
-                return error;
+                return [error, ""];
             }
         },
         {
@@ -55,7 +55,7 @@ export function getSanityChecks(): CheckStepInterface[] {
     
                     }
                 });
-                return error;
+                return [error, ""];
             }
         },
         {
@@ -72,7 +72,7 @@ export function getSanityChecks(): CheckStepInterface[] {
                         }
                     })
                 });
-                return error;
+                return [error, ""];
             }
         },
         {
@@ -98,7 +98,7 @@ export function getSanityChecks(): CheckStepInterface[] {
                         }
                     }
                 });
-                return error;
+                return [error, ""];
             }
         },
         {
@@ -134,7 +134,7 @@ export function getSanityChecks(): CheckStepInterface[] {
                             break;
                     }
                 });
-                return error;
+                return [error, ""];
             }
         },
         {
@@ -158,7 +158,7 @@ export function getSanityChecks(): CheckStepInterface[] {
                         }
                     }
                 });
-                return error;
+                return [error, ""];
             }
         },
     ];
