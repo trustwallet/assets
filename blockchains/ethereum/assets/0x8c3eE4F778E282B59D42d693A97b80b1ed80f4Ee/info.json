@@ -1,18 +1,8 @@
 {
-	"name": "SatoPay",
-	"website": "https://satopay.network/",
-	"short_description": "Crypto Payment Gateway",
-	"explorer": [{
-		"name": "Etherscan",
-		"url": "https://etherscan.io/token/0x408e41876cccdc0f92210600ef50372656052a38"
-	}],
-	"socials": [{
-			"name": "Telegram",
-			"url": "https://t.me/SatoPay"
-		},
-		{
-			"name": "Twitter",
-			"url": "https://twitter.com/Satopay1?s=09"
-		}
-	]
+  "name":"SatoPay",
+   "website":"https://satopay.network/",
+   "source_code":" https://etherscan.io/token/0x8c3ee4f778e282b59d42d693a97b80b1ed80f4ee#code",
+   "white_paper":"https://satopay.network/whitepapper.pdf",
+   "short_description":"Crypto Payment Gateway",
+   "explorer":" https://etherscan.io/token/0x8c3ee4f778e282b59d42d693a97b80b1ed80f4ee"
 }
