@@ -1,33 +1,33 @@
-import { toChecksum } from "../../src/test/helpers"
-const BluebirbPromise = require("bluebird")
+const BluebirdPromise = require("bluebird")
 const axios = require("axios")
 const chalk = require('chalk')
 const fs = require("fs")
 const path = require('path')
 const constants = require('bip44-constants')
+import { readFileSync } from "../../script/common/filesystem";
+import { ethForkChains } from "../../script/common/blockchains";
 import {
-    readFileSync,
+    toChecksum,
     getChainAssetLogoPath,
     isPathExistsSync,
     makeDirSync,
     getChainAssetPath,
-    ethSidechains,
-    getChainBlacklist,
-    getChainWhitelist,
-} from "../../src/test/helpers";
-import { TickerType, mapTiker, PlatformType } from "../../src/test/models";
+    getChainDenylist,
+    getChainAllowlist,
+} from "../../script-old/helpers";
+import { TickerType, mapTiker, PlatformType } from "../../script-old/models";
 
 // Steps required to run this:
 // 1. (Optional) CMC API key already setup, use yours if needed. Install script deps "npm i" if hasn't been run before.
 // 2. Pull down tokens repo https://github.com/trustwallet/assets and point COIN_IMAGE_BASE_PATH and TOKEN_IMAGE_BASE_PATH to it.
-// 3. Run: `npm run gen:list`
+// 3. Run: `npm run update`
 
 const CMC_PRO_API_KEY = `df781835-e5f4-4448-8b0a-fe31402ab3af` // Free Basic Plan api key is enough to run script
 const CMC_LATEST_BASE_URL = `https://pro-api.coinmarketcap.com/v1/global-metrics/quotes/latest?`
 const typeToken = TickerType.Token
 const typeCoin = TickerType.Coin
-const mappedChainsBlacklistAssets = {} // {ethereum: {<0x...>: ""},}
-const mappedChainsWhitelistAssets = {} // {ethereum: {<0x...>: ""},}
+const mappedChainsDenylistAssets = {} // {ethereum: {<0x...>: ""},}
+const mappedChainsAllowlistAssets = {} // {ethereum: {<0x...>: ""},}
 
 const custom: mapTiker[] = [
     {"coin": 60, "type": typeToken, "token_id": "0x6758B7d441a9739b98552B373703d8d3d14f9e62", "id": 2548}, // POA ERC20 on Foundation (POA20)
@@ -50,48 +50,69 @@ const custom: mapTiker[] = [
     {"coin": 60, "type": typeToken, "token_id": "0xBD87447F48ad729C5c4b8bcb503e1395F62e8B98", "id": 3408}, // Pool Usdc (plUsdc)
     {"coin": 60, "type": typeToken, "token_id": "0x49d716DFe60b37379010A75329ae09428f17118d", "id": 4943}, // Pool Dai (plDai)
     {"coin": 60, "type": typeToken, "token_id": "0x589891a198195061Cb8ad1a75357A3b7DbaDD7Bc", "id": 4036}, // Contentos (COS)
+    {"coin": 60, "type": typeToken, "token_id": "0x30f271C9E86D2B7d00a6376Cd96A1cFBD5F0b9b3", "id": 5835}, // Decentr (DEC)
+    // CMC returns multiple entries with 0x4Ddc2D193948926D02f9B1fE9e1daa0718270ED5 (2020-07-28), including them in the override to avoid duplicate
+    // 5636 5742 5743 5744 5745 5746
+    {"coin": 60, "type": typeToken, "token_id": "0x4Ddc2D193948926D02f9B1fE9e1daa0718270ED5", "id": 5636},
+    {"coin": 60, "type": typeToken, "token_id": "0x41AB1b6fcbB2fA9DCEd81aCbdeC13Ea6315F2Bf2", "id": 2634},
+    {"coin": 60, "type": typeToken, "token_id": "0xC011A72400E58ecD99Ee497CF89E3775d4bd732F", "id": 2586},
+    {"coin": 354, "type": typeCoin, "id": 4129},
     // {"coin": 60, "type": typeToken, "token_id": "XXX", "id": XXX}, // XXX (XXX)
 ]
 
-const allContracts: mapTiker[] = [] // Temp storage for mapped assets
+var allContracts: mapTiker[] = [] // Temp storage for mapped assets
 let bnbOwnerToSymbol = {} // e.g: bnb1tawge8u97slduhhtumm03l4xl4c46dwv5m9yzk: WISH-2D5
 let bnbOriginalSymbolToSymbol = {} // e.g: WISH: WISH-2D5
 
-run()
-async function run() {
-    try {
-        await Promise.all([initState(), setBinanceTokens()])
-        const [totalCrypto, coins] = await Promise.all([getTotalActiveCryptocurrencies(), getTickers()])
-        // setBIP44Constants()
-        log(`Found ${totalCrypto} on CMC`, chalk.yellowBright)
-        await BluebirbPromise.mapSeries(coins, processCoin)
+async function retrieveCmcData() {
+    allContracts = []
+    await Promise.all([initState(), setBinanceTokens()])
+    const [totalCrypto, coins] = await Promise.all([getTotalActiveCryptocurrencies(), getTickers()])
+    // setBIP44Constants()
+    log(`Found ${totalCrypto} on CMC`, chalk.yellowBright)
+    await BluebirdPromise.mapSeries(coins, processCoin)
 
+    sortContracts()
+    fs.writeFileSync(path.join(__dirname, 'cmc-data.json'), JSON.stringify(allContracts, null, 4))
+    allContracts = []
+}
+
+export async function mergeCmcData() {
+    try {
+        allContracts = JSON.parse(readFileSync(path.join(__dirname, 'cmc-data.json')))
         addCustom()
         printContracts()
     } catch (error) {
-        log(`Error at the end ${error.message}`)
+        log(`Exception: ${error.message}`)
     }
 }
 
-async function processCoin(coin) {
+export async function update() {
+    try {
+        await retrieveCmcData()
+        await mergeCmcData()
+    } catch (error) {
+        log(`Exception: ${error.message}`)
+    }
+}
+
+function buildCoinEntry(coin: any): any {
     const { id, symbol, name, platform } = coin
     const platformType: PlatformType = platform == null ? "" : platform.name
     log(`${symbol}:${platformType}`)
-    // await BluebirbPromise.mapSeries(types, async type => {
     switch (platformType) {
         case PlatformType.Ethereum:
             // log(`Ticker ${name}(${symbol}) is a token with address ${address} and CMC id ${id}`)
             if (platform.token_address) {
                 try {
                     const checksum = toChecksum(platform.token_address)
-                    if (!isAddressInBlackList("ethereum", checksum)) {
-                        log(`Added ${checksum}`)
-                        addToContractsList({
+                    if (!isAddressInDenyList("ethereum", checksum)) {
+                        return {
                             coin: 60,
                             type: typeToken,
                             token_id: checksum,
                             id
-                        })
+                        }
                     }
                 } catch (error) {
                     console.log(`Etheruem platform error`, error)
@@ -99,6 +120,7 @@ async function processCoin(coin) {
                 }
             }
             break
+
         case PlatformType.Binance:
             if (symbol === "BNB") {
                 break
@@ -106,27 +128,24 @@ async function processCoin(coin) {
             const ownerAddress = platform.token_address.trim()
             log(`Symbol ${symbol}:${ownerAddress}:${id}`)
             if (ownerAddress && (ownerAddress in bnbOwnerToSymbol)) {
-                log(`Added ${bnbOwnerToSymbol[ownerAddress]}`)
-                addToContractsList({
+                return {
                     coin: 714,
                     type: typeToken,
                     token_id: bnbOwnerToSymbol[ownerAddress],
                     id
-                })
-                break
+                }
             }
 
             if (symbol in bnbOriginalSymbolToSymbol) {
-                log(`Added Binance ${bnbOriginalSymbolToSymbol[symbol]}`)
-                addToContractsList({
+                return {
                     coin: 714,
                     type: typeToken,
                     token_id: bnbOriginalSymbolToSymbol[symbol].trim(),
                     id
-                })
-                break
+                }
             }
             break
+
         case PlatformType.TRON:
             if (symbol === "TRX") {
                 break
@@ -134,14 +153,15 @@ async function processCoin(coin) {
             const tokenAddr = platform.token_address.trim()
             log(`tron: ${tokenAddr}`)
             if (tokenAddr.length > 0) {
-                addToContractsList({
+                return {
                     coin: 195,
                     type: typeToken,
                     token_id: tokenAddr,
                     id
-                })
+                }
             }
             break
+
         // case PlatformType.VeChain:
         //         if (symbol === "VET") {
         //             break
@@ -156,22 +176,37 @@ async function processCoin(coin) {
         //             id
         //         })
         //         break
+
         default:
             const coinIndex = getSlip44Index(symbol, name)
 
             if (coinIndex >= 0) {
                 log(`Ticker ${name}(${symbol}) is a coin with id ${coinIndex}`)
-                addToContractsList({
+                return {
                     coin: coinIndex,
                     type: typeCoin,
                     id
-                })
-            } else {
-                log(`Coin ${coinIndex} ${name}(${symbol}) not listed in slip44`)
+                }
             }
+            log(`Coin ${coinIndex} ${name}(${symbol}) not listed in slip44`)
             break
     }
-    // })
+    log(`Could not process entry ${symbol}:${name}:${platformType}`)
+    return null
+}
+
+async function processCoin(coin) {
+    const entry = buildCoinEntry(coin)
+    if (!entry) {
+        return
+    }
+    // check if it is in custom, in that case omit it
+    if (entry.token_id && custom.find(elem => elem.coin == entry.coin && elem.token_id === entry.token_id)) {
+        log(`Entry ${entry.token_id} is in custom, omitting`)
+        return
+    }
+    addToContractsList(entry)
+    log(`Added entry ${entry.token_id}`)
 }
 
 // Iniitalize state necessary for faster data looup during script run
@@ -180,15 +215,15 @@ async function initState () {
 }
 
 async function mapChainsAssetsLists() {
-    ethSidechains.forEach(chain => {
-        Object.assign(mappedChainsWhitelistAssets, {[chain]: {}})
-        Object.assign(mappedChainsBlacklistAssets, {[chain]: {}})
+    ethForkChains.forEach(chain => {
+        Object.assign(mappedChainsAllowlistAssets, {[chain]: {}})
+        Object.assign(mappedChainsDenylistAssets, {[chain]: {}})
 
-        getChainWhitelist(chain).forEach(addr => {
-            Object.assign(mappedChainsWhitelistAssets[chain], {[addr]: ""})
+        getChainAllowlist(chain).forEach(addr => {
+            Object.assign(mappedChainsAllowlistAssets[chain], {[addr]: ""})
         })
-        getChainBlacklist(chain).forEach(addr => {
-            Object.assign(mappedChainsBlacklistAssets[chain], {[addr]: ""})
+        getChainDenylist(chain).forEach(addr => {
+            Object.assign(mappedChainsDenylistAssets[chain], {[addr]: ""})
         })
     })
 }
@@ -203,7 +238,7 @@ function addToContractsList(ticker: mapTiker) {
     allContracts.push(ticker)
 }
 
-function printContracts() {
+function sortContracts() {
     const sortedById = allContracts.sort((a,b) => {
         if (a.id < b.id) return -1
         if (a.id > b.id) return 1
@@ -216,9 +251,14 @@ function printContracts() {
         if (a.token_id < b.token_id) return -1
         if (a.token_id > b.token_id) return 1
     })
+    allContracts = sortedById
+}
 
+
+function printContracts() {
+    sortContracts()
     const wstream = fs.createWriteStream(path.join(__dirname, 'mapping.json'))
-    wstream.write(JSON.stringify(sortedById, null, 4))
+    wstream.write(JSON.stringify(allContracts, null, 4))
 }
 
 function getSlip44Index(symbol: string, name: string): number {
@@ -241,7 +281,7 @@ const getImageURL = (id: string | number): string => `https://s2.coinmarketcap.c
 async function getImageIfMissing(chain: string, address: string, id: string) {
     try {
         const logoPath = getChainAssetLogoPath(chain, String(address))
-        if (!isPathExistsSync(logoPath) && !isAddressInBlackList(chain, address)) {
+        if (!isPathExistsSync(logoPath) && !isAddressInDenyList(chain, address)) {
             const imageStream = await fetchImage(getImageURL(id))
 
             if (imageStream) {
@@ -261,8 +301,8 @@ async function getImageIfMissing(chain: string, address: string, id: string) {
 }
 
 
-function isAddressInBlackList(chain: string, address: string): boolean {
-    return mappedChainsBlacklistAssets[chain].hasOwnProperty(address)
+function isAddressInDenyList(chain: string, address: string): boolean {
+    return mappedChainsDenylistAssets[chain].hasOwnProperty(address)
 }
 
 async function fetchImage(url: string) {
