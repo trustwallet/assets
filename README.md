@@ -1,19 +1,17 @@
-# Trust Wallet Assets Info
-
-![Periodic Update](https://github.com/trustwallet/assets/workflows/Periodic%20External%20Update/badge.svg)
+# Bridge Wallet Assets Info
 
 ## Overview
-Trust Wallet token repository is a comprehensive, up-to-date collection of information about several thousands (!) of crypto tokens.
+This is a fork of the Trust Wallet token repository, which is a comprehensive collection of information about several thousands (!) of crypto tokens.
 
-[Trust Wallet](https://trustwallet.com) uses token logos from this source, alongside a number of other projects.
+[Bridge Wallet](https://www.mtpelerin.com/bridge-wallet) uses token logos from this source.
+
+The reason for this fork is the switch of Trust Wallet policy from a free, community driven repository to a paying repository where users need to pay a fee to add a new asset to the list. We therefore decided to take it from there and maintain it on our own, keeping the free policy for adding new assets.
 
 The repository contains token info from several blockchains, info on dApps, staking validators, etc.
 For every token a logo and optional additional information is available (such data is not available on-chain).
 
 Such a large collection can be maintained only through a community effort, so _contributions are welcome_,
 primarily from token projects.
-
-<center><img src='https://raw.githubusercontent.com/trustwallet/assets/master/media/trust-wallet.png'></center>
 
 ## Contribution Quick Start
 
@@ -36,14 +34,14 @@ such as
 
 ## Documentation
 
-For details, see the [Developers site](https://developer.trustwallet.com/add_new_asset):
+For details, see the [developers site](https://developer.trustwallet.com/add_new_asset):
 
 - [Contribution guidelines](https://developer.trustwallet.com/add_new_asset#contribution-guidelines)
 
 - [Repository details](https://developer.trustwallet.com/add_new_asset#repository-details)
 
 ## Disclaimer
-Trust Wallet team allows anyone to submit new assets to this repository. However, this does not mean that we are in direct partnership with all of the projects.
+Mt Pelerin allows anyone to submit new assets to this repository. However, this does not mean that we are in direct partnership with all of the projects.
 
-Trust Wallet team will reject projects that are deemed as scam or fraudulent after careful review.
-Trust Wallet team reserves the right to change the terms of asset submissions at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.
+Mt Pelerin will reject projects that are deemed as scam or fraudulent after careful review.
+Mt Pelerin reserves the right to change the terms of asset submissions at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.
