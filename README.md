@@ -15,11 +15,7 @@ primarily from token projects.
 
 ## Contribution Quick Start
 
-Details of the repository structure and contribution guidelines are listed on the
-[Developers site](https://developer.trustwallet.com/add_new_asset).
-Here is a quick starter summary for the most common use case.
-
-For **adding an ERC20 token**:
+**Adding an ERC20 token**:
 - fork the Github repository
 - prepare a logo file, according to the
 listed [image rules](https://developer.trustwallet.com/add_new_asset#image-requirements), but must importantly:
@@ -29,12 +25,11 @@ where the last part is the token contract address in
 [_checksum format_](https://developer.trustwallet.com/add_new_asset#checksum_format)
 such as
 `blockchains/ethereum/assets/0x1234567461d3f8Db7496581774Bd869C83D51c93/logo.png`.
-- Create a PR to the main repo
-- Pay the processing fee
+- Create a PR to this repo
 
-## Documentation
+## Original Documentation
 
-For details, see the [developers site](https://developer.trustwallet.com/add_new_asset):
+For more information, see the original Trust Wallet documentation on their [developers site](https://developer.trustwallet.com/add_new_asset):
 
 - [Contribution guidelines](https://developer.trustwallet.com/add_new_asset#contribution-guidelines)
 
