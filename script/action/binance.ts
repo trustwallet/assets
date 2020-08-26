@@ -3,7 +3,7 @@ import * as bluebird from "bluebird";
 import * as fs from "fs";
 import * as path from "path";
 import * as chalk from 'chalk';
-import * as config from "../common/config";
+import * as config from "../config";
 import { ActionInterface, CheckStepInterface } from "./interface";
 import { getChainAssetsPath } from "../common/repo-structure";
 import { Binance } from "../common/blockchains";
@@ -15,9 +15,9 @@ import {
 } from "../common/repo-structure";
 
 const binanceChain = "binance"
-const binanceUrlTokens2 = config.getConfig("binance_url_tokens2", "https://dex-atlantic.binance.org/api/v1/tokens?limit=1000");
-const binanceUrlTokens8 = config.getConfig("binance_url_tokens8", "https://dex-atlantic.binance.org/api/v1/mini/tokens?limit=1000");
-const binanceUrlTokenAssets = config.getConfig("binance_url_token_assets", "https://explorer.binance.org/api/v1/assets?page=1&rows=1000");
+const binanceUrlTokens2 = config.binanceUrlTokens2;
+const binanceUrlTokens8 = config.binanceUrlTokens8;
+const binanceUrlTokenAssets = config.binanceUrlTokenAssets;
 var cachedAssets = [];
 
 async function retrieveBep2AssetList(): Promise<any[]> {
@@ -115,7 +115,7 @@ export class BinanceAction implements ActionInterface {
                         }
                     });
                     console.log(`     ${assets.length} assets checked.`);
-                    return error;
+                    return [error, ""];
                 }
             },
         ];

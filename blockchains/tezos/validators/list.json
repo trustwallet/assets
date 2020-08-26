@@ -158,7 +158,7 @@
         },
         "status": {
             "disabled": true,
-            "note": "No more capacity: -163560"
+            "note": "No more capacity: -164561"
         }
     },
     {
@@ -265,7 +265,7 @@
         "description": "Money Every 3 Days - Low fees, dependable payouts and active participant.",
         "website": "https://moneyevery3days.com",
         "payout": {
-            "commission": 4,
+            "commission": 6,
             "payoutDelay": 1,
             "payoutPeriod": 1
         },
@@ -344,7 +344,7 @@
         },
         "status": {
             "disabled": true,
-            "note": "No more capacity: -97847"
+            "note": "According to Baking Bad API, baker is not active, current status dead, see: https://api.baking-bad.org/v2/bakers/tz1LH4L6XYT2JNPhvWYC4Zq3XEiGgEwzNRvo"
         }
     },
     {
@@ -381,7 +381,7 @@
         "description": "Staking for best PoS blockchains in one place",
         "website": "https://www.stakingshop.live",
         "payout": {
-            "commission": 3,
+            "commission": 15,
             "payoutDelay": 6,
             "payoutPeriod": 1
         },
@@ -390,7 +390,7 @@
         },
         "status": {
             "disabled": true,
-            "note": "No more capacity: -35118"
+            "note": "No more capacity: -28308"
         }
     },
     {
