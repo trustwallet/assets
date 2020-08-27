@@ -4,7 +4,8 @@ export async function main() {
     var returnCode: number = 0;
 
     try {
-        const errors1 = await sanityCheckAll();
+        const [errors1, warnings1] = await sanityCheckAll();
+        // warnings ignored
         if (errors1.length > 0) {
             returnCode = errors1.length;
         }
@@ -14,7 +15,8 @@ export async function main() {
     }
 
     try {
-        const errors1 = await consistencyCheckAll();
+        const [errors1, warnings1] = await consistencyCheckAll();
+        // warnings ignored
         if (errors1.length > 0) {
             returnCode = errors1.length;
         }
