@@ -38,7 +38,7 @@ export class Validators implements ActionInterface {
             {
                 getName: () => { return "Make sure tests added for new staking chain"},
                 check: async (): Promise<[string, string]> => {
-                    if (stakingChains.length != 7) {
+                    if (stakingChains.length != 8) {
                         return [`Wrong number of staking chains ${stakingChains.length}`, ""];
                     }
                     return ["", ""];
