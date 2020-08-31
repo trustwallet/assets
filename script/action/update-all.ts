@@ -11,7 +11,6 @@ import { TronAction } from "./tron";
 import { Validators } from "./validators";
 import { WavesAction } from "./waves";
 import { Allowlist } from "./allowlists";
-import { Coinmarketcap } from "../../pricing/coinmarketcap/cmc-action";
 import { ActionInterface, CheckStepInterface } from "./interface";
 import * as chalk from 'chalk';
 import * as bluebird from "bluebird";
@@ -30,8 +29,7 @@ const actionList: ActionInterface[] = [
     new TerraAction(),
     new TezosAction(),
     new TronAction(),
-    new WavesAction(),
-    new Coinmarketcap()
+    new WavesAction()
 ];
 
 async function checkStepList(steps: CheckStepInterface[]): Promise<[string[], string[]]> {
