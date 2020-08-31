@@ -23,7 +23,7 @@ export class JsonAction implements ActionInterface {
                             error += `${file} path contains invalid JSON\n`;
                         }
                     });
-                    return error;
+                    return [error, ""];
                 }
             },
         ];

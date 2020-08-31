@@ -3,7 +3,7 @@ import {
     isPathExistsSync,
     readDirSync
 } from "./filesystem";
-import * as config from "./config";
+import * as config from "../config";
 
 export const logoName = `logo`;
 export const infoName = `info`;
@@ -12,15 +12,15 @@ export const logoExtension = "png";
 export const jsonExtension = "json";
 export const logoFullName = `${logoName}.${logoExtension}`;
 export const infoFullName = `${infoName}.${jsonExtension}`;
-const whiteList = `whitelist.${jsonExtension}`;
-const blackList = `blacklist.${jsonExtension}`;
+const allowList = `allowlist.${jsonExtension}`;
+const denyList = `denylist.${jsonExtension}`;
 export const validatorsList = `${listName}.${jsonExtension}`
 
 export const assetFolderAllowedFiles = [logoFullName, infoFullName];
 export const chainFolderAllowedFiles = [
     "assets",
-    whiteList,
-    blackList,
+    allowList,
+    denyList,
     "validators",
     infoName
 ]
@@ -31,8 +31,8 @@ export const getChainAssetsPath = (chain: string): string => `${getChainPath(cha
 export const getChainAssetPath = (chain: string, asset: string) => `${getChainAssetsPath(chain)}/${asset}`;
 export const getChainAssetLogoPath = (chain: string, asset: string): string => `${getChainAssetPath(chain, asset)}/${logoFullName}`;
 export const getChainAssetInfoPath = (chain: string, asset: string): string => `${getChainAssetPath(chain, asset)}/${infoFullName}`;
-export const getChainWhitelistPath = (chain: string): string => `${getChainPath(chain)}/${whiteList}`;
-export const getChainBlacklistPath = (chain: string): string => `${getChainPath(chain)}/${blackList}`;
+export const getChainAllowlistPath = (chain: string): string => `${getChainPath(chain)}/${allowList}`;
+export const getChainDenylistPath = (chain: string): string => `${getChainPath(chain)}/${denyList}`;
 export const pricingFolderPath = path.join(process.cwd(), '/pricing');
 
 export const getChainValidatorsPath = (chain: string): string => `${getChainPath(chain)}/validators`;
@@ -47,5 +47,4 @@ export const getChainAssetsList = (chain: string): string[] => readDirSync(getCh
 export const getChainAssetFilesList = (chain: string, address: string) => readDirSync(getChainAssetPath(chain, address));
 export const getChainValidatorsAssets = (chain: string): string[] => readDirSync(getChainValidatorsAssetsPath(chain));
 
-const defaultRootDirAllowedFiles = [".github", "blockchains", "dapps", "media", "script", "test", ".gitignore", "LICENSE", "package-lock.json", "package.json", "README.md", ".git", "Gemfile", "Gemfile.lock"];
-export const rootDirAllowedFiles = config.getConfig("folders_rootdir_allowed_files", defaultRootDirAllowedFiles);
+export const rootDirAllowedFiles = config.foldersRootdirAllowedFiles;

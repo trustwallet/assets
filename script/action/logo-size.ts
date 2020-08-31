@@ -83,9 +83,9 @@ export class LogoSize implements ActionInterface {
                     const foundChains = readDirSync(chainsPath);
                     var largePath = await checkDownsize(foundChains, true);
                     if (largePath.length > 0) {
-                        return `Found at least one logo that is too large: ${largePath}`;
+                        return [`Found at least one logo that is too large: ${largePath}`, ""];
                     }
-                    return "";
+                    return ["", ""];
                 }
             },
         ];
