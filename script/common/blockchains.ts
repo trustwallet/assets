@@ -41,7 +41,8 @@ export const stakingChains = [
     Tron,
     Waves,
     Kava,
-    Terra
+    Terra,
+    Binance
 ];
 export const chainsWithDenylist = ethForkChains.concat(
     Binance,
