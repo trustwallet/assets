@@ -4,7 +4,8 @@ import {
 } from "../script/common/types";
 import {
     isChecksum,
-    toChecksum
+    toChecksum,
+    isEthereumAddress
 } from "../script/common/eth-web3";
 import {
     isDimensionTooLarge,
@@ -36,6 +37,10 @@ describe("Test eth-web3 helpers", () => {
         expect(toChecksum("0x7bb09bc8ade747178e95b1d035ecbeebbb18cfee", "ethereum"), `from lowercase`).toEqual("0x7Bb09bC8aDE747178e95B1D035ecBeEBbB18cFee");
         expect(toChecksum("0x7Bb09bC8aDE747178e95B1D035ecBeEBbB18cFee", "ethereum"), `from checksum`).toEqual("0x7Bb09bC8aDE747178e95B1D035ecBeEBbB18cFee");
         expect(toChecksum("0x7bb09bc8ade747178e95b1d035ecbeebbb18cfee", "wanchain"), `wanchain, from lowercase`).toEqual("0x7bB09Bc8Ade747178E95b1d035ECbEebBb18CfEE");
+    });
+    test(`Test isEthereumAddress`, () => {
+        expect(isEthereumAddress("0x7bb09bc8ade747178e95b1d035ecbeebbb18cfee")).toBe(true);
+        expect(isEthereumAddress("b09bc8ade747178e95b1d035ecbeebbb18cfee")).toBe(false);
     });
 });
 
