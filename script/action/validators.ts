@@ -34,14 +34,14 @@ export class Validators implements ActionInterface {
     getName(): string { return "Validators"; }
 
     getSanityChecks(): CheckStepInterface[] {
-        var steps = [
+        var steps: CheckStepInterface[] = [
             {
                 getName: () => { return "Make sure tests added for new staking chain"},
-                check: async () => {
-                    if (stakingChains.length != 7) {
-                        return `Wrong number of staking chains ${stakingChains.length}`;
+                check: async (): Promise<[string, string]> => {
+                    if (stakingChains.length != 8) {
+                        return [`Wrong number of staking chains ${stakingChains.length}`, ""];
                     }
-                    return "";
+                    return ["", ""];
                 }
             },
         ];
@@ -52,7 +52,7 @@ export class Validators implements ActionInterface {
                     check: async () => {
                         const validatorsListPath = getChainValidatorsListPath(chain);
                         if (!isValidJSON(validatorsListPath)) {
-                            return `Not valid Json file at path ${validatorsListPath}`;
+                            return [`Not valid Json file at path ${validatorsListPath}`, ""];
                         }
 
                         var error: string = "";
@@ -86,7 +86,7 @@ export class Validators implements ActionInterface {
                             }
                         });
 
-                        return error;
+                        return [error, ""];
                     }
                 }
             );

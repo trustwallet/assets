@@ -34,7 +34,7 @@ export class FoldersFiles implements ActionInterface {
                             error += `File "${file}" should not be in root or added to predifined list\n`;
                         }
                     });
-                    return error;
+                    return [error, ""];
                 }
             },
             {
@@ -51,7 +51,7 @@ export class FoldersFiles implements ActionInterface {
                             }
                         });
                     });
-                    return error;
+                    return [error, ""];
                 }
             },
             {
@@ -68,7 +68,7 @@ export class FoldersFiles implements ActionInterface {
                             error += error1 + "\n";
                         }
                     });
-                    return error;
+                    return [error, ""];
                 }
             },
             {
@@ -88,7 +88,7 @@ export class FoldersFiles implements ActionInterface {
                             }) ;
                         }
                     });
-                    return error;
+                    return [error, ""];
                 }
             },
         ];

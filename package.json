@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/trustwallet/assets#readme",
   "devDependencies": {
-    "@trustwallet/wallet-core": "^0.0.6",
+    "@trustwallet/wallet-core": "^2.2.9",
     "@types/jest": "^25.2.3",
     "@types/jest-expect-message": "^1.0.2",
     "@types/node": "^13.13.14",
@@ -39,6 +39,7 @@
     "bip44-constants": "^8.0.30",
     "bluebird": "^3.7.2",
     "chalk": "^4.1.0",
+    "danger": "^10.3.0",
     "ethereum-checksum-address": "0.0.5",
     "eztz-lib": "^0.1.2",
     "image-size": "^0.8.3",
