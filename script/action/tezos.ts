@@ -90,7 +90,7 @@ export class TezosAction implements ActionInterface {
                             error += `Address ${addr} must be valid Tezos address'\n`;
                         }
                     });
-                    return error;
+                    return [error, ""];
                 }
             },
         ];

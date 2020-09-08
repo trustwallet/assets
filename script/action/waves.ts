@@ -25,7 +25,7 @@ export class WavesAction implements ActionInterface {
                             error += `Address ${addr} should be a Waves address'\n`;
                         }
                     });
-                    return error;
+                    return [error, ""];
                 }
             },
         ];
