@@ -2,8 +2,9 @@ import { sanityCheckAll } from "../action/update-all";
 
 export async function main() {
     try {
-        const returnCode = await sanityCheckAll();
-        process.exit(returnCode);
+        const [errors, warnings] = await sanityCheckAll();
+        // warnings ignored
+        process.exit(errors.length);
     } catch(err) {
         console.error(err);
         process.exit(1);

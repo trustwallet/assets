@@ -12,16 +12,32 @@ import {
     getChainAssetsPath,
     getChainPath,
     getRootDirFilesList,
-    isChecksum,
-    isEthereumAddress,
-    isPathDir,
     logo,
     logoExtension,
-    makeDirIfDoestExist,
     readDirSync,
-    toChecksum,
     isDirContainLogo
 } from "./helpers"
+import { isEthereumAddress, toChecksum, isChecksum } from "../script/common/eth-web3";
+
+async function makeDirIfDoestExist(dirPath: string, dirName: string) {
+    const path = `${dirPath}/${dirName}`
+    await fs.mkdir(path, {recursive: true}, (err) => {
+        if (err) {
+            console.error(`Error creating dir at path ${path} with result ${err}`)
+        } else {
+            console.log(`Created direcotry at ${path}`)
+        }
+    })
+}
+
+function isPathDir(path: string): boolean {
+    try {
+        return fs.lstatSync(path).isDirectory()
+    } catch (e) {
+        console.log(`Path: ${path} is not a directory with error: ${e.message}`)
+        return false
+    }
+}
 
 ethForkChains.forEach(chain => {
     const chainAssetsPath = getChainAssetsPath(chain)

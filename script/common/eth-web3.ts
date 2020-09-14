@@ -29,3 +29,6 @@ export function isChecksum(address: string, chain: string = "ethereum"): boolean
     return isChecksumEthereum(address);
 }
 
+export function isEthereumAddress(address: string): boolean {
+    return web3.utils.isAddress(address)
+}

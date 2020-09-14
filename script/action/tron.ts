@@ -37,7 +37,7 @@ export class TronAction implements ActionInterface {
                             error += `Missing file at path '${assetsLogoPath}'\n`;
                         }
                     });
-                    return error;
+                    return [error, ""];
                 }
             },
             {
@@ -50,7 +50,7 @@ export class TronAction implements ActionInterface {
                             error += `Address ${addr} should be TRC20 address'\n`;
                         }
                     });
-                    return error;
+                    return [error, ""];
                 }                
             }
         ];
