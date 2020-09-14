@@ -1,6 +1,6 @@
 # Trust Wallet Assets Info
 
-![Periodic Update](https://github.com/trustwallet/assets/workflows/Periodic%20External%20Update/badge.svg)
+![Check](https://github.com/trustwallet/assets/workflows/Check/badge.svg)
 
 ## Overview
 Trust Wallet token repository is a comprehensive, up-to-date collection of information about several thousands (!) of crypto tokens.
