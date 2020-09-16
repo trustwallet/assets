@@ -11,22 +11,22 @@ export class CosmosAction implements ActionInterface {
             {
                 getName: () => { return "Cosmos validator assets must have correct format"},
                 check: async () => {
-                    var error: string = "";
+                    var errors: string[] = [];
                     const assets = getChainValidatorsAssets(Cosmos);
                     const prefix = "cosmosvaloper1";
                     const expLength = 52;
                     assets.forEach(addr => {
                         if (!(addr.startsWith(prefix))) {
-                            error += `Address ${addr} should start with '${prefix}'\n`;
+                            errors.push(`Address ${addr} should start with '${prefix}'`);
                         }
                         if (addr.length != expLength) {
-                            error += `Address ${addr} should have length ${expLength}\n`;
+                            errors.push(`Address ${addr} should have length ${expLength}`);
                         }
                         if (!isLowerCase(addr)) {
-                            error += `Address ${addr} should be in lowercase\n`;
+                            errors.push(`Address ${addr} should be in lowercase`);
                         }
                     });
-                    return [error, ""];
+                    return [errors, []];
                 }
             },
         ];
