@@ -62,7 +62,7 @@ async function checkStepList(steps: CheckStepInterface[]): Promise<[string[], st
                         console.log(`   ${chalk.yellow('!')}   '${warn}'`);
                         warningsAll.push(warn);
                     } else if (cnt == maxErrosFromOneCheck) {
-                        console.log(`   ${chalk.red('X')}   ${warnings.length} warnings in total, omitting rest ...`);
+                        console.log(`   ${chalk.yellow('!')}   ${warnings.length} warnings in total, omitting rest ...`);
                     }
                     cnt++;
                 });
