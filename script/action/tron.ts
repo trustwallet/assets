@@ -25,32 +25,32 @@ export class TronAction implements ActionInterface {
             {
                 getName: () => { return "Tron assets should be TRC10 or TRC20, logo of correct size"; },
                 check: async () => {
-                    var error: string = "";
+                    var errors: string[] = [];
                     const path = getChainAssetsPath(Tron);
                     const assets = readDirSync(path);
                     await bluebird.each(assets, async (asset) => {
                         if (!isTRC10(asset) && !isTRC20(asset)) {
-                            error += `Asset ${asset} at path '${path}' is not TRC10 nor TRC20\n`;
+                            errors.push(`Asset ${asset} at path '${path}' is not TRC10 nor TRC20`);
                         }
                         const assetsLogoPath = getChainAssetLogoPath(Tron, asset);
                         if (!isPathExistsSync(assetsLogoPath)) {
-                            error += `Missing file at path '${assetsLogoPath}'\n`;
+                            errors.push(`Missing file at path '${assetsLogoPath}'`);
                         }
                     });
-                    return [error, ""];
+                    return [errors, []];
                 }
             },
             {
                 getName: () => { return "Tron validator assets must have correct format"},
                 check: async () => {
-                    var error: string = "";
+                    var errors: string[] = [];
                     const assets = getChainValidatorsAssets(Tron);
                     assets.forEach(addr => {
                         if (!(isTRC20(addr))) {
-                            error += `Address ${addr} should be TRC20 address'\n`;
+                            errors.push(`Address ${addr} should be TRC20 address'`);
                         }
                     });
-                    return [error, ""];
+                    return [errors, []];
                 }                
             }
         ];
