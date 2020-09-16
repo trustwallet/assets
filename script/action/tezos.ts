@@ -83,14 +83,14 @@ export class TezosAction implements ActionInterface {
             {
                 getName: () => { return "Tezos validator assets must have correct format"},
                 check: async () => {
-                    var error: string = "";
+                    var errors: string[] = [];
                     const assets = getChainValidatorsAssets(Tezos);
                     assets.forEach(addr => {
                         if (!(eztz.crypto.checkAddress(addr))) {
-                            error += `Address ${addr} must be valid Tezos address'\n`;
+                            errors.push(`Address ${addr} must be valid Tezos address'`);
                         }
                     });
-                    return [error, ""];
+                    return [errors, []];
                 }
             },
         ];

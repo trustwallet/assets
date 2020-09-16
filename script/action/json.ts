@@ -12,17 +12,17 @@ export class JsonAction implements ActionInterface {
             {
                 getName: () => { return "Check all JSON files to have valid content"},
                 check: async () => {
-                    var error: string = "";
+                    var errors: string[] = [];
                     const files = [
                         ...findFiles(chainsPath, 'json'),
                     ];
 
                     await bluebird.each(files, async file => { 
                         if (!isValidJSON(file)) {
-                            error += `${file} path contains invalid JSON\n`;
+                            errors.push(`${file} path contains invalid JSON`);
                         }
                     });
-                    return [error, ""];
+                    return [errors, []];
                 }
             },
         ];
