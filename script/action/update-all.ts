@@ -32,30 +32,50 @@ const actionList: ActionInterface[] = [
     new WavesAction()
 ];
 
+const maxErrosFromOneCheck = 5;
+
 async function checkStepList(steps: CheckStepInterface[]): Promise<[string[], string[]]> {
-    var errors: string[] = [];
-    var warnings: string[] = [];
+    var errorsAll: string[] = [];
+    var warningsAll: string[] = [];
     await bluebird.each(steps, async (step) => {
         try {
             //console.log(`     Running check step '${step.getName()}'...`);
-            const [error, warning] = await step.check();
-            if (error && error.length > 0) {
-                console.log(`-  ${chalk.red('X')} '${step.getName()}': '${error}'`);
-                errors.push(`${step.getName()}: ${error}`);
+            const [errors, warnings] = await step.check();
+            if (errors && errors.length > 0) {
+                console.log(`-  ${chalk.red('X')} '${step.getName()}':  ${errors.length} errors`);
+                var cnt = 0;
+                errors.forEach(err => {
+                    if (cnt < maxErrosFromOneCheck) {
+                        console.log(`   ${chalk.red('X')}   '${err}'`);
+                        errorsAll.push(err);
+                    } else if (cnt == maxErrosFromOneCheck) {
+                        console.log(`   ${chalk.red('X')}   ${errors.length} errors in total, omitting rest ...`);
+                    }
+                    cnt++;
+                });
             }
-            if (warning && warning.length > 0) {
-                console.log(`-  ${chalk.yellow('!')} '${step.getName()}': '${warning}'`);
-                warnings.push(`${step.getName()}: ${warning}`);
+            if (warnings && warnings.length > 0) {
+                console.log(`-  ${chalk.yellow('!')} '${step.getName()}':  ${warnings.length} warnings`);
+                var cnt = 0;
+                warnings.forEach(warn => {
+                    if (cnt < maxErrosFromOneCheck) {
+                        console.log(`   ${chalk.yellow('!')}   '${warn}'`);
+                        warningsAll.push(warn);
+                    } else if (cnt == maxErrosFromOneCheck) {
+                        console.log(`   ${chalk.yellow('!')}   ${warnings.length} warnings in total, omitting rest ...`);
+                    }
+                    cnt++;
+                });
             }
-            if (error.length == 0 && warning.length == 0) {
+            if (errors.length == 0 && warnings.length == 0) {
                 console.log(`-  ${chalk.green('✓')} '${step.getName()}' OK`);
             }
         } catch (error) {
             console.log(`-  ${chalk.red('X')} '${step.getName()}': Caught error: ${error.message}`);
-            errors.push(`${step.getName()}: Exception: ${error.message}`);
+            errorsAll.push(`${step.getName()}: Exception: ${error.message}`);
         }
     });
-    return [errors, warnings];
+    return [errorsAll, warningsAll];
 }
 
 async function sanityCheckByActionList(actions: ActionInterface[]): Promise<[string[], string[]]> {
