@@ -91,6 +91,7 @@ export class FoldersFiles implements ActionInterface {
                     return [errors, []];
                 }
             },
+            /*
             {
                 getName: () => { return "Asset folders contain info.json"},
                 check: async () => {
@@ -109,6 +110,7 @@ export class FoldersFiles implements ActionInterface {
                     return [[], warnings];
                 }
             },
+            */
             {
                 getName: () => { return "Asset folders contain only predefined set of files"},
                 check: async () => {
