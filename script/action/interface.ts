@@ -1,8 +1,8 @@
 // A single check step
 export interface CheckStepInterface {
     getName(): string;
-    // return error or null/empty on success
-    check(): Promise<string>;
+    // return [errors, warnings]
+    check(): Promise<[string[], string[]]>;
 }
 
 // An action for a check, fix, or update, or a combination.

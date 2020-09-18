@@ -106,16 +106,16 @@ export class BinanceAction implements ActionInterface {
             {
                 getName: () => { return "Binance chain; assets must exist on chain"},
                 check: async () => {
-                    var error: string = "";
+                    var errors = [];
                     const tokenSymbols = await retrieveAssetSymbols();
                     const assets = readDirSync(getChainAssetsPath(Binance));
                     assets.forEach(asset => {
                         if (!(tokenSymbols.indexOf(asset) >= 0)) {
-                            error += `Asset ${asset} missing on chain\n`;
+                            errors.push(`Asset ${asset} missing on chain`);
                         }
                     });
                     console.log(`     ${assets.length} assets checked.`);
-                    return error;
+                    return [errors, []];
                 }
             },
         ];

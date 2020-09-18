@@ -11,7 +11,6 @@ import { TronAction } from "./tron";
 import { Validators } from "./validators";
 import { WavesAction } from "./waves";
 import { Allowlist } from "./allowlists";
-import { Coinmarketcap } from "../../pricing/coinmarketcap/cmc-action";
 import { ActionInterface, CheckStepInterface } from "./interface";
 import * as chalk from 'chalk';
 import * as bluebird from "bluebird";
@@ -30,43 +29,73 @@ const actionList: ActionInterface[] = [
     new TerraAction(),
     new TezosAction(),
     new TronAction(),
-    new WavesAction(),
-    new Coinmarketcap()
+    new WavesAction()
 ];
 
-async function checkStepList(steps: CheckStepInterface[]): Promise<string[]> {
-    var errors: string[] = [];
+const maxErrosFromOneCheck = 5;
+
+async function checkStepList(steps: CheckStepInterface[]): Promise<[string[], string[]]> {
+    var errorsAll: string[] = [];
+    var warningsAll: string[] = [];
     await bluebird.each(steps, async (step) => {
         try {
             //console.log(`     Running check step '${step.getName()}'...`);
-            const error = await step.check();
-            if (error && error.length > 0) {
-                console.log(`-  ${chalk.red('X')} '${step.getName()}': '${error}'`);
-                errors.push(`${step.getName()}: ${error}`);
-            } else {
+            const [errors, warnings] = await step.check();
+            if (errors && errors.length > 0) {
+                console.log(`-  ${chalk.red('X')} '${step.getName()}':  ${errors.length} errors`);
+                var cnt = 0;
+                errors.forEach(err => {
+                    if (cnt < maxErrosFromOneCheck) {
+                        console.log(`   ${chalk.red('X')}   '${err}'`);
+                        errorsAll.push(err);
+                    } else if (cnt == maxErrosFromOneCheck) {
+                        console.log(`   ${chalk.red('X')}   ${errors.length} errors in total, omitting rest ...`);
+                    }
+                    cnt++;
+                });
+            }
+            if (warnings && warnings.length > 0) {
+                console.log(`-  ${chalk.yellow('!')} '${step.getName()}':  ${warnings.length} warnings`);
+                var cnt = 0;
+                warnings.forEach(warn => {
+                    if (cnt < maxErrosFromOneCheck) {
+                        console.log(`   ${chalk.yellow('!')}   '${warn}'`);
+                        warningsAll.push(warn);
+                    } else if (cnt == maxErrosFromOneCheck) {
+                        console.log(`   ${chalk.yellow('!')}   ${warnings.length} warnings in total, omitting rest ...`);
+                    }
+                    cnt++;
+                });
+            }
+            if (errors.length == 0 && warnings.length == 0) {
                 console.log(`-  ${chalk.green('✓')} '${step.getName()}' OK`);
             }
         } catch (error) {
             console.log(`-  ${chalk.red('X')} '${step.getName()}': Caught error: ${error.message}`);
-            errors.push(`${step.getName()}: Exception: ${error.message}`);
+            errorsAll.push(`${step.getName()}: Exception: ${error.message}`);
         }
     });
-    return errors;
+    return [errorsAll, warningsAll];
 }
 
-async function sanityCheckByActionList(actions: ActionInterface[]): Promise<string[]> {
+async function sanityCheckByActionList(actions: ActionInterface[]): Promise<[string[], string[]]> {
     console.log("Running sanity checks...");
     var errors: string[] = [];
+    var warnings: string[] = [];
     await bluebird.each(actions, async (action) => {
         try {
             if (action.getSanityChecks) {
                 const steps = action.getSanityChecks();
                 if (steps && steps.length > 0) {
                     console.log(`   Action '${action.getName()}' has ${steps.length} check steps`);
-                    const errors1 = await checkStepList(steps);
+                    const [errors1, warnings1] = await checkStepList(steps);
                     if (errors1.length > 0) {
                         errors1.forEach(e => errors.push(e));
-                    } else {
+                    }
+                    if (warnings1.length > 0) {
+                        warnings1.forEach(w => warnings.push(w));
+                    }
+                    if (errors1.length == 0 && warnings1.length == 0) {
                         console.log(`- ${chalk.green('✓')} Action '${action.getName()}' OK, all ${steps.length} steps`);
                     }
                 }
@@ -76,23 +105,28 @@ async function sanityCheckByActionList(actions: ActionInterface[]): Promise<stri
             errors.push(`${action.getName()}: Exception: ${error.message}`);
         }
     });
-    console.log(`All sanity checks done, found ${errors.length} errors`);
-    return errors;
+    console.log(`All sanity checks done, found ${errors.length} errors, ${warnings.length} warnings`);
+    return [errors, warnings];
 }
 
-async function consistencyCheckByActionList(actions: ActionInterface[]): Promise<string[]> {
+async function consistencyCheckByActionList(actions: ActionInterface[]): Promise<[string[], string[]]> {
     console.log("Running consistency checks...");
     var errors: string[] = [];
+    var warnings: string[] = [];
     await bluebird.each(actions, async (action) => {
         try {
             if (action.getConsistencyChecks) {
                 const steps = action.getConsistencyChecks();
                 if (steps && steps.length > 0) {
                     console.log(`   Action '${action.getName()}' has ${steps.length} check steps`);
-                    const errors1 = await checkStepList(steps);
+                    const [errors1, warnings1] = await checkStepList(steps);
                     if (errors1.length > 0) {
                         errors1.forEach(e => errors.push(e));
-                    } else {
+                    }
+                    if (warnings1.length > 0) {
+                        warnings1.forEach(w => warnings.push(w));
+                    }
+                    if (errors1.length == 0 && warnings1.length == 0) {
                         console.log(`- ${chalk.green('✓')} Action '${action.getName()}' OK, all ${steps.length} steps`);
                     }
                 }
@@ -102,8 +136,8 @@ async function consistencyCheckByActionList(actions: ActionInterface[]): Promise
             errors.push(`${action.getName()}: Exception: ${error.message}`);
         }
     });
-    console.log(`All consistency checks done, found ${errors.length} errors`);
-    return errors;
+    console.log(`All consistency checks done, found ${errors.length} errors, ${warnings.length} warnings`);
+    return [errors, warnings];
 }
 
 async function sanityFixByList(actions: ActionInterface[]) {
@@ -151,11 +185,11 @@ async function updateByList(actions: ActionInterface[]) {
     console.log("All updates done.");
 }
 
-export async function sanityCheckAll(): Promise<string[]> {
+export async function sanityCheckAll(): Promise<[string[], string[]]> {
     return await sanityCheckByActionList(actionList);
 }
 
-export async function consistencyCheckAll(): Promise<string[]> {
+export async function consistencyCheckAll(): Promise<[string[], string[]]> {
     return await consistencyCheckByActionList(actionList);
 }
 

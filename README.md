@@ -1,6 +1,6 @@
 # Trust Wallet Assets Info
 
-![Periodic Update](https://github.com/trustwallet/assets/workflows/Periodic%20External%20Update/badge.svg)
+![Check](https://github.com/trustwallet/assets/workflows/Check/badge.svg)
 
 ## Overview
 Trust Wallet token repository is a comprehensive, up-to-date collection of information about several thousands (!) of crypto tokens.
@@ -12,6 +12,10 @@ For every token a logo and optional additional information is available (such da
 
 Such a large collection can be maintained only through a community effort, so _contributions are welcome_,
 primarily from token projects.
+
+Please note that __new tokens are not accepted__,
+the projects have to be sound, with information available, and __non-minimal circulation__
+(for limit details see https://community.trustwallet.com/t/how-to-submit-a-token-logo/3863#how-to-get-approved).
 
 <center><img src='https://raw.githubusercontent.com/trustwallet/assets/master/media/trust-wallet.png'></center>
 
