@@ -20,7 +20,7 @@ function formatValidators() {
 }
 
 function getChainValidatorsList(chain: string): ValidatorModel[] {
-    return readJsonFile(getChainValidatorsListPath(chain));
+    return readJsonFile(getChainValidatorsListPath(chain)) as ValidatorModel[];
 }
 
 function isValidatorHasAllKeys(val: ValidatorModel): boolean {

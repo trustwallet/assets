@@ -32,7 +32,7 @@ async function formatInfos() {
         await bluebird.each(chainAssets, async (address) => {
             if (isChainAssetInfoExistSync(chain, address)) {
                 const chainAssetInfoPath = getChainAssetInfoPath(chain, address);
-                formatJsonFile(chainAssetInfoPath, true);
+                formatJsonFile(chainAssetInfoPath);
                 ++count;
             }
         })
