@@ -1,7 +1,7 @@
 import { sanityCheckAll, consistencyCheckAll } from "../action/update-all";
 
 export async function main() {
-    var returnCode: number = 0;
+    let returnCode = 0;
 
     try {
         const [errors1, warnings1] = await sanityCheckAll();

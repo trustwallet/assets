@@ -25,7 +25,7 @@ export class TronAction implements ActionInterface {
             {
                 getName: () => { return "Tron assets should be TRC10 or TRC20, logo of correct size"; },
                 check: async () => {
-                    var errors: string[] = [];
+                    const errors: string[] = [];
                     const path = getChainAssetsPath(Tron);
                     const assets = readDirSync(path);
                     await bluebird.each(assets, async (asset) => {
@@ -43,7 +43,7 @@ export class TronAction implements ActionInterface {
             {
                 getName: () => { return "Tron validator assets must have correct format"},
                 check: async () => {
-                    var errors: string[] = [];
+                    const errors: string[] = [];
                     const assets = getChainValidatorsAssets(Tron);
                     assets.forEach(addr => {
                         if (!(isTRC20(addr))) {

@@ -18,7 +18,7 @@ export class WavesAction implements ActionInterface {
             {
                 getName: () => { return "Waves validator assets must have correct format"},
                 check: async () => {
-                    var errors: string[] = [];
+                    const errors: string[] = [];
                     const assets = getChainValidatorsAssets(Waves);
                     assets.forEach(addr => {
                         if (!(isWavesAddress(addr))) {

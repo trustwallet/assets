@@ -34,7 +34,7 @@ export class Validators implements ActionInterface {
     getName(): string { return "Validators"; }
 
     getSanityChecks(): CheckStepInterface[] {
-        var steps: CheckStepInterface[] = [
+        const steps: CheckStepInterface[] = [
             {
                 getName: () => { return "Make sure tests added for new staking chain"},
                 check: async (): Promise<[string[], string[]]> => {
@@ -55,7 +55,7 @@ export class Validators implements ActionInterface {
                             return [[`Not valid Json file at path ${validatorsListPath}`], []];
                         }
 
-                        var errors: string[] = [];
+                        const errors: string[] = [];
                         const validatorsList = getChainValidatorsList(chain);
                         const chainValidatorsAssetsList = getChainValidatorsAssets(chain);
                         await bluebird.each(validatorsList, async (val: ValidatorModel) => {

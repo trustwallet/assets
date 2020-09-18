@@ -18,7 +18,7 @@ const binanceChain = "binance"
 const binanceUrlTokens2 = config.binanceUrlTokens2;
 const binanceUrlTokens8 = config.binanceUrlTokens8;
 const binanceUrlTokenAssets = config.binanceUrlTokenAssets;
-var cachedAssets = [];
+let cachedAssets = [];
 
 async function retrieveBep2AssetList(): Promise<any[]> {
     console.log(`     Retrieving token asset infos from: ${binanceUrlTokenAssets}`);
@@ -55,7 +55,7 @@ function fetchImage(url) {
 
 /// Return: array with images to fetch; {asset, assetImg}
 export function findImagesToFetch(assetInfoList: any, denylist: string[]): any[] {
-    let toFetch: any[] = [];
+    const toFetch: any[] = [];
     console.log(`Checking for asset images to be fetched`);
     assetInfoList.forEach(({asset, assetImg}) => {
         process.stdout.write(`.${asset} `);
@@ -80,7 +80,7 @@ export function findImagesToFetch(assetInfoList: any, denylist: string[]): any[]
 
 async function fetchMissingImages(toFetch: any[]): Promise<string[]> {
     console.log(`Attempting to fetch ${toFetch.length} asset image(s)`);
-    let fetchedAssets: string[] = [];
+    const fetchedAssets: string[] = [];
     await bluebird.each(toFetch, async ({ asset, assetImg }) => {
         if (assetImg) {
             const imagePath = getChainAssetLogoPath(binanceChain, asset);
@@ -106,7 +106,7 @@ export class BinanceAction implements ActionInterface {
             {
                 getName: () => { return "Binance chain; assets must exist on chain"},
                 check: async () => {
-                    var errors = [];
+                    const errors = [];
                     const tokenSymbols = await retrieveAssetSymbols();
                     const assets = readDirSync(getChainAssetsPath(Binance));
                     assets.forEach(asset => {

@@ -45,8 +45,8 @@ export function arrayDiffNocase(a: string[], b: string[]): string[] {
 }
 
 export function findDuplicates(list: string[]): string[] {
-    let m = new Map<string, number>();
-    let duplicates: string[] = [];
+    const m = new Map<string, number>();
+    const duplicates: string[] = [];
     list.forEach(val => {
         if (m.has(val.toLowerCase())) {
             duplicates.push(val);
@@ -79,8 +79,8 @@ export function arrayEqual(a1: any[], a2: any[]): boolean {
 
 export function reverseCase(s: string): string {
     const n = s.length;
-    var out: string = "";
-    for (var i = 0; i < n; ++i) {
+    let out = "";
+    for (let i = 0; i < n; ++i) {
         const c = s[i];
         if (isLowerCase(c)) {
             out += c.toUpperCase();

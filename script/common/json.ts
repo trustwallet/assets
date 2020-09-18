@@ -6,7 +6,7 @@ import { sortElements, makeUnique } from "./types";
 
 export function isValidJSON(path: string): boolean {
     try {
-        let rawdata = readFileSync(path);
+        const rawdata = readFileSync(path);
         JSON.parse(rawdata);
         return true;
     } catch {
@@ -26,7 +26,7 @@ export function formatUniqueSortJson(content: any) {
     return JSON.stringify(makeUnique(sortElements(content)), null, 4);
 }
 
-export function formatJsonFile(filename: string, silent: boolean = false) {
+export function formatJsonFile(filename: string, silent = false) {
     writeFileSync(filename, formatJson(JSON.parse(readFileSync(filename))));
     console.log(`Formatted json file ${filename}`);
 }

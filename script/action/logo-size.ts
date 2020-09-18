@@ -18,14 +18,14 @@ import { ActionInterface, CheckStepInterface } from "./interface";
 // return name of large logo, or empty
 async function checkDownsize(chains, checkOnly: boolean): Promise<string[]> {
     console.log(`Checking all logos for size ...`);
-    let totalCountChecked: number = 0;
-    let totalCountTooLarge: number = 0;
-    let totalCountUpdated: number = 0;
-    let largePaths: string[] = [];
+    let totalCountChecked = 0;
+    let totalCountTooLarge = 0;
+    let totalCountUpdated = 0;
+    const largePaths: string[] = [];
     await bluebird.map(chains, async chain => {
-        let countChecked: number = 0;
-        let countTooLarge: number = 0;
-        let countUpdated: number = 0;
+        let countChecked = 0;
+        let countTooLarge = 0;
+        let countUpdated = 0;
 
         const path = getChainLogoPath(chain);
         countChecked++;

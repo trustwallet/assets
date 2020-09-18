@@ -11,7 +11,7 @@ export class CosmosAction implements ActionInterface {
             {
                 getName: () => { return "Cosmos validator assets must have correct format"},
                 check: async () => {
-                    var errors: string[] = [];
+                    const errors: string[] = [];
                     const assets = getChainValidatorsAssets(Cosmos);
                     const prefix = "cosmosvaloper1";
                     const expLength = 52;

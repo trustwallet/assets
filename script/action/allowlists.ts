@@ -17,8 +17,8 @@ import * as bluebird from "bluebird";
 import { copyFile } from "fs";
 
 async function checkUpdateAllowDenyList(chain: string, checkOnly: boolean ): Promise<[boolean, string[], string[]]> {
-    let errorMsgs: string[] = [];
-    let warningMsgs: string[] = [];
+    const errorMsgs: string[] = [];
+    const warningMsgs: string[] = [];
     const assets = getChainAssetsList(chain);
 
     const allowlistPath = getChainAllowlistPath(chain);

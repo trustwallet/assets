@@ -30,7 +30,7 @@ export function findFiles(base: string, ext: string, files: string[] = [], resul
     result = result || result;
 
     files.forEach(file => {
-        var newbase = path.join(base, file);
+        const newbase = path.join(base, file);
         if (fs.statSync(newbase).isDirectory()) {
             result = findFiles(newbase, ext, fs.readdirSync(newbase), result);
         } else {
