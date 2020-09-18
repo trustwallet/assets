@@ -57,7 +57,7 @@ async function gen_validators_tezos() {
         }
 
         // Enable baker if has capacity 
-        if (freeSpace > 0 && val.hasOwnProperty("status")) {
+        if (freeSpace > 0 && Object.prototype.hasOwnProperty.call(val, "status")) {
             delete val.status
         }
 
@@ -83,7 +83,7 @@ export class TezosAction implements ActionInterface {
             {
                 getName: () => { return "Tezos validator assets must have correct format"},
                 check: async () => {
-                    var errors: string[] = [];
+                    const errors: string[] = [];
                     const assets = getChainValidatorsAssets(Tezos);
                     assets.forEach(addr => {
                         if (!(eztz.crypto.checkAddress(addr))) {

@@ -35,15 +35,15 @@ const actionList: ActionInterface[] = [
 const maxErrosFromOneCheck = 5;
 
 async function checkStepList(steps: CheckStepInterface[]): Promise<[string[], string[]]> {
-    var errorsAll: string[] = [];
-    var warningsAll: string[] = [];
+    const errorsAll: string[] = [];
+    const warningsAll: string[] = [];
     await bluebird.each(steps, async (step) => {
         try {
             //console.log(`     Running check step '${step.getName()}'...`);
             const [errors, warnings] = await step.check();
             if (errors && errors.length > 0) {
                 console.log(`-  ${chalk.red('X')} '${step.getName()}':  ${errors.length} errors`);
-                var cnt = 0;
+                let cnt = 0;
                 errors.forEach(err => {
                     if (cnt < maxErrosFromOneCheck) {
                         console.log(`   ${chalk.red('X')}   '${err}'`);
@@ -56,7 +56,7 @@ async function checkStepList(steps: CheckStepInterface[]): Promise<[string[], st
             }
             if (warnings && warnings.length > 0) {
                 console.log(`-  ${chalk.yellow('!')} '${step.getName()}':  ${warnings.length} warnings`);
-                var cnt = 0;
+                let cnt = 0;
                 warnings.forEach(warn => {
                     if (cnt < maxErrosFromOneCheck) {
                         console.log(`   ${chalk.yellow('!')}   '${warn}'`);
@@ -80,8 +80,8 @@ async function checkStepList(steps: CheckStepInterface[]): Promise<[string[], st
 
 async function sanityCheckByActionList(actions: ActionInterface[]): Promise<[string[], string[]]> {
     console.log("Running sanity checks...");
-    var errors: string[] = [];
-    var warnings: string[] = [];
+    const errors: string[] = [];
+    const warnings: string[] = [];
     await bluebird.each(actions, async (action) => {
         try {
             if (action.getSanityChecks) {
@@ -111,8 +111,8 @@ async function sanityCheckByActionList(actions: ActionInterface[]): Promise<[str
 
 async function consistencyCheckByActionList(actions: ActionInterface[]): Promise<[string[], string[]]> {
     console.log("Running consistency checks...");
-    var errors: string[] = [];
-    var warnings: string[] = [];
+    const errors: string[] = [];
+    const warnings: string[] = [];
     await bluebird.each(actions, async (action) => {
         try {
             if (action.getConsistencyChecks) {
@@ -193,14 +193,14 @@ export async function consistencyCheckAll(): Promise<[string[], string[]]> {
     return await consistencyCheckByActionList(actionList);
 }
 
-export async function sanityFixAll() {
+export async function sanityFixAll(): Promise<void> {
     await sanityFixByList(actionList);
 }
 
-export async function consistencyFixAll() {
+export async function consistencyFixAll(): Promise<void> {
     await consistencyFixByList(actionList);
 }
 
-export async function updateAll() {
+export async function updateAll(): Promise<void> {
     await updateByList(actionList);
 }

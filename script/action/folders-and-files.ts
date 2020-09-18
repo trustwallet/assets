@@ -29,7 +29,7 @@ export class FoldersFiles implements ActionInterface {
             {
                 getName: () => { return "Repository root dir"},
                 check: async () => {
-                    var errors: string[] = [];
+                    const errors: string[] = [];
                     const dirActualFiles = readDirSync(".");
                     dirActualFiles.forEach(file => {
                         if (!(rootDirAllowedFiles.indexOf(file) >= 0)) {
@@ -42,7 +42,7 @@ export class FoldersFiles implements ActionInterface {
             {
                 getName: () => { return "Chain folders are lowercase, contain only predefined list of files"},
                 check: async () => {
-                    var errors: string[] = [];
+                    const errors: string[] = [];
                     foundChains.forEach(chain => {
                         if (!isLowerCase(chain)) {
                             errors.push(`Chain folder must be in lowercase "${chain}"`);
@@ -59,7 +59,7 @@ export class FoldersFiles implements ActionInterface {
             {
                 getName: () => { return "Chain folders have logo, and correct size"},
                 check: async () => {
-                    var errors: string[] = [];
+                    const errors: string[] = [];
                     await bluebird.each(foundChains, async (chain) => {
                         const chainLogoPath = getChainLogoPath(chain);
                         if (!isPathExistsSync(chainLogoPath)) {
@@ -76,7 +76,7 @@ export class FoldersFiles implements ActionInterface {
             {
                 getName: () => { return "Asset folders contain logo"},
                 check: async () => {
-                    var errors: string[] = [];
+                    const errors: string[] = [];
                     foundChains.forEach(chain => {
                         const assetsPath = getChainAssetsPath(chain);
                         if (isPathExistsSync(assetsPath)) {
@@ -94,7 +94,7 @@ export class FoldersFiles implements ActionInterface {
             {
                 getName: () => { return "Asset folders contain info.json"},
                 check: async () => {
-                    var warnings: string[] = [];
+                    const warnings: string[] = [];
                     foundChains.forEach(chain => {
                         const assetsPath = getChainAssetsPath(chain);
                         if (isPathExistsSync(assetsPath)) {
@@ -112,7 +112,7 @@ export class FoldersFiles implements ActionInterface {
             {
                 getName: () => { return "Asset folders contain only predefined set of files"},
                 check: async () => {
-                    var errors: string[] = [];
+                    const errors: string[] = [];
                     foundChains.forEach(chain => {
                         const assetsPath = getChainAssetsPath(chain);
                         if (isPathExistsSync(assetsPath)) {

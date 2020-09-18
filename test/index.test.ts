@@ -13,8 +13,6 @@ import {
     calculateTargetSize
 } from "../script/common/image";
 import {
-    mapList,
-    mapListTolower,
     sortElements,
     makeUnique,
     arrayDiff,
@@ -74,15 +72,11 @@ describe("Test image helpers", () => {
 });
 
 describe("Test type helpers", () => {
-    test(`Test mapList`, () => {
-        expect(mapList(["a", "b", "c"]), `3 elems`).toEqual({"a": "", "b":"", "c": ""});
-        expect(mapList(["a", "b", "C"]), `3 elems`).toEqual({"a": "", "b":"", "C": ""});
-        expect(mapListTolower(["a", "b", "C"]), `3 elems`).toEqual({"a": "", "b":"", "c": ""});
-    });
     test(`Test sortElements`, () => {
         expect(sortElements(["c", "a", "b"]), `3 elems`).toEqual(["a", "b", "c"]);
         expect(sortElements(["C", "a", "b"]), `mixed case`).toEqual(["a", "b", "C"]);
-        expect(sortElements(["1", "2", "11"]), `numerical`).toEqual(["1", "2", "11"]);
+        expect(sortElements(["1", "2", "11"]), `numerical string`).toEqual(["1", "2", "11"]);
+        expect(sortElements([1, 2, 11]), `numerical`).toEqual([1, 2, 11]);
         expect(sortElements(["C", "a", "1", "b", "2", "11"]), `complex`).toEqual(["1", "2", "11", "a", "b", "C"]);
     });
     test(`Test makeUnique`, () => {
@@ -124,8 +118,8 @@ describe("Test type helpers", () => {
 
 describe("Test action binance", () => {
     test(`Test findImagesToFetch`, () => {
-        const assetsInfoListNonexisting: any[] = [{asset: "A1", assetImg: "imgurl1"}, {asset: "A2", assetImg: "imgurl2"}];
-        const assetsInfoListExisting: any[] = [{asset: "BUSD-BD1", assetImg: "imgurlBUSD"}, {asset: "ETH-1C9", assetImg: "imgurlETH"}];
+        const assetsInfoListNonexisting = [{asset: "A1", assetImg: "imgurl1"}, {asset: "A2", assetImg: "imgurl2"}];
+        const assetsInfoListExisting = [{asset: "BUSD-BD1", assetImg: "imgurlBUSD"}, {asset: "ETH-1C9", assetImg: "imgurlETH"}];
         const denyListEmpty: string[] = [];
         const denyListA1: string[] = ["A1"];
         expect(findImagesToFetch(assetsInfoListNonexisting, denyListEmpty), `2 nonexisting`).toEqual(assetsInfoListNonexisting);

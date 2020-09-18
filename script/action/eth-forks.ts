@@ -27,12 +27,12 @@ import * as bluebird from "bluebird";
 async function formatInfos() {
     console.log(`Formatting info files...`);
     await bluebird.each(ethForkChains, async (chain) => {
-        let count: number = 0;
+        let count = 0;
         const chainAssets = getChainAssetsList(chain);
         await bluebird.each(chainAssets, async (address) => {
             if (isChainAssetInfoExistSync(chain, address)) {
                 const chainAssetInfoPath = getChainAssetInfoPath(chain, address);
-                formatJsonFile(chainAssetInfoPath, true);
+                formatJsonFile(chainAssetInfoPath);
                 ++count;
             }
         })
@@ -69,13 +69,13 @@ export class EthForks implements ActionInterface {
     getName(): string { return "Ethereum forks"; }
     
     getSanityChecks(): CheckStepInterface[] {
-        var steps: CheckStepInterface[] = [];
+        const steps: CheckStepInterface[] = [];
         ethForkChains.forEach(chain => {
             steps.push(
                 {
                     getName: () => { return `Folder structure for chain ${chain} (ethereum fork)`;},
                     check: async () => {
-                        var errors: string[] = [];
+                        const errors: string[] = [];
                         const assetsFolder = getChainAssetsPath(chain);
                         const assetsList = getChainAssetsList(chain);
                         console.log(`     Found ${assetsList.length} assets for chain ${chain}`);
