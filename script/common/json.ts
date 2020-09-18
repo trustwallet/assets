@@ -2,7 +2,7 @@ import {
     readFileSync,
     writeFileSync
 } from "./filesystem";
-import { sortElements, makeUnique } from "./types";
+import { sortElements } from "./types";
 
 export function isValidJSON(path: string): boolean {
     try {
@@ -10,8 +10,8 @@ export function isValidJSON(path: string): boolean {
         JSON.parse(rawdata);
         return true;
     } catch {
+        return false;
     }
-    return false;
 }
 
 export function formatJson(content: any) {
@@ -20,10 +20,6 @@ export function formatJson(content: any) {
 
 export function formatSortJson(content: any) {
     return JSON.stringify(sortElements(content), null, 4);
-}
-
-export function formatUniqueSortJson(content: any) {
-    return JSON.stringify(makeUnique(sortElements(content)), null, 4);
 }
 
 export function formatJsonFile(filename: string, silent = false) {

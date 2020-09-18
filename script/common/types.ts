@@ -1,28 +1,18 @@
 export const isLowerCase = (str: string): boolean => str.toLowerCase() === str;
 export const isUpperCase = (str: string): boolean => str.toUpperCase() === str;
 
-export const mapList = arr => {
-    return arr.reduce((acm, val) => {
-        acm[val] = "";
-        return acm;
-    }, {});
-}
-
-export function mapListTolower(arr: string[]): {} {
-    return arr.reduce((acm, val) => {
-        acm[val.toLowerCase()] = "";
-        return acm;
-    }, {});
-}
-
 // Sort: treat numbers as number, strings as case-insensitive
-export const sortElements = (arr: any[]): any[] => {
+export function sortElements (arr: unknown[]): unknown[] {
     arr.sort((a, b) => {
-        if (!isNaN(a) && !isNaN(b)) {
+        if (typeof a === "number" && typeof b == "number") {
             // numerical comparison
             return a - b;
         }
         if ((typeof a === 'string' || a instanceof String) && (typeof b === 'string' || b instanceof String)) {
+            if (!isNaN(Number(a)) && !isNaN(Number(b))) {
+                // numerical comparison
+                return Number(a) - Number(b);
+            }
             return a.toLowerCase() > b.toLowerCase() ? 1 : -1;
         }
         return 0;
@@ -30,18 +20,20 @@ export const sortElements = (arr: any[]): any[] => {
     return arr;
 }
 
-export const makeUnique = (arr: any[]): any[] => Array.from(new Set(arr));
+export function makeUnique(arr: string[]): string[] {
+    return Array.from(new Set(arr));
+}
 
 // Remove from set A elements of set B.
 export function arrayDiff(a: string[], b: string[]): string[] {
-    const mappedB = mapList(b);
-    return a.filter(e => !mappedB.hasOwnProperty(e));
+    const setB = new Set(b);
+    return a.filter(e => !setB.has(e));
 }
 
 // Remove from set A elements of set B, case insensitive
 export function arrayDiffNocase(a: string[], b: string[]): string[] {
-    const mappedB = mapListTolower(b);
-    return a.filter(e => !mappedB.hasOwnProperty(e.toLowerCase()));
+    const setB = new Set(b.map(e => e.toLowerCase()));
+    return a.filter(e => !setB.has(e.toLowerCase()));
 }
 
 export function findDuplicates(list: string[]): string[] {
@@ -64,7 +56,7 @@ export function findCommonElementsOrDuplicates(list1: string[], list2: string[])
 }
 
 // Compare two arrays, order does not matter
-export function arrayEqual(a1: any[], a2: any[]): boolean {
+export function arrayEqual(a1: string[], a2: string[]): boolean {
     if (a1.length != a2.length) {
         return false;
     }

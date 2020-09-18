@@ -5,3 +5,5 @@ dist
 # don't lint nyc coverage output
 coverage
 
+.eslintrc.js
+jest.config.js

@@ -1,8 +1,6 @@
 import { reverseCase } from "./types";
 
-const Web3 = require('web3');
-
-const web3 = new Web3('ws://localhost:8546');
+const web3 = new (require('web3'))('ws://localhost:8546');
 
 export const isChecksumEthereum = (address: string): boolean => web3.utils.checkAddressChecksum(address);
 export const toChecksumEthereum = (address: string): string => web3.utils.toChecksumAddress(address);

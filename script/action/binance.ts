@@ -7,7 +7,7 @@ import * as config from "../config";
 import { ActionInterface, CheckStepInterface } from "./interface";
 import { getChainAssetsPath } from "../common/repo-structure";
 import { Binance } from "../common/blockchains";
-import { readDirSync } from "../common/filesystem";
+import { readDirSync, readFileSync } from "../common/filesystem";
 
 import {
     getChainAssetLogoPath,
@@ -130,7 +130,7 @@ export class BinanceAction implements ActionInterface {
     async update(): Promise<void> {
         // retrieve missing token images; BEP2 (bep8 not supported)
         const bep2InfoList = await retrieveBep2AssetList();
-        const denylist: string[] = require(getChainDenylistPath(binanceChain));
+        const denylist: string[] = JSON.parse(readFileSync(getChainDenylistPath(binanceChain)));
 
         const toFetch = findImagesToFetch(bep2InfoList, denylist);
         const fetchedAssets = await fetchMissingImages(toFetch);

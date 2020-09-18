@@ -14,7 +14,6 @@ import {
 import { ActionInterface, CheckStepInterface } from "./interface";
 import { formatSortJson } from "../common/json";
 import * as bluebird from "bluebird";
-import { copyFile } from "fs";
 
 async function checkUpdateAllowDenyList(chain: string, checkOnly: boolean ): Promise<[boolean, string[], string[]]> {
     const errorMsgs: string[] = [];

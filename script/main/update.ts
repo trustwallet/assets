@@ -1,6 +1,6 @@
 import { updateAll } from "../action/update-all";
 
-export async function main() {
+export async function main(): Promise<void> {
     try {
         await updateAll();
     } catch(err) {
