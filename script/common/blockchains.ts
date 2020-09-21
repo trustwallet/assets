@@ -24,6 +24,8 @@ export const Vechain = getChainName(CoinType.vechain);
 export const Wanchain = getChainName(CoinType.wanchain);
 export const Waves = getChainName(CoinType.waves);
 export const Solana = getChainName(CoinType.solana);
+export const SmartChainLegacy = getChainName(CoinType.bsc);
+export const SmartChain = getChainName(CoinType.smartchain);
 
 export const ethForkChains = [
     Ethereum,
@@ -32,7 +34,9 @@ export const ethForkChains = [
     TomoChain,
     GoChain,
     Wanchain,
-    ThunderCore
+    ThunderCore,
+    SmartChainLegacy,
+    SmartChain,
 ];
 export const stakingChains = [
     Tezos,
@@ -41,7 +45,8 @@ export const stakingChains = [
     Tron,
     Waves,
     Kava,
-    Terra
+    Terra,
+    Binance
 ];
 export const chainsWithDenylist = ethForkChains.concat(
     Binance,
