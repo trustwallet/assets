@@ -94,13 +94,7 @@ export class Validators implements ActionInterface {
         return steps;
     }
 
-    getConsistencyChecks = null;
-
     async sanityFix(): Promise<void> {
         formatValidators();
     }
-
-    consistencyFix = null;
-
-    update = null;
 }

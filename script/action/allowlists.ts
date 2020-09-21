@@ -109,11 +109,7 @@ export class Allowlist implements ActionInterface {
         return steps;
     }
 
-    sanityFix = null;
-
     async consistencyFix(): Promise<void> {
         await bluebird.each(chainsWithDenylist, async (chain) => await checkUpdateAllowDenyList(chain, false));
     }
-
-    update = null;
 }

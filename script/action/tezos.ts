@@ -96,12 +96,6 @@ export class TezosAction implements ActionInterface {
         ];
     }
 
-    getConsistencyChecks = null;
-
-    sanityFix = null;
-
-    consistencyFix = null;
-
     async update(): Promise<void> {
         await gen_validators_tezos();
     }

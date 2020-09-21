@@ -31,12 +31,4 @@ export class CosmosAction implements ActionInterface {
             },
         ];
     }
-    
-    getConsistencyChecks = null;
-    
-    sanityFix = null;
-    
-    consistencyFix = null;
-    
-    update = null;
 }

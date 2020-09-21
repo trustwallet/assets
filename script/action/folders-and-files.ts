@@ -133,12 +133,4 @@ export class FoldersFiles implements ActionInterface {
             }
         ];
     }
-    
-    getConsistencyChecks = null;
-
-    sanityFix = null;
-
-    consistencyFix = null;
-
-    update = null;
 }
