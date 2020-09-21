@@ -1,6 +1,6 @@
 import { Terra } from "../generic/blockchains";
 import { getChainValidatorsAssets } from "../generic/repo-structure";
-import { ActionInterface, CheckStepInterface } from "./interface";
+import { ActionInterface, CheckStepInterface } from "../generic/interface";
 import { isLowerCase } from "../generic/types";
 
 export class TerraAction implements ActionInterface {

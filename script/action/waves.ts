@@ -1,6 +1,6 @@
 import { Waves } from "../generic/blockchains";
 import { getChainValidatorsAssets } from "../generic/repo-structure";
-import { ActionInterface, CheckStepInterface } from "./interface";
+import { ActionInterface, CheckStepInterface } from "../generic/interface";
 import { isLowerCase, isUpperCase } from "../generic/types";
 
 export function isWavesAddress(address: string): boolean {

@@ -1,6 +1,6 @@
 import { chainsPath } from "../generic/repo-structure";
 import { findFiles } from "../generic/filesystem";
-import { ActionInterface, CheckStepInterface } from "./interface";
+import { ActionInterface, CheckStepInterface } from "../generic/interface";
 import { isValidJSON } from "../generic/json";
 import * as bluebird from "bluebird";
 

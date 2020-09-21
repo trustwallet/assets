@@ -20,7 +20,7 @@ import {
     isPathExistsSync,
 } from "../generic/filesystem";
 import { toChecksum } from "../generic/eth-web3";
-import { ActionInterface, CheckStepInterface } from "./interface";
+import { ActionInterface, CheckStepInterface } from "../generic/interface";
 import { isAssetInfoOK } from "../generic/asset-info";
 import * as bluebird from "bluebird";
 

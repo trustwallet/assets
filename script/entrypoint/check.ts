@@ -1,4 +1,4 @@
-import { sanityCheckAll, consistencyCheckAll } from "../action/update-all";
+import { sanityCheckAll, consistencyCheckAll } from "../generic/update-all";
 
 export async function main(): Promise<void> {
     let returnCode = 0;

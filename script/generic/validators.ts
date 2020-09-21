@@ -6,7 +6,7 @@ import {
 } from "../generic/repo-structure";
 import { isPathExistsSync } from "../generic/filesystem";
 import { formatSortJsonFile, readJsonFile } from "../generic/json";
-import { ActionInterface, CheckStepInterface } from "./interface";
+import { ActionInterface, CheckStepInterface } from "../generic/interface";
 import { isValidJSON } from "../generic/json";
 import { ValidatorModel } from "../generic/validator-models";
 import { isLogoOK } from "../generic/image";

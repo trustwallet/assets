@@ -11,7 +11,7 @@ import {
     findCommonElementsOrDuplicates,
     makeUnique
 } from "../generic/types";
-import { ActionInterface, CheckStepInterface } from "./interface";
+import { ActionInterface, CheckStepInterface } from "../generic/interface";
 import { formatSortJson } from "../generic/json";
 import * as bluebird from "bluebird";
 

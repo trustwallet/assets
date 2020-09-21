@@ -4,7 +4,7 @@ import * as fs from "fs";
 import * as path from "path";
 import * as chalk from 'chalk';
 import * as config from "../config";
-import { ActionInterface, CheckStepInterface } from "./interface";
+import { ActionInterface, CheckStepInterface } from "../generic/interface";
 import { getChainAssetsPath } from "../generic/repo-structure";
 import { Binance } from "../generic/blockchains";
 import { readDirSync } from "../generic/filesystem";

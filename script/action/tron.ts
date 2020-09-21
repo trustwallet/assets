@@ -1,4 +1,4 @@
-import { ActionInterface, CheckStepInterface } from "./interface";
+import { ActionInterface, CheckStepInterface } from "../generic/interface";
 import { getChainAssetsPath } from "../generic/repo-structure";
 import { Tron } from "../generic/blockchains";
 import { readDirSync, isPathExistsSync } from "../generic/filesystem";

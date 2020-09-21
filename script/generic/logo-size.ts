@@ -13,7 +13,7 @@ import {
     isPathExistsSync
 } from "../generic/filesystem";
 import { checkResizeIfTooLarge } from "../generic/image";
-import { ActionInterface, CheckStepInterface } from "./interface";
+import { ActionInterface, CheckStepInterface } from "../generic/interface";
 
 // return name of large logo, or empty
 async function checkDownsize(chains, checkOnly: boolean): Promise<string[]> {

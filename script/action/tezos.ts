@@ -9,7 +9,7 @@ import {
 import { Tezos } from "../generic/blockchains";
 import { readFileSync } from "../generic/filesystem";
 import { writeJsonFile } from "../generic/json";
-import { ActionInterface, CheckStepInterface } from "./interface";
+import { ActionInterface, CheckStepInterface } from "../generic/interface";
 import { ValidatorModel } from "../generic/validator-models";
 
 interface BakingBadBaker {

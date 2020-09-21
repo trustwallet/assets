@@ -2,7 +2,7 @@ import {
     readDirSync,
     isPathExistsSync
 } from "../generic/filesystem";
-import { CheckStepInterface, ActionInterface } from "./interface";
+import { CheckStepInterface, ActionInterface } from "../generic/interface";
 import {
     chainsPath,
     getChainLogoPath,
