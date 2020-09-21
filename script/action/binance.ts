@@ -8,26 +8,27 @@ import { ActionInterface, CheckStepInterface } from "./interface";
 import { getChainAssetsPath } from "../common/repo-structure";
 import { Binance } from "../common/blockchains";
 import { readDirSync } from "../common/filesystem";
+import { readJsonFile } from "../common/json";
 
 import {
     getChainAssetLogoPath,
     getChainDenylistPath
 } from "../common/repo-structure";
 
-const binanceChain = "binance"
+const binanceChain = "binance";
 const binanceUrlTokens2 = config.binanceUrlTokens2;
 const binanceUrlTokens8 = config.binanceUrlTokens8;
 const binanceUrlTokenAssets = config.binanceUrlTokenAssets;
-var cachedAssets = [];
+let cachedAssets = [];
 
-async function retrieveBep2AssetList(): Promise<any[]> {
+async function retrieveBep2AssetList(): Promise<unknown[]> {
     console.log(`     Retrieving token asset infos from: ${binanceUrlTokenAssets}`);
     const { assetInfoList } = await axios.get(binanceUrlTokenAssets).then(r => r.data);
     console.log(`     Retrieved ${assetInfoList.length} token asset infos`);
     return assetInfoList
 }
 
-async function retrieveAssets(): Promise<any[]> {
+async function retrieveAssets(): Promise<unknown[]> {
     // cache results because of rate limit, used more than once
     if (cachedAssets.length == 0) {
         console.log(`     Retrieving token infos (${binanceUrlTokens2}, ${binanceUrlTokens8})`);
@@ -54,8 +55,8 @@ function fetchImage(url) {
 }
 
 /// Return: array with images to fetch; {asset, assetImg}
-export function findImagesToFetch(assetInfoList: any, denylist: string[]): any[] {
-    let toFetch: any[] = [];
+export function findImagesToFetch(assetInfoList: unknown[], denylist: string[]): unknown[] {
+    const toFetch: unknown[] = [];
     console.log(`Checking for asset images to be fetched`);
     assetInfoList.forEach(({asset, assetImg}) => {
         process.stdout.write(`.${asset} `);
@@ -78,9 +79,9 @@ export function findImagesToFetch(assetInfoList: any, denylist: string[]): any[]
 }
 
 
-async function fetchMissingImages(toFetch: any[]): Promise<string[]> {
+async function fetchMissingImages(toFetch: unknown[]): Promise<string[]> {
     console.log(`Attempting to fetch ${toFetch.length} asset image(s)`);
-    let fetchedAssets: string[] = [];
+    const fetchedAssets: string[] = [];
     await bluebird.each(toFetch, async ({ asset, assetImg }) => {
         if (assetImg) {
             const imagePath = getChainAssetLogoPath(binanceChain, asset);
@@ -106,7 +107,7 @@ export class BinanceAction implements ActionInterface {
             {
                 getName: () => { return "Binance chain; assets must exist on chain"},
                 check: async () => {
-                    var errors = [];
+                    const errors = [];
                     const tokenSymbols = await retrieveAssetSymbols();
                     const assets = readDirSync(getChainAssetsPath(Binance));
                     assets.forEach(asset => {
@@ -130,7 +131,7 @@ export class BinanceAction implements ActionInterface {
     async update(): Promise<void> {
         // retrieve missing token images; BEP2 (bep8 not supported)
         const bep2InfoList = await retrieveBep2AssetList();
-        const denylist: string[] = require(getChainDenylistPath(binanceChain));
+        const denylist: string[] = readJsonFile(getChainDenylistPath(binanceChain)) as string[];
 
         const toFetch = findImagesToFetch(bep2InfoList, denylist);
         const fetchedAssets = await fetchMissingImages(toFetch);

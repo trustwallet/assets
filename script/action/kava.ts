@@ -11,7 +11,7 @@ export class KavaAction implements ActionInterface {
             {
                 getName: () => { return "Kava validator assets must have correct format"},
                 check: async () => {
-                    var errors: string[] = [];
+                    const errors: string[] = [];
                     const assets = getChainValidatorsAssets(Kava);
                     const prefix = "kavavaloper1";
                     const expLength = 50;

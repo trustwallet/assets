@@ -12,7 +12,7 @@ export class JsonAction implements ActionInterface {
             {
                 getName: () => { return "Check all JSON files to have valid content"},
                 check: async () => {
-                    var errors: string[] = [];
+                    const errors: string[] = [];
                     const files = [
                         ...findFiles(chainsPath, 'json'),
                     ];

@@ -1,11 +1,11 @@
 import { sanityCheckAll, consistencyCheckAll } from "../action/update-all";
 
-export async function main() {
-    var returnCode: number = 0;
+export async function main(): Promise<void> {
+    let returnCode = 0;
 
     try {
-        const [errors1, warnings1] = await sanityCheckAll();
         // warnings ignored
+        const [errors1] = await sanityCheckAll();
         if (errors1.length > 0) {
             returnCode = errors1.length;
         }
@@ -15,8 +15,8 @@ export async function main() {
     }
 
     try {
-        const [errors1, warnings1] = await consistencyCheckAll();
         // warnings ignored
+        const [errors1] = await consistencyCheckAll();
         if (errors1.length > 0) {
             returnCode = errors1.length;
         }

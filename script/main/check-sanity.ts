@@ -1,9 +1,9 @@
 import { sanityCheckAll } from "../action/update-all";
 
-export async function main() {
+export async function main(): Promise<void> {
     try {
-        const [errors, warnings] = await sanityCheckAll();
         // warnings ignored
+        const [errors] = await sanityCheckAll();
         process.exit(errors.length);
     } catch(err) {
         console.error(err);

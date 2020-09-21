@@ -36,7 +36,7 @@ export function calculateTargetSize(srcWidth: number, srcHeight: number, targetW
 
 // check logo dimensions (pixel) and size (kilobytes)
 export async function isLogoOK(path: string): Promise<[boolean, string]> {
-    var [isOK, msg] = await isLogoDimensionOK(path);
+    let [isOK, msg] = await isLogoDimensionOK(path);
     if (!isOK) {
         return [false, msg];
     }
@@ -74,7 +74,7 @@ async function isLogoSizeOK(path: string): Promise<[boolean, string]> {
 // return if image if too large, and if image has been updated
 export async function checkResizeIfTooLarge(path: string, checkOnly: boolean): Promise<[boolean, boolean]> {
     let tooLarge = false;
-    let updated: boolean = false;
+    let updated = false;
 
     const { width: srcWidth, height: srcHeight } = getImageDimensions(path);
 

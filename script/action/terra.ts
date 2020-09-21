@@ -11,7 +11,7 @@ export class TerraAction implements ActionInterface {
             {
                 getName: () => { return "Terra validator assets must have correct format"},
                 check: async () => {
-                    var errors: string[] = [];
+                    const errors: string[] = [];
                     const assets = getChainValidatorsAssets(Terra);
                     const prefix = "terravaloper1";
                     const expLength = 51;

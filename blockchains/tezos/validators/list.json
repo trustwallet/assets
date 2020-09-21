@@ -158,7 +158,7 @@
         },
         "status": {
             "disabled": true,
-            "note": "No more capacity: -108084"
+            "note": "No more capacity: -147080"
         }
     },
     {
@@ -387,10 +387,6 @@
         },
         "staking": {
             "minDelegation": 100
-        },
-        "status": {
-            "disabled": true,
-            "note": "No more capacity: -15003"
         }
     },
     {
@@ -449,6 +445,20 @@
         },
         "staking": {
             "minDelegation": 0
+        }
+    },
+    {
+        "id": "tz1WctSwL49BZtdWAQ75NY6vr4xsAx6oKdah",
+        "name": "Tezos Wake n' Bake",
+        "description": "Our biggest virtue is integry, we are always at your service. Come and bake with us!",
+        "website": "https://www.tezoswakenbake.com",
+        "payout": {
+            "commission": 6.6,
+            "payoutDelay": 6,
+            "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 500
         }
     }
 ]

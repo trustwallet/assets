@@ -1,14 +1,12 @@
 import { reverseCase } from "./types";
 
-const Web3 = require('web3');
-
-const web3 = new Web3('ws://localhost:8546');
+const web3 = new (require('web3'))('ws://localhost:8546');
 
 export const isChecksumEthereum = (address: string): boolean => web3.utils.checkAddressChecksum(address);
 export const toChecksumEthereum = (address: string): string => web3.utils.toChecksumAddress(address);
 
-export function toChecksum(address: string, chain: string = "ethereum"): string {
-    var checksumEthereum = toChecksumEthereum(address);
+export function toChecksum(address: string, chain = "ethereum"): string {
+    const checksumEthereum = toChecksumEthereum(address);
     
     // special handling for Wanchain
     if (chain.toLowerCase() === "wanchain") {
@@ -19,7 +17,7 @@ export function toChecksum(address: string, chain: string = "ethereum"): string 
     return checksumEthereum;
 }
 
-export function isChecksum(address: string, chain: string = "ethereum"): boolean {
+export function isChecksum(address: string, chain = "ethereum"): boolean {
     // special handling for Wanchain
     if (chain.toLowerCase() === "wanchain") {
         const addressEthereum = reverseCase(address).replace("X", "x");

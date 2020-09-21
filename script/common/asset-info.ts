@@ -9,7 +9,7 @@ function isAssetInfoHasAllKeys(path: string): [boolean, string] {
     const info = JSON.parse(readFileSync(path));
     const infoKeys = Object.keys(info);
 
-    const hasAllKeys = requiredKeys.every(k => info.hasOwnProperty(k));
+    const hasAllKeys = requiredKeys.every(k => Object.prototype.hasOwnProperty.call(info, k));
 
     if (!hasAllKeys) {
         return [false, `Info at path '${path}' missing next key(s): ${arrayDiff(requiredKeys, infoKeys)}`];
