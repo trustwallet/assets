@@ -20,7 +20,7 @@ import {
     arrayEqual,
     reverseCase
 } from "../script/generic/types";
-import { findImagesToFetch } from "../script/action/binance";
+import { findImagesToFetch } from "../script/blockchain/binance";
 
 describe("Test eth-web3 helpers", () => {
     test(`Test isChecksum`, () => {
@@ -116,7 +116,7 @@ describe("Test type helpers", () => {
     });
 });
 
-describe("Test action binance", () => {
+describe("Test blockchain binance", () => {
     test(`Test findImagesToFetch`, () => {
         const assetsInfoListNonexisting = [{asset: "A1", assetImg: "imgurl1"}, {asset: "A2", assetImg: "imgurl2"}];
         const assetsInfoListExisting = [{asset: "BUSD-BD1", assetImg: "imgurlBUSD"}, {asset: "ETH-1C9", assetImg: "imgurlETH"}];
