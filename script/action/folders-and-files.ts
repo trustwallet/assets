@@ -9,7 +9,6 @@ import {
     getChainAssetsPath,
     getChainAssetPath,
     getChainAssetLogoPath,
-    getChainAssetInfoPath,
     assetFolderAllowedFiles,
     getChainFolderFilesList,
     chainFolderAllowedFiles,
