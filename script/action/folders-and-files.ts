@@ -1,7 +1,7 @@
 import {
     readDirSync,
     isPathExistsSync
-} from "../common/filesystem";
+} from "../generic/filesystem";
 import { CheckStepInterface, ActionInterface } from "./interface";
 import {
     chainsPath,
@@ -13,9 +13,9 @@ import {
     getChainFolderFilesList,
     chainFolderAllowedFiles,
     rootDirAllowedFiles
-} from "../common/repo-structure";
-import { isLogoOK } from "../common/image";
-import { isLowerCase } from "../common/types";
+} from "../generic/repo-structure";
+import { isLogoOK } from "../generic/image";
+import { isLowerCase } from "../generic/types";
 import * as bluebird from "bluebird";
 
 const foundChains = readDirSync(chainsPath)

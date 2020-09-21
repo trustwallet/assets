@@ -5,15 +5,15 @@ import * as path from "path";
 import * as chalk from 'chalk';
 import * as config from "../config";
 import { ActionInterface, CheckStepInterface } from "./interface";
-import { getChainAssetsPath } from "../common/repo-structure";
-import { Binance } from "../common/blockchains";
-import { readDirSync } from "../common/filesystem";
-import { readJsonFile } from "../common/json";
+import { getChainAssetsPath } from "../generic/repo-structure";
+import { Binance } from "../generic/blockchains";
+import { readDirSync } from "../generic/filesystem";
+import { readJsonFile } from "../generic/json";
 
 import {
     getChainAssetLogoPath,
     getChainDenylistPath
-} from "../common/repo-structure";
+} from "../generic/repo-structure";
 
 const binanceChain = "binance";
 const binanceUrlTokens2 = config.binanceUrlTokens2;

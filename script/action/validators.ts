@@ -1,15 +1,15 @@
-import { stakingChains } from "../common/blockchains";
+import { stakingChains } from "../generic/blockchains";
 import {
     getChainValidatorsListPath,
     getChainValidatorAssetLogoPath,
     getChainValidatorsAssets
-} from "../common/repo-structure";
-import { isPathExistsSync } from "../common/filesystem";
-import { formatSortJsonFile, readJsonFile } from "../common/json";
+} from "../generic/repo-structure";
+import { isPathExistsSync } from "../generic/filesystem";
+import { formatSortJsonFile, readJsonFile } from "../generic/json";
 import { ActionInterface, CheckStepInterface } from "./interface";
-import { isValidJSON } from "../common/json";
-import { ValidatorModel } from "../common/validator-models";
-import { isLogoOK } from "../common/image";
+import { isValidJSON } from "../generic/json";
+import { ValidatorModel } from "../generic/validator-models";
+import { isLogoOK } from "../generic/image";
 import * as bluebird from "bluebird";
 
 function formatValidators() {

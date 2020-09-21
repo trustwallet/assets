@@ -1,7 +1,7 @@
-import { Cosmos } from "../common/blockchains";
-import { getChainValidatorsAssets } from "../common/repo-structure";
+import { Cosmos } from "../generic/blockchains";
+import { getChainValidatorsAssets } from "../generic/repo-structure";
 import { ActionInterface, CheckStepInterface } from "./interface";
-import { isLowerCase } from "../common/types";
+import { isLowerCase } from "../generic/types";
 
 export class CosmosAction implements ActionInterface {
     getName(): string { return "Cosmos chain"; }

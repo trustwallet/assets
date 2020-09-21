@@ -1,17 +1,17 @@
 import {
     findDuplicates,
     findCommonElementsOrDuplicates,
-} from "../script/common/types";
+} from "../script/generic/types";
 import {
     isChecksum,
     toChecksum,
     isEthereumAddress
-} from "../script/common/eth-web3";
+} from "../script/generic/eth-web3";
 import {
     isDimensionTooLarge,
     isDimensionOK,
     calculateTargetSize
-} from "../script/common/image";
+} from "../script/generic/image";
 import {
     sortElements,
     makeUnique,
@@ -19,7 +19,7 @@ import {
     arrayDiffNocase,
     arrayEqual,
     reverseCase
-} from "../script/common/types";
+} from "../script/generic/types";
 import { findImagesToFetch } from "../script/action/binance";
 
 describe("Test eth-web3 helpers", () => {

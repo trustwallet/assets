@@ -1,7 +1,7 @@
-import { Waves } from "../common/blockchains";
-import { getChainValidatorsAssets } from "../common/repo-structure";
+import { Waves } from "../generic/blockchains";
+import { getChainValidatorsAssets } from "../generic/repo-structure";
 import { ActionInterface, CheckStepInterface } from "./interface";
-import { isLowerCase, isUpperCase } from "../common/types";
+import { isLowerCase, isUpperCase } from "../generic/types";
 
 export function isWavesAddress(address: string): boolean {
     return address.length == 35 &&

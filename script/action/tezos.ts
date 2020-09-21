@@ -5,12 +5,12 @@ import {
     getChainValidatorsPath,
     getChainValidatorsListPath,
     getChainValidatorsAssets
-} from "../common/repo-structure";
-import { Tezos } from "../common/blockchains";
-import { readFileSync } from "../common/filesystem";
-import { writeJsonFile } from "../common/json";
+} from "../generic/repo-structure";
+import { Tezos } from "../generic/blockchains";
+import { readFileSync } from "../generic/filesystem";
+import { writeJsonFile } from "../generic/json";
 import { ActionInterface, CheckStepInterface } from "./interface";
-import { ValidatorModel } from "../common/validator-models";
+import { ValidatorModel } from "../generic/validator-models";
 
 interface BakingBadBaker {
     address: string,

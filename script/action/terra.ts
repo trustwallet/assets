@@ -1,7 +1,7 @@
-import { Terra } from "../common/blockchains";
-import { getChainValidatorsAssets } from "../common/repo-structure";
+import { Terra } from "../generic/blockchains";
+import { getChainValidatorsAssets } from "../generic/repo-structure";
 import { ActionInterface, CheckStepInterface } from "./interface";
-import { isLowerCase } from "../common/types";
+import { isLowerCase } from "../generic/types";
 
 export class TerraAction implements ActionInterface {
     getName(): string { return "Terra chain"; }
