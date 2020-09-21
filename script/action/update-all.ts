@@ -11,7 +11,6 @@ import { TronAction } from "./tron";
 import { Validators } from "./validators";
 import { WavesAction } from "./waves";
 import { Allowlist } from "./allowlists";
-import { Coinmarketcap } from "../../pricing/coinmarketcap/cmc-action";
 import { ActionInterface, CheckStepInterface } from "./interface";
 import * as chalk from 'chalk';
 import * as bluebird from "bluebird";
@@ -30,40 +29,59 @@ const actionList: ActionInterface[] = [
     new TerraAction(),
     new TezosAction(),
     new TronAction(),
-    new WavesAction(),
-    new Coinmarketcap()
+    new WavesAction()
 ];
 
+const maxErrosFromOneCheck = 5;
+
 async function checkStepList(steps: CheckStepInterface[]): Promise<[string[], string[]]> {
-    var errors: string[] = [];
-    var warnings: string[] = [];
+    const errorsAll: string[] = [];
+    const warningsAll: string[] = [];
     await bluebird.each(steps, async (step) => {
         try {
             //console.log(`     Running check step '${step.getName()}'...`);
-            const [error, warning] = await step.check();
-            if (error && error.length > 0) {
-                console.log(`-  ${chalk.red('X')} '${step.getName()}': '${error}'`);
-                errors.push(`${step.getName()}: ${error}`);
+            const [errors, warnings] = await step.check();
+            if (errors && errors.length > 0) {
+                console.log(`-  ${chalk.red('X')} '${step.getName()}':  ${errors.length} errors`);
+                let cnt = 0;
+                errors.forEach(err => {
+                    if (cnt < maxErrosFromOneCheck) {
+                        console.log(`   ${chalk.red('X')}   '${err}'`);
+                        errorsAll.push(err);
+                    } else if (cnt == maxErrosFromOneCheck) {
+                        console.log(`   ${chalk.red('X')}   ${errors.length} errors in total, omitting rest ...`);
+                    }
+                    cnt++;
+                });
             }
-            if (warning && warning.length > 0) {
-                console.log(`-  ${chalk.yellow('!')} '${step.getName()}': '${warning}'`);
-                warnings.push(`${step.getName()}: ${warning}`);
+            if (warnings && warnings.length > 0) {
+                console.log(`-  ${chalk.yellow('!')} '${step.getName()}':  ${warnings.length} warnings`);
+                let cnt = 0;
+                warnings.forEach(warn => {
+                    if (cnt < maxErrosFromOneCheck) {
+                        console.log(`   ${chalk.yellow('!')}   '${warn}'`);
+                        warningsAll.push(warn);
+                    } else if (cnt == maxErrosFromOneCheck) {
+                        console.log(`   ${chalk.yellow('!')}   ${warnings.length} warnings in total, omitting rest ...`);
+                    }
+                    cnt++;
+                });
             }
-            if (error.length == 0 && warning.length == 0) {
+            if (errors.length == 0 && warnings.length == 0) {
                 console.log(`-  ${chalk.green('✓')} '${step.getName()}' OK`);
             }
         } catch (error) {
             console.log(`-  ${chalk.red('X')} '${step.getName()}': Caught error: ${error.message}`);
-            errors.push(`${step.getName()}: Exception: ${error.message}`);
+            errorsAll.push(`${step.getName()}: Exception: ${error.message}`);
         }
     });
-    return [errors, warnings];
+    return [errorsAll, warningsAll];
 }
 
 async function sanityCheckByActionList(actions: ActionInterface[]): Promise<[string[], string[]]> {
     console.log("Running sanity checks...");
-    var errors: string[] = [];
-    var warnings: string[] = [];
+    const errors: string[] = [];
+    const warnings: string[] = [];
     await bluebird.each(actions, async (action) => {
         try {
             if (action.getSanityChecks) {
@@ -93,8 +111,8 @@ async function sanityCheckByActionList(actions: ActionInterface[]): Promise<[str
 
 async function consistencyCheckByActionList(actions: ActionInterface[]): Promise<[string[], string[]]> {
     console.log("Running consistency checks...");
-    var errors: string[] = [];
-    var warnings: string[] = [];
+    const errors: string[] = [];
+    const warnings: string[] = [];
     await bluebird.each(actions, async (action) => {
         try {
             if (action.getConsistencyChecks) {
@@ -175,14 +193,14 @@ export async function consistencyCheckAll(): Promise<[string[], string[]]> {
     return await consistencyCheckByActionList(actionList);
 }
 
-export async function sanityFixAll() {
+export async function sanityFixAll(): Promise<void> {
     await sanityFixByList(actionList);
 }
 
-export async function consistencyFixAll() {
+export async function consistencyFixAll(): Promise<void> {
     await consistencyFixByList(actionList);
 }
 
-export async function updateAll() {
+export async function updateAll(): Promise<void> {
     await updateByList(actionList);
 }

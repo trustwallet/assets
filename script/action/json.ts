@@ -1,4 +1,4 @@
-import { chainsPath, pricingFolderPath } from "../common/repo-structure";
+import { chainsPath } from "../common/repo-structure";
 import { findFiles } from "../common/filesystem";
 import { ActionInterface, CheckStepInterface } from "./interface";
 import { isValidJSON } from "../common/json";
@@ -12,18 +12,17 @@ export class JsonAction implements ActionInterface {
             {
                 getName: () => { return "Check all JSON files to have valid content"},
                 check: async () => {
-                    var error: string = "";
+                    const errors: string[] = [];
                     const files = [
                         ...findFiles(chainsPath, 'json'),
-                        ...findFiles(pricingFolderPath, 'json')
                     ];
 
                     await bluebird.each(files, async file => { 
                         if (!isValidJSON(file)) {
-                            error += `${file} path contains invalid JSON\n`;
+                            errors.push(`${file} path contains invalid JSON`);
                         }
                     });
-                    return [error, ""];
+                    return [errors, []];
                 }
             },
         ];

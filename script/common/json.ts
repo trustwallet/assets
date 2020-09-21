@@ -2,44 +2,40 @@ import {
     readFileSync,
     writeFileSync
 } from "./filesystem";
-import { sortElements, makeUnique } from "./types";
+import { sortElements } from "./types";
 
 export function isValidJSON(path: string): boolean {
     try {
-        let rawdata = readFileSync(path);
+        const rawdata = readFileSync(path);
         JSON.parse(rawdata);
         return true;
     } catch {
+        return false;
     }
-    return false;
 }
 
-export function formatJson(content: any) {
+export function formatJson(content: unknown): string {
     return JSON.stringify(content, null, 4);
 }
 
-export function formatSortJson(content: any) {
+export function formatSortJson(content: unknown[]): string {
     return JSON.stringify(sortElements(content), null, 4);
 }
 
-export function formatUniqueSortJson(content: any) {
-    return JSON.stringify(makeUnique(sortElements(content)), null, 4);
-}
-
-export function formatJsonFile(filename: string, silent: boolean = false) {
+export function formatJsonFile(filename: string): void {
     writeFileSync(filename, formatJson(JSON.parse(readFileSync(filename))));
     console.log(`Formatted json file ${filename}`);
 }
 
-export function formatSortJsonFile(filename: string) {
+export function formatSortJsonFile(filename: string): void {
     writeFileSync(filename, formatSortJson(JSON.parse(readFileSync(filename))));
     console.log(`Formatted json file ${filename}`);
 }
 
-export function readJsonFile(path: string): any {
+export function readJsonFile(path: string): unknown {
     return JSON.parse(readFileSync(path));
 }
 
-export function writeJsonFile(path: string, data: any) {
+export function writeJsonFile(path: string, data: unknown): void {
     writeFileSync(path, JSON.stringify(data, null, 4));
 }
