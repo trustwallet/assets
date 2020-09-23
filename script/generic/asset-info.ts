@@ -1,7 +1,7 @@
 import { getChainAssetInfoPath } from "./repo-structure";
 import { readFileSync, isPathExistsSync } from "./filesystem";
 import { arrayDiff } from "./types";
-import { isValidJSON } from "../common/json";
+import { isValidJSON } from "../generic/json";
 
 const requiredKeys = ["explorer", "name", "website", "short_description"];
 

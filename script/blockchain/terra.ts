@@ -1,20 +1,20 @@
-import { Cosmos } from "../common/blockchains";
-import { getChainValidatorsAssets } from "../common/repo-structure";
-import { ActionInterface, CheckStepInterface } from "./interface";
-import { isLowerCase } from "../common/types";
+import { Terra } from "../generic/blockchains";
+import { getChainValidatorsAssets } from "../generic/repo-structure";
+import { ActionInterface, CheckStepInterface } from "../generic/interface";
+import { isLowerCase } from "../generic/types";
 
-export class CosmosAction implements ActionInterface {
-    getName(): string { return "Cosmos chain"; }
+export class TerraAction implements ActionInterface {
+    getName(): string { return "Terra chain"; }
 
     getSanityChecks(): CheckStepInterface[] {
         return [
             {
-                getName: () => { return "Cosmos validator assets must have correct format"},
+                getName: () => { return "Terra validator assets must have correct format"},
                 check: async () => {
                     const errors: string[] = [];
-                    const assets = getChainValidatorsAssets(Cosmos);
-                    const prefix = "cosmosvaloper1";
-                    const expLength = 52;
+                    const assets = getChainValidatorsAssets(Terra);
+                    const prefix = "terravaloper1";
+                    const expLength = 51;
                     assets.forEach(addr => {
                         if (!(addr.startsWith(prefix))) {
                             errors.push(`Address ${addr} should start with '${prefix}'`);
@@ -31,12 +31,4 @@ export class CosmosAction implements ActionInterface {
             },
         ];
     }
-    
-    getConsistencyChecks = null;
-    
-    sanityFix = null;
-    
-    consistencyFix = null;
-    
-    update = null;
 }

@@ -6,14 +6,14 @@ import {
     getChainAssetLogoPath,
     getChainValidatorsListPath,
     getChainValidatorAssetLogoPath
-} from "../common/repo-structure";
+} from "../generic/repo-structure";
 import {
     readDirSync,
     readFileSync,
     isPathExistsSync
-} from "../common/filesystem";
-import { checkResizeIfTooLarge } from "../common/image";
-import { ActionInterface, CheckStepInterface } from "./interface";
+} from "../generic/filesystem";
+import { checkResizeIfTooLarge } from "../generic/image";
+import { ActionInterface, CheckStepInterface } from "../generic/interface";
 
 // return name of large logo, or empty
 async function checkDownsize(chains, checkOnly: boolean): Promise<string[]> {
@@ -89,14 +89,8 @@ export class LogoSize implements ActionInterface {
         ];
     }
 
-    getConsistencyChecks = null;
-
     async sanityFix(): Promise<void> {
         const foundChains = readDirSync(chainsPath);
         await checkDownsize(foundChains, false);
     }
-
-    consistencyFix = null;
-
-    update = null;
 }

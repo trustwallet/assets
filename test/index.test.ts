@@ -1,17 +1,17 @@
 import {
     findDuplicates,
     findCommonElementsOrDuplicates,
-} from "../script/common/types";
+} from "../script/generic/types";
 import {
     isChecksum,
     toChecksum,
     isEthereumAddress
-} from "../script/common/eth-web3";
+} from "../script/generic/eth-web3";
 import {
     isDimensionTooLarge,
     isDimensionOK,
     calculateTargetSize
-} from "../script/common/image";
+} from "../script/generic/image";
 import {
     sortElements,
     makeUnique,
@@ -19,8 +19,8 @@ import {
     arrayDiffNocase,
     arrayEqual,
     reverseCase
-} from "../script/common/types";
-import { findImagesToFetch } from "../script/action/binance";
+} from "../script/generic/types";
+import { findImagesToFetch } from "../script/blockchain/binance";
 
 describe("Test eth-web3 helpers", () => {
     test(`Test isChecksum`, () => {
@@ -116,7 +116,7 @@ describe("Test type helpers", () => {
     });
 });
 
-describe("Test action binance", () => {
+describe("Test blockchain binance", () => {
     test(`Test findImagesToFetch`, () => {
         const assetsInfoListNonexisting = [{asset: "A1", assetImg: "imgurl1"}, {asset: "A2", assetImg: "imgurl2"}];
         const assetsInfoListExisting = [{asset: "BUSD-BD1", assetImg: "imgurlBUSD"}, {asset: "ETH-1C9", assetImg: "imgurlETH"}];

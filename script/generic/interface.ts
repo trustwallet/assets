@@ -11,10 +11,10 @@ export interface ActionInterface {
     // return check steps for sanity check (0, 1, or more)
     getSanityChecks(): CheckStepInterface[];
     // return check steps for consistenct check (0, 1, or more)
-    getConsistencyChecks(): CheckStepInterface[];
-    sanityFix(): Promise<void>;
-    consistencyFix(): Promise<void>;
-    update(): Promise<void>;
+    getConsistencyChecks?(): CheckStepInterface[];
+    sanityFix?(): Promise<void>;
+    consistencyFix?(): Promise<void>;
+    update?(): Promise<void>;
 }
 
 export enum FixCheckMode {

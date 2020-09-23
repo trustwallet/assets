@@ -1,7 +1,7 @@
-import { Waves } from "../common/blockchains";
-import { getChainValidatorsAssets } from "../common/repo-structure";
-import { ActionInterface, CheckStepInterface } from "./interface";
-import { isLowerCase, isUpperCase } from "../common/types";
+import { Waves } from "../generic/blockchains";
+import { getChainValidatorsAssets } from "../generic/repo-structure";
+import { ActionInterface, CheckStepInterface } from "../generic/interface";
+import { isLowerCase, isUpperCase } from "../generic/types";
 
 export function isWavesAddress(address: string): boolean {
     return address.length == 35 &&
@@ -30,12 +30,4 @@ export class WavesAction implements ActionInterface {
             },
         ];
     }
-    
-    getConsistencyChecks = null;
-
-    sanityFix = null;
-
-    consistencyFix = null;
-    
-    update = null;
 }

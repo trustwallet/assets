@@ -1,4 +1,4 @@
-import { sanityCheckAll } from "../action/update-all";
+import { sanityCheckAll } from "../generic/update-all";
 
 export async function main(): Promise<void> {
     try {

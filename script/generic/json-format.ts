@@ -1,7 +1,7 @@
-import { chainsPath } from "../common/repo-structure";
-import { findFiles } from "../common/filesystem";
-import { ActionInterface, CheckStepInterface } from "./interface";
-import { isValidJSON } from "../common/json";
+import { chainsPath } from "../generic/repo-structure";
+import { findFiles } from "../generic/filesystem";
+import { ActionInterface, CheckStepInterface } from "../generic/interface";
+import { isValidJSON } from "../generic/json";
 import * as bluebird from "bluebird";
 
 export class JsonAction implements ActionInterface {
@@ -27,12 +27,4 @@ export class JsonAction implements ActionInterface {
             },
         ];
     }
-    
-    getConsistencyChecks = null;
-
-    sanityFix = null;
-
-    consistencyFix = null;
-    
-    update = null;
 }

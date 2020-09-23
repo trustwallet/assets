@@ -1,4 +1,4 @@
-import { ethForkChains } from "../common/blockchains";
+import { ethForkChains } from "../generic/blockchains";
 import {
     getChainAssetsPath,
     getChainAssetsList,
@@ -10,18 +10,18 @@ import {
     logoExtension,
     logoFullName,
     getChainAssetLogoPath
-} from "../common/repo-structure";
-import { formatJsonFile } from "../common/json";
+} from "../generic/repo-structure";
+import { formatJsonFile } from "../generic/json";
 import {
     getFileName,
     getFileExt,
     gitMove,
     readDirSync,
     isPathExistsSync,
-} from "../common/filesystem";
-import { toChecksum } from "../common/eth-web3";
-import { ActionInterface, CheckStepInterface } from "./interface";
-import { isAssetInfoOK } from "../common/asset-info";
+} from "../generic/filesystem";
+import { toChecksum } from "../generic/eth-web3";
+import { ActionInterface, CheckStepInterface } from "../generic/interface";
+import { isAssetInfoOK } from "../generic/asset-info";
 import * as bluebird from "bluebird";
 
 async function formatInfos() {
@@ -105,14 +105,8 @@ export class EthForks implements ActionInterface {
         return steps;
     }
     
-    getConsistencyChecks = null;
-
     async sanityFix(): Promise<void> {
         await formatInfos();
         await checkAddressChecksums();
     }
-    
-    consistencyFix = null;
-
-    update = null;
 }

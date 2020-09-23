@@ -1,22 +1,21 @@
 import {
     readDirSync,
     isPathExistsSync
-} from "../common/filesystem";
-import { CheckStepInterface, ActionInterface } from "./interface";
+} from "../generic/filesystem";
+import { CheckStepInterface, ActionInterface } from "../generic/interface";
 import {
     chainsPath,
     getChainLogoPath,
     getChainAssetsPath,
     getChainAssetPath,
     getChainAssetLogoPath,
-    getChainAssetInfoPath,
     assetFolderAllowedFiles,
     getChainFolderFilesList,
     chainFolderAllowedFiles,
     rootDirAllowedFiles
-} from "../common/repo-structure";
-import { isLogoOK } from "../common/image";
-import { isLowerCase } from "../common/types";
+} from "../generic/repo-structure";
+import { isLogoOK } from "../generic/image";
+import { isLowerCase } from "../generic/types";
 import * as bluebird from "bluebird";
 
 const foundChains = readDirSync(chainsPath)
@@ -133,12 +132,4 @@ export class FoldersFiles implements ActionInterface {
             }
         ];
     }
-    
-    getConsistencyChecks = null;
-
-    sanityFix = null;
-
-    consistencyFix = null;
-
-    update = null;
 }

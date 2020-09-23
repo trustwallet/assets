@@ -1,9 +1,9 @@
-import { ActionInterface, CheckStepInterface } from "./interface";
-import { getChainAssetsPath } from "../common/repo-structure";
-import { Tron } from "../common/blockchains";
-import { readDirSync, isPathExistsSync } from "../common/filesystem";
-import { getChainAssetLogoPath, getChainValidatorsAssets } from "../common/repo-structure";
-import { isLowerCase, isUpperCase } from "../common/types";
+import { ActionInterface, CheckStepInterface } from "../generic/interface";
+import { getChainAssetsPath } from "../generic/repo-structure";
+import { Tron } from "../generic/blockchains";
+import { readDirSync, isPathExistsSync } from "../generic/filesystem";
+import { getChainAssetLogoPath, getChainValidatorsAssets } from "../generic/repo-structure";
+import { isLowerCase, isUpperCase } from "../generic/types";
 import * as bluebird from "bluebird";
 
 export function isTRC10(str: string): boolean {
@@ -55,12 +55,4 @@ export class TronAction implements ActionInterface {
             }
         ];
     }
-    
-    getConsistencyChecks = null;
-
-    sanityFix = null;
-
-    consistencyFix = null;
-
-    update = null;
 }

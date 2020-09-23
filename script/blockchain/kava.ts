@@ -1,20 +1,20 @@
-import { Terra } from "../common/blockchains";
-import { getChainValidatorsAssets } from "../common/repo-structure";
-import { ActionInterface, CheckStepInterface } from "./interface";
-import { isLowerCase } from "../common/types";
+import { Kava } from "../generic/blockchains";
+import { getChainValidatorsAssets } from "../generic/repo-structure";
+import { ActionInterface, CheckStepInterface } from "../generic/interface";
+import { isLowerCase } from "../generic/types";
 
-export class TerraAction implements ActionInterface {
-    getName(): string { return "Terra chain"; }
+export class KavaAction implements ActionInterface {
+    getName(): string { return "Kava chain"; }
 
     getSanityChecks(): CheckStepInterface[] {
         return [
             {
-                getName: () => { return "Terra validator assets must have correct format"},
+                getName: () => { return "Kava validator assets must have correct format"},
                 check: async () => {
                     const errors: string[] = [];
-                    const assets = getChainValidatorsAssets(Terra);
-                    const prefix = "terravaloper1";
-                    const expLength = 51;
+                    const assets = getChainValidatorsAssets(Kava);
+                    const prefix = "kavavaloper1";
+                    const expLength = 50;
                     assets.forEach(addr => {
                         if (!(addr.startsWith(prefix))) {
                             errors.push(`Address ${addr} should start with '${prefix}'`);
@@ -31,12 +31,4 @@ export class TerraAction implements ActionInterface {
             },
         ];
     }
-    
-    getConsistencyChecks = null;
-
-    sanityFix = null;
-    
-    consistencyFix = null;
-
-    update = null;
 }

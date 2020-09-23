@@ -4,16 +4,16 @@ import * as fs from "fs";
 import * as path from "path";
 import * as chalk from 'chalk';
 import * as config from "../config";
-import { ActionInterface, CheckStepInterface } from "./interface";
-import { getChainAssetsPath } from "../common/repo-structure";
-import { Binance } from "../common/blockchains";
-import { readDirSync } from "../common/filesystem";
-import { readJsonFile } from "../common/json";
+import { ActionInterface, CheckStepInterface } from "../generic/interface";
+import { getChainAssetsPath } from "../generic/repo-structure";
+import { Binance } from "../generic/blockchains";
+import { readDirSync } from "../generic/filesystem";
+import { readJsonFile } from "../generic/json";
 
 import {
     getChainAssetLogoPath,
     getChainDenylistPath
-} from "../common/repo-structure";
+} from "../generic/repo-structure";
 
 const binanceChain = "binance";
 const binanceUrlTokens2 = config.binanceUrlTokens2;
@@ -121,12 +121,6 @@ export class BinanceAction implements ActionInterface {
             },
         ];
     }
-
-    getConsistencyChecks = null;
-
-    sanityFix = null;
-
-    consistencyFix = null;
     
     async update(): Promise<void> {
         // retrieve missing token images; BEP2 (bep8 not supported)

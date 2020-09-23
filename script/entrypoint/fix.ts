@@ -1,4 +1,4 @@
-import { sanityFixAll, consistencyFixAll } from "../action/update-all";
+import { sanityFixAll, consistencyFixAll } from "../generic/update-all";
 
 export async function main(): Promise<void> {
     try {

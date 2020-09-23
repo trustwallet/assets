@@ -1,4 +1,4 @@
-import { updateAll } from "../action/update-all";
+import { updateAll } from "../generic/update-all";
 
 export async function main(): Promise<void> {
     try {
