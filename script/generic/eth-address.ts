@@ -1,9 +1,8 @@
+import { toChecksumAddress, checkAddressChecksum } from "ethereum-checksum-address";
 import { reverseCase } from "./types";
 
-const web3 = new (require('web3'))('ws://localhost:8546');
-
-export const isChecksumEthereum = (address: string): boolean => web3.utils.checkAddressChecksum(address);
-export const toChecksumEthereum = (address: string): string => web3.utils.toChecksumAddress(address);
+export const isChecksumEthereum = (address: string): boolean => checkAddressChecksum(address);
+export const toChecksumEthereum = (address: string): string => toChecksumAddress(address);
 
 export function toChecksum(address: string, chain = "ethereum"): string {
     const checksumEthereum = toChecksumEthereum(address);
@@ -28,5 +27,16 @@ export function isChecksum(address: string, chain = "ethereum"): boolean {
 }
 
 export function isEthereumAddress(address: string): boolean {
-    return web3.utils.isAddress(address)
+    if (!(address.length == 40 || (address.length == 42 && address.substring(0, 2) === '0x'))) {
+        return false;
+    }
+    try {
+        const check1 = toChecksum(address);
+        if (toChecksum(check1) !== check1) {
+            return false;
+        }
+        return true;
+    } catch (error) {
+        return false;
+    }
 }
