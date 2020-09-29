@@ -6,7 +6,7 @@ import {
     isChecksum,
     toChecksum,
     isEthereumAddress
-} from "../script/generic/eth-web3";
+} from "../script/generic/eth-address";
 import {
     isDimensionTooLarge,
     isDimensionOK,
@@ -22,7 +22,7 @@ import {
 } from "../script/generic/types";
 import { findImagesToFetch } from "../script/blockchain/binance";
 
-describe("Test eth-web3 helpers", () => {
+describe("Test eth-address helpers", () => {
     test(`Test isChecksum`, () => {
         expect(isChecksum("0x7Bb09bC8aDE747178e95B1D035ecBeEBbB18cFee", "ethereum"), `checksum`).toBe(true);
         expect(isChecksum("0x7bb09bc8ade747178e95b1d035ecbeebbb18cfee", "ethereum"), `lowercase`).toBe(false);

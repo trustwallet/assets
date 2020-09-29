@@ -19,7 +19,7 @@ import {
     readDirSync,
     isPathExistsSync,
 } from "../generic/filesystem";
-import { toChecksum } from "../generic/eth-web3";
+import { toChecksum } from "../generic/eth-address";
 import { ActionInterface, CheckStepInterface } from "../generic/interface";
 import { isAssetInfoOK } from "../generic/asset-info";
 import * as bluebird from "bluebird";
