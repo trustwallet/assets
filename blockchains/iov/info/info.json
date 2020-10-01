@@ -18,5 +18,14 @@
       "url": "https://twitter.com/iov_official"
     }
   ],
-  "explorer": "https://big-dipper.iov-mainnet-2.iov.one/"
+  "explorers": [
+    {
+      "name": "Big Dipper",
+      "url": "https://big-dipper.iov-mainnet-2.iov.one"
+    },
+    {
+      "name": "Mintscan",
+      "url": "https://www.mintscan.io/starname"
+    }
+  ]
 }
