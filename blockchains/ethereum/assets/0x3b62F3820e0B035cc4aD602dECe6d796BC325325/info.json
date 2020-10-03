@@ -5,7 +5,21 @@
   "white_paper": "https://deus.finance/litepaper.pdf",
   "short_description": "DEUS finance the next generation asset tokenization transpose any verifiable digital or non-digital asset securely onto the blockchain.",
   "explorer": "https://etherscan.io/token/0x3b62f3820e0b035cc4ad602dece6d796bc325325",
-  "Twitter": "https://twitter.com/DeusDao",
-  "Telegram": "https://t.me/deusfinance",
-  "Medium": "https://medium.com/@deusfinance"
+  "socials": [
+    {
+      "name": "Twitter", 
+      "url":  "https://twitter.com/DeusDao",
+      "handle": "DeusDao"
+    },
+    {
+      "name": "Telegram", 
+      "url":  "https://t.me/deusfinance",
+      "handle": "deusfinance"
+    },
+    {
+      "name": "Medium", 
+      "url":  "https://medium.com/@deusfinance",
+      "handle": "deusfinance"
+    }
+  ]
 } 
