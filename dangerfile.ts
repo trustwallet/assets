@@ -1,5 +1,5 @@
 import { fail, warn, markdown } from "danger";
-import { sanityCheckAll } from "./script/action/update-all";
+import { sanityCheckAll } from "./script/generic/update-all";
 
 sanityCheckAll().then(([errors, warnings]) => {
     errors.forEach(err => fail(err));
