@@ -1,0 +1,24 @@
+{
+    "name":"Ethereum List",
+    "logoURI":"",
+    "keywords":[
+       
+    ],
+    "timestamp":"2020-10-03T12:37:57.000+00:00",
+    "tokens":[
+       {
+          "blockchain":"ethereum",
+          "chainId":1,
+          "address":"0x6B175474E89094C44Da98b954EedeAC495271d0F",
+          "name":"Dai Stablecoin",
+          "symbol":"DAI",
+          "decimals":18,
+          "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
+       }
+    ],
+    "version":{
+       "major":0,
+       "minor":1,
+       "patch":0
+    }
+ }
