@@ -1,6 +1,6 @@
 # Trust Wallet Assets Info
 
-![Periodic Update](https://github.com/trustwallet/assets/workflows/Periodic%20External%20Update/badge.svg)
+![Check](https://github.com/trustwallet/assets/workflows/Check/badge.svg)
 
 ## Overview
 Trust Wallet token repository is a comprehensive, up-to-date collection of information about several thousands (!) of crypto tokens.
@@ -13,26 +13,26 @@ For every token a logo and optional additional information is available (such da
 Such a large collection can be maintained only through a community effort, so _contributions are welcome_,
 primarily from token projects.
 
+Please note that __new tokens are not accepted__,
+the projects have to be sound, with information available, and __non-minimal circulation__
+(for limit details see https://community.trustwallet.com/t/how-to-submit-a-token-logo/3863#how-to-get-approved).
+
 <center><img src='https://raw.githubusercontent.com/trustwallet/assets/master/media/trust-wallet.png'></center>
 
-## Contribution Quick Start
+## How to add token
 
 Details of the repository structure and contribution guidelines are listed on the
 [Developers site](https://developer.trustwallet.com/add_new_asset).
 Here is a quick starter summary for the most common use case.
 
-For **adding an ERC20 token**:
-- fork the Github repository
-- prepare a logo file, according to the
-listed [image rules](https://developer.trustwallet.com/add_new_asset#image-requirements), but must importantly:
-PNG format, max. pixel size of 512x512 and max. file size of 100kB.
-- add/upload the logo file named `logo.png` to the folder `blockchains/ethereum/assets/<contract>`,
-where the last part is the token contract address in  
-[_checksum format_](https://developer.trustwallet.com/add_new_asset#checksum_format)
-such as
-`blockchains/ethereum/assets/0x1234567461d3f8Db7496581774Bd869C83D51c93/logo.png`.
-- Create a PR to the main repo
-- Pay the processing fee
+**Adding an ERC20 token checklist**:
+- [ ] Make sure your smartcontract has more than 500 address holders, otherwise you will be rejected
+- [ ] Fork the Github repository
+- [ ] Create folder with name of token smartcontact address in [_checksum format_](https://developer.trustwallet.com/add_new_asset#checksum_format) `blockchains/ethereum/assets/<token_smartcontract_address>/`.
+- [ ] Tell your designer that token image must be in PNG format, max size: 512x512px, with max file size of 100kB, for further details read [image rules](https://developer.trustwallet.com/add_new_asset#image-requirements).
+- [ ] Upload your logo with file named `logo.png` to previously created folder with smartcontract address, and if you done all correctly your path should look like this. `blockchains/ethereum/assets/0x1234567461d3f8Db7496581774Bd869C83D51c93/logo.png`
+- [ ] Create a pull request to the main repo
+- [ ] Pay the processing fee
 
 ## Documentation
 
