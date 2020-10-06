@@ -1,0 +1,23 @@
+{
+    "name":"Trust Wallet: BNB",
+    "logoURI":"https://trustwallet.com/assets/images/favicon.png",
+    "keywords":[
+       
+    ],
+    "timestamp":"2020-10-03T12:37:57.000+00:00",
+    "tokens":[
+       {
+          "blockchain":"binance",
+          "address":"TWT-8C2",
+          "name":"Trust Wallet",
+          "symbol":"TWT",
+          "decimals":8,
+          "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/TWT-8C2/logo.png"
+       }
+    ],
+    "version":{
+       "major":0,
+       "minor":1,
+       "patch":0
+    }
+ }
