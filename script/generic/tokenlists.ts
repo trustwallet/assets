@@ -47,6 +47,7 @@ function generateTokensList(tokens: any[]): any {
 }
 
 async function generateBinanceTokensList(): Promise<any[]> {
+    const decimals = CoinType.decimals(CoinType.binance)
     const markets = await axios.get(`${config.binanceDexURL}/v1/markets?limit=10000`).then(r => r.data);
     const tokens = await axios.get(`${config.binanceDexURL}/v1/tokens?limit=10000`).then(r => r.data);
     const tokensMap = Object.assign({}, ...tokens.map(s => ({[s.symbol]: s})));
@@ -59,8 +60,8 @@ async function generateBinanceTokensList(): Promise<any[]> {
         function pair(market: any): any {
             return {
                 base: asset(market.base_asset_symbol),
-                lotSize: toSatoshis(market.lot_size, 8),
-                tickSize: toSatoshis(market.tick_size, 8)
+                lotSize: toSatoshis(market.lot_size, decimals),
+                tickSize: toSatoshis(market.tick_size, decimals)
             }
         }
 
@@ -97,7 +98,7 @@ async function generateBinanceTokensList(): Promise<any[]> {
             address: token.symbol,
             name: token.name,
             symbol: token.symbol,
-            decimals: 8,
+            decimals: decimals,
             logoURI: logoURI(token.symbol),
             pairs: pairsMap[token.symbol] || []
         }
