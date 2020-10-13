@@ -87,7 +87,7 @@ async function generateBinanceTokensList(): Promise<any[]> {
     }
     function asset(symbol: string): string {
         if (symbol == BNBSymbol) {
-            assetID(CoinType.binance)
+            return assetID(CoinType.binance)
         }
         return assetID(CoinType.binance, symbol)
     }
