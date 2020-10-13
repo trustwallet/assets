@@ -48,6 +48,7 @@ function generateTokensList(tokens: any[]): any {
 
 async function generateBinanceTokensList(): Promise<any[]> {
     const decimals = CoinType.decimals(CoinType.binance)
+    const BNBSymbol = CoinType.symbol(CoinType.binance)
     const markets = await axios.get(`${config.binanceDexURL}/v1/markets?limit=10000`).then(r => r.data);
     const tokens = await axios.get(`${config.binanceDexURL}/v1/tokens?limit=10000`).then(r => r.data);
     const tokensMap = Object.assign({}, ...tokens.map(s => ({[s.symbol]: s})));
@@ -79,13 +80,13 @@ async function generateBinanceTokensList(): Promise<any[]> {
     })
 
     function logoURI(symbol: string): string {
-        if (symbol == 'BNB') {
+        if (symbol == BNBSymbol) {
             return `${config.assetsURL}/blockchains/binance/assets/${symbol}/logo.png`
         }
         return `${config.assetsURL}/blockchains/binance/assets/${symbol}/logo.png`
     }
     function asset(symbol: string): string {
-        if (symbol == 'BNB') {
+        if (symbol == BNBSymbol) {
             assetID(CoinType.binance)
         }
         return assetID(CoinType.binance, symbol)
