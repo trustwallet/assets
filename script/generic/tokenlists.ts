@@ -77,8 +77,6 @@ async function generateBinanceTokensList(): Promise<any[]> {
         pairsList.add(market.quote_asset_symbol)
     })
 
-    console.log('pairsMap', pairsMap)
-
     function logoURI(symbol: string): string {
         if (symbol == 'BNB') {
             return `${config.assetsURL}/blockchains/binance/assets/${symbol}/logo.png`
