@@ -1,6 +1,6 @@
 # Expected Payment.  Can be more than one options.
 payments:
-  - amount: 250
+  - amount: 1000
     token: TWT
     address: bnb1tqq9llyr3dyjd559dha6z5r5etk3qfwk07m098
   - amount: 2
@@ -20,17 +20,16 @@ message:
     \n$QR1_SIMPLE
     \n*Notes*:
     * New tokens without significant usage are rejected, see criteria mentioned above.
-    * [Trust Wallet Tokens (TWT)](https://community.trustwallet.com/t/trust-wallet-token-twt/4187) are distributed through our [Referral Program](https://community.trustwallet.com/t/invite-a-friend-earn-trust-wallet-token-twt/4125), or can be obtained from the market.
     * One PR should be for a single project; PR's with more than 10 logos will be rejected.
-    * Payment evaluation happens automatically, but with a few minutes delay.  When payment is detected, an Accept Review is automatically placed on the PR, which is a condition for merge.
-    * Evaluating the PR is done manually, and it is merged only if all conditions are satisfied.
-    * TWT-BEP2 is supported (Binance Chain), TWT-BEP20 version on Smart Chain is not.
+    * Trust Wallet Tokens (TWT) are distributed to new users through our [Referral Program](https://community.trustwallet.com/t/invite-a-friend-earn-trust-wallet-token-twt/4125).
+    * Payment evaluation happens when there is activity on the PR -- write a comment if you have performed the payment.
+    * When payment is detected, an Accept Review is automatically placed on the PR, which is a condition for merge.  The merge is still done manually.
   notReceived: Fee has not been received yet (or not fully).\n\n$TX_LIST
   received: |
     Fee is PAID, fantastic!  Thanks!
-    \nThe PR will be evaluated soon by a maintainer, and if merged, the new logos should be visible in Trust Wallet.
-    Please note that the app caches logos (up to several days; if you want to see changes immediately, use a new installation).  See the [assets FAQ](https://github.com/trustwallet/assets#faq). 
-    (@zachzwei, @catenocrypt & @Iamdeadlyz: please take note.)
+    \nThe PR will be merged soon by a maintainer, and then new/updated logos should be visible in Trust Wallet.
+    Please note that the app caches logos for several days, so if you want to see changes immediately, use a new device, or reinstall Trust Wallet (make sure you have a backup of all your wallets first!).  See the [assets FAQ](https://github.com/trustwallet/assets#faq). 
+    @zachzwei & @catenocrypt, please take note.
     \n([$PAID_AMOUNT $PAID_CURRENCY]($PAID1_EXPLORERLINK))
   reviewCreated: Fee paid, review added.
   reviewed: Review is not needed any more, no more fee required.
