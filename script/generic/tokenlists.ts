@@ -11,6 +11,67 @@ import * as config from "../config";
 import { CoinType } from "@trustwallet/wallet-core";
 import { toSatoshis } from "./numbers";
 
+class Version {
+    major: number
+    minor: number
+    patch: number
+
+    constructor(major: number, minor: number, patch: number) {
+        this.major = major
+        this.minor = minor
+        this.patch = patch
+    }
+}
+
+class List {
+    name: string
+    logoURI: string
+    timestamp: string
+    tokens: [TokenItem]
+    pairs: [Pair]
+    version: Version
+
+    constructor(name: string, logoURI: string, timestamp: string, tokens: [TokenItem], version: Version) {
+        this.name = name
+        this.logoURI = logoURI
+        this.timestamp = timestamp;
+        this.tokens = tokens
+        this.version = version
+    }
+}
+
+class TokenItem {
+    asset: string;
+    address: string;
+    name: string;
+    symbol: string;
+    decimals: number;
+    logoURI: string;
+    pairs: [Pair];
+
+    constructor(asset: string, address: string, name: string, symbol: string, decimals: number, logoURI: string, pairs: [Pair]) {
+        this.asset = asset
+        this.address = address
+        this.name = name;
+        this.symbol = symbol
+        this.decimals = decimals
+        this.logoURI = logoURI
+        this.pairs = pairs
+    }
+}
+
+class Pair {
+    base: string;
+    lotSize: string;
+    tickSize: string;
+
+    constructor(base: string, lotSize: string, tickSize: string) {
+        this.base = base
+        this.lotSize = lotSize
+        this.tickSize = tickSize
+    }
+}
+
 export class TokenLists implements ActionInterface {
     getName(): string { return "TokenLists"; }
 
@@ -31,19 +92,14 @@ export class TokenLists implements ActionInterface {
     }
 }
 
-function generateTokensList(tokens: any[]): any {
-    return {
-        name: "Trust Wallet: BNB",
-        logoURI: "https://trustwallet.com/assets/images/favicon.png",
-        timestamp: "2020-10-03T12:37:57.000+00:00",
-        keywords: [],
-        tokens: tokens,
-        version: {
-            major: 0,
-            minor: 1,
-            patch: 0
-        }
-    }
+function generateTokensList(tokens: [TokenItem]): List {
+    return new List(
+        "Trust Wallet: BNB",
+        "https://trustwallet.com/assets/images/favicon.png",
+        "2020-10-03T12:37:57.000+00:00",
+        tokens,
+        new Version(0, 1, 0)
+    )
 }
 
 async function generateBinanceTokensList(): Promise<any[]> {
@@ -59,11 +115,11 @@ async function generateBinanceTokensList(): Promise<any[]> {
         const key = market.quote_asset_symbol
 
         function pair(market: any): any {
-            return {
-                base: asset(market.base_asset_symbol),
-                lotSize: toSatoshis(market.lot_size, decimals),
-                tickSize: toSatoshis(market.tick_size, decimals)
-            }
+            return new Pair(
+                asset(market.base_asset_symbol),
+                toSatoshis(market.lot_size, decimals),
+                toSatoshis(market.tick_size, decimals)
+            )
         }
 
         if (pairsMap[key]) {
@@ -94,14 +150,14 @@ async function generateBinanceTokensList(): Promise<any[]> {
     const list: any[] = Array.from(pairsList.values())
     return list.map(item => {
         const token = tokensMap[item]
-        return {
-            asset: asset(token.symbol),
-            address: token.symbol,
-            name: token.name,
-            symbol: token.symbol,
-            decimals: decimals,
-            logoURI: logoURI(token.symbol),
-            pairs: pairsMap[token.symbol] || []
-        }
+        return new TokenItem (
+            asset(token.symbol),
+            token.symbol,
+            token.name,
+            token.symbol,
+            decimals,
+            logoURI(token.symbol),
+            pairsMap[token.symbol] || []
+    )
     }).sort((n1,n2) => (n2.pairs || []).length - (n1.pairs || []).length);
 }

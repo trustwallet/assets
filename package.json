@@ -10,7 +10,8 @@
     "fix": "ts-node ./script/entrypoint/fix",
     "fix-sanity": "ts-node ./script/entrypoint/fix-sanity",
     "update": "ts-node ./script/entrypoint/update",
-    "lint": "npx eslint . --ext .js,.jsx,.ts,.tsx"
+    "lint": "npx eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint:fix": "npx eslint . --ext .js,.jsx,.ts,.tsx --fix"
   },
   "repository": {
     "type": "git",
