@@ -11,6 +11,13 @@ import * as config from "../config";
 import { CoinType } from "@trustwallet/wallet-core";
 import { toSatoshis } from "./numbers";
 
+class BinanceMarket {
+    base_asset_symbol: string
+    quote_asset_symbol: string
+    lot_size: string
+    tick_size: string
+}
+
 class Version {
     major: number
     minor: number
@@ -102,10 +109,10 @@ function generateTokensList(tokens: [TokenItem]): List {
     )
 }
 
-async function generateBinanceTokensList(): Promise<any[]> {
+async function generateBinanceTokensList(): Promise<[TokenItem]> {
     const decimals = CoinType.decimals(CoinType.binance)
     const BNBSymbol = CoinType.symbol(CoinType.binance)
-    const markets = await axios.get(`${config.binanceDexURL}/v1/markets?limit=10000`).then(r => r.data);
+    const markets: [BinanceMarket] = await axios.get(`${config.binanceDexURL}/v1/markets?limit=10000`).then(r => r.data);
     const tokens = await axios.get(`${config.binanceDexURL}/v1/tokens?limit=10000`).then(r => r.data);
     const tokensMap = Object.assign({}, ...tokens.map(s => ({[s.symbol]: s})));
     const pairsMap = {}
@@ -114,7 +121,7 @@ async function generateBinanceTokensList(): Promise<any[]> {
     markets.forEach(market => {
         const key = market.quote_asset_symbol
 
-        function pair(market: any): any {
+        function pair(market: BinanceMarket): Pair {
             return new Pair(
                 asset(market.base_asset_symbol),
                 toSatoshis(market.lot_size, decimals),
@@ -147,9 +154,9 @@ async function generateBinanceTokensList(): Promise<any[]> {
         }
         return assetID(CoinType.binance, symbol)
     }
-    const list: any[] = Array.from(pairsList.values())
-    return list.map(item => {
-        const token = tokensMap[item]
+    const list = <[TokenItem]>Array.from(pairsList.values())
+    return <[TokenItem]>list.map(item => {
+        const token = tokensMap[item.symbol]
         return new TokenItem (
             asset(token.symbol),
             token.symbol,
