@@ -26,11 +26,11 @@ For **adding an ERC20 token**:
 - prepare a logo file, according to the
 listed [image rules](https://developer.trustwallet.com/add_new_asset#image-requirements), but must importantly:
 PNG format, max. pixel size of 512x512 and max. file size of 100kB.
-- add/upload the logo file named `logo.png` to the folder `blockchains/ethereum/assets/<contract>`,
+- add/upload the logo file named `logo.png` to the folder `blockchains/ubiq/assets/<contract>`,
 where the last part is the token contract address in  
 [_checksum format_](https://developer.trustwallet.com/add_new_asset#checksum_format)
 such as
-`blockchains/ethereum/assets/0x1234567461d3f8Db7496581774Bd869C83D51c93/logo.png`.
+`blockchains/ubiq/assets/0x1234567461d3f8Db7496581774Bd869C83D51c93/logo.png`.
 - Create a PR to the main repo
 - Pay the processing fee
 
