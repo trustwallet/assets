@@ -32,7 +32,6 @@ where the last part is the token contract address in
 such as
 `blockchains/ubiq/assets/0x1234567461d3f8Db7496581774Bd869C83D51c93/logo.png`.
 - Create a PR to the main repo
-- Pay the processing fee
 
 ## Documentation
 
