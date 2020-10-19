@@ -60,26 +60,26 @@ export class AssetInfos implements ActionInterface {
     getSanityChecks(): CheckStepInterface[] {
         const steps: CheckStepInterface[] = [];
         allChains.forEach(chain => {
-            steps.push(
-                {
-                    getName: () => { return `Info.json's for chain ${chain}`;},
-                    check: async () => {
-                        const errors: string[] = [];
-                        // ignore if there is no assets subfolder
-                        if (isPathExistsSync(getChainAssetsPath(chain))) {
+            // only if there is no assets subfolder
+            if (isPathExistsSync(getChainAssetsPath(chain))) {
+                steps.push(
+                    {
+                        getName: () => { return `Info.json's for chain ${chain}`;},
+                        check: async () => {
+                            const errors: string[] = [];
                             const assetsList = getChainAssetsList(chain);
-                            console.log(`     Found ${assetsList.length} assets for chain ${chain}`);
+                            //console.log(`     Found ${assetsList.length} assets for chain ${chain}`);
                             await bluebird.each(assetsList, async (address) => {
                                 const [isInfoOK, infoMsg] = isAssetInfoOK(chain, address);
                                 if (!isInfoOK) {
                                     errors.push(infoMsg);
                                 }
                             });
-                        }
-                        return [errors, []];
-                    }    
-                }
-            );
+                            return [errors, []];
+                        }    
+                    }
+                );
+            }
         });
         return steps;
     }
