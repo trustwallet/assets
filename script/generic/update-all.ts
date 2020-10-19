@@ -1,6 +1,6 @@
 import { BinanceAction } from "../blockchain/binance";
 import { CosmosAction } from "../blockchain/cosmos";
-import { AssetInfos } from "../generic/asset-info";
+import { AssetInfos } from "../generic/asset-infos";
 import { EthForks } from "../generic/eth-forks";
 import { FoldersFiles } from "../generic/folders-and-files";
 import { JsonAction } from "../generic/json-format";
