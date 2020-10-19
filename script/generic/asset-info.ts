@@ -1,7 +1,17 @@
-import { getChainAssetInfoPath } from "./repo-structure";
-import { readFileSync, isPathExistsSync } from "./filesystem";
+import {
+    allChains,
+    getChainAssetsList,
+    getChainAssetsPath,
+    getChainAssetInfoPath
+} from "./repo-structure";
+import {
+    readFileSync,
+    isPathExistsSync
+} from "./filesystem";
 import { arrayDiff } from "./types";
 import { isValidJSON } from "../generic/json";
+import { ActionInterface, CheckStepInterface } from "../generic/interface";
+import * as bluebird from "bluebird";
 
 const requiredKeys = ["explorer", "name", "website", "short_description"];
 
@@ -24,7 +34,7 @@ function isAssetInfoHasAllKeys(path: string): [boolean, string] {
     return [isKeysCorrentType, `Check keys '${requiredKeys}' vs. '${infoKeys}'`];
 }
 
-export function isAssetInfoOK(chain: string, address: string): [boolean, string] {
+function isAssetInfoOK(chain: string, address: string): [boolean, string] {
     const assetInfoPath = getChainAssetInfoPath(chain, address);
     if (!isPathExistsSync(assetInfoPath)) {
         return [true, `Info file doesn't exist, no need to check`]
@@ -42,4 +52,35 @@ export function isAssetInfoOK(chain: string, address: string): [boolean, string]
     }
 
     return [true, ''];
+}
+
+export class AssetInfos implements ActionInterface {
+    getName(): string { return "Asset Infos"; }
+    
+    getSanityChecks(): CheckStepInterface[] {
+        const steps: CheckStepInterface[] = [];
+        allChains.forEach(chain => {
+            steps.push(
+                {
+                    getName: () => { return `Info.json's for chain ${chain}`;},
+                    check: async () => {
+                        const errors: string[] = [];
+                        // ignore if there is no assets subfolder
+                        if (isPathExistsSync(getChainAssetsPath(chain))) {
+                            const assetsList = getChainAssetsList(chain);
+                            console.log(`     Found ${assetsList.length} assets for chain ${chain}`);
+                            await bluebird.each(assetsList, async (address) => {
+                                const [isInfoOK, infoMsg] = isAssetInfoOK(chain, address);
+                                if (!isInfoOK) {
+                                    errors.push(infoMsg);
+                                }
+                            });
+                        }
+                        return [errors, []];
+                    }    
+                }
+            );
+        });
+        return steps;
+    }
 }
