@@ -15,7 +15,8 @@ import * as bluebird from "bluebird";
 
 const requiredKeys = ["explorer", "name", "website", "short_description"];
 
-function isAssetInfoHasAllKeys(info: any, path: string): [boolean, string] {
+function isAssetInfoHasAllKeys(path: string): [boolean, string] {
+    const info = JSON.parse(readFileSync(path));
     const infoKeys = Object.keys(info);
 
     const hasAllKeys = requiredKeys.every(k => Object.prototype.hasOwnProperty.call(info, k));
@@ -33,65 +34,24 @@ function isAssetInfoHasAllKeys(info: any, path: string): [boolean, string] {
     return [isKeysCorrentType, `Check keys '${requiredKeys}' vs. '${infoKeys}'`];
 }
 
-function explorerUrl(chain: string, contract: string): string {
-    if (contract) {
-        switch (chain.toLowerCase()) {
-            case "ethereum":
-                return `https://etherscan.io/token/${contract}`;
-
-            case "tron":
-                    // special for TRC10/20 -- both have same 'tron' folder
-                if (contract.startsWith("10")) {
-                    // trc10
-                    return `https://tronscan.io/#/token/${contract}`;
-                } else {
-                    // trc20
-                    return `https://tronscan.io/#/token20/${contract}`;
-                }
-
-            case "binance":
-                return `https://explorer.binance.org/asset/${contract}`;
-
-            case "smartchain":
-                return `https://bscscan.com/token/${contract}`;
-
-            case "wanchain":
-                return `https://www.wanscan.org/token/${contract}`;
-        }
-    }
-    return "";
-}
-
-function isAssetInfoOK(chain: string, address: string, errors: string[], warnings: string[]): void {
+function isAssetInfoOK(chain: string, address: string): [boolean, string] {
     const assetInfoPath = getChainAssetInfoPath(chain, address);
     if (!isPathExistsSync(assetInfoPath)) {
-        // Info file doesn't exist, no need to check
-        return;
+        return [true, `Info file doesn't exist, no need to check`]
     }
 
     if (!isValidJSON(assetInfoPath)) {
         console.log(`JSON at path: '${assetInfoPath}' is invalid`);
-        errors.push(`JSON at path: '${assetInfoPath}' is invalid`);
-        return;
+        return [false, `JSON at path: '${assetInfoPath}' is invalid`];
     }
 
-    const info = JSON.parse(readFileSync(assetInfoPath));
-    const [hasAllKeys, msg] = isAssetInfoHasAllKeys(info, assetInfoPath);
+    const [hasAllKeys, msg] = isAssetInfoHasAllKeys(assetInfoPath);
     if (!hasAllKeys) {
         console.log(msg);
-        errors.push(msg);
+        return [false, msg];
     }
 
-    const hasExplorer = Object.prototype.hasOwnProperty.call(info, 'explorer');
-    if (!hasExplorer) {
-        errors.push("Missing explorer key");
-    } else {
-        const explorerActual = info["explorer"];
-        const explorerExpected = explorerUrl(chain, address);
-        if (explorerActual != explorerExpected) {
-            warnings.push(`Expected explorerUrl ${explorerExpected} instead of ${explorerActual}`);
-        }
-    }
+    return [true, ''];
 }
 
 export class AssetInfos implements ActionInterface {
@@ -107,13 +67,15 @@ export class AssetInfos implements ActionInterface {
                         getName: () => { return `Info.json's for chain ${chain}`;},
                         check: async () => {
                             const errors: string[] = [];
-                            const warnings: string[] = [];
                             const assetsList = getChainAssetsList(chain);
                             //console.log(`     Found ${assetsList.length} assets for chain ${chain}`);
                             await bluebird.each(assetsList, async (address) => {
-                                isAssetInfoOK(chain, address, errors, warnings);
+                                const [isInfoOK, infoMsg] = isAssetInfoOK(chain, address);
+                                if (!isInfoOK) {
+                                    errors.push(infoMsg);
+                                }
                             });
-                            return [errors, warnings];
+                            return [errors, []];
                         }    
                     }
                 );
