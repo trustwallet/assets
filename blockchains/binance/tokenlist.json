@@ -1,0 +1,1980 @@
+{
+    "name": "Trust Wallet: BNB",
+    "logoURI": "https://trustwallet.com/assets/images/favicon.png",
+    "timestamp": "2020-10-03T12:37:57.000+00:00",
+    "tokens": [
+        {
+            "asset": "c714",
+            "address": "BNB",
+            "name": "Binance Chain Native Token",
+            "symbol": "BNB",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/BNB/logo.png",
+            "pairs": [
+                {
+                    "base": "c714_tAERGO-46B",
+                    "lotSize": "100000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tANKR-E97",
+                    "lotSize": "1000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tARN-71B",
+                    "lotSize": "1000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tARPA-575",
+                    "lotSize": "1000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tART-3C9",
+                    "lotSize": "1000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tATP-38C",
+                    "lotSize": "100000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tAVA-645",
+                    "lotSize": "10000000",
+                    "tickSize": "10"
+                },
+                {
+                    "base": "c714_tAWC-986",
+                    "lotSize": "10000000",
+                    "tickSize": "10"
+                },
+                {
+                    "base": "c714_tAXPR-777",
+                    "lotSize": "1000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tBCH-1FD",
+                    "lotSize": "100000",
+                    "tickSize": "1000"
+                },
+                {
+                    "base": "c714_tBCPT-95A",
+                    "lotSize": "1000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tBEAR-14C",
+                    "lotSize": "10000000",
+                    "tickSize": "10"
+                },
+                {
+                    "base": "c714_tBET-844",
+                    "lotSize": "100000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tBKBT-3A6",
+                    "lotSize": "10000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tBLINK-9C6",
+                    "lotSize": "100000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tBOLT-4C6",
+                    "lotSize": "1000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tBST2-2F2",
+                    "lotSize": "100000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tBTTB-D31",
+                    "lotSize": "10000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tBULL-BE4",
+                    "lotSize": "1000",
+                    "tickSize": "100000"
+                },
+                {
+                    "base": "c714_tBZNT-464",
+                    "lotSize": "1000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tCAN-677",
+                    "lotSize": "1000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tCAS-167",
+                    "lotSize": "1000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tCBIX-3C9",
+                    "lotSize": "1000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tCBM-4B2",
+                    "lotSize": "1000000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tCHZ-ECD",
+                    "lotSize": "1000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tCNNS-E16",
+                    "lotSize": "1000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tCOS-2E4",
+                    "lotSize": "1000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tCOTI-CBB",
+                    "lotSize": "100000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tCOVA-218",
+                    "lotSize": "10000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tCRPT-8C9",
+                    "lotSize": "100000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tCSM-734",
+                    "lotSize": "100000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tDEFI-FA5",
+                    "lotSize": "10000000",
+                    "tickSize": "10"
+                },
+                {
+                    "base": "c714_tDOS-120",
+                    "lotSize": "100000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tDREP-7D2",
+                    "lotSize": "10000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tDUSK-45E",
+                    "lotSize": "100000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tEBST-783",
+                    "lotSize": "10000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tENTRP-C8D",
+                    "lotSize": "100000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tEOSBEAR-721",
+                    "lotSize": "10000000",
+                    "tickSize": "10"
+                },
+                {
+                    "base": "c714_tEOSBULL-F0D",
+                    "lotSize": "10000000",
+                    "tickSize": "10"
+                },
+                {
+                    "base": "c714_tEQL-586",
+                    "lotSize": "10000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tERD-D06",
+                    "lotSize": "1000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tETHBEAR-B2B",
+                    "lotSize": "100000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tETHBULL-D33",
+                    "lotSize": "10000",
+                    "tickSize": "10000"
+                },
+                {
+                    "base": "c714_tEVT-49B",
+                    "lotSize": "10000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tFRM-DE7",
+                    "lotSize": "100000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tFSN-E14",
+                    "lotSize": "10000000",
+                    "tickSize": "10"
+                },
+                {
+                    "base": "c714_tFTM-A64",
+                    "lotSize": "100000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tGIV-94E",
+                    "lotSize": "1000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tGMAT-FC8",
+                    "lotSize": "10000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tGTEX-71B",
+                    "lotSize": "100000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tGTO-908",
+                    "lotSize": "1000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tHNST-3C9",
+                    "lotSize": "1000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tHYN-F21",
+                    "lotSize": "100000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tIRIS-D88",
+                    "lotSize": "100000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tKAT-7BB",
+                    "lotSize": "10000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tLBA-340",
+                    "lotSize": "100000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tLIT-099",
+                    "lotSize": "100000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tLOKI-6A9",
+                    "lotSize": "10000000",
+                    "tickSize": "10"
+                },
+                {
+                    "base": "c714_tLTC-F07",
+                    "lotSize": "100000",
+                    "tickSize": "1000"
+                },
+                {
+                    "base": "c714_tLTO-BDF",
+                    "lotSize": "100000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tMATIC-84A",
+                    "lotSize": "1000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tMDAB-D42",
+                    "lotSize": "10000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tMEETONE-031",
+                    "lotSize": "10000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tMITH-C76",
+                    "lotSize": "1000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tMITX-CAA",
+                    "lotSize": "1000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tMTV-4C6",
+                    "lotSize": "10000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tMTXLT-286",
+                    "lotSize": "100000",
+                    "tickSize": "1000"
+                },
+                {
+                    "base": "c714_tMVL-7B0",
+                    "lotSize": "10000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tMZK-2C7",
+                    "lotSize": "1000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tNEW-09E",
+                    "lotSize": "10000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tNEXO-A84",
+                    "lotSize": "100000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tNOIZB-878",
+                    "lotSize": "100000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tNOW-E68",
+                    "lotSize": "1000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tNPXB-1E8",
+                    "lotSize": "100000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tNPXSXEM-89C",
+                    "lotSize": "100000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tONE-5F9",
+                    "lotSize": "1000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tONT-33D",
+                    "lotSize": "10000000",
+                    "tickSize": "10"
+                },
+                {
+                    "base": "c714_tPHB-2DF",
+                    "lotSize": "1000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tPHV-4A1",
+                    "lotSize": "10000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tPIBNB-43C",
+                    "lotSize": "1000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tPLG-D8D",
+                    "lotSize": "1000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tPVT-554",
+                    "lotSize": "100000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tPYN-C37",
+                    "lotSize": "1000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tQBX-38C",
+                    "lotSize": "1000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tRAVEN-F66",
+                    "lotSize": "10000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tRUNE-B1A",
+                    "lotSize": "10000000",
+                    "tickSize": "10"
+                },
+                {
+                    "base": "c714_tSHR-DB6",
+                    "lotSize": "1000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tSLV-986",
+                    "lotSize": "1000000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tSPNDB-916",
+                    "lotSize": "10000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tSTYL-65B",
+                    "lotSize": "1000000",
+                    "tickSize": "100"
+                },
+                {
+                    "base": "c714_tSWIPE.B-DC0",
+                    "lotSize": "10000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tTM2-0C4",
+                    "lotSize": "100000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tTOMOB-4BC",
+                    "lotSize": "10000000",
+                    "tickSize": "10"
+                },
+                {
+                    "base": "c714_tTOP-491",
+                    "lotSize": "1000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tTROY-9B8",
+                    "lotSize": "1000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tTRUE-D84",
+                    "lotSize": "10000000",
+                    "tickSize": "10"
+                },
+                {
+                    "base": "c714_tTRXB-2E6",
+                    "lotSize": "1000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tTWT-8C2",
+                    "lotSize": "100000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tUGAS-B0C",
+                    "lotSize": "1000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tUND-EBC",
+                    "lotSize": "100000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tUPX-F3E",
+                    "lotSize": "10000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tVDX-A17",
+                    "lotSize": "10000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tVIDT-F53",
+                    "lotSize": "10000000",
+                    "tickSize": "10"
+                },
+                {
+                    "base": "c714_tVOTE-FD4",
+                    "lotSize": "10000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tWICC-01D",
+                    "lotSize": "10000000",
+                    "tickSize": "10"
+                },
+                {
+                    "base": "c714_tWINB-41F",
+                    "lotSize": "100000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tWISH-2D5",
+                    "lotSize": "100000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tWRX-ED1",
+                    "lotSize": "100000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tXBASE-CD2",
+                    "lotSize": "10000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tXRP-BF2",
+                    "lotSize": "100000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tXRPBEAR-00B",
+                    "lotSize": "100000",
+                    "tickSize": "1000"
+                },
+                {
+                    "base": "c714_tXRPBULL-E7C",
+                    "lotSize": "1000000",
+                    "tickSize": "100"
+                },
+                {
+                    "base": "c714_tZEBI-84F",
+                    "lotSize": "10000000000",
+                    "tickSize": "1"
+                }
+            ]
+        },
+        {
+            "asset": "c714_tBUSD-BD1",
+            "address": "BUSD-BD1",
+            "name": "Binance USD",
+            "symbol": "BUSD-BD1",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/BUSD-BD1/logo.png",
+            "pairs": [
+                {
+                    "base": "c714_tADA-9F4",
+                    "lotSize": "100000000",
+                    "tickSize": "10"
+                },
+                {
+                    "base": "c714_tATOM-596",
+                    "lotSize": "1000000",
+                    "tickSize": "1000"
+                },
+                {
+                    "base": "c714_tAVA-645",
+                    "lotSize": "10000000",
+                    "tickSize": "100"
+                },
+                {
+                    "base": "c714_tBAND-34B",
+                    "lotSize": "1000000",
+                    "tickSize": "1000"
+                },
+                {
+                    "base": "c714_tBCH-1FD",
+                    "lotSize": "100000",
+                    "tickSize": "100000"
+                },
+                {
+                    "base": "c714",
+                    "lotSize": "100000",
+                    "tickSize": "10000"
+                },
+                {
+                    "base": "c714_tBTCB-1DE",
+                    "lotSize": "1000",
+                    "tickSize": "10000000"
+                },
+                {
+                    "base": "c714_tDOT-64C",
+                    "lotSize": "1000000",
+                    "tickSize": "1000"
+                },
+                {
+                    "base": "c714_tEOS-CDD",
+                    "lotSize": "10000000",
+                    "tickSize": "1000"
+                },
+                {
+                    "base": "c714_tETH-1C9",
+                    "lotSize": "10000",
+                    "tickSize": "100000"
+                },
+                {
+                    "base": "c714_tFRM-DE7",
+                    "lotSize": "100000000",
+                    "tickSize": "10"
+                },
+                {
+                    "base": "c714_tLTC-F07",
+                    "lotSize": "100000",
+                    "tickSize": "10000"
+                },
+                {
+                    "base": "c714_tONT-33D",
+                    "lotSize": "10000000",
+                    "tickSize": "100"
+                },
+                {
+                    "base": "c714_tRUNE-B1A",
+                    "lotSize": "10000000",
+                    "tickSize": "100"
+                },
+                {
+                    "base": "c714_tSHR-DB6",
+                    "lotSize": "1000000000",
+                    "tickSize": "10"
+                },
+                {
+                    "base": "c714_tSWINGBY-888",
+                    "lotSize": "100000000",
+                    "tickSize": "10"
+                },
+                {
+                    "base": "c714_tXRP-BF2",
+                    "lotSize": "100000000",
+                    "tickSize": "100"
+                },
+                {
+                    "base": "c714_tXTZ-F7A",
+                    "lotSize": "10000000",
+                    "tickSize": "1000"
+                },
+                {
+                    "base": "c714_tYFII-061",
+                    "lotSize": "1000",
+                    "tickSize": "1000000"
+                },
+                {
+                    "base": "c714_tZEC-93E",
+                    "lotSize": "100000",
+                    "tickSize": "10000"
+                }
+            ]
+        },
+        {
+            "asset": "c714_tUSDSB-1AC",
+            "address": "USDSB-1AC",
+            "name": "USDS",
+            "symbol": "USDSB-1AC",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/USDSB-1AC/logo.png",
+            "pairs": [
+                {
+                    "base": "c714",
+                    "lotSize": "100000",
+                    "tickSize": "10000"
+                },
+                {
+                    "base": "c714_tBTCB-1DE",
+                    "lotSize": "1000",
+                    "tickSize": "10000000"
+                },
+                {
+                    "base": "c714_tCOS-2E4",
+                    "lotSize": "1000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tONE-5F9",
+                    "lotSize": "1000000000",
+                    "tickSize": "10"
+                },
+                {
+                    "base": "c714_tUND-EBC",
+                    "lotSize": "100000000",
+                    "tickSize": "10"
+                }
+            ]
+        },
+        {
+            "asset": "c714_tBTCB-1DE",
+            "address": "BTCB-1DE",
+            "name": "Bitcoin BEP2",
+            "symbol": "BTCB-1DE",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/BTCB-1DE/logo.png",
+            "pairs": [
+                {
+                    "base": "c714_tANKR-E97",
+                    "lotSize": "1000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714",
+                    "lotSize": "100000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tBOLT-4C6",
+                    "lotSize": "1000000000",
+                    "tickSize": "1"
+                },
+                {
+                    "base": "c714_tCOS-2E4",
+                    "lotSize": "1000000000",
+                    "tickSize": "1"
+                }
+            ]
+        },
+        {
+            "asset": "c714_tTUSDB-888",
+            "address": "TUSDB-888",
+            "name": "TrueUSD",
+            "symbol": "TUSDB-888",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/TUSDB-888/logo.png",
+            "pairs": [
+                {
+                    "base": "c714",
+                    "lotSize": "100000",
+                    "tickSize": "10000"
+                },
+                {
+                    "base": "c714_tBTCB-1DE",
+                    "lotSize": "1000",
+                    "tickSize": "10000000"
+                },
+                {
+                    "base": "c714_tLTC-F07",
+                    "lotSize": "100000",
+                    "tickSize": "10000"
+                }
+            ]
+        },
+        {
+            "asset": "c714_tIDRTB-178",
+            "address": "IDRTB-178",
+            "name": "Rupiah Token",
+            "symbol": "IDRTB-178",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/IDRTB-178/logo.png",
+            "pairs": [
+                {
+                    "base": "c714",
+                    "lotSize": "100000",
+                    "tickSize": "100000000"
+                },
+                {
+                    "base": "c714_tBUSD-BD1",
+                    "lotSize": "10000000",
+                    "tickSize": "10000000"
+                }
+            ]
+        },
+        {
+            "asset": "c714_tETH-1C9",
+            "address": "ETH-1C9",
+            "name": "ETH BEP2",
+            "symbol": "ETH-1C9",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/ETH-1C9/logo.png",
+            "pairs": [
+                {
+                    "base": "c714",
+                    "lotSize": "100000",
+                    "tickSize": "10"
+                }
+            ]
+        },
+        {
+            "asset": "c714_tTAUDB-888",
+            "address": "TAUDB-888",
+            "name": "TrueAUD",
+            "symbol": "TAUDB-888",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/TAUDB-888/logo.png",
+            "pairs": [
+                {
+                    "base": "c714",
+                    "lotSize": "100000",
+                    "tickSize": "10000"
+                }
+            ]
+        },
+        {
+            "asset": "c714_tTHKDB-888",
+            "address": "THKDB-888",
+            "name": "TrueHKD",
+            "symbol": "THKDB-888",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/THKDB-888/logo.png",
+            "pairs": [
+                {
+                    "base": "c714",
+                    "lotSize": "100000",
+                    "tickSize": "1000"
+                }
+            ]
+        },
+        {
+            "asset": "c714_tUSDT-6D8",
+            "address": "USDT-6D8",
+            "name": "USDTBEP2",
+            "symbol": "USDT-6D8",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/USDT-6D8/logo.png",
+            "pairs": [
+                {
+                    "base": "c714",
+                    "lotSize": "100000",
+                    "tickSize": "10000"
+                }
+            ]
+        },
+        {
+            "asset": "c714_tDAI-D75",
+            "address": "DAI-D75",
+            "name": "DaiBEP2",
+            "symbol": "DAI-D75",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/DAI-D75/logo.png",
+            "pairs": [
+                {
+                    "base": "c714_tBUSD-BD1",
+                    "lotSize": "10000000",
+                    "tickSize": "1000"
+                }
+            ]
+        },
+        {
+            "asset": "c714_tADA-9F4",
+            "address": "ADA-9F4",
+            "name": "CardanoBEP2",
+            "symbol": "ADA-9F4",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/ADA-9F4/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tAERGO-46B",
+            "address": "AERGO-46B",
+            "name": "Aergo",
+            "symbol": "AERGO-46B",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/AERGO-46B/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tANKR-E97",
+            "address": "ANKR-E97",
+            "name": "ANKR",
+            "symbol": "ANKR-E97",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/ANKR-E97/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tARN-71B",
+            "address": "ARN-71B",
+            "name": "Aeron",
+            "symbol": "ARN-71B",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/ARN-71B/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tARPA-575",
+            "address": "ARPA-575",
+            "name": "ARPA",
+            "symbol": "ARPA-575",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/ARPA-575/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tART-3C9",
+            "address": "ART-3C9",
+            "name": "Maecenas ART Token",
+            "symbol": "ART-3C9",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/ART-3C9/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tATOM-596",
+            "address": "ATOM-596",
+            "name": "ATOMBEP2",
+            "symbol": "ATOM-596",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/ATOM-596/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tATP-38C",
+            "address": "ATP-38C",
+            "name": "Atlas Protocol",
+            "symbol": "ATP-38C",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/ATP-38C/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tAVA-645",
+            "address": "AVA-645",
+            "name": "Travala.com Token",
+            "symbol": "AVA-645",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/AVA-645/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tAWC-986",
+            "address": "AWC-986",
+            "name": "Atomic Wallet Token",
+            "symbol": "AWC-986",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/AWC-986/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tAXPR-777",
+            "address": "AXPR-777",
+            "name": "AXPR.B",
+            "symbol": "AXPR-777",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/AXPR-777/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tBAND-34B",
+            "address": "BAND-34B",
+            "name": "BandProtocolBEP2",
+            "symbol": "BAND-34B",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/BAND-34B/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tBCH-1FD",
+            "address": "BCH-1FD",
+            "name": "BCH BEP2",
+            "symbol": "BCH-1FD",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/BCH-1FD/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tBCPT-95A",
+            "address": "BCPT-95A",
+            "name": "Blockmason Credit Protocol",
+            "symbol": "BCPT-95A",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/BCPT-95A/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tBEAR-14C",
+            "address": "BEAR-14C",
+            "name": "3X Short Bitcoin Token",
+            "symbol": "BEAR-14C",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/BEAR-14C/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tBET-844",
+            "address": "BET-844",
+            "name": "EOSBet Token",
+            "symbol": "BET-844",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/BET-844/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tBKBT-3A6",
+            "address": "BKBT-3A6",
+            "name": "Bitwires Token",
+            "symbol": "BKBT-3A6",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/BKBT-3A6/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tBLINK-9C6",
+            "address": "BLINK-9C6",
+            "name": "Blockmason Link",
+            "symbol": "BLINK-9C6",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/BLINK-9C6/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tBOLT-4C6",
+            "address": "BOLT-4C6",
+            "name": "BOLT Token",
+            "symbol": "BOLT-4C6",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/BOLT-4C6/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tBST2-2F2",
+            "address": "BST2-2F2",
+            "name": "BOOSTO",
+            "symbol": "BST2-2F2",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/BST2-2F2/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tBTTB-D31",
+            "address": "BTTB-D31",
+            "name": "BTTB",
+            "symbol": "BTTB-D31",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/BTTB-D31/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tBULL-BE4",
+            "address": "BULL-BE4",
+            "name": "3x Long Bitcoin Token",
+            "symbol": "BULL-BE4",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/BULL-BE4/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tBZNT-464",
+            "address": "BZNT-464",
+            "name": "Bezant Token",
+            "symbol": "BZNT-464",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/BZNT-464/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tCAN-677",
+            "address": "CAN-677",
+            "name": "CanYaCoin",
+            "symbol": "CAN-677",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/CAN-677/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tCAS-167",
+            "address": "CAS-167",
+            "name": "CASHAA",
+            "symbol": "CAS-167",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/CAS-167/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tCBIX-3C9",
+            "address": "CBIX-3C9",
+            "name": "Cubiex",
+            "symbol": "CBIX-3C9",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/CBIX-3C9/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tCBM-4B2",
+            "address": "CBM-4B2",
+            "name": "CryptoBonusMiles",
+            "symbol": "CBM-4B2",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/CBM-4B2/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tCHZ-ECD",
+            "address": "CHZ-ECD",
+            "name": "Chiliz",
+            "symbol": "CHZ-ECD",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/CHZ-ECD/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tCNNS-E16",
+            "address": "CNNS-E16",
+            "name": "Crypto Neo-value Neural System",
+            "symbol": "CNNS-E16",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/CNNS-E16/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tCOS-2E4",
+            "address": "COS-2E4",
+            "name": "Contentos",
+            "symbol": "COS-2E4",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/COS-2E4/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tCOTI-CBB",
+            "address": "COTI-CBB",
+            "name": "COTI",
+            "symbol": "COTI-CBB",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/COTI-CBB/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tCOVA-218",
+            "address": "COVA-218",
+            "name": "Covalent Token",
+            "symbol": "COVA-218",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/COVA-218/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tCRPT-8C9",
+            "address": "CRPT-8C9",
+            "name": "Crypterium Token",
+            "symbol": "CRPT-8C9",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/CRPT-8C9/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tCSM-734",
+            "address": "CSM-734",
+            "name": "“Consentium”",
+            "symbol": "CSM-734",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/CSM-734/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tDEFI-FA5",
+            "address": "DEFI-FA5",
+            "name": "DeFi Token",
+            "symbol": "DEFI-FA5",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/DEFI-FA5/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tDOS-120",
+            "address": "DOS-120",
+            "name": "DOS Network Token",
+            "symbol": "DOS-120",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/DOS-120/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tDOT-64C",
+            "address": "DOT-64C",
+            "name": "PolkadotBEP2",
+            "symbol": "DOT-64C",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/DOT-64C/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tDREP-7D2",
+            "address": "DREP-7D2",
+            "name": "DREP",
+            "symbol": "DREP-7D2",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/DREP-7D2/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tDUSK-45E",
+            "address": "DUSK-45E",
+            "name": "Dusk Network",
+            "symbol": "DUSK-45E",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/DUSK-45E/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tEBST-783",
+            "address": "EBST-783",
+            "name": "eBoost",
+            "symbol": "EBST-783",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/EBST-783/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tENTRP-C8D",
+            "address": "ENTRP-C8D",
+            "name": "Hut34 Entropy",
+            "symbol": "ENTRP-C8D",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/ENTRP-C8D/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tEOS-CDD",
+            "address": "EOS-CDD",
+            "name": "EOS BEP2",
+            "symbol": "EOS-CDD",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/EOS-CDD/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tEOSBEAR-721",
+            "address": "EOSBEAR-721",
+            "name": "3X Short EOS Token",
+            "symbol": "EOSBEAR-721",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/EOSBEAR-721/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tEOSBULL-F0D",
+            "address": "EOSBULL-F0D",
+            "name": "3X Long EOS Token",
+            "symbol": "EOSBULL-F0D",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/EOSBULL-F0D/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tEQL-586",
+            "address": "EQL-586",
+            "name": "EQUAL",
+            "symbol": "EQL-586",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/EQL-586/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tERD-D06",
+            "address": "ERD-D06",
+            "name": "Elrond",
+            "symbol": "ERD-D06",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/ERD-D06/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tETHBEAR-B2B",
+            "address": "ETHBEAR-B2B",
+            "name": "3X Short Ethereum Token",
+            "symbol": "ETHBEAR-B2B",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/ETHBEAR-B2B/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tETHBULL-D33",
+            "address": "ETHBULL-D33",
+            "name": "3X Long Ethereum Token",
+            "symbol": "ETHBULL-D33",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/ETHBULL-D33/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tEVT-49B",
+            "address": "EVT-49B",
+            "name": "everiToken",
+            "symbol": "EVT-49B",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/EVT-49B/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tFRM-DE7",
+            "address": "FRM-DE7",
+            "name": "Ferrum Network Token",
+            "symbol": "FRM-DE7",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/FRM-DE7/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tFSN-E14",
+            "address": "FSN-E14",
+            "name": "Fusion",
+            "symbol": "FSN-E14",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/FSN-E14/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tFTM-A64",
+            "address": "FTM-A64",
+            "name": "Fantom",
+            "symbol": "FTM-A64",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/FTM-A64/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tGIV-94E",
+            "address": "GIV-94E",
+            "name": "Givly Coin",
+            "symbol": "GIV-94E",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/GIV-94E/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tGMAT-FC8",
+            "address": "GMAT-FC8",
+            "name": "GoWithMi",
+            "symbol": "GMAT-FC8",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/GMAT-FC8/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tGTEX-71B",
+            "address": "GTEX-71B",
+            "name": "GTEX",
+            "symbol": "GTEX-71B",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/GTEX-71B/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tGTO-908",
+            "address": "GTO-908",
+            "name": "Gifto",
+            "symbol": "GTO-908",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/GTO-908/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tHNST-3C9",
+            "address": "HNST-3C9",
+            "name": "Honest",
+            "symbol": "HNST-3C9",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/HNST-3C9/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tHYN-F21",
+            "address": "HYN-F21",
+            "name": "Hyperion Token",
+            "symbol": "HYN-F21",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/HYN-F21/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tIRIS-D88",
+            "address": "IRIS-D88",
+            "name": "IRIS Network",
+            "symbol": "IRIS-D88",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/IRIS-D88/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tKAT-7BB",
+            "address": "KAT-7BB",
+            "name": "Kambria Token",
+            "symbol": "KAT-7BB",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/KAT-7BB/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tLBA-340",
+            "address": "LBA-340",
+            "name": "Lend-Borrow-Asset",
+            "symbol": "LBA-340",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/LBA-340/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tLIT-099",
+            "address": "LIT-099",
+            "name": "LITION",
+            "symbol": "LIT-099",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/LIT-099/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tLOKI-6A9",
+            "address": "LOKI-6A9",
+            "name": "Loki",
+            "symbol": "LOKI-6A9",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/LOKI-6A9/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tLTC-F07",
+            "address": "LTC-F07",
+            "name": "LTC BEP2",
+            "symbol": "LTC-F07",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/LTC-F07/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tLTO-BDF",
+            "address": "LTO-BDF",
+            "name": "LTO Network",
+            "symbol": "LTO-BDF",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/LTO-BDF/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tMATIC-84A",
+            "address": "MATIC-84A",
+            "name": "Matic Token",
+            "symbol": "MATIC-84A",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/MATIC-84A/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tMDAB-D42",
+            "address": "MDAB-D42",
+            "name": "MDAB",
+            "symbol": "MDAB-D42",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/MDAB-D42/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tMEETONE-031",
+            "address": "MEETONE-031",
+            "name": "MEET.ONE",
+            "symbol": "MEETONE-031",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/MEETONE-031/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tMITH-C76",
+            "address": "MITH-C76",
+            "name": "Mithril",
+            "symbol": "MITH-C76",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/MITH-C76/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tMITX-CAA",
+            "address": "MITX-CAA",
+            "name": "Morpheus Infrastructure Token",
+            "symbol": "MITX-CAA",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/MITX-CAA/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tMTV-4C6",
+            "address": "MTV-4C6",
+            "name": "MultiVAC",
+            "symbol": "MTV-4C6",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/MTV-4C6/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tMTXLT-286",
+            "address": "MTXLT-286",
+            "name": "Tixl",
+            "symbol": "MTXLT-286",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/MTXLT-286/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tMVL-7B0",
+            "address": "MVL-7B0",
+            "name": "Mass Vehicle Ledger",
+            "symbol": "MVL-7B0",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/MVL-7B0/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tMZK-2C7",
+            "address": "MZK-2C7",
+            "name": "Muzika",
+            "symbol": "MZK-2C7",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/MZK-2C7/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tNEW-09E",
+            "address": "NEW-09E",
+            "name": "NEWTON",
+            "symbol": "NEW-09E",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/NEW-09E/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tNEXO-A84",
+            "address": "NEXO-A84",
+            "name": "Nexo",
+            "symbol": "NEXO-A84",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/NEXO-A84/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tNOIZB-878",
+            "address": "NOIZB-878",
+            "name": "NOIZ Token",
+            "symbol": "NOIZB-878",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/NOIZB-878/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tNOW-E68",
+            "address": "NOW-E68",
+            "name": "NOW Token",
+            "symbol": "NOW-E68",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/NOW-E68/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tNPXB-1E8",
+            "address": "NPXB-1E8",
+            "name": "NPX Binance token",
+            "symbol": "NPXB-1E8",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/NPXB-1E8/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tNPXSXEM-89C",
+            "address": "NPXSXEM-89C",
+            "name": "Pundi X NEM",
+            "symbol": "NPXSXEM-89C",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/NPXSXEM-89C/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tONE-5F9",
+            "address": "ONE-5F9",
+            "name": "Harmony.One",
+            "symbol": "ONE-5F9",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/ONE-5F9/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tONT-33D",
+            "address": "ONT-33D",
+            "name": "ONTBEP2",
+            "symbol": "ONT-33D",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/ONT-33D/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tPHB-2DF",
+            "address": "PHB-2DF",
+            "name": "Red Pulse Phoenix Binance",
+            "symbol": "PHB-2DF",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/PHB-2DF/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tPHV-4A1",
+            "address": "PHV-4A1",
+            "name": "PathHive Network",
+            "symbol": "PHV-4A1",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/PHV-4A1/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tPIBNB-43C",
+            "address": "PIBNB-43C",
+            "name": "PCHAIN Token",
+            "symbol": "PIBNB-43C",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/PIBNB-43C/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tPLG-D8D",
+            "address": "PLG-D8D",
+            "name": "Pledge Coin",
+            "symbol": "PLG-D8D",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/PLG-D8D/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tPVT-554",
+            "address": "PVT-554",
+            "name": "Pivot Token",
+            "symbol": "PVT-554",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/PVT-554/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tPYN-C37",
+            "address": "PYN-C37",
+            "name": "paycentos",
+            "symbol": "PYN-C37",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/PYN-C37/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tQBX-38C",
+            "address": "QBX-38C",
+            "name": "qiibeeToken",
+            "symbol": "QBX-38C",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/QBX-38C/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tRAVEN-F66",
+            "address": "RAVEN-F66",
+            "name": "Raven Protocol",
+            "symbol": "RAVEN-F66",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/RAVEN-F66/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tRUNE-B1A",
+            "address": "RUNE-B1A",
+            "name": "Rune",
+            "symbol": "RUNE-B1A",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/RUNE-B1A/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tSHR-DB6",
+            "address": "SHR-DB6",
+            "name": "ShareToken",
+            "symbol": "SHR-DB6",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/SHR-DB6/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tSLV-986",
+            "address": "SLV-986",
+            "name": "Silverway",
+            "symbol": "SLV-986",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/SLV-986/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tSPNDB-916",
+            "address": "SPNDB-916",
+            "name": "Spendcoin",
+            "symbol": "SPNDB-916",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/SPNDB-916/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tSTYL-65B",
+            "address": "STYL-65B",
+            "name": "Yin Lang Music IP Token",
+            "symbol": "STYL-65B",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/STYL-65B/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tSWINGBY-888",
+            "address": "SWINGBY-888",
+            "name": "Swingby Token",
+            "symbol": "SWINGBY-888",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/SWINGBY-888/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tSWIPE.B-DC0",
+            "address": "SWIPE.B-DC0",
+            "name": "SWIPE Token",
+            "symbol": "SWIPE.B-DC0",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/SWIPE.B-DC0/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tTM2-0C4",
+            "address": "TM2-0C4",
+            "name": "Traxia 2",
+            "symbol": "TM2-0C4",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/TM2-0C4/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tTOMOB-4BC",
+            "address": "TOMOB-4BC",
+            "name": "TomoChain",
+            "symbol": "TOMOB-4BC",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/TOMOB-4BC/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tTOP-491",
+            "address": "TOP-491",
+            "name": "TOP Network",
+            "symbol": "TOP-491",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/TOP-491/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tTROY-9B8",
+            "address": "TROY-9B8",
+            "name": "TROY",
+            "symbol": "TROY-9B8",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/TROY-9B8/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tTRUE-D84",
+            "address": "TRUE-D84",
+            "name": "TrueChain",
+            "symbol": "TRUE-D84",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/TRUE-D84/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tTRXB-2E6",
+            "address": "TRXB-2E6",
+            "name": "TRXB",
+            "symbol": "TRXB-2E6",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/TRXB-2E6/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tTWT-8C2",
+            "address": "TWT-8C2",
+            "name": "Trust Wallet",
+            "symbol": "TWT-8C2",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/TWT-8C2/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tUGAS-B0C",
+            "address": "UGAS-B0C",
+            "name": "Ultrain Coin",
+            "symbol": "UGAS-B0C",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/UGAS-B0C/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tUND-EBC",
+            "address": "UND-EBC",
+            "name": "United Network Distribution",
+            "symbol": "UND-EBC",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/UND-EBC/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tUPX-F3E",
+            "address": "UPX-F3E",
+            "name": "UPX",
+            "symbol": "UPX-F3E",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/UPX-F3E/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tVDX-A17",
+            "address": "VDX-A17",
+            "name": "Vodi X",
+            "symbol": "VDX-A17",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/VDX-A17/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tVIDT-F53",
+            "address": "VIDT-F53",
+            "name": "V-ID Token",
+            "symbol": "VIDT-F53",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/VIDT-F53/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tVOTE-FD4",
+            "address": "VOTE-FD4",
+            "name": "Vote",
+            "symbol": "VOTE-FD4",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/VOTE-FD4/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tWICC-01D",
+            "address": "WICC-01D",
+            "name": "WaykiChain Coin",
+            "symbol": "WICC-01D",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/WICC-01D/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tWINB-41F",
+            "address": "WINB-41F",
+            "name": "WINB",
+            "symbol": "WINB-41F",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/WINB-41F/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tWISH-2D5",
+            "address": "WISH-2D5",
+            "name": "MyWish",
+            "symbol": "WISH-2D5",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/WISH-2D5/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tWRX-ED1",
+            "address": "WRX-ED1",
+            "name": "WazirX Token",
+            "symbol": "WRX-ED1",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/WRX-ED1/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tXBASE-CD2",
+            "address": "XBASE-CD2",
+            "name": "Eterbase Coin",
+            "symbol": "XBASE-CD2",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/XBASE-CD2/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tXRP-BF2",
+            "address": "XRP-BF2",
+            "name": "XRP BEP2",
+            "symbol": "XRP-BF2",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/XRP-BF2/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tXRPBEAR-00B",
+            "address": "XRPBEAR-00B",
+            "name": "3X Short XRP Token",
+            "symbol": "XRPBEAR-00B",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/XRPBEAR-00B/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tXRPBULL-E7C",
+            "address": "XRPBULL-E7C",
+            "name": "3X Long XRP Token",
+            "symbol": "XRPBULL-E7C",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/XRPBULL-E7C/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tXTZ-F7A",
+            "address": "XTZ-F7A",
+            "name": "XTZ BEP2",
+            "symbol": "XTZ-F7A",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/XTZ-F7A/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tYFII-061",
+            "address": "YFII-061",
+            "name": "YFIIBEP2",
+            "symbol": "YFII-061",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/YFII-061/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tZEBI-84F",
+            "address": "ZEBI-84F",
+            "name": "ZEBI",
+            "symbol": "ZEBI-84F",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/ZEBI-84F/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tZEC-93E",
+            "address": "ZEC-93E",
+            "name": "ZECBEP2",
+            "symbol": "ZEC-93E",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/ZEC-93E/logo.png",
+            "pairs": []
+        }
+    ],
+    "version": {
+        "major": 0,
+        "minor": 1,
+        "patch": 0
+    }
+}
