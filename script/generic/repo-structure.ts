@@ -28,6 +28,7 @@ export const chainFolderAllowedFiles = [
 ]
 export const chainsPath: string = path.join(process.cwd(), '/blockchains');
 export const getChainPath = (chain: string): string => `${chainsPath}/${chain}`;
+export const allChains = readDirSync(chainsPath);
 export const getChainLogoPath = (chain: string): string => `${getChainPath(chain)}/info/${logoFullName}`;
 export const getChainAssetsPath = (chain: string): string => `${getChainPath(chain)}/assets`;
 export const getChainAssetPath = (chain: string, asset: string): string => `${getChainAssetsPath(chain)}/${asset}`;
