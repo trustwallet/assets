@@ -67,7 +67,7 @@ function explorerUrl(chain: string, contract: string): string {
 }
 
 function explorerUrlAlternatives(chain: string, contract: string, name: string): string[] {
-    let altUrls: string[] = [];
+    const altUrls: string[] = [];
     if (name) {
         const nameNorm = name.toLowerCase().replace(' ', '').replace(')', '').replace('(', '');
         if (chain.toLowerCase() == "ethereum") {
