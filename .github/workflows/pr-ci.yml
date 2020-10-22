@@ -1,11 +1,12 @@
 name: Pull Request CI
 on:
-    push:
-      branches:
-        - '*'
-        - '!master'
-    pull_request:
-      branches: [master]
+  push:
+    branches:
+      - '*'
+      - '!master'
+  pull_request:
+    branches: [master]
+  workflow_dispatch:
 jobs:
   pull_request_ci:
     runs-on: ubuntu-latest
@@ -15,4 +16,9 @@ jobs:
       with:
         node-version: '12.x'
     - uses: bahmutov/npm-install@v1
-    - run: npm t
+    - name: Run check (sanity only)
+      run: npm run check-sanity
+    - name: Run test
+      run: npm t
+    - name: Run lint
+      run: npm run lint

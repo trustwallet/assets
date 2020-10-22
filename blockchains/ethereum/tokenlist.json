@@ -1,0 +1,54 @@
+{
+   "name":"Trust Wallet: Ethereum",
+   "logoURI":"https://trustwallet.com/assets/images/favicon.png",
+   "keywords":[
+      
+   ],
+   "timestamp":"2020-10-03T12:37:57.000+00:00",
+   "tokens":[
+      {
+         "chainId":1,
+         "asset":"c60",
+         "address":"0x6B175474E89094C44Da98b954EedeAC495271d0F",
+         "name":"Ethereum",
+         "symbol":"ETH",
+         "decimals":18,
+         "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/info/logo.png",
+         "pairs":[
+            {
+               "base":"c60_t0x6B175474E89094C44Da98b954EedeAC495271d0F",
+               "pool":"0xA478c2975Ab1Ea89e8196811F51A7B7Ade33eB11"
+            }
+         ]
+      },
+      {
+         "chainId":1,
+         "address":"0x6B175474E89094C44Da98b954EedeAC495271d0F",
+         "name":"Dai Stablecoin",
+         "symbol":"DAI",
+         "decimals":18,
+         "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png",
+         "pairs":[
+         ]
+      },
+      {
+         "chainId":1,
+         "address":"0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+         "name":"USDC",
+         "symbol":"USDC",
+         "decimals":18,
+         "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png",
+         "pairs":[
+            {
+               "base":"c60_t0x6B175474E89094C44Da98b954EedeAC495271d0F",
+               "pool":"0xAE461cA67B15dc8dc81CE7615e0320dA1A9aB8D5"
+            }
+         ]
+      }
+   ],
+   "version":{
+      "major":0,
+      "minor":1,
+      "patch":0
+   }
+}
