@@ -10,11 +10,7 @@ import { assetID } from "./asset";
 import * as config from "../config";
 import { CoinType } from "@trustwallet/wallet-core";
 import { toSatoshis } from "./numbers";
-
-enum TokenType {
-    BEP2 = 'BEP2',
-    ERC20 = 'ERC20'
-}
+import { TokenType } from "./tokentype";
 
 class BinanceMarket {
     base_asset_symbol: string
@@ -161,15 +157,21 @@ async function generateBinanceTokensList(): Promise<[TokenItem]> {
         }
         return assetID(CoinType.binance, symbol)
     }
+    function tokenType(symbol: string): string {
+        if (symbol == BNBSymbol) {
+            return TokenType.COIN
+        }
+        return TokenType.BEP2
+    }
     const list = <[string]>Array.from(pairsList.values())
     return <[TokenItem]>list.map(item => {
         const token = tokensMap[item]
         return new TokenItem (
             asset(token.symbol),
-            TokenType.BEP2,
+            tokenType(token.symbol),
             token.symbol,
             token.name,
-            token.symbol,
+            token.original_symbol,
             decimals,
             logoURI(token.symbol),
             pairsMap[token.symbol] || []
