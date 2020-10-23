@@ -1,24 +1,57 @@
 {
-    "name":"Trust Wallet: Ethereum",
-    "logoURI":"https://trustwallet.com/assets/images/favicon.png",
-    "keywords":[
-       
-    ],
-    "timestamp":"2020-10-03T12:37:57.000+00:00",
-    "tokens":[
-       {
-          "blockchain":"ethereum",
-          "chainId":1,
-          "address":"0x6B175474E89094C44Da98b954EedeAC495271d0F",
-          "name":"Dai Stablecoin",
-          "symbol":"DAI",
-          "decimals":18,
-          "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
-       }
-    ],
-    "version":{
-       "major":0,
-       "minor":1,
-       "patch":0
-    }
- }
+   "name":"Trust Wallet: Ethereum",
+   "logoURI":"https://trustwallet.com/assets/images/favicon.png",
+   "keywords":[
+      
+   ],
+   "timestamp":"2020-10-03T12:37:57.000+00:00",
+   "tokens":[
+      {
+         "chainId":1,
+         "asset":"c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+         "type": "ERC20",
+         "address":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+         "name":"Wrapped Ethereum",
+         "symbol":"WETH",
+         "decimals":18,
+         "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png",
+         "pairs":[
+            {
+               "base":"c60_t0x6B175474E89094C44Da98b954EedeAC495271d0F"
+            }
+         ]
+      },
+      {
+         "chainId":1,
+         "asset":"c60_t0x6B175474E89094C44Da98b954EedeAC495271d0F",
+         "type": "ERC20",
+         "address":"0x6B175474E89094C44Da98b954EedeAC495271d0F",
+         "name":"Dai Stablecoin",
+         "symbol":"DAI",
+         "decimals":18,
+         "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png",
+         "pairs":[
+         ]
+      },
+      {
+         "chainId":1,
+         "asset":"c60_t0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+         "type": "ERC20",
+         "address":"0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+         "name":"USDC",
+         "symbol":"USDC",
+         "decimals":18,
+         "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png",
+         "pairs":[
+            {
+               "base":"c60_t0x6B175474E89094C44Da98b954EedeAC495271d0F"
+            }
+         ]
+      }
+   ],
+   "version":{
+      "major":0,
+      "minor":1,
+      "patch":0
+   }
+}
