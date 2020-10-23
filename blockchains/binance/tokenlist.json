@@ -5,6 +5,7 @@
     "tokens": [
         {
             "asset": "c714",
+            "type": "BEP2",
             "address": "BNB",
             "name": "Binance Chain Native Token",
             "symbol": "BNB",
@@ -78,7 +79,7 @@
                 },
                 {
                     "base": "c714_tBKBT-3A6",
-                    "lotSize": "10000000000",
+                    "lotSize": "100000000000",
                     "tickSize": "1"
                 },
                 {
@@ -178,7 +179,7 @@
                 },
                 {
                     "base": "c714_tDREP-7D2",
-                    "lotSize": "10000000000",
+                    "lotSize": "1000000000",
                     "tickSize": "1"
                 },
                 {
@@ -243,7 +244,7 @@
                 },
                 {
                     "base": "c714_tFTM-A64",
-                    "lotSize": "100000000",
+                    "lotSize": "1000000000",
                     "tickSize": "1"
                 },
                 {
@@ -273,8 +274,8 @@
                 },
                 {
                     "base": "c714_tHYN-F21",
-                    "lotSize": "100000000",
-                    "tickSize": "1"
+                    "lotSize": "10000000",
+                    "tickSize": "10"
                 },
                 {
                     "base": "c714_tIRIS-D88",
@@ -288,7 +289,7 @@
                 },
                 {
                     "base": "c714_tLBA-340",
-                    "lotSize": "100000000",
+                    "lotSize": "1000000000",
                     "tickSize": "1"
                 },
                 {
@@ -368,7 +369,7 @@
                 },
                 {
                     "base": "c714_tNOIZB-878",
-                    "lotSize": "100000000",
+                    "lotSize": "1000000000",
                     "tickSize": "1"
                 },
                 {
@@ -398,7 +399,7 @@
                 },
                 {
                     "base": "c714_tPHB-2DF",
-                    "lotSize": "1000000000",
+                    "lotSize": "10000000000",
                     "tickSize": "1"
                 },
                 {
@@ -553,7 +554,7 @@
                 },
                 {
                     "base": "c714_tXBASE-CD2",
-                    "lotSize": "10000000000",
+                    "lotSize": "1000000000",
                     "tickSize": "1"
                 },
                 {
@@ -580,6 +581,7 @@
         },
         {
             "asset": "c714_tBUSD-BD1",
+            "type": "BEP2",
             "address": "BUSD-BD1",
             "name": "Binance USD",
             "symbol": "BUSD-BD1",
@@ -678,7 +680,7 @@
                 },
                 {
                     "base": "c714_tYFII-061",
-                    "lotSize": "1000",
+                    "lotSize": "10000",
                     "tickSize": "1000000"
                 },
                 {
@@ -690,6 +692,7 @@
         },
         {
             "asset": "c714_tUSDSB-1AC",
+            "type": "BEP2",
             "address": "USDSB-1AC",
             "name": "USDS",
             "symbol": "USDSB-1AC",
@@ -725,6 +728,7 @@
         },
         {
             "asset": "c714_tBTCB-1DE",
+            "type": "BEP2",
             "address": "BTCB-1DE",
             "name": "Bitcoin BEP2",
             "symbol": "BTCB-1DE",
@@ -755,6 +759,7 @@
         },
         {
             "asset": "c714_tTUSDB-888",
+            "type": "BEP2",
             "address": "TUSDB-888",
             "name": "TrueUSD",
             "symbol": "TUSDB-888",
@@ -780,6 +785,7 @@
         },
         {
             "asset": "c714_tIDRTB-178",
+            "type": "BEP2",
             "address": "IDRTB-178",
             "name": "Rupiah Token",
             "symbol": "IDRTB-178",
@@ -800,6 +806,7 @@
         },
         {
             "asset": "c714_tETH-1C9",
+            "type": "BEP2",
             "address": "ETH-1C9",
             "name": "ETH BEP2",
             "symbol": "ETH-1C9",
@@ -815,6 +822,7 @@
         },
         {
             "asset": "c714_tTAUDB-888",
+            "type": "BEP2",
             "address": "TAUDB-888",
             "name": "TrueAUD",
             "symbol": "TAUDB-888",
@@ -830,6 +838,7 @@
         },
         {
             "asset": "c714_tTHKDB-888",
+            "type": "BEP2",
             "address": "THKDB-888",
             "name": "TrueHKD",
             "symbol": "THKDB-888",
@@ -845,6 +854,7 @@
         },
         {
             "asset": "c714_tUSDT-6D8",
+            "type": "BEP2",
             "address": "USDT-6D8",
             "name": "USDTBEP2",
             "symbol": "USDT-6D8",
@@ -860,6 +870,7 @@
         },
         {
             "asset": "c714_tDAI-D75",
+            "type": "BEP2",
             "address": "DAI-D75",
             "name": "DaiBEP2",
             "symbol": "DAI-D75",
@@ -869,12 +880,13 @@
                 {
                     "base": "c714_tBUSD-BD1",
                     "lotSize": "10000000",
-                    "tickSize": "1000"
+                    "tickSize": "100"
                 }
             ]
         },
         {
             "asset": "c714_tADA-9F4",
+            "type": "BEP2",
             "address": "ADA-9F4",
             "name": "CardanoBEP2",
             "symbol": "ADA-9F4",
@@ -884,6 +896,7 @@
         },
         {
             "asset": "c714_tAERGO-46B",
+            "type": "BEP2",
             "address": "AERGO-46B",
             "name": "Aergo",
             "symbol": "AERGO-46B",
@@ -893,6 +906,7 @@
         },
         {
             "asset": "c714_tANKR-E97",
+            "type": "BEP2",
             "address": "ANKR-E97",
             "name": "ANKR",
             "symbol": "ANKR-E97",
@@ -902,6 +916,7 @@
         },
         {
             "asset": "c714_tARN-71B",
+            "type": "BEP2",
             "address": "ARN-71B",
             "name": "Aeron",
             "symbol": "ARN-71B",
@@ -911,6 +926,7 @@
         },
         {
             "asset": "c714_tARPA-575",
+            "type": "BEP2",
             "address": "ARPA-575",
             "name": "ARPA",
             "symbol": "ARPA-575",
@@ -920,6 +936,7 @@
         },
         {
             "asset": "c714_tART-3C9",
+            "type": "BEP2",
             "address": "ART-3C9",
             "name": "Maecenas ART Token",
             "symbol": "ART-3C9",
@@ -929,6 +946,7 @@
         },
         {
             "asset": "c714_tATOM-596",
+            "type": "BEP2",
             "address": "ATOM-596",
             "name": "ATOMBEP2",
             "symbol": "ATOM-596",
@@ -938,6 +956,7 @@
         },
         {
             "asset": "c714_tATP-38C",
+            "type": "BEP2",
             "address": "ATP-38C",
             "name": "Atlas Protocol",
             "symbol": "ATP-38C",
@@ -947,6 +966,7 @@
         },
         {
             "asset": "c714_tAVA-645",
+            "type": "BEP2",
             "address": "AVA-645",
             "name": "Travala.com Token",
             "symbol": "AVA-645",
@@ -956,6 +976,7 @@
         },
         {
             "asset": "c714_tAWC-986",
+            "type": "BEP2",
             "address": "AWC-986",
             "name": "Atomic Wallet Token",
             "symbol": "AWC-986",
@@ -965,6 +986,7 @@
         },
         {
             "asset": "c714_tAXPR-777",
+            "type": "BEP2",
             "address": "AXPR-777",
             "name": "AXPR.B",
             "symbol": "AXPR-777",
@@ -974,6 +996,7 @@
         },
         {
             "asset": "c714_tBAND-34B",
+            "type": "BEP2",
             "address": "BAND-34B",
             "name": "BandProtocolBEP2",
             "symbol": "BAND-34B",
@@ -983,6 +1006,7 @@
         },
         {
             "asset": "c714_tBCH-1FD",
+            "type": "BEP2",
             "address": "BCH-1FD",
             "name": "BCH BEP2",
             "symbol": "BCH-1FD",
@@ -992,6 +1016,7 @@
         },
         {
             "asset": "c714_tBCPT-95A",
+            "type": "BEP2",
             "address": "BCPT-95A",
             "name": "Blockmason Credit Protocol",
             "symbol": "BCPT-95A",
@@ -1001,6 +1026,7 @@
         },
         {
             "asset": "c714_tBEAR-14C",
+            "type": "BEP2",
             "address": "BEAR-14C",
             "name": "3X Short Bitcoin Token",
             "symbol": "BEAR-14C",
@@ -1010,6 +1036,7 @@
         },
         {
             "asset": "c714_tBET-844",
+            "type": "BEP2",
             "address": "BET-844",
             "name": "EOSBet Token",
             "symbol": "BET-844",
@@ -1019,6 +1046,7 @@
         },
         {
             "asset": "c714_tBKBT-3A6",
+            "type": "BEP2",
             "address": "BKBT-3A6",
             "name": "Bitwires Token",
             "symbol": "BKBT-3A6",
@@ -1028,6 +1056,7 @@
         },
         {
             "asset": "c714_tBLINK-9C6",
+            "type": "BEP2",
             "address": "BLINK-9C6",
             "name": "Blockmason Link",
             "symbol": "BLINK-9C6",
@@ -1037,6 +1066,7 @@
         },
         {
             "asset": "c714_tBOLT-4C6",
+            "type": "BEP2",
             "address": "BOLT-4C6",
             "name": "BOLT Token",
             "symbol": "BOLT-4C6",
@@ -1046,6 +1076,7 @@
         },
         {
             "asset": "c714_tBST2-2F2",
+            "type": "BEP2",
             "address": "BST2-2F2",
             "name": "BOOSTO",
             "symbol": "BST2-2F2",
@@ -1055,6 +1086,7 @@
         },
         {
             "asset": "c714_tBTTB-D31",
+            "type": "BEP2",
             "address": "BTTB-D31",
             "name": "BTTB",
             "symbol": "BTTB-D31",
@@ -1064,6 +1096,7 @@
         },
         {
             "asset": "c714_tBULL-BE4",
+            "type": "BEP2",
             "address": "BULL-BE4",
             "name": "3x Long Bitcoin Token",
             "symbol": "BULL-BE4",
@@ -1073,6 +1106,7 @@
         },
         {
             "asset": "c714_tBZNT-464",
+            "type": "BEP2",
             "address": "BZNT-464",
             "name": "Bezant Token",
             "symbol": "BZNT-464",
@@ -1082,6 +1116,7 @@
         },
         {
             "asset": "c714_tCAN-677",
+            "type": "BEP2",
             "address": "CAN-677",
             "name": "CanYaCoin",
             "symbol": "CAN-677",
@@ -1091,6 +1126,7 @@
         },
         {
             "asset": "c714_tCAS-167",
+            "type": "BEP2",
             "address": "CAS-167",
             "name": "CASHAA",
             "symbol": "CAS-167",
@@ -1100,6 +1136,7 @@
         },
         {
             "asset": "c714_tCBIX-3C9",
+            "type": "BEP2",
             "address": "CBIX-3C9",
             "name": "Cubiex",
             "symbol": "CBIX-3C9",
@@ -1109,6 +1146,7 @@
         },
         {
             "asset": "c714_tCBM-4B2",
+            "type": "BEP2",
             "address": "CBM-4B2",
             "name": "CryptoBonusMiles",
             "symbol": "CBM-4B2",
@@ -1118,6 +1156,7 @@
         },
         {
             "asset": "c714_tCHZ-ECD",
+            "type": "BEP2",
             "address": "CHZ-ECD",
             "name": "Chiliz",
             "symbol": "CHZ-ECD",
@@ -1127,6 +1166,7 @@
         },
         {
             "asset": "c714_tCNNS-E16",
+            "type": "BEP2",
             "address": "CNNS-E16",
             "name": "Crypto Neo-value Neural System",
             "symbol": "CNNS-E16",
@@ -1136,6 +1176,7 @@
         },
         {
             "asset": "c714_tCOS-2E4",
+            "type": "BEP2",
             "address": "COS-2E4",
             "name": "Contentos",
             "symbol": "COS-2E4",
@@ -1145,6 +1186,7 @@
         },
         {
             "asset": "c714_tCOTI-CBB",
+            "type": "BEP2",
             "address": "COTI-CBB",
             "name": "COTI",
             "symbol": "COTI-CBB",
@@ -1154,6 +1196,7 @@
         },
         {
             "asset": "c714_tCOVA-218",
+            "type": "BEP2",
             "address": "COVA-218",
             "name": "Covalent Token",
             "symbol": "COVA-218",
@@ -1163,6 +1206,7 @@
         },
         {
             "asset": "c714_tCRPT-8C9",
+            "type": "BEP2",
             "address": "CRPT-8C9",
             "name": "Crypterium Token",
             "symbol": "CRPT-8C9",
@@ -1172,6 +1216,7 @@
         },
         {
             "asset": "c714_tCSM-734",
+            "type": "BEP2",
             "address": "CSM-734",
             "name": "“Consentium”",
             "symbol": "CSM-734",
@@ -1181,6 +1226,7 @@
         },
         {
             "asset": "c714_tDEFI-FA5",
+            "type": "BEP2",
             "address": "DEFI-FA5",
             "name": "DeFi Token",
             "symbol": "DEFI-FA5",
@@ -1190,6 +1236,7 @@
         },
         {
             "asset": "c714_tDOS-120",
+            "type": "BEP2",
             "address": "DOS-120",
             "name": "DOS Network Token",
             "symbol": "DOS-120",
@@ -1199,6 +1246,7 @@
         },
         {
             "asset": "c714_tDOT-64C",
+            "type": "BEP2",
             "address": "DOT-64C",
             "name": "PolkadotBEP2",
             "symbol": "DOT-64C",
@@ -1208,6 +1256,7 @@
         },
         {
             "asset": "c714_tDREP-7D2",
+            "type": "BEP2",
             "address": "DREP-7D2",
             "name": "DREP",
             "symbol": "DREP-7D2",
@@ -1217,6 +1266,7 @@
         },
         {
             "asset": "c714_tDUSK-45E",
+            "type": "BEP2",
             "address": "DUSK-45E",
             "name": "Dusk Network",
             "symbol": "DUSK-45E",
@@ -1226,6 +1276,7 @@
         },
         {
             "asset": "c714_tEBST-783",
+            "type": "BEP2",
             "address": "EBST-783",
             "name": "eBoost",
             "symbol": "EBST-783",
@@ -1235,6 +1286,7 @@
         },
         {
             "asset": "c714_tENTRP-C8D",
+            "type": "BEP2",
             "address": "ENTRP-C8D",
             "name": "Hut34 Entropy",
             "symbol": "ENTRP-C8D",
@@ -1244,6 +1296,7 @@
         },
         {
             "asset": "c714_tEOS-CDD",
+            "type": "BEP2",
             "address": "EOS-CDD",
             "name": "EOS BEP2",
             "symbol": "EOS-CDD",
@@ -1253,6 +1306,7 @@
         },
         {
             "asset": "c714_tEOSBEAR-721",
+            "type": "BEP2",
             "address": "EOSBEAR-721",
             "name": "3X Short EOS Token",
             "symbol": "EOSBEAR-721",
@@ -1262,6 +1316,7 @@
         },
         {
             "asset": "c714_tEOSBULL-F0D",
+            "type": "BEP2",
             "address": "EOSBULL-F0D",
             "name": "3X Long EOS Token",
             "symbol": "EOSBULL-F0D",
@@ -1271,6 +1326,7 @@
         },
         {
             "asset": "c714_tEQL-586",
+            "type": "BEP2",
             "address": "EQL-586",
             "name": "EQUAL",
             "symbol": "EQL-586",
@@ -1280,6 +1336,7 @@
         },
         {
             "asset": "c714_tERD-D06",
+            "type": "BEP2",
             "address": "ERD-D06",
             "name": "Elrond",
             "symbol": "ERD-D06",
@@ -1289,6 +1346,7 @@
         },
         {
             "asset": "c714_tETHBEAR-B2B",
+            "type": "BEP2",
             "address": "ETHBEAR-B2B",
             "name": "3X Short Ethereum Token",
             "symbol": "ETHBEAR-B2B",
@@ -1298,6 +1356,7 @@
         },
         {
             "asset": "c714_tETHBULL-D33",
+            "type": "BEP2",
             "address": "ETHBULL-D33",
             "name": "3X Long Ethereum Token",
             "symbol": "ETHBULL-D33",
@@ -1307,6 +1366,7 @@
         },
         {
             "asset": "c714_tEVT-49B",
+            "type": "BEP2",
             "address": "EVT-49B",
             "name": "everiToken",
             "symbol": "EVT-49B",
@@ -1316,6 +1376,7 @@
         },
         {
             "asset": "c714_tFRM-DE7",
+            "type": "BEP2",
             "address": "FRM-DE7",
             "name": "Ferrum Network Token",
             "symbol": "FRM-DE7",
@@ -1325,6 +1386,7 @@
         },
         {
             "asset": "c714_tFSN-E14",
+            "type": "BEP2",
             "address": "FSN-E14",
             "name": "Fusion",
             "symbol": "FSN-E14",
@@ -1334,6 +1396,7 @@
         },
         {
             "asset": "c714_tFTM-A64",
+            "type": "BEP2",
             "address": "FTM-A64",
             "name": "Fantom",
             "symbol": "FTM-A64",
@@ -1343,6 +1406,7 @@
         },
         {
             "asset": "c714_tGIV-94E",
+            "type": "BEP2",
             "address": "GIV-94E",
             "name": "Givly Coin",
             "symbol": "GIV-94E",
@@ -1352,6 +1416,7 @@
         },
         {
             "asset": "c714_tGMAT-FC8",
+            "type": "BEP2",
             "address": "GMAT-FC8",
             "name": "GoWithMi",
             "symbol": "GMAT-FC8",
@@ -1361,6 +1426,7 @@
         },
         {
             "asset": "c714_tGTEX-71B",
+            "type": "BEP2",
             "address": "GTEX-71B",
             "name": "GTEX",
             "symbol": "GTEX-71B",
@@ -1370,6 +1436,7 @@
         },
         {
             "asset": "c714_tGTO-908",
+            "type": "BEP2",
             "address": "GTO-908",
             "name": "Gifto",
             "symbol": "GTO-908",
@@ -1379,6 +1446,7 @@
         },
         {
             "asset": "c714_tHNST-3C9",
+            "type": "BEP2",
             "address": "HNST-3C9",
             "name": "Honest",
             "symbol": "HNST-3C9",
@@ -1388,6 +1456,7 @@
         },
         {
             "asset": "c714_tHYN-F21",
+            "type": "BEP2",
             "address": "HYN-F21",
             "name": "Hyperion Token",
             "symbol": "HYN-F21",
@@ -1397,6 +1466,7 @@
         },
         {
             "asset": "c714_tIRIS-D88",
+            "type": "BEP2",
             "address": "IRIS-D88",
             "name": "IRIS Network",
             "symbol": "IRIS-D88",
@@ -1406,6 +1476,7 @@
         },
         {
             "asset": "c714_tKAT-7BB",
+            "type": "BEP2",
             "address": "KAT-7BB",
             "name": "Kambria Token",
             "symbol": "KAT-7BB",
@@ -1415,6 +1486,7 @@
         },
         {
             "asset": "c714_tLBA-340",
+            "type": "BEP2",
             "address": "LBA-340",
             "name": "Lend-Borrow-Asset",
             "symbol": "LBA-340",
@@ -1424,6 +1496,7 @@
         },
         {
             "asset": "c714_tLIT-099",
+            "type": "BEP2",
             "address": "LIT-099",
             "name": "LITION",
             "symbol": "LIT-099",
@@ -1433,6 +1506,7 @@
         },
         {
             "asset": "c714_tLOKI-6A9",
+            "type": "BEP2",
             "address": "LOKI-6A9",
             "name": "Loki",
             "symbol": "LOKI-6A9",
@@ -1442,6 +1516,7 @@
         },
         {
             "asset": "c714_tLTC-F07",
+            "type": "BEP2",
             "address": "LTC-F07",
             "name": "LTC BEP2",
             "symbol": "LTC-F07",
@@ -1451,6 +1526,7 @@
         },
         {
             "asset": "c714_tLTO-BDF",
+            "type": "BEP2",
             "address": "LTO-BDF",
             "name": "LTO Network",
             "symbol": "LTO-BDF",
@@ -1460,6 +1536,7 @@
         },
         {
             "asset": "c714_tMATIC-84A",
+            "type": "BEP2",
             "address": "MATIC-84A",
             "name": "Matic Token",
             "symbol": "MATIC-84A",
@@ -1469,6 +1546,7 @@
         },
         {
             "asset": "c714_tMDAB-D42",
+            "type": "BEP2",
             "address": "MDAB-D42",
             "name": "MDAB",
             "symbol": "MDAB-D42",
@@ -1478,6 +1556,7 @@
         },
         {
             "asset": "c714_tMEETONE-031",
+            "type": "BEP2",
             "address": "MEETONE-031",
             "name": "MEET.ONE",
             "symbol": "MEETONE-031",
@@ -1487,6 +1566,7 @@
         },
         {
             "asset": "c714_tMITH-C76",
+            "type": "BEP2",
             "address": "MITH-C76",
             "name": "Mithril",
             "symbol": "MITH-C76",
@@ -1496,6 +1576,7 @@
         },
         {
             "asset": "c714_tMITX-CAA",
+            "type": "BEP2",
             "address": "MITX-CAA",
             "name": "Morpheus Infrastructure Token",
             "symbol": "MITX-CAA",
@@ -1505,6 +1586,7 @@
         },
         {
             "asset": "c714_tMTV-4C6",
+            "type": "BEP2",
             "address": "MTV-4C6",
             "name": "MultiVAC",
             "symbol": "MTV-4C6",
@@ -1514,6 +1596,7 @@
         },
         {
             "asset": "c714_tMTXLT-286",
+            "type": "BEP2",
             "address": "MTXLT-286",
             "name": "Tixl",
             "symbol": "MTXLT-286",
@@ -1523,6 +1606,7 @@
         },
         {
             "asset": "c714_tMVL-7B0",
+            "type": "BEP2",
             "address": "MVL-7B0",
             "name": "Mass Vehicle Ledger",
             "symbol": "MVL-7B0",
@@ -1532,6 +1616,7 @@
         },
         {
             "asset": "c714_tMZK-2C7",
+            "type": "BEP2",
             "address": "MZK-2C7",
             "name": "Muzika",
             "symbol": "MZK-2C7",
@@ -1541,6 +1626,7 @@
         },
         {
             "asset": "c714_tNEW-09E",
+            "type": "BEP2",
             "address": "NEW-09E",
             "name": "NEWTON",
             "symbol": "NEW-09E",
@@ -1550,6 +1636,7 @@
         },
         {
             "asset": "c714_tNEXO-A84",
+            "type": "BEP2",
             "address": "NEXO-A84",
             "name": "Nexo",
             "symbol": "NEXO-A84",
@@ -1559,6 +1646,7 @@
         },
         {
             "asset": "c714_tNOIZB-878",
+            "type": "BEP2",
             "address": "NOIZB-878",
             "name": "NOIZ Token",
             "symbol": "NOIZB-878",
@@ -1568,6 +1656,7 @@
         },
         {
             "asset": "c714_tNOW-E68",
+            "type": "BEP2",
             "address": "NOW-E68",
             "name": "NOW Token",
             "symbol": "NOW-E68",
@@ -1577,6 +1666,7 @@
         },
         {
             "asset": "c714_tNPXB-1E8",
+            "type": "BEP2",
             "address": "NPXB-1E8",
             "name": "NPX Binance token",
             "symbol": "NPXB-1E8",
@@ -1586,6 +1676,7 @@
         },
         {
             "asset": "c714_tNPXSXEM-89C",
+            "type": "BEP2",
             "address": "NPXSXEM-89C",
             "name": "Pundi X NEM",
             "symbol": "NPXSXEM-89C",
@@ -1595,6 +1686,7 @@
         },
         {
             "asset": "c714_tONE-5F9",
+            "type": "BEP2",
             "address": "ONE-5F9",
             "name": "Harmony.One",
             "symbol": "ONE-5F9",
@@ -1604,6 +1696,7 @@
         },
         {
             "asset": "c714_tONT-33D",
+            "type": "BEP2",
             "address": "ONT-33D",
             "name": "ONTBEP2",
             "symbol": "ONT-33D",
@@ -1613,6 +1706,7 @@
         },
         {
             "asset": "c714_tPHB-2DF",
+            "type": "BEP2",
             "address": "PHB-2DF",
             "name": "Red Pulse Phoenix Binance",
             "symbol": "PHB-2DF",
@@ -1622,6 +1716,7 @@
         },
         {
             "asset": "c714_tPHV-4A1",
+            "type": "BEP2",
             "address": "PHV-4A1",
             "name": "PathHive Network",
             "symbol": "PHV-4A1",
@@ -1631,6 +1726,7 @@
         },
         {
             "asset": "c714_tPIBNB-43C",
+            "type": "BEP2",
             "address": "PIBNB-43C",
             "name": "PCHAIN Token",
             "symbol": "PIBNB-43C",
@@ -1640,6 +1736,7 @@
         },
         {
             "asset": "c714_tPLG-D8D",
+            "type": "BEP2",
             "address": "PLG-D8D",
             "name": "Pledge Coin",
             "symbol": "PLG-D8D",
@@ -1649,6 +1746,7 @@
         },
         {
             "asset": "c714_tPVT-554",
+            "type": "BEP2",
             "address": "PVT-554",
             "name": "Pivot Token",
             "symbol": "PVT-554",
@@ -1658,6 +1756,7 @@
         },
         {
             "asset": "c714_tPYN-C37",
+            "type": "BEP2",
             "address": "PYN-C37",
             "name": "paycentos",
             "symbol": "PYN-C37",
@@ -1667,6 +1766,7 @@
         },
         {
             "asset": "c714_tQBX-38C",
+            "type": "BEP2",
             "address": "QBX-38C",
             "name": "qiibeeToken",
             "symbol": "QBX-38C",
@@ -1676,6 +1776,7 @@
         },
         {
             "asset": "c714_tRAVEN-F66",
+            "type": "BEP2",
             "address": "RAVEN-F66",
             "name": "Raven Protocol",
             "symbol": "RAVEN-F66",
@@ -1685,6 +1786,7 @@
         },
         {
             "asset": "c714_tRUNE-B1A",
+            "type": "BEP2",
             "address": "RUNE-B1A",
             "name": "Rune",
             "symbol": "RUNE-B1A",
@@ -1694,6 +1796,7 @@
         },
         {
             "asset": "c714_tSHR-DB6",
+            "type": "BEP2",
             "address": "SHR-DB6",
             "name": "ShareToken",
             "symbol": "SHR-DB6",
@@ -1703,6 +1806,7 @@
         },
         {
             "asset": "c714_tSLV-986",
+            "type": "BEP2",
             "address": "SLV-986",
             "name": "Silverway",
             "symbol": "SLV-986",
@@ -1712,6 +1816,7 @@
         },
         {
             "asset": "c714_tSPNDB-916",
+            "type": "BEP2",
             "address": "SPNDB-916",
             "name": "Spendcoin",
             "symbol": "SPNDB-916",
@@ -1721,6 +1826,7 @@
         },
         {
             "asset": "c714_tSTYL-65B",
+            "type": "BEP2",
             "address": "STYL-65B",
             "name": "Yin Lang Music IP Token",
             "symbol": "STYL-65B",
@@ -1730,6 +1836,7 @@
         },
         {
             "asset": "c714_tSWINGBY-888",
+            "type": "BEP2",
             "address": "SWINGBY-888",
             "name": "Swingby Token",
             "symbol": "SWINGBY-888",
@@ -1739,6 +1846,7 @@
         },
         {
             "asset": "c714_tSWIPE.B-DC0",
+            "type": "BEP2",
             "address": "SWIPE.B-DC0",
             "name": "SWIPE Token",
             "symbol": "SWIPE.B-DC0",
@@ -1748,6 +1856,7 @@
         },
         {
             "asset": "c714_tTM2-0C4",
+            "type": "BEP2",
             "address": "TM2-0C4",
             "name": "Traxia 2",
             "symbol": "TM2-0C4",
@@ -1757,6 +1866,7 @@
         },
         {
             "asset": "c714_tTOMOB-4BC",
+            "type": "BEP2",
             "address": "TOMOB-4BC",
             "name": "TomoChain",
             "symbol": "TOMOB-4BC",
@@ -1766,6 +1876,7 @@
         },
         {
             "asset": "c714_tTOP-491",
+            "type": "BEP2",
             "address": "TOP-491",
             "name": "TOP Network",
             "symbol": "TOP-491",
@@ -1775,6 +1886,7 @@
         },
         {
             "asset": "c714_tTROY-9B8",
+            "type": "BEP2",
             "address": "TROY-9B8",
             "name": "TROY",
             "symbol": "TROY-9B8",
@@ -1784,6 +1896,7 @@
         },
         {
             "asset": "c714_tTRUE-D84",
+            "type": "BEP2",
             "address": "TRUE-D84",
             "name": "TrueChain",
             "symbol": "TRUE-D84",
@@ -1793,6 +1906,7 @@
         },
         {
             "asset": "c714_tTRXB-2E6",
+            "type": "BEP2",
             "address": "TRXB-2E6",
             "name": "TRXB",
             "symbol": "TRXB-2E6",
@@ -1802,6 +1916,7 @@
         },
         {
             "asset": "c714_tTWT-8C2",
+            "type": "BEP2",
             "address": "TWT-8C2",
             "name": "Trust Wallet",
             "symbol": "TWT-8C2",
@@ -1811,6 +1926,7 @@
         },
         {
             "asset": "c714_tUGAS-B0C",
+            "type": "BEP2",
             "address": "UGAS-B0C",
             "name": "Ultrain Coin",
             "symbol": "UGAS-B0C",
@@ -1820,6 +1936,7 @@
         },
         {
             "asset": "c714_tUND-EBC",
+            "type": "BEP2",
             "address": "UND-EBC",
             "name": "United Network Distribution",
             "symbol": "UND-EBC",
@@ -1829,6 +1946,7 @@
         },
         {
             "asset": "c714_tUPX-F3E",
+            "type": "BEP2",
             "address": "UPX-F3E",
             "name": "UPX",
             "symbol": "UPX-F3E",
@@ -1838,6 +1956,7 @@
         },
         {
             "asset": "c714_tVDX-A17",
+            "type": "BEP2",
             "address": "VDX-A17",
             "name": "Vodi X",
             "symbol": "VDX-A17",
@@ -1847,6 +1966,7 @@
         },
         {
             "asset": "c714_tVIDT-F53",
+            "type": "BEP2",
             "address": "VIDT-F53",
             "name": "V-ID Token",
             "symbol": "VIDT-F53",
@@ -1856,6 +1976,7 @@
         },
         {
             "asset": "c714_tVOTE-FD4",
+            "type": "BEP2",
             "address": "VOTE-FD4",
             "name": "Vote",
             "symbol": "VOTE-FD4",
@@ -1865,6 +1986,7 @@
         },
         {
             "asset": "c714_tWICC-01D",
+            "type": "BEP2",
             "address": "WICC-01D",
             "name": "WaykiChain Coin",
             "symbol": "WICC-01D",
@@ -1874,6 +1996,7 @@
         },
         {
             "asset": "c714_tWINB-41F",
+            "type": "BEP2",
             "address": "WINB-41F",
             "name": "WINB",
             "symbol": "WINB-41F",
@@ -1883,6 +2006,7 @@
         },
         {
             "asset": "c714_tWISH-2D5",
+            "type": "BEP2",
             "address": "WISH-2D5",
             "name": "MyWish",
             "symbol": "WISH-2D5",
@@ -1892,6 +2016,7 @@
         },
         {
             "asset": "c714_tWRX-ED1",
+            "type": "BEP2",
             "address": "WRX-ED1",
             "name": "WazirX Token",
             "symbol": "WRX-ED1",
@@ -1901,6 +2026,7 @@
         },
         {
             "asset": "c714_tXBASE-CD2",
+            "type": "BEP2",
             "address": "XBASE-CD2",
             "name": "Eterbase Coin",
             "symbol": "XBASE-CD2",
@@ -1910,6 +2036,7 @@
         },
         {
             "asset": "c714_tXRP-BF2",
+            "type": "BEP2",
             "address": "XRP-BF2",
             "name": "XRP BEP2",
             "symbol": "XRP-BF2",
@@ -1919,6 +2046,7 @@
         },
         {
             "asset": "c714_tXRPBEAR-00B",
+            "type": "BEP2",
             "address": "XRPBEAR-00B",
             "name": "3X Short XRP Token",
             "symbol": "XRPBEAR-00B",
@@ -1928,6 +2056,7 @@
         },
         {
             "asset": "c714_tXRPBULL-E7C",
+            "type": "BEP2",
             "address": "XRPBULL-E7C",
             "name": "3X Long XRP Token",
             "symbol": "XRPBULL-E7C",
@@ -1937,6 +2066,7 @@
         },
         {
             "asset": "c714_tXTZ-F7A",
+            "type": "BEP2",
             "address": "XTZ-F7A",
             "name": "XTZ BEP2",
             "symbol": "XTZ-F7A",
@@ -1946,6 +2076,7 @@
         },
         {
             "asset": "c714_tYFII-061",
+            "type": "BEP2",
             "address": "YFII-061",
             "name": "YFIIBEP2",
             "symbol": "YFII-061",
@@ -1955,6 +2086,7 @@
         },
         {
             "asset": "c714_tZEBI-84F",
+            "type": "BEP2",
             "address": "ZEBI-84F",
             "name": "ZEBI",
             "symbol": "ZEBI-84F",
@@ -1964,6 +2096,7 @@
         },
         {
             "asset": "c714_tZEC-93E",
+            "type": "BEP2",
             "address": "ZEC-93E",
             "name": "ZECBEP2",
             "symbol": "ZEC-93E",
