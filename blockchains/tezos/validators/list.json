@@ -456,5 +456,19 @@
         "staking": {
             "minDelegation": 500
         }
+    },
+    {
+        "id": "tz1PFeoTuFen8jAMRHajBySNyCwLmY5RqF9M",
+        "name": "Paradigm Bakery",
+        "description": "The people's baker.",
+        "website": "https://www.bcparadigm.com",
+        "payout": {
+            "commission": 4.99,
+            "payoutDelay": 12,
+            "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 10
+        }
     }
 ]
