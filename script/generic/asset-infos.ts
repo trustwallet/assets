@@ -113,8 +113,12 @@ function isAssetInfoOK(chain: string, address: string, errors: string[], warning
                 let matchCount = 0;
                 explorersAlt.forEach(exp => { if (exp.toLowerCase() == explorerActualLower) { ++matchCount; }});
                 if (matchCount == 0) {
-                    // none matchs
-                    warnings.push(`Unexpected explorer, ${explorerActual} instead of ${explorerExpected} (${explorersAlt.join(', ')})`);
+                    // none matches, this is warning/error
+                    if (chain.toLowerCase() == "ethereum" || chain.toLowerCase() == "smartchain") {
+                        errors.push(`Incorrect explorer, ${explorerActual} instead of ${explorerExpected} (${explorersAlt.join(', ')})`);
+                    } else {
+                        warnings.push(`Unexpected explorer, ${explorerActual} instead of ${explorerExpected} (${explorersAlt.join(', ')})`);
+                    }
                 }
             }
         }
