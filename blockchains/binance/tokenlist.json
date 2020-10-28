@@ -805,6 +805,27 @@
             ]
         },
         {
+            "asset": "c714_tUSDT-6D8",
+            "type": "BEP2",
+            "address": "USDT-6D8",
+            "name": "USDTBEP2",
+            "symbol": "USDT",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/USDT-6D8/logo.png",
+            "pairs": [
+                {
+                    "base": "c714",
+                    "lotSize": "100000",
+                    "tickSize": "10000"
+                },
+                {
+                    "base": "c714_tBUSD-BD1",
+                    "lotSize": "10000000",
+                    "tickSize": "1000"
+                }
+            ]
+        },
+        {
             "asset": "c714_tETH-1C9",
             "type": "BEP2",
             "address": "ETH-1C9",
@@ -849,22 +870,6 @@
                     "base": "c714",
                     "lotSize": "100000",
                     "tickSize": "1000"
-                }
-            ]
-        },
-        {
-            "asset": "c714_tUSDT-6D8",
-            "type": "BEP2",
-            "address": "USDT-6D8",
-            "name": "USDTBEP2",
-            "symbol": "USDT",
-            "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/USDT-6D8/logo.png",
-            "pairs": [
-                {
-                    "base": "c714",
-                    "lotSize": "100000",
-                    "tickSize": "10000"
                 }
             ]
         },
