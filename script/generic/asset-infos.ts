@@ -54,7 +54,7 @@ function explorerUrl(chain: string, contract: string): string {
                 return `https://bscscan.com/token/${contract}`;
 
             case "neo":
-                return `https://neo.tokenview.com/fr/token/0x${contract}`;
+                return `https://neo.tokenview.com/en/token/0x${contract}`;
 
             case "nuls":
                 return `https://nulscan.io/token/info?contractAddress=${contract}`;
@@ -64,6 +64,19 @@ function explorerUrl(chain: string, contract: string): string {
         }
     }
     return "";
+}
+
+function explorerUrlAlternatives(chain: string, contract: string, name: string): string[] {
+    const altUrls: string[] = [];
+    if (name) {
+        const nameNorm = name.toLowerCase().replace(' ', '').replace(')', '').replace('(', '');
+        if (chain.toLowerCase() == "ethereum") {
+            altUrls.push(`https://etherscan.io/token/${nameNorm}`);
+        }
+        altUrls.push(`https://explorer.${nameNorm}.io`);
+        altUrls.push(`https://scan.${nameNorm}.io`);
+    }
+    return altUrls;
 }
 
 function isAssetInfoOK(chain: string, address: string, errors: string[], warnings: string[]): void {
@@ -91,9 +104,23 @@ function isAssetInfoOK(chain: string, address: string, errors: string[], warning
         errors.push(`Missing explorer key`);
     } else {
         const explorerActual = info['explorer'];
+        const explorerActualLower = explorerActual.toLowerCase();
         const explorerExpected = explorerUrl(chain, address);
-        if (explorerActual != explorerExpected) {
-            warnings.push(`Unexpected explorer, ${explorerActual} instead of ${explorerExpected}`);
+        if (explorerActualLower != explorerExpected.toLowerCase() && explorerExpected) {
+            // doesn't match, check for alternatives
+            const explorersAlt = explorerUrlAlternatives(chain, address, info['name']);
+            if (explorersAlt && explorersAlt.length > 0) {
+                let matchCount = 0;
+                explorersAlt.forEach(exp => { if (exp.toLowerCase() == explorerActualLower) { ++matchCount; }});
+                if (matchCount == 0) {
+                    // none matches, this is warning/error
+                    if (chain.toLowerCase() == "ethereum" || chain.toLowerCase() == "smartchain") {
+                        errors.push(`Incorrect explorer, ${explorerActual} instead of ${explorerExpected} (${explorersAlt.join(', ')})`);
+                    } else {
+                        warnings.push(`Unexpected explorer, ${explorerActual} instead of ${explorerExpected} (${explorersAlt.join(', ')})`);
+                    }
+                }
+            }
         }
     }
 }

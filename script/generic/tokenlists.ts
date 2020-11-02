@@ -10,6 +10,7 @@ import { assetID } from "./asset";
 import * as config from "../config";
 import { CoinType } from "@trustwallet/wallet-core";
 import { toSatoshis } from "./numbers";
+import { TokenType } from "./tokentype";
 
 class BinanceMarket {
     base_asset_symbol: string
@@ -49,6 +50,7 @@ class List {
 
 class TokenItem {
     asset: string;
+    type: string;
     address: string;
     name: string;
     symbol: string;
@@ -56,8 +58,9 @@ class TokenItem {
     logoURI: string;
     pairs: [Pair];
 
-    constructor(asset: string, address: string, name: string, symbol: string, decimals: number, logoURI: string, pairs: [Pair]) {
+    constructor(asset: string, type: string, address: string, name: string, symbol: string, decimals: number, logoURI: string, pairs: [Pair]) {
         this.asset = asset
+        this.type = type
         this.address = address
         this.name = name;
         this.symbol = symbol
@@ -154,14 +157,21 @@ async function generateBinanceTokensList(): Promise<[TokenItem]> {
         }
         return assetID(CoinType.binance, symbol)
     }
-    const list = <[TokenItem]>Array.from(pairsList.values())
+    function tokenType(symbol: string): string {
+        if (symbol == BNBSymbol) {
+            return TokenType.COIN
+        }
+        return TokenType.BEP2
+    }
+    const list = <[string]>Array.from(pairsList.values())
     return <[TokenItem]>list.map(item => {
-        const token = tokensMap[item.symbol]
+        const token = tokensMap[item]
         return new TokenItem (
             asset(token.symbol),
+            tokenType(token.symbol),
             token.symbol,
             token.name,
-            token.symbol,
+            token.original_symbol,
             decimals,
             logoURI(token.symbol),
             pairsMap[token.symbol] || []
