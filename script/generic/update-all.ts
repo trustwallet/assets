@@ -1,5 +1,6 @@
 import { BinanceAction } from "../blockchain/binance";
 import { CosmosAction } from "../blockchain/cosmos";
+import { AssetInfos } from "../generic/asset-infos";
 import { EthForks } from "../generic/eth-forks";
 import { FoldersFiles } from "../generic/folders-and-files";
 import { JsonAction } from "../generic/json-format";
@@ -18,6 +19,7 @@ import * as bluebird from "bluebird";
 
 const actionList: ActionInterface[] = [
     new FoldersFiles(),
+    new AssetInfos(),
     new EthForks(),
     new LogoSize(),
     new Allowlists(),
