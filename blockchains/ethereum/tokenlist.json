@@ -18,6 +18,15 @@
          "pairs":[
             {
                "base":"c60_t0x6B175474E89094C44Da98b954EedeAC495271d0F"
+            },
+            {
+               "base":"c60_t0xdd974D5C2e2928deA5F71b9825b8b646686BD200"
+            },
+            {
+               "base":"c60_t0x514910771AF9Ca656af840dff83E8264EcF986CA"
+            },
+            {
+               "base":"c60_t0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599"
             }
          ]
       },
@@ -46,6 +55,42 @@
             {
                "base":"c60_t0x6B175474E89094C44Da98b954EedeAC495271d0F"
             }
+         ]
+      },
+      {
+         "chainId":1,
+         "asset":"c60_t0xdd974D5C2e2928deA5F71b9825b8b646686BD200",
+         "type": "ERC20",
+         "address":"0xdd974D5C2e2928deA5F71b9825b8b646686BD200",
+         "name":"KyberNetwork",
+         "symbol":"KNC",
+         "decimals":18,
+         "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xdd974D5C2e2928deA5F71b9825b8b646686BD200/logo.png",
+         "pairs":[
+         ]
+      },
+      {
+         "chainId":1,
+         "asset":"c60_t0x514910771AF9Ca656af840dff83E8264EcF986CA",
+         "type": "ERC20",
+         "address":"0x514910771AF9Ca656af840dff83E8264EcF986CA",
+         "name":"ChainLink",
+         "symbol":"Link",
+         "decimals":18,
+         "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x514910771AF9Ca656af840dff83E8264EcF986CA/logo.png",
+         "pairs":[
+         ]
+      },
+      {
+         "chainId":1,
+         "asset":"c60_t0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+         "type": "ERC20",
+         "address":"0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+         "name":"Wrapped BTC",
+         "symbol":"WBTC",
+         "decimals":18,
+         "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599/logo.png",
+         "pairs":[
          ]
       }
    ],
