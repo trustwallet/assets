@@ -1,24 +1,59 @@
 {
-    "name":"Trust Wallet: Smart Chain",
-    "logoURI":"https://trustwallet.com/assets/images/favicon.png",
-    "keywords":[
-       
-    ],
-    "timestamp":"2020-10-03T12:37:57.000+00:00",
-    "tokens":[
-       {
-          "blockchain":"smartchain",
-          "chainId":56,
-          "address":"0x4B0F1812e5Df2A09796481Ff14017e6005508003",
-          "name":"Trust Wallet",
-          "symbol":"TWT",
-          "decimals":18,
-          "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x4B0F1812e5Df2A09796481Ff14017e6005508003/logo.png"
-       }
-    ],
-    "version":{
-       "major":0,
-       "minor":1,
-       "patch":0
+  "name":"Trust Wallet: Smart Chain",
+  "logoURI":"https://trustwallet.com/assets/images/favicon.png",
+  "keywords":[
+
+  ],
+  "timestamp":"2020-10-03T12:37:57.000+00:00",
+  "tokens":[
+    {
+      "chainId":56,
+      "asset":"c20000714_t0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+      "type":"BEP20",
+      "address":"0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+      "name":"Wrapped BNB",
+      "symbol":"WBNB",
+      "decimals":18,
+      "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c/logo.png",
+      "pairs":[
+        {
+          "base":"c20000714_t0x4B0F1812e5Df2A09796481Ff14017e6005508003"
+        },
+        {
+          "base":"c20000714_t0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82"
+        }
+      ]
+    },
+    {
+      "chainId":56,
+      "asset":"c20000714_t0x4B0F1812e5Df2A09796481Ff14017e6005508003",
+      "type":"BEP20",
+      "address":"0x4B0F1812e5Df2A09796481Ff14017e6005508003",
+      "name":"Trust Wallet",
+      "symbol":"TWT",
+      "decimals":18,
+      "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x4B0F1812e5Df2A09796481Ff14017e6005508003/logo.png",
+      "pairs":[
+
+      ]
+    },
+    {
+      "chainId":56,
+      "asset":"c20000714_t0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82",
+      "type":"BEP20",
+      "address":"0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82",
+      "name":"PancakeSwap Token",
+      "symbol":"Cake",
+      "decimals":18,
+      "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82/logo.png",
+      "pairs":[
+
+      ]
     }
- }
+  ],
+  "version":{
+    "major":0,
+    "minor":1,
+    "patch":0
+  }
+}
