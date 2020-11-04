@@ -1,0 +1,24 @@
+{
+    "name":"Trust Wallet: Smart Chain",
+    "logoURI":"https://trustwallet.com/assets/images/favicon.png",
+    "keywords":[
+       
+    ],
+    "timestamp":"2020-10-03T12:37:57.000+00:00",
+    "tokens":[
+       {
+          "blockchain":"smartchain",
+          "chainId":56,
+          "address":"0x4B0F1812e5Df2A09796481Ff14017e6005508003",
+          "name":"Trust Wallet",
+          "symbol":"TWT",
+          "decimals":18,
+          "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x4B0F1812e5Df2A09796481Ff14017e6005508003/logo.png"
+       }
+    ],
+    "version":{
+       "major":0,
+       "minor":1,
+       "patch":0
+    }
+ }

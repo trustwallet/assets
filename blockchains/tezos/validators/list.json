@@ -155,10 +155,6 @@
         },
         "staking": {
             "minDelegation": 0
-        },
-        "status": {
-            "disabled": true,
-            "note": "No more capacity: -165550"
         }
     },
     {
@@ -265,7 +261,7 @@
         "description": "Money Every 3 Days - Low fees, dependable payouts and active participant.",
         "website": "https://moneyevery3days.com",
         "payout": {
-            "commission": 4,
+            "commission": 6,
             "payoutDelay": 1,
             "payoutPeriod": 1
         },
@@ -344,7 +340,7 @@
         },
         "status": {
             "disabled": true,
-            "note": "No more capacity: -97862"
+            "note": "According to Baking Bad API, baker is not active, current status dead, see: https://api.baking-bad.org/v2/bakers/tz1LH4L6XYT2JNPhvWYC4Zq3XEiGgEwzNRvo"
         }
     },
     {
@@ -377,20 +373,16 @@
     },
     {
         "id": "tz1V3yg82mcrPJbegqVCPn6bC8w1CSTRp3f8",
-        "name": "Staking Shop",
+        "name": "Staking🛒Shop",
         "description": "Staking for best PoS blockchains in one place",
         "website": "https://www.stakingshop.live",
         "payout": {
-            "commission": 3,
+            "commission": 15,
             "payoutDelay": 6,
             "payoutPeriod": 1
         },
         "staking": {
             "minDelegation": 100
-        },
-        "status": {
-            "disabled": true,
-            "note": "No more capacity: -24470"
         }
     },
     {
@@ -449,6 +441,20 @@
         },
         "staking": {
             "minDelegation": 0
+        }
+    },
+    {
+        "id": "tz1WctSwL49BZtdWAQ75NY6vr4xsAx6oKdah",
+        "name": "Tezos Wake n' Bake",
+        "description": "Our biggest virtue is integry, we are always at your service. Come and bake with us!",
+        "website": "https://www.tezoswakenbake.com",
+        "payout": {
+            "commission": 6.6,
+            "payoutDelay": 6,
+            "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 500
         }
     }
 ]
