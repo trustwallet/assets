@@ -199,8 +199,8 @@
                 },
                 {
                     "base": "c714_tEOSBEAR-721",
-                    "lotSize": "10000000",
-                    "tickSize": "10"
+                    "lotSize": "1000000",
+                    "tickSize": "100"
                 },
                 {
                     "base": "c714_tEOSBULL-F0D",
@@ -479,7 +479,7 @@
                 },
                 {
                     "base": "c714_tTOP-491",
-                    "lotSize": "1000000000",
+                    "lotSize": "10000000000",
                     "tickSize": "1"
                 },
                 {
@@ -717,7 +717,7 @@
                 {
                     "base": "c714_tONE-5F9",
                     "lotSize": "1000000000",
-                    "tickSize": "10"
+                    "tickSize": "1"
                 },
                 {
                     "base": "c714_tUND-EBC",
@@ -821,7 +821,7 @@
                 {
                     "base": "c714_tBUSD-BD1",
                     "lotSize": "10000000",
-                    "tickSize": "100"
+                    "tickSize": "1000"
                 }
             ]
         },
