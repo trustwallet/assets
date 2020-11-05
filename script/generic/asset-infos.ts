@@ -9,13 +9,13 @@ import {
     isPathExistsSync
 } from "./filesystem";
 import { arrayDiff } from "./types";
-import { isValidJSON, writeJsonFile } from "../generic/json";
+import { isValidJSON } from "../generic/json";
 import { ActionInterface, CheckStepInterface } from "../generic/interface";
 import * as bluebird from "bluebird";
 
 const requiredKeys = ["explorer", "name", "website", "short_description"];
 
-function isAssetInfoHasAllKeys(info: any, path: string): [boolean, string] {
+function isAssetInfoHasAllKeys(info: unknown, path: string): [boolean, string] {
     const infoKeys = Object.keys(info);
 
     const hasAllKeys = requiredKeys.every(k => Object.prototype.hasOwnProperty.call(info, k));
@@ -25,10 +25,10 @@ function isAssetInfoHasAllKeys(info: any, path: string): [boolean, string] {
     }
 
     const isKeysCorrentType = 
-        typeof info.explorer === "string" && info.explorer != ""
-        && typeof info.name === "string" && info.name != ""
-        && typeof info.website === "string"
-        && typeof info.short_description === "string";
+        typeof info['explorer'] === "string" && info['explorer'] != ""
+        && typeof info['name'] === "string" && info['name'] != ""
+        && typeof info['website'] === "string"
+        && typeof info['short_description'] === "string";
     
     return [isKeysCorrentType, `Check keys '${requiredKeys}' vs. '${infoKeys}'`];
 }
