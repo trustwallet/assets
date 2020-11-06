@@ -24,6 +24,9 @@
         },
         {
           "base":"c20000714_t0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56"
+        },
+        {
+          "base":"c20000714_t0xcF6BB5389c92Bdda8a3747Ddb454cB7a64626C63"
         }
       ]
     },
@@ -62,6 +65,19 @@
       "symbol":"BUSD",
       "decimals":18,
       "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56/logo.png",
+      "pairs":[
+
+      ]
+    },
+    {
+      "chainId":56,
+      "asset":"c20000714_t0xcF6BB5389c92Bdda8a3747Ddb454cB7a64626C63",
+      "type":"BEP20",
+      "address":"0xcF6BB5389c92Bdda8a3747Ddb454cB7a64626C63",
+      "name":"Venus",
+      "symbol":"XVS",
+      "decimals":18,
+      "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xcF6BB5389c92Bdda8a3747Ddb454cB7a64626C63/logo.png",
       "pairs":[
 
       ]
