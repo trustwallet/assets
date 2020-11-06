@@ -21,6 +21,9 @@
         },
         {
           "base":"c20000714_t0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82"
+        },
+        {
+          "base":"c20000714_t0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56"
         }
       ]
     },
@@ -46,6 +49,19 @@
       "symbol":"Cake",
       "decimals":18,
       "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82/logo.png",
+      "pairs":[
+
+      ]
+    },
+    {
+      "chainId":56,
+      "asset":"c20000714_t0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56",
+      "type":"BEP20",
+      "address":"0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56",
+      "name":"BUSD",
+      "symbol":"BUSD",
+      "decimals":18,
+      "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56/logo.png",
       "pairs":[
 
       ]
