@@ -27,6 +27,15 @@
         },
         {
           "base":"c20000714_t0xcF6BB5389c92Bdda8a3747Ddb454cB7a64626C63"
+        },
+        {
+          "base":"c20000714_t0xa2B726B1145A4773F68593CF171187d8EBe4d495"
+        },
+        {
+          "base":"c20000714_t0xa1faa113cbE53436Df28FF0aEe54275c13B40975"
+        },
+        {
+          "base":"c20000714_t0xA8c2B8eec3d368C0253ad3dae65a5F2BBB89c929"
         }
       ]
     },
@@ -78,6 +87,45 @@
       "symbol":"XVS",
       "decimals":18,
       "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xcF6BB5389c92Bdda8a3747Ddb454cB7a64626C63/logo.png",
+      "pairs":[
+
+      ]
+    },
+    {
+      "chainId":56,
+      "asset":"c20000714_t0xa2B726B1145A4773F68593CF171187d8EBe4d495",
+      "type":"BEP20",
+      "address":"0xa2B726B1145A4773F68593CF171187d8EBe4d495",
+      "name":"Injective Protocol",
+      "symbol":"INJ",
+      "decimals":18,
+      "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xa2B726B1145A4773F68593CF171187d8EBe4d495/logo.png",
+      "pairs":[
+
+      ]
+    },
+    {
+      "chainId":56,
+      "asset":"c20000714_t0xa1faa113cbE53436Df28FF0aEe54275c13B40975",
+      "type":"BEP20",
+      "address":"0xa1faa113cbE53436Df28FF0aEe54275c13B40975",
+      "name":"Alpha Token",
+      "symbol":"ALPHA",
+      "decimals":18,
+      "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xa1faa113cbE53436Df28FF0aEe54275c13B40975/logo.png",
+      "pairs":[
+
+      ]
+    },
+    {
+      "chainId":56,
+      "asset":"c20000714_t0xA8c2B8eec3d368C0253ad3dae65a5F2BBB89c929",
+      "type":"BEP20",
+      "address":"0xA8c2B8eec3d368C0253ad3dae65a5F2BBB89c929",
+      "name":"CertiK Token",
+      "symbol":"CTK",
+      "decimals":18,
+      "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xa1faa113cbE53436Df28FF0aEe54275c13B40975/logo.png",
       "pairs":[
 
       ]
