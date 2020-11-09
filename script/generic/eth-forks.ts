@@ -21,7 +21,6 @@ import {
 } from "../generic/filesystem";
 import { toChecksum } from "../generic/eth-address";
 import { ActionInterface, CheckStepInterface } from "../generic/interface";
-import { isAssetInfoOK } from "../generic/asset-info";
 import * as bluebird from "bluebird";
 
 async function formatInfos() {
@@ -91,10 +90,6 @@ export class EthForks implements ActionInterface {
                             const assetLogoPath = getChainAssetLogoPath(chain, address);
                             if (!isPathExistsSync(assetLogoPath)) {
                                 errors.push(`Missing file at path '${assetLogoPath}'`);
-                            }
-                            const [isInfoOK, infoMsg] = isAssetInfoOK(chain, address);
-                            if (!isInfoOK) {
-                                errors.push(infoMsg);
                             }
                         });
                         return [errors, []];
