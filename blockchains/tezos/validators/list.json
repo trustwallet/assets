@@ -19,12 +19,12 @@
         "description": "Your Trusted Crypto Rewards",
         "website": "https://stakin.com",
         "payout": {
-            "commission": 8,
+            "commission": 10,
             "payoutDelay": 1,
             "payoutPeriod": 1
         },
         "staking": {
-            "minDelegation": 0
+            "minDelegation": 20
         }
     },
     {
@@ -155,10 +155,6 @@
         },
         "staking": {
             "minDelegation": 0
-        },
-        "status": {
-            "disabled": true,
-            "note": "No more capacity: -80882"
         }
     },
     {
@@ -377,7 +373,7 @@
     },
     {
         "id": "tz1V3yg82mcrPJbegqVCPn6bC8w1CSTRp3f8",
-        "name": "Staking Shop",
+        "name": "Staking🛒Shop",
         "description": "Staking for best PoS blockchains in one place",
         "website": "https://www.stakingshop.live",
         "payout": {

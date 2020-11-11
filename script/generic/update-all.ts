@@ -1,5 +1,6 @@
 import { BinanceAction } from "../blockchain/binance";
 import { CosmosAction } from "../blockchain/cosmos";
+import { AssetInfos } from "../generic/asset-infos";
 import { EthForks } from "../generic/eth-forks";
 import { FoldersFiles } from "../generic/folders-and-files";
 import { JsonAction } from "../generic/json-format";
@@ -10,16 +11,19 @@ import { TezosAction } from "../blockchain/tezos";
 import { TronAction } from "../blockchain/tron";
 import { Validators } from "../generic/validators";
 import { WavesAction } from "../blockchain/waves";
-import { Allowlist } from "../generic/allowlists";
+import { Allowlists } from "../generic/allowlists";
+import { TokenLists } from "../generic/tokenlists";
 import { ActionInterface, CheckStepInterface } from "../generic/interface";
 import * as chalk from 'chalk';
 import * as bluebird from "bluebird";
 
 const actionList: ActionInterface[] = [
     new FoldersFiles(),
+    new AssetInfos(),
     new EthForks(),
     new LogoSize(),
-    new Allowlist(),
+    new Allowlists(),
+    new TokenLists(),
     new Validators(),
     new JsonAction(),
     // chains:

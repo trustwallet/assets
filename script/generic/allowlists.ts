@@ -1,18 +1,18 @@
-import { chainsWithDenylist } from "../generic/blockchains";
+import { chainsWithDenylist } from "./blockchains";
 import {
     getChainAssetsList,
     getChainAllowlistPath,
     getChainDenylistPath
-} from "../generic/repo-structure";
-import { readFileSync, writeFileSync } from "../generic/filesystem";
+} from "./repo-structure";
+import { readFileSync, writeFileSync } from "./filesystem";
 import {
     arrayDiff,
     arrayDiffNocase,
     findCommonElementsOrDuplicates,
     makeUnique
-} from "../generic/types";
-import { ActionInterface, CheckStepInterface } from "../generic/interface";
-import { formatSortJson } from "../generic/json";
+} from "./types";
+import { ActionInterface, CheckStepInterface } from "./interface";
+import { formatSortJson } from "./json";
 import * as bluebird from "bluebird";
 
 async function checkUpdateAllowDenyList(chain: string, checkOnly: boolean ): Promise<[boolean, string[], string[]]> {
@@ -85,7 +85,7 @@ async function checkUpdateAllowDenyList(chain: string, checkOnly: boolean ): Pro
     return [(errorMsgs.length == 0 && warningMsgs.length == 0), errorMsgs, warningMsgs];
 }
 
-export class Allowlist implements ActionInterface {
+export class Allowlists implements ActionInterface {
     getName(): string { return "Allowlists"; }
 
     getSanityChecks = null;
