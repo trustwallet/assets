@@ -1,0 +1,21 @@
+{
+    "name": "StaFi",
+    "website": "https://stafi.io",
+    "source_code": "https://github.com/stafiprotocol/stafi-node",
+    "white_paper": "https://docs.stafi.io/stafi-whitepaper/stafi-whitepaper",
+    "short_description": "StaFi is the first decentralized protocol unlocking liquidity of staked assets. FIS is the native coin of the network.",
+    "description": "The protocol of StaFi is created by Substrate and adopts Nominated Proof-of-Stake (NPoS), which completes Staking by setting up Staking Contracts in the upper layer to communicate with public chains. The Staking process is immune to StaFi’s contracts, for the latter act as the account book during Staking. Tokens staked through contracts will be written in the contracts and finally be locked-up on the original chain.",
+    "socials": [
+        {
+            "name": "Twitter",
+            "url": "https://twitter.com/Stafi_Protocol",
+            "handle": "Stafi_Protocol"
+        },
+        {
+            "name": "Reddit",
+            "url": "https://reddit.com/r/stafi",
+            "handle": "stafi"
+        }
+    ],
+    "explorer": "https://stafi.subscan.io"
+}
