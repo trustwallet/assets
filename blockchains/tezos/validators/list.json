@@ -455,6 +455,22 @@
         },
         "staking": {
             "minDelegation": 500
+            
+   
         }
+    },
+    {
+    "id": "tz1aDiEJf9ztRrAJEXZfcG3CKimoKsGhwVAi",
+    "name": "Tezos Japan",
+    "description": "Shake 'n bake premium bakery, you delegate, we bake!",
+    "website": "https://tezosjapan.info",
+    "payout": {
+        "commission": 8,
+        "payoutDelay": 6,
+        "payoutPeriod": 1
+    },
+    "staking": {
+        "minDelegation": 0
     }
+},
 ]
