@@ -463,16 +463,12 @@
         "description": "Bake n' Shake, your neighborhood friendly baker, feel freee to DM on twitter if you have any questions regarding the service",
         "website": "https://www.kryptstar.com/baking",
         "payout": {
-        "commission": 8,
-        "payoutDelay": 6,
-        "payoutPeriod": 1
+            "commission": 8,
+            "payoutDelay": 6,
+            "payoutPeriod": 1
         },
         "staking": {
-        "minDelegation": 0
-      }
+            "minDelegation": 0
+        }
     }
-
-
-
-
 ]
