@@ -98,6 +98,12 @@
                "base":"c60_t0xBA11D00c5f74255f56a5E366F4F77f5A186d7f55"
             },
             {
+               "base":"c60_t0x8400D94A5cb0fa0D041a3788e395285d61c9ee5e"
+            },
+            {
+               "base":"c60_t0x607F4C5BB672230e8672085532f7e901544a7375"
+            },
+            {
                "base":"c60_t0x740623d2c797b7D8D1EcB98e9b4Afcf99Ec31E14"
             }           
          ]
@@ -426,6 +432,30 @@
           "symbol":"BAND",
           "decimals":18,
           "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xBA11D00c5f74255f56a5E366F4F77f5A186d7f55/logo.png",
+          "pairs":[
+          ]
+      },
+      {
+         "chainId":1,
+         "asset":"c60_t0x8400D94A5cb0fa0D041a3788e395285d61c9ee5e",
+         "type":"ERC20",
+         "address":"0x8400D94A5cb0fa0D041a3788e395285d61c9ee5e",
+          "name":"Unibright",
+          "symbol":"UBT",
+          "decimals":8,
+          "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x8400D94A5cb0fa0D041a3788e395285d61c9ee5e/logo.png",
+          "pairs":[
+          ]
+      },
+      {
+         "chainId":1,
+         "asset":"c60_t0x607F4C5BB672230e8672085532f7e901544a7375",
+         "type":"ERC20",
+         "address":"0x607F4C5BB672230e8672085532f7e901544a7375",
+          "name":"iExec RLC",
+          "symbol":"RLC",
+          "decimals":9,
+          "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x607F4C5BB672230e8672085532f7e901544a7375/logo.png",
           "pairs":[
           ]
       },
