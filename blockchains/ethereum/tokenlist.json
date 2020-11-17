@@ -99,7 +99,10 @@
             },
             {
                "base":"c60_t0x740623d2c797b7D8D1EcB98e9b4Afcf99Ec31E14"
-            }           
+            },
+            {
+               "base":"c60_t0x66fD97a78d8854fEc445cd1C80a07896B0b4851f"
+            }
          ]
       },
       {
@@ -440,6 +443,17 @@
           "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x740623d2c797b7D8D1EcB98e9b4Afcf99Ec31E14/logo.png",
           "pairs":[
           ]
+      },
+      {
+         "chainId":1,
+         "asset":"c60_t0x66fD97a78d8854fEc445cd1C80a07896B0b4851f",
+         "type":"ERC20",
+         "address":"0x66fD97a78d8854fEc445cd1C80a07896B0b4851f",
+         "name":"Lunch Money",
+         "symbol":"LMY",
+         "decimals":18,
+         "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x66fD97a78d8854fEc445cd1C80a07896B0b4851f/logo.png",
+         "pairs":[]
       }
    ],
    "version":{
