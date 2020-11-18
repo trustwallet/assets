@@ -32,11 +32,13 @@ async function checkUpdateAllowDenyList(chain: string, checkOnly: boolean ): Pro
     if (commonElementsOrDuplicates && commonElementsOrDuplicates.length > 0) {
         errorMsgs.push(`Denylist and allowlist for chain ${chain} should have no common elements or duplicates, found ${commonElementsOrDuplicates.length} ${commonElementsOrDuplicates[0]}`);
     }
+    /*
     const allowlistOrphan = arrayDiff(currentAllowlist, assets);
     if (allowlistOrphan && allowlistOrphan.length > 0) {
         // warning only
         warningMsgs.push(`Allowlist for chain ${chain} contains non-exitent assets, found ${allowlistOrphan.length}, ${allowlistOrphan[0]}`);
     }
+    */
 
     //const newDeny = makeUnique(currentDenylist.concat(allowlistOrphan));
     const tempAssetsOrAllow = makeUnique(currentAllowlist.concat(assets));
