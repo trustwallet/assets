@@ -38,8 +38,9 @@ async function checkUpdateAllowDenyList(chain: string, checkOnly: boolean ): Pro
         warningMsgs.push(`Allowlist for chain ${chain} contains non-exitent assets, found ${allowlistOrphan.length}, ${allowlistOrphan[0]}`);
     }
 
-    const newDeny = makeUnique(currentDenylist.concat(allowlistOrphan));
-    const newAllow = makeUnique(arrayDiffNocase(assets, newDeny));
+    //const newDeny = makeUnique(currentDenylist.concat(allowlistOrphan));
+    const tempAssetsOrAllow = makeUnique(currentAllowlist.concat(assets));
+    const newAllow = makeUnique(arrayDiffNocase(tempAssetsOrAllow, currentDenylist));
     //console.log(currentAllowlist.length, "vs.", newAllow.length);
     //console.log(currentDenylist.length, "vs.", newDeny.length);
 
@@ -54,6 +55,7 @@ async function checkUpdateAllowDenyList(chain: string, checkOnly: boolean ): Pro
         warningMsgs.push(`Some elements should be removed from allowlist for chain ${chain}: ${wDiff2.length} ${wDiff2[0]}`);
     }
 
+    /*
     const bDiff1 = arrayDiffNocase(newDeny, currentDenylist);
     if (bDiff1.length > 0) {
         warningMsgs.push(`Some elements are missing from denylist for chain ${chain}: ${bDiff1.length} ${bDiff1[0]}`);
@@ -62,13 +64,14 @@ async function checkUpdateAllowDenyList(chain: string, checkOnly: boolean ): Pro
     if (bDiff2.length > 0) {
         warningMsgs.push(`Some elements should be removed from denylist for chain ${chain}: ${bDiff2.length} ${bDiff2[0]}`);
     }
+    */
 
     // additionally check for nice formatting, sorting:
     const newAllowText = formatSortJson(newAllow);
-    const newDenyText = formatSortJson(newDeny);
     if (newAllowText !== currentAllowlistText) {
         warningMsgs.push(`Allowlist for chain ${chain}: not formatted nicely `);
     }
+    const newDenyText = formatSortJson(currentDenylist); // formatSortJson(newDeny);
     if (newDenyText !== currentDenylistText) {
         warningMsgs.push(`Denylist for chain ${chain}: not formatted nicely `);
     }
