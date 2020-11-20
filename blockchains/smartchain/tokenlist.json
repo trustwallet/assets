@@ -33,6 +33,9 @@
         },
         {
           "base":"c20000714_t0xa1faa113cbE53436Df28FF0aEe54275c13B40975"
+        },
+        {
+          "base":"c20000714_t0xf79037F6f6bE66832DE4E7516be52826BC3cBcc4"
         }
       ]
     },
@@ -123,6 +126,19 @@
       "symbol":"CTK",
       "decimals":6,
       "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xA8c2B8eec3d368C0253ad3dae65a5F2BBB89c929/logo.png",
+      "pairs":[
+
+      ]
+    },
+    {
+      "chainId":56,
+      "asset":"c20000714_t0xf79037F6f6bE66832DE4E7516be52826BC3cBcc4",
+      "type":"BEP20",
+      "address":"0xf79037F6f6bE66832DE4E7516be52826BC3cBcc4",
+      "name":"Hard Protocol",
+      "symbol":"HARD",
+      "decimals":6,
+      "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xf79037F6f6bE66832DE4E7516be52826BC3cBcc4/logo.png",
       "pairs":[
 
       ]
