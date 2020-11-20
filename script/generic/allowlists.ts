@@ -1,8 +1,8 @@
-import { chainsWithDenylist, Vechain } from "./blockchains";
+import { chainsWithDenylist } from "./blockchains";
 import {
     getChainAssetInfoPath,
     getChainAssetLogoPath,
-    getChainAssetsList,
+    //getChainAssetsList,
     getChainAssetsPath,
     getChainAllowlistPath,
     getChainDenylistPath
