@@ -256,7 +256,7 @@
         },
         "status": {
             "disabled": true,
-            "note": "No more capacity: -90011"
+            "note": "No more capacity: -387381"
         }
     },
     {
@@ -362,7 +362,7 @@
         },
         "status": {
             "disabled": true,
-            "note": "No more capacity: -21224"
+            "note": "No more capacity: -21556"
         }
     },
     {
@@ -477,6 +477,10 @@
         },
         "staking": {
             "minDelegation": 0
+        },
+        "status": {
+            "disabled": true,
+            "note": "No more capacity: -91"
         }
     }
 ]
