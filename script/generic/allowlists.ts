@@ -25,7 +25,7 @@ import * as bluebird from "bluebird";
 
 // Find assets for which full info is available -- logo+info -- and is not in the allowlist
 async function findFullAssetsWithNoAllow(chain: string, allowlist: string[]): Promise<string[]> {
-    var list: string[] = [];
+    let list: string[] = [];
     const assetsPath = getChainAssetsPath(chain);
     if (!isPathExistsSync(assetsPath)) {
         return list;
