@@ -108,7 +108,13 @@
             },
             {
                "base":"c60_t0x2ba592F78dB6436527729929AAf6c908497cB200"
-            }            
+            },
+            {
+               "base":"c60_t0xF5D669627376EBd411E34b98F19C868c8ABA5ADA"
+            },
+            {
+               "base":"c60_t0x37236CD05b34Cc79d3715AF2383E96dd7443dCF1"
+            }                
          ]
       },
       {
@@ -483,6 +489,30 @@
           "symbol":"CREAM",
           "decimals":18,
           "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x2ba592F78dB6436527729929AAf6c908497cB200/logo.png",
+          "pairs":[
+          ]
+      },
+      {
+         "chainId":1,
+         "asset":"c60_t0xF5D669627376EBd411E34b98F19C868c8ABA5ADA",
+         "type":"ERC20",
+         "address":"0xF5D669627376EBd411E34b98F19C868c8ABA5ADA",
+          "name":"Axie Infinity",
+          "symbol":"AXS",
+          "decimals":18,
+          "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xF5D669627376EBd411E34b98F19C868c8ABA5ADA/logo.png",
+          "pairs":[
+          ]
+      },
+      {
+         "chainId":1,
+         "asset":"c60_t0x37236CD05b34Cc79d3715AF2383E96dd7443dCF1",
+         "type":"ERC20",
+         "address":"0x37236CD05b34Cc79d3715AF2383E96dd7443dCF1",
+          "name":"Small Love Potion",
+          "symbol":"SLP",
+          "decimals":0,
+          "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x37236CD05b34Cc79d3715AF2383E96dd7443dCF1/logo.png",
           "pairs":[
           ]
       }
