@@ -56,7 +56,7 @@
         },
         "status": {
             "disabled": true,
-            "note": "According to Baking Bad API, baker is not active, current status dead, see: https://api.baking-bad.org/v2/bakers/tz1Pwgj6j55akKCyvTwwr9X4np1RskSXpQY4"
+            "note": "According to Baking Bad API, baker is not active, current status closed, see: https://api.baking-bad.org/v2/bakers/tz1Pwgj6j55akKCyvTwwr9X4np1RskSXpQY4"
         }
     },
     {
@@ -211,6 +211,10 @@
         },
         "staking": {
             "minDelegation": 0
+        },
+        "status": {
+            "disabled": true,
+            "note": "No more capacity: -853"
         }
     },
     {
@@ -340,7 +344,7 @@
         },
         "status": {
             "disabled": true,
-            "note": "According to Baking Bad API, baker is not active, current status dead, see: https://api.baking-bad.org/v2/bakers/tz1LH4L6XYT2JNPhvWYC4Zq3XEiGgEwzNRvo"
+            "note": "According to Baking Bad API, baker is not active, current status closed, see: https://api.baking-bad.org/v2/bakers/tz1LH4L6XYT2JNPhvWYC4Zq3XEiGgEwzNRvo"
         }
     },
     {
@@ -358,7 +362,7 @@
         },
         "status": {
             "disabled": true,
-            "note": "No more capacity: -19445"
+            "note": "No more capacity: -20699"
         }
     },
     {
@@ -390,7 +394,7 @@
         },
         "status": {
             "disabled": true,
-            "note": "No more capacity: -837"
+            "note": "No more capacity: -594"
         }
     },
     {
@@ -477,6 +481,10 @@
         },
         "staking": {
             "minDelegation": 0
+        },
+        "status": {
+            "disabled": true,
+            "note": "No more capacity: -30"
         }
     }
 ]
