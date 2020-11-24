@@ -36,6 +36,9 @@
         },
         {
           "base":"c20000714_t0xf79037F6f6bE66832DE4E7516be52826BC3cBcc4"
+        },
+        {
+          "base":"c20000714_t0x2170Ed0880ac9A755fd29B2688956BD959F933F8"
         }
       ]
     },
@@ -139,6 +142,19 @@
       "symbol":"HARD",
       "decimals":6,
       "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xf79037F6f6bE66832DE4E7516be52826BC3cBcc4/logo.png",
+      "pairs":[
+
+      ]
+    },
+    {
+      "chainId":56,
+      "asset":"c20000714_t0x2170Ed0880ac9A755fd29B2688956BD959F933F8",
+      "type":"BEP20",
+      "address":"0x2170Ed0880ac9A755fd29B2688956BD959F933F8",
+      "name":"Ethereum Token",
+      "symbol":"ETH",
+      "decimals":18,
+      "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x2170Ed0880ac9A755fd29B2688956BD959F933F8/logo.png",
       "pairs":[
 
       ]
