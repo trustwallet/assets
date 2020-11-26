@@ -1,0 +1,21 @@
+{
+  "name": "dolphinsWTF EEEE Token",
+  "website": "https://dolphins.wtf",
+  "source_code": "https://github.com/cetaceanQueen/dolphinsWTF",
+  "short_description": "Token based game allowing holders to modify settings within the game.",
+  "description": "Welcome to dolphinsWTF. A fun, and decentralised, token based game, built on Ethereum. The game is based on three sets of contracts. EEEE token holders can access functions in the game, according to the number of tokens they hold which modify different aspects of how the token functions. There are 5 levels, Orcas, River Dolphins, Bottlenose Dolphins, Flipper and Peter. When activated, all transfers (except from the eeee contract or to Uniswap) pay an additional fee set by holders which is placed into a pot and accesible by dolphins (Orca and above). Higher level dolphins can change the fee rate, and additional functions like cooldown time, and the number of tokens required to reach a level. The contract owner is very limited in their functionality, and the highest level dolphin, Peter, can even turn off these rights. Eeee! Enjoy playing dolphinsWTF.",
+  "socials": [
+    {
+      "name": "Twitter",
+      "url": "https://twitter.com/dolphins_wtf",
+      "handle": "dolphins.wtf"
+    },
+    {
+      "name": "Telegram",
+      "url": "https://t.me/dolphinsWTF",
+      "handle": "🐬🐬🐬 Dolphins.wtf 🐬🐬🐬"
+    }
+  ],
+  "explorer": "https://etherscan.io/token/0x757b2350Cd60D5E46E1Fc3314f980f20d85cfB9f"
+}
+  
