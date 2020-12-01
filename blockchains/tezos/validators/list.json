@@ -6,11 +6,11 @@
         "website": "https://smart-node.com",
         "payout": {
             "commission": 6,
-            "payoutDelay": 1,
+            "payoutDelay": 6,
             "payoutPeriod": 1
         },
         "staking": {
-            "minDelegation": 0
+            "minDelegation": 1
         }
     },
     {
@@ -372,7 +372,7 @@
         },
         "status": {
             "disabled": true,
-            "note": "No more capacity: -8369"
+            "note": "No more capacity: -8579"
         }
     },
     {
@@ -404,7 +404,7 @@
         },
         "status": {
             "disabled": true,
-            "note": "No more capacity: -3200"
+            "note": "No more capacity: -5127"
         }
     },
     {
