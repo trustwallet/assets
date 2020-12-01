@@ -20,9 +20,6 @@
                "base":"c60_t0x6B175474E89094C44Da98b954EedeAC495271d0F"
             },
             {
-               "base":"c60_t0x4Fabb145d64652a948d72533023f6E7A623C7C53"
-            },
-            {
                "base":"c60_t0xdd974D5C2e2928deA5F71b9825b8b646686BD200"
             },
             {
@@ -98,23 +95,8 @@
                "base":"c60_t0xBA11D00c5f74255f56a5E366F4F77f5A186d7f55"
             },
             {
-               "base":"c60_t0x8400D94A5cb0fa0D041a3788e395285d61c9ee5e"
-            },
-            {
-               "base":"c60_t0x607F4C5BB672230e8672085532f7e901544a7375"
-            },
-            {
                "base":"c60_t0x740623d2c797b7D8D1EcB98e9b4Afcf99Ec31E14"
-            },
-            {
-               "base":"c60_t0x2ba592F78dB6436527729929AAf6c908497cB200"
-            },
-            {
-               "base":"c60_t0xF5D669627376EBd411E34b98F19C868c8ABA5ADA"
-            },
-            {
-               "base":"c60_t0x37236CD05b34Cc79d3715AF2383E96dd7443dCF1"
-            }                
+            }           
          ]
       },
       {
@@ -126,18 +108,6 @@
          "symbol":"DAI",
          "decimals":18,
          "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png",
-         "pairs":[
-         ]
-      },
-      {
-         "chainId":1,
-         "asset":"c60_t0x4Fabb145d64652a948d72533023f6E7A623C7C53",
-         "type":"ERC20",
-         "address":"0x4Fabb145d64652a948d72533023f6E7A623C7C53",
-         "name":"Binance USD",
-         "symbol":"BUSD",
-         "decimals":18,
-         "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x4Fabb145d64652a948d72533023f6E7A623C7C53/logo.png",
          "pairs":[
          ]
       },
@@ -446,30 +416,6 @@
       },
       {
          "chainId":1,
-         "asset":"c60_t0x8400D94A5cb0fa0D041a3788e395285d61c9ee5e",
-         "type":"ERC20",
-         "address":"0x8400D94A5cb0fa0D041a3788e395285d61c9ee5e",
-          "name":"Unibright",
-          "symbol":"UBT",
-          "decimals":8,
-          "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x8400D94A5cb0fa0D041a3788e395285d61c9ee5e/logo.png",
-          "pairs":[
-          ]
-      },
-      {
-         "chainId":1,
-         "asset":"c60_t0x607F4C5BB672230e8672085532f7e901544a7375",
-         "type":"ERC20",
-         "address":"0x607F4C5BB672230e8672085532f7e901544a7375",
-          "name":"iExec RLC",
-          "symbol":"RLC",
-          "decimals":9,
-          "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x607F4C5BB672230e8672085532f7e901544a7375/logo.png",
-          "pairs":[
-          ]
-      },
-      {
-         "chainId":1,
          "asset":"c60_t0x740623d2c797b7D8D1EcB98e9b4Afcf99Ec31E14",
          "type":"ERC20",
          "address":"0x740623d2c797b7D8D1EcB98e9b4Afcf99Ec31E14",
@@ -477,42 +423,6 @@
           "symbol":"DYT",
           "decimals":18,
           "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x740623d2c797b7D8D1EcB98e9b4Afcf99Ec31E14/logo.png",
-          "pairs":[
-          ]
-      },
-      {
-         "chainId":1,
-         "asset":"c60_t0x2ba592F78dB6436527729929AAf6c908497cB200",
-         "type":"ERC20",
-         "address":"0x2ba592F78dB6436527729929AAf6c908497cB200",
-          "name":"Cream",
-          "symbol":"CREAM",
-          "decimals":18,
-          "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x2ba592F78dB6436527729929AAf6c908497cB200/logo.png",
-          "pairs":[
-          ]
-      },
-      {
-         "chainId":1,
-         "asset":"c60_t0xF5D669627376EBd411E34b98F19C868c8ABA5ADA",
-         "type":"ERC20",
-         "address":"0xF5D669627376EBd411E34b98F19C868c8ABA5ADA",
-          "name":"Axie Infinity",
-          "symbol":"AXS",
-          "decimals":18,
-          "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xF5D669627376EBd411E34b98F19C868c8ABA5ADA/logo.png",
-          "pairs":[
-          ]
-      },
-      {
-         "chainId":1,
-         "asset":"c60_t0x37236CD05b34Cc79d3715AF2383E96dd7443dCF1",
-         "type":"ERC20",
-         "address":"0x37236CD05b34Cc79d3715AF2383E96dd7443dCF1",
-          "name":"Small Love Potion",
-          "symbol":"SLP",
-          "decimals":0,
-          "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x37236CD05b34Cc79d3715AF2383E96dd7443dCF1/logo.png",
           "pairs":[
           ]
       }

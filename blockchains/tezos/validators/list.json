@@ -56,7 +56,7 @@
         },
         "status": {
             "disabled": true,
-            "note": "According to Baking Bad API, baker is not active, current status closed, see: https://api.baking-bad.org/v2/bakers/tz1Pwgj6j55akKCyvTwwr9X4np1RskSXpQY4"
+            "note": "According to Baking Bad API, baker is not active, current status dead, see: https://api.baking-bad.org/v2/bakers/tz1Pwgj6j55akKCyvTwwr9X4np1RskSXpQY4"
         }
     },
     {
@@ -191,7 +191,7 @@
         "description": "Everstake - Staking Service Platform. Delegate XTZ with Everstake, your trusted staking partner.",
         "website": "https://everstake.one/",
         "payout": {
-            "commission": 21,
+            "commission": 15,
             "payoutDelay": 6,
             "payoutPeriod": 1
         },
@@ -340,7 +340,7 @@
         },
         "status": {
             "disabled": true,
-            "note": "According to Baking Bad API, baker is not active, current status closed, see: https://api.baking-bad.org/v2/bakers/tz1LH4L6XYT2JNPhvWYC4Zq3XEiGgEwzNRvo"
+            "note": "According to Baking Bad API, baker is not active, current status dead, see: https://api.baking-bad.org/v2/bakers/tz1LH4L6XYT2JNPhvWYC4Zq3XEiGgEwzNRvo"
         }
     },
     {
@@ -355,10 +355,6 @@
         },
         "staking": {
             "minDelegation": 0
-        },
-        "status": {
-            "disabled": true,
-            "note": "No more capacity: -8369"
         }
     },
     {
@@ -381,16 +377,12 @@
         "description": "Staking for best PoS blockchains in one place",
         "website": "https://www.stakingshop.live",
         "payout": {
-            "commission": 3,
+            "commission": 15,
             "payoutDelay": 6,
             "payoutPeriod": 1
         },
         "staking": {
             "minDelegation": 100
-        },
-        "status": {
-            "disabled": true,
-            "note": "No more capacity: -3200"
         }
     },
     {
@@ -457,26 +449,12 @@
         "description": "Our biggest virtue is integry, we are always at your service. Come and bake with us!",
         "website": "https://www.tezoswakenbake.com",
         "payout": {
-            "commission": 5.9,
+            "commission": 6.6,
             "payoutDelay": 6,
             "payoutPeriod": 1
         },
         "staking": {
             "minDelegation": 500
-        }
-    },
-    {
-        "id": "tz1aDiEJf9ztRrAJEXZfcG3CKimoKsGhwVAi",
-        "name": "KryptStar",
-        "description": "Bake n' Shake, your neighborhood friendly baker, feel freee to DM on twitter if you have any questions regarding the service",
-        "website": "https://www.kryptstar.com/baking",
-        "payout": {
-            "commission": 8,
-            "payoutDelay": 6,
-            "payoutPeriod": 1
-        },
-        "staking": {
-            "minDelegation": 0
         }
     }
 ]

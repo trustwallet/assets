@@ -1,20 +1,12 @@
 import { chainsWithDenylist } from "./blockchains";
 import {
-    getChainAssetInfoPath,
-    getChainAssetLogoPath,
-    //getChainAssetsList,
-    getChainAssetsPath,
+    getChainAssetsList,
     getChainAllowlistPath,
     getChainDenylistPath
 } from "./repo-structure";
+import { readFileSync, writeFileSync } from "./filesystem";
 import {
-    isPathExistsSync,
-    readDirSync,
-    readFileSync,
-    writeFileSync
-} from "./filesystem";
-import {
-    //arrayDiff,
+    arrayDiff,
     arrayDiffNocase,
     findCommonElementsOrDuplicates,
     makeUnique
@@ -23,35 +15,10 @@ import { ActionInterface, CheckStepInterface } from "./interface";
 import { formatSortJson } from "./json";
 import * as bluebird from "bluebird";
 
-// Find assets for which full info is available -- logo+info -- and is not in the allowlist
-async function findFullAssetsWithNoAllow(chain: string, allowlist: string[]): Promise<string[]> {
-    const list: string[] = [];
-    const assetsPath = getChainAssetsPath(chain);
-    if (!isPathExistsSync(assetsPath)) {
-        return list;
-    }
-    await bluebird.mapSeries(readDirSync(assetsPath), async asset => {
-        if (allowlist.includes(asset)) {
-            // present in allowlist, skip
-            return;
-        }
-        const logoPath = getChainAssetLogoPath(chain, asset);
-        if (!isPathExistsSync(logoPath)) {
-            return;
-        }
-        const infoPath = getChainAssetInfoPath(chain, asset);
-        if (!isPathExistsSync(infoPath)) {
-            return;
-        }
-        // both files exist, not in allowlist
-        list.push(asset);
-    });
-    return list;
-}
-
 async function checkUpdateAllowDenyList(chain: string, checkOnly: boolean ): Promise<[boolean, string[], string[]]> {
     const errorMsgs: string[] = [];
     const warningMsgs: string[] = [];
+    const assets = getChainAssetsList(chain);
 
     const allowlistPath = getChainAllowlistPath(chain);
     const denylistPath = getChainDenylistPath(chain);
@@ -65,19 +32,14 @@ async function checkUpdateAllowDenyList(chain: string, checkOnly: boolean ): Pro
     if (commonElementsOrDuplicates && commonElementsOrDuplicates.length > 0) {
         errorMsgs.push(`Denylist and allowlist for chain ${chain} should have no common elements or duplicates, found ${commonElementsOrDuplicates.length} ${commonElementsOrDuplicates[0]}`);
     }
-    //const assetsWithLogo = getChainAssetsList(chain);
-    const assetsWithInfoNotInAllow = await findFullAssetsWithNoAllow(chain, currentAllowlist);
-    /*
-    const allowlistOrphan = arrayDiff(currentAllowlist, assetsWithLogo);
+    const allowlistOrphan = arrayDiff(currentAllowlist, assets);
     if (allowlistOrphan && allowlistOrphan.length > 0) {
         // warning only
-        warningMsgs.push(`Allowlist for chain ${chain} contains non-exitent assetsWithLogo, found ${allowlistOrphan.length}, ${allowlistOrphan[0]}`);
+        warningMsgs.push(`Allowlist for chain ${chain} contains non-exitent assets, found ${allowlistOrphan.length}, ${allowlistOrphan[0]}`);
     }
-    */
 
-    //const newDeny = makeUnique(currentDenylist.concat(allowlistOrphan));
-    const tempAssetsOrAllow = makeUnique(currentAllowlist.concat(assetsWithInfoNotInAllow));
-    const newAllow = makeUnique(arrayDiffNocase(tempAssetsOrAllow, currentDenylist));
+    const newDeny = makeUnique(currentDenylist.concat(allowlistOrphan));
+    const newAllow = makeUnique(arrayDiffNocase(assets, newDeny));
     //console.log(currentAllowlist.length, "vs.", newAllow.length);
     //console.log(currentDenylist.length, "vs.", newDeny.length);
 
@@ -92,7 +54,6 @@ async function checkUpdateAllowDenyList(chain: string, checkOnly: boolean ): Pro
         warningMsgs.push(`Some elements should be removed from allowlist for chain ${chain}: ${wDiff2.length} ${wDiff2[0]}`);
     }
 
-    /*
     const bDiff1 = arrayDiffNocase(newDeny, currentDenylist);
     if (bDiff1.length > 0) {
         warningMsgs.push(`Some elements are missing from denylist for chain ${chain}: ${bDiff1.length} ${bDiff1[0]}`);
@@ -101,14 +62,13 @@ async function checkUpdateAllowDenyList(chain: string, checkOnly: boolean ): Pro
     if (bDiff2.length > 0) {
         warningMsgs.push(`Some elements should be removed from denylist for chain ${chain}: ${bDiff2.length} ${bDiff2[0]}`);
     }
-    */
 
     // additionally check for nice formatting, sorting:
     const newAllowText = formatSortJson(newAllow);
+    const newDenyText = formatSortJson(newDeny);
     if (newAllowText !== currentAllowlistText) {
         warningMsgs.push(`Allowlist for chain ${chain}: not formatted nicely `);
     }
-    const newDenyText = formatSortJson(currentDenylist); // formatSortJson(newDeny);
     if (newDenyText !== currentDenylistText) {
         warningMsgs.push(`Denylist for chain ${chain}: not formatted nicely `);
     }
