@@ -39,6 +39,24 @@
         },
         {
           "base":"c20000714_t0x2170Ed0880ac9A755fd29B2688956BD959F933F8"
+        },
+        {
+          "base":"c20000714_t0x55d398326f99059fF775485246999027B3197955"
+        },
+        {
+          "base":"c20000714_t0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c"
+        },
+        {
+          "base":"c20000714_t0x4BD17003473389A42DAF6a0a729f6Fdb328BbBd7"
+        },
+        {
+          "base":"c20000714_t0xBf5140A22578168FD562DCcF235E5D43A02ce9B1"
+        },
+        {
+          "base":"c20000714_t0x63870A18B6e42b01Ef1Ad8A2302ef50B7132054F"
+        },
+        {
+          "base":"c20000714_t0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3"
         }
       ]
     },
@@ -155,6 +173,84 @@
       "symbol":"ETH",
       "decimals":18,
       "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x2170Ed0880ac9A755fd29B2688956BD959F933F8/logo.png",
+      "pairs":[
+
+      ]
+    },
+    {
+      "chainId":56,
+      "asset":"c20000714_t0x55d398326f99059fF775485246999027B3197955",
+      "type":"BEP20",
+      "address":"0x55d398326f99059fF775485246999027B3197955",
+      "name":"Binance-Peg Tether USD",
+      "symbol":"USDT",
+      "decimals":18,
+      "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x55d398326f99059fF775485246999027B3197955/logo.png",
+      "pairs":[
+
+      ]
+    },
+    {
+      "chainId":56,
+      "asset":"c20000714_t0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c",
+      "type":"BEP20",
+      "address":"0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c",
+      "name":"Binance-Peg BTCB Token",
+      "symbol":"BTCB",
+      "decimals":18,
+      "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c/logo.png",
+      "pairs":[
+
+      ]
+    },
+    {
+      "chainId":56,
+      "asset":"c20000714_t0x4BD17003473389A42DAF6a0a729f6Fdb328BbBd7",
+      "type":"BEP20",
+      "address":"0x4BD17003473389A42DAF6a0a729f6Fdb328BbBd7",
+      "name":"VAI Stablecoin",
+      "symbol":"VAI",
+      "decimals":18,
+      "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x4BD17003473389A42DAF6a0a729f6Fdb328BbBd7/logo.png",
+      "pairs":[
+
+      ]
+    },
+    {
+      "chainId":56,
+      "asset":"c20000714_t0xBf5140A22578168FD562DCcF235E5D43A02ce9B1",
+      "type":"BEP20",
+      "address":"0xBf5140A22578168FD562DCcF235E5D43A02ce9B1",
+      "name":"Binance-Peg Uniswap",
+      "symbol":"UNI",
+      "decimals":18,
+      "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xBf5140A22578168FD562DCcF235E5D43A02ce9B1/logo.png",
+      "pairs":[
+
+      ]
+    },
+    {
+      "chainId":56,
+      "asset":"c20000714_t0x63870A18B6e42b01Ef1Ad8A2302ef50B7132054F",
+      "type":"BEP20",
+      "address":"0x63870A18B6e42b01Ef1Ad8A2302ef50B7132054F",
+      "name":"BLink Token",
+      "symbol":"BLINK",
+      "decimals":6,
+      "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x63870A18B6e42b01Ef1Ad8A2302ef50B7132054F/logo.png",
+      "pairs":[
+
+      ]
+    },
+    {
+      "chainId":56,
+      "asset":"c20000714_t0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3",
+      "type":"BEP20",
+      "address":"0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3",
+      "name":"Binance-Peg Dai Token",
+      "symbol":"DAI",
+      "decimals":18,
+      "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3/logo.png",
       "pairs":[
 
       ]
