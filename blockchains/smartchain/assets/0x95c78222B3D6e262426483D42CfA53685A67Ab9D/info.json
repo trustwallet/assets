@@ -1,0 +1,23 @@
+{
+    "name": "Venus BUSD",
+    "website": "https://venus.io/",
+    "source_code": "https://github.com/SwipeWallet/venus-protocol",
+    "short_description": "Venus is building a Decentralized Finance (DeFi) money market platform on Binance Smart Chain",
+    "description": "The Venus vTokens, which are self-contained borrowing and lending contracts. VToken contains the core logic and VBep20, VBUSD, VSXP, VUSDC, VUSDT, VXVS and VBNB add public interfaces for Bep20 tokens and bnb, respectively.",
+    "research": "https://research.binance.com/en/projects/venus",
+    "socials": [
+        {
+            "name": "Twitter",
+            "url": "https://twitter.com/VenusProtocol"
+        },
+        {
+            "name": "Medium",
+            "url": "https://medium.com/VenusProtocol"
+        },
+        {
+            "name": "Telegram",
+            "url": "https://t.me/VenusProtocol"
+        }
+    ],
+    "explorer": "https://bscscan.com/token/0x95c78222B3D6e262426483D42CfA53685A67Ab9D"
+}
