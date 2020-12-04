@@ -55,6 +55,5 @@ export const chainsWithDenylist = ethForkChains.concat(
     Vechain,
     Ontology,
     Theta,
-    EOS,
-    Solana,
+    EOS
 );
