@@ -61,6 +61,9 @@ function explorerUrl(chain: string, contract: string): string {
 
             case "wanchain":
                 return `https://www.wanscan.org/token/${contract}`;
+
+            case "solana":
+                return `https://explorer.solana.com/address/${contract}`;
         }
     }
     return "";
