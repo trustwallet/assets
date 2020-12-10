@@ -144,7 +144,10 @@
             },
             {
                "base":"c60_t0x84cA8bc7997272c7CfB4D0Cd3D55cd942B3c9419"
-            }                 
+            },                
+            {
+               "base":"c60_t0x6BFf2fE249601ed0Db3a87424a2E923118BB0312"
+            }                
          ]
       },
       {
@@ -663,6 +666,18 @@
           "symbol":"DIA",
           "decimals":18,
           "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x84cA8bc7997272c7CfB4D0Cd3D55cd942B3c9419/logo.png",
+          "pairs":[
+          ]
+      },
+      {
+         "chainId":1,
+         "asset":"c60_t0x6BFf2fE249601ed0Db3a87424a2E923118BB0312",
+         "type":"ERC20",
+         "address":"0x6BFf2fE249601ed0Db3a87424a2E923118BB0312",
+          "name":"Fyooz",
+          "symbol":"FYZ",
+          "decimals":18,
+          "logoURI":"https://fyooz.s3-eu-west-1.amazonaws.com/fyooz+logo.jpg",
           "pairs":[
           ]
       }
