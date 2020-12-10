@@ -114,7 +114,37 @@
             },
             {
                "base":"c60_t0x37236CD05b34Cc79d3715AF2383E96dd7443dCF1"
-            }                
+            },
+            {
+               "base":"c60_t0x1cEB5cB57C4D4E2b2433641b95Dd330A33185A44"
+            },
+            {
+               "base":"c60_t0x40FD72257597aA14C7231A7B1aaa29Fce868F677"
+            },
+            {
+               "base":"c60_t0x6B3595068778DD592e39A122f4f5a5cF09C90fE2"
+            },
+            {
+               "base":"c60_t0xaaAEBE6Fe48E54f431b0C390CfaF0b017d09D42d"
+            },
+            {
+               "base":"c60_t0x967da4048cD07aB37855c090aAF366e4ce1b9F48"
+            },
+            {
+               "base":"c60_t0x2b591e99afE9f32eAA6214f7B7629768c40Eeb39"
+            },
+            {
+               "base":"c60_t0x584bC13c7D411c00c01A62e8019472dE68768430"
+            },
+            {
+               "base":"c60_t0x0Ae055097C6d159879521C384F1D2123D1f195e6"
+            },
+            {
+               "base":"c60_t0x8762db106B2c2A0bccB3A80d1Ed41273552616E8"
+            },
+            {
+               "base":"c60_t0x84cA8bc7997272c7CfB4D0Cd3D55cd942B3c9419"
+            }                 
          ]
       },
       {
@@ -513,6 +543,126 @@
           "symbol":"SLP",
           "decimals":0,
           "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x37236CD05b34Cc79d3715AF2383E96dd7443dCF1/logo.png",
+          "pairs":[
+          ]
+      },
+      {
+         "chainId":1,
+         "asset":"c60_t0x1cEB5cB57C4D4E2b2433641b95Dd330A33185A44",
+         "type":"ERC20",
+         "address":"0x1cEB5cB57C4D4E2b2433641b95Dd330A33185A44",
+          "name":"Keep3rV1",
+          "symbol":"KP3R",
+          "decimals":18,
+          "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x1cEB5cB57C4D4E2b2433641b95Dd330A33185A44/logo.png",
+          "pairs":[
+          ]
+      },
+      {
+         "chainId":1,
+         "asset":"c60_t0x40FD72257597aA14C7231A7B1aaa29Fce868F677",
+         "type":"ERC20",
+         "address":"0x40FD72257597aA14C7231A7B1aaa29Fce868F677",
+          "name":"Sora",
+          "symbol":"XOR",
+          "decimals":18,
+          "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x40FD72257597aA14C7231A7B1aaa29Fce868F677/logo.png",
+          "pairs":[
+          ]
+      },
+      {
+         "chainId":1,
+         "asset":"c60_t0x6B3595068778DD592e39A122f4f5a5cF09C90fE2",
+         "type":"ERC20",
+         "address":"0x6B3595068778DD592e39A122f4f5a5cF09C90fE2",
+          "name":"SushiSwap",
+          "symbol":"SUSHI",
+          "decimals":18,
+          "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x6B3595068778DD592e39A122f4f5a5cF09C90fE2/logo.png",
+          "pairs":[
+          ]
+      },
+      {
+         "chainId":1,
+         "asset":"c60_t0xaaAEBE6Fe48E54f431b0C390CfaF0b017d09D42d",
+         "type":"ERC20",
+         "address":"0xaaAEBE6Fe48E54f431b0C390CfaF0b017d09D42d",
+          "name":"Celsius",
+          "symbol":"CEL",
+          "decimals":4,
+          "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xaaAEBE6Fe48E54f431b0C390CfaF0b017d09D42d/logo.png",
+          "pairs":[
+          ]
+      },
+      {
+         "chainId":1,
+         "asset":"c60_t0x967da4048cD07aB37855c090aAF366e4ce1b9F48",
+         "type":"ERC20",
+         "address":"0x967da4048cD07aB37855c090aAF366e4ce1b9F48",
+          "name":"Ocean Protocol",
+          "symbol":"OCEAN",
+          "decimals":18,
+          "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x967da4048cD07aB37855c090aAF366e4ce1b9F48/logo.png",
+          "pairs":[
+          ]
+      },
+      {
+         "chainId":1,
+         "asset":"c60_t0x2b591e99afE9f32eAA6214f7B7629768c40Eeb39",
+         "type":"ERC20",
+         "address":"0x2b591e99afE9f32eAA6214f7B7629768c40Eeb39",
+          "name":"HEX",
+          "symbol":"HEX",
+          "decimals":8,
+          "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x2b591e99afE9f32eAA6214f7B7629768c40Eeb39/logo.png",
+          "pairs":[
+          ]
+      },
+      {
+         "chainId":1,
+         "asset":"c60_t0x584bC13c7D411c00c01A62e8019472dE68768430",
+         "type":"ERC20",
+         "address":"0x584bC13c7D411c00c01A62e8019472dE68768430",
+          "name":"Hegic",
+          "symbol":"HEGIC",
+          "decimals":18,
+          "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x584bC13c7D411c00c01A62e8019472dE68768430/logo.png",
+          "pairs":[
+          ]
+      },
+      {
+         "chainId":1,
+         "asset":"c60_t0x0Ae055097C6d159879521C384F1D2123D1f195e6",
+         "type":"ERC20",
+         "address":"0x0Ae055097C6d159879521C384F1D2123D1f195e6",
+          "name":"xDai",
+          "symbol":"STAKE",
+          "decimals":18,
+          "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x0Ae055097C6d159879521C384F1D2123D1f195e6/logo.png",
+          "pairs":[
+          ]
+      },
+      {
+         "chainId":1,
+         "asset":"c60_t0x8762db106B2c2A0bccB3A80d1Ed41273552616E8",
+         "type":"ERC20",
+         "address":"0x8762db106B2c2A0bccB3A80d1Ed41273552616E8",
+          "name":"Reserve Rights",
+          "symbol":"RSR",
+          "decimals":18,
+          "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x8762db106B2c2A0bccB3A80d1Ed41273552616E8/logo.png",
+          "pairs":[
+          ]
+      },
+      {
+         "chainId":1,
+         "asset":"c60_t0x84cA8bc7997272c7CfB4D0Cd3D55cd942B3c9419",
+         "type":"ERC20",
+         "address":"0x84cA8bc7997272c7CfB4D0Cd3D55cd942B3c9419",
+          "name":"DIA",
+          "symbol":"DIA",
+          "decimals":18,
+          "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x84cA8bc7997272c7CfB4D0Cd3D55cd942B3c9419/logo.png",
           "pairs":[
           ]
       }
