@@ -147,7 +147,10 @@
             },                
             {
                "base":"c60_t0x6BFf2fE249601ed0Db3a87424a2E923118BB0312"
-            }                
+            },
+            {
+               "base": "c60_t0x136A16f2698a0Bb163BA204ec26c2eFAD1c60722"
+            }             
          ]
       },
       {
@@ -680,6 +683,18 @@
           "logoURI":"https://fyooz.s3-eu-west-1.amazonaws.com/fyooz+logo.jpg",
           "pairs":[
           ]
+      },
+      {
+         "chainId":1,
+         "asset":"c60_t0x136A16f2698a0Bb163BA204ec26c2eFAD1c60722",
+         "type":"ERC20",
+         "address":"0x136A16f2698a0Bb163BA204ec26c2eFAD1c60722",
+         "name":"Evereth",
+         "symbol":"EVT",
+         "decimals":18,
+         "logoURI":"https://evereth.io/apple-touch-icon.png",
+         "pairs":[
+         ]
       }
    ],
    "version":{
