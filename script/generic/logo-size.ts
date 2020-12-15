@@ -1,6 +1,6 @@
 import * as bluebird from "bluebird";
 import {
-    chainsPath,
+    allChains,
     getChainLogoPath,
     getChainAssetsPath,
     getChainAssetLogoPath,
@@ -80,8 +80,7 @@ export class LogoSize implements ActionInterface {
             {
                 getName: () => { return "Check that logos are not too large"},
                 check: async () => {
-                    const foundChains = readDirSync(chainsPath);
-                    const largePaths = await checkDownsize(foundChains, true);
+                    const largePaths = await checkDownsize(allChains, true);
                     const errors: string[] = largePaths.map(p => `Logo too large: ${p}`);
                     return [errors, []];
                 }
@@ -90,7 +89,6 @@ export class LogoSize implements ActionInterface {
     }
 
     async sanityFix(): Promise<void> {
-        const foundChains = readDirSync(chainsPath);
-        await checkDownsize(foundChains, false);
+        await checkDownsize(allChains, false);
     }
 }

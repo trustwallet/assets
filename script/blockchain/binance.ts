@@ -16,27 +16,25 @@ import {
 } from "../generic/repo-structure";
 
 const binanceChain = "binance";
-const binanceUrlTokens2 = config.binanceUrlTokens2;
-const binanceUrlTokens8 = config.binanceUrlTokens8;
 const binanceUrlTokenAssets = config.binanceUrlTokenAssets;
 let cachedAssets = [];
 
 async function retrieveBep2AssetList(): Promise<unknown[]> {
-    console.log(`     Retrieving token asset infos from: ${binanceUrlTokenAssets}`);
+    console.log(`Retrieving token asset infos from: ${binanceUrlTokenAssets}`);
     const { assetInfoList } = await axios.get(binanceUrlTokenAssets).then(r => r.data);
-    console.log(`     Retrieved ${assetInfoList.length} token asset infos`);
+    console.log(`Retrieved ${assetInfoList.length} token asset infos`);
     return assetInfoList
 }
 
 async function retrieveAssets(): Promise<unknown[]> {
     // cache results because of rate limit, used more than once
     if (cachedAssets.length == 0) {
-        console.log(`     Retrieving token infos (${binanceUrlTokens2}, ${binanceUrlTokens8})`);
-        const bep2assets = await axios.get(binanceUrlTokens2);
-        const bep8assets = await axios.get(binanceUrlTokens8);
+        console.log(`Retrieving token infos`);
+        const bep2assets = await axios.get(`${config.binanceDexURL}/v1/tokens?limit=1000`);
+        const bep8assets = await axios.get(`${config.binanceDexURL}/v1/mini/tokens?limit=1000`);
         cachedAssets = bep2assets.data.concat(bep8assets.data);
     }
-    console.log(`     Using ${cachedAssets.length} assets`);
+    console.log(`Using ${cachedAssets.length} assets`);
     return cachedAssets;
 }
 

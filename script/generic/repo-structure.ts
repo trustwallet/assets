@@ -14,6 +14,7 @@ export const logoFullName = `${logoName}.${logoExtension}`;
 export const infoFullName = `${infoName}.${jsonExtension}`;
 const allowList = `allowlist.${jsonExtension}`;
 const denyList = `denylist.${jsonExtension}`;
+const tokenList = `tokenlist.${jsonExtension}`;
 export const validatorsList = `${listName}.${jsonExtension}`
 
 export const assetFolderAllowedFiles = [logoFullName, infoFullName];
@@ -21,11 +22,13 @@ export const chainFolderAllowedFiles = [
     "assets",
     allowList,
     denyList,
+    tokenList,
     "validators",
     infoName
 ]
 export const chainsPath: string = path.join(process.cwd(), '/blockchains');
 export const getChainPath = (chain: string): string => `${chainsPath}/${chain}`;
+export const allChains = readDirSync(chainsPath);
 export const getChainLogoPath = (chain: string): string => `${getChainPath(chain)}/info/${logoFullName}`;
 export const getChainAssetsPath = (chain: string): string => `${getChainPath(chain)}/assets`;
 export const getChainAssetPath = (chain: string, asset: string): string => `${getChainAssetsPath(chain)}/${asset}`;
@@ -33,6 +36,7 @@ export const getChainAssetLogoPath = (chain: string, asset: string): string => `
 export const getChainAssetInfoPath = (chain: string, asset: string): string => `${getChainAssetPath(chain, asset)}/${infoFullName}`;
 export const getChainAllowlistPath = (chain: string): string => `${getChainPath(chain)}/${allowList}`;
 export const getChainDenylistPath = (chain: string): string => `${getChainPath(chain)}/${denyList}`;
+export const getChainTokenlistPath = (chain: string): string => `${getChainPath(chain)}/${tokenList}`;
 export const pricingFolderPath = path.join(process.cwd(), '/pricing');
 
 export const getChainValidatorsPath = (chain: string): string => `${getChainPath(chain)}/validators`;
