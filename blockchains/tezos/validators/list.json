@@ -1,5 +1,19 @@
 [
     {
+        "id": "tz1NMNQYrYrfNpmUqQrMhJypf6ovnaDZhJHM",
+        "name": "Smart Node",
+        "description": "SmartNode is a Staking Service Provider aimed at giving anyone the opportunity to grow their crypto assets",
+        "website": "https://smart-node.com",
+        "payout": {
+            "commission": 6,
+            "payoutDelay": 6,
+            "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 1
+        }
+    },
+    {
         "id": "tz3QCNyySViKHmeSr45kzDxzchys7NiXCWoa",
         "name": "Proof of Bake",
         "description": "The world's best Tezos baking service",
@@ -19,12 +33,12 @@
         "description": "Your Trusted Crypto Rewards",
         "website": "https://stakin.com",
         "payout": {
-            "commission": 8,
+            "commission": 10,
             "payoutDelay": 1,
             "payoutPeriod": 1
         },
         "staking": {
-            "minDelegation": 0
+            "minDelegation": 20
         }
     },
     {
@@ -56,7 +70,7 @@
         },
         "status": {
             "disabled": true,
-            "note": "According to Baking Bad API, baker is not active, current status dead, see: https://api.baking-bad.org/v2/bakers/tz1Pwgj6j55akKCyvTwwr9X4np1RskSXpQY4"
+            "note": "According to Baking Bad API, baker is not active, current status closed, see: https://api.baking-bad.org/v2/bakers/tz1Pwgj6j55akKCyvTwwr9X4np1RskSXpQY4"
         }
     },
     {
@@ -155,10 +169,6 @@
         },
         "staking": {
             "minDelegation": 0
-        },
-        "status": {
-            "disabled": true,
-            "note": "No more capacity: -166874"
         }
     },
     {
@@ -195,7 +205,7 @@
         "description": "Everstake - Staking Service Platform. Delegate XTZ with Everstake, your trusted staking partner.",
         "website": "https://everstake.one/",
         "payout": {
-            "commission": 15,
+            "commission": 21,
             "payoutDelay": 6,
             "payoutPeriod": 1
         },
@@ -265,7 +275,7 @@
         "description": "Money Every 3 Days - Low fees, dependable payouts and active participant.",
         "website": "https://moneyevery3days.com",
         "payout": {
-            "commission": 4,
+            "commission": 6,
             "payoutDelay": 1,
             "payoutPeriod": 1
         },
@@ -344,7 +354,7 @@
         },
         "status": {
             "disabled": true,
-            "note": "No more capacity: -97982"
+            "note": "According to Baking Bad API, baker is not active, current status closed, see: https://api.baking-bad.org/v2/bakers/tz1LH4L6XYT2JNPhvWYC4Zq3XEiGgEwzNRvo"
         }
     },
     {
@@ -359,6 +369,10 @@
         },
         "staking": {
             "minDelegation": 0
+        },
+        "status": {
+            "disabled": true,
+            "note": "No more capacity: -2586"
         }
     },
     {
@@ -377,20 +391,16 @@
     },
     {
         "id": "tz1V3yg82mcrPJbegqVCPn6bC8w1CSTRp3f8",
-        "name": "Staking Shop",
+        "name": "Staking🛒Shop",
         "description": "Staking for best PoS blockchains in one place",
         "website": "https://www.stakingshop.live",
         "payout": {
-            "commission": 3,
+            "commission": 15,
             "payoutDelay": 6,
             "payoutPeriod": 1
         },
         "staking": {
             "minDelegation": 100
-        },
-        "status": {
-            "disabled": true,
-            "note": "No more capacity: -37470"
         }
     },
     {
@@ -429,7 +439,7 @@
         "description": "We Bake : You Make",
         "website": "https://www.tezbaker.io/",
         "payout": {
-            "commission": 12,
+            "commission": 15,
             "payoutDelay": 6,
             "payoutPeriod": 1
         },
@@ -442,6 +452,34 @@
         "name": "Bit Cat🐱",
         "description": "Secure and stable senior Tezos baker",
         "website": "https://www.bitcat365.com",
+        "payout": {
+            "commission": 8,
+            "payoutDelay": 6,
+            "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 0
+        }
+    },
+    {
+        "id": "tz1WctSwL49BZtdWAQ75NY6vr4xsAx6oKdah",
+        "name": "Tezos Wake n' Bake",
+        "description": "Our biggest virtue is integry, we are always at your service. Come and bake with us!",
+        "website": "https://www.tezoswakenbake.com",
+        "payout": {
+            "commission": 5.9,
+            "payoutDelay": 6,
+            "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 500
+        }
+    },
+    {
+        "id": "tz1aDiEJf9ztRrAJEXZfcG3CKimoKsGhwVAi",
+        "name": "KryptStar",
+        "description": "Bake n' Shake, your neighborhood friendly baker, feel freee to DM on twitter if you have any questions regarding the service",
+        "website": "https://www.kryptstar.com/baking",
         "payout": {
             "commission": 8,
             "payoutDelay": 6,
