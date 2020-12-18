@@ -11,6 +11,7 @@ import {
 import { arrayDiff } from "./types";
 import { isValidJSON } from "../generic/json";
 import { ActionInterface, CheckStepInterface } from "../generic/interface";
+import { CoinType } from "@trustwallet/wallet-core";
 import * as bluebird from "bluebird";
 
 const requiredKeys = ["explorer", "name", "website", "short_description"];
@@ -36,10 +37,10 @@ function isAssetInfoHasAllKeys(info: unknown, path: string): [boolean, string] {
 function explorerUrl(chain: string, contract: string): string {
     if (contract) {
         switch (chain.toLowerCase()) {
-            case "ethereum":
+            case CoinType.name(CoinType.ethereum):
                 return `https://etherscan.io/token/${contract}`;
 
-            case "tron":
+            case CoinType.name(CoinType.tron):
                 if (contract.startsWith("10")) {
                     // trc10
                     return `https://tronscan.io/#/token/${contract}`;
@@ -47,20 +48,23 @@ function explorerUrl(chain: string, contract: string): string {
                 // trc20
                 return `https://tronscan.io/#/token20/${contract}`;
 
-            case "binance":
+            case CoinType.name(CoinType.binance):
                 return `https://explorer.binance.org/asset/${contract}`;
 
-            case "smartchain":
+            case CoinType.name(CoinType.smartchain):
                 return `https://bscscan.com/token/${contract}`;
 
-            case "neo":
+            case CoinType.name(CoinType.neo):
                 return `https://neo.tokenview.com/en/token/0x${contract}`;
 
-            case "nuls":
+            case CoinType.name(CoinType.nuls):
                 return `https://nulscan.io/token/info?contractAddress=${contract}`;
 
-            case "wanchain":
+            case CoinType.name(CoinType.wanchain):
                 return `https://www.wanscan.org/token/${contract}`;
+
+            case CoinType.name(CoinType.solana):
+                return `https://explorer.solana.com/address/${contract}`;
         }
     }
     return "";
@@ -70,7 +74,7 @@ function explorerUrlAlternatives(chain: string, contract: string, name: string):
     const altUrls: string[] = [];
     if (name) {
         const nameNorm = name.toLowerCase().replace(' ', '').replace(')', '').replace('(', '');
-        if (chain.toLowerCase() == "ethereum") {
+        if (chain.toLowerCase() == CoinType.name(CoinType.ethereum)) {
             altUrls.push(`https://etherscan.io/token/${nameNorm}`);
         }
         altUrls.push(`https://explorer.${nameNorm}.io`);
@@ -114,7 +118,7 @@ function isAssetInfoOK(chain: string, address: string, errors: string[], warning
                 explorersAlt.forEach(exp => { if (exp.toLowerCase() == explorerActualLower) { ++matchCount; }});
                 if (matchCount == 0) {
                     // none matches, this is warning/error
-                    if (chain.toLowerCase() == "ethereum" || chain.toLowerCase() == "smartchain") {
+                    if (chain.toLowerCase() == CoinType.name(CoinType.ethereum) || chain.toLowerCase() == CoinType.name(CoinType.smartchain)) {
                         errors.push(`Incorrect explorer, ${explorerActual} instead of ${explorerExpected} (${explorersAlt.join(', ')})`);
                     } else {
                         warnings.push(`Unexpected explorer, ${explorerActual} instead of ${explorerExpected} (${explorersAlt.join(', ')})`);
