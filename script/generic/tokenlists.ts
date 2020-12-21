@@ -92,13 +92,10 @@ export class TokenLists implements ActionInterface {
         return steps;
     }
 
-    async consistencyFix(): Promise<void> {
-
+    async update(): Promise<void> {
         // binance chain list
-        const list = await generateBinanceTokensList()
+        const list = await generateBinanceTokensList();
         writeFileSync(getChainTokenlistPath(Binance), formatJson(generateTokensList(list)));
-
-        return 
     }
 }
 
