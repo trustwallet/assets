@@ -57,6 +57,9 @@
         },
         {
           "base":"c20000714_t0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3"
+        },
+        {
+          "base":"c20000714_t0xD98560689C6e748DC37bc410B4d3096B1aA3D8C2"
         }
       ]
     },
@@ -251,6 +254,19 @@
       "symbol":"DAI",
       "decimals":18,
       "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3/logo.png",
+      "pairs":[
+
+      ]
+    },
+    {
+      "chainId":56,
+      "asset":"c20000714_t0xD98560689C6e748DC37bc410B4d3096B1aA3D8C2",
+      "type":"BEP20",
+      "address":"0xD98560689C6e748DC37bc410B4d3096B1aA3D8C2",
+      "name":"DeFi For You.",
+      "symbol":"DFY",
+      "decimals":18,
+      "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xD98560689C6e748DC37bc410B4d3096B1aA3D8C2/logo.png",
       "pairs":[
 
       ]
