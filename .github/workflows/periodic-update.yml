@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          token: ${{ secrets.DANGER_GITHUB_API_TOKEN }}
+          token: ${{ secrets.COMMIT_TOKEN }}
           ref: ${{ github.head_ref }} 
       - uses: actions/setup-node@v1
         with:
