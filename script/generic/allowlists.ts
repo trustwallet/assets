@@ -1,3 +1,5 @@
+// (c)
+
 import { chainsWithDenylist } from "./blockchains";
 import {
     getChainAssetInfoPath,
