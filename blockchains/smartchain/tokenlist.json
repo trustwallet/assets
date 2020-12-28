@@ -1,0 +1,264 @@
+{
+  "name":"Trust Wallet: Smart Chain",
+  "logoURI":"https://trustwallet.com/assets/images/favicon.png",
+  "keywords":[
+
+  ],
+  "timestamp":"2020-10-03T12:37:57.000+00:00",
+  "tokens":[
+    {
+      "chainId":56,
+      "asset":"c20000714_t0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+      "type":"BEP20",
+      "address":"0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+      "name":"Wrapped BNB",
+      "symbol":"WBNB",
+      "decimals":18,
+      "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c/logo.png",
+      "pairs":[
+        {
+          "base":"c20000714_t0x4B0F1812e5Df2A09796481Ff14017e6005508003"
+        },
+        {
+          "base":"c20000714_t0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82"
+        },
+        {
+          "base":"c20000714_t0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56"
+        },
+        {
+          "base":"c20000714_t0xcF6BB5389c92Bdda8a3747Ddb454cB7a64626C63"
+        },
+        {
+          "base":"c20000714_t0xa2B726B1145A4773F68593CF171187d8EBe4d495"
+        },
+        {
+          "base":"c20000714_t0xa1faa113cbE53436Df28FF0aEe54275c13B40975"
+        },
+        {
+          "base":"c20000714_t0xf79037F6f6bE66832DE4E7516be52826BC3cBcc4"
+        },
+        {
+          "base":"c20000714_t0x2170Ed0880ac9A755fd29B2688956BD959F933F8"
+        },
+        {
+          "base":"c20000714_t0x55d398326f99059fF775485246999027B3197955"
+        },
+        {
+          "base":"c20000714_t0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c"
+        },
+        {
+          "base":"c20000714_t0x4BD17003473389A42DAF6a0a729f6Fdb328BbBd7"
+        },
+        {
+          "base":"c20000714_t0xBf5140A22578168FD562DCcF235E5D43A02ce9B1"
+        },
+        {
+          "base":"c20000714_t0x63870A18B6e42b01Ef1Ad8A2302ef50B7132054F"
+        },
+        {
+          "base":"c20000714_t0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3"
+        }
+      ]
+    },
+    {
+      "chainId":56,
+      "asset":"c20000714_t0x4B0F1812e5Df2A09796481Ff14017e6005508003",
+      "type":"BEP20",
+      "address":"0x4B0F1812e5Df2A09796481Ff14017e6005508003",
+      "name":"Trust Wallet",
+      "symbol":"TWT",
+      "decimals":18,
+      "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x4B0F1812e5Df2A09796481Ff14017e6005508003/logo.png",
+      "pairs":[
+
+      ]
+    },
+    {
+      "chainId":56,
+      "asset":"c20000714_t0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82",
+      "type":"BEP20",
+      "address":"0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82",
+      "name":"PancakeSwap Token",
+      "symbol":"Cake",
+      "decimals":18,
+      "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82/logo.png",
+      "pairs":[
+
+      ]
+    },
+    {
+      "chainId":56,
+      "asset":"c20000714_t0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56",
+      "type":"BEP20",
+      "address":"0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56",
+      "name":"BUSD",
+      "symbol":"BUSD",
+      "decimals":18,
+      "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56/logo.png",
+      "pairs":[
+
+      ]
+    },
+    {
+      "chainId":56,
+      "asset":"c20000714_t0xcF6BB5389c92Bdda8a3747Ddb454cB7a64626C63",
+      "type":"BEP20",
+      "address":"0xcF6BB5389c92Bdda8a3747Ddb454cB7a64626C63",
+      "name":"Venus",
+      "symbol":"XVS",
+      "decimals":18,
+      "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xcF6BB5389c92Bdda8a3747Ddb454cB7a64626C63/logo.png",
+      "pairs":[
+
+      ]
+    },
+    {
+      "chainId":56,
+      "asset":"c20000714_t0xa2B726B1145A4773F68593CF171187d8EBe4d495",
+      "type":"BEP20",
+      "address":"0xa2B726B1145A4773F68593CF171187d8EBe4d495",
+      "name":"Injective Protocol",
+      "symbol":"INJ",
+      "decimals":18,
+      "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xa2B726B1145A4773F68593CF171187d8EBe4d495/logo.png",
+      "pairs":[
+
+      ]
+    },
+    {
+      "chainId":56,
+      "asset":"c20000714_t0xa1faa113cbE53436Df28FF0aEe54275c13B40975",
+      "type":"BEP20",
+      "address":"0xa1faa113cbE53436Df28FF0aEe54275c13B40975",
+      "name":"Alpha Token",
+      "symbol":"ALPHA",
+      "decimals":18,
+      "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xa1faa113cbE53436Df28FF0aEe54275c13B40975/logo.png",
+      "pairs":[
+
+      ]
+    },
+    {
+      "chainId":56,
+      "asset":"c20000714_t0xA8c2B8eec3d368C0253ad3dae65a5F2BBB89c929",
+      "type":"BEP20",
+      "address":"0xA8c2B8eec3d368C0253ad3dae65a5F2BBB89c929",
+      "name":"CertiK Token",
+      "symbol":"CTK",
+      "decimals":6,
+      "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xA8c2B8eec3d368C0253ad3dae65a5F2BBB89c929/logo.png",
+      "pairs":[
+
+      ]
+    },
+    {
+      "chainId":56,
+      "asset":"c20000714_t0xf79037F6f6bE66832DE4E7516be52826BC3cBcc4",
+      "type":"BEP20",
+      "address":"0xf79037F6f6bE66832DE4E7516be52826BC3cBcc4",
+      "name":"Hard Protocol",
+      "symbol":"HARD",
+      "decimals":6,
+      "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xf79037F6f6bE66832DE4E7516be52826BC3cBcc4/logo.png",
+      "pairs":[
+
+      ]
+    },
+    {
+      "chainId":56,
+      "asset":"c20000714_t0x2170Ed0880ac9A755fd29B2688956BD959F933F8",
+      "type":"BEP20",
+      "address":"0x2170Ed0880ac9A755fd29B2688956BD959F933F8",
+      "name":"Ethereum Token",
+      "symbol":"ETH",
+      "decimals":18,
+      "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x2170Ed0880ac9A755fd29B2688956BD959F933F8/logo.png",
+      "pairs":[
+
+      ]
+    },
+    {
+      "chainId":56,
+      "asset":"c20000714_t0x55d398326f99059fF775485246999027B3197955",
+      "type":"BEP20",
+      "address":"0x55d398326f99059fF775485246999027B3197955",
+      "name":"Binance-Peg Tether USD",
+      "symbol":"USDT",
+      "decimals":18,
+      "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x55d398326f99059fF775485246999027B3197955/logo.png",
+      "pairs":[
+
+      ]
+    },
+    {
+      "chainId":56,
+      "asset":"c20000714_t0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c",
+      "type":"BEP20",
+      "address":"0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c",
+      "name":"Binance-Peg BTCB Token",
+      "symbol":"BTCB",
+      "decimals":18,
+      "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c/logo.png",
+      "pairs":[
+
+      ]
+    },
+    {
+      "chainId":56,
+      "asset":"c20000714_t0x4BD17003473389A42DAF6a0a729f6Fdb328BbBd7",
+      "type":"BEP20",
+      "address":"0x4BD17003473389A42DAF6a0a729f6Fdb328BbBd7",
+      "name":"VAI Stablecoin",
+      "symbol":"VAI",
+      "decimals":18,
+      "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x4BD17003473389A42DAF6a0a729f6Fdb328BbBd7/logo.png",
+      "pairs":[
+
+      ]
+    },
+    {
+      "chainId":56,
+      "asset":"c20000714_t0xBf5140A22578168FD562DCcF235E5D43A02ce9B1",
+      "type":"BEP20",
+      "address":"0xBf5140A22578168FD562DCcF235E5D43A02ce9B1",
+      "name":"Binance-Peg Uniswap",
+      "symbol":"UNI",
+      "decimals":18,
+      "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xBf5140A22578168FD562DCcF235E5D43A02ce9B1/logo.png",
+      "pairs":[
+
+      ]
+    },
+    {
+      "chainId":56,
+      "asset":"c20000714_t0x63870A18B6e42b01Ef1Ad8A2302ef50B7132054F",
+      "type":"BEP20",
+      "address":"0x63870A18B6e42b01Ef1Ad8A2302ef50B7132054F",
+      "name":"BLink Token",
+      "symbol":"BLINK",
+      "decimals":6,
+      "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x63870A18B6e42b01Ef1Ad8A2302ef50B7132054F/logo.png",
+      "pairs":[
+
+      ]
+    },
+    {
+      "chainId":56,
+      "asset":"c20000714_t0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3",
+      "type":"BEP20",
+      "address":"0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3",
+      "name":"Binance-Peg Dai Token",
+      "symbol":"DAI",
+      "decimals":18,
+      "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3/logo.png",
+      "pairs":[
+
+      ]
+    }
+  ],
+  "version":{
+    "major":0,
+    "minor":1,
+    "patch":0
+  }
+}
