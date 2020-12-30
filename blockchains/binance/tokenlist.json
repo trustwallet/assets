@@ -454,7 +454,7 @@
                 },
                 {
                     "base": "c714_tSPNDB-916",
-                    "lotSize": "1000000000",
+                    "lotSize": "10000000000",
                     "tickSize": "1"
                 },
                 {
@@ -559,8 +559,8 @@
                 },
                 {
                     "base": "c714_tXRP-BF2",
-                    "lotSize": "10000000",
-                    "tickSize": "10"
+                    "lotSize": "100000000",
+                    "tickSize": "1"
                 },
                 {
                     "base": "c714_tXRPBEAR-00B",
@@ -670,7 +670,7 @@
                 },
                 {
                     "base": "c714_tXRP-BF2",
-                    "lotSize": "10000000",
+                    "lotSize": "100000000",
                     "tickSize": "100"
                 },
                 {
@@ -885,7 +885,7 @@
                 {
                     "base": "c714_tBUSD-BD1",
                     "lotSize": "10000000",
-                    "tickSize": "10"
+                    "tickSize": "100"
                 }
             ]
         },
