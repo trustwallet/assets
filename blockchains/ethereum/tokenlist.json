@@ -150,6 +150,9 @@
             },
             {
                "base":"c60_t0x111111111117dC0aa78b770fA6A738034120C302"
+            },
+            {
+               "base": "c60_t0xff2b3353c3015e9f1fbf95b9bda23f58aa7ce007"
             }
          ]
       },
@@ -732,6 +735,19 @@
          "address":"0x111111111117dC0aa78b770fA6A738034120C302",
          "name":"1INCH Token",
          "symbol":"1INCH",
+         "decimals":18,
+         "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x111111111117dC0aa78b770fA6A738034120C302/logo.png",
+         "pairs":[
+            
+         ]
+      },
+      {
+         "chainId":1,
+         "asset":"c60_t0xff2b3353c3015e9f1fbf95b9bda23f58aa7ce007",
+         "type":"ERC20",
+         "address":"0xff2b3353c3015e9f1fbf95b9bda23f58aa7ce007",
+         "name":"BitScreenerToken",
+         "symbol":"BITX",
          "decimals":18,
          "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x111111111117dC0aa78b770fA6A738034120C302/logo.png",
          "pairs":[
