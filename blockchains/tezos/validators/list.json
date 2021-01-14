@@ -5,7 +5,7 @@
         "description": "SmartNode is a Staking Service Provider aimed at giving anyone the opportunity to grow their crypto assets",
         "website": "https://smart-node.com",
         "payout": {
-            "commission": 6,
+            "commission": 10,
             "payoutDelay": 6,
             "payoutPeriod": 1
         },
@@ -275,7 +275,7 @@
         "description": "Money Every 3 Days - Low fees, dependable payouts and active participant.",
         "website": "https://moneyevery3days.com",
         "payout": {
-            "commission": 6,
+            "commission": 10,
             "payoutDelay": 1,
             "payoutPeriod": 1
         },
@@ -369,10 +369,6 @@
         },
         "staking": {
             "minDelegation": 0
-        },
-        "status": {
-            "disabled": true,
-            "note": "No more capacity: -5410"
         }
     },
     {

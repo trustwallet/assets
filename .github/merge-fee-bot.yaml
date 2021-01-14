@@ -47,6 +47,9 @@ label:
   paid: 'Payment Status: Paid'
 user:
   assignOnPay: zachzwei,catenocrypt
+  # if set to 1 comments from not allowed users are deleted.  Only comments from the PR creator or collaborators are allowed
+  deleteComments: 1
+  collaborators: zachzwei,Iamdeadlyz,catenocrypt,vikmeup
 timeout:
   maxAgeCloseHours: 60
   maxIdleRemindHours: 17
