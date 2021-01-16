@@ -219,16 +219,12 @@
         "description": "Everstake - Staking Service Platform. Delegate XTZ with Everstake, your trusted staking partner.",
         "website": "https://everstake.one/",
         "payout": {
-            "commission": 8,
+            "commission": 10,
             "payoutDelay": 6,
             "payoutPeriod": 1
         },
         "staking": {
             "minDelegation": 0
-        },
-        "status": {
-            "disabled": true,
-            "note": "No more capacity: -316201"
         }
     },
     {
