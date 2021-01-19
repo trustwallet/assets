@@ -1,6 +1,20 @@
 {
-  "name" : "WIS",
+  "name" : "Experty Wisdom Token",
   "website" : "https://experty.io",
-  "short_description" : "Experty Wisdom Token",
-  "explorer" : "https://etherscan.io/address/0xDecade1c6Bf2cD9fb89aFad73e4a519C867adcF5"
+  "source_code": "https://github.com/experty",
+  "short_description" : "Experty is a platform that aims to exchange wisdom, to empower people to make better decisions through the power and liquidity of Wisdom Pools. WIS is the native coin of the platform.",
+  "description" : "Experty created a new category - Wisdom Pools that remove the barriers to specialized knowledge and give users quick access to specialists in the blockchain space. Sending queries is easy, and receiving quick responses is incentivized within the system. The Wisdom Pools are powered by Ethereum to allow automatic payments for the exchange of wisdom on fair and equal terms. Experty team has created a hub where specialists can join pools to provide wisdom liquidity, and those seeking their wisdom may come to find it.",
+  "socials": [
+          {
+              "name": "Twitter",
+              "url": "https://twitter.com/experty_io",
+              "handle": "experty_io"
+          },
+          {
+              "name": "Facebook",
+              "url": "https://www.facebook.com/experty.io",
+              "handle": "experty.io"
+          }
+      ],  
+  "explorer" : "https://etherscan.io/address/0xDecade1c6Bf2cD9fb89aFad73e4a519C867adcF5",
 }
