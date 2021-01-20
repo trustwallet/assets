@@ -737,6 +737,45 @@
          "pairs":[
             
          ]
+      },
+      {
+         "chainId":1,
+         "asset":"c60_t0x368b3a58b5f49392e5c9e4c998cb0bb966752e51",
+         "type":"ERC20",
+         "address":"0x368b3a58b5f49392e5c9e4c998cb0bb966752e51",
+         "name":"Mithril Cash",
+         "symbol":"MIC",
+         "decimals":18,
+         "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x368b3a58b5f49392e5c9e4c998cb0bb966752e51/logo.png",
+         "pairs":[
+            
+         ]
+      },
+      {
+         "chainId":1,
+         "asset":"c60_t0x4b4d2e899658fb59b1d518b68fe836b100ee8958",
+         "type":"ERC20",
+         "address":"0x4b4d2e899658fb59b1d518b68fe836b100ee8958",
+         "name":"Mithril Share",
+         "symbol":"MIS",
+         "decimals":18,
+         "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x4b4d2e899658fb59b1d518b68fe836b100ee8958/logo.png",
+         "pairs":[
+            
+         ]
+      },
+      {
+         "chainId":1,
+         "asset":"c60_t0x74fc4575a47330340e631f7e0ea550be519fcd0a",
+         "type":"ERC20",
+         "address":"0x74fc4575a47330340e631f7e0ea550be519fcd0a",
+         "name":"Mithril Bond",
+         "symbol":"MIB",
+         "decimals":18,
+         "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x74fc4575a47330340e631f7e0ea550be519fcd0a/logo.png",
+         "pairs":[
+            
+         ]
       }
    ],
    "version":{
