@@ -4,7 +4,7 @@ import { getChainAssetLogoPath } from "../generic/repo-structure";
 import { Ethereum } from "../generic/blockchains";
 import { isPathExistsSync } from "../generic/filesystem";
 
-
+// see https://thegraph.com/explorer/subgraph/uniswap/uniswap-v2
 const Uniswap_TradingPairsUrl = "https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v2";
 const Uniswap_TradingPairsQuery = "query pairs {\\n  pairs(first: 200, orderBy: reserveUSD, orderDirection: desc) {\\n id\\n reserveUSD\\n trackedReserveETH\\n volumeUSD\\n    untrackedVolumeUSD\\n __typename\\n token0 {\\n id\\n symbol\\n name\\n __typename\\n }\\n token1 {\\n id\\n symbol\\n name\\n __typename\\n }\\n }\\n}\\n";
 const Uniswap_MinLiquidity = 1000000;
