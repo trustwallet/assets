@@ -1,16 +1,16 @@
 import { ActionInterface, CheckStepInterface } from "../generic/interface";
 import { getTradingPairs, PairInfo } from "../generic/subgraph";
 import { getChainAssetLogoPath } from "../generic/repo-structure";
-import { SmartChain } from "../generic/blockchains";
+import { Ethereum } from "../generic/blockchains";
 import { isPathExistsSync } from "../generic/filesystem";
 
 
-const PancakeSwap_TradingPairsUrl = "https://api.bscgraph.org/subgraphs/name/wowswap";
-const PancakeSwap_TradingPairsQuery = "query pairs {\\n  pairs(first: 200, orderBy: reserveUSD, orderDirection: desc) {\\n id\\n reserveUSD\\n trackedReserveETH\\n volumeUSD\\n    untrackedVolumeUSD\\n __typename\\n token0 {\\n id\\n symbol\\n name\\n __typename\\n }\\n token1 {\\n id\\n symbol\\n name\\n __typename\\n }\\n }\\n}\\n";
-const PancakeSwap_MinLiquidity = 1000000;
+const Uniswap_TradingPairsUrl = "https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v2";
+const Uniswap_TradingPairsQuery = "query pairs {\\n  pairs(first: 200, orderBy: reserveUSD, orderDirection: desc) {\\n id\\n reserveUSD\\n trackedReserveETH\\n volumeUSD\\n    untrackedVolumeUSD\\n __typename\\n token0 {\\n id\\n symbol\\n name\\n __typename\\n }\\n token1 {\\n id\\n symbol\\n name\\n __typename\\n }\\n }\\n}\\n";
+const Uniswap_MinLiquidity = 1000000;
 
-function checkBSCTokenExists(id: string): boolean {
-    const logoPath = getChainAssetLogoPath(SmartChain, id);
+function checkEthTokenExists(id: string): boolean {
+    const logoPath = getChainAssetLogoPath(Ethereum, id);
     const exists = isPathExistsSync(logoPath);
     //console.log("logoPath", exists, logoPath);
     return exists;
@@ -25,11 +25,11 @@ function checkTradingPair(pair: PairInfo, minLiquidity: number): boolean {
         console.log("pair with low liquidity:", pair.token0.symbol, "--", pair.token1.symbol, "  ", pair.reserveUSD);
         return false;
     }
-    if (!checkBSCTokenExists(pair.token0.id)) {
+    if (!checkEthTokenExists(pair.token0.id)) {
         console.log("pair with unsupported 1st coin:", pair.token0.symbol, "--", pair.token1.symbol);
         return false;
     }
-    if (!checkBSCTokenExists(pair.token1.id)) {
+    if (!checkEthTokenExists(pair.token1.id)) {
         console.log("pair with unsupported 2nd coin:", pair.token0.symbol, "--", pair.token1.symbol);
         return false;
     }
@@ -37,16 +37,16 @@ function checkTradingPair(pair: PairInfo, minLiquidity: number): boolean {
     return true;
 }
 
-// Retrieve trading pairs from PancakeSwap
-async function retrievePancakeSwapPairs(): Promise<void> {
-    const pairs = await getTradingPairs(PancakeSwap_TradingPairsUrl, PancakeSwap_TradingPairsQuery);
+// Retrieve trading pairs from Uniswap
+async function retrieveUniswapPairs(): Promise<void> {
+    const pairs = await getTradingPairs(Uniswap_TradingPairsUrl, Uniswap_TradingPairsQuery);
     var filtered: PairInfo[] = [];
     pairs.forEach(x => {
         try {
             if (typeof(x) === "object") {
                 const pairInfo = x as PairInfo;
                 if (pairInfo) {
-                    if (checkTradingPair(pairInfo, PancakeSwap_MinLiquidity)) {
+                    if (checkTradingPair(pairInfo, Uniswap_MinLiquidity)) {
                         filtered.push(pairInfo);
                         console.log("pair:", pairInfo.token0.symbol, "--", pairInfo.token1.symbol, "  ", pairInfo.reserveUSD);
                     }
@@ -63,12 +63,12 @@ async function retrievePancakeSwapPairs(): Promise<void> {
     });
 }
 
-export class SmartchainAction implements ActionInterface {
-    getName(): string { return "Binance Smartchain"; }
+export class EthereumAction implements ActionInterface {
+    getName(): string { return "Ethereum"; }
 
     getSanityChecks(): CheckStepInterface[] { return []; }
 
     async update(): Promise<void> {
-        await retrievePancakeSwapPairs();
+        await retrieveUniswapPairs();
     }
 }
