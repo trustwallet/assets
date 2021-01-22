@@ -14,7 +14,6 @@ import { TronAction } from "../blockchain/tron";
 import { Validators } from "../generic/validators";
 import { WavesAction } from "../blockchain/waves";
 import { Allowlists } from "../generic/allowlists";
-import { TokenLists } from "../generic/tokenlists";
 import { ActionInterface, CheckStepInterface } from "../generic/interface";
 import * as chalk from 'chalk';
 import * as bluebird from "bluebird";
@@ -25,7 +24,6 @@ const actionList: ActionInterface[] = [
     new EthForks(),
     new LogoSize(),
     new Allowlists(),
-    new TokenLists(),
     new Validators(),
     new JsonAction(),
     // chains:
