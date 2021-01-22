@@ -3,10 +3,11 @@ import { getTradingPairs, PairInfo } from "../generic/subgraph";
 import { getChainAssetLogoPath } from "../generic/repo-structure";
 import { SmartChain } from "../generic/blockchains";
 import { isPathExistsSync } from "../generic/filesystem";
+//import { TokenItem, List, Version, Pair } from "../generic/tokenlists";
 
 
 const PancakeSwap_TradingPairsUrl = "https://api.bscgraph.org/subgraphs/name/wowswap";
-const PancakeSwap_TradingPairsQuery = "query pairs {\\n  pairs(first: 200, orderBy: reserveUSD, orderDirection: desc) {\\n id\\n reserveUSD\\n trackedReserveETH\\n volumeUSD\\n    untrackedVolumeUSD\\n __typename\\n token0 {\\n id\\n symbol\\n name\\n __typename\\n }\\n token1 {\\n id\\n symbol\\n name\\n __typename\\n }\\n }\\n}\\n";
+const PancakeSwap_TradingPairsQuery = "query pairs {\\n  pairs(first: 200, orderBy: reserveUSD, orderDirection: desc) {\\n id\\n reserveUSD\\n trackedReserveETH\\n volumeUSD\\n    untrackedVolumeUSD\\n __typename\\n token0 {\\n id\\n symbol\\n name\\n decimals\\n __typename\\n }\\n token1 {\\n id\\n symbol\\n name\\n decimals\\n __typename\\n }\\n }\\n}\\n";
 const PancakeSwap_MinLiquidity = 1000000;
 
 function checkBSCTokenExists(id: string): boolean {
@@ -61,6 +62,26 @@ async function retrievePancakeSwapPairs(): Promise<void> {
     filtered.forEach(p => {
         console.log(`pair:  ${p.token0.symbol} -- ${p.token1.symbol} \t USD ${Math.round(p.reserveUSD)} \t ${p.token0.id} ${p.token1.id}`);
     });
+
+    /*
+    const tokens: TokenItem[] = [];
+    filtered.forEach(p => {
+        tokens.push(new TokenItem("c20000714_t" + p.token0.id, "BEP20", p.token0.id, p.token0.name, p.token0.symbol, p.token0.decimals,
+            `https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/${p.token0.id}/logo.png`,
+            <[Pair]>{}));
+        tokens.push(new TokenItem("c20000714_t" + p.token1.id, "BEP20", p.token1.id, p.token1.name, p.token1.symbol, p.token1.decimals,
+            `https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/${p.token1.id}/logo.png`,
+            <[Pair]>{}));
+    });
+    const tokenList: List = new List(
+        "Trust Wallet: BNB",
+        "https://trustwallet.com/assets/images/favicon.png",
+        "2020-10-03T12:37:57.000+00:00",
+        <[TokenItem]>tokens.sort((n1,n2) => (n2.pairs || []).length - (n1.pairs || []).length),
+        new Version(0, 1, 0)
+    );
+    console.log(tokenList);
+    */
 }
 
 export class SmartchainAction implements ActionInterface {
