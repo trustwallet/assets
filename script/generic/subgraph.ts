@@ -26,6 +26,5 @@ export async function getTradingPairs(apiUrl: string, subgraphQuery: string): Pr
     }
     const pairs = result.data.pairs;
     console.log(`Retrieved ${pairs.length} trading pair infos`);
-    console.log(pairs[0]);
     return pairs;
 }

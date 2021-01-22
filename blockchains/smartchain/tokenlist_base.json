@@ -1,0 +1,81 @@
+{
+  "name":"Trust Wallet: Smart Chain",
+  "logoURI":"https://trustwallet.com/assets/images/favicon.png",
+  "keywords":[],
+  "timestamp":"2020-10-03T12:37:57.000+00:00",
+  "tokens":[
+    {
+      "chainId":56,
+      "asset":"c20000714_t0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+      "type":"BEP20",
+      "address":"0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+      "name":"Wrapped BNB",
+      "symbol":"WBNB",
+      "decimals":18,
+      "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c/logo.png",
+      "pairs":[
+        {
+          "base":"c20000714_t0x4B0F1812e5Df2A09796481Ff14017e6005508003"
+        },
+        {
+          "base":"c20000714_t0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56"
+        },
+        {
+          "base":"c20000714_t0x2170Ed0880ac9A755fd29B2688956BD959F933F8"
+        },
+        {
+          "base":"c20000714_t0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c"
+        }
+      ]
+    },
+    {
+      "chainId":56,
+      "asset":"c20000714_t0x4B0F1812e5Df2A09796481Ff14017e6005508003",
+      "type":"BEP20",
+      "address":"0x4B0F1812e5Df2A09796481Ff14017e6005508003",
+      "name":"Trust Wallet",
+      "symbol":"TWT",
+      "decimals":18,
+      "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x4B0F1812e5Df2A09796481Ff14017e6005508003/logo.png",
+      "pairs":[]
+    },
+    {
+      "chainId":56,
+      "asset":"c20000714_t0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56",
+      "type":"BEP20",
+      "address":"0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56",
+      "name":"BUSD",
+      "symbol":"BUSD",
+      "decimals":18,
+      "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56/logo.png",
+      "pairs":[]
+    },
+    {
+      "chainId":56,
+      "asset":"c20000714_t0x2170Ed0880ac9A755fd29B2688956BD959F933F8",
+      "type":"BEP20",
+      "address":"0x2170Ed0880ac9A755fd29B2688956BD959F933F8",
+      "name":"Ethereum Token",
+      "symbol":"ETH",
+      "decimals":18,
+      "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x2170Ed0880ac9A755fd29B2688956BD959F933F8/logo.png",
+      "pairs":[]
+    },
+    {
+      "chainId":56,
+      "asset":"c20000714_t0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c",
+      "type":"BEP20",
+      "address":"0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c",
+      "name":"Binance-Peg BTCB Token",
+      "symbol":"BTCB",
+      "decimals":18,
+      "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c/logo.png",
+      "pairs":[]
+    }
+  ],
+  "version":{
+    "major":0,
+    "minor":1,
+    "patch":0
+  }
+}

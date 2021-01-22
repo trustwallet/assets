@@ -22,7 +22,7 @@ function checkTradingPair(pair: PairInfo, minLiquidity: number): boolean {
         return false;
     }
     if (pair.reserveUSD < minLiquidity) {
-        console.log("pair with low liquidity:", pair.token0.symbol, "--", pair.token1.symbol, "  ", pair.reserveUSD);
+        console.log("pair with low liquidity:", pair.token0.symbol, "--", pair.token1.symbol, "  ", Math.round(pair.reserveUSD));
         return false;
     }
     if (!checkEthTokenExists(pair.token0.id)) {
@@ -48,7 +48,6 @@ async function retrieveUniswapPairs(): Promise<void> {
                 if (pairInfo) {
                     if (checkTradingPair(pairInfo, Uniswap_MinLiquidity)) {
                         filtered.push(pairInfo);
-                        console.log("pair:", pairInfo.token0.symbol, "--", pairInfo.token1.symbol, "  ", pairInfo.reserveUSD);
                     }
                 }
             }
@@ -59,7 +58,7 @@ async function retrieveUniswapPairs(): Promise<void> {
 
     console.log("Retrieved & filtered", filtered.length, "pairs:");
     filtered.forEach(p => {
-        console.log(`pair:  ${p.token0.symbol} -- ${p.token1.symbol} \t USD ${Math.round(p.reserveUSD)} \t ${p.token0.id} ${p.token1.id}`);
+        console.log(`pair:  ${p.token0.symbol} -- ${p.token1.symbol} \t USD ${Math.round(p.reserveUSD)}`);
     });
 }
 

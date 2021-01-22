@@ -6,9 +6,9 @@ import * as chalk from 'chalk';
 import * as config from "../config";
 import { ActionInterface, CheckStepInterface } from "../generic/interface";
 import { Binance } from "../generic/blockchains";
-import { readDirSync, writeFileSync } from "../generic/filesystem";
-import { readJsonFile, formatJson } from "../generic/json";
-import { TokenItem, Pair, generateTokensList } from "../generic/tokenlists";
+import { readDirSync } from "../generic/filesystem";
+import { readJsonFile } from "../generic/json";
+import { TokenItem, Pair, generateTokensList, writeToFile } from "../generic/tokenlists";
 import {
     getChainAssetLogoPath,
     getChainAssetsPath,
@@ -140,8 +140,7 @@ export class BinanceAction implements ActionInterface {
 
         // binance chain list
         const list = await generateBinanceTokensList();
-        writeFileSync(getChainTokenlistPath(Binance), formatJson(generateTokensList("BNB", list)));
-        console.log(`Binance token list: list with ${list.length} tokens generated.`);
+        writeToFile(getChainTokenlistPath(Binance), generateTokensList("BNB", list));
     }
 }
 

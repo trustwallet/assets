@@ -1,10 +1,11 @@
 import { ActionInterface, CheckStepInterface } from "../generic/interface";
-import { getTradingPairs, PairInfo } from "../generic/subgraph";
-import { getChainAssetLogoPath } from "../generic/repo-structure";
+import { getTradingPairs, PairInfo, TokenInfo } from "../generic/subgraph";
+import { getChainAssetLogoPath, getChainTokenlistBasePath, getChainTokenlistPath } from "../generic/repo-structure";
 import { SmartChain } from "../generic/blockchains";
-import { isPathExistsSync } from "../generic/filesystem";
-//import { TokenItem, List, Version, Pair } from "../generic/tokenlists";
-
+import { isPathExistsSync, writeFileSync } from "../generic/filesystem";
+import { TokenItem, List, generateTokensList, addPairIfNeeded, writeToFile } from "../generic/tokenlists";
+import { readJsonFile } from "../generic/json";
+import { toChecksum } from "../generic/eth-address";
 
 const PancakeSwap_TradingPairsUrl = "https://api.bscgraph.org/subgraphs/name/wowswap";
 const PancakeSwap_TradingPairsQuery = "query pairs {\\n  pairs(first: 200, orderBy: reserveUSD, orderDirection: desc) {\\n id\\n reserveUSD\\n trackedReserveETH\\n volumeUSD\\n    untrackedVolumeUSD\\n __typename\\n token0 {\\n id\\n symbol\\n name\\n decimals\\n __typename\\n }\\n token1 {\\n id\\n symbol\\n name\\n decimals\\n __typename\\n }\\n }\\n}\\n";
@@ -23,7 +24,7 @@ function checkTradingPair(pair: PairInfo, minLiquidity: number): boolean {
         return false;
     }
     if (pair.reserveUSD < minLiquidity) {
-        console.log("pair with low liquidity:", pair.token0.symbol, "--", pair.token1.symbol, "  ", pair.reserveUSD);
+        console.log("pair with low liquidity:", pair.token0.symbol, "--", pair.token1.symbol, "  ", Math.round(pair.reserveUSD));
         return false;
     }
     if (!checkBSCTokenExists(pair.token0.id)) {
@@ -38,8 +39,7 @@ function checkTradingPair(pair: PairInfo, minLiquidity: number): boolean {
     return true;
 }
 
-// Retrieve trading pairs from PancakeSwap
-async function retrievePancakeSwapPairs(): Promise<void> {
+async function retrievePancakeSwapPairs(): Promise<PairInfo[]> {
     const pairs = await getTradingPairs(PancakeSwap_TradingPairsUrl, PancakeSwap_TradingPairsQuery);
     const filtered: PairInfo[] = [];
     pairs.forEach(x => {
@@ -49,7 +49,6 @@ async function retrievePancakeSwapPairs(): Promise<void> {
                 if (pairInfo) {
                     if (checkTradingPair(pairInfo, PancakeSwap_MinLiquidity)) {
                         filtered.push(pairInfo);
-                        console.log("pair:", pairInfo.token0.symbol, "--", pairInfo.token1.symbol, "  ", pairInfo.reserveUSD);
                     }
                 }
             }
@@ -60,28 +59,37 @@ async function retrievePancakeSwapPairs(): Promise<void> {
 
     console.log("Retrieved & filtered", filtered.length, "pairs:");
     filtered.forEach(p => {
-        console.log(`pair:  ${p.token0.symbol} -- ${p.token1.symbol} \t USD ${Math.round(p.reserveUSD)} \t ${p.token0.id} ${p.token1.id}`);
+        console.log(`pair:  ${p.token0.symbol} -- ${p.token1.symbol} \t USD ${Math.round(p.reserveUSD)}`);
     });
 
-    /*
-    const tokens: TokenItem[] = [];
-    filtered.forEach(p => {
-        tokens.push(new TokenItem("c20000714_t" + p.token0.id, "BEP20", p.token0.id, p.token0.name, p.token0.symbol, p.token0.decimals,
-            `https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/${p.token0.id}/logo.png`,
-            <[Pair]>{}));
-        tokens.push(new TokenItem("c20000714_t" + p.token1.id, "BEP20", p.token1.id, p.token1.name, p.token1.symbol, p.token1.decimals,
-            `https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/${p.token1.id}/logo.png`,
-            <[Pair]>{}));
+    return filtered;
+}
+
+function tokenInfoFromSubgraphToken(token: TokenInfo): TokenItem {
+    const idChecksum = toChecksum(token.id);
+    return new TokenItem(
+        "c20000714_t" + idChecksum, "BEP20",
+        idChecksum, token.name, token.symbol, token.decimals,
+        `https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/${idChecksum}/logo.png`,
+        []);
+}
+
+// Retrieve trading pairs from PancakeSwap
+async function generateTokenlist(): Promise<void> {
+    const tokenlistFile = getChainTokenlistBasePath(SmartChain);
+    const json = readJsonFile(tokenlistFile);
+    const list: List = json as List;
+    console.log(`Tokenlist base, ${list.tokens.length} tokens`);
+    
+    const tradingPairs = await retrievePancakeSwapPairs();
+    tradingPairs.forEach(p => {
+        const tokenItem0 = tokenInfoFromSubgraphToken(p.token0);
+        const tokenItem1 = tokenInfoFromSubgraphToken(p.token1);
+        addPairIfNeeded(tokenItem0, tokenItem1, list);
     });
-    const tokenList: List = new List(
-        "Trust Wallet: BNB",
-        "https://trustwallet.com/assets/images/favicon.png",
-        "2020-10-03T12:37:57.000+00:00",
-        <[TokenItem]>tokens.sort((n1,n2) => (n2.pairs || []).length - (n1.pairs || []).length),
-        new Version(0, 1, 0)
-    );
-    console.log(tokenList);
-    */
+    console.log(`Tokenlist updated, ${list.tokens.length} tokens`);
+
+    writeToFile(getChainTokenlistPath(SmartChain), generateTokensList("Smart Chain", list.tokens));
 }
 
 export class SmartchainAction implements ActionInterface {
@@ -90,6 +98,6 @@ export class SmartchainAction implements ActionInterface {
     getSanityChecks(): CheckStepInterface[] { return []; }
 
     async update(): Promise<void> {
-        await retrievePancakeSwapPairs();
+        await generateTokenlist();
     }
 }
