@@ -5,15 +5,20 @@ import * as path from "path";
 import * as chalk from 'chalk';
 import * as config from "../config";
 import { ActionInterface, CheckStepInterface } from "../generic/interface";
-import { getChainAssetsPath } from "../generic/repo-structure";
 import { Binance } from "../generic/blockchains";
-import { readDirSync } from "../generic/filesystem";
-import { readJsonFile } from "../generic/json";
-
+import { readDirSync, writeFileSync } from "../generic/filesystem";
+import { readJsonFile, formatJson } from "../generic/json";
+import { TokenItem, Pair, generateTokensList } from "../generic/tokenlists";
 import {
     getChainAssetLogoPath,
-    getChainDenylistPath
+    getChainAssetsPath,
+    getChainDenylistPath,
+    getChainTokenlistPath
 } from "../generic/repo-structure";
+import { CoinType } from "@trustwallet/wallet-core";
+import { toSatoshis } from "../generic/numbers";
+import { assetID } from "../generic/asset";
+import { TokenType } from "../generic/tokentype";
 
 const binanceChain = "binance";
 const binanceUrlTokenAssets = config.binanceUrlTokenAssets;
@@ -132,5 +137,84 @@ export class BinanceAction implements ActionInterface {
             console.log(`Fetched ${fetchedAssets.length} asset(s):`);
             fetchedAssets.forEach(asset => console.log(`  ${asset}`));
         }
+
+        // binance chain list
+        const list = await generateBinanceTokensList();
+        writeFileSync(getChainTokenlistPath(Binance), formatJson(generateTokensList("BNB", list)));
+        console.log(`Binance token list: list with ${list.length} tokens generated.`);
     }
+}
+
+class BinanceMarket {
+    base_asset_symbol: string
+    quote_asset_symbol: string
+    lot_size: string
+    tick_size: string
+}
+
+async function generateBinanceTokensList(): Promise<[TokenItem]> {
+    const decimals = CoinType.decimals(CoinType.binance)
+    const BNBSymbol = CoinType.symbol(CoinType.binance)
+    const markets: [BinanceMarket] = await axios.get(`${config.binanceDexURL}/v1/markets?limit=10000`).then(r => r.data);
+    const tokens = await axios.get(`${config.binanceDexURL}/v1/tokens?limit=10000`).then(r => r.data);
+    const tokensMap = Object.assign({}, ...tokens.map(s => ({[s.symbol]: s})));
+    const pairsMap = {}
+    const pairsList = new Set();
+
+    markets.forEach(market => {
+        const key = market.quote_asset_symbol
+
+        function pair(market: BinanceMarket): Pair {
+            return new Pair(
+                asset(market.base_asset_symbol),
+                toSatoshis(market.lot_size, decimals),
+                toSatoshis(market.tick_size, decimals)
+            )
+        }
+
+        if (pairsMap[key]) {
+            const newList = pairsMap[key]
+            newList.push(pair(market))
+            pairsMap[key] = newList
+        } else {
+            pairsMap[key] = [
+                pair(market)
+            ]
+        }
+        pairsList.add(market.base_asset_symbol)
+        pairsList.add(market.quote_asset_symbol)
+    })
+
+    function logoURI(symbol: string): string {
+        if (symbol == BNBSymbol) {
+            return `${config.assetsURL}/blockchains/binance/assets/${symbol}/logo.png`
+        }
+        return `${config.assetsURL}/blockchains/binance/assets/${symbol}/logo.png`
+    }
+    function asset(symbol: string): string {
+        if (symbol == BNBSymbol) {
+            return assetID(CoinType.binance)
+        }
+        return assetID(CoinType.binance, symbol)
+    }
+    function tokenType(symbol: string): string {
+        if (symbol == BNBSymbol) {
+            return TokenType.COIN
+        }
+        return TokenType.BEP2
+    }
+    const list = <[string]>Array.from(pairsList.values())
+    return <[TokenItem]>list.map(item => {
+        const token = tokensMap[item]
+        return new TokenItem (
+            asset(token.symbol),
+            tokenType(token.symbol),
+            token.symbol,
+            token.name,
+            token.original_symbol,
+            decimals,
+            logoURI(token.symbol),
+            pairsMap[token.symbol] || []
+    )
+    }).sort((n1,n2) => (n2.pairs || []).length - (n1.pairs || []).length);
 }
