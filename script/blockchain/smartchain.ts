@@ -40,7 +40,7 @@ function checkTradingPair(pair: PairInfo, minLiquidity: number): boolean {
 // Retrieve trading pairs from PancakeSwap
 async function retrievePancakeSwapPairs(): Promise<void> {
     const pairs = await getTradingPairs(PancakeSwap_TradingPairsUrl, PancakeSwap_TradingPairsQuery);
-    var filtered: PairInfo[] = [];
+    const filtered: PairInfo[] = [];
     pairs.forEach(x => {
         try {
             if (typeof(x) === "object") {

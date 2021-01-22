@@ -40,7 +40,7 @@ function checkTradingPair(pair: PairInfo, minLiquidity: number): boolean {
 // Retrieve trading pairs from Uniswap
 async function retrieveUniswapPairs(): Promise<void> {
     const pairs = await getTradingPairs(Uniswap_TradingPairsUrl, Uniswap_TradingPairsQuery);
-    var filtered: PairInfo[] = [];
+    const filtered: PairInfo[] = [];
     pairs.forEach(x => {
         try {
             if (typeof(x) === "object") {
