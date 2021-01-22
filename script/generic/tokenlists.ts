@@ -14,11 +14,11 @@ class List {
     name: string
     logoURI: string
     timestamp: string
-    tokens: [TokenItem]
-    pairs: [Pair]
+    tokens: TokenItem[]
+    pairs: Pair[]
     version: Version
 
-    constructor(name: string, logoURI: string, timestamp: string, tokens: [TokenItem], version: Version) {
+    constructor(name: string, logoURI: string, timestamp: string, tokens: TokenItem[], version: Version) {
         this.name = name
         this.logoURI = logoURI
         this.timestamp = timestamp;
@@ -35,9 +35,9 @@ export class TokenItem {
     symbol: string;
     decimals: number;
     logoURI: string;
-    pairs: [Pair];
+    pairs: Pair[];
 
-    constructor(asset: string, type: string, address: string, name: string, symbol: string, decimals: number, logoURI: string, pairs: [Pair]) {
+    constructor(asset: string, type: string, address: string, name: string, symbol: string, decimals: number, logoURI: string, pairs: Pair[]) {
         this.asset = asset
         this.type = type
         this.address = address
@@ -61,7 +61,7 @@ export class Pair {
     }
 }
 
-export function generateTokensList(titleCoin: string, tokens: [TokenItem]): List {
+export function generateTokensList(titleCoin: string, tokens: TokenItem[]): List {
     return new List(
         `Trust Wallet: ${titleCoin}`,
         "https://trustwallet.com/assets/images/favicon.png",
