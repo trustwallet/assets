@@ -826,6 +826,22 @@
             ]
         },
         {
+            "asset": "c714_tDAI-D75",
+            "type": "BEP2",
+            "address": "DAI-D75",
+            "name": "DaiBEP2",
+            "symbol": "DAI",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/DAI-D75/logo.png",
+            "pairs": [
+                {
+                    "base": "c714_tBUSD-BD1",
+                    "lotSize": "10000000",
+                    "tickSize": "100"
+                }
+            ]
+        },
+        {
             "asset": "c714_tETH-1C9",
             "type": "BEP2",
             "address": "ETH-1C9",
@@ -870,22 +886,6 @@
                     "base": "c714",
                     "lotSize": "100000",
                     "tickSize": "10000"
-                }
-            ]
-        },
-        {
-            "asset": "c714_tDAI-D75",
-            "type": "BEP2",
-            "address": "DAI-D75",
-            "name": "DaiBEP2",
-            "symbol": "DAI",
-            "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/DAI-D75/logo.png",
-            "pairs": [
-                {
-                    "base": "c714_tBUSD-BD1",
-                    "lotSize": "10000000",
-                    "tickSize": "100"
                 }
             ]
         },
