@@ -104,8 +104,8 @@
                 },
                 {
                     "base": "c714_tBULL-BE4",
-                    "lotSize": "100",
-                    "tickSize": "1000000"
+                    "lotSize": "1000",
+                    "tickSize": "100000"
                 },
                 {
                     "base": "c714_tBZNT-464",
@@ -139,7 +139,7 @@
                 },
                 {
                     "base": "c714_tCNNS-E16",
-                    "lotSize": "10000000000",
+                    "lotSize": "1000000000",
                     "tickSize": "1"
                 },
                 {
@@ -164,7 +164,7 @@
                 },
                 {
                     "base": "c714_tCSM-734",
-                    "lotSize": "10000000000",
+                    "lotSize": "100000000000",
                     "tickSize": "1"
                 },
                 {
@@ -224,8 +224,8 @@
                 },
                 {
                     "base": "c714_tETHBULL-D33",
-                    "lotSize": "1000",
-                    "tickSize": "100000"
+                    "lotSize": "10000",
+                    "tickSize": "10000"
                 },
                 {
                     "base": "c714_tEVT-49B",
@@ -529,7 +529,7 @@
                 },
                 {
                     "base": "c714_tVOTE-FD4",
-                    "lotSize": "1000000000",
+                    "lotSize": "10000000000",
                     "tickSize": "1"
                 },
                 {
@@ -554,7 +554,7 @@
                 },
                 {
                     "base": "c714_tXBASE-CD2",
-                    "lotSize": "1000000000",
+                    "lotSize": "10000000000",
                     "tickSize": "1"
                 },
                 {
@@ -686,7 +686,7 @@
                 {
                     "base": "c714_tZEC-93E",
                     "lotSize": "100000",
-                    "tickSize": "100000"
+                    "tickSize": "10000"
                 }
             ]
         },
