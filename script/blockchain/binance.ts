@@ -142,20 +142,6 @@ export class BinanceAction implements ActionInterface {
         const list = await generateBinanceTokensList();
         writeToFile(getChainTokenlistPath(Binance), generateTokensList("BNB", list));
     }
-    const list = <[string]>Array.from(pairsList.values())
-    return <[TokenItem]>list.map(item => {
-        const token = tokensMap[item]
-        return new TokenItem (
-            asset(token.symbol),
-            tokenType(token.symbol),
-            token.symbol,
-            token.name,
-            token.original_symbol,
-            decimals,
-            logoURI(token.symbol),
-            pairsMap[token.symbol] || []
-    )
-    }).sort((n1,n2) => (n2.pairs || []).length - (n1.pairs || []).length);
 }
 
 class BinanceMarket {
@@ -165,7 +151,7 @@ class BinanceMarket {
     tick_size: string
 }
 
-async function generateBinanceTokensList(): Promise<[TokenItem]> {
+async function generateBinanceTokensList(): Promise<TokenItem[]> {
     const decimals = CoinType.decimals(CoinType.binance)
     const BNBSymbol = CoinType.symbol(CoinType.binance)
     const markets: [BinanceMarket] = await axios.get(`${config.binanceDexURL}/v1/markets?limit=10000`).then(r => r.data);
@@ -216,8 +202,8 @@ async function generateBinanceTokensList(): Promise<[TokenItem]> {
         }
         return TokenType.BEP2
     }
-    const list = <[string]>Array.from(pairsList.values())
-    return <[TokenItem]>list.map(item => {
+    const list = <string[]>Array.from(pairsList.values())
+    return <TokenItem[]>list.map(item => {
         const token = tokensMap[item]
         return new TokenItem (
             asset(token.symbol),
