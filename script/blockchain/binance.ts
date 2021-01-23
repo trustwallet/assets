@@ -215,5 +215,5 @@ async function generateBinanceTokensList(): Promise<[TokenItem]> {
             logoURI(token.symbol),
             pairsMap[token.symbol] || []
     )
-    }).sort((n1,n2) => (n2.pairs || []).length - (n1.pairs || []).length);
+    });
 }

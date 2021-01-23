@@ -84,7 +84,7 @@ function totalPairs(list: List): number {
     return c;
 }
 
-export function writeToFile(filename: string, list: List) {
+export function writeToFile(filename: string, list: List): void {
     writeJsonFile(filename, list);
     console.log(`Tokenlist: list with ${list.tokens.length} tokens and ${totalPairs(list)} pairs written to ${filename}.`);
 }
