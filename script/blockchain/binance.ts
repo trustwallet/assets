@@ -141,7 +141,7 @@ export class BinanceAction implements ActionInterface {
         // binance chain list
         const list = await generateBinanceTokensList();
         writeToFile(getChainTokenlistPath(Binance), generateTokensList("BNB", list,
-            "2020-10-03T12:37:57.000+00:00", // prevent changing time every time; would cause many commits only because of this
+            "2020-10-03T12:37:57.000+00:00", // use constants to prevent changing time every time; would cause many commits only because of this
             0, 1, 0));
     }
 }

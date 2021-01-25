@@ -92,30 +92,37 @@ export function writeToFile(filename: string, list: List): void {
     console.log(`Tokenlist: list with ${list.tokens.length} tokens and ${totalPairs(list)} pairs written to ${filename}.`);
 }
 
-function addTokenIfNeeded(token: TokenItem, list: List) {
+// return number of additions
+function addTokenIfNeeded(token: TokenItem, list: List): number {
     if (list.tokens.map(t => t.address.toLowerCase()).includes(token.address.toLowerCase())) {
-        return;
+        return 0;
     }
     list.tokens.push(token);
+    return 1;
 }
 
-function addPairToToken(pairToken: TokenItem, token: TokenItem, list: List) {
+// return number of changes
+function addPairToToken(pairToken: TokenItem, token: TokenItem, list: List): number {
     const tokenInList = list.tokens.find(t => t.address === token.address);
     if (!tokenInList) {
-        return;
+        return 0;
     }
     if (!tokenInList.pairs) {
         tokenInList.pairs = [];
     }
     if (tokenInList.pairs.map(p => p.base).includes(pairToken.asset)) {
-        return;
+        return 0;
     }
     tokenInList.pairs.push(new Pair(pairToken.asset));
+    return 1;
 }
 
-export function addPairIfNeeded(token0: TokenItem, token1: TokenItem, list: List) {
-    addTokenIfNeeded(token0, list);
-    addTokenIfNeeded(token1, list);
-    addPairToToken(token0, token1, list);
-    addPairToToken(token1, token0, list);
+// return the number of additions
+export function addPairIfNeeded(token0: TokenItem, token1: TokenItem, list: List): number {
+    let changed = 0;
+    changed += addTokenIfNeeded(token0, list);
+    changed += addTokenIfNeeded(token1, list);
+    changed += addPairToToken(token0, token1, list);
+    changed += addPairToToken(token1, token0, list);
+    return changed;
 }
