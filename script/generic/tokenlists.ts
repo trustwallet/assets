@@ -72,12 +72,7 @@ export function generateTokensList(titleCoin: string, tokens: TokenItem[], time:
         `Trust Wallet: ${titleCoin}`,
         "https://trustwallet.com/assets/images/favicon.png",
         time,
-        tokens.sort((t1,t2) => {
-            const t1pairs = (t1.pairs || []).length;
-            const t2pairs = (t2.pairs || []).length;
-            if (t1pairs != t2pairs) { return t2pairs - t1pairs; }
-            return t1.address.localeCompare(t2.address);
-        }),
+        tokens,
         new Version(versionMajor, versionMinor, versionPatch)
     );
     sort(list);
@@ -98,27 +93,25 @@ export function writeToFile(filename: string, list: List): void {
 // Write out to file, updating version+timestamp if there was change
 export function writeToFileWithUpdate(filename: string, list: List): void {
     let listOld: List = undefined;
-    let oldVersion: Version = new Version(0, 0, 0);
     try {
         listOld = readJsonFile(filename) as List;
     } catch (err) {
+        listOld = undefined;
     }
     let changed = false;
     if (listOld === undefined) {
         changed = true;
     } else {
-        oldVersion = listOld.version;
+        list.version = listOld.version; // take over
         const diffs = diffTokenlist(list, listOld);
         if (diffs != undefined) {
             //console.log("List has Changed", JSON.stringify(diffs));
             changed = true;
+            list.version = new Version(list.version.major + 1, 0, 0);
         }
     }
     if (changed) {
-        // update version and time
-        list.version.major = oldVersion.major + 1;
-        list.version.minor = 0;
-        list.version.patch = 0;
+        // update timestqamp
         list.timestamp = (new Date()).toISOString();
         console.log(`Version and timestamp updated, ${list.version.major}.${list.version.minor}.${list.version.patch} timestamp ${list.timestamp}`);
     }
@@ -177,10 +170,10 @@ function clearUnimportantFields(list: List) {
     list.version = new Version(0, 0, 0);
 }
 
-export function diffTokenlist(listOrig1: List, listOrig2: List) {
+export function diffTokenlist(listOrig1: List, listOrig2: List): unknown {
     // deep copy, to avoid changes
-    let list1 = JSON.parse(JSON.stringify(listOrig1));
-    let list2 = JSON.parse(JSON.stringify(listOrig2));
+    const list1 = JSON.parse(JSON.stringify(listOrig1));
+    const list2 = JSON.parse(JSON.stringify(listOrig2));
     clearUnimportantFields(list1);
     clearUnimportantFields(list2);
     sort(list1);
