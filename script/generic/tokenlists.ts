@@ -97,6 +97,7 @@ export function writeToFileWithUpdate(filename: string, list: List): void {
     try {
         listOld = readJsonFile(filename) as List;
     } catch (err) {
+        listOld = undefined;
     }
     let changed = false;
     if (listOld === undefined) {
@@ -137,10 +138,10 @@ function clearUnimportantFields(list: List) {
     list.version = new Version(0, 0, 0);
 }
 
-export function diffTokenlist(listOrig1: List, listOrig2: List) {
+export function diffTokenlist(listOrig1: List, listOrig2: List): unknown {
     // deep copy, to avoid changes
-    let list1 = JSON.parse(JSON.stringify(listOrig1));
-    let list2 = JSON.parse(JSON.stringify(listOrig2));
+    const list1 = JSON.parse(JSON.stringify(listOrig1));
+    const list2 = JSON.parse(JSON.stringify(listOrig2));
     clearUnimportantFields(list1);
     clearUnimportantFields(list2);
     sort(list1);
