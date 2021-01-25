@@ -64,10 +64,12 @@ export class Pair {
 }
 
 export function generateTokensList(titleCoin: string, tokens: TokenItem[]): List {
+    let currentDate = new Date();
+
     return new List(
         `Trust Wallet: ${titleCoin}`,
         "https://trustwallet.com/assets/images/favicon.png",
-        "2020-10-03T12:37:57.000+00:00",
+        currentDate.toISOString(),
         tokens.sort((t1,t2) => {
             const t1pairs = (t1.pairs || []).length;
             const t2pairs = (t2.pairs || []).length;
