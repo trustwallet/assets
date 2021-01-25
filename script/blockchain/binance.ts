@@ -8,7 +8,7 @@ import { ActionInterface, CheckStepInterface } from "../generic/interface";
 import { Binance } from "../generic/blockchains";
 import { readDirSync } from "../generic/filesystem";
 import { readJsonFile } from "../generic/json";
-import { TokenItem, Pair, generateTokensList, writeToFile } from "../generic/tokenlists";
+import { TokenItem, Pair, generateTokensList, writeToFileWithUpdate } from "../generic/tokenlists";
 import {
     getChainAssetLogoPath,
     getChainAssetsPath,
@@ -17,7 +17,7 @@ import {
 } from "../generic/repo-structure";
 import { CoinType } from "@trustwallet/wallet-core";
 import { toSatoshis } from "../generic/numbers";
-import { assetID } from "../generic/asset";
+import { assetIdSymbol, logoURI, tokenType } from "../generic/asset";
 import { TokenType } from "../generic/tokentype";
 
 const binanceChain = "binance";
@@ -139,8 +139,11 @@ export class BinanceAction implements ActionInterface {
         }
 
         // binance chain list
-        const list = await generateBinanceTokensList();
-        writeToFile(getChainTokenlistPath(Binance), generateTokensList("BNB", list));
+        const tokenList = await generateBinanceTokensList();
+        const list = generateTokensList("BNB", tokenList,
+            "2020-10-03T12:37:57.000+00:00", // use constants here to prevent changing time every time
+            0, 1, 0);
+        writeToFileWithUpdate(getChainTokenlistPath(Binance), list);
     }
 }
 
@@ -165,7 +168,7 @@ async function generateBinanceTokensList(): Promise<TokenItem[]> {
 
         function pair(market: BinanceMarket): Pair {
             return new Pair(
-                asset(market.base_asset_symbol),
+                assetIdSymbol(market.base_asset_symbol, BNBSymbol, CoinType.binance),
                 toSatoshis(market.lot_size, decimals),
                 toSatoshis(market.tick_size, decimals)
             )
@@ -184,35 +187,17 @@ async function generateBinanceTokensList(): Promise<TokenItem[]> {
         pairsList.add(market.quote_asset_symbol)
     })
 
-    function logoURI(symbol: string): string {
-        if (symbol == BNBSymbol) {
-            return `${config.assetsURL}/blockchains/binance/assets/${symbol}/logo.png`
-        }
-        return `${config.assetsURL}/blockchains/binance/assets/${symbol}/logo.png`
-    }
-    function asset(symbol: string): string {
-        if (symbol == BNBSymbol) {
-            return assetID(CoinType.binance)
-        }
-        return assetID(CoinType.binance, symbol)
-    }
-    function tokenType(symbol: string): string {
-        if (symbol == BNBSymbol) {
-            return TokenType.COIN
-        }
-        return TokenType.BEP2
-    }
     const list = <string[]>Array.from(pairsList.values())
     return <TokenItem[]>list.map(item => {
         const token = tokensMap[item]
         return new TokenItem (
-            asset(token.symbol),
-            tokenType(token.symbol),
+            assetIdSymbol(token.symbol, BNBSymbol, CoinType.binance),
+            tokenType(token.symbol, BNBSymbol, TokenType.BEP2),
             token.symbol,
             token.name,
             token.original_symbol,
             decimals,
-            logoURI(token.symbol),
+            logoURI(token.symbol, 'binance', BNBSymbol),
             pairsMap[token.symbol] || []
     )
     });

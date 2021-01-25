@@ -60,7 +60,8 @@
     "bignumber.js": "^9.0.0"
   },
   "dependencies": {
-    "codecov": "^3.7.2"
+    "codecov": "^3.7.2",
+    "jsondiffpatch": "^0.4.1"
   },
   "jest": {
     "setupFilesAfterEnv": [
