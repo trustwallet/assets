@@ -1,8 +1,7 @@
 {
     "name": "Trust Wallet: Ethereum",
     "logoURI": "https://trustwallet.com/assets/images/favicon.png",
-    "keywords": [],
-    "timestamp": "2020-10-03T12:37:57.000+00:00",
+    "timestamp": "2021-01-25T20:41:02.228Z",
     "tokens": [
         {
             "chainId": 1,
@@ -18,22 +17,70 @@
                     "base": "c60_t0x0000000000085d4780B73119b644AE5ecd22b376"
                 },
                 {
+                    "base": "c60_t0x0000000000095413afC295d19EDeb1Ad7B71c952"
+                },
+                {
+                    "base": "c60_t0x00a8b738E453fFd858a7edf03bcCfe20412f0Eb0"
+                },
+                {
+                    "base": "c60_t0x00c83aeCC790e8a4453e5dD3B0B4b3680501a7A7"
+                },
+                {
+                    "base": "c60_t0x0202Be363B8a4820f3F4DE7FaF5224fF05943AB1"
+                },
+                {
+                    "base": "c60_t0x0258F474786DdFd37ABCE6df6BBb1Dd5dfC4434a"
+                },
+                {
+                    "base": "c60_t0x0417912b3a7AF768051765040A55BB0925D4DDcF"
+                },
+                {
+                    "base": "c60_t0x0488401c3F535193Fa8Df029d9fFe615A06E74E6"
+                },
+                {
+                    "base": "c60_t0x04Fa0d235C4abf4BcF4787aF4CF447DE572eF828"
+                },
+                {
+                    "base": "c60_t0x056Fd409E1d7A124BD7017459dFEa2F387b6d5Cd"
+                },
+                {
+                    "base": "c60_t0x06A01a4d579479Dd5D884EBf61A31727A3d8D442"
+                },
+                {
+                    "base": "c60_t0x07150e919B4De5fD6a63DE1F9384828396f25fDC"
+                },
+                {
+                    "base": "c60_t0x09a3EcAFa817268f77BE1283176B946C4ff2E608"
+                },
+                {
+                    "base": "c60_t0x09e64c2B61a5f1690Ee6fbeD9baf5D6990F8dFd0"
+                },
+                {
                     "base": "c60_t0x0Ae055097C6d159879521C384F1D2123D1f195e6"
                 },
                 {
                     "base": "c60_t0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e"
                 },
                 {
+                    "base": "c60_t0x0d438F3b5175Bebc262bF23753C1E53d03432bDE"
+                },
+                {
                     "base": "c60_t0x0D8775F648430679A709E98d2b0Cb6250d2887EF"
                 },
                 {
-                    "base": "c60_t0x0F5D2fB29fb7d3CFeE444a200298f468908cC942"
+                    "base": "c60_t0x0f7F961648aE6Db43C75663aC7E5414Eb79b5704"
                 },
                 {
-                    "base": "c60_t0x111111111117dC0aa78b770fA6A738034120C302"
+                    "base": "c60_t0x1416946162B1C2c871A73B07E932D2fB6C932069"
                 },
                 {
-                    "base": "c60_t0x1985365e9f78359a9B6AD760e32412f4a445E862"
+                    "base": "c60_t0x1494CA1F11D487c2bBe4543E90080AeBa4BA3C2b"
+                },
+                {
+                    "base": "c60_t0x178c820f862B14f316509ec36b13123DA19A6054"
+                },
+                {
+                    "base": "c60_t0x18aAA7115705e8be94bfFEBDE57Af9BFc265B998"
                 },
                 {
                     "base": "c60_t0x1cEB5cB57C4D4E2b2433641b95Dd330A33185A44"
@@ -42,7 +89,19 @@
                     "base": "c60_t0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984"
                 },
                 {
+                    "base": "c60_t0x221657776846890989a759BA2973e427DfF5C9bB"
+                },
+                {
                     "base": "c60_t0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599"
+                },
+                {
+                    "base": "c60_t0x26CE25148832C04f3d7F26F32478a9fe55197166"
+                },
+                {
+                    "base": "c60_t0x28cb7e841ee97947a86B06fA4090C8451f64c0be"
+                },
+                {
+                    "base": "c60_t0x2a7f709eE001069771ceB6D42e85035f7D18E736"
                 },
                 {
                     "base": "c60_t0x2b591e99afE9f32eAA6214f7B7629768c40Eeb39"
@@ -51,7 +110,34 @@
                     "base": "c60_t0x2ba592F78dB6436527729929AAf6c908497cB200"
                 },
                 {
-                    "base": "c60_t0x37236CD05b34Cc79d3715AF2383E96dd7443dCF1"
+                    "base": "c60_t0x2e2f3246b6c65CCc4239c9Ee556EC143a7E5DE2c"
+                },
+                {
+                    "base": "c60_t0x3383c5a8969Dc413bfdDc9656Eb80A1408E4bA20"
+                },
+                {
+                    "base": "c60_t0x33D0568941C0C64ff7e0FB4fbA0B11BD37deEd9f"
+                },
+                {
+                    "base": "c60_t0x3432B6A60D23Ca0dFCa7761B7ab56459D9C964D0"
+                },
+                {
+                    "base": "c60_t0x362bc847A3a9637d3af6624EeC853618a43ed7D2"
+                },
+                {
+                    "base": "c60_t0x38e4adB44ef08F22F5B5b76A8f0c2d0dCbE7DcA1"
+                },
+                {
+                    "base": "c60_t0x39795344CBCc76cC3Fb94B9D1b15C23c2070C66D"
+                },
+                {
+                    "base": "c60_t0x3aFfCCa64c2A6f4e3B6Bd9c64CD2C969EFd1ECBe"
+                },
+                {
+                    "base": "c60_t0x3D3D35bb9bEC23b06Ca00fe472b50E7A4c692C30"
+                },
+                {
+                    "base": "c60_t0x3DB6Ba6ab6F95efed1a6E794caD492fAAabF294D"
                 },
                 {
                     "base": "c60_t0x408e41876cCCDC0F92210600ef50372656052a38"
@@ -60,10 +146,52 @@
                     "base": "c60_t0x40FD72257597aA14C7231A7B1aaa29Fce868F677"
                 },
                 {
+                    "base": "c60_t0x4156D3342D5c385a87D264F90653733592000581"
+                },
+                {
+                    "base": "c60_t0x419D0d8BdD9aF5e606Ae2232ed285Aff190E711b"
+                },
+                {
+                    "base": "c60_t0x429881672B9AE42b8EbA0E26cD9C73711b891Ca5"
+                },
+                {
+                    "base": "c60_t0x431ad2ff6a9C365805eBaD47Ee021148d6f7DBe0"
+                },
+                {
+                    "base": "c60_t0x4575f41308EC1483f3d399aa9a2826d74Da13Deb"
+                },
+                {
+                    "base": "c60_t0x459086F2376525BdCebA5bDDA135e4E9d3FeF5bf"
+                },
+                {
+                    "base": "c60_t0x4a220E6096B25EADb88358cb44068A3248254675"
+                },
+                {
+                    "base": "c60_t0x4c11249814f11b9346808179Cf06e71ac328c1b5"
+                },
+                {
+                    "base": "c60_t0x4C19596f5aAfF459fA38B0f7eD92F11AE6543784"
+                },
+                {
+                    "base": "c60_t0x4e352cF164E64ADCBad318C3a1e222E9EBa4Ce42"
+                },
+                {
                     "base": "c60_t0x4Fabb145d64652a948d72533023f6E7A623C7C53"
                 },
                 {
                     "base": "c60_t0x514910771AF9Ca656af840dff83E8264EcF986CA"
+                },
+                {
+                    "base": "c60_t0x5218E472cFCFE0b64A064F055B43b4cdC9EfD3A6"
+                },
+                {
+                    "base": "c60_t0x54C9EA2E9C9E8eD865Db4A4ce6711C2a0d5063Ba"
+                },
+                {
+                    "base": "c60_t0x557B933a7C2c45672B610F8954A3deB39a51A8Ca"
+                },
+                {
+                    "base": "c60_t0x56d811088235F11C8920698a204A5010a788f4b3"
                 },
                 {
                     "base": "c60_t0x57Ab1ec28D129707052df4dF418D58a2D46d5f51"
@@ -72,7 +200,22 @@
                     "base": "c60_t0x584bC13c7D411c00c01A62e8019472dE68768430"
                 },
                 {
-                    "base": "c60_t0x607F4C5BB672230e8672085532f7e901544a7375"
+                    "base": "c60_t0x5BEfBB272290dD5b8521D4a938f6c4757742c430"
+                },
+                {
+                    "base": "c60_t0x5Dc02Ea99285E17656b8350722694c35154DB1E8"
+                },
+                {
+                    "base": "c60_t0x62359Ed7505Efc61FF1D56fEF82158CcaffA23D7"
+                },
+                {
+                    "base": "c60_t0x66a0f676479Cee1d7373f3DC2e2952778BfF5bd6"
+                },
+                {
+                    "base": "c60_t0x6810e776880C02933D47DB1b9fc05908e5386b96"
+                },
+                {
+                    "base": "c60_t0x69692D3345010a207b759a7D1af6fc7F38b35c5E"
                 },
                 {
                     "base": "c60_t0x6B175474E89094C44Da98b954EedeAC495271d0F"
@@ -81,22 +224,58 @@
                     "base": "c60_t0x6B3595068778DD592e39A122f4f5a5cF09C90fE2"
                 },
                 {
-                    "base": "c60_t0x6BFf2fE249601ed0Db3a87424a2E923118BB0312"
+                    "base": "c60_t0x6e0daDE58D2d89eBBe7aFc384e3E4f15b70b14D8"
                 },
                 {
-                    "base": "c60_t0x740623d2c797b7D8D1EcB98e9b4Afcf99Ec31E14"
+                    "base": "c60_t0x6F87D756DAf0503d08Eb8993686c7Fc01Dc44fB1"
+                },
+                {
+                    "base": "c60_t0x71F85B2E46976bD21302B64329868fd15eb0D127"
+                },
+                {
+                    "base": "c60_t0x72630B1e3B42874bf335020Ba0249e3E9e47Bafc"
+                },
+                {
+                    "base": "c60_t0x72e9D9038cE484EE986FEa183f8d8Df93f9aDA13"
+                },
+                {
+                    "base": "c60_t0x7671904eed7f10808B664fc30BB8693FD7237abF"
+                },
+                {
+                    "base": "c60_t0x7a2Bc711E19ba6aff6cE8246C546E8c4B4944DFD"
+                },
+                {
+                    "base": "c60_t0x7B0C06043468469967DBA22d1AF33d77d44056c8"
+                },
+                {
+                    "base": "c60_t0x7D1AfA7B718fb893dB30A3aBc0Cfc608AaCfeBB0"
+                },
+                {
+                    "base": "c60_t0x7dE91B204C1C737bcEe6F000AAA6569Cf7061cb7"
                 },
                 {
                     "base": "c60_t0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9"
                 },
                 {
-                    "base": "c60_t0x80fB784B7eD66730e8b1DBd9820aFD29931aab03"
+                    "base": "c60_t0x8207c1FfC5B6804F6024322CcF34F29c3541Ae26"
+                },
+                {
+                    "base": "c60_t0x83e6f1E41cdd28eAcEB20Cb649155049Fac3D5Aa"
                 },
                 {
                     "base": "c60_t0x8400D94A5cb0fa0D041a3788e395285d61c9ee5e"
                 },
                 {
+                    "base": "c60_t0x84294FC9710e1252d407d3D80A84bC39001bd4A8"
+                },
+                {
                     "base": "c60_t0x84cA8bc7997272c7CfB4D0Cd3D55cd942B3c9419"
+                },
+                {
+                    "base": "c60_t0x853d955aCEf822Db058eb8505911ED77F175b99e"
+                },
+                {
+                    "base": "c60_t0x85Eee30c52B0b379b046Fb0F85F4f3Dc3009aFEC"
                 },
                 {
                     "base": "c60_t0x8762db106B2c2A0bccB3A80d1Ed41273552616E8"
@@ -105,16 +284,103 @@
                     "base": "c60_t0x8CE9137d39326AD0cD6491fb5CC0CbA0e089b6A9"
                 },
                 {
+                    "base": "c60_t0x8dAEBADE922dF735c38C80C7eBD708Af50815fAa"
+                },
+                {
+                    "base": "c60_t0x9355372396e3F6daF13359B7b607a3374cc638e0"
+                },
+                {
+                    "base": "c60_t0x93ED3FBe21207Ec2E8f2d3c3de6e058Cb73Bc04d"
+                },
+                {
+                    "base": "c60_t0x9469D013805bFfB7D3DEBe5E7839237e535ec483"
+                },
+                {
+                    "base": "c60_t0x95a4492F028aa1fd432Ea71146b433E7B4446611"
+                },
+                {
                     "base": "c60_t0x967da4048cD07aB37855c090aAF366e4ce1b9F48"
+                },
+                {
+                    "base": "c60_t0x990f341946A3fdB507aE7e52d17851B87168017c"
+                },
+                {
+                    "base": "c60_t0x9BE89D2a4cd102D8Fecc6BF9dA793be995C22541"
+                },
+                {
+                    "base": "c60_t0x9Ed8e7C9604790F7Ec589F99b94361d8AAB64E5E"
+                },
+                {
+                    "base": "c60_t0x9f7229aF0c4b9740e207Ea283b9094983f78ba04"
                 },
                 {
                     "base": "c60_t0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2"
                 },
                 {
+                    "base": "c60_t0xa0246c9032bC3A600820415aE600c6388619A14D"
+                },
+                {
                     "base": "c60_t0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
                 },
                 {
+                    "base": "c60_t0xa117000000f279D81A1D3cc75430fAA017FA5A2e"
+                },
+                {
+                    "base": "c60_t0xA15C7Ebe1f07CaF6bFF097D8a589fb8AC49Ae5B3"
+                },
+                {
+                    "base": "c60_t0xA1AFFfE3F4D611d252010E3EAf6f4D77088b0cd7"
+                },
+                {
+                    "base": "c60_t0xa1d6Df714F91DeBF4e0802A542E13067f31b8262"
+                },
+                {
+                    "base": "c60_t0xa3BeD4E1c75D00fa6f4E5E6922DB7261B5E9AcD2"
+                },
+                {
+                    "base": "c60_t0xa6FB1DF483b24EEAB569e19447E0e107003B9E15"
+                },
+                {
+                    "base": "c60_t0xa8c8CfB141A3bB59FEA1E2ea6B79b5ECBCD7b6ca"
+                },
+                {
                     "base": "c60_t0xaaAEBE6Fe48E54f431b0C390CfaF0b017d09D42d"
+                },
+                {
+                    "base": "c60_t0xaAAf91D9b90dF800Df4F55c205fd6989c977E73a"
+                },
+                {
+                    "base": "c60_t0xADE00C28244d5CE17D72E40330B1c318cD12B7c3"
+                },
+                {
+                    "base": "c60_t0xAE1eaAE3F627AAca434127644371b67B18444051"
+                },
+                {
+                    "base": "c60_t0xaE697F994Fc5eBC000F8e22EbFfeE04612f98A0d"
+                },
+                {
+                    "base": "c60_t0xaf9f549774ecEDbD0966C52f250aCc548D3F36E5"
+                },
+                {
+                    "base": "c60_t0xB1e9157c2Fdcc5a856C8DA8b2d89b6C32b3c1229"
+                },
+                {
+                    "base": "c60_t0xB4d930279552397bbA2ee473229f89Ec245bc365"
+                },
+                {
+                    "base": "c60_t0xB4EFd85c19999D84251304bDA99E90B92300Bd93"
+                },
+                {
+                    "base": "c60_t0xB62132e35a6c13ee1EE0f84dC5d40bad8d815206"
+                },
+                {
+                    "base": "c60_t0xb753428af26E81097e7fD17f40c88aaA3E04902c"
+                },
+                {
+                    "base": "c60_t0xB987D48Ed8f2C468D52D6405624EADBa5e76d723"
+                },
+                {
+                    "base": "c60_t0xb9EF770B6A5e12E45983C5D80545258aA38F3B78"
                 },
                 {
                     "base": "c60_t0xba100000625a3754423978a60c9317c58a424e3D"
@@ -123,385 +389,138 @@
                     "base": "c60_t0xBA11D00c5f74255f56a5E366F4F77f5A186d7f55"
                 },
                 {
+                    "base": "c60_t0xBa21Ef4c9f433Ede00badEFcC2754B8E74bd538A"
+                },
+                {
+                    "base": "c60_t0xBBbbCA6A901c926F240b89EacB641d8Aec7AEafD"
+                },
+                {
+                    "base": "c60_t0xbC396689893D065F41bc2C6EcbeE5e0085233447"
+                },
+                {
                     "base": "c60_t0xc00e94Cb662C3520282E6f5717214004A7f26888"
                 },
                 {
                     "base": "c60_t0xC011a73ee8576Fb46F5E1c5751cA3B9Fe0af2a6F"
                 },
                 {
+                    "base": "c60_t0xC0bA369c8Db6eB3924965e5c4FD0b4C1B91e305F"
+                },
+                {
+                    "base": "c60_t0xC4C2614E694cF534D407Ee49F8E44D125E4681c4"
+                },
+                {
+                    "base": "c60_t0xc719d010B63E5bbF2C0551872CD5316ED26AcD83"
+                },
+                {
+                    "base": "c60_t0xc944E90C64B2c07662A292be6244BDf05Cda44a7"
+                },
+                {
+                    "base": "c60_t0xCb5f72d37685C3D5aD0bB5F982443BC8FcdF570E"
+                },
+                {
+                    "base": "c60_t0xCC4304A31d09258b0029eA7FE63d032f52e44EFe"
+                },
+                {
+                    "base": "c60_t0xd084B83C305daFD76AE3E1b4E1F1fe2eCcCb3988"
+                },
+                {
+                    "base": "c60_t0xd1AFBCCC9A2c2187ea544363B986EA0AB6EF08B5"
+                },
+                {
                     "base": "c60_t0xd26114cd6EE289AccF82350c8d8487fedB8A0C07"
+                },
+                {
+                    "base": "c60_t0xd2877702675e6cEb975b4A1dFf9fb7BAF4C91ea9"
+                },
+                {
+                    "base": "c60_t0xd379700999F4805Ce80aa32DB46A94dF64561108"
                 },
                 {
                     "base": "c60_t0xD46bA6D942050d489DBd938a2C909A5d5039A161"
                 },
                 {
+                    "base": "c60_t0xD533a949740bb3306d119CC777fa900bA034cd52"
+                },
+                {
+                    "base": "c60_t0xD5525D397898e5502075Ea5E830d8914f6F0affe"
+                },
+                {
+                    "base": "c60_t0xD56daC73A4d6766464b38ec6D91eB45Ce7457c44"
+                },
+                {
+                    "base": "c60_t0xD6c67B93a7b248dF608a653d82a100556144c5DA"
+                },
+                {
                     "base": "c60_t0xdAC17F958D2ee523a2206206994597C13D831ec7"
+                },
+                {
+                    "base": "c60_t0xdbf0fac1499a931ed6e5F6122dbbCD3B80f66c7E"
+                },
+                {
+                    "base": "c60_t0xDcB01cc464238396E213a6fDd933E36796eAfF9f"
                 },
                 {
                     "base": "c60_t0xdd974D5C2e2928deA5F71b9825b8b646686BD200"
                 },
                 {
-                    "base": "c60_t0xE41d2489571d322189246DaFA5ebDe1F4699F498"
+                    "base": "c60_t0xdF9307DFf0a1B57660F60f9457D32027a55ca0B2"
+                },
+                {
+                    "base": "c60_t0xe28b3B32B6c345A34Ff64674606124Dd5Aceca30"
+                },
+                {
+                    "base": "c60_t0xe3818504c1B32bF1557b16C238B2E01Fd3149C17"
+                },
+                {
+                    "base": "c60_t0xE95A203B1a91a908F9B9CE46459d101078c2c3cb"
+                },
+                {
+                    "base": "c60_t0xEa319e87Cf06203DAe107Dd8E5672175e3Ee976c"
+                },
+                {
+                    "base": "c60_t0xEB4C2781e4ebA804CE9a9803C67d0893436bB27D"
+                },
+                {
+                    "base": "c60_t0xECbF566944250ddE88322581024E611419715f7A"
+                },
+                {
+                    "base": "c60_t0xEd0439EACf4c4965AE4613D77a5C2Efe10e5f183"
+                },
+                {
+                    "base": "c60_t0xEd91879919B71bB6905f23af0A68d231EcF87b14"
+                },
+                {
+                    "base": "c60_t0xee573a945B01B788B9287CE062A0CFC15bE9fd86"
+                },
+                {
+                    "base": "c60_t0xEEF9f339514298C6A857EfCfC1A762aF84438dEE"
+                },
+                {
+                    "base": "c60_t0xf1f955016EcbCd7321c7266BccFB96c68ea5E49b"
+                },
+                {
+                    "base": "c60_t0xf21661D0D1d76d3ECb8e1B9F1c923DBfffAe4097"
+                },
+                {
+                    "base": "c60_t0xf4CD3d3Fda8d7Fd6C5a500203e38640A70Bf9577"
                 },
                 {
                     "base": "c60_t0xF5D669627376EBd411E34b98F19C868c8ABA5ADA"
                 },
                 {
                     "base": "c60_t0xF629cBd94d3791C9250152BD8dfBDF380E2a3B9c"
+                },
+                {
+                    "base": "c60_t0xFbEEa1C75E4c4465CB2FCCc9c6d6afe984558E20"
+                },
+                {
+                    "base": "c60_t0xfF20817765cB7f73d4bde2e66e067E58D11095C2"
+                },
+                {
+                    "base": "c60_t0xfffffffFf15AbF397dA76f1dcc1A1604F45126DB"
                 }
             ]
-        },
-        {
-            "chainId": 1,
-            "asset": "c60_t0x0000000000085d4780B73119b644AE5ecd22b376",
-            "type": "ERC20",
-            "address": "0x0000000000085d4780B73119b644AE5ecd22b376",
-            "name": "TrueUSD",
-            "symbol": "TUSD",
-            "decimals": 18,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x0000000000085d4780B73119b644AE5ecd22b376/logo.png",
-            "pairs": []
-        },
-        {
-            "chainId": 1,
-            "asset": "c60_t0x0Ae055097C6d159879521C384F1D2123D1f195e6",
-            "type": "ERC20",
-            "address": "0x0Ae055097C6d159879521C384F1D2123D1f195e6",
-            "name": "xDai",
-            "symbol": "STAKE",
-            "decimals": 18,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x0Ae055097C6d159879521C384F1D2123D1f195e6/logo.png",
-            "pairs": []
-        },
-        {
-            "chainId": 1,
-            "asset": "c60_t0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e",
-            "type": "ERC20",
-            "address": "0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e",
-            "name": "Yearn.Finance",
-            "symbol": "YFI",
-            "decimals": 18,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e/logo.png",
-            "pairs": []
-        },
-        {
-            "chainId": 1,
-            "asset": "c60_t0x0D8775F648430679A709E98d2b0Cb6250d2887EF",
-            "type": "ERC20",
-            "address": "0x0D8775F648430679A709E98d2b0Cb6250d2887EF",
-            "name": "Basic Attention Token",
-            "symbol": "BAT",
-            "decimals": 18,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x0D8775F648430679A709E98d2b0Cb6250d2887EF/logo.png",
-            "pairs": []
-        },
-        {
-            "chainId": 1,
-            "asset": "c60_t0x0F5D2fB29fb7d3CFeE444a200298f468908cC942",
-            "type": "ERC20",
-            "address": "0x0F5D2fB29fb7d3CFeE444a200298f468908cC942",
-            "name": "Decentraland MANA",
-            "symbol": "MANA",
-            "decimals": 18,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x0F5D2fB29fb7d3CFeE444a200298f468908cC942/logo.png",
-            "pairs": []
-        },
-        {
-            "chainId": 1,
-            "asset": "c60_t0x111111111117dC0aa78b770fA6A738034120C302",
-            "type": "ERC20",
-            "address": "0x111111111117dC0aa78b770fA6A738034120C302",
-            "name": "1INCH Token",
-            "symbol": "1INCH",
-            "decimals": 18,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x111111111117dC0aa78b770fA6A738034120C302/logo.png",
-            "pairs": []
-        },
-        {
-            "chainId": 1,
-            "asset": "c60_t0x1985365e9f78359a9B6AD760e32412f4a445E862",
-            "type": "ERC20",
-            "address": "0x1985365e9f78359a9B6AD760e32412f4a445E862",
-            "name": "Reputation",
-            "symbol": "REP",
-            "decimals": 18,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x1985365e9f78359a9B6AD760e32412f4a445E862/logo.png",
-            "pairs": []
-        },
-        {
-            "chainId": 1,
-            "asset": "c60_t0x1cEB5cB57C4D4E2b2433641b95Dd330A33185A44",
-            "type": "ERC20",
-            "address": "0x1cEB5cB57C4D4E2b2433641b95Dd330A33185A44",
-            "name": "Keep3rV1",
-            "symbol": "KP3R",
-            "decimals": 18,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x1cEB5cB57C4D4E2b2433641b95Dd330A33185A44/logo.png",
-            "pairs": []
-        },
-        {
-            "chainId": 1,
-            "asset": "c60_t0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984",
-            "type": "ERC20",
-            "address": "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984",
-            "name": "Uniswap",
-            "symbol": "UNI",
-            "decimals": 18,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984/logo.png",
-            "pairs": []
-        },
-        {
-            "chainId": 1,
-            "asset": "c60_t0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
-            "type": "ERC20",
-            "address": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
-            "name": "Wrapped BTC",
-            "symbol": "WBTC",
-            "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599/logo.png",
-            "pairs": []
-        },
-        {
-            "chainId": 1,
-            "asset": "c60_t0x2b591e99afE9f32eAA6214f7B7629768c40Eeb39",
-            "type": "ERC20",
-            "address": "0x2b591e99afE9f32eAA6214f7B7629768c40Eeb39",
-            "name": "HEX",
-            "symbol": "HEX",
-            "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x2b591e99afE9f32eAA6214f7B7629768c40Eeb39/logo.png",
-            "pairs": []
-        },
-        {
-            "chainId": 1,
-            "asset": "c60_t0x2ba592F78dB6436527729929AAf6c908497cB200",
-            "type": "ERC20",
-            "address": "0x2ba592F78dB6436527729929AAf6c908497cB200",
-            "name": "Cream",
-            "symbol": "CREAM",
-            "decimals": 18,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x2ba592F78dB6436527729929AAf6c908497cB200/logo.png",
-            "pairs": []
-        },
-        {
-            "chainId": 1,
-            "asset": "c60_t0x37236CD05b34Cc79d3715AF2383E96dd7443dCF1",
-            "type": "ERC20",
-            "address": "0x37236CD05b34Cc79d3715AF2383E96dd7443dCF1",
-            "name": "Small Love Potion",
-            "symbol": "SLP",
-            "decimals": 0,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x37236CD05b34Cc79d3715AF2383E96dd7443dCF1/logo.png",
-            "pairs": []
-        },
-        {
-            "chainId": 1,
-            "asset": "c60_t0x408e41876cCCDC0F92210600ef50372656052a38",
-            "type": "ERC20",
-            "address": "0x408e41876cCCDC0F92210600ef50372656052a38",
-            "name": "Republic Token",
-            "symbol": "REN",
-            "decimals": 18,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x408e41876cCCDC0F92210600ef50372656052a38/logo.png",
-            "pairs": []
-        },
-        {
-            "chainId": 1,
-            "asset": "c60_t0x40FD72257597aA14C7231A7B1aaa29Fce868F677",
-            "type": "ERC20",
-            "address": "0x40FD72257597aA14C7231A7B1aaa29Fce868F677",
-            "name": "Sora",
-            "symbol": "XOR",
-            "decimals": 18,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x40FD72257597aA14C7231A7B1aaa29Fce868F677/logo.png",
-            "pairs": []
-        },
-        {
-            "chainId": 1,
-            "asset": "c60_t0x4Fabb145d64652a948d72533023f6E7A623C7C53",
-            "type": "ERC20",
-            "address": "0x4Fabb145d64652a948d72533023f6E7A623C7C53",
-            "name": "Binance USD",
-            "symbol": "BUSD",
-            "decimals": 18,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x4Fabb145d64652a948d72533023f6E7A623C7C53/logo.png",
-            "pairs": []
-        },
-        {
-            "chainId": 1,
-            "asset": "c60_t0x514910771AF9Ca656af840dff83E8264EcF986CA",
-            "type": "ERC20",
-            "address": "0x514910771AF9Ca656af840dff83E8264EcF986CA",
-            "name": "ChainLink",
-            "symbol": "Link",
-            "decimals": 18,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x514910771AF9Ca656af840dff83E8264EcF986CA/logo.png",
-            "pairs": []
-        },
-        {
-            "chainId": 1,
-            "asset": "c60_t0x57Ab1ec28D129707052df4dF418D58a2D46d5f51",
-            "type": "ERC20",
-            "address": "0x57Ab1ec28D129707052df4dF418D58a2D46d5f51",
-            "name": "Synth sUSD",
-            "symbol": "sUSD",
-            "decimals": 18,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x57Ab1ec28D129707052df4dF418D58a2D46d5f51/logo.png",
-            "pairs": []
-        },
-        {
-            "chainId": 1,
-            "asset": "c60_t0x584bC13c7D411c00c01A62e8019472dE68768430",
-            "type": "ERC20",
-            "address": "0x584bC13c7D411c00c01A62e8019472dE68768430",
-            "name": "Hegic",
-            "symbol": "HEGIC",
-            "decimals": 18,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x584bC13c7D411c00c01A62e8019472dE68768430/logo.png",
-            "pairs": []
-        },
-        {
-            "chainId": 1,
-            "asset": "c60_t0x607F4C5BB672230e8672085532f7e901544a7375",
-            "type": "ERC20",
-            "address": "0x607F4C5BB672230e8672085532f7e901544a7375",
-            "name": "iExec RLC",
-            "symbol": "RLC",
-            "decimals": 9,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x607F4C5BB672230e8672085532f7e901544a7375/logo.png",
-            "pairs": []
-        },
-        {
-            "chainId": 1,
-            "asset": "c60_t0x6B175474E89094C44Da98b954EedeAC495271d0F",
-            "type": "ERC20",
-            "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
-            "name": "Dai Stablecoin",
-            "symbol": "DAI",
-            "decimals": 18,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png",
-            "pairs": []
-        },
-        {
-            "chainId": 1,
-            "asset": "c60_t0x6B3595068778DD592e39A122f4f5a5cF09C90fE2",
-            "type": "ERC20",
-            "address": "0x6B3595068778DD592e39A122f4f5a5cF09C90fE2",
-            "name": "SushiSwap",
-            "symbol": "SUSHI",
-            "decimals": 18,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x6B3595068778DD592e39A122f4f5a5cF09C90fE2/logo.png",
-            "pairs": []
-        },
-        {
-            "chainId": 1,
-            "asset": "c60_t0x6BFf2fE249601ed0Db3a87424a2E923118BB0312",
-            "type": "ERC20",
-            "address": "0x6BFf2fE249601ed0Db3a87424a2E923118BB0312",
-            "name": "Fyooz",
-            "symbol": "FYZ",
-            "decimals": 18,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x6BFf2fE249601ed0Db3a87424a2E923118BB0312/logo.png",
-            "pairs": []
-        },
-        {
-            "chainId": 1,
-            "asset": "c60_t0x740623d2c797b7D8D1EcB98e9b4Afcf99Ec31E14",
-            "type": "ERC20",
-            "address": "0x740623d2c797b7D8D1EcB98e9b4Afcf99Ec31E14",
-            "name": "DoYourTip",
-            "symbol": "DYT",
-            "decimals": 18,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x740623d2c797b7D8D1EcB98e9b4Afcf99Ec31E14/logo.png",
-            "pairs": []
-        },
-        {
-            "chainId": 1,
-            "asset": "c60_t0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9",
-            "type": "ERC20",
-            "address": "0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9",
-            "name": "Aave Token",
-            "symbol": "AAVE",
-            "decimals": 18,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9/logo.png",
-            "pairs": []
-        },
-        {
-            "chainId": 1,
-            "asset": "c60_t0x80fB784B7eD66730e8b1DBd9820aFD29931aab03",
-            "type": "ERC20",
-            "address": "0x80fB784B7eD66730e8b1DBd9820aFD29931aab03",
-            "name": "Lend",
-            "symbol": "LEND",
-            "decimals": 18,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x80fB784B7eD66730e8b1DBd9820aFD29931aab03/logo.png",
-            "pairs": []
-        },
-        {
-            "chainId": 1,
-            "asset": "c60_t0x8400D94A5cb0fa0D041a3788e395285d61c9ee5e",
-            "type": "ERC20",
-            "address": "0x8400D94A5cb0fa0D041a3788e395285d61c9ee5e",
-            "name": "Unibright",
-            "symbol": "UBT",
-            "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x8400D94A5cb0fa0D041a3788e395285d61c9ee5e/logo.png",
-            "pairs": []
-        },
-        {
-            "chainId": 1,
-            "asset": "c60_t0x84cA8bc7997272c7CfB4D0Cd3D55cd942B3c9419",
-            "type": "ERC20",
-            "address": "0x84cA8bc7997272c7CfB4D0Cd3D55cd942B3c9419",
-            "name": "DIA",
-            "symbol": "DIA",
-            "decimals": 18,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x84cA8bc7997272c7CfB4D0Cd3D55cd942B3c9419/logo.png",
-            "pairs": []
-        },
-        {
-            "chainId": 1,
-            "asset": "c60_t0x8762db106B2c2A0bccB3A80d1Ed41273552616E8",
-            "type": "ERC20",
-            "address": "0x8762db106B2c2A0bccB3A80d1Ed41273552616E8",
-            "name": "Reserve Rights",
-            "symbol": "RSR",
-            "decimals": 18,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x8762db106B2c2A0bccB3A80d1Ed41273552616E8/logo.png",
-            "pairs": []
-        },
-        {
-            "chainId": 1,
-            "asset": "c60_t0x8CE9137d39326AD0cD6491fb5CC0CbA0e089b6A9",
-            "type": "ERC20",
-            "address": "0x8CE9137d39326AD0cD6491fb5CC0CbA0e089b6A9",
-            "name": "Swipe",
-            "symbol": "SXP",
-            "decimals": 18,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x8CE9137d39326AD0cD6491fb5CC0CbA0e089b6A9/logo.png",
-            "pairs": []
-        },
-        {
-            "chainId": 1,
-            "asset": "c60_t0x967da4048cD07aB37855c090aAF366e4ce1b9F48",
-            "type": "ERC20",
-            "address": "0x967da4048cD07aB37855c090aAF366e4ce1b9F48",
-            "name": "Ocean Protocol",
-            "symbol": "OCEAN",
-            "decimals": 18,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x967da4048cD07aB37855c090aAF366e4ce1b9F48/logo.png",
-            "pairs": []
-        },
-        {
-            "chainId": 1,
-            "asset": "c60_t0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2",
-            "type": "ERC20",
-            "address": "0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2",
-            "name": "MakerDAO",
-            "symbol": "MKR",
-            "decimals": 18,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2/logo.png",
-            "pairs": []
         },
         {
             "chainId": 1,
@@ -512,84 +531,59 @@
             "symbol": "USDC",
             "decimals": 6,
             "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png",
-            "pairs": []
-        },
-        {
-            "chainId": 1,
-            "asset": "c60_t0xaaAEBE6Fe48E54f431b0C390CfaF0b017d09D42d",
-            "type": "ERC20",
-            "address": "0xaaAEBE6Fe48E54f431b0C390CfaF0b017d09D42d",
-            "name": "Celsius",
-            "symbol": "CEL",
-            "decimals": 4,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xaaAEBE6Fe48E54f431b0C390CfaF0b017d09D42d/logo.png",
-            "pairs": []
-        },
-        {
-            "chainId": 1,
-            "asset": "c60_t0xba100000625a3754423978a60c9317c58a424e3D",
-            "type": "ERC20",
-            "address": "0xba100000625a3754423978a60c9317c58a424e3D",
-            "name": "Balancer",
-            "symbol": "BAL",
-            "decimals": 18,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xba100000625a3754423978a60c9317c58a424e3D/logo.png",
-            "pairs": []
-        },
-        {
-            "chainId": 1,
-            "asset": "c60_t0xBA11D00c5f74255f56a5E366F4F77f5A186d7f55",
-            "type": "ERC20",
-            "address": "0xBA11D00c5f74255f56a5E366F4F77f5A186d7f55",
-            "name": "BandToken",
-            "symbol": "BAND",
-            "decimals": 18,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xBA11D00c5f74255f56a5E366F4F77f5A186d7f55/logo.png",
-            "pairs": []
-        },
-        {
-            "chainId": 1,
-            "asset": "c60_t0xc00e94Cb662C3520282E6f5717214004A7f26888",
-            "type": "ERC20",
-            "address": "0xc00e94Cb662C3520282E6f5717214004A7f26888",
-            "name": "Compound",
-            "symbol": "COMP",
-            "decimals": 18,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xc00e94Cb662C3520282E6f5717214004A7f26888/logo.png",
-            "pairs": []
-        },
-        {
-            "chainId": 1,
-            "asset": "c60_t0xC011a73ee8576Fb46F5E1c5751cA3B9Fe0af2a6F",
-            "type": "ERC20",
-            "address": "0xC011a73ee8576Fb46F5E1c5751cA3B9Fe0af2a6F",
-            "name": "Synthetix Network Token",
-            "symbol": "SNX",
-            "decimals": 18,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets//logo.png",
-            "pairs": []
-        },
-        {
-            "chainId": 1,
-            "asset": "c60_t0xd26114cd6EE289AccF82350c8d8487fedB8A0C07",
-            "type": "ERC20",
-            "address": "0xd26114cd6EE289AccF82350c8d8487fedB8A0C07",
-            "name": "OMG Network",
-            "symbol": "OMG",
-            "decimals": 18,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets//logo.png",
-            "pairs": []
-        },
-        {
-            "chainId": 1,
-            "asset": "c60_t0xD46bA6D942050d489DBd938a2C909A5d5039A161",
-            "type": "ERC20",
-            "address": "0xD46bA6D942050d489DBd938a2C909A5d5039A161",
-            "name": "Ampleforth",
-            "symbol": "AMPL",
-            "decimals": 9,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets//logo.png",
-            "pairs": []
+            "pairs": [
+                {
+                    "base": "c60_t0x0391D2021f89DC339F60Fff84546EA23E337750f"
+                },
+                {
+                    "base": "c60_t0x1494CA1F11D487c2bBe4543E90080AeBa4BA3C2b"
+                },
+                {
+                    "base": "c60_t0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599"
+                },
+                {
+                    "base": "c60_t0x2b591e99afE9f32eAA6214f7B7629768c40Eeb39"
+                },
+                {
+                    "base": "c60_t0x36F3FD68E7325a35EB768F1AedaAe9EA0689d723"
+                },
+                {
+                    "base": "c60_t0x4e352cF164E64ADCBad318C3a1e222E9EBa4Ce42"
+                },
+                {
+                    "base": "c60_t0x4Fabb145d64652a948d72533023f6E7A623C7C53"
+                },
+                {
+                    "base": "c60_t0x6468e79A80C0eaB0F9A2B574c8d5bC374Af59414"
+                },
+                {
+                    "base": "c60_t0x6B175474E89094C44Da98b954EedeAC495271d0F"
+                },
+                {
+                    "base": "c60_t0x7240aC91f01233BaAf8b064248E80feaA5912BA3"
+                },
+                {
+                    "base": "c60_t0x853d955aCEf822Db058eb8505911ED77F175b99e"
+                },
+                {
+                    "base": "c60_t0xBD2F0Cd039E0BFcf88901C98c0bFAc5ab27566e3"
+                },
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                },
+                {
+                    "base": "c60_t0xc944E90C64B2c07662A292be6244BDf05Cda44a7"
+                },
+                {
+                    "base": "c60_t0xca1207647Ff814039530D7d35df0e1Dd2e91Fa84"
+                },
+                {
+                    "base": "c60_t0xdAC17F958D2ee523a2206206994597C13D831ec7"
+                },
+                {
+                    "base": "c60_t0xdB25f211AB05b1c97D595516F45794528a807ad8"
+                }
+            ]
         },
         {
             "chainId": 1,
@@ -600,7 +594,2328 @@
             "symbol": "USDT",
             "decimals": 6,
             "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xdAC17F958D2ee523a2206206994597C13D831ec7/logo.png",
-            "pairs": []
+            "pairs": [
+                {
+                    "base": "c60_t0x00a8b738E453fFd858a7edf03bcCfe20412f0Eb0"
+                },
+                {
+                    "base": "c60_t0x2A8e1E676Ec238d8A992307B495b45B3fEAa5e86"
+                },
+                {
+                    "base": "c60_t0x2e1E15C44Ffe4Df6a0cb7371CD00d5028e571d14"
+                },
+                {
+                    "base": "c60_t0x4Fabb145d64652a948d72533023f6E7A623C7C53"
+                },
+                {
+                    "base": "c60_t0x6B175474E89094C44Da98b954EedeAC495271d0F"
+                },
+                {
+                    "base": "c60_t0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
+                },
+                {
+                    "base": "c60_t0xa47c8bf37f92aBed4A126BDA807A7b7498661acD"
+                },
+                {
+                    "base": "c60_t0xB5FE099475d3030DDe498c3BB6F3854F762A48Ad"
+                },
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                },
+                {
+                    "base": "c60_t0xEEF9f339514298C6A857EfCfC1A762aF84438dEE"
+                }
+            ]
+        },
+        {
+            "chainId": 1,
+            "asset": "c60_t0x6B175474E89094C44Da98b954EedeAC495271d0F",
+            "type": "ERC20",
+            "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+            "name": "Dai Stablecoin",
+            "symbol": "DAI",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0x3449FC1Cd036255BA1EB19d65fF4BA2b8903A69a"
+                },
+                {
+                    "base": "c60_t0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
+                },
+                {
+                    "base": "c60_t0xa7ED29B253D8B4E3109ce07c80fc570f81B63696"
+                },
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                },
+                {
+                    "base": "c60_t0xdAC17F958D2ee523a2206206994597C13D831ec7"
+                },
+                {
+                    "base": "c60_t0xEEF9f339514298C6A857EfCfC1A762aF84438dEE"
+                }
+            ]
+        },
+        {
+            "chainId": 1,
+            "asset": "c60_t0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+            "type": "ERC20",
+            "address": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+            "name": "Wrapped BTC",
+            "symbol": "WBTC",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0x3472A5A71965499acd81997a54BBA8D852C6E53d"
+                },
+                {
+                    "base": "c60_t0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
+                },
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x853d955aCEf822Db058eb8505911ED77F175b99e",
+            "type": "ERC20",
+            "address": "0x853d955aCEf822Db058eb8505911ED77F175b99e",
+            "name": "Frax",
+            "symbol": "FRAX",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x853d955aCEf822Db058eb8505911ED77F175b99e/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0x3432B6A60D23Ca0dFCa7761B7ab56459D9C964D0"
+                },
+                {
+                    "base": "c60_t0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
+                },
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xa47c8bf37f92aBed4A126BDA807A7b7498661acD",
+            "type": "ERC20",
+            "address": "0xa47c8bf37f92aBed4A126BDA807A7b7498661acD",
+            "name": "Wrapped UST Token",
+            "symbol": "UST",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xa47c8bf37f92aBed4A126BDA807A7b7498661acD/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0x09a3EcAFa817268f77BE1283176B946C4ff2E608"
+                },
+                {
+                    "base": "c60_t0xd2877702675e6cEb975b4A1dFf9fb7BAF4C91ea9"
+                },
+                {
+                    "base": "c60_t0xdAC17F958D2ee523a2206206994597C13D831ec7"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xEEF9f339514298C6A857EfCfC1A762aF84438dEE",
+            "type": "ERC20",
+            "address": "0xEEF9f339514298C6A857EfCfC1A762aF84438dEE",
+            "name": "Hermez Network Token",
+            "symbol": "HEZ",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xEEF9f339514298C6A857EfCfC1A762aF84438dEE/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0x6B175474E89094C44Da98b954EedeAC495271d0F"
+                },
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                },
+                {
+                    "base": "c60_t0xdAC17F958D2ee523a2206206994597C13D831ec7"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x00a8b738E453fFd858a7edf03bcCfe20412f0Eb0",
+            "type": "ERC20",
+            "address": "0x00a8b738E453fFd858a7edf03bcCfe20412f0Eb0",
+            "name": "AllianceBlock Token",
+            "symbol": "ALBT",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x00a8b738E453fFd858a7edf03bcCfe20412f0Eb0/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                },
+                {
+                    "base": "c60_t0xdAC17F958D2ee523a2206206994597C13D831ec7"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x09a3EcAFa817268f77BE1283176B946C4ff2E608",
+            "type": "ERC20",
+            "address": "0x09a3EcAFa817268f77BE1283176B946C4ff2E608",
+            "name": "Wrapped MIR Token",
+            "symbol": "MIR",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x09a3EcAFa817268f77BE1283176B946C4ff2E608/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xa47c8bf37f92aBed4A126BDA807A7b7498661acD"
+                },
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x1494CA1F11D487c2bBe4543E90080AeBa4BA3C2b",
+            "type": "ERC20",
+            "address": "0x1494CA1F11D487c2bBe4543E90080AeBa4BA3C2b",
+            "name": "DefiPulse Index",
+            "symbol": "DPI",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x1494CA1F11D487c2bBe4543E90080AeBa4BA3C2b/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
+                },
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x2b591e99afE9f32eAA6214f7B7629768c40Eeb39",
+            "type": "ERC20",
+            "address": "0x2b591e99afE9f32eAA6214f7B7629768c40Eeb39",
+            "name": "HEX",
+            "symbol": "HEX",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x2b591e99afE9f32eAA6214f7B7629768c40Eeb39/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
+                },
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x3432B6A60D23Ca0dFCa7761B7ab56459D9C964D0",
+            "type": "ERC20",
+            "address": "0x3432B6A60D23Ca0dFCa7761B7ab56459D9C964D0",
+            "name": "Frax Share",
+            "symbol": "FXS",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x3432B6A60D23Ca0dFCa7761B7ab56459D9C964D0/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0x853d955aCEf822Db058eb8505911ED77F175b99e"
+                },
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x4e352cF164E64ADCBad318C3a1e222E9EBa4Ce42",
+            "type": "ERC20",
+            "address": "0x4e352cF164E64ADCBad318C3a1e222E9EBa4Ce42",
+            "name": "MCDEX Token",
+            "symbol": "MCB",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x4e352cF164E64ADCBad318C3a1e222E9EBa4Ce42/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
+                },
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "chainId": 1,
+            "asset": "c60_t0x4Fabb145d64652a948d72533023f6E7A623C7C53",
+            "type": "ERC20",
+            "address": "0x4Fabb145d64652a948d72533023f6E7A623C7C53",
+            "name": "Binance USD",
+            "symbol": "BUSD",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x4Fabb145d64652a948d72533023f6E7A623C7C53/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
+                },
+                {
+                    "base": "c60_t0xdAC17F958D2ee523a2206206994597C13D831ec7"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x85Eee30c52B0b379b046Fb0F85F4f3Dc3009aFEC",
+            "type": "ERC20",
+            "address": "0x85Eee30c52B0b379b046Fb0F85F4f3Dc3009aFEC",
+            "name": "KEEP Token",
+            "symbol": "KEEP",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x85Eee30c52B0b379b046Fb0F85F4f3Dc3009aFEC/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0x8dAEBADE922dF735c38C80C7eBD708Af50815fAa"
+                },
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x8dAEBADE922dF735c38C80C7eBD708Af50815fAa",
+            "type": "ERC20",
+            "address": "0x8dAEBADE922dF735c38C80C7eBD708Af50815fAa",
+            "name": "tBTC",
+            "symbol": "TBTC",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x8dAEBADE922dF735c38C80C7eBD708Af50815fAa/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0x85Eee30c52B0b379b046Fb0F85F4f3Dc3009aFEC"
+                },
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xA1AFFfE3F4D611d252010E3EAf6f4D77088b0cd7",
+            "type": "ERC20",
+            "address": "0xA1AFFfE3F4D611d252010E3EAf6f4D77088b0cd7",
+            "name": "reflect.finance",
+            "symbol": "RFI",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xA1AFFfE3F4D611d252010E3EAf6f4D77088b0cd7/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                },
+                {
+                    "base": "c60_t0xDcB01cc464238396E213a6fDd933E36796eAfF9f"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xC0bA369c8Db6eB3924965e5c4FD0b4C1B91e305F",
+            "type": "ERC20",
+            "address": "0xC0bA369c8Db6eB3924965e5c4FD0b4C1B91e305F",
+            "name": "DLP Duck Token",
+            "symbol": "DUCK",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xC0bA369c8Db6eB3924965e5c4FD0b4C1B91e305F/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                },
+                {
+                    "base": "c60_t0xFbEEa1C75E4c4465CB2FCCc9c6d6afe984558E20"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xc944E90C64B2c07662A292be6244BDf05Cda44a7",
+            "type": "ERC20",
+            "address": "0xc944E90C64B2c07662A292be6244BDf05Cda44a7",
+            "name": "Graph Token",
+            "symbol": "GRT",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xc944E90C64B2c07662A292be6244BDf05Cda44a7/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
+                },
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xd2877702675e6cEb975b4A1dFf9fb7BAF4C91ea9",
+            "type": "ERC20",
+            "address": "0xd2877702675e6cEb975b4A1dFf9fb7BAF4C91ea9",
+            "name": "Wrapped LUNA Token",
+            "symbol": "LUNA",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xd2877702675e6cEb975b4A1dFf9fb7BAF4C91ea9/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xa47c8bf37f92aBed4A126BDA807A7b7498661acD"
+                },
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xDcB01cc464238396E213a6fDd933E36796eAfF9f",
+            "type": "ERC20",
+            "address": "0xDcB01cc464238396E213a6fDd933E36796eAfF9f",
+            "name": "Yield",
+            "symbol": "YLD",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xDcB01cc464238396E213a6fDd933E36796eAfF9f/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xA1AFFfE3F4D611d252010E3EAf6f4D77088b0cd7"
+                },
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xFbEEa1C75E4c4465CB2FCCc9c6d6afe984558E20",
+            "type": "ERC20",
+            "address": "0xFbEEa1C75E4c4465CB2FCCc9c6d6afe984558E20",
+            "name": "DuckDaoDime",
+            "symbol": "DDIM",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xFbEEa1C75E4c4465CB2FCCc9c6d6afe984558E20/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                },
+                {
+                    "base": "c60_t0xC0bA369c8Db6eB3924965e5c4FD0b4C1B91e305F"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x0000000000085d4780B73119b644AE5ecd22b376",
+            "type": "ERC20",
+            "address": "0x0000000000085d4780B73119b644AE5ecd22b376",
+            "name": "TrueUSD",
+            "symbol": "TUSD",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x0000000000085d4780B73119b644AE5ecd22b376/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x0000000000095413afC295d19EDeb1Ad7B71c952",
+            "type": "ERC20",
+            "address": "0x0000000000095413afC295d19EDeb1Ad7B71c952",
+            "name": "Tokenlon",
+            "symbol": "LON",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x0000000000095413afC295d19EDeb1Ad7B71c952/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x00c83aeCC790e8a4453e5dD3B0B4b3680501a7A7",
+            "type": "ERC20",
+            "address": "0x00c83aeCC790e8a4453e5dD3B0B4b3680501a7A7",
+            "name": "SKALE",
+            "symbol": "SKL",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x00c83aeCC790e8a4453e5dD3B0B4b3680501a7A7/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x0202Be363B8a4820f3F4DE7FaF5224fF05943AB1",
+            "type": "ERC20",
+            "address": "0x0202Be363B8a4820f3F4DE7FaF5224fF05943AB1",
+            "name": "UniLend Finance Token",
+            "symbol": "UFT",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x0202Be363B8a4820f3F4DE7FaF5224fF05943AB1/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x0258F474786DdFd37ABCE6df6BBb1Dd5dfC4434a",
+            "type": "ERC20",
+            "address": "0x0258F474786DdFd37ABCE6df6BBb1Dd5dfC4434a",
+            "name": "Orion Protocol",
+            "symbol": "ORN",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x0258F474786DdFd37ABCE6df6BBb1Dd5dfC4434a/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x0391D2021f89DC339F60Fff84546EA23E337750f",
+            "type": "ERC20",
+            "address": "0x0391D2021f89DC339F60Fff84546EA23E337750f",
+            "name": "BarnBridge Governance Token",
+            "symbol": "BOND",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x0391D2021f89DC339F60Fff84546EA23E337750f/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x0417912b3a7AF768051765040A55BB0925D4DDcF",
+            "type": "ERC20",
+            "address": "0x0417912b3a7AF768051765040A55BB0925D4DDcF",
+            "name": "Liquidity Dividends Protocol",
+            "symbol": "LID",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x0417912b3a7AF768051765040A55BB0925D4DDcF/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x0488401c3F535193Fa8Df029d9fFe615A06E74E6",
+            "type": "ERC20",
+            "address": "0x0488401c3F535193Fa8Df029d9fFe615A06E74E6",
+            "name": "SparkPoint",
+            "symbol": "SRK",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x0488401c3F535193Fa8Df029d9fFe615A06E74E6/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x04Fa0d235C4abf4BcF4787aF4CF447DE572eF828",
+            "type": "ERC20",
+            "address": "0x04Fa0d235C4abf4BcF4787aF4CF447DE572eF828",
+            "name": "UMA Voting Token v1",
+            "symbol": "UMA",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x04Fa0d235C4abf4BcF4787aF4CF447DE572eF828/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x056Fd409E1d7A124BD7017459dFEa2F387b6d5Cd",
+            "type": "ERC20",
+            "address": "0x056Fd409E1d7A124BD7017459dFEa2F387b6d5Cd",
+            "name": "Gemini dollar",
+            "symbol": "GUSD",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x056Fd409E1d7A124BD7017459dFEa2F387b6d5Cd/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x06A01a4d579479Dd5D884EBf61A31727A3d8D442",
+            "type": "ERC20",
+            "address": "0x06A01a4d579479Dd5D884EBf61A31727A3d8D442",
+            "name": "SmartKey",
+            "symbol": "Skey",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x06A01a4d579479Dd5D884EBf61A31727A3d8D442/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x07150e919B4De5fD6a63DE1F9384828396f25fDC",
+            "type": "ERC20",
+            "address": "0x07150e919B4De5fD6a63DE1F9384828396f25fDC",
+            "name": "Base Protocol",
+            "symbol": "BASE",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x07150e919B4De5fD6a63DE1F9384828396f25fDC/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x09e64c2B61a5f1690Ee6fbeD9baf5D6990F8dFd0",
+            "type": "ERC20",
+            "address": "0x09e64c2B61a5f1690Ee6fbeD9baf5D6990F8dFd0",
+            "name": "Growth",
+            "symbol": "GRO",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x09e64c2B61a5f1690Ee6fbeD9baf5D6990F8dFd0/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x0Ae055097C6d159879521C384F1D2123D1f195e6",
+            "type": "ERC20",
+            "address": "0x0Ae055097C6d159879521C384F1D2123D1f195e6",
+            "name": "STAKE",
+            "symbol": "STAKE",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x0Ae055097C6d159879521C384F1D2123D1f195e6/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "chainId": 1,
+            "asset": "c60_t0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e",
+            "type": "ERC20",
+            "address": "0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e",
+            "name": "Yearn.Finance",
+            "symbol": "YFI",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x0d438F3b5175Bebc262bF23753C1E53d03432bDE",
+            "type": "ERC20",
+            "address": "0x0d438F3b5175Bebc262bF23753C1E53d03432bDE",
+            "name": "Wrapped NXM",
+            "symbol": "wNXM",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x0d438F3b5175Bebc262bF23753C1E53d03432bDE/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "chainId": 1,
+            "asset": "c60_t0x0D8775F648430679A709E98d2b0Cb6250d2887EF",
+            "type": "ERC20",
+            "address": "0x0D8775F648430679A709E98d2b0Cb6250d2887EF",
+            "name": "Basic Attention Token",
+            "symbol": "BAT",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x0D8775F648430679A709E98d2b0Cb6250d2887EF/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x0f7F961648aE6Db43C75663aC7E5414Eb79b5704",
+            "type": "ERC20",
+            "address": "0x0f7F961648aE6Db43C75663aC7E5414Eb79b5704",
+            "name": "XIO Network",
+            "symbol": "XIO",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x0f7F961648aE6Db43C75663aC7E5414Eb79b5704/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x1416946162B1C2c871A73B07E932D2fB6C932069",
+            "type": "ERC20",
+            "address": "0x1416946162B1C2c871A73B07E932D2fB6C932069",
+            "name": "Energi",
+            "symbol": "NRGT",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x1416946162B1C2c871A73B07E932D2fB6C932069/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x178c820f862B14f316509ec36b13123DA19A6054",
+            "type": "ERC20",
+            "address": "0x178c820f862B14f316509ec36b13123DA19A6054",
+            "name": "Energy Web Token Bridged",
+            "symbol": "EWTB",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x178c820f862B14f316509ec36b13123DA19A6054/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x18aAA7115705e8be94bfFEBDE57Af9BFc265B998",
+            "type": "ERC20",
+            "address": "0x18aAA7115705e8be94bfFEBDE57Af9BFc265B998",
+            "name": "Audius",
+            "symbol": "AUDIO",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x18aAA7115705e8be94bfFEBDE57Af9BFc265B998/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x1cEB5cB57C4D4E2b2433641b95Dd330A33185A44",
+            "type": "ERC20",
+            "address": "0x1cEB5cB57C4D4E2b2433641b95Dd330A33185A44",
+            "name": "Keep3rV1",
+            "symbol": "KP3R",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x1cEB5cB57C4D4E2b2433641b95Dd330A33185A44/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x1cF4592ebfFd730c7dc92c1bdFFDfc3B9EfCf29a",
+            "type": "ERC20",
+            "address": "0x1cF4592ebfFd730c7dc92c1bdFFDfc3B9EfCf29a",
+            "name": "WAVES",
+            "symbol": "WAVES",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x1cF4592ebfFd730c7dc92c1bdFFDfc3B9EfCf29a/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0x674C6Ad92Fd080e4004b2312b45f796a192D27a0"
+                }
+            ]
+        },
+        {
+            "chainId": 1,
+            "asset": "c60_t0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984",
+            "type": "ERC20",
+            "address": "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984",
+            "name": "Uniswap",
+            "symbol": "UNI",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x221657776846890989a759BA2973e427DfF5C9bB",
+            "type": "ERC20",
+            "address": "0x221657776846890989a759BA2973e427DfF5C9bB",
+            "name": "Reputation",
+            "symbol": "REPv2",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x221657776846890989a759BA2973e427DfF5C9bB/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x26CE25148832C04f3d7F26F32478a9fe55197166",
+            "type": "ERC20",
+            "address": "0x26CE25148832C04f3d7F26F32478a9fe55197166",
+            "name": "DEXTools",
+            "symbol": "DEXT",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x26CE25148832C04f3d7F26F32478a9fe55197166/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x28cb7e841ee97947a86B06fA4090C8451f64c0be",
+            "type": "ERC20",
+            "address": "0x28cb7e841ee97947a86B06fA4090C8451f64c0be",
+            "name": "YFLink",
+            "symbol": "YFL",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x28cb7e841ee97947a86B06fA4090C8451f64c0be/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x2a7f709eE001069771ceB6D42e85035f7D18E736",
+            "type": "ERC20",
+            "address": "0x2a7f709eE001069771ceB6D42e85035f7D18E736",
+            "name": "OWL Token",
+            "symbol": "OWL",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x2a7f709eE001069771ceB6D42e85035f7D18E736/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x2A8e1E676Ec238d8A992307B495b45B3fEAa5e86",
+            "type": "ERC20",
+            "address": "0x2A8e1E676Ec238d8A992307B495b45B3fEAa5e86",
+            "name": "Origin Dollar",
+            "symbol": "OUSD",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x2A8e1E676Ec238d8A992307B495b45B3fEAa5e86/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xdAC17F958D2ee523a2206206994597C13D831ec7"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x2ba592F78dB6436527729929AAf6c908497cB200",
+            "type": "ERC20",
+            "address": "0x2ba592F78dB6436527729929AAf6c908497cB200",
+            "name": "Cream",
+            "symbol": "CREAM",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x2ba592F78dB6436527729929AAf6c908497cB200/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x2e1E15C44Ffe4Df6a0cb7371CD00d5028e571d14",
+            "type": "ERC20",
+            "address": "0x2e1E15C44Ffe4Df6a0cb7371CD00d5028e571d14",
+            "name": "Mettalex",
+            "symbol": "MTLX",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x2e1E15C44Ffe4Df6a0cb7371CD00d5028e571d14/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xdAC17F958D2ee523a2206206994597C13D831ec7"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x2e2f3246b6c65CCc4239c9Ee556EC143a7E5DE2c",
+            "type": "ERC20",
+            "address": "0x2e2f3246b6c65CCc4239c9Ee556EC143a7E5DE2c",
+            "name": "yfi.mobi",
+            "symbol": "YFIM",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x2e2f3246b6c65CCc4239c9Ee556EC143a7E5DE2c/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x3383c5a8969Dc413bfdDc9656Eb80A1408E4bA20",
+            "type": "ERC20",
+            "address": "0x3383c5a8969Dc413bfdDc9656Eb80A1408E4bA20",
+            "name": "Wrapped ANATHA",
+            "symbol": "wANATHA",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x3383c5a8969Dc413bfdDc9656Eb80A1408E4bA20/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x33D0568941C0C64ff7e0FB4fbA0B11BD37deEd9f",
+            "type": "ERC20",
+            "address": "0x33D0568941C0C64ff7e0FB4fbA0B11BD37deEd9f",
+            "name": "RAMP DEFI",
+            "symbol": "RAMP",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x33D0568941C0C64ff7e0FB4fbA0B11BD37deEd9f/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x3449FC1Cd036255BA1EB19d65fF4BA2b8903A69a",
+            "type": "ERC20",
+            "address": "0x3449FC1Cd036255BA1EB19d65fF4BA2b8903A69a",
+            "name": "BAC",
+            "symbol": "BAC",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x3449FC1Cd036255BA1EB19d65fF4BA2b8903A69a/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0x6B175474E89094C44Da98b954EedeAC495271d0F"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x3472A5A71965499acd81997a54BBA8D852C6E53d",
+            "type": "ERC20",
+            "address": "0x3472A5A71965499acd81997a54BBA8D852C6E53d",
+            "name": "Badger",
+            "symbol": "BADGER",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x3472A5A71965499acd81997a54BBA8D852C6E53d/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x362bc847A3a9637d3af6624EeC853618a43ed7D2",
+            "type": "ERC20",
+            "address": "0x362bc847A3a9637d3af6624EeC853618a43ed7D2",
+            "name": "Parsiq Token",
+            "symbol": "PRQ",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x362bc847A3a9637d3af6624EeC853618a43ed7D2/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x36F3FD68E7325a35EB768F1AedaAe9EA0689d723",
+            "type": "ERC20",
+            "address": "0x36F3FD68E7325a35EB768F1AedaAe9EA0689d723",
+            "name": "Empty Set Dollar",
+            "symbol": "ESD",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x36F3FD68E7325a35EB768F1AedaAe9EA0689d723/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x38e4adB44ef08F22F5B5b76A8f0c2d0dCbE7DcA1",
+            "type": "ERC20",
+            "address": "0x38e4adB44ef08F22F5B5b76A8f0c2d0dCbE7DcA1",
+            "name": "Concentrated Voting Power",
+            "symbol": "CVP",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x38e4adB44ef08F22F5B5b76A8f0c2d0dCbE7DcA1/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x39795344CBCc76cC3Fb94B9D1b15C23c2070C66D",
+            "type": "ERC20",
+            "address": "0x39795344CBCc76cC3Fb94B9D1b15C23c2070C66D",
+            "name": "Seigniorage Shares",
+            "symbol": "SHARE",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x39795344CBCc76cC3Fb94B9D1b15C23c2070C66D/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x3aFfCCa64c2A6f4e3B6Bd9c64CD2C969EFd1ECBe",
+            "type": "ERC20",
+            "address": "0x3aFfCCa64c2A6f4e3B6Bd9c64CD2C969EFd1ECBe",
+            "name": "DSLA",
+            "symbol": "DSLA",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x3aFfCCa64c2A6f4e3B6Bd9c64CD2C969EFd1ECBe/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x3b62F3820e0B035cc4aD602dECe6d796BC325325",
+            "type": "ERC20",
+            "address": "0x3b62F3820e0B035cc4aD602dECe6d796BC325325",
+            "name": "DEUS",
+            "symbol": "DEUS",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x3b62F3820e0B035cc4aD602dECe6d796BC325325/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0x80aB141F324C3d6F2b18b030f1C4E95d4d658778"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x3D3D35bb9bEC23b06Ca00fe472b50E7A4c692C30",
+            "type": "ERC20",
+            "address": "0x3D3D35bb9bEC23b06Ca00fe472b50E7A4c692C30",
+            "name": "Vidya",
+            "symbol": "VIDYA",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x3D3D35bb9bEC23b06Ca00fe472b50E7A4c692C30/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x3DB6Ba6ab6F95efed1a6E794caD492fAAabF294D",
+            "type": "ERC20",
+            "address": "0x3DB6Ba6ab6F95efed1a6E794caD492fAAabF294D",
+            "name": "LTO Network Token",
+            "symbol": "LTO",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x3DB6Ba6ab6F95efed1a6E794caD492fAAabF294D/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x408e41876cCCDC0F92210600ef50372656052a38",
+            "type": "ERC20",
+            "address": "0x408e41876cCCDC0F92210600ef50372656052a38",
+            "name": "Republic Token",
+            "symbol": "REN",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x408e41876cCCDC0F92210600ef50372656052a38/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x40FD72257597aA14C7231A7B1aaa29Fce868F677",
+            "type": "ERC20",
+            "address": "0x40FD72257597aA14C7231A7B1aaa29Fce868F677",
+            "name": "Sora Token",
+            "symbol": "XOR",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x40FD72257597aA14C7231A7B1aaa29Fce868F677/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x4156D3342D5c385a87D264F90653733592000581",
+            "type": "ERC20",
+            "address": "0x4156D3342D5c385a87D264F90653733592000581",
+            "name": "Salt",
+            "symbol": "SALT",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x4156D3342D5c385a87D264F90653733592000581/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x419D0d8BdD9aF5e606Ae2232ed285Aff190E711b",
+            "type": "ERC20",
+            "address": "0x419D0d8BdD9aF5e606Ae2232ed285Aff190E711b",
+            "name": "FunFair",
+            "symbol": "FUN",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x419D0d8BdD9aF5e606Ae2232ed285Aff190E711b/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x429881672B9AE42b8EbA0E26cD9C73711b891Ca5",
+            "type": "ERC20",
+            "address": "0x429881672B9AE42b8EbA0E26cD9C73711b891Ca5",
+            "name": "PickleToken",
+            "symbol": "PICKLE",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x429881672B9AE42b8EbA0E26cD9C73711b891Ca5/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x431ad2ff6a9C365805eBaD47Ee021148d6f7DBe0",
+            "type": "ERC20",
+            "address": "0x431ad2ff6a9C365805eBaD47Ee021148d6f7DBe0",
+            "name": "dForce",
+            "symbol": "DF",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x431ad2ff6a9C365805eBaD47Ee021148d6f7DBe0/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x4575f41308EC1483f3d399aa9a2826d74Da13Deb",
+            "type": "ERC20",
+            "address": "0x4575f41308EC1483f3d399aa9a2826d74Da13Deb",
+            "name": "Orchid",
+            "symbol": "OXT",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x4575f41308EC1483f3d399aa9a2826d74Da13Deb/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x459086F2376525BdCebA5bDDA135e4E9d3FeF5bf",
+            "type": "ERC20",
+            "address": "0x459086F2376525BdCebA5bDDA135e4E9d3FeF5bf",
+            "name": "renBCH",
+            "symbol": "renBCH",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x459086F2376525BdCebA5bDDA135e4E9d3FeF5bf/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x4a220E6096B25EADb88358cb44068A3248254675",
+            "type": "ERC20",
+            "address": "0x4a220E6096B25EADb88358cb44068A3248254675",
+            "name": "Quant",
+            "symbol": "QNT",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x4a220E6096B25EADb88358cb44068A3248254675/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x4c11249814f11b9346808179Cf06e71ac328c1b5",
+            "type": "ERC20",
+            "address": "0x4c11249814f11b9346808179Cf06e71ac328c1b5",
+            "name": "Oraichain Token",
+            "symbol": "ORAI",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x4c11249814f11b9346808179Cf06e71ac328c1b5/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x4C19596f5aAfF459fA38B0f7eD92F11AE6543784",
+            "type": "ERC20",
+            "address": "0x4C19596f5aAfF459fA38B0f7eD92F11AE6543784",
+            "name": "TrustToken",
+            "symbol": "TRU",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x4C19596f5aAfF459fA38B0f7eD92F11AE6543784/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "chainId": 1,
+            "asset": "c60_t0x514910771AF9Ca656af840dff83E8264EcF986CA",
+            "type": "ERC20",
+            "address": "0x514910771AF9Ca656af840dff83E8264EcF986CA",
+            "name": "ChainLink",
+            "symbol": "Link",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x514910771AF9Ca656af840dff83E8264EcF986CA/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x5218E472cFCFE0b64A064F055B43b4cdC9EfD3A6",
+            "type": "ERC20",
+            "address": "0x5218E472cFCFE0b64A064F055B43b4cdC9EfD3A6",
+            "name": "UnFederalReserveToken",
+            "symbol": "eRSDL",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x5218E472cFCFE0b64A064F055B43b4cdC9EfD3A6/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x54C9EA2E9C9E8eD865Db4A4ce6711C2a0d5063Ba",
+            "type": "ERC20",
+            "address": "0x54C9EA2E9C9E8eD865Db4A4ce6711C2a0d5063Ba",
+            "name": "BarterTrade",
+            "symbol": "BART",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x54C9EA2E9C9E8eD865Db4A4ce6711C2a0d5063Ba/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x557B933a7C2c45672B610F8954A3deB39a51A8Ca",
+            "type": "ERC20",
+            "address": "0x557B933a7C2c45672B610F8954A3deB39a51A8Ca",
+            "name": "REVV",
+            "symbol": "REVV",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x557B933a7C2c45672B610F8954A3deB39a51A8Ca/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x56d811088235F11C8920698a204A5010a788f4b3",
+            "type": "ERC20",
+            "address": "0x56d811088235F11C8920698a204A5010a788f4b3",
+            "name": "bZx Protocol Token",
+            "symbol": "BZRX",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x56d811088235F11C8920698a204A5010a788f4b3/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x57Ab1ec28D129707052df4dF418D58a2D46d5f51",
+            "type": "ERC20",
+            "address": "0x57Ab1ec28D129707052df4dF418D58a2D46d5f51",
+            "name": "Synth sUSD",
+            "symbol": "sUSD",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x57Ab1ec28D129707052df4dF418D58a2D46d5f51/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x584bC13c7D411c00c01A62e8019472dE68768430",
+            "type": "ERC20",
+            "address": "0x584bC13c7D411c00c01A62e8019472dE68768430",
+            "name": "Hegic",
+            "symbol": "HEGIC",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x584bC13c7D411c00c01A62e8019472dE68768430/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x5BEfBB272290dD5b8521D4a938f6c4757742c430",
+            "type": "ERC20",
+            "address": "0x5BEfBB272290dD5b8521D4a938f6c4757742c430",
+            "name": "Xfinance",
+            "symbol": "XFI",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x5BEfBB272290dD5b8521D4a938f6c4757742c430/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x5Dc02Ea99285E17656b8350722694c35154DB1E8",
+            "type": "ERC20",
+            "address": "0x5Dc02Ea99285E17656b8350722694c35154DB1E8",
+            "name": "BOND",
+            "symbol": "BOND",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x5Dc02Ea99285E17656b8350722694c35154DB1E8/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x62359Ed7505Efc61FF1D56fEF82158CcaffA23D7",
+            "type": "ERC20",
+            "address": "0x62359Ed7505Efc61FF1D56fEF82158CcaffA23D7",
+            "name": "cVault.finance",
+            "symbol": "CORE",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x62359Ed7505Efc61FF1D56fEF82158CcaffA23D7/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x6468e79A80C0eaB0F9A2B574c8d5bC374Af59414",
+            "type": "ERC20",
+            "address": "0x6468e79A80C0eaB0F9A2B574c8d5bC374Af59414",
+            "name": "E-RADIX",
+            "symbol": "eXRD",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x6468e79A80C0eaB0F9A2B574c8d5bC374Af59414/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x66a0f676479Cee1d7373f3DC2e2952778BfF5bd6",
+            "type": "ERC20",
+            "address": "0x66a0f676479Cee1d7373f3DC2e2952778BfF5bd6",
+            "name": "Wise Token",
+            "symbol": "WISE",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x66a0f676479Cee1d7373f3DC2e2952778BfF5bd6/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x674C6Ad92Fd080e4004b2312b45f796a192D27a0",
+            "type": "ERC20",
+            "address": "0x674C6Ad92Fd080e4004b2312b45f796a192D27a0",
+            "name": "Neutrino USD",
+            "symbol": "USDN",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x674C6Ad92Fd080e4004b2312b45f796a192D27a0/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0x1cF4592ebfFd730c7dc92c1bdFFDfc3B9EfCf29a"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x6810e776880C02933D47DB1b9fc05908e5386b96",
+            "type": "ERC20",
+            "address": "0x6810e776880C02933D47DB1b9fc05908e5386b96",
+            "name": "Gnosis Token",
+            "symbol": "GNO",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x6810e776880C02933D47DB1b9fc05908e5386b96/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x69692D3345010a207b759a7D1af6fc7F38b35c5E",
+            "type": "ERC20",
+            "address": "0x69692D3345010a207b759a7D1af6fc7F38b35c5E",
+            "name": "chads.vc",
+            "symbol": "CHADS",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x69692D3345010a207b759a7D1af6fc7F38b35c5E/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x6B3595068778DD592e39A122f4f5a5cF09C90fE2",
+            "type": "ERC20",
+            "address": "0x6B3595068778DD592e39A122f4f5a5cF09C90fE2",
+            "name": "SushiToken",
+            "symbol": "SUSHI",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x6B3595068778DD592e39A122f4f5a5cF09C90fE2/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x6e0daDE58D2d89eBBe7aFc384e3E4f15b70b14D8",
+            "type": "ERC20",
+            "address": "0x6e0daDE58D2d89eBBe7aFc384e3E4f15b70b14D8",
+            "name": "QuiverX",
+            "symbol": "QRX",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x6e0daDE58D2d89eBBe7aFc384e3E4f15b70b14D8/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x6F87D756DAf0503d08Eb8993686c7Fc01Dc44fB1",
+            "type": "ERC20",
+            "address": "0x6F87D756DAf0503d08Eb8993686c7Fc01Dc44fB1",
+            "name": "UniTrade",
+            "symbol": "TRADE",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x6F87D756DAf0503d08Eb8993686c7Fc01Dc44fB1/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x71F85B2E46976bD21302B64329868fd15eb0D127",
+            "type": "ERC20",
+            "address": "0x71F85B2E46976bD21302B64329868fd15eb0D127",
+            "name": "Axion",
+            "symbol": "AXN",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x71F85B2E46976bD21302B64329868fd15eb0D127/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x7240aC91f01233BaAf8b064248E80feaA5912BA3",
+            "type": "ERC20",
+            "address": "0x7240aC91f01233BaAf8b064248E80feaA5912BA3",
+            "name": "Octo.fi",
+            "symbol": "OCTO",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x7240aC91f01233BaAf8b064248E80feaA5912BA3/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x72630B1e3B42874bf335020Ba0249e3E9e47Bafc",
+            "type": "ERC20",
+            "address": "0x72630B1e3B42874bf335020Ba0249e3E9e47Bafc",
+            "name": "Paypolitan Token",
+            "symbol": "EPAN",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x72630B1e3B42874bf335020Ba0249e3E9e47Bafc/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x72e9D9038cE484EE986FEa183f8d8Df93f9aDA13",
+            "type": "ERC20",
+            "address": "0x72e9D9038cE484EE986FEa183f8d8Df93f9aDA13",
+            "name": "SMARTCREDIT Token",
+            "symbol": "SMARTCREDIT",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x72e9D9038cE484EE986FEa183f8d8Df93f9aDA13/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x7671904eed7f10808B664fc30BB8693FD7237abF",
+            "type": "ERC20",
+            "address": "0x7671904eed7f10808B664fc30BB8693FD7237abF",
+            "name": "BitberryToken",
+            "symbol": "BBR",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x7671904eed7f10808B664fc30BB8693FD7237abF/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x7a2Bc711E19ba6aff6cE8246C546E8c4B4944DFD",
+            "type": "ERC20",
+            "address": "0x7a2Bc711E19ba6aff6cE8246C546E8c4B4944DFD",
+            "name": "WAX Economic Token",
+            "symbol": "WAXE",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x7a2Bc711E19ba6aff6cE8246C546E8c4B4944DFD/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x7B0C06043468469967DBA22d1AF33d77d44056c8",
+            "type": "ERC20",
+            "address": "0x7B0C06043468469967DBA22d1AF33d77d44056c8",
+            "name": "Morpheus.Network",
+            "symbol": "MRPH",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x7B0C06043468469967DBA22d1AF33d77d44056c8/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x7D1AfA7B718fb893dB30A3aBc0Cfc608AaCfeBB0",
+            "type": "ERC20",
+            "address": "0x7D1AfA7B718fb893dB30A3aBc0Cfc608AaCfeBB0",
+            "name": "Matic Token",
+            "symbol": "MATIC",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x7D1AfA7B718fb893dB30A3aBc0Cfc608AaCfeBB0/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x7dE91B204C1C737bcEe6F000AAA6569Cf7061cb7",
+            "type": "ERC20",
+            "address": "0x7dE91B204C1C737bcEe6F000AAA6569Cf7061cb7",
+            "name": "Robonomics",
+            "symbol": "XRT",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x7dE91B204C1C737bcEe6F000AAA6569Cf7061cb7/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "chainId": 1,
+            "asset": "c60_t0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9",
+            "type": "ERC20",
+            "address": "0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9",
+            "name": "Aave Token",
+            "symbol": "AAVE",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x80aB141F324C3d6F2b18b030f1C4E95d4d658778",
+            "type": "ERC20",
+            "address": "0x80aB141F324C3d6F2b18b030f1C4E95d4d658778",
+            "name": "DEA",
+            "symbol": "DEA",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x80aB141F324C3d6F2b18b030f1C4E95d4d658778/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0x3b62F3820e0B035cc4aD602dECe6d796BC325325"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x8207c1FfC5B6804F6024322CcF34F29c3541Ae26",
+            "type": "ERC20",
+            "address": "0x8207c1FfC5B6804F6024322CcF34F29c3541Ae26",
+            "name": "OriginToken",
+            "symbol": "OGN",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x8207c1FfC5B6804F6024322CcF34F29c3541Ae26/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x83e6f1E41cdd28eAcEB20Cb649155049Fac3D5Aa",
+            "type": "ERC20",
+            "address": "0x83e6f1E41cdd28eAcEB20Cb649155049Fac3D5Aa",
+            "name": "PolkastarterToken",
+            "symbol": "POLS",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x83e6f1E41cdd28eAcEB20Cb649155049Fac3D5Aa/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x8400D94A5cb0fa0D041a3788e395285d61c9ee5e",
+            "type": "ERC20",
+            "address": "0x8400D94A5cb0fa0D041a3788e395285d61c9ee5e",
+            "name": "UniBright",
+            "symbol": "UBT",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x8400D94A5cb0fa0D041a3788e395285d61c9ee5e/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x84294FC9710e1252d407d3D80A84bC39001bd4A8",
+            "type": "ERC20",
+            "address": "0x84294FC9710e1252d407d3D80A84bC39001bd4A8",
+            "name": "Squirrel Finance",
+            "symbol": "NUTS",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x84294FC9710e1252d407d3D80A84bC39001bd4A8/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x84cA8bc7997272c7CfB4D0Cd3D55cd942B3c9419",
+            "type": "ERC20",
+            "address": "0x84cA8bc7997272c7CfB4D0Cd3D55cd942B3c9419",
+            "name": "DIAToken",
+            "symbol": "DIA",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x84cA8bc7997272c7CfB4D0Cd3D55cd942B3c9419/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x8762db106B2c2A0bccB3A80d1Ed41273552616E8",
+            "type": "ERC20",
+            "address": "0x8762db106B2c2A0bccB3A80d1Ed41273552616E8",
+            "name": "Reserve Rights",
+            "symbol": "RSR",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x8762db106B2c2A0bccB3A80d1Ed41273552616E8/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x8CE9137d39326AD0cD6491fb5CC0CbA0e089b6A9",
+            "type": "ERC20",
+            "address": "0x8CE9137d39326AD0cD6491fb5CC0CbA0e089b6A9",
+            "name": "Swipe",
+            "symbol": "SXP",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x8CE9137d39326AD0cD6491fb5CC0CbA0e089b6A9/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x9355372396e3F6daF13359B7b607a3374cc638e0",
+            "type": "ERC20",
+            "address": "0x9355372396e3F6daF13359B7b607a3374cc638e0",
+            "name": "WHALE",
+            "symbol": "WHALE",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x9355372396e3F6daF13359B7b607a3374cc638e0/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x93ED3FBe21207Ec2E8f2d3c3de6e058Cb73Bc04d",
+            "type": "ERC20",
+            "address": "0x93ED3FBe21207Ec2E8f2d3c3de6e058Cb73Bc04d",
+            "name": "Pinakion",
+            "symbol": "PNK",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x93ED3FBe21207Ec2E8f2d3c3de6e058Cb73Bc04d/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x9469D013805bFfB7D3DEBe5E7839237e535ec483",
+            "type": "ERC20",
+            "address": "0x9469D013805bFfB7D3DEBe5E7839237e535ec483",
+            "name": "Darwinia Network Native Token",
+            "symbol": "RING",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x9469D013805bFfB7D3DEBe5E7839237e535ec483/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x95a4492F028aa1fd432Ea71146b433E7B4446611",
+            "type": "ERC20",
+            "address": "0x95a4492F028aa1fd432Ea71146b433E7B4446611",
+            "name": "APY Governance Token",
+            "symbol": "APY",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x95a4492F028aa1fd432Ea71146b433E7B4446611/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x967da4048cD07aB37855c090aAF366e4ce1b9F48",
+            "type": "ERC20",
+            "address": "0x967da4048cD07aB37855c090aAF366e4ce1b9F48",
+            "name": "Ocean Token",
+            "symbol": "OCEAN",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x967da4048cD07aB37855c090aAF366e4ce1b9F48/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x990f341946A3fdB507aE7e52d17851B87168017c",
+            "type": "ERC20",
+            "address": "0x990f341946A3fdB507aE7e52d17851B87168017c",
+            "name": "Strong",
+            "symbol": "STRONG",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x990f341946A3fdB507aE7e52d17851B87168017c/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x9BE89D2a4cd102D8Fecc6BF9dA793be995C22541",
+            "type": "ERC20",
+            "address": "0x9BE89D2a4cd102D8Fecc6BF9dA793be995C22541",
+            "name": "Binance Wrapped BTC",
+            "symbol": "BBTC",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x9BE89D2a4cd102D8Fecc6BF9dA793be995C22541/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x9Ed8e7C9604790F7Ec589F99b94361d8AAB64E5E",
+            "type": "ERC20",
+            "address": "0x9Ed8e7C9604790F7Ec589F99b94361d8AAB64E5E",
+            "name": "Unistake",
+            "symbol": "UNISTAKE",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x9Ed8e7C9604790F7Ec589F99b94361d8AAB64E5E/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0x9f7229aF0c4b9740e207Ea283b9094983f78ba04",
+            "type": "ERC20",
+            "address": "0x9f7229aF0c4b9740e207Ea283b9094983f78ba04",
+            "name": "Tadpole",
+            "symbol": "TAD",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x9f7229aF0c4b9740e207Ea283b9094983f78ba04/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "chainId": 1,
+            "asset": "c60_t0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2",
+            "type": "ERC20",
+            "address": "0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2",
+            "name": "MakerDAO",
+            "symbol": "MKR",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xa0246c9032bC3A600820415aE600c6388619A14D",
+            "type": "ERC20",
+            "address": "0xa0246c9032bC3A600820415aE600c6388619A14D",
+            "name": "FARM Reward Token",
+            "symbol": "FARM",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xa0246c9032bC3A600820415aE600c6388619A14D/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xa117000000f279D81A1D3cc75430fAA017FA5A2e",
+            "type": "ERC20",
+            "address": "0xa117000000f279D81A1D3cc75430fAA017FA5A2e",
+            "name": "Aragon Network Token",
+            "symbol": "ANT",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xa117000000f279D81A1D3cc75430fAA017FA5A2e/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xA15C7Ebe1f07CaF6bFF097D8a589fb8AC49Ae5B3",
+            "type": "ERC20",
+            "address": "0xA15C7Ebe1f07CaF6bFF097D8a589fb8AC49Ae5B3",
+            "name": "Pundi X Token",
+            "symbol": "NPXS",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xA15C7Ebe1f07CaF6bFF097D8a589fb8AC49Ae5B3/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xa1d6Df714F91DeBF4e0802A542E13067f31b8262",
+            "type": "ERC20",
+            "address": "0xa1d6Df714F91DeBF4e0802A542E13067f31b8262",
+            "name": "RFOX",
+            "symbol": "RFOX",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xa1d6Df714F91DeBF4e0802A542E13067f31b8262/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xa3BeD4E1c75D00fa6f4E5E6922DB7261B5E9AcD2",
+            "type": "ERC20",
+            "address": "0xa3BeD4E1c75D00fa6f4E5E6922DB7261B5E9AcD2",
+            "name": "Meta",
+            "symbol": "MTA",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xa3BeD4E1c75D00fa6f4E5E6922DB7261B5E9AcD2/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xa6FB1DF483b24EEAB569e19447E0e107003B9E15",
+            "type": "ERC20",
+            "address": "0xa6FB1DF483b24EEAB569e19447E0e107003B9E15",
+            "name": "Earnbase",
+            "symbol": "ENB",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xa6FB1DF483b24EEAB569e19447E0e107003B9E15/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xa7DE087329BFcda5639247F96140f9DAbe3DeED1",
+            "type": "ERC20",
+            "address": "0xa7DE087329BFcda5639247F96140f9DAbe3DeED1",
+            "name": "Statera",
+            "symbol": "STA",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xa7DE087329BFcda5639247F96140f9DAbe3DeED1/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xeDEec5691f23E4914cF0183A4196bBEb30d027a0"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xa7ED29B253D8B4E3109ce07c80fc570f81B63696",
+            "type": "ERC20",
+            "address": "0xa7ED29B253D8B4E3109ce07c80fc570f81B63696",
+            "name": "BAS",
+            "symbol": "BAS",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xa7ED29B253D8B4E3109ce07c80fc570f81B63696/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0x6B175474E89094C44Da98b954EedeAC495271d0F"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xa8c8CfB141A3bB59FEA1E2ea6B79b5ECBCD7b6ca",
+            "type": "ERC20",
+            "address": "0xa8c8CfB141A3bB59FEA1E2ea6B79b5ECBCD7b6ca",
+            "name": "NOIA Token",
+            "symbol": "NOIA",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xa8c8CfB141A3bB59FEA1E2ea6B79b5ECBCD7b6ca/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xaaAEBE6Fe48E54f431b0C390CfaF0b017d09D42d",
+            "type": "ERC20",
+            "address": "0xaaAEBE6Fe48E54f431b0C390CfaF0b017d09D42d",
+            "name": "Celsius",
+            "symbol": "CEL",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xaaAEBE6Fe48E54f431b0C390CfaF0b017d09D42d/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xaAAf91D9b90dF800Df4F55c205fd6989c977E73a",
+            "type": "ERC20",
+            "address": "0xaAAf91D9b90dF800Df4F55c205fd6989c977E73a",
+            "name": "Monolith TKN",
+            "symbol": "TKN",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xaAAf91D9b90dF800Df4F55c205fd6989c977E73a/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xADE00C28244d5CE17D72E40330B1c318cD12B7c3",
+            "type": "ERC20",
+            "address": "0xADE00C28244d5CE17D72E40330B1c318cD12B7c3",
+            "name": "AdEx Network",
+            "symbol": "ADX",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xADE00C28244d5CE17D72E40330B1c318cD12B7c3/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xAE1eaAE3F627AAca434127644371b67B18444051",
+            "type": "ERC20",
+            "address": "0xAE1eaAE3F627AAca434127644371b67B18444051",
+            "name": "YOP",
+            "symbol": "YOP",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xAE1eaAE3F627AAca434127644371b67B18444051/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xaE697F994Fc5eBC000F8e22EbFfeE04612f98A0d",
+            "type": "ERC20",
+            "address": "0xaE697F994Fc5eBC000F8e22EbFfeE04612f98A0d",
+            "name": "LGCY Network",
+            "symbol": "LGCY",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xaE697F994Fc5eBC000F8e22EbFfeE04612f98A0d/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xaf9f549774ecEDbD0966C52f250aCc548D3F36E5",
+            "type": "ERC20",
+            "address": "0xaf9f549774ecEDbD0966C52f250aCc548D3F36E5",
+            "name": "Rio Fuel Token",
+            "symbol": "RFuel",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xaf9f549774ecEDbD0966C52f250aCc548D3F36E5/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xB1e9157c2Fdcc5a856C8DA8b2d89b6C32b3c1229",
+            "type": "ERC20",
+            "address": "0xB1e9157c2Fdcc5a856C8DA8b2d89b6C32b3c1229",
+            "name": "Zenfuse Trading Platform Token",
+            "symbol": "ZEFU",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xB1e9157c2Fdcc5a856C8DA8b2d89b6C32b3c1229/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xB4d930279552397bbA2ee473229f89Ec245bc365",
+            "type": "ERC20",
+            "address": "0xB4d930279552397bbA2ee473229f89Ec245bc365",
+            "name": "MahaDAO",
+            "symbol": "MAHA",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xB4d930279552397bbA2ee473229f89Ec245bc365/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xB4EFd85c19999D84251304bDA99E90B92300Bd93",
+            "type": "ERC20",
+            "address": "0xB4EFd85c19999D84251304bDA99E90B92300Bd93",
+            "name": "Rocket Pool",
+            "symbol": "RPL",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xB4EFd85c19999D84251304bDA99E90B92300Bd93/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xB5FE099475d3030DDe498c3BB6F3854F762A48Ad",
+            "type": "ERC20",
+            "address": "0xB5FE099475d3030DDe498c3BB6F3854F762A48Ad",
+            "name": "Finiko",
+            "symbol": "FNK",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xB5FE099475d3030DDe498c3BB6F3854F762A48Ad/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xdAC17F958D2ee523a2206206994597C13D831ec7"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xB62132e35a6c13ee1EE0f84dC5d40bad8d815206",
+            "type": "ERC20",
+            "address": "0xB62132e35a6c13ee1EE0f84dC5d40bad8d815206",
+            "name": "Nexo",
+            "symbol": "NEXO",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xB62132e35a6c13ee1EE0f84dC5d40bad8d815206/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xb753428af26E81097e7fD17f40c88aaA3E04902c",
+            "type": "ERC20",
+            "address": "0xb753428af26E81097e7fD17f40c88aaA3E04902c",
+            "name": "Spice",
+            "symbol": "SFI",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xb753428af26E81097e7fD17f40c88aaA3E04902c/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xB987D48Ed8f2C468D52D6405624EADBa5e76d723",
+            "type": "ERC20",
+            "address": "0xB987D48Ed8f2C468D52D6405624EADBa5e76d723",
+            "name": "Stabilize Token",
+            "symbol": "STBZ",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xB987D48Ed8f2C468D52D6405624EADBa5e76d723/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xb9EF770B6A5e12E45983C5D80545258aA38F3B78",
+            "type": "ERC20",
+            "address": "0xb9EF770B6A5e12E45983C5D80545258aA38F3B78",
+            "name": "0chain",
+            "symbol": "ZCN",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xb9EF770B6A5e12E45983C5D80545258aA38F3B78/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xba100000625a3754423978a60c9317c58a424e3D",
+            "type": "ERC20",
+            "address": "0xba100000625a3754423978a60c9317c58a424e3D",
+            "name": "Balancer",
+            "symbol": "BAL",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xba100000625a3754423978a60c9317c58a424e3D/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xBA11D00c5f74255f56a5E366F4F77f5A186d7f55",
+            "type": "ERC20",
+            "address": "0xBA11D00c5f74255f56a5E366F4F77f5A186d7f55",
+            "name": "BandToken",
+            "symbol": "BAND",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xBA11D00c5f74255f56a5E366F4F77f5A186d7f55/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xBa21Ef4c9f433Ede00badEFcC2754B8E74bd538A",
+            "type": "ERC20",
+            "address": "0xBa21Ef4c9f433Ede00badEFcC2754B8E74bd538A",
+            "name": "Swapfolio",
+            "symbol": "SWFL",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xBa21Ef4c9f433Ede00badEFcC2754B8E74bd538A/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xBBbbCA6A901c926F240b89EacB641d8Aec7AEafD",
+            "type": "ERC20",
+            "address": "0xBBbbCA6A901c926F240b89EacB641d8Aec7AEafD",
+            "name": "LoopringCoin V2",
+            "symbol": "LRC",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xBBbbCA6A901c926F240b89EacB641d8Aec7AEafD/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xbC396689893D065F41bc2C6EcbeE5e0085233447",
+            "type": "ERC20",
+            "address": "0xbC396689893D065F41bc2C6EcbeE5e0085233447",
+            "name": "Perpetual",
+            "symbol": "PERP",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xbC396689893D065F41bc2C6EcbeE5e0085233447/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xBD2F0Cd039E0BFcf88901C98c0bFAc5ab27566e3",
+            "type": "ERC20",
+            "address": "0xBD2F0Cd039E0BFcf88901C98c0bFAc5ab27566e3",
+            "name": "Dynamic Set Dollar",
+            "symbol": "DSD",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xBD2F0Cd039E0BFcf88901C98c0bFAc5ab27566e3/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
+                }
+            ]
+        },
+        {
+            "chainId": 1,
+            "asset": "c60_t0xc00e94Cb662C3520282E6f5717214004A7f26888",
+            "type": "ERC20",
+            "address": "0xc00e94Cb662C3520282E6f5717214004A7f26888",
+            "name": "Compound",
+            "symbol": "COMP",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xc00e94Cb662C3520282E6f5717214004A7f26888/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xC011a73ee8576Fb46F5E1c5751cA3B9Fe0af2a6F",
+            "type": "ERC20",
+            "address": "0xC011a73ee8576Fb46F5E1c5751cA3B9Fe0af2a6F",
+            "name": "Synthetix Network Token",
+            "symbol": "SNX",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xC011a73ee8576Fb46F5E1c5751cA3B9Fe0af2a6F/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xC4C2614E694cF534D407Ee49F8E44D125E4681c4",
+            "type": "ERC20",
+            "address": "0xC4C2614E694cF534D407Ee49F8E44D125E4681c4",
+            "name": "Chain Games",
+            "symbol": "CHAIN",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xC4C2614E694cF534D407Ee49F8E44D125E4681c4/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xc719d010B63E5bbF2C0551872CD5316ED26AcD83",
+            "type": "ERC20",
+            "address": "0xc719d010B63E5bbF2C0551872CD5316ED26AcD83",
+            "name": "Decentralized Insurance Protocol",
+            "symbol": "DIP",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xc719d010B63E5bbF2C0551872CD5316ED26AcD83/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xca1207647Ff814039530D7d35df0e1Dd2e91Fa84",
+            "type": "ERC20",
+            "address": "0xca1207647Ff814039530D7d35df0e1Dd2e91Fa84",
+            "name": "dHedge DAO Token",
+            "symbol": "DHT",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xca1207647Ff814039530D7d35df0e1Dd2e91Fa84/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xCb5f72d37685C3D5aD0bB5F982443BC8FcdF570E",
+            "type": "ERC20",
+            "address": "0xCb5f72d37685C3D5aD0bB5F982443BC8FcdF570E",
+            "name": "RootKit",
+            "symbol": "ROOT",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xCb5f72d37685C3D5aD0bB5F982443BC8FcdF570E/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xCC4304A31d09258b0029eA7FE63d032f52e44EFe",
+            "type": "ERC20",
+            "address": "0xCC4304A31d09258b0029eA7FE63d032f52e44EFe",
+            "name": "TrustSwap Token",
+            "symbol": "SWAP",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xCC4304A31d09258b0029eA7FE63d032f52e44EFe/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xd084B83C305daFD76AE3E1b4E1F1fe2eCcCb3988",
+            "type": "ERC20",
+            "address": "0xd084B83C305daFD76AE3E1b4E1F1fe2eCcCb3988",
+            "name": "Terra Virtua Kolect",
+            "symbol": "TVK",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xd084B83C305daFD76AE3E1b4E1F1fe2eCcCb3988/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xd1AFBCCC9A2c2187ea544363B986EA0AB6EF08B5",
+            "type": "ERC20",
+            "address": "0xd1AFBCCC9A2c2187ea544363B986EA0AB6EF08B5",
+            "name": "Ethereum Yield",
+            "symbol": "ETHY",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xd1AFBCCC9A2c2187ea544363B986EA0AB6EF08B5/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "chainId": 1,
+            "asset": "c60_t0xd26114cd6EE289AccF82350c8d8487fedB8A0C07",
+            "type": "ERC20",
+            "address": "0xd26114cd6EE289AccF82350c8d8487fedB8A0C07",
+            "name": "OMG Network",
+            "symbol": "OMG",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets//logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xd379700999F4805Ce80aa32DB46A94dF64561108",
+            "type": "ERC20",
+            "address": "0xd379700999F4805Ce80aa32DB46A94dF64561108",
+            "name": "Dextrust",
+            "symbol": "DETS",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xd379700999F4805Ce80aa32DB46A94dF64561108/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xD46bA6D942050d489DBd938a2C909A5d5039A161",
+            "type": "ERC20",
+            "address": "0xD46bA6D942050d489DBd938a2C909A5d5039A161",
+            "name": "Ampleforth",
+            "symbol": "AMPL",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xD46bA6D942050d489DBd938a2C909A5d5039A161/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xD533a949740bb3306d119CC777fa900bA034cd52",
+            "type": "ERC20",
+            "address": "0xD533a949740bb3306d119CC777fa900bA034cd52",
+            "name": "Curve DAO Token",
+            "symbol": "CRV",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xD533a949740bb3306d119CC777fa900bA034cd52/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xD5525D397898e5502075Ea5E830d8914f6F0affe",
+            "type": "ERC20",
+            "address": "0xD5525D397898e5502075Ea5E830d8914f6F0affe",
+            "name": "MEME",
+            "symbol": "MEME",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xD5525D397898e5502075Ea5E830d8914f6F0affe/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xD56daC73A4d6766464b38ec6D91eB45Ce7457c44",
+            "type": "ERC20",
+            "address": "0xD56daC73A4d6766464b38ec6D91eB45Ce7457c44",
+            "name": "Panvala pan",
+            "symbol": "PAN",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xD56daC73A4d6766464b38ec6D91eB45Ce7457c44/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xD6c67B93a7b248dF608a653d82a100556144c5DA",
+            "type": "ERC20",
+            "address": "0xD6c67B93a7b248dF608a653d82a100556144c5DA",
+            "name": "ExNetwork Community Token",
+            "symbol": "EXNT",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xD6c67B93a7b248dF608a653d82a100556144c5DA/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xdB25f211AB05b1c97D595516F45794528a807ad8",
+            "type": "ERC20",
+            "address": "0xdB25f211AB05b1c97D595516F45794528a807ad8",
+            "name": "STASIS EURS Token",
+            "symbol": "EURS",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xdB25f211AB05b1c97D595516F45794528a807ad8/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xdbf0fac1499a931ed6e5F6122dbbCD3B80f66c7E",
+            "type": "ERC20",
+            "address": "0xdbf0fac1499a931ed6e5F6122dbbCD3B80f66c7E",
+            "name": "RocketFuel",
+            "symbol": "RKFL",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xdbf0fac1499a931ed6e5F6122dbbCD3B80f66c7E/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
         },
         {
             "chainId": 1,
@@ -611,45 +2926,250 @@
             "symbol": "KNC",
             "decimals": 18,
             "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xdd974D5C2e2928deA5F71b9825b8b646686BD200/logo.png",
-            "pairs": []
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
         },
         {
-            "chainId": 1,
-            "asset": "c60_t0xE41d2489571d322189246DaFA5ebDe1F4699F498",
+            "asset": "c60_t0xdF9307DFf0a1B57660F60f9457D32027a55ca0B2",
             "type": "ERC20",
-            "address": "0xE41d2489571d322189246DaFA5ebDe1F4699F498",
-            "name": "0x Protocol Token",
-            "symbol": "ZRX",
-            "decimals": 18,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xE41d2489571d322189246DaFA5ebDe1F4699F498/logo.png",
-            "pairs": []
+            "address": "0xdF9307DFf0a1B57660F60f9457D32027a55ca0B2",
+            "name": "DMM: ETH",
+            "symbol": "mETH",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xdF9307DFf0a1B57660F60f9457D32027a55ca0B2/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
         },
         {
-            "chainId": 1,
+            "asset": "c60_t0xe28b3B32B6c345A34Ff64674606124Dd5Aceca30",
+            "type": "ERC20",
+            "address": "0xe28b3B32B6c345A34Ff64674606124Dd5Aceca30",
+            "name": "Injective Token",
+            "symbol": "INJ",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xe28b3B32B6c345A34Ff64674606124Dd5Aceca30/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xe3818504c1B32bF1557b16C238B2E01Fd3149C17",
+            "type": "ERC20",
+            "address": "0xe3818504c1B32bF1557b16C238B2E01Fd3149C17",
+            "name": "PILLAR",
+            "symbol": "PLR",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xe3818504c1B32bF1557b16C238B2E01Fd3149C17/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xE95A203B1a91a908F9B9CE46459d101078c2c3cb",
+            "type": "ERC20",
+            "address": "0xE95A203B1a91a908F9B9CE46459d101078c2c3cb",
+            "name": "Ankr ETH",
+            "symbol": "ankrETH",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xE95A203B1a91a908F9B9CE46459d101078c2c3cb/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xEa319e87Cf06203DAe107Dd8E5672175e3Ee976c",
+            "type": "ERC20",
+            "address": "0xEa319e87Cf06203DAe107Dd8E5672175e3Ee976c",
+            "name": "SURF.Finance",
+            "symbol": "SURF",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xEa319e87Cf06203DAe107Dd8E5672175e3Ee976c/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xEB4C2781e4ebA804CE9a9803C67d0893436bB27D",
+            "type": "ERC20",
+            "address": "0xEB4C2781e4ebA804CE9a9803C67d0893436bB27D",
+            "name": "renBTC",
+            "symbol": "renBTC",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xEB4C2781e4ebA804CE9a9803C67d0893436bB27D/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xECbF566944250ddE88322581024E611419715f7A",
+            "type": "ERC20",
+            "address": "0xECbF566944250ddE88322581024E611419715f7A",
+            "name": "xBTC",
+            "symbol": "xBTC",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xECbF566944250ddE88322581024E611419715f7A/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xEd0439EACf4c4965AE4613D77a5C2Efe10e5f183",
+            "type": "ERC20",
+            "address": "0xEd0439EACf4c4965AE4613D77a5C2Efe10e5f183",
+            "name": "shroom.finance",
+            "symbol": "SHROOM",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xEd0439EACf4c4965AE4613D77a5C2Efe10e5f183/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xEd91879919B71bB6905f23af0A68d231EcF87b14",
+            "type": "ERC20",
+            "address": "0xEd91879919B71bB6905f23af0A68d231EcF87b14",
+            "name": "DMM: Governance",
+            "symbol": "DMG",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xEd91879919B71bB6905f23af0A68d231EcF87b14/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xeDEec5691f23E4914cF0183A4196bBEb30d027a0",
+            "type": "ERC20",
+            "address": "0xeDEec5691f23E4914cF0183A4196bBEb30d027a0",
+            "name": "Wrapped STA",
+            "symbol": "WSTA",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xeDEec5691f23E4914cF0183A4196bBEb30d027a0/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xa7DE087329BFcda5639247F96140f9DAbe3DeED1"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xee573a945B01B788B9287CE062A0CFC15bE9fd86",
+            "type": "ERC20",
+            "address": "0xee573a945B01B788B9287CE062A0CFC15bE9fd86",
+            "name": "Exeedme",
+            "symbol": "XED",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xee573a945B01B788B9287CE062A0CFC15bE9fd86/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xf1f955016EcbCd7321c7266BccFB96c68ea5E49b",
+            "type": "ERC20",
+            "address": "0xf1f955016EcbCd7321c7266BccFB96c68ea5E49b",
+            "name": "Rally",
+            "symbol": "RLY",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xf1f955016EcbCd7321c7266BccFB96c68ea5E49b/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xf21661D0D1d76d3ECb8e1B9F1c923DBfffAe4097",
+            "type": "ERC20",
+            "address": "0xf21661D0D1d76d3ECb8e1B9F1c923DBfffAe4097",
+            "name": "Realio Network",
+            "symbol": "RIO",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xf21661D0D1d76d3ECb8e1B9F1c923DBfffAe4097/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xf4CD3d3Fda8d7Fd6C5a500203e38640A70Bf9577",
+            "type": "ERC20",
+            "address": "0xf4CD3d3Fda8d7Fd6C5a500203e38640A70Bf9577",
+            "name": "YfDAI.finance",
+            "symbol": "Yf-DAI",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xf4CD3d3Fda8d7Fd6C5a500203e38640A70Bf9577/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
             "asset": "c60_t0xF5D669627376EBd411E34b98F19C868c8ABA5ADA",
             "type": "ERC20",
             "address": "0xF5D669627376EBd411E34b98F19C868c8ABA5ADA",
-            "name": "Axie Infinity",
+            "name": "Axie Infinity Shard",
             "symbol": "AXS",
-            "decimals": 18,
             "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xF5D669627376EBd411E34b98F19C868c8ABA5ADA/logo.png",
-            "pairs": []
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
         },
         {
-            "chainId": 1,
             "asset": "c60_t0xF629cBd94d3791C9250152BD8dfBDF380E2a3B9c",
             "type": "ERC20",
             "address": "0xF629cBd94d3791C9250152BD8dfBDF380E2a3B9c",
             "name": "Enjin Coin",
             "symbol": "ENJ",
-            "decimals": 18,
             "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xF629cBd94d3791C9250152BD8dfBDF380E2a3B9c/logo.png",
-            "pairs": []
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xfF20817765cB7f73d4bde2e66e067E58D11095C2",
+            "type": "ERC20",
+            "address": "0xfF20817765cB7f73d4bde2e66e067E58D11095C2",
+            "name": "Amp",
+            "symbol": "AMP",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xfF20817765cB7f73d4bde2e66e067E58D11095C2/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
+        },
+        {
+            "asset": "c60_t0xfffffffFf15AbF397dA76f1dcc1A1604F45126DB",
+            "type": "ERC20",
+            "address": "0xfffffffFf15AbF397dA76f1dcc1A1604F45126DB",
+            "name": "FalconSwap Token",
+            "symbol": "FSW",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xfffffffFf15AbF397dA76f1dcc1A1604F45126DB/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+                }
+            ]
         }
     ],
     "version": {
-        "major": 0,
-        "minor": 2,
+        "major": 1,
+        "minor": 0,
         "patch": 0
     }
 }
