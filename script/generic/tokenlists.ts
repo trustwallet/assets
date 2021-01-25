@@ -98,22 +98,16 @@ export function writeToFileWithUpdate(filename: string, list: List): void {
     } catch (err) {
         listOld = undefined;
     }
-    let changed = false;
-    if (listOld === undefined) {
-        changed = true;
-    } else {
+    if (listOld !== undefined) {
         list.version = listOld.version; // take over
+        list.timestamp = listOld.timestamp; // take over
         const diffs = diffTokenlist(list, listOld);
         if (diffs != undefined) {
             //console.log("List has Changed", JSON.stringify(diffs));
-            changed = true;
             list.version = new Version(list.version.major + 1, 0, 0);
+            list.timestamp = (new Date()).toISOString();
+            console.log(`Version and timestamp updated, ${list.version.major}.${list.version.minor}.${list.version.patch} timestamp ${list.timestamp}`);
         }
-    }
-    if (changed) {
-        // update timestqamp
-        list.timestamp = (new Date()).toISOString();
-        console.log(`Version and timestamp updated, ${list.version.major}.${list.version.minor}.${list.version.patch} timestamp ${list.timestamp}`);
     }
     writeToFile(filename, list);
 }
