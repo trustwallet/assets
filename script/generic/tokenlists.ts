@@ -1,4 +1,5 @@
-import { writeJsonFile } from "../generic/json";
+import { readJsonFile, writeJsonFile } from "../generic/json";
+import { diff } from "jsondiffpatch";
 
 class Version {
     major: number
@@ -67,7 +68,7 @@ export function generateTokensList(titleCoin: string, tokens: TokenItem[], time:
     if (!time) {
         time = (new Date()).toISOString();
     }
-    return new List(
+    const list = new List(
         `Trust Wallet: ${titleCoin}`,
         "https://trustwallet.com/assets/images/favicon.png",
         time,
@@ -78,7 +79,9 @@ export function generateTokensList(titleCoin: string, tokens: TokenItem[], time:
             return t1.address.localeCompare(t2.address);
         }),
         new Version(versionMajor, versionMinor, versionPatch)
-    )
+    );
+    sort(list);
+    return list;
 }
 
 function totalPairs(list: List): number {
@@ -90,6 +93,36 @@ function totalPairs(list: List): number {
 export function writeToFile(filename: string, list: List): void {
     writeJsonFile(filename, list);
     console.log(`Tokenlist: list with ${list.tokens.length} tokens and ${totalPairs(list)} pairs written to ${filename}.`);
+}
+
+// Write out to file, updating version+timestamp if there was change
+export function writeToFileWithUpdate(filename: string, list: List): void {
+    let listOld: List = undefined;
+    let oldVersion: Version = new Version(0, 0, 0);
+    try {
+        listOld = readJsonFile(filename) as List;
+    } catch (err) {
+    }
+    let changed = false;
+    if (listOld === undefined) {
+        changed = true;
+    } else {
+        oldVersion = listOld.version;
+        const diffs = diffTokenlist(list, listOld);
+        if (diffs != undefined) {
+            //console.log("List has Changed", JSON.stringify(diffs));
+            changed = true;
+        }
+    }
+    if (changed) {
+        // update version and time
+        list.version.major = oldVersion.major + 1;
+        list.version.minor = 0;
+        list.version.patch = 0;
+        list.timestamp = (new Date()).toISOString();
+        console.log(`Version and timestamp updated, ${list.version.major}.${list.version.minor}.${list.version.patch} timestamp ${list.timestamp}`);
+    }
+    writeToFile(filename, list);
 }
 
 // return number of additions
@@ -125,4 +158,34 @@ export function addPairIfNeeded(token0: TokenItem, token1: TokenItem, list: List
     changed += addPairToToken(token0, token1, list);
     changed += addPairToToken(token1, token0, list);
     return changed;
+}
+
+function sort(list: List) {
+    list.tokens.sort((t1, t2) => {
+        const t1pairs = (t1.pairs || []).length;
+        const t2pairs = (t2.pairs || []).length;
+        if (t1pairs != t2pairs) { return t2pairs - t1pairs; }
+        return t1.address.localeCompare(t2.address);
+    });
+    list.tokens.forEach(t => {
+        t.pairs.sort((p1, p2) => p1.base.localeCompare(p2.base));
+    });
+}
+
+function clearUnimportantFields(list: List) {
+    list.timestamp = "";
+    list.version = new Version(0, 0, 0);
+}
+
+export function diffTokenlist(listOrig1: List, listOrig2: List) {
+    // deep copy, to avoid changes
+    let list1 = JSON.parse(JSON.stringify(listOrig1));
+    let list2 = JSON.parse(JSON.stringify(listOrig2));
+    clearUnimportantFields(list1);
+    clearUnimportantFields(list2);
+    sort(list1);
+    sort(list2);
+    // compare
+    const diffs = diff(list1, list2);
+    return diffs;
 }

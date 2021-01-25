@@ -8,7 +8,7 @@ import { ActionInterface, CheckStepInterface } from "../generic/interface";
 import { Binance } from "../generic/blockchains";
 import { readDirSync } from "../generic/filesystem";
 import { readJsonFile } from "../generic/json";
-import { TokenItem, Pair, generateTokensList, writeToFile } from "../generic/tokenlists";
+import { TokenItem, Pair, generateTokensList, writeToFileWithUpdate } from "../generic/tokenlists";
 import {
     getChainAssetLogoPath,
     getChainAssetsPath,
@@ -139,10 +139,11 @@ export class BinanceAction implements ActionInterface {
         }
 
         // binance chain list
-        const list = await generateBinanceTokensList();
-        writeToFile(getChainTokenlistPath(Binance), generateTokensList("BNB", list,
-            "2020-10-03T12:37:57.000+00:00", // use constants to prevent changing time every time; would cause many commits only because of this
-            0, 1, 0));
+        const tokenList = await generateBinanceTokensList();
+        const list = generateTokensList("BNB", tokenList,
+            "2020-10-03T12:37:57.000+00:00", // use constants here to prevent changing time every time
+            0, 1, 0);
+        writeToFileWithUpdate(getChainTokenlistPath(Binance), list);
     }
 }
 

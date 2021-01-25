@@ -8,7 +8,13 @@ import {
 } from "../generic/repo-structure";
 import { SmartChain } from "../generic/blockchains";
 import { isPathExistsSync } from "../generic/filesystem";
-import { TokenItem, List, generateTokensList, addPairIfNeeded, writeToFile } from "../generic/tokenlists";
+import {
+    addPairIfNeeded,
+    generateTokensList,
+    List,
+    TokenItem,
+    writeToFileWithUpdate
+} from "../generic/tokenlists";
 import { readJsonFile } from "../generic/json";
 import { toChecksum } from "../generic/eth-address";
 import { assetID, logoURI } from "../generic/asset";
@@ -107,9 +113,10 @@ async function generateTokenlist(): Promise<void> {
     });
     console.log(`Tokenlist updated, ${list.tokens.length} tokens, ${additions} additions`);
 
-    writeToFile(getChainTokenlistPath(SmartChain), generateTokensList("Smart Chain", list.tokens,
-        "2020-10-03T12:37:57.000+00:00", // use constants to prevent changing time every time; would cause many commits only because of this
-        0, 1, 0));
+    const newList = generateTokensList("Smart Chain", list.tokens,
+        "2020-10-03T12:37:57.000+00:00", // use constant here to prevent changing time every time
+        0, 1, 0);
+    writeToFileWithUpdate(getChainTokenlistPath(SmartChain), newList);
 }
 
 export class SmartchainAction implements ActionInterface {
