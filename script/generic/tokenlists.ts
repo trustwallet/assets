@@ -93,7 +93,6 @@ export function writeToFile(filename: string, list: List): void {
 // Write out to file, updating version+timestamp if there was change
 export function writeToFileWithUpdate(filename: string, list: List): void {
     let listOld: List = undefined;
-    let oldVersion: Version = new Version(0, 0, 0);
     try {
         listOld = readJsonFile(filename) as List;
     } catch (err) {
@@ -103,18 +102,16 @@ export function writeToFileWithUpdate(filename: string, list: List): void {
     if (listOld === undefined) {
         changed = true;
     } else {
-        oldVersion = listOld.version;
+        list.version = listOld.version; // take over
         const diffs = diffTokenlist(list, listOld);
         if (diffs != undefined) {
             //console.log("List has Changed", JSON.stringify(diffs));
             changed = true;
+            list.version = new Version(list.version.major + 1, 0, 0);
         }
     }
     if (changed) {
-        // update version and time
-        list.version.major = oldVersion.major + 1;
-        list.version.minor = 0;
-        list.version.patch = 0;
+        // update timestqamp
         list.timestamp = (new Date()).toISOString();
         console.log(`Version and timestamp updated, ${list.version.major}.${list.version.minor}.${list.version.patch} timestamp ${list.timestamp}`);
     }
