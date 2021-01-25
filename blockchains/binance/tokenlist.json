@@ -1,7 +1,7 @@
 {
     "name": "Trust Wallet: BNB",
     "logoURI": "https://trustwallet.com/assets/images/favicon.png",
-    "timestamp": "2020-10-03T12:37:57.000+00:00",
+    "timestamp": "2021-01-25T14:24:58.697Z",
     "tokens": [
         {
             "asset": "c714",
@@ -10,7 +10,7 @@
             "name": "Binance Chain Native Token",
             "symbol": "BNB",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/BNB/logo.png",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/info/logo.png",
             "pairs": [
                 {
                     "base": "c714_tAERGO-46B",
@@ -589,6 +589,11 @@
             "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/BUSD-BD1/logo.png",
             "pairs": [
                 {
+                    "base": "c714",
+                    "lotSize": "100000",
+                    "tickSize": "10000"
+                },
+                {
                     "base": "c714_tADA-9F4",
                     "lotSize": "100000000",
                     "tickSize": "100"
@@ -612,11 +617,6 @@
                     "base": "c714_tBCH-1FD",
                     "lotSize": "10000",
                     "tickSize": "100000"
-                },
-                {
-                    "base": "c714",
-                    "lotSize": "100000",
-                    "tickSize": "10000"
                 },
                 {
                     "base": "c714_tBTCB-1DE",
@@ -736,13 +736,13 @@
             "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/BTCB-1DE/logo.png",
             "pairs": [
                 {
-                    "base": "c714_tANKR-E97",
-                    "lotSize": "1000000000",
+                    "base": "c714",
+                    "lotSize": "100000",
                     "tickSize": "1"
                 },
                 {
-                    "base": "c714",
-                    "lotSize": "100000",
+                    "base": "c714_tANKR-E97",
+                    "lotSize": "1000000000",
                     "tickSize": "1"
                 },
                 {
@@ -2111,8 +2111,8 @@
         }
     ],
     "version": {
-        "major": 0,
-        "minor": 1,
+        "major": 1,
+        "minor": 0,
         "patch": 0
     }
 }
