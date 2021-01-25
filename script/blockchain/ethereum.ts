@@ -25,13 +25,15 @@ import { assetID, logoURI } from "../generic/asset";
 
 // see https://thegraph.com/explorer/subgraph/uniswap/uniswap-v2
 const Uniswap_TradingPairsUrl = "https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v2";
-const Uniswap_TradingPairsQuery = "query pairs {\\n  pairs(first: 400, orderBy: reserveUSD, orderDirection: desc) {\\n id\\n reserveUSD\\n trackedReserveETH\\n volumeUSD\\n    untrackedVolumeUSD\\n __typename\\n token0 {\\n id\\n symbol\\n name\\n decimals\\n __typename\\n }\\n token1 {\\n id\\n symbol\\n name\\n decimals\\n __typename\\n }\\n }\\n}\\n";
-const Uniswap_MinLiquidity = 1000000;
+const Uniswap_TradingPairsQuery = "query pairs {\\n  pairs(first: 400, orderBy: reserveUSD, orderDirection: desc) {\\n id\\n reserveUSD\\n trackedReserveETH\\n volumeUSD\\n txCount \\n   untrackedVolumeUSD\\n __typename\\n token0 {\\n id\\n symbol\\n name\\n decimals\\n __typename\\n }\\n token1 {\\n id\\n symbol\\n name\\n decimals\\n __typename\\n }\\n }\\n}\\n";
+const Uniswap_MinLiquidity = 2000000;
+const Uniswap_MinVol24 = 1000000;
+const Uniswap_TxCount24 = 480;
 const PrimaryTokens: string[] = ["WETH", "ETH"];
 
 // Retrieve trading pairs from Uniswap
 async function retrieveUniswapPairs(): Promise<PairInfo[]> {
-    console.log(`Retrieving pairs from Uniswap, liquidity limit USD ${Uniswap_MinLiquidity}`);
+    console.log(`Retrieving pairs from Uniswap, limit liquidity USD ${Uniswap_MinLiquidity}  volume ${Uniswap_MinVol24}  txcount ${Uniswap_TxCount24}`);
 
     // prepare phase, read allowlist
     const allowlist: string[] = readJsonFile(getChainAllowlistPath(Ethereum)) as string[];
@@ -43,7 +45,7 @@ async function retrieveUniswapPairs(): Promise<PairInfo[]> {
             if (typeof(x) === "object") {
                 const pairInfo = x as PairInfo;
                 if (pairInfo) {
-                    if (checkTradingPair(pairInfo, Ethereum, Uniswap_MinLiquidity, allowlist, PrimaryTokens)) {
+                    if (checkTradingPair(pairInfo, Ethereum, Uniswap_MinLiquidity, Uniswap_MinVol24, Uniswap_TxCount24, allowlist, PrimaryTokens)) {
                         filtered.push(pairInfo);
                     }
                 }
@@ -55,7 +57,7 @@ async function retrieveUniswapPairs(): Promise<PairInfo[]> {
 
     console.log("Retrieved & filtered", filtered.length, "pairs:");
     filtered.forEach(p => {
-        console.log(`pair:  ${p.token0.symbol} -- ${p.token1.symbol} \t USD ${Math.round(p.reserveUSD)}`);
+        console.log(`pair:  ${p.token0.symbol} -- ${p.token1.symbol} \t USD ${Math.round(p.reserveUSD)} ${Math.round(p.volumeUSD)} ${p.txCount}`);
     });
 
     return filtered;

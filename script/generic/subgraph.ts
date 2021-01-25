@@ -14,6 +14,8 @@ export interface TokenInfo {
 export interface PairInfo {
     id: string;
     reserveUSD: number;
+    volumeUSD: number;
+    txCount: number;
     token0: TokenInfo;
     token1: TokenInfo;
 }
@@ -59,12 +61,23 @@ export function primaryTokenIndex(pair: PairInfo, primaryTokens: string[]): numb
 }
 
 // Verify a trading pair, whether we support the tokens, has enough liquidity, etc.
-export function checkTradingPair(pair: PairInfo, chainName: string, minLiquidity: number, tokenAllowlist: string[], primaryTokens: string[]): boolean {
-    if (!pair.id && !pair.reserveUSD && !pair.token0 && !pair.token1) {
+export function checkTradingPair(pair: PairInfo, chainName: string, 
+    minLiquidity: number, minVol24: number, minTxCount24: number,
+    tokenAllowlist: string[], primaryTokens: string[]
+): boolean {
+    if (!pair.id || !pair.reserveUSD || !pair.volumeUSD || !pair.txCount || !pair.token0 || !pair.token1) {
         return false;
     }
     if (pair.reserveUSD < minLiquidity) {
-        //console.log("pair with low liquidity:", pair.token0.symbol, "--", pair.token1.symbol, "  ", Math.round(pair.reserveUSD));
+        console.log("pair with low liquidity:", pair.token0.symbol, "--", pair.token1.symbol, "  ", Math.round(pair.reserveUSD));
+        return false;
+    }
+    if (pair.volumeUSD < minVol24) {
+        console.log("pair with low volume:", pair.token0.symbol, "--", pair.token1.symbol, "  ", Math.round(pair.volumeUSD));
+        return false;
+    }
+    if (pair.txCount < minTxCount24) {
+        console.log("pair with low tx count:", pair.token0.symbol, "--", pair.token1.symbol, "  ", pair.txCount);
         return false;
     }
     if (!checkBSCTokenExists(pair.token0.id, chainName, tokenAllowlist)) {

@@ -24,12 +24,14 @@ import { toChecksum } from "../generic/eth-address";
 import { assetID, logoURI } from "../generic/asset";
 
 const PancakeSwap_TradingPairsUrl = "https://api.bscgraph.org/subgraphs/name/wowswap";
-const PancakeSwap_TradingPairsQuery = "query pairs {\\n  pairs(first: 400, orderBy: reserveUSD, orderDirection: desc) {\\n id\\n reserveUSD\\n trackedReserveETH\\n volumeUSD\\n    untrackedVolumeUSD\\n __typename\\n token0 {\\n id\\n symbol\\n name\\n decimals\\n __typename\\n }\\n token1 {\\n id\\n symbol\\n name\\n decimals\\n __typename\\n }\\n }\\n}\\n";
+const PancakeSwap_TradingPairsQuery = "query pairs {\\n  pairs(first: 400, orderBy: reserveUSD, orderDirection: desc) {\\n id\\n reserveUSD\\n trackedReserveETH\\n volumeUSD\\n txCount \\n   untrackedVolumeUSD\\n __typename\\n token0 {\\n id\\n symbol\\n name\\n decimals\\n __typename\\n }\\n token1 {\\n id\\n symbol\\n name\\n decimals\\n __typename\\n }\\n }\\n}\\n";
 const PancakeSwap_MinLiquidity = 1000000;
+const PancakeSwap_MinVol24 = 500000;
+const PancakeSwap_TxCount24 = 288;
 const PrimaryTokens: string[] = ["WBNB", "BNB"];
 
 async function retrievePancakeSwapPairs(): Promise<PairInfo[]> {
-    console.log(`Retrieving pairs from PancakeSwap, liquidity limit USD ${PancakeSwap_MinLiquidity}`);
+    console.log(`Retrieving pairs from PancakeSwap, limit liquidity USD ${PancakeSwap_MinLiquidity}  volume ${PancakeSwap_MinVol24}  txcount ${PancakeSwap_TxCount24}`);
 
     // prepare phase, read allowlist
     const allowlist: string[] = readJsonFile(getChainAllowlistPath(SmartChain)) as string[];
@@ -41,7 +43,7 @@ async function retrievePancakeSwapPairs(): Promise<PairInfo[]> {
             if (typeof(x) === "object") {
                 const pairInfo = x as PairInfo;
                 if (pairInfo) {
-                    if (checkTradingPair(pairInfo, SmartChain, PancakeSwap_MinLiquidity, allowlist, PrimaryTokens)) {
+                    if (checkTradingPair(pairInfo, SmartChain, PancakeSwap_MinLiquidity, PancakeSwap_MinVol24, PancakeSwap_TxCount24, allowlist, PrimaryTokens)) {
                         filtered.push(pairInfo);
                     }
                 }
@@ -53,7 +55,7 @@ async function retrievePancakeSwapPairs(): Promise<PairInfo[]> {
 
     console.log("Retrieved & filtered", filtered.length, "pairs:");
     filtered.forEach(p => {
-        console.log(`pair:  ${p.token0.symbol} -- ${p.token1.symbol} \t USD ${Math.round(p.reserveUSD)}`);
+        console.log(`pair:  ${p.token0.symbol} -- ${p.token1.symbol} \t USD ${Math.round(p.reserveUSD)} ${Math.round(p.volumeUSD)} ${p.txCount}`);
     });
 
     return filtered;
