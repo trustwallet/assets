@@ -105,13 +105,12 @@ async function generateTokenlist(): Promise<void> {
     console.log(`Tokenlist base, ${list.tokens.length} tokens`);
     
     const tradingPairs = await retrievePancakeSwapPairs();
-    let additions = 0;
     tradingPairs.forEach(p => {
         const tokenItem0 = tokenInfoFromSubgraphToken(p.token0);
         const tokenItem1 = tokenInfoFromSubgraphToken(p.token1);
-        additions += addPairIfNeeded(tokenItem0, tokenItem1, list);
+        addPairIfNeeded(tokenItem0, tokenItem1, list);
     });
-    console.log(`Tokenlist updated, ${list.tokens.length} tokens, ${additions} additions`);
+    console.log(`Tokenlist updated, ${list.tokens.length} tokens`);
 
     const newList = generateTokensList("Smart Chain", list.tokens,
         "2020-10-03T12:37:57.000+00:00", // use constant here to prevent changing time every time

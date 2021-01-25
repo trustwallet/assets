@@ -118,39 +118,32 @@ export function writeToFileWithUpdate(filename: string, list: List): void {
     writeToFile(filename, list);
 }
 
-// return number of additions
-function addTokenIfNeeded(token: TokenItem, list: List): number {
+function addTokenIfNeeded(token: TokenItem, list: List): void {
     if (list.tokens.map(t => t.address.toLowerCase()).includes(token.address.toLowerCase())) {
-        return 0;
+        return;
     }
     list.tokens.push(token);
-    return 1;
 }
 
-// return number of changes
-function addPairToToken(pairToken: TokenItem, token: TokenItem, list: List): number {
+function addPairToToken(pairToken: TokenItem, token: TokenItem, list: List): void {
     const tokenInList = list.tokens.find(t => t.address === token.address);
     if (!tokenInList) {
-        return 0;
+        return;
     }
     if (!tokenInList.pairs) {
         tokenInList.pairs = [];
     }
     if (tokenInList.pairs.map(p => p.base).includes(pairToken.asset)) {
-        return 0;
+        return;
     }
     tokenInList.pairs.push(new Pair(pairToken.asset));
-    return 1;
 }
 
-// return the number of additions
-export function addPairIfNeeded(token0: TokenItem, token1: TokenItem, list: List): number {
-    let changed = 0;
-    changed += addTokenIfNeeded(token0, list);
-    changed += addTokenIfNeeded(token1, list);
-    changed += addPairToToken(token0, token1, list);
-    changed += addPairToToken(token1, token0, list);
-    return changed;
+export function addPairIfNeeded(token0: TokenItem, token1: TokenItem, list: List): void {
+    addTokenIfNeeded(token0, list);
+    addTokenIfNeeded(token1, list);
+    addPairToToken(token0, token1, list);
+    addPairToToken(token1, token0, list);
 }
 
 function sort(list: List) {
