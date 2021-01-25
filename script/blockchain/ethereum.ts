@@ -1,12 +1,23 @@
 import { ActionInterface, CheckStepInterface } from "../generic/interface";
-import { getTradingPairs, PairInfo } from "../generic/subgraph";
+import { getTradingPairs, PairInfo, TokenInfo } from "../generic/subgraph";
 import {
     getChainAllowlistPath,
-    getChainAssetLogoPath
+    getChainAssetLogoPath,
+    getChainTokenlistBasePath,
+    getChainTokenlistPath
 } from "../generic/repo-structure";
 import { Ethereum } from "../generic/blockchains";
 import { isPathExistsSync } from "../generic/filesystem";
 import { readJsonFile } from "../generic/json";
+import {
+    addPairIfNeeded,
+    generateTokensList,
+    List,
+    TokenItem,
+    writeToFileWithUpdate
+} from "../generic/tokenlists";
+import { toChecksum } from "../generic/eth-address";
+import { assetID, logoURI } from "../generic/asset";
 
 // see https://thegraph.com/explorer/subgraph/uniswap/uniswap-v2
 const Uniswap_TradingPairsUrl = "https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v2";
@@ -47,7 +58,7 @@ function checkTradingPair(pair: PairInfo, minLiquidity: number, tokenAllowlist: 
 }
 
 // Retrieve trading pairs from Uniswap
-async function retrieveUniswapPairs(): Promise<void> {
+async function retrieveUniswapPairs(): Promise<PairInfo[]> {
     console.log(`Retrieving pairs from Uniswap, liquidity limit USD ${Uniswap_MinLiquidity}`);
 
     // prepare phase, read allowlist
@@ -74,6 +85,39 @@ async function retrieveUniswapPairs(): Promise<void> {
     filtered.forEach(p => {
         console.log(`pair:  ${p.token0.symbol} -- ${p.token1.symbol} \t USD ${Math.round(p.reserveUSD)}`);
     });
+
+    return filtered;
+}
+
+function tokenInfoFromSubgraphToken(token: TokenInfo): TokenItem {
+    const idChecksum = toChecksum(token.id);
+    return new TokenItem(
+        assetID(60, idChecksum),
+        "ERC20",
+        idChecksum, token.name, token.symbol, token.decimals,
+        logoURI(idChecksum, "ethereum", "--"),
+        []);
+}
+
+// Retrieve trading pairs from PancakeSwap
+async function generateTokenlist(): Promise<void> {
+    const tokenlistFile = getChainTokenlistBasePath(Ethereum);
+    const json = readJsonFile(tokenlistFile);
+    const list: List = json as List;
+    console.log(`Tokenlist base, ${list.tokens.length} tokens`);
+    
+    const tradingPairs = await retrieveUniswapPairs();
+    tradingPairs.forEach(p => {
+        const tokenItem0 = tokenInfoFromSubgraphToken(p.token0);
+        const tokenItem1 = tokenInfoFromSubgraphToken(p.token1);
+        addPairIfNeeded(tokenItem0, tokenItem1, list);
+    });
+    console.log(`Tokenlist updated, ${list.tokens.length} tokens`);
+
+    const newList = generateTokensList("Ethereum", list.tokens,
+        "2020-10-03T12:37:57.000+00:00", // use constant here to prevent changing time every time
+        0, 1, 0);
+    writeToFileWithUpdate(getChainTokenlistPath(Ethereum), newList);
 }
 
 export class EthereumAction implements ActionInterface {
@@ -82,6 +126,6 @@ export class EthereumAction implements ActionInterface {
     getSanityChecks(): CheckStepInterface[] { return []; }
 
     async update(): Promise<void> {
-        await retrieveUniswapPairs();
+        await generateTokenlist();
     }
 }

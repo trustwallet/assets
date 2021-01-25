@@ -1,0 +1,251 @@
+{
+   "name":"Trust Wallet: Ethereum",
+   "logoURI":"https://trustwallet.com/assets/images/favicon.png",
+   "keywords":[
+      
+   ],
+   "timestamp":"2020-10-03T12:37:57.000+00:00",
+   "tokens":[
+      {
+         "chainId":1,
+         "asset":"c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+         "type":"ERC20",
+         "address":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+         "name":"Wrapped Ethereum",
+         "symbol":"WETH",
+         "decimals":18,
+         "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png",
+         "pairs":[
+            {
+               "base":"c60_t0x6B175474E89094C44Da98b954EedeAC495271d0F"
+            },
+            {
+               "base":"c60_t0x4Fabb145d64652a948d72533023f6E7A623C7C53"
+            },
+            {
+               "base":"c60_t0xdd974D5C2e2928deA5F71b9825b8b646686BD200"
+            },
+            {
+               "base":"c60_t0x514910771AF9Ca656af840dff83E8264EcF986CA"
+            },
+            {
+               "base":"c60_t0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599"
+            },
+            {
+               "base":"c60_t0xdAC17F958D2ee523a2206206994597C13D831ec7"
+            },
+            {
+               "base":"c60_t0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
+            },
+            {
+               "base":"c60_t0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984"
+            },
+            {
+               "base":"c60_t0x0D8775F648430679A709E98d2b0Cb6250d2887EF"
+            },
+            {
+               "base":"c60_t0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e"
+            },
+            {
+               "base":"c60_t0xc00e94Cb662C3520282E6f5717214004A7f26888"
+            },
+            {
+               "base":"c60_t0xd26114cd6EE289AccF82350c8d8487fedB8A0C07"
+            },
+            {
+               "base":"c60_t0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2"
+            },
+            {
+               "base":"c60_t0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9"
+            }
+         ]
+      },
+      {
+         "chainId":1,
+         "asset":"c60_t0x6B175474E89094C44Da98b954EedeAC495271d0F",
+         "type":"ERC20",
+         "address":"0x6B175474E89094C44Da98b954EedeAC495271d0F",
+         "name":"Dai Stablecoin",
+         "symbol":"DAI",
+         "decimals":18,
+         "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png",
+         "pairs":[
+            
+         ]
+      },
+      {
+         "chainId":1,
+         "asset":"c60_t0x4Fabb145d64652a948d72533023f6E7A623C7C53",
+         "type":"ERC20",
+         "address":"0x4Fabb145d64652a948d72533023f6E7A623C7C53",
+         "name":"Binance USD",
+         "symbol":"BUSD",
+         "decimals":18,
+         "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x4Fabb145d64652a948d72533023f6E7A623C7C53/logo.png",
+         "pairs":[
+            
+         ]
+      },
+      {
+         "chainId":1,
+         "asset":"c60_t0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+         "type":"ERC20",
+         "address":"0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+         "name":"USDC",
+         "symbol":"USDC",
+         "decimals":6,
+         "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png",
+         "pairs":[
+            
+         ]
+      },
+      {
+         "chainId":1,
+         "asset":"c60_t0xdd974D5C2e2928deA5F71b9825b8b646686BD200",
+         "type":"ERC20",
+         "address":"0xdd974D5C2e2928deA5F71b9825b8b646686BD200",
+         "name":"Kyber Network Crystal",
+         "symbol":"KNC",
+         "decimals":18,
+         "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xdd974D5C2e2928deA5F71b9825b8b646686BD200/logo.png",
+         "pairs":[
+            
+         ]
+      },
+      {
+         "chainId":1,
+         "asset":"c60_t0x514910771AF9Ca656af840dff83E8264EcF986CA",
+         "type":"ERC20",
+         "address":"0x514910771AF9Ca656af840dff83E8264EcF986CA",
+         "name":"ChainLink",
+         "symbol":"Link",
+         "decimals":18,
+         "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x514910771AF9Ca656af840dff83E8264EcF986CA/logo.png",
+         "pairs":[
+            
+         ]
+      },
+      {
+         "chainId":1,
+         "asset":"c60_t0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+         "type":"ERC20",
+         "address":"0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+         "name":"Wrapped BTC",
+         "symbol":"WBTC",
+         "decimals":8,
+         "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599/logo.png",
+         "pairs":[
+            
+         ]
+      },
+      {
+         "chainId":1,
+         "asset":"c60_t0xdAC17F958D2ee523a2206206994597C13D831ec7",
+         "type":"ERC20",
+         "address":"0xdAC17F958D2ee523a2206206994597C13D831ec7",
+         "name":"Tether USD",
+         "symbol":"USDT",
+         "decimals":6,
+         "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xdAC17F958D2ee523a2206206994597C13D831ec7/logo.png",
+         "pairs":[
+            
+         ]
+      },
+      {
+         "chainId":1,
+         "asset":"c60_t0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984",
+         "type":"ERC20",
+         "address":"0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984",
+         "name":"Uniswap",
+         "symbol":"UNI",
+         "decimals":18,
+         "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984/logo.png",
+         "pairs":[
+            
+         ]
+      },
+      {
+         "chainId":1,
+         "asset":"c60_t0x0D8775F648430679A709E98d2b0Cb6250d2887EF",
+         "type":"ERC20",
+         "address":"0x0D8775F648430679A709E98d2b0Cb6250d2887EF",
+         "name":"Basic Attention Token",
+         "symbol":"BAT",
+         "decimals":18,
+         "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x0D8775F648430679A709E98d2b0Cb6250d2887EF/logo.png",
+         "pairs":[
+            
+         ]
+      },
+      {
+         "chainId":1,
+         "asset":"c60_t0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e",
+         "type":"ERC20",
+         "address":"0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e",
+         "name":"Yearn.Finance",
+         "symbol":"YFI",
+         "decimals":18,
+         "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e/logo.png",
+         "pairs":[
+            
+         ]
+      },
+      {
+         "chainId":1,
+         "asset":"c60_t0xc00e94Cb662C3520282E6f5717214004A7f26888",
+         "type":"ERC20",
+         "address":"0xc00e94Cb662C3520282E6f5717214004A7f26888",
+         "name":"Compound",
+         "symbol":"COMP",
+         "decimals":18,
+         "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xc00e94Cb662C3520282E6f5717214004A7f26888/logo.png",
+         "pairs":[
+            
+         ]
+      },
+      {
+         "chainId":1,
+         "asset":"c60_t0xd26114cd6EE289AccF82350c8d8487fedB8A0C07",
+         "type":"ERC20",
+         "address":"0xd26114cd6EE289AccF82350c8d8487fedB8A0C07",
+         "name":"OMG Network",
+         "symbol":"OMG",
+         "decimals":18,
+         "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets//logo.png",
+         "pairs":[
+            
+         ]
+      },
+      {
+         "chainId":1,
+         "asset":"c60_t0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2",
+         "type":"ERC20",
+         "address":"0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2",
+         "name":"MakerDAO",
+         "symbol":"MKR",
+         "decimals":18,
+         "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2/logo.png",
+         "pairs":[
+            
+         ]
+      },
+      {
+         "chainId":1,
+         "asset":"c60_t0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9",
+         "type":"ERC20",
+         "address":"0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9",
+         "name":"Aave Token",
+         "symbol":"AAVE",
+         "decimals":18,
+         "logoURI":"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9/logo.png",
+         "pairs":[
+            
+         ]
+      }
+   ],
+   "version":{
+      "major":0,
+      "minor":1,
+      "patch":0
+   }
+}
