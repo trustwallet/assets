@@ -63,20 +63,21 @@ export class Pair {
     }
 }
 
-export function generateTokensList(titleCoin: string, tokens: TokenItem[]): List {
-    let currentDate = new Date();
-
+export function generateTokensList(titleCoin: string, tokens: TokenItem[], time: string, versionMajor: number, versionMinor = 1, versionPatch = 0): List {
+    if (!time) {
+        time = (new Date()).toISOString();
+    }
     return new List(
         `Trust Wallet: ${titleCoin}`,
         "https://trustwallet.com/assets/images/favicon.png",
-        currentDate.toISOString(),
+        time,
         tokens.sort((t1,t2) => {
             const t1pairs = (t1.pairs || []).length;
             const t2pairs = (t2.pairs || []).length;
             if (t1pairs != t2pairs) { return t2pairs - t1pairs; }
             return t1.address.localeCompare(t2.address);
         }),
-        new Version(0, 1, 0)
+        new Version(versionMajor, versionMinor, versionPatch)
     )
 }
 

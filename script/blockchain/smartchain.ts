@@ -106,7 +106,9 @@ async function generateTokenlist(): Promise<void> {
     });
     console.log(`Tokenlist updated, ${list.tokens.length} tokens`);
 
-    writeToFile(getChainTokenlistPath(SmartChain), generateTokensList("Smart Chain", list.tokens));
+    writeToFile(getChainTokenlistPath(SmartChain), generateTokensList("Smart Chain", list.tokens,
+        "2020-10-03T12:37:57.000+00:00", // use constants to prevent changing time every time; would cause many commits only because of this
+        0, 1, 0));
 }
 
 export class SmartchainAction implements ActionInterface {
