@@ -11,6 +11,7 @@ import { isPathExistsSync } from "../generic/filesystem";
 import { TokenItem, List, generateTokensList, addPairIfNeeded, writeToFile } from "../generic/tokenlists";
 import { readJsonFile } from "../generic/json";
 import { toChecksum } from "../generic/eth-address";
+import { assetID, logoURI } from "../generic/asset";
 
 const PancakeSwap_TradingPairsUrl = "https://api.bscgraph.org/subgraphs/name/wowswap";
 const PancakeSwap_TradingPairsQuery = "query pairs {\\n  pairs(first: 200, orderBy: reserveUSD, orderDirection: desc) {\\n id\\n reserveUSD\\n trackedReserveETH\\n volumeUSD\\n    untrackedVolumeUSD\\n __typename\\n token0 {\\n id\\n symbol\\n name\\n decimals\\n __typename\\n }\\n token1 {\\n id\\n symbol\\n name\\n decimals\\n __typename\\n }\\n }\\n}\\n";
@@ -83,9 +84,10 @@ async function retrievePancakeSwapPairs(): Promise<PairInfo[]> {
 function tokenInfoFromSubgraphToken(token: TokenInfo): TokenItem {
     const idChecksum = toChecksum(token.id);
     return new TokenItem(
-        "c20000714_t" + idChecksum, "BEP20",
+        assetID(20000714, idChecksum),
+        "BEP20",
         idChecksum, token.name, token.symbol, token.decimals,
-        `https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/${idChecksum}/logo.png`,
+        logoURI(idChecksum, "smartchain", "--"),
         []);
 }
 

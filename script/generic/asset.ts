@@ -2,19 +2,19 @@ import { TokenType } from "../generic/tokentype";
 import * as config from "../config";
 
 // Asset ID from coin symbol (diff between native and token coins)
-export function assetIdSymbol(symbol: string, nativeCoinSymbol: string, coinType: number): string {
-    if (symbol == nativeCoinSymbol) {
+export function assetIdSymbol(tokenId: string, nativeCoinId: string, coinType: number): string {
+    if (tokenId == nativeCoinId) {
         return assetID(coinType)
     }
-    return assetID(coinType, symbol)
+    return assetID(coinType, tokenId)
 }
 
 // Asset ID from coin number and ID
-export function assetID(coin: number, token_id = ``): string {
-    if (token_id.length > 0) {
-        return `c${coin}_t${token_id}`
+export function assetID(coinType: number, tokenId = ``): string {
+    if (tokenId.length > 0) {
+        return `c${coinType}_t${tokenId}`
     } 
-    return `c${coin}`
+    return `c${coinType}`
 }
 
 // Token type from token symbol (diff between native and token coins)
