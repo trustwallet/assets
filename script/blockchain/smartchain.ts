@@ -1,8 +1,13 @@
 import { ActionInterface, CheckStepInterface } from "../generic/interface";
 import { getTradingPairs, PairInfo, TokenInfo } from "../generic/subgraph";
-import { getChainAssetLogoPath, getChainTokenlistBasePath, getChainTokenlistPath } from "../generic/repo-structure";
+import {
+    getChainAllowlistPath,
+    getChainAssetLogoPath,
+    getChainTokenlistBasePath,
+    getChainTokenlistPath
+} from "../generic/repo-structure";
 import { SmartChain } from "../generic/blockchains";
-import { isPathExistsSync, writeFileSync } from "../generic/filesystem";
+import { isPathExistsSync } from "../generic/filesystem";
 import { TokenItem, List, generateTokensList, addPairIfNeeded, writeToFile } from "../generic/tokenlists";
 import { readJsonFile } from "../generic/json";
 import { toChecksum } from "../generic/eth-address";
@@ -11,27 +16,32 @@ const PancakeSwap_TradingPairsUrl = "https://api.bscgraph.org/subgraphs/name/wow
 const PancakeSwap_TradingPairsQuery = "query pairs {\\n  pairs(first: 200, orderBy: reserveUSD, orderDirection: desc) {\\n id\\n reserveUSD\\n trackedReserveETH\\n volumeUSD\\n    untrackedVolumeUSD\\n __typename\\n token0 {\\n id\\n symbol\\n name\\n decimals\\n __typename\\n }\\n token1 {\\n id\\n symbol\\n name\\n decimals\\n __typename\\n }\\n }\\n}\\n";
 const PancakeSwap_MinLiquidity = 1000000;
 
-function checkBSCTokenExists(id: string): boolean {
+function checkBSCTokenExists(id: string, tokenAllowlist: string[]): boolean {
     const logoPath = getChainAssetLogoPath(SmartChain, id);
-    const exists = isPathExistsSync(logoPath);
-    //console.log("logoPath", exists, logoPath);
-    return exists;
+    if (!isPathExistsSync(logoPath)) {
+        return false;
+    }
+    if (tokenAllowlist.find(t => (id.toLowerCase() === t.toLowerCase())) === undefined) {
+        //console.log(`Token not found in allowlist, ${id}`);
+        return false;
+    }
+    return true;
 }
 
 // Verify a trading pair, whether we support the tokens, has enough liquidity, etc.
-function checkTradingPair(pair: PairInfo, minLiquidity: number): boolean {
+function checkTradingPair(pair: PairInfo, minLiquidity: number, tokenAllowlist: string[]): boolean {
     if (!pair.id && !pair.reserveUSD && !pair.token0 && !pair.token1) {
         return false;
     }
     if (pair.reserveUSD < minLiquidity) {
-        console.log("pair with low liquidity:", pair.token0.symbol, "--", pair.token1.symbol, "  ", Math.round(pair.reserveUSD));
+        //console.log("pair with low liquidity:", pair.token0.symbol, "--", pair.token1.symbol, "  ", Math.round(pair.reserveUSD));
         return false;
     }
-    if (!checkBSCTokenExists(pair.token0.id)) {
+    if (!checkBSCTokenExists(pair.token0.id, tokenAllowlist)) {
         console.log("pair with unsupported 1st coin:", pair.token0.symbol, "--", pair.token1.symbol);
         return false;
     }
-    if (!checkBSCTokenExists(pair.token1.id)) {
+    if (!checkBSCTokenExists(pair.token1.id, tokenAllowlist)) {
         console.log("pair with unsupported 2nd coin:", pair.token0.symbol, "--", pair.token1.symbol);
         return false;
     }
@@ -40,6 +50,11 @@ function checkTradingPair(pair: PairInfo, minLiquidity: number): boolean {
 }
 
 async function retrievePancakeSwapPairs(): Promise<PairInfo[]> {
+    console.log(`Retrieving pairs from PancakeSwap, liquidity limit USD ${PancakeSwap_MinLiquidity}`);
+
+    // prepare phase, read allowlist
+    const allowlist: string[] = readJsonFile(getChainAllowlistPath(SmartChain)) as string[];
+
     const pairs = await getTradingPairs(PancakeSwap_TradingPairsUrl, PancakeSwap_TradingPairsQuery);
     const filtered: PairInfo[] = [];
     pairs.forEach(x => {
@@ -47,7 +62,7 @@ async function retrievePancakeSwapPairs(): Promise<PairInfo[]> {
             if (typeof(x) === "object") {
                 const pairInfo = x as PairInfo;
                 if (pairInfo) {
-                    if (checkTradingPair(pairInfo, PancakeSwap_MinLiquidity)) {
+                    if (checkTradingPair(pairInfo, PancakeSwap_MinLiquidity, allowlist)) {
                         filtered.push(pairInfo);
                     }
                 }
