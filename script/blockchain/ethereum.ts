@@ -1,13 +1,17 @@
 import { ActionInterface, CheckStepInterface } from "../generic/interface";
-import { getTradingPairs, PairInfo, TokenInfo } from "../generic/subgraph";
+import {
+    checkTradingPair,
+    getTradingPairs,
+    PairInfo,
+    primaryTokenIndex,
+    TokenInfo
+} from "../generic/subgraph";
 import {
     getChainAllowlistPath,
-    getChainAssetLogoPath,
     getChainTokenlistBasePath,
     getChainTokenlistPath
 } from "../generic/repo-structure";
 import { Ethereum } from "../generic/blockchains";
-import { isPathExistsSync } from "../generic/filesystem";
 import { readJsonFile } from "../generic/json";
 import {
     addPairIfNeeded,
@@ -25,58 +29,6 @@ const Uniswap_TradingPairsQuery = "query pairs {\\n  pairs(first: 400, orderBy: 
 const Uniswap_MinLiquidity = 1000000;
 const PrimaryTokens: string[] = ["WETH", "ETH"];
 
-function checkEthTokenExists(id: string, tokenAllowlist: string[]): boolean {
-    const logoPath = getChainAssetLogoPath(Ethereum, id);
-    if (!isPathExistsSync(logoPath)) {
-        return false;
-    }
-    if (tokenAllowlist.find(t => (id.toLowerCase() === t.toLowerCase())) === undefined) {
-        //console.log(`Token not found in allowlist, ${id}`);
-        return false;
-    }
-    return true;
-}
-
-function isTokenPrimary(token: TokenInfo): boolean {
-    return (PrimaryTokens.find(t => (t === token.symbol.toUpperCase())) != undefined);
-}
-
-// check which token of the pair is the primary token, 1st, or 2nd, or 0 for none
-function primaryTokenIndex(pair: PairInfo): number {
-    if (isTokenPrimary(pair.token0)) {
-        return 1;
-    }
-    if (isTokenPrimary(pair.token1)) {
-        return 2;
-    }
-    return 0;
-}
-
-// Verify a trading pair, whether we support the tokens, has enough liquidity, etc.
-function checkTradingPair(pair: PairInfo, minLiquidity: number, tokenAllowlist: string[]): boolean {
-    if (!pair.id && !pair.reserveUSD && !pair.token0 && !pair.token1) {
-        return false;
-    }
-    if (pair.reserveUSD < minLiquidity) {
-        //console.log("pair with low liquidity:", pair.token0.symbol, "--", pair.token1.symbol, "  ", Math.round(pair.reserveUSD));
-        return false;
-    }
-    if (!checkEthTokenExists(pair.token0.id, tokenAllowlist)) {
-        console.log("pair with unsupported 1st coin:", pair.token0.symbol, "--", pair.token1.symbol);
-        return false;
-    }
-    if (!checkEthTokenExists(pair.token1.id, tokenAllowlist)) {
-        console.log("pair with unsupported 2nd coin:", pair.token0.symbol, "--", pair.token1.symbol);
-        return false;
-    }
-    if (primaryTokenIndex(pair) == 0) {
-        console.log("pair with no primary coin:", pair.token0.symbol, "--", pair.token1.symbol);
-        return false;
-    }
-    //console.log("pair:", pair.token0.symbol, "--", pair.token1.symbol, "  ", pair.reserveUSD);
-    return true;
-}
-
 // Retrieve trading pairs from Uniswap
 async function retrieveUniswapPairs(): Promise<PairInfo[]> {
     console.log(`Retrieving pairs from Uniswap, liquidity limit USD ${Uniswap_MinLiquidity}`);
@@ -91,7 +43,7 @@ async function retrieveUniswapPairs(): Promise<PairInfo[]> {
             if (typeof(x) === "object") {
                 const pairInfo = x as PairInfo;
                 if (pairInfo) {
-                    if (checkTradingPair(pairInfo, Uniswap_MinLiquidity, allowlist)) {
+                    if (checkTradingPair(pairInfo, Ethereum, Uniswap_MinLiquidity, allowlist, PrimaryTokens)) {
                         filtered.push(pairInfo);
                     }
                 }
@@ -130,7 +82,7 @@ async function generateTokenlist(): Promise<void> {
     tradingPairs.forEach(p => {
         let tokenItem0 = tokenInfoFromSubgraphToken(p.token0);
         let tokenItem1 = tokenInfoFromSubgraphToken(p.token1);
-        if (primaryTokenIndex(p) == 2) {
+        if (primaryTokenIndex(p, PrimaryTokens) == 2) {
             // reverse
             const tmp = tokenItem1; tokenItem1 = tokenItem0; tokenItem0 = tmp;
         }
