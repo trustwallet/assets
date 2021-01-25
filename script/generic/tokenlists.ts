@@ -136,8 +136,8 @@ function addPairToToken(pairToken: TokenItem, token: TokenItem, list: List): voi
 export function addPairIfNeeded(token0: TokenItem, token1: TokenItem, list: List): void {
     addTokenIfNeeded(token0, list);
     addTokenIfNeeded(token1, list);
-    addPairToToken(token0, token1, list);
     addPairToToken(token1, token0, list);
+    // reverse direction not needed addPairToToken(token0, token1, list);
 }
 
 function sort(list: List) {

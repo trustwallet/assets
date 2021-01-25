@@ -22,6 +22,7 @@ import { assetID, logoURI } from "../generic/asset";
 const PancakeSwap_TradingPairsUrl = "https://api.bscgraph.org/subgraphs/name/wowswap";
 const PancakeSwap_TradingPairsQuery = "query pairs {\\n  pairs(first: 400, orderBy: reserveUSD, orderDirection: desc) {\\n id\\n reserveUSD\\n trackedReserveETH\\n volumeUSD\\n    untrackedVolumeUSD\\n __typename\\n token0 {\\n id\\n symbol\\n name\\n decimals\\n __typename\\n }\\n token1 {\\n id\\n symbol\\n name\\n decimals\\n __typename\\n }\\n }\\n}\\n";
 const PancakeSwap_MinLiquidity = 1000000;
+const PrimaryTokens: string[] = ["WBNB", "BNB"];
 
 function checkBSCTokenExists(id: string, tokenAllowlist: string[]): boolean {
     const logoPath = getChainAssetLogoPath(SmartChain, id);
@@ -33,6 +34,21 @@ function checkBSCTokenExists(id: string, tokenAllowlist: string[]): boolean {
         return false;
     }
     return true;
+}
+
+function isTokenPrimary(token: TokenInfo): boolean {
+    return (PrimaryTokens.find(t => (t === token.symbol.toUpperCase())) != undefined);
+}
+
+// check which token of the pair is the primary token, 1st, or 2nd, or 0 for none
+function primaryTokenIndex(pair: PairInfo): number {
+    if (isTokenPrimary(pair.token0)) {
+        return 1;
+    }
+    if (isTokenPrimary(pair.token1)) {
+        return 2;
+    }
+    return 0;
 }
 
 // Verify a trading pair, whether we support the tokens, has enough liquidity, etc.
@@ -50,6 +66,10 @@ function checkTradingPair(pair: PairInfo, minLiquidity: number, tokenAllowlist: 
     }
     if (!checkBSCTokenExists(pair.token1.id, tokenAllowlist)) {
         console.log("pair with unsupported 2nd coin:", pair.token0.symbol, "--", pair.token1.symbol);
+        return false;
+    }
+    if (primaryTokenIndex(pair) == 0) {
+        console.log("pair with no primary coin:", pair.token0.symbol, "--", pair.token1.symbol);
         return false;
     }
     //console.log("pair:", pair.token0.symbol, "--", pair.token1.symbol, "  ", pair.reserveUSD);
@@ -106,8 +126,12 @@ async function generateTokenlist(): Promise<void> {
     
     const tradingPairs = await retrievePancakeSwapPairs();
     tradingPairs.forEach(p => {
-        const tokenItem0 = tokenInfoFromSubgraphToken(p.token0);
-        const tokenItem1 = tokenInfoFromSubgraphToken(p.token1);
+        let tokenItem0 = tokenInfoFromSubgraphToken(p.token0);
+        let tokenItem1 = tokenInfoFromSubgraphToken(p.token1);
+        if (primaryTokenIndex(p) == 2) {
+            // reverse
+            const tmp = tokenItem1; tokenItem1 = tokenItem0; tokenItem0 = tmp;
+        }
         addPairIfNeeded(tokenItem0, tokenItem1, list);
     });
     console.log(`Tokenlist updated, ${list.tokens.length} tokens`);
