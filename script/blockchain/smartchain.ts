@@ -92,7 +92,7 @@ function tokenInfoFromSubgraphToken(token: TokenInfo): TokenItem {
     return new TokenItem(
         assetID(20000714, idChecksum),
         "BEP20",
-        idChecksum, token.name, token.symbol, token.decimals,
+        idChecksum, token.name, token.symbol, parseInt(token.decimals.toString()),
         logoURI(idChecksum, "smartchain", "--"),
         []);
 }

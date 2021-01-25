@@ -21,7 +21,7 @@ import { assetID, logoURI } from "../generic/asset";
 
 // see https://thegraph.com/explorer/subgraph/uniswap/uniswap-v2
 const Uniswap_TradingPairsUrl = "https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v2";
-const Uniswap_TradingPairsQuery = "query pairs {\\n  pairs(first: 400, orderBy: reserveUSD, orderDirection: desc) {\\n id\\n reserveUSD\\n trackedReserveETH\\n volumeUSD\\n    untrackedVolumeUSD\\n __typename\\n token0 {\\n id\\n symbol\\n name\\n __typename\\n }\\n token1 {\\n id\\n symbol\\n name\\n __typename\\n }\\n }\\n}\\n";
+const Uniswap_TradingPairsQuery = "query pairs {\\n  pairs(first: 400, orderBy: reserveUSD, orderDirection: desc) {\\n id\\n reserveUSD\\n trackedReserveETH\\n volumeUSD\\n    untrackedVolumeUSD\\n __typename\\n token0 {\\n id\\n symbol\\n name\\n decimals\\n __typename\\n }\\n token1 {\\n id\\n symbol\\n name\\n decimals\\n __typename\\n }\\n }\\n}\\n";
 const Uniswap_MinLiquidity = 1000000;
 
 function checkEthTokenExists(id: string, tokenAllowlist: string[]): boolean {
@@ -94,7 +94,7 @@ function tokenInfoFromSubgraphToken(token: TokenInfo): TokenItem {
     return new TokenItem(
         assetID(60, idChecksum),
         "ERC20",
-        idChecksum, token.name, token.symbol, token.decimals,
+        idChecksum, token.name, token.symbol, parseInt(token.decimals.toString()),
         logoURI(idChecksum, "ethereum", "--"),
         []);
 }
