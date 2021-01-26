@@ -1,7 +1,28 @@
 {
     "name": "Wrapped UST Token",
-    "website": "https://mirror.finance",
-    "short_description": "Mirror Protocol allows the creation of fungible assets, “synthetics”, that track the price of real-world assets.",
+    "website": "https://terra.money",
+    "short_description": "TerraUSD is the first decentralized stablecoin that is scalable, yield bearing and interchain.",
     "explorer": "https://www.bscscan.com/token/0x23396cF899Ca06c4472205fC903bDB4de249D6fC",
-    "research": ""
+    "socials": [
+        {
+            "name": "Twitter",
+            "url": "https://twitter.com/terra_money",
+            "handle": "TerraMoney"
+        },
+        {
+            "name": "Discord",
+            "url": "https://discord.gg/bYfyhUT",
+            "handle": "TerraMoney"
+        },
+        {
+            "name": "Telegram",
+            "url": "https://t.me/terra_announcements",
+            "handle": "TerraMoney"
+        },
+        {
+            "name": "Medium",
+            "url": "https://medium.com/terra-money",
+            "handle": "TerraMoney"
+        }
+    ]
 }
