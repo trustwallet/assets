@@ -22,6 +22,7 @@ import {
 } from "../generic/tokenlists";
 import { toChecksum } from "../generic/eth-address";
 import { assetID, logoURI } from "../generic/asset";
+import * as bluebird from "bluebird";
 
 // see https://thegraph.com/explorer/subgraph/uniswap/uniswap-v2
 const Uniswap_TradingPairsUrl = "https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v2";
@@ -81,14 +82,14 @@ async function generateTokenlist(): Promise<void> {
     console.log(`Tokenlist base, ${list.tokens.length} tokens`);
     
     const tradingPairs = await retrieveUniswapPairs();
-    tradingPairs.forEach(p => {
+    await bluebird.each(tradingPairs, async (p) => {
         let tokenItem0 = tokenInfoFromSubgraphToken(p.token0);
         let tokenItem1 = tokenInfoFromSubgraphToken(p.token1);
         if (primaryTokenIndex(p, PrimaryTokens) == 2) {
             // reverse
             const tmp = tokenItem1; tokenItem1 = tokenItem0; tokenItem0 = tmp;
         }
-        addPairIfNeeded(tokenItem0, tokenItem1, list);
+        await addPairIfNeeded(tokenItem0, tokenItem1, list);
     });
     console.log(`Tokenlist updated, ${list.tokens.length} tokens`);
 

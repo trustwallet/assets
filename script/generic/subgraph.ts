@@ -24,13 +24,19 @@ export async function getTradingPairs(apiUrl: string, subgraphQuery: string): Pr
     const postData = '{"operationName":"pairs", "variables":{}, "query":"' + subgraphQuery + '"}';
 
     console.log(`Retrieving trading pair infos from: ${apiUrl}`);
-    const result = await axios.post(apiUrl, postData).then(r => r.data);
-    if (!result || !result.data || !result.data.pairs) {
+    try {
+        const result = await axios.post(apiUrl, postData).then(r => r.data);
+        if (!result || !result.data || !result.data.pairs) {
+            console.log("Unexpected result", result);
+            return [];
+        }
+        const pairs = result.data.pairs;
+        console.log(`Retrieved ${pairs.length} trading pair infos`);
+        return pairs;
+    } catch (err) {
+        console.log("Exception from graph api:", apiUrl, JSON.stringify(postData));
         return [];
     }
-    const pairs = result.data.pairs;
-    console.log(`Retrieved ${pairs.length} trading pair infos`);
-    return pairs;
 }
 
 function checkBSCTokenExists(id: string, chainName: string, tokenAllowlist: string[]): boolean {

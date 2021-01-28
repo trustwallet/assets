@@ -1,5 +1,8 @@
+// Tokenlist.json handling
+
 import { readJsonFile, writeJsonFile } from "../generic/json";
 import { diff } from "jsondiffpatch";
+import { tokenInfoFromTwApi, TokenTwInfo } from "../generic/asset";
 
 class Version {
     major: number
@@ -112,11 +115,32 @@ export function writeToFileWithUpdate(filename: string, list: List): void {
     writeToFile(filename, list);
 }
 
-function addTokenIfNeeded(token: TokenItem, list: List): void {
+async function addTokenIfNeeded(token: TokenItem, list: List): Promise<void> {
     if (list.tokens.map(t => t.address.toLowerCase()).includes(token.address.toLowerCase())) {
         return;
     }
+    token = await updateTokenInfo(token);
     list.tokens.push(token);
+}
+
+// Update/fix token info, with properties retrieved from TW API
+async function updateTokenInfo(token: TokenItem): Promise<TokenItem> {
+    const tokenInfo: TokenTwInfo = await tokenInfoFromTwApi(token.asset);
+    if (tokenInfo) {
+        if (token.name && token.name != tokenInfo.name) {
+            console.log(`Token name adjusted: '${token.name}' -> '${tokenInfo.name}'`);
+            token.name = tokenInfo.name;
+        }
+        if (token.symbol && token.symbol != tokenInfo.symbol) {
+            console.log(`Token symbol adjusted: '${token.symbol}' -> '${tokenInfo.symbol}'`);
+            token.symbol = tokenInfo.symbol;
+        }
+        if (token.decimals && token.decimals != tokenInfo.decimals) {
+            console.log(`Token decimals adjusted: '${token.decimals}' -> '${tokenInfo.decimals}'`);
+            token.decimals = parseInt(tokenInfo.decimals.toString());
+        }
+    }
+    return token;
 }
 
 function addPairToToken(pairToken: TokenItem, token: TokenItem, list: List): void {
@@ -133,9 +157,9 @@ function addPairToToken(pairToken: TokenItem, token: TokenItem, list: List): voi
     tokenInList.pairs.push(new Pair(pairToken.asset));
 }
 
-export function addPairIfNeeded(token0: TokenItem, token1: TokenItem, list: List): void {
-    addTokenIfNeeded(token0, list);
-    addTokenIfNeeded(token1, list);
+export async function addPairIfNeeded(token0: TokenItem, token1: TokenItem, list: List): Promise<void> {
+    await addTokenIfNeeded(token0, list);
+    await addTokenIfNeeded(token1, list);
     addPairToToken(token1, token0, list);
     // reverse direction not needed addPairToToken(token0, token1, list);
 }
