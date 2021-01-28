@@ -11,7 +11,7 @@ export const assetsURL = 'https://raw.githubusercontent.com/trustwallet/assets/m
 export const PancakeSwap_TradingPairsUrl = "https://api.bscgraph.org/subgraphs/name/wowswap";
 export const PancakeSwap_TradingPairsQuery = `
     query pairs {
-        pairs(first: 400, orderBy: reserveUSD, orderDirection: desc) {
+        pairs(first: 200, orderBy: reserveUSD, orderDirection: desc) {
             id reserveUSD trackedReserveETH volumeUSD txCount untrackedVolumeUSD __typename 
             token0 {
                 id symbol name decimals __typename
