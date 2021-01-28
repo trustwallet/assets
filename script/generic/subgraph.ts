@@ -36,8 +36,8 @@ export async function getTradingPairs(apiUrl: string, subgraphQuery: string): Pr
         console.log(`Retrieved ${pairs.length} trading pair infos`);
         return pairs;
     } catch (err) {
-        console.log("Exception from graph api:", apiUrl, JSON.stringify(postData));
-        return [];
+        console.log("Exception from graph api:", err, apiUrl, JSON.stringify(postData));
+        throw err;
     }
 }
 
