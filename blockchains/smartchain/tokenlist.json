@@ -1,8 +1,7 @@
 {
     "name": "Trust Wallet: Smart Chain",
     "logoURI": "https://trustwallet.com/assets/images/favicon.png",
-    "keywords": [],
-    "timestamp": "2020-10-03T12:37:57.000+00:00",
+    "timestamp": "2021-01-28T10:04:32.196Z",
     "tokens": [
         {
             "chainId": 56,
@@ -15,13 +14,46 @@
             "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c/logo.png",
             "pairs": [
                 {
+                    "base": "c20000714_t0x0D8Ce2A99Bb6e3B7Db580eD848240e4a0F9aE153"
+                },
+                {
                     "base": "c20000714_t0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82"
+                },
+                {
+                    "base": "c20000714_t0x0Eb3a705fc54725037CC9e008bDede697f62F335"
+                },
+                {
+                    "base": "c20000714_t0x16939ef78684453bfDFb47825F8a5F714f12623a"
+                },
+                {
+                    "base": "c20000714_t0x190b589cf9Fb8DDEabBFeae36a813FFb2A702454"
                 },
                 {
                     "base": "c20000714_t0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3"
                 },
                 {
+                    "base": "c20000714_t0x1D2F0da169ceB9fC7B3144628dB156f3F6c60dBE"
+                },
+                {
+                    "base": "c20000714_t0x2090c8295769791ab7A3CF1CC6e0AA19F35e441A"
+                },
+                {
                     "base": "c20000714_t0x2170Ed0880ac9A755fd29B2688956BD959F933F8"
+                },
+                {
+                    "base": "c20000714_t0x23396cF899Ca06c4472205fC903bDB4de249D6fC"
+                },
+                {
+                    "base": "c20000714_t0x233d91A0713155003fc4DcE0AFa871b508B3B715"
+                },
+                {
+                    "base": "c20000714_t0x3EE2200Efb3400fAbB9AacF31297cBdD1d435D47"
+                },
+                {
+                    "base": "c20000714_t0x4338665CBB7B2485A8855A139b75D5e34AB0DB94"
+                },
+                {
+                    "base": "c20000714_t0x47BEAd2563dCBf3bF2c9407fEa4dC236fAbA485A"
                 },
                 {
                     "base": "c20000714_t0x4B0F1812e5Df2A09796481Ff14017e6005508003"
@@ -33,16 +65,40 @@
                     "base": "c20000714_t0x55d398326f99059fF775485246999027B3197955"
                 },
                 {
+                    "base": "c20000714_t0x56b6fB708fC5732DEC1Afc8D8556423A2EDcCbD6"
+                },
+                {
+                    "base": "c20000714_t0x5Ac52EE5b2a633895292Ff6d8A89bB9190451587"
+                },
+                {
                     "base": "c20000714_t0x63870A18B6e42b01Ef1Ad8A2302ef50B7132054F"
                 },
                 {
+                    "base": "c20000714_t0x7083609fCE4d1d8Dc0C979AAb8c869Ea2C873402"
+                },
+                {
                     "base": "c20000714_t0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c"
+                },
+                {
+                    "base": "c20000714_t0x728C5baC3C3e370E372Fc4671f9ef6916b814d8B"
+                },
+                {
+                    "base": "c20000714_t0x88f1A5ae2A3BF98AEAF342D26B30a79438c9142e"
+                },
+                {
+                    "base": "c20000714_t0x8fF795a6F4D97E7887C79beA79aba5cc76444aDf"
                 },
                 {
                     "base": "c20000714_t0xa1faa113cbE53436Df28FF0aEe54275c13B40975"
                 },
                 {
                     "base": "c20000714_t0xa2B726B1145A4773F68593CF171187d8EBe4d495"
+                },
+                {
+                    "base": "c20000714_t0xA8c2B8eec3d368C0253ad3dae65a5F2BBB89c929"
+                },
+                {
+                    "base": "c20000714_t0xAD6cAEb32CD2c308980a548bD0Bc5AA4306c6c18"
                 },
                 {
                     "base": "c20000714_t0xBf5140A22578168FD562DCcF235E5D43A02ce9B1"
@@ -54,9 +110,25 @@
                     "base": "c20000714_t0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56"
                 },
                 {
+                    "base": "c20000714_t0xF21768cCBC73Ea5B6fd3C687208a7c2def2d966e"
+                },
+                {
                     "base": "c20000714_t0xf79037F6f6bE66832DE4E7516be52826BC3cBcc4"
+                },
+                {
+                    "base": "c20000714_t0xF8A0BF9cF54Bb92F17374d9e9A321E6a111a51bD"
                 }
             ]
+        },
+        {
+            "asset": "c20000714_t0x0D8Ce2A99Bb6e3B7Db580eD848240e4a0F9aE153",
+            "type": "BEP20",
+            "address": "0x0D8Ce2A99Bb6e3B7Db580eD848240e4a0F9aE153",
+            "name": "Binance-Peg Filecoin",
+            "symbol": "FIL",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x0D8Ce2A99Bb6e3B7Db580eD848240e4a0F9aE153/logo.png",
+            "pairs": []
         },
         {
             "chainId": 56,
@@ -67,6 +139,36 @@
             "symbol": "Cake",
             "decimals": 18,
             "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c20000714_t0x0Eb3a705fc54725037CC9e008bDede697f62F335",
+            "type": "BEP20",
+            "address": "0x0Eb3a705fc54725037CC9e008bDede697f62F335",
+            "name": "Binance-Peg Cosmos",
+            "symbol": "ATOM",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x0Eb3a705fc54725037CC9e008bDede697f62F335/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c20000714_t0x16939ef78684453bfDFb47825F8a5F714f12623a",
+            "type": "BEP20",
+            "address": "0x16939ef78684453bfDFb47825F8a5F714f12623a",
+            "name": "Binance-Peg Tezos",
+            "symbol": "XTZ",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x16939ef78684453bfDFb47825F8a5F714f12623a/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c20000714_t0x190b589cf9Fb8DDEabBFeae36a813FFb2A702454",
+            "type": "BEP20",
+            "address": "0x190b589cf9Fb8DDEabBFeae36a813FFb2A702454",
+            "name": "bDollar",
+            "symbol": "BDO",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x190b589cf9Fb8DDEabBFeae36a813FFb2A702454/logo.png",
             "pairs": []
         },
         {
@@ -81,6 +183,26 @@
             "pairs": []
         },
         {
+            "asset": "c20000714_t0x1D2F0da169ceB9fC7B3144628dB156f3F6c60dBE",
+            "type": "BEP20",
+            "address": "0x1D2F0da169ceB9fC7B3144628dB156f3F6c60dBE",
+            "name": "Binance-Peg XRP",
+            "symbol": "XRP",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x1D2F0da169ceB9fC7B3144628dB156f3F6c60dBE/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c20000714_t0x2090c8295769791ab7A3CF1CC6e0AA19F35e441A",
+            "type": "BEP20",
+            "address": "0x2090c8295769791ab7A3CF1CC6e0AA19F35e441A",
+            "name": "Fuel Token",
+            "symbol": "Fuel",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x2090c8295769791ab7A3CF1CC6e0AA19F35e441A/logo.png",
+            "pairs": []
+        },
+        {
             "chainId": 56,
             "asset": "c20000714_t0x2170Ed0880ac9A755fd29B2688956BD959F933F8",
             "type": "BEP20",
@@ -89,6 +211,56 @@
             "symbol": "ETH",
             "decimals": 18,
             "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x2170Ed0880ac9A755fd29B2688956BD959F933F8/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c20000714_t0x23396cF899Ca06c4472205fC903bDB4de249D6fC",
+            "type": "BEP20",
+            "address": "0x23396cF899Ca06c4472205fC903bDB4de249D6fC",
+            "name": "Wrapped UST Token",
+            "symbol": "UST",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x23396cF899Ca06c4472205fC903bDB4de249D6fC/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c20000714_t0x233d91A0713155003fc4DcE0AFa871b508B3B715",
+            "type": "BEP20",
+            "address": "0x233d91A0713155003fc4DcE0AFa871b508B3B715",
+            "name": "Ditto",
+            "symbol": "DITTO",
+            "decimals": 9,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x233d91A0713155003fc4DcE0AFa871b508B3B715/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c20000714_t0x3EE2200Efb3400fAbB9AacF31297cBdD1d435D47",
+            "type": "BEP20",
+            "address": "0x3EE2200Efb3400fAbB9AacF31297cBdD1d435D47",
+            "name": "Binance-Peg Cardano",
+            "symbol": "ADA",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x3EE2200Efb3400fAbB9AacF31297cBdD1d435D47/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c20000714_t0x4338665CBB7B2485A8855A139b75D5e34AB0DB94",
+            "type": "BEP20",
+            "address": "0x4338665CBB7B2485A8855A139b75D5e34AB0DB94",
+            "name": "Binance-Peg Litecoin",
+            "symbol": "LTC",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x4338665CBB7B2485A8855A139b75D5e34AB0DB94/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c20000714_t0x47BEAd2563dCBf3bF2c9407fEa4dC236fAbA485A",
+            "type": "BEP20",
+            "address": "0x47BEAd2563dCBf3bF2c9407fEa4dC236fAbA485A",
+            "name": "Swipe",
+            "symbol": "SXP",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x47BEAd2563dCBf3bF2c9407fEa4dC236fAbA485A/logo.png",
             "pairs": []
         },
         {
@@ -125,6 +297,26 @@
             "pairs": []
         },
         {
+            "asset": "c20000714_t0x56b6fB708fC5732DEC1Afc8D8556423A2EDcCbD6",
+            "type": "BEP20",
+            "address": "0x56b6fB708fC5732DEC1Afc8D8556423A2EDcCbD6",
+            "name": "Binance-Peg EOS",
+            "symbol": "EOS",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x56b6fB708fC5732DEC1Afc8D8556423A2EDcCbD6/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c20000714_t0x5Ac52EE5b2a633895292Ff6d8A89bB9190451587",
+            "type": "BEP20",
+            "address": "0x5Ac52EE5b2a633895292Ff6d8A89bB9190451587",
+            "name": "BSCX",
+            "symbol": "BSCX",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x5Ac52EE5b2a633895292Ff6d8A89bB9190451587/logo.png",
+            "pairs": []
+        },
+        {
             "chainId": 56,
             "asset": "c20000714_t0x63870A18B6e42b01Ef1Ad8A2302ef50B7132054F",
             "type": "BEP20",
@@ -136,6 +328,16 @@
             "pairs": []
         },
         {
+            "asset": "c20000714_t0x7083609fCE4d1d8Dc0C979AAb8c869Ea2C873402",
+            "type": "BEP20",
+            "address": "0x7083609fCE4d1d8Dc0C979AAb8c869Ea2C873402",
+            "name": "Binance-Peg Polkadot",
+            "symbol": "DOT",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x7083609fCE4d1d8Dc0C979AAb8c869Ea2C873402/logo.png",
+            "pairs": []
+        },
+        {
             "chainId": 56,
             "asset": "c20000714_t0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c",
             "type": "BEP20",
@@ -144,6 +346,36 @@
             "symbol": "BTCB",
             "decimals": 18,
             "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c20000714_t0x728C5baC3C3e370E372Fc4671f9ef6916b814d8B",
+            "type": "BEP20",
+            "address": "0x728C5baC3C3e370E372Fc4671f9ef6916b814d8B",
+            "name": "UNFI",
+            "symbol": "UNFI",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x728C5baC3C3e370E372Fc4671f9ef6916b814d8B/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c20000714_t0x88f1A5ae2A3BF98AEAF342D26B30a79438c9142e",
+            "type": "BEP20",
+            "address": "0x88f1A5ae2A3BF98AEAF342D26B30a79438c9142e",
+            "name": "Binance-Peg yearn.finance",
+            "symbol": "YFI",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x88f1A5ae2A3BF98AEAF342D26B30a79438c9142e/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c20000714_t0x8fF795a6F4D97E7887C79beA79aba5cc76444aDf",
+            "type": "BEP20",
+            "address": "0x8fF795a6F4D97E7887C79beA79aba5cc76444aDf",
+            "name": "Binance-Peg Bitcoin Cash",
+            "symbol": "BCH",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x8fF795a6F4D97E7887C79beA79aba5cc76444aDf/logo.png",
             "pairs": []
         },
         {
@@ -180,6 +412,16 @@
             "pairs": []
         },
         {
+            "asset": "c20000714_t0xAD6cAEb32CD2c308980a548bD0Bc5AA4306c6c18",
+            "type": "BEP20",
+            "address": "0xAD6cAEb32CD2c308980a548bD0Bc5AA4306c6c18",
+            "name": "Binance-Peg Band Protocol",
+            "symbol": "BAND",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xAD6cAEb32CD2c308980a548bD0Bc5AA4306c6c18/logo.png",
+            "pairs": []
+        },
+        {
             "chainId": 56,
             "asset": "c20000714_t0xBf5140A22578168FD562DCcF235E5D43A02ce9B1",
             "type": "BEP20",
@@ -213,6 +455,16 @@
             "pairs": []
         },
         {
+            "asset": "c20000714_t0xF21768cCBC73Ea5B6fd3C687208a7c2def2d966e",
+            "type": "BEP20",
+            "address": "0xF21768cCBC73Ea5B6fd3C687208a7c2def2d966e",
+            "name": "Reef.finance",
+            "symbol": "REEF",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xF21768cCBC73Ea5B6fd3C687208a7c2def2d966e/logo.png",
+            "pairs": []
+        },
+        {
             "chainId": 56,
             "asset": "c20000714_t0xf79037F6f6bE66832DE4E7516be52826BC3cBcc4",
             "type": "BEP20",
@@ -222,11 +474,21 @@
             "decimals": 6,
             "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xf79037F6f6bE66832DE4E7516be52826BC3cBcc4/logo.png",
             "pairs": []
+        },
+        {
+            "asset": "c20000714_t0xF8A0BF9cF54Bb92F17374d9e9A321E6a111a51bD",
+            "type": "BEP20",
+            "address": "0xF8A0BF9cF54Bb92F17374d9e9A321E6a111a51bD",
+            "name": "Binance-Peg ChainLink",
+            "symbol": "LINK",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xF8A0BF9cF54Bb92F17374d9e9A321E6a111a51bD/logo.png",
+            "pairs": []
         }
     ],
     "version": {
-        "major": 0,
-        "minor": 1,
+        "major": 1,
+        "minor": 0,
         "patch": 0
     }
 }
