@@ -21,7 +21,9 @@ export interface PairInfo {
 }
 
 export async function getTradingPairs(apiUrl: string, subgraphQuery: string): Promise<unknown[]> {
-    const postData = '{"operationName":"pairs", "variables":{}, "query":"' + subgraphQuery + '"}';
+    // compact the query string
+    const compactQuery = subgraphQuery.replace(/(?:\r\n|\r|\n)/g, ' ').replace(/\s[\s]+/g, ' ');
+    const postData = '{"operationName":"pairs", "variables":{}, "query":"' + compactQuery + '"}';
 
     console.log(`Retrieving trading pair infos from: ${apiUrl}`);
     try {
