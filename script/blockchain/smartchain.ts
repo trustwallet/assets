@@ -23,28 +23,24 @@ import { readJsonFile } from "../generic/json";
 import { toChecksum } from "../generic/eth-address";
 import { assetID, logoURI } from "../generic/asset";
 import * as bluebird from "bluebird";
+import * as config from "../config"
 
-const PancakeSwap_TradingPairsUrl = "https://api.bscgraph.org/subgraphs/name/wowswap";
-const PancakeSwap_TradingPairsQuery = "query pairs {\\n  pairs(first: 400, orderBy: reserveUSD, orderDirection: desc) {\\n id\\n reserveUSD\\n trackedReserveETH\\n volumeUSD\\n txCount \\n   untrackedVolumeUSD\\n __typename\\n token0 {\\n id\\n symbol\\n name\\n decimals\\n __typename\\n }\\n token1 {\\n id\\n symbol\\n name\\n decimals\\n __typename\\n }\\n }\\n}\\n";
-const PancakeSwap_MinLiquidity = 1000000;
-const PancakeSwap_MinVol24 = 500000;
-const PancakeSwap_TxCount24 = 288;
 const PrimaryTokens: string[] = ["WBNB", "BNB"];
 
 async function retrievePancakeSwapPairs(): Promise<PairInfo[]> {
-    console.log(`Retrieving pairs from PancakeSwap, limit liquidity USD ${PancakeSwap_MinLiquidity}  volume ${PancakeSwap_MinVol24}  txcount ${PancakeSwap_TxCount24}`);
+    console.log(`Retrieving pairs from PancakeSwap, limit liquidity USD ${config.PancakeSwap_MinLiquidity}  volume ${config.PancakeSwap_MinVol24}  txcount ${config.PancakeSwap_MinTxCount24}`);
 
     // prepare phase, read allowlist
     const allowlist: string[] = readJsonFile(getChainAllowlistPath(SmartChain)) as string[];
 
-    const pairs = await getTradingPairs(PancakeSwap_TradingPairsUrl, PancakeSwap_TradingPairsQuery);
+    const pairs = await getTradingPairs(config.PancakeSwap_TradingPairsUrl, config.PancakeSwap_TradingPairsQuery);
     const filtered: PairInfo[] = [];
     pairs.forEach(x => {
         try {
             if (typeof(x) === "object") {
                 const pairInfo = x as PairInfo;
                 if (pairInfo) {
-                    if (checkTradingPair(pairInfo, SmartChain, PancakeSwap_MinLiquidity, PancakeSwap_MinVol24, PancakeSwap_TxCount24, allowlist, PrimaryTokens)) {
+                    if (checkTradingPair(pairInfo, SmartChain, config.PancakeSwap_MinLiquidity, config.PancakeSwap_MinVol24, config.PancakeSwap_MinTxCount24, allowlist, PrimaryTokens)) {
                         filtered.push(pairInfo);
                     }
                 }

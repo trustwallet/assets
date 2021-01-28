@@ -23,30 +23,25 @@ import {
 import { toChecksum } from "../generic/eth-address";
 import { assetID, logoURI } from "../generic/asset";
 import * as bluebird from "bluebird";
+import * as config from "../config"
 
-// see https://thegraph.com/explorer/subgraph/uniswap/uniswap-v2
-const Uniswap_TradingPairsUrl = "https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v2";
-const Uniswap_TradingPairsQuery = "query pairs {\\n  pairs(first: 400, orderBy: reserveUSD, orderDirection: desc) {\\n id\\n reserveUSD\\n trackedReserveETH\\n volumeUSD\\n txCount \\n   untrackedVolumeUSD\\n __typename\\n token0 {\\n id\\n symbol\\n name\\n decimals\\n __typename\\n }\\n token1 {\\n id\\n symbol\\n name\\n decimals\\n __typename\\n }\\n }\\n}\\n";
-const Uniswap_MinLiquidity = 2000000;
-const Uniswap_MinVol24 = 1000000;
-const Uniswap_TxCount24 = 480;
 const PrimaryTokens: string[] = ["WETH", "ETH"];
 
 // Retrieve trading pairs from Uniswap
 async function retrieveUniswapPairs(): Promise<PairInfo[]> {
-    console.log(`Retrieving pairs from Uniswap, limit liquidity USD ${Uniswap_MinLiquidity}  volume ${Uniswap_MinVol24}  txcount ${Uniswap_TxCount24}`);
+    console.log(`Retrieving pairs from Uniswap, limit liquidity USD ${config.Uniswap_MinLiquidity}  volume ${config.Uniswap_MinVol24}  txcount ${config.Uniswap_MinTxCount24}`);
 
     // prepare phase, read allowlist
     const allowlist: string[] = readJsonFile(getChainAllowlistPath(Ethereum)) as string[];
 
-    const pairs = await getTradingPairs(Uniswap_TradingPairsUrl, Uniswap_TradingPairsQuery);
+    const pairs = await getTradingPairs(config.Uniswap_TradingPairsUrl, config.Uniswap_TradingPairsQuery);
     const filtered: PairInfo[] = [];
     pairs.forEach(x => {
         try {
             if (typeof(x) === "object") {
                 const pairInfo = x as PairInfo;
                 if (pairInfo) {
-                    if (checkTradingPair(pairInfo, Ethereum, Uniswap_MinLiquidity, Uniswap_MinVol24, Uniswap_TxCount24, allowlist, PrimaryTokens)) {
+                    if (checkTradingPair(pairInfo, Ethereum, config.Uniswap_MinLiquidity, config.Uniswap_MinVol24, config.Uniswap_MinTxCount24, allowlist, PrimaryTokens)) {
                         filtered.push(pairInfo);
                     }
                 }
