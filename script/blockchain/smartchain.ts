@@ -72,7 +72,7 @@ async function generateTokenlist(): Promise<void> {
         if (primaryTokenIndex(p, PrimaryTokens) == 2) {
             // reverse
             const tmp = tokenItem1; tokenItem1 = tokenItem0; tokenItem0 = tmp;
-        };
+        }
         pairs2.push([tokenItem0, tokenItem1]);
     });
     await rebuildTokenlist(SmartChain, pairs2, "Smart Chain");
