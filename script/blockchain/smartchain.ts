@@ -6,13 +6,11 @@ import {
     primaryTokenIndex,
     TokenInfo
 } from "../generic/subgraph";
-import { getChainAllowlistPath } from "../generic/repo-structure";
 import { SmartChain } from "../generic/blockchains";
 import {
     rebuildTokenlist,
     TokenItem
 } from "../generic/tokenlists";
-import { readJsonFile } from "../generic/json";
 import { toChecksum } from "../generic/eth-address";
 import { assetID, logoURI } from "../generic/asset";
 import * as config from "../config"
@@ -22,9 +20,6 @@ const PrimaryTokens: string[] = ["WBNB", "BNB"];
 async function retrievePancakeSwapPairs(): Promise<PairInfo[]> {
     console.log(`Retrieving pairs from PancakeSwap, limit liquidity USD ${config.PancakeSwap_MinLiquidity}  volume ${config.PancakeSwap_MinVol24}  txcount ${config.PancakeSwap_MinTxCount24}`);
 
-    // prepare phase, read allowlist
-    const allowlist: string[] = readJsonFile(getChainAllowlistPath(SmartChain)) as string[];
-
     const pairs = await getTradingPairs(config.PancakeSwap_TradingPairsUrl, config.PancakeSwap_TradingPairsQuery);
     const filtered: PairInfo[] = [];
     pairs.forEach(x => {
@@ -32,7 +27,7 @@ async function retrievePancakeSwapPairs(): Promise<PairInfo[]> {
             if (typeof(x) === "object") {
                 const pairInfo = x as PairInfo;
                 if (pairInfo) {
-                    if (checkTradingPair(pairInfo, SmartChain, config.PancakeSwap_MinLiquidity, config.PancakeSwap_MinVol24, config.PancakeSwap_MinTxCount24, allowlist, PrimaryTokens)) {
+                    if (checkTradingPair(pairInfo, config.PancakeSwap_MinLiquidity, config.PancakeSwap_MinVol24, config.PancakeSwap_MinTxCount24, PrimaryTokens)) {
                         filtered.push(pairInfo);
                     }
                 }

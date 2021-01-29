@@ -1,7 +1,7 @@
 {
     "name": "Trust Wallet: Smart Chain",
     "logoURI": "https://trustwallet.com/assets/images/favicon.png",
-    "timestamp": "2021-01-28T10:04:32.196Z",
+    "timestamp": "2021-01-29T07:23:25.492Z",
     "tokens": [
         {
             "chainId": 56,
@@ -83,10 +83,16 @@
                     "base": "c20000714_t0x728C5baC3C3e370E372Fc4671f9ef6916b814d8B"
                 },
                 {
+                    "base": "c20000714_t0x78650B139471520656b9E7aA7A5e9276814a38e9"
+                },
+                {
                     "base": "c20000714_t0x88f1A5ae2A3BF98AEAF342D26B30a79438c9142e"
                 },
                 {
                     "base": "c20000714_t0x8fF795a6F4D97E7887C79beA79aba5cc76444aDf"
+                },
+                {
+                    "base": "c20000714_t0x928e55daB735aa8260AF3cEDadA18B5f70C72f1b"
                 },
                 {
                     "base": "c20000714_t0xa1faa113cbE53436Df28FF0aEe54275c13B40975"
@@ -102,6 +108,9 @@
                 },
                 {
                     "base": "c20000714_t0xBf5140A22578168FD562DCcF235E5D43A02ce9B1"
+                },
+                {
+                    "base": "c20000714_t0xbF7c81FFF98BbE61B40Ed186e4AfD6DDd01337fe"
                 },
                 {
                     "base": "c20000714_t0xcF6BB5389c92Bdda8a3747Ddb454cB7a64626C63"
@@ -359,6 +368,16 @@
             "pairs": []
         },
         {
+            "asset": "c20000714_t0x78650B139471520656b9E7aA7A5e9276814a38e9",
+            "type": "BEP20",
+            "address": "0x78650B139471520656b9E7aA7A5e9276814a38e9",
+            "name": "StandardBTCHashrateToken",
+            "symbol": "BTCST",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x78650B139471520656b9E7aA7A5e9276814a38e9/logo.png",
+            "pairs": []
+        },
+        {
             "asset": "c20000714_t0x88f1A5ae2A3BF98AEAF342D26B30a79438c9142e",
             "type": "BEP20",
             "address": "0x88f1A5ae2A3BF98AEAF342D26B30a79438c9142e",
@@ -376,6 +395,16 @@
             "symbol": "BCH",
             "decimals": 18,
             "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x8fF795a6F4D97E7887C79beA79aba5cc76444aDf/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c20000714_t0x928e55daB735aa8260AF3cEDadA18B5f70C72f1b",
+            "type": "BEP20",
+            "address": "0x928e55daB735aa8260AF3cEDadA18B5f70C72f1b",
+            "name": "Frontier Token",
+            "symbol": "FRONT",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x928e55daB735aa8260AF3cEDadA18B5f70C72f1b/logo.png",
             "pairs": []
         },
         {
@@ -433,6 +462,16 @@
             "pairs": []
         },
         {
+            "asset": "c20000714_t0xbF7c81FFF98BbE61B40Ed186e4AfD6DDd01337fe",
+            "type": "BEP20",
+            "address": "0xbF7c81FFF98BbE61B40Ed186e4AfD6DDd01337fe",
+            "name": "Elrond",
+            "symbol": "EGLD",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xbF7c81FFF98BbE61B40Ed186e4AfD6DDd01337fe/logo.png",
+            "pairs": []
+        },
+        {
             "chainId": 56,
             "asset": "c20000714_t0xcF6BB5389c92Bdda8a3747Ddb454cB7a64626C63",
             "type": "BEP20",
@@ -487,7 +526,7 @@
         }
     ],
     "version": {
-        "major": 1,
+        "major": 2,
         "minor": 0,
         "patch": 0
     }
