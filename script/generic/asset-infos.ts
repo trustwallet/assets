@@ -37,10 +37,10 @@ function isAssetInfoHasAllKeys(info: unknown, path: string): [boolean, string] {
 function explorerUrl(chain: string, contract: string): string {
     if (contract) {
         switch (chain.toLowerCase()) {
-            case CoinType.name(CoinType.ethereum):
+            case CoinType.name(CoinType.ethereum).toLowerCase():
                 return `https://etherscan.io/token/${contract}`;
 
-            case CoinType.name(CoinType.tron):
+            case CoinType.name(CoinType.tron).toLowerCase():
                 if (contract.startsWith("10")) {
                     // trc10
                     return `https://tronscan.io/#/token/${contract}`;
@@ -48,22 +48,22 @@ function explorerUrl(chain: string, contract: string): string {
                 // trc20
                 return `https://tronscan.io/#/token20/${contract}`;
 
-            case CoinType.name(CoinType.binance):
+            case CoinType.name(CoinType.binance).toLowerCase():
                 return `https://explorer.binance.org/asset/${contract}`;
 
-            case CoinType.name(CoinType.smartchain):
+            case CoinType.name(CoinType.smartchain).toLowerCase():
                 return `https://bscscan.com/token/${contract}`;
 
-            case CoinType.name(CoinType.neo):
+            case CoinType.name(CoinType.neo).toLowerCase():
                 return `https://neo.tokenview.com/en/token/0x${contract}`;
 
-            case CoinType.name(CoinType.nuls):
+            case CoinType.name(CoinType.nuls).toLowerCase():
                 return `https://nulscan.io/token/info?contractAddress=${contract}`;
 
-            case CoinType.name(CoinType.wanchain):
+            case CoinType.name(CoinType.wanchain).toLowerCase():
                 return `https://www.wanscan.org/token/${contract}`;
 
-            case CoinType.name(CoinType.solana):
+            case CoinType.name(CoinType.solana).toLowerCase():
                 return `https://explorer.solana.com/address/${contract}`;
         }
     }
