@@ -1,5 +1,5 @@
 {
-    "name": "Planet",
+    "name": "PLANET",
     "website": "https://xpace.finance/",
     "short_description": "Liquidity mining multiplier for Binance Smart Chain",
     "description": "A protocol built on Binance Smart Chain to boost rewards on liquidity mining on lower gas costs and utilizing incentivisation strategies, Supercharged NFT collectibles and community governance models.",
@@ -21,5 +21,8 @@
             "url": "https://xpacefinance.medium.com/",
             "handle": "xpacefinance"
         }
-    ]
+    ],
+    "type": "BEP20",
+    "symbol": "PLNT",
+    "decimals": 18
 }

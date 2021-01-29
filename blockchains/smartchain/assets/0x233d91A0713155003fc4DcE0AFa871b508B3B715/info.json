@@ -1,5 +1,5 @@
 {
-    "name": "DITTO Money Token",
+    "name": "Ditto",
     "website": "https://ditto.money",
     "source_code": "https://github.com/ditto-money/",
     "short_description": "The dominant elastic supply token on Binance Smart Chain.",
@@ -10,5 +10,8 @@
             "url": "https://twitter.com/dittomoney_",
             "handle": "dittomoney_"
         }
-    ]
+    ],
+    "type": "BEP20",
+    "symbol": "DITTO",
+    "decimals": 9
 }

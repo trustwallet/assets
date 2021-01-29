@@ -1,5 +1,5 @@
 {
-    "name": "Jetfuel.Finance",
+    "name": "Fuel Token",
     "website": "https://jetfuel.finance/",
     "source_code": "https://jetfuel.finance/contracts",
     "short_description": "Jetfuel is a yield farming and yield aggregator platform that combines features from the most successful DeFi projects",
@@ -19,5 +19,8 @@
             "url": "https://t.me/jetfuelfinance"
         }
     ],
-    "explorer": "https://bscscan.com/token/0x2090c8295769791ab7a3cf1cc6e0aa19f35e441a"
+    "explorer": "https://bscscan.com/token/0x2090c8295769791ab7a3cf1cc6e0aa19f35e441a",
+    "type": "BEP20",
+    "symbol": "Fuel",
+    "decimals": 18
 }

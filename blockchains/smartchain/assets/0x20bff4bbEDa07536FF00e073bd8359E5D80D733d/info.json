@@ -1,5 +1,5 @@
 {
-    "name": "Cannon Finance",
+    "name": "Cannon",
     "website": "https://cannon.finance/",
     "source_code": "https://github.com/cannonfinance",
     "short_description": "Cannon Finance",
@@ -19,5 +19,8 @@
         }
     ],
     "explorer": "https://etherscan.io/token/0x20bff4bbEDa07536FF00e073bd8359E5D80D733d",
-    "explorer1": "https://bscscan.com/token/0x20bff4bbEDa07536FF00e073bd8359E5D80D733d"
+    "explorer1": "https://bscscan.com/token/0x20bff4bbEDa07536FF00e073bd8359E5D80D733d",
+    "type": "BEP20",
+    "symbol": "CAN",
+    "decimals": 18
 }

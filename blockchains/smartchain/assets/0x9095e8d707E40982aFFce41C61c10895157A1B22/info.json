@@ -1,5 +1,5 @@
 {
-    "name": "Cream DAI",
+    "name": "Cream Dai Token",
     "website": "https://app.cream.finance",
     "source_code": "https://github.com/CreamFi",
     "short_description": "C.R.E.A.M. Finance is a blockchain agnostic, decentralized peer to peer lending platform based on a fork of Compound Finance",
@@ -23,5 +23,8 @@
             "url": "https://t.me/creamfinance"
         }
     ],
-    "explorer": "https://bscscan.com/address/0x9095e8d707e40982affce41c61c10895157a1b22"
+    "explorer": "https://bscscan.com/address/0x9095e8d707e40982affce41c61c10895157a1b22",
+    "type": "BEP20",
+    "symbol": "crDAI",
+    "decimals": 8
 }
