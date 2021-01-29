@@ -3,6 +3,11 @@
 import { readJsonFile, writeJsonFile } from "../generic/json";
 import { diff } from "jsondiffpatch";
 import { tokenInfoFromTwApi, TokenTwInfo } from "../generic/asset";
+import {
+    getChainTokenlistBasePath,
+    getChainTokenlistPath
+} from "../generic/repo-structure";
+import * as bluebird from "bluebird";
 
 class Version {
     major: number
@@ -67,7 +72,7 @@ export class Pair {
     }
 }
 
-export function generateTokensList(titleCoin: string, tokens: TokenItem[], time: string, versionMajor: number, versionMinor = 1, versionPatch = 0): List {
+export function createTokensList(titleCoin: string, tokens: TokenItem[], time: string, versionMajor: number, versionMinor = 1, versionPatch = 0): List {
     if (!time) {
         time = (new Date()).toISOString();
     }
@@ -192,4 +197,28 @@ export function diffTokenlist(listOrig1: List, listOrig2: List): unknown {
     // compare
     const diffs = diff(list1, list2);
     return diffs;
+}
+
+export async function rebuildTokenlist(chainName: string, pairs: [TokenItem, TokenItem][], listName: string): Promise<void> {
+    // sanity check, prevent deletion of many pairs
+    if (!pairs || pairs.length < 5) {
+        console.log(`Warning: Only ${pairs.length} pairs returned, ignoring`);
+        // sanity check, prevent deletion of many pairs
+        return;
+    }
+    
+    const tokenlistBaseFile = getChainTokenlistBasePath(chainName);
+    const json = readJsonFile(tokenlistBaseFile);
+    const list: List = json as List;
+    console.log(`Tokenlist base, ${list.tokens.length} tokens`);
+
+    await bluebird.each(pairs, async (p) => {
+        await addPairIfNeeded(p[0], p[1], list);
+    });
+    console.log(`Tokenlist updated, ${list.tokens.length} tokens`);
+
+    const newList = createTokensList(listName, list.tokens,
+        "2021-01-29T01:02:03.000+00:00", // use constant here to prevent changing time every time
+        0, 1, 0);
+    writeToFileWithUpdate(getChainTokenlistPath(chainName), newList);
 }

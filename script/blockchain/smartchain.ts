@@ -6,23 +6,15 @@ import {
     primaryTokenIndex,
     TokenInfo
 } from "../generic/subgraph";
-import {
-    getChainAllowlistPath,
-    getChainTokenlistBasePath,
-    getChainTokenlistPath
-} from "../generic/repo-structure";
+import { getChainAllowlistPath } from "../generic/repo-structure";
 import { SmartChain } from "../generic/blockchains";
 import {
-    addPairIfNeeded,
-    generateTokensList,
-    List,
-    TokenItem,
-    writeToFileWithUpdate
+    rebuildTokenlist,
+    TokenItem
 } from "../generic/tokenlists";
 import { readJsonFile } from "../generic/json";
 import { toChecksum } from "../generic/eth-address";
 import { assetID, logoURI } from "../generic/asset";
-import * as bluebird from "bluebird";
 import * as config from "../config"
 
 const PrimaryTokens: string[] = ["WBNB", "BNB"];
@@ -70,27 +62,20 @@ function tokenInfoFromSubgraphToken(token: TokenInfo): TokenItem {
 
 // Retrieve trading pairs from PancakeSwap
 async function generateTokenlist(): Promise<void> {
-    const tokenlistFile = getChainTokenlistBasePath(SmartChain);
-    const json = readJsonFile(tokenlistFile);
-    const list: List = json as List;
-    console.log(`Tokenlist base, ${list.tokens.length} tokens`);
-    
+    // note: if [] is returned here for some reason, all pairs will be *removed*.  In case of error (e.g. timeout) it should throw
     const tradingPairs = await retrievePancakeSwapPairs();
-    await bluebird.each(tradingPairs, async (p) => {
+    // convert
+    const pairs2: [TokenItem, TokenItem][] = [];
+    tradingPairs.forEach(p => {
         let tokenItem0 = tokenInfoFromSubgraphToken(p.token0);
         let tokenItem1 = tokenInfoFromSubgraphToken(p.token1);
         if (primaryTokenIndex(p, PrimaryTokens) == 2) {
             // reverse
             const tmp = tokenItem1; tokenItem1 = tokenItem0; tokenItem0 = tmp;
-        }
-        await addPairIfNeeded(tokenItem0, tokenItem1, list);
+        };
+        pairs2.push([tokenItem0, tokenItem1]);
     });
-    console.log(`Tokenlist updated, ${list.tokens.length} tokens`);
-
-    const newList = generateTokensList("Smart Chain", list.tokens,
-        "2020-10-03T12:37:57.000+00:00", // use constant here to prevent changing time every time
-        0, 1, 0);
-    writeToFileWithUpdate(getChainTokenlistPath(SmartChain), newList);
+    await rebuildTokenlist(SmartChain, pairs2, "Smart Chain");
 }
 
 export class SmartchainAction implements ActionInterface {
