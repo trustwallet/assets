@@ -43,10 +43,11 @@ export async function getTradingPairs(apiUrl: string, subgraphQuery: string): Pr
 function checkBSCTokenExists(id: string, chainName: string, tokenAllowlist: string[]): boolean {
     const logoPath = getChainAssetLogoPath(chainName, id);
     if (!isPathExistsSync(logoPath)) {
+        console.log("logo file missing", logoPath);
         return false;
     }
     if (tokenAllowlist.find(t => (id.toLowerCase() === t.toLowerCase())) === undefined) {
-        //console.log(`Token not found in allowlist, ${id}`);
+        console.log(`Token not found in allowlist, ${id}`);
         return false;
     }
     return true;
