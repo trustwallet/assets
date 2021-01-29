@@ -1,7 +1,7 @@
 {
     "name": "Trust Wallet: Ethereum",
     "logoURI": "https://trustwallet.com/assets/images/favicon.png",
-    "timestamp": "2021-01-29T07:23:30.936Z",
+    "timestamp": "2021-01-29T19:30:11.368Z",
     "tokens": [
         {
             "chainId": 1,
@@ -107,9 +107,6 @@
                     "base": "c60_t0x429881672B9AE42b8EbA0E26cD9C73711b891Ca5"
                 },
                 {
-                    "base": "c60_t0x4a220E6096B25EADb88358cb44068A3248254675"
-                },
-                {
                     "base": "c60_t0x4c11249814f11b9346808179Cf06e71ac328c1b5"
                 },
                 {
@@ -129,6 +126,9 @@
                 },
                 {
                     "base": "c60_t0x584bC13c7D411c00c01A62e8019472dE68768430"
+                },
+                {
+                    "base": "c60_t0x5BEfBB272290dD5b8521D4a938f6c4757742c430"
                 },
                 {
                     "base": "c60_t0x607F4C5BB672230e8672085532f7e901544a7375"
@@ -164,6 +164,9 @@
                     "base": "c60_t0x7671904eed7f10808B664fc30BB8693FD7237abF"
                 },
                 {
+                    "base": "c60_t0x7a2Bc711E19ba6aff6cE8246C546E8c4B4944DFD"
+                },
+                {
                     "base": "c60_t0x7dE91B204C1C737bcEe6F000AAA6569Cf7061cb7"
                 },
                 {
@@ -179,6 +182,9 @@
                     "base": "c60_t0x8400D94A5cb0fa0D041a3788e395285d61c9ee5e"
                 },
                 {
+                    "base": "c60_t0x84294FC9710e1252d407d3D80A84bC39001bd4A8"
+                },
+                {
                     "base": "c60_t0x84cA8bc7997272c7CfB4D0Cd3D55cd942B3c9419"
                 },
                 {
@@ -192,6 +198,9 @@
                 },
                 {
                     "base": "c60_t0x8CE9137d39326AD0cD6491fb5CC0CbA0e089b6A9"
+                },
+                {
+                    "base": "c60_t0x9355372396e3F6daF13359B7b607a3374cc638e0"
                 },
                 {
                     "base": "c60_t0x93ED3FBe21207Ec2E8f2d3c3de6e058Cb73Bc04d"
@@ -291,9 +300,6 @@
                 },
                 {
                     "base": "c60_t0xdAC17F958D2ee523a2206206994597C13D831ec7"
-                },
-                {
-                    "base": "c60_t0xDcB01cc464238396E213a6fDd933E36796eAfF9f"
                 },
                 {
                     "base": "c60_t0xdd974D5C2e2928deA5F71b9825b8b646686BD200"
@@ -659,16 +665,6 @@
             "pairs": []
         },
         {
-            "asset": "c60_t0x4a220E6096B25EADb88358cb44068A3248254675",
-            "type": "ERC20",
-            "address": "0x4a220E6096B25EADb88358cb44068A3248254675",
-            "name": "Quant",
-            "symbol": "QNT",
-            "decimals": 18,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x4a220E6096B25EADb88358cb44068A3248254675/logo.png",
-            "pairs": []
-        },
-        {
             "asset": "c60_t0x4c11249814f11b9346808179Cf06e71ac328c1b5",
             "type": "ERC20",
             "address": "0x4c11249814f11b9346808179Cf06e71ac328c1b5",
@@ -740,6 +736,16 @@
             "symbol": "HEGIC",
             "decimals": 18,
             "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x584bC13c7D411c00c01A62e8019472dE68768430/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c60_t0x5BEfBB272290dD5b8521D4a938f6c4757742c430",
+            "type": "ERC20",
+            "address": "0x5BEfBB272290dD5b8521D4a938f6c4757742c430",
+            "name": "Xfinance",
+            "symbol": "XFI",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x5BEfBB272290dD5b8521D4a938f6c4757742c430/logo.png",
             "pairs": []
         },
         {
@@ -858,6 +864,16 @@
             "pairs": []
         },
         {
+            "asset": "c60_t0x7a2Bc711E19ba6aff6cE8246C546E8c4B4944DFD",
+            "type": "ERC20",
+            "address": "0x7a2Bc711E19ba6aff6cE8246C546E8c4B4944DFD",
+            "name": "WAX Economic Token",
+            "symbol": "WAXE",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x7a2Bc711E19ba6aff6cE8246C546E8c4B4944DFD/logo.png",
+            "pairs": []
+        },
+        {
             "asset": "c60_t0x7dE91B204C1C737bcEe6F000AAA6569Cf7061cb7",
             "type": "ERC20",
             "address": "0x7dE91B204C1C737bcEe6F000AAA6569Cf7061cb7",
@@ -911,6 +927,16 @@
             "pairs": []
         },
         {
+            "asset": "c60_t0x84294FC9710e1252d407d3D80A84bC39001bd4A8",
+            "type": "ERC20",
+            "address": "0x84294FC9710e1252d407d3D80A84bC39001bd4A8",
+            "name": "Squirrel Finance",
+            "symbol": "NUTS",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x84294FC9710e1252d407d3D80A84bC39001bd4A8/logo.png",
+            "pairs": []
+        },
+        {
             "chainId": 1,
             "asset": "c60_t0x84cA8bc7997272c7CfB4D0Cd3D55cd942B3c9419",
             "type": "ERC20",
@@ -961,6 +987,16 @@
             "symbol": "SXP",
             "decimals": 18,
             "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x8CE9137d39326AD0cD6491fb5CC0CbA0e089b6A9/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c60_t0x9355372396e3F6daF13359B7b607a3374cc638e0",
+            "type": "ERC20",
+            "address": "0x9355372396e3F6daF13359B7b607a3374cc638e0",
+            "name": "WHALE",
+            "symbol": "WHALE",
+            "decimals": 4,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x9355372396e3F6daF13359B7b607a3374cc638e0/logo.png",
             "pairs": []
         },
         {
@@ -1305,16 +1341,6 @@
             "pairs": []
         },
         {
-            "asset": "c60_t0xDcB01cc464238396E213a6fDd933E36796eAfF9f",
-            "type": "ERC20",
-            "address": "0xDcB01cc464238396E213a6fDd933E36796eAfF9f",
-            "name": "Yield",
-            "symbol": "YLD",
-            "decimals": 18,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xDcB01cc464238396E213a6fDd933E36796eAfF9f/logo.png",
-            "pairs": []
-        },
-        {
             "chainId": 1,
             "asset": "c60_t0xdd974D5C2e2928deA5F71b9825b8b646686BD200",
             "type": "ERC20",
@@ -1440,7 +1466,7 @@
         }
     ],
     "version": {
-        "major": 2,
+        "major": 3,
         "minor": 0,
         "patch": 0
     }
