@@ -8,7 +8,7 @@ import { ActionInterface, CheckStepInterface } from "../generic/interface";
 import { Binance } from "../generic/blockchains";
 import { readDirSync } from "../generic/filesystem";
 import { readJsonFile } from "../generic/json";
-import { TokenItem, Pair, generateTokensList, writeToFileWithUpdate } from "../generic/tokenlists";
+import { TokenItem, Pair, createTokensList, writeToFileWithUpdate } from "../generic/tokenlists";
 import {
     getChainAssetLogoPath,
     getChainAssetsPath,
@@ -140,7 +140,7 @@ export class BinanceAction implements ActionInterface {
 
         // binance chain list
         const tokenList = await generateBinanceTokensList();
-        const list = generateTokensList("BNB", tokenList,
+        const list = createTokensList("BNB", tokenList,
             "2020-10-03T12:37:57.000+00:00", // use constants here to prevent changing time every time
             0, 1, 0);
         writeToFileWithUpdate(getChainTokenlistPath(Binance), list);

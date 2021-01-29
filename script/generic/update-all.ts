@@ -1,4 +1,6 @@
 import { BinanceAction } from "../blockchain/binance";
+import { SmartchainAction } from "../blockchain/smartchain";
+import { EthereumAction } from "../blockchain/ethereum";
 import { CosmosAction } from "../blockchain/cosmos";
 import { AssetInfos } from "../generic/asset-infos";
 import { EthForks } from "../generic/eth-forks";
@@ -26,6 +28,8 @@ const actionList: ActionInterface[] = [
     new JsonAction(),
     // chains:
     new BinanceAction(),
+    new SmartchainAction(),
+    new EthereumAction(),
     new CosmosAction(),
     new KavaAction(),
     new TerraAction(),
