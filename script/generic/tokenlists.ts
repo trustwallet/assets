@@ -203,7 +203,6 @@ export async function rebuildTokenlist(chainName: string, pairs: [TokenItem, Tok
     // sanity check, prevent deletion of many pairs
     if (!pairs || pairs.length < 5) {
         console.log(`Warning: Only ${pairs.length} pairs returned, ignoring`);
-        // sanity check, prevent deletion of many pairs
         return;
     }
     
