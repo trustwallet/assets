@@ -4,10 +4,13 @@ import { readJsonFile, writeJsonFile } from "../generic/json";
 import { diff } from "jsondiffpatch";
 import { tokenInfoFromTwApi, TokenTwInfo } from "../generic/asset";
 import {
+    getChainAssetLogoPath,
+    getChainAllowlistPath,
     getChainTokenlistBasePath,
-    getChainTokenlistPath
+    getChainTokenlistPath,
 } from "../generic/repo-structure";
 import * as bluebird from "bluebird";
+import { isPathExistsSync } from "../generic/filesystem";
 
 class Version {
     major: number
@@ -162,6 +165,19 @@ function addPairToToken(pairToken: TokenItem, token: TokenItem, list: List): voi
     tokenInList.pairs.push(new Pair(pairToken.asset));
 }
 
+function checkTokenExists(id: string, chainName: string, tokenAllowlist: string[]): boolean {
+    const logoPath = getChainAssetLogoPath(chainName, id);
+    if (!isPathExistsSync(logoPath)) {
+        //console.log("logo file missing", logoPath);
+        return false;
+    }
+    if (tokenAllowlist.find(t => (id.toLowerCase() === t.toLowerCase())) === undefined) {
+        //console.log(`Token not found in allowlist, ${id}`);
+        return false;
+    }
+    return true;
+}
+
 export async function addPairIfNeeded(token0: TokenItem, token1: TokenItem, list: List): Promise<void> {
     await addTokenIfNeeded(token0, list);
     await addTokenIfNeeded(token1, list);
@@ -206,6 +222,24 @@ export async function rebuildTokenlist(chainName: string, pairs: [TokenItem, Tok
         return;
     }
     
+    // filter out missing tokens
+    // prepare phase, read allowlist
+    const allowlist: string[] = readJsonFile(getChainAllowlistPath(chainName)) as string[];
+    const pairs2: [TokenItem, TokenItem][] = [];
+    pairs.forEach(p => {
+        if (!checkTokenExists(p[0].address, chainName, allowlist)) {
+            console.log("pair with unsupported 1st coin:", p[0].symbol, "--", p[1].symbol);
+            return;
+        }
+        if (!checkTokenExists(p[1].address, chainName, allowlist)) {
+            console.log("pair with unsupported 2nd coin:", p[0].symbol, "--", p[1].symbol);
+            return;
+        }
+        pairs2.push(p);
+    });
+    const filteredCount: number = pairs.length - pairs2.length;
+    console.log(`${filteredCount} unsupported tokens filtered out, ${pairs2.length} pairs`);
+
     const tokenlistFile = getChainTokenlistPath(chainName);
     {
         // show current size
@@ -218,7 +252,7 @@ export async function rebuildTokenlist(chainName: string, pairs: [TokenItem, Tok
     const list: List = json as List;
     console.log(`Tokenlist base: ${list.tokens.length} tokens`);
 
-    await bluebird.each(pairs, async (p) => {
+    await bluebird.each(pairs2, async (p) => {
         await addPairIfNeeded(p[0], p[1], list);
     });
     console.log(`Tokenlist updated: ${list.tokens.length} tokens`);

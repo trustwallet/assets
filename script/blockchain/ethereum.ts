@@ -6,9 +6,7 @@ import {
     primaryTokenIndex,
     TokenInfo
 } from "../generic/subgraph";
-import { getChainAllowlistPath } from "../generic/repo-structure";
 import { Ethereum } from "../generic/blockchains";
-import { readJsonFile } from "../generic/json";
 import {
     rebuildTokenlist,
     TokenItem
@@ -23,9 +21,6 @@ const PrimaryTokens: string[] = ["WETH", "ETH"];
 async function retrieveUniswapPairs(): Promise<PairInfo[]> {
     console.log(`Retrieving pairs from Uniswap, limit liquidity USD ${config.Uniswap_MinLiquidity}  volume ${config.Uniswap_MinVol24}  txcount ${config.Uniswap_MinTxCount24}`);
 
-    // prepare phase, read allowlist
-    const allowlist: string[] = readJsonFile(getChainAllowlistPath(Ethereum)) as string[];
-
     const pairs = await getTradingPairs(config.Uniswap_TradingPairsUrl, config.Uniswap_TradingPairsQuery);
     const filtered: PairInfo[] = [];
     pairs.forEach(x => {
@@ -33,7 +28,7 @@ async function retrieveUniswapPairs(): Promise<PairInfo[]> {
             if (typeof(x) === "object") {
                 const pairInfo = x as PairInfo;
                 if (pairInfo) {
-                    if (checkTradingPair(pairInfo, Ethereum, config.Uniswap_MinLiquidity, config.Uniswap_MinVol24, config.Uniswap_MinTxCount24, allowlist, PrimaryTokens)) {
+                    if (checkTradingPair(pairInfo, config.Uniswap_MinLiquidity, config.Uniswap_MinVol24, config.Uniswap_MinTxCount24, PrimaryTokens)) {
                         filtered.push(pairInfo);
                     }
                 }

@@ -1,8 +1,6 @@
 // Interfacing with TheGraph subgraph APIs
 
 import axios from "axios";
-import { getChainAssetLogoPath } from "../generic/repo-structure";
-import { isPathExistsSync } from "../generic/filesystem";
 
 export interface TokenInfo {
     id: string;
@@ -40,18 +38,6 @@ export async function getTradingPairs(apiUrl: string, subgraphQuery: string): Pr
     }
 }
 
-function checkBSCTokenExists(id: string, chainName: string, tokenAllowlist: string[]): boolean {
-    const logoPath = getChainAssetLogoPath(chainName, id);
-    if (!isPathExistsSync(logoPath)) {
-        return false;
-    }
-    if (tokenAllowlist.find(t => (id.toLowerCase() === t.toLowerCase())) === undefined) {
-        //console.log(`Token not found in allowlist, ${id}`);
-        return false;
-    }
-    return true;
-}
-
 function isTokenPrimary(token: TokenInfo, primaryTokens: string[]): boolean {
     return (primaryTokens.find(t => (t === token.symbol.toUpperCase())) != undefined);
 }
@@ -68,9 +54,7 @@ export function primaryTokenIndex(pair: PairInfo, primaryTokens: string[]): numb
 }
 
 // Verify a trading pair, whether we support the tokens, has enough liquidity, etc.
-export function checkTradingPair(pair: PairInfo, chainName: string, 
-    minLiquidity: number, minVol24: number, minTxCount24: number,
-    tokenAllowlist: string[], primaryTokens: string[]
+export function checkTradingPair(pair: PairInfo, minLiquidity: number, minVol24: number, minTxCount24: number, primaryTokens: string[]
 ): boolean {
     if (!pair.id || !pair.reserveUSD || !pair.volumeUSD || !pair.txCount || !pair.token0 || !pair.token1) {
         return false;
@@ -85,14 +69,6 @@ export function checkTradingPair(pair: PairInfo, chainName: string,
     }
     if (pair.txCount < minTxCount24) {
         console.log("pair with low tx count:", pair.token0.symbol, "--", pair.token1.symbol, "  ", pair.txCount);
-        return false;
-    }
-    if (!checkBSCTokenExists(pair.token0.id, chainName, tokenAllowlist)) {
-        console.log("pair with unsupported 1st coin:", pair.token0.symbol, "--", pair.token1.symbol);
-        return false;
-    }
-    if (!checkBSCTokenExists(pair.token1.id, chainName, tokenAllowlist)) {
-        console.log("pair with unsupported 2nd coin:", pair.token0.symbol, "--", pair.token1.symbol);
         return false;
     }
     if (primaryTokenIndex(pair, primaryTokens) == 0) {
