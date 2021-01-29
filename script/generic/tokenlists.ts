@@ -206,18 +206,25 @@ export async function rebuildTokenlist(chainName: string, pairs: [TokenItem, Tok
         return;
     }
     
+    const tokenlistFile = getChainTokenlistPath(chainName);
+    {
+        // show current size
+        const json = readJsonFile(tokenlistFile);
+        const list: List = json as List;
+        console.log(`Tokenlist original: ${list.tokens.length} tokens`);
+    }
     const tokenlistBaseFile = getChainTokenlistBasePath(chainName);
     const json = readJsonFile(tokenlistBaseFile);
     const list: List = json as List;
-    console.log(`Tokenlist base, ${list.tokens.length} tokens`);
+    console.log(`Tokenlist base: ${list.tokens.length} tokens`);
 
     await bluebird.each(pairs, async (p) => {
         await addPairIfNeeded(p[0], p[1], list);
     });
-    console.log(`Tokenlist updated, ${list.tokens.length} tokens`);
+    console.log(`Tokenlist updated: ${list.tokens.length} tokens`);
 
     const newList = createTokensList(listName, list.tokens,
         "2021-01-29T01:02:03.000+00:00", // use constant here to prevent changing time every time
         0, 1, 0);
-    writeToFileWithUpdate(getChainTokenlistPath(chainName), newList);
+    writeToFileWithUpdate(tokenlistFile, newList);
 }
