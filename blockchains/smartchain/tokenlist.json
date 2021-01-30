@@ -1,7 +1,7 @@
 {
     "name": "Trust Wallet: Smart Chain",
     "logoURI": "https://trustwallet.com/assets/images/favicon.png",
-    "timestamp": "2021-01-30T07:25:45.080Z",
+    "timestamp": "2021-01-30T22:08:13.384Z",
     "tokens": [
         {
             "chainId": 56,
@@ -83,6 +83,9 @@
                     "base": "c20000714_t0x728C5baC3C3e370E372Fc4671f9ef6916b814d8B"
                 },
                 {
+                    "base": "c20000714_t0x72fAa679E1008Ad8382959FF48E392042A8b06f7"
+                },
+                {
                     "base": "c20000714_t0x78650B139471520656b9E7aA7A5e9276814a38e9"
                 },
                 {
@@ -114,6 +117,9 @@
                 },
                 {
                     "base": "c20000714_t0xbF7c81FFF98BbE61B40Ed186e4AfD6DDd01337fe"
+                },
+                {
+                    "base": "c20000714_t0xCa3F508B8e4Dd382eE878A314789373D80A5190A"
                 },
                 {
                     "base": "c20000714_t0xcF6BB5389c92Bdda8a3747Ddb454cB7a64626C63"
@@ -371,6 +377,16 @@
             "pairs": []
         },
         {
+            "asset": "c20000714_t0x72fAa679E1008Ad8382959FF48E392042A8b06f7",
+            "type": "BEP20",
+            "address": "0x72fAa679E1008Ad8382959FF48E392042A8b06f7",
+            "name": "AllianceBlock Token",
+            "symbol": "bALBT",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x72fAa679E1008Ad8382959FF48E392042A8b06f7/logo.png",
+            "pairs": []
+        },
+        {
             "asset": "c20000714_t0x78650B139471520656b9E7aA7A5e9276814a38e9",
             "type": "BEP20",
             "address": "0x78650B139471520656b9E7aA7A5e9276814a38e9",
@@ -486,6 +502,17 @@
         },
         {
             "chainId": 56,
+            "asset": "c20000714_t0xCa3F508B8e4Dd382eE878A314789373D80A5190A",
+            "type": "BEP20",
+            "address": "0xCa3F508B8e4Dd382eE878A314789373D80A5190A",
+            "name": "beefy.finance",
+            "symbol": "BIFI",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xCa3F508B8e4Dd382eE878A314789373D80A5190A/logo.png",
+            "pairs": []
+        },
+        {
+            "chainId": 56,
             "asset": "c20000714_t0xcF6BB5389c92Bdda8a3747Ddb454cB7a64626C63",
             "type": "BEP20",
             "address": "0xcF6BB5389c92Bdda8a3747Ddb454cB7a64626C63",
@@ -539,7 +566,7 @@
         }
     ],
     "version": {
-        "major": 3,
+        "major": 4,
         "minor": 0,
         "patch": 0
     }
