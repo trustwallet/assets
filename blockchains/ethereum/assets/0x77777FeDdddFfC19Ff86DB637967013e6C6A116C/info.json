@@ -2,5 +2,8 @@
     "name": "Tornado Cash",
     "website": "https://tornado.cash",
     "short_description": "A fully decentralized protocol for private transactions on Ethereum.",
-    "explorer": "https://etherscan.io/token/0x77777feddddffc19ff86db637967013e6c6a116c"
+    "explorer": "https://etherscan.io/token/0x77777feddddffc19ff86db637967013e6c6a116c",
+    "type": "ERC20",
+    "symbol": "TORN",
+    "decimals": 18
 }
