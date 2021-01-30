@@ -55,6 +55,12 @@
                 },
                 {
                     "base": "c20000714_t0xf79037F6f6bE66832DE4E7516be52826BC3cBcc4"
+                },
+                {
+                    "base": "c20000714_t0xCa3F508B8e4Dd382eE878A314789373D80A5190A"
+                },
+                {
+                    "base": "c20000714_t0x928e55daB735aa8260AF3cEDadA18B5f70C72f1b"
                 }
             ]
         },
@@ -221,6 +227,27 @@
             "symbol": "HARD",
             "decimals": 6,
             "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xf79037F6f6bE66832DE4E7516be52826BC3cBcc4/logo.png",
+            "pairs": []
+        },
+        {
+            "chainId": 56,
+            "asset": "c20000714_t0xCa3F508B8e4Dd382eE878A314789373D80A5190A",
+            "type": "BEP20",
+            "address": "0xCa3F508B8e4Dd382eE878A314789373D80A5190A",
+            "name": "beefy.finance",
+            "symbol": "BIFI",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xCa3F508B8e4Dd382eE878A314789373D80A5190A/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c20000714_t0x928e55daB735aa8260AF3cEDadA18B5f70C72f1b",
+            "type": "BEP20",
+            "address": "0x928e55daB735aa8260AF3cEDadA18B5f70C72f1b",
+            "name": "Frontier Token",
+            "symbol": "FRONT",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x928e55daB735aa8260AF3cEDadA18B5f70C72f1b/logo.png",
             "pairs": []
         }
     ],
