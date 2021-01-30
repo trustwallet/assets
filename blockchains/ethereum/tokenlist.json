@@ -1,7 +1,7 @@
 {
     "name": "Trust Wallet: Ethereum",
     "logoURI": "https://trustwallet.com/assets/images/favicon.png",
-    "timestamp": "2021-01-29T19:30:11.368Z",
+    "timestamp": "2021-01-30T07:25:50.154Z",
     "tokens": [
         {
             "chainId": 1,
@@ -180,9 +180,6 @@
                 },
                 {
                     "base": "c60_t0x8400D94A5cb0fa0D041a3788e395285d61c9ee5e"
-                },
-                {
-                    "base": "c60_t0x84294FC9710e1252d407d3D80A84bC39001bd4A8"
                 },
                 {
                     "base": "c60_t0x84cA8bc7997272c7CfB4D0Cd3D55cd942B3c9419"
@@ -927,16 +924,6 @@
             "pairs": []
         },
         {
-            "asset": "c60_t0x84294FC9710e1252d407d3D80A84bC39001bd4A8",
-            "type": "ERC20",
-            "address": "0x84294FC9710e1252d407d3D80A84bC39001bd4A8",
-            "name": "Squirrel Finance",
-            "symbol": "NUTS",
-            "decimals": 18,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x84294FC9710e1252d407d3D80A84bC39001bd4A8/logo.png",
-            "pairs": []
-        },
-        {
             "chainId": 1,
             "asset": "c60_t0x84cA8bc7997272c7CfB4D0Cd3D55cd942B3c9419",
             "type": "ERC20",
@@ -1466,7 +1453,7 @@
         }
     ],
     "version": {
-        "major": 3,
+        "major": 4,
         "minor": 0,
         "patch": 0
     }

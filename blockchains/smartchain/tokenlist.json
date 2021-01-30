@@ -1,7 +1,7 @@
 {
     "name": "Trust Wallet: Smart Chain",
     "logoURI": "https://trustwallet.com/assets/images/favicon.png",
-    "timestamp": "2021-01-29T07:23:25.492Z",
+    "timestamp": "2021-01-30T07:25:45.080Z",
     "tokens": [
         {
             "chainId": 56,
@@ -93,6 +93,9 @@
                 },
                 {
                     "base": "c20000714_t0x928e55daB735aa8260AF3cEDadA18B5f70C72f1b"
+                },
+                {
+                    "base": "c20000714_t0x948d2a81086A075b3130BAc19e4c6DEe1D2E3fE8"
                 },
                 {
                     "base": "c20000714_t0xa1faa113cbE53436Df28FF0aEe54275c13B40975"
@@ -408,6 +411,16 @@
             "pairs": []
         },
         {
+            "asset": "c20000714_t0x948d2a81086A075b3130BAc19e4c6DEe1D2E3fE8",
+            "type": "BEP20",
+            "address": "0x948d2a81086A075b3130BAc19e4c6DEe1D2E3fE8",
+            "name": "Helmet.insure Governance Token",
+            "symbol": "Helmet",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x948d2a81086A075b3130BAc19e4c6DEe1D2E3fE8/logo.png",
+            "pairs": []
+        },
+        {
             "chainId": 56,
             "asset": "c20000714_t0xa1faa113cbE53436Df28FF0aEe54275c13B40975",
             "type": "BEP20",
@@ -526,7 +539,7 @@
         }
     ],
     "version": {
-        "major": 2,
+        "major": 3,
         "minor": 0,
         "patch": 0
     }
