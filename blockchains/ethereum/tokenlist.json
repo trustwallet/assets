@@ -1,7 +1,7 @@
 {
     "name": "Trust Wallet: Ethereum",
     "logoURI": "https://trustwallet.com/assets/images/favicon.png",
-    "timestamp": "2021-01-30T19:26:20.960Z",
+    "timestamp": "2021-01-30T22:02:39.100Z",
     "tokens": [
         {
             "chainId": 1,
@@ -54,6 +54,9 @@
                 },
                 {
                     "base": "c60_t0x111111111117dC0aa78b770fA6A738034120C302"
+                },
+                {
+                    "base": "c60_t0x1337DEF16F9B486fAEd0293eb623Dc8395dFE46a"
                 },
                 {
                     "base": "c60_t0x1494CA1F11D487c2bBe4543E90080AeBa4BA3C2b"
@@ -486,6 +489,16 @@
             "symbol": "1INCH",
             "decimals": 18,
             "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x111111111117dC0aa78b770fA6A738034120C302/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c60_t0x1337DEF16F9B486fAEd0293eb623Dc8395dFE46a",
+            "type": "ERC20",
+            "address": "0x1337DEF16F9B486fAEd0293eb623Dc8395dFE46a",
+            "name": "Armor",
+            "symbol": "ARMOR",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x1337DEF16F9B486fAEd0293eb623Dc8395dFE46a/logo.png",
             "pairs": []
         },
         {
@@ -1479,7 +1492,7 @@
         }
     ],
     "version": {
-        "major": 5,
+        "major": 6,
         "minor": 0,
         "patch": 0
     }
