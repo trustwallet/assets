@@ -81,7 +81,7 @@ export class SmartchainAction implements ActionInterface {
 
     getSanityChecks(): CheckStepInterface[] { return []; }
 
-    async updateAuto(): Promise<void> {
-        //await generateTokenlist();
+    async updateManual(): Promise<void> {
+        await generateTokenlist();
     }
 }

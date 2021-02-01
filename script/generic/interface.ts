@@ -15,6 +15,7 @@ export interface ActionInterface {
     sanityFix?(): Promise<void>;
     consistencyFix?(): Promise<void>;
     updateAuto?(): Promise<void>;
+    updateManual?(): Promise<void>;
 }
 
 export enum FixCheckMode {
