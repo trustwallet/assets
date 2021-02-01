@@ -328,16 +328,9 @@ export async function rebuildTokenlist(chainName: string, pairs: [TokenItem, Tok
     console.log(`${filteredCount} unsupported tokens filtered out, ${pairs2.length} pairs`);
 
     const tokenlistFile = getChainTokenlistPath(chainName);
-    {
-        // show current size
-        const json = readJsonFile(tokenlistFile);
-        const list: List = json as List;
-        console.log(`Tokenlist original: ${list.tokens.length} tokens`);
-    }
-    const tokenlistBaseFile = getChainTokenlistBasePath(chainName);
-    const json = readJsonFile(tokenlistBaseFile);
+    const json = readJsonFile(tokenlistFile);
     const list: List = json as List;
-    console.log(`Tokenlist base: ${list.tokens.length} tokens`);
+    console.log(`Tokenlist original: ${list.tokens.length} tokens`);
 
     await bluebird.each(pairs2, async (p) => {
         await addPairIfNeeded(p[0], p[1], list);
