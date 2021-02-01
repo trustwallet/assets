@@ -180,8 +180,8 @@ async function updateAutoByList(actions: ActionInterface[]) {
     console.log("Running auto updates (using external data sources) ...");
     await bluebird.each(actions, async (action) => {
         try {
-            if (action.update) {
-                console.log(`Update '${action.getName()}':`);
+            if (action.updateAuto) {
+                console.log(`Auto update '${action.getName()}':`);
                 await action.updateAuto();
             }
         } catch (error) {
@@ -195,8 +195,8 @@ async function updateManualByList(actions: ActionInterface[]) {
     console.log("Running manual updates (using external data sources) ...");
     await bluebird.each(actions, async (action) => {
         try {
-            if (action.update) {
-                console.log(`Update '${action.getName()}':`);
+            if (action.updateManual) {
+                console.log(`Manual update '${action.getName()}':`);
                 await action.updateManual();
             }
         } catch (error) {
@@ -224,4 +224,8 @@ export async function consistencyFixAll(): Promise<void> {
 
 export async function updateAutoAll(): Promise<void> {
     await updateAutoByList(actionList);
+}
+
+export async function updateManualAll(): Promise<void> {
+    await updateManualByList(actionList);
 }
