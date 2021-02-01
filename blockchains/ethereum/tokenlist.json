@@ -1,7 +1,7 @@
 {
     "name": "Trust Wallet: Ethereum",
     "logoURI": "https://trustwallet.com/assets/images/favicon.png",
-    "timestamp": "2021-01-30T22:02:39.100Z",
+    "timestamp": "2021-02-01T15:06:34.046Z",
     "tokens": [
         {
             "chainId": 1,
@@ -57,6 +57,9 @@
                 },
                 {
                     "base": "c60_t0x1337DEF16F9B486fAEd0293eb623Dc8395dFE46a"
+                },
+                {
+                    "base": "c60_t0x1337DEF18C680aF1f9f45cBcab6309562975b1dD"
                 },
                 {
                     "base": "c60_t0x1494CA1F11D487c2bBe4543E90080AeBa4BA3C2b"
@@ -131,9 +134,6 @@
                     "base": "c60_t0x584bC13c7D411c00c01A62e8019472dE68768430"
                 },
                 {
-                    "base": "c60_t0x5BEfBB272290dD5b8521D4a938f6c4757742c430"
-                },
-                {
                     "base": "c60_t0x607F4C5BB672230e8672085532f7e901544a7375"
                 },
                 {
@@ -197,10 +197,10 @@
                     "base": "c60_t0x8762db106B2c2A0bccB3A80d1Ed41273552616E8"
                 },
                 {
-                    "base": "c60_t0x8CE9137d39326AD0cD6491fb5CC0CbA0e089b6A9"
+                    "base": "c60_t0x8c8687fC965593DFb2F0b4EAeFD55E9D8df348df"
                 },
                 {
-                    "base": "c60_t0x9355372396e3F6daF13359B7b607a3374cc638e0"
+                    "base": "c60_t0x8CE9137d39326AD0cD6491fb5CC0CbA0e089b6A9"
                 },
                 {
                     "base": "c60_t0x93ED3FBe21207Ec2E8f2d3c3de6e058Cb73Bc04d"
@@ -234,9 +234,6 @@
                 },
                 {
                     "base": "c60_t0xaE697F994Fc5eBC000F8e22EbFfeE04612f98A0d"
-                },
-                {
-                    "base": "c60_t0xaf9f549774ecEDbD0966C52f250aCc548D3F36E5"
                 },
                 {
                     "base": "c60_t0xB4d930279552397bbA2ee473229f89Ec245bc365"
@@ -502,6 +499,16 @@
             "pairs": []
         },
         {
+            "asset": "c60_t0x1337DEF18C680aF1f9f45cBcab6309562975b1dD",
+            "type": "ERC20",
+            "address": "0x1337DEF18C680aF1f9f45cBcab6309562975b1dD",
+            "name": "Armor NXM",
+            "symbol": "arNXM",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x1337DEF18C680aF1f9f45cBcab6309562975b1dD/logo.png",
+            "pairs": []
+        },
+        {
             "asset": "c60_t0x1494CA1F11D487c2bBe4543E90080AeBa4BA3C2b",
             "type": "ERC20",
             "address": "0x1494CA1F11D487c2bBe4543E90080AeBa4BA3C2b",
@@ -755,16 +762,6 @@
             "pairs": []
         },
         {
-            "asset": "c60_t0x5BEfBB272290dD5b8521D4a938f6c4757742c430",
-            "type": "ERC20",
-            "address": "0x5BEfBB272290dD5b8521D4a938f6c4757742c430",
-            "name": "Xfinance",
-            "symbol": "XFI",
-            "decimals": 18,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x5BEfBB272290dD5b8521D4a938f6c4757742c430/logo.png",
-            "pairs": []
-        },
-        {
             "chainId": 1,
             "asset": "c60_t0x607F4C5BB672230e8672085532f7e901544a7375",
             "type": "ERC20",
@@ -985,6 +982,16 @@
             "pairs": []
         },
         {
+            "asset": "c60_t0x8c8687fC965593DFb2F0b4EAeFD55E9D8df348df",
+            "type": "ERC20",
+            "address": "0x8c8687fC965593DFb2F0b4EAeFD55E9D8df348df",
+            "name": "PAID Network",
+            "symbol": "PAID",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x8c8687fC965593DFb2F0b4EAeFD55E9D8df348df/logo.png",
+            "pairs": []
+        },
+        {
             "chainId": 1,
             "asset": "c60_t0x8CE9137d39326AD0cD6491fb5CC0CbA0e089b6A9",
             "type": "ERC20",
@@ -993,16 +1000,6 @@
             "symbol": "SXP",
             "decimals": 18,
             "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x8CE9137d39326AD0cD6491fb5CC0CbA0e089b6A9/logo.png",
-            "pairs": []
-        },
-        {
-            "asset": "c60_t0x9355372396e3F6daF13359B7b607a3374cc638e0",
-            "type": "ERC20",
-            "address": "0x9355372396e3F6daF13359B7b607a3374cc638e0",
-            "name": "WHALE",
-            "symbol": "WHALE",
-            "decimals": 4,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x9355372396e3F6daF13359B7b607a3374cc638e0/logo.png",
             "pairs": []
         },
         {
@@ -1117,16 +1114,6 @@
             "symbol": "LGCY",
             "decimals": 18,
             "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xaE697F994Fc5eBC000F8e22EbFfeE04612f98A0d/logo.png",
-            "pairs": []
-        },
-        {
-            "asset": "c60_t0xaf9f549774ecEDbD0966C52f250aCc548D3F36E5",
-            "type": "ERC20",
-            "address": "0xaf9f549774ecEDbD0966C52f250aCc548D3F36E5",
-            "name": "Rio Fuel Token",
-            "symbol": "RFuel",
-            "decimals": 18,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xaf9f549774ecEDbD0966C52f250aCc548D3F36E5/logo.png",
             "pairs": []
         },
         {
@@ -1492,7 +1479,7 @@
         }
     ],
     "version": {
-        "major": 6,
+        "major": 7,
         "minor": 0,
         "patch": 0
     }
