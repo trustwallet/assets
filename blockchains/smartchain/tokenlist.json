@@ -1,7 +1,7 @@
 {
     "name": "Trust Wallet: Smart Chain",
     "logoURI": "https://trustwallet.com/assets/images/favicon.png",
-    "timestamp": "2021-02-01T15:10:04.011Z",
+    "timestamp": "2021-02-01T15:48:39.820Z",
     "tokens": [
         {
             "chainId": 56,
@@ -57,9 +57,6 @@
                 },
                 {
                     "base": "c20000714_t0x4B0F1812e5Df2A09796481Ff14017e6005508003"
-                },
-                {
-                    "base": "c20000714_t0x4BD17003473389A42DAF6a0a729f6Fdb328BbBd7"
                 },
                 {
                     "base": "c20000714_t0x55d398326f99059fF775485246999027B3197955"
@@ -579,7 +576,7 @@
         }
     ],
     "version": {
-        "major": 5,
+        "major": 6,
         "minor": 0,
         "patch": 0
     }
