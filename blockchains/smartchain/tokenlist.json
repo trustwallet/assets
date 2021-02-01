@@ -1,7 +1,7 @@
 {
     "name": "Trust Wallet: Smart Chain",
     "logoURI": "https://trustwallet.com/assets/images/favicon.png",
-    "timestamp": "2021-01-30T22:08:13.384Z",
+    "timestamp": "2021-02-01T15:10:04.011Z",
     "tokens": [
         {
             "chainId": 56,
@@ -87,6 +87,9 @@
                 },
                 {
                     "base": "c20000714_t0x78650B139471520656b9E7aA7A5e9276814a38e9"
+                },
+                {
+                    "base": "c20000714_t0x7979F6C54ebA05E18Ded44C4F986F49a5De551c2"
                 },
                 {
                     "base": "c20000714_t0x88f1A5ae2A3BF98AEAF342D26B30a79438c9142e"
@@ -397,6 +400,16 @@
             "pairs": []
         },
         {
+            "asset": "c20000714_t0x7979F6C54ebA05E18Ded44C4F986F49a5De551c2",
+            "type": "BEP20",
+            "address": "0x7979F6C54ebA05E18Ded44C4F986F49a5De551c2",
+            "name": "Kebab Token",
+            "symbol": "KEBAB",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x7979F6C54ebA05E18Ded44C4F986F49a5De551c2/logo.png",
+            "pairs": []
+        },
+        {
             "asset": "c20000714_t0x88f1A5ae2A3BF98AEAF342D26B30a79438c9142e",
             "type": "BEP20",
             "address": "0x88f1A5ae2A3BF98AEAF342D26B30a79438c9142e",
@@ -566,7 +579,7 @@
         }
     ],
     "version": {
-        "major": 4,
+        "major": 5,
         "minor": 0,
         "patch": 0
     }
