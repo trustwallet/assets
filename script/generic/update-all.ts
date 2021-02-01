@@ -1,4 +1,6 @@
 import { BinanceAction } from "../blockchain/binance";
+import { SmartchainAction } from "../blockchain/smartchain";
+import { EthereumAction } from "../blockchain/ethereum";
 import { CosmosAction } from "../blockchain/cosmos";
 import { AssetInfos } from "../generic/asset-infos";
 import { EthForks } from "../generic/eth-forks";
@@ -12,7 +14,6 @@ import { TronAction } from "../blockchain/tron";
 import { Validators } from "../generic/validators";
 import { WavesAction } from "../blockchain/waves";
 import { Allowlists } from "../generic/allowlists";
-import { TokenLists } from "../generic/tokenlists";
 import { ActionInterface, CheckStepInterface } from "../generic/interface";
 import * as chalk from 'chalk';
 import * as bluebird from "bluebird";
@@ -23,11 +24,12 @@ const actionList: ActionInterface[] = [
     new EthForks(),
     new LogoSize(),
     new Allowlists(),
-    new TokenLists(),
     new Validators(),
     new JsonAction(),
     // chains:
     new BinanceAction(),
+    new SmartchainAction(),
+    new EthereumAction(),
     new CosmosAction(),
     new KavaAction(),
     new TerraAction(),
