@@ -1,4 +1,4 @@
-// Tokenlist.json handling
+// Handling of tokenlist.json files, tokens and trading pairs.
 
 import { readJsonFile, writeJsonFile } from "../generic/json";
 import { diff } from "jsondiffpatch";
@@ -74,6 +74,88 @@ export class Pair {
         this.tickSize = tickSize
     }
 }
+
+///// Exclude/Include list token/pair matching
+
+// A token or pair in the force exclude/include list
+export class ForceListPair {
+    token1: string;
+    // second is optional, if empty --> token only, if set --> pair
+    token2: string;
+}
+
+export function parseForceListEntry(rawForceListEntry: string): ForceListPair {
+    const pair: ForceListPair = new ForceListPair();
+    const tokens: string[] = rawForceListEntry.split("-");
+    pair.token1 = tokens[0];
+    pair.token2 = "";
+    if (tokens.length >= 2) {
+        pair.token2 = tokens[1];
+    }
+    return pair;
+}
+
+export function parseForceList(rawForceList: string[]): ForceListPair[] {
+    const pairs: ForceListPair[] = [];
+    return rawForceList.map(e => parseForceListEntry(e));
+}
+
+export function matchTokenToForceListEntry(token: TokenItem, forceListEntry: string): boolean {
+    if (forceListEntry.toLowerCase() === token.symbol.toLowerCase() ||
+        forceListEntry.toLowerCase() === token.asset.toLowerCase() ||
+        forceListEntry.toLowerCase() === token.name.toLowerCase()) {
+        return true;
+    }
+    return false;
+}
+
+export function matchPairToForceListEntry(token1: TokenItem, token2: TokenItem, forceListEntry: ForceListPair): boolean {
+    if (!forceListEntry.token2) {
+        // entry is token only
+        if (matchTokenToForceListEntry(token1, forceListEntry.token1) || 
+            (token2 && matchTokenToForceListEntry(token2, forceListEntry.token1))) {
+            return true;
+        }
+        return false;
+    }
+    // entry is pair
+    if (!token2) {
+        return false;
+    }
+    if (matchTokenToForceListEntry(token1, forceListEntry.token1) && matchTokenToForceListEntry(token2, forceListEntry.token2)) {
+        return true;
+    }
+    // reverse
+    if (matchTokenToForceListEntry(token1, forceListEntry.token2) && matchTokenToForceListEntry(token2, forceListEntry.token1)) {
+        return true;
+    }
+    return false;
+}
+
+export function matchTokenToForceList(token: TokenItem, forceList: ForceListPair[]): boolean {
+    let matched = false;
+    forceList.forEach(e => {
+        if (matchTokenToForceListEntry(token, e.token1)) {
+            matched = true;
+        }
+        if (matchTokenToForceListEntry(token, e.token2)) {
+            matched = true;
+        }
+    });
+    return matched;
+}
+
+export function matchPairToForceList(token1: TokenItem, token2: TokenItem, forceList: ForceListPair[]): boolean {
+    let matched = false;
+    forceList.forEach(p => {
+        if (matchPairToForceListEntry(token1, token2, p)) {
+            matched = true;
+        }
+    });
+    return matched;
+}
+
+/////
 
 export function createTokensList(titleCoin: string, tokens: TokenItem[], time: string, versionMajor: number, versionMinor = 1, versionPatch = 0): List {
     if (!time) {
@@ -215,14 +297,15 @@ export function diffTokenlist(listOrig1: List, listOrig2: List): unknown {
     return diffs;
 }
 
-export async function rebuildTokenlist(chainName: string, pairs: [TokenItem, TokenItem][], listName: string): Promise<void> {
+export async function rebuildTokenlist(chainName: string, pairs: [TokenItem, TokenItem][], listName: string, forceExcludeList: string[]): Promise<void> {
     // sanity check, prevent deletion of many pairs
     if (!pairs || pairs.length < 5) {
         console.log(`Warning: Only ${pairs.length} pairs returned, ignoring`);
         return;
     }
     
-    // filter out missing tokens
+    const excludeList = parseForceList(forceExcludeList);
+    // filter out pairs with missing and excluded tokens
     // prepare phase, read allowlist
     const allowlist: string[] = readJsonFile(getChainAllowlistPath(chainName)) as string[];
     const pairs2: [TokenItem, TokenItem][] = [];
@@ -233,6 +316,10 @@ export async function rebuildTokenlist(chainName: string, pairs: [TokenItem, Tok
         }
         if (!checkTokenExists(p[1].address, chainName, allowlist)) {
             console.log("pair with unsupported 2nd coin:", p[0].symbol, "--", p[1].symbol);
+            return;
+        }
+        if (matchPairToForceList(p[0], p[1], excludeList)) {
+            console.log("pair excluded due to FORCE EXCLUDE:", p[0].symbol, "--", p[1].symbol);
             return;
         }
         pairs2.push(p);

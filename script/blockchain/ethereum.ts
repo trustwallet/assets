@@ -8,6 +8,7 @@ import {
 } from "../generic/subgraph";
 import { Ethereum } from "../generic/blockchains";
 import {
+    parseForceList,
     rebuildTokenlist,
     TokenItem
 } from "../generic/tokenlists";
@@ -21,6 +22,8 @@ const PrimaryTokens: string[] = ["WETH", "ETH"];
 async function retrieveUniswapPairs(): Promise<PairInfo[]> {
     console.log(`Retrieving pairs from Uniswap, limit liquidity USD ${config.Uniswap_MinLiquidity}  volume ${config.Uniswap_MinVol24}  txcount ${config.Uniswap_MinTxCount24}`);
 
+    const includeList = parseForceList(config.Uniswap_ForceInclude);
+
     const pairs = await getTradingPairs(config.Uniswap_TradingPairsUrl, config.Uniswap_TradingPairsQuery);
     const filtered: PairInfo[] = [];
     pairs.forEach(x => {
@@ -28,7 +31,7 @@ async function retrieveUniswapPairs(): Promise<PairInfo[]> {
             if (typeof(x) === "object") {
                 const pairInfo = x as PairInfo;
                 if (pairInfo) {
-                    if (checkTradingPair(pairInfo, config.Uniswap_MinLiquidity, config.Uniswap_MinVol24, config.Uniswap_MinTxCount24, PrimaryTokens)) {
+                    if (checkTradingPair(pairInfo, config.Uniswap_MinLiquidity, config.Uniswap_MinVol24, config.Uniswap_MinTxCount24, PrimaryTokens, includeList)) {
                         filtered.push(pairInfo);
                     }
                 }
@@ -71,7 +74,7 @@ async function generateTokenlist(): Promise<void> {
         }
         pairs2.push([tokenItem0, tokenItem1]);
     });
-    await rebuildTokenlist(Ethereum, pairs2, "Ethereum");
+    await rebuildTokenlist(Ethereum, pairs2, "Ethereum", config.Uniswap_ForceExclude);
 }
 
 export class EthereumAction implements ActionInterface {
