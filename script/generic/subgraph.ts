@@ -63,10 +63,16 @@ export function checkTradingPair(pair: PairInfo, minLiquidity: number, minVol24:
     if (!pair.id || !pair.reserveUSD || !pair.volumeUSD || !pair.txCount || !pair.token0 || !pair.token1) {
         return false;
     }
+    if (primaryTokenIndex(pair, primaryTokens) == 0) {
+        console.log("pair with no primary coin:", pair.token0.symbol, "--", pair.token1.symbol);
+        return false;
+    }
+
     if (matchPairToForceList(tokenItemFromInfo(pair.token0), tokenItemFromInfo(pair.token1), forceIncludeList)) {
         console.log("pair included due to FORCE INCLUDE:", pair.token0.symbol, "--", pair.token1.symbol, "  ", Math.round(pair.reserveUSD));
         return true;
     }
+
     if (pair.reserveUSD < minLiquidity) {
         console.log("pair with low liquidity:", pair.token0.symbol, "--", pair.token1.symbol, "  ", Math.round(pair.reserveUSD));
         return false;
@@ -77,10 +83,6 @@ export function checkTradingPair(pair: PairInfo, minLiquidity: number, minVol24:
     }
     if (pair.txCount < minTxCount24) {
         console.log("pair with low tx count:", pair.token0.symbol, "--", pair.token1.symbol, "  ", pair.txCount);
-        return false;
-    }
-    if (primaryTokenIndex(pair, primaryTokens) == 0) {
-        console.log("pair with no primary coin:", pair.token0.symbol, "--", pair.token1.symbol);
         return false;
     }
     //console.log("pair:", pair.token0.symbol, "--", pair.token1.symbol, "  ", pair.reserveUSD);
