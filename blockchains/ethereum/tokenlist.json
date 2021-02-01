@@ -1,7 +1,7 @@
 {
     "name": "Trust Wallet: Ethereum",
     "logoURI": "https://trustwallet.com/assets/images/favicon.png",
-    "timestamp": "2021-02-01T15:06:34.046Z",
+    "timestamp": "2021-02-01T15:48:42.549Z",
     "tokens": [
         {
             "chainId": 1,
@@ -65,9 +65,6 @@
                     "base": "c60_t0x1494CA1F11D487c2bBe4543E90080AeBa4BA3C2b"
                 },
                 {
-                    "base": "c60_t0x1985365e9f78359a9B6AD760e32412f4a445E862"
-                },
-                {
                     "base": "c60_t0x1cEB5cB57C4D4E2b2433641b95Dd330A33185A44"
                 },
                 {
@@ -95,9 +92,6 @@
                     "base": "c60_t0x362bc847A3a9637d3af6624EeC853618a43ed7D2"
                 },
                 {
-                    "base": "c60_t0x37236CD05b34Cc79d3715AF2383E96dd7443dCF1"
-                },
-                {
                     "base": "c60_t0x3845badAde8e6dFF049820680d1F14bD3903a5d0"
                 },
                 {
@@ -122,9 +116,6 @@
                     "base": "c60_t0x4e352cF164E64ADCBad318C3a1e222E9EBa4Ce42"
                 },
                 {
-                    "base": "c60_t0x4Fabb145d64652a948d72533023f6E7A623C7C53"
-                },
-                {
                     "base": "c60_t0x514910771AF9Ca656af840dff83E8264EcF986CA"
                 },
                 {
@@ -132,9 +123,6 @@
                 },
                 {
                     "base": "c60_t0x584bC13c7D411c00c01A62e8019472dE68768430"
-                },
-                {
-                    "base": "c60_t0x607F4C5BB672230e8672085532f7e901544a7375"
                 },
                 {
                     "base": "c60_t0x62359Ed7505Efc61FF1D56fEF82158CcaffA23D7"
@@ -152,16 +140,10 @@
                     "base": "c60_t0x6B3595068778DD592e39A122f4f5a5cF09C90fE2"
                 },
                 {
-                    "base": "c60_t0x6BFf2fE249601ed0Db3a87424a2E923118BB0312"
-                },
-                {
                     "base": "c60_t0x70401dFD142A16dC7031c56E862Fc88Cb9537Ce0"
                 },
                 {
                     "base": "c60_t0x71F85B2E46976bD21302B64329868fd15eb0D127"
-                },
-                {
-                    "base": "c60_t0x740623d2c797b7D8D1EcB98e9b4Afcf99Ec31E14"
                 },
                 {
                     "base": "c60_t0x7671904eed7f10808B664fc30BB8693FD7237abF"
@@ -1479,7 +1461,7 @@
         }
     ],
     "version": {
-        "major": 7,
+        "major": 8,
         "minor": 0,
         "patch": 0
     }
