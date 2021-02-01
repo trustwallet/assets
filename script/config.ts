@@ -12,7 +12,7 @@ export const PancakeSwap_TradingPairsUrl = "https://api.bscgraph.org/subgraphs/n
 export const PancakeSwap_TradingPairsQuery = `
     query pairs {
         pairs(first: 200, orderBy: reserveUSD, orderDirection: desc) {
-            id reserveUSD trackedReserveETH volumeUSD txCount untrackedVolumeUSD __typename 
+            id reserveUSD trackedReserveETH volumeUSD txCount __typename 
             token0 {
                 id symbol name decimals __typename
             }
