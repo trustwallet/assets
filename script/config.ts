@@ -14,8 +14,8 @@ export const PancakeSwap_ForceExclude: string[] = [];
 export const PancakeSwap_TradingPairsUrl = "https://api.bscgraph.org/subgraphs/name/wowswap";
 export const PancakeSwap_TradingPairsQuery = `
     query pairs {
-        pairs(first: 200, orderBy: reserveUSD, orderDirection: desc) {
-            id reserveUSD trackedReserveETH volumeUSD txCount __typename 
+        pairs(first: 150, orderBy: reserveUSD, orderDirection: desc) {
+            id reserveUSD volumeUSD txCount __typename
             token0 {
                 id symbol name decimals __typename
             }
