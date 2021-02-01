@@ -1,6 +1,7 @@
 // Interfacing with TheGraph subgraph APIs
 
 import axios from "axios";
+import { ForceListPair, matchPairToForceList, TokenItem } from "./tokenlists";
 
 export interface TokenInfo {
     id: string;
@@ -53,12 +54,25 @@ export function primaryTokenIndex(pair: PairInfo, primaryTokens: string[]): numb
     return 0;
 }
 
+function tokenItemFromInfo(tokenInfo: TokenInfo): TokenItem {
+    return new TokenItem(tokenInfo.id, '', tokenInfo.id, tokenInfo.name, tokenInfo.symbol, tokenInfo.decimals, '', []);
+}
+
 // Verify a trading pair, whether we support the tokens, has enough liquidity, etc.
-export function checkTradingPair(pair: PairInfo, minLiquidity: number, minVol24: number, minTxCount24: number, primaryTokens: string[]
-): boolean {
+export function checkTradingPair(pair: PairInfo, minLiquidity: number, minVol24: number, minTxCount24: number, primaryTokens: string[], forceIncludeList: ForceListPair[]): boolean {
     if (!pair.id || !pair.reserveUSD || !pair.volumeUSD || !pair.txCount || !pair.token0 || !pair.token1) {
         return false;
     }
+    if (primaryTokenIndex(pair, primaryTokens) == 0) {
+        console.log("pair with no primary coin:", pair.token0.symbol, "--", pair.token1.symbol);
+        return false;
+    }
+
+    if (matchPairToForceList(tokenItemFromInfo(pair.token0), tokenItemFromInfo(pair.token1), forceIncludeList)) {
+        console.log("pair included due to FORCE INCLUDE:", pair.token0.symbol, "--", pair.token1.symbol, "  ", Math.round(pair.reserveUSD));
+        return true;
+    }
+
     if (pair.reserveUSD < minLiquidity) {
         console.log("pair with low liquidity:", pair.token0.symbol, "--", pair.token1.symbol, "  ", Math.round(pair.reserveUSD));
         return false;
@@ -69,10 +83,6 @@ export function checkTradingPair(pair: PairInfo, minLiquidity: number, minVol24:
     }
     if (pair.txCount < minTxCount24) {
         console.log("pair with low tx count:", pair.token0.symbol, "--", pair.token1.symbol, "  ", pair.txCount);
-        return false;
-    }
-    if (primaryTokenIndex(pair, primaryTokens) == 0) {
-        console.log("pair with no primary coin:", pair.token0.symbol, "--", pair.token1.symbol);
         return false;
     }
     //console.log("pair:", pair.token0.symbol, "--", pair.token1.symbol, "  ", pair.reserveUSD);

@@ -1,8 +1,8 @@
-import { updateAll } from "../generic/update-all";
+import { updateManualAll } from "../generic/update-all";
 
 export async function main(): Promise<void> {
     try {
-        await updateAll();
+        await updateManualAll();
     } catch(err) {
         console.error(err);
         process.exit(1);

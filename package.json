@@ -9,7 +9,8 @@
     "check-sanity": "ts-node ./script/entrypoint/check-sanity",
     "fix": "ts-node ./script/entrypoint/fix",
     "fix-sanity": "ts-node ./script/entrypoint/fix-sanity",
-    "update": "ts-node ./script/entrypoint/update",
+    "updateAuto": "ts-node ./script/entrypoint/updateAuto",
+    "update": "ts-node ./script/entrypoint/updateManual",
     "lint": "npx eslint . --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "npx eslint . --ext .js,.jsx,.ts,.tsx --fix"
   },

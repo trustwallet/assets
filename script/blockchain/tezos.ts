@@ -96,7 +96,7 @@ export class TezosAction implements ActionInterface {
         ];
     }
 
-    async update(): Promise<void> {
+    async updateAuto(): Promise<void> {
         await gen_validators_tezos();
     }
 }
