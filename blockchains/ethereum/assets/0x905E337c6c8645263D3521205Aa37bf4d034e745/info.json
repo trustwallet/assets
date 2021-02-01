@@ -1,9 +1,10 @@
 {
     "name": "Medical Token Currency",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x905E337c6c8645263D3521205Aa37bf4d034e745",
-    "type": "ERC20",
     "symbol": "MTC",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x905E337c6c8645263D3521205Aa37bf4d034e745",
+    "id": "0x905E337c6c8645263D3521205Aa37bf4d034e745"
 }

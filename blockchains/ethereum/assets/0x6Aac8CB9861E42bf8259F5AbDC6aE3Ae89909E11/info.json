@@ -1,9 +1,10 @@
 {
     "name": "Bitcoin Red",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x6Aac8CB9861E42bf8259F5AbDC6aE3Ae89909E11",
-    "type": "ERC20",
     "symbol": "BTCR",
-    "decimals": 8
+    "type": "ERC20",
+    "decimals": 8,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x6Aac8CB9861E42bf8259F5AbDC6aE3Ae89909E11",
+    "id": "0x6Aac8CB9861E42bf8259F5AbDC6aE3Ae89909E11"
 }

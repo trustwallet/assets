@@ -1,9 +1,10 @@
 {
     "name": "BOSTOKEN",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x3C0cAC8290E2a6241814f812259278beA9050838",
-    "type": "ERC20",
     "symbol": "BOS",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x3C0cAC8290E2a6241814f812259278beA9050838",
+    "id": "0x3C0cAC8290E2a6241814f812259278beA9050838"
 }

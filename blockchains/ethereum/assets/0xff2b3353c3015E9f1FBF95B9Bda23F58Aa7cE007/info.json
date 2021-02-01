@@ -1,9 +1,10 @@
 {
     "name": "BitScreenerToken",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xff2b3353c3015E9f1FBF95B9Bda23F58Aa7cE007",
-    "type": "ERC20",
     "symbol": "BITX",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xff2b3353c3015E9f1FBF95B9Bda23F58Aa7cE007",
+    "id": "0xff2b3353c3015E9f1FBF95B9Bda23F58Aa7cE007"
 }

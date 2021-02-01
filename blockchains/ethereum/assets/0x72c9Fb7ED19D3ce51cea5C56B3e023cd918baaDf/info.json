@@ -1,9 +1,10 @@
 {
     "name": "Agrolot Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x72c9Fb7ED19D3ce51cea5C56B3e023cd918baaDf",
-    "type": "ERC20",
     "symbol": "AGLT",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x72c9Fb7ED19D3ce51cea5C56B3e023cd918baaDf",
+    "id": "0x72c9Fb7ED19D3ce51cea5C56B3e023cd918baaDf"
 }

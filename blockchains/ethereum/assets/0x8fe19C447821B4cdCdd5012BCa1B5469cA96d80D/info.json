@@ -1,9 +1,10 @@
 {
     "name": "ETH.TOWN Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x8fe19C447821B4cdCdd5012BCa1B5469cA96d80D",
-    "type": "ERC20",
     "symbol": "ETIT",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x8fe19C447821B4cdCdd5012BCa1B5469cA96d80D",
+    "id": "0x8fe19C447821B4cdCdd5012BCa1B5469cA96d80D"
 }

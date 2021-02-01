@@ -1,9 +1,10 @@
 {
     "name": "Giving Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x031228f403DbFdE1DD47310BDc49Bb788F53Ecd9",
-    "type": "ERC20",
     "symbol": "GIVING",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x031228f403DbFdE1DD47310BDc49Bb788F53Ecd9",
+    "id": "0x031228f403DbFdE1DD47310BDc49Bb788F53Ecd9"
 }

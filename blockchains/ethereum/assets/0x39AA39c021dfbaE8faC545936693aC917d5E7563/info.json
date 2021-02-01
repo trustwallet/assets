@@ -1,9 +1,10 @@
 {
     "name": "Compound USD Coin",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x39AA39c021dfbaE8faC545936693aC917d5E7563",
-    "type": "ERC20",
     "symbol": "cUSDC",
-    "decimals": 8
+    "type": "ERC20",
+    "decimals": 8,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x39AA39c021dfbaE8faC545936693aC917d5E7563",
+    "id": "0x39AA39c021dfbaE8faC545936693aC917d5E7563"
 }

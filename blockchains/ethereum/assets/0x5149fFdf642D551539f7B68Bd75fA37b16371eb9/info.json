@@ -1,9 +1,10 @@
 {
     "name": "KhanhTest01",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x5149fFdf642D551539f7B68Bd75fA37b16371eb9",
-    "type": "ERC20",
     "symbol": "KT1",
-    "decimals": 8
+    "type": "ERC20",
+    "decimals": 8,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x5149fFdf642D551539f7B68Bd75fA37b16371eb9",
+    "id": "0x5149fFdf642D551539f7B68Bd75fA37b16371eb9"
 }

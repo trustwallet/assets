@@ -1,9 +1,10 @@
 {
     "name": "ZCashGOLD",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x180e5087935A94Fd5bbAb00fD2249C5bE0473381",
-    "type": "ERC20",
     "symbol": "ZCG",
-    "decimals": 8
+    "type": "ERC20",
+    "decimals": 8,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x180e5087935A94Fd5bbAb00fD2249C5bE0473381",
+    "id": "0x180e5087935A94Fd5bbAb00fD2249C5bE0473381"
 }

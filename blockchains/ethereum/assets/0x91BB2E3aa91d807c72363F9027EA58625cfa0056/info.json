@@ -1,9 +1,10 @@
 {
     "name": "Mine Coin",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x91BB2E3aa91d807c72363F9027EA58625cfa0056",
-    "type": "ERC20",
     "symbol": "MIN",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x91BB2E3aa91d807c72363F9027EA58625cfa0056",
+    "id": "0x91BB2E3aa91d807c72363F9027EA58625cfa0056"
 }

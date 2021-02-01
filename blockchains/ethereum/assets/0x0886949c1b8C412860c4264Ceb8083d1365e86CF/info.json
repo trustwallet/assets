@@ -1,9 +1,10 @@
 {
     "name": "EthereumBitcoin",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x0886949c1b8C412860c4264Ceb8083d1365e86CF",
-    "type": "ERC20",
     "symbol": "BTCE",
-    "decimals": 8
+    "type": "ERC20",
+    "decimals": 8,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x0886949c1b8C412860c4264Ceb8083d1365e86CF",
+    "id": "0x0886949c1b8C412860c4264Ceb8083d1365e86CF"
 }

@@ -1,9 +1,10 @@
 {
     "name": "ViralToken",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x1876c969027b4A4f95937e93E0Db2Ac2dE152009",
-    "type": "ERC20",
     "symbol": "VTO",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x1876c969027b4A4f95937e93E0Db2Ac2dE152009",
+    "id": "0x1876c969027b4A4f95937e93E0Db2Ac2dE152009"
 }

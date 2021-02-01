@@ -1,9 +1,10 @@
 {
     "name": "BDT Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x033030FEeBd93E3178487c35A9c8cA80874353C9",
-    "type": "ERC20",
     "symbol": "BDT",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x033030FEeBd93E3178487c35A9c8cA80874353C9",
+    "id": "0x033030FEeBd93E3178487c35A9c8cA80874353C9"
 }

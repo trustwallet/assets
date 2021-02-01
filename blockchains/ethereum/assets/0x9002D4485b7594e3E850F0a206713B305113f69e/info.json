@@ -1,9 +1,10 @@
 {
     "name": "HawalaToken",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x9002D4485b7594e3E850F0a206713B305113f69e",
-    "type": "ERC20",
     "symbol": "HAT",
-    "decimals": 12
+    "type": "ERC20",
+    "decimals": 12,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x9002D4485b7594e3E850F0a206713B305113f69e",
+    "id": "0x9002D4485b7594e3E850F0a206713B305113f69e"
 }

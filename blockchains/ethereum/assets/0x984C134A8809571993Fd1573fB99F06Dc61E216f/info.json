@@ -1,9 +1,10 @@
 {
     "name": "Artchain Global Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x984C134A8809571993Fd1573fB99F06Dc61E216f",
-    "type": "ERC20",
     "symbol": "ACG",
-    "decimals": 8
+    "type": "ERC20",
+    "decimals": 8,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x984C134A8809571993Fd1573fB99F06Dc61E216f",
+    "id": "0x984C134A8809571993Fd1573fB99F06Dc61E216f"
 }

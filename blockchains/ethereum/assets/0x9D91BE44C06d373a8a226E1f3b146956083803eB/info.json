@@ -1,9 +1,10 @@
 {
     "name": "Aave Interest bearing KNC",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x9D91BE44C06d373a8a226E1f3b146956083803eB",
-    "type": "ERC20",
     "symbol": "aKNC",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x9D91BE44C06d373a8a226E1f3b146956083803eB",
+    "id": "0x9D91BE44C06d373a8a226E1f3b146956083803eB"
 }

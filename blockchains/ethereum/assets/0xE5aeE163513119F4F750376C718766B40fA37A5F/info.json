@@ -1,9 +1,10 @@
 {
     "name": "Frozencoin Network",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xE5aeE163513119F4F750376C718766B40fA37A5F",
-    "type": "ERC20",
     "symbol": "Fzcoin",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xE5aeE163513119F4F750376C718766B40fA37A5F",
+    "id": "0xE5aeE163513119F4F750376C718766B40fA37A5F"
 }

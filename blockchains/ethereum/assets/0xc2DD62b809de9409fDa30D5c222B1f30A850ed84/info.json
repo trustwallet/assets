@@ -1,9 +1,10 @@
 {
     "name": "aomucoin",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xc2DD62b809de9409fDa30D5c222B1f30A850ed84",
-    "type": "ERC20",
     "symbol": "aomu",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xc2DD62b809de9409fDa30D5c222B1f30A850ed84",
+    "id": "0xc2DD62b809de9409fDa30D5c222B1f30A850ed84"
 }

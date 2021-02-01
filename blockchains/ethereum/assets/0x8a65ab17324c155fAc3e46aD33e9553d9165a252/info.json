@@ -1,9 +1,10 @@
 {
     "name": "Silver Coin",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x8a65ab17324c155fAc3e46aD33e9553d9165a252",
-    "type": "ERC20",
     "symbol": "SCN",
-    "decimals": 8
+    "type": "ERC20",
+    "decimals": 8,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x8a65ab17324c155fAc3e46aD33e9553d9165a252",
+    "id": "0x8a65ab17324c155fAc3e46aD33e9553d9165a252"
 }

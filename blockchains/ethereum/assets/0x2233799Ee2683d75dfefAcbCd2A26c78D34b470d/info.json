@@ -1,9 +1,10 @@
 {
     "name": "Network Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x2233799Ee2683d75dfefAcbCd2A26c78D34b470d",
-    "type": "ERC20",
     "symbol": "NTWK",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x2233799Ee2683d75dfefAcbCd2A26c78D34b470d",
+    "id": "0x2233799Ee2683d75dfefAcbCd2A26c78D34b470d"
 }

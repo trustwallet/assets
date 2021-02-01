@@ -1,9 +1,10 @@
 {
     "name": "CRYPTOBUCKS",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x0d2BB9D68dD4451A09ec94C05E20Bd395022bd8e",
-    "type": "ERC20",
     "symbol": "CBUCKS",
-    "decimals": 2
+    "type": "ERC20",
+    "decimals": 2,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x0d2BB9D68dD4451A09ec94C05E20Bd395022bd8e",
+    "id": "0x0d2BB9D68dD4451A09ec94C05E20Bd395022bd8e"
 }

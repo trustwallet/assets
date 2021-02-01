@@ -1,9 +1,10 @@
 {
     "name": "EasyOption.io Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x9A2681935C2775b7ABF0649ec5c306EEA7561930",
-    "type": "ERC20",
     "symbol": "EOPT",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x9A2681935C2775b7ABF0649ec5c306EEA7561930",
+    "id": "0x9A2681935C2775b7ABF0649ec5c306EEA7561930"
 }

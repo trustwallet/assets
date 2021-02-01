@@ -1,9 +1,10 @@
 {
     "name": "Wand Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x27f610BF36ecA0939093343ac28b1534a721DBB4",
-    "type": "ERC20",
     "symbol": "WAND",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x27f610BF36ecA0939093343ac28b1534a721DBB4",
+    "id": "0x27f610BF36ecA0939093343ac28b1534a721DBB4"
 }

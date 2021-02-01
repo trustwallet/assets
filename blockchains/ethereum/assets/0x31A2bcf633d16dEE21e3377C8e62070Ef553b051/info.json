@@ -1,9 +1,10 @@
 {
     "name": "MNET Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x31A2bcf633d16dEE21e3377C8e62070Ef553b051",
-    "type": "ERC20",
     "symbol": "MNET",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x31A2bcf633d16dEE21e3377C8e62070Ef553b051",
+    "id": "0x31A2bcf633d16dEE21e3377C8e62070Ef553b051"
 }

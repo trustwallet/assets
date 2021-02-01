@@ -1,9 +1,10 @@
 {
     "name": "PdxToken",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x5F33d158CA7275848F70A3f149b421190DF85B32",
-    "type": "ERC20",
     "symbol": "PDX",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x5F33d158CA7275848F70A3f149b421190DF85B32",
+    "id": "0x5F33d158CA7275848F70A3f149b421190DF85B32"
 }

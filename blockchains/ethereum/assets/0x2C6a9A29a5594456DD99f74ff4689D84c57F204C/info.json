@@ -1,9 +1,10 @@
 {
     "name": "HiWallet Digital Asset",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x2C6a9A29a5594456DD99f74ff4689D84c57F204C",
-    "type": "ERC20",
     "symbol": "HiWallet",
-    "decimals": 8
+    "type": "ERC20",
+    "decimals": 8,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x2C6a9A29a5594456DD99f74ff4689D84c57F204C",
+    "id": "0x2C6a9A29a5594456DD99f74ff4689D84c57F204C"
 }

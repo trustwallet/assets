@@ -1,9 +1,10 @@
 {
     "name": "goldfi.finance",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xcd8352A5D8033C724C496c76aA3DFeeaE2141d0f",
-    "type": "ERC20",
     "symbol": "GOLD",
-    "decimals": 2
+    "type": "ERC20",
+    "decimals": 2,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xcd8352A5D8033C724C496c76aA3DFeeaE2141d0f",
+    "id": "0xcd8352A5D8033C724C496c76aA3DFeeaE2141d0f"
 }

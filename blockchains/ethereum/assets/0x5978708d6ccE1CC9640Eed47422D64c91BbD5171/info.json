@@ -1,9 +1,10 @@
 {
     "name": "LOLTOKEN",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x5978708d6ccE1CC9640Eed47422D64c91BbD5171",
-    "type": "ERC20",
     "symbol": "LOL",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x5978708d6ccE1CC9640Eed47422D64c91BbD5171",
+    "id": "0x5978708d6ccE1CC9640Eed47422D64c91BbD5171"
 }

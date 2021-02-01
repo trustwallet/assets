@@ -1,9 +1,10 @@
 {
     "name": "FNB Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x47b28F365Bf4CB38DB4B6356864BDE7bc4B35129",
-    "type": "ERC20",
     "symbol": "FNB",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x47b28F365Bf4CB38DB4B6356864BDE7bc4B35129",
+    "id": "0x47b28F365Bf4CB38DB4B6356864BDE7bc4B35129"
 }

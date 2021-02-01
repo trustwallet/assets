@@ -1,9 +1,10 @@
 {
     "name": "Bamboo",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x22B3FAaa8DF978F6bAFe18aaDe18DC2e3dfA0e0C",
-    "type": "ERC20",
     "symbol": "BAM",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x22B3FAaa8DF978F6bAFe18aaDe18DC2e3dfA0e0C",
+    "id": "0x22B3FAaa8DF978F6bAFe18aaDe18DC2e3dfA0e0C"
 }

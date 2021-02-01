@@ -1,9 +1,10 @@
 {
     "name": "Verify Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x672a1AD4f667FB18A333Af13667aa0Af1F5b5bDD",
-    "type": "ERC20",
     "symbol": "CRED",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x672a1AD4f667FB18A333Af13667aa0Af1F5b5bDD",
+    "id": "0x672a1AD4f667FB18A333Af13667aa0Af1F5b5bDD"
 }

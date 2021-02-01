@@ -1,9 +1,10 @@
 {
     "name": "3X Short BNB Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x6FeBdFC0A9d9502C45343fCE0dF08828dEF44795",
-    "type": "ERC20",
     "symbol": "BNBBEAR",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x6FeBdFC0A9d9502C45343fCE0dF08828dEF44795",
+    "id": "0x6FeBdFC0A9d9502C45343fCE0dF08828dEF44795"
 }

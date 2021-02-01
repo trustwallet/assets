@@ -1,9 +1,10 @@
 {
     "name": "BGGToken",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xEA54C81fe0f72DE8e86B6dC78a9271AA3925E3B5",
-    "type": "ERC20",
     "symbol": "BGG",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xEA54C81fe0f72DE8e86B6dC78a9271AA3925E3B5",
+    "id": "0xEA54C81fe0f72DE8e86B6dC78a9271AA3925E3B5"
 }

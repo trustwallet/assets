@@ -1,9 +1,10 @@
 {
     "name": "IDOLCOIN",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x2Cc114bbE7b551d62B15C465c7bdCccd9125b182",
-    "type": "ERC20",
     "symbol": "IDOL",
-    "decimals": 8
+    "type": "ERC20",
+    "decimals": 8,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x2Cc114bbE7b551d62B15C465c7bdCccd9125b182",
+    "id": "0x2Cc114bbE7b551d62B15C465c7bdCccd9125b182"
 }

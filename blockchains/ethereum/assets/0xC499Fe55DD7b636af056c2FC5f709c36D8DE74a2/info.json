@@ -1,9 +1,10 @@
 {
     "name": "GiftToken",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xC499Fe55DD7b636af056c2FC5f709c36D8DE74a2",
-    "type": "ERC20",
     "symbol": "GIFT",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xC499Fe55DD7b636af056c2FC5f709c36D8DE74a2",
+    "id": "0xC499Fe55DD7b636af056c2FC5f709c36D8DE74a2"
 }

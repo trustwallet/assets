@@ -1,9 +1,10 @@
 {
     "name": "ETHEREUMtoken",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x8266897D3044A030f1FCa81F18c9Ad2DaF9e5f09",
-    "type": "ERC20",
     "symbol": "ETHt",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x8266897D3044A030f1FCa81F18c9Ad2DaF9e5f09",
+    "id": "0x8266897D3044A030f1FCa81F18c9Ad2DaF9e5f09"
 }

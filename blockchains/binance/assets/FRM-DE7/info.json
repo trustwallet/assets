@@ -1,9 +1,10 @@
 {
     "name": "Ferrum Network Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://explorer.binance.org/asset/FRM-DE7",
-    "type": "BEP2",
     "symbol": "FRM",
-    "decimals": 8
+    "type": "BEP2",
+    "decimals": 8,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://explorer.binance.org/asset/FRM-DE7",
+    "id": "FRM-DE7"
 }

@@ -1,9 +1,10 @@
 {
     "name": "Bitrue Coin",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xd433138d12beB9929FF6fd583DC83663eea6Aaa5",
-    "type": "ERC20",
     "symbol": "BTR",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xd433138d12beB9929FF6fd583DC83663eea6Aaa5",
+    "id": "0xd433138d12beB9929FF6fd583DC83663eea6Aaa5"
 }

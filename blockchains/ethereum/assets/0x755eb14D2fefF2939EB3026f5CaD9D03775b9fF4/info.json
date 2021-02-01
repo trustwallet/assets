@@ -1,9 +1,10 @@
 {
     "name": "BunnyToken",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x755eb14D2fefF2939EB3026f5CaD9D03775b9fF4",
-    "type": "ERC20",
     "symbol": "BUNNY",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x755eb14D2fefF2939EB3026f5CaD9D03775b9fF4",
+    "id": "0x755eb14D2fefF2939EB3026f5CaD9D03775b9fF4"
 }

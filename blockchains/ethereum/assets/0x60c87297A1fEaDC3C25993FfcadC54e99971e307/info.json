@@ -1,9 +1,10 @@
 {
     "name": "GXToken",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x60c87297A1fEaDC3C25993FfcadC54e99971e307",
-    "type": "ERC20",
     "symbol": "GXT",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x60c87297A1fEaDC3C25993FfcadC54e99971e307",
+    "id": "0x60c87297A1fEaDC3C25993FfcadC54e99971e307"
 }

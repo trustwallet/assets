@@ -1,9 +1,10 @@
 {
     "name": "BitoxTokens",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xbDda280Ee7bcCC68F3be60a369b6B1eAee02493C",
-    "type": "ERC20",
     "symbol": "BITOX",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xbDda280Ee7bcCC68F3be60a369b6B1eAee02493C",
+    "id": "0xbDda280Ee7bcCC68F3be60a369b6B1eAee02493C"
 }

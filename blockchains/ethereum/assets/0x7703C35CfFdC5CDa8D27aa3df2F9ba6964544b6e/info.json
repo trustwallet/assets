@@ -1,9 +1,10 @@
 {
     "name": "Pylon Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x7703C35CfFdC5CDa8D27aa3df2F9ba6964544b6e",
-    "type": "ERC20",
     "symbol": "PYLNT",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x7703C35CfFdC5CDa8D27aa3df2F9ba6964544b6e",
+    "id": "0x7703C35CfFdC5CDa8D27aa3df2F9ba6964544b6e"
 }

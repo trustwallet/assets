@@ -1,9 +1,10 @@
 {
     "name": "COALCOIN",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x21D281D3B296cFE0Ba581D09d995ae6b23B0CAFb",
-    "type": "ERC20",
     "symbol": "CIC",
-    "decimals": 10
+    "type": "ERC20",
+    "decimals": 10,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x21D281D3B296cFE0Ba581D09d995ae6b23B0CAFb",
+    "id": "0x21D281D3B296cFE0Ba581D09d995ae6b23B0CAFb"
 }

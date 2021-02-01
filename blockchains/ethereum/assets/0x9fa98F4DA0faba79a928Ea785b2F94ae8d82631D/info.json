@@ -1,9 +1,10 @@
 {
     "name": "Block Genesis Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x9fa98F4DA0faba79a928Ea785b2F94ae8d82631D",
-    "type": "ERC20",
     "symbol": "BGT",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x9fa98F4DA0faba79a928Ea785b2F94ae8d82631D",
+    "id": "0x9fa98F4DA0faba79a928Ea785b2F94ae8d82631D"
 }

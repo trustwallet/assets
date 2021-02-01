@@ -1,9 +1,10 @@
 {
     "name": "StrikeCoin Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x629aEe55ed49581C33ab27f9403F7992A289ffd5",
-    "type": "ERC20",
     "symbol": "STC",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x629aEe55ed49581C33ab27f9403F7992A289ffd5",
+    "id": "0x629aEe55ed49581C33ab27f9403F7992A289ffd5"
 }

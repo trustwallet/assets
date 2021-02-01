@@ -1,9 +1,10 @@
 {
     "name": "Starbase",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xF70a642bD387F94380fFb90451C2c81d4Eb82CBc",
-    "type": "ERC20",
     "symbol": "STAR",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xF70a642bD387F94380fFb90451C2c81d4Eb82CBc",
+    "id": "0xF70a642bD387F94380fFb90451C2c81d4Eb82CBc"
 }

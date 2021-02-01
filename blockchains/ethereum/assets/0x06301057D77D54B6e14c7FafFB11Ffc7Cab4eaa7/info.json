@@ -1,9 +1,10 @@
 {
     "name": "DMM: DAI",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x06301057D77D54B6e14c7FafFB11Ffc7Cab4eaa7",
-    "type": "ERC20",
     "symbol": "mDAI",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x06301057D77D54B6e14c7FafFB11Ffc7Cab4eaa7",
+    "id": "0x06301057D77D54B6e14c7FafFB11Ffc7Cab4eaa7"
 }

@@ -1,9 +1,10 @@
 {
     "name": "PressOne Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xe0D95530820aAfc51b1d98023AA1Ff000b78d8b2",
-    "type": "ERC20",
     "symbol": "PRS",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xe0D95530820aAfc51b1d98023AA1Ff000b78d8b2",
+    "id": "0xe0D95530820aAfc51b1d98023AA1Ff000b78d8b2"
 }

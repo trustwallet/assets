@@ -1,9 +1,10 @@
 {
     "name": "WemarkToken",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xBFbe5332f172d77811bC6c272844f3e54A7B23bB",
-    "type": "ERC20",
     "symbol": "WMK",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xBFbe5332f172d77811bC6c272844f3e54A7B23bB",
+    "id": "0xBFbe5332f172d77811bC6c272844f3e54A7B23bB"
 }

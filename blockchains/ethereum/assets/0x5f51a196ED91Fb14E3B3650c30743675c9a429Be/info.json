@@ -1,9 +1,10 @@
 {
     "name": "Bitcoin Solar",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x5f51a196ED91Fb14E3B3650c30743675c9a429Be",
-    "type": "ERC20",
     "symbol": "BTCS",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x5f51a196ED91Fb14E3B3650c30743675c9a429Be",
+    "id": "0x5f51a196ED91Fb14E3B3650c30743675c9a429Be"
 }

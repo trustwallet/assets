@@ -1,9 +1,10 @@
 {
     "name": "EtherCenter",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x0E7C28fb8ed4F5F63Aabd022DEaeEBA40Ecc335c",
-    "type": "ERC20",
     "symbol": "EC",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x0E7C28fb8ed4F5F63Aabd022DEaeEBA40Ecc335c",
+    "id": "0x0E7C28fb8ed4F5F63Aabd022DEaeEBA40Ecc335c"
 }

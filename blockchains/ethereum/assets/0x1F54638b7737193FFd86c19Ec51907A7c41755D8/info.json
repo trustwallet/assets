@@ -1,9 +1,10 @@
 {
     "name": "Sola Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x1F54638b7737193FFd86c19Ec51907A7c41755D8",
-    "type": "ERC20",
     "symbol": "SOL",
-    "decimals": 6
+    "type": "ERC20",
+    "decimals": 6,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x1F54638b7737193FFd86c19Ec51907A7c41755D8",
+    "id": "0x1F54638b7737193FFd86c19Ec51907A7c41755D8"
 }

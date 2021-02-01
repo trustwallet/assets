@@ -1,9 +1,10 @@
 {
     "name": "BKEX Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xD0Bd12A8D5EBCA1E2FA46dA59F1993EC51C3d75c",
-    "type": "ERC20",
     "symbol": "BK",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xD0Bd12A8D5EBCA1E2FA46dA59F1993EC51C3d75c",
+    "id": "0xD0Bd12A8D5EBCA1E2FA46dA59F1993EC51C3d75c"
 }

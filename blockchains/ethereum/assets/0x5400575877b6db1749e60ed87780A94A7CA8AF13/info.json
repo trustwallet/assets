@@ -1,9 +1,10 @@
 {
     "name": "CoinFuns",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x5400575877b6db1749e60ed87780A94A7CA8AF13",
-    "type": "ERC20",
     "symbol": "CFS",
-    "decimals": 10
+    "type": "ERC20",
+    "decimals": 10,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x5400575877b6db1749e60ed87780A94A7CA8AF13",
+    "id": "0x5400575877b6db1749e60ed87780A94A7CA8AF13"
 }

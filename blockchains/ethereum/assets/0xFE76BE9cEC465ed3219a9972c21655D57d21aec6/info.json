@@ -1,9 +1,10 @@
 {
     "name": "PalletOneToken",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xFE76BE9cEC465ed3219a9972c21655D57d21aec6",
-    "type": "ERC20",
     "symbol": "PTN",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xFE76BE9cEC465ed3219a9972c21655D57d21aec6",
+    "id": "0xFE76BE9cEC465ed3219a9972c21655D57d21aec6"
 }

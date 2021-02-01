@@ -1,9 +1,10 @@
 {
     "name": "Buggyra Coin Zero",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xD45247c07379d94904E0A87b4481F0a1DDfa0C64",
-    "type": "ERC20",
     "symbol": "BCZERO",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xD45247c07379d94904E0A87b4481F0a1DDfa0C64",
+    "id": "0xD45247c07379d94904E0A87b4481F0a1DDfa0C64"
 }

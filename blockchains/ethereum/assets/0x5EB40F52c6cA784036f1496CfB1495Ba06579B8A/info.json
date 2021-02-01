@@ -1,9 +1,10 @@
 {
     "name": "OwnerToken",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x5EB40F52c6cA784036f1496CfB1495Ba06579B8A",
-    "type": "ERC20",
     "symbol": "OWN",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x5EB40F52c6cA784036f1496CfB1495Ba06579B8A",
+    "id": "0x5EB40F52c6cA784036f1496CfB1495Ba06579B8A"
 }

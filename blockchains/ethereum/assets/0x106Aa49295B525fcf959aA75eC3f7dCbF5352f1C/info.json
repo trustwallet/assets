@@ -1,9 +1,10 @@
 {
     "name": "Rock Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x106Aa49295B525fcf959aA75eC3f7dCbF5352f1C",
-    "type": "ERC20",
     "symbol": "RKT",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x106Aa49295B525fcf959aA75eC3f7dCbF5352f1C",
+    "id": "0x106Aa49295B525fcf959aA75eC3f7dCbF5352f1C"
 }

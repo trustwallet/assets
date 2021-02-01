@@ -1,9 +1,10 @@
 {
     "name": "Emirex Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xbdbC2a5B32F3a5141ACd18C39883066E4daB9774",
-    "type": "ERC20",
     "symbol": "EMRX",
-    "decimals": 8
+    "type": "ERC20",
+    "decimals": 8,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xbdbC2a5B32F3a5141ACd18C39883066E4daB9774",
+    "id": "0xbdbC2a5B32F3a5141ACd18C39883066E4daB9774"
 }

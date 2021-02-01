@@ -1,9 +1,10 @@
 {
     "name": "TrueUSD",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://explorer.binance.org/asset/TUSDB-888",
-    "type": "BEP2",
     "symbol": "TUSDB",
-    "decimals": 8
+    "type": "BEP2",
+    "decimals": 8,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://explorer.binance.org/asset/TUSDB-888",
+    "id": "TUSDB-888"
 }

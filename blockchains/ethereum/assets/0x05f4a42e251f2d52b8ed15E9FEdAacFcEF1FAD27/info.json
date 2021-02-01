@@ -1,9 +1,10 @@
 {
     "name": "Zilliqa",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x05f4a42e251f2d52b8ed15E9FEdAacFcEF1FAD27",
-    "type": "ERC20",
     "symbol": "ZIL",
-    "decimals": 12
+    "type": "ERC20",
+    "decimals": 12,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x05f4a42e251f2d52b8ed15E9FEdAacFcEF1FAD27",
+    "id": "0x05f4a42e251f2d52b8ed15E9FEdAacFcEF1FAD27"
 }

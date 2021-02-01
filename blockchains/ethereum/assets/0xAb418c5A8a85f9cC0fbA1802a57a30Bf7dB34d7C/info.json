@@ -1,9 +1,10 @@
 {
     "name": "Benscoin",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xAb418c5A8a85f9cC0fbA1802a57a30Bf7dB34d7C",
-    "type": "ERC20",
     "symbol": "BSC",
-    "decimals": 8
+    "type": "ERC20",
+    "decimals": 8,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xAb418c5A8a85f9cC0fbA1802a57a30Bf7dB34d7C",
+    "id": "0xAb418c5A8a85f9cC0fbA1802a57a30Bf7dB34d7C"
 }

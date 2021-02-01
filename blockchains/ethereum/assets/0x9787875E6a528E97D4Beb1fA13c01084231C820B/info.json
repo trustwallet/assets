@@ -1,9 +1,10 @@
 {
     "name": "Cancer Realtime Check",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x9787875E6a528E97D4Beb1fA13c01084231C820B",
-    "type": "ERC20",
     "symbol": "CHECK",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x9787875E6a528E97D4Beb1fA13c01084231C820B",
+    "id": "0x9787875E6a528E97D4Beb1fA13c01084231C820B"
 }

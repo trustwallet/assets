@@ -1,9 +1,10 @@
 {
     "name": "iearn DAI",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x16de59092dAE5CcF4A1E6439D611fd0653f0Bd01",
-    "type": "ERC20",
     "symbol": "yDAI",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x16de59092dAE5CcF4A1E6439D611fd0653f0Bd01",
+    "id": "0x16de59092dAE5CcF4A1E6439D611fd0653f0Bd01"
 }

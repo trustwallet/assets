@@ -1,9 +1,10 @@
 {
     "name": "xensor",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x6bC1F3A1ae56231DbB64d3E82E070857EAe86045",
-    "type": "ERC20",
     "symbol": "XSR",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x6bC1F3A1ae56231DbB64d3E82E070857EAe86045",
+    "id": "0x6bC1F3A1ae56231DbB64d3E82E070857EAe86045"
 }

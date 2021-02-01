@@ -1,9 +1,10 @@
 {
     "name": "MyBit Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x94298F1e0Ab2DFaD6eEFfB1426846a3c29D98090",
-    "type": "ERC20",
     "symbol": "MyB",
-    "decimals": 8
+    "type": "ERC20",
+    "decimals": 8,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x94298F1e0Ab2DFaD6eEFfB1426846a3c29D98090",
+    "id": "0x94298F1e0Ab2DFaD6eEFfB1426846a3c29D98090"
 }

@@ -1,9 +1,10 @@
 {
     "name": "CryptFillCoin",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x5Dff89a2caa4D76bc286F74D67Bd718eb834da61",
-    "type": "ERC20",
     "symbol": "CFC",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x5Dff89a2caa4D76bc286F74D67Bd718eb834da61",
+    "id": "0x5Dff89a2caa4D76bc286F74D67Bd718eb834da61"
 }

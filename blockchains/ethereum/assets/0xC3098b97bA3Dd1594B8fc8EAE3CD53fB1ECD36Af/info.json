@@ -1,9 +1,10 @@
 {
     "name": "DitCoin Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xC3098b97bA3Dd1594B8fc8EAE3CD53fB1ECD36Af",
-    "type": "ERC20",
     "symbol": "DITC",
-    "decimals": 8
+    "type": "ERC20",
+    "decimals": 8,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xC3098b97bA3Dd1594B8fc8EAE3CD53fB1ECD36Af",
+    "id": "0xC3098b97bA3Dd1594B8fc8EAE3CD53fB1ECD36Af"
 }

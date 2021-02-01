@@ -1,9 +1,10 @@
 {
     "name": "CryptoStrikers",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xdCAad9Fd9a74144d226DbF94ce6162ca9f09ED7e",
-    "type": "ERC20",
     "symbol": "STRK",
-    "decimals": 0
+    "type": "ERC20",
+    "decimals": 0,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xdCAad9Fd9a74144d226DbF94ce6162ca9f09ED7e",
+    "id": "0xdCAad9Fd9a74144d226DbF94ce6162ca9f09ED7e"
 }

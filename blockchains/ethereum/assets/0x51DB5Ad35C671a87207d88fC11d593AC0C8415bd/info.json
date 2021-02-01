@@ -1,9 +1,10 @@
 {
     "name": "Moeda Loyalty Points",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x51DB5Ad35C671a87207d88fC11d593AC0C8415bd",
-    "type": "ERC20",
     "symbol": "MDA",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x51DB5Ad35C671a87207d88fC11d593AC0C8415bd",
+    "id": "0x51DB5Ad35C671a87207d88fC11d593AC0C8415bd"
 }

@@ -1,9 +1,10 @@
 {
     "name": "Hive Project Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xC0Eb85285d83217CD7c891702bcbC0FC401E2D9D",
-    "type": "ERC20",
     "symbol": "HVN",
-    "decimals": 8
+    "type": "ERC20",
+    "decimals": 8,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xC0Eb85285d83217CD7c891702bcbC0FC401E2D9D",
+    "id": "0xC0Eb85285d83217CD7c891702bcbC0FC401E2D9D"
 }

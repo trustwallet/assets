@@ -1,9 +1,10 @@
 {
     "name": "Ultiledger",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xE884cc2795b9c45bEeac0607DA9539Fd571cCF85",
-    "type": "ERC20",
     "symbol": "ULT",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xE884cc2795b9c45bEeac0607DA9539Fd571cCF85",
+    "id": "0xE884cc2795b9c45bEeac0607DA9539Fd571cCF85"
 }

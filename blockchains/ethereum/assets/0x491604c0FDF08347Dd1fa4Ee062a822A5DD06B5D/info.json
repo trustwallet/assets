@@ -1,9 +1,10 @@
 {
     "name": "Cartesi Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x491604c0FDF08347Dd1fa4Ee062a822A5DD06B5D",
-    "type": "ERC20",
     "symbol": "CTSI",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x491604c0FDF08347Dd1fa4Ee062a822A5DD06B5D",
+    "id": "0x491604c0FDF08347Dd1fa4Ee062a822A5DD06B5D"
 }

@@ -1,9 +1,10 @@
 {
     "name": "MYUBI Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xf3bE20da25B31Bd6Ee4CE4496985b2064304C125",
-    "type": "ERC20",
     "symbol": "MYU",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xf3bE20da25B31Bd6Ee4CE4496985b2064304C125",
+    "id": "0xf3bE20da25B31Bd6Ee4CE4496985b2064304C125"
 }

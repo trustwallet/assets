@@ -1,9 +1,10 @@
 {
     "name": "ECC Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xD5bF66fF3Dab4c74Ac6014fd2181Bd3aD1bBaF32",
-    "type": "ERC20",
     "symbol": "ECC",
-    "decimals": 8
+    "type": "ERC20",
+    "decimals": 8,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xD5bF66fF3Dab4c74Ac6014fd2181Bd3aD1bBaF32",
+    "id": "0xD5bF66fF3Dab4c74Ac6014fd2181Bd3aD1bBaF32"
 }

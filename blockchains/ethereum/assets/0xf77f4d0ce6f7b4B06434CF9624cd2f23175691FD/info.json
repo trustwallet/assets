@@ -1,9 +1,10 @@
 {
     "name": "scoin",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xf77f4d0ce6f7b4B06434CF9624cd2f23175691FD",
-    "type": "ERC20",
     "symbol": "7SNC",
-    "decimals": 6
+    "type": "ERC20",
+    "decimals": 6,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xf77f4d0ce6f7b4B06434CF9624cd2f23175691FD",
+    "id": "0xf77f4d0ce6f7b4B06434CF9624cd2f23175691FD"
 }

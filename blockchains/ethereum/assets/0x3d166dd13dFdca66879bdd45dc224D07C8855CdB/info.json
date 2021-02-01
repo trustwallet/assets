@@ -1,9 +1,10 @@
 {
     "name": "CreaEther",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x3d166dd13dFdca66879bdd45dc224D07C8855CdB",
-    "type": "ERC20",
     "symbol": "CETH",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x3d166dd13dFdca66879bdd45dc224D07C8855CdB",
+    "id": "0x3d166dd13dFdca66879bdd45dc224D07C8855CdB"
 }

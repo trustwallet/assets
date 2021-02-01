@@ -1,9 +1,10 @@
 {
     "name": "ARTDOTCOIN",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xc5451c3b432687A5a796c4DafD0cb4702874F92D",
-    "type": "ERC20",
     "symbol": "ADC",
-    "decimals": 8
+    "type": "ERC20",
+    "decimals": 8,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xc5451c3b432687A5a796c4DafD0cb4702874F92D",
+    "id": "0xc5451c3b432687A5a796c4DafD0cb4702874F92D"
 }

@@ -1,9 +1,10 @@
 {
     "name": "electrumdark",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x796E47B85A0d759F300f1de96A3583004235D4D8",
-    "type": "ERC20",
     "symbol": "ELD",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x796E47B85A0d759F300f1de96A3583004235D4D8",
+    "id": "0x796E47B85A0d759F300f1de96A3583004235D4D8"
 }

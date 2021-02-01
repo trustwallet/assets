@@ -1,9 +1,10 @@
 {
     "name": "Ether Classic",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xAf0760a00f6C20A46cfDFfbD4d0aD610BB59ac81",
-    "type": "ERC20",
     "symbol": "ETCC",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xAf0760a00f6C20A46cfDFfbD4d0aD610BB59ac81",
+    "id": "0xAf0760a00f6C20A46cfDFfbD4d0aD610BB59ac81"
 }

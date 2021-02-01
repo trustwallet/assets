@@ -1,9 +1,10 @@
 {
     "name": "SmogToken",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x49E34308DFF5F78Ee0CC4eE1d08Cb5EaB17E829E",
-    "type": "ERC20",
     "symbol": "SGT",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x49E34308DFF5F78Ee0CC4eE1d08Cb5EaB17E829E",
+    "id": "0x49E34308DFF5F78Ee0CC4eE1d08Cb5EaB17E829E"
 }

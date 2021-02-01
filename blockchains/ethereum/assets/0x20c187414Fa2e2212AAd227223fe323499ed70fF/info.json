@@ -1,9 +1,10 @@
 {
     "name": "MinedBlock Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x20c187414Fa2e2212AAd227223fe323499ed70fF",
-    "type": "ERC20",
     "symbol": "MBTX",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x20c187414Fa2e2212AAd227223fe323499ed70fF",
+    "id": "0x20c187414Fa2e2212AAd227223fe323499ed70fF"
 }

@@ -1,9 +1,10 @@
 {
     "name": "FASToken",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x9f55dEb6f98D27e6eBff8CFcE9826CE2610AaE5B",
-    "type": "ERC20",
     "symbol": "FAST",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x9f55dEb6f98D27e6eBff8CFcE9826CE2610AaE5B",
+    "id": "0x9f55dEb6f98D27e6eBff8CFcE9826CE2610AaE5B"
 }

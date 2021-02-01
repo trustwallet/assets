@@ -1,9 +1,10 @@
 {
     "name": "CurToken",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x13339fD07934CD674269726EdF3B5ccEE9DD93de",
-    "type": "ERC20",
     "symbol": "CUR",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x13339fD07934CD674269726EdF3B5ccEE9DD93de",
+    "id": "0x13339fD07934CD674269726EdF3B5ccEE9DD93de"
 }

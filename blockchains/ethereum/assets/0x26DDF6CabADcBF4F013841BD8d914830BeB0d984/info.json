@@ -1,9 +1,10 @@
 {
     "name": "KuaiToken",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x26DDF6CabADcBF4F013841BD8d914830BeB0d984",
-    "type": "ERC20",
     "symbol": "KT",
-    "decimals": 8
+    "type": "ERC20",
+    "decimals": 8,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x26DDF6CabADcBF4F013841BD8d914830BeB0d984",
+    "id": "0x26DDF6CabADcBF4F013841BD8d914830BeB0d984"
 }

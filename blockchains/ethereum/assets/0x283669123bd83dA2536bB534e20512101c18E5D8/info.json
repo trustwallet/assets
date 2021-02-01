@@ -1,9 +1,10 @@
 {
     "name": "Bitpayer Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x283669123bd83dA2536bB534e20512101c18E5D8",
-    "type": "ERC20",
     "symbol": "BPT",
-    "decimals": 9
+    "type": "ERC20",
+    "decimals": 9,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x283669123bd83dA2536bB534e20512101c18E5D8",
+    "id": "0x283669123bd83dA2536bB534e20512101c18E5D8"
 }

@@ -1,9 +1,10 @@
 {
     "name": "GECoin",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x4a536c1cE7ad7F6e8D2E59135E17AEF5eF4dD4E6",
-    "type": "ERC20",
     "symbol": "GEC",
-    "decimals": 3
+    "type": "ERC20",
+    "decimals": 3,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x4a536c1cE7ad7F6e8D2E59135E17AEF5eF4dD4E6",
+    "id": "0x4a536c1cE7ad7F6e8D2E59135E17AEF5eF4dD4E6"
 }

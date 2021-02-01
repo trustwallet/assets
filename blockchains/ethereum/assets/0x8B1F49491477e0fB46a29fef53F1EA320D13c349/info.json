@@ -1,9 +1,10 @@
 {
     "name": "MicroMoney",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x8B1F49491477e0fB46a29fef53F1EA320D13c349",
-    "type": "ERC20",
     "symbol": "AMM",
-    "decimals": 6
+    "type": "ERC20",
+    "decimals": 6,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x8B1F49491477e0fB46a29fef53F1EA320D13c349",
+    "id": "0x8B1F49491477e0fB46a29fef53F1EA320D13c349"
 }

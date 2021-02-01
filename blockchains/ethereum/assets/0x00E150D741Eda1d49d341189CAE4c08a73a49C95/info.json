@@ -1,9 +1,10 @@
 {
     "name": "InfinitusTokens",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x00E150D741Eda1d49d341189CAE4c08a73a49C95",
-    "type": "ERC20",
     "symbol": "INF",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x00E150D741Eda1d49d341189CAE4c08a73a49C95",
+    "id": "0x00E150D741Eda1d49d341189CAE4c08a73a49C95"
 }

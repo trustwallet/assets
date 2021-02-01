@@ -1,9 +1,10 @@
 {
     "name": "Forta Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x93B99A13B81dfd5Fa9B2D875acF8C600047b193A",
-    "type": "ERC20",
     "symbol": "FRT",
-    "decimals": 8
+    "type": "ERC20",
+    "decimals": 8,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x93B99A13B81dfd5Fa9B2D875acF8C600047b193A",
+    "id": "0x93B99A13B81dfd5Fa9B2D875acF8C600047b193A"
 }

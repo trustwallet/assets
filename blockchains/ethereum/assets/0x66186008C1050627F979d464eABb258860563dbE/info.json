@@ -1,9 +1,10 @@
 {
     "name": "MediShares Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x66186008C1050627F979d464eABb258860563dbE",
-    "type": "ERC20",
     "symbol": "MDS",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x66186008C1050627F979d464eABb258860563dbE",
+    "id": "0x66186008C1050627F979d464eABb258860563dbE"
 }

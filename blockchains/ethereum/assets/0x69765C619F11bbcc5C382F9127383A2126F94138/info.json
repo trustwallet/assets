@@ -1,9 +1,10 @@
 {
     "name": "BAR Coin",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x69765C619F11bbcc5C382F9127383A2126F94138",
-    "type": "ERC20",
     "symbol": "BAR",
-    "decimals": 5
+    "type": "ERC20",
+    "decimals": 5,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x69765C619F11bbcc5C382F9127383A2126F94138",
+    "id": "0x69765C619F11bbcc5C382F9127383A2126F94138"
 }

@@ -1,9 +1,10 @@
 {
     "name": "ABACOIN",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xDAf76716996052aff7edb66Ef0Edb301BF001B6F",
-    "type": "ERC20",
     "symbol": "ABA",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xDAf76716996052aff7edb66Ef0Edb301BF001B6F",
+    "id": "0xDAf76716996052aff7edb66Ef0Edb301BF001B6F"
 }

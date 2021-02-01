@@ -1,9 +1,10 @@
 {
     "name": "EtheremonToken",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x95dAaaB98046846bF4B2853e23cba236fa394A31",
-    "type": "ERC20",
     "symbol": "EMONT",
-    "decimals": 8
+    "type": "ERC20",
+    "decimals": 8,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x95dAaaB98046846bF4B2853e23cba236fa394A31",
+    "id": "0x95dAaaB98046846bF4B2853e23cba236fa394A31"
 }

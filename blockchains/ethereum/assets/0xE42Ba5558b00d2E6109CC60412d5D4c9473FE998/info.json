@@ -1,9 +1,10 @@
 {
     "name": "iMM Coin",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xE42Ba5558b00d2E6109CC60412d5D4c9473FE998",
-    "type": "ERC20",
     "symbol": "IMC",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xE42Ba5558b00d2E6109CC60412d5D4c9473FE998",
+    "id": "0xE42Ba5558b00d2E6109CC60412d5D4c9473FE998"
 }

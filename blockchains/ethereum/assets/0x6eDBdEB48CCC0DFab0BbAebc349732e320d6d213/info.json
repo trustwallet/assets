@@ -1,9 +1,10 @@
 {
     "name": "YesManCoin",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x6eDBdEB48CCC0DFab0BbAebc349732e320d6d213",
-    "type": "ERC20",
     "symbol": "YESM",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x6eDBdEB48CCC0DFab0BbAebc349732e320d6d213",
+    "id": "0x6eDBdEB48CCC0DFab0BbAebc349732e320d6d213"
 }

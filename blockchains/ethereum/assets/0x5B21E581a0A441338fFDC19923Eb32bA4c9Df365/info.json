@@ -1,9 +1,10 @@
 {
     "name": "mHealthCoin",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x5B21E581a0A441338fFDC19923Eb32bA4c9Df365",
-    "type": "ERC20",
     "symbol": "MHEC",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x5B21E581a0A441338fFDC19923Eb32bA4c9Df365",
+    "id": "0x5B21E581a0A441338fFDC19923Eb32bA4c9Df365"
 }

@@ -1,9 +1,10 @@
 {
     "name": "BTU Incentivized DAI",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x6a4FFAafa8DD400676Df8076AD6c724867b0e2e8",
-    "type": "ERC20",
     "symbol": "bDAI",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x6a4FFAafa8DD400676Df8076AD6c724867b0e2e8",
+    "id": "0x6a4FFAafa8DD400676Df8076AD6c724867b0e2e8"
 }

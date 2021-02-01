@@ -1,9 +1,10 @@
 {
     "name": "APM Coin",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xC8C424B91D8ce0137bAB4B832B7F7D154156BA6c",
-    "type": "ERC20",
     "symbol": "APM",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xC8C424B91D8ce0137bAB4B832B7F7D154156BA6c",
+    "id": "0xC8C424B91D8ce0137bAB4B832B7F7D154156BA6c"
 }

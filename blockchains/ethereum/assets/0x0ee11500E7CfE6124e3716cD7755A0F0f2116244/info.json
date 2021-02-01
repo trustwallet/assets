@@ -1,9 +1,10 @@
 {
     "name": "WXCoin",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x0ee11500E7CfE6124e3716cD7755A0F0f2116244",
-    "type": "ERC20",
     "symbol": "WXC",
-    "decimals": 0
+    "type": "ERC20",
+    "decimals": 0,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x0ee11500E7CfE6124e3716cD7755A0F0f2116244",
+    "id": "0x0ee11500E7CfE6124e3716cD7755A0F0f2116244"
 }

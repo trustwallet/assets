@@ -1,9 +1,10 @@
 {
     "name": "URACToken",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xff8Be4B22CeDC440591dcB1E641EB2a0dd9d25A5",
-    "type": "ERC20",
     "symbol": "URAC",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xff8Be4B22CeDC440591dcB1E641EB2a0dd9d25A5",
+    "id": "0xff8Be4B22CeDC440591dcB1E641EB2a0dd9d25A5"
 }

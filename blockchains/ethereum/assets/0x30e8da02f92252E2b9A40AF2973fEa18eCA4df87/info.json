@@ -1,9 +1,10 @@
 {
     "name": "FIAT",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x30e8da02f92252E2b9A40AF2973fEa18eCA4df87",
-    "type": "ERC20",
     "symbol": "FIAT",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x30e8da02f92252E2b9A40AF2973fEa18eCA4df87",
+    "id": "0x30e8da02f92252E2b9A40AF2973fEa18eCA4df87"
 }

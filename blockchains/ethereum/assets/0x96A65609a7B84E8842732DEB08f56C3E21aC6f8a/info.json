@@ -1,9 +1,10 @@
 {
     "name": "Centra token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x96A65609a7B84E8842732DEB08f56C3E21aC6f8a",
-    "type": "ERC20",
     "symbol": "Centra",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x96A65609a7B84E8842732DEB08f56C3E21aC6f8a",
+    "id": "0x96A65609a7B84E8842732DEB08f56C3E21aC6f8a"
 }

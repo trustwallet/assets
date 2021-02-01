@@ -1,9 +1,10 @@
 {
     "name": "Motioncoin",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x9b13ef21B4cD039C250D5694cEdfEE699478F978",
-    "type": "ERC20",
     "symbol": "MTC",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x9b13ef21B4cD039C250D5694cEdfEE699478F978",
+    "id": "0x9b13ef21B4cD039C250D5694cEdfEE699478F978"
 }

@@ -1,9 +1,10 @@
 {
     "name": "GlobalCryptoGate",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x608Be0464774A7Be87EC2a1fc7407ce64714d5D2",
-    "type": "ERC20",
     "symbol": "GCG",
-    "decimals": 8
+    "type": "ERC20",
+    "decimals": 8,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x608Be0464774A7Be87EC2a1fc7407ce64714d5D2",
+    "id": "0x608Be0464774A7Be87EC2a1fc7407ce64714d5D2"
 }

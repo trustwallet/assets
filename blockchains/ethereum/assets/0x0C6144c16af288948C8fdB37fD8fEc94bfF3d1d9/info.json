@@ -1,9 +1,10 @@
 {
     "name": "Neutral",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x0C6144c16af288948C8fdB37fD8fEc94bfF3d1d9",
-    "type": "ERC20",
     "symbol": "NUSD",
-    "decimals": 6
+    "type": "ERC20",
+    "decimals": 6,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x0C6144c16af288948C8fdB37fD8fEc94bfF3d1d9",
+    "id": "0x0C6144c16af288948C8fdB37fD8fEc94bfF3d1d9"
 }

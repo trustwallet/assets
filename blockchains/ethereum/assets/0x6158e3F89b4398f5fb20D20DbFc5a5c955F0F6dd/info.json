@@ -1,9 +1,10 @@
 {
     "name": "TimeBox Coin",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x6158e3F89b4398f5fb20D20DbFc5a5c955F0F6dd",
-    "type": "ERC20",
     "symbol": "TB",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x6158e3F89b4398f5fb20D20DbFc5a5c955F0F6dd",
+    "id": "0x6158e3F89b4398f5fb20D20DbFc5a5c955F0F6dd"
 }

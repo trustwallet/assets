@@ -1,9 +1,10 @@
 {
     "name": "Webcoin",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x840fe75ABfaDc0F2d54037829571B2782e919ce4",
-    "type": "ERC20",
     "symbol": "WEB",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x840fe75ABfaDc0F2d54037829571B2782e919ce4",
+    "id": "0x840fe75ABfaDc0F2d54037829571B2782e919ce4"
 }

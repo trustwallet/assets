@@ -1,9 +1,10 @@
 {
     "name": "Coinrobots",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xc6A18790d4D3988D28cc1E274E2c696602ea4343",
-    "type": "ERC20",
     "symbol": "ROBOT",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xc6A18790d4D3988D28cc1E274E2c696602ea4343",
+    "id": "0xc6A18790d4D3988D28cc1E274E2c696602ea4343"
 }

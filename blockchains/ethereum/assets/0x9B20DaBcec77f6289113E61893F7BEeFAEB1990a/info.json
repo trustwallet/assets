@@ -1,9 +1,10 @@
 {
     "name": "Fair Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x9B20DaBcec77f6289113E61893F7BEeFAEB1990a",
-    "type": "ERC20",
     "symbol": "FAIR",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x9B20DaBcec77f6289113E61893F7BEeFAEB1990a",
+    "id": "0x9B20DaBcec77f6289113E61893F7BEeFAEB1990a"
 }

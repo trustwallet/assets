@@ -1,9 +1,10 @@
 {
     "name": "ATIS Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x821144518dfE9e7b44fCF4d0824e15e8390d4637",
-    "type": "ERC20",
     "symbol": "ATIS",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x821144518dfE9e7b44fCF4d0824e15e8390d4637",
+    "id": "0x821144518dfE9e7b44fCF4d0824e15e8390d4637"
 }

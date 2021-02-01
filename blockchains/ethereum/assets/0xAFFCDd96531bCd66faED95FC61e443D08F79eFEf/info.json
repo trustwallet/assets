@@ -1,9 +1,10 @@
 {
     "name": "Perth Mint Gold Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xAFFCDd96531bCd66faED95FC61e443D08F79eFEf",
-    "type": "ERC20",
     "symbol": "PMGT",
-    "decimals": 5
+    "type": "ERC20",
+    "decimals": 5,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xAFFCDd96531bCd66faED95FC61e443D08F79eFEf",
+    "id": "0xAFFCDd96531bCd66faED95FC61e443D08F79eFEf"
 }

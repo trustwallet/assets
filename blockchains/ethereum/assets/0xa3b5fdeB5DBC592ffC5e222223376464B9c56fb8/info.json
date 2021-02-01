@@ -1,9 +1,10 @@
 {
     "name": "Fake Doge Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xa3b5fdeB5DBC592ffC5e222223376464B9c56fb8",
-    "type": "ERC20",
     "symbol": "FDGT",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xa3b5fdeB5DBC592ffC5e222223376464B9c56fb8",
+    "id": "0xa3b5fdeB5DBC592ffC5e222223376464B9c56fb8"
 }

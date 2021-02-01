@@ -1,9 +1,10 @@
 {
     "name": "PLANET",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x307d45Afbb7E84F82ef3D251A6bb0F00Edf632E4",
-    "type": "ERC20",
     "symbol": "PLA",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x307d45Afbb7E84F82ef3D251A6bb0F00Edf632E4",
+    "id": "0x307d45Afbb7E84F82ef3D251A6bb0F00Edf632E4"
 }

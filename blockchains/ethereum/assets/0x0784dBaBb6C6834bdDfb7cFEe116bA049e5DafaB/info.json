@@ -1,9 +1,10 @@
 {
     "name": "IBTC",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x0784dBaBb6C6834bdDfb7cFEe116bA049e5DafaB",
-    "type": "ERC20",
     "symbol": "IBTC",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x0784dBaBb6C6834bdDfb7cFEe116bA049e5DafaB",
+    "id": "0x0784dBaBb6C6834bdDfb7cFEe116bA049e5DafaB"
 }

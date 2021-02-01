@@ -1,9 +1,10 @@
 {
     "name": "Cash on Delivery",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xe7da4034D6bf12909E5D0198c3784F55a06e0210",
-    "type": "ERC20",
     "symbol": "COD",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xe7da4034D6bf12909E5D0198c3784F55a06e0210",
+    "id": "0xe7da4034D6bf12909E5D0198c3784F55a06e0210"
 }

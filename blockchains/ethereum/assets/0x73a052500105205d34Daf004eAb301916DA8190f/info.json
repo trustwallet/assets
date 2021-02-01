@@ -1,9 +1,10 @@
 {
     "name": "iearn TUSD",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x73a052500105205d34Daf004eAb301916DA8190f",
-    "type": "ERC20",
     "symbol": "yTUSD",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x73a052500105205d34Daf004eAb301916DA8190f",
+    "id": "0x73a052500105205d34Daf004eAb301916DA8190f"
 }

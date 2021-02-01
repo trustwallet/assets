@@ -1,9 +1,10 @@
 {
     "name": "Monarch Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x4442556a08a841227bEf04C67A7Ba7acf01b6Fc8",
-    "type": "ERC20",
     "symbol": "MT",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x4442556a08a841227bEf04C67A7Ba7acf01b6Fc8",
+    "id": "0x4442556a08a841227bEf04C67A7Ba7acf01b6Fc8"
 }

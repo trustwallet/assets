@@ -1,9 +1,10 @@
 {
     "name": "CloudWalkCoin",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x8A42c37558967dA1fd2fF57969946320e61E9aAB",
-    "type": "ERC20",
     "symbol": "CWC",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x8A42c37558967dA1fd2fF57969946320e61E9aAB",
+    "id": "0x8A42c37558967dA1fd2fF57969946320e61E9aAB"
 }

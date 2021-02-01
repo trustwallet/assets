@@ -1,9 +1,10 @@
 {
     "name": "UNICORN",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x2730d6FdC86C95a74253BefFaA8306B40feDecbb",
-    "type": "ERC20",
     "symbol": "UNI",
-    "decimals": 8
+    "type": "ERC20",
+    "decimals": 8,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x2730d6FdC86C95a74253BefFaA8306B40feDecbb",
+    "id": "0x2730d6FdC86C95a74253BefFaA8306B40feDecbb"
 }

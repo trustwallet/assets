@@ -1,9 +1,10 @@
 {
     "name": "Aave Interest bearing SNX",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x328C4c80BC7aCa0834Db37e6600A6c49E12Da4DE",
-    "type": "ERC20",
     "symbol": "aSNX",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x328C4c80BC7aCa0834Db37e6600A6c49E12Da4DE",
+    "id": "0x328C4c80BC7aCa0834Db37e6600A6c49E12Da4DE"
 }

@@ -1,9 +1,10 @@
 {
     "name": "Jahcoin",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x015228e32287BaCD2d8AA9B703C3e110BBCfCE0f",
-    "type": "ERC20",
     "symbol": "JAH",
-    "decimals": 4
+    "type": "ERC20",
+    "decimals": 4,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x015228e32287BaCD2d8AA9B703C3e110BBCfCE0f",
+    "id": "0x015228e32287BaCD2d8AA9B703C3e110BBCfCE0f"
 }

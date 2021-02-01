@@ -1,9 +1,10 @@
 {
     "name": "NewYorkCoin",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x53437f622bf47e758C301D0E1d2649fd42A8bAa6",
-    "type": "ERC20",
     "symbol": "NYC",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x53437f622bf47e758C301D0E1d2649fd42A8bAa6",
+    "id": "0x53437f622bf47e758C301D0E1d2649fd42A8bAa6"
 }

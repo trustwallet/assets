@@ -1,9 +1,10 @@
 {
     "name": "Wrapped CryptoKitties",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x09fE5f0236F0Ea5D930197DCE254d77B04128075",
-    "type": "ERC20",
     "symbol": "WCK",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x09fE5f0236F0Ea5D930197DCE254d77B04128075",
+    "id": "0x09fE5f0236F0Ea5D930197DCE254d77B04128075"
 }

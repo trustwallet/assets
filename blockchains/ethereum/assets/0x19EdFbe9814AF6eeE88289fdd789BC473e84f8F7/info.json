@@ -1,9 +1,10 @@
 {
     "name": "MINI ETHEREUM",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x19EdFbe9814AF6eeE88289fdd789BC473e84f8F7",
-    "type": "ERC20",
     "symbol": "METH",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x19EdFbe9814AF6eeE88289fdd789BC473e84f8F7",
+    "id": "0x19EdFbe9814AF6eeE88289fdd789BC473e84f8F7"
 }

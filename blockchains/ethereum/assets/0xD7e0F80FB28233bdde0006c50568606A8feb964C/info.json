@@ -1,9 +1,10 @@
 {
     "name": "Australian Dollar",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xD7e0F80FB28233bdde0006c50568606A8feb964C",
-    "type": "ERC20",
     "symbol": "AUDT",
-    "decimals": 6
+    "type": "ERC20",
+    "decimals": 6,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xD7e0F80FB28233bdde0006c50568606A8feb964C",
+    "id": "0xD7e0F80FB28233bdde0006c50568606A8feb964C"
 }

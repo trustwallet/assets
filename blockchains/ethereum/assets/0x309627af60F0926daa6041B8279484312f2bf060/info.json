@@ -1,9 +1,10 @@
 {
     "name": "Bancor USD Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x309627af60F0926daa6041B8279484312f2bf060",
-    "type": "ERC20",
     "symbol": "USDB",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x309627af60F0926daa6041B8279484312f2bf060",
+    "id": "0x309627af60F0926daa6041B8279484312f2bf060"
 }

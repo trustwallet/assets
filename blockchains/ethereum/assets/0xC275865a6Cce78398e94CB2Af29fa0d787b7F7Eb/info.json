@@ -1,9 +1,10 @@
 {
     "name": "RiseCoin Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xC275865a6Cce78398e94CB2Af29fa0d787b7F7Eb",
-    "type": "ERC20",
     "symbol": "RSCT",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xC275865a6Cce78398e94CB2Af29fa0d787b7F7Eb",
+    "id": "0xC275865a6Cce78398e94CB2Af29fa0d787b7F7Eb"
 }

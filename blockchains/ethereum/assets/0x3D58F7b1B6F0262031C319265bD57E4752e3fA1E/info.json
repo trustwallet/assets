@@ -1,9 +1,10 @@
 {
     "name": "Circolo Arduino Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x3D58F7b1B6F0262031C319265bD57E4752e3fA1E",
-    "type": "ERC20",
     "symbol": "ARDU",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x3D58F7b1B6F0262031C319265bD57E4752e3fA1E",
+    "id": "0x3D58F7b1B6F0262031C319265bD57E4752e3fA1E"
 }

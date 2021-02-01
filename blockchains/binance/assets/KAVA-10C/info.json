@@ -1,9 +1,10 @@
 {
     "name": "Kava BEP2 Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://explorer.binance.org/asset/KAVA-10C",
-    "type": "BEP2",
     "symbol": "KAVA",
-    "decimals": 8
+    "type": "BEP2",
+    "decimals": 8,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://explorer.binance.org/asset/KAVA-10C",
+    "id": "KAVA-10C"
 }

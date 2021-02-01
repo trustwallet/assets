@@ -1,9 +1,10 @@
 {
     "name": "FlashX Coin",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x0c2e3bbc4646c872a3F5A745D2902aFFda82C58a",
-    "type": "ERC20",
     "symbol": "FSXC",
-    "decimals": 8
+    "type": "ERC20",
+    "decimals": 8,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x0c2e3bbc4646c872a3F5A745D2902aFFda82C58a",
+    "id": "0x0c2e3bbc4646c872a3F5A745D2902aFFda82C58a"
 }

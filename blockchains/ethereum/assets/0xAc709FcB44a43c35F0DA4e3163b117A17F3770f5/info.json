@@ -1,9 +1,10 @@
 {
     "name": "Arcade Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xAc709FcB44a43c35F0DA4e3163b117A17F3770f5",
-    "type": "ERC20",
     "symbol": "ARC",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xAc709FcB44a43c35F0DA4e3163b117A17F3770f5",
+    "id": "0xAc709FcB44a43c35F0DA4e3163b117A17F3770f5"
 }

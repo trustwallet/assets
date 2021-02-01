@@ -1,9 +1,10 @@
 {
     "name": "Data Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x69b148395Ce0015C13e36BFfBAd63f49EF874E03",
-    "type": "ERC20",
     "symbol": "DTA",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x69b148395Ce0015C13e36BFfBAd63f49EF874E03",
+    "id": "0x69b148395Ce0015C13e36BFfBAd63f49EF874E03"
 }

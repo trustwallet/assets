@@ -1,9 +1,10 @@
 {
     "name": "INK token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xf4c90e18727C5C76499eA6369C856A6d61D3E92E",
-    "type": "ERC20",
     "symbol": "INK",
-    "decimals": 9
+    "type": "ERC20",
+    "decimals": 9,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xf4c90e18727C5C76499eA6369C856A6d61D3E92E",
+    "id": "0xf4c90e18727C5C76499eA6369C856A6d61D3E92E"
 }

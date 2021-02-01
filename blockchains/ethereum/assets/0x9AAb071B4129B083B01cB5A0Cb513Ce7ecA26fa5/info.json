@@ -1,9 +1,10 @@
 {
     "name": "HuntToken",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x9AAb071B4129B083B01cB5A0Cb513Ce7ecA26fa5",
-    "type": "ERC20",
     "symbol": "HUNT",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x9AAb071B4129B083B01cB5A0Cb513Ce7ecA26fa5",
+    "id": "0x9AAb071B4129B083B01cB5A0Cb513Ce7ecA26fa5"
 }

@@ -1,9 +1,10 @@
 {
     "name": "SSAL TOKEN",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xf60cc637D2C501aD6935ffC8C8032963b0Fc419a",
-    "type": "ERC20",
     "symbol": "RICE",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xf60cc637D2C501aD6935ffC8C8032963b0Fc419a",
+    "id": "0xf60cc637D2C501aD6935ffC8C8032963b0Fc419a"
 }

@@ -1,9 +1,10 @@
 {
     "name": "MccCoin",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x13d6b121817D78faC403Ebf2C59c0C93583991df",
-    "type": "ERC20",
     "symbol": "MCC",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x13d6b121817D78faC403Ebf2C59c0C93583991df",
+    "id": "0x13d6b121817D78faC403Ebf2C59c0C93583991df"
 }

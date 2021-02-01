@@ -1,9 +1,10 @@
 {
     "name": "SmartMint BondFiat StableToken",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xb5f278Ee11811eFEC0692EC61b1e9f9984f2de11",
-    "type": "ERC20",
     "symbol": "EMIT",
-    "decimals": 3
+    "type": "ERC20",
+    "decimals": 3,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xb5f278Ee11811eFEC0692EC61b1e9f9984f2de11",
+    "id": "0xb5f278Ee11811eFEC0692EC61b1e9f9984f2de11"
 }

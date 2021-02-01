@@ -1,9 +1,10 @@
 {
     "name": "WaykiCoin",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x4f878C0852722b0976A955d68B376E4Cd4Ae99E5",
-    "type": "ERC20",
     "symbol": "WIC",
-    "decimals": 8
+    "type": "ERC20",
+    "decimals": 8,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x4f878C0852722b0976A955d68B376E4Cd4Ae99E5",
+    "id": "0x4f878C0852722b0976A955d68B376E4Cd4Ae99E5"
 }

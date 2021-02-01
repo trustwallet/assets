@@ -1,9 +1,10 @@
 {
     "name": "EBCoin",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x31f3D9D1BeCE0c033fF78fA6DA60a6048F3E13c5",
-    "type": "ERC20",
     "symbol": "EBC",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x31f3D9D1BeCE0c033fF78fA6DA60a6048F3E13c5",
+    "id": "0x31f3D9D1BeCE0c033fF78fA6DA60a6048F3E13c5"
 }

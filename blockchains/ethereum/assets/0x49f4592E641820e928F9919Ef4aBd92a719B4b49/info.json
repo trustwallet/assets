@@ -1,9 +1,10 @@
 {
     "name": "Fulcrum sUSD iToken",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x49f4592E641820e928F9919Ef4aBd92a719B4b49",
-    "type": "ERC20",
     "symbol": "iSUSD",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x49f4592E641820e928F9919Ef4aBd92a719B4b49",
+    "id": "0x49f4592E641820e928F9919Ef4aBd92a719B4b49"
 }

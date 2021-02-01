@@ -1,9 +1,10 @@
 {
     "name": "FaucetToken",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xFab46E002BbF0b4509813474841E0716E6730136",
-    "type": "ERC20",
     "symbol": "FAU",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xFab46E002BbF0b4509813474841E0716E6730136",
+    "id": "0xFab46E002BbF0b4509813474841E0716E6730136"
 }

@@ -1,9 +1,10 @@
 {
     "name": "REMME token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x83984d6142934bb535793A82ADB0a46EF0F66B6d",
-    "type": "ERC20",
     "symbol": "REM",
-    "decimals": 4
+    "type": "ERC20",
+    "decimals": 4,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x83984d6142934bb535793A82ADB0a46EF0F66B6d",
+    "id": "0x83984d6142934bb535793A82ADB0a46EF0F66B6d"
 }

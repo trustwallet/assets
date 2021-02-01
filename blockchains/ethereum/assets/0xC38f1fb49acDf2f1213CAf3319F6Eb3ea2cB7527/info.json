@@ -1,9 +1,10 @@
 {
     "name": "Bitcoinus Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xC38f1fb49acDf2f1213CAf3319F6Eb3ea2cB7527",
-    "type": "ERC20",
     "symbol": "BITS",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xC38f1fb49acDf2f1213CAf3319F6Eb3ea2cB7527",
+    "id": "0xC38f1fb49acDf2f1213CAf3319F6Eb3ea2cB7527"
 }

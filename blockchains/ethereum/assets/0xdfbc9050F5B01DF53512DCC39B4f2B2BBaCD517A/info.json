@@ -1,9 +1,10 @@
 {
     "name": "Jobchain",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xdfbc9050F5B01DF53512DCC39B4f2B2BBaCD517A",
-    "type": "ERC20",
     "symbol": "JOB",
-    "decimals": 8
+    "type": "ERC20",
+    "decimals": 8,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xdfbc9050F5B01DF53512DCC39B4f2B2BBaCD517A",
+    "id": "0xdfbc9050F5B01DF53512DCC39B4f2B2BBaCD517A"
 }

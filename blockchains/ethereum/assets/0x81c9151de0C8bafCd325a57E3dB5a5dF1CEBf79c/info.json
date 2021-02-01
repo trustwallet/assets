@@ -1,9 +1,10 @@
 {
     "name": "Datum Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x81c9151de0C8bafCd325a57E3dB5a5dF1CEBf79c",
-    "type": "ERC20",
     "symbol": "DAT",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x81c9151de0C8bafCd325a57E3dB5a5dF1CEBf79c",
+    "id": "0x81c9151de0C8bafCd325a57E3dB5a5dF1CEBf79c"
 }

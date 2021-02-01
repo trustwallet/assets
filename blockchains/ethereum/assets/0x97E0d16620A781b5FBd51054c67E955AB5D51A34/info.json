@@ -1,9 +1,10 @@
 {
     "name": "NG COIN",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x97E0d16620A781b5FBd51054c67E955AB5D51A34",
-    "type": "ERC20",
     "symbol": "NGC",
-    "decimals": 0
+    "type": "ERC20",
+    "decimals": 0,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x97E0d16620A781b5FBd51054c67E955AB5D51A34",
+    "id": "0x97E0d16620A781b5FBd51054c67E955AB5D51A34"
 }

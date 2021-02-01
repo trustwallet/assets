@@ -1,9 +1,10 @@
 {
     "name": "CMAP Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x7b267eea6E679e747C0Cb1D6B453A976D3638D27",
-    "type": "ERC20",
     "symbol": "CMAP",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x7b267eea6E679e747C0Cb1D6B453A976D3638D27",
+    "id": "0x7b267eea6E679e747C0Cb1D6B453A976D3638D27"
 }

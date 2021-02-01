@@ -1,9 +1,10 @@
 {
     "name": "BizzCoin",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x7A8Ca2f815A260660158a38C34ca321A3605eCFE",
-    "type": "ERC20",
     "symbol": "BIZZ",
-    "decimals": 8
+    "type": "ERC20",
+    "decimals": 8,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x7A8Ca2f815A260660158a38C34ca321A3605eCFE",
+    "id": "0x7A8Ca2f815A260660158a38C34ca321A3605eCFE"
 }

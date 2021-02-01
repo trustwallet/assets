@@ -1,9 +1,10 @@
 {
     "name": "FLUXCOIN-A",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x2A4F61Ca0e03e260E6BE91692e430293D73998F0",
-    "type": "ERC20",
     "symbol": "FLXA",
-    "decimals": 10
+    "type": "ERC20",
+    "decimals": 10,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x2A4F61Ca0e03e260E6BE91692e430293D73998F0",
+    "id": "0x2A4F61Ca0e03e260E6BE91692e430293D73998F0"
 }

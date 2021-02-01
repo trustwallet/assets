@@ -1,9 +1,10 @@
 {
     "name": "Zero Fee Xchange",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x53D428716900EAe876aD1d7E4535e796B5FAedA2",
-    "type": "ERC20",
     "symbol": "ZFE",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x53D428716900EAe876aD1d7E4535e796B5FAedA2",
+    "id": "0x53D428716900EAe876aD1d7E4535e796B5FAedA2"
 }

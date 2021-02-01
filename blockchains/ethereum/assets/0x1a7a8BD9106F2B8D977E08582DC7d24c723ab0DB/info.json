@@ -1,9 +1,10 @@
 {
     "name": "AppCoins",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x1a7a8BD9106F2B8D977E08582DC7d24c723ab0DB",
-    "type": "ERC20",
     "symbol": "APPC",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x1a7a8BD9106F2B8D977E08582DC7d24c723ab0DB",
+    "id": "0x1a7a8BD9106F2B8D977E08582DC7d24c723ab0DB"
 }

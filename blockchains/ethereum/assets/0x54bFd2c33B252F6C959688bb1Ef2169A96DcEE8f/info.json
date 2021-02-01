@@ -1,9 +1,10 @@
 {
     "name": "Bliss Exchange Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x54bFd2c33B252F6C959688bb1Ef2169A96DcEE8f",
-    "type": "ERC20",
     "symbol": "BLISS",
-    "decimals": 8
+    "type": "ERC20",
+    "decimals": 8,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x54bFd2c33B252F6C959688bb1Ef2169A96DcEE8f",
+    "id": "0x54bFd2c33B252F6C959688bb1Ef2169A96DcEE8f"
 }

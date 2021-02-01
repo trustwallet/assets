@@ -1,9 +1,10 @@
 {
     "name": "Skychain Global Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x70c621f949b6556c4545707a2d5d73A776b98359",
-    "type": "ERC20",
     "symbol": "SKCH",
-    "decimals": 6
+    "type": "ERC20",
+    "decimals": 6,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x70c621f949b6556c4545707a2d5d73A776b98359",
+    "id": "0x70c621f949b6556c4545707a2d5d73A776b98359"
 }

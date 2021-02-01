@@ -1,9 +1,10 @@
 {
     "name": "A1 Coin",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xBaC6874fFf7aC02C06907D0e340AF9f1832E7908",
-    "type": "ERC20",
     "symbol": "A1",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xBaC6874fFf7aC02C06907D0e340AF9f1832E7908",
+    "id": "0xBaC6874fFf7aC02C06907D0e340AF9f1832E7908"
 }

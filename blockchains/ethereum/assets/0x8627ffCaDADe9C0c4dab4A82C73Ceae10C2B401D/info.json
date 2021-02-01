@@ -1,9 +1,10 @@
 {
     "name": "FiberToken",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x8627ffCaDADe9C0c4dab4A82C73Ceae10C2B401D",
-    "type": "ERC20",
     "symbol": "FBTK",
-    "decimals": 8
+    "type": "ERC20",
+    "decimals": 8,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x8627ffCaDADe9C0c4dab4A82C73Ceae10C2B401D",
+    "id": "0x8627ffCaDADe9C0c4dab4A82C73Ceae10C2B401D"
 }

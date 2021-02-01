@@ -1,9 +1,10 @@
 {
     "name": "Kork Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xb2fDd1a08c08714Ce3Ccd38fde3D9b9f300Fa9Cc",
-    "type": "ERC20",
     "symbol": "Kork",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xb2fDd1a08c08714Ce3Ccd38fde3D9b9f300Fa9Cc",
+    "id": "0xb2fDd1a08c08714Ce3Ccd38fde3D9b9f300Fa9Cc"
 }

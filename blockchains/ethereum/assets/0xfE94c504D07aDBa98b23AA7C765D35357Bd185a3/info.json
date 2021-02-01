@@ -1,9 +1,10 @@
 {
     "name": "FLGCToken",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xfE94c504D07aDBa98b23AA7C765D35357Bd185a3",
-    "type": "ERC20",
     "symbol": "FLGC",
-    "decimals": 8
+    "type": "ERC20",
+    "decimals": 8,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xfE94c504D07aDBa98b23AA7C765D35357Bd185a3",
+    "id": "0xfE94c504D07aDBa98b23AA7C765D35357Bd185a3"
 }

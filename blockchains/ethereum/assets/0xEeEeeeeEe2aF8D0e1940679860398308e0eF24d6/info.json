@@ -1,9 +1,10 @@
 {
     "name": "Ethverse Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xEeEeeeeEe2aF8D0e1940679860398308e0eF24d6",
-    "type": "ERC20",
     "symbol": "ETHV",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xEeEeeeeEe2aF8D0e1940679860398308e0eF24d6",
+    "id": "0xEeEeeeeEe2aF8D0e1940679860398308e0eF24d6"
 }

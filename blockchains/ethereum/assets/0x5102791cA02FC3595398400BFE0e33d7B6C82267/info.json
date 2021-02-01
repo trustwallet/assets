@@ -1,9 +1,10 @@
 {
     "name": "LEADCOIN",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x5102791cA02FC3595398400BFE0e33d7B6C82267",
-    "type": "ERC20",
     "symbol": "LDC",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x5102791cA02FC3595398400BFE0e33d7B6C82267",
+    "id": "0x5102791cA02FC3595398400BFE0e33d7B6C82267"
 }

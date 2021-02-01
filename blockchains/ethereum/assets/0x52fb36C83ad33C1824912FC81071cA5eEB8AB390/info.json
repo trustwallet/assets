@@ -1,9 +1,10 @@
 {
     "name": "Fidelium Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x52fb36C83ad33C1824912FC81071cA5eEB8AB390",
-    "type": "ERC20",
     "symbol": "FID",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x52fb36C83ad33C1824912FC81071cA5eEB8AB390",
+    "id": "0x52fb36C83ad33C1824912FC81071cA5eEB8AB390"
 }

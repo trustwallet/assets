@@ -1,9 +1,10 @@
 {
     "name": "XE Currency Converter",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xd8e1bb9123DFc3cc27f7120d503ad914A317325c",
-    "type": "ERC20",
     "symbol": "XCC",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xd8e1bb9123DFc3cc27f7120d503ad914A317325c",
+    "id": "0xd8e1bb9123DFc3cc27f7120d503ad914A317325c"
 }

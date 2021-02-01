@@ -1,9 +1,10 @@
 {
     "name": "CustomContractNetwork",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x17B26400621695c2D8C2D8869f6259E82D7544c4",
-    "type": "ERC20",
     "symbol": "CCN",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x17B26400621695c2D8C2D8869f6259E82D7544c4",
+    "id": "0x17B26400621695c2D8C2D8869f6259E82D7544c4"
 }

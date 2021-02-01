@@ -1,9 +1,10 @@
 {
     "name": "BITARK Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x9FE166aa9cF5BbFDBAf31e429E9923D994dB5199",
-    "type": "ERC20",
     "symbol": "BARK",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x9FE166aa9cF5BbFDBAf31e429E9923D994dB5199",
+    "id": "0x9FE166aa9cF5BbFDBAf31e429E9923D994dB5199"
 }

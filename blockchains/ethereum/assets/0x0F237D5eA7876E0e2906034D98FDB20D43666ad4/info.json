@@ -1,9 +1,10 @@
 {
     "name": "Connect coin(XCON)",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x0F237D5eA7876E0e2906034D98FDB20D43666ad4",
-    "type": "ERC20",
     "symbol": "XCON",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x0F237D5eA7876E0e2906034D98FDB20D43666ad4",
+    "id": "0x0F237D5eA7876E0e2906034D98FDB20D43666ad4"
 }

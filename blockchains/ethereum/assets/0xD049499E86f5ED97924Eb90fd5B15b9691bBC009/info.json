@@ -1,9 +1,10 @@
 {
     "name": "Fulcrum Perpetual Short ETH-WBTC v2",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xD049499E86f5ED97924Eb90fd5B15b9691bBC009",
-    "type": "ERC20",
     "symbol": "sETHwBTC",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xD049499E86f5ED97924Eb90fd5B15b9691bBC009",
+    "id": "0xD049499E86f5ED97924Eb90fd5B15b9691bBC009"
 }

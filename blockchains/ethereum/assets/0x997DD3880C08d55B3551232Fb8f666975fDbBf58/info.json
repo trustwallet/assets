@@ -1,9 +1,10 @@
 {
     "name": "PrivToken",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x997DD3880C08d55B3551232Fb8f666975fDbBf58",
-    "type": "ERC20",
     "symbol": "PRIV",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x997DD3880C08d55B3551232Fb8f666975fDbBf58",
+    "id": "0x997DD3880C08d55B3551232Fb8f666975fDbBf58"
 }

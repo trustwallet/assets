@@ -1,9 +1,10 @@
 {
     "name": "STONK",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xb4058411967D5046f3510943103805be61f0600E",
-    "type": "ERC20",
     "symbol": "STONK",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xb4058411967D5046f3510943103805be61f0600E",
+    "id": "0xb4058411967D5046f3510943103805be61f0600E"
 }

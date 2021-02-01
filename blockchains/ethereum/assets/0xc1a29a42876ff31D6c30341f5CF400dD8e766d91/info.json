@@ -1,9 +1,10 @@
 {
     "name": "SetoCoin",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xc1a29a42876ff31D6c30341f5CF400dD8e766d91",
-    "type": "ERC20",
     "symbol": "SET",
-    "decimals": 8
+    "type": "ERC20",
+    "decimals": 8,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xc1a29a42876ff31D6c30341f5CF400dD8e766d91",
+    "id": "0xc1a29a42876ff31D6c30341f5CF400dD8e766d91"
 }

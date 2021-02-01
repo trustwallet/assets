@@ -1,9 +1,10 @@
 {
     "name": "Agrocoin",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x1fd27F0CfC6f273b87A5E0F6fCf063422E7bCD6a",
-    "type": "ERC20",
     "symbol": "AGRO",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x1fd27F0CfC6f273b87A5E0F6fCf063422E7bCD6a",
+    "id": "0x1fd27F0CfC6f273b87A5E0F6fCf063422E7bCD6a"
 }

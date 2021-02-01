@@ -1,9 +1,10 @@
 {
     "name": "BIDCOIN",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xAD3b5c8542367ca9650437f33950b4AED067289B",
-    "type": "ERC20",
     "symbol": "BID",
-    "decimals": 8
+    "type": "ERC20",
+    "decimals": 8,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xAD3b5c8542367ca9650437f33950b4AED067289B",
+    "id": "0xAD3b5c8542367ca9650437f33950b4AED067289B"
 }

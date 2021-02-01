@@ -1,9 +1,10 @@
 {
     "name": "Token Prometeus Network",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xfc82bb4ba86045Af6F327323a46E80412b91b27d",
-    "type": "ERC20",
     "symbol": "PROM",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xfc82bb4ba86045Af6F327323a46E80412b91b27d",
+    "id": "0xfc82bb4ba86045Af6F327323a46E80412b91b27d"
 }

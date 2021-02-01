@@ -1,9 +1,10 @@
 {
     "name": "SiaCashCoin",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x74FD51a98a4A1ECBeF8Cc43be801cce630E260Bd",
-    "type": "ERC20",
     "symbol": "SCC",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x74FD51a98a4A1ECBeF8Cc43be801cce630E260Bd",
+    "id": "0x74FD51a98a4A1ECBeF8Cc43be801cce630E260Bd"
 }

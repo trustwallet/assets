@@ -1,9 +1,10 @@
 {
     "name": "EUB Chain",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xc37E8a31BA2d110c12f09f0239954A68b00bC599",
-    "type": "ERC20",
     "symbol": "EUBC",
-    "decimals": 8
+    "type": "ERC20",
+    "decimals": 8,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xc37E8a31BA2d110c12f09f0239954A68b00bC599",
+    "id": "0xc37E8a31BA2d110c12f09f0239954A68b00bC599"
 }

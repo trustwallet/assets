@@ -1,9 +1,10 @@
 {
     "name": "BRAAI",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x89C33Ed4C7f780691444C172eAE9E6F1803be2C7",
-    "type": "ERC20",
     "symbol": "BRAAI",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x89C33Ed4C7f780691444C172eAE9E6F1803be2C7",
+    "id": "0x89C33Ed4C7f780691444C172eAE9E6F1803be2C7"
 }

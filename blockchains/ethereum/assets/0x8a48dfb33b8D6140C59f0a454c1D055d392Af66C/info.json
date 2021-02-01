@@ -1,9 +1,10 @@
 {
     "name": "Vbitcoin",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x8a48dfb33b8D6140C59f0a454c1D055d392Af66C",
-    "type": "ERC20",
     "symbol": "VBTC",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x8a48dfb33b8D6140C59f0a454c1D055d392Af66C",
+    "id": "0x8a48dfb33b8D6140C59f0a454c1D055d392Af66C"
 }

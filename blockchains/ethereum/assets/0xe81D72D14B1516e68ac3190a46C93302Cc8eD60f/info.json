@@ -1,9 +1,10 @@
 {
     "name": "Coinlancer",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xe81D72D14B1516e68ac3190a46C93302Cc8eD60f",
-    "type": "ERC20",
     "symbol": "CL",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xe81D72D14B1516e68ac3190a46C93302Cc8eD60f",
+    "id": "0xe81D72D14B1516e68ac3190a46C93302Cc8eD60f"
 }

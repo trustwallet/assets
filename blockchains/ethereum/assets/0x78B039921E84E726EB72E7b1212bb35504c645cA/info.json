@@ -1,9 +1,10 @@
 {
     "name": "Sether",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x78B039921E84E726EB72E7b1212bb35504c645cA",
-    "type": "ERC20",
     "symbol": "SETH",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x78B039921E84E726EB72E7b1212bb35504c645cA",
+    "id": "0x78B039921E84E726EB72E7b1212bb35504c645cA"
 }

@@ -1,9 +1,10 @@
 {
     "name": "ethereumcash",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x5D21eF5f25a985380B65c8e943A0082fEDa0Db84",
-    "type": "ERC20",
     "symbol": "ECASH",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x5D21eF5f25a985380B65c8e943A0082fEDa0Db84",
+    "id": "0x5D21eF5f25a985380B65c8e943A0082fEDa0Db84"
 }

@@ -1,9 +1,10 @@
 {
     "name": "PCHAIN",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xB9bb08AB7E9Fa0A1356bd4A39eC0ca267E03b0b3",
-    "type": "ERC20",
     "symbol": "PI",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xB9bb08AB7E9Fa0A1356bd4A39eC0ca267E03b0b3",
+    "id": "0xB9bb08AB7E9Fa0A1356bd4A39eC0ca267E03b0b3"
 }

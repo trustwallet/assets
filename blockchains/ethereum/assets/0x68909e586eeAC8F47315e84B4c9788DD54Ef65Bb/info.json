@@ -1,9 +1,10 @@
 {
     "name": "EvenCoin",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x68909e586eeAC8F47315e84B4c9788DD54Ef65Bb",
-    "type": "ERC20",
     "symbol": "EVN",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x68909e586eeAC8F47315e84B4c9788DD54Ef65Bb",
+    "id": "0x68909e586eeAC8F47315e84B4c9788DD54Ef65Bb"
 }

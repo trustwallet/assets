@@ -1,9 +1,10 @@
 {
     "name": "SANtiment network token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x7C5A0CE9267ED19B22F8cae653F198e3E8daf098",
-    "type": "ERC20",
     "symbol": "SAN",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x7C5A0CE9267ED19B22F8cae653F198e3E8daf098",
+    "id": "0x7C5A0CE9267ED19B22F8cae653F198e3E8daf098"
 }

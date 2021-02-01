@@ -1,9 +1,10 @@
 {
     "name": "UOSToken",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x430bd07726423A54f6d82Ab0F578CE62A3b8054D",
-    "type": "ERC20",
     "symbol": "UOS",
-    "decimals": 4
+    "type": "ERC20",
+    "decimals": 4,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x430bd07726423A54f6d82Ab0F578CE62A3b8054D",
+    "id": "0x430bd07726423A54f6d82Ab0F578CE62A3b8054D"
 }

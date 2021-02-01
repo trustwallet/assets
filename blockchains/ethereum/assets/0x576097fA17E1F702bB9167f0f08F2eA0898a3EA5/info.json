@@ -1,9 +1,10 @@
 {
     "name": "DogeToken",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x576097fA17E1F702bB9167f0f08F2eA0898a3EA5",
-    "type": "ERC20",
     "symbol": "DogeT",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x576097fA17E1F702bB9167f0f08F2eA0898a3EA5",
+    "id": "0x576097fA17E1F702bB9167f0f08F2eA0898a3EA5"
 }

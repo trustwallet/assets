@@ -1,9 +1,10 @@
 {
     "name": "EPay",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xDe6cE6c57F655b4627870bdA02eA46A2a15EED2E",
-    "type": "ERC20",
     "symbol": "EPAY",
-    "decimals": 4
+    "type": "ERC20",
+    "decimals": 4,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xDe6cE6c57F655b4627870bdA02eA46A2a15EED2E",
+    "id": "0xDe6cE6c57F655b4627870bdA02eA46A2a15EED2E"
 }

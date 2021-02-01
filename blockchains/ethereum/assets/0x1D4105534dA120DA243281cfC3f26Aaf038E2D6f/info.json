@@ -1,9 +1,10 @@
 {
     "name": "Yooba token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x1D4105534dA120DA243281cfC3f26Aaf038E2D6f",
-    "type": "ERC20",
     "symbol": "YOO",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x1D4105534dA120DA243281cfC3f26Aaf038E2D6f",
+    "id": "0x1D4105534dA120DA243281cfC3f26Aaf038E2D6f"
 }

@@ -1,9 +1,10 @@
 {
     "name": "NEOBANKTOKEN",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xbbC13c862d9C5377bed1113BB5AF585912CAAd5f",
-    "type": "ERC20",
     "symbol": "NOC",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xbbC13c862d9C5377bed1113BB5AF585912CAAd5f",
+    "id": "0xbbC13c862d9C5377bed1113BB5AF585912CAAd5f"
 }

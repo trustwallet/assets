@@ -1,9 +1,10 @@
 {
     "name": "Ethash",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x90F08Cc8ddc43f5C01224F67fDf4640995139e8F",
-    "type": "ERC20",
     "symbol": "HETH",
-    "decimals": 8
+    "type": "ERC20",
+    "decimals": 8,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x90F08Cc8ddc43f5C01224F67fDf4640995139e8F",
+    "id": "0x90F08Cc8ddc43f5C01224F67fDf4640995139e8F"
 }

@@ -1,9 +1,10 @@
 {
     "name": "DigiPulse Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xf6cFe53d6FEbaEEA051f400ff5fc14F0cBBDacA1",
-    "type": "ERC20",
     "symbol": "DGPT",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xf6cFe53d6FEbaEEA051f400ff5fc14F0cBBDacA1",
+    "id": "0xf6cFe53d6FEbaEEA051f400ff5fc14F0cBBDacA1"
 }

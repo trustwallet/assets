@@ -1,9 +1,10 @@
 {
     "name": "HUMToken",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xC16BC517Fe6b15903d6cBf02Ffc447291477a43A",
-    "type": "ERC20",
     "symbol": "HUM",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xC16BC517Fe6b15903d6cBf02Ffc447291477a43A",
+    "id": "0xC16BC517Fe6b15903d6cBf02Ffc447291477a43A"
 }

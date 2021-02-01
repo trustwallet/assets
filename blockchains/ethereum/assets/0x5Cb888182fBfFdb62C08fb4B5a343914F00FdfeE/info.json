@@ -1,9 +1,10 @@
 {
     "name": "Moneybrain BiPS",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x5Cb888182fBfFdb62C08fb4B5a343914F00FdfeE",
-    "type": "ERC20",
     "symbol": "BiPS",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x5Cb888182fBfFdb62C08fb4B5a343914F00FdfeE",
+    "id": "0x5Cb888182fBfFdb62C08fb4B5a343914F00FdfeE"
 }

@@ -1,9 +1,10 @@
 {
     "name": "SandBox",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xbf8739f1c903974b90D758Fd0bbB2Bfc79022E8F",
-    "type": "ERC20",
     "symbol": "SBOX",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xbf8739f1c903974b90D758Fd0bbB2Bfc79022E8F",
+    "id": "0xbf8739f1c903974b90D758Fd0bbB2Bfc79022E8F"
 }

@@ -1,9 +1,10 @@
 {
     "name": "Uservice Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xf62baa1997f04F165eDD100d78241E07617F6ce6",
-    "type": "ERC20",
     "symbol": "UST",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xf62baa1997f04F165eDD100d78241E07617F6ce6",
+    "id": "0xf62baa1997f04F165eDD100d78241E07617F6ce6"
 }

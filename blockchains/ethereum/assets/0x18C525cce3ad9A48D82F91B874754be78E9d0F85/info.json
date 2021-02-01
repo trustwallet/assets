@@ -1,9 +1,10 @@
 {
     "name": "Bidooh Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x18C525cce3ad9A48D82F91B874754be78E9d0F85",
-    "type": "ERC20",
     "symbol": "DOOH",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x18C525cce3ad9A48D82F91B874754be78E9d0F85",
+    "id": "0x18C525cce3ad9A48D82F91B874754be78E9d0F85"
 }

@@ -1,9 +1,10 @@
 {
     "name": "PIET Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xaD1741e65cc2a5da47cA6a844E2774bd08c3DB14",
-    "type": "ERC20",
     "symbol": "PIET",
-    "decimals": 5
+    "type": "ERC20",
+    "decimals": 5,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xaD1741e65cc2a5da47cA6a844E2774bd08c3DB14",
+    "id": "0xaD1741e65cc2a5da47cA6a844E2774bd08c3DB14"
 }

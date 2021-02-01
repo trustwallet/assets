@@ -1,9 +1,10 @@
 {
     "name": "Rupiah Coin",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xbb2f95F286ec090555dCa7c0BB49948C59494FdC",
-    "type": "ERC20",
     "symbol": "IDRC",
-    "decimals": 6
+    "type": "ERC20",
+    "decimals": 6,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xbb2f95F286ec090555dCa7c0BB49948C59494FdC",
+    "id": "0xbb2f95F286ec090555dCa7c0BB49948C59494FdC"
 }

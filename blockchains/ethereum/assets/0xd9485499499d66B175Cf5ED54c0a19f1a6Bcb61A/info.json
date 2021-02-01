@@ -1,9 +1,10 @@
 {
     "name": "UseChain Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xd9485499499d66B175Cf5ED54c0a19f1a6Bcb61A",
-    "type": "ERC20",
     "symbol": "USE",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xd9485499499d66B175Cf5ED54c0a19f1a6Bcb61A",
+    "id": "0xd9485499499d66B175Cf5ED54c0a19f1a6Bcb61A"
 }

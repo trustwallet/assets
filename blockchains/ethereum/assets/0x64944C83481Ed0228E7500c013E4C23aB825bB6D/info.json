@@ -1,9 +1,10 @@
 {
     "name": "Instant Asset Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x64944C83481Ed0228E7500c013E4C23aB825bB6D",
-    "type": "ERC20",
     "symbol": "IAT",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x64944C83481Ed0228E7500c013E4C23aB825bB6D",
+    "id": "0x64944C83481Ed0228E7500c013E4C23aB825bB6D"
 }

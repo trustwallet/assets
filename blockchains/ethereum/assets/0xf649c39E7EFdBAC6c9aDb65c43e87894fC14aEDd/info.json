@@ -1,9 +1,10 @@
 {
     "name": "All World Coin",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xf649c39E7EFdBAC6c9aDb65c43e87894fC14aEDd",
-    "type": "ERC20",
     "symbol": "AWC",
-    "decimals": 8
+    "type": "ERC20",
+    "decimals": 8,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xf649c39E7EFdBAC6c9aDb65c43e87894fC14aEDd",
+    "id": "0xf649c39E7EFdBAC6c9aDb65c43e87894fC14aEDd"
 }

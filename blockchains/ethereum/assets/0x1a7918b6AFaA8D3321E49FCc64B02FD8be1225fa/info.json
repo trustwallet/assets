@@ -1,9 +1,10 @@
 {
     "name": "TokenMarket Ltd. A shares",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x1a7918b6AFaA8D3321E49FCc64B02FD8be1225fa",
-    "type": "ERC20",
     "symbol": "TM",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x1a7918b6AFaA8D3321E49FCc64B02FD8be1225fa",
+    "id": "0x1a7918b6AFaA8D3321E49FCc64B02FD8be1225fa"
 }

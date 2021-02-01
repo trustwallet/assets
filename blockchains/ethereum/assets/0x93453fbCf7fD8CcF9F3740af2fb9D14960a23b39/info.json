@@ -1,9 +1,10 @@
 {
     "name": "HaloCoin",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x93453fbCf7fD8CcF9F3740af2fb9D14960a23b39",
-    "type": "ERC20",
     "symbol": "HALO",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x93453fbCf7fD8CcF9F3740af2fb9D14960a23b39",
+    "id": "0x93453fbCf7fD8CcF9F3740af2fb9D14960a23b39"
 }

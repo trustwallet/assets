@@ -1,9 +1,10 @@
 {
     "name": "DarkPay Wallet",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xdB209c97e0De799bbf14E3377307780Ddc26BE4E",
-    "type": "ERC20",
     "symbol": "DPW",
-    "decimals": 8
+    "type": "ERC20",
+    "decimals": 8,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xdB209c97e0De799bbf14E3377307780Ddc26BE4E",
+    "id": "0xdB209c97e0De799bbf14E3377307780Ddc26BE4E"
 }

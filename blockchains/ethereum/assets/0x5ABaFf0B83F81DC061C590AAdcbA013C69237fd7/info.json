@@ -1,9 +1,10 @@
 {
     "name": "Jade Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x5ABaFf0B83F81DC061C590AAdcbA013C69237fd7",
-    "type": "ERC20",
     "symbol": "JADE",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x5ABaFf0B83F81DC061C590AAdcbA013C69237fd7",
+    "id": "0x5ABaFf0B83F81DC061C590AAdcbA013C69237fd7"
 }

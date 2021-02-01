@@ -1,9 +1,10 @@
 {
     "name": "Aave Interest bearing MKR",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x7deB5e830be29F91E298ba5FF1356BB7f8146998",
-    "type": "ERC20",
     "symbol": "aMKR",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x7deB5e830be29F91E298ba5FF1356BB7f8146998",
+    "id": "0x7deB5e830be29F91E298ba5FF1356BB7f8146998"
 }

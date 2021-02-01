@@ -1,9 +1,10 @@
 {
     "name": "ShowCoin",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x58d0A58E4B165a27E4e1B8C2A3eF39C89b581180",
-    "type": "ERC20",
     "symbol": "Show",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x58d0A58E4B165a27E4e1B8C2A3eF39C89b581180",
+    "id": "0x58d0A58E4B165a27E4e1B8C2A3eF39C89b581180"
 }

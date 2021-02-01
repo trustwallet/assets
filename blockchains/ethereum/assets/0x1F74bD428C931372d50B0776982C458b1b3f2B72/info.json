@@ -1,9 +1,10 @@
 {
     "name": "FGCoin",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x1F74bD428C931372d50B0776982C458b1b3f2B72",
-    "type": "ERC20",
     "symbol": "FGC",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x1F74bD428C931372d50B0776982C458b1b3f2B72",
+    "id": "0x1F74bD428C931372d50B0776982C458b1b3f2B72"
 }

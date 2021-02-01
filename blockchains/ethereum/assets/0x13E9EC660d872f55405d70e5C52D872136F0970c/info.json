@@ -1,9 +1,10 @@
 {
     "name": "TKT",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x13E9EC660d872f55405d70e5C52D872136F0970c",
-    "type": "ERC20",
     "symbol": "TKT",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x13E9EC660d872f55405d70e5C52D872136F0970c",
+    "id": "0x13E9EC660d872f55405d70e5C52D872136F0970c"
 }

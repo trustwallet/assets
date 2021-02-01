@@ -1,9 +1,10 @@
 {
     "name": "Roulette Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xcCeD5B8288086BE8c38E23567e684C3740be4D48",
-    "type": "ERC20",
     "symbol": "RLT",
-    "decimals": 10
+    "type": "ERC20",
+    "decimals": 10,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xcCeD5B8288086BE8c38E23567e684C3740be4D48",
+    "id": "0xcCeD5B8288086BE8c38E23567e684C3740be4D48"
 }

@@ -1,9 +1,10 @@
 {
     "name": "PayAccept",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x1Fe72034dA777ef22533eaa6Dd7cBE1D80bE50Fa",
-    "type": "ERC20",
     "symbol": "PAY",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x1Fe72034dA777ef22533eaa6Dd7cBE1D80bE50Fa",
+    "id": "0x1Fe72034dA777ef22533eaa6Dd7cBE1D80bE50Fa"
 }

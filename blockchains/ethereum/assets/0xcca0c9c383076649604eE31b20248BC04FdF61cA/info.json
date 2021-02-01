@@ -1,9 +1,10 @@
 {
     "name": "BitMax token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xcca0c9c383076649604eE31b20248BC04FdF61cA",
-    "type": "ERC20",
     "symbol": "BTMX",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xcca0c9c383076649604eE31b20248BC04FdF61cA",
+    "id": "0xcca0c9c383076649604eE31b20248BC04FdF61cA"
 }

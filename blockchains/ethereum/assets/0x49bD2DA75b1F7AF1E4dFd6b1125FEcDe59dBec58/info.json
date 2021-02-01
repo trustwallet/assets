@@ -1,9 +1,10 @@
 {
     "name": "Linkey Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x49bD2DA75b1F7AF1E4dFd6b1125FEcDe59dBec58",
-    "type": "ERC20",
     "symbol": "LKY",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x49bD2DA75b1F7AF1E4dFd6b1125FEcDe59dBec58",
+    "id": "0x49bD2DA75b1F7AF1E4dFd6b1125FEcDe59dBec58"
 }

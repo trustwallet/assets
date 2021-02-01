@@ -1,9 +1,10 @@
 {
     "name": "Bilaxy Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x40d52577830E01aAEfa80659aA90ee8B34685F4e",
-    "type": "ERC20",
     "symbol": "BIA",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x40d52577830E01aAEfa80659aA90ee8B34685F4e",
+    "id": "0x40d52577830E01aAEfa80659aA90ee8B34685F4e"
 }

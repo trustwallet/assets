@@ -1,9 +1,10 @@
 {
     "name": "Oneledger Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x64A60493D888728Cf42616e034a0dfEAe38EFCF0",
-    "type": "ERC20",
     "symbol": "OLT",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x64A60493D888728Cf42616e034a0dfEAe38EFCF0",
+    "id": "0x64A60493D888728Cf42616e034a0dfEAe38EFCF0"
 }

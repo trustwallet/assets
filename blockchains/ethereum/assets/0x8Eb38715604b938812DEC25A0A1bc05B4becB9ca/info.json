@@ -1,9 +1,10 @@
 {
     "name": "Gric Coin",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x8Eb38715604b938812DEC25A0A1bc05B4becB9ca",
-    "type": "ERC20",
     "symbol": "GC",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x8Eb38715604b938812DEC25A0A1bc05B4becB9ca",
+    "id": "0x8Eb38715604b938812DEC25A0A1bc05B4becB9ca"
 }

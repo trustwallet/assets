@@ -1,9 +1,10 @@
 {
     "name": "TESLA",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x03806Ce5ef69Bd9780EDFb04c29da1F23Db96294",
-    "type": "ERC20",
     "symbol": "TSL",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x03806Ce5ef69Bd9780EDFb04c29da1F23Db96294",
+    "id": "0x03806Ce5ef69Bd9780EDFb04c29da1F23Db96294"
 }

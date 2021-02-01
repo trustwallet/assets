@@ -1,9 +1,10 @@
 {
     "name": "EtherDoge",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x8a7b7B9B2f7d0c63F66171721339705A6188a7D5",
-    "type": "ERC20",
     "symbol": "EDOGE",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x8a7b7B9B2f7d0c63F66171721339705A6188a7D5",
+    "id": "0x8a7b7B9B2f7d0c63F66171721339705A6188a7D5"
 }

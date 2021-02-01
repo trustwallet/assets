@@ -1,9 +1,10 @@
 {
     "name": "Aave Interest bearing USDC",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x9bA00D6856a4eDF4665BcA2C2309936572473B7E",
-    "type": "ERC20",
     "symbol": "aUSDC",
-    "decimals": 6
+    "type": "ERC20",
+    "decimals": 6,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x9bA00D6856a4eDF4665BcA2C2309936572473B7E",
+    "id": "0x9bA00D6856a4eDF4665BcA2C2309936572473B7E"
 }

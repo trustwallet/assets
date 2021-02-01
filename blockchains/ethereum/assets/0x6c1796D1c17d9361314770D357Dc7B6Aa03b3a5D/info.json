@@ -1,9 +1,10 @@
 {
     "name": "EllisToken",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x6c1796D1c17d9361314770D357Dc7B6Aa03b3a5D",
-    "type": "ERC20",
     "symbol": "ELIS",
-    "decimals": 10
+    "type": "ERC20",
+    "decimals": 10,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x6c1796D1c17d9361314770D357Dc7B6Aa03b3a5D",
+    "id": "0x6c1796D1c17d9361314770D357Dc7B6Aa03b3a5D"
 }

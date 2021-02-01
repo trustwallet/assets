@@ -1,9 +1,10 @@
 {
     "name": "ConnectJob",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x3abdfF32F76b42E7635bdb7e425f0231A5F3aB17",
-    "type": "ERC20",
     "symbol": "CJT",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x3abdfF32F76b42E7635bdb7e425f0231A5F3aB17",
+    "id": "0x3abdfF32F76b42E7635bdb7e425f0231A5F3aB17"
 }

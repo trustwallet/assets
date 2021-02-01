@@ -1,9 +1,10 @@
 {
     "name": "PromotionCoin",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xa6714a2e5f0B1bdb97b895b0913b4FcD3a775E4D",
-    "type": "ERC20",
     "symbol": "PC",
-    "decimals": 5
+    "type": "ERC20",
+    "decimals": 5,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xa6714a2e5f0B1bdb97b895b0913b4FcD3a775E4D",
+    "id": "0xa6714a2e5f0B1bdb97b895b0913b4FcD3a775E4D"
 }

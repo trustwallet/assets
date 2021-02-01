@@ -1,9 +1,10 @@
 {
     "name": "DoradoToken",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x906b3f8b7845840188Eab53c3f5AD348A787752f",
-    "type": "ERC20",
     "symbol": "DOR",
-    "decimals": 15
+    "type": "ERC20",
+    "decimals": 15,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x906b3f8b7845840188Eab53c3f5AD348A787752f",
+    "id": "0x906b3f8b7845840188Eab53c3f5AD348A787752f"
 }

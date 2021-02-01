@@ -1,9 +1,10 @@
 {
     "name": "ClearCoin",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x1E26b3D07E57F453caE30F7DDd2f945f5bF3EF33",
-    "type": "ERC20",
     "symbol": "XCLR",
-    "decimals": 8
+    "type": "ERC20",
+    "decimals": 8,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x1E26b3D07E57F453caE30F7DDd2f945f5bF3EF33",
+    "id": "0x1E26b3D07E57F453caE30F7DDd2f945f5bF3EF33"
 }

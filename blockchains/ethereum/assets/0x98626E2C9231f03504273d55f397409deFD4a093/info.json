@@ -1,9 +1,10 @@
 {
     "name": "Dev",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x98626E2C9231f03504273d55f397409deFD4a093",
-    "type": "ERC20",
     "symbol": "DEV",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x98626E2C9231f03504273d55f397409deFD4a093",
+    "id": "0x98626E2C9231f03504273d55f397409deFD4a093"
 }

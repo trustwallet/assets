@@ -1,9 +1,10 @@
 {
     "name": "PurpleCoin",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x809FAaF63eE61B9133102b4Fbe560219b534b6e4",
-    "type": "ERC20",
     "symbol": "PPC",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x809FAaF63eE61B9133102b4Fbe560219b534b6e4",
+    "id": "0x809FAaF63eE61B9133102b4Fbe560219b534b6e4"
 }

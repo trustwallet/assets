@@ -1,9 +1,10 @@
 {
     "name": "Zuflo Coin",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x19fFfd124CD9089E21026d10dA97f8cD6B442Bff",
-    "type": "ERC20",
     "symbol": "ZFL",
-    "decimals": 8
+    "type": "ERC20",
+    "decimals": 8,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x19fFfd124CD9089E21026d10dA97f8cD6B442Bff",
+    "id": "0x19fFfd124CD9089E21026d10dA97f8cD6B442Bff"
 }

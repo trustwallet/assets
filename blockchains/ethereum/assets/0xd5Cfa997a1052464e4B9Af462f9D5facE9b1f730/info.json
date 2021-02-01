@@ -1,9 +1,10 @@
 {
     "name": "Yobtc Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xd5Cfa997a1052464e4B9Af462f9D5facE9b1f730",
-    "type": "ERC20",
     "symbol": "YOBTC",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xd5Cfa997a1052464e4B9Af462f9D5facE9b1f730",
+    "id": "0xd5Cfa997a1052464e4B9Af462f9D5facE9b1f730"
 }

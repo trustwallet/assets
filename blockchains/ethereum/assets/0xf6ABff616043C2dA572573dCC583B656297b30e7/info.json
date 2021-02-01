@@ -1,9 +1,10 @@
 {
     "name": "Custody Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xf6ABff616043C2dA572573dCC583B656297b30e7",
-    "type": "ERC20",
     "symbol": "CUST",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xf6ABff616043C2dA572573dCC583B656297b30e7",
+    "id": "0xf6ABff616043C2dA572573dCC583B656297b30e7"
 }

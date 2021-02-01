@@ -1,9 +1,10 @@
 {
     "name": "botXcoin",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xEF19F4E48830093Ce5bC8b3Ff7f903A0AE3E9Fa1",
-    "type": "ERC20",
     "symbol": "BOTX",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xEF19F4E48830093Ce5bC8b3Ff7f903A0AE3E9Fa1",
+    "id": "0xEF19F4E48830093Ce5bC8b3Ff7f903A0AE3E9Fa1"
 }

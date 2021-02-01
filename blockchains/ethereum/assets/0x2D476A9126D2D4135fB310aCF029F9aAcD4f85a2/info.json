@@ -1,9 +1,10 @@
 {
     "name": "Soft Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x2D476A9126D2D4135fB310aCF029F9aAcD4f85a2",
-    "type": "ERC20",
     "symbol": "SFT",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x2D476A9126D2D4135fB310aCF029F9aAcD4f85a2",
+    "id": "0x2D476A9126D2D4135fB310aCF029F9aAcD4f85a2"
 }

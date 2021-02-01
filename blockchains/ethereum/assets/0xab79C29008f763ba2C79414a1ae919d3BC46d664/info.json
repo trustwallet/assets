@@ -1,9 +1,10 @@
 {
     "name": "WCSF Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xab79C29008f763ba2C79414a1ae919d3BC46d664",
-    "type": "ERC20",
     "symbol": "WCSF",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xab79C29008f763ba2C79414a1ae919d3BC46d664",
+    "id": "0xab79C29008f763ba2C79414a1ae919d3BC46d664"
 }

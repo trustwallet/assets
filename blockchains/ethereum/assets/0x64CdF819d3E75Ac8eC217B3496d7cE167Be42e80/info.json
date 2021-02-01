@@ -1,9 +1,10 @@
 {
     "name": "InsurePal token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x64CdF819d3E75Ac8eC217B3496d7cE167Be42e80",
-    "type": "ERC20",
     "symbol": "IPL",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x64CdF819d3E75Ac8eC217B3496d7cE167Be42e80",
+    "id": "0x64CdF819d3E75Ac8eC217B3496d7cE167Be42e80"
 }

@@ -1,9 +1,10 @@
 {
     "name": "ETHDaiRebalancingSetToken",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x8Ddc86DbA7ad728012eFc460b8A168Aba60B403B",
-    "type": "ERC20",
     "symbol": "ETHDai",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x8Ddc86DbA7ad728012eFc460b8A168Aba60B403B",
+    "id": "0x8Ddc86DbA7ad728012eFc460b8A168Aba60B403B"
 }

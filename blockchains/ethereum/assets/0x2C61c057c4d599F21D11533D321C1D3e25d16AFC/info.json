@@ -1,9 +1,10 @@
 {
     "name": "Pixie Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x2C61c057c4d599F21D11533D321C1D3e25d16AFC",
-    "type": "ERC20",
     "symbol": "PXE",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x2C61c057c4d599F21D11533D321C1D3e25d16AFC",
+    "id": "0x2C61c057c4d599F21D11533D321C1D3e25d16AFC"
 }

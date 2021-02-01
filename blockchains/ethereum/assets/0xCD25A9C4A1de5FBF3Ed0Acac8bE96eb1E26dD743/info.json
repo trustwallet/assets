@@ -1,9 +1,10 @@
 {
     "name": "CoinMarketFeed",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xCD25A9C4A1de5FBF3Ed0Acac8bE96eb1E26dD743",
-    "type": "ERC20",
     "symbol": "CMF",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xCD25A9C4A1de5FBF3Ed0Acac8bE96eb1E26dD743",
+    "id": "0xCD25A9C4A1de5FBF3Ed0Acac8bE96eb1E26dD743"
 }

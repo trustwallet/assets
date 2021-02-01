@@ -1,9 +1,10 @@
 {
     "name": "MASSCOIN",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x336e43eD5B563f73E989b2748C1d6D65A693149b",
-    "type": "ERC20",
     "symbol": "MSC",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x336e43eD5B563f73E989b2748C1d6D65A693149b",
+    "id": "0x336e43eD5B563f73E989b2748C1d6D65A693149b"
 }

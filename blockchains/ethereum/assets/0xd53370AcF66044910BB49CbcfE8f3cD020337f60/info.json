@@ -1,9 +1,10 @@
 {
     "name": "Consensus Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xd53370AcF66044910BB49CbcfE8f3cD020337f60",
-    "type": "ERC20",
     "symbol": "SEN",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xd53370AcF66044910BB49CbcfE8f3cD020337f60",
+    "id": "0xd53370AcF66044910BB49CbcfE8f3cD020337f60"
 }

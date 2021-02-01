@@ -1,9 +1,10 @@
 {
     "name": "NamTanToken",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x9025f9A59694dd939739e05beB2502a567e8326f",
-    "type": "ERC20",
     "symbol": "NAMTT",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x9025f9A59694dd939739e05beB2502a567e8326f",
+    "id": "0x9025f9A59694dd939739e05beB2502a567e8326f"
 }

@@ -1,9 +1,10 @@
 {
     "name": "renBTC",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0xEB4C2781e4ebA804CE9a9803C67d0893436bB27D",
-    "type": "ERC20",
     "symbol": "renBTC",
-    "decimals": 8
+    "type": "ERC20",
+    "decimals": 8,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0xEB4C2781e4ebA804CE9a9803C67d0893436bB27D",
+    "id": "0xEB4C2781e4ebA804CE9a9803C67d0893436bB27D"
 }

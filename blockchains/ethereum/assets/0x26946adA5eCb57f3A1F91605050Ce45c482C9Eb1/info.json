@@ -1,9 +1,10 @@
 {
     "name": "BitcoinSoV",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x26946adA5eCb57f3A1F91605050Ce45c482C9Eb1",
-    "type": "ERC20",
     "symbol": "BSOV",
-    "decimals": 8
+    "type": "ERC20",
+    "decimals": 8,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x26946adA5eCb57f3A1F91605050Ce45c482C9Eb1",
+    "id": "0x26946adA5eCb57f3A1F91605050Ce45c482C9Eb1"
 }

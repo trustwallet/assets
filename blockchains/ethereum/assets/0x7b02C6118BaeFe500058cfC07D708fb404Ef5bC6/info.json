@@ -1,9 +1,10 @@
 {
     "name": "Tryminex Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x7b02C6118BaeFe500058cfC07D708fb404Ef5bC6",
-    "type": "ERC20",
     "symbol": "TMX",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x7b02C6118BaeFe500058cfC07D708fb404Ef5bC6",
+    "id": "0x7b02C6118BaeFe500058cfC07D708fb404Ef5bC6"
 }

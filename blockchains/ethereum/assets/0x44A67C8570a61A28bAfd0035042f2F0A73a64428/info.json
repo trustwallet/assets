@@ -1,9 +1,10 @@
 {
     "name": "GermanCoin",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x44A67C8570a61A28bAfd0035042f2F0A73a64428",
-    "type": "ERC20",
     "symbol": "GCX",
-    "decimals": 6
+    "type": "ERC20",
+    "decimals": 6,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x44A67C8570a61A28bAfd0035042f2F0A73a64428",
+    "id": "0x44A67C8570a61A28bAfd0035042f2F0A73a64428"
 }

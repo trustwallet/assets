@@ -1,9 +1,10 @@
 {
     "name": "EARTH Token",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x900b4449236a7bb26b286601dD14d2bDe7a6aC6c",
-    "type": "ERC20",
     "symbol": "EARTH",
-    "decimals": 8
+    "type": "ERC20",
+    "decimals": 8,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x900b4449236a7bb26b286601dD14d2bDe7a6aC6c",
+    "id": "0x900b4449236a7bb26b286601dD14d2bDe7a6aC6c"
 }

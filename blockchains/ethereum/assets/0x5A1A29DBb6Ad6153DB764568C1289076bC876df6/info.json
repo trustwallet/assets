@@ -1,9 +1,10 @@
 {
     "name": "NeworkCoin",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x5A1A29DBb6Ad6153DB764568C1289076bC876df6",
-    "type": "ERC20",
     "symbol": "NKC",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x5A1A29DBb6Ad6153DB764568C1289076bC876df6",
+    "id": "0x5A1A29DBb6Ad6153DB764568C1289076bC876df6"
 }

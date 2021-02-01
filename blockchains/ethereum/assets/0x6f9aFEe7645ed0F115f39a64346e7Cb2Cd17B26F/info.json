@@ -1,9 +1,10 @@
 {
     "name": "LibraNetwork",
-    "website": "https://missing",
-    "short_description": "-",
-    "explorer": "https://etherscan.io/token/0x6f9aFEe7645ed0F115f39a64346e7Cb2Cd17B26F",
-    "type": "ERC20",
     "symbol": "Libra",
-    "decimals": 18
+    "type": "ERC20",
+    "decimals": 18,
+    "short_description": "-",
+    "website": "https://missing",
+    "explorer": "https://etherscan.io/token/0x6f9aFEe7645ed0F115f39a64346e7Cb2Cd17B26F",
+    "id": "0x6f9aFEe7645ed0F115f39a64346e7Cb2Cd17B26F"
 }
