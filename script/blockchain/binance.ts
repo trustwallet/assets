@@ -125,7 +125,7 @@ export class BinanceAction implements ActionInterface {
         ];
     }
     
-    async update(): Promise<void> {
+    async updateAuto(): Promise<void> {
         // retrieve missing token images; BEP2 (bep8 not supported)
         const bep2InfoList = await retrieveBep2AssetList();
         const denylist: string[] = readJsonFile(getChainDenylistPath(binanceChain)) as string[];
