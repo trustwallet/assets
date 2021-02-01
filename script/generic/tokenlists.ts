@@ -6,7 +6,6 @@ import { tokenInfoFromTwApi, TokenTwInfo } from "../generic/asset";
 import {
     getChainAssetLogoPath,
     getChainAllowlistPath,
-    getChainTokenlistBasePath,
     getChainTokenlistPath,
 } from "../generic/repo-structure";
 import * as bluebird from "bluebird";
