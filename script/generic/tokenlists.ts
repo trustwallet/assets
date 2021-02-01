@@ -277,6 +277,12 @@ function sort(list: List) {
     });
 }
 
+function removeAllPairs(list: List) {
+    // remove all pairs
+    list.pairs = [];
+    list.tokens.forEach(t => t.pairs = []);
+}
+
 function clearUnimportantFields(list: List) {
     list.timestamp = "";
     list.version = new Version(0, 0, 0);
@@ -329,6 +335,7 @@ export async function rebuildTokenlist(chainName: string, pairs: [TokenItem, Tok
     const json = readJsonFile(tokenlistFile);
     const list: List = json as List;
     console.log(`Tokenlist original: ${list.tokens.length} tokens`);
+    removeAllPairs(list);
 
     await bluebird.each(pairs2, async (p) => {
         await addPairIfNeeded(p[0], p[1], list);

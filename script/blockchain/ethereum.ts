@@ -22,6 +22,7 @@ const PrimaryTokens: string[] = ["WETH", "ETH"];
 async function retrieveUniswapPairs(): Promise<PairInfo[]> {
     console.log(`Retrieving pairs from Uniswap, limit liquidity USD ${config.Uniswap_MinLiquidity}  volume ${config.Uniswap_MinVol24}  txcount ${config.Uniswap_MinTxCount24}`);
 
+    console.log(`  forceIncludeList: ${config.Uniswap_ForceInclude}`);
     const includeList = parseForceList(config.Uniswap_ForceInclude);
 
     const pairs = await getTradingPairs(config.Uniswap_TradingPairsUrl, config.Uniswap_TradingPairsQuery);

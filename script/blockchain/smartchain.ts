@@ -21,6 +21,7 @@ const PrimaryTokens: string[] = ["WBNB", "BNB"];
 async function retrievePancakeSwapPairs(): Promise<PairInfo[]> {
     console.log(`Retrieving pairs from PancakeSwap, limit liquidity USD ${config.PancakeSwap_MinLiquidity}  volume ${config.PancakeSwap_MinVol24}  txcount ${config.PancakeSwap_MinTxCount24}`);
 
+    console.log(`  forceIncludeList: ${config.PancakeSwap_ForceInclude}`);
     const includeList = parseForceList(config.PancakeSwap_ForceInclude);
 
     const pairs = await getTradingPairs(config.PancakeSwap_TradingPairsUrl, config.PancakeSwap_TradingPairsQuery);
