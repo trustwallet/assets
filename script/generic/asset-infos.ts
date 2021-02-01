@@ -34,7 +34,7 @@ function isAssetInfoHasAllKeys(info: unknown, path: string): [boolean, string] {
     return [isKeysCorrentType, `Check keys '${requiredKeys}' vs. '${infoKeys}'`];
 }
 
-function explorerUrl(chain: string, contract: string): string {
+export function explorerUrl(chain: string, contract: string): string {
     if (contract) {
         switch (chain.toLowerCase()) {
             case CoinType.name(CoinType.ethereum):
