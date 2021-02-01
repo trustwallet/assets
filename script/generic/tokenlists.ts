@@ -95,7 +95,6 @@ export function parseForceListEntry(rawForceListEntry: string): ForceListPair {
 }
 
 export function parseForceList(rawForceList: string[]): ForceListPair[] {
-    const pairs: ForceListPair[] = [];
     return rawForceList.map(e => parseForceListEntry(e));
 }
 
