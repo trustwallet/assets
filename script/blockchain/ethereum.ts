@@ -82,7 +82,7 @@ export class EthereumAction implements ActionInterface {
 
     getSanityChecks(): CheckStepInterface[] { return []; }
 
-    async update(): Promise<void> {
+    async updateAuto(): Promise<void> {
         //await generateTokenlist();
     }
 }

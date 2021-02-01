@@ -176,13 +176,13 @@ async function consistencyFixByList(actions: ActionInterface[]) {
     console.log("All consistency fixes done.");
 }
 
-async function updateByList(actions: ActionInterface[]) {
+async function updateAutoByList(actions: ActionInterface[]) {
     console.log("Running updates (using external data sources) ...");
     await bluebird.each(actions, async (action) => {
         try {
             if (action.update) {
                 console.log(`Update '${action.getName()}':`);
-                await action.update();
+                await action.updateAuto();
             }
         } catch (error) {
             console.log(`Caught error: ${error.message}`);
@@ -207,6 +207,6 @@ export async function consistencyFixAll(): Promise<void> {
     await consistencyFixByList(actionList);
 }
 
-export async function updateAll(): Promise<void> {
-    await updateByList(actionList);
+export async function updateAutoAll(): Promise<void> {
+    await updateAutoByList(actionList);
 }
