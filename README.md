@@ -61,7 +61,7 @@ Info on supported trading pairs are stored in `tokenlist.json` files.
 Trading pairs can be updated --
 from Uniswap/Ethereum and Panckaswap/Smartchain -- using update script (and checking in changes).
 Minimal limit values for trading pair inclusion are set in the `config.ts` file.
-There is also options for force-include and force-exclude in the config.
+There are also options for force-include and force-exclude in the config.
 
 ## Disclaimer
 Trust Wallet team allows anyone to submit new assets to this repository. However, this does not mean that we are in direct partnership with all of the projects.
