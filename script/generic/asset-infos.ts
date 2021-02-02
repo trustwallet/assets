@@ -29,7 +29,7 @@ function isAssetInfoHasAllKeys(info: unknown, path: string): [boolean, string] {
         typeof info['explorer'] === "string" && info['explorer'] != ""
         && typeof info['name'] === "string" && info['name'] != ""
         && typeof info['website'] === "string"
-        && typeof info['short_description'] === "string";
+        && typeof info['description'] === "string";
     
     return [isKeysCorrentType, `Check keys '${requiredKeys}' vs. '${infoKeys}'`];
 }
