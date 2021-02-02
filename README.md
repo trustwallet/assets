@@ -42,6 +42,27 @@ For details, see the [Developers site](https://developer.trustwallet.com/add_new
 
 - [Repository details](https://developer.trustwallet.com/add_new_asset#repository-details)
 
+## Scripts
+
+There are several scripts available for maintainers:
+
+- `npm run check` -- Execute validation checks; also used in continuous integration.
+- `npm run check-sanity` -- Strict subset of checks
+- `npm run fix` -- Perform automatic fixes where possible
+- `npm run fix-sanity` -- Stricter subset
+- `npm run updateAuto` -- Run automatic updates from external sources, executed regularly (GitHub action)
+- `npm run update` -- Run manual updates from external sources, for manual use.
+- `npm test` -- Run script unit tests
+- `npm lint` -- Run Lint static code check
+
+## Trading pair maintenance
+
+Info on supported trading pairs are stored in `tokenlist.json` files.
+Trading pairs can be updated --
+from Uniswap/Ethereum and Panckaswap/Smartchain -- using update script (and checking in changes).
+Minimal limit values for trading pair inclusion are set in the `config.ts` file.
+There are also options for force-include and force-exclude in the config.
+
 ## Disclaimer
 Trust Wallet team allows anyone to submit new assets to this repository. However, this does not mean that we are in direct partnership with all of the projects.
 
