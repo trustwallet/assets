@@ -14,7 +14,7 @@ import { ActionInterface, CheckStepInterface } from "../generic/interface";
 import { CoinType } from "@trustwallet/wallet-core";
 import * as bluebird from "bluebird";
 
-const requiredKeys = ["explorer", "name", "website", "short_description"];
+const requiredKeys = ["explorer", "name", "website", "description"];
 
 function isAssetInfoHasAllKeys(info: unknown, path: string): [boolean, string] {
     const infoKeys = Object.keys(info);
