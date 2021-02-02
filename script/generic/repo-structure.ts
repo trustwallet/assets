@@ -15,7 +15,6 @@ export const infoFullName = `${infoName}.${jsonExtension}`;
 const allowList = `allowlist.${jsonExtension}`;
 const denyList = `denylist.${jsonExtension}`;
 const tokenList = `tokenlist.${jsonExtension}`;
-const tokenListBase = `tokenlist_base.${jsonExtension}`;
 export const validatorsList = `${listName}.${jsonExtension}`
 
 export const assetFolderAllowedFiles = [logoFullName, infoFullName];
@@ -24,7 +23,6 @@ export const chainFolderAllowedFiles = [
     allowList,
     denyList,
     tokenList,
-    tokenListBase,
     "validators",
     infoName
 ]
@@ -39,7 +37,6 @@ export const getChainAssetInfoPath = (chain: string, asset: string): string => `
 export const getChainAllowlistPath = (chain: string): string => `${getChainPath(chain)}/${allowList}`;
 export const getChainDenylistPath = (chain: string): string => `${getChainPath(chain)}/${denyList}`;
 export const getChainTokenlistPath = (chain: string): string => `${getChainPath(chain)}/${tokenList}`;
-export const getChainTokenlistBasePath = (chain: string): string => `${getChainPath(chain)}/${tokenListBase}`;
 export const pricingFolderPath = path.join(process.cwd(), '/pricing');
 
 export const getChainValidatorsPath = (chain: string): string => `${getChainPath(chain)}/validators`;

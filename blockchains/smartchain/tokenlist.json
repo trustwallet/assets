@@ -1,7 +1,7 @@
 {
     "name": "Trust Wallet: Smart Chain",
     "logoURI": "https://trustwallet.com/assets/images/favicon.png",
-    "timestamp": "2021-01-29T07:23:25.492Z",
+    "timestamp": "2021-02-01T15:48:39.820Z",
     "tokens": [
         {
             "chainId": 56,
@@ -59,9 +59,6 @@
                     "base": "c20000714_t0x4B0F1812e5Df2A09796481Ff14017e6005508003"
                 },
                 {
-                    "base": "c20000714_t0x4BD17003473389A42DAF6a0a729f6Fdb328BbBd7"
-                },
-                {
                     "base": "c20000714_t0x55d398326f99059fF775485246999027B3197955"
                 },
                 {
@@ -83,7 +80,13 @@
                     "base": "c20000714_t0x728C5baC3C3e370E372Fc4671f9ef6916b814d8B"
                 },
                 {
+                    "base": "c20000714_t0x72fAa679E1008Ad8382959FF48E392042A8b06f7"
+                },
+                {
                     "base": "c20000714_t0x78650B139471520656b9E7aA7A5e9276814a38e9"
+                },
+                {
+                    "base": "c20000714_t0x7979F6C54ebA05E18Ded44C4F986F49a5De551c2"
                 },
                 {
                     "base": "c20000714_t0x88f1A5ae2A3BF98AEAF342D26B30a79438c9142e"
@@ -93,6 +96,9 @@
                 },
                 {
                     "base": "c20000714_t0x928e55daB735aa8260AF3cEDadA18B5f70C72f1b"
+                },
+                {
+                    "base": "c20000714_t0x948d2a81086A075b3130BAc19e4c6DEe1D2E3fE8"
                 },
                 {
                     "base": "c20000714_t0xa1faa113cbE53436Df28FF0aEe54275c13B40975"
@@ -111,6 +117,9 @@
                 },
                 {
                     "base": "c20000714_t0xbF7c81FFF98BbE61B40Ed186e4AfD6DDd01337fe"
+                },
+                {
+                    "base": "c20000714_t0xCa3F508B8e4Dd382eE878A314789373D80A5190A"
                 },
                 {
                     "base": "c20000714_t0xcF6BB5389c92Bdda8a3747Ddb454cB7a64626C63"
@@ -368,6 +377,16 @@
             "pairs": []
         },
         {
+            "asset": "c20000714_t0x72fAa679E1008Ad8382959FF48E392042A8b06f7",
+            "type": "BEP20",
+            "address": "0x72fAa679E1008Ad8382959FF48E392042A8b06f7",
+            "name": "AllianceBlock Token",
+            "symbol": "bALBT",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x72fAa679E1008Ad8382959FF48E392042A8b06f7/logo.png",
+            "pairs": []
+        },
+        {
             "asset": "c20000714_t0x78650B139471520656b9E7aA7A5e9276814a38e9",
             "type": "BEP20",
             "address": "0x78650B139471520656b9E7aA7A5e9276814a38e9",
@@ -375,6 +394,16 @@
             "symbol": "BTCST",
             "decimals": 18,
             "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x78650B139471520656b9E7aA7A5e9276814a38e9/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c20000714_t0x7979F6C54ebA05E18Ded44C4F986F49a5De551c2",
+            "type": "BEP20",
+            "address": "0x7979F6C54ebA05E18Ded44C4F986F49a5De551c2",
+            "name": "Kebab Token",
+            "symbol": "KEBAB",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x7979F6C54ebA05E18Ded44C4F986F49a5De551c2/logo.png",
             "pairs": []
         },
         {
@@ -405,6 +434,16 @@
             "symbol": "FRONT",
             "decimals": 18,
             "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x928e55daB735aa8260AF3cEDadA18B5f70C72f1b/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c20000714_t0x948d2a81086A075b3130BAc19e4c6DEe1D2E3fE8",
+            "type": "BEP20",
+            "address": "0x948d2a81086A075b3130BAc19e4c6DEe1D2E3fE8",
+            "name": "Helmet.insure Governance Token",
+            "symbol": "Helmet",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x948d2a81086A075b3130BAc19e4c6DEe1D2E3fE8/logo.png",
             "pairs": []
         },
         {
@@ -473,6 +512,17 @@
         },
         {
             "chainId": 56,
+            "asset": "c20000714_t0xCa3F508B8e4Dd382eE878A314789373D80A5190A",
+            "type": "BEP20",
+            "address": "0xCa3F508B8e4Dd382eE878A314789373D80A5190A",
+            "name": "beefy.finance",
+            "symbol": "BIFI",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xCa3F508B8e4Dd382eE878A314789373D80A5190A/logo.png",
+            "pairs": []
+        },
+        {
+            "chainId": 56,
             "asset": "c20000714_t0xcF6BB5389c92Bdda8a3747Ddb454cB7a64626C63",
             "type": "BEP20",
             "address": "0xcF6BB5389c92Bdda8a3747Ddb454cB7a64626C63",
@@ -526,7 +576,7 @@
         }
     ],
     "version": {
-        "major": 2,
+        "major": 6,
         "minor": 0,
         "patch": 0
     }
