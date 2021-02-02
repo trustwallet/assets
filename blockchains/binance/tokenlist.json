@@ -1,7 +1,7 @@
 {
     "name": "Trust Wallet: BNB",
     "logoURI": "https://trustwallet.com/assets/images/favicon.png",
-    "timestamp": "2021-02-01T07:26:33.317Z",
+    "timestamp": "2021-02-02T07:28:27.839Z",
     "tokens": [
         {
             "asset": "c714",
@@ -179,7 +179,7 @@
                 },
                 {
                     "base": "c714_tDREP-7D2",
-                    "lotSize": "10000000000",
+                    "lotSize": "1000000000",
                     "tickSize": "1"
                 },
                 {
@@ -199,8 +199,8 @@
                 },
                 {
                     "base": "c714_tEOSBEAR-721",
-                    "lotSize": "10000000",
-                    "tickSize": "10"
+                    "lotSize": "100000000",
+                    "tickSize": "1"
                 },
                 {
                     "base": "c714_tEOSBULL-F0D",
@@ -369,7 +369,7 @@
                 },
                 {
                     "base": "c714_tNOIZB-878",
-                    "lotSize": "1000000000",
+                    "lotSize": "100000000",
                     "tickSize": "1"
                 },
                 {
@@ -399,7 +399,7 @@
                 },
                 {
                     "base": "c714_tPHB-2DF",
-                    "lotSize": "10000000000",
+                    "lotSize": "1000000000",
                     "tickSize": "1"
                 },
                 {
@@ -534,8 +534,8 @@
                 },
                 {
                     "base": "c714_tWICC-01D",
-                    "lotSize": "100000000",
-                    "tickSize": "1"
+                    "lotSize": "10000000",
+                    "tickSize": "10"
                 },
                 {
                     "base": "c714_tWINB-41F",
@@ -666,7 +666,7 @@
                 {
                     "base": "c714_tSWINGBY-888",
                     "lotSize": "100000000",
-                    "tickSize": "10"
+                    "tickSize": "100"
                 },
                 {
                     "base": "c714_tXRP-BF2",
@@ -2111,7 +2111,7 @@
         }
     ],
     "version": {
-        "major": 7,
+        "major": 8,
         "minor": 0,
         "patch": 0
     }
