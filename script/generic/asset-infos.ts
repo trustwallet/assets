@@ -115,6 +115,12 @@ function isAssetInfoOK(chain: string, address: string, errors: string[], warning
         errors.push(msg);
     }
 
+    if (info['description'].length > 500) {
+        const msg = `Description too long, ${info['description'].length}, ${assetInfoPath}`;
+        console.log(msg);
+        warnings.push(msg);
+    }
+
     const hasExplorer = Object.prototype.hasOwnProperty.call(info, 'explorer');
     if (!hasExplorer) {
         errors.push(`Missing explorer key`);
