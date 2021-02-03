@@ -8,6 +8,7 @@ import {
 } from "../generic/subgraph";
 import { SmartChain } from "../generic/blockchains";
 import {
+    parseForceList,
     rebuildTokenlist,
     TokenItem
 } from "../generic/tokenlists";
@@ -20,6 +21,9 @@ const PrimaryTokens: string[] = ["WBNB", "BNB"];
 async function retrievePancakeSwapPairs(): Promise<PairInfo[]> {
     console.log(`Retrieving pairs from PancakeSwap, limit liquidity USD ${config.PancakeSwap_MinLiquidity}  volume ${config.PancakeSwap_MinVol24}  txcount ${config.PancakeSwap_MinTxCount24}`);
 
+    console.log(`  forceIncludeList: ${config.PancakeSwap_ForceInclude}`);
+    const includeList = parseForceList(config.PancakeSwap_ForceInclude);
+
     const pairs = await getTradingPairs(config.PancakeSwap_TradingPairsUrl, config.PancakeSwap_TradingPairsQuery);
     const filtered: PairInfo[] = [];
     pairs.forEach(x => {
@@ -27,7 +31,7 @@ async function retrievePancakeSwapPairs(): Promise<PairInfo[]> {
             if (typeof(x) === "object") {
                 const pairInfo = x as PairInfo;
                 if (pairInfo) {
-                    if (checkTradingPair(pairInfo, config.PancakeSwap_MinLiquidity, config.PancakeSwap_MinVol24, config.PancakeSwap_MinTxCount24, PrimaryTokens)) {
+                    if (checkTradingPair(pairInfo, config.PancakeSwap_MinLiquidity, config.PancakeSwap_MinVol24, config.PancakeSwap_MinTxCount24, PrimaryTokens, includeList)) {
                         filtered.push(pairInfo);
                     }
                 }
@@ -70,7 +74,7 @@ async function generateTokenlist(): Promise<void> {
         }
         pairs2.push([tokenItem0, tokenItem1]);
     });
-    await rebuildTokenlist(SmartChain, pairs2, "Smart Chain");
+    await rebuildTokenlist(SmartChain, pairs2, "Smart Chain", config.PancakeSwap_ForceExclude);
 }
 
 export class SmartchainAction implements ActionInterface {
@@ -78,7 +82,7 @@ export class SmartchainAction implements ActionInterface {
 
     getSanityChecks(): CheckStepInterface[] { return []; }
 
-    async update(): Promise<void> {
-        //await generateTokenlist();
+    async updateManual(): Promise<void> {
+        await generateTokenlist();
     }
 }
