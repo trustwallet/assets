@@ -14,7 +14,7 @@ import { ActionInterface, CheckStepInterface } from "../generic/interface";
 import { CoinType } from "@trustwallet/wallet-core";
 import * as bluebird from "bluebird";
 
-const requiredKeys = ["explorer", "name", "website", "short_description"];
+const requiredKeys = ["explorer", "name", "website", "description"];
 
 function isAssetInfoHasAllKeys(info: unknown, path: string): [boolean, string] {
     const infoKeys = Object.keys(info);
@@ -29,7 +29,7 @@ function isAssetInfoHasAllKeys(info: unknown, path: string): [boolean, string] {
         typeof info['explorer'] === "string" && info['explorer'] != ""
         && typeof info['name'] === "string" && info['name'] != ""
         && typeof info['website'] === "string"
-        && typeof info['short_description'] === "string";
+        && typeof info['description'] === "string";
     
     return [isKeysCorrentType, `Check keys '${requiredKeys}' vs. '${infoKeys}'`];
 }
