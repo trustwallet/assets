@@ -31,7 +31,7 @@ function isAssetInfoHasAllKeys(info: unknown, path: string): [boolean, string] {
         && typeof info['website'] === "string"
         && typeof info['description'] === "string";
     
-    return [isKeysCorrentType, `Check keys '${requiredKeys}' vs. '${infoKeys}'`];
+    return [isKeysCorrentType, `Check keys '${info['name']}' '${info['website']}' '${info['description']}' '${info['explorer']}'`];
 }
 
 export function explorerUrl(chain: string, contract: string): string {
@@ -65,6 +65,9 @@ export function explorerUrl(chain: string, contract: string): string {
 
             case CoinType.name(CoinType.solana).toLowerCase():
                 return `https://explorer.solana.com/address/${contract}`;
+
+            case CoinType.name(CoinType.tomochain).toLowerCase():
+                return `https://scan.tomochain.com/address/${contract}`;
         }
     }
     return "";
