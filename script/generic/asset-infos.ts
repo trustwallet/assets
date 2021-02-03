@@ -68,6 +68,15 @@ export function explorerUrl(chain: string, contract: string): string {
 
             case CoinType.name(CoinType.tomochain).toLowerCase():
                 return `https://scan.tomochain.com/address/${contract}`;
+
+            case CoinType.name(CoinType.kava).toLowerCase():
+                return "https://www.mintscan.io/kava";
+
+            case CoinType.name(CoinType.ontology).toLowerCase():
+                return "https://explorer.ont.io";
+
+            case CoinType.name(CoinType.gochain).toLowerCase():
+                    return `https://explorer.gochain.io/addr/${contract}`;
         }
     }
     return "";
