@@ -1,27 +1,30 @@
 {
-  "name": "Oasis Network",
-  "website": "https://oasisprotocol.org/",
-  "source_code": "https://github.com/oasisprotocol/",
-  "white_paper": "https://oasisprotocol.org/papers",
-  "description": "The Oasis Network is a privacy-enabled scalable blockchain network built for open finance and a responsible data economy.",
-  "description": "Designed for the next generation of blockchain, the Oasis Network is the first privacy-enabled blockchain platform for open finance and a responsible data economy. Combined with its high throughput and secure architecture, the Oasis Network is able to power private, scalable DeFi, revolutionizing Open Finance and expanding it beyond traders and early adopters to a mass market. Its unique privacy features can not only redefine DeFi, but also create a new type of digital asset called Tokenized Data that can enable users to take control of the data they generate and earn rewards for staking it with applications — creating the first ever responsible data economy.",
-  "socials": [
-    {
-      "name": "Twitter",
-      "url": "https://twitter.com/oasisprotocol",
-      "handle": "oasisprotocol"
-    },
-    {
-      "name": "Telegram",
-      "url": "http://t.me/oasisprotocolcommunity",
-      "handle": "oasisprotocolcommunity"
-    },
-    {
-        "name": "Medium",
-        "url": "https://medium.com/oasis-protocol-project",
-        "handle": "oasis-protocol-project"
-    }
-  ],
-  "explorer": "https://www.oasisscan.com/",
-  "research": "https://research.binance.com/en/projects/oasis-network"
+    "name": "Oasis Network",
+    "website": "https://oasisprotocol.org/",
+    "source_code": "https://github.com/oasisprotocol/",
+    "white_paper": "https://oasisprotocol.org/papers",
+    "description": "The Oasis Network is a privacy-enabled scalable blockchain network built for open finance and a responsible data economy.",
+    "socials": [
+        {
+            "name": "Twitter",
+            "url": "https://twitter.com/oasisprotocol",
+            "handle": "oasisprotocol"
+        },
+        {
+            "name": "Telegram",
+            "url": "http://t.me/oasisprotocolcommunity",
+            "handle": "oasisprotocolcommunity"
+        },
+        {
+            "name": "Medium",
+            "url": "https://medium.com/oasis-protocol-project",
+            "handle": "oasis-protocol-project"
+        }
+    ],
+    "explorer": "https://www.oasisscan.com/",
+    "research": "https://research.binance.com/en/projects/oasis-network",
+    "symbol": "ROSE",
+    "type": "COIN",
+    "decimals": 8,
+    "status": "abandoned"
 }
