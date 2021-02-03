@@ -1,5 +1,15 @@
+// Handling of tokenlist.json files, tokens and trading pairs.
+
 import { readJsonFile, writeJsonFile } from "../generic/json";
 import { diff } from "jsondiffpatch";
+import { tokenInfoFromTwApi, TokenTwInfo } from "../generic/asset";
+import {
+    getChainAssetLogoPath,
+    getChainAllowlistPath,
+    getChainTokenlistPath,
+} from "../generic/repo-structure";
+import * as bluebird from "bluebird";
+import { isPathExistsSync } from "../generic/filesystem";
 
 class Version {
     major: number
@@ -64,7 +74,88 @@ export class Pair {
     }
 }
 
-export function generateTokensList(titleCoin: string, tokens: TokenItem[], time: string, versionMajor: number, versionMinor = 1, versionPatch = 0): List {
+///// Exclude/Include list token/pair matching
+
+// A token or pair in the force exclude/include list
+export class ForceListPair {
+    token1: string;
+    // second is optional, if empty --> token only, if set --> pair
+    token2: string;
+}
+
+export function parseForceListEntry(rawForceListEntry: string): ForceListPair {
+    const pair: ForceListPair = new ForceListPair();
+    const tokens: string[] = rawForceListEntry.split("-");
+    pair.token1 = tokens[0];
+    pair.token2 = "";
+    if (tokens.length >= 2) {
+        pair.token2 = tokens[1];
+    }
+    return pair;
+}
+
+export function parseForceList(rawForceList: string[]): ForceListPair[] {
+    return rawForceList.map(e => parseForceListEntry(e));
+}
+
+export function matchTokenToForceListEntry(token: TokenItem, forceListEntry: string): boolean {
+    if (forceListEntry.toLowerCase() === token.symbol.toLowerCase() ||
+        forceListEntry.toLowerCase() === token.asset.toLowerCase() ||
+        forceListEntry.toLowerCase() === token.name.toLowerCase()) {
+        return true;
+    }
+    return false;
+}
+
+export function matchPairToForceListEntry(token1: TokenItem, token2: TokenItem, forceListEntry: ForceListPair): boolean {
+    if (!forceListEntry.token2) {
+        // entry is token only
+        if (matchTokenToForceListEntry(token1, forceListEntry.token1) || 
+            (token2 && matchTokenToForceListEntry(token2, forceListEntry.token1))) {
+            return true;
+        }
+        return false;
+    }
+    // entry is pair
+    if (!token2) {
+        return false;
+    }
+    if (matchTokenToForceListEntry(token1, forceListEntry.token1) && matchTokenToForceListEntry(token2, forceListEntry.token2)) {
+        return true;
+    }
+    // reverse
+    if (matchTokenToForceListEntry(token1, forceListEntry.token2) && matchTokenToForceListEntry(token2, forceListEntry.token1)) {
+        return true;
+    }
+    return false;
+}
+
+export function matchTokenToForceList(token: TokenItem, forceList: ForceListPair[]): boolean {
+    let matched = false;
+    forceList.forEach(e => {
+        if (matchTokenToForceListEntry(token, e.token1)) {
+            matched = true;
+        }
+        if (matchTokenToForceListEntry(token, e.token2)) {
+            matched = true;
+        }
+    });
+    return matched;
+}
+
+export function matchPairToForceList(token1: TokenItem, token2: TokenItem, forceList: ForceListPair[]): boolean {
+    let matched = false;
+    forceList.forEach(p => {
+        if (matchPairToForceListEntry(token1, token2, p)) {
+            matched = true;
+        }
+    });
+    return matched;
+}
+
+/////
+
+export function createTokensList(titleCoin: string, tokens: TokenItem[], time: string, versionMajor: number, versionMinor = 1, versionPatch = 0): List {
     if (!time) {
         time = (new Date()).toISOString();
     }
@@ -98,24 +189,80 @@ export function writeToFileWithUpdate(filename: string, list: List): void {
     } catch (err) {
         listOld = undefined;
     }
-    let changed = false;
-    if (listOld === undefined) {
-        changed = true;
-    } else {
+    if (listOld !== undefined) {
         list.version = listOld.version; // take over
+        list.timestamp = listOld.timestamp; // take over
         const diffs = diffTokenlist(list, listOld);
         if (diffs != undefined) {
             //console.log("List has Changed", JSON.stringify(diffs));
-            changed = true;
             list.version = new Version(list.version.major + 1, 0, 0);
+            list.timestamp = (new Date()).toISOString();
+            console.log(`Version and timestamp updated, ${list.version.major}.${list.version.minor}.${list.version.patch} timestamp ${list.timestamp}`);
         }
     }
-    if (changed) {
-        // update timestqamp
-        list.timestamp = (new Date()).toISOString();
-        console.log(`Version and timestamp updated, ${list.version.major}.${list.version.minor}.${list.version.patch} timestamp ${list.timestamp}`);
-    }
     writeToFile(filename, list);
+}
+
+async function addTokenIfNeeded(token: TokenItem, list: List): Promise<void> {
+    if (list.tokens.map(t => t.address.toLowerCase()).includes(token.address.toLowerCase())) {
+        return;
+    }
+    token = await updateTokenInfo(token);
+    list.tokens.push(token);
+}
+
+// Update/fix token info, with properties retrieved from TW API
+async function updateTokenInfo(token: TokenItem): Promise<TokenItem> {
+    const tokenInfo: TokenTwInfo = await tokenInfoFromTwApi(token.asset);
+    if (tokenInfo) {
+        if (token.name && token.name != tokenInfo.name) {
+            console.log(`Token name adjusted: '${token.name}' -> '${tokenInfo.name}'`);
+            token.name = tokenInfo.name;
+        }
+        if (token.symbol && token.symbol != tokenInfo.symbol) {
+            console.log(`Token symbol adjusted: '${token.symbol}' -> '${tokenInfo.symbol}'`);
+            token.symbol = tokenInfo.symbol;
+        }
+        if (token.decimals && token.decimals != tokenInfo.decimals) {
+            console.log(`Token decimals adjusted: '${token.decimals}' -> '${tokenInfo.decimals}'`);
+            token.decimals = parseInt(tokenInfo.decimals.toString());
+        }
+    }
+    return token;
+}
+
+function addPairToToken(pairToken: TokenItem, token: TokenItem, list: List): void {
+    const tokenInList = list.tokens.find(t => t.address === token.address);
+    if (!tokenInList) {
+        return;
+    }
+    if (!tokenInList.pairs) {
+        tokenInList.pairs = [];
+    }
+    if (tokenInList.pairs.map(p => p.base).includes(pairToken.asset)) {
+        return;
+    }
+    tokenInList.pairs.push(new Pair(pairToken.asset));
+}
+
+function checkTokenExists(id: string, chainName: string, tokenAllowlist: string[]): boolean {
+    const logoPath = getChainAssetLogoPath(chainName, id);
+    if (!isPathExistsSync(logoPath)) {
+        //console.log("logo file missing", logoPath);
+        return false;
+    }
+    if (tokenAllowlist.find(t => (id.toLowerCase() === t.toLowerCase())) === undefined) {
+        //console.log(`Token not found in allowlist, ${id}`);
+        return false;
+    }
+    return true;
+}
+
+export async function addPairIfNeeded(token0: TokenItem, token1: TokenItem, list: List): Promise<void> {
+    await addTokenIfNeeded(token0, list);
+    await addTokenIfNeeded(token1, list);
+    addPairToToken(token1, token0, list);
+    // reverse direction not needed addPairToToken(token0, token1, list);
 }
 
 function sort(list: List) {
@@ -128,6 +275,12 @@ function sort(list: List) {
     list.tokens.forEach(t => {
         t.pairs.sort((p1, p2) => p1.base.localeCompare(p2.base));
     });
+}
+
+function removeAllPairs(list: List) {
+    // remove all pairs
+    list.pairs = [];
+    list.tokens.forEach(t => t.pairs = []);
 }
 
 function clearUnimportantFields(list: List) {
@@ -146,4 +299,51 @@ export function diffTokenlist(listOrig1: List, listOrig2: List): unknown {
     // compare
     const diffs = diff(list1, list2);
     return diffs;
+}
+
+export async function rebuildTokenlist(chainName: string, pairs: [TokenItem, TokenItem][], listName: string, forceExcludeList: string[]): Promise<void> {
+    // sanity check, prevent deletion of many pairs
+    if (!pairs || pairs.length < 5) {
+        console.log(`Warning: Only ${pairs.length} pairs returned, ignoring`);
+        return;
+    }
+    
+    const excludeList = parseForceList(forceExcludeList);
+    // filter out pairs with missing and excluded tokens
+    // prepare phase, read allowlist
+    const allowlist: string[] = readJsonFile(getChainAllowlistPath(chainName)) as string[];
+    const pairs2: [TokenItem, TokenItem][] = [];
+    pairs.forEach(p => {
+        if (!checkTokenExists(p[0].address, chainName, allowlist)) {
+            console.log("pair with unsupported 1st coin:", p[0].symbol, "--", p[1].symbol);
+            return;
+        }
+        if (!checkTokenExists(p[1].address, chainName, allowlist)) {
+            console.log("pair with unsupported 2nd coin:", p[0].symbol, "--", p[1].symbol);
+            return;
+        }
+        if (matchPairToForceList(p[0], p[1], excludeList)) {
+            console.log("pair excluded due to FORCE EXCLUDE:", p[0].symbol, "--", p[1].symbol);
+            return;
+        }
+        pairs2.push(p);
+    });
+    const filteredCount: number = pairs.length - pairs2.length;
+    console.log(`${filteredCount} unsupported tokens filtered out, ${pairs2.length} pairs`);
+
+    const tokenlistFile = getChainTokenlistPath(chainName);
+    const json = readJsonFile(tokenlistFile);
+    const list: List = json as List;
+    console.log(`Tokenlist original: ${list.tokens.length} tokens`);
+    removeAllPairs(list);
+
+    await bluebird.each(pairs2, async (p) => {
+        await addPairIfNeeded(p[0], p[1], list);
+    });
+    console.log(`Tokenlist updated: ${list.tokens.length} tokens`);
+
+    const newList = createTokensList(listName, list.tokens,
+        "2021-01-29T01:02:03.000+00:00", // use constant here to prevent changing time every time
+        0, 1, 0);
+    writeToFileWithUpdate(tokenlistFile, newList);
 }

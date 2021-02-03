@@ -1,7 +1,7 @@
 {
     "name": "Toman",
     "website": "https://tomantoken.info/",
-    "short_description": "Simple buying and selling of goods online.",
+    "description": "Simple buying and selling of goods online.",
     "explorer": "https://tronscan.org/#/token/1003611",
     "socials": [
         {
@@ -19,5 +19,9 @@
             "url": "https://instagram.com/tomantoken",
             "handle": "tomantoken"
         }
-    ]
+    ],
+    "type": "TRC10",
+    "symbol": "TMN",
+    "decimals": 6,
+    "id": "1003611"
 }
