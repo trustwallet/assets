@@ -25,22 +25,22 @@ function isAssetInfoHasAllKeys(info: unknown, path: string): [boolean, string] {
 }
 
 function isAssetInfoValid(info: unknown, path: string): [string, string] {
-    const isKeys1CorrentType = 
+    const isKeys1CorrectType = 
         typeof info['name'] === "string" && info['name'] !== "" //&&
         //typeof info['type'] === "string" && info['type'] !== "" &&
         //typeof info['symbol'] === "string" && info['symbol'] !== "" &&
         //typeof info['decimals'] === "number" && info['decimals'] !== 0;
         typeof info['id'] === "string" && info['id'] !== "";
-    if (!isKeys1CorrentType) {
+    if (!isKeys1CorrectType) {
         return [`Check keys1 '${info['name']}' '${info['type']}' '${info['symbol']}' '${info['decimals']}' '${info['id']}' ${path}`, ""];
     }
     
-    const isKeys2CorrentType = 
-        //typeof info['description'] === "string" && info['description'] !== "" &&
+    const isKeys2CorrectType = 
+        typeof info['description'] === "string" && //info['description'] !== "" &&
         // website should be set (exception description='-' marks empty infos)
-        //typeof info['website'] === "string" && (info['description'] === "-" || info['website'] !== "") &&
+        typeof info['website'] === "string" && //(info['description'] === "-" || info['website'] !== "") &&
         typeof info['explorer'] === "string" && info['explorer'] != "";
-    if (!isKeys2CorrentType) {
+    if (!isKeys2CorrectType) {
         return [`Check keys2 '${info['description']}' '${info['website']}' '${info['explorer']}' ${path}`, ""];
     }
 
