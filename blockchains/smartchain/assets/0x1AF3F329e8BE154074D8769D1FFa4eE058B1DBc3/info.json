@@ -3,5 +3,9 @@
     "website": "http://makerdao.com",
     "description": "Dai is a stable cryptocurrency supported by Maker (MKR).",
     "explorer": "https://bscscan.com/token/0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3",
-    "research": "https://research.binance.com/en/projects/dai"
+    "research": "https://research.binance.com/en/projects/dai",
+    "type": "BEP20",
+    "symbol": "DAI",
+    "decimals": 18,
+    "id": "0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3"
 }
