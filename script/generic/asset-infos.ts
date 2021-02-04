@@ -36,7 +36,7 @@ function isAssetInfoValid(info: unknown, path: string): [string, string] {
     }
     
     const isKeys2CorrectType = 
-        typeof info['description'] === "string" && //info['description'] !== "" &&
+        typeof info['description'] === "string" && info['description'] !== "" &&
         // website should be set (exception description='-' marks empty infos)
         typeof info['website'] === "string" && //(info['description'] === "-" || info['website'] !== "") &&
         typeof info['explorer'] === "string" && info['explorer'] != "";
