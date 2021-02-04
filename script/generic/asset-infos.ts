@@ -14,24 +14,42 @@ import { ActionInterface, CheckStepInterface } from "../generic/interface";
 import { CoinType } from "@trustwallet/wallet-core";
 import * as bluebird from "bluebird";
 
-const requiredKeys = ["explorer", "name", "website", "description"];
+const requiredKeys = ["name", "type", "symbol", "decimals", "description", "website", "explorer", "id"];
 
 function isAssetInfoHasAllKeys(info: unknown, path: string): [boolean, string] {
     const infoKeys = Object.keys(info);
 
     const hasAllKeys = requiredKeys.every(k => Object.prototype.hasOwnProperty.call(info, k));
 
-    if (!hasAllKeys) {
-        return [false, `Info at path '${path}' missing next key(s): ${arrayDiff(requiredKeys, infoKeys)}`];
+    return [hasAllKeys, `Info at path '${path}' missing next key(s): ${arrayDiff(requiredKeys, infoKeys)}`];
+}
+
+function isAssetInfoValid(info: unknown, path: string): [string, string] {
+    const isKeys1CorrectType = 
+        typeof info['name'] === "string" && info['name'] !== "" &&
+        typeof info['type'] === "string" && info['type'] !== "" &&
+        typeof info['symbol'] === "string" && info['symbol'] !== "" &&
+        typeof info['decimals'] === "number" && //(info['description'] === "-" || info['decimals'] !== 0) &&
+        typeof info['id'] === "string" && info['id'] !== "";
+    if (!isKeys1CorrectType) {
+        return [`Check keys1 '${info['name']}' '${info['type']}' '${info['symbol']}' '${info['decimals']}' '${info['id']}' ${path}`, ""];
+    }
+    
+    const isKeys2CorrectType = 
+        typeof info['description'] === "string" && info['description'] !== "" &&
+        // website should be set (exception description='-' marks empty infos)
+        typeof info['website'] === "string" && (info['description'] === "-" || info['website'] !== "") &&
+        typeof info['explorer'] === "string" && info['explorer'] != "";
+    if (!isKeys2CorrectType) {
+        return [`Check keys2 '${info['description']}' '${info['website']}' '${info['explorer']}' ${path}`, ""];
     }
 
-    const isKeysCorrentType = 
-        typeof info['explorer'] === "string" && info['explorer'] != ""
-        && typeof info['name'] === "string" && info['name'] != ""
-        && typeof info['website'] === "string"
-        && typeof info['description'] === "string";
-    
-    return [isKeysCorrentType, `Check keys '${info['name']}' '${info['website']}' '${info['description']}' '${info['explorer']}'`];
+    if (info['description'].length > 500) {
+        const msg = `Description too long, ${info['description'].length}, ${path}`;
+        return ["", msg];
+    }
+
+    return ["", ""];
 }
 
 export function explorerUrl(chain: string, contract: string): string {
@@ -52,6 +70,7 @@ export function explorerUrl(chain: string, contract: string): string {
                 return `https://explorer.binance.org/asset/${contract}`;
 
             case CoinType.name(CoinType.smartchain).toLowerCase():
+            case "smartchain":
                 return `https://bscscan.com/token/${contract}`;
 
             case CoinType.name(CoinType.neo).toLowerCase():
@@ -77,6 +96,10 @@ export function explorerUrl(chain: string, contract: string): string {
 
             case CoinType.name(CoinType.gochain).toLowerCase():
                     return `https://explorer.gochain.io/addr/${contract}`;
+
+            case CoinType.name(CoinType.thundertoken).toLowerCase():
+            case "thundertoken":
+                    return `https://scan.thundercore.com/`;
         }
     }
     return "";
@@ -109,16 +132,18 @@ function isAssetInfoOK(chain: string, address: string, errors: string[], warning
     }
 
     const info = JSON.parse(readFileSync(assetInfoPath));
-    const [hasAllKeys, msg] = isAssetInfoHasAllKeys(info, assetInfoPath);
+    const [hasAllKeys, msg1] = isAssetInfoHasAllKeys(info, assetInfoPath);
     if (!hasAllKeys) {
-        console.log(msg);
-        errors.push(msg);
+        console.log(msg1);
+        errors.push(msg1);
     }
 
-    if (info['description'].length > 500) {
-        const msg = `Description too long, ${info['description'].length}, ${assetInfoPath}`;
-        console.log(msg);
-        warnings.push(msg);
+    const [err2, warn2] = isAssetInfoValid(info, assetInfoPath);
+    if (err2) {
+        errors.push(err2);
+    }
+    if (warn2) {
+        warnings.push(warn2);
     }
 
     const hasExplorer = Object.prototype.hasOwnProperty.call(info, 'explorer');
