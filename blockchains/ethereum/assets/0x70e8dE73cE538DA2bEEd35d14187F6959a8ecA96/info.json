@@ -1,8 +1,11 @@
 {
     "name": "XSGD",
+    "symbol": "XSGD",
+    "type": "ERC20",
+    "decimals": 6,
+    "description": "XSGD is the fully collateralized Singapore Dollar stablecoin, powered by open-source blockchain protocols. All Xfers issued SGD-backed stablecoins have 1:1 parity with Singapore Dollar. On our platform, your Digital Goods Wallet balance is denominated in SGD. You may credit or debit this balance in the form of XSGD or SGD.",
     "website": "https://www.xfers.com/sg/stablecoin",
-    "short_description": "XSGD is the fully collateralized Singapore Dollar stablecoin, powered by open-source blockchain protocols. All Xfers issued SGD-backed stablecoins have 1:1 parity with Singapore Dollar. On our platform, your Digital Goods Wallet balance is denominated in SGD. You may credit or debit this balance in the form of XSGD or SGD.",
-    "explorer": "https://etherscan.io/token/0xA866F0198208Eb07c83081d5136BE7f775c2399e",
+    "explorer": "https://etherscan.io/token/0x70e8dE73cE538DA2bEEd35d14187F6959a8ecA96",
     "socials": [
         {
             "name": "Twitter",
@@ -14,5 +17,6 @@
             "url": "https://www.facebook.com/Xfers/",
             "handle": "Xfers"
         }
-    ]
+    ],
+    "id": "0x70e8dE73cE538DA2bEEd35d14187F6959a8ecA96"
 }
