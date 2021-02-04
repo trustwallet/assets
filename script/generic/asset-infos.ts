@@ -14,7 +14,7 @@ import { ActionInterface, CheckStepInterface } from "../generic/interface";
 import { CoinType } from "@trustwallet/wallet-core";
 import * as bluebird from "bluebird";
 
-const requiredKeys = ["name", /*"type", "symbol", "decimals",*/ "description", "website", "explorer", /*"id"*/];
+const requiredKeys = ["name", /*"type", "symbol", "decimals",*/ "description", "website", "explorer", "id"];
 
 function isAssetInfoHasAllKeys(info: unknown, path: string): [boolean, string] {
     const infoKeys = Object.keys(info);
@@ -30,7 +30,7 @@ function isAssetInfoValid(info: unknown, path: string): [string, string] {
         //typeof info['type'] === "string" && info['type'] !== "" &&
         //typeof info['symbol'] === "string" && info['symbol'] !== "" &&
         //typeof info['decimals'] === "number" && info['decimals'] !== 0;
-        //typeof info['id'] === "string" && info['id'] !== "";
+        typeof info['id'] === "string" && info['id'] !== "";
     if (!isKeys1CorrentType) {
         return [`Check keys1 '${info['name']}' '${info['type']}' '${info['symbol']}' '${info['decimals']}' '${info['id']}' ${path}`, ""];
     }
@@ -70,6 +70,7 @@ export function explorerUrl(chain: string, contract: string): string {
                 return `https://explorer.binance.org/asset/${contract}`;
 
             case CoinType.name(CoinType.smartchain).toLowerCase():
+            case "smartchain":
                 return `https://bscscan.com/token/${contract}`;
 
             case CoinType.name(CoinType.neo).toLowerCase():
@@ -95,6 +96,10 @@ export function explorerUrl(chain: string, contract: string): string {
 
             case CoinType.name(CoinType.gochain).toLowerCase():
                     return `https://explorer.gochain.io/addr/${contract}`;
+
+            case CoinType.name(CoinType.thundertoken).toLowerCase():
+            case "thundertoken":
+                    return `https://scan.thundercore.com/`;
         }
     }
     return "";
