@@ -1,17 +1,7 @@
 import * as eztz from "eztz-lib";
-import {
-    validatorsList,
-    getChainValidatorsPath,
-    getChainValidatorsAssets
-} from "../generic/repo-structure";
+import { getChainValidatorsAssets } from "../generic/repo-structure";
 import { Tezos } from "../generic/blockchains";
-import { readFileSync } from "../generic/filesystem";
 import { ActionInterface, CheckStepInterface } from "../generic/interface";
-import { ValidatorModel } from "../generic/validator-models";
-
-function getChainValidatorsList(chain: string): ValidatorModel[] {
-    return JSON.parse(readFileSync(`${(getChainValidatorsPath(chain))}/${validatorsList}`));
-}
 
 export class TezosAction implements ActionInterface {
     getName(): string { return "Tezos"; }
