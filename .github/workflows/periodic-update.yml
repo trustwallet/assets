@@ -5,7 +5,7 @@ on:
     - cron:  '0 7,19 * * *'
   workflow_dispatch:
 jobs:
-  periodic-update:
+  periodic-auto-update:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -18,7 +18,7 @@ jobs:
       - name: Install Dependencies
         run: npm ci
       - name: Run scripts
-        run: npm run update
+        run: npm run updateAuto
       - name: Show update result (diff)
         if: success()
         run: |
