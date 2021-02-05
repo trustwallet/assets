@@ -24,17 +24,21 @@ function isAssetInfoHasAllKeys(info: unknown, path: string): [boolean, string] {
     return [hasAllKeys, `Info at path '${path}' missing next key(s): ${arrayDiff(requiredKeys, infoKeys)}`];
 }
 
-function isAssetInfoValid(info: unknown, path: string): [string, string] {
+function isAssetInfoValid(info: unknown, path: string, address: string): [string, string] {
     const isKeys1CorrectType = 
         typeof info['name'] === "string" && info['name'] !== "" &&
         typeof info['type'] === "string" && info['type'] !== "" &&
         typeof info['symbol'] === "string" && info['symbol'] !== "" &&
-        typeof info['decimals'] === "number" && //(info['description'] === "-" || info['decimals'] !== 0) &&
-        typeof info['id'] === "string" && info['id'] !== "";
+        typeof info['decimals'] === "number" //(info['description'] === "-" || info['decimals'] !== 0) &&
+        ;
     if (!isKeys1CorrectType) {
         return [`Check keys1 '${info['name']}' '${info['type']}' '${info['symbol']}' '${info['decimals']}' '${info['id']}' ${path}`, ""];
     }
-    
+
+    if (typeof info['id'] !== "string" || info['id'] !== address ) {
+        return [`Incorrect id '${info['id']}' '${path}`, ""];
+    }
+
     const isKeys2CorrectType = 
         typeof info['description'] === "string" && info['description'] !== "" &&
         // website should be set (exception description='-' marks empty infos)
@@ -138,7 +142,7 @@ function isAssetInfoOK(chain: string, address: string, errors: string[], warning
         errors.push(msg1);
     }
 
-    const [err2, warn2] = isAssetInfoValid(info, assetInfoPath);
+    const [err2, warn2] = isAssetInfoValid(info, assetInfoPath, address);
     if (err2) {
         errors.push(err2);
     }
