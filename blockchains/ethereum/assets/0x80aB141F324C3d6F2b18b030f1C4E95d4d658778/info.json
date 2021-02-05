@@ -1,5 +1,8 @@
 {
     "name": "DEA",
+    "type": "ERC20",
+    "symbol": "DEA",
+    "decimals": 18,
     "website": "https://deus.finance/",
     "source_code": "https://github.com/deusfinance",
     "white_paper": "https://medium.com/@deusfinance/deus-dea-unveiling-the-governance-token-of-the-deus-ecosystem-part-1-26d6433aac13",
@@ -8,8 +11,5 @@
     "Twitter": "https://twitter.com/DeusDao",
     "Telegram": "https://t.me/deusfinance",
     "Medium": "https://medium.com/@deusfinance",
-    "type": "ERC20",
-    "symbol": "DEA",
-    "decimals": 18,
     "id": "0x80aB141F324C3d6F2b18b030f1C4E95d4d658778"
 }
