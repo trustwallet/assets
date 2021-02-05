@@ -1,0 +1,40 @@
+{
+    "name": "Wrapped SCRT",
+    "type": "ERC20",
+    "symbol": "WSCRT",
+    "decimals": 6,
+    "description": "ERC20 version of SCRT (Secret Network), the first private-by-default blockchain that lets smart contracts use encrypted inputs, outputs, and state.",
+    "website": "https://scrt.network",
+    "explorer": "https://secretnodes.com",
+    "source_code": "https://github.com/enigmampc/secretnetwork",
+    "white_paper": "https://build.scrt.network",
+    "socials": [
+        {
+            "name": "Twitter",
+            "url": "https://twitter.com/SecretNetwork",
+            "handle": "SecretNetwork"
+        },
+        {
+            "name": "Discord",
+            "url": "https://chat.scrt.network",
+            "handle": "Secret Network"
+        },
+        {
+            "name": "Telegram",
+            "url": "https://t.me/scrtcommunity",
+            "handle": "SCRT Community"
+        },
+        {
+            "name": "Medium",
+            "url": "https://scrt.network/blog",
+            "handle": "Secret Blog"
+        },
+        {
+            "name": "Reddit",
+            "url": "https://reddit.com/r/SecretNetwork",
+            "handle": "SecretNetwork"
+        }
+    ],
+    "research": "https://research.binance.com/en/projects/secret-network",
+    "id": "0x2b89bf8ba858cd2fcee1fada378d5cd6936968be"
+}
