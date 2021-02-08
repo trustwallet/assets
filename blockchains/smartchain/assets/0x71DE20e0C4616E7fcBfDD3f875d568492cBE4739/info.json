@@ -2,7 +2,7 @@
     "name": "Swingby Token",
     "website": "https://swingby.network",
     "symbol": "SWINGBY",
-    "type": "BEP2",
+    "type": "BEP20",
     "decimals": 8,
     "source_code": "https://github.com/SwingbyProtocol",
     "white_paper": "https://swingby.network/whitepaper",
@@ -34,7 +34,7 @@
             "handle": "SwingbyProtocol"
         }
     ],
-    "explorer": "https://explorer.binance.org/asset/SWINGBY-888",
+    "explorer": "https://bscscan.com/token/0x71DE20e0C4616E7fcBfDD3f875d568492cBE4739",
     "status": "active",
-    "id": "SWINGBY-888"
+    "id": "0x71DE20e0C4616E7fcBfDD3f875d568492cBE4739"
 }
