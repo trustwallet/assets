@@ -104,6 +104,10 @@ export function explorerUrl(chain: string, contract: string): string {
             case CoinType.name(CoinType.thundertoken).toLowerCase():
             case "thundertoken":
                     return `https://scan.thundercore.com/`;
+
+            case CoinType.name(CoinType.classic).toLowerCase():
+            case "classic":
+                            return `https://blockscout.com/etc/mainnet/tokens/${contract}`;
         }
     }
     return "";
