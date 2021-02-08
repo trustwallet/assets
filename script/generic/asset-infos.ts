@@ -14,7 +14,7 @@ import { ActionInterface, CheckStepInterface } from "../generic/interface";
 import { CoinType } from "@trustwallet/wallet-core";
 import * as bluebird from "bluebird";
 
-const requiredKeys = ["name", "type", "symbol", "decimals", "description", "website", "explorer", "id"];
+const requiredKeys = ["name", "type", "symbol", "decimals", "description", "website", "explorer", "status", "id"];
 
 function isAssetInfoHasAllKeys(info: unknown, path: string): [boolean, string] {
     const infoKeys = Object.keys(info);
@@ -29,7 +29,8 @@ function isAssetInfoValid(info: unknown, path: string, address: string, chain: s
         typeof info['name'] === "string" && info['name'] !== "" &&
         typeof info['type'] === "string" && info['type'] !== "" &&
         typeof info['symbol'] === "string" && info['symbol'] !== "" &&
-        typeof info['decimals'] === "number" //(info['description'] === "-" || info['decimals'] !== 0) &&
+        typeof info['decimals'] === "number" && //(info['description'] === "-" || info['decimals'] !== 0) &&
+        typeof info['status'] === "string" && info['status'] !== ""
         ;
     if (!isKeys1CorrectType) {
         return [`Check keys1 '${info['name']}' '${info['type']}' '${info['symbol']}' '${info['decimals']}' '${info['id']}' ${path}`, ""];
