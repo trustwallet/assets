@@ -87,7 +87,7 @@ export class FoldersFiles implements ActionInterface {
                                 const infoFullPath = getChainAssetInfoPath(chain, address);
                                 if (!isPathExistsSync(infoFullPath)) {
                                     const msg = `Missing info file for asset '${chain}/${address}' -- ${infoFullPath}`;
-                                    //console.log(msg);
+                                    console.log(msg);
                                     warnings.push(msg);
                                 }
                             }) ;
