@@ -6,6 +6,7 @@ import { CheckStepInterface, ActionInterface } from "../generic/interface";
 import {
     allChains,
     getChainLogoPath,
+    getChainAssetInfoPath,
     getChainAssetsPath,
     getChainAssetPath,
     getChainAssetLogoPath,
@@ -71,9 +72,10 @@ export class FoldersFiles implements ActionInterface {
                 }
             },
             {
-                getName: () => { return "Asset folders contain logo"},
+                getName: () => { return "Asset folders contain logo and info"},
                 check: async () => {
                     const errors: string[] = [];
+                    const warnings: string[] = [];
                     allChains.forEach(chain => {
                         const assetsPath = getChainAssetsPath(chain);
                         if (isPathExistsSync(assetsPath)) {
@@ -82,10 +84,16 @@ export class FoldersFiles implements ActionInterface {
                                 if (!isPathExistsSync(logoFullPath)) {
                                     errors.push(`Missing logo file for asset '${chain}/${address}' -- ${logoFullPath}`);
                                 }
+                                const infoFullPath = getChainAssetInfoPath(chain, address);
+                                if (!isPathExistsSync(infoFullPath)) {
+                                    const msg = `Missing info file for asset '${chain}/${address}' -- ${infoFullPath}`;
+                                    //console.log(msg);
+                                    warnings.push(msg);
+                                }
                             }) ;
                         }
                     });
-                    return [errors, []];
+                    return [errors, warnings];
                 }
             },
             /*
