@@ -14,7 +14,7 @@ import { ActionInterface, CheckStepInterface } from "../generic/interface";
 import { CoinType } from "@trustwallet/wallet-core";
 import * as bluebird from "bluebird";
 
-const requiredKeys = ["name", "type", "symbol", "decimals", "description", "website", "explorer", "id"];
+const requiredKeys = ["name", "type", "symbol", "decimals", "description", "website", "explorer", "status", "id"];
 
 function isAssetInfoHasAllKeys(info: unknown, path: string): [boolean, string] {
     const infoKeys = Object.keys(info);
@@ -24,15 +24,20 @@ function isAssetInfoHasAllKeys(info: unknown, path: string): [boolean, string] {
     return [hasAllKeys, `Info at path '${path}' missing next key(s): ${arrayDiff(requiredKeys, infoKeys)}`];
 }
 
-function isAssetInfoValid(info: unknown, path: string, address: string): [string, string] {
+function isAssetInfoValid(info: unknown, path: string, address: string, chain: string): [string, string] {
     const isKeys1CorrectType = 
         typeof info['name'] === "string" && info['name'] !== "" &&
         typeof info['type'] === "string" && info['type'] !== "" &&
         typeof info['symbol'] === "string" && info['symbol'] !== "" &&
-        typeof info['decimals'] === "number" //(info['description'] === "-" || info['decimals'] !== 0) &&
+        typeof info['decimals'] === "number" && //(info['description'] === "-" || info['decimals'] !== 0) &&
+        typeof info['status'] === "string" && info['status'] !== ""
         ;
     if (!isKeys1CorrectType) {
         return [`Check keys1 '${info['name']}' '${info['type']}' '${info['symbol']}' '${info['decimals']}' '${info['id']}' ${path}`, ""];
+    }
+
+    if (typeof info['type'] !== "string" || chainFromAssetType(info['type']) !== chain ) {
+        return [`Incorrect type '${info['type']}' '${chain}' '${path}`, ""];
     }
 
     if (typeof info['id'] !== "string" || info['id'] !== address ) {
@@ -54,6 +59,28 @@ function isAssetInfoValid(info: unknown, path: string, address: string): [string
     }
 
     return ["", ""];
+}
+
+export function chainFromAssetType(type: string): string {
+    switch (type) {
+        case "ERC20": return "ethereum";
+        case "BEP2": return "binance";
+        case "BEP20": return "smartchain";
+        case "ETC20": return "classic";
+        case "TRC10":
+        case "TRC20":
+            return "tron";
+        case "WAN20": return "wanchain";
+        case "TRC21": return "tomochain";
+        case "TT20": return "thundertoken";
+        case "SPL": return "solana";
+        case "GO20": return "gochain";
+        case "KAVA": return "kava";
+        case "NEP5": return "neo";
+        case "NRC20": return "nuls";
+        case "VET": return "vechain";
+        case "ontology": return "ontology";
+    }
 }
 
 export function explorerUrl(chain: string, contract: string): string {
@@ -104,6 +131,10 @@ export function explorerUrl(chain: string, contract: string): string {
             case CoinType.name(CoinType.thundertoken).toLowerCase():
             case "thundertoken":
                     return `https://scan.thundercore.com/`;
+
+            case CoinType.name(CoinType.classic).toLowerCase():
+            case "classic":
+                            return `https://blockscout.com/etc/mainnet/tokens/${contract}`;
         }
     }
     return "";
@@ -142,7 +173,7 @@ function isAssetInfoOK(chain: string, address: string, errors: string[], warning
         errors.push(msg1);
     }
 
-    const [err2, warn2] = isAssetInfoValid(info, assetInfoPath, address);
+    const [err2, warn2] = isAssetInfoValid(info, assetInfoPath, address, chain);
     if (err2) {
         errors.push(err2);
     }
