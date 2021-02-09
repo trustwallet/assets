@@ -62,7 +62,7 @@ function isAssetInfoValid(info: unknown, path: string, address: string, chain: s
 }
 
 export function chainFromAssetType(type: string): string {
-    switch (type) {
+    switch (type.toUpperCase()) {
         case "ERC20": return "ethereum";
         case "BEP2": return "binance";
         case "BEP20": return "smartchain";
@@ -79,7 +79,7 @@ export function chainFromAssetType(type: string): string {
         case "NEP5": return "neo";
         case "NRC20": return "nuls";
         case "VET": return "vechain";
-        case "ontology": return "ontology";
+        case "ONTOLOGY": return "ontology";
     }
 }
 
