@@ -1,7 +1,7 @@
 {
     "name": "NAR Token",
     "website": "https://narwhalswap.org",
-    "short_description": "Narwhalswap Protocol — DeFi Platform with Sustainability. We will build a new unique dapp and protocol to enhance the value of the DeFi, create diversified investment, and become the future of financial services.",
+    "description": "Narwhalswap Protocol — DeFi Platform with Sustainability. We will build a new unique dapp and protocol to enhance the value of the DeFi, create diversified investment, and become the future of financial services.",
     "explorer": "https://bscscan.com/token/0xa1303e6199b319a891b79685f0537d289af1fc83",
     "socials": [
         {
@@ -20,5 +20,10 @@
             "name": "Telegram",
             "url": "https://t.me/narwhalswap"
         }
-    ]
+    ],
+    "type": "BEP20",
+    "symbol": "NAR",
+    "decimals": 18,
+    "status": "active",
+    "id": "0xA1303E6199b319a891b79685F0537D289af1FC83"
 }
