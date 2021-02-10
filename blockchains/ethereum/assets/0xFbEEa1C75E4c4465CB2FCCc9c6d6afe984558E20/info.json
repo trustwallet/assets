@@ -1,7 +1,7 @@
 {
     "name": "DuckDaoDime",
     "website": "https://duckdao.io",
-    "short_description": "DuckDAO, the world’s largest crowdsourced Incubator for crypto projects.",
+    "description": "DuckDAO, the world’s largest crowdsourced Incubator for crypto projects.",
     "explorer": "https://etherscan.io/token/0xfbeea1c75e4c4465cb2fccc9c6d6afe984558e20",
     "socials": [
         {
@@ -19,5 +19,10 @@
             "url": "https://duckdao.medium.com/",
             "handle": "Duckdao"
         }
-    ]
+    ],
+    "type": "ERC20",
+    "symbol": "DDIM",
+    "decimals": 18,
+    "status": "active",
+    "id": "0xFbEEa1C75E4c4465CB2FCCc9c6d6afe984558E20"
 }

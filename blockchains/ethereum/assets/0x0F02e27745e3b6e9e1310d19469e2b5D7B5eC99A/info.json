@@ -3,7 +3,6 @@
     "website": "http://peculium.io/",
     "source_code": "https://github.com/Peculium-Dev/peculiumContracts",
     "white_paper": "http://peculium.io/white-paper",
-    "short_description": "PECULIUM is the first savings management platform to take advantage of the blockchain technology.",
     "description": "PECULIUM revolutionises savings management by deploying immutable Smart-Contracts over the Ethereum blockchain. These smart contracts provide a trust-less way of achieving transparent, decentralised, and infallible contractual agreements.",
     "socials": [
         {
@@ -22,5 +21,10 @@
             "handle": "peculium"
         }
     ],
-    "explorer": "https://etherscan.io/token/0x0F02e27745e3b6e9e1310d19469e2b5D7B5eC99A"
+    "explorer": "https://etherscan.io/token/0x0F02e27745e3b6e9e1310d19469e2b5D7B5eC99A",
+    "type": "ERC20",
+    "symbol": "PCL",
+    "decimals": 8,
+    "status": "active",
+    "id": "0x0F02e27745e3b6e9e1310d19469e2b5D7B5eC99A"
 }

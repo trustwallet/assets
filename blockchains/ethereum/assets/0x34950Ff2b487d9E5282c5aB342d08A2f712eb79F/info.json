@@ -1,7 +1,7 @@
 {
     "name": "Efforce",
-    "website": "https://www.efforce.io/",
-    "short_description": "The first blockchain-based energy-saving platform.",
+    "website": "https://efforce.io/",
+    "description": "The first blockchain-based energy-saving platform.",
     "explorer": "https://etherscan.io/token/0x34950Ff2b487d9E5282c5aB342d08A2f712eb79F",
     "socials": [
         {
@@ -14,5 +14,10 @@
             "url": "https://www.facebook.com/EFFORCE/",
             "handle": "EFFORCE"
         }
-    ]
+    ],
+    "type": "ERC20",
+    "symbol": "WOZX",
+    "decimals": 18,
+    "status": "active",
+    "id": "0x34950Ff2b487d9E5282c5aB342d08A2f712eb79F"
 }

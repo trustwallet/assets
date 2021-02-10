@@ -2,7 +2,7 @@
     "name": "DANGO",
     "website": "https://bsc.dango.money",
     "source_code": "https://github.com/dango-money/dango-money-farm",
-    "short_description": "An Innovative Yield Farm on Binance Smart Chain.",
+    "description": "An Innovative Yield Farm on Binance Smart Chain.",
     "socials": [
         {
             "name": "Twitter",
@@ -15,5 +15,10 @@
             "handle": "DangoANN"
         }
     ],
-    "explorer": "https://bscscan.com/token/0x0957c57c9eb7744850dcc95db5a06ed4a246236e"
+    "explorer": "https://bscscan.com/token/0x0957c57c9eb7744850dcc95db5a06ed4a246236e",
+    "type": "BEP20",
+    "symbol": "DANGO",
+    "decimals": 6,
+    "status": "active",
+    "id": "0x0957C57C9EB7744850dCC95db5A06eD4a246236E"
 }
