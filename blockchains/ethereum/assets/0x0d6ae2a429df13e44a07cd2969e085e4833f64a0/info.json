@@ -1,7 +1,28 @@
 {
-  "name": "PolkaBridge",
-  "website": "https://polkabridge.org",
-  "source_code": "https://github.com/Polkacover",
-  "description": "PolkaBridge offers a decentralized bridge that connects Polkadot platform and other blockchains.",
-  "explorer": "https://etherscan.io/address/0x0d6ae2a429df13e44a07cd2969e085e4833f64a0",
+    "name": "PolkaBridge",
+    "website": "https://polkabridge.org",
+    "description": "PolkaBridge offers a decentralized bridge that connects Polkadot platform and other blockchains.",
+    "explorer": "https://etherscan.io/address/0x0d6ae2a429df13e44a07cd2969e085e4833f64a0",
+    "type": "ERC20",
+    "symbol": "PBR",
+    "decimals": 18,
+    "status": "active",
+    "id": "0x0d6ae2a429df13e44a07cd2969e085e4833f64a0",
+	  "socials":[
+        {
+            "name": "Twitter",
+            "url": "https://twitter.com/realpolkabridge",
+            "handle": "realpolkabridge"
+        },
+        {
+            "name": "Github",
+            "url": "https://github.com/cyclese96/PolkaBridge-Contract",
+            "handle": "razor-network"
+        },
+        {
+            "name": "Telegram",
+            "url": "https://t.me/polkabridgegroup",
+            "handle": "PolkaBridge"
+        }
+    ]
 }
