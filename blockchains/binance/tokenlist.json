@@ -1,7 +1,7 @@
 {
     "name": "Trust Wallet: BNB",
     "logoURI": "https://trustwallet.com/assets/images/favicon.png",
-    "timestamp": "2020-10-03T12:37:57.000+00:00",
+    "timestamp": "2021-02-09T07:20:10.037Z",
     "tokens": [
         {
             "asset": "c714",
@@ -10,7 +10,7 @@
             "name": "Binance Chain Native Token",
             "symbol": "BNB",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/BNB/logo.png",
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/info/logo.png",
             "pairs": [
                 {
                     "base": "c714_tAERGO-46B",
@@ -59,8 +59,8 @@
                 },
                 {
                     "base": "c714_tBCH-1FD",
-                    "lotSize": "10000",
-                    "tickSize": "10000"
+                    "lotSize": "100000",
+                    "tickSize": "1000"
                 },
                 {
                     "base": "c714_tBCPT-95A",
@@ -94,7 +94,7 @@
                 },
                 {
                     "base": "c714_tBST2-2F2",
-                    "lotSize": "100000000000",
+                    "lotSize": "10000000000",
                     "tickSize": "1"
                 },
                 {
@@ -104,8 +104,8 @@
                 },
                 {
                     "base": "c714_tBULL-BE4",
-                    "lotSize": "100",
-                    "tickSize": "1000000"
+                    "lotSize": "1000",
+                    "tickSize": "100000"
                 },
                 {
                     "base": "c714_tBZNT-464",
@@ -119,7 +119,7 @@
                 },
                 {
                     "base": "c714_tCAS-167",
-                    "lotSize": "1000000000",
+                    "lotSize": "100000000",
                     "tickSize": "1"
                 },
                 {
@@ -139,7 +139,7 @@
                 },
                 {
                     "base": "c714_tCNNS-E16",
-                    "lotSize": "10000000000",
+                    "lotSize": "1000000000",
                     "tickSize": "1"
                 },
                 {
@@ -164,7 +164,7 @@
                 },
                 {
                     "base": "c714_tCSM-734",
-                    "lotSize": "1000000000",
+                    "lotSize": "100000000000",
                     "tickSize": "1"
                 },
                 {
@@ -199,8 +199,8 @@
                 },
                 {
                     "base": "c714_tEOSBEAR-721",
-                    "lotSize": "10000000",
-                    "tickSize": "10"
+                    "lotSize": "100000000",
+                    "tickSize": "1"
                 },
                 {
                     "base": "c714_tEOSBULL-F0D",
@@ -214,7 +214,7 @@
                 },
                 {
                     "base": "c714_tERD-D06",
-                    "lotSize": "1000000000",
+                    "lotSize": "100000000",
                     "tickSize": "1"
                 },
                 {
@@ -239,12 +239,12 @@
                 },
                 {
                     "base": "c714_tFSN-E14",
-                    "lotSize": "100000000",
-                    "tickSize": "1"
+                    "lotSize": "10000000",
+                    "tickSize": "10"
                 },
                 {
                     "base": "c714_tFTM-A64",
-                    "lotSize": "1000000000",
+                    "lotSize": "100000000",
                     "tickSize": "1"
                 },
                 {
@@ -259,7 +259,7 @@
                 },
                 {
                     "base": "c714_tGTEX-71B",
-                    "lotSize": "100000000000",
+                    "lotSize": "10000000000",
                     "tickSize": "1"
                 },
                 {
@@ -359,7 +359,7 @@
                 },
                 {
                     "base": "c714_tNEW-09E",
-                    "lotSize": "10000000000",
+                    "lotSize": "100000000000",
                     "tickSize": "1"
                 },
                 {
@@ -464,7 +464,7 @@
                 },
                 {
                     "base": "c714_tSWIPE.B-DC0",
-                    "lotSize": "10000000000",
+                    "lotSize": "100000000000",
                     "tickSize": "1"
                 },
                 {
@@ -524,12 +524,12 @@
                 },
                 {
                     "base": "c714_tVIDT-F53",
-                    "lotSize": "10000000",
-                    "tickSize": "10"
+                    "lotSize": "100000000",
+                    "tickSize": "1"
                 },
                 {
                     "base": "c714_tVOTE-FD4",
-                    "lotSize": "1000000000",
+                    "lotSize": "10000000000",
                     "tickSize": "1"
                 },
                 {
@@ -544,7 +544,7 @@
                 },
                 {
                     "base": "c714_tWISH-2D5",
-                    "lotSize": "1000000000",
+                    "lotSize": "100000000",
                     "tickSize": "1"
                 },
                 {
@@ -554,7 +554,7 @@
                 },
                 {
                     "base": "c714_tXBASE-CD2",
-                    "lotSize": "1000000000",
+                    "lotSize": "10000000000",
                     "tickSize": "1"
                 },
                 {
@@ -589,6 +589,11 @@
             "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/BUSD-BD1/logo.png",
             "pairs": [
                 {
+                    "base": "c714",
+                    "lotSize": "100000",
+                    "tickSize": "10000"
+                },
+                {
                     "base": "c714_tADA-9F4",
                     "lotSize": "100000000",
                     "tickSize": "100"
@@ -596,7 +601,7 @@
                 {
                     "base": "c714_tATOM-596",
                     "lotSize": "1000000",
-                    "tickSize": "1000"
+                    "tickSize": "10000"
                 },
                 {
                     "base": "c714_tAVA-645",
@@ -606,17 +611,12 @@
                 {
                     "base": "c714_tBAND-34B",
                     "lotSize": "1000000",
-                    "tickSize": "1000"
+                    "tickSize": "10000"
                 },
                 {
                     "base": "c714_tBCH-1FD",
-                    "lotSize": "10000",
-                    "tickSize": "100000"
-                },
-                {
-                    "base": "c714",
                     "lotSize": "100000",
-                    "tickSize": "10000"
+                    "tickSize": "100000"
                 },
                 {
                     "base": "c714_tBTCB-1DE",
@@ -666,7 +666,7 @@
                 {
                     "base": "c714_tSWINGBY-888",
                     "lotSize": "100000000",
-                    "tickSize": "10"
+                    "tickSize": "100"
                 },
                 {
                     "base": "c714_tXRP-BF2",
@@ -686,7 +686,7 @@
                 {
                     "base": "c714_tZEC-93E",
                     "lotSize": "100000",
-                    "tickSize": "100000"
+                    "tickSize": "10000"
                 }
             ]
         },
@@ -722,7 +722,7 @@
                 {
                     "base": "c714_tUND-EBC",
                     "lotSize": "100000000",
-                    "tickSize": "10000"
+                    "tickSize": "1"
                 }
             ]
         },
@@ -736,13 +736,13 @@
             "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/BTCB-1DE/logo.png",
             "pairs": [
                 {
-                    "base": "c714_tANKR-E97",
-                    "lotSize": "1000000000",
+                    "base": "c714",
+                    "lotSize": "100000",
                     "tickSize": "1"
                 },
                 {
-                    "base": "c714",
-                    "lotSize": "100000",
+                    "base": "c714_tANKR-E97",
+                    "lotSize": "1000000000",
                     "tickSize": "1"
                 },
                 {
@@ -821,7 +821,23 @@
                 {
                     "base": "c714_tBUSD-BD1",
                     "lotSize": "10000000",
-                    "tickSize": "1000"
+                    "tickSize": "100"
+                }
+            ]
+        },
+        {
+            "asset": "c714_tDAI-D75",
+            "type": "BEP2",
+            "address": "DAI-D75",
+            "name": "DaiBEP2",
+            "symbol": "DAI",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/DAI-D75/logo.png",
+            "pairs": [
+                {
+                    "base": "c714_tBUSD-BD1",
+                    "lotSize": "10000000",
+                    "tickSize": "100"
                 }
             ]
         },
@@ -870,22 +886,6 @@
                     "base": "c714",
                     "lotSize": "100000",
                     "tickSize": "10000"
-                }
-            ]
-        },
-        {
-            "asset": "c714_tDAI-D75",
-            "type": "BEP2",
-            "address": "DAI-D75",
-            "name": "DaiBEP2",
-            "symbol": "DAI",
-            "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/DAI-D75/logo.png",
-            "pairs": [
-                {
-                    "base": "c714_tBUSD-BD1",
-                    "lotSize": "10000000",
-                    "tickSize": "100"
                 }
             ]
         },
@@ -2111,8 +2111,8 @@
         }
     ],
     "version": {
-        "major": 0,
-        "minor": 1,
+        "major": 14,
+        "minor": 0,
         "patch": 0
     }
 }

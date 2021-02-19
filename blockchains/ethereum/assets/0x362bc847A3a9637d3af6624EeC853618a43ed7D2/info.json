@@ -1,7 +1,6 @@
 {
     "name": "PARSIQ",
     "website": "https://parsiq.net",
-    "short_description": "Turn blockchain data into actions.",
     "description": "Connect blockchain activity to off-chain apps and devices. Monitor and secure DeFi applications. Build custom event triggers and power real-time automations.",
     "socials": [
         "https://t.me/parsiq_group",
@@ -10,5 +9,10 @@
         "https://www.facebook.com/parsiqnet/",
         "https://medium.com/parsiq"
     ],
-    "explorer": "https://etherscan.io/token/0x362bc847A3a9637d3af6624EeC853618a43ed7D2"
+    "explorer": "https://etherscan.io/token/0x362bc847A3a9637d3af6624EeC853618a43ed7D2",
+    "type": "ERC20",
+    "symbol": "PRQ",
+    "decimals": 18,
+    "status": "active",
+    "id": "0x362bc847A3a9637d3af6624EeC853618a43ed7D2"
 }
