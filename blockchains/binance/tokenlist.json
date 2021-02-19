@@ -1,7 +1,7 @@
 {
     "name": "Trust Wallet: BNB",
     "logoURI": "https://trustwallet.com/assets/images/favicon.png",
-    "timestamp": "2021-02-19T07:20:34.948Z",
+    "timestamp": "2021-02-19T19:16:31.051Z",
     "tokens": [
         {
             "asset": "c714",
@@ -619,6 +619,11 @@
                     "tickSize": "10000000"
                 },
                 {
+                    "base": "c714_tDOGE-B67",
+                    "lotSize": "1000000000",
+                    "tickSize": "10"
+                },
+                {
                     "base": "c714_tDOT-64C",
                     "lotSize": "1000000",
                     "tickSize": "10000"
@@ -1232,6 +1237,16 @@
             "symbol": "DEFI",
             "decimals": 8,
             "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/DEFI-FA5/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c714_tDOGE-B67",
+            "type": "BEP2",
+            "address": "DOGE-B67",
+            "name": "Dogecoin",
+            "symbol": "DOGE",
+            "decimals": 8,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/DOGE-B67/logo.png",
             "pairs": []
         },
         {
@@ -2096,7 +2111,7 @@
         }
     ],
     "version": {
-        "major": 19,
+        "major": 20,
         "minor": 0,
         "patch": 0
     }
