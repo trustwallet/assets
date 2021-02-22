@@ -76,12 +76,15 @@ async function getChangedFiles(commitStart: string, commitEnd: string): Promise<
     if (!bulk) {
         return [];
     }
-    const list: string[] = bulk.split("\n").filter(l => {
-        if (!l) return false;
+    const list: string[] = bulk.split("\n").filter(l => l);
+    return list;
+}
+
+function filterChangedFiles(files: string[]): string[] {
+    return files.filter(l => {
         if (l.startsWith(IgnoreHistoryPrefix)) return false;
         return true;
     });
-    return list;
 }
 
 function changeListToJson(versionStart: VersionInfo, versionEnd: VersionInfo, changes: string[]): unknown {
@@ -145,15 +148,17 @@ export async function processChanges(): Promise<number> {
     };
     console.log(`New version:  ${JSON.stringify(newVer, null, 4)}`);
 
-    const files: string[] = await getChangedFiles(ver.commit, currCommit);
-    console.log(`${files.length} changed files found`);
-    if (!files || files.length == 0) {
-        console.log(`Error: Could not obtain list of changed files, or no changed files between commits ${ver.commit} and ${currCommit}`);
+    const filesRaw: string[] = await getChangedFiles(ver.commit, currCommit);
+    console.log(`${filesRaw.length} changed files found`);
+    if (!filesRaw || filesRaw.length == 0) {
+        console.log(`Error: Could not obtain list of changed files between commits ${ver.commit} and ${currCommit}`);
         return 4;
     }
-    if (files.length == 0) {
-        console.log(`Warning: no changed files bwteewn commits ${ver.commit} ${currCommit}`);
-        return 5;
+    const files: string[] = filterChangedFiles(filesRaw);
+    console.log(`${files.length} changed files found (excluding history files)`);
+    if (!files || files.length == 0) {
+        console.log(`Warning: No changed files (excluding history files) between commits ${ver.commit} and ${currCommit}`);
+        return 0;
     }
 
     const changeList: unknown = changeListToJson(ver, newVer, files);
