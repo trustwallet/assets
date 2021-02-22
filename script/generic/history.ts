@@ -14,7 +14,7 @@ class VersionInfo {
 
 const FilenameLatest = "history/LATEST.json";
 const FilenameChangeTemplate = "history/versions/";
-const TooManyChangesLimit = 2;
+const TooManyChangesLimit = 40;
 
 //const util = require('util');
 const exec = util.promisify(child_process.exec);
