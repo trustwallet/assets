@@ -40,8 +40,8 @@ const actionList: ActionInterface[] = [
 
 const maxErrosFromOneCheck = 5;
 
-const markerError = chalk.red('X');
-const markerWarning = chalk.yellow('!');
+const markerError = chalk.red('XXX');
+const markerWarning = chalk.yellow('!!');
 const markerOK = chalk.green('✓');
 
 async function checkStepList(steps: CheckStepInterface[]): Promise<[string[], string[]]> {
