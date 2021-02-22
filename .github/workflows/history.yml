@@ -12,6 +12,7 @@ jobs:
         with:
           token: ${{ secrets.COMMIT_TOKEN }}
           ref: master
+          fetch-depth: 0
       - uses: actions/setup-node@v1
         with:
           node-version: 12
