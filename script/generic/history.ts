@@ -153,6 +153,10 @@ export async function processChanges(): Promise<number> {
 
     const changeList: unknown = changeListToJson(ver, newVer, files);
     const newChangeFile = writeChangeList(newVer, changeList);
+    if (!newChangeFile) {
+        console.log(`Error: could not write out new change file`);
+        return 6;
+    }
     writeLatestVersion(newVer);
     console.log(`Changes written to ${FilenameLatest} and ${newChangeFile}`);
 
