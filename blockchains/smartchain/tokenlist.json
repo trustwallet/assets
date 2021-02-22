@@ -135,7 +135,10 @@
                 },
                 {
                     "base": "c20000714_t0xF8A0BF9cF54Bb92F17374d9e9A321E6a111a51bD"
-                }
+                },
+				{
+                    "base": "c20000714_t0x988c11625472340b7B36FF1534893780E0d8d841"
+                }		
             ]
         },
         {
@@ -584,7 +587,17 @@
             "decimals": 18,
             "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xF8A0BF9cF54Bb92F17374d9e9A321E6a111a51bD/logo.png",
             "pairs": []
-        }
+        },
+		{
+            "asset": "c20000714_t0x988c11625472340b7B36FF1534893780E0d8d841",
+            "type": "BEP20",
+            "address": "0x988c11625472340b7B36FF1534893780E0d8d841",
+            "name": "Wrapped Conceal",
+            "symbol": "wCCX",
+            "decimals": 6,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x988c11625472340b7B36FF1534893780E0d8d841/logo.png",
+            "pairs": []
+        }		
     ],
     "version": {
         "major": 6,
