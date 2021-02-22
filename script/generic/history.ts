@@ -62,7 +62,7 @@ function writeLatestVersion(version: VersionInfo): void {
 }
 
 async function getCurrentCommit(): Promise<string> {
-    const raw = await execGit("rev-parse HEAD");
+    const raw = await execGit("rev-parse master");
     if (!raw) {
         return raw;
     }
