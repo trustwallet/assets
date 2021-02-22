@@ -4,6 +4,7 @@ import {
     readFileSync,
     writeFileSync,
 } from "./filesystem";
+import * as child_process from "child_process";
 
 class VersionInfo {
     versionNum: number;
@@ -16,7 +17,7 @@ const FilenameChangeTemplate = "history/versions/";
 const TooManyChangesLimit = 2;
 
 //const util = require('util');
-const exec = util.promisify(require('child_process').exec);
+const exec = util.promisify(child_process.exec);
 
 async function execGit(options: string): Promise<string> {
     try {
@@ -38,7 +39,7 @@ async function execGit(options: string): Promise<string> {
 }
 
 function readLatestVersion(): VersionInfo {
-    let zeroVer: VersionInfo = {versionNum: 0, commit: "", date: (new Date()).toISOString()};
+    const zeroVer: VersionInfo = {versionNum: 0, commit: "", date: (new Date()).toISOString()};
     try {
         const rawdata = readFileSync(FilenameLatest);
         const ver: VersionInfo = JSON.parse(rawdata) as VersionInfo;
@@ -78,12 +79,12 @@ async function getChangedFiles(commitStart: string, commitEnd: string): Promise<
     return list;
 }
 
-function changeListToJson(versionStart: VersionInfo, versionEnd: VersionInfo, changes: string[]): any {
-    const fullChanges: Boolean = false;
+function changeListToJson(versionStart: VersionInfo, versionEnd: VersionInfo, changes: string[]): unknown {
+    let fullChanges = false;
     if (changes.length > TooManyChangesLimit) {
-        fullChanges: true;
+        fullChanges = true;
     }
-    const obj: any = {
+    const obj: unknown = {
         "versionEnd": versionEnd,
         "versionStart": versionStart,
         "fullChange": fullChanges,
@@ -96,7 +97,7 @@ function changeListToJson(versionStart: VersionInfo, versionEnd: VersionInfo, ch
 }
 
 // return filename
-function writeChangeList(version: VersionInfo, changeList: any): string {
+function writeChangeList(version: VersionInfo, changeList: unknown): string {
     try {
         const filename: string = FilenameChangeTemplate + version.versionNum.toString() + ".json";
         if (isPathExistsSync(filename)) {
@@ -150,7 +151,7 @@ export async function processChanges(): Promise<number> {
         return 5;
     }
 
-    const changeList: any = changeListToJson(ver, newVer, files);
+    const changeList: unknown = changeListToJson(ver, newVer, files);
     const newChangeFile = writeChangeList(newVer, changeList);
     writeLatestVersion(newVer);
     console.log(`Changes written to ${FilenameLatest} and ${newChangeFile}`);
