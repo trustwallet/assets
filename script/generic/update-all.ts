@@ -40,6 +40,10 @@ const actionList: ActionInterface[] = [
 
 const maxErrosFromOneCheck = 5;
 
+const markerError = chalk.red('X');
+const markerWarning = chalk.yellow('!');
+const markerOK = chalk.green('✓');
+
 async function checkStepList(steps: CheckStepInterface[]): Promise<[string[], string[]]> {
     const errorsAll: string[] = [];
     const warningsAll: string[] = [];
@@ -48,36 +52,36 @@ async function checkStepList(steps: CheckStepInterface[]): Promise<[string[], st
             //console.log(`     Running check step '${step.getName()}'...`);
             const [errors, warnings] = await step.check();
             if (errors && errors.length > 0) {
-                console.log(`-  ${chalk.red('X')} '${step.getName()}':  ${errors.length} errors`);
+                console.log(`-  ${markerError} '${step.getName()}':  ${errors.length} errors`);
                 let cnt = 0;
                 errors.forEach(err => {
                     if (cnt < maxErrosFromOneCheck) {
-                        console.log(`   ${chalk.red('X')}   '${err}'`);
+                        console.log(`   ${markerError}   '${err}'`);
                         errorsAll.push(err);
                     } else if (cnt == maxErrosFromOneCheck) {
-                        console.log(`   ${chalk.red('X')}   ${errors.length} errors in total, omitting rest ...`);
+                        console.log(`   ${markerError}   ${errors.length} errors in total, omitting rest ...`);
                     }
                     cnt++;
                 });
             }
             if (warnings && warnings.length > 0) {
-                console.log(`-  ${chalk.yellow('!')} '${step.getName()}':  ${warnings.length} warnings`);
+                console.log(`-  ${markerWarning} '${step.getName()}':  ${warnings.length} warnings`);
                 let cnt = 0;
                 warnings.forEach(warn => {
                     if (cnt < maxErrosFromOneCheck) {
-                        console.log(`   ${chalk.yellow('!')}   '${warn}'`);
+                        console.log(`   ${markerWarning}   '${warn}'`);
                         warningsAll.push(warn);
                     } else if (cnt == maxErrosFromOneCheck) {
-                        console.log(`   ${chalk.yellow('!')}   ${warnings.length} warnings in total, omitting rest ...`);
+                        console.log(`   ${markerWarning}   ${warnings.length} warnings in total, omitting rest ...`);
                     }
                     cnt++;
                 });
             }
             if (errors.length == 0 && warnings.length == 0) {
-                console.log(`-  ${chalk.green('✓')} '${step.getName()}' OK`);
+                console.log(`-  ${markerOK} '${step.getName()}' OK`);
             }
         } catch (error) {
-            console.log(`-  ${chalk.red('X')} '${step.getName()}': Caught error: ${error.message}`);
+            console.log(`-  ${markerError} '${step.getName()}': Caught error: ${error.message}`);
             errorsAll.push(`${step.getName()}: Exception: ${error.message}`);
         }
     });
@@ -102,12 +106,12 @@ async function sanityCheckByActionList(actions: ActionInterface[]): Promise<[str
                         warnings1.forEach(w => warnings.push(w));
                     }
                     if (errors1.length == 0 && warnings1.length == 0) {
-                        console.log(`- ${chalk.green('✓')} Action '${action.getName()}' OK, all ${steps.length} steps`);
+                        console.log(`- ${markerOK} Action '${action.getName()}' OK, all ${steps.length} steps`);
                     }
                 }
             }
         } catch (error) {
-            console.log(`-  ${chalk.red('X')} '${action.getName()}' Caught error: ${error.message}`);
+            console.log(`-  ${markerError} '${action.getName()}' Caught error: ${error.message}`);
             errors.push(`${action.getName()}: Exception: ${error.message}`);
         }
     });
@@ -133,12 +137,12 @@ async function consistencyCheckByActionList(actions: ActionInterface[]): Promise
                         warnings1.forEach(w => warnings.push(w));
                     }
                     if (errors1.length == 0 && warnings1.length == 0) {
-                        console.log(`- ${chalk.green('✓')} Action '${action.getName()}' OK, all ${steps.length} steps`);
+                        console.log(`- ${markerOK} Action '${action.getName()}' OK, all ${steps.length} steps`);
                     }
                 }
             }
         } catch (error) {
-            console.log(`-  ${chalk.red('X')} '${action.getName()}' Caught error: ${error.message}`);
+            console.log(`-  ${markerError} '${action.getName()}' Caught error: ${error.message}`);
             errors.push(`${action.getName()}: Exception: ${error.message}`);
         }
     });
