@@ -14,6 +14,7 @@ class VersionInfo {
 
 const FilenameLatest = "history/LATEST.json";
 const FilenameChangeTemplate = "history/versions/";
+const IgnoreHistoryPrefix = "history/";
 const TooManyChangesLimit = 40;
 
 //const util = require('util');
@@ -75,7 +76,11 @@ async function getChangedFiles(commitStart: string, commitEnd: string): Promise<
     if (!bulk) {
         return [];
     }
-    const list: string[] = bulk.split("\n").filter(l => l);
+    const list: string[] = bulk.split("\n").filter(l => {
+        if (!l) return false;
+        if (l.startsWith(IgnoreHistoryPrefix)) return false;
+        return true;
+    });
     return list;
 }
 
@@ -143,7 +148,7 @@ export async function processChanges(): Promise<number> {
     const files: string[] = await getChangedFiles(ver.commit, currCommit);
     console.log(`${files.length} changed files found`);
     if (!files || files.length == 0) {
-        console.log(`Error: Could not obtain list of changed files between commits ${ver.commit} and ${currCommit}`);
+        console.log(`Error: Could not obtain list of changed files, or no changed files between commits ${ver.commit} and ${currCommit}`);
         return 4;
     }
     if (files.length == 0) {
