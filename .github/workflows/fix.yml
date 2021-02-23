@@ -5,7 +5,9 @@ name: Fixes and History
 # - on fork repos: fix-sanity only
 on:
   push:
-    branches: [ '*' ]
+    branches:
+      - 'master'
+      - '*'
   workflow_dispatch:
 jobs:
   fix-all:
