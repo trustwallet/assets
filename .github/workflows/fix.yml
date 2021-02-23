@@ -37,8 +37,7 @@ jobs:
         if: github.repository_owner != 'trustwallet'
         run: npm run fix-sanity
       - name: Debug # TODO remove
-        run: |
-          echo $GITHUB_REF $GITHUB_BASE_REF {{github.branch}} {{github.ref}}
+        run: echo $GITHUB_REF $GITHUB_BASE_REF {{github.branch}} {{github.ref}}
       - name: Run history
         if: github.repository_owner == 'trustwallet' && (github.base_ref == 'master' || github.ref == 'master')
         run: npm run history
