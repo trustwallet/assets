@@ -37,7 +37,7 @@ jobs:
         if: github.repository_owner != 'trustwallet'
         run: npm run fix-sanity
       - name: Run history
-        echo {{github.branch}} {{github.ref}}
+        run: echo {{github.branch}} {{github.ref}}
         if: github.repository_owner == 'trustwallet' && github.branch == 'master'
         run: npm run history
       - name: Show result (diff)  (run 'npm run fix' locally)
