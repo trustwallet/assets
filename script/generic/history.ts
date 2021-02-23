@@ -14,7 +14,8 @@ class VersionInfo {
 
 const FilenameLatest = "history/LATEST.json";
 const FilenameChangeTemplate = "history/versions/";
-const IgnoreHistoryPrefix = "history/";
+const IncludeHistoryPrefix1 = "blockchains/";
+const IncludeHistoryPrefix2 = "dapps/";
 const TooManyChangesLimit = 40;
 
 //const util = require('util');
@@ -82,8 +83,7 @@ async function getChangedFiles(commitStart: string, commitEnd: string): Promise<
 
 function filterChangedFiles(files: string[]): string[] {
     return files.filter(l => {
-        if (l.startsWith(IgnoreHistoryPrefix)) return false;
-        return true;
+        return (l.startsWith(IncludeHistoryPrefix1) || l.startsWith(IncludeHistoryPrefix2));
     });
 }
 
