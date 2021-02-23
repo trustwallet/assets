@@ -6,6 +6,8 @@ name: Fixes and History
 on:
   push:
     branches: [ '*' ]
+  pull_request: # TODO remove
+    branches: [master]
   workflow_dispatch:
 jobs:
   fix-all:
@@ -37,7 +39,7 @@ jobs:
         if: github.repository_owner != 'trustwallet'
         run: npm run fix-sanity
       - name: Run history
-        run: echo {{github.branch}} {{github.ref}}
+        run: echo {{github.branch}} {{github.ref}}  #TODO
         if: github.repository_owner == 'trustwallet' && github.branch == 'master'
         run: npm run history
       - name: Show result (diff)  (run 'npm run fix' locally)
