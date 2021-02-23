@@ -39,7 +39,7 @@ jobs:
       - name: Debug # TODO remove
         run: echo $GITHUB_REF $GITHUB_BASE_REF {{github.branch}} {{github.ref}}
       - name: Run history
-        if: github.repository_owner == 'trustwallet' && (github.base_ref == 'master' || github.ref == 'master')
+        if: github.repository_owner == 'trustwallet' && (github.base_ref == 'master' || github.ref == 'refs/heads/master')
         run: npm run history
       - name: Show result (diff)  (run 'npm run fix' locally)
         run: |
