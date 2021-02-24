@@ -14,8 +14,9 @@ class VersionInfo {
 
 const FilenameLatest = "history/LATEST.json";
 const FilenameChangeTemplate = "history/versions/";
-const IgnoreHistoryPrefix = "history/";
-const TooManyChangesLimit = 40;
+const IncludeHistoryPrefix1 = "blockchains/";
+const IncludeHistoryPrefix2 = "dapps/";
+//const TooManyChangesLimit = 40;
 
 //const util = require('util');
 const exec = util.promisify(child_process.exec);
@@ -76,31 +77,30 @@ async function getChangedFiles(commitStart: string, commitEnd: string): Promise<
     if (!bulk) {
         return [];
     }
-    const list: string[] = bulk.split("\n").filter(l => l);
+    const list: string[] = bulk.split("\n").map(l => l.trim()).filter(l => l);
     return list;
 }
 
 function filterChangedFiles(files: string[]): string[] {
     return files.filter(l => {
-        if (l.startsWith(IgnoreHistoryPrefix)) return false;
-        return true;
+        return (l.startsWith(IncludeHistoryPrefix1) || l.startsWith(IncludeHistoryPrefix2));
     });
 }
 
 function changeListToJson(versionStart: VersionInfo, versionEnd: VersionInfo, changes: string[]): unknown {
-    let fullChanges = false;
-    if (changes.length > TooManyChangesLimit) {
-        fullChanges = true;
-    }
+    //let fullChanges = false;
+    //if (changes.length > TooManyChangesLimit) {
+    //    fullChanges = true;
+    //}
     const obj: unknown = {
         "versionEnd": versionEnd,
         "versionStart": versionStart,
-        "fullChange": fullChanges,
-        "changeCount": changes.length,
+        //"fullChange": fullChanges,
+        //"changeCount": changes.length,
     };
-    if (!fullChanges) {
+    //if (!fullChanges) {
         obj["changes"] = changes;
-    }
+    //}
     return obj;
 }
 
