@@ -1,7 +1,12 @@
 {
     "name": "Binance Beacon ETH",
-    "website": "https://www.binance.com/en/eth2",
-    "short_description": "BETH is a tokenized asset representing staked ETH at Binance Staking on a 1:1 basis.",
+    "website": "https://binance.com/en/eth2",
+    "description": "BETH is a tokenized asset representing staked ETH at Binance Staking on a 1:1 basis.",
     "explorer": "https://explorer.binance.org/asset/BETH-654",
-    "research": ""
+    "research": "",
+    "type": "BEP2",
+    "symbol": "BETH",
+    "decimals": 8,
+    "status": "active",
+    "id": "BETH-654"
 }

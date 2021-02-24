@@ -1,7 +1,6 @@
 {
     "name": "Badger",
     "website": "https://badger.finance/",
-    "short_description": "BADGER brings Bitcoin to DeFi",
     "description": "DAO dedicated to building products and infrastructure to bring Bitcoin to DeFi.",
     "explorer": "https://etherscan.io/token/0x3472A5A71965499acd81997a54BBA8D852C6E53d",
     "socials": [
@@ -20,5 +19,10 @@
             "url": "https://badgerdao.medium.com/",
             "handle": "$BADGER"
         }
-    ]
+    ],
+    "type": "ERC20",
+    "symbol": "BADGER",
+    "decimals": 18,
+    "status": "active",
+    "id": "0x3472A5A71965499acd81997a54BBA8D852C6E53d"
 }

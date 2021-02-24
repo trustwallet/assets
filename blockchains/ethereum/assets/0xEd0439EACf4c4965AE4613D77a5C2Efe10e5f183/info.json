@@ -1,7 +1,7 @@
 {
     "name": "Shroom.Finance(SHROOM)",
     "website": "https://shroom.finance",
-    "short_description": "Community-owned DEX focused on in-game assets.",
+    "description": "Community-owned DEX focused on in-game assets.",
     "socials": [
         {
             "name": "Twitter",
@@ -19,5 +19,10 @@
             "handle": "eZcFahS"
         }
     ],
-    "explorer": "https://etherscan.io/token/0xEd0439EACf4c4965AE4613D77a5C2Efe10e5f183"
+    "explorer": "https://etherscan.io/token/0xEd0439EACf4c4965AE4613D77a5C2Efe10e5f183",
+    "type": "ERC20",
+    "symbol": "SHROOM",
+    "decimals": 18,
+    "status": "active",
+    "id": "0xEd0439EACf4c4965AE4613D77a5C2Efe10e5f183"
 }

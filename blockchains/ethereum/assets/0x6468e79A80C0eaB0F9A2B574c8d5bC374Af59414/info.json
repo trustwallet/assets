@@ -1,7 +1,7 @@
 {
     "name": "E-RADIX",
     "website": "https://radixdlt.com",
-    "short_description": "E-RADIX (eXRD) is the Ethereum token of Radix, the first layer one protocol built for DeFi. Radix introduces a scalable, secure-by-design, composable platform with a DeFi specific build environment to make it easy to build and launch scalable DeFi.",
+    "description": "E-RADIX (eXRD) is the Ethereum token of Radix, the first layer one protocol built for DeFi. Radix introduces a scalable, secure-by-design, composable platform with a DeFi specific build environment to make it easy to build and launch scalable DeFi.",
     "explorer": "https://etherscan.io/token/0x6468e79A80C0eaB0F9A2B574c8d5bC374Af59414",
     "socials": [
         {
@@ -54,5 +54,10 @@
             "url": "https://github.com/radixdlt",
             "handle": "Radix"
         }
-    ]
+    ],
+    "type": "ERC20",
+    "symbol": "eXRD",
+    "decimals": 18,
+    "status": "active",
+    "id": "0x6468e79A80C0eaB0F9A2B574c8d5bC374Af59414"
 }
