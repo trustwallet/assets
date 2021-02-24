@@ -16,7 +16,7 @@ const FilenameLatest = "history/LATEST.json";
 const FilenameChangeTemplate = "history/versions/";
 const IncludeHistoryPrefix1 = "blockchains/";
 const IncludeHistoryPrefix2 = "dapps/";
-const TooManyChangesLimit = 40;
+//const TooManyChangesLimit = 40;
 
 //const util = require('util');
 const exec = util.promisify(child_process.exec);
@@ -88,19 +88,19 @@ function filterChangedFiles(files: string[]): string[] {
 }
 
 function changeListToJson(versionStart: VersionInfo, versionEnd: VersionInfo, changes: string[]): unknown {
-    let fullChanges = false;
-    if (changes.length > TooManyChangesLimit) {
-        fullChanges = true;
-    }
+    //let fullChanges = false;
+    //if (changes.length > TooManyChangesLimit) {
+    //    fullChanges = true;
+    //}
     const obj: unknown = {
         "versionEnd": versionEnd,
         "versionStart": versionStart,
-        "fullChange": fullChanges,
+        //"fullChange": fullChanges,
         "changeCount": changes.length,
     };
-    if (!fullChanges) {
+    //if (!fullChanges) {
         obj["changes"] = changes;
-    }
+    //}
     return obj;
 }
 
