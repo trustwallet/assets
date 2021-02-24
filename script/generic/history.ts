@@ -77,7 +77,7 @@ async function getChangedFiles(commitStart: string, commitEnd: string): Promise<
     if (!bulk) {
         return [];
     }
-    const list: string[] = bulk.split("\n").filter(l => l);
+    const list: string[] = bulk.split("\n").map(l => l.trim()).filter(l => l);
     return list;
 }
 
@@ -96,7 +96,7 @@ function changeListToJson(versionStart: VersionInfo, versionEnd: VersionInfo, ch
         "versionEnd": versionEnd,
         "versionStart": versionStart,
         //"fullChange": fullChanges,
-        "changeCount": changes.length,
+        //"changeCount": changes.length,
     };
     //if (!fullChanges) {
         obj["changes"] = changes;
