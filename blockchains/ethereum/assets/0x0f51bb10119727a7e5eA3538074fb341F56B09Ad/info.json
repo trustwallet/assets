@@ -1,9 +1,11 @@
 {
-    "name": "DAOMaker",
+    "name": "DAO Maker",
+    "symbol": "DAO",
+    "type": "ERC20",
+    "decimals": 18,
+    "description": "DAO Maker creates growth technologies and funding frameworks for startups, while simultaneously reducing risks for investors.",
     "website": "https://daomaker.com/",
-    "source_code": "https://etherscan.io/address/0x0f51bb10119727a7e5ea3538074fb341f56b09ad#code",
-    "white_paper": "https://drive.google.com/file/d/1tPRMktnros6ifJLfvQkrT6mAmEJvUufT/view",
-    "short_description": "DAO Maker creates growth technologies and funding frameworks for startups, while simultaneously reducing risks for investors.",
-    "explorer": "https://etherscan.io/address/0x0f51bb10119727a7e5ea3538074fb341f56b09ad",
-    "research": "https://daomaker.com/dyco"
+    "explorer": "https://etherscan.io/token/0x0f51bb10119727a7e5ea3538074fb341f56b09ad",
+    "status": "active",
+    "id": "0x0f51bb10119727a7e5ea3538074fb341f56b09ad"
 }
