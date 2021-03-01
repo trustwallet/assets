@@ -11,7 +11,7 @@ export const assetsURL = 'https://raw.githubusercontent.com/trustwallet/assets/m
 // Force include & exclude config: list of token symbols, or symbol pairs (e.g. ["Cake", "DAI-WBNB"]).
 export const PancakeSwap_ForceInclude: string[] = ["Cake", "DAI", "ETH", "TWT", "VAI", "USDT", "BLINK", "BTCB", "ALPHA", "INJ", "CTK", "UNI", "XVS", "BUSD", "HARD", "BIFI", "FRONT"];
 export const PancakeSwap_ForceExclude: string[] = [];
-export const PancakeSwap_TradingPairsUrl = "https://api.bscgraph.org/subgraphs/name/wowswap";
+export const PancakeSwap_TradingPairsUrl = "https://api.bscgraph.org/subgraphs/name/cakeswap";
 export const PancakeSwap_TradingPairsQuery = `
     query pairs {
         pairs(first: 150, orderBy: reserveUSD, orderDirection: desc) {
