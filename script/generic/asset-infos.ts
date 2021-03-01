@@ -263,7 +263,6 @@ export class AssetInfos implements ActionInterface {
                 const errors: string[] = [];
                 const warnings: string[] = [];
                 const assetsList = getChainAssetsList(chain);
-                //console.log(`     Found ${assetsList.length} assets for chain ${chain}`);
                 await bluebird.each(assetsList, async (address) => {
                     isAssetInfoOK(chain, address, errors, warnings, false);
                 });
