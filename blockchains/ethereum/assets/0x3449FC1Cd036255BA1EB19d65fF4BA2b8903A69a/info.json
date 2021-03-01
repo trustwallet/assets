@@ -1,7 +1,6 @@
 {
     "name": "Basis Cash",
     "website": "https://basis.cash/",
-    "short_description": "Basis Cash is a open source, permissionless stablecoin pegged to USD.",
     "description": "Basis Cash is an open source, permissionless stablecoin pegged to USD. The protocol is designed to expand and contract supply similarly to the way central banks buy and sell fiscal debt to stabilze purchasing power, without any REBASES or risking colletrals.",
     "source_code": "https://github.com/Basis-Cash",
     "explorer": "https://etherscan.io/token/0x3449fc1cd036255ba1eb19d65ff4ba2b8903a69a",
@@ -26,5 +25,10 @@
             "url": "https://medium.com/basis-cash",
             "handle": "Basis Cash"
         }
-    ]
+    ],
+    "type": "ERC20",
+    "symbol": "BAC",
+    "decimals": 18,
+    "status": "active",
+    "id": "0x3449FC1Cd036255BA1EB19d65fF4BA2b8903A69a"
 }

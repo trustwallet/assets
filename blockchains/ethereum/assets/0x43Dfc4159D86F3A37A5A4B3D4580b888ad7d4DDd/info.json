@@ -2,7 +2,6 @@
     "name": "DODO",
     "website": "https://dodoex.io/",
     "source_code": "https://github.com/DODOEX/",
-    "short_description": "a liquidity protocol powered by the Proactive Market Maker (PMM) algorithm",
     "description": "DODO is a liquidity protocol powered by the Proactive Market Maker (PMM) algorithm and built for capital efficiency.",
     "socials": [
         {
@@ -21,5 +20,10 @@
             "handle": "DODO"
         }
     ],
-    "explorer": "https://etherscan.io/token/0x43dfc4159d86f3a37a5a4b3d4580b888ad7d4ddd"
+    "explorer": "https://etherscan.io/token/0x43dfc4159d86f3a37a5a4b3d4580b888ad7d4ddd",
+    "type": "ERC20",
+    "symbol": "DODO",
+    "decimals": 18,
+    "status": "active",
+    "id": "0x43Dfc4159D86F3A37A5A4B3D4580b888ad7d4DDd"
 }
