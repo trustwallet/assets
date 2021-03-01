@@ -1,7 +1,7 @@
 {
     "name": "Trust Wallet: Smart Chain",
     "logoURI": "https://trustwallet.com/assets/images/favicon.png",
-    "timestamp": "2021-02-01T15:48:39.820Z",
+    "timestamp": "2021-03-01T15:09:45.051Z",
     "tokens": [
         {
             "chainId": 56,
@@ -101,6 +101,9 @@
                     "base": "c20000714_t0x948d2a81086A075b3130BAc19e4c6DEe1D2E3fE8"
                 },
                 {
+                    "base": "c20000714_t0xa184088a740c695E156F91f5cC086a06bb78b827"
+                },
+                {
                     "base": "c20000714_t0xa1faa113cbE53436Df28FF0aEe54275c13B40975"
                 },
                 {
@@ -137,6 +140,17 @@
                     "base": "c20000714_t0xF8A0BF9cF54Bb92F17374d9e9A321E6a111a51bD"
                 }
             ]
+        },
+        {
+            "chainId": 56,
+            "asset": "c20000714_t0x0231f91e02DebD20345Ae8AB7D71A41f8E140cE7",
+            "type": "BEP20",
+            "address": "0x0231f91e02DebD20345Ae8AB7D71A41f8E140cE7",
+            "name": "Jupiter",
+            "symbol": "bwJUP",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x0231f91e02DebD20345Ae8AB7D71A41f8E140cE7/logo.png",
+            "pairs": []
         },
         {
             "asset": "c20000714_t0x0D8Ce2A99Bb6e3B7Db580eD848240e4a0F9aE153",
@@ -315,17 +329,6 @@
             "pairs": []
         },
         {
-            "chainId": 56,
-            "asset": "c20000714_t0x0231f91e02DebD20345Ae8AB7D71A41f8E140cE7",
-            "type": "BEP20",
-            "address": "0x0231f91e02DebD20345Ae8AB7D71A41f8E140cE7",
-            "name": "Jupiter",
-            "symbol": "bwJUP",
-            "decimals": 18,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x0231f91e02DebD20345Ae8AB7D71A41f8E140cE7/logo.png",
-            "pairs": []
-        },
-        {
             "asset": "c20000714_t0x56b6fB708fC5732DEC1Afc8D8556423A2EDcCbD6",
             "type": "BEP20",
             "address": "0x56b6fB708fC5732DEC1Afc8D8556423A2EDcCbD6",
@@ -458,6 +461,16 @@
             "pairs": []
         },
         {
+            "asset": "c20000714_t0xa184088a740c695E156F91f5cC086a06bb78b827",
+            "type": "BEP20",
+            "address": "0xa184088a740c695E156F91f5cC086a06bb78b827",
+            "name": "AUTOv2",
+            "symbol": "AUTO",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xa184088a740c695E156F91f5cC086a06bb78b827/logo.png",
+            "pairs": []
+        },
+        {
             "chainId": 56,
             "asset": "c20000714_t0xa1faa113cbE53436Df28FF0aEe54275c13B40975",
             "type": "BEP20",
@@ -587,7 +600,7 @@
         }
     ],
     "version": {
-        "major": 6,
+        "major": 7,
         "minor": 0,
         "patch": 0
     }
