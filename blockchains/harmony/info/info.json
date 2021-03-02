@@ -3,14 +3,7 @@
     "website": "https://harmony.one",
     "source_code": "https://github.com/harmony-one",
     "white_paper": "https://harmony.one/pdf/whitepaper.pdf",
-    "short_description": "Harmony aims to offer a high-throughput, low-latency, and low-fee consensus platform designed to power decentralized economies of the future.",
     "description": "Harmony aims to offer a high-throughput, low-latency, and low-fee consensus platform designed to power decentralized economies of the future.",
-    "explorers": [
-        {
-            "name": "Harmony Explorer",
-            "url": "https://explorer.harmony.one/"
-        }
-    ],
     "socials": [
         {
             "name": "Twitter",
@@ -23,5 +16,10 @@
             "handle": "harmony_one"
         }
     ],
-    "data_source": "crowd"
+    "explorer": "https://explorer.harmony.one/",
+    "research": "https://research.binance.com/en/projects/harmony",
+    "symbol": "ONE",
+    "type": "COIN",
+    "decimals": 18,
+    "status": "active"
 }
