@@ -170,7 +170,7 @@ async function consistencyFixByList(actions: ActionInterface[]) {
     await bluebird.each(actions, async (action) => {
         try {
             if (action.consistencyFix) {
-                console.log(`Sanity fix '${action.getName()}':`);
+                console.log(`Consistency fix '${action.getName()}':`);
                 await action.consistencyFix();
             }
         } catch (error) {
