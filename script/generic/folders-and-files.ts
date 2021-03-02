@@ -5,6 +5,7 @@ import {
 import { CheckStepInterface, ActionInterface } from "../generic/interface";
 import {
     allChains,
+    dappsPath,
     getChainLogoPath,
     getChainAssetInfoPath,
     getChainAssetsPath,
@@ -90,7 +91,7 @@ export class FoldersFiles implements ActionInterface {
                                     //console.log(msg);
                                     warnings.push(msg);
                                 }
-                            }) ;
+                            });
                         }
                     });
                     return [errors, warnings];
@@ -109,7 +110,7 @@ export class FoldersFiles implements ActionInterface {
                                 if (!isPathExistsSync(infoFullPath)) {
                                     warnings.push(`Missing info file for asset '${chain}/${address}' -- ${infoFullPath}`);
                                 }
-                            }) ;
+                            });
                         }
                     });
                     return [[], warnings];
@@ -130,9 +131,26 @@ export class FoldersFiles implements ActionInterface {
                                         errors.push(`File '${assetFolderFile}' not allowed at this path: ${assetsPath}`);
                                     }
                                 });
-                            }) ;
+                            });
                         }
                     });
+                    return [errors, []];
+                }
+            },
+            {
+                getName: () => { return "Dapps folders contain only .png files, with all lowercase names"},
+                check: async () => {
+                    const errors: string[] = [];
+                    if (isPathExistsSync(dappsPath)) {
+                        readDirSync(dappsPath).forEach(filename => {
+                            if (!filename.endsWith('.png')) {
+                                errors.push(`File '${filename}' has invalid extension; ${dappsPath}`);
+                            }
+                            if (filename.toLowerCase() != filename) {
+                                errors.push(`File '${filename}' is not all-lowercase; ${dappsPath}`);
+                            }
+                        });
+                    }
                     return [errors, []];
                 }
             }
