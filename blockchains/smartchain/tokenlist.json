@@ -1,7 +1,7 @@
 {
     "name": "Trust Wallet: Smart Chain",
     "logoURI": "https://trustwallet.com/assets/images/favicon.png",
-    "timestamp": "2021-03-01T15:09:45.051Z",
+    "timestamp": "2021-03-03T15:27:59.597Z",
     "tokens": [
         {
             "chainId": 56,
@@ -89,6 +89,12 @@
                     "base": "c20000714_t0x7979F6C54ebA05E18Ded44C4F986F49a5De551c2"
                 },
                 {
+                    "base": "c20000714_t0x7F70642d88cf1C4a3a7abb072B53B929b653edA5"
+                },
+                {
+                    "base": "c20000714_t0x81859801b01764D4f0Fa5E64729f5a6C3b91435b"
+                },
+                {
                     "base": "c20000714_t0x88f1A5ae2A3BF98AEAF342D26B30a79438c9142e"
                 },
                 {
@@ -116,10 +122,19 @@
                     "base": "c20000714_t0xAD6cAEb32CD2c308980a548bD0Bc5AA4306c6c18"
                 },
                 {
+                    "base": "c20000714_t0xb59490aB09A0f526Cc7305822aC65f2Ab12f9723"
+                },
+                {
                     "base": "c20000714_t0xBf5140A22578168FD562DCcF235E5D43A02ce9B1"
                 },
                 {
                     "base": "c20000714_t0xbF7c81FFF98BbE61B40Ed186e4AfD6DDd01337fe"
+                },
+                {
+                    "base": "c20000714_t0xC7d8D35EBA58a0935ff2D5a33Df105DD9f071731"
+                },
+                {
+                    "base": "c20000714_t0xC9849E6fdB743d08fAeE3E34dd2D1bc69EA11a51"
                 },
                 {
                     "base": "c20000714_t0xCa3F508B8e4Dd382eE878A314789373D80A5190A"
@@ -421,6 +436,26 @@
             "pairs": []
         },
         {
+            "asset": "c20000714_t0x7F70642d88cf1C4a3a7abb072B53B929b653edA5",
+            "type": "BEP20",
+            "address": "0x7F70642d88cf1C4a3a7abb072B53B929b653edA5",
+            "name": "Binance-Peg YFII.finance",
+            "symbol": "YFII",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x7F70642d88cf1C4a3a7abb072B53B929b653edA5/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c20000714_t0x81859801b01764D4f0Fa5E64729f5a6C3b91435b",
+            "type": "BEP20",
+            "address": "0x81859801b01764D4f0Fa5E64729f5a6C3b91435b",
+            "name": "bearn.fi",
+            "symbol": "BFI",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x81859801b01764D4f0Fa5E64729f5a6C3b91435b/logo.png",
+            "pairs": []
+        },
+        {
             "asset": "c20000714_t0x88f1A5ae2A3BF98AEAF342D26B30a79438c9142e",
             "type": "BEP20",
             "address": "0x88f1A5ae2A3BF98AEAF342D26B30a79438c9142e",
@@ -514,6 +549,16 @@
             "pairs": []
         },
         {
+            "asset": "c20000714_t0xb59490aB09A0f526Cc7305822aC65f2Ab12f9723",
+            "type": "BEP20",
+            "address": "0xb59490aB09A0f526Cc7305822aC65f2Ab12f9723",
+            "name": "Litentry",
+            "symbol": "LIT",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xb59490aB09A0f526Cc7305822aC65f2Ab12f9723/logo.png",
+            "pairs": []
+        },
+        {
             "chainId": 56,
             "asset": "c20000714_t0xBf5140A22578168FD562DCcF235E5D43A02ce9B1",
             "type": "BEP20",
@@ -532,6 +577,26 @@
             "symbol": "EGLD",
             "decimals": 18,
             "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xbF7c81FFF98BbE61B40Ed186e4AfD6DDd01337fe/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c20000714_t0xC7d8D35EBA58a0935ff2D5a33Df105DD9f071731",
+            "type": "BEP20",
+            "address": "0xC7d8D35EBA58a0935ff2D5a33Df105DD9f071731",
+            "name": "Hedget",
+            "symbol": "HGET",
+            "decimals": 6,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xC7d8D35EBA58a0935ff2D5a33Df105DD9f071731/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c20000714_t0xC9849E6fdB743d08fAeE3E34dd2D1bc69EA11a51",
+            "type": "BEP20",
+            "address": "0xC9849E6fdB743d08fAeE3E34dd2D1bc69EA11a51",
+            "name": "Bunny Token",
+            "symbol": "BUNNY",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xC9849E6fdB743d08fAeE3E34dd2D1bc69EA11a51/logo.png",
             "pairs": []
         },
         {
@@ -600,7 +665,7 @@
         }
     ],
     "version": {
-        "major": 7,
+        "major": 8,
         "minor": 0,
         "patch": 0
     }
