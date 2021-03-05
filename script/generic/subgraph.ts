@@ -28,7 +28,7 @@ export async function getTradingPairs(apiUrl: string, subgraphQuery: string): Pr
     try {
         const result = await axios.post(apiUrl, postData).then(r => r.data);
         if (!result || !result.data || !result.data.pairs) {
-            throw `Unexpected result: ${result}`;
+            throw `Unexpected result: ${JSON.stringify(result)}`;
         }
         const pairs = result.data.pairs;
         console.log(`Retrieved ${pairs.length} trading pair infos`);
