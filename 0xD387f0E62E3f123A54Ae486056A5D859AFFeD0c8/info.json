@@ -1,6 +1,13 @@
 {
-    "name": "yETH",
+    "name": "YETH",
     "website": "https://fyeth.finance",
-    "short_description": "Got yETH bro?",
-    "explorer": "https://etherscan.io/address/0xD387f0E62E3f123A54Ae486056A5D859AFFeD0c8"
-}
+    "short_description": "Ren is an open protocol meant to enable the permissionless and private transfer of value between any blockchain.",
+    "explorers": [
+        {
+            "name": "Bscscan",
+            "url": "https://www.bscscan.com/token/0x77dfb1dafc92c5df29996f5528ba1829941cd3bb"
+        }
+    ],
+    "data_source": "crowd",
+    "socials": []
+} 
