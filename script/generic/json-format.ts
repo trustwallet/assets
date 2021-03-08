@@ -10,13 +10,15 @@ async function formatInfos(): Promise<void> {
     const files = [
         ...findFiles(chainsPath, 'json'),
     ];
-    let count = 0;
+    let count1 = 0;
+    let count2 = 0;
     await bluebird.each(files, async (file) => {
         if (formatJsonFile(file)) {
-            ++count;
+            ++count2;
         }
+        ++count1;
     });
-    console.log(`Formatted ${count} json files`);
+    console.log(`Formatted ${count2} json files (total ${count1})`);
 }
 
 export class JsonAction implements ActionInterface {
