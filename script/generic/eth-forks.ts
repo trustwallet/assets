@@ -3,15 +3,12 @@ import {
     getChainAssetsPath,
     getChainAssetsList,
     getChainAssetPath,
-    getChainAssetInfoPath,
     getChainAssetFilesList,
-    isChainAssetInfoExistSync,
     logoName,
     logoExtension,
     logoFullName,
     getChainAssetLogoPath
 } from "../generic/repo-structure";
-import { formatJsonFile } from "../generic/json";
 import {
     getFileName,
     getFileExt,
