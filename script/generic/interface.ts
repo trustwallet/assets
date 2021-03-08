@@ -14,8 +14,8 @@ export interface ActionInterface {
     getConsistencyChecks?(): CheckStepInterface[];
     sanityFix?(): Promise<void>;
     consistencyFix?(): Promise<void>;
-    updateAuto?(): Promise<void>; // For regular automatic updates
-    updateManual?(): Promise<void>; // For occasional manual updates
+    updateAuto?(): Promise<void>; // For regular automatic updates (from external source)
+    updateManual?(): Promise<void>; // For occasional manual updates (from external source)
 }
 
 export enum FixCheckMode {
