@@ -29,16 +29,14 @@ function isAssetInfoValid(info: unknown, path: string, address: string, chain: s
         typeof info['type'] === "string" && info['type'] !== "" &&
         typeof info['symbol'] === "string" && info['symbol'] !== "" &&
         typeof info['decimals'] === "number" && //(info['description'] === "-" || info['decimals'] !== 0) &&
-        typeof info['status'] === "string" && info['status'] !== ""
+        typeof info['status'] === "string" && info['status'] !== "" &&
+        typeof info['id'] === "string" && info['id'] !== ""
         ;
     if (!isKeys1CorrectType) {
-        return [`Check keys1 '${info['name']}' '${info['type']}' '${info['symbol']}' '${info['decimals']}' '${info['id']}' ${path}`, "", fixedInfo];
+        return [`Field missing or invalid; name '${info['name']}' type '${info['type']}' symbol '${info['symbol']}' decimals '${info['decimals']}' id '${info['id']}' ${path}`, "", fixedInfo];
     }
 
     // type
-    if (typeof info['type'] !== "string") {
-        return [`Incorrect type for type '${info['type']}' '${chain}' '${path}`, "", fixedInfo];
-    }
     if (chainFromAssetType(info['type'].toUpperCase()) !== chain ) {
         return [`Incorrect value for type '${info['type']}' '${chain}' '${path}`, "", fixedInfo];
     }
@@ -50,6 +48,20 @@ function isAssetInfoValid(info: unknown, path: string, address: string, chain: s
         // fix
         if (!fixedInfo) { fixedInfo = info; }
         fixedInfo['type'] = info['type'].toUpperCase();
+    }
+
+    // id, should match address
+    if (info['id'] != address) {
+        if (checkOnly) {
+            if (info['id'].toUpperCase() != address.toUpperCase()) {
+                return [`Incorrect value for id '${info['id']}' '${chain}' '${path}`, "", fixedInfo];
+            }
+            // is is correct value, but casing is wrong
+            return ["", `Wrong casing for id '${info['id']}' '${chain}' '${path}`, fixedInfo];
+        }
+        // fix
+        if (!fixedInfo) { fixedInfo = info; }
+        fixedInfo['id'] = address;
     }
 
     const isKeys2CorrectType = 
