@@ -29,7 +29,8 @@ function isAssetInfoValid(info: unknown, path: string, address: string, chain: s
         typeof info['type'] === "string" && info['type'] !== "" &&
         typeof info['symbol'] === "string" && info['symbol'] !== "" &&
         typeof info['decimals'] === "number" && //(info['description'] === "-" || info['decimals'] !== 0) &&
-        typeof info['status'] === "string" && info['status'] !== ""
+        typeof info['status'] === "string" && info['status'] !== "" &&
+        typeof info['id'] === "string" && info['id'] !== ""
         ;
     if (!isKeys1CorrectType) {
         return [`Check keys1 '${info['name']}' '${info['type']}' '${info['symbol']}' '${info['decimals']}' '${info['id']}' ${path}`, "", fixedInfo];
