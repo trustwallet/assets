@@ -1,0 +1,27 @@
+{
+    "name": "ASI Finance",
+    "website": "https://asi.finance",
+    "short_description": "Artificial Super Intelligence For Smarter Token Rewards.",
+    "explorer": "https://bscscan.com/token/0x8f671544a39b2c0905beac1c1009389d6922305f",
+    "source_code": "https://github.com/asifinance/ASI-contracts",
+    "description": "ASI is an open yield platform with a fairer approach to distributing rewards based on holders’ loyalty. Backed by AI and machine learning, the platform makes it easy for you to deposit, trade and earn rewards on your token holdings.",
+    "socials": [
+        {
+            "name": "Twitter",
+            "url": "https://twitter.com/asi_finance"
+        },
+        {
+            "name": "Medium",
+            "url": "https://asifinance.medium.com"
+        },
+        {
+            "name": "Telegram",
+            "url": "https://t.me/asifinance"
+        }
+    ],
+    "type": "BEP20",
+    "symbol": "BASI",
+    "decimals": 18,
+    "status": "active",
+    "id": "0x8f671544a39b2c0905beac1c1009389d6922305f"
+}
