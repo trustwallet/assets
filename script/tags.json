@@ -15,20 +15,20 @@
         "name": "NFT",
         "description": "Non-fungible tokens or tokens associated with the NFT ecosystem."
     },
-    "dao": {
-        "name": "DAO",
-        "description": "Tokens that govern decentralized autonomous organizations (DAOs)."
+    "governance": {
+        "name": "Governance",
+        "description": "Tokens that used to participate in the governance process of the project."
     },
     "defi": {
         "name": "DeFi",
-        "description": null
-    },
-    "creator": {
-        "name": "Creator",
-        "description": "Tokens by creators."
+        "description": "Tokens that are used for variety of decentralized financial applications."
     },
     "staking": {
         "name": "Staking",
         "description": "Tokens that are used for staking to receive rewards."
+    },
+    "privacy": {
+        "name": "Privacy",
+        "description": "Privacy tokens."
     }
 }
