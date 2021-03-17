@@ -21,6 +21,7 @@ import {
     reverseCase
 } from "../script/generic/types";
 import { findImagesToFetch } from "../script/blockchain/binance";
+import { isValidStatusValue } from "../script/generic/status-values";
 
 describe("Test eth-address helpers", () => {
     test(`Test isChecksum`, () => {
@@ -132,5 +133,15 @@ describe("Test blockchain binance", () => {
         expect(findImagesToFetch(assetsInfoListNonexisting, denyListA1), `2 nonexisting with 1 denylisted`).toEqual([{asset: "A2", assetImg: "imgurl2"}]);
         expect(findImagesToFetch(assetsInfoListExisting, denyListEmpty), `2 existing`).toEqual([]);
         expect(findImagesToFetch([], []), `empty`).toEqual([]);
+    });
+});
+
+describe("Test status-values", () => {
+    test(`Test status-values`, () => {
+        expect(isValidStatusValue("active")).toEqual(true);
+        expect(isValidStatusValue("abandoned")).toEqual(true);
+        expect(isValidStatusValue("invalidvalue")).toEqual(false);
+        expect(isValidStatusValue("ACTIVE")).toEqual(false);
+        expect(isValidStatusValue("")).toEqual(false);
     });
 });
