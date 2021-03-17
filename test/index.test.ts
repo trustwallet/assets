@@ -147,14 +147,14 @@ describe("Test status, tag values", () => {
     });
     test(`Test tag-values`, () => {
         expect(isValidTagValue("defi")).toEqual(true);
-        expect(isValidTagValue("dao")).toEqual(true);
+        expect(isValidTagValue("staking")).toEqual(true);
         expect(isValidStatusValue("invalidvalue")).toEqual(false);
-        expect(isValidStatusValue("DAO")).toEqual(false);
+        expect(isValidStatusValue("STAKING")).toEqual(false);
         expect(isValidStatusValue("")).toEqual(false);
 
         expect(isValidTagValues(["defi"])).toEqual(true);
-        expect(isValidTagValues(["dao"])).toEqual(true);
-        expect(isValidTagValues(["defi", "dao"])).toEqual(true);
+        expect(isValidTagValues(["staking"])).toEqual(true);
+        expect(isValidTagValues(["defi", "staking"])).toEqual(true);
         expect(isValidTagValues(["invalid"])).toEqual(false);
         expect(isValidTagValues(["defi", "invalid"])).toEqual(false);
     });
