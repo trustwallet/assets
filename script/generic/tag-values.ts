@@ -15,7 +15,7 @@ export function isValidTagValue(value: string): boolean {
 }
 
 export function isValidTagValues(values: string[]): boolean {
-    var valid: boolean = true;
+    const valid: boolean = true;
     values.forEach(v => valid = valid && isValidTagValue(v));
     return valid;
 }
