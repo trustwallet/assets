@@ -10,6 +10,7 @@ import { isValidJSON, readJsonFile, writeJsonFile } from "../generic/json";
 import { ActionInterface, CheckStepInterface } from "../generic/interface";
 import { CoinType } from "@trustwallet/wallet-core";
 import { isValidStatusValue } from "../generic/status-values";
+import { isValidTagValues } from "../generic/tag-values";
 import * as bluebird from "bluebird";
 
 const requiredKeys = ["name", "type", "symbol", "decimals", "description", "website", "explorer", "status", "id"];
@@ -67,7 +68,14 @@ function isAssetInfoValid(info: unknown, path: string, address: string, chain: s
 
     // status
     if (!isValidStatusValue(info['status'])) {
-        return [`Invalid value for status field, '${info['status']}'`, "", fixedInfo]
+        return [`Invalid value for status field, '${info['status']}'`, "", fixedInfo];
+    }
+
+    // tags
+    if (info['tags']) {
+        if (!isValidTagValues(info['tags'])) {
+            return [`Invalid tags, '${info['tags']}'`, "", fixedInfo];
+        }
     }
 
     const isKeys2CorrectType = 
