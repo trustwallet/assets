@@ -1,0 +1,34 @@
+{
+    "stablecoin": {
+        "name": "Stablecoin",
+        "description": "Tokens that are fixed to an external asset, e.g. the US dollar."
+    },
+    "wrapped": {
+        "name": "Wrapped",
+        "description": "Tokens that are wrapped or peg representation of digital assets. Excluded stablecoins"
+    },
+    "synthetics": {
+        "name": "Synthetics",
+        "description": "Synthetic assets created to track the value of another asset"
+    },
+    "nft": {
+        "name": "NFT",
+        "description": "Non-fungible tokens or tokens associated with the NFT ecosystem."
+    },
+    "dao": {
+        "name": "DAO",
+        "description": "Tokens that govern decentralized autonomous organizations (DAOs)."
+    },
+    "defi": {
+        "name": "DeFi",
+        "description": null
+    },
+    "creator": {
+        "name": "Creator",
+        "description": "Tokens by creators."
+    },
+    "staking": {
+        "name": "Staking",
+        "description": "Tokens that are used for staking to receive rewards."
+    }
+}

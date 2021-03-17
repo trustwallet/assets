@@ -22,6 +22,7 @@ import {
 } from "../script/generic/types";
 import { findImagesToFetch } from "../script/blockchain/binance";
 import { isValidStatusValue } from "../script/generic/status-values";
+import { isValidTagValue, isValidTagValues } from "../script/generic/tag-values";
 
 describe("Test eth-address helpers", () => {
     test(`Test isChecksum`, () => {
@@ -136,12 +137,25 @@ describe("Test blockchain binance", () => {
     });
 });
 
-describe("Test status-values", () => {
+describe("Test status, tag values", () => {
     test(`Test status-values`, () => {
         expect(isValidStatusValue("active")).toEqual(true);
         expect(isValidStatusValue("abandoned")).toEqual(true);
         expect(isValidStatusValue("invalidvalue")).toEqual(false);
         expect(isValidStatusValue("ACTIVE")).toEqual(false);
         expect(isValidStatusValue("")).toEqual(false);
+    });
+    test(`Test tag-values`, () => {
+        expect(isValidTagValue("defi")).toEqual(true);
+        expect(isValidTagValue("dao")).toEqual(true);
+        expect(isValidStatusValue("invalidvalue")).toEqual(false);
+        expect(isValidStatusValue("DAO")).toEqual(false);
+        expect(isValidStatusValue("")).toEqual(false);
+
+        expect(isValidTagValues(["defi"])).toEqual(true);
+        expect(isValidTagValues(["dao"])).toEqual(true);
+        expect(isValidTagValues(["defi", "dao"])).toEqual(true);
+        expect(isValidTagValues(["invalid"])).toEqual(false);
+        expect(isValidTagValues(["defi", "invalid"])).toEqual(false);
     });
 });
