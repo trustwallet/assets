@@ -1,26 +1,25 @@
-
 {
-    "name": "DeepLock",
-    "website": "https://deeplock.io/",
-    "description": "DeepLock is the platform to launch projects on the Binance Smart Chain in a safe way, and for keeping digital assets safe on #BSC.",
-    "explorer": "https://bscscan.com/token/0x60DE5F9386b637Fe97aF1CC05F25548E9BAAee19",
-    "type": "BEP20",
-    "symbol": "DEEP",
-    "decimals": 18,
-    "status": "active",
-    "id": "0x60DE5F9386b637Fe97aF1CC05F25548E9BAAee19",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/deeplockio"
-        },
-        {
-            "name": "Medium",
-            "url": "https://medium.com/@deeplock"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/deeplock_io"
-        }
-    ],
+  "name": "DeepLock",
+  "website": "https://deeplock.io/",
+  "description": "DeepLock is the platform to launch projects on the Binance Smart Chain in a safe way, and for keeping digital assets safe on #BSC.",
+  "explorer": "https://bscscan.com/token/0x60DE5F9386b637Fe97aF1CC05F25548E9BAAee19",
+  "type": "BEP20",
+  "symbol": "DEEP",
+  "decimals": 18,
+  "status": "active",
+  "id": "0x60DE5F9386b637Fe97aF1CC05F25548E9BAAee19",
+  "socials": [
+    {
+      "name": "Twitter",
+      "url": "https://twitter.com/deeplockio"
+    },
+    {
+      "name": "Medium",
+      "url": "https://medium.com/@deeplock"
+    },
+    {
+      "name": "Telegram",
+      "url": "https://t.me/deeplock_io"
+    }
+  ]
 }
