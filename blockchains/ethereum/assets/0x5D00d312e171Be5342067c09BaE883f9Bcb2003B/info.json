@@ -1,7 +1,7 @@
 {
     "name": "Ethermon",
     "website": "https://ethermon.io",
-    "short_description": "Decentralized World of Ether Monsters",
+    "description": "Decentralized World of Ether Monsters",
     "explorer": "https://etherscan.io/token/0x5D00d312e171Be5342067c09BaE883f9Bcb2003B",
     "socials": [
         {
@@ -14,5 +14,10 @@
             "url": "https://www.instagram.com/ethermon_nft",
             "handle": "ethermon_nft"
         }
-    ]
+    ],
+    "type": "ERC20",
+    "symbol": "EMONA",
+    "decimals": 0,
+    "status": "active",
+    "id": "0x5D00d312e171Be5342067c09BaE883f9Bcb2003B"
 }
