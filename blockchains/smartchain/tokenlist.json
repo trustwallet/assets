@@ -153,6 +153,9 @@
                 },
                 {
                     "base": "c20000714_t0xF8A0BF9cF54Bb92F17374d9e9A321E6a111a51bD"
+                },
+                {
+                    "base": "c20000714_t0x47a13c792a3c07de94eb824204364a85f696e465"
                 }
             ]
         },
@@ -661,6 +664,16 @@
             "symbol": "LINK",
             "decimals": 18,
             "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xF8A0BF9cF54Bb92F17374d9e9A321E6a111a51bD/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c20000714_t0x47a13c792a3c07de94eb824204364a85f696e465",
+            "type": "BEP20",
+            "address": "0x47a13c792a3c07de94eb824204364a85f696e465",
+            "name": "pitaya.finance",
+            "symbol": "PTA",
+            "decimals": 6,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x47a13c792a3c07de94eb824204364a85f696e465/logo.png",
             "pairs": []
         }
     ],
