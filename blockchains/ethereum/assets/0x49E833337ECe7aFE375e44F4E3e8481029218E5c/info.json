@@ -2,7 +2,7 @@
     "name": "Value Liquidity",
     "source_code": "https://github.com/valuedefi",
     "website": "https://valuedefi.io/",
-    "short_description": "Value DeFi: Bringing True Value to DeFi.",
+    "description": "Value DeFi: Bringing True Value to DeFi.",
     "socials": [
         {
             "name": "Twitter",
@@ -25,5 +25,10 @@
             "handle": "valuedefi"
         }
     ],
-    "explorer": "https://etherscan.io/token/0x49E833337ECe7aFE375e44F4E3e8481029218E5c"
+    "explorer": "https://etherscan.io/token/0x49E833337ECe7aFE375e44F4E3e8481029218E5c",
+    "type": "ERC20",
+    "symbol": "VALUE",
+    "decimals": 18,
+    "status": "active",
+    "id": "0x49E833337ECe7aFE375e44F4E3e8481029218E5c"
 }
