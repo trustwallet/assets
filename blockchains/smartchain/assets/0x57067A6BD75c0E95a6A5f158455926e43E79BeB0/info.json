@@ -1,8 +1,7 @@
 {
     "name": "Blizzard.money",
     "website": "https://blizzard.money",
-    "short_description": "A fair launch yield farming and staking platform on Binance Smart Chain",
-    "explorer": "https://bscscan.com/token/0x57067a6bd75c0e95a6a5f158455926e43e79beb0",
+    "description": "A fair launch yield farming and staking platform on Binance Smart Chain.",
     "socials": [
         {
             "name": "Twitter",
@@ -17,4 +16,10 @@
             "url": "https://t.me/BlizzardMoney"
         }
     ]
+    "explorer": "https://bscscan.com/token/0x57067a6bd75c0e95a6a5f158455926e43e79beb0",
+    "type": "BEP20",
+    "symbol": "BLZD",
+    "decimals": 18,
+    "status": "active",
+    "id": "0x57067A6BD75c0E95a6A5f158455926e43E79BeB0"
 }
