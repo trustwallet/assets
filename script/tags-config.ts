@@ -2,7 +2,7 @@ export interface TagDescription {
     id: string;
     name: string;
     description: string;
-};
+}
 
 export const TagValues: TagDescription[] = [
     {
