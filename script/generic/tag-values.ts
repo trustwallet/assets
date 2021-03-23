@@ -1,4 +1,3 @@
-import { readJsonFile } from "../generic/json";
 import { TagValues } from "../tags-config";
 
 export function isValidTagValue(value: string): boolean {
