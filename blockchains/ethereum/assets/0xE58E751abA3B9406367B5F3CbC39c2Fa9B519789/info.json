@@ -1,6 +1,11 @@
 {
-    "explorer": "https://etherscan.io/token/0xe58e751aba3b9406367b5f3cbc39c2fa9b519789",
+    "explorer": "https://etherscan.io/token/0xE58E751abA3B9406367B5F3CbC39c2Fa9B519789",
     "name": "EXOLOVER",
     "website": "https://exolover.io",
-    "short_description": "EXOLOVER (EXO) is a utility token for services within EXOLOVER platform."
+    "description": "EXOLOVER (EXO) is a utility token for services within EXOLOVER platform.",
+    "type": "ERC20",
+    "symbol": "EXO",
+    "decimals": 18,
+    "status": "active",
+    "id": "0xE58E751abA3B9406367B5F3CbC39c2Fa9B519789"
 }

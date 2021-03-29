@@ -3,9 +3,8 @@
     "website": "https://polar-berry.com/",
     "source_code": "https://github.com/Filinomus/BerryX",
     "white_paper": "https://polar-berry.com/whitepaper.pdf",
-    "short_description": "A BRX token is created to evaluate the size of the shares of cooperative members.",
     "description": "A BRX token is created to evaluate the size of the shares, as well as to facilitate the exchange of shares through innovation. The token is used for any transactions made within the cooperative,joining fees, membership and share fees, as well as for remuneration.",
-    "explorer": "https://etherscan.io/token/0x3a4a0d5b8dfacd651ee28ed4ffebf91500345489",
+    "explorer": "https://etherscan.io/token/0x3A4A0D5b8dfAcd651EE28ed4fFEBf91500345489",
     "socials": [
         {
             "name": "Twitter",
@@ -17,5 +16,10 @@
             "url": "https://www.facebook.com/polarberrycom",
             "handle": "Polar berry"
         }
-    ]
+    ],
+    "type": "ERC20",
+    "symbol": "BRX",
+    "decimals": 18,
+    "status": "active",
+    "id": "0x3A4A0D5b8dfAcd651EE28ed4fFEBf91500345489"
 }

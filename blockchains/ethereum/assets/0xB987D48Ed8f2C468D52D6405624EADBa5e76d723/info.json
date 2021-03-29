@@ -1,8 +1,8 @@
 {
     "name": "Stabilize Token",
-    "website": "https://www.stabilize.finance",
+    "website": "https://stabilize.finance",
     "source_code": "https://github.com/stabilize-token/",
-    "short_description": "Stabilize Token (STBZ) is a reward token of the Stabilize Protocol",
+    "description": "Stabilize Token (STBZ) is a reward token of the Stabilize Protocol",
     "socials": [
         {
             "name": "Twitter",
@@ -15,5 +15,10 @@
             "handle": "StabilizeProtocol"
         }
     ],
-    "explorer": "https://etherscan.io/token/0xB987D48Ed8f2C468D52D6405624EADBa5e76d723"
+    "explorer": "https://etherscan.io/token/0xB987D48Ed8f2C468D52D6405624EADBa5e76d723",
+    "type": "ERC20",
+    "symbol": "STBZ",
+    "decimals": 18,
+    "status": "active",
+    "id": "0xB987D48Ed8f2C468D52D6405624EADBa5e76d723"
 }

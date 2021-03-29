@@ -3,7 +3,6 @@
     "website": "https://spaceswap.app/",
     "source_code": "https://github.com/spaceswap/spaceswap",
     "description": "SHAKE token is conditionally stable and is pegged to MILK2 token at a 1:1000 ratio. SHAKE price is raising (+10 MILK2 per token) with each SHAKE token minted.",
-    "short_description": "SHAKE token is conditionally stable and is pegged to MILK2 token at a 1:1000 ratio. SHAKE price is raising (+10 MILK2 per token) with each SHAKE token minted.",
     "socials": [
         {
             "name": "Twitter",
@@ -21,5 +20,10 @@
             "handle": "spaceswap"
         }
     ],
-    "explorer": "https://etherscan.io/token/0x6006FC2a849fEdABa8330ce36F5133DE01F96189"
+    "explorer": "https://etherscan.io/token/0x6006FC2a849fEdABa8330ce36F5133DE01F96189",
+    "type": "ERC20",
+    "symbol": "SHAKE",
+    "decimals": 18,
+    "status": "active",
+    "id": "0x6006FC2a849fEdABa8330ce36F5133DE01F96189"
 }
