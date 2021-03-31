@@ -1,7 +1,7 @@
 {
     "name": "DEXTools",
     "website": "https://dextools.io/",
-    "short_description": "Everything you always wanted to know, at one click: Make your own strategies, anticipate the market dumps, search for big spreads, follow and copy the biggest gainer wallets and much more...",
+    "description": "Ultimate Hub and Defi App For Uniswap and DEX trading.",
     "socials": [
         {
             "name": "DEXTools",
@@ -9,5 +9,10 @@
             "handle": "DEXTools"
         }
     ],
-    "explorer": "https://etherscan.io/token/0x26ce25148832c04f3d7f26f32478a9fe55197166"
+    "explorer": "https://etherscan.io/token/0x26CE25148832C04f3d7F26F32478a9fe55197166",
+    "type": "ERC20",
+    "symbol": "DEXT",
+    "decimals": 18,
+    "status": "active",
+    "id": "0x26CE25148832C04f3d7F26F32478a9fe55197166"
 }

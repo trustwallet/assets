@@ -1,6 +1,11 @@
 {
     "name": "Ampleforth",
-    "website": "https://www.ampleforth.org",
-    "short_description": "Ampleforth describes itself as smart commodity money. It is chain-agnostic and reportedly less-correlated to Bitcoin and other digital assets.",
-    "explorer": "https://etherscan.io/token/0xd46ba6d942050d489dbd938a2c909a5d5039a161"
+    "website": "https://ampleforth.org",
+    "description": "Ampleforth describes itself as smart commodity money. It is chain-agnostic and reportedly less-correlated to Bitcoin and other digital assets.",
+    "explorer": "https://etherscan.io/token/0xD46bA6D942050d489DBd938a2C909A5d5039A161",
+    "type": "ERC20",
+    "symbol": "AMPL",
+    "decimals": 9,
+    "status": "active",
+    "id": "0xD46bA6D942050d489DBd938a2C909A5d5039A161"
 }
