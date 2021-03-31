@@ -1,52 +1,36 @@
 import {
     findDuplicates,
     findCommonElementsOrDuplicates,
-} from "../script/generic/types";
+} from "../script/common/types";
 import {
     isChecksum,
-    toChecksum,
-    isEthereumAddress
-} from "../script/generic/eth-address";
+    toChecksum
+} from "../script/common/eth-web3";
 import {
     isDimensionTooLarge,
     isDimensionOK,
     calculateTargetSize
-} from "../script/generic/image";
+} from "../script/common/image";
 import {
+    mapList,
+    mapListTolower,
     sortElements,
     makeUnique,
     arrayDiff,
     arrayDiffNocase,
-    arrayEqual,
-    reverseCase
-} from "../script/generic/types";
-import { findImagesToFetch } from "../script/blockchain/binance";
-import { isValidStatusValue } from "../script/generic/status-values";
-import { isValidTagValue, isValidTagValues } from "../script/generic/tag-values";
+    arrayEqual
+} from "../script/common/types";
+import { findImagesToFetch } from "../script/action/binance";
 
-describe("Test eth-address helpers", () => {
+describe("Test eth-web3 helpers", () => {
     test(`Test isChecksum`, () => {
-        expect(isChecksum("0x7Bb09bC8aDE747178e95B1D035ecBeEBbB18cFee", "ethereum"), `checksum`).toBe(true);
-        expect(isChecksum("0x7bb09bc8ade747178e95b1d035ecbeebbb18cfee", "ethereum"), `lowercase`).toBe(false);
-        expect(isChecksum("0x7Bb09bC8aDE747178e95B1D035ecBe", "ethereum"), `too short`).toBe(false);
-        expect(isChecksum("7Bb09bC8aDE747178e95B1D035ecBeEBbB18cFee", "ethereum"), `checksum, no prefix`).toBe(true);
-        expect(isChecksum("7bb09bc8ade747178e95b1d035ecbeebbb18cfee", "ethereum"), `lowercase, no prefix`).toBe(false);
-        expect(isChecksum("0x7Bb09bC8aDE747178e95B1D035ecBeEBbB18cFee", "wanchain"), `wanchain wrong checksum`).toBe(false);
-        expect(isChecksum("0x7bb09bc8ade747178e95b1d035ecbeebbb18cfee", "wanchain"), `wanchain lowercase`).toBe(false);
-        expect(isChecksum("0x7bB09Bc8Ade747178E95b1d035ECbEebBb18CfEE", "wanchain"), `wanchain checksum`).toBe(true);
+        expect(isChecksum("0x7Bb09bC8aDE747178e95B1D035ecBeEBbB18cFee"), `checksum`).toBe(true);
+        expect(isChecksum("0x7bb09bc8ade747178e95b1d035ecbeebbb18cfee"), `lowercase`).toBe(false);
+        expect(isChecksum("0x7Bb09bC8aDE747178e95B1D035ecBe"), `too short`).toBe(false);
     });
     test(`Test toChecksum`, () => {
-        expect(toChecksum("0x7bb09bc8ade747178e95b1d035ecbeebbb18cfee", "ethereum"), `from lowercase`).toEqual("0x7Bb09bC8aDE747178e95B1D035ecBeEBbB18cFee");
-        expect(toChecksum("0x7Bb09bC8aDE747178e95B1D035ecBeEBbB18cFee", "ethereum"), `from checksum`).toEqual("0x7Bb09bC8aDE747178e95B1D035ecBeEBbB18cFee");
-        expect(toChecksum("7bb09bc8ade747178e95b1d035ecbeebbb18cfee", "ethereum"), `from lowercase, no prefix`).toEqual("0x7Bb09bC8aDE747178e95B1D035ecBeEBbB18cFee");
-        expect(toChecksum("0x7bb09bc8ade747178e95b1d035ecbeebbb18cfee", "wanchain"), `wanchain, from lowercase`).toEqual("0x7bB09Bc8Ade747178E95b1d035ECbEebBb18CfEE");
-    });
-    test(`Test isEthereumAddress`, () => {
-        expect(isEthereumAddress("0x7bb09bc8ade747178e95b1d035ecbeebbb18cfee"), `valid, lowercase`).toBe(true);
-        expect(isEthereumAddress("0x7Bb09bC8aDE747178e95B1D035ecBeEBbB18cFee"), `valid, checksum`).toBe(true);
-        expect(isEthereumAddress("b09bc8ade747178e95b1d035ecbeebbb18cfee"), `invalid, short`).toBe(false);
-        expect(isEthereumAddress("7bb09bc8ade747178e95b1d035ecbeebbb18cfee"), `valid, no prefix`).toBe(true);
-        expect(isEthereumAddress("0x7bb09bc8qde747178e95b1d035ecbeebbb18cfee"), `invalid, length ok, invalid char`).toBe(false);
+        expect(toChecksum("0x7bb09bc8ade747178e95b1d035ecbeebbb18cfee"), `from lowercase`).toEqual("0x7Bb09bC8aDE747178e95B1D035ecBeEBbB18cFee");
+        expect(toChecksum("0x7Bb09bC8aDE747178e95B1D035ecBeEBbB18cFee"), `from checksum`).toEqual("0x7Bb09bC8aDE747178e95B1D035ecBeEBbB18cFee");
     });
 });
 
@@ -80,11 +64,15 @@ describe("Test image helpers", () => {
 });
 
 describe("Test type helpers", () => {
+    test(`Test mapList`, () => {
+        expect(mapList(["a", "b", "c"]), `3 elems`).toEqual({"a": "", "b":"", "c": ""});
+        expect(mapList(["a", "b", "C"]), `3 elems`).toEqual({"a": "", "b":"", "C": ""});
+        expect(mapListTolower(["a", "b", "C"]), `3 elems`).toEqual({"a": "", "b":"", "c": ""});
+    });
     test(`Test sortElements`, () => {
         expect(sortElements(["c", "a", "b"]), `3 elems`).toEqual(["a", "b", "c"]);
         expect(sortElements(["C", "a", "b"]), `mixed case`).toEqual(["a", "b", "C"]);
-        expect(sortElements(["1", "2", "11"]), `numerical string`).toEqual(["1", "2", "11"]);
-        expect(sortElements([1, 2, 11]), `numerical`).toEqual([1, 2, 11]);
+        expect(sortElements(["1", "2", "11"]), `numerical`).toEqual(["1", "2", "11"]);
         expect(sortElements(["C", "a", "1", "b", "2", "11"]), `complex`).toEqual(["1", "2", "11", "a", "b", "C"]);
     });
     test(`Test makeUnique`, () => {
@@ -118,44 +106,17 @@ describe("Test type helpers", () => {
         expect(arrayEqual(["a", "b", "c"], ["a", "b", "b"]), `length mismatch`).toBe(false);
         expect(arrayEqual(["a", "b", "b"], ["a", "b", "c"]), `length mismatch`).toBe(false);
     });
-    test(`Test reverseCase`, () => {
-        expect(reverseCase("abCDef12+-"), `mixed`).toEqual("ABcdEF12+-");
-        expect(reverseCase("ABcdEF12+-"), `mixed`).toEqual("abCDef12+-");
-    });
 });
 
-describe("Test blockchain binance", () => {
+describe("Test action binance", () => {
     test(`Test findImagesToFetch`, () => {
-        const assetsInfoListNonexisting = [{asset: "A1", assetImg: "imgurl1"}, {asset: "A2", assetImg: "imgurl2"}];
-        const assetsInfoListExisting = [{asset: "BUSD-BD1", assetImg: "imgurlBUSD"}, {asset: "ETH-1C9", assetImg: "imgurlETH"}];
-        const denyListEmpty: string[] = [];
-        const denyListA1: string[] = ["A1"];
-        expect(findImagesToFetch(assetsInfoListNonexisting, denyListEmpty), `2 nonexisting`).toEqual(assetsInfoListNonexisting);
-        expect(findImagesToFetch(assetsInfoListNonexisting, denyListA1), `2 nonexisting with 1 denylisted`).toEqual([{asset: "A2", assetImg: "imgurl2"}]);
-        expect(findImagesToFetch(assetsInfoListExisting, denyListEmpty), `2 existing`).toEqual([]);
+        const assetsInfoListNonexisting: any[] = [{asset: "A1", assetImg: "imgurl1"}, {asset: "A2", assetImg: "imgurl2"}];
+        const assetsInfoListExisting: any[] = [{asset: "BUSD-BD1", assetImg: "imgurlBUSD"}, {asset: "ETH-1C9", assetImg: "imgurlETH"}];
+        const blackListEmpty: string[] = [];
+        const blackListA1: string[] = ["A1"];
+        expect(findImagesToFetch(assetsInfoListNonexisting, blackListEmpty), `2 nonexisting`).toEqual(assetsInfoListNonexisting);
+        expect(findImagesToFetch(assetsInfoListNonexisting, blackListA1), `2 nonexisting with 1 blacklisted`).toEqual([{asset: "A2", assetImg: "imgurl2"}]);
+        expect(findImagesToFetch(assetsInfoListExisting, blackListEmpty), `2 existing`).toEqual([]);
         expect(findImagesToFetch([], []), `empty`).toEqual([]);
-    });
-});
-
-describe("Test status, tag values", () => {
-    test(`Test status-values`, () => {
-        expect(isValidStatusValue("active")).toEqual(true);
-        expect(isValidStatusValue("abandoned")).toEqual(true);
-        expect(isValidStatusValue("invalidvalue")).toEqual(false);
-        expect(isValidStatusValue("ACTIVE")).toEqual(false);
-        expect(isValidStatusValue("")).toEqual(false);
-    });
-    test(`Test tag-values`, () => {
-        expect(isValidTagValue("defi")).toEqual(true);
-        expect(isValidTagValue("staking")).toEqual(true);
-        expect(isValidStatusValue("invalidvalue")).toEqual(false);
-        expect(isValidStatusValue("STAKING")).toEqual(false);
-        expect(isValidStatusValue("")).toEqual(false);
-
-        expect(isValidTagValues(["defi"])).toEqual(true);
-        expect(isValidTagValues(["staking"])).toEqual(true);
-        expect(isValidTagValues(["defi", "staking"])).toEqual(true);
-        expect(isValidTagValues(["invalid"])).toEqual(false);
-        expect(isValidTagValues(["defi", "invalid"])).toEqual(false);
     });
 });

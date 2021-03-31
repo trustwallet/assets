@@ -17,5 +17,3 @@ jobs:
         run: npm run check
       - name: Run test
         run: npm t
-      - name: Run lint
-        run: npm run lint
