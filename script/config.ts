@@ -14,7 +14,7 @@ export const PancakeSwap_ForceExclude: string[] = [];
 export const PancakeSwap_TradingPairsUrl = "https://api.bscgraph.org/subgraphs/name/cakeswap";
 export const PancakeSwap_TradingPairsQuery = `
     query pairs {
-        pairs(first: 150, orderBy: reserveUSD, orderDirection: desc) {
+        pairs(first: 300, orderBy: reserveUSD, orderDirection: desc) {
             id reserveUSD volumeUSD txCount __typename
             token0 {
                 id symbol name decimals __typename
@@ -35,7 +35,7 @@ export const Uniswap_ForceExclude: string[] = [];
 export const Uniswap_TradingPairsUrl = "https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v2"; // see https://thegraph.com/explorer/subgraph/uniswap/uniswap-v2
 export const Uniswap_TradingPairsQuery = `
     query pairs {
-        pairs(first: 400, orderBy: reserveUSD, orderDirection: desc) {
+        pairs(first: 800, orderBy: reserveUSD, orderDirection: desc) {
             id reserveUSD trackedReserveETH volumeUSD txCount untrackedVolumeUSD __typename
             token0 {
                 id symbol name decimals __typename
