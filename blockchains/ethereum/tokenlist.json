@@ -1,7 +1,7 @@
 {
     "name": "Trust Wallet: Ethereum",
     "logoURI": "https://trustwallet.com/assets/images/favicon.png",
-    "timestamp": "2021-04-02T09:34:55.433Z",
+    "timestamp": "2021-04-02T09:46:06.924Z",
     "tokens": [
         {
             "chainId": 1,
@@ -555,6 +555,9 @@
                 },
                 {
                     "base": "c60_t0xbC396689893D065F41bc2C6EcbeE5e0085233447"
+                },
+                {
+                    "base": "c60_t0xbE9375C6a420D2eEB258962efB95551A5b722803"
                 },
                 {
                     "base": "c60_t0xbEa98c05eEAe2f3bC8c3565Db7551Eb738c8CCAb"
@@ -2716,6 +2719,16 @@
             "pairs": []
         },
         {
+            "asset": "c60_t0xbE9375C6a420D2eEB258962efB95551A5b722803",
+            "type": "ERC20",
+            "address": "0xbE9375C6a420D2eEB258962efB95551A5b722803",
+            "name": "StormX",
+            "symbol": "STMX",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xbE9375C6a420D2eEB258962efB95551A5b722803/logo.png",
+            "pairs": []
+        },
+        {
             "asset": "c60_t0xbEa98c05eEAe2f3bC8c3565Db7551Eb738c8CCAb",
             "type": "ERC20",
             "address": "0xbEa98c05eEAe2f3bC8c3565Db7551Eb738c8CCAb",
@@ -3316,7 +3329,7 @@
         }
     ],
     "version": {
-        "major": 10,
+        "major": 11,
         "minor": 0,
         "patch": 0
     }
