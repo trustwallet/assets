@@ -1,9 +1,11 @@
 {
     "name": "Lindalit BSC",
-    "website": "https://lindalit.com",
-    "description": "First Binance Chain pair and pool explorer based on PancakeSwap with deflation token $LINDA.",
     "symbol": "LINDA",
-    "type": "Token",
+    "type": "BEP20",
     "decimals": 18,
-    "status": "active"
-}
+    "description": "First Binance Chain pair and pool explorer based on PancakeSwap with deflation token $LINDA.",
+    "website": "https://lindalit.com",
+    "explorer": "https://bscscan.com/token/0x1002d9f872e87090b67ea0242e1a3af2164a3732",
+    "status": "active",
+    "id": "0x1002d9f872e87090b67ea0242e1a3af2164a3732"
+} 
