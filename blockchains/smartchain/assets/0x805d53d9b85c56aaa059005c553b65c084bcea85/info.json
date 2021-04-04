@@ -1,7 +1,26 @@
 {
     "name": "Xeonbit Token",
     "website": "https://xeonbit.com/",
+    "source_code": "https://github.com/xeonbit-project/XeonbitTokenXNS",
     "description": "-",
+    "socials": [
+        {
+            "name": "Twitter",
+            "url": "https://twitter.com/xeonbit"
+        },
+        {
+            "name": "Facebook",
+            "url": "https://www.facebook.com/xeonbit"
+        },
+        {
+            "name": "Discord",
+            "url": "https://discord.com/invite/HYcJPFG"
+        },
+        {
+            "name": "Telegram",
+            "url": "https://t.me/xeonbitchannel"
+        }
+    ], 
     "explorer": "https://bscscan.com/token/0x805d53d9b85c56aaa059005c553b65c084bcea85",
     "type": "BEP20",
     "symbol": "XNS",
