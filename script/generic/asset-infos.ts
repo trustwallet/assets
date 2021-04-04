@@ -9,6 +9,8 @@ import { arrayDiff } from "./types";
 import { isValidJSON, readJsonFile, writeJsonFile } from "../generic/json";
 import { ActionInterface, CheckStepInterface } from "../generic/interface";
 import { CoinType } from "@trustwallet/wallet-core";
+import { isValidStatusValue } from "../generic/status-values";
+import { isValidTagValues } from "../generic/tag-values";
 import * as bluebird from "bluebird";
 
 const requiredKeys = ["name", "type", "symbol", "decimals", "description", "website", "explorer", "status", "id"];
@@ -29,27 +31,51 @@ function isAssetInfoValid(info: unknown, path: string, address: string, chain: s
         typeof info['type'] === "string" && info['type'] !== "" &&
         typeof info['symbol'] === "string" && info['symbol'] !== "" &&
         typeof info['decimals'] === "number" && //(info['description'] === "-" || info['decimals'] !== 0) &&
-        typeof info['status'] === "string" && info['status'] !== ""
+        typeof info['status'] === "string" && info['status'] !== "" &&
+        typeof info['id'] === "string" && info['id'] !== ""
         ;
     if (!isKeys1CorrectType) {
-        return [`Check keys1 '${info['name']}' '${info['type']}' '${info['symbol']}' '${info['decimals']}' '${info['id']}' ${path}`, "", fixedInfo];
+        return [`Field missing or invalid; name '${info['name']}' type '${info['type']}' symbol '${info['symbol']}' decimals '${info['decimals']}' id '${info['id']}' ${path}`, "", fixedInfo];
     }
 
     // type
-    if (typeof info['type'] !== "string") {
-        return [`Incorrect type for type '${info['type']}' '${chain}' '${path}`, "", fixedInfo];
-    }
     if (chainFromAssetType(info['type'].toUpperCase()) !== chain ) {
-        return [`Incorrect value for type '${info['type']}' '${chain}' '${path}`, "", fixedInfo];
+        return [`Incorrect value for type '${info['type']}' '${chain}' ${path}`, "", fixedInfo];
     }
     if (info['type'] !== info['type'].toUpperCase()) {
         // type is correct value, but casing is wrong, fix
         if (checkOnly) {
-           return ["", `Wrong casing for type '${info['type']}' '${chain}' '${path}`, fixedInfo];
+           return ["", `Wrong casing for type '${info['type']}' '${chain}' ${path}`, fixedInfo];
         }
         // fix
         if (!fixedInfo) { fixedInfo = info; }
         fixedInfo['type'] = info['type'].toUpperCase();
+    }
+
+    // id, should match address
+    if (info['id'] != address) {
+        if (checkOnly) {
+            if (info['id'].toUpperCase() != address.toUpperCase()) {
+                return [`Incorrect value for id '${info['id']}' '${chain}' ${path}`, "", fixedInfo];
+            }
+            // is is correct value, but casing is wrong
+            return [`Wrong casing for id '${info['id']}' '${chain}' ${path}`, "", fixedInfo];
+        }
+        // fix
+        if (!fixedInfo) { fixedInfo = info; }
+        fixedInfo['id'] = address;
+    }
+
+    // status
+    if (!isValidStatusValue(info['status'])) {
+        return [`Invalid value for status field, '${info['status']}'`, "", fixedInfo];
+    }
+
+    // tags
+    if (info['tags']) {
+        if (!isValidTagValues(info['tags'])) {
+            return [`Invalid tags, '${info['tags']}'`, "", fixedInfo];
+        }
     }
 
     const isKeys2CorrectType = 
