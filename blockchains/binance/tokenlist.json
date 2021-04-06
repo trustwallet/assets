@@ -1,7 +1,7 @@
 {
     "name": "Trust Wallet: BNB",
     "logoURI": "https://trustwallet.com/assets/images/favicon.png",
-    "timestamp": "2021-04-02T07:09:21.602Z",
+    "timestamp": "2021-04-06T07:10:16.829Z",
     "tokens": [
         {
             "asset": "c714",
@@ -179,7 +179,7 @@
                 },
                 {
                     "base": "c714_tDREP-7D2",
-                    "lotSize": "1000000000",
+                    "lotSize": "100000000",
                     "tickSize": "1"
                 },
                 {
@@ -209,7 +209,7 @@
                 },
                 {
                     "base": "c714_tEQL-586",
-                    "lotSize": "100000000000",
+                    "lotSize": "10000000000",
                     "tickSize": "1"
                 },
                 {
@@ -384,7 +384,7 @@
                 },
                 {
                     "base": "c714_tONE-5F9",
-                    "lotSize": "100000000",
+                    "lotSize": "1000000000",
                     "tickSize": "1"
                 },
                 {
@@ -499,7 +499,7 @@
                 },
                 {
                     "base": "c714_tUGAS-B0C",
-                    "lotSize": "1000000000",
+                    "lotSize": "10000000000",
                     "tickSize": "1"
                 },
                 {
@@ -630,7 +630,7 @@
                 },
                 {
                     "base": "c714_tBURGER-33A",
-                    "lotSize": "10000000",
+                    "lotSize": "100000000",
                     "tickSize": "1000"
                 },
                 {
@@ -691,7 +691,7 @@
                 {
                     "base": "c714_tSPARTA-7F3",
                     "lotSize": "10000000",
-                    "tickSize": "10000"
+                    "tickSize": "1000"
                 },
                 {
                     "base": "c714_tSWINGBY-888",
@@ -705,8 +705,8 @@
                 },
                 {
                     "base": "c714_tUNFI-FB7",
-                    "lotSize": "10000000",
-                    "tickSize": "10000"
+                    "lotSize": "100000000",
+                    "tickSize": "1000"
                 },
                 {
                     "base": "c714_tXRP-BF2",
@@ -761,7 +761,7 @@
                 },
                 {
                     "base": "c714_tONE-5F9",
-                    "lotSize": "100000000",
+                    "lotSize": "1000000000",
                     "tickSize": "100"
                 },
                 {
@@ -2246,7 +2246,7 @@
         }
     ],
     "version": {
-        "major": 49,
+        "major": 53,
         "minor": 0,
         "patch": 0
     }
