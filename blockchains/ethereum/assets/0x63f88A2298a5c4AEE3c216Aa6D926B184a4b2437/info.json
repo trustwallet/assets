@@ -1,9 +1,8 @@
 {
     "name": "GAME Credits",
-    "website": "https://www.gamecredits.org",
+    "website": "https://gamecredits.org",
     "source_code": "https://github.com/novatokenplatform",
     "white_paper": "https://gamecredits.org/wp-content/uploads/2020/04/GC_whitepaper.pdf",
-    "short_description": "Blockchain for every gamer - empower your players and deliver what they want - true ownership, digital security and boundless fun.",
     "description": "The next-generation blockchain platform for large-scale online games and social apps. GAME Credits is a platform eSports solution for true digital item ownership - Blockchain for every game and every gamer - empower your players and deliver what they want - true ownership, digital security and boundless possibilities for fun.",
     "socials": [
         {
@@ -52,5 +51,10 @@
             "handle": "GAMECredits"
         }
     ],
-    "explorer": "https://etherscan.io/token/0x63f88A2298a5c4AEE3c216Aa6D926B184a4b2437"
+    "explorer": "https://etherscan.io/token/0x63f88A2298a5c4AEE3c216Aa6D926B184a4b2437",
+    "type": "ERC20",
+    "symbol": "GAME",
+    "decimals": 18,
+    "status": "active",
+    "id": "0x63f88A2298a5c4AEE3c216Aa6D926B184a4b2437"
 }

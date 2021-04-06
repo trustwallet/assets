@@ -1,9 +1,12 @@
 {
     "name": "wCOINBASE-IOU",
+    "type": "ERC20",
+    "symbol": "wCOINBASE-IOU",
+    "decimals": 18,
     "website": "https://deus.finance/",
     "source_code": "https://github.com/deusfinance",
     "white_paper": "https://lafayettetabor.medium.com/deus-goes-coinbase-1d69f51e1b55",
-    "short_description": "DEUS GOES COINBASE. From our next system update, you will be able to buy Coinbase Futures on DEUS Swap!",
+    "description": "DEUS GOES COINBASE. From our next system update, you will be able to buy Coinbase Futures on DEUS Swap!",
     "explorer": "https://etherscan.io/token/0x4185cf99745B2a20727B37EE798193DD4a56cDfa",
     "socials": [
         {
@@ -21,5 +24,7 @@
             "url": "https://medium.com/@deusfinance",
             "handle": "deusfinance"
         }
-    ]
+    ],
+    "status": "active",
+    "id": "0x4185cf99745B2a20727B37EE798193DD4a56cDfa"
 }
