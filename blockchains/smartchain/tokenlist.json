@@ -183,9 +183,6 @@
                 },
                 {
                     "base": "c20000714_t0xF952Fc3ca7325Cc27D15885d37117676d25BfdA6"
-                },
-                {
-                    "base": "c20000714_r0xBFEf6cCFC830D3BaCA4F6766a0d4AaA242Ca9F3D"
                 }
             ]
         },
@@ -804,17 +801,6 @@
             "symbol": "EGG",
             "decimals": 18,
             "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xF952Fc3ca7325Cc27D15885d37117676d25BfdA6/logo.png",
-            "pairs": []
-        },
-        {
-            "chainId": 56,
-            "asset": "c20000714_t0xBFEf6cCFC830D3BaCA4F6766a0d4AaA242Ca9F3D",
-            "type": "BEP20",
-            "address": "0xBFEf6cCFC830D3BaCA4F6766a0d4AaA242Ca9F3D",
-            "name": "Wrapped Navcoin",
-            "symbol": "WNAV",
-            "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xBFEf6cCFC830D3BaCA4F6766a0d4AaA242Ca9F3D/logo.png",
             "pairs": []
         }
     ],
