@@ -1,6 +1,12 @@
 {
-	"name": "KET",
-	"website": "https://rowket.org",
-	"short_description": "NFTs marketplace and the first artist incubation on BSC.",
+	"name": "Rowket Market",
+	"symbol": "KET",
+	"description": "Rowket is a NFTs marketplace with the first artist incubation on BSC.",
+	"website": "https://rowket.org/",
+	"research": "https://rowket.org/litepaper/",
 	"explorer": "https://bscscan.com/address/0x5ddAe05d2f854926E8070b435d2dfe5edCa246D9"
+	"type": "BEP20",
+	"decimals": 8,
+	"status": "active",
+	"id": "0x5ddAe05d2f854926E8070b435d2dfe5edCa246D9"
 }
