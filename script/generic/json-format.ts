@@ -17,7 +17,7 @@ export class JsonAction implements ActionInterface {
                         ...findFiles(chainsPath, 'json'),
                     ];
 
-                    await bluebird.each(files, async file => { 
+                    await bluebird.each(files, async file => {
                         if (!isValidJSON(file)) {
                             errors.push(`${file} path contains invalid JSON`);
                         }

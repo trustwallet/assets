@@ -13,7 +13,7 @@ import { isLogoOK } from "../generic/image";
 import * as bluebird from "bluebird";
 
 function formatValidators() {
-    stakingChains.forEach(chain => {    
+    stakingChains.forEach(chain => {
         const validatorsPath = getChainValidatorsListPath(chain);
         formatSortJsonFile(validatorsPath);
     })

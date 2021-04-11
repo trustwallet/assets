@@ -207,11 +207,11 @@ async function updateManualByList(actions: ActionInterface[]) {
 }
 
 export async function sanityCheckAll(): Promise<[string[], string[]]> {
-    return await sanityCheckByActionList(actionList);
+    return sanityCheckByActionList(actionList);
 }
 
 export async function consistencyCheckAll(): Promise<[string[], string[]]> {
-    return await consistencyCheckByActionList(actionList);
+    return consistencyCheckByActionList(actionList);
 }
 
 export async function sanityFixAll(): Promise<void> {

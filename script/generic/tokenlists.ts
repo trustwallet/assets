@@ -110,7 +110,7 @@ export function matchTokenToForceListEntry(token: TokenItem, forceListEntry: str
 export function matchPairToForceListEntry(token1: TokenItem, token2: TokenItem, forceListEntry: ForceListPair): boolean {
     if (!forceListEntry.token2) {
         // entry is token only
-        if (matchTokenToForceListEntry(token1, forceListEntry.token1) || 
+        if (matchTokenToForceListEntry(token1, forceListEntry.token1) ||
             (token2 && matchTokenToForceListEntry(token2, forceListEntry.token1))) {
             return true;
         }
@@ -183,7 +183,7 @@ export function writeToFile(filename: string, list: List): void {
 
 // Write out to file, updating version+timestamp if there was change
 export function writeToFileWithUpdate(filename: string, list: List): void {
-    let listOld: List = undefined;
+    let listOld: List;
     try {
         listOld = readJsonFile(filename) as List;
     } catch (err) {

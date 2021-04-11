@@ -53,7 +53,7 @@ function fetchImage(url) {
     return axios.get(url, { responseType: "stream" })
         .then(r => r.data)
         .catch(err => {
-            throw `Error fetchImage: ${url} ${err.message}`;
+            throw new Error(`Error fetchImage: ${url} ${err.message}`);
         });
 }
 

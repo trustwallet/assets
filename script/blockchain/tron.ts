@@ -51,7 +51,7 @@ export class TronAction implements ActionInterface {
                         }
                     });
                     return [errors, []];
-                }                
+                }
             }
         ];
     }
