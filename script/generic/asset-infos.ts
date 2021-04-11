@@ -25,7 +25,7 @@ function isAssetInfoHasAllKeys(info: unknown, path: string): [boolean, string] {
 }
 
 function isAssetInfoValid(info: unknown, path: string, address: string, chain: string): [string, string] {
-    const isKeys1CorrectType = 
+    const isKeys1CorrectType =
         typeof info['name'] === "string" && info['name'] !== "" &&
         typeof info['type'] === "string" && info['type'] !== "" &&
         typeof info['symbol'] === "string" && info['symbol'] !== "" &&
@@ -44,7 +44,7 @@ function isAssetInfoValid(info: unknown, path: string, address: string, chain: s
         return [`Incorrect id '${info['id']}' '${path}`, ""];
     }
 
-    const isKeys2CorrectType = 
+    const isKeys2CorrectType =
         typeof info['description'] === "string" && info['description'] !== "" &&
         // website should be set (exception description='-' marks empty infos)
         typeof info['website'] === "string" && (info['description'] === "-" || info['website'] !== "") &&
@@ -227,7 +227,7 @@ export class AssetInfos implements ActionInterface {
                                 isAssetInfoOK(chain, address, errors, warnings);
                             });
                             return [errors, warnings];
-                        }    
+                        }
                     }
                 );
             }

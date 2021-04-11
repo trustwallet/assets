@@ -93,7 +93,7 @@ export class EthForks implements ActionInterface {
                             }
                         });
                         return [errors, []];
-                    }    
+                    }
                 }
             );
         });

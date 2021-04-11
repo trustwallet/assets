@@ -150,6 +150,6 @@ export class Allowlists implements ActionInterface {
     }
 
     async consistencyFix(): Promise<void> {
-        await bluebird.each(chainsWithDenylist, async (chain) => await checkUpdateAllowDenyList(chain, false));
+        await bluebird.each(chainsWithDenylist, async (chain) => checkUpdateAllowDenyList(chain, false));
     }
 }

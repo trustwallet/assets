@@ -14,7 +14,7 @@ export function assetIdSymbol(tokenId: string, nativeCoinId: string, coinType: n
 export function assetID(coinType: number, tokenId = ``): string {
     if (tokenId.length > 0) {
         return `c${coinType}_t${tokenId}`
-    } 
+    }
     return `c${coinType}`
 }
 
