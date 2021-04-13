@@ -32,7 +32,7 @@ jobs:
           pinataPinName: dapps
           verbose: false
       - uses: aquiladev/ipfs-action@v0.1.5
-        id: ipfs-test
+        id: ipfs-test-bc
         with:
           path: ./blockchains
           service: pinata
