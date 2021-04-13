@@ -8,8 +8,9 @@ jobs:
   upload-ipfs:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - uses: aquiladev/ipfs-action@v0.1.5
-        id: ipfs-test-bc
+        id: upload
         with:
           path: ./blockchains
           service: pinata
@@ -18,7 +19,7 @@ jobs:
           pinataPinName: blockchains
           verbose: false
       - uses: aquiladev/ipfs-action@v0.1.5
-        id: ipfs-test
+        id: upload-dapps
         with:
           path: ./dapps
           service: pinata
