@@ -25,9 +25,8 @@ jobs:
       - uses: aquiladev/ipfs-action@v0.1.5
         id: ipfs-test
         with:
-          path: ./dapps
-          host: ipfs.komputing.org
-          port: 443
-          protocol: https
-          timeout: 180000
-          verbose: true
+          path: .
+          service: pinata
+          pinataKey: ${{ secrets.PINATA_KEY }}
+          pinataSecret: ${{ secrets.PINATA_SECRET }}
+          verbose: false
