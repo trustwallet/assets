@@ -17,6 +17,7 @@ jobs:
           pinataKey: ${{ secrets.PINATA_KEY }}
           pinataSecret: ${{ secrets.PINATA_SECRET }}
           pinataPinName: blockchains
+          timeout: 180000
           verbose: false
       - uses: aquiladev/ipfs-action@v0.1.5
         id: upload-dapps
