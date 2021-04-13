@@ -25,7 +25,7 @@ jobs:
       - uses: aquiladev/ipfs-action@v0.1.5
         id: ipfs-test
         with:
-          path: .
+          path: ./dapps
           service: pinata
           pinataKey: ${{ secrets.PINATA_KEY }}
           pinataSecret: ${{ secrets.PINATA_SECRET }}
