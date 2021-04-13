@@ -22,21 +22,3 @@ jobs:
         run: npm run check
       - name: Run test
         run: npm t
-      - uses: aquiladev/ipfs-action@v0.1.5
-        id: ipfs-test
-        with:
-          path: ./dapps
-          service: pinata
-          pinataKey: ${{ secrets.PINATA_KEY }}
-          pinataSecret: ${{ secrets.PINATA_SECRET }}
-          pinataPinName: dapps
-          verbose: false
-      - uses: aquiladev/ipfs-action@v0.1.5
-        id: ipfs-test-bc
-        with:
-          path: ./blockchains
-          service: pinata
-          pinataKey: ${{ secrets.PINATA_KEY }}
-          pinataSecret: ${{ secrets.PINATA_SECRET }}
-          pinataPinName: blockchains
-          verbose: false
