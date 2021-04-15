@@ -22,9 +22,16 @@ export function formatSortJson(content: unknown[]): string {
     return JSON.stringify(sortElements(content), null, 4);
 }
 
-export function formatJsonFile(filename: string): void {
-    writeFileSync(filename, formatJson(JSON.parse(readFileSync(filename))));
+// Return if updated
+export function formatJsonFile(filename: string): boolean {
+    const origText: string = readFileSync(filename);
+    const newText: string = formatJson(JSON.parse(origText));
+    if (newText == origText) {
+        return false;
+    }
+    writeFileSync(filename, newText);
     console.log(`Formatted json file ${filename}`);
+    return true;
 }
 
 export function formatSortJsonFile(filename: string): void {
