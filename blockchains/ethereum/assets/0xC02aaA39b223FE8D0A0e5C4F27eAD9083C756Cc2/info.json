@@ -1,11 +1,11 @@
 {
-    "name": "Wrapped Ether",
-    "symbol": "WETH",
+    "name": "Wrapped Pastel",
     "type": "ERC20",
-    "decimals": 18,
-    "description": "-",
-    "website": "https://weth.io/",
-    "explorer": "https://etherscan.io/token/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+    "symbol": "WPSL",
+    "decimals": 5,
+    "website": "https://pastel.network/",
+    "description": "Wrapped Pastel (wPSL) is an ERC20 token backed 1:1 with Pastel. \n\nThe Smart Contract for Wrapped PSL(wPSL) is fully live and functional the Ethereum Mainnet.\n\nContract address: https://etherscan.io/token/0xc775c0c30840cb9f51e21061b054ebf1a00acc29\n\nThe contract demonstrates that there is a total finite supply of 250,000,000 wPSL. Correspondingly, there are exactly 250,000,000 PSL held in a multi-signature address on the Pastel Network (1 wPSL : 1 PSL) held by the Wrapped Pastel Custody Foundation. You can review the wallet here: https://explorer.pastel.network/address/ptJEVxQJ9spxa2Hp9vWxiEf3EhAWvQ1hCaS\n\nVerified Contract Source Code: https://etherscan.io/address/0xc775c0c30840cb9f51e21061b054ebf1a00acc29#code",
+    "explorer": "https://etherscan.io/token/https://etherscan.io/token/0xc775c0c30840cb9f51e21061b054ebf1a00acc29",
     "status": "active",
     "id": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
 }
