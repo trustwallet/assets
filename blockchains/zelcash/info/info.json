@@ -1,23 +1,23 @@
 {
-    "name": "Flux",
-    "website": "https://runonflux.io",
+    "name": "Zel",
+    "website": "https://zel.network/",
     "source_code": "https://github.com/zelcash/zelcash",
-    "white_paper": "https://runonflux.io/wp-content/uploads/2021/04/Flux_Whitepaper_V.1_release.pdf",
-    "description": "Flux is the cryptocurrency that powers the Flux Ecosystem. The Flux Network comprises Proof-of-Work miners and FluxNode Operators, who are rewarded in Flux for validating transactions and providing computational resources.",
+    "white_paper": "https://zel.network/docs/zel_whitepaper_v2_English.pdf",
+    "description": "Zelcash is a cryptocurrency that holds a central role in the Zel Ecosystem. It gives the incentive for ZelNode ownership to enable the creation of ZelDex and the ZelDev Platform.",
     "socials": [
         {
             "name": "Twitter",
-            "url": "https://twitter.com/runonflux",
-            "handle": "flux"
+            "url": "https://twitter.com/zelcash",
+            "handle": "zelcash"
         },
         {
             "name": "Reddit",
-            "url": "https://www.reddit.com/r/RunOnFlux",
-            "handle": "flux"
+            "url": "https://reddit.com/r/zelcash",
+            "handle": "zelcash"
         }
     ],
-    "explorer": "https://explorer.runonflux.io",
-    "symbol": "FLUX",
+    "explorer": "https://explorer.zel.cash",
+    "symbol": "ZEL",
     "type": "COIN",
     "decimals": 8,
     "status": "active"
