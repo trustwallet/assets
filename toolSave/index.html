@@ -1,0 +1,342 @@
+<script>
+  function etherscanUrl(contract) {
+    return `https://etherscan.io/token/${contract}`;
+  }
+
+  function logoUrl(chain, contract, repo, branch) {
+    return `https://raw.githubusercontent.com/${repo}/${branch}/blockchains/${chain}/assets/${contract}/logo.png`;
+  }
+
+  function logoImg(size, logoUrl, dimmed) {
+    return `<img height="${size}" width="${size}" ${dimmed ? 'style="opacity: 0.6"' : ''} src="${logoUrl}"/>`;
+  }
+
+  const logoUrlBtc = "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/bitcoin/info/logo.png";
+  const logoUrlTwt = "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/TWT-8C2/logo.png";
+  const logoUrlBnb = "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/info/logo.png";
+  const logoUrlEth = "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/info/logo.png";
+
+  function logoHtml(logoUrl, smallOnly) {
+    var h = '';
+    h += `<table><tr>`;
+    h += `<td><table>`;
+    h += `<tr><td style="padding: 5">${logoImg(32, logoUrlBtc, true)}</td></tr>`;
+    h += `<tr><td style="padding: 5">${logoImg(32, logoUrlTwt, true)}</td></tr>`;
+    h += `<tr><td style="padding: 5">${logoImg(32, logoUrl, false)}</td></tr>`;
+    h += `<tr><td style="padding: 5">${logoImg(32, logoUrlBnb, true)}</td></tr>`;
+    h += `<tr><td style="padding: 5">${logoImg(32, logoUrlEth, true)}</td></tr>`;
+    h += `</table></td>`;
+    if (!smallOnly) {
+      h += `<td><table>`;
+      h += `<tr><td style="padding: 5">${logoImg(64, logoUrlBtc, true)}</td></tr>`;
+      h += `<tr><td style="padding: 5">${logoImg(64, logoUrl, false)}</td></tr>`;
+      h += `<tr><td style="padding: 5">${logoImg(64, logoUrlBnb, true)}</td></tr>`;
+      h += `</table></td>`;
+      h += `<td><table>`;
+      h += `<tr><td style="padding: 5">${logoImg(128, logoUrl, false)}</td></tr>`;
+      h += `</table></td>`;
+      h += `</tr></table>`;
+    }
+    return h;
+  }
+
+  function infoUrl(chain, contract, repo, branch) {
+    return `https://raw.githubusercontent.com/${repo}/${branch}/blockchains/${chain}/assets/${contract}/info.json`;
+  }
+
+  function clearToken() {
+    document.getElementById("token-contract").innerText = "-";
+    document.getElementById("logo-preview-light").innerHTML = logoHtml("", true);
+    document.getElementById("logo-preview-dark").innerHTML = logoHtml("", false);
+    document.getElementById("logo-file").innerHTML = "";
+    document.getElementById("info-file").innerHTML = "";
+    document.getElementById("explorer").innerHTML = "";
+  }
+
+  async function loadToken(chain, contract, repo, branch) {
+    clearToken();
+    document.getElementById("token-contract").innerText = contract;
+    var loUrl = logoUrl(chain, contract, repo, branch);
+    document.getElementById("logo-preview-light").innerHTML = logoHtml(loUrl, true);
+    document.getElementById("logo-preview-dark").innerHTML = logoHtml(loUrl, false);
+    document.getElementById("logo-file").innerHTML = `<a target="_blank" rel="noopener noreferrer" href="${loUrl}">Logo file</a>`;
+    var inUrl = infoUrl(chain, contract, repo, branch);
+    document.getElementById("info-file").innerHTML = `<a target="_blank" rel="noopener noreferrer" href="${inUrl}">Info file</a>`;
+    var esUrl = etherscanUrl(contract);
+    document.getElementById("explorer").innerHTML = `<a target="_blank" rel="noopener noreferrer" href="${esUrl}">Token explorer</a>`;
+  }
+
+  async function getPrInfo(prNum) {
+    const url = `https://api.github.com/repos/trustwallet/assets/pulls/${prNum}`;
+    let resp = await fetch(url);
+    if (resp.status != 200) {
+      alert(`Error from ${url}, status ${resp.status} ${resp.statusText}`);
+      return null;
+    }
+    const respJson = await resp.json();
+    //console.log(respJson);
+    return respJson;
+  }
+
+  async function getPrFiles(prNum) {
+    const url = `https://api.github.com/repos/trustwallet/assets/pulls/${prNum}/files`;
+    let resp = await fetch(url);
+    if (resp.status != 200) {
+      alert(`Error from ${url}, status ${resp.status} ${resp.statusText}`);
+      return [];
+    }
+    const respJson = await resp.json();
+    //console.log(respJson);
+    const files = respJson.map(e => e.filename);
+    return files;
+  }
+
+  async function getOpenPrs() {
+    const url = `https://api.github.com/repos/trustwallet/assets/pulls?state=open`;
+    let resp = await fetch(url);
+    //console.log("resp", resp);
+    if (resp.status != 200) {
+      alert(`Error from ${url}, status ${resp.status} ${resp.statusText}`);
+      return [];
+    }
+    const respJson = await resp.json();
+    return respJson; // e.number, e.title, ...
+  }
+
+  let cachedPrs = {};
+
+  async function loadOpenPrs() {
+    document.getElementById("pr-select").innerHTML = '';
+    const prs = await getOpenPrs();
+    //console.log("prs", prs);
+    cachedPrs = {};
+    prs.forEach(pr => cachedPrs[pr.number] = pr);
+    let h = "";
+    prs.forEach(pr => {
+      h += `<option value="${pr.number}">${pr.number} ${pr.title}x</option>`;
+    });
+    document.getElementById("pr-select").innerHTML = h;
+    document.getElementById("pr-select-count").innerHTML = `${prs.length} open PRs`;
+  }
+
+  async function loadPrByNum(prNum) {
+    document.getElementById("pr-info-title").innerHTML = "PR";
+    document.getElementById("pr-info-owner").innerHTML = "?";
+    document.getElementById("pr-info-repo").innerHTML = "?";
+    document.getElementById("pr-info-branch").innerHTML = "?";
+    console.log(prNum);
+    const prInfo = await getPrInfo(prNum);
+    console.log(prInfo);
+    if (!prInfo || !prInfo.number || prInfo.length < 1) {
+      console.log(`Warning: Ignoring prInfo.number of '${prInfo.number}'`);
+      return;
+    }
+    cachedPrs[prInfo.number] = prInfo;
+    loadPrByObject(prInfo);
+  }
+
+  async function loadPrByCachedNum(prNum) {
+    //console.log("loadPrByCachedNum", prNum);
+    loadPrByObject(cachedPrs[prNum]);
+  }
+
+  async function loadPrByObject(prInfo) {
+    //console.log(prInfo);
+    clearToken();
+
+    prInfo.owner = prInfo.head.user.login;
+    prInfo.repo = prInfo.head.repo.name;
+    prInfo.branch = prInfo.head.ref;
+    console.log(`PR ${prInfo.number}: ${prInfo.owner}/${prInfo.repo}/${prInfo.branch}`);
+    document.getElementById("pr-info-title").innerHTML = `<a href="https://github.com/trustwallet/assets/pull/${prInfo.number}" target="_blank" rel="noopener noreferrer">PR #${prInfo.number}: ${prInfo.title}</a>`;
+    document.getElementById("pr-info-owner").innerHTML = prInfo.owner;
+    document.getElementById("pr-info-repo").innerHTML = prInfo.repo;
+    document.getElementById("pr-info-branch").innerHTML = prInfo.branch;
+
+    const files = await getPrFiles(prInfo.number);
+    //console.log("files", files);
+    document.getElementById("pr-info-files").innerHTML = "";
+    if (files.length == 0) {
+      alert(`Could not retrieve files from PR ${prNum}`);
+      return;
+    }
+    const prefix = "blockchains/ethereum/assets/";
+    const suffix = "/logo.png";
+    let contracts = [];
+    files.forEach(f => {
+      if (f.startsWith(prefix)) {
+        if (f.endsWith(suffix)) {
+          contracts.push(f.substring(prefix.length, f.length - suffix.length));
+        }
+      }
+    });
+    //console.log("contracts:", contracts.length, contracts[0]);
+    if (contracts.length == 0) {
+      alert(`Could not retrieve contracts from PR ${prInfo.number}`);
+      return;
+    }
+    let h = "";
+    contracts.forEach(c => { h += `<option>${c}</option>`; });
+    document.getElementById("pr-info-files").innerHTML = h;
+    loadToken("ethereum", contracts[0], `${prInfo.owner}/${prInfo.repo}`, prInfo.branch);
+  }
+
+  function loadByContractButton() {
+    const ctr = document.getElementById("contract-input").value;
+    loadToken("ethereum", ctr, "trustwallet/assets", "master");
+  }
+
+  async function loadByEnterPrButton() {
+    const pr = document.getElementById("pr-input").value;
+    await loadPrByNum(pr);
+  }
+
+  async function loadBySelectPrButton() {
+    const pr = document.getElementById("pr-select").value;
+    await loadPrByCachedNum(pr);
+  }
+
+  async function LoadBySelectFromPrButton() {
+    const ctr = document.getElementById("pr-info-files").value;
+    const repo = document.getElementById("pr-info-owner").innerText + "/" + document.getElementById("pr-info-repo").innerText;
+    await loadToken("ethereum", ctr, repo, document.getElementById("pr-info-branch").innerText);
+  }
+
+  async function searchButton() {
+    const query = document.getElementById("search-input").value;
+    if (query.length < 2) {
+      // too short, do not search
+      return;
+    }
+    document.getElementById("search-result").innerHTML = "";
+    const coinTypes = "60,195,714,2000714"; // eth, tron, binance, bep20
+    const url = `https://api.trustwallet.com/v2/tokens/list?networks=${coinTypes}&query=${query}`;
+    let resp = await fetch(url);
+    if (resp.status != 200) {
+      alert(`Error from ${url}, status ${resp.status} ${resp.statusText}`);
+      return null;
+    }
+    const respJson = await resp.json();
+    //console.log(respJson);
+    var h = '';
+    if (respJson && respJson.docs) {
+      respJson.docs.forEach(t => h += `<option value="${t.address}">${t.symbol} \t${t.name}    (${t.type})</option>`);
+    }
+    document.getElementById("search-result").innerHTML = h;
+  }
+
+  function loadSearchResultButton() {
+    const query = document.getElementById("search-result").value;
+    loadToken("ethereum", query, "trustwallet/assets", "master");
+  }
+
+  async function init() {
+    loadToken("ethereum", contract, "trustwallet/assets", "master");
+    await loadOpenPrs();
+  }
+
+  const contract = "0x56CdBbeec9828962cECB3f1b69517d430295D952";
+</script>
+
+<body onLoad="init()">
+
+  <table>
+    <tr>
+      <td width="40%">
+        <div id="left1">
+          <table>
+            <tr>
+              <td>
+                <div id="navigator-select-pr">
+                  <p>Select open PR</p>
+                  <div><button onclick="loadOpenPrs()">Refresh Open PRs</button></div>
+                  <div id="pr-select-count"></div>
+                  <select id="pr-select" multiple size="15" style="width: 100%" onchange="loadBySelectPrButton()">
+                    <option>3520</option>
+                  </select>
+                  <div>
+                    <button onclick="loadBySelectPrButton()">Load PR</button>
+                  </div>
+                </div>
+                <div id="navigator-enter-pr">
+                  <p>Enter PR number</p>
+                  <div>PR number (e.g. 3530):</div>
+                  <input id="pr-input" placeholder="3530">
+                  <button onclick="loadByEnterPrButton()">Load</button>
+                </div>
+              </td>
+              <td id="pr" style="min-width: 35%">
+                <div id="pr-info" style="min-width: 150">
+                  <div id="pr-info-title">PR</div>
+                  <div>
+                    repo: <span id="pr-info-owner"></span>/<span id="pr-info-repo">assets</span>/<span
+                      id="pr-info-branch">master</span>
+                  </div>
+                  <div>
+                    <div>Detected token(s) in PR:</div>
+                    <select id="pr-info-files" multiple size="5" style="width: 100%"
+                      onchange="LoadBySelectFromPrButton()">
+                    </select>
+                    <div>
+                      <button onclick="LoadBySelectFromPrButton()">Load</button>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <div id="navigator-search">
+                  <p>Token Search</p>
+                  <div>
+                    <input id="search-input" placeholder="TWT" onkeypress="searchButton()">
+                    <button onclick="searchButton()">Search</button>
+                  </div>
+                  <select id="search-result" multiple size="8" style="width: 100%" onchange="loadSearchResultButton()">
+                    <option>(search results)</option>
+                  </select>
+                  <div>
+                    <button onclick="loadSearchResultButton()">Load</button>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <div id="navigator-contract-enter">
+                  <p>Enter Token Contract</p>
+                  Token contract:
+                  <div><input id="contract-input" style="width: 100%" placeholder="0x56CdBbeec9828962cECB3f1b69517d430295D952"></div>
+                  <div><button onclick="loadByContractButton()">Load</button></div>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </td>
+      <td>
+        <div id="token-info">
+          <p>Contract address: <span id="token-contract" style="font-weight: bold">_token-contract_</span></p>
+          <p><span id="logo-file">_logo-file_</span></p>
+          <p><span id="info-file">_info-file_</span></p>
+          <p><span id="explorer">_explorer_</span></p>
+          <div id="logo-preview">
+            <span id="logo-preview-light"
+              style="background-color: #E0E0E0; display: inline-block; padding: 20px; align: center">
+              <p align="center">${logoImg(32)}</p>
+              <p align="center">${logoImg(64)}</p>
+              <p align="center">${logoImg(128)}</p>
+            </span>
+            <span id="logo-preview-dark"
+              style="background-color: #202020; display: inline-block; padding: 20px; align: center">
+              <p align="center">${logoImg(32)}</p>
+              <p align="center">${logoImg(64)}</p>
+              <p align="center">${logoImg(128)}</p>
+            </span>
+          </div>
+        </div>
+      </td>
+    </tr>
+  </table>
+
+</body>
