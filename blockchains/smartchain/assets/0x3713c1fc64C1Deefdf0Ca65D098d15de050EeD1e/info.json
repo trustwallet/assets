@@ -1,0 +1,30 @@
+{
+    "name": "Earnathon Token",
+    "type": "BEP20",
+    "symbol": "ENA",
+    "decimals": 8,
+    "website": "https://earnathon.com/token",
+    "description": "The Earnathon Token is a community-driven, where users earn rewards for learning about crypto ",
+    "explorer": "https://bscscan.com/token/0x3713c1fc64C1Deefdf0Ca65D098d15de050EeD1e",
+    "source_code": "https://github.com/Earnathon/token-contract",
+    "socials": [
+        {
+            "name": "Twitter",
+            "url": "https://twitter.com/earnathonhq"
+        },
+        {
+            "name": "Medium",
+            "url": "https://earnathon.medium.com/"
+        },
+        {
+            "name": "Telegram",
+            "url": "https://t.me/earnathon"
+        },
+        {
+            "name": "Facebook",
+            "url": "https://www.facebook.com/earnathon/"
+        }
+    ],
+    "status": "active",
+    "id": "0x3713c1fc64C1Deefdf0Ca65D098d15de050EeD1e"
+}
