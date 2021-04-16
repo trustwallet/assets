@@ -1,0 +1,12 @@
+git add /Users/adam/tw/assets/blockchains/waves/assets/4LHHvYGNKJUg5hj65aGD5vgScvCBmLpdRFtjokvCjSL8/info.json
+git add /Users/adam/tw/assets/blockchains/waves/assets/6nSpVyNH7yM69eg446wrQR94ipbbcmZMU1ENPwanC97g/info.json
+git add /Users/adam/tw/assets/blockchains/waves/assets/8inca5fv4xr6KZtRMRPYr7vADfk8fd6G2z1gMoRkbUYS/info.json
+git add /Users/adam/tw/assets/blockchains/waves/assets/9sQutD5HnRvjM1uui5cVC4w9xkMPAfYEV8ymug3Mon2Y/info.json
+git add /Users/adam/tw/assets/blockchains/waves/assets/DG2xFkPdDwKUoBkzGAhQtLpSGzfXLiCYPEzeKH2Ad24p/info.json
+git add /Users/adam/tw/assets/blockchains/waves/assets/DGbqkzM6Ds5NAF2B3GHYfyZRmWKt7xLYRYcwpMm7D6V4/info.json
+git add /Users/adam/tw/assets/blockchains/waves/assets/DHgwrRvVyqJsepd32YbBqUeDH4GJ1N984X8QoekjgH8J/info.json
+git add /Users/adam/tw/assets/blockchains/waves/assets/DUk2YTxhRoAqMJLus4G2b3fR8hMHVh6eiyFx5r29VR6t/info.json
+git add /Users/adam/tw/assets/blockchains/waves/assets/DhaaqiG8xz8njeBuMtTM2G6avg9Jdhfrxw5onm5GaXx1/info.json
+git add /Users/adam/tw/assets/blockchains/waves/assets/DxFwXxS1r3uZ2QEiSqhe6uoXMJBsz4ShLtHvr4HDzNri/info.json
+git add /Users/adam/tw/assets/blockchains/waves/assets/bPWkA3MNyEr1TuDchWgdpqJZhGhfPXj7dJdr3qiW2kD/info.json
+git add /Users/adam/tw/assets/blockchains/waves/assets/eWeMD5KNeuRaALCAb4uuJKtAvon2JcTyXQyoBMhuN2X/info.json
