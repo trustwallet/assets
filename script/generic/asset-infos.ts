@@ -59,7 +59,7 @@ function isAssetInfoValid(info: unknown, path: string, address: string, chain: s
                 return [`Incorrect value for id '${info['id']}' '${chain}' ${path}`, "", fixedInfo];
             }
             // is is correct value, but casing is wrong
-            return ["", `Wrong casing for id '${info['id']}' '${chain}' ${path}`, fixedInfo];
+            return [`Wrong casing for id '${info['id']}' '${chain}' ${path}`, "", fixedInfo];
         }
         // fix
         if (!fixedInfo) { fixedInfo = info; }
