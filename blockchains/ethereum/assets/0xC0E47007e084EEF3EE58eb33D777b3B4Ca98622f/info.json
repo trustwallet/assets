@@ -2,7 +2,6 @@
     "name": "StarDEX",
     "website": "https://stardex.io/",
     "source_code": "https://github.com/stardexio",
-    "short_description": "StarDEX (XSTAR): Redefining DeFi trading.",
     "description": "Decentralized protocol with DeFi swap interface including a fair fee distribution system and advanced matching engine.",
     "socials": [
         {
@@ -21,5 +20,10 @@
             "handle": "stardex"
         }
     ],
-    "explorer": "https://etherscan.io/token/0xC0E47007e084EEF3EE58eb33D777b3B4Ca98622f"
+    "explorer": "https://etherscan.io/token/0xC0E47007e084EEF3EE58eb33D777b3B4Ca98622f",
+    "type": "ERC20",
+    "symbol": "XSTAR",
+    "decimals": 18,
+    "status": "active",
+    "id": "0xC0E47007e084EEF3EE58eb33D777b3B4Ca98622f"
 }

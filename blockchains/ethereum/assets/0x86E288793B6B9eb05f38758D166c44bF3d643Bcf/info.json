@@ -3,7 +3,6 @@
     "website": "https://creditdefi.org/",
     "source_code": "https://github.com/Creditdefi/CRD",
     "white_paper": "https://office.creditdefi.org/docs/crd-whitepaper.pdf",
-    "short_description": "CreditDefi � We Ease The Way You Pay.",
     "description": "Collection of digital currency services Pay, exchange, collect, send, earn and receive money. Superfast and easy",
     "socials": [
         {
@@ -27,5 +26,10 @@
             "handle": "credit_defi"
         }
     ],
-    "explorer": "https://etherscan.io/token/0x86E288793B6B9eb05f38758D166c44bF3d643Bcf"
+    "explorer": "https://etherscan.io/token/0x86E288793B6B9eb05f38758D166c44bF3d643Bcf",
+    "type": "ERC20",
+    "symbol": "CRD",
+    "decimals": 18,
+    "status": "active",
+    "id": "0x86E288793B6B9eb05f38758D166c44bF3d643Bcf"
 }

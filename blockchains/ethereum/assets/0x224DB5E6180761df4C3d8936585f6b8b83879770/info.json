@@ -3,8 +3,7 @@
     "website": "https://omlira.com",
     "source_code": "https://etherscan.io/address/0x224db5e6180761df4c3d8936585f6b8b83879770#code",
     "white_paper": "https://omlira.com/whitepaper.pdf",
-    "short_description": "Utility token created for OM Project that allows users to use OM Solutions and make payments with.",
-    "description": "",
+    "description": "Kullanımı kolay kripto para",
     "socials": [
         {
             "name": "Twitter",
@@ -32,5 +31,10 @@
             "handle": "om_lira"
         }
     ],
-    "explorer": "https://etherscan.io/token/0x224db5e6180761df4c3d8936585f6b8b83879770"
+    "explorer": "https://etherscan.io/token/0x224db5e6180761df4c3d8936585f6b8b83879770",
+    "type": "ERC20",
+    "symbol": "OML",
+    "decimals": 18,
+    "status": "active",
+    "id": "0x224DB5E6180761df4C3d8936585f6b8b83879770"
 }
