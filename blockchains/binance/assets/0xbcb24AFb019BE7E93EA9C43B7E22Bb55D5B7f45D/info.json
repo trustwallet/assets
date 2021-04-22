@@ -2,23 +2,8 @@
     "name": "BSCS Token",
     "website": "https://bscstation.org/",
     "description": "Building A Full-Stack DEFI with NFT Auction On Binance Smart Chain",
-	"white_paper": "https://bscstation.org/introduction",
-	"socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/bscstation"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/bscstation"
-        },
-		{
-            "name": "Medium",
-            "url": "https://bscstation.medium.com/"
-        },
-    ],	
-    "explorer": "https://bscscan.com/address/0xbcb24AFb019BE7E93EA9C43B7E22Bb55D5B7f45D",
-    "type": "BEP2",
+    "explorer": "https://bscscan.com/address/0xbcb24afb019be7e93ea9c43b7e22bb55d5b7f45d",
+     "type": "BEP2",
     "symbol": "BSCS",
     "decimals": 18,
     "status": "active",
