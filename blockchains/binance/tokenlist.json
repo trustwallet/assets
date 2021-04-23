@@ -1,7 +1,7 @@
 {
     "name": "Trust Wallet: BNB",
     "logoURI": "https://trustwallet.com/assets/images/favicon.png",
-    "timestamp": "2021-04-20T01:29:20.939Z",
+    "timestamp": "2021-04-23T01:30:21.629Z",
     "tokens": [
         {
             "asset": "c714",
@@ -44,8 +44,8 @@
                 },
                 {
                     "base": "c714_tAVA-645",
-                    "lotSize": "10000000",
-                    "tickSize": "10"
+                    "lotSize": "100000000",
+                    "tickSize": "1"
                 },
                 {
                     "base": "c714_tAWC-986",
@@ -204,8 +204,8 @@
                 },
                 {
                     "base": "c714_tEOSBULL-F0D",
-                    "lotSize": "10000000",
-                    "tickSize": "10"
+                    "lotSize": "100000000",
+                    "tickSize": "1"
                 },
                 {
                     "base": "c714_tEQL-586",
@@ -459,7 +459,7 @@
                 },
                 {
                     "base": "c714_tSWIPE.B-DC0",
-                    "lotSize": "100000000000",
+                    "lotSize": "1000000000000",
                     "tickSize": "1"
                 },
                 {
@@ -509,7 +509,7 @@
                 },
                 {
                     "base": "c714_tUPX-F3E",
-                    "lotSize": "10000000000",
+                    "lotSize": "100000000000",
                     "tickSize": "1"
                 },
                 {
@@ -600,7 +600,7 @@
                 },
                 {
                     "base": "c714_tAVA-645",
-                    "lotSize": "10000000",
+                    "lotSize": "100000000",
                     "tickSize": "1000"
                 },
                 {
@@ -695,7 +695,7 @@
                 },
                 {
                     "base": "c714_tSWINGBY-888",
-                    "lotSize": "100000000",
+                    "lotSize": "1000000000",
                     "tickSize": "100"
                 },
                 {
@@ -2231,7 +2231,7 @@
         }
     ],
     "version": {
-        "major": 66,
+        "major": 69,
         "minor": 0,
         "patch": 0
     }
