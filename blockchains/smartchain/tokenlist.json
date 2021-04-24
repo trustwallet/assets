@@ -183,8 +183,22 @@
                 },
                 {
                     "base": "c20000714_t0xF952Fc3ca7325Cc27D15885d37117676d25BfdA6"
+                },
+                {
+                    "base": "c20000714_t0xd0840d5f67206f865aee7cce075bd4484cd3cc81"
                 }
             ]
+        },
+        {
+            "chainId": 56,
+            "asset": "c20000714_t0xd0840d5f67206f865aee7cce075bd4484cd3cc81",
+            "type": "BEP20",
+            "address": "0xd0840d5f67206f865aee7cce075bd4484cd3cc81",
+            "name": "Afen Blockchain",
+            "symbol": "AFEN",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xd0840D5F67206f865AeE7cCE075bd4484cD3cC81/logo.png",
+            "pairs": []
         },
         {
             "chainId": 56,
