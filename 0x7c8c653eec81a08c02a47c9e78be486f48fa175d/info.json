@@ -7,12 +7,13 @@
     "source_code": "https://github.com/BlindBoxes/assets",
     ""
     "short_description": "Blind Boxes is a gamified curation platform and launchpad for limited edition non-fungible tokens (NFTs).  BLES is the governance token of the Blind Boxes ecosystem. ",
-    "explorers": [
-        {
-            "name": "BSCScan",
-            "url": "https://bscscan.io/token/0x7c8c653eec81a08c02a47c9e78be486f48fa175d"
-        }
-    ],
+    "explorer": "https://bscscan.io/token/0x7c8c653eec81a08c02a47c9e78be486f48fa175d",
+    "type": "BEP20",
+    "symbol": "BLES",
+    "status": "active",
+    "id": "0x7c8c653eec81a08c02a47c9e78be486f48fa175d"
+}
+
     "data_source": "crowd",
         "socials": [
         {
