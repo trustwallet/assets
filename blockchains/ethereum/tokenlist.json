@@ -767,6 +767,9 @@
                     "base": "c60_t0xF629cBd94d3791C9250152BD8dfBDF380E2a3B9c"
                 },
                 {
+                    "base": "c60_t0xb77fFbb00f4c529747bAB93bDEb3dcE49b021e76"
+                },
+                {
                     "base": "c60_t0xf6537FE0df7F0Cc0985Cf00792CC98249E73EFa0"
                 },
                 {
@@ -3517,6 +3520,17 @@
             "symbol": "ENJ",
             "decimals": 18,
             "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xF629cBd94d3791C9250152BD8dfBDF380E2a3B9c/logo.png",
+            "pairs": []
+        },
+        {
+            "chainId": 1,
+            "asset": "c60_t0xb77fFbb00f4c529747bAB93bDEb3dcE49b021e76",
+            "type": "ERC20",
+            "address": "0xb77fFbb00f4c529747bAB93bDEb3dcE49b021e76",
+            "name": "SafeDawg",
+            "symbol": "SDAWG",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xb77fFbb00f4c529747bAB93bDEb3dcE49b021e76/logo.png",
             "pairs": []
         },
         {
