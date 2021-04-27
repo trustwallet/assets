@@ -45,7 +45,7 @@ function isAssetInfoValid(info: unknown, path: string, address: string, chain: s
     if (info['type'] !== info['type'].toUpperCase()) {
         // type is correct value, but casing is wrong, fix
         if (checkOnly) {
-           return ["", `Wrong casing for type '${info['type']}' '${chain}' ${path}`, fixedInfo];
+           return [`Type should be ALLCAPS '${info['type'].toUpperCase()}' instead of '${info['type']}' '${chain}' ${path}`, "", fixedInfo];
         }
         // fix
         if (!fixedInfo) { fixedInfo = info; }
