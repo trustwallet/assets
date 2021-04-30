@@ -1,0 +1,22 @@
+{
+  "name": "QuickSwap",
+  "website": "https://quickswap.exchange/",
+  "source_code": "https://github.com/neo-project",
+  "white_paper": "https://quickswap-layer2.medium.com/introducing-quickswap-meet-the-next-generation-of-high-performance-dex-118a325c57a1",
+  "short_description": "QuickSwap is a permissionless decentralized exchange (DEX) based on Ethereum, powered by Matic Network’s Layer 2 scalability infrastructure. By utilizing Layer 2 for transactions, QuickSwap users will be able to trade any ERC20 asset at lightning-fast speeds with near-zero gas costs.",
+  "description": "QuickSwap is a permission-less decentralized exchange (DEX) based on Ethereum, powered by Matic Network’s Layer 2 scalability infrastructure.
+Just like current leading DEXs, such as Uniswap and SushiSwap, anyone can trade any ERC20 token on QuickSwap. If an asset isn’t currently supported on the platform, users can list any ERC20 token on QuickSwap by providing liquidity to enable instant asset swaps. They will then earn fees every time other users trade via that trading pair.",
+  "socials": [
+    {
+      "name": "Twitter",
+      "url": "https://twitter.com/QuickswapDEX",
+      "handle": "QuickswapDEX"
+    },
+    {
+      "name": "Telegram",
+      "url": "https://t.me/QuickSwapDEX",
+      "handle": "Quickswapdex"
+    }
+  ],
+  "explorer": "https://etherscan.io/token/0x6c28aef8977c9b773996d0e8376d2ee379446f2f",
+}
