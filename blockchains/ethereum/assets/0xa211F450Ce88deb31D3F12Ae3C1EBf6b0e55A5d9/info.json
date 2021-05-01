@@ -3,11 +3,31 @@
     "website": "https://parsiq.net",
     "description": "Incentivization of Liquidity Providers by PARSIQ.",
     "socials": [
-        "https://t.me/parsiq_group",
-        "https://twitter.com/parsiq_net",
-        "https://www.linkedin.com/company/parsiq",
-        "https://www.facebook.com/parsiqnet/",
-        "https://medium.com/parsiq"
+        {
+            "name": "Telegram",
+            "url": "https://t.me/parsiq_group",
+            "handle": "parsiq_group"
+        },
+        {
+            "name": "Twitter",
+            "url": "https://twitter.com/parsiq_net",
+            "handle": "parsiq_group"
+        },
+        {
+            "name": "LinkedIn",
+            "url": "https://www.linkedin.com/company/parsiq",
+            "handle": "parsiq_group"
+        },
+        {
+            "name": "Facebook",
+            "url": "https://www.facebook.com/parsiqnet/",
+            "handle": "parsiqnet"
+        },
+        {
+            "name": "Medium",
+            "url": "https://medium.com/parsiq",
+            "handle": "parsiq"
+        }
     ],
     "explorer": "https://etherscan.io/token/0xa211F450Ce88deb31D3F12Ae3C1EBf6b0e55A5d9",
     "type": "ERC20",

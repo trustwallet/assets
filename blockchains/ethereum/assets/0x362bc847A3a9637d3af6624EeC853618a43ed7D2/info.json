@@ -3,11 +3,31 @@
     "website": "https://parsiq.net",
     "description": "Connect blockchain activity to off-chain apps and devices. Monitor and secure DeFi applications. Build custom event triggers and power real-time automations.",
     "socials": [
-        "https://t.me/parsiq_group",
-        "https://twitter.com/parsiq_net",
-        "https://www.linkedin.com/company/parsiq",
-        "https://www.facebook.com/parsiqnet/",
-        "https://medium.com/parsiq"
+        {
+            "name": "Telegram",
+            "url": "https://t.me/parsiq_group",
+            "handle": "parsiq_group"
+        },
+        {
+            "name": "Twitter",
+            "url": "https://twitter.com/parsiq_net",
+            "handle": "parsiq_group"
+        },
+        {
+            "name": "LinkedIn",
+            "url": "https://www.linkedin.com/company/parsiq",
+            "handle": "parsiq_group"
+        },
+        {
+            "name": "Facebook",
+            "url": "https://www.facebook.com/parsiqnet/",
+            "handle": "parsiqnet"
+        },
+        {
+            "name": "Medium",
+            "url": "https://medium.com/parsiq",
+            "handle": "parsiq"
+        }
     ],
     "explorer": "https://etherscan.io/token/0x362bc847A3a9637d3af6624EeC853618a43ed7D2",
     "type": "ERC20",
