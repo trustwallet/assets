@@ -1,7 +1,7 @@
 {
     "name": "Coreto",
     "website": "https://coreto.io",
-    "light_paper": "https://coreto.io/Coreto_Lightpaper_1.2-B.pdf",
+    "white_paper": "https://coreto.io/Coreto_Lightpaper_1.2-B.pdf",
     "description": "A reputation based, tokenized social platform orientated towards the crypto communities needs, educating retail investors about blockchain based projects.",
     "explorer": "https://etherscan.io/token/0x9c2dc0c3cc2badde84b0025cf4df1c5af288d835",
     "type": "ERC20",
@@ -25,6 +25,10 @@
         {
             "name": "medium",
             "url": "https://medium.com/coreto"
+        },
+        {
+            "name": "instagram",
+            "url": "https://www.instagram.com/coreto.io"
         }
     ]
 }
