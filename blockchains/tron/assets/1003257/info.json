@@ -1,8 +1,18 @@
 {
     "name": "Vevocoin",
     "website": "https://vevocoin.com/",
-    "telegram": "https://t.me/vevonews",
-    "twitter": "https://twitter.com/vevocoin",
+    "socials": [
+        {
+            "name": "Telegram",
+            "url": "https://t.me/vevonews",
+            "handle": "vevonews"
+        },
+        {
+            "name": "Twitter",
+            "url": "https://twitter.com/vevocoin",
+            "handle": "vevocoin"
+        }
+    ],
     "source_code": "https://github.com/vevodev",
     "white_paper": "https://vevocoin.com/whitepaper.pdf",
     "description": "VEVO is an open source platform in which everyone can use the code and token to their needs.",

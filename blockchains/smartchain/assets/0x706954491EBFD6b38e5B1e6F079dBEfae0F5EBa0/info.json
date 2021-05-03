@@ -1,7 +1,13 @@
 {
     "name": "Charizard Token",
     "website": "https://charizardtoken.com/",
-    "twitter": "https://twitter.com/CharizardToken",
+    "socials": [
+        {
+            "name": "Twitter",
+            "url": "https://twitter.com/CharizardToken",
+            "handle": "CharizardToken"
+        }
+    ],
     "description": "The Charizard Token is a deflationary cryptocurrency, a 5% tax is applied to each transaction made using CHZ006.",
     "white_paper": "https://charizardtoken.com/whitepaper.pdf",
     "explorer": "https://bscscan.com/token/0x706954491ebfd6b38e5b1e6f079dbefae0f5eba0",
