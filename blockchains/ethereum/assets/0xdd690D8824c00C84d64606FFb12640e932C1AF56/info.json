@@ -3,9 +3,23 @@
     "website": "https://tavitt.co.jp",
     "source_code": "https://github.com/Tavitt/token",
     "white_paper": "https://tavitt.co.jp/TAVITT_WP_En_ver2.01.pdf",
-    "twitter": "https://twitter.com/tavitt_coltd",
-    "telegram": "https://t.me/tavitt_official",
-    "facebook": "https://www.facebook.com/TavittThailand",
+    "socials": [
+        {
+            "name": "Twitter",
+            "url": "https://twitter.com/tavitt_coltd",
+            "handle": "tavitt_coltd"
+        },
+        {
+            "name": "Telegram",
+            "url": "https://t.me/tavitt_official",
+            "handle": "tavitt_official"
+        },
+        {
+            "name": "Facebook",
+            "url": "https://www.facebook.com/TavittThailand",
+            "handle": "tavitt_official"
+        }
+    ],
     "description": "Tavitt builds a platform that allows travelers as Travel Providers to earn income while traveling.",
     "explorer": "https://etherscan.io/token/0xdd690D8824c00C84d64606FFb12640e932C1AF56",
     "type": "ERC20",

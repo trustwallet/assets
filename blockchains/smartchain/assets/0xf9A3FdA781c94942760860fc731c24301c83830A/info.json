@@ -1,9 +1,23 @@
 {
     "name": "PhilosoRaptor",
     "website": "https://raptr.finance",
-    "telegram": "https://t.me/PhilosoRaptorToken",
-    "discord": "https://discord.com/invite/EJwR3pjd9A",
-    "twitter": "https://twitter.com/philosoraptorT1",
+    "socials": [
+        {
+            "name": "Telegram",
+            "url": "https://t.me/PhilosoRaptorToken",
+            "handle": "PhilosoRaptorToken"
+        },
+        {
+            "name": "Discord",
+            "url": "https://discord.com/invite/EJwR3pjd9A",
+            "handle": "EJwR3pjd9A"
+        },
+        {
+            "name": "Twitter",
+            "url": "https://twitter.com/philosoraptorT1",
+            "handle": "philosoraptorT1"
+        }
+    ],
     "description": "A deflationnary token made for long term investors and helping to save the earth",
     "explorer": "https://bscscan.com/token/0xf9A3FdA781c94942760860fc731c24301c83830A",
     "type": "BEP20",
