@@ -13,7 +13,7 @@ payment:
 message:
   initial: |
     Hi! In order to compensate for the efforts of processing PRs, we kindly ask for a contribution.
-    As there is no refund, before paying the fee, make sure new tokens fulfill the [acceptance criteria](https://community.trustwallet.com/t/how-to-submit-a-token-logo/3863).
+    💀 As **there is no refund**, before **paying the fee**, make sure **new tokens fulfill the minimum circulation and other [acceptance criteria](https://community.trustwallet.com/t/how-to-submit-a-token-logo/3863)**.
     See also the [PR Fee FAQ](https://developer.trustwallet.com/add_new_asset/pr-fee).
     \nPlease pay  **$PAY1_AMOUNT $PAY1_CURRENCY**  with the memo **$PAY1_MEMO**  to the address `$PAY1_ADDRESS`.
     Alternatively, $PAY2_AMOUNT $PAY2_CURRENCY is also accepted (same memo & address).
@@ -40,16 +40,16 @@ message:
     \n$QR1_SIMPLE
     See the [Pull Request Fee FAQ](https://developer.trustwallet.com/add_new_asset/pr-fee).
   oldClosing: |
-    This PR is being closed due to inactivity. If you wish to continue, please have us reopen the PR before sending your payment.
+    This PR is being closed due to inactivity. If you wish to continue, please have us reopen the PR before sending your payment, or just create a new one.
     Do NOT send payments for closed PR, as the fee may by lost!
 label:
   requested: 'Payment Status: Requested'
   paid: 'Payment Status: Paid'
 user:
-  assignOnPay: zachzwei,catenocrypt
+  assignOnPay: zachzwei,catenocrypt,Cryptocool1
   # if set to 1 comments from not allowed users are deleted.  Only comments from the PR creator or collaborators are allowed
   deleteComments: 1
-  collaborators: zachzwei,Iamdeadlyz,catenocrypt,vikmeup
+  collaborators: zachzwei,Iamdeadlyz,catenocrypt,vikmeup,hewigovens,Cryptocool1
 timeout:
-  maxAgeCloseHours: 60
-  maxIdleRemindHours: 17
+  maxAgeCloseHours: 48
+  maxIdleRemindHours: 22

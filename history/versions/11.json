@@ -1,17 +1,15 @@
 {
     "versionEnd": {
         "versionNum": 11,
-        "commit": "e8d94d9e4b624d4c545222d950a9344cf76b5b59",
-        "date": "2021-02-22T16:28:09.941Z"
+        "commit": "5d30a3548655e417923c0e864803dc481621a34b",
+        "date": "2021-02-25T13:19:49.421Z"
     },
     "versionStart": {
         "versionNum": 10,
-        "commit": "1d22c34aeac82a50e5283e6f3306186375911a1a",
-        "date": "2021-02-22T16:27:06.531Z"
+        "commit": "ebff911e98056b140570f10fa9f9f2b63c268fbb",
+        "date": "2021-02-25T13:18:32.284Z"
     },
-    "fullChange": false,
-    "changeCount": 1,
     "changes": [
-        "script/generic/history.ts"
+        "blockchains/smartchain/allowlist.json"
     ]
 }

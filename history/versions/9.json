@@ -1,18 +1,17 @@
 {
     "versionEnd": {
         "versionNum": 9,
-        "commit": "6b628a09e56d56fe6307fdb24c4d13f7949bcf9c",
-        "date": "2021-02-22T16:26:05.757Z"
+        "commit": "a527c84642f76dc77c64e0edb620cad52d3ad2be",
+        "date": "2021-02-25T09:27:29.706Z"
     },
     "versionStart": {
         "versionNum": 8,
-        "commit": "e33acce1d7e07444655a46d1d457520ef0b50a51",
-        "date": "2021-02-22T16:25:02.672Z"
+        "commit": "0cbddf90a512866a9f49793b3ca20aa0a8dfe58b",
+        "date": "2021-02-25T07:21:29.774Z"
     },
-    "fullChange": false,
-    "changeCount": 2,
     "changes": [
-        "history/LATEST.json",
-        "history/versions/8.json"
+        "blockchains/smartchain/allowlist.json",
+        "blockchains/smartchain/assets/0x947950BcC74888a40Ffa2593C5798F11Fc9124C4/info.json",
+        "blockchains/smartchain/assets/0x947950BcC74888a40Ffa2593C5798F11Fc9124C4/logo.png"
     ]
 }

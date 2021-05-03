@@ -1,18 +1,15 @@
 {
     "versionEnd": {
         "versionNum": 8,
-        "commit": "e33acce1d7e07444655a46d1d457520ef0b50a51",
-        "date": "2021-02-22T16:25:02.672Z"
+        "commit": "0cbddf90a512866a9f49793b3ca20aa0a8dfe58b",
+        "date": "2021-02-25T07:21:29.774Z"
     },
     "versionStart": {
         "versionNum": 7,
-        "commit": "7e1f0237a5075bed4a7b0cbbe704674a6bc6b7fd",
-        "date": "2021-02-22T16:24:06.519Z"
+        "commit": "1ff05875a765b8738394d40cea359a33cc8a635a",
+        "date": "2021-02-24T16:32:43.168Z"
     },
-    "fullChange": false,
-    "changeCount": 2,
     "changes": [
-        "history/LATEST.json",
-        "history/versions/7.json"
+        "blockchains/binance/tokenlist.json"
     ]
 }
