@@ -2,7 +2,6 @@
     "name": "HOES",
     "website": "https://traphouse.vip/",
     "source_code": "https://github.com/thugs-defi",
-    "short_description": "HOES is the staked form of DRUGS. Hoes are used to stake for other tokens on the Traphouse.",
     "description": "HOES is the staked form of DRUGS. Hoes are used to stake for other tokens on the Traphouse.",
     "socials": [
         {
@@ -26,5 +25,10 @@
             "url": "https://t.me/thugsfinance"
         }
     ],
-    "explorer": "https://bscscan.com/token/0x8191113581cbfa3fcdc6b0d2e6f84753d4850080"
+    "explorer": "https://bscscan.com/token/0x8191113581cbfa3fcdc6b0d2e6f84753d4850080",
+    "type": "BEP20",
+    "symbol": "HOES",
+    "decimals": 18,
+    "status": "active",
+    "id": "0x8191113581cBfa3fcdC6B0d2e6F84753D4850080"
 }
