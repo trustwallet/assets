@@ -51,4 +51,6 @@ export const getChainAssetsList = (chain: string): string[] => readDirSync(getCh
 export const getChainAssetFilesList = (chain: string, address: string): string[] => readDirSync(getChainAssetPath(chain, address));
 export const getChainValidatorsAssets = (chain: string): string[] => readDirSync(getChainValidatorsAssetsPath(chain));
 
+export const dappsPath: string = path.join(process.cwd(), '/dapps');
+
 export const rootDirAllowedFiles = config.foldersRootdirAllowedFiles;
