@@ -1,30 +1,12 @@
 {
     "name": "Whale Offspring",
     "website": "https://whaleoffspring.com/",
-    "source_code": "https://github.com/whaleoffspring",
-    "white_paper": "https://whaleoffspring.com/litepaper.pdf",
     "description": "Whale Offspring protocal is a token on BSC",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/WhaleOffspring",
-            "handle": "Whale Offspring"
-        },
-        {
-            "name": "Reddit",
-            "url": "https://www.reddit.com/user/WhaleOffspring",
-            "handle": "Whale Offspring"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/WhaleOffspring",
-            "handle": "Whale Offspring"
-        }
-    ],
-    "explorer": "https://whaleoffspring.com/",
+    "explorer": "https://bscscan.com/token/0x6402af56201e2ba8dc6642750b0a3775d2104d14",
     "research": "",
+    "type": "BEP20",
     "symbol": "WHALEOS",
-    "type": "COIN",
     "decimals": 9,
-    "status": "active"
+    "status": "active",
+    "id": "0x6402af56201e2ba8dc6642750b0a3775d2104d14"
 }
