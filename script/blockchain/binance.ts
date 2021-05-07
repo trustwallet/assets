@@ -157,7 +157,7 @@ class BinanceMarket {
 async function generateBinanceTokensList(): Promise<TokenItem[]> {
     const decimals = CoinType.decimals(CoinType.binance)
     const BNBSymbol = CoinType.symbol(CoinType.binance)
-    const markets: [BinanceMarket] = await axios.get(`${config.binanceDexURL}/v1/markets?limit=10000`).then(r => r.data);
+    const markets: [BinanceMarket] = await axios.get(`${config.binanceDexURL}/v1/markets?limit=500`).then(r => r.data);
     const tokens = await axios.get(`${config.binanceDexURL}/v1/tokens?limit=10000`).then(r => r.data);
     const tokensMap = Object.assign({}, ...tokens.map(s => ({[s.symbol]: s})));
     const pairsMap = {}
