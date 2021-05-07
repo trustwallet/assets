@@ -165,7 +165,7 @@ export function explorerUrl(chain: string, contract: string): string {
 
             case CoinType.name(CoinType.thundertoken).toLowerCase():
             case "thundertoken":
-                return `https://scan.thundercore.com/`;
+                return `https://viewblock.io/thundercore/address/${contract}`;
 
             case CoinType.name(CoinType.classic).toLowerCase():
             case "classic":
