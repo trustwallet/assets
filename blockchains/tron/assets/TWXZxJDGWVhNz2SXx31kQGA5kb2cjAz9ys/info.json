@@ -1,6 +1,10 @@
-﻿{
-    "name": "AZEUSX",
-    "website": "https://azeusx.com",
-    "short_description": "AZX is a platform for the future of funding that powering dat for the new equity blockchain",
-    "explorer": "https://tronscan.io/#/token20/TWXZxJDGWVhNz2SXx31kQGA5kb2cjAz9ys"
-}
+{
+"name": "AZEUSX",
+"type": "TRC20",
+"symbol": "AZX",
+"decimals": 6,
+"description": "AZX is a platform for the future of funding that powering dat for the new equity blockchain",
+"website": "https://azeusx.com",
+"explorer": "https://tronscan.io/#/token20/TWXZxJDGWVhNz2SXx31kQGA5kb2cjAz9ys",
+"status": "active",
+"id": "AZX"
