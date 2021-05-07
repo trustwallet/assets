@@ -161,15 +161,19 @@ export function explorerUrl(chain: string, contract: string): string {
                 return "https://explorer.ont.io";
 
             case CoinType.name(CoinType.gochain).toLowerCase():
-                    return `https://explorer.gochain.io/addr/${contract}`;
+                return `https://explorer.gochain.io/addr/${contract}`;
 
             case CoinType.name(CoinType.thundertoken).toLowerCase():
             case "thundertoken":
-                    return `https://scan.thundercore.com/`;
+                return `https://scan.thundercore.com/`;
 
             case CoinType.name(CoinType.classic).toLowerCase():
             case "classic":
-                            return `https://blockscout.com/etc/mainnet/tokens/${contract}`;
+                return `https://blockscout.com/etc/mainnet/tokens/${contract}`;
+
+            case CoinType.name(CoinType.vechain).toLowerCase():
+            case "vechain":
+                return `https://explore.vechain.org/accounts/${contract}`;
         }
     }
     return "";
