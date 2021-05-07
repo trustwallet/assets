@@ -143,7 +143,9 @@ export class BinanceAction implements ActionInterface {
         const list = createTokensList("BNB", tokenList,
             "2020-10-03T12:37:57.000+00:00", // use constants here to prevent changing time every time
             0, 1, 0);
-        writeToFileWithUpdate(getChainTokenlistPath(Binance), list);
+        if (tokenList.length > 0) {
+            writeToFileWithUpdate(getChainTokenlistPath(Binance), list);
+        }
     }
 }
 
@@ -157,7 +159,7 @@ class BinanceMarket {
 async function generateBinanceTokensList(): Promise<TokenItem[]> {
     const decimals = CoinType.decimals(CoinType.binance)
     const BNBSymbol = CoinType.symbol(CoinType.binance)
-    const markets: [BinanceMarket] = await axios.get(`${config.binanceDexURL}/v1/markets?limit=500`).then(r => r.data);
+    const markets: [BinanceMarket] = await axios.get(`${config.binanceDexURL}/v1/markets?limit=10000`).then(r => r.data);
     const tokens = await axios.get(`${config.binanceDexURL}/v1/tokens?limit=10000`).then(r => r.data);
     const tokensMap = Object.assign({}, ...tokens.map(s => ({[s.symbol]: s})));
     const pairsMap = {}
