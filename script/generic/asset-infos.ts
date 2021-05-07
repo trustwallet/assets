@@ -229,12 +229,13 @@ function isAssetInfoOK(chain: string, address: string, errors: string[], warning
     if (hasExplorer) {
         explorerActual = info['explorer'];
     }
+    const explorerActualLower = explorerActual.toLowerCase();
+    const explorerExpectedLower = explorerExpected.toLowerCase();
     if (checkOnly) {
         if (!hasExplorer) {
             errors.push(`Missing explorer key`);
         } else {
-            const explorerActualLower = explorerActual.toLowerCase();
-            if (explorerActualLower != explorerExpected.toLowerCase() && explorerExpected) {
+            if (explorerActualLower !== explorerExpectedLower && explorerExpected) {
                 // doesn't match, check for alternatives
                 const explorersAlt = explorerUrlAlternatives(chain, address, info['name']);
                 if (explorersAlt && explorersAlt.length > 0) {
@@ -252,8 +253,8 @@ function isAssetInfoOK(chain: string, address: string, errors: string[], warning
             }
         }
     } else {
-        // fix: simply replace with expected
-        if (explorerActual !== explorerExpected) {
+        // fix: simply replace with expected (case-only deviation is accepted)
+        if (explorerActualLower !== explorerExpectedLower) {
             if (!fixedInfo) { fixedInfo = info; }
             fixedInfo['explorer'] = explorerExpected;
         }
