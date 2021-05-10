@@ -1,8 +1,18 @@
 {
     "name": "BlowFish",
     "website": "https://blowfish.one/",
-    "telegram": "https://t.me/blowfishtokengroup",
-    "twitter": "https://twitter.com/blowfishtoken",
+    "socials": [
+        {
+            "name": "Twitter",
+            "url": "https://twitter.com/blowfishtoken",
+            "handle": "blowfishtoken"
+        },
+        {
+            "name": "Telegram",
+            "url": "https://t.me/blowfishtokengroup",
+            "handle": "blowfishtoken"
+        }
+    ],
     "description": "A gamifying token with fun DApps like NFT games and a deflationary lottery.",
     "explorer": "https://bscscan.com/token/0xa55bb91de33b4abdf3ac64913d98a55ad84dc3a8",
     "type": "BEP20",
