@@ -184,6 +184,10 @@
                 {
                     "base": "c20000714_t0xF952Fc3ca7325Cc27D15885d37117676d25BfdA6"
                 }
+                ,
+                {
+                    "base": "c20000714_t0x0Ac7E039C2617A8d6820bB7c15a3D728DADfd518"
+                }
             ]
         },
         {
@@ -801,6 +805,16 @@
             "symbol": "EGG",
             "decimals": 18,
             "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xF952Fc3ca7325Cc27D15885d37117676d25BfdA6/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c20000714_t0x0Ac7E039C2617A8d6820bB7c15a3D728DADfd518",
+            "type": "BEP20",
+            "address": "0x0Ac7E039C2617A8d6820bB7c15a3D728DADfd518",
+            "name": "Trump",
+            "symbol": "TRMP",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x0Ac7E039C2617A8d6820bB7c15a3D728DADfd518/logo.png",
             "pairs": []
         }
     ],
