@@ -1,13 +1,11 @@
 {
     "name": "Tycoon",
     "website": "https://tycoon.io/",
-    "short_description": "Tycoon is a social trading platform where followers can connect to any trader in the world just by using their API and without giving away their funds out of their hands. Traders can easily be followed and their strategy will be automatically shared with all their followers in realtime.",
-    "explorers": [
-        {
-            "name": "Etherscan",
-            "url": "https://etherscan.io/token/0x3A82D3111aB5faF39d847D46023d9090261A658F"
-        }
-    ],
-    "data_source": "crowd",
-    "socials": []
-} 
+    "description": "Tycoon is a social trading platform where followers can connect to any trader in the world just by using their API and without giving away their funds out of their hands. Traders can easily be followed and their strategy will be automatically shared with all their followers in realtime.",
+    "explorer": "https://etherscan.io/token/0x3A82D3111aB5faF39d847D46023d9090261A658F",
+    "type": "ERC20",
+    "symbol": "TYC",
+    "decimals": 18,
+    "status": "active",
+    "id": "0x3A82D3111aB5faF39d847D46023d9090261A658F"
+}
