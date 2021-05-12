@@ -1,25 +1,8 @@
 {
     "name": "e-Money (NGM)",
     "website": "https://e-money.com",
-    "source_code": "http://github.com/e-money",
     "description": "ERC20 version of the e-Money NGM staking token",
     "explorer": "https://etherscan.io/token/0xed0d5747A9AB03a75fBfEC3228cd55848245B75d",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/emoney_com",
-            "handle": "emoney_com"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/emoney_com",
-            "handle": "emoney_com"
-        },
-        {
-            "name": "Medium",
-            "url": "https://medium.com/e-money-com"
-        }
-    ],
     "type": "ERC20",
     "symbol": "NGM",
     "decimals": 6,
