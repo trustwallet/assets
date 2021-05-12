@@ -1,14 +1,14 @@
 {
     "name": "Cougar Coin",
-    "website": "https://cougarcoin.org/",
-    "short_description": "COUGAR is a community driven, fair launched DeFi Token.  6% of every transaction is donated to http://savelacougars.org to help fund California's first freeway wildlife crossing.",
-    "explorers": [
-        {
-            "name": "BSCscan",
-            "url": "https://bscscan.com/token/0x694dc0619e7140d83f2627d573015565096832d3"
-        }
-    ],
-    "data_source": "crowd",
+    "website": "https://cougarcoin.org",
+    "description": "COUGAR is a community driven, fair launched DeFi Token.  6% of every transaction is donated to http://savelacougars.org to help fund California's first freeway wildlife crossing.",
+    "explorer": "https://bscscan.com/token/0x694dc0619e7140d83f2627d573015565096832d3",
+    "type": "BEP20",
+    "symbol": "COUGAR",
+    "decimals": 9,
+    "status": "active",
+    "id": "0x694dc0619e7140d83f2627d573015565096832d3"
+        "data_source": "crowd",
     "socials": [
 	{
 	   "name": "Twitter",
@@ -24,4 +24,5 @@
 	   "url": "https://www.tiktok.com/@cougarcointr"
 	}
 	      ]
-} 
+
+}
