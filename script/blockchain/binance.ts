@@ -143,7 +143,9 @@ export class BinanceAction implements ActionInterface {
         const list = createTokensList("BNB", tokenList,
             "2020-10-03T12:37:57.000+00:00", // use constants here to prevent changing time every time
             0, 1, 0);
-        writeToFileWithUpdate(getChainTokenlistPath(Binance), list);
+        if (tokenList.length > 0) {
+            writeToFileWithUpdate(getChainTokenlistPath(Binance), list);
+        }
     }
 }
 
