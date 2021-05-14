@@ -229,10 +229,7 @@ function isAssetInfoOK(chain: string, address: string, errors: string[], warning
 
     const explorerExpected = explorerUrl(chain, address);
     const hasExplorer = Object.prototype.hasOwnProperty.call(info, 'explorer');
-    var explorerActual = '';
-    if (hasExplorer) {
-        explorerActual = info['explorer'];
-    }
+    const explorerActual = info['explorer'] || '';
     const explorerActualLower = explorerActual.toLowerCase();
     const explorerExpectedLower = explorerExpected.toLowerCase();
     if (checkOnly) {
