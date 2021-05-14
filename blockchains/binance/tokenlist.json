@@ -1,7 +1,7 @@
 {
     "name": "Trust Wallet: BNB",
     "logoURI": "https://trustwallet.com/assets/images/favicon.png",
-    "timestamp": "2021-05-13T01:30:43.329Z",
+    "timestamp": "2021-05-12T02:14:22.188Z",
     "tokens": [
         {
             "asset": "c714",
@@ -284,7 +284,7 @@
                 },
                 {
                     "base": "c714_tKAT-7BB",
-                    "lotSize": "10000000000",
+                    "lotSize": "100000000000",
                     "tickSize": "1"
                 },
                 {
@@ -651,7 +651,7 @@
                 {
                     "base": "c714_tEOS-CDD",
                     "lotSize": "10000000",
-                    "tickSize": "10000"
+                    "tickSize": "1000"
                 },
                 {
                     "base": "c714_tETH-1C9",
@@ -2231,7 +2231,7 @@
         }
     ],
     "version": {
-        "major": 89,
+        "major": 88,
         "minor": 0,
         "patch": 0
     }
