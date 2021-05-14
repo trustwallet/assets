@@ -1,6 +1,11 @@
 {
     "name": "KuCoin Shares",
     "website": "https://kucoin.com",
-    "short_description": "Kucoin Shares (KCS) is an exchange based token and native currency of the Kucoin crypto exchange.",
-    "explorer": "https://etherscan.io/token/0x039b5649a59967e3e936d7471f9c3700100ee1ab"
+    "description": "Kucoin Shares (KCS) is an exchange based token and native currency of the Kucoin crypto exchange.",
+    "explorer": "https://etherscan.io/token/0x039B5649A59967e3e936D7471f9c3700100Ee1ab",
+    "type": "ERC20",
+    "symbol": "KCS",
+    "decimals": 6,
+    "status": "abandoned",
+    "id": "0x039B5649A59967e3e936D7471f9c3700100Ee1ab"
 }

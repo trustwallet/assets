@@ -2,7 +2,6 @@
     "name": "STPAY",
     "website": "https://stpay.org/",
     "source_code": "https://github.com/stpay/contract",
-    "short_description": "STPAY is creating a global platform to support Education and E-Commerce.",
     "description": "STPAY is creating a global platform to support Education and E-Commerce.",
     "socials": [
         {
@@ -21,5 +20,10 @@
             "handle": ""
         }
     ],
-    "explorer": "https://etherscan.io/token/0x5c250ff9b993c6991cc4a3cc543716e53b478018"
+    "explorer": "https://etherscan.io/token/0x5c250ff9b993C6991cC4A3cC543716e53b478018",
+    "type": "ERC20",
+    "symbol": "STP",
+    "decimals": 18,
+    "status": "active",
+    "id": "0x5c250ff9b993C6991cC4A3cC543716e53b478018"
 }

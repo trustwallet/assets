@@ -1,7 +1,12 @@
 {
     "name": "Gatechain Token",
     "website": "https://gatechain.io",
-    "short_description": "GateChain is a public blockchain dedicated to blockchain asset safety even after private keys are compromised.",
+    "description": "GateChain is a public blockchain dedicated to blockchain asset safety even after private keys are compromised.",
     "socials": [],
-    "explorer": "https://etherscan.io/token/0xe66747a101bff2dba3697199dcce5b743b454759"
+    "explorer": "https://etherscan.io/token/0xE66747a101bFF2dBA3697199DCcE5b743b454759",
+    "type": "ERC20",
+    "symbol": "GT",
+    "decimals": 18,
+    "status": "active",
+    "id": "0xE66747a101bFF2dBA3697199DCcE5b743b454759"
 }

@@ -1,26 +1,30 @@
 {
-    "name": "ThePay.cash",
-    "website": "https://thepay.cash",
-    "source_code": "https://github.com/thepaycash",
-    "white_paper": "https://github.com/thepaycash/docs",
-    "short_description": "Open source platform to write and distribute decentralized applications.",
-    "description": "ThePay.cash aims to build the network for fast and free transfer of different stable coins. COL token will be used for governance, staking and collateral for minting native USDP stable coin.",
+    "name": "Unit protocol",
+    "website": "https://unit.xyz",
+    "source_code": "https://github.com/unitprotocol",
+    "white_paper": "https://github.com/unitprotocol/protocol_docs/blob/master/unit_wp.pdf",
+    "description": "Unit protocol is a decentralized borrowing protocol that allows using a variety of tokens as collateral.",
     "socials": [
         {
             "name": "Telegram",
-            "url": "https://t.me/thepaycash_announcements",
-            "handle": "thepaycash_announcements"
+            "url": "https://t.me/unit_ann",
+            "handle": "unit_ann"
         },
         {
             "name": "Twitter",
-            "url": "https://twitter.com/thepaycash",
-            "handle": "thepaycash"
+            "url": "https://twitter.com/unitprotocol",
+            "handle": "unitprotocol"
         },
         {
             "name": "Medium",
-            "url": "https://medium.com/@thepaycash",
-            "handle": "ThePay.cash"
+            "url": "https://medium.com/@unitprotocol",
+            "handle": "Unit protocol"
         }
     ],
-    "explorer": "https://etherscan.io/token/0xC76FB75950536d98FA62ea968E1D6B45ffea2A55"
+    "explorer": "https://etherscan.io/token/0xC76FB75950536d98FA62ea968E1D6B45ffea2A55",
+    "type": "ERC20",
+    "symbol": "COL",
+    "decimals": 18,
+    "status": "active",
+    "id": "0xC76FB75950536d98FA62ea968E1D6B45ffea2A55"
 }

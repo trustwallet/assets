@@ -2,9 +2,8 @@
     "name": "Blocksquare",
     "website": "https://blocksquare.io/",
     "source_code": "https://github.com/blocksquare",
-    "short_description": "Increase value and liquidity of real estate properties in your portfolio.",
     "description": "Increase value and liquidity of real estate properties in your portfolio.",
-    "explorer": "https://etherscan.io/address/0x509a38b7a1cc0dcd83aa9d06214663d9ec7c7f4a",
+    "explorer": "https://etherscan.io/token/0x509A38b7a1cC0dcd83Aa9d06214663D9eC7c7F4a",
     "socials": [
         {
             "name": "Twitter",
@@ -20,5 +19,10 @@
             "url": "https://www.reddit.com/r/Blocksquare_io/",
             "handle": "Blocksquare_io"
         }
-    ]
+    ],
+    "type": "ERC20",
+    "symbol": "BST",
+    "decimals": 18,
+    "status": "active",
+    "id": "0x509A38b7a1cC0dcd83Aa9d06214663D9eC7c7F4a"
 }
