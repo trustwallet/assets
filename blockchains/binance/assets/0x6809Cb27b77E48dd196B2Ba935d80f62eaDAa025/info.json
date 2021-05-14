@@ -1,0 +1,276 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2511
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset134 PingFangSC-Medium;}
+{\colortbl;\red255\green255\blue255;\red70\green64\blue77;\red235\green231\blue241;\red152\green67\blue46;
+\red129\green60\blue225;\red69\green84\blue210;\red82\green76\blue90;}
+{\*\expandedcolortbl;;\cssrgb\c34510\c32157\c37647;\cssrgb\c93725\c92549\c95686;\cssrgb\c66667\c34118\c23529;
+\cssrgb\c58431\c35294\c90588;\cssrgb\c34118\c42745\c85882;\cssrgb\c39608\c37255\c42745;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\
+  pragma solidity ^\cf4 0.8.2\cf2 ;\
+  library SafeMath \{\
+    \cf5 function\cf2  \cf6 mul\cf2 (\cf4 uint256 a, uint256 b\cf2 ) \cf6 internal\cf2  \cf6 pure\cf2  \cf6 returns\cf2  (\cf4 uint256\cf2 ) \{\
+      \cf5 if\cf2  (a == \cf4 0\cf2 ) \{\
+        \cf5 return\cf2  \cf4 0\cf2 ;\
+      \}\
+      uint256 c = a * b;\
+      assert(c / a == b);\
+      \cf5 return\cf2  c;\
+    \}\
+  \
+    \cf5 function\cf2  \cf6 div\cf2 (\cf4 uint256 a, uint256 b\cf2 ) \cf6 internal\cf2  \cf6 pure\cf2  \cf6 returns\cf2  (\cf4 uint256\cf2 ) \{\
+      \cf7 // assert(b > 0); // Solidity automatically throws when dividing by 0\cf2 \
+      uint256 c = a / b;\
+      \cf7 // assert(a == b * c + a % b); // There is no case in which this doesn't hold\cf2 \
+      \cf5 return\cf2  c;\
+    \}\
+  \
+    \cf5 function\cf2  \cf6 sub\cf2 (\cf4 uint256 a, uint256 b\cf2 ) \cf6 internal\cf2  \cf6 pure\cf2  \cf6 returns\cf2  (\cf4 uint256\cf2 ) \{\
+      assert(b <= a);\
+      \cf5 return\cf2  a - b;\
+    \}\
+  \
+    \cf5 function\cf2  \cf6 add\cf2 (\cf4 uint256 a, uint256 b\cf2 ) \cf6 internal\cf2  \cf6 pure\cf2  \cf6 returns\cf2  (\cf4 uint256\cf2 ) \{\
+      uint256 c = a + b;\
+      assert(c >= a);\
+      \cf5 return\cf2  c;\
+    \}\
+  \}\
+  \
+  contract Ownable \{\
+    address public owner;\
+  \
+  \
+    event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);\
+  \
+    \cf7 /**\
+     * @dev Throws if called by any account other than the owner.\
+     */\cf2 \
+    modifier \cf6 onlyOwner\cf2 () \{\
+      \cf4 require\cf2 (msg.sender == owner);\
+      _;\
+    \}\
+  \
+  \
+    \cf7 /**\
+     * @dev Allows the current owner to transfer control of the contract to a newOwner.\
+     * @param newOwner The address to transfer ownership to.\
+     */\cf2 \
+    \cf5 function\cf2  \cf6 transferOwnership\cf2 (\cf4 address newOwner\cf2 ) \cf6 public\cf2  \cf6 onlyOwner\cf2  \{\
+      \cf4 require\cf2 (newOwner != address(\cf4 0\cf2 ));\
+      emit OwnershipTransferred(owner, newOwner);\
+      owner = newOwner;\
+    \}\
+  \
+  \}\
+  \
+  contract Pausable is Ownable \{\
+    event Pause();\
+    event Unpause();\
+  \
+    bool public paused = \cf4 false\cf2 ;\
+  \
+  \
+    \cf7 /**\
+     * @dev Modifier to make a function callable only when the contract is not paused.\
+     */\cf2 \
+    modifier \cf6 whenNotPaused\cf2 () \{\
+      \cf4 require\cf2 (!paused);\
+      _;\
+    \}\
+  \
+    \cf7 /**\
+     * @dev Modifier to make a function callable only when the contract is paused.\
+     */\cf2 \
+    modifier \cf6 whenPaused\cf2 () \{\
+      \cf4 require\cf2 (paused);\
+      _;\
+    \}\
+  \
+    \cf7 /**\
+     * @dev called by the owner to pause, triggers stopped state\
+     */\cf2 \
+    \cf5 function\cf2  \cf6 pause\cf2 () \cf6 onlyOwner\cf2  \cf6 whenNotPaused\cf2  \cf6 public\cf2  \{\
+      paused = \cf4 true\cf2 ;\
+      emit Pause();\
+    \}\
+  \
+    \cf7 /**\
+     * @dev called by the owner to unpause, returns to normal state\
+     */\cf2 \
+    \cf5 function\cf2  \cf6 unpause\cf2 () \cf6 onlyOwner\cf2  \cf6 whenPaused\cf2  \cf6 public\cf2  \{\
+      paused = \cf4 false\cf2 ;\
+      emit Unpause();\
+    \}\
+  \}\
+  \
+  contract ERC20Basic \{\
+    uint256 public totalSupply;\
+    \cf5 function\cf2  \cf6 balanceOf\cf2 (\cf4 address who\cf2 ) \cf6 public\cf2  \cf6 view\cf2  \cf6 returns\cf2  (\cf4 uint256\cf2 );\
+    \cf5 function\cf2  \cf6 transfer\cf2 (\cf4 address to, uint256 value\cf2 ) \cf6 public\cf2  \cf6 returns\cf2  (\cf4 bool\cf2 );\
+    event Transfer(address indexed \cf5 from\cf2 , address indexed to, uint256 value);\
+  \}\
+  \
+  contract ERC20 is ERC20Basic \{\
+    \cf5 function\cf2  \cf6 allowance\cf2 (\cf4 address owner, address spender\cf2 ) \cf6 public\cf2  \cf6 view\cf2  \cf6 returns\cf2  (\cf4 uint256\cf2 );\
+    \cf5 function\cf2  \cf6 transferFrom\cf2 (\cf4 address \cf5 from\cf4 , address to, uint256 value\cf2 ) \cf6 public\cf2  \cf6 returns\cf2  (\cf4 bool\cf2 );\
+    \cf5 function\cf2  \cf6 approve\cf2 (\cf4 address spender, uint256 value\cf2 ) \cf6 public\cf2  \cf6 returns\cf2  (\cf4 bool\cf2 );\
+    event Approval(address indexed owner, address indexed spender, uint256 value);\
+  \}\
+  \
+  \
+  contract StandardToken is ERC20 \{\
+    using SafeMath \cf5 for\cf2  uint256;\
+  \
+    mapping (\cf4 address\cf2  => mapping (\cf4 address\cf2  => uint256)) internal allowed;\
+    mapping(\cf4 address\cf2  => bool) tokenBlacklist;\
+    event Blacklist(address indexed blackListed, bool value);\
+  \
+  \
+    mapping(\cf4 address\cf2  => uint256) balances;\
+  \
+  \
+    \cf5 function\cf2  \cf6 transfer\cf2 (\cf4 address _to, uint256 _value\cf2 ) \cf6 public\cf2  \cf6 returns\cf2  (\cf4 bool\cf2 ) \{\
+      \cf4 require\cf2 (tokenBlacklist[msg.sender] == \cf4 false\cf2 );\
+      \cf4 require\cf2 (_to != address(\cf4 0\cf2 ));\
+      \cf4 require\cf2 (_value <= balances[msg.sender]);\
+  \
+      \cf7 // SafeMath.sub will throw if there is not enough balance.\cf2 \
+      balances[msg.sender] = balances[msg.sender].sub(_value);\
+      balances[_to] = balances[_to].add(_value);\
+      emit Transfer(msg.sender, _to, _value);\
+      \cf5 return\cf2  \cf4 true\cf2 ;\
+    \}\
+  \
+  \
+    \cf5 function\cf2  \cf6 balanceOf\cf2 (\cf4 address _owner\cf2 ) \cf6 public\cf2  \cf6 view\cf2  \cf6 returns\cf2  (\cf4 uint256 balance\cf2 ) \{\
+      \cf5 return\cf2  balances[_owner];\
+    \}\
+  \
+    \cf5 function\cf2  \cf6 transferFrom\cf2 (\cf4 address _from, address _to, uint256 _value\cf2 ) \cf6 public\cf2  \cf6 returns\cf2  (\cf4 bool\cf2 ) \{\
+      \cf4 require\cf2 (tokenBlacklist[msg.sender] == \cf4 false\cf2 );\
+      \cf4 require\cf2 (_to != address(\cf4 0\cf2 ));\
+      \cf4 require\cf2 (_value <= balances[_from]);\
+      \cf4 require\cf2 (_value <= allowed[_from][msg.sender]);\
+  \
+      balances[_from] = balances[_from].sub(_value);\
+      balances[_to] = balances[_to].add(_value);\
+      allowed[_from][msg.sender] = allowed[_from][msg.sender].sub(_value);\
+      emit Transfer(_from, _to, _value);\
+      \cf5 return\cf2  \cf4 true\cf2 ;\
+    \}\
+  \
+  \
+    \cf5 function\cf2  \cf6 approve\cf2 (\cf4 address _spender, uint256 _value\cf2 ) \cf6 public\cf2  \cf6 returns\cf2  (\cf4 bool\cf2 ) \{\
+      allowed[msg.sender][_spender] = _value;\
+      emit Approval(msg.sender, _spender, _value);\
+      \cf5 return\cf2  \cf4 true\cf2 ;\
+    \}\
+  \
+  \
+    \cf5 function\cf2  \cf6 allowance\cf2 (\cf4 address _owner, address _spender\cf2 ) \cf6 public\cf2  \cf6 view\cf2  \cf6 returns\cf2  (\cf4 uint256\cf2 ) \{\
+      \cf5 return\cf2  allowed[_owner][_spender];\
+    \}\
+  \
+  \
+    \cf5 function\cf2  \cf6 increaseApproval\cf2 (\cf4 address _spender, uint _addedValue\cf2 ) \cf6 public\cf2  \cf6 returns\cf2  (\cf4 bool\cf2 ) \{\
+      allowed[msg.sender][_spender] = allowed[msg.sender][_spender].add(_addedValue);\
+      emit Approval(msg.sender, _spender, allowed[msg.sender][_spender]);\
+      \cf5 return\cf2  \cf4 true\cf2 ;\
+    \}\
+  \
+    \cf5 function\cf2  \cf6 decreaseApproval\cf2 (\cf4 address _spender, uint _subtractedValue\cf2 ) \cf6 public\cf2  \cf6 returns\cf2  (\cf4 bool\cf2 ) \{\
+      uint oldValue = allowed[msg.sender][_spender];\
+      \cf5 if\cf2  (_subtractedValue > oldValue) \{\
+        allowed[msg.sender][_spender] = \cf4 0\cf2 ;\
+      \} \cf5 else\cf2  \{\
+        allowed[msg.sender][_spender] = oldValue.sub(_subtractedValue);\
+      \}\
+      emit Approval(msg.sender, _spender, allowed[msg.sender][_spender]);\
+      \cf5 return\cf2  \cf4 true\cf2 ;\
+    \}\
+    \
+  \
+  \
+    \cf5 function\cf2  \cf6 _blackList\cf2 (\cf4 address _address, bool _isBlackListed\cf2 ) \cf6 internal\cf2  \cf6 returns\cf2  (\cf4 bool\cf2 ) \{\
+    \cf4 require\cf2 (tokenBlacklist[_address] != _isBlackListed);\
+    tokenBlacklist[_address] = _isBlackListed;\
+    emit Blacklist(_address, _isBlackListed);\
+    \cf5 return\cf2  \cf4 true\cf2 ;\
+    \}\
+  \
+  \
+  \
+  \}\
+  \
+  contract PausableToken is StandardToken, Pausable \{\
+  \
+    \cf5 function\cf2  \cf6 transfer\cf2 (\cf4 address _to, uint256 _value\cf2 ) \cf6 public\cf2  \cf6 whenNotPaused\cf2  \cf6 returns\cf2  (\cf4 bool\cf2 ) \{\
+      \cf5 return\cf2  \cf4 super\cf2 .transfer(_to, _value);\
+    \}\
+  \
+    \cf5 function\cf2  \cf6 transferFrom\cf2 (\cf4 address _from, address _to, uint256 _value\cf2 ) \cf6 public\cf2  \cf6 whenNotPaused\cf2  \cf6 returns\cf2  (\cf4 bool\cf2 ) \{\
+      \cf5 return\cf2  \cf4 super\cf2 .transferFrom(_from, _to, _value);\
+    \}\
+  \
+    \cf5 function\cf2  \cf6 approve\cf2 (\cf4 address _spender, uint256 _value\cf2 ) \cf6 public\cf2  \cf6 whenNotPaused\cf2  \cf6 returns\cf2  (\cf4 bool\cf2 ) \{\
+      \cf5 return\cf2  \cf4 super\cf2 .approve(_spender, _value);\
+    \}\
+  \
+    \cf5 function\cf2  \cf6 increaseApproval\cf2 (\cf4 address _spender, uint _addedValue\cf2 ) \cf6 public\cf2  \cf6 whenNotPaused\cf2  \cf6 returns\cf2  (\cf4 bool success\cf2 ) \{\
+      \cf5 return\cf2  \cf4 super\cf2 .increaseApproval(_spender, _addedValue);\
+    \}\
+  \
+    \cf5 function\cf2  \cf6 decreaseApproval\cf2 (\cf4 address _spender, uint _subtractedValue\cf2 ) \cf6 public\cf2  \cf6 whenNotPaused\cf2  \cf6 returns\cf2  (\cf4 bool success\cf2 ) \{\
+      \cf5 return\cf2  \cf4 super\cf2 .decreaseApproval(_spender, _subtractedValue);\
+    \}\
+    \
+    \cf5 function\cf2  \cf6 blackListAddress\cf2 (\cf4 address listAddress,  bool isBlackListed\cf2 ) \cf6 public\cf2  \cf6 whenNotPaused\cf2  \cf6 onlyOwner\cf2   \cf6 returns\cf2  (\cf4 bool success\cf2 ) \{\
+    \cf5 return\cf2  \cf4 super\cf2 ._blackList(listAddress, isBlackListed);\
+    \}\
+    \
+  \}\
+  \
+  contract CoinToken is PausableToken \{\
+      string public name;\
+      string public symbol;\
+      uint public decimals;\
+      event Mint(address indexed \cf5 from\cf2 , address indexed to, uint256 value);\
+      event Burn(address indexed burner, uint256 value);\
+  \
+    \
+      \cf6 constructor\cf2 (\cf4 string memory _name, string memory _symbol, uint256 _decimals, uint256 _supply, address tokenOwner\cf2 ) \cf6 public\cf2  \{\
+          name = _name;\
+          symbol = _symbol;\
+          decimals = _decimals;\
+          totalSupply = _supply * \cf4 10\cf2 **_decimals;\
+          balances[tokenOwner] = totalSupply;\
+          owner = tokenOwner;\
+          emit Transfer(address(\cf4 0\cf2 ), tokenOwner, totalSupply);\
+      \}\
+    \
+    \cf5 function\cf2  \cf6 burn\cf2 (\cf4 uint256 _value\cf2 ) \cf6 public\cf2  \{\
+      _burn(msg.sender, _value);\
+    \}\
+  \
+    \cf5 function\cf2  \cf6 _burn\cf2 (\cf4 address _who, uint256 _value\cf2 ) \cf6 internal\cf2  \{\
+      \cf4 require\cf2 (_value <= balances[_who]);\
+      balances[_who] = balances[_who].sub(_value);\
+      totalSupply = totalSupply.sub(_value);\
+      emit Burn(_who, _value);\
+      emit Transfer(_who, address(\cf4 0\cf2 ), _value);\
+    \}\
+  \
+      \cf5 function\cf2  \cf6 mint\cf2 (\cf4 address account, uint256 amount\cf2 ) \cf6 onlyOwner\cf2  \cf6 public\cf2  \{\
+  \
+          totalSupply = totalSupply.add(amount);\
+          balances[account] = balances[account].add(amount);\
+          emit Mint(address(\cf4 0\cf2 ), account, amount);\
+          emit Transfer(address(\cf4 0\cf2 ), account, amount);\
+      \}\
+  \
+      \
+  \}}
