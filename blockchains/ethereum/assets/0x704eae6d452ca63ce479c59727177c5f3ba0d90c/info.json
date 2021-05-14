@@ -1,24 +1,9 @@
 {
-    "name": "Ethereum",
-    "website": "https://ethereum.org/",
-    "source_code": "https://github.com/ethereum",
-    "white_paper": "https://github.com/ethereum/wiki/wiki/White-Paper",
-    "description": "Open source platform to write and distribute decentralized applications.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/ethereum",
-            "handle": "ethereum"
-        },
-        {
-            "name": "Reddit",
-            "url": "https://www.reddit.com/r/ethereum",
-            "handle": "ethereum"
-        }
-    ],
-    "explorer": "https://etherscan.io/",
-    "research": "https://research.binance.com/en/projects/ethereum",
-    "symbol": "ETH",
+    "name": "EVDC",
+    "website": "https://evdc.network/",
+    "description": "EVDC is a deflationary and decentralized token that will be used as a digital currency to pay for EV charging.",
+    "explorer": "https://etherscan.io/token/0x704eae6d452ca63ce479c59727177c5f3ba0d90c",
+    "symbol": "EVDC",
     "type": "COIN",
     "decimals": 18,
     "status": "active"
