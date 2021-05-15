@@ -1,16 +1,15 @@
-import { readJsonFile } from "../generic/json";
-
-const tags: any = readJsonFile("script/tags.json") as any;
+import { TagValues } from "../tags-config";
 
 export function isValidTagValue(value: string): boolean {
     //console.log(`isValidTagValue ${value}`);
     if (!value) {
         return false;
     }
-    if (!(value in tags)) {
+    const tag = TagValues.find(t => t.id === value);
+    if (!tag) {
         return false;
     }
-    //console.log(`TAG ${tags[value]['name']}`);
+    //console.log(`TAG ${tag.name}`);
     return true;
 }
 
