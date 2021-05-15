@@ -1,24 +1,12 @@
 {
     "name": "SafeMars",
-    "website": "https://safemars.fi",
-    "source_code": "https://github.com/safemarsfi",
-    "description": "The SafeMars Protocol is a community driven, fair launched DeFi Token. Three simple functions occur during each trade: Reflection, LP Acquisition, & Burn.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/safemarsfi",
-            "handle": "SMARS"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/safemars_fi",
-            "handle": "SMARS"
-        }
-    ],
-    "explorer": "https://bscscan.com/token/0xC0366a104b429f0806BfA98d0008DAA9555b2BEd",
     "type": "BEP20",
     "symbol": "SMARS",
     "decimals": 9,
+    "website": "https://safemars.fi",
+    "description": "The SafeMars Protocol is a community driven, fair launched DeFi Token. Three simple functions occur during each trade: Reflection, LP Acquisition & Burn.",
+    "explorer": "https://bscscan.com/token/0xC0366a104b429f0806BfA98d0008DAA9555b2BEd",
+    "research": "",
     "status": "active",
     "id": "0xC0366a104b429f0806BfA98d0008DAA9555b2BEd"
 }
