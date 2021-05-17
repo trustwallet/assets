@@ -26,7 +26,7 @@ const binanceChain = "binance";
 const binanceUrlTokenAssets = config.binanceUrlTokenAssets;
 let cachedAssets = [];
 
-class BinanceTokenInfo {
+export class BinanceTokenInfo {
     asset: string
     name: string
     assetImg: string
