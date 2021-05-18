@@ -1,7 +1,7 @@
 {
     "name": "Trust Wallet: BNB",
     "logoURI": "https://trustwallet.com/assets/images/favicon.png",
-    "timestamp": "2021-05-07T02:10:57.909Z",
+    "timestamp": "2021-05-18T01:31:37.288Z",
     "tokens": [
         {
             "asset": "c714",
@@ -39,7 +39,7 @@
                 },
                 {
                     "base": "c714_tATP-38C",
-                    "lotSize": "1000000000",
+                    "lotSize": "100000000",
                     "tickSize": "1"
                 },
                 {
@@ -79,7 +79,7 @@
                 },
                 {
                     "base": "c714_tBKBT-3A6",
-                    "lotSize": "100000000000",
+                    "lotSize": "10000000000",
                     "tickSize": "1"
                 },
                 {
@@ -109,7 +109,7 @@
                 },
                 {
                     "base": "c714_tBZNT-464",
-                    "lotSize": "10000000000",
+                    "lotSize": "100000000000",
                     "tickSize": "1"
                 },
                 {
@@ -129,7 +129,7 @@
                 },
                 {
                     "base": "c714_tCBM-4B2",
-                    "lotSize": "100000000000",
+                    "lotSize": "1000000000000",
                     "tickSize": "1"
                 },
                 {
@@ -204,8 +204,8 @@
                 },
                 {
                     "base": "c714_tEOSBULL-F0D",
-                    "lotSize": "100000000",
-                    "tickSize": "1"
+                    "lotSize": "10000000",
+                    "tickSize": "10"
                 },
                 {
                     "base": "c714_tEQL-586",
@@ -284,7 +284,7 @@
                 },
                 {
                     "base": "c714_tKAT-7BB",
-                    "lotSize": "100000000000",
+                    "lotSize": "10000000000",
                     "tickSize": "1"
                 },
                 {
@@ -409,12 +409,12 @@
                 },
                 {
                     "base": "c714_tPLG-D8D",
-                    "lotSize": "100000000000",
+                    "lotSize": "10000000000",
                     "tickSize": "1"
                 },
                 {
                     "base": "c714_tPVT-554",
-                    "lotSize": "1000000000000",
+                    "lotSize": "10000000000000",
                     "tickSize": "1"
                 },
                 {
@@ -539,7 +539,7 @@
                 },
                 {
                     "base": "c714_tWISH-2D5",
-                    "lotSize": "100000000",
+                    "lotSize": "1000000000",
                     "tickSize": "1"
                 },
                 {
@@ -559,8 +559,8 @@
                 },
                 {
                     "base": "c714_tXRPBEAR-00B",
-                    "lotSize": "10000000",
-                    "tickSize": "10"
+                    "lotSize": "1000000",
+                    "tickSize": "100"
                 },
                 {
                     "base": "c714_tXRPBULL-E7C",
@@ -605,7 +605,7 @@
                 },
                 {
                     "base": "c714_tBAKE-5E0",
-                    "lotSize": "100000000",
+                    "lotSize": "10000000",
                     "tickSize": "1000"
                 },
                 {
@@ -651,7 +651,7 @@
                 {
                     "base": "c714_tEOS-CDD",
                     "lotSize": "10000000",
-                    "tickSize": "1000"
+                    "tickSize": "10000"
                 },
                 {
                     "base": "c714_tETH-1C9",
@@ -689,11 +689,6 @@
                     "tickSize": "10"
                 },
                 {
-                    "base": "c714_tSPARTA-7F3",
-                    "lotSize": "100000000",
-                    "tickSize": "100"
-                },
-                {
                     "base": "c714_tSWINGBY-888",
                     "lotSize": "1000000000",
                     "tickSize": "100"
@@ -710,7 +705,7 @@
                 },
                 {
                     "base": "c714_tXTZ-F7A",
-                    "lotSize": "100000000",
+                    "lotSize": "10000000",
                     "tickSize": "1000"
                 },
                 {
@@ -762,7 +757,7 @@
                 {
                     "base": "c714_tUND-EBC",
                     "lotSize": "1000000000",
-                    "tickSize": "1"
+                    "tickSize": "10"
                 }
             ]
         },
@@ -1910,16 +1905,6 @@
             "pairs": []
         },
         {
-            "asset": "c714_tSPARTA-7F3",
-            "type": "BEP2",
-            "address": "SPARTA-7F3",
-            "name": "SPARTAN PROTOCOL TOKEN",
-            "symbol": "SPARTA",
-            "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/SPARTA-7F3/logo.png",
-            "pairs": []
-        },
-        {
             "asset": "c714_tSPNDB-916",
             "type": "BEP2",
             "address": "SPNDB-916",
@@ -2231,7 +2216,7 @@
         }
     ],
     "version": {
-        "major": 83,
+        "major": 93,
         "minor": 0,
         "patch": 0
     }
