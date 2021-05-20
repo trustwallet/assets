@@ -1,10 +1,23 @@
-    "name": "GAINZ",
-    "website": "https://www.gymrocketcrypto.com/",
-    "description": "GAINZ is a token focussed on the fitness industry",
-    "explorer": "https://bscscan.com/token/0x65bb3de5174ebfff241aa501b6142559bf7d85a0",
+{
+    "name": "GymRocketCrypto Token",
     "type": "BEP20",
     "symbol": "GAINZ",
     "decimals": 9,
+    "website": "https://www.gymrocketcrypto.com",
+    "description": "GymRocket is a fitness token that truly fuels your fitness $GAINZ",
+    "explorer": "https://bscscan.com/token/0x65bb3de5174ebfff241aa501b6142559bf7d85a0",
+    "socials": [
+        {
+            "name": "Twitter",
+            "url": "https://twitter.com/gymrocketcrypto",
+            "handle": "gymrocketcrypto"
+        },
+        {
+            "name": "Telegram",
+            "url": "https://t.me/gymrocketcrypto",
+            "handle": "gymrocketcrypto"
+        }
+    ],
     "status": "active",
     "id": "0x65bb3de5174ebfff241aa501b6142559bf7d85a0"
 }
