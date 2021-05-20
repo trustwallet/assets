@@ -88,8 +88,14 @@ export class FoldersFiles implements ActionInterface {
                                 const infoFullPath = getChainAssetInfoPath(chain, address);
                                 if (!isPathExistsSync(infoFullPath)) {
                                     const msg = `Missing info file for asset '${chain}/${address}' -- ${infoFullPath}`;
-                                    //console.log(msg);
-                                    warnings.push(msg);
+                                    // enforce that info must be present (with some exceptions)
+                                    if (chain === 'classic' || chain === 'eos' || chain === 'poa' || chain === 'terra' || chain === 'theta' || chain === 'thundertoken' || chain === 'tomochain' || chain === 'tron' || chain === 'waves' || chain === 'xdai') {
+                                        //console.log(msg);
+                                        warnings.push(msg);
+                                    } else {
+                                        console.log(msg);
+                                        errors.push(msg);
+                                    }
                                 }
                             });
                         }
