@@ -143,6 +143,9 @@ export function explorerUrl(chain: string, contract: string): string {
             case "smartchain":
                 return `https://bscscan.com/token/${contract}`;
 
+            case CoinType.name(CoinType.eos).toLowerCase():
+                return `https://bloks.io/account/${contract}`;
+
             case CoinType.name(CoinType.neo).toLowerCase():
                 return `https://neo.tokenview.com/en/token/0x${contract}`;
 
@@ -167,6 +170,9 @@ export function explorerUrl(chain: string, contract: string): string {
             case CoinType.name(CoinType.gochain).toLowerCase():
                 return `https://explorer.gochain.io/addr/${contract}`;
 
+            case CoinType.name(CoinType.theta).toLowerCase():
+                return 'https://explorer.thetatoken.org/';
+
             case CoinType.name(CoinType.thundertoken).toLowerCase():
             case "thundertoken":
                 return `https://viewblock.io/thundercore/address/${contract}`;
@@ -178,6 +184,9 @@ export function explorerUrl(chain: string, contract: string): string {
             case CoinType.name(CoinType.vechain).toLowerCase():
             case "vechain":
                 return `https://explore.vechain.org/accounts/${contract}`;
+
+            case "xdai":
+                return `https://blockscout.com/xdai/mainnet/tokens/${contract}`;
         }
     }
     return "";
