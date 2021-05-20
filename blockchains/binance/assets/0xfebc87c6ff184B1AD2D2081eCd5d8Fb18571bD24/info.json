@@ -1,11 +1,11 @@
-{ 
-"name": "Volta",
-    "website": "https://voltacrypto.com",
-    "description": "A token created to streamline the global energy market.",
-    "explorer": "https://explorer.bitquery.io/bsc/token/0xfebc87c6ff184b1ad2d2081ecd5d8fb18571bd24",
-    "type": "BEP20",
+{
+    "name": "Volta",
+    "type": "BEP2",
     "symbol": "VOLTA",
     "decimals": 9,
+    "website": "https://www.voltacrypto.com",
+    "description": "A token to improve the financial efficiency of the energy industry.",
+    "explorer": "https://explorer.binance.org/asset/0xfebc87c6ff184B1AD2D2081eCd5d8Fb18571bD24",
     "status": "active",
     "id": "0xfebc87c6ff184B1AD2D2081eCd5d8Fb18571bD24"
 }
