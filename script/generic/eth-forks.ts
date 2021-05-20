@@ -3,15 +3,12 @@ import {
     getChainAssetsPath,
     getChainAssetsList,
     getChainAssetPath,
-    getChainAssetInfoPath,
     getChainAssetFilesList,
-    isChainAssetInfoExistSync,
     logoName,
     logoExtension,
     logoFullName,
     getChainAssetLogoPath
 } from "../generic/repo-structure";
-import { formatJsonFile } from "../generic/json";
 import {
     getFileName,
     getFileExt,
@@ -22,22 +19,6 @@ import {
 import { toChecksum } from "../generic/eth-address";
 import { ActionInterface, CheckStepInterface } from "../generic/interface";
 import * as bluebird from "bluebird";
-
-async function formatInfos() {
-    console.log(`Formatting info files...`);
-    await bluebird.each(ethForkChains, async (chain) => {
-        let count = 0;
-        const chainAssets = getChainAssetsList(chain);
-        await bluebird.each(chainAssets, async (address) => {
-            if (isChainAssetInfoExistSync(chain, address)) {
-                const chainAssetInfoPath = getChainAssetInfoPath(chain, address);
-                formatJsonFile(chainAssetInfoPath);
-                ++count;
-            }
-        })
-        console.log(`Formatted ${count} info files for chain ${chain} (total ${chainAssets.length})`);
-    })
-}
 
 function checkAddressChecksum(assetsFolderPath: string, address: string, chain: string) {
     const checksumAddress = toChecksum(address, chain);
@@ -101,7 +82,6 @@ export class EthForks implements ActionInterface {
     }
     
     async sanityFix(): Promise<void> {
-        await formatInfos();
         await checkAddressChecksums();
     }
 }
