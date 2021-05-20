@@ -108,12 +108,16 @@ export function chainFromAssetType(type: string): string {
         case "TRC21": return "tomochain";
         case "TT20": return "thundertoken";
         case "SPL": return "solana";
+        case "EOS": return "eos";
         case "GO20": return "gochain";
         case "KAVA": return "kava";
         case "NEP5": return "neo";
         case "NRC20": return "nuls";
         case "VET": return "vechain";
         case "ONTOLOGY": return "ontology";
+        case "THETA": return "theta";
+        case "TOMO": return "tomochain";
+        case "XDAI": return "xdai";
         default: return "";
     }
 }
