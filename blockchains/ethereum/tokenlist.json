@@ -792,6 +792,9 @@
                 },
                 {
                     "base": "c60_t0xfffffffFf15AbF397dA76f1dcc1A1604F45126DB"
+                },
+                {
+                    "base": "c60_t0xa1eD0364D53394209D61aE8bfdb8Ff50484D8c91"
                 }
             ]
         },
@@ -3627,6 +3630,16 @@
             "symbol": "FROGE",
             "decimals": 9,
             "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x29502fE4d233EF0b45C3647101Fa1252cE0634BD/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c60_t0xa1eD0364D53394209D61aE8bfdb8Ff50484D8c91",
+            "type": "ERC20",
+            "address": "0xa1eD0364D53394209D61aE8bfdb8Ff50484D8c91",
+            "name": "TeraBlock Token",
+            "symbol": "TBC",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xa1eD0364D53394209D61aE8bfdb8Ff50484D8c91/logo.png",
             "pairs": []
         }
     ],
