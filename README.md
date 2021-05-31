@@ -72,7 +72,7 @@ There are similar check logic implemeted:
 
 Info on supported trading pairs are stored in `tokenlist.json` files.
 Trading pairs can be updated --
-from Uniswap/Ethereum and Panckaswap/Smartchain -- using update script (and checking in changes).
+from Uniswap/Ethereum and PancakeSwap/Smartchain -- using update script (and checking in changes).
 Minimal limit values for trading pair inclusion are set in the `config.ts` file.
 There are also options for force-include and force-exclude in the config.
 
