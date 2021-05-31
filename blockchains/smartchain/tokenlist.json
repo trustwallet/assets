@@ -1,7 +1,7 @@
 {
     "name": "Trust Wallet: Smart Chain",
     "logoURI": "https://trustwallet.com/assets/images/favicon.png",
-    "timestamp": "2021-04-02T09:34:21.856Z",
+    "timestamp": "2021-04-14T13:07:17.923Z",
     "tokens": [
         {
             "chainId": 56,
@@ -27,6 +27,9 @@
                 },
                 {
                     "base": "c20000714_t0x190b589cf9Fb8DDEabBFeae36a813FFb2A702454"
+                },
+                {
+                    "base": "c20000714_t0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3"
                 },
                 {
                     "base": "c20000714_t0x1D2F0da169ceB9fC7B3144628dB156f3F6c60dBE"
@@ -122,9 +125,6 @@
                     "base": "c20000714_t0x948d2a81086A075b3130BAc19e4c6DEe1D2E3fE8"
                 },
                 {
-                    "base": "c20000714_t0x97a30C692eCe9C317235d48287d23d358170FC40"
-                },
-                {
                     "base": "c20000714_t0xa184088a740c695E156F91f5cC086a06bb78b827"
                 },
                 {
@@ -183,6 +183,9 @@
                 },
                 {
                     "base": "c20000714_t0xF952Fc3ca7325Cc27D15885d37117676d25BfdA6"
+                },
+                {
+                    "base": "c20000714_t0xeAF7D8395CCE52DAef138d39a1CEfA51b97C15aE"
                 }
             ]
         },
@@ -802,10 +805,20 @@
             "decimals": 18,
             "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xF952Fc3ca7325Cc27D15885d37117676d25BfdA6/logo.png",
             "pairs": []
+        },
+        {
+            "asset": "c20000714_t0xeAF7D8395CCE52DAef138d39a1CEfA51b97C15aE",
+            "type": "BEP20",
+            "address": "0xeAF7D8395CCE52DAef138d39a1CEfA51b97C15aE",
+            "name": "TeraBlock Token",
+            "symbol": "TBC",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xeAF7D8395CCE52DAef138d39a1CEfA51b97C15aE/logo.png",
+            "pairs": []
         }
     ],
     "version": {
-        "major": 9,
+        "major": 10,
         "minor": 0,
         "patch": 0
     }
