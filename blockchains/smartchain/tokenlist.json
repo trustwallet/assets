@@ -1,7 +1,7 @@
 {
     "name": "Trust Wallet: Smart Chain",
     "logoURI": "https://trustwallet.com/assets/images/favicon.png",
-    "timestamp": "2021-03-03T15:27:59.597Z",
+    "timestamp": "2021-04-14T13:07:17.923Z",
     "tokens": [
         {
             "chainId": 56,
@@ -47,10 +47,22 @@
                     "base": "c20000714_t0x233d91A0713155003fc4DcE0AFa871b508B3B715"
                 },
                 {
+                    "base": "c20000714_t0x37Ac4D6140e54304D77437A5c11924f61a2D976f"
+                },
+                {
+                    "base": "c20000714_t0x3aabCf53A1930A42E18D938C019E83Ebee50a849"
+                },
+                {
                     "base": "c20000714_t0x3EE2200Efb3400fAbB9AacF31297cBdD1d435D47"
                 },
                 {
+                    "base": "c20000714_t0x4197C6EF3879a08cD51e5560da5064B773aa1d29"
+                },
+                {
                     "base": "c20000714_t0x4338665CBB7B2485A8855A139b75D5e34AB0DB94"
+                },
+                {
+                    "base": "c20000714_t0x44754455564474A89358B2C2265883DF993b12F0"
                 },
                 {
                     "base": "c20000714_t0x47BEAd2563dCBf3bF2c9407fEa4dC236fAbA485A"
@@ -71,6 +83,9 @@
                     "base": "c20000714_t0x63870A18B6e42b01Ef1Ad8A2302ef50B7132054F"
                 },
                 {
+                    "base": "c20000714_t0x6c5FE6e99D2484db7E4BF34F365ABA42d0E4dC20"
+                },
+                {
                     "base": "c20000714_t0x7083609fCE4d1d8Dc0C979AAb8c869Ea2C873402"
                 },
                 {
@@ -84,6 +99,9 @@
                 },
                 {
                     "base": "c20000714_t0x78650B139471520656b9E7aA7A5e9276814a38e9"
+                },
+                {
+                    "base": "c20000714_t0x790Be81C3cA0e53974bE2688cDb954732C9862e1"
                 },
                 {
                     "base": "c20000714_t0x7979F6C54ebA05E18Ded44C4F986F49a5De551c2"
@@ -140,7 +158,16 @@
                     "base": "c20000714_t0xCa3F508B8e4Dd382eE878A314789373D80A5190A"
                 },
                 {
+                    "base": "c20000714_t0xcc2E12a9b5b75360c6FBf23B584c275D52cDdb0E"
+                },
+                {
                     "base": "c20000714_t0xcF6BB5389c92Bdda8a3747Ddb454cB7a64626C63"
+                },
+                {
+                    "base": "c20000714_t0xD41FDb03Ba84762dD66a0af1a6C8540FF1ba5dfb"
+                },
+                {
+                    "base": "c20000714_t0xE40255C5d7fa7ceEc5120408C78C787CECB4cfdb"
                 },
                 {
                     "base": "c20000714_t0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56"
@@ -153,6 +180,12 @@
                 },
                 {
                     "base": "c20000714_t0xF8A0BF9cF54Bb92F17374d9e9A321E6a111a51bD"
+                },
+                {
+                    "base": "c20000714_t0xF952Fc3ca7325Cc27D15885d37117676d25BfdA6"
+                },
+                {
+                    "base": "c20000714_t0xeAF7D8395CCE52DAef138d39a1CEfA51b97C15aE"
                 }
             ]
         },
@@ -281,6 +314,26 @@
             "pairs": []
         },
         {
+            "asset": "c20000714_t0x37Ac4D6140e54304D77437A5c11924f61a2D976f",
+            "type": "BEP20",
+            "address": "0x37Ac4D6140e54304D77437A5c11924f61a2D976f",
+            "name": "SparkPoint Fuel",
+            "symbol": "SFUEL",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x37Ac4D6140e54304D77437A5c11924f61a2D976f/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c20000714_t0x3aabCf53A1930A42E18D938C019E83Ebee50a849",
+            "type": "BEP20",
+            "address": "0x3aabCf53A1930A42E18D938C019E83Ebee50a849",
+            "name": "SPONGE",
+            "symbol": "SPG",
+            "decimals": 9,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x3aabCf53A1930A42E18D938C019E83Ebee50a849/logo.png",
+            "pairs": []
+        },
+        {
             "asset": "c20000714_t0x3EE2200Efb3400fAbB9AacF31297cBdD1d435D47",
             "type": "BEP20",
             "address": "0x3EE2200Efb3400fAbB9AacF31297cBdD1d435D47",
@@ -291,6 +344,16 @@
             "pairs": []
         },
         {
+            "asset": "c20000714_t0x4197C6EF3879a08cD51e5560da5064B773aa1d29",
+            "type": "BEP20",
+            "address": "0x4197C6EF3879a08cD51e5560da5064B773aa1d29",
+            "name": "ACryptoS",
+            "symbol": "ACS",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x4197C6EF3879a08cD51e5560da5064B773aa1d29/logo.png",
+            "pairs": []
+        },
+        {
             "asset": "c20000714_t0x4338665CBB7B2485A8855A139b75D5e34AB0DB94",
             "type": "BEP20",
             "address": "0x4338665CBB7B2485A8855A139b75D5e34AB0DB94",
@@ -298,6 +361,16 @@
             "symbol": "LTC",
             "decimals": 18,
             "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x4338665CBB7B2485A8855A139b75D5e34AB0DB94/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c20000714_t0x44754455564474A89358B2C2265883DF993b12F0",
+            "type": "BEP20",
+            "address": "0x44754455564474A89358B2C2265883DF993b12F0",
+            "name": "ZeroSwapToken",
+            "symbol": "ZEE",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x44754455564474A89358B2C2265883DF993b12F0/logo.png",
             "pairs": []
         },
         {
@@ -375,6 +448,16 @@
             "pairs": []
         },
         {
+            "asset": "c20000714_t0x6c5FE6e99D2484db7E4BF34F365ABA42d0E4dC20",
+            "type": "BEP20",
+            "address": "0x6c5FE6e99D2484db7E4BF34F365ABA42d0E4dC20",
+            "name": "Absorber",
+            "symbol": "ABS",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x6c5FE6e99D2484db7E4BF34F365ABA42d0E4dC20/logo.png",
+            "pairs": []
+        },
+        {
             "asset": "c20000714_t0x7083609fCE4d1d8Dc0C979AAb8c869Ea2C873402",
             "type": "BEP20",
             "address": "0x7083609fCE4d1d8Dc0C979AAb8c869Ea2C873402",
@@ -423,6 +506,16 @@
             "symbol": "BTCST",
             "decimals": 18,
             "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x78650B139471520656b9E7aA7A5e9276814a38e9/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c20000714_t0x790Be81C3cA0e53974bE2688cDb954732C9862e1",
+            "type": "BEP20",
+            "address": "0x790Be81C3cA0e53974bE2688cDb954732C9862e1",
+            "name": "CafeSwap Token",
+            "symbol": "BREW",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x790Be81C3cA0e53974bE2688cDb954732C9862e1/logo.png",
             "pairs": []
         },
         {
@@ -493,6 +586,16 @@
             "symbol": "Helmet",
             "decimals": 18,
             "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x948d2a81086A075b3130BAc19e4c6DEe1D2E3fE8/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c20000714_t0x97a30C692eCe9C317235d48287d23d358170FC40",
+            "type": "BEP20",
+            "address": "0x97a30C692eCe9C317235d48287d23d358170FC40",
+            "name": "CryptEx Token",
+            "symbol": "CRX",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x97a30C692eCe9C317235d48287d23d358170FC40/logo.png",
             "pairs": []
         },
         {
@@ -611,6 +714,16 @@
             "pairs": []
         },
         {
+            "asset": "c20000714_t0xcc2E12a9b5b75360c6FBf23B584c275D52cDdb0E",
+            "type": "BEP20",
+            "address": "0xcc2E12a9b5b75360c6FBf23B584c275D52cDdb0E",
+            "name": "Crow Token",
+            "symbol": "CROW",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xcc2E12a9b5b75360c6FBf23B584c275D52cDdb0E/logo.png",
+            "pairs": []
+        },
+        {
             "chainId": 56,
             "asset": "c20000714_t0xcF6BB5389c92Bdda8a3747Ddb454cB7a64626C63",
             "type": "BEP20",
@@ -619,6 +732,26 @@
             "symbol": "XVS",
             "decimals": 18,
             "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xcF6BB5389c92Bdda8a3747Ddb454cB7a64626C63/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c20000714_t0xD41FDb03Ba84762dD66a0af1a6C8540FF1ba5dfb",
+            "type": "BEP20",
+            "address": "0xD41FDb03Ba84762dD66a0af1a6C8540FF1ba5dfb",
+            "name": "SafePal Token",
+            "symbol": "SFP",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xD41FDb03Ba84762dD66a0af1a6C8540FF1ba5dfb/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c20000714_t0xE40255C5d7fa7ceEc5120408C78C787CECB4cfdb",
+            "type": "BEP20",
+            "address": "0xE40255C5d7fa7ceEc5120408C78C787CECB4cfdb",
+            "name": "SWGb",
+            "symbol": "SWGb",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xE40255C5d7fa7ceEc5120408C78C787CECB4cfdb/logo.png",
             "pairs": []
         },
         {
@@ -662,10 +795,30 @@
             "decimals": 18,
             "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xF8A0BF9cF54Bb92F17374d9e9A321E6a111a51bD/logo.png",
             "pairs": []
+        },
+        {
+            "asset": "c20000714_t0xF952Fc3ca7325Cc27D15885d37117676d25BfdA6",
+            "type": "BEP20",
+            "address": "0xF952Fc3ca7325Cc27D15885d37117676d25BfdA6",
+            "name": "Goose Golden Egg",
+            "symbol": "EGG",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xF952Fc3ca7325Cc27D15885d37117676d25BfdA6/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c20000714_t0xeAF7D8395CCE52DAef138d39a1CEfA51b97C15aE",
+            "type": "BEP20",
+            "address": "0xeAF7D8395CCE52DAef138d39a1CEfA51b97C15aE",
+            "name": "TeraBlock Token",
+            "symbol": "TBC",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xeAF7D8395CCE52DAef138d39a1CEfA51b97C15aE/logo.png",
+            "pairs": []
         }
     ],
     "version": {
-        "major": 8,
+        "major": 10,
         "minor": 0,
         "patch": 0
     }
