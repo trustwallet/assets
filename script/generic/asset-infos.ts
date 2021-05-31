@@ -108,12 +108,16 @@ export function chainFromAssetType(type: string): string {
         case "TRC21": return "tomochain";
         case "TT20": return "thundertoken";
         case "SPL": return "solana";
+        case "EOS": return "eos";
         case "GO20": return "gochain";
         case "KAVA": return "kava";
         case "NEP5": return "neo";
         case "NRC20": return "nuls";
         case "VET": return "vechain";
         case "ONTOLOGY": return "ontology";
+        case "THETA": return "theta";
+        case "TOMO": return "tomochain";
+        case "XDAI": return "xdai";
         default: return "";
     }
 }
@@ -139,6 +143,9 @@ export function explorerUrl(chain: string, contract: string): string {
             case "smartchain":
                 return `https://bscscan.com/token/${contract}`;
 
+            case CoinType.name(CoinType.eos).toLowerCase():
+                return `https://bloks.io/account/${contract}`;
+
             case CoinType.name(CoinType.neo).toLowerCase():
                 return `https://neo.tokenview.com/en/token/0x${contract}`;
 
@@ -161,15 +168,25 @@ export function explorerUrl(chain: string, contract: string): string {
                 return "https://explorer.ont.io";
 
             case CoinType.name(CoinType.gochain).toLowerCase():
-                    return `https://explorer.gochain.io/addr/${contract}`;
+                return `https://explorer.gochain.io/addr/${contract}`;
+
+            case CoinType.name(CoinType.theta).toLowerCase():
+                return 'https://explorer.thetatoken.org/';
 
             case CoinType.name(CoinType.thundertoken).toLowerCase():
             case "thundertoken":
-                    return `https://scan.thundercore.com/`;
+                return `https://viewblock.io/thundercore/address/${contract}`;
 
             case CoinType.name(CoinType.classic).toLowerCase():
             case "classic":
-                            return `https://blockscout.com/etc/mainnet/tokens/${contract}`;
+                return `https://blockscout.com/etc/mainnet/tokens/${contract}`;
+
+            case CoinType.name(CoinType.vechain).toLowerCase():
+            case "vechain":
+                return `https://explore.vechain.org/accounts/${contract}`;
+
+            case "xdai":
+                return `https://blockscout.com/xdai/mainnet/tokens/${contract}`;
         }
     }
     return "";
@@ -223,28 +240,37 @@ function isAssetInfoOK(chain: string, address: string, errors: string[], warning
         fixedInfo = fixedInfo2;
     }
 
+    const explorerExpected = explorerUrl(chain, address);
     const hasExplorer = Object.prototype.hasOwnProperty.call(info, 'explorer');
-    if (!hasExplorer) {
-        errors.push(`Missing explorer key`);
-    } else {
-        const explorerActual = info['explorer'];
-        const explorerActualLower = explorerActual.toLowerCase();
-        const explorerExpected = explorerUrl(chain, address);
-        if (explorerActualLower != explorerExpected.toLowerCase() && explorerExpected) {
-            // doesn't match, check for alternatives
-            const explorersAlt = explorerUrlAlternatives(chain, address, info['name']);
-            if (explorersAlt && explorersAlt.length > 0) {
-                let matchCount = 0;
-                explorersAlt.forEach(exp => { if (exp.toLowerCase() == explorerActualLower) { ++matchCount; }});
-                if (matchCount == 0) {
-                    // none matches, this is warning/error
-                    if (chain.toLowerCase() == CoinType.name(CoinType.ethereum) || chain.toLowerCase() == CoinType.name(CoinType.smartchain)) {
-                        errors.push(`Incorrect explorer, ${explorerActual} instead of ${explorerExpected} (${explorersAlt.join(', ')})`);
-                    } else {
-                        warnings.push(`Unexpected explorer, ${explorerActual} instead of ${explorerExpected} (${explorersAlt.join(', ')})`);
+    const explorerActual = info['explorer'] || '';
+    const explorerActualLower = explorerActual.toLowerCase();
+    const explorerExpectedLower = explorerExpected.toLowerCase();
+    if (checkOnly) {
+        if (!hasExplorer) {
+            errors.push(`Missing explorer key`);
+        } else {
+            if (explorerActualLower !== explorerExpectedLower && explorerExpected) {
+                // doesn't match, check for alternatives
+                const explorersAlt = explorerUrlAlternatives(chain, address, info['name']);
+                if (explorersAlt && explorersAlt.length > 0) {
+                    let matchCount = 0;
+                    explorersAlt.forEach(exp => { if (exp.toLowerCase() == explorerActualLower) { ++matchCount; }});
+                    if (matchCount == 0) {
+                        // none matches, this is warning/error
+                        if (chain.toLowerCase() == CoinType.name(CoinType.ethereum) || chain.toLowerCase() == CoinType.name(CoinType.smartchain)) {
+                            errors.push(`Incorrect explorer, ${explorerActual} instead of ${explorerExpected} (${explorersAlt.join(', ')})`);
+                        } else {
+                            warnings.push(`Unexpected explorer, ${explorerActual} instead of ${explorerExpected} (${explorersAlt.join(', ')})`);
+                        }
                     }
                 }
             }
+        }
+    } else {
+        // fix: simply replace with expected (case-only deviation is accepted)
+        if (explorerActualLower !== explorerExpectedLower) {
+            if (!fixedInfo) { fixedInfo = info; }
+            fixedInfo['explorer'] = explorerExpected;
         }
     }
 
