@@ -1,0 +1,25 @@
+{
+    "name": "Chainlink",
+    "website": "https://chain.link",
+    "source_code": "https://github.com/smartcontractkit/chainlink",
+    "white_paper": "https://link.smartcontract.com/whitepaper",
+    "description": "Chainlink is a decentralized oracle service, which aims to connect smart contracts with data from the real world. Oracles are needed to function as data feeds in smart contracts. Oracles provide external data (e.g. temperature, weather) that can drive smart contract executions. Participants on the network are incentivized (through rewards) to provide smart contracts with access to external data feeds.",
+    "socials": [
+        {
+            "name": "Twitter",
+            "url": "https://twitter.com/chainlink",
+            "handle": "chainlink"
+        },
+        {
+            "name": "Reddit",
+            "url": "https://reddit.com/r/chainlink",
+            "handle": "chainlink"
+        }
+    ],
+    "explorer": "https://etherscan.io/token/0x514910771AF9Ca656af840dff83E8264EcF986CA",
+    "type": "ERC20",
+    "symbol": "LINK",
+    "decimals": 18,
+    "status": "active",
+    "id": "0x514910771AF9Ca656af840dff83E8264EcF986CA"
+}
