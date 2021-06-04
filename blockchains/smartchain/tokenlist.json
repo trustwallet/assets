@@ -183,6 +183,9 @@
                 },
                 {
                     "base": "c20000714_t0xF952Fc3ca7325Cc27D15885d37117676d25BfdA6"
+                },
+                {
+                    "base": "c20000714_t0xeAF7D8395CCE52DAef138d39a1CEfA51b97C15aE"
                 }
             ]
         },
@@ -801,6 +804,16 @@
             "symbol": "EGG",
             "decimals": 18,
             "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xF952Fc3ca7325Cc27D15885d37117676d25BfdA6/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c20000714_t0xeAF7D8395CCE52DAef138d39a1CEfA51b97C15aE",
+            "type": "BEP20",
+            "address": "0xeAF7D8395CCE52DAef138d39a1CEfA51b97C15aE",
+            "name": "TeraBlock Token",
+            "symbol": "TBC",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xeAF7D8395CCE52DAef138d39a1CEfA51b97C15aE/logo.png",
             "pairs": []
         }
     ],
