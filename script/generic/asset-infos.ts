@@ -108,17 +108,12 @@ export function chainFromAssetType(type: string): string {
         case "TRC21": return "tomochain";
         case "TT20": return "thundertoken";
         case "SPL": return "solana";
-        case "EOS": return "eos";
         case "GO20": return "gochain";
         case "KAVA": return "kava";
         case "NEP5": return "neo";
         case "NRC20": return "nuls";
         case "VET": return "vechain";
         case "ONTOLOGY": return "ontology";
-        case "THETA": return "theta";
-        case "TOMO": return "tomochain";
-        case "XDAI": return "xdai";
-        case "WAVES": return "waves";
         default: return "";
     }
 }
@@ -144,9 +139,6 @@ export function explorerUrl(chain: string, contract: string): string {
             case "smartchain":
                 return `https://bscscan.com/token/${contract}`;
 
-            case CoinType.name(CoinType.eos).toLowerCase():
-                return `https://bloks.io/account/${contract}`;
-
             case CoinType.name(CoinType.neo).toLowerCase():
                 return `https://neo.tokenview.com/en/token/0x${contract}`;
 
@@ -171,9 +163,6 @@ export function explorerUrl(chain: string, contract: string): string {
             case CoinType.name(CoinType.gochain).toLowerCase():
                 return `https://explorer.gochain.io/addr/${contract}`;
 
-            case CoinType.name(CoinType.theta).toLowerCase():
-                return 'https://explorer.thetatoken.org/';
-
             case CoinType.name(CoinType.thundertoken).toLowerCase():
             case "thundertoken":
                 return `https://viewblock.io/thundercore/address/${contract}`;
@@ -185,12 +174,6 @@ export function explorerUrl(chain: string, contract: string): string {
             case CoinType.name(CoinType.vechain).toLowerCase():
             case "vechain":
                 return `https://explore.vechain.org/accounts/${contract}`;
-
-            case CoinType.name(CoinType.waves).toLowerCase():
-                return `https://wavesexplorer.com/assets/${contract}`;
-
-            case "xdai":
-                return `https://blockscout.com/xdai/mainnet/tokens/${contract}`;
         }
     }
     return "";
