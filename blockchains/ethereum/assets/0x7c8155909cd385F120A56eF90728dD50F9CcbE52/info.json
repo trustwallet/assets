@@ -1,13 +1,18 @@
 {
     "name": "Nahmii Token",
     "website": "https://namhii.io",
-    "white_paper": "https://www.nahmii.io/nahmii%20White%20Paper%20v2.0.pdf",
+    "white_paper": "https://nahmii.github.io/assets/doc/nahmii-1-whitepaper.pdf",
     "description": "nahmii is a revolutionary Layer-2 scaling protocol for the Ethereum blockchain, which provides unrivalled throughput, low latency, instant finality and predictable fees. Using smart contracts, nahmii’s non-custodial system ensures that user’s funds are always safe.",
     "socials": [
         {
             "name": "Twitter",
             "url": "https://twitter.com/nahmii_io",
             "handle": "nahmii_io"
+        },
+        {
+            "name": "Telegram",
+            "url": "https://t.me/nahmii",
+            "handle": "nahmii Official"
         }
     ],
     "explorer": "https://etherscan.io/address/0x7c8155909cd385F120A56eF90728dD50F9CcbE52",
