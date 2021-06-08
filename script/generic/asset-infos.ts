@@ -118,6 +118,7 @@ export function chainFromAssetType(type: string): string {
         case "THETA": return "theta";
         case "TOMO": return "tomochain";
         case "XDAI": return "xdai";
+        case "WAVES": return "waves";
         default: return "";
     }
 }
@@ -184,6 +185,9 @@ export function explorerUrl(chain: string, contract: string): string {
             case CoinType.name(CoinType.vechain).toLowerCase():
             case "vechain":
                 return `https://explore.vechain.org/accounts/${contract}`;
+
+            case CoinType.name(CoinType.waves).toLowerCase():
+                return `https://wavesexplorer.com/assets/${contract}`;
 
             case "xdai":
                 return `https://blockscout.com/xdai/mainnet/tokens/${contract}`;
