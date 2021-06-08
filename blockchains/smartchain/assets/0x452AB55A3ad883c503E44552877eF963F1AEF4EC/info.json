@@ -1,22 +1,11 @@
 {
     "name": "Linux Coin",
-    "website": "https://linuxcoin.io",
-    "description": "Because open source engineering on a truly decentralized blockchain is what creates the universal currency of the people, developed by the people, to empower the people.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/LinuxCoin_io"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/LinuxCoin_io"
-        }
-    ],
-    "explorer": "https://bscscan.com/token/0x452AB55A3ad883c503E44552877eF963F1AEF4EC",
-    "research": "",
     "type": "BEP20",
     "symbol": "LINUX",
     "decimals": 18,
+    "website": "https://linuxcoin.io",
+    "description": "Because open source engineering on a truly decentralized blockchain is what creates the universal currency of the people, developed by the people, to empower the people.",
+    "explorer": "https://bscscan.com/token/0x452AB55A3ad883c503E44552877eF963F1AEF4EC",
     "status": "active",
     "id": "0x452AB55A3ad883c503E44552877eF963F1AEF4EC"
 }
