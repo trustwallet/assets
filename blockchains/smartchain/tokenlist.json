@@ -184,10 +184,7 @@
                 {
                     "base": "c20000714_t0xF952Fc3ca7325Cc27D15885d37117676d25BfdA6"
                 },
-                {
-                    "base": "c20000714_t0x994517e000aa3F117E7Ad61B0e2336C76B4Fd94a"
-                },
-                
+
             ]
         },
         {
@@ -816,18 +813,7 @@
             "decimals": 18,
             "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xeAF7D8395CCE52DAef138d39a1CEfA51b97C15aE/logo.png",
             "pairs": []
-        },
-        {
-            "chainId": 56,
-            "asset": "c20000714_t0x994517e000aa3F117E7Ad61B0e2336C76B4Fd94a",
-            "type": "BEP20",
-            "address": "0x994517e000aa3F117E7Ad61B0e2336C76B4Fd94a",
-            "name": "Matador Token",
-            "symbol": "MTDR",
-            "decimals": 18,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x994517e000aa3F117E7Ad61B0e2336C76B4Fd94a/logo.png",
-            "pairs": []
-        },
+        }
     ],
     "version": {
         "major": 10,
