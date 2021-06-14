@@ -186,6 +186,9 @@
                 },
                 {
                     "base": "c20000714_t0xeAF7D8395CCE52DAef138d39a1CEfA51b97C15aE"
+                },
+                {
+                    "base": "c20000714_t0x7C38870e93A1f959cB6c533eB10bBc3e438AaC11"
                 }
             ]
         },
@@ -814,6 +817,16 @@
             "symbol": "TBC",
             "decimals": 18,
             "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xeAF7D8395CCE52DAef138d39a1CEfA51b97C15aE/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c20000714_t0x7C38870e93A1f959cB6c533eB10bBc3e438AaC11",
+            "type": "BEP20",
+            "address": "0x7C38870e93A1f959cB6c533eB10bBc3e438AaC11",
+            "name": "AliumToken",
+            "symbol": "ALM",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x7C38870e93A1f959cB6c533eB10bBc3e438AaC11/logo.png",
             "pairs": []
         }
     ],
