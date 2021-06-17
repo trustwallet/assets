@@ -1,7 +1,7 @@
 {
     "name": "Trust Wallet: Smart Chain",
     "logoURI": "https://trustwallet.com/assets/images/favicon.png",
-    "timestamp": "2021-04-14T13:07:17.923Z",
+    "timestamp": "2021-06-17T12:17:25.447Z",
     "tokens": [
         {
             "chainId": 56,
@@ -47,9 +47,6 @@
                     "base": "c20000714_t0x233d91A0713155003fc4DcE0AFa871b508B3B715"
                 },
                 {
-                    "base": "c20000714_t0x37Ac4D6140e54304D77437A5c11924f61a2D976f"
-                },
-                {
                     "base": "c20000714_t0x3aabCf53A1930A42E18D938C019E83Ebee50a849"
                 },
                 {
@@ -81,6 +78,9 @@
                 },
                 {
                     "base": "c20000714_t0x63870A18B6e42b01Ef1Ad8A2302ef50B7132054F"
+                },
+                {
+                    "base": "c20000714_t0x67ee3Cb086F8a16f34beE3ca72FAD36F7Db929e2"
                 },
                 {
                     "base": "c20000714_t0x6c5FE6e99D2484db7E4BF34F365ABA42d0E4dC20"
@@ -183,9 +183,6 @@
                 },
                 {
                     "base": "c20000714_t0xF952Fc3ca7325Cc27D15885d37117676d25BfdA6"
-                },
-                {
-                    "base": "c20000714_t0xeAF7D8395CCE52DAef138d39a1CEfA51b97C15aE"
                 }
             ]
         },
@@ -448,6 +445,16 @@
             "pairs": []
         },
         {
+            "asset": "c20000714_t0x67ee3Cb086F8a16f34beE3ca72FAD36F7Db929e2",
+            "type": "BEP20",
+            "address": "0x67ee3Cb086F8a16f34beE3ca72FAD36F7Db929e2",
+            "name": "DODO",
+            "symbol": "DODO",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0x67ee3Cb086F8a16f34beE3ca72FAD36F7Db929e2/logo.png",
+            "pairs": []
+        },
+        {
             "asset": "c20000714_t0x6c5FE6e99D2484db7E4BF34F365ABA42d0E4dC20",
             "type": "BEP20",
             "address": "0x6c5FE6e99D2484db7E4BF34F365ABA42d0E4dC20",
@@ -693,6 +700,16 @@
             "pairs": []
         },
         {
+            "asset": "c20000714_t0xC7FB8c5eFE8564205eE5CbA4dE8eeA8a086a4bd2",
+            "type": "BEP20",
+            "address": "0xC7FB8c5eFE8564205eE5CbA4dE8eeA8a086a4bd2",
+            "name": "PocketRocket",
+            "symbol": "POCROC",
+            "decimals": 9,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0xC7FB8c5eFE8564205eE5CbA4dE8eeA8a086a4bd2/logo.png",
+            "pairs": []
+        },
+        {
             "asset": "c20000714_t0xC9849E6fdB743d08fAeE3E34dd2D1bc69EA11a51",
             "type": "BEP20",
             "address": "0xC9849E6fdB743d08fAeE3E34dd2D1bc69EA11a51",
@@ -766,6 +783,16 @@
             "pairs": []
         },
         {
+            "asset": "c20000714_t0xeAF7D8395CCE52DAef138d39a1CEfA51b97C15aE",
+            "type": "BEP20",
+            "address": "0xeAF7D8395CCE52DAef138d39a1CEfA51b97C15aE",
+            "name": "TeraBlock Token",
+            "symbol": "TBC",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0xeAF7D8395CCE52DAef138d39a1CEfA51b97C15aE/logo.png",
+            "pairs": []
+        },
+        {
             "asset": "c20000714_t0xF21768cCBC73Ea5B6fd3C687208a7c2def2d966e",
             "type": "BEP20",
             "address": "0xF21768cCBC73Ea5B6fd3C687208a7c2def2d966e",
@@ -805,30 +832,10 @@
             "decimals": 18,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0xF952Fc3ca7325Cc27D15885d37117676d25BfdA6/logo.png",
             "pairs": []
-        },
-        {
-            "asset": "c20000714_t0xC7FB8c5eFE8564205eE5CbA4dE8eeA8a086a4bd2",
-            "type": "BEP20",
-            "address": "0xC7FB8c5eFE8564205eE5CbA4dE8eeA8a086a4bd2",
-            "name": "PocketRocket",
-            "symbol": "POCROC",
-            "decimals": 9,
-            "logoURI": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0xC7FB8c5eFE8564205eE5CbA4dE8eeA8a086a4bd2/logo.png",
-            "pairs": []
-        },
-        {
-            "asset": "c20000714_t0xeAF7D8395CCE52DAef138d39a1CEfA51b97C15aE",
-            "type": "BEP20",
-            "address": "0xeAF7D8395CCE52DAef138d39a1CEfA51b97C15aE",
-            "name": "TeraBlock Token",
-            "symbol": "TBC",
-            "decimals": 18,
-            "logoURI": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0xeAF7D8395CCE52DAef138d39a1CEfA51b97C15aE/logo.png",
-            "pairs": []
         }
     ],
     "version": {
-        "major": 10,
+        "major": 11,
         "minor": 0,
         "patch": 0
     }
