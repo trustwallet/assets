@@ -304,6 +304,32 @@ function parseTelegram(url: string, handle: string): string {
     return '';
 }
 
+function parseDiscord(url: string, handle: string): string {
+    url = url.trim();
+    handle = handle.trim();
+    if (handle) {
+        return handle;
+    }
+    //if (url.startsWith('https://twitter.com/')) {
+    //    return url.substring('https://twitter.com/'.length);
+    //}
+    processError('Discord url ' + url);
+    return '';
+}
+
+function parseMedium(url: string, handle: string): string {
+    url = url.trim();
+    handle = handle.trim();
+    if (handle) {
+        return handle;
+    }
+    //if (url.startsWith('https://twitter.com/')) {
+    //    return url.substring('https://twitter.com/'.length);
+    //}
+    processError('Medium url ' + url);
+    return '';
+}
+
 // Check the an assets's info.json; for errors/warning.  Also does fixes in certain cases
 function isAssetInfoOK(chain: string, address: string, errors: string[], warnings: string[], checkOnly: boolean): void {
     const assetInfoPath = getChainAssetInfoPath(chain, address);
@@ -327,6 +353,7 @@ function isAssetInfoOK(chain: string, address: string, errors: string[], warning
     var twitter = '';
     var telegram = '';
     var discord = '';
+    var medium = '';
     var blog = '';
     if (info['explorer']) {
         links.push({
@@ -367,8 +394,14 @@ function isAssetInfoOK(chain: string, address: string, errors: string[], warning
                     const val2 = parseTelegram(s['url'], s['handle']);
                     if (val2) { telegram = val2; }
                 }
-                if (name == 'discord') { discord = val; }
-                if (name == 'medium') { blog = val; }
+                if (name == 'discord') {
+                    const val2 = parseDiscord(s['url'], s['handle']);
+                    if (val2) { discord = val2; }
+                }
+                if (name == 'medium') {
+                    const val2 = parseMedium(s['url'], s['handle']);
+                    if (val2) { medium = val2; }
+                }
                 if (name == 'blog') { blog = val; }
             }
         });
@@ -400,7 +433,13 @@ function isAssetInfoOK(chain: string, address: string, errors: string[], warning
     if (discord) {
         links.push({
             name: 'discord',
-            url: discord
+            handle: discord
+        });
+    }
+    if (medium) {
+        links.push({
+            name: 'medium',
+            handle: medium
         });
     }
     if (blog) {
