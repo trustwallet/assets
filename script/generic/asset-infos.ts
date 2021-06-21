@@ -209,6 +209,101 @@ function explorerUrlAlternatives(chain: string, contract: string, name: string):
     return altUrls;
 }
 
+let counters: any = {};
+
+function doCount(x: string) {
+    if (!Object.prototype.hasOwnProperty.call(counters, x)) {
+        counters[x] = 0;
+    }
+    counters[x] = counters[x] + 1;
+}
+
+function printCount() {
+    console.log('printCount');
+    for (const c in counters) {
+        console.log('  ', c, counters[c]);
+    }
+}
+
+function processError(x: string) {
+    console.log('PARSEERROR:', x);
+}
+
+function processWarning(x: string) {
+    console.log('ParseWarning:', x);
+}
+
+function parseGithub(url: string): string {
+    url = url.trim();
+    if (url.startsWith('https://github.com/')) {
+        return url.substring('https://github.com/'.length);
+    }
+    if (url.startsWith('http://github.com/')) {
+        return url.substring('http://github.com/'.length);
+    }
+    if (url.startsWith('https://gitlab.com')) {
+        return url; // ignore
+    }
+    if (url.startsWith('https://etherscan.io')) {
+        return ''; // ignore
+    }
+    if (url.startsWith('https://tronscan')) {
+        return ''; // ignore
+    }
+    if (url.startsWith('https://bscscan')) {
+        return ''; // ignore
+    }
+    processWarning('GitHub url ' + url);
+    return url;
+}
+
+function parseTwitter(url: string, handle: string): string {
+    url = url.trim();
+    handle = handle.trim();
+    if (handle) {
+        return handle;
+    }
+    if (url.startsWith('https://twitter.com/')) {
+        return url.substring('https://twitter.com/'.length);
+    }
+    if (url.startsWith('https://mobile.twitter.com/')) {
+        return url.substring('https://mobile.twitter.com/'.length);
+    }
+    if (url.startsWith('https://www.twitter.com/')) {
+        return url.substring('https://www.twitter.com/'.length);
+    }
+    if (url === 'https://twitter.kira.network') {
+        return 'kira_core';
+    }
+    processError('Twitter url ' + url);
+    return '';
+}
+
+function parseTelegram(url: string, handle: string): string {
+    url = url.trim();
+    handle = handle.trim();
+    if (handle) {
+        return handle;
+    }
+    if (url.startsWith('https://t.me/')) {
+        return url.substring('https://t.me/'.length);
+    }
+    if (url.startsWith('http://t.me/')) {
+        return url.substring('http://t.me/'.length);
+    }
+    if (url.startsWith('https://https://t.me/')) {
+        return url.substring('https://https://t.me/'.length);
+    }
+    if (url === 'http://galagames.tel') {
+        return 'GoGalaGames';
+    }
+    if (url === 'https://tg.kira.network') {
+        return 'kirainterex';
+    }
+    processError('Telegram url ' + url);
+    return '';
+}
+
 // Check the an assets's info.json; for errors/warning.  Also does fixes in certain cases
 function isAssetInfoOK(chain: string, address: string, errors: string[], warnings: string[], checkOnly: boolean): void {
     const assetInfoPath = getChainAssetInfoPath(chain, address);
@@ -225,6 +320,99 @@ function isAssetInfoOK(chain: string, address: string, errors: string[], warning
 
     let info: unknown = readJsonFile(assetInfoPath);
     let fixedInfo: unknown|null = null;
+
+    var links: any = [];
+    var github = '';
+    var source_code = '';
+    var twitter = '';
+    var telegram = '';
+    var discord = '';
+    var blog = '';
+    if (info['explorer']) {
+        links.push({
+            name: 'explorer',
+            url: info['explorer']
+        });
+    }
+    if (info['source_code']) {
+        const val = parseGithub(info['source_code']);
+        if (val) {
+            if (val.startsWith('http')) {
+                source_code = val;
+            } else {
+                github = val;
+            }
+        }
+    }
+    if (info['whitepaper']) {
+        links.push({
+            name: 'whitepaper',
+            url: info['whitepaper']
+        });
+    }
+    if (Object.prototype.hasOwnProperty.call(info, 'socials')) {
+        doCount('socials');
+        console.log('socials', chain, address);//, info['socials']);
+        info['socials'].forEach(s => {
+            if (Object.prototype.hasOwnProperty.call(s, 'name')) {
+                const name = s['name'].toLowerCase();
+                doCount(name);
+                //console.log('    ', name);
+                const val = s['url'] || s['handle'];
+                if (name == 'twitter') {
+                    const val2 = parseTwitter(s['url'], s['handle']);
+                    if (val2) { twitter = val2; }
+                }
+                if (name == 'telegram') {
+                    const val2 = parseTelegram(s['url'], s['handle']);
+                    if (val2) { telegram = val2; }
+                }
+                if (name == 'discord') { discord = val; }
+                if (name == 'medium') { blog = val; }
+                if (name == 'blog') { blog = val; }
+            }
+        });
+    }
+    if (github) {
+        links.push({
+            name: 'github',
+            handle: github
+        });
+    }
+    if (source_code) {
+        links.push({
+            name: 'source_code',
+            url: source_code
+        });
+    }
+    if (twitter) {
+        links.push({
+            name: 'twitter',
+            handle: twitter
+        });
+    }
+    if (telegram) {
+        links.push({
+            name: 'telegram',
+            handle: telegram
+        });
+    }
+    if (discord) {
+        links.push({
+            name: 'discord',
+            url: discord
+        });
+    }
+    if (blog) {
+        links.push({
+            name: 'blog',
+            url: blog
+        });
+    }
+    console.log('links:', links.length);
+    if (links.length >= 2) {
+        console.log('links:', JSON.stringify(links, null, '  '));
+    }
 
     const [hasAllKeys, msg1] = isAssetInfoHasAllKeys(info, assetInfoPath);
     if (!hasAllKeys) {
@@ -303,6 +491,7 @@ export class AssetInfos implements ActionInterface {
                             await bluebird.each(assetsList, async (address) => {
                                 isAssetInfoOK(chain, address, errors, warnings, true);
                             });
+                            printCount();
                             return [errors, warnings];
                         }    
                     }
