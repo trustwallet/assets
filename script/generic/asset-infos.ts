@@ -420,12 +420,14 @@ function isAssetInfoOK(chain: string, address: string, errors: string[], warning
     var source_code = '';
     var twitter = '';
     var telegram = '';
+    var telegram_news = '';
     var discord = '';
     var facebook = '';
     var youtube = '';
     var reddit = '';
     var medium = '';
     var blog = '';
+    var docs = '';
     if (info['explorer']) {
         links.push({
             name: 'explorer',
@@ -457,31 +459,28 @@ function isAssetInfoOK(chain: string, address: string, errors: string[], warning
                 doCount(name);
                 //console.log('    ', name);
                 const val = s['url'] || s['handle'];
-                if (name == 'twitter') {
+                if (name === 'twitter' || name === 'sherlocksecured' || name === 'idextools') {
                     const val2 = parseTwitter(s['url'], s['handle']);
                     if (val2) { twitter = val2; }
-                }
-                if (name == 'telegram') {
+                } else if (name === 'telegram' || name.startsWith('telegram')) {
                     const val2 = parseTelegram(s['url'], s['handle']);
                     if (val2) { telegram = val2; }
-                }
-                if (name == 'discord') {
+                } else if (name === 'announcement') {
+                    const val2 = parseTelegram(s['url'], s['handle']);
+                    if (val2) { telegram_news = val2; }
+                } else if (name === 'discord') {
                     const val2 = parseDiscord(s['url'], s['handle']);
                     if (val2) { discord = val2; }
-                }
-                if (name == 'facebook') {
+                } else if (name === 'facebook') {
                     const val2 = parseFacebook(s['url'], s['handle']);
                     if (val2) { facebook = val2; }
-                }
-                if (name == 'youtube') {
+                } else if (name === 'youtube') {
                     const val2 = parseYoutube(s['url'], s['handle']);
                     if (val2) { youtube = val2; }
-                }
-                if (name == 'reddit') {
+                } else if (name === 'reddit') {
                     const val2 = parseReddit(s['url'], s['handle']);
                     if (val2) { reddit = val2; }
-                }
-                if (name == 'medium') {
+                } else if (name === 'medium') {
                     const val2 = parseMedium(s['url'], s['handle']);
                     const url2 = s['url'];
                     if (val2) {
@@ -490,8 +489,29 @@ function isAssetInfoOK(chain: string, address: string, errors: string[], warning
                         // fallback, blog
                         blog = url2;
                     }
+                } else if (name === 'blog') {
+                    blog = val;
+                } else if (name === 'docs' || name === 'gitbook') {
+                    if (val && val.startsWith('http')) {
+                        docs = val;
+                    }
+                } else if (name === 'github') {
+                    const val2 = parseMedium(s['url'], s['handle']);
+                    if (val2) {
+                        if (val2.startsWith('http')) {
+                            source_code = val2;
+                        } else {
+                            github = val2;
+                        }
+                    }
+                } else if (name === 'linkedin' || name === 'instagram' || name === 'tiktok'  || name === 'coinmarketcap'
+                    || name === 'coingecko' || name === 'idextools' || name === '4chan' || name === 'dextools' || name === 'qq'
+                    || name === 'sina microblog' || name === 'bitcointalk' || name === 'keybase') {
+                    // ignore
+                    processWarning('Ignoring field ' + name + ' ' + s['url'] + ' ' + s['handle']);
+                } else {
+                    processError('Field ' + name + ' ' + s['url'] + ' ' + s['handle']);
                 }
-                if (name == 'blog') { blog = val; }
             }
         });
     }
@@ -517,6 +537,12 @@ function isAssetInfoOK(chain: string, address: string, errors: string[], warning
         links.push({
             name: 'telegram',
             handle: telegram
+        });
+    }
+    if (telegram_news) {
+        links.push({
+            name: 'telegram_news',
+            handle: telegram_news
         });
     }
     if (discord) {
@@ -553,6 +579,12 @@ function isAssetInfoOK(chain: string, address: string, errors: string[], warning
         links.push({
             name: 'blog',
             url: blog
+        });
+    }
+    if (docs) {
+        links.push({
+            name: 'docs',
+            url: docs
         });
     }
     console.log('links:', links.length);
