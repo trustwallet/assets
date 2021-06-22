@@ -1,0 +1,28 @@
+{
+    "name": "Tezos",
+    "website": "https://tezos.com/",
+    "source_code": "https://gitlab.com/tezos/tezos",
+    "white_paper": "https://www.tezos.com/static/papers/white_paper.pdf",
+    "description": "Tezos is a smart contract platform that uses blockchain voting to be self-governing by its token holders. Also, the platform aims to boost the security of smart contracts.",
+    "socials": [
+        {
+            "name": "Twitter",
+            "url": "https://twitter.com/tezos",
+            "handle": "tezos"
+        },
+        {
+            "name": "Reddit",
+            "url": "https://reddit.com/r/tezos",
+            "handle": "tezos"
+        }
+    ],
+    "explorer": "https://tezos.id",
+    "research": "https://research.binance.com/en/projects/tezos",
+    "symbol": "XTZ",
+    "type": "COIN",
+    "decimals": 6,
+    "status": "active",
+    "tags": [
+        "staking-native"
+    ]
+}
