@@ -337,6 +337,38 @@ function parseDiscord(url: string, handle: string): string {
     return '';
 }
 
+function parseFacebook(url: string, handle: string): string {
+    url = safeTrim(url);
+    handle = safeTrim(handle);
+    if (handle) {
+        return handle;
+    }
+    if (url.startsWith('https://facebook.com/')) {
+        return url.substring('https://facebook.com/'.length);
+    }
+    if (url.startsWith('https://www.facebook.com/')) {
+        return url.substring('https://www.facebook.com/'.length);
+    }
+    processError('Facebook url ' + url);
+    return '';
+}
+
+function parseYoutube(url: string, handle: string): string {
+    url = safeTrim(url);
+    handle = safeTrim(handle);
+    if (handle) {
+        return handle;
+    }
+    if (url.startsWith('https://youtube.com/')) {
+        return url.substring('https://youtube.com/'.length);
+    }
+    if (url.startsWith('https://www.youtube.com/')) {
+        return url.substring('https://www.youtube.com/'.length);
+    }
+    processError('Youtube url ' + url);
+    return '';
+}
+
 function parseMedium(url: string, handle: string): string {
     url = safeTrim(url);
     if (url && !url.startsWith('http')) {
@@ -389,6 +421,8 @@ function isAssetInfoOK(chain: string, address: string, errors: string[], warning
     var twitter = '';
     var telegram = '';
     var discord = '';
+    var facebook = '';
+    var youtube = '';
     var reddit = '';
     var medium = '';
     var blog = '';
@@ -434,6 +468,14 @@ function isAssetInfoOK(chain: string, address: string, errors: string[], warning
                 if (name == 'discord') {
                     const val2 = parseDiscord(s['url'], s['handle']);
                     if (val2) { discord = val2; }
+                }
+                if (name == 'facebook') {
+                    const val2 = parseFacebook(s['url'], s['handle']);
+                    if (val2) { facebook = val2; }
+                }
+                if (name == 'youtube') {
+                    const val2 = parseYoutube(s['url'], s['handle']);
+                    if (val2) { youtube = val2; }
                 }
                 if (name == 'reddit') {
                     const val2 = parseReddit(s['url'], s['handle']);
@@ -481,6 +523,18 @@ function isAssetInfoOK(chain: string, address: string, errors: string[], warning
         links.push({
             name: 'discord',
             handle: discord
+        });
+    }
+    if (facebook) {
+        links.push({
+            name: 'facebook',
+            handle: facebook
+        });
+    }
+    if (youtube) {
+        links.push({
+            name: 'youtube',
+            handle: youtube
         });
     }
     if (reddit) {
