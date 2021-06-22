@@ -233,8 +233,13 @@ function processWarning(x: string) {
     console.log('ParseWarning:', x);
 }
 
+function safeTrim(x: (string | null)): (string | null) {
+    if (!x) { return x; }
+    return x.trim();
+}
+
 function parseGithub(url: string): string {
-    url = url.trim();
+    url = safeTrim(url);
     if (url.startsWith('https://github.com/')) {
         return url.substring('https://github.com/'.length);
     }
@@ -258,8 +263,8 @@ function parseGithub(url: string): string {
 }
 
 function parseTwitter(url: string, handle: string): string {
-    url = url.trim();
-    handle = handle.trim();
+    url = safeTrim(url);
+    handle = safeTrim(handle);
     if (handle) {
         return handle;
     }
@@ -280,8 +285,8 @@ function parseTwitter(url: string, handle: string): string {
 }
 
 function parseTelegram(url: string, handle: string): string {
-    url = url.trim();
-    handle = handle.trim();
+    url = safeTrim(url);
+    handle = safeTrim(handle);
     if (handle) {
         return handle;
     }
@@ -305,28 +310,59 @@ function parseTelegram(url: string, handle: string): string {
 }
 
 function parseDiscord(url: string, handle: string): string {
-    url = url.trim();
-    handle = handle.trim();
+    url = safeTrim(url);
+    handle = safeTrim(handle);
     if (handle) {
         return handle;
     }
-    //if (url.startsWith('https://twitter.com/')) {
-    //    return url.substring('https://twitter.com/'.length);
-    //}
+    if (url.startsWith('https://discord.com/invite/')) {
+        return url.substring('https://discord.com/invite/'.length);
+    }
+    if (url.startsWith('https://discord.gg/invite/')) {
+        return url.substring('https://discord.gg/invite/'.length);
+    }
+    if (url.startsWith('https://discord.com/')) {
+        return url.substring('https://discord.com/'.length);
+    }
+    if (url.startsWith('https://discord.gg/')) {
+        return url.substring('https://discord.gg/'.length);
+    }
+    if (url === 'https://monetaryunit.org/discord') {
+        return 'dpB3XF7hSw';
+    }
+    if (url === 'https://discord.conceal.network') {
+        return 'YbpHVSd';
+    }
     processError('Discord url ' + url);
     return '';
 }
 
 function parseMedium(url: string, handle: string): string {
-    url = url.trim();
-    handle = handle.trim();
+    url = safeTrim(url);
+    if (url && !url.startsWith('http')) {
+        processError('Medium url ' + url);
+        return '';
+    }
+    if (url && url.toLowerCase().includes("medium.com")) {
+        return url;
+    }
+    processWarning('Medium url ' + url);
+    return '';
+}
+
+function parseReddit(url: string, handle: string): string {
+    url = safeTrim(url);
+    handle = safeTrim(handle);
     if (handle) {
         return handle;
     }
-    //if (url.startsWith('https://twitter.com/')) {
-    //    return url.substring('https://twitter.com/'.length);
-    //}
-    processError('Medium url ' + url);
+    if (url.startsWith('https://www.reddit.com/')) {
+        return url.substring('https://www.reddit.com/'.length);
+    }
+    if (url.startsWith('https://reddit.com/')) {
+        return url.substring('https://reddit.com/'.length);
+    }
+    processError('Reddit url ' + url);
     return '';
 }
 
@@ -353,6 +389,7 @@ function isAssetInfoOK(chain: string, address: string, errors: string[], warning
     var twitter = '';
     var telegram = '';
     var discord = '';
+    var reddit = '';
     var medium = '';
     var blog = '';
     if (info['explorer']) {
@@ -398,9 +435,19 @@ function isAssetInfoOK(chain: string, address: string, errors: string[], warning
                     const val2 = parseDiscord(s['url'], s['handle']);
                     if (val2) { discord = val2; }
                 }
+                if (name == 'reddit') {
+                    const val2 = parseReddit(s['url'], s['handle']);
+                    if (val2) { reddit = val2; }
+                }
                 if (name == 'medium') {
                     const val2 = parseMedium(s['url'], s['handle']);
-                    if (val2) { medium = val2; }
+                    const url2 = s['url'];
+                    if (val2) {
+                        medium = val2;
+                    } else if (url2) {
+                        // fallback, blog
+                        blog = url2;
+                    }
                 }
                 if (name == 'blog') { blog = val; }
             }
@@ -436,10 +483,16 @@ function isAssetInfoOK(chain: string, address: string, errors: string[], warning
             handle: discord
         });
     }
+    if (reddit) {
+        links.push({
+            name: 'reddit',
+            handle: reddit
+        });
+    }
     if (medium) {
         links.push({
             name: 'medium',
-            handle: medium
+            url: medium
         });
     }
     if (blog) {
