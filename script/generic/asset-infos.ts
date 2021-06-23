@@ -682,16 +682,18 @@ function isAssetInfoOK(chain: string, address: string, errors: string[], warning
                 url: docs
             });
         }
-        console.log('links:', links.length);
-        if (links.length >= 2) {
+        //console.log('links:', links.length);
+        if (links.length >= 3) {
             console.log('links:', JSON.stringify(links, null, '  '));
         }
-        /*{
+        /*
+        if (links.length > 0) {
             // extend info with links
             info['links'] = links;
-            console.log('new info:', JSON.stringify(info, null, '  '));
+            //console.log('new info:', JSON.stringify(info, null, '  '));
             fixedInfo = info;
-        }*/
+        }
+        */
     }
 
     const [hasAllKeys, msg1] = isAssetInfoHasAllKeys(info, assetInfoPath);
