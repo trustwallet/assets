@@ -286,10 +286,6 @@ function parseTwitter(url: string, handle: string): string {
 
 function parseTelegram(url: string, handle: string): string {
     url = safeTrim(url);
-    handle = safeTrim(handle);
-    if (handle) {
-        return handle;
-    }
     if (url.startsWith('https://t.me/')) {
         return url.substring('https://t.me/'.length);
     }
@@ -305,22 +301,16 @@ function parseTelegram(url: string, handle: string): string {
     if (url === 'https://tg.kira.network') {
         return 'kirainterex';
     }
+    handle = safeTrim(handle);
+    if (handle) {
+        return handle;
+    }
     processError('Telegram url ' + url);
     return '';
 }
 
 function parseDiscord(url: string, handle: string): string {
     url = safeTrim(url);
-    handle = safeTrim(handle);
-    if (handle) {
-        return handle;
-    }
-    if (url.startsWith('https://discord.com/invite/')) {
-        return url.substring('https://discord.com/invite/'.length);
-    }
-    if (url.startsWith('https://discord.gg/invite/')) {
-        return url.substring('https://discord.gg/invite/'.length);
-    }
     if (url.startsWith('https://discord.com/')) {
         return url.substring('https://discord.com/'.length);
     }
@@ -333,21 +323,25 @@ function parseDiscord(url: string, handle: string): string {
     if (url === 'https://discord.conceal.network') {
         return 'YbpHVSd';
     }
+    handle = safeTrim(handle);
+    if (handle) {
+        return handle;
+    }
     processError('Discord url ' + url);
     return '';
 }
 
 function parseFacebook(url: string, handle: string): string {
     url = safeTrim(url);
-    handle = safeTrim(handle);
-    if (handle) {
-        return handle;
-    }
     if (url.startsWith('https://facebook.com/')) {
         return url.substring('https://facebook.com/'.length);
     }
     if (url.startsWith('https://www.facebook.com/')) {
         return url.substring('https://www.facebook.com/'.length);
+    }
+    handle = safeTrim(handle);
+    if (handle) {
+        return handle;
     }
     processError('Facebook url ' + url);
     return '';
@@ -355,17 +349,38 @@ function parseFacebook(url: string, handle: string): string {
 
 function parseYoutube(url: string, handle: string): string {
     url = safeTrim(url);
-    handle = safeTrim(handle);
-    if (handle) {
-        return handle;
-    }
     if (url.startsWith('https://youtube.com/')) {
         return url.substring('https://youtube.com/'.length);
     }
     if (url.startsWith('https://www.youtube.com/')) {
         return url.substring('https://www.youtube.com/'.length);
     }
+    handle = safeTrim(handle);
+    if (handle) {
+        return handle;
+    }
     processError('Youtube url ' + url);
+    return '';
+}
+
+function parseCoinmarketcap(url: string): string {
+    url = safeTrim(url);
+    if (url.startsWith('https://coinmarketcap.com/')) {
+        return url.substring('https://coinmarketcap.com/'.length);
+    }
+    processError('Coinmarketcap url ' + url);
+    return '';
+}
+
+function parseCoingecko(url: string): string {
+    url = safeTrim(url);
+    if (url.startsWith('https://coingecko.com/')) {
+        return url.substring('https://coingecko.com/'.length);
+    }
+    if (url.startsWith('https://www.coingecko.com/')) {
+        return url.substring('https://www.coingecko.com/'.length);
+    }
+    processError('Coingecko url ' + url);
     return '';
 }
 
@@ -375,7 +390,7 @@ function parseMedium(url: string, handle: string): string {
         processError('Medium url ' + url);
         return '';
     }
-    if (url && url.toLowerCase().includes("medium.com")) {
+    if (url && url.toLowerCase().includes("medium")) {
         return url;
     }
     processWarning('Medium url ' + url);
@@ -384,15 +399,15 @@ function parseMedium(url: string, handle: string): string {
 
 function parseReddit(url: string, handle: string): string {
     url = safeTrim(url);
-    handle = safeTrim(handle);
-    if (handle) {
-        return handle;
-    }
     if (url.startsWith('https://www.reddit.com/')) {
         return url.substring('https://www.reddit.com/'.length);
     }
     if (url.startsWith('https://reddit.com/')) {
         return url.substring('https://reddit.com/'.length);
+    }
+    handle = safeTrim(handle);
+    if (handle) {
+        return handle;
     }
     processError('Reddit url ' + url);
     return '';
@@ -424,6 +439,8 @@ function isAssetInfoOK(chain: string, address: string, errors: string[], warning
     var discord = '';
     var facebook = '';
     var youtube = '';
+    var coinmarketcap = '';
+    var coingecko = '';
     var reddit = '';
     var medium = '';
     var blog = '';
@@ -477,6 +494,12 @@ function isAssetInfoOK(chain: string, address: string, errors: string[], warning
                 } else if (name === 'youtube') {
                     const val2 = parseYoutube(s['url'], s['handle']);
                     if (val2) { youtube = val2; }
+                } else if (name === 'coinmarketcap') {
+                    const val2 = parseCoinmarketcap(s['url']);
+                    if (val2) { coinmarketcap = val2; }
+                } else if (name === 'coingecko') {
+                    const val2 = parseCoingecko(s['url']);
+                    if (val2) { coingecko = val2; }
                 } else if (name === 'reddit') {
                     const val2 = parseReddit(s['url'], s['handle']);
                     if (val2) { reddit = val2; }
@@ -496,7 +519,7 @@ function isAssetInfoOK(chain: string, address: string, errors: string[], warning
                         docs = val;
                     }
                 } else if (name === 'github') {
-                    const val2 = parseMedium(s['url'], s['handle']);
+                    const val2 = parseGithub(s['url']);
                     if (val2) {
                         if (val2.startsWith('http')) {
                             source_code = val2;
@@ -504,8 +527,7 @@ function isAssetInfoOK(chain: string, address: string, errors: string[], warning
                             github = val2;
                         }
                     }
-                } else if (name === 'linkedin' || name === 'instagram' || name === 'tiktok'  || name === 'coinmarketcap'
-                    || name === 'coingecko' || name === 'idextools' || name === '4chan' || name === 'dextools' || name === 'qq'
+                } else if (name === 'linkedin' || name === 'instagram' || name === 'tiktok' || name === 'idextools' || name === '4chan' || name === 'dextools' || name === 'qq'
                     || name === 'sina microblog' || name === 'bitcointalk' || name === 'keybase') {
                     // ignore
                     processWarning('Ignoring field ' + name + ' ' + s['url'] + ' ' + s['handle']);
@@ -518,7 +540,7 @@ function isAssetInfoOK(chain: string, address: string, errors: string[], warning
     if (github) {
         links.push({
             name: 'github',
-            handle: github
+            url: 'https://github.com/' + github
         });
     }
     if (source_code) {
@@ -530,43 +552,55 @@ function isAssetInfoOK(chain: string, address: string, errors: string[], warning
     if (twitter) {
         links.push({
             name: 'twitter',
-            handle: twitter
+            url: 'https://twitter.com/' + twitter
         });
     }
     if (telegram) {
         links.push({
             name: 'telegram',
-            handle: telegram
+            url: 'https://t.me/' + telegram
         });
     }
     if (telegram_news) {
         links.push({
             name: 'telegram_news',
-            handle: telegram_news
+            url: 'https://t.me/' + telegram_news
         });
     }
     if (discord) {
         links.push({
             name: 'discord',
-            handle: discord
+            url: 'https://discord.com/' + discord
         });
     }
     if (facebook) {
         links.push({
             name: 'facebook',
-            handle: facebook
+            url: 'https://facebook.com/' + facebook
         });
     }
     if (youtube) {
         links.push({
             name: 'youtube',
-            handle: youtube
+            url: 'https://youtube.com/' + youtube
+        });
+    }
+    if (coinmarketcap) {
+        links.push({
+            name: 'coinmarketcap',
+            url: 'https://coinmarketcap.com/' + coinmarketcap
+        });
+    }
+    if (coingecko) {
+        links.push({
+            name: 'coingecko',
+            url: 'https://coingecko.com/' + coingecko
         });
     }
     if (reddit) {
         links.push({
             name: 'reddit',
-            handle: reddit
+            url: 'https://reddit.com/' + reddit
         });
     }
     if (medium) {
