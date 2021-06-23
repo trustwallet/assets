@@ -142,6 +142,9 @@ function isInfoLinksValid(links: any, path: string, address: string, chain: stri
                 return [`Links field '${fname}': '${furl}' must start with '${prefix}'.  Supported keys: ${linksKeysString}`, ""];
             }
         }
+        if (!furl.startsWith('https://')) {
+            return [`Links field '${fname}': '${furl}' must start with 'https://'.  Supported keys: ${linksKeysString}`, ""];
+        }
         // special handling for medium
         if (fname === 'medium') {
             if (!furl.includes(linksMediumContains)) {
