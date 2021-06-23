@@ -119,12 +119,12 @@ function isAssetInfoValid(info: unknown, path: string, address: string, chain: s
 }
 
 // return error, warning
-function isInfoLinksValid(links: any, path: string, address: string, chain: string): [string, string] {
+function isInfoLinksValid(links: unknown, path: string, address: string, chain: string): [string, string] {
     if (!Array.isArray(links)) {
-        return [`Links must be an array '${JSON.stringify(links)}'`, ""];
+        return [`Links must be an array '${JSON.stringify(links)}' '${path}' '${address}' '${chain}'`, ""];
     }
-    for (var idx = 0; idx < links.length; idx++) {
-        const f: any = links[idx];
+    for (let idx = 0; idx < links.length; idx++) {
+        const f = links[idx];
         const fname = f['name'];
         if (!fname) {
             return [`Field name missing '${JSON.stringify(f)}'`, ""];
@@ -151,7 +151,7 @@ function isInfoLinksValid(links: any, path: string, address: string, chain: stri
                 return [`Links field '${fname}': '${furl}' must include '${linksMediumContains}'.  Supported keys: ${linksKeysString}`, ""];
             }
         }
-    };
+    }
     return ["", ""];
 }
 
