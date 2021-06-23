@@ -689,14 +689,14 @@ function isAssetInfoOK(chain: string, address: string, errors: string[], warning
         if (links.length >= 3) {
             console.log('links:', JSON.stringify(links, null, '  '));
         }
-        /*
+        ///*
         if (links.length > 0) {
             // extend info with links
             info['links'] = links;
             //console.log('new info:', JSON.stringify(info, null, '  '));
             fixedInfo = info;
         }
-        */
+        //*/
     }
 
     const [hasAllKeys, msg1] = isAssetInfoHasAllKeys(info, assetInfoPath);

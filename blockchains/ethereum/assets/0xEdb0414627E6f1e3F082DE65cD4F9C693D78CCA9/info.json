@@ -29,5 +29,23 @@
     "symbol": "mTWTR",
     "decimals": 18,
     "status": "active",
-    "id": "0xEdb0414627E6f1e3F082DE65cD4F9C693D78CCA9"
+    "id": "0xEdb0414627E6f1e3F082DE65cD4F9C693D78CCA9",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/MirrorProtocol"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/mirror_protocol"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/MirrorProtocol"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/@mirror-protocol"
+        }
+    ]
 }
