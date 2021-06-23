@@ -15,6 +15,29 @@ import * as bluebird from "bluebird";
 
 const requiredKeys = ["name", "type", "symbol", "decimals", "description", "website", "explorer", "status", "id"];
 
+// Supported keys in links, and their mandatory prefix
+const linksKeys = {
+    //"explorer": "",
+    "github": "https://github.com/",
+    "whitepaper": "",
+    "twitter": "https://twitter.com/",
+    "telegram": "https://t.me/",
+    "telegram_news": "https://t.me/", // read-only announcement channel
+    "medium": "", // url contains 'medium.com'
+    "discord": "https://discord.com/",
+    "reddit": "https://redditX.com/",
+    "facebook": "https://facebook.com/",
+    "youtube": "https://youtube.com/",
+    "coinmarketcap": "https://coinmarketcap.com/",
+    "coingecko": "https://coingecko.com/",
+    "blog": "", // blog, other than medium
+    "forum": "", // community site
+    "docs": "",
+    "source_code": "" // other than github
+};
+const linksKeysString = Object.keys(linksKeys).reduce(function (agg, item) { return agg + item + ","; }, '');
+const linksMediumContains = 'medium.com';
+
 function isAssetInfoHasAllKeys(info: unknown, path: string): [boolean, string] {
     const infoKeys = Object.keys(info);
 
@@ -93,6 +116,40 @@ function isAssetInfoValid(info: unknown, path: string, address: string, chain: s
     }
 
     return ["", "", fixedInfo];
+}
+
+// return error, warning
+function isInfoLinksValid(links: any, path: string, address: string, chain: string): [string, string] {
+    if (!Array.isArray(links)) {
+        return [`Links must be an array '${JSON.stringify(links)}'`, ""];
+    }
+    for (var idx = 0; idx < links.length; idx++) {
+        const f: any = links[idx];
+        const fname = f['name'];
+        if (!fname) {
+            return [`Field name missing '${JSON.stringify(f)}'`, ""];
+        }
+        const furl = f['url'];
+        if (!fname) {
+            return [`Field url missing '${JSON.stringify(f)}'`, ""];
+        }
+        if (!Object.prototype.hasOwnProperty.call(linksKeys, fname)) {
+            return [`Not supported field in links '${fname}'.  Supported keys: ${linksKeysString}`, ""];
+        }
+        const prefix = linksKeys[f];
+        if (prefix) {
+            if (!furl.startsWith(prefix)) {
+                return [`Links field '${fname}': '${furl}' must start with '${prefix}'.  Supported keys: ${linksKeysString}`, ""];
+            }
+        }
+        // special handling for medium
+        if (fname === 'medium') {
+            if (!furl.includes(linksMediumContains)) {
+                return [`Links field '${fname}': '${furl}' must include '${linksMediumContains}'.  Supported keys: ${linksKeysString}`, ""];
+            }
+        }
+    };
+    return ["", ""];
 }
 
 export function chainFromAssetType(type: string): string {
@@ -430,207 +487,212 @@ function isAssetInfoOK(chain: string, address: string, errors: string[], warning
     let info: unknown = readJsonFile(assetInfoPath);
     let fixedInfo: unknown|null = null;
 
-    var links: any = [];
-    var github = '';
-    var source_code = '';
-    var twitter = '';
-    var telegram = '';
-    var telegram_news = '';
-    var discord = '';
-    var facebook = '';
-    var youtube = '';
-    var coinmarketcap = '';
-    var coingecko = '';
-    var reddit = '';
-    var medium = '';
-    var blog = '';
-    var docs = '';
-    if (info['explorer']) {
-        links.push({
-            name: 'explorer',
-            url: info['explorer']
-        });
-    }
-    if (info['source_code']) {
-        const val = parseGithub(info['source_code']);
-        if (val) {
-            if (val.startsWith('http')) {
-                source_code = val;
-            } else {
-                github = val;
-            }
+    if (!checkOnly) {
+        // One-time transfer of social links to links
+        var links: any = [];
+        var github = '';
+        var source_code = '';
+        var twitter = '';
+        var telegram = '';
+        var telegram_news = '';
+        var discord = '';
+        var facebook = '';
+        var youtube = '';
+        var coinmarketcap = '';
+        var coingecko = '';
+        var reddit = '';
+        var medium = '';
+        var blog = '';
+        var docs = '';
+        /*// Explorer is not moved, it's set to be removed
+        if (info['explorer']) {
+            links.push({
+                name: 'explorer',
+                url: info['explorer']
+            });
         }
-    }
-    if (info['whitepaper']) {
-        links.push({
-            name: 'whitepaper',
-            url: info['whitepaper']
-        });
-    }
-    if (Object.prototype.hasOwnProperty.call(info, 'socials')) {
-        doCount('socials');
-        console.log('socials', chain, address);//, info['socials']);
-        info['socials'].forEach(s => {
-            if (Object.prototype.hasOwnProperty.call(s, 'name')) {
-                const name = s['name'].toLowerCase();
-                doCount(name);
-                //console.log('    ', name);
-                const val = s['url'] || s['handle'];
-                if (name === 'twitter' || name === 'sherlocksecured' || name === 'idextools') {
-                    const val2 = parseTwitter(s['url'], s['handle']);
-                    if (val2) { twitter = val2; }
-                } else if (name === 'telegram' || name.startsWith('telegram')) {
-                    const val2 = parseTelegram(s['url'], s['handle']);
-                    if (val2) { telegram = val2; }
-                } else if (name === 'announcement') {
-                    const val2 = parseTelegram(s['url'], s['handle']);
-                    if (val2) { telegram_news = val2; }
-                } else if (name === 'discord') {
-                    const val2 = parseDiscord(s['url'], s['handle']);
-                    if (val2) { discord = val2; }
-                } else if (name === 'facebook') {
-                    const val2 = parseFacebook(s['url'], s['handle']);
-                    if (val2) { facebook = val2; }
-                } else if (name === 'youtube') {
-                    const val2 = parseYoutube(s['url'], s['handle']);
-                    if (val2) { youtube = val2; }
-                } else if (name === 'coinmarketcap') {
-                    const val2 = parseCoinmarketcap(s['url']);
-                    if (val2) { coinmarketcap = val2; }
-                } else if (name === 'coingecko') {
-                    const val2 = parseCoingecko(s['url']);
-                    if (val2) { coingecko = val2; }
-                } else if (name === 'reddit') {
-                    const val2 = parseReddit(s['url'], s['handle']);
-                    if (val2) { reddit = val2; }
-                } else if (name === 'medium') {
-                    const val2 = parseMedium(s['url'], s['handle']);
-                    const url2 = s['url'];
-                    if (val2) {
-                        medium = val2;
-                    } else if (url2) {
-                        // fallback, blog
-                        blog = url2;
-                    }
-                } else if (name === 'blog') {
-                    blog = val;
-                } else if (name === 'docs' || name === 'gitbook') {
-                    if (val && val.startsWith('http')) {
-                        docs = val;
-                    }
-                } else if (name === 'github') {
-                    const val2 = parseGithub(s['url']);
-                    if (val2) {
-                        if (val2.startsWith('http')) {
-                            source_code = val2;
-                        } else {
-                            github = val2;
-                        }
-                    }
-                } else if (name === 'linkedin' || name === 'instagram' || name === 'tiktok' || name === 'idextools' || name === '4chan' || name === 'dextools' || name === 'qq'
-                    || name === 'sina microblog' || name === 'bitcointalk' || name === 'keybase') {
-                    // ignore
-                    processWarning('Ignoring field ' + name + ' ' + s['url'] + ' ' + s['handle']);
+        */
+        if (info['source_code']) {
+            const val = parseGithub(info['source_code']);
+            if (val) {
+                if (val.startsWith('http')) {
+                    source_code = val;
                 } else {
-                    processError('Field ' + name + ' ' + s['url'] + ' ' + s['handle']);
+                    github = val;
                 }
             }
-        });
+        }
+        if (info['whitepaper']) {
+            links.push({
+                name: 'whitepaper',
+                url: info['whitepaper']
+            });
+        }
+        if (Object.prototype.hasOwnProperty.call(info, 'socials')) {
+            doCount('socials');
+            console.log('socials', chain, address);//, info['socials']);
+            info['socials'].forEach(s => {
+                if (Object.prototype.hasOwnProperty.call(s, 'name')) {
+                    const name = s['name'].toLowerCase();
+                    doCount(name);
+                    //console.log('    ', name);
+                    const val = s['url'] || s['handle'];
+                    if (name === 'twitter' || name === 'sherlocksecured' || name === 'idextools') {
+                        const val2 = parseTwitter(s['url'], s['handle']);
+                        if (val2) { twitter = val2; }
+                    } else if (name === 'telegram' || name.startsWith('telegram')) {
+                        const val2 = parseTelegram(s['url'], s['handle']);
+                        if (val2) { telegram = val2; }
+                    } else if (name === 'announcement') {
+                        const val2 = parseTelegram(s['url'], s['handle']);
+                        if (val2) { telegram_news = val2; }
+                    } else if (name === 'discord') {
+                        const val2 = parseDiscord(s['url'], s['handle']);
+                        if (val2) { discord = val2; }
+                    } else if (name === 'facebook') {
+                        const val2 = parseFacebook(s['url'], s['handle']);
+                        if (val2) { facebook = val2; }
+                    } else if (name === 'youtube') {
+                        const val2 = parseYoutube(s['url'], s['handle']);
+                        if (val2) { youtube = val2; }
+                    } else if (name === 'coinmarketcap') {
+                        const val2 = parseCoinmarketcap(s['url']);
+                        if (val2) { coinmarketcap = val2; }
+                    } else if (name === 'coingecko') {
+                        const val2 = parseCoingecko(s['url']);
+                        if (val2) { coingecko = val2; }
+                    } else if (name === 'reddit') {
+                        const val2 = parseReddit(s['url'], s['handle']);
+                        if (val2) { reddit = val2; }
+                    } else if (name === 'medium') {
+                        const val2 = parseMedium(s['url'], s['handle']);
+                        const url2 = s['url'];
+                        if (val2) {
+                            medium = val2;
+                        } else if (url2) {
+                            // fallback, blog
+                            blog = url2;
+                        }
+                    } else if (name === 'blog') {
+                        blog = val;
+                    } else if (name === 'docs' || name === 'gitbook') {
+                        if (val && val.startsWith('http')) {
+                            docs = val;
+                        }
+                    } else if (name === 'github') {
+                        const val2 = parseGithub(s['url']);
+                        if (val2) {
+                            if (val2.startsWith('http')) {
+                                source_code = val2;
+                            } else {
+                                github = val2;
+                            }
+                        }
+                    } else if (name === 'linkedin' || name === 'instagram' || name === 'tiktok' || name === 'idextools' || name === '4chan' || name === 'dextools' || name === 'qq'
+                        || name === 'sina microblog' || name === 'bitcointalk' || name === 'keybase') {
+                        // ignore
+                        processWarning('Ignoring field ' + name + ' ' + s['url'] + ' ' + s['handle']);
+                    } else {
+                        processError('Field ' + name + ' ' + s['url'] + ' ' + s['handle']);
+                    }
+                }
+            });
+        }
+        if (github) {
+            links.push({
+                name: 'github',
+                url: 'https://github.com/' + github
+            });
+        }
+        if (source_code) {
+            links.push({
+                name: 'source_code',
+                url: source_code
+            });
+        }
+        if (twitter) {
+            links.push({
+                name: 'twitter',
+                url: 'https://twitter.com/' + twitter
+            });
+        }
+        if (telegram) {
+            links.push({
+                name: 'telegram',
+                url: 'https://t.me/' + telegram
+            });
+        }
+        if (telegram_news) {
+            links.push({
+                name: 'telegram_news',
+                url: 'https://t.me/' + telegram_news
+            });
+        }
+        if (discord) {
+            links.push({
+                name: 'discord',
+                url: 'https://discord.com/' + discord
+            });
+        }
+        if (facebook) {
+            links.push({
+                name: 'facebook',
+                url: 'https://facebook.com/' + facebook
+            });
+        }
+        if (youtube) {
+            links.push({
+                name: 'youtube',
+                url: 'https://youtube.com/' + youtube
+            });
+        }
+        if (coinmarketcap) {
+            links.push({
+                name: 'coinmarketcap',
+                url: 'https://coinmarketcap.com/' + coinmarketcap
+            });
+        }
+        if (coingecko) {
+            links.push({
+                name: 'coingecko',
+                url: 'https://coingecko.com/' + coingecko
+            });
+        }
+        if (reddit) {
+            links.push({
+                name: 'reddit',
+                url: 'https://reddit.com/' + reddit
+            });
+        }
+        if (medium) {
+            links.push({
+                name: 'medium',
+                url: medium
+            });
+        }
+        if (blog) {
+            links.push({
+                name: 'blog',
+                url: blog
+            });
+        }
+        if (docs) {
+            links.push({
+                name: 'docs',
+                url: docs
+            });
+        }
+        console.log('links:', links.length);
+        if (links.length >= 2) {
+            console.log('links:', JSON.stringify(links, null, '  '));
+        }
+        /*{
+            // extend info with links
+            info['links'] = links;
+            console.log('new info:', JSON.stringify(info, null, '  '));
+            fixedInfo = info;
+        }*/
     }
-    if (github) {
-        links.push({
-            name: 'github',
-            url: 'https://github.com/' + github
-        });
-    }
-    if (source_code) {
-        links.push({
-            name: 'source_code',
-            url: source_code
-        });
-    }
-    if (twitter) {
-        links.push({
-            name: 'twitter',
-            url: 'https://twitter.com/' + twitter
-        });
-    }
-    if (telegram) {
-        links.push({
-            name: 'telegram',
-            url: 'https://t.me/' + telegram
-        });
-    }
-    if (telegram_news) {
-        links.push({
-            name: 'telegram_news',
-            url: 'https://t.me/' + telegram_news
-        });
-    }
-    if (discord) {
-        links.push({
-            name: 'discord',
-            url: 'https://discord.com/' + discord
-        });
-    }
-    if (facebook) {
-        links.push({
-            name: 'facebook',
-            url: 'https://facebook.com/' + facebook
-        });
-    }
-    if (youtube) {
-        links.push({
-            name: 'youtube',
-            url: 'https://youtube.com/' + youtube
-        });
-    }
-    if (coinmarketcap) {
-        links.push({
-            name: 'coinmarketcap',
-            url: 'https://coinmarketcap.com/' + coinmarketcap
-        });
-    }
-    if (coingecko) {
-        links.push({
-            name: 'coingecko',
-            url: 'https://coingecko.com/' + coingecko
-        });
-    }
-    if (reddit) {
-        links.push({
-            name: 'reddit',
-            url: 'https://reddit.com/' + reddit
-        });
-    }
-    if (medium) {
-        links.push({
-            name: 'medium',
-            url: medium
-        });
-    }
-    if (blog) {
-        links.push({
-            name: 'blog',
-            url: blog
-        });
-    }
-    if (docs) {
-        links.push({
-            name: 'docs',
-            url: docs
-        });
-    }
-    console.log('links:', links.length);
-    if (links.length >= 2) {
-        console.log('links:', JSON.stringify(links, null, '  '));
-    }
-    /*{
-        // extend info with links
-        info['links'] = links;
-        console.log('new info:', JSON.stringify(info, null, '  '));
-        fixedInfo = info;
-    }*/
 
     const [hasAllKeys, msg1] = isAssetInfoHasAllKeys(info, assetInfoPath);
     if (!hasAllKeys) {
@@ -648,6 +710,16 @@ function isAssetInfoOK(chain: string, address: string, errors: string[], warning
     if (fixedInfo2 && !checkOnly) {
         info = fixedInfo2;
         fixedInfo = fixedInfo2;
+    }
+
+    if (Object.prototype.hasOwnProperty.call(info, 'links') && info['links']) {
+        const [err3, warn3] = isInfoLinksValid(info['links'], assetInfoPath, address, chain);
+        if (err3) {
+            errors.push(err3);
+        }
+        if (warn3) {
+            warnings.push(warn3);
+        }
     }
 
     const explorerExpected = explorerUrl(chain, address);
@@ -709,7 +781,6 @@ export class AssetInfos implements ActionInterface {
                             await bluebird.each(assetsList, async (address) => {
                                 isAssetInfoOK(chain, address, errors, warnings, true);
                             });
-                            printCount();
                             return [errors, warnings];
                         }    
                     }
