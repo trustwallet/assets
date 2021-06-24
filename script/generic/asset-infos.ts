@@ -12,7 +12,6 @@ import { CoinType } from "@trustwallet/wallet-core";
 import { isValidStatusValue } from "../generic/status-values";
 import { isValidTagValues } from "../generic/tag-values";
 import * as bluebird from "bluebird";
-import { check } from "prettier";
 
 const requiredKeys = ["name", "type", "symbol", "decimals", "description", "website", "explorer", "status", "id"];
 
@@ -135,7 +134,7 @@ function isInfoLinksValid(links: unknown, path: string, address: string, chain: 
             return [`Field url missing '${JSON.stringify(f)}'`, ""];
         }
         // Check there are no other fields
-        for (let f2 in f) {
+        for (const f2 in f) {
             if (f2 !== 'name' && f2 !== 'url') {
                 return [`Invalid field '${f2}' in links '${JSON.stringify(f)}', path ${path}`, ""];
             }
