@@ -12,6 +12,7 @@ import { CoinType } from "@trustwallet/wallet-core";
 import { isValidStatusValue } from "../generic/status-values";
 import { isValidTagValues } from "../generic/tag-values";
 import * as bluebird from "bluebird";
+import { check } from "prettier";
 
 const requiredKeys = ["name", "type", "symbol", "decimals", "description", "website", "explorer", "status", "id"];
 
@@ -311,6 +312,11 @@ function isAssetInfoOK(chain: string, address: string, errors: string[], warning
         }
         if (warn3) {
             warnings.push(warn3);
+        }
+    }
+    if (Object.prototype.hasOwnProperty.call(info, 'socials')) {
+        if (!Object.prototype.hasOwnProperty.call(info, 'links') || !info['links']) {
+            errors.push(`'Socials' field is present, but there in no 'links' section.  Please migrate contents to links. (${chain} ${address})`);
         }
     }
 
