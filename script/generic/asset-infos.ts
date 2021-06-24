@@ -134,6 +134,12 @@ function isInfoLinksValid(links: unknown, path: string, address: string, chain: 
         if (!fname) {
             return [`Field url missing '${JSON.stringify(f)}'`, ""];
         }
+        // Check there are no other fields
+        for (let f2 in f) {
+            if (f2 !== 'name' && f2 !== 'url') {
+                return [`Invalid field '${f2}' in links '${JSON.stringify(f)}', path ${path}`, ""];
+            }
+        }
         if (!Object.prototype.hasOwnProperty.call(linksKeys, fname)) {
             return [`Not supported field in links '${fname}'.  Supported keys: ${linksKeysString}`, ""];
         }
