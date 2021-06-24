@@ -26,5 +26,19 @@
     "symbol": "BGTT",
     "decimals": 18,
     "status": "active",
-    "id": "0x7a545Ed3863221A974F327199Ac22F7f12535F11"
+    "id": "0x7a545Ed3863221A974F327199Ac22F7f12535F11",
+    "links": [
+        {
+            "name": "telegram",
+            "url": "https://t.me/BaguetteToken"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/baguette-token"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/baguette-token"
+        }
+    ]
 }

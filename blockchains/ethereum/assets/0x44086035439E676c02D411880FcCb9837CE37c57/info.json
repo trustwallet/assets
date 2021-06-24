@@ -9,5 +9,11 @@
     "symbol": "uSD",
     "decimals": 18,
     "status": "active",
-    "id": "0x44086035439E676c02D411880FcCb9837CE37c57"
+    "id": "0x44086035439E676c02D411880FcCb9837CE37c57",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/b-u-i-d-l/unifi/tree/master/contracts/stableCoin"
+        }
+    ]
 }

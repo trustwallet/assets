@@ -23,5 +23,23 @@
     "symbol": "Fuel",
     "decimals": 18,
     "status": "active",
-    "id": "0x2090c8295769791ab7A3CF1CC6e0AA19F35e441A"
+    "id": "0x2090c8295769791ab7A3CF1CC6e0AA19F35e441A",
+    "links": [
+        {
+            "name": "source_code",
+            "url": "https://jetfuel.finance/contracts"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/Jetfuelfinance"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/jetfuelfinance"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/@jetfuelfinance"
+        }
+    ]
 }

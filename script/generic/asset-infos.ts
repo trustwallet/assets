@@ -15,6 +15,29 @@ import * as bluebird from "bluebird";
 
 const requiredKeys = ["name", "type", "symbol", "decimals", "description", "website", "explorer", "status", "id"];
 
+// Supported keys in links, and their mandatory prefix
+const linksKeys = {
+    //"explorer": "",
+    "github": "https://github.com/",
+    "whitepaper": "",
+    "twitter": "https://twitter.com/",
+    "telegram": "https://t.me/",
+    "telegram_news": "https://t.me/", // read-only announcement channel
+    "medium": "", // url contains 'medium.com'
+    "discord": "https://discord.com/",
+    "reddit": "https://redditX.com/",
+    "facebook": "https://facebook.com/",
+    "youtube": "https://youtube.com/",
+    "coinmarketcap": "https://coinmarketcap.com/",
+    "coingecko": "https://coingecko.com/",
+    "blog": "", // blog, other than medium
+    "forum": "", // community site
+    "docs": "",
+    "source_code": "" // other than github
+};
+const linksKeysString = Object.keys(linksKeys).reduce(function (agg, item) { return agg + item + ","; }, '');
+const linksMediumContains = 'medium.com';
+
 function isAssetInfoHasAllKeys(info: unknown, path: string): [boolean, string] {
     const infoKeys = Object.keys(info);
 
@@ -93,6 +116,49 @@ function isAssetInfoValid(info: unknown, path: string, address: string, chain: s
     }
 
     return ["", "", fixedInfo];
+}
+
+// return error, warning
+function isInfoLinksValid(links: unknown, path: string, address: string, chain: string): [string, string] {
+    if (!Array.isArray(links)) {
+        return [`Links must be an array '${JSON.stringify(links)}' '${path}' '${address}' '${chain}'`, ""];
+    }
+    for (let idx = 0; idx < links.length; idx++) {
+        const f = links[idx];
+        const fname = f['name'];
+        if (!fname) {
+            return [`Field name missing '${JSON.stringify(f)}'`, ""];
+        }
+        const furl = f['url'];
+        if (!fname) {
+            return [`Field url missing '${JSON.stringify(f)}'`, ""];
+        }
+        // Check there are no other fields
+        for (const f2 in f) {
+            if (f2 !== 'name' && f2 !== 'url') {
+                return [`Invalid field '${f2}' in links '${JSON.stringify(f)}', path ${path}`, ""];
+            }
+        }
+        if (!Object.prototype.hasOwnProperty.call(linksKeys, fname)) {
+            return [`Not supported field in links '${fname}'.  Supported keys: ${linksKeysString}`, ""];
+        }
+        const prefix = linksKeys[f];
+        if (prefix) {
+            if (!furl.startsWith(prefix)) {
+                return [`Links field '${fname}': '${furl}' must start with '${prefix}'.  Supported keys: ${linksKeysString}`, ""];
+            }
+        }
+        if (!furl.startsWith('https://')) {
+            return [`Links field '${fname}': '${furl}' must start with 'https://'.  Supported keys: ${linksKeysString}`, ""];
+        }
+        // special handling for medium
+        if (fname === 'medium') {
+            if (!furl.includes(linksMediumContains)) {
+                return [`Links field '${fname}': '${furl}' must include '${linksMediumContains}'.  Supported keys: ${linksKeysString}`, ""];
+            }
+        }
+    }
+    return ["", ""];
 }
 
 export function chainFromAssetType(type: string): string {
@@ -242,6 +308,21 @@ function isAssetInfoOK(chain: string, address: string, errors: string[], warning
     if (fixedInfo2 && !checkOnly) {
         info = fixedInfo2;
         fixedInfo = fixedInfo2;
+    }
+
+    if (Object.prototype.hasOwnProperty.call(info, 'links') && info['links']) {
+        const [err3, warn3] = isInfoLinksValid(info['links'], assetInfoPath, address, chain);
+        if (err3) {
+            errors.push(err3);
+        }
+        if (warn3) {
+            warnings.push(warn3);
+        }
+    }
+    if (Object.prototype.hasOwnProperty.call(info, 'socials')) {
+        if (!Object.prototype.hasOwnProperty.call(info, 'links') || !info['links']) {
+            errors.push(`'Socials' field is present, but there in no 'links' section.  Please migrate contents to links. (${chain} ${address})`);
+        }
     }
 
     const explorerExpected = explorerUrl(chain, address);
