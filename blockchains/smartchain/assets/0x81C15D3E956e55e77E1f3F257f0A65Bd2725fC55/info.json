@@ -22,10 +22,32 @@
             "url": "https://t.me/creamfinance"
         }
     ],
-    "explorer": "https://bscscan.com/address/0x81c15d3e956e55e77e1f3f257f0a65bd2725fc55",
+    "explorer": "https://bscscan.com/token/0x81C15D3E956e55e77E1f3F257f0A65Bd2725fC55",
     "type": "BEP20",
     "symbol": "crADA",
     "decimals": 8,
     "status": "active",
-    "id": "0x81C15D3E956e55e77E1f3F257f0A65Bd2725fC55"
+    "id": "0x81C15D3E956e55e77E1f3F257f0A65Bd2725fC55",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/CreamFi"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/CreamdotFinance"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/creamfinance"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/8Ms25mV"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/@CreamdotFinance"
+        }
+    ]
 }
