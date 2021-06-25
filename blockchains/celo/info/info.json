@@ -21,5 +21,15 @@
     "symbol": "CELO",
     "type": "COIN",
     "decimals": 8,
-    "status": "abandoned"
+    "status": "abandoned",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/celo-org/celo-blockchain"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/CeloOrg"
+        }
+    ]
 }

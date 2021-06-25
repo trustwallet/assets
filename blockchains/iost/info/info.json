@@ -21,5 +21,19 @@
     "symbol": "IOST",
     "type": "COIN",
     "decimals": 8,
-    "status": "abandoned"
+    "status": "abandoned",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/iost-official/go-iost"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/iostoken"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/IOStoken"
+        }
+    ]
 }

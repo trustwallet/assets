@@ -21,5 +21,19 @@
     "symbol": "ETC",
     "type": "COIN",
     "decimals": 18,
-    "status": "active"
+    "status": "active",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/ethereumclassic/"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/eth_classic"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/EthereumClassic"
+        }
+    ]
 }

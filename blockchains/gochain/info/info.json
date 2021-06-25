@@ -21,5 +21,19 @@
     "symbol": "GO",
     "type": "COIN",
     "decimals": 18,
-    "status": "active"
+    "status": "active",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/gochain"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/go_chain"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/OfficialGoChain"
+        }
+    ]
 }

@@ -21,5 +21,19 @@
     "symbol": "NANO",
     "type": "COIN",
     "decimals": 30,
-    "status": "active"
+    "status": "active",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/nanocurrency"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/nano"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/nanocurrency"
+        }
+    ]
 }

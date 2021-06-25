@@ -20,5 +20,19 @@
     "symbol": "KSM",
     "type": "COIN",
     "decimals": 12,
-    "status": "active"
+    "status": "active",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/kusamanetwork"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/kusamanetwork"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/Kusama"
+        }
+    ]
 }

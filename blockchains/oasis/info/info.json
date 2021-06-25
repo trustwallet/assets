@@ -26,5 +26,23 @@
     "symbol": "ROSE",
     "type": "COIN",
     "decimals": 8,
-    "status": "abandoned"
+    "status": "abandoned",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/oasisprotocol/"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/oasisprotocol"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/oasisprotocolcommunity"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/oasis-protocol-project"
+        }
+    ]
 }

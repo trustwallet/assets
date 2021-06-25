@@ -20,5 +20,19 @@
     "symbol": "KIN",
     "type": "COIN",
     "decimals": 5,
-    "status": "active"
+    "status": "active",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/kinecosystem"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/kin_foundation"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/KinFoundation"
+        }
+    ]
 }
