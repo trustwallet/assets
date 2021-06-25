@@ -10,5 +10,15 @@
     "symbol": "QUSD",
     "decimals": 18,
     "status": "active",
-    "id": "0x59d4CCC94A9C4C3d3b4bA2Aa343a9bDF95145DD1"
+    "id": "0x59d4CCC94A9C4C3d3b4bA2Aa343a9bDF95145DD1",
+    "links": [
+        {
+            "name": "whitepaper",
+            "url": "https://qian.finance/qian_whitepaper_zh.pdf"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/QIAN-Protocol/QIAN"
+        }
+    ]
 }
