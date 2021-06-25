@@ -390,8 +390,8 @@ export class AssetInfos implements ActionInterface {
     
     getSanityChecks(): CheckStepInterface[] {
         const steps: CheckStepInterface[] = [];
+        // tokens info.json's
         allChains.forEach(chain => {
-            // tokens info.json's
             if (isPathExistsSync(getChainAssetsPath(chain))) {
                 steps.push(
                     {
@@ -409,21 +409,23 @@ export class AssetInfos implements ActionInterface {
                     }
                 );
             }
-            // coin info.json
-            if (isPathExistsSync(getChainInfoPath(chain))) {
-                steps.push(
-                    {
-                        getName: () => { return `Coin info.json for chain ${chain}`;},
-                        check: async () => {
-                            const errors: string[] = [];
-                            const warnings: string[] = [];
-                            isAssetInfoOK(chain, true, '../info', errors, warnings, true);
-                            return [errors, warnings];
-                        }    
-                    }
-                );
-            }
         });
+        // coin info.json
+        steps.push(
+            {
+                getName: () => { return `Coin info.json's`;},
+                check: async () => {
+                    const errors: string[] = [];
+                    const warnings: string[] = [];
+                    allChains.forEach(chain => {
+                        if (isPathExistsSync(getChainInfoPath(chain))) {
+                            isAssetInfoOK(chain, true, '../info', errors, warnings, true);
+                        }
+                    });
+                    return [errors, warnings];
+                }
+            }
+        );
         return steps;
     }
 
