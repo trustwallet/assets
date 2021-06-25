@@ -21,5 +21,19 @@
     "symbol": "STEEM",
     "type": "COIN",
     "decimals": 8,
-    "status": "abandoned"
+    "status": "abandoned",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/steemit/steem"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/Steemit"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/steemit"
+        }
+    ]
 }

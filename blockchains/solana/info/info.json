@@ -21,5 +21,19 @@
     "symbol": "SOL",
     "type": "COIN",
     "decimals": 9,
-    "status": "active"
+    "status": "active",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/solana-labs"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/solana"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/solana"
+        }
+    ]
 }

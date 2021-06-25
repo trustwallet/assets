@@ -21,5 +21,19 @@
     "symbol": "AE",
     "type": "COIN",
     "decimals": 18,
-    "status": "active"
+    "status": "active",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/aeternity"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/aeternity"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/Aeternity"
+        }
+    ]
 }

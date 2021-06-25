@@ -21,5 +21,19 @@
     "symbol": "ZIL",
     "type": "COIN",
     "decimals": 12,
-    "status": "active"
+    "status": "active",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/Zilliqa/Zilliqa"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/zilliqa"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/zilliqa"
+        }
+    ]
 }

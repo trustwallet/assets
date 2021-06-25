@@ -2,7 +2,9 @@ import {
     allChains,
     getChainAssetsList,
     getChainAssetsPath,
-    getChainAssetInfoPath
+    getChainAssetInfoPath,
+    getChainInfoPath,
+    getChainCoinInfoPath
 } from "./repo-structure";
 import { isPathExistsSync } from "./filesystem";
 import { arrayDiff } from "./types";
@@ -13,7 +15,8 @@ import { isValidStatusValue } from "../generic/status-values";
 import { isValidTagValues } from "../generic/tag-values";
 import * as bluebird from "bluebird";
 
-const requiredKeys = ["name", "type", "symbol", "decimals", "description", "website", "explorer", "status", "id"];
+const requiredKeysCoin = ["name", "type", "symbol", "decimals", "description", "website", "explorer", "status"];
+const requiredKeysToken = [...requiredKeysCoin, "id"];
 
 // Supported keys in links, and their mandatory prefix
 const linksKeys = {
@@ -38,8 +41,9 @@ const linksKeys = {
 const linksKeysString = Object.keys(linksKeys).reduce(function (agg, item) { return agg + item + ","; }, '');
 const linksMediumContains = 'medium.com';
 
-function isAssetInfoHasAllKeys(info: unknown, path: string): [boolean, string] {
+function isAssetInfoHasAllKeys(info: unknown, path: string, isCoin: boolean): [boolean, string] {
     const infoKeys = Object.keys(info);
+    const requiredKeys = isCoin ? requiredKeysCoin : requiredKeysToken;
 
     const hasAllKeys = requiredKeys.every(k => Object.prototype.hasOwnProperty.call(info, k));
 
@@ -47,23 +51,34 @@ function isAssetInfoHasAllKeys(info: unknown, path: string): [boolean, string] {
 }
 
 // return error, warning, and fixed into if applicable
-function isAssetInfoValid(info: unknown, path: string, address: string, chain: string, checkOnly: boolean): [string, string, unknown?] {
+function isAssetInfoValid(info: unknown, path: string, address: string, chain: string, isCoin: boolean, checkOnly: boolean): [string, string, unknown?] {
     let fixedInfo: unknown|null = null;
     const isKeys1CorrectType = 
         typeof info['name'] === "string" && info['name'] !== "" &&
         typeof info['type'] === "string" && info['type'] !== "" &&
         typeof info['symbol'] === "string" && info['symbol'] !== "" &&
         typeof info['decimals'] === "number" && //(info['description'] === "-" || info['decimals'] !== 0) &&
-        typeof info['status'] === "string" && info['status'] !== "" &&
-        typeof info['id'] === "string" && info['id'] !== ""
+        typeof info['status'] === "string" && info['status'] !== ""
         ;
     if (!isKeys1CorrectType) {
-        return [`Field missing or invalid; name '${info['name']}' type '${info['type']}' symbol '${info['symbol']}' decimals '${info['decimals']}' id '${info['id']}' ${path}`, "", fixedInfo];
+        return [`Field missing or invalid; name '${info['name']}' type '${info['type']}' symbol '${info['symbol']}' decimals '${info['decimals']}' ${path}`, "", fixedInfo];
+    }
+    if (!isCoin) {
+        const isIdKeyCorrectType = typeof info['id'] === "string" && info['id'] !== "";
+        if (!isIdKeyCorrectType) {
+            return [`Field 'id' missing or invalid, '${info['id']}' ${path}`, "", fixedInfo];
+        }
     }
 
     // type
-    if (chainFromAssetType(info['type'].toUpperCase()) !== chain ) {
-        return [`Incorrect value for type '${info['type']}' '${chain}' ${path}`, "", fixedInfo];
+    if (isCoin) {
+        if (info['type'] !== 'COIN' ) {
+            return [`Incorrect value for type '${info['type']}', should be 'COIN' ${path}`, "", fixedInfo];
+        } 
+    } else {
+        if (chainFromAssetType(info['type'].toUpperCase()) !== chain ) {
+           return [`Incorrect value for type '${info['type']}' '${chain}' ${path}`, "", fixedInfo];
+        }
     }
     if (info['type'] !== info['type'].toUpperCase()) {
         // type is correct value, but casing is wrong, fix
@@ -75,18 +90,20 @@ function isAssetInfoValid(info: unknown, path: string, address: string, chain: s
         fixedInfo['type'] = info['type'].toUpperCase();
     }
 
-    // id, should match address
-    if (info['id'] != address) {
-        if (checkOnly) {
-            if (info['id'].toUpperCase() != address.toUpperCase()) {
-                return [`Incorrect value for id '${info['id']}' '${chain}' ${path}`, "", fixedInfo];
+    if (!isCoin) {
+        // id, should match address
+        if (info['id'] != address) {
+            if (checkOnly) {
+                if (info['id'].toUpperCase() != address.toUpperCase()) {
+                    return [`Incorrect value for id '${info['id']}' '${chain}' ${path}`, "", fixedInfo];
+                }
+                // is is correct value, but casing is wrong
+                return [`Wrong casing for id '${info['id']}' '${chain}' ${path}`, "", fixedInfo];
             }
-            // is is correct value, but casing is wrong
-            return [`Wrong casing for id '${info['id']}' '${chain}' ${path}`, "", fixedInfo];
+            // fix
+            if (!fixedInfo) { fixedInfo = info; }
+            fixedInfo['id'] = address;
         }
-        // fix
-        if (!fixedInfo) { fixedInfo = info; }
-        fixedInfo['id'] = address;
     }
 
     // status
@@ -276,8 +293,9 @@ function explorerUrlAlternatives(chain: string, contract: string, name: string):
 }
 
 // Check the an assets's info.json; for errors/warning.  Also does fixes in certain cases
-function isAssetInfoOK(chain: string, address: string, errors: string[], warnings: string[], checkOnly: boolean): void {
-    const assetInfoPath = getChainAssetInfoPath(chain, address);
+function isAssetInfoOK(chain: string, isCoin: boolean, address: string, errors: string[], warnings: string[], checkOnly: boolean): void {
+    const assetInfoPath = isCoin ? getChainCoinInfoPath(chain) : getChainAssetInfoPath(chain, address);
+
     if (!isPathExistsSync(assetInfoPath)) {
         // Info file doesn't exist, no need to check
         return;
@@ -292,13 +310,13 @@ function isAssetInfoOK(chain: string, address: string, errors: string[], warning
     let info: unknown = readJsonFile(assetInfoPath);
     let fixedInfo: unknown|null = null;
 
-    const [hasAllKeys, msg1] = isAssetInfoHasAllKeys(info, assetInfoPath);
+    const [hasAllKeys, msg1] = isAssetInfoHasAllKeys(info, assetInfoPath, isCoin);
     if (!hasAllKeys) {
         console.log(msg1);
         errors.push(msg1);
     }
 
-    const [err2, warn2, fixedInfo2] = isAssetInfoValid(info, assetInfoPath, address, chain, checkOnly);
+    const [err2, warn2, fixedInfo2] = isAssetInfoValid(info, assetInfoPath, address, chain, isCoin, checkOnly);
     if (err2) {
         errors.push(err2);
     }
@@ -325,37 +343,39 @@ function isAssetInfoOK(chain: string, address: string, errors: string[], warning
         }
     }
 
-    const explorerExpected = explorerUrl(chain, address);
-    const hasExplorer = Object.prototype.hasOwnProperty.call(info, 'explorer');
-    const explorerActual = info['explorer'] || '';
-    const explorerActualLower = explorerActual.toLowerCase();
-    const explorerExpectedLower = explorerExpected.toLowerCase();
-    if (checkOnly) {
-        if (!hasExplorer) {
-            errors.push(`Missing explorer key`);
-        } else {
-            if (explorerActualLower !== explorerExpectedLower && explorerExpected) {
-                // doesn't match, check for alternatives
-                const explorersAlt = explorerUrlAlternatives(chain, address, info['name']);
-                if (explorersAlt && explorersAlt.length > 0) {
-                    let matchCount = 0;
-                    explorersAlt.forEach(exp => { if (exp.toLowerCase() == explorerActualLower) { ++matchCount; }});
-                    if (matchCount == 0) {
-                        // none matches, this is warning/error
-                        if (chain.toLowerCase() == CoinType.name(CoinType.ethereum) || chain.toLowerCase() == CoinType.name(CoinType.smartchain)) {
-                            errors.push(`Incorrect explorer, ${explorerActual} instead of ${explorerExpected} (${explorersAlt.join(', ')})`);
-                        } else {
-                            warnings.push(`Unexpected explorer, ${explorerActual} instead of ${explorerExpected} (${explorersAlt.join(', ')})`);
+    if (!isCoin) {
+        const explorerExpected = explorerUrl(chain, address);
+        const hasExplorer = Object.prototype.hasOwnProperty.call(info, 'explorer');
+        const explorerActual = info['explorer'] || '';
+        const explorerActualLower = explorerActual.toLowerCase();
+        const explorerExpectedLower = explorerExpected.toLowerCase();
+        if (checkOnly) {
+            if (!hasExplorer) {
+                errors.push(`Missing explorer key`);
+            } else {
+                if (explorerActualLower !== explorerExpectedLower && explorerExpected) {
+                    // doesn't match, check for alternatives
+                    const explorersAlt = explorerUrlAlternatives(chain, address, info['name']);
+                    if (explorersAlt && explorersAlt.length > 0) {
+                        let matchCount = 0;
+                        explorersAlt.forEach(exp => { if (exp.toLowerCase() == explorerActualLower) { ++matchCount; }});
+                        if (matchCount == 0) {
+                            // none matches, this is warning/error
+                            if (chain.toLowerCase() == CoinType.name(CoinType.ethereum) || chain.toLowerCase() == CoinType.name(CoinType.smartchain)) {
+                                errors.push(`Incorrect explorer, ${explorerActual} instead of ${explorerExpected} (${explorersAlt.join(', ')})`);
+                            } else {
+                                warnings.push(`Unexpected explorer, ${explorerActual} instead of ${explorerExpected} (${explorersAlt.join(', ')})`);
+                            }
                         }
                     }
                 }
             }
-        }
-    } else {
-        // fix: simply replace with expected (case-only deviation is accepted)
-        if (explorerActualLower !== explorerExpectedLower) {
-            if (!fixedInfo) { fixedInfo = info; }
-            fixedInfo['explorer'] = explorerExpected;
+        } else {
+            // fix: simply replace with expected (case-only deviation is accepted)
+            if (explorerActualLower !== explorerExpectedLower) {
+                if (!fixedInfo) { fixedInfo = info; }
+                fixedInfo['explorer'] = explorerExpected;
+            }
         }
     }
 
@@ -370,19 +390,19 @@ export class AssetInfos implements ActionInterface {
     
     getSanityChecks(): CheckStepInterface[] {
         const steps: CheckStepInterface[] = [];
+        // tokens info.json's
         allChains.forEach(chain => {
-            // only if there is no assets subfolder
             if (isPathExistsSync(getChainAssetsPath(chain))) {
                 steps.push(
                     {
-                        getName: () => { return `Info.json's for chain ${chain}`;},
+                        getName: () => { return `Token info.json's for chain ${chain}`;},
                         check: async () => {
                             const errors: string[] = [];
                             const warnings: string[] = [];
                             const assetsList = getChainAssetsList(chain);
                             //console.log(`     Found ${assetsList.length} assets for chain ${chain}`);
                             await bluebird.each(assetsList, async (address) => {
-                                isAssetInfoOK(chain, address, errors, warnings, true);
+                                isAssetInfoOK(chain, false, address, errors, warnings, true);
                             });
                             return [errors, warnings];
                         }    
@@ -390,6 +410,22 @@ export class AssetInfos implements ActionInterface {
                 );
             }
         });
+        // coin info.json
+        steps.push(
+            {
+                getName: () => { return `Coin info.json's`;},
+                check: async () => {
+                    const errors: string[] = [];
+                    const warnings: string[] = [];
+                    allChains.forEach(chain => {
+                        if (isPathExistsSync(getChainInfoPath(chain))) {
+                            isAssetInfoOK(chain, true, '../info', errors, warnings, true);
+                        }
+                    });
+                    return [errors, warnings];
+                }
+            }
+        );
         return steps;
     }
 
@@ -401,8 +437,13 @@ export class AssetInfos implements ActionInterface {
                 const warnings: string[] = [];
                 const assetsList = getChainAssetsList(chain);
                 await bluebird.each(assetsList, async (address) => {
-                    isAssetInfoOK(chain, address, errors, warnings, false);
+                    isAssetInfoOK(chain, false, address, errors, warnings, false);
                 });
+            }
+            if (isPathExistsSync(getChainInfoPath(chain))) {
+                const errors: string[] = [];
+                const warnings: string[] = [];
+                isAssetInfoOK(chain, true, '[COIN]', errors, warnings, false);
             }
         });
     }

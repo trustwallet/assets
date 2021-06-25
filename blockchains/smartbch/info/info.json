@@ -21,5 +21,20 @@
     "research": "https://docs.smartbch.org/smartbch/",
     "symbol": "BCH",
     "type": "COIN",
-    "decimals": 18
+    "decimals": 18,
+    "status": "active",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/smartbch/smartbch"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/SmartBCH"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/user/SmartBCH"
+        }
+    ]
 }

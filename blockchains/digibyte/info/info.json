@@ -21,5 +21,19 @@
     "symbol": "DGB",
     "type": "COIN",
     "decimals": 8,
-    "status": "active"
+    "status": "active",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/DigiByte-Core"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/DigiByteCoin"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/Digibyte"
+        }
+    ]
 }

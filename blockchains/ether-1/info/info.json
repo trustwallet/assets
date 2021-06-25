@@ -20,5 +20,19 @@
     "symbol": "ETHO",
     "type": "COIN",
     "decimals": 18,
-    "status": "abandoned"
+    "status": "abandoned",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/Ether1Project"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/Ether1Official"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/etho1/"
+        }
+    ]
 }

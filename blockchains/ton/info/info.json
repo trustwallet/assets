@@ -20,5 +20,11 @@
     "symbol": "GRAM",
     "type": "COIN",
     "decimals": 9,
-    "status": "abandoned"
+    "status": "abandoned",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/ton-blockchain/ton"
+        }
+    ]
 }

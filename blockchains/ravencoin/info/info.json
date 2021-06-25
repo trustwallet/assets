@@ -21,5 +21,19 @@
     "symbol": "RVN",
     "type": "COIN",
     "decimals": 8,
-    "status": "active"
+    "status": "active",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/RavenProject/Ravencoin"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/ravencoin"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/Ravencoin"
+        }
+    ]
 }
