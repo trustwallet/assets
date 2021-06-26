@@ -28,7 +28,7 @@ const linksKeys = {
     "telegram_news": "https://t.me/", // read-only announcement channel
     "medium": "", // url contains 'medium.com'
     "discord": "https://discord.com/",
-    "reddit": "https://redditX.com/",
+    "reddit": "https://reddit.com/",
     "facebook": "https://facebook.com/",
     "youtube": "https://youtube.com/",
     "coinmarketcap": "https://coinmarketcap.com/",
@@ -159,7 +159,7 @@ function isInfoLinksValid(links: unknown, path: string, address: string, chain: 
         if (!Object.prototype.hasOwnProperty.call(linksKeys, fname)) {
             return [`Not supported field in links '${fname}'.  Supported keys: ${linksKeysString}`, ""];
         }
-        const prefix = linksKeys[f];
+        const prefix = linksKeys[fname];
         if (prefix) {
             if (!furl.startsWith(prefix)) {
                 return [`Links field '${fname}': '${furl}' must start with '${prefix}'.  Supported keys: ${linksKeysString}`, ""];
