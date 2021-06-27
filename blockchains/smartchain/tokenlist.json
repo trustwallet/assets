@@ -183,6 +183,9 @@
                 },
                 {
                     "base": "c20000714_t0xF952Fc3ca7325Cc27D15885d37117676d25BfdA6"
+                },
+                {
+                    "base": "c20000714_t0x5f502f7ad100207fa2be1de3a876e813cf4b5454"
                 }
             ]
         },
@@ -831,6 +834,16 @@
             "symbol": "EGG",
             "decimals": 18,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0xF952Fc3ca7325Cc27D15885d37117676d25BfdA6/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c20000714_t0x5f502f7ad100207fa2be1de3a876e813cf4b5454",
+            "type": "BEP20",
+            "address": "0x5f502f7ad100207fa2be1de3a876e813cf4b5454",
+            "name": "Deezex",
+            "symbol": "DZX",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0x5f502f7ad100207fa2be1de3a876e813cf4b5454/logo.png",
             "pairs": []
         }
     ],
