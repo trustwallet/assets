@@ -3,15 +3,12 @@ import {
     getChainAssetsPath,
     getChainAssetsList,
     getChainAssetPath,
-    getChainAssetInfoPath,
     getChainAssetFilesList,
-    isChainAssetInfoExistSync,
     logoName,
     logoExtension,
     logoFullName,
     getChainAssetLogoPath
 } from "../generic/repo-structure";
-import { formatJsonFile } from "../generic/json";
 import {
     getFileName,
     getFileExt,
@@ -19,26 +16,9 @@ import {
     readDirSync,
     isPathExistsSync,
 } from "../generic/filesystem";
-import { toChecksum } from "../generic/eth-web3";
+import { toChecksum } from "../generic/eth-address";
 import { ActionInterface, CheckStepInterface } from "../generic/interface";
-import { isAssetInfoOK } from "../generic/asset-info";
 import * as bluebird from "bluebird";
-
-async function formatInfos() {
-    console.log(`Formatting info files...`);
-    await bluebird.each(ethForkChains, async (chain) => {
-        let count = 0;
-        const chainAssets = getChainAssetsList(chain);
-        await bluebird.each(chainAssets, async (address) => {
-            if (isChainAssetInfoExistSync(chain, address)) {
-                const chainAssetInfoPath = getChainAssetInfoPath(chain, address);
-                formatJsonFile(chainAssetInfoPath);
-                ++count;
-            }
-        })
-        console.log(`Formatted ${count} info files for chain ${chain} (total ${chainAssets.length})`);
-    })
-}
 
 function checkAddressChecksum(assetsFolderPath: string, address: string, chain: string) {
     const checksumAddress = toChecksum(address, chain);
@@ -92,10 +72,6 @@ export class EthForks implements ActionInterface {
                             if (!isPathExistsSync(assetLogoPath)) {
                                 errors.push(`Missing file at path '${assetLogoPath}'`);
                             }
-                            const [isInfoOK, infoMsg] = isAssetInfoOK(chain, address);
-                            if (!isInfoOK) {
-                                errors.push(infoMsg);
-                            }
                         });
                         return [errors, []];
                     }    
@@ -106,7 +82,6 @@ export class EthForks implements ActionInterface {
     }
     
     async sanityFix(): Promise<void> {
-        await formatInfos();
         await checkAddressChecksums();
     }
 }
