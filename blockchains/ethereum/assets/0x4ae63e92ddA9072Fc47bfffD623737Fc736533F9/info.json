@@ -1,8 +1,6 @@
 {
     "name": "CentFi Bank Token",
     "website": "https://centfi.co",
-    "source_code": "https://github.com/centfibank",
-    "white_paper": "https://gofile.io/d/j0TTOA",
     "description": "A Dececentralized Smart Contract that focuses the power of Savings. Dividend earnings for every Savings and stakes.",
     "explorer": "https://etherscan.io/token/0x4ae63e92ddA9072Fc47bfffD623737Fc736533F9",
     "type": "ERC20",
@@ -14,6 +12,10 @@
         {
             "name": "github",
             "url": "https://github.com/centfibank"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://gofile.io/d/j0TTOA"
         }
     ]
 }
