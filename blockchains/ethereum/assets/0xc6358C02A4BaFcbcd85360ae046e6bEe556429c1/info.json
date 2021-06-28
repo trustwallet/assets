@@ -1,12 +1,17 @@
 {
     "name": "AllWin",
     "website": "https://allwindefi.com",
-    "white_paper": "https://allwindefi.com/AllwinDeFi(WPv1.0).pdf",
     "description": "Allwin DeFi is a decentralized finance farming P2P gaming platform built on Ethereum Blockchain.",
     "explorer": "https://etherscan.io/token/0xc6358c02a4bafcbcd85360ae046e6bee556429c1",
     "type": "ERC20",
     "symbol": "AllWin",
     "decimals": 6,
     "status": "active",
-    "id": "0xc6358C02A4BaFcbcd85360ae046e6bEe556429c1"
+    "id": "0xc6358C02A4BaFcbcd85360ae046e6bEe556429c1",
+    "links": [
+        {
+            "name": "whitepaper",
+            "url": "https://allwindefi.com/AllwinDeFi(WPv1.0).pdf"
+        }
+    ]
 }

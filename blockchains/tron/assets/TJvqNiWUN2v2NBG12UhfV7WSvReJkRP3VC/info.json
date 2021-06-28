@@ -3,8 +3,6 @@
     "symbol": "BRG",
     "decimals": 6,
     "website": "https://bridge.link/",
-    "source_code": "https://github.com/cryptoland-blockchain-laboratory",
-    "white_paper": "https://bridge.link/Bridge_White_Paper.pdf",
     "description": "First Ever Public Oracle System on TRON Network",
     "explorer": "https://tronscan.io/#/token20/TJvqNiWUN2v2NBG12UhfV7WSvReJkRP3VC",
     "type": "TRC20",
@@ -22,6 +20,10 @@
         {
             "name": "telegram",
             "url": "https://t.me/BridgeOracle"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://bridge.link/Bridge_White_Paper.pdf"
         }
     ]
 }

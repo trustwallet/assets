@@ -1,8 +1,6 @@
 {
     "name": "pTokens pBTC",
     "website": "https://ptokens.io/",
-    "source_code": "https://github.com/provable-things",
-    "white_paper": "https://ptokens.io/ptokens-rev5b.pdf",
     "description": "pTokens BTC is a one-to-one pegged tokenised Bitcoin on Ethereum. Leveraging the pTokens system, Bitcoin is automatically moved into the Ethereum protocol as an ERC-777 token. pTokens BTC makes Bitcoin compatible with all financial dApps, bringing unparalleled liquidity to the DeFi ecosystem.",
     "explorer": "https://etherscan.io/token/0x5228a22e72ccC52d415EcFd199F99D0665E7733b",
     "type": "ERC20",
@@ -26,6 +24,10 @@
         {
             "name": "reddit",
             "url": "https://reddit.com/r/pTokens"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://ptokens.io/ptokens-rev5b.pdf"
         }
     ]
 }

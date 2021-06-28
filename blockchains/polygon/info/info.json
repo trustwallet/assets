@@ -1,8 +1,6 @@
 {
     "name": "Polygon",
     "website": "https://polygon.technology/",
-    "source_code": "https://github.com/celo-org/celo-blockchain",
-    "white_paper": "https://github.com/maticnetwork/whitepaper",
     "short_description": "Polygon (Matic) strives to solve the scalability and usability issues, while not compromising on decentralization and leveraging the existing developer community and ecosystem",
     "description": "Polygon (Matic) strives to solve the scalability and usability issues, while not compromising on decentralization and leveraging the existing developer community and ecosystem",
     "explorer": "https://explorer.matic.network/",
@@ -23,6 +21,10 @@
         {
             "name": "reddit",
             "url": "https://reddit.com/r/maticnetwork/"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://github.com/maticnetwork/whitepaper"
         }
     ]
 }

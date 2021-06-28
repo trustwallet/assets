@@ -1,8 +1,6 @@
 {
     "name": "NEAR Protocol",
     "website": "https://near.org",
-    "source_code": "https://github.com/nearprotocol/nearcore",
-    "white_paper": "https://near.org/papers/the-official-near-white-paper",
     "description": "NEAR is an open source platform that accelerates the development of decentralized applications.",
     "explorer": "https://explorer.near.org/",
     "research": "https://research.binance.com/en/projects/near-protocol",
@@ -22,6 +20,10 @@
         {
             "name": "reddit",
             "url": "https://reddit.com/r/nearprotocol/"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://near.org/papers/the-official-near-white-paper"
         }
     ]
 }

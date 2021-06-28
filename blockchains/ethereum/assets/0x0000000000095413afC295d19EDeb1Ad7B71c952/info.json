@@ -1,8 +1,6 @@
 {
     "name": "Tokenlon",
     "website": "https://tokenlon.im/lon",
-    "source_code": "https://etherscan.io/address/0x0000000000095413afc295d19edeb1ad7b71c952#code",
-    "white_paper": "https://tokenlon.im/files/Tokenlon-litepaper_en-us.pdf",
     "description": "LON backs the Tokenlon decentralized exchange and payment settlement protocol based on Ethereum blockchain technology. It currently powers Tokenlon DEX, a decentralized exchange and payment settlement protocol which aims to provide a secure, reliable and seamless trading experience to the masses.",
     "explorer": "https://etherscan.io/token/0x0000000000095413afc295d19edeb1ad7b71c952",
     "type": "ERC20",
@@ -22,6 +20,10 @@
         {
             "name": "medium",
             "url": "https://medium.com/@tokenlon"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://tokenlon.im/files/Tokenlon-litepaper_en-us.pdf"
         }
     ]
 }

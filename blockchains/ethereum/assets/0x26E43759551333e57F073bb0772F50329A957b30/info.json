@@ -1,8 +1,6 @@
 {
     "name": "DegenVC",
     "website": "https://degen.vc/",
-    "source_code": "https://github.com/degen-vc",
-    "white_paper": "https://www.degen.vc",
     "description": "Building a degen community incentivised by DGVC tokens to provide liquidity for Uniswap or other AMM project launches.",
     "explorer": "https://etherscan.io/token/0x26E43759551333e57F073bb0772F50329A957b30",
     "type": "ERC20",
@@ -18,6 +16,10 @@
         {
             "name": "twitter",
             "url": "https://twitter.com/degen_vc"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://www.degen.vc"
         }
     ]
 }

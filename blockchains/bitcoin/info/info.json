@@ -1,8 +1,6 @@
 {
     "name": "Bitcoin",
     "website": "https://bitcoin.org",
-    "source_code": "https://github.com/bitcoin",
-    "white_paper": "https://bitcoin.org/bitcoin.pdf",
     "description": "Bitcoin is a cryptocurrency and worldwide payment system. It is the first decentralized digital currency, as the system works without a central bank or single administrator.",
     "explorer": "https://blockchain.info",
     "research": "https://research.binance.com/en/projects/bitcoin",
@@ -22,6 +20,10 @@
         {
             "name": "reddit",
             "url": "https://reddit.com/r/Bitcoin"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://bitcoin.org/bitcoin.pdf"
         }
     ]
 }

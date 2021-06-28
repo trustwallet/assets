@@ -1,8 +1,6 @@
 {
     "name": "ShareToken",
     "website": "https://sharering.network",
-    "source_code": "https://github.com/ShareRing",
-    "white_paper": "https://sharering.network/public/sharetoken-whitepaper-en-web-v1.2.pdf",
     "description": "ShareRing is the first global sharing ecosystem that makes services and goods more accessible for everyone.",
     "explorer": "https://etherscan.io/token/0xd98f75b1a3261dab9eed4956c93f33749027a964",
     "type": "ERC20",
@@ -26,6 +24,10 @@
         {
             "name": "reddit",
             "url": "https://reddit.com/r/ShareRing/"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://sharering.network/public/sharetoken-whitepaper-en-web-v1.2.pdf"
         }
     ]
 }

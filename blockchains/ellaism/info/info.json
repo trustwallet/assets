@@ -1,8 +1,6 @@
 {
     "name": "Ellaism",
     "website": "https://ellaism.org",
-    "source_code": "https://github.com/ellaism",
-    "white_paper": "https://wiki.ellaism.org/about/technical-informations",
     "description": "A stable Ethereum-like network with no premine and no dev fees. Monetary policy is enabled with a total supply of 280 million ELLA.",
     "explorer": "https://limax-explorer.outdoordevs.com/home",
     "symbol": "ELLA",
@@ -21,6 +19,10 @@
         {
             "name": "reddit",
             "url": "https://reddit.com/r/ellaism"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://wiki.ellaism.org/about/technical-informations"
         }
     ]
 }

@@ -1,8 +1,6 @@
 {
     "name": "PlotX",
     "website": "https://plotx.io/",
-    "source_code": "https://github.com/plotx",
-    "white_paper": "https://docsend.com/view/nnea7um4434u49uh",
     "description": "PlotX is a non-custodial prediction market protocol that enables users to earn rewards on high-yield prediction markets. Dubbed as the Uniswap of Prediction Markets, PlotX uses an Automated Market Making algorithm to settle markets and distribute rewards on the Ethereum Blockchain without any counterparty risk. Markets are focused on crypto-pairs like BTC-USD & ETH-USD and created in intervals of 4h, 1d and 1w.",
     "explorer": "https://etherscan.io/token/0x72f020f8f3e8fd9382705723cd26380f8d0c66bb",
     "type": "ERC20",
@@ -42,6 +40,10 @@
         {
             "name": "medium",
             "url": "https://medium.com/plotx"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://docsend.com/view/nnea7um4434u49uh"
         }
     ]
 }

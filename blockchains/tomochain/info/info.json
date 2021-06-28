@@ -1,8 +1,6 @@
 {
     "name": "TomoChain",
     "website": "https://tomochain.com",
-    "source_code": "https://github.com/tomochain",
-    "white_paper": "https://tomochain.com/docs/technical-whitepaper--1.0.pdf",
     "description": "TomoChain is a scalable blockchain powered via Proof-of-Stake Voting consensus and used commercially by companies globally.",
     "explorer": "https://scan.tomochain.com",
     "research": "https://research.binance.com/en/projects/tomochain",
@@ -22,6 +20,10 @@
         {
             "name": "reddit",
             "url": "https://reddit.com/r/Tomochain"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://tomochain.com/docs/technical-whitepaper--1.0.pdf"
         }
     ]
 }

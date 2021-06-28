@@ -1,8 +1,6 @@
 {
     "name": "Stellar",
     "website": "https://stellar.org",
-    "source_code": "https://github.com/stellar",
-    "white_paper": "https://www.stellar.org/papers/stellar-consensus-protocol.pdf",
     "description": "Stellar is an open platform for building financial products. It enables near instant payments, with almost zero fees, and a smart contract platform to create digital asset economy.",
     "explorer": "https://dashboard.stellar.org/",
     "research": "https://research.binance.com/en/projects/stellar-lumens",
@@ -22,6 +20,10 @@
         {
             "name": "reddit",
             "url": "https://reddit.com/r/stellar"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://www.stellar.org/papers/stellar-consensus-protocol.pdf"
         }
     ]
 }

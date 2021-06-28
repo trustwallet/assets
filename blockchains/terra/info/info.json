@@ -1,8 +1,6 @@
 {
     "name": "Terra",
     "website": "https://terra.money",
-    "source_code": "https://github.com/terra-project",
-    "white_paper": "https://docs.terra.money",
     "description": "A price-stable cryptocurrency designed for mass adoption. We are building financial infrastructure for the next generation of decentralized applications.",
     "explorer": "https://finder.terra.money",
     "research": "https://research.binance.com/en/projects/terra",
@@ -18,6 +16,10 @@
         {
             "name": "twitter",
             "url": "https://twitter.com/terra_money"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://docs.terra.money"
         }
     ]
 }

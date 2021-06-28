@@ -1,8 +1,6 @@
 {
     "name": "Firo",
     "website": "https://firo.org",
-    "source_code": "https://github.com/firoorg/firo",
-    "white_paper": "https://eprint.iacr.org/2019/373.pdf",
     "description": "Firo, a decentralized and open source currency that provides financial privacy enabled by the Lelantus protocol. Proven cryptography and auditability.",
     "explorer": "http://explorer.firo.org",
     "research": "https://research.binance.com/en/projects/firo",
@@ -22,6 +20,10 @@
         {
             "name": "reddit",
             "url": "https://reddit.com/r/FiroProject/"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://eprint.iacr.org/2019/373.pdf"
         }
     ]
 }

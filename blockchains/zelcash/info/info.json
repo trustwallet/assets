@@ -1,8 +1,6 @@
 {
     "name": "Flux",
     "website": "https://runonflux.io",
-    "source_code": "https://github.com/zelcash/zelcash",
-    "white_paper": "https://runonflux.io/wp-content/uploads/2021/04/Flux_Whitepaper_V.1_release.pdf",
     "description": "Flux is the cryptocurrency that powers the Flux Ecosystem. The Flux Network comprises Proof-of-Work miners and FluxNode Operators, who are rewarded in Flux for validating transactions and providing computational resources.",
     "explorer": "https://explorer.runonflux.io",
     "symbol": "FLUX",
@@ -21,6 +19,10 @@
         {
             "name": "reddit",
             "url": "https://reddit.com/r/RunOnFlux"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://runonflux.io/wp-content/uploads/2021/04/Flux_Whitepaper_V.1_release.pdf"
         }
     ]
 }

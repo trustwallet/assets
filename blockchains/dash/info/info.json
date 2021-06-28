@@ -1,8 +1,6 @@
 {
     "name": "Dash",
     "website": "https://dash.org/",
-    "source_code": "https://github.com/dashpay/dash",
-    "white_paper": "https://github.com/dashpay/dash/wiki/Whitepaper",
     "description": "Dash (DASH) is digital cash designed to offer financial freedom to everyone. Payments are instant, easy and secure, with near-zero fees.",
     "explorer": "https://blockchair.com/dash",
     "research": "https://research.binance.com/en/projects/dash",
@@ -22,6 +20,10 @@
         {
             "name": "reddit",
             "url": "https://reddit.com/r/dashpay"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://github.com/dashpay/dash/wiki/Whitepaper"
         }
     ]
 }

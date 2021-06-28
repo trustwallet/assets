@@ -337,11 +337,12 @@ function isAssetInfoOK(chain: string, isCoin: boolean, address: string, errors: 
             warnings.push(warn3);
         }
     }
-    if (Object.prototype.hasOwnProperty.call(info, 'socials')) {
-        if (!Object.prototype.hasOwnProperty.call(info, 'links') || !info['links']) {
-            errors.push(`'Socials' field no longer used, use 'links' section instead. (${chain} ${address})`);
+    // Fields moved to links section:
+    ['socials', 'source_code', 'whitepaper', 'white_paper'].forEach(f => {
+        if (Object.prototype.hasOwnProperty.call(info, f)) {
+            errors.push(`Field ${f} is no longer used, use 'links' section instead. (${chain} ${address})`);
         }
-    }
+    });
 
     if (!isCoin) {
         const explorerExpected = explorerUrl(chain, address);

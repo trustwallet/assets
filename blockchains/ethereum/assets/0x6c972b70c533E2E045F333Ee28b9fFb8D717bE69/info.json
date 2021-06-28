@@ -7,8 +7,6 @@
     "explorer": "https://etherscan.io/token/0x6c972b70c533E2E045F333Ee28b9fFb8D717bE69",
     "status": "active",
     "id": "0x6c972b70c533E2E045F333Ee28b9fFb8D717bE69",
-    "source_code": "https://github.com/team-toast/Foundry",
-    "white_paper": "https://github.com/team-toast/foundry-design/releases/latest/download/foundry-design.pdf",
     "short_description": "Foundry: A DAO for Economic Freedom",
     "description": "Foundry will attract FRY holders who believe in unstoppable economic freedom. Following SmokeSignal and DAIHard, FRY holders will likely drive Foundry to build or invest in similar pursuits: profitable tools that increase economic freedom which cannot be shut down.",
     "links": [
@@ -35,6 +33,10 @@
         {
             "name": "medium",
             "url": "https://medium.com/daihard-buidlers"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://github.com/team-toast/foundry-design/releases/latest/download/foundry-design.pdf"
         }
     ]
 }

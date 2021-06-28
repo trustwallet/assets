@@ -1,8 +1,6 @@
 {
     "name": "XRP",
     "website": "https://ripple.com/xrp/",
-    "source_code": "https://github.com/ripple",
-    "white_paper": "https://ripple.com/files/ripple_consensus_whitepaper.pdf",
     "description": "Instantly move money to all corners of the world.",
     "explorer": "https://xrpcharts.ripple.com/#/graph/",
     "research": "https://research.binance.com/en/projects/xrp",
@@ -22,6 +20,10 @@
         {
             "name": "reddit",
             "url": "https://reddit.com/r/Ripple"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://ripple.com/files/ripple_consensus_whitepaper.pdf"
         }
     ]
 }

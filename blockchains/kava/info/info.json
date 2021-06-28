@@ -1,8 +1,6 @@
 {
     "name": "Kava",
     "website": "https://kava.io",
-    "source_code": "https://github.com/kava-labs",
-    "white_paper": "https://docsend.com/view/gwbwpc3",
     "description": "Kava is a cross-chain DeFi Lending platform enabling stablecoin loans for users of major cryptocurrencies.",
     "explorer": "https://kava.mintscan.io/",
     "research": "https://research.binance.com/en/projects/kava",
@@ -21,6 +19,10 @@
         {
             "name": "twitter",
             "url": "https://twitter.com/kava_labs"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://docsend.com/view/gwbwpc3"
         }
     ]
 }

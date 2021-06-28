@@ -1,8 +1,6 @@
 {
     "name": "WOM Token",
     "website": "https://womprotocol.io",
-    "source_code": "https://github.com/wom-protocol",
-    "white_paper": "https://womprotocol.io/pdf/en/wom-whitepaper.pdf",
     "description": "The WOM Protocol is a next-gen MarTech solution that enables brands to leverage word-of-mouth recommendations and reward creators without compromising authenticity.",
     "explorer": "https://etherscan.io/token/0xBd356a39BFf2cAda8E9248532DD879147221Cf76",
     "type": "ERC20",
@@ -22,6 +20,10 @@
         {
             "name": "telegram",
             "url": "https://t.me/WOMProtocolChat"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://womprotocol.io/pdf/en/wom-whitepaper.pdf"
         }
     ]
 }

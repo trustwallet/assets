@@ -4,8 +4,6 @@
     "symbol": "bFR",
     "decimals": 18,
     "website": "https://freedomreserv.eth.link/",
-    "source_code": "https://github.com/Freedom-Reserve",
-    "white_paper": "https://freedomreserv.eth.link/img/FreedomReserveWhitepaper.pdf",
     "short_description": "Project to build a zero inflation cryptocurrency for the British Isles.",
     "description": "Freedom Reserve is a Project to build a Store of Value and unit of exchange suitable for the people of the British Isles",
     "explorer": "https://bscscan.com/token/0xbea7086c99a85d4b5e6a0494c18b037fdd8ee932",
@@ -24,6 +22,10 @@
         {
             "name": "telegram",
             "url": "https://t.me/freedomreserve1"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://freedomreserv.eth.link/img/FreedomReserveWhitepaper.pdf"
         }
     ]
 }

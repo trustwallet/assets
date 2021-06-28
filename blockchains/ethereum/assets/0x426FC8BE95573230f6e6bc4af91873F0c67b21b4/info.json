@@ -1,12 +1,17 @@
 {
     "name": "BlackPearl Token",
     "website": "https://blackpearlchain.io/",
-    "white_paper": "https://blackpearlchain.io/wp-content/uploads/2020/03/blackpearl5_Issuer_version_1_0_1.pdf",
     "description": "BlackPearl Token ",
     "explorer": "https://etherscan.io/token/0x426FC8BE95573230f6e6bc4af91873F0c67b21b4",
     "type": "ERC20",
     "symbol": "BPLC",
     "decimals": 18,
     "status": "active",
-    "id": "0x426FC8BE95573230f6e6bc4af91873F0c67b21b4"
+    "id": "0x426FC8BE95573230f6e6bc4af91873F0c67b21b4",
+    "links": [
+        {
+            "name": "whitepaper",
+            "url": "https://blackpearlchain.io/wp-content/uploads/2020/03/blackpearl5_Issuer_version_1_0_1.pdf"
+        }
+    ]
 }

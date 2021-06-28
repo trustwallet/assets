@@ -1,8 +1,6 @@
 {
     "name": "Oasis Network",
     "website": "https://oasisprotocol.org/",
-    "source_code": "https://github.com/oasisprotocol/",
-    "white_paper": "https://oasisprotocol.org/papers",
     "description": "The Oasis Network is a privacy-enabled scalable blockchain network built for open finance and a responsible data economy.",
     "explorer": "https://www.oasisscan.com/",
     "research": "https://research.binance.com/en/projects/oasis-network",
@@ -26,6 +24,10 @@
         {
             "name": "medium",
             "url": "https://medium.com/oasis-protocol-project"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://oasisprotocol.org/papers"
         }
     ]
 }

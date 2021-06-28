@@ -1,8 +1,6 @@
 {
     "name": "CreditDefi",
     "website": "https://creditdefi.org/",
-    "source_code": "https://github.com/Creditdefi/CRD",
-    "white_paper": "https://office.creditdefi.org/docs/crd-whitepaper.pdf",
     "description": "Collection of digital currency services Pay, exchange, collect, send, earn and receive money. Superfast and easy",
     "explorer": "https://etherscan.io/token/0x86E288793B6B9eb05f38758D166c44bF3d643Bcf",
     "type": "ERC20",
@@ -26,6 +24,10 @@
         {
             "name": "medium",
             "url": "https://medium.com/@Creditdefi6"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://office.creditdefi.org/docs/crd-whitepaper.pdf"
         }
     ]
 }

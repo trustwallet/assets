@@ -1,8 +1,6 @@
 {
     "name": "xDai",
     "website": "https://xdaichain.com",
-    "source_code": "https://github.com/xdaichain",
-    "white_paper": "https://www.xdaichain.com/for-validators/posdao-whitepaper",
     "description": "The first-ever USD stable blockchain and multi-chain staking token.",
     "explorer": "https://blockscout.com/poa/xdai",
     "research": "https://research.binance.com/en/projects/poa-network",
@@ -22,6 +20,10 @@
         {
             "name": "reddit",
             "url": "https://reddit.com/r/POA"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://www.xdaichain.com/for-validators/posdao-whitepaper"
         }
     ]
 }

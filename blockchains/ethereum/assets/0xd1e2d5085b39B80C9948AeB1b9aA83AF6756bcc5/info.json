@@ -1,8 +1,6 @@
 {
     "name": "Wrapped Oxen",
     "website": "https://oxen.io",
-    "source_code": "https://github.com/oxen-io/oxen-core",
-    "white_paper": "https://loki.network/wp-content/uploads/2018/10/LokiWhitepaperV3_1.pdf",
     "description": "Oxen is a private cryptocurrency with an incentivised service node network. The decentralised service node network is leveraged to create a whole suite of privacy tools including an anonymous private messenger (Session) and an anonymous onion router (Lokinet).",
     "explorer": "https://etherscan.io/token/0xd1e2d5085b39b80c9948aeb1b9aa83af6756bcc5",
     "research": "",
@@ -19,6 +17,10 @@
         {
             "name": "twitter",
             "url": "https://twitter.com/Oxen_io"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://loki.network/wp-content/uploads/2018/10/LokiWhitepaperV3_1.pdf"
         }
     ]
 }

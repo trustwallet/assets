@@ -1,8 +1,6 @@
 {
     "name": "Zcash",
     "website": "https://z.cash",
-    "source_code": "https://github.com/zcash/zcash",
-    "white_paper": "https://github.com/zcash/zips/blob/master/protocol/protocol.pdf",
     "description": "Zcash is a decentralized and open-source cryptocurrency that provides strong privacy protections. Shielded transactions hide the sender, recipient, and value on the blockchain.",
     "explorer": "https://explorer.zcha.in",
     "research": "https://research.binance.com/en/projects/zcash",
@@ -22,6 +20,10 @@
         {
             "name": "reddit",
             "url": "https://reddit.com/r/zec/"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://github.com/zcash/zips/blob/master/protocol/protocol.pdf"
         }
     ]
 }

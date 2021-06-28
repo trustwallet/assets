@@ -1,8 +1,6 @@
 {
     "name": "Peculium",
     "website": "http://peculium.io/",
-    "source_code": "https://github.com/Peculium-Dev/peculiumContracts",
-    "white_paper": "http://peculium.io/white-paper",
     "description": "PECULIUM revolutionises savings management by deploying immutable Smart-Contracts over the Ethereum blockchain. These smart contracts provide a trust-less way of achieving transparent, decentralised, and infallible contractual agreements.",
     "explorer": "https://etherscan.io/token/0x0F02e27745e3b6e9e1310d19469e2b5D7B5eC99A",
     "type": "ERC20",
@@ -26,6 +24,10 @@
         {
             "name": "reddit",
             "url": "https://reddit.com/r/Peculium/"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://peculium.io/white-paper"
         }
     ]
 }

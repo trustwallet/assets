@@ -1,8 +1,6 @@
 {
     "name": "Celo",
     "website": "https://celo.org/",
-    "source_code": "https://github.com/celo-org/celo-blockchain",
-    "white_paper": "https://celo.org/papers",
     "description": "Celo is an open platform that makes financial tools accessible to anyone with a mobile phone",
     "explorer": "https://explorer.celo.org/",
     "research": "https://docs.celo.org/",
@@ -18,6 +16,10 @@
         {
             "name": "twitter",
             "url": "https://twitter.com/CeloOrg"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://celo.org/papers"
         }
     ]
 }

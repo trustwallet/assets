@@ -1,8 +1,6 @@
 {
     "name": "Cardano",
     "website": "https://cardano.org",
-    "source_code": "https://github.com/input-output-hk/cardano-sl/",
-    "white_paper": "https://www.cardano.org/en/academic-papers/",
     "description": "Cardano (ADA) is a decentralized platform that will allow complex programmable transfers of value in a secure and scalable fashion. Cardano is built in the secure Haskell programming language.",
     "explorer": "https://cardanoexplorer.com/",
     "research": "https://research.binance.com/en/projects/cardano",
@@ -22,6 +20,10 @@
         {
             "name": "reddit",
             "url": "https://reddit.com/r/cardano"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://www.cardano.org/en/academic-papers/"
         }
     ]
 }

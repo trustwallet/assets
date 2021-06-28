@@ -1,8 +1,6 @@
 {
     "name": "Ethereum Classic",
     "website": "https://ethereumclassic.org/",
-    "source_code": "https://github.com/ethereumclassic/",
-    "white_paper": "https://whitepaperdatabase.com/ethereum-classic-etc-whitepaper/",
     "description": "Ethereum Classic is an open-source, public, blockchain-based distributed computing platform featuring smart contract functionality.It is a continuation of the original Ethereum blockchain.",
     "explorer": "https://blockscout.com/etc/mainnet/",
     "research": "https://research.binance.com/en/projects/ethereum-classic",
@@ -22,6 +20,10 @@
         {
             "name": "reddit",
             "url": "https://reddit.com/r/EthereumClassic"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://whitepaperdatabase.com/ethereum-classic-etc-whitepaper/"
         }
     ]
 }

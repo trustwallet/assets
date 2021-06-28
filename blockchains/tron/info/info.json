@@ -1,8 +1,6 @@
 {
     "name": "TRON",
     "website": "https://tron.network/",
-    "source_code": "https://github.com/tronprotocol",
-    "white_paper": "https://developers.tron.network/docs",
     "description": "TRON is dedicated to building the infrastructure for a truly decentralized Internet.",
     "explorer": "https://tronscan.io/#/",
     "research": "https://research.binance.com/en/projects/tron",
@@ -25,6 +23,10 @@
         {
             "name": "reddit",
             "url": "https://reddit.com/r/Tronix"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://developers.tron.network/docs"
         }
     ]
 }

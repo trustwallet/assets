@@ -1,8 +1,6 @@
 {
     "name": "Orakuru",
     "website": "https://orakuru.io/",
-    "source_code": "https://github.com/orakurudata",
-    "white_paper": "https://orakuru.io/whitepaper.pdf",
     "description": "The Orakuru (ora-ku-ru) is Binance Smart Chain’s community owned and operated Oracle. A trustless feed of prices and off-chain data powering the 3.0. Unstoppable, all-seeing.",
     "symbol": "ORK",
     "type": "BEP20",
@@ -19,6 +17,10 @@
         {
             "name": "twitter",
             "url": "https://twitter.com/orakuru_ork"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://orakuru.io/whitepaper.pdf"
         }
     ]
 }

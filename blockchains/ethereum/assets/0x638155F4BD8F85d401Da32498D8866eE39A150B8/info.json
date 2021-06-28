@@ -1,8 +1,6 @@
 {
     "name": "Jura",
     "website": "https://jura.network/",
-    "source_code": "https://github.com/JuraNetwork",
-    "white_paper": "https://docsend.com/view/p9f87gp/",
     "description": "The Jura protocol is essentially a suite of four different innovations all wrapped into one: an individual account-based directed acyclic graph (DAG) data structure we’ve named the Fusus, a Proof of Dedication (PoD) consensus mechanism, a dynamically monitored and distributed sharding (DMDS) technique for distributing data, and an AI security and learning layer to prevent malicious attacks from happening",
     "explorer": "https://etherscan.io/token/0x638155F4BD8F85d401Da32498D8866eE39A150B8",
     "type": "ERC20",
@@ -18,6 +16,10 @@
         {
             "name": "twitter",
             "url": "https://twitter.com/JuraProtocol"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://docsend.com/view/p9f87gp/"
         }
     ]
 }
