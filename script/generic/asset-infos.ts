@@ -339,7 +339,7 @@ function isAssetInfoOK(chain: string, isCoin: boolean, address: string, errors: 
     }
     if (Object.prototype.hasOwnProperty.call(info, 'socials')) {
         if (!Object.prototype.hasOwnProperty.call(info, 'links') || !info['links']) {
-            errors.push(`'Socials' field is present, but there in no 'links' section.  Please migrate contents to links. (${chain} ${address})`);
+            errors.push(`'Socials' field no longer used, use 'links' section instead. (${chain} ${address})`);
         }
     }
 
