@@ -1,7 +1,6 @@
 {
     "name": "FF",
     "website": "https://babaoshu.com",
-    "white_paper": "https://www.babaoshu.com/whitepaper",
     "description": "FF is a digital asset produced in the CryptoTree crypto collectible game.",
     "explorer": "https://etherscan.io/token/0xab0bd01101877597C1360a82f515515FEb178B9E",
     "type": "ERC20",
@@ -13,6 +12,10 @@
         {
             "name": "github",
             "url": "https://github.com/fudeshu"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://www.babaoshu.com/whitepaper"
         }
     ]
 }

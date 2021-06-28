@@ -1,7 +1,6 @@
 {
     "name": "Groestlcoin",
     "website": "http://groestlcoin.org",
-    "white_paper": "http://www.groestl.info/groestl-implementation-guide.pdf",
     "description": "Groestlcoin (GRS) is a cryptocoin, that is optionally private. Anyone can mine it effectively, with GPU.",
     "explorer": "https://grs.tokenview.com/",
     "research": "https://research.binance.com/en/projects/groestlcoin",
@@ -21,6 +20,10 @@
         {
             "name": "reddit",
             "url": "https://reddit.com/r/groestlcoin"
+        },
+        {
+            "name": "whitepaper",
+            "url": "http://www.groestl.info/groestl-implementation-guide.pdf"
         }
     ]
 }

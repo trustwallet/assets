@@ -1,7 +1,6 @@
 {
     "name": "Steem",
     "website": "https://steem.com",
-    "white_paper": "https://steem.io/SteemWhitePaper.pdf",
     "description": "A new way for publishers to monetize their online content and community, based on battle-tested blockchain technology.",
     "explorer": "https://steemd.com/",
     "research": "https://research.binance.com/en/projects/steem",
@@ -21,6 +20,10 @@
         {
             "name": "reddit",
             "url": "https://reddit.com/r/steemit"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://steem.io/SteemWhitePaper.pdf"
         }
     ]
 }

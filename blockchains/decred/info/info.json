@@ -1,7 +1,6 @@
 {
     "name": "Decred",
     "website": "https://decred.org",
-    "white_paper": "https://docs.decred.org",
     "description": "Decred is a community-directed cryptocurrency with built-in governance to make it a superior long-term store of value.",
     "explorer": "https://dcrdata.decred.org",
     "research": "https://research.binance.com/en/projects/decred",
@@ -21,6 +20,10 @@
         {
             "name": "reddit",
             "url": "https://reddit.com/r/decred"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://docs.decred.org"
         }
     ]
 }

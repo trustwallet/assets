@@ -1,7 +1,6 @@
 {
     "name": "POA",
     "website": "https://poa.network",
-    "white_paper": "https://github.com/poanetwork/wiki/wiki/POA-Network-Whitepaper",
     "description": "An open network based on Ethereum protocol with Proof of Authority consensus by independent actors. Public notaries with known identity serve as private validators to secure the network.",
     "explorer": "https://blockscout.com/poa/core",
     "research": "https://research.binance.com/en/projects/poa-network",
@@ -21,6 +20,10 @@
         {
             "name": "reddit",
             "url": "https://reddit.com/r/POA"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://github.com/poanetwork/wiki/wiki/POA-Network-Whitepaper"
         }
     ]
 }

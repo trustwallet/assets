@@ -1,7 +1,6 @@
 {
     "name": "Litecoin",
     "website": "https://litecoin.org/",
-    "white_paper": "https://www.allcryptowhitepapers.com/litecoin-whitepaper/",
     "description": "Litecoin is a peer-to-peer Internet currency that enables instant, near-zero cost payments to anyone in the world.",
     "explorer": "https://blockchair.com/litecoin",
     "research": "https://research.binance.com/en/projects/litecoin",
@@ -21,6 +20,10 @@
         {
             "name": "reddit",
             "url": "https://reddit.com/r/litecoin"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://www.allcryptowhitepapers.com/litecoin-whitepaper/"
         }
     ]
 }
