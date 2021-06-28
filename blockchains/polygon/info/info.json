@@ -18,5 +18,23 @@
         }
     ],
     "explorer": "https://explorer.matic.network/",
-    "research": "https://docs.matic.network/"
+    "research": "https://docs.matic.network/",
+    "type": "COIN",
+    "symbol": "MATIC",
+    "decimals": 18,
+    "status": "active",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/celo-org/celo-blockchain"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/0xPolygon"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/maticnetwork/"
+        }
+    ]
 }

@@ -21,5 +21,15 @@
     "symbol": "LUNA",
     "type": "COIN",
     "decimals": 6,
-    "status": "active"
+    "status": "active",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/terra-project"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/terra_money"
+        }
+    ]
 }

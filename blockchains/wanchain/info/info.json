@@ -21,5 +21,19 @@
     "symbol": "WAN",
     "type": "COIN",
     "decimals": 18,
-    "status": "active"
+    "status": "active",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/wanchain"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/wanchain_org"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/wanchain"
+        }
+    ]
 }

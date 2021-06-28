@@ -21,5 +21,19 @@
     "symbol": "AION",
     "type": "COIN",
     "decimals": 18,
-    "status": "active"
+    "status": "active",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/aionnetwork"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/Aion_OAN"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/AionNetwork"
+        }
+    ]
 }

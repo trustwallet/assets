@@ -25,5 +25,23 @@
     "symbol": "GOLD",
     "decimals": 18,
     "status": "active",
-    "id": "0x8f4087Cb09E0F378f4278a314C94A636665dE24b"
+    "id": "0x8f4087Cb09E0F378f4278a314C94A636665dE24b",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/narwhalswap"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/narwhalswap"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/narwhalswap"
+        },
+        {
+            "name": "docs",
+            "url": "https://docs.narwhalswap.org"
+        }
+    ]
 }

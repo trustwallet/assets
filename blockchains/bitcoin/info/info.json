@@ -21,5 +21,19 @@
     "symbol": "BTC",
     "type": "COIN",
     "decimals": 8,
-    "status": "active"
+    "status": "active",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/bitcoin"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/Bitcoin"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/Bitcoin"
+        }
+    ]
 }

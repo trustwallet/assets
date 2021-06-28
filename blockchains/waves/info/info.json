@@ -21,5 +21,19 @@
     "symbol": "WAVES",
     "type": "COIN",
     "decimals": 8,
-    "status": "active"
+    "status": "active",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/wavesplatform"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/wavesplatform"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/Wavesplatform"
+        }
+    ]
 }
