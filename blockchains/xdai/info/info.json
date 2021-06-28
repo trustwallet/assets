@@ -19,7 +19,21 @@
     "explorer": "https://blockscout.com/poa/xdai",
     "research": "https://research.binance.com/en/projects/poa-network",
     "symbol": "xDAI",
-    "type": "ERC20",
+    "type": "COIN",
     "decimals": 18,
-    "status": "abandoned"
+    "status": "abandoned",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/xdaichain"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/xdaichain"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/POA"
+        }
+    ]
 }

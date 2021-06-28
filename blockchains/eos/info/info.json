@@ -21,5 +21,19 @@
     "symbol": "EOS",
     "type": "COIN",
     "decimals": 4,
-    "status": "active"
+    "status": "active",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/eosio"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/block_one_"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/EOS"
+        }
+    ]
 }

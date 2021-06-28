@@ -7,10 +7,16 @@
     "explorer": "https://explorer.avax.network",
     "research": "https://research.binance.com/en/projects/avalanche",
     "symbol": "AVAX",
-    "type": "coin",
+    "type": "COIN",
     "decimals": 9,
     "status": "active",
     "tags": [
         "staking-native"
+    ],
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/ava-labs"
+        }
     ]
 }

@@ -17,11 +17,28 @@
             "url": "https://t.me/CannonFinance"
         }
     ],
-    "explorer": "https://etherscan.io/token/0x20bff4bbEDa07536FF00e073bd8359E5D80D733d",
-    "explorer1": "https://bscscan.com/token/0x20bff4bbEDa07536FF00e073bd8359E5D80D733d",
+    "explorer": "https://bscscan.com/token/0x20bff4bbEDa07536FF00e073bd8359E5D80D733d",
     "type": "BEP20",
     "symbol": "CAN",
     "decimals": 18,
     "status": "active",
-    "id": "0x20bff4bbEDa07536FF00e073bd8359E5D80D733d"
+    "id": "0x20bff4bbEDa07536FF00e073bd8359E5D80D733d",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/cannonfinance"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/Cannon"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/CannonFinance"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/CannonFinance/"
+        }
+    ]
 }

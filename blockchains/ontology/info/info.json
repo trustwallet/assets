@@ -21,5 +21,19 @@
     "symbol": "ONT",
     "type": "COIN",
     "decimals": 0,
-    "status": "active"
+    "status": "active",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/ontio"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/OntologyNetwork"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/OntologyNetwork"
+        }
+    ]
 }

@@ -23,5 +23,23 @@
     "symbol": "APE-LP",
     "decimals": 18,
     "status": "active",
-    "id": "0x51e6D27FA57373d8d4C256231241053a70Cb1d93"
+    "id": "0x51e6D27FA57373d8d4C256231241053a70Cb1d93",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/ApeSwapFinance"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/ape_swap"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/ape_swap"
+        },
+        {
+            "name": "medium",
+            "url": "https://ape-swap.medium.com/"
+        }
+    ]
 }

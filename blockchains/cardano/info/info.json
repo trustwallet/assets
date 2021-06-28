@@ -21,5 +21,19 @@
     "symbol": "ADA",
     "type": "COIN",
     "decimals": 6,
-    "status": "active"
+    "status": "active",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/input-output-hk/cardano-sl/"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/cardano"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/cardano"
+        }
+    ]
 }

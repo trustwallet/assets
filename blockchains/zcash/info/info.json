@@ -21,5 +21,19 @@
     "symbol": "ZEC",
     "type": "COIN",
     "decimals": 8,
-    "status": "active"
+    "status": "active",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/zcash/zcash"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/electriccoinco"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/zec/"
+        }
+    ]
 }

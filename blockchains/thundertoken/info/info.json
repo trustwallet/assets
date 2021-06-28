@@ -21,5 +21,19 @@
     "symbol": "TT",
     "type": "COIN",
     "decimals": 18,
-    "status": "active"
+    "status": "active",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/thundertoken"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/ThunderProtocol"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/thundertoken"
+        }
+    ]
 }
