@@ -2,23 +2,6 @@
     "name": "Niftyx(SHROOM)",
     "website": "https://niftyx.org",
     "description": "Niftyx is building a decentralised protocol for NFT trading and minting.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/NiftyxProtocol",
-            "handle": "NiftyxProtocol"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/NiftyxProtocol",
-            "handle": "NiftyxProtocol"
-        },
-        {
-            "name": "Discord",
-            "url": "https://discord.com/invite/eZcFahS",
-            "handle": "eZcFahS"
-        }
-    ],
     "explorer": "https://etherscan.io/token/0xEd0439EACf4c4965AE4613D77a5C2Efe10e5f183",
     "type": "ERC20",
     "symbol": "SHROOM",
@@ -37,6 +20,10 @@
         {
             "name": "discord",
             "url": "https://discord.com/invite/eZcFahS"
+        }
+        {
+            "name": "medium",
+            "url": "https://niftyx.medium.com/"
         }
     ]
 }
