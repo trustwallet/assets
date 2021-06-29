@@ -1,27 +1,30 @@
 {
     "name": "Fortress",
     "website": "https://fortress.loans/",
-    "source_code": "https://docs.fortress.loans/smart-contracts",
     "description": "Fortress is an algorithmic money market, and synthetic stable coin protocol designed to bring secure and trustless credit and lending to users on Binance Smart Chain.",
     "research": "https://docs.fortress.loans/",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/Jetfuelfinance"
-        },
-        {
-            "name": "Medium",
-            "url": "https://medium.com/@jetfuelfinance"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/jetfuelfinance"
-        }
-    ],
     "explorer": "https://bscscan.com/token/0x4437743ac02957068995c48E08465E0EE1769fBE",
     "type": "BEP20",
     "symbol": "FTS",
     "decimals": 18,
     "status": "active",
-    "id": "0x4437743ac02957068995c48E08465E0EE1769fBE"
+    "id": "0x4437743ac02957068995c48E08465E0EE1769fBE",
+    "links": [
+        {
+            "name": "source_code",
+            "url": "https://docs.fortress.loans/smart-contracts"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/Jetfuelfinance"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/jetfuelfinance"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/@jetfuelfinance"
+        }
+    ]
 }

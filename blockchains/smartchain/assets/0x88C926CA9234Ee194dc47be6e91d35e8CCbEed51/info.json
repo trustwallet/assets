@@ -1,34 +1,33 @@
 {
     "name": "MooCow",
     "website": "https://moocow.me",
-    "source_code": "https://github.com/moocowtoken/MooCow/",
     "description": "Wen moo? A deflationary DeFi token/cow that wants to take you to the moon.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/moocowtoken"
-        },
-        {
-            "name": "Instagram",
-            "url": "https://www.instagram.com/moocowtoken1/"
-        },
-        {
-            "name": "Reddit",
-            "url": "https://www.reddit.com/r/MooCowToken/"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/moocowtoken"
-        },
-        {
-            "name": "Discord",
-            "url": "https://discord.com/invite/Num2J4WzP2"
-        }
-    ],
     "explorer": "https://bscscan.com/token/0x88C926CA9234Ee194dc47be6e91d35e8CCbEed51",
     "type": "BEP20",
     "symbol": "MOO",
     "decimals": 9,
     "status": "active",
-    "id": "0x88C926CA9234Ee194dc47be6e91d35e8CCbEed51"
+    "id": "0x88C926CA9234Ee194dc47be6e91d35e8CCbEed51",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/moocowtoken/MooCow/"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/moocowtoken"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/moocowtoken"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/Num2J4WzP2"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/MooCowToken/"
+        }
+    ]
 }

@@ -1,40 +1,33 @@
 {
     "name": "OM Lira",
     "website": "https://omlira.com",
-    "source_code": "https://etherscan.io/address/0x224db5e6180761df4c3d8936585f6b8b83879770#code",
-    "white_paper": "https://omlira.com/whitepaper.pdf",
     "description": "Kullanımı kolay kripto para",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/om_lira",
-            "handle": "om_lira"
-        },
-        {
-            "name": "Medium",
-            "url": "https://omlira.medium.com",
-            "handle": "omlira"
-        },
-        {
-            "name": "Discord",
-            "url": "https://discord.gg/MB75Bnc",
-            "handle": "OM Lira"
-        },
-        {
-            "name": "Facebook",
-            "url": "https://fb.me/omlira",
-            "handle": "omlira"
-        },
-        {
-            "name": "Instagram",
-            "url": "https://instagram.com/om_lira",
-            "handle": "om_lira"
-        }
-    ],
     "explorer": "https://etherscan.io/token/0x224db5e6180761df4c3d8936585f6b8b83879770",
     "type": "ERC20",
     "symbol": "OML",
     "decimals": 18,
     "status": "active",
-    "id": "0x224DB5E6180761df4C3d8936585f6b8b83879770"
+    "id": "0x224DB5E6180761df4C3d8936585f6b8b83879770",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/om_lira"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/MB75Bnc"
+        },
+        {
+            "name": "facebook",
+            "url": "https://facebook.com/omlira"
+        },
+        {
+            "name": "medium",
+            "url": "https://omlira.medium.com"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://omlira.com/whitepaper.pdf"
+        }
+    ]
 }
