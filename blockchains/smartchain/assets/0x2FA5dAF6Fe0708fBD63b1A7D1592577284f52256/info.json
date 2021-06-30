@@ -1,29 +1,29 @@
 {
     "name": "UnmarshalToken",
     "website": "https://unmarshal.io/",
-    "source_code": "https://github.com/orgs/eucrypt",
     "description": "Unmarshal is a Multi-chain DeFi network of indexers that provides seamless access to Blockchain data for DeFi applications. We provide rich, meaningful, and reliable access to data through our decentralized network nodes.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/unmarshal",
-            "handle": "unmarshal"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/Unmarshal_Chat",
-            "handle": "Unmarshal_Chat"
-        },
-        {
-            "name": "Medium",
-            "url": "https://blog.unmarshal.io/",
-            "handle": "unmarshal-io"
-        }
-    ],
     "explorer": "https://bscscan.com/token/0x2FA5dAF6Fe0708fBD63b1A7D1592577284f52256",
     "type": "BEP20",
     "symbol": "MARSH",
     "decimals": 18,
     "status": "active",
-    "id": "0x2FA5dAF6Fe0708fBD63b1A7D1592577284f52256"
+    "id": "0x2FA5dAF6Fe0708fBD63b1A7D1592577284f52256",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/orgs/eucrypt"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/unmarshal"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/Unmarshal_Chat"
+        },
+        {
+            "name": "blog",
+            "url": "https://blog.unmarshal.io/"
+        }
+    ]
 }

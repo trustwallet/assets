@@ -1,8 +1,6 @@
 {
     "name": "Razor Network",
     "website": "https://razor.network/",
-    "source_code": "https://github.com/razor-network",
-    "white_paper": "https://razor.network/whitepaper.pdf",
     "description": "Razor Network is a decentralized oracle network, which connects smart contracts with real-world off-chain data in a fast, robust and secure way. The core of Razor Network is a set of smart contracts that can run on any Ethereum compatible blockchain. Razor Network is blockchain agnostic and will be integrated with multiple blockchains.",
     "explorer": "https://etherscan.io/token/0x50DE6856358Cc35f3A9a57eAAA34BD4cB707d2cd",
     "type": "ERC20",
@@ -10,31 +8,34 @@
     "decimals": 18,
     "status": "active",
     "id": "0x50DE6856358Cc35f3A9a57eAAA34BD4cB707d2cd",
-    "socials": [
+    "links": [
         {
-            "name": "Twitter",
-            "url": "https://twitter.com/razor_network",
-            "handle": "razor_network"
+            "name": "github",
+            "url": "https://github.com/razor-network"
         },
         {
-            "name": "Medium",
-            "url": "https://medium.com/razor-network",
-            "handle": "razor-network"
+            "name": "twitter",
+            "url": "https://twitter.com/razor_network"
         },
         {
-            "name": "Telegram",
-            "url": "https://t.me/razornetwork",
-            "handle": "razornetwork"
+            "name": "telegram",
+            "url": "https://t.me/razornetwork"
         },
         {
-            "name": "Discord",
-            "url": "https://discord.gg/yvrHg85ycE",
-            "handle": "RazorNetwork"
+            "name": "discord",
+            "url": "https://discord.com/invite/yvrHg85ycE"
         },
         {
-            "name": "Reddit",
-            "url": "https://www.reddit.com/r/RazorNetwork",
-            "handle": "RazorNetwork"
+            "name": "reddit",
+            "url": "https://reddit.com/r/RazorNetwork"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/razor-network"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://razor.network/whitepaper.pdf"
         }
     ]
 }

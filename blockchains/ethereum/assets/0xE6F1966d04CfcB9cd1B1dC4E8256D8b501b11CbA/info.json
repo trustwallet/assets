@@ -2,22 +2,20 @@
     "name": "SafeEarth",
     "website": "https://safeearthcrypto.com/",
     "description": "Autonomous Yield and Liquidity Generation Charity Protocol",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/SafeEarthETH",
-            "handle": "SafeEarthETH"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/SafeEarthETH",
-            "handle": "SafeEarth"
-        }
-    ],
     "explorer": "https://etherscan.io/token/0xE6F1966d04CfcB9cd1B1dC4E8256D8b501b11CbA",
     "type": "ERC20",
     "symbol": "SAFEEARTH",
     "decimals": 9,
     "status": "active",
-    "id": "0xE6F1966d04CfcB9cd1B1dC4E8256D8b501b11CbA"
+    "id": "0xE6F1966d04CfcB9cd1B1dC4E8256D8b501b11CbA",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/SafeEarthETH"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/SafeEarthETH"
+        }
+    ]
 }

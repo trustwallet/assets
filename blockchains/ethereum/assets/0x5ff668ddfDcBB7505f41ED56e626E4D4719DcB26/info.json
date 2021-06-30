@@ -1,21 +1,26 @@
 {
     "name": "Wrapped Loki",
     "website": "https://loki.network",
-    "source_code": "https://github.com/loki-project/loki-core",
-    "white_paper": "https://loki.network/wp-content/uploads/2018/10/LokiWhitepaperV3_1.pdf",
     "description": "Loki is a private cryptocurrency with an incentivised service node network. The decentralised service node network is leveraged to create a whole suite of privacy tools including an anonymous private messenger (Session) and an anonymous onion router (Lokinet).",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/Loki_Project",
-            "handle": "Loki_Project"
-        }
-    ],
     "explorer": "https://etherscan.io/token/0x5ff668ddfdcbb7505f41ed56e626e4d4719dcb26",
     "research": "",
     "type": "ERC20",
     "symbol": "wLOKI",
     "decimals": 9,
     "status": "active",
-    "id": "0x5ff668ddfDcBB7505f41ED56e626E4D4719DcB26"
+    "id": "0x5ff668ddfDcBB7505f41ED56e626E4D4719DcB26",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/loki-project/loki-core"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/Loki_Project"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://loki.network/wp-content/uploads/2018/10/LokiWhitepaperV3_1.pdf"
+        }
+    ]
 }

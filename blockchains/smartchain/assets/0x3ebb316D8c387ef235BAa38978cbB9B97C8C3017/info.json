@@ -2,24 +2,24 @@
     "name": "PYXIS (pyxis.network)",
     "type": "BEP20",
     "symbol": "PYX",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/pyxiscommunity"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/pyxiscommunity"
-        },
-        {
-            "name": "Discord",
-            "url": "https://discord.gg/d2kqGakxeJ"
-        }
-    ],
     "decimals": 18,
     "website": "https://www.pyxis.network",
     "description": "Premium staking platform on Binance Smart Chain",
     "explorer": "https://bscscan.com/token/0x3ebb316D8c387ef235BAa38978cbB9B97C8C3017",
     "status": "active",
-    "id": "0x3ebb316D8c387ef235BAa38978cbB9B97C8C3017"
+    "id": "0x3ebb316D8c387ef235BAa38978cbB9B97C8C3017",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/pyxiscommunity"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/pyxiscommunity"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/d2kqGakxeJ"
+        }
+    ]
 }
