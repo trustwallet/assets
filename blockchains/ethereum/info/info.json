@@ -1,29 +1,9 @@
-{
-    "name": "Ethereum",
-    "website": "https://ethereum.org/",
-    "description": "Open source platform to write and distribute decentralized applications.",
-    "explorer": "https://etherscan.io/",
-    "research": "https://research.binance.com/en/projects/ethereum",
-    "symbol": "ETH",
-    "type": "COIN",
+    "name": "Catty Coin",
+    "website": "https://www.cattycoin.com",
+    "description": "Catty Coin is an ERC20 token created by Bobatoshi.",
+    "explorer": "https://etherscan.io/address/0xccB219852eC7fe22EFD99e5843A6103a5bE9a947",
+    "type": "ERC20",
+    "symbol": "CATTY",
     "decimals": 18,
     "status": "active",
-    "links": [
-        {
-            "name": "github",
-            "url": "https://github.com/ethereum"
-        },
-        {
-            "name": "twitter",
-            "url": "https://twitter.com/ethereum"
-        },
-        {
-            "name": "reddit",
-            "url": "https://reddit.com/r/ethereum"
-        },
-        {
-            "name": "whitepaper",
-            "url": "https://github.com/ethereum/wiki/wiki/White-Paper"
-        }
-    ]
-}
+    "id": "0xccB219852eC7fe22EFD99e5843A6103a5bE9a947"
