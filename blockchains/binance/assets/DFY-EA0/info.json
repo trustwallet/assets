@@ -1,36 +1,38 @@
 {
     "name": "DeFi For You.",
     "website": "https://defi.com.vn",
-    "source_code": "https://github.com/defi-vn/DeFi-VN-Smart-Contract",
-    "white_paper": "https://defi.com.vn/document/DFY-White-Paper.pdf",
     "description": "DEFI For You. Is a listing where by users can make pawn loans online to a worldwide market. We are basically letting you run your own online finance company with rates of your choosing. If you ever dreamed of owning your own bank well now you can. DEFi For You aims to clean up the Pawn industry using DFY smart contracts. At last Cryptocurrency has come if age. This is a world first and the market is limitless.",
     "explorer": "https://explorer.binance.org/asset/DFY-EA0",
     "research": "",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/DeFiForYou",
-            "handle": "DeFi For You."
-        },
-        {
-            "name": "Telegram",
-            "url": "http://t.me/DefiForYouDFY",
-            "handle": "DeFi For You."
-        },
-        {
-            "name": "Facebook",
-            "url": "https://www.facebook.com/DeFiForYouDFY",
-            "handle": "DeFi For You."
-        },
-        {
-            "name": "Reddit",
-            "url": "https://www.reddit.com/user/DeFiForYou",
-            "handle": "DeFi For You."
-        }
-    ],
     "type": "BEP2",
     "symbol": "DFY",
     "decimals": 8,
     "status": "active",
-    "id": "DFY-EA0"
+    "id": "DFY-EA0",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/defi-vn/DeFi-VN-Smart-Contract"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/DeFi For You."
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/DefiForYouDFY"
+        },
+        {
+            "name": "facebook",
+            "url": "https://facebook.com/DeFiForYouDFY"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/user/DeFiForYou"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://defi.com.vn/document/DFY-White-Paper.pdf"
+        }
+    ]
 }

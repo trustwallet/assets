@@ -1,0 +1,17 @@
+{
+    "versionEnd": {
+        "versionNum": 1706,
+        "commit": "d6d6017484bc24e711ff0c6396d83975486a50f0",
+        "date": "2021-05-28T07:40:42.874Z"
+    },
+    "versionStart": {
+        "versionNum": 1705,
+        "commit": "3d3fed7bf046b099a24a96f113c6e8f5df3a50c1",
+        "date": "2021-05-28T07:39:25.033Z"
+    },
+    "changes": [
+        "blockchains/ethereum/allowlist.json",
+        "blockchains/ethereum/tokenlist.json",
+        "blockchains/smartchain/allowlist.json"
+    ]
+}
