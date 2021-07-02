@@ -1,31 +1,33 @@
 {
     "name": "Nominex Token",
     "website": "https://nominex.io/",
-    "source_code": "https://github.com/nominex/eth-smart-contracts",
     "description": "NMX is the first decentralized exchange token with automatic market making (AMM) functionality.",
     "explorer": "https://bscscan.com/token/0xd32d01A43c869EdcD1117C640fBDcfCFD97d9d65",
     "type": "BEP20",
     "symbol": "NMX",
     "decimals": 18,
-    "white_paper": "https://nominex.io/docs/nominex-whitepaper.pdf",
     "status": "active",
-    "socials": [
+    "id": "0xd32d01A43c869EdcD1117C640fBDcfCFD97d9d65",
+    "links": [
         {
-            "name": "Telegram",
-            "url": "https://t.me/nominex_announcements"
+            "name": "github",
+            "url": "https://github.com/nominex/eth-smart-contracts"
         },
         {
-            "name": "Twitter",
+            "name": "twitter",
             "url": "https://twitter.com/NominexExchange"
         },
         {
-            "name": "Facebook",
-            "url": "https://www.facebook.com/Nominex"
+            "name": "telegram",
+            "url": "https://t.me/nominex_announcements"
         },
         {
-            "name": "LinkedIn",
-            "url": "https://linkedin.com/company/14863255"
+            "name": "facebook",
+            "url": "https://facebook.com/Nominex"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://nominex.io/docs/nominex-whitepaper.pdf"
         }
-    ],
-    "id": "0xd32d01A43c869EdcD1117C640fBDcfCFD97d9d65"
+    ]
 }

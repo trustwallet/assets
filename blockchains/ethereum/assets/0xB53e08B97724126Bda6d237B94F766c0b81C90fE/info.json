@@ -2,17 +2,16 @@
     "name": "PIXBY",
     "website": "https://pixby.io",
     "description": "Designed to reward longterm PIXBY holders.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/pixbytoken",
-            "handle": "pixbytoken"
-        }
-    ],
     "explorer": "https://etherscan.io/token/0xB53e08B97724126Bda6d237B94F766c0b81C90fE",
     "type": "ERC20",
     "symbol": "PIXBY",
     "decimals": 18,
     "status": "active",
-    "id": "0xB53e08B97724126Bda6d237B94F766c0b81C90fE"
+    "id": "0xB53e08B97724126Bda6d237B94F766c0b81C90fE",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/pixbytoken"
+        }
+    ]
 }
