@@ -1,7 +1,6 @@
 {
     "name": "Sparkle Loyalty",
     "website": "https://sparkleloyalty.io/",
-    "source_code": "https://github.com/Sparkleloyalty",
     "description": "Sparkle is a time-based rewards system designed to allow equal participation amongst all users within Sparkle's ecosystem.",
     "coinmarketcap": "https://coinmarketcap.com/currencies/sparkle-loyalty/",
     "coingecko": "https://www.coingecko.com/en/coins/sparkle",
@@ -10,5 +9,11 @@
     "symbol": "SPRKL",
     "decimals": 8,
     "status": "active",
-    "id": "0x4b7aD3a56810032782Afce12d7d27122bDb96efF"
+    "id": "0x4b7aD3a56810032782Afce12d7d27122bDb96efF",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/Sparkleloyalty"
+        }
+    ]
 }

@@ -1,40 +1,30 @@
 {
     "name": "Coreto",
     "website": "https://coreto.io",
-    "source_code": "https://github.com/coreto-io",
     "light_paper": "https://coreto.io/Coreto_Lightpaper_1.2-B.pdf",
     "description": "A reputation based, tokenized social platform orientated towards the crypto communities needs, educating retail investors about blockchain based projects.",
-    "socials": [
-        {
-            "name": "LinkedIn",
-            "url": "https://www.linkedin.com/company/coretoio",
-            "handle": "coretoio"
-        },
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/Coretoio",
-            "handle": "Coretoio"
-        },
-        {
-            "name": "Medium",
-            "url": "https://medium.com/coreto",
-            "handle": "coreto"
-        },
-        {
-            "name": "Instagram",
-            "url": "https://www.instagram.com/coreto.io",
-            "handle": "coreto.io"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/Coreto",
-            "handle": "Coreto"
-        }
-    ],
     "explorer": "https://etherscan.io/token/0x9c2dc0c3cc2badde84b0025cf4df1c5af288d835",
     "type": "ERC20",
     "symbol": "COR",
     "decimals": 18,
     "status": "active",
-    "id": "0x9C2dc0c3CC2BADdE84B0025Cf4df1c5aF288D835"
+    "id": "0x9C2dc0c3CC2BADdE84B0025Cf4df1c5aF288D835",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/coreto-io"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/Coretoio"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/Coreto"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/coreto"
+        }
+    ]
 }
