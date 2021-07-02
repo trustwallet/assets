@@ -8,5 +8,27 @@
     "symbol": "BUSD",
     "decimals": 18,
     "status": "active",
-    "id": "0x4Fabb145d64652a948d72533023f6E7A623C7C53"
+    "id": "0x4Fabb145d64652a948d72533023f6E7A623C7C53",
+       "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/paxosglobal/busd-contract"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/PaxosGlobal"
+        },
+        {
+            "name": "facebook",
+            "url": "http://facebook.com/paxosglobal"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/binance-usd/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://www.coingecko.com/en/coins/binance-usd/"
+        }
+    ]
 }
