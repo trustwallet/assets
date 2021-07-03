@@ -8,5 +8,27 @@
     "symbol": "RSR",
     "decimals": 18,
     "status": "active",
-    "id": "0x8762db106B2c2A0bccB3A80d1Ed41273552616E8"
+    "id": "0x8762db106B2c2A0bccB3A80d1Ed41273552616E8",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/reserve-protocol/rsr"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/reserveprotocol"
+        },
+        {
+            "name": "blog",
+            "url": "https://medium.com/reserve-currency"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/reservecurrency"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/reserve-rights-token/"
+        }
+    ]
 }
