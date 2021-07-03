@@ -8,5 +8,27 @@
     "symbol": "PAX",
     "decimals": 18,
     "status": "active",
-    "id": "0xb7F8Cd00C5A06c0537E2aBfF0b58033d02e5E094"
+    "id": "0xb7F8Cd00C5A06c0537E2aBfF0b58033d02e5E094",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/paxosglobal/pax-contracts"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/PaxosStandard"
+        },
+        {
+            "name": "blog",
+            "url": "https://medium.com/@PaxosStandard"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://standard.paxos.com/whitepaper.pdf"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/paxos-standard-token/"
+        }
+    ]
 }
