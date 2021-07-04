@@ -1,20 +1,21 @@
 {
     "name": "DICE.FINANCE",
     "website": "https://dice.finance/",
-    "source_code": "https://etherscan.io/address/0xcf67ced76e8356366291246a9222169f4dbdbe64#code",
-    "white_paper": "https://github.com/dice-finance/Whitepaper/blob/master/Dice.FinanceWP.md",
     "description": "An unstoppable bankroll drives casino for thousands of users and hundreds of applications. DICE.FINANCE empowers players, developers, game providers and agency to participate in a game marketplace that is open and accessible to all.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/DiceFinance",
-            "handle": "DiceFinance"
-        }
-    ],
     "explorer": "https://etherscan.io/token/0xCF67CEd76E8356366291246A9222169F4dBdBe64",
     "type": "ERC20",
     "symbol": "DICE",
     "decimals": 18,
     "status": "active",
-    "id": "0xCF67CEd76E8356366291246A9222169F4dBdBe64"
+    "id": "0xCF67CEd76E8356366291246A9222169F4dBdBe64",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/DiceFinance"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://github.com/dice-finance/Whitepaper/blob/master/Dice.FinanceWP.md"
+        }
+    ]
 }
