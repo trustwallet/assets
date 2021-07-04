@@ -1,11 +1,22 @@
- {
-   "name": "indiv investor coin",
-    "website": "www.indivinvestor.com",
-    "description": "indiv investor is the best website to invest in future asset class of crypto .",
+{
+    "name": "indiv investor coin",
+    "website": "https://indivinvestor.com",
+    "description": "world unique crypto service coin exchange.",
     "explorer": "https://tronscan.io/#/contract/TTyZMcCDQ2WdKpX8atyZZCXhyXG81vVbUB",
     "type": "TRC20",
     "symbol": "iic",
     "decimals": 18,
     "status": "active",
-    "id": "TTyZMcCDQ2WdKpX8atyZZCXhyXG81vVbUB"
+    "id": "TTyZMcCDQ2WdKpX8atyZZCXhyXG81vVbUB",
+    "links": [
+        {
+            "name": "telegram",
+            "url": "https://t.me/indivinvestor"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/indivinvestor_"
+        },
+      
+    ]
 }
