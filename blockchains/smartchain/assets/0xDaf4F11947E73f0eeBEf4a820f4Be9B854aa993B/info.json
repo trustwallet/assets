@@ -1,11 +1,11 @@
 {
     "name": "Stellar Diamond",
-    "website": "https://stellardiamond.net/",
-    "description": "XLD is a BEP20 token with an auto-claim BNB rewarding process",
-    "explorer": "https://bscscan.com/address/0xDaf4F11947E73f0eeBEf4a820f4Be9B854aa993B",
     "type": "BEP20",
     "symbol": "XLD",
     "decimals": 9,
+    "website": "https://stellardiamond.net",
+    "description": "The project is based on a BEP20 token called XLD. Its main feature involves an auto-claim BNB rewarding process, in which the contract periodically sends out BNB to addresses that hold XLD tokens. ",
+    "explorer": "https://bscscan.com/token/0xDaf4F11947E73f0eeBEf4a820f4Be9B854aa993B",
     "status": "active",
     "id": "0xDaf4F11947E73f0eeBEf4a820f4Be9B854aa993B"
 }
