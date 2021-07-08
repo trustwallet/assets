@@ -2,7 +2,8 @@
 const StatusValues: string[] = [
     'active',
     'spam',
-    'abandoned'
+    'abandoned',
+    'nsfw'
 ];
 
 export function isValidStatusValue(value: string): boolean {
