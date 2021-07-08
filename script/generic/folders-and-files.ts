@@ -82,11 +82,10 @@ export class FoldersFiles implements ActionInterface {
                         if (isPathExistsSync(assetsPath)) {
                             readDirSync(assetsPath).forEach(address => {
                                 const logoFullPath = getChainAssetLogoPath(chain, address);
-                                if (!isPathExistsSync(logoFullPath)) {
-                                    errors.push(`Missing logo file for asset '${chain}/${address}' -- ${logoFullPath}`);
-                                }
+                                const logoExists = isPathExistsSync(logoFullPath);
                                 const infoFullPath = getChainAssetInfoPath(chain, address);
-                                if (!isPathExistsSync(infoFullPath)) {
+                                const infoExists = isPathExistsSync(infoFullPath);
+                                if (!infoExists) {
                                     const msg = `Missing info file for asset '${chain}/${address}' -- ${infoFullPath}`;
                                     // enforce that info must be present (with some exceptions)
                                     if (chain === 'classic' || chain === 'poa' || chain === 'terra' || chain === 'thundertoken') {
@@ -96,6 +95,9 @@ export class FoldersFiles implements ActionInterface {
                                         console.log(msg);
                                         errors.push(msg);
                                     }
+                                }
+                                if (!logoExists && !infoExists) {
+                                    errors.push(`Missing logo and info files for asset '${chain}/${address}' -- ${logoFullPath}`);
                                 }
                             });
                         }
