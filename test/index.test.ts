@@ -149,6 +149,7 @@ describe("Test status, tag values", () => {
     test(`Test status-values`, () => {
         expect(isValidStatusValue("active")).toEqual(true);
         expect(isValidStatusValue("abandoned")).toEqual(true);
+        expect(isValidStatusValue("nsfw")).toEqual(true);
         expect(isValidStatusValue("invalidvalue")).toEqual(false);
         expect(isValidStatusValue("ACTIVE")).toEqual(false);
         expect(isValidStatusValue("")).toEqual(false);
