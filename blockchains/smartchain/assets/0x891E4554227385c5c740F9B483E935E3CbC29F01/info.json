@@ -1,4 +1,5 @@
-{  "name": "Robust Token",
+{
+    "name": "Robust Token",
     "website": "https://robustprotocol.fi",
     "description": "Robust Token (RBT) is an original concept token on the Binance Smart Chain with a limited supply of 100 000 RBT and a 1% burn per transaction that gets converted into Robust Reward (RBW).",
     "explorer": "https://bscscan.com/token/0x891E4554227385c5c740F9B483E935E3CbC29F01",
@@ -23,16 +24,14 @@
         {
             "name": "whitepaper",
             "url": "https://robustprotocol.fi/RobustProtocol.pdf"
-        },		
+        },
         {
             "name": "medium",
             "url": "https://robustprotocol.medium.com/"
-        },		
+        },
         {
             "name": "github",
             "url": "https://github.com/robustprotocol/"
         }
-    ]	
+    ]
 }
-
-
