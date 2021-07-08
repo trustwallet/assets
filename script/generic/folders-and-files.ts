@@ -18,6 +18,7 @@ import {
 } from "../generic/repo-structure";
 import { isLogoOK } from "../generic/image";
 import { isLowerCase } from "../generic/types";
+import { readJsonFile } from "../generic/json";
 import * as bluebird from "bluebird";
 
 export class FoldersFiles implements ActionInterface {
@@ -85,19 +86,29 @@ export class FoldersFiles implements ActionInterface {
                                 const logoExists = isPathExistsSync(logoFullPath);
                                 const infoFullPath = getChainAssetInfoPath(chain, address);
                                 const infoExists = isPathExistsSync(infoFullPath);
-                                if (!infoExists) {
-                                    const msg = `Missing info file for asset '${chain}/${address}' -- ${infoFullPath}`;
-                                    // enforce that info must be present (with some exceptions)
-                                    if (chain === 'classic' || chain === 'poa' || chain === 'terra' || chain === 'thundertoken') {
-                                        //console.log(msg);
-                                        warnings.push(msg);
-                                    } else {
-                                        console.log(msg);
-                                        errors.push(msg);
+                                // Assets should have a logo and an info file.  Exceptions:
+                                // - status=spam tokens may have no logo 
+                                // - on some chains some valid tokens have no info (should be fixed)
+                                if (!infoExists || !logoExists) {
+                                    if (!infoExists && logoExists) {
+                                        const msg = `Missing info file for asset '${chain}/${address}' -- ${infoFullPath}`;
+                                        // enforce that info must be present (with some exceptions)
+                                        if (chain === 'classic' || chain === 'poa' || chain === 'terra' || chain === 'thundertoken') {
+                                            //console.log(msg);
+                                            warnings.push(msg);
+                                        } else {
+                                            console.log(msg);
+                                            errors.push(msg);
+                                        }
                                     }
-                                }
-                                if (!logoExists && !infoExists) {
-                                    errors.push(`Missing logo and info files for asset '${chain}/${address}' -- ${logoFullPath}`);
+                                    if (!logoExists && infoExists) {
+                                        let info: unknown = readJsonFile(infoFullPath);
+                                        if (!info['status'] || info['status'] !== 'spam') {
+                                            const msg = `Missing logo file for non-spam asset '${chain}/${address}' -- ${logoFullPath}`;
+                                            console.log(msg);
+                                            errors.push(msg);
+                                        }
+                                    }
                                 }
                             });
                         }
