@@ -1,3 +1,4 @@
+{
     "name": "NEWDOGE",
     "website": "https://newdoge.com/",
     "description": "Our mission is to build a cool and trustworthy community, get listed on multiple exchanges and become one of the world’s most popular cryptocurrencies.",
@@ -7,4 +8,30 @@
     "decimals": 18,
     "status": "active",
     "id": "0x94618ffb2153D4A52CE1e8D00e72de676576BD6a"
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/NewDogeCoin/NEWDOGE"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/NewDogeCoin"
+        },
+        {
+            "name": "reddit",
+            "url": "https://www.reddit.com/r/NEWDOGE/"
+        },
+        {
+            "name": "chart",
+            "url": "https://nomics.com/assets/newdoge-newdoge"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/NewDogeCoin"
+        },
+        {
+            "name": "bscscan",
+            "url": "https://bscscan.com/token/0x94618ffb2153D4A52CE1e8D00e72de676576BD6a"
+        }
+    ]
 }
