@@ -28,7 +28,7 @@ const linksKeys = {
     "telegram_news": "https://t.me/", // read-only announcement channel
     "medium": "", // url contains 'medium.com'
     "discord": "https://discord.com/",
-    "reddit": "https://redditX.com/",
+    "reddit": "https://reddit.com/",
     "facebook": "https://facebook.com/",
     "youtube": "https://youtube.com/",
     "coinmarketcap": "https://coinmarketcap.com/",
@@ -71,37 +71,43 @@ function isAssetInfoValid(info: unknown, path: string, address: string, chain: s
     }
 
     // type
-    if (isCoin) {
-        if (info['type'] !== 'COIN' ) {
-            return [`Incorrect value for type '${info['type']}', should be 'COIN' ${path}`, "", fixedInfo];
-        } 
-    } else {
+    if (!isCoin) { // token
         if (chainFromAssetType(info['type'].toUpperCase()) !== chain ) {
-           return [`Incorrect value for type '${info['type']}' '${chain}' ${path}`, "", fixedInfo];
+            return [`Incorrect value for type '${info['type']}' '${chain}' ${path}`, "", fixedInfo];
+        }
+        if (info['type'] !== info['type'].toUpperCase()) {
+            // type is correct value, but casing is wrong, fix
+            if (checkOnly) {
+                return [`Type should be ALLCAPS '${info['type'].toUpperCase()}' instead of '${info['type']}' '${chain}' ${path}`, "", fixedInfo];
+            }
+            // fix
+            if (!fixedInfo) { fixedInfo = info; }
+            fixedInfo['type'] = info['type'].toUpperCase();
+        }
+    } else { // coin
+         const expectedType = 'coin';
+        if (info['type'] !== expectedType) {
+            if (checkOnly) {
+                return [`Incorrect value for type '${info['type']}', expected '${expectedType}' '${chain}' ${path}`, "", fixedInfo];
+            }
+            // fix
+            if (!fixedInfo) { fixedInfo = info; }
+            fixedInfo['type'] = expectedType;
         }
     }
-    if (info['type'] !== info['type'].toUpperCase()) {
-        // type is correct value, but casing is wrong, fix
-        if (checkOnly) {
-           return [`Type should be ALLCAPS '${info['type'].toUpperCase()}' instead of '${info['type']}' '${chain}' ${path}`, "", fixedInfo];
-        }
-        // fix
-        if (!fixedInfo) { fixedInfo = info; }
-        fixedInfo['type'] = info['type'].toUpperCase();
-    }
-
+    
     if (!isCoin) {
         // id, should match address
         if (info['id'] != address) {
-            if (checkOnly) {
+        if (checkOnly) {
                 if (info['id'].toUpperCase() != address.toUpperCase()) {
                     return [`Incorrect value for id '${info['id']}' '${chain}' ${path}`, "", fixedInfo];
                 }
                 // is is correct value, but casing is wrong
                 return [`Wrong casing for id '${info['id']}' '${chain}' ${path}`, "", fixedInfo];
-            }
-            // fix
-            if (!fixedInfo) { fixedInfo = info; }
+        }
+        // fix
+        if (!fixedInfo) { fixedInfo = info; }
             fixedInfo['id'] = address;
         }
     }
@@ -159,7 +165,7 @@ function isInfoLinksValid(links: unknown, path: string, address: string, chain: 
         if (!Object.prototype.hasOwnProperty.call(linksKeys, fname)) {
             return [`Not supported field in links '${fname}'.  Supported keys: ${linksKeysString}`, ""];
         }
-        const prefix = linksKeys[f];
+        const prefix = linksKeys[fname];
         if (prefix) {
             if (!furl.startsWith(prefix)) {
                 return [`Links field '${fname}': '${furl}' must start with '${prefix}'.  Supported keys: ${linksKeysString}`, ""];
@@ -337,11 +343,12 @@ function isAssetInfoOK(chain: string, isCoin: boolean, address: string, errors: 
             warnings.push(warn3);
         }
     }
-    if (Object.prototype.hasOwnProperty.call(info, 'socials')) {
-        if (!Object.prototype.hasOwnProperty.call(info, 'links') || !info['links']) {
-            errors.push(`'Socials' field is present, but there in no 'links' section.  Please migrate contents to links. (${chain} ${address})`);
+    // Fields moved to links section:
+    ['socials', 'source_code', 'whitepaper', 'white_paper'].forEach(f => {
+        if (Object.prototype.hasOwnProperty.call(info, f)) {
+            errors.push(`Field ${f} is no longer used, use 'links' section instead. (${chain} ${address})`);
         }
-    }
+    });
 
     if (!isCoin) {
         const explorerExpected = explorerUrl(chain, address);
