@@ -1,25 +1,29 @@
 {
     "name": "Ark",
     "website": "http://ark.io/",
-    "source_code": "https://github.com/ArkEcosystem",
-    "white_paper": "https://ark.io/Whitepaper.pdf",
     "description": "ARK provides users, developers, and startups with innovative blockchain technologies. Aim to create an entire ecosystem of linked chains and a virtual spiderweb of endless use-cases that make ARK highly flexible, adaptable, and scalable.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/ArkEcosystem",
-            "handle": "ArkEcosystem"
-        },
-        {
-            "name": "Reddit",
-            "url": "https://reddit.com/r/ArkEcosystem",
-            "handle": "ArkEcosystem"
-        }
-    ],
     "explorer": "https://explorer.ark.io",
     "research": "https://research.binance.com/en/projects/ark",
     "symbol": "ARK",
-    "type": "COIN",
+    "type": "coin",
     "decimals": 8,
-    "status": "abandoned"
+    "status": "abandoned",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/ArkEcosystem"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/ArkEcosystem"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/ArkEcosystem"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://ark.io/Whitepaper.pdf"
+        }
+    ]
 }

@@ -1,24 +1,28 @@
 {
     "name": "XinFin Network",
     "website": "https://xinfin.network",
-    "source_code": "https://github.com/XinFinORG",
-    "white_paper": "https://xinfin.org/docs/whitepaper-tech.pdf",
     "description": "XinFin Network is a Enterprise Ready Hybrid Blockchain For Global Trade and Finance,Combining the power of Public & Private blockchains with Interoperable Smart Contracts ",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/XinFin_Official",
-            "handle": "XinFin_Official"
-        },
-        {
-            "name": "Reddit",
-            "url": "https://reddit.com/r/xinfin",
-            "handle": "xinfin"
-        }
-    ],
     "explorer": "https://explorer.xinfin.network/",
     "symbol": "XDC",
-    "type": "COIN",
+    "type": "coin",
     "decimals": 10,
-    "status": "abandoned"
+    "status": "abandoned",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/XinFinORG"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/XinFin_Official"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/xinfin"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://xinfin.org/docs/whitepaper-tech.pdf"
+        }
+    ]
 }

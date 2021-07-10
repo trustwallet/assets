@@ -4,17 +4,19 @@
     "symbol": "BMI",
     "decimals": 18,
     "website": "https://bridgemutual.io",
-    "source_code": "https://github.com/Bridge-Mutual",
     "short_description": "A discretionary risk coverage platform.",
     "description": "Bridge Mutual is a decentralized, discretionary p2p/p2b platform that provides coverage for stablecoins, centralized exchanges, and smart contracts. Its allows users to provide coverage, decide on payouts, and get compensated for taking part in the ecosystem.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/bridge_mutual",
-            "handle": "Bridge_Mutual"
-        }
-    ],
     "explorer": "https://etherscan.io/token/0x725C263e32c72dDC3A19bEa12C5a0479a81eE688",
     "status": "active",
-    "id": "0x725C263e32c72dDC3A19bEa12C5a0479a81eE688"
+    "id": "0x725C263e32c72dDC3A19bEa12C5a0479a81eE688",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/Bridge-Mutual"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/Bridge_Mutual"
+        }
+    ]
 }
