@@ -6,7 +6,7 @@ export const imageMaxLogoSizeKb =  100;
 export const foldersRootdirAllowedFiles: string[] =  [".github", "blockchains", "dapps", "media", "node_modules", "script-old", "script", "test", "history", ".gitignore", "azure-pipelines.yml", "jest.config.js", "LICENSE", "package-lock.json", "package.json", "README.md", ".git", ".eslintignore", ".eslintrc.js"];
 export const binanceUrlTokenAssets =  "https://explorer.binance.org/api/v1/assets?page=1&rows=1000";
 export const binanceDexURL = 'https://dex-atlantic.binance.org/api'
-export const assetsURL = 'https://raw.githubusercontent.com/trustwallet/assets/master'
+export const assetsURL = 'https://assets.trustwalletapp.com'
 
 // Force include & exclude config: list of token symbols, or symbol pairs (e.g. ["Cake", "DAI-WBNB"]).
 export const PancakeSwap_ForceInclude: string[] = ["Cake", "DAI", "ETH", "TWT", "VAI", "USDT", "BLINK", "BTCB", "ALPHA", "INJ", "CTK", "UNI", "XVS", "BUSD", "HARD", "BIFI", "FRONT"];
