@@ -1,11 +1,28 @@
 {
-    "name": "Tether",
-    "website": "https://tether.to",
-    "description": "Tether (USDT) is a cryptocurrency with a value meant to mirror the value of the U.S. dollar.",
-    "explorer": "https://etherscan.io/token/0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "name": "usdt",
     "type": "ERC20",
-    "symbol": "USDT",
-    "decimals": 6,
+    "symbol": "usdy",
+    "decimals": 18,
+    "website": "https://tether.to",
+    "description": "desc",
+    "explorer": "https://etherscan.io/token/0xdAC17F958D2ee523a2206206994597C13D831ec7",
     "status": "active",
-    "id": "0xdAC17F958D2ee523a2206206994597C13D831ec7"
+    "id": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "links": [
+        {
+            "name": "github",
+            "url": "github",
+            "prefix": "https://github.com/"
+        },
+        {
+            "name": "whitepaper",
+            "url": "whip",
+            "prefix": ""
+        },
+        {
+            "name": "twitter",
+            "url": null,
+            "prefix": "https://twitter.com/"
+        }
+    ]
 }
