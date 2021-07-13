@@ -71,37 +71,43 @@ function isAssetInfoValid(info: unknown, path: string, address: string, chain: s
     }
 
     // type
-    if (isCoin) {
-        if (info['type'] !== 'COIN' ) {
-            return [`Incorrect value for type '${info['type']}', should be 'COIN' ${path}`, "", fixedInfo];
-        } 
-    } else {
+    if (!isCoin) { // token
         if (chainFromAssetType(info['type'].toUpperCase()) !== chain ) {
-           return [`Incorrect value for type '${info['type']}' '${chain}' ${path}`, "", fixedInfo];
+            return [`Incorrect value for type '${info['type']}' '${chain}' ${path}`, "", fixedInfo];
+        }
+        if (info['type'] !== info['type'].toUpperCase()) {
+            // type is correct value, but casing is wrong, fix
+            if (checkOnly) {
+                return [`Type should be ALLCAPS '${info['type'].toUpperCase()}' instead of '${info['type']}' '${chain}' ${path}`, "", fixedInfo];
+            }
+            // fix
+            if (!fixedInfo) { fixedInfo = info; }
+            fixedInfo['type'] = info['type'].toUpperCase();
+        }
+    } else { // coin
+         const expectedType = 'coin';
+        if (info['type'] !== expectedType) {
+            if (checkOnly) {
+                return [`Incorrect value for type '${info['type']}', expected '${expectedType}' '${chain}' ${path}`, "", fixedInfo];
+            }
+            // fix
+            if (!fixedInfo) { fixedInfo = info; }
+            fixedInfo['type'] = expectedType;
         }
     }
-    if (info['type'] !== info['type'].toUpperCase()) {
-        // type is correct value, but casing is wrong, fix
-        if (checkOnly) {
-           return [`Type should be ALLCAPS '${info['type'].toUpperCase()}' instead of '${info['type']}' '${chain}' ${path}`, "", fixedInfo];
-        }
-        // fix
-        if (!fixedInfo) { fixedInfo = info; }
-        fixedInfo['type'] = info['type'].toUpperCase();
-    }
-
+    
     if (!isCoin) {
         // id, should match address
         if (info['id'] != address) {
-            if (checkOnly) {
+        if (checkOnly) {
                 if (info['id'].toUpperCase() != address.toUpperCase()) {
                     return [`Incorrect value for id '${info['id']}' '${chain}' ${path}`, "", fixedInfo];
                 }
                 // is is correct value, but casing is wrong
                 return [`Wrong casing for id '${info['id']}' '${chain}' ${path}`, "", fixedInfo];
-            }
-            // fix
-            if (!fixedInfo) { fixedInfo = info; }
+        }
+        // fix
+        if (!fixedInfo) { fixedInfo = info; }
             fixedInfo['id'] = address;
         }
     }
