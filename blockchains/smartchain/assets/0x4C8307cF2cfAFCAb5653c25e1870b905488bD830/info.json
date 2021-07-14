@@ -1,10 +1,21 @@
 {
-"name": "AmeCoin",
-"type": "BEP20",
-"symbol": "AME",
-"decimals": 9,
-"description": "The first Brazilian cryptocurrency with the objective of helping to fight childhood cancer.",
-"website": "https://amecoin.com.br/",
-"explorer": "https://bscscan.com/token/0x4C8307cF2cfAFCAb5653c25e1870b905488bD830",
-"status": "active",
-"id": "0x4C8307cF2cfAFCAb5653c25e1870b905488bD830"
+    "name": "AmeCoin",
+    "type": "BEP20",
+    "symbol": "AME",
+    "decimals": 9,
+    "website": "https://amecoin.com.br/",
+    "description": "The first Brazilian cryptocurrency with the objective of helping to fight childhood cancer.",
+    "explorer": "https://bscscan.com/token/0x4C8307cF2cfAFCAb5653c25e1870b905488bD830",
+    "status": "active",
+    "id": "0x4C8307cF2cfAFCAb5653c25e1870b905488bD830",
+    "links": [
+        {
+            "name": "telegram",
+            "url": "https://t.me/AmeCoinOficial"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/amecoin_br"
+        }
+    ]
+}
