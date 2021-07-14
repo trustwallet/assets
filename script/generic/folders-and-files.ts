@@ -93,7 +93,7 @@ export class FoldersFiles implements ActionInterface {
                                     if (!infoExists && logoExists) {
                                         const msg = `Missing info file for asset '${chain}/${address}' -- ${infoFullPath}`;
                                         // enforce that info must be present (with some exceptions)
-                                        if (chain === 'classic' || chain === 'terra') {
+                                        if (chain === 'terra') {
                                             //console.log(msg);
                                             warnings.push(msg);
                                         } else {
