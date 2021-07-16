@@ -1,21 +1,28 @@
 {
     "name": "Ether-1",
     "website": "https://ether1.org/",
-    "source_code": "https://github.com/Ether1Project",
-    "white_paper": "http://www.ether1.cloud/images/whitepaper.pdf",
-    "short_description": "The Ether-1 Project aims to disrupt how information is shared and controlled on the internet by providing a new solution for how files are fundamentally stored and accessed.",
-    "description": "Ether-1 (ETHO) is a fork of Ethereum implementing a decentralized hosting platform (ethoFS) using a community-owned node network combining blockchain indexing technology and the IPFS protocol to deliver decentralized content on-demand.",
-    "socials": [
+    "description": "The Ether-1 Project aims to disrupt how information is shared and controlled on the internet by providing a new solution for how files are fundamentally stored and accessed.",
+    "explorer": "https://explorer.ether1.org/",
+    "symbol": "ETHO",
+    "type": "coin",
+    "decimals": 18,
+    "status": "abandoned",
+    "links": [
         {
-            "name": "Twitter",
-            "url": "https://twitter.com/Ether1Official",
-            "handle": "Ether1Official"
+            "name": "github",
+            "url": "https://github.com/Ether1Project"
         },
         {
-            "name": "Reddit",
-            "url": "https://www.reddit.com/r/etho1/",
-            "handle": "etho1"
+            "name": "twitter",
+            "url": "https://twitter.com/Ether1Official"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/etho1/"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://www.ether1.cloud/images/whitepaper.pdf"
         }
-    ],
-    "explorer": "https://explorer.ether1.org/"
+    ]
 }

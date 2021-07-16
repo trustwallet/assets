@@ -1,0 +1,23 @@
+{
+    "versionEnd": {
+        "versionNum": 1147,
+        "commit": "f8e6af9e8a67977994a9f7cd727e0118b1564787",
+        "date": "2021-05-08T08:02:25.093Z"
+    },
+    "versionStart": {
+        "versionNum": 1146,
+        "commit": "30e4d5369e535c689c8a75a8ed86da10b61e982b",
+        "date": "2021-05-08T08:01:06.397Z"
+    },
+    "changes": [
+        "blockchains/ethereum/allowlist.json",
+        "blockchains/ethereum/assets/0x8E4B1E38c082C7cEb638c084C102352421FE607F/info.json",
+        "blockchains/ethereum/assets/0xBC84F95f089b9291C552EBA09D30Fd56A932AFC9/info.json",
+        "blockchains/ethereum/assets/0xf786c34106762Ab4Eeb45a51B42a62470E9D5332/info.json",
+        "blockchains/smartchain/allowlist.json",
+        "blockchains/smartchain/assets/0x05c1EFdEbB8A12f2F3A8DEE07eC4Aa5c452BDAF0/info.json",
+        "blockchains/smartchain/assets/0x38b4119845b5A60D48178a17C9215162E84856ed/info.json",
+        "blockchains/smartchain/assets/0x7e2d99B3b4854E741dC6ada101937A1a3aAb861e/info.json",
+        "blockchains/smartchain/assets/0x87b1AccE6a1958E522233A737313C086551a5c76/info.json"
+    ]
+}
