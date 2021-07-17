@@ -1,0 +1,33 @@
+{
+    "name": "MyBitcoin",
+    "type": "BEP20",
+    "symbol": "MYBTC",
+    "decimals": 18,
+    "website": "https://my-bitcoin.org",
+    "description": "Earn free Bitcoin by only holding MYBYC",
+    "explorer": "https://bscscan.com/token/0x411aef63f042a62a0e8b61089b185f7ec1636e37",
+    "status": "active",
+    "id": "0x411aef63f042a62a0e8b61089b185f7ec1636e37",
+    "links": [
+        {
+            "name": "telegram",
+            "url": "https://t.me/mybtcofficial"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/mybtctoken"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://my-bitcoin.org/whitepaper/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/mybitcoin"
+        },
+        {
+            "name": "source_code",
+            "url": "https://bscscan.com/address/0x411aef63f042a62a0e8b61089b185f7ec1636e37#code"
+        }
+    ]
+}
