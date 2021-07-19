@@ -1,8 +1,6 @@
 {
     "name": "BET",
     "website": "https://earnbet.io",
-    "source_code": "https://etherscan.io/token/0xfdd4E938Bb067280a52AC4e02AaF1502Cc882bA6",
-    "white_paper": "https://earnbet.io/BET",
     "description": "EarnBet is a fully decentralized profit-sharing casino",
     "explorer": "https://etherscan.io/token/0xfdd4E938Bb067280a52AC4e02AaF1502Cc882bA6",
     "research": "https://research.binance.com/en/projects/bitcoin",
@@ -10,5 +8,11 @@
     "symbol": "BET",
     "decimals": 4,
     "status": "active",
-    "id": "0xfdd4E938Bb067280a52AC4e02AaF1502Cc882bA6"
+    "id": "0xfdd4E938Bb067280a52AC4e02AaF1502Cc882bA6",
+    "links": [
+        {
+            "name": "whitepaper",
+            "url": "https://earnbet.io/BET"
+        }
+    ]
 }
