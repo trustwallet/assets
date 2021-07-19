@@ -1,10 +1,21 @@
-"name": "Baby Shiba Token",
-"website": "https://babyshibatoken.net/",
-"description": "The Birth of Baby Shiba! - World's Best Community Coin",
-"explorer": "https://bscscan.com/token/0xf7ad5b7d0e408daab2f5689103ca84d1a416ceba",
-"type": "BEP20",
-"symbol": "BabyShiba",
-"decimals": 9,
-"status": "active",
-"id": "0xf7Ad5B7D0E408Daab2F5689103cA84D1a416CEbA"
+{
+    "name": "Baby Shiba Token",
+    "type": "BEP20",
+    "symbol": "BabyShiba",
+    "decimals": 9,
+    "website": "https://babyshibatoken.net/",
+    "description": "The Birth of Baby Shiba! - World's Best Community Coin",
+    "explorer": "https://bscscan.com/token/0xf7Ad5B7D0E408Daab2F5689103cA84D1a416CEbA",
+    "status": "active",
+    "id": "0xf7Ad5B7D0E408Daab2F5689103cA84D1a416CEbA",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/BabyShiba_Token"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/babyshiba_token"
+        }
+    ]
 }
