@@ -1,8 +1,8 @@
 import { ActionInterface, CheckStepInterface } from "../generic/interface";
 import { getChainAssetsPath } from "../generic/repo-structure";
 import { Tron } from "../generic/blockchains";
-import { readDirSync, isPathExistsSync } from "../generic/filesystem";
-import { getChainAssetLogoPath, getChainValidatorsAssets } from "../generic/repo-structure";
+import { readDirSync } from "../generic/filesystem";
+import { getChainValidatorsAssets } from "../generic/repo-structure";
 import { isLowerCase, isUpperCase } from "../generic/types";
 import * as bluebird from "bluebird";
 
@@ -31,10 +31,6 @@ export class TronAction implements ActionInterface {
                     await bluebird.each(assets, async (asset) => {
                         if (!isTRC10(asset) && !isTRC20(asset)) {
                             errors.push(`Asset ${asset} at path '${path}' is not TRC10 nor TRC20`);
-                        }
-                        const assetsLogoPath = getChainAssetLogoPath(Tron, asset);
-                        if (!isPathExistsSync(assetsLogoPath)) {
-                            errors.push(`Missing file at path '${assetsLogoPath}'`);
                         }
                     });
                     return [errors, []];
