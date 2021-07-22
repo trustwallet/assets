@@ -8,5 +8,26 @@
     "explorer": "https://explorer.solana.com/address/BXXkv6z8ykpG1yuvUDPgh732wzVHB69RnB9YgSYh3itW",
     "status": "active",
     "id": "BXXkv6z8ykpG1yuvUDPgh732wzVHB69RnB9YgSYh3itW",
-    "links": []
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/centrehq"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://centre.io/pdfs/centre-whitepaper.pdf"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/usd-coin/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/usd-coin/"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/centre-blog"
+        }
+    ]
 }
