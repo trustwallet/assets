@@ -183,6 +183,9 @@
                 },
                 {
                     "base": "c20000714_t0xF952Fc3ca7325Cc27D15885d37117676d25BfdA6"
+                },
+                {
+                    "base": "c20000714_t0xc350caa89eb963d5d6b964324a0a7736d8d65533"
                 }
             ]
         },
@@ -831,6 +834,16 @@
             "symbol": "EGG",
             "decimals": 18,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0xF952Fc3ca7325Cc27D15885d37117676d25BfdA6/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c20000714_t0xc350caa89eb963d5d6b964324a0a7736d8d65533",
+            "type": "BEP20",
+            "address": "0xc350caa89eb963d5d6b964324a0a7736d8d65533",
+            "name": "Infinitee",
+            "symbol": "INFTEE",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0xc350caa89eb963d5d6b964324a0a7736d8d65533/logo.png",
             "pairs": []
         }
     ],
