@@ -1,13 +1,31 @@
+
 {
     "name": "CashinBid Main",
-    "website": "https://exchange.cashinbid.com/",
-    "telegram": "https://t.me/cashinbid",
-    "twitter": "https://twitter.com/Bid_Cash",
-    "description": "CashinBid Main ``CIBC`` is the native token of CashinBid, the most lucrative exchange platform out there. This project is more of our way to present a different approach to this bubble called cryptocurrency.",
-    "explorer": "https://bscscan.com/token/0x493f2ea0361aa829d67250f401097aee38cac9af",
     "type": "BEP20",
     "symbol": "CIBC",
     "decimals": 18,
+    "website": "https://exchange.cashinbid.com",
+    "description": "CashinBid Main CIBC is the native token of CashinBid, the most lucrative exchange platform out there. This project is more of our way to present a different approach to this bubble called cryptocurrency.",
+    "explorer": "https://bscscan.com/token/0x493f2ea0361aa829d67250f401097aee38cac9af",
     "status": "active",
-    "id": "0x493f2ea0361aa829d67250f401097aee38cac9af"
-}
+    "id": "0x493f2ea0361aa829d67250f401097aee38cac9af",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/bid_cash"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/CashinBid"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/cashinbid"
+        },
+        {
+            "name": "instagram",
+            "url": "https://instagram.com/cashinbid"
+        },
+
+    ]
+} 
