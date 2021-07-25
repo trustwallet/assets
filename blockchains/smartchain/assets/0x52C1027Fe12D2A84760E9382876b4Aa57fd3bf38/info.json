@@ -4,17 +4,21 @@
     "description": "World of Tiny Titans. Tiny Titans — collectable & tradeable NFTs on BSC which you can train, level and win prices.",
     "links": [
         {
-            "name": "Twitter",
+            "name": "twitter",
             "url": "https://twitter.com/RealTinyTitans"
         },
         {
-            "name": "Medium",
+            "name": "medium",
             "url": "https://tinytitans.medium.com/"
         },
         {
-            "name": "Telegram",
+            "name": "telegram",
             "url": "https://t.me/tinytitans"
-        }
+        },
+        {
+            "name": "source_code",
+            "url": "ttps://bscscan.com/address/0x52C1027Fe12D2A84760E9382876b4Aa57fd3bf38#code"
+        },
     ],
     "explorer": "https://bscscan.com/token/0x52C1027Fe12D2A84760E9382876b4Aa57fd3bf38",
     "type": "BEP20",
