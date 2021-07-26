@@ -209,6 +209,7 @@ export function chainFromAssetType(type: string): string {
         case "XDAI": return "xdai";
         case "WAVES": return "waves";
         case "POA": return "poa";
+        case "POLYGON-ERC20": return "polygon";
         default: return "";
     }
 }
@@ -285,7 +286,10 @@ export function explorerUrl(chain: string, contract: string): string {
             case CoinType.name(CoinType.poa).toLowerCase():
             case 'poa':
                 return `https://blockscout.com/poa/core/tokens/${contract}`;
-        }
+
+            case CoinType.name(CoinType.polygon).toLowerCase():
+            case 'polygon':
+                return `https://polygonscan.com/token/${contract}`;            }
     }
     return "";
 }
