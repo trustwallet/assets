@@ -289,7 +289,7 @@ export function explorerUrl(chain: string, contract: string): string {
 
             case CoinType.name(CoinType.polygon).toLowerCase():
             case 'polygon':
-                return `https://explorer.matic.network/token/${contract}`;            }
+                return `https://polygonscan.com/token/${contract}`;            }
     }
     return "";
 }
