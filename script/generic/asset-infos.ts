@@ -209,7 +209,7 @@ export function chainFromAssetType(type: string): string {
         case "XDAI": return "xdai";
         case "WAVES": return "waves";
         case "POA": return "poa";
-        case "POLYGON-ERC20": return "polygon";
+        case "POLYGON": return "polygon";
         default: return "";
     }
 }
