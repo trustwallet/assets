@@ -1,7 +1,7 @@
 {
     "name": "Trust Wallet: Smart Chain",
     "logoURI": "https://trustwallet.com/assets/images/favicon.png",
-    "timestamp": "2021-06-17T12:17:25.447Z",
+    "timestamp": "2021-07-28T10:10:00.000Z",
     "tokens": [
         {
             "chainId": 56,
@@ -832,10 +832,25 @@
             "decimals": 18,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0xF952Fc3ca7325Cc27D15885d37117676d25BfdA6/logo.png",
             "pairs": []
+        },
+        {
+            "chainId": 56,
+            "asset": "c20000714_t0x3e900195B93423b8E7bdDD63d1d51c02fD18CCdf",
+            "type": "BEP20",
+            "address": "0x3e900195B93423b8E7bdDD63d1d51c02fD18CCdf",
+            "name": "LIGHTENING.CASH",
+            "symbol": "LIC",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0x3e900195B93423b8E7bdDD63d1d51c02fD18CCdf/logo.png",
+            "pairs": [
+                {
+                    "base": "c20000714_t0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56"
+                }
+            ]
         }
     ],
     "version": {
-        "major": 11,
+        "major": 12,
         "minor": 0,
         "patch": 0
     }
