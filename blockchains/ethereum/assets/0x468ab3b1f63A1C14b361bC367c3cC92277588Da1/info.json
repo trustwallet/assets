@@ -1,13 +1,21 @@
 {
     "name": "Yeld Finance",
     "website": "https://yeld.finance",
-    "source_code": "https://github.com/merlox/yeld-website",
-    "white_paper": "https://yeld.finance",
     "description": "Yeld is the next generation in DeFi yield farming products.",
     "explorer": "https://etherscan.io/token/0x468ab3b1f63A1C14b361bC367c3cC92277588Da1",
     "type": "ERC20",
     "symbol": "YELD",
     "decimals": 18,
     "status": "active",
-    "id": "0x468ab3b1f63A1C14b361bC367c3cC92277588Da1"
+    "id": "0x468ab3b1f63A1C14b361bC367c3cC92277588Da1",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/merlox/yeld-website"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://yeld.finance"
+        }
+    ]
 }
