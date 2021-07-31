@@ -1,25 +1,29 @@
 {
     "name": "Ontology",
     "website": "https://ont.io",
-    "source_code": "https://github.com/ontio",
-    "white_paper": "https://ont.io/wp/Ontology-Introductory-White-Paper-EN.pdf",
     "description": "Ontology is a new high-performance public blockchain project & a distributed trust collaboration platform that include a series of complete distributed ledgers and smart contract systems.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/OntologyNetwork",
-            "handle": "OntologyNetwork"
-        },
-        {
-            "name": "Reddit",
-            "url": "https://reddit.com/r/OntologyNetwork",
-            "handle": "OntologyNetwork"
-        }
-    ],
     "explorer": "https://explorer.ont.io",
     "research": "https://research.binance.com/en/projects/ontology",
     "symbol": "ONT",
-    "type": "COIN",
+    "type": "coin",
     "decimals": 0,
-    "status": "active"
+    "status": "active",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/ontio"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/OntologyNetwork"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/OntologyNetwork"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://ont.io/wp/Ontology-Introductory-White-Paper-EN.pdf"
+        }
+    ]
 }
