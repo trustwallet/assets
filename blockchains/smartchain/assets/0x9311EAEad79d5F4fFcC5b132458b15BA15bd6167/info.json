@@ -1,9 +1,25 @@
-"name": "MiniBNB",
-    "website": "http://www.minibnb.org/",
-    "description": "MiniBNB is a BNB reflection coin.",
+{
+    "name": "MiniBNB",
+    "website": "http://www.minibnb.org",
+    "description": "MiniBNB is a BNB reflection coin. A decentralized token for all your financial needs.",
     "explorer": "https://bscscan.com/address/0x9311EAEad79d5F4fFcC5b132458b15BA15bd6167",
     "type": "BEP20",
-    "symbol": "BUSD",
+    "symbol": "MiniBNB",
     "decimals": 18,
     "status": "active",
     "id": "0x9311EAEad79d5F4fFcC5b132458b15BA15bd6167"
+    "links": [
+        {
+            "name": "website",
+            "url": "https://www.minibnb.org"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/MiniBNB_Officia"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/minibnb_b"
+        }
+    ]
+} 
