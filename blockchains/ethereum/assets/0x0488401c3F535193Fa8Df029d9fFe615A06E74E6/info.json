@@ -3,9 +3,35 @@
     "symbol": "SRK",
     "type": "ERC20",
     "decimals": 18,
-    "description": "SparkPoint Ecosystem is a decentralized payment gateway with integrated crypto exchanges, blockchain based e-learning, gaming, and online store.",
+    "description": "SparkPoint Ecosystem is a decentralized payment gateway with integrated crypto exchanges, blockchain based e-learning and gaming",
     "website": "https://www.sparkpoint.io/",
     "explorer": "https://etherscan.io/token/0x0488401c3F535193Fa8Df029d9fFe615A06E74E6",
     "status": "active",
-    "id": "0x0488401c3F535193Fa8Df029d9fFe615A06E74E6"
+    "id": "0x0488401c3F535193Fa8Df029d9fFe615A06E74E6",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/sparkpointio"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/sparkpointio"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/SparkpointOfficial"
+        },
+        {
+            "name": "reddit",
+            "url": "https://www.reddit.com/r/SparkPoint/"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/theecosystem"
+        },
+        {
+            "name": "facebook",
+            "url": "https://web.facebook.com/sparkpointio"
+        }
+    ]
 }
