@@ -1,29 +1,29 @@
 {
-    "name": "",
-    "website": "",
-    "source_code": "",
-    "whitepaper": "",
-    "explorers": [
+    "name": "xDai",
+    "website": "https://xdaichain.com",
+    "description": "The first-ever USD stable blockchain and multi-chain staking token.",
+    "explorer": "https://blockscout.com/poa/xdai",
+    "research": "https://research.binance.com/en/projects/poa-network",
+    "symbol": "xDAI",
+    "type": "coin",
+    "decimals": 18,
+    "status": "abandoned",
+    "links": [
         {
-            "name": "",
-            "url": ""
-        }
-    ],
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": ""
+            "name": "github",
+            "url": "https://github.com/xdaichain"
         },
         {
-            "name": "Reddit",
-            "url": ""
-        }
-    ],
-    "details": [
+            "name": "twitter",
+            "url": "https://twitter.com/xdaichain"
+        },
         {
-            "language": "en",
-            "description": ""
+            "name": "reddit",
+            "url": "https://reddit.com/r/POA"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://www.xdaichain.com/for-validators/posdao-whitepaper"
         }
-    ],
-    "data_source": "crowd"
+    ]
 }

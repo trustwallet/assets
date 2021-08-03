@@ -1,29 +1,32 @@
 {
     "name": "Cosmos",
     "website": "https://cosmos.network/",
-    "source_code": "https://github.com/cosmos",
-    "whitepaper": "https://cosmos.network/resources/whitepaper",
-    "explorers": [
-        {
-            "name": "Mintscan",
-            "url": "https://www.mintscan.io/"
-        }
+    "description": "Cosmos is a secure & scalable blockchain ecosystem where thousands of dApps interoperate to create the foundation for a new token economy.",
+    "explorer": "https://www.mintscan.io/",
+    "research": "https://research.binance.com/en/projects/cosmos-network",
+    "symbol": "ATOM",
+    "type": "coin",
+    "decimals": 6,
+    "status": "active",
+    "tags": [
+        "staking-native"
     ],
-    "socials": [
+    "links": [
         {
-            "name": "Twitter",
+            "name": "github",
+            "url": "https://github.com/cosmos"
+        },
+        {
+            "name": "twitter",
             "url": "https://twitter.com/cosmos"
         },
         {
-            "name": "Reddit",
+            "name": "reddit",
             "url": "https://reddit.com/r/cosmosnetwork"
-        }
-    ],
-    "details": [
+        },
         {
-            "language": "en",
-            "description": "Cosmos is a secure & scalable blockchain ecosystem where thousands of dApps interoperate to create the foundation for a new token economy."
+            "name": "whitepaper",
+            "url": "https://cosmos.network/resources/whitepaper"
         }
-    ],
-    "data_source": "crowd"
+    ]
 }

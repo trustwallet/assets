@@ -1,29 +1,11 @@
 {
-    "name": "",
-    "website": "",
-    "source_code": "",
-    "whitepaper": "",
-    "explorers": [
-        {
-            "name": "",
-            "url": ""
-        }
-    ],
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": ""
-        },
-        {
-            "name": "Reddit",
-            "url": ""
-        }
-    ],
-    "details": [
-        {
-            "language": "en",
-            "description": ""
-        }
-    ],
-    "data_source": "crowd"
+    "name": "Filecoin",
+    "website": "https://filecoin.io",
+    "description": "Filecoin provides a blockchain-based marketplace that aims to revolutionize the global storage economy.",
+    "explorer": "https://filfox.info/",
+    "research": "https://research.binance.com/en/projects/filecoin",
+    "symbol": "FIL",
+    "type": "coin",
+    "decimals": 18,
+    "status": "active"
 }

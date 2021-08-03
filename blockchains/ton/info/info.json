@@ -1,29 +1,20 @@
 {
-    "name": "",
-    "website": "",
-    "source_code": "",
-    "whitepaper": "",
-    "explorers": [
+    "name": "Telegram Open Network",
+    "website": "https://telegram.org/",
+    "description": "The Telegram Open Network (TON) describes itself as a fast, secure and scalable blockchain and network project, reportedly capable of handling millions of transactions per second.",
+    "explorer": "https://test.ton.org/testnet/",
+    "symbol": "GRAM",
+    "type": "coin",
+    "decimals": 9,
+    "status": "abandoned",
+    "links": [
         {
-            "name": "",
-            "url": ""
-        }
-    ],
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": ""
+            "name": "github",
+            "url": "https://github.com/ton-blockchain/ton"
         },
         {
-            "name": "Reddit",
-            "url": ""
+            "name": "whitepaper",
+            "url": "https://test.ton.org/ton.pdf"
         }
-    ],
-    "details": [
-        {
-            "language": "en",
-            "description": ""
-        }
-    ],
-    "data_source": "crowd"
+    ]
 }
