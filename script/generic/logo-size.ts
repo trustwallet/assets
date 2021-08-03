@@ -5,7 +5,8 @@ import {
     getChainAssetsPath,
     getChainAssetLogoPath,
     getChainValidatorsListPath,
-    getChainValidatorAssetLogoPath
+    getChainValidatorAssetLogoPath,
+    dappsPath
 } from "../generic/repo-structure";
 import {
     readDirSync,
@@ -16,12 +17,14 @@ import { checkResizeIfTooLarge } from "../generic/image";
 import { ActionInterface, CheckStepInterface } from "../generic/interface";
 
 // return name of large logo, or empty
-async function checkDownsize(chains, checkOnly: boolean): Promise<string[]> {
+async function checkDownsize(chains: string[], checkOnly: boolean): Promise<string[]> {
     console.log(`Checking all logos for size ...`);
     let totalCountChecked = 0;
     let totalCountTooLarge = 0;
     let totalCountUpdated = 0;
     const largePaths: string[] = [];
+
+    // Check asset logos, under given chains
     await bluebird.map(chains, async chain => {
         let countChecked = 0;
         let countTooLarge = 0;
@@ -39,11 +42,13 @@ async function checkDownsize(chains, checkOnly: boolean): Promise<string[]> {
         if (isPathExistsSync(assetsPath)) {
             await bluebird.mapSeries(readDirSync(assetsPath), async asset => {
                 const path = getChainAssetLogoPath(chain, asset);
-                countChecked++;
-                const [tooLarge, updated] = await checkResizeIfTooLarge(path, checkOnly);
-                if (tooLarge) { largePaths.push(path); }
-                countTooLarge += tooLarge ? 1 : 0;
-                countUpdated += updated ? 1 : 0;
+                if (isPathExistsSync(path)) {
+                    countChecked++;
+                    const [tooLarge, updated] = await checkResizeIfTooLarge(path, checkOnly);
+                    if (tooLarge) { largePaths.push(path); }
+                    countTooLarge += tooLarge ? 1 : 0;
+                    countUpdated += updated ? 1 : 0;
+                }
             })
         }
 
@@ -58,7 +63,7 @@ async function checkDownsize(chains, checkOnly: boolean): Promise<string[]> {
                 if (tooLarge) { largePaths.push(path); }
                 countTooLarge += tooLarge ? 1 : 0;
                 countUpdated += updated ? 1 : 0;
-            })
+            });
         }
 
         totalCountChecked += countChecked;
@@ -68,6 +73,30 @@ async function checkDownsize(chains, checkOnly: boolean): Promise<string[]> {
             console.log(`Checking logos on chain ${chain} completed, ${countChecked} checked, ${countTooLarge} too large, ${largePaths}, ${countUpdated} logos updated`);
         }
     });
+
+    // Check dapps logos
+    if (isPathExistsSync(dappsPath)) {
+        let countChecked = 0;
+        let countTooLarge = 0;
+        let countUpdated = 0;
+
+        await bluebird.mapSeries(readDirSync(dappsPath), async filename => {
+            const path = dappsPath + `/` + filename;
+            countChecked++;
+            const [tooLarge, updated] = await checkResizeIfTooLarge(path, checkOnly);
+            if (tooLarge) { largePaths.push(path); }
+            countTooLarge += tooLarge ? 1 : 0;
+            countUpdated += updated ? 1 : 0;
+        });
+
+        totalCountChecked += countChecked;
+        totalCountTooLarge += countTooLarge;
+        totalCountUpdated += countUpdated;
+        if (countTooLarge > 0 || countUpdated > 0) {
+            console.log(`Checking dapps logos completed, ${countChecked} checked, ${countTooLarge} too large, ${largePaths}, ${countUpdated} logos updated`);
+        }
+    }
+
     console.log(`Checking logos completed, ${totalCountChecked} logos checked, ${totalCountTooLarge} too large, ${totalCountUpdated} logos updated`);
     return largePaths;
 }

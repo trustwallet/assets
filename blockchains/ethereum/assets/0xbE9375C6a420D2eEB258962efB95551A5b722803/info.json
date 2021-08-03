@@ -1,23 +1,25 @@
 {
     "name": "StormX Token",
     "website": "https://stormx.io",
-    "short_description": "Earn crypto when you shop online.",
+    "description": "Earn crypto when you shop online.",
     "explorer": "https://etherscan.io/token/0xbe9375c6a420d2eeb258962efb95551a5b722803",
-    "socials": [
+    "type": "ERC20",
+    "symbol": "STMX",
+    "decimals": 18,
+    "status": "active",
+    "id": "0xbE9375C6a420D2eEB258962efB95551A5b722803",
+    "links": [
         {
-            "name": "Twitter",
-            "url": "https://twitter.com/stormxio",
-            "handle": "Stormxio"
+            "name": "twitter",
+            "url": "https://twitter.com/Stormxio"
         },
         {
-            "name": "Reddit",
-            "url": "https://www.reddit.com/r/stormxio/",
-            "handle": "Stormxio"
+            "name": "telegram",
+            "url": "https://t.me/stormxapp"
         },
         {
-            "name": "Telegram",
-            "url": "https://t.me/stormxapp",
-            "handle": "Stormxapp"
+            "name": "reddit",
+            "url": "https://reddit.com/r/stormxio/"
         }
     ]
 }

@@ -1,20 +1,25 @@
 {
     "name": "Trustlines Network Token",
     "website": "https://trustlines.network/",
-    "short_description": "TLN are ERC20 tokens on the Ethereum chain, which can be converted to TLC by sending them to the Trustlines Blockchain bridge.",
     "description": "TLN are ERC20 tokens on the Ethereum chain, which can be converted to TLC by sending them to the Trustlines Blockchain bridge.",
     "explorer": "https://etherscan.io/token/0x679131F591B4f369acB8cd8c51E68596806c3916",
-    "socials": [
+    "type": "ERC20",
+    "symbol": "TLN",
+    "decimals": 18,
+    "status": "active",
+    "id": "0x679131F591B4f369acB8cd8c51E68596806c3916",
+    "links": [
         {
-            "name": "Twitter",
-            "url": "https://twitter.com/TrustlinesFound",
-            "handle": "TrustlinesFound"
+            "name": "github",
+            "url": "https://github.com/trustlines-protocol/"
         },
         {
-            "name": "Reddit",
-            "url": "https://www.reddit.com/r/Trustlines",
-            "handle": "Trustlines"
+            "name": "twitter",
+            "url": "https://twitter.com/TrustlinesFound"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/Trustlines"
         }
-    ],
-    "source_code": "http://github.com/trustlines-protocol/"
+    ]
 }

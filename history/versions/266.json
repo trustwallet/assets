@@ -1,0 +1,16 @@
+{
+    "versionEnd": {
+        "versionNum": 266,
+        "commit": "e1c9e4e46c990d9e072a943dc485f60e9ecf9c96",
+        "date": "2021-03-23T16:39:16.874Z"
+    },
+    "versionStart": {
+        "versionNum": 265,
+        "commit": "78c404dcfc689523f57bba9eacc67832d0437795",
+        "date": "2021-03-23T16:37:47.579Z"
+    },
+    "changes": [
+        "blockchains/ethereum/allowlist.json",
+        "blockchains/solana/allowlist.json"
+    ]
+}
