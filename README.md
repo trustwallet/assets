@@ -61,11 +61,18 @@ There are several scripts available for maintainers:
 - `npm test` -- Run script unit tests
 - `npm lint` -- Run Lint static code check
 
+## On Checks
+
+This repo contais a set of scripts for verification of all the information.  Implemented as Typescript scripts, available through `npm run check`, and executed in CI build; checks the whole repo.
+There are similar check logic implemeted:
+- in assets-management app; for checking changed token files in PRs, or when creating a PR.  Implemented as a Typescript library, checks diffs, can be run from browser environment.
+- in merge-fee-bot, which runs as a GitHub app shows result in PR comment.  Also uses library, but executes in a non-browser environment.
+
 ## Trading pair maintenance
 
 Info on supported trading pairs are stored in `tokenlist.json` files.
 Trading pairs can be updated --
-from Uniswap/Ethereum and Panckaswap/Smartchain -- using update script (and checking in changes).
+from Uniswap/Ethereum and PancakeSwap/Smartchain -- using update script (and checking in changes).
 Minimal limit values for trading pair inclusion are set in the `config.ts` file.
 There are also options for force-include and force-exclude in the config.
 
