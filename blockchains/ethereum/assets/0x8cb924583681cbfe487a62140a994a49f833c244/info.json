@@ -7,12 +7,8 @@
     "symbol": "SWAPP",
     "decimals": 18,
     "status": "active",
-    "id": "0x8cb924583681cbfe487a62140a994a49f833c244",
+    "id": "0x8CB924583681cbFE487A62140a994A49F833c244",
     "links": [
-        {
-            "name": "dapp",
-            "url": "https://dapp.swapp.ee"
-        },
         {
             "name": "blog",
             "url": "https://blog.swapp.ee"
@@ -40,6 +36,14 @@
         {
             "name": "whitepaper",
             "url": "https://whitepaper.swapp.ee"
-        }
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/swapp-protocol"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://www.coingecko.com/en/coins/swapp"
+        },
     ]
 }
