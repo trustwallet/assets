@@ -8,5 +8,31 @@
     "symbol": "SNX",
     "decimals": 18,
     "status": "active",
-    "id": "0x9Ac983826058b8a9C7Aa1C9171441191232E8404"
+    "id": "0x9Ac983826058b8a9C7Aa1C9171441191232E8404",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/Synthetixio/synthetix"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/synthetix_io"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/synthetix_io/"
+        },
+        {
+            "name": "blog",
+            "url": "https://blog.havven.io/"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://synthetix.io/uploads/havven_whitepaper.pdf"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/havven/"
+        }
+    ]
 }
