@@ -7,5 +7,15 @@
     "symbol": "DOOR",
     "decimals": 18,
     "status": "active",
-    "id": "0x7D48FBe0A877bB1f511fcf9B57F12420C75841e9"
+    "id": "0x7D48FBe0A877bB1f511fcf9B57F12420C75841e9",
+    "links": [
+        {
+            "name": "coingecko",
+            "url": "https://www.coingecko.com/en/coins/door"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/door/"
+        }
+    ]
 }
