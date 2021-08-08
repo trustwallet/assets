@@ -7,7 +7,7 @@
     "description": "Dogecoin 2.0 is a DEFI token on the BSC network. Born out of the original Dogecoin community.",
     "explorer": "https://bscscan.com/token/0x3780e00d4c60887af38345ccd44f7617dbfb10a0",
     "status": "active",
-    "id": "0x3780E00D4c60887AF38345cCd44f7617dBFB10A0",
+    "id": "0x3780E00D4c60887AF38345cCd44f7617dBFB10A0"
     "links": [
         {
             "name": "github",
@@ -19,11 +19,23 @@
         },
         {
             "name": "reddit",
-            "url": "https://reddit.com/r/Dogecoin2_point_0/"
+            "https://www.reddit.com/r/Dogecoin2_point_0/"
+        {
+            "name": "discord",
+            "url": "https://discord.gg/doge2"
         },
         {
             "name": "telegram",
             "url": "https://t.me/joinchat/pbZ1dx14bCAyMzY0"
+        {
+            "name": "phone",
+            "url": "tel:19105370572"
+        }, 
+        {
+            "name": "facebook",
+            "url": "https://www.facebook.com/DOGECOIN2/"
+        },
         }
     ]
+}
 }
