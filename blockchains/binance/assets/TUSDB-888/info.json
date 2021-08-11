@@ -1,13 +1,13 @@
 {
     "name": "TrueUSD",
-    "website": "https://www.trueusd.com/",
+    "symbol": "TUSDB",
+    "type": "BEP2",
+    "decimals": 8,
     "description": "TrueUSD (TUSD) is the first independently-verified digital asset redeemable 1-for-1 for US Dollars.",
-    "explorer": "https://etherscan.io/token/0x0000000000085d4780B73119b644AE5ecd22b376",
-    "type": "ERC20",
-    "symbol": "TUSD",
-    "decimals": 18,
+    "website": "https://www.trueusd.com/",
+    "explorer": "https://explorer.binance.org/asset/TUSDB-888",
     "status": "active",
-    "id": "0x0000000000085d4780B73119b644AE5ecd22b376",
+    "id": "TUSDB-888",
     "links": [
         {
             "name": "github",
@@ -20,10 +20,6 @@
         {
             "name": "telegram",
             "url": "https://t.me/TUSDofficial_EN"
-        },
-        {
-            "name": "medium",
-            "url": "https://trueusd.medium.com/"
         },
         {
             "name": "coingecko",
