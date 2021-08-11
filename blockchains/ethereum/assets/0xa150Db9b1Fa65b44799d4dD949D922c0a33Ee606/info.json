@@ -1,35 +1,33 @@
 {
     "name": "Digital Reserve Currency",
     "website": "https://drcglobal.org/",
-    "source_code": "https://github.com/digitalreserve/DRC",
-    "white_paper": "https://drcglobal.org/white-paper-1",
     "description": "Digital Reserve Currency was designed to become a decentralized digital store of value with a limited supply and a zero inflation rate. It was created during the COVID-19 crisis when fiscal and monetary policies have exposed serious vulnerabilities in the current financial system. The concept of Digital Reserve Currency was developed by Maxim Nurov, founder of Digital Finance.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/DRCToken",
-            "handle": "DRCToken"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/DigitalReserveCurrency",
-            "handle": "Digital Reserve Currency"
-        },
-        {
-            "name": "Linkedin",
-            "url": "https://www.linkedin.com/company/drc-global/",
-            "handle": "DRC Global"
-        },
-        {
-            "name": "Discord",
-            "url": "https://discord.gg/8BrRdc",
-            "handle": "Digital Reserve Currency"
-        }
-    ],
     "explorer": "https://etherscan.io/token/0xa150Db9b1Fa65b44799d4dD949D922c0a33Ee606",
     "type": "ERC20",
     "symbol": "DRC",
     "decimals": 0,
     "status": "active",
-    "id": "0xa150Db9b1Fa65b44799d4dD949D922c0a33Ee606"
+    "id": "0xa150Db9b1Fa65b44799d4dD949D922c0a33Ee606",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/digitalreserve/DRC"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/DRCToken"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/DigitalReserveCurrency"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/8BrRdc"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://drcglobal.org/white-paper-1"
+        }
+    ]
 }
