@@ -25,7 +25,6 @@ export const Wanchain = getChainName(CoinType.wanchain);
 export const Waves = getChainName(CoinType.waves);
 export const Solana = getChainName(CoinType.solana);
 export const SmartChain = getChainName(CoinType.smartchain);
-export const Polygon = getChainName(CoinType.polygon);
 
 export const ethForkChains = [
     Ethereum,
@@ -36,7 +35,6 @@ export const ethForkChains = [
     Wanchain,
     ThunderCore,
     SmartChain,
-    Polygon,
 ];
 export const stakingChains = [
     Tezos,
@@ -57,6 +55,5 @@ export const chainsWithDenylist = ethForkChains.concat(
     Vechain,
     Ontology,
     Theta,
-    EOS,
-    Solana,
+    EOS
 );

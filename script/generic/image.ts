@@ -80,12 +80,10 @@ export async function checkResizeIfTooLarge(path: string, checkOnly: boolean): P
 
     if (!isDimensionOK(srcWidth, srcHeight)) {
         tooLarge = true; // may be too small as well
-        console.log(`Wrong image dimensions, ${srcWidth}x${srcHeight}, ${path}`);
     }
 
     if (isDimensionTooLarge(srcWidth, srcHeight)) {
         tooLarge = true;
-        console.log(`Image too large, ${srcWidth}x${srcHeight}, ${path}`);
         if (!checkOnly) {
             // resize
             const { width, height } = calculateTargetSize(srcWidth, srcHeight, maxLogoWidth, maxLogoHeight);
@@ -105,7 +103,6 @@ export async function checkResizeIfTooLarge(path: string, checkOnly: boolean): P
     const sizeKilobyte = getFileSizeInKilobyte(path);
     if (sizeKilobyte > maxLogoSizeInKilobyte) {
         tooLarge = true;
-        console.log(`Image too big, ${sizeKilobyte} kb, ${path}`);
         if (!checkOnly) {
             console.log(`Resizing image at path ${path} from ${sizeKilobyte} kB`);
             await compressTinyPNG(path)
