@@ -112,6 +112,14 @@ function isAssetInfoValid(info: unknown, path: string, address: string, chain: s
         }
     }
 
+    // extra checks on decimals
+    if (info['decimals'] > 30 || info['decimals'] < 0) {
+        return [`Incorrect value for decimals '${info['decimals']}' '${chain}' ${path}`, "", fixedInfo];
+    }
+    if (info['type'] === 'BEP2' && info['decimals'] != 8) {
+        return [`Incorrect value for decimals, BEP2 tokens have 8 decimals. '${info['decimals']}' '${chain}' ${path}`, "", fixedInfo];
+    }
+
     // status
     if (!isValidStatusValue(info['status'])) {
         return [`Invalid value for status field, '${info['status']}'`, "", fixedInfo];
