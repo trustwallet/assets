@@ -1,20 +1,25 @@
 {
     "name": "Aryacoin",
     "website": "https://aryacoin.io",
-    "source_code": "https://github.com/Aryacoin/Aryacoin",
-    "white_paper": "https://aryacoin.io/Aryacoin.html",
     "description": "Aryacoin is a new age cryptocurrency, which withholds the original principle on which the concept of cryptocurrency was established",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/AryacoinAYA",
-            "handle": "AryacoinAYA"
-        }
-    ],
     "explorer": "https://explorer2.aryacoin.io",
     "research": "",
     "symbol": "AYA",
-    "type": "COIN",
+    "type": "coin",
     "decimals": 8,
-    "status": "abandoned"
+    "status": "abandoned",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/Aryacoin/Aryacoin"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/AryacoinAYA"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://aryacoin.io/Aryacoin.html"
+        }
+    ]
 }
