@@ -12,7 +12,7 @@ For every token a logo and optional additional information is available (such da
 Such a large collection can be maintained only through a community effort, so _feel free to add your token_.
 
 
-## Adding an ERC20 token checklist**:
+## Adding an ERC20 token checklist:
 - [ ] Make sure your smartcontract has more than 2,500 address holders, otherwise you will be rejected
 - [ ] Fork the Github repository
 - [ ] Create folder with name of token smartcontact address in [_checksum format_](https://ethsum.netlify.app/) `blockchains/ethereum/assets/<token_smartcontract_address>/`.
