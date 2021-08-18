@@ -1,13 +1,13 @@
 {
-    "name": "UNCL",
+    "name": "UniCrypt",
     "website": "https://unicrypt.network",
-    "description": "UNCL is the liquidity rewards token of the UniCrypt Farming platform.",
-    "explorer": "https://etherscan.io/token/0x2f4eb47a1b1f4488c71fc10e39a4aa56af33dd49",
-    "type": "ERC20",
-    "symbol": "UNCL",
+    "description": "UNCX is the governance token of the UniCrypt platform.",
+    "explorer": "https://polygonscan.com/token/0x9eecd634c7a934f752af0eb90dda9ecc262f199f",
+    "type": "POLYGON",
+    "symbol": "UNCX",
     "decimals": 18,
     "status": "active",
-    "id": "0x2f4eb47A1b1F4488C71fc10e39a4aa56AF33Dd49",
+    "id": "0x9EECD634c7a934F752aF0EB90DdA9Ecc262F199F",
     "links": [
         {
             "name": "twitter",
@@ -23,11 +23,11 @@
         },
         {
             "name": "coinmarketcap",
-            "url": "https://coinmarketcap.com/currencies/uncl/"
+            "url": "https://coinmarketcap.com/currencies/uncx/"
         },
         {
             "name": "coingecko",
-            "url": "https://coingecko.com/en/coins/uncl"
+            "url": "https://coingecko.com/en/coins/unicrypt"
         },
         {
             "name": "docs",
