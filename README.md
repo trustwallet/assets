@@ -5,7 +5,7 @@
 # To Add Logo
 - [ ] Fork the Github repository
 
-- [ ] Create folder with name of token smartcontact address in **checksum format** `blockchains/ethereum/assets/<token_smartcontract_address>/`.
+- [ ] Create folder with name of token smartcontact address in **CHECKSUM** format `blockchains/ethereum/assets/<token_smartcontract_address>/`.
 
 - [ ] Tell your designer that token image must be in PNG format, avoid transparent background, recommended size 256x256px, with max file size of 100kB.
 
