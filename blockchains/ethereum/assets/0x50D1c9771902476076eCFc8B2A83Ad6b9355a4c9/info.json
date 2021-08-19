@@ -1,11 +1,11 @@
 {
-    "name": "FTX Token",
-    "website": "https://ftx.com",
-    "description": "FTX’s leveraged tokens aim to provide a clean, automated way for users to get leverage. FTT is the FTX ecosystem utility token. ",
-    "explorer": "https://etherscan.io/token/0x50D1c9771902476076eCFc8B2A83Ad6b9355a4c9",
+    "name": "FTX Token (FTT)",
     "type": "ERC20",
-    "symbol": "FTX Token",
+    "symbol": "FTT",
     "decimals": 18,
+    "website": "https://ftx.com",
+    "description": "FTX’s leveraged tokens aim to provide a clean, automated way for users to get leverage. FTT is the FTX ecosystem utility token.",
+    "explorer": "https://etherscan.io/token/0x50D1c9771902476076eCFc8B2A83Ad6b9355a4c9",
     "status": "active",
     "id": "0x50D1c9771902476076eCFc8B2A83Ad6b9355a4c9",
     "links": [
@@ -28,6 +28,10 @@
         {
             "name": "coingecko",
             "url": "https://coingecko.com/en/coins/ftx-token/"
+        },
+        {
+            "name": "blog",
+            "url": "https://blog.ftx.com/"
         }
     ]
 }
