@@ -7,5 +7,27 @@
     "symbol": "TORN",
     "decimals": 18,
     "status": "active",
-    "id": "0x77777FeDdddFfC19Ff86DB637967013e6C6A116C"
+    "id": "0x77777FeDdddFfC19Ff86DB637967013e6C6A116C",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/tornadocash"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/TornadoCash"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/TornadoCashOfficial"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/tornado-cash/"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/torn/"
+        }
+    ]
 }
