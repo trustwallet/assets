@@ -1,25 +1,30 @@
 {
     "name": "smartBCH",
     "website": "https://smartbch.org/",
-    "source_code": "https://github.com/smartbch/smartbch",
-    "white_paper": "https://github.com/smartbch/docs/blob/main/smartbch_whitepaper-en.md",
     "short_description": "smartBCH is a sidechain for Bitcoin Cash with EVM and Web3 compatibility.",
     "description": "Smart Bitcoin Cash (smartBCH for short) is a sidechain for Bitcoin Cash and has an aim to explore new ideas and unlock possibilities. It is compatible with Ethereum's EVM and Web3 API and provides high throughput for DApps in a fast, secure, and decentralized manner.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/SmartBCH",
-            "handle": "SmartBCH"
-        },
-        {
-            "name": "Reddit",
-            "url": "https://www.reddit.com/user/SmartBCH",
-            "handle": "SmartBCH"
-        }
-    ],
     "explorer": "http://smartscan.cash/",
     "research": "https://docs.smartbch.org/smartbch/",
     "symbol": "BCH",
-    "type": "COIN",
-    "decimals": 18
+    "type": "coin",
+    "decimals": 18,
+    "status": "active",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/smartbch/smartbch"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/SmartBCH"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/user/SmartBCH"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://github.com/smartbch/docs/blob/main/smartbch_whitepaper-en.md"
+        }
+    ]
 }
