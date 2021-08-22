@@ -3,7 +3,7 @@
     "website": "https://civfund.com",
     "description": "The world's first 100% DEX Fund.",
     "explorer": "https://etherscan.io/token/0x37fE0f067FA808fFBDd12891C0858532CFE7361d",
-    "type": "ETH-20",
+    "type": "ERC20",
     "symbol": "CIV",
     "decimals": 18,
     "status": "active",
@@ -28,10 +28,6 @@
         {
             "name": "coingecko",
             "url": "https://coingecko.com/en/coins/civilization/"
-        },
-        {
-            "name": "linkedin",
-            "url": "https://linkedin.com/company/civilization-civ/"
         },
         {
             "name": "facebook",
