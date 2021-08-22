@@ -72,7 +72,7 @@ There are similar check logic implemeted:
 
 Info on supported trading pairs are stored in `tokenlist.json` files.
 Trading pairs can be updated --
-from Uniswap/Ethereum and Panckaswap/Smartchain -- using update script (and checking in changes).
+from Uniswap/Ethereum and PancakeSwap/Smartchain -- using update script (and checking in changes).
 Minimal limit values for trading pair inclusion are set in the `config.ts` file.
 There are also options for force-include and force-exclude in the config.
 
@@ -81,3 +81,5 @@ Trust Wallet team allows anyone to submit new assets to this repository. However
 
 Trust Wallet team will reject projects that are deemed as scam or fraudulent after careful review.
 Trust Wallet team reserves the right to change the terms of asset submissions at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.
+
+Additionally, spam-like behavior, including but not limited to mass distribution of tokens to random addresses will result in the asset being flagged as spam and possible removal from the repository.
