@@ -1,11 +1,21 @@
 {
- "name": "NewYorkCoin",
- "website": "https://newyorkcoin.finance/",
- "description": " NYCoin is a token that gives BUSD reflections on the Binance Smart Chain.",
- "explorer": "https://bscscan.com/token/0xD232b1b9031b99373D84EA9800B83Ac6a6F233bF",
- "type": "BEP20",
- "symbol": "NYCoin",
- "decimals": 18,
- "status": "active",
- "id": "0xD232b1b9031b99373D84EA9800B83Ac6a6F233bF"
+    "name": "NewYorkCoin",
+    "type": "BEP20",
+    "symbol": "NYCoin",
+    "decimals": 18,
+    "website": "https://newyorkcoin.finance/",
+    "description": "NYCoin is a token that gives BUSD reflections on the Binance Smart Chain.",
+    "explorer": "https://bscscan.com/token/0xD232b1b9031b99373D84EA9800B83Ac6a6F233bF",
+    "status": "active",
+    "id": "0xD232b1b9031b99373D84EA9800B83Ac6a6F233bF",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/NewYorkCoinBSC"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/NewYorkCoin_BSC"
+        }
+    ]
 }
