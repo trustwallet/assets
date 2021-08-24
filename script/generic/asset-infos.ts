@@ -218,8 +218,8 @@ export function chainFromAssetType(type: string): string {
         case "WAVES": return "waves";
         case "POA": return "poa";
         case "POLYGON": return "polygon";
-        case "OPTIMISM-ERC20": return "optimism";
-        case "AVALANCHE-ERC20": return 'avalanchec';
+        case "OPTIMISM": return "optimism";
+        case "AVALANCHE": return 'avalanchec';
         default: return "";
     }
 }
