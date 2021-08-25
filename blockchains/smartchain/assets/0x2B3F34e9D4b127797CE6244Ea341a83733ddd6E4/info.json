@@ -1,12 +1,4 @@
 
-{ 
-    "name": "Floki Inu",
-    "website": "https://theflokiinu.com",
-    "description": "Floki Inu is a meme token that provides deflationary rewards to holders.",
-    "explorer": "https://bscscan.com/token/0x2B3F34e9D4b127797CE6244Ea341a83733ddd6E4",
-    "type": "BEP20",
-    "symbol": "FLOKI",
-    "decimals": 9,
 {
     "name": "Floki Inu",
     "type": "BEP20",
@@ -29,13 +21,10 @@
         {
             "name": "coinmarketcap",
             "url": "https://coinmarketcap.com/currencies/floki-inu/"
-            "name": "telegram",
-            "url": "https://t.me/FlokiInuToken"
         },
         {
             "name": "coingecko",
             "url": "https://coingecko.com/en/coins/floki-inu"
         }
     ]
-}
 }
