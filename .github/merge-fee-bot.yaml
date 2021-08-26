@@ -1,9 +1,9 @@
 # Expected Payment.  Can be more than one options.
 payments:
-  - amount: 1000
+  - amount: 2000
     token: TWT
     address: bnb1tqq9llyr3dyjd559dha6z5r5etk3qfwk07m098
-  - amount: 3
+  - amount: 5
     token: BNB
     address: bnb1tqq9llyr3dyjd559dha6z5r5etk3qfwk07m098
 payment:
