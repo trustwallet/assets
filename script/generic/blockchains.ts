@@ -26,6 +26,9 @@ export const Waves = getChainName(CoinType.waves);
 export const Solana = getChainName(CoinType.solana);
 export const SmartChain = getChainName(CoinType.smartchain);
 export const Polygon = getChainName(CoinType.polygon);
+export const Optimism = "optimism";
+export const xDAI = "xdai";
+export const Avalanche = "avalanchec";
 
 export const ethForkChains = [
     Ethereum,
@@ -37,6 +40,9 @@ export const ethForkChains = [
     ThunderCore,
     SmartChain,
     Polygon,
+    Optimism,
+    xDAI,
+    Avalanche,
 ];
 export const stakingChains = [
     Tezos,

@@ -218,6 +218,8 @@ export function chainFromAssetType(type: string): string {
         case "WAVES": return "waves";
         case "POA": return "poa";
         case "POLYGON": return "polygon";
+        case "OPTIMISM": return "optimism";
+        case "AVALANCHE": return 'avalanchec';
         default: return "";
     }
 }
@@ -297,7 +299,12 @@ export function explorerUrl(chain: string, contract: string): string {
 
             case CoinType.name(CoinType.polygon).toLowerCase():
             case 'polygon':
-                return `https://polygonscan.com/token/${contract}`;            }
+                return `https://polygonscan.com/token/${contract}`;
+            case 'optimism':
+                return `https://optimistic.etherscan.io/address/${contract}`;
+            case 'avalanchec':
+                return `https://cchain.explorer.avax.network/address/${contract}`
+        }
     }
     return "";
 }
