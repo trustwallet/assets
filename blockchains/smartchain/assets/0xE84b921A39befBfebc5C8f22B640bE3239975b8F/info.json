@@ -1,11 +1,29 @@
 {
- "name": "Instinct",
-    "website": "https://instinct.game",
-    "description": "Instinct is a NFT trading card game, including a full map, factions and rich lore.",
-    "explorer": "https://bscscan.com/token/0xE84b921A39befBfebc5C8f22B640bE3239975b8F",
+    "name": "Instinct",
     "type": "BEP20",
     "symbol": "INSTINCT",
     "decimals": 18,
+    "website": "https://instinct.game",
+    "description": "The father token for an NFT Trading card game soon to be developed.",
+    "explorer": "https://bscscan.com/token/0xE84b921A39befBfebc5C8f22B640bE3239975b8F",
     "status": "active",
-    "id": "0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56"
+    "id": "0xE84b921A39befBfebc5C8f22B640bE3239975b8F",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/instincttoken"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/instincttoken"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/instincttoken"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/bvtGy4u2M7"
+        }
+    ]
 }
