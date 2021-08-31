@@ -112,6 +112,14 @@ function isAssetInfoValid(info: unknown, path: string, address: string, chain: s
         }
     }
 
+    // extra checks on decimals
+    if (info['decimals'] > 30 || info['decimals'] < 0) {
+        return [`Incorrect value for decimals '${info['decimals']}' '${chain}' ${path}`, "", fixedInfo];
+    }
+    if (info['type'] === 'BEP2' && info['decimals'] != 8) {
+        return [`Incorrect value for decimals, BEP2 tokens have 8 decimals. '${info['decimals']}' '${chain}' ${path}`, "", fixedInfo];
+    }
+
     // status
     if (!isValidStatusValue(info['status'])) {
         return [`Invalid value for status field, '${info['status']}'`, "", fixedInfo];
@@ -210,6 +218,8 @@ export function chainFromAssetType(type: string): string {
         case "WAVES": return "waves";
         case "POA": return "poa";
         case "POLYGON": return "polygon";
+        case "OPTIMISM": return "optimism";
+        case "AVALANCHE": return 'avalanchec';
         default: return "";
     }
 }
@@ -289,7 +299,12 @@ export function explorerUrl(chain: string, contract: string): string {
 
             case CoinType.name(CoinType.polygon).toLowerCase():
             case 'polygon':
-                return `https://polygonscan.com/token/${contract}`;            }
+                return `https://polygonscan.com/token/${contract}`;
+            case 'optimism':
+                return `https://optimistic.etherscan.io/address/${contract}`;
+            case 'avalanchec':
+                return `https://cchain.explorer.avax.network/address/${contract}`
+        }
     }
     return "";
 }
