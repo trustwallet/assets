@@ -8,9 +8,22 @@
     "decimals": 18,
     "status": "active",
     "id": "0xE8176d414560cFE1Bf82Fd73B986823B89E4F545",
-    "links": {
-        "twitter": "https://twitter.com/StepHeroNFTs",
-        "telegram": "https://t.me/stephero_chat",
-        "facebook": "https://www.facebook.com/StepHeroNFTs"
-    }
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/StepHeroNFTs"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/stephero_chat"
+        },
+        {
+            "name": "facebook",
+            "url": "https://www.facebook.com/StepHeroNFTs"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/stepherogame"
+        }
+    ]
 }
