@@ -4,7 +4,7 @@
     "description": "Supporting FXA Technologies eco-system by allowing developers to upload algorithms for open-source use and be rewarded in FXA COIN. ",
     "explorer": "https://bscscan.com/token/0x3df9d3113f5e0e187eeb48117537a3ed098d8185",
     "type": "BEP20",
-    "symbol": "FXA ",
+    "symbol": "FXA",
     "decimals": 9,
     "status": "active",
     "id": "0x3DF9d3113f5E0E187eeB48117537a3eD098d8185",
@@ -12,6 +12,10 @@
         {
             "name": "twitter",
             "url": "https://twitter.com/FXATechnologie1"
+        },
+        {
+            "name":"whitepaper",
+            "url":"https://www.fxatechnologies.net/whitepaper"
         }
     ]
 }
