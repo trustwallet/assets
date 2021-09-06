@@ -3,9 +3,26 @@
     "website": "https://www.greenflows.com",
     "description": "Green Flow utilizes a blockchain  network to generate cryptocurrency fueled by eco-friendly kinetic energy of caloric expenditure",
     "explorer": "https://etherscan.io/token/0x46d886887b6908183032c75dee1b731b26d653c6",
+    "socials": [
+        {
+            "name": "Twitter",
+            "url": "https://twitter.com/tokenlon",
+            "handle": "tokenlon"
+        },
+        {
+            "name": "Medium",
+            "url": "https://medium.com/@tokenlon",
+            "handle": "tokenlon"
+        },
+        {
+            "name": "Discord",
+            "url": "https://discord.gg/nPmsMrG",
+            "handle": "Tokenlon"
+        }
+    ],
     "type": "ERC20",
     "symbol": "GRC",
     "decimals": 18,
     "status": "active",
-    "id": "0x46d886887b6908183032c75dee1b731b26d653c6"
+    "id": "0x46D886887B6908183032c75dee1b731B26D653c6"
 }
