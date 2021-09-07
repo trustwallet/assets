@@ -3641,6 +3641,20 @@
             "decimals": 18,
             "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xa1eD0364D53394209D61aE8bfdb8Ff50484D8c91/logo.png",
             "pairs": []
+        },
+        {
+            "asset": "c60_t0x6710c63432A2De02954fc0f851db07146a6c0312",
+            "type": "ERC20",
+            "address": "0x6710c63432A2De02954fc0f851db07146a6c0312",
+            "name": "MFG",
+            "symbol": "MFG",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x6710c63432A2De02954fc0f851db07146a6c0312/logo.png",
+            "pairs": [
+                {
+                    "base": "c60_t0x3c8e1997d9f93c989d4d7660b6ca52c451ad7554"
+                }
+            ]
         }
     ],
     "version": {
