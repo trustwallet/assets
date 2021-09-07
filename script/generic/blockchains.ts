@@ -29,6 +29,8 @@ export const Polygon = getChainName(CoinType.polygon);
 export const Optimism = "optimism";
 export const xDAI = "xdai";
 export const Avalanche = "avalanchec";
+export const Arbitrum = "arbitrum";
+export const Fantom = "fantom";
 
 export const ethForkChains = [
     Ethereum,
@@ -43,6 +45,8 @@ export const ethForkChains = [
     Optimism,
     xDAI,
     Avalanche,
+    Arbitrum,
+    Fantom,
 ];
 export const stakingChains = [
     Tezos,
