@@ -50,4 +50,9 @@ export const TagValues: TagDescription[] = [
         name: "Privacy",
         description: "Privacy tokens."
     },
+    {
+        id: "nsfw",
+        name: "NSFW",
+        description: "Content Not suitable for work."
+    },
 ];
