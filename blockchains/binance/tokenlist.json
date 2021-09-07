@@ -1,7 +1,7 @@
 {
     "name": "Trust Wallet: BNB",
     "logoURI": "https://trustwallet.com/assets/images/favicon.png",
-    "timestamp": "2021-06-10T01:29:40.677Z",
+    "timestamp": "2021-09-07T01:24:22.296Z",
     "tokens": [
         {
             "asset": "c714",
@@ -10,7 +10,7 @@
             "name": "Binance Chain Native Token",
             "symbol": "BNB",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/info/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/info/logo.png",
             "pairs": [
                 {
                     "base": "c714_tAERGO-46B",
@@ -34,12 +34,12 @@
                 },
                 {
                     "base": "c714_tART-3C9",
-                    "lotSize": "10000000000",
+                    "lotSize": "100000000000",
                     "tickSize": "1"
                 },
                 {
                     "base": "c714_tATP-38C",
-                    "lotSize": "100000000",
+                    "lotSize": "1000000000",
                     "tickSize": "1"
                 },
                 {
@@ -74,7 +74,7 @@
                 },
                 {
                     "base": "c714_tBET-844",
-                    "lotSize": "10000000000",
+                    "lotSize": "1000000000",
                     "tickSize": "1"
                 },
                 {
@@ -99,7 +99,7 @@
                 },
                 {
                     "base": "c714_tBTTB-D31",
-                    "lotSize": "10000000000",
+                    "lotSize": "100000000000",
                     "tickSize": "1"
                 },
                 {
@@ -124,7 +124,7 @@
                 },
                 {
                     "base": "c714_tCBIX-3C9",
-                    "lotSize": "10000000000",
+                    "lotSize": "100000000000",
                     "tickSize": "1"
                 },
                 {
@@ -169,12 +169,12 @@
                 },
                 {
                     "base": "c714_tDEFI-FA5",
-                    "lotSize": "100000000",
+                    "lotSize": "1000000000",
                     "tickSize": "1"
                 },
                 {
                     "base": "c714_tDOS-120",
-                    "lotSize": "1000000000",
+                    "lotSize": "10000000000",
                     "tickSize": "1"
                 },
                 {
@@ -189,7 +189,7 @@
                 },
                 {
                     "base": "c714_tEBST-783",
-                    "lotSize": "1000000000",
+                    "lotSize": "10000000000",
                     "tickSize": "1"
                 },
                 {
@@ -204,8 +204,8 @@
                 },
                 {
                     "base": "c714_tEOSBULL-F0D",
-                    "lotSize": "10000000",
-                    "tickSize": "10"
+                    "lotSize": "100000000",
+                    "tickSize": "1"
                 },
                 {
                     "base": "c714_tEQL-586",
@@ -224,8 +224,8 @@
                 },
                 {
                     "base": "c714_tETHBULL-D33",
-                    "lotSize": "10000",
-                    "tickSize": "10000"
+                    "lotSize": "100000",
+                    "tickSize": "1000"
                 },
                 {
                     "base": "c714_tEVT-49B",
@@ -244,12 +244,12 @@
                 },
                 {
                     "base": "c714_tFTM-A64",
-                    "lotSize": "1000000000",
+                    "lotSize": "100000000",
                     "tickSize": "1"
                 },
                 {
                     "base": "c714_tGIV-94E",
-                    "lotSize": "10000000000",
+                    "lotSize": "100000000000",
                     "tickSize": "1"
                 },
                 {
@@ -279,7 +279,7 @@
                 },
                 {
                     "base": "c714_tKAT-7BB",
-                    "lotSize": "10000000000",
+                    "lotSize": "100000000000",
                     "tickSize": "1"
                 },
                 {
@@ -359,12 +359,12 @@
                 },
                 {
                     "base": "c714_tNOIZB-878",
-                    "lotSize": "10000000000",
+                    "lotSize": "1000000000",
                     "tickSize": "1"
                 },
                 {
                     "base": "c714_tNOW-E68",
-                    "lotSize": "10000000000",
+                    "lotSize": "1000000000",
                     "tickSize": "1"
                 },
                 {
@@ -374,7 +374,7 @@
                 },
                 {
                     "base": "c714_tNPXSXEM-89C",
-                    "lotSize": "100000000000",
+                    "lotSize": "1000000000000",
                     "tickSize": "1"
                 },
                 {
@@ -394,7 +394,7 @@
                 },
                 {
                     "base": "c714_tPHV-4A1",
-                    "lotSize": "10000000000",
+                    "lotSize": "100000000",
                     "tickSize": "1"
                 },
                 {
@@ -449,8 +449,8 @@
                 },
                 {
                     "base": "c714_tSTYL-65B",
-                    "lotSize": "100000000",
-                    "tickSize": "1"
+                    "lotSize": "10000000",
+                    "tickSize": "10"
                 },
                 {
                     "base": "c714_tSWIPE.B-DC0",
@@ -544,7 +544,7 @@
                 },
                 {
                     "base": "c714_tXBASE-CD2",
-                    "lotSize": "10000000000",
+                    "lotSize": "100000000000",
                     "tickSize": "1"
                 },
                 {
@@ -554,8 +554,8 @@
                 },
                 {
                     "base": "c714_tXRPBEAR-00B",
-                    "lotSize": "1000000",
-                    "tickSize": "100"
+                    "lotSize": "10000000",
+                    "tickSize": "10"
                 },
                 {
                     "base": "c714_tXRPBULL-E7C",
@@ -564,7 +564,7 @@
                 },
                 {
                     "base": "c714_tZEBI-84F",
-                    "lotSize": "10000000000",
+                    "lotSize": "100000000000",
                     "tickSize": "1"
                 }
             ]
@@ -576,7 +576,7 @@
             "name": "Binance USD",
             "symbol": "BUSD",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/BUSD-BD1/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/BUSD-BD1/logo.png",
             "pairs": [
                 {
                     "base": "c714",
@@ -606,7 +606,7 @@
                 {
                     "base": "c714_tBAND-34B",
                     "lotSize": "10000000",
-                    "tickSize": "1000"
+                    "tickSize": "10000"
                 },
                 {
                     "base": "c714_tBCH-1FD",
@@ -620,7 +620,7 @@
                 },
                 {
                     "base": "c714_tBTCB-1DE",
-                    "lotSize": "10000",
+                    "lotSize": "1000",
                     "tickSize": "10000000"
                 },
                 {
@@ -661,7 +661,7 @@
                 {
                     "base": "c714_tINJ-FAE",
                     "lotSize": "10000000",
-                    "tickSize": "1000"
+                    "tickSize": "10000"
                 },
                 {
                     "base": "c714_tLTC-F07",
@@ -686,7 +686,7 @@
                 {
                     "base": "c714_tSWINGBY-888",
                     "lotSize": "1000000000",
-                    "tickSize": "100"
+                    "tickSize": "10"
                 },
                 {
                     "base": "c714_tSXP-CCC",
@@ -696,11 +696,11 @@
                 {
                     "base": "c714_tXRP-BF2",
                     "lotSize": "100000000",
-                    "tickSize": "100"
+                    "tickSize": "1000"
                 },
                 {
                     "base": "c714_tXTZ-F7A",
-                    "lotSize": "100000000",
+                    "lotSize": "10000000",
                     "tickSize": "1000"
                 },
                 {
@@ -710,7 +710,7 @@
                 },
                 {
                     "base": "c714_tYFII-061",
-                    "lotSize": "100000",
+                    "lotSize": "10000",
                     "tickSize": "1000000"
                 },
                 {
@@ -727,7 +727,7 @@
             "name": "USDS",
             "symbol": "USDSB",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/USDSB-1AC/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/USDSB-1AC/logo.png",
             "pairs": [
                 {
                     "base": "c714",
@@ -736,13 +736,13 @@
                 },
                 {
                     "base": "c714_tBTCB-1DE",
-                    "lotSize": "10000",
+                    "lotSize": "1000",
                     "tickSize": "10000000"
                 },
                 {
                     "base": "c714_tCOS-2E4",
                     "lotSize": "10000000000",
-                    "tickSize": "1"
+                    "tickSize": "10"
                 },
                 {
                     "base": "c714_tONE-5F9",
@@ -763,12 +763,12 @@
             "name": "Bitcoin BEP2",
             "symbol": "BTCB",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/BTCB-1DE/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/BTCB-1DE/logo.png",
             "pairs": [
                 {
                     "base": "c714",
                     "lotSize": "100000",
-                    "tickSize": "10"
+                    "tickSize": "1"
                 },
                 {
                     "base": "c714_tANKR-E97",
@@ -794,7 +794,7 @@
             "name": "TrueUSD",
             "symbol": "TUSDB",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/TUSDB-888/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/TUSDB-888/logo.png",
             "pairs": [
                 {
                     "base": "c714",
@@ -803,7 +803,7 @@
                 },
                 {
                     "base": "c714_tBTCB-1DE",
-                    "lotSize": "10000",
+                    "lotSize": "1000",
                     "tickSize": "10000000"
                 },
                 {
@@ -820,7 +820,7 @@
             "name": "Rupiah Token",
             "symbol": "IDRTB",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/IDRTB-178/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/IDRTB-178/logo.png",
             "pairs": [
                 {
                     "base": "c714",
@@ -841,7 +841,7 @@
             "name": "USDTBEP2",
             "symbol": "USDT",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/USDT-6D8/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/USDT-6D8/logo.png",
             "pairs": [
                 {
                     "base": "c714",
@@ -851,7 +851,7 @@
                 {
                     "base": "c714_tBUSD-BD1",
                     "lotSize": "100000000",
-                    "tickSize": "1000"
+                    "tickSize": "100"
                 }
             ]
         },
@@ -862,12 +862,12 @@
             "name": "DaiBEP2",
             "symbol": "DAI",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/DAI-D75/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/DAI-D75/logo.png",
             "pairs": [
                 {
                     "base": "c714_tBUSD-BD1",
                     "lotSize": "100000000",
-                    "tickSize": "100"
+                    "tickSize": "1000"
                 }
             ]
         },
@@ -878,7 +878,7 @@
             "name": "ETH BEP2",
             "symbol": "ETH",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/ETH-1C9/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/ETH-1C9/logo.png",
             "pairs": [
                 {
                     "base": "c714",
@@ -894,7 +894,7 @@
             "name": "TrueAUD",
             "symbol": "TAUDB",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/TAUDB-888/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/TAUDB-888/logo.png",
             "pairs": [
                 {
                     "base": "c714",
@@ -910,12 +910,12 @@
             "name": "TrueHKD",
             "symbol": "THKDB",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/THKDB-888/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/THKDB-888/logo.png",
             "pairs": [
                 {
                     "base": "c714",
                     "lotSize": "100000",
-                    "tickSize": "10000"
+                    "tickSize": "1000000"
                 }
             ]
         },
@@ -926,7 +926,7 @@
             "name": "CardanoBEP2",
             "symbol": "ADA",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/ADA-9F4/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/ADA-9F4/logo.png",
             "pairs": []
         },
         {
@@ -936,7 +936,7 @@
             "name": "Aergo",
             "symbol": "AERGO",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/AERGO-46B/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/AERGO-46B/logo.png",
             "pairs": []
         },
         {
@@ -946,7 +946,7 @@
             "name": "ANKR",
             "symbol": "ANKR",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/ANKR-E97/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/ANKR-E97/logo.png",
             "pairs": []
         },
         {
@@ -956,7 +956,7 @@
             "name": "Aeron",
             "symbol": "ARN",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/ARN-71B/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/ARN-71B/logo.png",
             "pairs": []
         },
         {
@@ -966,7 +966,7 @@
             "name": "ARPA",
             "symbol": "ARPA",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/ARPA-575/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/ARPA-575/logo.png",
             "pairs": []
         },
         {
@@ -976,7 +976,7 @@
             "name": "Maecenas ART Token",
             "symbol": "ART",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/ART-3C9/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/ART-3C9/logo.png",
             "pairs": []
         },
         {
@@ -986,7 +986,7 @@
             "name": "ATOMBEP2",
             "symbol": "ATOM",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/ATOM-596/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/ATOM-596/logo.png",
             "pairs": []
         },
         {
@@ -996,7 +996,7 @@
             "name": "Atlas Protocol",
             "symbol": "ATP",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/ATP-38C/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/ATP-38C/logo.png",
             "pairs": []
         },
         {
@@ -1006,7 +1006,7 @@
             "name": "Travala.com Token",
             "symbol": "AVA",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/AVA-645/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/AVA-645/logo.png",
             "pairs": []
         },
         {
@@ -1016,7 +1016,7 @@
             "name": "Atomic Wallet Token",
             "symbol": "AWC",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/AWC-986/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/AWC-986/logo.png",
             "pairs": []
         },
         {
@@ -1026,7 +1026,7 @@
             "name": "AXPR.B",
             "symbol": "AXPR",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/AXPR-777/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/AXPR-777/logo.png",
             "pairs": []
         },
         {
@@ -1036,7 +1036,7 @@
             "name": "BakeryToken",
             "symbol": "BAKE",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/BAKE-5E0/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/BAKE-5E0/logo.png",
             "pairs": []
         },
         {
@@ -1046,7 +1046,7 @@
             "name": "BandProtocolBEP2",
             "symbol": "BAND",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/BAND-34B/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/BAND-34B/logo.png",
             "pairs": []
         },
         {
@@ -1056,7 +1056,7 @@
             "name": "BCH BEP2",
             "symbol": "BCH",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/BCH-1FD/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/BCH-1FD/logo.png",
             "pairs": []
         },
         {
@@ -1066,7 +1066,7 @@
             "name": "Blockmason Credit Protocol",
             "symbol": "BCPT",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/BCPT-95A/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/BCPT-95A/logo.png",
             "pairs": []
         },
         {
@@ -1076,7 +1076,7 @@
             "name": "3X Short Bitcoin Token",
             "symbol": "BEAR",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/BEAR-14C/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/BEAR-14C/logo.png",
             "pairs": []
         },
         {
@@ -1086,7 +1086,7 @@
             "name": "EOSBet Token",
             "symbol": "BET",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/BET-844/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/BET-844/logo.png",
             "pairs": []
         },
         {
@@ -1096,7 +1096,7 @@
             "name": "beefy.finance",
             "symbol": "BIFI",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/BIFI-290/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/BIFI-290/logo.png",
             "pairs": []
         },
         {
@@ -1106,7 +1106,7 @@
             "name": "Bitwires Token",
             "symbol": "BKBT",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/BKBT-3A6/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/BKBT-3A6/logo.png",
             "pairs": []
         },
         {
@@ -1116,7 +1116,7 @@
             "name": "Blockmason Link",
             "symbol": "BLINK",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/BLINK-9C6/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/BLINK-9C6/logo.png",
             "pairs": []
         },
         {
@@ -1126,7 +1126,7 @@
             "name": "BOLT Token",
             "symbol": "BOLT",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/BOLT-4C6/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/BOLT-4C6/logo.png",
             "pairs": []
         },
         {
@@ -1136,7 +1136,7 @@
             "name": "BOOSTO",
             "symbol": "BST2",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/BST2-2F2/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/BST2-2F2/logo.png",
             "pairs": []
         },
         {
@@ -1146,7 +1146,7 @@
             "name": "BTTB",
             "symbol": "BTTB",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/BTTB-D31/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/BTTB-D31/logo.png",
             "pairs": []
         },
         {
@@ -1156,7 +1156,7 @@
             "name": "3x Long Bitcoin Token",
             "symbol": "BULL",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/BULL-BE4/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/BULL-BE4/logo.png",
             "pairs": []
         },
         {
@@ -1166,7 +1166,7 @@
             "name": "Burger Swap",
             "symbol": "BURGER",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/BURGER-33A/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/BURGER-33A/logo.png",
             "pairs": []
         },
         {
@@ -1176,7 +1176,7 @@
             "name": "Bezant Token",
             "symbol": "BZNT",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/BZNT-464/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/BZNT-464/logo.png",
             "pairs": []
         },
         {
@@ -1186,7 +1186,7 @@
             "name": "PancakeSwap Token",
             "symbol": "CAKE",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/CAKE-435/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/CAKE-435/logo.png",
             "pairs": []
         },
         {
@@ -1196,7 +1196,7 @@
             "name": "CanYaCoin",
             "symbol": "CAN",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/CAN-677/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/CAN-677/logo.png",
             "pairs": []
         },
         {
@@ -1206,7 +1206,7 @@
             "name": "CASHAA",
             "symbol": "CAS",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/CAS-167/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/CAS-167/logo.png",
             "pairs": []
         },
         {
@@ -1216,7 +1216,7 @@
             "name": "Cubiex",
             "symbol": "CBIX",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/CBIX-3C9/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/CBIX-3C9/logo.png",
             "pairs": []
         },
         {
@@ -1226,7 +1226,7 @@
             "name": "CryptoBonusMiles",
             "symbol": "CBM",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/CBM-4B2/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/CBM-4B2/logo.png",
             "pairs": []
         },
         {
@@ -1236,7 +1236,7 @@
             "name": "Chiliz",
             "symbol": "CHZ",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/CHZ-ECD/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/CHZ-ECD/logo.png",
             "pairs": []
         },
         {
@@ -1246,7 +1246,7 @@
             "name": "Crypto Neo-value Neural System",
             "symbol": "CNNS",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/CNNS-E16/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/CNNS-E16/logo.png",
             "pairs": []
         },
         {
@@ -1256,7 +1256,7 @@
             "name": "Contentos",
             "symbol": "COS",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/COS-2E4/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/COS-2E4/logo.png",
             "pairs": []
         },
         {
@@ -1266,7 +1266,7 @@
             "name": "COTI",
             "symbol": "COTI",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/COTI-CBB/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/COTI-CBB/logo.png",
             "pairs": []
         },
         {
@@ -1276,7 +1276,7 @@
             "name": "Covalent Token",
             "symbol": "COVA",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/COVA-218/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/COVA-218/logo.png",
             "pairs": []
         },
         {
@@ -1286,7 +1286,7 @@
             "name": "Crypterium Token",
             "symbol": "CRPT",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/CRPT-8C9/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/CRPT-8C9/logo.png",
             "pairs": []
         },
         {
@@ -1296,7 +1296,7 @@
             "name": "“Consentium”",
             "symbol": "CSM",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/CSM-734/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/CSM-734/logo.png",
             "pairs": []
         },
         {
@@ -1306,7 +1306,7 @@
             "name": "DeFi Token",
             "symbol": "DEFI",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/DEFI-FA5/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/DEFI-FA5/logo.png",
             "pairs": []
         },
         {
@@ -1316,7 +1316,7 @@
             "name": "Dogecoin",
             "symbol": "DOGE",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/DOGE-B67/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/DOGE-B67/logo.png",
             "pairs": []
         },
         {
@@ -1326,7 +1326,7 @@
             "name": "DOS Network Token",
             "symbol": "DOS",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/DOS-120/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/DOS-120/logo.png",
             "pairs": []
         },
         {
@@ -1336,7 +1336,7 @@
             "name": "PolkadotBEP2",
             "symbol": "DOT",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/DOT-64C/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/DOT-64C/logo.png",
             "pairs": []
         },
         {
@@ -1346,7 +1346,7 @@
             "name": "DREP",
             "symbol": "DREP",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/DREP-7D2/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/DREP-7D2/logo.png",
             "pairs": []
         },
         {
@@ -1356,7 +1356,7 @@
             "name": "Dusk Network",
             "symbol": "DUSK",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/DUSK-45E/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/DUSK-45E/logo.png",
             "pairs": []
         },
         {
@@ -1366,7 +1366,7 @@
             "name": "eBoost",
             "symbol": "EBST",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/EBST-783/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/EBST-783/logo.png",
             "pairs": []
         },
         {
@@ -1376,7 +1376,7 @@
             "name": "Hut34 Entropy",
             "symbol": "ENTRP",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/ENTRP-C8D/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/ENTRP-C8D/logo.png",
             "pairs": []
         },
         {
@@ -1386,7 +1386,7 @@
             "name": "EOS BEP2",
             "symbol": "EOS",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/EOS-CDD/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/EOS-CDD/logo.png",
             "pairs": []
         },
         {
@@ -1396,7 +1396,7 @@
             "name": "3X Short EOS Token",
             "symbol": "EOSBEAR",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/EOSBEAR-721/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/EOSBEAR-721/logo.png",
             "pairs": []
         },
         {
@@ -1406,7 +1406,7 @@
             "name": "3X Long EOS Token",
             "symbol": "EOSBULL",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/EOSBULL-F0D/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/EOSBULL-F0D/logo.png",
             "pairs": []
         },
         {
@@ -1416,7 +1416,7 @@
             "name": "EQUAL",
             "symbol": "EQL",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/EQL-586/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/EQL-586/logo.png",
             "pairs": []
         },
         {
@@ -1426,7 +1426,7 @@
             "name": "Elrond",
             "symbol": "ERD",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/ERD-D06/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/ERD-D06/logo.png",
             "pairs": []
         },
         {
@@ -1436,7 +1436,7 @@
             "name": "3X Short Ethereum Token",
             "symbol": "ETHBEAR",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/ETHBEAR-B2B/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/ETHBEAR-B2B/logo.png",
             "pairs": []
         },
         {
@@ -1446,7 +1446,7 @@
             "name": "3X Long Ethereum Token",
             "symbol": "ETHBULL",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/ETHBULL-D33/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/ETHBULL-D33/logo.png",
             "pairs": []
         },
         {
@@ -1456,7 +1456,7 @@
             "name": "everiToken",
             "symbol": "EVT",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/EVT-49B/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/EVT-49B/logo.png",
             "pairs": []
         },
         {
@@ -1466,7 +1466,7 @@
             "name": "Ferrum Network Token",
             "symbol": "FRM",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/FRM-DE7/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/FRM-DE7/logo.png",
             "pairs": []
         },
         {
@@ -1476,7 +1476,7 @@
             "name": "Fusion",
             "symbol": "FSN",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/FSN-E14/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/FSN-E14/logo.png",
             "pairs": []
         },
         {
@@ -1486,7 +1486,7 @@
             "name": "Fantom",
             "symbol": "FTM",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/FTM-A64/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/FTM-A64/logo.png",
             "pairs": []
         },
         {
@@ -1496,7 +1496,7 @@
             "name": "Givly Coin",
             "symbol": "GIV",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/GIV-94E/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/GIV-94E/logo.png",
             "pairs": []
         },
         {
@@ -1506,7 +1506,7 @@
             "name": "GoWithMi",
             "symbol": "GMAT",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/GMAT-FC8/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/GMAT-FC8/logo.png",
             "pairs": []
         },
         {
@@ -1516,7 +1516,7 @@
             "name": "Gifto",
             "symbol": "GTO",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/GTO-908/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/GTO-908/logo.png",
             "pairs": []
         },
         {
@@ -1526,7 +1526,7 @@
             "name": "Honest",
             "symbol": "HNST",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/HNST-3C9/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/HNST-3C9/logo.png",
             "pairs": []
         },
         {
@@ -1536,7 +1536,7 @@
             "name": "Hyperion Token",
             "symbol": "HYN",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/HYN-F21/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/HYN-F21/logo.png",
             "pairs": []
         },
         {
@@ -1546,7 +1546,7 @@
             "name": "Injective Protocol",
             "symbol": "INJ",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/INJ-FAE/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/INJ-FAE/logo.png",
             "pairs": []
         },
         {
@@ -1556,7 +1556,7 @@
             "name": "IRIS Network",
             "symbol": "IRIS",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/IRIS-D88/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/IRIS-D88/logo.png",
             "pairs": []
         },
         {
@@ -1566,7 +1566,7 @@
             "name": "Kambria Token",
             "symbol": "KAT",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/KAT-7BB/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/KAT-7BB/logo.png",
             "pairs": []
         },
         {
@@ -1576,7 +1576,7 @@
             "name": "Lend-Borrow-Asset",
             "symbol": "LBA",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/LBA-340/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/LBA-340/logo.png",
             "pairs": []
         },
         {
@@ -1586,7 +1586,7 @@
             "name": "LITION",
             "symbol": "LIT",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/LIT-099/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/LIT-099/logo.png",
             "pairs": []
         },
         {
@@ -1596,7 +1596,7 @@
             "name": "Loki",
             "symbol": "LOKI",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/LOKI-6A9/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/LOKI-6A9/logo.png",
             "pairs": []
         },
         {
@@ -1606,7 +1606,7 @@
             "name": "LTC BEP2",
             "symbol": "LTC",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/LTC-F07/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/LTC-F07/logo.png",
             "pairs": []
         },
         {
@@ -1616,7 +1616,7 @@
             "name": "LTO Network",
             "symbol": "LTO",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/LTO-BDF/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/LTO-BDF/logo.png",
             "pairs": []
         },
         {
@@ -1626,7 +1626,7 @@
             "name": "Matic Token",
             "symbol": "MATIC",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/MATIC-84A/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/MATIC-84A/logo.png",
             "pairs": []
         },
         {
@@ -1636,7 +1636,7 @@
             "name": "MDAB",
             "symbol": "MDAB",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/MDAB-D42/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/MDAB-D42/logo.png",
             "pairs": []
         },
         {
@@ -1646,7 +1646,7 @@
             "name": "MEET.ONE",
             "symbol": "MEETONE",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/MEETONE-031/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/MEETONE-031/logo.png",
             "pairs": []
         },
         {
@@ -1656,7 +1656,7 @@
             "name": "Mithril",
             "symbol": "MITH",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/MITH-C76/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/MITH-C76/logo.png",
             "pairs": []
         },
         {
@@ -1666,7 +1666,7 @@
             "name": "Morpheus Infrastructure Token",
             "symbol": "MITX",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/MITX-CAA/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/MITX-CAA/logo.png",
             "pairs": []
         },
         {
@@ -1676,7 +1676,7 @@
             "name": "MultiVAC",
             "symbol": "MTV",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/MTV-4C6/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/MTV-4C6/logo.png",
             "pairs": []
         },
         {
@@ -1686,7 +1686,7 @@
             "name": "Mass Vehicle Ledger",
             "symbol": "MVL",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/MVL-7B0/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/MVL-7B0/logo.png",
             "pairs": []
         },
         {
@@ -1696,7 +1696,7 @@
             "name": "Muzika",
             "symbol": "MZK",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/MZK-2C7/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/MZK-2C7/logo.png",
             "pairs": []
         },
         {
@@ -1706,7 +1706,7 @@
             "name": "NEWTON",
             "symbol": "NEW",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/NEW-09E/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/NEW-09E/logo.png",
             "pairs": []
         },
         {
@@ -1716,7 +1716,7 @@
             "name": "Nexo",
             "symbol": "NEXO",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/NEXO-A84/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/NEXO-A84/logo.png",
             "pairs": []
         },
         {
@@ -1726,7 +1726,7 @@
             "name": "NOIZ Token",
             "symbol": "NOIZB",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/NOIZB-878/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/NOIZB-878/logo.png",
             "pairs": []
         },
         {
@@ -1736,7 +1736,7 @@
             "name": "NOW Token",
             "symbol": "NOW",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/NOW-E68/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/NOW-E68/logo.png",
             "pairs": []
         },
         {
@@ -1746,7 +1746,7 @@
             "name": "NPX Binance token",
             "symbol": "NPXB",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/NPXB-1E8/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/NPXB-1E8/logo.png",
             "pairs": []
         },
         {
@@ -1756,7 +1756,7 @@
             "name": "Pundi X NEM",
             "symbol": "NPXSXEM",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/NPXSXEM-89C/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/NPXSXEM-89C/logo.png",
             "pairs": []
         },
         {
@@ -1766,7 +1766,7 @@
             "name": "Harmony.One",
             "symbol": "ONE",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/ONE-5F9/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/ONE-5F9/logo.png",
             "pairs": []
         },
         {
@@ -1776,7 +1776,7 @@
             "name": "ONTBEP2",
             "symbol": "ONT",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/ONT-33D/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/ONT-33D/logo.png",
             "pairs": []
         },
         {
@@ -1786,7 +1786,7 @@
             "name": "Red Pulse Phoenix Binance",
             "symbol": "PHB",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/PHB-2DF/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/PHB-2DF/logo.png",
             "pairs": []
         },
         {
@@ -1796,7 +1796,7 @@
             "name": "PathHive Network",
             "symbol": "PHV",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/PHV-4A1/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/PHV-4A1/logo.png",
             "pairs": []
         },
         {
@@ -1806,7 +1806,7 @@
             "name": "PCHAIN Token",
             "symbol": "PIBNB",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/PIBNB-43C/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/PIBNB-43C/logo.png",
             "pairs": []
         },
         {
@@ -1816,7 +1816,7 @@
             "name": "Pledge Coin",
             "symbol": "PLG",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/PLG-D8D/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/PLG-D8D/logo.png",
             "pairs": []
         },
         {
@@ -1826,7 +1826,7 @@
             "name": "Pivot Token",
             "symbol": "PVT",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/PVT-554/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/PVT-554/logo.png",
             "pairs": []
         },
         {
@@ -1836,7 +1836,7 @@
             "name": "paycentos",
             "symbol": "PYN",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/PYN-C37/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/PYN-C37/logo.png",
             "pairs": []
         },
         {
@@ -1846,7 +1846,7 @@
             "name": "qiibeeToken",
             "symbol": "QBX",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/QBX-38C/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/QBX-38C/logo.png",
             "pairs": []
         },
         {
@@ -1856,7 +1856,7 @@
             "name": "Raven Protocol",
             "symbol": "RAVEN",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/RAVEN-F66/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/RAVEN-F66/logo.png",
             "pairs": []
         },
         {
@@ -1866,7 +1866,7 @@
             "name": "Rune",
             "symbol": "RUNE",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/RUNE-B1A/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/RUNE-B1A/logo.png",
             "pairs": []
         },
         {
@@ -1876,7 +1876,7 @@
             "name": "ShareToken",
             "symbol": "SHR",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/SHR-DB6/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/SHR-DB6/logo.png",
             "pairs": []
         },
         {
@@ -1886,7 +1886,7 @@
             "name": "Silverway",
             "symbol": "SLV",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/SLV-986/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/SLV-986/logo.png",
             "pairs": []
         },
         {
@@ -1896,7 +1896,7 @@
             "name": "Spendcoin",
             "symbol": "SPNDB",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/SPNDB-916/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/SPNDB-916/logo.png",
             "pairs": []
         },
         {
@@ -1906,7 +1906,7 @@
             "name": "Yin Lang Music IP Token",
             "symbol": "STYL",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/STYL-65B/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/STYL-65B/logo.png",
             "pairs": []
         },
         {
@@ -1916,7 +1916,7 @@
             "name": "Swingby Token",
             "symbol": "SWINGBY",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/SWINGBY-888/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/SWINGBY-888/logo.png",
             "pairs": []
         },
         {
@@ -1926,7 +1926,7 @@
             "name": "SWIPE Token",
             "symbol": "SWIPE.B",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/SWIPE.B-DC0/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/SWIPE.B-DC0/logo.png",
             "pairs": []
         },
         {
@@ -1936,7 +1936,7 @@
             "name": "Swipe",
             "symbol": "SXP",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/SXP-CCC/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/SXP-CCC/logo.png",
             "pairs": []
         },
         {
@@ -1946,7 +1946,7 @@
             "name": "Traxia 2",
             "symbol": "TM2",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/TM2-0C4/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/TM2-0C4/logo.png",
             "pairs": []
         },
         {
@@ -1956,7 +1956,7 @@
             "name": "TomoChain",
             "symbol": "TOMOB",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/TOMOB-4BC/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/TOMOB-4BC/logo.png",
             "pairs": []
         },
         {
@@ -1966,7 +1966,7 @@
             "name": "TOP Network",
             "symbol": "TOP",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/TOP-491/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/TOP-491/logo.png",
             "pairs": []
         },
         {
@@ -1976,7 +1976,7 @@
             "name": "TROY",
             "symbol": "TROY",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/TROY-9B8/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/TROY-9B8/logo.png",
             "pairs": []
         },
         {
@@ -1986,7 +1986,7 @@
             "name": "TrueChain",
             "symbol": "TRUE",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/TRUE-D84/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/TRUE-D84/logo.png",
             "pairs": []
         },
         {
@@ -1996,7 +1996,7 @@
             "name": "TRXB",
             "symbol": "TRXB",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/TRXB-2E6/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/TRXB-2E6/logo.png",
             "pairs": []
         },
         {
@@ -2006,7 +2006,7 @@
             "name": "Trust Wallet",
             "symbol": "TWT",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/TWT-8C2/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/TWT-8C2/logo.png",
             "pairs": []
         },
         {
@@ -2016,7 +2016,7 @@
             "name": "Ultrain Coin",
             "symbol": "UGAS",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/UGAS-B0C/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/UGAS-B0C/logo.png",
             "pairs": []
         },
         {
@@ -2026,7 +2026,7 @@
             "name": "United Network Distribution",
             "symbol": "UND",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/UND-EBC/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/UND-EBC/logo.png",
             "pairs": []
         },
         {
@@ -2036,7 +2036,7 @@
             "name": "UPX",
             "symbol": "UPX",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/UPX-F3E/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/UPX-F3E/logo.png",
             "pairs": []
         },
         {
@@ -2046,7 +2046,7 @@
             "name": "Vodi X",
             "symbol": "VDX",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/VDX-A17/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/VDX-A17/logo.png",
             "pairs": []
         },
         {
@@ -2056,7 +2056,7 @@
             "name": "V-ID Token",
             "symbol": "VIDT",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/VIDT-F53/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/VIDT-F53/logo.png",
             "pairs": []
         },
         {
@@ -2066,7 +2066,7 @@
             "name": "Vote",
             "symbol": "VOTE",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/VOTE-FD4/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/VOTE-FD4/logo.png",
             "pairs": []
         },
         {
@@ -2076,7 +2076,7 @@
             "name": "WaykiChain Coin",
             "symbol": "WICC",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/WICC-01D/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/WICC-01D/logo.png",
             "pairs": []
         },
         {
@@ -2086,7 +2086,7 @@
             "name": "WINB",
             "symbol": "WINB",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/WINB-41F/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/WINB-41F/logo.png",
             "pairs": []
         },
         {
@@ -2096,7 +2096,7 @@
             "name": "MyWish",
             "symbol": "WISH",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/WISH-2D5/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/WISH-2D5/logo.png",
             "pairs": []
         },
         {
@@ -2106,7 +2106,7 @@
             "name": "WazirX Token",
             "symbol": "WRX",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/WRX-ED1/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/WRX-ED1/logo.png",
             "pairs": []
         },
         {
@@ -2116,7 +2116,7 @@
             "name": "Eterbase Coin",
             "symbol": "XBASE",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/XBASE-CD2/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/XBASE-CD2/logo.png",
             "pairs": []
         },
         {
@@ -2126,7 +2126,7 @@
             "name": "XRP BEP2",
             "symbol": "XRP",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/XRP-BF2/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/XRP-BF2/logo.png",
             "pairs": []
         },
         {
@@ -2136,7 +2136,7 @@
             "name": "3X Short XRP Token",
             "symbol": "XRPBEAR",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/XRPBEAR-00B/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/XRPBEAR-00B/logo.png",
             "pairs": []
         },
         {
@@ -2146,7 +2146,7 @@
             "name": "3X Long XRP Token",
             "symbol": "XRPBULL",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/XRPBULL-E7C/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/XRPBULL-E7C/logo.png",
             "pairs": []
         },
         {
@@ -2156,7 +2156,7 @@
             "name": "XTZ BEP2",
             "symbol": "XTZ",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/XTZ-F7A/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/XTZ-F7A/logo.png",
             "pairs": []
         },
         {
@@ -2166,7 +2166,7 @@
             "name": "Venus",
             "symbol": "XVS",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/XVS-795/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/XVS-795/logo.png",
             "pairs": []
         },
         {
@@ -2176,7 +2176,7 @@
             "name": "YFIIBEP2",
             "symbol": "YFII",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/YFII-061/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/YFII-061/logo.png",
             "pairs": []
         },
         {
@@ -2186,7 +2186,7 @@
             "name": "ZEBI",
             "symbol": "ZEBI",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/ZEBI-84F/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/ZEBI-84F/logo.png",
             "pairs": []
         },
         {
@@ -2196,12 +2196,12 @@
             "name": "ZECBEP2",
             "symbol": "ZEC",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/ZEC-93E/logo.png",
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/ZEC-93E/logo.png",
             "pairs": []
         }
     ],
     "version": {
-        "major": 114,
+        "major": 185,
         "minor": 0,
         "patch": 0
     }
