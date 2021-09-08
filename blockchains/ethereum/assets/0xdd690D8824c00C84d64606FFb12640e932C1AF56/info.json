@@ -1,8 +1,6 @@
 {
     "name": "Tavittcoin",
     "website": "https://tavitt.co.jp",
-    "source_code": "https://github.com/Tavitt/token",
-    "whitepaper": "https://tavitt.co.jp/TAVITT_WP_En_ver2.01.pdf",
     "twitter": "https://twitter.com/tavitt_coltd",
     "telegram": "https://t.me/tavitt_official",
     "facebook": "https://www.facebook.com/TavittThailand",
@@ -12,5 +10,15 @@
     "symbol": "TAVITT",
     "decimals": 8,
     "status": "active",
-    "id": "0xdd690D8824c00C84d64606FFb12640e932C1AF56"
+    "id": "0xdd690D8824c00C84d64606FFb12640e932C1AF56",
+    "links": [
+        {
+            "name": "whitepaper",
+            "url": "https://tavitt.co.jp/TAVITT_WP_En_ver2.01.pdf"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/Tavitt/token"
+        }
+    ]
 }
