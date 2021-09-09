@@ -1,25 +1,37 @@
 {
-    "name": "Aeternity",
-    "website": "https://aeternity.com",
-    "source_code": "https://github.com/aeternity",
-    "white_paper": "https://github.com/aeternity/white-paper/blob/master/paper.pdf",
-    "description": "Aeternity is a blockchain platform with turing complete smart contracts. The platform implemented decentralized oracles to make it possible for decentralized applications to use real world data.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/aeternity",
-            "handle": "aeternity"
-        },
-        {
-            "name": "Reddit",
-            "url": "https://www.reddit.com/r/Aeternity",
-            "handle": "Aeternity"
-        }
-    ],
-    "explorer": "https://www.aeknow.org/",
-    "research": "https://research.binance.com/en/projects/aeternity",
-    "symbol": "AE",
-    "type": "COIN",
-    "decimals": 18,
-    "status": "active"
-}
+     "name": "NAFTY",
+     "type": "BEP21",
+     "symbol": "NAFTY",
+     "decimals": 9,
+     "website": "https://naftytoken.com",
+     "description": "NAFTY is a token for the adult industry, aimed to both empower content creators and reward content consumers.",
+     "explorer": "https://bscscan.com/address/0x2eed4682197834708c0ea8d11d683440bbe104d1",
+     "status": "active",
+     "id": "0x2eed4682197834708c0ea8d11d683440bbe104d1",
+     "links": [
+         {
+             "name": "twitter",
+             "url": "https://twitter.com/naftyofficial"
+         },
+         {
+             "name": "reddit",
+             "url": "https://www.reddit.com/r/NaftyDiscussions/"
+         },
+         {
+             "name": "telegram",
+             "url": "https://t.me/naftydiscussions"
+	},
+         {
+             "name": "discord",
+             "url": "https://discord.com/invite/CvtBYZGCKm"
+	},
+         {
+             "name": "Whitepaper",
+             "url": "https://naftytoken.com/docs/whitepaper/"
+	},
+         {
+             "name": "email",
+             "url": "support@naftytoken.com"
+         }
+     ]
+ } 
