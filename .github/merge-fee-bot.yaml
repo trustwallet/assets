@@ -1,9 +1,9 @@
 # Expected Payment.  Can be more than one options.
 payments:
-  - amount: 250
+  - amount: 1000
     token: TWT
     address: bnb1tqq9llyr3dyjd559dha6z5r5etk3qfwk07m098
-  - amount: 2
+  - amount: 5
     token: BNB
     address: bnb1tqq9llyr3dyjd559dha6z5r5etk3qfwk07m098
 payment:
@@ -49,7 +49,7 @@ user:
   assignOnPay: zachzwei,catenocrypt,Cryptocool1
   # if set to 1 comments from not allowed users are deleted.  Only comments from the PR creator or collaborators are allowed
   deleteComments: 1
-  collaborators: zachzwei,Iamdeadlyz,catenocrypt,vikmeup,hewigovens,Cryptocool1
+  collaborators: zachzwei,Iamdeadlyz,catenocrypt,vikmeup,hewigovens,Cryptocool1,cryptomanz
 timeout:
   maxAgeCloseHours: 48
   maxIdleRemindHours: 22
