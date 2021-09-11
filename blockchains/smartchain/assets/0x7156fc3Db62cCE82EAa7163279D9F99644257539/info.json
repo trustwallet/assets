@@ -1,11 +1,38 @@
 {
 	"name": "Gooreo Coin",
     "website": "https://coin.gooreo.com/",
-    "description": "Gooreo is a global freelancers' platform, where you can pay and get paid in cryptocurrency.",
+    "description": "Gooreo is a global freelancers platform, where you can pay and get paid in cryptocurrency.",
     "explorer": "https://bscscan.com/token/0x7156fc3db62cce82eaa7163279d9f99644257539",
-    "type": "BEP20",
+    "research": "",
+	"type": "BEP20",
     "symbol": "GOOREO",
     "decimals": 18,
     "status": "active",
     "id": "0x7156fc3Db62cCE82EAa7163279D9F99644257539"
+	"links": [
+        {
+            "name": "Whitepaper",
+            "url": "https://github.com/Gooreo/whitepaper/"
+        },
+        {
+            "name": "Twitter",
+            "url": "https://twitter.com/Gooreoplatform"
+        },
+        {
+            "name": "Telegram",
+            "url": "https://t.me/Gooreo"
+        },
+        {
+            "name": "Blog",
+            "url": "https://gooreo.medium.com/"
+        }
+		{
+            "name": "Youtube",
+            "url": "https://www.youtube.com/channel/UCB98Yqzwnr81UUdCiI6bB-g"
+        }
+		{
+            "name": "Github",
+            "url": "https://github.com/Gooreo"
+        }
+    ]
 }
