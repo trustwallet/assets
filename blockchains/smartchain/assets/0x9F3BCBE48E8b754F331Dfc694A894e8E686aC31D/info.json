@@ -7,5 +7,27 @@
     "symbol": "ACT",
     "decimals": 18,
     "status": "active",
-    "id": "0x9F3BCBE48E8b754F331Dfc694A894e8E686aC31D"
+    "id": "0x9F3BCBE48E8b754F331Dfc694A894e8E686aC31D",
+    "links": [
+		{
+			"name": "coinmarketcap",
+			"url": "https://coinmarketcap.com/currencies/acet/"
+		},
+		{
+			"name": "coingecko",
+			"url": "https://www.coingecko.com/en/coins/acet-token"
+		},
+		{
+			"name": "twitter",
+			"url": "https://twitter.com/ACTDeFansFi"
+		},
+        {
+			"name": "facebook",
+			"url": "https://www.facebook.com/ACTDeFansFi/"
+		},
+		{
+			"name": "telegram",
+			"url": "https://t.me/acetdefansfi"
+		}
+	]
 }
