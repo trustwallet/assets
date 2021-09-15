@@ -1,0 +1,20 @@
+{
+    "versionEnd": {
+        "versionNum": 3240,
+        "commit": "9815845c742865b444fd546fbca1b1a7c1aa324a",
+        "date": "2021-08-12T16:45:05.857Z"
+    },
+    "versionStart": {
+        "versionNum": 3239,
+        "commit": "3cc11b8e6f1dfaf16727b077cf9e7666d06d786c",
+        "date": "2021-08-12T16:43:46.448Z"
+    },
+    "changes": [
+        "blockchains/ethereum/allowlist.json",
+        "blockchains/ethereum/assets/0x808507121B80c02388fAd14726482e061B8da827/info.json",
+        "blockchains/ethereum/assets/0x808507121B80c02388fAd14726482e061B8da827/logo.png",
+        "blockchains/polygon/allowlist.json",
+        "blockchains/smartchain/allowlist.json",
+        "blockchains/smartchain/assets/0x0b15Ddf19D47E6a86A56148fb4aFFFc6929BcB89/info.json"
+    ]
+}
