@@ -1,11 +1,25 @@
 {
     "name": "LooksCoin",
-    "symbol": "LOOK",
-    "type": "BEP20",
-    "decimals": 18,
-    "description": "Build wealth with LooksCoin by holding tokenized ownership of creative product lines using NFT on LookRev P2P design-to-sell marketplace.",
     "website": "https://lookscoin.com/",
-    "explorer": "https://bscscan.com/address/0x73cBA57Ad8bC775A5345D9a0de2e90C74621D802",
+    "description": "Build wealth with LooksCoin by holding tokenized ownership of creative product lines on LookRev P2P design-to-sell marketplace.",
+    "explorer": "https://bscscan.com/token/0x73cba57ad8bc775a5345d9a0de2e90c74621d802",
+    "type": "BEP20",
+    "symbol": "LOOK",
+    "decimals": 18,
     "status": "active",
-    "id": "0x73cBA57Ad8bC775A5345D9a0de2e90C74621D802"
+    "id": "0x73cBA57Ad8bC775A5345D9a0de2e90C74621D802",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/LooksCoin"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/lookrevcommunity"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.gg/qaY8Z8FCq9"
+        }
+    ]
 }
