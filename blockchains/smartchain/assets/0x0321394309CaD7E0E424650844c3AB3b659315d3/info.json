@@ -3,25 +3,28 @@
     "website": "https://xbc.xbn.finance",
     "short_description": "A community-driven, fair-launched DeFi project built on Binance Smart Chain #BSC",
     "explorer": "https://bscscan.com/token/0x0321394309cad7e0e424650844c3ab3b659315d3",
-    "source_code": "https://github.com/ElasticBTC-XBT",
     "description": "XBN Community is a community-driven, fair-launched DeFi project built on Binance Smart Chain #BSC. Three functions occur during each trade: Reflection, LP Acquisition, and Burn.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/elasticbitcoin"
-        },
-        {
-            "name": "Medium",
-            "url": "https://medium.com/elastic-bitcoin-xbt"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/elasticbitcoin"
-        }
-    ],
     "type": "BEP20",
     "symbol": "XBC",
     "decimals": 9,
     "status": "active",
-    "id": "0x0321394309CaD7E0E424650844c3AB3b659315d3"
+    "id": "0x0321394309CaD7E0E424650844c3AB3b659315d3",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/ElasticBTC-XBT"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/elasticbitcoin"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/elasticbitcoin"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/elastic-bitcoin-xbt"
+        }
+    ]
 }

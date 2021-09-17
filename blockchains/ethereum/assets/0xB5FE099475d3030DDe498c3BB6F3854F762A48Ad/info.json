@@ -3,31 +3,23 @@
     "website": "https://fnktoken.com",
     "description": "Token FNK. Ready-made solutions for maximum profit",
     "explorer": "https://etherscan.io/token/0xb5fe099475d3030dde498c3bb6f3854f762a48ad",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/fnktoken",
-            "handle": "ethereum"
-        },
-        {
-            "name": "Facebook",
-            "url": "https://www.facebook.com/finiko.token",
-            "handle": "ethereum"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/fnktoken",
-            "handle": "ethereum"
-        },
-        {
-            "name": "Instagram",
-            "url": "https://www.instagram.com/fnktoken",
-            "handle": "ethereum"
-        }
-    ],
     "type": "ERC20",
     "symbol": "FNK",
     "decimals": 18,
     "status": "active",
-    "id": "0xB5FE099475d3030DDe498c3BB6F3854F762A48Ad"
+    "id": "0xB5FE099475d3030DDe498c3BB6F3854F762A48Ad",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/ethereum"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/fnktoken"
+        },
+        {
+            "name": "facebook",
+            "url": "https://facebook.com/finiko.token"
+        }
+    ]
 }

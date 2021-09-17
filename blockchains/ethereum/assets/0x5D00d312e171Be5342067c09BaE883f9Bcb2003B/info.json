@@ -3,21 +3,15 @@
     "website": "https://ethermon.io",
     "description": "Decentralized World of Ether Monsters",
     "explorer": "https://etherscan.io/token/0x5D00d312e171Be5342067c09BaE883f9Bcb2003B",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/ethermon_nft",
-            "handle": "ethermon_nft"
-        },
-        {
-            "name": "Instagram",
-            "url": "https://www.instagram.com/ethermon_nft",
-            "handle": "ethermon_nft"
-        }
-    ],
     "type": "ERC20",
     "symbol": "EMONA",
     "decimals": 0,
     "status": "active",
-    "id": "0x5D00d312e171Be5342067c09BaE883f9Bcb2003B"
+    "id": "0x5D00d312e171Be5342067c09BaE883f9Bcb2003B",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/ethermon_nft"
+        }
+    ]
 }

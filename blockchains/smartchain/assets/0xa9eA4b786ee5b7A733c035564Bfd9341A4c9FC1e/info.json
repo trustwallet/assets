@@ -2,24 +2,24 @@
     "name": "Apecoin",
     "website": "https://APEcoin.dev",
     "description": "APEcoin embraces the humor and viral nature of memes by developing an ecosystem of platforms that celebrate and explore crypto trends. GO APE!",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/Go_APEcoin?s=20"
-        },
-        {
-            "name": "Medium",
-            "url": "https://go-apecoin.medium.com"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/APEcoin_Chat"
-        }
-    ],
-    "explorer": "https://bscscan.com/address/0xa9ea4b786ee5b7a733c035564bfd9341a4c9fc1e",
+    "explorer": "https://bscscan.com/token/0xa9eA4b786ee5b7A733c035564Bfd9341A4c9FC1e",
     "type": "BEP20",
     "symbol": "APE",
     "decimals": 18,
     "status": "active",
-    "id": "0xa9eA4b786ee5b7A733c035564Bfd9341A4c9FC1e"
+    "id": "0xa9eA4b786ee5b7A733c035564Bfd9341A4c9FC1e",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/Go_APEcoin?s=20"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/APEcoin_Chat"
+        },
+        {
+            "name": "medium",
+            "url": "https://go-apecoin.medium.com"
+        }
+    ]
 }

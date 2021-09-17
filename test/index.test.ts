@@ -20,7 +20,10 @@ import {
     arrayEqual,
     reverseCase
 } from "../script/generic/types";
-import { findImagesToFetch } from "../script/blockchain/binance";
+import {
+    BinanceTokenInfo,
+    findImagesToFetch
+} from "../script/blockchain/binance";
 import { isValidStatusValue } from "../script/generic/status-values";
 import { isValidTagValue, isValidTagValues } from "../script/generic/tag-values";
 
@@ -126,12 +129,17 @@ describe("Test type helpers", () => {
 
 describe("Test blockchain binance", () => {
     test(`Test findImagesToFetch`, () => {
-        const assetsInfoListNonexisting = [{asset: "A1", assetImg: "imgurl1"}, {asset: "A2", assetImg: "imgurl2"}];
-        const assetsInfoListExisting = [{asset: "BUSD-BD1", assetImg: "imgurlBUSD"}, {asset: "ETH-1C9", assetImg: "imgurlETH"}];
+        const infoA1: BinanceTokenInfo = {asset: "A1-11", name: "A 1", mappedAsset: "A1", assetImg: "imgurl1", decimals: 8};
+        const infoA2: BinanceTokenInfo = {asset: "A2-12", name: "A 2", mappedAsset: "A2", assetImg: "imgurl2", decimals: 8};
+        const assetsInfoListNonexisting: BinanceTokenInfo[] = [infoA1, infoA2];
+        const assetsInfoListExisting: BinanceTokenInfo[] = [
+            {asset: "BUSD-BD1", name: "Binance USD", mappedAsset: "BUSD", assetImg: "imgurlBUSD", decimals: 8},
+            {asset: "ETH-1C9", name: "Binance Ethereum", mappedAsset: "BETH", assetImg: "imgurlETH", decimals: 8}
+        ];
         const denyListEmpty: string[] = [];
-        const denyListA1: string[] = ["A1"];
+        const denyListA1: string[] = ["A1-11"];
         expect(findImagesToFetch(assetsInfoListNonexisting, denyListEmpty), `2 nonexisting`).toEqual(assetsInfoListNonexisting);
-        expect(findImagesToFetch(assetsInfoListNonexisting, denyListA1), `2 nonexisting with 1 denylisted`).toEqual([{asset: "A2", assetImg: "imgurl2"}]);
+        expect(findImagesToFetch(assetsInfoListNonexisting, denyListA1), `2 nonexisting with 1 denylisted`).toEqual([infoA2]);
         expect(findImagesToFetch(assetsInfoListExisting, denyListEmpty), `2 existing`).toEqual([]);
         expect(findImagesToFetch([], []), `empty`).toEqual([]);
     });
