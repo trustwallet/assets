@@ -222,6 +222,7 @@ export function chainFromAssetType(type: string): string {
         case "AVALANCHE": return "avalanchec";
         case "ARBITRUM": return "arbitrum";
         case "FANTOM": return "fantom";
+        case "TERRA": return "terra";
         default: return "";
     }
 }
@@ -310,7 +311,9 @@ export function explorerUrl(chain: string, contract: string): string {
                 return `https://arbiscan.io/token/${contract}`
             case "fantom":
                 return `https://ftmscan.com/token/${contract}`
-        }
+            case "terra":
+                return `https://finder.terra.money/columbus-4/${contract}`
+            }
     }
     return "";
 }

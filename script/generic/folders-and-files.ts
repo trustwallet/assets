@@ -92,14 +92,9 @@ export class FoldersFiles implements ActionInterface {
                                 if (!infoExists || !logoExists) {
                                     if (!infoExists && logoExists) {
                                         const msg = `Missing info file for asset '${chain}/${address}' -- ${infoFullPath}`;
-                                        // enforce that info must be present (with some exceptions)
-                                        if (chain === 'terra') {
-                                            //console.log(msg);
-                                            warnings.push(msg);
-                                        } else {
-                                            console.log(msg);
-                                            errors.push(msg);
-                                        }
+                                        // enforce that info must be present
+                                        console.log(msg);
+                                        errors.push(msg);
                                     }
                                     if (!logoExists && infoExists) {
                                         const info: unknown = readJsonFile(infoFullPath);
