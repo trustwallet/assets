@@ -1,11 +1,61 @@
 {
-    "name": "HOGE",
-    "website": "https://hogefinance.com",
-    "description": "We Meme Business.",
-    "explorer": "https://etherscan.io/token/0xfAd45E47083e4607302aa43c65fB3106F1cd7607",
+    "name": "Hoge Finance",
     "type": "ERC20",
     "symbol": "HOGE",
     "decimals": 9,
+    "website": "https://hogefinance.com",
+    "description": "We Meme Business! DeFi community token with burn and auto staking. No one owns HOGE, we all are a part of it.",
+    "explorer": "https://etherscan.io/token/0xfAd45E47083e4607302aa43c65fB3106F1cd7607",
     "status": "active",
-    "id": "0xfAd45E47083e4607302aa43c65fB3106F1cd7607"
+    "id": "0xfAd45E47083e4607302aa43c65fB3106F1cd7607",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/HogeFinance"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/hoge-finance/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/hoge-finance"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://hogefinance.com/img/hoge_whitepaper.pdf"
+        },
+        {
+            "name": "source_code",
+            "url": "https://etherscan.io/address/0xfad45e47083e4607302aa43c65fb3106f1cd7607#code"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/hoge"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/hoge"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/HogeFinance"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/hogefinance"
+        },
+        {
+            "name": "forum",
+            "url": "https://nation.hoge.finance/"
+        },
+        {
+            "name": "youtube",
+            "url": "https://youtube.com/channel/UCsKMSBrpBq9ZCDhJJue5RzQ"
+        },
+        {
+            "name": "facebook",
+            "url": "https://facebook.com/hoge.finance.official/"
+        }
+    ]
 }
