@@ -1,0 +1,19 @@
+{
+    "versionEnd": {
+        "versionNum": 3672,
+        "commit": "a1fcf485f060099900c4605a7eeeaad5f72aa8a2",
+        "date": "2021-09-18T01:33:11.716Z"
+    },
+    "versionStart": {
+        "versionNum": 3671,
+        "commit": "39928d322f1026735f603cf4e1e5e55efde7f847",
+        "date": "2021-09-18T01:31:42.668Z"
+    },
+    "changes": [
+        "blockchains/terra/allowlist.json",
+        "blockchains/terra/assets/ukrw/info.json",
+        "blockchains/terra/assets/umnt/info.json",
+        "blockchains/terra/assets/usdt/info.json",
+        "blockchains/terra/assets/uusd/info.json"
+    ]
+}
