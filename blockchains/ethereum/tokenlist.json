@@ -1,7 +1,7 @@
 {
     "name": "Trust Wallet: Ethereum",
     "logoURI": "https://trustwallet.com/assets/images/favicon.png",
-    "timestamp": "2021-06-17T12:27:54.729Z",
+    "timestamp": "2021-09-20T10:36:32.094Z",
     "tokens": [
         {
             "chainId": 1,
@@ -13,9 +13,6 @@
             "decimals": 18,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png",
             "pairs": [
-                {
-                    "base": "c60_t0x0000000000085d4780B73119b644AE5ecd22b376"
-                },
                 {
                     "base": "c60_t0x0000000000095413afC295d19EDeb1Ad7B71c952"
                 },
@@ -29,10 +26,10 @@
                     "base": "c60_t0x0202Be363B8a4820f3F4DE7FaF5224fF05943AB1"
                 },
                 {
-                    "base": "c60_t0x0258F474786DdFd37ABCE6df6BBb1Dd5dfC4434a"
+                    "base": "c60_t0x03ab458634910AaD20eF5f1C8ee96F1D6ac54919"
                 },
                 {
-                    "base": "c60_t0x03ab458634910AaD20eF5f1C8ee96F1D6ac54919"
+                    "base": "c60_t0x06A01a4d579479Dd5D884EBf61A31727A3d8D442"
                 },
                 {
                     "base": "c60_t0x09a3EcAFa817268f77BE1283176B946C4ff2E608"
@@ -44,9 +41,6 @@
                     "base": "c60_t0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e"
                 },
                 {
-                    "base": "c60_t0x0c7D5ae016f806603CB1782bEa29AC69471CAb9c"
-                },
-                {
                     "base": "c60_t0x0CDF9acd87E940837ff21BB40c9fd55F68bba059"
                 },
                 {
@@ -54,9 +48,6 @@
                 },
                 {
                     "base": "c60_t0x0D8775F648430679A709E98d2b0Cb6250d2887EF"
-                },
-                {
-                    "base": "c60_t0x0f51bb10119727a7e5eA3538074fb341F56B09Ad"
                 },
                 {
                     "base": "c60_t0x0F5D2fB29fb7d3CFeE444a200298f468908cC942"
@@ -68,6 +59,9 @@
                     "base": "c60_t0x0FD10b9899882a6f2fcb5c371E17e70FdEe00C38"
                 },
                 {
+                    "base": "c60_t0x0ff5A8451A839f5F0BB3562689D9A44089738D11"
+                },
+                {
                     "base": "c60_t0x0fF6ffcFDa92c53F615a4A75D982f399C989366b"
                 },
                 {
@@ -77,22 +71,22 @@
                     "base": "c60_t0x111111111117dC0aa78b770fA6A738034120C302"
                 },
                 {
-                    "base": "c60_t0x1337DEF16F9B486fAEd0293eb623Dc8395dFE46a"
+                    "base": "c60_t0x1337DEF18C680aF1f9f45cBcab6309562975b1dD"
                 },
                 {
-                    "base": "c60_t0x1337DEF18C680aF1f9f45cBcab6309562975b1dD"
+                    "base": "c60_t0x1416946162B1C2c871A73B07E932D2fB6C932069"
                 },
                 {
                     "base": "c60_t0x1494CA1F11D487c2bBe4543E90080AeBa4BA3C2b"
                 },
                 {
-                    "base": "c60_t0x15874d65e649880c2614e7a480cb7c9A55787FF6"
-                },
-                {
-                    "base": "c60_t0x1614F18Fc94f47967A3Fbe5FfcD46d4e7Da3D787"
-                },
-                {
                     "base": "c60_t0x16980b3B4a3f9D89E33311B5aa8f80303E5ca4F8"
+                },
+                {
+                    "base": "c60_t0x1796ae0b0fa4862485106a0de9b654eFE301D0b2"
+                },
+                {
+                    "base": "c60_t0x17aC188e09A7890a1844E5E65471fE8b0CcFadF3"
                 },
                 {
                     "base": "c60_t0x18aAA7115705e8be94bfFEBDE57Af9BFc265B998"
@@ -101,34 +95,28 @@
                     "base": "c60_t0x1b40183EFB4Dd766f11bDa7A7c3AD8982e998421"
                 },
                 {
-                    "base": "c60_t0x1cBb83EbcD552D5EBf8131eF8c9CD9d9BAB342bC"
+                    "base": "c60_t0x1cEB5cB57C4D4E2b2433641b95Dd330A33185A44"
                 },
                 {
-                    "base": "c60_t0x1cEB5cB57C4D4E2b2433641b95Dd330A33185A44"
+                    "base": "c60_t0x1dD80016e3d4ae146Ee2EBB484e8edD92dacC4ce"
+                },
+                {
+                    "base": "c60_t0x1F8A626883d7724DBd59eF51CBD4BF1Cf2016D13"
                 },
                 {
                     "base": "c60_t0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984"
                 },
                 {
+                    "base": "c60_t0x1fE24F25b1Cf609B9c4e7E12D802e3640dFA5e43"
+                },
+                {
                     "base": "c60_t0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599"
                 },
                 {
-                    "base": "c60_t0x226f7b842E0F0120b7E194D05432b3fd14773a9D"
-                },
-                {
-                    "base": "c60_t0x25e1474170c4c0aA64fa98123bdc8dB49D7802fa"
-                },
-                {
-                    "base": "c60_t0x26a79Bd709A7eF5E5F747B8d8f83326EA044d8cC"
+                    "base": "c60_t0x249e38Ea4102D0cf8264d3701f1a0E39C4f2DC3B"
                 },
                 {
                     "base": "c60_t0x26c8AFBBFE1EBaca03C2bB082E69D0476Bffe099"
-                },
-                {
-                    "base": "c60_t0x26CE25148832C04f3d7F26F32478a9fe55197166"
-                },
-                {
-                    "base": "c60_t0x27C70Cd1946795B66be9d954418546998b546634"
                 },
                 {
                     "base": "c60_t0x2b591e99afE9f32eAA6214f7B7629768c40Eeb39"
@@ -137,10 +125,13 @@
                     "base": "c60_t0x3301Ee63Fb29F863f2333Bd4466acb46CD8323E6"
                 },
                 {
-                    "base": "c60_t0x3383c5a8969Dc413bfdDc9656Eb80A1408E4bA20"
+                    "base": "c60_t0x33D0568941C0C64ff7e0FB4fbA0B11BD37deEd9f"
                 },
                 {
-                    "base": "c60_t0x33D0568941C0C64ff7e0FB4fbA0B11BD37deEd9f"
+                    "base": "c60_t0x3593D125a4f7849a1B059E64F4517A86Dd60c95d"
+                },
+                {
+                    "base": "c60_t0x35bD01FC9d6D5D81CA9E055Db88Dc49aa2c699A8"
                 },
                 {
                     "base": "c60_t0x3845badAde8e6dFF049820680d1F14bD3903a5d0"
@@ -152,13 +143,22 @@
                     "base": "c60_t0x38e4adB44ef08F22F5B5b76A8f0c2d0dCbE7DcA1"
                 },
                 {
+                    "base": "c60_t0x3B78dc5736a49BD297Dd2E4d62daA83D35A22749"
+                },
+                {
+                    "base": "c60_t0x3D3D35bb9bEC23b06Ca00fe472b50E7A4c692C30"
+                },
+                {
                     "base": "c60_t0x408e41876cCCDC0F92210600ef50372656052a38"
                 },
                 {
                     "base": "c60_t0x40FD72257597aA14C7231A7B1aaa29Fce868F677"
                 },
                 {
-                    "base": "c60_t0x429881672B9AE42b8EbA0E26cD9C73711b891Ca5"
+                    "base": "c60_t0x431ad2ff6a9C365805eBaD47Ee021148d6f7DBe0"
+                },
+                {
+                    "base": "c60_t0x43f11c02439e2736800433b4594994Bd43Cd066D"
                 },
                 {
                     "base": "c60_t0x45804880De22913dAFE09f4980848ECE6EcbAf78"
@@ -167,7 +167,7 @@
                     "base": "c60_t0x4691937a7508860F876c9c0a2a617E7d9E945D4B"
                 },
                 {
-                    "base": "c60_t0x4e352cF164E64ADCBad318C3a1e222E9EBa4Ce42"
+                    "base": "c60_t0x4a220E6096B25EADb88358cb44068A3248254675"
                 },
                 {
                     "base": "c60_t0x514910771AF9Ca656af840dff83E8264EcF986CA"
@@ -177,6 +177,9 @@
                 },
                 {
                     "base": "c60_t0x5228a22e72ccC52d415EcFd199F99D0665E7733b"
+                },
+                {
+                    "base": "c60_t0x57Ab1ec28D129707052df4dF418D58a2D46d5f51"
                 },
                 {
                     "base": "c60_t0x584bC13c7D411c00c01A62e8019472dE68768430"
@@ -191,16 +194,22 @@
                     "base": "c60_t0x62359Ed7505Efc61FF1D56fEF82158CcaffA23D7"
                 },
                 {
+                    "base": "c60_t0x6243d8CEA23066d098a15582d81a598b4e8391F4"
+                },
+                {
+                    "base": "c60_t0x630d98424eFe0Ea27fB1b3Ab7741907DFFEaAd78"
+                },
+                {
                     "base": "c60_t0x63b4f3e3fa4e438698CE330e365E831F7cCD1eF4"
                 },
                 {
                     "base": "c60_t0x66a0f676479Cee1d7373f3DC2e2952778BfF5bd6"
                 },
                 {
-                    "base": "c60_t0x67c597624B17b16fb77959217360B7cD18284253"
+                    "base": "c60_t0x67B6D479c7bB412C54e03dCA8E1Bc6740ce6b99C"
                 },
                 {
-                    "base": "c60_t0x6810e776880C02933D47DB1b9fc05908e5386b96"
+                    "base": "c60_t0x69692D3345010a207b759a7D1af6fc7F38b35c5E"
                 },
                 {
                     "base": "c60_t0x6B175474E89094C44Da98b954EedeAC495271d0F"
@@ -224,9 +233,6 @@
                     "base": "c60_t0x761D38e5ddf6ccf6Cf7c55759d5210750B5D60F3"
                 },
                 {
-                    "base": "c60_t0x7659CE147D0e714454073a5dd7003544234b6Aa0"
-                },
-                {
                     "base": "c60_t0x77777FeDdddFfC19Ff86DB637967013e6C6A116C"
                 },
                 {
@@ -237,9 +243,6 @@
                 },
                 {
                     "base": "c60_t0x7dE91B204C1C737bcEe6F000AAA6569Cf7061cb7"
-                },
-                {
-                    "base": "c60_t0x7F3EDcdD180Dbe4819Bd98FeE8929b5cEdB3AdEB"
                 },
                 {
                     "base": "c60_t0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9"
@@ -263,9 +266,6 @@
                     "base": "c60_t0x84cA8bc7997272c7CfB4D0Cd3D55cd942B3c9419"
                 },
                 {
-                    "base": "c60_t0x853d955aCEf822Db058eb8505911ED77F175b99e"
-                },
-                {
                     "base": "c60_t0x85Eee30c52B0b379b046Fb0F85F4f3Dc3009aFEC"
                 },
                 {
@@ -278,16 +278,16 @@
                     "base": "c60_t0x88EF27e69108B2633F8E1C184CC37940A075cC02"
                 },
                 {
-                    "base": "c60_t0x8a40c222996f9F3431f63Bf80244C36822060f12"
-                },
-                {
                     "base": "c60_t0x8a854288a5976036A725879164Ca3e91d30c6A1B"
                 },
                 {
-                    "base": "c60_t0x8CE9137d39326AD0cD6491fb5CC0CbA0e089b6A9"
+                    "base": "c60_t0x8B3192f5eEBD8579568A2Ed41E6FEB402f93f73F"
                 },
                 {
-                    "base": "c60_t0x8dAEBADE922dF735c38C80C7eBD708Af50815fAa"
+                    "base": "c60_t0x8B39B70E39Aa811b69365398e0aACe9bee238AEb"
+                },
+                {
+                    "base": "c60_t0x8E6cd950Ad6ba651F6DD608Dc70e5886B1AA6B24"
                 },
                 {
                     "base": "c60_t0x8f8221aFbB33998d8584A2B05749bA73c37a938a"
@@ -338,12 +338,6 @@
                     "base": "c60_t0x9F9c8ec3534c3cE16F928381372BfbFBFb9F4D24"
                 },
                 {
-                    "base": "c60_t0xa0246c9032bC3A600820415aE600c6388619A14D"
-                },
-                {
-                    "base": "c60_t0xa0afAA285Ce85974c3C881256cB7F225e3A1178a"
-                },
-                {
                     "base": "c60_t0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
                 },
                 {
@@ -359,6 +353,9 @@
                     "base": "c60_t0xA4EED63db85311E22dF4473f87CcfC3DaDCFA3E3"
                 },
                 {
+                    "base": "c60_t0xA8b919680258d369114910511cc87595aec0be6D"
+                },
+                {
                     "base": "c60_t0xa8c8CfB141A3bB59FEA1E2ea6B79b5ECBCD7b6ca"
                 },
                 {
@@ -368,16 +365,7 @@
                     "base": "c60_t0xaaAEBE6Fe48E54f431b0C390CfaF0b017d09D42d"
                 },
                 {
-                    "base": "c60_t0xAd4f86a25bbc20FfB751f2FAC312A0B4d8F88c64"
-                },
-                {
-                    "base": "c60_t0xaDB2437e6F65682B85F814fBc12FeC0508A7B1D0"
-                },
-                {
                     "base": "c60_t0xaE697F994Fc5eBC000F8e22EbFfeE04612f98A0d"
-                },
-                {
-                    "base": "c60_t0x41a3dba3d677e573636ba691a70ff2d606c29666"
                 },
                 {
                     "base": "c60_t0xaf9f549774ecEDbD0966C52f250aCc548D3F36E5"
@@ -386,10 +374,7 @@
                     "base": "c60_t0xB26631c6dda06aD89B93C71400D25692de89c068"
                 },
                 {
-                    "base": "c60_t0xB62132e35a6c13ee1EE0f84dC5d40bad8d815206"
-                },
-                {
-                    "base": "c60_t0xB6ff96B8A8d214544Ca0dBc9B33f7AD6503eFD32"
+                    "base": "c60_t0xB4EFd85c19999D84251304bDA99E90B92300Bd93"
                 },
                 {
                     "base": "c60_t0xb753428af26E81097e7fD17f40c88aaA3E04902c"
@@ -425,6 +410,9 @@
                     "base": "c60_t0xC52C326331E9Ce41F04484d3B5E5648158028804"
                 },
                 {
+                    "base": "c60_t0xc770EEfAd204B5180dF6a14Ee197D99d808ee52d"
+                },
+                {
                     "base": "c60_t0xCb5f72d37685C3D5aD0bB5F982443BC8FcdF570E"
                 },
                 {
@@ -434,10 +422,13 @@
                     "base": "c60_t0xCC4304A31d09258b0029eA7FE63d032f52e44EFe"
                 },
                 {
-                    "base": "c60_t0xD23Ac27148aF6A2f339BD82D0e3CFF380b5093de"
+                    "base": "c60_t0xd084B83C305daFD76AE3E1b4E1F1fe2eCcCb3988"
                 },
                 {
-                    "base": "c60_t0xd26114cd6EE289AccF82350c8d8487fedB8A0C07"
+                    "base": "c60_t0xd2877702675e6cEb975b4A1dFf9fb7BAF4C91ea9"
+                },
+                {
+                    "base": "c60_t0xD291E7a03283640FDc51b121aC401383A46cC623"
                 },
                 {
                     "base": "c60_t0xd379700999F4805Ce80aa32DB46A94dF64561108"
@@ -449,13 +440,22 @@
                     "base": "c60_t0xD533a949740bb3306d119CC777fa900bA034cd52"
                 },
                 {
+                    "base": "c60_t0xD56daC73A4d6766464b38ec6D91eB45Ce7457c44"
+                },
+                {
+                    "base": "c60_t0xD69F306549e9d96f183B1AecA30B8f4353c2ECC3"
+                },
+                {
                     "base": "c60_t0xdAC17F958D2ee523a2206206994597C13D831ec7"
                 },
                 {
-                    "base": "c60_t0xdd974D5C2e2928deA5F71b9825b8b646686BD200"
+                    "base": "c60_t0xDDB3422497E61e13543BeA06989C0789117555c5"
                 },
                 {
-                    "base": "c60_t0xDDB3422497E61e13543BeA06989C0789117555c5"
+                    "base": "c60_t0xe1030B48b2033314979143766d7dC1F40ef8CE11"
+                },
+                {
+                    "base": "c60_t0xe3818504c1B32bF1557b16C238B2E01Fd3149C17"
                 },
                 {
                     "base": "c60_t0xE41d2489571d322189246DaFA5ebDe1F4699F498"
@@ -479,10 +479,16 @@
                     "base": "c60_t0xEB4C2781e4ebA804CE9a9803C67d0893436bB27D"
                 },
                 {
+                    "base": "c60_t0xEE06A81a695750E71a662B51066F2c74CF4478a0"
+                },
+                {
                     "base": "c60_t0xeEAA40B28A2d1b0B08f6f97bB1DD4B75316c6107"
                 },
                 {
-                    "base": "c60_t0xEEF9f339514298C6A857EfCfC1A762aF84438dEE"
+                    "base": "c60_t0xEec2bE5c91ae7f8a338e1e5f3b5DE49d07AfdC81"
+                },
+                {
+                    "base": "c60_t0xF063fE1aB7a291c5d06a86e14730b00BF24cB589"
                 },
                 {
                     "base": "c60_t0xf1f955016EcbCd7321c7266BccFB96c68ea5E49b"
@@ -494,6 +500,9 @@
                     "base": "c60_t0xf4CD3d3Fda8d7Fd6C5a500203e38640A70Bf9577"
                 },
                 {
+                    "base": "c60_t0xF5D669627376EBd411E34b98F19C868c8ABA5ADA"
+                },
+                {
                     "base": "c60_t0xF629cBd94d3791C9250152BD8dfBDF380E2a3B9c"
                 },
                 {
@@ -501,6 +510,9 @@
                 },
                 {
                     "base": "c60_t0xF94b5C5651c888d928439aB6514B93944eEE6F48"
+                },
+                {
+                    "base": "c60_t0xfB7B4564402E5500dB5bB6d63Ae671302777C75a"
                 },
                 {
                     "base": "c60_t0xfF20817765cB7f73d4bde2e66e067E58D11095C2"
@@ -753,6 +765,16 @@
             "pairs": []
         },
         {
+            "asset": "c60_t0x0ff5A8451A839f5F0BB3562689D9A44089738D11",
+            "type": "ERC20",
+            "address": "0x0ff5A8451A839f5F0BB3562689D9A44089738D11",
+            "name": "Dopex Rebate Token",
+            "symbol": "rDPX",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x0ff5A8451A839f5F0BB3562689D9A44089738D11/logo.png",
+            "pairs": []
+        },
+        {
             "asset": "c60_t0x0fF6ffcFDa92c53F615a4A75D982f399C989366b",
             "type": "ERC20",
             "address": "0x0fF6ffcFDa92c53F615a4A75D982f399C989366b",
@@ -801,6 +823,16 @@
             "symbol": "arNXM",
             "decimals": 18,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x1337DEF18C680aF1f9f45cBcab6309562975b1dD/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c60_t0x1416946162B1C2c871A73B07E932D2fB6C932069",
+            "type": "ERC20",
+            "address": "0x1416946162B1C2c871A73B07E932D2fB6C932069",
+            "name": "Energi",
+            "symbol": "NRGE",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x1416946162B1C2c871A73B07E932D2fB6C932069/logo.png",
             "pairs": []
         },
         {
@@ -966,6 +998,16 @@
             "pairs": []
         },
         {
+            "asset": "c60_t0x1F8A626883d7724DBd59eF51CBD4BF1Cf2016D13",
+            "type": "ERC20",
+            "address": "0x1F8A626883d7724DBd59eF51CBD4BF1Cf2016D13",
+            "name": "Jigstack",
+            "symbol": "STAK",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x1F8A626883d7724DBd59eF51CBD4BF1Cf2016D13/logo.png",
+            "pairs": []
+        },
+        {
             "chainId": 1,
             "asset": "c60_t0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984",
             "type": "ERC20",
@@ -1035,6 +1077,16 @@
             "symbol": "SOCKS",
             "decimals": 18,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x23B608675a2B2fB1890d3ABBd85c5775c51691d5/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c60_t0x249e38Ea4102D0cf8264d3701f1a0E39C4f2DC3B",
+            "type": "ERC20",
+            "address": "0x249e38Ea4102D0cf8264d3701f1a0E39C4f2DC3B",
+            "name": "The Truth",
+            "symbol": "UFO",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x249e38Ea4102D0cf8264d3701f1a0E39C4f2DC3B/logo.png",
             "pairs": []
         },
         {
@@ -1220,6 +1272,16 @@
             "pairs": []
         },
         {
+            "asset": "c60_t0x35bD01FC9d6D5D81CA9E055Db88Dc49aa2c699A8",
+            "type": "ERC20",
+            "address": "0x35bD01FC9d6D5D81CA9E055Db88Dc49aa2c699A8",
+            "name": "Friends With Benefits Pro",
+            "symbol": "FWB",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x35bD01FC9d6D5D81CA9E055Db88Dc49aa2c699A8/logo.png",
+            "pairs": []
+        },
+        {
             "asset": "c60_t0x362bc847A3a9637d3af6624EeC853618a43ed7D2",
             "type": "ERC20",
             "address": "0x362bc847A3a9637d3af6624EeC853618a43ed7D2",
@@ -1281,6 +1343,16 @@
             "pairs": []
         },
         {
+            "asset": "c60_t0x3B78dc5736a49BD297Dd2E4d62daA83D35A22749",
+            "type": "ERC20",
+            "address": "0x3B78dc5736a49BD297Dd2E4d62daA83D35A22749",
+            "name": "Finswap",
+            "symbol": "FNSP",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x3B78dc5736a49BD297Dd2E4d62daA83D35A22749/logo.png",
+            "pairs": []
+        },
+        {
             "asset": "c60_t0x3D3D35bb9bEC23b06Ca00fe472b50E7A4c692C30",
             "type": "ERC20",
             "address": "0x3D3D35bb9bEC23b06Ca00fe472b50E7A4c692C30",
@@ -1333,6 +1405,16 @@
             "pairs": []
         },
         {
+            "asset": "c60_t0x41a3dba3d677e573636ba691a70ff2d606c29666",
+            "type": "ERC20",
+            "address": "0x41a3dba3d677e573636ba691a70ff2d606c29666",
+            "name": "GoBlank",
+            "symbol": "BLANK",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x41a3dba3d677e573636ba691a70ff2d606c29666/logo.png",
+            "pairs": []
+        },
+        {
             "asset": "c60_t0x429881672B9AE42b8EbA0E26cD9C73711b891Ca5",
             "type": "ERC20",
             "address": "0x429881672B9AE42b8EbA0E26cD9C73711b891Ca5",
@@ -1350,6 +1432,16 @@
             "symbol": "DF",
             "decimals": 18,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x431ad2ff6a9C365805eBaD47Ee021148d6f7DBe0/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c60_t0x43f11c02439e2736800433b4594994Bd43Cd066D",
+            "type": "ERC20",
+            "address": "0x43f11c02439e2736800433b4594994Bd43Cd066D",
+            "name": "Floki Inu",
+            "symbol": "FLOKI",
+            "decimals": 9,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x43f11c02439e2736800433b4594994Bd43Cd066D/logo.png",
             "pairs": []
         },
         {
@@ -1627,6 +1719,16 @@
             "pairs": []
         },
         {
+            "asset": "c60_t0x6243d8CEA23066d098a15582d81a598b4e8391F4",
+            "type": "ERC20",
+            "address": "0x6243d8CEA23066d098a15582d81a598b4e8391F4",
+            "name": "Flex Ungovernance Token",
+            "symbol": "FLX",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x6243d8CEA23066d098a15582d81a598b4e8391F4/logo.png",
+            "pairs": []
+        },
+        {
             "asset": "c60_t0x626E8036dEB333b408Be468F951bdB42433cBF18",
             "type": "ERC20",
             "address": "0x626E8036dEB333b408Be468F951bdB42433cBF18",
@@ -1634,6 +1736,16 @@
             "symbol": "AIOZ",
             "decimals": 18,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x626E8036dEB333b408Be468F951bdB42433cBF18/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c60_t0x630d98424eFe0Ea27fB1b3Ab7741907DFFEaAd78",
+            "type": "ERC20",
+            "address": "0x630d98424eFe0Ea27fB1b3Ab7741907DFFEaAd78",
+            "name": "PEAKDEFI",
+            "symbol": "PEAK",
+            "decimals": 8,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x630d98424eFe0Ea27fB1b3Ab7741907DFFEaAd78/logo.png",
             "pairs": []
         },
         {
@@ -2116,6 +2228,16 @@
             "pairs": []
         },
         {
+            "asset": "c60_t0x8B3192f5eEBD8579568A2Ed41E6FEB402f93f73F",
+            "type": "ERC20",
+            "address": "0x8B3192f5eEBD8579568A2Ed41E6FEB402f93f73F",
+            "name": "Saitama Inu",
+            "symbol": "SAITAMA",
+            "decimals": 9,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x8B3192f5eEBD8579568A2Ed41E6FEB402f93f73F/logo.png",
+            "pairs": []
+        },
+        {
             "asset": "c60_t0x8B39B70E39Aa811b69365398e0aACe9bee238AEb",
             "type": "ERC20",
             "address": "0x8B39B70E39Aa811b69365398e0aACe9bee238AEb",
@@ -2164,6 +2286,16 @@
             "symbol": "TBTC",
             "decimals": 18,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x8dAEBADE922dF735c38C80C7eBD708Af50815fAa/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c60_t0x8E6cd950Ad6ba651F6DD608Dc70e5886B1AA6B24",
+            "type": "ERC20",
+            "address": "0x8E6cd950Ad6ba651F6DD608Dc70e5886B1AA6B24",
+            "name": "StarLink $STARL",
+            "symbol": "STARL",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x8E6cd950Ad6ba651F6DD608Dc70e5886B1AA6B24/logo.png",
             "pairs": []
         },
         {
@@ -2611,16 +2743,6 @@
             "pairs": []
         },
         {
-            "asset": "c60_t0x41a3dba3d677e573636ba691a70ff2d606c29666",
-            "type": "ERC20",
-            "address": "0x41a3dba3d677e573636ba691a70ff2d606c29666",
-            "name": "GoBlank",
-            "symbol": "BLANK",
-            "decimals": 18,
-            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x41a3dba3d677e573636ba691a70ff2d606c29666/logo.png",
-            "pairs": []
-        },
-        {
             "asset": "c60_t0xaf9f549774ecEDbD0966C52f250aCc548D3F36E5",
             "type": "ERC20",
             "address": "0xaf9f549774ecEDbD0966C52f250aCc548D3F36E5",
@@ -2915,6 +3037,16 @@
             "pairs": []
         },
         {
+            "asset": "c60_t0xc770EEfAd204B5180dF6a14Ee197D99d808ee52d",
+            "type": "ERC20",
+            "address": "0xc770EEfAd204B5180dF6a14Ee197D99d808ee52d",
+            "name": "FOX",
+            "symbol": "FOX",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0xc770EEfAd204B5180dF6a14Ee197D99d808ee52d/logo.png",
+            "pairs": []
+        },
+        {
             "asset": "c60_t0xc834Fa996fA3BeC7aAD3693af486ae53D8aA8B50",
             "type": "ERC20",
             "address": "0xc834Fa996fA3BeC7aAD3693af486ae53D8aA8B50",
@@ -3016,6 +3148,16 @@
             "pairs": []
         },
         {
+            "asset": "c60_t0xD291E7a03283640FDc51b121aC401383A46cC623",
+            "type": "ERC20",
+            "address": "0xD291E7a03283640FDc51b121aC401383A46cC623",
+            "name": "Rari Governance Token",
+            "symbol": "RGT",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0xD291E7a03283640FDc51b121aC401383A46cC623/logo.png",
+            "pairs": []
+        },
+        {
             "asset": "c60_t0xD2dDa223b2617cB616c1580db421e4cFAe6a8a85",
             "type": "ERC20",
             "address": "0xD2dDa223b2617cB616c1580db421e4cFAe6a8a85",
@@ -3074,6 +3216,26 @@
             "symbol": "MEME",
             "decimals": 8,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0xD5525D397898e5502075Ea5E830d8914f6F0affe/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c60_t0xD56daC73A4d6766464b38ec6D91eB45Ce7457c44",
+            "type": "ERC20",
+            "address": "0xD56daC73A4d6766464b38ec6D91eB45Ce7457c44",
+            "name": "Panvala pan",
+            "symbol": "PAN",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0xD56daC73A4d6766464b38ec6D91eB45Ce7457c44/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c60_t0xD69F306549e9d96f183B1AecA30B8f4353c2ECC3",
+            "type": "ERC20",
+            "address": "0xD69F306549e9d96f183B1AecA30B8f4353c2ECC3",
+            "name": "MCH Coin",
+            "symbol": "MCHC",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0xD69F306549e9d96f183B1AecA30B8f4353c2ECC3/logo.png",
             "pairs": []
         },
         {
@@ -3136,6 +3298,16 @@
             "symbol": "COTI",
             "decimals": 18,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0xDDB3422497E61e13543BeA06989C0789117555c5/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c60_t0xe1030B48b2033314979143766d7dC1F40ef8CE11",
+            "type": "ERC20",
+            "address": "0xe1030B48b2033314979143766d7dC1F40ef8CE11",
+            "name": "The People's Coin",
+            "symbol": "PEEPS",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0xe1030B48b2033314979143766d7dC1F40ef8CE11/logo.png",
             "pairs": []
         },
         {
@@ -3280,6 +3452,16 @@
             "pairs": []
         },
         {
+            "asset": "c60_t0xEE06A81a695750E71a662B51066F2c74CF4478a0",
+            "type": "ERC20",
+            "address": "0xEE06A81a695750E71a662B51066F2c74CF4478a0",
+            "name": "Decentral Games",
+            "symbol": "$DG",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0xEE06A81a695750E71a662B51066F2c74CF4478a0/logo.png",
+            "pairs": []
+        },
+        {
             "asset": "c60_t0xee573a945B01B788B9287CE062A0CFC15bE9fd86",
             "type": "ERC20",
             "address": "0xee573a945B01B788B9287CE062A0CFC15bE9fd86",
@@ -3297,6 +3479,16 @@
             "symbol": "GOVI",
             "decimals": 18,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0xeEAA40B28A2d1b0B08f6f97bB1DD4B75316c6107/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c60_t0xEec2bE5c91ae7f8a338e1e5f3b5DE49d07AfdC81",
+            "type": "ERC20",
+            "address": "0xEec2bE5c91ae7f8a338e1e5f3b5DE49d07AfdC81",
+            "name": "Dopex Governance Token",
+            "symbol": "DPX",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0xEec2bE5c91ae7f8a338e1e5f3b5DE49d07AfdC81/logo.png",
             "pairs": []
         },
         {
@@ -3442,6 +3634,16 @@
             "pairs": []
         },
         {
+            "asset": "c60_t0xfB7B4564402E5500dB5bB6d63Ae671302777C75a",
+            "type": "ERC20",
+            "address": "0xfB7B4564402E5500dB5bB6d63Ae671302777C75a",
+            "name": "DEXTools",
+            "symbol": "DEXT",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0xfB7B4564402E5500dB5bB6d63Ae671302777C75a/logo.png",
+            "pairs": []
+        },
+        {
             "asset": "c60_t0xFbEEa1C75E4c4465CB2FCCc9c6d6afe984558E20",
             "type": "ERC20",
             "address": "0xFbEEa1C75E4c4465CB2FCCc9c6d6afe984558E20",
@@ -3503,7 +3705,7 @@
         }
     ],
     "version": {
-        "major": 13,
+        "major": 14,
         "minor": 0,
         "patch": 0
     }
