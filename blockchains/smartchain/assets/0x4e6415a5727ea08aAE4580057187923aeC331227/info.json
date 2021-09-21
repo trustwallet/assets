@@ -1,49 +1,48 @@
-{
-    "name": "FINE Token",
-    "website": "https://app.refinable.com",
-    "description": "FINE is a token issued by Refinable.",
-    "explorer": "https://bscscan.com/token/0x4e6415a5727ea08aAE4580057187923aeC331227",
-    "type": "BEP20",
-    "symbol": "FINE",
-    "decimals": 18,
-    "status": "active",
-    "id": "0x4e6415a5727ea08aAE4580057187923aeC331227",
-    "links": [
-        {
-            "name": "github",
-            "url": "https://github.com/refinableco/refinable-sdk"
-        },
-        {
-            "name": "medium",
-            "url": "https://refinable.medium.com/"
-        },
-        {
-            "name": "reddit",
-            "url": "https://www.reddit.com/r/refinable"
-        },
-        {
-            "name": "twitter",
-            "url": "https://twitter.com/refinableapp",
-        },
-        {
-            "name": "telegram",
-            "url": "https://t.me/refinablenft"
-        },
-        {
-            "name": "instagram",
-            "url": "https://www.instagram.com/refinableapp/"
-        },
-        {
-            "name": "discord",
-            "url": "https://discord.gg/m3ZAa5WE"
-        },
-        {
-            "name": "coinmarketcap",
-            "url": "https://coinmarketcap.com/currencies/refinable/"
-        },
-        {
-            "name": "coingecko",
-            "url": "https://www.coingecko.com/en/coins/refinable"
-        }
-    ]
-}
+   {
+   	"name": "FINE Token",
+   	"website": "https://app.refinable.com",
+   	"description": "FINE is a token issued by Refinable.",
+   	"explorer": "https://bscscan.com/token/0x4e6415a5727ea08aAE4580057187923aeC331227",
+   	"type": "BEP20",
+   	"symbol": "FINE",
+   	"decimals": 18,
+   	"status": "active",
+   	"id": "0x4e6415a5727ea08aAE4580057187923aeC331227",
+   	"links": [{
+   			"name": "github",
+   			"url": "https://github.com/refinableco/refinable-sdk"
+   		},
+   		{
+   			"name": "medium",
+   			"url": "https://refinable.medium.com/"
+   		},
+   		{
+   			"name": "reddit",
+   			"url": "https://www.reddit.com/r/refinable"
+   		},
+   		{
+   			"name": "twitter",
+   			"url": "https://twitter.com/refinableapp"
+   		},
+   		{
+   			"name": "telegram",
+   			"url": "https://t.me/refinablenft"
+   		},
+   		{
+   			"name": "instagram",
+   			"url": "https://www.instagram.com/refinableapp/"
+   		},
+   		{
+   			"name": "discord",
+   			"url": "https://discord.gg/m3ZAa5WE"
+   		},
+   		{
+   			"name": "coinmarketcap",
+   			"url": "https://coinmarketcap.com/currencies/refinable/"
+   		},
+   		{
+   			"name": "coingecko",
+   			"url": "https://www.coingecko.com/en/coins/refinable"
+   		}
+   	]
+   }
