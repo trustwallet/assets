@@ -97,9 +97,10 @@ export class FoldersFiles implements ActionInterface {
                                         errors.push(msg);
                                     }
                                     if (!logoExists && infoExists) {
+                                        // logo must be present, with some exceptions
                                         const info: unknown = readJsonFile(infoFullPath);
-                                        if (!info['status'] || info['status'] !== 'spam') {
-                                            const msg = `Missing logo file for non-spam asset '${chain}/${address}' -- ${logoFullPath}`;
+                                        if (!info['status'] || !(info['status'] == 'spam' || info['status'] == 'abandoned')) {
+                                            const msg = `Missing logo file for non-spam/non-abandoned asset '${chain}/${address}' -- ${logoFullPath}`;
                                             console.log(msg);
                                             errors.push(msg);
                                         }
