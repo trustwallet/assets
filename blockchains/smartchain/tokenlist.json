@@ -14,6 +14,9 @@
             "logoURI": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c/logo.png",
             "pairs": [
                 {
+                    "base": "c20000714_t0xFB4348a04892C4A85B8B1bf7eda8Fe73a7D207C8"
+                },
+                {
                     "base": "c20000714_t0x0D8Ce2A99Bb6e3B7Db580eD848240e4a0F9aE153"
                 },
                 {
@@ -185,6 +188,17 @@
                     "base": "c20000714_t0xF952Fc3ca7325Cc27D15885d37117676d25BfdA6"
                 }
             ]
+        },
+        {
+            "chainId": 56,
+            "asset": "c20000714_t0xFB4348a04892C4A85B8B1bf7eda8Fe73a7D207C8",
+            "type": "BEP20",
+            "address": "0xFB4348a04892C4A85B8B1bf7eda8Fe73a7D207C8",
+            "name": "Monsterwar",
+            "symbol": "MWA",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0xFB4348a04892C4A85B8B1bf7eda8Fe73a7D207C8/logo.png",
+            "pairs": []
         },
         {
             "chainId": 56,
