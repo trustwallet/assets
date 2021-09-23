@@ -1,49 +1,41 @@
 {
     "name": "DDX",
     "website": "https://derivadex.com",
-    "source_code": "https://gitlab.com/derivadex",
     "description": "Discover the future of trading with DerivaDEX, a community-governed derivatives exchange that unites performance and autonomy.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/ddx_official",
-            "handle": "DDX_Official"
-        },
-        {
-            "name": "Medium",
-            "url": "https://medium.com/derivadex",
-            "handle": "DerivaDEX"
-        },
-        {
-            "name": "QQ",
-            "url": "https://qm.qq.com/cgi-bin/qm/qr?k=atCyoGWy5Wt4Usjk3q_Re1qh6XPbZX6H&jump_from=webapi",
-            "handle": "DerivaDEX"
-        },
-        {
-            "name": "Discord",
-            "url": "https://discord.gg/rSYxQD2j",
-            "handle": "DerivaDEX"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/DerivaDEX",
-            "handle": "DerivaDEX"
-        },
-        {
-            "name": "YouTube",
-            "url": "https://www.youtube.com/channel/UCSAEVzSu0AEcJF2e7TMbZJg",
-            "handle": "DerivaDEX"
-        },
-        {
-            "name": "Reddit",
-            "url": "https://www.reddit.com/r/derivadex/",
-            "handle": "derivadex"
-        }
-    ],
-    "explorer": "https://etherscan.io/address/0x3A880652F47bFaa771908C07Dd8673A787dAEd3A",
+    "explorer": "https://etherscan.io/token/0x3A880652F47bFaa771908C07Dd8673A787dAEd3A",
     "type": "ERC20",
     "symbol": "DDX",
     "decimals": 18,
     "status": "active",
-    "id": "0x3A880652F47bFaa771908C07Dd8673A787dAEd3A"
+    "id": "0x3A880652F47bFaa771908C07Dd8673A787dAEd3A",
+    "links": [
+        {
+            "name": "source_code",
+            "url": "https://gitlab.com/derivadex"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/DDX_Official"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/DerivaDEX"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/rSYxQD2j"
+        },
+        {
+            "name": "youtube",
+            "url": "https://youtube.com/channel/UCSAEVzSu0AEcJF2e7TMbZJg"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/derivadex/"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/derivadex"
+        }
+    ]
 }
