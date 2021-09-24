@@ -30,9 +30,8 @@ An example of a change file is:
         "date": "2021-02-22T14:56:47.938Z"
     },
     "fullChange": false,
-    "changeCount": 12,
+    "changeCount": 11,
     "changes": [
-        "blockchains/ethereum/allowlist.json",
         "blockchains/ethereum/assets/0x67c597624B17b16fb77959217360B7cD18284253/info.json",
         "blockchains/ethereum/assets/0x67c597624B17b16fb77959217360B7cD18284253/logo.png",
         "blockchains/ethereum/assets/0x798D1bE841a82a273720CE31c822C61a67a601C3/info.json",
