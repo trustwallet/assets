@@ -58,15 +58,3 @@ export const stakingChains = [
     Terra,
     Binance
 ];
-export const chainsWithDenylist = ethForkChains.concat(
-    Binance,
-    Tron,
-    Terra,
-    NEO,
-    NULS,
-    Vechain,
-    Ontology,
-    Theta,
-    EOS,
-    Solana,
-);
