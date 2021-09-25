@@ -136,12 +136,9 @@ describe("Test blockchain binance", () => {
             {asset: "BUSD-BD1", name: "Binance USD", mappedAsset: "BUSD", assetImg: "imgurlBUSD", decimals: 8},
             {asset: "ETH-1C9", name: "Binance Ethereum", mappedAsset: "BETH", assetImg: "imgurlETH", decimals: 8}
         ];
-        const denyListEmpty: string[] = [];
-        const denyListA1: string[] = ["A1-11"];
-        expect(findImagesToFetch(assetsInfoListNonexisting, denyListEmpty), `2 nonexisting`).toEqual(assetsInfoListNonexisting);
-        expect(findImagesToFetch(assetsInfoListNonexisting, denyListA1), `2 nonexisting with 1 denylisted`).toEqual([infoA2]);
-        expect(findImagesToFetch(assetsInfoListExisting, denyListEmpty), `2 existing`).toEqual([]);
-        expect(findImagesToFetch([], []), `empty`).toEqual([]);
+        expect(findImagesToFetch(assetsInfoListNonexisting), `2 nonexisting`).toEqual(assetsInfoListNonexisting);
+        expect(findImagesToFetch(assetsInfoListExisting), `2 existing`).toEqual([]);
+        expect(findImagesToFetch([]), `empty`).toEqual([]);
     });
 });
 
