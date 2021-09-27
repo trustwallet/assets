@@ -268,7 +268,9 @@ function sort(list: List) {
         return t1.address.localeCompare(t2.address);
     });
     list.tokens.forEach(t => {
-        t.pairs.sort((p1, p2) => p1.base.localeCompare(p2.base));
+        if (t.pairs) {
+            t.pairs.sort((p1, p2) => p1.base.localeCompare(p2.base));
+        }
     });
 }
 
@@ -294,6 +296,14 @@ export function diffTokenlist(listOrig1: List, listOrig2: List): unknown {
     // compare
     const diffs = diff(list1, list2);
     return diffs;
+}
+
+function adjustTokenList(list: List) {
+    list.tokens.forEach(t => {
+        if (t.pairs.length == 0) {
+            delete t.pairs;
+        }
+    });
 }
 
 export async function rebuildTokenlist(chainName: string, pairs: [TokenItem, TokenItem][], listName: string, forceExcludeList: string[]): Promise<void> {
@@ -335,6 +345,8 @@ export async function rebuildTokenlist(chainName: string, pairs: [TokenItem, Tok
         await addPairIfNeeded(p[0], p[1], list);
     });
     console.log(`Tokenlist updated: ${list.tokens.length} tokens`);
+    adjustTokenList(list);
+    console.log(`Tokenlist adjusted: ${list.tokens.length} tokens`);
 
     const newList = createTokensList(listName, list.tokens,
         "2021-01-29T01:02:03.000+00:00", // use constant here to prevent changing time every time
