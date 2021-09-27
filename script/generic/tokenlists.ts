@@ -5,7 +5,6 @@ import { diff } from "jsondiffpatch";
 import { tokenInfoFromTwApi, TokenTwInfo } from "../generic/asset";
 import {
     getChainAssetLogoPath,
-    getChainAllowlistPath,
     getChainTokenlistPath,
 } from "../generic/repo-structure";
 import * as bluebird from "bluebird";
@@ -245,14 +244,10 @@ function addPairToToken(pairToken: TokenItem, token: TokenItem, list: List): voi
     tokenInList.pairs.push(new Pair(pairToken.asset));
 }
 
-function checkTokenExists(id: string, chainName: string, tokenAllowlist: string[]): boolean {
+function checkTokenExists(id: string, chainName: string): boolean {
     const logoPath = getChainAssetLogoPath(chainName, id);
     if (!isPathExistsSync(logoPath)) {
         //console.log("logo file missing", logoPath);
-        return false;
-    }
-    if (tokenAllowlist.find(t => (id.toLowerCase() === t.toLowerCase())) === undefined) {
-        //console.log(`Token not found in allowlist, ${id}`);
         return false;
     }
     return true;
@@ -273,7 +268,9 @@ function sort(list: List) {
         return t1.address.localeCompare(t2.address);
     });
     list.tokens.forEach(t => {
-        t.pairs.sort((p1, p2) => p1.base.localeCompare(p2.base));
+        if (t.pairs) {
+            t.pairs.sort((p1, p2) => p1.base.localeCompare(p2.base));
+        }
     });
 }
 
@@ -301,6 +298,14 @@ export function diffTokenlist(listOrig1: List, listOrig2: List): unknown {
     return diffs;
 }
 
+function adjustTokenList(list: List) {
+    list.tokens.forEach(t => {
+        if (t.pairs.length == 0) {
+            delete t.pairs;
+        }
+    });
+}
+
 export async function rebuildTokenlist(chainName: string, pairs: [TokenItem, TokenItem][], listName: string, forceExcludeList: string[]): Promise<void> {
     // sanity check, prevent deletion of many pairs
     if (!pairs || pairs.length < 5) {
@@ -310,15 +315,14 @@ export async function rebuildTokenlist(chainName: string, pairs: [TokenItem, Tok
     
     const excludeList = parseForceList(forceExcludeList);
     // filter out pairs with missing and excluded tokens
-    // prepare phase, read allowlist
-    const allowlist: string[] = readJsonFile(getChainAllowlistPath(chainName)) as string[];
+    // prepare phase
     const pairs2: [TokenItem, TokenItem][] = [];
     pairs.forEach(p => {
-        if (!checkTokenExists(p[0].address, chainName, allowlist)) {
+        if (!checkTokenExists(p[0].address, chainName)) {
             console.log("pair with unsupported 1st coin:", p[0].symbol, "--", p[1].symbol);
             return;
         }
-        if (!checkTokenExists(p[1].address, chainName, allowlist)) {
+        if (!checkTokenExists(p[1].address, chainName)) {
             console.log("pair with unsupported 2nd coin:", p[0].symbol, "--", p[1].symbol);
             return;
         }
@@ -341,6 +345,8 @@ export async function rebuildTokenlist(chainName: string, pairs: [TokenItem, Tok
         await addPairIfNeeded(p[0], p[1], list);
     });
     console.log(`Tokenlist updated: ${list.tokens.length} tokens`);
+    adjustTokenList(list);
+    console.log(`Tokenlist adjusted: ${list.tokens.length} tokens`);
 
     const newList = createTokensList(listName, list.tokens,
         "2021-01-29T01:02:03.000+00:00", // use constant here to prevent changing time every time
