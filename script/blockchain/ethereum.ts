@@ -60,7 +60,7 @@ function tokenInfoFromSubgraphToken(token: TokenInfo): TokenItem {
         []);
 }
 
-// Retrieve trading pairs from PancakeSwap
+// Retrieve trading pairs from Uniswap
 async function generateTokenlist(): Promise<void> {
     // note: if [] is returned here for some reason, all pairs will be *removed*.  In case of error (e.g. timeout) it should throw
     const tradingPairs = await retrieveUniswapPairs();
@@ -75,7 +75,7 @@ async function generateTokenlist(): Promise<void> {
         }
         pairs2.push([tokenItem0, tokenItem1]);
     });
-    await rebuildTokenlist(Ethereum, pairs2, "Ethereum", config.Uniswap_ForceExclude);
+    await rebuildTokenlist(Ethereum, pairs2, "Ethereum", false, config.Uniswap_ForceExclude);
 }
 
 export class EthereumAction implements ActionInterface {

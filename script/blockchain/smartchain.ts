@@ -74,7 +74,7 @@ async function generateTokenlist(): Promise<void> {
         }
         pairs2.push([tokenItem0, tokenItem1]);
     });
-    await rebuildTokenlist(SmartChain, pairs2, "Smart Chain", config.PancakeSwap_ForceExclude);
+    await rebuildTokenlist(SmartChain, pairs2, "Smart Chain", true, config.PancakeSwap_ForceExclude);
 }
 
 export class SmartchainAction implements ActionInterface {
