@@ -6,32 +6,36 @@
     "symbol": "SteamX",
     "decimals": 9,
     "status": "active",
-    "id": "0xc0924EDEFB2C0C303de2d0c21BfF07ab763163B5"
-	 "links": [{
+    "id": "0xc0924EDEFB2C0C303de2d0c21BfF07ab763163B5",
+    "links": [
+        {
             "name": "whitepaper",
             "url": "https://docs.steamexchange.ca"
         },
-	 	{
+	 {
             "name": "telegram",
             "url": "https://t.me/SteamXchangeOfficial"
         },
         {
             "name": "linkedin",
-            "url": "https://www.linkedin.com/company/steam-exchange-ca"
+            "url": "https://linkedin.com/company/steam-exchange-ca"
         },
-		{
+	{
             "name": "twitter",
             "url": "https://twitter.com/Steam_Exchange"
         },
-		{
+	{
             "name": "instagram",
-            "url": "https://www.instagram.com/steam_exchange"
+            "url": "https://instagram.com/steam_exchange"
         },
-		{
+	{
             "name": "youtube",
-            "url": "https://www.youtube.com/channel/UC8xL6IB_C51G2GuvYLZJexw"
-        },
-		{
+            "url": "https://youtube.com/channel/UC8xL6IB_C51G2GuvYLZJexw"
+	},	
+	    {
+	    
             "name": "facebook",
-            "url": "https://www.facebook.com/Steam-Exchange-142284624637992/"
+            "url": "https://facebook.com/Steam-Exchange-142284624637992/"
+        }
+	]
         }
