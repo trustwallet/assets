@@ -1,25 +1,29 @@
 {
     "name": "Steem",
     "website": "https://steem.com",
-    "source_code": "https://github.com/steemit/steem",
-    "white_paper": "https://steem.io/SteemWhitePaper.pdf",
     "description": "A new way for publishers to monetize their online content and community, based on battle-tested blockchain technology.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/Steemit",
-            "handle": "Steemit"
-        },
-        {
-            "name": "Reddit",
-            "url": "https://reddit.com/r/steemit",
-            "handle": "steemit"
-        }
-    ],
     "explorer": "https://steemd.com/",
     "research": "https://research.binance.com/en/projects/steem",
     "symbol": "STEEM",
-    "type": "COIN",
+    "type": "coin",
     "decimals": 8,
-    "status": "abandoned"
+    "status": "abandoned",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/steemit/steem"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/Steemit"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/steemit"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://steem.io/SteemWhitePaper.pdf"
+        }
+    ]
 }

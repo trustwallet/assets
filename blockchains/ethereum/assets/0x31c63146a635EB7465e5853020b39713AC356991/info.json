@@ -3,31 +3,27 @@
     "website": "https://mirror.finance",
     "description": "Wrapped Mirror USO Token.",
     "explorer": "https://etherscan.io/token/0x31c63146a635EB7465e5853020b39713AC356991",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/mirror_protocol",
-            "handle": "MirrorProtocol"
-        },
-        {
-            "name": "Discord",
-            "url": "https://twitter.com/mirror_protocol",
-            "handle": "MirrorProtocol"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/mirror_protocol",
-            "handle": "MirrorProtocol"
-        },
-        {
-            "name": "Medium",
-            "url": "https://medium.com/@mirror-protocol",
-            "handle": "MirrorProtocol"
-        }
-    ],
     "type": "ERC20",
     "symbol": "mUSO",
     "decimals": 18,
     "status": "active",
-    "id": "0x31c63146a635EB7465e5853020b39713AC356991"
+    "id": "0x31c63146a635EB7465e5853020b39713AC356991",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/MirrorProtocol"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/mirror_protocol"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/MirrorProtocol"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/@mirror-protocol"
+        }
+    ]
 }

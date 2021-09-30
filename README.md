@@ -31,7 +31,7 @@ Details of the repository structure and contribution guidelines are listed on th
 Here is a quick starter summary for the most common use case.
 
 **Adding an ERC20 token checklist**:
-- [ ] Make sure your smartcontract has more than 2,500 address holders, otherwise you will be rejected
+- [ ] Make sure your smartcontract has more than 5000 address holders, otherwise you will be rejected
 - [ ] Fork the Github repository
 - [ ] Create folder with name of token smartcontact address in [_checksum format_](https://developer.trustwallet.com/add_new_asset#checksum_format) `blockchains/ethereum/assets/<token_smartcontract_address>/`.
 - [ ] Tell your designer that token image must be in PNG format, avoid transparent background, recommended size 256x256px, max. 512x512px, with max file size of 100kB, for further details read [image rules](https://developer.trustwallet.com/add_new_asset#image-requirements).
@@ -81,3 +81,5 @@ Trust Wallet team allows anyone to submit new assets to this repository. However
 
 Trust Wallet team will reject projects that are deemed as scam or fraudulent after careful review.
 Trust Wallet team reserves the right to change the terms of asset submissions at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.
+
+Additionally, spam-like behavior, including but not limited to mass distribution of tokens to random addresses will result in the asset being flagged as spam and possible removal from the repository.
