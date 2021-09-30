@@ -219,7 +219,10 @@ export function chainFromAssetType(type: string): string {
         case "POA": return "poa";
         case "POLYGON": return "polygon";
         case "OPTIMISM": return "optimism";
-        case "AVALANCHE": return 'avalanchec';
+        case "AVALANCHE": return "avalanchec";
+        case "ARBITRUM": return "arbitrum";
+        case "FANTOM": return "fantom";
+        case "TERRA": return "terra";
         default: return "";
     }
 }
@@ -294,17 +297,23 @@ export function explorerUrl(chain: string, contract: string): string {
                 return `https://blockscout.com/xdai/mainnet/tokens/${contract}`;
 
             case CoinType.name(CoinType.poa).toLowerCase():
-            case 'poa':
+            case "poa":
                 return `https://blockscout.com/poa/core/tokens/${contract}`;
 
             case CoinType.name(CoinType.polygon).toLowerCase():
-            case 'polygon':
+            case "polygon":
                 return `https://polygonscan.com/token/${contract}`;
-            case 'optimism':
+            case "optimism":
                 return `https://optimistic.etherscan.io/address/${contract}`;
-            case 'avalanchec':
+            case "avalanchec":
                 return `https://cchain.explorer.avax.network/address/${contract}`
-        }
+            case "arbitrum":
+                return `https://arbiscan.io/token/${contract}`
+            case "fantom":
+                return `https://ftmscan.com/token/${contract}`
+            case "terra":
+                return `https://finder.terra.money/columbus-4/${contract}`
+            }
     }
     return "";
 }

@@ -12,7 +12,6 @@ import { TokenItem, Pair, createTokensList, writeToFileWithUpdate } from "../gen
 import {
     getChainAssetLogoPath,
     getChainAssetsPath,
-    getChainDenylistPath,
     getChainAssetInfoPath,
     getChainTokenlistPath
 } from "../generic/repo-structure";
@@ -72,21 +71,16 @@ async function fetchImage(url) {
 }
 
 /// Return: array with images to fetch; {asset, assetImg}
-export function findImagesToFetch(assetInfoList: BinanceTokenInfo[], denylist: string[]): BinanceTokenInfo[] {
+export function findImagesToFetch(assetInfoList: BinanceTokenInfo[]): BinanceTokenInfo[] {
     const toFetch: BinanceTokenInfo[] = [];
     console.log(`Checking for asset images to be fetched`);
     assetInfoList.forEach((tokenInfo) => {
         process.stdout.write(`.${tokenInfo.asset} `);
         if (tokenInfo.assetImg) {
-            if (denylist.indexOf(tokenInfo.asset) != -1) {
-                console.log();
-                console.log(`${tokenInfo.asset} is denylisted`);
-            } else {
-                const imagePath = getChainAssetLogoPath(binanceChain, tokenInfo.asset);
-                if (!fs.existsSync(imagePath)) {
-                    console.log(chalk.red(`Missing image: ${tokenInfo.asset}`));
-                    toFetch.push(tokenInfo);
-                }
+            const imagePath = getChainAssetLogoPath(binanceChain, tokenInfo.asset);
+            if (!fs.existsSync(imagePath)) {
+                console.log(chalk.red(`Missing image: ${tokenInfo.asset}`));
+                toFetch.push(tokenInfo);
             }
         }
     });
@@ -162,9 +156,7 @@ export class BinanceAction implements ActionInterface {
             console.log(`ERROR: No Binance token info is returned! ${bep2InfoList.length}`);
             return;
         }
-        const denylist: string[] = readJsonFile(getChainDenylistPath(binanceChain)) as string[];
-
-        const toFetch = findImagesToFetch(bep2InfoList, denylist);
+        const toFetch = findImagesToFetch(bep2InfoList);
         const fetchedAssets = await fetchMissingImages(toFetch);
 
         if (fetchedAssets.length > 0) {
