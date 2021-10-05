@@ -1,6 +1,6 @@
 # Expected Payment.  Can be more than one options.
 payments:
-  - amount: 2000
+  - amount: 1000
     token: TWT
     address: bnb1tqq9llyr3dyjd559dha6z5r5etk3qfwk07m098
   - amount: 5
@@ -30,7 +30,7 @@ message:
     Fee is PAID, fantastic!  Thanks!
     \nThe PR will be evaluated soon by a maintainer, and if merged, the new logos should be visible in Trust Wallet.
     Please note that the app caches logos (up to several days; if you want to see changes immediately, use a new installation).  See the [assets FAQ](https://github.com/trustwallet/assets#faq). 
-    (@zachzwei, @catenocrypt & @Iamdeadlyz: please take note.)
+    (@zachzwei, @Cryptocool1: please take note.)
     \n([$PAID_AMOUNT $PAID_CURRENCY]($PAID1_EXPLORERLINK))
   reviewCreated: Fee paid, review added.
   reviewed: Review is not needed any more, no more fee required.
@@ -46,7 +46,7 @@ label:
   requested: 'Payment Status: Requested'
   paid: 'Payment Status: Paid'
 user:
-  assignOnPay: zachzwei,catenocrypt,Cryptocool1
+  assignOnPay: zachzwei,Cryptocool1,cryptomanz
   # if set to 1 comments from not allowed users are deleted.  Only comments from the PR creator or collaborators are allowed
   deleteComments: 1
   collaborators: zachzwei,Iamdeadlyz,catenocrypt,vikmeup,hewigovens,Cryptocool1,cryptomanz
