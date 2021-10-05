@@ -1,11 +1,41 @@
-{ 
- "name": "Wojak",
-    "website": "https://woj.finance/",
-    "description": "Wojak is a charity token created to help people who lost money trading crypto futures derivatives.",
-    "explorer": "https://bscscan.com/token/0x55F96C7005D7C684A65Ee653B07b5FE1507C56ab",
+{
+    "name": "Wojak",
     "type": "BEP20",
     "symbol": "WOJ",
     "decimals": 9,
+    "website": "https://woj.finance",
+    "description": "request for adding our token's logo in Trustwallet\nOur token explorer on bscscan is https://bscscan.com/token/0x55f96c7005d7c684a65ee653b07b5fe1507c56ab",
+    "explorer": "https://explorer.binance.org/asset/0x55F96C7005D7C684A65Ee653B07b5FE1507C56ab",
     "status": "active",
-    "id": "0x55F96C7005D7C684A65Ee653B07b5FE1507C56ab"
+    "id": "0x55F96C7005D7C684A65Ee653B07b5FE1507C56ab",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/wojfinance"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/wojak-finance"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/wojtoken"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://woj.finance/wp-content/uploads/2021/09/Wojak-Whitepaper.pdf"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/@WojToken"
+        },
+        {
+            "name": "youtube",
+            "url": "https://youtube.com/c/WOJTOKEN"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/wojak-finance/"
+        }
+    ]
 }
