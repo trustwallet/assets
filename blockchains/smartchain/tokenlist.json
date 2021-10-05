@@ -1,7 +1,7 @@
 {
     "name": "Trust Wallet: Smart Chain",
     "logoURI": "https://trustwallet.com/assets/images/favicon.png",
-    "timestamp": "2021-06-17T12:17:25.447Z",
+    "timestamp": "2021-10-05T07:59:08.807Z",
     "tokens": [
         {
             "chainId": 56,
@@ -13,6 +13,9 @@
             "decimals": 18,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c/logo.png",
             "pairs": [
+                {
+                    "base": "c20000714_t0x0231f91e02DebD20345Ae8AB7D71A41f8E140cE7"
+                },
                 {
                     "base": "c20000714_t0x0D8Ce2A99Bb6e3B7Db580eD848240e4a0F9aE153"
                 },
@@ -29,13 +32,13 @@
                     "base": "c20000714_t0x190b589cf9Fb8DDEabBFeae36a813FFb2A702454"
                 },
                 {
-                    "base": "c20000714_t0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3"
-                },
-                {
                     "base": "c20000714_t0x1D2F0da169ceB9fC7B3144628dB156f3F6c60dBE"
                 },
                 {
                     "base": "c20000714_t0x2090c8295769791ab7A3CF1CC6e0AA19F35e441A"
+                },
+                {
+                    "base": "c20000714_t0x211FfbE424b90e25a15531ca322adF1559779E45"
                 },
                 {
                     "base": "c20000714_t0x2170Ed0880ac9A755fd29B2688956BD959F933F8"
@@ -47,10 +50,22 @@
                     "base": "c20000714_t0x233d91A0713155003fc4DcE0AFa871b508B3B715"
                 },
                 {
-                    "base": "c20000714_t0x3aabCf53A1930A42E18D938C019E83Ebee50a849"
+                    "base": "c20000714_t0x2A9718defF471f3Bb91FA0ECEAB14154F150a385"
+                },
+                {
+                    "base": "c20000714_t0x3aD9594151886Ce8538C1ff615EFa2385a8C3A88"
+                },
+                {
+                    "base": "c20000714_t0x3C00F8FCc8791fa78DAA4A480095Ec7D475781e2"
                 },
                 {
                     "base": "c20000714_t0x3EE2200Efb3400fAbB9AacF31297cBdD1d435D47"
+                },
+                {
+                    "base": "c20000714_t0x3fd5B5746315E3F8d43A46b09c826a001EBb977d"
+                },
+                {
+                    "base": "c20000714_t0x4131b87F74415190425ccD873048C708F8005823"
                 },
                 {
                     "base": "c20000714_t0x4197C6EF3879a08cD51e5560da5064B773aa1d29"
@@ -62,16 +77,31 @@
                     "base": "c20000714_t0x44754455564474A89358B2C2265883DF993b12F0"
                 },
                 {
+                    "base": "c20000714_t0x461f6C9aE13a7daC7055C73fBF8daB529D667041"
+                },
+                {
                     "base": "c20000714_t0x47BEAd2563dCBf3bF2c9407fEa4dC236fAbA485A"
                 },
                 {
                     "base": "c20000714_t0x4B0F1812e5Df2A09796481Ff14017e6005508003"
                 },
                 {
+                    "base": "c20000714_t0x51BA0b044d96C3aBfcA52B64D733603CCC4F0d4D"
+                },
+                {
+                    "base": "c20000714_t0x51F35073FF7cF54c9e86b7042E59A8cC9709FC46"
+                },
+                {
                     "base": "c20000714_t0x55d398326f99059fF775485246999027B3197955"
                 },
                 {
                     "base": "c20000714_t0x56b6fB708fC5732DEC1Afc8D8556423A2EDcCbD6"
+                },
+                {
+                    "base": "c20000714_t0x57067A6BD75c0E95a6A5f158455926e43E79BeB0"
+                },
+                {
+                    "base": "c20000714_t0x5A3010d4d8D3B5fB49f8B6E57FB9E48063f16700"
                 },
                 {
                     "base": "c20000714_t0x5Ac52EE5b2a633895292Ff6d8A89bB9190451587"
@@ -83,7 +113,7 @@
                     "base": "c20000714_t0x67ee3Cb086F8a16f34beE3ca72FAD36F7Db929e2"
                 },
                 {
-                    "base": "c20000714_t0x6c5FE6e99D2484db7E4BF34F365ABA42d0E4dC20"
+                    "base": "c20000714_t0x6b51231c43B1604815313801dB5E9E614914d6e4"
                 },
                 {
                     "base": "c20000714_t0x7083609fCE4d1d8Dc0C979AAb8c869Ea2C873402"
@@ -101,19 +131,28 @@
                     "base": "c20000714_t0x78650B139471520656b9E7aA7A5e9276814a38e9"
                 },
                 {
-                    "base": "c20000714_t0x790Be81C3cA0e53974bE2688cDb954732C9862e1"
-                },
-                {
-                    "base": "c20000714_t0x7979F6C54ebA05E18Ded44C4F986F49a5De551c2"
+                    "base": "c20000714_t0x7A9f28EB62C791422Aa23CeAE1dA9C847cBeC9b0"
                 },
                 {
                     "base": "c20000714_t0x7F70642d88cf1C4a3a7abb072B53B929b653edA5"
                 },
                 {
+                    "base": "c20000714_t0x8076C74C5e3F5852037F31Ff0093Eeb8c8ADd8D3"
+                },
+                {
                     "base": "c20000714_t0x81859801b01764D4f0Fa5E64729f5a6C3b91435b"
                 },
                 {
+                    "base": "c20000714_t0x8443f091997f06a61670B735ED92734F5628692F"
+                },
+                {
+                    "base": "c20000714_t0x851F7a700c5d67DB59612b871338a85526752c25"
+                },
+                {
                     "base": "c20000714_t0x88f1A5ae2A3BF98AEAF342D26B30a79438c9142e"
+                },
+                {
+                    "base": "c20000714_t0x8F0528cE5eF7B51152A59745bEfDD91D97091d2F"
                 },
                 {
                     "base": "c20000714_t0x8fF795a6F4D97E7887C79beA79aba5cc76444aDf"
@@ -125,6 +164,12 @@
                     "base": "c20000714_t0x948d2a81086A075b3130BAc19e4c6DEe1D2E3fE8"
                 },
                 {
+                    "base": "c20000714_t0x94BaBBE728D9411612Ee41b20241a6FA251b26Ce"
+                },
+                {
+                    "base": "c20000714_t0x96Dd399F9c3AFda1F194182F71600F1B65946501"
+                },
+                {
                     "base": "c20000714_t0xa184088a740c695E156F91f5cC086a06bb78b827"
                 },
                 {
@@ -134,13 +179,31 @@
                     "base": "c20000714_t0xa2B726B1145A4773F68593CF171187d8EBe4d495"
                 },
                 {
+                    "base": "c20000714_t0xA7f552078dcC247C2684336020c03648500C6d9F"
+                },
+                {
                     "base": "c20000714_t0xA8c2B8eec3d368C0253ad3dae65a5F2BBB89c929"
+                },
+                {
+                    "base": "c20000714_t0xAC51066d7bEC65Dc4589368da368b212745d63E8"
+                },
+                {
+                    "base": "c20000714_t0xAcD7B3D9c10e97d0efA418903C0c7669E702E4C0"
                 },
                 {
                     "base": "c20000714_t0xAD6cAEb32CD2c308980a548bD0Bc5AA4306c6c18"
                 },
                 {
+                    "base": "c20000714_t0xAd9787017e82f6368BbE4893b475CaadA2258564"
+                },
+                {
+                    "base": "c20000714_t0xB2BD0749DBE21f623d9BABa856D3B0f0e1BFEc9C"
+                },
+                {
                     "base": "c20000714_t0xb59490aB09A0f526Cc7305822aC65f2Ab12f9723"
+                },
+                {
+                    "base": "c20000714_t0xbcf39F0EDDa668C58371E519AF37CA705f2bFcbd"
                 },
                 {
                     "base": "c20000714_t0xBf5140A22578168FD562DCcF235E5D43A02ce9B1"
@@ -158,13 +221,13 @@
                     "base": "c20000714_t0xCa3F508B8e4Dd382eE878A314789373D80A5190A"
                 },
                 {
-                    "base": "c20000714_t0xcc2E12a9b5b75360c6FBf23B584c275D52cDdb0E"
-                },
-                {
                     "base": "c20000714_t0xcF6BB5389c92Bdda8a3747Ddb454cB7a64626C63"
                 },
                 {
                     "base": "c20000714_t0xD41FDb03Ba84762dD66a0af1a6C8540FF1ba5dfb"
+                },
+                {
+                    "base": "c20000714_t0xD7B729ef857Aa773f47D37088A1181bB3fbF0099"
                 },
                 {
                     "base": "c20000714_t0xE40255C5d7fa7ceEc5120408C78C787CECB4cfdb"
@@ -177,6 +240,9 @@
                 },
                 {
                     "base": "c20000714_t0xf79037F6f6bE66832DE4E7516be52826BC3cBcc4"
+                },
+                {
+                    "base": "c20000714_t0xf859Bf77cBe8699013d6Dbc7C2b926Aaf307F830"
                 },
                 {
                     "base": "c20000714_t0xF8A0BF9cF54Bb92F17374d9e9A321E6a111a51bD"
@@ -280,6 +346,16 @@
             "pairs": []
         },
         {
+            "asset": "c20000714_t0x211FfbE424b90e25a15531ca322adF1559779E45",
+            "type": "BEP20",
+            "address": "0x211FfbE424b90e25a15531ca322adF1559779E45",
+            "name": "BUX Token",
+            "symbol": "BUX",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0x211FfbE424b90e25a15531ca322adF1559779E45/logo.png",
+            "pairs": []
+        },
+        {
             "chainId": 56,
             "asset": "c20000714_t0x2170Ed0880ac9A755fd29B2688956BD959F933F8",
             "type": "BEP20",
@@ -311,6 +387,16 @@
             "pairs": []
         },
         {
+            "asset": "c20000714_t0x2A9718defF471f3Bb91FA0ECEAB14154F150a385",
+            "type": "BEP20",
+            "address": "0x2A9718defF471f3Bb91FA0ECEAB14154F150a385",
+            "name": "$ElonGate",
+            "symbol": "ELG",
+            "decimals": 9,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0x2A9718defF471f3Bb91FA0ECEAB14154F150a385/logo.png",
+            "pairs": []
+        },
+        {
             "asset": "c20000714_t0x37Ac4D6140e54304D77437A5c11924f61a2D976f",
             "type": "BEP20",
             "address": "0x37Ac4D6140e54304D77437A5c11924f61a2D976f",
@@ -331,6 +417,26 @@
             "pairs": []
         },
         {
+            "asset": "c20000714_t0x3aD9594151886Ce8538C1ff615EFa2385a8C3A88",
+            "type": "BEP20",
+            "address": "0x3aD9594151886Ce8538C1ff615EFa2385a8C3A88",
+            "name": "SafeMars",
+            "symbol": "SAFEMARS",
+            "decimals": 9,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0x3aD9594151886Ce8538C1ff615EFa2385a8C3A88/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c20000714_t0x3C00F8FCc8791fa78DAA4A480095Ec7D475781e2",
+            "type": "BEP20",
+            "address": "0x3C00F8FCc8791fa78DAA4A480095Ec7D475781e2",
+            "name": "Safe Star Token",
+            "symbol": "SAFESTAR",
+            "decimals": 9,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0x3C00F8FCc8791fa78DAA4A480095Ec7D475781e2/logo.png",
+            "pairs": []
+        },
+        {
             "asset": "c20000714_t0x3EE2200Efb3400fAbB9AacF31297cBdD1d435D47",
             "type": "BEP20",
             "address": "0x3EE2200Efb3400fAbB9AacF31297cBdD1d435D47",
@@ -338,6 +444,26 @@
             "symbol": "ADA",
             "decimals": 18,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0x3EE2200Efb3400fAbB9AacF31297cBdD1d435D47/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c20000714_t0x3fd5B5746315E3F8d43A46b09c826a001EBb977d",
+            "type": "BEP20",
+            "address": "0x3fd5B5746315E3F8d43A46b09c826a001EBb977d",
+            "name": "oxbull.tech",
+            "symbol": "OXB",
+            "decimals": 9,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0x3fd5B5746315E3F8d43A46b09c826a001EBb977d/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c20000714_t0x4131b87F74415190425ccD873048C708F8005823",
+            "type": "BEP20",
+            "address": "0x4131b87F74415190425ccD873048C708F8005823",
+            "name": "Multiplier Token",
+            "symbol": "bMXX",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0x4131b87F74415190425ccD873048C708F8005823/logo.png",
             "pairs": []
         },
         {
@@ -368,6 +494,16 @@
             "symbol": "ZEE",
             "decimals": 18,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0x44754455564474A89358B2C2265883DF993b12F0/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c20000714_t0x461f6C9aE13a7daC7055C73fBF8daB529D667041",
+            "type": "BEP20",
+            "address": "0x461f6C9aE13a7daC7055C73fBF8daB529D667041",
+            "name": "PoFi",
+            "symbol": "PoFi",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0x461f6C9aE13a7daC7055C73fBF8daB529D667041/logo.png",
             "pairs": []
         },
         {
@@ -403,6 +539,26 @@
             "pairs": []
         },
         {
+            "asset": "c20000714_t0x51BA0b044d96C3aBfcA52B64D733603CCC4F0d4D",
+            "type": "BEP20",
+            "address": "0x51BA0b044d96C3aBfcA52B64D733603CCC4F0d4D",
+            "name": "SuperFarm",
+            "symbol": "SUPER",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0x51BA0b044d96C3aBfcA52B64D733603CCC4F0d4D/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c20000714_t0x51F35073FF7cF54c9e86b7042E59A8cC9709FC46",
+            "type": "BEP20",
+            "address": "0x51F35073FF7cF54c9e86b7042E59A8cC9709FC46",
+            "name": "ETNA Network",
+            "symbol": "ETNA",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0x51F35073FF7cF54c9e86b7042E59A8cC9709FC46/logo.png",
+            "pairs": []
+        },
+        {
             "chainId": 56,
             "asset": "c20000714_t0x55d398326f99059fF775485246999027B3197955",
             "type": "BEP20",
@@ -421,6 +577,26 @@
             "symbol": "EOS",
             "decimals": 18,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0x56b6fB708fC5732DEC1Afc8D8556423A2EDcCbD6/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c20000714_t0x57067A6BD75c0E95a6A5f158455926e43E79BeB0",
+            "type": "BEP20",
+            "address": "0x57067A6BD75c0E95a6A5f158455926e43E79BeB0",
+            "name": "Blizzard.money",
+            "symbol": "BLZD",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0x57067A6BD75c0E95a6A5f158455926e43E79BeB0/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c20000714_t0x5A3010d4d8D3B5fB49f8B6E57FB9E48063f16700",
+            "type": "BEP20",
+            "address": "0x5A3010d4d8D3B5fB49f8B6E57FB9E48063f16700",
+            "name": "BSCPAD.com",
+            "symbol": "BSCPAD",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0x5A3010d4d8D3B5fB49f8B6E57FB9E48063f16700/logo.png",
             "pairs": []
         },
         {
@@ -452,6 +628,16 @@
             "symbol": "DODO",
             "decimals": 18,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0x67ee3Cb086F8a16f34beE3ca72FAD36F7Db929e2/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c20000714_t0x6b51231c43B1604815313801dB5E9E614914d6e4",
+            "type": "BEP20",
+            "address": "0x6b51231c43B1604815313801dB5E9E614914d6e4",
+            "name": "SafeGalaxy",
+            "symbol": "SAFEGALAXY",
+            "decimals": 9,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0x6b51231c43B1604815313801dB5E9E614914d6e4/logo.png",
             "pairs": []
         },
         {
@@ -536,6 +722,16 @@
             "pairs": []
         },
         {
+            "asset": "c20000714_t0x7A9f28EB62C791422Aa23CeAE1dA9C847cBeC9b0",
+            "type": "BEP20",
+            "address": "0x7A9f28EB62C791422Aa23CeAE1dA9C847cBeC9b0",
+            "name": "yieldwatch",
+            "symbol": "WATCH",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0x7A9f28EB62C791422Aa23CeAE1dA9C847cBeC9b0/logo.png",
+            "pairs": []
+        },
+        {
             "asset": "c20000714_t0x7F70642d88cf1C4a3a7abb072B53B929b653edA5",
             "type": "BEP20",
             "address": "0x7F70642d88cf1C4a3a7abb072B53B929b653edA5",
@@ -543,6 +739,16 @@
             "symbol": "YFII",
             "decimals": 18,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0x7F70642d88cf1C4a3a7abb072B53B929b653edA5/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c20000714_t0x8076C74C5e3F5852037F31Ff0093Eeb8c8ADd8D3",
+            "type": "BEP20",
+            "address": "0x8076C74C5e3F5852037F31Ff0093Eeb8c8ADd8D3",
+            "name": "SafeMoon",
+            "symbol": "SAFEMOON",
+            "decimals": 9,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0x8076C74C5e3F5852037F31Ff0093Eeb8c8ADd8D3/logo.png",
             "pairs": []
         },
         {
@@ -556,6 +762,26 @@
             "pairs": []
         },
         {
+            "asset": "c20000714_t0x8443f091997f06a61670B735ED92734F5628692F",
+            "type": "BEP20",
+            "address": "0x8443f091997f06a61670B735ED92734F5628692F",
+            "name": "Bella Protocol",
+            "symbol": "BEL",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0x8443f091997f06a61670B735ED92734F5628692F/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c20000714_t0x851F7a700c5d67DB59612b871338a85526752c25",
+            "type": "BEP20",
+            "address": "0x851F7a700c5d67DB59612b871338a85526752c25",
+            "name": "ArgonToken",
+            "symbol": "ARGON",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0x851F7a700c5d67DB59612b871338a85526752c25/logo.png",
+            "pairs": []
+        },
+        {
             "asset": "c20000714_t0x88f1A5ae2A3BF98AEAF342D26B30a79438c9142e",
             "type": "BEP20",
             "address": "0x88f1A5ae2A3BF98AEAF342D26B30a79438c9142e",
@@ -563,6 +789,16 @@
             "symbol": "YFI",
             "decimals": 18,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0x88f1A5ae2A3BF98AEAF342D26B30a79438c9142e/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c20000714_t0x8F0528cE5eF7B51152A59745bEfDD91D97091d2F",
+            "type": "BEP20",
+            "address": "0x8F0528cE5eF7B51152A59745bEfDD91D97091d2F",
+            "name": "ALPACA",
+            "symbol": "ALPACA",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0x8F0528cE5eF7B51152A59745bEfDD91D97091d2F/logo.png",
             "pairs": []
         },
         {
@@ -593,6 +829,36 @@
             "symbol": "Helmet",
             "decimals": 18,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0x948d2a81086A075b3130BAc19e4c6DEe1D2E3fE8/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c20000714_t0x94BaBBE728D9411612Ee41b20241a6FA251b26Ce",
+            "type": "BEP20",
+            "address": "0x94BaBBE728D9411612Ee41b20241a6FA251b26Ce",
+            "name": "GFORCE",
+            "symbol": "GFCE",
+            "decimals": 9,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0x94BaBBE728D9411612Ee41b20241a6FA251b26Ce/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c20000714_t0x96Dd399F9c3AFda1F194182F71600F1B65946501",
+            "type": "BEP20",
+            "address": "0x96Dd399F9c3AFda1F194182F71600F1B65946501",
+            "name": "Contentos",
+            "symbol": "COS",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0x96Dd399F9c3AFda1F194182F71600F1B65946501/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c20000714_t0x9798dF2f5d213a872c787bD03b2b91F54D0D04A1",
+            "type": "BEP20",
+            "address": "0x9798dF2f5d213a872c787bD03b2b91F54D0D04A1",
+            "name": "TeraBlock Token",
+            "symbol": "TBC",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0x9798dF2f5d213a872c787bD03b2b91F54D0D04A1/logo.png",
             "pairs": []
         },
         {
@@ -638,6 +904,16 @@
             "pairs": []
         },
         {
+            "asset": "c20000714_t0xA7f552078dcC247C2684336020c03648500C6d9F",
+            "type": "BEP20",
+            "address": "0xA7f552078dcC247C2684336020c03648500C6d9F",
+            "name": "Ellipsis",
+            "symbol": "EPS",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0xA7f552078dcC247C2684336020c03648500C6d9F/logo.png",
+            "pairs": []
+        },
+        {
             "chainId": 56,
             "asset": "c20000714_t0xA8c2B8eec3d368C0253ad3dae65a5F2BBB89c929",
             "type": "BEP20",
@@ -646,6 +922,26 @@
             "symbol": "CTK",
             "decimals": 6,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0xA8c2B8eec3d368C0253ad3dae65a5F2BBB89c929/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c20000714_t0xAC51066d7bEC65Dc4589368da368b212745d63E8",
+            "type": "BEP20",
+            "address": "0xAC51066d7bEC65Dc4589368da368b212745d63E8",
+            "name": "My Neighbor Alice",
+            "symbol": "ALICE",
+            "decimals": 6,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0xAC51066d7bEC65Dc4589368da368b212745d63E8/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c20000714_t0xAcD7B3D9c10e97d0efA418903C0c7669E702E4C0",
+            "type": "BEP20",
+            "address": "0xAcD7B3D9c10e97d0efA418903C0c7669E702E4C0",
+            "name": "Eleven.finance",
+            "symbol": "ELE",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0xAcD7B3D9c10e97d0efA418903C0c7669E702E4C0/logo.png",
             "pairs": []
         },
         {
@@ -659,6 +955,26 @@
             "pairs": []
         },
         {
+            "asset": "c20000714_t0xAd9787017e82f6368BbE4893b475CaadA2258564",
+            "type": "BEP20",
+            "address": "0xAd9787017e82f6368BbE4893b475CaadA2258564",
+            "name": "BitcoinAsset",
+            "symbol": "BTA",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0xAd9787017e82f6368BbE4893b475CaadA2258564/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c20000714_t0xB2BD0749DBE21f623d9BABa856D3B0f0e1BFEc9C",
+            "type": "BEP20",
+            "address": "0xB2BD0749DBE21f623d9BABa856D3B0f0e1BFEc9C",
+            "name": "Dusk Network",
+            "symbol": "DUSK",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0xB2BD0749DBE21f623d9BABa856D3B0f0e1BFEc9C/logo.png",
+            "pairs": []
+        },
+        {
             "asset": "c20000714_t0xb59490aB09A0f526Cc7305822aC65f2Ab12f9723",
             "type": "BEP20",
             "address": "0xb59490aB09A0f526Cc7305822aC65f2Ab12f9723",
@@ -666,6 +982,16 @@
             "symbol": "LIT",
             "decimals": 18,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0xb59490aB09A0f526Cc7305822aC65f2Ab12f9723/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c20000714_t0xbcf39F0EDDa668C58371E519AF37CA705f2bFcbd",
+            "type": "BEP20",
+            "address": "0xbcf39F0EDDa668C58371E519AF37CA705f2bFcbd",
+            "name": "PolyCrowns",
+            "symbol": "pCWS",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0xbcf39F0EDDa668C58371E519AF37CA705f2bFcbd/logo.png",
             "pairs": []
         },
         {
@@ -762,6 +1088,16 @@
             "pairs": []
         },
         {
+            "asset": "c20000714_t0xD7B729ef857Aa773f47D37088A1181bB3fbF0099",
+            "type": "BEP20",
+            "address": "0xD7B729ef857Aa773f47D37088A1181bB3fbF0099",
+            "name": "OLD BOG Token",
+            "symbol": "BOG",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0xD7B729ef857Aa773f47D37088A1181bB3fbF0099/logo.png",
+            "pairs": []
+        },
+        {
             "asset": "c20000714_t0xE40255C5d7fa7ceEc5120408C78C787CECB4cfdb",
             "type": "BEP20",
             "address": "0xE40255C5d7fa7ceEc5120408C78C787CECB4cfdb",
@@ -780,16 +1116,6 @@
             "symbol": "BUSD",
             "decimals": 18,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56/logo.png",
-            "pairs": []
-        },
-        {
-            "asset": "c20000714_t0x9798dF2f5d213a872c787bD03b2b91F54D0D04A1",
-            "type": "BEP20",
-            "address": "0x9798dF2f5d213a872c787bD03b2b91F54D0D04A1",
-            "name": "TeraBlock Token",
-            "symbol": "TBC",
-            "decimals": 18,
-            "logoURI": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0x9798dF2f5d213a872c787bD03b2b91F54D0D04A1/logo.png",
             "pairs": []
         },
         {
@@ -814,6 +1140,16 @@
             "pairs": []
         },
         {
+            "asset": "c20000714_t0xf859Bf77cBe8699013d6Dbc7C2b926Aaf307F830",
+            "type": "BEP20",
+            "address": "0xf859Bf77cBe8699013d6Dbc7C2b926Aaf307F830",
+            "name": "Berry Data",
+            "symbol": "BRY",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0xf859Bf77cBe8699013d6Dbc7C2b926Aaf307F830/logo.png",
+            "pairs": []
+        },
+        {
             "asset": "c20000714_t0xF8A0BF9cF54Bb92F17374d9e9A321E6a111a51bD",
             "type": "BEP20",
             "address": "0xF8A0BF9cF54Bb92F17374d9e9A321E6a111a51bD",
@@ -835,7 +1171,7 @@
         }
     ],
     "version": {
-        "major": 11,
+        "major": 12,
         "minor": 0,
         "patch": 0
     }
