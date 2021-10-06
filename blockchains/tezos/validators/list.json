@@ -89,16 +89,16 @@
     },
     {
         "id": "tz1eEnQhbwf6trb8Q8mPb2RaPkNk2rN7BKi8",
-        "name": "Cryptium Labs",
-        "description": "Secure and available validation from the Swiss Alps.",
-        "website": "https://tezos.cryptium.ch/",
+        "name": "Chorus One",
+        "description": "Earn Rewards On Cryptoassets. Chorus One helps you securely increase your crypto holdings by participating in decentralized networks.",
+        "website": "https://chorus.one/",
         "payout": {
             "commission": 10,
             "payoutDelay": 6,
-            "payoutPeriod": 1
+            "payoutPeriod": 3
         },
         "staking": {
-            "minDelegation": 0
+            "minDelegation": 1
         }
     },
     {
@@ -247,16 +247,16 @@
     },
     {
         "id": "tz1Scdr2HsZiQjc7bHMeBbmDRXYVvdhjJbBh",
-        "name": "Figment Networks",
-        "description": "Your Trusted Staking Partner: Offering institutional grade staking infrastructure, services & compliance tools for token holders and stake-based blockchains.",
-        "website": "https://figment.network/networks/tezos",
+        "name": "Chorus One 2",
+        "description": "Earn Rewards On Cryptoassets. Chorus One helps you securely increase your crypto holdings by participating in decentralized networks.",
+        "website": "https://chorus.one/",
         "payout": {
-            "commission": 8,
+            "commission": 10,
             "payoutDelay": 6,
-            "payoutPeriod": 1
+            "payoutPeriod": 3
         },
         "staking": {
-            "minDelegation": 0
+            "minDelegation": 1
         }
     },
     {
