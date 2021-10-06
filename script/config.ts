@@ -57,7 +57,7 @@ export const PolygonSwap_TradingPairsUrl = "https://graphql.bitquery.io";
 export const PolygonSwap_TradingPairsQuery = `
 {
     ethereum(network: matic) {
-        dexTrades(date: {is: "2021-10-05"}) {
+        dexTrades(date: {is: "$DATE$"}) {
             sellCurrency {address symbol name decimals}
             buyCurrency {address symbol name decimals}
             trade: count

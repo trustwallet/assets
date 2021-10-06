@@ -40,13 +40,25 @@ function convertPairInfo(pair: PairInfoBitquery): PairInfo {
     } as PairInfo;
 }
 
+// Return the date 1,5 days ago in the form 2021-10-06
+function dateOfYesterday() {
+    const now = new Date();
+    const yesterday = new Date(now.getTime() - 36*3600*1000);
+    return yesterday.toISOString().substr(0, 10);
+}
+
 async function retrievePolygonSwapPairs(): Promise<PairInfo[]> {
     console.log(`Retrieving pairs from Polygon, limit  volume ${config.PolygonSwap_MinVol24}  txcount ${config.PolygonSwap_MinTxCount24}`);
 
     console.log(`  forceIncludeList: ${config.PolygonSwap_ForceInclude}`);
     const includeList = parseForceList(config.PolygonSwap_ForceInclude);
 
-    const pairs = await getTradingPairsBitquery(config.PolygonSwap_TradingPairsUrl, config.PolygonSwap_TradingPairsQuery);
+    const query = config.PolygonSwap_TradingPairsQuery;
+    const date = dateOfYesterday();
+    const queryReplaced = query.replace("$DATE$", date);
+    console.log(queryReplaced);
+
+    const pairs = await getTradingPairsBitquery(config.PolygonSwap_TradingPairsUrl, queryReplaced);
     const filtered: PairInfo[] = [];
     pairs.forEach(x => {
         try {
