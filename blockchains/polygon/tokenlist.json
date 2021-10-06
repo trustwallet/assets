@@ -1,7 +1,7 @@
 {
     "name": "Trust Wallet: Polygon",
     "logoURI": "https://trustwallet.com/assets/images/favicon.png",
-    "timestamp": "2021-10-06T09:30:33.904Z",
+    "timestamp": "2021-10-06T10:22:28.269Z",
     "tokens": [
         {
             "asset": "c966_t0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
@@ -13,10 +13,10 @@
             "logoURI": "https://assets.trustwalletapp.com/blockchains/polygon/assets/0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619/logo.png",
             "pairs": [
                 {
-                    "base": "c966_t0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174"
+                    "base": "c966_t0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270"
                 },
                 {
-                    "base": "c966_t0x53E0bca35eC356BD5ddDFebbD1Fc0fD03FaBad39"
+                    "base": "c966_t0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174"
                 },
                 {
                     "base": "c966_t0x831753DD7087CaC61aB5644b308642cc1c33Dc13"
@@ -33,6 +33,32 @@
             ]
         },
         {
+            "asset": "c966_t0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270",
+            "type": "POLYGON",
+            "address": "0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270",
+            "name": "Wrapped Matic",
+            "symbol": "WMATIC",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/polygon/assets/0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270/logo.png",
+            "pairs": [
+                {
+                    "base": "c966_t0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174"
+                },
+                {
+                    "base": "c966_t0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619"
+                },
+                {
+                    "base": "c966_t0x831753DD7087CaC61aB5644b308642cc1c33Dc13"
+                },
+                {
+                    "base": "c966_t0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063"
+                },
+                {
+                    "base": "c966_t0xc2132D05D31c914a87C6611C10748AEb04B58e8F"
+                }
+            ]
+        },
+        {
             "asset": "c966_t0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174",
             "type": "POLYGON",
             "address": "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174",
@@ -42,7 +68,16 @@
             "logoURI": "https://assets.trustwalletapp.com/blockchains/polygon/assets/0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174/logo.png",
             "pairs": [
                 {
+                    "base": "c966_t0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270"
+                },
+                {
                     "base": "c966_t0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619"
+                },
+                {
+                    "base": "c966_t0x831753DD7087CaC61aB5644b308642cc1c33Dc13"
+                },
+                {
+                    "base": "c966_t0xa3Fa99A148fA48D14Ed51d610c367C61876997F1"
                 },
                 {
                     "base": "c966_t0xc2132D05D31c914a87C6611C10748AEb04B58e8F"
@@ -58,6 +93,9 @@
             "decimals": 0,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/polygon/assets/0xc2132D05D31c914a87C6611C10748AEb04B58e8F/logo.png",
             "pairs": [
+                {
+                    "base": "c966_t0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270"
+                },
                 {
                     "base": "c966_t0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174"
                 },
@@ -75,6 +113,9 @@
             "decimals": 0,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/polygon/assets/0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063/logo.png",
             "pairs": [
+                {
+                    "base": "c966_t0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270"
+                },
                 {
                     "base": "c966_t0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619"
                 }
@@ -101,6 +142,16 @@
             "pairs": []
         },
         {
+            "asset": "c966_t0xa3Fa99A148fA48D14Ed51d610c367C61876997F1",
+            "type": "POLYGON",
+            "address": "0xa3Fa99A148fA48D14Ed51d610c367C61876997F1",
+            "name": "miMATIC",
+            "symbol": "miMATIC",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/polygon/assets/0xa3Fa99A148fA48D14Ed51d610c367C61876997F1/logo.png",
+            "pairs": []
+        },
+        {
             "asset": "c966_t0xD6DF932A45C0f255f85145f286eA0b292B21C90B",
             "type": "POLYGON",
             "address": "0xD6DF932A45C0f255f85145f286eA0b292B21C90B",
@@ -112,7 +163,7 @@
         }
     ],
     "version": {
-        "major": 2,
+        "major": 3,
         "minor": 0,
         "patch": 0
     }
