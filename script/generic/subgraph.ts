@@ -19,6 +19,20 @@ export interface PairInfo {
     token1: TokenInfo;
 }
 
+export interface TokenInfoBitquery {
+    address: string;
+    symbol: string;
+    name: string;
+    decimals: number;
+}
+
+export interface PairInfoBitquery {
+    sellCurrency: TokenInfoBitquery;
+    buyCurrency: TokenInfoBitquery;
+    trade: number; // trade count
+    tradeAmount: number; // trade volume usd
+}
+
 export async function getTradingPairs(apiUrl: string, subgraphQuery: string): Promise<unknown[]> {
     // compact the query string
     const compactQuery = subgraphQuery.replace(/(?:\r\n|\r|\n)/g, ' ').replace(/\s[\s]+/g, ' ');
@@ -31,6 +45,26 @@ export async function getTradingPairs(apiUrl: string, subgraphQuery: string): Pr
             throw `Unexpected result: ${JSON.stringify(result)}`;
         }
         const pairs = result.data.pairs;
+        console.log(`Retrieved ${pairs.length} trading pair infos`);
+        return pairs;
+    } catch (err) {
+        console.log("Exception from graph api:", err, apiUrl, JSON.stringify(postData));
+        throw err;
+    }
+}
+
+export async function getTradingPairsBitquery(apiUrl: string, subgraphQuery: string): Promise<unknown[]> {
+    // compact the query string
+    const compactQuery = subgraphQuery.replace(/(?:\r\n|\r|\n)/g, ' ').replace(/\s[\s]+/g, ' ');
+    const postData = {"query": compactQuery, "variables":{}};
+
+    console.log(`Retrieving trading pair infos from: ${apiUrl}`);
+    try {
+        const result = await axios.post(apiUrl, postData).then(r => r.data);
+        if (!result || !result.data || !result.data.ethereum || !result.data.ethereum.dexTrades) {
+            throw `Unexpected result: ${JSON.stringify(result)}`;
+        }
+        const pairs = result.data.ethereum.dexTrades;
         console.log(`Retrieved ${pairs.length} trading pair infos`);
         return pairs;
     } catch (err) {
