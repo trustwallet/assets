@@ -50,3 +50,22 @@ export const Uniswap_MinLiquidity = 2000000;
 export const Uniswap_MinVol24 = 1000000;
 export const Uniswap_MinTxCount24 = 480;
 
+// Force include & exclude config: list of token symbols, or symbol pairs (e.g. ["Cake", "DAI-WBNB"]).
+export const PolygonSwap_ForceInclude: string[] = [];
+export const PolygonSwap_ForceExclude: string[] = [];
+export const PolygonSwap_TradingPairsUrl = "https://graphql.bitquery.io";
+export const PolygonSwap_TradingPairsQuery = `
+{
+    ethereum(network: matic) {
+        dexTrades(date: {is: \"2021-10-05\"}) {
+            sellCurrency {address symbol name decimals}
+            buyCurrency {address symbol name decimals}
+            trade: count
+            tradeAmount(in: USD)
+        }
+    }
+}
+`;
+//export const PolygonSwap_MinLiquidity = 1000000;
+export const PolygonSwap_MinVol24 = 500000;
+export const PolygonSwap_MinTxCount24 = 288;
