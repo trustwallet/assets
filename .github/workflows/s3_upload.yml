@@ -13,7 +13,7 @@ jobs:
       if: github.repository_owner == 'trustwallet'
       uses: jakejarvis/s3-sync-action@master
       with:
-        args: --acl public-read --follow-symlinks --delete --exclude '*' --include 'dapps/*' --include 'blockchains/*' --include 'history/*'
+        args: --follow-symlinks --delete --exclude '*' --include 'dapps/*' --include 'blockchains/*' --include 'history/*'
       env:
         AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
