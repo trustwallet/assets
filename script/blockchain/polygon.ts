@@ -56,7 +56,6 @@ async function retrievePolygonSwapPairs(): Promise<PairInfo[]> {
     const query = config.PolygonSwap_TradingPairsQuery;
     const date = dateOfYesterday();
     const queryReplaced = query.replace("$DATE$", date);
-    console.log(queryReplaced);
 
     const pairs = await getTradingPairsBitquery(config.PolygonSwap_TradingPairsUrl, queryReplaced);
     const filtered: PairInfo[] = [];
