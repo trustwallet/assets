@@ -1,7 +1,7 @@
 { 
    "name": "REVIVAL",
     "website": "https://revivaldefi.com",
-    "description": "Revival is a BEP-20 Token that gives 11% reflections paid in BNB so you do not have to tap into your RVL holdings to use your reflections! Use the BNB to buy more RVL, HODL it, or buy something else! To get reflections, the holder must have a minimum of 10 Billion RVL in their wallet. Every transaction has a 15% tax. 11% is reflected to holders as BNB, 2% is added back into the Liquidity Pool and 2% is added to the RVL development wallet for future development. When a transaction happens, that tax is retained by the RVL contract. Once per hour the contract checks to see if the set amount of tax has accrued (currently set to 260 billion RVL). If this is true, the contract swaps to BNB and sends out to the LP, Development Wallet and Revival_Dividend_Tracker contract. You will notice you have equal amount of Revival_Dividend_Tracker Tokens per RVL. These are used to track your RVL so the Dividend contract knows how much BNB to pay you. RVL transactions trigger the Dividen_Tracker_Contract to process payments to holders in the order that they are queued within the index. The amount of holders paid out per transaction depends on the size of that transaction as it is gas dependent. The larger the transaction, the more holders paid out during that processing event.",
+    "description": "Revival is a BEP-20 Token that gives 11% reflections paid in BNB so you do not have to tap into your RVL holdings to use your reflections!",
     "explorer": "https://bscscan.com/token/0x7EaeE60040135F20f508A393ca400dEd339d654e",
     "type": "BEP20",
     "symbol": "RVL",
