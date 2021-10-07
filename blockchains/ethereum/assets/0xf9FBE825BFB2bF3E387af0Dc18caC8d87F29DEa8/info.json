@@ -1,27 +1,19 @@
 {
-    "name": "BotOcean",
+    "name": "Radar",
     "type": "ERC20",
-    "symbol": "BOTS",
+    "symbol": "RADAR",
     "decimals": 18,
-    "website": "https://botocean.com",
-    "description": "Bot Ocean democratizes the algorithmic trading market by giving you the tools to navigate your way through the market and earn assets while our bots do their job.",
-    "short_description": "Accessible algorithmic trading",
+    "website": "https://radar.global/",
+    "description": "Radar is an all-in one DeFi protocol, offering maximum capital efficiency, almost limitless liquidity and fully decentralized social trading within a single ecosystem. Radar is to digital assets as google is to the internet; a required tool to bring forth the full functionality of the technology.",
+    "short_description": "One App. All Chains. Every Transaction.",
     "explorer": "https://etherscan.io/token/0xf9fbe825bfb2bf3e387af0dc18cac8d87f29dea8",
     "status": "active",
     "id": "0xf9FBE825BFB2bF3E387af0Dc18caC8d87F29DEa8",
-    "research": "https://botocean.com/",
+    "research": "https://radar.global/",
     "links": [
         {
-            "name": "github",
-            "url": "https://github.com/BotOcean"
-        },
-        {
             "name": "twitter",
-            "url": "https://twitter.com/botoceaninc"
-        },
-        {
-            "name": "whitepaper",
-            "url": "https://botocean.com/static/media/whitepaper.aff921dc.pdf"
-        }
+            "url": "https://twitter.com/radarprotocol"
+	}
     ]
 }
