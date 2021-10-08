@@ -1,11 +1,53 @@
 {
     "name": "iNFT Platform",
-    "website": "https://inft.io/",
-    "description": "iNFT is a platform focusing on the NFT trading and providing professional service.The underlying technology based on the blockchain protocols of the Ethereum and BSC, makes iNFT different from the traditional exchanges and e-commerce platforms. Data security can be ensured as all the data is recorded on blockchain contracts.",
-    "explorer": "https://bscscan.com/token/0xd2fF8c018A22Ff06F4BE781090579d0490B9A69f",
     "type": "BEP20",
     "symbol": "iNFT",
     "decimals": 18,
+    "website": "https://inft.io/home",
+    "description": "iNFT is a platform focusing on the NFT trading and providing professional service.The underlying technology based on the blockchain protocols of the Ethereum and BSC, makes iNFT different from the traditional exchanges and e-commerce platforms. Data security can be ensured as all the data is recorded on blockchain contracts. The iNFT project is initiated in September 2020, and is the first team committed to developing the NFT in the Asia-Pacific region.\nDAM (Decentralized Appraisal Machine) is a mechanism proposed by the iNFT platform to price the NFT by combining smart contracts and DAO, which is aimed to solve the problem of asset liquidity in the NFT primary and secondary markets.",
+    "explorer": "https://etherscan.io/token/0xd2fF8c018A22Ff06F4BE781090579d0490B9A69f",
     "status": "active",
-    "id": "0xd2fF8c018A22Ff06F4BE781090579d0490B9A69f"
+    "id": "0xd2fF8c018A22Ff06F4BE781090579d0490B9A69f",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/iNFToffical"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/projectinft/"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/iNFTglobal"
+        },
+        {
+            "name": "telegram_news",
+            "url": "https://t.me/iNFTGlobal_Ann"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/@iNFTglobal"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/JtaYrqmbNQ"
+        },
+        {
+            "name": "facebook",
+            "url": "https://www.facebook.com/profile.php?id=100069719754638"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://inft.io/iNFTwhitepaper_EN.pdf"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/inft-platform/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://www.coingecko.com/en/coins/inft-token"
+        }
+    ]
 }
