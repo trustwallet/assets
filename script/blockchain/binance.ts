@@ -76,7 +76,8 @@ export function findImagesToFetch(assetInfoList: BinanceTokenInfo[]): BinanceTok
     console.log(`Checking for asset images to be fetched`);
     assetInfoList.forEach((tokenInfo) => {
         process.stdout.write(`.${tokenInfo.asset} `);
-        if (tokenInfo.assetImg) {
+        // pick assets only if img and decimals is present
+        if (tokenInfo.assetImg && tokenInfo.decimals) {
             const imagePath = getChainAssetLogoPath(binanceChain, tokenInfo.asset);
             if (!fs.existsSync(imagePath)) {
                 console.log(chalk.red(`Missing image: ${tokenInfo.asset}`));
