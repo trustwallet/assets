@@ -7,7 +7,6 @@ import {
     logoName,
     logoExtension,
     logoFullName,
-    getChainAssetLogoPath
 } from "../generic/repo-structure";
 import {
     getFileName,
@@ -57,6 +56,10 @@ export class EthForks implements ActionInterface {
                     check: async () => {
                         const errors: string[] = [];
                         const assetsFolder = getChainAssetsPath(chain);
+                        if (!isPathExistsSync(assetsFolder)) {
+                            console.log(`     Found 0 assets for chain ${chain}`);
+                            return [errors, []];
+                        }
                         const assetsList = getChainAssetsList(chain);
                         console.log(`     Found ${assetsList.length} assets for chain ${chain}`);
                         await bluebird.each(assetsList, async (address) => {
@@ -67,10 +70,6 @@ export class EthForks implements ActionInterface {
                             const inChecksum = toChecksum(address, chain);
                             if (address !== inChecksum) {
                                 errors.push(`Expect asset at path ${assetPath} in checksum: '${inChecksum}'`);
-                            }
-                            const assetLogoPath = getChainAssetLogoPath(chain, address);
-                            if (!isPathExistsSync(assetLogoPath)) {
-                                errors.push(`Missing file at path '${assetLogoPath}'`);
                             }
                         });
                         return [errors, []];
