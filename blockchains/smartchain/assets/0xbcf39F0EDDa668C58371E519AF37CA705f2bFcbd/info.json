@@ -4,31 +4,30 @@
     "symbol": "pCWS",
     "decimals": 18,
     "website": "https://www.seascape.network",
-    "source_code": "https://github.com/blocklords/seascape-smartcontracts",
     "description": "PolyCrowns are the official token of the Seascape Network on Binance Smart Chain. They are designed to reward all key stakeholders within the network. The Seascape Network is an incentivized ecosystem consisting of gamers, developers, and influencers with the purpose of bringing DeFi gaming to a broader userbase.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/seascapenetwork",
-            "handle": "SeascapeNetwork"
-        },
-        {
-            "name": "Reddit",
-            "url": "https://www.reddit.com/r/SeascapeNetwork",
-            "handle": "SeascapeNetwork"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/seascapenetwork",
-            "handle": "SeascapeNetwork"
-        },
-        {
-            "name": "Discord",
-            "url": "https://discord.com/invite/qG2Vynh",
-            "handle": "SeascapeNetwork"
-        }
-    ],
     "explorer": "https://bscscan.com/token/0xbcf39F0EDDa668C58371E519AF37CA705f2bFcbd",
     "status": "active",
-    "id": "0xbcf39F0EDDa668C58371E519AF37CA705f2bFcbd"
+    "id": "0xbcf39F0EDDa668C58371E519AF37CA705f2bFcbd",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/blocklords/seascape-smartcontracts"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/SeascapeNetwork"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/seascapenetwork"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/qG2Vynh"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/SeascapeNetwork"
+        }
+    ]
 }

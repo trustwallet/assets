@@ -2,36 +2,32 @@
     "name": "Lemur Finance",
     "website": "https://lemur.finance/",
     "description": "Lemur is an automated yield farming token and 100% decentralized led by the community.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/FinanceLemur"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/lemurfinance"
-        },
-        {
-            "name": "Medium",
-            "url": "https://lemurfinance.medium.com/"
-        },
-        {
-            "name": "Reddit",
-            "url": "https://www.reddit.com/r/LemurFinance/"
-        },
-        {
-            "name": "Facebook",
-            "url": "https://www.facebook.com/Lemur.Finance/"
-        },
-        {
-            "name": "Instagram",
-            "url": "https://instagram.com/lemurfinance"
-        }
-    ],
     "explorer": "https://bscscan.com/token/0xc35f46aAEb8aD17bCbAa78c03540FEffa44790Cb",
     "type": "BEP20",
     "symbol": "LEM",
     "decimals": 9,
     "status": "active",
-    "id": "0xc35f46aAEb8aD17bCbAa78c03540FEffa44790Cb"
+    "id": "0xc35f46aAEb8aD17bCbAa78c03540FEffa44790Cb",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/FinanceLemur"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/lemurfinance"
+        },
+        {
+            "name": "facebook",
+            "url": "https://facebook.com/Lemur.Finance/"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/LemurFinance/"
+        },
+        {
+            "name": "medium",
+            "url": "https://lemurfinance.medium.com/"
+        }
+    ]
 }

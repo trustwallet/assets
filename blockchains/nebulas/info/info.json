@@ -1,25 +1,29 @@
 {
     "name": "Nebulas",
     "website": "https://nebulas.io",
-    "source_code": "https://github.com/nebulasio",
-    "white_paper": "https://nebulas.io/docs/NebulasWhitepaper.pdf",
     "description": "Nebulas is a decentralized platform which provides a search framework for all blockchains. Nebulas is a next generation public blockchain, aiming for a continuously improving ecosystem.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/nebulasio",
-            "handle": "nebulasio"
-        },
-        {
-            "name": "Reddit",
-            "url": "https://reddit.com/r/nebulas",
-            "handle": "nebulas"
-        }
-    ],
     "explorer": "https://explorer.nebulas.io",
     "research": "https://research.binance.com/en/projects/nebulas",
     "symbol": "NAS",
-    "type": "COIN",
+    "type": "coin",
     "decimals": 18,
-    "status": "active"
+    "status": "active",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/nebulasio"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/nebulasio"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/nebulas"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://nebulas.io/docs/NebulasWhitepaper.pdf"
+        }
+    ]
 }
