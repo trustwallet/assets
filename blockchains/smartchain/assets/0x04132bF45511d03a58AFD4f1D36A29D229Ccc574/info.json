@@ -1,0 +1,33 @@
+{
+    "name": "BUSD-BD1",
+    "type": "BEP20",
+    "symbol": "BUSD",
+    "decimals": 18,
+    "website": "https://www.paxos.com/busd",
+    "description": "BUSD is a 1:1 USD-backed stablecoin approved by the New York State Department of Financial Services (NYDFS). It is issued in partnership with Paxos and can be issued and redeemed without any extra fee.",
+    "explorer": "https://bscscan.com/token/0x04132bF45511d03a58AFD4f1D36A29D229Ccc574",
+    "status": "active",
+    "id": "0x04132bF45511d03a58AFD4f1D36A29D229Ccc574",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/binance_dex"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/binance-chain/"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/BinanceDEXchange"
+        },
+        {
+            "name": "telegram_news",
+            "url": "https://t.me/BinanceDEXchange"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/binance-usd/"
+        }
+    ]
+}
