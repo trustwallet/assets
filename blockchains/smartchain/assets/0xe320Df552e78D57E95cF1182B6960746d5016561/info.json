@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "DogeCola",
   "website": "https://www.dogecola.finance/",
   "description": "The first reflection token and soft drink at the same time. Every buy gives members more with the auto-boost and hyper deflation system in place.",
@@ -9,6 +10,18 @@
   "status": "active",
   "id": "0xe320Df552e78D57E95cF1182B6960746d5016561",
    "links": [
+=======
+    "name": "DogeCola",
+    "website": "https://www.dogecola.finance/",
+    "description": "The first reflection token and soft drink at the same time. Every buy gives members more with the auto-boost and hyper deflation system in place.",
+    "explorer": "https://bscscan.com/token/0xe320df552e78d57e95cf1182b6960746d5016561",
+    "type": "BEP20",
+    "symbol": "DOGECOLA",
+    "decimals": 9,
+    "status": "active",
+    "id": "0xe320Df552e78D57E95cF1182B6960746d5016561",
+    "links": [
+>>>>>>> 828f0d6687313700d166d95c727631696303f1c9
         {
             "name": "github",
             "url": "https://github.com/dogecola"
@@ -22,4 +35,8 @@
             "url": "https://t.me/dogecola"
         }
     ]
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 828f0d6687313700d166d95c727631696303f1c9
