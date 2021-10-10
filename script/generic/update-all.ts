@@ -13,6 +13,7 @@ import { TezosAction } from "../blockchain/tezos";
 import { TronAction } from "../blockchain/tron";
 import { Validators } from "../generic/validators";
 import { WavesAction } from "../blockchain/waves";
+import { PolygonAction } from "../blockchain/polygon";
 import { ActionInterface, CheckStepInterface } from "../generic/interface";
 import * as chalk from 'chalk';
 import * as bluebird from "bluebird";
@@ -30,6 +31,7 @@ const actionList: ActionInterface[] = [
     new EthereumAction(),
     new CosmosAction(),
     new KavaAction(),
+    new PolygonAction(),
     new TerraAction(),
     new TezosAction(),
     new TronAction(),
