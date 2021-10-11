@@ -1,11 +1,53 @@
 {
     "name": "ArdCoin",
-    "symbol": "ARDX",
     "type": "ERC20",
+    "symbol": "ARDX",
     "decimals": 2,
-    "description": "ArdCoin will serve as a blockchain-based loyalty program for all existing and future services and products of Ard Financial Group (Ard Holdings), its subsidiaries and ArdCoin merchants.",
-    "website": "https://ardcoin.com",
-    "explorer": "https://etherscan.io/token/0xB8E2e2101eD11e9138803cd3e06e16dd19910647",
+    "website": "https://ardcoin.com/",
+    "description": "ArdCoin (ARDX) - is an innovative blockchain-based loyalty program that has been integrated into a mobile super wallet which is backed by an existing financial infrastructure which includes banking services, insurance provider, stock brokerage, investment banking and a pension fund.",
+    "explorer": "https://etherscan.io/token/0xb8e2e2101ed11e9138803cd3e06e16dd19910647",
     "status": "active",
-    "id": "0xB8E2e2101eD11e9138803cd3e06e16dd19910647"
+    "id": "0xB8E2e2101eD11e9138803cd3e06e16dd19910647",
+    "links": [
+        {
+            "name": "facebook",
+            "url": "https://www.facebook.com/ArdFinancialGroup"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/ard_coin?lang=bg"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/ardcoin/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://www.coingecko.com/en/coins/ardcoin"
+        },
+        {
+            "name": "medium",
+            "url": "https://ardcoin.medium.com/"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/ardcoin_eng"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/ArdCoin"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://ardcoin.com/wp-content/themes/ardcoin/white.pdf"
+        },
+        {
+            "name": "reddit",
+            "url": "https://www.reddit.com/r/ArdCoin/"
+        },
+        {
+            "name": "youtube",
+            "url": "https://www.youtube.com/user/ArdHoldings"
+        }
+    ]
 }
