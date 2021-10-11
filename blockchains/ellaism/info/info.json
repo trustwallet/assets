@@ -1,21 +1,28 @@
 {
     "name": "Ellaism",
     "website": "https://ellaism.org",
-    "source_code": "https://github.com/ellaism",
-    "white_paper": "https://wiki.ellaism.org/about/technical-informations",
-    "short_description": "A stable Ethereum-like network with no premine and no dev fees. Monetary policy is enabled with a total supply of 280 million ELLA.",
-    "description": "Ellaism (ELLA) is a cryptocurrency. Users are able to generate ELLA through the process of mining. Ellaism has a current supply of 19,364,074.325. The last known price of Ellaism is $0.001645 USD and is up 17.93% over the last 24 hours. It is currently trading on 1 active market(s) with $15.99 traded over the last 24 hours. More information can be found at https://ellaism.org/.",
-    "socials": [
+    "description": "A stable Ethereum-like network with no premine and no dev fees. Monetary policy is enabled with a total supply of 280 million ELLA.",
+    "explorer": "https://limax-explorer.outdoordevs.com/home",
+    "symbol": "ELLA",
+    "type": "coin",
+    "decimals": 8,
+    "status": "abandoned",
+    "links": [
         {
-            "name": "Twitter",
-            "url": "https://twitter.com/ellaismproject",
-            "handle": "ellaismproject"
+            "name": "github",
+            "url": "https://github.com/ellaism"
         },
         {
-            "name": "Reddit",
-            "url": "https://reddit.com/r/ellaism",
-            "handle": "ellaism"
+            "name": "twitter",
+            "url": "https://twitter.com/ellaismproject"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/ellaism"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://wiki.ellaism.org/about/technical-informations"
         }
-    ],
-    "explorer": "https://limax-explorer.outdoordevs.com/home"
+    ]
 }

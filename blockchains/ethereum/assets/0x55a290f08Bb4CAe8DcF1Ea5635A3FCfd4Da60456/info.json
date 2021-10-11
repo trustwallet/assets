@@ -1,10 +1,11 @@
 {
-    "name": "BITTO",
-    "website": "https://www.bittoexchange.com",
-    "short_description": "First Exchange with Proof of Stake Blockchain Technology that offers an advanced access to its users to gain profit.",
-<<<<<<< HEAD
-    "explorer": "https://etherscan.io/address/0x55a290f08bb4cae8dcf1ea5635a3fcfd4da60456"
-=======
-    "explorer": "https://etherscan.io/token/0x55a290f08Bb4CAe8DcF1Ea5635A3FCfd4Da60456"
->>>>>>> 69b943d2186278de868a14811293fbb4e9e27a78
+
+    "website": "https://bittoexchange.com",
+    "description": "First Exchange with Proof of Stake Blockchain Technology that offers an advanced access to its users to gain profit.",
+    "explorer": "https://etherscan.io/token/0x55a290f08Bb4CAe8DcF1Ea5635A3FCfd4Da60456",
+    "type": "ERC20",
+    "symbol": "BITTO",
+    "decimals": 18,
+    "status": "active",
+    "id": "0x55a290f08Bb4CAe8DcF1Ea5635A3FCfd4Da60456"
 }

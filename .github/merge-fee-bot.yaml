@@ -1,9 +1,9 @@
 # Expected Payment.  Can be more than one options.
 payments:
-  - amount: 250
+  - amount: 1000
     token: TWT
     address: bnb1tqq9llyr3dyjd559dha6z5r5etk3qfwk07m098
-  - amount: 2
+  - amount: 5
     token: BNB
     address: bnb1tqq9llyr3dyjd559dha6z5r5etk3qfwk07m098
 payment:
@@ -13,7 +13,7 @@ payment:
 message:
   initial: |
     Hi! In order to compensate for the efforts of processing PRs, we kindly ask for a contribution.
-    Before paying the fee, make sure new tokens fulfill the [acceptance criteria](https://community.trustwallet.com/t/how-to-submit-a-token-logo/3863#how-to-get-approved) (there is no fee refund in case of rejection).
+    💀 As **there is no refund**, before **paying the fee**, make sure **new tokens fulfill the minimum circulation and other [acceptance criteria](https://community.trustwallet.com/t/how-to-submit-a-token-logo/3863)**.
     See also the [PR Fee FAQ](https://developer.trustwallet.com/add_new_asset/pr-fee).
     \nPlease pay  **$PAY1_AMOUNT $PAY1_CURRENCY**  with the memo **$PAY1_MEMO**  to the address `$PAY1_ADDRESS`.
     Alternatively, $PAY2_AMOUNT $PAY2_CURRENCY is also accepted (same memo & address).
@@ -30,7 +30,7 @@ message:
     Fee is PAID, fantastic!  Thanks!
     \nThe PR will be evaluated soon by a maintainer, and if merged, the new logos should be visible in Trust Wallet.
     Please note that the app caches logos (up to several days; if you want to see changes immediately, use a new installation).  See the [assets FAQ](https://github.com/trustwallet/assets#faq). 
-    (@zachzwei, @catenocrypt & @Iamdeadlyz: please take note.)
+    (@zachzwei, @Cryptocool1: please take note.)
     \n([$PAID_AMOUNT $PAID_CURRENCY]($PAID1_EXPLORERLINK))
   reviewCreated: Fee paid, review added.
   reviewed: Review is not needed any more, no more fee required.
@@ -40,13 +40,16 @@ message:
     \n$QR1_SIMPLE
     See the [Pull Request Fee FAQ](https://developer.trustwallet.com/add_new_asset/pr-fee).
   oldClosing: |
-    This PR is being closed due to inactivity. If you wish to continue, please have us reopen the PR before sending your payment.
+    This PR is being closed due to inactivity. If you wish to continue, please have us reopen the PR before sending your payment, or just create a new one.
     Do NOT send payments for closed PR, as the fee may by lost!
 label:
   requested: 'Payment Status: Requested'
   paid: 'Payment Status: Paid'
 user:
-  assignOnPay: zachzwei,catenocrypt
+  assignOnPay: zachzwei,Cryptocool1,cryptomanz
+  # if set to 1 comments from not allowed users are deleted.  Only comments from the PR creator or collaborators are allowed
+  deleteComments: 1
+  collaborators: zachzwei,Iamdeadlyz,catenocrypt,vikmeup,hewigovens,Cryptocool1,cryptomanz
 timeout:
-  maxAgeCloseHours: 60
-  maxIdleRemindHours: 17
+  maxAgeCloseHours: 48
+  maxIdleRemindHours: 22

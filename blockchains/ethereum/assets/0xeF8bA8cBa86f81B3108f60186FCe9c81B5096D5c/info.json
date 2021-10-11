@@ -1,10 +1,9 @@
 {
-    "name": "YFII GOLD",
-    "website": "https://yfiigold.finance",
-    "short_description": "YFII Gold is the world's first and only YFI pludges elastic token supply defi-protocol",
-<<<<<<< HEAD
-    "explorer": "https://etherscan.io/token/0xef8ba8cba86f81b3108f60186fce9c81b5096d5c"
-=======
-    "explorer": "https://etherscan.io/token/0xeF8bA8cBa86f81B3108f60186FCe9c81B5096D5c"
->>>>>>> 69b943d2186278de868a14811293fbb4e9e27a78
+    "description": "YFII Gold is the world's first and only YFI pludges elastic token supply defi-protocol",
+    "explorer": "https://etherscan.io/token/0xeF8bA8cBa86f81B3108f60186FCe9c81B5096D5c",
+    "type": "ERC20",
+    "symbol": "YFIIG",
+    "decimals": 18,
+    "status": "active",
+    "id": "0xeF8bA8cBa86f81B3108f60186FCe9c81B5096D5c"
 }

@@ -1,21 +1,28 @@
 {
     "name": "Loom Network",
     "website": "https://loomx.io",
-    "source_code": "https://github.com/loomnetwork",
-    "white_paper": "https://medium.com/loom-network/introducing-loom-network-scaling-ethereum-today-9ea26b5b57c",
-    "short_description": "The next-generation blockchain platform for large-scale online games and social apps.",
-    "description": "Loom Network (LOOM) is a Platform as a Service intended to allow Ethereum-based Solidity applications to be run on side chains. With the belief that applications should be allowed to have more relaxed consensus mechanisms depending on their needs and potential threat model, Loom aims to make scaling decentralized applications faster and easier while remaining on the Ethereum network. Loom Network’s DPoS sidechains allow for truly scalable blockchain games and DApps with the security of Ethereum mainnet.",
-    "socials": [
+    "description": "The next-generation blockchain platform for large-scale online games and social apps.",
+    "explorer": "https://etherscan.io/token/0xa4e8c3ec456107ea67d3075bf9e3df3a75823db0",
+    "symbol": "LOOM",
+    "type": "coin",
+    "decimals": 8,
+    "status": "abandoned",
+    "links": [
         {
-            "name": "Twitter",
-            "url": "https://twitter.com/loomnetwork",
-            "handle": "loomnetwork"
+            "name": "github",
+            "url": "https://github.com/loomnetwork"
         },
         {
-            "name": "Reddit",
-            "url": "https://reddit.com/r/loomnetwork",
-            "handle": "loomnetwork"
+            "name": "twitter",
+            "url": "https://twitter.com/loomnetwork"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/loomnetwork"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://medium.com/loom-network/introducing-loom-network-scaling-ethereum-today-9ea26b5b57c"
         }
-    ],
-    "explorer": "https://etherscan.io/token/0xa4e8c3ec456107ea67d3075bf9e3df3a75823db0"
+    ]
 }

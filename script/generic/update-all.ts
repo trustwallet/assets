@@ -1,4 +1,6 @@
 import { BinanceAction } from "../blockchain/binance";
+import { SmartchainAction } from "../blockchain/smartchain";
+import { EthereumAction } from "../blockchain/ethereum";
 import { CosmosAction } from "../blockchain/cosmos";
 import { AssetInfos } from "../generic/asset-infos";
 import { EthForks } from "../generic/eth-forks";
@@ -11,8 +13,7 @@ import { TezosAction } from "../blockchain/tezos";
 import { TronAction } from "../blockchain/tron";
 import { Validators } from "../generic/validators";
 import { WavesAction } from "../blockchain/waves";
-import { Allowlists } from "../generic/allowlists";
-import { TokenLists } from "../generic/tokenlists";
+import { PolygonAction } from "../blockchain/polygon";
 import { ActionInterface, CheckStepInterface } from "../generic/interface";
 import * as chalk from 'chalk';
 import * as bluebird from "bluebird";
@@ -22,14 +23,15 @@ const actionList: ActionInterface[] = [
     new AssetInfos(),
     new EthForks(),
     new LogoSize(),
-    new Allowlists(),
-    new TokenLists(),
     new Validators(),
     new JsonAction(),
     // chains:
     new BinanceAction(),
+    new SmartchainAction(),
+    new EthereumAction(),
     new CosmosAction(),
     new KavaAction(),
+    new PolygonAction(),
     new TerraAction(),
     new TezosAction(),
     new TronAction(),
@@ -37,6 +39,10 @@ const actionList: ActionInterface[] = [
 ];
 
 const maxErrosFromOneCheck = 5;
+
+const markerError = chalk.red('XXX');
+const markerWarning = chalk.yellow('!!');
+const markerOK = chalk.green('✓');
 
 async function checkStepList(steps: CheckStepInterface[]): Promise<[string[], string[]]> {
     const errorsAll: string[] = [];
@@ -46,36 +52,36 @@ async function checkStepList(steps: CheckStepInterface[]): Promise<[string[], st
             //console.log(`     Running check step '${step.getName()}'...`);
             const [errors, warnings] = await step.check();
             if (errors && errors.length > 0) {
-                console.log(`-  ${chalk.red('X')} '${step.getName()}':  ${errors.length} errors`);
+                console.log(`-  ${markerError} '${step.getName()}':  ${errors.length} errors`);
                 let cnt = 0;
                 errors.forEach(err => {
                     if (cnt < maxErrosFromOneCheck) {
-                        console.log(`   ${chalk.red('X')}   '${err}'`);
+                        console.log(`   ${markerError}   '${err}'`);
                         errorsAll.push(err);
                     } else if (cnt == maxErrosFromOneCheck) {
-                        console.log(`   ${chalk.red('X')}   ${errors.length} errors in total, omitting rest ...`);
+                        console.log(`   ${markerError}   ${errors.length} errors in total, omitting rest ...`);
                     }
                     cnt++;
                 });
             }
             if (warnings && warnings.length > 0) {
-                console.log(`-  ${chalk.yellow('!')} '${step.getName()}':  ${warnings.length} warnings`);
+                console.log(`-  ${markerWarning} '${step.getName()}':  ${warnings.length} warnings`);
                 let cnt = 0;
                 warnings.forEach(warn => {
                     if (cnt < maxErrosFromOneCheck) {
-                        console.log(`   ${chalk.yellow('!')}   '${warn}'`);
+                        console.log(`   ${markerWarning}   '${warn}'`);
                         warningsAll.push(warn);
                     } else if (cnt == maxErrosFromOneCheck) {
-                        console.log(`   ${chalk.yellow('!')}   ${warnings.length} warnings in total, omitting rest ...`);
+                        console.log(`   ${markerWarning}   ${warnings.length} warnings in total, omitting rest ...`);
                     }
                     cnt++;
                 });
             }
             if (errors.length == 0 && warnings.length == 0) {
-                console.log(`-  ${chalk.green('✓')} '${step.getName()}' OK`);
+                console.log(`-  ${markerOK} '${step.getName()}' OK`);
             }
         } catch (error) {
-            console.log(`-  ${chalk.red('X')} '${step.getName()}': Caught error: ${error.message}`);
+            console.log(`-  ${markerError} '${step.getName()}': Caught error: ${error.message}`);
             errorsAll.push(`${step.getName()}: Exception: ${error.message}`);
         }
     });
@@ -100,12 +106,12 @@ async function sanityCheckByActionList(actions: ActionInterface[]): Promise<[str
                         warnings1.forEach(w => warnings.push(w));
                     }
                     if (errors1.length == 0 && warnings1.length == 0) {
-                        console.log(`- ${chalk.green('✓')} Action '${action.getName()}' OK, all ${steps.length} steps`);
+                        console.log(`- ${markerOK} Action '${action.getName()}' OK, all ${steps.length} steps`);
                     }
                 }
             }
         } catch (error) {
-            console.log(`-  ${chalk.red('X')} '${action.getName()}' Caught error: ${error.message}`);
+            console.log(`-  ${markerError} '${action.getName()}' Caught error: ${error.message}`);
             errors.push(`${action.getName()}: Exception: ${error.message}`);
         }
     });
@@ -131,12 +137,12 @@ async function consistencyCheckByActionList(actions: ActionInterface[]): Promise
                         warnings1.forEach(w => warnings.push(w));
                     }
                     if (errors1.length == 0 && warnings1.length == 0) {
-                        console.log(`- ${chalk.green('✓')} Action '${action.getName()}' OK, all ${steps.length} steps`);
+                        console.log(`- ${markerOK} Action '${action.getName()}' OK, all ${steps.length} steps`);
                     }
                 }
             }
         } catch (error) {
-            console.log(`-  ${chalk.red('X')} '${action.getName()}' Caught error: ${error.message}`);
+            console.log(`-  ${markerError} '${action.getName()}' Caught error: ${error.message}`);
             errors.push(`${action.getName()}: Exception: ${error.message}`);
         }
     });
@@ -164,7 +170,7 @@ async function consistencyFixByList(actions: ActionInterface[]) {
     await bluebird.each(actions, async (action) => {
         try {
             if (action.consistencyFix) {
-                console.log(`Sanity fix '${action.getName()}':`);
+                console.log(`Consistency fix '${action.getName()}':`);
                 await action.consistencyFix();
             }
         } catch (error) {
@@ -174,19 +180,34 @@ async function consistencyFixByList(actions: ActionInterface[]) {
     console.log("All consistency fixes done.");
 }
 
-async function updateByList(actions: ActionInterface[]) {
-    console.log("Running updates (using external data sources) ...");
+async function updateAutoByList(actions: ActionInterface[]) {
+    console.log("Running auto updates (using external data sources) ...");
     await bluebird.each(actions, async (action) => {
         try {
-            if (action.update) {
-                console.log(`Update '${action.getName()}':`);
-                await action.update();
+            if (action.updateAuto) {
+                console.log(`Auto update '${action.getName()}':`);
+                await action.updateAuto();
             }
         } catch (error) {
             console.log(`Caught error: ${error.message}`);
         }
     });
-    console.log("All updates done.");
+    console.log("All auto updates done.");
+}
+
+async function updateManualByList(actions: ActionInterface[]) {
+    console.log("Running manual updates (using external data sources) ...");
+    await bluebird.each(actions, async (action) => {
+        try {
+            if (action.updateManual) {
+                console.log(`Manual update '${action.getName()}':`);
+                await action.updateManual();
+            }
+        } catch (error) {
+            console.log(`Caught error: ${error.message}`);
+        }
+    });
+    console.log("All manual updates done.");
 }
 
 export async function sanityCheckAll(): Promise<[string[], string[]]> {
@@ -205,6 +226,10 @@ export async function consistencyFixAll(): Promise<void> {
     await consistencyFixByList(actionList);
 }
 
-export async function updateAll(): Promise<void> {
-    await updateByList(actionList);
+export async function updateAutoAll(): Promise<void> {
+    await updateAutoByList(actionList);
+}
+
+export async function updateManualAll(): Promise<void> {
+    await updateManualByList(actionList);
 }
