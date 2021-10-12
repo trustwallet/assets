@@ -223,6 +223,7 @@ export function chainFromAssetType(type: string): string {
         case "ARBITRUM": return "arbitrum";
         case "FANTOM": return "fantom";
         case "TERRA": return "terra";
+        case "RONIN": return "ronin";
         default: return "";
     }
 }
