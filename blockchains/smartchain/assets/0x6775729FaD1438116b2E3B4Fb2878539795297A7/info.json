@@ -3,9 +3,31 @@
     "type": "BEP20",
     "symbol": "ALP",
     "decimals": 9,
-    "website": "https://coinalpha.app/coinalpha-token",
-    "description": "Coinalpha is a token which runs code each time it is executed for various use-cases, including real-time and historicaldecentralised on Binance Smart Chain.",
-    "explorer": "https://bscscan.com/token/0x6775729fad1438116b2e3b4fb2878539795297a7",
+    "website": "https://coinalpha.app/",
+    "description": "CoinAlpha is community based coin listing and voting platform.",
+    "explorer": "https://bscscan.com/token/0x6775729FaD1438116b2E3B4Fb2878539795297A7",
     "status": "active",
-    "id": "0x6775729FaD1438116b2E3B4Fb2878539795297A7"
+    "id": "0x6775729FaD1438116b2E3B4Fb2878539795297A7",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/CoinAlpha3"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/coinalpha_x100"
+        },
+        {
+            "name": "facebook",
+            "url": "https://facebook.com/coinalphax4r"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/coinalpha/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/coinalpha"
+        }
+    ]
 }
