@@ -314,6 +314,8 @@ export function explorerUrl(chain: string, contract: string): string {
                 return `https://ftmscan.com/token/${contract}`
             case "terra":
                 return `https://finder.terra.money/columbus-4/${contract}`
+            case "ronin":
+                return `https://explorer.roninchain.com/token/ronin:${contract}`
             }
     }
     return "";
