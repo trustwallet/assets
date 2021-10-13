@@ -1,17 +1,65 @@
 {
-    "name": "Energi",
-    "website": "https://energi.world/",
-    "description": "Cryptocurrency for World Consciousness.",
-    "explorer": "https://etherscan.io/token/0x1416946162b1c2c871a73b07e932d2fb6c932069",
+    "name": "Energi (NRGE)",
     "type": "ERC20",
     "symbol": "NRGE",
     "decimals": 18,
+    "website": "https://www.energi.world/",
+    "description": "Energi",
+    "explorer": "https://etherscan.io/token/0x1416946162b1c2c871a73b07e932d2fb6c932069",
     "status": "active",
     "id": "0x1416946162B1C2c871A73B07E932D2fB6C932069",
     "links": [
         {
+            "name": "twitter",
+            "url": "https://twitter.com/energi"
+        },
+        {
+            "name": "discord",
+            "url": "https://discordapp.com/invite/sCtgNC3"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/energicrypto"
+        },
+        {
+            "name": "telegram_news",
+            "url": "https://t.me/energiannouncements"
+        },
+        {
+            "name": "reddit",
+            "url": "https://www.reddit.com/r/energicryptocurrency"
+        },
+        {
+            "name": "facebook",
+            "url": "https://www.facebook.com/Energi-Cryptocurrency-195355164580336/"
+        },
+        {
+            "name": "youtube",
+            "url": "https://www.youtube.com/channel/UCCABQly0NNR2j_M_iDpy8mA/"
+        },
+        {
             "name": "github",
-            "url": "https://github.com/energicryptocurrency/"
+            "url": "https://github.com/energicryptocurrency"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/energi/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://www.coingecko.com/en/coins/energi/"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/energi"
+        },
+        {
+            "name": "docs",
+            "url": "https://wiki.energi.world/"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://www.energi.world/whitepaper/"
         }
     ]
 }
