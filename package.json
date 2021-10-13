@@ -11,7 +11,6 @@
     "fix-sanity": "ts-node ./script/entrypoint/fix-sanity",
     "updateAuto": "ts-node ./script/entrypoint/updateAuto",
     "update": "ts-node ./script/entrypoint/updateManual",
-    "history": "ts-node ./script/entrypoint/history",
     "lint": "npx eslint . --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "npx eslint . --ext .js,.jsx,.ts,.tsx --fix"
   },
