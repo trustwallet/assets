@@ -1,11 +1,21 @@
 {
     "name": "Medic Coin",
-    "symbol": "MID",
     "type": "BEP20",
+    "symbol": "MID",
     "decimals": 18,
+    "website": "https://midic-coin.com",
     "description": "MID is a decentralized finance protocol that allows people to buy medic with crypto.",
-    "website": "https://medic-coin.com",
-    "explorer": "https://bscscan.com/token/0x298b677002c859e2acec1703d144ddfb2c8449a9",
+    "explorer": "https://bscscan.com/token/0x298B677002c859E2acEc1703d144DDfB2c8449A9",
     "status": "active",
-    "id": "0x298b677002c859e2acec1703d144ddfb2c8449a9"
+    "id": "0x298B677002c859E2acEc1703d144DDfB2c8449A9",
+    "links": [
+        {
+            "name": "telegram",
+            "url": "https://t.me/Ho3einZT"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/ho3einzt"
+        }
+    ]
 }
