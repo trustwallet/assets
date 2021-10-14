@@ -1,13 +1,13 @@
 {
-    "name": "StakeWise sETH2",
+    "name": "StakeWise rETH2",
     "type": "ERC20",
-    "symbol": "sETH2",
+    "symbol": "rETH2",
     "decimals": 18,
     "website": "https://stakewise.io",
-    "description": "sETH2 is a token that represents staked ether in StakeWise.",
-    "explorer": "https://etherscan.io/token/0xFe2e637202056d30016725477c5da089Ab0A043A",
+    "description": "rETH2 is a token that represents reward ether in StakeWise.",
+    "explorer": "https://etherscan.io/token/0x20BC832ca081b91433ff6c17f85701B6e92486c5",
     "status": "active",
-    "id": "0xFe2e637202056d30016725477c5da089Ab0A043A",
+    "id": "0x20BC832ca081b91433ff6c17f85701B6e92486c5",
     "links": [
         {
             "name": "twitter",
@@ -55,11 +55,11 @@
         },
         {
             "name": "coingecko",
-            "url": "https://coingecko.com/en/coins/seth2"
+            "url": "https://coingecko.com/en/coins/reth2"
         },
         {
             "name": "source_code",
-            "url": "https://github.com/stakewise/contracts/blob/master/contracts/tokens/StakedEthToken.sol"
+            "url": "https://github.com/stakewise/contracts/blob/master/contracts/tokens/RewardEthToken.sol"
         }
     ]
 }
