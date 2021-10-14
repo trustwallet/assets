@@ -1,8 +1,8 @@
 name: Periodic External Update
 on:
   schedule:
-    # Run twice per day (at 7:00UTC/12amPST, 19:00UTC/12pmPST)
-    - cron:  '0 7,19 * * *'
+    # Run twice per day (at 1:00UTC/6pmPST, 13:00UTC/6amPST)
+    - cron:  '0 1,13 * * *'
   workflow_dispatch:
 jobs:
   periodic-auto-update:
