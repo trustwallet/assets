@@ -2,11 +2,24 @@
     "name": "ForceCowBoy",
     "website": "https://scb.oxbull.tech",
     "description": "P2E game for Sci-Fi inspired characters",
-    "explorer": "https://bscscan.com/address/0xD6F53E7fA7c6c83D749255C06E9444E3325Ab53E",
-    "research": "",
+    "explorer": "https://bscscan.com/token/0xD6F53E7fA7c6c83D749255C06E9444E3325Ab53E",
     "type": "BEP20",
     "symbol": "FCB",
     "decimals": 18,
     "status": "active",
-    "id": "0xD6F53E7fA7c6c83D749255C06E9444E3325Ab53E"
+    "id": "0xD6F53E7fA7c6c83D749255C06E9444E3325Ab53E",
+    "links": [{
+        "name": "telegram",
+        "url": "https://t.me/Oxbull_tech"
+    }, {
+        "name": "twitter",
+        "url": "https://twitter.com/OxBull5"
+    }, {
+        "name": "medium",
+        "url": "https://oxbull.medium.com/"
+    },{
+        "name": "instagram",
+        "url": "https://www.instagram.com/scb.nft/"
+    }]
 }
+

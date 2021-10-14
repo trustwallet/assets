@@ -3,10 +3,22 @@
     "website": "https://scb.oxbull.tech",
     "description": "Space Cowboy aims to be the NFT platform for digital art and assets related to the theme of Sci-Fi, Bulls and Space Meme",
     "explorer": "https://bscscan.com/token/0x0d36cc179019db9a65aa3b85db59e4bb52df0b12",
-    "research": "",
     "type": "BEP20",
     "symbol": "SCB",
     "decimals": 18,
     "status": "active",
-    "id": "0x0D36cC179019dB9A65aa3B85db59E4Bb52df0B12"
+    "id": "0x0D36cC179019dB9A65aa3B85db59E4Bb52df0B12",
+    "links": [{
+        "name": "telegram",
+        "url": "https://t.me/Oxbull_tech"
+    }, {
+        "name": "twitter",
+        "url": "https://twitter.com/OxBull5"
+    }, {
+        "name": "medium",
+        "url": "https://oxbull.medium.com/"
+    },{
+        "name": "instagram",
+        "url": "https://www.instagram.com/scb.nft/"
+    }]
 }
