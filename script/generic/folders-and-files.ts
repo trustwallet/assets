@@ -92,19 +92,15 @@ export class FoldersFiles implements ActionInterface {
                                 if (!infoExists || !logoExists) {
                                     if (!infoExists && logoExists) {
                                         const msg = `Missing info file for asset '${chain}/${address}' -- ${infoFullPath}`;
-                                        // enforce that info must be present (with some exceptions)
-                                        if (chain === 'terra') {
-                                            //console.log(msg);
-                                            warnings.push(msg);
-                                        } else {
-                                            console.log(msg);
-                                            errors.push(msg);
-                                        }
+                                        // enforce that info must be present
+                                        console.log(msg);
+                                        errors.push(msg);
                                     }
                                     if (!logoExists && infoExists) {
+                                        // logo must be present, with some exceptions
                                         const info: unknown = readJsonFile(infoFullPath);
-                                        if (!info['status'] || info['status'] !== 'spam') {
-                                            const msg = `Missing logo file for non-spam asset '${chain}/${address}' -- ${logoFullPath}`;
+                                        if (!info['status'] || !(info['status'] == 'spam' || info['status'] == 'abandoned')) {
+                                            const msg = `Missing logo file for non-spam/non-abandoned asset '${chain}/${address}' -- ${logoFullPath}`;
                                             console.log(msg);
                                             errors.push(msg);
                                         }
