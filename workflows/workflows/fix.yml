@@ -1,8 +1,13 @@
 name: Fixes
+# Runs on:
+# - on master branch of trustwallet repo: fix, checkin
+# - on other branch of trustwallet repo: fix, checkin
+# - on fork repos: fix-sanity only
 on:
   push:
-    # This runs on fork branches too
-    branches: [ '*' ]
+    branches:
+      - 'master'
+      - '*'
   workflow_dispatch:
 jobs:
   fix-all:
@@ -12,7 +17,7 @@ jobs:
         if: github.repository_owner == 'trustwallet'
         uses: actions/checkout@v2
         with:
-          token: ${{ secrets.DANGER_GITHUB_API_TOKEN }}
+          token: ${{ secrets.COMMIT_TOKEN }}
           ref: ${{ github.ref }}
       - name: Checkout (fork repo, default token)
         if: github.repository_owner != 'trustwallet'
@@ -31,7 +36,9 @@ jobs:
       - name: Run fix-sanity script (fork repo, sanity only)
         if: github.repository_owner != 'trustwallet'
         run: npm run fix-sanity
-      - name: Show fix result (diff); run 'npm run fix' locally
+      - name: Debug
+        run: echo "GITHUB_REF " $GITHUB_REF "  GITHUB_BASE_REF " $GITHUB_BASE_REF
+      - name: Show result (diff)  (run 'npm run fix' locally)
         run: |
           git status
           git diff
