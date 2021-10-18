@@ -1,22 +1,29 @@
 {
-    "name": "Shopping.io",
-    "website": "https://shopping.io",
-    "description": "Order from major hubs of commerce such as Amazon, Walmart, and eBay using your favorite cryptocurrency.",
-    "explorer": "https://etherscan.io/token/0x9B02dD390a603Add5c07f9fd9175b7DABE8D63B7",
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/shopping_io",
-            "handle": "Shopping.io"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/shoppingio",
-            "handle": "Shopping.io"
-        }
-    ],
+    "name": "Shopping.io (SPI)",
     "type": "ERC20",
     "symbol": "SPI",
     "decimals": 18,
+    "website": "https://www.shopping.io",
+    "description": "CryptoCurrency E-Commerce Platform",
+    "explorer": "https://etherscan.io/token/0x9B02dD390a603Add5c07f9fd9175b7DABE8D63B7",
     "status": "active",
-    "id": "0x9B02dD390a603Add5c07f9fd9175b7DABE8D63B7"
+    "id": "0x9B02dD390a603Add5c07f9fd9175b7DABE8D63B7",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/shopping_io"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/shoppingio"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/shopping-io"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/shopping/"
+        }
+    ]
 }
