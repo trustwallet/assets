@@ -1,19 +1,21 @@
 {
     "name": "Tradepower Dex",
     "website": "https://tradepower.io",
-    "short_description": "Frictionless Token Swap Experience. Automated liquidity pools deployment. TDEX dividends sharing program and Staking Dapp.",
     "description": "Frictionless Token Swap Experience. Automated liquidity pools deployment. TDEX dividends sharing program and Staking Dapp.",
-    "socials": [
+    "explorer": "https://etherscan.io/token/0xc5e19Fd321B9bc49b41d9a3a5ad71bcc21CC3c54",
+    "type": "ERC20",
+    "symbol": "TDEX",
+    "decimals": 18,
+    "status": "active",
+    "id": "0xc5e19Fd321B9bc49b41d9a3a5ad71bcc21CC3c54",
+    "links": [
         {
-            "name": "Twitter",
-            "url": "https://twitter.com/TradePowerToken",
-            "handle": "TradePowerToken"
+            "name": "twitter",
+            "url": "https://twitter.com/TradePowerToken"
         },
         {
-            "name": "Discord",
-            "url": "https://discord.gg/yyc6wY",
-            "handle": ""
+            "name": "discord",
+            "url": "https://discord.com/invite/yyc6wY"
         }
-    ],
-    "explorer": "hhttps://etherscan.io/token/0xc5e19Fd321B9bc49b41d9a3a5ad71bcc21CC3c54"
+    ]
 }

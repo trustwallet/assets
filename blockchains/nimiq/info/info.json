@@ -1,21 +1,28 @@
 {
     "name": "Nimiq",
     "website": "https://nimiq.com",
-    "source_code": "https://github.com/nimiq",
-    "white_paper": "https://nimiq.com/whitepaper",
-    "short_description": "Nimiq is the blockchain designed for simplicity. Nimiq aims to be the best performing and easiest-to-use decentralized payment protocol & ecosystem.",
-    "description": "Nimiq describes itself as blockchain technology inspired by Bitcoin but designed for the browser.\r\n\r\nImplemented in Rust and JavaScript, Nimiq aims to empower web developers to easily access and build on it. The project claims that only three lines of code connect any web application directly to the blockchain, making it accessible to web-based businesses and projects.\r\n\r\nNimiq reportedly does not require a third-party node to send transactions directly from the browser, which would theoretically enhance accessibility and user experience without compromising on decentralization or censorship-resistance.\r\n\r\nLearn more: https://nimiq.com/en/#onepager",
-    "socials": [
+    "description": "Nimiq is the blockchain designed for simplicity. Nimiq aims to be the best performing and easiest-to-use decentralized payment protocol & ecosystem.",
+    "explorer": "https://nimiq.watch",
+    "symbol": "NIM",
+    "type": "coin",
+    "decimals": 5,
+    "status": "active",
+    "links": [
         {
-            "name": "Twitter",
-            "url": "https://twitter.com/nimiq",
-            "handle": "nimiq"
+            "name": "github",
+            "url": "https://github.com/nimiq"
         },
         {
-            "name": "Reddit",
-            "url": "https://reddit.com/r/Nimiq",
-            "handle": "Nimiq"
+            "name": "twitter",
+            "url": "https://twitter.com/nimiq"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/Nimiq"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://nimiq.com/whitepaper"
         }
-    ],
-    "explorer": "https://nimiq.watch"
+    ]
 }
