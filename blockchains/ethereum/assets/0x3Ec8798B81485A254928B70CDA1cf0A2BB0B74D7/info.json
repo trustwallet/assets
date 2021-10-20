@@ -1,0 +1,49 @@
+{
+    "name": "Gro DAO Token (GRO)",
+    "type": "ERC20",
+    "symbol": "GRO",
+    "decimals": 18,
+    "website": "https://www.gro.xyz",
+    "description": "Gro DAO token is the governance token of Gro Protocol, which is a stablecoin yield aggregator providing leveraged yields & protected savings through risk-tranching. \n\nThe token is launched through a Balancer Liquidity Bootstrapping Pool that was completed on 1st October 2021; the total tokenholders are higher than what is shown on the contract since we have multiple staking pools (GRO/ETH, GRO/USDC, etc) to increase liquidity of the token on decentralised exchange.",
+    "explorer": "https://etherscan.io/token/0x3ec8798b81485a254928b70cda1cf0a2bb0b74d7",
+    "status": "active",
+    "id": "0x3Ec8798B81485A254928B70CDA1cf0A2BB0B74D7",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/groprotocol"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/gro_discussion"
+        },
+        {
+            "name": "telegram_news",
+            "url": "https://t.me/gro_announcements"
+        },
+        {
+            "name": "forum",
+            "url": "https://community.gro.xyz"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/gro"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/gro-dao-token"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/gro-dao-token/"
+        },
+        {
+            "name": "docs",
+            "url": "https://docs.gro.xyz"
+        },
+        {
+            "name": "medium",
+            "url": "https://groprotocol.medium.com/"
+        }
+    ]
+}
