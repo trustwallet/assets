@@ -1,11 +1,49 @@
 {
     "name": "ArdCoin",
-    "symbol": "ARDX",
     "type": "ERC20",
+    "symbol": "ARDX",
     "decimals": 2,
-    "description": "ArdCoin will serve as a blockchain-based loyalty program for all existing and future services and products of Ard Financial Group (Ard Holdings), its subsidiaries and ArdCoin merchants.",
-    "website": "https://ardcoin.com",
+    "website": "https://ardcoin.com/",
+    "description": "ArdCoin (ARDX) - is an innovative blockchain-based loyalty token that has been integrated into a mobile super wallet which is backed by an existing financial infrastructure which includes banking services, insurance provider, stock brokerage, investment banking and a pension fund.",
     "explorer": "https://etherscan.io/token/0xB8E2e2101eD11e9138803cd3e06e16dd19910647",
     "status": "active",
-    "id": "0xB8E2e2101eD11e9138803cd3e06e16dd19910647"
+    "id": "0xB8E2e2101eD11e9138803cd3e06e16dd19910647",
+    "links": [
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/ardcoin/"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/ard_coin"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/ArdCoin"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://ardcoin.com/wp-content/themes/ardcoin/file/whitepaper.pdf"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/ardcoin"
+        },
+        {
+            "name": "medium",
+            "url": "https://ardcoin.medium.com/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/ardcoin"
+        },
+        {
+            "name": "facebook",
+            "url": "https://facebook.com/ArdFinancialGroup/"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/ArdCoin/"
+        }
+    ]
 }
