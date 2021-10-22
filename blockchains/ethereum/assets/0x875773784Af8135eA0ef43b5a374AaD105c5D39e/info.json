@@ -1,11 +1,41 @@
 {
-    "name": "idle.finance",
-    "symbol": "IDLE",
-    "type": "ERC20",
     "decimals": 18,
-    "description": "The yield network for LPs & integrators, aggregating the best DeFi protocols with profit optimization and risk control",
-    "website": "https://idle.finance/",
-    "explorer": "https://etherscan.io/token/0x875773784Af8135eA0ef43b5a374AaD105c5D39e",
+    "type": "ERC20",
+    "symbol": "IDLE",
     "status": "active",
-    "id": "0x875773784Af8135eA0ef43b5a374AaD105c5D39e"
+    "name": "idle.finance",
+    "website": "https://idle.finance/",
+    "id": "0x875773784Af8135eA0ef43b5a374AaD105c5D39e",
+    "explorer": "https://etherscan.io/token/0x875773784Af8135eA0ef43b5a374AaD105c5D39e",
+    "description": "The yield network for LPs & integrators, aggregating the best DeFi protocols with profit optimization and risk control",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/Idle-Labs"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/idlefinance"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/idlefinance"
+        },
+        {
+            "name": "medium",
+            "url": "https://idlefinance.medium.com/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://www.coingecko.com/en/coins/idle"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/idle/"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.gg/mpySAJp"
+        }
+    ]
 }
