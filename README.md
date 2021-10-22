@@ -31,10 +31,10 @@ Details of the repository structure and contribution guidelines are listed on th
 Here is a quick starter summary for the most common use case.
 
 **Adding an ERC20 token checklist**:
-- [ ] Make sure your smartcontract has more than 2,500 address holders, otherwise you will be rejected
+- [ ] Make sure your smartcontract has more than 5000 address holders, otherwise you will be rejected
 - [ ] Fork the Github repository
 - [ ] Create folder with name of token smartcontact address in [_checksum format_](https://developer.trustwallet.com/add_new_asset#checksum_format) `blockchains/ethereum/assets/<token_smartcontract_address>/`.
-- [ ] Tell your designer that token image must be in PNG format, avoid transparent background, recommended size 256x256px, max. 512x512px, with max file size of 100kB, for further details read [image rules](https://developer.trustwallet.com/add_new_asset#image-requirements).
+- [ ] Tell your designer that token image must be in PNG format, preferably transparent background, recommended size 256x256px, with max file size of 100kB, for further details read [image rules](https://developer.trustwallet.com/assets/requirements).
 - [ ] Upload your logo with file named `logo.png` to previously created folder with smartcontract address, and if you done all correctly your path should look like this. `blockchains/ethereum/assets/0x1234567461d3f8Db7496581774Bd869C83D51c93/logo.png`
 - [ ] Create `info.json` file with info about the token/project
 - [ ] Create a pull request to the main repo
@@ -46,7 +46,7 @@ For details, see the [Developers site](https://developer.trustwallet.com/add_new
 
 - [Contribution guidelines](https://developer.trustwallet.com/add_new_asset#contribution-guidelines)
 
-- [Repository details](https://developer.trustwallet.com/add_new_asset#repository-details)
+- [FAQ](https://developer.trustwallet.com/assets/faq)
 
 ## Scripts
 
@@ -72,7 +72,7 @@ There are similar check logic implemeted:
 
 Info on supported trading pairs are stored in `tokenlist.json` files.
 Trading pairs can be updated --
-from Uniswap/Ethereum and Panckaswap/Smartchain -- using update script (and checking in changes).
+from Uniswap/Ethereum and PancakeSwap/Smartchain -- using update script (and checking in changes).
 Minimal limit values for trading pair inclusion are set in the `config.ts` file.
 There are also options for force-include and force-exclude in the config.
 
@@ -81,3 +81,5 @@ Trust Wallet team allows anyone to submit new assets to this repository. However
 
 Trust Wallet team will reject projects that are deemed as scam or fraudulent after careful review.
 Trust Wallet team reserves the right to change the terms of asset submissions at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.
+
+Additionally, spam-like behavior, including but not limited to mass distribution of tokens to random addresses will result in the asset being flagged as spam and possible removal from the repository.

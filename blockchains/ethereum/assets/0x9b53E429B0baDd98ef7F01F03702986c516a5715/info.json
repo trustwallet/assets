@@ -1,41 +1,34 @@
 {
     "name": "hybrix",
     "website": "https://hybrix.io",
-    "source_code": "https://github.com/hybrix-io",
-    "white_paper": "https://hybrix.io/en/docs/papers",
     "description": "Every distributed ledger and blockchain has its own strengths. The hybrix token gives access to all these benefits as it exists on top of all distributed ledger systems. The open hybrix protocol enables free transport of value between all distributed ledgers. A welcoming addition next to the possibilities of atomic swaps and decentralized exchanges.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/hybrix_io",
-            "handle": "@hybrix_io"
-        },
-        {
-            "name": "Youtube",
-            "url": "https://www.youtube.com/channel/UCGosRXmL1w7nG4TOUUFghTw",
-            "handle": "j.hybrix"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/hybrixgroup",
-            "handle": "@agent725"
-        },
-        {
-            "name": "Bitcointalk",
-            "url": "https://bitcointalk.org/index.php?topic=5230324.0",
-            "handle": "arisen725"
-        },
-        {
-            "name": "LinkedIn",
-            "url": "https://www.linkedin.com/company/hybrixio",
-            "handle": "Joachim de Koning"
-        }
-    ],
-    "explorer": "https://explorer.hybrix.io",
+    "explorer": "https://etherscan.io/token/0x9b53E429B0baDd98ef7F01F03702986c516a5715",
     "research": "https://api.hybrix.io",
     "type": "ERC20",
     "symbol": "HY",
     "decimals": 18,
     "status": "active",
-    "id": "0x9b53E429B0baDd98ef7F01F03702986c516a5715"
+    "id": "0x9b53E429B0baDd98ef7F01F03702986c516a5715",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/hybrix-io"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/@hybrix_io"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/hybrixgroup"
+        },
+        {
+            "name": "youtube",
+            "url": "https://youtube.com/channel/UCGosRXmL1w7nG4TOUUFghTw"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://hybrix.io/en/docs/papers"
+        }
+    ]
 }

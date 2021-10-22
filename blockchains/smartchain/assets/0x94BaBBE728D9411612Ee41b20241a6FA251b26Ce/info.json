@@ -1,27 +1,30 @@
 {
     "name": "GFORCE",
     "website": "https://jetfuel.finance/gforce",
-    "source_code": "https://jetfuel.finance/contracts",
     "description": "Gforce is an innovative token in the Jetfuel.Finance Ecosystem that is revolutionizing the passive yield and staking token landscape.",
     "research": "https://jetfuel-finance-1.gitbook.io/jetfuel-finance/",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/Jetfuelfinance"
-        },
-        {
-            "name": "Medium",
-            "url": "https://medium.com/@jetfuelfinance"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/jetfuelfinance"
-        }
-    ],
     "explorer": "https://bscscan.com/token/0x94BaBBE728D9411612Ee41b20241a6FA251b26Ce",
     "type": "BEP20",
     "symbol": "GFCE",
     "decimals": 9,
     "status": "active",
-    "id": "0x94BaBBE728D9411612Ee41b20241a6FA251b26Ce"
+    "id": "0x94BaBBE728D9411612Ee41b20241a6FA251b26Ce",
+    "links": [
+        {
+            "name": "source_code",
+            "url": "https://jetfuel.finance/contracts"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/Jetfuelfinance"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/jetfuelfinance"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/@jetfuelfinance"
+        }
+    ]
 }
