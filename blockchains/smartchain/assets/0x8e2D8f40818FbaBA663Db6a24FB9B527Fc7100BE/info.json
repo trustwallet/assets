@@ -27,7 +27,11 @@
         },
         {
             "name": "discord",
+<<<<<<< Updated upstream
             "url": "https://discord.com/EDP9C5EG"
+=======
+            "url": "https://discord.com/channels/881987778102034473/881987778991255625"
+>>>>>>> Stashed changes
         },
         {
             "name": "coinmarketcap",
@@ -40,6 +44,14 @@
         {
             "name": "coingecko",
             "url": "https://coingecko.com/"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://ore-system.com/wp-content/uploads/2021/09/ORE_System_White_Paper-v1.0.4.pdf"
+        },
+        {
+            "name": "source_code",
+            "url": "https://github.com/ORESystem/OREToken/"
         }
     ]
 }
