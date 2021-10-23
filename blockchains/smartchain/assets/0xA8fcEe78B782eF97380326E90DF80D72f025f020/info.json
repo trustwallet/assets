@@ -2,24 +2,24 @@
     "name": "Tacocat",
     "website": "https://tacocat.life",
     "description": "Tacocat is a community coin that builds up public involvement to establish a first of its' kind crypto lifestyle brand. Tacocat brings the energy and ideas of the crypto community to the global audience with a unique style of cross-platform engagement.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/TacoCatCrew"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://https://t.me/TacoCatCrew"
-        },
-        {
-            "name": "Reddit",
-            "url": "https://www.reddit.com/r/tacocatcrew"
-        }
-    ],
     "explorer": "https://bscscan.com/token/0xa8fcee78b782ef97380326e90df80d72f025f020",
     "type": "BEP20",
     "symbol": "TACOCAT",
     "decimals": 9,
     "status": "active",
-    "id": "0xA8fcEe78B782eF97380326E90DF80D72f025f020"
+    "id": "0xA8fcEe78B782eF97380326E90DF80D72f025f020",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/TacoCatCrew"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/TacoCatCrew"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/tacocatcrew"
+        }
+    ]
 }
