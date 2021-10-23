@@ -1,11 +1,33 @@
 {
-    "name": "Dopple Exchange Token",
+    "name": "Dopple",
     "type": "BEP20",
     "symbol": "DOPX",
     "decimals": 18,
-    "website": "https://www.dopple.finance/",
-    "description": "Dopple Exchange Token the 2nd generation of Dopple Governance Token",
-    "explorer": "https://bscscan.com/address/0x802A183ac9F6b082716DFeE55432ed0C04ACB49a",
+    "website": "https://dopple.finance/",
+    "description": "Dopple Stablecoin DeFi Ecosystem. Swap your stablecoins at the best rate. Stake your stablecoins to earn a high yield.",
+    "explorer": "https://bscscan.com/token/0x802A183ac9F6b082716DFeE55432ed0C04ACB49a",
     "status": "active",
-    "id": "0x802A183ac9F6b082716DFeE55432ed0C04ACB49a"
+    "id": "0x802A183ac9F6b082716DFeE55432ed0C04ACB49a",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/dopplefi"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/DoppleFinance/dopple-contract"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/dopplefi"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/dopple-exchange-token"
+        }
+    ]
 }
