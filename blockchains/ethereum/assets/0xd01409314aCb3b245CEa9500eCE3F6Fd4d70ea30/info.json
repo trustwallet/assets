@@ -1,0 +1,65 @@
+{
+    "name": "LTO Network",
+    "type": "ERC20",
+    "symbol": "LTO",
+    "decimals": 8,
+    "website": "https://www.ltonetwork.com/",
+    "description": "LTO Network is doing a soft swap and we would like to add the new ERC20 LTO token contract to Trust Wallet.\n\nWe'll also submit a PR to update the old contract token, so the distinction is clearer.\n\nSource: https://blog.ltonetwork.com/new-erc-20-smart-contract/",
+    "explorer": "https://etherscan.io/token/0xd01409314acb3b245cea9500ece3f6fd4d70ea30",
+    "status": "active",
+    "id": "0xd01409314aCb3b245CEa9500eCE3F6Fd4d70ea30",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/TheLTONetwork"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/ltonetwork/"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/LTOnetwork"
+        },
+        {
+            "name": "telegram_news",
+            "url": "https://t.me/ltoinfo"
+        },
+        {
+            "name": "blog",
+            "url": "https://blog.ltonetwork.com/"
+        },
+        {
+            "name": "docs",
+            "url": "https://docs.ltonetwork.com/"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.gg/EhrJVJuEBs"
+        },
+        {
+            "name": "reddit",
+            "url": "https://www.reddit.com/r/LTONetwork/"
+        },
+        {
+            "name": "facebook",
+            "url": "https://www.facebook.com/TheLTONetwork"
+        },
+        {
+            "name": "youtube",
+            "url": "https://www.youtube.com/channel/UCaHcF-xterKYTKSpY4xgKiw"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/lto-network/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://www.coingecko.com/en/coins/lto-network"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://ltonetwork.com/documents/LTO%20Network%20-%20Identities%20Paper.pdf"
+        }
+    ]
+}
