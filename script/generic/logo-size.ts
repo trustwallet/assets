@@ -42,11 +42,13 @@ async function checkDownsize(chains: string[], checkOnly: boolean): Promise<stri
         if (isPathExistsSync(assetsPath)) {
             await bluebird.mapSeries(readDirSync(assetsPath), async asset => {
                 const path = getChainAssetLogoPath(chain, asset);
-                countChecked++;
-                const [tooLarge, updated] = await checkResizeIfTooLarge(path, checkOnly);
-                if (tooLarge) { largePaths.push(path); }
-                countTooLarge += tooLarge ? 1 : 0;
-                countUpdated += updated ? 1 : 0;
+                if (isPathExistsSync(path)) {
+                    countChecked++;
+                    const [tooLarge, updated] = await checkResizeIfTooLarge(path, checkOnly);
+                    if (tooLarge) { largePaths.push(path); }
+                    countTooLarge += tooLarge ? 1 : 0;
+                    countUpdated += updated ? 1 : 0;
+                }
             })
         }
 
