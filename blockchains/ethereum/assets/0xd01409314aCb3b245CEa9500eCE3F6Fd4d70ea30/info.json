@@ -4,7 +4,7 @@
     "symbol": "LTO",
     "decimals": 8,
     "website": "https://www.ltonetwork.com/",
-    "description": "LTO Network is doing a soft swap and we would like to add the new ERC20 LTO token contract to Trust Wallet.\n\nWe'll also submit a PR to update the old contract token, so the distinction is clearer.\n\nSource: https://blog.ltonetwork.com/new-erc-20-smart-contract/",
+    "description": "LTO Network is a layer-1 platform for decentralized identities, verifiable credentials and decentralized workflow applications, while maintaining data privacy and GDPR compliance.",
     "explorer": "https://etherscan.io/token/0xd01409314acb3b245cea9500ece3f6fd4d70ea30",
     "status": "active",
     "id": "0xd01409314aCb3b245CEa9500eCE3F6Fd4d70ea30",
@@ -32,10 +32,6 @@
         {
             "name": "docs",
             "url": "https://docs.ltonetwork.com/"
-        },
-        {
-            "name": "discord",
-            "url": "https://discord.gg/EhrJVJuEBs"
         },
         {
             "name": "reddit",
