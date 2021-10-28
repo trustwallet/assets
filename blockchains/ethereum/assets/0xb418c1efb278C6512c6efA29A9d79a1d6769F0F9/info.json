@@ -1,9 +1,9 @@
 {
     "name": "CAMPONG COIN",
-    "website": "https://coin.campong.co.th",
+    "website": "https://campong.co.th",
     "description": "CAMPONG COIN (CC) Stay is now jump to future with innovative.",
     "explorer": "https://bscscan.com/token/0xb418c1efb278C6512c6efA29A9d79a1d6769F0F9",
-    "type": "ERC20",
+    "type": "BEP20",
     "symbol": "CC",
     "decimals": 18,
     "status": "active",
@@ -24,6 +24,6 @@
         {
             "name": "coingecko",
             "url": "https://coingecko.com/en/coins/campongcoin/"
-        }
+        },
     ]
 }
