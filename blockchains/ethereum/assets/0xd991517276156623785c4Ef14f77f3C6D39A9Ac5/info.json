@@ -1,5 +1,5 @@
 {
-  "name": "PontoonToken",
+  "name": "ToonToken",
   "website": "https://pontoon.fi/",
   "source_code": "https://github.com/pontoonfi",
   "description": "Cross-chain liquidity mirror protocol",
@@ -20,8 +20,8 @@
           "handle": "pontoonfi"
       }
   ],
-  "explorer": "https://bscscan.com/token/0xaeE433ADeBe0FBB88dAa47eF0C1A513CaA52EF02",
-  "type": "BEP20",
+  "explorer": "https://etherscan.com/token/0xaeE433ADeBe0FBB88dAa47eF0C1A513CaA52EF02",
+  "type": "ERC20",
   "symbol": "TOON",
   "decimals": 18,
   "status": "active",
