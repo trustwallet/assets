@@ -265,7 +265,7 @@ export function explorerUrl(chain: string, contract: string): string {
                 return `https://explorer.solana.com/address/${contract}`;
 
             case CoinType.name(CoinType.tomochain).toLowerCase():
-                return `https://scan.tomochain.com/address/${contract}`;
+                return `https://tomoscan.io/address/${contract}`;
 
             case CoinType.name(CoinType.kava).toLowerCase():
                 return "https://www.mintscan.io/kava";
