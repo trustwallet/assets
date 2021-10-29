@@ -43,5 +43,50 @@
         "payout": {
             "commission": 100
         }
+    },
+    {
+        "id": "TWkpg1ZQ4fTv7sj41zBUTMo1kuJEUWTere",
+        "name": "TRONLink",
+        "description": "TronLink, similar to MetaMask, is a bridge for allowing TRON DApps to run in the browser without having to deploy a TRON Full Node",
+        "website": "https://tronlink.org/",
+        "payout": {
+            "commission": 20
+        }
+    },
+    {
+        "id": "TCEo1hMAdaJrQmvnGTCcGT2LqrGU4N7Jqf",
+        "name": "TRONScan",
+        "description": "TRON is an ambitious project dedicated to the establishment of a truly decentralized Internet and its infrastructure.",
+        "website": "https://tronscan.org/",
+        "payout": {
+            "commission": 20
+        }
+    },
+    {
+        "id": "TUD4YXYdj2t1gP5th3A7t97mx1AUmrrQRt",
+        "name": "TRONGrid",
+        "description": "TronGrid offers an easy to use hosted API, load balanced full nodes, secure and reliable developer tools with direct access to the TRON Network.",
+        "website": "https://trongrid.io/",
+        "payout": {
+            "commission": 20
+        }
+    },
+    {
+        "id": "TSNbzxac4WhxN91XvaUfPTKP2jNT18mP6T",
+        "name": "BitTorrent",
+        "description": "The world's biggest distributed network, powered by BTT.",
+        "website": "https://bittorrent.com/",
+        "payout": {
+            "commission": 20
+        }
+    },
+    {
+        "id": "TJvaAeFb8Lykt9RQcVyyTFN2iDvGMuyD4M",
+        "name": "Poloniex",
+        "description": "Poloniex Futures provides both REST APIs and Websocket Feeds for interacting with our futures exchange.",
+        "website": "https://poloniex.com/",
+        "payout": {
+            "commission": 0
+        }
     }
 ]
