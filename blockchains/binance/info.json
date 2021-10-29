@@ -1,3 +1,4 @@
+{
   "name": "Next token",
   "website": "https://nxt-token.com/",
   "description": "Connect companies to influencers.",
@@ -6,5 +7,29 @@
   "symbol": "NXT",
   "decimals": 18,
   "status": "active",
-  "id": "0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56" 
+  "id": "0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56"
+  "tags": [
+        "utility-token"
+    ],
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/NXTtoken"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/token_next"        },
+        {
+            "name": "coingecko",
+            "url": "https://www.coingecko.com/fr/pi%C3%A8ces/next-token"
+        },
+        {
+            "name": "reddit",
+            "url": "https://www.reddit.com/user/NextTokenOfficial"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://nxt-token.com/en/white-paper"
+        }
+    ]
 }
