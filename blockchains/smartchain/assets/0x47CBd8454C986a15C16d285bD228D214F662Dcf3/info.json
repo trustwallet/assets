@@ -1,11 +1,37 @@
 {
-	"name": "MGT Token",
-    "website": "https://moongame.io/token/index",
-    "description": "MGT is a stablecoin issued by MoonGame in partnership with Binance.",
-    "explorer": "https://bscscan.com/token/0x47CBd8454C986a15C16d285bD228D214F662Dcf3",
+    "name": "MoonGame",
     "type": "BEP20",
     "symbol": "MGT",
     "decimals": 18,
+    "website": "https://moongame.io/",
+    "description": "MGT is a stablecoin issued by MoonGame in partnership with Binance",
+    "explorer": "https://bscscan.com/token/0x47CBd8454C986a15C16d285bD228D214F662Dcf3",
     "status": "active",
-    "id": "0x47CBd8454C986a15C16d285bD228D214F662Dcf3"
+    "id": "0x47CBd8454C986a15C16d285bD228D214F662Dcf3",
+    "links": [
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/moongame/"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/MoonGame_io"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/moongame_io"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://moongame.io/pdf/moongame.pdf"
+        },
+        {
+            "name": "docs",
+            "url": "https://docs.moongame.io/"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/MOONGAMEToken/MoonGame"
+        }
+    ]
 }
