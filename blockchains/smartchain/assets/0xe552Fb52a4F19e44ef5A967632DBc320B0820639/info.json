@@ -1,11 +1,53 @@
 {
     "name": "Metis Token",
-    "symbol": "METIS",
+    "symbol": "Metis",
     "type": "BEP20",
     "decimals": 18,
     "description": "Metis Token is the utility token used in the Metis Layer2 ecosystem",
     "website": "https://www.metis.io",
     "explorer": "https://bscscan.com/token/0xe552Fb52a4F19e44ef5A967632DBc320B0820639",
     "status": "active",
-    "id": "0xe552Fb52a4F19e44ef5A967632DBc320B0820639"
+    "id": "0xe552Fb52a4F19e44ef5A967632DBc320B0820639",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/MetisProtocol"
+        },
+	{
+            "name": "whitepaper",
+	    "url": "https://drive.google.com/file/d/1LS7CmKFt-FkfVXxSNu06hNgoZXxMzTC-/view"
+	},
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/MetisDAO"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/MetisDAO"
+        },
+        {
+            "name": "medium",
+            "url": "https://metisdao.medium.com"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/MetisDAO"
+        },
+        {
+            "name": "youtube",
+            "url": "https://youtube.com/MetisDAO"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/metisdao"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://www.coingecko.com/en/coins/metis-token"
+        },
+        {
+            "name": "docs",
+            "url": "https://docs.metis.io"
+        }
+    ]
 }
