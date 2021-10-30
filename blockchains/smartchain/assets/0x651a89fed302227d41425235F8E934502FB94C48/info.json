@@ -1,41 +1,40 @@
-{   
-    "name": "ADACash",
-    "links": "https://adacash.io",
-    "description": "A revolutionary new token that earns you 10% ADA reflections just for holding",
-    "explorer": "https://bscscan.com/token/0x651a89fed302227d41425235F8E934502FB94C48",
-    "type": "BEP20",
-    "symbol": "ADACash",
-    "decimals": 18,
-    "status": "active",
-    "id": "0x651a89fed302227d41425235F8E934502FB94C48",
-    "links": [
+{
+  "name": "ADACash",
+  "links": [
     {
-     "name":"whitepaper",
-     "link":"https://adacash.io/whitepaper"
+      "name": "whitepaper",
+      "link": "https://adacash.io/whitepaper"
     },
     {
-     "name":"twitter",
-     "link":"https://twitter.com/adacashbsc"
+      "name": "twitter",
+      "link": "https://twitter.com/adacashbsc"
     },
     {
-     "name":"telegram",
-     "link":"https://t.me/adacashtoken"
+      "name": "telegram",
+      "link": "https://t.me/adacashtoken"
     },
     {
-     "name":"reddit",
-     "link":"https://www.reddit.com/r/adacash/"
+      "name": "reddit",
+      "link": "https://www.reddit.com/r/adacash/"
     },
     {
-     "name":"youtube",
-     "link":"https://youtube.com/channel/UCNxEz6I44_y8oThFvakyYpA"
+      "name": "youtube",
+      "link": "https://youtube.com/channel/UCNxEz6I44_y8oThFvakyYpA"
     },
     {
-     "name":"coinmarketcap",
-     "link":"https://coinmarketcap.com/currencies/adacash/"
+      "name": "coinmarketcap",
+      "link": "https://coinmarketcap.com/currencies/adacash/"
     },
     {
-     "name":"coingecko",
-     "link":"https://www.coingecko.com/en/coins/adacash"
+      "name": "coingecko",
+      "link": "https://www.coingecko.com/en/coins/adacash"
     }
-]
+  ],
+  "description": "A revolutionary new token that earns you 10% ADA reflections just for holding",
+  "explorer": "https://bscscan.com/token/0x651a89fed302227d41425235F8E934502FB94C48",
+  "type": "BEP20",
+  "symbol": "ADACash",
+  "decimals": 18,
+  "status": "active",
+  "id": "0x651a89fed302227d41425235F8E934502FB94C48"
 }
