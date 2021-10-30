@@ -1,6 +1,13 @@
 {
   "name": "ADACash",
   "website":"https://adacash.io",
+  "description": "A revolutionary new token that earns you 10% ADA reflections just for holding",
+  "explorer": "https://bscscan.com/token/0x651a89fed302227d41425235F8E934502FB94C48",
+  "type": "BEP20",
+  "symbol": "ADACash",
+  "decimals": 18,
+  "status": "active",
+  "id": "0x651a89fed302227d41425235F8E934502FB94C48",
   "links": [
     {
       "name": "whitepaper",
@@ -30,12 +37,5 @@
       "name": "coingecko",
       "url": "https://coingecko.com/en/coins/adacash"
     }
-  ],
-  "description": "A revolutionary new token that earns you 10% ADA reflections just for holding",
-  "explorer": "https://bscscan.com/token/0x651a89fed302227d41425235F8E934502FB94C48",
-  "type": "BEP20",
-  "symbol": "ADACash",
-  "decimals": 18,
-  "status": "active",
-  "id": "0x651a89fed302227d41425235F8E934502FB94C48"
+  ]
 }
