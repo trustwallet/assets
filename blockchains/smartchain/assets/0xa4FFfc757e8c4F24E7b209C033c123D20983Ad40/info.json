@@ -1,5 +1,5 @@
 {
-    "name": "Hoge",
+    "name": "Hoge Finance (HOGE)",
     "type": "BEP20",
     "symbol": "HOGE",
     "decimals": 9,
@@ -12,6 +12,10 @@
         {
             "name": "reddit",
             "url": "https://reddit.com/r/hoge"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://gateway.pinata.cloud/ipfs/QmaE6HF2qossgWhbbFQ39u3PQAYjEfW1Atb1VnAbL4B4jp"
         },
         {
             "name": "discord",
@@ -27,11 +31,11 @@
         },
         {
             "name": "coinmarketcap",
-            "url": "https://coinmarketcap.com/currencies/hoge-finance"
+            "url": "https://coinmarketcap.com/hoge-finance"
         },
         {
             "name": "coingecko",
-            "url": "https://coingecko.com/en/coins/hoge-finance"
+            "url": "https://coingecko.com/hoge-finance"
         }
     ]
 }
