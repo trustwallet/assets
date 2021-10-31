@@ -1,17 +1,21 @@
 {
-    "name": "HOGE",
-    "website": "https://hogefinance.com",
-    "description": "We Meme Business.",
-    "explorer": "https://polygonscan.com/token/0x58c1BBb508e96CfEC1787Acf6Afe1C7008A5B064",
+    "name": "Hoge Finance (HOGE)",
     "type": "POLYGON",
     "symbol": "HOGE",
     "decimals": 9,
+    "website": "https://hogefinance.com",
+    "description": "We Meme Business",
+    "explorer": "https://polygonscan.com/token/0x58c1BBb508e96CfEC1787Acf6Afe1C7008A5B064",
     "status": "active",
     "id": "0x58c1BBb508e96CfEC1787Acf6Afe1C7008A5B064",
     "links": [
         {
             "name": "reddit",
             "url": "https://reddit.com/r/hoge"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://gateway.pinata.cloud/ipfs/QmaE6HF2qossgWhbbFQ39u3PQAYjEfW1Atb1VnAbL4B4jp"
         },
         {
             "name": "discord",
@@ -27,11 +31,11 @@
         },
         {
             "name": "coinmarketcap",
-            "url": "https://coinmarketcap.com/currencies/hoge-finance"
+            "url": "https://coinmarketcap.com/hoge-finance"
         },
         {
             "name": "coingecko",
-            "url": "https://coingecko.com/en/coins/hoge-finance"
+            "url": "https://coingecko.com/hoge-finance"
         }
     ]
 }
