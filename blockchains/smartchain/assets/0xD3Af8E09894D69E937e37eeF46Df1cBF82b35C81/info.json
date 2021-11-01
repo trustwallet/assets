@@ -1,6 +1,6 @@
 {
     "name": "NanoDogeCoin",
-    "website": "https://www.nanodogecoin.com/",
+    "website": "https://indc.app/",
     "description": "NanoDogeCoin (INDC) is the revolutionary token that allows investors to earn USD Tether while helping to save dogs worldwide.",
     "explorer": "https://bscscan.com/token/0xd3af8e09894d69e937e37eef46df1cbf82b35c81",
     "type": "BEP20",
@@ -15,11 +15,15 @@
         },
         {
             "name": "twitter",
-            "url": "https://twitter.com/nanodogecoinbsc"
+            "url": "https://twitter.com/nanoindc"
         },
         {
             "name": "coingecko",
             "url": "https://coingecko.com/en/coins/nano-dogecoin"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/nano-dogecoin/"
         },
         {
             "name": "medium",
