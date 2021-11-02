@@ -1,11 +1,11 @@
 {
-    "name": "HOGE",
-    "website": "https://hogefinance.com",
-    "description": "We Meme Business.",
-    "explorer": "https://etherscan.io/token/0xfAd45E47083e4607302aa43c65fB3106F1cd7607",
+    "name": "Hoge",
     "type": "ERC20",
     "symbol": "HOGE",
     "decimals": 9,
+    "website": "https://hogefinance.com",
+    "description": "We Meme Business",
+    "explorer": "https://etherscan.io/token/0xfAd45E47083e4607302aa43c65fB3106F1cd7607",
     "status": "active",
     "id": "0xfAd45E47083e4607302aa43c65fB3106F1cd7607",
     "links": [
@@ -18,6 +18,10 @@
             "url": "https://discord.com/invite/hoge"
         },
         {
+            "name": "whitepaper",
+            "url": "https://gateway.pinata.cloud/ipfs/QmaE6HF2qossgWhbbFQ39u3PQAYjEfW1Atb1VnAbL4B4jp"
+        },
+        {
             "name": "twitter",
             "url": "https://twitter.com/hogefinance"
         },
@@ -27,11 +31,11 @@
         },
         {
             "name": "coinmarketcap",
-            "url": "https://coinmarketcap.com/currencies/hoge-finance"
+            "url": "https://coinmarketcap.com/hoge-finance"
         },
         {
             "name": "coingecko",
-            "url": "https://coingecko.com/en/coins/hoge-finance"
+            "url": "https://coingecko.com/hoge-finance"
         }
     ]
 }
