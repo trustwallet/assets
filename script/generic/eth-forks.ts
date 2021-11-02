@@ -56,6 +56,10 @@ export class EthForks implements ActionInterface {
                     check: async () => {
                         const errors: string[] = [];
                         const assetsFolder = getChainAssetsPath(chain);
+                        if (!isPathExistsSync(assetsFolder)) {
+                            console.log(`     Found 0 assets for chain ${chain}`);
+                            return [errors, []];
+                        }
                         const assetsList = getChainAssetsList(chain);
                         console.log(`     Found ${assetsList.length} assets for chain ${chain}`);
                         await bluebird.each(assetsList, async (address) => {
