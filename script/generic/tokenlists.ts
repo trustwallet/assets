@@ -5,6 +5,7 @@ import { diff } from "jsondiffpatch";
 import { tokenInfoFromTwApi, TokenTwInfo } from "../generic/asset";
 import {
     getChainAssetLogoPath,
+    getChainAllowlistPath,
     getChainTokenlistPath,
 } from "../generic/repo-structure";
 import * as bluebird from "bluebird";
@@ -244,10 +245,14 @@ function addPairToToken(pairToken: TokenItem, token: TokenItem, list: List): voi
     tokenInList.pairs.push(new Pair(pairToken.asset));
 }
 
-function checkTokenExists(id: string, chainName: string): boolean {
+function checkTokenExists(id: string, chainName: string, tokenAllowlist: string[]): boolean {
     const logoPath = getChainAssetLogoPath(chainName, id);
     if (!isPathExistsSync(logoPath)) {
         //console.log("logo file missing", logoPath);
+        return false;
+    }
+    if (tokenAllowlist.find(t => (id.toLowerCase() === t.toLowerCase())) === undefined) {
+        //console.log(`Token not found in allowlist, ${id}`);
         return false;
     }
     return true;
@@ -305,14 +310,15 @@ export async function rebuildTokenlist(chainName: string, pairs: [TokenItem, Tok
     
     const excludeList = parseForceList(forceExcludeList);
     // filter out pairs with missing and excluded tokens
-    // prepare phase
+    // prepare phase, read allowlist
+    const allowlist: string[] = readJsonFile(getChainAllowlistPath(chainName)) as string[];
     const pairs2: [TokenItem, TokenItem][] = [];
     pairs.forEach(p => {
-        if (!checkTokenExists(p[0].address, chainName)) {
+        if (!checkTokenExists(p[0].address, chainName, allowlist)) {
             console.log("pair with unsupported 1st coin:", p[0].symbol, "--", p[1].symbol);
             return;
         }
-        if (!checkTokenExists(p[1].address, chainName)) {
+        if (!checkTokenExists(p[1].address, chainName, allowlist)) {
             console.log("pair with unsupported 2nd coin:", p[0].symbol, "--", p[1].symbol);
             return;
         }
