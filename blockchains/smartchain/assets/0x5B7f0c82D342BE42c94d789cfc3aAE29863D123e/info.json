@@ -1,11 +1,37 @@
-{	
-	"name": "Beeuda",
-    "website": "https://beeuda.com",
-    "description": "Beeuda is a unique cryptocurrency project, focussing on Building Eco-friendly and Road safe Trucks. This is inspired by the EU's target to cut truck CO2 and boost zero-emission truck sales.",
-    "explorer": "https://bscscan.com/token/0x5B7f0c82D342BE42c94d789cfc3aAE29863D123e",
+{
+    "name": "Beeuda",
     "type": "BEP20",
     "symbol": "BDA",
     "decimals": 8,
+    "website": "https://www.beeuda.com/",
+    "description": "Beeuda is a unique cryptocurrency project leveraging the power of blockchain technology to build and promote eco-friendly and road safe trucks. With community participation and prospective technical partners, we hope to integrate blockchain technology into the truck building. Beeuda project is inspired by the EU target to cut truck CO2 and boost zero-emission truck sales.\n",
+    "explorer": "https://bscscan.com/token/0x5B7f0c82D342BE42c94d789cfc3aAE29863D123e",
     "status": "active",
-    "id": "0x5B7f0c82D342BE42c94d789cfc3aAE29863D123e"
+    "id": "0x5B7f0c82D342BE42c94d789cfc3aAE29863D123e",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/BeeudaTruck"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/beeudagroup"
+        },
+        {
+            "name": "telegram_news",
+            "url": "https://t.me/beeuda"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/beeuda/"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/@beeudatruck"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/beeuda/beeuda/"
+        }
+    ]
 }
