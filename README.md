@@ -63,8 +63,8 @@ There are several scripts available for maintainers:
 
 ## On Checks
 
-This repo contais a set of scripts for verification of all the information.  Implemented as Typescript scripts, available through `npm run check`, and executed in CI build; checks the whole repo.
-There are similar check logic implemeted:
+This repo contains a set of scripts for verification of all the information.  Implemented as Typescript scripts, available through `npm run check`, and executed in CI build; checks the whole repo.
+There are similar check logic implemented:
 - in assets-management app; for checking changed token files in PRs, or when creating a PR.  Implemented as a Typescript library, checks diffs, can be run from browser environment.
 - in merge-fee-bot, which runs as a GitHub app shows result in PR comment.  Also uses library, but executes in a non-browser environment.
 
