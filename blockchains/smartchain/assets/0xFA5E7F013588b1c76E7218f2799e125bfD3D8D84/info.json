@@ -1,11 +1,25 @@
 {
     "name": "Galaxy Warriors Token",
-    "website": "https://galaxywarriors.io",
-    "description": "Galaxy Warriors Token is the Reward token for the Galaxy Warriors blockchain game.",
-    "explorer": "https://bscscan.com/token/0xFA5E7F013588b1c76E7218f2799e125bfD3D8D84",
     "type": "BEP20",
     "symbol": "GWT",
     "decimals": 18,
+    "website": "https://galaxywarriors.io/",
+    "description": "Galaxy Warriors Token is the Reward Token for the Galaxy Warriors blockchain game.",
+    "explorer": "https://bscscan.com/token/0xFA5E7F013588b1c76E7218f2799e125bfD3D8D84",
     "status": "active",
-    "id": "0xFA5E7F013588b1c76E7218f2799e125bfD3D8D84"
+    "id": "0xFA5E7F013588b1c76E7218f2799e125bfD3D8D841",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/_GalaxyWarriors"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/GalaxyWarriorsGame"
+        },
+        {
+            "name": "reddit",
+            "url": "https://www.reddit.com/r/GalaxyWarriors/"
+        }
+    ]
 }
