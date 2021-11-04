@@ -1,10 +1,21 @@
-{ "name": "MousePad Token",
-    "website": "https://mpadexchange.com",
-    "description": "MousePad token is a cryptocurrency that is used primarily to pay transaction and trading fees on the MousePad exchange.",
-    "explorer": "https://bscscan.com/token/0x0504dcddef1ba1f18d44a0149d8b5524c9c5946d",
+{
+    "name": "MousePad",
     "type": "BEP20",
     "symbol": "MPAD",
     "decimals": 18,
+    "website": "https://mpadexchange.com",
+    "description": "Mousepad is the native token for the exchange MousePad Global",
+    "explorer": "https://bscscan.com/token/0x0504DCdDeF1bA1F18D44A0149d8B5524c9C5946D",
     "status": "active",
-    "id": "0x0504dcddef1ba1f18d44a0149d8b5524c9c5946d"
+    "id": "0x0504DCdDeF1bA1F18D44A0149d8B5524c9C5946D",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/mpadexchange"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/MPadOfficial"
+        }
+    ]
 }
