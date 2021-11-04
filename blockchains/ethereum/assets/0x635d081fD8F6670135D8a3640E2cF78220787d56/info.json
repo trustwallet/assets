@@ -1,11 +1,17 @@
 {
-  "name": "ADD.xyz",
-  "symbol": "ADD",
-  "type": "ERC20",
-  "decimals": 18,
-  "description": "ADD.xyz is a full-stack DeFi aggregator, plugging in multiple products and DeFi applications into one single platform, focusing on User Experience, Design, Privacy and Anonymity.",
-  "website": "https://ADD.xyz",
-  "explorer": "https://etherscan.io/token/0x635d081fd8f6670135d8a3640e2cf78220787d56",
-  "status": "active",
-  "id": "0x635d081fD8F6670135D8a3640E2cF78220787d56"
+    "name": "ADD.xyz",
+    "type": "ERC20",
+    "symbol": "ADD",
+    "decimals": 18,
+    "website": "https://Add.xyz",
+    "description": "ADD.xyz is a full-stack DeFi aggregator, plugging in multiple products and DeFi applications into one single platform, focusing on User Experience, Design, Privacy and Anonymity.",
+    "explorer": "https://etherscan.io/token/0x635d081fD8F6670135D8a3640E2cF7822077d87d56",
+    "status": "active",
+    "id": "0x635d081fD8F6670135D8a3640E2cF78220787d56",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/adddotxyz"
+        }
+    ]
 }
