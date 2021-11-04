@@ -183,6 +183,9 @@
                 },
                 {
                     "base": "c20000714_t0xF952Fc3ca7325Cc27D15885d37117676d25BfdA6"
+                },
+                {
+                    "base": "c20000714_t0xcA52cBc6bCaCD69b2ec61F46F4Fe2bCA8Ecd73D5"
                 }
             ]
         },
@@ -328,6 +331,16 @@
             "symbol": "SPG",
             "decimals": 9,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0x3aabCf53A1930A42E18D938C019E83Ebee50a849/logo.png",
+            "pairs": []
+        },        
+        {
+            "asset": "c20000714_t0x0xcA52cBc6bCaCD69b2ec61F46F4Fe2bCA8Ecd73D5",
+            "type": "BEP20",
+            "address": "0xcA52cBc6bCaCD69b2ec61F46F4Fe2bCA8Ecd73D5",
+            "name": "Ninjacoin",
+            "symbol": "NINJA",
+            "decimals": 8,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0xcA52cBc6bCaCD69b2ec61F46F4Fe2bCA8Ecd73D5/logo.png",
             "pairs": []
         },
         {
