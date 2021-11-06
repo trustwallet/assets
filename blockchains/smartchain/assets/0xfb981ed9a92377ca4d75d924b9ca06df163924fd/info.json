@@ -2,13 +2,17 @@
     "name": "Superalgos",
     "website": "https://superalgos.org/",
     "description": "Superalgos is pioneering the Decentralized Trading space building the first Open Trading Intelligence Network. The Superalgos (SA) token incentivizes contributions of code, trading intelligence, and project development. You may use it to gain priority access to trading signals in the Superalgos Network and to participate in project governance.",
-    "explorer": "https://bscscan.com/token/0xfb981ed9a92377ca4d75d924b9ca06df163924fE",
+    "explorer": "https://bscscan.com/token/0xFB981ED9A92377CA4d75D924b9CA06df163924fd",
     "type": "BEP20",
     "symbol": "SA",
     "decimals": 18,
     "status": "active",
-    "id": "0xfb981ed9a92377ca4d75d924b9ca06df163924fd",
+    "id": "0xFB981ED9A92377CA4d75D924b9CA06df163924fd",
     "links": [
+        {
+            "name": "telegram_news",
+            "url": "https://t.me/superalgos"
+        },
         {
             "name": "telegram",
             "url": "https://t.me/superalgoscommunity"
@@ -18,8 +22,16 @@
             "url": "https://discord.com/invite/CGeKC6WQQb"
         },
         {
+            "name": "forum",
+            "url": "https://forum.superalgos.org"
+        },
+        {
             "name": "twitter",
             "url": "https://twitter.com/superalgos"
+        },
+        {
+            "name": "blog",
+            "url": "https://medium.com/superalgos"
         },
         {
             "name": "medium",
@@ -36,6 +48,14 @@
         {
             "name": "reddit",
             "url": "https://www.reddit.com/r/Superalgos/"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/Superalgos/"
+        },
+        {
+            "name": "source_code",
+            "url": "https://github.com/Superalgos/"
         },
         {
             "name": "nomics",
