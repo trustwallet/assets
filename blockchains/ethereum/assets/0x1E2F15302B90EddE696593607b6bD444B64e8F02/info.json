@@ -1,11 +1,21 @@
 {
     "name": "Shiryo-Inu",
-    "symbol": "SHIRYO-INU",
     "type": "ERC20",
+    "symbol": "SHIRYO-INU",
     "decimals": 9,
-    "description": "-",
-    "website": "https://www.shiryoinu.com/",
-    "explorer": "https://etherscan.io/token/0x1E2F15302B90EddE696593607b6bD444B64e8F02",
+    "website": "https://shiryoinu.com",
+    "description": "Shiryo-Inu is an NFT card game built on the Ethereum block chain. ",
+    "explorer": "https://etherscan.io/address/0x1E2F15302B90EddE696593607b6bD444B64e8F02",
     "status": "active",
-    "id": "0x1E2F15302B90EddE696593607b6bD444B64e8F02"
+    "id": "0x1E2F15302B90EddE696593607b6bD444B64e8F02",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/shiryoinu"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/shiryoinu"
+        }
+    ]
 }
