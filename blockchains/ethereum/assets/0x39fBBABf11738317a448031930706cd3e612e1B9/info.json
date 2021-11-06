@@ -2,10 +2,28 @@
     "name": "Wrapped XRP",
     "website": "https://www.wrapped.com",
     "description": "Wrapped XRP is a 1:1 equivalent of XRP on the Ethereum network",
-    "explorer": "https://etherscan.io/address/0x39fBBABf11738317a448031930706cd3e612e1B9",
+    "explorer": "https://etherscan.io/token/0x39fBBABf11738317a448031930706cd3e612e1B9",
     "type": "ERC20",
     "symbol": "WXRP",
     "decimals": 18,
     "status": "active",
-    "id": "0x39fBBABf11738317a448031930706cd3e612e1B9"
+    "id": "0x39fBBABf11738317a448031930706cd3e612e1B9",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/wrappedfi"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/wrappedfi"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/wrapped"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/wrappedfi"
+        }
+    ]
 }
