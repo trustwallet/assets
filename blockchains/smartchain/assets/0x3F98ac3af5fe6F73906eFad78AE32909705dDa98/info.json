@@ -1,11 +1,21 @@
 {
     "name": "BEAVER INU",
-    "website": "https://www.beaverinu.com",
-    "description": "Meme Coin - Let the beavers reach mars before the dogs!",
-    "explorer": "https://bscscan.com/token/0x3F98ac3af5fe6F73906eFad78AE32909705dDa98",
     "type": "BEP20",
     "symbol": "BEAVER",
     "decimals": 18,
+    "website": "https://www.beaverinu.com",
+    "description": "Meme Coin - Let the beavers reach mars before the dogs!",
+    "explorer": "https://bscscan.com/token/0x3F98ac3af5fe6F73906eFad78AE32909705dDa98",
     "status": "active",
-    "id": "0x3F98ac3af5fe6F73906eFad78AE32909705dDa98"
+    "id": "0x3F98ac3af5fe6F73906eFad78AE32909705dDa98",
+    "links": [
+        {
+            "name": "source_code",
+            "url": "https://bscscan.com/address/0x3f98ac3af5fe6f73906efad78ae32909705dda98#code"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/Beaver_Inu"
+        }
+    ]
 }
