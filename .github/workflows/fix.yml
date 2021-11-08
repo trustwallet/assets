@@ -1,0 +1,55 @@
+name: Fixes
+# Runs on:
+# - on master branch of trustwallet repo: fix, checkin
+# - on other branch of trustwallet repo: fix, checkin
+# - on fork repos: fix-sanity only
+on:
+  push:
+    branches:
+      - 'master'
+      - '*'
+  workflow_dispatch:
+jobs:
+  fix-all:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout (trustwallet repo, secret token)
+        if: github.repository_owner == 'trustwallet'
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.COMMIT_TOKEN }}
+          ref: ${{ github.ref }}
+      - name: Checkout (fork repo, default token)
+        if: github.repository_owner != 'trustwallet'
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          ref: ${{ github.ref }}
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - name: Install Dependencies
+        run: npm ci
+      - name: Run fix script (trustwallet repo, sanity and consistency)
+        if: github.repository_owner == 'trustwallet'
+        run: npm run fix
+      - name: Run fix-sanity script (fork repo, sanity only)
+        if: github.repository_owner != 'trustwallet'
+        run: npm run fix-sanity
+      - name: Debug
+        run: echo "GITHUB_REF " $GITHUB_REF "  GITHUB_BASE_REF " $GITHUB_BASE_REF
+      - name: Show result (diff)  (run 'npm run fix' locally)
+        run: |
+          git status
+          git diff
+      - name: Run check
+        run: npm run check
+      - name: Run test
+        run: npm t
+      - name: Commit changes
+        if: success()
+        uses: stefanzweifel/git-auto-commit-action@v4.1.2
+        with:
+          commit_user_name: trust-wallet-merge-bot
+          commit_user_email: mergebot@trustwallet.com
+          commit_message: Fixes (sanity and consistency, auto)
