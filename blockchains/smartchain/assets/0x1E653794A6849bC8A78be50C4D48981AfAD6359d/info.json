@@ -3,6 +3,11 @@
     "website": "https://adaboytoken.com",
     "description": "ADABoy is a fully audited BEP-20 token that rewards its holders in Binance-PEG Cardano. ADABoy is the creator of CryptoMatch (cryptomatch.app) which is the \"Tinder for Crypto\". CryptoMatch allows users to do research on projects by just swiping left or right making research fun and interactive at the same time.",
     "explorer": "https://bscscan.com/token/0x1e653794a6849bc8a78be50c4d48981afad6359d",
+    "type": "BEP20",
+    "symbol": "ADABoy",
+    "decimals": 18,
+    "status": "active",
+    "id": "0x1E653794A6849bC8A78be50C4D48981AfAD6359d",
 "links": [
     {
         "name": "twitter",
@@ -40,10 +45,5 @@
 	"name": "source_code",
 	"url": "https://github.com/RealADABoy/Contracts/tree/main/ADABoy"
     }
-      ],
-    "type": "BEP20",
-    "symbol": "ADABoy",
-    "decimals": 18,
-    "status": "active",
-    "id": "0x1E653794A6849bC8A78be50C4D48981AfAD6359d"
+      ]
 }
