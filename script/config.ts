@@ -30,8 +30,8 @@ export const PancakeSwap_MinVol24 = 500000;
 export const PancakeSwap_MinTxCount24 = 288;
 
 // Force include & exclude config: list of token symbols, or symbol pairs (e.g. ["BAT", "YFI-WETH"]).
-export const Uniswap_ForceInclude: string[] = ["TUSD", "STAKE", "YFI", "BAT", "MANA", "1INCH", "REP", "KP3R", "UNI", "WBTC", "HEX", "CREAM", "SLP", "REN", "XOR", "Link", "sUSD", "HEGIC", "RLC", "DAI", "SUSHI", "FYZ", "DYT", "AAVE", "LEND", "UBT", "DIA", "RSR", "SXP", "OCEAN", "MKR", "USDC", "CEL", "BAL", "BAND", "COMP", "SNX", "OMG", "AMPL", "USDT", "KNC", "ZRX", "AXS", "ENJ", "STMX"];
-export const Uniswap_ForceExclude: string[] = [];
+export const Uniswap_ForceInclude: string[] = ["TUSD", "STAKE", "YFI", "BAT", "MANA", "1INCH", "REP", "KP3R", "UNI", "WBTC", "HEX", "CREAM", "SLP", "REN", "XOR", "Link", "sUSD", "HEGIC", "RLC", "DAI", "SUSHI", "FYZ", "DYT", "AAVE", "LEND", "UBT", "DIA", "RSR", "SXP", "OCEAN", "MKR", "USDC", "CEL", "BAL", "BAND", "COMP", "SNX", "OMG", "AMPL", "USDT", "KNC", "ZRX", "AXS", "ENJ", "STMX", "DPX", "FTT", "DPI", "PAX"];
+export const Uniswap_ForceExclude: string[] = ["STARL", "UFO"];
 export const Uniswap_TradingPairsUrl = "https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v2"; // see https://thegraph.com/explorer/subgraph/uniswap/uniswap-v2
 export const Uniswap_TradingPairsQuery = `
     query pairs {

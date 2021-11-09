@@ -1,7 +1,7 @@
 {
     "name": "Trust Wallet: Ethereum",
     "logoURI": "https://trustwallet.com/assets/images/favicon.png",
-    "timestamp": "2021-11-09T09:31:22.799Z",
+    "timestamp": "2021-11-09T22:30:24.689Z",
     "tokens": [
         {
             "chainId": 1,
@@ -13,9 +13,6 @@
             "decimals": 18,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png",
             "pairs": [
-                {
-                    "base": "c60_t0x03ab458634910AaD20eF5f1C8ee96F1D6ac54919"
-                },
                 {
                     "base": "c60_t0x0Ae055097C6d159879521C384F1D2123D1f195e6"
                 },
@@ -32,6 +29,9 @@
                     "base": "c60_t0x111111111117dC0aa78b770fA6A738034120C302"
                 },
                 {
+                    "base": "c60_t0x1494CA1F11D487c2bBe4543E90080AeBa4BA3C2b"
+                },
+                {
                     "base": "c60_t0x1cEB5cB57C4D4E2b2433641b95Dd330A33185A44"
                 },
                 {
@@ -41,13 +41,7 @@
                     "base": "c60_t0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599"
                 },
                 {
-                    "base": "c60_t0x249e38Ea4102D0cf8264d3701f1a0E39C4f2DC3B"
-                },
-                {
                     "base": "c60_t0x2b591e99afE9f32eAA6214f7B7629768c40Eeb39"
-                },
-                {
-                    "base": "c60_t0x3845badAde8e6dFF049820680d1F14bD3903a5d0"
                 },
                 {
                     "base": "c60_t0x408e41876cCCDC0F92210600ef50372656052a38"
@@ -56,16 +50,10 @@
                     "base": "c60_t0x40FD72257597aA14C7231A7B1aaa29Fce868F677"
                 },
                 {
-                    "base": "c60_t0x43f11c02439e2736800433b4594994Bd43Cd066D"
-                },
-                {
                     "base": "c60_t0x514910771AF9Ca656af840dff83E8264EcF986CA"
                 },
                 {
                     "base": "c60_t0x584bC13c7D411c00c01A62e8019472dE68768430"
-                },
-                {
-                    "base": "c60_t0x6243d8CEA23066d098a15582d81a598b4e8391F4"
                 },
                 {
                     "base": "c60_t0x66a0f676479Cee1d7373f3DC2e2952778BfF5bd6"
@@ -75,12 +63,6 @@
                 },
                 {
                     "base": "c60_t0x6B3595068778DD592e39A122f4f5a5cF09C90fE2"
-                },
-                {
-                    "base": "c60_t0x761D38e5ddf6ccf6Cf7c55759d5210750B5D60F3"
-                },
-                {
-                    "base": "c60_t0x7a2Bc711E19ba6aff6cE8246C546E8c4B4944DFD"
                 },
                 {
                     "base": "c60_t0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9"
@@ -95,22 +77,10 @@
                     "base": "c60_t0x8762db106B2c2A0bccB3A80d1Ed41273552616E8"
                 },
                 {
-                    "base": "c60_t0x88ACDd2a6425c3FaAE4Bc9650Fd7E27e0Bebb7aB"
-                },
-                {
-                    "base": "c60_t0x8B3192f5eEBD8579568A2Ed41E6FEB402f93f73F"
-                },
-                {
-                    "base": "c60_t0x8E6cd950Ad6ba651F6DD608Dc70e5886B1AA6B24"
-                },
-                {
                     "base": "c60_t0x956F47F50A910163D8BF957Cf5846D573E7f87CA"
                 },
                 {
                     "base": "c60_t0x967da4048cD07aB37855c090aAF366e4ce1b9F48"
-                },
-                {
-                    "base": "c60_t0x9EA3b5b4EC044b70375236A281986106457b20EF"
                 },
                 {
                     "base": "c60_t0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2"
@@ -140,10 +110,7 @@
                     "base": "c60_t0xE41d2489571d322189246DaFA5ebDe1F4699F498"
                 },
                 {
-                    "base": "c60_t0xe53EC727dbDEB9E2d5456c3be40cFF031AB40A55"
-                },
-                {
-                    "base": "c60_t0xf1f955016EcbCd7321c7266BccFB96c68ea5E49b"
+                    "base": "c60_t0xEec2bE5c91ae7f8a338e1e5f3b5DE49d07AfdC81"
                 },
                 {
                     "base": "c60_t0xF629cBd94d3791C9250152BD8dfBDF380E2a3B9c"
@@ -678,16 +645,6 @@
             "symbol": "SOCKS",
             "decimals": 18,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x23B608675a2B2fB1890d3ABBd85c5775c51691d5/logo.png",
-            "pairs": []
-        },
-        {
-            "asset": "c60_t0x249e38Ea4102D0cf8264d3701f1a0E39C4f2DC3B",
-            "type": "ERC20",
-            "address": "0x249e38Ea4102D0cf8264d3701f1a0E39C4f2DC3B",
-            "name": "The Truth",
-            "symbol": "UFO",
-            "decimals": 18,
-            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x249e38Ea4102D0cf8264d3701f1a0E39C4f2DC3B/logo.png",
             "pairs": []
         },
         {
@@ -1860,16 +1817,6 @@
             "pairs": []
         },
         {
-            "asset": "c60_t0x8E6cd950Ad6ba651F6DD608Dc70e5886B1AA6B24",
-            "type": "ERC20",
-            "address": "0x8E6cd950Ad6ba651F6DD608Dc70e5886B1AA6B24",
-            "name": "StarLink $STARL",
-            "symbol": "STARL",
-            "decimals": 18,
-            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x8E6cd950Ad6ba651F6DD608Dc70e5886B1AA6B24/logo.png",
-            "pairs": []
-        },
-        {
             "asset": "c60_t0x8eB24319393716668D768dCEC29356ae9CfFe285",
             "type": "ERC20",
             "address": "0x8eB24319393716668D768dCEC29356ae9CfFe285",
@@ -3000,6 +2947,16 @@
             "symbol": "GOVI",
             "decimals": 18,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0xeEAA40B28A2d1b0B08f6f97bB1DD4B75316c6107/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c60_t0xEec2bE5c91ae7f8a338e1e5f3b5DE49d07AfdC81",
+            "type": "ERC20",
+            "address": "0xEec2bE5c91ae7f8a338e1e5f3b5DE49d07AfdC81",
+            "name": "Dopex Governance Token",
+            "symbol": "DPX",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0xEec2bE5c91ae7f8a338e1e5f3b5DE49d07AfdC81/logo.png",
             "pairs": []
         },
         {
