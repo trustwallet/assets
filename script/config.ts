@@ -46,9 +46,9 @@ export const Uniswap_TradingPairsQuery = `
         }
     }
 `;
-export const Uniswap_MinLiquidity = 2000000;
-export const Uniswap_MinVol24 = 1000000;
-export const Uniswap_MinTxCount24 = 480;
+export const Uniswap_MinLiquidity = 3000000;
+export const Uniswap_MinVol24 = 1500000;
+export const Uniswap_MinTxCount24 = 2000;
 
 // Force include & exclude config: list of token symbols, or symbol pairs (e.g. ["Cake", "DAI-WBNB"]).
 export const PolygonSwap_ForceInclude: string[] = [];
