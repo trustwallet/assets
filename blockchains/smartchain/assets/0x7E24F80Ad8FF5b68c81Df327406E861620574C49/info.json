@@ -1,9 +1,21 @@
-"name": “GenZcoin”,
-"website": "https://genzcoin.tech”,
-"description": "Stealth launched deflationary cryptocurrency bringing financial freedom to all holders!",
-"explorer": "https://bscscan.com/address/0x7E24F80Ad8FF5b68c81Df327406E861620574C49",
-"type": "BEP20",
-"symbol": “GENZ”,
-"decimals": 16,
-"status": "active",
-"id": "0x7E24F80Ad8FF5b68c81Df327406E861620574C49"
+{
+    "name": "GenZcoin",
+    "type": "BEP20",
+    "symbol": "GENZ",
+    "decimals": 16,
+    "website": "https://www.genzcoin.tech/",
+    "description": " Stealth launched deflationary cryptocurrency bringing financial freedom to all holders!",
+    "explorer": "https://bscscan.com/token/0x7E24F80Ad8FF5b68c81Df327406E861620574C49",
+    "status": "active",
+    "id": "0x7E24F80Ad8FF5b68c81Df327406E861620574C49",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/GenZcoin"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/GenZcoinOfficial"
+        }
+    ]
+}
