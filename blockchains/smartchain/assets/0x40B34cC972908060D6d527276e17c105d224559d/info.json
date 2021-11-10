@@ -5,19 +5,17 @@
     "decimals": 18,
     "website": "https://treedefi.com/",
     "description": "TreeDefi is a Yield Farming project focused on deflationary tokenomics through a capped token named TREE and an uncapped deflationary token named SEED.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/treedefi",
-            "handle": "treedefi"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/treedefi",
-            "handle": "treedefi"
-        }
-    ],
     "explorer": "https://bscscan.com/token/0x40b34cc972908060d6d527276e17c105d224559d",
     "status": "active",
-    "id": "0x40B34cC972908060D6d527276e17c105d224559d"
+    "id": "0x40B34cC972908060D6d527276e17c105d224559d",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/treedefi"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/treedefi"
+        }
+    ]
 }

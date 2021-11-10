@@ -3,16 +3,15 @@
     "website": "https://sav3.org/",
     "description": "SAV3 is a DAO for uncensorable on-chain information. It charges a 4% tax on transfers which is paid to liquidity providers.",
     "explorer": "https://etherscan.io/token/0x6e10aacb89a28d6fa0fe68790777fec7e7f01890",
-    "socials": [
-        {
-            "name": "Telegram",
-            "url": "https://t.me/sav3org",
-            "handle": "save3org"
-        }
-    ],
     "type": "ERC20",
     "symbol": "SAV3",
     "decimals": 18,
     "status": "active",
-    "id": "0x6E10AAcb89A28d6FA0FE68790777fec7E7f01890"
+    "id": "0x6E10AAcb89A28d6FA0FE68790777fec7E7f01890",
+    "links": [
+        {
+            "name": "telegram",
+            "url": "https://t.me/sav3org"
+        }
+    ]
 }

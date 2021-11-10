@@ -1,26 +1,29 @@
 {
     "name": "MarioBros",
     "website": "https://www.mariobros.info/",
-    "source_code": "https://github.com/MarioBros-Coin/MarioBrosCoin",
     "description": "MarioBros is a frictionless, community driven contract that allows you to hold tokens of increasing value due to deflationary structure.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/Mariobroscoin"
-        },
-        {
-            "name": "Reddit",
-            "url": "https://www.reddit.com/r/MarioBrostoken/"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/mariobros_coin"
-        }
-    ],
     "explorer": "https://bscscan.com/token/0x25f6524c2bfa5eebcc50beafd08525e0786082cf",
     "type": "BEP20",
     "symbol": "MARIO",
     "decimals": 9,
     "status": "active",
-    "id": "0x25F6524C2bfA5eebcc50beaFD08525E0786082cf"
+    "id": "0x25F6524C2bfA5eebcc50beaFD08525E0786082cf",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/MarioBros-Coin/MarioBrosCoin"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/Mariobroscoin"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/mariobros_coin"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/MarioBrostoken/"
+        }
+    ]
 }

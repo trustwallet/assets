@@ -1,12 +1,17 @@
 {
     "name": "Centaur Token",
     "website": "https://cntr.finance",
-    "white_paper": "https://cntr.finance/docs/whitepaper.pdf",
     "description": "The bridge between decentralized and traditional finance.",
     "explorer": "https://etherscan.io/token/0x03042482d64577A7bdb282260e2eA4c8a89C064B",
     "type": "ERC20",
     "symbol": "CNTR",
     "decimals": 18,
     "status": "active",
-    "id": "0x03042482d64577A7bdb282260e2eA4c8a89C064B"
+    "id": "0x03042482d64577A7bdb282260e2eA4c8a89C064B",
+    "links": [
+        {
+            "name": "whitepaper",
+            "url": "https://cntr.finance/docs/whitepaper.pdf"
+        }
+    ]
 }

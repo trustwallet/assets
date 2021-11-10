@@ -1,30 +1,33 @@
 {
     "name": "Unit protocol",
     "website": "https://unit.xyz",
-    "source_code": "https://github.com/unitprotocol",
-    "white_paper": "https://github.com/unitprotocol/protocol_docs/blob/master/unit_wp.pdf",
     "description": "Unit protocol is a decentralized borrowing protocol that allows using a variety of tokens as collateral.",
-    "socials": [
-        {
-            "name": "Telegram",
-            "url": "https://t.me/unit_ann",
-            "handle": "unit_ann"
-        },
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/unitprotocol",
-            "handle": "unitprotocol"
-        },
-        {
-            "name": "Medium",
-            "url": "https://medium.com/@unitprotocol",
-            "handle": "Unit protocol"
-        }
-    ],
     "explorer": "https://etherscan.io/token/0xC76FB75950536d98FA62ea968E1D6B45ffea2A55",
     "type": "ERC20",
     "symbol": "COL",
     "decimals": 18,
     "status": "active",
-    "id": "0xC76FB75950536d98FA62ea968E1D6B45ffea2A55"
+    "id": "0xC76FB75950536d98FA62ea968E1D6B45ffea2A55",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/unitprotocol"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/unitprotocol"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/unit_ann"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/@unitprotocol"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://github.com/unitprotocol/protocol_docs/blob/master/unit_wp.pdf"
+        }
+    ]
 }

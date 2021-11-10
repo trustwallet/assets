@@ -3,16 +3,15 @@
     "website": "https://outpost-protocol.com/jamm",
     "description": "A social token for crypto-natives who are experimenting with tokenized community tools to pave the way for new creator economies.",
     "explorer": "https://etherscan.io/token/0x56687cf29Ac9751Ce2a4E764680B6aD7E668942e",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/jammsession_",
-            "handle": "jammsession_"
-        }
-    ],
     "type": "ERC20",
     "symbol": "JAMM",
     "decimals": 4,
     "status": "active",
-    "id": "0x56687cf29Ac9751Ce2a4E764680B6aD7E668942e"
+    "id": "0x56687cf29Ac9751Ce2a4E764680B6aD7E668942e",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/jammsession_"
+        }
+    ]
 }
