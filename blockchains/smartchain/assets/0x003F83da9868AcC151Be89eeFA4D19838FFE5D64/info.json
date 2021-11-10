@@ -1,11 +1,25 @@
 {
-"name": "8Bit Doge",
-"website": "https://8bitdoge.com",
-"description": "8Bit Doge ($BITD) is a GameFi NFT BEP20 Token.",
-"explorer": "https://bscscan.com/token/0x003f83da9868acc151be89eefa4d19838ffe5d64",
-"type": "BEP20",
-"symbol": "BITD",
-"decimals": 9,
-"status": "active",
-"id": "0x003F83da9868AcC151Be89eeFA4D19838FFE5D64"
+    "name": "8Bit Doge",
+    "type": "BEP20",
+    "symbol": "BITD",
+    "decimals": 9,
+    "website": "https://8bitdoge.com",
+    "description": "Add 8Bit Doge ($BITD) BEP 20",
+    "explorer": "https://bscscan.com/token/0x003F83da9868AcC151Be89eeFA4D19838FFE5D64",
+    "status": "active",
+    "id": "0x003F83da9868AcC151Be89eeFA4D19838FFE5D64",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/8bit_doge"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/the8bitdoge"
+        },
+        {
+            "name": "youtube",
+            "url": "https://youtube.com/channel/UCfy9X0wApHLgoEB-9bbBHIg"
+        }
+    ]
 }
