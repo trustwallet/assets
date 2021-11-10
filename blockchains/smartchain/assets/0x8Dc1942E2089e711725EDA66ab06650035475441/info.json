@@ -1,21 +1,29 @@
 {
     "name": "BabyUSDT",
-    "website": "https://www.babyusdt.finance",
-    "description": "BabyUSDT is called to be the next giant in the crypto token space. 12% of every buy/sell is taken and redistributed to all Holders.",
-    "explorer": "https://bscscan.com/token/0x8Dc1942E2089e711725EDA66ab06650035475441",
     "type": "BEP20",
     "symbol": "BABYUSDT",
     "decimals": 18,
+    "website": "https://www.babyusdt.finance/",
+    "description": "BabyUSDT is called to be the next giant in the crypto token space. \n\n12% of every buy/sell is taken and redistributed to all Holders. Hold $BabyUSDT and earn USDT.",
+    "explorer": "https://bscscan.com/token/0x8Dc1942E2089e711725EDA66ab06650035475441",
     "status": "active",
     "id": "0x8Dc1942E2089e711725EDA66ab06650035475441",
     "links": [
         {
-            "name": "telegram",
-            "url": "https://t.me/BabyUSDToken"
-        },        
-        {
             "name": "twitter",
             "url": "https://twitter.com/BabyUSDToken"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/BabyUSDToken"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/babyusdt/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/babyusdt"
         },
         {
             "name": "reddit",
@@ -26,14 +34,8 @@
             "url": "https://babyusdt.finance/wp-content/uploads/2021/08/BabyUSDT_Whitepaper.pdf"
         },
         {
-            "name": "coinmarketcap",
-            "url": "https://coinmarketcap.com/currencies/babyusdt/"
-        },
-        {
-            "name": "coingecko",
-            "url": "https://coingecko.com/en/coins/babyusdt"
+            "name": "medium",
+            "url": "https://babyusdt.medium.com/"
         }
     ]
 }
-
-
