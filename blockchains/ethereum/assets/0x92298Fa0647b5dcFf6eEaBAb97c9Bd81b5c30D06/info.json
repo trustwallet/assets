@@ -1,13 +1,17 @@
 {
     "name": "LikeApp",
-    "short_description": "popular global platform for creating and sharing original videos.",
-    "website": "",
-    "socials": [
+    "description": "popular global platform for creating and sharing original videos.",
+    "website": "-",
+    "explorer": "https://etherscan.io/token/0x92298Fa0647b5dcFf6eEaBAb97c9Bd81b5c30D06",
+    "type": "ERC20",
+    "symbol": "LIKE",
+    "decimals": 0,
+    "status": "active",
+    "id": "0x92298Fa0647b5dcFf6eEaBAb97c9Bd81b5c30D06",
+    "links": [
         {
-            "name": "Telegram",
-            "url": "https://t.me/likeapptoken",
-            "handle": "likeapptoken"
+            "name": "telegram",
+            "url": "https://t.me/likeapptoken"
         }
-    ],
-    "explorer": "https://etherscan.io/token/0x92298Fa0647b5dcFf6eEaBAb97c9Bd81b5c30D06"
+    ]
 }

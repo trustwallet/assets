@@ -1,0 +1,38 @@
+{
+    "name": "Dai Token",
+    "website": "http://makerdao.com",
+    "description": "Dai is a stable cryptocurrency supported by Maker (MKR).",
+    "explorer": "https://bscscan.com/token/0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3",
+    "research": "https://research.binance.com/en/projects/dai",
+    "type": "BEP20",
+    "symbol": "DAI",
+    "decimals": 18,
+    "status": "active",
+    "id": "0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3",
+    "links": [
+        {
+            "name": "blog",
+            "url": "https://medium.com/@MakerDAO"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/MakerDAO"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/MakerDAO/"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://makerdao.com/whitepaper/"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/multi-collateral-dai/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/dai/"
+        }
+    ]
+}
