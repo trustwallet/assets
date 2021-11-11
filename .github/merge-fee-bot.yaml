@@ -13,8 +13,8 @@ payment:
 message:
   initial: |
     Hi! In order to compensate for the efforts of processing PRs, we kindly ask for a contribution.
-    💀 As **there is no refund**, before **paying the fee**, make sure **new tokens fulfill the minimum circulation and other [acceptance criteria](https://community.trustwallet.com/t/how-to-submit-a-token-logo/3863)**.
-    See also the [PR Fee FAQ](https://developer.trustwallet.com/add_new_asset/pr-fee).
+    💀 As **there is no refund**, before **paying the fee**, make sure **new tokens fulfill the minimum circulation and other [acceptance criteria](https://developer.trustwallet.com/assets/requirements)**.
+    See also the [PR Fee FAQ](https://developer.trustwallet.com/assets/faq).
     \nPlease pay  **$PAY1_AMOUNT $PAY1_CURRENCY**  with the memo **$PAY1_MEMO**  to the address `$PAY1_ADDRESS`.
     Alternatively, $PAY2_AMOUNT $PAY2_CURRENCY is also accepted (same memo & address).
     \n$QR1_SIMPLE
@@ -29,7 +29,7 @@ message:
   received: |
     Fee is PAID, fantastic!  Thanks!
     \nThe PR will be evaluated soon by a maintainer, and if merged, the new logos should be visible in Trust Wallet.
-    Please note that the app caches logos (up to several days; if you want to see changes immediately, use a new installation).  See the [assets FAQ](https://github.com/trustwallet/assets#faq). 
+    Please note that the app caches logos (up to several days; if you want to see changes immediately, use a new installation).  See the [assets FAQ](https://developer.trustwallet.com/assets/faq). 
     (@zachzwei, @Cryptocool1: please take note.)
     \n([$PAID_AMOUNT $PAID_CURRENCY]($PAID1_EXPLORERLINK))
   reviewCreated: Fee paid, review added.
@@ -46,7 +46,7 @@ label:
   requested: 'Payment Status: Requested'
   paid: 'Payment Status: Paid'
 user:
-  assignOnPay: Cryptocool1,cryptomanz
+  assignOnPay: Cryptocool1,cryptomanz,ramsty
   # if set to 1 comments from not allowed users are deleted.  Only comments from the PR creator or collaborators are allowed
   deleteComments: 1
   collaborators: zachzwei,Iamdeadlyz,catenocrypt,vikmeup,hewigovens,Cryptocool1,cryptomanz,ramsty
