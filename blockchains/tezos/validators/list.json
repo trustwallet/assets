@@ -1,5 +1,19 @@
 [
     {
+        "id": "tz1g8vkmcde6sWKaG2NN9WKzCkDM6Rziq194",
+        "name": "StakeNow",
+        "description": "Your Stake, rewarded.",
+        "website": "https://stakenow.de",
+        "payout": {
+            "commission": 14.99,
+            "payoutDelay": 6,
+            "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 0
+        }
+    },
+    {
         "id": "tz1NMNQYrYrfNpmUqQrMhJypf6ovnaDZhJHM",
         "name": "Smart Node",
         "description": "SmartNode is a Staking Service Provider aimed at giving anyone the opportunity to grow their crypto assets",
