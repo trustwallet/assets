@@ -1,37 +1,41 @@
 {
- "name": "Binancedog",
-   "type": "BEP20",
- "symbol": "Bidog",
- "decimals":9,
- "website": "https://www.binancedog.net/",
- "description": "Binance dog is a deflationary token which is centered by the community and driven by the internal force.",
- "explorer": "https://bscscan.com/address/0x265f638eab14dd43d80bb71aae3289b1c6d46a3f",
- "status": "active",
- "id": "0x265f638eab14dd43d80bb71aae3289b1c6d46a3f",
+    "name": "Binancedog",
+    "type": "BEP20",
+    "symbol": "Bidog",
+    "decimals": 9,
+    "website": "https://www.binancedog.net/",
+    "description": "Binance dog is a deflationary token which is centered by the community and driven by the internal force.",
+    "explorer": "https://bscscan.com/token/0x265f638eAb14dD43D80bB71AAe3289B1c6d46A3f",
+    "status": "active",
+    "id": "0x265f638eAb14dD43D80bB71AAe3289B1c6d46A3f",
     "links": [
         {
             "name": "twitter",
             "url": "https://twitter.com/BidogCoin"
         },
         {
+            "name": "github",
+            "url": "https://github.com/Bidogofficial"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/Binancedog/"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/ZSgDTN5b"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/de/munze/binancedog"
+        },
+        {
             "name": "coinmarketcap",
             "url": "https://coinmarketcap.com/currencies/binancedog/"
         },
         {
-            "name": "coingecko",
-            "url": "https://www.coingecko.com/de/munze/binancedog"
-        },
-        {
-            "name": "reddit",
-            "url": "https://www.reddit.com/r/Binancedog/"
-        },
-        {
-            "name": "telegram",
-            "url": "https://t.me/BidogCoin"
-        },
-        {
-            "name": "telegram_news",
-            "url": "https://t.me/BidogCoinAnn"
+            "name": "source_code",
+            "url": "https://bscscan.com/address/0x265f638eab14dd43d80bb71aae3289b1c6d46a3f#code"
         }
     ]
-} 
+}
