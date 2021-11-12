@@ -1,7 +1,7 @@
 {
     "name": "Trust Wallet: Ethereum",
     "logoURI": "https://trustwallet.com/assets/images/favicon.png",
-    "timestamp": "2021-06-17T12:27:54.729Z",
+    "timestamp": "2021-11-09T22:30:24.689Z",
     "tokens": [
         {
             "chainId": 1,
@@ -161,6 +161,9 @@
                     "base": "c60_t0x429881672B9AE42b8EbA0E26cD9C73711b891Ca5"
                 },
                 {
+                    "base": "c60_t0x43f11c02439e2736800433b4594994Bd43Cd066D"
+                },
+                {
                     "base": "c60_t0x45804880De22913dAFE09f4980848ECE6EcbAf78"
                 },
                 {
@@ -189,6 +192,9 @@
                 },
                 {
                     "base": "c60_t0x62359Ed7505Efc61FF1D56fEF82158CcaffA23D7"
+                },
+                {
+                    "base": "c60_t0x6243d8CEA23066d098a15582d81a598b4e8391F4"
                 },
                 {
                     "base": "c60_t0x63b4f3e3fa4e438698CE330e365E831F7cCD1eF4"
@@ -282,6 +288,9 @@
                 },
                 {
                     "base": "c60_t0x8a854288a5976036A725879164Ca3e91d30c6A1B"
+                },
+                {
+                    "base": "c60_t0x8B3192f5eEBD8579568A2Ed41E6FEB402f93f73F"
                 },
                 {
                     "base": "c60_t0x8CE9137d39326AD0cD6491fb5CC0CbA0e089b6A9"
@@ -419,6 +428,9 @@
                     "base": "c60_t0xC0bA369c8Db6eB3924965e5c4FD0b4C1B91e305F"
                 },
                 {
+                    "base": "c60_t0xC18360217D8F7Ab5e7c516566761Ea12Ce7F9D72"
+                },
+                {
                     "base": "c60_t0xC4C2614E694cF534D407Ee49F8E44D125E4681c4"
                 },
                 {
@@ -480,6 +492,9 @@
                 },
                 {
                     "base": "c60_t0xeEAA40B28A2d1b0B08f6f97bB1DD4B75316c6107"
+                },
+                {
+                    "base": "c60_t0xEec2bE5c91ae7f8a338e1e5f3b5DE49d07AfdC81"
                 },
                 {
                     "base": "c60_t0xEEF9f339514298C6A857EfCfC1A762aF84438dEE"
@@ -1333,6 +1348,16 @@
             "pairs": []
         },
         {
+            "asset": "c60_t0x41a3dba3d677e573636ba691a70ff2d606c29666",
+            "type": "ERC20",
+            "address": "0x41a3dba3d677e573636ba691a70ff2d606c29666",
+            "name": "GoBlank",
+            "symbol": "BLANK",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x41a3dba3d677e573636ba691a70ff2d606c29666/logo.png",
+            "pairs": []
+        },
+        {
             "asset": "c60_t0x429881672B9AE42b8EbA0E26cD9C73711b891Ca5",
             "type": "ERC20",
             "address": "0x429881672B9AE42b8EbA0E26cD9C73711b891Ca5",
@@ -1350,6 +1375,16 @@
             "symbol": "DF",
             "decimals": 18,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x431ad2ff6a9C365805eBaD47Ee021148d6f7DBe0/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c60_t0x43f11c02439e2736800433b4594994Bd43Cd066D",
+            "type": "ERC20",
+            "address": "0x43f11c02439e2736800433b4594994Bd43Cd066D",
+            "name": "Floki Inu",
+            "symbol": "FLOKI",
+            "decimals": 9,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x43f11c02439e2736800433b4594994Bd43Cd066D/logo.png",
             "pairs": []
         },
         {
@@ -1624,6 +1659,16 @@
             "symbol": "CORE",
             "decimals": 18,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x62359Ed7505Efc61FF1D56fEF82158CcaffA23D7/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c60_t0x6243d8CEA23066d098a15582d81a598b4e8391F4",
+            "type": "ERC20",
+            "address": "0x6243d8CEA23066d098a15582d81a598b4e8391F4",
+            "name": "Flex Ungovernance Token",
+            "symbol": "FLX",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x6243d8CEA23066d098a15582d81a598b4e8391F4/logo.png",
             "pairs": []
         },
         {
@@ -2113,6 +2158,16 @@
             "symbol": "GET",
             "decimals": 18,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x8a854288a5976036A725879164Ca3e91d30c6A1B/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c60_t0x8B3192f5eEBD8579568A2Ed41E6FEB402f93f73F",
+            "type": "ERC20",
+            "address": "0x8B3192f5eEBD8579568A2Ed41E6FEB402f93f73F",
+            "name": "Saitama Inu",
+            "symbol": "SAITAMA",
+            "decimals": 9,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x8B3192f5eEBD8579568A2Ed41E6FEB402f93f73F/logo.png",
             "pairs": []
         },
         {
@@ -2611,16 +2666,6 @@
             "pairs": []
         },
         {
-            "asset": "c60_t0x41a3dba3d677e573636ba691a70ff2d606c29666",
-            "type": "ERC20",
-            "address": "0x41a3dba3d677e573636ba691a70ff2d606c29666",
-            "name": "GoBlank",
-            "symbol": "BLANK",
-            "decimals": 18,
-            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x41a3dba3d677e573636ba691a70ff2d606c29666/logo.png",
-            "pairs": []
-        },
-        {
             "asset": "c60_t0xaf9f549774ecEDbD0966C52f250aCc548D3F36E5",
             "type": "ERC20",
             "address": "0xaf9f549774ecEDbD0966C52f250aCc548D3F36E5",
@@ -2852,6 +2897,16 @@
             "symbol": "DUCK",
             "decimals": 18,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0xC0bA369c8Db6eB3924965e5c4FD0b4C1B91e305F/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c60_t0xC18360217D8F7Ab5e7c516566761Ea12Ce7F9D72",
+            "type": "ERC20",
+            "address": "0xC18360217D8F7Ab5e7c516566761Ea12Ce7F9D72",
+            "name": "Ethereum Name Service",
+            "symbol": "ENS",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0xC18360217D8F7Ab5e7c516566761Ea12Ce7F9D72/logo.png",
             "pairs": []
         },
         {
@@ -3300,6 +3355,16 @@
             "pairs": []
         },
         {
+            "asset": "c60_t0xEec2bE5c91ae7f8a338e1e5f3b5DE49d07AfdC81",
+            "type": "ERC20",
+            "address": "0xEec2bE5c91ae7f8a338e1e5f3b5DE49d07AfdC81",
+            "name": "Dopex Governance Token",
+            "symbol": "DPX",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0xEec2bE5c91ae7f8a338e1e5f3b5DE49d07AfdC81/logo.png",
+            "pairs": []
+        },
+        {
             "asset": "c60_t0xEEF9f339514298C6A857EfCfC1A762aF84438dEE",
             "type": "ERC20",
             "address": "0xEEF9f339514298C6A857EfCfC1A762aF84438dEE",
@@ -3500,20 +3565,10 @@
             "decimals": 18,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0xfffffffFf15AbF397dA76f1dcc1A1604F45126DB/logo.png",
             "pairs": []
-        },
-        {
-            "asset": "c60_0xC18360217D8F7Ab5e7c516566761Ea12Ce7F9D72",
-            "type": "ERC20",
-            "address": "0xC18360217D8F7Ab5e7c516566761Ea12Ce7F9D72",
-            "name": "Ethereum Name Service",
-            "symbol": "ENS",
-            "decimals": 18,
-            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0xC18360217D8F7Ab5e7c516566761Ea12Ce7F9D72/logo.png",
-            "pairs": []
         }
     ],
     "version": {
-        "major": 13,
+        "major": 14,
         "minor": 0,
         "patch": 0
     }
