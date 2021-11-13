@@ -1,25 +1,29 @@
 {
-    "name": "Tether",
-    "website": "https://tether.to",
-    "description": "Tether (USDT) is a cryptocurrency with a value meant to mirror the value of the U.S. dollar.",
-    "explorer": "https://etherscan.io/token/0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "name": "Tether USD (USDT)",
     "type": "ERC20",
     "symbol": "USDT",
     "decimals": 6,
+    "website": "https://tether.to/",
+    "description": "https://coinmarketcap.com/view/binance-smart-chain/",
+    "explorer": "https://etherscan.io/token/0xdAC17F958D2ee523a2206206994597C13D831ec7",
     "status": "active",
     "id": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
     "links": [
         {
-            "name": "facebook",
-            "url": "https://facebook.com/tether.to/"
-        },
-        {
-            "name": "twitter",
-            "url": "https://twitter.com/Tether_to/"
+            "name": "whitepaper",
+            "url": "https://tether.to/wp-content/uploads/2016/06/TetherWhitePaper.pdf"
         },
         {
             "name": "coinmarketcap",
-            "url": "https://coinmarketcap.com/ru/currencies/tether/"
+            "url": "https://coinmarketcap.com/currencies/tether/"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/tether_to"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://www.coingecko.com/coins"
         }
     ]
 }
