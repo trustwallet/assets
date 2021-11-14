@@ -1,24 +1,28 @@
 {
     "name": "Nervos Network",
     "website": "http://nervos.org",
-    "source_code": "https://github.com/nervosnetwork",
-    "white_paper": "https://github.com/nervosnetwork/rfcs/blob/master/rfcs/0002-ckb/0002-ckb.md",
     "description": "Nervos CKB (Common Knowledge Byte) is the native token of the Nervos Common Knowledge Base, a multi-asset, store of value, proof of work public blockchain.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/nervosnetwork",
-            "handle": "nervosnetwork"
-        },
-        {
-            "name": "Reddit",
-            "url": "https://reddit.com/r/NervosNetwork",
-            "handle": "NervosNetwork"
-        }
-    ],
     "explorer": "https://explorer.nervos.org",
     "symbol": "CKB",
-    "type": "COIN",
+    "type": "coin",
     "decimals": 8,
-    "status": "abandoned"
+    "status": "abandoned",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/nervosnetwork"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/nervosnetwork"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/NervosNetwork"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://github.com/nervosnetwork/rfcs/blob/master/rfcs/0002-ckb/0002-ckb.md"
+        }
+    ]
 }

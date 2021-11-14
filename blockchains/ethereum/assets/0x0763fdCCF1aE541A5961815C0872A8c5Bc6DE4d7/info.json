@@ -1,34 +1,29 @@
 {
     "name": "SUKU",
     "website": "https://suku.world",
-    "source_code": "https://github.com/SukuLab",
     "description": "The link between open finance, traceability, and transparency. The future of supply chains today.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/SUKUecosystem",
-            "handle": "SUKUecosystem"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/SUKUecosystem",
-            "handle": "SUKUecosystem"
-        },
-        {
-            "name": "LinkedIn",
-            "url": "https://www.linkedin.com/company/suku-ecosystem",
-            "handle": "suku-ecosystem"
-        },
-        {
-            "name": "Facebook",
-            "url": "https://www.facebook.com/SUKUecosystem",
-            "handle": "SUKUecosystem"
-        }
-    ],
     "explorer": "https://etherscan.io/token/0x0763fdCCF1aE541A5961815C0872A8c5Bc6DE4d7",
     "type": "ERC20",
     "symbol": "SUKU",
     "decimals": 18,
     "status": "active",
-    "id": "0x0763fdCCF1aE541A5961815C0872A8c5Bc6DE4d7"
+    "id": "0x0763fdCCF1aE541A5961815C0872A8c5Bc6DE4d7",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/SukuLab"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/SUKUecosystem"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/SUKUecosystem"
+        },
+        {
+            "name": "facebook",
+            "url": "https://facebook.com/SUKUecosystem"
+        }
+    ]
 }
