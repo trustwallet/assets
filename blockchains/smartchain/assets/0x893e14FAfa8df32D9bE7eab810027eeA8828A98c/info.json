@@ -1,10 +1,21 @@
+{
     "name": "UNIMOON",
-    "website": "https://unimoon.io/",
-    "description": "The First L1 Blockchain Built to Decentralize Social Media",
-    "explorer": "https://bscscan.com/token/0x893e14fafa8df32d9be7eab810027eea8828a98c",
     "type": "BEP20",
     "symbol": "UNIMOON",
     "decimals": 9,
+    "website": "https://unimoon.io/",
+    "description": "The First L1 Blockchain Built to Decentralize Social Me​dia",
+    "explorer": "https://bscscan.com/token/0x893e14FAfa8df32D9bE7eab810027eeA8828A98c",
     "status": "active",
-    "id": "0x893e14FAfa8df32D9bE7eab810027eeA8828A98c"
+    "id": "0x893e14FAfa8df32D9bE7eab810027eeA8828A98c",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/unimoonnetwork"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/unimoonnetwork"
+        }
+    ]
 }
