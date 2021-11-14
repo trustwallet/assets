@@ -1,10 +1,17 @@
- "name": "DeBlack Coin",
-    "website": "https://deblackcoin.com",
-    "description": "DeBC is a token issued by DeBlack Development team",
-    "explorer": "https://bscscan.com/token/0x7E83Bd46939D5aCE4DBd42E8d7e4dA2fE5cB6089",
+{
+    "name": "DeBlack Coin",
     "type": "BEP20",
     "symbol": "DeBC",
     "decimals": 18,
+    "website": "https://deblack.jamfortetech.org",
+    "description": "A Token created by DeBlack Development Team in partnership with JAM-Forte Technologies Ltd",
+    "explorer": "https://bscscan.com/token/0x7E83Bd46939D5aCE4DBd42E8d7e4dA2fE5cB6089",
     "status": "active",
-    "id": "0x7E83Bd46939D5aCE4DBd42E8d7e4dA2fE5cB6089"
+    "id": "0x7E83Bd46939D5aCE4DBd42E8d7e4dA2fE5cB6089",
+    "links": [
+        {
+            "name": "telegram",
+            "url": "https://t.me/DeBlackCoin"
+        }
+    ]
 }
