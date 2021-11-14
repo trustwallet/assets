@@ -1,8 +1,6 @@
 {
     "name": "Dynamic Set Dollar",
     "website": "https://dsd.finance",
-    "source_code": "https://github.com/dynamicsetdollar/dsd-protocol",
-    "white_paper": "https://github.com/emptysetsquad/dollar/blob/master/d%C3%B8llar.pdf",
     "description": "Algorithmic Stable-coin forked from Empty Set Dollar ",
     "explorer": "https://etherscan.io/token/0xBD2F0Cd039E0BFcf88901C98c0bFAc5ab27566e3",
     "research": "https://dynamicsetdollar.medium.com/",
@@ -10,5 +8,15 @@
     "symbol": "DSD",
     "decimals": 18,
     "status": "active",
-    "id": "0xBD2F0Cd039E0BFcf88901C98c0bFAc5ab27566e3"
+    "id": "0xBD2F0Cd039E0BFcf88901C98c0bFAc5ab27566e3",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/dynamicsetdollar/dsd-protocol"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://github.com/emptysetsquad/dollar/blob/master/d%C3%B8llar.pdf"
+        }
+    ]
 }

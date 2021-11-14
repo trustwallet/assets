@@ -2,29 +2,29 @@
     "name": "Bafe.io",
     "website": "https://bafe.io",
     "description": "Self generating liquidity token - Reflection paid back to holders.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/Bafeio"
-        },
-        {
-            "name": "Discord",
-            "url": "https://discord.gg/ZFR6MrB6Vg"
-        },
-        {
-            "name": "Medium",
-            "url": "https://bafe-io.medium.com/"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/bafeio"
-        }
-    ],
     "explorer": "https://bscscan.com/token/0x7bb362962F2a4E2089466C79566572B37CFc5D78",
     "research": "",
     "type": "BEP20",
     "symbol": "BAFE",
     "decimals": 9,
     "status": "active",
-    "id": "0x7bb362962F2a4E2089466C79566572B37CFc5D78"
+    "id": "0x7bb362962F2a4E2089466C79566572B37CFc5D78",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/Bafeio"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/bafeio"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/ZFR6MrB6Vg"
+        },
+        {
+            "name": "medium",
+            "url": "https://bafe-io.medium.com/"
+        }
+    ]
 }

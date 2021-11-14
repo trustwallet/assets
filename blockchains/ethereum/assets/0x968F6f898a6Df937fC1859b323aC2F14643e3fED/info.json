@@ -1,35 +1,30 @@
 {
     "name": "Newscrypto",
     "website": "https://newscrypto.io/",
-    "white_paper": "https://newscrypto.io/whitepaper.pdf",
     "short_description": "Newscrypto is a project that brings together education, information and trading tools for traders in the crypto markets.",
     "description": "Newscrypto is a project that brings together education, information and trading tools for traders in the crypto markets.",
     "explorer": "https://etherscan.io/token/0x968f6f898a6df937fc1859b323ac2f14643e3fed",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/NwcPublic",
-            "handle": "NwcPublic"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/nwc_public",
-            "handle": "NwcPublic"
-        },
-        {
-            "name": "Facebook",
-            "url": "https://www.facebook.com/Newscrypto.io",
-            "handle": "Newscrypto"
-        },
-        {
-            "name": "Linkedin",
-            "url": "https://jm.linkedin.com/company/newscrypto-io",
-            "handle": "Newscrypto"
-        }
-    ],
     "type": "ERC20",
     "symbol": "NWC",
     "decimals": 18,
     "status": "active",
-    "id": "0x968F6f898a6Df937fC1859b323aC2F14643e3fED"
+    "id": "0x968F6f898a6Df937fC1859b323aC2F14643e3fED",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/NwcPublic"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/nwc_public"
+        },
+        {
+            "name": "facebook",
+            "url": "https://facebook.com/Newscrypto.io"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://newscrypto.io/whitepaper.pdf"
+        }
+    ]
 }

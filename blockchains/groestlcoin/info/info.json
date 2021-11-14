@@ -1,25 +1,29 @@
 {
     "name": "Groestlcoin",
     "website": "http://groestlcoin.org",
-    "source_code": "https://github.com/Groestlcoin",
-    "white_paper": "http://www.groestl.info/groestl-implementation-guide.pdf",
     "description": "Groestlcoin (GRS) is a cryptocoin, that is optionally private. Anyone can mine it effectively, with GPU.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/GroestlcoinTeam",
-            "handle": "GroestlcoinTeam"
-        },
-        {
-            "name": "Reddit",
-            "url": "https://reddit.com/r/groestlcoin",
-            "handle": "groestlcoin"
-        }
-    ],
     "explorer": "https://grs.tokenview.com/",
     "research": "https://research.binance.com/en/projects/groestlcoin",
     "symbol": "GRS",
-    "type": "COIN",
+    "type": "coin",
     "decimals": 8,
-    "status": "active"
+    "status": "active",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/Groestlcoin"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/GroestlcoinTeam"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/groestlcoin"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://www.groestl.info/groestl-implementation-guide.pdf"
+        }
+    ]
 }
