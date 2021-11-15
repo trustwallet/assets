@@ -8,14 +8,37 @@
    "decimals": 9,
    "status": "active",
    "id": "0x179960442Ece8dE9f390011b7f7c9b56C74e4D0a",
-   "links": [
-      ["github", "https://github.com/XetaReality"],
-      ["whitepaper", "https://xetareality.com/whitepaper.pdf"],
-      ["twitter", "https://twitter.com/XetaReality"],
-      ["telegram", "https://t.me/XetaReality"],
-      ["medium", "https://xetareality.medium.com/"],
-      ["reddit", "https://www.reddit.com/r/XetaReality"],
-      ["coinmarketcap", "https://coinmarketcap.com/currencies/xeta-reality/"],
-      ["coingecko", "https://www.coingecko.com/en/coins/xeta-reality"]
+   "links": [{
+         "name": "github",
+         "url": "https://github.com/XetaReality"
+      },
+      {
+         "name": "whitepaper",
+         "url": "https://xetareality.com/whitepaper.pdf"
+      },
+      {
+         "name": "twitter",
+         "url": "https://twitter.com/XetaReality"
+      },
+      {
+         "name": "telegram",
+         "url": "https://t.me/XetaReality"
+      },
+      {
+         "name": "medium",
+         "url": "https://xetareality.medium.com/"
+      },
+      {
+         "name": "reddit",
+         "url": "https://www.reddit.com/r/XetaReality"
+      },
+      {
+         "name": "coinmarketcap",
+         "url": "https://coinmarketcap.com/currencies/xeta-reality/"
+      },
+      {
+         "name": "coingecko",
+         "url": "https://www.coingecko.com/en/coins/xeta-reality"
+      }
    ]
 }
