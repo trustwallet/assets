@@ -1,10 +1,12 @@
-   "name": "BabySolana",
-    "website": "https://babysolana.info",
-    "description": "babysolana is a stablecoin issued by Paxos in partnership with Binance.",
-    "explorer": "https://bscscan.com/token/0x2a13559650400452d9562e87e92d1d8c58c2c47a",
+
+{
+    "name": "BabySolana",
     "type": "BEP20",
     "symbol": "BSOL",
     "decimals": 18,
+    "website": "https://babysolana.info/",
+    "description": "babysolana is a stablecoin issued by Paxos in partnership with Binance.",
+    "explorer": "https://bscscan.com/token/0x2a13559650400452d9562e87e92d1d8c58c2c47a",
     "status": "active",
     "id": "0x2a13559650400452d9562e87e92d1d8c58c2c47a"
-}	
+}
