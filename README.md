@@ -18,7 +18,7 @@ Such a large collection can be maintained only through a community effort, so _f
 
 Please note that __brand new tokens are not accepted__,
 the projects have to be sound, with information available, and __non-minimal circulation__
-(for limit details see https://community.trustwallet.com/t/how-to-submit-a-token-logo/3863).
+(for limit details see https://developer.trustwallet.com/assets/requirements).
 
 ### Assets App
 
@@ -27,14 +27,14 @@ The [Assets web app](https://assets.trustwallet.com) can be used for most new to
 ### Quick starter
 
 Details of the repository structure and contribution guidelines are listed on the
-[Developers site](https://developer.trustwallet.com/add_new_asset).
+[Developers site](https://developer.trustwallet.com/assets/new-asset).
 Here is a quick starter summary for the most common use case.
 
 **Adding an ERC20 token checklist**:
-- [ ] Make sure your smartcontract has more than 5000 address holders, otherwise you will be rejected
+- [ ] Make sure your smartcontract has more than 25000 address holders, otherwise you will be rejected
 - [ ] Fork the Github repository
-- [ ] Create folder with name of token smartcontact address in [_checksum format_](https://developer.trustwallet.com/add_new_asset#checksum_format) `blockchains/ethereum/assets/<token_smartcontract_address>/`.
-- [ ] Tell your designer that token image must be in PNG format, avoid transparent background, recommended size 256x256px, max. 512x512px, with max file size of 100kB, for further details read [image rules](https://developer.trustwallet.com/add_new_asset#image-requirements).
+- [ ] Create folder with name of token smartcontact address in [_checksum format_](https://piyolab.github.io/sushiether/RunScrapboxCode/?web3=1.0.0-beta.33&code=https://scrapbox.io/api/code/sushiether/web3.js_-_Ethereum_のアドレスをチェックサム付きアドレスに変換する/demo.js) `blockchains/ethereum/assets/<token_smartcontract_address>/`.
+- [ ] Tell your designer that token image must be in PNG format, preferably transparent background, recommended size 256x256px, with max file size of 100kB, for further details read [image rules](https://developer.trustwallet.com/assets/requirements).
 - [ ] Upload your logo with file named `logo.png` to previously created folder with smartcontract address, and if you done all correctly your path should look like this. `blockchains/ethereum/assets/0x1234567461d3f8Db7496581774Bd869C83D51c93/logo.png`
 - [ ] Create `info.json` file with info about the token/project
 - [ ] Create a pull request to the main repo
@@ -42,11 +42,11 @@ Here is a quick starter summary for the most common use case.
 
 ## Documentation
 
-For details, see the [Developers site](https://developer.trustwallet.com/add_new_asset):
+For details, see the [Developers site](https://developer.trustwallet.com:
 
-- [Contribution guidelines](https://developer.trustwallet.com/add_new_asset#contribution-guidelines)
+- [Contribution guidelines](https://developer.trustwallet.com/assets/repository_details)
 
-- [Repository details](https://developer.trustwallet.com/add_new_asset#repository-details)
+- [FAQ](https://developer.trustwallet.com/assets/faq)
 
 ## Scripts
 
@@ -63,8 +63,8 @@ There are several scripts available for maintainers:
 
 ## On Checks
 
-This repo contais a set of scripts for verification of all the information.  Implemented as Typescript scripts, available through `npm run check`, and executed in CI build; checks the whole repo.
-There are similar check logic implemeted:
+This repo contains a set of scripts for verification of all the information.  Implemented as Typescript scripts, available through `npm run check`, and executed in CI build; checks the whole repo.
+There are similar check logic implemented:
 - in assets-management app; for checking changed token files in PRs, or when creating a PR.  Implemented as a Typescript library, checks diffs, can be run from browser environment.
 - in merge-fee-bot, which runs as a GitHub app shows result in PR comment.  Also uses library, but executes in a non-browser environment.
 
