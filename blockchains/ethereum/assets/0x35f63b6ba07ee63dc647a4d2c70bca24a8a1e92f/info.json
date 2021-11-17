@@ -1,11 +1,29 @@
 {
     "name": "Lion Wood",
-    "symbol": "LIONW",
+    "website": "http://www.lion-wood.com",
+    "description": "We want to use the blockchain for real estate, as a university project we want to introduce LIONW",
+    "explorer": "https://etherscan.io/token/0x35F63B6BA07EE63DC647A4D2C70BCA24A8A1E92F",
     "type": "ERC20",
+    "symbol": "LIONW",
     "decimals": 4,
-    "description": "-",
-    "website": "",
-    "explorer": "https://etherscan.io/token/0x35f63b6ba07ee63dc647a4d2c70bca24a8a1e92f",
-    "status": "abandoned",
-    "id": "0x35f63b6ba07ee63dc647a4d2c70bca24a8a1e92f"
+    "status": "active",
+    "id": "0x35F63B6BA07EE63DC647A4D2C70BCA24A8A1E92F",
+    "links": [
+        {
+            "name": "facebook",
+            "url": "https://www.facebook.com/Lion-Wood-105732328572113/"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/lionwood_ok"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/lionwood_ok"
+        },
+        {
+            "name": "whitepaper",
+            "url": "http://www.lion-wood.com/wpaper.pdf"
+        }
+    ]
 }
