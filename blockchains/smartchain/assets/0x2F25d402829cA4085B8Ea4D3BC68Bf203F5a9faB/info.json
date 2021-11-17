@@ -1,11 +1,12 @@
-{ 
-   "name": "Eagonswap Token",
-    "website": "https://eagonswap.exchange"
-    "description": "Eagon is the native token of the Eagon swap exchange system with a fixed total supply of 300Million. The Eagon smart contract code is built across the trio of blockchain networks; the polygon, ethereum and binance blockchains",
+
+{
+    "name": "Eagonswap Token",
+    "website": "https://eagonswap.exchange",
+    "description": "Eagon is the native token of the Eagon swap exchange system with a fixed total supply of 300Million. The Eagon smart contract code is built across the trio of blockchain networks; the polygon, ethereum and binance blockchains.",
     "explorer": "https://bscscan.com/token/0x2f25d402829ca4085b8ea4d3bc68bf203f5a9fab",
     "type": "BEP20",
-    "symbol": "EAGON",
-    "decimals": "18",
+    "symbol": "Eagon",
+    "decimals": 18,
     "status": "active",
     "id": "0x2f25d402829ca4085b8ea4d3bc68bf203f5a9fab"
 }
