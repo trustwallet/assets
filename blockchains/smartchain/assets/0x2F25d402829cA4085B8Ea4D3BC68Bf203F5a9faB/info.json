@@ -1,12 +1,73 @@
-
 {
-    "name": "Eagonswap Token",
-    "website": "https://eagonswap.exchange",
-    "description": "Eagon is the native token of the Eagon swap exchange system. The Eagon smart contract code is built across the trio of blockchain networks; the polygon, ethereum and binance blockchains.",
-    "explorer": "https://bscscan.com/token/0x2F25d402829cA4085B8Ea4D3BC68Bf203F5a9faB",
+    "name": "Eagonswap",
     "type": "BEP20",
     "symbol": "Eagon",
     "decimals": 18,
+    "website": "https://info.eagonswap.exchange",
+    "description": "Eagon is the native token of the Eagon swap exchange system. The Eagon smart contract code is built across the trio of blockchain networks; the polygon, ethereum and binance blockchains",
+    "explorer": "https://bscscan.com/token/0x2F25d402829cA4085B8Ea4D3BC68Bf203F5a9faB",
     "status": "active",
-    "id": "0x2F25d402829cA4085B8Ea4D3BC68Bf203F5a9faB"
+    "id": "0x2F25d402829cA4085B8Ea4D3BC68Bf203F5a9faB",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/eagonswap"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/eagonswap"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/eagonswapofficial"
+        },
+        {
+            "name": "telegram_news",
+            "url": "https://t.me/eagonswapchannel"
+        },
+        {
+            "name": "blog",
+            "url": null
+        },
+        {
+            "name": "docs",
+            "url": null
+        },
+        {
+            "name": "forum",
+            "url": null
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://eagonswap.exchange/whitepaper.pdf"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/@eagonswap"
+        },
+        {
+            "name": "youtube",
+            "url": "https://youtube.com/channel/UCf1idsJNtWi6LB6YkoaYqWg"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/eagonswap-token"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/eagonswap-token"
+        },
+        {
+            "name": "source_code",
+            "url": "https://github.com/EagonSwap/bep20-mainnet"
+        }
+    ]
 }
