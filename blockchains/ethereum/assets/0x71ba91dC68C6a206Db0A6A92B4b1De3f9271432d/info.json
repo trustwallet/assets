@@ -1,11 +1,41 @@
 {
-    "name": "wMBX Token",
-    "website": "https://mobiepay.io/",
-    "description": "wMBX is a wrapped Ethereum asset of MobieCoin's native Stellar asset.",
-    "explorer": "https://etherscan.io/address/0x71ba91dc68c6a206db0a6a92b4b1de3f9271432d",
+    "name": "wMBX Token (wMBX)",
     "type": "ERC20",
     "symbol": "wMBX",
     "decimals": 18,
+    "website": "https://mobienetwork.com/",
+    "description": "wMBX is a wrapped Ethereum asset of MobieCoin's native Stellar asset.",
+    "explorer": "https://etherscan.io/token/0x71ba91dC68C6a206Db0A6A92B4b1De3f9271432d",
     "status": "active",
-    "id": "0x71ba91dc68c6a206db0a6a92b4b1de3f9271432d"
+    "id": "0x71ba91dC68C6a206Db0A6A92B4b1De3f9271432d",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/mobienetwork/"
+        },
+        {
+            "name": "facebook",
+            "url": "https://facebook.com/MobieNetwork"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/mobiepay/"
+        },
+        {
+            "name": "medium",
+            "url": "https://mobiepay.medium.com/"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/yJkQ9GdzBJ"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/mobiepaycommunity"
+        },
+        {
+            "name": "telegram_news",
+            "url": "https://t.me/MobiePayAnnouncements"
+        }
+    ]
 }
