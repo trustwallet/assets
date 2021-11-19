@@ -1,0 +1,25 @@
+{
+    "name": "Venus CAKE",
+    "website": "https://venus.io/",
+    "description": "The Venus vTokens, which are self-contained borrowing and lending contracts. VToken contains the core logic and VBep20, VBUSD, VSXP, VUSDC, VUSDT, VXVS and VBNB add public interfaces for Bep20 tokens and bnb, respectively.",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/VenusProtocol"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/VenusProtocol"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/VenusProtocol"
+        }
+    ],
+    "explorer": "https://bscscan.com/token/0x86aC3974e2BD0d60825230fa6F355fF11409df5c",
+    "type": "BEP20",
+    "symbol": "vCAKE",
+    "decimals": 8,
+    "status": "active",
+    "id": "0x86aC3974e2BD0d60825230fa6F355fF11409df5c"
+}

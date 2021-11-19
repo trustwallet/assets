@@ -3,36 +3,27 @@
     "website": "https://k21.kanon.art",
     "description": "K21 is a closed-end art vault that provides liquid exposure to a curated collection of 21 unique and original NFT artworks by a diverse roster of influential and pioneering contemporary, digital, and cryptonative artists. Engineered for composability, durability, and equity, K21 establishes a new protocol for art.",
     "explorer": "https://etherscan.io/token/0xB9d99C33eA2d86EC5eC6b8A4dD816EBBA64404AF",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/KanonDotArt",
-            "handle": "KanonDotArt"
-        },
-        {
-            "name": "Discord",
-            "url": "https://discord.gg/bzEqs25RKN",
-            "handle": "Kanon"
-        },
-        {
-            "name": "Medium",
-            "url": "https://kanondotart.medium.com",
-            "handle": "Kanon"
-        },
-        {
-            "name": "Instagram",
-            "url": "https://www.instagram.com/kanondotart",
-            "handle": "Kanon"
-        },
-        {
-            "name": "Github",
-            "url": "https://github.com/kanonart",
-            "handle": "Kanon"
-        }
-    ],
     "type": "ERC20",
     "symbol": "K21",
     "decimals": 18,
     "status": "active",
-    "id": "0xB9d99C33eA2d86EC5eC6b8A4dD816EBBA64404AF"
+    "id": "0xB9d99C33eA2d86EC5eC6b8A4dD816EBBA64404AF",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/kanonart"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/KanonDotArt"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/bzEqs25RKN"
+        },
+        {
+            "name": "medium",
+            "url": "https://kanondotart.medium.com"
+        }
+    ]
 }

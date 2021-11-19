@@ -1,6 +1,6 @@
-name: Fixes and History
+name: Fixes
 # Runs on:
-# - on master branch of trustwallet repo: fix, history update, checkin
+# - on master branch of trustwallet repo: fix, checkin
 # - on other branch of trustwallet repo: fix, checkin
 # - on fork repos: fix-sanity only
 on:
@@ -19,8 +19,6 @@ jobs:
         with:
           token: ${{ secrets.COMMIT_TOKEN }}
           ref: ${{ github.ref }}
-          # this is needed for history, needs to access prev commits
-          fetch-depth: 0
       - name: Checkout (fork repo, default token)
         if: github.repository_owner != 'trustwallet'
         uses: actions/checkout@v2
@@ -40,9 +38,6 @@ jobs:
         run: npm run fix-sanity
       - name: Debug
         run: echo "GITHUB_REF " $GITHUB_REF "  GITHUB_BASE_REF " $GITHUB_BASE_REF
-      - name: Run history
-        if: github.repository_owner == 'trustwallet' && (github.base_ref == 'master' || github.ref == 'refs/heads/master')
-        run: npm run history
       - name: Show result (diff)  (run 'npm run fix' locally)
         run: |
           git status
@@ -57,4 +52,4 @@ jobs:
         with:
           commit_user_name: trust-wallet-merge-bot
           commit_user_email: mergebot@trustwallet.com
-          commit_message: Fixes (sanity and consistency, auto), history
+          commit_message: Fixes (sanity and consistency, auto)
