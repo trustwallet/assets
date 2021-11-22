@@ -1,11 +1,21 @@
 {
     "name": "Rhyme$ick Coin",
-    "website": "https://www.rhymesickco.in/",
-    "description": "The RSC coin is our introduction to the crypto world and the first of many “SMART COINS” to follow with real world applications and utility! These Smart Coins will target specific sectors of business including Music, Life Insurance, Business Loans, Banking, Entertainment, NFTs, Collectibles, Sports, Car and Home Savings, etc — and with star-power of RSC, will be the first to know about future coins! That means future gains for savvy investors.",
-    "explorer": "https://bscscan.com/token/0x9641C1eee00471f7dA822167F6CF77202356179a",
     "type": "BEP20",
-    "symbol": "R$C",
+    "symbol": "R$C ",
     "decimals": 9,
+    "website": "https://www.rhymesickco.in/",
+    "description": "Deprecated Token Contract. New Contract at 0x9fc7ae8a9957ba4964d86f5eb78a6995ecc6a7a2",
+    "explorer": "https://bscscan.com/token/0x9641C1eee00471f7dA822167F6CF77202356179a",
     "status": "active",
-    "id": "0x9641C1eee00471f7dA822167F6CF77202356179a"
+    "id": "0x9641C1eee00471f7dA822167F6CF77202356179a",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/RhymeSickCoin"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/rhymesick"
+        }
+    ]
 }
