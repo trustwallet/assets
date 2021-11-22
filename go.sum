@@ -218,6 +218,8 @@ github.com/mitchellh/mapstructure v1.4.1/go.mod h1:bFUtVrKA4DC2yAKiSyO/QUcy7e+RR
 github.com/modern-go/concurrent v0.0.0-20180228061459-e0a39a4cb421/go.mod h1:6dJC0mAP4ikYIbvyc7fijjWJddQyLn8Ig3JB5CqoB9Q=
 github.com/modern-go/reflect2 v0.0.0-20180701023420-4b7aa43c6742/go.mod h1:bx2lNnkwVCuqBIxFjflWJWanXIb3RllmbCylyMrvgv0=
 github.com/modern-go/reflect2 v1.0.1/go.mod h1:bx2lNnkwVCuqBIxFjflWJWanXIb3RllmbCylyMrvgv0=
+github.com/nfnt/resize v0.0.0-20180221191011-83c6a9932646 h1:zYyBkD/k9seD2A7fsi6Oo2LfFZAehjjQMERAvZLEDnQ=
+github.com/nfnt/resize v0.0.0-20180221191011-83c6a9932646/go.mod h1:jpp1/29i3P1S/RLdc7JQKbRpFeM1dOBd8T9ki5s+AY8=
 github.com/nxadm/tail v1.4.4/go.mod h1:kenIhsEOeOJmVchQTgglprH7qJGnHDVpk1VPCcaMI8A=
 github.com/nxadm/tail v1.4.8/go.mod h1:+ncqLTQzXmGhMZNUePPaPqPvBxHAIsmXswZKocGu+AU=
 github.com/onsi/ginkgo v1.6.0/go.mod h1:lLunBs/Ym6LB5Z9jYTR76FiuTmxDTDusOGeTQH+WWjE=
@@ -288,6 +290,12 @@ github.com/trustwallet/assets-go-libs v0.0.0-20211122160126-065dc30b0b04 h1:BUD1
 github.com/trustwallet/assets-go-libs v0.0.0-20211122160126-065dc30b0b04/go.mod h1:OmlsaD15wFyp9f5FFp3Imx157/0aU235xh37M5RwfFU=
 github.com/trustwallet/assets-go-libs v0.0.0-20211122172214-198d5a6b394d h1:DRoVcAx1WKOdUQLU8n0Al7OkGpquyFLpwIOBHvP0x1g=
 github.com/trustwallet/assets-go-libs v0.0.0-20211122172214-198d5a6b394d/go.mod h1:OmlsaD15wFyp9f5FFp3Imx157/0aU235xh37M5RwfFU=
+github.com/trustwallet/assets-go-libs v0.0.0-20211122175542-6788742787d6 h1:qGQvqFKfMhUSMdCkAe1zEfBZ74cCwFhtTP37x+ZPAbI=
+github.com/trustwallet/assets-go-libs v0.0.0-20211122175542-6788742787d6/go.mod h1:OmlsaD15wFyp9f5FFp3Imx157/0aU235xh37M5RwfFU=
+github.com/trustwallet/assets-go-libs v0.0.0-20211122191504-cd8b2ad15652 h1:wHQTE+8snRGq6jHBwVTou0r+xv1YVAeExzeZ6Dq8cHE=
+github.com/trustwallet/assets-go-libs v0.0.0-20211122191504-cd8b2ad15652/go.mod h1:OmlsaD15wFyp9f5FFp3Imx157/0aU235xh37M5RwfFU=
+github.com/trustwallet/assets-go-libs v0.0.3 h1:cWldvxbxqma3Jel5eddx06UwLVrbA+pDcT5rSBV8faA=
+github.com/trustwallet/assets-go-libs v0.0.3/go.mod h1:0nQmM5unJu0GuWSFJrWgSyOi2uUGnYmjQ53SkKe7/qI=
 github.com/trustwallet/go-libs v0.2.17 h1:l2zr5Ow19GTPnoWbhjExAhTbz7xLcYPXBa10EIgItjI=
 github.com/trustwallet/go-libs v0.2.17/go.mod h1:gBDrDkN5wOY+8kwlU6pnv3l/seGJy2qH1OpTKe7NnXA=
 github.com/trustwallet/go-primitives v0.0.11 h1:uVjm1IssSrur5MjnSbl+LerljnaU8pvgoBxq7krjNvI=
