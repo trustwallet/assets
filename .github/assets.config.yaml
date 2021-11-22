@@ -37,6 +37,7 @@ validators_settings:
       - ".git"
       - ".eslintignore"
       - ".eslintrc.js"
+      - "cmd"
       - "go.mod"
       - "go.sum"
     skip_files:
@@ -52,6 +53,7 @@ validators_settings:
   chain_info_folder:
     has_files:
       - "logo.png"
+      - "info.json"
 
   dapps_folder:
     ext: ".png"

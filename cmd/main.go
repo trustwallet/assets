@@ -31,9 +31,6 @@ func main() {
 		log.WithError(err).Fatal("failed to init validator service")
 	}
 
-	// TODO
-	// reporterService := reporter.NewReportService()
-
 	assetfsProcessor := processor.NewService(fileStorage, validatorsService)
 	err = assetfsProcessor.RunSanityCheck(paths)
 	if err != nil {
@@ -57,6 +54,4 @@ func setup() {
 
 	log.SetLevel(logLevel)
 	log.SetOutput(os.Stdin)
-
-	log.WithField("conf", config.Default).Debug("App Config")
 }
