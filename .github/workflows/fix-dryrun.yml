@@ -1,24 +1,24 @@
-name: Fixes (sanity and consistency) - Dry run
-on:
-  pull_request:
-    branches: [master]
-jobs:
-  fix-all-dryrun:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 12
-      - name: Install Dependencies
-        run: npm ci
-      - name: Run fix script
-        run: npm run fix
-      - name: Show fix result (diff); run 'npm run fix' locally
-        run: |
-          git status
-          git diff
-      - name: Run check
-        run: npm run check
-      - name: Run test
-        run: npm t
+# name: Fixes (sanity and consistency) - Dry run
+# on:
+#   pull_request:
+#     branches: [master]
+# jobs:
+#   fix-all-dryrun:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v2
+#       - uses: actions/setup-node@v1
+#         with:
+#           node-version: 12
+#       - name: Install Dependencies
+#         run: npm ci
+#       - name: Run fix script
+#         run: npm run fix
+#       - name: Show fix result (diff); run 'npm run fix' locally
+#         run: |
+#           git status
+#           git diff
+#       - name: Run check
+#         run: npm run check
+#       - name: Run test
+#         run: npm t
