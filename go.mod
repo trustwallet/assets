@@ -4,7 +4,7 @@ go 1.17
 
 require (
 	github.com/sirupsen/logrus v1.8.1
-	github.com/trustwallet/assets-go-libs v0.0.3
+	github.com/trustwallet/assets-go-libs v0.0.4
 )
 
 require (
@@ -13,7 +13,6 @@ require (
 	github.com/hashicorp/hcl v1.0.0 // indirect
 	github.com/magiconair/properties v1.8.5 // indirect
 	github.com/mitchellh/mapstructure v1.4.1 // indirect
-	github.com/nfnt/resize v0.0.0-20180221191011-83c6a9932646 // indirect
 	github.com/pelletier/go-toml v1.9.3 // indirect
 	github.com/spf13/afero v1.6.0 // indirect
 	github.com/spf13/cast v1.3.1 // indirect
@@ -24,7 +23,6 @@ require (
 	github.com/trustwallet/go-libs v0.2.17 // indirect
 	github.com/trustwallet/go-primitives v0.0.11 // indirect
 	golang.org/x/crypto v0.0.0-20210817164053-32db794688a5 // indirect
-	golang.org/x/image v0.0.0-20190802002840-cff245a6509b // indirect
 	golang.org/x/sys v0.0.0-20210816183151-1e6c022a8912 // indirect
 	golang.org/x/text v0.3.5 // indirect
 	gopkg.in/ini.v1 v1.62.0 // indirect
