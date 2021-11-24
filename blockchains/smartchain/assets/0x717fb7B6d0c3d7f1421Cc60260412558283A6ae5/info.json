@@ -1,0 +1,29 @@
+{
+    "name": "Tag Protocol - TAG",
+    "website": "https://tagcoin.io/",
+    "description": "Tagcoin - Native token of Tagprotocol",
+    "explorer": "https://bscscan.com/token/0x717fb7b6d0c3d7f1421cc60260412558283a6ae5",
+    "type": "BEP20",
+    "symbol": "TAG",
+    "decimals": 18,
+    "status": "active",
+    "id": "0x717fb7B6d0c3d7f1421Cc60260412558283A6ae5",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/tagprotocol"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://tagprotocol.s3.us-east-1.amazonaws.com/Tagcoin%20-%20White%20Paper.pdf"
+        },
+        {
+            "name": "coinmarketcap",
+            "url":  "https://coinmarketcap.com/currencies/tag-protocol/"
+        },
+        {
+            "name":"coingecko",
+            "url":"https://www.coingecko.com/en/coins/tag-protocol"
+        }
+    ]
+}
