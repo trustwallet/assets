@@ -19,3 +19,15 @@ jobs:
         run: npm t
       - name: Run lint
         run: npm run lint
+
+      - name: Set up Go 1.17
+        uses: actions/setup-go@v2
+        with:
+          go-version: 1.17
+        id: go
+
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Run check (sanity only)
+        run: go run ./cmd/main.go --config=./.github/assets.config.yaml --script=sanity-check

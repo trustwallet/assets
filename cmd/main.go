@@ -2,6 +2,7 @@ package main
 
 import (
 	"flag"
+	"os"
 
 	log "github.com/sirupsen/logrus"
 
@@ -54,7 +55,12 @@ func main() {
 			"warnings":    report.Warnings,
 			"fixed":       report.Fixed,
 		}).Info(key)
+
+		if report.Errors > 0 {
+			os.Exit(1)
+		}
 	}
+
 }
 
 func setup() {
