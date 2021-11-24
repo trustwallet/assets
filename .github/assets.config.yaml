@@ -6,16 +6,11 @@ client_urls:
 
 validators_settings:
   image_file:
-    size: 100 # file size in KB
+    size_kb: 100
     max_w: 512
     max_h: 512
     min_w: 50
     min_h: 50
-
-  asset_folder:
-    allowed_files:
-      - "logo.png"
-      - "info.json"
 
   root_folder:
     allowed_files:
@@ -50,10 +45,19 @@ validators_settings:
       - "validators"
       - "info"
 
+  asset_folder:
+    allowed_files:
+      - "logo.png"
+      - "info.json"
+
   chain_info_folder:
     has_files:
       - "logo.png"
       - "info.json"
+
+  chain_validators_asset_folder:
+    has_files:
+      - "logo.png"
 
   dapps_folder:
     ext: ".png"
