@@ -186,6 +186,9 @@
                 },
                 {
                     "base": "c20000714_t0x7859B01BbF675d67Da8cD128a50D155cd881B576"
+                },
+                {
+                    "base": "c20000714_t0xBb0fA2fBE9b37444f5D1dBD22e0e5bdD2afbbE85"
                 }
             ]
         },
@@ -844,6 +847,16 @@
             "symbol": "XMS",
             "decimals": 18,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0x7859B01BbF675d67Da8cD128a50D155cd881B576/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c20000714_t0xBb0fA2fBE9b37444f5D1dBD22e0e5bdD2afbbE85",
+            "type": "BEP20",
+            "address": "0xBb0fA2fBE9b37444f5D1dBD22e0e5bdD2afbbE85",
+            "name": "USD Mars",
+            "symbol": "USDm",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/smartchain/assets/0xBb0fA2fBE9b37444f5D1dBD22e0e5bdD2afbbE85/logo.png",
             "pairs": []
         }
     ],
