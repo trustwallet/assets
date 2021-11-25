@@ -1,9 +1,33 @@
-"name": "Rayons Energy",
-"website": "https://rayonsenergy.com",
-"description": "Rayons Energy is a technology company focused on solar energy generation and its applications, seeking to consolidate the use of clean energy in the market.",
-"explorer": "https://bscscan.com/token/0x81b24Bd68791f970dbe0Cff281445E3486866b4c",
-"type": "BEP20",
-"symbol": "RAYONS",
-"decimals": 9,
-"status": "active",
-"id": "0x81b24Bd68791f970dbe0Cff281445E3486866b4c"
+{
+    "name": "Rayons Energy",
+    "type": "BEP20",
+    "symbol": "RAYONS",
+    "decimals": 9,
+    "website": "https://rayonsenergy.com/",
+    "description": "Rayons Energy is a technology company focused on solar energy generation and its applications, seeking to consolidate the use of clean energy in the market. Initially, we are going to create a photovoltaic plant to use the energy to mine cryptocurrencies. In a second stage, we are going create a large-scale solar plant to sell the energy generated to companies via a consortium.",
+    "explorer": "https://bscscan.com/token/0x81b24Bd68791f970dbe0Cff281445E3486866b4c",
+    "status": "active",
+    "id": "0x81b24Bd68791f970dbe0Cff281445E3486866b4c",
+    "links": [
+        {
+            "name": "whitepaper",
+            "url": "https://rayonsenergy.com/whitepaper/"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/en_rayons"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/RayonsEnergy_USA"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/rayons-energy"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/pt-br/currencies/rayons-energy/"
+        }
+    ]
+}
