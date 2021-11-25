@@ -1,17 +1,21 @@
 {
-   "name": "Media Licensing Token",
-    "website": "https://www.milc.global/",
-    "description": "MILC - Media Industry Licensing Content. Global decentralized marketplace for professional content trading, licensing and production.",
-    "explorer": "https://etherscan.io/token/0x9506d37f70eb4c3d79c398d326c871abbf10521d",
+    "name": "Media Licensing Token (MLT)",
     "type": "ERC20",
     "symbol": "MLT",
     "decimals": 18,
+    "website": "https://www.milc.global",
+    "description": "MILC - Media Industry Licensing Content. Global decentralized marketplace for professional content trading, licensing and production.",
+    "explorer": "https://etherscan.io/token/0x9506d37f70eB4C3d79C398d326C871aBBf10521d",
     "status": "active",
-    "id": "0x9506d37f70eB4C3d79C398d326C871aBBf10521d"
+    "id": "0x9506d37f70eB4C3d79C398d326C871aBBf10521d",
     "links": [
         {
             "name": "twitter",
             "url": "https://twitter.com/MILCplatform"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/welt-der-wunder"
         },
         {
             "name": "telegram",
@@ -22,24 +26,20 @@
             "url": "https://milc.medium.com/"
         },
         {
-            "name": "certik",
-            "url": "https://www.certik.org/projects/milcplatform"
-        },
-        {
-            "name": "wiki",
-            "url": "https://milc.medium.com/"
-        },
-        {
             "name": "whitepaper",
             "url": "https://welt-der-wunder.s3.eu-central-1.amazonaws.com/ico/pdfs/Media%20Industry%20Licensing%20Content%20Whitepaper.pdf"
         },
         {
-            "name": "onepager",
-            "url": "https://welt-der-wunder.s3.eu-central-1.amazonaws.com/ico/pdfs/One_Pager.pdf"
+            "name": "youtube",
+            "url": "https://youtube.com/channel/UCeub3BnhjAXex0vwUuMIhaQ"
         },
         {
-            "name": "deck",
-            "url": "https://welt-der-wunder.s3.eu-central-1.amazonaws.com/ico/pdfs/MILC%20Deck.pdf"
+            "name": "docs",
+            "url": "https://wiki.milc.global/"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/q5JhQYRbdF"
         }
     ]
 }
