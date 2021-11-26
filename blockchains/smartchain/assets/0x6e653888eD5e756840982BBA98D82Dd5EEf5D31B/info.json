@@ -1,11 +1,25 @@
-    {
-      "name": "Falafel Coin",
-    "website": "https://falafeltoken.com/",
-    "description": "Falafel Coin is a futuristic indie blockchain gaming company that will reward you for playing games! Yes, earn while you play. We have already introduced the first free Play2Earn game on mobile app stores. We will continue to publish games with a unique Crypto rewards system that will give the players the opportunity to earn Crypto for free. No deposits or transaction fees will be required, everything is on us!",
-    "explorer": "https://bscscan.com/token/0x6e653888eD5e756840982BBA98D82Dd5EEf5D31B",
+{
+    "name": "Falafel Coin",
     "type": "BEP20",
     "symbol": "FALAFEL",
     "decimals": 9,
+    "website": "https://falafeltoken.com",
+    "description": "Falafel Coin is a futuristic indie blockchain gaming company that will reward you for playing games! Yes, earn while you play.\n\nWe have already introduced the first free Play2Earn game on mobile app stores. We will continue to publish games with a unique Crypto rewards system that will give the players the opportunity to earn Crypto for free. No deposits or transaction fees will be required, everything is on us!",
+    "explorer": "https://bscscan.com/token/0x6e653888eD5e756840982BBA98D82Dd5EEf5D31B",
     "status": "active",
-    "id": "0x6e653888eD5e756840982BBA98D82Dd5EEf5D31B"
+    "id": "0x6e653888eD5e756840982BBA98D82Dd5EEf5D31B",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/FalafelToken"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/falafeltoken/falafellsmartcontract"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/falafeltoken"
+        }
+    ]
 }
