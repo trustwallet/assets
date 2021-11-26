@@ -1,11 +1,41 @@
 {
-    "name": ""MagnetGold",
-    "website": "https://www.mtggold.com/",
-    "description": "MagnetGold is created by Longreen Corporation Limited. We built MagnetGold (MTG) Token because we strongly believe that it will represent the heart of the ecosystem for a new category of investors, companies seeking to grow their capital, investment funds, venture capital, families, offices, traders and so on.",
-    "explorer": "https://bscscan.com/token/0x323273b8EE5Ae6247b47C38C81dB45E1beF13E6F",
+    "name": "MagnetGold",
     "type": "BEP20",
     "symbol": "MTG",
     "decimals": 18,
+    "website": "https://mtggold.com/",
+    "description": "Fee is already in previous PR \"Update Logo For Existing Token - MagnetGold\n#14230\"\nKindly upload and show our MagnetGold Logo on Trust Wallet",
+    "explorer": "https://bscscan.com/token/0x323273b8EE5Ae6247b47C38C81dB45E1beF13E6F",
     "status": "active",
-    "id": "0x323273b8ee5ae6247b47c38c81db45e1bef13e6f"
+    "id": "0x323273b8EE5Ae6247b47C38C81dB45E1beF13E6F",
+    "links": [
+        {
+            "name": "telegram",
+            "url": "https://t.me/yourmagnetgold/"
+        },
+        {
+            "name": "facebook",
+            "url": "https://facebook.com/yourmagnetgold/"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/YMagnetgold"
+        },
+        {
+            "name": "youtube",
+            "url": "https://youtube.com/channel/UClEqjwDYM9DWOa2yyXB1luQ"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://mtggold.com/images/MTGGOLD-WHITEPAPER.pdf"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/magnet-gold/"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/@magnetgold"
+        }
+    ]
 }
