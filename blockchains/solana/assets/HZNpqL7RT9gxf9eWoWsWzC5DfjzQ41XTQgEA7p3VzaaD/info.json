@@ -3,7 +3,6 @@
     "website": "https://trustwallet.com",
     "description": "Utility token to increase adoption of cryptocurrency.",
     "explorer": "https://explorer.solana.com/address/HZNpqL7RT9gxf9eWoWsWzC5DfjzQ41XTQgEA7p3VzaaD",
-    "research": "https://research.binance.com/en/projects/trustwallet",
     "type": "SPL",
     "symbol": "TWT",
     "decimals": 8,
@@ -21,6 +20,10 @@
         {
             "name": "reddit",
             "url": "https://reddit.com/r/trustapp"
+        },
+        {
+            "name": "research",
+            "url": "https://research.binance.com/en/projects/trustwallet"
         }
     ]
 }
