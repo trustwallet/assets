@@ -6,5 +6,23 @@
     "symbol": "EGT",
     "decimals": 9,
     "status": "active",
-    "id": "0xa865c6CC3A6164c3a0188efEED6F32ABa134693c"
+    "id": "0xa865c6CC3A6164c3a0188efEED6F32ABa134693c",
+ "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/evergreentokens"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://dev.evergreentokens.org/files/Green_Paper.pdf"
+        },
+        {
+            "name": "coinmarketcap",
+            "url":  "https://coinmarketcap.com/currencies/evergreen-token/"
+        },
+        {
+            "name":"coingecko",
+            "url":"https://www.coingecko.com/en/coins/evergreen-token"
+        }
+    ]
 }
