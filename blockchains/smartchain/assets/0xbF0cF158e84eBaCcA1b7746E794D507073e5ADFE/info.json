@@ -1,10 +1,25 @@
-    "name": "BEPR",
-    "website": "https://beurop.com/",
-    "description": "BEPR token is treated as the company assets of BEUROP.",
-    "explorer": "https://bscscan.com/token/0xbF0cF158e84eBaCcA1b7746E794D507073e5ADFE",
+{
+    "name": "Beurop",
     "type": "BEP20",
     "symbol": "BEPR",
     "decimals": 9,
+    "website": "https://beurop.com/",
+    "description": "Bepr is a revolutionary token that serves the entire ecosystem of the company’s blockchain products.",
+    "explorer": "https://bscscan.com/token/0xbF0cF158e84eBaCcA1b7746E794D507073e5ADFE",
     "status": "active",
-    "id": "0xbF0cF158e84eBaCcA1b7746E794D507073e5ADFE"
+    "id": "0xbF0cF158e84eBaCcA1b7746E794D507073e5ADFE",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/project_euro"
+        },
+        {
+            "name": "facebook",
+            "url": "https://facebook.com/beuropro"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/beurop"
+        }
+    ]
 }
