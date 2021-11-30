@@ -1,37 +1,21 @@
 {
     "name": "TCGCoin 2.0",
-    "website": "https://tcg.world/",
-    "description": "TCGCoin 2.0 - The largest open world Metaverse NFT platform",
-    "explorer": "https://bscscan.com/token/0xf73d8276c15ce56b2f4aee5920e62f767a7f3aea",
     "type": "BEP20",
     "symbol": "TCG2",
     "decimals": 9,
+    "website": "https://tcg.world/",
+    "description": "The largest open world Metaverse NFT platform",
+    "explorer": "https://bscscan.com/token/0xF73d8276C15Ce56b2f4AeE5920e62F767A7f3aEA",
     "status": "active",
-    "id": "0xf73d8276c15ce56b2f4aee5920e62f767a7f3aea",
+    "id": "0xF73d8276C15Ce56b2f4AeE5920e62F767A7f3aEA",
     "links": [
         {
             "name": "twitter",
             "url": "https://twitter.com/OfficialTCGCoin"
         },
         {
-            "name": "github",
-            "url": "https://github.com/blockczechorg"
-        },
-        {
             "name": "telegram",
             "url": "https://t.me/TCGGaming"
-        },
-        {
-            "name": "blog",
-            "url": "https://medium.com/@TCG_World"
-        },
-        {
-            "name": "whitepaper",
-            "url": "https://tcg.world/whitepaper"
-        },
-        {
-            "name": "youtube",
-            "url": "https://youtube.com/c/TCGWorldOfficial"
         },
         {
             "name": "reddit",
@@ -42,8 +26,36 @@
             "url": "https://discord.com/invite/EbPsQzmB6V"
         },
         {
+            "name": "medium",
+            "url": "https://medium.com/@TCG_World"
+        },
+        {
             "name": "facebook",
             "url": "https://facebook.com/TCGCoinOfficial"
+        },
+        {
+            "name": "youtube",
+            "url": "https://youtube.com/c/TCGWorldOfficial"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/tcgcoin-2-0/"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://tcg.world/whitepaper"
+        },
+        {
+            "name": "source_code",
+            "url": "https://github.com/blockczechorg/tcgworld_solidity/"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/blockczechorg"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/tcgcoin-2-0"
         }
     ]
 }
