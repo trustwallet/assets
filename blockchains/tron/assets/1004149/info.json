@@ -1,9 +1,29 @@
-"name": "Albicoin",
-    "website": "http://www.albicoin.com",
-    "description": "Albc is official token of www.albicoin.com.",
-    "explorer": "https://tronscan.org/#/token/1004149",
+{
+    "name": "Albicoin",
     "type": "TRC10",
-    "symbol": "ALBC",
+    "symbol": "Albc",
     "decimals": 3,
+    "website": "https://albicoin.com",
+    "description": "albicoin (ALBC) is the official token of the website, which provides secure and guaranteed investment support for those who want to invest in the crypto sector and receive support in this regard, and also constantly informs its customers about discounts and opportunities.",
+    "explorer": "https://tronscan.io/#/token/1004149",
     "status": "active",
-    "id": "1004149"
+    "id": "1004149",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/albicoingold"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/albicoin"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://albicoin.com/whitepaper.pdf"
+        },
+        {
+            "name": "facebook",
+            "url": "https://facebook.com/albicoingold"
+        }
+    ]
+}
