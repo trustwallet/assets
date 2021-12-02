@@ -6,6 +6,7 @@ on:
   workflow_dispatch:
 jobs:
   upload-s3:
+    needs: pull_request_ci
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
