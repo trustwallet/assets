@@ -1,6 +1,11 @@
 {
-"ticker": "$ETH2X-FLI-P",
-"token name": "ETH 2x Flexible Leverage Index",
-"token contract address": "0x3Ad707dA309f3845cd602059901E39C4dcd66473",
-"token logo": "https://drive.google.com/file/d/1rSjZ_2L6np1lR6SVVM8qmM32wmMa9mcy/view additional formats available at https://docs.indexcoop.com/resources/press-kit"
+    "name": "ETH 2x Flexible Leverage Index",
+    "symbol": "ETH2X-FLI-P",
+    "type": "ERC20",
+    "decimals": 18,
+    "description": "-",
+    "website": "https://indexcoop.com/",
+    "explorer": "https://etherscan.io/token/0x3Ad707dA309f3845cd602059901E39C4dcd66473",
+    "status": "",
+    "id": "0x3Ad707dA309f3845cd602059901E39C4dcd66473"
 }
