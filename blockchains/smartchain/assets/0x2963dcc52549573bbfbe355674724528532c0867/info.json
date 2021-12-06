@@ -1,11 +1,11 @@
 {
     "name": "Project-X",
-    "website": "https://pexcoin.io/",
-    "description": "NFT platform made for artists and content creators",
-    "explorer": "https://bscscan.com/token/0x2963dcc52549573bbfbe355674724528532c0867",
     "type": "BEP20",
     "symbol": "PEX",
     "decimals": 18,
+    "website": "https://pexcoin.io/",
+    "description": "Metaverse platform made for artists and content creators",
+    "explorer": "https://bscscan.com/token/0x2963dCc52549573BBFBe355674724528532C0867",
     "status": "active",
     "id": "0x2963dCc52549573BBFBe355674724528532C0867",
     "links": [
@@ -14,8 +14,8 @@
             "url": "https://twitter.com/PexCoinProject"
         },
         {
-            "name": "coingecko",
-            "url": "https://www.coingecko.com/en/coins/pexcoin"
+            "name": "telegram",
+            "url": "https://t.me/Pexcoinproject"
         },
         {
             "name": "medium",
@@ -24,6 +24,10 @@
         {
             "name": "coinmarketcap",
             "url": "https://coinmarketcap.com/currencies/pexcoin/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/pexcoin"
         }
     ]
 }
