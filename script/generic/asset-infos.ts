@@ -317,7 +317,9 @@ export function explorerUrl(chain: string, contract: string): string {
                 return `https://finder.terra.money/columbus-4/${contract}`
             case "ronin":
                 return `https://explorer.roninchain.com/token/ronin:${contract}`
-            }
+            case "celo":
+                return `https://explorer.bitquery.io/celo_rc1/token/${contract}`;
+        }
     }
     return "";
 }
