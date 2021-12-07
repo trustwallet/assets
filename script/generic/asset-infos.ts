@@ -224,6 +224,7 @@ export function chainFromAssetType(type: string): string {
         case "FANTOM": return "fantom";
         case "TERRA": return "terra";
         case "RONIN": return "ronin";
+        case "CELO": return "celo";
         default: return "";
     }
 }
@@ -316,7 +317,9 @@ export function explorerUrl(chain: string, contract: string): string {
                 return `https://finder.terra.money/columbus-4/${contract}`
             case "ronin":
                 return `https://explorer.roninchain.com/token/ronin:${contract}`
-            }
+            case "celo":
+                return `https://explorer.bitquery.io/celo_rc1/token/${contract}`;
+        }
     }
     return "";
 }
