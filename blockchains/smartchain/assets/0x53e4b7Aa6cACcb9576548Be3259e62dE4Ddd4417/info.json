@@ -7,5 +7,27 @@
   "symbol": "DAL",
   "decimals": 18,
   "status": "active",
-  "id": "0x53e4b7Aa6cACcb9576548Be3259e62dE4Ddd4417"
+  "id": "0x53e4b7Aa6cACcb9576548Be3259e62dE4Ddd4417",
+  "links": [
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/daolaunch/"
+        },
+        {
+            "name": "gate",
+            "url": "https://www.gate.io/vn/trade/DAL_USDT"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/DAOLaunchOfficial"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/daolaunch"
+        },
+        {
+            "name": "medium",
+            "url": "https://daolaunch.medium.com"
+        }
+    ]
 }
