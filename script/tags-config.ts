@@ -55,4 +55,14 @@ export const TagValues: TagDescription[] = [
         name: "NSFW",
         description: "Content Not suitable for work."
     },
+    {
+        id: "binance-peg",
+        name: "Binance-Peg",
+        description: "Binance-Peg tokens."
+    },
+    {
+        id: "deflationary",
+        name: "Deflationary",
+        description: "Tokens that are deflationary or use mechanism to burn a token on transfer/swap."
+    }
 ];
