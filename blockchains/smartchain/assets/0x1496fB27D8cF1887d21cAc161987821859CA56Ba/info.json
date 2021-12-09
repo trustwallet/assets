@@ -7,5 +7,19 @@
 	"symbol":      "AMC",
 	"decimals":    18,
 	"status":      "active",
-	"id":          "0x1496fB27D8cF1887d21cAc161987821859CA56Ba"
+	"id":          "0x1496fB27D8cF1887d21cAc161987821859CA56Ba",
+	"links": [
+		{
+			"name": "telegram",
+			"url": "https://t.me/AMC_Token"
+		},
+		{
+			"name": "coinmarketcap",
+			"url": "https://coinmarketcap.com/currencies/amc-fight-night/"
+		},
+		{
+			"name": "coingecko",
+			"url": "https://www.coingecko.com/en/coins/amc-fight-night/"
+		}
+	]
 }
