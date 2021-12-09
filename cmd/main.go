@@ -8,9 +8,9 @@ import (
 
 	"github.com/trustwallet/assets-go-libs/pkg/file"
 	"github.com/trustwallet/assets-go-libs/src/config"
+	"github.com/trustwallet/assets-go-libs/src/core"
 	"github.com/trustwallet/assets-go-libs/src/processor"
 	"github.com/trustwallet/assets-go-libs/src/reporter"
-	"github.com/trustwallet/assets-go-libs/src/validator"
 )
 
 var (
@@ -25,14 +25,16 @@ func main() {
 		log.WithError(err).Fatal("failed to load file structure")
 	}
 
-	fileStorage := file.NewFileService()
-	validatorsService := validator.NewService(fileStorage)
+	fileStorage := file.NewService()
+	validatorsService := core.NewService(fileStorage)
 	reportService := reporter.NewReportService()
 	assetfsProcessor := processor.NewService(fileStorage, validatorsService, reportService)
 
 	switch script {
 	case "sanity-check":
 		err = assetfsProcessor.RunSanityCheck(paths)
+	case "update-auto":
+		err = assetfsProcessor.RunUpdateAuto()
 	default:
 		log.Error("Nothing to launch. Use --script flag to choose a script to run.")
 	}
