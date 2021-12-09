@@ -1,13 +1,16 @@
 {
-    "name": "Celo Dollar",
+    "name": "Celo Euro",
     "website": "https://celo.org",
-    "description": "Celo Dollar (cUSD) ERC20 Token in Celo Mainnet. Token is implemented as ERC20 smart contract with address",
-    "explorer": "https://explorer.bitquery.io/celo_rc1/token/0x765de816845861e75a25fca122bb6898b8b1282a",
-    "type": "ERC20",
-    "symbol": "cUSD",
+    "description": "Celo Euro (cEUR) ERC20 Token in Celo Mainnet. Token is implemented as ERC20 smart contract with address",
+    "explorer": "https://explorer.bitquery.io/celo_rc1/token/0xd8763cba276a3738e6de85b4b3bf5fded6d6ca73",
+    "type": "CELO",
+    "symbol": "cEUR",
     "decimals": 18,
     "status": "active",
-    "id": "0x765DE816845861e75A25fCA122bb6898B8B1282a",
+    "id": "0xD8763CBa276a3738E6DE85b4b3bF5FDed6D6cA73",
+    "tags": [
+        "stablecoin"
+    ],
     "links": [
         {
             "name": "twitter",
