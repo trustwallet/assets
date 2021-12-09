@@ -223,6 +223,8 @@ export function chainFromAssetType(type: string): string {
         case "ARBITRUM": return "arbitrum";
         case "FANTOM": return "fantom";
         case "TERRA": return "terra";
+        case "RONIN": return "ronin";
+        case "CELO": return "celo";
         default: return "";
     }
 }
@@ -313,7 +315,11 @@ export function explorerUrl(chain: string, contract: string): string {
                 return `https://ftmscan.com/token/${contract}`
             case "terra":
                 return `https://finder.terra.money/columbus-4/${contract}`
-            }
+            case "ronin":
+                return `https://explorer.roninchain.com/token/ronin:${contract}`
+            case "celo":
+                return `https://explorer.bitquery.io/celo_rc1/token/${contract}`;
+        }
     }
     return "";
 }
@@ -400,12 +406,8 @@ function isAssetInfoOK(chain: string, isCoin: boolean, address: string, errors: 
                         let matchCount = 0;
                         explorersAlt.forEach(exp => { if (exp.toLowerCase() == explorerActualLower) { ++matchCount; }});
                         if (matchCount == 0) {
-                            // none matches, this is warning/error
-                            if (chain.toLowerCase() == CoinType.name(CoinType.ethereum) || chain.toLowerCase() == CoinType.name(CoinType.smartchain)) {
-                                errors.push(`Incorrect explorer, ${explorerActual} instead of ${explorerExpected} (${explorersAlt.join(', ')})`);
-                            } else {
-                                warnings.push(`Unexpected explorer, ${explorerActual} instead of ${explorerExpected} (${explorersAlt.join(', ')})`);
-                            }
+                            // none matches, this is error
+                            errors.push(`Incorrect explorer, ${explorerActual} instead of ${explorerExpected} (${explorersAlt.join(', ')})`);
                         }
                     }
                 }
