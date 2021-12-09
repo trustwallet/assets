@@ -4,7 +4,7 @@ go 1.17
 
 require (
 	github.com/sirupsen/logrus v1.8.1
-	github.com/trustwallet/assets-go-libs v0.0.11-0.20211209184253-ba34649a8816
+	github.com/trustwallet/assets-go-libs v0.0.11-0.20211209191823-41a485d34f94
 )
 
 require (

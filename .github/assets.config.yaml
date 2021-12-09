@@ -6,6 +6,9 @@ client_urls:
     explorer: https://explorer.binance.org
     dex: https://dex-atlantic.binance.org/api
 
+urls:
+  tw_assets_app: https://assets.trustwalletapp.com
+
 validators_settings:
   root_folder:
     allowed_files:
