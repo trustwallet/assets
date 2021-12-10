@@ -7,5 +7,59 @@
     "symbol": "KWS",
     "decimals": 18,
     "status": "active",
-    "id": "0x5D0E95C15cA50F13fB86938433269D03112409Fe"
+    "id": "0x5D0E95C15cA50F13fB86938433269D03112409Fe",
+    "links": [
+	{
+		"name": "whitepaper", 
+		"url": "https://docs.knightwar.io/pitchdeck-litepaper/litepaperv1.2"
+	},
+	{	
+		"name": "github",
+                "url": "https://github.com/knightwar-io/contracts"
+	},
+	{
+		"name": "twitter",
+		"url": "https://twitter.com/knightwarp2e"
+	},
+	{	
+		"name": "telegram",
+		"url": "https://t.me/knightwarplaytowin"
+	},
+	{
+		"name": "telegram_news",
+		"url": "https://t.me/knightwarplaytowinann"
+	},
+	{
+		"name": "discord",
+		"url": "https://discord.gg/knightwarp2e"
+	},
+	{
+		"name": "facebook",
+		"url": "https://facebook.com/knightwarp2e"
+	},
+	{
+		"name": "youtube",
+		"url": "https://www.youtube.com/channel/UClvlyB9pjQjU3idu09FZnBQ"
+	},
+	{
+		"name": "coinmarketcap",
+		"url": "https://coinmarketcap.com/currencies/knight-war/"
+	},
+	{	
+		"name": "coingecko",
+		"url": "https://www.coingecko.com/en/coins/knight-war-spirits"
+	},
+	{
+		"name": "blog",
+		"url": "https://knightwartheholytrio.substack.com/"
+	},
+	{	
+		"name": "docs",
+		"url": "https://docs.knightwar.io"
+	},
+	{
+		"name": "medium",
+		"url": "https://medium.com/@knightwarp2e"
+	}
+	]
 }
