@@ -1,13 +1,30 @@
 name: Check
 on:
   push:
-    branches: [ master ]
-  workflow_dispatch:
+    branches: 
+      - '*'
+  pull_request:
+    branches: master
+
 jobs:
-  check:
+  sanity-check:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+
+      - name: Set up Go 1.17
+        uses: actions/setup-go@v2
+        with:
+          go-version: 1.17
+        id: go
+
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Run check
+        run: go run ./cmd/main.go --config=./.github/assets.config.yaml --script=sanity-check
+      
+      # TODO: remove it after making sure both ci work the same
       - uses: actions/setup-node@v1
         with:
           node-version: 12
@@ -19,15 +36,3 @@ jobs:
         run: npm t
       - name: Run lint
         run: npm run lint
-
-      - name: Set up Go 1.17
-        uses: actions/setup-go@v2
-        with:
-          go-version: 1.17
-        id: go
-
-      - name: Check out code
-        uses: actions/checkout@v2
-
-      - name: Run check (sanity only)
-        run: go run ./cmd/main.go --config=./.github/assets.config.yaml --script=sanity-check
