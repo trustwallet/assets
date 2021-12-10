@@ -1,9 +1,29 @@
-{    "name": "ARCANE TOKEN",
-    "website": "https://arcanetoken.net/",
-    "description": "Arcane Token is a deflationary Token with solid tokenomics that helps the project to grow healthy and steady, long term holder get rewarded and we are aiming to be the number 1. NFT Token that will be anchored in this world for a long time.",
-    "explorer": "https://bscscan.com/token/0x477565B356B3973d16e8CD837C6970613f13e24A",
+{
+    "name": "ARCANE TOKEN",
     "type": "BEP20",
     "symbol": "ARCANE",
     "decimals": 9,
+    "website": "https://arcanetoken.net/",
+    "description": "Arcane Token is a deflationary Token with solid tokenomics that helps the project to grow healthy and steady,\nlong term holder get rewarded and we are aiming to be the number 1. NFT Token that will be anchored in this world for a long time.",
+    "explorer": "https://bscscan.com/token/0x477565B356B3973d16e8CD837C6970613f13e24A",
     "status": "active",
-    "id": "0x477565B356B3973d16e8CD837C6970613f13e24A"}
+    "id": "0x477565B356B3973d16e8CD837C6970613f13e24A",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/ArcanetokenBNB"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/ArcaneTokenBNB"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://github.com/Tech-Audit/Smart-Contract-Audits/blob/main/TECHAUDIT_ARCANE.pdf"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/arcane-token/"
+        }
+    ]
+}
