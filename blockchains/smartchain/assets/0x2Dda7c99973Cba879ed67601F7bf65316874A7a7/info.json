@@ -1,37 +1,33 @@
 {
-   "name":"iBNB",
-   "website":"https://www.ibnb.finance/",
-   "description":"iBNB is an ecosystem built to revolutionise decentralised finance and provide the most superior daily dividends in crypto. Advanced dividend pools provide sustainable daily dividends directly collectable from the website's dashboard.",
-   "explorer":"https://bscscan.com/token/0x2Dda7c99973Cba879ed67601F7bf65316874A7a7",
-   "type":"BEP20",
-   "symbol":"iBNB",
-   "decimals":9,
-   "status":"active",
-   "id":"0x2Dda7c99973Cba879ed67601F7bf65316874A7a7",
-   
-      "links": [
-         {
-             "name": "twitter",
-             "url": "https://twitter.com/iBNBfinance"
-         },
-         {
-             "name": "coinmarketcap",
-             "url": "https://coinmarketcap.com/currencies/i-bnb-new/"
-         },
-         {
-             "name": "coingecko",
-             "url": "https://www.coingecko.com/en/coins/ibnb"
-         },
-         {
-             "name": "telegram",
-             "url": "htpps://t.me/IBNBFinance"
-         },
-         {
-             "name": "whitepaper",
-             "url": "https://www.whitepaper.ibnb.finance"
-         }
-     ]
-
-      
-
+    "name": "iBNB",
+    "type": "BEP20",
+    "symbol": "iBNB",
+    "decimals": 9,
+    "website": "https://ibnb.finance",
+    "description": "iBNB is an ecosystem built to revolutionise decentralised finance and provide the most superior daily dividends in crypto. Advanced dividend pools provide sustainable daily dividends directly collectable from the website's dashboard.",
+    "explorer": "https://bscscan.com/token/0x2Dda7c99973Cba879ed67601F7bf65316874A7a7",
+    "status": "active",
+    "id": "0x2Dda7c99973Cba879ed67601F7bf65316874A7a7",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/iBNBfinance"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/i-bnb-new/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/ibnb"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/IBNBFinance"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://whitepaper.ibnb.finance"
+        }
+    ]
 }
