@@ -4,7 +4,7 @@ go 1.17
 
 require (
 	github.com/sirupsen/logrus v1.8.1
-	github.com/trustwallet/assets-go-libs v0.0.11-0.20211209191823-41a485d34f94
+	github.com/trustwallet/assets-go-libs v0.0.11
 )
 
 require (
@@ -22,8 +22,8 @@ require (
 	github.com/spf13/pflag v1.0.5 // indirect
 	github.com/spf13/viper v1.8.1 // indirect
 	github.com/subosito/gotenv v1.2.0 // indirect
-	github.com/trustwallet/go-libs v0.2.19 // indirect
-	github.com/trustwallet/go-primitives v0.0.16 // indirect
+	github.com/trustwallet/go-libs v0.2.20 // indirect
+	github.com/trustwallet/go-primitives v0.0.17 // indirect
 	golang.org/x/crypto v0.0.0-20210817164053-32db794688a5 // indirect
 	golang.org/x/sys v0.0.0-20210816183151-1e6c022a8912 // indirect
 	golang.org/x/text v0.3.5 // indirect
