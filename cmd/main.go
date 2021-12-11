@@ -29,9 +29,9 @@ func main() {
 
 	switch script {
 	case "checker":
-		err = assetfsProcessor.RunCheck(paths)
+		err = assetfsProcessor.RunJob(paths, assetfsProcessor.Check)
 	case "fixer":
-		err = assetfsProcessor.RunFix(paths)
+		err = assetfsProcessor.RunJob(paths, assetfsProcessor.Fix)
 	case "updater-auto":
 		err = assetfsProcessor.RunUpdateAuto()
 	default:
