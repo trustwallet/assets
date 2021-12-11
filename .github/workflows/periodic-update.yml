@@ -23,7 +23,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Run update auto
-        run: go run ./cmd/main.go --config=./.github/assets.config.yaml --script=update-auto
+        run: go run ./cmd/main.go --config=./.github/assets.config.yaml --script=updater-auto
 
       - name: Show update result (diff)
         if: success()
@@ -32,7 +32,7 @@ jobs:
           git diff
 
       - name: Run check
-        run: go run ./cmd/main.go --config=./.github/assets.config.yaml --script=sanity-check
+        run: go run ./cmd/main.go --config=./.github/assets.config.yaml --script=checker
 
       - name: Commit changes
         if: success()
