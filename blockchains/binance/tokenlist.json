@@ -1,7 +1,7 @@
 {
     "name": "Trust Wallet: BNB",
     "logoURI": "https://trustwallet.com/assets/images/favicon.png",
-    "timestamp": "2021-11-21T01:27:49.383Z",
+    "timestamp": "2021-12-09T01:27:25.353Z",
     "tokens": [
         {
             "asset": "c714",
@@ -54,13 +54,13 @@
                 },
                 {
                     "base": "c714_tAXPR-777",
-                    "lotSize": "1000000000",
+                    "lotSize": "10000000000",
                     "tickSize": "1"
                 },
                 {
                     "base": "c714_tBCH-1FD",
-                    "lotSize": "100000",
-                    "tickSize": "1000"
+                    "lotSize": "1000000",
+                    "tickSize": "100"
                 },
                 {
                     "base": "c714_tBCPT-95A",
@@ -84,7 +84,7 @@
                 },
                 {
                     "base": "c714_tBLINK-9C6",
-                    "lotSize": "100000000000",
+                    "lotSize": "1000000000000",
                     "tickSize": "1"
                 },
                 {
@@ -259,7 +259,7 @@
                 },
                 {
                     "base": "c714_tGTO-908",
-                    "lotSize": "10000000000",
+                    "lotSize": "1000000000",
                     "tickSize": "1"
                 },
                 {
@@ -419,7 +419,7 @@
                 },
                 {
                     "base": "c714_tQBX-38C",
-                    "lotSize": "10000000000",
+                    "lotSize": "100000000000",
                     "tickSize": "1"
                 },
                 {
@@ -454,12 +454,12 @@
                 },
                 {
                     "base": "c714_tSWIPE.B-DC0",
-                    "lotSize": "1000000000000",
+                    "lotSize": "10000000000000",
                     "tickSize": "1"
                 },
                 {
                     "base": "c714_tTM2-0C4",
-                    "lotSize": "100000000000",
+                    "lotSize": "1000000000000",
                     "tickSize": "1"
                 },
                 {
@@ -610,7 +610,7 @@
                 },
                 {
                     "base": "c714_tBCH-1FD",
-                    "lotSize": "100000",
+                    "lotSize": "1000000",
                     "tickSize": "100000"
                 },
                 {
@@ -620,7 +620,7 @@
                 },
                 {
                     "base": "c714_tBTCB-1DE",
-                    "lotSize": "1000",
+                    "lotSize": "10000",
                     "tickSize": "10000000"
                 },
                 {
@@ -676,7 +676,7 @@
                 {
                     "base": "c714_tRUNE-B1A",
                     "lotSize": "10000000",
-                    "tickSize": "10000"
+                    "tickSize": "1000"
                 },
                 {
                     "base": "c714_tSHR-DB6",
@@ -696,7 +696,7 @@
                 {
                     "base": "c714_tXRP-BF2",
                     "lotSize": "100000000",
-                    "tickSize": "1000"
+                    "tickSize": "100"
                 },
                 {
                     "base": "c714_tXTZ-F7A",
@@ -736,7 +736,7 @@
                 },
                 {
                     "base": "c714_tBTCB-1DE",
-                    "lotSize": "1000",
+                    "lotSize": "10000",
                     "tickSize": "10000000"
                 },
                 {
@@ -752,7 +752,7 @@
                 {
                     "base": "c714_tUND-EBC",
                     "lotSize": "1000000000",
-                    "tickSize": "100"
+                    "tickSize": "10"
                 }
             ]
         },
@@ -768,7 +768,7 @@
                 {
                     "base": "c714",
                     "lotSize": "100000",
-                    "tickSize": "1"
+                    "tickSize": "10"
                 },
                 {
                     "base": "c714_tANKR-E97",
@@ -803,7 +803,7 @@
                 },
                 {
                     "base": "c714_tBTCB-1DE",
-                    "lotSize": "1000",
+                    "lotSize": "10000",
                     "tickSize": "10000000"
                 },
                 {
@@ -2201,7 +2201,7 @@
         }
     ],
     "version": {
-        "major": 233,
+        "major": 243,
         "minor": 0,
         "patch": 0
     }

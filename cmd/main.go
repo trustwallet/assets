@@ -2,18 +2,17 @@ package main
 
 import (
 	"flag"
-	"os"
 
 	log "github.com/sirupsen/logrus"
 
 	"github.com/trustwallet/assets-go-libs/pkg/file"
 	"github.com/trustwallet/assets-go-libs/src/config"
+	"github.com/trustwallet/assets-go-libs/src/core"
 	"github.com/trustwallet/assets-go-libs/src/processor"
-	"github.com/trustwallet/assets-go-libs/src/validator"
 )
 
 var (
-	configPath, root string
+	configPath, root, script string
 )
 
 func main() {
@@ -24,23 +23,30 @@ func main() {
 		log.WithError(err).Fatal("failed to load file structure")
 	}
 
-	fileStorage := file.NewFileProvider()
+	fileStorage := file.NewService()
+	validatorsService := core.NewService(fileStorage)
+	assetfsProcessor := processor.NewService(fileStorage, validatorsService)
 
-	validatorsService, err := validator.NewService(fileStorage)
-	if err != nil {
-		log.WithError(err).Fatal("failed to init validator service")
+	switch script {
+	case "checker":
+		err = assetfsProcessor.RunJob(paths, assetfsProcessor.Check)
+	case "fixer":
+		err = assetfsProcessor.RunJob(paths, assetfsProcessor.Fix)
+	case "updater-auto":
+		err = assetfsProcessor.RunUpdateAuto()
+	default:
+		log.Error("Nothing to launch. Use --script flag to choose a script to run.")
 	}
 
-	assetfsProcessor := processor.NewService(fileStorage, validatorsService)
-	err = assetfsProcessor.RunSanityCheck(paths)
 	if err != nil {
 		log.WithError(err).Error()
 	}
 }
 
 func setup() {
-	flag.StringVar(&configPath, "c", "", "path to config file")
-	flag.StringVar(&root, "r", "./", "path to the root of the dir")
+	flag.StringVar(&configPath, "config", "", "path to config file")
+	flag.StringVar(&root, "root", "./", "path to the root of the dir")
+	flag.StringVar(&script, "script", "", "script type to run")
 	flag.Parse()
 
 	if err := config.SetConfig(configPath); err != nil {
@@ -53,5 +59,4 @@ func setup() {
 	}
 
 	log.SetLevel(logLevel)
-	log.SetOutput(os.Stdin)
 }

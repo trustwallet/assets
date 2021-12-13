@@ -11,7 +11,7 @@ jobs:
   pull_request_ci:
     runs-on: ubuntu-latest
     steps:
-      - name: Set up Go 1.x
+      - name: Set up Go 1.17
         uses: actions/setup-go@v2
         with:
           go-version: 1.17
@@ -20,5 +20,5 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v2
 
-      - name: Run check (sanity only)
-        run: go run ./cmd/main.go -c ./.github/assets.config.yaml
+      - name: Run check
+        run: go run ./cmd/main.go --config=./.github/assets.config.yaml --script=checker
