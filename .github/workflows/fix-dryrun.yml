@@ -16,14 +16,12 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v2
 
-      - name: Make git ignore case
-        run: git config core.ignorecase false
-
       - name: Run fix
         run: go run ./cmd/main.go --config=./.github/assets.config.yaml --script=fixer
 
       - name: Show fix result (diff)
         run: |
+          git config core.ignorecase false
           git status
           git diff
 
