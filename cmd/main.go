@@ -2,6 +2,7 @@ package main
 
 import (
 	"flag"
+	"os"
 
 	log "github.com/sirupsen/logrus"
 
@@ -40,6 +41,7 @@ func main() {
 
 	if err != nil {
 		log.WithError(err).Error()
+		os.Exit(1)
 	}
 }
 
