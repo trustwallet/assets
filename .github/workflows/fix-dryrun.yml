@@ -21,6 +21,7 @@ jobs:
 
       - name: Show fix result (diff)
         run: |
+          git config core.ignorecase false
           git status
           git diff
 

@@ -23,7 +23,7 @@ func main() {
 		log.WithError(err).Fatal("failed to load file structure")
 	}
 
-	fileStorage := file.NewService()
+	fileStorage := file.NewService(paths...)
 	validatorsService := core.NewService(fileStorage)
 	assetfsProcessor := processor.NewService(fileStorage, validatorsService)
 
@@ -35,11 +35,11 @@ func main() {
 	case "updater-auto":
 		err = assetfsProcessor.RunUpdateAuto()
 	default:
-		log.Error("Nothing to launch. Use --script flag to choose a script to run.")
+		log.Info("Nothing to launch. Use --script flag to choose a script to run.")
 	}
 
 	if err != nil {
-		log.WithError(err).Error()
+		log.WithError(err).Fatal("Script failed")
 	}
 }
 
