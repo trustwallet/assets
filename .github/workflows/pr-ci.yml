@@ -20,5 +20,5 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v2
 
-      - name: Run check (sanity only)
-        run: go run ./cmd/main.go --config=./.github/assets.config.yaml --script=sanity-check
+      - name: Run check
+        run: go run ./cmd/main.go --config=./.github/assets.config.yaml --script=checker

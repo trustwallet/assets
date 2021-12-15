@@ -7,19 +7,6 @@ jobs:
   check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 12
-      - name: Install Dependencies
-        run: npm ci
-      - name: Run check
-        run: npm run check
-      - name: Run test
-        run: npm t
-      - name: Run lint
-        run: npm run lint
-
       - name: Set up Go 1.17
         uses: actions/setup-go@v2
         with:
@@ -29,5 +16,5 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v2
 
-      - name: Run check (sanity only)
-        run: go run ./cmd/main.go --config=./.github/assets.config.yaml --script=sanity-check
+      - name: Run check
+        run: go run ./cmd/main.go --config=./.github/assets.config.yaml --script=checker
