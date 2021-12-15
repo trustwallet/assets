@@ -19,9 +19,6 @@ jobs:
           go-version: 1.17
         id: go
 
-      - name: Check out code
-        uses: actions/checkout@v2
-
       - name: Run update auto
         run: go run ./cmd/main.go --config=./.github/assets.config.yaml --script=updater-auto
 
