@@ -1,14 +1,16 @@
 name: Upload S3
 on:
   push:
-    branches:
-      - master
+    branches: [ master ]
+  
   workflow_dispatch:
+
 jobs:
   upload-s3:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
+    
     - name: Upload (from main repo only)
       if: github.repository_owner == 'trustwallet'
       uses: jakejarvis/s3-sync-action@master
@@ -19,3 +21,24 @@ jobs:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         AWS_REGION: 'us-east-1'
+
+    - name: Get updated paths
+      run: |
+        # allow grep to fail
+        set +e
+        echo "::set-output name=paths::$(git log --name-only --oneline HEAD^..HEAD | grep -E 'blockchains/|dapps/' | awk '{print "/"$1}' | tr '\n' ' ')"
+      id: get-updated-paths
+
+    - name: Echo
+      run: |
+        echo "paths to invalidate: ${{ steps.get-updated-paths.outputs.paths }}"
+    
+    # - name: Invalidate CloudFront
+    #   if: github.repository_owner == 'trustwallet'
+    #   uses: chetan/invalidate-cloudfront-action@v2
+    #   env:
+    #     PATHS: ${{ steps.get-updated-paths.outputs.paths }}
+    #     DISTRIBUTION: ${{ secrets.DISTRIBUTION }}
+    #     AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+    #     AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+    #     AWS_REGION: "us-east-1"
