@@ -34,7 +34,7 @@ jobs:
       id: filter
    
     - name: Invalidate CloudFront
-      if: github.repository_owner == 'trustwallet' && github.event_name == 'push'
+      if: github.repository_owner == 'trustwallet' && github.event_name == 'push' && steps.filter.outputs.paths != ''
       uses: chetan/invalidate-cloudfront-action@v2
       env:
         PATHS: ${{ steps.filter.outputs.paths }}"
