@@ -1,25 +1,29 @@
 {
     "name": "Kardiachain",
     "website": "https://kardiachain.io/",
-    "source_code": "https://github.com/kardiachain",
-    "white_paper": "https://dl.kardiachain.io/KardiaChain-WhitePaper-English.pdf",
     "description": "Kardiachain is a public blockchain platform focused on Interoperability and providing hybrid blockchain solutions for enterprises and governments in Vietnam and other countries in South & East Asia.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/KardiaChain",
-            "handle": "KardiaChain"
-        },
-        {
-            "name": "Medium",
-            "url": "https://medium.com/@KardiaChain",
-            "handle": "KardiaChain"
-        }
-    ],
-    "explorer": "https://explorer.kardiachain.io",
+    "explorer": "https://etherscan.io/token/0xD9Ec3ff1f8be459Bb9369b4E79e9Ebcf7141C093",
     "type": "ERC20",
     "symbol": "KAI",
     "decimals": 18,
     "status": "active",
-    "id": "0xD9Ec3ff1f8be459Bb9369b4E79e9Ebcf7141C093"
+    "id": "0xD9Ec3ff1f8be459Bb9369b4E79e9Ebcf7141C093",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/kardiachain"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/KardiaChain"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/@KardiaChain"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://dl.kardiachain.io/KardiaChain-WhitePaper-English.pdf"
+        }
+    ]
 }

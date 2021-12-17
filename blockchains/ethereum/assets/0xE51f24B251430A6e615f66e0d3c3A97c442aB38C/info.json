@@ -3,21 +3,19 @@
     "website": "https://arttoken.io/",
     "description": "The $ART Token is a platform-independent Token for the art community. $ART is a Governance Token and backed by digital artworks.",
     "explorer": "https://etherscan.io/token/0xE51f24B251430A6e615f66e0d3c3A97c442aB38C",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/ArtTokenProject",
-            "handle": "$ART"
-        },
-        {
-            "name": "Discord",
-            "url": "https://discord.gg/Drg4y5j",
-            "handle": "$ART"
-        }
-    ],
     "type": "ERC20",
     "symbol": "ART",
     "decimals": 18,
     "status": "active",
-    "id": "0xE51f24B251430A6e615f66e0d3c3A97c442aB38C"
+    "id": "0xE51f24B251430A6e615f66e0d3c3A97c442aB38C",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/$ART"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/Drg4y5j"
+        }
+    ]
 }

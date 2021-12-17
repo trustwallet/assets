@@ -1,34 +1,29 @@
 {
     "name": "Yearn Finance Passive Income",
     "website": "https://yfpi.finance/",
-    "source_code": "https://github.com/yfpi",
     "description": "YEARN FINANCE PASSIVE INCOME (YFPI) is a Governance token. Users who stake YFPI tokens can vote for potential product upgrades, releases, and parameter fixes.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/YFPIncome",
-            "handle": "YFPIncome"
-        },
-        {
-            "name": "GitHub",
-            "url": "https://github.com/yfpi",
-            "handle": "yfpi"
-        },
-        {
-            "name": "Medium",
-            "url": "https://medium.com/@yfpincome",
-            "handle": "@yfpincome"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/YF_PI",
-            "handle": "YF_PI"
-        }
-    ],
     "explorer": "https://etherscan.io/token/0x05D27CdD23E22ca63e7f9c7C6D1B79ede9C4fCF5",
     "type": "ERC20",
     "symbol": "YFPI",
     "decimals": 18,
     "status": "active",
-    "id": "0x05D27CdD23E22ca63e7f9c7C6D1B79ede9C4fCF5"
+    "id": "0x05D27CdD23E22ca63e7f9c7C6D1B79ede9C4fCF5",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/yfpi"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/YFPIncome"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/YF_PI"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/@yfpincome"
+        }
+    ]
 }

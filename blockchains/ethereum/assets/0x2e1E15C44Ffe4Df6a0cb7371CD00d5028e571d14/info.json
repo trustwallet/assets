@@ -1,49 +1,37 @@
 {
     "name": "Mettalex",
     "website": "https://mettalex.com/",
-    "source_code": "https://github.com/fetchai/mettalex-market-maker",
     "description": "Mettalex is a capital-efficient commodity derivatives DEX featuring unique market pairs, autonomous market making, banded trading, one-sided liquidity provision, and MTLX-based governance.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/Mettalex",
-            "handle": "Mettalex"
-        },
-        {
-            "name": "Medium",
-            "url": "https://medium.com/mettalex",
-            "handle": "Mettalex"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/mettalex_official",
-            "handle": "Mettalex Official"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/mettalex_official_news",
-            "handle": "Mettalex News"
-        },
-        {
-            "name": "Discord",
-            "url": "https://discord.gg/zvWqGEaykD",
-            "handle": "Mettalex"
-        },
-        {
-            "name": "YouTube",
-            "url": "https://www.youtube.com/channel/UCrEQK_X2Vm1kCtftlRoodXA",
-            "handle": "Mettalex"
-        },
-        {
-            "name": "LinkedIn",
-            "url": "https://www.linkedin.com/company/mettalex/",
-            "handle": "Mettalex"
-        }
-    ],
     "explorer": "https://etherscan.io/token/0x2e1E15C44Ffe4Df6a0cb7371CD00d5028e571d14",
     "type": "ERC20",
     "symbol": "MTLX",
     "decimals": 18,
     "status": "active",
-    "id": "0x2e1E15C44Ffe4Df6a0cb7371CD00d5028e571d14"
+    "id": "0x2e1E15C44Ffe4Df6a0cb7371CD00d5028e571d14",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/fetchai/mettalex-market-maker"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/Mettalex"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/mettalex_official_news"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/zvWqGEaykD"
+        },
+        {
+            "name": "youtube",
+            "url": "https://youtube.com/channel/UCrEQK_X2Vm1kCtftlRoodXA"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/mettalex"
+        }
+    ]
 }
