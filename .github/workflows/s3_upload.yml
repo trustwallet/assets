@@ -9,10 +9,7 @@ jobs:
   upload-s3:
     runs-on: ubuntu-latest
     steps:
-    
     - uses: actions/checkout@v2
-      with:
-        fetch-depth: 0
     
     # - name: Upload (from main repo only)
     #   if: github.repository_owner == 'trustwallet'
@@ -27,7 +24,7 @@ jobs:
 
     - name: Get updated paths
       run: |
-        echo "::set-output name=paths::$(git log --name-only --oneline HEAD^..HEAD | grep -E 'blockchains/|dapps/' | awk '{print "/"$1}' | tr '\n' ' ')"
+        echo "::set-output name=paths::$(git log --name-only --oneline $GITHUB_SHA -1 | grep -E 'blockchains/|dapps/' | awk '{print "/"$1}' | tr '\n' ' ')"
       id: get-updated-paths
 
     - name: Echo
