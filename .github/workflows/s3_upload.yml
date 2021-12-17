@@ -31,8 +31,6 @@ jobs:
 
     - name: Get updated paths (tmp)
       run: |
-        # allow grep to fail
-        set +e
         git log --name-only --oneline HEAD^..HEAD | grep -E 'blockchains/|dapps/' | awk '{print "/"$1}' | tr '\n' ' '
 
     - name: Echo
