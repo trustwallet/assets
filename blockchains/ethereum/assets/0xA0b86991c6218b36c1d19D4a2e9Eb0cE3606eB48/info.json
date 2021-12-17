@@ -7,5 +7,30 @@
     "symbol": "USDC",
     "decimals": 6,
     "status": "active",
-    "id": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
+    "id": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+    "tags": [
+        "stablecoin"
+    ],
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/centrehq"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/centre-blog"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://centre.io/pdfs/centre-whitepaper.pdf"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/usd-coin/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/usd-coin/"
+        }
+    ]
 }

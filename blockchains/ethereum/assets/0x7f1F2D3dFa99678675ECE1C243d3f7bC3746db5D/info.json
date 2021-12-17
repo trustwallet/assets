@@ -6,18 +6,16 @@
     "website": "https://www.tapmydata.com",
     "description": "Take back control of your data, store it on our encrypted wallet, license it to earn from your data",
     "explorer": "https://etherscan.io/token/0x7f1f2d3dfa99678675ece1c243d3f7bc3746db5d",
-    "socials": [
+    "type": "ERC20",
+    "id": "0x7f1F2D3dFa99678675ECE1C243d3f7bC3746db5D",
+    "links": [
         {
-            "name": "Twitter",
-            "url": "https://twitter.com/tapmydata",
-            "handle": "tapmydata"
+            "name": "twitter",
+            "url": "https://twitter.com/tapmydata"
         },
         {
-            "name": "Telegram",
-            "url": "https://t.me/tapmydataofficial",
-            "handle": "tapmydataofficial"
+            "name": "telegram",
+            "url": "https://t.me/tapmydataofficial"
         }
-    ],
-    "type": "ERC20",
-    "id": "0x7f1F2D3dFa99678675ECE1C243d3f7bC3746db5D"
+    ]
 }

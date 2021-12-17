@@ -6,12 +6,20 @@
     "website": "https://dapp.bmjcoin.com",
     "explorer": "https://etherscan.io/token/0x6378930da9be7C90d824d7f113974741644d62dA",
     "state": "NORMAL",
-    "links": {
-        "blog": "",
-        "twitter": "https://twitter.com/BMJ67466085",
-        "telegram": "https://t.me/CTCcommunity01",
-        "github": "https://github.com/BMJ20200716"
-    },
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/BMJ67466085"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/CTCcommunity01"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/BMJ20200716"
+        }
+    ],
     "type": "ERC20",
     "symbol": "CTC",
     "decimals": 18,

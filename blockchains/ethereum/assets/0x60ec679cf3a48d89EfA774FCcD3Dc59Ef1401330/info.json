@@ -1,18 +1,17 @@
 {
     "name": "NXT Gold",
     "description": "NXT Gold (NXTG) is an ERC20 token backed 1:1 with NXT.",
-    "socials": [
-        {
-            "name": "Telegram",
-            "url": "https://t.me/nxtgold",
-            "handle": "nxtgold"
-        }
-    ],
     "website": "https://nxtgold.eu",
     "explorer": "https://etherscan.io/token/0x60ec679cf3a48d89EfA774FCcD3Dc59Ef1401330",
     "type": "ERC20",
     "symbol": "NXTG",
     "decimals": 0,
     "status": "active",
-    "id": "0x60ec679cf3a48d89EfA774FCcD3Dc59Ef1401330"
+    "id": "0x60ec679cf3a48d89EfA774FCcD3Dc59Ef1401330",
+    "links": [
+        {
+            "name": "telegram",
+            "url": "https://t.me/nxtgold"
+        }
+    ]
 }

@@ -1,24 +1,28 @@
 {
     "name": "Ether-1",
     "website": "https://ether1.org/",
-    "source_code": "https://github.com/Ether1Project",
-    "white_paper": "http://www.ether1.cloud/images/whitepaper.pdf",
     "description": "The Ether-1 Project aims to disrupt how information is shared and controlled on the internet by providing a new solution for how files are fundamentally stored and accessed.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/Ether1Official",
-            "handle": "Ether1Official"
-        },
-        {
-            "name": "Reddit",
-            "url": "https://www.reddit.com/r/etho1/",
-            "handle": "etho1"
-        }
-    ],
     "explorer": "https://explorer.ether1.org/",
     "symbol": "ETHO",
-    "type": "COIN",
+    "type": "coin",
     "decimals": 18,
-    "status": "abandoned"
+    "status": "abandoned",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/Ether1Project"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/Ether1Official"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/etho1/"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://www.ether1.cloud/images/whitepaper.pdf"
+        }
+    ]
 }
