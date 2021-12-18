@@ -31,7 +31,7 @@ Details of the repository structure and contribution guidelines are listed on th
 Here is a quick starter summary for the most common use case.
 
 **Adding an ERC20 token checklist**:
-- [ ] Make sure your smartcontract has more than 25000 address holders, otherwise you will be rejected
+- [ ] Make sure your smartcontract has more than 10000 address holders, otherwise you will be rejected
 - [ ] Fork the Github repository
 - [ ] Create folder with name of token smartcontact address in [_checksum format_](https://piyolab.github.io/sushiether/RunScrapboxCode/?web3=1.0.0-beta.33&code=https://scrapbox.io/api/code/sushiether/web3.js_-_Ethereum_のアドレスをチェックサム付きアドレスに変換する/demo.js) `blockchains/ethereum/assets/<token_smartcontract_address>/`.
 - [ ] Tell your designer that token image must be in PNG format, preferably transparent background, recommended size 256x256px, with max file size of 100kB, for further details read [image rules](https://developer.trustwallet.com/assets/requirements).

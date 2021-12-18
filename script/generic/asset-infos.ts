@@ -52,8 +52,8 @@ function isAssetInfoHasAllKeys(info: unknown, path: string, isCoin: boolean): [b
 
 // return error, warning, and fixed into if applicable
 function isAssetInfoValid(info: unknown, path: string, address: string, chain: string, isCoin: boolean, checkOnly: boolean): [string, string, unknown?] {
-    let fixedInfo: unknown|null = null;
-    const isKeys1CorrectType = 
+    let fixedInfo: unknown | null = null;
+    const isKeys1CorrectType =
         typeof info['name'] === "string" && info['name'] !== "" &&
         typeof info['type'] === "string" && info['type'] !== "" &&
         typeof info['symbol'] === "string" && info['symbol'] !== "" &&
@@ -72,7 +72,7 @@ function isAssetInfoValid(info: unknown, path: string, address: string, chain: s
 
     // type
     if (!isCoin) { // token
-        if (chainFromAssetType(info['type'].toUpperCase()) !== chain ) {
+        if (chainFromAssetType(info['type'].toUpperCase()) !== chain) {
             return [`Incorrect value for type '${info['type']}' '${chain}' ${path}`, "", fixedInfo];
         }
         if (info['type'] !== info['type'].toUpperCase()) {
@@ -85,7 +85,7 @@ function isAssetInfoValid(info: unknown, path: string, address: string, chain: s
             fixedInfo['type'] = info['type'].toUpperCase();
         }
     } else { // coin
-         const expectedType = 'coin';
+        const expectedType = 'coin';
         if (info['type'] !== expectedType) {
             if (checkOnly) {
                 return [`Incorrect value for type '${info['type']}', expected '${expectedType}' '${chain}' ${path}`, "", fixedInfo];
@@ -95,19 +95,19 @@ function isAssetInfoValid(info: unknown, path: string, address: string, chain: s
             fixedInfo['type'] = expectedType;
         }
     }
-    
+
     if (!isCoin) {
         // id, should match address
         if (info['id'] != address) {
-        if (checkOnly) {
+            if (checkOnly) {
                 if (info['id'].toUpperCase() != address.toUpperCase()) {
                     return [`Incorrect value for id '${info['id']}' '${chain}' ${path}`, "", fixedInfo];
                 }
                 // is is correct value, but casing is wrong
                 return [`Wrong casing for id '${info['id']}' '${chain}' ${path}`, "", fixedInfo];
-        }
-        // fix
-        if (!fixedInfo) { fixedInfo = info; }
+            }
+            // fix
+            if (!fixedInfo) { fixedInfo = info; }
             fixedInfo['id'] = address;
         }
     }
@@ -132,7 +132,7 @@ function isAssetInfoValid(info: unknown, path: string, address: string, chain: s
         }
     }
 
-    const isKeys2CorrectType = 
+    const isKeys2CorrectType =
         typeof info['description'] === "string" && info['description'] !== "" &&
         // website should be set (exception description='-' marks empty infos)
         typeof info['website'] === "string" && (info['description'] === "-" || info['website'] !== "") &&
@@ -308,7 +308,7 @@ export function explorerUrl(chain: string, contract: string): string {
             case "optimism":
                 return `https://optimistic.etherscan.io/address/${contract}`;
             case "avalanchec":
-                return `https://cchain.explorer.avax.network/address/${contract}`
+                return `https://snowtrace.io/address/${contract}`
             case "arbitrum":
                 return `https://arbiscan.io/token/${contract}`
             case "fantom":
@@ -353,7 +353,7 @@ function isAssetInfoOK(chain: string, isCoin: boolean, address: string, errors: 
     }
 
     let info: unknown = readJsonFile(assetInfoPath);
-    let fixedInfo: unknown|null = null;
+    let fixedInfo: unknown | null = null;
 
     const [hasAllKeys, msg1] = isAssetInfoHasAllKeys(info, assetInfoPath, isCoin);
     if (!hasAllKeys) {
@@ -404,7 +404,7 @@ function isAssetInfoOK(chain: string, isCoin: boolean, address: string, errors: 
                     const explorersAlt = explorerUrlAlternatives(chain, address, info['name']);
                     if (explorersAlt && explorersAlt.length > 0) {
                         let matchCount = 0;
-                        explorersAlt.forEach(exp => { if (exp.toLowerCase() == explorerActualLower) { ++matchCount; }});
+                        explorersAlt.forEach(exp => { if (exp.toLowerCase() == explorerActualLower) { ++matchCount; } });
                         if (matchCount == 0) {
                             // none matches, this is error
                             errors.push(`Incorrect explorer, ${explorerActual} instead of ${explorerExpected} (${explorersAlt.join(', ')})`);
@@ -424,12 +424,12 @@ function isAssetInfoOK(chain: string, isCoin: boolean, address: string, errors: 
     if (fixedInfo && !checkOnly) {
         writeJsonFile(assetInfoPath, fixedInfo);
         console.log(`Done fixes to info.json, ${assetInfoPath}`);
-    }    
+    }
 }
 
 export class AssetInfos implements ActionInterface {
     getName(): string { return "Asset Infos"; }
-    
+
     getSanityChecks(): CheckStepInterface[] {
         const steps: CheckStepInterface[] = [];
         // tokens info.json's
@@ -437,7 +437,7 @@ export class AssetInfos implements ActionInterface {
             if (isPathExistsSync(getChainAssetsPath(chain))) {
                 steps.push(
                     {
-                        getName: () => { return `Token info.json's for chain ${chain}`;},
+                        getName: () => { return `Token info.json's for chain ${chain}`; },
                         check: async () => {
                             const errors: string[] = [];
                             const warnings: string[] = [];
@@ -447,7 +447,7 @@ export class AssetInfos implements ActionInterface {
                                 isAssetInfoOK(chain, false, address, errors, warnings, true);
                             });
                             return [errors, warnings];
-                        }    
+                        }
                     }
                 );
             }
@@ -455,7 +455,7 @@ export class AssetInfos implements ActionInterface {
         // coin info.json
         steps.push(
             {
-                getName: () => { return `Coin info.json's`;},
+                getName: () => { return `Coin info.json's`; },
                 check: async () => {
                     const errors: string[] = [];
                     const warnings: string[] = [];

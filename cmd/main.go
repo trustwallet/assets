@@ -2,15 +2,13 @@ package main
 
 import (
 	"flag"
-	"os"
 
 	log "github.com/sirupsen/logrus"
 
 	"github.com/trustwallet/assets-go-libs/pkg/file"
 	"github.com/trustwallet/assets-go-libs/src/config"
+	"github.com/trustwallet/assets-go-libs/src/core"
 	"github.com/trustwallet/assets-go-libs/src/processor"
-	"github.com/trustwallet/assets-go-libs/src/reporter"
-	"github.com/trustwallet/assets-go-libs/src/validator"
 )
 
 var (
@@ -25,36 +23,24 @@ func main() {
 		log.WithError(err).Fatal("failed to load file structure")
 	}
 
-	fileStorage := file.NewFileService()
-	validatorsService := validator.NewService(fileStorage)
-	reportService := reporter.NewReportService()
-	assetfsProcessor := processor.NewService(fileStorage, validatorsService, reportService)
+	fileStorage := file.NewService(paths...)
+	validatorsService := core.NewService(fileStorage)
+	assetfsProcessor := processor.NewService(fileStorage, validatorsService)
 
 	switch script {
-	case "sanity-check":
-		err = assetfsProcessor.RunSanityCheck(paths)
+	case "checker":
+		err = assetfsProcessor.RunJob(paths, assetfsProcessor.Check)
+	case "fixer":
+		err = assetfsProcessor.RunJob(paths, assetfsProcessor.Fix)
+	case "updater-auto":
+		err = assetfsProcessor.RunUpdateAuto()
 	default:
-		log.Error("Nothing to launch. Use --script flag to choose a script to run.")
+		log.Info("Nothing to launch. Use --script flag to choose a script to run.")
 	}
 
 	if err != nil {
-		log.WithError(err).Error()
+		log.WithError(err).Fatal("Script failed")
 	}
-
-	reports := reportService.GetReports()
-	for key, report := range reports {
-		log.WithFields(log.Fields{
-			"total_files": report.TotalFiles,
-			"errors":      report.Errors,
-			"warnings":    report.Warnings,
-			"fixed":       report.Fixed,
-		}).Info(key)
-
-		if report.Errors > 0 {
-			os.Exit(1)
-		}
-	}
-
 }
 
 func setup() {
