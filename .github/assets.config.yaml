@@ -35,6 +35,8 @@ validators_settings:
       - "internal"
       - "go.mod"
       - "go.sum"
+      - ".golangci.yml"
+      - "Makefile"
     skip_files:
       - "node_modules"
 

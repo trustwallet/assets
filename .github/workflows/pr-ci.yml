@@ -22,3 +22,9 @@ jobs:
 
       - name: Run check
         run: go run ./cmd/main.go --config=./.github/assets.config.yaml --script=checker
+
+      - name: Unit Test
+        run: make test
+
+      - name: Lint
+        run: make lint
