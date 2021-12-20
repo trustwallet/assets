@@ -1,7 +1,7 @@
 package service
 
 import (
-	"github.com/trustwallet/assets-go-libs/pkg/validation"
+	"github.com/trustwallet/assets-go-libs/validation"
 	"github.com/trustwallet/assets/internal/file"
 	"github.com/trustwallet/assets/internal/processor"
 
@@ -71,19 +71,13 @@ func HandleError(err error, info *file.AssetFile, valName string) {
 	errors := UnwrapComposite(err)
 
 	for _, err := range errors {
-		logFields := log.Fields{
+		log.WithFields(log.Fields{
 			"type":       info.Type(),
 			"chain":      info.Chain().Handle,
 			"asset":      info.Asset(),
 			"path":       info.Path(),
 			"validation": valName,
-		}
-
-		if warn, ok := err.(*validation.Warning); ok {
-			log.WithFields(logFields).Warning(warn)
-		} else {
-			log.WithFields(logFields).Error(err)
-		}
+		}).Error(err)
 	}
 }
 
