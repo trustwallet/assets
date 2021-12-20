@@ -1,12 +1,11 @@
 package file
 
 import (
-	"fmt"
 	"os"
 	"path/filepath"
 	"regexp"
 
-	"github.com/trustwallet/assets-go-libs/pkg"
+	"github.com/trustwallet/assets-go-libs/strings"
 	"github.com/trustwallet/go-primitives/coin"
 )
 
@@ -144,11 +143,11 @@ func ReadLocalFileStructure(root string, filesToSkip []string) ([]string, error)
 				return err
 			}
 
-			if pkg.Contains(path, filesToSkip) {
+			if strings.Contains(path, filesToSkip) {
 				return nil
 			}
 
-			paths = append(paths, fmt.Sprintf("./%s", path))
+			paths = append(paths, path)
 
 			return nil
 		})

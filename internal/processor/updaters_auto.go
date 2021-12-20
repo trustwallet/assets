@@ -7,9 +7,10 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/trustwallet/assets-go-libs/pkg"
-	"github.com/trustwallet/assets-go-libs/pkg/asset"
-	"github.com/trustwallet/assets-go-libs/pkg/validation/info"
+	fileLib "github.com/trustwallet/assets-go-libs/file"
+	"github.com/trustwallet/assets-go-libs/image"
+	"github.com/trustwallet/assets-go-libs/path"
+	"github.com/trustwallet/assets-go-libs/validation/info"
 	"github.com/trustwallet/assets/internal/config"
 	"github.com/trustwallet/go-libs/blockchain/binance"
 	"github.com/trustwallet/go-libs/blockchain/binance/explorer"
@@ -68,8 +69,8 @@ func fetchMissingAssets(chain coin.Coin, assets []explorer.Bep2Asset) error {
 			continue
 		}
 
-		assetLogoPath := asset.GetAssetLogoPath(chain.Handle, a.Asset)
-		if pkg.FileExists(assetLogoPath) {
+		assetLogoPath := path.GetAssetLogoPath(chain.Handle, a.Asset)
+		if fileLib.FileExists(assetLogoPath) {
 			continue
 		}
 
@@ -86,12 +87,12 @@ func fetchMissingAssets(chain coin.Coin, assets []explorer.Bep2Asset) error {
 }
 
 func createLogo(assetLogoPath string, a explorer.Bep2Asset) error {
-	err := pkg.CreateDirPath(assetLogoPath)
+	err := fileLib.CreateDirPath(assetLogoPath)
 	if err != nil {
 		return err
 	}
 
-	return pkg.CreatePNGFromURL(a.AssetImg, assetLogoPath)
+	return image.CreatePNGFromURL(a.AssetImg, assetLogoPath)
 }
 
 func createInfoJSON(chain coin.Coin, a explorer.Bep2Asset) error {
@@ -117,9 +118,9 @@ func createInfoJSON(chain coin.Coin, a explorer.Bep2Asset) error {
 		ID:          &a.Asset,
 	}
 
-	assetInfoPath := asset.GetAssetInfoPath(chain.Handle, a.Asset)
+	assetInfoPath := path.GetAssetInfoPath(chain.Handle, a.Asset)
 
-	return pkg.CreateJSONFile(assetInfoPath, &assetInfo)
+	return fileLib.CreateJSONFile(assetInfoPath, &assetInfo)
 }
 
 func createTokenListJSON(chain coin.Coin, marketPairs []binance.MarketPair, tokenList binance.Tokens) error {
@@ -128,10 +129,10 @@ func createTokenListJSON(chain coin.Coin, marketPairs []binance.MarketPair, toke
 		return nil
 	}
 
-	tokenListPath := fmt.Sprintf("blockchains/%s/tokenlist.json", chain.Handle)
+	tokenListPath := path.GetTokenListPath(chain.Handle)
 
 	var oldTokenList TokenList
-	err = pkg.ReadJSONFile(tokenListPath, &oldTokenList)
+	err = fileLib.ReadJSONFile(tokenListPath, &oldTokenList)
 	if err != nil {
 		return nil
 	}
@@ -143,7 +144,7 @@ func createTokenListJSON(chain coin.Coin, marketPairs []binance.MarketPair, toke
 	}
 
 	if len(tokens) > 0 {
-		return pkg.CreateJSONFile(tokenListPath, &TokenList{
+		return fileLib.CreateJSONFile(tokenListPath, &TokenList{
 			Name:      fmt.Sprintf("Trust Wallet: %s", coin.Coins[coin.BINANCE].Symbol),
 			LogoURI:   twLogoURL,
 			Timestamp: time.Now().Format(timestampFormat),
@@ -254,8 +255,8 @@ func getTokenType(symbol string, nativeCoinSymbol string, tokenType string) stri
 
 func getLogoURI(id, githubChainFolder, nativeCoinSymbol string) string {
 	if id == nativeCoinSymbol {
-		return fmt.Sprintf("%s/blockchains/%s/info/logo.png", config.Default.URLs.TWAssetsApp, githubChainFolder)
+		return path.GetChainLogoURL(config.Default.URLs.TWAssetsApp, githubChainFolder)
 	}
 
-	return fmt.Sprintf("%s/blockchains/%s/assets/%s/logo.png", config.Default.URLs.TWAssetsApp, githubChainFolder, id)
+	return path.GetAssetLogoURL(config.Default.URLs.TWAssetsApp, githubChainFolder, id)
 }

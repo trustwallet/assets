@@ -7,9 +7,10 @@ import (
 	"io"
 	"os"
 
-	"github.com/trustwallet/assets-go-libs/pkg/validation"
-	"github.com/trustwallet/assets-go-libs/pkg/validation/info"
-	"github.com/trustwallet/assets-go-libs/pkg/validation/list"
+	"github.com/trustwallet/assets-go-libs/path"
+	"github.com/trustwallet/assets-go-libs/validation"
+	"github.com/trustwallet/assets-go-libs/validation/info"
+	"github.com/trustwallet/assets-go-libs/validation/list"
 	"github.com/trustwallet/assets/internal/config"
 	"github.com/trustwallet/assets/internal/file"
 	"github.com/trustwallet/go-primitives/coin"
@@ -121,9 +122,7 @@ func (s *Service) ValidateAssetFolder(f *file.AssetFile) error {
 	errLogo := validation.ValidateHasFiles(dirFiles, []string{"logo.png"})
 
 	if errLogo != nil || errInfo != nil {
-		infoFile := s.fileService.GetAssetFile(fmt.Sprintf("%s/info.json", f.Path()))
-
-		file2, err := os.Open(infoFile.Path())
+		file2, err := os.Open(path.GetAssetInfoPath(f.Chain().Handle, f.Asset()))
 		if err != nil {
 			return err
 		}
@@ -304,7 +303,7 @@ func (s *Service) ValidateValidatorsListFile(f *file.AssetFile) error {
 		listIDs[i] = *listItem.ID
 	}
 
-	assetsPath := fmt.Sprintf("blockchains/%s/validators/assets", f.Chain().Handle)
+	assetsPath := path.GetValidatorAssetsPath(f.Chain().Handle)
 	assetFolder := s.fileService.GetAssetFile(assetsPath)
 
 	file2, err := os.Open(assetFolder.Path())
