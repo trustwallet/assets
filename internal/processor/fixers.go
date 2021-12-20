@@ -6,9 +6,11 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/trustwallet/assets-go-libs/pkg"
-	"github.com/trustwallet/assets-go-libs/pkg/validation"
-	"github.com/trustwallet/assets-go-libs/pkg/validation/info"
+	fileLib "github.com/trustwallet/assets-go-libs/file"
+	"github.com/trustwallet/assets-go-libs/image"
+	"github.com/trustwallet/assets-go-libs/path"
+	"github.com/trustwallet/assets-go-libs/validation"
+	"github.com/trustwallet/assets-go-libs/validation/info"
 	"github.com/trustwallet/assets/internal/file"
 	"github.com/trustwallet/go-primitives/address"
 	"github.com/trustwallet/go-primitives/coin"
@@ -18,7 +20,7 @@ import (
 )
 
 func (s *Service) FixJSON(f *file.AssetFile) error {
-	return pkg.FormatJSONFile(f.Path())
+	return fileLib.FormatJSONFile(f.Path())
 }
 
 func (s *Service) FixETHAddressChecksum(f *file.AssetFile) error {
@@ -35,7 +37,7 @@ func (s *Service) FixETHAddressChecksum(f *file.AssetFile) error {
 			return fmt.Errorf("failed to get checksum: %s", e)
 		}
 
-		newName := fmt.Sprintf("blockchains/%s/assets/%s", f.Chain().Handle, checksum)
+		newName := path.GetAssetPath(f.Chain().Handle, checksum)
 
 		if e = os.Rename(f.Path(), newName); e != nil {
 			return fmt.Errorf("failed to rename dir: %s", e)
@@ -52,7 +54,7 @@ func (s *Service) FixETHAddressChecksum(f *file.AssetFile) error {
 }
 
 func (s *Service) FixLogo(f *file.AssetFile) error {
-	width, height, err := pkg.GetPNGImageDimensions(f.Path())
+	width, height, err := image.GetPNGImageDimensions(f.Path())
 	if err != nil {
 		return err
 	}
@@ -67,7 +69,7 @@ func (s *Service) FixLogo(f *file.AssetFile) error {
 
 		targetW, targetH := calculateTargetDimension(width, height)
 
-		err = pkg.ResizePNG(f.Path(), targetW, targetH)
+		err = image.ResizePNG(f.Path(), targetW, targetH)
 		if err != nil {
 			return err
 		}
@@ -101,7 +103,7 @@ func calculateTargetDimension(width, height int) (targetW, targetH int) {
 func (s *Service) FixChainInfoJSON(f *file.AssetFile) error {
 	chainInfo := info.CoinModel{}
 
-	err := pkg.ReadJSONFile(f.Path(), &chainInfo)
+	err := fileLib.ReadJSONFile(f.Path(), &chainInfo)
 	if err != nil {
 		return err
 	}
@@ -110,7 +112,7 @@ func (s *Service) FixChainInfoJSON(f *file.AssetFile) error {
 	if chainInfo.Type == nil || *chainInfo.Type != expectedType {
 		chainInfo.Type = &expectedType
 
-		return pkg.CreateJSONFile(f.Path(), &chainInfo)
+		return fileLib.CreateJSONFile(f.Path(), &chainInfo)
 	}
 
 	return nil
@@ -119,7 +121,7 @@ func (s *Service) FixChainInfoJSON(f *file.AssetFile) error {
 func (s *Service) FixAssetInfoJSON(file *file.AssetFile) error {
 	assetInfo := info.AssetModel{}
 
-	err := pkg.ReadJSONFile(file.Path(), &assetInfo)
+	err := fileLib.ReadJSONFile(file.Path(), &assetInfo)
 	if err != nil {
 		return err
 	}
@@ -164,7 +166,7 @@ func (s *Service) FixAssetInfoJSON(file *file.AssetFile) error {
 	}
 
 	if isModified {
-		return pkg.CreateJSONFile(file.Path(), &assetInfo)
+		return fileLib.CreateJSONFile(file.Path(), &assetInfo)
 	}
 
 	return nil

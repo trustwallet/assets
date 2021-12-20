@@ -12,7 +12,6 @@ func NewService(fileProvider *file.Service) *Service {
 	return &Service{fileService: fileProvider}
 }
 
-// nolint:funlen
 func (s *Service) GetValidator(f *file.AssetFile) *Validator {
 	switch f.Type() {
 	case file.TypeRootFolder:

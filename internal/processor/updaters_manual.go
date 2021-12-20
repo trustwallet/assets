@@ -2,14 +2,14 @@ package processor
 
 import (
 	"encoding/json"
-	"fmt"
 	"strconv"
 	"strings"
 
 	log "github.com/sirupsen/logrus"
 
-	"github.com/trustwallet/assets-go-libs/pkg"
-	"github.com/trustwallet/assets-go-libs/pkg/asset"
+	fileLib "github.com/trustwallet/assets-go-libs/file"
+	"github.com/trustwallet/assets-go-libs/http"
+	"github.com/trustwallet/assets-go-libs/path"
 	"github.com/trustwallet/assets/internal/config"
 	"github.com/trustwallet/go-libs/client/api/backend"
 	"github.com/trustwallet/go-primitives/address"
@@ -205,7 +205,7 @@ func fetchTradingPairs(url string, query map[string]string) (*TradingPairs, erro
 	log.WithField("url", url).Debug("Retrieving trading pair infos")
 
 	var result TradingPairs
-	err = pkg.PostHTTPResponse(url, jsonValue, &result)
+	err = http.PostHTTPResponse(url, jsonValue, &result)
 	if err != nil {
 		return nil, err
 	}
@@ -411,10 +411,10 @@ func rebuildTokenList(chain coin.Coin, pairs [][]TokenItem, forceExcludeList []s
 
 	log.Debugf("%d unsupported tokens filtered out, %d pairs", filteredCount, len(pairs2))
 
-	tokenListPath := fmt.Sprintf("blockchains/%s/tokenlist.json", chain.Handle)
+	tokenListPath := path.GetTokenListPath(chain.Handle)
 
 	var list TokenList
-	err := pkg.ReadJSONFile(tokenListPath, &list)
+	err := fileLib.ReadJSONFile(tokenListPath, &list)
 	if err != nil {
 		return nil
 	}
@@ -439,13 +439,13 @@ func rebuildTokenList(chain coin.Coin, pairs [][]TokenItem, forceExcludeList []s
 	log.Debugf("Tokenlist: list with %d tokens and %d pairs written to %s.",
 		len(list.Tokens), totalPairs, tokenListPath)
 
-	return pkg.CreateJSONFile(tokenListPath, list)
+	return fileLib.CreateJSONFile(tokenListPath, list)
 }
 
 func checkTokenExists(chain, tokenID string) bool {
-	logoPath := asset.GetAssetLogoPath(chain, tokenID)
+	logoPath := path.GetAssetLogoPath(chain, tokenID)
 
-	return pkg.FileExists(logoPath)
+	return fileLib.FileExists(logoPath)
 }
 
 func removeAllPairs(list *TokenList) {
