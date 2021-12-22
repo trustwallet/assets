@@ -143,10 +143,12 @@ func (s *Service) GetUpdatersManual() []Updater {
 			Name: "Update tokenlist.json for Ethereum",
 			Run:  s.UpdateEthereumTokenlist,
 		},
-		{
-			Name: "Update tokenlist.json for Polygon",
-			Run:  s.UpdatePolygonTokenlist,
-		},
+		// TODO: Add a special unmarshalling for `fetchTradingPairs`.
+		// In addition, https://graphql.bitquery.io/ has new restrictions for API access, so this updater doesn't work.
+		// {
+		// 	Name: "Update tokenlist.json for Polygon",
+		// 	Run:  s.UpdatePolygonTokenlist,
+		// },
 		{
 			Name: "Update tokenlist.json for Smartchain",
 			Run:  s.UpdateSmartchainTokenlist,
