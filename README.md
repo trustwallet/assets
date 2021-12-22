@@ -3,6 +3,7 @@
 ![Check](https://github.com/trustwallet/assets/workflows/Check/badge.svg)
 
 ## Overview
+
 Trust Wallet token repository is a comprehensive, up-to-date collection of information about several thousands (!) of crypto tokens.
 
 [Trust Wallet](https://trustwallet.com) uses token logos from this source, alongside a number of other projects.
@@ -18,7 +19,7 @@ Such a large collection can be maintained only through a community effort, so _f
 
 Please note that __brand new tokens are not accepted__,
 the projects have to be sound, with information available, and __non-minimal circulation__
-(for limit details see https://developer.trustwallet.com/assets/requirements).
+(for limit details see <https://developer.trustwallet.com/assets/requirements>).
 
 ### Assets App
 
@@ -31,6 +32,7 @@ Details of the repository structure and contribution guidelines are listed on th
 Here is a quick starter summary for the most common use case.
 
 **Adding an ERC20 token checklist**:
+
 - [ ] Make sure your smartcontract has more than 10000 address holders, otherwise you will be rejected
 - [ ] Fork the Github repository
 - [ ] Create folder with name of token smartcontact address in [_checksum format_](https://piyolab.github.io/sushiether/RunScrapboxCode/?web3=1.0.0-beta.33&code=https://scrapbox.io/api/code/sushiether/web3.js_-_Ethereum_のアドレスをチェックサム付きアドレスに変換する/demo.js) `blockchains/ethereum/assets/<token_smartcontract_address>/`.
@@ -42,7 +44,7 @@ Here is a quick starter summary for the most common use case.
 
 ## Documentation
 
-For details, see the [Developers site](https://developer.trustwallet.com:
+For details, see the [Developers site](https://developer.trustwallet.com):
 
 - [Contribution guidelines](https://developer.trustwallet.com/assets/repository_details)
 
@@ -52,21 +54,18 @@ For details, see the [Developers site](https://developer.trustwallet.com:
 
 There are several scripts available for maintainers:
 
-- `npm run check` -- Execute validation checks; also used in continuous integration.
-- `npm run check-sanity` -- Strict subset of checks
-- `npm run fix` -- Perform automatic fixes where possible
-- `npm run fix-sanity` -- Stricter subset
-- `npm run updateAuto` -- Run automatic updates from external sources, executed regularly (GitHub action)
-- `npm run update` -- Run manual updates from external sources, for manual use.
-- `npm test` -- Run script unit tests
-- `npm lint` -- Run Lint static code check
+- `make check` -- Execute validation checks; also used in continuous integration.
+- `make fix` -- Perform automatic fixes where possible
+- `make update-auto` -- Run automatic updates from external sources, executed regularly (GitHub action)
+- `make update-manual` -- Run manual updates from external sources, for manual use.
 
 ## On Checks
 
-This repo contains a set of scripts for verification of all the information.  Implemented as Typescript scripts, available through `npm run check`, and executed in CI build; checks the whole repo.
+This repo contains a set of scripts for verification of all the information. Implemented as Golang scripts, available through `make check`, and executed in CI build; checks the whole repo.
 There are similar check logic implemented:
-- in assets-management app; for checking changed token files in PRs, or when creating a PR.  Implemented as a Typescript library, checks diffs, can be run from browser environment.
-- in merge-fee-bot, which runs as a GitHub app shows result in PR comment.  Also uses library, but executes in a non-browser environment.
+
+- in assets-management app; for checking changed token files in PRs, or when creating a PR.  Checks diffs, can be run from browser environment.
+- in merge-fee-bot, which runs as a GitHub app shows result in PR comment. Executes in a non-browser environment.
 
 ## Trading pair maintenance
 
@@ -77,6 +76,7 @@ Minimal limit values for trading pair inclusion are set in the `config.ts` file.
 There are also options for force-include and force-exclude in the config.
 
 ## Disclaimer
+
 Trust Wallet team allows anyone to submit new assets to this repository. However, this does not mean that we are in direct partnership with all of the projects.
 
 Trust Wallet team will reject projects that are deemed as scam or fraudulent after careful review.
