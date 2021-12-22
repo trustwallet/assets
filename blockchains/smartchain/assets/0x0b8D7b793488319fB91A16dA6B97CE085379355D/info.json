@@ -1,33 +1,37 @@
 {
     "name": "Kakapo Token",
-    "website": "https://www.kakapotoken.com/",
-    "description": "Kakapo Token is a crypto-community that protects endangered animals. We invite you to make a difference in the battle to save our planet and to protect its biodiversity.",
-    "explorer": "https://bscscan.com/address/0x0b8D7b793488319fB91A16dA6B97CE085379355D",
     "type": "BEP20",
     "symbol": "KAKAPO",
     "decimals": 18,
+    "website": "https://www.kakapotoken.com/",
+    "description": "Kakapo Token is a crypto-community that protects endangered animals. We invite you to make a difference in the battle to save our planet and to protect its biodiversity.",
+    "explorer": "https://bscscan.com/token/0x0b8D7b793488319fB91A16dA6B97CE085379355D",
     "status": "active",
     "id": "0x0b8D7b793488319fB91A16dA6B97CE085379355D",
     "links": [
         {
             "name": "twitter",
-            "url": "https://www.twitter.com/KakapoToken"
+            "url": "https://twitter.com/KakapoToken"
         },
         {
-            "name": "discord",
-            "url": "https://discord.gg/kakapotoken"
+            "name": "github",
+            "url": "https://github.com/KakapoToken"
         },
         {
             "name": "telegram",
             "url": "https://t.me/kakapotoken"
         },
         {
-            "name": "instagram",
-            "url": "https://www.instagram.com/kakapotoken"
+            "name": "discord",
+            "url": "https://discord.gg/kakapotoken"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://www.kakapotoken.com/KakapoToken-Whitepaper.pdf"
         },
         {
             "name": "facebook",
-            "url": "https://www.facebook.com/Kakapotoken"
+            "url": "https://facebook.com/Kakapotoken"
         }
     ]
 }
