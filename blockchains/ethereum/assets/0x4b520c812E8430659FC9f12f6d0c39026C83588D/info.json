@@ -7,5 +7,23 @@
 	"symbol": "DG",
 	"decimals": 18,
 	"status": "active",
-	"id": "0x4b520c812E8430659FC9f12f6d0c39026C83588D"
+	"id": "0x4b520c812E8430659FC9f12f6d0c39026C83588D",
+	"links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/decentralgames"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/decentralgames"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/decentralgames"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/decentral-games-new/"
+        }
+    ]
 }
