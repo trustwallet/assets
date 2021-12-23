@@ -1,6 +1,7 @@
 package file
 
 import (
+	"fmt"
 	"os"
 	"path/filepath"
 	"regexp"
@@ -147,7 +148,7 @@ func ReadLocalFileStructure(root string, filesToSkip []string) ([]string, error)
 				return nil
 			}
 
-			paths = append(paths, path)
+			paths = append(paths, fmt.Sprintf("./%s", path))
 
 			return nil
 		})

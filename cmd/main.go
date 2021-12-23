@@ -8,6 +8,7 @@ import (
 	"github.com/trustwallet/assets/internal/config"
 	"github.com/trustwallet/assets/internal/file"
 	"github.com/trustwallet/assets/internal/processor"
+	"github.com/trustwallet/assets/internal/report"
 	"github.com/trustwallet/assets/internal/service"
 )
 
@@ -23,9 +24,10 @@ func main() {
 		log.WithError(err).Fatal("Failed to load file structure.")
 	}
 
-	fileStorage := file.NewService(paths...)
-	validatorsService := processor.NewService(fileStorage)
-	assetfsProcessor := service.NewService(fileStorage, validatorsService)
+	fileService := file.NewService(paths...)
+	validatorsService := processor.NewService(fileService)
+	reportService := report.NewService()
+	assetfsProcessor := service.NewService(fileService, validatorsService, reportService)
 
 	switch script {
 	case "checker":
@@ -38,6 +40,14 @@ func main() {
 		assetfsProcessor.RunUpdateManual()
 	default:
 		log.Info("Nothing to launch. Use --script flag to choose a script to run.")
+	}
+
+	reportMsg := reportService.GetReport()
+
+	if reportService.IsFailed() {
+		log.Fatal(reportMsg)
+	} else {
+		log.Info(reportMsg)
 	}
 }
 
