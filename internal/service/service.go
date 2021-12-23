@@ -4,6 +4,7 @@ import (
 	"github.com/trustwallet/assets-go-libs/validation"
 	"github.com/trustwallet/assets/internal/file"
 	"github.com/trustwallet/assets/internal/processor"
+	"github.com/trustwallet/assets/internal/report"
 
 	log "github.com/sirupsen/logrus"
 )
@@ -11,12 +12,14 @@ import (
 type Service struct {
 	fileService      *file.Service
 	processorService *processor.Service
+	reportService    *report.Service
 }
 
-func NewService(fs *file.Service, cs *processor.Service) *Service {
+func NewService(fs *file.Service, cs *processor.Service, rs *report.Service) *Service {
 	return &Service{
 		fileService:      fs,
 		processorService: cs,
+		reportService:    rs,
 	}
 }
 
@@ -24,6 +27,7 @@ func (s *Service) RunJob(paths []string, job func(*file.AssetFile)) {
 	for _, path := range paths {
 		f := s.fileService.GetAssetFile(path)
 		job(f)
+		s.reportService.IncTotalFiles()
 	}
 }
 
@@ -32,8 +36,7 @@ func (s *Service) Check(f *file.AssetFile) {
 
 	if validator != nil {
 		if err := validator.Run(f); err != nil {
-			// TODO: somehow return an error from Check if there are any errors.
-			HandleError(err, f, validator.Name)
+			s.handleError(err, f, validator.Name)
 		}
 	}
 }
@@ -43,7 +46,7 @@ func (s *Service) Fix(f *file.AssetFile) {
 
 	for _, fixer := range fixers {
 		if err := fixer.Run(f); err != nil {
-			HandleError(err, f, fixer.Name)
+			s.handleError(err, f, fixer.Name)
 		}
 	}
 }
@@ -67,7 +70,7 @@ func (s *Service) runUpdaters(updaters []processor.Updater) {
 	}
 }
 
-func HandleError(err error, info *file.AssetFile, valName string) {
+func (s *Service) handleError(err error, info *file.AssetFile, valName string) {
 	errors := UnwrapComposite(err)
 
 	for _, err := range errors {
@@ -78,6 +81,8 @@ func HandleError(err error, info *file.AssetFile, valName string) {
 			"path":       info.Path(),
 			"validation": valName,
 		}).Error(err)
+
+		s.reportService.IncErrors()
 	}
 }
 
