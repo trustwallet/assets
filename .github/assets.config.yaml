@@ -1,17 +1,16 @@
 app:
-  log_level: info
+  log_level: debug
 
 client_urls:
-  binancedex: "https://dex-atlantic.binance.org"
+  binance:
+    dex: https://dex.binance.org
+    explorer: https://explorer.binance.org
+  backend_api: https://api.trustwallet.com 
+
+urls:
+  tw_assets_app: https://assets.trustwalletapp.com
 
 validators_settings:
-  image_file:
-    size_kb: 100
-    max_w: 512
-    max_h: 512
-    min_w: 50
-    min_h: 50
-
   root_folder:
     allowed_files:
       - ".github"
@@ -33,8 +32,11 @@ validators_settings:
       - ".eslintignore"
       - ".eslintrc.js"
       - "cmd"
+      - "internal"
       - "go.mod"
       - "go.sum"
+      - ".golangci.yml"
+      - "Makefile"
     skip_files:
       - "node_modules"
 
@@ -96,3 +98,12 @@ validators_settings:
       - id: nsfw
         name: NSFW
         description: Content Not suitable for work.
+      - id: binance-peg
+        name: Binance-Peg
+        description: Binance-Peg tokens.
+      - id: deflationary
+        name: Deflationary
+        description: Tokens that are deflationary or use mechanism to burn a token on transfer/swap.
+      - id: memes
+        name: Memes
+        description: A cryptocurrency that is associated with some theme, often as a joke rather than a serious product.
