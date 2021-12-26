@@ -7,7 +7,7 @@ jobs:
   fix-dryrun:
     runs-on: ubuntu-latest
     steps:
-      - name: Set up Go 1.17
+      - name: Set up Go
         uses: actions/setup-go@v2
         with:
           go-version: 1.17
@@ -21,6 +21,7 @@ jobs:
 
       - name: Show fix result (diff)
         run: |
+          git config core.ignorecase false
           git status
           git diff
 

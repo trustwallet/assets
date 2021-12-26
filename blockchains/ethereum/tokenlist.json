@@ -3585,6 +3585,36 @@
             "decimals": 18,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x767FE9EDC9E0dF98E07454847909b5E959D7ca0E/logo.png",
             "pairs": []
+        },
+        {
+            "asset": "c60_t0x15D4c048F83bd7e37d49eA4C83a07267Ec4203dA",
+            "type": "ERC20",
+            "address": "0x15D4c048F83bd7e37d49eA4C83a07267Ec4203dA",
+            "name": "Gala",
+            "symbol": "GALA",
+            "decimals": 8,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x15D4c048F83bd7e37d49eA4C83a07267Ec4203dA/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c60_t0x4e3FBD56CD56c3e72c1403e103b45Db9da5B9D2B",
+            "type": "ERC20",
+            "address": "0x4e3FBD56CD56c3e72c1403e103b45Db9da5B9D2B",
+            "name": "Convex Token",
+            "symbol": "CVX",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x4e3FBD56CD56c3e72c1403e103b45Db9da5B9D2B/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c60_t0x090185f2135308BaD17527004364eBcC2D37e5F6",
+            "type": "ERC20",
+            "address": "0x090185f2135308BaD17527004364eBcC2D37e5F6",
+            "name": "Spell Token",
+            "symbol": "SPELL",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x090185f2135308BaD17527004364eBcC2D37e5F6/logo.png",
+            "pairs": []
         }
     ],
     "version": {
