@@ -1,0 +1,29 @@
+{
+    "name": "Ethereum-bridged Zilliqa Token",
+    "type": "ERC20",
+    "symbol": "eZIL",
+    "decimals": 12,
+    "website": "https://zilliqa.com",
+    "description": "ERC20 token for the Ethereum-bridged version of the native Zilliqa token ZIL.",
+    "explorer": "https://etherscan.io/token/0x6eeb539d662bb971a4a01211c67cb7f65b09b802",
+    "status": "active",
+    "id": "0x6eeb539d662bb971a4a01211c67cb7f65b09b802",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/zilliqa"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/zilliqa"
+        },
+        {
+            "name": "medium",
+            "url": "https://blog.zilliqa.com/"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.gg/uKg6Ea7X2C"
+        }
+    ]
+}
