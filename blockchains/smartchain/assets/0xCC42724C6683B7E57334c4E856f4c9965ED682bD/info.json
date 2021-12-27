@@ -1,11 +1,33 @@
 {
-    "name": "Matic Token",
-    "symbol": "MATIC",
+    "name": "MATIC (Bep20)",
     "type": "BEP20",
+    "symbol": "MATIC",
     "decimals": 18,
+    "website": "https://polygon.technology/",
     "description": "Matic Network is a layer-2 scaling solution that uses sidechains for off-chain computation while ensuring asset security using Plasma framework and a decentralized network of Proof-of-Stake (PoS) vailidators.",
-    "website": "https://matic.network/",
-    "explorer": "https://bscscan.com/token/0xcc42724c6683b7e57334c4e856f4c9965ed682bd",
+    "explorer": "https://bscscan.com/token/0xCC42724C6683B7E57334c4E856f4c9965ED682bD",
     "status": "active",
-    "id": "0xCC42724C6683B7E57334c4E856f4c9965ED682bD"
+    "id": "0xCC42724C6683B7E57334c4E856f4c9965ED682bD",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/0xPolygon?t=5JWujf4xrSQJ4TnVyloiLg&s=09"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/maticnetwork/"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/polygonofficial"
+        },
+        {
+            "name": "telegram_news",
+            "url": "https://t.me/PolygonAnnouncements"
+        },
+        {
+            "name": "blog",
+            "url": "https://polygon.technology/"
+        }
+    ]
 }
