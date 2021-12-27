@@ -137,6 +137,7 @@ func (s *Service) GetUpdatersAuto() []Updater {
 	}
 }
 
+// nolint:godot
 func (s *Service) GetUpdatersManual() []Updater {
 	return []Updater{
 		{
