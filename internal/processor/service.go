@@ -137,19 +137,12 @@ func (s *Service) GetUpdatersAuto() []Updater {
 	}
 }
 
-// nolint:godot
 func (s *Service) GetUpdatersManual() []Updater {
 	return []Updater{
 		{
 			Name: "Update tokenlist.json for Ethereum",
 			Run:  s.UpdateEthereumTokenlist,
 		},
-		// TODO: Add a special unmarshalling for `fetchTradingPairs`.
-		// In addition, https://graphql.bitquery.io/ has new restrictions for API access, so this updater doesn't work.
-		// {
-		// 	Name: "Update tokenlist.json for Polygon",
-		// 	Run:  s.UpdatePolygonTokenlist,
-		// },
 		{
 			Name: "Update tokenlist.json for Smartchain",
 			Run:  s.UpdateSmartchainTokenlist,

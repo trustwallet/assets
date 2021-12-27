@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"strconv"
 	"strings"
-	"time"
 
 	log "github.com/sirupsen/logrus"
 
@@ -20,25 +19,6 @@ import (
 )
 
 var (
-	UniswapForceInclude = []string{
-		"TUSD", "STAKE", "YFI", "BAT", "MANA", "1INCH", "REP", "KP3R", "UNI", "WBTC", "HEX", "CREAM", "SLP",
-		"REN", "XOR", "Link", "sUSD", "HEGIC", "RLC", "DAI", "SUSHI", "FYZ", "DYT", "AAVE", "LEND", "UBT",
-		"DIA", "RSR", "SXP", "OCEAN", "MKR", "USDC", "CEL", "BAL", "BAND", "COMP", "SNX", "OMG", "AMPL",
-		"USDT", "KNC", "ZRX", "AXS", "ENJ", "STMX", "DPX", "FTT", "DPI", "PAX",
-	}
-	UniswapForceExclude = []string{"STARL", "UFO"}
-
-	PolygonSwapForceInclude = []string{}
-	PolygonSwapForceExclude = []string{}
-
-	PancakeSwapForceInclude = []string{
-		"Cake", "DAI", "ETH", "TWT", "VAI", "USDT", "BLINK", "BTCB", "ALPHA", "INJ", "CTK", "UNI", "XVS",
-		"BUSD", "HARD", "BIFI", "FRONT",
-	}
-	PancakeSwapForceExclude = []string{}
-)
-
-var (
 	UniswapTradingPairsQuery = map[string]string{
 		"operationName": "pairs",
 		"query": `
@@ -50,21 +30,6 @@ var (
 					}
 					token1 {
 						id symbol name decimals __typename
-					}
-				}
-			}
-		`,
-	}
-
-	PolygonSwapTradingPairsQuery = map[string]string{
-		"query": `
-			{
-				ethereum(network: matic) {
-					dexTrades(date: {is: "$DATE$"}) {
-						sellCurrency {address symbol name decimals}
-						buyCurrency {address symbol name decimals}
-						trade: count
-						tradeAmount(in: USD)
 					}
 				}
 			}
@@ -87,42 +52,23 @@ var (
 			}
 		`,
 	}
-
-	UniswapTradingPairsUrl     = "https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v2"
-	PolygonSwapTradingPairsUrl = "https://graphql.bitquery.io"
-	PancakeSwapTradingPairsUrl = "https://api.bscgraph.org/subgraphs/name/cakeswap"
-)
-
-const (
-	UniswapMinLiquidity = 2000000
-	UniswapMinVol24     = 1000000
-	UniswapMinTxCount24 = 480
-
-	PolygonSwapMinLiquidity = 0
-	PolygonSwapMinVol24     = 500000
-	PolygonSwapMinTxCount24 = 288
-
-	PancakeSwapMinLiquidity = 1000000
-	PancakeSwapMinVol24     = 500000
-	PancakeSwapMinTxCount24 = 288
-)
-
-var (
-	PrimaryTokensEthereum   = []string{"WETH", "ETH"}
-	PrimaryTokensPolygon    = []string{"WMATIC", "MATIC", "WETH", "USDC", "USDT", "DAI"}
-	PrimaryTokensSmartChain = []string{"WBNB", "BNB"}
 )
 
 // nolint:dupl
 func (s *Service) UpdateEthereumTokenlist() error {
 	log.WithFields(log.Fields{
-		"limit_liquidity": UniswapMinLiquidity,
-		"volume":          UniswapMinVol24,
-		"tx_count":        UniswapMinTxCount24,
+		"limit_liquidity": config.Default.TradingPairSettings.Uniswap.MinLiquidity,
+		"volume":          config.Default.TradingPairSettings.Uniswap.MinVol24,
+		"tx_count":        config.Default.TradingPairSettings.Uniswap.MinTxCount24,
 	}).Debug("Retrieving pairs from Uniswap")
 
-	tradingPairs, err := retrievePairs(UniswapTradingPairsUrl, UniswapTradingPairsQuery,
-		UniswapMinLiquidity, UniswapMinVol24, UniswapMinTxCount24, UniswapForceInclude, PrimaryTokensEthereum)
+	forceInclude := strings.Split(config.Default.TradingPairSettings.Uniswap.ForceIncludeList, ",")
+	forceExclude := strings.Split(config.Default.TradingPairSettings.Uniswap.ForceExcludeList, ",")
+	primaryTokens := strings.Split(config.Default.TradingPairSettings.Uniswap.PrimaryTokens, ",")
+
+	tradingPairs, err := retrievePairs(config.Default.TradingPairSettings.Uniswap.URL, UniswapTradingPairsQuery,
+		config.Default.TradingPairSettings.Uniswap.MinLiquidity, config.Default.TradingPairSettings.Uniswap.MinVol24,
+		config.Default.TradingPairSettings.Uniswap.MinTxCount24, forceInclude, primaryTokens)
 	if err != nil {
 		return err
 	}
@@ -142,70 +88,32 @@ func (s *Service) UpdateEthereumTokenlist() error {
 			return err
 		}
 
-		if !isTokenPrimary(tradingPair.Token0, PrimaryTokensEthereum) {
+		if !isTokenPrimary(tradingPair.Token0, primaryTokens) {
 			tokenItem0, tokenItem1 = tokenItem1, tokenItem0
 		}
 
 		pairs = append(pairs, []TokenItem{*tokenItem0, *tokenItem1})
 	}
 
-	return rebuildTokenList(chain, pairs, UniswapForceExclude)
-}
-
-func (s *Service) UpdatePolygonTokenlist() error {
-	log.WithFields(log.Fields{
-		"limit_liquidity": PolygonSwapMinLiquidity,
-		"volume":          PolygonSwapMinVol24,
-		"tx_count":        PolygonSwapMinTxCount24,
-	}).Debug("Retrieving pairs from PolygonSwap")
-
-	yesterdayDate := time.Now().AddDate(0, 0, -1).Format("2006-01-02")
-
-	PolygonSwapTradingPairsQuery["query"] = strings.ReplaceAll(PolygonSwapTradingPairsQuery["query"],
-		"$DATE$", yesterdayDate)
-
-	tradingPairs, err := retrievePairs(PolygonSwapTradingPairsUrl, PolygonSwapTradingPairsQuery, PolygonSwapMinLiquidity,
-		PolygonSwapMinVol24, PolygonSwapMinTxCount24, PolygonSwapForceInclude, PrimaryTokensPolygon)
-	if err != nil {
-		return err
-	}
-
-	pairs := make([][]TokenItem, 0)
-
-	chain := coin.Coins[coin.POLYGON]
-
-	for _, tradingPair := range tradingPairs {
-		tokenItem0, err := getTokenInfoFromSubgraphToken(chain, tradingPair.Token0)
-		if err != nil {
-			return err
-		}
-
-		tokenItem1, err := getTokenInfoFromSubgraphToken(chain, tradingPair.Token1)
-		if err != nil {
-			return err
-		}
-
-		if !isTokenPrimary(tradingPair.Token0, PrimaryTokensEthereum) {
-			tokenItem0, tokenItem1 = tokenItem1, tokenItem0
-		}
-
-		pairs = append(pairs, []TokenItem{*tokenItem0, *tokenItem1})
-	}
-
-	return rebuildTokenList(chain, pairs, PolygonSwapForceExclude)
+	return rebuildTokenList(chain, pairs, forceExclude)
 }
 
 // nolint:dupl
 func (s *Service) UpdateSmartchainTokenlist() error {
 	log.WithFields(log.Fields{
-		"limit_liquidity": PancakeSwapMinLiquidity,
-		"volume":          PancakeSwapMinVol24,
-		"tx_count":        PancakeSwapMinTxCount24,
+		"limit_liquidity": config.Default.TradingPairSettings.Pancakeswap.MinLiquidity,
+		"volume":          config.Default.TradingPairSettings.Pancakeswap.MinVol24,
+		"tx_count":        config.Default.TradingPairSettings.Pancakeswap.MinTxCount24,
 	}).Debug("Retrieving pairs from PancakeSwap")
 
-	tradingPairs, err := retrievePairs(PancakeSwapTradingPairsUrl, PancakeSwapTradingPairsQuery,
-		PancakeSwapMinLiquidity, PancakeSwapMinVol24, PancakeSwapMinTxCount24,
-		PancakeSwapForceInclude, PrimaryTokensSmartChain)
+	forceInclude := strings.Split(config.Default.TradingPairSettings.Pancakeswap.ForceIncludeList, ",")
+	forceExclude := strings.Split(config.Default.TradingPairSettings.Pancakeswap.ForceExcludeList, ",")
+	primaryTokens := strings.Split(config.Default.TradingPairSettings.Pancakeswap.PrimaryTokens, ",")
+
+	tradingPairs, err := retrievePairs(config.Default.TradingPairSettings.Pancakeswap.URL,
+		PancakeSwapTradingPairsQuery, config.Default.TradingPairSettings.Pancakeswap.MinLiquidity,
+		config.Default.TradingPairSettings.Pancakeswap.MinVol24,
+		config.Default.TradingPairSettings.Pancakeswap.MinTxCount24, forceInclude, primaryTokens)
 	if err != nil {
 		return err
 	}
@@ -225,14 +133,14 @@ func (s *Service) UpdateSmartchainTokenlist() error {
 			return err
 		}
 
-		if !isTokenPrimary(tradingPair.Token0, PrimaryTokensSmartChain) {
+		if !isTokenPrimary(tradingPair.Token0, primaryTokens) {
 			tokenItem0, tokenItem1 = tokenItem1, tokenItem0
 		}
 
 		pairs = append(pairs, []TokenItem{*tokenItem0, *tokenItem1})
 	}
 
-	return rebuildTokenList(chain, pairs, PancakeSwapForceExclude)
+	return rebuildTokenList(chain, pairs, forceExclude)
 }
 
 func retrievePairs(url string, query map[string]string, minLiquidity, minVol24, minTxCount24 int,
