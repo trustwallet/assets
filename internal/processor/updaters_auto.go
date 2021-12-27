@@ -8,6 +8,7 @@ import (
 	"time"
 
 	log "github.com/sirupsen/logrus"
+
 	fileLib "github.com/trustwallet/assets-go-libs/file"
 	"github.com/trustwallet/assets-go-libs/image"
 	"github.com/trustwallet/assets-go-libs/path"

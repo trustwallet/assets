@@ -113,6 +113,7 @@ var (
 	PrimaryTokensSmartChain = []string{"WBNB", "BNB"}
 )
 
+// nolint:dupl
 func (s *Service) UpdateEthereumTokenlist() error {
 	log.WithFields(log.Fields{
 		"limit_liquidity": UniswapMinLiquidity,
@@ -194,6 +195,7 @@ func (s *Service) UpdatePolygonTokenlist() error {
 	return rebuildTokenList(chain, pairs, PolygonSwapForceExclude)
 }
 
+// nolint:dupl
 func (s *Service) UpdateSmartchainTokenlist() error {
 	log.WithFields(log.Fields{
 		"limit_liquidity": PancakeSwapMinLiquidity,
@@ -202,7 +204,8 @@ func (s *Service) UpdateSmartchainTokenlist() error {
 	}).Debug("Retrieving pairs from PancakeSwap")
 
 	tradingPairs, err := retrievePairs(PancakeSwapTradingPairsUrl, PancakeSwapTradingPairsQuery,
-		PancakeSwapMinLiquidity, PancakeSwapMinVol24, PancakeSwapMinTxCount24, PancakeSwapForceInclude, PrimaryTokensSmartChain)
+		PancakeSwapMinLiquidity, PancakeSwapMinVol24, PancakeSwapMinTxCount24,
+		PancakeSwapForceInclude, PrimaryTokensSmartChain)
 	if err != nil {
 		return err
 	}
