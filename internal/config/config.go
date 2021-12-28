@@ -8,10 +8,11 @@ import (
 
 type (
 	Config struct {
-		App                App                `mapstructure:"app"`
-		ClientURLs         ClientsURLs        `mapstructure:"client_urls"`
-		URLs               URLs               `mapstructure:"urls"`
-		ValidatorsSettings ValidatorsSettings `mapstructure:"validators_settings"`
+		App                 App                 `mapstructure:"app"`
+		ClientURLs          ClientsURLs         `mapstructure:"client_urls"`
+		URLs                URLs                `mapstructure:"urls"`
+		ValidatorsSettings  ValidatorsSettings  `mapstructure:"validators_settings"`
+		TradingPairSettings TradingPairSettings `mapstructure:"trading_pair_settings"`
 	}
 
 	App struct {
@@ -38,6 +39,21 @@ type (
 		ChainValidatorsAssetFolder ChainValidatorsAssetFolder `mapstructure:"chain_validators_asset_folder"`
 		DappsFolder                DappsFolder                `mapstructure:"dapps_folder"`
 		CoinInfoFile               CoinInfoFile               `mapstructure:"coin_info_file"`
+	}
+
+	TradingPairSettings struct {
+		Uniswap     TradingPairSetting `mapstructure:"uniswap"`
+		Pancakeswap TradingPairSetting `mapstructure:"pancakeswap"`
+	}
+
+	TradingPairSetting struct {
+		URL              string `mapstructure:"url"`
+		PrimaryTokens    string `mapstructure:"primary_tokens"`
+		ForceIncludeList string `mapstructure:"force_include_list"`
+		ForceExcludeList string `mapstructure:"force_exclude_list"`
+		MinLiquidity     int    `mapstructure:"min_liquidity"`
+		MinVol24         int    `mapstructure:"min_vol_24"`
+		MinTxCount24     int    `mapstructure:"min_tx_count_24"`
 	}
 )
 
