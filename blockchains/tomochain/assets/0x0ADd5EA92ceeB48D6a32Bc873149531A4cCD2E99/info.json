@@ -1,11 +1,33 @@
 {
     "name": "HotMoon Token",
-    "symbol": "HMOON",
     "type": "TRC21",
+    "symbol": "HMOON",
     "decimals": 18,
-    "description": "HotMoon is a community-centric token and completely decentralized",
     "website": "https://hotmoontoken.com",
-    "explorer": "https://tomoscan.io/token/0x0ADd5EA92ceeB48D6a32Bc873149531A4cCD2E99/",
+    "description": "HotMoon is a community-centric token and completely decentralized",
+    "explorer": "https://scan.tomochain.com/address/0x0ADd5EA92ceeB48D6a32Bc873149531A4cCD2E99",
     "status": "active",
-    "id": "0x0ADd5EA92ceeB48D6a32Bc873149531A4cCD2E99"
+    "id": "0x0ADd5EA92ceeB48D6a32Bc873149531A4cCD2E99",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/hotmoontoken"
+        },
+        {
+            "name": "youtube",
+            "url": "https://youtube.com/channel/UCK5fhDVx6N1O21KSCWulXxg"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://hotmoontoken.com/WhitePaperV1HotMoonToken.pdf"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/hotmoontoken"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/hotmoonarmy/"
+        }
+    ]
 }
