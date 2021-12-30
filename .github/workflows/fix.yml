@@ -37,9 +37,6 @@ jobs:
         if: github.repository_owner == 'trustwallet'
         run: go run ./cmd/main.go --config=./.github/assets.config.yaml --script=fixer
 
-      # - name: Debug
-      #   run: echo "GITHUB_REF " $GITHUB_REF "  GITHUB_BASE_REF " $GITHUB_BASE_REF
-
       - name: Show fix result (diff)
         run: |
           git status

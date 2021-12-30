@@ -26,3 +26,15 @@ endif
 lint: lint-install
 	@echo "  >  Running golint"
 	bin/golangci-lint run --timeout=2m
+
+check:
+	go run ./cmd/main.go --script=checker
+
+fix:
+	go run ./cmd/main.go --script=fixer
+
+update-auto:
+	go run ./cmd/main.go --script=updater-auto
+
+update-manual:
+	go run ./cmd/main.go --script=updater-manual

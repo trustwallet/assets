@@ -2,6 +2,7 @@ package processor
 
 import (
 	"encoding/json"
+	"fmt"
 	"strconv"
 	"strings"
 
@@ -15,25 +16,6 @@ import (
 	"github.com/trustwallet/go-primitives/address"
 	"github.com/trustwallet/go-primitives/coin"
 	"github.com/trustwallet/go-primitives/types"
-)
-
-var (
-	UniswapForceInclude = []string{
-		"TUSD", "STAKE", "YFI", "BAT", "MANA", "1INCH", "REP", "KP3R", "UNI", "WBTC", "HEX", "CREAM", "SLP",
-		"REN", "XOR", "Link", "sUSD", "HEGIC", "RLC", "DAI", "SUSHI", "FYZ", "DYT", "AAVE", "LEND", "UBT",
-		"DIA", "RSR", "SXP", "OCEAN", "MKR", "USDC", "CEL", "BAL", "BAND", "COMP", "SNX", "OMG", "AMPL",
-		"USDT", "KNC", "ZRX", "AXS", "ENJ", "STMX", "DPX", "FTT", "DPI", "PAX",
-	}
-	UniswapForceExclude = []string{"STARL", "UFO"}
-
-	PolygonSwapForceInclude = []string{}
-	PolygonSwapForceExclude = []string{}
-
-	PancakeSwapForceInclude = []string{
-		"Cake", "DAI", "ETH", "TWT", "VAI", "USDT", "BLINK", "BTCB", "ALPHA", "INJ", "CTK", "UNI", "XVS",
-		"BUSD", "HARD", "BIFI", "FRONT",
-	}
-	PancakeSwapForceExclude = []string{}
 )
 
 var (
@@ -54,23 +36,7 @@ var (
 		`,
 	}
 
-	PolygonSwap_TradingPairsQuery = map[string]string{
-		"operationName": "pairs",
-		"query": `
-			{
-				ethereum(network: matic) {
-					dexTrades(date: {is: "$DATE$"}) {
-						sellCurrency {address symbol name decimals}
-						buyCurrency {address symbol name decimals}
-						trade: count
-						tradeAmount(in: USD)
-					}
-				}
-			}
-		`,
-	}
-
-	PancakeSwap_TradingPairsQuery = map[string]string{
+	PancakeSwapTradingPairsQuery = map[string]string{
 		"operationName": "pairs",
 		"query": `
 			query pairs {
@@ -86,74 +52,98 @@ var (
 			}
 		`,
 	}
-
-	UniswapTradingPairsUrl     = "https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v2"
-	PolygonSwapTradingPairsUrl = "https://graphql.bitquery.io"
-	PancakeSwapradingPairsUrl  = "https://api.bscgraph.org/subgraphs/name/cakeswap"
 )
 
-const (
-	UniswapMinLiquidity = 2000000
-	UniswapMinVol24     = 1000000
-	UniswapMinTxCount24 = 480
-
-	PolygonSwapMinVol24     = 500000
-	PolygonSwapMinTxCount24 = 288
-
-	PancakeSwapMinLiquidity = 1000000
-	PancakeSwapMinVol24     = 500000
-	PancakeSwapMinTxCount24 = 288
-)
-
-var (
-	PrimaryTokensETH = []string{"WETH", "ETH"}
-)
-
+// nolint:dupl
 func (s *Service) UpdateEthereumTokenlist() error {
 	log.WithFields(log.Fields{
-		"limit_liquidity": UniswapMinLiquidity,
-		"volume":          UniswapMinVol24,
-		"tx_count":        UniswapMinTxCount24,
+		"limit_liquidity": config.Default.TradingPairSettings.Uniswap.MinLiquidity,
+		"volume":          config.Default.TradingPairSettings.Uniswap.MinVol24,
+		"tx_count":        config.Default.TradingPairSettings.Uniswap.MinTxCount24,
 	}).Debug("Retrieving pairs from Uniswap")
 
-	tradingPairs, err := retrieveUniswapPairs(UniswapTradingPairsUrl, UniswapTradingPairsQuery,
-		UniswapMinLiquidity, UniswapMinVol24, UniswapMinTxCount24, UniswapForceInclude, PrimaryTokensETH)
+	forceInclude := strings.Split(config.Default.TradingPairSettings.Uniswap.ForceIncludeList, ",")
+	forceExclude := strings.Split(config.Default.TradingPairSettings.Uniswap.ForceExcludeList, ",")
+	primaryTokens := strings.Split(config.Default.TradingPairSettings.Uniswap.PrimaryTokens, ",")
+
+	tradingPairs, err := retrievePairs(config.Default.TradingPairSettings.Uniswap.URL, UniswapTradingPairsQuery,
+		config.Default.TradingPairSettings.Uniswap.MinLiquidity, config.Default.TradingPairSettings.Uniswap.MinVol24,
+		config.Default.TradingPairSettings.Uniswap.MinTxCount24, forceInclude, primaryTokens)
 	if err != nil {
 		return err
 	}
 
 	pairs := make([][]TokenItem, 0)
 
+	chain := coin.Coins[coin.ETHEREUM]
+
 	for _, tradingPair := range tradingPairs {
-		tokenItem0, err := getTokenInfoFromSubgraphToken(tradingPair.Token0)
+		tokenItem0, err := getTokenInfoFromSubgraphToken(chain, tradingPair.Token0)
 		if err != nil {
 			return err
 		}
 
-		tokenItem1, err := getTokenInfoFromSubgraphToken(tradingPair.Token1)
+		tokenItem1, err := getTokenInfoFromSubgraphToken(chain, tradingPair.Token1)
 		if err != nil {
 			return err
 		}
 
-		if !isTokenPrimary(tradingPair.Token0, PrimaryTokensETH) {
+		if !isTokenPrimary(tradingPair.Token0, primaryTokens) {
 			tokenItem0, tokenItem1 = tokenItem1, tokenItem0
 		}
 
 		pairs = append(pairs, []TokenItem{*tokenItem0, *tokenItem1})
 	}
 
-	return rebuildTokenList(coin.Coins[coin.ETHEREUM], pairs, UniswapForceExclude)
+	return rebuildTokenList(chain, pairs, forceExclude)
 }
 
-func (s *Service) UpdatePolygonTokenlist() error {
-	return nil
-}
-
+// nolint:dupl
 func (s *Service) UpdateSmartchainTokenlist() error {
-	return nil
+	log.WithFields(log.Fields{
+		"limit_liquidity": config.Default.TradingPairSettings.Pancakeswap.MinLiquidity,
+		"volume":          config.Default.TradingPairSettings.Pancakeswap.MinVol24,
+		"tx_count":        config.Default.TradingPairSettings.Pancakeswap.MinTxCount24,
+	}).Debug("Retrieving pairs from PancakeSwap")
+
+	forceInclude := strings.Split(config.Default.TradingPairSettings.Pancakeswap.ForceIncludeList, ",")
+	forceExclude := strings.Split(config.Default.TradingPairSettings.Pancakeswap.ForceExcludeList, ",")
+	primaryTokens := strings.Split(config.Default.TradingPairSettings.Pancakeswap.PrimaryTokens, ",")
+
+	tradingPairs, err := retrievePairs(config.Default.TradingPairSettings.Pancakeswap.URL,
+		PancakeSwapTradingPairsQuery, config.Default.TradingPairSettings.Pancakeswap.MinLiquidity,
+		config.Default.TradingPairSettings.Pancakeswap.MinVol24,
+		config.Default.TradingPairSettings.Pancakeswap.MinTxCount24, forceInclude, primaryTokens)
+	if err != nil {
+		return err
+	}
+
+	pairs := make([][]TokenItem, 0)
+
+	chain := coin.Coins[coin.SMARTCHAIN]
+
+	for _, tradingPair := range tradingPairs {
+		tokenItem0, err := getTokenInfoFromSubgraphToken(chain, tradingPair.Token0)
+		if err != nil {
+			return err
+		}
+
+		tokenItem1, err := getTokenInfoFromSubgraphToken(chain, tradingPair.Token1)
+		if err != nil {
+			return err
+		}
+
+		if !isTokenPrimary(tradingPair.Token0, primaryTokens) {
+			tokenItem0, tokenItem1 = tokenItem1, tokenItem0
+		}
+
+		pairs = append(pairs, []TokenItem{*tokenItem0, *tokenItem1})
+	}
+
+	return rebuildTokenList(chain, pairs, forceExclude)
 }
 
-func retrieveUniswapPairs(url string, query map[string]string, minLiquidity, minVol24, minTxCount24 int,
+func retrievePairs(url string, query map[string]string, minLiquidity, minVol24, minTxCount24 int,
 	forceIncludeList []string, primaryTokens []string) ([]TradingPair, error) {
 	includeList := parseForceList(forceIncludeList)
 
@@ -173,6 +163,8 @@ func retrieveUniswapPairs(url string, query map[string]string, minLiquidity, min
 			filtered = append(filtered, pair)
 		}
 	}
+
+	log.Debugf("Retrieved & filtered: %d", len(filtered))
 
 	return filtered, nil
 }
@@ -278,7 +270,7 @@ func getTokenItemFromInfo(tokenInfo *TokenInfo) *TokenItem {
 	}
 }
 
-func getTokenInfoFromSubgraphToken(token *TokenInfo) (*TokenItem, error) {
+func getTokenInfoFromSubgraphToken(chain coin.Coin, token *TokenInfo) (*TokenItem, error) {
 	checksum, err := address.EIP55Checksum(token.ID)
 	if err != nil {
 		return nil, err
@@ -289,14 +281,19 @@ func getTokenInfoFromSubgraphToken(token *TokenInfo) (*TokenItem, error) {
 		return nil, err
 	}
 
+	tokenType, ok := types.GetTokenType(chain.ID, token.ID)
+	if !ok {
+		return nil, fmt.Errorf("failed to get a token type for %s %s", chain.Symbol, token.ID)
+	}
+
 	return &TokenItem{
-		Asset:    getAssetIDSymbol(checksum, coin.Coins[coin.ETHEREUM].Symbol, coin.ETHEREUM),
-		Type:     string(types.ERC20),
+		Asset:    getAssetIDSymbol(checksum, chain.Symbol, chain.ID),
+		Type:     tokenType,
 		Address:  checksum,
 		Name:     token.Name,
 		Symbol:   token.Symbol,
 		Decimals: uint(decimals),
-		LogoURI:  getLogoURI(token.Symbol, coin.Coins[coin.ETHEREUM].Handle, coin.Coins[coin.ETHEREUM].Symbol),
+		LogoURI:  getLogoURI(token.Symbol, chain.Handle, chain.Symbol),
 		Pairs:    make([]Pair, 0),
 	}, nil
 }
@@ -419,7 +416,9 @@ func rebuildTokenList(chain coin.Coin, pairs [][]TokenItem, forceExcludeList []s
 		return nil
 	}
 
-	removeAllPairs(&list)
+	log.Debugf("Tokenlist original: %d tokens", len(list.Tokens))
+
+	removeAllPairs(list.Tokens)
 
 	for _, pair := range pairs2 {
 		err = addPairIfNeeded(&pair[0], &pair[1], &list)
@@ -430,16 +429,7 @@ func rebuildTokenList(chain coin.Coin, pairs [][]TokenItem, forceExcludeList []s
 
 	log.Debugf("Tokenlist updated: %d tokens", len(list.Tokens))
 
-	var totalPairs int
-
-	for _, item := range list.Tokens {
-		totalPairs += len(item.Pairs)
-	}
-
-	log.Debugf("Tokenlist: list with %d tokens and %d pairs written to %s.",
-		len(list.Tokens), totalPairs, tokenListPath)
-
-	return fileLib.CreateJSONFile(tokenListPath, list)
+	return createTokenListJSON(chain, list.Tokens)
 }
 
 func checkTokenExists(chain, tokenID string) bool {
@@ -448,9 +438,9 @@ func checkTokenExists(chain, tokenID string) bool {
 	return fileLib.FileExists(logoPath)
 }
 
-func removeAllPairs(list *TokenList) {
-	for _, token := range list.Tokens {
-		token.Pairs = make([]Pair, 0)
+func removeAllPairs(tokens []TokenItem) {
+	for i := range tokens {
+		tokens[i].Pairs = make([]Pair, 0)
 	}
 }
 
@@ -491,18 +481,21 @@ func updateTokenInfo(token *TokenItem) error {
 	backendClient := backend.InitClient(config.Default.ClientURLs.BackendAPI, nil)
 	assetInfo, err := backendClient.GetAssetInfo(token.Asset)
 	if err != nil {
-		return err
+		return fmt.Errorf("failed to get asset info for '%s': %w", token.Address, err)
 	}
 
 	if token.Name != assetInfo.Name {
+		log.Debugf("Token name adjusted: '%s' -> '%s'", token.Name, assetInfo.Name)
 		token.Name = assetInfo.Name
 	}
 
 	if token.Symbol != assetInfo.Symbol {
+		log.Debugf("Token symbol adjusted: '%s' -> '%s'", token.Symbol, assetInfo.Symbol)
 		token.Symbol = assetInfo.Symbol
 	}
 
 	if token.Decimals != uint(assetInfo.Decimals) {
+		log.Debugf("Token decimals adjusted: '%d' -> '%d'", token.Decimals, assetInfo.Decimals)
 		token.Decimals = uint(assetInfo.Decimals)
 	}
 

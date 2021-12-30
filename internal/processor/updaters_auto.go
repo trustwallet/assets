@@ -7,6 +7,8 @@ import (
 	"strconv"
 	"time"
 
+	log "github.com/sirupsen/logrus"
+
 	fileLib "github.com/trustwallet/assets-go-libs/file"
 	"github.com/trustwallet/assets-go-libs/image"
 	"github.com/trustwallet/assets-go-libs/path"
@@ -45,7 +47,7 @@ func (s *Service) UpdateBinanceTokens() error {
 		return err
 	}
 
-	tokensList, err := dexClient.FetchTokens(tokensListLimit)
+	tokenList, err := dexClient.FetchTokens(tokensListLimit)
 	if err != nil {
 		return err
 	}
@@ -60,7 +62,12 @@ func (s *Service) UpdateBinanceTokens() error {
 		return err
 	}
 
-	return createTokenListJSON(chain, marketPairs, tokensList)
+	tokens, err := generateTokenList(marketPairs, tokenList)
+	if err != nil {
+		return err
+	}
+
+	return createTokenListJSON(chain, tokens)
 }
 
 func fetchMissingAssets(chain coin.Coin, assets []explorer.Bep2Asset) error {
@@ -123,16 +130,11 @@ func createInfoJSON(chain coin.Coin, a explorer.Bep2Asset) error {
 	return fileLib.CreateJSONFile(assetInfoPath, &assetInfo)
 }
 
-func createTokenListJSON(chain coin.Coin, marketPairs []binance.MarketPair, tokenList binance.Tokens) error {
-	tokens, err := generateTokenList(marketPairs, tokenList)
-	if err != nil {
-		return nil
-	}
-
+func createTokenListJSON(chain coin.Coin, tokens []TokenItem) error {
 	tokenListPath := path.GetTokenListPath(chain.Handle)
 
 	var oldTokenList TokenList
-	err = fileLib.ReadJSONFile(tokenListPath, &oldTokenList)
+	err := fileLib.ReadJSONFile(tokenListPath, &oldTokenList)
 	if err != nil {
 		return nil
 	}
@@ -143,17 +145,29 @@ func createTokenListJSON(chain coin.Coin, marketPairs []binance.MarketPair, toke
 		return nil
 	}
 
-	if len(tokens) > 0 {
-		return fileLib.CreateJSONFile(tokenListPath, &TokenList{
-			Name:      fmt.Sprintf("Trust Wallet: %s", coin.Coins[coin.BINANCE].Symbol),
-			LogoURI:   twLogoURL,
-			Timestamp: time.Now().Format(timestampFormat),
-			Tokens:    tokens,
-			Version:   Version{Major: oldTokenList.Version.Major + 1},
-		})
+	if len(tokens) == 0 {
+		return nil
 	}
 
-	return nil
+	log.Debugf("Tokenlist: list with %d tokens and %d pairs written to %s.",
+		len(tokens), countTotalPairs(tokens), tokenListPath)
+
+	return fileLib.CreateJSONFile(tokenListPath, &TokenList{
+		Name:      fmt.Sprintf("Trust Wallet: %s", coin.Coins[chain.ID].Name),
+		LogoURI:   twLogoURL,
+		Timestamp: time.Now().Format(timestampFormat),
+		Tokens:    tokens,
+		Version:   Version{Major: oldTokenList.Version.Major + 1},
+	})
+}
+
+func countTotalPairs(tokens []TokenItem) int {
+	var counter int
+	for _, token := range tokens {
+		counter += len(token.Pairs)
+	}
+
+	return counter
 }
 
 func sortTokens(tokens []TokenItem) {

@@ -107,3 +107,26 @@ validators_settings:
       - id: memes
         name: Memes
         description: A cryptocurrency that is associated with some theme, often as a joke rather than a serious product.
+
+trading_pair_settings:
+  uniswap:
+    url: https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v2
+
+    primary_tokens: "WETH,ETH"
+    force_include_list: "TUSD,STAKE,YFI,BAT,MANA,1INCH,REP,KP3R,UNI,WBTC,HEX,CREAM,SLP,REN,XOR,Link,sUSD,HEGIC,RLC,DAI,SUSHI,FYZ,DYT,AAVE,LEND,UBT,DIA,RSR,SXP,OCEAN,MKR,USDC,CEL,BAL,BAND,COMP,SNX,OMG,AMPL,USDT,KNC,ZRX,AXS,ENJ,STMX,DPX,FTT,DPI,PAX"
+    force_exclude_list: "STARL,UFO"
+
+    min_liquidity: 2000000
+    min_vol_24: 1000000
+    min_tx_count_24: 480
+
+  pancakeswap:
+    url: https://api.bscgraph.org/subgraphs/name/cakeswap
+
+    primary_tokens: "WBNB,BNB"
+    force_include_list: "Cake,DAI,ETH,TWT,VAI,USDT,BLINK,BTCB,ALPHA,INJ,CTK,UNI,XVS,BUSD,HARD,BIFI,FRONT"
+    force_exclude_list:
+
+    min_liquidity: 1000000
+    min_vol_24: 500000
+    min_tx_count_24: 288
