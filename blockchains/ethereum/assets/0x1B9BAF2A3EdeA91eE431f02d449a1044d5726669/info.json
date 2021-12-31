@@ -1,32 +1,29 @@
 {
-    "name": "TOWER Token",
-    "website": "https://crazydefenseheroes.com/",
-    "description": "Utility token to the blockchain game of Crazy Kings franchise.",
-    "explorer": "https://etherscan.io/token/0x1C9922314ED1415c95b9FD453c3818fd41867d0B",
+    "name": "Cliffordinu",
+    "website": "https://cliffordinu.io/",
+    "description": "Clifford Inu ($CLIFF), is a highly deflationary token on the Ethereum Blockchain that never stops growing through the use of true deflationary techniques and further reward generation for its holders.",
+    "explorer": "https://etherscan.io/token/0x1B9BAF2A3EdeA91eE431f02d449a1044d5726669",
     "type": "ERC20",
-    "symbol": "TOWER",
+    "symbol": "CLIFF",
     "decimals": 18,
     "status": "active",
-    "id": "0x1C9922314ED1415c95b9FD453c3818fd41867d0B",
-    "tags": [
-        "governance"
-    ],
+    "id": "0x1B9BAF2A3EdeA91eE431f02d449a1044d5726669",
     "links": [
         {
             "name": "twitter",
-            "url": "https://twitter.com/TowerToken"
+            "url": "https://twitter.com/cliffordinu_io"
         },
         {
-            "name": "discord",
-            "url": "https://discord.com/invite/crazydefenseheroes"
+            "name": "coingecko",
+            "url": "https://www.coingecko.com/en/coins/clifford-inu"
         },
         {
-            "name": "medium",
-            "url": "https://medium.com/tower-token"
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/clifford-inu/"
         },
         {
-            "name": "whitepaper",
-            "url": "https://lightpaper.crazydefenseheroes.com/"
+            "name": "audit",
+            "url": "https://www.certik.com/projects/cliffordinu"
         }
     ]
 }
