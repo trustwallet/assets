@@ -1,20 +1,20 @@
 {
     "name": "SiaCashCoin",
     "website": "https://siacashcoin.com",
-    "description": "Yield Farming Token",
-    "explorer": "https://bscscan.com/token/0xc26EaFC627624baDf990f8d30116892eD204DB51",
+    "description": "Yield Farming Token.",
     "type": "BEP20",
     "symbol": "SCC",
     "decimals": 18,
     "status": "active",
-    "id": "0xc26EaFC627624baDf990f8d30116892eD204DB51"
+    "explorer": "https://bscscan.com/token/0xc26EaFC627624baDf990f8d30116892eD204DB51",
+    "id": "0xc26EaFC627624baDf990f8d30116892eD204DB51",
     "links": [
         {
-            "name": "twitter",
+            "name": "telegram",
             "url": "https://twitter.com/Siacashcoin"
         },
         {
-            "name": "telegram",
+            "name": "twitter",
             "url": "https://t.me/SiaCashCoinChat"
         }
     ]
