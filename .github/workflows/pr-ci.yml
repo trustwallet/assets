@@ -11,7 +11,7 @@ jobs:
   pull_request_ci:
     runs-on: ubuntu-latest
     steps:
-      - name: Set up Go 1.17
+      - name: Set up Go
         uses: actions/setup-go@v2
         with:
           go-version: 1.17
@@ -20,5 +20,11 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v2
 
-      - name: Run check (sanity only)
-        run: go run ./cmd/main.go --config=./.github/assets.config.yaml --script=sanity-check
+      - name: Run check
+        run: go run ./cmd/main.go --config=./.github/assets.config.yaml --script=checker
+
+      - name: Unit Test
+        run: make test
+
+      - name: Lint
+        run: make lint
