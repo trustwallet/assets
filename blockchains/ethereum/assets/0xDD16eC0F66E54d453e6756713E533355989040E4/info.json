@@ -3,21 +3,19 @@
     "website": "https://tokenomy.com/",
     "description": "Cryptocurrency ecosystem for trading and earning yield.",
     "explorer": "https://etherscan.io/token/0xdd16ec0f66e54d453e6756713e533355989040e4",
-    "socials": [
-        {
-            "name": "Facebook",
-            "url": "https://www.facebook.com/TOKENOMY/",
-            "handle": "Facebook"
-        },
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/tokenomy",
-            "handle": "Twitter"
-        }
-    ],
     "type": "ERC20",
     "symbol": "TEN",
     "decimals": 18,
     "status": "active",
-    "id": "0xDD16eC0F66E54d453e6756713E533355989040E4"
+    "id": "0xDD16eC0F66E54d453e6756713E533355989040E4",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/Twitter"
+        },
+        {
+            "name": "facebook",
+            "url": "https://facebook.com/TOKENOMY/"
+        }
+    ]
 }

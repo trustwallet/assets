@@ -7,5 +7,22 @@
     "website": "https://www.kava.io/",
     "explorer": "https://explorer.binance.org/asset/KAVA-10C",
     "status": "active",
-    "id": "KAVA-10C"
+    "id": "KAVA-10C",
+    "tags": [
+        "defi"
+    ],
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/kava-labs"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/kava_labs"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/kavalabs"
+        }
+    ]
 }
