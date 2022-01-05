@@ -3635,6 +3635,26 @@
             "decimals": 18,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x6Bba316c48b49BD1eAc44573c5c871ff02958469/logo.png",
             "pairs": []
+        },
+        {
+            "asset": "c60_t0x4Fabb145d64652a948d72533023f6E7A623C7C53",
+            "type": "ERC20",
+            "address": "0x4Fabb145d64652a948d72533023f6E7A623C7C53",
+            "name": "Binance USD",
+            "symbol": "BUSD",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x4Fabb145d64652a948d72533023f6E7A623C7C53/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c60_t0x9E32b13ce7f2E80A01932B42553652E053D6ed8e",
+            "type": "ERC20",
+            "address": "0x9E32b13ce7f2E80A01932B42553652E053D6ed8e",
+            "name": "Metis",
+            "symbol": "Metis",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x9E32b13ce7f2E80A01932B42553652E053D6ed8e/logo.png",
+            "pairs": []
         }
     ],
     "version": {
