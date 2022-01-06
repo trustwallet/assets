@@ -7,5 +7,26 @@
 	"symbol": "LLG",
 	"decimals": 9,
 	"status": "active",
-	"id": "0x4691F60c894d3f16047824004420542E4674E621"
+	"id": "0x4691F60c894d3f16047824004420542E4674E621",
+        "tags":[
+          "nft"
+          ]
+        "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/lucid_lands"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/LucidLandsOffical"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/lucid-lands/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/lucid-lands"
+        }
+    ]
 }
