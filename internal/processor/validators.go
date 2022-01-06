@@ -352,6 +352,65 @@ func (s *Service) ValidateTokenListFile(f *file.AssetFile) error {
 		return err
 	}
 
+	var model TokenList
+	err = json.Unmarshal(buf.Bytes(), &model)
+	if err != nil {
+		return err
+	}
+
+	err = compareTokenlistWithAssets(model.Tokens, f.Chain().Handle)
+	if err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func compareTokenlistWithAssets(tokens []TokenItem, chain string) error {
+	compErr := validation.NewErrComposite()
+
+	for _, token := range tokens {
+		if token.Type == "coin" {
+			continue
+		}
+
+		assetPath := path.GetAssetInfoPath(chain, token.Address)
+
+		infoFile, err := os.Open(assetPath)
+		if err != nil {
+			return err
+		}
+
+		buf := bytes.NewBuffer(nil)
+		if _, err = buf.ReadFrom(infoFile); err != nil {
+			return err
+		}
+
+		infoFile.Close()
+
+		var infoAsset info.AssetModel
+		err = json.Unmarshal(buf.Bytes(), &infoAsset)
+		if err != nil {
+			return err
+		}
+
+		if token.Type != *infoAsset.Type {
+			compErr.Append(fmt.Errorf("field type differs from %s", assetPath))
+		}
+
+		if token.Symbol != *infoAsset.Symbol {
+			compErr.Append(fmt.Errorf("field symbol differs from %s", assetPath))
+		}
+
+		if token.Decimals != uint(*infoAsset.Decimals) {
+			compErr.Append(fmt.Errorf("field decimals differs from %s", assetPath))
+		}
+	}
+
+	if compErr.Len() > 0 {
+		return compErr
+	}
+
 	return nil
 }
 
