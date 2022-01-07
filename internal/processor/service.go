@@ -13,6 +13,8 @@ func NewService(fileProvider *file.Service) *Service {
 }
 
 func (s *Service) GetValidator(f *file.AssetFile) []Validator {
+	jsonValidator := Validator{Name: "JSON validation", Run: s.ValidateJSON}
+
 	switch f.Type() {
 	case file.TypeRootFolder:
 		return []Validator{
@@ -36,18 +38,21 @@ func (s *Service) GetValidator(f *file.AssetFile) []Validator {
 		}
 	case file.TypeAssetInfoFile:
 		return []Validator{
-			{Name: "Asset info (is valid json, fields)", Run: s.ValidateAssetInfoFile},
+			jsonValidator,
+			{Name: "Asset info", Run: s.ValidateAssetInfoFile},
 		}
 	case file.TypeChainInfoFile:
 		return []Validator{
-			{Name: "Chain Info (is valid json, fields)", Run: s.ValidateChainInfoFile},
+			{Name: "Chain Info", Run: s.ValidateChainInfoFile},
 		}
 	case file.TypeValidatorsListFile:
 		return []Validator{
+			jsonValidator,
 			{Name: "Validators list file", Run: s.ValidateValidatorsListFile},
 		}
 	case file.TypeTokenListFile:
 		return []Validator{
+			jsonValidator,
 			{Name: "Token list (if assets from list present in chain)", Run: s.ValidateTokenListFile},
 		}
 	case file.TypeChainInfoFolder:
