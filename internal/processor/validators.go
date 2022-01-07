@@ -14,6 +14,7 @@ import (
 	"github.com/trustwallet/assets/internal/config"
 	"github.com/trustwallet/assets/internal/file"
 	"github.com/trustwallet/go-primitives/coin"
+	"github.com/trustwallet/go-primitives/types"
 )
 
 func (s *Service) ValidateRootFolder(f *file.AssetFile) error {
@@ -350,6 +351,65 @@ func (s *Service) ValidateTokenListFile(f *file.AssetFile) error {
 	err = validation.ValidateJson(buf.Bytes())
 	if err != nil {
 		return err
+	}
+
+	var model TokenList
+	err = json.Unmarshal(buf.Bytes(), &model)
+	if err != nil {
+		return err
+	}
+
+	err = compareTokenlistWithAssets(model.Tokens, f.Chain().Handle)
+	if err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func compareTokenlistWithAssets(tokens []TokenItem, chain string) error {
+	compErr := validation.NewErrComposite()
+
+	for _, token := range tokens {
+		if token.Type == types.Coin {
+			continue
+		}
+
+		assetPath := path.GetAssetInfoPath(chain, token.Address)
+
+		infoFile, err := os.Open(assetPath)
+		if err != nil {
+			return err
+		}
+
+		buf := bytes.NewBuffer(nil)
+		if _, err = buf.ReadFrom(infoFile); err != nil {
+			return err
+		}
+
+		infoFile.Close()
+
+		var infoAsset info.AssetModel
+		err = json.Unmarshal(buf.Bytes(), &infoAsset)
+		if err != nil {
+			return err
+		}
+
+		if string(token.Type) != *infoAsset.Type {
+			compErr.Append(fmt.Errorf("field type differs from %s", assetPath))
+		}
+
+		if token.Symbol != *infoAsset.Symbol {
+			compErr.Append(fmt.Errorf("field symbol differs from %s", assetPath))
+		}
+
+		if token.Decimals != uint(*infoAsset.Decimals) {
+			compErr.Append(fmt.Errorf("field decimals differs from %s", assetPath))
+		}
+	}
+
+	if compErr.Len() > 0 {
+		return compErr
 	}
 
 	return nil

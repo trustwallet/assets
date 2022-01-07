@@ -230,7 +230,7 @@ func generateTokenList(marketPairs []binance.MarketPair, tokenList binance.Token
 
 		tokenItems = append(tokenItems, TokenItem{
 			Asset:    getAssetIDSymbol(token.Symbol, coin.Coins[coin.BINANCE].Symbol, coin.BINANCE),
-			Type:     getTokenType(token.Symbol, coin.Coins[coin.BINANCE].Symbol, string(types.BEP2)),
+			Type:     getTokenType(token.Symbol, coin.Coins[coin.BINANCE].Symbol, types.BEP2),
 			Address:  token.Symbol,
 			Name:     token.Name,
 			Symbol:   token.OriginalSymbol,
@@ -259,9 +259,9 @@ func getAssetIDSymbol(tokenID string, nativeCoinID string, coinType uint) string
 	return assetlib.BuildID(coinType, tokenID)
 }
 
-func getTokenType(symbol string, nativeCoinSymbol string, tokenType string) string {
+func getTokenType(symbol string, nativeCoinSymbol string, tokenType types.TokenType) types.TokenType {
 	if symbol == nativeCoinSymbol {
-		return "coin"
+		return types.Coin
 	}
 
 	return tokenType

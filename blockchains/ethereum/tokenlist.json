@@ -1350,7 +1350,7 @@
         {
             "asset": "c60_t0x41a3dba3d677e573636ba691a70ff2d606c29666",
             "type": "ERC20",
-            "address": "0x41a3dba3d677e573636ba691a70ff2d606c29666",
+            "address": "0x41A3Dba3D677E573636BA691a70ff2D606c29666",
             "name": "GoBlank",
             "symbol": "BLANK",
             "decimals": 18,
@@ -1503,7 +1503,7 @@
             "type": "ERC20",
             "address": "0x514910771AF9Ca656af840dff83E8264EcF986CA",
             "name": "ChainLink",
-            "symbol": "Link",
+            "symbol": "LINK",
             "decimals": 18,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x514910771AF9Ca656af840dff83E8264EcF986CA/logo.png",
             "pairs": []
@@ -2188,16 +2188,6 @@
             "symbol": "FX",
             "decimals": 18,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x8c15Ef5b4B21951d50E53E4fbdA8298FFAD25057/logo.png",
-            "pairs": []
-        },
-        {
-            "asset": "c60_t0x8c8687fC965593DFb2F0b4EAeFD55E9D8df348df",
-            "type": "ERC20",
-            "address": "0x8c8687fC965593DFb2F0b4EAeFD55E9D8df348df",
-            "name": "PAID Network",
-            "symbol": "PAID",
-            "decimals": 18,
-            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x8c8687fC965593DFb2F0b4EAeFD55E9D8df348df/logo.png",
             "pairs": []
         },
         {
@@ -3178,7 +3168,7 @@
             "type": "ERC20",
             "address": "0xdd974D5C2e2928deA5F71b9825b8b646686BD200",
             "name": "Kyber Network Crystal",
-            "symbol": "KNC",
+            "symbol": "KNCL",
             "decimals": 18,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0xdd974D5C2e2928deA5F71b9825b8b646686BD200/logo.png",
             "pairs": []
@@ -3279,7 +3269,7 @@
             "type": "ERC20",
             "address": "0xE95A203B1a91a908F9B9CE46459d101078c2c3cb",
             "name": "aEthereum",
-            "symbol": "aEth",
+            "symbol": "aETHc",
             "decimals": 18,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0xE95A203B1a91a908F9B9CE46459d101078c2c3cb/logo.png",
             "pairs": []

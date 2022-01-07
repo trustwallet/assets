@@ -1,6 +1,9 @@
 package processor
 
-import "github.com/trustwallet/assets/internal/file"
+import (
+	"github.com/trustwallet/assets/internal/file"
+	"github.com/trustwallet/go-primitives/types"
+)
 
 type (
 	Validator struct {
@@ -29,14 +32,14 @@ type (
 	}
 
 	TokenItem struct {
-		Asset    string `json:"asset"`
-		Type     string `json:"type"`
-		Address  string `json:"address"`
-		Name     string `json:"name"`
-		Symbol   string `json:"symbol"`
-		Decimals uint   `json:"decimals"`
-		LogoURI  string `json:"logoURI"`
-		Pairs    []Pair `json:"pairs"`
+		Asset    string          `json:"asset"`
+		Type     types.TokenType `json:"type"`
+		Address  string          `json:"address"`
+		Name     string          `json:"name"`
+		Symbol   string          `json:"symbol"`
+		Decimals uint            `json:"decimals"`
+		LogoURI  string          `json:"logoURI"`
+		Pairs    []Pair          `json:"pairs"`
 	}
 
 	Pair struct {
