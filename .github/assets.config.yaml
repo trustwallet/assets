@@ -108,6 +108,9 @@ validators_settings:
       - id: memes
         name: Memes
         description: A cryptocurrency that is associated with some theme, often as a joke rather than a serious product.
+      - id: gamefi
+        name: GameFi
+        description: Combination of gaming and DeFi, is the intersection of blockchain-based gaming and DeFi services.
 
 trading_pair_settings:
   uniswap:
