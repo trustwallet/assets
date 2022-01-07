@@ -288,7 +288,7 @@ func getTokenInfoFromSubgraphToken(chain coin.Coin, token *TokenInfo) (*TokenIte
 
 	return &TokenItem{
 		Asset:    getAssetIDSymbol(checksum, chain.Symbol, chain.ID),
-		Type:     tokenType,
+		Type:     types.TokenType(tokenType),
 		Address:  checksum,
 		Name:     token.Name,
 		Symbol:   token.Symbol,

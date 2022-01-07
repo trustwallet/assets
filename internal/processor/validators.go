@@ -14,6 +14,7 @@ import (
 	"github.com/trustwallet/assets/internal/config"
 	"github.com/trustwallet/assets/internal/file"
 	"github.com/trustwallet/go-primitives/coin"
+	"github.com/trustwallet/go-primitives/types"
 )
 
 func (s *Service) ValidateRootFolder(f *file.AssetFile) error {
@@ -370,7 +371,7 @@ func compareTokenlistWithAssets(tokens []TokenItem, chain string) error {
 	compErr := validation.NewErrComposite()
 
 	for _, token := range tokens {
-		if token.Type == "coin" {
+		if token.Type == types.Coin {
 			continue
 		}
 
@@ -394,7 +395,7 @@ func compareTokenlistWithAssets(tokens []TokenItem, chain string) error {
 			return err
 		}
 
-		if token.Type != *infoAsset.Type {
+		if string(token.Type) != *infoAsset.Type {
 			compErr.Append(fmt.Errorf("field type differs from %s", assetPath))
 		}
 
