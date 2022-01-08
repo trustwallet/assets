@@ -279,8 +279,7 @@ func (s *Service) ValidateChainInfoFile(f *file.AssetFile) error {
 		return err
 	}
 
-	checkKeys := duplicateKeyCheck(json.NewDecoder(strings.NewReader(buf.String())), nil)
-	if checkKeys != nil {
+	if err := duplicateKeyCheck(json.NewDecoder(strings.NewReader(buf.String())), nil); err != nil {
 		return err
 	}
 
@@ -315,8 +314,7 @@ func (s *Service) ValidateAssetInfoFile(f *file.AssetFile) error {
 		return err
 	}
 
-	checkKeys := duplicateKeyCheck(json.NewDecoder(strings.NewReader(buf.String())), nil)
-	if checkKeys != nil {
+	if err := duplicateKeyCheck(json.NewDecoder(strings.NewReader(buf.String())), nil); err != nil {
 		return err
 	}
 
