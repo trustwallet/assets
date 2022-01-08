@@ -50,12 +50,11 @@ message:
     If you are paying TWT for the submission, this will be burned automatically. There will be no refunds."
 
   not_received: "Fee has not been received yet (or not fully).\n\n"
-  received: "Fee is PAID, fantastic!  Thanks!\n\n
+  received: "Fee is PAID, fantastic! Thanks! Review added.\n\n
     The PR will be evaluated soon by a maintainer, and if merged, the new logos should be visible in Trust Wallet.\n
     Please note that the app caches logos (up to several days; if you want to see changes immediately, use a new installation). See the [assets FAQ](https://github.com/trustwallet/assets#faq).\n
     $MODERATORS\n\n
     ([$PAID_AMOUNT $PAID_SYMBOL]($PAID_EXPLORER_LINK))"
-  review_created: "Fee paid, review added."
   reviewed: "Review is not needed any more, no more fee required."
   reminder: "$USER, kind reminder:  please pay fee:  **$PAY1_AMOUNT $PAY1_SYMBOL**  with the memo **$PAY1_MEMO**  to the address `$PAY1_ADDRESS`.\n
     Alternatively, $PAY2_AMOUNT $PAY2_SYMBOL is also accepted (same memo & address).\n\n
