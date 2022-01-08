@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"io"
 	"os"
+	"strings"
 
 	"github.com/trustwallet/assets-go-libs/path"
 	"github.com/trustwallet/assets-go-libs/validation"
@@ -16,6 +17,40 @@ import (
 	"github.com/trustwallet/go-primitives/coin"
 	"github.com/trustwallet/go-primitives/types"
 )
+
+func duplicateKeyCheck(d *json.Decoder, path []string) error {
+	mainToken, err := d.Token()
+	if err != nil {
+		return err
+	}
+
+	delimiter, ok := mainToken.(json.Delim)
+
+	if !ok {
+		return nil
+	}
+
+	switch delimiter {
+	case '{':
+		keys := make(map[string]bool)
+		for d.More() {
+			theToken, err := d.Token()
+			if err != nil {
+				return err
+			}
+			key := theToken.(string)
+
+			if keys[key] {
+				return fmt.Errorf("duplicate key: %s", strings.Join(append(path, key), "/"))
+			}
+			keys[key] = true
+		}
+		if _, err := d.Token(); err != nil {
+			return err
+		}
+	}
+	return nil
+}
 
 func (s *Service) ValidateJSON(f *file.AssetFile) error {
 	file, err := os.Open(f.Path())
@@ -244,6 +279,11 @@ func (s *Service) ValidateChainInfoFile(f *file.AssetFile) error {
 		return err
 	}
 
+	checkKeys := duplicateKeyCheck(json.NewDecoder(strings.NewReader(buf.String())), nil)
+	if checkKeys != nil {
+		return err
+	}
+
 	return nil
 }
 
@@ -272,6 +312,11 @@ func (s *Service) ValidateAssetInfoFile(f *file.AssetFile) error {
 
 	err = info.ValidateAsset(payload, f.Chain(), f.Asset())
 	if err != nil {
+		return err
+	}
+
+	checkKeys := duplicateKeyCheck(json.NewDecoder(strings.NewReader(buf.String())), nil)
+	if checkKeys != nil {
 		return err
 	}
 
