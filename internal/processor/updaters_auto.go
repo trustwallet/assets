@@ -33,6 +33,8 @@ const (
 
 	twLogoURL       = "https://trustwallet.com/assets/images/favicon.png"
 	timestampFormat = "2006-01-02T15:04:05.000000"
+
+	activeStatus = "active"
 )
 
 func (s *Service) UpdateBinanceTokens() error {
@@ -116,7 +118,7 @@ func createInfoJSON(chain coin.Coin, a explorer.Bep2Asset) error {
 	assetType := string(types.BEP2)
 	website := ""
 	description := "-"
-	status := "active"
+	status := activeStatus
 
 	assetInfo := info.AssetModel{
 		Name:        &a.Name,
@@ -278,7 +280,7 @@ func isTokenExistOrActive(symbol string) bool {
 		return false
 	}
 
-	if infoAsset.GetStatus() != "active" {
+	if infoAsset.GetStatus() != activeStatus {
 		log.Debugf("asset status [%s] is not active", symbol)
 		return false
 	}

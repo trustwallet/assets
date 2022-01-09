@@ -408,7 +408,7 @@ func (s *Service) ValidateTokenListFile(f *file.AssetFile) error {
 				token.Name, *infoAsset.Name, assetPath))
 		}
 
-		if infoAsset.GetStatus() != "active" {
+		if infoAsset.GetStatus() != activeStatus {
 			compErr.Append(fmt.Errorf("token '%s' is not active, remove it from %s", token.Address, f.Path()))
 		}
 	}
