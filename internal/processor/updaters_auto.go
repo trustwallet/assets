@@ -67,6 +67,8 @@ func (s *Service) UpdateBinanceTokens() error {
 		return err
 	}
 
+	sortTokens(tokens)
+
 	return createTokenListJSON(chain, tokens)
 }
 
@@ -138,8 +140,6 @@ func createTokenListJSON(chain coin.Coin, tokens []TokenItem) error {
 	if err != nil {
 		return nil
 	}
-
-	sortTokens(tokens)
 
 	if reflect.DeepEqual(oldTokenList.Tokens, tokens) {
 		return nil
