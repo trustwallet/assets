@@ -1,7 +1,7 @@
 {
     "name": "Trust Wallet: BNB",
     "logoURI": "https://trustwallet.com/assets/images/favicon.png",
-    "timestamp": "2022-01-07T01:30:04.539853",
+    "timestamp": "2022-01-09T23:11:17.823201",
     "tokens": [
         {
             "asset": "c714",
@@ -20,11 +20,6 @@
                 {
                     "base": "c714_tANKR-E97",
                     "lotSize": "1000000000",
-                    "tickSize": "1"
-                },
-                {
-                    "base": "c714_tARN-71B",
-                    "lotSize": "10000000000",
                     "tickSize": "1"
                 },
                 {
@@ -164,7 +159,7 @@
                 },
                 {
                     "base": "c714_tCSM-734",
-                    "lotSize": "100000000000",
+                    "lotSize": "1000000000000",
                     "tickSize": "1"
                 },
                 {
@@ -554,8 +549,8 @@
                 },
                 {
                     "base": "c714_tXRPBEAR-00B",
-                    "lotSize": "1000000",
-                    "tickSize": "100"
+                    "lotSize": "10000000",
+                    "tickSize": "10"
                 },
                 {
                     "base": "c714_tXRPBULL-E7C",
@@ -846,7 +841,7 @@
                 {
                     "base": "c714_tBUSD-BD1",
                     "lotSize": "100000000",
-                    "tickSize": "1000"
+                    "tickSize": "100"
                 }
             ]
         },
@@ -894,7 +889,7 @@
                 {
                     "base": "c714",
                     "lotSize": "100000",
-                    "tickSize": "100000"
+                    "tickSize": "1000000"
                 }
             ]
         },
@@ -942,16 +937,6 @@
             "symbol": "ANKR",
             "decimals": 8,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/ANKR-E97/logo.png",
-            "pairs": []
-        },
-        {
-            "asset": "c714_tARN-71B",
-            "type": "BEP2",
-            "address": "ARN-71B",
-            "name": "Aeron",
-            "symbol": "ARN",
-            "decimals": 8,
-            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/ARN-71B/logo.png",
             "pairs": []
         },
         {
@@ -2186,7 +2171,7 @@
         }
     ],
     "version": {
-        "major": 259,
+        "major": 260,
         "minor": 0,
         "patch": 0
     }

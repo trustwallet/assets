@@ -1,7 +1,10 @@
 package processor
 
 import (
+	"bytes"
+	"encoding/json"
 	"fmt"
+	"os"
 	"reflect"
 	"sort"
 	"strconv"
@@ -204,13 +207,17 @@ func generateTokenList(marketPairs []binance.MarketPair, tokenList binance.Token
 	}
 
 	for _, marketPair := range marketPairs {
-		key := marketPair.QuoteAssetSymbol
+		if !isTokenExistOrActive(marketPair.BaseAssetSymbol) || !isTokenExistOrActive(marketPair.QuoteAssetSymbol) {
+			continue
+		}
 
-		if val, exists := pairsMap[key]; exists {
+		tokenSymbol := marketPair.QuoteAssetSymbol
+
+		if val, exists := pairsMap[tokenSymbol]; exists {
 			val = append(val, getPair(marketPair))
-			pairsMap[key] = val
+			pairsMap[tokenSymbol] = val
 		} else {
-			pairsMap[key] = []Pair{getPair(marketPair)}
+			pairsMap[tokenSymbol] = []Pair{getPair(marketPair)}
 		}
 
 		pairsList[marketPair.BaseAssetSymbol] = struct{}{}
@@ -241,6 +248,42 @@ func generateTokenList(marketPairs []binance.MarketPair, tokenList binance.Token
 	}
 
 	return tokenItems, nil
+}
+
+func isTokenExistOrActive(symbol string) bool {
+	if symbol == coin.Coins[coin.BINANCE].Symbol {
+		return true
+	}
+
+	assetPath := path.GetAssetInfoPath(coin.Coins[coin.BINANCE].Handle, symbol)
+
+	infoFile, err := os.Open(assetPath)
+	if err != nil {
+		log.Debugf("asset file open error: %s", err.Error())
+		return false
+	}
+
+	buf := bytes.NewBuffer(nil)
+	if _, err = buf.ReadFrom(infoFile); err != nil {
+		log.Debugf("buffer read error: %s", err.Error())
+		return false
+	}
+
+	infoFile.Close()
+
+	var infoAsset info.AssetModel
+	err = json.Unmarshal(buf.Bytes(), &infoAsset)
+	if err != nil {
+		log.Debugf("json unmarshalling error: %s", err.Error())
+		return false
+	}
+
+	if infoAsset.GetStatus() != "active" {
+		log.Debugf("asset status [%s] is not active", symbol)
+		return false
+	}
+
+	return true
 }
 
 func getPair(marketPair binance.MarketPair) Pair {
