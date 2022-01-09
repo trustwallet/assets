@@ -1,13 +1,19 @@
 {
     "name": "CLearingHouse Token",
     "website": "https://cleardao.com/",
-    "description": "ClearDAO is tackling the DeFi derivatives space by building the infrastructure for customizable derivatives. The Clear SDK provides templates and tools that enable developers and traders to easily create options, notes, futures, and swaps and launch marketplaces to facilitate the trading of these products. We are building a multi-chain ecosystem where member exchanges offer unique derivative products, all powered by ClearDAO.",
+    "description": "ClearDAO is tackling the DeFi derivatives space by building the infrastructure for customizable derivatives.",
     "explorer": "https://etherscan.io/token/0xd7d8f3b8bc8bc48d3acc37879eaba7b85889fa52",
     "type": "ERC20",
     "symbol": "CLH",
     "decimals": 18,
     "status": "active",
     "id": "0xD7D8f3b8Bc8bC48d3AcC37879EABA7b85889FA52",
+    "tags": {
+      "derivatives": {
+        "name": "derivatives",
+        "description": "ClearDAO is tackling the DeFi derivatives space by building the infrastructure for customizable derivatives. "
+      }
+    },
     "links": [
         {
             "name": "github",
