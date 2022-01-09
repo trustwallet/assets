@@ -407,6 +407,10 @@ func (s *Service) ValidateTokenListFile(f *file.AssetFile) error {
 			compErr.Append(fmt.Errorf("field name - '%s' differs from '%s' in %s",
 				token.Name, *infoAsset.Name, assetPath))
 		}
+
+		if infoAsset.GetStatus() != activeStatus {
+			compErr.Append(fmt.Errorf("token '%s' is not active, remove it from %s", token.Address, f.Path()))
+		}
 	}
 
 	if compErr.Len() > 0 {
