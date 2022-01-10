@@ -1,34 +1,33 @@
 {
     "name": "Value Liquidity",
-    "source_code": "https://github.com/valuedefi",
     "website": "https://valuedefi.io/",
     "description": "Value DeFi: Bringing True Value to DeFi.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/value_defi",
-            "handle": "value_defi"
-        },
-        {
-            "name": "Medium",
-            "url": "https://medium.com/@valuedefi",
-            "handle": "valuedefi"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/ValueDeFi",
-            "handle": "valuedefi"
-        },
-        {
-            "name": "Discord",
-            "url": "https://discord.gg/Dpvd7tp",
-            "handle": "valuedefi"
-        }
-    ],
     "explorer": "https://etherscan.io/token/0x49E833337ECe7aFE375e44F4E3e8481029218E5c",
     "type": "ERC20",
     "symbol": "VALUE",
     "decimals": 18,
     "status": "active",
-    "id": "0x49E833337ECe7aFE375e44F4E3e8481029218E5c"
+    "id": "0x49E833337ECe7aFE375e44F4E3e8481029218E5c",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/valuedefi"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/value_defi"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/ValueDeFi"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/Dpvd7tp"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/@valuedefi"
+        }
+    ]
 }

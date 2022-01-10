@@ -1,19 +1,21 @@
 {
-    "name": "DITTO Money Token",
+    "name": "Ditto",
     "website": "https://ditto.money",
-    "source_code": "https://github.com/ditto-money/",
     "description": "The dominant elastic supply token on Binance Smart Chain.",
     "explorer": "https://bscscan.com/token/0x233d91a0713155003fc4dce0afa871b508b3b715",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/dittomoney_",
-            "handle": "dittomoney_"
-        }
-    ],
     "type": "BEP20",
     "symbol": "DITTO",
     "decimals": 9,
     "status": "active",
-    "id": "0x233d91A0713155003fc4DcE0AFa871b508B3B715"
+    "id": "0x233d91A0713155003fc4DcE0AFa871b508B3B715",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/ditto-money/"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/dittomoney_"
+        }
+    ]
 }

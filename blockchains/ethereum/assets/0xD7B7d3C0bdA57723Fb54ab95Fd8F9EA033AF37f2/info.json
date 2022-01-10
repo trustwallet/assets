@@ -1,13 +1,21 @@
 {
     "name": "Pylon Finance",
     "website": "https://pylon.finance/",
-    "source_code": "https://github.com/pylonfinance/pylonfinance",
-    "white_paper": "https://docs.google.com/document/d/1Ixec_ya46UR_LMlPzSCoosBSlNAxWC5ycnDV5LEw454/edit",
     "description": "Tethering real world GPU mining to crypto assets.",
     "explorer": "https://etherscan.io/token/0xD7B7d3C0bdA57723Fb54ab95Fd8F9EA033AF37f2",
     "type": "ERC20",
     "symbol": "PYLON",
     "decimals": 18,
     "status": "active",
-    "id": "0xD7B7d3C0bdA57723Fb54ab95Fd8F9EA033AF37f2"
+    "id": "0xD7B7d3C0bdA57723Fb54ab95Fd8F9EA033AF37f2",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/pylonfinance/pylonfinance"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://docs.google.com/document/d/1Ixec_ya46UR_LMlPzSCoosBSlNAxWC5ycnDV5LEw454/edit"
+        }
+    ]
 }

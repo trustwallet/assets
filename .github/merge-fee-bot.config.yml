@@ -1,0 +1,82 @@
+app:
+  service_name: merge-fee-bot
+  log_level: debug
+
+clients_urls:
+  binance_dex: dex.binance.org
+  binance_api: https://api.binance.org
+  binance_explorer: https://explorer.binance.org
+  backend_api: https://api.trustwallet.com
+
+http:
+  port: 3000
+
+github:
+  base_url: https://api.github.com
+  app_id: 135062
+  app_webhook_secret: development
+  app_private_key:
+  repo_owner: trustwallet
+  repo_name: assets
+
+payment:
+  assets:
+    - amount: 1000
+      symbol: TWT
+      token: TWT-8C2
+    - amount: 5
+      symbol: BNB
+      token: BNB
+  address: bnb1epax0un25cmay2e6vcuz5knnqhdp2qg7egdpeq
+  phrase:
+  amount_tolerance_percent: 96
+
+message:
+  initial: "Hi! In order to compensate for the efforts of processing PRs, we kindly ask for a contribution.\n
+    💀 As **there is no refund**, before **paying the fee**, make sure **new tokens fulfill the minimum circulation and other [acceptance criteria](https://community.trustwallet.com/t/how-to-submit-a-token-logo/3863)**.\n
+    See also the [PR Fee FAQ](https://developer.trustwallet.com/add_new_asset/pr-fee).\n\n
+    Please pay  **$PAY1_AMOUNT $PAY1_SYMBOL**  with the memo **$PAY1_MEMO**  to the address `$PAY1_ADDRESS`.\n
+    Alternatively, $PAY2_AMOUNT $PAY2_SYMBOL is also accepted (same memo & address).\n\n
+    $QR_CODE\n\n
+    *Notes*:\n\n
+    * [Trust Wallet Tokens (TWT)](https://community.trustwallet.com/t/trust-wallet-token-twt/4187) can be obtained through our [Referral Program](https://community.trustwallet.com/t/invite-a-friend-earn-trust-wallet-token-twt/4125) or [from DEXs/exchanges](https://community.trustwallet.com/t/where-to-get-trust-wallet-tokens/76641).\n
+    * New tokens without significant usage are rejected, see criteria mentioned above.\n
+    * One PR should be for a single project; PR's with more than 10 logos will be rejected.\n
+    * Payment evaluation happens automatically, but with a few minutes delay.  When payment is detected, an Accept Review is automatically placed on the PR, which is a condition for merge.\n
+    * Evaluating the PR is done manually, and it is merged only if all conditions are satisfied.\n
+    * TWT-BEP2 is supported (Binance Chain), TWT-BEP20 version on Smart Chain is not.\n\n
+    There will be a fee to process this request. None of it goes to the developers.\n
+    Before paying the fee, make sure new tokens fulfill the minimum circulation and other acceptance criteria.\n
+    If you are paying TWT for the submission, this will be burned automatically. There will be no refunds."
+
+  not_received: "Fee has not been received yet (or not fully).\n\n"
+  received: "Fee is PAID, fantastic! Thanks! Review added.\n\n
+    The PR will be evaluated soon by a maintainer, and if merged, the new logos should be visible in Trust Wallet.\n
+    Please note that the app caches logos (up to several days; if you want to see changes immediately, use a new installation). See the [assets FAQ](https://github.com/trustwallet/assets#faq).\n
+    $MODERATORS\n\n
+    ([$PAID_AMOUNT $PAID_SYMBOL]($PAID_EXPLORER_LINK))"
+  reviewed: "Review is not needed any more, no more fee required."
+  reminder: "$USER, kind reminder:  please pay fee:  **$PAY1_AMOUNT $PAY1_SYMBOL**  with the memo **$PAY1_MEMO**  to the address `$PAY1_ADDRESS`.\n
+    Alternatively, $PAY2_AMOUNT $PAY2_SYMBOL is also accepted (same memo & address).\n\n
+    $QR_CODE\n
+    See the [Pull Request Fee FAQ](https://developer.trustwallet.com/add_new_asset/pr-fee)."
+  closing_old_pr: "This PR is being closed due to inactivity. If you wish to continue, please have us reopen the PR before sending your payment, or just create a new one.\n
+    Do NOT send payments for closed PR, as the fee may by lost!"
+  burned: "$PAID_AMOUNT $PAID_SYMBOL have been successfully [burned]($BURN_EXPLORER_LINK)"
+
+label:
+  requested: 'Payment Status: Requested'
+  paid: 'Payment Status: Paid'
+
+user:
+  delete_comments_from_external: true
+  collaborators: zachzwei,Iamdeadlyz,catenocrypt,vikmeup,hewigovens,Cryptocool1,cryptomanz,leedaniil,ramsty,bjt54
+  moderators: Iamdeadlyz,Cryptocool1,cryptomanz
+
+timeout:
+  max_age_close: 48h
+  max_idle_remind: 22h
+  background_check: 1m
+
+limitations:
+  pr_files: 20

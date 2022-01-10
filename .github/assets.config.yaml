@@ -1,0 +1,136 @@
+app:
+  log_level: debug
+
+client_urls:
+  binance:
+    dex: https://dex.binance.org
+    explorer: https://explorer.binance.org
+  backend_api: https://api.trustwallet.com 
+
+urls:
+  tw_assets_app: https://assets.trustwalletapp.com
+
+validators_settings:
+  root_folder:
+    allowed_files:
+      - ".github"
+      - "blockchains"
+      - "dapps"
+      - "media"
+      - "node_modules"
+      - "script-old"
+      - "script"
+      - "test"
+      - ".gitignore"
+      - "azure-pipelines.yml"
+      - "jest.config.js"
+      - "LICENSE"
+      - "package-lock.json"
+      - "package.json"
+      - "README.md"
+      - ".git"
+      - ".eslintignore"
+      - ".eslintrc.js"
+      - "cmd"
+      - "internal"
+      - "go.mod"
+      - "go.sum"
+      - ".golangci.yml"
+      - "Makefile"
+      - "bin"
+    skip_files:
+      - "node_modules"
+
+  chain_folder:
+    allowed_files:
+      - "assets"
+      - "tokenlist.json"
+      - "validators"
+      - "info"
+
+  asset_folder:
+    allowed_files:
+      - "logo.png"
+      - "info.json"
+
+  chain_info_folder:
+    has_files:
+      - "logo.png"
+      - "info.json"
+
+  chain_validators_asset_folder:
+    has_files:
+      - "logo.png"
+
+  dapps_folder:
+    ext: ".png"
+
+  coin_info_file:
+    tags:
+      - id: stablecoin
+        name: Stablecoin
+        description: Tokens that are fixed to an external asset, e.g. the US dollar.
+      - id: wrapped
+        name: Wrapped
+        description: Tokens that are wrapped or peg representation of digital assets. Excluded
+          stablecoins
+      - id: synthetics
+        name: Synthetics
+        description: Synthetic assets created to track the value of another asset
+      - id: nft
+        name: NFT
+        description: Non-fungible tokens or tokens associated with the NFT ecosystem.
+      - id: governance
+        name: Governance
+        description: Tokens that used to participate in the governance process of the project.
+      - id: defi
+        name: DeFi
+        description: Tokens that are used for variety of decentralized financial applications.
+      - id: staking
+        name: Staking
+        description: Tokens that are used for staking to receive rewards.
+      - id: staking-native
+        name: Staking Native
+        description: Coins/Blockchains that are used for staking to secure the network to
+          receive rewards.
+      - id: privacy
+        name: Privacy
+        description: Privacy tokens.
+      - id: nsfw
+        name: NSFW
+        description: Content Not suitable for work.
+      - id: binance-peg
+        name: Binance-Peg
+        description: Binance-Peg tokens.
+      - id: deflationary
+        name: Deflationary
+        description: Tokens that are deflationary or use mechanism to burn a token on transfer/swap.
+      - id: memes
+        name: Memes
+        description: A cryptocurrency that is associated with some theme, often as a joke rather than a serious product.
+      - id: gamefi
+        name: GameFi
+        description: Combination of gaming and DeFi, is the intersection of blockchain-based gaming and DeFi services.
+
+trading_pair_settings:
+  uniswap:
+    url: https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v2
+
+    primary_tokens: "WETH,ETH"
+    force_include_list: "TUSD,STAKE,YFI,BAT,MANA,1INCH,REP,KP3R,UNI,WBTC,HEX,CREAM,SLP,REN,XOR,Link,sUSD,HEGIC,RLC,DAI,SUSHI,FYZ,DYT,AAVE,LEND,UBT,DIA,RSR,SXP,OCEAN,MKR,USDC,CEL,BAL,BAND,COMP,SNX,OMG,AMPL,USDT,KNC,ZRX,AXS,ENJ,STMX,DPX,FTT,DPI,PAX"
+    force_exclude_list: "STARL,UFO"
+
+    min_liquidity: 2000000
+    min_vol_24: 1000000
+    min_tx_count_24: 480
+
+  pancakeswap:
+    url: https://api.bscgraph.org/subgraphs/name/cakeswap
+
+    primary_tokens: "WBNB,BNB"
+    force_include_list: "Cake,DAI,ETH,TWT,VAI,USDT,BLINK,BTCB,ALPHA,INJ,CTK,UNI,XVS,BUSD,HARD,BIFI,FRONT"
+    force_exclude_list:
+
+    min_liquidity: 1000000
+    min_vol_24: 500000
+    min_tx_count_24: 288

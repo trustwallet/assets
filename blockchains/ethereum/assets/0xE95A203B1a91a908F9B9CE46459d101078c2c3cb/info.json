@@ -1,31 +1,33 @@
 {
-    "name": "aETH",
+    "name": "ankrETH",
     "website": "https://stkr.io/",
-    "source_code": "https://github.com/Ankr-network/stkr-smartcontract",
-    "white_paper": "https://assets.ankr.com/files/stkr_whitepaper.pdf",
-    "description": "Stkr is a decentralized protocol and platform that combines staking and DeFi, implementing elements from traditional staking with non-custodial management, Micropools, instant liquidity and decentralized governance. Stkr will focus on Ethereum 2.0 first. In the future, other public chains will also be able to build decentralized staking solutions with the Stkr protocol.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/ankr",
-            "handle": "Ankr"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/ankrnetwork",
-            "handle": "Ankr"
-        },
-        {
-            "name": "Medium",
-            "url": "https://medium.com/ankr-network",
-            "handle": "Ankr"
-        }
-    ],
+    "description": "aETHc is a reward-bearing certificate that enables instant liquidity for staked ETH tokens in Ethereum 2.0 network.",
     "explorer": "https://etherscan.io/token/0xE95A203B1a91a908F9B9CE46459d101078c2c3cb",
-    "research": "https://ankr.gitbook.io/stkr-docs/",
     "type": "ERC20",
-    "symbol": "aEth",
+    "symbol": "aETHc",
     "decimals": 18,
     "status": "active",
-    "id": "0xE95A203B1a91a908F9B9CE46459d101078c2c3cb"
+    "id": "0xE95A203B1a91a908F9B9CE46459d101078c2c3cb",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/Ankr-network/stkr-smartcontract"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/Ankr"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/ankrnetwork"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/ankr-network"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://assets.ankr.com/files/stkr_whitepaper.pdf"
+        }
+    ]
 }

@@ -1,8 +1,6 @@
 {
     "name": "ChartEx",
     "website": "https://chartex.pro",
-    "source_code": "https://github.com/chartexpro",
-    "white_paper": "https://about.chartex.pro",
     "description": "ChartEx is a leading provider of full Candlestick charting for decentralised markets such as Uniswap, the largest DEX running on the Ethereum Network.",
     "explorer": "https://etherscan.io/token/0x1d37986F252d0e349522EA6C3B98Cb935495E63E",
     "research": "",
@@ -10,5 +8,15 @@
     "symbol": "CHART",
     "decimals": 18,
     "status": "active",
-    "id": "0x1d37986F252d0e349522EA6C3B98Cb935495E63E"
+    "id": "0x1d37986F252d0e349522EA6C3B98Cb935495E63E",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/chartexpro"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://about.chartex.pro"
+        }
+    ]
 }

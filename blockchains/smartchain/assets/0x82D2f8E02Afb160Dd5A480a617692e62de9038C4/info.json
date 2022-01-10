@@ -2,24 +2,24 @@
     "name": "aleph.im BEP-20 v2",
     "website": "https://aleph.im",
     "description": "Aleph.im is a cross-blockchain layer-2 networkspecifically focused on decentralized applications and their related infrastructure (storage, computing servers, security).",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/aleph_im"
-        },
-        {
-            "name": "Medium",
-            "url": "https://medium.com/aleph-im/"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/alephim"
-        }
-    ],
     "explorer": "https://bscscan.com/token/0x82d2f8e02afb160dd5a480a617692e62de9038c4",
     "type": "BEP20",
     "symbol": "ALEPH",
     "decimals": 18,
     "status": "active",
-    "id": "0x82D2f8E02Afb160Dd5A480a617692e62de9038C4"
+    "id": "0x82D2f8E02Afb160Dd5A480a617692e62de9038C4",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/aleph_im"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/alephim"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/aleph-im/"
+        }
+    ]
 }
