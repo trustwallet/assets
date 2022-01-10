@@ -1,7 +1,7 @@
 {
     "name": "Trust Wallet: BNB",
     "logoURI": "https://trustwallet.com/assets/images/favicon.png",
-    "timestamp": "2022-01-09T23:11:17.823201",
+    "timestamp": "2022-01-10T11:52:59.209655",
     "tokens": [
         {
             "asset": "c714",
@@ -841,7 +841,7 @@
                 {
                     "base": "c714_tBUSD-BD1",
                     "lotSize": "100000000",
-                    "tickSize": "100"
+                    "tickSize": "1000"
                 }
             ]
         },
@@ -933,7 +933,7 @@
             "asset": "c714_tANKR-E97",
             "type": "BEP2",
             "address": "ANKR-E97",
-            "name": "Ankr",
+            "name": "ANKR",
             "symbol": "ANKR",
             "decimals": 8,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/ANKR-E97/logo.png",
@@ -983,7 +983,7 @@
             "asset": "c714_tAVA-645",
             "type": "BEP2",
             "address": "AVA-645",
-            "name": "Travala.com",
+            "name": "Travala.com Token",
             "symbol": "AVA",
             "decimals": 8,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/AVA-645/logo.png",
@@ -1523,7 +1523,7 @@
             "asset": "c714_tIRIS-D88",
             "type": "BEP2",
             "address": "IRIS-D88",
-            "name": "IRISnet",
+            "name": "IRIS Network",
             "symbol": "IRIS",
             "decimals": 8,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/IRIS-D88/logo.png",
@@ -1833,7 +1833,7 @@
             "asset": "c714_tRUNE-B1A",
             "type": "BEP2",
             "address": "RUNE-B1A",
-            "name": "THORChain",
+            "name": "Rune",
             "symbol": "RUNE",
             "decimals": 8,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/RUNE-B1A/logo.png",
@@ -2073,7 +2073,7 @@
             "asset": "c714_tWRX-ED1",
             "type": "BEP2",
             "address": "WRX-ED1",
-            "name": "WazirX",
+            "name": "WazirX Token",
             "symbol": "WRX",
             "decimals": 8,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/WRX-ED1/logo.png",
@@ -2171,7 +2171,7 @@
         }
     ],
     "version": {
-        "major": 260,
+        "major": 261,
         "minor": 0,
         "patch": 0
     }
