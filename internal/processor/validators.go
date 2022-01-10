@@ -37,7 +37,6 @@ func duplicateKeyCheck(d *json.Decoder, path []string) error {
 			if err != nil {
 				return err
 			}
-			fmt.Println(theToken)
 			key := theToken.(string)
 
 			if _, exists := keys[key]; exists {
@@ -52,7 +51,17 @@ func duplicateKeyCheck(d *json.Decoder, path []string) error {
 		if _, err := d.Token(); err != nil {
 			return err
 		}
-	}
+	} else if delimiter == '[' {
+		counter := 0
+		for d.More() {
+		  if err := duplicateKeyCheck(d, append(path, strconv.Itoa(counter))); err != nil {
+			return err
+		  }
+		  counter++
+		}
+		if _, err := d.Token(); err != nil {
+		  return err
+		}
 	return nil
 }
 
