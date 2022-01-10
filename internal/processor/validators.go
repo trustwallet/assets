@@ -30,8 +30,7 @@ func duplicateKeyCheck(d *json.Decoder, path []string) error {
 		return nil
 	}
 
-	switch delimiter {
-	case '{':
+	if delimiter == '{' {
 		keys := make(map[string]bool)
 		for d.More() {
 			theToken, err := d.Token()
@@ -40,7 +39,7 @@ func duplicateKeyCheck(d *json.Decoder, path []string) error {
 			}
 			key := theToken.(string)
 
-			if keys[key] {
+			if _, exists := keys[key]; exists {
 				return fmt.Errorf("duplicate key: %s", strings.Join(append(path, key), "/"))
 			}
 			keys[key] = true
