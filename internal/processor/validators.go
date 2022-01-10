@@ -85,6 +85,10 @@ func (s *Service) ValidateJSON(f *file.AssetFile) error {
 		return err
 	}
 
+	if err := duplicateKeyCheck(json.NewDecoder(strings.NewReader(buf.String())), nil); err != nil {
+		return err
+	}
+
 	return nil
 }
 
@@ -294,10 +298,6 @@ func (s *Service) ValidateChainInfoFile(f *file.AssetFile) error {
 		return err
 	}
 
-	if err := duplicateKeyCheck(json.NewDecoder(strings.NewReader(buf.String())), nil); err != nil {
-		return err
-	}
-
 	return nil
 }
 
@@ -326,10 +326,6 @@ func (s *Service) ValidateAssetInfoFile(f *file.AssetFile) error {
 
 	err = info.ValidateAsset(payload, f.Chain(), f.Asset())
 	if err != nil {
-		return err
-	}
-
-	if err := duplicateKeyCheck(json.NewDecoder(strings.NewReader(buf.String())), nil); err != nil {
 		return err
 	}
 
