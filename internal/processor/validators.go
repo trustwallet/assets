@@ -43,9 +43,10 @@ func duplicateKeyCheck(d *json.Decoder, path []string) error {
 				return fmt.Errorf("duplicate key: %s", strings.Join(append(path, key), "/"))
 			}
 			keys[key] = true
-		}
-		if _, err := d.Token(); err != nil {
-			return err
+
+			if _, err := d.Token(); err != nil {
+				return err
+			}
 		}
 	}
 	return nil
