@@ -361,14 +361,25 @@ func (s *Service) ValidateTokenListFile(f *file.AssetFile) error {
 		return err
 	}
 
+	err = checkTokenListAssets(model, f)
+	if err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func checkTokenListAssets(model TokenList, f *file.AssetFile) error {
 	compErr := validation.NewErrComposite()
 
 	for _, token := range model.Tokens {
-		if token.Type == types.Coin {
-			continue
-		}
+		var assetPath string
 
-		assetPath := path.GetAssetInfoPath(f.Chain().Handle, token.Address)
+		if token.Type == types.Coin {
+			assetPath = path.GetChainInfoPath(f.Chain().Handle)
+		} else {
+			assetPath = path.GetAssetInfoPath(f.Chain().Handle, token.Address)
+		}
 
 		infoFile, err := os.Open(assetPath)
 		if err != nil {
