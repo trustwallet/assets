@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"io"
 	"os"
+	"strconv"
 	"strings"
 
 	"github.com/trustwallet/assets-go-libs/path"
@@ -54,14 +55,15 @@ func duplicateKeyCheck(d *json.Decoder, path []string) error {
 	} else if delimiter == '[' {
 		counter := 0
 		for d.More() {
-		  if err := duplicateKeyCheck(d, append(path, strconv.Itoa(counter))); err != nil {
-			return err
-		  }
-		  counter++
+			if err := duplicateKeyCheck(d, append(path, strconv.Itoa(counter))); err != nil {
+				return err
+			}
+			counter++
 		}
 		if _, err := d.Token(); err != nil {
-		  return err
+			return err
 		}
+	}
 	return nil
 }
 
