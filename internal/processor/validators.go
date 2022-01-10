@@ -6,7 +6,6 @@ import (
 	"fmt"
 	"io"
 	"os"
-	"strconv"
 	"strings"
 
 	"github.com/trustwallet/assets-go-libs/path"
@@ -18,54 +17,6 @@ import (
 	"github.com/trustwallet/go-primitives/coin"
 	"github.com/trustwallet/go-primitives/types"
 )
-
-func duplicateKeyCheck(d *json.Decoder, path []string) error {
-	mainToken, err := d.Token()
-	if err != nil {
-		return err
-	}
-
-	delimiter, ok := mainToken.(json.Delim)
-
-	if !ok {
-		return nil
-	}
-
-	if delimiter == '{' {
-		keys := make(map[string]bool)
-		for d.More() {
-			theToken, err := d.Token()
-			if err != nil {
-				return err
-			}
-			key := theToken.(string)
-
-			if _, exists := keys[key]; exists {
-				return fmt.Errorf("duplicate key: %s", key)
-			}
-			keys[key] = true
-
-			if err := duplicateKeyCheck(d, append(path, key)); err != nil {
-				return fmt.Errorf("invalid value on key: %s", key)
-			}
-		}
-		if _, err := d.Token(); err != nil {
-			return err
-		}
-	} else if delimiter == '[' {
-		counter := 0
-		for d.More() {
-			if err := duplicateKeyCheck(d, append(path, strconv.Itoa(counter))); err != nil {
-				return err
-			}
-			counter++
-		}
-		if _, err := d.Token(); err != nil {
-			return err
-		}
-	}
-	return nil
-}
 
 func (s *Service) ValidateJSON(f *file.AssetFile) error {
 	file, err := os.Open(f.Path())
@@ -85,7 +36,7 @@ func (s *Service) ValidateJSON(f *file.AssetFile) error {
 		return err
 	}
 
-	if err := duplicateKeyCheck(json.NewDecoder(strings.NewReader(buf.String())), nil); err != nil {
+	if err := validation.validateDuplicateKeys(json.NewDecoder(strings.NewReader(buf.String())), nil); err != nil {
 		return err
 	}
 
