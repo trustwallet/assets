@@ -1,29 +1,36 @@
-
 {
     "name": "TIME Token",
-    "website": "https://chrono.tech",
-    "description": "Chrono.tech (TIME) provides blockchain-based solutions for recruitment, HR and payment processes, reducing the barriers to accessing work and transferring funds securely in the global labor marketplace.",
-    "explorer": "https://bscscan.com/token/0x3b198e26e473b8fab2085b37978e36c9de5d7f68",
     "type": "BEP20",
     "symbol": "TIME",
     "decimals": 8,
+    "website": "https://chrono.tech",
+    "description": "Chrono.tech (TIME) provides blockchain-based solutions for recruitment, HR and payment processes, reducing the barriers to accessing work and transferring funds securely in the global labor marketplace.",
+    "explorer": "https://bscscan.com/token/0x3b198e26E473b8faB2085b37978e36c9DE5D7f68",
     "status": "active",
-    "id": "0x3b198e26e473b8fab2085b37978e36c9de5d7f68",
-    "tags": [
-            "DeFi", "Payments", "Remote working", "HR"
-        ],
+    "id": "0x3b198e26E473b8faB2085b37978e36c9DE5D7f68",
     "links": [
-        {
-            "name": "telegram",
-            "url": "https://t.me/chronotechnews"
-        },
         {
             "name": "twitter",
             "url": "https://twitter.com/chronotechnews"
         },
         {
-            "name": "facebook",
-            "url": "https://www.facebook.com/ChronotechNews"
+            "name": "telegram",
+            "url": "https://t.me/chronotech"
+        },
+        {
+            "name": "telegram_news",
+            "url": "https://t.me/chronotechnews"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/chrono-tech/"
+        },
+        {
+            "name": "blog",
+            "url": "https://chrono.tech/blog"
         }
+    ],
+    "tags": [
+        "payments"
     ]
 }
