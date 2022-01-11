@@ -6,7 +6,6 @@ import (
 	"fmt"
 	"io"
 	"os"
-	"strings"
 
 	"github.com/trustwallet/assets-go-libs/path"
 	"github.com/trustwallet/assets-go-libs/validation"
@@ -33,10 +32,6 @@ func (s *Service) ValidateJSON(f *file.AssetFile) error {
 
 	err = validation.ValidateJson(buf.Bytes())
 	if err != nil {
-		return err
-	}
-
-	if err := validation.validateDuplicateKeys(json.NewDecoder(strings.NewReader(buf.String())), nil); err != nil {
 		return err
 	}
 
