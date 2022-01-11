@@ -1,29 +1,36 @@
-
 {
     "name": "CGU Token",
-    "website": "https://cgu.io",
-    "description": "Crypto Gaming United (CGU) is a platform that brings people from developing countries together to build a new virtual economy and earn a sustainable income, while learning new digital skills and engaging with the global blockchain gaming community.",
-    "explorer": "https://bscscan.com/token/0x747d74db20cc422f39ab54edb2a3ce21f3c98af1",
     "type": "BEP20",
     "symbol": "CGU",
-    "decimals": 8,
+    "decimals": "8",
+    "website": "https://cgu.io",
+    "description": "Crypto Gaming United (CGU) is a platform that brings people from developing countries together to build a new virtual economy and earn a sustainable income, while learning new digital skills and engaging with the global blockchain gaming community.",
+    "explorer": "https://bscscan.com/token/0x747D74dB20cc422F39ab54EDB2A3Ce21f3C98AF1",
     "status": "active",
-    "id": "0x747d74db20cc422f39ab54edb2a3ce21f3c98af1",
-    "tags": [
-            "GameFi", "NFT gaming", "Scholarships", "Play to Earn", "DeFi", "NFT", "P2E"
-        ],
+    "id": "0x747D74dB20cc422F39ab54EDB2A3Ce21f3C98AF1",
     "links": [
         {
             "name": "twitter",
             "url": "https://twitter.com/cryptogamingutd"
         },
         {
-            "name": "facebook",
-            "url": "https://www.facebook.com/groups/cryptogamingunited/"
+            "name": "telegram",
+            "url": "https://t.me/cgutoken"
         },
         {
-            "name": "instagram",
-            "url": "https://www.instagram.com/crypto.gaming.united/"
+            "name": "telegram_news",
+            "url": "https://t.me/cgutoken"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/crypto-gaming-united/"
+        },
+        {
+            "name": "blog",
+            "url": "https://cgu.io/blog"
         }
+    ],
+    "tags": [
+        "gamefi"
     ]
 }
