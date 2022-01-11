@@ -1,7 +1,7 @@
 {
     "name": "Trust Wallet: BNB",
     "logoURI": "https://trustwallet.com/assets/images/favicon.png",
-    "timestamp": "2022-01-04T01:28:02.235195",
+    "timestamp": "2022-01-11T01:28:55.601157",
     "tokens": [
         {
             "asset": "c714",
@@ -20,11 +20,6 @@
                 {
                     "base": "c714_tANKR-E97",
                     "lotSize": "1000000000",
-                    "tickSize": "1"
-                },
-                {
-                    "base": "c714_tARN-71B",
-                    "lotSize": "10000000000",
                     "tickSize": "1"
                 },
                 {
@@ -164,7 +159,7 @@
                 },
                 {
                     "base": "c714_tCSM-734",
-                    "lotSize": "100000000000",
+                    "lotSize": "1000000000000",
                     "tickSize": "1"
                 },
                 {
@@ -359,7 +354,7 @@
                 },
                 {
                     "base": "c714_tNOIZB-878",
-                    "lotSize": "1000000000",
+                    "lotSize": "10000000000",
                     "tickSize": "1"
                 },
                 {
@@ -554,8 +549,8 @@
                 },
                 {
                     "base": "c714_tXRPBEAR-00B",
-                    "lotSize": "1000000",
-                    "tickSize": "100"
+                    "lotSize": "10000000",
+                    "tickSize": "10"
                 },
                 {
                     "base": "c714_tXRPBULL-E7C",
@@ -601,7 +596,7 @@
                 {
                     "base": "c714_tBAKE-5E0",
                     "lotSize": "100000000",
-                    "tickSize": "1000"
+                    "tickSize": "100"
                 },
                 {
                     "base": "c714_tBAND-34B",
@@ -612,11 +607,6 @@
                     "base": "c714_tBCH-1FD",
                     "lotSize": "1000000",
                     "tickSize": "100000"
-                },
-                {
-                    "base": "c714_tBIFI-290",
-                    "lotSize": "100000",
-                    "tickSize": "1000000"
                 },
                 {
                     "base": "c714_tBTCB-1DE",
@@ -656,7 +646,7 @@
                 {
                     "base": "c714_tFRM-DE7",
                     "lotSize": "1000000000",
-                    "tickSize": "10"
+                    "tickSize": "100"
                 },
                 {
                     "base": "c714_tINJ-FAE",
@@ -851,7 +841,7 @@
                 {
                     "base": "c714_tBUSD-BD1",
                     "lotSize": "100000000",
-                    "tickSize": "1000"
+                    "tickSize": "100"
                 }
             ]
         },
@@ -899,7 +889,7 @@
                 {
                     "base": "c714",
                     "lotSize": "100000",
-                    "tickSize": "100000"
+                    "tickSize": "1000000"
                 }
             ]
         },
@@ -947,16 +937,6 @@
             "symbol": "ANKR",
             "decimals": 8,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/ANKR-E97/logo.png",
-            "pairs": []
-        },
-        {
-            "asset": "c714_tARN-71B",
-            "type": "BEP2",
-            "address": "ARN-71B",
-            "name": "Aeron",
-            "symbol": "ARN",
-            "decimals": 8,
-            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/ARN-71B/logo.png",
             "pairs": []
         },
         {
@@ -1087,16 +1067,6 @@
             "symbol": "BET",
             "decimals": 8,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/BET-844/logo.png",
-            "pairs": []
-        },
-        {
-            "asset": "c714_tBIFI-290",
-            "type": "BEP2",
-            "address": "BIFI-290",
-            "name": "beefy.finance",
-            "symbol": "BIFI",
-            "decimals": 8,
-            "logoURI": "https://assets.trustwalletapp.com/blockchains/binance/assets/BIFI-290/logo.png",
             "pairs": []
         },
         {
@@ -2201,7 +2171,7 @@
         }
     ],
     "version": {
-        "major": 258,
+        "major": 262,
         "minor": 0,
         "patch": 0
     }

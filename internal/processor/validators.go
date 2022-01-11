@@ -14,7 +14,29 @@ import (
 	"github.com/trustwallet/assets/internal/config"
 	"github.com/trustwallet/assets/internal/file"
 	"github.com/trustwallet/go-primitives/coin"
+	"github.com/trustwallet/go-primitives/types"
 )
+
+func (s *Service) ValidateJSON(f *file.AssetFile) error {
+	file, err := os.Open(f.Path())
+	if err != nil {
+		return err
+	}
+	defer file.Close()
+
+	buf := bytes.NewBuffer(nil)
+	_, err = buf.ReadFrom(file)
+	if err != nil {
+		return err
+	}
+
+	err = validation.ValidateJson(buf.Bytes())
+	if err != nil {
+		return err
+	}
+
+	return nil
+}
 
 func (s *Service) ValidateRootFolder(f *file.AssetFile) error {
 	file, err := os.Open(f.Path())
@@ -81,7 +103,7 @@ func (s *Service) ValidateImage(f *file.AssetFile) error {
 	}
 
 	// TODO: Replace it with validation.ValidatePngImageDimension when "assets" repo is fixed.
-	// Read comments inValidatePngImageDimensionForCI.
+	// Read comments in ValidatePngImageDimensionForCI.
 	err = validation.ValidatePngImageDimensionForCI(f.Path())
 	if err != nil {
 		compErr.Append(err)
@@ -201,11 +223,6 @@ func (s *Service) ValidateChainInfoFile(f *file.AssetFile) error {
 		return err
 	}
 
-	err = validation.ValidateJson(buf.Bytes())
-	if err != nil {
-		return err
-	}
-
 	_, err = file.Seek(0, io.SeekStart)
 	if err != nil {
 		return fmt.Errorf("%w: failed to seek reader", validation.ErrInvalidJson)
@@ -242,11 +259,6 @@ func (s *Service) ValidateAssetInfoFile(f *file.AssetFile) error {
 		return err
 	}
 
-	err = validation.ValidateJson(buf.Bytes())
-	if err != nil {
-		return err
-	}
-
 	_, err = file.Seek(0, io.SeekStart)
 	if err != nil {
 		return fmt.Errorf("%w: failed to seek reader", validation.ErrInvalidJson)
@@ -279,11 +291,6 @@ func (s *Service) ValidateValidatorsListFile(f *file.AssetFile) error {
 
 	buf := bytes.NewBuffer(nil)
 	if _, err = buf.ReadFrom(file); err != nil {
-		return err
-	}
-
-	err = validation.ValidateJson(buf.Bytes())
-	if err != nil {
 		return err
 	}
 
@@ -347,9 +354,110 @@ func (s *Service) ValidateTokenListFile(f *file.AssetFile) error {
 		return err
 	}
 
-	err = validation.ValidateJson(buf.Bytes())
+	var model TokenList
+	err = json.Unmarshal(buf.Bytes(), &model)
 	if err != nil {
 		return err
+	}
+
+	err = checkTokenListAssets(model, f)
+	if err != nil {
+		return err
+	}
+
+	err = checkTokenListPairs(model)
+	if err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func checkTokenListAssets(model TokenList, f *file.AssetFile) error {
+	compErr := validation.NewErrComposite()
+
+	for _, token := range model.Tokens {
+		var assetPath string
+
+		if token.Type == types.Coin {
+			assetPath = path.GetChainInfoPath(f.Chain().Handle)
+		} else {
+			assetPath = path.GetAssetInfoPath(f.Chain().Handle, token.Address)
+		}
+
+		infoFile, err := os.Open(assetPath)
+		if err != nil {
+			return err
+		}
+
+		buf := bytes.NewBuffer(nil)
+		if _, err = buf.ReadFrom(infoFile); err != nil {
+			return err
+		}
+
+		infoFile.Close()
+
+		var infoAsset info.AssetModel
+		err = json.Unmarshal(buf.Bytes(), &infoAsset)
+		if err != nil {
+			return err
+		}
+
+		if string(token.Type) != *infoAsset.Type {
+			compErr.Append(fmt.Errorf("field type - '%s' differs from '%s' in %s",
+				token.Type, *infoAsset.Type, assetPath))
+		}
+
+		if token.Symbol != *infoAsset.Symbol {
+			compErr.Append(fmt.Errorf("field symbol - '%s' differs from '%s' in %s",
+				token.Symbol, *infoAsset.Symbol, assetPath))
+		}
+
+		if token.Decimals != uint(*infoAsset.Decimals) {
+			compErr.Append(fmt.Errorf("field decimals - '%d' differs from '%d' in %s",
+				token.Decimals, *infoAsset.Decimals, assetPath))
+		}
+
+		if token.Name != *infoAsset.Name {
+			compErr.Append(fmt.Errorf("field name - '%s' differs from '%s' in %s",
+				token.Name, *infoAsset.Name, assetPath))
+		}
+
+		if infoAsset.GetStatus() != activeStatus {
+			compErr.Append(fmt.Errorf("token '%s' is not active, remove it from %s", token.Address, f.Path()))
+		}
+	}
+
+	if compErr.Len() > 0 {
+		return compErr
+	}
+
+	return nil
+}
+
+func checkTokenListPairs(model TokenList) error {
+	compErr := validation.NewErrComposite()
+
+	tokensMap := make(map[string]struct{})
+	for _, t := range model.Tokens {
+		tokensMap[t.Asset] = struct{}{}
+	}
+
+	pairs := make(map[string]string)
+	for _, t := range model.Tokens {
+		for _, pair := range t.Pairs {
+			pairs[pair.Base] = t.Address
+		}
+	}
+
+	for pairToken, token := range pairs {
+		if _, exists := tokensMap[pairToken]; !exists {
+			compErr.Append(fmt.Errorf("token '%s' contains non-existing pair token '%s'", token, pairToken))
+		}
+	}
+
+	if compErr.Len() > 0 {
+		return compErr
 	}
 
 	return nil
