@@ -1,25 +1,37 @@
 {
     "name": "The Flash Currency",
-    "website": "https://theflashcurrency.com/",
-    "description": "The flash currency is a new token built according to the TRON standard TRC10 standard",
-    "explorer": "https://tronscan.org/#/token/1004117",
     "type": "TRC10",
     "symbol": "TFC",
     "decimals": 6,
+    "website": "https://theflashcurrency.com/",
+    "description": "TheFlashCurrencyTFC\nThe flash currency is a new token built according to the TRON standard TRC10 standard",
+    "explorer": "https://tronscan.io/#/token/1004117",
     "status": "active",
-    "id": "1004117"
+    "id": "1004117",
     "links": [
-        {
-            "name": "telegram",
-            "url": "https://t.me/flashcurrencytfc"
-        },
         {
             "name": "twitter",
             "url": "https://twitter.com/FlashTfc"
         },
         {
-            "name": "facebook",
-            "url": "https://www.facebook.com/groups/1046965489139636/"
+            "name": "github",
+            "url": "https://github.com/theflashcurrency"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/flashcurrencytfc"
+        },
+        {
+            "name": "telegram_news",
+            "url": "https://t.me/flashtfc"
+        },
+        {
+            "name": "blog",
+            "url": "https://theflashcurrency.com/news/"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://theflashcurrency.com/white-paper/"
         },
         {
             "name": "coinmarketcap",
@@ -27,7 +39,18 @@
         },
         {
             "name": "coingecko",
-            "url": "https://www.coingecko.com/vi/ty_gia/theflashcurrency"
+            "url": "https://coingecko.com/vi/ty_gia/theflashcurrency"
+        },
+        {
+            "name": "youtube",
+            "url": "https://youtube.com/channel/UC3_VbRIsYWPgzaC9Hu8HTgg"
+        },
+        {
+            "name": "facebook",
+            "url": "https://facebook.com/groups/1046965489139636/"
         }
+    ],
+    "tags": [
+        "defi"
     ]
 }
