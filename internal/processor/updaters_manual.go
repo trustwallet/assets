@@ -429,6 +429,8 @@ func rebuildTokenList(chain coin.Coin, pairs [][]TokenItem, forceExcludeList []s
 
 	log.Debugf("Tokenlist updated: %d tokens", len(list.Tokens))
 
+	sortTokens(list.Tokens)
+
 	return createTokenListJSON(chain, list.Tokens)
 }
 

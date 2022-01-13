@@ -342,7 +342,6 @@ func isStackingChain(c coin.Coin) bool {
 	return false
 }
 
-// nolint:funlen
 func (s *Service) ValidateTokenListFile(f *file.AssetFile) error {
 	file, err := os.Open(f.Path())
 	if err != nil {
@@ -361,14 +360,30 @@ func (s *Service) ValidateTokenListFile(f *file.AssetFile) error {
 		return err
 	}
 
+	err = checkTokenListAssets(model, f)
+	if err != nil {
+		return err
+	}
+
+	err = checkTokenListPairs(model)
+	if err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func checkTokenListAssets(model TokenList, f *file.AssetFile) error {
 	compErr := validation.NewErrComposite()
 
 	for _, token := range model.Tokens {
-		if token.Type == types.Coin {
-			continue
-		}
+		var assetPath string
 
-		assetPath := path.GetAssetInfoPath(f.Chain().Handle, token.Address)
+		if token.Type == types.Coin {
+			assetPath = path.GetChainInfoPath(f.Chain().Handle)
+		} else {
+			assetPath = path.GetAssetInfoPath(f.Chain().Handle, token.Address)
+		}
 
 		infoFile, err := os.Open(assetPath)
 		if err != nil {
@@ -389,15 +404,55 @@ func (s *Service) ValidateTokenListFile(f *file.AssetFile) error {
 		}
 
 		if string(token.Type) != *infoAsset.Type {
-			compErr.Append(fmt.Errorf("field 'type' differs from %s", assetPath))
+			compErr.Append(fmt.Errorf("field type - '%s' differs from '%s' in %s",
+				token.Type, *infoAsset.Type, assetPath))
 		}
 
 		if token.Symbol != *infoAsset.Symbol {
-			compErr.Append(fmt.Errorf("field 'symbol' differs from %s", assetPath))
+			compErr.Append(fmt.Errorf("field symbol - '%s' differs from '%s' in %s",
+				token.Symbol, *infoAsset.Symbol, assetPath))
 		}
 
 		if token.Decimals != uint(*infoAsset.Decimals) {
-			compErr.Append(fmt.Errorf("field 'decimals' differs from %s", assetPath))
+			compErr.Append(fmt.Errorf("field decimals - '%d' differs from '%d' in %s",
+				token.Decimals, *infoAsset.Decimals, assetPath))
+		}
+
+		if token.Name != *infoAsset.Name {
+			compErr.Append(fmt.Errorf("field name - '%s' differs from '%s' in %s",
+				token.Name, *infoAsset.Name, assetPath))
+		}
+
+		if infoAsset.GetStatus() != activeStatus {
+			compErr.Append(fmt.Errorf("token '%s' is not active, remove it from %s", token.Address, f.Path()))
+		}
+	}
+
+	if compErr.Len() > 0 {
+		return compErr
+	}
+
+	return nil
+}
+
+func checkTokenListPairs(model TokenList) error {
+	compErr := validation.NewErrComposite()
+
+	tokensMap := make(map[string]struct{})
+	for _, t := range model.Tokens {
+		tokensMap[t.Asset] = struct{}{}
+	}
+
+	pairs := make(map[string]string)
+	for _, t := range model.Tokens {
+		for _, pair := range t.Pairs {
+			pairs[pair.Base] = t.Address
+		}
+	}
+
+	for pairToken, token := range pairs {
+		if _, exists := tokensMap[pairToken]; !exists {
+			compErr.Append(fmt.Errorf("token '%s' contains non-existing pair token '%s'", token, pairToken))
 		}
 	}
 
