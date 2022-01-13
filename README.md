@@ -30,7 +30,7 @@ such as
 
 For more information, see the original Trust Wallet documentation on their [developers site](https://developer.trustwallet.com/add_new_asset):
 
-- [Contribution guidelines](https://developer.trustwallet.com/add_new_asset#contribution-guidelines)
+- [Contribution guidelines](https://developer.trustwallet.com/assets/repository_details)
 
 - [FAQ](https://developer.trustwallet.com/assets/faq)
 
@@ -38,28 +38,25 @@ For more information, see the original Trust Wallet documentation on their [deve
 
 There are several scripts available for maintainers:
 
-- `npm run check` -- Execute validation checks; also used in continuous integration.
-- `npm run check-sanity` -- Strict subset of checks
-- `npm run fix` -- Perform automatic fixes where possible
-- `npm run fix-sanity` -- Stricter subset
-- `npm run updateAuto` -- Run automatic updates from external sources, executed regularly (GitHub action)
-- `npm run update` -- Run manual updates from external sources, for manual use.
-- `npm test` -- Run script unit tests
-- `npm lint` -- Run Lint static code check
+- `make check` -- Execute validation checks; also used in continuous integration.
+- `make fix` -- Perform automatic fixes where possible
+- `make update-auto` -- Run automatic updates from external sources, executed regularly (GitHub action)
+- `make update-manual` -- Run manual updates from external sources, for manual use.
 
 ## On Checks
 
-This repo contais a set of scripts for verification of all the information.  Implemented as Typescript scripts, available through `npm run check`, and executed in CI build; checks the whole repo.
-There are similar check logic implemeted:
-- in assets-management app; for checking changed token files in PRs, or when creating a PR.  Implemented as a Typescript library, checks diffs, can be run from browser environment.
-- in merge-fee-bot, which runs as a GitHub app shows result in PR comment.  Also uses library, but executes in a non-browser environment.
+This repo contains a set of scripts for verification of all the information. Implemented as Golang scripts, available through `make check`, and executed in CI build; checks the whole repo.
+There are similar check logic implemented:
+
+- in assets-management app; for checking changed token files in PRs, or when creating a PR.  Checks diffs, can be run from browser environment.
+- in merge-fee-bot, which runs as a GitHub app shows result in PR comment. Executes in a non-browser environment.
 
 ## Trading pair maintenance
 
 Info on supported trading pairs are stored in `tokenlist.json` files.
 Trading pairs can be updated --
 from Uniswap/Ethereum and PancakeSwap/Smartchain -- using update script (and checking in changes).
-Minimal limit values for trading pair inclusion are set in the `config.ts` file.
+Minimal limit values for trading pair inclusion are set in the [config file](https://github.com/trustwallet/assets/blob/master/.github/assets.config.yaml).
 There are also options for force-include and force-exclude in the config.
 
 ## Disclaimer
