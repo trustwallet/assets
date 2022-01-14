@@ -1,10 +1,24 @@
+{
     "name": "Matrix Protocol",
-    "website": "https://www.matrixprotocol.io",
-    "description": "The first project to incorporate a love for the development of artificial intelligence into its core vision.",
-    "explorer": "https://bscscan.com/address/0xe28832f94Aa99d3eD4c61EF805330168556b4179",
     "type": "BEP20",
     "symbol": "MTX",
     "decimals": 9,
+    "website": "https://www.matrixprotocol.io",
+    "description": "Matrix Protocol is building an ecosystem, with several games in development, a cross-chain NFT marketplace and creating multiple partnerships with big sporting leagues and artificial intelligence startups, in a bid to help those that help others.",
+    "explorer": "https://bscscan.com/token/0xe28832f94Aa99d3eD4c61EF805330168556b4179",
     "status": "active",
-    "id": "0xe28832f94Aa99d3eD4c61EF805330168556b4179"
+    "id": "0xe28832f94Aa99d3eD4c61EF805330168556b4179",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/matrix_protocol"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/matrix_protocol"
+        }
+    ],
+    "tags": [
+        "Gaming"
+    ]
 }
