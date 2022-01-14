@@ -13,21 +13,30 @@ type Service struct {
 	fileService      *file.Service
 	processorService *processor.Service
 	reportService    *report.Service
+	paths            []string
 }
 
-func NewService(fs *file.Service, cs *processor.Service, rs *report.Service) *Service {
+func NewService(fs *file.Service, cs *processor.Service, rs *report.Service, paths []string) *Service {
 	return &Service{
 		fileService:      fs,
 		processorService: cs,
 		reportService:    rs,
+		paths:            paths,
 	}
 }
 
-func (s *Service) RunJob(paths []string, job func(*file.AssetFile)) {
-	for _, path := range paths {
+func (s *Service) RunJob(job func(*file.AssetFile)) {
+	for _, path := range s.paths {
 		f := s.fileService.GetAssetFile(path)
-		job(f)
 		s.reportService.IncTotalFiles()
+		job(f)
+	}
+
+	reportMsg := s.reportService.GetReport()
+	if s.reportService.IsFailed() {
+		log.Fatal(reportMsg)
+	} else {
+		log.Info(reportMsg)
 	}
 }
 
