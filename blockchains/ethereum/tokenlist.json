@@ -266,9 +266,6 @@
                     "base": "c60_t0x85Eee30c52B0b379b046Fb0F85F4f3Dc3009aFEC"
                 },
                 {
-                    "base": "c60_t0x8762db106B2c2A0bccB3A80d1Ed41273552616E8"
-                },
-                {
                     "base": "c60_t0x88ACDd2a6425c3FaAE4Bc9650Fd7E27e0Bebb7aB"
                 },
                 {
@@ -1995,17 +1992,6 @@
             "symbol": "KEEP",
             "decimals": 18,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x85Eee30c52B0b379b046Fb0F85F4f3Dc3009aFEC/logo.png",
-            "pairs": []
-        },
-        {
-            "chainId": 1,
-            "asset": "c60_t0x8762db106B2c2A0bccB3A80d1Ed41273552616E8",
-            "type": "ERC20",
-            "address": "0x8762db106B2c2A0bccB3A80d1Ed41273552616E8",
-            "name": "Reserve Rights",
-            "symbol": "RSR",
-            "decimals": 18,
-            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x8762db106B2c2A0bccB3A80d1Ed41273552616E8/logo.png",
             "pairs": []
         },
         {
