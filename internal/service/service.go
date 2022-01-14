@@ -32,9 +32,9 @@ func (s *Service) RunJob(paths []string, job func(*file.AssetFile)) {
 }
 
 func (s *Service) Check(f *file.AssetFile) {
-	validator := s.processorService.GetValidator(f)
+	validators := s.processorService.GetValidator(f)
 
-	if validator != nil {
+	for _, validator := range validators {
 		if err := validator.Run(f); err != nil {
 			s.handleError(err, f, validator.Name)
 		}
