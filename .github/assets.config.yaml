@@ -1,17 +1,16 @@
 app:
-  log_level: info
+  log_level: debug
 
 client_urls:
-  binancedex: "https://dex-atlantic.binance.org"
+  binance:
+    dex: https://dex.binance.org
+    explorer: https://explorer.binance.org
+  backend_api: https://api.trustwallet.com 
+
+urls:
+  tw_assets_app: https://assets.trustwalletapp.com
 
 validators_settings:
-  image_file:
-    size_kb: 100
-    max_w: 512
-    max_h: 512
-    min_w: 50
-    min_h: 50
-
   root_folder:
     allowed_files:
       - ".github"
@@ -33,8 +32,12 @@ validators_settings:
       - ".eslintignore"
       - ".eslintrc.js"
       - "cmd"
+      - "internal"
       - "go.mod"
       - "go.sum"
+      - ".golangci.yml"
+      - "Makefile"
+      - "bin"
     skip_files:
       - "node_modules"
 
@@ -86,10 +89,6 @@ validators_settings:
       - id: staking
         name: Staking
         description: Tokens that are used for staking to receive rewards.
-      - id: staking-native
-        name: Staking Native
-        description: Coins/Blockchains that are used for staking to secure the network to
-          receive rewards.
       - id: privacy
         name: Privacy
         description: Privacy tokens.
@@ -101,4 +100,38 @@ validators_settings:
         description: Binance-Peg tokens.
       - id: deflationary
         name: Deflationary
-        description: Tokens that are deflationary or use mechanism to burn a token on transfer/swap. 
+        description: Tokens that are deflationary or use mechanism to burn a token on transfer/swap.
+      - id: memes
+        name: Memes
+        description: A cryptocurrency that is associated with some theme, often as a joke rather than a serious product.
+      - id: gamefi
+        name: GameFi
+        description: Combination of gaming and DeFi, is the intersection of blockchain-based gaming and DeFi services.
+      # TW Specific
+      - id: staking-native
+        name: Staking Native
+        description: Coins/Blockchains that are used for staking to secure the network to
+          receive rewards. Supported by Trust Wallet.
+
+trading_pair_settings:
+  uniswap:
+    url: https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v2
+
+    primary_tokens: "WETH,ETH"
+    force_include_list: "TUSD,STAKE,YFI,BAT,MANA,1INCH,REP,KP3R,UNI,WBTC,HEX,CREAM,SLP,REN,XOR,Link,sUSD,HEGIC,RLC,DAI,SUSHI,FYZ,DYT,AAVE,LEND,UBT,DIA,RSR,SXP,OCEAN,MKR,USDC,CEL,BAL,BAND,COMP,SNX,OMG,AMPL,USDT,KNC,ZRX,AXS,ENJ,STMX,DPX,FTT,DPI,PAX"
+    force_exclude_list: "STARL,UFO"
+
+    min_liquidity: 2000000
+    min_vol_24: 1000000
+    min_tx_count_24: 480
+
+  pancakeswap:
+    url: https://api.bscgraph.org/subgraphs/name/cakeswap
+
+    primary_tokens: "WBNB,BNB"
+    force_include_list: "Cake,DAI,ETH,TWT,VAI,USDT,BLINK,BTCB,ALPHA,INJ,CTK,UNI,XVS,BUSD,HARD,BIFI,FRONT"
+    force_exclude_list:
+
+    min_liquidity: 1000000
+    min_vol_24: 500000
+    min_tx_count_24: 288
