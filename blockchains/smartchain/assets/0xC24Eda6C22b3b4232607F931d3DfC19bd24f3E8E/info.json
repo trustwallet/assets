@@ -1,11 +1,48 @@
 {
     "name": "Equity",
-    "website": "https://equitycoin.finance/",
-    "description": "Equity is a Defi project aimed at providing passive income and storing value while being P2P payment friendly. We return our 20% buy and sell tax to holders via reflections in a default of BUSD. The project is funded by reflections alone, team and marketing wallets cannot buy/sell/transfer tokens.",
-    "explorer": "https://bscscan.com/token/0xC24Eda6C22b3b4232607F931d3DfC19bd24f3E8E",
     "type": "BEP20",
     "symbol": "Equity",
     "decimals": 18,
+    "website": "https://equitycoin.finance/",
+    "description": "Equity is a Defi project aimed at providing passive income and storing value while being P2P payment friendly. We return our 20% buy and sell tax to holders via reflections in a default of BUSD. The project is funded by reflections alone, team and marketing wallets cannot buy/sell/transfer tokens.",
+    "explorer": "https://bscscan.com/token/0xC24Eda6C22b3b4232607F931d3DfC19bd24f3E8E",
     "status": "active",
-    "id": "0xC24Eda6C22b3b4232607F931d3DfC19bd24f3E8E"
+    "id": "0xC24Eda6C22b3b4232607F931d3DfC19bd24f3E8E",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/equitycoinbsc"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/EquityEN"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/equity"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://equitycoin.finance/wp-content/uploads/2022/01/Equity-Whitepaper-v1.2.pdf"
+        },
+        {
+            "name": "youtube",
+            "url": "https://youtube.com/channel/UCTVLZ7OFt87YSdtSHNj9vPw"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/equity/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/equity"
+        },
+        {
+            "name": "source_code",
+            "url": "https://bscscan.com/address/0xC24Eda6C22b3b4232607F931d3DfC19bd24f3E8E#code"
+        }
+    ],
+    "tags": [
+        "defi"
+    ]
 }
