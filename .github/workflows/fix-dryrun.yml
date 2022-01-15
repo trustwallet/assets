@@ -17,7 +17,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Run fix
-        run: go run ./cmd/main.go --config=./.github/assets.config.yaml --script=fixer
+        run: make fix
 
       - name: Show fix result (diff)
         run: |
@@ -26,4 +26,4 @@ jobs:
           git diff
 
       - name: Run check
-        run: go run ./cmd/main.go --config=./.github/assets.config.yaml --script=checker
+        run: make check
