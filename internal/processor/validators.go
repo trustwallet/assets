@@ -13,6 +13,7 @@ import (
 	"github.com/trustwallet/assets-go-libs/validation/list"
 	"github.com/trustwallet/assets/internal/config"
 	"github.com/trustwallet/assets/internal/file"
+	"github.com/trustwallet/go-primitives/asset"
 	"github.com/trustwallet/go-primitives/coin"
 	"github.com/trustwallet/go-primitives/types"
 )
@@ -377,6 +378,25 @@ func checkTokenListAssets(model TokenList, f *file.AssetFile) error {
 	compErr := validation.NewErrComposite()
 
 	for _, token := range model.Tokens {
+		if coin.IsEVM(f.Chain().ID) {
+			err := validation.ValidateETHForkAddress(f.Chain(), token.Address)
+			if err != nil {
+				compErr.Append(err)
+			}
+
+			err = validateAssetChecksum(f.Chain(), token.Asset)
+			if err != nil {
+				compErr.Append(err)
+			}
+
+			for _, pair := range token.Pairs {
+				err = validateAssetChecksum(f.Chain(), pair.Base)
+				if err != nil {
+					compErr.Append(err)
+				}
+			}
+		}
+
 		var assetPath string
 
 		if token.Type == types.Coin {
@@ -454,6 +474,26 @@ func checkTokenListPairs(model TokenList) error {
 		if _, exists := tokensMap[pairToken]; !exists {
 			compErr.Append(fmt.Errorf("token '%s' contains non-existing pair token '%s'", token, pairToken))
 		}
+	}
+
+	if compErr.Len() > 0 {
+		return compErr
+	}
+
+	return nil
+}
+
+func validateAssetChecksum(chain coin.Coin, id string) error {
+	compErr := validation.NewErrComposite()
+
+	_, addr, err := asset.ParseID(id)
+	if err != nil {
+		compErr.Append(err)
+	}
+
+	err = validation.ValidateETHForkAddress(chain, addr)
+	if err != nil {
+		compErr.Append(err)
 	}
 
 	if compErr.Len() > 0 {
