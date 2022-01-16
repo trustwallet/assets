@@ -1,10 +1,24 @@
-"name": “BlueFI,
+{
+    "name": "BleuFi",
+    "type": "BEP20",
+    "symbol": "BLEU",
+    "decimals": 2,
     "website": "https://app.bleufi.com/",
     "description": "The BleuFi Ecosystem is designed to be a one stop shop for all Defi needs.",
-    "explorer": "https://bscscan.com/token/0xffdc00285dde1f5b5c65c6a963357b4c55d8f601",
-    "type": "BEP20",
-    "symbol": “BLEU”,
-    "decimals": 2,
+    "explorer": "https://bscscan.com/token/0xfFdC00285DDe1f5b5c65C6a963357b4C55d8f601",
     "status": "active",
-    "id": "0xfFdC00285DDe1f5b5c65C6a963357b4C55d8f601"
+    "id": "0xfFdC00285DDe1f5b5c65C6a963357b4C55d8f601",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/Bleufiofficial"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/BleuFi"
+        }
+    ],
+    "tags": [
+        "nft"
+    ]
 }
