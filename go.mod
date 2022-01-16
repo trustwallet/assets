@@ -5,7 +5,7 @@ go 1.17
 require (
 	github.com/sirupsen/logrus v1.8.1
 	github.com/spf13/cobra v1.3.0
-	github.com/trustwallet/assets-go-libs v0.0.25
+	github.com/trustwallet/assets-go-libs v0.0.26
 	github.com/trustwallet/go-libs v0.2.23
 	github.com/trustwallet/go-primitives v0.0.20
 )
