@@ -1,7 +1,7 @@
 {
     "name": "Era Token",
     "website": "https://www.era7.io",
-    "description": "ERA TOKEN is the main currency in game which can be obtained by playing game modes and participating in many other activities .",
+    "description": "ERA TOKEN is the main currency in game which can be obtained by playing game modes and participating in many other activities.",
     "explorer": "https://bscscan.com/token/0x6f9F0c4ad9Af7EbD61Ac5A1D4e0F2227F7B0E5f9",
     "type": "BEP20",
     "symbol": "ERA",
@@ -12,6 +12,21 @@
         {
             "name": "twitter",
             "url": "https://twitter.com/Era7_official"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/joinchat/aF3LUIC8PKVhNDA6"
+        },
+        {
+            "name": "reddit",
+            "url": "https://www.reddit.com/user/Era7_Official"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/jtFRzTv5Zw"
         }
+    ],
+    "tags": [
+        "gamefi"
     ]
 }
