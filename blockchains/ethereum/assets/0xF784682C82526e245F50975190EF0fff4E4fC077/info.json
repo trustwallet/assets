@@ -1,11 +1,24 @@
 {
-    "name": "Inlock",
-    "website": "https://inlock.io/",
-    "description": "Inlock is a crypto-backed lending platform and savings platform.",
-    "explorer": "https://etherscan.io/token/0xF784682C82526e245F50975190EF0fff4E4fC077",
+    "name": "INLOCK (ILK)",
     "type": "ERC20",
     "symbol": "ILK",
     "decimals": 8,
+    "website": "https://inlock.io/",
+    "description": "Desc",
+    "explorer": "https://etherscan.io/token/0xF784682C82526e245F50975190EF0fff4E4fC077",
     "status": "active",
-    "id": "0xF784682C82526e245F50975190EF0fff4E4fC077"
+    "id": "0xF784682C82526e245F50975190EF0fff4E4fC077",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/twitter"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/gecko"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
 }
