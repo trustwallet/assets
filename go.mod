@@ -4,15 +4,17 @@ go 1.17
 
 require (
 	github.com/sirupsen/logrus v1.8.1
-	github.com/trustwallet/assets-go-libs v0.0.24
-	github.com/trustwallet/go-libs v0.2.21
-	github.com/trustwallet/go-primitives v0.0.19
+	github.com/spf13/cobra v1.3.0
+	github.com/trustwallet/assets-go-libs v0.0.26
+	github.com/trustwallet/go-libs v0.2.23
+	github.com/trustwallet/go-primitives v0.0.20
 )
 
 require (
 	github.com/deckarep/golang-set v1.7.1 // indirect
 	github.com/fsnotify/fsnotify v1.5.1 // indirect
 	github.com/hashicorp/hcl v1.0.0 // indirect
+	github.com/inconshreveable/mousetrap v1.0.0 // indirect
 	github.com/magiconair/properties v1.8.5 // indirect
 	github.com/mitchellh/mapstructure v1.4.3 // indirect
 	github.com/patrickmn/go-cache v2.1.0+incompatible // indirect

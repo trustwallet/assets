@@ -1,12 +1,16 @@
 #! /usr/bin/make -f
 
+
 # Go related variables.
 GOBASE := $(shell pwd)
 GOBIN := $(GOBASE)/bin
 
+
 # Go files.
 GOFMT_FILES?=$$(find . -name '*.go' | grep -v vendor)
 
+
+# Common commands.
 all: fmt lint test
 
 test:
@@ -27,14 +31,21 @@ lint: lint-install
 	@echo "  >  Running golint"
 	bin/golangci-lint run --timeout=2m
 
+
+# Assets commands.
 check:
-	go run ./cmd/main.go --script=checker
+	go run cmd/main.go check
 
 fix:
-	go run ./cmd/main.go --script=fixer
+	go run cmd/main.go fix
 
 update-auto:
-	go run ./cmd/main.go --script=updater-auto
+	go run cmd/main.go update-auto
 
 update-manual:
-	go run ./cmd/main.go --script=updater-manual
+	go run cmd/main.go update-manual
+
+
+# Helper commands.
+add-token:
+	go run cmd/main.go add-token $(token)

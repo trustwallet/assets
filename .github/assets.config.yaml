@@ -89,10 +89,6 @@ validators_settings:
       - id: staking
         name: Staking
         description: Tokens that are used for staking to receive rewards.
-      - id: staking-native
-        name: Staking Native
-        description: Coins/Blockchains that are used for staking to secure the network to
-          receive rewards.
       - id: privacy
         name: Privacy
         description: Privacy tokens.
@@ -111,6 +107,11 @@ validators_settings:
       - id: gamefi
         name: GameFi
         description: Combination of gaming and DeFi, is the intersection of blockchain-based gaming and DeFi services.
+      # TW Specific
+      - id: staking-native
+        name: Staking Native
+        description: Coins/Blockchains that are used for staking to secure the network to
+          receive rewards. Supported by Trust Wallet.
 
 trading_pair_settings:
   uniswap:
