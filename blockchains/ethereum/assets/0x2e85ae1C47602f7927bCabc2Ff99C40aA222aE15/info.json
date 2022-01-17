@@ -1,11 +1,40 @@
 {
-  "id": "0x2e85ae1C47602f7927bCabc2Ff99C40aA222aE15",
-  "name": "Katana Inu Token",
-  "website": "https://katanainu.com",
-  "description": "Katana Inu is a high-end graphics pc-game with play-to-earn mechanics and NFT integration.",
-  "explorer": "https://etherscan.io/token/0x2e85ae1C47602f7927bCabc2Ff99C40aA222aE15",
-  "type": "ERC20",
-  "symbol": "KATA",
-  "decimals": 18,
-  "status": "active"
+    "id": "0x2e85ae1C47602f7927bCabc2Ff99C40aA222aE15",
+    "name": "Katana Inu Token",
+    "website": "https://katanainu.com",
+    "description": "Katana Inu is a high-end graphics pc-game with play-to-earn mechanics and NFT integration.",
+    "explorer": "https://etherscan.io/token/0x2e85ae1C47602f7927bCabc2Ff99C40aA222aE15",
+    "type": "ERC20",
+    "symbol": "KATA",
+    "decimals": 18,
+    "status": "active"
+    "tags": [
+        "gamefi"
+    ],
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/katanainu/katacoin-contract"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/katanainu"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/katanainuannouncement"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/@katanainu/katana-inu-a-great-play2earn-battle-royale-pc-game-with-nft-marketplace-on-layer-2-a56f9bbcce79"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://katanainu.com/katanainuwhitepaper.pdf/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://www.coingecko.com/en/coins/katana-inu"
+        }
+    ]
 }
