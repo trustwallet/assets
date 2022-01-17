@@ -1,11 +1,11 @@
 {
     "name": "Mango Markets",
-    "website": "https://mango.markets/",
-    "description": "Mango v3 is designed to make life easier for market participants",
-    "explorer": "https://explorer.solana.com/address/MangoCzJ36AjZyKwVj3VnYU4GTonjfVEnJmvvWaxLac",
-    "type": "SPL",
     "symbol": "MNGO",
+    "type": "SPL",
     "decimals": 6,
+    "description": "Mango v3 is designed to make life easier for market participants",
+    "website": "https://mango.markets/",
+    "explorer": "https://solscan.io/token/MangoCzJ36AjZyKwVj3VnYU4GTonjfVEnJmvvWaxLac",
     "status": "active",
     "id": "MangoCzJ36AjZyKwVj3VnYU4GTonjfVEnJmvvWaxLac",
     "links": [
@@ -21,5 +21,9 @@
             "name": "github",
             "url": "https://github.com/blockworks-foundation"
         }
+    ],
+    "tags": [
+        "defi",
+        "governance"
     ]
 }
