@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 jobs:
   pull_request_ci:
-    runs-on: ubuntu-latest
+    runs-on:
     steps:
       - name: Set up Go
         uses: actions/setup-go@v2
