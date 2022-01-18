@@ -108,10 +108,3 @@ func (s *Service) GetUpdatersAuto() []Updater {
 		{Name: "Retrieving missing token images, creating binance token list.", Run: s.UpdateBinanceTokens},
 	}
 }
-
-func (s *Service) GetUpdatersManual() []Updater {
-	return []Updater{
-		{Name: "Update tokenlist.json for Ethereum", Run: s.UpdateEthereumTokenlist},
-		{Name: "Update tokenlist.json for Smartchain", Run: s.UpdateSmartchainTokenlist},
-	}
-}

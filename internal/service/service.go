@@ -65,11 +65,6 @@ func (s *Service) RunUpdateAuto() {
 	s.runUpdaters(updaters)
 }
 
-func (s *Service) RunUpdateManual() {
-	updaters := s.processorService.GetUpdatersManual()
-	s.runUpdaters(updaters)
-}
-
 func (s *Service) runUpdaters(updaters []processor.Updater) {
 	for _, updater := range updaters {
 		err := updater.Run()

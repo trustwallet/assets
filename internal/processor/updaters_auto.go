@@ -16,6 +16,7 @@ import (
 	"github.com/trustwallet/assets-go-libs/image"
 	"github.com/trustwallet/assets-go-libs/path"
 	"github.com/trustwallet/assets-go-libs/validation/info"
+	"github.com/trustwallet/assets-go-libs/validation/tokenlist"
 	"github.com/trustwallet/assets/internal/config"
 	"github.com/trustwallet/go-libs/blockchain/binance"
 	"github.com/trustwallet/go-libs/blockchain/binance/explorer"
@@ -137,10 +138,10 @@ func createInfoJSON(chain coin.Coin, a explorer.Bep2Asset) error {
 	return fileLib.CreateJSONFile(assetInfoPath, &assetInfo)
 }
 
-func createTokenListJSON(chain coin.Coin, tokens []TokenItem) error {
+func createTokenListJSON(chain coin.Coin, tokens []tokenlist.Token) error {
 	tokenListPath := path.GetTokenListPath(chain.Handle)
 
-	var oldTokenList TokenList
+	var oldTokenList tokenlist.Model
 	err := fileLib.ReadJSONFile(tokenListPath, &oldTokenList)
 	if err != nil {
 		return nil
@@ -157,16 +158,16 @@ func createTokenListJSON(chain coin.Coin, tokens []TokenItem) error {
 	log.Debugf("Tokenlist: list with %d tokens and %d pairs written to %s.",
 		len(tokens), countTotalPairs(tokens), tokenListPath)
 
-	return fileLib.CreateJSONFile(tokenListPath, &TokenList{
+	return fileLib.CreateJSONFile(tokenListPath, &tokenlist.Model{
 		Name:      fmt.Sprintf("Trust Wallet: %s", coin.Coins[chain.ID].Name),
 		LogoURI:   twLogoURL,
 		Timestamp: time.Now().Format(timestampFormat),
 		Tokens:    tokens,
-		Version:   Version{Major: oldTokenList.Version.Major + 1},
+		Version:   tokenlist.Version{Major: oldTokenList.Version.Major + 1},
 	})
 }
 
-func countTotalPairs(tokens []TokenItem) int {
+func countTotalPairs(tokens []tokenlist.Token) int {
 	var counter int
 	for _, token := range tokens {
 		counter += len(token.Pairs)
@@ -175,7 +176,7 @@ func countTotalPairs(tokens []TokenItem) int {
 	return counter
 }
 
-func sortTokens(tokens []TokenItem) {
+func sortTokens(tokens []tokenlist.Token) {
 	sort.Slice(tokens, func(i, j int) bool {
 		if len(tokens[i].Pairs) != len(tokens[j].Pairs) {
 			return len(tokens[i].Pairs) > len(tokens[j].Pairs)
@@ -191,7 +192,7 @@ func sortTokens(tokens []TokenItem) {
 	}
 }
 
-func generateTokenList(marketPairs []binance.MarketPair, tokenList binance.Tokens) ([]TokenItem, error) {
+func generateTokenList(marketPairs []binance.MarketPair, tokenList binance.Tokens) ([]tokenlist.Token, error) {
 	if len(marketPairs) < 5 {
 		return nil, fmt.Errorf("no markets info is returned from Binance DEX: %d", len(marketPairs))
 	}
@@ -200,7 +201,7 @@ func generateTokenList(marketPairs []binance.MarketPair, tokenList binance.Token
 		return nil, fmt.Errorf("no tokens info is returned from Binance DEX: %d", len(tokenList))
 	}
 
-	pairsMap := make(map[string][]Pair)
+	pairsMap := make(map[string][]tokenlist.Pair)
 	pairsList := make(map[string]struct{})
 	tokensMap := make(map[string]binance.Token)
 
@@ -219,25 +220,25 @@ func generateTokenList(marketPairs []binance.MarketPair, tokenList binance.Token
 			val = append(val, getPair(marketPair))
 			pairsMap[tokenSymbol] = val
 		} else {
-			pairsMap[tokenSymbol] = []Pair{getPair(marketPair)}
+			pairsMap[tokenSymbol] = []tokenlist.Pair{getPair(marketPair)}
 		}
 
 		pairsList[marketPair.BaseAssetSymbol] = struct{}{}
 		pairsList[marketPair.QuoteAssetSymbol] = struct{}{}
 	}
 
-	tokenItems := make([]TokenItem, 0, len(pairsList))
+	tokenItems := make([]tokenlist.Token, 0, len(pairsList))
 
 	for pair := range pairsList {
 		token := tokensMap[pair]
 
-		var pairs []Pair
+		var pairs []tokenlist.Pair
 		pairs, exists := pairsMap[token.Symbol]
 		if !exists {
-			pairs = make([]Pair, 0)
+			pairs = make([]tokenlist.Pair, 0)
 		}
 
-		tokenItems = append(tokenItems, TokenItem{
+		tokenItems = append(tokenItems, tokenlist.Token{
 			Asset:    getAssetIDSymbol(token.Symbol, coin.Coins[coin.BINANCE].Symbol, coin.BINANCE),
 			Type:     getTokenType(token.Symbol, coin.Coins[coin.BINANCE].Symbol, types.BEP2),
 			Address:  token.Symbol,
@@ -288,8 +289,8 @@ func isTokenExistOrActive(symbol string) bool {
 	return true
 }
 
-func getPair(marketPair binance.MarketPair) Pair {
-	return Pair{
+func getPair(marketPair binance.MarketPair) tokenlist.Pair {
+	return tokenlist.Pair{
 		Base:     getAssetIDSymbol(marketPair.BaseAssetSymbol, coin.Coins[coin.BINANCE].Symbol, coin.BINANCE),
 		LotSize:  strconv.FormatInt(numbers.ToSatoshi(marketPair.LotSize), 10),
 		TickSize: strconv.FormatInt(numbers.ToSatoshi(marketPair.TickSize), 10),
