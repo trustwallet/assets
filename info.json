@@ -1,11 +1,28 @@
 {
-   "name":"Crypto Indiancoin",
-   "website":"https://cryptoindiancoins.com",
-   "description":"CRYPTOINDIAN COIN provides customers with decentralized farming services, personalised financial solutions, and a variety of interest models and earning opportunities. Our Mission Our company’s mission is to provide a user-friendly digital platform where we can provide smart contract, pancake swap. We are the leading staking service provider for blockchain projects. Join our community to help secure networks and earn rewards.",
-   "explorer":"https://bscscan.com/token/0x5da0e4398c18ffc2febd3cc390c1e2f1ddc092f2",
+   "name":"Cryptoindiancoin",
    "type":"BEP20",
    "symbol":"CIC",
    "decimals":18,
+   "website":"https://www.cryptoindiancoins.com",
+   "description":"provides customers with decentralized farming services, personalised financial solutions, and a variety of interest models and earning opportunities. Our Mission Our company’s mission is to provide a user-friendly digital platform where we can provide smart contract, pancake swap. We are the leading staking service provider for blockchain projects. Join our community to help secure networks and earn rewards.",
+   "explorer":"https://bscscan.com/address/0x5dA0E4398c18FFc2FeBd3cc390c1e2f1Ddc092F2",
    "status":"active",
-   "id":"0x5da0e4398c18ffc2febd3cc390c1e2f1ddc092f2"
+   "id":"0x5dA0E4398c18FFc2FeBd3cc390c1e2f1Ddc092F2",
+   "links":[
+      {
+         "name":"twitter",
+         "url":"https://twitter.com/CryptoIndian9"
+      },
+      {
+         "name":"telegram",
+         "url":"https://t.me/cryptoindiancoins"
+      },
+      {
+         "name":"coinmarketcap",
+         "url":"https://coinmarketcap.com/currencies/crypto-indian-coin/"
+      }
+   ],
+   "tags":[
+      "defi"
+   ]
 }
