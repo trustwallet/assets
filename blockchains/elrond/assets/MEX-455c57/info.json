@@ -8,6 +8,46 @@
     "description": "MEX is the utility token of the Maiar Exchange.",
     "website": "https://maiar.exchange",
     "explorer": "https://explorer.elrond.com/tokens/MEX-455c57",
-    "api": "https://api.elrond.com/tokens/MEX-455c57",
-    "links": []
+    "links": [
+        {
+            "name": "docs",
+            "url": "https://docs.maiar.exchange"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/MaiarExchange"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/MaiarExchange"
+        },
+        {
+            "name": "facebook",
+            "url": "https://www.facebook.com/ElrondNetwork"
+        },
+        {
+            "name": "blog",
+            "url": "https://elrond.com/blog"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/ElrondNetwork"
+        },
+        {
+            "name": "source_code",
+            "url": "https://github.com/ElrondNetwork/sc-dex-rs"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/maiar"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://www.coingecko.com/en/coins/maiar-dex"
+        }
+    ],
+    "tags": [
+        "defi",
+        "governance"
+    ]
 }

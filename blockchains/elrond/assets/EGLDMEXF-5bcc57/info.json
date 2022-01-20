@@ -8,6 +8,37 @@
     "description": "This token tracks your LP token stake in the EGLD/MEX farm on the Maiar DEX.",
     "website": "https://maiar.exchange",
     "explorer": "https://explorer.elrond.com/collections/EGLDMEXF-5bcc57",
-    "api": "https://api.elrond.com/collections/EGLDMEXF-5bcc57",
-    "links": []
+    "links": [
+        {
+            "name": "docs",
+            "url": "https://docs.maiar.exchange"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/MaiarExchange"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/MaiarExchange"
+        },
+        {
+            "name": "facebook",
+            "url": "https://www.facebook.com/ElrondNetwork"
+        },
+        {
+            "name": "blog",
+            "url": "https://elrond.com/blog"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/ElrondNetwork"
+        },
+        {
+            "name": "source_code",
+            "url": "https://github.com/ElrondNetwork/sc-dex-rs"
+        }
+    ],
+    "tags": [
+        "defi"
+    ]
 }

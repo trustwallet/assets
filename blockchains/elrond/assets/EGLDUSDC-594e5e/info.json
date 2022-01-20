@@ -8,6 +8,37 @@
     "description": "Liquidity Provider (LP) Token obtained by adding liquidity in the EGLD/USDC pool on the Maiar DEX.",
     "website": "https://maiar.exchange",
     "explorer": "https://explorer.elrond.com/tokens/EGLDUSDC-594e5e",
-    "api": "https://api.elrond.com/tokens/EGLDUSDC-594e5e",
-    "links": []
+    "links": [
+        {
+            "name": "docs",
+            "url": "https://docs.maiar.exchange"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/MaiarExchange"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/MaiarExchange"
+        },
+        {
+            "name": "facebook",
+            "url": "https://www.facebook.com/ElrondNetwork"
+        },
+        {
+            "name": "blog",
+            "url": "https://elrond.com/blog"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/ElrondNetwork"
+        },
+        {
+            "name": "source_code",
+            "url": "https://github.com/ElrondNetwork/sc-dex-rs"
+        }
+    ],
+    "tags": [
+        "defi"
+    ]
 }
