@@ -85,7 +85,7 @@ func fetchMissingAssets(chain coin.Coin, assets []explorer.Bep2Asset) error {
 		}
 
 		assetLogoPath := path.GetAssetLogoPath(chain.Handle, a.Asset)
-		if fileLib.FileExists(assetLogoPath) {
+		if fileLib.Exists(assetLogoPath) {
 			continue
 		}
 
@@ -111,7 +111,7 @@ func createLogo(assetLogoPath string, a explorer.Bep2Asset) error {
 }
 
 func createInfoJSON(chain coin.Coin, a explorer.Bep2Asset) error {
-	explorerURL, err := coin.GetCoinExploreURL(chain, a.Asset)
+	explorerURL, err := coin.GetCoinExploreURL(chain, a.Asset, "")
 	if err != nil {
 		return err
 	}
