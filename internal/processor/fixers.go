@@ -154,7 +154,7 @@ func (s *Service) FixAssetInfo(f *file.AssetFile) error {
 		isModified = true
 	}
 
-	expectedExplorerURL, err := coin.GetCoinExploreURL(f.Chain(), f.Asset())
+	expectedExplorerURL, err := coin.GetCoinExploreURL(f.Chain(), f.Asset(), assetType)
 	if err != nil {
 		return err
 	}

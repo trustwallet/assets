@@ -30,7 +30,7 @@ func (s *Service) ValidateJSON(f *file.AssetFile) error {
 		return err
 	}
 
-	err = validation.ValidateJson(buf.Bytes())
+	err = validation.ValidateJSON(buf.Bytes())
 	if err != nil {
 		return err
 	}
@@ -225,7 +225,7 @@ func (s *Service) ValidateChainInfoFile(f *file.AssetFile) error {
 
 	_, err = file.Seek(0, io.SeekStart)
 	if err != nil {
-		return fmt.Errorf("%w: failed to seek reader", validation.ErrInvalidJson)
+		return fmt.Errorf("%w: failed to seek reader", validation.ErrInvalidJSON)
 	}
 
 	var payload info.CoinModel
@@ -261,7 +261,7 @@ func (s *Service) ValidateAssetInfoFile(f *file.AssetFile) error {
 
 	_, err = file.Seek(0, io.SeekStart)
 	if err != nil {
-		return fmt.Errorf("%w: failed to seek reader", validation.ErrInvalidJson)
+		return fmt.Errorf("%w: failed to seek reader", validation.ErrInvalidJSON)
 	}
 
 	var payload info.AssetModel
