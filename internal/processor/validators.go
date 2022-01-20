@@ -239,7 +239,7 @@ func (s *Service) ValidateChainInfoFile(f *file.AssetFile) error {
 		tags[i] = t.ID
 	}
 
-	err = info.ValidateCoin(payload, f.Chain(), f.Asset(), tags)
+	err = info.ValidateCoin(payload, tags)
 	if err != nil {
 		return err
 	}
