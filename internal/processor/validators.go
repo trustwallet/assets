@@ -234,8 +234,13 @@ func (s *Service) ValidateChainInfoFile(f *file.AssetFile) error {
 		return fmt.Errorf("%w: failed to decode", err)
 	}
 
-	tags := make([]string, len(config.Default.ValidatorsSettings.CoinInfoFile.Tags))
-	for i, t := range config.Default.ValidatorsSettings.CoinInfoFile.Tags {
+	receivedTags, err := s.assetsManager.GetTagValues()
+	if err != nil {
+		return fmt.Errorf("failed to get tag values: %w", err)
+	}
+
+	tags := make([]string, len(receivedTags.Tags))
+	for i, t := range receivedTags.Tags {
 		tags[i] = t.ID
 	}
 
