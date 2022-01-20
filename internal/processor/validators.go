@@ -11,10 +11,10 @@ import (
 	"github.com/trustwallet/assets-go-libs/validation"
 	"github.com/trustwallet/assets-go-libs/validation/info"
 	"github.com/trustwallet/assets-go-libs/validation/list"
+	"github.com/trustwallet/assets-go-libs/validation/tokenlist"
 	"github.com/trustwallet/assets/internal/config"
 	"github.com/trustwallet/assets/internal/file"
 	"github.com/trustwallet/go-primitives/coin"
-	"github.com/trustwallet/go-primitives/types"
 )
 
 func (s *Service) ValidateJSON(f *file.AssetFile) error {
@@ -30,7 +30,7 @@ func (s *Service) ValidateJSON(f *file.AssetFile) error {
 		return err
 	}
 
-	err = validation.ValidateJson(buf.Bytes())
+	err = validation.ValidateJSON(buf.Bytes())
 	if err != nil {
 		return err
 	}
@@ -225,7 +225,7 @@ func (s *Service) ValidateChainInfoFile(f *file.AssetFile) error {
 
 	_, err = file.Seek(0, io.SeekStart)
 	if err != nil {
-		return fmt.Errorf("%w: failed to seek reader", validation.ErrInvalidJson)
+		return fmt.Errorf("%w: failed to seek reader", validation.ErrInvalidJSON)
 	}
 
 	var payload info.CoinModel
@@ -234,12 +234,17 @@ func (s *Service) ValidateChainInfoFile(f *file.AssetFile) error {
 		return fmt.Errorf("%w: failed to decode", err)
 	}
 
-	tags := make([]string, len(config.Default.ValidatorsSettings.CoinInfoFile.Tags))
-	for i, t := range config.Default.ValidatorsSettings.CoinInfoFile.Tags {
+	receivedTags, err := s.assetsManager.GetTagValues()
+	if err != nil {
+		return fmt.Errorf("failed to get tag values: %w", err)
+	}
+
+	tags := make([]string, len(receivedTags.Tags))
+	for i, t := range receivedTags.Tags {
 		tags[i] = t.ID
 	}
 
-	err = info.ValidateCoin(payload, f.Chain(), f.Asset(), tags)
+	err = info.ValidateCoin(payload, tags)
 	if err != nil {
 		return err
 	}
@@ -261,7 +266,7 @@ func (s *Service) ValidateAssetInfoFile(f *file.AssetFile) error {
 
 	_, err = file.Seek(0, io.SeekStart)
 	if err != nil {
-		return fmt.Errorf("%w: failed to seek reader", validation.ErrInvalidJson)
+		return fmt.Errorf("%w: failed to seek reader", validation.ErrInvalidJSON)
 	}
 
 	var payload info.AssetModel
@@ -354,110 +359,15 @@ func (s *Service) ValidateTokenListFile(f *file.AssetFile) error {
 		return err
 	}
 
-	var model TokenList
+	var model tokenlist.Model
 	err = json.Unmarshal(buf.Bytes(), &model)
 	if err != nil {
 		return err
 	}
 
-	err = checkTokenListAssets(model, f)
+	err = tokenlist.ValidateTokenList(model, f.Chain(), f.Path())
 	if err != nil {
 		return err
-	}
-
-	err = checkTokenListPairs(model)
-	if err != nil {
-		return err
-	}
-
-	return nil
-}
-
-func checkTokenListAssets(model TokenList, f *file.AssetFile) error {
-	compErr := validation.NewErrComposite()
-
-	for _, token := range model.Tokens {
-		var assetPath string
-
-		if token.Type == types.Coin {
-			assetPath = path.GetChainInfoPath(f.Chain().Handle)
-		} else {
-			assetPath = path.GetAssetInfoPath(f.Chain().Handle, token.Address)
-		}
-
-		infoFile, err := os.Open(assetPath)
-		if err != nil {
-			return err
-		}
-
-		buf := bytes.NewBuffer(nil)
-		if _, err = buf.ReadFrom(infoFile); err != nil {
-			return err
-		}
-
-		infoFile.Close()
-
-		var infoAsset info.AssetModel
-		err = json.Unmarshal(buf.Bytes(), &infoAsset)
-		if err != nil {
-			return err
-		}
-
-		if string(token.Type) != *infoAsset.Type {
-			compErr.Append(fmt.Errorf("field type - '%s' differs from '%s' in %s",
-				token.Type, *infoAsset.Type, assetPath))
-		}
-
-		if token.Symbol != *infoAsset.Symbol {
-			compErr.Append(fmt.Errorf("field symbol - '%s' differs from '%s' in %s",
-				token.Symbol, *infoAsset.Symbol, assetPath))
-		}
-
-		if token.Decimals != uint(*infoAsset.Decimals) {
-			compErr.Append(fmt.Errorf("field decimals - '%d' differs from '%d' in %s",
-				token.Decimals, *infoAsset.Decimals, assetPath))
-		}
-
-		if token.Name != *infoAsset.Name {
-			compErr.Append(fmt.Errorf("field name - '%s' differs from '%s' in %s",
-				token.Name, *infoAsset.Name, assetPath))
-		}
-
-		if infoAsset.GetStatus() != activeStatus {
-			compErr.Append(fmt.Errorf("token '%s' is not active, remove it from %s", token.Address, f.Path()))
-		}
-	}
-
-	if compErr.Len() > 0 {
-		return compErr
-	}
-
-	return nil
-}
-
-func checkTokenListPairs(model TokenList) error {
-	compErr := validation.NewErrComposite()
-
-	tokensMap := make(map[string]struct{})
-	for _, t := range model.Tokens {
-		tokensMap[t.Asset] = struct{}{}
-	}
-
-	pairs := make(map[string]string)
-	for _, t := range model.Tokens {
-		for _, pair := range t.Pairs {
-			pairs[pair.Base] = t.Address
-		}
-	}
-
-	for pairToken, token := range pairs {
-		if _, exists := tokensMap[pairToken]; !exists {
-			compErr.Append(fmt.Errorf("token '%s' contains non-existing pair token '%s'", token, pairToken))
-		}
-	}
-
-	if compErr.Len() > 0 {
-		return compErr
 	}
 
 	return nil

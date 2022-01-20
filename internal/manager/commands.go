@@ -23,7 +23,6 @@ func InitCommands() {
 	rootCmd.AddCommand(checkCmd)
 	rootCmd.AddCommand(fixCmd)
 	rootCmd.AddCommand(updateAutoCmd)
-	rootCmd.AddCommand(updateManualCmd)
 	rootCmd.AddCommand(addTokenCmd)
 }
 
@@ -56,14 +55,6 @@ var (
 		Run: func(cmd *cobra.Command, args []string) {
 			assetsService := InitAssetsService()
 			assetsService.RunUpdateAuto()
-		},
-	}
-	updateManualCmd = &cobra.Command{
-		Use:   "update-manual",
-		Short: "Run manual updates from external sources",
-		Run: func(cmd *cobra.Command, args []string) {
-			assetsService := InitAssetsService()
-			assetsService.RunUpdateManual()
 		},
 	}
 
