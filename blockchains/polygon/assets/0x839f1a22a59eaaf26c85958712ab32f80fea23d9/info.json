@@ -1,10 +1,10 @@
 {
     "name": "Axion",
-    "symbol": "AXN",
     "type": "POLYGON",
+    "symbol": "AXN",
     "decimals": 18,
-    "description": "The world's best staking ecosystem is here. 8% fixed-rate APR. Daily bitcoin divs. Curated token launchpad. Community voting. NFT stakes, and more! This is $AXN",
     "website": "https://axion.network",
+    "description": "The world's best staking ecosystem is here. 8% fixed-rate APR. Daily bitcoin divs. Curated token launchpad. Community voting. NFT stakes, and more! This is $AXN!",
     "explorer": "https://polygonscan.com/token/0x839f1a22a59eaaf26c85958712ab32f80fea23d9",
     "status": "active",
     "id": "0x839f1a22a59eaaf26c85958712ab32f80fea23d9",
@@ -15,23 +15,54 @@
         },
         {
             "name": "github",
-            "url": "https://github.com/Axion-Network/axion-contracts"
+            "url": "https://github.com/Axion-Network/"
         },
         {
             "name": "telegram",
-            "url": "https://t.me/polydoge"
-        },
-        {
-            "name": "coingecko",
             "url": "https://t.me/axionofficial"
         },
         {
-            "name": "discord",
-            "url": "https://discord.gg/axion"
+            "name": "telegram_news",
+            "url": "https://t.me/axionnews"
         },
         {
             "name": "blog",
             "url": "https://axion.network/news"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/axion"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/AXION"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://axion.network/pdf/axion-whitepaper.pdf"
+        },
+        {
+            "name": "youtube",
+            "url": "https://youtube.com/c/AxionOfficial"
+        },
+        {
+            "name": "facebook",
+            "url": "https://facebook.com/AxionCryptoCD/"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/axion/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/axion"
+        },
+        {
+            "name": "docs",
+            "url": "https://support.axion.network/"
         }
+    ],
+    "tags": [
+        "staking"
     ]
 }
