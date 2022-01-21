@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 jobs:
   pull_request_ci:
-    runs-on:
+    runs-on:Naxious15:master
     steps:
       - name: Set up Go
         uses: actions/setup-go@v2
