@@ -1,20 +1,25 @@
 {
     "name": "tBTC",
     "website": "https://tbtc.network/",
-    "source_code": "https://github.com/keep-network/tbtc",
-    "short_description": "Trustlessly tokenized Bitcoin on Ethereum.",
     "description": "tBTC is a trustlessly Bitcoin-backed ERC-20 token.",
-    "socials": [
+    "explorer": "https://etherscan.io/token/0x8dAEBADE922dF735c38C80C7eBD708Af50815fAa",
+    "type": "ERC20",
+    "symbol": "TBTC",
+    "decimals": 18,
+    "status": "active",
+    "id": "0x8dAEBADE922dF735c38C80C7eBD708Af50815fAa",
+    "links": [
         {
-            "name": "Twitter",
-            "url": "https://twitter.com/tBTC_project",
-            "handle": "tBTC_project"
+            "name": "github",
+            "url": "https://github.com/keep-network/tbtc"
         },
         {
-            "name": "Reddit",
-            "url": "https://reddit.com/r/KeepNetwork",
-            "handle": "KeepNetwork"
+            "name": "twitter",
+            "url": "https://twitter.com/tBTC_project"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/KeepNetwork"
         }
-    ],
-    "explorer": "https://etherscan.io/token/0x8dAEBADE922dF735c38C80C7eBD708Af50815fAa"
+    ]
 }
