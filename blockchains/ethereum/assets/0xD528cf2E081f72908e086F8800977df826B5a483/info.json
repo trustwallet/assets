@@ -1,0 +1,37 @@
+{
+  "name": "Paribus",
+  "website": "https://paribus.io",
+  "description": "A cross-chain borrowing and lending protocol for NFTs, liquidity positions, and synthetic assets, powered by the Cardano blockchain.",
+  "explorer": "https://etherscan.io/token/0xd528cf2e081f72908e086f8800977df826b5a483",
+  "type": "ERC20",
+  "symbol": "PBX",
+  "decimals": 18,
+  "status": "active",
+  "id": "0xD528cf2E081f72908e086F8800977df826B5a483",
+  "tags": ["defi", "synthetics", "staking", "nft"],
+  "links": [
+    {
+      "name": "github",
+      "url": "https://github.com/paribus"
+    },
+    {
+      "name": "blog",
+      "url": "https://blog.paribus.io"
+    },
+    {
+      "name": "whitepaper",
+      "url": "https://paribus.io/documents/PARIBUS-Litepaper-V1.0.pdf"
+    },
+    {
+      "name": "coinmarketcap",
+      "url": "https://coinmarketcap.com/currencies/paribus/"
+    },
+    {
+      "name": "coingecko",
+      "url": "https://www.coingecko.com/coins/paribus"
+    },
+    { "name": "twitter", "url": "https://twitter.com/paribus_io" },
+    { "name": "telegram", "url": "https://t.me/paribus_io" },
+    { "name": "telegram_news", "url": "https://t.me/paribusannouncements" }
+  ]
+}
