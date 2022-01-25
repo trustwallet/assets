@@ -1,11 +1,49 @@
 {
     "name": "DiemLibre",
-    "website": "diemlibre.org",
-    "description": "Welcome to Diemlibre, the cryptocurrency of the privacy future. Now, ask yourself this question, when is the future? Before, We dive deep into DiemLibre, first let’s get to know some Bio. From the Latin word “Diem” meaning Day and Spanish word “Libre” meaning Free. Diemlibre has come to save the day with privacy freedom. Everyone deserves Security, Privacy, and Freedom that is why Diemlibre is Fast and Free for everyone.",
-    "explorer": "https://etherscan.io/token/0x87C22615435998D69ACA34889D03155B694a94fc",
     "type": "ERC20",
     "symbol": "DLB",
-    "decimals": 18,  
+    "decimals": 18,
+    "description": "Welcome to Diemlibre, the cryptocurrency of the privacy future. Now, ask yourself this question, when is the future? Before, We dive deep into DiemLibre, first let’s get to know some Bio. From the Latin word “Diem” meaning Day and Spanish word “Libre” meaning Free. Diemlibre has come to save the day with privacy freedom. Everyone deserves Security, Privacy, and Freedom that is why Diemlibre is Fast and Free for everyone.",
+    "website": "diemlibre.org",
+    "explorer": "https://etherscan.io/token/0x87C22615435998D69ACA34889D03155B694a94fc",
     "status": "active",
-    "id": "0x87C22615435998D69ACA34889D03155B694a94fc"
+    "id": "0x87C22615435998D69ACA34889D03155B694a94fc",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/diemlibredlb/"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://secure.diemlibre.org/white-paper/"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/diemlibreio/"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/diemlibre/"
+        },
+        {
+            "name": "telegram_news",
+            "url": "https://t.me/diemlibredlb/"
+        },
+        {
+            "name": "reddit",
+            "url": "https://www.reddit.com/user/diemlibre/"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/diemlibre/"
+        },
+        {
+            "name": "coingeko",
+            "url": "https://www.coingecko.com/coins/diemlibre/"
+        }
+    ],
+    "tags": [
+        "privacy",
+        "deflationary"
+    ]
 }
