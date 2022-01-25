@@ -507,6 +507,9 @@
                 },
                 {
                     "base": "c60_t0xf4d2888d29D722226FafA5d9B24F9164c092421E"
+                },
+                {
+                    "base": "c60_t0x12E56851Ec22874520Dc4c7fa0A8a8d7DBa1BaC8"
                 }
             ]
         },
@@ -3486,6 +3489,16 @@
             "symbol": "LOOKS",
             "decimals": 18,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0xf4d2888d29D722226FafA5d9B24F9164c092421E/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c60_t0x12E56851Ec22874520Dc4c7fa0A8a8d7DBa1BaC8",
+            "type": "ERC20",
+            "address": "0x12E56851Ec22874520Dc4c7fa0A8a8d7DBa1BaC8",
+            "name": "GEN.ART",
+            "symbol": "GENART",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x12E56851Ec22874520Dc4c7fa0A8a8d7DBa1BaC8/logo.png",
             "pairs": []
         }
     ],
