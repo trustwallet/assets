@@ -3,10 +3,15 @@ package manager
 import (
 	"encoding/json"
 	"fmt"
+	"time"
+
+	log "github.com/sirupsen/logrus"
 
 	libFile "github.com/trustwallet/assets-go-libs/file"
 	"github.com/trustwallet/assets-go-libs/path"
 	"github.com/trustwallet/assets-go-libs/validation/info"
+	"github.com/trustwallet/assets-go-libs/validation/tokenlist"
+	"github.com/trustwallet/assets/internal/config"
 	"github.com/trustwallet/go-primitives/asset"
 	"github.com/trustwallet/go-primitives/coin"
 )
@@ -66,4 +71,41 @@ func CreateAssetInfoJSONTemplate(token string) error {
 	}
 
 	return nil
+}
+
+func AddTokenToTokenListJSON(token string) error {
+	setup()
+
+	c, tokenID, err := asset.ParseID(token)
+	if err != nil {
+		return fmt.Errorf("failed to parse token id: %v", err)
+	}
+
+	chain, ok := coin.Coins[c]
+	if !ok {
+		return fmt.Errorf("invalid token")
+	}
+
+	tokenListPath := path.GetTokenListExtendedPath(chain.Handle)
+
+	var oldTokenList tokenlist.Model
+	err = libFile.ReadJSONFile(tokenListPath, &oldTokenList)
+	if err != nil {
+		log.Debug(err)
+		oldTokenList.Tokens = make([]tokenlist.Token, 0)
+	}
+
+	oldTokenList.Tokens = append(oldTokenList.Tokens, tokenlist.Token{
+		Asset:   token,
+		Address: tokenID,
+		Pairs:   make([]tokenlist.Pair, 0),
+	})
+
+	return libFile.CreateJSONFile(tokenListPath, &tokenlist.Model{
+		Name:      fmt.Sprintf("Trust Wallet: %s", coin.Coins[chain.ID].Name),
+		LogoURI:   config.Default.URLs.TWLogo,
+		Timestamp: time.Now().Format(config.Default.TimeFormat),
+		Tokens:    oldTokenList.Tokens,
+		Version:   tokenlist.Version{Major: oldTokenList.Version.Major + 1},
+	})
 }

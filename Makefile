@@ -49,3 +49,6 @@ update-manual:
 # Helper commands.
 add-token:
 	go run cmd/main.go add-token $(token)
+
+add-tokenlist-extended:
+	go run cmd/main.go add-tokenlist-extended $(token)

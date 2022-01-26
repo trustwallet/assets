@@ -11,6 +11,7 @@ type (
 		App                App                `mapstructure:"app"`
 		ClientURLs         ClientURLs         `mapstructure:"client_urls"`
 		URLs               URLs               `mapstructure:"urls"`
+		TimeFormat         string             `mapstructure:"time_format"`
 		ValidatorsSettings ValidatorsSettings `mapstructure:"validators_settings"`
 	}
 
@@ -28,6 +29,7 @@ type (
 
 	URLs struct {
 		TWAssetsApp string `mapstructure:"tw_assets_app"`
+		TWLogo      string `mapstructure:"tw_logo"`
 	}
 
 	ValidatorsSettings struct {

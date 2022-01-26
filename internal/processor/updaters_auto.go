@@ -32,9 +32,6 @@ const (
 	marketPairsLimit = 1000
 	tokensListLimit  = 10000
 
-	twLogoURL       = "https://trustwallet.com/assets/images/favicon.png"
-	timestampFormat = "2006-01-02T15:04:05.000000"
-
 	activeStatus = "active"
 )
 
@@ -160,8 +157,8 @@ func createTokenListJSON(chain coin.Coin, tokens []tokenlist.Token) error {
 
 	return fileLib.CreateJSONFile(tokenListPath, &tokenlist.Model{
 		Name:      fmt.Sprintf("Trust Wallet: %s", coin.Coins[chain.ID].Name),
-		LogoURI:   twLogoURL,
-		Timestamp: time.Now().Format(timestampFormat),
+		LogoURI:   config.Default.URLs.TWLogo,
+		Timestamp: time.Now().Format(config.Default.TimeFormat),
 		Tokens:    tokens,
 		Version:   tokenlist.Version{Major: oldTokenList.Version.Major + 1},
 	})

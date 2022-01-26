@@ -24,6 +24,7 @@ func InitCommands() {
 	rootCmd.AddCommand(fixCmd)
 	rootCmd.AddCommand(updateAutoCmd)
 	rootCmd.AddCommand(addTokenCmd)
+	rootCmd.AddCommand(addTokenlistExtendedCmd)
 }
 
 var (
@@ -69,6 +70,21 @@ var (
 			err := CreateAssetInfoJSONTemplate(args[0])
 			if err != nil {
 				log.Fatalf("Can't create asset info json template: %v", err)
+			}
+		},
+	}
+
+	addTokenlistExtendedCmd = &cobra.Command{
+		Use:   "add-tokenlist-extended",
+		Short: "Adds token to tokenlist-extended.json",
+		Run: func(cmd *cobra.Command, args []string) {
+			if len(args) != 1 {
+				log.Fatal("1 argument was expected")
+			}
+
+			err := AddTokenToTokenListJSON(args[0])
+			if err != nil {
+				log.Fatalf("Can't add token to tokenlist-extended.json: %v", err)
 			}
 		},
 	}
