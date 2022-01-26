@@ -73,23 +73,11 @@ func CreateAssetInfoJSONTemplate(token string) error {
 	return nil
 }
 
-func AddTokenToTokenListJSON(token string) error {
+func AddTokenToTokenListJSON(token, tokenID, tokenListPath string, chain coin.Coin) error {
 	setup()
 
-	c, tokenID, err := asset.ParseID(token)
-	if err != nil {
-		return fmt.Errorf("failed to parse token id: %v", err)
-	}
-
-	chain, ok := coin.Coins[c]
-	if !ok {
-		return fmt.Errorf("invalid token")
-	}
-
-	tokenListPath := path.GetTokenListExtendedPath(chain.Handle)
-
 	var oldTokenList tokenlist.Model
-	err = libFile.ReadJSONFile(tokenListPath, &oldTokenList)
+	err := libFile.ReadJSONFile(tokenListPath, &oldTokenList)
 	if err != nil {
 		log.Debug(err)
 		oldTokenList.Tokens = make([]tokenlist.Token, 0)
@@ -103,9 +91,23 @@ func AddTokenToTokenListJSON(token string) error {
 
 	return libFile.CreateJSONFile(tokenListPath, &tokenlist.Model{
 		Name:      fmt.Sprintf("Trust Wallet: %s", coin.Coins[chain.ID].Name),
-		LogoURI:   config.Default.URLs.TWLogo,
+		LogoURI:   config.Default.URLs.Logo,
 		Timestamp: time.Now().Format(config.Default.TimeFormat),
 		Tokens:    oldTokenList.Tokens,
 		Version:   tokenlist.Version{Major: oldTokenList.Version.Major + 1},
 	})
+}
+
+func GetChainAndTokenID(token string) (string, coin.Coin, error) {
+	c, tokenID, err := asset.ParseID(token)
+	if err != nil {
+		return "", coin.Coin{}, fmt.Errorf("failed to parse token id: %v", err)
+	}
+
+	chain, ok := coin.Coins[c]
+	if !ok {
+		return "", coin.Coin{}, fmt.Errorf("invalid token")
+	}
+
+	return tokenID, chain, nil
 }

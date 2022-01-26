@@ -157,7 +157,7 @@ func createTokenListJSON(chain coin.Coin, tokens []tokenlist.Token) error {
 
 	return fileLib.CreateJSONFile(tokenListPath, &tokenlist.Model{
 		Name:      fmt.Sprintf("Trust Wallet: %s", coin.Coins[chain.ID].Name),
-		LogoURI:   config.Default.URLs.TWLogo,
+		LogoURI:   config.Default.URLs.Logo,
 		Timestamp: time.Now().Format(config.Default.TimeFormat),
 		Tokens:    tokens,
 		Version:   tokenlist.Version{Major: oldTokenList.Version.Major + 1},

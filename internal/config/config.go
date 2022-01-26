@@ -29,7 +29,7 @@ type (
 
 	URLs struct {
 		AssetsApp string `mapstructure:"assets_app"`
-		TWLogo    string `mapstructure:"tw_logo"`
+		Logo      string `mapstructure:"logo"`
 	}
 
 	ValidatorsSettings struct {

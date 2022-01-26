@@ -3,6 +3,7 @@ package manager
 import (
 	"os"
 
+	"github.com/trustwallet/assets-go-libs/path"
 	"github.com/trustwallet/assets/internal/config"
 	"github.com/trustwallet/assets/internal/file"
 	"github.com/trustwallet/assets/internal/processor"
@@ -24,6 +25,7 @@ func InitCommands() {
 	rootCmd.AddCommand(fixCmd)
 	rootCmd.AddCommand(updateAutoCmd)
 	rootCmd.AddCommand(addTokenCmd)
+	rootCmd.AddCommand(addTokenlistCmd)
 	rootCmd.AddCommand(addTokenlistExtendedCmd)
 }
 
@@ -74,6 +76,28 @@ var (
 		},
 	}
 
+	addTokenlistCmd = &cobra.Command{
+		Use:   "add-tokenlist",
+		Short: "Adds token to tokenlist.json",
+		Run: func(cmd *cobra.Command, args []string) {
+			if len(args) != 1 {
+				log.Fatal("1 argument was expected")
+			}
+
+			tokenID, chain, err := GetChainAndTokenID(args[0])
+			if err != nil {
+				log.Fatalf("Can't get chain and tokenID: %v", err)
+			}
+
+			tokenListPath := path.GetTokenListPath(chain.Handle)
+
+			err = AddTokenToTokenListJSON(args[0], tokenID, tokenListPath, chain)
+			if err != nil {
+				log.Fatalf("Can't add token to tokenlist-extended.json: %v", err)
+			}
+		},
+	}
+
 	addTokenlistExtendedCmd = &cobra.Command{
 		Use:   "add-tokenlist-extended",
 		Short: "Adds token to tokenlist-extended.json",
@@ -82,7 +106,14 @@ var (
 				log.Fatal("1 argument was expected")
 			}
 
-			err := AddTokenToTokenListJSON(args[0])
+			tokenID, chain, err := GetChainAndTokenID(args[0])
+			if err != nil {
+				log.Fatalf("Can't get chain and tokenID: %v", err)
+			}
+
+			tokenListExtendedPath := path.GetTokenListExtendedPath(chain.Handle)
+
+			err = AddTokenToTokenListJSON(args[0], tokenID, tokenListExtendedPath, chain)
 			if err != nil {
 				log.Fatalf("Can't add token to tokenlist-extended.json: %v", err)
 			}
