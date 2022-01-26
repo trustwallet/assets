@@ -312,8 +312,8 @@ func getTokenType(symbol string, nativeCoinSymbol string, tokenType types.TokenT
 
 func getLogoURI(id, githubChainFolder, nativeCoinSymbol string) string {
 	if id == nativeCoinSymbol {
-		return path.GetChainLogoURL(config.Default.URLs.TWAssetsApp, githubChainFolder)
+		return path.GetChainLogoURL(config.Default.URLs.AssetsApp, githubChainFolder)
 	}
 
-	return path.GetAssetLogoURL(config.Default.URLs.TWAssetsApp, githubChainFolder, id)
+	return path.GetAssetLogoURL(config.Default.URLs.AssetsApp, githubChainFolder, id)
 }

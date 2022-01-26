@@ -28,8 +28,8 @@ type (
 	}
 
 	URLs struct {
-		TWAssetsApp string `mapstructure:"tw_assets_app"`
-		TWLogo      string `mapstructure:"tw_logo"`
+		AssetsApp string `mapstructure:"assets_app"`
+		TWLogo    string `mapstructure:"tw_logo"`
 	}
 
 	ValidatorsSettings struct {
