@@ -94,7 +94,6 @@ func AddTokenToTokenListJSON(chain coin.Coin, token, tokenID, tokenListPath stri
 		Symbol:   *assetInfo.Symbol,
 		Decimals: uint(*assetInfo.Decimals),
 		LogoURI:  path.GetAssetLogoURL(config.Default.URLs.AssetsApp, chain.Handle, tokenID),
-		Pairs:    make([]tokenlist.Pair, 1),
 	})
 
 	return libFile.CreateJSONFile(tokenListPath, &tokenlist.Model{
