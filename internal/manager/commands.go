@@ -2,6 +2,7 @@ package manager
 
 import (
 	"encoding/json"
+	"errors"
 	"fmt"
 	"time"
 
@@ -9,10 +10,11 @@ import (
 	"github.com/trustwallet/assets-go-libs/path"
 	"github.com/trustwallet/assets-go-libs/validation/info"
 	"github.com/trustwallet/assets-go-libs/validation/tokenlist"
-	"github.com/trustwallet/assets/internal/config"
 	"github.com/trustwallet/go-primitives/asset"
 	"github.com/trustwallet/go-primitives/coin"
 	"github.com/trustwallet/go-primitives/types"
+
+	"github.com/trustwallet/assets/internal/config"
 )
 
 func CreateAssetInfoJSONTemplate(token string) error {
@@ -72,7 +74,7 @@ func CreateAssetInfoJSONTemplate(token string) error {
 	return nil
 }
 
-func AddTokenToTokenListJSON(chain coin.Coin, token, tokenID, tokenListPath string) error {
+func AddTokenToTokenListJSON(chain coin.Coin, assetId, tokenID, tokenListPath string) error {
 	setup()
 
 	var oldTokenList tokenlist.Model
@@ -86,8 +88,15 @@ func AddTokenToTokenListJSON(chain coin.Coin, token, tokenID, tokenListPath stri
 		return fmt.Errorf("failed to get token info: %w", err)
 	}
 
+	// check for duplicates
+	for _, t := range oldTokenList.Tokens {
+		if t.Asset == assetId {
+			return errors.New("duplicate asset, already exist")
+		}
+	}
+
 	oldTokenList.Tokens = append(oldTokenList.Tokens, tokenlist.Token{
-		Asset:    token,
+		Asset:    assetId,
 		Type:     types.TokenType(*assetInfo.Type),
 		Address:  *assetInfo.ID,
 		Name:     *assetInfo.Name,
