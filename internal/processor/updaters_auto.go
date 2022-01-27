@@ -136,7 +136,7 @@ func createInfoJSON(chain coin.Coin, a explorer.Bep2Asset) error {
 }
 
 func createTokenListJSON(chain coin.Coin, tokens []tokenlist.Token) error {
-	tokenListPath := path.GetTokenListPath(chain.Handle)
+	tokenListPath := path.GetTokenListPath(chain.Handle, path.TokenlistDefault)
 
 	var oldTokenList tokenlist.Model
 	err := fileLib.ReadJSONFile(tokenListPath, &oldTokenList)

@@ -5,8 +5,6 @@ import (
 	"fmt"
 	"time"
 
-	log "github.com/sirupsen/logrus"
-
 	libFile "github.com/trustwallet/assets-go-libs/file"
 	"github.com/trustwallet/assets-go-libs/path"
 	"github.com/trustwallet/assets-go-libs/validation/info"
@@ -14,6 +12,7 @@ import (
 	"github.com/trustwallet/assets/internal/config"
 	"github.com/trustwallet/go-primitives/asset"
 	"github.com/trustwallet/go-primitives/coin"
+	"github.com/trustwallet/go-primitives/types"
 )
 
 func CreateAssetInfoJSONTemplate(token string) error {
@@ -73,20 +72,29 @@ func CreateAssetInfoJSONTemplate(token string) error {
 	return nil
 }
 
-func AddTokenToTokenListJSON(token, tokenID, tokenListPath string, chain coin.Coin) error {
+func AddTokenToTokenListJSON(chain coin.Coin, token, tokenID, tokenListPath string) error {
 	setup()
 
 	var oldTokenList tokenlist.Model
 	err := libFile.ReadJSONFile(tokenListPath, &oldTokenList)
 	if err != nil {
-		log.Debug(err)
-		oldTokenList.Tokens = make([]tokenlist.Token, 0)
+		return fmt.Errorf("failed to read data from %s: %w", tokenListPath, err)
+	}
+
+	assetInfo, err := getAssetInfo(chain, tokenID)
+	if err != nil {
+		return fmt.Errorf("failed to get token info: %w", err)
 	}
 
 	oldTokenList.Tokens = append(oldTokenList.Tokens, tokenlist.Token{
-		Asset:   token,
-		Address: tokenID,
-		Pairs:   make([]tokenlist.Pair, 0),
+		Asset:    token,
+		Type:     types.TokenType(*assetInfo.Type),
+		Address:  *assetInfo.ID,
+		Name:     *assetInfo.Name,
+		Symbol:   *assetInfo.Symbol,
+		Decimals: uint(*assetInfo.Decimals),
+		LogoURI:  path.GetAssetLogoURL(config.Default.URLs.AssetsApp, chain.Handle, tokenID),
+		Pairs:    make([]tokenlist.Pair, 1),
 	})
 
 	return libFile.CreateJSONFile(tokenListPath, &tokenlist.Model{
@@ -98,16 +106,14 @@ func AddTokenToTokenListJSON(token, tokenID, tokenListPath string, chain coin.Co
 	})
 }
 
-func GetChainAndTokenID(token string) (string, coin.Coin, error) {
-	c, tokenID, err := asset.ParseID(token)
+func getAssetInfo(chain coin.Coin, tokenID string) (*info.AssetModel, error) {
+	path := path.GetAssetInfoPath(chain.Handle, tokenID)
+
+	var assetModel info.AssetModel
+	err := libFile.ReadJSONFile(path, &assetModel)
 	if err != nil {
-		return "", coin.Coin{}, fmt.Errorf("failed to parse token id: %v", err)
+		return nil, fmt.Errorf("failed to read data from info.json: %w", err)
 	}
 
-	chain, ok := coin.Coins[c]
-	if !ok {
-		return "", coin.Coin{}, fmt.Errorf("invalid token")
-	}
-
-	return tokenID, chain, nil
+	return &assetModel, nil
 }

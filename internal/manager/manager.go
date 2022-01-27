@@ -9,6 +9,8 @@ import (
 	"github.com/trustwallet/assets/internal/processor"
 	"github.com/trustwallet/assets/internal/report"
 	"github.com/trustwallet/assets/internal/service"
+	"github.com/trustwallet/go-primitives/asset"
+	"github.com/trustwallet/go-primitives/coin"
 
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
@@ -80,21 +82,7 @@ var (
 		Use:   "add-tokenlist",
 		Short: "Adds token to tokenlist.json",
 		Run: func(cmd *cobra.Command, args []string) {
-			if len(args) != 1 {
-				log.Fatal("1 argument was expected")
-			}
-
-			tokenID, chain, err := GetChainAndTokenID(args[0])
-			if err != nil {
-				log.Fatalf("Can't get chain and tokenID: %v", err)
-			}
-
-			tokenListPath := path.GetTokenListPath(chain.Handle)
-
-			err = AddTokenToTokenListJSON(args[0], tokenID, tokenListPath, chain)
-			if err != nil {
-				log.Fatalf("Can't add token to tokenlist-extended.json: %v", err)
-			}
+			handleAddTokenList(args, path.TokenlistDefault)
 		},
 	}
 
@@ -102,24 +90,33 @@ var (
 		Use:   "add-tokenlist-extended",
 		Short: "Adds token to tokenlist-extended.json",
 		Run: func(cmd *cobra.Command, args []string) {
-			if len(args) != 1 {
-				log.Fatal("1 argument was expected")
-			}
-
-			tokenID, chain, err := GetChainAndTokenID(args[0])
-			if err != nil {
-				log.Fatalf("Can't get chain and tokenID: %v", err)
-			}
-
-			tokenListExtendedPath := path.GetTokenListExtendedPath(chain.Handle)
-
-			err = AddTokenToTokenListJSON(args[0], tokenID, tokenListExtendedPath, chain)
-			if err != nil {
-				log.Fatalf("Can't add token to tokenlist-extended.json: %v", err)
-			}
+			handleAddTokenList(args, path.TokenlistExtended)
 		},
 	}
 )
+
+func handleAddTokenList(args []string, tokenlistType path.TokenListType) {
+	if len(args) != 1 {
+		log.Fatal("1 argument was expected")
+	}
+
+	c, tokenID, err := asset.ParseID(args[0])
+	if err != nil {
+		log.Fatalf("Can't parse token: %v", err)
+	}
+
+	chain, ok := coin.Coins[c]
+	if !ok {
+		log.Fatal("Invalid token")
+	}
+
+	tokenListPath := path.GetTokenListPath(chain.Handle, tokenlistType)
+
+	err = AddTokenToTokenListJSON(chain, args[0], tokenID, tokenListPath)
+	if err != nil {
+		log.Fatalf("Can't add token to tokenlist-extended.json: %v", err)
+	}
+}
 
 func InitAssetsService() *service.Service {
 	setup()
