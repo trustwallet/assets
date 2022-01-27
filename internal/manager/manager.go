@@ -4,13 +4,14 @@ import (
 	"os"
 
 	"github.com/trustwallet/assets-go-libs/path"
+	"github.com/trustwallet/go-primitives/asset"
+	"github.com/trustwallet/go-primitives/coin"
+
 	"github.com/trustwallet/assets/internal/config"
 	"github.com/trustwallet/assets/internal/file"
 	"github.com/trustwallet/assets/internal/processor"
 	"github.com/trustwallet/assets/internal/report"
 	"github.com/trustwallet/assets/internal/service"
-	"github.com/trustwallet/go-primitives/asset"
-	"github.com/trustwallet/go-primitives/coin"
 
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
@@ -110,9 +111,7 @@ func handleAddTokenList(args []string, tokenlistType path.TokenListType) {
 		log.Fatal("Invalid token")
 	}
 
-	tokenListPath := path.GetTokenListPath(chain.Handle, tokenlistType)
-
-	err = AddTokenToTokenListJSON(chain, args[0], tokenID, tokenListPath)
+	err = AddTokenToTokenListJSON(chain, args[0], tokenID, tokenlistType)
 	if err != nil {
 		log.Fatalf("Can't add token: %v", err)
 	}

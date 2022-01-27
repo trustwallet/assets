@@ -2,7 +2,6 @@ package manager
 
 import (
 	"encoding/json"
-	"errors"
 	"fmt"
 	"time"
 
@@ -74,11 +73,28 @@ func CreateAssetInfoJSONTemplate(token string) error {
 	return nil
 }
 
-func AddTokenToTokenListJSON(chain coin.Coin, assetId, tokenID, tokenListPath string) error {
+func AddTokenToTokenListJSON(chain coin.Coin, assetId, tokenID string, tokenListType path.TokenListType) error {
 	setup()
 
-	var oldTokenList tokenlist.Model
-	err := libFile.ReadJSONFile(tokenListPath, &oldTokenList)
+	// check for duplicates
+	tokenListTypes := []path.TokenListType{path.TokenlistDefault, path.TokenlistExtended}
+	for _, t := range tokenListTypes {
+		tokenListPath := path.GetTokenListPath(chain.Handle, t)
+		var list tokenlist.Model
+		err := libFile.ReadJSONFile(tokenListPath, &list)
+		if err != nil {
+			return fmt.Errorf("failed to read data from %s: %w", tokenListPath, err)
+		}
+		for _, item := range list.Tokens {
+			if item.Asset == assetId {
+				return fmt.Errorf("duplicate asset, already exist in %s", tokenListPath)
+			}
+		}
+	}
+
+	var list tokenlist.Model
+	tokenListPath := path.GetTokenListPath(chain.Handle, tokenListType)
+	err := libFile.ReadJSONFile(tokenListPath, &list)
 	if err != nil {
 		return fmt.Errorf("failed to read data from %s: %w", tokenListPath, err)
 	}
@@ -88,14 +104,7 @@ func AddTokenToTokenListJSON(chain coin.Coin, assetId, tokenID, tokenListPath st
 		return fmt.Errorf("failed to get token info: %w", err)
 	}
 
-	// check for duplicates
-	for _, t := range oldTokenList.Tokens {
-		if t.Asset == assetId {
-			return errors.New("duplicate asset, already exist")
-		}
-	}
-
-	oldTokenList.Tokens = append(oldTokenList.Tokens, tokenlist.Token{
+	newToken := tokenlist.Token{
 		Asset:    assetId,
 		Type:     types.TokenType(*assetInfo.Type),
 		Address:  *assetInfo.ID,
@@ -103,14 +112,15 @@ func AddTokenToTokenListJSON(chain coin.Coin, assetId, tokenID, tokenListPath st
 		Symbol:   *assetInfo.Symbol,
 		Decimals: uint(*assetInfo.Decimals),
 		LogoURI:  path.GetAssetLogoURL(config.Default.URLs.AssetsApp, chain.Handle, tokenID),
-	})
+	}
+	list.Tokens = append(list.Tokens, newToken)
 
 	return libFile.CreateJSONFile(tokenListPath, &tokenlist.Model{
 		Name:      fmt.Sprintf("Trust Wallet: %s", coin.Coins[chain.ID].Name),
 		LogoURI:   config.Default.URLs.Logo,
 		Timestamp: time.Now().Format(config.Default.TimeFormat),
-		Tokens:    oldTokenList.Tokens,
-		Version:   tokenlist.Version{Major: oldTokenList.Version.Major + 1},
+		Tokens:    list.Tokens,
+		Version:   tokenlist.Version{Major: list.Version.Major + 1},
 	})
 }
 
