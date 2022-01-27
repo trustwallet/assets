@@ -1,20 +1,20 @@
 {
     "name": "Trust Wallet: Ethereum",
     "logoURI": "https://trustwallet.com/assets/images/favicon.png",
-    "timestamp": "2022-01-26T20:58:24.420421",
+    "timestamp": "2022-01-27T11:59:27.778609",
     "tokens": [
         {
-            "asset": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+            "asset": "c60_t0x8E870D67F660D95d5be530380D0eC0bd388289E1",
             "type": "ERC20",
-            "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
-            "name": "WETH",
-            "symbol": "WETH",
+            "address": "0x8E870D67F660D95d5be530380D0eC0bd388289E1",
+            "name": "Pax Dollar",
+            "symbol": "USDP",
             "decimals": 18,
-            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png"
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x8E870D67F660D95d5be530380D0eC0bd388289E1/logo.png"
         }
     ],
     "version": {
-        "major": 3,
+        "major": 4,
         "minor": 0,
         "patch": 0
     }
