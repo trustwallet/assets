@@ -76,7 +76,7 @@ func CreateAssetInfoJSONTemplate(token string) error {
 func AddTokenToTokenListJSON(chain coin.Coin, assetId, tokenID string, tokenListType path.TokenListType) error {
 	setup()
 
-	// check for duplicates
+	// check for duplicates.
 	tokenListTypes := []path.TokenListType{path.TokenlistDefault, path.TokenlistExtended}
 	for _, t := range tokenListTypes {
 		tokenListPath := path.GetTokenListPath(chain.Handle, t)
