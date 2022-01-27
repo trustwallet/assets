@@ -1,9 +1,9 @@
 package processor
 
 import (
+	assetsmanager "github.com/trustwallet/assets-go-libs/client/assets-manager"
 	"github.com/trustwallet/assets/internal/config"
 	"github.com/trustwallet/assets/internal/file"
-	assetsmanager "github.com/trustwallet/go-libs/client/api/assets-manager"
 )
 
 type Service struct {

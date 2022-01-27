@@ -48,4 +48,10 @@ update-manual:
 
 # Helper commands.
 add-token:
-	go run cmd/main.go add-token $(token)
+	go run cmd/main.go add-token $(asset_id)
+
+add-tokenlist:
+	go run cmd/main.go add-tokenlist $(asset_id)
+
+add-tokenlist-extended:
+	go run cmd/main.go add-tokenlist-extended $(asset_id)

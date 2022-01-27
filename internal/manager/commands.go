@@ -1,112 +1,137 @@
 package manager
 
 import (
-	"os"
+	"encoding/json"
+	"fmt"
+	"time"
+
+	libFile "github.com/trustwallet/assets-go-libs/file"
+	"github.com/trustwallet/assets-go-libs/path"
+	"github.com/trustwallet/assets-go-libs/validation/info"
+	"github.com/trustwallet/assets-go-libs/validation/tokenlist"
+	"github.com/trustwallet/go-primitives/asset"
+	"github.com/trustwallet/go-primitives/coin"
+	"github.com/trustwallet/go-primitives/types"
 
 	"github.com/trustwallet/assets/internal/config"
-	"github.com/trustwallet/assets/internal/file"
-	"github.com/trustwallet/assets/internal/processor"
-	"github.com/trustwallet/assets/internal/report"
-	"github.com/trustwallet/assets/internal/service"
-
-	log "github.com/sirupsen/logrus"
-	"github.com/spf13/cobra"
 )
 
-var configPath, root string
+func CreateAssetInfoJSONTemplate(token string) error {
+	c, tokenID, err := asset.ParseID(token)
+	if err != nil {
+		return fmt.Errorf("failed to parse token id: %v", err)
+	}
 
-func InitCommands() {
-	rootCmd.Flags().StringVar(&configPath, "config", ".github/assets.config.yaml",
-		"config file (default is $HOME/.github/assets.config.yaml)")
-	rootCmd.Flags().StringVar(&root, "root", ".", "root path to files")
+	chain, ok := coin.Coins[c]
+	if !ok {
+		return fmt.Errorf("invalid token")
+	}
 
-	rootCmd.AddCommand(checkCmd)
-	rootCmd.AddCommand(fixCmd)
-	rootCmd.AddCommand(updateAutoCmd)
-	rootCmd.AddCommand(addTokenCmd)
+	assetInfoPath := path.GetAssetInfoPath(chain.Handle, tokenID)
+
+	var emptyStr string
+	var emptyInt int
+	assetInfoModel := info.AssetModel{
+		Name:     &emptyStr,
+		Type:     &emptyStr,
+		Symbol:   &emptyStr,
+		Decimals: &emptyInt,
+		Website:  &emptyStr,
+		Explorer: &emptyStr,
+		Status:   &emptyStr,
+		ID:       &tokenID,
+		Links: []info.Link{
+			{
+				Name: &emptyStr,
+				URL:  &emptyStr,
+			},
+		},
+		Tags: []string{""},
+	}
+
+	bytes, err := json.Marshal(&assetInfoModel)
+	if err != nil {
+		return fmt.Errorf("failed to marshal json: %v", err)
+	}
+
+	f, err := libFile.CreateFileWithPath(assetInfoPath)
+	if err != nil {
+		return fmt.Errorf("failed to create file: %v", err)
+	}
+	defer f.Close()
+
+	_, err = f.Write(bytes)
+	if err != nil {
+		return fmt.Errorf("failed to write bytes to file")
+	}
+
+	err = libFile.FormatJSONFile(assetInfoPath)
+	if err != nil {
+		return fmt.Errorf("failed to format json file")
+	}
+
+	return nil
 }
 
-var (
-	rootCmd = &cobra.Command{
-		Use:   "assets",
-		Short: "",
-		Long:  "",
-		Run:   func(cmd *cobra.Command, args []string) {},
-	}
-	checkCmd = &cobra.Command{
-		Use:   "check",
-		Short: " Execute validation checks",
-		Run: func(cmd *cobra.Command, args []string) {
-			assetsService := InitAssetsService()
-			assetsService.RunJob(assetsService.Check)
-		},
-	}
-	fixCmd = &cobra.Command{
-		Use:   "fix",
-		Short: "Perform automatic fixes where possible",
-		Run: func(cmd *cobra.Command, args []string) {
-			assetsService := InitAssetsService()
-			assetsService.RunJob(assetsService.Fix)
-		},
-	}
-	updateAutoCmd = &cobra.Command{
-		Use:   "update-auto",
-		Short: "Run automatic updates from external sources",
-		Run: func(cmd *cobra.Command, args []string) {
-			assetsService := InitAssetsService()
-			assetsService.RunUpdateAuto()
-		},
-	}
-
-	addTokenCmd = &cobra.Command{
-		Use:   "add-token",
-		Short: "Creates info.json template for the asset",
-		Run: func(cmd *cobra.Command, args []string) {
-			if len(args) != 1 {
-				log.Fatal("1 argument was expected")
-			}
-
-			err := CreateAssetInfoJSONTemplate(args[0])
-			if err != nil {
-				log.Fatalf("Can't create asset info json template: %v", err)
-			}
-		},
-	}
-)
-
-func InitAssetsService() *service.Service {
+func AddTokenToTokenListJSON(chain coin.Coin, assetId, tokenID string, tokenListType path.TokenListType) error {
 	setup()
 
-	paths, err := file.ReadLocalFileStructure(root, config.Default.ValidatorsSettings.RootFolder.SkipFiles)
-	if err != nil {
-		log.WithError(err).Fatal("Failed to load file structure.")
+	// check for duplicates.
+	tokenListTypes := []path.TokenListType{path.TokenlistDefault, path.TokenlistExtended}
+	for _, t := range tokenListTypes {
+		tokenListPath := path.GetTokenListPath(chain.Handle, t)
+		var list tokenlist.Model
+		err := libFile.ReadJSONFile(tokenListPath, &list)
+		if err != nil {
+			return fmt.Errorf("failed to read data from %s: %w", tokenListPath, err)
+		}
+		for _, item := range list.Tokens {
+			if item.Asset == assetId {
+				return fmt.Errorf("duplicate asset, already exist in %s", tokenListPath)
+			}
+		}
 	}
 
-	fileService := file.NewService(paths...)
-	validatorsService := processor.NewService(fileService)
-	reportService := report.NewService()
+	var list tokenlist.Model
+	tokenListPath := path.GetTokenListPath(chain.Handle, tokenListType)
+	err := libFile.ReadJSONFile(tokenListPath, &list)
+	if err != nil {
+		return fmt.Errorf("failed to read data from %s: %w", tokenListPath, err)
+	}
 
-	return service.NewService(fileService, validatorsService, reportService, paths)
+	assetInfo, err := getAssetInfo(chain, tokenID)
+	if err != nil {
+		return fmt.Errorf("failed to get token info: %w", err)
+	}
+
+	newToken := tokenlist.Token{
+		Asset:    assetId,
+		Type:     types.TokenType(*assetInfo.Type),
+		Address:  *assetInfo.ID,
+		Name:     *assetInfo.Name,
+		Symbol:   *assetInfo.Symbol,
+		Decimals: uint(*assetInfo.Decimals),
+		LogoURI:  path.GetAssetLogoURL(config.Default.URLs.AssetsApp, chain.Handle, tokenID),
+	}
+	list.Tokens = append(list.Tokens, newToken)
+
+	return libFile.CreateJSONFile(tokenListPath, &tokenlist.Model{
+		Name:      fmt.Sprintf("Trust Wallet: %s", coin.Coins[chain.ID].Name),
+		LogoURI:   config.Default.URLs.Logo,
+		Timestamp: time.Now().Format(config.Default.TimeFormat),
+		Tokens:    list.Tokens,
+		Version:   tokenlist.Version{Major: list.Version.Major + 1},
+	})
 }
 
-func setup() {
-	if err := config.SetConfig(configPath); err != nil {
-		log.WithError(err).Fatal("Failed to set config.")
-	}
+func getAssetInfo(chain coin.Coin, tokenID string) (*info.AssetModel, error) {
+	path := path.GetAssetInfoPath(chain.Handle, tokenID)
 
-	logLevel, err := log.ParseLevel(config.Default.App.LogLevel)
+	var assetModel info.AssetModel
+	err := libFile.ReadJSONFile(path, &assetModel)
 	if err != nil {
-		log.WithError(err).Fatal("Failed to parse log level.")
+		return nil, fmt.Errorf("failed to read data from info.json: %w", err)
 	}
 
-	log.SetLevel(logLevel)
-}
-
-// Execute adds all child commands to the root command and sets flags appropriately.
-// This is called by main.main(). It only needs to happen once to the rootCmd.
-func Execute() {
-	err := rootCmd.Execute()
-	if err != nil {
-		os.Exit(1)
-	}
+	return &assetModel, nil
 }
