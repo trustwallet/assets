@@ -114,7 +114,7 @@ func handleAddTokenList(args []string, tokenlistType path.TokenListType) {
 
 	err = AddTokenToTokenListJSON(chain, args[0], tokenID, tokenListPath)
 	if err != nil {
-		log.Fatalf("Can't add token to tokenlist-extended.json: %v", err)
+		log.Fatalf("Can't add token: %v", err)
 	}
 }
 
