@@ -8,7 +8,24 @@
     "explorer": "https://bscscan.com/token/0xe4c293eadbb9d72d68a680f1a66979726992c396",
     "status": "active",
     "id": "0xE4C293Eadbb9d72d68a680F1A66979726992c396",
-    "links": [],
+    "links": [
+{
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/lucid-lands/"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/LucidLands"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/LucidLandsOffical"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://www.coingecko.com/en/coins/lucid-lands"
+        }
+],
     "tags": [
         "nft"
     ]
