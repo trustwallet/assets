@@ -73,20 +73,22 @@ func CreateAssetInfoJSONTemplate(token string) error {
 	return nil
 }
 
-func AddTokenToTokenListJSON(chain coin.Coin, assetId, tokenID string, tokenListType path.TokenListType) error {
+func AddTokenToTokenListJSON(chain coin.Coin, assetID, tokenID string, tokenListType path.TokenListType) error {
 	setup()
 
-	// check for duplicates.
+	// Check for duplicates.
 	tokenListTypes := []path.TokenListType{path.TokenlistDefault, path.TokenlistExtended}
 	for _, t := range tokenListTypes {
 		tokenListPath := path.GetTokenListPath(chain.Handle, t)
 		var list tokenlist.Model
+
 		err := libFile.ReadJSONFile(tokenListPath, &list)
 		if err != nil {
 			return fmt.Errorf("failed to read data from %s: %w", tokenListPath, err)
 		}
+
 		for _, item := range list.Tokens {
-			if item.Asset == assetId {
+			if item.Asset == assetID {
 				return fmt.Errorf("duplicate asset, already exist in %s", tokenListPath)
 			}
 		}
@@ -94,6 +96,7 @@ func AddTokenToTokenListJSON(chain coin.Coin, assetId, tokenID string, tokenList
 
 	var list tokenlist.Model
 	tokenListPath := path.GetTokenListPath(chain.Handle, tokenListType)
+
 	err := libFile.ReadJSONFile(tokenListPath, &list)
 	if err != nil {
 		return fmt.Errorf("failed to read data from %s: %w", tokenListPath, err)
@@ -105,7 +108,7 @@ func AddTokenToTokenListJSON(chain coin.Coin, assetId, tokenID string, tokenList
 	}
 
 	newToken := tokenlist.Token{
-		Asset:    assetId,
+		Asset:    assetID,
 		Type:     types.TokenType(*assetInfo.Type),
 		Address:  *assetInfo.ID,
 		Name:     *assetInfo.Name,
@@ -126,8 +129,8 @@ func AddTokenToTokenListJSON(chain coin.Coin, assetId, tokenID string, tokenList
 
 func getAssetInfo(chain coin.Coin, tokenID string) (*info.AssetModel, error) {
 	path := path.GetAssetInfoPath(chain.Handle, tokenID)
-
 	var assetModel info.AssetModel
+
 	err := libFile.ReadJSONFile(path, &assetModel)
 	if err != nil {
 		return nil, fmt.Errorf("failed to read data from info.json: %w", err)
