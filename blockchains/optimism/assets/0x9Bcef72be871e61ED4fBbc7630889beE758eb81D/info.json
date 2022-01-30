@@ -1,11 +1,11 @@
 {
     "name": "Rocket Pool ETH",
-    "type": "OPTIMISM",
     "symbol": "rETH",
+    "type": "OPTIMISM",
     "decimals": 18,
-    "website": "https://rocketpool.net",
     "description": "Rocket Pool is the first truly decentralised Ethereum staking pool.",
-    "explorer": "https://optimistic.etherscan.io/token/0x9bcef72be871e61ed4fbbc7630889bee758eb81d",
+    "website": "https://rocketpool.net",
+    "explorer": "https://optimistic.etherscan.io/address/0x9Bcef72be871e61ED4fBbc7630889beE758eb81D",
     "status": "active",
     "id": "0x9Bcef72be871e61ED4fBbc7630889beE758eb81D",
     "links": [
@@ -18,4 +18,4 @@
             "url": "https://medium.com/rocket-pool"
         }
     ]
-} 
+}
