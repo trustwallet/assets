@@ -101,7 +101,7 @@ func calculateTargetDimension(width, height int) (targetW, targetH int) {
 }
 
 func (s *Service) FixChainInfoJSON(f *file.AssetFile) error {
-	chainInfo := info.CoinModel{}
+	var chainInfo info.CoinModel
 
 	err := fileLib.ReadJSONFile(f.Path(), &chainInfo)
 	if err != nil {
@@ -119,7 +119,7 @@ func (s *Service) FixChainInfoJSON(f *file.AssetFile) error {
 }
 
 func (s *Service) FixAssetInfo(f *file.AssetFile) error {
-	assetInfo := info.AssetModel{}
+	var assetInfo info.AssetModel
 
 	err := fileLib.ReadJSONFile(f.Path(), &assetInfo)
 	if err != nil {
