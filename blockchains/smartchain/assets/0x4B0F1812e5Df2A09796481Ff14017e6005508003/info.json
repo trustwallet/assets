@@ -1,21 +1,32 @@
 {
     "name": "Trust Wallet",
-    "website": "https://trustwallet.com",
-    "description": "Utility token to increase adoption of cryptocurrency.",
-    "explorer": "https://bscscan.com/token/0x4B0F1812e5Df2A09796481Ff14017e6005508003",
-    "research": "https://research.binance.com/en/projects/trustwallet",
     "type": "BEP20",
     "symbol": "TWT",
     "decimals": 18,
+    "website": "www.trustwallet.com",
+    "description": "Rewards",
+    "explorer": "https://bscscan.com/token/0x4b0f1812e5df2a09796481ff14017e6005508003",
     "status": "active",
     "id": "0x4B0F1812e5Df2A09796481Ff14017e6005508003",
-    "tags": [
-        "governance"
-    ],
     "links": [
         {
+            "name": "twitter",
+            "url": "https://twitter.com/"
+        },
+        {
             "name": "github",
-            "url": "https://github.com/trustwallet/"
+            "url": "https://github.com/"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/"
+        },
+        {
+            "name": "telegram_news",
+            "url": "https://t.me/"
         }
+    ],
+    "tags": [
+        "staking"
     ]
 }
