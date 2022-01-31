@@ -1,15 +1,21 @@
 package processor
 
 import (
+	assetsmanager "github.com/trustwallet/assets-go-libs/client/assets-manager"
+	"github.com/trustwallet/assets/internal/config"
 	"github.com/trustwallet/assets/internal/file"
 )
 
 type Service struct {
-	fileService *file.Service
+	fileService   *file.Service
+	assetsManager assetsmanager.Client
 }
 
 func NewService(fileProvider *file.Service) *Service {
-	return &Service{fileService: fileProvider}
+	return &Service{
+		fileService:   fileProvider,
+		assetsManager: assetsmanager.InitClient(config.Default.ClientURLs.AssetsManagerAPI, nil),
+	}
 }
 
 func (s *Service) GetValidator(f *file.AssetFile) []Validator {
