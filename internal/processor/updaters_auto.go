@@ -1,10 +1,7 @@
 package processor
 
 import (
-	"bytes"
-	"encoding/json"
 	"fmt"
-	"os"
 	"reflect"
 	"sort"
 	"strconv"
@@ -257,24 +254,9 @@ func isTokenExistOrActive(symbol string) bool {
 
 	assetPath := path.GetAssetInfoPath(coin.Coins[coin.BINANCE].Handle, symbol)
 
-	infoFile, err := os.Open(assetPath)
-	if err != nil {
-		log.Debugf("asset file open error: %s", err.Error())
-		return false
-	}
-
-	buf := bytes.NewBuffer(nil)
-	if _, err = buf.ReadFrom(infoFile); err != nil {
-		log.Debugf("buffer read error: %s", err.Error())
-		return false
-	}
-
-	infoFile.Close()
-
 	var infoAsset info.AssetModel
-	err = json.Unmarshal(buf.Bytes(), &infoAsset)
-	if err != nil {
-		log.Debugf("json unmarshalling error: %s", err.Error())
+	if err := fileLib.ReadJSONFile(assetPath, infoAsset); err != nil {
+		log.Debug(err)
 		return false
 	}
 
