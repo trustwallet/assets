@@ -8,7 +8,6 @@
     "explorer": "https://hecoinfo.com/token/0x9e004545c59d359f6b7bfb06a26390b087717b42",
     "status": "active",
     "id": "0x9e004545c59D359F6B7BFB06a26390b087717b42",
-    "tags":["heco-tag"],
     "links": [
         {
             "name": "coingecko",
@@ -16,6 +15,7 @@
         }
     ],
     "tags": [
-        "defi"
+        "defi",
+       "heco-tag"
     ]
 }
