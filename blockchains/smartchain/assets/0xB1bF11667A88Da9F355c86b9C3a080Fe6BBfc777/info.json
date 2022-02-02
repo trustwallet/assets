@@ -1,30 +1,28 @@
 {
     "name": "bitMahavi Token",
-    "website": "https://bitmahavi.com",
-    "description": "A real use case solution to eliminate crypto ATMs fees",
-    "explorer": "https://bscscan.com/token/0xb1bf11667a88da9f355c86b9c3a080fe6bbfc777",
     "type": "BEP20",
     "symbol": "MHV",
     "decimals": 8,
+    "website": "https://bitmahavi.com",
+    "description": "A real use case solution to eliminate crypto ATMs fees",
+    "explorer": "https://bscscan.com/token/0xB1bF11667A88Da9F355c86b9C3a080Fe6BBfc777",
     "status": "active",
-    "id": "0xb1bf11667a88da9f355c86b9c3a080fe6bbfc777",
-
-"links": [
-        {
-            "name": "instagram",
-            "url": "https://www.instagram.com/bitmahavi/"
-        },
+    "id": "0xB1bF11667A88Da9F355c86b9C3a080Fe6BBfc777",
+    "links": [
         {
             "name": "twitter",
             "url": "https://twitter.com/bitmahavi"
         },
         {
-            "name": "facebook",
-            "url": "https://www.facebook.com/bitMahavi"
+            "name": "forum",
+            "url": "https://bitcointalk.org/index.php?action=profile;u=2045263;sa=showPosts"
         },
         {
-            "name": "maps",
-            "url": "https://www.google.com/maps/search/bitmahavi"
+            "name": "youtube",
+            "url": "https://youtube.com/channel/UCVnKe_AclirfVKl30UPP5Ug"
         }
+    ],
+    "tags": [
+        "governance"
     ]
 }
