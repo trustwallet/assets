@@ -1,11 +1,24 @@
 {
     "name": "Prime Numbers",
-    "symbol": "PRNT",
-    "type": "BEP-20",
-    "decimals": 18,
-    "description": "Prime Numbers is a DAO that sells NFTs to generate scholarships for students.",
     "website": "https://www.primenumbers.es/",
+    "description": "Prime Numbers is a DAO that sells NFTs to generate scholarships for students.",
     "explorer": "https://bscscan.com/token/0x9f402f44684574f3535ea6f1bb5cfbffef42ee28",
+    "type": "BEP20",
+    "symbol": "PRNT",
+    "decimals": 18,
     "status": "active",
-    "id": "0x9f402f44684574f3535ea6f1bb5cfbffef42ee28"
-} 
+    "id": "0x9f402f44684574f3535ea6f1bb5cfbffef42ee28",
+    "tags": [
+        "NFTs"
+    ],
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/PrimeNumbersNFT"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://www.primenumbers.es/wp-content/uploads/2022/01/Prime-Numbers-WHITEPAPER.pdf"
+        }
+    ]
+}
