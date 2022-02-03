@@ -12,14 +12,15 @@ const (
 	TypeValidatorsAssetFolder  = "validators_asset_folder"
 	TypeValidatorsAssetsFolder = "validators_assets_folder"
 
-	TypeAssetInfoFile      = "asset_info_file"
-	TypeAssetLogoFile      = "asset_logo_file"
-	TypeChainInfoFile      = "chain_info_file"
-	TypeChainLogoFile      = "chain_logo_file"
-	TypeTokenListFile      = "chain_tokenlist_file"
-	TypeDappsLogoFile      = "dapps_logo_file"
-	TypeValidatorsListFile = "validators_list_file"
-	TypeValidatorsLogoFile = "validators_logo_file"
+	TypeAssetInfoFile         = "asset_info_file"
+	TypeAssetLogoFile         = "asset_logo_file"
+	TypeChainInfoFile         = "chain_info_file"
+	TypeChainLogoFile         = "chain_logo_file"
+	TypeTokenListFile         = "chain_tokenlist_file"
+	TypeTokenListExtendedFile = "chain_tokenlist_extended_file"
+	TypeDappsLogoFile         = "dapps_logo_file"
+	TypeValidatorsListFile    = "validators_list_file"
+	TypeValidatorsLogoFile    = "validators_logo_file"
 
 	TypeUnknown = "unknown_file"
 )
