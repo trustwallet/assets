@@ -262,34 +262,47 @@ func isStackingChain(c coin.Coin) bool {
 }
 
 func (s *Service) ValidateTokenListFile(f *file.AssetFile) error {
-	var tokenList tokenlist.Model
-	err := filelib.ReadJSONFile(f.Path(), &tokenList)
+	tokenListPath := f.Path()
+	tokenListExtendedPath := path.GetTokenListPath(f.Chain().Handle, path.TokenlistExtended)
+
+	return validateTokenList(tokenListPath, tokenListExtendedPath, f.Chain())
+}
+
+func (s *Service) ValidateTokenListExtendedFile(f *file.AssetFile) error {
+	tokenListPathExtended := f.Path()
+	tokenListPath := path.GetTokenListPath(f.Chain().Handle, path.TokenlistDefault)
+
+	return validateTokenList(tokenListPathExtended, tokenListPath, f.Chain())
+}
+
+func validateTokenList(path1, path2 string, chain1 coin.Coin) error {
+	var tokenList1 tokenlist.Model
+	err := filelib.ReadJSONFile(path1, &tokenList1)
 	if err != nil {
 		return err
 	}
 
-	tokenListExtendedPath := path.GetTokenListPath(f.Chain().Handle, path.TokenlistExtended)
-	if filelib.Exists(tokenListExtendedPath) {
-		var tokenListExtended tokenlist.Model
-		err = filelib.ReadJSONFile(tokenListExtendedPath, &tokenListExtended)
+	if filelib.Exists(path2) {
+		var tokenList2 tokenlist.Model
+		err = filelib.ReadJSONFile(path2, &tokenList2)
 		if err != nil {
 			return err
 		}
 
 		tokensMap := make(map[string]bool)
-		for _, token := range tokenListExtended.Tokens {
+		for _, token := range tokenList2.Tokens {
 			tokensMap[token.Asset] = true
 		}
 
-		for _, token := range tokenList.Tokens {
+		for _, token := range tokenList1.Tokens {
 			if _, exists := tokensMap[token.Asset]; exists {
 				return fmt.Errorf("duplicate asset: %s from %s, already exist in %s",
-					token.Asset, f.Path(), tokenListExtendedPath)
+					token.Asset, path1, path2)
 			}
 		}
 	}
 
-	err = tokenlist.ValidateTokenList(tokenList, f.Chain(), f.Path())
+	err = tokenlist.ValidateTokenList(tokenList1, chain1, path1)
 	if err != nil {
 		return err
 	}

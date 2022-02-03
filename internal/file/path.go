@@ -17,7 +17,8 @@ var (
 	regexChainInfoFile = regexp.MustCompile(`./blockchains/(\w+[\-]\w+|\w+)/info/info.json$`)
 	regexChainLogoFile = regexp.MustCompile(`./blockchains/(\w+[\-]\w+|\w+)/info/logo.png$`)
 
-	regexTokenListFile = regexp.MustCompile(`./blockchains/(\w+[\-]\w+|\w+)/tokenlist.json$`)
+	regexTokenListFile         = regexp.MustCompile(`./blockchains/(\w+[\-]\w+|\w+)/tokenlist.json$`)
+	regexTokenListExtendedFile = regexp.MustCompile(`./blockchains/(\w+[\-]\w+|\w+)/tokenlist-extended.json$`)
 
 	regexValidatorsAssetLogo = regexp.MustCompile(
 		`./blockchains/(\w+[\-]\w+|\w+)/validators/assets/(\w+[\-]\w+|\w+)/logo.png$`)
@@ -50,7 +51,8 @@ var regexes = map[string]*regexp.Regexp{
 	TypeChainInfoFile: regexChainInfoFile,
 	TypeChainLogoFile: regexChainLogoFile,
 
-	TypeTokenListFile: regexTokenListFile,
+	TypeTokenListFile:         regexTokenListFile,
+	TypeTokenListExtendedFile: regexTokenListExtendedFile,
 
 	TypeValidatorsListFile: regexValidatorsList,
 	TypeValidatorsLogoFile: regexValidatorsAssetLogo,

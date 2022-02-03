@@ -65,6 +65,11 @@ func (s *Service) GetValidator(f *file.AssetFile) []Validator {
 			jsonValidator,
 			{Name: "Tokenlist file is valid", Run: s.ValidateTokenListFile},
 		}
+	case file.TypeTokenListExtendedFile:
+		return []Validator{
+			jsonValidator,
+			{Name: "Tokenlist Extended file is valid", Run: s.ValidateTokenListExtendedFile},
+		}
 	case file.TypeValidatorsListFile:
 		return []Validator{
 			jsonValidator,
