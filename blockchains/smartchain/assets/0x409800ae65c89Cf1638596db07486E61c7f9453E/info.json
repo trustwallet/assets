@@ -1,4 +1,5 @@
-  "name": "Duky Duck",
+   {
+    "name": "Duky Duck",
     "website": "https://dukyduck.com",
     "description": "DukyDuck To the moon BSC",
     "explorer": "https://bscscan.com/address/0x409800ae65c89Cf1638596db07486E61c7f9453E",
@@ -6,5 +7,20 @@
     "symbol": "DUKY",
     "decimals": 9,
     "status": "active",
-    "id": "0x409800ae65c89Cf1638596db07486E61c7f9453E"
-    }
+    "id": "0x409800ae65c89Cf1638596db07486E61c7f9453E",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/dukyducktoken"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/dukyduck"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://dukyduck.com/whitepaper.pdf"
+        },
+
+    ]
+}
