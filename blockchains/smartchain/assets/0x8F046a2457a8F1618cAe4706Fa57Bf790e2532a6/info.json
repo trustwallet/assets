@@ -8,7 +8,7 @@
     "explorer": "https://bscscan.com/token/0x8f046a2457a8f1618cae4706fa57bf790e2532a6",
     "status": "active",
     "id": "0x8F046a2457a8F1618cAe4706Fa57Bf790e2532a6",
-    "tags": ["RestoreTruthToken", "RTT", "AmericaFirst"],
+    "tags": ["RTT", "AmericaFirst"],
     "links": [
         {
             "name": "github",
@@ -31,12 +31,16 @@
             "url": "https://discord.com/invite/R7G7YMXYjt"
         },
 	{
+            "name": "reddit",
+            "url": "https://reddit.com/r/RestoreTruthToken/"
+        },
+	{
             "name": "coinmarketcap",
             "url": "https://coinmarketcap.com/currencies/restoretruthtoken/"
         },
 	{
             "name": "coingecko",
-            "url": "https://www.coingecko.com/en/coins/restore-truth-token"
+            "url": "https://coingecko.com/en/coins/restore-truth-token"
         }
     ]
 } 
