@@ -8,8 +8,8 @@
     "decimals": 18,
     "status": "active",
     "id": "0x470EBf5f030Ed85Fc1ed4C2d36B9DD02e77CF1b7",
-    "links": [{"CoinGecko": "https://www.coingecko.com/en/coins/templedao"}, 
-        {"Twitter": "https://twitter.com/templedao/"},
-        {"GitHub": "https://github.com/TempleDAO"}],
+    "links": [{"name": "CoinGecko", "url": "https://www.coingecko.com/en/coins/templedao"}, 
+        {"name": "Twitter", "url": "https://twitter.com/templedao/"},
+        {"name": "GitHub", "url": "https://github.com/TempleDAO"}],
     "tags": [ "defi", "staking"]
 }
