@@ -1,7 +1,7 @@
 package processor
 
 import (
-	"github.com/trustwallet/assets/internal/file"
+	"github.com/trustwallet/assets-go-libs/file"
 )
 
 type (
