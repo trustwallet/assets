@@ -2,13 +2,31 @@
     "name": "Rise of Defenders Token",
     "website": "https://risedefenders.io",
     "description": "RDR is token of Rise of Defenders project",
-    "explorer": "https://bscscan.com/address/0x92da433da84d58dfe2aade1943349e491cbd6820",
+    "explorer": "https://bscscan.com/token/0x92da433da84d58dfe2aade1943349e491cbd6820",
     "type": "BEP20",
     "symbol": "RDR",
     "decimals": 18,
     "status": "active",
-    "id": "0x92da433da84d58dfe2aade1943349e491cbd6820",
+    "id": "0x92dA433dA84d58DFe2aade1943349e491Cbd6820",
     "tags": [
         "nft"
     ]
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/DefendersRise"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/RiseDefendersAnn"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/x7cAKWnWh4"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/@risedefenders"
+        }
+    ],
 }
