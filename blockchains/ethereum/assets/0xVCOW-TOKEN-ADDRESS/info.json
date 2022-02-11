@@ -1,0 +1,32 @@
+{
+    "name": "Vested CoW Protocol Token",
+    "website": "https://cow.fi/",
+    "description": "CoW Protocol lets you swap assets MEV protected at the best exchange rate by leveraging its batch settlement layer built on top of AMMs and DEX Aggregators.",
+    "explorer": "https://etherscan.io/token/0xVCOW-TOKEN-ADDRESS",
+    "type": "ERC20",
+    "symbol": "VCOW",
+    "decimals": 18,
+    "status": "active",
+    "id": "0xVCOW-TOKEN-ADDRESS",
+    "tags": [
+        "defi"
+    ],
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/gnosis/cowswap"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/MEVprotection"
+        },
+        {
+            "name": "blog",
+            "url": "https://cow.fi"
+        },
+        {
+            "name": "discord",
+            "url": "https://chat.cowswap.exchange/"
+        }
+    ]
+}
