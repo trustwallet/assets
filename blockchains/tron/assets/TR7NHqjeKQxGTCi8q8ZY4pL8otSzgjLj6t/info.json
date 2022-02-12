@@ -1,41 +1,64 @@
 {
-    "name": "Tether",
-    "website": "https://tether.to",
-    "description": "Tether (USDT) is a cryptocurrency with a value meant to mirror the value of the U.S. dollar.",
-    "explorer": "https://tronscan.io/#/token20/TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+    "name": "TETHER",
     "type": "TRC20",
-    "symbol": "USDT",
+    "symbol": "$$$",
     "decimals": 6,
+    "website": "https://tronscan.io/#/token20/TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+    "description": "Tether USDT",
+    "explorer": "https://tronscan.io/#/token20/TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
     "status": "active",
     "id": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
     "links": [
         {
-            "name": "whitepaper",
-            "url": "https://tether.to/wp-content/uploads/2016/06/TetherWhitePaper.pdf"
+            "name": "twitter",
+            "url": "https://twitter.com/"
         },
         {
-            "name": "twitter",
-            "url": "https://twitter.com/Tether_to"
+            "name": "github",
+            "url": "https://github.com/"
         },
         {
             "name": "telegram",
-            "url": "https://t.me/tronnetworkEN"
+            "url": "https://t.me/"
         },
         {
             "name": "medium",
-            "url": "https://medium.com/tron-foundation"
-        },
-        {
-            "name": "discord",
-            "url": "https://discord.com/invite/hqKvyAM"
+            "url": "https://medium.com/"
         },
         {
             "name": "reddit",
-            "url": "https://reddit.com/r/Tronix/"
+            "url": "https://reddit.com/"
         },
         {
-            "name": "facebook",
-            "url": "https://facebook.com/tronfoundation"
+            "name": "telegram_news",
+            "url": "https://t.me/"
+        },
+        {
+            "name": "blog",
+            "url": "https://www.blogger.com/"
+        },
+        {
+            "name": "docs",
+            "url": "https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/working-with-your-remote-repository-on-github-or-github-enterprise/creating-an-issue-or-pull-request"
+        },
+        {
+            "name": "forum",
+            "url": "https://github.com/search?q=forum&type="
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://docs.github.com/en/get-started/quickstart/fork-a-repo"
+        },
+        {
+            "name": "youtube",
+            "url": "https://youtube.com/"
         }
+    ],
+    "tags": [
+        "aave"
     ]
 }
