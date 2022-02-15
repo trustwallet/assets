@@ -1,22 +1,24 @@
 {
-"name": "HNK Orijent 1919 Token",
-"website": "https://ori-token.com/",
-"description": "ORI is a Fan and Utility Token issued by HNK Orijent 1919 in partnership with Juice.",
-"explorer": "https://bscscan.com/token/0x54cC4dB6f878A1cDE6BdD0c8bEfCf70f5DABF206",
-"type": "BEP20",
-"symbol": "ORI",
-"decimals": 5,
-"status": "active",
-"id": "0x54cC4dB6f878A1cDE6BdD0c8bEfCf70f5DABF206",
+  "name": "HNK Orijent 1919 Token",
+  "website": "https://ori-token.com/",
+  "description": "ORI is a Fan and Utility Token issued by HNK Orijent 1919 in partnership with Juice.",
+  "explorer": "https://bscscan.com/token/0x54cC4dB6f878A1cDE6BdD0c8bEfCf70f5DABF206",
+  "type": "BEP20",
+  "symbol": "ORI",
+  "decimals": 5,
+  "status": "active",
+  "id": "0x54cC4dB6f878A1cDE6BdD0c8bEfCf70f5DABF206",
   "links": [
-        {
-            "name": "twitter",
-            "url": "https://twitter.com/OrijentToken"
-        },
-        {
-            "name": "telegram",
-            "url": "https://t.me/oritoken1919"
-        }
-    ]  
-  
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/OrijentToken"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/oritoken1919"
+    }
+  ],
+  "tags": [
+    "defi"
+  ]
 }
