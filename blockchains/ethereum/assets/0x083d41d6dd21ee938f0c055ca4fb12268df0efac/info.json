@@ -1,36 +1,32 @@
 {
-name: "GOGOLCOIN",
-website: "https://gogolcoin.io/",
-description: "(GSH) system is designed to solve a variety of problems faced by property owners, where they will be able to remotely manage all aspects of their property securely, in real-time and at very little cost using precise procedures and mechanisms in order to solve the issue of not having enough time.",
-explorer: "https://etherscan.io/token/0x083d41d6dd21ee938f0c055ca4fb12268df0efac",
-type: "ERC20",
-symbol: "GOL",
-decimals: 4,
-status: "active",
-id: "0x083d41d6dd21ee938f0c055ca4fb12268df0efac",
-tags: [
-        "stablecoin"
-    ],
-links: [
+    "name": "GOGOLCOIN",
+    "website": "https://gogolcoin.io/",
+    "description": "(GSH) system is designed to solve a variety of problems faced by property owners, where they will be able to remotely manage all aspects of their property securely, in real-time and at very little cost using precise procedures and mechanisms in order to solve the issue of not having enough time.",
+    "explorer": "https://etherscan.io/token/0x083d41d6dd21ee938f0c055ca4fb12268df0efac",
+    "symbol": "GOL",
+    "type": "ERC20",
+    "decimals": 4,
+    "status": "active",
+    "links": [
         {
-name: "github",
-url: "https://github.com/Gogolcoin",
+            "name": "github",
+            "url": "https://github.com/Gogolcoin"
         },
         {
-name: "twitter",
-url: "https://twitter.com/gogolcoin",
+            "name": "twitter",
+            "url": "https://twitter.com/gogolcoin"
         },
         {
-name: "telegram",
-url: "https://t.me/joinchat/SvKR8Y9CwsvlrCSi",
-        },
+            "name": "telegram",
+            "url": "https://t.me/joinchat/SvKR8Y9CwsvlrCSi",
+                    },
         {
-name: "medium",
-url: "https://medium.com/",
-        },
+            "name": "coingecko",
+            "url": "https://www.coingecko.com/en/coins/gogolcoin/",
+                    },
         {
-name: "coingecko",
-url: "https://www.coingecko.com/en/coins/gogolcoin/",
-        },
-    ],
+            "name": "whitepaper",
+            "url": "https://gogolcoin.io/Gogolcoin-whitepaper.pdf"
+        }
+    ]
 }
