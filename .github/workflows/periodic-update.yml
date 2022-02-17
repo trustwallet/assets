@@ -12,25 +12,22 @@ jobs:
         with:
           token: ${{ secrets.COMMIT_TOKEN }}
           ref: ${{ github.head_ref }} 
-
-      - name: Set up Go
-        uses: actions/setup-go@v2
+      - uses: actions/setup-node@v1
         with:
-          go-version: 1.17
-        id: go
-
-      - name: Run update auto
-        run: make update-auto
-
+          node-version: 12
+      - name: Install Dependencies
+        run: npm ci
+      - name: Run scripts
+        run: npm run updateAuto
       - name: Show update result (diff)
         if: success()
         run: |
           git status
           git diff
-
       - name: Run check
-        run: make check
-
+        run: npm run check
+      - name: Run test
+        run: npm t
       - name: Commit changes
         if: success()
         uses: stefanzweifel/git-auto-commit-action@v4.1.2

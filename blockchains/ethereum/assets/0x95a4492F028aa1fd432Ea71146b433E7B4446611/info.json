@@ -1,6 +1,8 @@
 {
     "name": "APY.Finance",
     "website": "https://apy.finance",
+    "source_code": "https://github.com/apy-finance",
+    "white_paper": "https://docs.apy.finance/whitepaper/litepaper",
     "description": "Yield Farming Robo-Advisor",
     "explorer": "https://etherscan.io/token/0x95a4492F028aa1fd432Ea71146b433E7B4446611",
     "type": "ERC20",
@@ -12,10 +14,6 @@
         {
             "name": "github",
             "url": "https://github.com/apy-finance"
-        },
-        {
-            "name": "whitepaper",
-            "url": "https://docs.apy.finance/whitepaper/litepaper"
         }
     ]
 }
