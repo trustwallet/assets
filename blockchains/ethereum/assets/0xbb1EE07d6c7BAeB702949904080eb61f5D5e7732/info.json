@@ -1,5 +1,5 @@
 {
-    "name": "Dogey-Inu (DINU)",
+    "name": "Dogey-Inu",
     "type": "ERC20",
     "symbol": "DINU",
     "decimals": 18,
@@ -7,5 +7,8 @@
     "description": "An experiment in decentralized community building around a simple erc-20 token. ",
     "explorer": "https://etherscan.io/token/0xbb1ee07d6c7baeb702949904080eb61f5d5e7732",
     "status": "active",
-    "id": "0xbb1EE07d6c7BAeB702949904080eb61f5D5e7732"
+    "id": "0xbb1EE07d6c7BAeB702949904080eb61f5D5e7732",
+    "tags": [
+        "deflationary"
+    ]
 }

@@ -1,11 +1,25 @@
 {
     "name": "Serum",
-    "website": "https://projectserum.com/",
-    "description": "Serum is a decentralized exchange (DEX) and ecosystem that brings unprecedented speed and low transaction costs to decentralized finance. It is built on Solana and is completely permissionless.",
-    "explorer": "https://explorer.solana.com/address/SRMuApVNdxXokk5GT7XD5cUUgXMBCoAz2LHeuAoKWRt",
-    "type": "SPL",
     "symbol": "SRM",
+    "type": "SPL",
     "decimals": 6,
+    "description": "Serum is a decentralized exchange (DEX) and ecosystem that brings unprecedented speed and low transaction costs to decentralized finance. It is built on Solana and is completely permissionless.",
+    "website": "https://projectserum.com/",
+    "explorer": "https://solscan.io/token/SRMuApVNdxXokk5GT7XD5cUUgXMBCoAz2LHeuAoKWRt",
     "status": "active",
-    "id": "SRMuApVNdxXokk5GT7XD5cUUgXMBCoAz2LHeuAoKWRt"
+    "id": "SRMuApVNdxXokk5GT7XD5cUUgXMBCoAz2LHeuAoKWRt",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/projectserum"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/ProjectSerum"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/zxPsXcB"
+        }
+    ]
 }
