@@ -1,11 +1,20 @@
 {
     "name": "SGB Token",
-    "website": "https://www.subgame.org/",
-    "description": "SGB Token is a BEP20 token on Binance Smart Chain",
-    "explorer": "https://bscscan.com/token/0xB917b81172c599094586a2294F9Ce724E6391dbB",
     "type": "BEP20",
     "symbol": "SGB",
     "decimals": 6,
+    "website": "https://www.subgame.org/",
+    "description": "SGB Token is a BEP20 token on Binance Smart Chain",
+    "explorer": "https://bscscan.com/token/0xB917b81172c599094586a2294F9Ce724E6391dbB",
     "status": "active",
-    "id": "0xB917b81172c599094586a2294F9Ce724E6391dbB"
+    "id": "0xB917b81172c599094586a2294F9Ce724E6391dbB",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/SubGame_Network"
+        },
+    ],
+    "tags": [
+        "deflationary"
+    ]
 }
