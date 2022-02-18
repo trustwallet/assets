@@ -1,11 +1,11 @@
-{  
+{
     "name": "Life Infinity Token",
-    "website": "https://lifeinfintiy.io",
-    "description": "LIFE is governence token of Life Infinity Metaverse.",
-    "explorer": "https://bscscan.com/token/0x8B0fa51D63851e535deBcF6c427AFcef08DcE17C",
     "type": "BEP20",
     "symbol": "LIFE",
     "decimals": 18,
+    "website": "https://lifeinfinity.io",
+    "description": "LIFE is governence token of Life Infinity Metaverse.",
+    "explorer": "https://bscscan.com/token/0x8B0fa51D63851e535deBcF6c427AFcef08DcE17C",
     "status": "active",
     "id": "0x8B0fa51D63851e535deBcF6c427AFcef08DcE17C",
     "links": [
@@ -13,15 +13,19 @@
             "name": "twitter",
             "url": "https://twitter.com/LifeInfinity_io"
         },
-         {
+        {
             "name": "telegram",
             "url": "https://t.me/LIFEINFINITYMETAVERSE"
         },
-         {
+        {
             "name": "telegram_news",
             "url": "https://t.me/lifeinfinity_news"
         },
-         {
+        {
+            "name": "github",
+            "url": "https://github.com/LifeInfinityMetaverse"
+        },
+        {
             "name": "discord",
             "url": "https://discord.gg/2N3PDXJFb4"
         },
@@ -29,10 +33,12 @@
             "name": "medium",
             "url": "https://medium.com/@lifeinfinity_team"
         },
-         {
+        {
             "name": "whitepaper",
             "url": "https://www.lifeinfinity.io/static/media/Life_Infinity_WP(EN)_v3.0.012ad41e.pdf"
         }
     ],
-    "tags": ["Gamefi","NFT","Game","DAO","BSC","BNB Chain","Cross Chain"]
+    "tags": [
+        "governance"
+    ]
 }
