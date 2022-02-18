@@ -1,8 +1,8 @@
 package service
 
 import (
+	"github.com/trustwallet/assets-go-libs/file"
 	"github.com/trustwallet/assets-go-libs/validation"
-	"github.com/trustwallet/assets/internal/file"
 	"github.com/trustwallet/assets/internal/processor"
 	"github.com/trustwallet/assets/internal/report"
 
@@ -13,28 +13,37 @@ type Service struct {
 	fileService      *file.Service
 	processorService *processor.Service
 	reportService    *report.Service
+	paths            []string
 }
 
-func NewService(fs *file.Service, cs *processor.Service, rs *report.Service) *Service {
+func NewService(fs *file.Service, cs *processor.Service, rs *report.Service, paths []string) *Service {
 	return &Service{
 		fileService:      fs,
 		processorService: cs,
 		reportService:    rs,
+		paths:            paths,
 	}
 }
 
-func (s *Service) RunJob(paths []string, job func(*file.AssetFile)) {
-	for _, path := range paths {
+func (s *Service) RunJob(job func(*file.AssetFile)) {
+	for _, path := range s.paths {
 		f := s.fileService.GetAssetFile(path)
-		job(f)
 		s.reportService.IncTotalFiles()
+		job(f)
+	}
+
+	reportMsg := s.reportService.GetReport()
+	if s.reportService.IsFailed() {
+		log.Fatal(reportMsg)
+	} else {
+		log.Info(reportMsg)
 	}
 }
 
 func (s *Service) Check(f *file.AssetFile) {
-	validator := s.processorService.GetValidator(f)
+	validators := s.processorService.GetValidator(f)
 
-	if validator != nil {
+	for _, validator := range validators {
 		if err := validator.Run(f); err != nil {
 			s.handleError(err, f, validator.Name)
 		}
@@ -53,11 +62,6 @@ func (s *Service) Fix(f *file.AssetFile) {
 
 func (s *Service) RunUpdateAuto() {
 	updaters := s.processorService.GetUpdatersAuto()
-	s.runUpdaters(updaters)
-}
-
-func (s *Service) RunUpdateManual() {
-	updaters := s.processorService.GetUpdatersManual()
 	s.runUpdaters(updaters)
 }
 
