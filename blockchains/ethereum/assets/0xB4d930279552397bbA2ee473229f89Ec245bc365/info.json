@@ -1,11 +1,11 @@
 {
-    "name": "MahaDAO",
-    "website": "https://mahadao.com/",
-    "description": "Mahadao introduces non-depreciating currency ARTH coin, a new kind of money that maintains it's buying power irrespective of which direction the market moves.",
-    "explorer": "https://etherscan.io/token/0xb4d930279552397bba2ee473229f89ec245bc365",
+    "name": "MahaDAO (MAHA)",
     "type": "ERC20",
     "symbol": "MAHA",
     "decimals": 18,
+    "website": "https://mahadao.com",
+    "description": "MAHA is a governance and utility token that will regulate ARTH value coins — the world’s first non-depreciating crypto token.",
+    "explorer": "https://etherscan.io/token/0xB4d930279552397bbA2ee473229f89Ec245bc365",
     "status": "active",
     "id": "0xB4d930279552397bbA2ee473229f89Ec245bc365",
     "links": [
@@ -14,12 +14,47 @@
             "url": "https://twitter.com/TheMahaDAO"
         },
         {
+            "name": "github",
+            "url": "https://github.com/MahaDao"
+        },
+        {
             "name": "telegram",
-            "url": "https://t.me/mahadao"
+            "url": "https://t.me/MahaDAO"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/mahadao/"
+        },
+        {
+            "name": "facebook",
+            "url": "https://facebook.com/themahadao"
         },
         {
             "name": "medium",
             "url": "https://medium.com/mahadao"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://docs.arthcoin.com/protocol/what-is-maha"
+        },
+        {
+            "name": "youtube",
+            "url": "https://youtube.com/channel/UCvC4NADSkysiGiCgnP4dlmg/featured"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/mahadao"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/mahadao"
+        },
+        {
+            "name": "forum",
+            "url": "https://discuss.mahadao.com/"
         }
+    ],
+    "tags": [
+        "governance"
     ]
 }
