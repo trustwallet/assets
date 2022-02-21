@@ -6,8 +6,12 @@
     "type": "BEP20",
     "symbol": "DYOR",
     "decimals": 9,
-    "status": "active",
+    "status": "abandoned",
     "id": "0xbbe0A94f363a52dA9229A7546434b6e657A6A78F",
+    "migrate": {
+        "asset_id": "c20000714_t0x10051147418c42218986cedd0adc266441f8a14f",
+        "url": "https://twitter.com/DYOR_jetrich/status/1493274001166290949"
+    },
     "links": [
         {
             "name": "telegram",
