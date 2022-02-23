@@ -1,11 +1,28 @@
 {
-	"name": "Tether",
-    "website": "https://tether.email",
-    "description": "Tether USD stable Token space.",
-    "explorer": "https://bscscan.com/token/0x999279fb501a2025df0f68ad27d25f0e45acb065",
+    "name": "TETHER",
     "type": "BEP20",
     "symbol": "USDT",
     "decimals": 18,
+    "website": "https://www.tether.to/",
+    "description": "tether is a stablecoin that is pegged to the us dollar.",
+    "explorer": "https://bscscan.com/token/0x999279fB501A2025dF0f68Ad27d25F0E45AcB065",
     "status": "active",
-    "id": "0x999279fB501A2025dF0f68Ad27d25F0E45AcB065"
+    "id": "0x999279fB501A2025dF0f68Ad27d25F0E45AcB065",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/tether_to"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/"
+        },
+        {
+            "name": "facebook",
+            "url": "https://www.facebook.com/tether.to/"
+        }
+    ],
+    "tags": [
+        "staking"
+    ]
 }
