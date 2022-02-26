@@ -1,17 +1,21 @@
 {
-     "name": "Monkey TOKEN",
-     "website": "https://mbytoken.com",
-     "description": "MBY is made to make De-Fi great again",
-     "decimals": 9,
-     "explorer": "https://bscscan.com/token/0x87F846543363137596fe0b4E7875220A026A1f40",
-     "status": "active",
-     "id": "0x87F846543363137596fe0b4E7875220A026A1f40",
-     "type": "BEP20",
-     "symbol": "MBY",
-     "links": [
-         {
-             "name": "twitter",
-             "url": "https://twitter.com/MBYToken"
-         }
-     ],
- }
+   "name":"Monkey TOKEN",
+   "website":"https://mbytoken.com",
+   "description":"MBY is made to make De-Fi great again",
+   "decimals":9,
+   "explorer":"https://bscscan.com/token/0x87F846543363137596fe0b4E7875220A026A1f40",
+   "status":"active",
+   "id":"0x87F846543363137596fe0b4E7875220A026A1f40",
+   "type":"BEP20",
+   "symbol":"MBY",
+   "links":[
+      {
+         "name":"twitter",
+         "url":"https://twitter.com/MBYToken"
+      },
+      {
+         "name":"coinmarketcap",
+         "url":"https://coinmarketcap.com/currencies/monkey-token-v2/"
+      }
+   ]
+}
