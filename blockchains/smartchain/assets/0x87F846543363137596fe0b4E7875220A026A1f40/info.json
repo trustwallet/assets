@@ -1,26 +1,35 @@
 {
-   "name":"Monkey TOKEN",
-   "website":"https://mbytoken.com",
-   "description":"MBY is made to make De-Fi great again",
-   "decimals":9,
-   "explorer":"https://bscscan.com/token/0x87F846543363137596fe0b4E7875220A026A1f40",
-   "status":"active",
-   "id":"0x87F846543363137596fe0b4E7875220A026A1f40",
-   "type":"BEP20",
-   "symbol":"MBY",
-   "links":[
-      {
-         "name":"twitter",
-         "url":"https://twitter.com/MBYToken"
-      },
-      {
-         "name":"coinmarketcap",
-         "url":"https://coinmarketcap.com/currencies/monkey-token-v2/"
-      }
-   ],
-   "tags":[
-      "staking",
-      "memes",
-      "defi"
-   ]
+    "name": "Monkey TOKEN v2",
+    "type": "BEP20",
+    "symbol": "MBY",
+    "decimals": 9,
+    "website": "https://mbytoken.com",
+    "description": "MBY is here to make DeFi great agai ",
+    "explorer": "https://bscscan.com/token/0x87F846543363137596fe0b4E7875220A026A1f40",
+    "status": "active",
+    "id": "0x87F846543363137596fe0b4E7875220A026A1f40",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/MBYToken"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/MBYToken"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/mbylead"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/monkey-token-v2/"
+        }
+    ],
+    "tags": [
+        "memes",
+        "staking",
+        "defi",
+        "deflationary"
+    ]
 }
