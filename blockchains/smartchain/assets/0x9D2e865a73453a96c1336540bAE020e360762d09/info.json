@@ -1,0 +1,28 @@
+{
+    "name": "Cheetos Tiger",
+    "type": "BEP20",
+    "symbol": "$CHTS",
+    "decimals": 9,
+    "website": "https://www.cheetostiger.com/",
+    "description": "Cheetos Tiger is a token created on the Bep20 network. It is a unique project that earns its holders 5% worth of USDT from every transaction.",
+    "explorer": "https://bscscan.com/token/0x9D2e865a73453a96c1336540bAE020e360762d09",
+    "status": "active",
+    "id": "0x9D2e865a73453a96c1336540bAE020e360762d09",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/TigerCheetos"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/cheetostiger"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/math/SafeMath.sol"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}
