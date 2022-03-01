@@ -1,11 +1,56 @@
 {
     "name": "Memes Token",
-    "website": "https://memestoken.com",
-    "description": "MEMES token is the utility currency of the first decentralized MEME nft marketplace and social network .",
-    "explorer": "https://bscscan.com/token/0x40B165Fd5dDc75ad0bDDc9ADd0adAbff5431a975",
     "type": "BEP20",
     "symbol": "MEMES",
     "decimals": 9,
+    "website": "https://memestoken.com/",
+    "description": "$MEMES is the utility token of Banterr, the world’s first decentralized social network that gives creators the power to earn from their content. Banterr is already available in beta at: https://test.banterr.app/.",
+    "explorer": "https://bscscan.com/token/0x40b165fd5ddc75ad0bddc9add0adabff5431a975",
     "status": "active",
-    "id": "0x40B165Fd5dDc75ad0bDDc9ADd0adAbff5431a975"
+    "id": "0x40B165Fd5dDc75ad0bDDc9ADd0adAbff5431a975",
+    "links": [
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/memes-token/"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/MemestokenO"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/memes-token"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/MemesTokenOfficial"
+        },
+        {
+            "name": "telegram_news",
+            "url": "https://t.me/MemesTokenAnnouncements"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/memes-token"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://github.com/memes-token/public-assets/raw/main/Whitepaper/whitepaper.pdf"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.gg/uzDCG6XSCm"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/MemestokenOfficial/"
+        },
+        {
+            "name": "source_code",
+            "url": "https://github.com/memes-token"
+        }
+    ],
+    "tags": [
+        "memes"
+    ]
 }
