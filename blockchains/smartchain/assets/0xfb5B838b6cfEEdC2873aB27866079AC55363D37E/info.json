@@ -1,24 +1,25 @@
 {
     "name": "FLOKI",
-    "type": "ERC20",
+    "type": "BEP20",
     "symbol": "FLOKI",
     "decimals": 9,
     "website": "https://floki.com",
     "description": "The people's cryptocurrency. By combining the power of memes with real utility and charitability, FLOKI gives power and opportunity to the people — to the underdogs — instead of venture capitalists and hedge funds. FLOKI aims to be the most known and most used cryptocurrency in the world.",
-    "explorer": "https://etherscan.io/token/0xcf0c122c6b73ff809c693db761e7baebe62b6a2e",
+    "explorer": "https://bscscan.com/token/0xfb5b838b6cfeedc2873ab27866079ac55363d37e",
     "status": "active",
-    "id": "0xcf0C122c6b73ff809C693DB761e7BaeBe62b6a2E",
-    "tags": [
-        "memes"
-    ],
+    "id": "0xfb5B838b6cfEEdC2873aB27866079AC55363D37E",
     "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/realflokiinu"
+        },
         {
             "name": "telegram",
             "url": "https://t.me/FlokiInuToken"
         },
         {
-            "name": "twitter",
-            "url": "https://twitter.com/realflokiinu"
+            "name": "whitepaper",
+            "url": "https://docs.theflokiinu.com/"
         },
         {
             "name": "coinmarketcap",
@@ -35,10 +36,9 @@
         {
             "name": "medium",
             "url": "https://realflokiinu.medium.com/"
-        },
-        {
-            "name": "whitepaper",
-            "url": "https://docs.theflokiinu.com/"
         }
+    ],
+    "tags": [
+        "memes"
     ]
-}
+} 
