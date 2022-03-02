@@ -1,11 +1,11 @@
 {
     "name": "MetaBlackout",
-    "website": "https://metablackout.io/",
-    "description": "Experience a metaverse unlike any other! Explore the wastelands of MetaBlackout to find and attain valuable assets such as land, weapons, apparel and customize your character to your liking.",
-    "explorer": "https://bscscan.com/token/0x3A20c33691295da2f71B291449C137067a2c1355",
     "type": "BEP20",
     "symbol": "MBT",
     "decimals": 18,
+    "website": "https://metablackout.io/",
+    "description": "Experience a metaverse unlike any other! Explore the wastelands of MetaBlackout to find and attain valuable assets such as land, weapons, apparel and customize your character to your liking.",
+    "explorer": "https://bscscan.com/token/0x3A20c33691295da2f71B291449C137067a2c1355",
     "status": "active",
     "id": "0x3A20c33691295da2f71B291449C137067a2c1355",
     "links": [
@@ -14,8 +14,12 @@
             "url": "https://twitter.com/metablackout"
         },
         {
+            "name": "github",
+            "url": "https://github.com/MetaBlackout"
+        },
+        {
             "name": "telegram",
-            "url": "https://t.me/MetaBlackout_Global"
+            "url": "https://t.me/MetaBlackoutOfficiall"
         },
         {
             "name": "whitepaper",
@@ -27,11 +31,10 @@
         },
         {
             "name": "coingecko",
-            "url": "https://www.coingecko.com/en/coins/metablackout"
-        },
+            "url": "https://coingecko.com/en/coins/metablackout"
+        }
     ],
     "tags": [
-        "Metaverse",
-        "Play-to-earn"
+        "nft"
     ]
 }
