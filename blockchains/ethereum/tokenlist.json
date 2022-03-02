@@ -1315,7 +1315,7 @@
             "asset": "c60_t0xcf0C122c6b73ff809C693DB761e7BaeBe62b6a2E",
             "type": "ERC20",
             "address": "0xcf0C122c6b73ff809C693DB761e7BaeBe62b6a2E",
-            "name": "Floki Inu",
+            "name": "FLOKI",
             "symbol": "FLOKI",
             "decimals": 9,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0xcf0C122c6b73ff809C693DB761e7BaeBe62b6a2E/logo.png",
@@ -3463,6 +3463,16 @@
             "symbol": "LOOKS",
             "decimals": 18,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0xf4d2888d29D722226FafA5d9B24F9164c092421E/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c60_t0x1E4EDE388cbc9F4b5c79681B7f94d36a11ABEBC9",
+            "type": "ERC20",
+            "address": "0x1E4EDE388cbc9F4b5c79681B7f94d36a11ABEBC9",
+            "name": "X2Y2Token",
+            "symbol": "X2Y2",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x1E4EDE388cbc9F4b5c79681B7f94d36a11ABEBC9/logo.png",
             "pairs": []
         }
     ],
