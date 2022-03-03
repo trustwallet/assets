@@ -1,3 +1,4 @@
+{
     "name": "TravelCare",
     "website": "https://travelcare.io/",
     "description": "TRAVEL is the reward token of the Travel Care platform.",
@@ -6,7 +7,7 @@
     "symbol": "TRAVEL",
     "decimals": 18,
     "status": "active",
-    "links": ["https://content.travelcare.io/whitepaper/whitepaperENG.pdf","https://twitter.com/TravelCareToken","https://www.instagram.com/travelcaretoken/"],
-    "tags": ["Tourism","Services","Travel","Transport","Rewards"],
+    "links": [{"Whitepaper":"https://content.travelcare.io/whitepaper/whitepaperENG.pdf"},{"Twitter":"https://twitter.com/TravelCareToken"},{"Instagram":"https://www.instagram.com/travelcaretoken/"}],
+    "tags": [{"Tourism"},{"Services"},{"Travel"},{"Transport"},{"Rewards"}],
     "id": "0x826e5Ec70DbC5607fF9218011FBb97F9a8D97953"
 }
