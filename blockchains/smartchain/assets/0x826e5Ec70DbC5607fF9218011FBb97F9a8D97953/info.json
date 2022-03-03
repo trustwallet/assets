@@ -7,7 +7,34 @@
     "symbol": "TRAVEL",
     "decimals": 18,
     "status": "active",
-    "links": [{"Whitepaper":"https://content.travelcare.io/whitepaper/whitepaperENG.pdf"},{"Twitter":"https://twitter.com/TravelCareToken"},{"Instagram":"https://www.instagram.com/travelcaretoken/"}],
-    "tags": [{"Tourism"},{"Services"},{"Travel"},{"Transport"},{"Rewards"}],
-    "id": "0x826e5Ec70DbC5607fF9218011FBb97F9a8D97953"
+    "id": "0x826e5Ec70DbC5607fF9218011FBb97F9a8D97953",
+    "tags": [
+        "tourism"
+    ],
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/TokenTravelCare"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/TravelCareToken"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/TravelCareToken"
+        },
+        {
+            "name": "instagram",
+            "url": "https://www.instagram.com/travelcaretoken/"
+        },
+        {
+            "name": "discord",
+            "url": "https://linktr.ee/travelcare"
+        },
+        {
+            "name": "linktree",
+            "url": "https://linktr.ee/travelcare"
+        }
+    ]
 }
