@@ -1,11 +1,24 @@
-}
-    "name": "KishuKen Inu Token",
-    "website": "https://kishukeninu.com/",
-    "description": "KishuKen Inu is fully decentralized and owned by its fun loving and vibrant community.",
-    "explorer": "https://bscscan.com/token/0xc830984d82fEeD7f38B8F643672dB31FBa5c8abA",
+{
+    "name": "KishuKen Inu",
     "type": "BEP20",
     "symbol": "KishuKen",
     "decimals": 9,
+    "website": "https://kishukeninu.com/",
+    "description": "KishuKen is fully decentralized and owned by its fun loving and vibrant community. Its offering a Very Limited Supply of token for Un-believable and Tremendous growth unlike other meme tokens.",
+    "explorer": "https://bscscan.com/token/0xc830984d82fEeD7f38B8F643672dB31FBa5c8abA",
     "status": "active",
-    "id": "0xc830984d82fEeD7f38B8F643672dB31FBa5c8abA"
+    "id": "0xc830984d82fEeD7f38B8F643672dB31FBa5c8abA",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/KishuKeninu"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/Kishukeninu"
+        }
+    ],
+    "tags": [
+        "memes"
+    ]
 }
