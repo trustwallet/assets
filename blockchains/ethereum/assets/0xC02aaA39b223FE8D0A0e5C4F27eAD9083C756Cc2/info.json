@@ -1,11 +1,16 @@
 {
-    "name": "WETH",
-    "symbol": "WETH",
+    "name": "weth9",
     "type": "ERC20",
+    "symbol": "weth",
     "decimals": 18,
-    "description": "-",
-    "website": "https://weth.io/",
-    "explorer": "https://etherscan.io/token/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+    "website": "https://weth.io",
+    "description": "https://etherscan.io/token/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+    "explorer": "https://etherscan.io/token/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
     "status": "active",
-    "id": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+    "id": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+    "links": [],
+    "tags": [
+        "wrapped",
+        "ethereum"
+    ]
 }
