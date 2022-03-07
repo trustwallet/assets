@@ -1,9 +1,7 @@
 {
     "id": "0x6fC13EACE26590B80cCCAB1ba5d51890577D83B2",
-    "name": "Umbrella Network Token",
+    "name": "Umbrella Network",
     "website": "https://www.umb.network",
-    "source_code": "http://github.com/umbrella-network/overture",
-    "white_paper": "https://www.umb.network/wp-content/uploads/2021/02/umb_litepaper_design_v3.1.pdf",
     "short_description": "Umbrella is a scalable, community owned oracle",
     "description": "Umbrella Network a Community owned, Decentralized Oracle built on Layer 2 for DeFi and Blockchain Applications powered by UMB cryptocurrency",
     "explorer": "https://etherscan.io/token/0x6fC13EACE26590B80cCCAB1ba5d51890577D83B2",
@@ -11,5 +9,15 @@
     "type": "ERC20",
     "symbol": "UMB",
     "status": "active",
-    "research": ""
+    "research": "",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/umbrella-network/overture"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://www.umb.network/wp-content/uploads/2021/02/umb_litepaper_design_v3.1.pdf"
+        }
+    ]
 }

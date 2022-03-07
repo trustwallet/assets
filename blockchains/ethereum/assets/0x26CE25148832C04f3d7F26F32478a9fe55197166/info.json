@@ -2,17 +2,16 @@
     "name": "DEXTools",
     "website": "https://dextools.io/",
     "description": "Ultimate Hub and Defi App For Uniswap and DEX trading.",
-    "socials": [
-        {
-            "name": "DEXTools",
-            "url": "https://twitter.com/DexToolsapp",
-            "handle": "DEXTools"
-        }
-    ],
     "explorer": "https://etherscan.io/token/0x26CE25148832C04f3d7F26F32478a9fe55197166",
     "type": "ERC20",
     "symbol": "DEXT",
     "decimals": 18,
-    "status": "active",
-    "id": "0x26CE25148832C04f3d7F26F32478a9fe55197166"
+    "status": "abandoned",
+    "id": "0x26CE25148832C04f3d7F26F32478a9fe55197166",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/DexToolsapp"
+        }
+    ]
 }

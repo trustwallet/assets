@@ -2,20 +2,20 @@
     "name": "SafeNebula",
     "website": "https://safenebula.com",
     "description": "The SafeNebula Protocol is a community driven, fair launched DeFi Token. Three simple functions occur during each trade: Reflection, LP Acquisition, & Burn.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/safe_nebula"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/safenebula"
-        }
-    ],
     "explorer": "https://bscscan.com/token/0xa1fd60c51c0bdac1ff5bb6067a24d61441e39569",
     "type": "BEP20",
     "symbol": "SNBL",
     "decimals": 18,
     "status": "active",
-    "id": "0xa1FD60c51C0BDAC1Ff5BB6067A24d61441E39569"
+    "id": "0xa1FD60c51C0BDAC1Ff5BB6067A24d61441E39569",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/safe_nebula"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/safenebula"
+        }
+    ]
 }

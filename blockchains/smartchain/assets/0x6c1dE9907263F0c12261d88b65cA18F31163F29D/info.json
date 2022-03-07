@@ -1,29 +1,29 @@
 {
     "name": "OCTIONToken",
     "website": "https://oction.io/",
-    "source_code": "https://github.com/OCTIONOFFICIAL",
     "description": "Welcome to OCTION! Trade options through CeDeFi, with no middlemen, no centralized organization, lower fees, more option types and zero data or market manipulation. OCTION allows for options trading through a democratic framework on the Blockchain, specifically the Binance Smart Chain.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/octionofficial",
-            "handle": "octionofficial"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/octionofficial",
-            "handle": "octionofficial"
-        },
-        {
-            "name": "Medium",
-            "url": "https://octionofficial.medium.com/",
-            "handle": "octionofficial"
-        }
-    ],
     "explorer": "https://bscscan.com/token/0x6c1dE9907263F0c12261d88b65cA18F31163F29D",
     "type": "BEP20",
     "symbol": "OCTI",
     "decimals": 18,
     "status": "active",
-    "id": "0x6c1dE9907263F0c12261d88b65cA18F31163F29D"
+    "id": "0x6c1dE9907263F0c12261d88b65cA18F31163F29D",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/OCTIONOFFICIAL"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/octionofficial"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/octionofficial"
+        },
+        {
+            "name": "medium",
+            "url": "https://octionofficial.medium.com/"
+        }
+    ]
 }

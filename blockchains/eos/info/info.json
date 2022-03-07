@@ -1,25 +1,29 @@
 {
     "name": "EOS",
     "website": "https://eos.io",
-    "source_code": "https://github.com/eosio",
-    "white_paper": "https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md",
     "description": "EOS is a cryptocurrency token and blockchain that operates as a smart contract platform for the deployment of decentralized applications and decentralized autonomous corporations.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/block_one_",
-            "handle": "block_one_"
-        },
-        {
-            "name": "Reddit",
-            "url": "https://reddit.com/r/EOS",
-            "handle": "EOS"
-        }
-    ],
     "explorer": "https://bloks.io/",
     "research": "https://research.binance.com/en/projects/eos",
     "symbol": "EOS",
-    "type": "COIN",
+    "type": "coin",
     "decimals": 4,
-    "status": "active"
+    "status": "active",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/eosio"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/block_one_"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/EOS"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md"
+        }
+    ]
 }

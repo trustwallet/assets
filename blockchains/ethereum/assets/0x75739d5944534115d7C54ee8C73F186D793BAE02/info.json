@@ -1,35 +1,33 @@
 {
     "name": "Collective",
     "website": "https://www.thecollectivegroup.org",
-    "white_paper": "https://thecollectivego-02.medium.com",
-    "source_code": "https://etherscan.io/address/0x75739d5944534115d7c54ee8c73f186d793bae02#code",
     "description": "The Collective is an all-in-one platform built to incubate, manage and develop communities, and help assure liquidity for the best Crypto Projects.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/TheCollectiveGo",
-            "handle": "TheCollectiveGo"
-        },
-        {
-            "name": "Facebook",
-            "url": "https://www.facebook.com/thecollectivego/",
-            "handle": "TheCollectiveGo"
-        },
-        {
-            "name": "Medium",
-            "url": "https://thecollectivego-02.medium.com/",
-            "handle": "TheCollectiveGo"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/TheCollectiveCommunity",
-            "handle": "TheCollectiveCommunity"
-        }
-    ],
     "explorer": "https://etherscan.io/token/0x75739d5944534115d7c54ee8c73f186d793bae02",
     "symbol": "CO2",
     "type": "ERC20",
     "decimals": 18,
     "status": "active",
-    "id": "0x75739d5944534115d7C54ee8C73F186D793BAE02"
+    "id": "0x75739d5944534115d7C54ee8C73F186D793BAE02",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/TheCollectiveGo"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/TheCollectiveCommunity"
+        },
+        {
+            "name": "facebook",
+            "url": "https://facebook.com/thecollectivego/"
+        },
+        {
+            "name": "medium",
+            "url": "https://thecollectivego-02.medium.com/"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://thecollectivego-02.medium.com"
+        }
+    ]
 }

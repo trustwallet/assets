@@ -4,20 +4,18 @@
     "description": "Orfano is a charity focused token on the Binance Smart Chain.",
     "explorer": "https://bscscan.com/token/0xEF2ec90e0b8D4CdFdB090989EA1Bc663F0D680BF",
     "type": "BEP20",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/orfanoBSC",
-            "handle": "orfanoBSC"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/OrfanoToken",
-            "handle": "OrfanoToken"
-        }
-    ],
     "symbol": "ORF",
     "decimals": 9,
     "status": "active",
-    "id": "0xEF2ec90e0b8D4CdFdB090989EA1Bc663F0D680BF"
+    "id": "0xEF2ec90e0b8D4CdFdB090989EA1Bc663F0D680BF",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/orfanoBSC"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/OrfanoToken"
+        }
+    ]
 }

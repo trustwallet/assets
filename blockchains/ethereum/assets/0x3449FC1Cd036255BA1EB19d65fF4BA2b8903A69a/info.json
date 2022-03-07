@@ -2,33 +2,32 @@
     "name": "Basis Cash",
     "website": "https://basis.cash/",
     "description": "Basis Cash is an open source, permissionless stablecoin pegged to USD. The protocol is designed to expand and contract supply similarly to the way central banks buy and sell fiscal debt to stabilze purchasing power, without any REBASES or risking colletrals.",
-    "source_code": "https://github.com/Basis-Cash",
     "explorer": "https://etherscan.io/token/0x3449fc1cd036255ba1eb19d65ff4ba2b8903a69a",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/BasisCash",
-            "handle": "Basis Cash"
-        },
-        {
-            "name": "Discord",
-            "url": "https://discord.gg/UEZq3HF5Eu",
-            "handle": "Basis Cash"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/basiscash",
-            "handle": "Basis Cash"
-        },
-        {
-            "name": "Medium",
-            "url": "https://medium.com/basis-cash",
-            "handle": "Basis Cash"
-        }
-    ],
     "type": "ERC20",
     "symbol": "BAC",
     "decimals": 18,
     "status": "active",
-    "id": "0x3449FC1Cd036255BA1EB19d65fF4BA2b8903A69a"
+    "id": "0x3449FC1Cd036255BA1EB19d65fF4BA2b8903A69a",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/Basis-Cash"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/Basis Cash"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/basiscash"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/UEZq3HF5Eu"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/basis-cash"
+        }
+    ]
 }

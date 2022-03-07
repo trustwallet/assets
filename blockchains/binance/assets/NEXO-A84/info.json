@@ -7,5 +7,35 @@
     "symbol": "NEXO",
     "decimals": 8,
     "status": "active",
-    "id": "NEXO-A84"
+    "id": "NEXO-A84",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/nexofinance/NEXO-Token/"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/NexoFinance"
+        },
+        {
+            "name": "blog",
+            "url": "https://medium.com/nexo"
+        },
+        {
+            "name": "facebook",
+            "url": "https://facebook.com/NexoFinance"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/nexofinance"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://nexo.io/assets/downloads/Nexo-Whitepaper.pdf?=a"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/nexo/"
+        }
+    ]
 }

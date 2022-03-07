@@ -6,17 +6,22 @@
     "website": "https://botocean.com",
     "description": "Bot Ocean democratizes the algorithmic trading market by giving you the tools to navigate your way through the market and earn assets while our bots do their job.",
     "short_description": "Accessible algorithmic trading",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/botoceaninc",
-            "handle": "botoceaninc"
-        }
-    ],
     "explorer": "https://etherscan.io/token/0xf9fbe825bfb2bf3e387af0dc18cac8d87f29dea8",
     "status": "active",
     "id": "0xf9FBE825BFB2bF3E387af0Dc18caC8d87F29DEa8",
-    "source_code": "https://github.com/BotOcean",
-    "white_paper": "https://botocean.com/static/media/whitepaper.aff921dc.pdf",
-    "research": "https://botocean.com/"
+    "research": "https://botocean.com/",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/BotOcean"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/botoceaninc"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://botocean.com/static/media/whitepaper.aff921dc.pdf"
+        }
+    ]
 }

@@ -1,29 +1,29 @@
 {
     "name": "yffs.finance",
     "website": "https://yffs.finance/",
-    "source_code": "https://github.com/yffsfinance",
     "description": "YFFS adopts a modular design. Modularity refers to the combination of various elements of the product to form a subsystem with specific functions. We combine these subsystem as a universal module with other modules to create a new system with multiple functions and performance.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/yffsfinance",
-            "handle": "yffsfinance"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/yffsfinance",
-            "handle": "yffsfinance"
-        },
-        {
-            "name": "Medium",
-            "url": "https://medium.com/@yffs.finance",
-            "handle": "yffs.finance"
-        }
-    ],
     "explorer": "https://etherscan.io/token/0x90D702f071d2af33032943137AD0aB4280705817",
     "type": "ERC20",
     "symbol": "YFFS",
     "decimals": 18,
     "status": "active",
-    "id": "0x90D702f071d2af33032943137AD0aB4280705817"
+    "id": "0x90D702f071d2af33032943137AD0aB4280705817",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/yffsfinance"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/yffsfinance"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/yffsfinance"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/@yffs.finance"
+        }
+    ]
 }

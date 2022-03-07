@@ -3,61 +3,43 @@
     "website": "https://radixdlt.com",
     "description": "E-RADIX (eXRD) is the Ethereum token of Radix, the first layer one protocol built for DeFi. Radix introduces a scalable, secure-by-design, composable platform with a DeFi specific build environment to make it easy to build and launch scalable DeFi.",
     "explorer": "https://etherscan.io/token/0x6468e79A80C0eaB0F9A2B574c8d5bC374Af59414",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/RadixDLT",
-            "handle": "Radix"
-        },
-        {
-            "name": "Discord",
-            "url": "https://discord.gg/WkB2USt",
-            "handle": "Radix"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/radix_dlt",
-            "handle": "Radix"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/RadixAnnouncements",
-            "handle": "Radix Announcements"
-        },
-        {
-            "name": "Medium",
-            "url": "https://medium.com/@radixdlt",
-            "handle": "Radix"
-        },
-        {
-            "name": "Reddit",
-            "url": "https://www.reddit.com/r/Radix/",
-            "handle": "Radix"
-        },
-        {
-            "name": "Facebook",
-            "url": "https://www.facebook.com/RadixDLT/",
-            "handle": "Radix"
-        },
-        {
-            "name": "YouTube",
-            "url": "https://www.youtube.com/channel/UCWz_uLkOCrmSUnLAxSY4N5Q",
-            "handle": "Radix"
-        },
-        {
-            "name": "LinkedIn",
-            "url": "https://www.linkedin.com/company/radixdlt",
-            "handle": "Radix"
-        },
-        {
-            "name": "GitHub",
-            "url": "https://github.com/radixdlt",
-            "handle": "Radix"
-        }
-    ],
     "type": "ERC20",
     "symbol": "eXRD",
     "decimals": 18,
     "status": "active",
-    "id": "0x6468e79A80C0eaB0F9A2B574c8d5bC374Af59414"
+    "id": "0x6468e79A80C0eaB0F9A2B574c8d5bC374Af59414",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/radixdlt"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/Radix"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/RadixAnnouncements"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/WkB2USt"
+        },
+        {
+            "name": "facebook",
+            "url": "https://facebook.com/RadixDLT/"
+        },
+        {
+            "name": "youtube",
+            "url": "https://youtube.com/channel/UCWz_uLkOCrmSUnLAxSY4N5Q"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/Radix/"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/@radixdlt"
+        }
+    ]
 }

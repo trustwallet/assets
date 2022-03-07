@@ -1,24 +1,28 @@
 {
     "name": "Nimiq",
     "website": "https://nimiq.com",
-    "source_code": "https://github.com/nimiq",
-    "white_paper": "https://nimiq.com/whitepaper",
     "description": "Nimiq is the blockchain designed for simplicity. Nimiq aims to be the best performing and easiest-to-use decentralized payment protocol & ecosystem.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/nimiq",
-            "handle": "nimiq"
-        },
-        {
-            "name": "Reddit",
-            "url": "https://reddit.com/r/Nimiq",
-            "handle": "Nimiq"
-        }
-    ],
     "explorer": "https://nimiq.watch",
     "symbol": "NIM",
-    "type": "COIN",
+    "type": "coin",
     "decimals": 5,
-    "status": "active"
+    "status": "active",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/nimiq"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/nimiq"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/Nimiq"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://nimiq.com/whitepaper"
+        }
+    ]
 }

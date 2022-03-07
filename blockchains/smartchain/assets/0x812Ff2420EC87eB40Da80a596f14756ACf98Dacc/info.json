@@ -4,23 +4,26 @@
     "description": "Hungry Bear is token driven and supported by it's community. Two functions occur during each trade: Reflection & Burn.",
     "explorer": "https://bscscan.com/token/0x812Ff2420EC87eB40Da80a596f14756ACf98Dacc",
     "research": "",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/BSCBear"
-        },
-        {
-            "name": "Reddit",
-            "url": "https://www.reddit.com/r/HungryBear/"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/HungryBearFinance"
-        }
-    ],
     "type": "BEP20",
     "symbol": "HUNGRY",
     "decimals": 8,
     "status": "active",
-    "id": "0x812Ff2420EC87eB40Da80a596f14756ACf98Dacc"
+    "id": "0x812Ff2420EC87eB40Da80a596f14756ACf98Dacc",
+    "tags": [
+        "deflationary"
+    ],
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/BSCBear"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/HungryBearFinance"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/HungryBear/"
+        }
+    ]
 }

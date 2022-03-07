@@ -7,33 +7,36 @@
     "explorer": "https://etherscan.io/token/0x6c972b70c533E2E045F333Ee28b9fFb8D717bE69",
     "status": "active",
     "id": "0x6c972b70c533E2E045F333Ee28b9fFb8D717bE69",
-    "source_code": "https://github.com/team-toast/Foundry",
-    "white_paper": "https://github.com/team-toast/foundry-design/releases/latest/download/foundry-design.pdf",
     "short_description": "Foundry: A DAO for Economic Freedom",
     "description": "Foundry will attract FRY holders who believe in unstoppable economic freedom. Following SmokeSignal and DAIHard, FRY holders will likely drive Foundry to build or invest in similar pursuits: profitable tools that increase economic freedom which cannot be shut down.",
-    "socials": [
+    "links": [
         {
-            "name": "Twitter",
-            "url": "https://twitter.com/FoundryDAO",
-            "handle": "foundryDAO"
+            "name": "github",
+            "url": "https://github.com/team-toast/Foundry"
         },
         {
-            "name": "Telegram",
-            "url": "https://t.me/FoundryCommunity",
-            "handle": "FoundryCommunity"
+            "name": "twitter",
+            "url": "https://twitter.com/foundryDAO"
         },
         {
-            "name": "YouTube",
-            "url": "https://www.youtube.com/channel/UC4Z34M4q5emaYlJP_Sqa-Cw"
+            "name": "telegram",
+            "url": "https://t.me/FoundryCommunity"
         },
         {
-            "name": "Medium",
-            "url": "https://medium.com/daihard-buidlers",
-            "handle": "daihard-buidlers"
+            "name": "youtube",
+            "url": "https://youtube.com/channel/UC4Z34M4q5emaYlJP_Sqa-Cw"
         },
         {
-            "name": "CoinGecko",
-            "url": "https://www.coingecko.com/en/coins/foundrydao-logistics"
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/foundrydao-logistics"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/daihard-buidlers"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://github.com/team-toast/foundry-design/releases/latest/download/foundry-design.pdf"
         }
     ]
 }

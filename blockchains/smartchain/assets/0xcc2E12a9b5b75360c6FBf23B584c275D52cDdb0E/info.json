@@ -2,24 +2,24 @@
     "name": "Crow Token",
     "website": "https://crowfinance.net/",
     "description": "CrowFinance an Evolution Yield Farming and Yield Optimizer on Binance Smart Chain with daytime and nighttime burn mechanism system.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/crowfinance"
-        },
-        {
-            "name": "Medium",
-            "url": "https://medium.com/@crowfinance"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/CrowFinance"
-        }
-    ],
     "explorer": "https://bscscan.com/token/0xcc2E12a9b5b75360c6FBf23B584c275D52cDdb0E",
     "type": "BEP20",
     "symbol": "CROW",
     "decimals": 18,
     "status": "active",
-    "id": "0xcc2E12a9b5b75360c6FBf23B584c275D52cDdb0E"
+    "id": "0xcc2E12a9b5b75360c6FBf23B584c275D52cDdb0E",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/crowfinance"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/CrowFinance"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/@crowfinance"
+        }
+    ]
 }

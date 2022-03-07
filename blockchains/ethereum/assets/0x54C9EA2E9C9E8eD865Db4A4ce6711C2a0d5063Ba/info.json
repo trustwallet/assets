@@ -1,18 +1,17 @@
 {
-    "name": "BarterTrade Token",
+    "name": "BarterTrade",
     "website": "https://bartertrade.io/",
     "description": "Utility token of cryptocurrency exchange.",
     "explorer": "https://etherscan.io/token/0x54c9ea2e9c9e8ed865db4a4ce6711c2a0d5063ba",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/bartertradeio",
-            "handle": "bartertradeio"
-        }
-    ],
     "type": "ERC20",
     "symbol": "BART",
     "decimals": 18,
     "status": "active",
-    "id": "0x54C9EA2E9C9E8eD865Db4A4ce6711C2a0d5063Ba"
+    "id": "0x54C9EA2E9C9E8eD865Db4A4ce6711C2a0d5063Ba",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/bartertradeio"
+        }
+    ]
 }

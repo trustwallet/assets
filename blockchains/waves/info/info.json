@@ -1,25 +1,29 @@
 {
     "name": "Waves",
     "website": "https://wavesplatform.com",
-    "source_code": "https://github.com/wavesplatform",
-    "white_paper": "https://blog.wavesplatform.com/waves-whitepaper-164dd6ca6a23",
     "description": "Waves is an open-source blockchain platform, developed, marketed, and operated by Waves Platform AG, that allows users to launch their own custom cryptocurrency tokens.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/wavesplatform",
-            "handle": "wavesplatform"
-        },
-        {
-            "name": "Reddit",
-            "url": "https://reddit.com/r/Wavesplatform",
-            "handle": "Wavesplatform"
-        }
-    ],
     "explorer": "http://wavesexplorer.com",
     "research": "https://research.binance.com/en/projects/waves",
     "symbol": "WAVES",
-    "type": "COIN",
+    "type": "coin",
     "decimals": 8,
-    "status": "active"
+    "status": "active",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/wavesplatform"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/wavesplatform"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/Wavesplatform"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://blog.wavesplatform.com/waves-whitepaper-164dd6ca6a23"
+        }
+    ]
 }
