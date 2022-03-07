@@ -1,0 +1,30 @@
+{
+    "name": "Trust Wallet: Ethereum Extended List",
+    "logoURI": "https://trustwallet.com/assets/images/favicon.png",
+    "timestamp": "2022-01-27T14:33:26.183301",
+    "tokens": [
+        {
+            "asset": "c60_t0x8E870D67F660D95d5be530380D0eC0bd388289E1",
+            "type": "ERC20",
+            "address": "0x8E870D67F660D95d5be530380D0eC0bd388289E1",
+            "name": "Pax Dollar",
+            "symbol": "USDP",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x8E870D67F660D95d5be530380D0eC0bd388289E1/logo.png"
+        },
+        {
+            "asset": "c60_t0xa47c8bf37f92aBed4A126BDA807A7b7498661acD",
+            "type": "ERC20",
+            "address": "0xa47c8bf37f92aBed4A126BDA807A7b7498661acD",
+            "name": "UST Token",
+            "symbol": "UST",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0xa47c8bf37f92aBed4A126BDA807A7b7498661acD/logo.png"
+        }
+    ],
+    "version": {
+        "major": 6,
+        "minor": 0,
+        "patch": 0
+    }
+}
