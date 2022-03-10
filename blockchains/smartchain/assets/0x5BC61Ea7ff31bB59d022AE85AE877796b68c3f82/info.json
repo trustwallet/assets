@@ -3,9 +3,9 @@
     "type": "BEP20",
     "symbol": "LEA",
     "decimals": 9,
-    "website": "http://leapableio.com",
+    "website": "https://leapableio.com",
     "description": "LeapableIO is insurance protocol with decentralized approval mechanism against fraud.",
-    "explorer": "https://bscscan.com/token/0x5bc61ea7ff31bb59d022ae85ae877796b68c3f82",
+    "explorer": "https://bscscan.com/token/0x5BC61Ea7ff31bB59d022AE85AE877796b68c3f82",
     "status": "active",
     "id": "0x5BC61Ea7ff31bB59d022AE85AE877796b68c3f82",
     "links": [
@@ -15,24 +15,22 @@
         },
         {
             "name": "telegram",
-            "url": "https://t.me/LeapableIO_Ann"
+            "url": "https://t.me/LeapableIO"
         },
         {
-            "name": "telegram",
-            "url": "https://t.me/LeapableIO"
-        }
+            "name": "telegram_news",
+            "url": "https://t.me/LeapableIO_Ann"
+        },
         {
             "name": "coinmarketcap",
             "url": "https://coinmarketcap.com/currencies/leapableio"
         },
         {
             "name": "coingecko",
-            "url": "https://www.coingecko.com/en/coins/leapableio"
+            "url": "https://coingecko.com/en/coins/leapableio"
         }
     ],
     "tags": [
-        "platform",
-        "insurance",
-        "launchpad"
+        "defi"
     ]
 }
