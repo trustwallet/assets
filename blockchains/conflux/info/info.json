@@ -1,0 +1,30 @@
+{
+    "name": "Conflux eSpace",
+    "website": "https://confluxnetwork.org/",
+    "short_description": "Conflux eSpace is the EVM-compatible subsystem of Conflux Network.",
+    "description": "Conflux eSpace is a fully EVM-compatible smart contract platform that runs on the Conflux ledger. Conflux is a high-throughput decentralized blockchain built using the Tree-Graph DAG-based consensus mechanism.",
+    "explorer": "https://evm.confluxscan.io/",
+    "research": "https://developer.confluxnetwork.org/",
+    "symbol": "CFX",
+    "type": "coin",
+    "decimals": 18,
+    "status": "active",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/Conflux-Chain/conflux-rust"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/Conflux_Network"
+        },
+        {
+            "name": "reddit",
+            "url": "https://www.reddit.com/r/Conflux_Network/"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://confluxnetwork.org/en/files/Conflux_Economic_Paper_20201230.pdf"
+        }
+    ]
+}
