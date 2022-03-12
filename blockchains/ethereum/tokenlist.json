@@ -504,6 +504,9 @@
                 },
                 {
                     "base": "c60_t0xf4d2888d29D722226FafA5d9B24F9164c092421E"
+                },
+                {
+                    "base": "c60_t0xcc98Db8557249777a1566a577DCA42AC4B893e44"
                 }
             ]
         },
@@ -3473,6 +3476,16 @@
             "symbol": "X2Y2",
             "decimals": 18,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x1E4EDE388cbc9F4b5c79681B7f94d36a11ABEBC9/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c60_t0xcc98Db8557249777a1566a577DCA42AC4B893e44",
+            "type": "ERC20",
+            "address": "0xcc98Db8557249777a1566a577DCA42AC4B893e44",
+            "name": "eLira",
+            "symbol": "ELIRA",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0xcc98Db8557249777a1566a577DCA42AC4B893e44/logo.png",
             "pairs": []
         }
     ],
