@@ -8,6 +8,13 @@
     "explorer": "https://bscscan.com/token/0x0EBc30459551858e81306d583025d12C7d795FA2",
     "status": "active",
     "id": "0x0EBc30459551858e81306d583025d12C7d795FA2",
-    "links": "https://twitter.com/AmazingDogeBsc/",
-    "tags": "memes"
+    "links": [
+         {
+             "name": "twitter",
+             "url": "https://twitter.com/apecoin"
+         } 
+         ],
+    "tags": [
+         "memes"
+     ]
 }
