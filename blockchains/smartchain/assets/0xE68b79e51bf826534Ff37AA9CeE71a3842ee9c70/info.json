@@ -1,0 +1,44 @@
+{
+    "name": "CZUSD",
+    "type": "BEP20",
+    "symbol": "CZUSD",
+    "decimals": 18,
+    "website": "https://czodiac.com",
+    "description": "CZUSD is a USD stablecoin. The peg is maintained in the short term by the Scorch Peg which trades the token back to $1 and uses the profits to burn CZF.",
+    "explorer": "https://bscscan.com/token/0xE68b79e51bf826534Ff37AA9CeE71a3842ee9c70",
+    "status": "active",
+    "id": "0xE68b79e51bf826534Ff37AA9CeE71a3842ee9c70",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/zodiacs_c"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/chinese-zodiac/czodiac"
+        },
+        {
+            "name": "medium",
+            "url": "https://czodiacs.medium.com/"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://czodiac.gitbook.io/czodiac-litepapper/tokenomics/czusd"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/CZodiacofficial"
+        },
+        {
+            "name": "telegram_news",
+            "url": "https://t.me/CZodiacANN"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/QDyTJccdE9"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}

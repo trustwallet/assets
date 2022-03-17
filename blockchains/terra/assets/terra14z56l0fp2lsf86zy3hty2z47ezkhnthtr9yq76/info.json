@@ -1,0 +1,25 @@
+{
+    "name": "Anchor Protocol Token",
+    "symbol": "ANC",
+    "type": "CW20",
+    "decimals": 6,
+    "description": "The Anchor Token (ANC) is Anchor Protocol's governance token. ANC tokens can be deposited to create new governance polls, which can be voted on by users that have staked ANC.",
+    "website": "https://www.anchorprotocol.com",
+    "explorer": "https://finder.terra.money/mainnet/address/terra14z56l0fp2lsf86zy3hty2z47ezkhnthtr9yq76",
+    "status": "active",
+    "id": "terra14z56l0fp2lsf86zy3hty2z47ezkhnthtr9yq76",
+    "links": [
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/9aUYgpKZ9c"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://anchorprotocol.com/docs/anchor-v1.1.pdf"
+        }
+    ],
+    "tags": [
+        "staking",
+        "governance"
+    ]
+}
