@@ -1,5 +1,5 @@
 {  
-  "name": "AmazingDoge",
+  "name": "Amazing Doge",
     "type": "BEP20",
     "symbol": "Adoge",
     "decimals": 9,
@@ -12,8 +12,12 @@
          {
              "name": "twitter",
              "url": "https://twitter.com/apecoin"
-         } 
-         ],
+         },
+         {
+             "name": "whitepaper",
+             "url": "https://amazingdogebsc.com/#whitepaper"
+         }
+      ],
     "tags": [
          "memes"
      ]
