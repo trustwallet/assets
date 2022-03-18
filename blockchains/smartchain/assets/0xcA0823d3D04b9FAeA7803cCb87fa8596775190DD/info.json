@@ -1,10 +1,52 @@
-"name": "BerylBit",
-"website": "https://www.beryl-bit.com/",
-"description": "Open source layer 1 blockchain that offers private transactions and developing decentralized applications using evm.",
-"explorer": "https://bscscan.com/token/0xca0823d3d04b9faea7803ccb87fa8596775190dd",
-"type": "BEP20",
-"symbol": "BRB",
-"decimals": 18,
-"status": "active",
-"id": "0xcA0823d3D04b9FAeA7803cCb87fa8596775190DD"
+{
+    "name": "BerylBit",
+    "type": "BEP20",
+    "symbol": "brb",
+    "decimals": 18,
+    "website": "https://www.beryl-bit.com/",
+    "description": "BerylBit is working on a open source layer 1 Blockchain that offers private transactions and to write decentralized applications using evm.",
+    "explorer": "https://bscscan.com/token/0xcA0823d3D04b9FAeA7803cCb87fa8596775190DD",
+    "status": "active",
+    "id": "0xcA0823d3D04b9FAeA7803cCb87fa8596775190DD",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/BerylBitBrb"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/BerylBit"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/BerylBit"
+        },
+        {
+            "name": "telegram_news",
+            "url": "https://t.me/BerylBitNews"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/berylbit/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://www.coingecko.com/en/coins/berylbit"
+        },
+        {
+            "name": "source_code",
+            "url": "https://bscscan.com/address/0xca0823d3d04b9faea7803ccb87fa8596775190dd"
+        },
+        {
+            "name": "facebook",
+            "url": "https://www.facebook.com/groups/637395804158546"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://github.com/BerylBit/Whitepaper-new/blob/main/BRB%20WhitePaper.pdf"
+        }
+    ],
+    "tags": [
+        "defi"
+    ]
 }
