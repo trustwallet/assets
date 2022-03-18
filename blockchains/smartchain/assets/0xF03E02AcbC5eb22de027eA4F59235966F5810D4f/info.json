@@ -1,11 +1,32 @@
-{
-    "name": "Pi INU Token",
-    "website": "https://pi-inu.com",
-    "description": "Pi network concept MEME Token",
-    "explorer": "https://bscscan.com/token/0xF03E02AcbC5eb22de027eA4F59235966F5810D4f",
-    "type": "BEP20",
-    "symbol": "PINU",
-    "decimals": 18,
-    "status": "active",
-    "id": "0xF03E02AcbC5eb22de027eA4F59235966F5810D4f"
-}
+
+   { "name": "Pi INU Token",
+      "type": "BEP20",
+	  "symbol": "PINU",
+	  "decimals": 18,
+	  "description": "Pi network concept INU Token",
+      "website": "https://pi-inu.com",
+      "explorer": "https://bscscan.com/token/0xF03E02AcbC5eb22de027eA4F59235966F5810D4f",
+      "id": "0xF03E02AcbC5eb22de027eA4F59235966F5810D4f",
+      "status": "active",
+      "tags": [
+               "memes"
+             ],
+      "links": [
+	  {
+            "name": "twitter",
+            "url": "https://twitter.com/Pi_INU_Official"
+        },
+        {
+            "name": "facebook",
+            "url": "https://www.facebook.com/PiINUOfficial"
+        },
+        {
+            "name": "instagram",
+            "url": "https://www.instagram.com/pi_inu_official"
+        },
+		{
+            "name": "whitepaper",
+            "url": "https://drive.google.com/file/d/194yCanMvsa9egqLo_8SuaFsJqK6yOoSO/view?usp=sharing"
+        }
+    ]
+    }
