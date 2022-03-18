@@ -1,5 +1,6 @@
 
-   { "name": "Pi INU Token",
+{ 
+"name": "Pi INU Token",
       "type": "BEP20",
 	  "symbol": "PINU",
 	  "decimals": 18,
@@ -12,25 +13,14 @@
                "memes"
              ],
       "links": [
-	  {
+       {
             "name": "twitter",
             "url": "https://twitter.com/Pi_INU_Official"
         },
         {
-            "name": "facebook",
-            "url": "https://facebook.com/PiINUOfficial"
-        },
-        {
             "name": "coinmarketcap",
             "url": "https://coinmarketcap.com/currencies/pi-inu"
-        },
-        {
-            "name": "telegram",
-            "url": "https://t.me/pi_inu_official"
-        },
-		{
-            "name": "whitepaper",
-            "url": "https://drive.google.com/file/d/194yCanMvsa9egqLo_8SuaFsJqK6yOoSO/view?usp=sharing"
         }
     ]
-    }
+
+}
