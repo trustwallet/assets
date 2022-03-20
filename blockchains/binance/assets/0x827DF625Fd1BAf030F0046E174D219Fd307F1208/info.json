@@ -1,0 +1,29 @@
+{
+    "name": "BNB",
+    "type": "BEP2",
+    "symbol": "BEP20",
+    "decimals": 8,
+    "website": "https://binance.com",
+    "description": "BNB",
+    "explorer": "https://explorer.binance.org/asset/0x827DF625Fd1BAf030F0046E174D219Fd307F1208",
+    "status": "active",
+    "id": "0x827DF625Fd1BAf030F0046E174D219Fd307F1208",
+    "links": [
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/"
+        },
+        {
+            "name": "blog",
+            "url": "Stablecoin"
+        }
+    ],
+    "tags": [
+        "stablecoin",
+        "wrapped"
+    ]
+}
