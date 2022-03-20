@@ -1,11 +1,24 @@
 {
-    "name": "Polygon",
-    "website": "https://matic.network",
-    "description": "Matic Network is a Layer-2 scaling solution that uses sidechains for off-chain computation while ensuring asset security using the Plasma framework and a decentralized network of Proof-of-Stake (PoS) validators.",
-    "explorer": "https://etherscan.io/token/0x7D1AfA7B718fb893dB30A3aBc0Cfc608AaCfeBB0",
+    "name": "Matic Network (MATIC)",
     "type": "ERC20",
     "symbol": "MATIC",
     "decimals": 18,
+    "website": "https://matic.network",
+    "description": "Live long matic",
+    "explorer": "https://etherscan.io/token/0x7D1AfA7B718fb893dB30A3aBc0Cfc608AaCfeBB0",
     "status": "active",
-    "id": "0x7D1AfA7B718fb893dB30A3aBc0Cfc608AaCfeBB0"
+    "id": "0x7D1AfA7B718fb893dB30A3aBc0Cfc608AaCfeBB0",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/musicbeat17"
+        },
+        {
+            "name": "youtube",
+            "url": "https://youtube.com/chillaxstudio"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
 }
