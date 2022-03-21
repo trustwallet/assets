@@ -25,21 +25,20 @@ Such a large collection can be maintained only through a community effort, so _f
 
 There are several scripts available for maintainers:
 
-- `npm run check` -- Execute validation checks; also used in continuous integration.
-- `npm run check-sanity` -- Strict subset of checks
-- `npm run fix` -- Perform automatic fixes where possible
-- `npm run fix-sanity` -- Stricter subset
-- `npm run updateAuto` -- Run automatic updates from external sources, executed regularly (GitHub action)
-- `npm run update` -- Run manual updates from external sources, for manual use.
-- `npm test` -- Run script unit tests
-- `npm lint` -- Run Lint static code check
+- `make check` -- Execute validation checks; also used in continuous integration.
+- `make fix` -- Perform automatic fixes where possible
+- `make update-auto` -- Run automatic updates from external sources, executed regularly (GitHub action)
+- `make add-token asset_id=c60_t0x4Fabb145d64652a948d72533023f6E7A623C7C53` -- Create `info.json` file as asset template.
+- `make add-tokenlist asset_id=c60_t0x4Fabb145d64652a948d72533023f6E7A623C7C53` -- Adds a token to tokenlist.json.
+- `make add-tokenlist-extended asset_id=c60_t0x4Fabb145d64652a948d72533023f6E7A623C7C53` -- Adds a token to tokenlist-extended.json.
 
 ## On Checks
 
-This repo contains a set of scripts for verification of all the information.  Implemented as Typescript scripts, available through `npm run check`, and executed in CI build; checks the whole repo.
+This repo contains a set of scripts for verification of all the information. Implemented as Golang scripts, available through `make check`, and executed in CI build; checks the whole repo.
 There are similar check logic implemented:
-- in assets-management app; for checking changed token files in PRs, or when creating a PR.  Implemented as a Typescript library, checks diffs, can be run from browser environment.
-- in merge-fee-bot, which runs as a GitHub app shows result in PR comment.  Also uses library, but executes in a non-browser environment.
+
+- in assets-management app; for checking changed token files in PRs, or when creating a PR.  Checks diffs, can be run from browser environment.
+- in merge-fee-bot, which runs as a GitHub app shows result in PR comment. Executes in a non-browser environment.
 
 
 ## Disclaimer
