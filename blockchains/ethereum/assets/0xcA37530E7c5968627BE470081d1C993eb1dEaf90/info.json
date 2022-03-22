@@ -1,13 +1,13 @@
 {
-    "name": "Stable PERL",
+    "name": "Stable DODO",
     "website": "app.ichi.org",
-    "description": "onePERL is an ICHI-created stablecoin for Perlinx.",
-    "explorer": "https://etherscan.io/token/0xD9A24485e71B9148e0Fd51F0162072099DF0dB67",
+    "description": "oneDODO is an ICHI-created stablecoin for DODO.",
+    "explorer": "https://etherscan.io/token/0xcA37530E7c5968627BE470081d1C993eb1dEaf90",
     "type": "ERC20",
-    "symbol": "onePERL",
+    "symbol": "oneDODO",
     "decimals": 18,
     "status": "active",
-    "id": "0xD9A24485e71B9148e0Fd51F0162072099DF0dB67",
+    "id": "0xcA37530E7c5968627BE470081d1C993eb1dEaf90",
     "links": [
         {
             "name": "github",
@@ -28,10 +28,6 @@
         {
             "name": "discord",
             "url": "https://discord.gg/DvsYCfK8"
-        },
-        {
-            "name": "coingecko",
-            "url": "https://www.coingecko.com/en/coins/oneperl"
         }
     ]
 }

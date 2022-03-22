@@ -1,13 +1,13 @@
 {
-    "name": "Stable PERL",
+    "name": "Stable FOX",
     "website": "app.ichi.org",
-    "description": "onePERL is an ICHI-created stablecoin for Perlinx.",
-    "explorer": "https://etherscan.io/token/0xD9A24485e71B9148e0Fd51F0162072099DF0dB67",
+    "description": "oneFOX is an ICHI-created stablecoin for Shapeshift.",
+    "explorer": "https://etherscan.io/token/0x03352D267951E96c6F7235037C5DFD2AB1466232",
     "type": "ERC20",
-    "symbol": "onePERL",
+    "symbol": "oneFOX",
     "decimals": 18,
     "status": "active",
-    "id": "0xD9A24485e71B9148e0Fd51F0162072099DF0dB67",
+    "id": "0x03352D267951E96c6F7235037C5DFD2AB1466232",
     "links": [
         {
             "name": "github",
@@ -31,7 +31,7 @@
         },
         {
             "name": "coingecko",
-            "url": "https://www.coingecko.com/en/coins/oneperl"
+            "url": "https://www.coingecko.com/en/coins/stable-fox"
         }
     ]
 }
