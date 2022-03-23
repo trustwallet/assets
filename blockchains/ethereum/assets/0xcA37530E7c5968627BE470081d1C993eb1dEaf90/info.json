@@ -1,13 +1,13 @@
 {
-    "name": "Stable MPH",
+    "name": "Stable DODO",
     "website": "app.ichi.org",
-    "description": "oneMPH is an ICHI-created stablecoin for 88MPH.",
-    "explorer": "https://etherscan.io/token/0xBE3F88E18BE3944FdDa830695228ADBB82fA125F",
+    "description": "oneDODO is an ICHI-created stablecoin for DODO.",
+    "explorer": "https://etherscan.io/token/0xcA37530E7c5968627BE470081d1C993eb1dEaf90",
     "type": "ERC20",
-    "symbol": "oneMPH",
+    "symbol": "oneDODO",
     "decimals": 18,
     "status": "active",
-    "id": "0xBE3F88E18BE3944FdDa830695228ADBB82fA125F",
+    "id": "0xcA37530E7c5968627BE470081d1C993eb1dEaf90",
     "links": [
         {
             "name": "github",
@@ -28,10 +28,6 @@
         {
             "name": "discord",
             "url": "https://discord.com/invite/DvsYCfK8"
-        },
-        {
-            "name": "coingecko",
-            "url": "https://www.coingecko.com/en/coins/stable-mph"
         }
     ]
 }

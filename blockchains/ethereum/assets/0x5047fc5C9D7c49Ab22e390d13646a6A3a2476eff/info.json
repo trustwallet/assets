@@ -1,13 +1,13 @@
 {
-    "name": "Stable MPH",
+    "name": "Stable WING",
     "website": "app.ichi.org",
-    "description": "oneMPH is an ICHI-created stablecoin for 88MPH.",
-    "explorer": "https://etherscan.io/token/0xBE3F88E18BE3944FdDa830695228ADBB82fA125F",
+    "description": "oneWING is an ICHI-created stablecoin for Wing.",
+    "explorer": "https://etherscan.io/token/0x5047fc5C9D7c49Ab22e390d13646a6A3a2476eff",
     "type": "ERC20",
-    "symbol": "oneMPH",
+    "symbol": "oneWING",
     "decimals": 18,
     "status": "active",
-    "id": "0xBE3F88E18BE3944FdDa830695228ADBB82fA125F",
+    "id": "0x5047fc5C9D7c49Ab22e390d13646a6A3a2476eff",
     "links": [
         {
             "name": "github",
@@ -28,10 +28,6 @@
         {
             "name": "discord",
             "url": "https://discord.com/invite/DvsYCfK8"
-        },
-        {
-            "name": "coingecko",
-            "url": "https://www.coingecko.com/en/coins/stable-mph"
         }
     ]
 }

@@ -1,13 +1,13 @@
 {
-    "name": "Stable MPH",
+    "name": "Stable FOX",
     "website": "app.ichi.org",
-    "description": "oneMPH is an ICHI-created stablecoin for 88MPH.",
-    "explorer": "https://etherscan.io/token/0xBE3F88E18BE3944FdDa830695228ADBB82fA125F",
+    "description": "oneFOX is an ICHI-created stablecoin for Shapeshift.",
+    "explorer": "https://etherscan.io/token/0x03352D267951E96c6F7235037C5DFD2AB1466232",
     "type": "ERC20",
-    "symbol": "oneMPH",
+    "symbol": "oneFOX",
     "decimals": 18,
     "status": "active",
-    "id": "0xBE3F88E18BE3944FdDa830695228ADBB82fA125F",
+    "id": "0x03352D267951E96c6F7235037C5DFD2AB1466232",
     "links": [
         {
             "name": "github",
@@ -31,7 +31,7 @@
         },
         {
             "name": "coingecko",
-            "url": "https://www.coingecko.com/en/coins/stable-mph"
+            "url": "https://www.coingecko.com/en/coins/stable-fox"
         }
     ]
 }

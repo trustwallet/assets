@@ -1,13 +1,13 @@
 {
-    "name": "Stable MPH",
+    "name": "Stable BTC",
     "website": "app.ichi.org",
-    "description": "oneMPH is an ICHI-created stablecoin for 88MPH.",
-    "explorer": "https://etherscan.io/token/0xBE3F88E18BE3944FdDa830695228ADBB82fA125F",
+    "description": "oneBTC is an ICHI-created stablecoin backed by USDC and wBTC.",
+    "explorer": "https://etherscan.io/token/0xEc4325F0518584F0774b483c215F65474EAbD27F",
     "type": "ERC20",
-    "symbol": "oneMPH",
+    "symbol": "oneBTC",
     "decimals": 18,
     "status": "active",
-    "id": "0xBE3F88E18BE3944FdDa830695228ADBB82fA125F",
+    "id": "0xEc4325F0518584F0774b483c215F65474EAbD27F",
     "links": [
         {
             "name": "github",
@@ -28,10 +28,6 @@
         {
             "name": "discord",
             "url": "https://discord.com/invite/DvsYCfK8"
-        },
-        {
-            "name": "coingecko",
-            "url": "https://www.coingecko.com/en/coins/stable-mph"
         }
     ]
 }
