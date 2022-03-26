@@ -1,0 +1,24 @@
+{
+    "name": "Elgos Company Token",
+    "type": "BEP20",
+    "symbol": "ELGOS",
+    "decimals": 18,
+    "website": "https://elgos.app/",
+    "description": "I would like to list my token on Trust wallet. I've alreay made a pull request before, but the audit was missing, so they advised me to make the audit and send another PR. I've already paid the TWT fee. You guys can see all of that on the fallowing PR -> 18502 (https://github.com/trustwallet/assets/pull/18502) Here is the audit results -> https://secureblock.io/reports/7d4e3885-cb88-4ece-88e0-97aead2a8184.pdf",
+    "explorer": "https://bscscan.com/token/0xF37cAc4783a343D6258DdD52AA4e2566C0CbE25a",
+    "status": "active",
+    "id": "0xF37cAc4783a343D6258DdD52AA4e2566C0CbE25a",
+    "links": [
+        {
+            "name": "whitepaper",
+            "url": "https://elgos.app/white-paper-elgos/"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/elgos"
+        }
+    ],
+    "tags": [
+        "defi"
+    ]
+}
