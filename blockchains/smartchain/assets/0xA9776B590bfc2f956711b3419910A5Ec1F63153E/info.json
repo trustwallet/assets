@@ -1,21 +1,21 @@
 {
-  "name": "Rune",
+  "name": "Rune Shards",
   "website": "https://rune.game/",
-  "description": "The governance token of Rune, an epic dark fantasy universe",
-  "explorer": "https://bscscan.com/token/0xA9776B590bfc2f956711b3419910A5Ec1F63153E",
+  "description": "The governance token and in-game currency of Rune, an epic dark fantasy universe",
+  "explorer": "https://bscscan.com/token/0x2098fEf7eEae592038f4f3C4b008515fed0d5886",
   "type": "BEP20",
-  "symbol": "RUNE",
+  "symbol": "RXS",
   "decimals": 18,
   "status": "active",
-  "id": "0xA9776B590bfc2f956711b3419910A5Ec1F63153E",
+  "id": "0x2098fEf7eEae592038f4f3C4b008515fed0d5886",
   "links": [
     {
       "name": "twitter",
-      "url": "https://twitter.com/RuneMMO"
+      "url": "https://twitter.com/RuneMetaverse"
     },
     {
       "name": "telegram",
-      "url": "https://t.me/Rune_EN"
+      "url": "https://t.me/RuneMetaverse"
     },
     {
       "name": "medium",
@@ -27,15 +27,25 @@
     },
     {
       "name": "coinmarketcap",
-      "url": "https://coinmarketcap.com/currencies/rune/"
+      "url": "https://coinmarketcap.com/currencies/rune-shards/"
     },
     {
       "name": "coingecko",
-      "url": "https://coingecko.com/en/coins/rune"
+      "url": "https://coingecko.com/en/coins/rune-shards/"
     },
     {
       "name": "facebook",
-      "url": "https://facebook.com/RuneMMO/"
+      "url": "https://facebook.com/RuneMetaverse/"
+    },
+        {
+      "name": "discord",
+      "url": "https://discord.gg/rune"
     }
-  ]
+  ],
+  "tags": [
+    "metaverse",
+    "nft",
+    "defi",
+    "gamefi"
+    ]
 }
