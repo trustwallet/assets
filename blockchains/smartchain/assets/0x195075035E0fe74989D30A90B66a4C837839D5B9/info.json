@@ -1,11 +1,22 @@
 {
 	"name": "Big.Byte.Block Token",
     	"website": "https://bigbyteblock.com",
-    	"description": "TIME is the ultimate currency. And we are a CeDeFi monetizing TIME as BBB coins. These coins are not mined by computing hash power by hardware or staking other crypto coins. But are made when a node matures to become a coin with time.",
+    	"description": "We are a CeDeFi monetizing TIME as BBB coins. They are not mined by computing hash power or staking other coins. But, made when you wait for a node to mature and become a coin with time.",
     	"explorer": "https://bscscan.com/token/0x195075035e0fe74989d30a90b66a4c837839d5b9",
     	"type": "BEP20",
     	"symbol": "BBB",
     	"decimals": 8,
     	"status": "active",
-    	"id": "0x195075035e0fe74989d30a90b66a4c837839d5b9"
+    	"id": "0x195075035E0fe74989D30A90B66a4C837839D5B9",
+	"tags": "Investment, P2P Marketplace, BigByteBlock",
+	"links": {
+		"Vision" : "https://bigbyteblock.com/aboutus/",
+		"White Paper/ FAQs" : "https://bigbyteblock.com/faqs/",
+		"Telegram" : "https://t.me/bigbyteblockofficial",
+		"Trustpilot" : "https://www.trustpilot.com/review/www.bigbyteblock.com?stars=5",
+		"Exchange" : "https://pancakeswap.finance/swap?outputCurrency=0x195075035E0fe74989D30A90B66a4C837839D5B9",
+		"Node Status" : "https://bigbyteblock.com/node/",
+		"Blog" : "https://crypto-guide.in/category/big-byte-block/",
+		"Venture" : "https://boastcoast.com"
+	}
 }
