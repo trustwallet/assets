@@ -1,13 +1,13 @@
 {
-    "name": "Stable UNI",
+    "name": "Stable FOX",
     "website": "app.ichi.org",
-    "description": "oneUNI is an ICHI-created stablecoin for Uniswap.",
-    "explorer": "https://etherscan.io/token/0x8290d7a64f25e6b5002d98367e8367c1b532b534",
+    "description": "oneFOX is an ICHI-created stablecoin for Shapeshift.",
+    "explorer": "https://etherscan.io/token/0x03352D267951E96c6F7235037C5DFD2AB1466232",
     "type": "ERC20",
-    "symbol": "oneUNI",
+    "symbol": "oneFOX",
     "decimals": 18,
     "status": "active",
-    "id": "0x8290D7a64F25e6b5002d98367E8367c1b532b534",
+    "id": "0x03352D267951E96c6F7235037C5DFD2AB1466232",
     "tags": [
         "defi"
     ],
@@ -34,7 +34,7 @@
         },
         {
             "name": "coingecko",
-            "url": "https://coingecko.com/en/coins/stable-uni"
+            "url": "https://coingecko.com/coins/stable-fox"
         }
     ]
 }
