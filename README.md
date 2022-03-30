@@ -66,7 +66,7 @@ Trading pairs can be updated --
 from Uniswap/Ethereum and PancakeSwap/Smartchain -- using update script (and checking in changes).
 Minimal limit values for trading pair inclusion are set in the [config file](https://github.com/trustwallet/assets/blob/master/.github/assets.config.yaml).
 There are also options for force-include and force-exclude in the config.
-
+blockchains/energyweb/info/logo.png
 ## Disclaimer
 
 Trust Wallet team allows anyone to submit new assets to this repository. However, this does not mean that we are in direct partnership with all of the projects.
