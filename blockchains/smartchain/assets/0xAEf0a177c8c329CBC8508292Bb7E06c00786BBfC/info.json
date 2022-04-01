@@ -1,48 +1,66 @@
 {
-    "name": "Puli Inu",
+    "name": "Puli",
     "type": "BEP20",
     "symbol": "PULI",
     "decimals": 9,
-    "website": "https://www.puli-inu.com/",
-    "description": "Powering P2E games every month. Store, swap, play, chat and earn tokens while introducing new investors to crypto.",
-    "explorer": "https://bscscan.com/token/0xAEf0a177c8c329CBC8508292Bb7E06c00786BBfC",
+    "website": "https://pulitoken.net/",
+    "description": "Puli (PULI) delivers simple yet very addicting P2E games supported by a novel NFT system. The first game, Puli Runner, was successfully launched on 31 January 2022. The team has also acquired a gaming studio for the development of Play-to-Earn games, which includes support for Android and IOS. The purpose and key features of the token include a 10% Buy and 10% Sell tax that are used to fund aggressive marketing, development and stable liquidity. In addition, the asset can be staked for added earnings with instructions available at their website.",
+    "explorer": "https://bscscan.com/token/0xaef0a177c8c329cbc8508292bb7e06c00786bbfc",
     "status": "active",
     "id": "0xAEf0a177c8c329CBC8508292Bb7E06c00786BBfC",
     "links": [
         {
             "name": "twitter",
-            "url": "https://twitter.com/puli_inu"
+            "url": "https://twitter.com/puli_token"
         },
         {
             "name": "telegram",
             "url": "https://t.me/Puli_Inu"
         },
         {
-            "name": "telegram_news",
-            "url": "https://t.me/puli_inu_announcements"
-        },
-        {
-            "name": "coingecko",
-            "url": "https://coingecko.com/en/coins/puli-inu"
-        },
-        {
-            "name": "coinmarketcap",
-            "url": "https://coinmarketcap.com/currencies/puli-inu/"
-        },
-        {
-            "name": "reddit",
-            "url": "https://reddit.com/r/Puli_Inu/"
-        },
-        {
             "name": "discord",
             "url": "https://discord.com/"
         },
         {
+            "name": "github",
+            "url": "https://github.com/interfinetwork/audited-codes/blob/main/PULIINU.sol"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://docs.whitepaper.pulitoken.net/"
+        },
+        {
+            "name": "telegram_news",
+            "url": "https://t.me/puli_inu_announcements"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/Puli_Inu/"
+        },
+        {
             "name": "facebook",
-            "url": "https://facebook.com/profile.php?id=100076014895069"
+            "url": "https://facebook.com/groups/1645662419114677"
+        },
+        {
+            "name": "source_code",
+            "url": "https://github.com/interfinetwork/audited-codes/blob/main/PULIINU.sol"
+        },
+        {
+            "name": "youtube",
+            "url": "https://youtube.com/channel/UCvAYp8cyMZzEcurdjHdqQZQ/featured"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/puli-inu"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/puli-inu"
         }
     ],
     "tags": [
+        "nft",
+        "gamefi",
         "staking"
     ]
 }
