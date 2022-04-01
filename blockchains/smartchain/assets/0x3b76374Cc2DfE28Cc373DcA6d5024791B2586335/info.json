@@ -3,7 +3,7 @@
     "name": "Adadao",
     "symbol": "ADAO",
     "type": "BEP20",
-    "description" : "A DeFi protocol which facilitates creation of fully collateralized stable coins leveraging Native Cardano Assets",
+    "description": "A DeFi protocol which facilitates creation of fully collateralized stable coins leveraging Native Cardano Assets",
     "decimals": 18,
     "website": "https://adadao.org",
     "explorer": "https://bscscan.com/token/0x3b76374Cc2DfE28Cc373DcA6d5024791B2586335",
@@ -34,5 +34,7 @@
             "url": "https://docs.adadao.org"
         }
     ],
-    "tags": ["staking"]
+    "tags": [
+        "staking"
+    ]
 }
