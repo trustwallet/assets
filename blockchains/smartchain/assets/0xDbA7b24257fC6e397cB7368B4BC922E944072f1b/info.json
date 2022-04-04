@@ -1,22 +1,14 @@
 {
-    "name": "EverRise (old)",
+    "name": "Vote-escrowed EverRise",
     "type": "BEP20",
-    "symbol": "RISE (old)",
+    "symbol": "veRISE",
     "decimals": 18,
     "website": "https://www.everrise.com/",
-    "description": "The Original Buyback Token Powering The EverRise Ecosystem. EverRise token (RISE) is a multi-chain collateralized cryptocurrency that protects both the ecosystem and investors with its innovative buyback and staking protocol.",
-    "explorer": "https://bscscan.com/token/0x0cD022ddE27169b20895e0e2B2B8A33B25e63579",
-    "status": "abandoned",
-    "id": "0x0cD022ddE27169b20895e0e2B2B8A33B25e63579",
+    "description": "Virtual token that allows the Vote Escrowed (ve) EverRise weighted governance tokens from EverRise Staking NFTs to display in wallet balances.",
+    "explorer": "https://bscscan.com/address/0xDbA7b24257fC6e397cB7368B4BC922E944072f1b",
+    "status": "active",
+    "id": "0xDbA7b24257fC6e397cB7368B4BC922E944072f1b",
     "links": [
-        {
-            "name": "coinmarketcap",
-            "url": "https://coinmarketcap.com/currencies/everrise/"
-        },
-        {
-            "name": "coingecko",
-            "url": "https://coingecko.com/en/coins/everrise"
-        },
         {
             "name": "twitter",
             "url": "https://twitter.com/everrise"
