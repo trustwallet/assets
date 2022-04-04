@@ -1,14 +1,18 @@
-{    
-    "name": "Dabb Doge",
-    "website": "https://www.dabbdoge.com/",
-    "description": "DABB DOGE is a decentralized peer-to-peer digital currency that enables instant transactions to anyone anywhere in the world without any transaction fees.",
-    "explorer": "https://bscscan.com/token/0xC638a73969C0F7442Ba8F5Ffda9968434891034B",
+{
+    "name": "Dabb Doge ",
     "type": "BEP20",
-    "symbol": "DDoge",
+    "symbol": "DDoge ",
     "decimals": 18,
+    "website": "https://www.dabbdoge.com/",
+    "description": "DABB DOGE is a decentralized peer-to-peer digital currency that enables instant transactions to anyone anywhere in the world without any transaction fees",
+    "explorer": "https://bscscan.com/token/0xC638a73969C0F7442Ba8F5Ffda9968434891034B",
     "status": "active",
     "id": "0xC638a73969C0F7442Ba8F5Ffda9968434891034B",
     "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/DabbDoge/"
+        },
         {
             "name": "github",
             "url": "https://github.com/dabbdoge"
@@ -18,8 +22,31 @@
             "url": "https://t.me/dabbdoge"
         },
         {
-            "name": "twitter",
-            "url": "https://twitter.com/DabbDoge"
+            "name": "coingecko",
+            "url": "https://coingecko.com/"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://www.dabbdoge.com/dabb-doge-whitepaper.pdf"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/"
+        },
+        {
+            "name": "facebook",
+            "url": "https://facebook.com/dabbdoge"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/dabb-doge/"
+        },
+        {
+            "name": "source_code",
+            "url": "https://bscscan.com/address/0xC638a73969C0F7442Ba8F5Ffda9968434891034B#code"
         }
+    ],
+    "tags": [
+        "defi"
     ]
 }
