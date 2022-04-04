@@ -1,3 +1,4 @@
+{
 "name": "Digital Gold Token",
 "website": "https://dgitoken.com/",
 "description": "Digital Gold Token is the future of decentralized digital gold trading with physical gold as the backing.",
