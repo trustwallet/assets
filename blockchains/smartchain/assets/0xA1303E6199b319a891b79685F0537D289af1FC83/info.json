@@ -3,27 +3,27 @@
     "website": "https://narwhalswap.org",
     "description": "Narwhalswap Protocol — DeFi Platform with Sustainability. We will build a new unique dapp and protocol to enhance the value of the DeFi, create diversified investment, and become the future of financial services.",
     "explorer": "https://bscscan.com/token/0xa1303e6199b319a891b79685f0537d289af1fc83",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/narwhalswap"
-        },
-        {
-            "name": "Medium",
-            "url": "https://medium.com/narwhalswap"
-        },
-        {
-            "name": "Docs",
-            "url": "https://docs.narwhalswap.org"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/narwhalswap"
-        }
-    ],
     "type": "BEP20",
     "symbol": "NAR",
     "decimals": 18,
     "status": "active",
-    "id": "0xA1303E6199b319a891b79685F0537D289af1FC83"
+    "id": "0xA1303E6199b319a891b79685F0537D289af1FC83",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/narwhalswap"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/narwhalswap"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/narwhalswap"
+        },
+        {
+            "name": "docs",
+            "url": "https://docs.narwhalswap.org"
+        }
+    ]
 }

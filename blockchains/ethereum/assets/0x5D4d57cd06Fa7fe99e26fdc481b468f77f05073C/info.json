@@ -1,8 +1,6 @@
 {
     "name": "Netkoin",
     "website": "https://netkoin.com",
-    "source_code": "https://etherscan.io/address/0x5d4d57cd06fa7fe99e26fdc481b468f77f05073c#code",
-    "white_paper": "https://www.netkoin.com/wp-content/uploads/2019/09/Netkoin-Whitepaper-version-3_0-1.pdf",
     "description": "Netkoin is a crypto rewards platform.",
     "explorer": "https://etherscan.io/token/0x5d4d57cd06fa7fe99e26fdc481b468f77f05073c",
     "research": "https://coinmarketcap.com/currencies/netkoin/",
@@ -10,5 +8,11 @@
     "symbol": "NTK",
     "decimals": 18,
     "status": "active",
-    "id": "0x5D4d57cd06Fa7fe99e26fdc481b468f77f05073C"
+    "id": "0x5D4d57cd06Fa7fe99e26fdc481b468f77f05073C",
+    "links": [
+        {
+            "name": "whitepaper",
+            "url": "https://www.netkoin.com/wp-content/uploads/2019/09/Netkoin-Whitepaper-version-3_0-1.pdf"
+        }
+    ]
 }

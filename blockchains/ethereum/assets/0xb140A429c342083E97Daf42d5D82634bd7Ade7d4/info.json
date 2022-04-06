@@ -1,7 +1,6 @@
 {
     "name": "WAXG",
     "website": "https://wax.io",
-    "white_paper": "https://github.com/worldwide-asset-exchange/whitepaper",
     "description": "WAX Governance Token",
     "explorer": "https://etherscan.io/token/0xb140A429c342083E97Daf42d5D82634bd7Ade7d4",
     "research": "https://wax.io/blog/tags/technical",
@@ -9,5 +8,11 @@
     "symbol": "WAXG",
     "decimals": 8,
     "status": "active",
-    "id": "0xb140A429c342083E97Daf42d5D82634bd7Ade7d4"
+    "id": "0xb140A429c342083E97Daf42d5D82634bd7Ade7d4",
+    "links": [
+        {
+            "name": "whitepaper",
+            "url": "https://github.com/worldwide-asset-exchange/whitepaper"
+        }
+    ]
 }

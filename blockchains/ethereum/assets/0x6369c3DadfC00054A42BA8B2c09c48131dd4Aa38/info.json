@@ -2,33 +2,28 @@
     "name": "Morpher Token",
     "website": "https://morpher.com",
     "description": "Morpher rebuilds financial markets from the ground up on the Ethereum Blockchain. All in the pursuit of the perfect trading experience. With Zero Fees, Perfectly Liquid Markets, No Counterparties, Verifiable and Transparent Execution all Secured with Blockchain Technology",
-    "white_paper": "https://www.morpher.com/docs/morpher_whitepaper.pdf",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/morpher_io",
-            "handle": "morpher_io"
-        },
-        {
-            "name": "Medium",
-            "url": "https://medium.com/morpher",
-            "handle": "morpher"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/morpher_io",
-            "handle": "morpher_io"
-        },
-        {
-            "name": "Linkedin",
-            "url": "https://www.linkedin.com/company/morpher/",
-            "handle": "morpher"
-        }
-    ],
     "explorer": "https://etherscan.io/token/0x6369c3DadfC00054A42BA8B2c09c48131dd4Aa38",
     "type": "ERC20",
     "symbol": "MPH",
     "decimals": 18,
     "status": "active",
-    "id": "0x6369c3DadfC00054A42BA8B2c09c48131dd4Aa38"
+    "id": "0x6369c3DadfC00054A42BA8B2c09c48131dd4Aa38",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/morpher_io"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/morpher_io"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/morpher"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://www.morpher.com/docs/morpher_whitepaper.pdf"
+        }
+    ]
 }

@@ -8,5 +8,35 @@
     "symbol": "YFI",
     "decimals": 18,
     "status": "active",
-    "id": "0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e"
+    "id": "0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e",
+    "tags": [
+        "defi",
+        "governance"
+    ],
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/iearn-finance"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/iearnfinance"
+        },
+        {
+            "name": "blog",
+            "url": "https://medium.com/iearn"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/iearnfinance"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://docs.yearn.finance/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/yearn-finance/"
+        }
+    ]
 }

@@ -1,29 +1,29 @@
 {
     "name": "StarDEX",
     "website": "https://stardex.io/",
-    "source_code": "https://github.com/stardexio",
     "description": "Decentralized protocol with DeFi swap interface including a fair fee distribution system and advanced matching engine.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/stardexio",
-            "handle": "stardexio"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/stardexio",
-            "handle": "stardexio"
-        },
-        {
-            "name": "Medium",
-            "url": "https://medium.com/@stardex",
-            "handle": "stardex"
-        }
-    ],
     "explorer": "https://etherscan.io/token/0xC0E47007e084EEF3EE58eb33D777b3B4Ca98622f",
     "type": "ERC20",
     "symbol": "XSTAR",
     "decimals": 18,
     "status": "active",
-    "id": "0xC0E47007e084EEF3EE58eb33D777b3B4Ca98622f"
+    "id": "0xC0E47007e084EEF3EE58eb33D777b3B4Ca98622f",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/stardexio"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/stardexio"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/stardexio"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/@stardex"
+        }
+    ]
 }

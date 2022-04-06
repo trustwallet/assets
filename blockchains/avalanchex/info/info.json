@@ -1,8 +1,6 @@
 {
     "name": "Avalanche X-Chain",
     "website": "http://avax.network",
-    "source_code": "https://github.com/ava-labs",
-    "white_paper": "https://www.avalabs.org/whitepapers",
     "description": "Avalanche is an open-source platform for launching highly decentralized applications, new financial primitives, and new interoperable blockchains. This is the X-Chain, the default asset blockchain on Avalanche and enables the creation of new assets, exchanging between assets, and cross-subnet transfers.",
     "explorer": "https://explorer.avax.network",
     "research": "https://research.binance.com/en/projects/avalanche",
@@ -11,6 +9,16 @@
     "decimals": 9,
     "status": "active",
     "tags": [
-        "staking-native"
+        "defi"
+    ],
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/ava-labs"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://www.avalabs.org/whitepapers"
+        }
     ]
 }

@@ -1,13 +1,21 @@
 {
     "name": "CBDAO",
     "website": "https://coinbreeder.com",
-    "source_code": "https://github.com/coinbreeder/coinbreederDAO/",
-    "white_paper": "https://drive.google.com/file/d/1wdVdS1QMcmDLL2IwaXD4p3TD__YeVY7b/view",
     "description": "CBDAO serves as a sandbox to research and proof test various decentralized consensus protocols on DAOs.",
     "explorer": "https://etherscan.io/token/0x4639cd8cd52EC1CF2E496a606ce28D8AfB1C792F",
     "type": "ERC20",
     "symbol": "BREE",
     "decimals": 18,
     "status": "active",
-    "id": "0x4639cd8cd52EC1CF2E496a606ce28D8AfB1C792F"
+    "id": "0x4639cd8cd52EC1CF2E496a606ce28D8AfB1C792F",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/coinbreeder/coinbreederDAO/"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://drive.google.com/file/d/1wdVdS1QMcmDLL2IwaXD4p3TD__YeVY7b/view"
+        }
+    ]
 }

@@ -1,11 +1,14 @@
 {
-    "name": "eRSDL",
-    "website": "https://UnFederalReserve.com",
-    "description": "The eRSDL ecosystem is like a safe-harbor where sophisticated parties are the pricing oracles and ordinary people can participate alongside with a reduced chance of being gamed by experts.",
+    "name": "unFederalReserve",
+    "website": "https://unFederalReserve.com",
+    "description": "unFederalReserve is a banking SaaS company built on blockchain technology. Our banking products are designed for smaller U.S. Treasury chartered banks and non-bank lenders in need of greater liquidity without sacrificing security or compliance.",
     "explorer": "https://etherscan.io/token/0x5218E472cFCFE0b64A064F055B43b4cdC9EfD3A6",
     "type": "ERC20",
     "symbol": "eRSDL",
     "decimals": 18,
     "status": "active",
-    "id": "0x5218E472cFCFE0b64A064F055B43b4cdC9EfD3A6"
+    "id": "0x5218E472cFCFE0b64A064F055B43b4cdC9EfD3A6",
+    "tags": [
+        "governance"
+    ]
 }

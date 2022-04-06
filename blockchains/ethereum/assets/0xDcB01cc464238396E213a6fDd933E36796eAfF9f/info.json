@@ -3,31 +3,27 @@
     "website": "https://yield.credit/",
     "description": "A p2p defi lending app where lenders earn fixed, guaranteed interest and borrowers earn YLD for every repaid loan",
     "explorer": "https://etherscan.io/token/0xdcb01cc464238396e213a6fdd933e36796eaff9f",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/YieldCredit",
-            "handle": "YieldCredit"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/yieldchat",
-            "handle": "Yield (YLD) Community"
-        },
-        {
-            "name": "Discord",
-            "url": "https://discord.gg/CGBGRrKJyX",
-            "handle": "Yield"
-        },
-        {
-            "name": "Reddit",
-            "url": "https://www.reddit.com/r/YieldCredit",
-            "handle": "YieldCredit"
-        }
-    ],
     "type": "ERC20",
     "symbol": "YLD",
     "decimals": 18,
     "status": "active",
-    "id": "0xDcB01cc464238396E213a6fDd933E36796eAfF9f"
+    "id": "0xDcB01cc464238396E213a6fDd933E36796eAfF9f",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/YieldCredit"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/yieldchat"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/CGBGRrKJyX"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/YieldCredit"
+        }
+    ]
 }

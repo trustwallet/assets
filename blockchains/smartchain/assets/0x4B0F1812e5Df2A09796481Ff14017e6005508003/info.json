@@ -1,8 +1,6 @@
 {
-    "name": "Trust Wallet Token",
+    "name": "Trust Wallet",
     "website": "https://trustwallet.com",
-    "source_code": "https://github.com/trustwallet/",
-    "white_paper": "",
     "description": "Utility token to increase adoption of cryptocurrency.",
     "explorer": "https://bscscan.com/token/0x4B0F1812e5Df2A09796481Ff14017e6005508003",
     "research": "https://research.binance.com/en/projects/trustwallet",
@@ -13,5 +11,11 @@
     "id": "0x4B0F1812e5Df2A09796481Ff14017e6005508003",
     "tags": [
         "governance"
+    ],
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/trustwallet/"
+        }
     ]
 }
