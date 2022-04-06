@@ -7,5 +7,20 @@
     "symbol": "SUUPER",
     "decimals": 5,
     "status": "active",
-    "id": "0xB00B5A85181305c6f5E072e56C2Bf8240e0747BD"
+    "id": "0xB00B5A85181305c6f5E072e56C2Bf8240e0747BD",
+	"tags":"auto-staking",
+	"links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/SuuperProtocol"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/suuperprotocolchat"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://suuper-protocol.gitbook.io/suuperprotocol/"
+        }
+    ]
 }
