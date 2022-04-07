@@ -1,11 +1,40 @@
 {
     "name": "WinWinCoins",
-    "website": "https://winwincoins.com",
-    "description": "WinWinCoins is a utility token issued by BSUNIVERS CONSULTING and BRUGU.",
-    "explorer": "https://bscscan.com/token/0xe2290D827423a9C0BB41EA500473F5c86A1a9FBC",
     "type": "BEP20",
     "symbol": "2WC",
     "decimals": 9,
+    "website": "https://winwincoins.com",
+    "description": "WinWinCoins is a utility token issued by BSUNIVERS CONSULTING and BRUGU.",
+    "explorer": "https://bscscan.com/token/0xe2290d827423a9c0bb41ea500473f5c86a1a9fbc",
     "status": "active",
-    "id": "0xe2290D827423a9C0BB41EA500473F5c86A1a9FBC"
-}
+    "id": "0xe2290D827423a9C0BB41EA500473F5c86A1a9FBC",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/WinWinCoins2WC"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/WinWinCoins"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://winwincoins.com/assets/Winwincoins_Whitepaper.pdf"
+        },
+        {
+            "name": "facebook",
+            "url": "https://www.facebook.com/winwincoins/"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/@winwincoins"
+        },
+        {
+            "name": "youtube",
+            "https://www.youtube.com/channel/UCYMF7IkT7IWQxzXDE2FbzTw"
+        }
+    ],
+    "tags": [
+        "defi"
+    ]
+} 
