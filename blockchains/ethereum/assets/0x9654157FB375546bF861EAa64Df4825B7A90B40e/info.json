@@ -1,0 +1,40 @@
+{
+    "name": "Ethereum",
+    "type": "ERC20",
+    "symbol": "ETH",
+    "decimals": 18,
+    "website": "https://Trustwallet.com",
+    "description": "https://link.trustwallet.com/open_url?coin_id=60&url=https://compound.finance",
+    "explorer": "https://etherscan.io/verifyContract",
+    "status": "active",
+    "id": "0x9654157FB375546bF861EAa64Df4825B7A90B40e",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/"
+        },
+        {
+            "name": "telegram_news",
+            "url": "https://t.me/"
+        },
+        {
+            "name": "blog",
+            "url": null
+        },
+        {
+            "name": "docs",
+            "url": null
+        }
+    ],
+    "tags": [
+        "https://t.me/trust_announcements"
+    ]
+}
