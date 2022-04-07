@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>mean-logo</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FF0017" offset="0%"></stop>
+            <stop stop-color="#B7001C" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="mean-logo">
+            <path d="M200,100 C200,155.228 155.228,200 100,200 C44.7715,200 0,155.228 0,100 C0,44.7715 44.7715,0 100,0 C155.228,0 200,44.7715 200,100 Z" id="Path" fill="#000000" fill-rule="nonzero"></path>
+            <path d="M164.29435,47 L100.003593,64.0011047 L35.7128364,47 L32,76.6180662 L58.6150486,144.326065 L100.008384,179 L141.39094,144.326065 L168,76.6180662 L164.29435,47 Z M151.247106,63 L153,77.1475459 L129.689376,137.099368 L114.830376,149.68112 L135.817341,82.4531768 L108.99257,89.4197531 L104.07778,149.514905 L98.999403,163 L93.9222196,149.514905 L89.0050416,89.4197531 L62.1814654,82.4531768 L83.1684301,149.68112 L68.3094298,137.099368 L45,77.1475459 L46.752894,63 L98.999403,76.9716953 L151.247106,63 Z" id="mean-mark" fill="url(#linearGradient-1)"></path>
+        </g>
+    </g>
+</svg>

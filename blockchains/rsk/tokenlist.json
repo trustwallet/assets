@@ -1,0 +1,23 @@
+{
+  "name": "Trust Wallet: RSK",
+  "logoURI": "https://trustwallet.com/assets/images/favicon.png",
+  "timestamp": "2021-09-23T12:27:54.729Z",
+  "tokens": [
+      {
+          "chainId": 30,
+          "asset": "c60_t0x2acc95758f8b5f583470ba265eb685a8f45fc9d5",
+          "type": "ERC20",
+          "address": "0x2acc95758f8b5f583470ba265eb685a8f45fc9d5",
+          "name": "RSK Infrastructure Framework Token",
+          "symbol": "RIF",
+          "decimals": 18,
+          "logoURI": "https://assets.trustwalletapp.com/blockchains/rsk/assets/0x2acc95758f8b5f583470ba265eb685a8f45fc9d5/logo.png",
+          "pairs": []
+      }
+  ],
+  "version": {
+      "major": 0,
+      "minor": 0,
+      "patch": 0
+  }
+}

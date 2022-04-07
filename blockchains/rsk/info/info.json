@@ -1,0 +1,33 @@
+{
+  "name": "RSK",
+  "website": "https://developers.rsk.co/",
+  "description": "RSK is a layer 2 blockchain that is merge mined with Bitcoin. Its currecny RBTC is pegged 1 to 1 with BTC through a decentralised PowPeg. It features a smart contract platform that is compatible with EVM at the op-code level, and an RPC that is compatible with geth.",
+  "explorer": "https://explorer.rsk.co/",
+  "research": "https://research.rsk.dev/",
+  "symbol": "RBTC",
+  "type": "coin",
+  "decimals": 18,
+  "status": "active",
+  "links": [
+      {
+          "name": "github",
+          "url": "https://github.com/rsksmart"
+      },
+      {
+          "name": "twitter",
+          "url": "https://twitter.com/rsksmart"
+      },
+      {
+          "name": "youtube",
+          "url": "https://youtube.com/rsksmart"
+      },
+      {
+          "name": "reddit",
+          "url": "https://reddit.com/r/rootstock"
+      },
+      {
+          "name": "whitepaper",
+          "url": "https://rsk.co/Whitepapers/RSK-White-Paper-Updated.pdf"
+      }
+  ]
+}
