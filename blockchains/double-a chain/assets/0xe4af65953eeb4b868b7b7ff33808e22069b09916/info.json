@@ -1,0 +1,30 @@
+{
+    "name": "AAC-Peg USDC Token",
+    "type": "ARC20",
+    "symbol": "USDC",
+    "decimals": 18,
+    "website": "https://scan.acuteangle.com/tokentxns/25/1",
+    "description": "USDC is a stablecoin created by Coinbase and Circle in 2018. Like USDT or any other USD-backed token, its price remains fixed at $1.",
+    "explorer": "https://scan.acuteangle.com/token/0xe4af65953eeb4b868b7b7ff33808e22069b09916/25/1",
+    "status": "active",
+    "id": "0xe4af65953eeb4b868b7b7ff33808e22069b09916",
+    "links": [
+        {
+            "name": "centre",
+            "url": "https://www.centre.io/usdc"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/centre_io"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/centre-blog"
+        }
+    ],
+    "tags": [
+        "defi",
+        "stablecoin",
+        "double-a chain-tag"
+    ]
+}
