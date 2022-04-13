@@ -1,13 +1,13 @@
 {
-    "type": "ESDTSFT",
-    "id": "EGLDUSDCF-8600f8",
-    "name": "EGLD/USDC LP Staked",
-    "symbol": "EGLDUSDCF",
+    "type": "ESDT",
+    "id": "ZPAYWEGLD-34e5c1",
+    "name": "ZPAY/WEGLD LP",
+    "symbol": "ZPAYWEGLD",
     "decimals": 18,
-    "status": "abandoned",
-    "description": "This token tracks your LP token stake in the EGLD/USDC farm on the Maiar DEX.",
+    "status": "active",
+    "description": "Liquidity Provider (LP) Token obtained by adding liquidity in the ZPAY/EGLD pool on the Maiar DEX.",
     "website": "https://maiar.exchange",
-    "explorer": "https://explorer.elrond.com/collections/EGLDUSDCF-8600f8",
+    "explorer": "https://explorer.elrond.com/tokens/ZPAYWEGLD-34e5c1",
     "links": [
         {
             "name": "docs",

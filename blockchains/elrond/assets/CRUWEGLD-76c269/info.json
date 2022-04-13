@@ -1,13 +1,13 @@
 {
-    "type": "ESDTSFT",
-    "id": "EGLDMEXF-5bcc57",
-    "name": "EGLD/MEX LP Staked",
-    "symbol": "EGLDMEXF",
+    "type": "ESDT",
+    "id": "CRUWEGLD-76c269",
+    "name": "CRU/WEGLD LP",
+    "symbol": "CRUWEGLD",
     "decimals": 18,
-    "status": "abandoned",
-    "description": "This token tracks your LP token stake in the EGLD/MEX farm on the Maiar DEX.",
+    "status": "active",
+    "description": "Liquidity Provider (LP) Token obtained by adding liquidity in the CRU/EGLD pool on the Maiar DEX.",
     "website": "https://maiar.exchange",
-    "explorer": "https://explorer.elrond.com/collections/EGLDMEXF-5bcc57",
+    "explorer": "https://explorer.elrond.com/tokens/CRUWEGLD-76c269",
     "links": [
         {
             "name": "docs",

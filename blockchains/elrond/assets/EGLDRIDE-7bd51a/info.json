@@ -1,13 +1,13 @@
 {
-    "type": "ESDTSFT",
-    "id": "MEXFARM-e7af52",
-    "name": "MEX Staked",
-    "symbol": "MEXFARM",
+    "type": "ESDT",
+    "id": "EGLDRIDE-7bd51a",
+    "name": "EGLD/RIDE LP",
+    "symbol": "EGLDRIDE",
     "decimals": 18,
-    "status": "abandoned",
-    "description": "This token tracks your MEX stake in the MEX farm on the Maiar DEX.",
+    "status": "active",
+    "description": "Liquidity Provider (LP) Token obtained by adding liquidity in the EGLD/RIDE pool on the Maiar DEX.",
     "website": "https://maiar.exchange",
-    "explorer": "https://explorer.elrond.com/collections/MEXFARM-e7af52",
+    "explorer": "https://explorer.elrond.com/tokens/EGLDRIDE-7bd51a",
     "links": [
         {
             "name": "docs",
