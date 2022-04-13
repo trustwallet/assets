@@ -1,0 +1,33 @@
+{
+    "name": "Senspark",
+    "website": "https://bombcrypto.io/",
+    "description": "BCOIN is the token used in the Bomb Crypto game",
+    "explorer": "https://bscscan.com/token/0x23383e18dEedF460EbB918545C8b0588038B7998",
+    "type": "BEP20",
+    "symbol": "SEN",
+    "decimals": 18,
+    "status": "active",
+    "id": "0x23383e18dEedF460EbB918545C8b0588038B7998",
+    "links": [
+        {
+            "name": "telegram",
+            "url": "https://t.me/senspark_channel"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/SensparkMeta"
+        },
+        {
+            "name": "facebook",
+            "url": "https://www.facebook.com/TeamSenspark"
+        }
+        // {
+        //     "name": "coinmarketcap",
+        //     "url": "https://coinmarketcap.com/currencies/"
+        // },
+        // {
+        //     "name": "coingecko",
+        //     "url": "https://coingecko.com/en/coins/"
+        // }
+    ]
+}
