@@ -6,8 +6,31 @@
     "website": "https://ariva.digital/",
     "description": "Ariva (ARV) is a cryptocurrency supported by Ariva Co., produced for active use in global and local tourism and travel networks in the near future.",
     "explorer": "https://etherscan.io/token/0x79c7ef95ad32dcd5ecadb231568bb03df7824815",
-	"twitter":"https://twitter.com/ArivaCoin",
-	"telegram":"https://t.me/ariva_arv",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/ArivaCoin"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/ariva-digital"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/ariva_arv"
+        },
+        {
+            "name": "instagram",
+            "url": "https://www.instagram.com/arivacoin/"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/@arivacoin"
+        }
+    ],
+    "tags": [
+        "metaverse"
+    ],
     "status": "active",
     "id": "0x79C7EF95aD32DcD5ECadB231568Bb03dF7824815"
 }
