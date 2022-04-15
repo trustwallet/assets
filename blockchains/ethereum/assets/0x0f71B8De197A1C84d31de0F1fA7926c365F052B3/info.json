@@ -1,11 +1,32 @@
 {
-    "name": "Arcona Distribution Contract",
-    "symbol": "ARCONA",
+    "name": "Arcona",
     "type": "ERC20",
+    "symbol": "ARCONA",
     "decimals": 18,
-    "description": "-",
-    "website": "https://www.arcona.io/index.html",
+    "website": "https://arcona.space/",
+    "description": "The Arcona X Reality Metaverse generate new forms of reality by bringing digital objects into the physical world and bringing physical world objects into the digital world.",
     "explorer": "https://etherscan.io/token/0x0f71B8De197A1C84d31de0F1fA7926c365F052B3",
-    "status": "abandoned",
-    "id": "0x0f71B8De197A1C84d31de0F1fA7926c365F052B3"
+    "status": "active",
+    "id": "0x0f71B8De197A1C84d31de0F1fA7926c365F052B3",
+    "links": [
+        {
+            "name": "telegram",
+            "url": "https://t.me/arcona_digital_land"
+        },
+        {
+            "name": "telegram_news",
+            "url": "https://t.me/arconadigitalland"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://marketplace.arcona.io/storage/app/uploads/public/5d0/77e/432/5d077e4329632586831527.pdf"
+        },
+        {
+            "name": "blog",
+            "url": "https://www.arcona.space/blog"
+        }
+    ],
+    "tags": [
+        "defi"
+    ]
 }
