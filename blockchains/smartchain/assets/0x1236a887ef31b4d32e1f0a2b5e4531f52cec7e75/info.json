@@ -2,12 +2,12 @@
     "name": "Gami World",
     "website": "https://gamiworld.io/",
     "description": "GAMI is a launchpad and an incubator platform that merges the gaming world with blockchain technology and offers guaranteed allocation in IDOs to $GAMI stakers who belong to a tier.",
-    "explorer": "https://bscscan.com/token/0x1236a887ef31b4d32e1f0a2b5e4531f52cec7e75",
+    "explorer": "https://bscscan.com/token/0x1236a887ef31B4d32E1F0a2b5e4531F52CeC7E75",
     "type": "BEP20",
     "symbol": "GAMI",
     "decimals": 6,
     "status": "active",
-    "id": "0x1236a887ef31b4d32e1f0a2b5e4531f52cec7e75",
+    "id": "0x1236a887ef31B4d32E1F0a2b5e4531F52CeC7E75",
     "links": [
         {
             "name": "telegram",
@@ -23,7 +23,7 @@
         },
         {
             "name": "source_code",
-            "url": "https://bscscan.com/address/0x1236a887ef31b4d32e1f0a2b5e4531f52cec7e75#code"
+            "url": "https://bscscan.com/address/0x1236a887ef31B4d32E1F0a2b5e4531F52CeC7E75#code"
         },
         {
             "name": "github",
@@ -37,6 +37,9 @@
             "name": "coingecko",
             "url": "https://coingecko.com/tr/coins/gami-world"
         }
+    ],
+    "tags": [
+        "launchpad","defi"
     ]
 }
 
