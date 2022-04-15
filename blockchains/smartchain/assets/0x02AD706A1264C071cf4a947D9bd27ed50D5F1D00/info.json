@@ -1,17 +1,32 @@
 {
-  "name": "Pang Coin",
-  "website": "https://meta-pang.com/",
-  "description": "A token that allows you to purchase items in Metapang games.",
-  "explorer": "https://bscscan.com/token/0x02AD706A1264C071cf4a947D9bd27ed50D5F1D00",
-  "type": "BEP20",
-  "symbol": "BIP",
-  "decimals": 18,
-  "status": "active",
-  "id": "0x02AD706A1264C071cf4a947D9bd27ed50D5F1D00",
-  "links": [
-      {
-          "name": "github",
-          "url": "https://github.com/MetaPang/pang-contract"
-      }
-  ]
+    "name": "Pang Coin",
+    "type": "BEP20",
+    "symbol": "BIP",
+    "decimals": 18,
+    "website": "https://meta-pang.com",
+    "description": "COCO Games is a blockchain game platform that shares the revenue structure monopolized by the platform to users. It launched Metapang, a casual shooting game, as its first project, aiming for a tokenomics linked to Defi.",
+    "explorer": "https://bscscan.com/token/0x02ad706a1264c071cf4a947d9bd27ed50d5f1d00",
+    "status": "active",
+    "id": "0x02AD706A1264C071cf4a947D9bd27ed50D5F1D00",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/metapang1"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/MetaPang"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/xZ4NRBjDsq"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://metapang.s3.ap-northeast-2.amazonaws.com/whitepaper/metapang_whitepaper_v1.0.pdf"
+        }
+    ],
+    "tags": [
+        "gamefi"
+    ]
 }
