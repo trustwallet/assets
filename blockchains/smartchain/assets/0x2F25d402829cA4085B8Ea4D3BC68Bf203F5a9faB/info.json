@@ -1,12 +1,36 @@
-
 {
-    "name": "Eagonswap Token",
-    "website": "https://eagonswap.exchange",
-    "description": "Eagon is the native token of the Eagon swap exchange system. The Eagon smart contract code is built across the trio of blockchain networks; the polygon, ethereum and binance blockchains.",
-    "explorer": "https://bscscan.com/token/0x2F25d402829cA4085B8Ea4D3BC68Bf203F5a9faB",
+    "name": "Eagonswap",
     "type": "BEP20",
     "symbol": "Eagon",
     "decimals": 18,
+    "website": "https://eagonswap.exchange",
+    "description": "Eagon swap is a state of the art decentralized exchange platform built on the polygon network with an automated market making functionality and cross linkage interoperability across the polygon, ethereum and binance blockchain networks, the very first of its kinds to have this trio of blockchain interoperability.",
+    "explorer": "https://bscscan.com/token/0x2F25d402829cA4085B8Ea4D3BC68Bf203F5a9faB",
     "status": "active",
-    "id": "0x2F25d402829cA4085B8Ea4D3BC68Bf203F5a9faB"
+    "id": "0x2F25d402829cA4085B8Ea4D3BC68Bf203F5a9faB",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/eagonswap"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/eagonswap"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/eagonswapofficial"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/eagonswap-token/"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://eagonswap.exchange/whitepaper.pdf"
+        }
+    ],
+    "tags": [
+        "staking"
+    ]
 }
