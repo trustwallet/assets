@@ -7,11 +7,19 @@
     "symbol": "ElonBank",
     "decimals": 5,
     "status": "active",
-    "id": "0xD5f363F83b36E10e8a823166b992c0bDc3deDE2C",
+    "id": "0xD5f363F83b36E10e8a823166b992c0bDc3deDE2C"
     "links": [
         {
             "name": "twitter",
             "url": "https://twitter.com/ElonBankBSC"
+        },
+        {
+            "name": "facebook",
+            "url": "https://www.facebook.com/ElonBank-110185674954444"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://docs.elonbank.io/"
         },
         {
             "name": "coinmarketcap",
@@ -19,7 +27,7 @@
         },
         {
             "name": "coingecko",
-            "url": "https://coingecko.com/en/coins/elonbank"
+            "url": "https://www.coingecko.com/en/coins/elonbank"
         },
         {
             "name": "telegram",
@@ -27,6 +35,6 @@
         }
     ],
     "tags": [
-        "staking"
-    ] 
+        "staking",
+    ]
 }
