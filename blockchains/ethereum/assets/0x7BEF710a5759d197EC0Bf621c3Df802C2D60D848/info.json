@@ -1,25 +1,44 @@
 {
-    "name": "SPLYT SHOPX",
+    "name": "SHOPX",
     "type": "ERC20",
     "symbol": "SHOPX",
     "decimals": 18,
-    "website": "https://www.splytgenesis.com/",
-    "description": "Splyt is a layer-2 eNFT infrastructure to decentralize the e-commerce supply chain.",
+    "website": "https://shopx.co/",
+    "description": "SHOPX is an NFT-as-a-Service (NaaS) that allows businesses to create branded e-commerce NFTs, driving sales and customer engagement in Web3.",
     "explorer": "https://etherscan.io/token/0x7bef710a5759d197ec0bf621c3df802c2d60d848",
     "status": "active",
     "id": "0x7BEF710a5759d197EC0Bf621c3Df802C2D60D848",
     "links": [
         {
-            "name": "telegram",
-            "url": "https://t.me/splytcore"
-        },
-        {
             "name": "twitter",
-            "url": "https://twitter.com/splytcore"
+            "url": "https://twitter.com/shopxlabs"
         },
         {
             "name": "github",
-            "url": "https://github.com/splytcore"
+            "url": "https://github.com/shopxlabs"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/shopxlabs"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/XNn9shER62"
+        },
+        {
+            "name": "facebook",
+            "url": "https://facebook.com/shopxlabs/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/splyt"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/splyt/"
         }
+    ],
+    "tags": [
+        "nft"
     ]
 }
