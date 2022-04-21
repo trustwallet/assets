@@ -1,17 +1,21 @@
 {
-    "name": "Galaxy Heroes Coin",
+    "name": "Galaxy Heroes",
     "type": "BEP20",
     "symbol": "GHC",
-    "decimals": 9,
+    "decimals": 18,
     "website": "https://galaxyheroescoin.com",
     "description": "Galaxy Heroes Coin is more than just a token. It will have a never seen before NFT platform and gaming app. Be a hero, a Galaxy Hero!",
-    "explorer": "https://bscscan.com/token/0x683fae4411249Ca05243dfb919c20920f3f5bfE0",
-    "status": "abandoned",
-    "id": "0x683fae4411249Ca05243dfb919c20920f3f5bfE0",
+    "explorer": "https://bscscan.com/token/0x22dE16487955AE1f842fa0C0bFf6083a7fDEfeDd",
+    "status": "active",
+    "id": "0x22dE16487955AE1f842fa0C0bFf6083a7fDEfeDd",
     "links": [
         {
             "name": "twitter",
             "url": "https://twitter.com/galaxyheroesghc"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/galaxy-heroes-coin-new/"
         },
         {
             "name": "github",
@@ -20,14 +24,6 @@
         {
             "name": "telegram",
             "url": "https://t.me/galaxyheroescoin"
-        },
-        {
-            "name": "coingecko",
-            "url": "https://coingecko.com/en/coins/galaxy-heroes-coin"
-        },
-        {
-            "name": "coinmarketcap",
-            "url": "https://coinmarketcap.com/currencies/galaxyheroescoin"
         },
         {
             "name": "discord",
@@ -45,5 +41,8 @@
             "name": "youtube",
             "url": "https://youtube.com/channel/UC0XEhzirmXN0AZQIhoR_Vzg"
         }
+    ],
+    "tags": [
+        "defi"
     ]
 }
