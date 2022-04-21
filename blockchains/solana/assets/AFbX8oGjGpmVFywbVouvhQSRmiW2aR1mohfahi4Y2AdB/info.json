@@ -1,13 +1,16 @@
 {
-    "name": "Green Metaverse Token",
-    "type": "BEP20",
-    "symbol": "GMT",
-    "decimals": 8,
-    "website": "https://www.stepn.com",
-    "description": "GMT is the governance token of STEPN, which is a Web3 lifestyle app with fun social elements and gamification design.",
-    "explorer": "https://bscscan.com/token/0x3019BF2a2eF8040C242C9a4c5c4BD4C81678b2A1",
+    "name": "Green Satoshi Token",
+    "symbol": "GST",
+    "type": "SPL",
+    "decimals": 9,
+    "description": "GST serves as the replacement to experience points and in-app currency. Users equipped with NFT Sneakers – walk, jog or run outdoors to earn GST, which can be used to level up and mint new Sneakers.",
+    "website": "https://stepn.com/",
+    "explorer": "https://explorer.solana.com/address/AFbX8oGjGpmVFywbVouvhQSRmiW2aR1mohfahi4Y2AdB",
     "status": "active",
-    "id": "0x3019BF2a2eF8040C242C9a4c5c4BD4C81678b2A1",
+    "id": "AFbX8oGjGpmVFywbVouvhQSRmiW2aR1mohfahi4Y2AdB",
+    "tags": [
+
+    ],
     "links": [
         {
             "name": "reddit",
@@ -29,8 +32,5 @@
             "name": "discord",
             "url": "https://discord.com/invite/stepn"
         }
-    ],
-    "tags": [
-        "governance"
     ]
 }
