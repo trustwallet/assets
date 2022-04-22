@@ -12,11 +12,11 @@ func NewService() *Service {
 }
 
 func (s *Service) IncErrors() {
-	s.errors += 1
+	s.errors++
 }
 
 func (s *Service) IncTotalFiles() {
-	s.totalFiles += 1
+	s.totalFiles++
 }
 
 func (s Service) IsFailed() bool {
