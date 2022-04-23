@@ -1,0 +1,24 @@
+{
+    "name": "FlatCity",
+    "type": "TRC20",
+    "symbol": "FCity",
+    "decimals": 4,
+    "website": "https://flatcity.ru/",
+    "description": "FlatCity company token",
+    "explorer": "https://tronscan.io/#/token20/TEfCNV1Fk7G984charcmJajUVrwX7XCbSE",
+    "status": "active",
+    "id": "TEfCNV1Fk7G984charcmJajUVrwX7XCbSE",
+    "links": [
+        {
+            "name": "whitepaper",
+            "url": "https://github.com/Rukler/wp1/blob/main/flatcity%20wp.pdf"
+        },
+        {
+            "name": "source_code",
+            "url": "https://github.com/Rukler/wp1/tree/main/TRC20-Contract-Template-main"
+        }
+    ],
+    "tags": [
+        "wrapped"
+    ]
+}
