@@ -1,11 +1,24 @@
 {
     "name": "Baby Cat Coin",
+    "website": "https://babycatcoin.com/",
+    "description": "The biggest cat meme reflection token and the only one with auto-stake feature. Simply love, pet, hold BabyCatCoin tokens in your wallet and watch your baby cat grow.",
+    "explorer": "https://bscscan.com/token/0x568404Fefea23Bc406056dC90E61125eD7Bda045",
     "type": "BEP20",
     "symbol": "BABYCAT",
     "decimals": 9,
-    "website": "https://www.babycatcoin.com/",
-    "description": "The biggest cat meme reflection token and the only one with auto-stake feature. Simply love, pet, hold BabyCatCoin tokens in your wallet and watch your baby cat grow.",
-    "explorer": "https://bscscan.com/token/0x568404Fefea23Bc406056dC90E61125eD7Bda045",
     "status": "active",
-    "id": "0x568404Fefea23Bc406056dC90E61125eD7Bda045" 
-}
+    "id": "0x568404Fefea23Bc406056dC90E61125eD7Bda045",
+    "tags": [
+        "deflationary"
+    ],
+    "links": [
+        {
+            "name": "telegram",
+            "url": "https://t.me/babycatcoin"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/BabyCatCoin"
+        }
+    ]
+} 
