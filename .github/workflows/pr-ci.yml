@@ -21,7 +21,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Run check
-        run: go run ./cmd/main.go --config=./.github/assets.config.yaml --script=checker
+        run: make check
 
       - name: Unit Test
         run: make test

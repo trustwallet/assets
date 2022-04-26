@@ -20,7 +20,7 @@ jobs:
         id: go
 
       - name: Run update auto
-        run: go run ./cmd/main.go --config=./.github/assets.config.yaml --script=updater-auto
+        run: make update-auto
 
       - name: Show update result (diff)
         if: success()
@@ -29,7 +29,7 @@ jobs:
           git diff
 
       - name: Run check
-        run: go run ./cmd/main.go --config=./.github/assets.config.yaml --script=checker
+        run: make check
 
       - name: Commit changes
         if: success()
