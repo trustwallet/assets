@@ -3,9 +3,26 @@
     "type": "BEP20",
     "symbol": "BCC",
     "decimals": 9,
-    "website": "https://BlackCanaryCoin.com",
+    "website": "https://blackcanarycoin.com/",
     "description": "The Black Canary is a decentralized project that aims to bring cryptocurrencies to everyone in the community while helping to save birds and other animals that are in need.",
-    "explorer": "https://bscscan.com/token/0x53bed76eb266b7d6a23ee252688dfe4e78318c15",
+    "explorer": "https://bscscan.com/token/0x53BEd76eB266b7D6a23Ee252688dFE4E78318C15",
     "status": "active",
-    "id": "0x53BEd76eB266b7D6a23Ee252688dFE4E78318C15"
+    "id": "0x53BEd76eB266b7D6a23Ee252688dFE4E78318C15",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/canary_coin"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/Black_Canary_Coin_English"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://blackcanarycoin.com/?page_id=24"
+        }
+    ],
+    "tags": [
+        "deflationary"
+    ]
 }
