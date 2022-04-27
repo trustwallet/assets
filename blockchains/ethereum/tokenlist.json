@@ -1315,7 +1315,7 @@
             "asset": "c60_t0xcf0C122c6b73ff809C693DB761e7BaeBe62b6a2E",
             "type": "ERC20",
             "address": "0xcf0C122c6b73ff809C693DB761e7BaeBe62b6a2E",
-            "name": "Floki Inu",
+            "name": "FLOKI",
             "symbol": "FLOKI",
             "decimals": 9,
             "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0xcf0C122c6b73ff809C693DB761e7BaeBe62b6a2E/logo.png",
@@ -3466,14 +3466,44 @@
             "pairs": []
         },
         {
+            "asset": "c60_t0x1E4EDE388cbc9F4b5c79681B7f94d36a11ABEBC9",
+            "type": "ERC20",
+            "address": "0x1E4EDE388cbc9F4b5c79681B7f94d36a11ABEBC9",
+            "name": "X2Y2Token",
+            "symbol": "X2Y2",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x1E4EDE388cbc9F4b5c79681B7f94d36a11ABEBC9/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c60_t0x4d224452801ACEd8B2F0aebE155379bb5D594381",
+            "type": "ERC20",
+            "address": "0x4d224452801ACEd8B2F0aebE155379bb5D594381",
+            "name": "ApeCoin (APE)",
+            "symbol": "APE",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x4d224452801ACEd8B2F0aebE155379bb5D594381/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c60_t0xAf5191B0De278C7286d6C7CC6ab6BB8A73bA2Cd6",
+            "type": "ERC20",
+            "address": "0xAf5191B0De278C7286d6C7CC6ab6BB8A73bA2Cd6",
+            "name": "StargateToken",
+            "symbol": "STG",
+            "decimals": 18,
+            "logoURI": "https://assets.trustwalletapp.com/blockchains/ethereum/assets/0xAf5191B0De278C7286d6C7CC6ab6BB8A73bA2Cd6/logo.png",
+            "pairs": []
+        },
+		{
             "asset": "c60_t0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643",
             "type": "ERC20",
             "address": "0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643",
             "name": "Compound Dai",
             "symbol": "cDAI",
             "decimals": 8,
-            "logoURI": "https://raw.githubusercontent.com/block-wallet/assets/master/blockchains/ethereum/assets/0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643/logo.png",
-            "pairs": []
+            "logoURI": "https://raw.githubusercontent.com/block-wallet/assets/master/blockchains/ethereum/assets/0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643/logo.png",            
+			"pairs": []
         }
     ],
     "version": {
