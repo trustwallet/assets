@@ -1,10 +1,7 @@
 package processor
 
 import (
-	"bytes"
-	"encoding/json"
 	"fmt"
-	"os"
 	"reflect"
 	"sort"
 	"strconv"
@@ -31,9 +28,6 @@ const (
 	assetsRows       = 1000
 	marketPairsLimit = 1000
 	tokensListLimit  = 10000
-
-	twLogoURL       = "https://trustwallet.com/assets/images/favicon.png"
-	timestampFormat = "2006-01-02T15:04:05.000000"
 
 	activeStatus = "active"
 )
@@ -85,7 +79,7 @@ func fetchMissingAssets(chain coin.Coin, assets []explorer.Bep2Asset) error {
 		}
 
 		assetLogoPath := path.GetAssetLogoPath(chain.Handle, a.Asset)
-		if fileLib.FileExists(assetLogoPath) {
+		if fileLib.Exists(assetLogoPath) {
 			continue
 		}
 
@@ -111,7 +105,7 @@ func createLogo(assetLogoPath string, a explorer.Bep2Asset) error {
 }
 
 func createInfoJSON(chain coin.Coin, a explorer.Bep2Asset) error {
-	explorerURL, err := coin.GetCoinExploreURL(chain, a.Asset)
+	explorerURL, err := coin.GetCoinExploreURL(chain, a.Asset, "")
 	if err != nil {
 		return err
 	}
@@ -139,7 +133,7 @@ func createInfoJSON(chain coin.Coin, a explorer.Bep2Asset) error {
 }
 
 func createTokenListJSON(chain coin.Coin, tokens []tokenlist.Token) error {
-	tokenListPath := path.GetTokenListPath(chain.Handle)
+	tokenListPath := path.GetTokenListPath(chain.Handle, path.TokenlistDefault)
 
 	var oldTokenList tokenlist.Model
 	err := fileLib.ReadJSONFile(tokenListPath, &oldTokenList)
@@ -160,8 +154,8 @@ func createTokenListJSON(chain coin.Coin, tokens []tokenlist.Token) error {
 
 	return fileLib.CreateJSONFile(tokenListPath, &tokenlist.Model{
 		Name:      fmt.Sprintf("Trust Wallet: %s", coin.Coins[chain.ID].Name),
-		LogoURI:   twLogoURL,
-		Timestamp: time.Now().Format(timestampFormat),
+		LogoURI:   config.Default.URLs.Logo,
+		Timestamp: time.Now().Format(config.Default.TimeFormat),
 		Tokens:    tokens,
 		Version:   tokenlist.Version{Major: oldTokenList.Version.Major + 1},
 	})
@@ -260,24 +254,9 @@ func isTokenExistOrActive(symbol string) bool {
 
 	assetPath := path.GetAssetInfoPath(coin.Coins[coin.BINANCE].Handle, symbol)
 
-	infoFile, err := os.Open(assetPath)
-	if err != nil {
-		log.Debugf("asset file open error: %s", err.Error())
-		return false
-	}
-
-	buf := bytes.NewBuffer(nil)
-	if _, err = buf.ReadFrom(infoFile); err != nil {
-		log.Debugf("buffer read error: %s", err.Error())
-		return false
-	}
-
-	infoFile.Close()
-
 	var infoAsset info.AssetModel
-	err = json.Unmarshal(buf.Bytes(), &infoAsset)
-	if err != nil {
-		log.Debugf("json unmarshalling error: %s", err.Error())
+	if err := fileLib.ReadJSONFile(assetPath, infoAsset); err != nil {
+		log.Debug(err)
 		return false
 	}
 
@@ -315,8 +294,8 @@ func getTokenType(symbol string, nativeCoinSymbol string, tokenType types.TokenT
 
 func getLogoURI(id, githubChainFolder, nativeCoinSymbol string) string {
 	if id == nativeCoinSymbol {
-		return path.GetChainLogoURL(config.Default.URLs.TWAssetsApp, githubChainFolder)
+		return path.GetChainLogoURL(config.Default.URLs.AssetsApp, githubChainFolder)
 	}
 
-	return path.GetAssetLogoURL(config.Default.URLs.TWAssetsApp, githubChainFolder, id)
+	return path.GetAssetLogoURL(config.Default.URLs.AssetsApp, githubChainFolder, id)
 }
