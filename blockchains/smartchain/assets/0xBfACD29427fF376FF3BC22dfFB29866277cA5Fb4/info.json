@@ -7,5 +7,34 @@
     "description": "A Binance Smart Chain (BSC) token built on best-in-class decentralized technology, PISTON was designed to run an ecosystem. Earn rewards by depositing your tokens in the PISTON RACE dashboard app.",
     "explorer": "https://bscscan.com/token/0xBfACD29427fF376FF3BC22dfFB29866277cA5Fb4",
     "status": "active",
-    "id": "0xBfACD29427fF376FF3BC22dfFB29866277cA5Fb4"
+    "id": "0xBfACD29427fF376FF3BC22dfFB29866277cA5Fb4",
+    "links": [
+      {
+        "name": "twitter",
+        "url": "https://twitter.com/MyDefi_team"
+      },
+      {
+        "name": "telegram",
+        "url": "https://t.me/PISTON_TOKEN"
+      },
+      {
+        "name": "coinmarketcap",
+        "url": "https://coinmarketcap.com/currencies/piston/"
+      },
+      {
+        "name": "whitepaper",
+        "url": "https://piston-token.com/whitepaper"
+      },
+      {
+        "name": "token audit",
+        "url": "https://solidity.finance/audits/PistonToken/"
+      },
+      {
+        "name": "race audit",
+        "url": "https://solidity.finance/audits/PistonRace/"
+      }
+    ],
+    "tags": [
+      "token"
+    ]
 }
