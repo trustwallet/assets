@@ -22,19 +22,15 @@
         "url": "https://coinmarketcap.com/currencies/piston/"
       },
       {
+        "name": "coingecko",
+        "url": "https://www.coingecko.com/en/coins/piston"
+      },
+      {
         "name": "whitepaper",
         "url": "https://piston-token.com/whitepaper"
-      },
-      {
-        "name": "token audit",
-        "url": "https://solidity.finance/audits/PistonToken/"
-      },
-      {
-        "name": "race audit",
-        "url": "https://solidity.finance/audits/PistonRace/"
       }
     ],
     "tags": [
-      "token"
+      "coin"
     ]
 }
