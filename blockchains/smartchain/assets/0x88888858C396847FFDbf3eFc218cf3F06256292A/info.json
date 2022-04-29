@@ -1,11 +1,46 @@
 {
-    "name": "NEK Token",
-    "website": "https://maneko.finance",
-    "description": "NEK is a token issued for participation in the MaNEKO Finance ecosystem.",
-    "explorer": "https://bscscan.com/token/0x88888858C396847FFDbf3eFc218cf3F06256292A",
+    "name": "MaNEKO",
     "type": "BEP20",
     "symbol": "NEK",
     "decimals": 6,
+    "website": "https://maneko.finance",
+    "description": "NEK is a token issued for participation in the MaNEKO Finance ecosystem.",
+    "explorer": "https://bscscan.com/token/0x88888858c396847ffdbf3efc218cf3f06256292a",
     "status": "active",
-    "id": "0x88888858C396847FFDbf3eFc218cf3F06256292A"
+    "id": "0x88888858C396847FFDbf3eFc218cf3F06256292A",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/MaNEKOFinance"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/manekofinance"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/@maneko.finance"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://docs.maneko.finance"
+        },
+        {
+            "name": "telegram_news",
+            "url": "https://t.me/maneko_channel"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/MaNEKO-Finance"
+        },
+        {
+            "name": "blog",
+            "url": "https://www.linkedin.com/company/maneko-finance"
+        }
+    ],
+    "tags": [
+        "gamefi",
+        "nft",
+        "defi"
+    ]
 }
