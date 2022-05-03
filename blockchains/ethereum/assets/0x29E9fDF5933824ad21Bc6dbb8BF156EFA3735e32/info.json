@@ -1,37 +1,24 @@
 {
-    "name": "Meter Stable mapped by Meter.io",
-    "website": "https://meter.io/",
-    "description": "eMTR is the ERC-20 equivalent of MTR, the low-volatility coin of the Meter network.",
-    "explorer": "https://etherscan.io/token/0x29E9fDF5933824ad21Bc6dbb8BF156EFA3735e32",
+    "name": "Meter Stable",
     "type": "ERC20",
-    "symbol": "eMTR",
+    "symbol": "EMTR",
     "decimals": 18,
-    "status": "abandoned",
+    "website": "http://meter.io/",
+    "description": "High-performance blockchain infrastructure that scales and connects the financial Internet.",
+    "explorer": "https://etherscan.io/token/0x29E9fDF5933824ad21Bc6dbb8BF156EFA3735e32",
+    "status": "active",
     "id": "0x29E9fDF5933824ad21Bc6dbb8BF156EFA3735e32",
     "links": [
-        {
-            "name": "github",
-            "url": "https://github.com/meterio"
-        },
         {
             "name": "twitter",
             "url": "https://twitter.com/Meter_IO"
         },
         {
-            "name": "telegram",
-            "url": "https://t.me/Meter_IO"
-        },
-        {
-            "name": "discord",
-            "url": "https://discord.com/invite/XZgZsCn"
-        },
-        {
-            "name": "facebook",
-            "url": "https://facebook.com/MeterFoundation/"
-        },
-        {
-            "name": "reddit",
-            "url": "https://reddit.com/r/Meter_io/"
+            "name": "github",
+            "url": "https://github.com/meterio"
         }
+    ],
+    "tags": [
+        "defi"
     ]
 }
