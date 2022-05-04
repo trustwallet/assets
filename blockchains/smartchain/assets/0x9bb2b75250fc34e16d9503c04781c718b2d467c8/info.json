@@ -1,11 +1,32 @@
 {
-    "name": "Shoppi Coin Token",
-    "website": "https://shoppi.finance",
-    "description": "SHOP is a stable coin works over the Smart Chain with low fees and fast transactions.",
-    "explorer": "https://bscscan.com/token/0x9bb2b75250fc34e16d9503c04781c718b2d467c8",
+    "name": "Shoppi Coin",
     "type": "BEP20",
     "symbol": "SHOP",
     "decimals": 18,
+    "website": "https://shoppi.finance",
+    "description": "Shoppi is transforming the travel industry, making it easier than ever to shop in every city. This community of travelers saw the need for browsing new, exciting content while connecting with the local culture of every city around the world. Their online marketplace enables shoppers and businesses to interact and purchase foreign goods, regardless of cultural language barriers or geographic location.",
+    "explorer": "https://bscscan.com/token/0x9bb2b75250fc34e16d9503c04781c718b2d467c8",
     "status": "active",
-    "id": "0x9bb2b75250fc34e16d9503c04781c718b2d467c8"
+    "id": "0x9bb2b75250fc34e16d9503c04781c718b2d467c8",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/shoppi_online"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/shoppi_coin"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://1drv.ms/w/s!AoRxp9up59_ngiCHk0rTUSsLKrKf"
+        },
+        {
+            "name": "source_code",
+            "url": "https://bscscan.com/address/0x9bb2b75250fc34e16d9503c04781c718b2d467c8#code"
+        }
+    ],
+    "tags": [
+        "defi"
+    ]
 }
