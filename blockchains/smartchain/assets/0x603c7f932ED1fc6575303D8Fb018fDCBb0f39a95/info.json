@@ -1,22 +1,14 @@
 {
-    "name": "Ape Swap Finance Banana",
-    "website": "https://apeswap.finance",
-    "description": "ApeSwap is an Automated Market Maker, Yield Farming, and Staking platform on Binance Smart Chain. ApeSwap was built by DeFi Apes, for DeFi Apes. We have a dedicated team of experienced monkeys, who have been in the crypto space for years.",
-    "explorer": "https://bscscan.com/token/0x603c7f932ED1fc6575303D8Fb018fDCBb0f39a95",
+    "name": "ApeSwap BANANA",
     "type": "BEP20",
     "symbol": "BANANA",
     "decimals": 18,
+    "website": "https://apeswap.finance/",
+    "description": "ApeSwap is a Decentralized Autonomous Organization (DAO) that offers a full suite of tools to explore and engage with decentralized finance opportunities. Using the products within our DeFi Hub, users and partners can tap into this new wave of financial innovation in a secure, transparent, and globally accessible way.",
+    "explorer": "https://bscscan.com/token/0x603c7f932ED1fc6575303D8Fb018fDCBb0f39a95",
     "status": "active",
     "id": "0x603c7f932ED1fc6575303D8Fb018fDCBb0f39a95",
     "links": [
-        {
-            "name": "github",
-            "url": "https://github.com/ApeSwapFinance"
-        },
-        {
-            "name": "docs",
-            "url": "https://apeswap.gitbook.io/apeswap-finance/"
-        },
         {
             "name": "twitter",
             "url": "https://twitter.com/ape_swap"
@@ -26,8 +18,8 @@
             "url": "https://t.me/ape_swap"
         },
         {
-            "name": "telegram_news",
-            "url": "https://t.me/ape_swap_news"
+            "name": "github",
+            "url": "https://github.com/ApeSwapFinance"
         },
         {
             "name": "medium",
@@ -35,7 +27,7 @@
         },
         {
             "name": "discord",
-            "url": "https://discord.com/invite/AbVxfGRCSd/"
+            "url": "https://discord.com/invite/AbVxfGRCSd"
         },
         {
             "name": "reddit",
@@ -48,6 +40,18 @@
         {
             "name": "coingecko",
             "url": "https://coingecko.com/en/coins/apeswap-finance"
+        },
+        {
+            "name": "telegram_news",
+            "url": "https://t.me/ape_swap_news"
+        },
+        {
+            "name": "docs",
+            "url": "https://apeswap.gitbook.io/apeswap-finance/"
         }
+    ],
+    "tags": [
+        "staking",
+        "defi"
     ]
 }
