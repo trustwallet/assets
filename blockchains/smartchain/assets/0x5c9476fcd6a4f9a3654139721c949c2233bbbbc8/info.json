@@ -1,0 +1,25 @@
+{
+    "name": "Venus MATIC",
+    "website": "https://venus.io/",
+    "description": "The Venus vTokens, which are self-contained borrowing and lending contracts. VToken contains the core logic and VBep20, VBUSD, VSXP, VUSDC, VUSDT, VXVS and VBNB add public interfaces for Bep20 tokens and bnb, respectively.",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/VenusProtocol"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/VenusProtocol"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/VenusProtocol"
+        }
+    ],
+    "explorer": "https://bscscan.com/token/0x5c9476FcD6a4F9a3654139721c949c2233bBbBc8",
+    "type": "BEP20",
+    "symbol": "vMATIC",
+    "decimals": 8,
+    "status": "active",
+    "id": "0x5c9476FcD6a4F9a3654139721c949c2233bBbBc8"
+}

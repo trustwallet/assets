@@ -1,0 +1,25 @@
+{
+    "name": "Binance-Peg XRP Token",
+    "website": "https://ripple.com/xrp",
+    "description": "Binance-Peg XRP Token (XRP BEP20) is a token issued by Binance on Smart Chain; its price is pegged to XRP (XRP) at a ratio of 1:1.",
+    "explorer": "https://bscscan.com/token/0x1D2F0da169ceB9fC7B3144628dB156f3F6c60dBE",
+    "research": "https://research.binance.com/en/projects/xrp",
+    "type": "BEP20",
+    "symbol": "XRP",
+    "decimals": 18,
+    "status": "active",
+    "id": "0x1D2F0da169ceB9fC7B3144628dB156f3F6c60dBE",
+    "tags": [
+        "binance-peg"
+    ],
+    "links": [
+        {
+            "name": "facebook",
+            "url": "https://facebook.com/ripplepay"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/Ripple"
+        }
+    ]
+}

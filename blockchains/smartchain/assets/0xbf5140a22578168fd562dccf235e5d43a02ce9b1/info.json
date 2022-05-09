@@ -1,0 +1,35 @@
+{
+    "name": "Binance-Peg Uniswap",
+    "website": "https://uniswap.org",
+    "description": "Binance-Peg Uniswap (UNI BEP20) is a token issued by Binance on Smart Chain; its price is pegged to Uniswap (UNI ERC20) at a ratio of 1:1.",
+    "explorer": "https://bscscan.com/token/0xBf5140A22578168FD562DCcF235E5D43A02ce9B1",
+    "research": "https://research.binance.com/en/projects/uniswap",
+    "type": "BEP20",
+    "symbol": "UNI",
+    "decimals": 18,
+    "status": "active",
+    "id": "0xBf5140A22578168FD562DCcF235E5D43A02ce9B1",
+    "tags": [
+        "binance-peg",
+        "defi",
+        "governance"
+    ],
+    "links": [
+        {
+            "name": "blog",
+            "url": "https://uniswap.org/blog/uni/"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/UniswapProtocol"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/uniswap/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/uniswap/"
+        }
+    ]
+}
