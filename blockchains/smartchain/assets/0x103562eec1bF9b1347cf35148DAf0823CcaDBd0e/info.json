@@ -1,0 +1,30 @@
+{
+    "name": "Bitcoin",
+    "type": "BEP20",
+    "symbol": "BTC",
+    "decimals": 8,
+    "website": "https://bitcoin.org",
+    "description": "Bitcoin (BTC)",
+    "explorer": "https://bscscan.com/token/0x103562eec1bF9b1347cf35148DAf0823CcaDBd0e",
+    "status": "active",
+    "id": "0x103562eec1bF9b1347cf35148DAf0823CcaDBd0e",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/bitcoin"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/bitcoin"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/bitcoin"
+        }
+    ],
+    "tags": [
+        "stablecoin",
+        "synthetics",
+        "governance"
+    ]
+}
