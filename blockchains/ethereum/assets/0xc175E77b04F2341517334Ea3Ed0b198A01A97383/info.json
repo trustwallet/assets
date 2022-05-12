@@ -1,11 +1,27 @@
 {
-    "name": "3X Long TRX Token",
-    "symbol": "TRXBULL",
+    "name": "3X Long TRX Token (TRXBULL)",
     "type": "ERC20",
+    "symbol": "TRXBULL",
     "decimals": 18,
-    "description": "3X Long TRX Token (TRXBULL) is an ERC20 token which seeks a return that corresponds to 3 times the daily return of TRON.",
     "website": "https://ftx.com/tokens/TRXBULL",
+    "description": "Check",
     "explorer": "https://etherscan.io/token/0xc175E77b04F2341517334Ea3Ed0b198A01A97383",
     "status": "active",
-    "id": "0xc175E77b04F2341517334Ea3Ed0b198A01A97383"
+    "id": "0xc175E77b04F2341517334Ea3Ed0b198A01A97383",
+    "links": [
+        {
+            "name": "telegram_news",
+            "url": "https://t.me/itsfarhanchohan"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/itsfarhanchohan"
+        }
+    ],
+    "tags": [
+        "money",
+        "staking",
+        "synthetics",
+        "defi"
+    ]
 }
