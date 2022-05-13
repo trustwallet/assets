@@ -6,12 +6,11 @@ import (
 	"path/filepath"
 	"strings"
 
-	fileLib "github.com/trustwallet/assets-go-libs/file"
+	"github.com/trustwallet/assets-go-libs/file"
 	"github.com/trustwallet/assets-go-libs/image"
 	"github.com/trustwallet/assets-go-libs/path"
 	"github.com/trustwallet/assets-go-libs/validation"
 	"github.com/trustwallet/assets-go-libs/validation/info"
-	"github.com/trustwallet/assets/internal/file"
 	"github.com/trustwallet/go-primitives/address"
 	"github.com/trustwallet/go-primitives/coin"
 	"github.com/trustwallet/go-primitives/types"
@@ -20,7 +19,7 @@ import (
 )
 
 func (s *Service) FixJSON(f *file.AssetFile) error {
-	return fileLib.FormatJSONFile(f.Path())
+	return file.FormatJSONFile(f.Path())
 }
 
 func (s *Service) FixETHAddressChecksum(f *file.AssetFile) error {
@@ -103,7 +102,7 @@ func calculateTargetDimension(width, height int) (targetW, targetH int) {
 func (s *Service) FixChainInfoJSON(f *file.AssetFile) error {
 	var chainInfo info.CoinModel
 
-	err := fileLib.ReadJSONFile(f.Path(), &chainInfo)
+	err := file.ReadJSONFile(f.Path(), &chainInfo)
 	if err != nil {
 		return err
 	}
@@ -112,7 +111,7 @@ func (s *Service) FixChainInfoJSON(f *file.AssetFile) error {
 	if chainInfo.Type == nil || *chainInfo.Type != expectedType {
 		chainInfo.Type = &expectedType
 
-		return fileLib.CreateJSONFile(f.Path(), &chainInfo)
+		return file.CreateJSONFile(f.Path(), &chainInfo)
 	}
 
 	return nil
@@ -121,7 +120,7 @@ func (s *Service) FixChainInfoJSON(f *file.AssetFile) error {
 func (s *Service) FixAssetInfo(f *file.AssetFile) error {
 	var assetInfo info.AssetModel
 
-	err := fileLib.ReadJSONFile(f.Path(), &assetInfo)
+	err := file.ReadJSONFile(f.Path(), &assetInfo)
 	if err != nil {
 		return err
 	}
@@ -166,7 +165,7 @@ func (s *Service) FixAssetInfo(f *file.AssetFile) error {
 	}
 
 	if isModified {
-		return fileLib.CreateJSONFile(f.Path(), &assetInfo)
+		return file.CreateJSONFile(f.Path(), &assetInfo)
 	}
 
 	return nil

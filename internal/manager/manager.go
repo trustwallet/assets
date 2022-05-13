@@ -3,15 +3,14 @@ package manager
 import (
 	"os"
 
+	"github.com/trustwallet/assets-go-libs/file"
 	"github.com/trustwallet/assets-go-libs/path"
-	"github.com/trustwallet/go-primitives/asset"
-	"github.com/trustwallet/go-primitives/coin"
-
 	"github.com/trustwallet/assets/internal/config"
-	"github.com/trustwallet/assets/internal/file"
 	"github.com/trustwallet/assets/internal/processor"
 	"github.com/trustwallet/assets/internal/report"
 	"github.com/trustwallet/assets/internal/service"
+	"github.com/trustwallet/go-primitives/asset"
+	"github.com/trustwallet/go-primitives/coin"
 
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
