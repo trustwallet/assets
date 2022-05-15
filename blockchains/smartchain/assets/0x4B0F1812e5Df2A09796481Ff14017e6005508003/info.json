@@ -1,21 +1,48 @@
 {
     "name": "Trust Wallet",
-    "website": "https://trustwallet.com",
-    "description": "Utility token to increase adoption of cryptocurrency.",
-    "explorer": "https://bscscan.com/token/0x4B0F1812e5Df2A09796481Ff14017e6005508003",
-    "research": "https://research.binance.com/en/projects/trustwallet",
     "type": "BEP20",
     "symbol": "TWT",
     "decimals": 18,
+    "website": "https://trustwallet.com",
+    "description": "Utility token to increase adoption of cryptocurrency. ",
+    "explorer": "https://bscscan.com/token/0x4B0F1812e5Df2A09796481Ff14017e6005508003",
     "status": "active",
     "id": "0x4B0F1812e5Df2A09796481Ff14017e6005508003",
-    "tags": [
-        "governance"
-    ],
     "links": [
         {
+            "name": "twitter",
+            "url": "https://twitter.com/trustwalletapp"
+        },
+        {
             "name": "github",
-            "url": "https://github.com/trustwallet/"
+            "url": "https://github.com/trustwallet"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/trustwallet"
+        },
+        {
+            "name": "telegram_news",
+            "url": "https://t.me/trust_announcements"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/trustapp/"
+        },
+        {
+            "name": "blog",
+            "url": "https://community.trustwallet.com/c/announcements/5"
+        },
+        {
+            "name": "facebook",
+            "url": "https://facebook.com/trustwalletapp"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/trust-wallet-token"
         }
+    ],
+    "tags": [
+        "governance"
     ]
 }
