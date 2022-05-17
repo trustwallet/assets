@@ -1,1 +1,33 @@
-
+{
+    "type": "ESDT",
+    "id": "RISA-c115c7",
+    "name": "RISA",
+    "symbol": "RISA",
+    "decimals": 18,
+    "status": "active",
+    "description": "RISA is the rewards token distributed exclusively to RisaSoft stakers.",
+    "website": "https://www.risasoft.com",
+    "explorer": "https://explorer.elrond.com/tokens/RISA-c115c7",
+    "links": [
+        {
+            "name": "blog",
+            "url": "https://www.risasoft.com/blog"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/risasoftstaking"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/risasoftstakers"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/risasoft"
+        },
+    ],
+    "tags": [
+        "defi",
+        "governance"
+    ]
+}
