@@ -5,9 +5,9 @@ go 1.17
 require (
 	github.com/sirupsen/logrus v1.8.1
 	github.com/spf13/cobra v1.3.0
-	github.com/trustwallet/assets-go-libs v0.1.0
-	github.com/trustwallet/go-libs v0.2.26
-	github.com/trustwallet/go-primitives v0.0.36
+	github.com/trustwallet/assets-go-libs v0.2.0
+	github.com/trustwallet/go-libs v0.3.13
+	github.com/trustwallet/go-primitives v0.0.40
 )
 
 require (
@@ -26,9 +26,9 @@ require (
 	github.com/spf13/pflag v1.0.5 // indirect
 	github.com/spf13/viper v1.10.0 // indirect
 	github.com/subosito/gotenv v1.2.0 // indirect
-	golang.org/x/crypto v0.0.0-20211209193657-4570a0811e8b // indirect
+	golang.org/x/crypto v0.0.0-20220214200702-86341886e292 // indirect
 	golang.org/x/image v0.0.0-20211028202545-6944b10bf410 // indirect
-	golang.org/x/sys v0.0.0-20211213223007-03aa0b5f6827 // indirect
+	golang.org/x/sys v0.0.0-20220114195835-da31bd327af9 // indirect
 	golang.org/x/text v0.3.7 // indirect
 	gopkg.in/ini.v1 v1.66.2 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
