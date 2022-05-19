@@ -1,11 +1,28 @@
 {
-"name": "Shiba Don",
-"website": "https://shibadon.io",
-"description": "A decentralized utility token and meme coin on the Ethereum network.",
-"explorer": "https://etherscan.io/token/0xdfc34b500a1bb6af8e738f2db77d658b3d0d76fb",
-"type": "ERC20",
-"symbol": "DON",
-"decimals": 9,
-"status": "active",
-"id": "0xdfc34b500a1bb6af8e738f2db77d658b3d0d76fb"
+    "name": "Shiba Don",
+    "type": "ERC20",
+    "symbol": "DON",
+    "decimals": 9,
+    "website": "https://shibadon.io/",
+    "description": "Welcome to ShibaDon! A revolutionary token on the Ethereum network that aims to empower its community through crypto mining where profits are used to benefit holders. Cryptocurrency generated from our rigs is used to add liquidity to the project. This process facilitates token buy-backs and airdrop events to holders. Electricity is infinite; ShibaDon supply is finite. Theoretically, if we endlessly convert electricity into currency with a fixed supply of tokens, the price can increase forever.",
+    "explorer": "https://etherscan.io/token/0xdFc34b500a1bb6AF8E738F2DB77D658B3d0d76fB",
+    "status": "active",
+    "id": "0xdFc34b500a1bb6AF8E738F2DB77D658B3d0d76fB",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/shibadontoken"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/ShibaDonTG"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://secureservercdn.net/198.71.233.27/mbr.c59.myftpupload.com/wp-content/uploads/2022/04/ShibaDon-Whitepaper.pdf"
+        }
+    ],
+    "tags": [
+        "memes"
+    ]
 }
