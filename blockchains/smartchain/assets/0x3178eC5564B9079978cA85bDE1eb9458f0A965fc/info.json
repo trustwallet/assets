@@ -1,0 +1,28 @@
+{
+    "name": "CLAYUN COIN",
+    "type": "BEP20",
+    "symbol": "CLA",
+    "decimals": 18,
+    "website": "https://www.clayun.com",
+    "description": "挖矿实验室通用TOKEN代币，可以用于购买虚拟矿机，模拟实时挖矿收益",
+    "explorer": "https://bscscan.com/token/0x3178eC5564B9079978cA85bDE1eb9458f0A965fc",
+    "status": "active",
+    "id": "0x3178eC5564B9079978cA85bDE1eb9458f0A965fc",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/Clayun/miner_simulator"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/clayun"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/clayun_token"
+        }
+    ],
+    "tags": [
+        "wrapped"
+    ]
+}
