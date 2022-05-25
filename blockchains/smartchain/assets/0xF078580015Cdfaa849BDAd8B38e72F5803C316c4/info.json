@@ -1,11 +1,11 @@
 {
     "name": "Son of Doge",
-    "website": "https://www.sonofdogev2.com/",
-    "description": "SON aims to build a sustainable, long term token that will drive an NFT market place.",
-    "explorer": "https://bscscan.com/token/0xF078580015Cdfaa849BDAd8B38e72F5803C316c4",
     "type": "BEP20",
     "symbol": "SOD",
     "decimals": 9,
+    "website": "https://www.sonofdogev2.com/",
+    "description": "SON aims to build a sustainable, long term token that will drive an NFT market place.",
+    "explorer": "https://bscscan.com/token/0xF078580015Cdfaa849BDAd8B38e72F5803C316c4",
     "status": "active",
     "id": "0xF078580015Cdfaa849BDAd8B38e72F5803C316c4",
     "links": [
@@ -19,7 +19,14 @@
         },
         {
             "name": "facebook",
-            "url": "https://www.facebook.com/SonOfDoge/"
+            "url": "https://facebook.com/SonOfDoge/"
         },
+        {
+            "name": "youtube",
+            "url": "https://youtube.com/channel/UCLxITJiksMrsUYvRGMTES9g?app=desktop"
+        }
+    ],
+    "tags": [
+        "deflationary"
     ]
 }
