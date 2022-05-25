@@ -14,13 +14,14 @@ import (
 	"github.com/trustwallet/assets-go-libs/path"
 	"github.com/trustwallet/assets-go-libs/validation/info"
 	"github.com/trustwallet/assets-go-libs/validation/tokenlist"
-	"github.com/trustwallet/assets/internal/config"
 	"github.com/trustwallet/go-libs/blockchain/binance"
 	"github.com/trustwallet/go-libs/blockchain/binance/explorer"
 	assetlib "github.com/trustwallet/go-primitives/asset"
 	"github.com/trustwallet/go-primitives/coin"
 	"github.com/trustwallet/go-primitives/numbers"
 	"github.com/trustwallet/go-primitives/types"
+
+	"github.com/trustwallet/assets/internal/config"
 )
 
 const (
@@ -255,7 +256,7 @@ func isTokenExistOrActive(symbol string) bool {
 	assetPath := path.GetAssetInfoPath(coin.Coins[coin.BINANCE].Handle, symbol)
 
 	var infoAsset info.AssetModel
-	if err := fileLib.ReadJSONFile(assetPath, infoAsset); err != nil {
+	if err := fileLib.ReadJSONFile(assetPath, &infoAsset); err != nil {
 		log.Debug(err)
 		return false
 	}
