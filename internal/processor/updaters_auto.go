@@ -14,13 +14,14 @@ import (
 	"github.com/trustwallet/assets-go-libs/path"
 	"github.com/trustwallet/assets-go-libs/validation/info"
 	"github.com/trustwallet/assets-go-libs/validation/tokenlist"
-	"github.com/trustwallet/assets/internal/config"
 	"github.com/trustwallet/go-libs/blockchain/binance"
 	"github.com/trustwallet/go-libs/blockchain/binance/explorer"
 	assetlib "github.com/trustwallet/go-primitives/asset"
 	"github.com/trustwallet/go-primitives/coin"
 	"github.com/trustwallet/go-primitives/numbers"
 	"github.com/trustwallet/go-primitives/types"
+
+	"github.com/trustwallet/assets/internal/config"
 )
 
 const (
@@ -236,7 +237,7 @@ func generateTokenList(marketPairs []binance.MarketPair, tokenList binance.Token
 			Asset:    getAssetIDSymbol(token.Symbol, coin.Coins[coin.BINANCE].Symbol, coin.BINANCE),
 			Type:     getTokenType(token.Symbol, coin.Coins[coin.BINANCE].Symbol, types.BEP2),
 			Address:  token.Symbol,
-			Name:     token.Name,
+			Name:     getTokenName(token),
 			Symbol:   token.OriginalSymbol,
 			Decimals: coin.Coins[coin.BINANCE].Decimals,
 			LogoURI:  getLogoURI(token.Symbol, coin.Coins[coin.BINANCE].Handle, coin.Coins[coin.BINANCE].Symbol),
@@ -255,7 +256,7 @@ func isTokenExistOrActive(symbol string) bool {
 	assetPath := path.GetAssetInfoPath(coin.Coins[coin.BINANCE].Handle, symbol)
 
 	var infoAsset info.AssetModel
-	if err := fileLib.ReadJSONFile(assetPath, infoAsset); err != nil {
+	if err := fileLib.ReadJSONFile(assetPath, &infoAsset); err != nil {
 		log.Debug(err)
 		return false
 	}
@@ -298,4 +299,12 @@ func getLogoURI(id, githubChainFolder, nativeCoinSymbol string) string {
 	}
 
 	return path.GetAssetLogoURL(config.Default.URLs.AssetsApp, githubChainFolder, id)
+}
+
+func getTokenName(t binance.Token) string {
+	if t.Symbol == coin.Binance().Symbol && t.Name == "Binance Chain Native Token" {
+		return "BNB Beacon Chain"
+	}
+
+	return t.Name
 }

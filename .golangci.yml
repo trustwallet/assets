@@ -61,7 +61,7 @@ linters-settings:
     simplify: true
   gofumpt:
     # Select the Go version to target
-    lang-version: "1.17"
+    lang-version: "1.18"
     extra-rules: false
   goimports:
     # put imports beginning with prefix after 3rd-party packages;
@@ -90,7 +90,7 @@ linters-settings:
       - G101
   gosimple:
     # Select the Go version to target
-    go: "1.17"
+    go: "1.18"
     # https://staticcheck.io/docs/options#checks
     checks: [ "all" ]
   govet:
@@ -150,12 +150,12 @@ linters-settings:
         severity: error
   staticcheck:
     # Select the Go version to target
-    go: "1.17"
+    go: "1.18"
     # https://staticcheck.io/docs/options#checks
     checks: [ "all" ]
   stylecheck:
     # Select the Go version to target
-    go: "1.17"
+    go: "1.18"
     # https://staticcheck.io/docs/options#checks
     checks: [ "all", "-ST1000", "-ST1003", "-ST1016", "-ST1020", "-ST1021", "-ST1022" ]
     # https://staticcheck.io/docs/options#dot_import_whitelist
@@ -167,7 +167,7 @@ linters-settings:
     http-status-code-whitelist: [ "200", "400", "404", "500" ]
   unused:
     # Select the Go version to target
-    go: "1.17"
+    go: "1.18"
   whitespace:
     multi-if: true   # Enforces newlines (or comments) after every multi-line if statement
     multi-func: false # Enforces newlines (or comments) after every multi-line function signature
@@ -232,14 +232,8 @@ linters:
     # - goerr113
     # - nestif
     - prealloc
-    - testpackage
     # - revive
     # - wsl
-
-  # don't enable:
-  # - interfacer
-  # - maligned
-  # - scopelint
 
 output:
   format: colored-line-number
