@@ -1,13 +1,13 @@
 {
     "name": "Trust Wallet: BNB",
     "logoURI": "https://trustwallet.com/assets/images/favicon.png",
-    "timestamp": "2022-05-26T15:58:52.204803",
+    "timestamp": "2022-05-26T16:42:45.183589",
     "tokens": [
         {
             "asset": "c714",
             "type": "coin",
             "address": "BNB",
-            "name": "Binance Chain Native Token",
+            "name": "BNB Beacon Chain",
             "symbol": "BNB",
             "decimals": 8,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/binance/info/logo.png",
@@ -2045,7 +2045,7 @@
         }
     ],
     "version": {
-        "major": 284,
+        "major": 285,
         "minor": 0,
         "patch": 0
     }

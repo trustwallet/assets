@@ -237,7 +237,7 @@ func generateTokenList(marketPairs []binance.MarketPair, tokenList binance.Token
 			Asset:    getAssetIDSymbol(token.Symbol, coin.Coins[coin.BINANCE].Symbol, coin.BINANCE),
 			Type:     getTokenType(token.Symbol, coin.Coins[coin.BINANCE].Symbol, types.BEP2),
 			Address:  token.Symbol,
-			Name:     token.Name,
+			Name:     getTokenName(token),
 			Symbol:   token.OriginalSymbol,
 			Decimals: coin.Coins[coin.BINANCE].Decimals,
 			LogoURI:  getLogoURI(token.Symbol, coin.Coins[coin.BINANCE].Handle, coin.Coins[coin.BINANCE].Symbol),
@@ -299,4 +299,12 @@ func getLogoURI(id, githubChainFolder, nativeCoinSymbol string) string {
 	}
 
 	return path.GetAssetLogoURL(config.Default.URLs.AssetsApp, githubChainFolder, id)
+}
+
+func getTokenName(t binance.Token) string {
+	if t.Symbol == coin.Binance().Symbol && t.Name == "Binance Chain Native Token" {
+		return "BNB Beacon Chain"
+	}
+
+	return t.Name
 }
