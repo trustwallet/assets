@@ -232,14 +232,8 @@ linters:
     # - goerr113
     # - nestif
     - prealloc
-    - testpackage
     # - revive
     # - wsl
-
-  # don't enable:
-  # - interfacer
-  # - maligned
-  # - scopelint
 
 output:
   format: colored-line-number
