@@ -1,28 +1,29 @@
 {
-    "name": "Bird Bro",
-    "website": "https://birdbro.io",
-    "description": "Bird Bro is a hyper-deflationary token with rewards for its holders, used in Metaverse and GameFi with its own NFT Marketplace",
-    "explorer": "https://bscscan.com/token/0x55F207dE4C9C1E9fA913a9232F1dAD0ecE358467",
-    "type": "BEP20",
-    "symbol": "BIRDBRO",
-    "decimals": 9,
-    "status": "active",
-    "id": "0x55F207dE4C9C1E9fA913a9232F1dAD0ecE358467",
-	"links": [
-        {
-            "name": "twitter",
-            "url": "https://twitter.com/birdbrotoken"
-        },
-        {
-            "name": "telegram",
-            "url": "https://t.me/birdbrotoken"
-        },
-		{
-            "name": "coinmarketcap",
-            "url": "https://coinmarketcap.com/currencies/bird-bro"
-        },
-    ],
-    "tags": [
-        "gamefi"
-    ]
+   "name":"Bird Bro",
+   "website":"https://birdbro.io",
+   "description":"Bird Bro is a hyper-deflationary token with rewards for its holders, used in Metaverse and GameFi with its own NFT Marketplace",
+   "explorer":"https://bscscan.com/token/0x55F207dE4C9C1E9fA913a9232F1dAD0ecE358467",
+   "type":"BEP20",
+   "symbol":"BIRDBRO",
+   "decimals":9,
+   "status":"active",
+   "id":"0x55F207dE4C9C1E9fA913a9232F1dAD0ecE358467",
+   "links":[
+      {
+         "name":"twitter",
+         "url":"https://twitter.com/birdbrotoken"
+      },
+      {
+         "name":"telegram",
+         "url":"https://t.me/birdbrotoken"
+      },
+      {
+         "name":"coinmarketcap",
+         "url":"https://coinmarketcap.com/currencies/bird-bro"
+      }
+   ],
+   "tags":[
+      "gamefi",
+      "meme"
+   ]
 }
