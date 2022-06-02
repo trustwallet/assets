@@ -1,11 +1,21 @@
 {
-"name": "FTK",
-    "website": "https://elearning.comfy.ua/feed/show/posts",
-    "description": "FTK is a stablecoin issued by Comfy Feed.",
-    "explorer": "https://polygonscan.com/token/0x97df84d4fa340e46e835ea6370b85e2f43f2799d",
-    "type": "POLYGON",
+    "name": "Feed Token",
     "symbol": "FTK",
+    "type": "POLYGON",
     "decimals": 18,
+    "description": "learning system Comfy",
+    "website": "https://comfy.ua",
+    "explorer": "https://polygonscan.com/token/0x97df84d4fa340e46e835ea6370b85e2f43f2799d",
     "status": "active",
-    "id": "0x97df84d4FA340E46e835Ea6370b85e2f43f2799d"
+    "id": "0x97df84d4fa340e46e835ea6370b85e2f43f2799d",
+    "links": [
+        {
+            "name": "telegram",
+            "url": "https://t.me/moshchenskiy"
+        },
+        {
+            "name": "instagram",
+            "url": "https://www.instagram.com/comfy_ua/"
+        }
+    ]
 }
