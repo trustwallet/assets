@@ -1,17 +1,36 @@
 {
-  "name": "Pang Coin",
-  "website": "https://meta-pang.com/",
-  "description": "A token that allows you to purchase items in Metapang games.",
-  "explorer": "https://bscscan.com/token/0x02AD706A1264C071cf4a947D9bd27ed50D5F1D00",
-  "type": "BEP20",
-  "symbol": "BIP",
-  "decimals": 18,
-  "status": "active",
-  "id": "0x02AD706A1264C071cf4a947D9bd27ed50D5F1D00",
-  "links": [
-      {
-          "name": "github",
-          "url": "https://github.com/MetaPang/pang-contract"
-      }
-  ]
+    "name": "Pang Coin",
+    "type": "BEP20",
+    "symbol": "BIP",
+    "decimals": 18,
+    "website": "https://meta-pang.com",
+    "description": "Metapang is a game in which heroes of the three planets in the multiverse fight against their common enemy \"Slime.\" Players can obtain Gem through gameplay and contribution to the game ecosystem, and crystals can be converted into Pang tokens and traded on the exchange. Players can earn profits through combat and item collection. Metapang will be a representative game that will lead the P2E era in which the blockchain economy rewards players for their contribution to the ecosystem.",
+    "explorer": "https://bscscan.com/token/0x02AD706A1264C071cf4a947D9bd27ed50D5F1D00",
+    "status": "active",
+    "id": "0x02AD706A1264C071cf4a947D9bd27ed50D5F1D00",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/metapang1"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/MetaPang-project"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/RY4kmtsxgw"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://metapang.s3.ap-northeast-2.amazonaws.com/whitepaper/metapang_whitepaper_v1.0.pdf"
+        },
+        {
+            "name": "source_code",
+            "url": "https://github.com/Metapang-Project/pang-contract"
+        }
+    ],
+    "tags": [
+        "gamefi"
+    ]
 }
