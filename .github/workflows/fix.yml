@@ -9,8 +9,13 @@ on:
       - 'master'
       - '*'
   workflow_dispatch:
+permissions:
+  contents: read
+
 jobs:
   fix-all:
+    permissions:
+      contents: write  # for stefanzweifel/git-auto-commit-action to push code in repo
     runs-on: ubuntu-latest
     steps:
       - name: Checkout (trustwallet repo, secret token)

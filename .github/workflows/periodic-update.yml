@@ -4,8 +4,13 @@ on:
     # Run twice per day (at 1:00UTC/6pmPST, 13:00UTC/6amPST)
     - cron:  '0 1,13 * * *'
   workflow_dispatch:
+permissions:
+  contents: read
+
 jobs:
   periodic-auto-update:
+    permissions:
+      contents: write  # for stefanzweifel/git-auto-commit-action to push code in repo
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
