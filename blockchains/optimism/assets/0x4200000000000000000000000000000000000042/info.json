@@ -3,7 +3,7 @@
     "symbol": "OP",
     "type": "OPTIMISM",
     "decimals": 18,
-    "description": "Optimism Governance Token",
+    "description": "Optimism is a Layer 2 scaling solution for Ethereum.",
     "website": "https://app.optimism.io/governance",
     "explorer": "https://optimistic.etherscan.io/token/0x4200000000000000000000000000000000000042",
     "status": "active",
@@ -14,8 +14,15 @@
             "url": "https://coinmarketcap.com/currencies/optimism-ethereum/"
         },
         {
-            "name": "coingecko",
-            "url": "https://www.coingecko.com/en/coins/optimism"
+            "name": "twitter",
+            "url": "https://twitter.com/optimismPBC"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/ethereum-optimism/"
         }
+    ],
+    "tags": [
+        "governance"
     ]
 }
