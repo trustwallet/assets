@@ -1,20 +1,20 @@
 {
-    "name": "Legacy ICHI",
+    "name": "Stable ICHI",
     "website": "app.ichi.org",
-    "description": "Legacy ICHI is a token deprecated by the ICHI DAO, you can swap it 1-1 for ICHI at app.ichi.org.",
-    "explorer": "https://etherscan.io/token/0x903bEF1736CDdf2A537176cf3C64579C3867A881",
+    "description": "oneICHI is an ICHI-created stablecoin backed by USDC and ICHI built for the ICHI DAO.",
+    "explorer": "https://etherscan.io/token/0x4db2c02831c9ac305FF9311Eb661f80f1dF61e07",
     "type": "ERC20",
-    "symbol": "ICHI",
-    "decimals": 9,
+    "symbol": "oneICHI",
+    "decimals": 18,
     "status": "active",
-    "id": "0x903bEF1736CDdf2A537176cf3C64579C3867A881",
+    "id": "0x4db2c02831c9ac305FF9311Eb661f80f1dF61e07",
     "tags": [
         "defi"
     ],
     "links": [
         {
             "name": "github",
-            "url": "https://github.com/ichifarm"
+            "url": "https://github.com/ichifarm/ichi-oneToken"
         },
         {
             "name": "twitter",
