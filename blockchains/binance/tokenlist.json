@@ -1,7 +1,7 @@
 {
     "name": "Trust Wallet: BNB",
     "logoURI": "https://trustwallet.com/assets/images/favicon.png",
-    "timestamp": "2022-06-07T13:16:27.043293",
+    "timestamp": "2022-06-08T01:33:50.592670",
     "tokens": [
         {
             "asset": "c714",
@@ -379,7 +379,7 @@
                 },
                 {
                     "base": "c714_tONT-33D",
-                    "lotSize": "1000000000",
+                    "lotSize": "100000000",
                     "tickSize": "1"
                 },
                 {
@@ -610,7 +610,7 @@
                 },
                 {
                     "base": "c714_tBTCB-1DE",
-                    "lotSize": "10000",
+                    "lotSize": "1000",
                     "tickSize": "10000000"
                 },
                 {
@@ -660,7 +660,7 @@
                 },
                 {
                     "base": "c714_tONT-33D",
-                    "lotSize": "1000000000",
+                    "lotSize": "100000000",
                     "tickSize": "100"
                 },
                 {
@@ -726,7 +726,7 @@
                 },
                 {
                     "base": "c714_tBTCB-1DE",
-                    "lotSize": "10000",
+                    "lotSize": "1000",
                     "tickSize": "10000000"
                 },
                 {
@@ -758,7 +758,7 @@
                 {
                     "base": "c714",
                     "lotSize": "100000",
-                    "tickSize": "10"
+                    "tickSize": "1"
                 },
                 {
                     "base": "c714_tANKR-E97",
@@ -793,7 +793,7 @@
                 },
                 {
                     "base": "c714_tBTCB-1DE",
-                    "lotSize": "10000",
+                    "lotSize": "1000",
                     "tickSize": "10000000"
                 },
                 {
@@ -2045,7 +2045,7 @@
         }
     ],
     "version": {
-        "major": 309,
+        "major": 310,
         "minor": 0,
         "patch": 0
     }
