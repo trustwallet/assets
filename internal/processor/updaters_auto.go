@@ -1,10 +1,7 @@
 package processor
 
 import (
-	"bytes"
-	"encoding/json"
 	"fmt"
-	"os"
 	"reflect"
 	"sort"
 	"strconv"
@@ -17,13 +14,14 @@ import (
 	"github.com/trustwallet/assets-go-libs/path"
 	"github.com/trustwallet/assets-go-libs/validation/info"
 	"github.com/trustwallet/assets-go-libs/validation/tokenlist"
-	"github.com/trustwallet/assets/internal/config"
 	"github.com/trustwallet/go-libs/blockchain/binance"
 	"github.com/trustwallet/go-libs/blockchain/binance/explorer"
 	assetlib "github.com/trustwallet/go-primitives/asset"
 	"github.com/trustwallet/go-primitives/coin"
 	"github.com/trustwallet/go-primitives/numbers"
 	"github.com/trustwallet/go-primitives/types"
+
+	"github.com/trustwallet/assets/internal/config"
 )
 
 const (
@@ -31,9 +29,6 @@ const (
 	assetsRows       = 1000
 	marketPairsLimit = 1000
 	tokensListLimit  = 10000
-
-	twLogoURL       = "https://trustwallet.com/assets/images/favicon.png"
-	timestampFormat = "2006-01-02T15:04:05.000000"
 
 	activeStatus = "active"
 )
@@ -139,7 +134,7 @@ func createInfoJSON(chain coin.Coin, a explorer.Bep2Asset) error {
 }
 
 func createTokenListJSON(chain coin.Coin, tokens []tokenlist.Token) error {
-	tokenListPath := path.GetTokenListPath(chain.Handle)
+	tokenListPath := path.GetTokenListPath(chain.Handle, path.TokenlistDefault)
 
 	var oldTokenList tokenlist.Model
 	err := fileLib.ReadJSONFile(tokenListPath, &oldTokenList)
@@ -160,8 +155,8 @@ func createTokenListJSON(chain coin.Coin, tokens []tokenlist.Token) error {
 
 	return fileLib.CreateJSONFile(tokenListPath, &tokenlist.Model{
 		Name:      fmt.Sprintf("Trust Wallet: %s", coin.Coins[chain.ID].Name),
-		LogoURI:   twLogoURL,
-		Timestamp: time.Now().Format(timestampFormat),
+		LogoURI:   config.Default.URLs.Logo,
+		Timestamp: time.Now().Format(config.Default.TimeFormat),
 		Tokens:    tokens,
 		Version:   tokenlist.Version{Major: oldTokenList.Version.Major + 1},
 	})
@@ -242,7 +237,7 @@ func generateTokenList(marketPairs []binance.MarketPair, tokenList binance.Token
 			Asset:    getAssetIDSymbol(token.Symbol, coin.Coins[coin.BINANCE].Symbol, coin.BINANCE),
 			Type:     getTokenType(token.Symbol, coin.Coins[coin.BINANCE].Symbol, types.BEP2),
 			Address:  token.Symbol,
-			Name:     token.Name,
+			Name:     getTokenName(token),
 			Symbol:   token.OriginalSymbol,
 			Decimals: coin.Coins[coin.BINANCE].Decimals,
 			LogoURI:  getLogoURI(token.Symbol, coin.Coins[coin.BINANCE].Handle, coin.Coins[coin.BINANCE].Symbol),
@@ -260,24 +255,9 @@ func isTokenExistOrActive(symbol string) bool {
 
 	assetPath := path.GetAssetInfoPath(coin.Coins[coin.BINANCE].Handle, symbol)
 
-	infoFile, err := os.Open(assetPath)
-	if err != nil {
-		log.Debugf("asset file open error: %s", err.Error())
-		return false
-	}
-
-	buf := bytes.NewBuffer(nil)
-	if _, err = buf.ReadFrom(infoFile); err != nil {
-		log.Debugf("buffer read error: %s", err.Error())
-		return false
-	}
-
-	infoFile.Close()
-
 	var infoAsset info.AssetModel
-	err = json.Unmarshal(buf.Bytes(), &infoAsset)
-	if err != nil {
-		log.Debugf("json unmarshalling error: %s", err.Error())
+	if err := fileLib.ReadJSONFile(assetPath, &infoAsset); err != nil {
+		log.Debug(err)
 		return false
 	}
 
@@ -315,8 +295,16 @@ func getTokenType(symbol string, nativeCoinSymbol string, tokenType types.TokenT
 
 func getLogoURI(id, githubChainFolder, nativeCoinSymbol string) string {
 	if id == nativeCoinSymbol {
-		return path.GetChainLogoURL(config.Default.URLs.TWAssetsApp, githubChainFolder)
+		return path.GetChainLogoURL(config.Default.URLs.AssetsApp, githubChainFolder)
 	}
 
-	return path.GetAssetLogoURL(config.Default.URLs.TWAssetsApp, githubChainFolder, id)
+	return path.GetAssetLogoURL(config.Default.URLs.AssetsApp, githubChainFolder, id)
+}
+
+func getTokenName(t binance.Token) string {
+	if t.Symbol == coin.Binance().Symbol && t.Name == "Binance Chain Native Token" {
+		return "BNB Beacon Chain"
+	}
+
+	return t.Name
 }
