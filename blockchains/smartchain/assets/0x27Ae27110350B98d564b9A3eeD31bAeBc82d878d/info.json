@@ -1,12 +1,36 @@
 {
     "name": "CumRocket",
-    "website": "https://cumrocketcrypto.com",
-    "description": "Deflationary token used for tipping and messaging content creators on our NSFW platforms! This includes an 18+ NFT marketplace as well as a NSFW private content subscription platform! 5% tax on every transaction - 2.5% burn, 2.5% redistribution.",
+    "website": "https://cumrocket.io",
+    "description": "CumRocket (CUMMIES) is a deflationary token used for purchasing adult content on their NSFW platform. Users are able to buy, sell and collect 18+ NFTs from their favourite models, as well as chat, tip and subscribe to exclusive content. 5% tax on every transaction - 2.5% burn, 2.5% redistribution.",
     "explorer": "https://bscscan.com/token/0x27Ae27110350B98d564b9A3eeD31bAeBc82d878d",
-    "research": "https://static1.squarespace.com/static/60553ccba8128169e9a195ef/t/608574906a87341dd3ecac0e/1619358865705/CumRocket+Whitepaper+%2817%29.pdf",
     "type": "BEP20",
     "symbol": "CUMMIES",
     "decimals": 18,
     "status": "active",
-    "id": "0x27Ae27110350B98d564b9A3eeD31bAeBc82d878d"
+    "id": "0x27Ae27110350B98d564b9A3eeD31bAeBc82d878d",
+    "tags": [
+        "deflationary"
+    ],
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/CumRocketCrypto"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/cumrocket"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/Tett4kJsKN"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/CumRocket/"
+        },
+        {
+            "name": "medium",
+            "url": "https://cumrocket.medium.com/"
+        }
+    ]
 }
