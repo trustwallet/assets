@@ -1,0 +1,25 @@
+{
+    "name": "BUSD",
+    "website": "https://paxos.com/busd",
+    "description": "Cronos-Peg BUSD (BUSD CRC20) is a token issued by Binance on Cronos Chain; its price is pegged to BUSD (BUSD ERC20) at a ratio of 1:1.",
+    "explorer": "https://cronoscan.com/token/0xC74D59A548ecf7fc1754bb7810D716E9Ac3e3AE5",
+    "research": "https://research.binance.com/en/projects/binance-usd",
+    "type": "CRC20",
+    "symbol": "BUSD",
+    "decimals": 18,
+    "status": "active",
+    "id": "0xC74D59A548ecf7fc1754bb7810D716E9Ac3e3AE5",
+    "tags": [
+        "stablecoin"
+    ],
+    "links": [
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/binance-usd/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/binance-usd/"
+        }
+    ]
+}
