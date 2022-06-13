@@ -1,11 +1,32 @@
 {
     "name": "Domex Coin",
-    "website": "https://www.domexcoin.com/",
-    "description": "Charity coin with a 10% tax- 4% sent to a charity address for Testicular and Prostate Research, 3% sent to all holders via reflection, and 3% added to the liquidity.",
-    "explorer": "https://bscscan.com/token/0xE3260a5A05b523cF7FCa30328b648696CB6C1912",
     "type": "BEP20",
     "symbol": "DMX",
     "decimals": 18,
+    "website": "https://www.domexcoin.com/",
+    "description": "Domex Coin is a public blockchain infrastructure designed for popularization apps. It provides a payment proxy service with its own token called DMX.",
+    "explorer": "https://bscscan.com/token/0xE3260a5A05b523cF7FCa30328b648696CB6C1912",
     "status": "active",
-    "id": "0xE3260a5A05b523cF7FCa30328b648696CB6C1912"
+    "id": "0xE3260a5A05b523cF7FCa30328b648696CB6C1912",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/DomexSupport"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/DomexDev"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://www.domexcoin.com/domex_paper.pdf"
+        },
+        {
+            "name": "docs",
+            "url": "https://www.domexcoin.com/howtobuydomex.html"
+        }
+    ],
+    "tags": [
+        "defi"
+    ]
 }
