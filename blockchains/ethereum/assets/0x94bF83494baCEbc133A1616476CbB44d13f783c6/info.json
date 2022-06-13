@@ -1,0 +1,36 @@
+{
+    "name": "ETHEREUM",
+    "type": "ERC20",
+    "symbol": "ETH",
+    "decimals": 18,
+    "website": "https://ethereum.io",
+    "description": "Ethereum.io",
+    "explorer": "https://etherscan.io/token/0x94bF83494baCEbc133A1616476CbB44d13f783c6",
+    "status": "active",
+    "id": "0x94bF83494baCEbc133A1616476CbB44d13f783c6",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/ethereum.io"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/ethereum.io"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/ethereum.io"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/ethereum.io"
+        },
+        {
+            "name": "docs",
+            "url": "https://Documents/ethereum.io"
+        }
+    ],
+    "tags": [
+        "synthetics"
+    ]
+}
