@@ -2,10 +2,23 @@
   "name": "Shiva token",
   "website": "https://shivafinance.fund/",
   "description": "Shiva finance is Next generation of Defi yield generating, community driven. Earn interest by holding.",
-  "explorer": "https://bscscan.com/token/0xb0157556d288f89b6c61cd8ce45723b8d44b810e",
+  "explorer": "https://bscscan.com/token/0xB0157556d288f89b6C61cd8cE45723B8D44B810e",
   "type": "BEP20",
+  "links": [
+    {
+      "name": "facebook",
+      "url": "https://www.facebook.com/groups/369803188430352/"
+    },
+    {
+      "name": "source_code",
+      "url": "https://bscscan.com/address/0xB0157556d288f89b6C61cd8cE45723B8D44B810e#code"
+    }
+  ],
   "symbol": "SHIVA",
   "decimals": 18,
   "status": "active",
-  "id": "0xb0157556d288f89b6c61cd8ce45723b8d44b810e"
+  "id": "0xB0157556d288f89b6C61cd8cE45723B8D44B810e",
+  "tags": [
+    "governance"
+  ]
 }
