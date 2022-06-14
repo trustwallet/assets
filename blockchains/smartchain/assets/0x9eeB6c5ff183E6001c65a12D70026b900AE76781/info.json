@@ -1,5 +1,13 @@
-Parse error on line 9:
-...26b900AE76781"
-    "Links": "Telegram-t
-----------------------^
-Expecting 'EOF', '}', ':', ',', ']', got 'STRING'
+{
+  "name": "IrenaGreenEnergy",
+  "website": "https://irenamining.com/",
+  "description": "IRENA The future is now in renewable green energy and eco-friendly electric cars and solar panels.",
+  "explorer": "https://bscscan.com/token/0x9eeB6c5ff183E6001c65a12D70026b900AE76781",
+  "type": "BEP20",
+  "symbol": "IRENA",
+  "decimals": 9,
+  "status": "active",
+  "id": "0x9eeB6c5ff183E6001c65a12D70026b900AE76781",
+  "Links": "Telegram-https://t.me/irena_coin_global twitter-https://twitter.com/Irenagreencoin",
+  "Tags": "EnergySector-Marketplace-enewable green energy"
+}
