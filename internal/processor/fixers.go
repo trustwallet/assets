@@ -111,7 +111,12 @@ func (s *Service) FixChainInfoJSON(f *file.AssetFile) error {
 	if chainInfo.Type == nil || *chainInfo.Type != expectedType {
 		chainInfo.Type = &expectedType
 
-		return file.CreateJSONFile(f.Path(), &chainInfo)
+		data, err := file.PrepareJSONData(&chainInfo)
+		if err != nil {
+			return err
+		}
+
+		return file.CreateJSONFile(f.Path(), data)
 	}
 
 	return nil
@@ -165,7 +170,12 @@ func (s *Service) FixAssetInfo(f *file.AssetFile) error {
 	}
 
 	if isModified {
-		return file.CreateJSONFile(f.Path(), &assetInfo)
+		data, err := file.PrepareJSONData(&assetInfo)
+		if err != nil {
+			return err
+		}
+
+		return file.CreateJSONFile(f.Path(), data)
 	}
 
 	return nil

@@ -130,7 +130,12 @@ func createInfoJSON(chain coin.Coin, a explorer.Bep2Asset) error {
 
 	assetInfoPath := path.GetAssetInfoPath(chain.Handle, a.Asset)
 
-	return fileLib.CreateJSONFile(assetInfoPath, &assetInfo)
+	data, err := fileLib.PrepareJSONData(&assetInfo)
+	if err != nil {
+		return err
+	}
+
+	return fileLib.CreateJSONFile(assetInfoPath, data)
 }
 
 func createTokenListJSON(chain coin.Coin, tokens []tokenlist.Token) error {
@@ -150,16 +155,21 @@ func createTokenListJSON(chain coin.Coin, tokens []tokenlist.Token) error {
 		return nil
 	}
 
-	log.Debugf("Tokenlist: list with %d tokens and %d pairs written to %s.",
-		len(tokens), countTotalPairs(tokens), tokenListPath)
-
-	return fileLib.CreateJSONFile(tokenListPath, &tokenlist.Model{
+	data, err := fileLib.PrepareJSONData(&tokenlist.Model{
 		Name:      fmt.Sprintf("Trust Wallet: %s", coin.Coins[chain.ID].Name),
 		LogoURI:   config.Default.URLs.Logo,
 		Timestamp: time.Now().Format(config.Default.TimeFormat),
 		Tokens:    tokens,
 		Version:   tokenlist.Version{Major: oldTokenList.Version.Major + 1},
 	})
+	if err != nil {
+		return err
+	}
+
+	log.Debugf("Tokenlist: list with %d tokens and %d pairs written to %s.",
+		len(tokens), countTotalPairs(tokens), tokenListPath)
+
+	return fileLib.CreateJSONFile(tokenListPath, data)
 }
 
 func countTotalPairs(tokens []tokenlist.Token) int {
@@ -227,12 +237,6 @@ func generateTokenList(marketPairs []binance.MarketPair, tokenList binance.Token
 	for pair := range pairsList {
 		token := tokensMap[pair]
 
-		var pairs []tokenlist.Pair
-		pairs, exists := pairsMap[token.Symbol]
-		if !exists {
-			pairs = make([]tokenlist.Pair, 0)
-		}
-
 		tokenItems = append(tokenItems, tokenlist.Token{
 			Asset:    getAssetIDSymbol(token.Symbol, coin.Coins[coin.BINANCE].Symbol, coin.BINANCE),
 			Type:     getTokenType(token.Symbol, coin.Coins[coin.BINANCE].Symbol, types.BEP2),
@@ -241,7 +245,7 @@ func generateTokenList(marketPairs []binance.MarketPair, tokenList binance.Token
 			Symbol:   token.OriginalSymbol,
 			Decimals: coin.Coins[coin.BINANCE].Decimals,
 			LogoURI:  getLogoURI(token.Symbol, coin.Coins[coin.BINANCE].Handle, coin.Coins[coin.BINANCE].Symbol),
-			Pairs:    pairs,
+			Pairs:    pairsMap[token.Symbol],
 		})
 	}
 
