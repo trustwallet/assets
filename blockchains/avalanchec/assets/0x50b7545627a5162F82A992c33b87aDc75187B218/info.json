@@ -1,15 +1,14 @@
 {
     "name": "Wrapped BTC",
-    "type": "AVALANCHE",
     "symbol": "WBTC.e",
+    "type": "AVALANCHE",
     "decimals": 8,
-    "website": "https://www.wbtc.network/",
     "description": "Wrapped Bitcoin (WBTC) is an ERC20 token backed 1:1 with Bitcoin. Completely transparent. 100% verifiable. Community led.",
-    "explorer": "https://snowtrace.io/token/0x50b7545627a5162f82a992c33b87adc75187b218",
+    "website": "https://www.wbtc.network/",
+    "explorer": "https://snowtrace.io/address/0x50b7545627a5162F82A992c33b87aDc75187B218",
     "status": "active",
     "id": "0x50b7545627a5162F82A992c33b87aDc75187B218",
     "links": [
-        
         {
             "name": "coinmarketcap",
             "url": "https://coinmarketcap.com/currencies/wrapped-bitcoin/"

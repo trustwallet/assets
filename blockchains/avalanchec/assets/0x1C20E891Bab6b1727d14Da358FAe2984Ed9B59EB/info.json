@@ -1,15 +1,14 @@
 {
     "name": "TrueUSD",
-    "type": "AVALANCHE",
     "symbol": "TUSD",
+    "type": "AVALANCHE",
     "decimals": 18,
-    "website": "https://trueusd.com/",
     "description": "A regulated, exchange-independent stablecoin backed 1-for-1 with US Dollars.",
-    "explorer": "https://snowtrace.io/token/0x1c20e891bab6b1727d14da358fae2984ed9b59eb",
+    "website": "https://trueusd.com/",
+    "explorer": "https://snowtrace.io/address/0x1C20E891Bab6b1727d14Da358FAe2984Ed9B59EB",
     "status": "active",
     "id": "0x1C20E891Bab6b1727d14Da358FAe2984Ed9B59EB",
     "links": [
-        
         {
             "name": "coinmarketcap",
             "url": "https://coinmarketcap.com/currencies/trueusd/"

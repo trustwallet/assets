@@ -1,11 +1,11 @@
 {
     "name": "TetherToken",
-    "type": "AVALANCHE",
     "symbol": "USDt",
+    "type": "AVALANCHE",
     "decimals": 6,
-    "website": "https://tether.to/",
     "description": "Tether gives you the joint benefits of open blockchain technology and traditional currency by converting your cash into a stable digital currency equivalent.",
-    "explorer": "https://snowtrace.io/token/0x9702230a8ea53601f5cd2dc00fdbc13d4df4a8c7",
+    "website": "https://tether.to/",
+    "explorer": "https://snowtrace.io/address/0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7",
     "status": "active",
     "id": "0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7",
     "links": [
@@ -29,4 +29,4 @@
     "tags": [
         "stablecoin"
     ]
-} 
+}

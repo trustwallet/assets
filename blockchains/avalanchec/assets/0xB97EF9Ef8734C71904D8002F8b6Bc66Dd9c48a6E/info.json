@@ -1,11 +1,11 @@
 {
     "name": "USD Coin",
-    "type": "AVALANCHE",
     "symbol": "USDC",
+    "type": "AVALANCHE",
     "decimals": 6,
-    "website": "https://www.centre.io/",
     "description": "USDC is a fully collateralized US Dollar stablecoin developed by CENTRE, the open source project with Circle being the first of several forthcoming issuers.",
-    "explorer": "https://snowtrace.io/token/0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+    "website": "https://www.centre.io/",
+    "explorer": "https://snowtrace.io/address/0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E",
     "status": "active",
     "id": "0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E",
     "links": [
@@ -29,4 +29,4 @@
     "tags": [
         "stablecoin"
     ]
-} 
+}
