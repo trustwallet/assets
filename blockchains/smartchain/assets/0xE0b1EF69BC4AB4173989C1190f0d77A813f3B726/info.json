@@ -2,7 +2,7 @@
     "name": "Fat Cat Killer",
     "website": "https://fatcatkiller.com/",
     "description": "Fat Cat Killer is a secure, medium for crypto payment processing. Integration with commonly used Point-of-Sale systems uniquely position it in hospitality venues. Low transaction rates offer unbeatable savings for both buyers and merchants with luxury brands.",
-    "explorer": "https://bscscan.com/address/0xe0b1ef69bc4ab4173989c1190f0d77a813f3b726",
+    "explorer": "https://bscscan.com/token/0xe0b1ef69bc4ab4173989c1190f0d77a813f3b726",
     "type": "BEP20",
     "symbol": "KILLER",
     "decimals": 9,
@@ -15,11 +15,11 @@
         },
         {
             "name": "facebook",
-            "url": "https://www.facebook.com/FatCatKiller/"
+            "url": "https://facebook.com/FatCatKiller/"
         },
         {
             "name": "linkedin",
-            "url": "https://www.linkedin.com/company/fatcatkillercoin/"
+            "url": "https://linkedin.com/company/fatcatkillercoin/"
         },
         {
             "name": "coinmarketcap",
@@ -37,5 +37,8 @@
             "name": "whitepaper",
             "url": "https://fatcatkiller.com/wp-content/uploads/2022/04/FINAL-WHITE-PAPER-ENG-2022-04-22.pdf"
         }
+    ],
+    "tags": [
+        "defi", "payment", "deflationary", "killer", "merchant"
     ]
 }
