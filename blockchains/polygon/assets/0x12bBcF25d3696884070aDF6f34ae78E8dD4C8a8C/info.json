@@ -1,11 +1,25 @@
 {
-    "name":"Wrapped Polygon ",
-    "website":"https://polygon.technology",
-    "description": "Official Wrapped Polygon Token in Polygon Mainnet",
-    "explorer":"https://polygonscan.com/token/0x12bBcF25d3696884070aDF6f34ae78E8dD4C8a8C",
-    "type":"POLYGON",
-    "symbol":"WMATIC",
-    "decimals":18,
-    "status":"active",
-    "id":"0x12bBcF25d3696884070aDF6f34ae78E8dD4C8a8C"
+    "name": "Wrapped MATIC",
+    "type": "POLYGON",
+    "symbol": "WMATIC",
+    "decimals": 18,
+    "website": "https://polygon.technology",
+    "description": "Wrapped MATIC",
+    "explorer": "https://polygonscan.com/token/0x12bBcF25d3696884070aDF6f34ae78E8dD4C8a8C",
+    "status": "active",
+    "id": "0x12bBcF25d3696884070aDF6f34ae78E8dD4C8a8C",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/0xPolygon"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/polygonofficial"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/maticnetwork/"
+        }
+    ]
 }
