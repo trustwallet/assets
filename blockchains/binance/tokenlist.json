@@ -1,7 +1,7 @@
 {
     "name": "Trust Wallet: BNB",
     "logoURI": "https://trustwallet.com/assets/images/favicon.png",
-    "timestamp": "2022-06-18T01:36:09.450779",
+    "timestamp": "2022-06-19T01:36:19.839868",
     "tokens": [
         {
             "asset": "c714",
@@ -229,7 +229,7 @@
                 },
                 {
                     "base": "c714_tFRM-DE7",
-                    "lotSize": "10000000000",
+                    "lotSize": "1000000000",
                     "tickSize": "1"
                 },
                 {
@@ -384,7 +384,7 @@
                 },
                 {
                     "base": "c714_tPHB-2DF",
-                    "lotSize": "100000000000",
+                    "lotSize": "10000000000",
                     "tickSize": "1"
                 },
                 {
@@ -610,7 +610,7 @@
                 },
                 {
                     "base": "c714_tBTCB-1DE",
-                    "lotSize": "1000",
+                    "lotSize": "10000",
                     "tickSize": "10000000"
                 },
                 {
@@ -645,7 +645,7 @@
                 },
                 {
                     "base": "c714_tFRM-DE7",
-                    "lotSize": "10000000000",
+                    "lotSize": "1000000000",
                     "tickSize": "10"
                 },
                 {
@@ -726,7 +726,7 @@
                 },
                 {
                     "base": "c714_tBTCB-1DE",
-                    "lotSize": "1000",
+                    "lotSize": "10000",
                     "tickSize": "10000000"
                 },
                 {
@@ -758,7 +758,7 @@
                 {
                     "base": "c714",
                     "lotSize": "100000",
-                    "tickSize": "1"
+                    "tickSize": "10"
                 },
                 {
                     "base": "c714_tANKR-E97",
@@ -793,7 +793,7 @@
                 },
                 {
                     "base": "c714_tBTCB-1DE",
-                    "lotSize": "1000",
+                    "lotSize": "10000",
                     "tickSize": "10000000"
                 },
                 {
@@ -2045,7 +2045,7 @@
         }
     ],
     "version": {
-        "major": 324,
+        "major": 325,
         "minor": 0,
         "patch": 0
     }
