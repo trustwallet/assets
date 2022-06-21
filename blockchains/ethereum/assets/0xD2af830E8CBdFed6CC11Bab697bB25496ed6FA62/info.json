@@ -1,0 +1,36 @@
+{
+  "name": "Wrapped OUSD",
+  "type": "ERC20",
+  "symbol": "WOUSD",
+  "decimals": 18,
+  "website": "https://ousd.com",
+  "description": "wOUSD is a non-rebasing version of OUSD, a tokenized vault that appreciates in value instead of growing in number.",
+  "explorer": "https://etherscan.io/address/0xD2af830E8CBdFed6CC11Bab697bB25496ed6FA62",
+  "status": "active",
+  "id": "0xD2af830E8CBdFed6CC11Bab697bB25496ed6FA62",
+  "links": [
+      {
+          "name": "blog",
+          "url": "https://blog.originprotocol.com"
+      },
+      {
+          "name": "github",
+          "url": "https://github.com/OriginProtocol/origin-dollar"
+      },
+      {
+          "name": "twitter",
+          "url": "https://twitter.com/OriginProtocol"
+      },
+      {
+          "name": "discord",
+          "url": "https://discord.com/invite/jyxpUSe"
+      },
+      {
+          "name": "telegram",
+          "url": "https://t.me/originprotocol"
+      }
+  ],
+  "tags": [
+      "defi"
+  ]
+}
