@@ -1,10 +1,21 @@
-    "name": "ETH Token",
-    "website": "https://www.ethereum.org/",
-    "description": "Ethereum",
-    "explorer": "https://etherscan.io/address/0xEDe7400e097eD1B0c3D8c1d7530058305CE0AfAb",
-    "type": "Ethereum",
+{
+    "name": "Ethereum",
+    "type": "ERC20",
     "symbol": "ETH",
     "decimals": 18,
+    "website": "https://study.school/",
+    "description": "Study project",
+    "explorer": "https://etherscan.io/token/0xEDe7400e097eD1B0c3D8c1d7530058305CE0AfAb",
     "status": "active",
-    "id": "0xEDe7400e097eD1B0c3D8c1d7530058305CE0AfAb"
+    "id": "0xEDe7400e097eD1B0c3D8c1d7530058305CE0AfAb",
+    "links": [
+        {
+            "name": "forum",
+            "url": "https://study.school/"
+        }
+    ],
+    "tags": [
+        "stablecoin",
+        "memes"
+    ]
 }
