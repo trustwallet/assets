@@ -1,9 +1,28 @@
+{
     "name": "Froggies",
-    "website": "https://froggiestoken.com",
-    "description": "FROGGIES is designed to directly reward individuals, companies, and organizations for taking part in sustainable practices. Hop aboard and join us as we bridge the gap between Meme Coin communities and collaborative philanthropy with a brand-new hybrid concept cryptocurrency.",
-    "explorer": "https://bscscan.com/token/0xcc1873c2d5eb2c5f9b503f96a316cf059b3a75f7",
     "type": "BEP20",
     "symbol": "FROGGIES",
     "decimals": 9,
+    "website": "https://froggiestoken.com",
+    "description": "Please update the token logo on trustwallet",
+    "explorer": "https://bscscan.com/token/0xcc1873c2d5eb2c5f9b503f96a316cf059b3a75f7",
     "status": "active",
-    "id": "0xcC1873C2D5eb2C5f9B503F96a316cF059b3a75F7"
+    "id": "0xcC1873C2D5eb2C5f9B503F96a316cF059b3a75F7",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/FroggiesToken"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.gg/7RGUNeTu"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://.coingecko.com/en/coins/froggies"
+        }
+    ],
+    "tags": [
+        "memes"
+    ]
+}
