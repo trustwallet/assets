@@ -1,13 +1,13 @@
 {   
  "name": "Wrapped sHEC",
     "website": "https://hector.finance",
-    "description": "Wrapped Staked version of Hector (HEC) Token",
+    "description": "Wrapped Staked version of Hector Token",
     "explorer": "https://ftmscan.com/token/0x94CcF60f700146BeA8eF7832820800E2dFa92EdA",
     "type": "FANTOM",
     "symbol": "wsHEC",
     "decimals": 18,
     "status": "active",
-    "id": "0x94CcF60f700146BeA8eF7832820800E2dFa92EdA"
+    "id": "0x94CcF60f700146BeA8eF7832820800E2dFa92EdA",
   "tags": [
         "defi"
     ],
@@ -29,14 +29,6 @@
             "url": "https://t.me/hectorDAO"
         },
         {
-            "name": "discord",
-            "url": "https://discord.gg/hector"
-        },
-        {
-            "name": "reddit",
-            "url": "https://reddit.com/r/hectordao"
-        },
-        {
             "name": "telegram_news",
             "url": "https://t.me/hectordaoann"
         },
@@ -50,7 +42,7 @@
         },
         {
             "name": "coingecko",
-            "url": "https://www.coingecko.com/en/coins/wrapped-hec"
+            "url": "https://coingecko.com/en/coins/wrapped-hec"
         }
     ]
 }
