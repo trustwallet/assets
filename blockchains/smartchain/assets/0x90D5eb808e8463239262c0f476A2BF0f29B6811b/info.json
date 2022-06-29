@@ -1,0 +1,36 @@
+{
+    "name": "Raddix Hodl Token",
+    "type": "BEP20",
+    "symbol": "RHT",
+    "decimals": 18,
+    "website": "https://raddix-brands.io/RHT/",
+    "description": "Base tokens for several planned projects. 100% BUSD backed, as anyone can mint by depositing BUSD into the contract. Each transaction burns up to 1% of the volume to be traded, which increases the value of the token. The value of the token can only increase, not decrease. Anyone can redeem their RHT into the contract at any time and will receive the deposited value in BUSD again.",
+    "explorer": "https://bscscan.com/token/0x90D5eb808e8463239262c0f476A2BF0f29B6811b",
+    "status": "active",
+    "id": "0x90D5eb808e8463239262c0f476A2BF0f29B6811b",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/RaddixBrands"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/ExaltedRaddix/Raddix-Brands"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/RHToken"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/euGkmvuabz"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/@RaddixBrands"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}
