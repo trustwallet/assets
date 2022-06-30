@@ -1,11 +1,30 @@
 {
     "name": "MetaSwap",
-    "website": "https://metaswap.cx",
-    "description": "Using MetaSwap, you can exchange your NFT and cryptocurrency safely and easily.",
-    "explorer": "https://bscscan.com/token/0xeacAd6c99965cDE0f31513dd72DE79FA24610767",
     "type": "BEP20",
     "symbol": "MSC",
     "decimals": 18,
+    "website": "https://metaswap.cx",
+    "description": "Using MetaSwap, you can exchange your NFT and cryptocurrency safely and easily.",
+    "explorer": "https://bscscan.com/token/0xeacAd6c99965cDE0f31513dd72DE79FA24610767",
     "status": "active",
-    "id": "0xeacAd6c99965cDE0f31513dd72DE79FA24610767"
-   } 
+    "id": "0xeacAd6c99965cDE0f31513dd72DE79FA24610767",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/METASWAPBSC"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/Meta-Swap/MSC"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/MetaSwap2022"
+        }
+    ],
+    "tags": [
+        "defi",
+        "gamefi",
+        "nft"
+    ]
+}
