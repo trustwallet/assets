@@ -5,14 +5,14 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/block-wallet/assets-go-libs/file"
-	"github.com/block-wallet/assets-go-libs/path"
-	"github.com/block-wallet/assets-go-libs/validation"
-	"github.com/block-wallet/assets-go-libs/validation/info"
-	"github.com/block-wallet/assets-go-libs/validation/list"
-	"github.com/block-wallet/assets-go-libs/validation/tokenlist"
+	"github.com/trustwallet/assets-go-libs/file"
+	"github.com/trustwallet/assets-go-libs/path"
+	"github.com/trustwallet/assets-go-libs/validation"
+	"github.com/trustwallet/assets-go-libs/validation/info"
+	"github.com/trustwallet/assets-go-libs/validation/list"
+	"github.com/trustwallet/assets-go-libs/validation/tokenlist"
 	"github.com/block-wallet/assets/internal/config"
-	"github.com/block-wallet/go-primitives/coin"
+	"github.com/trustwallet/go-primitives/coin"
 )
 
 func (s *Service) ValidateJSON(f *file.AssetFile) error {

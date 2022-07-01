@@ -3,7 +3,7 @@ package config
 import (
 	"path/filepath"
 
-	"github.com/block-wallet/go-libs/config/viper"
+	"github.com/trustwallet/go-libs/config/viper"
 )
 
 type (
