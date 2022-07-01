@@ -69,6 +69,8 @@ github.com/beorn7/perks v1.0.0/go.mod h1:KWe93zE9D1o94FZ5RNwFwVgaQK1VOXiVxmqh+Ce
 github.com/beorn7/perks v1.0.1/go.mod h1:G2ZrVWU2WbWT9wwq4/hrbKbnv/1ERSJQ0ibhJ6rlkpw=
 github.com/bgentry/speakeasy v0.1.0/go.mod h1:+zsyZBPWlz7T6j88CTgSN5bM796AkVf0kBD4zp0CCIs=
 github.com/bketelsen/crypt v0.0.4/go.mod h1:aI6NrJ0pMGgvZKL1iVgXLnfIFJtfV+bKCoqOes/6LfM=
+github.com/block-wallet/assets-go-libs v0.3.2 h1:jFZtfv0lQdiyziY5ef+oIUF8J8FHIwunW0r13MsLqEw=
+github.com/block-wallet/assets-go-libs v0.3.2/go.mod h1:9EuXU2I+HdRPyy47t/QH2Fk4UlHoaqBdCmeQwNzKqWU=
 github.com/census-instrumentation/opencensus-proto v0.2.1/go.mod h1:f6KPmirojxKA12rnyqOA5BBL4O983OfeGPqjHWSTneU=
 github.com/census-instrumentation/opencensus-proto v0.3.0/go.mod h1:f6KPmirojxKA12rnyqOA5BBL4O983OfeGPqjHWSTneU=
 github.com/certifi/gocertifi v0.0.0-20210507211836-431795d63e8d/go.mod h1:sGbDF6GwGcLpkNXPUTkMRoywsNa/ol15pxFe6ERfguA=
@@ -428,8 +430,6 @@ github.com/stretchr/testify v1.7.0 h1:nwc3DEeHmmLAfoZucVR881uASk0Mfjw8xYJ99tb5Cc
 github.com/stretchr/testify v1.7.0/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/h/Wwjteg=
 github.com/subosito/gotenv v1.2.0 h1:Slr1R9HxAlEKefgq5jn9U+DnETlIUa6HfgEzj0g5d7s=
 github.com/subosito/gotenv v1.2.0/go.mod h1:N0PQaV/YGNqwC0u51sEeR/aUtSLEXKX9iv69rRypqCw=
-github.com/trustwallet/assets-go-libs v0.3.0 h1:roDXZaUciPbTfwTbCQRajcDFwrFGkVhhCAxGelztjvU=
-github.com/trustwallet/assets-go-libs v0.3.0/go.mod h1:IW7K3aJcVlsXnQWD61KyQ46Nvb5iIPrptsKuSDFYbj8=
 github.com/trustwallet/go-libs v0.3.13 h1:zB30WfP6Do+5Cf3+HgkUhawBf1fnOdvvC/eBfCHKBEw=
 github.com/trustwallet/go-libs v0.3.13/go.mod h1:FuDoyKxhE1IgLPWMfU1PFok87MqfYm/spJJx1QziWe8=
 github.com/trustwallet/go-primitives v0.0.40/go.mod h1:4IujMVfxa0uJS267wFszPDYd7vVjQY+/uOREZclnfU0=

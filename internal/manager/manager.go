@@ -3,8 +3,8 @@ package manager
 import (
 	"os"
 
-	"github.com/trustwallet/assets-go-libs/file"
-	"github.com/trustwallet/assets-go-libs/path"
+	"github.com/block-wallet/assets-go-libs/file"
+	"github.com/block-wallet/assets-go-libs/path"
 	"github.com/block-wallet/assets/internal/config"
 	"github.com/block-wallet/assets/internal/processor"
 	"github.com/block-wallet/assets/internal/report"
