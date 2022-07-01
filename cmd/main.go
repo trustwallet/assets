@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/trustwallet/assets/internal/manager"
+	"github.com/block-wallet/assets/internal/manager"
 )
 
 func main() {

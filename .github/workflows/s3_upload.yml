@@ -14,6 +14,7 @@ env:
 
 jobs:
   upload-s3:
+    if: ${{ false }} # disable for now
     runs-on: ubuntu-latest
 
     steps:
@@ -49,4 +50,3 @@ jobs:
         env:
           PATHS: ${{ steps.filter.outputs.paths }}
           DISTRIBUTION: ${{ secrets.AWS_DISTRIBUTION }}
-

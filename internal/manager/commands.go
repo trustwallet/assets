@@ -5,15 +5,15 @@ import (
 	"fmt"
 	"time"
 
-	libFile "github.com/trustwallet/assets-go-libs/file"
-	"github.com/trustwallet/assets-go-libs/path"
-	"github.com/trustwallet/assets-go-libs/validation/info"
-	"github.com/trustwallet/assets-go-libs/validation/tokenlist"
-	"github.com/trustwallet/go-primitives/asset"
-	"github.com/trustwallet/go-primitives/coin"
-	"github.com/trustwallet/go-primitives/types"
+	libFile "github.com/block-wallet/assets-go-libs/file"
+	"github.com/block-wallet/assets-go-libs/path"
+	"github.com/block-wallet/assets-go-libs/validation/info"
+	"github.com/block-wallet/assets-go-libs/validation/tokenlist"
+	"github.com/block-wallet/go-primitives/asset"
+	"github.com/block-wallet/go-primitives/coin"
+	"github.com/block-wallet/go-primitives/types"
 
-	"github.com/trustwallet/assets/internal/config"
+	"github.com/block-wallet/assets/internal/config"
 )
 
 func CreateAssetInfoJSONTemplate(token string) error {

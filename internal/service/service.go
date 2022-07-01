@@ -1,10 +1,10 @@
 package service
 
 import (
-	"github.com/trustwallet/assets-go-libs/file"
-	"github.com/trustwallet/assets-go-libs/validation"
-	"github.com/trustwallet/assets/internal/processor"
-	"github.com/trustwallet/assets/internal/report"
+	"github.com/block-wallet/assets-go-libs/file"
+	"github.com/block-wallet/assets-go-libs/validation"
+	"github.com/block-wallet/assets/internal/processor"
+	"github.com/block-wallet/assets/internal/report"
 
 	log "github.com/sirupsen/logrus"
 )

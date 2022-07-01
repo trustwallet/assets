@@ -1,6 +1,6 @@
 package config
 
-import "github.com/trustwallet/go-primitives/coin"
+import "github.com/block-wallet/go-primitives/coin"
 
 var StackingChains = []coin.Coin{
 	coin.Tezos(),
