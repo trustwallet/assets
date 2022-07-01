@@ -3,8 +3,8 @@ package processor
 import (
 	"testing"
 
-	"github.com/block-wallet/go-libs/blockchain/binance"
-	"github.com/block-wallet/go-primitives/coin"
+	"github.com/trustwallet/go-libs/blockchain/binance"
+	"github.com/trustwallet/go-primitives/coin"
 )
 
 func Test_getTokenName(t *testing.T) {

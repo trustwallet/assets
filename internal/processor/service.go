@@ -1,8 +1,8 @@
 package processor
 
 import (
-	assetsmanager "github.com/block-wallet/assets-go-libs/client/assets-manager"
-	"github.com/block-wallet/assets-go-libs/file"
+	assetsmanager "github.com/trustwallet/assets-go-libs/client/assets-manager"
+	"github.com/trustwallet/assets-go-libs/file"
 	"github.com/block-wallet/assets/internal/config"
 )
 
