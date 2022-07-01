@@ -6,14 +6,14 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/trustwallet/assets-go-libs/file"
-	"github.com/trustwallet/assets-go-libs/image"
-	"github.com/trustwallet/assets-go-libs/path"
-	"github.com/trustwallet/assets-go-libs/validation"
-	"github.com/trustwallet/assets-go-libs/validation/info"
-	"github.com/trustwallet/go-primitives/address"
-	"github.com/trustwallet/go-primitives/coin"
-	"github.com/trustwallet/go-primitives/types"
+	"github.com/block-wallet/assets-go-libs/file"
+	"github.com/block-wallet/assets-go-libs/image"
+	"github.com/block-wallet/assets-go-libs/path"
+	"github.com/block-wallet/assets-go-libs/validation"
+	"github.com/block-wallet/assets-go-libs/validation/info"
+	"github.com/block-wallet/go-primitives/address"
+	"github.com/block-wallet/go-primitives/coin"
+	"github.com/block-wallet/go-primitives/types"
 
 	log "github.com/sirupsen/logrus"
 )

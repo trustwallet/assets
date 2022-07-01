@@ -41,6 +41,8 @@ validators_settings:
       - ".golangci.yml"
       - "Makefile"
       - "bin"
+      - ".prettierrc"
+      - ".editorconfig"
     skip_files:
       - "node_modules"
 

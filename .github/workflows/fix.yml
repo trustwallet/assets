@@ -6,8 +6,8 @@ name: Fixes
 on:
   push:
     branches:
-      - 'master'
-      - '*'
+      - "master"
+      - "*"
   workflow_dispatch:
 jobs:
   fix-all:
@@ -49,6 +49,6 @@ jobs:
         if: success()
         uses: stefanzweifel/git-auto-commit-action@v4.1.2
         with:
-          commit_user_name: trust-wallet-merge-bot
-          commit_user_email: mergebot@trustwallet.com
+          commit_user_name: release_process
+          commit_user_email: release_process@blockwallet.io
           commit_message: Fixes (sanity and consistency, auto)

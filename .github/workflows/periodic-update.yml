@@ -2,16 +2,17 @@ name: Periodic External Update
 on:
   schedule:
     # Run twice per day (at 1:00UTC/6pmPST, 13:00UTC/6amPST)
-    - cron:  '0 1,13 * * *'
+    - cron: "0 1,13 * * *"
   workflow_dispatch:
 jobs:
   periodic-auto-update:
+    if: ${{ false }} # disable for now
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
         with:
           token: ${{ secrets.COMMIT_TOKEN }}
-          ref: ${{ github.head_ref }} 
+          ref: ${{ github.head_ref }}
 
       - name: Set up Go
         uses: actions/setup-go@v2
@@ -35,6 +36,6 @@ jobs:
         if: success()
         uses: stefanzweifel/git-auto-commit-action@v4.1.2
         with:
-          commit_user_name: trust-wallet-merge-bot
-          commit_user_email: mergebot@trustwallet.com
+          commit_user_name: release_process
+          commit_user_email: release_process@blockwallet.io
           commit_message: External Updates
