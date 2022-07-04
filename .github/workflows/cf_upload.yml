@@ -1,0 +1,109 @@
+name: Upload Cloudflare Images
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - "blockchains/**.png"
+      - "dapps/**.png"
+      - "blockchains/**.jpg"
+      - "dapps/**.jpg"
+      - "blockchains/**.webp"
+      - "dapps/**.webp"
+      # - "**.webm" # not supported by Cloudflare Images
+      # - '**.svg' # not supported by Cloudflare Images
+  workflow_dispatch:
+env:
+  ID_PREFIX: "Assets/"
+
+jobs:
+  upload-cf:
+    runs-on: ubuntu-latest
+    if: github.repository_owner == 'DimensionDev'
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Get changed files
+        uses: tj-actions/changed-files@v23.1
+        id: files
+        with:
+          include_all_old_new_renamed_files: true
+
+      - name: Upload added files
+        run: |
+          for file in ${{ steps.files.outputs.added_files }}; do
+            if [[ $file == *.png || $file == *.jpg || $file == *.webp ]] then
+              curl -X POST \
+                --url "https://api.cloudflare.com/client/v4/accounts/${{ secrets.CF_ACCOUNT_ID }}/images/v1" \
+                --header 'Authorization: Bearer ${{ secrets.CF_API_TOKEN }}' \
+                --form "file=@./${file}" \
+                --form "id=${{ env.ID_PREFIX }}${file}"
+
+              sleep 0.5
+            fi
+          done
+
+      - name: Upload copied files
+        run: |
+          for file in ${{ steps.files.outputs.copied_files }}; do
+            if [[ $file == *.png || $file == *.jpg || $file == *.webp ]] then
+              curl -X POST \
+                --url "https://api.cloudflare.com/client/v4/accounts/${{ secrets.CF_ACCOUNT_ID }}/images/v1" \
+                --header 'Authorization: Bearer ${{ secrets.CF_API_TOKEN }}' \
+                --form "file=@./${file}" \
+                --form "id=${{ env.ID_PREFIX }}${file}"
+
+              sleep 0.5
+            fi
+          done
+
+      - name: Delete removed files
+        run: |
+          for file in ${{ steps.files.outputs.deleted_files }}; do
+            if [[ $file == *.png || $file == *.jpg || $file == *.webp ]] then
+              curl --request DELETE \
+                --url "https://api.cloudflare.com/client/v4/accounts/${{ secrets.CF_ACCOUNT_ID }}/images/v1/${{ env.ID_PREFIX }}${file}" \
+                --header 'Authorization: Bearer ${{ secrets.CF_API_TOKEN }}'
+
+              sleep 0.5
+            fi
+          done
+
+      - name: Re-upload modified files
+        run: |
+          for file in ${{ steps.files.outputs.modified_files }}; do
+            if [[ $file == *.png || $file == *.jpg || $file == *.webp ]] then
+              curl --request DELETE \
+                --url "https://api.cloudflare.com/client/v4/accounts/${{ secrets.CF_ACCOUNT_ID }}/images/v1/${{ env.ID_PREFIX }}${file}" \
+                --header 'Authorization: Bearer ${{ secrets.CF_API_TOKEN }}'
+
+              curl -X POST \
+                --url "https://api.cloudflare.com/client/v4/accounts/${{ secrets.CF_ACCOUNT_ID }}/images/v1" \
+                --header 'Authorization: Bearer ${{ secrets.CF_API_TOKEN }}' \
+                --form "file=@./${file}" \
+                --form "id=${{ env.ID_PREFIX }}${file}"
+
+              sleep 0.5
+            fi
+          done
+
+      - name: Re-upload renamed files
+        run: |
+          for old_new_file in ${{ steps.files.outputs.all_old_new_renamed_files }}; do
+            old_file=${old_new_file%,*}
+            new_file=${old_new_file#*,}
+            if [[ $new_file == *.png || $new_file == *.jpg || $new_file == *.webp ]] then
+              curl --request DELETE \
+                --url "https://api.cloudflare.com/client/v4/accounts/${{ secrets.CF_ACCOUNT_ID }}/images/v1/${{ env.ID_PREFIX }}${old_file}" \
+                --header 'Authorization: Bearer ${{ secrets.CF_API_TOKEN }}'
+
+              curl -X POST \
+                --url "https://api.cloudflare.com/client/v4/accounts/${{ secrets.CF_ACCOUNT_ID }}/images/v1" \
+                --header 'Authorization: Bearer ${{ secrets.CF_API_TOKEN }}' \
+                --form "file=@./${new_file}" \
+                --form "id=${{ env.ID_PREFIX }}${new_file}"
+
+              sleep 0.5
+            fi
+          done
