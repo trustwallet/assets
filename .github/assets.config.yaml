@@ -16,6 +16,8 @@ time_format: "2006-01-02T15:04:05.000000"
 validators_settings:
   root_folder:
     allowed_files:
+      - ".vscode"
+      - "coverage.txt"
       - ".github"
       - "blockchains"
       - "dapps"
