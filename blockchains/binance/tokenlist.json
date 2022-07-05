@@ -1,7 +1,7 @@
 {
     "name": "Trust Wallet: BNB",
     "logoURI": "https://trustwallet.com/assets/images/favicon.png",
-    "timestamp": "2022-06-30T01:36:05.034877",
+    "timestamp": "2022-07-03T01:35:37.949040",
     "tokens": [
         {
             "asset": "c714",
@@ -409,12 +409,12 @@
                 },
                 {
                     "base": "c714_tPYN-C37",
-                    "lotSize": "100000000000",
+                    "lotSize": "1000000000000",
                     "tickSize": "1"
                 },
                 {
                     "base": "c714_tQBX-38C",
-                    "lotSize": "10000000000",
+                    "lotSize": "100000000000",
                     "tickSize": "1"
                 },
                 {
@@ -429,7 +429,7 @@
                 },
                 {
                     "base": "c714_tSHR-DB6",
-                    "lotSize": "100000000000",
+                    "lotSize": "10000000000",
                     "tickSize": "1"
                 },
                 {
@@ -504,7 +504,7 @@
                 },
                 {
                     "base": "c714_tVDX-A17",
-                    "lotSize": "100000000000",
+                    "lotSize": "1000000000000",
                     "tickSize": "1"
                 },
                 {
@@ -670,12 +670,12 @@
                 },
                 {
                     "base": "c714_tSHR-DB6",
-                    "lotSize": "100000000000",
+                    "lotSize": "10000000000",
                     "tickSize": "1"
                 },
                 {
                     "base": "c714_tSWINGBY-888",
-                    "lotSize": "100000000000",
+                    "lotSize": "10000000000",
                     "tickSize": "1"
                 },
                 {
@@ -701,7 +701,7 @@
                 {
                     "base": "c714_tYFII-061",
                     "lotSize": "100000",
-                    "tickSize": "1000000"
+                    "tickSize": "100000"
                 },
                 {
                     "base": "c714_tZEC-93E",
@@ -841,7 +841,7 @@
                 {
                     "base": "c714_tBUSD-BD1",
                     "lotSize": "100000000",
-                    "tickSize": "100"
+                    "tickSize": "1000"
                 }
             ]
         },
@@ -2045,7 +2045,7 @@
         }
     ],
     "version": {
-        "major": 335,
+        "major": 338,
         "minor": 0,
         "patch": 0
     }
