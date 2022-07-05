@@ -62,7 +62,7 @@ jobs:
         run: |
           for file in ${{ steps.files.outputs.deleted_files }}; do
             if [[ $file == *.png || $file == *.jpg || $file == *.webp ]] then
-              curl --request DELETE \
+              curl -X DELETE \
                 --url "https://api.cloudflare.com/client/v4/accounts/${{ secrets.CF_ACCOUNT_ID }}/images/v1/${{ env.ID_PREFIX }}${file}" \
                 --header 'Authorization: Bearer ${{ secrets.CF_API_TOKEN }}'
 
@@ -74,7 +74,7 @@ jobs:
         run: |
           for file in ${{ steps.files.outputs.modified_files }}; do
             if [[ $file == *.png || $file == *.jpg || $file == *.webp ]] then
-              curl --request DELETE \
+              curl -X DELETE \
                 --url "https://api.cloudflare.com/client/v4/accounts/${{ secrets.CF_ACCOUNT_ID }}/images/v1/${{ env.ID_PREFIX }}${file}" \
                 --header 'Authorization: Bearer ${{ secrets.CF_API_TOKEN }}'
 
@@ -94,7 +94,7 @@ jobs:
             old_file=${old_new_file%,*}
             new_file=${old_new_file#*,}
             if [[ $new_file == *.png || $new_file == *.jpg || $new_file == *.webp ]] then
-              curl --request DELETE \
+              curl -X DELETE \
                 --url "https://api.cloudflare.com/client/v4/accounts/${{ secrets.CF_ACCOUNT_ID }}/images/v1/${{ env.ID_PREFIX }}${old_file}" \
                 --header 'Authorization: Bearer ${{ secrets.CF_API_TOKEN }}'
 
