@@ -1,0 +1,24 @@
+{
+    "name": "zkSync Token",
+    "type": "BEP20",
+    "symbol": "zksync",
+    "decimals": 8,
+    "website": "https://zksync.design/",
+    "description": "zkSync is a ZK rollup solving Ethereum scalability with zero security compromises.",
+    "explorer": "https://bscscan.com/token/0xd27aaeead8FdE08Ba292c1E08f53a14c00e7f7c8",
+    "status": "active",
+    "id": "0xd27aaeead8FdE08Ba292c1E08f53a14c00e7f7c8",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/zksync"
+        },
+        {
+            "name": "电报",
+            "url": "https://t.me/zksync"
+        }
+    ],
+    "tags": [
+        "binance-peg"
+    ]
+}
