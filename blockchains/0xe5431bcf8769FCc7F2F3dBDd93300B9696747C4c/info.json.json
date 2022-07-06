@@ -1,9 +1,29 @@
-"name": "GGCM Token",
+{
+    "name": "GGCM",
     "website": "https://ggcm.io/",
-    "description": "GGCM is a stablecoin .",
+    "description": "GGCM Gold Guaranteed Coin Mining is Gold Guarantee Coin ",
     "explorer": "https://bscscan.com/token/0xe5431bcf8769FCc7F2F3dBDd93300B9696747C4c",
-    "type": "BEP20",
+    "research": "https://coinmarketcap.com/currencies/gold-guaranteed-coin-mining/",
     "symbol": "GGCM",
+    "type": "token",
     "decimals": 18,
     "status": "active",
-    "id": "0xe5431bcf8769FCc7F2F3dBDd93300B9696747C4c"{}
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/GoldGuaranteedCoinMining"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/GGCMOfficial"
+        },
+        {
+            "name": "reddit",
+            "url": "https://www.reddit.com/r/GoldGuaranteedCoinM/"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://dashboard.ggcm.io/assets/Whitepaper.pdf"
+        }
+    ]
+}
