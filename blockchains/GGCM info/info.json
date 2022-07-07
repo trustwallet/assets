@@ -1,13 +1,16 @@
 {
     "name": "GGCM",
     "website": "https://ggcm.io/",
-    "description": "GGCM Gold Guaranteed Coin Mining is Gold Guarantee Coin ",
+    "description": "A digitized, contemporary approach to gold accessibility",
     "explorer": "https://bscscan.com/token/0xe5431bcf8769FCc7F2F3dBDd93300B9696747C4c",
-    "research": "https://coinmarketcap.com/currencies/gold-guaranteed-coin-mining/",
+    "type": "BEP20",
     "symbol": "GGCM",
-    "type": "token",
     "decimals": 18,
     "status": "active",
+    "id": "0xe5431bcf8769FCc7F2F3dBDd93300B9696747C4c",
+    "tags": [
+        "deflationary"
+    ],
     "links": [
         {
             "name": "github",
@@ -15,15 +18,23 @@
         },
         {
             "name": "twitter",
-            "url": "https://twitter.com/GGCMOfficial"
+            "url": "https://t.me/GGCMining"
         },
         {
-            "name": "reddit",
-            "url": "https://www.reddit.com/r/GoldGuaranteedCoinM/"
+            "name": "telegram",
+            "url": "https://t.me/GGCMAnnouncements"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://www.coingecko.com/en/coins/gold-guaranteed-coin"
         },
         {
             "name": "whitepaper",
             "url": "https://dashboard.ggcm.io/assets/Whitepaper.pdf"
+        },
+        {
+            "name": "reddit",
+            "url": "https://www.reddit.com/r/GoldGuaranteedCoinM/"
         }
     ]
 }
