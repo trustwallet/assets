@@ -1,7 +1,7 @@
 {
     "name": "Trust Wallet: BNB",
     "logoURI": "https://trustwallet.com/assets/images/favicon.png",
-    "timestamp": "2022-07-06T01:36:12.690908",
+    "timestamp": "2022-07-10T01:38:51.411735",
     "tokens": [
         {
             "asset": "c714",
@@ -34,7 +34,7 @@
                 },
                 {
                     "base": "c714_tATP-38C",
-                    "lotSize": "1000000000",
+                    "lotSize": "10000000000",
                     "tickSize": "1"
                 },
                 {
@@ -229,7 +229,7 @@
                 },
                 {
                     "base": "c714_tFRM-DE7",
-                    "lotSize": "10000000000",
+                    "lotSize": "1000000000",
                     "tickSize": "1"
                 },
                 {
@@ -379,7 +379,7 @@
                 },
                 {
                     "base": "c714_tONT-33D",
-                    "lotSize": "100000000",
+                    "lotSize": "1000000000",
                     "tickSize": "1"
                 },
                 {
@@ -499,7 +499,7 @@
                 },
                 {
                     "base": "c714_tUPX-F3E",
-                    "lotSize": "100000000000",
+                    "lotSize": "1000000000000",
                     "tickSize": "1"
                 },
                 {
@@ -509,7 +509,7 @@
                 },
                 {
                     "base": "c714_tVIDT-F53",
-                    "lotSize": "1000000000",
+                    "lotSize": "100000000",
                     "tickSize": "1"
                 },
                 {
@@ -549,8 +549,8 @@
                 },
                 {
                     "base": "c714_tXRPBEAR-00B",
-                    "lotSize": "1000000",
-                    "tickSize": "100"
+                    "lotSize": "10000000",
+                    "tickSize": "10"
                 },
                 {
                     "base": "c714_tXRPBULL-E7C",
@@ -609,6 +609,11 @@
                     "tickSize": "100000"
                 },
                 {
+                    "base": "c714_tBIFI-290",
+                    "lotSize": "100000",
+                    "tickSize": "100000"
+                },
+                {
                     "base": "c714_tBTCB-1DE",
                     "lotSize": "10000",
                     "tickSize": "10000000"
@@ -645,7 +650,7 @@
                 },
                 {
                     "base": "c714_tFRM-DE7",
-                    "lotSize": "10000000000",
+                    "lotSize": "1000000000",
                     "tickSize": "10"
                 },
                 {
@@ -660,7 +665,7 @@
                 },
                 {
                     "base": "c714_tONT-33D",
-                    "lotSize": "100000000",
+                    "lotSize": "1000000000",
                     "tickSize": "100"
                 },
                 {
@@ -701,7 +706,7 @@
                 {
                     "base": "c714_tYFII-061",
                     "lotSize": "100000",
-                    "tickSize": "100000"
+                    "tickSize": "1000000"
                 },
                 {
                     "base": "c714_tZEC-93E",
@@ -1052,6 +1057,15 @@
             "symbol": "BET",
             "decimals": 8,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/binance/assets/BET-844/logo.png"
+        },
+        {
+            "asset": "c714_tBIFI-290",
+            "type": "BEP2",
+            "address": "BIFI-290",
+            "name": "beefy.finance",
+            "symbol": "BIFI",
+            "decimals": 8,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/binance/assets/BIFI-290/logo.png"
         },
         {
             "asset": "c714_tBKBT-3A6",
@@ -2045,7 +2059,7 @@
         }
     ],
     "version": {
-        "major": 339,
+        "major": 340,
         "minor": 0,
         "patch": 0
     }
