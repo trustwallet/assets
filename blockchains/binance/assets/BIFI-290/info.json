@@ -1,9 +1,9 @@
 {
-    "name": "Beefy Finance",
+    "name": "beefy.finance",
     "symbol": "BIFI",
     "type": "BEP2",
     "decimals": 8,
-    "description": "Beefy Finance provides farming and staking platform whereby governance token $BIFI will be rewarded.",
+    "description": "The Multichain Yield Optimizer",
     "website": "https://beefy.finance",
     "explorer": "https://explorer.binance.org/asset/BIFI-290",
     "status": "active",
@@ -17,5 +17,8 @@
             "name": "telegram",
             "url": "https://t.me/beefyannouncement"
         }
+    ],
+    "tags": [
+        "defi"
     ]
 }
