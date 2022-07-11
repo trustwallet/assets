@@ -7,7 +7,7 @@ require (
 	github.com/spf13/cobra v1.4.0
 	github.com/trustwallet/assets-go-libs v0.3.0
 	github.com/trustwallet/go-libs v0.3.13
-	github.com/trustwallet/go-primitives v0.0.53
+	github.com/trustwallet/go-primitives v0.0.54
 )
 
 require (
