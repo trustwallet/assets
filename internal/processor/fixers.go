@@ -158,15 +158,17 @@ func (s *Service) FixAssetInfo(f *file.AssetFile) error {
 		isModified = true
 	}
 
-	expectedExplorerURL, err := coin.GetCoinExploreURL(f.Chain(), f.Asset(), assetType)
-	if err != nil {
-		return err
-	}
+	if assetType != "NATIVE" {
+		expectedExplorerURL, err := coin.GetCoinExploreURL(f.Chain(), f.Asset(), assetType)
+		if err != nil {
+			return err
+		}
 
-	// Fix asset explorer url.
-	if assetInfo.Explorer == nil || !strings.EqualFold(expectedExplorerURL, *assetInfo.Explorer) {
-		assetInfo.Explorer = &expectedExplorerURL
-		isModified = true
+		// Fix asset explorer url.
+		if assetInfo.Explorer == nil || !strings.EqualFold(expectedExplorerURL, *assetInfo.Explorer) {
+			assetInfo.Explorer = &expectedExplorerURL
+			isModified = true
+		}
 	}
 
 	if isModified {
