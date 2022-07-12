@@ -1,11 +1,11 @@
 {
-  "name": "xDAI",
-  "type": "NATIVE",
-  "symbol": "xDAI",
-  "decimals": 18,
-  "website": "https://xdaichain.com",
-  "description": "The first-ever USD stable blockchain and multi-chain staking token.",
-  "explorer": "https://blockscout.com/poa/xdai",
-  "status": "active",
-  "id": "0x"
+    "name": "xDAI",
+    "symbol": "xDAI",
+    "type": "XDAI",
+    "decimals": 18,
+    "description": "The first-ever USD stable blockchain and multi-chain staking token.",
+    "website": "https://xdaichain.com",
+    "explorer": "https://blockscout.com/xdai/mainnet/tokens/0x",
+    "status": "active",
+    "id": "0x"
 }
