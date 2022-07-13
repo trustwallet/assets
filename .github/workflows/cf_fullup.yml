@@ -1,0 +1,25 @@
+name: Full Upload Cloudflare Images
+on:
+  workflow_dispatch:
+env:
+  ID_PREFIX: "Assets/"
+
+jobs:
+  reset-cf:
+    runs-on: ubuntu-latest
+    if: github.repository_owner == 'DimensionDev'
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Upload all files
+        run: |
+          for file in $(find blockchains dapps -type f \( -iname "*.png" -o -iname "*.jpg" \)); do
+            curl -X POST \
+              --url "https://api.cloudflare.com/client/v4/accounts/${{ secrets.CF_ACCOUNT_ID }}/images/v1" \
+              --header 'Authorization: Bearer ${{ secrets.CF_API_TOKEN }}' \
+              --form "file=@./${file}" \
+              --form "id=${{ env.ID_PREFIX }}${file}"
+ 
+            sleep 0.5
+          done
