@@ -1,7 +1,7 @@
 {
     "name": "$ZKP Token",
     "symbol": "$ZKP",
-    "type": "ERC20",
+    "type": "POLYGON",
     "decimals": 18,
     "description": "Panther Protocol Token on Polygon",
     "website": "https://pantherprotocol.io",
@@ -15,7 +15,7 @@
         },
         {
             "name": "coingecko",
-            "url": "https://coingecko.com/en/coins/panther-protocol"
+            "url": "https://coingecko.com/coins/panther-protocol"
         },
         {
             "name": "coinmarketcap",
@@ -60,10 +60,6 @@
         {
             "name": "whitepaper",
             "url": "https://pantherprotocol.io/resources/panther-protocol-v-1-0-1.pdf"
-        },
-        {
-            "name": "youtube",
-            "url": "https://www.youtube.com/c/PantherProtocol"
         }
     ],
     "tags": [
