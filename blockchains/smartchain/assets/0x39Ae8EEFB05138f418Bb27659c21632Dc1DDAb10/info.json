@@ -1,0 +1,25 @@
+{
+    "name": "KardiaChain Token",
+    "symbol": "KAI",
+    "type": "BEP20",
+    "decimals": 18,
+    "description": "KardiaChain is a blockchain platform that aims to be fully interoperable and non-invasive, meaning that blockchains can connect to the network without needing to make technical modifications to their own protocols. KardiaChain uses a dual-node structure to facilitate the connection between its own ledger and other blockchains, sharding for scalability and smart contracts for developers.",
+    "website": "https://kardiachain.io/",
+    "explorer": "https://bscscan.com/token/0x39Ae8EEFB05138f418Bb27659c21632Dc1DDAb10",
+    "status": "active",
+    "id": "0x39Ae8EEFB05138f418Bb27659c21632Dc1DDAb10",
+    "links": [
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/kardiachain/"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/KardiaChain"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/kardiachain"
+        }
+    ]
+}
