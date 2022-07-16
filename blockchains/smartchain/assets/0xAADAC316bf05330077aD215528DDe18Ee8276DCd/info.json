@@ -1,10 +1,28 @@
-"name": "LockyBoxCoin",
-    "website": "https://www.lockyboxcoin.com/",
-    "description": "LBC iscombining the traditional lottery systems with blockchain technology",
-    "explorer": "https://bscscan.com/token/0xaadac316bf05330077ad215528dde18ee8276dcd",
+{
+    "name": "LockyBoxCoin",
     "type": "BEP20",
     "symbol": "LBC",
     "decimals": 18,
+    "website": "https://www.lockyboxcoin.com/",
+    "description": "LockyBoxCoin is combining the traditional lottery systems with blockchain technology",
+    "explorer": "https://bscscan.com/token/0xAADAC316bf05330077aD215528DDe18Ee8276DCd",
     "status": "active",
-    "id": "0xAADAC316bf05330077aD215528DDe18Ee8276DCd"
+    "id": "0xAADAC316bf05330077aD215528DDe18Ee8276DCd",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/https://www.twitter.com/lockybox"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://www.lockyboxcoin.com/wp-content/uploads/2022/07/lockeyboxcoinwhitepaper.pdf"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/lockyboxcoin"
+        }
+    ],
+    "tags": [
+        "gamefi"
+    ]
 }
