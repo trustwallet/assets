@@ -1,5 +1,5 @@
 {
-    "name": "MIR Token",
+    "name": "Mirror Protocol",
     "website": "https://mirror.finance",
     "description": "Goverance token of Mirror Protocol.",
     "explorer": "https://etherscan.io/token/0x09a3EcAFa817268f77BE1283176B946C4ff2E608",
@@ -8,6 +8,9 @@
     "decimals": 18,
     "status": "active",
     "id": "0x09a3EcAFa817268f77BE1283176B946C4ff2E608",
+    "tags": [
+        "wrapped"
+    ],
     "links": [
         {
             "name": "twitter",
