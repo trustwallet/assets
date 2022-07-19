@@ -1,19 +1,21 @@
 {
     "name": "SBX",
     "website": "https://sbxtoken.io",
-    "short_description": "Decentralized marketplace for sports consultants and sports bettors. SBX token used for betting, 10% cashback on losses. Staking Dapp live at Uniswap launch.",
     "description": "Decentralized marketplace for sports consultants and sports bettors. SBX token used for betting, 10% cashback on losses. Staking Dapp live at Uniswap launch.",
-    "socials": [
+    "explorer": "https://etherscan.io/token/0xDaF8a0E12fc3b109A17ED5CbB943A8f3f86081f7",
+    "type": "ERC20",
+    "symbol": "SBX",
+    "decimals": 18,
+    "status": "active",
+    "id": "0xDaF8a0E12fc3b109A17ED5CbB943A8f3f86081f7",
+    "links": [
         {
-            "name": "Twitter",
-            "url": "https://twitter.com/SBXtoken",
-            "handle": "SBXtoken"
+            "name": "twitter",
+            "url": "https://twitter.com/SBXtoken"
         },
         {
-            "name": "Discord",
-            "url": "https://discord.gg/6n49BTy",
-            "handle": ""
+            "name": "discord",
+            "url": "https://discord.com/invite/6n49BTy"
         }
-    ],
-    "explorer": "https://etherscan.io/token/0xdaf8a0e12fc3b109a17ed5cbb943a8f3f86081f7"
+    ]
 }

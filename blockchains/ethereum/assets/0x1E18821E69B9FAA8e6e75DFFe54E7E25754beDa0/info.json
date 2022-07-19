@@ -1,6 +1,11 @@
 {
     "name": "KIMCHI.finance",
     "website": "https://kimchi.finance/",
-    "short_description": "KIMCHI is so hot",
-    "explorer": "https://etherscan.io/address/0x1e18821e69b9faa8e6e75dffe54e7e25754beda0"
+    "description": "KIMCHI is so hot",
+    "explorer": "https://etherscan.io/token/0x1E18821E69B9FAA8e6e75DFFe54E7E25754beDa0",
+    "type": "ERC20",
+    "symbol": "KIMCHI",
+    "decimals": 18,
+    "status": "active",
+    "id": "0x1E18821E69B9FAA8e6e75DFFe54E7E25754beDa0"
 }

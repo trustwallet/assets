@@ -1,0 +1,44 @@
+{
+    "type": "ESDT",
+    "id": "ITHWEGLD-1adc53",
+    "name": "ITH/WEGLD LP",
+    "symbol": "ITHWEGLD",
+    "decimals": 18,
+    "status": "active",
+    "description": "Liquidity Provider (LP) Token obtained by adding liquidity in the ITH/EGLD pool on the Maiar DEX.",
+    "website": "https://maiar.exchange",
+    "explorer": "https://explorer.elrond.com/tokens/ITHWEGLD-1adc53",
+    "links": [
+        {
+            "name": "docs",
+            "url": "https://docs.maiar.exchange"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/MaiarExchange"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/MaiarExchange"
+        },
+        {
+            "name": "facebook",
+            "url": "https://facebook.com/ElrondNetwork"
+        },
+        {
+            "name": "blog",
+            "url": "https://elrond.com/blog"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/ElrondNetwork"
+        },
+        {
+            "name": "source_code",
+            "url": "https://github.com/ElrondNetwork/sc-dex-rs"
+        }
+    ],
+    "tags": [
+        "defi"
+    ]
+}

@@ -1,7 +1,11 @@
 {
     "name": "QASH",
     "website": "https://liquid.com",
-    "short_description": "Liquid, formerly Quoine, is building a universal liquidity solution for cryptoasset trading and a suite of services, Worldbook and Prime Brokerage, using the Qash (QASH) token.",
-    "socials": [],
-    "explorer": "https://etherscan.io/token/0x618e75ac90b12c6049ba3b27f5d5f8651b0037f6"
+    "description": "Liquid, formerly Quoine, is building a universal liquidity solution for cryptoasset trading and a suite of services, Worldbook and Prime Brokerage, using the Qash (QASH) token.",
+    "explorer": "https://etherscan.io/token/0x618E75Ac90b12c6049Ba3b27f5d5F8651b0037F6",
+    "type": "ERC20",
+    "symbol": "QASH",
+    "decimals": 6,
+    "status": "active",
+    "id": "0x618E75Ac90b12c6049Ba3b27f5d5F8651b0037F6"
 }

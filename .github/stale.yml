@@ -4,7 +4,7 @@ daysUntilStale: 1
 daysUntilClose: 2
 # Issues with these labels will never be considered stale
 exemptLabels:
-  - 'Payment: Paid'
+  - 'Payment Status: Paid'
   - pinned
   - security
 # Comment to post when marking an issue as stale. Set to `false` to disable
