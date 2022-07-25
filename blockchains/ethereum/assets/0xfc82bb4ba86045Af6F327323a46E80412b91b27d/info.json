@@ -1,11 +1,54 @@
 {
-    "name": "Token Prometeus Network",
-    "symbol": "PROM",
+    "name": "Prom",
     "type": "ERC20",
+    "symbol": "PROM",
     "decimals": 18,
-    "description": "Prometeus Network is a secure and decentralized ecosystem designed to solve real-world problems in data brokerage, created for the Influencer Marketing, Medical and Insurance data market industries.",
-    "website": "https://prometeus.io/",
-    "explorer": "https://etherscan.io/token/0xfc82bb4ba86045Af6F327323a46E80412b91b27d",
+    "website": "https://prom.io/",
+    "description": "Prom is a unified access point to the NFT gaming and metaverse industry",
+    "explorer": "https://etherscan.io/token/0xfc82bb4ba86045af6f327323a46e80412b91b27d",
     "status": "active",
-    "id": "0xfc82bb4ba86045Af6F327323a46E80412b91b27d"
+    "id": "0xfc82bb4ba86045Af6F327323a46E80412b91b27d",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/prom_io"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/prom_io"
+        },
+        {
+            "name": "telegram_news",
+            "url": "https://t.me/prom_ann"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/prom"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://prom.io/whitepaper.pdf"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/prom/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/prom"
+        },
+        {
+            "name": "medium",
+            "url": "https://prom-io.medium.com/"
+        },
+        {
+            "name": "source_code",
+            "url": "https://etherscan.io/token/0xfc82bb4ba86045Af6F327323a46E80412b91b27d#code"
+        }
+    ],
+    "tags": [
+        "gamefi",
+        "nft",
+        "defi"
+    ]
 }
