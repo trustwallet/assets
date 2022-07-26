@@ -1,28 +1,28 @@
 {
     "name": "MeTa Genesis NFT",
-    "website": "http://nft.metas-news.org",
-    "description": "MG NFT is a completely decentralized token.",
-    "explorer": "https://bscscan.com/token/0x1c444480556556D138e8cAA25323520B081AA04e",
     "type": "BEP20",
     "symbol": "MG NFT",
     "decimals": 8,
+    "website": "http://nft.metas-news.org",
+    "description": "MG NFT is a fully decentralized token driven by the community.",
+    "explorer": "https://bscscan.com/token/0x1c444480556556D138e8cAA25323520B081AA04e",
     "status": "active",
     "id": "0x1c444480556556D138e8cAA25323520B081AA04e",
     "links": [
         {
-            "name": "MeTa Genesis NFT",
-            "url": "http://nft.metas-news.org/"
+            "name": "twitter",
+            "url": "https://twitter.com/_Metaspace_"
         },
         {
-            "name": "telegraph",
-            "url": "https://t.me/metaspace1413"
+            "name": "telegram",
+            "url": "https://s.denglianqiu.cn/metaspace1413"
         },
         {
-            "name": "reddit",
-            "url": "http://metas-news.org"
+            "name": "source_code",
+            "url": "https://bscscan.com/address/0x1c444480556556D138e8cAA25323520B081AA04e#code"
         }
+    ],
+    "tags": [
+        "NFT",
     ]
- "tags": [
-         "Tokens"
-     ]
 }
