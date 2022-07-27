@@ -1,0 +1,51 @@
+ {
+    "name": "Trust Wallet: OKC List",
+    "logoURI": "https://trustwallet.com/assets/images/favicon.png",
+    "timestamp": "2022-07-27T00:00:00.000Z",
+    "tokens": [
+        {
+            "name": "Wrapped OKT",
+            "symbol": "WOKT",
+            "type": "KIP20",
+            "decimals": 18,
+            "explorer": "https://www.oklink.com/en/okc/tokenAddr/0x8f8526dbfd6e38e3d8307702ca8469bae6c56c15",
+            "status": "active",
+            "id": "0x8F8526dbfd6E38E3D8307702cA8469Bae6C56C15",
+            "website": "https://www.okx.com/okc",
+            "description": "Wrapped OKT is the native token on OKX Chain."
+        },
+        {
+            "name": "OKB Token",
+            "symbol": "OKB",
+            "type": "KIP20",
+            "decimals": 18,
+            "explorer": "https://www.oklink.com/en/okc/tokenAddr/0xdf54b6c6195ea4d948d03bfd818d365cf175cfc2",
+            "status": "active",
+            "id": "0xdF54B6c6195EA4d948D03bfD818D365cf175cFC2",
+            "website": "https://www.okx.com/okb",
+            "description": "Utility token for OKX Ecosystem."
+        },
+        {
+            "name": "Tether USD",
+            "symbol": "USDT",
+            "type": "KIP20",
+            "decimals": 18,
+            "explorer": "https://www.oklink.com/en/okc/tokenAddr/0x382bb369d343125bfb2117af9c149795c6c65c50",
+            "status": "active",
+            "id": "0x382bB369d343125BfB2117af9c149795C6C65C50",
+            "website": "https://tether.to/en/",
+            "description": "Tether (USDT) is a cryptocurrency mirroring the value of the U.S. dollar."
+        },
+        {
+            "name": "USD Coin",
+            "symbol": "USDC",
+            "type": "KIP20",
+            "decimals": 18,
+            "explorer": "https://www.oklink.com/en/okc/tokenAddr/0xc946daf81b08146b1c7a8da2a851ddf2b3eaaf85",
+            "status": "active",
+            "id": "0xc946DAf81b08146B1C7A8Da2A851Ddf2B3EAaf85",
+            "website": "https://www.okx.com/okc",
+            "description": "USDC is a token issued by OKX Chain, where the price is pegged to USDC at a rate of 1 USDC (KIP20) = 1 USDC."
+        }
+    ]
+ }
