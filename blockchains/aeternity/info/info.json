@@ -1,25 +1,29 @@
 {
     "name": "Aeternity",
     "website": "https://aeternity.com",
-    "source_code": "https://github.com/aeternity",
-    "white_paper": "https://github.com/aeternity/white-paper/blob/master/paper.pdf",
     "description": "Aeternity is a blockchain platform with turing complete smart contracts. The platform implemented decentralized oracles to make it possible for decentralized applications to use real world data.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/aeternity",
-            "handle": "aeternity"
-        },
-        {
-            "name": "Reddit",
-            "url": "https://www.reddit.com/r/Aeternity",
-            "handle": "Aeternity"
-        }
-    ],
     "explorer": "https://www.aeknow.org/",
     "research": "https://research.binance.com/en/projects/aeternity",
     "symbol": "AE",
-    "type": "COIN",
+    "type": "coin",
     "decimals": 18,
-    "status": "active"
+    "status": "active",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/aeternity"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/aeternity"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/Aeternity"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://github.com/aeternity/white-paper/blob/master/paper.pdf"
+        }
+    ]
 }

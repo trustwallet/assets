@@ -1,19 +1,21 @@
 {
     "name": "Streamix",
     "website": "https://streamix.io/",
-    "white_paper": "http://streamix.io/Whitepaper-MIXS-PDF.pdf",
     "description": "Streamix (MIXS) is a combination of world s first cryptocurrency exchange and a Social Media platform which will let users socialize, post images, post and stream videos, trade crypto, play games and earn cryptocurrencies as rewards at the same time. Streamix platform utilizes Streamix (MIXS) a non security ERC20 utility crypto token. Rewarded MIXS tokens can be used on Streamix platform, or any affiliated platforms to trade, make purchases, and get discounts.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/streamixio",
-            "handle": "Streamixio"
-        }
-    ],
     "explorer": "https://etherscan.io/token/0xB0BFB1E2F72511cF8b4D004852E2054d7b9a76e1",
     "type": "ERC20",
     "symbol": "MIXS",
     "decimals": 18,
     "status": "active",
-    "id": "0xB0BFB1E2F72511cF8b4D004852E2054d7b9a76e1"
+    "id": "0xB0BFB1E2F72511cF8b4D004852E2054d7b9a76e1",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/Streamixio"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://streamix.io/Whitepaper-MIXS-PDF.pdf"
+        }
+    ]
 }

@@ -2,28 +2,28 @@
     "name": "Frax Share",
     "website": "https://frax.finance/",
     "description": "Frax is a new paradigm in stablecoin design, bringing together a two-token seigniorage share system, swap-based monetary policy, fully on-chain oracles, and decentralized governance alongside its fractional-algorithmic stablecoin design.",
-    "source_code": "https://github.com/FraxFinance",
-    "explorer": "https://bscscan.com/address/0xDE2F075f6F14EB9D96755b24E416A53E736Ca363",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/fraxfinance",
-            "handle": "Frax Finance"
-        },
-        {
-            "name": "Discord",
-            "url": "https://discord.gg/Xwe8kAwZ4a",
-            "handle": "Frax Finance"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/fraxfinance",
-            "handle": "Frax Finance"
-        }
-    ],
+    "explorer": "https://bscscan.com/token/0xDE2F075f6F14EB9D96755b24E416A53E736Ca363",
     "type": "BEP20",
     "symbol": "FXS",
     "decimals": 18,
     "status": "active",
-    "id": "0xDE2F075f6F14EB9D96755b24E416A53E736Ca363"
+    "id": "0xDE2F075f6F14EB9D96755b24E416A53E736Ca363",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/FraxFinance"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/Frax Finance"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/fraxfinance"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/Xwe8kAwZ4a"
+        }
+    ]
 }

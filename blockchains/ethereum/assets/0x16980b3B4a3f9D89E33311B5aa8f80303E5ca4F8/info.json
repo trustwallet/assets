@@ -1,23 +1,5 @@
 {
     "name": "KIRA Network",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.kira.network"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://tg.kira.network"
-        },
-        {
-            "name": "Github",
-            "url": "https://git.kira.network"
-        },
-        {
-            "name": "Medium",
-            "url": "https://blog.kira.network"
-        }
-    ],
     "symbol": "KEX",
     "type": "ERC20",
     "decimals": 6,
@@ -25,5 +7,23 @@
     "website": "https://kira.network",
     "explorer": "https://etherscan.io/token/0x16980b3b4a3f9d89e33311b5aa8f80303e5ca4f8",
     "status": "active",
-    "id": "0x16980b3B4a3f9D89E33311B5aa8f80303E5ca4F8"
+    "id": "0x16980b3B4a3f9D89E33311B5aa8f80303E5ca4F8",
+    "links": [
+        {
+            "name": "source_code",
+            "url": "https://git.kira.network"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/kira_core"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/kirainterex"
+        },
+        {
+            "name": "blog",
+            "url": "https://blog.kira.network"
+        }
+    ]
 }

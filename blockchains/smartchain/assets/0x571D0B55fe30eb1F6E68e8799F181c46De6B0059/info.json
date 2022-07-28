@@ -1,30 +1,33 @@
 {
     "name": "Street Credit",
     "website": "https://streetswap.vip/",
-    "source_code": "https://github.com/thugs-defi",
     "description": "Street Credit (CRED) is the Exchange Token for the leading BSC AMM & Most Gangster Exchange Ever Created StreetSwap.vip. CRED is created by staking THUGS. The THUGS value per CRED continues to grow as Exchange Fees are used to buy-back THUGS and fund the CRED contract autonomously.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/ThugsFinance"
-        },
-        {
-            "name": "Discord",
-            "url": "https://discord.gg/AJDqFTP"
-        },
-        {
-            "name": "Medium",
-            "url": "https://thugsfinance.medium.com/"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/thugsfinance"
-        }
-    ],
     "explorer": "https://bscscan.com/token/0x571d0b55fe30eb1f6e68e8799f181c46de6b0059",
     "type": "BEP20",
     "symbol": "CRED",
     "decimals": 18,
     "status": "active",
-    "id": "0x571D0B55fe30eb1F6E68e8799F181c46De6B0059"
+    "id": "0x571D0B55fe30eb1F6E68e8799F181c46De6B0059",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/thugs-defi"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/ThugsFinance"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/thugsfinance"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/AJDqFTP"
+        },
+        {
+            "name": "medium",
+            "url": "https://thugsfinance.medium.com/"
+        }
+    ]
 }

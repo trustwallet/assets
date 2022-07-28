@@ -1,36 +1,8 @@
 {
     "name": "Navcoin",
     "website": "https://navcoin.org",
-    "source_code": "https://github.com/NAVCoin",
     "description": "Navcoin is a cutting edge privacy coin governed by a community driven DAO fund with the ability to wrap coins for use in the DEFI universe. All backed by the eco-friendly proof-of-stake mining model.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/Navcoin",
-            "handle": "Navcoin"
-        },
-        {
-            "name": "Discord",
-            "url": "https://discord.com/invite/y4Vu9jw",
-            "handle": "Navcoin"
-        },
-        {
-            "name": "Medium",
-            "url": "https://medium.com/nav-coin",
-            "handle": "Navcoin"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/navcoin",
-            "handle": "Navcoin"
-        },
-        {
-            "name": "Reddit",
-            "url": "https://www.reddit.com/r/NavCoin/",
-            "handle": "NavCoin"
-        }
-    ],
-    "explorer": "https://www.navexplorer.com/",
+    "explorer": "https://bscscan.com/token/0xBFEf6cCFC830D3BaCA4F6766a0d4AaA242Ca9F3D",
     "research": "https://navcoin.org/en/project-activity/",
     "type": "BEP20",
     "symbol": "WNAV",
@@ -38,6 +10,32 @@
     "status": "active",
     "id": "0xBFEf6cCFC830D3BaCA4F6766a0d4AaA242Ca9F3D",
     "tags": [
-        "staking-native"
+        "privacy"
+    ],
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/NAVCoin"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/Navcoin"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/navcoin"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/y4Vu9jw"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/NavCoin/"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/nav-coin"
+        }
     ]
 }

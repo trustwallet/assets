@@ -1,19 +1,21 @@
 {
     "name": "SIREN",
     "website": "https://sirenmarkets.com",
-    "source_code": "https://github.com/sirenmarkets/core",
     "description": "SIREN is a distributed protocol for creating, trading, and redeeming fully-collateralized options contracts for any ERC-20 token on Ethereum. Options are a financial primitive from which one can build many different more complex financial instruments.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/sirenprotocol",
-            "handle": "sirenprotocol"
-        }
-    ],
     "explorer": "https://etherscan.io/token/0xD23Ac27148aF6A2f339BD82D0e3CFF380b5093de",
     "type": "ERC20",
     "symbol": "SI",
     "decimals": 18,
     "status": "active",
-    "id": "0xD23Ac27148aF6A2f339BD82D0e3CFF380b5093de"
+    "id": "0xD23Ac27148aF6A2f339BD82D0e3CFF380b5093de",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/sirenmarkets/core"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/sirenprotocol"
+        }
+    ]
 }

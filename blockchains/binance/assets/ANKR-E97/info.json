@@ -1,5 +1,5 @@
 {
-    "name": "Ankr",
+    "name": "ANKR",
     "website": "https://ankr.com",
     "description": "Ankr is building an infrastructure platform and marketplace for Web3-stack deployment.",
     "explorer": "https://explorer.binance.org/asset/ANKR-E97",
@@ -8,5 +8,19 @@
     "symbol": "ANKR",
     "decimals": 8,
     "status": "active",
-    "id": "ANKR-E97"
+    "id": "ANKR-E97",
+    "links": [
+        {
+            "name": "blog",
+            "url": "https://medium.com/ankr-network"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/ankr"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://s3-us-west-1.amazonaws.com/app.ankr.network/assets/Ankr_Whitepaper_20190524.pdf"
+        }
+    ]
 }

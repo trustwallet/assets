@@ -488,5 +488,19 @@
         "staking": {
             "minDelegation": 0
         }
+    },
+    {
+        "id": "tz1YiuvpfeVAHbnU8akcWErNfQGFHNQ7F45z",
+        "name": "Smartlink Baker",
+        "description": "Smartlink Baker provides secure staking services for Tezos delegators",
+        "website": "https://smartlink.so",
+        "payout": {
+            "commission": 5,
+            "payoutDelay": 1,
+            "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 0
+        }
     }
 ]

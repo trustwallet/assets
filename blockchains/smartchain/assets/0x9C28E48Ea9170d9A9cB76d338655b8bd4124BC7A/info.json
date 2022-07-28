@@ -1,41 +1,30 @@
 {
     "name": "EarnX",
     "website": "http://www.yearnclassic.finance/",
-    "source_code": "https://github.com/YearnClassic",
-    "white_paper": "",
     "short_description": "EarnX is the frictionless utility token for the unique physical NFTs on Yearn Classic platform",
     "description": "EarnX is unheard of the version of NFTs that can retain their value lifelong and will be totally driven by our community. For EARNX, we will bring a completely new category of NFTs which will be a revolutionary in NFT ecosystem. eg., Persian Carpets NFTs which will be couriered to buyers with NFT RFID.",
-    "socials": [
-        {
-            "name": "Telegram Group",
-            "url": "https://t.me/YearnX",
-            "handle": "YearnX"
-        },
-        {
-            "name": "Telegram Announcements",
-            "url": "https://t.me/earndefiANN",
-            "handle": "earndefiANN"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/earndefi",
-            "handle": "earndefi"
-        },
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/earn_finance",
-            "handle": "earn_finance"
-        },
-        {
-            "name": "Medium",
-            "url": "https://earnfinance.medium.com",
-            "handle": "earnfinance"
-        }
-    ],
     "explorer": "https://bscscan.com/token/0x9c28e48ea9170d9a9cb76d338655b8bd4124bc7a",
     "type": "BEP20",
     "symbol": "EarnX",
     "decimals": 9,
     "status": "active",
-    "id": "0x9C28E48Ea9170d9A9cB76d338655b8bd4124BC7A"
+    "id": "0x9C28E48Ea9170d9A9cB76d338655b8bd4124BC7A",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/YearnClassic"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/earn_finance"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/earndefi"
+        },
+        {
+            "name": "medium",
+            "url": "https://earnfinance.medium.com"
+        }
+    ]
 }

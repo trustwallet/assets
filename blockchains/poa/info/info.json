@@ -1,25 +1,29 @@
 {
     "name": "POA",
     "website": "https://poa.network",
-    "source_code": "https://github.com/poanetwork",
-    "white_paper": "https://github.com/poanetwork/wiki/wiki/POA-Network-Whitepaper",
     "description": "An open network based on Ethereum protocol with Proof of Authority consensus by independent actors. Public notaries with known identity serve as private validators to secure the network.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/poanetwork",
-            "handle": "poanetwork"
-        },
-        {
-            "name": "Reddit",
-            "url": "https://reddit.com/r/POA",
-            "handle": "POA"
-        }
-    ],
     "explorer": "https://blockscout.com/poa/core",
     "research": "https://research.binance.com/en/projects/poa-network",
     "symbol": "POA",
-    "type": "COIN",
+    "type": "coin",
     "decimals": 18,
-    "status": "active"
+    "status": "active",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/poanetwork"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/poanetwork"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/POA"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://github.com/poanetwork/wiki/wiki/POA-Network-Whitepaper"
+        }
+    ]
 }
