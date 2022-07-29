@@ -5,7 +5,24 @@
     "decimals": 18,
     "description": "aSFT is a Defi finance Token that allows people to invest",
     "website": "https://aSFT.pro",
-    "explorer": "https://bscscan.com/address/0x8Ebb4B2A4BE2aC3d542Fb2927D957e9795E4165b",
+    "explorer": "https://bscscan.com/token/0x8Ebb4B2A4BE2aC3d542Fb2927D957e9795E4165b",
     "status": "active",
-    "id": "0x8Ebb4B2A4BE2aC3d542Fb2927D957e9795E4165b"
+    "id": "0x8Ebb4B2A4BE2aC3d542Fb2927D957e9795E4165b",
+    "links": [
+        {
+            "name": "whitepaper",
+            "url": "https://asft.pro/whitepaper"
+        },
+        {
+            "name": "source_code",
+            "url": "https://bscscan.com/address/0x8Ebb4B2A4BE2aC3d542Fb2927D957e9795E4165b#code"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/aSFT"
+        }
+    ],
+    "tags": [
+        "defi"
+    ]
 }
