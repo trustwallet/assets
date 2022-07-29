@@ -3,9 +3,26 @@
     "type": "BEP20",
     "symbol": "FCBI",
     "decimals": 9,
-    "website": "http://nkbistrica.si/",
-    "description": " We are the Slovenian Amateur Football Club, which was founded in 1973.",
-    "explorer": "https://bscscan.com/address/0x1d134b6e46805542ce3a5b6c0621eb9137c2eef2",
+    "website": "https://nkbistrica.si/token",
+    "description": "We are the Slovenian Amateur Football Club, which was founded in 1973.",
+    "explorer": "https://bscscan.com/token/0x1D134B6e46805542Ce3A5b6c0621eb9137C2Eef2",
     "status": "active",
-    "id": "0x1D134B6e46805542Ce3A5b6c0621eb9137C2Eef2"
+    "id": "0x1D134B6e46805542Ce3A5b6c0621eb9137C2Eef2",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/FCBistrica/FC-Bistrica-Fan-Token"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/"
+        },
+        {
+            "name": "facebook",
+            "url": "https://facebook.com/nk.bistrica1973/"
+        }
+    ],
+    "tags": [
+        "defi"
+    ]
 }
