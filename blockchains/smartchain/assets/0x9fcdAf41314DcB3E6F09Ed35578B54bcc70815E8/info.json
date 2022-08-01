@@ -1,11 +1,35 @@
 {
 "name": "NMW",
-"website": "https://https://quieronmw.es/invierte",
-"description": "NMW is the native token for the NMW project.",
+"website": "https://quieronmw.es/invierte",
+"description": "NMW is the native token for the NMW project, every NMW token can be used in the real world to buy real tacos and much more.",
 "explorer": "https://bscscan.com/token/0x9fcdAf41314DcB3E6F09Ed35578B54bcc70815E8",
 "type": "BEP20",
 "symbol": "NMW",
 "decimals": 18,
 "status": "active",
-"id": "0x9fcdAf41314DcB3E6F09Ed35578B54bcc70815E8"
+"id": "0x9fcdAf41314DcB3E6F09Ed35578B54bcc70815E8",
+"links": [
+   
+    {
+        "name": "twitter",
+        "url": "https://twitter.com/quieronmw"
+    },
+    
+    {
+        "name": "telegram",
+        "url": "https://t.me/quieronmw"
+    },
+    
+   
+    {
+        "name": "facebook",
+        "url": "https://www.facebook.com/quieronmw/"
+    },
+    
+   
+    {
+        "name": "instagram",
+        "url": "https://instagram.com/quieronmw"
+    }
+]
 }
