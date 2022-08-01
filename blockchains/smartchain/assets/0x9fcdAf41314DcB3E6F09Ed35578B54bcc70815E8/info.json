@@ -6,9 +6,10 @@
 "type": "BEP20",
 "symbol": "NMW",
 "decimals": 18,
+"holders":1,
 "status": "active",
 "id": "0x9fcdAf41314DcB3E6F09Ed35578B54bcc70815E8",
-"tags":["defi","food","investment","eattoearn"],
+"tags":["defi","investment","eattoearn"],
 "links": [
    
     {
@@ -19,11 +20,6 @@
     {
         "name": "telegram",
         "url": "https://t.me/quieronmw"
-    },
-    
-    {
-        "name": "instagram",
-        "url": "https://instagram.com/quieronmw"
     }
 ]
 }
