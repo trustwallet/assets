@@ -1,12 +1,32 @@
 {
-    "name": "Tixl",
-    "website": "https://tixl.org",
-    "description": "Interoperable Smart Contracts & dApps Network",
-    "explorer": "https://etherscan.io/token/0x8eEF5a82E6Aa222a60F009ac18c24EE12dBf4b41",
-    "research": "",
+    "name": "Autobahn Network (TXL)",
     "type": "ERC20",
     "symbol": "TXL",
     "decimals": 18,
+    "website": "https://www.autobahn.network/",
+    "description": "The Autobahn Network is the first Layer 2 Optimistic Rollup for the BNB Smart Chain (formerly Binance Smart Chain). It's designed to run at lightning speed while minimizing fees, and benefits from the BNB Smart Chain which underlies it.",
+    "explorer": "https://etherscan.io/token/0x8eEF5a82E6Aa222a60F009ac18c24EE12dBf4b41",
     "status": "active",
-    "id": "0x8eEF5a82E6Aa222a60F009ac18c24EE12dBf4b41"
+    "id": "0x8eEF5a82E6Aa222a60F009ac18c24EE12dBf4b41",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/AutobahnNetwork"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/dzVzMdp"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/tixl-new/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/autobahn-network"
+        }
+    ],
+    "tags": [
+        "governance"
+    ]
 }
