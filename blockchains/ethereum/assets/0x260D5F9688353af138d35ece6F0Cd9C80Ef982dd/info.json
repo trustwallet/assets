@@ -8,10 +8,6 @@
     "decimals": 18,
     "status": "active",
     "id": "0x260D5F9688353af138d35ece6F0Cd9C80Ef982dd",
-        "tags": [
-            "defi",
-            "nft"
-    ],
     "links": [
         {
             "name": "twitter",
@@ -37,5 +33,9 @@
             "name": "source_code",
             "url": "https://github.com/Shinuri/Shinuri/blob/main/ShinuriERC20Contract.sol"
         },
-    ]
+    ],
+    "tags": [
+        "defi",
+        "nft"
+    ],
 }
