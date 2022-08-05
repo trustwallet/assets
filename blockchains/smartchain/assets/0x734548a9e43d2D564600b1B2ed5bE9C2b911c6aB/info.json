@@ -7,5 +7,26 @@
 	"symbol": "PEEL",
 	"decimals": 18,
 	"status": "active",
-	"id": "0x734548a9e43d2D564600b1B2ed5bE9C2b911c6aB"
+	"id": "0x734548a9e43d2D564600b1B2ed5bE9C2b911c6aB",
+	"tags": [
+		"gamefi"
+	],
+	"links": [
+		{
+			"name": "twitter",
+			"url": "https://twitter.com/MetaApesGame"
+		},
+		{
+			"name": "docs",
+			"url": "https://meta-apes.gitbook.io/meta-apes-whitepaper"
+		},
+		{
+			"name": "medium",
+			"url": "https://medium.com/@metaapesgame"
+		},
+		{
+			"name": "coinmarketcap",
+			"url": "https://coinmarketcap.com/currencies/aave/"
+		}
+	]
 }
