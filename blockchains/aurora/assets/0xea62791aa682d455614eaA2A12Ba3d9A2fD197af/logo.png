@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="140px" height="140px" viewBox="0 0 140 140" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Flux Logo New</title>
+    <defs>
+        <radialGradient cx="50%" cy="0%" fx="50%" fy="0%" r="248.533062%" gradientTransform="translate(0.500000,0.000000),scale(1.000000,0.393939),rotate(90.000000),translate(-0.500000,-0.000000)" id="radialGradient-1">
+            <stop stop-color="#FE84FC" offset="0%"></stop>
+            <stop stop-color="#2ED1FF" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="logos" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(-143.000000, -251.000000)">
+            <g id="Group-2" transform="translate(0.000000, 251.000000)">
+                <g id="Flux-Logo" transform="translate(143.000000, 0.000000)">
+                    <g id="Flux-Logo-New" transform="translate(70.000000, 70.000000) rotate(90.000000) translate(-70.000000, -70.000000) ">
+                        <circle id="Oval" fill="#FFFFFF" cx="70" cy="70" r="70"></circle>
+                        <rect id="Rectangle" fill="#0F0E25" transform="translate(70.000000, 83.000000) rotate(90.000000) translate(-70.000000, -83.000000) " x="57" y="50" width="26" height="66" rx="13"></rect>
+                        <path d="M50,30 C57.1797017,30 63,35.8202983 63,43 L63,96 L63,96 L50,96 C42.8202983,96 37,90.1797017 37,83 L37,43 C37,35.8202983 42.8202983,30 50,30 Z" id="Rectangle" fill="#0F0E25"></path>
+                        <path d="M63,44 L76,44 C83.1797017,44 89,49.8202983 89,57 L89,97 C89,104.179702 83.1797017,110 76,110 C68.8202983,110 63,104.179702 63,97 L63,44 L63,44 Z" id="Rectangle" fill="url(#radialGradient-1)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
