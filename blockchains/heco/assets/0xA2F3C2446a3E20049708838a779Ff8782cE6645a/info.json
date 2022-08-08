@@ -1,12 +1,11 @@
 {
-  "name": "XRP",
-  "type": "HECO",
-  "symbol": "XRP",
-  "decimals": 6,
-  "website": "",
-  "description": "",
-  "explorer": "https://www.hecoinfo.com/en-us/token/0xA2F3C2446a3E20049708838a779Ff8782cE6645a",
-  "status": "active",
-  "id": "0xA2F3C2446a3E20049708838a779Ff8782cE6645a",
-  "links": []
+    "name": "XRP",
+    "symbol": "XRP",
+    "type": "HRC20",
+    "decimals": 6,
+    "description": "",
+    "website": "",
+    "explorer": "https://hecoinfo.com/token/0xA2F3C2446a3E20049708838a779Ff8782cE6645a",
+    "status": "active",
+    "id": "0xA2F3C2446a3E20049708838a779Ff8782cE6645a"
 }

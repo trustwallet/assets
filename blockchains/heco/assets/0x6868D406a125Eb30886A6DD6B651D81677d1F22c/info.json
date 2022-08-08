@@ -1,12 +1,11 @@
 {
-  "name": "Heco BAGS Token",
-  "type": "HECO",
-  "symbol": "BAGS",
-  "decimals": 18,
-  "website": "",
-  "description": "",
-  "explorer": "https://www.hecoinfo.com/en-us/token/0x6868D406a125Eb30886A6DD6B651D81677d1F22c",
-  "status": "active",
-  "id": "0x6868D406a125Eb30886A6DD6B651D81677d1F22c",
-  "links": []
+    "name": "Heco BAGS Token",
+    "symbol": "BAGS",
+    "type": "HRC20",
+    "decimals": 18,
+    "description": "",
+    "website": "",
+    "explorer": "https://hecoinfo.com/token/0x6868D406a125Eb30886A6DD6B651D81677d1F22c",
+    "status": "active",
+    "id": "0x6868D406a125Eb30886A6DD6B651D81677d1F22c"
 }

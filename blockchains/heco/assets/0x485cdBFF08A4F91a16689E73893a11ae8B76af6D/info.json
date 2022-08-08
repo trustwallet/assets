@@ -1,12 +1,11 @@
 {
-  "name": "FEI",
-  "type": "HECO",
-  "symbol": "FEI",
-  "decimals": 18,
-  "website": "",
-  "description": "",
-  "explorer": "https://www.hecoinfo.com/en-us/token/0x485cdBFF08A4F91a16689E73893a11ae8B76af6D",
-  "status": "active",
-  "id": "0x485cdBFF08A4F91a16689E73893a11ae8B76af6D",
-  "links": []
+    "name": "FEI",
+    "symbol": "FEI",
+    "type": "HRC20",
+    "decimals": 18,
+    "description": "",
+    "website": "",
+    "explorer": "https://hecoinfo.com/token/0x485cdBFF08A4F91a16689E73893a11ae8B76af6D",
+    "status": "active",
+    "id": "0x485cdBFF08A4F91a16689E73893a11ae8B76af6D"
 }

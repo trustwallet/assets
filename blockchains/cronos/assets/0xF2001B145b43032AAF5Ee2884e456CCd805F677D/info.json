@@ -1,12 +1,11 @@
 {
-  "name": "DAI",
-  "type": "CRONOS",
-  "symbol": "DAI",
-  "decimals": 8,
-  "website": "",
-  "description": "",
-  "explorer": "https://cronoscan.com/token/0xF2001B145b43032AAF5Ee2884e456CCd805F677D",
-  "status": "active",
-  "id": "0xF2001B145b43032AAF5Ee2884e456CCd805F677D",
-  "links": []
+    "name": "DAI",
+    "symbol": "DAI",
+    "type": "CRC20",
+    "decimals": 8,
+    "description": "",
+    "website": "",
+    "explorer": "https://cronos.org/explorer/address/0xF2001B145b43032AAF5Ee2884e456CCd805F677D/token-transfers",
+    "status": "active",
+    "id": "0xF2001B145b43032AAF5Ee2884e456CCd805F677D"
 }

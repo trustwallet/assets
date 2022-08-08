@@ -1,12 +1,11 @@
 {
-  "name": "sNEO",
-  "type": "HECO",
-  "symbol": "sNEO",
-  "decimals": 18,
-  "website": "",
-  "description": "",
-  "explorer": "https://www.hecoinfo.com/en-us/token/0x2f92C6e8ed836B5d507251b59d816A55F1B853cC",
-  "status": "active",
-  "id": "0x2f92C6e8ed836B5d507251b59d816A55F1B853cC",
-  "links": []
+    "name": "sNEO",
+    "symbol": "sNEO",
+    "type": "HRC20",
+    "decimals": 18,
+    "description": "",
+    "website": "",
+    "explorer": "https://hecoinfo.com/token/0x2f92C6e8ed836B5d507251b59d816A55F1B853cC",
+    "status": "active",
+    "id": "0x2f92C6e8ed836B5d507251b59d816A55F1B853cC"
 }

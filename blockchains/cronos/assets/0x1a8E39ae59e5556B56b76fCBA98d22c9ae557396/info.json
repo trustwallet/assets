@@ -1,12 +1,11 @@
 {
-  "name": "DOGE Coin",
-  "type": "CRONOS",
-  "symbol": "DOGE",
-  "decimals": 8,
-  "website": "",
-  "description": "",
-  "explorer": "https://cronoscan.com/token/0x1a8E39ae59e5556B56b76fCBA98d22c9ae557396",
-  "status": "active",
-  "id": "0x1a8E39ae59e5556B56b76fCBA98d22c9ae557396",
-  "links": []
+    "name": "DOGE Coin",
+    "symbol": "DOGE",
+    "type": "CRC20",
+    "decimals": 8,
+    "description": "",
+    "website": "",
+    "explorer": "https://cronos.org/explorer/address/0x1a8E39ae59e5556B56b76fCBA98d22c9ae557396/token-transfers",
+    "status": "active",
+    "id": "0x1a8E39ae59e5556B56b76fCBA98d22c9ae557396"
 }

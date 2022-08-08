@@ -1,12 +1,11 @@
 {
-  "name": "USDT",
-  "type": "CRONOS",
-  "symbol": "USDT",
-  "decimals": 8,
-  "website": "",
-  "description": "",
-  "explorer": "https://cronoscan.com/token/0x66e428c3f67a68878562e79A0234c1F83c208770",
-  "status": "active",
-  "id": "0x66e428c3f67a68878562e79A0234c1F83c208770",
-  "links": []
+    "name": "USDT",
+    "symbol": "USDT",
+    "type": "CRC20",
+    "decimals": 8,
+    "description": "",
+    "website": "",
+    "explorer": "https://cronos.org/explorer/address/0x66e428c3f67a68878562e79A0234c1F83c208770/token-transfers",
+    "status": "active",
+    "id": "0x66e428c3f67a68878562e79A0234c1F83c208770"
 }

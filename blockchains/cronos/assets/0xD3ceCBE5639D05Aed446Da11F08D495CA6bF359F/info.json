@@ -1,12 +1,11 @@
 {
-  "name": "Croblanc Token",
-  "type": "CRONOS",
-  "symbol": "CROBLANC",
-  "decimals": 18,
-  "website": "",
-  "description": "",
-  "explorer": "https://cronoscan.com/token/0xD3ceCBE5639D05Aed446Da11F08D495CA6bF359F",
-  "status": "active",
-  "id": "0xD3ceCBE5639D05Aed446Da11F08D495CA6bF359F",
-  "links": []
+    "name": "Croblanc Token",
+    "symbol": "CROBLANC",
+    "type": "CRC20",
+    "decimals": 18,
+    "description": "",
+    "website": "",
+    "explorer": "https://cronos.org/explorer/address/0xD3ceCBE5639D05Aed446Da11F08D495CA6bF359F/token-transfers",
+    "status": "active",
+    "id": "0xD3ceCBE5639D05Aed446Da11F08D495CA6bF359F"
 }

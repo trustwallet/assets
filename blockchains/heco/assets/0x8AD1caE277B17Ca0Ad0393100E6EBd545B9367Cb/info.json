@@ -1,12 +1,11 @@
 {
-  "name": "Heco BLC Token",
-  "type": "HECO",
-  "symbol": "BLC",
-  "decimals": 18,
-  "website": "",
-  "description": "",
-  "explorer": "https://www.hecoinfo.com/en-us/token/0x8AD1caE277B17Ca0Ad0393100E6EBd545B9367Cb",
-  "status": "active",
-  "id": "0x8AD1caE277B17Ca0Ad0393100E6EBd545B9367Cb",
-  "links": []
+    "name": "Heco BLC Token",
+    "symbol": "BLC",
+    "type": "HRC20",
+    "decimals": 18,
+    "description": "",
+    "website": "",
+    "explorer": "https://hecoinfo.com/token/0x8AD1caE277B17Ca0Ad0393100E6EBd545B9367Cb",
+    "status": "active",
+    "id": "0x8AD1caE277B17Ca0Ad0393100E6EBd545B9367Cb"
 }

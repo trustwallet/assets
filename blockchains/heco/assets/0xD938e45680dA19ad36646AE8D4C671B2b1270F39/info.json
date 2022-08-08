@@ -1,12 +1,11 @@
 {
-  "name": "Heco NULS Token",
-  "type": "HECO",
-  "symbol": "NULS",
-  "decimals": 8,
-  "website": "",
-  "description": "",
-  "explorer": "https://www.hecoinfo.com/en-us/token/0xD938e45680dA19ad36646AE8D4C671B2b1270F39",
-  "status": "active",
-  "id": "0xD938e45680dA19ad36646AE8D4C671B2b1270F39",
-  "links": []
+    "name": "Heco NULS Token",
+    "symbol": "NULS",
+    "type": "HRC20",
+    "decimals": 8,
+    "description": "",
+    "website": "",
+    "explorer": "https://hecoinfo.com/token/0xD938e45680dA19ad36646AE8D4C671B2b1270F39",
+    "status": "active",
+    "id": "0xD938e45680dA19ad36646AE8D4C671B2b1270F39"
 }
