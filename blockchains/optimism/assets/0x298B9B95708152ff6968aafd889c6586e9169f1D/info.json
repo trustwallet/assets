@@ -1,12 +1,11 @@
 {
-  "name": "Synth sBTC",
-  "type": "OPTIMISTIC",
-  "symbol": "sBTC",
-  "decimals": 18,
-  "website": "",
-  "description": "",
-  "explorer": "https://optimistic.etherscan.io/token/0x298B9B95708152ff6968aafd889c6586e9169f1D",
-  "status": "active",
-  "id": "0x298B9B95708152ff6968aafd889c6586e9169f1D",
-  "links": []
+    "name": "Synth sBTC",
+    "symbol": "sBTC",
+    "type": "OPTIMISM",
+    "decimals": 18,
+    "description": "",
+    "website": "",
+    "explorer": "https://optimistic.etherscan.io/token/0x298B9B95708152ff6968aafd889c6586e9169f1D",
+    "status": "active",
+    "id": "0x298B9B95708152ff6968aafd889c6586e9169f1D"
 }

@@ -1,12 +1,11 @@
 {
-  "name": "Heco-Peg HLTC Token",
-  "type": "HECO",
-  "symbol": "HLTC",
-  "decimals": 18,
-  "website": "",
-  "description": "",
-  "explorer": "https://www.hecoinfo.com/en-us/token/0xecb56cf772B5c9A6907FB7d32387Da2fCbfB63b4",
-  "status": "active",
-  "id": "0xecb56cf772B5c9A6907FB7d32387Da2fCbfB63b4",
-  "links": []
+    "name": "Heco-Peg HLTC Token",
+    "symbol": "HLTC",
+    "type": "HRC20",
+    "decimals": 18,
+    "description": "",
+    "website": "",
+    "explorer": "https://hecoinfo.com/token/0xecb56cf772B5c9A6907FB7d32387Da2fCbfB63b4",
+    "status": "active",
+    "id": "0xecb56cf772B5c9A6907FB7d32387Da2fCbfB63b4"
 }

@@ -1,12 +1,11 @@
 {
-  "name": "Heco LYFI Token",
-  "type": "HECO",
-  "symbol": "LYFI",
-  "decimals": 18,
-  "website": "",
-  "description": "",
-  "explorer": "https://www.hecoinfo.com/en-us/token/0xA441b796E160E204Cd0f53D3216275056a355980",
-  "status": "active",
-  "id": "0xA441b796E160E204Cd0f53D3216275056a355980",
-  "links": []
+    "name": "Heco LYFI Token",
+    "symbol": "LYFI",
+    "type": "HRC20",
+    "decimals": 18,
+    "description": "",
+    "website": "",
+    "explorer": "https://hecoinfo.com/token/0xA441b796E160E204Cd0f53D3216275056a355980",
+    "status": "active",
+    "id": "0xA441b796E160E204Cd0f53D3216275056a355980"
 }

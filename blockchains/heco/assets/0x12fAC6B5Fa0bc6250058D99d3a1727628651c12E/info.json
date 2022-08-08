@@ -1,12 +1,11 @@
 {
-  "name": "Heco FC Token",
-  "type": "HECO",
-  "symbol": "FC",
-  "decimals": 18,
-  "website": "",
-  "description": "",
-  "explorer": "https://www.hecoinfo.com/en-us/token/0x12fAC6B5Fa0bc6250058D99d3a1727628651c12E",
-  "status": "active",
-  "id": "0x12fAC6B5Fa0bc6250058D99d3a1727628651c12E",
-  "links": []
+    "name": "Heco FC Token",
+    "symbol": "FC",
+    "type": "HRC20",
+    "decimals": 18,
+    "description": "",
+    "website": "",
+    "explorer": "https://hecoinfo.com/token/0x12fAC6B5Fa0bc6250058D99d3a1727628651c12E",
+    "status": "active",
+    "id": "0x12fAC6B5Fa0bc6250058D99d3a1727628651c12E"
 }

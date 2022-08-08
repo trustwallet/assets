@@ -1,12 +1,11 @@
 {
-  "name": "PUSD",
-  "type": "HECO",
-  "symbol": "PUSD",
-  "decimals": 18,
-  "website": "",
-  "description": "",
-  "explorer": "https://www.hecoinfo.com/en-us/token/0xc36fF5B42092A1822948e8fac103509CC8B68DC6",
-  "status": "active",
-  "id": "0xc36fF5B42092A1822948e8fac103509CC8B68DC6",
-  "links": []
+    "name": "PUSD",
+    "symbol": "PUSD",
+    "type": "HRC20",
+    "decimals": 18,
+    "description": "",
+    "website": "",
+    "explorer": "https://hecoinfo.com/token/0xc36fF5B42092A1822948e8fac103509CC8B68DC6",
+    "status": "active",
+    "id": "0xc36fF5B42092A1822948e8fac103509CC8B68DC6"
 }

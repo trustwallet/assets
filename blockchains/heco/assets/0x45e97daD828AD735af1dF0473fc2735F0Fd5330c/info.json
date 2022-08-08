@@ -1,12 +1,11 @@
 {
-  "name": "Heco-Peg HXTZ Token",
-  "type": "HECO",
-  "symbol": "HXTZ",
-  "decimals": 18,
-  "website": "",
-  "description": "",
-  "explorer": "https://www.hecoinfo.com/en-us/token/0x45e97daD828AD735af1dF0473fc2735F0Fd5330c",
-  "status": "active",
-  "id": "0x45e97daD828AD735af1dF0473fc2735F0Fd5330c",
-  "links": []
+    "name": "Heco-Peg HXTZ Token",
+    "symbol": "HXTZ",
+    "type": "HRC20",
+    "decimals": 18,
+    "description": "",
+    "website": "",
+    "explorer": "https://hecoinfo.com/token/0x45e97daD828AD735af1dF0473fc2735F0Fd5330c",
+    "status": "active",
+    "id": "0x45e97daD828AD735af1dF0473fc2735F0Fd5330c"
 }

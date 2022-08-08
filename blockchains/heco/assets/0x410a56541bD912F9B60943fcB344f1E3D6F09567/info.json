@@ -1,12 +1,11 @@
 {
-  "name": "BTCMT",
-  "type": "HECO",
-  "symbol": "BTCMT",
-  "decimals": 18,
-  "website": "",
-  "description": "",
-  "explorer": "https://www.hecoinfo.com/en-us/token/0x410a56541bD912F9B60943fcB344f1E3D6F09567",
-  "status": "active",
-  "id": "0x410a56541bD912F9B60943fcB344f1E3D6F09567",
-  "links": []
+    "name": "BTCMT",
+    "symbol": "BTCMT",
+    "type": "HRC20",
+    "decimals": 18,
+    "description": "",
+    "website": "",
+    "explorer": "https://hecoinfo.com/token/0x410a56541bD912F9B60943fcB344f1E3D6F09567",
+    "status": "active",
+    "id": "0x410a56541bD912F9B60943fcB344f1E3D6F09567"
 }

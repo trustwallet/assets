@@ -1,12 +1,11 @@
 {
-  "name": "HFI",
-  "type": "HECO",
-  "symbol": "HFI",
-  "decimals": 18,
-  "website": "",
-  "description": "",
-  "explorer": "https://www.hecoinfo.com/en-us/token/0x98fc3b60Ed4A504F588342A53746405E355F9347",
-  "status": "active",
-  "id": "0x98fc3b60Ed4A504F588342A53746405E355F9347",
-  "links": []
+    "name": "HFI",
+    "symbol": "HFI",
+    "type": "HRC20",
+    "decimals": 18,
+    "description": "",
+    "website": "",
+    "explorer": "https://hecoinfo.com/token/0x98fc3b60Ed4A504F588342A53746405E355F9347",
+    "status": "active",
+    "id": "0x98fc3b60Ed4A504F588342A53746405E355F9347"
 }

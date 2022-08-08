@@ -1,12 +1,11 @@
 {
-  "name": "Heco-Peg HUSD Token",
-  "type": "HECO",
-  "symbol": "HUSD",
-  "decimals": 8,
-  "website": "",
-  "description": "",
-  "explorer": "https://www.hecoinfo.com/en-us/token/0x0298c2b32eaE4da002a15f36fdf7615BEa3DA047",
-  "status": "active",
-  "id": "0x0298c2b32eaE4da002a15f36fdf7615BEa3DA047",
-  "links": []
+    "name": "Heco-Peg HUSD Token",
+    "symbol": "HUSD",
+    "type": "HRC20",
+    "decimals": 8,
+    "description": "",
+    "website": "",
+    "explorer": "https://hecoinfo.com/token/0x0298c2b32eaE4da002a15f36fdf7615BEa3DA047",
+    "status": "active",
+    "id": "0x0298c2b32eaE4da002a15f36fdf7615BEa3DA047"
 }

@@ -1,12 +1,11 @@
 {
-  "name": "ATOM Coin",
-  "type": "CRONOS",
-  "symbol": "ATOM",
-  "decimals": 6,
-  "website": "",
-  "description": "",
-  "explorer": "https://cronoscan.com/token/0xB888d8Dd1733d72681b30c00ee76BDE93ae7aa93",
-  "status": "active",
-  "id": "0xB888d8Dd1733d72681b30c00ee76BDE93ae7aa93",
-  "links": []
+    "name": "ATOM Coin",
+    "symbol": "ATOM",
+    "type": "CRC20",
+    "decimals": 6,
+    "description": "",
+    "website": "",
+    "explorer": "https://cronos.org/explorer/address/0xB888d8Dd1733d72681b30c00ee76BDE93ae7aa93/token-transfers",
+    "status": "active",
+    "id": "0xB888d8Dd1733d72681b30c00ee76BDE93ae7aa93"
 }

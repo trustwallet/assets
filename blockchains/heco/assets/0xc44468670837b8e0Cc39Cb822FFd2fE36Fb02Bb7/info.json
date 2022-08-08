@@ -1,12 +1,11 @@
 {
-  "name": "Heco BLS Token",
-  "type": "HECO",
-  "symbol": "BLS",
-  "decimals": 18,
-  "website": "",
-  "description": "",
-  "explorer": "https://www.hecoinfo.com/en-us/token/0xc44468670837b8e0Cc39Cb822FFd2fE36Fb02Bb7",
-  "status": "active",
-  "id": "0xc44468670837b8e0Cc39Cb822FFd2fE36Fb02Bb7",
-  "links": []
+    "name": "Heco BLS Token",
+    "symbol": "BLS",
+    "type": "HRC20",
+    "decimals": 18,
+    "description": "",
+    "website": "",
+    "explorer": "https://hecoinfo.com/token/0xc44468670837b8e0Cc39Cb822FFd2fE36Fb02Bb7",
+    "status": "active",
+    "id": "0xc44468670837b8e0Cc39Cb822FFd2fE36Fb02Bb7"
 }

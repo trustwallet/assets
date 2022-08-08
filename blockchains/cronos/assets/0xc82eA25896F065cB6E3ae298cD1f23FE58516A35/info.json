@@ -1,12 +1,11 @@
 {
-  "name": "ESSO Token",
-  "type": "CRONOS",
-  "symbol": "ESSO",
-  "decimals": 8,
-  "website": "",
-  "description": "",
-  "explorer": "https://cronoscan.com/token/0xc82eA25896F065cB6E3ae298cD1f23FE58516A35",
-  "status": "active",
-  "id": "0xc82eA25896F065cB6E3ae298cD1f23FE58516A35",
-  "links": []
+    "name": "ESSO Token",
+    "symbol": "ESSO",
+    "type": "CRC20",
+    "decimals": 8,
+    "description": "",
+    "website": "",
+    "explorer": "https://cronos.org/explorer/address/0xc82eA25896F065cB6E3ae298cD1f23FE58516A35/token-transfers",
+    "status": "active",
+    "id": "0xc82eA25896F065cB6E3ae298cD1f23FE58516A35"
 }

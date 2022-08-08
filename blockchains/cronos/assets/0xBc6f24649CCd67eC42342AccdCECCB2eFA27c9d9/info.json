@@ -1,12 +1,11 @@
 {
-  "name": "ChainLink Token",
-  "type": "CRONOS",
-  "symbol": "LINK",
-  "decimals": 18,
-  "website": "",
-  "description": "",
-  "explorer": "https://cronoscan.com/token/0xBc6f24649CCd67eC42342AccdCECCB2eFA27c9d9",
-  "status": "active",
-  "id": "0xBc6f24649CCd67eC42342AccdCECCB2eFA27c9d9",
-  "links": []
+    "name": "ChainLink Token",
+    "symbol": "LINK",
+    "type": "CRC20",
+    "decimals": 18,
+    "description": "",
+    "website": "",
+    "explorer": "https://cronos.org/explorer/address/0xBc6f24649CCd67eC42342AccdCECCB2eFA27c9d9/token-transfers",
+    "status": "active",
+    "id": "0xBc6f24649CCd67eC42342AccdCECCB2eFA27c9d9"
 }

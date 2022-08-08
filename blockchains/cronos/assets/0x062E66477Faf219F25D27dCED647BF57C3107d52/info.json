@@ -1,12 +1,11 @@
 {
-  "name": "WBTC",
-  "type": "CRONOS",
-  "symbol": "WBTC",
-  "decimals": 8,
-  "website": "",
-  "description": "",
-  "explorer": "https://cronoscan.com/token/0x062E66477Faf219F25D27dCED647BF57C3107d52",
-  "status": "active",
-  "id": "0x062E66477Faf219F25D27dCED647BF57C3107d52",
-  "links": []
+    "name": "WBTC",
+    "symbol": "WBTC",
+    "type": "CRC20",
+    "decimals": 8,
+    "description": "",
+    "website": "",
+    "explorer": "https://cronos.org/explorer/address/0x062E66477Faf219F25D27dCED647BF57C3107d52/token-transfers",
+    "status": "active",
+    "id": "0x062E66477Faf219F25D27dCED647BF57C3107d52"
 }

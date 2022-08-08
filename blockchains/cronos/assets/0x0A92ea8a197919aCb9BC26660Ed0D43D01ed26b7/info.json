@@ -1,12 +1,11 @@
 {
-  "name": "Enjin Coin",
-  "type": "CRONOS",
-  "symbol": "ENJ",
-  "decimals": 18,
-  "website": "",
-  "description": "",
-  "explorer": "https://cronoscan.com/token/0x0A92ea8a197919aCb9BC26660Ed0D43D01ed26b7",
-  "status": "active",
-  "id": "0x0A92ea8a197919aCb9BC26660Ed0D43D01ed26b7",
-  "links": []
+    "name": "Enjin Coin",
+    "symbol": "ENJ",
+    "type": "CRC20",
+    "decimals": 18,
+    "description": "",
+    "website": "",
+    "explorer": "https://cronos.org/explorer/address/0x0A92ea8a197919aCb9BC26660Ed0D43D01ed26b7/token-transfers",
+    "status": "active",
+    "id": "0x0A92ea8a197919aCb9BC26660Ed0D43D01ed26b7"
 }
