@@ -20,9 +20,6 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v2
 
-      - name: Run check
-        run: make check
-
       - name: Unit Test
         run: make test
 
