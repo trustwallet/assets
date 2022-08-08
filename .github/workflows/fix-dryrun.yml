@@ -24,6 +24,3 @@ jobs:
           git config core.ignorecase false
           git status
           git diff
-
-      - name: Run check
-        run: make check

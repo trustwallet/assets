@@ -41,10 +41,7 @@ jobs:
         run: |
           git status
           git diff
-
-      - name: Run check
-        run: make check
-
+          
       - name: Commit changes
         if: success()
         uses: stefanzweifel/git-auto-commit-action@v4.1.2
