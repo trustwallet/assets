@@ -29,6 +29,7 @@ func InitCommands() {
 	rootCmd.AddCommand(addTokenCmd)
 	rootCmd.AddCommand(addTokenlistCmd)
 	rootCmd.AddCommand(addTokenlistExtendedCmd)
+	rootCmd.AddCommand(updatePolkadotValidators)
 }
 
 var (
@@ -93,7 +94,20 @@ var (
 			handleAddTokenList(args, path.TokenlistExtended)
 		},
 	}
+
+	updatePolkadotValidators = &cobra.Command{
+		Use:   "update-polkadot-validators",
+		Short: "Updates the list of polkadot validators",
+		Run: func(cmd *cobra.Command, args []string) {
+			updatePolkadotValidators(args)
+		},
+	}
 )
+
+func updatePolkadotValidators(args []string) {
+	cmd := exec.Command("cd", "blockhains/polkadot/validators")
+	cmd := exec.Command("./polkadot-validators")
+}
 
 func handleAddTokenList(args []string, tokenlistType path.TokenListType) {
 	if len(args) != 1 {
