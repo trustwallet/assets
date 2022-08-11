@@ -1,4 +1,7 @@
-module github.com/trustwallet/assets
+
+
+
+
 
 go 1.17
 
