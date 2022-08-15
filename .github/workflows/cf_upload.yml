@@ -49,7 +49,7 @@ jobs:
                   if ($resp.result.images.Length -eq 0) {
                       break
                   }
-                  $imageList = ($resp.result.images | Select-Object -ExpandProperty id | ForEach-Object { ($_ -Replace "$env:ID_PREFIX", "").Trim() }) + $imageList
+                  $imageList = ($resp.result.images | Select-Object -ExpandProperty id | ForEach-Object { $_.TrimStart($env:ID_PREFIX).Trim() }) + $imageList
 
                   $pageIndex++
                   $retry = 0
@@ -70,11 +70,13 @@ jobs:
           | ForEach-Object { ($_ -Replace "\\", "/").TrimStart("./").Trim() } `
           | Sort-Object `
           | Get-Unique
-
           Write-Host "Success: Listing local completed, Total: $($localList.Length), First: $($localList[0])"
 
-          $diffList = $localList | Where-Object { $imageList -CNotContains $_ } | Sort-Object | Get-Unique
-
+          $diffList = Compare-Object -CaseSensitive -ReferenceObject $localList -DifferenceObject $imageList `
+          | Where-Object { $_.SideIndicator -eq "<=" } `
+          | Select-Object -ExpandProperty InputObject `
+          | Sort-Object `
+          | Get-Unique
           Write-Host "Success: Listing difference completed, Total: $($diffList.Length), First: $($diffList[0])"
 
           $uploaded = 0
