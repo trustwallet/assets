@@ -67,15 +67,13 @@ jobs:
 
           $localList = Get-ChildItem -File -Recurse -Path "./blockchains/", "./dapps/" -Include "*.png", "*.jpg", "*.webp" , "*.svg" `
           | Resolve-Path -Relative `
-          | ForEach-Object { ($_ -Replace "\\", "/").TrimStart("./") }
+          | ForEach-Object { ($_ -Replace "\\", "/").TrimStart("./") } `
+          | Sort-Object `
+          | Get-Unique
 
           Write-Host "Success: Listing local completed, Total: $($localList.Length), First: $($localList[0])"
 
-          $diffList = Compare-Object -ReferenceObject $localList -DifferenceObject $imageList `
-          | Where-Object { $_.SideIndicator -eq "<=" } `
-          | Select-Object -ExpandProperty InputObject `
-          | Sort-Object `
-          | Get-Unique
+          $diffList = $localList | Where-Object { $imageList -CNotContains $_ } | Sort-Object | Get-Unique
 
           Write-Host "Success: Listing difference completed, Total: $($diffList.Length), First: $($diffList[0])"
 
