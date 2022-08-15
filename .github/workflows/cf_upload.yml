@@ -10,8 +10,8 @@ on:
       - "dapps/**.jpg"
       - "blockchains/**.webp"
       - "dapps/**.webp"
-      - 'blockchains/**.svg'
-      - 'dapps/**.svg'
+      - "blockchains/**.svg"
+      - "dapps/**.svg"
   workflow_dispatch:
 
 jobs:
@@ -78,6 +78,7 @@ jobs:
           Write-Host "Success: Listing difference completed, Total: $($diffList.Length), First: $($diffList[0])"
 
           $uploaded = 0
+          $unprocessed = @()
 
           foreach ($imagePath in $diffList) {
               $resp = try {
@@ -105,9 +106,21 @@ jobs:
                   Write-Host "Warning: Conflict images detected, ID: $($env:ID_PREFIX)$imagePath"
                   continue
               }
+              elseif ($resp.messages[0] -eq 422) {
+                  $unprocessed += $env:ID_PREFIX + $imagePath
+                  continue
+              }
               else {
                   Write-Error "Error: Uploading failed, ID: $($env:ID_PREFIX)$imagePath. $($resp.messages[0]). $($resp.messages[1])"
               }
           }
 
           Write-Host "Success: Images uploaded, Total: $uploaded"
+
+          if ($unprocessed.Length -gt 0) {
+              foreach ($entity in $unprocessed) {
+                  Write-Error "Error: Unprocessable entity, ID: $entity"
+              }
+
+              throw "Error: Unprocessable entities, Total: $($unprocessed.Length)"
+          }
