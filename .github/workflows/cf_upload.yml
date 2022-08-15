@@ -49,7 +49,7 @@ jobs:
                   if ($resp.result.images.Length -eq 0) {
                       break
                   }
-                  $imageList = ($resp.result.images | Select-Object -ExpandProperty id | ForEach-Object { $_ -Replace "$env:ID_PREFIX", "" }) + $imageList
+                  $imageList = ($resp.result.images | Select-Object -ExpandProperty id | ForEach-Object { ($_ -Replace "$env:ID_PREFIX", "").Trim() }) + $imageList
 
                   $pageIndex++
                   $retry = 0
@@ -67,7 +67,7 @@ jobs:
 
           $localList = Get-ChildItem -File -Recurse -Path "./blockchains/", "./dapps/" -Include "*.png", "*.jpg", "*.webp" , "*.svg" `
           | Resolve-Path -Relative `
-          | ForEach-Object { ($_ -Replace "\\", "/").TrimStart("./") } `
+          | ForEach-Object { ($_ -Replace "\\", "/").TrimStart("./").Trim() } `
           | Sort-Object `
           | Get-Unique
 
