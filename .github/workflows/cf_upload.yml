@@ -81,8 +81,10 @@ jobs:
 
           $uploaded = 0
           $unprocessed = @()
+          $sw = [System.Diagnostics.Stopwatch]::new()
 
           foreach ($imagePath in $diffList) {
+              $sw.Restart()
               $resp = try {
                   Invoke-RestMethod -Method "POST" -Uri "https://api.cloudflare.com/client/v4/accounts/$($env:CF_ACCOUNT_ID)/images/v1" `
                   -SkipHeaderValidation -Headers @{ "Authorization" = "Bearer " + $env:CF_API_TOKEN; } `
@@ -106,14 +108,17 @@ jobs:
               }
               elseif ($resp.messages[0] -eq 409) {
                   Write-Host "Warning: Conflict images detected, ID: $($env:ID_PREFIX)$imagePath"
-                  continue
               }
               elseif ($resp.messages[0] -eq 422) {
                   $unprocessed += $env:ID_PREFIX + $imagePath
-                  continue
               }
               else {
                   Write-Error "Error: Uploading failed, ID: $($env:ID_PREFIX)$imagePath. $($resp.messages[0]). $($resp.messages[1])"
+              }
+
+              $sl = 250 - $sw.ElapsedMilliseconds
+              if ($sl -gt 0) {
+                  Start-Sleep -Milliseconds $sl
               }
           }
 
