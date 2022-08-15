@@ -47,7 +47,6 @@ jobs:
 
               if ($resp.success) {
                   if ($resp.result.images.Length -eq 0) {
-                      Write-Host "Success: Fetching remote completed, Total: $($imageList.Length)"
                       break
                   }
                   $imageList = ($resp.result.images | Select-Object -ExpandProperty id | ForEach-Object { $_ -Replace "$env:ID_PREFIX", "" }) + $imageList
@@ -63,7 +62,10 @@ jobs:
               }
           }
 
-          $localList = Get-ChildItem -Recurse -Path "./blockchains/", "./dapps/" -Include "*.png", "*.jpg", "*.webp" , "*.svg" `
+          $imageList = $imageList | Sort-Object | Get-Unique
+          Write-Host "Success: Fetching remote completed, Total: $($imageList.Length)"
+
+          $localList = Get-ChildItem -File -Recurse -Path "./blockchains/", "./dapps/" -Include "*.png", "*.jpg", "*.webp" , "*.svg" `
           | Resolve-Path -Relative `
           | ForEach-Object { ($_ -Replace "\\", "/").TrimStart("./") }
 
@@ -106,7 +108,7 @@ jobs:
                   continue
               }
               else {
-                  Write-Error "Error: Uploading failed, ID: $($env:ID_PREFIX)$imagePath"
+                  Write-Error "Error: Uploading failed, ID: $($env:ID_PREFIX)$imagePath. $($resp.messages[0]). $($resp.messages[1])"
               }
           }
 
