@@ -126,7 +126,7 @@ jobs:
 
           if ($unprocessed.Length -gt 0) {
               foreach ($entity in $unprocessed) {
-                  Write-Error "Error: Unprocessable entity, ID: $entity"
+                  Write-Host "Error: Unprocessable entity, ID: $entity"
               }
 
               throw "Error: Unprocessable entities, Total: $($unprocessed.Length)"
