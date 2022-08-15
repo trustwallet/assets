@@ -81,7 +81,7 @@ jobs:
 
           foreach ($imagePath in $diffList) {
               $resp = try {
-                  Invoke-WebRequest -Method "POST" -Uri "https://api.cloudflare.com/client/v4/accounts/$($env:CF_ACCOUNT_ID)/images/v1" `
+                  Invoke-RestMethod -Method "POST" -Uri "https://api.cloudflare.com/client/v4/accounts/$($env:CF_ACCOUNT_ID)/images/v1" `
                   -SkipHeaderValidation -Headers @{ "Authorization" = "Bearer " + $env:CF_API_TOKEN; } `
                   -Form @{
                       "file" = Get-Item -Path $imagePath;
