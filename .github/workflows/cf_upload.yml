@@ -41,13 +41,13 @@ jobs:
               catch {
                   [PSCustomObject]@{
                       success = $false;
-                      messages = , $_.Exception.Message;
+                      messages = $_.Exception.Response.StatusCode, $_.Exception.Message;
                   }
               }
 
               if ($resp.success) {
                   if ($resp.result.images.Length -eq 0) {
-                      Write-Host "Success: Fetching completed"
+                      Write-Host "Success: Fetching remote completed, Total: $($imageList.Length)"
                       break
                   }
                   $imageList = ($resp.result.images | Select-Object -ExpandProperty id | ForEach-Object { $_ -Replace "$env:ID_PREFIX", "" }) + $imageList
@@ -58,7 +58,7 @@ jobs:
               else {
                   $retry++
                   if ($retry -ge 3) {
-                      throw "Error: Fetching failed on Page $pageIndex. $($resp.messages[0])"
+                      throw "Error: Fetching failed on Page $pageIndex. $($resp.messages[0]). $($resp.messages[1])"
                   }
               }
           }
@@ -67,22 +67,47 @@ jobs:
           | Resolve-Path -Relative `
           | ForEach-Object { ($_ -Replace "\\", "/").TrimStart("./") }
 
+          Write-Host "Success: Listing local completed, Total: $($localList.Length)"
+
           $diffList = Compare-Object -ReferenceObject $localList -DifferenceObject $imageList `
           | Where-Object { $_.SideIndicator -eq "<=" } `
-          | Select-Object -ExpandProperty InputObject
+          | Select-Object -ExpandProperty InputObject `
+          | Sort-Object `
+          | Get-Unique
+
+          Write-Host "Success: Listing difference completed, Total: $($diffList.Length)"
 
           $uploaded = 0
 
           foreach ($imagePath in $diffList) {
-              Invoke-WebRequest -Method "POST" -Uri "https://api.cloudflare.com/client/v4/accounts/$($env:CF_ACCOUNT_ID)/images/v1" `
-              -SkipHeaderValidation -Headers @{ "Authorization" = "Bearer " + $env:CF_API_TOKEN; } `
-              -Form @{
-                  "file" = Get-Item -Path $imagePath;
-                  "id" = "$env:ID_PREFIX" + "$imagePath";
+              $resp = try {
+                  Invoke-WebRequest -Method "POST" -Uri "https://api.cloudflare.com/client/v4/accounts/$($env:CF_ACCOUNT_ID)/images/v1" `
+                  -SkipHeaderValidation -Headers @{ "Authorization" = "Bearer " + $env:CF_API_TOKEN; } `
+                  -Form @{
+                      "file" = Get-Item -Path $imagePath;
+                      "id" = "$env:ID_PREFIX" + "$imagePath";
+                  }
+              } catch {
+                  [PSCustomObject]@{
+                      success = $false;
+                      messages = $_.Exception.Response.StatusCode, $_.Exception.Message;
+                  }
               }
-              
-              $uploaded++
-              Start-Sleep -Seconds 0.25
+
+              if ($resp.success) {
+                  Write-Host "Success: Uploaded, ID: $($env:ID_PREFIX)$imagePath"
+                  $uploaded++
+                  $retry = 0
+
+                  Start-Sleep -Seconds 0.25
+              }
+              elseif ($resp.messages[0] -eq 409) {
+                  Write-Host "Warning: Conflict images detected, ID: $($env:ID_PREFIX)$imagePath"
+                  continue
+              }
+              else {
+                  Write-Error "Error: Uploading failed, ID: $($env:ID_PREFIX)$imagePath"
+              }
           }
 
-          Write-Host "Success: Uploaded $uploaded"
+          Write-Host "Success: Images uploaded, Total: $uploaded"
