@@ -63,13 +63,13 @@ jobs:
           }
 
           $imageList = $imageList | Sort-Object | Get-Unique
-          Write-Host "Success: Fetching remote completed, Total: $($imageList.Length)"
+          Write-Host "Success: Fetching remote completed, Total: $($imageList.Length), First: $($imageList[0])"
 
           $localList = Get-ChildItem -File -Recurse -Path "./blockchains/", "./dapps/" -Include "*.png", "*.jpg", "*.webp" , "*.svg" `
           | Resolve-Path -Relative `
           | ForEach-Object { ($_ -Replace "\\", "/").TrimStart("./") }
 
-          Write-Host "Success: Listing local completed, Total: $($localList.Length)"
+          Write-Host "Success: Listing local completed, Total: $($localList.Length), First: $($localList[0])"
 
           $diffList = Compare-Object -ReferenceObject $localList -DifferenceObject $imageList `
           | Where-Object { $_.SideIndicator -eq "<=" } `
@@ -77,7 +77,7 @@ jobs:
           | Sort-Object `
           | Get-Unique
 
-          Write-Host "Success: Listing difference completed, Total: $($diffList.Length)"
+          Write-Host "Success: Listing difference completed, Total: $($diffList.Length), First: $($diffList[0])"
 
           $uploaded = 0
 
