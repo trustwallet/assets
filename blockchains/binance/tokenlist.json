@@ -1,7 +1,7 @@
 {
     "name": "Trust Wallet: BNB",
     "logoURI": "https://trustwallet.com/assets/images/favicon.png",
-    "timestamp": "2022-08-01T01:36:29.166438",
+    "timestamp": "2022-08-16T01:36:15.503016",
     "tokens": [
         {
             "asset": "c714",
@@ -104,7 +104,7 @@
                 },
                 {
                     "base": "c714_tBZNT-464",
-                    "lotSize": "100000000000",
+                    "lotSize": "1000000000000",
                     "tickSize": "1"
                 },
                 {
@@ -214,7 +214,7 @@
                 },
                 {
                     "base": "c714_tETHBEAR-B2B",
-                    "lotSize": "100000000",
+                    "lotSize": "1000000000",
                     "tickSize": "1"
                 },
                 {
@@ -224,7 +224,7 @@
                 },
                 {
                     "base": "c714_tEVT-49B",
-                    "lotSize": "100000000000",
+                    "lotSize": "1000000000000",
                     "tickSize": "1"
                 },
                 {
@@ -319,7 +319,7 @@
                 },
                 {
                     "base": "c714_tMITH-C76",
-                    "lotSize": "1000000000",
+                    "lotSize": "10000000000",
                     "tickSize": "1"
                 },
                 {
@@ -384,7 +384,7 @@
                 },
                 {
                     "base": "c714_tPHB-2DF",
-                    "lotSize": "10000000000",
+                    "lotSize": "100000000000",
                     "tickSize": "1"
                 },
                 {
@@ -429,7 +429,7 @@
                 },
                 {
                     "base": "c714_tSHR-DB6",
-                    "lotSize": "100000000000",
+                    "lotSize": "10000000000",
                     "tickSize": "1"
                 },
                 {
@@ -529,7 +529,7 @@
                 },
                 {
                     "base": "c714_tWISH-2D5",
-                    "lotSize": "1000000000",
+                    "lotSize": "10000000000",
                     "tickSize": "1"
                 },
                 {
@@ -675,12 +675,12 @@
                 },
                 {
                     "base": "c714_tSHR-DB6",
-                    "lotSize": "100000000000",
+                    "lotSize": "10000000000",
                     "tickSize": "1"
                 },
                 {
                     "base": "c714_tSWINGBY-888",
-                    "lotSize": "100000000000",
+                    "lotSize": "10000000000",
                     "tickSize": "1"
                 },
                 {
@@ -701,7 +701,7 @@
                 {
                     "base": "c714_tXVS-795",
                     "lotSize": "10000000",
-                    "tickSize": "1000"
+                    "tickSize": "10000"
                 },
                 {
                     "base": "c714_tYFII-061",
@@ -2059,7 +2059,7 @@
         }
     ],
     "version": {
-        "major": 359,
+        "major": 372,
         "minor": 0,
         "patch": 0
     }
