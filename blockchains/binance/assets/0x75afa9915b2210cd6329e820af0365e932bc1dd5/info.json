@@ -1,33 +1,32 @@
 {
-    "name": "Smurfs INU",
-    "website": "https://smurfsinu.com",
-    "description": "SmurfsINU is designed to create a complex ecosystem in which DeFi and Metaverse are integrated together",
-    "explorer": "https://bscscan.com/token/0x75afa9915b2210cd6329e820af0365e932bc1dd5",
+    "name": "CatBoy",
     "type": "BEP20",
-    "symbol": "SMURF",
-    "decimals": 9,
+    "symbol": "CATBOY",
+    "decimals": 18,
+    "website": "https://catboytoken.com",
+    "description": "Catboy is a community led NFT project, founded and built, by comic, manga, anime, and pet lovers. This token is a symbol of the spirit, cohesion, and sharing of memes, manga and comic loving communities around the world. Besides building a strong community. Catboy cares about the real value that the project brings. Bringing Catboy merchandise, a Catboy NFT marketplace, and building a worldwide network of users to donate to feral cats and support struggling cat owners. Catboy has three different NFT editions which are available on CatBoys own dapp.",
+    "explorer": "https://bscscan.com/token/0x39C3F75B837EAE0d6d0eA87425Ac99bD646a7B1E",
     "status": "active",
-    "id": "0x75aFA9915B2210Cd6329E820af0365e932bC1dd5",
+    "id": "0x39C3F75B837EAE0d6d0eA87425Ac99bD646a7B1E",
     "links": [
         {
-            "name": "twitter",
-            "url": "https://twitter.com/SmurfsINU_"
-        },
-        {
-            "name": "whitepaper",
-            "url": "https://smurfsinu.com/smurfsinu-project.pdf"
-        },
-        {
-            "name": "telegram",
-            "url": "https://t.me/SmurfsINU"
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/catboy-token/"
         },
         {
             "name": "coingecko",
-            "url": "https://www.coingecko.com/en/coins/smurfsinu"
+            "url": "https://coingecko.com/munze/catboy"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/catboybscofficial"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/BSCCatBoy"
         }
     ],
     "tags": [
-        "nft",
-        "gamefi"
+        "defi"
     ]
 }
