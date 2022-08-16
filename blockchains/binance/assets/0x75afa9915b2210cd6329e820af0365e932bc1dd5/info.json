@@ -1,7 +1,7 @@
 {
     "name": "Smurfs INU",
     "website": "https://smurfsinu.com",
-    "description": "SmurfsINU is designed to create a complex ecosystem in which DeFi and Metaverse are integrated together.",
+    "description": "SmurfsINU is designed to create a complex ecosystem in which DeFi and Metaverse are integrated together",
     "explorer": "https://bscscan.com/token/0x75afa9915b2210cd6329e820af0365e932bc1dd5",
     "type": "BEP20",
     "symbol": "SMURF",
@@ -10,19 +10,28 @@
     "id": "0x75afa9915b2210cd6329e820af0365e932bc1dd5",
     "links": [
         {
-            "name": "telegram",
-            "url": "https://t.me/SmurfsINU"
-        },
-        {
             "name": "twitter",
             "url": "https://twitter.com/SmurfsINU_"
         },
         {
-            "name": "discord",
-            "url": "https://discord.gg/wwz3ECwruP"
+            "name": "whitepaper",
+            "url": "https://smurfsinu.com/smurfsinu-project.pdf"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/SmurfsINU"
+        },
+        {
+            "name": "binance",
+            "url": "https://www.binance.com/en/price/smurfsinu"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://www.coingecko.com/en/coins/smurfsinu"
         }
-    ]
+    ],
     "tags": [
-         "gaming"
+        "nft",
+        "gamefi"
     ]
 }
