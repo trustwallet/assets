@@ -1,36 +1,40 @@
 {
-    "name": "CandyDex",
+    "name": "CANDYDEX",
+    "type": "POLYGON",
+    "symbol": "CandyDex",
+    "decimals": 9,
     "website": "https://candydex.finance/",
     "description": "Candydex is a unique decentralized cryptocurrency exchange platform that supports multiple networks",
-    "explorer": "https://polygonscan.com/token/0xabe1a652cbc6eb1782b5de4e800f8bf714aaf5d0",
-    "type": "POLYGON",
-    "symbol": "CANDYDEX",
-    "decimals": 9,
+    "explorer": "https://polygonscan.com/token/0xabE1a652CbC6eB1782B5De4E800f8bf714AaF5D0",
     "status": "active",
     "id": "0xabE1a652CbC6eB1782B5De4E800f8bf714AaF5D0",
-    "tags": [
-        "CANDYDEX"
-    ],
     "links": [
         {
-            "name": "github",
-            "url": "https://github.com/CandyDex"
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/candydex/"
         },
         {
             "name": "twitter",
             "url": "https://twitter.com/candydex"
         },
         {
+            "name": "github",
+            "url": "https://github.com/CandyDex"
+        },
+        {
             "name": "telegram",
+            "url": "https://t.me/Candydex_Announcements"
+        },
+        {
+            "name": "telegram_news",
             "url": "https://t.me/Candydex_Announcements"
         },
         {
             "name": "medium",
             "url": "https://medium.com/@candydex"
-        },
-        {
-            "name": "coinmarketcap",
-            "url": "https://coinmarketcap.com/currencies/candydex/"
         }
+    ],
+    "tags": [
+        "defi"
     ]
 }
