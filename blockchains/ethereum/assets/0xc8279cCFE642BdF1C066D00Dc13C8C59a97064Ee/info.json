@@ -1,0 +1,32 @@
+{
+    "name": "Moneybrain BiPS Digital Pound",
+    "type": "ERC20",
+    "symbol": "GBPB",
+    "decimals": 18,
+    "website": "https://bips.moneybrain.com/gbpb/",
+    "description": "BiPS Digital Pound (GBPB) is a stablecoin that tracks the price movement of the British Pound. Cash is held in custody at a British Bank or similar, regulated custodian to provide 1:1 backing for GBPB. Trading with GBPB is similar to trading the GBP and the prices are pegged to each other.",
+    "explorer": "https://etherscan.io/token/0xc8279cCFE642BdF1C066D00Dc13C8C59a97064Ee",
+    "status": "active",
+    "id": "0xc8279cCFE642BdF1C066D00Dc13C8C59a97064Ee",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/MoneybrainBiPS"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/MoneyBrainBips"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/MoneybrainBiPS"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/@bips"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}
