@@ -1,11 +1,65 @@
 {
-    "name": "ARIVA",
-	"symbol": "ARV",
-    "website": "https://ariva.digital/",
-    "description": "Ariva (ARV) is a cryptocurrency supported by Ariva Co., produced for active use in global and local tourism and travel networks in the near future.",
-    "explorer": "https://bscscan.com/token/0x6679eB24F59dFe111864AEc72B443d1Da666B360",
+    "name": "Ariva",
     "type": "BEP20",
+    "symbol": "ARV",
     "decimals": 8,
+    "website": "https://ariva.digital/",
+    "description": "Ariva is a blockchain solution for the Travel and Tourism industry that allows users to make bookings with cryptocurrency. Ariva ecosystem consists of a travel portal Ariva.World, payment gateway Ariva.Finance, and metaverse Ariva Wonderland.",
+    "explorer": "https://bscscan.com/token/0x6679eB24F59dFe111864AEc72B443d1Da666B360",
     "status": "active",
-    "id": "0x6679eB24F59dFe111864AEc72B443d1Da666B360"
+    "id": "0x6679eB24F59dFe111864AEc72B443d1Da666B360",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/ArivaCoin"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/ariva_arv"
+        },
+        {
+            "name": "telegram_news",
+            "url": "https://t.me/arivadigital"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/ariva-digital"
+        },
+        {
+            "name": "blog",
+            "url": "https://medium.com/@arivacoin"
+        },
+        {
+            "name": "reddit",
+            "url": "https://www.reddit.com/r/ArivaCoin"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://ariva.digital/whitepaper.pdf"
+        },
+        {
+            "name": "youtube",
+            "url": "https://www.youtube.com/channel/UCYab7J37fMRtP7ucjEc0eog"
+        },
+        {
+            "name": "facebook",
+            "url": "https://www.facebook.com/arivadigital"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/ariva/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://www.coingecko.com/en/coins/ariva"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/nnFn8HgPhv"
+        }
+    ],
+    "tags": [
+        "nft",
+        "defi"
+    ]
 }
