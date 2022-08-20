@@ -1,13 +1,20 @@
 {
-    "name": "Hoge Finance",
+    "name": "HOGE",
     "website": "https://hogefinance.com",
     "description": "We Meme Business.",
-    "explorer": "https://bscscan.com/token/0xa4FFfc757e8c4F24E7b209C033c123D20983Ad40",
+    "explorer": "https://bscscan.com/token/0xa4fffc757e8c4f24e7b209c033c123d20983ad40",
     "type": "BEP20",
     "symbol": "HOGE",
     "decimals": 9,
     "status": "active",
-    "id": "0xa4FFfc757e8c4F24E7b209C033c123D20983Ad40",
+    "id": "0xa4fffc757e8c4f24e7b209c033c123d20983ad40",
+    "tags": [
+        "deflationary",
+        "DeFi",
+        "DAO",
+        "MemeBusiness",
+        "Comnunity"
+    ],
     "links": [
         {
             "name": "reddit",
