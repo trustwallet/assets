@@ -1,11 +1,34 @@
 {
-    "name": "Live Crypto Party Token",
-    "website": "https://livecryptoparty.com/",
-    "description": "LCP is the native token of the Live Crypto Party ecosystem; a party-to-earn metaverse and event platform.",
-    "explorer": "https://bscscan.com/token/0x7150363247D59F1539C5D2Af5E9b743Be07e2F8B",
+    "name": "Live Crypto Party",
     "type": "BEP20",
     "symbol": "LCP",
     "decimals": 9,
+    "website": "https://livecryptoparty.com/",
+    "description": "LCP is the native token of Live Crypto Party ecosystem; a party-to-earn metaverse and event platform that rewards users in NFTs and Cryptocurrency like BNB, BUSD and LCP for having fun.",
+    "explorer": "https://bscscan.com/token/0x7150363247D59F1539C5D2Af5E9b743Be07e2F8B",
     "status": "active",
-    "id": "0x7150363247D59F1539C5D2Af5E9b743Be07e2F8B"
-  }
+    "id": "0x6C46422A0f7dbbAD9BEC3BbBC1189bfAf9794B05",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/Livecryptoparty/"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/livecryptopartychat"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/live-crypto-party/"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://livecryptoparty.com/whitepaper.pdf"
+        }
+    ],
+    "tags": [
+        "metaverse",
+        "gamefi",
+        "nft"
+    ]
+}
