@@ -1,0 +1,48 @@
+{
+    "name": "Trust Wallet: Optimism Ethereum",
+    "logoURI": "https://trustwallet.com/assets/images/favicon.png",
+    "timestamp": "2022-01-30T13:55:46.031276",
+    "tokens": [
+        {
+            "asset": "c10000070_t0x5029C236320b8f15eF0a657054B84d90bfBEDED3",
+            "type": "OPTIMISM",
+            "address": "0x5029C236320b8f15eF0a657054B84d90bfBEDED3",
+            "name": "BitANT",
+            "symbol": "BitANT",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/optimism/assets/0x5029C236320b8f15eF0a657054B84d90bfBEDED3/logo.png"
+        },
+        {
+            "asset": "c10000070_t0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
+            "type": "OPTIMISM",
+            "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
+            "name": "Lyra Finance",
+            "symbol": "LYRA",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/optimism/assets/0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb/logo.png"
+        },
+        {
+            "asset": "c10000070_t0x9Bcef72be871e61ED4fBbc7630889beE758eb81D",
+            "type": "OPTIMISM",
+            "address": "0x9Bcef72be871e61ED4fBbc7630889beE758eb81D",
+            "name": "Rocket Pool ETH",
+            "symbol": "rETH",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/optimism/assets/0x9Bcef72be871e61ED4fBbc7630889beE758eb81D/logo.png"
+        },
+        {
+            "asset": "c10000070_t0xffD27b572246f35c992EfB28DD8cB730b93Ed301",
+            "type": "OPTIMISM",
+            "address": "0xffD27b572246f35c992EfB28DD8cB730b93Ed301",
+            "name": "Rubicon",
+            "symbol": "Rubicon",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/optimism/assets/0xffD27b572246f35c992EfB28DD8cB730b93Ed301/logo.png"
+        }
+    ],
+    "version": {
+        "major": 10,
+        "minor": 0,
+        "patch": 0
+    }
+}
