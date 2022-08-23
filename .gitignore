@@ -3,3 +3,7 @@ node_modules/
 .idea
 .vscode/
 *~
+*.txt
+.env
+.env.test
+bin/

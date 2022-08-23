@@ -1,189 +1,77 @@
 # Trust Wallet Assets Info
+
+![Check](https://github.com/trustwallet/assets/workflows/Check/badge.svg)
+
 ## Overview
-Hello and welcome to Trust Wallet assets info contribution guide. We appreciate your effort to open-source.
-Token repository [https://github.com/trustwallet/assets](https://github.com/trustwallet/assets) (repo) is a source of images used by [Trust Wallet](https://trustwallet.com/) including:
 
-1. [ERC20](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md) tokens on Ethereum compatible networks supported by Trust Wallet such as:
-  - [Ethereum (ETH)](https://ethereum.org/)
-  - [Ethereum Classic (ETC)](https://ethereumclassic.org/)
-  - [POA Network (POA)](https://poa.network/)
-  - [TomoChain (TOMO)](https://tomochain.com/)
-  - [GoChain (GO)](https://gochain.io/)
-  - [Wanchain (WAN)](https://wanchain.org/)
-  - [Callisto Network (CLO)](https://callisto.network/)
-  - [Thunder Token (TT)](https://thundercore.com/)
+Trust Wallet token repository is a comprehensive, up-to-date collection of information about several thousands (!) of crypto tokens.
 
-2. [BEP2](https://github.com/binance-chain/BEPs/blob/master/BEP2.md) Binance DEX token (native marketplace on Binance Chain)
+[Trust Wallet](https://trustwallet.com) uses token logos from this source, alongside a number of other projects.
 
-3. [TRC10, TRC20](https://developers.tron.network/docs/trc10-token) tokens on TRON blockchain
+The repository contains token info from several blockchains, info on dApps, staking validators, etc.
+For every token a logo and optional additional information is available (such data is not available on-chain).
 
-4. [coins](https://github.com/satoshilabs/slips/blob/master/slip-0044.md) integrated in [Wallet Core](https://developer.trustwallet.com/wallet-core)
+Such a large collection can be maintained only through a community effort, so _feel free to add your token_.
 
-5. dApp images available in `Browser` section in Trust Wallet and at https://dapps.trustwallet.com and bookmarks icons. [read requirments](#dApp-image-naming-requirments)
+<center><img src='https://trustwallet.com/assets/images/media/assets/horizontal_blue.png' height="200"></center>
 
-6. Staking validators info avalible on [Trust Wallet Staking Platform](https://github.com/trustwallet/developer/blob/master/platform/staking.md)
+## How to add token
 
-7. Coming soon: token info, token price, blacklisted and whitelisted tokens (mostly scam/spam ones)
+Please note that __brand new tokens are not accepted__,
+the projects have to be sound, with information available, and __non-minimal circulation__
+(for limit details see <https://developer.trustwallet.com/assets/requirements>).
 
-<center><img src='https://raw.githubusercontent.com/trustwallet/assets/master/media/trust-wallet.png'></center>
+### Assets App
 
-## Contribution steps
+The [Assets web app](https://assets.trustwallet.com) can be used for most new token additions (Github account is needed).
 
-1. Prepare image [requirements](#image-requirements)
-2. Get familiar with [folder strcture](#repository-structure), will give you understanding where asset image should be placed
-3. [Add asset guide](#how-to-add-asset)
+### Quick starter
 
-## Image Requirements
-- file extension: `png`. Uppercase `PNG` considered invalid.
-- name：file name requirements for: `logo.png` name, but [folder naming](#repository-structure) where they placed is most important part of contribution
-- size: `256px by 256px`
-- background: preferably transparent
-- use simple drag and drop online service [tinypng](https://tinypng.com/) to optimize image size
-
-## dApp image naming requirments
-- [Folder for upload](https://github.com/trustwallet/assets/tree/master/dapps)
-- `<subdomain>.<domain_name>.png` e.g:
-  https://app.compound.finance/ => `app.compound.finance.png`
-  https://kyberswap.com/ => `kyberswap.com.png`
+Details of the repository structure and contribution guidelines are listed on the
+[Developers site](https://developer.trustwallet.com/assets/new-asset).
+Here is a quick starter summary for the most common use case.
 
 
-## Repository structure
+## Documentation
 
-`blockchains` folder contains many subfolders and represents chains e.g. `ethereum`, `binance` ...
+For details, see the [Developers site](https://developer.trustwallet.com):
 
-`assets` folder contains token folders named by smart contract address in `lowercase register` and inside of it `logo.png` - image representation
+- [Contribution guidelines](https://developer.trustwallet.com/assets/repository_details)
 
-`info` folder contains for now only `logo.png` that represents coin image
+- [FAQ](https://developer.trustwallet.com/assets/faq)
 
+## Scripts
 
-```
-.
-├── blockchains
-│   └──ethereum
-│   │   └──assets
-│   │   │  └──0x0a2d9370cf74da3fd3df5d764e394ca8205c50b6 // address folder
-│   │   │     └──logo.png // address logo
-│   │   └──info
-│   │      └──logo.png // coin logo
-|   |
-|   └──binance
-│   │   └──assets
-│   │   │  └──one-5f9
-│   │   │     └──logo.png
-│   │   └──info
-│   │      └──logo.png
-|   └──tron
-│   |  └──assets
-│   |  │  └──1002000
-│   |  │  |   └──logo.png
-|   |  |  └──tgbhcodq1jrwb3zywmfwsrth4rwbil2mzh
-|   |  |      └──logo.png
-|   |  | 
-│   |  └──info
-│   |     └──logo.png
-|   |
-|   └──cosmos
-│   │   └──info
-|   |   |  └──logo.png
-|   |   |
-│   │   └──validators
-│   │   |  └──assets
-|   |   |     └──cosmosvaloper1clpqr4nrk4khgkxj78fcwwh6dl3uw4epsluffn
-|   |   |        └──logo.png
-|   |   |
-|   |   └──list.json
-├── ...
-```
+There are several scripts available for maintainers:
 
+- `make check` -- Execute validation checks; also used in continuous integration.
+- `make fix` -- Perform automatic fixes where possible
+- `make update-auto` -- Run automatic updates from external sources, executed regularly (GitHub action)
+- `make add-token asset_id=c60_t0x4Fabb145d64652a948d72533023f6E7A623C7C53` -- Create `info.json` file as asset template.
+- `make add-tokenlist asset_id=c60_t0x4Fabb145d64652a948d72533023f6E7A623C7C53` -- Adds a token to tokenlist.json.
+- `make add-tokenlist-extended asset_id=c60_t0x4Fabb145d64652a948d72533023f6E7A623C7C53` -- Adds a token to tokenlist-extended.json.
 
-## Common uploads
-Uploading:
-1. Ethereum ERC20 [token folder](https://github.com/trustwallet/assets/tree/master/blockchains/ethereum/assets)
-2. Binance DEX BEP2 token [token folder](https://github.com/trustwallet/assets/tree/master/blockchains/binance/assets)
-3. TRON TRC10 token [token folder](https://github.com/trustwallet/assets/tree/master/blockchains/tron/assets)
-4. Add Cosmos validator info and image [](https://github.com/trustwallet/assets/tree/master/blockchains/cosmos/validators)
-5. Add Tezos validator info and image [](https://github.com/trustwallet/assets/tree/master/blockchains/tezos/validators)
+## On Checks
 
+This repo contains a set of scripts for verification of all the information. Implemented as Golang scripts, available through `make check`, and executed in CI build; checks the whole repo.
+There are similar check logic implemented:
 
-## How To Add Asset
-Process adding new tokens may look complicated at first glance, but once you completed it will be way easier do it next time:
+- in assets-management app; for checking changed token files in PRs, or when creating a PR.  Checks diffs, can be run from browser environment.
+- in merge-fee-bot, which runs as a GitHub app shows result in PR comment. Executes in a non-browser environment.
 
-### Easy way
-1. [Follow image requirements](#image-requirements)
-2. Proceed to [https://github.com/trustwallet/assets](https://github.com/trustwallet/assets)
-3. Press on `Fork` in the top right corner, wait for process to complete
-4. Navigate to desire chain folder you want to add asset
-5. Prepare folder with image on your computer
-7. Simply drag and drop folder from step 5 to active window
-8. In `Commit changes` box:
-  - `Add files via upload` add meaningfull comment what you adding to the repo
-  - optional: In `Add an optional extended description` write a comment about upload
-  - optional: adjust fork branch nam
-9. Click on `Propose changes`
-10. Press on `Create pull request`
-13. Once tests have completed and verified that your image follows all requirements, a maintainer will merge it. In 5-10 minutes your token will have the updated image instead of plain logo in Trust Wallet
+## Trading pair maintenance
 
-### Easy way for Git user
-1. Fork the repo to your own github account
-2. Clone fork and create new branch:
-```bash
-git clone git@github.com:YOUR_HANDLE/assets.git
-cd tokens
-git branch <branch_name>
-git checkout <branch_name>
-```
-3.  Add asset to appropriate directory, here [folder strcture](#repository-structure) to help you
-4. Commit and push to your fork
-```bash
-git add -A
-git commit -m “Add <token_name>”
-git push origin <branch_name>
-```
-5. From your repo clone page make PR
+Info on supported trading pairs are stored in `tokenlist.json` files.
+Trading pairs can be updated --
+from Uniswap/Ethereum and PancakeSwap/Smartchain -- using update script (and checking in changes).
+Minimal limit values for trading pair inclusion are set in the [config file](https://github.com/trustwallet/assets/blob/master/.github/assets.config.yaml).
+There are also options for force-include and force-exclude in the config.
 
+## Disclaimer
 
-## FAQ
-### Why do I still see old logo in Trust Wallet after uploaded new one
-Both clients, Android and iOS keep old image cache for up to 7 days. In order to see changes immediately, reinstall Trust Wallet. But as always, make sure you have a backup of all your wallets.
+Trust Wallet team allows anyone to submit new assets to this repository. However, this does not mean that we are in direct partnership with all of the projects.
 
-## How to use it? (For Developers)
-Base URL for token image:
-```js
-https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/<contract_address_lowercase>/logo.png
-```
+Trust Wallet team will reject projects that are deemed as scam or fraudulent after careful review.
+Trust Wallet team reserves the right to change the terms of asset submissions at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.
 
-Base URL for coin image:
-```js
-https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/<coin_name_lowercase>/info/logo.png
-```
-
-Examples:
-
-Coin logo, e.g Bitcoin:
-```js
-https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/bitcoin/info/logo.png
-```
-
-ERC20:
-```js
-https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x006bea43baa3f7a6f765f14f10a1a1b08334ef45/logo.png
-```
-
-BEP-2:
-```js
-https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/assets/ankr-e97/logo.png
-```
-
-TRC-10:
-```js
-https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/tron/assets/1002000/logo.png
-```
-
-TRC-20:
-```js
-https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/tron/assets/tg37muxruah1e8dwsrrmoq79bnzn1yhztb/logo.png
-```
-
-## Used in Applications
-- [Trust Wallet](https://trustwallet.com) - [iOS](https://itunes.apple.com/us/app/trust-ethereum-wallet/id1288339409) and [Android](https://play.google.com/store/apps/details?id=com.wallet.crypto.trustapp)
-- [0x Tracker](https://0xtracker.com) - The 0x Protocol Trade Explorer and news aggregator
+Additionally, spam-like behavior, including but not limited to mass distribution of tokens to random addresses will result in the asset being flagged as spam and possible removal from the repository.

@@ -1,0 +1,29 @@
+name: Fix (Dry run)
+on:
+  pull_request:
+    branches: master
+
+jobs:
+  fix-dryrun:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Go
+        uses: actions/setup-go@v2
+        with:
+          go-version: 1.18
+        id: go
+
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Run fix
+        run: make fix
+
+      - name: Show fix result (diff)
+        run: |
+          git config core.ignorecase false
+          git status
+          git diff
+
+      - name: Run check
+        run: make check

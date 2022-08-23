@@ -1,0 +1,29 @@
+{
+    "name": "Viacoin",
+    "website": "http://viacoin.org",
+    "description": "Viacoin is an open source crypto-currency created in 2014, derived from the Bitcoin protocol that supports embedded consensus with an extended OP_RETURN of 120 byte.",
+    "explorer": "https://chainz.cryptoid.info/via",
+    "research": "https://research.binance.com/en/projects/viacoin",
+    "symbol": "VIA",
+    "type": "coin",
+    "decimals": 8,
+    "status": "active",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/viacoin/viacoin"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/viacoin"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/viacoin"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://github.com/viacoin/documents/blob/master/whitepapers/Viacoin_fullcolor_whitepaper.pdf"
+        }
+    ]
+}
