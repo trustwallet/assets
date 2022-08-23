@@ -1,32 +1,33 @@
 {
-    "name": "PoodleFi",
-    "website": "https://poodlefi.com",
-    "description": "PoodleFi is a Decentralized Financial System based BNB Chain, a platform with Secure blockchain technology, with features Swap, NFTs Marketplace, Staking.",
-    "explorer": "https://bscscan.com/token/0xc9dbcff0448d330aaf1dd78fc204370e5e54a797",
-    "type": "BEP20",
-    "symbol": "PFI",
-    "decimals": 18,
-    "status": "active",
-    "id": "0xc9dBCff0448D330AAF1Dd78fc204370E5e54a797",
-"links": [
-        {
-            "name": "twitter",
-            "url": "https://twitter.com/poodlefinetwork"
-        },
-        {
-            "name": "telegram",
-            "url": "https://t.me/poodlefinetwork"
-        },
-        {
-            "name": "coingecko",
-            "url": "https://www.coingecko.com/en/coins/poodlefi"
-        },
- {
-            "name": "coinmarketcap",
-            "url": "https://coinmarketcap.com/currencies/poodlefi"
-        },
-    ],
- "tags": [
-         "governance"
-     ]
+  "name": "PoodleFi",
+  "website": "https://poodlefi.com",
+  "description": "PoodleFi is a Decentralized Financial System based BNB Chain, a platform with Secure blockchain technology, with features Swap, NFTs Marketplace, Staking.",
+  "explorer": "https://bscscan.com/token/0xc9dbcff0448d330aaf1dd78fc204370e5e54a797",
+  "type": "BEP20",
+  "symbol": "PFI",
+  "decimals": 18,
+  "status": "active",
+  "id": "0xc9dBCff0448D330AAF1Dd78fc204370E5e54a797",
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/poodlefinetwork"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/poodlefinetwork"
+    },
+    {
+      "name": "coingecko",
+      "url": "https://www.coingecko.com/en/coins/poodlefi"
+    },
+    {
+      "name": "coinmarketcap",
+      "url": "https://coinmarketcap.com/currencies/poodlefi"
+    },
+    
+  ],
+  "tags": [
+    "governance"
+  ]
 }
