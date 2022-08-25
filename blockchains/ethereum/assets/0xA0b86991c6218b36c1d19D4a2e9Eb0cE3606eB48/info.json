@@ -1,36 +1,48 @@
 {
-    "name": "USD Coin",
-    "website": "https://centre.io/usdc",
-    "description": "USDC is a fully collateralized US dollar stablecoin, an Ethereum powered coin and is the brainchild of CENTRE, an open source project bootstrapped by contributions from Circle and Coinbase.",
-    "explorer": "https://etherscan.io/token/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+    "name": "USD Coin (USDC)",
     "type": "ERC20",
     "symbol": "USDC",
     "decimals": 6,
+    "website": "https://www.circle.com/en/usdc",
+    "description": "Decentralized global software",
+    "explorer": "https://etherscan.io/token/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
     "status": "active",
     "id": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
-    "tags": [
-        "stablecoin"
-    ],
     "links": [
         {
-            "name": "github",
-            "url": "https://github.com/centrehq"
-        },
-        {
-            "name": "medium",
-            "url": "https://medium.com/centre-blog"
-        },
-        {
-            "name": "whitepaper",
-            "url": "https://centre.io/pdfs/centre-whitepaper.pdf"
+            "name": "coingecko",
+            "url": "https://coingecko.com/"
         },
         {
             "name": "coinmarketcap",
-            "url": "https://coinmarketcap.com/currencies/usd-coin/"
+            "url": "https://coinmarketcap.com/"
         },
         {
-            "name": "coingecko",
-            "url": "https://coingecko.com/en/coins/usd-coin/"
+            "name": "discord",
+            "url": "https://discord.com/"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://f.hubspotusercontent30.net/hubfs/9304636/PDF/centre-whitepaper.pdf"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/"
+        },
+        {
+            "name": "blog",
+            "url": "https://www.centre.io/blog"
+        },
+        {
+            "name": "docs",
+            "url": "https://usdc@centre.io"
         }
+    ],
+    "tags": [
+        "Stablecoin"
     ]
 }
