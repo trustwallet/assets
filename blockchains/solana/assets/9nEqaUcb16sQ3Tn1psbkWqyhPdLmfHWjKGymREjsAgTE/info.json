@@ -1,11 +1,11 @@
 {
     "name": "WOOFENOMICS",
-    "website": "https://woofsolana.com/",
-    "description": "WOOF tested the idea of the effect of burning tokens by creating a massive total supply of 1 Trillion tokens.",
-    "explorer": "https://explorer.solana.com/address/9nEqaUcb16sQ3Tn1psbkWqyhPdLmfHWjKGymREjsAgTE",
-    "type": "SPL",
     "symbol": "WOOF",
+    "type": "SPL",
     "decimals": 6,
+    "description": "WOOF tested the idea of the effect of burning tokens by creating a massive total supply of 1 Trillion tokens.",
+    "website": "https://woofsolana.com/",
+    "explorer": "https://solscan.io/token/9nEqaUcb16sQ3Tn1psbkWqyhPdLmfHWjKGymREjsAgTE",
     "status": "active",
     "id": "9nEqaUcb16sQ3Tn1psbkWqyhPdLmfHWjKGymREjsAgTE",
     "links": [
@@ -21,5 +21,8 @@
             "name": "coingecko",
             "url": "https://coingecko.com/en/coins/woof-token"
         }
+    ],
+    "tags": [
+        "deflationary"
     ]
 }

@@ -13,17 +13,14 @@ jobs:
           token: ${{ secrets.COMMIT_TOKEN }}
           ref: ${{ github.head_ref }} 
 
-      - name: Set up Go 1.17
+      - name: Set up Go
         uses: actions/setup-go@v2
         with:
-          go-version: 1.17
+          go-version: 1.18
         id: go
 
-      - name: Check out code
-        uses: actions/checkout@v2
-
       - name: Run update auto
-        run: go run ./cmd/main.go --config=./.github/assets.config.yaml --script=update-auto
+        run: make update-auto
 
       - name: Show update result (diff)
         if: success()
@@ -32,7 +29,7 @@ jobs:
           git diff
 
       - name: Run check
-        run: go run ./cmd/main.go --config=./.github/assets.config.yaml --script=sanity-check
+        run: make check
 
       - name: Commit changes
         if: success()

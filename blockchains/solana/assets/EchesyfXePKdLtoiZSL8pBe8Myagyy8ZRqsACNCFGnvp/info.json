@@ -1,16 +1,13 @@
 {
     "name": "Bonfida",
-    "website": "https://bonfida.org/#/",
-    "description": "Bonfida is the full product suite that bridges the gap between Serum, Solana and the user",
-    "explorer": "https://explorer.solana.com/address/EchesyfXePKdLtoiZSL8pBe8Myagyy8ZRqsACNCFGnvp",
-    "type": "SPL",
     "symbol": "FIDA",
+    "type": "SPL",
     "decimals": 6,
+    "description": "Bonfida is the full product suite that bridges the gap between Serum, Solana and the user",
+    "website": "https://bonfida.org/#/",
+    "explorer": "https://solscan.io/token/EchesyfXePKdLtoiZSL8pBe8Myagyy8ZRqsACNCFGnvp",
     "status": "active",
     "id": "EchesyfXePKdLtoiZSL8pBe8Myagyy8ZRqsACNCFGnvp",
-    "tags": [
-        "defi"
-    ],
     "links": [
         {
             "name": "twitter",
@@ -24,5 +21,8 @@
             "name": "coingecko",
             "url": "https://coingecko.com/en/coins/bonfida"
         }
+    ],
+    "tags": [
+        "defi"
     ]
 }
