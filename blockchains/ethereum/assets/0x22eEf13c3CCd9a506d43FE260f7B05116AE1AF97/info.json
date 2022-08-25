@@ -1,5 +1,5 @@
 {
-"name": "QTC COIN",
+    "name": "QTCCOIN",
     "website": "https://quicktransfercoin.com/",
     "description": "Quick Transfer Coin is been used to sale and purchase proepry with crypto.",
     "explorer": "https://bscscan.com/token/0x22eEf13c3CCd9a506d43FE260f7B05116AE1AF97",
@@ -8,5 +8,21 @@
     "decimals": 18,
     "status": "active",
     "id": "0x22eEf13c3CCd9a506d43FE260f7B05116AE1AF97",
-    "twitter": "https://twitter.com/QtcCoin01"
+    "tags": [
+        "Defi"
+    ],
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/QtcCoin01"
+        },
+        {
+            "name": "facebook",
+            "url": "https://www.facebook.com/QTCCOIN"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://www.coingecko.com/en/coins/quick-transfer-coin#markets"
+        }
+    ]
 }
