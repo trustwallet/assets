@@ -1,0 +1,24 @@
+{
+  "name": "Coinbase Wrapped Staked ETH",
+  "symbol": "cbETH",
+  "type": "ERC20",
+  "decimals": 18,
+  "description": "cbETH is a utility token that unlocks your staked ETH at Coinbase",
+  "website": "https://help.coinbase.com/en/coinbase/trading-and-funding/staking-rewards/cbeth/using-cbeth",
+  "explorer": "https://etherscan.io/token/0xBe9895146f7AF43049ca1c1AE358B0541Ea49704",
+  "status": "active",
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/CoinbaseAssets"
+    },
+    {
+      "name": "whitepaper",
+      "url": "https://www.coinbase.com/cbeth/whitepaper"
+    }
+  ],
+  "tags": [
+    "wrapped"
+  ],
+  "id": "0xBe9895146f7AF43049ca1c1AE358B0541Ea49704"
+}
