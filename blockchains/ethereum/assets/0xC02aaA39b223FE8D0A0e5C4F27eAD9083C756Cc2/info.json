@@ -1,11 +1,36 @@
 {
-    "name": "WETH",
-    "symbol": "WETH",
+    "name": "WETH (WETH)",
     "type": "ERC20",
+    "symbol": "WETH",
     "decimals": 18,
-    "description": "-",
     "website": "https://weth.io/",
+    "description": "Fungible Token",
     "explorer": "https://etherscan.io/token/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
     "status": "active",
-    "id": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+    "id": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/radartech/tagged/radar-relay"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
 }
