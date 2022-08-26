@@ -1,14 +1,16 @@
 {
     "name": "Ouzel",
     "website": "https://wideshore.it/",
-    "short_description": "OZL is the token that WideShore use as payment method",
     "description": "Ouzel (OZL) strives to solve inflation, to buy some resources at a low price than other currency, to make an ecosystem exist for the envelopment of new technologies",
     "explorer": "https://polygonscan.com/token/0xF7c3A238E8C86457657EFE08C9c1A657e3B709e9",
-    "research": "https://docs.matic.network/",
-    "type": "ERC20",
+    "type": "POLYGON",
     "symbol": "OZL",
     "decimals": 18,
     "status": "active",
+    "id": "0xF7c3A238E8C86457657EFE08C9c1A657e3B709e9",
+    "tags": [
+        "wideshore"
+    ],
     "links": [
         {
             "name": "github",
