@@ -41,7 +41,7 @@
         "description": "TRON-Family is a Super Representative Partner who stands for community work and development.",
         "website": "https://tron-family.de",
         "payout": {
-            "commission": 100
+            "commission": 20
         }
     },
     {
@@ -85,6 +85,15 @@
         "name": "Poloniex",
         "description": "Poloniex Futures provides both REST APIs and Websocket Feeds for interacting with our futures exchange.",
         "website": "https://poloniex.com/",
+        "payout": {
+            "commission": 0
+        }
+    },
+    {
+        "id": "TMAqheVWMaNm15UJTNgasEVpJ7YHYiZVZ8",
+        "name": "Allnodes.com ⚡️ 0% fee",
+        "description": "Reliable non-custodial Validator run by the industry leader - Allnodes.",
+        "website": "https://wwww.allnodes.com/trx/staking",
         "payout": {
             "commission": 0
         }
