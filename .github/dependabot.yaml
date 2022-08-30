@@ -1,0 +1,29 @@
+
+
+version: 2
+updates:
+  # Maintain dependencies for GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    commit-message:
+      prefix: "chore: workflow"
+    labels:
+      - "workflow"
+      - "dependencies"
+    reviewers:
+      - "block-wallet/devopsreviewers"
+
+  - package-ecosystem: gomod
+    directory: /
+    schedule:
+      interval: daily
+    commit-message:
+      prefix: "chore: assets"
+      include: "scope"
+    labels:
+      - "assets"
+      - "dependencies"
+    reviewers:
+      - "block-wallet/backgroundreviewers"
