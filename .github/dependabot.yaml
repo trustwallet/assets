@@ -23,6 +23,7 @@ updates:
       prefix: "chore: assets"
       include: "scope"
     labels:
+      - "assets"
       - "dependencies"
     reviewers:
       - "block-wallet/backgroundreviewers"
