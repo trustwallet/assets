@@ -9,7 +9,7 @@ jobs:
     if: ${{ false }} # disable for now
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           token: ${{ secrets.COMMIT_TOKEN }}
           ref: ${{ github.head_ref }}
