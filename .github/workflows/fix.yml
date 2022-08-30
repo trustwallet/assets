@@ -47,7 +47,7 @@ jobs:
 
       - name: Commit changes
         if: success()
-        uses: stefanzweifel/git-auto-commit-action@v4.1.2
+        uses: stefanzweifel/git-auto-commit-action@v4.14.1
         with:
           commit_user_name: release_process
           commit_user_email: release_process@blockwallet.io
