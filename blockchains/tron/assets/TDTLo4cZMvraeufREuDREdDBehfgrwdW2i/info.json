@@ -1,11 +1,29 @@
 {
     "name": "Persian Token",
-    "website": "http://Persiantoken.org",
-    "description": "The first and most reliable Iranian digital currency. The giver of the Iranian metaverse.",
-    "explorer": "https://tronscan.org/#/token20/TDTLo4cZMvraeufREuDREdDBehfgrwdW2i",
     "type": "TRC20",
     "symbol": "PSN",
     "decimals": 18,
+    "website": "http://persiantoken.org",
+    "description": "The first and most reliable Iranian digital currency. The giver of the Iranian metaverse.",
+    "explorer": "https://tronscan.io/#/token20/TDTLo4cZMvraeufREuDREdDBehfgrwdW2i",
     "status": "active",
-    "id": "TDTLo4cZMvraeufREuDREdDBehfgrwdW2i"
+    "id": "TDTLo4cZMvraeufREuDREdDBehfgrwdW2i",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/PersianToken"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/psn_token"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/psn_token"
+        },
+        {
+            "name": "instagram",
+            "url": "https://instagram.com/psn_token"
+        }
+    ]
 }
