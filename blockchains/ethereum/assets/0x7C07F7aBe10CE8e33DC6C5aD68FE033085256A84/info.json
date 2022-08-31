@@ -1,0 +1,25 @@
+{
+    "name": "Interest Compounding ETH Index (ICETH)",
+    "type": "ERC20",
+    "symbol": "ICETH",
+    "decimals": 18,
+    "website": "https://indexcoop.com/interest-compounding-eth-index",
+    "description": "The Interest Compounding ETH Index from the Index Coop enhances staking returns with a leveraged liquid staking strategy. icETH multiplies the staking rate for stETH while minimizing transaction costs and risk associated with maintaining collateralized debt in Aave.",
+    "explorer": "https://etherscan.io/token/0x7C07F7aBe10CE8e33DC6C5aD68FE033085256A84",
+    "status": "active",
+    "id": "0x7C07F7aBe10CE8e33DC6C5aD68FE033085256A84",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/indexcoop"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/interest-compounding-eth-index"
+        }
+    ],
+    "tags": [
+        "staking",
+        "defi"
+    ]
+}
