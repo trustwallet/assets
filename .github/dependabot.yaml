@@ -1,5 +1,3 @@
-
-
 version: 2
 updates:
   # Maintain dependencies for GitHub Actions
@@ -23,7 +21,7 @@ updates:
       prefix: "chore: assets"
       include: "scope"
     labels:
-      - "assets"
+      - "golang"
       - "dependencies"
     reviewers:
       - "block-wallet/backgroundreviewers"
