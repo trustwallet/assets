@@ -1,0 +1,24 @@
+{
+    "name": "Ethereum (ETH)",
+    "type": "ERC20",
+    "symbol": "ETH",
+    "decimals": 8,
+    "website": "https://ethereum.org/",
+    "description": "Ethereum is a technology that's home to digital money, global payments, and applications.",
+    "explorer": "https://etherscan.io/token/0x7D1Bf635a5A30DF492Cf954079c94783cfF276D5",
+    "status": "active",
+    "id": "0x7D1Bf635a5A30DF492Cf954079c94783cfF276D5",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/ethdotorg"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/ethereum/ethereum-org-website"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}
