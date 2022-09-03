@@ -13,13 +13,15 @@ import (
 	"github.com/trustwallet/assets-go-libs/image"
 	"github.com/trustwallet/assets-go-libs/path"
 	"github.com/trustwallet/assets-go-libs/validation/info"
-	"github.com/trustwallet/assets/internal/config"
+	"github.com/trustwallet/assets-go-libs/validation/tokenlist"
 	"github.com/trustwallet/go-libs/blockchain/binance"
 	"github.com/trustwallet/go-libs/blockchain/binance/explorer"
 	assetlib "github.com/trustwallet/go-primitives/asset"
 	"github.com/trustwallet/go-primitives/coin"
 	"github.com/trustwallet/go-primitives/numbers"
 	"github.com/trustwallet/go-primitives/types"
+
+	"github.com/trustwallet/assets/internal/config"
 )
 
 const (
@@ -28,8 +30,7 @@ const (
 	marketPairsLimit = 1000
 	tokensListLimit  = 10000
 
-	twLogoURL       = "https://trustwallet.com/assets/images/favicon.png"
-	timestampFormat = "2006-01-02T15:04:05.000000"
+	activeStatus = "active"
 )
 
 func (s *Service) UpdateBinanceTokens() error {
@@ -67,6 +68,8 @@ func (s *Service) UpdateBinanceTokens() error {
 		return err
 	}
 
+	sortTokens(tokens)
+
 	return createTokenListJSON(chain, tokens)
 }
 
@@ -77,7 +80,7 @@ func fetchMissingAssets(chain coin.Coin, assets []explorer.Bep2Asset) error {
 		}
 
 		assetLogoPath := path.GetAssetLogoPath(chain.Handle, a.Asset)
-		if fileLib.FileExists(assetLogoPath) {
+		if fileLib.Exists(assetLogoPath) {
 			continue
 		}
 
@@ -103,7 +106,7 @@ func createLogo(assetLogoPath string, a explorer.Bep2Asset) error {
 }
 
 func createInfoJSON(chain coin.Coin, a explorer.Bep2Asset) error {
-	explorerURL, err := coin.GetCoinExploreURL(chain, a.Asset)
+	explorerURL, err := coin.GetCoinExploreURL(chain, a.Asset, "")
 	if err != nil {
 		return err
 	}
@@ -111,7 +114,7 @@ func createInfoJSON(chain coin.Coin, a explorer.Bep2Asset) error {
 	assetType := string(types.BEP2)
 	website := ""
 	description := "-"
-	status := "active"
+	status := activeStatus
 
 	assetInfo := info.AssetModel{
 		Name:        &a.Name,
@@ -127,19 +130,22 @@ func createInfoJSON(chain coin.Coin, a explorer.Bep2Asset) error {
 
 	assetInfoPath := path.GetAssetInfoPath(chain.Handle, a.Asset)
 
-	return fileLib.CreateJSONFile(assetInfoPath, &assetInfo)
+	data, err := fileLib.PrepareJSONData(&assetInfo)
+	if err != nil {
+		return err
+	}
+
+	return fileLib.CreateJSONFile(assetInfoPath, data)
 }
 
-func createTokenListJSON(chain coin.Coin, tokens []TokenItem) error {
-	tokenListPath := path.GetTokenListPath(chain.Handle)
+func createTokenListJSON(chain coin.Coin, tokens []tokenlist.Token) error {
+	tokenListPath := path.GetTokenListPath(chain.Handle, path.TokenlistDefault)
 
-	var oldTokenList TokenList
+	var oldTokenList tokenlist.Model
 	err := fileLib.ReadJSONFile(tokenListPath, &oldTokenList)
 	if err != nil {
 		return nil
 	}
-
-	sortTokens(tokens)
 
 	if reflect.DeepEqual(oldTokenList.Tokens, tokens) {
 		return nil
@@ -149,19 +155,24 @@ func createTokenListJSON(chain coin.Coin, tokens []TokenItem) error {
 		return nil
 	}
 
+	data, err := fileLib.PrepareJSONData(&tokenlist.Model{
+		Name:      fmt.Sprintf("Trust Wallet: %s", coin.Coins[chain.ID].Name),
+		LogoURI:   config.Default.URLs.Logo,
+		Timestamp: time.Now().Format(config.Default.TimeFormat),
+		Tokens:    tokens,
+		Version:   tokenlist.Version{Major: oldTokenList.Version.Major + 1},
+	})
+	if err != nil {
+		return err
+	}
+
 	log.Debugf("Tokenlist: list with %d tokens and %d pairs written to %s.",
 		len(tokens), countTotalPairs(tokens), tokenListPath)
 
-	return fileLib.CreateJSONFile(tokenListPath, &TokenList{
-		Name:      fmt.Sprintf("Trust Wallet: %s", coin.Coins[chain.ID].Name),
-		LogoURI:   twLogoURL,
-		Timestamp: time.Now().Format(timestampFormat),
-		Tokens:    tokens,
-		Version:   Version{Major: oldTokenList.Version.Major + 1},
-	})
+	return fileLib.CreateJSONFile(tokenListPath, data)
 }
 
-func countTotalPairs(tokens []TokenItem) int {
+func countTotalPairs(tokens []tokenlist.Token) int {
 	var counter int
 	for _, token := range tokens {
 		counter += len(token.Pairs)
@@ -170,7 +181,7 @@ func countTotalPairs(tokens []TokenItem) int {
 	return counter
 }
 
-func sortTokens(tokens []TokenItem) {
+func sortTokens(tokens []tokenlist.Token) {
 	sort.Slice(tokens, func(i, j int) bool {
 		if len(tokens[i].Pairs) != len(tokens[j].Pairs) {
 			return len(tokens[i].Pairs) > len(tokens[j].Pairs)
@@ -186,7 +197,7 @@ func sortTokens(tokens []TokenItem) {
 	}
 }
 
-func generateTokenList(marketPairs []binance.MarketPair, tokenList binance.Tokens) ([]TokenItem, error) {
+func generateTokenList(marketPairs []binance.MarketPair, tokenList binance.Tokens) ([]tokenlist.Token, error) {
 	if len(marketPairs) < 5 {
 		return nil, fmt.Errorf("no markets info is returned from Binance DEX: %d", len(marketPairs))
 	}
@@ -195,7 +206,7 @@ func generateTokenList(marketPairs []binance.MarketPair, tokenList binance.Token
 		return nil, fmt.Errorf("no tokens info is returned from Binance DEX: %d", len(tokenList))
 	}
 
-	pairsMap := make(map[string][]Pair)
+	pairsMap := make(map[string][]tokenlist.Pair)
 	pairsList := make(map[string]struct{})
 	tokensMap := make(map[string]binance.Token)
 
@@ -204,47 +215,66 @@ func generateTokenList(marketPairs []binance.MarketPair, tokenList binance.Token
 	}
 
 	for _, marketPair := range marketPairs {
-		key := marketPair.QuoteAssetSymbol
+		if !isTokenExistOrActive(marketPair.BaseAssetSymbol) || !isTokenExistOrActive(marketPair.QuoteAssetSymbol) {
+			continue
+		}
 
-		if val, exists := pairsMap[key]; exists {
+		tokenSymbol := marketPair.QuoteAssetSymbol
+
+		if val, exists := pairsMap[tokenSymbol]; exists {
 			val = append(val, getPair(marketPair))
-			pairsMap[key] = val
+			pairsMap[tokenSymbol] = val
 		} else {
-			pairsMap[key] = []Pair{getPair(marketPair)}
+			pairsMap[tokenSymbol] = []tokenlist.Pair{getPair(marketPair)}
 		}
 
 		pairsList[marketPair.BaseAssetSymbol] = struct{}{}
 		pairsList[marketPair.QuoteAssetSymbol] = struct{}{}
 	}
 
-	tokenItems := make([]TokenItem, 0, len(pairsList))
+	tokenItems := make([]tokenlist.Token, 0, len(pairsList))
 
 	for pair := range pairsList {
 		token := tokensMap[pair]
 
-		var pairs []Pair
-		pairs, exists := pairsMap[token.Symbol]
-		if !exists {
-			pairs = make([]Pair, 0)
-		}
-
-		tokenItems = append(tokenItems, TokenItem{
+		tokenItems = append(tokenItems, tokenlist.Token{
 			Asset:    getAssetIDSymbol(token.Symbol, coin.Coins[coin.BINANCE].Symbol, coin.BINANCE),
-			Type:     getTokenType(token.Symbol, coin.Coins[coin.BINANCE].Symbol, string(types.BEP2)),
+			Type:     getTokenType(token.Symbol, coin.Coins[coin.BINANCE].Symbol, types.BEP2),
 			Address:  token.Symbol,
-			Name:     token.Name,
+			Name:     getTokenName(token),
 			Symbol:   token.OriginalSymbol,
 			Decimals: coin.Coins[coin.BINANCE].Decimals,
 			LogoURI:  getLogoURI(token.Symbol, coin.Coins[coin.BINANCE].Handle, coin.Coins[coin.BINANCE].Symbol),
-			Pairs:    pairs,
+			Pairs:    pairsMap[token.Symbol],
 		})
 	}
 
 	return tokenItems, nil
 }
 
-func getPair(marketPair binance.MarketPair) Pair {
-	return Pair{
+func isTokenExistOrActive(symbol string) bool {
+	if symbol == coin.Coins[coin.BINANCE].Symbol {
+		return true
+	}
+
+	assetPath := path.GetAssetInfoPath(coin.Coins[coin.BINANCE].Handle, symbol)
+
+	var infoAsset info.AssetModel
+	if err := fileLib.ReadJSONFile(assetPath, &infoAsset); err != nil {
+		log.Debug(err)
+		return false
+	}
+
+	if infoAsset.GetStatus() != activeStatus {
+		log.Debugf("asset status [%s] is not active", symbol)
+		return false
+	}
+
+	return true
+}
+
+func getPair(marketPair binance.MarketPair) tokenlist.Pair {
+	return tokenlist.Pair{
 		Base:     getAssetIDSymbol(marketPair.BaseAssetSymbol, coin.Coins[coin.BINANCE].Symbol, coin.BINANCE),
 		LotSize:  strconv.FormatInt(numbers.ToSatoshi(marketPair.LotSize), 10),
 		TickSize: strconv.FormatInt(numbers.ToSatoshi(marketPair.TickSize), 10),
@@ -259,9 +289,9 @@ func getAssetIDSymbol(tokenID string, nativeCoinID string, coinType uint) string
 	return assetlib.BuildID(coinType, tokenID)
 }
 
-func getTokenType(symbol string, nativeCoinSymbol string, tokenType string) string {
+func getTokenType(symbol string, nativeCoinSymbol string, tokenType types.TokenType) types.TokenType {
 	if symbol == nativeCoinSymbol {
-		return "coin"
+		return types.Coin
 	}
 
 	return tokenType
@@ -269,8 +299,16 @@ func getTokenType(symbol string, nativeCoinSymbol string, tokenType string) stri
 
 func getLogoURI(id, githubChainFolder, nativeCoinSymbol string) string {
 	if id == nativeCoinSymbol {
-		return path.GetChainLogoURL(config.Default.URLs.TWAssetsApp, githubChainFolder)
+		return path.GetChainLogoURL(config.Default.URLs.AssetsApp, githubChainFolder)
 	}
 
-	return path.GetAssetLogoURL(config.Default.URLs.TWAssetsApp, githubChainFolder, id)
+	return path.GetAssetLogoURL(config.Default.URLs.AssetsApp, githubChainFolder, id)
+}
+
+func getTokenName(t binance.Token) string {
+	if t.Symbol == coin.Binance().Symbol && t.Name == "Binance Chain Native Token" {
+		return "BNB Beacon Chain"
+	}
+
+	return t.Name
 }
