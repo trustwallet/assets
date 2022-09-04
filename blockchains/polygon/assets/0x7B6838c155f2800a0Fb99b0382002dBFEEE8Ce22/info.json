@@ -1,33 +1,56 @@
 {
-"name": "Hybrid Token",
-    "website": "https://www.hbdtoken.com",
-    "description": "Hybrid token (HBD) is the next generation metaverse token and buid on Polygon",
-    "explorer": "https://polygonscan.com/token/0x7B6838c155f2800a0Fb99b0382002dBFEEE8Ce22",
-    "type": "ERC20",
+    "name": "Hybrid Token",
+    "type": "POLYGON",
     "symbol": "HBD",
     "decimals": 8,
+    "website": "https://www.hbdtoken.com",
+    "description": "Hybrid token follow the Decentralized ecosystem. The first token we launched was an ERC20 token backed by Matic (MATIC) and will be appropriately named, 'Hybrid Token' (HBD). Unlike decentralized solution HBD will be fully accounted for and proof of reserves posted on the MATIC chain.",
+    "explorer": "https://polygonscan.com/token/0x7B6838c155f2800a0Fb99b0382002dBFEEE8Ce22",
     "status": "active",
-    "id": "0x7B6838c155f2800a0Fb99b0382002dBFEEE8Ce22"
+    "id": "0x7B6838c155f2800a0Fb99b0382002dBFEEE8Ce22",
     "links": [
-        {
-            "name": "github",
-            "url": "https://github.com/hbdtoken"
-        },
         {
             "name": "twitter",
             "url": "https://twitter.com/hbdtoken"
         },
         {
-            "name": "blog",
-            "url": "https://medium.com/hbdtoken"
+            "name": "github",
+            "url": "https://github.com/hbdtoken"
         },
         {
             "name": "telegram",
             "url": "https://t.me/hbdtoken"
         },
         {
+            "name": "telegram_news",
+            "url": "https://t.me/hbdtokenoffl"
+        },
+        {
+            "name": "blog",
+            "url": "https://www.hbdtoken.com/blog"
+        },
+        {
+            "name": "docs",
+            "url": "https://www.hbdtoken.com/business_profile.pdf"
+        },
+        {
+            "name": "facebook",
+            "url": "https://facebook.com/hbdtoken"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://www.hbdtoken.com/white_paper.pdf"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/hbdtoken/"
+        },
+        {
             "name": "coingecko",
-            "url": "https://coingecko.com/en/coins/hbdtoken/"
+            "url": "https://www.coingecko.com/en/coins/hbdtoken/"
         }
+    ],
+    "tags": [
+        "staking"
     ]
 }
