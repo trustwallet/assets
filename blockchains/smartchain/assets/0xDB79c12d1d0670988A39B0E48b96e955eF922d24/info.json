@@ -3,7 +3,7 @@
     "type": "BEP20",
     "symbol": "Teddy V2",
     "decimals": 18,
-    "website": "A one-stop full-featured decentralized exchange.",
+    "website": "https://teddydoge.finance",
     "description": "A one-stop full-featured decentralized exchange.",
     "explorer": "https://bscscan.com/token/0xDB79c12d1d0670988A39B0E48b96e955eF922d24",
     "status": "active",
@@ -20,6 +20,10 @@
         {
             "name": "telegram",
             "url": "https://t.me/TeddyDoge_Official"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/teddydoge/"
         },
         {
             "name": "whitepaper",
