@@ -42,9 +42,6 @@ fix:
 update-auto:
 	go run cmd/main.go update-auto
 
-update-manual:
-	go run cmd/main.go update-manual
-
 
 # Helper commands.
 add-token:
