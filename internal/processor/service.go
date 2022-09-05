@@ -115,5 +115,7 @@ func (s *Service) GetFixers(f *file.AssetFile) []Fixer {
 }
 
 func (s *Service) GetUpdatersAuto() []Updater {
-	return []Updater{}
+	return []Updater{
+		{Name: "Retrieving missing token images, creating binance token list.", Run: s.UpdateBinanceTokens},
+	}
 }
