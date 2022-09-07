@@ -1,0 +1,40 @@
+{
+    "name": "USD+",
+    "type": "POLYGON",
+    "symbol": "USD+",
+    "decimals": 6,
+    "website": "https://overnight.fi",
+    "description": "USD+ is a 1:1 BUSD-pegged yield-bearing stablecoin! USD+ is fully collateralized with the most reliable stablecoins like BUSD, USDC, USDT. The APY comes from the collateral being deployed across a range of low-risk (e.g. stable-to-stable LP) yield-generating strategies. Every day USD+ grows in your wallet or LP, increasing the capital efficiency of your assets.",
+    "explorer": "https://polygonscan.com/token/0x236eeC6359fb44CCe8f97E99387aa7F8cd5cdE1f",
+    "status": "active",
+    "id": "0x236eeC6359fb44CCe8f97E99387aa7F8cd5cdE1f",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/overnight_fi"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/ovnstable"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/overnight_fi"
+        },
+        {
+            "name": "docs",
+            "url": "https://docs.overnight.fi/"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/usd"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/usdplus"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}
