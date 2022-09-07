@@ -1,11 +1,40 @@
 {
-    "name": "HOGE",
+    "name": "Hoge Finance",
+    "website": "https://hogefinance.com",
+    "description": "We Meme Business.",
+    "explorer": "https://etherscan.io/token/0xfAd45E47083e4607302aa43c65fB3106F1cd7607",
     "type": "ERC20",
     "symbol": "HOGE",
     "decimals": 9,
     "status": "active",
     "id": "0xfAd45E47083e4607302aa43c65fB3106F1cd7607",
-    "website": "https://hoge.finance",
-    "description": "HOGE is a meme token with the power of DeFi (decentralized finance). HOGE combines meme and frictionless yield farming. It's Doge but DeFi",
-    "explorer": "https://etherscan.io/token/0xfad45e47083e4607302aa43c65fb3106f1cd7607"
+    "tags": [
+        "deflationary"
+    ],
+    "links": [
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/hoge"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/hoge"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/hogefinance"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/hogefinance"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/hoge-finance"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/hoge-finance"
+        }
+    ]
 }
