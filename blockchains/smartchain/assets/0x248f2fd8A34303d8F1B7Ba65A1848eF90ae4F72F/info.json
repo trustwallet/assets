@@ -1,144 +1,24 @@
-[{
-  "version": "1.0",
-  "image": {
-    "name": "/home/videosdownloader/public_html/image/public/uploadt/bee.png",
-    "baseName": "bee.png",
-    "format": "PNG",
-    "formatDescription": "PNG",
-    "mimeType": "image/png",
-    "class": "DirectClass",
-    "geometry": {
-      "width": 256,
-      "height": 256,
-      "x": 0,
-      "y": 0
-    },
-    "units": "Undefined",
-    "type": "TrueColorAlpha",
-    "baseType": "Undefined",
-    "endianness": "Undefined",
-    "colorspace": "sRGB",
-    "depth": 8,
-    "baseDepth": 8,
-    "channelDepth": {
-      "alpha": 1,
-      "red": 8,
-      "green": 8,
-      "blue": 1
-    },
-    "pixels": 262144,
-    "imageStatistics": {
-      "Overall": {
-        "min": 0,
-        "max": 255,
-        "mean": 133.646,
-        "median": 0,
-        "standardDeviation": 23304.3,
-        "kurtosis": -1.56575,
-        "skewness": -0.195968,
-        "entropy": 0.825985
-      }
-    },
-    "channelStatistics": {
-      "alpha": {
-        "min": 0,
-        "max": 255,
-        "mean": 201.145,
-        "median": 0,
-        "standardDeviation": 26748.8,
-        "kurtosis": 0.00256986,
-        "skewness": -1.41512,
-        "entropy": 0.743764
-      },
-      "red": {
-        "min": 0,
-        "max": 255,
-        "mean": 124.744,
-        "median": 0,
-        "standardDeviation": 23246.4,
-        "kurtosis": -1.53199,
-        "skewness": -0.279762,
-        "entropy": 0.850151
-      },
-      "green": {
-        "min": 0,
-        "max": 255,
-        "mean": 116.095,
-        "median": 0,
-        "standardDeviation": 22235.6,
-        "kurtosis": -1.55182,
-        "skewness": -0.201601,
-        "entropy": 0.849157
-      },
-      "blue": {
-        "min": 0,
-        "max": 255,
-        "mean": 92.5986,
-        "median": 0,
-        "standardDeviation": 20986.2,
-        "kurtosis": -1.37681,
-        "skewness": 0.299578,
-        "entropy": 0.860867
-      }
-    },
-    "alpha": "#00000000",
-    "renderingIntent": "Perceptual",
-    "gamma": 0.45455,
-    "chromaticity": {
-      "redPrimary": {
-        "x": 0.64,
-        "y": 0.33
-      },
-      "greenPrimary": {
-        "x": 0.3,
-        "y": 0.6
-      },
-      "bluePrimary": {
-        "x": 0.15,
-        "y": 0.06
-      },
-      "whitePrimary": {
-        "x": 0.3127,
-        "y": 0.329
-      }
-    },
-    "matteColor": "#BDBDBD",
-    "backgroundColor": "#FFFFFF",
-    "borderColor": "#DFDFDF",
-    "transparentColor": "#00000000",
-    "interlace": "None",
-    "intensity": "Undefined",
-    "compose": "Over",
-    "pageGeometry": {
-      "width": 256,
-      "height": 256,
-      "x": 0,
-      "y": 0
-    },
-    "dispose": "Undefined",
-    "iterations": 0,
-    "compression": "Zip",
-    "orientation": "Undefined",
-    "properties": {
-      "date:create": "2022-03-11T11:50:51+00:00",
-      "date:modify": "2022-03-11T11:50:51+00:00",
-      "png:cHRM": "chunk was found (see Chromaticity, above)",
-      "png:gAMA": "gamma=0.45455 (See Gamma, above)",
-      "png:IHDR.bit-depth-orig": "8",
-      "png:IHDR.bit_depth": "8",
-      "png:IHDR.color-type-orig": "6",
-      "png:IHDR.color_type": "6 (RGBA)",
-      "png:IHDR.interlace_method": "0 (Not interlaced)",
-      "png:IHDR.width,height": "256, 256",
-      "png:sRGB": "intent=0 (Perceptual Intent)",
-      "signature": "8f315b2271458bc94c533f70f6ad55d1f51b42e049f4581e9bf7b327a8667a4e"
-    },
-    "tainted": false,
-    "filesize": "132240B",
-    "numberPixels": "65536",
-    "pixelsPerSecond": "8400400B",
-    "userTime": "0.000u",
-    "elapsedTime": "0:01.007",
-    "version": "ImageMagick 7.0.10-58 Q16 x86_64 2021-01-14 https://imagemagick.org"
-  }
-}]
+{
+    "name": "BeeCoin",
+    "type": "BEP20",
+    "symbol": "BCO",
+    "decimals": 18,
+    "website": "https://beecoin.in",
+    "description": "The main purpose of the bee coin is to help the bees. If bees were extinct for three years, there would be no planet. Our future goals are to help all those involved with bees, as well as donations to organizations that protect the bee ecosystem. The bee coin has no handling and the processing is original and autonomous with low brand circulation. Like bees if we unite we can achieve the best for ourselves and our planet.",
+    "explorer": "https://bscscan.com/token/0x248f2fd8A34303d8F1B7Ba65A1848eF90ae4F72F",
+    "status": "active",
+    "id": "0x248f2fd8A34303d8F1B7Ba65A1848eF90ae4F72F",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/bee_coin"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/+KnGpMN6oqS84ZDI0"
+        }
+    ],
+    "tags": [
+        "memes"
+    ]
+}
