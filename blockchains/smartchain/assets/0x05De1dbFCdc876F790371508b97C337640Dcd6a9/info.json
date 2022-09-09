@@ -1,9 +1,56 @@
-"name": "GlowV2",
-"website": "https://glowtoken.online/",
-"description": "GlowV2 is a dividend reward and charity token operating on the BSC Network. This token offers 10% BUSD rewards, 2 lotteries based on 1% of the daily trade volume. One that runs daily and a $10K BUSD lottery. A charity donation is voted on by the community each month and the charity funds are collected from 1% of every buy/sell of GlowV2. We represent the illumination bringing clarity, security, and unity to our communities. We are GLOW Token LLC, GlowV2, we are unstoppable. ",
-"explorer": "https://bscscan.com/token/0x05de1dbfcdc876f790371508b97c337640dcd6a9",
-"type": "BEP20",
-"symbol": "GlowV2",
-"decimals": 9,
-"status": "active",
-"id": "0x05De1dbFCdc876F790371508b97C337640Dcd6a9"
+{
+    "name": "GlowV2",
+    "type": "BEP20",
+    "symbol": "GlowV2",
+    "decimals": 9,
+    "website": "https://glowtoken.net",
+    "description": "GLOWV2 represents the illumination of the darkness in the crypto DeFi space through security, clarity, passive income, education, and charity.",
+    "explorer": "https://bscscan.com/token/0x05De1dbFCdc876F790371508b97C337640Dcd6a9",
+    "status": "active",
+    "id": "0x05De1dbFCdc876F790371508b97C337640Dcd6a9",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/GlowTokenLLC"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/GlowTokenLLC"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/officialGlowV2"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/glowv2"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://drive.google.com/file/d/1xTOCq7dg4z10PRAmN1KaoIp0aPxyQhEO/view"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/GlowTokenLLC"
+        },
+        {
+            "name": "youtube",
+            "url": "https://youtube.com/channel/UCJaEd7QSboUsqjudACJrNFw"
+        },
+        {
+            "name": "facebook",
+            "url": "https://facebook.com/groups/326003435955719"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/glow-v2/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/glowv2"
+        }
+    ],
+    "tags": [
+        "defi"
+    ]
+}
