@@ -3,46 +3,46 @@
     "type": "BEP20",
     "symbol": "LNR",
     "decimals": 9,
-    "website": "https://www.lunardefi.com/",
-    "description": "Lunar (LNR) is a DeFi ecosystem that aims to solve the biggest problems preventing crypto from true mass adoption. This starts with their Lunar DEX, which initially aims to streamline the entire process of BSC token trading into a single platform with a frictionless user experience.\nAt the core of the Lunar Ecosystem is the Lunar Token (LNR), which distributes 3% of LNR transactions and a percentage of Lunar DEX transactions to holders in passive earnings. ",
-    "explorer": "https://bscscan.com/token/0x9D4451151A8dE5B545a1bC6c8fdEB9d94a2868e1",
+    "website": "https://lunar.io/",
+    "description": "Decentralization is great for democratizing finance, but along with it comes massive fragmentation of the user experience. Lunar believes it is time to re-centralize DeFi around the most important part of the network: The user. This begins with their DeFi application, Lunar, that aims to streamline the entire process of crypto and NFT trading into one intuitive interface\". Lunar replaces the 10+ seperate tools needed to trade and research crypto with a single platform that gives users near-instant access to the functionality they need. ",
+    "explorer": "https://bscscan.com/token/0x9d4451151a8de5b545a1bc6c8fdeb9d94a2868e1",
     "status": "active",
     "id": "0x9D4451151A8dE5B545a1bC6c8fdEB9d94a2868e1",
-    "tags": [
-        "deflationary"
-    ],
     "links": [
         {
             "name": "twitter",
             "url": "https://twitter.com/lnrdefi"
         },
         {
-            "name": "github",
-            "url": "https://github.com/LunarLegionBsc?tab=stars"
-        },
-        {
             "name": "telegram",
-            "url": "https://t.me/lnrDefi"
+            "url": "https://t.me/lnrdefi"
         },
         {
-            "name": "coingecko",
-            "url": "https://coingecko.com/en/coins/lunar"
+            "name": "reddit",
+            "url": "https://reddit.com/lnrdefi"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://assets.website-files.com/6170a5fc21aede0d60d88b70/61f3531f8911db1a407c9fc5_LunarWhitepaperV1.2.pdf"
+        },
+        {
+            "name": "facebook",
+            "url": "https://facebook.com/lnrdefi"
         },
         {
             "name": "coinmarketcap",
             "url": "https://coinmarketcap.com/currencies/lunar/"
         },
         {
-            "name": "reddit",
-            "url": "https://reddit.com/r/lnrDefi/"
-        },
-        {
-            "name": "source_code",
-            "url": "https://bscscan.com/address/0x9d4451151a8de5b545a1bc6c8fdeb9d94a2868e1#code"
+            "name": "coingecko",
+            "url": "https://coingecko.com/"
         },
         {
             "name": "discord",
-            "url": "https://discord.com/lnr"
+            "url": "https://discord.com/"
         }
+    ],
+    "tags": [
+        "defi"
     ]
 }

@@ -6,12 +6,11 @@ import (
 	"path/filepath"
 	"strings"
 
-	fileLib "github.com/trustwallet/assets-go-libs/file"
+	"github.com/trustwallet/assets-go-libs/file"
 	"github.com/trustwallet/assets-go-libs/image"
 	"github.com/trustwallet/assets-go-libs/path"
 	"github.com/trustwallet/assets-go-libs/validation"
 	"github.com/trustwallet/assets-go-libs/validation/info"
-	"github.com/trustwallet/assets/internal/file"
 	"github.com/trustwallet/go-primitives/address"
 	"github.com/trustwallet/go-primitives/coin"
 	"github.com/trustwallet/go-primitives/types"
@@ -20,7 +19,7 @@ import (
 )
 
 func (s *Service) FixJSON(f *file.AssetFile) error {
-	return fileLib.FormatJSONFile(f.Path())
+	return file.FormatJSONFile(f.Path())
 }
 
 func (s *Service) FixETHAddressChecksum(f *file.AssetFile) error {
@@ -76,7 +75,7 @@ func (s *Service) FixLogo(f *file.AssetFile) error {
 	}
 
 	err = validation.ValidateLogoFileSize(f.Path())
-	if err != nil { // nolint:staticcheck
+	if err != nil { //nolint:staticcheck
 		// TODO: Compress images.
 	}
 
@@ -101,9 +100,9 @@ func calculateTargetDimension(width, height int) (targetW, targetH int) {
 }
 
 func (s *Service) FixChainInfoJSON(f *file.AssetFile) error {
-	chainInfo := info.CoinModel{}
+	var chainInfo info.CoinModel
 
-	err := fileLib.ReadJSONFile(f.Path(), &chainInfo)
+	err := file.ReadJSONFile(f.Path(), &chainInfo)
 	if err != nil {
 		return err
 	}
@@ -112,16 +111,21 @@ func (s *Service) FixChainInfoJSON(f *file.AssetFile) error {
 	if chainInfo.Type == nil || *chainInfo.Type != expectedType {
 		chainInfo.Type = &expectedType
 
-		return fileLib.CreateJSONFile(f.Path(), &chainInfo)
+		data, err := file.PrepareJSONData(&chainInfo)
+		if err != nil {
+			return err
+		}
+
+		return file.CreateJSONFile(f.Path(), data)
 	}
 
 	return nil
 }
 
-func (s *Service) FixAssetInfoJSON(file *file.AssetFile) error {
-	assetInfo := info.AssetModel{}
+func (s *Service) FixAssetInfo(f *file.AssetFile) error {
+	var assetInfo info.AssetModel
 
-	err := fileLib.ReadJSONFile(file.Path(), &assetInfo)
+	err := file.ReadJSONFile(f.Path(), &assetInfo)
 	if err != nil {
 		return err
 	}
@@ -137,24 +141,24 @@ func (s *Service) FixAssetInfoJSON(file *file.AssetFile) error {
 	// We need to skip error check to fix asset type if it's incorrect or empty.
 	chain, _ := types.GetChainFromAssetType(assetType)
 
-	expectedTokenType, ok := types.GetTokenType(file.Chain().ID, file.Asset())
+	expectedTokenType, ok := types.GetTokenType(f.Chain().ID, f.Asset())
 	if !ok {
 		expectedTokenType = strings.ToUpper(assetType)
 	}
 
-	if chain.ID != file.Chain().ID || !strings.EqualFold(assetType, expectedTokenType) {
+	if chain.ID != f.Chain().ID || !strings.EqualFold(assetType, expectedTokenType) {
 		assetInfo.Type = &expectedTokenType
 		isModified = true
 	}
 
 	// Fix asset id.
-	assetID := file.Asset()
+	assetID := f.Asset()
 	if assetInfo.ID == nil || *assetInfo.ID != assetID {
 		assetInfo.ID = &assetID
 		isModified = true
 	}
 
-	expectedExplorerURL, err := coin.GetCoinExploreURL(file.Chain(), file.Asset())
+	expectedExplorerURL, err := coin.GetCoinExploreURL(f.Chain(), f.Asset(), assetType)
 	if err != nil {
 		return err
 	}
@@ -166,7 +170,12 @@ func (s *Service) FixAssetInfoJSON(file *file.AssetFile) error {
 	}
 
 	if isModified {
-		return fileLib.CreateJSONFile(file.Path(), &assetInfo)
+		data, err := file.PrepareJSONData(&assetInfo)
+		if err != nil {
+			return err
+		}
+
+		return file.CreateJSONFile(f.Path(), data)
 	}
 
 	return nil
