@@ -1,35 +1,44 @@
 {
-  "name": "Ancient Raid",
-  "website": "https://www.ancientraid.com/#",
-  "description": "Ancient Raid is a virtual universe of fantasy heroes for Play-To-Earn (P2E) NFT gaming.",
-  "explorer": "https://bscscan.com/token/0xeb90a6273f616a8ed1cf58a05d3ae1c1129b4de6",
-  "symbol": "RAID",
-  "type": "token",
-  "decimals": "18",
-  "status": "active",
-  "tags": [
-    "p2e"
-  ],
-  "links": [
-    {
-      "name": "discord",
-      "url": "https://discord.gg/2TM3ESWhCt"
-    },
-    {
-      "name": "twitter",
-      "url": "https://twitter.com/ancientraidnft"
-    },
-    {
-      "name": "telegram",
-      "url": "https://t.me/AncientRaid"
-    },
-    {
-      "name": "facebook",
-      "url": "https://www.facebook.com/ancientraid"
-    },
-    {
-      "name": "whitepaper",
-      "url": "https://whitepaper.ancientraid.com/ancient-raid/"
-    }
-  ]
+    "name": "Ancient Raid",
+    "type": "BEP20",
+    "symbol": "RAID",
+    "decimals": 18,
+    "website": "https://www.ancientraid.com/#",
+    "description": "Ancient Raid is a virtual universe of fantasy heroes for Play-To-Earn (P2E) NFT gaming. ",
+    "explorer": "https://bscscan.com/token/0xeb90a6273f616a8ed1cf58a05d3ae1c1129b4de6",
+    "status": "active",
+    "id": "0xeb90A6273F616A8ED1cf58A05d3ae1C1129b4DE6",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/ancientraidnft"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/AncientRaid"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/2TM3ESWhCt"
+        },
+        {
+            "name": "facebook",
+            "url": "https://facebook.com/ancientraid"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://whitepaper.ancientraid.com/ancient-raid/"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/ancient-raid/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/ancient-raid"
+        }
+    ],
+    "tags": [
+        "gamefi"
+    ]
 }
