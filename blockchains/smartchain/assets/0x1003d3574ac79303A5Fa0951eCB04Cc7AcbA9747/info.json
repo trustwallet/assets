@@ -1,0 +1,40 @@
+{
+    "name": "pTokens RVN",
+    "type": "BEP20",
+    "symbol": "pRVN",
+    "decimals": 18,
+    "website": "https://www.ptokens.io/",
+    "description": "pTokens RVN is a 1:1 pegged Ravencoin representation on BSC. pRVN is a tokenized cryptoasset in the pTokens ecosystem, a cross-chain solution designed to move any asset into any blockchain.",
+    "explorer": "https://bscscan.com/token/0x0c80075886d9e64CC33ca701A4Ad1C0D8F0bd651",
+    "status": "active",
+    "id": "0x0c80075886d9e64CC33ca701A4Ad1C0D8F0bd651",
+    "tags": [
+        "pNetworkDefi"
+    ],
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/provable-things"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/pNetworkDefi"
+        },
+        {
+            "name": "reddit",
+            "url": "https://www.reddit.com/r/pTokens/"
+        },
+        {
+            "name": "medium",
+            "url": "https://provablethings.medium.com/"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/pNetworkDefi"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://www.ptokens.io/ptokens-rev5b.pdf"
+        }
+    ]
+}
