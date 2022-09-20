@@ -1,7 +1,11 @@
 {
     "name": "ZBG Token",
     "website": "https://zbg.com",
-    "short_description": "ZBG Token is an exchange based token and native currency of the ZBG crypto exchange.",
-    "socials": [],
-    "explorer": "https://etherscan.io/token/0xfe39e6a32acd2af7955cb3d406ba2b55c901f247"
+    "description": "ZBG Token is an exchange based token and native currency of the ZBG crypto exchange.",
+    "explorer": "https://etherscan.io/token/0xFE39e6a32AcD2aF7955Cb3D406Ba2B55C901f247",
+    "type": "ERC20",
+    "symbol": "ZT",
+    "decimals": 18,
+    "status": "active",
+    "id": "0xFE39e6a32AcD2aF7955Cb3D406Ba2B55C901f247"
 }

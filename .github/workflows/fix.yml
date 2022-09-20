@@ -1,0 +1,54 @@
+name: Fixes
+# Runs on:
+# - on master branch of trustwallet repo: fix, checkin
+# - on other branch of trustwallet repo: fix, checkin
+# - on fork repos: fix-sanity only
+on:
+  push:
+    branches:
+      - 'master'
+      - '*'
+  workflow_dispatch:
+jobs:
+  fix-all:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout (trustwallet repo, secret token)
+        if: github.repository_owner == 'trustwallet'
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.COMMIT_TOKEN }}
+          ref: ${{ github.ref }}
+
+      - name: Checkout (fork repo, default token)
+        if: github.repository_owner != 'trustwallet'
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          ref: ${{ github.ref }}
+
+      - name: Set up Go
+        uses: actions/setup-go@v2
+        with:
+          go-version: 1.18
+        id: go
+
+      - name: Run fix
+        if: github.repository_owner == 'trustwallet'
+        run: make fix
+
+      - name: Show fix result (diff)
+        run: |
+          git status
+          git diff
+
+      - name: Run check
+        run: make check
+
+      - name: Commit changes
+        if: success()
+        uses: stefanzweifel/git-auto-commit-action@v4.1.2
+        with:
+          commit_user_name: trust-wallet-merge-bot
+          commit_user_email: mergebot@trustwallet.com
+          commit_message: Fixes (sanity and consistency, auto)

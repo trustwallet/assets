@@ -1,21 +1,28 @@
 {
     "name": "Nervos Network",
     "website": "http://nervos.org",
-    "source_code": "https://github.com/nervosnetwork",
-    "white_paper": "https://github.com/nervosnetwork/rfcs/blob/master/rfcs/0002-ckb/0002-ckb.md",
-    "short_description": "Nervos CKB (Common Knowledge Byte) is the native token of the Nervos Common Knowledge Base, a multi-asset, store of value, proof of work public blockchain.",
-    "description": "The Nervos Network describes itself as an open-source public blockchain ecosystem and collection of protocols. The Nervos CKB (Common Knowledge Base) is the layer 1, proof of work public blockchain protocol of the Nervos Network. It reportedly allows any crypto-asset to be stored with the security, immutability and permissionless nature of Bitcoin while enabling smart contracts and layer 2 scaling. It aims to capture the total network value through its \"store of value\" crypto-economic design and native token, the CKByte.",
-    "socials": [
+    "description": "Nervos CKB (Common Knowledge Byte) is the native token of the Nervos Common Knowledge Base, a multi-asset, store of value, proof of work public blockchain.",
+    "explorer": "https://explorer.nervos.org",
+    "symbol": "CKB",
+    "type": "coin",
+    "decimals": 8,
+    "status": "abandoned",
+    "links": [
         {
-            "name": "Twitter",
-            "url": "https://twitter.com/nervosnetwork",
-            "handle": "nervosnetwork"
+            "name": "github",
+            "url": "https://github.com/nervosnetwork"
         },
         {
-            "name": "Reddit",
-            "url": "https://reddit.com/r/NervosNetwork",
-            "handle": "NervosNetwork"
+            "name": "twitter",
+            "url": "https://twitter.com/nervosnetwork"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/NervosNetwork"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://github.com/nervosnetwork/rfcs/blob/master/rfcs/0002-ckb/0002-ckb.md"
         }
-    ],
-    "explorer": "https://explorer.nervos.org"
+    ]
 }

@@ -1,6 +1,33 @@
 {
     "name": "Basic Attention Token",
     "website": "https://basicattentiontoken.org",
-    "short_description": "Basic Attention Token (BAT) project is an open-source, decentralized ad exchange platform built, on the Ethereum platform.",
-    "explorer": "https://etherscan.io/token/0x0d8775f648430679a709e98d2b0cb6250d2887ef"
+    "description": "Basic Attention Token (BAT) project is an open-source, decentralized ad exchange platform built, on the Ethereum platform.",
+    "explorer": "https://etherscan.io/token/0x0D8775F648430679A709E98d2b0Cb6250d2887EF",
+    "research": "https://research.binance.com/en/projects/basic-attention-token",
+    "type": "ERC20",
+    "symbol": "BAT",
+    "decimals": 18,
+    "status": "active",
+    "id": "0x0D8775F648430679A709E98d2b0Cb6250d2887EF",
+    "tags": [
+        "defi"
+    ],
+    "links": [
+        {
+            "name": "blog",
+            "url": "https://medium.com/@attentiontoken"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/@attentiontoken"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/BATProject/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/basic-attention-token/"
+        }
+    ]
 }

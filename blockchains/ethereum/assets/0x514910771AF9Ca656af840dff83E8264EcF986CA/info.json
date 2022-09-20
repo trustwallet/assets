@@ -1,21 +1,32 @@
 {
     "name": "Chainlink",
     "website": "https://chain.link",
-    "source_code": "https://github.com/smartcontractkit/chainlink",
-    "white_paper": "https://link.smartcontract.com/whitepaper",
-    "short_description": "The LINK Network provides smart contracts with data, bank payments and access to APIs.",
-    "description": "Chainlink (LINK) is a decentralized oracle service, which aims to connect smart contracts with data from the real world. Since blockchains cannot access data outside their network, oracles are needed to function as data feeds in smart contracts. Oracles provide external data (e.g. temperature, weather) that trigger smart contract executions upon the fulfillment of pre-defined conditions. Participants on the Chainlink network are incentivized (through rewards) to provide smart contracts with access to external data feeds. Should users desire access to off-chain data, they can submit a requesting contract to ChainLink’s network. These contracts will match the requesting contract with the appropriate oracles. The contracts include a reputation contract, an order-matching contract, and an aggregating contract. The aggregating contract gathers data of the selected oracles to find the most accurate result.",
-    "socials": [
+    "description": "Chainlink is a decentralized oracle service, which aims to connect smart contracts with data from the real world. Oracles are needed to function as data feeds in smart contracts. Oracles provide external data (e.g. temperature, weather) that can drive smart contract executions. Participants on the network are incentivized (through rewards) to provide smart contracts with access to external data feeds.",
+    "explorer": "https://etherscan.io/token/0x514910771AF9Ca656af840dff83E8264EcF986CA",
+    "type": "ERC20",
+    "symbol": "LINK",
+    "decimals": 18,
+    "status": "active",
+    "id": "0x514910771AF9Ca656af840dff83E8264EcF986CA",
+    "tags": [
+        "defi"
+    ],
+    "links": [
         {
-            "name": "Twitter",
-            "url": "https://twitter.com/chainlink",
-            "handle": "chainlink"
+            "name": "github",
+            "url": "https://github.com/smartcontractkit/chainlink"
         },
         {
-            "name": "Reddit",
-            "url": "https://reddit.com/r/chainlink",
-            "handle": "chainlink"
+            "name": "twitter",
+            "url": "https://twitter.com/chainlink"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/chainlink"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://link.smartcontract.com/whitepaper"
         }
-    ],
-    "explorer": "https://etherscan.io/token/0x514910771af9ca656af840dff83e8264ecf986ca"
+    ]
 }
