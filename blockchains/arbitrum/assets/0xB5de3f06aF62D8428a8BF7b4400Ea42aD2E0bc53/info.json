@@ -1,11 +1,38 @@
 {
     "name": "Brinc Token",
-    "website": "https://brinc.fi/",
-    "description": "BRC is a decentralized currency with intrinsic value",
-    "explorer": "https://arbiscan.io/address/0xb5de3f06af62d8428a8bf7b4400ea42ad2e0bc53",
     "type": "ERC20",
     "symbol": "BRC",
     "decimals": 18,
-    "status": "active",
-    "id": "0xB5de3f06aF62D8428a8BF7b4400Ea42aD2E0bc53"
+    "description": "BRC is a decentralized currency with intrinsic value; it is a collateral-backed token with increasing yield",
+    "website": "https://brinc.fi/",
+    "explorer": "https://arbiscan.io/address/0xb5de3f06af62d8428a8bf7b4400ea42ad2e0bc53",
+    "id": "0xB5de3f06aF62D8428a8BF7b4400Ea42aD2E0bc53",
+    "links": [
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/brinc-fi/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://www.coingecko.com/coins/brinc-finance"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/BrincFi"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/QFFrBu68rp"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://brinc-fi.gitbook.io/documentation/concepts/whitepaper"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/@brinc.fi"
+        }
+    ],
+    "tags": [],
+    "status": "active"
 }
