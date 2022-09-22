@@ -183,6 +183,9 @@
                 },
                 {
                     "base": "c20000714_t0xF952Fc3ca7325Cc27D15885d37117676d25BfdA6"
+                },
+                {
+                    "base": "c20000714_t0x6679eB24F59dFe111864AEc72B443d1Da666B360"
                 }
             ]
         },
@@ -851,6 +854,16 @@
             "symbol": "BNX",
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0x8C851d1a123Ff703BD1f9dabe631b69902Df5f97/logo.png",
+            "pairs": []
+        },
+                {
+            "asset": "c20000714_t0x6679eB24F59dFe111864AEc72B443d1Da666B360",
+            "type": "BEP20",
+            "address": "0x6679eB24F59dFe111864AEc72B443d1Da666B360",
+            "name": "ARIVA",
+            "symbol": "ARV",
+            "decimals": 8,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0x6679eB24F59dFe111864AEc72B443d1Da666B360/logo.png",
             "pairs": []
         }
     ],
