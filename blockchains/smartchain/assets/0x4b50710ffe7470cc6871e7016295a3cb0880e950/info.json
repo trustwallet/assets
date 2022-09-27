@@ -1,0 +1,33 @@
+{
+    "name": "Ethereum",
+    "website": "https://ethereum.org/",
+    "description": "Binance-Peg Ethereum (ETH BEP20) is a token issued by Binance on Smart Chain; its price is pegged to Ethereum (ETH) at a ratio of 1:1.",
+    "explorer": "https://bscscan.com/token/0x4b50710ffe7470cC6871e7016295A3Cb0880E950",
+    "research": "https://research.binance.com/en/projects/ethereum",
+    "type": "BEP20",
+    "symbol": "ETH",
+    "decimals": 18,
+    "status": "active",
+    "id": "0x4b50710ffe7470cC6871e7016295A3Cb0880E950",
+    "tags": [
+        "binance-peg"
+    ],
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/ethereum/ethereum-org-website"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/ethdotorg"
+        },
+        {
+            "name": "youtube",
+            "url": "https://youtube.com/channel/UCNOfzGXD_C9YMYmnefmPH0g"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/CetY6Y4"
+        }
+    ]
+}
