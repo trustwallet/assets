@@ -1,5 +1,5 @@
 {
-    "name": "Axelar Token",
+    "name": "Axelar",
     "symbol": "wAXL",
     "type": "ERC20",
     "decimals": 6,
@@ -7,5 +7,23 @@
     "website": "https://axelar.network",
     "explorer": "https://etherscan.io/token/0x467719aD09025FcC6cF6F8311755809d45a5E5f3",
     "status": "active",
-    "id": "0x467719aD09025FcC6cF6F8311755809d45a5E5f3"
+    "id": "0x467719aD09025FcC6cF6F8311755809d45a5E5f3",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/axelarnetwork"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/axelarcore"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/axelar"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://axelar.network/axelar_whitepaper.pdf"
+        }
+    ]
 }
