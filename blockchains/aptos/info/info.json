@@ -1,36 +1,35 @@
 {
-     "name": "Aptos",
-     "type": "APTOS",
-     "symbol": "APT",
-     "decimals": 8,
-     "website": "https://aptoslabs.com",
-     "description": "Building the safest and most scalable Layer 1 blockchain.",
-     "explorer": "https://explorer.aptoslabs.com",
-     "status": "active",
-     "id": "0x07968dab936c1bad187c60ce4082f307d030d780e91e694ae03aef16aba73f30",
-     "links": [
-         {
-             "name": "twitter",
-             "url": "https://twitter.com/aptoslabs"
-         },
-         {
-             "name": "github",
-             "url": "https://github.com/aptoslabs"
-         },
-         {
-             "name": "discord",
-             "url": "https://discord.com/invite/aptoslabs"
-         },
-         {
-             "name": "coinmarketcap",
-             "url": "https://coinmarketcap.com/ru/currencies/aptos/"
-         },
-         {
+    "name": "Aptos",
+    "website": "https://aptoslabs.com",
+    "description": "Building the safest and most scalable Layer 1 blockchain.",
+    "explorer": "https://explorer.aptoslabs.com",
+    "symbol": "APT",
+    "type": "coin",
+    "decimals": 8,
+    "status": "active",
+    "tags": [
+        "defi"
+    ],
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/aptoslabs"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/aptoslabs"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/aptoslabs"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/ru/currencies/aptos/"
+        },
+        {
             "name": "coinmarketcap",
             "url": "https://coinmarketcap.com/ru/currencies/aptos/"
         }
-     ],
-     "tags": [
-         "defi"
-     ]
- }
+    ]
+}
