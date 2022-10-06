@@ -1,27 +1,28 @@
 {
-    "name": "BNB Smart Chain",
-    "website": "https://www.sweepproject.com/",
-    "description": "Sweep Token - A community reflection meme token built for the community",
-    "explorer": "https://bscscan.com/token/0x09c704c1eb9245af48f058878e72129557a10f04",
+    "name": "Sweeptoken",
+    "type": "BEP20",
     "symbol": "SWEEP",
-    "type": "token",
     "decimals": 9,
+    "website": "https://www.sweepproject.com/",
+    "description": "Sweep Token Is a Community Meme Token - Built For The Community",
+    "explorer": "https://bscscan.com/token/0x09c704c1EB9245Af48f058878e72129557a10F04",
     "status": "active",
-    "tags": [
-        "staking-native"
-    ],
+    "id": "0x09c704c1EB9245Af48f058878e72129557a10F04",
     "links": [
         {
             "name": "twitter",
             "url": "https://twitter.com/sweeepnft"
         },
         {
-            "name": "Telegram",
-            "url": "http://t.me/sweepproject"
+            "name": "telegram",
+            "url": "https://t.me/sweepproject"
         },
         {
             "name": "whitepaper",
             "url": "https://www.sweepproject.com/sweepwhitepaper.pdf"
         }
+    ],
+    "tags": [
+        "memes"
     ]
 }
