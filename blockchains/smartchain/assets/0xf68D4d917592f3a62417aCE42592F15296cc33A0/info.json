@@ -4,8 +4,29 @@
     "symbol": "CHB",
     "type": "BEP20",
     "decimals": 8,
-    "website": "http://thecoinhub.io/",
+    "website": "https://thecoinhub.io/",
     "explorer": "https://bscscan.com/token/0xf68D4d917592f3a62417aCE42592F15296cc33A0",
     "status": "active",
-    "id": "0xf68D4d917592f3a62417aCE42592F15296cc33A0"
+    "id": "0xf68D4d917592f3a62417aCE42592F15296cc33A0",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/coinhubchb"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/c0inhub"
+        },
+        {
+            "name": "facebook",
+            "url": "https://www.facebook.com/Thecoinhub-102940902381599"
+        },
+        {
+            "name": "instagram",
+            "url": "https://www.instagram.com/thecoinhubofficial/"
+        }
+    ],
+    "tags": [
+        "exchange"
+    ]
 }
