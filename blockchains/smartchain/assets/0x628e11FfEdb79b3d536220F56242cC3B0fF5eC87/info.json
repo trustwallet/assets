@@ -1,0 +1,29 @@
+{
+    "name": "Newton",
+    "type": "BEP20",
+    "symbol": "NEW",
+    "decimals": 18,
+    "website": "https://www.newtonproject.org",
+    "description": "NEW on Binance Smart Chain by newbridge.network cross chain.",
+    "explorer": "https://bscscan.com/token/0x628e11FfEdb79b3d536220F56242cC3B0fF5eC87",
+    "status": "active",
+    "id": "0x628e11FfEdb79b3d536220F56242cC3B0fF5eC87",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/newton_project"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/newtonproject"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/newton/"
+        }
+    ],
+    "tags": [
+        "binance-peg",
+        "wrapped"
+    ]
+}
