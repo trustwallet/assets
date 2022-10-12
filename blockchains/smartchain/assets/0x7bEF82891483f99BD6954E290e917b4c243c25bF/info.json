@@ -3,18 +3,46 @@
     "type": "BEP20",
     "symbol": "MDX",
     "decimals": 18,
-    "website": "https://www.tbcc.com/footer/token",
-    "description": "MaxDex cryptocurrency exchange platform provides secure exchange, allowing customers to easily exchange Bitcoin, Ethereum, Ripple, Litecoin, Monero and many other cryptocurrencies. ",
+    "website": "https://maxdex.io",
+    "description": "MaxDex cryptocurrency exchange platform provides secure exchange, allowing customers to easily exchange Bitcoin, Ethereum, Ripple, Litecoin, Monero and many other cryptocurrencies. And Max Dex Coin is a Supporting Currency for MaxDex Exchange.",
     "explorer": "https://bscscan.com/token/0x7bEF82891483f99BD6954E290e917b4c243c25bF",
     "status": "active",
-    "id": "0x7bEF82891483f99BD6954E290e917b4c243c25bF"
-    "links": 
-{
-"name": "github",
-"url": "https://github.com/maxdexcoin/"
-},
-{
-"name": "twitter",
-"url": "https://twitter.com/MAXDEXCOIN"
-}
+    "id": "0x7bEF82891483f99BD6954E290e917b4c243c25bF",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/MAXDEXCOIN"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/maxdexcoin"
+        },
+        {
+            "name": "facebook",
+            "url": "https://facebook.com/people/Max-Dex-Coin/100086524478836/"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://whitepaper.maxdex.vip/whitepaper.pdf"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/MAXDEXCOIN"
+        },
+        {
+            "name": "telegram_news",
+            "url": "https://t.me/"
+        },
+        {
+            "name": "blog",
+            "url": null
+        },
+        {
+            "name": "docs",
+            "url": null
+        }
+    ],
+    "tags": [
+        "governance"
+    ]
 }
