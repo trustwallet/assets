@@ -10,7 +10,7 @@
       },
       {
          "chain": "61",
-         "coinId": "ethereumclassic"
+         "coinId": "classic"
       },
       {
          "chain": "42161",
@@ -23,6 +23,10 @@
       {
          "chain": "288",
          "coinId": "boba"
+      },
+      {
+         "chain": "10001",
+         "coinId": "ethereumpow"
       }
    ]
 }
