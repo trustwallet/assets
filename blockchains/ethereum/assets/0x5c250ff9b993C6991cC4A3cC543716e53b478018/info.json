@@ -1,29 +1,29 @@
 {
     "name": "STPAY",
     "website": "https://stpay.org/",
-    "source_code": "https://github.com/stpay/contract",
     "description": "STPAY is creating a global platform to support Education and E-Commerce.",
-    "socials": [
-        {
-            "name": "Facebook",
-            "url": "https://www.facebook.com/stpaychannel",
-            "handle": ""
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/stpaychannel",
-            "handle": ""
-        },
-        {
-            "name": "YouTube",
-            "url": "https://www.youtube.com/channel/UCfrHNUUZMw7PfojxfdRTTDQ",
-            "handle": ""
-        }
-    ],
     "explorer": "https://etherscan.io/token/0x5c250ff9b993C6991cC4A3cC543716e53b478018",
     "type": "ERC20",
     "symbol": "STP",
     "decimals": 18,
     "status": "active",
-    "id": "0x5c250ff9b993C6991cC4A3cC543716e53b478018"
+    "id": "0x5c250ff9b993C6991cC4A3cC543716e53b478018",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/stpay/contract"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/stpaychannel"
+        },
+        {
+            "name": "facebook",
+            "url": "https://facebook.com/stpaychannel"
+        },
+        {
+            "name": "youtube",
+            "url": "https://youtube.com/channel/UCfrHNUUZMw7PfojxfdRTTDQ"
+        }
+    ]
 }

@@ -1,25 +1,29 @@
 {
-    "name": "xDai",
+    "name": "Gnosis Chain",
     "website": "https://xdaichain.com",
-    "source_code": "https://github.com/xdaichain",
-    "white_paper": "https://www.xdaichain.com/for-validators/posdao-whitepaper",
     "description": "The first-ever USD stable blockchain and multi-chain staking token.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/xdaichain",
-            "handle": "xdaichain"
-        },
-        {
-            "name": "Reddit",
-            "url": "https://reddit.com/r/POA",
-            "handle": "POA"
-        }
-    ],
     "explorer": "https://blockscout.com/poa/xdai",
     "research": "https://research.binance.com/en/projects/poa-network",
     "symbol": "xDAI",
-    "type": "ERC20",
+    "type": "coin",
     "decimals": 18,
-    "status": "abandoned"
+    "status": "active",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/xdaichain"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/xdaichain"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/POA"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://www.xdaichain.com/for-validators/posdao-whitepaper"
+        }
+    ]
 }

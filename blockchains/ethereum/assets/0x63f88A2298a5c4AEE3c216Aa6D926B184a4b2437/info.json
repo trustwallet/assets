@@ -1,60 +1,45 @@
 {
     "name": "GAME Credits",
     "website": "https://gamecredits.org",
-    "source_code": "https://github.com/novatokenplatform",
-    "white_paper": "https://gamecredits.org/wp-content/uploads/2020/04/GC_whitepaper.pdf",
     "description": "The next-generation blockchain platform for large-scale online games and social apps. GAME Credits is a platform eSports solution for true digital item ownership - Blockchain for every game and every gamer - empower your players and deliver what they want - true ownership, digital security and boundless possibilities for fun.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/gamecredits",
-            "handle": "gamecredits"
-        },
-        {
-            "name": "Reddit",
-            "url": "https://www.reddit.com/r/GameCredits/",
-            "handle": "gamecredits"
-        },
-        {
-            "name": "Medium",
-            "url": "https://medium.com/gamecredits",
-            "handle": "gamecredits"
-        },
-        {
-            "name": "Facebook",
-            "url": "https://www.facebook.com/gamecredits/",
-            "handle": "gamecredits"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/gamecreditsglobal",
-            "handle": "GAME Credits"
-        },
-        {
-            "name": "Linkedin",
-            "url": "https://www.linkedin.com/company/game-credits",
-            "handle": "GAME Credits"
-        },
-        {
-            "name": "Linkedin",
-            "url": "https://www.linkedin.com/company/game-credits",
-            "handle": "GAME Credits"
-        },
-        {
-            "name": "Instagram",
-            "url": "https://www.instagram.com/gamecreditsnetwork/",
-            "handle": "gamecreditsnetwork"
-        },
-        {
-            "name": "Discord",
-            "url": "https://discord.com/invite/gamecredits",
-            "handle": "GAMECredits"
-        }
-    ],
     "explorer": "https://etherscan.io/token/0x63f88A2298a5c4AEE3c216Aa6D926B184a4b2437",
     "type": "ERC20",
     "symbol": "GAME",
     "decimals": 18,
     "status": "active",
-    "id": "0x63f88A2298a5c4AEE3c216Aa6D926B184a4b2437"
+    "id": "0x63f88A2298a5c4AEE3c216Aa6D926B184a4b2437",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/novatokenplatform"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/gamecredits"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/gamecreditsglobal"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/gamecredits"
+        },
+        {
+            "name": "facebook",
+            "url": "https://facebook.com/gamecredits/"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/GameCredits/"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/gamecredits"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://gamecredits.org/wp-content/uploads/2020/04/GC_whitepaper.pdf"
+        }
+    ]
 }

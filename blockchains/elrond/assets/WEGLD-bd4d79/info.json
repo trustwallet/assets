@@ -1,0 +1,48 @@
+{
+    "type": "ESDT",
+    "id": "WEGLD-bd4d79",
+    "name": "Wrapped EGLD",
+    "symbol": "WEGLD",
+    "decimals": 18,
+    "status": "active",
+    "description": "WEGLD is an ESDT token that has the same value as EGLD, the native coin of the Elrond blockchain.",
+    "website": "https://maiar.exchange",
+    "explorer": "https://explorer.elrond.com/tokens/WEGLD-bd4d79",
+    "links": [
+        {
+            "name": "docs",
+            "url": "https://docs.elrond.com"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/elrondnetwork"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/ElrondNetwork"
+        },
+        {
+            "name": "facebook",
+            "url": "https://facebook.com/ElrondNetwork"
+        },
+        {
+            "name": "blog",
+            "url": "https://elrond.com/blog"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/ElrondNetwork"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/wrapped-elrond-egld"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/wrapped-elrond"
+        }
+    ],
+    "tags": [
+        "wrapped"
+    ]
+}

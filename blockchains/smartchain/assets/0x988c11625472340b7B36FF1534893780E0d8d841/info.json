@@ -1,34 +1,37 @@
 {
     "name": "Wrapped Conceal",
     "website": "https://conceal.network/",
-    "source_code": "https://github.com/ConcealNetwork",
     "description": "Conceal Network is a secure peer-to-peer privacy framework empowering individuals and organizations to anonymously communicate and interact financially in a decentralized and censorship resistant environment.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/ConcealNetwork"
-        },
-        {
-            "name": "Medium",
-            "url": "https://concealnetwork.medium.com/"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/concealnetwork"
-        },
-        {
-            "name": "Reddit",
-            "url": "https://www.reddit.com/r/ConcealNetwork/"
-        },
-        {
-            "name": "Discord",
-            "url": "https://discord.conceal.network"
-        }
-    ],
     "explorer": "https://bscscan.com/token/0x988c11625472340b7B36FF1534893780E0d8d841",
     "type": "BEP20",
     "symbol": "wCCX",
     "decimals": 6,
     "status": "active",
-    "id": "0x988c11625472340b7B36FF1534893780E0d8d841"
+    "id": "0x988c11625472340b7B36FF1534893780E0d8d841",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/ConcealNetwork"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/ConcealNetwork"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/concealnetwork"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/YbpHVSd"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/ConcealNetwork/"
+        },
+        {
+            "name": "medium",
+            "url": "https://concealnetwork.medium.com/"
+        }
+    ]
 }

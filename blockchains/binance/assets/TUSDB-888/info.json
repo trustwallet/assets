@@ -3,9 +3,30 @@
     "symbol": "TUSDB",
     "type": "BEP2",
     "decimals": 8,
-    "description": "TrueUSD is a U.S. dollar stablecoin pegged to USD at 1:1",
-    "website": "https://trusttoken.com",
+    "description": "TrueUSD (TUSD) is the first independently-verified digital asset redeemable 1-for-1 for US Dollars.",
+    "website": "https://www.trueusd.com/",
     "explorer": "https://explorer.binance.org/asset/TUSDB-888",
     "status": "active",
-    "id": "TUSDB-888"
+    "id": "TUSDB-888",
+    "tags": [
+        "stablecoin"
+    ],
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/trusttoken/TrueUSD"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/tusd_official"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/TUSDofficial_EN"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/true-usd/"
+        }
+    ]
 }

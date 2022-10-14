@@ -1,24 +1,25 @@
 {
     "name": "Multiplier Token",
     "website": "https://multiplier.finance",
-    "source_code": "https://github.com/Multiplier-Finance",
     "description": "Multiplier is a suite of DeFi protocols that leverages a native governance token - MXX - that can only be minted. The first protocol, Simplified Stable Bonds (SSB) enables holders to earn stable yield on their collateral. The second protocol, TakoSwap is a set of computer programs that run on the Ethereum blockchain and allows for decentralized token swaps. In the near future, more DeFi protocols will be built that focuses on creating value and utility for the community.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/MultiplierMXX",
-            "handle": "MultiplierMXX"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/themultiplierio",
-            "handle": "themultiplierio"
-        }
-    ],
     "explorer": "https://etherscan.io/token/0x8a6f3BF52A26a21531514E23016eEAe8Ba7e7018",
     "type": "ERC20",
     "symbol": "MXX",
     "decimals": 8,
     "status": "active",
-    "id": "0x8a6f3BF52A26a21531514E23016eEAe8Ba7e7018"
+    "id": "0x8a6f3BF52A26a21531514E23016eEAe8Ba7e7018",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/Multiplier-Finance"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/MultiplierMXX"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/themultiplierio"
+        }
+    ]
 }

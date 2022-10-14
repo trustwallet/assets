@@ -1,28 +1,32 @@
 {
     "name": "TRON",
     "website": "https://tron.network/",
-    "source_code": "https://github.com/tronprotocol",
-    "white_paper": "https://developers.tron.network/docs",
     "description": "TRON is dedicated to building the infrastructure for a truly decentralized Internet.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/Tronfoundation",
-            "handle": "Tronfoundation"
-        },
-        {
-            "name": "Reddit",
-            "url": "https://reddit.com/r/Tronix",
-            "handle": "Tronix"
-        }
-    ],
     "explorer": "https://tronscan.io/#/",
     "research": "https://research.binance.com/en/projects/tron",
     "symbol": "TRX",
-    "type": "COIN",
+    "type": "coin",
     "decimals": 6,
     "status": "active",
     "tags": [
         "staking-native"
+    ],
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/tronprotocol"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/Tronfoundation"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/Tronix"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://developers.tron.network/docs"
+        }
     ]
 }
