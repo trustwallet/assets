@@ -1,9 +1,40 @@
-"name": "TRIPTO",
-    "website": "https://itdn.network/",
-    "description": "TRIPTO solves the main challenges of financial transactions in the tourism industry to a large extent and eliminates the complex and expensive dependencies of the SWIFT network.",
-    "explorer": "https://bscscan.com/token/0xB73BB86f2055a4e86fF06D46196621Bb5eB7104e",
+{
+    "name": "TRIPTO",
     "type": "BEP20",
     "symbol": "ITDN",
     "decimals": 18,
+    "website": "https://itdn.network/",
+    "description": "TRIPTO is Blockchain-based, its purpose is to increase the use of blockchain technology in the tourism industry, a cryptocurrency in the tourism industry for secure and easy payments, TRIPTO ​wants to be known and available possibly to all tourists and tourism industry activists worldwide.",
+    "explorer": "https://bscscan.com/token/0xB73BB86f2055a4e86fF06D46196621Bb5eB7104e",
     "status": "active",
-    "id": "0xB73BB86f2055a4e86fF06D46196621Bb5eB7104e"
+    "id": "0xB73BB86f2055a4e86fF06D46196621Bb5eB7104e",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/itdnetwork"
+        },
+        {
+            "name": "telegram_news",
+            "url": "https://t.me/triptoitdn"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/TRIPTO_ITDN"
+        },
+        {
+            "name": "youtube",
+            "url": "https://youtube.com/channel/UCZ1_bgyRl5aLuf0GXWlAJ6A"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://www.itdn.network/whitepaper.pdf"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/dexscan/bsc/0x714c81ad966a627b3f2fbaf32c1d092074a65d43"
+        }
+    ],
+    "tags": [
+        "defi"
+    ]
+}
