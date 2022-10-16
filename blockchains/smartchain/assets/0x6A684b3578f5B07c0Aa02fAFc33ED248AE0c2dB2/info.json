@@ -5,12 +5,15 @@
     "explorer": "https://bscscan.com/token/0x6a684b3578f5b07c0aa02fafc33ed248ae0c2db2",
     "research": "https://whitepaper.techtrees.com/",
     "symbol": "TTC",
-    "type": "coin",
+    "type": "BEP20",
     "decimals": 18,
     "status": "active",
+    "id":0x6A684b3578f5B07c0Aa02fAFc33ED248AE0c2dB2,
     "tags": [
-        "staking-native"
-    ],
+        "staking",
+	"GameFi",
+	"meme"
+    ],	
     "links": [
         {
             "name": "github",
@@ -22,11 +25,19 @@
         },
         {
             "name": "reddit",
-            "url": ""
+            "url": "https://www.reddit.com/r/TechTrees"
         },
         {
             "name": "whitepaper",
-            "url": "https://whitepaper.techtrees.com/"
+            "url": "https://whitepaper.techtrees.com"
+        },
+	{
+            "name": "telegram",
+            "url": "https://t.me/TechTreesCoin"
+        },
+	{
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/techtreescoin"
         }
     ]
 }
