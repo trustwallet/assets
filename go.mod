@@ -7,7 +7,7 @@ require (
 	github.com/sirupsen/logrus v1.9.0
 	github.com/spf13/cobra v1.6.0
 	github.com/trustwallet/go-libs v0.4.4
-	github.com/trustwallet/go-primitives v0.0.58
+	github.com/trustwallet/go-primitives v0.0.59
 )
 
 require (
