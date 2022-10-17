@@ -4,10 +4,13 @@
     "description": "Gabur (GBR) is the utility token of Easyexchangepro for solving financial transaction problems.",
     "explorer": "https://bscscan.com/token/0x0Bbe4eBC8A16C759eA82D0950f29Aad3E3F10070",
     "symbol": "GBR",
-    "type": "token",
+    "type": "BEP20",
     "decimals": 18,
     "status": "active",
     "id": "0x0Bbe4eBC8A16C759eA82D0950f29Aad3E3F10070",
+    "tags": [
+        "staking-native"
+    ],
     "links": [
         {
             "name": "twitter",
