@@ -8,9 +8,6 @@
   "type": "BEP20",
   "decimals": 18,
   "status": "active",
-  "tags": [
-      "gamefi"
-  ],
   "links": [
       {
             "name": "coinmarketcap",
@@ -25,5 +22,8 @@
             "url": "https://whitepaper.mafagafo.com/"
       }
   ],
-  "id": "0x6Dd60AFB2586D31Bf390450aDf5E6A9659d48c4A"
+  "id": "0x6Dd60AFB2586D31Bf390450aDf5E6A9659d48c4A",
+  "tags": [
+      "gamefi"
+  ]
 }
