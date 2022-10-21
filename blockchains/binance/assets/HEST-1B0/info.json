@@ -5,21 +5,23 @@
     "explorer": "https://bscscan.com/token/0xa4c876143891f012991e5e06fabde7d6ad31e1b0",
     "research": "",
     "symbol": "HS",
-    "type": "token",
+    "type": "coin",
     "decimal": "18",
     "status": "active",
-    "tags": [],
+    "tags": [
+        "staking-native"
+    ],
     "links": [
         {
-            "name": "Whitepaper",
+            "name": "whitepaper",
             "url": "https://hest.live/whitepaper/"
         },
         {
-            "name": "Twitter",
+            "name": "twitter",
             "url": "https://twitter.com/hestlabs/"
         },
         {
-            "name": "Telegram",
+            "name": "telegram",
             "url": "https://t.me/hestlabs/"
         }
     ]
