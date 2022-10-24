@@ -1,4 +1,9 @@
 {
+    "name": "The Open Network",
+    "status": "active",
+    "symbol": "TONCOIN",
+    "type": "coin",
+    "website": "https://ton.org",
     "decimals": 9,
     "description": "The Open Network is a blockchain-based decentralized computer network. TON is designed to enable processing millions of transactions per second via infinite sharding paradigm. It allows building Web 3.0 empowered by decentralized storage and DNS, instant payments and decentralized services.",
     "explorer": "https://tonscan.org/",
@@ -39,10 +44,5 @@
             "name": "source_code",
             "url": "https://github.com/ton-blockchain/ton"
         }
-    ],
-    "name": "The Open Network",
-    "status": "active",
-    "symbol": "TONCOIN",
-    "type": "coin",
-    "website": "https://ton.org"
+    ]
 }
