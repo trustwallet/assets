@@ -2,7 +2,7 @@
     "name": "ETH-BTC Trend Strategy",
     "symbol": "ETHBTCTrend",
     "type": "Cellar Strategy",
-    "decimals": 9,
+    "decimals": 18,
     "description": "ETH-BTC Trend Strategy portfolio buys BTC and ETH when prices go up. Fully or partially sells both assets when prices go down.",
     "website": "https://app.sommelier.finance/strategies/ETH-BTC-Trend",
     "explorer": "https://etherscan.io/token/0x6b7f87279982d919bbf85182ddeab179b366d8f2",
