@@ -1,7 +1,7 @@
 {
     "name": "ETH-BTC Trend Strategy",
     "symbol": "ETHBTCTrend",
-    "type": "coin",
+    "type": "ERC20",
     "decimals": 18,
     "description": "ETH-BTC Trend Strategy portfolio buys BTC and ETH when prices go up. Fully or partially sells both assets when prices go down.",
     "website": "https://app.sommelier.finance/strategies/ETH-BTC-Trend",

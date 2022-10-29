@@ -1,7 +1,7 @@
 {
     "name": "ETH-BTC Momentum Strategy",
     "symbol": "ETHBTCMOM",
-    "type": "coin",
+    "type": "ERC20",
     "decimals": 18,
     "description": "ETH-BTC momentum strategy is a strategy portfolio that has exposure to BTC and ETH with positive price momentum and lower exposure when prices drop.",
     "website": "https://app.sommelier.finance/strategies/ETH-BTC-Momentum",
