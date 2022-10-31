@@ -1,29 +1,33 @@
 {
-    "name": "Hoo Smart Chain",
-    "website": "https://www.hoosmartchain.com",
-    "description": "Providing innovative solutions for growth in world of Blockchains",
-    "explorer": "https://www.hooscan.com",
-    "research": "",
-    "symbol": "HOO",
+    "name": "Hoo Token",
     "type": "coin",
+    "coin_type": 1170,
+    "symbol": "HOO",
     "decimals": 18,
+    "website": "https://hoosmartchain.com/",
+    "description": "HooToken aims to provide safe and reliable assets management and blockchain services to users worldwide.",
+    "explorer": "https://hooscan.com",
+    "rpc_url": "https://http-mainnet.hoosmartchain.com",
     "status": "active",
     "links": [
         {
-            "name": "medium",
-            "url": "https://medium.com/@HooSmartChain1"
+            "name": "twitter",
+            "url": "https://twitter.com/Hoo_exchange"
+        },
+        {
+            "name": "facebook",
+            "url": "https://facebook.com/hooexchange"
         },
         {
             "name": "telegram",
-            "url": "https://t.me/HooSmartChain"
+            "url": "https://t.me/hooChinesegroup"
         },
         {
-            "name": "discord",
-            "url": "https://discord.com/invite/n6ahyKV24d"
-        },
-        {
-            "name": "twitter",
-            "url": "https://twitter.com/HooSmartChain"
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/hoo-token/"
         }
+    ],
+    "tags": [
+        "defi"
     ]
 }
