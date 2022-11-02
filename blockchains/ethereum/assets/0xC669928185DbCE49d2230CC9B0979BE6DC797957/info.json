@@ -1,11 +1,11 @@
 {
-    "name": "BitTorrent",
-    "symbol": "BTT",
+    "name": "BitTorrent (BTT)",
     "type": "ERC20",
+    "symbol": "BTT",
     "decimals": 18,
-    "description": "BTT is the official token of BitTorrent Chain. BitTorrent Chain is a brand-new heterogeneous cross-chain interoperability protocol, which leverages sidechains for the scaling of smart contracts.",
-    "website": "https://bt.io/",
-    "explorer": "https://etherscan.io/token/0xc669928185dbce49d2230cc9b0979be6dc797957",
+    "website": "https://bttc.bittorrent.com/",
+    "description": "BitTorrent Chain is a heterogeneous cross-chain interoperability protocol, which leverages sidechains for the scaling of smart contracts. Initially designed to be compatible with TRON, Ethereum, and BNB Chain",
+    "explorer": "https://etherscan.io/token/0xC669928185DbCE49d2230CC9B0979BE6DC797957",
     "status": "active",
     "id": "0xC669928185DbCE49d2230CC9B0979BE6DC797957",
     "links": [
@@ -15,25 +15,10 @@
         },
         {
             "name": "github",
-            "url": "https://github.com/bttcprotocol/bttc"
-        },
-        {
-            "name": "telegram",
-            "url": "https://t.me/BitTorrentChain"
-        },
-        {
-            "name": "whitepaper",
-            "url": "https://tron.network/static/doc/BitTorrent-ChainWhitepaper_EN.pdf"
-        },
-        {
-            "name": "medium",
-            "url": "https://medium.com/@BitTorrent"
+            "url": "https://github.com/bttcprotocol"
         }
     ],
     "tags": [
-        "governance",
-        "staking",
-        "defi"
+        "gamefi"
     ]
 }
-
