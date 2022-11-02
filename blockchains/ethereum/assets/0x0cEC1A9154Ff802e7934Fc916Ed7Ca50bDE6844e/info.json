@@ -2,16 +2,28 @@
     "name": "PoolTogether",
     "website": "https://pooltogether.com",
     "description": "PoolTogether is the open source, decentralized primitive for no-loss prize games",
-    "socials": [
-        "https://twitter.com/PoolTogether_",
-        "https://discord.com/invite/hxPhPDW",
-        "https://medium.com/pooltogether",
-        "https://github.com/pooltogether"
-    ],
     "explorer": "https://etherscan.io/token/0x0cEC1A9154Ff802e7934Fc916Ed7Ca50bDE6844e",
     "type": "ERC20",
     "symbol": "POOL",
     "decimals": 18,
     "status": "active",
-    "id": "0x0cEC1A9154Ff802e7934Fc916Ed7Ca50bDE6844e"
+    "id": "0x0cEC1A9154Ff802e7934Fc916Ed7Ca50bDE6844e",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/PoolTogether_"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/hxPhPDW"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/pooltogether"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/pooltogether"
+        }
+    ]
 }

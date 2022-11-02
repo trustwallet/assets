@@ -1,33 +1,25 @@
 {
-    "name": "XOR",
+    "name": "SORA",
     "website": "https://sora.org",
     "description": "Sora is a decentralized autonomous economic system, where users vote on how to mint new units of the XOR token through a democratic referendum process. The goal is to create a decentralized, yet rational world economic system.",
-    "socials": [
-        {
-            "name": "Telegram",
-            "url": "https://t.me/sora_xor",
-            "handle": "Sora"
-        },
-        {
-            "name": "Reddit",
-            "url": "https://www.reddit.com/r/SORA",
-            "handle": "Sora"
-        },
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/sora_xor",
-            "handle": "Sora"
-        },
-        {
-            "name": "Instagram",
-            "url": "https://www.instagram.com/sora_xor",
-            "handle": "Sora"
-        }
-    ],
     "explorer": "https://etherscan.io/token/0x40FD72257597aA14C7231A7B1aaa29Fce868F677",
     "type": "ERC20",
     "symbol": "XOR",
     "decimals": 18,
     "status": "active",
-    "id": "0x40FD72257597aA14C7231A7B1aaa29Fce868F677"
+    "id": "0x40FD72257597aA14C7231A7B1aaa29Fce868F677",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/Sora"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/sora_xor"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/SORA"
+        }
+    ]
 }

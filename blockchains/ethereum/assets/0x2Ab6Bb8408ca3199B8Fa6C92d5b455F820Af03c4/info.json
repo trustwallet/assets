@@ -2,22 +2,20 @@
     "name": "TE-FOOD/TustChain",
     "website": "https://te-food.com/",
     "description": "TE-FOOD aims to enable customers to improve consumer trust and brand exposure, gain deeper supply chain insight to improve their operational efficiency, comply with export regulations, protect their brands against counterfeiting, and perform quicker product recalls. As an end-to-end solution, TE-FOOD offers many components for the complete supply chain to identify tracked items and batches, capture the data, store it on blockchain, process the data, and present it to the consumers.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/TE_FOOD",
-            "handle": "TE_FOOD"
-        },
-        {
-            "name": "Reddit",
-            "url": "https://reddit.com/r/TE_FOOD",
-            "handle": "TE_FOOD"
-        }
-    ],
     "explorer": "https://etherscan.io/token/0x2ab6bb8408ca3199b8fa6c92d5b455f820af03c4",
     "type": "ERC20",
     "symbol": "TONE",
     "decimals": 18,
     "status": "active",
-    "id": "0x2Ab6Bb8408ca3199B8Fa6C92d5b455F820Af03c4"
+    "id": "0x2Ab6Bb8408ca3199B8Fa6C92d5b455F820Af03c4",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/TE_FOOD"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/TE_FOOD"
+        }
+    ]
 }

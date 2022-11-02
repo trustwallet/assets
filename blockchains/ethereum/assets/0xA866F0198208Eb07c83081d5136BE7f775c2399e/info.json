@@ -1,24 +1,25 @@
 {
     "name": "KORE Vault",
     "website": "https://kVault.finance",
-    "source_code": "https://github.com/KORE-Vault",
     "description": "KORE is the first deflationary farming token with autonomous profit generation strategies",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/kvault_finance",
-            "handle": "kvault_finance"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/kore_vault",
-            "handle": "kore_vault"
-        }
-    ],
     "explorer": "https://etherscan.io/token/0xA866F0198208Eb07c83081d5136BE7f775c2399e",
     "type": "ERC20",
     "symbol": "KORE",
     "decimals": 18,
     "status": "active",
-    "id": "0xA866F0198208Eb07c83081d5136BE7f775c2399e"
+    "id": "0xA866F0198208Eb07c83081d5136BE7f775c2399e",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/KORE-Vault"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/kvault_finance"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/kore_vault"
+        }
+    ]
 }

@@ -1,25 +1,29 @@
 {
     "name": "IoTeX",
     "website": "https://iotex.io",
-    "source_code": "https://github.com/iotexproject",
-    "white_paper": "https://iotex.io/white-paper",
     "description": "IOTX will be a Decentralized Network for Internet of Things. Powered by a Privacy-Centric Blockchain.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/iotex_io",
-            "handle": "iotex_io"
-        },
-        {
-            "name": "Reddit",
-            "url": "https://reddit.com/r/IoTex",
-            "handle": "IoTex"
-        }
-    ],
     "explorer": "https://iotexscan.io/",
     "research": "https://research.binance.com/en/projects/iotx",
     "symbol": "IOTX",
-    "type": "COIN",
+    "type": "coin",
     "decimals": 18,
-    "status": "active"
+    "status": "active",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/iotexproject"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/iotex_io"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/IoTex"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://iotex.io/white-paper"
+        }
+    ]
 }

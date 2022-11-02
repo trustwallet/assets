@@ -1,24 +1,28 @@
 {
     "name": "Loom Network",
     "website": "https://loomx.io",
-    "source_code": "https://github.com/loomnetwork",
-    "white_paper": "https://medium.com/loom-network/introducing-loom-network-scaling-ethereum-today-9ea26b5b57c",
     "description": "The next-generation blockchain platform for large-scale online games and social apps.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/loomnetwork",
-            "handle": "loomnetwork"
-        },
-        {
-            "name": "Reddit",
-            "url": "https://reddit.com/r/loomnetwork",
-            "handle": "loomnetwork"
-        }
-    ],
     "explorer": "https://etherscan.io/token/0xa4e8c3ec456107ea67d3075bf9e3df3a75823db0",
     "symbol": "LOOM",
-    "type": "COIN",
+    "type": "coin",
     "decimals": 8,
-    "status": "abandoned"
+    "status": "abandoned",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/loomnetwork"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/loomnetwork"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/loomnetwork"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://medium.com/loom-network/introducing-loom-network-scaling-ethereum-today-9ea26b5b57c"
+        }
+    ]
 }
