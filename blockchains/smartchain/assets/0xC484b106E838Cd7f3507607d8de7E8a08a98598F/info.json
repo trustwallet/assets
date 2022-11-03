@@ -1,17 +1,19 @@
 {
     "name": "GoldenArk",
-    "website": "https://www.goldenark.asia/",
+    "website": "https://goldenark.asia/",
     "description": "Golden Ark is integrating the global green gold chain using blockchain technology by bringing together upstream and downstream players and issuing $ARK420 tokens. Using the unique traceability technology “ARKTHENTICATE” to push product authentication and industry integration, forming a global Cannabis community that will support the full development of social features, entertainment, and commerce in the Golden Ark Metaverse.",
-    "symbol": "$ARK420",
-    "type": "coin",
+    "explorer": "https://bscscan.com/token/0xc484b106e838cd7f3507607d8de7e8a08a98598f",
+    "symbol": "ARK420",
+    "type": "BEP20",
     "decimals": 18,
     "status": "active",
+    "id": "0xC484b106E838Cd7f3507607d8de7E8a08a98598F",
     "tags": [
         "staking-native"
     ],
     "links": [
         {
-            "name": "Telegram",
+            "name": "telegram",
             "url": "https://t.me/goldenark_asia_chat"
         },
         {
@@ -19,15 +21,19 @@
             "url": "https://twitter.com/GoldenArk420/"
         },
         {
-            "name": "Discord",
+            "name": "discord",
             "url": "https://discord.gg/3SE4TtvYPW"
+        },
+	  {
+            "name": "github",
+            "url": "https://github.com/GoldenArk420"
         },
         {
             "name": "whitepaper",
             "url": "https://goldenark.asia/#/WhitePage"
         },
         {
-            "name": "Youtube",
+            "name": "youtube",
             "url": "https://www.youtube.com/channel/UC-umO7DJrwDNT22SECuoNvA"
         }
     ]
