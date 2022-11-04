@@ -1,13 +1,13 @@
 {
-   "name": "Herity Network",
-    "website": "https://herity.io",
-    "description": "Seed financing platform for blockchain startups & NFT marketplace",
-    "explorer": "https://bscscan.com/token/0x8c18ffD66d943C9B0AD3DC40E2D64638F1e6e1ab",
+    "name": "Herity Network",
     "type": "BEP20",
     "symbol": "HER",
     "decimals": 9,
+    "website": "https://herity.io",
+    "description": "Launchpad and incubator of vetted, audited & legal Web3 projects , NFT auction store",
+    "explorer": "https://bscscan.com/token/0x8c18ffD66d943C9B0AD3DC40E2D64638F1e6e1ab",
     "status": "active",
-    "id": "0x8c18ffD66d943C9B0AD3DC40E2D64638F1e6e1ab"
+    "id": "0x8c18ffD66d943C9B0AD3DC40E2D64638F1e6e1ab",
     "links": [
         {
             "name": "twitter",
@@ -18,16 +18,20 @@
             "url": "https://t.me/heritynetwork"
         },
         {
-            "name": "facebook",
-            "url": "https://www.facebook.com/heritynetwork"
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/heritynetwork"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/herity-network"
         },
         {
             "name": "whitepaper",
             "url": "https://herity.io/HerityWhitepaperV2.pdf"
         },
         {
-            "name": "coingecko",
-            "url": "https://www.coingecko.com/en/coins/herity-network"
+            "name": "facebook",
+            "url": "https://facebook.com/heritynetwork"
         }
     ],
     "tags": [
