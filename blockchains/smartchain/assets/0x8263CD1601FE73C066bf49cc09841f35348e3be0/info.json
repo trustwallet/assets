@@ -1,29 +1,52 @@
 {
     "name": "Altura",
     "website": "https://www.alturanft.com/",
-    "description": "Altura is the next generation gaming NFT platform.",
+    "description": "Altura provides everything you need to integrate Web3 into your game in a simple yet powerful platform.",
     "explorer": "https://bscscan.com/token/0x8263cd1601fe73c066bf49cc09841f35348e3be0",
-    "type": "BEP20",
     "symbol": "ALU",
+    "type": "BEP20",
     "decimals": 18,
     "status": "active",
+    "tags": [
+        "Collectibles & NFTs", "Metaverse", "Oxbull",
+        "Marketplace", "Gaming", "Platform", "BNB Chain",
+        "Smart Contracts", "Staking", "DApp", "Ethereum Ecosystem",
+        "BNB Smart Chain", "Avalanche Ecosystem", "Polygon Ecosystem",
+        "Fantom Ecosystem", "Web3", "Token", "Arbitrum Ecosystem", "Cross-Chain",
+    ],
     "id": "0x8263CD1601FE73C066bf49cc09841f35348e3be0",
     "links": [
         {
-            "name": "github",
-            "url": "https://github.com/Plutus-Gaming-NFTs-Reimagined"
+            "name": "coingecko",
+            "url": "https://www.coingecko.com/en/coins/altura"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/altura/"
+        },
+        {
+            "name": "blog",
+            "url": "https://alturanft.com/blog/"
+        },
+        {
+            "name": "docs",
+            "url": "https://docs.alturanft.com/"
+        },
+        {
+            "name": "medium",
+            "url": "https://alturanft.medium.com/"
         },
         {
             "name": "twitter",
-            "url": "https://twitter.com/altura_nft"
-        },
-        {
-            "name": "reddit",
-            "url": "https://reddit.com/r/AlturaNFT/"
+            "url": "https://twitter.com/AlturaNFT/"
         },
         {
             "name": "telegram",
-            "url": "https://t.me/alturanft"
+            "url": "https://t.me/joinchat/SEp_Uz557XhmNzM5"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/cHW6SDMsEZ"
         }
     ]
 }
