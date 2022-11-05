@@ -1,28 +1,48 @@
 {
-    "name": "Coin hub",
-    "description": "Utility token",
-    "symbol": "CHB",
+    "name": "coin hub",
     "type": "BEP20",
+    "symbol": "chb",
     "decimals": 8,
-    "website": "https://thecoinhub.io/",
+    "website": "https://thecoinhub.io",
+    "description": "coin hub is crypto currency exchange platform",
     "explorer": "https://bscscan.com/token/0xf68D4d917592f3a62417aCE42592F15296cc33A0",
     "status": "active",
     "id": "0xf68D4d917592f3a62417aCE42592F15296cc33A0",
     "links": [
         {
-            "name": "telegram",
-            "url": "https://t.me/c0inhub"
-        },
-        {
             "name": "twitter",
             "url": "https://twitter.com/coinhubchb"
         },
         {
+            "name": "telegram",
+            "url": "https://t.me/thecoinhubofficial"
+        },
+        {
             "name": "facebook",
-            "url": "https://facebook.com/Thecoinhub-102940902381599"
+            "url": "https://facebook.com/Thecoinhub-102940902381599/"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/thecoinhubofficial"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/bk3656"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://thecoinhub.io/CoinhubWhitepaper.pdf"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/coinhubchb"
+        },
+        {
+            "name": "youtube",
+            "url": "https://youtube.com/channel/UC_9O3bYzfPnbtFwnV7FwbQA"
         }
     ],
     "tags": [
-        "staking-native"
+        "staking"
     ]
 }
