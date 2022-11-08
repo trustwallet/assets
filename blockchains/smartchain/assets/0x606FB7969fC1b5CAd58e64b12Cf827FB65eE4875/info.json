@@ -1,16 +1,13 @@
 {
     "name": "OKSE",
-    "website": "https://okse.io/",
-    "description": "A Visa card, decentralized funded. The easiest and quickest way to spend your crypto worldwide.",
-    "explorer": "https://bscscan.com/token/0x606FB7969fC1b5CAd58e64b12Cf827FB65eE4875",
     "type": "BEP20",
     "symbol": "OKSE",
     "decimals": 18,
+    "website": "https://okse.io",
+    "description": "A Visa card, decentralized funded. The easiest and quickest way to spend your crypto worldwide.",
+    "explorer": "https://bscscan.com/token/0x606FB7969fC1b5CAd58e64b12Cf827FB65eE4875",
     "status": "active",
     "id": "0x606FB7969fC1b5CAd58e64b12Cf827FB65eE4875",
-    "tags": [
-        "defi"
-    ],
     "links": [
         {
             "name": "twitter",
@@ -24,5 +21,8 @@
             "name": "github",
             "url": "https://github.com/Okseio"
         }
+    ],
+    "tags": [
+        "defi"
     ]
 }
