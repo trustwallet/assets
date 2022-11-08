@@ -1,0 +1,28 @@
+{
+    "name": "(PoS) Wrapped BTC",
+    "type": "POLYGON",
+    "symbol": "WBTC",
+    "decimals": 8,
+    "website": "https://www.wbtc.network",
+    "description": "Wrapped Bitcoin is a tokenized version of Bitcoin (BTC) that runs on the Ethereum (ETH) blockchain.",
+    "explorer": "https://polygonscan.com/token/0x1BFD67037B42Cf73acF2047067bd4F2C47D9BfD6",
+    "status": "active",
+    "id": "0x1BFD67037B42Cf73acF2047067bd4F2C47D9BfD6",
+    "links": [
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/wrapped-bitcoin"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/WrappedBTC"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/WrappedBTC/bitcoin-token-smart-contracts"
+        }
+    ],
+    "tags": [
+        "wrapped"
+    ]
+}
