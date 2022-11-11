@@ -1,0 +1,44 @@
+{
+    "name": "Loopring",
+    "website": "https://loopring.org",
+    "description": "The Loopring protocol smart contracts and zero-knowledge proof circuits allow the building of high-performance DEXes using a zkRollup construction.",
+    "explorer": "https://etherscan.io/token/0xBBbbCA6A901c926F240b89EacB641d8Aec7AEafD",
+    "type": "ERC20",
+    "symbol": "LRC",
+    "decimals": 18,
+    "status": "active",
+    "id": "0xBBbbCA6A901c926F240b89EacB641d8Aec7AEafD",
+    "tags": [
+        "defi"
+    ],
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/Loopring"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/loopringorg"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/loopringorg/"
+        },
+        {
+            "name": "blog",
+            "url": "https://medium.com/loopring-protocol"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/loopring_en"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://github.com/Loopring/protocols/blob/master/packages/loopring_v3/DESIGN.md"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/loopring/"
+        }
+    ]
+}
