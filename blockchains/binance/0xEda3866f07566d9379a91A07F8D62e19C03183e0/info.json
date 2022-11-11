@@ -1,0 +1,32 @@
+{
+    "name": "HashBit-Peg HBIT Token",
+    "website": "https://hashbit.org",
+    "description": "HBIT is a 100% proof-of-stake cryptocurrency, constructed in Java. HBIT unique proof-of-stake algorithm does not depend on any implementation of the coin age concept used by other proof-of-stake cryptocurrencies.",
+    "explorer": "https://bscscan.com/token/0xEda3866f07566d9379a91A07F8D62e19C03183e0",
+    "research": "https://hashbit.org",
+    "symbol": "HBIT",
+    "type": "coin",
+    "decimals": 18,
+    "status": "active",
+    "tags": [
+        "wrapped"
+    ],
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/HashBitorg/"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/HashBitorg"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/hashbitofficial/"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://hashbit.org/HBIT_white_paper.pdf"
+        }
+    ]
+}
