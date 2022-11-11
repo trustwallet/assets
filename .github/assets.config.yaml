@@ -48,6 +48,7 @@ validators_settings:
     allowed_files:
       - "assets"
       - "tokenlist.json"
+      - "chainlist.json"
       - "tokenlist-extended.json"
       - "validators"
       - "info"
