@@ -17,7 +17,13 @@ const scanDir = (dir, dirList = []) => {
 };
 
 scanDir( './blockchains');
-dirs.forEach(f => {
-   fs.renameSync(f, f.toLowerCase());
-   console.log('renamed to ', f.toLowerCase());
+
+console.log(dirs);
+dirs.forEach(currentDir => {
+    const newDir = currentDir.toLowerCase()
+    if (fs.existsSync(newDir)) {
+        return;
+    }
+   fs.cpSync(currentDir, newDir, { recursive: true });
+   console.log(`copied ${currentDir} to ${newDir}`);
 });
