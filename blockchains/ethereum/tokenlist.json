@@ -504,6 +504,9 @@
                 },
                 {
                     "base": "c60_t0xf4d2888d29D722226FafA5d9B24F9164c092421E"
+                },
+                {
+                    "base": "c60_t0x70e8dE73cE538DA2bEEd35d14187F6959a8ecA96"
                 }
             ]
         },
@@ -3493,6 +3496,16 @@
             "symbol": "STG",
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0xAf5191B0De278C7286d6C7CC6ab6BB8A73bA2Cd6/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c60_t0x70e8dE73cE538DA2bEEd35d14187F6959a8ecA96",
+            "type": "ERC20",
+            "address": "0x70e8dE73cE538DA2bEEd35d14187F6959a8ecA96",
+            "name": "XSGD",
+            "symbol": "XSGD",
+            "decimals": 6,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0x70e8dE73cE538DA2bEEd35d14187F6959a8ecA96/logo.png",
             "pairs": []
         }
     ],
