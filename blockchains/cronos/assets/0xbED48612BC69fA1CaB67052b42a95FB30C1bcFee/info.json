@@ -1,17 +1,13 @@
 {
     "name": "SHIBA INU",
-    "website": "https://shibatoken.com/",
-    "description": "According to SHIBA INU, the reasoning behind the creation of SHIBA is that Shibas constantly forget where they bury their treasure.",
-    "explorer": "https://cronoscan.com/token/0xbed48612bc69fa1cab67052b42a95fb30c1bcfee",
-    "type": "CRC20",
     "symbol": "SHIB",
+    "type": "CRC20",
     "decimals": 18,
+    "description": "According to SHIBA INU, the reasoning behind the creation of SHIBA is that Shibas constantly forget where they bury their treasure.",
+    "website": "https://shibatoken.com/",
+    "explorer": "https://cronos.org/explorer/address/0xbED48612BC69fA1CaB67052b42a95FB30C1bcFee/token-transfers",
     "status": "active",
     "id": "0xbED48612BC69fA1CaB67052b42a95FB30C1bcFee",
-    "tags": [
-        "deflationary",
-        "memes"
-    ],
     "links": [
         {
             "name": "telegram",
@@ -25,5 +21,9 @@
             "name": "coingecko",
             "url": "https://coingecko.com/en/coins/shiba-inu/"
         }
+    ],
+    "tags": [
+        "deflationary",
+        "memes"
     ]
 }
