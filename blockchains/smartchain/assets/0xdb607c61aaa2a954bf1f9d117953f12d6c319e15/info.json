@@ -1,16 +1,13 @@
 {
     "name": "HONEYPAD",
-    "type": "BEP20",
     "symbol": "$HONEY",
+    "type": "BEP20",
     "decimals": 9,
-    "website": "https://www.honeypad.io/",
     "description": "Honeypad Is The Hive To Bee! We Reward Holders Through Tax Rewards, Automatic Token Burning, and a Pioneering Buy-back System. All While Providing A Secure And Vibrant Eco-system.",
+    "website": "https://www.honeypad.io/",
     "explorer": "https://bscscan.com/token/0xdb607c61Aaa2a954Bf1f9d117953F12d6c319E15",
     "status": "active",
-    "id": "0xdb607c61Aaa2a954Bf1f9d117953F12d6c319E15",
-    "tags": [
-        "deflationary"
-    ],
+    "id": "0xdb607c61aaa2a954bf1f9d117953f12d6c319e15",
     "links": [
         {
             "name": "twitter",
@@ -32,5 +29,8 @@
             "name": "telegram",
             "url": "https://t.me/honeypadofficial"
         }
+    ],
+    "tags": [
+        "deflationary"
     ]
 }

@@ -1,17 +1,14 @@
 {
     "name": "Navcoin",
-    "website": "https://navcoin.org",
+    "symbol": "WNAV",
+    "type": "BEP20",
+    "decimals": 8,
     "description": "Navcoin is a cutting edge privacy coin governed by a community driven DAO fund with the ability to wrap coins for use in the DEFI universe. All backed by the eco-friendly proof-of-stake mining model.",
+    "website": "https://navcoin.org",
     "explorer": "https://bscscan.com/token/0xBFEf6cCFC830D3BaCA4F6766a0d4AaA242Ca9F3D",
     "research": "https://navcoin.org/en/project-activity/",
-    "type": "BEP20",
-    "symbol": "WNAV",
-    "decimals": 8,
     "status": "active",
-    "id": "0xBFEf6cCFC830D3BaCA4F6766a0d4AaA242Ca9F3D",
-    "tags": [
-        "privacy"
-    ],
+    "id": "0xbfef6ccfc830d3baca4f6766a0d4aaa242ca9f3d",
     "links": [
         {
             "name": "github",
@@ -37,5 +34,8 @@
             "name": "medium",
             "url": "https://medium.com/nav-coin"
         }
+    ],
+    "tags": [
+        "privacy"
     ]
 }

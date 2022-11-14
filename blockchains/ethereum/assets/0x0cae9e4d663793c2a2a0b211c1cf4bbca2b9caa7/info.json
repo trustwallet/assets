@@ -1,16 +1,13 @@
 {
     "name": "mAMZN Token",
-    "website": "https://mirror.finance",
-    "description": "Wrapped Mirror AMZN Token.",
-    "explorer": "https://etherscan.io/token/0x0cae9e4d663793c2a2A0b211c1Cf4bBca2B9cAa7",
-    "type": "ERC20",
     "symbol": "mAMZN",
+    "type": "ERC20",
     "decimals": 18,
+    "description": "Wrapped Mirror AMZN Token.",
+    "website": "https://mirror.finance",
+    "explorer": "https://etherscan.io/token/0x0cae9e4d663793c2a2A0b211c1Cf4bBca2B9cAa7",
     "status": "active",
-    "id": "0x0cae9e4d663793c2a2A0b211c1Cf4bBca2B9cAa7",
-    "tags": [
-        "wrapped"
-    ],
+    "id": "0x0cae9e4d663793c2a2a0b211c1cf4bbca2b9caa7",
     "links": [
         {
             "name": "twitter",
@@ -28,5 +25,8 @@
             "name": "medium",
             "url": "https://medium.com/@mirror-protocol"
         }
+    ],
+    "tags": [
+        "wrapped"
     ]
 }

@@ -1,17 +1,14 @@
 {
     "name": "PancakeSwap Token",
-    "website": "https://pancakeswap.finance",
+    "symbol": "CAKE",
+    "type": "BEP20",
+    "decimals": 18,
     "description": "PancakeSwap is a yield farming project whereby users can get FLIP (LP token) for staking and get CAKE token as reward.",
+    "website": "https://pancakeswap.finance",
     "explorer": "https://bscscan.com/token/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82",
     "research": "https://research.binance.com/en/projects/pancakeswap",
-    "type": "BEP20",
-    "symbol": "CAKE",
-    "decimals": 18,
     "status": "active",
-    "id": "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82",
-    "tags": [
-        "defi"
-    ],
+    "id": "0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82",
     "links": [
         {
             "name": "github",
@@ -33,5 +30,8 @@
             "name": "coingecko",
             "url": "https://coingecko.com/en/coins/pancakeswap-token/"
         }
+    ],
+    "tags": [
+        "defi"
     ]
 }

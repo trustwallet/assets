@@ -1,13 +1,13 @@
 {
     "name": "Chess",
-    "website": "https://tranchess.com/",
-    "description": "Tranchess Protocol is a tokenized asset management and derivatives trading protocol. Inspired by tranches fund that caters investors with different risk appetite, Tranchess aims to provide different risk/return matrix out of a single main fund that tracks a specific underlying asset.",
-    "type": "BEP20",
     "symbol": "CHESS",
+    "type": "BEP20",
     "decimals": 18,
-    "status": "active",
+    "description": "Tranchess Protocol is a tokenized asset management and derivatives trading protocol. Inspired by tranches fund that caters investors with different risk appetite, Tranchess aims to provide different risk/return matrix out of a single main fund that tracks a specific underlying asset.",
+    "website": "https://tranchess.com/",
     "explorer": "https://bscscan.com/token/0x20de22029ab63cf9A7Cf5fEB2b737Ca1eE4c82A6",
-    "id": "0x20de22029ab63cf9A7Cf5fEB2b737Ca1eE4c82A6",
+    "status": "active",
+    "id": "0x20de22029ab63cf9a7cf5feb2b737ca1ee4c82a6",
     "links": [
         {
             "name": "github",

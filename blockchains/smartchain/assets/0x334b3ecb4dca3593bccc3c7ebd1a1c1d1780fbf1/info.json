@@ -1,14 +1,14 @@
 {
     "name": "Venus DAI",
-    "website": "https://venus.io/",
-    "description": "The Venus vTokens, which are self-contained borrowing and lending contracts. VToken contains the core logic and VBep20, VBUSD, VSXP, VUSDC, VUSDT, VXVS and VBNB add public interfaces for Bep20 tokens and bnb, respectively.",
-    "research": "https://research.binance.com/en/projects/venus",
-    "explorer": "https://bscscan.com/token/0x334b3eCB4DCa3593BCCC3c7EBD1A1C1d1780FBF1",
-    "type": "BEP20",
     "symbol": "vDAI",
+    "type": "BEP20",
     "decimals": 8,
+    "description": "The Venus vTokens, which are self-contained borrowing and lending contracts. VToken contains the core logic and VBep20, VBUSD, VSXP, VUSDC, VUSDT, VXVS and VBNB add public interfaces for Bep20 tokens and bnb, respectively.",
+    "website": "https://venus.io/",
+    "explorer": "https://bscscan.com/token/0x334b3eCB4DCa3593BCCC3c7EBD1A1C1d1780FBF1",
+    "research": "https://research.binance.com/en/projects/venus",
     "status": "active",
-    "id": "0x334b3eCB4DCa3593BCCC3c7EBD1A1C1d1780FBF1",
+    "id": "0x334b3ecb4dca3593bccc3c7ebd1a1c1d1780fbf1",
     "links": [
         {
             "name": "github",

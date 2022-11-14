@@ -1,13 +1,13 @@
 {
     "name": "Matic Aave interest bearing USDC",
-    "website": "https://www.aavegotchi.com/",
-    "description": "aTokens on Polygon are known as maTokens.",
-    "explorer": "https://polygonscan.com/token/0x9719d867a500ef117cc201206b8ab51e794d3f82",
-    "type": "POLYGON",
     "symbol": "maUSDC",
+    "type": "POLYGON",
     "decimals": 6,
+    "description": "aTokens on Polygon are known as maTokens.",
+    "website": "https://www.aavegotchi.com/",
+    "explorer": "https://polygonscan.com/token/0x9719d867a500ef117cc201206b8ab51e794d3f82",
     "status": "active",
-    "id": "0x9719d867A500Ef117cC201206B8ab51e794d3F82",
+    "id": "0x9719d867a500ef117cc201206b8ab51e794d3f82",
     "links": [
         {
             "name": "discord",

@@ -1,16 +1,13 @@
 {
     "name": "Baby Doge Money Maker",
-    "website": "https://babydogemoneymaker.com/",
-    "description": "The One And Only Doge And Lucky Cat Hybrid In Crypto World!",
-    "explorer": "https://bscscan.com/token/0xEc3D04C82aF8C4b97Ecd058D543c2c0673ca72dC",
-    "type": "BEP20",
     "symbol": "BABYDOGEMM",
+    "type": "BEP20",
     "decimals": 8,
+    "description": "The One And Only Doge And Lucky Cat Hybrid In Crypto World!",
+    "website": "https://babydogemoneymaker.com/",
+    "explorer": "https://bscscan.com/token/0xEc3D04C82aF8C4b97Ecd058D543c2c0673ca72dC",
     "status": "active",
-    "id": "0xEc3D04C82aF8C4b97Ecd058D543c2c0673ca72dC",
-    "tags": [
-        "deflationary"
-    ],
+    "id": "0xec3d04c82af8c4b97ecd058d543c2c0673ca72dc",
     "links": [
         {
             "name": "telegram",
@@ -44,5 +41,8 @@
             "name": "whitepaper",
             "url": "https://babydogemoneymaker.com/assets/whitepaper.pdf"
         }
+    ],
+    "tags": [
+        "deflationary"
     ]
 }

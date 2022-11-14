@@ -1,13 +1,13 @@
 {
     "name": "Huobi Token",
-    "website": "https://hbg.com",
-    "description": "Huobi Token (HT) is an exchange based token and native currency of the Huobi crypto exchange.",
-    "explorer": "https://etherscan.io/token/0x6f259637dcD74C767781E37Bc6133cd6A68aa161",
-    "type": "ERC20",
     "symbol": "HT",
+    "type": "ERC20",
     "decimals": 18,
+    "description": "Huobi Token (HT) is an exchange based token and native currency of the Huobi crypto exchange.",
+    "website": "https://hbg.com",
+    "explorer": "https://etherscan.io/token/0x6f259637dcD74C767781E37Bc6133cd6A68aa161",
     "status": "active",
-    "id": "0x6f259637dcD74C767781E37Bc6133cd6A68aa161",
+    "id": "0x6f259637dcd74c767781e37bc6133cd6a68aa161",
     "links": [
         {
             "name": "telegram",

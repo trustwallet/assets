@@ -1,15 +1,14 @@
 {
     "name": "EVC",
-    "coin_name": "Eco Value Coin",
-    "website": "https://ecovaluecoin.com",
+    "symbol": "EVC",
+    "type": "ERC20",
+    "decimals": 18,
     "description": "Eco Value Coin is a Blockchain based Carbon Credit token. It will allow individuals, businesses and governments to trade and offset carbon emissions..",
+    "website": "https://ecovaluecoin.com",
     "explorer": "https://etherscan.io/token/0xAa843f65872a25D6E9552eA0B360Fb1d5E333124",
     "research": "https://www.ecovaluecoin.com/#ecctech",
-    "type": "ERC20",
-    "symbol": "EVC",
-    "decimals": 18,
     "status": "active",
-    "id": "0xAa843f65872a25D6E9552eA0B360Fb1d5E333124",
+    "id": "0xaa843f65872a25d6e9552ea0b360fb1d5e333124",
     "links": [
         {
             "name": "github",

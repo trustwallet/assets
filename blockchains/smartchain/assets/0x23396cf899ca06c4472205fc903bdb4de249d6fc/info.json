@@ -1,16 +1,13 @@
 {
     "name": "Wrapped UST Token",
-    "website": "https://terra.money",
-    "description": "TerraUSD is the first decentralized stablecoin that is scalable, yield bearing and interchain.",
-    "explorer": "https://bscscan.com/token/0x23396cF899Ca06c4472205fC903bDB4de249D6fC",
-    "type": "BEP20",
     "symbol": "UST",
+    "type": "BEP20",
     "decimals": 18,
+    "description": "TerraUSD is the first decentralized stablecoin that is scalable, yield bearing and interchain.",
+    "website": "https://terra.money",
+    "explorer": "https://bscscan.com/token/0x23396cF899Ca06c4472205fC903bDB4de249D6fC",
     "status": "active",
-    "id": "0x23396cF899Ca06c4472205fC903bDB4de249D6fC",
-    "tags": [
-        "stablecoin"
-    ],
+    "id": "0x23396cf899ca06c4472205fc903bdb4de249d6fc",
     "links": [
         {
             "name": "twitter",
@@ -28,5 +25,8 @@
             "name": "medium",
             "url": "https://medium.com/terra-money"
         }
+    ],
+    "tags": [
+        "stablecoin"
     ]
 }

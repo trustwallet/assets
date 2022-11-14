@@ -1,16 +1,13 @@
 {
     "name": "VELHALLA.io",
-    "website": "https://velhalla.io/",
-    "description": "The Velas Metaverse. Velhalla is a metaverse unlike any other out there in the market.",
-    "explorer": "https://bscscan.com/token/0x8d9fB713587174Ee97e91866050c383b5cEE6209",
-    "type": "BEP20",
     "symbol": "SCAR",
+    "type": "BEP20",
     "decimals": 18,
+    "description": "The Velas Metaverse. Velhalla is a metaverse unlike any other out there in the market.",
+    "website": "https://velhalla.io/",
+    "explorer": "https://bscscan.com/token/0x8d9fB713587174Ee97e91866050c383b5cEE6209",
     "status": "active",
-    "id": "0x8d9fB713587174Ee97e91866050c383b5cEE6209",
-    "tags": [
-        "nft"
-    ],
+    "id": "0x8d9fb713587174ee97e91866050c383b5cee6209",
     "links": [
         {
             "name": "telegram",
@@ -24,5 +21,8 @@
             "name": "coinmarketcap",
             "url": "https://coinmarketcap.com/currencies/velhalla/"
         }
+    ],
+    "tags": [
+        "nft"
     ]
 }

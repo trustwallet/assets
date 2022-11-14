@@ -1,16 +1,13 @@
 {
     "name": "MicroSHIBA",
-    "type": "BEP20",
     "symbol": "MICROSHIB",
+    "type": "BEP20",
     "decimals": 9,
-    "website": "https://www.microshiba.net/",
     "description": "MicroSHIBA is a brand new token from a very experienced team that has implemented a manual buy back system to help protect investors maintain a steady market price in the event of a whale dump or continuous market sells.",
+    "website": "https://www.microshiba.net/",
     "explorer": "https://bscscan.com/token/0xb78e41AE7fc8121978168557bB096e1A858be2Ea",
     "status": "active",
-    "id": "0xb78e41AE7fc8121978168557bB096e1A858be2Ea",
-    "tags": [
-        "deflationary"
-    ],
+    "id": "0xb78e41ae7fc8121978168557bb096e1a858be2ea",
     "links": [
         {
             "name": "telegram",
@@ -24,5 +21,8 @@
             "name": "coinmarketcap",
             "url": "https://coinmarketcap.com/currencies/microshib/"
         }
+    ],
+    "tags": [
+        "deflationary"
     ]
 }

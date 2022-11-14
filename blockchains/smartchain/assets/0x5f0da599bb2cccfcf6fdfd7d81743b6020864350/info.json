@@ -1,19 +1,14 @@
 {
     "name": "Binance-Peg Maker",
-    "website": "https://makerdao.com",
+    "symbol": "MKR",
+    "type": "BEP20",
+    "decimals": 18,
     "description": "Maker (MKR) is a utility token, governance token and recapitalization resource of the Maker system.",
+    "website": "https://makerdao.com",
     "explorer": "https://bscscan.com/token/0x5f0Da599BB2ccCfcf6Fdfd7D81743B6020864350",
     "research": "https://research.binance.com/en/projects/maker",
-    "type": "BEP20",
-    "symbol": "MKR",
-    "decimals": 18,
     "status": "active",
-    "id": "0x5f0Da599BB2ccCfcf6Fdfd7D81743B6020864350",
-    "tags": [
-        "defi",
-        "governance",
-        "binance-peg"
-    ],
+    "id": "0x5f0da599bb2cccfcf6fdfd7d81743b6020864350",
     "links": [
         {
             "name": "blog",
@@ -31,5 +26,10 @@
             "name": "coingecko",
             "url": "https://coingecko.com/en/coins/maker/"
         }
+    ],
+    "tags": [
+        "defi",
+        "governance",
+        "binance-peg"
     ]
 }

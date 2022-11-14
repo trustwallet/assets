@@ -1,16 +1,13 @@
 {
     "name": "TwogeInu",
-    "website": "https://twogeinu.io",
-    "description": "Twoge is an innovative deflationary token aiming to revolutionize Defi, building its own Twoge Blockchain, introducing a multi-chain swap (TwogeSwap) across Binance, Ethereum...",
-    "explorer": "https://bscscan.com/token/0xD5FFAB1841B9137D5528Ed09D6Ebb66c3088aeDE",
     "symbol": "TWOGE",
     "type": "BEP20",
     "decimals": 5,
+    "description": "Twoge is an innovative deflationary token aiming to revolutionize Defi, building its own Twoge Blockchain, introducing a multi-chain swap (TwogeSwap) across Binance, Ethereum...",
+    "website": "https://twogeinu.io",
+    "explorer": "https://bscscan.com/token/0xD5FFAB1841B9137D5528Ed09D6Ebb66c3088aeDE",
     "status": "active",
-    "id": "0xD5FFAB1841B9137D5528Ed09D6Ebb66c3088aeDE",
-    "tags": [
-        "memes"
-    ],
+    "id": "0xd5ffab1841b9137d5528ed09d6ebb66c3088aede",
     "links": [
         {
             "name": "telegram",
@@ -28,5 +25,8 @@
             "name": "whitepaper",
             "url": "https://github.com/twogeinu/whitepaper/blob/main/Twoge%20Whitepaper.pdf"
         }
+    ],
+    "tags": [
+        "memes"
     ]
 }

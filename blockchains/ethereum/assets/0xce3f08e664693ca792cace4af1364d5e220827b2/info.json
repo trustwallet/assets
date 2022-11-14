@@ -1,16 +1,13 @@
 {
     "name": "SAITAMA",
-    "website": "https://saitamatoken.com",
-    "description": "Community Owned Decentralised Token",
-    "explorer": "https://etherscan.io/token/0xCE3f08e664693ca792caCE4af1364D5e220827B2",
-    "type": "ERC20",
     "symbol": "SAITAMA",
+    "type": "ERC20",
     "decimals": 9,
+    "description": "Community Owned Decentralised Token",
+    "website": "https://saitamatoken.com",
+    "explorer": "https://etherscan.io/token/0xCE3f08e664693ca792caCE4af1364D5e220827B2",
     "status": "active",
-    "id": "0xCE3f08e664693ca792caCE4af1364D5e220827B2",
-    "tags": [
-        "memes"
-    ],
+    "id": "0xce3f08e664693ca792cace4af1364d5e220827b2",
     "links": [
         {
             "name": "whitepaper",
@@ -40,5 +37,8 @@
             "name": "coingecko",
             "url": "https://coingecko.com/en/coins/saitama-inu/"
         }
+    ],
+    "tags": [
+        "memes"
     ]
 }

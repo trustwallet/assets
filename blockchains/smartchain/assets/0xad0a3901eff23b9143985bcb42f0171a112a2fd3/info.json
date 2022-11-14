@@ -1,16 +1,13 @@
 {
     "name": "MinerBlox Token",
-    "website": "https://minerblox.com/",
-    "description": "MinerBlox Token will be needed to mint GPUs and start mining or to improve your machine's HashPower to extract even more tokens",
-    "explorer": "https://bscscan.com/token/0xAD0A3901eFf23b9143985bCB42F0171a112A2fD3",
-    "type": "BEP20",
     "symbol": "MBLOX",
+    "type": "BEP20",
     "decimals": 18,
+    "description": "MinerBlox Token will be needed to mint GPUs and start mining or to improve your machine's HashPower to extract even more tokens",
+    "website": "https://minerblox.com/",
+    "explorer": "https://bscscan.com/token/0xAD0A3901eFf23b9143985bCB42F0171a112A2fD3",
     "status": "active",
-    "id": "0xAD0A3901eFf23b9143985bCB42F0171a112A2fD3",
-    "tags": [
-        "nft"
-    ],
+    "id": "0xad0a3901eff23b9143985bcb42f0171a112a2fd3",
     "links": [
         {
             "name": "twitter",
@@ -32,5 +29,8 @@
             "name": "coingecko",
             "url": "https://coingecko.com/coins/minerblox"
         }
+    ],
+    "tags": [
+        "nft"
     ]
 }

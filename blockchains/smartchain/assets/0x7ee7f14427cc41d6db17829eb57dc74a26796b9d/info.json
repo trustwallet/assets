@@ -1,16 +1,13 @@
 {
     "name": "MoonRise",
-    "type": "BEP20",
     "symbol": "MOONRISE",
+    "type": "BEP20",
     "decimals": 9,
-    "website": "https://MoonRiseCoin.com",
     "description": "MoonRise is the first MoonShot token on BSC, and is also a proprietary and hyper-deflationary buyback token with a suite of new innovations that help increase return for investors. On top of the automated buys from the Whale Wallet upon every market sell, \"Moon Shots\" will be activated at certain milestones using the Whale Wallet's BNB!",
+    "website": "https://MoonRiseCoin.com",
     "explorer": "https://bscscan.com/token/0x7Ee7F14427cC41D6dB17829eb57Dc74A26796b9D",
     "status": "active",
-    "id": "0x7Ee7F14427cC41D6dB17829eb57Dc74A26796b9D",
-    "tags": [
-        "deflationary"
-    ],
+    "id": "0x7ee7f14427cc41d6db17829eb57dc74a26796b9d",
     "links": [
         {
             "name": "twitter",
@@ -36,5 +33,8 @@
             "name": "coinmarketcap",
             "url": "https://coinmarketcap.com/currencies/moonrise/"
         }
+    ],
+    "tags": [
+        "deflationary"
     ]
 }

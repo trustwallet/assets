@@ -1,16 +1,13 @@
 {
     "name": "cVault.finance",
-    "website": "https://cVault.finance",
-    "description": "CORE is the first ever deflationary farming token.",
-    "explorer": "https://etherscan.io/token/0x62359Ed7505Efc61FF1D56fEF82158CcaffA23D7",
-    "type": "ERC20",
     "symbol": "CORE",
+    "type": "ERC20",
     "decimals": 18,
+    "description": "CORE is the first ever deflationary farming token.",
+    "website": "https://cVault.finance",
+    "explorer": "https://etherscan.io/token/0x62359Ed7505Efc61FF1D56fEF82158CcaffA23D7",
     "status": "active",
-    "id": "0x62359Ed7505Efc61FF1D56fEF82158CcaffA23D7",
-    "tags": [
-        "governance"
-    ],
+    "id": "0x62359ed7505efc61ff1d56fef82158ccaffa23d7",
     "links": [
         {
             "name": "github",
@@ -24,5 +21,8 @@
             "name": "telegram",
             "url": "https://t.me/COREVault"
         }
+    ],
+    "tags": [
+        "governance"
     ]
 }

@@ -1,13 +1,13 @@
 {
     "name": "Tether USD (Portal from Solana)",
-    "type": "ERC20",
     "symbol": "USDTso",
+    "type": "ERC20",
     "decimals": 6,
     "description": "Cross Chain Portal Bridged Token",
     "website": "https://tether.to/",
     "explorer": "https://etherscan.io/token/0x1CDD2EaB61112697626F7b4bB0e23Da4FeBF7B7C",
     "status": "active",
-    "id": "0x1CDD2EaB61112697626F7b4bB0e23Da4FeBF7B7C",
+    "id": "0x1cdd2eab61112697626f7b4bb0e23da4febf7b7c",
     "tags": [
         "wrapped"
     ]

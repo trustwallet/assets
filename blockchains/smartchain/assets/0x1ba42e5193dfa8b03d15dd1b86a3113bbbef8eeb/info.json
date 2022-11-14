@@ -1,14 +1,14 @@
 {
     "name": "Binance-Peg Zcash Token",
-    "website": "https://z.cash",
+    "symbol": "ZEC",
+    "type": "BEP20",
+    "decimals": 18,
     "description": "Binance-Peg Zcash Token (ZEC BEP20) is a token issued by Binance on Smart Chain; its price is pegged to Zcash (ZEC) at a ratio of 1:1.",
+    "website": "https://z.cash",
     "explorer": "https://bscscan.com/token/0x1Ba42e5193dfA8B03D15dd1B86a3113bbBEF8Eeb",
     "research": "https://research.binance.com/en/projects/zcash",
-    "type": "BEP20",
-    "symbol": "ZEC",
-    "decimals": 18,
     "status": "active",
-    "id": "0x1Ba42e5193dfA8B03D15dd1B86a3113bbBEF8Eeb",
+    "id": "0x1ba42e5193dfa8b03d15dd1b86a3113bbbef8eeb",
     "tags": [
         "binance-peg"
     ]

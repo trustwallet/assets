@@ -1,17 +1,13 @@
 {
     "name": "Reflecto",
-    "website": "https://reflecto.finance",
-    "description": "Multi-reward token with utilities that generate profits for holders.",
-    "explorer": "https://bscscan.com/token/0x5A341DCF49e161CC73591f02e5f8CDE8A29733fb",
-    "type": "BEP20",
     "symbol": "RTO",
-    "tags": [
-        "defi",
-        "gamefi",
-        "staking",
-        "nft",
-        "deflationary"
-    ],
+    "type": "BEP20",
+    "decimals": 9,
+    "description": "Multi-reward token with utilities that generate profits for holders.",
+    "website": "https://reflecto.finance",
+    "explorer": "https://bscscan.com/token/0x5A341DCF49e161CC73591f02e5f8CDE8A29733fb",
+    "status": "active",
+    "id": "0x5a341dcf49e161cc73591f02e5f8cde8a29733fb",
     "links": [
         {
             "name": "whitepaper",
@@ -54,7 +50,11 @@
             "url": "https://coingecko.com/coins/reflecto"
         }
     ],
-    "decimals": 9,
-    "status": "active",
-    "id": "0x5A341DCF49e161CC73591f02e5f8CDE8A29733fb"
+    "tags": [
+        "defi",
+        "gamefi",
+        "staking",
+        "nft",
+        "deflationary"
+    ]
 }

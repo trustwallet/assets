@@ -1,17 +1,13 @@
 {
     "name": "Libero Financial Freedom (LIBERO)",
-    "website": "https://libero.financial/",
-    "description": "Libero Finance is transforming DeFi with the Libero Autostaking Protocol (LAP) that delivers the industry’s fixed APY, compounding rewards every 30 minutes, and a simple buy-hold-earn system that grows Investors' portfolio in their wallet fast with fixed interest of 2.02% per day or 158,893.59% a year without having to do anything",
-    "explorer": "https://bscscan.com/token/0x0DFCb45EAE071B3b846E220560Bbcdd958414d78",
-    "type": "BEP20",
     "symbol": "LIBERO",
+    "type": "BEP20",
     "decimals": 18,
+    "description": "Libero Finance is transforming DeFi with the Libero Autostaking Protocol (LAP) that delivers the industry’s fixed APY, compounding rewards every 30 minutes, and a simple buy-hold-earn system that grows Investors' portfolio in their wallet fast with fixed interest of 2.02% per day or 158,893.59% a year without having to do anything",
+    "website": "https://libero.financial/",
+    "explorer": "https://bscscan.com/token/0x0DFCb45EAE071B3b846E220560Bbcdd958414d78",
     "status": "active",
-    "id": "0x0DFCb45EAE071B3b846E220560Bbcdd958414d78",
-    "tags": [
-        "defi",
-        "deflationary"
-    ],
+    "id": "0x0dfcb45eae071b3b846e220560bbcdd958414d78",
     "links": [
         {
             "name": "twitter",
@@ -41,5 +37,9 @@
             "name": "github",
             "url": "https://github.com/liberofinancial/LiberoFinancial"
         }
+    ],
+    "tags": [
+        "defi",
+        "deflationary"
     ]
 }

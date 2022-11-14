@@ -1,16 +1,13 @@
 {
     "name": "mSLV Token",
-    "website": "https://mirror.finance",
-    "description": "Wrapped Mirror SLV Token.",
-    "explorer": "https://etherscan.io/token/0x9d1555d8cB3C846Bb4f7D5B1B1080872c3166676",
-    "type": "ERC20",
     "symbol": "mSLV",
+    "type": "ERC20",
     "decimals": 18,
+    "description": "Wrapped Mirror SLV Token.",
+    "website": "https://mirror.finance",
+    "explorer": "https://etherscan.io/token/0x9d1555d8cB3C846Bb4f7D5B1B1080872c3166676",
     "status": "active",
-    "id": "0x9d1555d8cB3C846Bb4f7D5B1B1080872c3166676",
-    "tags": [
-        "wrapped"
-    ],
+    "id": "0x9d1555d8cb3c846bb4f7d5b1b1080872c3166676",
     "links": [
         {
             "name": "twitter",
@@ -28,5 +25,8 @@
             "name": "medium",
             "url": "https://medium.com/@mirror-protocol"
         }
+    ],
+    "tags": [
+        "wrapped"
     ]
 }

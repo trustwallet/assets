@@ -1,17 +1,13 @@
 {
     "name": "SafeToken",
-    "website": "https://safetoken.xyz/",
-    "description": "SafeToken is a next-gen cryptocurrency that combines auto-liquidity, frictionless yield, and token burn.",
-    "research": "",
-    "explorer": "https://bscscan.com/token/0x31045e7023e6c388F9447E632a3f9EaFF90393fa",
-    "type": "BEP20",
     "symbol": "SAFETOKEN",
+    "type": "BEP20",
     "decimals": 18,
+    "description": "SafeToken is a next-gen cryptocurrency that combines auto-liquidity, frictionless yield, and token burn.",
+    "website": "https://safetoken.xyz/",
+    "explorer": "https://bscscan.com/token/0x31045e7023e6c388F9447E632a3f9EaFF90393fa",
     "status": "active",
-    "id": "0x31045e7023e6c388F9447E632a3f9EaFF90393fa",
-    "tags": [
-        "deflationary"
-    ],
+    "id": "0x31045e7023e6c388f9447e632a3f9eaff90393fa",
     "links": [
         {
             "name": "twitter",
@@ -25,5 +21,8 @@
             "name": "reddit",
             "url": "https://reddit.com/r/SafeToken/"
         }
+    ],
+    "tags": [
+        "deflationary"
     ]
 }

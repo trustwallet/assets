@@ -1,13 +1,13 @@
 {
     "name": "TT-BUSD",
-    "website": "https://bridge.thundercore.com/bsc/",
-    "description": "Bridged token of BSC on ThunderCore blockchain. The Bridge allows users to convert assets between Ethereum, BSC, HECO and ThunderCore. This is a customized version of POA network Bridge",
-    "explorer": "https://viewblock.io/thundercore/address/0xBEB0131D95AC3F03fd15894D0aDE5DBf7451d171",
-    "type": "TT20",
     "symbol": "TT-BUSD",
+    "type": "TT20",
     "decimals": 18,
+    "description": "Bridged token of BSC on ThunderCore blockchain. The Bridge allows users to convert assets between Ethereum, BSC, HECO and ThunderCore. This is a customized version of POA network Bridge",
+    "website": "https://bridge.thundercore.com/bsc/",
+    "explorer": "https://viewblock.io/thundercore/address/0xBEB0131D95AC3F03fd15894D0aDE5DBf7451d171",
     "status": "active",
-    "id": "0xBEB0131D95AC3F03fd15894D0aDE5DBf7451d171",
+    "id": "0xbeb0131d95ac3f03fd15894d0ade5dbf7451d171",
     "links": [
         {
             "name": "twitter",

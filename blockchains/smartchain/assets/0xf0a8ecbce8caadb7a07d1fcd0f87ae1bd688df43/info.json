@@ -1,16 +1,13 @@
 {
     "name": "CryptoGodz",
-    "website": "https://cryptogodz.io",
-    "description": "CRYPTOGODZA VIRTUAL UNIVERSE OF FANTASY HEROES FOR P2P NFT GAMING",
-    "explorer": "https://bscscan.com/token/0xF0A8EcBCE8caADB7A07d1FcD0f87Ae1Bd688dF43",
-    "type": "BEP20",
     "symbol": "GODZ",
+    "type": "BEP20",
     "decimals": 18,
+    "description": "CRYPTOGODZA VIRTUAL UNIVERSE OF FANTASY HEROES FOR P2P NFT GAMING",
+    "website": "https://cryptogodz.io",
+    "explorer": "https://bscscan.com/token/0xF0A8EcBCE8caADB7A07d1FcD0f87Ae1Bd688dF43",
     "status": "active",
-    "id": "0xF0A8EcBCE8caADB7A07d1FcD0f87Ae1Bd688dF43",
-    "tags": [
-        "nft"
-    ],
+    "id": "0xf0a8ecbce8caadb7a07d1fcd0f87ae1bd688df43",
     "links": [
         {
             "name": "telegram",
@@ -24,5 +21,8 @@
             "name": "coinmarketcap",
             "url": "https://coinmarketcap.com/ru/currencies/cryptogodz/"
         }
+    ],
+    "tags": [
+        "nft"
     ]
-} 
+}

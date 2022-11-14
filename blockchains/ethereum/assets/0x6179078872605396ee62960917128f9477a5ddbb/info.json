@@ -1,11 +1,11 @@
 {
     "name": "Aave UniETH",
-    "website": "https://aave.com",
-    "description": "Aave UniETH is an interest bearing token pegged 1:1 to the underlying ETH deposited in the Uniswap Market of Aave Protocol.",
-    "explorer": "https://etherscan.io/token/0x6179078872605396Ee62960917128F9477a5DdbB",
-    "type": "ERC20",
     "symbol": "aUniETH",
+    "type": "ERC20",
     "decimals": 18,
+    "description": "Aave UniETH is an interest bearing token pegged 1:1 to the underlying ETH deposited in the Uniswap Market of Aave Protocol.",
+    "website": "https://aave.com",
+    "explorer": "https://etherscan.io/token/0x6179078872605396Ee62960917128F9477a5DdbB",
     "status": "active",
-    "id": "0x6179078872605396Ee62960917128F9477a5DdbB"
+    "id": "0x6179078872605396ee62960917128f9477a5ddbb"
 }

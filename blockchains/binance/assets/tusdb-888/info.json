@@ -7,10 +7,7 @@
     "website": "https://www.trueusd.com/",
     "explorer": "https://explorer.binance.org/asset/TUSDB-888",
     "status": "active",
-    "id": "TUSDB-888",
-    "tags": [
-        "stablecoin"
-    ],
+    "id": "tusdb-888",
     "links": [
         {
             "name": "github",
@@ -28,5 +25,8 @@
             "name": "coingecko",
             "url": "https://coingecko.com/en/coins/true-usd/"
         }
+    ],
+    "tags": [
+        "stablecoin"
     ]
 }

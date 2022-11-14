@@ -1,16 +1,13 @@
 {
     "name": "Ancient Kingdom",
-    "website": "https://acdom.io",
-    "description": "Ancient Kingdom is the 1st ancient martial arts game on the blockchain platform, pioneering the realization of real-time games on the blockchain platform.",
-    "explorer": "https://bscscan.com/token/0x8c282eA9eACd1B95D44a3A18DCdd1D0472868998",
-    "type": "BEP20",
     "symbol": "DOM",
+    "type": "BEP20",
     "decimals": 8,
+    "description": "Ancient Kingdom is the 1st ancient martial arts game on the blockchain platform, pioneering the realization of real-time games on the blockchain platform.",
+    "website": "https://acdom.io",
+    "explorer": "https://bscscan.com/token/0x8c282eA9eACd1B95D44a3A18DCdd1D0472868998",
     "status": "active",
-    "id": "0x8c282eA9eACd1B95D44a3A18DCdd1D0472868998",
-    "tags": [
-        "defi"
-    ],
+    "id": "0x8c282ea9eacd1b95d44a3a18dcdd1d0472868998",
     "links": [
         {
             "name": "telegram",
@@ -28,5 +25,8 @@
             "name": "discord",
             "url": "https://discord.com/invite/gXHFkvva6a"
         }
+    ],
+    "tags": [
+        "defi"
     ]
 }

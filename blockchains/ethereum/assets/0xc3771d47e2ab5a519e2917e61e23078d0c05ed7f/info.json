@@ -1,16 +1,13 @@
 {
     "name": "Gather",
-    "website": "https://gather.network",
-    "description": "Gather is a platform that allows publishers to monetize without ads and provides businesses & developers access to cheap and reliable processing power.",
-    "explorer": "https://etherscan.io/token/0xc3771d47E2Ab5A519E2917E61e23078d0C05Ed7f",
-    "type": "ERC20",
     "symbol": "GTH",
+    "type": "ERC20",
     "decimals": 18,
+    "description": "Gather is a platform that allows publishers to monetize without ads and provides businesses & developers access to cheap and reliable processing power.",
+    "website": "https://gather.network",
+    "explorer": "https://etherscan.io/token/0xc3771d47E2Ab5A519E2917E61e23078d0C05Ed7f",
     "status": "abandoned",
-    "id": "0xc3771d47E2Ab5A519E2917E61e23078d0C05Ed7f",
-    "tags": [
-        "governance"
-    ],
+    "id": "0xc3771d47e2ab5a519e2917e61e23078d0c05ed7f",
     "links": [
         {
             "name": "twitter",
@@ -29,8 +26,7 @@
             "url": "https://gather.network/whitepaper.html"
         }
     ],
-    "migrate": {
-        "asset_id": "c60_t0xeb986DA994E4a118d5956b02d8b7c3C7CE373674",
-        "url": "https://twitter.com/Gather_Network/status/1479180753967915008"
-    }
+    "tags": [
+        "governance"
+    ]
 }

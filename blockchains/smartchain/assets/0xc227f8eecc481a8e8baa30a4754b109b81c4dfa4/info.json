@@ -1,14 +1,14 @@
 {
     "name": "Vox.Finance",
-    "website": "https://app.vox.finance",
+    "symbol": "VOXb",
+    "type": "BEP20",
+    "decimals": 18,
     "description": "Yield farming token with low supply and 2% burn rate.",
+    "website": "https://app.vox.finance",
     "explorer": "https://bscscan.com/token/0xc227f8eecc481a8e8baa30a4754b109b81c4dfa4",
     "research": "https://app.vox.finance/whitepaper",
-    "type": "BEP20",
-    "symbol": "VOXb",
-    "decimals": 18,
     "status": "active",
-    "id": "0xC227f8EECC481A8e8BAa30A4754B109b81C4DfA4",
+    "id": "0xc227f8eecc481a8e8baa30a4754b109b81c4dfa4",
     "links": [
         {
             "name": "source_code",

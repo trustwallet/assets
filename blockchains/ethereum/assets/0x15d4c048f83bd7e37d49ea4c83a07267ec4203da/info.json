@@ -1,17 +1,13 @@
 {
     "name": "Gala",
-    "website": "https://gala.games",
-    "description": "GALA is the utility token powering the Gala Games ecosystem.",
-    "explorer": "https://etherscan.io/token/0x15D4c048F83bd7e37d49eA4C83a07267Ec4203dA",
-    "type": "ERC20",
     "symbol": "GALA",
+    "type": "ERC20",
     "decimals": 8,
+    "description": "GALA is the utility token powering the Gala Games ecosystem.",
+    "website": "https://gala.games",
+    "explorer": "https://etherscan.io/token/0x15D4c048F83bd7e37d49eA4C83a07267Ec4203dA",
     "status": "active",
-    "id": "0x15D4c048F83bd7e37d49eA4C83a07267Ec4203dA",
-    "tags": [
-        "nft",
-        "gamefi"
-    ],
+    "id": "0x15d4c048f83bd7e37d49ea4c83a07267ec4203da",
     "links": [
         {
             "name": "twitter",
@@ -33,5 +29,9 @@
             "name": "reddit",
             "url": "https://reddit.com/r/GoGalaGames"
         }
+    ],
+    "tags": [
+        "nft",
+        "gamefi"
     ]
 }

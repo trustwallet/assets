@@ -1,16 +1,13 @@
 {
     "name": "Baby Yooshi",
-    "website": "https://www.babyyooshi.com/",
-    "description": "Baby YooShi is a token on Binance Smart Chain boasting various features. BabyYooShi name and image are inspired by a dinosaur in Super Mario, whose name is Yoshi.",
-    "explorer": "https://bscscan.com/token/0x12b83d77a606d8f5c4ce29dffdb592c523364995",
-    "type": "BEP20",
     "symbol": "BabyYooshi",
+    "type": "BEP20",
     "decimals": 9,
+    "description": "Baby YooShi is a token on Binance Smart Chain boasting various features. BabyYooShi name and image are inspired by a dinosaur in Super Mario, whose name is Yoshi.",
+    "website": "https://www.babyyooshi.com/",
+    "explorer": "https://bscscan.com/token/0x12b83d77a606d8f5c4ce29dffdb592c523364995",
     "status": "active",
-    "id": "0x12b83d77a606D8f5c4CE29dfFdb592C523364995",
-    "tags": [
-        "deflationary"
-    ],
+    "id": "0x12b83d77a606d8f5c4ce29dffdb592c523364995",
     "links": [
         {
             "name": "github",
@@ -32,5 +29,8 @@
             "name": "coingecko",
             "url": "https://coingecko.com/en/coins/baby-yooshi/"
         }
+    ],
+    "tags": [
+        "deflationary"
     ]
 }

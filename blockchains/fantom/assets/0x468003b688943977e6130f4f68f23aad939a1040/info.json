@@ -1,16 +1,13 @@
 {
     "name": "Spell Token",
-    "website": "https://abracadabra.money/",
-    "description": "Abracadabra.money is a lending platform that allows users to borrow funds using Interest Bearing Tokens as collateral.",
-    "explorer": "https://ftmscan.com/token/0x468003b688943977e6130f4f68f23aad939a1040",
-    "type": "FANTOM",
     "symbol": "SPELL",
+    "type": "FANTOM",
     "decimals": 18,
+    "description": "Abracadabra.money is a lending platform that allows users to borrow funds using Interest Bearing Tokens as collateral.",
+    "website": "https://abracadabra.money/",
+    "explorer": "https://ftmscan.com/token/0x468003b688943977e6130f4f68f23aad939a1040",
     "status": "active",
-    "id": "0x468003B688943977e6130F4F68F23aad939a1040",
-    "tags": [
-        "defi"
-    ],
+    "id": "0x468003b688943977e6130f4f68f23aad939a1040",
     "links": [
         {
             "name": "twitter",
@@ -24,5 +21,8 @@
             "name": "coingecko",
             "url": "https://coingecko.com/coins/spell-token/"
         }
+    ],
+    "tags": [
+        "defi"
     ]
 }

@@ -1,16 +1,13 @@
 {
     "name": "Meta World Token",
-    "type": "BEP20",
     "symbol": "MTW",
+    "type": "BEP20",
     "decimals": 18,
-    "website": "https://www.meta-world.game",
     "description": "Meta-World is an island nation-building game for the NFT platform.",
+    "website": "https://www.meta-world.game",
     "explorer": "https://bscscan.com/token/0xfCe3EFebC79d21a6B7cc7F3A7216E66e81f4B23B",
     "status": "active",
-    "id": "0xfCe3EFebC79d21a6B7cc7F3A7216E66e81f4B23B",
-    "tags": [
-        "gamefi"
-    ],
+    "id": "0xfce3efebc79d21a6b7cc7f3a7216e66e81f4b23b",
     "links": [
         {
             "name": "twitter",
@@ -20,5 +17,8 @@
             "name": "telegram",
             "url": "https://t.me/MetaWorld_Game"
         }
+    ],
+    "tags": [
+        "gamefi"
     ]
 }

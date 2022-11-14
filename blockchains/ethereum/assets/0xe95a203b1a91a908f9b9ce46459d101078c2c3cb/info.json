@@ -1,13 +1,13 @@
 {
     "name": "ankrETH",
-    "website": "https://stkr.io/",
-    "description": "aETHc is a reward-bearing certificate that enables instant liquidity for staked ETH tokens in Ethereum 2.0 network.",
-    "explorer": "https://etherscan.io/token/0xE95A203B1a91a908F9B9CE46459d101078c2c3cb",
-    "type": "ERC20",
     "symbol": "aETHc",
+    "type": "ERC20",
     "decimals": 18,
+    "description": "aETHc is a reward-bearing certificate that enables instant liquidity for staked ETH tokens in Ethereum 2.0 network.",
+    "website": "https://stkr.io/",
+    "explorer": "https://etherscan.io/token/0xE95A203B1a91a908F9B9CE46459d101078c2c3cb",
     "status": "active",
-    "id": "0xE95A203B1a91a908F9B9CE46459d101078c2c3cb",
+    "id": "0xe95a203b1a91a908f9b9ce46459d101078c2c3cb",
     "links": [
         {
             "name": "github",

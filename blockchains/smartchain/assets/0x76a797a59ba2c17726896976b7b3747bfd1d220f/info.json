@@ -1,13 +1,13 @@
 {
     "name": "Wrapped TON Coin",
-    "type": "BEP20",
     "symbol": "TONCOIN",
+    "type": "BEP20",
     "decimals": 9,
-    "website": "https://ton.org/",
     "description": "The Open Network is a blockchain-based decentralized computer network. TON is designed to enable processing millions of transactions per second via infinite sharding paradigm. It allows building Web 3.0 empowered by decentralized storage and DNS, instant payments and decentralized services.",
+    "website": "https://ton.org/",
     "explorer": "https://bscscan.com/token/0x76A797A59Ba2C17726896976B7B3747BfD1d220f",
     "status": "active",
-    "id": "0x76A797A59Ba2C17726896976B7B3747BfD1d220f",
+    "id": "0x76a797a59ba2c17726896976b7b3747bfd1d220f",
     "links": [
         {
             "name": "github",

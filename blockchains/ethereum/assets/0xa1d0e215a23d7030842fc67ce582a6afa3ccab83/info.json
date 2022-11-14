@@ -1,12 +1,12 @@
 {
     "name": "YFII",
-    "website": "https://yfii.finance/",
+    "symbol": "YFII",
+    "type": "ERC20",
+    "decimals": 18,
     "description": "YFII is a fork of Yearn.finance YFI with YIP 8 implemented.",
+    "website": "https://yfii.finance/",
     "explorer": "https://etherscan.io/token/0xa1d0E215a23d7030842FC67cE582a6aFa3CCaB83",
     "research": "https://research.binance.com/en/projects/dfimoney",
-    "type": "ERC20",
-    "symbol": "YFII",
-    "decimals": 18,
     "status": "active",
-    "id": "0xa1d0E215a23d7030842FC67cE582a6aFa3CCaB83"
+    "id": "0xa1d0e215a23d7030842fc67ce582a6afa3ccab83"
 }

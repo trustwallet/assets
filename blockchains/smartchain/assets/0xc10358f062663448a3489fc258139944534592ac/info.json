@@ -1,16 +1,13 @@
 {
     "name": "Blockchain Monster Hunt (BCMC)",
-    "type": "BEP20",
     "symbol": "BCMC",
+    "type": "BEP20",
     "decimals": 18,
-    "website": "https://bcmhunt.com",
     "description": "First Multichain NFT game",
+    "website": "https://bcmhunt.com",
     "explorer": "https://bscscan.com/token/0xc10358f062663448a3489fC258139944534592ac",
     "status": "active",
-    "id": "0xc10358f062663448a3489fC258139944534592ac",
-    "tags": [
-        "nft"
-    ],
+    "id": "0xc10358f062663448a3489fc258139944534592ac",
     "links": [
         {
             "name": "twitter",
@@ -44,5 +41,8 @@
             "name": "coingecko",
             "url": "https://coingecko.com/en/coins/blockchain-monster-hunt"
         }
+    ],
+    "tags": [
+        "nft"
     ]
 }

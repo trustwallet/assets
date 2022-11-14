@@ -1,14 +1,14 @@
 {
     "name": "Venus USDT",
-    "website": "https://venus.io/",
-    "description": "The Venus vTokens, which are self-contained borrowing and lending contracts. VToken contains the core logic and VBep20, VBUSD, VSXP, VUSDC, VUSDT, VXVS and VBNB add public interfaces for Bep20 tokens and bnb, respectively.",
-    "research": "https://research.binance.com/en/projects/venus",
-    "explorer": "https://bscscan.com/token/0xfD5840Cd36d94D7229439859C0112a4185BC0255",
-    "type": "BEP20",
     "symbol": "vUSDT",
+    "type": "BEP20",
     "decimals": 8,
+    "description": "The Venus vTokens, which are self-contained borrowing and lending contracts. VToken contains the core logic and VBep20, VBUSD, VSXP, VUSDC, VUSDT, VXVS and VBNB add public interfaces for Bep20 tokens and bnb, respectively.",
+    "website": "https://venus.io/",
+    "explorer": "https://bscscan.com/token/0xfD5840Cd36d94D7229439859C0112a4185BC0255",
+    "research": "https://research.binance.com/en/projects/venus",
     "status": "active",
-    "id": "0xfD5840Cd36d94D7229439859C0112a4185BC0255",
+    "id": "0xfd5840cd36d94d7229439859c0112a4185bc0255",
     "links": [
         {
             "name": "github",

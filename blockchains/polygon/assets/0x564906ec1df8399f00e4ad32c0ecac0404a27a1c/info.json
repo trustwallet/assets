@@ -1,18 +1,13 @@
 {
     "name": "Ambire Wallet",
-    "website": "https://ambire.com",
-    "description": "WALLET is the governance token of Ambire Wallet. It is also used as a user acquisition tool for marketing activities (referral program, rewards, etc.).",
-    "explorer": "https://polygonscan.com/token/0x564906ec1DF8399F00e4ad32c0eCAC0404a27A1c",
-    "type": "POLYGON",
     "symbol": "WALLET",
-    "status": "active",
+    "type": "POLYGON",
     "decimals": 18,
-    "id": "0x564906ec1DF8399F00e4ad32c0eCAC0404a27A1c",
-    "tags": [
-        "defi",
-        "governance",
-        "staking"
-    ],
+    "description": "WALLET is the governance token of Ambire Wallet. It is also used as a user acquisition tool for marketing activities (referral program, rewards, etc.).",
+    "website": "https://ambire.com",
+    "explorer": "https://polygonscan.com/token/0x564906ec1DF8399F00e4ad32c0eCAC0404a27A1c",
+    "status": "active",
+    "id": "0x564906ec1df8399f00e4ad32c0ecac0404a27a1c",
     "links": [
         {
             "name": "github",
@@ -50,5 +45,10 @@
             "name": "coingecko",
             "url": "https://coingecko.com/coins/ambire-wallet"
         }
+    ],
+    "tags": [
+        "defi",
+        "governance",
+        "staking"
     ]
 }

@@ -1,9 +1,13 @@
 {
     "name": "Singularity",
-    "website": "https://www.singularity.gold/",
-    "description": "Singularity is a metaverse gaming world of universe exploration and adventure.",
-    "explorer": "https://bscscan.com/token/0x5f50411CDE3eEC27b0eaC21691b4e500c69a5a2e",
+    "symbol": "SGLY",
     "type": "BEP20",
+    "decimals": 18,
+    "description": "Singularity is a metaverse gaming world of universe exploration and adventure.",
+    "website": "https://www.singularity.gold/",
+    "explorer": "https://bscscan.com/token/0x5f50411CDE3eEC27b0eaC21691b4e500c69a5a2e",
+    "status": "active",
+    "id": "0x5f50411cde3eec27b0eac21691b4e500c69a5a2e",
     "links": [
         {
             "name": "twitter",
@@ -22,10 +26,6 @@
             "url": "https://facebook.com/profile.php?id=100074305448608"
         }
     ],
-    "symbol": "SGLY",
-    "decimals": 18,
-    "status": "active",
-    "id": "0x5f50411CDE3eEC27b0eaC21691b4e500c69a5a2e",
     "tags": [
         "gamefi"
     ]

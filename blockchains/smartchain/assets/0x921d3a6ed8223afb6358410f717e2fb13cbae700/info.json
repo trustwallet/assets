@@ -1,16 +1,13 @@
 {
     "name": "QRKITA TOKEN",
-    "website": "https://www.qrkita.exchange",
-    "description": "We Are First Online Qris Platform In Indonesia. Qrkita Provides The Latest Technology For Online And Offline Merchant To Boost Their Sales.",
-    "explorer": "https://bscscan.com/token/0x921d3a6ed8223AFb6358410F717e2FB13cbae700",
-    "type": "BEP20",
     "symbol": "QRT",
+    "type": "BEP20",
     "decimals": 9,
+    "description": "We Are First Online Qris Platform In Indonesia. Qrkita Provides The Latest Technology For Online And Offline Merchant To Boost Their Sales.",
+    "website": "https://www.qrkita.exchange",
+    "explorer": "https://bscscan.com/token/0x921d3a6ed8223AFb6358410F717e2FB13cbae700",
     "status": "active",
-    "id": "0x921d3a6ed8223AFb6358410F717e2FB13cbae700",
-    "tags": [
-        "deflationary"
-    ],
+    "id": "0x921d3a6ed8223afb6358410f717e2fb13cbae700",
     "links": [
         {
             "name": "github",
@@ -24,5 +21,8 @@
             "name": "twitter",
             "url": "https://twitter.com/qrkitaexchanger?s=09"
         }
+    ],
+    "tags": [
+        "deflationary"
     ]
-} 
+}

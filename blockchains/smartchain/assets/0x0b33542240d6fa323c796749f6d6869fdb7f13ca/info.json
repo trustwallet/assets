@@ -1,13 +1,13 @@
 {
     "name": "Ethereum Meta",
-    "website": "https://ethermeta.com/",
-    "description": "If Ethereum is like http then Ethereum Meta is https — a secure transport layer",
-    "explorer": "https://bscscan.com/token/0x0b33542240d6fA323c796749F6D6869fdB7F13cA",
-    "type": "BEP20",
     "symbol": "ETHM",
+    "type": "BEP20",
     "decimals": 18,
+    "description": "If Ethereum is like http then Ethereum Meta is https — a secure transport layer",
+    "website": "https://ethermeta.com/",
+    "explorer": "https://bscscan.com/token/0x0b33542240d6fA323c796749F6D6869fdB7F13cA",
     "status": "active",
-    "id": "0x0b33542240d6fA323c796749F6D6869fdB7F13cA",
+    "id": "0x0b33542240d6fa323c796749f6d6869fdb7f13ca",
     "links": [
         {
             "name": "telegram",
@@ -22,4 +22,4 @@
             "url": "https://twitter.com/EthereumMeta"
         }
     ]
-}  
+}

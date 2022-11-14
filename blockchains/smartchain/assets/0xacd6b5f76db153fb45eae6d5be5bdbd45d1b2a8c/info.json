@@ -1,12 +1,11 @@
 {
     "name": "Peach Token",
-    "website": "https://peachswap.org/",
-    "description": "PeachSwap - An evolution of #Uniswap with $Peach tokenomics on Binance Smart Chain.",
-    "explorer": "https://bscscan.com/token/0xaCd6b5f76Db153FB45EAE6D5be5BDbd45d1b2A8C",
-    "research": "",
-    "type": "BEP20",
     "symbol": "PEACH",
+    "type": "BEP20",
     "decimals": 18,
+    "description": "PeachSwap - An evolution of #Uniswap with $Peach tokenomics on Binance Smart Chain.",
+    "website": "https://peachswap.org/",
+    "explorer": "https://bscscan.com/token/0xaCd6b5f76Db153FB45EAE6D5be5BDbd45d1b2A8C",
     "status": "active",
-    "id": "0xaCd6b5f76Db153FB45EAE6D5be5BDbd45d1b2A8C"
+    "id": "0xacd6b5f76db153fb45eae6d5be5bdbd45d1b2a8c"
 }

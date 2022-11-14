@@ -1,17 +1,14 @@
 {
     "name": "Compound",
-    "website": "https://compound.finance",
+    "symbol": "COMP",
+    "type": "ERC20",
+    "decimals": 18,
     "description": "Compound is the governance token for the Compound protocol.",
+    "website": "https://compound.finance",
     "explorer": "https://etherscan.io/token/0xc00e94Cb662C3520282E6f5717214004A7f26888",
     "research": "https://research.binance.com/en/projects/compound",
-    "type": "ERC20",
-    "symbol": "COMP",
-    "decimals": 18,
     "status": "active",
-    "id": "0xc00e94Cb662C3520282E6f5717214004A7f26888",
-    "tags": [
-        "defi"
-    ],
+    "id": "0xc00e94cb662c3520282e6f5717214004a7f26888",
     "links": [
         {
             "name": "blog",
@@ -25,5 +22,8 @@
             "name": "coingecko",
             "url": "https://coingecko.com/en/coins/compound-governance-token/"
         }
+    ],
+    "tags": [
+        "defi"
     ]
 }

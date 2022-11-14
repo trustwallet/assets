@@ -1,17 +1,14 @@
 {
     "name": "Binance-Peg BUSD",
-    "website": "https://paxos.com/busd",
+    "symbol": "BUSD",
+    "type": "BEP20",
+    "decimals": 18,
     "description": "Binance-Peg BUSD (BUSD BEP20) is a token issued by Binance on Smart Chain; its price is pegged to BUSD (BUSD ERC20) at a ratio of 1:1.",
+    "website": "https://paxos.com/busd",
     "explorer": "https://bscscan.com/token/0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56",
     "research": "https://research.binance.com/en/projects/binance-usd",
-    "type": "BEP20",
-    "symbol": "BUSD",
-    "decimals": 18,
     "status": "active",
-    "id": "0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56",
-    "tags": [
-        "binance-peg"
-    ],
+    "id": "0xe9e7cea3dedca5984780bafc599bd69add087d56",
     "links": [
         {
             "name": "github",
@@ -37,5 +34,8 @@
             "name": "coingecko",
             "url": "https://coingecko.com/en/coins/binance-usd/"
         }
+    ],
+    "tags": [
+        "binance-peg"
     ]
 }

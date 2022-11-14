@@ -1,16 +1,13 @@
 {
     "name": "VANCAT Token",
-    "website": "https://vancattoken.com/",
-    "description": "VANCAT Token is the governance token of the VANCAT platform. Users can mint Standard NFTs or Special NFTs with platform and get paid with VANCAT. The platform presents VANCAT Wallet App, VANSwap, gaming awards (play to earn) and its own metaverse.",
-    "explorer": "https://bscscan.com/token/0x0Da1774e58eD28fF9749340F116055F8d836A7C8",
-    "type": "BEP20",
     "symbol": "VANCAT",
+    "type": "BEP20",
     "decimals": 9,
+    "description": "VANCAT Token is the governance token of the VANCAT platform. Users can mint Standard NFTs or Special NFTs with platform and get paid with VANCAT. The platform presents VANCAT Wallet App, VANSwap, gaming awards (play to earn) and its own metaverse.",
+    "website": "https://vancattoken.com/",
+    "explorer": "https://bscscan.com/token/0x0Da1774e58eD28fF9749340F116055F8d836A7C8",
     "status": "active",
-    "id": "0x0Da1774e58eD28fF9749340F116055F8d836A7C8",
-    "tags": [
-        "deflationary"
-    ],
+    "id": "0x0da1774e58ed28ff9749340f116055f8d836a7c8",
     "links": [
         {
             "name": "telegram",
@@ -24,5 +21,8 @@
             "name": "coingecko",
             "url": "https://coingecko.com/en/coins/vancat"
         }
+    ],
+    "tags": [
+        "deflationary"
     ]
-} 
+}

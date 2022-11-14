@@ -1,13 +1,13 @@
 {
     "name": "USD Coin (PoS) (Portal from Polygon)",
-    "type": "BEP20",
     "symbol": "USDCpo",
+    "type": "BEP20",
     "decimals": 6,
     "description": "Cross Chain Portal Bridged Token",
     "website": "https://www.circle.com/en/usdc",
     "explorer": "https://bscscan.com/token/0x672147dD47674757C457eB155BAA382cc10705Dd",
     "status": "active",
-    "id": "0x672147dD47674757C457eB155BAA382cc10705Dd",
+    "id": "0x672147dd47674757c457eb155baa382cc10705dd",
     "tags": [
         "wrapped"
     ]

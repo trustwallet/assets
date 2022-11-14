@@ -1,16 +1,13 @@
 {
     "name": "Perpetual",
-    "website": "https://perp.fi",
-    "description": "Decentralized Perpetual Contract for Every Assets",
-    "explorer": "https://etherscan.io/token/0xbC396689893D065F41bc2C6EcbeE5e0085233447",
-    "type": "ERC20",
     "symbol": "PERP",
+    "type": "ERC20",
     "decimals": 18,
+    "description": "Decentralized Perpetual Contract for Every Assets",
+    "website": "https://perp.fi",
+    "explorer": "https://etherscan.io/token/0xbC396689893D065F41bc2C6EcbeE5e0085233447",
     "status": "active",
-    "id": "0xbC396689893D065F41bc2C6EcbeE5e0085233447",
-    "tags": [
-        "defi"
-    ],
+    "id": "0xbc396689893d065f41bc2c6ecbee5e0085233447",
     "links": [
         {
             "name": "github",
@@ -20,5 +17,8 @@
             "name": "whitepaper",
             "url": "https://docs.perp.fi/"
         }
+    ],
+    "tags": [
+        "defi"
     ]
 }

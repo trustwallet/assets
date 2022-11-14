@@ -1,14 +1,14 @@
 {
     "name": "pNetwork",
-    "website": "https://p.network",
+    "symbol": "PNT",
+    "type": "ERC20",
+    "decimals": 18,
     "description": "The heartbeat of cross-chain composability.",
+    "website": "https://p.network",
     "explorer": "https://etherscan.io/token/0x89Ab32156e46F46D02ade3FEcbe5Fc4243B9AAeD",
     "research": "https://research.binance.com/en/projects/pnetwork",
-    "type": "ERC20",
-    "symbol": "PNT",
-    "decimals": 18,
     "status": "active",
-    "id": "0x89Ab32156e46F46D02ade3FEcbe5Fc4243B9AAeD",
+    "id": "0x89ab32156e46f46d02ade3fecbe5fc4243b9aaed",
     "tags": [
         "governance"
     ]

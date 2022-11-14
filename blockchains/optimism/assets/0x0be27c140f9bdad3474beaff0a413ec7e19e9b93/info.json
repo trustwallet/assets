@@ -1,7 +1,7 @@
 {
     "name": "Market Neutral Yield ETH",
     "symbol": "MNYe",
-    "type": "ERC20",
+    "type": "OPTIMISM",
     "decimals": 18,
     "description": "The ETH Market Neutral Yield Index from the Index Coop automates a continuous basis trading strategy that returns a high, price neutral yield to token holders. Built using Set’s integration with Perpetual Protocol on Optimism, MNYe contains a fully hedged ETH position, with equivalent spot exposure and short exposure via perps.",
     "website": "https://www.indexcoop.com/",

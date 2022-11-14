@@ -1,16 +1,13 @@
 {
     "name": "CashCow",
-    "website": "https://cashcowprotocol.com",
-    "description": "CashCow is a fairly launched, low supply and highly deflationary DeFi Token that includes NFT and Play2Earn features",
-    "explorer": "https://bscscan.com/token/0x8B6fA031c7D2E60fbFe4E663EC1B8f37Df1ba483",
-    "type": "BEP20",
     "symbol": "COW",
+    "type": "BEP20",
     "decimals": 9,
+    "description": "CashCow is a fairly launched, low supply and highly deflationary DeFi Token that includes NFT and Play2Earn features",
+    "website": "https://cashcowprotocol.com",
+    "explorer": "https://bscscan.com/token/0x8B6fA031c7D2E60fbFe4E663EC1B8f37Df1ba483",
     "status": "active",
-    "id": "0x8B6fA031c7D2E60fbFe4E663EC1B8f37Df1ba483",
-    "tags": [
-        "deflationary"
-    ],
+    "id": "0x8b6fa031c7d2e60fbfe4e663ec1b8f37df1ba483",
     "links": [
         {
             "name": "twitter",
@@ -44,5 +41,8 @@
             "name": "coinmarketcap",
             "url": "https://coinmarketcap.com/currencies/cashcow"
         }
+    ],
+    "tags": [
+        "deflationary"
     ]
 }

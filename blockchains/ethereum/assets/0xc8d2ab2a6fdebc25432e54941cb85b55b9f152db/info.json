@@ -1,12 +1,11 @@
 {
     "name": "GRAP",
-    "website": "https://grap.finance",
-    "description": "Grap is a fork of the YAM project. But it came with correct 'rebase' and it fixed some obvious bugs. So it will be less trouble and more fun.",
-    "explorer": "https://etherscan.io/token/0xC8D2AB2a6FdEbC25432E54941cb85b55b9f152dB",
-    "research": "",
-    "type": "ERC20",
     "symbol": "GRAP",
+    "type": "ERC20",
     "decimals": 18,
+    "description": "Grap is a fork of the YAM project. But it came with correct 'rebase' and it fixed some obvious bugs. So it will be less trouble and more fun.",
+    "website": "https://grap.finance",
+    "explorer": "https://etherscan.io/token/0xC8D2AB2a6FdEbC25432E54941cb85b55b9f152dB",
     "status": "active",
-    "id": "0xC8D2AB2a6FdEbC25432E54941cb85b55b9f152dB"
+    "id": "0xc8d2ab2a6fdebc25432e54941cb85b55b9f152db"
 }

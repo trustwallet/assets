@@ -1,17 +1,13 @@
 {
     "name": "USDN",
-    "website": "https://neutrino.at",
-    "description": "Neutrino USDN is a stablecoin issued on Waves Protocol. Collaterization is based on NSBT. More details in WP.",
-    "explorer": "https://etherscan.io/token/0x674c6ad92fd080e4004b2312b45f796a192d27a0",
-    "type": "ERC20",
     "symbol": "USDN",
+    "type": "ERC20",
     "decimals": 18,
+    "description": "Neutrino USDN is a stablecoin issued on Waves Protocol. Collaterization is based on NSBT. More details in WP.",
+    "website": "https://neutrino.at",
+    "explorer": "https://etherscan.io/token/0x674c6ad92fd080e4004b2312b45f796a192d27a0",
     "status": "active",
-    "id": "0x674C6Ad92Fd080e4004b2312b45f796a192D27a0",
-    "tags": [
-        "defi",
-        "stablecoin"
-    ],
+    "id": "0x674c6ad92fd080e4004b2312b45f796a192d27a0",
     "links": [
         {
             "name": "github",
@@ -41,5 +37,9 @@
             "name": "coingecko",
             "url": "https://coingecko.com/en/coins/neutrino/"
         }
+    ],
+    "tags": [
+        "defi",
+        "stablecoin"
     ]
 }

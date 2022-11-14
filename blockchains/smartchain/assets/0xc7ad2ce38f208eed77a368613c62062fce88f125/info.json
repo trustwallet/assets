@@ -1,13 +1,13 @@
 {
     "name": "AERDROP",
-    "website": "https://www.aerdrop.finance/",
-    "description": "$AER token offers holders redistribution %, $AER airdrops & free access to the first Defi launchpad for new tokens offering exclusive airdrops.",
-    "explorer": "https://bscscan.com/token/0xc7Ad2CE38f208eED77a368613C62062fCE88f125",
-    "type": "BEP20",
     "symbol": "AER",
+    "type": "BEP20",
     "decimals": 9,
+    "description": "$AER token offers holders redistribution %, $AER airdrops & free access to the first Defi launchpad for new tokens offering exclusive airdrops.",
+    "website": "https://www.aerdrop.finance/",
+    "explorer": "https://bscscan.com/token/0xc7Ad2CE38f208eED77a368613C62062fCE88f125",
     "status": "active",
-    "id": "0xc7Ad2CE38f208eED77a368613C62062fCE88f125",
+    "id": "0xc7ad2ce38f208eed77a368613c62062fce88f125",
     "links": [
         {
             "name": "coinmarketcap",

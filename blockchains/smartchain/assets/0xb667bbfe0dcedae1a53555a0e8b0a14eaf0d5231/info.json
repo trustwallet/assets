@@ -1,14 +1,13 @@
 {
     "name": "SafeComet",
-    "website": "https://safecometcrypto.com",
-    "description": "Self generating liquidity token - Reflection paid back to holders.",
-    "explorer": "https://bscscan.com/token/0xB667bbfE0DcEdae1a53555a0e8B0a14EAf0d5231",
-    "research": "",
-    "type": "BEP20",
     "symbol": "SAFECOMET",
+    "type": "BEP20",
     "decimals": 9,
+    "description": "Self generating liquidity token - Reflection paid back to holders.",
+    "website": "https://safecometcrypto.com",
+    "explorer": "https://bscscan.com/token/0xB667bbfE0DcEdae1a53555a0e8B0a14EAf0d5231",
     "status": "active",
-    "id": "0xB667bbfE0DcEdae1a53555a0e8B0a14EAf0d5231",
+    "id": "0xb667bbfe0dcedae1a53555a0e8b0a14eaf0d5231",
     "tags": [
         "deflationary"
     ]

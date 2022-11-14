@@ -1,14 +1,14 @@
 {
     "name": "Venus LINK",
-    "website": "https://venus.io/",
-    "description": "The Venus vTokens, which are self-contained borrowing and lending contracts. VToken contains the core logic and VBep20, VBUSD, VSXP, VUSDC, VUSDT, VXVS and VBNB add public interfaces for Bep20 tokens and bnb, respectively.",
-    "research": "https://research.binance.com/en/projects/venus",
-    "explorer": "https://bscscan.com/token/0x650b940a1033B8A1b1873f78730FcFC73ec11f1f",
-    "type": "BEP20",
     "symbol": "vLINK",
+    "type": "BEP20",
     "decimals": 8,
+    "description": "The Venus vTokens, which are self-contained borrowing and lending contracts. VToken contains the core logic and VBep20, VBUSD, VSXP, VUSDC, VUSDT, VXVS and VBNB add public interfaces for Bep20 tokens and bnb, respectively.",
+    "website": "https://venus.io/",
+    "explorer": "https://bscscan.com/token/0x650b940a1033B8A1b1873f78730FcFC73ec11f1f",
+    "research": "https://research.binance.com/en/projects/venus",
     "status": "active",
-    "id": "0x650b940a1033B8A1b1873f78730FcFC73ec11f1f",
+    "id": "0x650b940a1033b8a1b1873f78730fcfc73ec11f1f",
     "links": [
         {
             "name": "github",

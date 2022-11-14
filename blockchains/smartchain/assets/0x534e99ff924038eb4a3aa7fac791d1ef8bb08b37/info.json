@@ -1,7 +1,13 @@
 {
     "name": "Tiny Titans",
-    "website": "https://tinytitans.fi",
+    "symbol": "TITS",
+    "type": "BEP20",
+    "decimals": 18,
     "description": "World of Tiny Titans. Tiny Titans — collectable & tradeable NFTs on BSC which you can train, level and win prices.",
+    "website": "https://tinytitans.fi",
+    "explorer": "https://bscscan.com/token/0x534E99ff924038eB4a3aa7fac791D1eF8BB08b37",
+    "status": "abandoned",
+    "id": "0x534e99ff924038eb4a3aa7fac791d1ef8bb08b37",
     "links": [
         {
             "name": "twitter",
@@ -19,11 +25,5 @@
             "name": "source_code",
             "url": "https://bscscan.com/address/0x534E99ff924038eB4a3aa7fac791D1eF8BB08b37#code"
         }
-    ],
-    "explorer": "https://bscscan.com/token/0x534E99ff924038eB4a3aa7fac791D1eF8BB08b37",
-    "type": "BEP20",
-    "symbol": "TITS",
-    "decimals": 18,
-    "status": "abandoned",
-    "id": "0x534E99ff924038eB4a3aa7fac791D1eF8BB08b37"
+    ]
 }

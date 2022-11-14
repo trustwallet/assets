@@ -1,11 +1,11 @@
 {
     "name": "BeforeCoinMarketCap",
-    "website": "https://beta.beforecoinmarketcap.com/",
-    "description": "BeforeCoinMarketCap is a platform for tracking the initial placement of tokens/coins, and audit of valid tokens with a small volume. The platform rewards users with valuable information and tokens of their own ecosystem token (BCMC1).",
-    "explorer": "https://etherscan.io/token/0xD5e2A54Fef5f9E4A6b21EC646Bbed7A160a00F18",
-    "type": "ERC20",
     "symbol": "BCMC1",
+    "type": "ERC20",
     "decimals": 18,
+    "description": "BeforeCoinMarketCap is a platform for tracking the initial placement of tokens/coins, and audit of valid tokens with a small volume. The platform rewards users with valuable information and tokens of their own ecosystem token (BCMC1).",
+    "website": "https://beta.beforecoinmarketcap.com/",
+    "explorer": "https://etherscan.io/token/0xD5e2A54Fef5f9E4A6b21EC646Bbed7A160a00F18",
     "status": "active",
-    "id": "0xD5e2A54Fef5f9E4A6b21EC646Bbed7A160a00F18"
+    "id": "0xd5e2a54fef5f9e4a6b21ec646bbed7a160a00f18"
 }

@@ -1,13 +1,13 @@
 {
     "name": "MoonMoon",
-    "website": "https://moonmoon.cash",
-    "description": "Use token in MoonMoon ecosystem, and generate passive yield with transfer fee going to holders and pancakeswap liquidity.",
-    "explorer": "https://bscscan.com/token/0x0e0e877894a101Ad8711AE3A0194Fa44Ca837a79",
-    "type": "BEP20",
     "symbol": "MOONMOON",
+    "type": "BEP20",
     "decimals": 9,
+    "description": "Use token in MoonMoon ecosystem, and generate passive yield with transfer fee going to holders and pancakeswap liquidity.",
+    "website": "https://moonmoon.cash",
+    "explorer": "https://bscscan.com/token/0x0e0e877894a101Ad8711AE3A0194Fa44Ca837a79",
     "status": "active",
-    "id": "0x0e0e877894a101Ad8711AE3A0194Fa44Ca837a79",
+    "id": "0x0e0e877894a101ad8711ae3a0194fa44ca837a79",
     "links": [
         {
             "name": "twitter",

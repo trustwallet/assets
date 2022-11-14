@@ -1,16 +1,13 @@
 {
     "name": "Useless",
-    "website": "https://uselesscrypto.com",
-    "description": "Useless is the first token with an auto-stabilizing liquidity pool fueled by external revenue. Our vision is to bring mainstream accessibility to the crypto-space with easy-to-use mobile apps and dApps.",
-    "explorer": "https://bscscan.com/token/0x2cd2664Ce5639e46c6a3125257361e01d0213657",
-    "type": "BEP20",
     "symbol": "USELESS",
+    "type": "BEP20",
     "decimals": 9,
+    "description": "Useless is the first token with an auto-stabilizing liquidity pool fueled by external revenue. Our vision is to bring mainstream accessibility to the crypto-space with easy-to-use mobile apps and dApps.",
+    "website": "https://uselesscrypto.com",
+    "explorer": "https://bscscan.com/token/0x2cd2664Ce5639e46c6a3125257361e01d0213657",
     "status": "active",
-    "id": "0x2cd2664Ce5639e46c6a3125257361e01d0213657",
-    "tags": [
-        "deflationary"
-    ],
+    "id": "0x2cd2664ce5639e46c6a3125257361e01d0213657",
     "links": [
         {
             "name": "blog",
@@ -32,5 +29,8 @@
             "name": "telegram",
             "url": "https://t.me/uselesscrypto"
         }
+    ],
+    "tags": [
+        "deflationary"
     ]
 }

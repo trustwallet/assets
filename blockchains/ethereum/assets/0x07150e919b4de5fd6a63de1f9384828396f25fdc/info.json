@@ -1,13 +1,13 @@
 {
     "name": "Base Protocol",
-    "website": "https://baseprotocol.org",
-    "description": "Base Protocol (BASE) is a token whose price is pegged to the total market cap of all cryptocurrencies at a ratio of 1:1 trillion. BASE acts as a market index, giving holders exposure to the entire crypto industry with one token.",
-    "explorer": "https://etherscan.io/token/0x07150e919B4De5fD6a63DE1F9384828396f25fDC",
-    "type": "ERC20",
     "symbol": "BASE",
+    "type": "ERC20",
     "decimals": 9,
+    "description": "Base Protocol (BASE) is a token whose price is pegged to the total market cap of all cryptocurrencies at a ratio of 1:1 trillion. BASE acts as a market index, giving holders exposure to the entire crypto industry with one token.",
+    "website": "https://baseprotocol.org",
+    "explorer": "https://etherscan.io/token/0x07150e919B4De5fD6a63DE1F9384828396f25fDC",
     "status": "active",
-    "id": "0x07150e919B4De5fD6a63DE1F9384828396f25fDC",
+    "id": "0x07150e919b4de5fd6a63de1f9384828396f25fdc",
     "links": [
         {
             "name": "twitter",

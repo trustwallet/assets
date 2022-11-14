@@ -1,17 +1,13 @@
 {
     "name": "Open World",
-    "website": "https://openworld.vision/",
-    "description": "OpenWorld works with blockchain technology to build a distinct metaverse world with a sound circular economy based on real monetary flow.",
-    "explorer": "https://bscscan.com/token/0x27a339d9B59b21390d7209b78a839868E319301B",
-    "type": "BEP20",
     "symbol": "OPEN",
+    "type": "BEP20",
     "decimals": 18,
+    "description": "OpenWorld works with blockchain technology to build a distinct metaverse world with a sound circular economy based on real monetary flow.",
+    "website": "https://openworld.vision/",
+    "explorer": "https://bscscan.com/token/0x27a339d9B59b21390d7209b78a839868E319301B",
     "status": "active",
-    "id": "0x27a339d9B59b21390d7209b78a839868E319301B",
-    "tags": [
-        "defi",
-        "gamefi"
-    ],
+    "id": "0x27a339d9b59b21390d7209b78a839868e319301b",
     "links": [
         {
             "name": "twitter",
@@ -29,5 +25,9 @@
             "name": "coingecko",
             "url": "https://coingecko.com/en/coins/cryptowar-xblade"
         }
+    ],
+    "tags": [
+        "defi",
+        "gamefi"
     ]
 }

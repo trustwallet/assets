@@ -1,17 +1,13 @@
 {
     "name": "Alpha Finance Lab",
-    "website": "https://alphafinance.io",
-    "description": "Alpha Finance Lab is an ecosystem of cross-chain DeFi products that will interoperate to bring optimal alpha returns to users. Alpha products focus on capturing unaddressed demand in DeFi in an innovative and user friendly way.",
-    "explorer": "https://etherscan.io/token/0xa1faa113cbE53436Df28FF0aEe54275c13B40975",
-    "data_source": "crowd",
-    "type": "ERC20",
     "symbol": "ALPHA",
+    "type": "ERC20",
     "decimals": 18,
+    "description": "Alpha Finance Lab is an ecosystem of cross-chain DeFi products that will interoperate to bring optimal alpha returns to users. Alpha products focus on capturing unaddressed demand in DeFi in an innovative and user friendly way.",
+    "website": "https://alphafinance.io",
+    "explorer": "https://etherscan.io/token/0xa1faa113cbE53436Df28FF0aEe54275c13B40975",
     "status": "active",
-    "id": "0xa1faa113cbE53436Df28FF0aEe54275c13B40975",
-    "tags": [
-        "defi"
-    ],
+    "id": "0xa1faa113cbe53436df28ff0aee54275c13b40975",
     "links": [
         {
             "name": "github",
@@ -29,5 +25,9 @@
             "name": "discord",
             "url": "https://discord.com/invite/Z2vuKDT"
         }
-    ]
+    ],
+    "tags": [
+        "defi"
+    ],
+    "data_source": "crowd"
 }

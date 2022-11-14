@@ -1,17 +1,14 @@
 {
     "name": "Binance-Peg Synthetix",
-    "website": "https://synthetix.io",
+    "symbol": "SNX",
+    "type": "BEP20",
+    "decimals": 18,
     "description": "Binance-Peg Synthetix (SNX BEP20) is a token issued by Binance on Smart Chain; its price is pegged to Synthetix (SNX ERC20) at a ratio of 1:1.",
+    "website": "https://synthetix.io",
     "explorer": "https://bscscan.com/token/0x9Ac983826058b8a9C7Aa1C9171441191232E8404",
     "research": "https://research.binance.com/en/projects/synthetix",
-    "type": "BEP20",
-    "symbol": "SNX",
-    "decimals": 18,
     "status": "active",
-    "id": "0x9Ac983826058b8a9C7Aa1C9171441191232E8404",
-    "tags": [
-        "binance-peg"
-    ],
+    "id": "0x9ac983826058b8a9c7aa1c9171441191232e8404",
     "links": [
         {
             "name": "github",
@@ -37,5 +34,8 @@
             "name": "coingecko",
             "url": "https://coingecko.com/en/coins/havven/"
         }
+    ],
+    "tags": [
+        "binance-peg"
     ]
 }

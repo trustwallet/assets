@@ -1,16 +1,13 @@
 {
     "name": "ShibaZilla",
-    "website": "https://shibazilla.com",
-    "description": "ShibaZilla aims to go above and beyond for its community, by providing investors 5% liquidity and 5% Reflection Rewards.",
-    "explorer": "https://bscscan.com/token/0x68810a6F5bB0491cB9Ccf8c52735A1acf5f28009",
-    "type": "BEP20",
     "symbol": "ShibaZilla",
+    "type": "BEP20",
     "decimals": 9,
+    "description": "ShibaZilla aims to go above and beyond for its community, by providing investors 5% liquidity and 5% Reflection Rewards.",
+    "website": "https://shibazilla.com",
+    "explorer": "https://bscscan.com/token/0x68810a6F5bB0491cB9Ccf8c52735A1acf5f28009",
     "status": "active",
-    "id": "0x68810a6F5bB0491cB9Ccf8c52735A1acf5f28009",
-    "tags": [
-        "deflationary"
-    ],
+    "id": "0x68810a6f5bb0491cb9ccf8c52735a1acf5f28009",
     "links": [
         {
             "name": "telegram",
@@ -24,5 +21,8 @@
             "name": "coinmarketcap",
             "url": "https://coinmarketcap.com/ru/currencies/shibazillacoin/"
         }
+    ],
+    "tags": [
+        "deflationary"
     ]
 }

@@ -1,11 +1,11 @@
 {
     "name": "Aave aUniSETHETH",
-    "website": "https://aave.com",
-    "description": "Aave UniSETHETH is an interest bearing token pegged 1:1 to the underlying SETH and ETH deposited in the Uniswap Market of Aave Protocol.",
-    "explorer": "https://etherscan.io/token/0x84BBcaB430717ff832c3904fa6515f97fc63C76F",
-    "type": "ERC20",
     "symbol": "aUniSETHETH",
+    "type": "ERC20",
     "decimals": 18,
+    "description": "Aave UniSETHETH is an interest bearing token pegged 1:1 to the underlying SETH and ETH deposited in the Uniswap Market of Aave Protocol.",
+    "website": "https://aave.com",
+    "explorer": "https://etherscan.io/token/0x84BBcaB430717ff832c3904fa6515f97fc63C76F",
     "status": "active",
-    "id": "0x84BBcaB430717ff832c3904fa6515f97fc63C76F"
+    "id": "0x84bbcab430717ff832c3904fa6515f97fc63c76f"
 }

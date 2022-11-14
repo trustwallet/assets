@@ -1,16 +1,13 @@
 {
     "name": "Magic Internet Money",
-    "website": "https://abracadabra.money/",
-    "description": "MIM is a stablecoin backed by interest bearing collateral",
-    "explorer": "https://etherscan.io/token/0x99d8a9c45b2eca8864373a26d1459e3dff1e17f3",
-    "type": "ERC20",
     "symbol": "MIM",
+    "type": "ERC20",
     "decimals": 18,
+    "description": "MIM is a stablecoin backed by interest bearing collateral",
+    "website": "https://abracadabra.money/",
+    "explorer": "https://etherscan.io/token/0x99d8a9c45b2eca8864373a26d1459e3dff1e17f3",
     "status": "active",
-    "id": "0x99D8a9C45b2ecA8864373A26D1459e3Dff1e17F3",
-    "tags": [
-        "defi"
-    ],
+    "id": "0x99d8a9c45b2eca8864373a26d1459e3dff1e17f3",
     "links": [
         {
             "name": "github",
@@ -24,5 +21,8 @@
             "name": "coingecko",
             "url": "https://coingecko.com/en/coins/magic-internet-money/"
         }
+    ],
+    "tags": [
+        "defi"
     ]
 }

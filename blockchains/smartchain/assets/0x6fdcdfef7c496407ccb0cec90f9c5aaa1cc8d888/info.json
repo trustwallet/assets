@@ -1,17 +1,14 @@
 {
     "name": "VeChain",
-    "website": "https://vechain.org",
-    "description": "VeChain is the world’s leading blockchain platform offering Blockchain-as-a-Service to enterprises for products and information. VeChain strives to build a trust-free and distributed business ecosystem.",
-    "explorer": "https://bscscan.com/token/0x6FDcdfef7c496407cCb0cEC90f9C5Aaa1Cc8D888",
-    "research": "https://research.binance.com/en/projects/vechain",
     "symbol": "VET",
     "type": "BEP20",
     "decimals": 18,
+    "description": "VeChain is the world’s leading blockchain platform offering Blockchain-as-a-Service to enterprises for products and information. VeChain strives to build a trust-free and distributed business ecosystem.",
+    "website": "https://vechain.org",
+    "explorer": "https://bscscan.com/token/0x6FDcdfef7c496407cCb0cEC90f9C5Aaa1Cc8D888",
+    "research": "https://research.binance.com/en/projects/vechain",
     "status": "active",
-    "id": "0x6FDcdfef7c496407cCb0cEC90f9C5Aaa1Cc8D888",
-    "tags": [
-        "binance-peg"
-    ],
+    "id": "0x6fdcdfef7c496407ccb0cec90f9c5aaa1cc8d888",
     "links": [
         {
             "name": "github",
@@ -41,5 +38,8 @@
             "name": "coingecko",
             "url": "https://coingecko.com/coins/vechain"
         }
+    ],
+    "tags": [
+        "binance-peg"
     ]
 }

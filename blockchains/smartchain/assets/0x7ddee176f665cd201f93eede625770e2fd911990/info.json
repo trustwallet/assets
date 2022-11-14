@@ -1,17 +1,13 @@
 {
     "name": "pTokens GALA",
-    "website": "https://gala.games/",
-    "description": "Gala Games is dedicated to decentralizing the multi-billion dollar gaming industry by giving players access to their in-game items.",
-    "explorer": "https://bscscan.com/token/0x7dDEE176F665cD201F93eEDE625770E2fD911990",
-    "type": "BEP20",
     "symbol": "GALA",
+    "type": "BEP20",
     "decimals": 18,
+    "description": "Gala Games is dedicated to decentralizing the multi-billion dollar gaming industry by giving players access to their in-game items.",
+    "website": "https://gala.games/",
+    "explorer": "https://bscscan.com/token/0x7dDEE176F665cD201F93eEDE625770E2fD911990",
     "status": "active",
-    "id": "0x7dDEE176F665cD201F93eEDE625770E2fD911990",
-    "tags": [
-        "nft",
-        "gamefi"
-    ],
+    "id": "0x7ddee176f665cd201f93eede625770e2fd911990",
     "links": [
         {
             "name": "telegram",
@@ -25,5 +21,9 @@
             "name": "coinmarketcap",
             "url": "https://coinmarketcap.com/currencies/gala/"
         }
+    ],
+    "tags": [
+        "nft",
+        "gamefi"
     ]
 }

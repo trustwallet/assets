@@ -1,14 +1,13 @@
 {
     "name": "QUSD",
-    "website": "https://qian.finance",
-    "description": "QUSD is the first kind of stablecoin of QIAN protocol. In the future, QIAN will launch QHKD, QEUR and other stable assets).",
-    "explorer": "https://etherscan.io/token/0x59d4CCC94A9C4C3d3b4bA2Aa343a9bDF95145DD1",
-    "audit_report": "https://qian.finance/PeckShield-Audit-Report-QIAN2-v1.0.pdf",
-    "type": "ERC20",
     "symbol": "QUSD",
+    "type": "ERC20",
     "decimals": 18,
+    "description": "QUSD is the first kind of stablecoin of QIAN protocol. In the future, QIAN will launch QHKD, QEUR and other stable assets).",
+    "website": "https://qian.finance",
+    "explorer": "https://etherscan.io/token/0x59d4CCC94A9C4C3d3b4bA2Aa343a9bDF95145DD1",
     "status": "active",
-    "id": "0x59d4CCC94A9C4C3d3b4bA2Aa343a9bDF95145DD1",
+    "id": "0x59d4ccc94a9c4c3d3b4ba2aa343a9bdf95145dd1",
     "links": [
         {
             "name": "whitepaper",
@@ -18,5 +17,6 @@
             "name": "github",
             "url": "https://github.com/QIAN-Protocol/QIAN"
         }
-    ]
+    ],
+    "audit_report": "https://qian.finance/PeckShield-Audit-Report-QIAN2-v1.0.pdf"
 }

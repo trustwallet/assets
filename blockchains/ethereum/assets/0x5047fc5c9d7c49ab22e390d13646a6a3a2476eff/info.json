@@ -1,16 +1,13 @@
 {
     "name": "Stable WING",
-    "website": "app.ichi.org",
-    "description": "oneWING is an ICHI-created stablecoin for Wing.",
-    "explorer": "https://etherscan.io/token/0x5047fc5C9D7c49Ab22e390d13646a6A3a2476eff",
-    "type": "ERC20",
     "symbol": "oneWING",
+    "type": "ERC20",
     "decimals": 18,
+    "description": "oneWING is an ICHI-created stablecoin for Wing.",
+    "website": "app.ichi.org",
+    "explorer": "https://etherscan.io/token/0x5047fc5C9D7c49Ab22e390d13646a6A3a2476eff",
     "status": "active",
-    "id": "0x5047fc5C9D7c49Ab22e390d13646a6A3a2476eff",
-    "tags": [
-        "defi"
-    ],
+    "id": "0x5047fc5c9d7c49ab22e390d13646a6a3a2476eff",
     "links": [
         {
             "name": "github",
@@ -32,5 +29,8 @@
             "name": "discord",
             "url": "https://discord.com/invite/DvsYCfK8"
         }
+    ],
+    "tags": [
+        "defi"
     ]
 }

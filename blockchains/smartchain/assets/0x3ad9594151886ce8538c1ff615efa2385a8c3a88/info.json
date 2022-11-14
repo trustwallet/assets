@@ -1,16 +1,13 @@
 {
     "name": "SafeMars",
-    "website": "https://www.safemarscrypto.com",
-    "description": "Autonomous yield and liquidity generation protocol on BSC",
-    "explorer": "https://bscscan.com/token/0x3aD9594151886Ce8538C1ff615EFa2385a8C3A88",
-    "type": "BEP20",
     "symbol": "SAFEMARS",
+    "type": "BEP20",
     "decimals": 9,
+    "description": "Autonomous yield and liquidity generation protocol on BSC",
+    "website": "https://www.safemarscrypto.com",
+    "explorer": "https://bscscan.com/token/0x3aD9594151886Ce8538C1ff615EFa2385a8C3A88",
     "status": "active",
-    "id": "0x3aD9594151886Ce8538C1ff615EFa2385a8C3A88",
-    "tags": [
-        "deflationary"
-    ],
+    "id": "0x3ad9594151886ce8538c1ff615efa2385a8c3a88",
     "links": [
         {
             "name": "twitter",
@@ -20,5 +17,8 @@
             "name": "telegram",
             "url": "https://t.me/safemars"
         }
+    ],
+    "tags": [
+        "deflationary"
     ]
 }

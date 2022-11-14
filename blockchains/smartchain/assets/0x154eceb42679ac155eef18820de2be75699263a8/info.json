@@ -1,16 +1,13 @@
 {
     "name": "MamyShibaInu",
-    "type": "BEP20",
     "symbol": "MamySHIBA",
+    "type": "BEP20",
     "decimals": 9,
-    "website": "https://mamyshibainu.com/",
     "description": "The amount of Mamy Shiba grow every day in your wallet as all holders automatically receive a 2% fee from every buy transaction and 7% fee from every sell transaction that happens on the Mamy Shiba network..",
+    "website": "https://mamyshibainu.com/",
     "explorer": "https://bscscan.com/token/0x154ECeB42679ac155EeF18820dE2Be75699263A8",
     "status": "active",
-    "id": "0x154ECeB42679ac155EeF18820dE2Be75699263A8",
-    "tags": [
-        "deflationary"
-    ],
+    "id": "0x154eceb42679ac155eef18820de2be75699263a8",
     "links": [
         {
             "name": "github",
@@ -24,5 +21,8 @@
             "name": "telegram",
             "url": "https://t.me/Mamyshibainuchannel"
         }
+    ],
+    "tags": [
+        "deflationary"
     ]
 }

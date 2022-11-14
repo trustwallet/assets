@@ -1,12 +1,12 @@
 {
     "name": "SushiToken",
-    "website": "https://sushiswap.fi",
+    "symbol": "SUSHI",
+    "type": "BEP2",
+    "decimals": 8,
     "description": "SushiSwap claims to be an evolution of #Uniswap with $SUSHI tokenomics.",
+    "website": "https://sushiswap.fi",
     "explorer": "https://explorer.binance.org/asset/SUSHI-134",
     "research": "https://research.binance.com/en/projects/sushi",
-    "type": "BEP2",
-    "symbol": "SUSHI",
-    "decimals": 8,
     "status": "active",
-    "id": "SUSHI-134"
+    "id": "sushi-134"
 }

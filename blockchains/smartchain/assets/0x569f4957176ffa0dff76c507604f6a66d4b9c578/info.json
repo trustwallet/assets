@@ -1,16 +1,13 @@
 {
     "name": "Cryptostone",
-    "type": "BEP20",
     "symbol": "CPS",
+    "type": "BEP20",
     "decimals": 18,
-    "website": "https://www.crypto-stone.io/",
     "description": "Cryptostone is a disruptive innovation and fully anonymous No-KYC blockchain financial ecosystem that utilizes blockchain technology as a financial tool in people's lives. Cryptostone token is the native utility token of the Cryptostone project.",
+    "website": "https://www.crypto-stone.io/",
     "explorer": "https://bscscan.com/token/0x569f4957176Ffa0dff76c507604f6a66d4B9C578",
     "status": "active",
-    "id": "0x569f4957176Ffa0dff76c507604f6a66d4B9C578",
-    "tags": [
-        "staking-native"
-    ],
+    "id": "0x569f4957176ffa0dff76c507604f6a66d4b9c578",
     "links": [
         {
             "name": "twitter",
@@ -36,5 +33,8 @@
             "name": "medium",
             "url": "https://crypto-stone.medium.com/"
         }
+    ],
+    "tags": [
+        "staking-native"
     ]
 }

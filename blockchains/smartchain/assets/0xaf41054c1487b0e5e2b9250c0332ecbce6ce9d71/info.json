@@ -1,16 +1,13 @@
 {
     "name": "Ellipsis X",
-    "website": "https://ellipsis.finance/",
-    "description": "Ellipsis Finance aims to offer secure low-slippage stable swapping.",
-    "explorer": "https://bscscan.com/token/0xAf41054C1487b0e5E2B9250C0332eCBCe6CE9d71",
-    "type": "BEP20",
     "symbol": "EPX",
+    "type": "BEP20",
     "decimals": 18,
+    "description": "Ellipsis Finance aims to offer secure low-slippage stable swapping.",
+    "website": "https://ellipsis.finance/",
+    "explorer": "https://bscscan.com/token/0xAf41054C1487b0e5E2B9250C0332eCBCe6CE9d71",
     "status": "active",
-    "id": "0xAf41054C1487b0e5E2B9250C0332eCBCe6CE9d71",
-    "tags": [
-        "defi"
-    ],
+    "id": "0xaf41054c1487b0e5e2b9250c0332ecbce6ce9d71",
     "links": [
         {
             "name": "twitter",
@@ -28,5 +25,8 @@
             "name": "coinmarketcap",
             "url": "https://coinmarketcap.com/currencies/ellipsis/"
         }
+    ],
+    "tags": [
+        "defi"
     ]
 }

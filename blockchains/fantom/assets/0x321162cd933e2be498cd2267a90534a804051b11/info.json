@@ -1,17 +1,13 @@
 {
     "name": "Wrapped Bitcoin",
-    "website": "https://wbtc.network",
-    "description": "Wrapped Bitcoin (WBTC) is the first ERC20 token backed 1:1 with Bitcoin.",
-    "explorer": "https://ftmscan.com/token/0x321162Cd933E2Be498Cd2267a90534A804051b11",
-    "type": "FANTOM",
     "symbol": "BTC",
+    "type": "FANTOM",
     "decimals": 8,
+    "description": "Wrapped Bitcoin (WBTC) is the first ERC20 token backed 1:1 with Bitcoin.",
+    "website": "https://wbtc.network",
+    "explorer": "https://ftmscan.com/token/0x321162Cd933E2Be498Cd2267a90534A804051b11",
     "status": "active",
-    "id": "0x321162Cd933E2Be498Cd2267a90534A804051b11",
-    "tags": [
-        "defi",
-        "wrapped"
-    ],
+    "id": "0x321162cd933e2be498cd2267a90534a804051b11",
     "links": [
         {
             "name": "whitepaper",
@@ -25,5 +21,9 @@
             "name": "coingecko",
             "url": "https://coingecko.com/en/coins/wrapped-bitcoin/"
         }
+    ],
+    "tags": [
+        "defi",
+        "wrapped"
     ]
 }

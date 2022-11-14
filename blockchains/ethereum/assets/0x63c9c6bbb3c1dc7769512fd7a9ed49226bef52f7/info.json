@@ -1,11 +1,11 @@
 {
     "name": "WrapETH",
-    "website": "https://ecocelium.io",
-    "description": "Wrapped version of Ethereum (ETH)",
-    "explorer": "https://etherscan.io/token/0x63c9c6BBb3C1dC7769512fD7a9ED49226bEf52f7",
-    "type": "ERC20",
     "symbol": "eETH",
+    "type": "ERC20",
     "decimals": 18,
+    "description": "Wrapped version of Ethereum (ETH)",
+    "website": "https://ecocelium.io",
+    "explorer": "https://etherscan.io/token/0x63c9c6BBb3C1dC7769512fD7a9ED49226bEf52f7",
     "status": "active",
-    "id": "0x63c9c6BBb3C1dC7769512fD7a9ED49226bEf52f7"
+    "id": "0x63c9c6bbb3c1dc7769512fd7a9ed49226bef52f7"
 }

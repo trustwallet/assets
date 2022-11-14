@@ -1,16 +1,13 @@
 {
     "name": "1INCH Token",
-    "website": "https://1inch.exchange/",
-    "description": "1inch is a decentralized exchange (DEX) aggregator, connecting several DEXes into one platform to allow its users to find the most efficient swapping routes across all platforms. In order for a user to find the best price for a swap, they need to look at every exchange — DEX aggregators eliminate the need for manually checking, bringing efficiency to swapping on DEXs.",
-    "explorer": "https://etherscan.io/token/0x111111111117dC0aa78b770fA6A738034120C302",
-    "type": "ERC20",
     "symbol": "1INCH",
+    "type": "ERC20",
     "decimals": 18,
+    "description": "1inch is a decentralized exchange (DEX) aggregator, connecting several DEXes into one platform to allow its users to find the most efficient swapping routes across all platforms. In order for a user to find the best price for a swap, they need to look at every exchange — DEX aggregators eliminate the need for manually checking, bringing efficiency to swapping on DEXs.",
+    "website": "https://1inch.exchange/",
+    "explorer": "https://etherscan.io/token/0x111111111117dC0aa78b770fA6A738034120C302",
     "status": "active",
-    "id": "0x111111111117dC0aa78b770fA6A738034120C302",
-    "tags": [
-        "defi"
-    ],
+    "id": "0x111111111117dc0aa78b770fa6a738034120c302",
     "links": [
         {
             "name": "github",
@@ -32,5 +29,8 @@
             "name": "coingecko",
             "url": "https://coingecko.com/en/coins/1inch/"
         }
+    ],
+    "tags": [
+        "defi"
     ]
 }

@@ -1,14 +1,13 @@
 {
     "name": "Bifrost",
-    "website": "https://thebifrost.io/",
-    "short_description": "Middleware platform that enables developers to create Decentralized Applications (DApps) on top of multiple protocols",
-    "description": "Developers can combine the best protocols to develop substantially more scalable and flexible DApps.",
-    "explorer": "https://etherscan.io/token/0x0c7D5ae016f806603CB1782bEa29AC69471CAb9c",
-    "type": "ERC20",
     "symbol": "BFC",
+    "type": "ERC20",
     "decimals": 18,
+    "description": "Developers can combine the best protocols to develop substantially more scalable and flexible DApps.",
+    "website": "https://thebifrost.io/",
+    "explorer": "https://etherscan.io/token/0x0c7D5ae016f806603CB1782bEa29AC69471CAb9c",
     "status": "active",
-    "id": "0x0c7D5ae016f806603CB1782bEa29AC69471CAb9c",
+    "id": "0x0c7d5ae016f806603cb1782bea29ac69471cab9c",
     "links": [
         {
             "name": "github",

@@ -1,16 +1,13 @@
 {
     "name": "SOURCE",
-    "website": "https://resource.finance",
-    "description": "SOURCE is the utility token that powers the ReSource protocol—a DeFi protocol enabling the world’s first on-chain mutual credit economic system.",
-    "explorer": "https://etherscan.io/token/0x7118057ff0F4Fd0994fb9d2D94de8231d5cca79E",
-    "type": "ERC20",
     "symbol": "SOURCE",
+    "type": "ERC20",
     "decimals": 18,
+    "description": "SOURCE is the utility token that powers the ReSource protocol—a DeFi protocol enabling the world’s first on-chain mutual credit economic system.",
+    "website": "https://resource.finance",
+    "explorer": "https://etherscan.io/token/0x7118057ff0F4Fd0994fb9d2D94de8231d5cca79E",
     "status": "active",
-    "id": "0x7118057ff0F4Fd0994fb9d2D94de8231d5cca79E",
-    "tags": [
-        "defi"
-    ],
+    "id": "0x7118057ff0f4fd0994fb9d2d94de8231d5cca79e",
     "links": [
         {
             "name": "twitter",
@@ -24,5 +21,8 @@
             "name": "github",
             "url": "https://github.com/ReSource-Network/"
         }
+    ],
+    "tags": [
+        "defi"
     ]
 }

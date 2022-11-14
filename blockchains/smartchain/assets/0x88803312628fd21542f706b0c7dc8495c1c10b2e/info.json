@@ -1,16 +1,13 @@
 {
     "name": "DeFi Degen Land",
-    "website": "https://defidegenland.com/",
-    "description": "DeFi Degen Land is a Metaverse / gamified DeFi where the player join an online 'world' that has the capability of interacting with the blockchain. DeFiDegenLand holders earns Bitcoin as an incentive to keep holding the token, also it's the native token on the metaverse.",
-    "explorer": "https://bscscan.com/token/0x88803312628fd21542F706B0C7dC8495c1c10B2e",
-    "type": "BEP20",
     "symbol": "DDL",
+    "type": "BEP20",
     "decimals": 18,
+    "description": "DeFi Degen Land is a Metaverse / gamified DeFi where the player join an online 'world' that has the capability of interacting with the blockchain. DeFiDegenLand holders earns Bitcoin as an incentive to keep holding the token, also it's the native token on the metaverse.",
+    "website": "https://defidegenland.com/",
+    "explorer": "https://bscscan.com/token/0x88803312628fd21542F706B0C7dC8495c1c10B2e",
     "status": "active",
-    "id": "0x88803312628fd21542F706B0C7dC8495c1c10B2e",
-    "tags": [
-        "defi"
-    ],
+    "id": "0x88803312628fd21542f706b0c7dc8495c1c10b2e",
     "links": [
         {
             "name": "telegram",
@@ -24,5 +21,8 @@
             "name": "twitter",
             "url": "https://twitter.com/DeFi_Degen_Land"
         }
+    ],
+    "tags": [
+        "defi"
     ]
 }

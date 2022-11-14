@@ -1,12 +1,12 @@
 {
     "name": "Pocket Bomb",
-    "website": "https://pbom.rocketbunny.io/",
+    "symbol": "PBOM",
+    "type": "BEP20",
+    "decimals": 9,
     "description": "Pocket Bomb combines the most sought after tokenomics across DeFi: automatic liquidity adds, compounding yield, deflationary supply, liquidity rewards, and price shock protection.",
+    "website": "https://pbom.rocketbunny.io/",
     "explorer": "https://bscscan.com/token/0x3Ea50B7Ef6a7eaf7E966E2cb72b519C16557497c",
     "research": "https://rocketbunny.medium.com/welcome-to-rocket-bunny-f21b79f2715f",
-    "type": "BEP20",
-    "symbol": "PBOM",
-    "decimals": 9,
     "status": "active",
-    "id": "0x3Ea50B7Ef6a7eaf7E966E2cb72b519C16557497c"
+    "id": "0x3ea50b7ef6a7eaf7e966e2cb72b519c16557497c"
 }

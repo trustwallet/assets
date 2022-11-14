@@ -1,7 +1,13 @@
 {
     "name": "Se7en",
-    "website": "https://se7enbsc.com",
+    "symbol": "SE7EN",
+    "type": "BEP20",
+    "decimals": 18,
     "description": "Se7en is a first of its kind Token. Sales restrictions with BNB dividends delivered directly to your wallet.",
+    "website": "https://se7enbsc.com",
+    "explorer": "https://bscscan.com/token/0x6CD502AB164e37231c20578214f874a8ADbdC7c2",
+    "status": "active",
+    "id": "0x6cd502ab164e37231c20578214f874a8adbdc7c2",
     "links": [
         {
             "name": "twitter",
@@ -15,11 +21,5 @@
             "name": "reddit",
             "url": "https://reddit.com/r/Se7enBSC"
         }
-    ],
-    "explorer": "https://bscscan.com/token/0x6CD502AB164e37231c20578214f874a8ADbdC7c2",
-    "type": "BEP20",
-    "symbol": "SE7EN",
-    "decimals": 18,
-    "status": "active",
-    "id": "0x6CD502AB164e37231c20578214f874a8ADbdC7c2"
+    ]
 }

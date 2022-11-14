@@ -1,14 +1,14 @@
 {
     "name": "Venus FIL",
-    "website": "https://venus.io/",
-    "description": "The Venus vTokens, which are self-contained borrowing and lending contracts. VToken contains the core logic and VBep20, VBUSD, VSXP, VUSDC, VUSDT, VXVS and VBNB add public interfaces for Bep20 tokens and bnb, respectively.",
-    "research": "https://research.binance.com/en/projects/venus",
-    "explorer": "https://bscscan.com/token/0xf91d58b5aE142DAcC749f58A49FCBac340Cb0343",
-    "type": "BEP20",
     "symbol": "vFIL",
+    "type": "BEP20",
     "decimals": 8,
+    "description": "The Venus vTokens, which are self-contained borrowing and lending contracts. VToken contains the core logic and VBep20, VBUSD, VSXP, VUSDC, VUSDT, VXVS and VBNB add public interfaces for Bep20 tokens and bnb, respectively.",
+    "website": "https://venus.io/",
+    "explorer": "https://bscscan.com/token/0xf91d58b5aE142DAcC749f58A49FCBac340Cb0343",
+    "research": "https://research.binance.com/en/projects/venus",
     "status": "active",
-    "id": "0xf91d58b5aE142DAcC749f58A49FCBac340Cb0343",
+    "id": "0xf91d58b5ae142dacc749f58a49fcbac340cb0343",
     "links": [
         {
             "name": "github",

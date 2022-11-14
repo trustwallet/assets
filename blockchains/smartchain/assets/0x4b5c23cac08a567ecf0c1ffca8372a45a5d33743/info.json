@@ -1,11 +1,11 @@
 {
     "name": "Harvest Reward Token",
-    "website": "https://harvest.finance",
-    "description": "Harvest automatically farms the newest DeFi protocols, optimizing yields using the latest farming techniques.",
-    "explorer": "https://bscscan.com/token/0x4B5C23cac08a567ecf0c1fFcA8372A45a5D33743",
-    "type": "BEP20",
     "symbol": "FARM",
+    "type": "BEP20",
     "decimals": 18,
+    "description": "Harvest automatically farms the newest DeFi protocols, optimizing yields using the latest farming techniques.",
+    "website": "https://harvest.finance",
+    "explorer": "https://bscscan.com/token/0x4B5C23cac08a567ecf0c1fFcA8372A45a5D33743",
     "status": "active",
-    "id": "0x4B5C23cac08a567ecf0c1fFcA8372A45a5D33743"
+    "id": "0x4b5c23cac08a567ecf0c1ffca8372a45a5d33743"
 }

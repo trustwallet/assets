@@ -1,16 +1,13 @@
 {
     "name": "Doge Yellow Coin",
-    "type": "BEP20",
     "symbol": "DOGEY",
+    "type": "BEP20",
     "decimals": 9,
-    "website": "https://dogeyellow.com",
     "description": "Doge Yellow Coin DOGEY Doge Yellow Coin is a new cryptocurrency born to emulate dogecoin with the help of Elon Musk",
+    "website": "https://dogeyellow.com",
     "explorer": "https://bscscan.com/token/0x6f373cD69c329B1DA2e00b861Ad950e59454aa18",
     "status": "active",
-    "id": "0x6f373cD69c329B1DA2e00b861Ad950e59454aa18",
-    "tags": [
-        "deflationary"
-    ],
+    "id": "0x6f373cd69c329b1da2e00b861ad950e59454aa18",
     "links": [
         {
             "name": "twitter",
@@ -40,5 +37,8 @@
             "name": "coingecko",
             "url": "https://coingecko.com/en/coins/doge-yellow-coin"
         }
+    ],
+    "tags": [
+        "deflationary"
     ]
 }

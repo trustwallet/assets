@@ -1,16 +1,13 @@
 {
     "name": "FastMoon",
-    "website": "https://fastmoon.finance",
-    "description": "FastMoon is extremely fast autonomous yield and liquidity generation protocol.",
-    "explorer": "https://bscscan.com/token/0x869Dd7A64AfBe5370a8c591d9B8650BE60c0B8f6",
-    "type": "BEP20",
     "symbol": "FASTMOON",
+    "type": "BEP20",
     "decimals": 9,
+    "description": "FastMoon is extremely fast autonomous yield and liquidity generation protocol.",
+    "website": "https://fastmoon.finance",
+    "explorer": "https://bscscan.com/token/0x869Dd7A64AfBe5370a8c591d9B8650BE60c0B8f6",
     "status": "active",
-    "id": "0x869Dd7A64AfBe5370a8c591d9B8650BE60c0B8f6",
-    "tags": [
-        "deflationary"
-    ],
+    "id": "0x869dd7a64afbe5370a8c591d9b8650be60c0b8f6",
     "links": [
         {
             "name": "github",
@@ -24,5 +21,8 @@
             "name": "telegram",
             "url": "https://t.me/FastMoonFinance"
         }
+    ],
+    "tags": [
+        "deflationary"
     ]
 }

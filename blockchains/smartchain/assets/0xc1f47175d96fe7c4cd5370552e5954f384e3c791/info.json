@@ -1,13 +1,13 @@
 {
     "name": "USD Coin (Portal from Avalanche)",
-    "type": "BEP20",
     "symbol": "USDCav",
+    "type": "BEP20",
     "decimals": 6,
     "description": "Cross Chain Portal Bridged Token",
     "website": "https://www.circle.com/en/usdc",
     "explorer": "https://bscscan.com/token/0xc1F47175d96Fe7c4cD5370552e5954f384E3C791",
     "status": "active",
-    "id": "0xc1F47175d96Fe7c4cD5370552e5954f384E3C791",
+    "id": "0xc1f47175d96fe7c4cd5370552e5954f384e3c791",
     "tags": [
         "wrapped"
     ]

@@ -1,17 +1,13 @@
 {
     "name": "sUSD",
-    "website": "https://synthetix.io",
-    "description": "sUSD is an ERC-20 token made by the Synthetix team which tracks the price of USD.",
-    "explorer": "https://etherscan.io/token/0x57Ab1ec28D129707052df4dF418D58a2D46d5f51",
-    "type": "ERC20",
     "symbol": "sUSD",
+    "type": "ERC20",
     "decimals": 18,
+    "description": "sUSD is an ERC-20 token made by the Synthetix team which tracks the price of USD.",
+    "website": "https://synthetix.io",
+    "explorer": "https://etherscan.io/token/0x57Ab1ec28D129707052df4dF418D58a2D46d5f51",
     "status": "active",
-    "id": "0x57Ab1ec28D129707052df4dF418D58a2D46d5f51",
-    "tags": [
-        "defi",
-        "stablecoin"
-    ],
+    "id": "0x57ab1ec28d129707052df4df418d58a2d46d5f51",
     "links": [
         {
             "name": "github",
@@ -33,5 +29,9 @@
             "name": "coingecko",
             "url": "https://coingecko.com/en/coins/nusd/"
         }
+    ],
+    "tags": [
+        "defi",
+        "stablecoin"
     ]
 }

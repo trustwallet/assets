@@ -1,13 +1,13 @@
 {
     "name": "Tether USD (Portal from Avalanche)",
-    "type": "BEP20",
     "symbol": "USDTav",
+    "type": "BEP20",
     "decimals": 6,
     "description": "Cross Chain Portal Bridged Token",
     "website": "https://tether.to/",
     "explorer": "https://bscscan.com/token/0x2B90E061a517dB2BbD7E39Ef7F733Fd234B494CA",
     "status": "active",
-    "id": "0x2B90E061a517dB2BbD7E39Ef7F733Fd234B494CA",
+    "id": "0x2b90e061a517db2bbd7e39ef7f733fd234b494ca",
     "tags": [
         "wrapped"
     ]

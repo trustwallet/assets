@@ -1,16 +1,13 @@
 {
     "name": "UST Token",
-    "website": "https://terra.money",
-    "description": "TerraUSD is the first decentralized stablecoin that is scalable, yield bearing and interchain.",
-    "explorer": "https://etherscan.io/token/0xa47c8bf37f92aBed4A126BDA807A7b7498661acD",
-    "type": "ERC20",
     "symbol": "UST",
+    "type": "ERC20",
     "decimals": 18,
+    "description": "TerraUSD is the first decentralized stablecoin that is scalable, yield bearing and interchain.",
+    "website": "https://terra.money",
+    "explorer": "https://etherscan.io/token/0xa47c8bf37f92aBed4A126BDA807A7b7498661acD",
     "status": "active",
-    "id": "0xa47c8bf37f92aBed4A126BDA807A7b7498661acD",
-    "tags": [
-        "stablecoin"
-    ],
+    "id": "0xa47c8bf37f92abed4a126bda807a7b7498661acd",
     "links": [
         {
             "name": "twitter",
@@ -28,5 +25,8 @@
             "name": "medium",
             "url": "https://medium.com/terra-money"
         }
+    ],
+    "tags": [
+        "stablecoin"
     ]
 }

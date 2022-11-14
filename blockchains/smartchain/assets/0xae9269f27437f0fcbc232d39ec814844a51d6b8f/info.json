@@ -1,12 +1,12 @@
 {
     "name": "Burger Swap Token",
-    "website": "https://burgerswap.org",
+    "symbol": "BURGER",
+    "type": "BEP20",
+    "decimals": 18,
     "description": "A democratized AMM on Binance Smart Chain.",
+    "website": "https://burgerswap.org",
     "explorer": "https://bscscan.com/token/0xAe9269f27437f0fcBC232d39Ec814844a51d6b8f",
     "research": "https://research.binance.com/en/projects/burger-swap",
-    "type": "BEP20",
-    "symbol": "BURGER",
-    "decimals": 18,
     "status": "active",
-    "id": "0xAe9269f27437f0fcBC232d39Ec814844a51d6b8f"
+    "id": "0xae9269f27437f0fcbc232d39ec814844a51d6b8f"
 }

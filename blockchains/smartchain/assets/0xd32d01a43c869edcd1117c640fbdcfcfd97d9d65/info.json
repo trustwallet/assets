@@ -1,13 +1,13 @@
 {
     "name": "Nominex Token",
-    "website": "https://nominex.io/",
-    "description": "NMX is the first decentralized exchange token with automatic market making (AMM) functionality.",
-    "explorer": "https://bscscan.com/token/0xd32d01A43c869EdcD1117C640fBDcfCFD97d9d65",
-    "type": "BEP20",
     "symbol": "NMX",
+    "type": "BEP20",
     "decimals": 18,
+    "description": "NMX is the first decentralized exchange token with automatic market making (AMM) functionality.",
+    "website": "https://nominex.io/",
+    "explorer": "https://bscscan.com/token/0xd32d01A43c869EdcD1117C640fBDcfCFD97d9d65",
     "status": "active",
-    "id": "0xd32d01A43c869EdcD1117C640fBDcfCFD97d9d65",
+    "id": "0xd32d01a43c869edcd1117c640fbdcfcfd97d9d65",
     "links": [
         {
             "name": "github",

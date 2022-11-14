@@ -1,13 +1,13 @@
 {
     "name": "TimeMiner",
-    "website": "https://TimeMiner.site",
-    "description": "A new project seeking to change how tokens are generated utilizing Proof of Time. Only one new coin is minted every hour.",
-    "explorer": "https://etherscan.io/token/0xA54C67bd320Da4F9725a6f585b7635a0c09B122e",
-    "type": "ERC20",
     "symbol": "TIME",
+    "type": "ERC20",
     "decimals": 6,
+    "description": "A new project seeking to change how tokens are generated utilizing Proof of Time. Only one new coin is minted every hour.",
+    "website": "https://TimeMiner.site",
+    "explorer": "https://etherscan.io/token/0xA54C67bd320Da4F9725a6f585b7635a0c09B122e",
     "status": "active",
-    "id": "0xA54C67bd320Da4F9725a6f585b7635a0c09B122e",
+    "id": "0xa54c67bd320da4f9725a6f585b7635a0c09b122e",
     "links": [
         {
             "name": "twitter",

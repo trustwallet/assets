@@ -1,16 +1,13 @@
 {
     "name": "Birb",
-    "website": "https://birb.com",
-    "description": "As a high deflationary DeFi token built on the Binance Smart Chain, Birb aims at becoming a highly usable token with multiple use cases such as diverse security options, e-commerce plugins, and social $BIRB sending.",
-    "explorer": "https://bscscan.com/token/0x3CF33Ff134c0e00A2664f148A4232adeA1515C6f",
-    "type": "BEP20",
     "symbol": "BIRB",
+    "type": "BEP20",
     "decimals": 18,
+    "description": "As a high deflationary DeFi token built on the Binance Smart Chain, Birb aims at becoming a highly usable token with multiple use cases such as diverse security options, e-commerce plugins, and social $BIRB sending.",
+    "website": "https://birb.com",
+    "explorer": "https://bscscan.com/token/0x3CF33Ff134c0e00A2664f148A4232adeA1515C6f",
     "status": "abandoned",
-    "id": "0x3CF33Ff134c0e00A2664f148A4232adeA1515C6f",
-    "tags": [
-        "deflationary"
-    ],
+    "id": "0x3cf33ff134c0e00a2664f148a4232adea1515c6f",
     "links": [
         {
             "name": "github",
@@ -36,5 +33,8 @@
             "name": "reddit",
             "url": "https://reddit.com/r/BirbDefi/"
         }
+    ],
+    "tags": [
+        "deflationary"
     ]
 }

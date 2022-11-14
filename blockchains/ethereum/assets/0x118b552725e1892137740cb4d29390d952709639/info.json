@@ -1,16 +1,13 @@
 {
     "name": "Nyx Token",
-    "type": "ERC20",
     "symbol": "NYXT",
+    "type": "ERC20",
     "decimals": 9,
-    "website": "https://nyxtoken.org",
     "description": "Nyx has an 8% tax taken from every purchase and sale, 4% is split to help MS and Veterans through charitble donations.2 is sent back to the holders,1 each is burned and project marketing wallet for future growth.",
+    "website": "https://nyxtoken.org",
     "explorer": "https://etherscan.io/token/0x118b552725e1892137740cB4d29390D952709639",
     "status": "active",
-    "id": "0x118b552725e1892137740cB4d29390D952709639",
-    "tags": [
-        "deflationary"
-    ],
+    "id": "0x118b552725e1892137740cb4d29390d952709639",
     "links": [
         {
             "name": "coinmarketcap",
@@ -28,5 +25,8 @@
             "name": "facebook",
             "url": "https://facebook.com/NYXToken"
         }
+    ],
+    "tags": [
+        "deflationary"
     ]
 }

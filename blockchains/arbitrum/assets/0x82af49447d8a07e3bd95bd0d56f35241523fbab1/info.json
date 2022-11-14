@@ -1,13 +1,13 @@
 {
     "name": "Wrapped Ether",
-    "type": "ARBITRUM",
     "symbol": "WETH",
+    "type": "ARBITRUM",
     "decimals": 18,
-    "website": "https://weth.io/",
     "description": "wETH is wrapped ETH",
+    "website": "https://weth.io/",
     "explorer": "https://arbiscan.io/token/0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
     "status": "active",
-    "id": "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
+    "id": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
     "links": [
         {
             "name": "coinmarketcap",
@@ -18,4 +18,4 @@
             "url": "https://coingecko.com/coins/weth/"
         }
     ]
-} 
+}

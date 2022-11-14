@@ -1,13 +1,13 @@
 {
     "name": "TrustFi Network Token",
-    "website": "https://trustfi.org/",
-    "description": "TFI is the native token of TrustFi Network, a decentralized BaaS solution for DeFi market based on multichain environment.",
-    "explorer": "https://bscscan.com/token/0x7565ab68D3F9DaDff127F864103C8c706Cf28235",
-    "type": "BEP20",
     "symbol": "TFI",
+    "type": "BEP20",
     "decimals": 18,
+    "description": "TFI is the native token of TrustFi Network, a decentralized BaaS solution for DeFi market based on multichain environment.",
+    "website": "https://trustfi.org/",
+    "explorer": "https://bscscan.com/token/0x7565ab68D3F9DaDff127F864103C8c706Cf28235",
     "status": "active",
-    "id": "0x7565ab68D3F9DaDff127F864103C8c706Cf28235",
+    "id": "0x7565ab68d3f9dadff127f864103c8c706cf28235",
     "links": [
         {
             "name": "telegram",

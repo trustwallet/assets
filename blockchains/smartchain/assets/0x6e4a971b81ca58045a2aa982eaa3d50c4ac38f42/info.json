@@ -1,16 +1,13 @@
 {
     "name": "Bridge Token",
-    "website": "https://bridge.link",
-    "description": "Bridge Oracle System is a technology through which external data can be injected.",
-    "explorer": "https://bscscan.com/token/0x6e4a971B81CA58045a2AA982EaA3d50C4Ac38F42",
-    "type": "BEP20",
     "symbol": "BRG",
+    "type": "BEP20",
     "decimals": 18,
+    "description": "Bridge Oracle System is a technology through which external data can be injected.",
+    "website": "https://bridge.link",
+    "explorer": "https://bscscan.com/token/0x6e4a971B81CA58045a2AA982EaA3d50C4Ac38F42",
     "status": "active",
-    "id": "0x6e4a971B81CA58045a2AA982EaA3d50C4Ac38F42",
-    "tags": [
-        "defi"
-    ],
+    "id": "0x6e4a971b81ca58045a2aa982eaa3d50c4ac38f42",
     "links": [
         {
             "name": "twitter",
@@ -44,5 +41,8 @@
             "name": "medium",
             "url": "https://medium.com/@bridge_oracle"
         }
+    ],
+    "tags": [
+        "defi"
     ]
 }

@@ -1,14 +1,14 @@
 {
     "name": "Venus ADA",
-    "website": "https://venus.io/",
-    "description": "The Venus vTokens, which are self-contained borrowing and lending contracts. VToken contains the core logic and VBep20, VBUSD, VSXP, VUSDC, VUSDT, VXVS and VBNB add public interfaces for Bep20 tokens and bnb, respectively.",
-    "research": "https://research.binance.com/en/projects/venus",
-    "explorer": "https://bscscan.com/token/0x37C28DE42bA3d22217995D146FC684B2326Ede64",
-    "type": "BEP20",
     "symbol": "vADA",
+    "type": "BEP20",
     "decimals": 8,
+    "description": "The Venus vTokens, which are self-contained borrowing and lending contracts. VToken contains the core logic and VBep20, VBUSD, VSXP, VUSDC, VUSDT, VXVS and VBNB add public interfaces for Bep20 tokens and bnb, respectively.",
+    "website": "https://venus.io/",
+    "explorer": "https://bscscan.com/token/0x37C28DE42bA3d22217995D146FC684B2326Ede64",
+    "research": "https://research.binance.com/en/projects/venus",
     "status": "active",
-    "id": "0x37C28DE42bA3d22217995D146FC684B2326Ede64",
+    "id": "0x37c28de42ba3d22217995d146fc684b2326ede64",
     "links": [
         {
             "name": "github",

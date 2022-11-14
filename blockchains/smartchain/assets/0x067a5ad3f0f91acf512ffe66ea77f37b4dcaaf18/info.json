@@ -1,16 +1,13 @@
 {
     "name": "Wynaut Token",
-    "website": "https://wynaut.money",
-    "description": "Just like Wynaut, this token has the ability to reflect any token it receives back to the suppliers of its token.",
-    "explorer": "https://bscscan.com/token/0x067a5ad3f0f91AcF512fFE66Ea77f37b4DcaaF18",
-    "type": "BEP20",
     "symbol": "WYNAUT",
+    "type": "BEP20",
     "decimals": 8,
+    "description": "Just like Wynaut, this token has the ability to reflect any token it receives back to the suppliers of its token.",
+    "website": "https://wynaut.money",
+    "explorer": "https://bscscan.com/token/0x067a5ad3f0f91AcF512fFE66Ea77f37b4DcaaF18",
     "status": "active",
-    "id": "0x067a5ad3f0f91AcF512fFE66Ea77f37b4DcaaF18",
-    "tags": [
-        "deflationary"
-    ],
+    "id": "0x067a5ad3f0f91acf512ffe66ea77f37b4dcaaf18",
     "links": [
         {
             "name": "twitter",
@@ -24,5 +21,8 @@
             "name": "medium",
             "url": "https://wynautmoney.medium.com/"
         }
+    ],
+    "tags": [
+        "deflationary"
     ]
 }

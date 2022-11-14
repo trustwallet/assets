@@ -1,16 +1,13 @@
 {
     "name": "mTSLA Token",
-    "website": "https://mirror.finance",
-    "description": "Wrapped Mirror TSLA Token.",
-    "explorer": "https://etherscan.io/token/0x21cA39943E91d704678F5D00b6616650F066fD63",
-    "type": "ERC20",
     "symbol": "mTSLA",
+    "type": "ERC20",
     "decimals": 18,
+    "description": "Wrapped Mirror TSLA Token.",
+    "website": "https://mirror.finance",
+    "explorer": "https://etherscan.io/token/0x21cA39943E91d704678F5D00b6616650F066fD63",
     "status": "active",
-    "id": "0x21cA39943E91d704678F5D00b6616650F066fD63",
-    "tags": [
-        "wrapped"
-    ],
+    "id": "0x21ca39943e91d704678f5d00b6616650f066fd63",
     "links": [
         {
             "name": "twitter",
@@ -28,5 +25,8 @@
             "name": "medium",
             "url": "https://medium.com/@mirror-protocol"
         }
+    ],
+    "tags": [
+        "wrapped"
     ]
 }

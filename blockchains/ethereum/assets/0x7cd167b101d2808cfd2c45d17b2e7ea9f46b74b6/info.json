@@ -1,13 +1,13 @@
 {
     "name": "USD Coin (Portal from BSC)",
-    "type": "ERC20",
     "symbol": "USDCbs",
+    "type": "ERC20",
     "decimals": 18,
     "description": "Cross Chain Portal Bridged Token",
     "website": "https://www.circle.com/en/usdc",
     "explorer": "https://etherscan.io/token/0x7cd167B101D2808Cfd2C45d17b2E7EA9F46b74B6",
     "status": "active",
-    "id": "0x7cd167B101D2808Cfd2C45d17b2E7EA9F46b74B6",
+    "id": "0x7cd167b101d2808cfd2c45d17b2e7ea9f46b74b6",
     "tags": [
         "wrapped"
     ]

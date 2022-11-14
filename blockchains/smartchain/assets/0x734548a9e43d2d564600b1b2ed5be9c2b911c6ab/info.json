@@ -1,16 +1,13 @@
 {
     "name": "PEEL Token",
-    "website": "https://metaapesgame.com",
-    "description": "PEEL is the governance token of Meta Apes, a mobile strategy game.",
-    "explorer": "https://bscscan.com/token/0x734548a9e43d2D564600b1B2ed5bE9C2b911c6aB",
-    "type": "BEP20",
     "symbol": "PEEL",
+    "type": "BEP20",
     "decimals": 18,
+    "description": "PEEL is the governance token of Meta Apes, a mobile strategy game.",
+    "website": "https://metaapesgame.com",
+    "explorer": "https://bscscan.com/token/0x734548a9e43d2D564600b1B2ed5bE9C2b911c6aB",
     "status": "active",
-    "id": "0x734548a9e43d2D564600b1B2ed5bE9C2b911c6aB",
-    "tags": [
-        "gamefi"
-    ],
+    "id": "0x734548a9e43d2d564600b1b2ed5be9c2b911c6ab",
     "links": [
         {
             "name": "twitter",
@@ -28,5 +25,8 @@
             "name": "coinmarketcap",
             "url": "https://coinmarketcap.com/currencies/aave/"
         }
+    ],
+    "tags": [
+        "gamefi"
     ]
 }

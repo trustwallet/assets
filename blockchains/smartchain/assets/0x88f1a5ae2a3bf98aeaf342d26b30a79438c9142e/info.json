@@ -1,19 +1,14 @@
 {
     "name": "Binance-Peg yearn.finance",
-    "website": "https://yearn.finance/",
+    "symbol": "YFI",
+    "type": "BEP20",
+    "decimals": 18,
     "description": "Binance-Peg yearn.finance (YFI BEP20) is a token issued by Binance on Smart Chain; its price is pegged to yearn.finance (YFI ERC20) at a ratio of 1:1.",
+    "website": "https://yearn.finance/",
     "explorer": "https://bscscan.com/token/0x88f1A5ae2A3BF98AEAF342D26B30a79438c9142e",
     "research": "https://research.binance.com/en/projects/yearnfinance",
-    "type": "BEP20",
-    "symbol": "YFI",
-    "decimals": 18,
     "status": "active",
-    "id": "0x88f1A5ae2A3BF98AEAF342D26B30a79438c9142e",
-    "tags": [
-        "binance-peg",
-        "defi",
-        "governance"
-    ],
+    "id": "0x88f1a5ae2a3bf98aeaf342d26b30a79438c9142e",
     "links": [
         {
             "name": "github",
@@ -39,5 +34,10 @@
             "name": "coingecko",
             "url": "https://coingecko.com/en/coins/yearn-finance/"
         }
+    ],
+    "tags": [
+        "binance-peg",
+        "defi",
+        "governance"
     ]
 }

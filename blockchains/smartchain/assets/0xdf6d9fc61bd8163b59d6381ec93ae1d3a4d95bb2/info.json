@@ -1,11 +1,11 @@
 {
     "name": "BlimpsRock",
-    "website": "https://blimpsrock.net",
-    "description": "$BlimpsRock is a yield and liquidity generating protocol token that works by applying a 10% fee to every transaction and distributing half of that to token holders and then automatically locks the other half in Pancake LP. No need to stake your tokens to earn rewards, simply HODL in your wallet and watch the rewards roll in.",
-    "explorer": "https://bscscan.com/token/0xdF6d9fC61Bd8163b59d6381EC93aE1D3a4D95bB2",
-    "type": "BEP20",
     "symbol": "BLIMPSROCK",
+    "type": "BEP20",
     "decimals": 9,
+    "description": "$BlimpsRock is a yield and liquidity generating protocol token that works by applying a 10% fee to every transaction and distributing half of that to token holders and then automatically locks the other half in Pancake LP. No need to stake your tokens to earn rewards, simply HODL in your wallet and watch the rewards roll in.",
+    "website": "https://blimpsrock.net",
+    "explorer": "https://bscscan.com/token/0xdF6d9fC61Bd8163b59d6381EC93aE1D3a4D95bB2",
     "status": "active",
-    "id": "0xdF6d9fC61Bd8163b59d6381EC93aE1D3a4D95bB2"
+    "id": "0xdf6d9fc61bd8163b59d6381ec93ae1d3a4d95bb2"
 }

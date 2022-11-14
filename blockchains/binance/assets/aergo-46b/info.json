@@ -1,12 +1,12 @@
 {
     "name": "Aergo",
-    "website": "https://aergo.io",
+    "symbol": "AERGO",
+    "type": "BEP2",
+    "decimals": 8,
     "description": "Aergo describes itself as an open-source enterprise blockchain platform optimized for hybrid deployments, which consist of both permissioned and permissionless blockchain architectures.",
+    "website": "https://aergo.io",
     "explorer": "https://explorer.binance.org/asset/AERGO-46B",
     "research": "https://research.binance.com/en/projects/aergo",
-    "type": "BEP2",
-    "symbol": "AERGO",
-    "decimals": 8,
     "status": "active",
-    "id": "AERGO-46B"
+    "id": "aergo-46b"
 }

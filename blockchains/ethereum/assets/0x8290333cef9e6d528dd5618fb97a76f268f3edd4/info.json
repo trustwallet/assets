@@ -1,17 +1,14 @@
 {
     "name": "Ankr",
-    "website": "https://ankr.com",
+    "symbol": "ANKR",
+    "type": "ERC20",
+    "decimals": 18,
     "description": "Ankr is building an infrastructure platform and marketplace for Web3-stack deployment.",
+    "website": "https://ankr.com",
     "explorer": "https://etherscan.io/token/0x8290333ceF9e6D528dD5618Fb97a76f268f3EDD4",
     "research": "https://research.binance.com/en/projects/ankr-network",
-    "type": "ERC20",
-    "symbol": "ANKR",
-    "decimals": 18,
     "status": "active",
-    "id": "0x8290333ceF9e6D528dD5618Fb97a76f268f3EDD4",
-    "tags": [
-        "defi"
-    ],
+    "id": "0x8290333cef9e6d528dd5618fb97a76f268f3edd4",
     "links": [
         {
             "name": "blog",
@@ -29,5 +26,8 @@
             "name": "coingecko",
             "url": "https://coingecko.com/en/coins/ankr/"
         }
+    ],
+    "tags": [
+        "defi"
     ]
 }

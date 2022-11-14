@@ -1,16 +1,13 @@
 {
     "name": "LINA",
-    "website": "https://linear.finance/",
-    "description": "Linear Finance is a cross-chain compatible, decentralized delta-one asset protocol to cost-effectively and instantly create, manage, and trade synthetic assets with unlimited liquidity",
-    "explorer": "https://etherscan.io/token/0x3E9BC21C9b189C09dF3eF1B824798658d5011937",
-    "type": "ERC20",
     "symbol": "LINA",
+    "type": "ERC20",
     "decimals": 18,
+    "description": "Linear Finance is a cross-chain compatible, decentralized delta-one asset protocol to cost-effectively and instantly create, manage, and trade synthetic assets with unlimited liquidity",
+    "website": "https://linear.finance/",
+    "explorer": "https://etherscan.io/token/0x3E9BC21C9b189C09dF3eF1B824798658d5011937",
     "status": "active",
-    "id": "0x3E9BC21C9b189C09dF3eF1B824798658d5011937",
-    "tags": [
-        "defi"
-    ],
+    "id": "0x3e9bc21c9b189c09df3ef1b824798658d5011937",
     "links": [
         {
             "name": "github",
@@ -32,5 +29,8 @@
             "name": "coingecko",
             "url": "https://coingecko.com/en/coins/linear-bsc/"
         }
+    ],
+    "tags": [
+        "defi"
     ]
 }

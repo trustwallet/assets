@@ -1,16 +1,13 @@
 {
     "name": "ICHI ALLY",
-    "website": "app.ichi.org",
-    "description": "The ALLY token is a token the enables ICHI vesting over a 3 year period.",
-    "explorer": "https://etherscan.io/token/0x1aa1e61369874bae3444a8ef6528d6b13d6952ef",
-    "type": "ERC20",
     "symbol": "ALLY",
+    "type": "ERC20",
     "decimals": 18,
+    "description": "The ALLY token is a token the enables ICHI vesting over a 3 year period.",
+    "website": "app.ichi.org",
+    "explorer": "https://etherscan.io/token/0x1aa1e61369874bae3444a8ef6528d6b13d6952ef",
     "status": "active",
-    "id": "0x1aa1e61369874bae3444A8Ef6528d6b13D6952EF",
-    "tags": [
-        "defi"
-    ],
+    "id": "0x1aa1e61369874bae3444a8ef6528d6b13d6952ef",
     "links": [
         {
             "name": "github",
@@ -28,5 +25,8 @@
             "name": "medium",
             "url": "https://medium.com/ichifarm"
         }
+    ],
+    "tags": [
+        "defi"
     ]
 }

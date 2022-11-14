@@ -1,16 +1,13 @@
 {
     "name": "EverGrow Coin",
-    "website": "https://evergrowcoin.com/",
-    "description": "EverGrow Coin is a hyper deflationary token that rewards holders in BUSD",
-    "explorer": "https://bscscan.com/token/0xC001BBe2B87079294C63EcE98BdD0a88D761434e",
-    "type": "BEP20",
     "symbol": "EGC",
+    "type": "BEP20",
     "decimals": 9,
+    "description": "EverGrow Coin is a hyper deflationary token that rewards holders in BUSD",
+    "website": "https://evergrowcoin.com/",
+    "explorer": "https://bscscan.com/token/0xC001BBe2B87079294C63EcE98BdD0a88D761434e",
     "status": "active",
-    "id": "0xC001BBe2B87079294C63EcE98BdD0a88D761434e",
-    "tags": [
-        "deflationary"
-    ],
+    "id": "0xc001bbe2b87079294c63ece98bdd0a88d761434e",
     "links": [
         {
             "name": "github",
@@ -24,5 +21,8 @@
             "name": "telegram",
             "url": "https://t.me/evergrowcoin"
         }
+    ],
+    "tags": [
+        "deflationary"
     ]
 }

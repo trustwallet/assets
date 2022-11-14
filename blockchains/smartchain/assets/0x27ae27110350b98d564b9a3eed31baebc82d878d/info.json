@@ -1,16 +1,13 @@
 {
     "name": "CumRocket",
-    "website": "https://cumrocket.io",
-    "description": "CumRocket (CUMMIES) is a deflationary token used for purchasing adult content on their NSFW platform. Users are able to buy, sell and collect 18+ NFTs from their favourite models, as well as chat, tip and subscribe to exclusive content. 5% tax on every transaction - 2.5% burn, 2.5% redistribution.",
-    "explorer": "https://bscscan.com/token/0x27Ae27110350B98d564b9A3eeD31bAeBc82d878d",
-    "type": "BEP20",
     "symbol": "CUMMIES",
+    "type": "BEP20",
     "decimals": 18,
+    "description": "CumRocket (CUMMIES) is a deflationary token used for purchasing adult content on their NSFW platform. Users are able to buy, sell and collect 18+ NFTs from their favourite models, as well as chat, tip and subscribe to exclusive content. 5% tax on every transaction - 2.5% burn, 2.5% redistribution.",
+    "website": "https://cumrocket.io",
+    "explorer": "https://bscscan.com/token/0x27Ae27110350B98d564b9A3eeD31bAeBc82d878d",
     "status": "active",
-    "id": "0x27Ae27110350B98d564b9A3eeD31bAeBc82d878d",
-    "tags": [
-        "deflationary"
-    ],
+    "id": "0x27ae27110350b98d564b9a3eed31baebc82d878d",
     "links": [
         {
             "name": "twitter",
@@ -32,5 +29,8 @@
             "name": "medium",
             "url": "https://cumrocket.medium.com/"
         }
+    ],
+    "tags": [
+        "deflationary"
     ]
 }

@@ -1,14 +1,13 @@
 {
     "name": "Coreto",
-    "website": "https://coreto.io",
-    "light_paper": "https://coreto.io/Coreto_Lightpaper_1.2-B.pdf",
-    "description": "A reputation based, tokenized social platform orientated towards the crypto communities needs, educating retail investors about blockchain based projects.",
-    "explorer": "https://etherscan.io/token/0x9c2dc0c3cc2badde84b0025cf4df1c5af288d835",
-    "type": "ERC20",
     "symbol": "COR",
+    "type": "ERC20",
     "decimals": 18,
+    "description": "A reputation based, tokenized social platform orientated towards the crypto communities needs, educating retail investors about blockchain based projects.",
+    "website": "https://coreto.io",
+    "explorer": "https://etherscan.io/token/0x9c2dc0c3cc2badde84b0025cf4df1c5af288d835",
     "status": "active",
-    "id": "0x9C2dc0c3CC2BADdE84B0025Cf4df1c5aF288D835",
+    "id": "0x9c2dc0c3cc2badde84b0025cf4df1c5af288d835",
     "links": [
         {
             "name": "github",

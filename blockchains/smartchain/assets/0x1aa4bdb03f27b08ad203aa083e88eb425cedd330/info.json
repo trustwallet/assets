@@ -1,9 +1,13 @@
 {
     "name": "Annex ETH",
-    "website": "https://www.annex.finance/",
-    "description": "Money Markets. A Decentralized Marketplace for Lenders and Borrowers",
-    "explorer": "https://bscscan.com/token/0x1Aa4BDb03f27B08Ad203Aa083e88Eb425CEdD330",
+    "symbol": "aETH",
     "type": "BEP20",
+    "decimals": 8,
+    "description": "Money Markets. A Decentralized Marketplace for Lenders and Borrowers",
+    "website": "https://www.annex.finance/",
+    "explorer": "https://bscscan.com/token/0x1Aa4BDb03f27B08Ad203Aa083e88Eb425CEdD330",
+    "status": "active",
+    "id": "0x1aa4bdb03f27b08ad203aa083e88eb425cedd330",
     "links": [
         {
             "name": "twitter",
@@ -25,9 +29,5 @@
             "name": "reddit",
             "url": "https://reddit.com/r/AnnexFinance/"
         }
-    ],
-    "symbol": "aETH",
-    "decimals": 8,
-    "status": "active",
-    "id": "0x1Aa4BDb03f27B08Ad203Aa083e88Eb425CEdD330"
+    ]
 }

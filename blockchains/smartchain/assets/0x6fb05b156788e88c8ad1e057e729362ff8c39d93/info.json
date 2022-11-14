@@ -1,13 +1,12 @@
 {
     "name": "Aircoins",
-    "website": "https://www.aircoins.io/",
-    "twitter": "https://twitter.com/AIRCOINS_app",
-    "short_description": "Airсоins is a mobile app where players can collect digital assets in AR based on geolocation.",
-    "description": "Airсоins is a mobile app where players can collect digital assets in AR based on geolocation. Using a proof of effort algorithm players are rewarded for their effort while staying active and maintaining a healthy lifestyle.",
-    "explorer": "https://bscscan.com/token/0x6fb05b156788e88c8ad1e057e729362ff8c39d93",
-    "type": "BEP20",
     "symbol": "AIRx",
+    "type": "BEP20",
     "decimals": 8,
+    "description": "Airсоins is a mobile app where players can collect digital assets in AR based on geolocation. Using a proof of effort algorithm players are rewarded for their effort while staying active and maintaining a healthy lifestyle.",
+    "website": "https://www.aircoins.io/",
+    "explorer": "https://bscscan.com/token/0x6fb05b156788e88c8ad1e057e729362ff8c39d93",
     "status": "active",
-    "id": "0x6Fb05b156788E88c8ad1e057e729362ff8c39d93"
+    "id": "0x6fb05b156788e88c8ad1e057e729362ff8c39d93",
+    "twitter": "https://twitter.com/AIRCOINS_app"
 }

@@ -1,13 +1,13 @@
 {
     "name": "Tether USD (Portal from Ethereum)",
-    "type": "BEP20",
     "symbol": "USDTet",
+    "type": "BEP20",
     "decimals": 6,
     "description": "Cross Chain Portal Bridged Token",
     "website": "https://tether.to/",
     "explorer": "https://bscscan.com/token/0x524bC91Dc82d6b90EF29F76A3ECAaBAffFD490Bc",
     "status": "active",
-    "id": "0x524bC91Dc82d6b90EF29F76A3ECAaBAffFD490Bc",
+    "id": "0x524bc91dc82d6b90ef29f76a3ecaabafffd490bc",
     "tags": [
         "wrapped"
     ]

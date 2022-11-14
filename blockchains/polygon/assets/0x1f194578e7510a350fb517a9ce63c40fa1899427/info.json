@@ -1,16 +1,13 @@
 {
     "name": "Stable BTC",
-    "website": "app.ichi.org",
-    "description": "oneBTC is an ICHI-created stablecoin backed by USDC and wBTC.",
-    "explorer": "https://polygonscan.com/token/0x1f194578e7510A350fb517a9ce63C40Fa1899427",
-    "type": "POLYGON",
     "symbol": "oneBTC",
+    "type": "POLYGON",
     "decimals": 18,
+    "description": "oneBTC is an ICHI-created stablecoin backed by USDC and wBTC.",
+    "website": "app.ichi.org",
+    "explorer": "https://polygonscan.com/token/0x1f194578e7510A350fb517a9ce63C40Fa1899427",
     "status": "active",
-    "id": "0x1f194578e7510A350fb517a9ce63C40Fa1899427",
-    "tags": [
-        "defi"
-    ],
+    "id": "0x1f194578e7510a350fb517a9ce63c40fa1899427",
     "links": [
         {
             "name": "github",
@@ -28,5 +25,8 @@
             "name": "medium",
             "url": "https://medium.com/ichifarm"
         }
+    ],
+    "tags": [
+        "defi"
     ]
 }

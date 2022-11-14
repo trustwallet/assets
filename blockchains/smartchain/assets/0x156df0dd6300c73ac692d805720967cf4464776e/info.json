@@ -1,16 +1,13 @@
 {
     "name": "AstroSpaces.io",
-    "website": "https://astrospaces.io/token",
-    "description": "AstroSpaces.io is building the biggest web3 integrated social network!",
-    "explorer": "https://bscscan.com/token/0x156df0dd6300C73ac692D805720967cf4464776e",
-    "type": "BEP20",
     "symbol": "SPACES",
+    "type": "BEP20",
     "decimals": 9,
+    "description": "AstroSpaces.io is building the biggest web3 integrated social network!",
+    "website": "https://astrospaces.io/token",
+    "explorer": "https://bscscan.com/token/0x156df0dd6300C73ac692D805720967cf4464776e",
     "status": "active",
-    "id": "0x156df0dd6300C73ac692D805720967cf4464776e",
-    "tags": [
-        "nft"
-    ],
+    "id": "0x156df0dd6300c73ac692d805720967cf4464776e",
     "links": [
         {
             "name": "github",
@@ -24,5 +21,8 @@
             "name": "telegram",
             "url": "https://t.me/astrospacesio"
         }
+    ],
+    "tags": [
+        "nft"
     ]
 }

@@ -1,16 +1,13 @@
 {
     "name": "SafeMoon V2",
-    "website": "https://safemoon.net/",
-    "description": "SafeMoon is a cryptocurrency token created in March 2021 on the Binance Smart Chain blockchain.",
-    "explorer": "https://bscscan.com/token/0x42981d0bfbAf196529376EE702F2a9Eb9092fcB5",
-    "type": "BEP20",
     "symbol": "SFM",
+    "type": "BEP20",
     "decimals": 9,
+    "description": "SafeMoon is a cryptocurrency token created in March 2021 on the Binance Smart Chain blockchain.",
+    "website": "https://safemoon.net/",
+    "explorer": "https://bscscan.com/token/0x42981d0bfbAf196529376EE702F2a9Eb9092fcB5",
     "status": "active",
-    "id": "0x42981d0bfbAf196529376EE702F2a9Eb9092fcB5",
-    "tags": [
-        "deflationary"
-    ],
+    "id": "0x42981d0bfbaf196529376ee702f2a9eb9092fcb5",
     "links": [
         {
             "name": "reddit",
@@ -20,5 +17,8 @@
             "name": "twitter",
             "url": "https://twitter.com/safemoon"
         }
+    ],
+    "tags": [
+        "deflationary"
     ]
 }

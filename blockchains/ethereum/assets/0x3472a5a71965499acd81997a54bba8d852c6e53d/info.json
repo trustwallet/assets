@@ -1,17 +1,13 @@
 {
     "name": "Badger",
-    "website": "https://badger.finance/",
-    "description": "DAO dedicated to building products and infrastructure to bring Bitcoin to DeFi.",
-    "explorer": "https://etherscan.io/token/0x3472A5A71965499acd81997a54BBA8D852C6E53d",
-    "type": "ERC20",
     "symbol": "BADGER",
+    "type": "ERC20",
     "decimals": 18,
+    "description": "DAO dedicated to building products and infrastructure to bring Bitcoin to DeFi.",
+    "website": "https://badger.finance/",
+    "explorer": "https://etherscan.io/token/0x3472A5A71965499acd81997a54BBA8D852C6E53d",
     "status": "active",
-    "id": "0x3472A5A71965499acd81997a54BBA8D852C6E53d",
-    "tags": [
-        "defi",
-        "governance"
-    ],
+    "id": "0x3472a5a71965499acd81997a54bba8d852c6e53d",
     "links": [
         {
             "name": "twitter",
@@ -25,5 +21,9 @@
             "name": "medium",
             "url": "https://badgerdao.medium.com/"
         }
+    ],
+    "tags": [
+        "defi",
+        "governance"
     ]
 }

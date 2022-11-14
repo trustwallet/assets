@@ -1,16 +1,13 @@
 {
     "name": "Staked Hector",
-    "website": "https://hector.finance",
-    "description": "Staked version of Hector (HEC) Token",
-    "explorer": "https://ftmscan.com/token/0x75bdeF24285013387A47775828bEC90b91Ca9a5F",
-    "type": "FANTOM",
     "symbol": "sHEC",
+    "type": "FANTOM",
     "decimals": 9,
+    "description": "Staked version of Hector (HEC) Token",
+    "website": "https://hector.finance",
+    "explorer": "https://ftmscan.com/token/0x75bdeF24285013387A47775828bEC90b91Ca9a5F",
     "status": "active",
-    "id": "0x75bdeF24285013387A47775828bEC90b91Ca9a5F",
-    "tags": [
-        "defi"
-    ],
+    "id": "0x75bdef24285013387a47775828bec90b91ca9a5f",
     "links": [
         {
             "name": "twitter",
@@ -36,5 +33,8 @@
             "name": "github",
             "url": "https://github.com/Hector-DAO"
         }
+    ],
+    "tags": [
+        "defi"
     ]
 }

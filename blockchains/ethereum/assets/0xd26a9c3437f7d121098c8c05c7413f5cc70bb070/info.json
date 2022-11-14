@@ -1,13 +1,13 @@
 {
     "name": "Azuma coin",
-    "website": "https://azumacoin.io/",
-    "description": "Azuma Games is a crypto game development company striving to integrate AAA graphics, exciting game-play, and crypto rewards. Azuma Coin is our native token.",
-    "explorer": "https://etherscan.io/token/0xd26a9C3437f7D121098c8C05C7413F5Cc70BB070",
-    "type": "ERC20",
     "symbol": "AZUM",
+    "type": "ERC20",
     "decimals": 18,
+    "description": "Azuma Games is a crypto game development company striving to integrate AAA graphics, exciting game-play, and crypto rewards. Azuma Coin is our native token.",
+    "website": "https://azumacoin.io/",
+    "explorer": "https://etherscan.io/token/0xd26a9C3437f7D121098c8C05C7413F5Cc70BB070",
     "status": "active",
-    "id": "0xd26a9C3437f7D121098c8C05C7413F5Cc70BB070",
+    "id": "0xd26a9c3437f7d121098c8c05c7413f5cc70bb070",
     "links": [
         {
             "name": "twitter",

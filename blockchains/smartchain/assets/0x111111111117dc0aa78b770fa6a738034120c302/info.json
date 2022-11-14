@@ -1,16 +1,13 @@
 {
     "name": "1INCH Token",
-    "website": "https://1inch.exchange",
-    "description": "The 1INCH token on Binance Smart Chain will be used for a bridge between the Binance and Ethereum networks.",
-    "explorer": "https://bscscan.com/token/0x111111111117dc0aa78b770fa6a738034120c302",
-    "type": "BEP20",
     "symbol": "1INCH",
+    "type": "BEP20",
     "decimals": 18,
+    "description": "The 1INCH token on Binance Smart Chain will be used for a bridge between the Binance and Ethereum networks.",
+    "website": "https://1inch.exchange",
+    "explorer": "https://bscscan.com/token/0x111111111117dc0aa78b770fa6a738034120c302",
     "status": "active",
-    "id": "0x111111111117dC0aa78b770fA6A738034120C302",
-    "tags": [
-        "defi"
-    ],
+    "id": "0x111111111117dc0aa78b770fa6a738034120c302",
     "links": [
         {
             "name": "blog",
@@ -32,5 +29,8 @@
             "name": "coingecko",
             "url": "https://coingecko.com/en/coins/1inch/"
         }
+    ],
+    "tags": [
+        "defi"
     ]
 }

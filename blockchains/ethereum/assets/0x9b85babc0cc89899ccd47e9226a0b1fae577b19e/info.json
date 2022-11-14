@@ -1,13 +1,13 @@
 {
     "name": "PPBToken",
-    "website": "https://ppbank.eth.link",
-    "description": "A stablecoin to bank the unbanked",
-    "explorer": "https://etherscan.io/token/0x9B85babc0cc89899cCd47e9226A0b1FaE577B19E",
-    "type": "ERC20",
     "symbol": "PPB",
+    "type": "ERC20",
     "decimals": 18,
+    "description": "A stablecoin to bank the unbanked",
+    "website": "https://ppbank.eth.link",
+    "explorer": "https://etherscan.io/token/0x9B85babc0cc89899cCd47e9226A0b1FaE577B19E",
     "status": "active",
-    "id": "0x9B85babc0cc89899cCd47e9226A0b1FaE577B19E",
+    "id": "0x9b85babc0cc89899ccd47e9226a0b1fae577b19e",
     "links": [
         {
             "name": "twitter",

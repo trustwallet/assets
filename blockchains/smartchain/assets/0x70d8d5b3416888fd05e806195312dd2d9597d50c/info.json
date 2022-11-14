@@ -1,8 +1,13 @@
 {
     "name": "MEXI",
-    "website": "https://metaxiz.com",
+    "symbol": "MEXI",
+    "type": "BEP20",
+    "decimals": 18,
     "description": "MEXI is the governance token of the Metaxiz system. Users can use MEXI for their NFT’s transactions on the Metaxiz marketplace, join the play-and-earn games in Metaxiz Metaverse and enjoy various functionalities of the Metaxiz ecosystem in the future.",
+    "website": "https://metaxiz.com",
     "explorer": "https://bscscan.com/token/0x70d8d5b3416888fd05e806195312dd2d9597d50c",
+    "status": "active",
+    "id": "0x70d8d5b3416888fd05e806195312dd2d9597d50c",
     "links": [
         {
             "name": "twitter",
@@ -35,10 +40,5 @@
     ],
     "tags": [
         "gamefi"
-    ],
-    "type": "BEP20",
-    "symbol": "MEXI",
-    "decimals": 18,
-    "status": "active",
-    "id": "0x70D8d5B3416888fD05e806195312DD2D9597d50C"
+    ]
 }

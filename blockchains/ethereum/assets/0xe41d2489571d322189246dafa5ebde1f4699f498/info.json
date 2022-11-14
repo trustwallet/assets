@@ -1,18 +1,14 @@
 {
     "name": "0x",
-    "website": "https://0x.org",
+    "symbol": "ZRX",
+    "type": "ERC20",
+    "decimals": 18,
     "description": "0x (ZRX) is an open-source protocol that provides smart contract infrastructure and liquidity to enable the peer-to-peer exchange of tokens on the Ethereum blockchain.",
+    "website": "https://0x.org",
     "explorer": "https://etherscan.io/token/0xE41d2489571d322189246DaFA5ebDe1F4699F498",
     "research": "https://research.binance.com/en/projects/0x-protocol",
-    "type": "ERC20",
-    "symbol": "ZRX",
-    "decimals": 18,
     "status": "active",
-    "id": "0xE41d2489571d322189246DaFA5ebDe1F4699F498",
-    "tags": [
-        "defi",
-        "governance"
-    ],
+    "id": "0xe41d2489571d322189246dafa5ebde1f4699f498",
     "links": [
         {
             "name": "github",
@@ -38,5 +34,9 @@
             "name": "coingecko",
             "url": "https://coingecko.com/en/coins/0x/"
         }
+    ],
+    "tags": [
+        "defi",
+        "governance"
     ]
 }

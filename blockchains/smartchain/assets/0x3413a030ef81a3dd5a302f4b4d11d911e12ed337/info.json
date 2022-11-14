@@ -1,13 +1,13 @@
 {
     "name": "DAI (Portal)",
-    "type": "BEP20",
     "symbol": "DAI",
+    "type": "BEP20",
     "decimals": 18,
     "description": "Cross Chain Portal Bridged Token",
     "website": "https://makerdao.com/",
     "explorer": "https://bscscan.com/token/0x3413a030EF81a3dD5a302F4B4D11d911e12ed337",
     "status": "active",
-    "id": "0x3413a030EF81a3dD5a302F4B4D11d911e12ed337",
+    "id": "0x3413a030ef81a3dd5a302f4b4d11d911e12ed337",
     "tags": [
         "wrapped"
     ]

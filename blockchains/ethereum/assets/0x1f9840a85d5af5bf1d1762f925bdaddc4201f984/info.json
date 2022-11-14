@@ -1,18 +1,14 @@
 {
     "name": "Uniswap",
-    "website": "https://uniswap.org",
+    "symbol": "UNI",
+    "type": "ERC20",
+    "decimals": 18,
     "description": "UNI is the Uniswap protocol token. Uniswap is a decentralized protocol for automated liquidity provision on Ethereum.",
+    "website": "https://uniswap.org",
     "explorer": "https://etherscan.io/token/0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984",
     "research": "https://research.binance.com/en/projects/uniswap",
-    "type": "ERC20",
-    "symbol": "UNI",
-    "decimals": 18,
     "status": "active",
-    "id": "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984",
-    "tags": [
-        "defi",
-        "governance"
-    ],
+    "id": "0x1f9840a85d5af5bf1d1762f925bdaddc4201f984",
     "links": [
         {
             "name": "discord",
@@ -34,5 +30,9 @@
             "name": "coingecko",
             "url": "https://coingecko.com/en/coins/uniswap/"
         }
+    ],
+    "tags": [
+        "defi",
+        "governance"
     ]
 }

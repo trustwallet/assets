@@ -1,13 +1,13 @@
 {
     "name": "Kyber Network Crystal Legacy",
-    "website": "https://kyber.network",
-    "description": "Kyber Network’s on-chain liquidity protocol allows decentralized token swaps to be integrated into any application, enabling value exchange to be performed seamlessly between all parties in the ecosystem.",
-    "explorer": "https://etherscan.io/token/0xdd974D5C2e2928deA5F71b9825b8b646686BD200",
-    "type": "ERC20",
     "symbol": "KNCL",
+    "type": "ERC20",
     "decimals": 18,
+    "description": "Kyber Network’s on-chain liquidity protocol allows decentralized token swaps to be integrated into any application, enabling value exchange to be performed seamlessly between all parties in the ecosystem.",
+    "website": "https://kyber.network",
+    "explorer": "https://etherscan.io/token/0xdd974D5C2e2928deA5F71b9825b8b646686BD200",
     "status": "abandoned",
-    "id": "0xdd974D5C2e2928deA5F71b9825b8b646686BD200",
+    "id": "0xdd974d5c2e2928dea5f71b9825b8b646686bd200",
     "links": [
         {
             "name": "github",

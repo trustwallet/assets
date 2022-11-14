@@ -1,16 +1,13 @@
 {
     "name": "Sushi",
-    "website": "https://sushiswap.org/",
-    "description": "The SushiSwap protocol realigns incentives for network participants by introducing revenue sharing and forum-driven network efforts to the popular AMM model.",
-    "explorer": "https://ftmscan.com/token/0xae75A438b2E0cB8Bb01Ec1E1e376De11D44477CC",
-    "type": "FANTOM",
     "symbol": "SUSHI",
+    "type": "FANTOM",
     "decimals": 18,
+    "description": "The SushiSwap protocol realigns incentives for network participants by introducing revenue sharing and forum-driven network efforts to the popular AMM model.",
+    "website": "https://sushiswap.org/",
+    "explorer": "https://ftmscan.com/token/0xae75A438b2E0cB8Bb01Ec1E1e376De11D44477CC",
     "status": "active",
-    "id": "0xae75A438b2E0cB8Bb01Ec1E1e376De11D44477CC",
-    "tags": [
-        "defi"
-    ],
+    "id": "0xae75a438b2e0cb8bb01ec1e1e376de11d44477cc",
     "links": [
         {
             "name": "github",
@@ -28,5 +25,8 @@
             "name": "coingecko",
             "url": "https://coingecko.com/coins/sushi/"
         }
+    ],
+    "tags": [
+        "defi"
     ]
 }

@@ -1,16 +1,13 @@
 {
     "name": "Stable UNI",
-    "website": "app.ichi.org",
-    "description": "oneUNI is an ICHI-created stablecoin for Uniswap.",
-    "explorer": "https://etherscan.io/token/0x8290d7a64f25e6b5002d98367e8367c1b532b534",
-    "type": "ERC20",
     "symbol": "oneUNI",
+    "type": "ERC20",
     "decimals": 18,
+    "description": "oneUNI is an ICHI-created stablecoin for Uniswap.",
+    "website": "app.ichi.org",
+    "explorer": "https://etherscan.io/token/0x8290d7a64f25e6b5002d98367e8367c1b532b534",
     "status": "active",
-    "id": "0x8290D7a64F25e6b5002d98367E8367c1b532b534",
-    "tags": [
-        "defi"
-    ],
+    "id": "0x8290d7a64f25e6b5002d98367e8367c1b532b534",
     "links": [
         {
             "name": "github",
@@ -36,5 +33,8 @@
             "name": "coingecko",
             "url": "https://coingecko.com/en/coins/stable-uni"
         }
+    ],
+    "tags": [
+        "defi"
     ]
 }

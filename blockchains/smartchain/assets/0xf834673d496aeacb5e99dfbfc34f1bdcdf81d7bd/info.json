@@ -1,13 +1,13 @@
 {
     "name": "Aegis Launchpad",
-    "website": "https://aegislaunchpad.com/",
-    "description": "A launchpad that allows any token amount held by investors to participate in IDO's. It also includes an insurance system and P2E game.",
-    "explorer": "https://bscscan.com/token/0xf834673d496aeacb5e99dfbfc34f1bdcdf81d7bd",
-    "type": "BEP20",
     "symbol": "AGSPAD",
+    "type": "BEP20",
     "decimals": 9,
+    "description": "A launchpad that allows any token amount held by investors to participate in IDO's. It also includes an insurance system and P2E game.",
+    "website": "https://aegislaunchpad.com/",
+    "explorer": "https://bscscan.com/token/0xf834673d496aeacb5e99dfbfc34f1bdcdf81d7bd",
     "status": "active",
-    "id": "0xf834673D496AEAcb5E99Dfbfc34f1bDCdf81D7Bd",
+    "id": "0xf834673d496aeacb5e99dfbfc34f1bdcdf81d7bd",
     "links": [
         {
             "name": "twitter",

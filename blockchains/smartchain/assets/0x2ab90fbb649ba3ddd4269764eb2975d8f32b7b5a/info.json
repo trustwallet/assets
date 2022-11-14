@@ -1,13 +1,13 @@
 {
     "name": "SafeBank YES",
-    "website": "https://safebank.app",
-    "description": "SafeBank is the world's first Decentralized Bank which allows you to control your own finance. SafeBank is owned and operated by DafriBank Digital.",
-    "explorer": "https://bscscan.com/token/0x2ab90fbb649ba3ddd4269764eb2975d8f32b7b5a",
-    "type": "BEP20",
     "symbol": "SafeBANK",
+    "type": "BEP20",
     "decimals": 18,
+    "description": "SafeBank is the world's first Decentralized Bank which allows you to control your own finance. SafeBank is owned and operated by DafriBank Digital.",
+    "website": "https://safebank.app",
+    "explorer": "https://bscscan.com/token/0x2ab90fbb649ba3ddd4269764eb2975d8f32b7b5a",
     "status": "active",
-    "id": "0x2aB90FBb649bA3DDD4269764eb2975d8F32b7b5a",
+    "id": "0x2ab90fbb649ba3ddd4269764eb2975d8f32b7b5a",
     "links": [
         {
             "name": "twitter",

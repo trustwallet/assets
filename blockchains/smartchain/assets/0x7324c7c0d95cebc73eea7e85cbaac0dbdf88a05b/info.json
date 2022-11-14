@@ -1,13 +1,13 @@
 {
     "name": "Chain",
-    "website": "https://chain.com",
-    "description": "Chain is a cloud blockchain infrastructure that enables organizations to build better financial services from the ground up. Chain has launched Chain Core which is a permissioned and open source blockchain and Sequence, its ledger as a service product. Clients can receive discounts and pay for commercial fees with Chain Tokens (XCN) as well as participate in community protocol governance and access to premium features.",
-    "explorer": "https://bscscan.com/token/0x7324c7C0d95CEBC73eEa7E85CbAac0dBdf88a05b",
-    "type": "BEP20",
     "symbol": "XCN",
+    "type": "BEP20",
     "decimals": 18,
+    "description": "Chain is a cloud blockchain infrastructure that enables organizations to build better financial services from the ground up. Chain has launched Chain Core which is a permissioned and open source blockchain and Sequence, its ledger as a service product. Clients can receive discounts and pay for commercial fees with Chain Tokens (XCN) as well as participate in community protocol governance and access to premium features.",
+    "website": "https://chain.com",
+    "explorer": "https://bscscan.com/token/0x7324c7C0d95CEBC73eEa7E85CbAac0dBdf88a05b",
     "status": "active",
-    "id": "0x7324c7C0d95CEBC73eEa7E85CbAac0dBdf88a05b",
+    "id": "0x7324c7c0d95cebc73eea7e85cbaac0dbdf88a05b",
     "links": [
         {
             "name": "github",

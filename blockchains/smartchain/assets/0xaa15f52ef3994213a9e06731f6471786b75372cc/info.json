@@ -1,12 +1,13 @@
 {
     "name": "LilDogeFloki",
-    "website": "https://lildogefloki.fun",
-    "description": "Lil Doge Floki ($LDF), a community-driven meme token inspired by Elon Musk! Lil Doge Floki's mission is to build a DAO to drive the most popular and original P2E game on BSC that combines Metaverse, NFTs, and the ability to earn why you play!",
-    "explorer": "https://bscscan.com/token/0xaa15f52Ef3994213a9e06731F6471786B75372CC",
-    "type": "BEP20",
     "symbol": "LDF&#128021",
+    "type": "BEP20",
     "decimals": 9,
+    "description": "Lil Doge Floki ($LDF), a community-driven meme token inspired by Elon Musk! Lil Doge Floki's mission is to build a DAO to drive the most popular and original P2E game on BSC that combines Metaverse, NFTs, and the ability to earn why you play!",
+    "website": "https://lildogefloki.fun",
+    "explorer": "https://bscscan.com/token/0xaa15f52Ef3994213a9e06731F6471786B75372CC",
     "status": "active",
+    "id": "0xaa15f52ef3994213a9e06731f6471786b75372cc",
     "links": [
         {
             "name": "telegram",
@@ -20,6 +21,5 @@
             "name": "coingecko",
             "url": "https://coingecko.com/en/coins/lil-doge-floki-token"
         }
-    ],
-    "id": "0xaa15f52Ef3994213a9e06731F6471786B75372CC"
+    ]
 }

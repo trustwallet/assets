@@ -1,13 +1,13 @@
 {
     "name": "TORG",
-    "website": "https://torg.to/intl/about",
-    "description": "A sustainable, completely decentralized, and utility-focused cryptocurrency, aimed at global human development.",
-    "explorer": "https://bscscan.com/token/0xcea59DCE6A6d73a24e6d6944CFaBc330814c098A",
-    "type": "BEP20",
     "symbol": "TORG",
+    "type": "BEP20",
     "decimals": 18,
+    "description": "A sustainable, completely decentralized, and utility-focused cryptocurrency, aimed at global human development.",
+    "website": "https://torg.to/intl/about",
+    "explorer": "https://bscscan.com/token/0xcea59DCE6A6d73a24e6d6944CFaBc330814c098A",
     "status": "active",
-    "id": "0xcea59DCE6A6d73a24e6d6944CFaBc330814c098A",
+    "id": "0xcea59dce6a6d73a24e6d6944cfabc330814c098a",
     "links": [
         {
             "name": "telegram",
@@ -22,4 +22,4 @@
             "url": "https://twitter.com/TorgTogether"
         }
     ]
-} 
+}

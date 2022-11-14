@@ -1,13 +1,13 @@
 {
     "name": "Unit protocol",
-    "website": "https://unit.xyz",
-    "description": "Unit protocol is a decentralized borrowing protocol that allows using a variety of tokens as collateral.",
-    "explorer": "https://etherscan.io/token/0xC76FB75950536d98FA62ea968E1D6B45ffea2A55",
-    "type": "ERC20",
     "symbol": "COL",
+    "type": "ERC20",
     "decimals": 18,
+    "description": "Unit protocol is a decentralized borrowing protocol that allows using a variety of tokens as collateral.",
+    "website": "https://unit.xyz",
+    "explorer": "https://etherscan.io/token/0xC76FB75950536d98FA62ea968E1D6B45ffea2A55",
     "status": "active",
-    "id": "0xC76FB75950536d98FA62ea968E1D6B45ffea2A55",
+    "id": "0xc76fb75950536d98fa62ea968e1d6b45ffea2a55",
     "links": [
         {
             "name": "github",

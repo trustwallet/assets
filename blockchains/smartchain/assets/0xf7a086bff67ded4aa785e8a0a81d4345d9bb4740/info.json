@@ -1,16 +1,13 @@
 {
     "name": "MetaSafeMoon",
-    "website": "https://metasafemoon.net",
-    "description": "The first BEP20 Token that will make it possible for you to buy land on the moon.",
-    "explorer": "https://bscscan.com/token/0xF7A086BFf67DeD4Aa785e8a0a81D4345d9bb4740",
-    "type": "BEP20",
     "symbol": "METASFMA",
+    "type": "BEP20",
     "decimals": 9,
+    "description": "The first BEP20 Token that will make it possible for you to buy land on the moon.",
+    "website": "https://metasafemoon.net",
+    "explorer": "https://bscscan.com/token/0xF7A086BFf67DeD4Aa785e8a0a81D4345d9bb4740",
     "status": "active",
-    "id": "0xF7A086BFf67DeD4Aa785e8a0a81D4345d9bb4740",
-    "tags": [
-        "deflationary"
-    ],
+    "id": "0xf7a086bff67ded4aa785e8a0a81d4345d9bb4740",
     "links": [
         {
             "name": "telegram",
@@ -24,5 +21,8 @@
             "name": "twitter",
             "url": "https://twitter.com/MetaSafeMoon"
         }
+    ],
+    "tags": [
+        "deflationary"
     ]
 }

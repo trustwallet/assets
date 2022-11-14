@@ -1,12 +1,11 @@
 {
     "name": "Anyswap-BEP20",
-    "website": "https://bsc.anyswap.exchange",
-    "description": "Anyswap aims to create a multi-platform cross-chain DEX using Fusion’s DCRM technology.",
-    "explorer": "https://bscscan.com/token/0xF68C9Df95a18B2A5a5fa1124d79EEEffBaD0B6Fa",
-    "research": "",
-    "type": "BEP20",
     "symbol": "ANY",
+    "type": "BEP20",
     "decimals": 18,
+    "description": "Anyswap aims to create a multi-platform cross-chain DEX using Fusion’s DCRM technology.",
+    "website": "https://bsc.anyswap.exchange",
+    "explorer": "https://bscscan.com/token/0xF68C9Df95a18B2A5a5fa1124d79EEEffBaD0B6Fa",
     "status": "active",
-    "id": "0xF68C9Df95a18B2A5a5fa1124d79EEEffBaD0B6Fa"
+    "id": "0xf68c9df95a18b2a5a5fa1124d79eeeffbad0b6fa"
 }

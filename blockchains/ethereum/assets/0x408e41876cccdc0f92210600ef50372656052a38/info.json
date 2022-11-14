@@ -1,16 +1,13 @@
 {
     "name": "Ren",
-    "website": "https://renproject.io/",
-    "description": "Ren is an open protocol meant to enable the permissionless and private transfer of value between any blockchain.",
-    "explorer": "https://etherscan.io/token/0x408e41876cCCDC0F92210600ef50372656052a38",
-    "type": "ERC20",
     "symbol": "REN",
+    "type": "ERC20",
     "decimals": 18,
+    "description": "Ren is an open protocol meant to enable the permissionless and private transfer of value between any blockchain.",
+    "website": "https://renproject.io/",
+    "explorer": "https://etherscan.io/token/0x408e41876cCCDC0F92210600ef50372656052a38",
     "status": "active",
-    "id": "0x408e41876cCCDC0F92210600ef50372656052a38",
-    "tags": [
-        "defi"
-    ],
+    "id": "0x408e41876cccdc0f92210600ef50372656052a38",
     "links": [
         {
             "name": "github",
@@ -44,5 +41,8 @@
             "name": "coingecko",
             "url": "https://coingecko.com/en/coins/republic-protocol/"
         }
+    ],
+    "tags": [
+        "defi"
     ]
 }

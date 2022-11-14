@@ -1,16 +1,13 @@
 {
     "name": "METAGALAXY LAND",
-    "website": "https://metagalaxyland.com",
-    "description": "The spacemap focuses on the development of the technology, operations infrastructure, new partnerships, and marketing initiatives.",
-    "explorer": "https://bscscan.com/token/0x7CD8c22D3F4b66230F73D7FfCB48576233c3fe33",
-    "type": "BEP20",
     "symbol": "MEGALAND",
+    "type": "BEP20",
     "decimals": 18,
+    "description": "The spacemap focuses on the development of the technology, operations infrastructure, new partnerships, and marketing initiatives.",
+    "website": "https://metagalaxyland.com",
+    "explorer": "https://bscscan.com/token/0x7CD8c22D3F4b66230F73D7FfCB48576233c3fe33",
     "status": "active",
-    "id": "0x7CD8c22D3F4b66230F73D7FfCB48576233c3fe33",
-    "tags": [
-        "deflationary"
-    ],
+    "id": "0x7cd8c22d3f4b66230f73d7ffcb48576233c3fe33",
     "links": [
         {
             "name": "telegram",
@@ -24,5 +21,8 @@
             "name": "twitter",
             "url": "https://twitter.com/metagalaxyland"
         }
+    ],
+    "tags": [
+        "deflationary"
     ]
-} 
+}

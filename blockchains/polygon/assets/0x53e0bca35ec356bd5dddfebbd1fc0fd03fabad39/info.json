@@ -1,13 +1,13 @@
 {
     "name": "ChainLink Token",
-    "website": "https://chain.link/",
-    "description": "A blockchain-based middleware, acting as a bridge between cryptocurrency smart contracts, data feeds, APIs and traditional bank account payments.",
-    "explorer": "https://polygonscan.com/token/0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39",
-    "type": "POLYGON",
     "symbol": "LINK",
+    "type": "POLYGON",
     "decimals": 18,
+    "description": "A blockchain-based middleware, acting as a bridge between cryptocurrency smart contracts, data feeds, APIs and traditional bank account payments.",
+    "website": "https://chain.link/",
+    "explorer": "https://polygonscan.com/token/0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39",
     "status": "active",
-    "id": "0x53E0bca35eC356BD5ddDFebbD1Fc0fD03FaBad39",
+    "id": "0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39",
     "links": [
         {
             "name": "whitepaper",

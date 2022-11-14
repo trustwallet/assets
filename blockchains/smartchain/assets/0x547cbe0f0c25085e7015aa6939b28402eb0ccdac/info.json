@@ -1,14 +1,13 @@
 {
     "name": "Elastic BNB",
-    "website": "https://xbn.finance",
-    "short_description": "A new Defi protocol that enables Adaptive Supply Model.",
-    "explorer": "https://bscscan.com/token/0x547cbe0f0c25085e7015aa6939b28402eb0ccdac",
-    "description": "Elastic BNB (XBN) is a new Defi protocol that enables Adaptive Supply Model. 1 XBN will anchor to 0.001 BNB with 100 days lag factor.",
-    "type": "BEP20",
     "symbol": "XBN",
+    "type": "BEP20",
     "decimals": 18,
+    "description": "Elastic BNB (XBN) is a new Defi protocol that enables Adaptive Supply Model. 1 XBN will anchor to 0.001 BNB with 100 days lag factor.",
+    "website": "https://xbn.finance",
+    "explorer": "https://bscscan.com/token/0x547cbe0f0c25085e7015aa6939b28402eb0ccdac",
     "status": "active",
-    "id": "0x547CBE0f0c25085e7015Aa6939b28402EB0CcDAC",
+    "id": "0x547cbe0f0c25085e7015aa6939b28402eb0ccdac",
     "links": [
         {
             "name": "github",

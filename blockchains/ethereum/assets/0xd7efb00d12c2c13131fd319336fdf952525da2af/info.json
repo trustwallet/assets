@@ -1,13 +1,13 @@
 {
     "name": "Proton",
-    "website": "https://protonchain.com",
-    "description": "Proton is a new public blockchain and dApp platform designed for both consumer applications and P2P payments. It is built around a secure identity and financial settlements layer that allows users to directly link real identity and fiat accounts, pull funds and use crypto seamlessly.",
-    "explorer": "https://etherscan.io/token/0xD7EFB00d12C2c13131FD319336Fdf952525dA2af",
-    "type": "ERC20",
     "symbol": "XPR",
+    "type": "ERC20",
     "decimals": 4,
+    "description": "Proton is a new public blockchain and dApp platform designed for both consumer applications and P2P payments. It is built around a secure identity and financial settlements layer that allows users to directly link real identity and fiat accounts, pull funds and use crypto seamlessly.",
+    "website": "https://protonchain.com",
+    "explorer": "https://etherscan.io/token/0xD7EFB00d12C2c13131FD319336Fdf952525dA2af",
     "status": "active",
-    "id": "0xD7EFB00d12C2c13131FD319336Fdf952525dA2af",
+    "id": "0xd7efb00d12c2c13131fd319336fdf952525da2af",
     "tags": [
         "defi",
         "governance"

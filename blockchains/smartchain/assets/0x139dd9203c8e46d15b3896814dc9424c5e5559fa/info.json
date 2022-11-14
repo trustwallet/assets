@@ -1,12 +1,12 @@
 {
     "name": "OrcaX",
-    "website": "https://orcax.finance",
+    "symbol": "OX",
+    "type": "BEP20",
+    "decimals": 9,
     "description": "OX is a charity coin that donates 2% of every transaction directly to the Binance charity wallet.",
+    "website": "https://orcax.finance",
     "explorer": "https://bscscan.com/token/0x139dd9203c8E46d15B3896814Dc9424c5e5559fA",
     "research": "https://orcax.finance",
-    "type": "BEP20",
-    "symbol": "OX",
-    "decimals": 9,
     "status": "active",
-    "id": "0x139dd9203c8E46d15B3896814Dc9424c5e5559fA"
+    "id": "0x139dd9203c8e46d15b3896814dc9424c5e5559fa"
 }

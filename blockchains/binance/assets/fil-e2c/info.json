@@ -1,12 +1,12 @@
 {
     "name": "Filecoin",
-    "website": "https://filecoin.io",
+    "symbol": "FIL",
+    "type": "BEP2",
+    "decimals": 8,
     "description": "Filecoin provides a blockchain-based marketplace that aims to revolutionize the global storage economy.",
+    "website": "https://filecoin.io",
     "explorer": "https://explorer.binance.org/asset/FIL-E2C",
     "research": "https://research.binance.com/en/projects/filecoin",
-    "type": "BEP2",
-    "symbol": "FIL",
-    "decimals": 8,
     "status": "active",
-    "id": "FIL-E2C"
+    "id": "fil-e2c"
 }

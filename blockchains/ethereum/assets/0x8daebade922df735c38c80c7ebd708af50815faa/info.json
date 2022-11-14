@@ -1,13 +1,13 @@
 {
     "name": "tBTC",
-    "website": "https://tbtc.network/",
-    "description": "tBTC is a trustlessly Bitcoin-backed ERC-20 token.",
-    "explorer": "https://etherscan.io/token/0x8dAEBADE922dF735c38C80C7eBD708Af50815fAa",
-    "type": "ERC20",
     "symbol": "TBTC",
+    "type": "ERC20",
     "decimals": 18,
+    "description": "tBTC is a trustlessly Bitcoin-backed ERC-20 token.",
+    "website": "https://tbtc.network/",
+    "explorer": "https://etherscan.io/token/0x8dAEBADE922dF735c38C80C7eBD708Af50815fAa",
     "status": "active",
-    "id": "0x8dAEBADE922dF735c38C80C7eBD708Af50815fAa",
+    "id": "0x8daebade922df735c38c80c7ebd708af50815faa",
     "links": [
         {
             "name": "github",

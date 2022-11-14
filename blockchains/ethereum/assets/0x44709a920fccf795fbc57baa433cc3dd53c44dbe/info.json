@@ -1,17 +1,13 @@
 {
     "name": "DappRadar",
-    "website": "https://dappradar.com/",
-    "description": "DappRadar aims to be one of the leading global NFT & DeFi DAPP store.",
-    "explorer": "https://etherscan.io/token/0x44709a920fccf795fbc57baa433cc3dd53c44dbe",
     "symbol": "RADAR",
     "type": "ERC20",
     "decimals": 18,
+    "description": "DappRadar aims to be one of the leading global NFT & DeFi DAPP store.",
+    "website": "https://dappradar.com/",
+    "explorer": "https://etherscan.io/token/0x44709a920fccf795fbc57baa433cc3dd53c44dbe",
     "status": "active",
-    "id": "0x44709a920fCcF795fbC57BAA433cc3dd53C44DbE",
-    "tags": [
-        "nft",
-        "defi"
-    ],
+    "id": "0x44709a920fccf795fbc57baa433cc3dd53c44dbe",
     "links": [
         {
             "name": "github",
@@ -29,5 +25,9 @@
             "name": "telegram",
             "url": "https://t.me/joinchat/GdhNjQ8PMhCZ_a0CZutmXg"
         }
+    ],
+    "tags": [
+        "nft",
+        "defi"
     ]
 }

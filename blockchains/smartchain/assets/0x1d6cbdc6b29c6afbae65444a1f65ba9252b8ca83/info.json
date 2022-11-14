@@ -1,17 +1,13 @@
 {
     "name": "TOR Stablecoin",
-    "website": "https://tor.cash",
-    "description": "TOR is a fully collateralized, backed by the Hector Finance Treasury, stablecoin built on the Fantom Opera Chain.",
-    "explorer": "https://bscscan.com/token/0x1d6Cbdc6b29C6afBae65444a1f65bA9252b8CA83",
-    "type": "BEP20",
     "symbol": "TOR",
+    "type": "BEP20",
     "decimals": 18,
+    "description": "TOR is a fully collateralized, backed by the Hector Finance Treasury, stablecoin built on the Fantom Opera Chain.",
+    "website": "https://tor.cash",
+    "explorer": "https://bscscan.com/token/0x1d6Cbdc6b29C6afBae65444a1f65bA9252b8CA83",
     "status": "active",
-    "id": "0x1d6Cbdc6b29C6afBae65444a1f65bA9252b8CA83",
-    "tags": [
-        "defi",
-        "stablecoin"
-    ],
+    "id": "0x1d6cbdc6b29c6afbae65444a1f65ba9252b8ca83",
     "links": [
         {
             "name": "twitter",
@@ -45,5 +41,9 @@
             "name": "coingecko",
             "url": "https://coingecko.com/coins/tor"
         }
+    ],
+    "tags": [
+        "defi",
+        "stablecoin"
     ]
 }

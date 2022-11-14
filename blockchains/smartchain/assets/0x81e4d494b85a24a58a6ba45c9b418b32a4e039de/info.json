@@ -1,13 +1,13 @@
 {
     "name": "MoonToken",
-    "website": "https://www.moontoken.xyz/",
-    "description": "We keep it simple, We Moon. Rugproof. Audited. Community Owned #MoonToken.",
-    "explorer": "https://bscscan.com/token/0x81E4d494b85A24a58a6BA45c9B418b32a4E039de",
-    "type": "BEP20",
     "symbol": "MOON",
+    "type": "BEP20",
     "decimals": 18,
+    "description": "We keep it simple, We Moon. Rugproof. Audited. Community Owned #MoonToken.",
+    "website": "https://www.moontoken.xyz/",
+    "explorer": "https://bscscan.com/token/0x81E4d494b85A24a58a6BA45c9B418b32a4E039de",
     "status": "active",
-    "id": "0x81E4d494b85A24a58a6BA45c9B418b32a4E039de",
+    "id": "0x81e4d494b85a24a58a6ba45c9b418b32a4e039de",
     "links": [
         {
             "name": "twitter",

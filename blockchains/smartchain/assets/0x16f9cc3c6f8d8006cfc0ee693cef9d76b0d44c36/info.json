@@ -1,13 +1,13 @@
 {
     "name": "Baby Bali",
-    "website": "https://babybalibsc.com",
-    "description": "We are the first token to combine these 5 super elements at once.",
-    "explorer": "https://bscscan.com/token/0x16f9cc3c6F8d8006cfc0ee693CeF9D76b0d44C36",
-    "type": "BEP20",
     "symbol": "BB",
+    "type": "BEP20",
     "decimals": 9,
+    "description": "We are the first token to combine these 5 super elements at once.",
+    "website": "https://babybalibsc.com",
+    "explorer": "https://bscscan.com/token/0x16f9cc3c6F8d8006cfc0ee693CeF9D76b0d44C36",
     "status": "active",
-    "id": "0x16f9cc3c6F8d8006cfc0ee693CeF9D76b0d44C36",
+    "id": "0x16f9cc3c6f8d8006cfc0ee693cef9d76b0d44c36",
     "links": [
         {
             "name": "telegram",
@@ -22,4 +22,4 @@
             "url": "https://twitter.com/BabyBalibsc"
         }
     ]
-}  
+}

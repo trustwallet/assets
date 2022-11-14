@@ -1,16 +1,13 @@
 {
     "name": "Hector Finance",
-    "website": "https://hector.finance",
-    "description": "Hector Finance is developing a financial center on the Fantom Opera Chain and beyond.",
-    "explorer": "https://ftmscan.com/token/0x5C4FDfc5233f935f20D2aDbA572F770c2E377Ab0",
-    "type": "FANTOM",
     "symbol": "HEC",
+    "type": "FANTOM",
     "decimals": 9,
+    "description": "Hector Finance is developing a financial center on the Fantom Opera Chain and beyond.",
+    "website": "https://hector.finance",
+    "explorer": "https://ftmscan.com/token/0x5C4FDfc5233f935f20D2aDbA572F770c2E377Ab0",
     "status": "active",
-    "id": "0x5C4FDfc5233f935f20D2aDbA572F770c2E377Ab0",
-    "tags": [
-        "defi"
-    ],
+    "id": "0x5c4fdfc5233f935f20d2adba572f770c2e377ab0",
     "links": [
         {
             "name": "twitter",
@@ -44,5 +41,8 @@
             "name": "coingecko",
             "url": "https://coingecko.com/en/coins/hector-finance"
         }
+    ],
+    "tags": [
+        "defi"
     ]
 }

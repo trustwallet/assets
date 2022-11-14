@@ -1,14 +1,14 @@
 {
     "name": "Venus DOT",
-    "website": "https://venus.io/",
-    "description": "The Venus vTokens, which are self-contained borrowing and lending contracts. VToken contains the core logic and VBep20, VBUSD, VSXP, VUSDC, VUSDT, VXVS and VBNB add public interfaces for Bep20 tokens and bnb, respectively.",
-    "research": "https://research.binance.com/en/projects/venus",
-    "explorer": "https://bscscan.com/token/0x1610bc33319e9398de5f57B33a5b184c806aD217",
-    "type": "BEP20",
     "symbol": "vDOT",
+    "type": "BEP20",
     "decimals": 8,
+    "description": "The Venus vTokens, which are self-contained borrowing and lending contracts. VToken contains the core logic and VBep20, VBUSD, VSXP, VUSDC, VUSDT, VXVS and VBNB add public interfaces for Bep20 tokens and bnb, respectively.",
+    "website": "https://venus.io/",
+    "explorer": "https://bscscan.com/token/0x1610bc33319e9398de5f57B33a5b184c806aD217",
+    "research": "https://research.binance.com/en/projects/venus",
     "status": "active",
-    "id": "0x1610bc33319e9398de5f57B33a5b184c806aD217",
+    "id": "0x1610bc33319e9398de5f57b33a5b184c806ad217",
     "links": [
         {
             "name": "github",

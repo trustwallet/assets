@@ -1,11 +1,11 @@
 {
     "name": "CoinLoan",
-    "website": "https://coinloan.io",
-    "description": "The CoinLoan Token (CLT) is a part of the CoinLoan crypto lending platform.",
-    "explorer": "https://etherscan.io/token/0x2001f2A0Cf801EcFda622f6C28fb6E10d803D969",
-    "type": "ERC20",
     "symbol": "CLT",
+    "type": "ERC20",
     "decimals": 8,
+    "description": "The CoinLoan Token (CLT) is a part of the CoinLoan crypto lending platform.",
+    "website": "https://coinloan.io",
+    "explorer": "https://etherscan.io/token/0x2001f2A0Cf801EcFda622f6C28fb6E10d803D969",
     "status": "active",
-    "id": "0x2001f2A0Cf801EcFda622f6C28fb6E10d803D969"
+    "id": "0x2001f2a0cf801ecfda622f6c28fb6e10d803d969"
 }

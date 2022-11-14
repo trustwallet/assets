@@ -1,11 +1,11 @@
 {
     "name": "oneETH",
-    "website": "https://ichi.farm",
-    "description": "This has been migrated over to a new contract: 0xec0d77a58528a218cbf41fa6e1585c8d7a085868",
-    "explorer": "https://etherscan.io/token/0x6fcBBB527Fb2954BED2B224A5BB7c23C5AeEb6E1",
-    "type": "ERC20",
     "symbol": "oneETH",
+    "type": "ERC20",
     "decimals": 9,
+    "description": "This has been migrated over to a new contract: 0xec0d77a58528a218cbf41fa6e1585c8d7a085868",
+    "website": "https://ichi.farm",
+    "explorer": "https://etherscan.io/token/0x6fcBBB527Fb2954BED2B224A5BB7c23C5AeEb6E1",
     "status": "abandoned",
-    "id": "0x6fcBBB527Fb2954BED2B224A5BB7c23C5AeEb6E1"
+    "id": "0x6fcbbb527fb2954bed2b224a5bb7c23c5aeeb6e1"
 }

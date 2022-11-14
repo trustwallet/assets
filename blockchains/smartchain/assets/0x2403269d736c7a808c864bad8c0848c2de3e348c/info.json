@@ -1,11 +1,11 @@
 {
     "name": "AIRBNB",
-    "website": "https://www.airbnbtoken.info",
-    "description": "AirBnb is a frictionless, community driven contract that allows you to hold tokens of increasing value due to deflationary structure.",
-    "explorer": "https://bscscan.com/token/0x2403269d736C7a808C864bAD8c0848c2dE3E348c",
-    "type": "BEP20",
     "symbol": "AIRBNB",
+    "type": "BEP20",
     "decimals": 9,
+    "description": "AirBnb is a frictionless, community driven contract that allows you to hold tokens of increasing value due to deflationary structure.",
+    "website": "https://www.airbnbtoken.info",
+    "explorer": "https://bscscan.com/token/0x2403269d736C7a808C864bAD8c0848c2dE3E348c",
     "status": "active",
-    "id": "0x2403269d736C7a808C864bAD8c0848c2dE3E348c"
+    "id": "0x2403269d736c7a808c864bad8c0848c2de3e348c"
 }

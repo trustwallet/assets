@@ -1,13 +1,13 @@
 {
     "name": "aETHb",
-    "website": "https://stkr.io/",
-    "description": "aETHb is a reward-earing bond that enables instant liquidity for staked ETH tokens in Ethereum 2.0 network.",
-    "explorer": "https://etherscan.io/token/0xD01ef7C0A5d8c432fc2d1a85c66cF2327362E5C6",
-    "type": "ERC20",
     "symbol": "aETHb",
+    "type": "ERC20",
     "decimals": 18,
+    "description": "aETHb is a reward-earing bond that enables instant liquidity for staked ETH tokens in Ethereum 2.0 network.",
+    "website": "https://stkr.io/",
+    "explorer": "https://etherscan.io/token/0xD01ef7C0A5d8c432fc2d1a85c66cF2327362E5C6",
     "status": "active",
-    "id": "0xD01ef7C0A5d8c432fc2d1a85c66cF2327362E5C6",
+    "id": "0xd01ef7c0a5d8c432fc2d1a85c66cf2327362e5c6",
     "links": [
         {
             "name": "github",

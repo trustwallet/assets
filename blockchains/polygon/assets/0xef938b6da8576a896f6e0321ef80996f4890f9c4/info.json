@@ -1,16 +1,13 @@
 {
     "name": "Decentral Games",
-    "website": "https://decentral.games",
-    "description": "Decentral Games is a metaverse-native gaming DAO building play-to-earn poker. DG Hodlers vote on treasury management, economic policy, and development to grow and strengthen the Decentral Games ecosystem.",
-    "explorer": "https://polygonscan.com/token/0xef938b6da8576a896f6e0321ef80996f4890f9c4",
-    "type": "POLYGON",
     "symbol": "DG",
+    "type": "POLYGON",
     "decimals": 18,
+    "description": "Decentral Games is a metaverse-native gaming DAO building play-to-earn poker. DG Hodlers vote on treasury management, economic policy, and development to grow and strengthen the Decentral Games ecosystem.",
+    "website": "https://decentral.games",
+    "explorer": "https://polygonscan.com/token/0xef938b6da8576a896f6e0321ef80996f4890f9c4",
     "status": "active",
-    "id": "0xef938b6da8576a896f6E0321ef80996F4890f9c4",
-    "tags": [
-        "gamefi"
-    ],
+    "id": "0xef938b6da8576a896f6e0321ef80996f4890f9c4",
     "links": [
         {
             "name": "twitter",
@@ -28,5 +25,8 @@
             "name": "coinmarketcap",
             "url": "https://coinmarketcap.com/currencies/decentral-games-new/"
         }
+    ],
+    "tags": [
+        "gamefi"
     ]
 }

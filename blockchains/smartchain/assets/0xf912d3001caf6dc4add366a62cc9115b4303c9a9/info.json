@@ -1,14 +1,14 @@
 {
     "name": "Venus DOGE",
-    "website": "https://venus.io/",
-    "description": "The Venus vTokens, which are self-contained borrowing and lending contracts. VToken contains the core logic and VBep20, VBUSD, VSXP, VUSDC, VUSDT, VXVS and VBNB add public interfaces for Bep20 tokens and bnb, respectively.",
-    "research": "https://research.binance.com/en/projects/venus",
-    "explorer": "https://bscscan.com/token/0xF912d3001CAf6DC4ADD366A62Cc9115B4303c9A9",
-    "type": "BEP20",
     "symbol": "vDOGE",
+    "type": "BEP20",
     "decimals": 8,
+    "description": "The Venus vTokens, which are self-contained borrowing and lending contracts. VToken contains the core logic and VBep20, VBUSD, VSXP, VUSDC, VUSDT, VXVS and VBNB add public interfaces for Bep20 tokens and bnb, respectively.",
+    "website": "https://venus.io/",
+    "explorer": "https://bscscan.com/token/0xF912d3001CAf6DC4ADD366A62Cc9115B4303c9A9",
+    "research": "https://research.binance.com/en/projects/venus",
     "status": "active",
-    "id": "0xF912d3001CAf6DC4ADD366A62Cc9115B4303c9A9",
+    "id": "0xf912d3001caf6dc4add366a62cc9115b4303c9a9",
     "links": [
         {
             "name": "github",

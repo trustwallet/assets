@@ -1,13 +1,13 @@
 {
     "name": "Memes Token",
-    "website": "https://memestoken.com",
-    "description": "MEMES token is the utility currency of the first decentralized MEME nft marketplace and social network .",
-    "explorer": "https://bscscan.com/token/0x40B165Fd5dDc75ad0bDDc9ADd0adAbff5431a975",
-    "type": "BEP20",
     "symbol": "MEMES",
+    "type": "BEP20",
     "decimals": 9,
+    "description": "MEMES token is the utility currency of the first decentralized MEME nft marketplace and social network .",
+    "website": "https://memestoken.com",
+    "explorer": "https://bscscan.com/token/0x40B165Fd5dDc75ad0bDDc9ADd0adAbff5431a975",
     "status": "active",
-    "id": "0x40B165Fd5dDc75ad0bDDc9ADd0adAbff5431a975",
+    "id": "0x40b165fd5ddc75ad0bddc9add0adabff5431a975",
     "links": [
         {
             "name": "twitter",
@@ -21,4 +21,4 @@
     "tags": [
         "memes"
     ]
-} 
+}

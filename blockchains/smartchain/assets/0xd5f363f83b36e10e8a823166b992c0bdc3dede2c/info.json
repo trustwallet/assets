@@ -1,13 +1,13 @@
 {
     "name": "ElonBank",
-    "website": "https://elonbank.io",
-    "description": "ElonBank is a financial protocol that includes mechanisms for auto-staking, auto-compounding, and auto-liquidity.",
-    "explorer": "https://bscscan.com/token/0xD5f363F83b36E10e8a823166b992c0bDc3deDE2C",
-    "type": "BEP20",
     "symbol": "ElonBank",
+    "type": "BEP20",
     "decimals": 5,
+    "description": "ElonBank is a financial protocol that includes mechanisms for auto-staking, auto-compounding, and auto-liquidity.",
+    "website": "https://elonbank.io",
+    "explorer": "https://bscscan.com/token/0xD5f363F83b36E10e8a823166b992c0bDc3deDE2C",
     "status": "active",
-    "id": "0xD5f363F83b36E10e8a823166b992c0bDc3deDE2C",
+    "id": "0xd5f363f83b36e10e8a823166b992c0bdc3dede2c",
     "links": [
         {
             "name": "twitter",

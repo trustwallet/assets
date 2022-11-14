@@ -1,17 +1,13 @@
 {
     "name": "Decentraland",
-    "website": "https://decentraland.org",
-    "description": "Decentraland (MANA) defines itself as a virtual reality platform powered by the Ethereum blockchain that allows users to create, experience, and monetize content and applications.",
-    "explorer": "https://etherscan.io/token/0x0F5D2fB29fb7d3CFeE444a200298f468908cC942",
-    "type": "ERC20",
     "symbol": "MANA",
+    "type": "ERC20",
     "decimals": 18,
+    "description": "Decentraland (MANA) defines itself as a virtual reality platform powered by the Ethereum blockchain that allows users to create, experience, and monetize content and applications.",
+    "website": "https://decentraland.org",
+    "explorer": "https://etherscan.io/token/0x0F5D2fB29fb7d3CFeE444a200298f468908cC942",
     "status": "active",
-    "id": "0x0F5D2fB29fb7d3CFeE444a200298f468908cC942",
-    "tags": [
-        "gamefi",
-        "nft"
-    ],
+    "id": "0x0f5d2fb29fb7d3cfee444a200298f468908cc942",
     "links": [
         {
             "name": "github",
@@ -41,5 +37,9 @@
             "name": "coingecko",
             "url": "https://coingecko.com/en/coins/decentraland/"
         }
+    ],
+    "tags": [
+        "gamefi",
+        "nft"
     ]
 }

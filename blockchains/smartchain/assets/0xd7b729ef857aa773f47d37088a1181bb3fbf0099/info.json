@@ -1,11 +1,11 @@
 {
     "name": "OLD BOG Token",
-    "website": "https://bogtools.io/",
-    "description": "The old BOG token has been deprecated, you may sell or burn this token.",
-    "explorer": "https://bscscan.com/token/0xD7B729ef857Aa773f47D37088A1181bB3fbF0099",
-    "type": "BEP20",
     "symbol": "BOG",
+    "type": "BEP20",
     "decimals": 18,
+    "description": "The old BOG token has been deprecated, you may sell or burn this token.",
+    "website": "https://bogtools.io/",
+    "explorer": "https://bscscan.com/token/0xD7B729ef857Aa773f47D37088A1181bB3fbF0099",
     "status": "abandoned",
-    "id": "0xD7B729ef857Aa773f47D37088A1181bB3fbF0099"
+    "id": "0xd7b729ef857aa773f47d37088a1181bb3fbf0099"
 }

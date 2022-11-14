@@ -1,16 +1,13 @@
 {
     "name": "Thoreum V2",
-    "website": "https://thoreum.capital/",
-    "description": "THOREUM v2 is a Multi-chain Venture Capital Platform that rewards its HOLDers by leveraging multi-chain investment opportunities. Thoreum phase 1 - Mining completed, phase 2 - Hyper deflationary & maximizing profits.",
-    "explorer": "https://bscscan.com/token/0xF2A92BC1Cf798fF4De14502a9C6FdA58865e8D5d",
-    "type": "BEP20",
     "symbol": "THOREUM",
+    "type": "BEP20",
     "decimals": 18,
+    "description": "THOREUM v2 is a Multi-chain Venture Capital Platform that rewards its HOLDers by leveraging multi-chain investment opportunities. Thoreum phase 1 - Mining completed, phase 2 - Hyper deflationary & maximizing profits.",
+    "website": "https://thoreum.capital/",
+    "explorer": "https://bscscan.com/token/0xF2A92BC1Cf798fF4De14502a9C6FdA58865e8D5d",
     "status": "active",
-    "id": "0xF2A92BC1Cf798fF4De14502a9C6FdA58865e8D5d",
-    "tags": [
-        "defi"
-    ],
+    "id": "0xf2a92bc1cf798ff4de14502a9c6fda58865e8d5d",
     "links": [
         {
             "name": "twitter",
@@ -40,5 +37,8 @@
             "name": "github",
             "url": "https://github.com/ThoreumFinance/ThoreumCapital"
         }
+    ],
+    "tags": [
+        "defi"
     ]
 }

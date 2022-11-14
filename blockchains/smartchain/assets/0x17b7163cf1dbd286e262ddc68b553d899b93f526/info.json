@@ -1,13 +1,13 @@
 {
     "name": "Qubit Token",
-    "website": "https://qbt.fi",
-    "description": "Qubit Finance is a DeFi lending protocol that is optimized to deliver lending as a utility for the BSC.",
-    "explorer": "https://bscscan.com/token/0x17B7163cf1Dbd286E262ddc68b553D899B93f526",
-    "type": "BEP20",
     "symbol": "QBT",
+    "type": "BEP20",
     "decimals": 18,
+    "description": "Qubit Finance is a DeFi lending protocol that is optimized to deliver lending as a utility for the BSC.",
+    "website": "https://qbt.fi",
+    "explorer": "https://bscscan.com/token/0x17B7163cf1Dbd286E262ddc68b553D899B93f526",
     "status": "active",
-    "id": "0x17B7163cf1Dbd286E262ddc68b553D899B93f526",
+    "id": "0x17b7163cf1dbd286e262ddc68b553d899b93f526",
     "links": [
         {
             "name": "github",

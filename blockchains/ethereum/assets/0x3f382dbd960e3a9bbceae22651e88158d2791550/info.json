@@ -1,13 +1,13 @@
 {
     "name": "Aavegotchi",
-    "website": "https://www.aavegotchi.com/",
-    "description": "Aavegotchis are crypto-collectibles living on the Ethereum blockchain, backed by the ERC721 standard used in popular blockchain games. $GHST is the official utility token of the Aavegotchi ecosystem and can be used to purchase portals, wearables, and consumables.",
-    "explorer": "https://etherscan.io/token/0x3F382DbD960E3a9bbCeaE22651E88158d2791550",
-    "type": "ERC20",
     "symbol": "GHST",
+    "type": "ERC20",
     "decimals": 18,
+    "description": "Aavegotchis are crypto-collectibles living on the Ethereum blockchain, backed by the ERC721 standard used in popular blockchain games. $GHST is the official utility token of the Aavegotchi ecosystem and can be used to purchase portals, wearables, and consumables.",
+    "website": "https://www.aavegotchi.com/",
+    "explorer": "https://etherscan.io/token/0x3F382DbD960E3a9bbCeaE22651E88158d2791550",
     "status": "active",
-    "id": "0x3F382DbD960E3a9bbCeaE22651E88158d2791550",
+    "id": "0x3f382dbd960e3a9bbceae22651e88158d2791550",
     "links": [
         {
             "name": "github",

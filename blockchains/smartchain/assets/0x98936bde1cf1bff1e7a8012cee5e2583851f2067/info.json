@@ -1,9 +1,13 @@
 {
     "name": "Annex",
-    "website": "https://www.annex.finance/",
-    "description": "Money Markets. A Decentralized Marketplace for Lenders and Borrowers",
-    "explorer": "https://bscscan.com/token/0x98936Bde1CF1BFf1e7a8012Cee5e2583851f2067",
+    "symbol": "ANN",
     "type": "BEP20",
+    "decimals": 18,
+    "description": "Money Markets. A Decentralized Marketplace for Lenders and Borrowers",
+    "website": "https://www.annex.finance/",
+    "explorer": "https://bscscan.com/token/0x98936Bde1CF1BFf1e7a8012Cee5e2583851f2067",
+    "status": "active",
+    "id": "0x98936bde1cf1bff1e7a8012cee5e2583851f2067",
     "links": [
         {
             "name": "twitter",
@@ -25,9 +29,5 @@
             "name": "reddit",
             "url": "https://reddit.com/r/AnnexFinance/"
         }
-    ],
-    "symbol": "ANN",
-    "decimals": 18,
-    "status": "active",
-    "id": "0x98936Bde1CF1BFf1e7a8012Cee5e2583851f2067"
+    ]
 }

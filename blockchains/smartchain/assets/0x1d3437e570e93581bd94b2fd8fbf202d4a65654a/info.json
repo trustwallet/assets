@@ -1,16 +1,13 @@
 {
     "name": "NanoByte Token",
-    "type": "BEP20",
     "symbol": "NBT",
+    "type": "BEP20",
     "decimals": 18,
-    "website": "https://www.nanobyte.finance/",
     "description": "NanoByte token is bridging cryptocurrency to real world financial application, by integrating crypto to FIAT products such as e-money, credit cards, insurance, and other investments. NanoByte token is making decentralized finance mainstream and legitimate.",
+    "website": "https://www.nanobyte.finance/",
     "explorer": "https://bscscan.com/token/0x1D3437E570e93581Bd94b2fd8Fbf202d4a65654A",
     "status": "active",
-    "id": "0x1D3437E570e93581Bd94b2fd8Fbf202d4a65654A",
-    "tags": [
-        "defi"
-    ],
+    "id": "0x1d3437e570e93581bd94b2fd8fbf202d4a65654a",
     "links": [
         {
             "name": "telegram",
@@ -20,5 +17,8 @@
             "name": "twitter",
             "url": "https://twitter.com/nanobyte_io"
         }
+    ],
+    "tags": [
+        "defi"
     ]
 }

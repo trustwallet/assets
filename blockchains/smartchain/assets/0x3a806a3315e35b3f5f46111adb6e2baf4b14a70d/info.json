@@ -1,16 +1,13 @@
 {
     "name": "Libera Financial",
-    "website": "https://libera.financial/",
-    "description": "LIBERA FINANCIAL is a Triple passive income & Hyper Deflationary token that is listed on CEXes.",
-    "explorer": "https://bscscan.com/token/0x3A806A3315E35b3F5F46111ADb6E2BAF4B14A70D",
-    "type": "BEP20",
     "symbol": "LIBERA",
+    "type": "BEP20",
     "decimals": 18,
+    "description": "LIBERA FINANCIAL is a Triple passive income & Hyper Deflationary token that is listed on CEXes.",
+    "website": "https://libera.financial/",
+    "explorer": "https://bscscan.com/token/0x3A806A3315E35b3F5F46111ADb6E2BAF4B14A70D",
     "status": "active",
-    "id": "0x3A806A3315E35b3F5F46111ADb6E2BAF4B14A70D",
-    "tags": [
-        "defi"
-    ],
+    "id": "0x3a806a3315e35b3f5f46111adb6e2baf4b14a70d",
     "links": [
         {
             "name": "twitter",
@@ -44,5 +41,8 @@
             "name": "coingecko",
             "url": "https://coingecko.com/en/coins/libera-financial"
         }
+    ],
+    "tags": [
+        "defi"
     ]
 }

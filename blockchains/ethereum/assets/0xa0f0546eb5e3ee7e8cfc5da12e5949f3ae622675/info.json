@@ -1,13 +1,13 @@
 {
     "name": "TOKO",
-    "website": "https://tokoin.io/",
-    "description": "Tokoin's mission is to facilitate trustworthy data exchange in a specified platform so that SMEs will be able to meet their needs for financing and business services without intermediaries.",
-    "explorer": "https://etherscan.io/token/0xa0F0546Eb5E3eE7e8cfC5DA12e5949F3AE622675",
-    "type": "ERC20",
     "symbol": "TOKO",
+    "type": "ERC20",
     "decimals": 18,
+    "description": "Tokoin's mission is to facilitate trustworthy data exchange in a specified platform so that SMEs will be able to meet their needs for financing and business services without intermediaries.",
+    "website": "https://tokoin.io/",
+    "explorer": "https://etherscan.io/token/0xa0F0546Eb5E3eE7e8cfC5DA12e5949F3AE622675",
     "status": "active",
-    "id": "0xa0F0546Eb5E3eE7e8cfC5DA12e5949F3AE622675",
+    "id": "0xa0f0546eb5e3ee7e8cfc5da12e5949f3ae622675",
     "links": [
         {
             "name": "github",

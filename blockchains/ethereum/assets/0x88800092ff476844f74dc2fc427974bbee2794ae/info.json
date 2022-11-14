@@ -1,18 +1,13 @@
 {
     "name": "Ambire Wallet",
-    "website": "https://ambire.com",
-    "description": "WALLET is the governance token of Ambire Wallet. It is also used as a user acquisition tool for marketing activities (referral program, rewards, etc.).",
-    "explorer": "https://etherscan.io/token/0x88800092fF476844f74dC2FC427974BBee2794Ae",
-    "type": "ERC20",
     "symbol": "WALLET",
-    "status": "active",
+    "type": "ERC20",
     "decimals": 18,
-    "id": "0x88800092fF476844f74dC2FC427974BBee2794Ae",
-    "tags": [
-        "defi",
-        "governance",
-        "staking"
-    ],
+    "description": "WALLET is the governance token of Ambire Wallet. It is also used as a user acquisition tool for marketing activities (referral program, rewards, etc.).",
+    "website": "https://ambire.com",
+    "explorer": "https://etherscan.io/token/0x88800092fF476844f74dC2FC427974BBee2794Ae",
+    "status": "active",
+    "id": "0x88800092ff476844f74dc2fc427974bbee2794ae",
     "links": [
         {
             "name": "github",
@@ -54,5 +49,10 @@
             "name": "coingecko",
             "url": "https://coingecko.com/coins/ambire-wallet"
         }
+    ],
+    "tags": [
+        "defi",
+        "governance",
+        "staking"
     ]
 }

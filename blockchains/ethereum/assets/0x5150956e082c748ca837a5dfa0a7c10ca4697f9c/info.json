@@ -1,19 +1,18 @@
 {
     "name": "Zeedex",
-    "website": "https://zeedex.io",
-    "twitter": "https://twitter.com/Zeedexio",
-    "telegram": "https://t.me/zeedexio",
-    "description": "Zeedex is a decentralized exchange where users can trade, stake, lend and borrow cryptocurrencies.",
-    "explorer": "https://etherscan.io/token/0x5150956E082C748Ca837a5dFa0a7C10CA4697f9c",
-    "type": "ERC20",
     "symbol": "ZDEX",
+    "type": "ERC20",
     "decimals": 18,
+    "description": "Zeedex is a decentralized exchange where users can trade, stake, lend and borrow cryptocurrencies.",
+    "website": "https://zeedex.io",
+    "explorer": "https://etherscan.io/token/0x5150956E082C748Ca837a5dFa0a7C10CA4697f9c",
     "status": "active",
-    "id": "0x5150956E082C748Ca837a5dFa0a7C10CA4697f9c",
+    "id": "0x5150956e082c748ca837a5dfa0a7c10ca4697f9c",
     "links": [
         {
             "name": "github",
             "url": "https://github.com/zeedexio"
         }
-    ]
+    ],
+    "twitter": "https://twitter.com/Zeedexio"
 }

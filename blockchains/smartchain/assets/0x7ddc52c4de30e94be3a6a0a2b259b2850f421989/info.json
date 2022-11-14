@@ -1,13 +1,13 @@
 {
     "name": "GMT Token",
-    "website": "https://gmt.io/",
-    "description": "A token backed by real assets that brings in constantly growing daily BTC income to its owner.",
-    "explorer": "https://bscscan.com/token/0x7Ddc52c4De30e94Be3A6A0A2b259b2850f421989",
-    "type": "BEP20",
     "symbol": "GMT",
+    "type": "BEP20",
     "decimals": 18,
+    "description": "A token backed by real assets that brings in constantly growing daily BTC income to its owner.",
+    "website": "https://gmt.io/",
+    "explorer": "https://bscscan.com/token/0x7Ddc52c4De30e94Be3A6A0A2b259b2850f421989",
     "status": "active",
-    "id": "0x7Ddc52c4De30e94Be3A6A0A2b259b2850f421989",
+    "id": "0x7ddc52c4de30e94be3a6a0a2b259b2850f421989",
     "links": [
         {
             "name": "telegram_news",

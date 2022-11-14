@@ -1,9 +1,13 @@
 {
     "name": "Annex BUSD",
-    "website": "https://www.annex.finance/",
-    "description": "Money Markets. A Decentralized Marketplace for Lenders and Borrowers",
-    "explorer": "https://bscscan.com/token/0x8401aAbA08f0be0d30B7D136C50fe5C461DBFA05",
+    "symbol": "aBUSD",
     "type": "BEP20",
+    "decimals": 8,
+    "description": "Money Markets. A Decentralized Marketplace for Lenders and Borrowers",
+    "website": "https://www.annex.finance/",
+    "explorer": "https://bscscan.com/token/0x8401aAbA08f0be0d30B7D136C50fe5C461DBFA05",
+    "status": "active",
+    "id": "0x8401aaba08f0be0d30b7d136c50fe5c461dbfa05",
     "links": [
         {
             "name": "twitter",
@@ -25,9 +29,5 @@
             "name": "reddit",
             "url": "https://reddit.com/r/AnnexFinance/"
         }
-    ],
-    "symbol": "aBUSD",
-    "decimals": 8,
-    "status": "active",
-    "id": "0x8401aAbA08f0be0d30B7D136C50fe5C461DBFA05"
+    ]
 }

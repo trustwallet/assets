@@ -1,13 +1,13 @@
 {
     "name": "Flapp",
-    "website": "https://flapptoken.io/",
-    "description": "Flapp is the token of both the present and the future: an ecosystem for developers and users that facilitates the use and creation of blockchain based dapps",
-    "explorer": "https://etherscan.io/token/0xCfb72ED3647cC8E7FA52E4F121eCdAbEfC305e7f",
-    "type": "ERC20",
     "symbol": "FLAP",
+    "type": "ERC20",
     "decimals": 18,
+    "description": "Flapp is the token of both the present and the future: an ecosystem for developers and users that facilitates the use and creation of blockchain based dapps",
+    "website": "https://flapptoken.io/",
+    "explorer": "https://etherscan.io/token/0xCfb72ED3647cC8E7FA52E4F121eCdAbEfC305e7f",
     "status": "active",
-    "id": "0xCfb72ED3647cC8E7FA52E4F121eCdAbEfC305e7f",
+    "id": "0xcfb72ed3647cc8e7fa52e4f121ecdabefc305e7f",
     "links": [
         {
             "name": "twitter",

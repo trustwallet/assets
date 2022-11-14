@@ -1,16 +1,13 @@
 {
     "name": "META",
-    "website": "https://metabsc.app",
-    "description": "META is a community meme and rewards token. All holders of META are automatically rewarded SHIB. Hold META, and watch your SHIB grow passively.",
-    "explorer": "https://bscscan.com/token/0x26165a5a3Dd21FA528bECf3Ff7F114D00a517344",
-    "type": "BEP20",
     "symbol": "$META",
+    "type": "BEP20",
     "decimals": 9,
+    "description": "META is a community meme and rewards token. All holders of META are automatically rewarded SHIB. Hold META, and watch your SHIB grow passively.",
+    "website": "https://metabsc.app",
+    "explorer": "https://bscscan.com/token/0x26165a5a3Dd21FA528bECf3Ff7F114D00a517344",
     "status": "active",
-    "id": "0x26165a5a3Dd21FA528bECf3Ff7F114D00a517344",
-    "tags": [
-        "deflationary"
-    ],
+    "id": "0x26165a5a3dd21fa528becf3ff7f114d00a517344",
     "links": [
         {
             "name": "telegram",
@@ -24,5 +21,8 @@
             "name": "twitter",
             "url": "https://twitter.com/META_Shiba"
         }
+    ],
+    "tags": [
+        "deflationary"
     ]
-} 
+}

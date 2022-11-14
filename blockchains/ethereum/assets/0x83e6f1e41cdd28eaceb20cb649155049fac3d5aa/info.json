@@ -1,16 +1,13 @@
 {
     "name": "Polkastarter",
-    "website": "https://polkastarter.com/",
-    "description": "Polkastarter is a DEX built for cross-chain token pools and auctions, enabling projects to raise capital on a decentralized, permissionless and interoperable environment based on Polkadot.",
-    "explorer": "https://etherscan.io/token/0x83e6f1E41cdd28eAcEB20Cb649155049Fac3D5Aa",
-    "type": "ERC20",
     "symbol": "POLS",
+    "type": "ERC20",
     "decimals": 18,
+    "description": "Polkastarter is a DEX built for cross-chain token pools and auctions, enabling projects to raise capital on a decentralized, permissionless and interoperable environment based on Polkadot.",
+    "website": "https://polkastarter.com/",
+    "explorer": "https://etherscan.io/token/0x83e6f1E41cdd28eAcEB20Cb649155049Fac3D5Aa",
     "status": "active",
-    "id": "0x83e6f1E41cdd28eAcEB20Cb649155049Fac3D5Aa",
-    "tags": [
-        "defi"
-    ],
+    "id": "0x83e6f1e41cdd28eaceb20cb649155049fac3d5aa",
     "links": [
         {
             "name": "github",
@@ -20,5 +17,8 @@
             "name": "whitepaper",
             "url": "https://docs.google.com/presentation/d/1HkdL6XZfbl4mYgNo_8xZsZU0m8QOKusjgi0vBT9nvvY/edit"
         }
+    ],
+    "tags": [
+        "defi"
     ]
 }

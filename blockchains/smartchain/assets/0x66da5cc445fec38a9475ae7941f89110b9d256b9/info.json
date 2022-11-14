@@ -1,13 +1,13 @@
 {
     "name": "Vodka Token",
-    "type": "BEP20",
     "symbol": "VODKA",
+    "type": "BEP20",
     "decimals": 18,
-    "website": "https://vodkatoken.com/",
     "description": "Vodka Token — collectible play-to-earn NFT game based on DeFi.",
+    "website": "https://vodkatoken.com/",
     "explorer": "https://bscscan.com/token/0x66dA5cc445feC38A9475Ae7941f89110b9d256b9",
     "status": "active",
-    "id": "0x66dA5cc445feC38A9475Ae7941f89110b9d256b9",
+    "id": "0x66da5cc445fec38a9475ae7941f89110b9d256b9",
     "links": [
         {
             "name": "coinmarketcap",
@@ -29,4 +29,4 @@
     "tags": [
         "nft"
     ]
-} 
+}

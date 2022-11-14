@@ -1,13 +1,13 @@
 {
     "name": "NanoDogeCoin",
-    "website": "https://www.nanodogecoin.com/",
-    "description": "NanoDogeCoin (INDC) is the revolutionary token that allows investors to earn USD Tether while helping to save dogs worldwide.",
-    "explorer": "https://bscscan.com/token/0xd3af8e09894d69e937e37eef46df1cbf82b35c81",
-    "type": "BEP20",
     "symbol": "INDC",
+    "type": "BEP20",
     "decimals": 9,
+    "description": "NanoDogeCoin (INDC) is the revolutionary token that allows investors to earn USD Tether while helping to save dogs worldwide.",
+    "website": "https://www.nanodogecoin.com/",
+    "explorer": "https://bscscan.com/token/0xd3af8e09894d69e937e37eef46df1cbf82b35c81",
     "status": "active",
-    "id": "0xD3Af8E09894D69E937e37eeF46Df1cBF82b35C81",
+    "id": "0xd3af8e09894d69e937e37eef46df1cbf82b35c81",
     "links": [
         {
             "name": "telegram",

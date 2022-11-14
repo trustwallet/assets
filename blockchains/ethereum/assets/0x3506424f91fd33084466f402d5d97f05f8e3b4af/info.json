@@ -1,16 +1,13 @@
 {
     "name": "Chiliz",
-    "website": "https://chiliz.com",
-    "description": "Chiliz, powering Socios.com, aims to give sports and esports fans the ability to crowd-manage their favorite teams, games, leagues, and events.",
-    "explorer": "https://etherscan.io/token/0x3506424F91fD33084466F402d5D97f05F8e3b4AF",
-    "type": "ERC20",
     "symbol": "CHZ",
+    "type": "ERC20",
     "decimals": 18,
+    "description": "Chiliz, powering Socios.com, aims to give sports and esports fans the ability to crowd-manage their favorite teams, games, leagues, and events.",
+    "website": "https://chiliz.com",
+    "explorer": "https://etherscan.io/token/0x3506424F91fD33084466F402d5D97f05F8e3b4AF",
     "status": "active",
-    "id": "0x3506424F91fD33084466F402d5D97f05F8e3b4AF",
-    "tags": [
-        "nft"
-    ],
+    "id": "0x3506424f91fd33084466f402d5d97f05f8e3b4af",
     "links": [
         {
             "name": "telegram",
@@ -36,5 +33,8 @@
             "name": "coingecko",
             "url": "https://coingecko.com/en/coins/chiliz/"
         }
+    ],
+    "tags": [
+        "nft"
     ]
 }

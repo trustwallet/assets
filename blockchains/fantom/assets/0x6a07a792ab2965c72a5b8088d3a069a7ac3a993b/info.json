@@ -1,16 +1,13 @@
 {
     "name": "Aave",
-    "website": "https://aave.com/",
-    "description": "Aave is an Open Source and Non-Custodial protocol to earn interest on deposits & borrow assets. It also features access to highly innovative flash loans, which let developers borrow instantly and easily; no collateral needed.",
-    "explorer": "https://ftmscan.com/token/0x6a07A792ab2965C72a5B8088d3a069A7aC3a993B",
-    "type": "FANTOM",
     "symbol": "AAVE",
+    "type": "FANTOM",
     "decimals": 18,
+    "description": "Aave is an Open Source and Non-Custodial protocol to earn interest on deposits & borrow assets. It also features access to highly innovative flash loans, which let developers borrow instantly and easily; no collateral needed.",
+    "website": "https://aave.com/",
+    "explorer": "https://ftmscan.com/token/0x6a07A792ab2965C72a5B8088d3a069A7aC3a993B",
     "status": "active",
-    "id": "0x6a07A792ab2965C72a5B8088d3a069A7aC3a993B",
-    "tags": [
-        "defi"
-    ],
+    "id": "0x6a07a792ab2965c72a5b8088d3a069a7ac3a993b",
     "links": [
         {
             "name": "github",
@@ -28,5 +25,8 @@
             "name": "whitepaper",
             "url": "https://github.com/aave/protocol-v2/blob/master/aave-v2-whitepaper.pdf"
         }
+    ],
+    "tags": [
+        "defi"
     ]
 }

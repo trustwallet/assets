@@ -1,16 +1,13 @@
 {
     "name": "Woonkly Power",
-    "type": "BEP20",
     "symbol": "WOOP",
+    "type": "BEP20",
     "decimals": 18,
     "description": "Woonkly Metasocial Network is a Decentralized Social Network where all posts are converted into NFTs directly, where users have full control of their data and where the content is not uploaded to a server but to users' computers through IPFS",
     "website": "https://woonkly.com",
     "explorer": "https://bscscan.com/token/0x8b303d5bbfbbf46f1a4d9741e491e06986894e18",
     "status": "active",
-    "id": "0x8b303d5BbfBbf46F1a4d9741E491e06986894e18",
-    "tags": [
-        "defi"
-    ],
+    "id": "0x8b303d5bbfbbf46f1a4d9741e491e06986894e18",
     "links": [
         {
             "name": "coingecko",
@@ -40,5 +37,8 @@
             "name": "whitepaper",
             "url": "https://whitepaper.woonkly.com/woonkly.com-eng/"
         }
+    ],
+    "tags": [
+        "defi"
     ]
-} 
+}

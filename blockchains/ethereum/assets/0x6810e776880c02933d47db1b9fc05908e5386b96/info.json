@@ -1,16 +1,13 @@
 {
     "name": "Gnosis",
-    "website": "https://gnosis.io",
-    "description": "Gnosis is a decentralized prediction market built on the Ethereum protocol.",
-    "explorer": "https://etherscan.io/token/0x6810e776880C02933D47DB1b9fc05908e5386b96",
-    "type": "ERC20",
     "symbol": "GNO",
+    "type": "ERC20",
     "decimals": 18,
+    "description": "Gnosis is a decentralized prediction market built on the Ethereum protocol.",
+    "website": "https://gnosis.io",
+    "explorer": "https://etherscan.io/token/0x6810e776880C02933D47DB1b9fc05908e5386b96",
     "status": "active",
-    "id": "0x6810e776880C02933D47DB1b9fc05908e5386b96",
-    "tags": [
-        "defi"
-    ],
+    "id": "0x6810e776880c02933d47db1b9fc05908e5386b96",
     "links": [
         {
             "name": "github",
@@ -36,5 +33,8 @@
             "name": "coingecko",
             "url": "https://coingecko.com/en/coins/gnosis/"
         }
+    ],
+    "tags": [
+        "defi"
     ]
 }

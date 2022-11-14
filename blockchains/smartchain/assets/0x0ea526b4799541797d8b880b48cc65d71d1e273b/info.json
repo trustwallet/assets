@@ -1,16 +1,13 @@
 {
     "name": "Shiba Games",
-    "type": "BEP20",
     "symbol": "SHIBAGAMES ",
+    "type": "BEP20",
     "decimals": 9,
-    "website": "https://shibagames.net",
     "description": "Step into the future. Shiba Games will enter the Metaverse with 3 meta gaming projects ShibaLand, ShibaHunt and ShibaRun.",
+    "website": "https://shibagames.net",
     "explorer": "https://bscscan.com/token/0x0EA526b4799541797D8b880b48Cc65d71d1e273B",
     "status": "active",
-    "id": "0x0EA526b4799541797D8b880b48Cc65d71d1e273B",
-    "tags": [
-        "deflationary"
-    ],
+    "id": "0x0ea526b4799541797d8b880b48cc65d71d1e273b",
     "links": [
         {
             "name": "coinmarketcap",
@@ -28,5 +25,8 @@
             "name": "twitter",
             "url": "https://twitter.com/shibagames_"
         }
+    ],
+    "tags": [
+        "deflationary"
     ]
 }

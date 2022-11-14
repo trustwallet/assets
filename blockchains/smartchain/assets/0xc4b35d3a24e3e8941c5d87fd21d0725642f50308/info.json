@@ -1,13 +1,13 @@
 {
     "name": "DeFiPIE",
-    "website": "https://defipie.com",
-    "description": "DeFiPIE allows everyone to create lending pools for any assets on Ethereum and Binance Smart Chain networks. Users can supply their assets and borrow other assets.",
-    "explorer": "https://bscscan.com/token/0xC4B35d3A24E3e8941c5d87fD21D0725642F50308",
-    "type": "BEP20",
     "symbol": "PIE",
+    "type": "BEP20",
     "decimals": 18,
+    "description": "DeFiPIE allows everyone to create lending pools for any assets on Ethereum and Binance Smart Chain networks. Users can supply their assets and borrow other assets.",
+    "website": "https://defipie.com",
+    "explorer": "https://bscscan.com/token/0xC4B35d3A24E3e8941c5d87fD21D0725642F50308",
     "status": "active",
-    "id": "0xC4B35d3A24E3e8941c5d87fD21D0725642F50308",
+    "id": "0xc4b35d3a24e3e8941c5d87fd21d0725642f50308",
     "links": [
         {
             "name": "github",
