@@ -1,12 +1,12 @@
 {
     "name": "Synthetix Network Token",
-    "website": "https://synthetix.io",
+    "symbol": "SNX",
+    "type": "BEP2",
+    "decimals": 8,
     "description": "Synthetix is a derivatives liquidity protocol on Ethereum that enables the issuance and trading of synthetic assets.",
+    "website": "https://synthetix.io",
     "explorer": "https://explorer.binance.org/asset/SNX-C26",
     "research": "https://research.binance.com/en/projects/synthetix",
-    "type": "BEP2",
-    "symbol": "SNX",
-    "decimals": 8,
     "status": "active",
-    "id": "SNX-C26"
+    "id": "snx-c26"
 }

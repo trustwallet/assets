@@ -1,12 +1,12 @@
 {
     "name": "NEAR Protocol",
-    "website": "https://near.org",
+    "symbol": "NEAR",
+    "type": "BEP2",
+    "decimals": 8,
     "description": "NEAR is an open source platform that accelerates the development of decentralized applications.",
+    "website": "https://near.org",
     "explorer": "https://explorer.binance.org/asset/NEAR-4FD",
     "research": "https://research.binance.com/en/projects/near-protocol",
-    "type": "BEP2",
-    "symbol": "NEAR",
-    "decimals": 8,
     "status": "active",
-    "id": "NEAR-4FD"
+    "id": "near-4fd"
 }

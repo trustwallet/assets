@@ -1,13 +1,13 @@
 {
-    "type": "ESDT",
-    "id": "EGLDUSDC-594e5e",
     "name": "EGLD/USDC LP",
     "symbol": "EGLDUSDC",
+    "type": "ESDT",
     "decimals": 18,
-    "status": "active",
     "description": "Liquidity Provider (LP) Token obtained by adding liquidity in the EGLD/USDC pool on the Maiar DEX.",
     "website": "https://maiar.exchange",
     "explorer": "https://explorer.elrond.com/tokens/EGLDUSDC-594e5e",
+    "status": "active",
+    "id": "egldusdc-594e5e",
     "links": [
         {
             "name": "docs",

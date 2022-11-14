@@ -1,12 +1,12 @@
 {
     "name": "Bella Protocol",
-    "website": "https://bella.fi",
+    "symbol": "BEL",
+    "type": "BEP2",
+    "decimals": 8,
     "description": "Bella Protocol is described to be a set of DeFi products for one-click crypto banking.",
+    "website": "https://bella.fi",
     "explorer": "https://explorer.binance.org/asset/BEL-D85",
     "research": "https://research.binance.com/en/projects/bella",
-    "type": "BEP2",
-    "symbol": "BEL",
-    "decimals": 8,
     "status": "active",
-    "id": "BEL-D85"
+    "id": "bel-d85"
 }
