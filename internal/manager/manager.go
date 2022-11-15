@@ -29,6 +29,7 @@ func InitCommands() {
 	rootCmd.AddCommand(addTokenCmd)
 	rootCmd.AddCommand(addTokenlistCmd)
 	rootCmd.AddCommand(addTokenlistExtendedCmd)
+	rootCmd.AddCommand(copyLogosToStagingCmd)
 }
 
 var (
@@ -91,6 +92,15 @@ var (
 		Short: "Adds token to tokenlist-extended.json",
 		Run: func(cmd *cobra.Command, args []string) {
 			handleAddTokenList(args, path.TokenlistExtended)
+		},
+	}
+
+	copyLogosToStagingCmd = &cobra.Command{
+		Use:   "copy-logos-to-staging",
+		Short: "Copy relevant logos to a staging folder to be uploaded",
+		Run: func(cmd *cobra.Command, args []string) {
+			assetsService := InitAssetsService()
+			assetsService.RunJob(assetsService.CopyLogoToStagingFolder)
 		},
 	}
 )

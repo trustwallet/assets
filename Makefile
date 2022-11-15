@@ -42,6 +42,9 @@ fix:
 update-auto:
 	go run cmd/main.go update-auto
 
+copy-logos-to-staging:
+	go run cmd/main.go copy-logos-to-staging
+
 
 # Helper commands.
 add-token:

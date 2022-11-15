@@ -3,6 +3,7 @@ package processor
 import (
 	assetsmanager "github.com/trustwallet/assets-go-libs/client/assets-manager"
 	"github.com/trustwallet/assets-go-libs/file"
+
 	"github.com/trustwallet/assets/internal/config"
 )
 
@@ -34,22 +35,9 @@ func (s *Service) GetValidator(f *file.AssetFile) []Validator {
 		return []Validator{
 			{Name: "Chain Info Folder (has files)", Run: s.ValidateInfoFolder},
 		}
-	case file.TypeDappsFolder:
-		return []Validator{
-			{Name: "Dapps folder contains only allowed png files in lowercase", Run: s.ValidateDappsFolder},
-		}
-	case file.TypeRootFolder:
-		return []Validator{
-			{Name: "Root folder contains only allowed files", Run: s.ValidateRootFolder},
-		}
 	case file.TypeValidatorsAssetFolder:
 		return []Validator{
 			{Name: "Validators asset folder has logo and valid asset address)", Run: s.ValidateValidatorsAssetFolder},
-		}
-
-	case file.TypeAssetLogoFile, file.TypeChainLogoFile, file.TypeDappsLogoFile, file.TypeValidatorsLogoFile:
-		return []Validator{
-			{Name: "Logos size and dimension are valid", Run: s.ValidateImage},
 		}
 	case file.TypeAssetInfoFile:
 		return []Validator{

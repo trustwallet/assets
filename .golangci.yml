@@ -189,51 +189,32 @@ linters:
   disable-all: true
   enable:
     - bodyclose
+    - cyclop
     - deadcode
-    - depguard
-    - dogsled
-    - dupl
+    - durationcheck
     - errcheck
-    - exportloopref
+    - errorlint
     - exhaustive
-    - funlen
+    - exportloopref
+    - forbidigo
     - gochecknoinits
     - goconst
-    - gocritic
-    - gocyclo
     - gofmt
     - goimports
-    # - gomnd
-    - goprintffuncname
     - gosec
     - gosimple
     - govet
     - ineffassign
-    - lll
-    - misspell
-    - nakedret
+    - nilerr
     - noctx
-    - nolintlint
-    - rowserrcheck
+    - promlinter
+    - revive
     - staticcheck
     - structcheck
-    - stylecheck
+    - thelper
     - typecheck
-    - unconvert
-    - unparam
     - unused
     - varcheck
-    - whitespace
-    - asciicheck
-    # - gochecknoglobals
-    - gocognit
-    - godot
-    # - godox
-    # - goerr113
-    # - nestif
-    - prealloc
-    # - revive
-    # - wsl
 
 output:
   format: colored-line-number

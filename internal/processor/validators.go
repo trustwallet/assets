@@ -126,22 +126,6 @@ func (s *Service) ValidateAssetFolder(f *file.AssetFile) error {
 		compErr.Append(err)
 	}
 
-	errInfo := validation.ValidateHasFiles(dirFiles, []string{"info.json"})
-	errLogo := validation.ValidateHasFiles(dirFiles, []string{"logo.png"})
-
-	if errLogo != nil || errInfo != nil {
-		assetInfoPath := path.GetAssetInfoPath(f.Chain().Handle, f.Asset())
-
-		var infoJson info.AssetModel
-		if err = file.ReadJSONFile(assetInfoPath, &infoJson); err != nil {
-			return err
-		}
-
-		if infoJson.GetStatus() != "spam" && infoJson.GetStatus() != "abandoned" {
-			compErr.Append(fmt.Errorf("%w: logo.png for non-spam assest", validation.ErrMissingFile))
-		}
-	}
-
 	if compErr.Len() > 0 {
 		return compErr
 	}

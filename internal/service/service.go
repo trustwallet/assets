@@ -1,8 +1,11 @@
 package service
 
 import (
+	"errors"
+
 	"github.com/trustwallet/assets-go-libs/file"
 	"github.com/trustwallet/assets-go-libs/validation"
+
 	"github.com/trustwallet/assets/internal/processor"
 	"github.com/trustwallet/assets/internal/report"
 
@@ -91,15 +94,16 @@ func (s *Service) handleError(err error, info *file.AssetFile, valName string) {
 }
 
 func UnwrapComposite(err error) []error {
-	compErr, ok := err.(*validation.ErrComposite)
+	var compErr *validation.ErrComposite
+	ok := errors.As(err, &compErr)
 	if !ok {
 		return []error{err}
 	}
 
-	var errors []error
+	var errs []error
 	for _, e := range compErr.GetErrors() {
-		errors = append(errors, UnwrapComposite(e)...)
+		errs = append(errs, UnwrapComposite(e)...)
 	}
 
-	return errors
+	return errs
 }
