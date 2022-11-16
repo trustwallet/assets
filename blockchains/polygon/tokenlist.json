@@ -1,7 +1,7 @@
 {
     "name": "Trust Wallet: Polygon",
     "logoURI": "https://trustwallet.com/assets/images/favicon.png",
-    "timestamp": "2021-10-07T08:50:36.056Z",
+    "timestamp": "2022-11-15T13:13:45.643489",
     "tokens": [
         {
             "asset": "c966_t0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
@@ -119,8 +119,7 @@
             "name": "ChainLink Token",
             "symbol": "LINK",
             "decimals": 18,
-            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/polygon/assets/0x53E0bca35eC356BD5ddDFebbD1Fc0fD03FaBad39/logo.png",
-            "pairs": []
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/polygon/assets/0x53E0bca35eC356BD5ddDFebbD1Fc0fD03FaBad39/logo.png"
         },
         {
             "asset": "c966_t0x831753DD7087CaC61aB5644b308642cc1c33Dc13",
@@ -129,8 +128,7 @@
             "name": "QuickSwap",
             "symbol": "QUICK",
             "decimals": 18,
-            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/polygon/assets/0x831753DD7087CaC61aB5644b308642cc1c33Dc13/logo.png",
-            "pairs": []
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/polygon/assets/0x831753DD7087CaC61aB5644b308642cc1c33Dc13/logo.png"
         },
         {
             "asset": "c966_t0xD6DF932A45C0f255f85145f286eA0b292B21C90B",
@@ -139,12 +137,20 @@
             "name": "Aave (PoS)",
             "symbol": "AAVE",
             "decimals": 18,
-            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/polygon/assets/0xD6DF932A45C0f255f85145f286eA0b292B21C90B/logo.png",
-            "pairs": []
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/polygon/assets/0xD6DF932A45C0f255f85145f286eA0b292B21C90B/logo.png"
+        },
+        {
+            "asset": "c966_t0x23e7288164Da25CBeBa222837B004bce6Fa96E67",
+            "type": "POLYGON",
+            "address": "0x23e7288164Da25CBeBa222837B004bce6Fa96E67",
+            "name": "Clearpool",
+            "symbol": "CPOOL",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/polygon/assets/0x23e7288164Da25CBeBa222837B004bce6Fa96E67/logo.png"
         }
     ],
     "version": {
-        "major": 6,
+        "major": 7,
         "minor": 0,
         "patch": 0
     }
