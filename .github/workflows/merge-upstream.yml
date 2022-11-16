@@ -4,9 +4,6 @@ on:
   schedule:
     - cron: "0 9 * * *"  # every day at nine
 
-env:
-  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
 jobs:
   merge:
     runs-on: ubuntu-latest
@@ -15,6 +12,7 @@ jobs:
         with:
           fetch-depth: 0
           ref: master
+          token: ${{ secrets.ACCESS_TOKEN }}
 
       - name: git config
         run: |
@@ -23,6 +21,7 @@ jobs:
 
       - name: git merge
         run: |
-          git remote add root git@github.com:trustwallet/assets.git
+          git remote add root https://github.com/trustwallet/assets.git
+          git fetch root
           git merge root/master -s recursive -X ours
           git push -u origin master
