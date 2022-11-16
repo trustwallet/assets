@@ -5,14 +5,13 @@ import (
 	"fmt"
 	"os"
 
-	filelib "github.com/trustwallet/assets-go-libs/file"
+	"github.com/trustwallet/assets-go-libs/file"
 	"github.com/trustwallet/assets-go-libs/path"
 	"github.com/trustwallet/assets-go-libs/validation"
 	"github.com/trustwallet/assets-go-libs/validation/info"
 	"github.com/trustwallet/assets-go-libs/validation/list"
 	"github.com/trustwallet/assets-go-libs/validation/tokenlist"
 	"github.com/trustwallet/assets/internal/config"
-	"github.com/trustwallet/assets/internal/file"
 	"github.com/trustwallet/go-primitives/coin"
 )
 
@@ -38,7 +37,7 @@ func (s *Service) ValidateJSON(f *file.AssetFile) error {
 }
 
 func (s *Service) ValidateRootFolder(f *file.AssetFile) error {
-	dirFiles, err := filelib.ReadDir(f.Path())
+	dirFiles, err := file.ReadDir(f.Path())
 	if err != nil {
 		return err
 	}
@@ -110,7 +109,7 @@ func (s *Service) ValidateImage(f *file.AssetFile) error {
 }
 
 func (s *Service) ValidateAssetFolder(f *file.AssetFile) error {
-	dirFiles, err := filelib.ReadDir(f.Path())
+	dirFiles, err := file.ReadDir(f.Path())
 	if err != nil {
 		return err
 	}
@@ -134,7 +133,7 @@ func (s *Service) ValidateAssetFolder(f *file.AssetFile) error {
 		assetInfoPath := path.GetAssetInfoPath(f.Chain().Handle, f.Asset())
 
 		var infoJson info.AssetModel
-		if err = filelib.ReadJSONFile(assetInfoPath, &infoJson); err != nil {
+		if err = file.ReadJSONFile(assetInfoPath, &infoJson); err != nil {
 			return err
 		}
 
@@ -151,7 +150,7 @@ func (s *Service) ValidateAssetFolder(f *file.AssetFile) error {
 }
 
 func (s *Service) ValidateDappsFolder(f *file.AssetFile) error {
-	dirFiles, err := filelib.ReadDir(f.Path())
+	dirFiles, err := file.ReadDir(f.Path())
 	if err != nil {
 		return err
 	}
@@ -179,7 +178,7 @@ func (s *Service) ValidateDappsFolder(f *file.AssetFile) error {
 
 func (s *Service) ValidateChainInfoFile(f *file.AssetFile) error {
 	var coinInfo info.CoinModel
-	if err := filelib.ReadJSONFile(f.Path(), &coinInfo); err != nil {
+	if err := file.ReadJSONFile(f.Path(), &coinInfo); err != nil {
 		return err
 	}
 
@@ -203,7 +202,7 @@ func (s *Service) ValidateChainInfoFile(f *file.AssetFile) error {
 
 func (s *Service) ValidateAssetInfoFile(f *file.AssetFile) error {
 	var assetInfo info.AssetModel
-	if err := filelib.ReadJSONFile(f.Path(), &assetInfo); err != nil {
+	if err := file.ReadJSONFile(f.Path(), &assetInfo); err != nil {
 		return err
 	}
 
@@ -221,7 +220,7 @@ func (s *Service) ValidateValidatorsListFile(f *file.AssetFile) error {
 	}
 
 	var model []list.Model
-	if err := filelib.ReadJSONFile(f.Path(), &model); err != nil {
+	if err := file.ReadJSONFile(f.Path(), &model); err != nil {
 		return err
 	}
 
@@ -238,7 +237,7 @@ func (s *Service) ValidateValidatorsListFile(f *file.AssetFile) error {
 	assetsPath := path.GetValidatorAssetsPath(f.Chain().Handle)
 	assetFolder := s.fileService.GetAssetFile(assetsPath)
 
-	dirFiles, err := filelib.ReadDir(assetFolder.Path())
+	dirFiles, err := file.ReadDir(assetFolder.Path())
 	if err != nil {
 		return err
 	}
@@ -262,34 +261,47 @@ func isStackingChain(c coin.Coin) bool {
 }
 
 func (s *Service) ValidateTokenListFile(f *file.AssetFile) error {
-	var tokenList tokenlist.Model
-	err := filelib.ReadJSONFile(f.Path(), &tokenList)
+	tokenListPath := f.Path()
+	tokenListExtendedPath := path.GetTokenListPath(f.Chain().Handle, path.TokenlistExtended)
+
+	return validateTokenList(tokenListPath, tokenListExtendedPath, f.Chain())
+}
+
+func (s *Service) ValidateTokenListExtendedFile(f *file.AssetFile) error {
+	tokenListPathExtended := f.Path()
+	tokenListPath := path.GetTokenListPath(f.Chain().Handle, path.TokenlistDefault)
+
+	return validateTokenList(tokenListPathExtended, tokenListPath, f.Chain())
+}
+
+func validateTokenList(path1, path2 string, chain1 coin.Coin) error {
+	var tokenList1 tokenlist.Model
+	err := file.ReadJSONFile(path1, &tokenList1)
 	if err != nil {
 		return err
 	}
 
-	tokenListExtendedPath := path.GetTokenListPath(f.Chain().Handle, path.TokenlistExtended)
-	if filelib.Exists(tokenListExtendedPath) {
-		var tokenListExtended tokenlist.Model
-		err = filelib.ReadJSONFile(tokenListExtendedPath, &tokenListExtended)
+	if file.Exists(path2) {
+		var tokenList2 tokenlist.Model
+		err = file.ReadJSONFile(path2, &tokenList2)
 		if err != nil {
 			return err
 		}
 
 		tokensMap := make(map[string]bool)
-		for _, token := range tokenListExtended.Tokens {
+		for _, token := range tokenList2.Tokens {
 			tokensMap[token.Asset] = true
 		}
 
-		for _, token := range tokenList.Tokens {
+		for _, token := range tokenList1.Tokens {
 			if _, exists := tokensMap[token.Asset]; exists {
 				return fmt.Errorf("duplicate asset: %s from %s, already exist in %s",
-					token.Asset, f.Path(), tokenListExtendedPath)
+					token.Asset, path1, path2)
 			}
 		}
 	}
 
-	err = tokenlist.ValidateTokenList(tokenList, f.Chain(), f.Path())
+	err = tokenlist.ValidateTokenList(tokenList1, chain1, path1)
 	if err != nil {
 		return err
 	}
@@ -298,7 +310,7 @@ func (s *Service) ValidateTokenListFile(f *file.AssetFile) error {
 }
 
 func (s *Service) ValidateInfoFolder(f *file.AssetFile) error {
-	dirFiles, err := filelib.ReadDir(f.Path())
+	dirFiles, err := file.ReadDir(f.Path())
 	if err != nil {
 		return err
 	}
@@ -312,7 +324,7 @@ func (s *Service) ValidateInfoFolder(f *file.AssetFile) error {
 }
 
 func (s *Service) ValidateValidatorsAssetFolder(f *file.AssetFile) error {
-	dirFiles, err := filelib.ReadDir(f.Path())
+	dirFiles, err := file.ReadDir(f.Path())
 	if err != nil {
 		return err
 	}
