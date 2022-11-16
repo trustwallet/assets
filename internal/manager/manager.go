@@ -97,10 +97,10 @@ var (
 
 	copyLogosToStagingCmd = &cobra.Command{
 		Use:   "copy-logos-to-staging",
-		Short: "Copy relevant logos to a staging folder to be uploaded",
+		Short: "Copy relevant logos to a staging folder to be uploaded + create manifest",
 		Run: func(cmd *cobra.Command, args []string) {
-			assetsService := InitAssetsService()
-			assetsService.RunJob(assetsService.CopyLogoToStagingFolder)
+			assetsService := InitStagingAssetsService()
+			assetsService.RunJob()
 		},
 	}
 )
@@ -139,6 +139,20 @@ func InitAssetsService() *service.Service {
 	reportService := report.NewService()
 
 	return service.NewService(fileService, validatorsService, reportService, paths)
+}
+
+func InitStagingAssetsService() *service.StagingAssetsService {
+	setup()
+
+	paths, err := file.ReadLocalFileStructure(root, config.Default.ValidatorsSettings.RootFolder.SkipFiles)
+	if err != nil {
+		log.WithError(err).Fatal("Failed to load file structure.")
+	}
+
+	fileService := file.NewService(paths...)
+	reportService := report.NewService()
+
+	return service.NewStagingAssetsService(fileService, reportService, paths)
 }
 
 func setup() {
