@@ -1,11 +1,60 @@
 {
-    "name": "CargoX Token",
-    "symbol": "CXO",
+    "name": "CargoX (CXO)",
     "type": "ERC20",
+    "symbol": "CXO",
     "decimals": 18,
-    "description": "CargoX aims to disrupt the global logistics industry by replacing legacy paper Bill of Lading documents with Smart B/L Contract based on blockchain technology to able to state and transfer cargo ownership rights without the hassle of handling paper.",
     "website": "https://cargox.io/",
+    "description": "CXO Token powers the Blockchainservice of CargoX Company. The CXO Token documents are published to the Blockchain for Transportation (Bill of Lading) and other Services.",
     "explorer": "https://etherscan.io/token/0xb6EE9668771a79be7967ee29a63D4184F8097143",
     "status": "active",
-    "id": "0xb6EE9668771a79be7967ee29a63D4184F8097143"
+    "id": "0xb6EE9668771a79be7967ee29a63D4184F8097143",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/cargoxio"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/cargox-holding"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/joinchat/EpKs_UawTRFLogW_lohT7A"
+        },
+        {
+            "name": "blog",
+            "url": "https://cargox.io/blog/"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/"
+        },
+        {
+            "name": "telegram_news",
+            "url": "https://t.me/cargoxio"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/CargoXio/"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/cargoxio"
+        },
+        {
+            "name": "facebook",
+            "url": "https://facebook.com/cargox.io"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/cargox/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/cargox"
+        }
+    ],
+    "tags": [
+        "deflationary"
+    ]
 }
