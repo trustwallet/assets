@@ -1,11 +1,28 @@
 {
-    "name": "BitTorrent",
-    "website": "https://bittorrent.com/btt",
-    "description": "BTTOLD will continue to be supported for a long time, and everyone can swap BTTOLD for BTT at any time. 1 BTTOLD = 1000 BTT.",
-    "explorer": "https://tronscan.io/#/token/1002000",
+    "name": "Hotel 24",
     "type": "TRC10",
-    "symbol": "BTTOLD",
-    "decimals": 6,
+    "symbol": "HMN",
+    "decimals": 14,
+    "website": "https://surfiran.com/",
+    "description": "it's for Hotels",
+    "explorer": "https://tronscan.io/#/token/1002000",
     "status": "active",
-    "id": "1002000"
+    "id": "1002000",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/note52"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/hotel"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/Mr_OutOf_filter"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
 }
