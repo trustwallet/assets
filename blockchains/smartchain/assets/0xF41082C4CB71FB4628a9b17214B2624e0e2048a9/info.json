@@ -6,8 +6,12 @@
     "type": "BEP20",
     "symbol": "RTTv2",
     "decimals": 9,
-    "status": "active",
+    "status": "abandoned",
     "id": "0xF41082C4CB71FB4628a9b17214B2624e0e2048a9",
+    "migrate": {
+        "asset_id": "c10000714_t0x8F046a2457a8F1618cAe4706Fa57Bf790e2532a6",
+        "url": "https://restoretruthtoken.com/rtt-rebrand/"
+    },
     "links": [
         {
             "name": "twitter",
