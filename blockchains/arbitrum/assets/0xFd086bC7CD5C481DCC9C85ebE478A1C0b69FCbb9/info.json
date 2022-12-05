@@ -1,0 +1,32 @@
+{
+    "name": "Tether USD",
+    "type": "ARBITRUM",
+    "symbol": "USDT",
+    "decimals": 6,
+    "website": "https://tether.to/",
+    "description": "Tether gives you the joint benefits of open blockchain technology and traditional currency by converting your cash into a stable digital currency equivalent.",
+    "explorer": "https://arbiscan.io/token/0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+    "status": "active",
+    "id": "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9",
+    "links": [
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/tether/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/coins/tether/"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/Tether_to"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://stableset.com/audits/tether_audit_v1/tether_audit_v1.pdf"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+} 
