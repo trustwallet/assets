@@ -1,8 +1,8 @@
 package service
 
 import (
+	"github.com/trustwallet/assets-go-libs/file"
 	"github.com/trustwallet/assets-go-libs/validation"
-	"github.com/trustwallet/assets/internal/file"
 	"github.com/trustwallet/assets/internal/processor"
 	"github.com/trustwallet/assets/internal/report"
 
