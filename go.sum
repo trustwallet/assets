@@ -27,8 +27,6 @@ github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZb
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/rogpeppe/go-internal v1.8.1 h1:geMPLpDpQOgVyCg5z5GoRwLHepNdb71NXb67XFkP+Eg=
 github.com/russross/blackfriday/v2 v2.1.0/go.mod h1:+Rmxgy9KzJVeS9/2gXHxylqXiyQDYRxCVz55jmeOWTM=
-github.com/shopspring/decimal v1.3.1 h1:2Usl1nmF/WZucqkFZhnfFYxxxu8LG21F6nPQBE5gKV8=
-github.com/shopspring/decimal v1.3.1/go.mod h1:DKyhrW/HYNuLGql+MJL6WCR6knT2jwCFRcu2hWCYk4o=
 github.com/sirupsen/logrus v1.8.1 h1:dJKuHgqk1NNQlqoA6BTlM1Wf9DOH3NBjQyu0h9+AZZE=
 github.com/sirupsen/logrus v1.8.1/go.mod h1:yWOB1SBYBC5VeMP7gHvWumXLIWorT60ONWic61uBYv0=
 github.com/spf13/afero v1.6.0 h1:xoax2sJ2DT8S8xA2paPFjDCScCNeWsg75VG0DLRreiY=
@@ -53,8 +51,8 @@ github.com/trustwallet/assets-go-libs v0.3.0 h1:roDXZaUciPbTfwTbCQRajcDFwrFGkVhh
 github.com/trustwallet/assets-go-libs v0.3.0/go.mod h1:IW7K3aJcVlsXnQWD61KyQ46Nvb5iIPrptsKuSDFYbj8=
 github.com/trustwallet/go-libs v0.3.13 h1:zB30WfP6Do+5Cf3+HgkUhawBf1fnOdvvC/eBfCHKBEw=
 github.com/trustwallet/go-libs v0.3.13/go.mod h1:FuDoyKxhE1IgLPWMfU1PFok87MqfYm/spJJx1QziWe8=
-github.com/trustwallet/go-primitives v0.0.56 h1:ndiZSz+99LPj1F5FMjiwMKzepuXScxcGm4C/PWb28LA=
-github.com/trustwallet/go-primitives v0.0.56/go.mod h1:4IujMVfxa0uJS267wFszPDYd7vVjQY+/uOREZclnfU0=
+github.com/trustwallet/go-primitives v0.0.61 h1:CWpFFgI8Kn3wxFwV/WW3NIpq3kEjhH3zCUr5S8LhxeQ=
+github.com/trustwallet/go-primitives v0.0.61/go.mod h1:4IujMVfxa0uJS267wFszPDYd7vVjQY+/uOREZclnfU0=
 golang.org/x/crypto v0.0.0-20190308221718-c2843e01d9a2/go.mod h1:djNgcEr1/C05ACkg1iLfiJU5Ep61QUkGW8qpdssI0+w=
 golang.org/x/crypto v0.0.0-20190820162420-60c769a6c586/go.mod h1:yigFU9vqHzYiE8UmvKecakEJjdnWj3jj499lnFckfCI=
 golang.org/x/crypto v0.0.0-20220214200702-86341886e292 h1:f+lwQ+GtmgoY+A2YaQxlSOnDjXcQ7ZRLWOHbC6HtRqE=
