@@ -1,11 +1,24 @@
 {
-    "name": "Strong",
-    "symbol": "STRONG",
+    "name": "Strong (STRONG)",
     "type": "ERC20",
+    "symbol": "STRONG",
     "decimals": 18,
-    "description": "Strong (STRONG) is a cryptocurrency and operates on the Ethereum platform.",
-    "website": "https://strongblock.io",
+    "website": "https://strongblock.io/",
+    "description": "Strong",
     "explorer": "https://etherscan.io/token/0x990f341946A3fdB507aE7e52d17851B87168017c",
     "status": "active",
-    "id": "0x990f341946A3fdB507aE7e52d17851B87168017c"
+    "id": "0x990f341946A3fdB507aE7e52d17851B87168017c",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/Strongblock_io"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/t.me/strongblock_io"
+        }
+    ],
+    "tags": [
+        "defi"
+    ]
 }
