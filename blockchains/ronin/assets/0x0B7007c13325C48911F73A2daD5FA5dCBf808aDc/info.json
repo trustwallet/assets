@@ -3,14 +3,11 @@
     "symbol": "USDC",
     "type": "RONIN",
     "decimals": 6,
+    "description": "USDC is a fully collateralized US Dollar stablecoin developed by CENTRE, the open source project with Circle being the first of several forthcoming issuers.",
     "website": "https://www.centre.io/usdc",
     "explorer": "https://explorer.roninchain.com/token/0x0b7007c13325c48911f73a2dad5fa5dcbf808adc",
     "status": "active",
-    "description": "USDC is a fully collateralized US Dollar stablecoin developed by CENTRE, the open source project with Circle being the first of several forthcoming issuers.",
-    "id": "0x0b7007c13325c48911f73a2dad5fa5dcbf808adc",
-    "tags": [
-        "stablecoin"
-    ],
+    "id": "0x0B7007c13325C48911F73A2daD5FA5dCBf808aDc",
     "links": [
         {
             "name": "github",
@@ -32,5 +29,8 @@
             "name": "coingecko",
             "url": "https://coingecko.com/en/coins/usd-coin/"
         }
+    ],
+    "tags": [
+        "stablecoin"
     ]
 }
