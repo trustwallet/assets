@@ -1,0 +1,35 @@
+{
+    "name": "USD Coin",
+    "symbol": "USDC",
+    "type": "RONIN",
+    "decimals": 6,
+    "website": "https://www.centre.io/usdc",
+    "explorer": "https://explorer.roninchain.com/token/0x0b7007c13325c48911f73a2dad5fa5dcbf808adc",
+    "status": "active",
+    "id": "0x0b7007c13325c48911f73a2dad5fa5dcbf808adc",
+    "tags": [
+        "stablecoin"
+    ],
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/centrehq"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/centre_io"
+        },
+        {
+            "name": "blog",
+            "url": "https://centre.io/blog"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/usd-coin/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/usd-coin/"
+        }
+    ]
+}
