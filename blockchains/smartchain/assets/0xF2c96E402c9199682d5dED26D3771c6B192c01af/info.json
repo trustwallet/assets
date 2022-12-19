@@ -1,6 +1,7 @@
 {
    "name": "Scallop",
    "website": "https://www.scallopx.com",
+   "description":"Scallop is an innovative fintech decentralized ecosystem built to offer users a faster and more efficient way to securely manage crypto and fiat currencies in a single place.",
    "explorer": "https://bscscan.com/token/0xF2c96E402c9199682d5dED26D3771c6B192c01af",
    "type": "BEP20",
    "symbol": "SCLP",
@@ -25,16 +26,11 @@
             "url": "https://medium.com/scallopx"
         },
         {
-            "name": "linkedin",
-            "url": "https://www.linkedin.com/company/scallopx/"
-        },
-        {
-            "name": "instagram",
-            "url": "https://www.instagram.com/scallop.official/"
-        },
-        {
             "name": "whitepaper",
             "url": "https://scallop-bucket.s3.eu-west-1.amazonaws.com/upload_file/SCALLOP1/Scallop+Whitepaper.pdf"
         }
-    ]
+    ],
+   "tags": [
+        "fintech"
+    ],
 }
