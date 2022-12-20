@@ -7,7 +7,7 @@ require (
 	github.com/spf13/cobra v1.4.0
 	github.com/trustwallet/assets-go-libs v0.3.0
 	github.com/trustwallet/go-libs v0.3.13
-	github.com/trustwallet/go-primitives v0.0.56
+	github.com/trustwallet/go-primitives v0.0.61
 )
 
 require (
@@ -19,7 +19,6 @@ require (
 	github.com/mitchellh/mapstructure v1.4.3 // indirect
 	github.com/patrickmn/go-cache v2.1.0+incompatible // indirect
 	github.com/pelletier/go-toml v1.9.4 // indirect
-	github.com/shopspring/decimal v1.3.1 // indirect
 	github.com/spf13/afero v1.6.0 // indirect
 	github.com/spf13/cast v1.4.1 // indirect
 	github.com/spf13/jwalterweatherman v1.1.0 // indirect
