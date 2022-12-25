@@ -10,7 +10,7 @@
       },
       {
          "chain": "61",
-         "coinId": "ethereumclassic"
+         "coinId": "classic"
       },
       {
          "chain": "42161",
@@ -23,6 +23,78 @@
       {
          "chain": "288",
          "coinId": "boba"
+      },
+      {
+         "chain": "10001",
+         "coinId": "ethereumpow"
+      },
+      {
+         "chain": "8217",
+         "coinId": "klaytn"
+      },
+      {
+         "chain": "42262",
+         "coinId": "oasis"
+      },
+      {
+         "chain": "7700",
+         "coinId": "canto"
+      },
+      {
+         "chain": "1284",
+         "coinId": "moonbeam"
+      },
+      {
+         "chain": "2000",
+         "coinId": "dogechain"
+      },
+      {
+         "chain": "321",
+         "coinId": "kucoin"
+      },
+      {
+         "chain": "70",
+         "coinId": "hoo"
+      },
+      {
+         "chain": "250",
+         "coinId": "fantom"
+      },
+      {
+         "chain": "137",
+         "coinId": "polygon"
+      },
+      {
+         "chain": "128",
+         "coinId": "heco"
+      },
+      {
+         "chain": "1285",
+         "coinId": "moonriver"
+      },
+      {
+         "chain": "43114",
+         "coinId": "avalanche"
+      },
+      {
+         "chain": "32659",
+         "coinId": "fusion"
+      },
+      {
+         "chain": "42220",
+         "coinId": "celo"
+      },
+      {
+         "chain": "1666600000",
+         "coinId": "harmony"
+      },
+      {
+         "chain": "1088",
+         "coinId": "metis"
+      },
+      {
+         "chain": "2222",
+         "coinId": "kavaevm"
       }
    ]
 }
