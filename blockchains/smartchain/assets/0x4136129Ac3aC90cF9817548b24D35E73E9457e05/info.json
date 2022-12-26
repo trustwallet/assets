@@ -1,34 +1,46 @@
 {
-    "name": "El Dorado Exchange",
+    "name": "EDE",
+    "type": "BEP20",
+    "symbol": "EDE",
+    "decimals": 18,
     "website": "https://www.ede.finance",
     "description": "El Dorado Exchange(EDE) is a decentralized spot and perpetual social trading exchange.",
     "explorer": "https://bscscan.com/token/0x4136129Ac3aC90cF9817548b24D35E73E9457e05",
-    "research": "NA",
-    "id": "0x4136129Ac3aC90cF9817548b24D35E73E9457e05",
-    "symbol": "EDE",
-    "pull_request_ci": "131",
-    "type": "BEP20",
-    "decimals": 18,
     "status": "active",
-    "tags": [
-        "staking-native"
-    ],
+    "id": "0x4136129Ac3aC90cF9817548b24D35E73E9457e05",
     "links": [
-        {
-            "name": "github",
-            "url": "https://github.com/El-Dorado-Exchange"
-        },
         {
             "name": "twitter",
             "url": "https://twitter.com/ede_finance"
         },
         {
-            "name": "reddit",
-            "url": "https://reddit.com/"
+            "name": "telegram",
+            "url": "https://t.me/ede_finance"
         },
         {
-            "name": "whitepaper",
+            "name": "docs",
             "url": "https://docs.ede.finance/"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/g7GpVVxtxz"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/El-Dorado-Exchange"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/el-dorado-exchange/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/el-dorado-exchange"
         }
+    ],
+    "tags": [
+        "defi",
+        "staking",
+        "governance"
     ]
 }
