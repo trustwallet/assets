@@ -1,0 +1,33 @@
+{
+    "name": "Euro Tether",
+    "type": "ERC20",
+    "symbol": "EURT",
+    "decimals": 6,
+    "website": "https://tether.to/",
+    "short_description": "",
+    "description": "",
+    "explorer": "https://etherscan.io/token/0xc581b735a1688071a1746c968e0798d642ede491",
+    "status": "active",
+    "id": "0xC581b735A1688071A1746c968e0798D642EDE491",
+    "tags": [
+        "stablecoin"
+    ],
+    "links": [
+        {
+            "name": "facebook",
+            "url": "https://www.facebook.com/tether.to"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/Tether_to"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/OfficialTether"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://assets.ctfassets.net/vyse88cgwfbl/5UWgHMvz071t2Cq5yTw5vi/c9798ea8db99311bf90ebe0810938b01/TetherWhitePaper.pdf"
+        }
+    ]
+}
