@@ -183,6 +183,9 @@
                 },
                 {
                     "base": "c20000714_t0xF952Fc3ca7325Cc27D15885d37117676d25BfdA6"
+                },
+                {
+                    "base": "c20000714_t0x6679eB24F59dFe111864AEc72B443d1Da666B360"
                 }
             ]
         },
@@ -407,7 +410,7 @@
             "asset": "c20000714_t0x55d398326f99059fF775485246999027B3197955",
             "type": "BEP20",
             "address": "0x55d398326f99059fF775485246999027B3197955",
-            "name": "Binance-Peg BSC-USD",
+            "name": "Tether USD",
             "symbol": "USDT",
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0x55d398326f99059fF775485246999027B3197955/logo.png",
@@ -631,7 +634,7 @@
             "asset": "c20000714_t0xa2B726B1145A4773F68593CF171187d8EBe4d495",
             "type": "BEP20",
             "address": "0xa2B726B1145A4773F68593CF171187d8EBe4d495",
-            "name": "Injective Protocol",
+            "name": "Injective",
             "symbol": "INJ",
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0xa2B726B1145A4773F68593CF171187d8EBe4d495/logo.png",
@@ -851,6 +854,16 @@
             "symbol": "BNX",
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0x8C851d1a123Ff703BD1f9dabe631b69902Df5f97/logo.png",
+            "pairs": []
+        },
+                {
+            "asset": "c20000714_t0x6679eB24F59dFe111864AEc72B443d1Da666B360",
+            "type": "BEP20",
+            "address": "0x6679eB24F59dFe111864AEc72B443d1Da666B360",
+            "name": "ARIVA",
+            "symbol": "ARV",
+            "decimals": 8,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0x6679eB24F59dFe111864AEc72B443d1Da666B360/logo.png",
             "pairs": []
         }
     ],
