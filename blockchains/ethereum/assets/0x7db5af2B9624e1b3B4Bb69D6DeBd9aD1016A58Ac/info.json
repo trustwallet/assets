@@ -1,48 +1,32 @@
 {
-    "name": "Volt Inu",
+    "name": "Volt Inu (VOLT)",
     "type": "ERC20",
     "symbol": "VOLT",
     "decimals": 9,
     "website": "https://voltinu.in",
-    "description": "Volt Inu ($VOLT) is a hyper-deflationary token whose aim is to invest in multiple asset classes such as NFTs, nodes, altcoins, staking & farming of stablecoins. This investment diversity allows to mitigate the risk while taking advantage of the possible non-correlated growth of the trending assets.",
+    "description": "Volt Inu is an ecosystem aimed at becoming a one stop shop offering DeFi products while bringing profits back to the native token to support its deflationary purpose\n\n\n",
     "explorer": "https://etherscan.io/token/0x7db5af2B9624e1b3B4Bb69D6DeBd9aD1016A58Ac",
     "status": "active",
     "id": "0x7db5af2B9624e1b3B4Bb69D6DeBd9aD1016A58Ac",
     "links": [
         {
             "name": "twitter",
-            "url": "https://twitter.com/VoltInuOfficial"
+            "url": "https://twitter.com/"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/"
         },
         {
             "name": "telegram",
-            "url": "https://t.me/VoltInuOfficial"
+            "url": "https://t.me/"
         },
         {
-            "name": "reddit",
-            "url": "https://reddit.com/r/Volt_Inu/"
-        },
-        {
-            "name": "whitepaper",
-            "url": "https://voltinu.in/Whitepaper_v1.pdf"
-        },
-        {
-            "name": "youtube",
-            "url": "https://youtube.com/channel/UCDLlAleEEmhc7pVdB5pZWFg"
-        },
-        {
-            "name": "coinmarketcap",
-            "url": "https://coinmarketcap.com/currencies/volt-inu-v2/"
-        },
-        {
-            "name": "coingecko",
-            "url": "https://coingecko.com/en/coins/volt-inu"
-        },
-        {
-            "name": "medium",
-            "url": "https://medium.com/@VoltInu"
+            "name": "telegram_news",
+            "url": "https://t.me/"
         }
     ],
     "tags": [
-        "deflationary"
+        "memes"
     ]
 }
