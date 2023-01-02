@@ -1,0 +1,28 @@
+{
+    "name": "USD International",
+    "type": "BEP20",
+    "symbol": "USDi",
+    "decimals": 6,
+    "website": "https://usdi.com.br",
+    "description": "USDi is a stable coin, which means that it is backed by every dollar it owns, always maintaining a 1:1 parity. USDi is issued using smart contracts on the BNB blockchain, as per the consolidated BEP20 standard.",
+    "explorer": "https://bscscan.com/token/0xf03bd524320bf4714db0cd4b1b14470eca9b1dcf",
+    "status": "active",
+    "id": "0xF03bD524320BF4714Db0CD4B1B14470ecA9B1dCf",
+    "links": [
+        {
+            "name": "source_code",
+            "url": "https://bscscan.com/token/0xf03bd524320bf4714db0cd4b1b14470eca9b1dcf#code"
+        },
+        {
+            "name": "facebook",
+            "url": "https://facebook.com/profile.php?id=100088386157675"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://usdi.com.br/WHITE%20PAPER%20USDi%20ENG.pdf"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}
