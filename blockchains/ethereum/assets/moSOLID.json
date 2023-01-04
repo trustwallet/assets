@@ -1,0 +1,29 @@
+{
+    "name": "moSOLID",
+    "website": "https://mono.farm",
+    "description": "A tokenized version of veSOLID, moSOLID, is returned to the user at a 1:1 rate. MONOLITH automatically converts rebased SOLID into moSOLID proportional to the users staked amount. If a user deposits SOLID into MONOLITH, that SOLID is locked into the MONOLITH veNFT as veSOLID, in exchange-- the user receives proportional moSOLID. moSOLID can be staked into the platform to receive a basket of rewards from the protocol's fees. Rather than staking moSOLID, users can also choose to contribute to the Solidly liquidity pool moSOLID/wETH.",
+    "explorer": "https://etherscan.io/token/0x848578e351d25b6ec0d486e42677891521c3d743",
+    "type": "ERC20",
+    "symbol": "moSOLID",
+    "decimals": 18,
+    "status": "active",
+    "id": "0x848578e351d25b6ec0d486e42677891521c3d743",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/monolitheth_"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.gg/67XyT4wZeF"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/@monolitheth"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://docs.mono.farm/monolith-documentation/understanding-mosolid"
+        }
+    ]
+}
