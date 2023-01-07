@@ -3,11 +3,11 @@
     "type": "BEP20",
     "symbol": "RabbitKing",
     "decimals": 18,
-    "website": "http://www.rabbitkingtoken.com/",
-    "description": "Cayman IslandsOffshore Savings Financial Planning Company.",
+    "website": "https://www.rabbitkingtoken.com/",
+    "description": "The original Bitcoin now on the ERC network we bring Bitcoin ($BC), with 21 million circulating supply, a fair launched ERC token to commemorate the original Bitcoin how Satoshi envisioned it",
     "explorer": "https://bscscan.com/token/0x4d50e3f89bbc63d199e1bbbd04cd15bf2382592b",
     "status": "active",
-    "id": "0x4d50e3f89bbc63d199e1bbbd04cd15bf2382592b",
+    "id": "0x4d50E3f89BBC63d199E1BbbD04cd15bf2382592b",
     "links": [
         {
             "name": "twitter",
@@ -18,13 +18,11 @@
             "url": "https://t.me/RabbitKing9"
         },
         {
-            "name": "audit",
-            "url": "https://github.com/Coinsult/solidity/blob/main/Coinsult_RabbitKing_0x4d...592b_Audit.pdf"
-        },
-        {
             "name": "whitepaper",
             "url": "https://rabbitkingofficial.gitbook.io/rabbitking-whitepaper/"
-        },
-      
+        }
+    ],
+    "tags": [
+        "memes"
     ]
-} 
+}
