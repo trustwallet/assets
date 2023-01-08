@@ -1,0 +1,32 @@
+{
+    "name": "ARTH Valuecoin (ARTH)",
+    "type": "ERC20",
+    "symbol": "ARTH",
+    "decimals": 18,
+    "website": "https://arth.loans/",
+    "description": "ARTH is a stablecoin that is designed to appreciate overtime against the US dollar while at the same time, it remains relatively stable.",
+    "explorer": "https://etherscan.io/token/0x8cc0f052fff7ead7f2edcccac895502e884a8a71",
+    "status": "active",
+    "id": "0x8CC0F052fff7eaD7f2EdCCcaC895502E884a8a71",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/MahaDAO/arth-core"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://docs.arth.loans/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/arth"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/arth-new/"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}
