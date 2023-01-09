@@ -516,5 +516,19 @@
         "staking": {
             "minDelegation": 0
         }
+    },
+    {
+        "id": "tz1Kf25fX1VdmYGSEzwFy1wNmkbSEZ2V83sY",
+        "name": "Tezos Seoul",
+        "description": "Tezos Baker since August 2019 in South Korea. You can find Tezos Seoul in your Ledger Live app.",
+        "website": "https://tezosseoul.com/",
+        "payout": {
+            "commission": 7,
+            "payoutDelay": 6,
+            "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 100
+        }
     }
 ]
