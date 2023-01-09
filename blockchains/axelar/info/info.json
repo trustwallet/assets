@@ -13,16 +13,61 @@
     "hrp": "axelar",
     "links": [
         {
+            "name": "twitter",
+            "url": "https://twitter.com/axelarcore"
+        },
+        {
             "name": "github",
-            "url": "https://github.com/axelarnetwork/axelar-core"
+            "url": "https://github.com/axelarnetwork"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/axelarcommunity"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/coins/axelar"
+        },
+        {
+            "name": "docs",
+            "url": "https://docs.axelar.dev/"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/aRZ3Ra6f7D"
+        },
+        {
+            "name": "forum",
+            "url": "https://community.axelar.network/"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://axelar.network/axelar_whitepaper.pdf"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/axelar"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/@axelar-foundation"
         },
         {
             "name": "coinmarketcap",
-            "url": "https://coinmarketcap.com/ru/currencies/axelar/"
+            "url": "https://coinmarketcap.com/currencies/axelar/"
         },
         {
-            "name": "twitter",
-            "url": "https://twitter.com/axelarcore"
+            "name": "blog",
+            "url": "https://axelar.network/blog"
+        },
+        {
+            "name": "youtube",
+            "url": "https://youtube.com/@Axelarcore"
         }
+    ],
+    "tags": [
+        "governance",
+        "staking",
+        "staking-native"
     ]
 }
