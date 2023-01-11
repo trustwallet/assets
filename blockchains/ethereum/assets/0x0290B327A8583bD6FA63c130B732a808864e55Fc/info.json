@@ -1,11 +1,15 @@
 {
-    "name": "MIDAS",
-    "website": "https://midas-defi.finance",
-    "description": "Every time you stake and unstake tokens, the contract will automatically harvest MDS rewards for you",
-    "explorer": "https://etherscan.io/token/0x0290B327A8583bD6FA63c130B732a808864e55Fc",
+    "name": "Midas (MDS)",
     "type": "ERC20",
     "symbol": "MDS",
     "decimals": 18,
+    "website": "https://www.example.com",
+    "description": "no",
+    "explorer": "https://etherscan.io/token/0x0290B327A8583bD6FA63c130B732a808864e55Fc",
     "status": "active",
-    "id": "0x0290B327A8583bD6FA63c130B732a808864e55Fc"
+    "id": "0x0290B327A8583bD6FA63c130B732a808864e55Fc",
+    "links": [],
+    "tags": [
+        "defi"
+    ]
 }
