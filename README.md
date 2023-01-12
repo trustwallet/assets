@@ -15,7 +15,7 @@ Such a large collection can be maintained only through a community effort, so _f
 
 <center><img src='https://trustwallet.com/assets/images/media/assets/horizontal_blue.png' height="200"></center>
 
-## How to add token
+## How to add a token
 
 Please note that __brand new tokens are not accepted__,
 the projects have to be sound, with information available, and __non-minimal circulation__
@@ -34,11 +34,11 @@ Here is a quick starter summary for the most common use case.
 
 ## Documentation
 
-For details, see the [Developers site](https://developer.trustwallet.com):
+For more details, see the [Developers site](https://developer.trustwallet.com):
 
 - [Contribution guidelines](https://developer.trustwallet.com/assets/repository_details)
 
-- [FAQ](https://developer.trustwallet.com/assets/faq)
+- [FAQs](https://developer.trustwallet.com/assets/faq)
 
 ## Scripts
 
