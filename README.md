@@ -1,6 +1,6 @@
-# Trust Wallet Assets Info
+# About Trust Wallet assets
 
-![Check](https://github.com/trustwallet/assets/workflows/Check/badge.svg)
+![Checks](https://github.com/trustwallet/assets/workflows/Check/badge.svg)
 
 ## Overview
 
@@ -69,9 +69,10 @@ There are also options for force-include and force-exclude in the config.
 
 ## Disclaimer
 
-Trust Wallet team allows anyone to submit new assets to this repository. However, this does not mean that we are in direct partnership with all of the projects.
+The Trust Wallet team allows anyone to submit new assets to this repository. However, this does not mean that we are in direct partnership with all of the projects.
 
-Trust Wallet team will reject projects that are deemed as scam or fraudulent after careful review.
-Trust Wallet team reserves the right to change the terms of asset submissions at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.
+The Trust Wallet team will reject projects that are deemed as scam or fraudulent after careful review.
+
+The Trust Wallet team reserves the right to change the terms of asset submissions at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.
 
 Additionally, spam-like behavior, including but not limited to mass distribution of tokens to random addresses will result in the asset being flagged as spam and possible removal from the repository.
