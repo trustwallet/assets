@@ -2550,13 +2550,13 @@
       "pairs": []
     },
     {
-      "asset": "c60_t0xB4d930279552397bbA2ee473229f89Ec245bc365",
+      "asset": "c60_t0x745407c86DF8DB893011912d3aB28e68B62E49B0",
       "type": "ERC20",
-      "address": "0xB4d930279552397bbA2ee473229f89Ec245bc365",
+      "address": "0x745407c86DF8DB893011912d3aB28e68B62E49B0",
       "name": "MahaDAO",
       "symbol": "MAHA",
       "decimals": 18,
-      "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0xB4d930279552397bbA2ee473229f89Ec245bc365/logo.png",
+      "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0x745407c86DF8DB893011912d3aB28e68B62E49B0/logo.png",
       "pairs": []
     },
     {
@@ -3509,14 +3509,14 @@
       "pairs": []
     },
     {
-      "asset": "c60_t0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643",
-      "type": "ERC20",
       "address": "0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643",
-      "name": "Compound Dai",
-      "symbol": "cDAI",
+      "asset": "c60_t0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643",
       "decimals": 8,
       "logoURI": "https://raw.githubusercontent.com/block-wallet/assets/master/blockchains/ethereum/assets/0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643/logo.png",
-      "pairs": []
+      "name": "Compound Dai",
+      "pairs": [],
+      "symbol": "cDAI",
+      "type": "ERC20"
     }
   ],
   "version": {
