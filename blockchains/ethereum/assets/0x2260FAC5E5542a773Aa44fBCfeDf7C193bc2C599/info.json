@@ -1,29 +1,56 @@
 {
-    "name": "Wrapped Bitcoin",
-    "website": "https://wbtc.network",
-    "description": "Wrapped Bitcoin (WBTC) is the first ERC20 token backed 1:1 with Bitcoin.",
-    "explorer": "https://etherscan.io/token/0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+    "name": "DeadHeadAlienCryptoMobCoins",
     "type": "ERC20",
-    "symbol": "WBTC",
+    "symbol": "Dhacmc",
     "decimals": 8,
+    "website": "https://Extraterestrial-Enterprises;crypto-banking-inc.github.com/extraterestrial1",
+    "description": "Dev btc",
+    "explorer": "https://etherscan.io/token/0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
     "status": "active",
     "id": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
-    "tags": [
-        "defi",
-        "wrapped"
-    ],
     "links": [
         {
+            "name": "twitter",
+            "url": "https://twitter.com/@etcbi;@extraterestrial1;@anonymous.logon;@etcbinc;@etcorps;@dhacmc"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/@etcbi;@extraterestrial1;@anonymous.logon;@etcbinc;@etcorps;@dhacmc"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/@etcbi;@extraterestrial1;@anonymous.logon;@etcbinc;@etcorps;@dhacmc"
+        },
+        {
+            "name": "facebook",
+            "url": "https://facebook.com/@etcbi;@extraterestrial1;@anonymous.logon;@etcbinc;@etcorps;@dhacmc"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/@etcbi;@extraterestrial1;@anonymous.logon;@etcbinc;@etcorps;@dhacmc"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/@etcbi;@extraterestrial1;@anonymous.logon;@etcbinc;@etcorps;@dhacmc"
+        },
+        {
+            "name": "source_code",
+            "url": "https://www.source_code.com/@etcbi;@extraterestrial1;@anonymous.logon;@etcbinc;@etcorps;@dhacmc"
+        },
+        {
+            "name": "youtube",
+            "url": "https://youtube.com/@etcbi;@extraterestrial1;@anonymous.logon;@etcbinc;@etcorps;@dhacmc"
+        },
+        {
+            "name": "docs",
+            "url": "https://www.google.com/docs/@etcbi;@extraterestrial1;@anonymous.logon;@etcbinc;@etcorps;@dhacmc"
+        },
+        {
             "name": "whitepaper",
-            "url": "https://wbtc.network/assets/wrapped-tokens-whitepaper.pdf"
-        },
-        {
-            "name": "coinmarketcap",
-            "url": "https://coinmarketcap.com/currencies/wrapped-bitcoin/"
-        },
-        {
-            "name": "coingecko",
-            "url": "https://coingecko.com/en/coins/wrapped-bitcoin/"
+            "url": "https://www.whitepaper.com/@etcbi;@extraterestrial1;@anonymous.logon;@etcbinc;@etcorps;@dhacmc"
         }
+    ],
+    "tags": [
+        "wrapped"
     ]
 }
