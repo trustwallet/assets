@@ -186,6 +186,9 @@
                 },
                 {
                     "base": "c20000714_t0x6679eB24F59dFe111864AEc72B443d1Da666B360"
+                },
+                {
+                    "base": "c20000714_t0x734D66f635523D7ddb7d2373C128333DA313041b"
                 }
             ]
         },
@@ -864,6 +867,16 @@
             "symbol": "ARV",
             "decimals": 8,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0x6679eB24F59dFe111864AEc72B443d1Da666B360/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c20000714_t0x734D66f635523D7ddb7d2373C128333DA313041b",
+            "type": "BEP20",
+            "address": "0x734D66f635523D7ddb7d2373C128333DA313041b",
+            "name": "ZEDXION",
+            "symbol": "USDZ",
+            "decimals": 9,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0x734D66f635523D7ddb7d2373C128333DA313041b/logo.png",
             "pairs": []
         }
     ],
