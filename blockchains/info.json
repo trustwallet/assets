@@ -1,45 +1,36 @@
 {
-    "name": "Ctex Chain",
-    "type": "coin",
-    "coin_type": 1455,
-    "symbol": "CTEX",
-    "decimals": 18,
+    "name": "Crypto Tex",
     "website": "https://ctextoken.io",
-    "description": "CRYPTO TEX - WE ARE PART OF THE GLOBAL PAYMENT REVOLUTION",
+    "short_description": "Crypto Tex - We Are Part Of The Global Payment Revolution",
+    "description": "Crypto Tex - We Are Part Of The Global Payment Revolution",
     "explorer": "https://ctexscan.com/",
+    "research": "https://docs.ctexscan.com",
+    "type": "coin",
+    "symbol": "CTEX",
     "rpc_url": "https://mainnet-rpc.ctexscan.com/",
+    "decimals": 18,
     "status": "active",
     "links": [
         {
-            "name": "Twitter",
+            "name": "github",
+            "url": "https://github.com/ctextoken"
+        },
+        {
+            "name": "twitter",
             "url": "https://twitter.com/CryptoTexToken"
         },
         {
-            "name": "Instagram",
-            "url": "https://www.instagram.com/cryptotextoken/"
-        },
-        {
-            "name": "Telegram Group",
+            "name": "telegram",
             "url": "https://t.me/cryptotexofficial"
         },
         {
-            "name": "Telegram Channel",
+            "name": "telegram",
             "url": "https://t.me/cryptotexannouncement"
         },
-         {
-            "name": "Github",
-            "url": "https://github.com/ctextoken/"
-        },
-         {
-            "name": "Linkedin",
-            "url": "https://www.linkedin.com/company/crypto-tex/"
-        },
         {
-            "name": "Coingecko",
-            "url": "https://www.coingecko.com/en/coins/crypto-tex"
+            "name": "whitepaper",
+            "url": "https://ctextoken.io/whitepaper.pdf"
         }
-    ],
-    "tags": [
-        "payment"
     ]
 }
+
