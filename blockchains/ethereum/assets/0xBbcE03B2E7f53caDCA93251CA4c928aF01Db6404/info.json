@@ -1,13 +1,16 @@
 {
     "name": "Stable FUSE",
-    "website": "https://ichi.org",
-    "description": "Stable FUSE is the stablecoin created for the Fuse community. Backed by both a treasury of FUSE and collateral of USDC this ERC20 token can be redeemed for USDC at anytime and also provides a vote for governance of the FUSE treasury.",
+    "website": "app.ichi.org",
+    "description": "oneFUSE is an ICHI-created stablecoin for Fuse.",
     "explorer": "https://etherscan.io/token/0xBbcE03B2E7f53caDCA93251CA4c928aF01Db6404",
     "type": "ERC20",
     "symbol": "oneFUSE",
     "decimals": 18,
     "status": "active",
     "id": "0xBbcE03B2E7f53caDCA93251CA4c928aF01Db6404",
+    "tags": [
+        "defi"
+    ],
     "links": [
         {
             "name": "github",
@@ -27,7 +30,7 @@
         },
         {
             "name": "discord",
-            "url": "https://discord.com/invite/Bm6pUHjHUC"
+            "url": "https://discord.com/invite/DvsYCfK8"
         },
         {
             "name": "coingecko",
