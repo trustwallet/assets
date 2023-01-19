@@ -1,0 +1,30 @@
+{
+  "name": "Quontral",
+  "website": "https://www.quontral.com",
+  "description": "Quontral is developing an API technology that provides end-to-end liquidity endpoints. Developers who want to develop DEX or dApp can use Quontral API for token swap transactions. Quontral sends requests to 6 different liquidity pools at the same time. In this way, it finds the most suitable price match and shows it to the user.",
+  "explorer": "https://bscscan.com/token/0x8F5A25BFA6cE7bcF1517148724beB3649aC49d64",
+  "research": "https://docs.quontral.com",
+  "symbol": "QUON",
+  "type": "token",
+  "decimals": 18,
+  "status": "active",
+  "tags": ["quontral"],
+  "links": [
+    {
+      "name": "github",
+      "url": "https://github.com/quontral"
+    },
+    {
+      "name": "twitter",
+      "url": "http://twitter.com/quontral"
+    },
+    {
+      "name": "reddit",
+      "url": "https://reddit.com/r/quontral"
+    },
+    {
+      "name": "whitepaper",
+      "url": "https://docs.quontral.com"
+    }
+  ]
+}
