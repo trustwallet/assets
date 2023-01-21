@@ -2,7 +2,17 @@
   "name": "XODEX",
   "logoURI": "https://trustwallet.com/assets/images/favicon.png",
   "timestamp": "2021-06-17T12:17:25.447Z",
-
+  "tokens": [
+    {
+      "chainId": 2415,
+      "type": "XDX20",
+      "address": "0x2F3AD0cdC8AD20337eb02bD6411b808EE30c7896",
+      "name": "Wrapped XODEX",
+      "symbol": "WXODEX",
+      "decimals": 18,
+      "logoURI": "https://assets-cdn.trustwallet.com/blockchains/xodex/assets/0x2F3AD0cdC8AD20337eb02bD6411b808EE30c7896/logo.png"
+    }
+  ],
   "version": {
     "major": 11,
     "minor": 0,
