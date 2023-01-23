@@ -5,7 +5,7 @@
     "explorer": "https://etherscan.io/token/0x341c05c0E9b33C0E38d64de76516b2Ce970bB3BE",
     "research": "https://gov.indexcoop.com/t/iip-171-launch-the-diversified-staked-eth-index-dseth/4389",
     "symbol": "dsETH",
-    "type": "coin",
+    "type": "ERC20",
     "decimals": 18,
     "status": "active",
     "id": "0x341c05c0E9b33C0E38d64de76516b2Ce970bB3BE",
@@ -24,7 +24,7 @@
         },
         {
             "name": "coingecko",
-            "url": "https://coingecko.com/en/coins/diversified-staked-eth"
+            "url": "https://coingecko.com/coins/diversified-staked-eth"
         },
         {
             "name": "forum",
