@@ -4,14 +4,19 @@
     "timestamp": "2023-01-23T12:30:11.183301",
     "tokens": [
         {
-            "asset": "c195_tTMNTn2uFAHhkGE3uuM84rhfRRjt6ry9xnL",
+            "asset": "c195_tTMz2SWatiAtZVVcH2ebpsbVtYwUPT9EdjH",
             "type": "TRC20",
-            "address": "TMNTn2uFAHhkGE3uuM84rhfRRjt6ry9xnL",
-            "name": "ZEDXION",
-            "symbol": "ZEDXION",
+            "address": "TMz2SWatiAtZVVcH2ebpsbVtYwUPT9EdjH",
+            "name": "BUSD Token",
+            "symbol": "BUSD",
             "decimals": 18,
-            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/tron/assets/TMNTn2uFAHhkGE3uuM84rhfRRjt6ry9xnL/logo.png",
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/tron/assets/TMz2SWatiAtZVVcH2ebpsbVtYwUPT9EdjH/logo.png",
             "pairs": []
         }
-    ]
+    ],
+    "version": {
+        "major": 0,
+        "minor": 0,
+        "patch": 0
+    }
     }
