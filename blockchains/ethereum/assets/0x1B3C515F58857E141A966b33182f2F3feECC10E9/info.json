@@ -1,0 +1,52 @@
+{
+    "name": "USK",
+    "type": "ERC20",
+    "symbol": "USK",
+    "decimals": 6,
+    "website": "https://kujira.app",
+    "description": "An over-collateralized Cosmos stablecoin soft-pegged to the USD and initially backed by $ATOM, $DOT, $wBNB, & $wETH",
+    "explorer": "https://etherscan.io/token/0x1B3C515F58857E141A966b33182f2F3feECC10E9",
+    "status": "active",
+    "id": "0x1B3C515F58857E141A966b33182f2F3feECC10E9",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/TeamKujira"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/Team-Kujira"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/team_kujira"
+        },
+        {
+            "name": "docs",
+            "url": "https://docs.kujira.app"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/teamkujira"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/TeamKujira/"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/team-kujira"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/kujira/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/kujira"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}
