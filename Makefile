@@ -51,3 +51,4 @@ add-tokenlist:
 
 add-tokenlist-extended:
 	go run cmd/main.go add-tokenlist-extended $(asset_id)
+
