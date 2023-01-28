@@ -510,6 +510,9 @@
                 },
                 {
                     "base": "c60_t0xFbC4f3f645C4003a2E4F4e9b51077d2DaA9a9341"
+                },
+                {
+                    "base": "c60_t0xeA068Fba19CE95f12d252aD8Cb2939225C4Ea02D"
                 }
             ]
         },
@@ -3519,6 +3522,16 @@
             "symbol": "ZEDXION",
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0xFbC4f3f645C4003a2E4F4e9b51077d2DaA9a9341/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c60_t0xeA068Fba19CE95f12d252aD8Cb2939225C4Ea02D",
+            "type": "ERC20",
+            "address": "0xeA068Fba19CE95f12d252aD8Cb2939225C4Ea02D",
+            "name": "Fief",
+            "symbol": "FIEF",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0xeA068Fba19CE95f12d252aD8Cb2939225C4Ea02D/logo.png",
             "pairs": []
         }
     ],
