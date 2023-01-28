@@ -1,24 +1,21 @@
 {
     "name": "ANTISEAL",
     "website": "https://antiseal.finance",
-    "source_code": "https://etherscan.io/address/0xe95e4440493e5b96e79d63e8dc43ab676dd44e4c#code",
     "description": "AntiSeal is a hyper-deflationary token, featuring a 2% burn on each transaction. No dev fund, no presale, no marketing fund, all coins belong to the community. Made by the community, for the community.",
     "explorer": "https://etherscan.io/token/0xe95e4440493e5b96e79d63e8dc43ab676dd44e4c",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/ANTISEAL1",
-            "handle": "ANTISEAL1"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://twitter.com/ANTI_SEAL",
-            "handle": "ANTI_SEAL"
-        }
-    ],
     "type": "ERC20",
     "symbol": "ANTISEAL",
     "decimals": 0,
     "status": "active",
-    "id": "0xE95e4440493E5b96e79D63E8Dc43AB676Dd44E4C"
+    "id": "0xE95e4440493E5b96e79D63E8Dc43AB676Dd44E4C",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/ANTISEAL1"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/ANTI_SEAL"
+        }
+    ]
 }

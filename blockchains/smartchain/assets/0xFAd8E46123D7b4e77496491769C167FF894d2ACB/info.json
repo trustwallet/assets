@@ -1,33 +1,33 @@
 {
     "name": "Fox Finance",
     "website": "https://foxfinance.io/",
-    "description": "Fox Finance is a progressive auto-staking token that pays out rewards just for holding it within your wallet.  It also rewards community environmental action via Fox in Action token drops.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/foxfinancebsc"
-        },
-        {
-            "name": "Discord",
-            "url": "https://discord.gg/ZAvHGr3VGS"
-        },
-        {
-            "name": "Medium",
-            "url": "https://medium.com/@foxfinance/"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/foxfinancebsc"
-        },
-        {
-            "name": "Reddit",
-            "url": "https://www.reddit.com/r/foxfinance/"
-        }
-    ],
+    "description": "Fox Finance is a progressive auto-staking token that pays out rewards just for holding it within your wallet. It also rewards community environmental action via Fox in Action token drops.",
     "explorer": "https://bscscan.com/token/0xFAd8E46123D7b4e77496491769C167FF894d2ACB",
     "type": "BEP20",
     "symbol": "FOX",
     "decimals": 9,
     "status": "active",
-    "id": "0xFAd8E46123D7b4e77496491769C167FF894d2ACB"
+    "id": "0xFAd8E46123D7b4e77496491769C167FF894d2ACB",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/foxfinancebsc"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/foxfinancebsc"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/ZAvHGr3VGS"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/foxfinance/"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/@foxfinance/"
+        }
+    ]
 }

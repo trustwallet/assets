@@ -1,7 +1,6 @@
 {
     "name": "yUSD",
     "website": "https://yearn.finance/",
-    "source_code": "https://github.com/iearn-finance/",
     "description": "yUSD makes DeFi simple by automatically maximizing yield and minimizing risk for our depositors. On the backend, the yCRV Vault implements modular, autonomous, yield-aware strategies. These are created and regularly updated by the best minds in DeFi, all under the control of Yearn governance.",
     "explorer": "https://etherscan.io/token/0x5dbcF33D8c2E976c6b560249878e6F1491Bca25c",
     "research": "https://research.binance.com/en/projects/yearnfinance",
@@ -9,5 +8,11 @@
     "symbol": "yyDAI+yUSDC+yUSDT+yTUSD",
     "decimals": 18,
     "status": "active",
-    "id": "0x5dbcF33D8c2E976c6b560249878e6F1491Bca25c"
+    "id": "0x5dbcF33D8c2E976c6b560249878e6F1491Bca25c",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/iearn-finance/"
+        }
+    ]
 }

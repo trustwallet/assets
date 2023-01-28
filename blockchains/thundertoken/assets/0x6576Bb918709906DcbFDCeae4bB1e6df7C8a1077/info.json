@@ -1,23 +1,24 @@
 {
     "name": "TT-ETH",
     "website": "https://bridge.thundercore.com/",
-    "description": "Bridged token of ETH on ThunderCore blockchain. The Bridge allows users to transfer assets between two chains in the Ethereum ecosystem. This is a customized version of POA network Bridge",
+    "description": "Bridged token of ETH on ThunderCore blockchain. The Bridge allows users to convert assets between Ethereum, BSC, HECO and ThunderCore. This is a customized version of POA network Bridge",
     "explorer": "https://viewblock.io/thundercore/address/0x6576Bb918709906DcbFDCeae4bB1e6df7C8a1077",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/ThunderProtocol",
-            "handle": "ThunderProtocol"
-        },
-        {
-            "name": "Discord",
-            "url": "https://discord.com/channels/467102816230440970/468561199790030849",
-            "handle": "ThunderCore"
-        }
-    ],
     "type": "TT20",
     "symbol": "TT-ETH",
     "decimals": 18,
     "status": "active",
-    "id": "0x6576Bb918709906DcbFDCeae4bB1e6df7C8a1077"
+    "id": "0x6576Bb918709906DcbFDCeae4bB1e6df7C8a1077",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/ThunderCoreLab"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/channels/467102816230440970/468561199790030849"
+        }
+    ],
+    "tags": [
+        "wrapped"
+    ]
 }

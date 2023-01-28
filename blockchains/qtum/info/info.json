@@ -1,25 +1,29 @@
 {
     "name": "Qtum",
     "website": "https://qtum.org",
-    "source_code": "https://github.com/qtumproject/qtum",
-    "white_paper": "https://qtum.org/uploads/files/a2772efe4dc8ed1100319c6480195fb1.pdf",
     "description": "Qtum is a proof of stake blockchain platform that combines the bitcoin blockchain architecture with multiple virtual machines on top.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/qtumOfficial",
-            "handle": "qtumOfficial"
-        },
-        {
-            "name": "Reddit",
-            "url": "https://reddit.com/r/Qtum",
-            "handle": "Qtum"
-        }
-    ],
     "explorer": "https://qtum.info",
     "research": "https://research.binance.com/en/projects/qtum",
     "symbol": "QTUM",
-    "type": "COIN",
+    "type": "coin",
     "decimals": 8,
-    "status": "active"
+    "status": "active",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/qtumproject/qtum"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/qtumOfficial"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/Qtum"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://qtum.org/uploads/files/a2772efe4dc8ed1100319c6480195fb1.pdf"
+        }
+    ]
 }

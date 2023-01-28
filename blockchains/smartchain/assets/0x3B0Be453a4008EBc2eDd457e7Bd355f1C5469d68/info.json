@@ -1,31 +1,34 @@
 {
     "name": "Cream Uniswap",
     "website": "https://app.cream.finance",
-    "source_code": "https://github.com/CreamFi",
     "description": "C.R.E.A.M. bridges liquidity across underserved assets by providing algorithmic money markets to these underserved assets. Users can supply any supported assets and use these supplied assets as collateral to borrow any other supported assets. C.R.E.A.M. has launched on Ethereum and Binance Smart Chain.",
     "research": "https://docs.cream.finance",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/CreamdotFinance"
-        },
-        {
-            "name": "Medium",
-            "url": "https://medium.com/@CreamdotFinance"
-        },
-        {
-            "name": "Discord",
-            "url": "https://discord.com/invite/8Ms25mV"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/creamfinance"
-        }
-    ],
-    "explorer": "https://bscscan.com/address/0x3b0be453a4008ebc2edd457e7bd355f1c5469d68",
+    "explorer": "https://bscscan.com/token/0x3B0Be453a4008EBc2eDd457e7Bd355f1C5469d68",
     "type": "BEP20",
     "symbol": "crUNI",
     "decimals": 8,
     "status": "active",
-    "id": "0x3B0Be453a4008EBc2eDd457e7Bd355f1C5469d68"
+    "id": "0x3B0Be453a4008EBc2eDd457e7Bd355f1C5469d68",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/CreamFi"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/CreamdotFinance"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/creamfinance"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/8Ms25mV"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/@CreamdotFinance"
+        }
+    ]
 }
