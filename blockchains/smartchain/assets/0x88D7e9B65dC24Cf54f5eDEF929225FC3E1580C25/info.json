@@ -1,36 +1,36 @@
 {
-    "name": "JumpToken",
-    "website": "https://jumptask.io",
-    "description": "JumpToken is a utility token for use in the JumpTask ecosystem, a decentralized work platform built to efficiently match work demand with a worldwide workforce",
-    "explorer": "https://bscscan.com/token/0x88d7e9b65dc24cf54f5edef929225fc3e1580c25",
+    "name": "Jumptoken ",
     "type": "BEP20",
-    "symbol": "JMPT",
+    "symbol": "Jmpt",
     "decimals": 18,
+    "website": "https://jumptask.io",
+    "description": "A utility token for use in the jumptask ecosystem.",
+    "explorer": "https://bscscan.com/token/0x88D7e9B65dC24Cf54f5eDEF929225FC3E1580C25",
     "status": "active",
     "id": "0x88D7e9B65dC24Cf54f5eDEF929225FC3E1580C25",
     "links": [
         {
             "name": "twitter",
-            "url": "https://twitter.com/JumpTask_app"
+            "url": "https://twitter.com/"
         },
         {
             "name": "telegram",
-            "url": "https://t.me/jumptask"
-        },
-        {
-            "name": "coinmarketcap",
-            "url": "https://coinmarketcap.com/currencies/jumptoken/"
+            "url": "https://t.me/"
         },
         {
             "name": "whitepaper",
-            "url": "https://gitbook.jumptask.io/"
+            "url": "https://github/jumptask.io"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/"
         },
         {
             "name": "coingecko",
-            "url": "https://coingecko.com/coins/jumptoken"
+            "url": "https://coingecko.com/"
         }
     ],
     "tags": [
-        "defi"
+        "Twitter"
     ]
 }
