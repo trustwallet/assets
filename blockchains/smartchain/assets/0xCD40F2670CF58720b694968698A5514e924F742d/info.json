@@ -1,29 +1,32 @@
 {
     "name": "OddzToken",
     "website": "https://oddz.fi/",
-    "source_code": "https://github.com/oddz-finance",
     "description": "Oddz is the World’s first multi-chain options and derivatives trading protocol to be deployed on the Binance Smart Chain, Polkadot, and Ethereum.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/oddz_finance",
-            "handle": "oddz_finance"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/oddz_finance",
-            "handle": "oddz_finance"
-        },
-        {
-            "name": "Medium",
-            "url": "https://medium.com/oddz-finance",
-            "handle": "oddz-finance"
-        }
-    ],
     "explorer": "https://bscscan.com/token/0xCD40F2670CF58720b694968698A5514e924F742d",
     "type": "BEP20",
     "symbol": "ODDZ",
     "decimals": 18,
     "status": "active",
-    "id": "0xCD40F2670CF58720b694968698A5514e924F742d"
+    "id": "0xCD40F2670CF58720b694968698A5514e924F742d",
+    "tags": [
+        "defi"
+    ],
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/oddz-finance"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/oddz_finance"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/oddz_finance"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/oddz-finance"
+        }
+    ]
 }

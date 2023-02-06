@@ -3,27 +3,27 @@
     "symbol": "SDF",
     "type": "BEP20",
     "decimals": 18,
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/ShieldFinance1"
-        },
-        {
-            "name": "Medium",
-            "url": "https://medium.com/@ShieldFinance1"
-        },
-        {
-            "name": "Reddit",
-            "url": "https://www.reddit.com/r/Shield_Finance?utm_medium=android_app&utm_source=share"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/shield_finance"
-        }
-    ],
-    "description": "Shield Finance is a community project with the aim of providing financial solutions and stability for its community. Our Focus is to generate lasting solution to financial instability in THIS SPACE and to be the best ever solution provider financially. ",
+    "description": "Shield Finance is a community project with the aim of providing financial solutions and stability for its community. Our Focus is to generate lasting solution to financial instability in THIS SPACE and to be the best ever solution provider financially.",
     "website": "http://www.shieldtoken.finance",
     "explorer": "https://bscscan.com/token/0x5A054554b3F0C75063D29250984A921402E1E3a7",
     "status": "active",
-    "id": "0x5A054554b3F0C75063D29250984A921402E1E3a7"
+    "id": "0x5A054554b3F0C75063D29250984A921402E1E3a7",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/ShieldFinance1"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/shield_finance"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/Shield_Finance?utm_medium=android_app&utm_source=share"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/@ShieldFinance1"
+        }
+    ]
 }

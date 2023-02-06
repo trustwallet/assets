@@ -2,24 +2,24 @@
     "name": "CheeseSwap",
     "website": "https://cheeseswap.app/",
     "description": "CheeseSwap is A Decentralized Finance & Entertainment Project.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/cheeseswapbsc"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/cheeseswapbsc"
-        },
-        {
-            "name": "Github",
-            "url": "https://github.com/cheeseswapbsc/"
-        }
-    ],
     "explorer": "https://bscscan.com/token/0xaDD8A06fd58761A5047426e160B2B88AD3B9D464",
     "type": "BEP20",
     "symbol": "PIZZA",
     "decimals": 18,
     "status": "active",
-    "id": "0xaDD8A06fd58761A5047426e160B2B88AD3B9D464"
+    "id": "0xaDD8A06fd58761A5047426e160B2B88AD3B9D464",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/cheeseswapbsc/"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/cheeseswapbsc"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/cheeseswapbsc"
+        }
+    ]
 }

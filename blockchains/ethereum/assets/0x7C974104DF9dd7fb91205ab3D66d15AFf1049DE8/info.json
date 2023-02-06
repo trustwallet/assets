@@ -1,13 +1,21 @@
 {
     "name": "Wrapped USD",
     "website": "https://covenants.eth.link",
-    "source_code": "https://github.com/b-u-i-d-l/",
-    "white_paper": "https://covenants.eth.link/#/grimoire",
     "description": "One stablecoin to pool them all in all the pools of DeFi. $WUSD is minted at the confluence of other stablecoins, which stream out and collateralize it in the pools of AMMs everywhere. Free from any oracle or issuer, it is the most resilient and decentralized stablecoin out there—and the first you can farm.",
     "explorer": "https://etherscan.io/token/0x7C974104DF9dd7fb91205ab3D66d15AFf1049DE8",
     "type": "ERC20",
     "symbol": "uSD",
     "decimals": 18,
     "status": "active",
-    "id": "0x7C974104DF9dd7fb91205ab3D66d15AFf1049DE8"
+    "id": "0x7C974104DF9dd7fb91205ab3D66d15AFf1049DE8",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/b-u-i-d-l/"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://covenants.eth.link/#/grimoire"
+        }
+    ]
 }

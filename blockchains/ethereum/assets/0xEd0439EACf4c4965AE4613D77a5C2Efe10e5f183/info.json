@@ -1,28 +1,36 @@
 {
-    "name": "Shroom.Finance(SHROOM)",
-    "website": "https://shroom.finance",
-    "description": "Community-owned DEX focused on in-game assets.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/ShroomFinance",
-            "handle": "ShroomFinance"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/shroomfinance",
-            "handle": "shroomfinance"
-        },
-        {
-            "name": "Discord",
-            "url": "https://discord.com/invite/eZcFahS",
-            "handle": "eZcFahS"
-        }
-    ],
-    "explorer": "https://etherscan.io/token/0xEd0439EACf4c4965AE4613D77a5C2Efe10e5f183",
+    "name": "Niftyx Protocol",
     "type": "ERC20",
     "symbol": "SHROOM",
     "decimals": 18,
+    "website": "https://niftyx.org",
+    "description": "Niftyx is building a decentralised protocol for NFT trading and minting.",
+    "explorer": "https://etherscan.io/token/0xed0439eacf4c4965ae4613d77a5c2efe10e5f183",
     "status": "active",
-    "id": "0xEd0439EACf4c4965AE4613D77a5C2Efe10e5f183"
+    "id": "0xEd0439EACf4c4965AE4613D77a5C2Efe10e5f183",
+    "tags": [
+        "governance"
+    ],
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/NiftyxProtocol"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/NiftyxProtocol"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/eZcFahS"
+        },
+        {
+            "name": "medium",
+            "url": "https://niftyx.medium.com/"
+        },
+        {
+            "name": "youtube",
+            "url": "https://youtube.com/channel/UCpdJrm8MyN6bUaD0ztLLBfg"
+        }
+    ]
 }

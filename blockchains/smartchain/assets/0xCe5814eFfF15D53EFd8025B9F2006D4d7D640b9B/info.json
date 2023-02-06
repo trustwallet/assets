@@ -2,28 +2,24 @@
     "name": "MoonStar",
     "website": "https://moonstartoken.com/",
     "description": "MOONSTAR is a stealth launched, community driven, DeFi Token programmed to reward holders through its frictionless yield and liquidity generation protocol.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/MoonStarToken/"
-        },
-        {
-            "name": "Discord",
-            "url": "https://discord.gg/bnVZC6JScn/"
-        },
-        {
-            "name": "Instagram",
-            "url": "https://www.instagram.com/moonstartoken/"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/moonstarchat/"
-        }
-    ],
     "explorer": "https://bscscan.com/token/0xce5814efff15d53efd8025b9f2006d4d7d640b9b",
     "type": "BEP20",
     "symbol": "MOONSTAR",
     "decimals": 9,
     "status": "active",
-    "id": "0xCe5814eFfF15D53EFd8025B9F2006D4d7D640b9B"
+    "id": "0xCe5814eFfF15D53EFd8025B9F2006D4d7D640b9B",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/MoonStarToken/"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/moonstarchat/"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/bnVZC6JScn/"
+        }
+    ]
 }

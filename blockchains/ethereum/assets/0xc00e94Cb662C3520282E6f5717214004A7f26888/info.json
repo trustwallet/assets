@@ -8,5 +8,22 @@
     "symbol": "COMP",
     "decimals": 18,
     "status": "active",
-    "id": "0xc00e94Cb662C3520282E6f5717214004A7f26888"
+    "id": "0xc00e94Cb662C3520282E6f5717214004A7f26888",
+    "tags": [
+        "defi"
+    ],
+    "links": [
+        {
+            "name": "blog",
+            "url": "https://medium.com/compound-finance"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/compoundfinance"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/compound-governance-token/"
+        }
+    ]
 }

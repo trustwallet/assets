@@ -1,26 +1,29 @@
 {
     "name": "Monster Slayer Share",
     "website": "https://monsterslayer.finance/",
-    "source_code": "https://github.com/monsterslayerfinance/bdollar-smartcontracts",
     "description": "MSS holders have voting rights and the ability to create proposals to improve the protocol. MSS holders also have many rights such as MSC minted will be distributed to MSS holders who have staked their tokens inside the boardroom.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/monsterslayerfi"
-        },
-        {
-            "name": "Medium",
-            "url": "https://medium.com/@monsterslayerfinance"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/monsterslayer_announcement"
-        }
-    ],
-    "explorer": "https://www.bscscan.com/address/0xAcABD3f9b8F76fFd2724604185Fa5AFA5dF25aC6",
+    "explorer": "https://bscscan.com/token/0xAcABD3f9b8F76fFd2724604185Fa5AFA5dF25aC6",
     "type": "BEP20",
     "symbol": "MSS",
     "decimals": 18,
     "status": "active",
-    "id": "0xAcABD3f9b8F76fFd2724604185Fa5AFA5dF25aC6"
+    "id": "0xAcABD3f9b8F76fFd2724604185Fa5AFA5dF25aC6",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/monsterslayerfinance/bdollar-smartcontracts"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/monsterslayerfi"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/monsterslayer_announcement"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/@monsterslayerfinance"
+        }
+    ]
 }

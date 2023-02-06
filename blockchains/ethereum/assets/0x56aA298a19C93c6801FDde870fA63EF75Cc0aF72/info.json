@@ -3,31 +3,30 @@
     "website": "https://mirror.finance",
     "description": "Wrapped Mirror BABA Token.",
     "explorer": "https://etherscan.io/token/0x56aA298a19C93c6801FDde870fA63EF75Cc0aF72",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/mirror_protocol",
-            "handle": "MirrorProtocol"
-        },
-        {
-            "name": "Discord",
-            "url": "https://twitter.com/mirror_protocol",
-            "handle": "MirrorProtocol"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/mirror_protocol",
-            "handle": "MirrorProtocol"
-        },
-        {
-            "name": "Medium",
-            "url": "https://medium.com/@mirror-protocol",
-            "handle": "MirrorProtocol"
-        }
-    ],
     "type": "ERC20",
     "symbol": "mBABA",
     "decimals": 18,
     "status": "active",
-    "id": "0x56aA298a19C93c6801FDde870fA63EF75Cc0aF72"
+    "id": "0x56aA298a19C93c6801FDde870fA63EF75Cc0aF72",
+    "tags": [
+        "wrapped"
+    ],
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/MirrorProtocol"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/mirror_protocol"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/MirrorProtocol"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/@mirror-protocol"
+        }
+    ]
 }

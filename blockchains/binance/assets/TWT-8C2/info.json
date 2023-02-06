@@ -1,26 +1,26 @@
 {
-    "name": "Trust Wallet Token",
+    "name": "Trust Wallet",
     "website": "https://trustwallet.com",
-    "source_code": "https://github.com/trustwallet/",
-    "white_paper": "",
     "description": "Utility token to increase adoption of cryptocurrency.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/trustwalletapp",
-            "handle": "TrustWalletApp"
-        },
-        {
-            "name": "Reddit",
-            "url": "https://reddit.com/r/trustapp",
-            "handle": "TrustApp"
-        }
-    ],
     "explorer": "https://explorer.binance.org/asset/TWT-8C2",
     "research": "https://research.binance.com/en/projects/trustwallet",
     "type": "BEP2",
     "symbol": "TWT",
     "decimals": 8,
     "status": "active",
-    "id": "TWT-8C2"
+    "id": "TWT-8C2",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/trustwallet"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/trustwallet"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/trustapp"
+        }
+    ]
 }

@@ -3,26 +3,23 @@
     "website": "https://mahadao.com/",
     "description": "Mahadao introduces non-depreciating currency ARTH coin, a new kind of money that maintains it's buying power irrespective of which direction the market moves.",
     "explorer": "https://etherscan.io/token/0xb4d930279552397bba2ee473229f89ec245bc365",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/TheMahaDAO",
-            "handle": "TheMahaDAO"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/mahadao",
-            "handle": "MahaDAO"
-        },
-        {
-            "name": "Medium",
-            "url": "https://medium.com/mahadao",
-            "handle": "MahaDAO"
-        }
-    ],
     "type": "ERC20",
     "symbol": "MAHA",
     "decimals": 18,
-    "status": "active",
-    "id": "0xB4d930279552397bbA2ee473229f89Ec245bc365"
+    "status": "abandoned",
+    "id": "0xB4d930279552397bbA2ee473229f89Ec245bc365",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/TheMahaDAO"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/mahadao"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/mahadao"
+        }
+    ]
 }
