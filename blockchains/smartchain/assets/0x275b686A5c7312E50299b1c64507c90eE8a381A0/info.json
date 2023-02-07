@@ -1,0 +1,48 @@
+{
+    "name": "Charlie Finance",
+    "type": "BEP20",
+    "symbol": "CHT",
+    "decimals": 9,
+    "website": "https://charliefinance.io/",
+    "description": "Charlie Finance is the native token of upcoming exchange named Charlie Exchange with the aim of providing crypto-exchange solution at lowest possible trading fees.",
+    "explorer": "https://bscscan.com/token/0x275b686A5c7312E50299b1c64507c90eE8a381A0",
+    "status": "active",
+    "id": "0x275b686A5c7312E50299b1c64507c90eE8a381A0",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/charlie_inu"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/Charlie-Finance"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/charlie_finance"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://charliefinance.io/assets/images/charlie_whitepaper.pdf"
+        },
+        {
+            "name": "source_code",
+            "url": "https://github.com/Charlie-Finance/CHT-token-contracts/blob/main/BEP20-CHT.sol"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/charlie-finance/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/charlie-finance"
+        },
+        {
+            "name": "telegram_news",
+            "url": "https://t.me/charliefinance"
+        }
+    ],
+    "tags": [
+        "staking-native"
+    ]
+}
