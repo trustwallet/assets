@@ -1,0 +1,28 @@
+{
+    "name": "Stargaze",
+    "type": "coin",
+    "symbol": "STARS",
+    "decimals": 6,
+    "website": "https://www.stargaze.zone",
+    "description": "A Cosmos SDK-based decentralized interchain NFT marketplace and social network.",
+    "explorer": "https://www.mintscan.io/stargaze",
+    "status": "active",
+    "rpc_url": "https://stargaze.c29r3.xyz/rpc/",
+    "denom": "ustars",
+    "lcd_url": "https://api-stargaze.d-stake.xyz",
+    "hrp": "star",
+    "links": [
+        {
+            "name": "medium",
+            "url": "https://medium.com/stargaze-protocol"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/ru/currencies/stargaze/"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/StargazeZone"
+        }
+    ]
+}

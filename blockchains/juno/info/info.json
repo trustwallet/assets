@@ -1,0 +1,28 @@
+{
+    "name": "Juno",
+    "type": "coin",
+    "symbol": "JUNO",
+    "decimals": 6,
+    "website": "https://www.junonetwork.io/",
+    "description": "Juno is an interoperable smart contract network. Highly scalable, robust, secure and easy to deploy.",
+    "explorer": "https://www.mintscan.io/juno",
+    "status": "active",
+    "rpc_url": "https://rpc.juno.interbloc.org",
+    "denom": "ujuno",
+    "lcd_url": "https://lcd-juno.itastakers.com",
+    "hrp": "juno",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/CosmosContracts"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/ru/currencies/juno/"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/JunoNetwork"
+        }
+    ]
+}
