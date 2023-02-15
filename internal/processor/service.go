@@ -1,15 +1,21 @@
 package processor
 
 import (
-	"github.com/trustwallet/assets/internal/file"
+	assetsmanager "github.com/trustwallet/assets-go-libs/client/assets-manager"
+	"github.com/trustwallet/assets-go-libs/file"
+	"github.com/trustwallet/assets/internal/config"
 )
 
 type Service struct {
-	fileService *file.Service
+	fileService   *file.Service
+	assetsManager assetsmanager.Client
 }
 
 func NewService(fileProvider *file.Service) *Service {
-	return &Service{fileService: fileProvider}
+	return &Service{
+		fileService:   fileProvider,
+		assetsManager: assetsmanager.InitClient(config.Default.ClientURLs.AssetsManagerAPI, nil),
+	}
 }
 
 func (s *Service) GetValidator(f *file.AssetFile) []Validator {
@@ -59,6 +65,11 @@ func (s *Service) GetValidator(f *file.AssetFile) []Validator {
 			jsonValidator,
 			{Name: "Tokenlist file is valid", Run: s.ValidateTokenListFile},
 		}
+	case file.TypeTokenListExtendedFile:
+		return []Validator{
+			jsonValidator,
+			{Name: "Tokenlist Extended file is valid", Run: s.ValidateTokenListExtendedFile},
+		}
 	case file.TypeValidatorsListFile:
 		return []Validator{
 			jsonValidator,
@@ -104,14 +115,5 @@ func (s *Service) GetFixers(f *file.AssetFile) []Fixer {
 }
 
 func (s *Service) GetUpdatersAuto() []Updater {
-	return []Updater{
-		{Name: "Retrieving missing token images, creating binance token list.", Run: s.UpdateBinanceTokens},
-	}
-}
-
-func (s *Service) GetUpdatersManual() []Updater {
-	return []Updater{
-		{Name: "Update tokenlist.json for Ethereum", Run: s.UpdateEthereumTokenlist},
-		{Name: "Update tokenlist.json for Smartchain", Run: s.UpdateSmartchainTokenlist},
-	}
+	return []Updater{}
 }
