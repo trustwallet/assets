@@ -1,11 +1,60 @@
 {
-    "name": "Lambda",
-    "symbol": "LAMB",
+    "name": "Lambda (LAMB)",
     "type": "ERC20",
+    "symbol": "LAMB",
     "decimals": 18,
-    "description": "-",
-    "website": "https://www.lambdastorage.com/en",
+    "website": "https://www.lambda.im/",
+    "description": "Lambda Network is a fast, advanced and scalable Web 3 infrastructure with blockchain and data storage capabilities provides data availability layer and on-chain NFT storage.",
     "explorer": "https://etherscan.io/token/0x8971f9fd7196e5cEE2C1032B50F656855af7Dd26",
-    "status": "abandoned",
-    "id": "0x8971f9fd7196e5cEE2C1032B50F656855af7Dd26"
+    "status": "active",
+    "id": "0x8971f9fd7196e5cEE2C1032B50F656855af7Dd26",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/Lambdaim"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/lambdaIM"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/HelloLambda"
+        },
+        {
+            "name": "telegram_news",
+            "url": "https://t.me/"
+        },
+        {
+            "name": "blog",
+            "url": null
+        },
+        {
+            "name": "docs",
+            "url": "https://docs.lambda.im/"
+        },
+        {
+            "name": "forum",
+            "url": null
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/lambdanetwork"
+        },
+        {
+            "name": "facebook",
+            "url": "https://www.facebook.com/Lambdaim"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/lambda/"
+        },
+        {
+            "name": "medium",
+            "url": "https://lambdanetwork.medium.com/"
+        }
+    ],
+    "tags": [
+        "nft"
+    ]
 }
