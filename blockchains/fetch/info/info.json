@@ -1,0 +1,29 @@
+{
+    "name": "FETCH.AI",
+    "type": "coin",
+    "symbol": "FET",
+    "decimals": 18,
+    "website": "https://fetch.ai/",
+    "description": "Fetch.ai is building tools and infrastructure to enable a decentralized digital economy by combining AI, multi-agent systems and advanced cryptography.",
+    "explorer": "https://hub.mintscan.io/",
+    "status": "active",
+    "rpc_url": "https://fetch-rpc.polkachu.com/",
+    "denom": "afet",
+    "lcd_url": "https://fetch-api.polkachu.com/",
+    "hrp": "fetch",
+    "fee_rate": "0.025",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/fetchai"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/fetch/"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/fetch_ai"
+        }
+    ]
+}
