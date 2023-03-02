@@ -4,7 +4,7 @@
   "type": "ERC20",
   "decimals": 18,
   "description": "NerveNetwork synthesizes USDT Token",
-  "website": "https://nerve.network/",
+  "website": "https://nerve.network",
   "explorer": "https://evmscan.nuls.io/address/0x9e5d124Cd49671f3f7B54d4aef43b3930BcF6dE7",
   "status": "active",
   "id": "0x9e5d124cd49671f3f7b54d4aef43b3930bcf6de7",
@@ -19,7 +19,7 @@
     },
     {
       "name": "coinmarketcap",
-      "url": "https://coinmarketcap.com/currencies/tether/"
+      "url": "https://coinmarketcap.com/currencies/tether"
     }
   ],
   "tags": ["stablecoin"]
