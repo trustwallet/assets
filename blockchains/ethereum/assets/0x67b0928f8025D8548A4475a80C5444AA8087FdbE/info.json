@@ -5,9 +5,10 @@
     "explorer": "https://etherscan.com/",
     "research": "https://app.xbanking.org/",
     "symbol": "XB",
-    "type": "coin",
+    "type": "ERC20",
     "decimals": 2,
     "status": "active",
+    "id": "0x67b0928f8025D8548A4475a80C5444AA8087FdbE",
     "tags": [
         "staking-native"
     ],
@@ -22,7 +23,7 @@
         },
         {
             "name": "reddit",
-            "url": "https://www.reddit.com/r/xbanking/"
+            "url": "https://reddit.com/r/xbanking/"
         },
         {
             "name": "whitepaper",
