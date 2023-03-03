@@ -1,28 +1,26 @@
 {
-    "name": "WNULS",
-    "symbol": "WNULS",
-    "type": "ENRC20",
-    "decimals": 18,
-    "description": "NULS Wrapped Token",
-    "website": "https://nuls.io",
-    "status": "active",
-    "id": "0x217dfff57e3b855803ce88a1374c90759ea071bd",
-    "explorer": "https://evmscan.nuls.io/token/0x217dfff57e3b855803ce88a1374c90759ea071bd",
-    "links": [
-        {
-            "name": "twitter",
-            "url": "https://twitter.com/Nuls"
-        },
-        {
-            "name": "telegram",
-            "url": "https://t.me/Nulsio"
-        },
-        {
-            "name": "coinmarketcap",
-            "url": "https://coinmarketcap.com/currencies/nuls"
-        }
-    ],
-    "tags": [
-        "defi"
-    ]
+  "name": "WNULS",
+  "symbol": "WNULS",
+  "type": "ERC20",
+  "decimals": 18,
+  "description": "NULS Wrapped Token",
+  "website": "https://nuls.io",
+  "status": "active",
+  "id": "0x217dfff57e3b855803ce88a1374c90759ea071bd",
+  "explorer": "https://evmscan.nuls.io/token/0x217dfff57e3b855803ce88a1374c90759ea071bd",
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/Nuls"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/Nulsio"
+    },
+    {
+      "name": "coinmarketcap",
+      "url": "https://coinmarketcap.com/currencies/nuls"
+    }
+  ],
+  "tags": ["defi"]
 }
