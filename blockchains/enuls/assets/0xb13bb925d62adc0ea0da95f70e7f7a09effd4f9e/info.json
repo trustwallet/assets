@@ -1,26 +1,28 @@
 {
-  "name": "USDCN",
-  "symbol": "USDCN",
-  "type": "ERC20",
-  "decimals": 18,
-  "description": "NerveNetwork synthesizes USDC Token",
-  "website": "https://nerve.network",
-  "explorer": "https://evmscan.nuls.io/address/0xb13bB925D62Adc0ea0DA95f70e7f7a09EFFD4f9E",
-  "status": "active",
-  "id": "0xb13bb925d62adc0ea0da95f70e7f7a09effd4f9e",
-  "links": [
-    {
-      "name": "twitter",
-      "url": "https://twitter.com/nerve_network"
-    },
-    {
-      "name": "telegram",
-      "url": "https://t.me/NerveNetwork"
-    },
-    {
-      "name": "coinmarketcap",
-      "url": "https://coinmarketcap.com/currencies/usd-coin"
-    }
-  ],
-  "tags": ["stablecoin"]
+    "name": "USDCN",
+    "symbol": "USDCN",
+    "type": "ENRC20",
+    "decimals": 18,
+    "description": "NerveNetwork synthesizes USDC Token",
+    "website": "https://nerve.network",
+    "explorer": "https://evmscan.nuls.io/token/0xb13bb925d62adc0ea0da95f70e7f7a09effd4f9e",
+    "status": "active",
+    "id": "0xb13bb925d62adc0ea0da95f70e7f7a09effd4f9e",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/nerve_network"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/NerveNetwork"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/usd-coin"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
 }
