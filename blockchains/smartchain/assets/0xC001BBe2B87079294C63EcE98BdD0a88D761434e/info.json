@@ -1,28 +1,40 @@
 {
     "name": "EverGrow Coin",
-    "website": "https://evergrowcoin.com/",
-    "description": "EverGrow Coin is a hyper deflationary token that rewards holders in BUSD",
-    "explorer": "https://bscscan.com/token/0xC001BBe2B87079294C63EcE98BdD0a88D761434e",
     "type": "BEP20",
     "symbol": "EGC",
     "decimals": 9,
+    "website": "https://evergrowegc.com/",
+    "description": "EverGrow is a deflationary token designed to become more scarce over time through regular burn. All holders of $EGC will earn an 8% reward from every Buy/Transfer/Sell Transaction in $BUSD",
+    "explorer": "https://bscscan.com/token/0xC001BBe2B87079294C63EcE98BdD0a88D761434e",
     "status": "active",
     "id": "0xC001BBe2B87079294C63EcE98BdD0a88D761434e",
-    "tags": [
-        "deflationary"
-    ],
     "links": [
         {
-            "name": "github",
-            "url": "https://github.com/Evergrowcoin/Evergrowcoin"
+            "name": "telegram",
+            "url": "https://t.me/evergrowcoin"
         },
         {
             "name": "twitter",
             "url": "https://twitter.com/evergrowcoinEGC"
         },
         {
-            "name": "telegram",
-            "url": "https://t.me/evergrowcoin"
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/evergrowcoin/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/evergrowcoin"
+        },
+        {
+            "name": "facebook",
+            "url": "https://facebook.com/evergrowegc"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/evergrow"
         }
+    ],
+    "tags": [
+        "defi"
     ]
 }
