@@ -1,11 +1,44 @@
 {
- "name": "UnityMeta Token",
- "website": "https://unitymeta.finance/",
- "description": "UnityMeta Token is a company that aims to bring innovation and novelty to the Metaverse, utilities, nft, sports, gaminig, and cryptotrading sector through Blockchain technology.",
- "explorer": "https://bscscan.com/token/0xca861e289f04cb9c67fd6b87ca7eafa59192f164",
- "type": "BEP20",
- "symbol": "UMT",
- "decimals": 18,
- "status": "active",
- "id": "0xca861e289f04cB9C67fd6b87ca7EAFa59192f164"
+    "name": "UnityMeta Token",
+    "type": "BEP20",
+    "symbol": "UMT",
+    "decimals": 18,
+    "website": "https://unitymeta.finance",
+    "description": "UnityMeta Token is a company that aims to bring innovation and novelty to the Metaverse, utilities, nft, sports, gaminig, and cryptotrading sector through Blockchain technology",
+    "explorer": "https://bscscan.com/token/0xca861e289f04cb9c67fd6b87ca7eafa59192f164",
+    "status": "active",
+    "id": "0xca861e289f04cB9C67fd6b87ca7EAFa59192f164",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/unitymetatoken"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/unitymetatoken"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/unitymetatoken"
+        },
+        {
+            "name": "reddit",
+            "url": "https://www.reddit.com/r/unitymetatoken/"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://unitymeta.finance/UnityMeta-Whitepaper.pdf"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/unitymeta"
+        },
+        {
+            "name": "audit",
+            "url": "https://www.certik.com/projects/unity-meta-token"
+        }
+    ],
+    "tags": [
+        "nft"
+    ]
 }
