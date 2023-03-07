@@ -504,6 +504,9 @@
                 },
                 {
                     "base": "c60_t0x70e8dE73cE538DA2bEEd35d14187F6959a8ecA96"
+                },
+                {
+                    "base": "c60_t0xbAFDabaDcf19d0cFbbe0AB9C69CF050D86ff888C"
                 }
             ]
         },
@@ -3493,6 +3496,16 @@
             "symbol": "XSGD",
             "decimals": 6,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0x70e8dE73cE538DA2bEEd35d14187F6959a8ecA96/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c60_t0xbAFDabaDcf19d0cFbbe0AB9C69CF050D86ff888C",
+            "type": "ERC20",
+            "address": "0xbAFDabaDcf19d0cFbbe0AB9C69CF050D86ff888C",
+            "name": "ZEDXION",
+            "symbol": "ZEDXION",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0xbAFDabaDcf19d0cFbbe0AB9C69CF050D86ff888C/logo.png",
             "pairs": []
         }
     ],
