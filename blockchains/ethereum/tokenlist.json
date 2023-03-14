@@ -20,9 +20,6 @@
                     "base": "c60_t0x0000000000095413afC295d19EDeb1Ad7B71c952"
                 },
                 {
-                    "base": "c60_t0x00a8b738E453fFd858a7edf03bcCfe20412f0Eb0"
-                },
-                {
                     "base": "c60_t0x00c83aeCC790e8a4453e5dD3B0B4b3680501a7A7"
                 },
                 {
@@ -509,7 +506,7 @@
                     "base": "c60_t0x70e8dE73cE538DA2bEEd35d14187F6959a8ecA96"
                 },
                 {
-                    "base": "c60_t0xFbC4f3f645C4003a2E4F4e9b51077d2DaA9a9341"
+                    "base": "c60_t0xbAFDabaDcf19d0cFbbe0AB9C69CF050D86ff888C"
                 }
             ]
         },
@@ -532,16 +529,6 @@
             "symbol": "LON",
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0x0000000000095413afC295d19EDeb1Ad7B71c952/logo.png",
-            "pairs": []
-        },
-        {
-            "asset": "c60_t0x00a8b738E453fFd858a7edf03bcCfe20412f0Eb0",
-            "type": "ERC20",
-            "address": "0x00a8b738E453fFd858a7edf03bcCfe20412f0Eb0",
-            "name": "AllianceBlock",
-            "symbol": "ALBT",
-            "decimals": 18,
-            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0x00a8b738E453fFd858a7edf03bcCfe20412f0Eb0/logo.png",
             "pairs": []
         },
         {
@@ -3512,13 +3499,13 @@
             "pairs": []
         },
         {
-            "asset": "c60_t0xFbC4f3f645C4003a2E4F4e9b51077d2DaA9a9341",
+            "asset": "c60_t0xbAFDabaDcf19d0cFbbe0AB9C69CF050D86ff888C",
             "type": "ERC20",
-            "address": "0xFbC4f3f645C4003a2E4F4e9b51077d2DaA9a9341",
+            "address": "0xbAFDabaDcf19d0cFbbe0AB9C69CF050D86ff888C",
             "name": "ZEDXION",
             "symbol": "ZEDXION",
             "decimals": 18,
-            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0xFbC4f3f645C4003a2E4F4e9b51077d2DaA9a9341/logo.png",
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0xbAFDabaDcf19d0cFbbe0AB9C69CF050D86ff888C/logo.png",
             "pairs": []
         }
     ],
