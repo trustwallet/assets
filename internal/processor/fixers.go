@@ -75,7 +75,7 @@ func (s *Service) FixLogo(f *file.AssetFile) error {
 	}
 
 	err = validation.ValidateLogoFileSize(f.Path())
-	if err != nil { // nolint:staticcheck
+	if err != nil { //nolint:staticcheck
 		// TODO: Compress images.
 	}
 
