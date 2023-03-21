@@ -1,11 +1,32 @@
 {
-    "name": "ChangeNOW",
-    "symbol": "NOW",
+    "name": "ChangeNOW (NOW)",
     "type": "ERC20",
+    "symbol": "NOW",
     "decimals": 8,
-    "description": "-",
-    "website": "",
+    "website": "https://changenow.io",
+    "description": "NOW is the first native token introduced by an instant exchange platform that serves as an internal currency within the ChangeNOW ecosystem.",
     "explorer": "https://etherscan.io/token/0xE9A95d175a5f4C9369f3b74222402eB1b837693b",
-    "status": "abandoned",
-    "id": "0xE9A95d175a5f4C9369f3b74222402eB1b837693b"
+    "status": "active",
+    "id": "0xE9A95d175a5f4C9369f3b74222402eB1b837693b",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/ChangeNOW_io"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/now-token/"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/ChangeNow-io/ChangeNOW-token"
+        },
+        {
+            "name": "telegram_news",
+            "url": "https://t.me/CNAnnouncements"
+        }
+    ],
+    "tags": [
+        "staking"
+    ]
 }
