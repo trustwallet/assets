@@ -5,20 +5,21 @@
     "explorer": "https://tronscan.io/#/token20/TAykmbrpL2VAemuRARXpTGjEttmsTjKPWA",
     "research": "https://wp.fix00.com",
     "symbol": "FIX00",
-    "type": "token",
+    "type": "TRC20",
     "decimals": 2,
     "status": "active",
+    "id": "TAykmbrpL2VAemuRARXpTGjEttmsTjKPWA",
     "tags": [
-        "staking-native"
+        "token"
     ],
     "links": [
         {
-            "name": "github",
-            "url": "https://github.com/binance-chain/"
-        },
-        {
             "name": "twitter",
             "url": "https://twitter.com/fix00token"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/fix00token"
         },
         {
             "name": "reddit",
@@ -27,6 +28,10 @@
         {
             "name": "whitepaper",
             "url": "https://wp.fix00.com"
-        }
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/fix00/"
+        },
     ]
 }
