@@ -1,0 +1,19 @@
+{
+    "name": "Polygon zkEVM",
+    "website": "https://www.polygon.technology/",
+    "description": "Polygon zkEVM is the leading zero knowledge scaling solution that’s fully equivalent with the Ethereum Virtual Machine: all existing smart contracts, developer tools, and wallets work seamlessly.",
+    "explorer": "https://explorer.public.zkevm-test.net",
+    "research": "https://github.com/0xpolygonhermez",
+    "symbol": "ETH",
+    "rpc_url": "https://rpc.public.zkevm-test.net",
+    "coin_type": 1422,
+    "type": "coin",
+    "decimals": 18,
+    "status": "active",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/0xPolygonHermez"
+        }
+    ]
+}

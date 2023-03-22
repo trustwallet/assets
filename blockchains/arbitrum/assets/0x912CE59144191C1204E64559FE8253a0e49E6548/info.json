@@ -1,0 +1,29 @@
+{
+    "name": "Arbitrum",
+    "type": "ARBITRUM",
+    "symbol": "ARB",
+    "decimals": 18,
+    "website": "https://arbitrum.foundation/",
+    "description": "$ARB tokens can be used to vote on Arbitrum DAO governance proposals, allowing $ARB holders to collectively shape the future of Arbitrum protocols and chains. Token holders can also delegate their voting power to delegates.",
+    "explorer": "https://arbiscan.io/token/0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "status": "active",
+    "id": "0x912CE59144191C1204E64559FE8253a0e49E6548",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/arbitrum"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://docs.arbitrum.foundation/deployment-addresses"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/arbitrum"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/ru/currencies/arbitrum-iou/"
+        }
+    ]
+}
