@@ -1,16 +1,17 @@
 {
 "name": "CorePlus",
 "website": "https://www.CorePlus.ir",
-"description": "PLUS is a Web 3.0 Decentralized Social Media Platform That is being built for the core
-blockchain network audience and Satoshi app miners.",
+"description": "CorePlus(CORE+) is one of the first official token on the core blockchain"
+
 "explorer": "https://scan.coredao.org/address/0xe3cc61740877b77bea8379ab741cf46680c382e6",
 "research": "https://scan.coredao.org/",
 "symbol": "CORE+",
-"type": "coin",
+"type": "ERC20",
 "decimals": 4,
 "status": "active",
+"id": "0xe3cc61740877b77bea8379ab741cf46680c382e6",
 "tags": [
-    "staking-native"
+    "stablecoin"
 ],
 "links": [
     {
@@ -29,5 +30,5 @@ blockchain network audience and Satoshi app miners.",
         "name": "whitepaper",
         "url": "https://github.com/CorePlus-org/whitepaper/blob/main/CORE%2BWhitepaper_v1.0.pdf"
     }
-]
+ ]
 }
