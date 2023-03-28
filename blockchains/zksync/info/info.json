@@ -1,33 +1,19 @@
 {
-    "name": "zkSync",
-    "website": "https://zksync.io",
-    "description": "zkSync is a ZK rollup solving Ethereum scalability with zero security compromises.",
-    "explorer": "https://zkscan.io/",
-    "research": "https://github.com/matter-labs/zksync",
-    "symbol": "ETH",
-    "type": "coin",
-    "decimals": 18,
-    "status": "active",
-    "links": [
-        {
-            "name": "github",
-            "url": "https://github.com/matter-labs/zksync"
-        },
-        {
-            "name": "twitter",
-            "url": "https://twitter.com/zksync"
-        },
-        {
-            "name": "telegram",
-            "url": "https://t.me/zksync"
-        },
-        {
-            "name": "discord",
-            "url": "https://discord.com/invite/px2aR7w"
-        },
-        {
-            "name": "medium",
-            "url": "https://medium.com/matter-labs"
-        }
-    ]
+  "name": "ZkSync Era",
+  "website": "https://zksync.io/",
+  "description": "zkSync Era is made to look and feel like Ethereum, but with lower fees.",
+  "explorer": "https://explorer.zksync.io/",
+  "research": "https://github.com/zksync-sdk",
+  "symbol": "ETH",
+  "rpc_url": "https://zksync2-mainnet.zksync.io",
+  "coin_type": 324,
+  "type": "coin",
+  "decimals": 18,
+  "status": "active",
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/zksync"
+    }
+  ]
 }
