@@ -1,13 +1,13 @@
 {
-    "type": "ESDTSFT",
-    "id": "MEXFARM-e7af52",
     "name": "MEX Staked",
     "symbol": "MEXFARM",
+    "type": "ESDT",
     "decimals": 18,
-    "status": "active",
     "description": "This token tracks your MEX stake in the MEX farm on the Maiar DEX.",
     "website": "https://maiar.exchange",
-    "explorer": "https://explorer.elrond.com/collections/MEXFARM-e7af52",
+    "explorer": "https://explorer.multiversx.com/tokens/MEXFARM-e7af52",
+    "status": "abandoned",
+    "id": "MEXFARM-e7af52",
     "links": [
         {
             "name": "docs",
