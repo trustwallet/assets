@@ -5,7 +5,7 @@
     "decimals": 18,
     "website": "https://ethereum.org/en/",
     "description": "wETH is 'wrapped ETH'",
-    "explorer": "https://zkevm.polygonscan.com/token/0x4f9a0e7fd2bf6067db6994cf12e4495df938e6e9",
+    "explorer": "https://explorer.public.zkevm-test.net/address/0x4F9A0e7FD2Bf6067db6994CF12E4495Df938E6e9",
     "status": "active",
     "id": "0x4F9A0e7FD2Bf6067db6994CF12E4495Df938E6e9",
     "links": [
@@ -26,8 +26,7 @@
             "url": "https://coinmarketcap.com/currencies/weth/"
         }
     ],
-
-    "tags":[
+    "tags": [
         "wrapped"
     ]
 }
