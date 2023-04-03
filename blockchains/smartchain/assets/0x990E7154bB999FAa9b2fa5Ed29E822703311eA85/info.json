@@ -1,7 +1,7 @@
 {
-    "name": "BNB pegged ThunderCore",
+    "name": "BSC-Peg Thunder Token",
     "website": "https://bridge.thundercore.com/bsc/",
-    "description": "BNB pegged ThunderCore on BNB Chain. The ThunderCore Bridge allows users to transfer assets between BNB Chain and ThunderCore Blockchain. This is a customized version of POA network Bridge",
+    "description": "BSC-Peg Thunder Token (TT) on Binance Smart Chain. The Bridge allows users to transfer assets between Binance Smart Chain and ThunderCore network. This is a customized version of POA network Bridge",
     "research": "https://research.binance.com/en/projects/thundercore",
     "explorer": "https://bscscan.com/token/0x990E7154bB999FAa9b2fa5Ed29E822703311eA85",
     "type": "BEP20",
@@ -12,14 +12,11 @@
     "links": [
         {
             "name": "twitter",
-            "url": "https://twitter.com/ThunderCoreLab"
+            "url": "https://twitter.com/ThunderProtocol"
         },
         {
             "name": "discord",
             "url": "https://discord.com/channels/467102816230440970/468561199790030849"
         }
-    ],
-    "tags": [
-        "wrapped"
     ]
 }

@@ -24,7 +24,7 @@ fmt:
 lint-install:
 ifeq (,$(wildcard test -f bin/golangci-lint))
 	@echo "  >  Installing golint"
-	curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- v1.50.1
+	curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s
 endif
 
 lint: lint-install
@@ -41,6 +41,10 @@ fix:
 
 update-auto:
 	go run cmd/main.go update-auto
+
+update-manual:
+	go run cmd/main.go update-manual
+
 
 # Helper commands.
 add-token:
