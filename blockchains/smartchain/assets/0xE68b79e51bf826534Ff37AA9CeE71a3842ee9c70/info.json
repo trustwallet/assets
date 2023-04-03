@@ -4,7 +4,7 @@
     "symbol": "CZUSD",
     "decimals": 18,
     "website": "https://czodiac.com",
-    "description": "CZUSD is a USD stablecoin. The peg is maintained in the short term by the Scorch Peg which trades the token back to $1 and uses the profits to burn CZF.",
+    "description": "CZUSD is a digital stablecoin in the CZODIAC ecosystem, enabling seamless exchange. It employs CzusdGate for swaps and ScorchPeg for a flexible rate, while the Gnosis Multikey Safe secures collateral.",
     "explorer": "https://bscscan.com/token/0xE68b79e51bf826534Ff37AA9CeE71a3842ee9c70",
     "status": "active",
     "id": "0xE68b79e51bf826534Ff37AA9CeE71a3842ee9c70",
@@ -35,10 +35,11 @@
         },
         {
             "name": "discord",
-            "url": "https://discord.com/invite/QDyTJccdE9"
+            "url": "https://discord.com/invite/Tg9JFQxzbs"
         }
     ],
     "tags": [
-        "stablecoin"
+        "stablecoin",
+        "defi"
     ]
 }
