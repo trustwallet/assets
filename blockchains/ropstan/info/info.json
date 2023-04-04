@@ -1,0 +1,12 @@
+{
+    "name": "Ropstan",
+    "website": " https://github.com/ethereum/ropsten",
+    "description": "The Ropsten testnet, which is now deprecated, is an Ethereum-based test blockchain used by Ethereum developers to test protocol upgrades before deploying applications on the Ethereum mainnet.",
+    "explorer": "https://ropsten.etherscan.io",
+    "research": "https://elastos.info",
+    "symbol": "ETH",
+    "rpc_url": "https://ropsten.infura.io/v3/%7BINFURA_API_KEY%7D",
+    "type": "coin",
+    "decimals": 18,
+    "status": "active"
+}
