@@ -19,7 +19,7 @@ Such a large collection can be maintained only through a community effort, so _f
 
 Please note that __brand new tokens are not accepted__,
 the projects have to be sound, with information available, and __non-minimal circulation__
-(for limit details see <https://developer.trustwallet.com/assets/requirements>).
+(for limit details see <https://developer.trustwallet.com/listing-new-assets/requirements>).
 
 ### Assets App
 
@@ -28,27 +28,17 @@ The [Assets web app](https://assets.trustwallet.com) can be used for most new to
 ### Quick starter
 
 Details of the repository structure and contribution guidelines are listed on the
-[Developers site](https://developer.trustwallet.com/assets/new-asset).
+[Developers site](https://developer.trustwallet.com/listing-new-assets/new-asset).
 Here is a quick starter summary for the most common use case.
 
-**Adding an ERC20 token checklist**:
-
-- [ ] Make sure your smartcontract has more than 10000 address holders, otherwise you will be rejected
-- [ ] Fork the Github repository
-- [ ] Create folder with name of token smartcontact address in [_checksum format_](https://piyolab.github.io/sushiether/RunScrapboxCode/?web3=1.0.0-beta.33&code=https://scrapbox.io/api/code/sushiether/web3.js_-_Ethereum_のアドレスをチェックサム付きアドレスに変換する/demo.js) `blockchains/ethereum/assets/<token_smartcontract_address>/`.
-- [ ] Tell your designer that token image must be in PNG format, preferably transparent background, recommended size 256x256px, with max file size of 100kB, for further details read [image rules](https://developer.trustwallet.com/assets/requirements).
-- [ ] Upload your logo with file named `logo.png` to previously created folder with smartcontract address, and if you done all correctly your path should look like this. `blockchains/ethereum/assets/0x1234567461d3f8Db7496581774Bd869C83D51c93/logo.png`
-- [ ] Create `info.json` file with info about the token/project
-- [ ] Create a pull request to the main repo
-- [ ] Pay the processing fee
 
 ## Documentation
 
 For details, see the [Developers site](https://developer.trustwallet.com):
 
-- [Contribution guidelines](https://developer.trustwallet.com/assets/repository_details)
+- [Contribution guidelines](https://developer.trustwallet.com/listing-new-assets/repository_details)
 
-- [FAQ](https://developer.trustwallet.com/assets/faq)
+- [FAQ](https://developer.trustwallet.com/listing-new-assets/faq)
 
 ## Scripts
 
@@ -57,7 +47,9 @@ There are several scripts available for maintainers:
 - `make check` -- Execute validation checks; also used in continuous integration.
 - `make fix` -- Perform automatic fixes where possible
 - `make update-auto` -- Run automatic updates from external sources, executed regularly (GitHub action)
-- `make add-token token=c60_t0x4Fabb145d64652a948d72533023f6E7A623C7C53` -- Create `info.json` file as asset template.
+- `make add-token asset_id=c60_t0x4Fabb145d64652a948d72533023f6E7A623C7C53` -- Create `info.json` file as asset template.
+- `make add-tokenlist asset_id=c60_t0x4Fabb145d64652a948d72533023f6E7A623C7C53` -- Adds a token to tokenlist.json.
+- `make add-tokenlist-extended asset_id=c60_t0x4Fabb145d64652a948d72533023f6E7A623C7C53` -- Adds a token to tokenlist-extended.json.
 
 ## On Checks
 
@@ -83,3 +75,7 @@ Trust Wallet team will reject projects that are deemed as scam or fraudulent aft
 Trust Wallet team reserves the right to change the terms of asset submissions at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.
 
 Additionally, spam-like behavior, including but not limited to mass distribution of tokens to random addresses will result in the asset being flagged as spam and possible removal from the repository.
+
+## License
+
+The scripts and documentation in this project are released under the [MIT License](LICENSE)
