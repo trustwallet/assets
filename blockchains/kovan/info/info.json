@@ -1,0 +1,18 @@
+{
+    "name": "Optimism Kovan",
+    "website": "https://kovan-testnet.github.io/website/",
+    "description": "Kovan is a Proof of Authority (PoA) publicly accessible blockchain for Ethereum; created and maintained by a consortium of Ethereum developers, to aide the Ethereum developer community.",
+    "explorer": "https://kovan.ethplorer.io",
+    "research": "https://elastos.info",
+    "symbol": "KOV",
+    "rpc_url": "https://kovan.optimism.io/",
+    "type": "coin",
+    "decimals": 18,
+    "status": "active",
+    "links": [
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/elastos/"
+        }
+    ]
+}
