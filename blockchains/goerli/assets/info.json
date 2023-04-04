@@ -1,0 +1,32 @@
+{
+    "name": "USD Coin(goerli)",
+    "type": "GOERLI",
+    "symbol": "USDC",
+    "decimals": 6,
+    "website": "https://www.centre.io/",
+    "description": "USDC is a fully collateralized US Dollar stablecoin developed by CENTRE, the open source project with Circle being the first of several forthcoming issuers.",
+    "explorer": "https://goerli.explorer.zksync.io/address/0x0faF6df7054946141266420b43783387A78d82A9",
+    "status": "active",
+    "id": "0x0faF6df7054946141266420b43783387A78d82A9",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/centre_io"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/usd-coin/"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/CetY6Y4"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/usd-coin/"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}
