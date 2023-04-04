@@ -1,11 +1,24 @@
 {
-"name": "Hokkaido Inu",
-"website": "https://hokk.finance/",
-"description": "Leveraging community to build an inclusive financial ecosystem. We are Meme Utility",
-"explorer": "https://etherscan.io/token/0xe87e15B9c7d989474Cb6d8c56b3DB4eFAD5b21E8",
-"type": "ERC20",
-"symbol": "HOKK",
-"decimals": 18,
-"status": "active",
-"id": "0xe87e15B9c7d989474Cb6d8c56b3DB4eFAD5b21E8"
+    "name": "HOKK Finance",
+    "website": "https://hokk.finance/",
+    "description": "HOKK Finance builds decentralized financial products that challenges modern banking, empowering you to do more with your crypto.",
+    "explorer": "https://etherscan.io/token/0xe87e15B9c7d989474Cb6d8c56b3DB4eFAD5b21E8",
+    "symbol": "HOKK",
+    "type": "ERC20",
+    "decimals": 18,
+    "status": "active",
+    "id": "0xe87e15B9c7d989474Cb6d8c56b3DB4eFAD5b21E8",
+    "tags": [
+        "memes"
+    ],
+    "links": [
+        {
+            "name": "telegram",
+            "url": "https://t.me/HokkFinance"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/HOKKFinance"
+        }
+    ]
 }
