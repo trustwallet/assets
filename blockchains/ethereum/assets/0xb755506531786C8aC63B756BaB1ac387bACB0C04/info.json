@@ -1,0 +1,28 @@
+{
+    "name": "ZARP Stablecoin",
+    "type": "ERC20",
+    "symbol": "ZARP",
+    "decimals": 18,
+    "website": "https://zarp.cash",
+    "description": "ZARP is a fully collateralised stablecoin pegged to the price of the South African Rand (ZAR).",
+    "explorer": "https://etherscan.io/token/0xb755506531786C8aC63B756BaB1ac387bACB0C04",
+    "status": "active",
+    "id": "0xb755506531786C8aC63B756BaB1ac387bACB0C04",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/ZARP_cash"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/venox-digital-assets/zarp.contract"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/kNqe8qeHyQ"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}
