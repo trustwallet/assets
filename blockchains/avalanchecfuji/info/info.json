@@ -1,0 +1,12 @@
+{
+    "name": "Avalanche C-Chain Fuji Testnet",
+    "website": "https://avax.network",
+    "description": "Avalanche is an open-source platform for launching Decentralized Finance (DeFi) applications and enterprise blockchain deployments in an interoperable, highly scalable ecosystem.",
+    "explorer": "https://testnet.snowtrace.io/",
+     "symbol": "AVAX",
+     "rpc_url": "https://api.avax-test.network/ext/bc/C/rpc",
+     "type": "coin",
+     "coin_type": 43113,
+     "decimals": 18,
+     "status": "active"
+ }
