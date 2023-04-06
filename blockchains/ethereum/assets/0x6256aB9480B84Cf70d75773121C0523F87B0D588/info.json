@@ -1,0 +1,36 @@
+{
+    "name": "pTON",
+    "website": "https://pton.fi/",
+    "description": "pTON.fi is a project that provides the first staking solution for TON on the Ethereum blockchain.",
+    "explorer": "https://etherscan.io/token/0x6256aB9480B84Cf70d75773121C0523F87B0D588",
+    "type": "ERC20",
+    "symbol": "pTON",
+    "decimals": 9,
+    "status": "active",
+    "id": "0x6256aB9480B84Cf70d75773121C0523F87B0D588",
+    "tags": [
+        "staking"
+    ],
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/pton-fi"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/ptonfi"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/pton_announcements"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/@pTON.fi"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://ptonfi.gitbook.io/pton-litepaper/"
+        }
+    ]
+}
