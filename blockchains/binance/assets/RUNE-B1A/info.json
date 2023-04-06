@@ -1,5 +1,5 @@
 {
-    "name": "THORChain",
+    "name": "Rune",
     "website": "https://thorchain.org",
     "description": "THORChain describes itself as a decentralized liquidity network that allows users to swap assets instantly at manipulation-resistant market prices.",
     "explorer": "https://explorer.binance.org/asset/RUNE-B1A",
@@ -8,5 +8,8 @@
     "symbol": "RUNE",
     "decimals": 8,
     "status": "active",
-    "id": "RUNE-B1A"
+    "id": "RUNE-B1A",
+    "tags": [
+        "defi"
+    ]
 }

@@ -6,8 +6,9 @@
     "research": "https://docs.celo.org/",
     "symbol": "CELO",
     "type": "coin",
-    "decimals": 8,
-    "status": "abandoned",
+    "rpc_url": "https://forno.celo.org",
+    "decimals": 18,
+    "status": "active",
     "links": [
         {
             "name": "github",

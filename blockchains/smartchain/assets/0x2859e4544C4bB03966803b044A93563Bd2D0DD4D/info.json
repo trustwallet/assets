@@ -1,11 +1,14 @@
 {
-    "name": "SHIBA INU",
+    "name": "BNB pegged SHIBA INU",
     "website": "https://shibatoken.com/",
-    "description": "According to SHIBA INU, the reasoning behind the creation of SHIBA is that Shibas constantly forget where they bury their treasure. The website proclaims \"Many doggie wars have been waged over precious treasure and delicious goodies.\"",
+    "description": "BNB pegged SHIBA INU (SHIB BEP20) is a token issued by Binance on Smart Chain; its price is pegged to SHIBA INU (SHIB ERC20) at a ratio of 1:1.",
     "explorer": "https://bscscan.com/token/0x2859e4544c4bb03966803b044a93563bd2d0dd4d",
     "type": "BEP20",
     "symbol": "SHIB",
     "decimals": 18,
     "status": "active",
-    "id": "0x2859e4544C4bB03966803b044A93563Bd2D0DD4D"
+    "id": "0x2859e4544C4bB03966803b044A93563Bd2D0DD4D",
+    "tags": [
+        "binance-peg"
+    ]
 }

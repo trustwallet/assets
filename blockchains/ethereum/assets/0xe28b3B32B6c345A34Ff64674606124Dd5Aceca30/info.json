@@ -1,5 +1,5 @@
 {
-    "name": "Injective Protocol",
+    "name": "Injective",
     "website": "https://injectiveprotocol.com",
     "description": "The Universal Layer-2 DeFi Protocol for Cross-Chain Derivatives Trading.",
     "explorer": "https://etherscan.io/token/0xe28b3b32b6c345a34ff64674606124dd5aceca30",
@@ -8,5 +8,8 @@
     "symbol": "INJ",
     "decimals": 18,
     "status": "active",
-    "id": "0xe28b3B32B6c345A34Ff64674606124Dd5Aceca30"
+    "id": "0xe28b3B32B6c345A34Ff64674606124Dd5Aceca30",
+    "tags": [
+        "defi"
+    ]
 }
