@@ -1,18 +1,14 @@
 {
-    "name": "Lunatics",
+    "name": "Lunatics Token",
     "type": "BEP20",
     "symbol": "LunaT",
     "decimals": 9,
-    "website": "https://lunaticstoken.com",
-    "description": "Lunatics Token is a hyper deflationary project, dedicated to rewarding lunatic token holders in luna classic, and burning the massive supply of Luna classic. ",
+    "website": "https://lunaticstoken.com/",
+    "description": "Lunatics Token (LunaT) is designed to be a Hyper-Deflationary Multi-chain ecosystem, aimed at becoming a one-stop shop offering DeFi, GameFi, Metaverse and Crypto Banking products while bringing passive income back to its investors.",
     "explorer": "https://bscscan.com/token/0x2A48eCe377b87ce941406657B9278b4459595E06",
     "status": "active",
     "id": "0x2A48eCe377b87ce941406657B9278b4459595E06",
     "links": [
-        {
-            "name": "coinmarketcap",
-            "url": "https://coinmarketcap.com/currencies/lunatics"
-        },
         {
             "name": "twitter",
             "url": "https://twitter.com/LunaticsToken"
@@ -22,11 +18,40 @@
             "url": "https://t.me/LunaticsTokenOfficial"
         },
         {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/lunatics/"
+        },
+        {
             "name": "facebook",
-            "url": "https://facebook.com/LunaticsTokenOfficial/"
+            "url": "https://facebook.com/LunaticsTokenOfficial"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/Z2AQN37xq5"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/LunaticsTokenOfficial"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/lunatics"
+        },
+        {
+            "name": "youtube",
+            "url": "https://youtube.com/channel/UCM_bVvl86pjcAiLJvwHF_8A?sub_confirmation=1"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://lunaticstoken.gitbook.io/whitepaper/"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/LunaticstokenValidator"
         }
     ],
     "tags": [
-        "defi"
+        "defi",
+        "deflationary"
     ]
 }
