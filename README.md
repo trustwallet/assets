@@ -28,7 +28,7 @@ The [Assets web app](https://assets.trustwallet.com) can be used for most new to
 ### Quick starter
 
 Details of the repository structure and contribution guidelines are listed on the
-[Developers site](https://developer.trustwallet.com/assets/new-asset).
+[Developers suite](https://developer.trustwallet.com/assets/new-asset).
 Here is a quick starter summary for the most common use case.
 
 
