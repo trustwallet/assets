@@ -1,11 +1,24 @@
 {
-    "name": "HEX",
-    "symbol": "HEX",
+    "name": "HEX (HEX) Test",
     "type": "ERC20",
+    "symbol": "HEXTEST",
     "decimals": 8,
-    "description": "Launched by Richard Heart and team, HEX is the first certificate of deposit on the blockchain, essentially time deposits that gain interest,",
-    "website": "https://hex.com",
+    "website": "https://test.com",
+    "description": "Test. DO not merge or close please",
     "explorer": "https://etherscan.io/token/0x2b591e99afE9f32eAA6214f7B7629768c40Eeb39",
     "status": "active",
-    "id": "0x2b591e99afE9f32eAA6214f7B7629768c40Eeb39"
+    "id": "0x2b591e99afE9f32eAA6214f7B7629768c40Eeb39",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/"
+        }
+    ],
+    "tags": [
+        "wrapped"
+    ]
 }
