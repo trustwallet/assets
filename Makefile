@@ -41,21 +41,21 @@ lint: lint-install
 	bin/golangci-lint run --timeout=2m
 
 # Assets commands.
-check:
-	go run cmd/main.go check
+check: build
+	bin/assets check
 
-fix:
-	go run cmd/main.go fix
+fix: build
+	bin/assets fix
 
-update-auto:
-	go run cmd/main.go update-auto
+update-auto: build
+	bin/assets update-auto
 
 # Helper commands.
-add-token:
-	go run cmd/main.go add-token $(asset_id)
+add-token: build
+	bin/assets add-token $(asset_id)
 
-add-tokenlist:
-	go run cmd/main.go add-tokenlist $(asset_id)
+add-tokenlist: build
+	bin/assets add-tokenlist $(asset_id)
 
-add-tokenlist-extended:
-	go run cmd/main.go add-tokenlist-extended $(asset_id)
+add-tokenlist-extended: build
+	bin/assets add-tokenlist-extended $(asset_id)
