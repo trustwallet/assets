@@ -25,7 +25,7 @@ jobs:
           role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME }}
           aws-region: ${{ env.AWS_REGION }}
 
-      - name: Deploy to S3
+      - name: Sync to S3
         if: github.repository_owner == 'trustwallet'
         shell: bash
         run: aws s3 sync . s3://$AWS_S3_BUCKET  --follow-symlinks --delete --exclude '*' --include 'dapps/*' --include 'blockchains/*' --size-only
