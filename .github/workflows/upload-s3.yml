@@ -17,15 +17,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - name: Confiugre AWS credentials
-        uses: aws-actions/configure-aws-credentials@v1
+        uses: aws-actions/configure-aws-credentials@v2
         with:
           role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME }}
           aws-region: ${{ env.AWS_REGION }}
 
-      - name: Deploy to S3
+      - name: Sync to S3
         if: github.repository_owner == 'trustwallet'
         shell: bash
         run: aws s3 sync . s3://$AWS_S3_BUCKET  --follow-symlinks --delete --exclude '*' --include 'dapps/*' --include 'blockchains/*' --size-only
