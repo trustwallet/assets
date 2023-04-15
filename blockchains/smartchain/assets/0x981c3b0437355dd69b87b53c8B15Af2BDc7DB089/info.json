@@ -5,9 +5,13 @@
     "explorer": "https://bscscan.com/token/0x981c3b0437355dd69b87b53c8B15Af2BDc7DB089",
     "research": "https://docs.metagreenuniverse.com",
     "symbol": "MGU",
-    "type": "token",
+    "type": "BEP20",
     "decimals": 18,
     "status": "active",
+    "id": "0x981c3b0437355dd69b87b53c8B15Af2BDc7DB089",
+    "tags": [
+        "metaverse"
+    ],
     "links": [
         {
             "name": "telegram",
@@ -16,10 +20,6 @@
         {
             "name": "twitter",
             "url": "https://twitter.com/mgreenuniverse"
-        },
-        {
-            "name": "instagram",
-            "url": "https://www.instagram.com/meta_green_universe"
         },
         {
             "name": "whitepaper",
