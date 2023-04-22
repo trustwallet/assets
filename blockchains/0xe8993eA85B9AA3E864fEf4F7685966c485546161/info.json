@@ -1,20 +1,14 @@
 {
     "name": "Baby Squid Game",
-    "website": "https://www.babysquidgame.com/",
-    "description": "Baby Squid Game is a Fully Decentralized, Hyper Deflationary Layer 2 Meme Token Hosted on the Binance Smart Chain. BSG is of the Safest & Oldest Original Squid Game Projects with an Ambitious Mission to become the First BSC Token to Perform Long-Term Consistent Growth with our Progressive Hyper Deflationary Protocol.",
-    "explorer": "https://bscscan.com/token/0xe8993ea85b9aa3e864fef4f7685966c485546161",
+    "type": "BEP20",
     "symbol": "BSG",
-    "type": "token",
     "decimals": 9,
+    "website": "https://www.babysquidgame.com/",
+    "description": "Baby Squid Game is a Fully Decentralized, Hyper Deflationary Layer 2 Meme Token Hosted on the Binance Smart Chain. BSG is the Safest & One of the Oldest Original Squid Game Projects with an Ambitious Mission to become the First BSC Token to Perform Long-Term Consistent Growth with its' Progressive Hyper Deflationary Protocol.",
+    "explorer": "https://bscscan.com/token/0xe8993ea85b9aa3e864fef4f7685966c485546161",
     "status": "active",
-    "tags": [
-        "deflationary"
-    ],
+    "id": "0xe8993eA85B9AA3E864fEf4F7685966c485546161",
     "links": [
-        {
-            "name": "github",
-            "url": "https://github.com/BabySquidGameOfficial/BabySquidGame/blob/main/Code"
-        },
         {
             "name": "twitter",
             "url": "https://twitter.com/babysquidgame"
@@ -25,7 +19,14 @@
         },
         {
             "name": "coinmarketcap",
-            "url": "https://coinmarketcap.com/currencies/baby-squid-game/"
+            "url" : "https://coinmarketcap.com/currencies/baby-squid-game/"
+        },
+        {
+            "name": "github",
+            "url" : "https://github.com/BabySquidGameOfficial/BabySquidGame/blob/main/Code"
         }
+    ],
+    "tags": [
+        "deflationary"
     ]
 }
