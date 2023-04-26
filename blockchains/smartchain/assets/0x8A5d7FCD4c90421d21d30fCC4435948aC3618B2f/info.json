@@ -1,11 +1,72 @@
 {
     "name": "Cake Monster",
-    "website": "https://cake.monster",
-    "description": "A hyper-deflationary and elastic supply token that has unique reserve and reward mechanisms featuring an automated hybrid monetary policy.",
-    "explorer": "https://bscscan.com/token/0x8A5d7FCD4c90421d21d30fCC4435948aC3618B2f",
     "type": "BEP20",
     "symbol": "MONSTA",
     "decimals": 18,
+    "website": "https://cake.monster",
+    "description": "Cake Monster is a Hyper-Deflationary and Dividend-Yielding asset on BNB Chain that introduces a new form of monetary policy.",
+    "explorer": "https://bscscan.com/token/0x8A5d7FCD4c90421d21d30fCC4435948aC3618B2f",
     "status": "active",
-    "id": "0x8A5d7FCD4c90421d21d30fCC4435948aC3618B2f"
+    "id": "0x8A5d7FCD4c90421d21d30fCC4435948aC3618B2f",
+    "links": [
+        {
+            "name": "docs",
+            "url": "https://docs.cake.monster"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://cake.monster/whitepaper"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/cakemnstr"
+        },
+        {
+            "name": "telegram_news",
+            "url": "https://t.me/cakemnstrannouncement"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/thecakemnstr"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/cake-monster"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/coins/cake-monster"
+        },
+        {
+            "name": "medium",
+            "url": "https://cakemonster.medium.com"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/CAKEMONSTER"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/MonstaPartyNFTs"
+        },
+        {
+            "name": "youtube",
+            "url": "https://youtube.com/channel/UCVDpZv6uXOArJ22BhtNCcCw"
+        },
+        {
+            "name": "facebook",
+            "url": "https://facebook.com/officialcakemonster"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/cake-monster"
+        }
+    ],
+    "tags": [
+        "deflationary",
+        "defi",
+        "staking",
+        "nft",
+        "memes"
+    ]
 }

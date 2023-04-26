@@ -2,7 +2,6 @@ package config
 
 import "github.com/trustwallet/go-primitives/coin"
 
-// TODO: Move to go-libs.
 var StackingChains = []coin.Coin{
 	coin.Tezos(),
 	coin.Cosmos(),

@@ -1,11 +1,28 @@
 {
-    "name": "LADZ",
+    "name": "Ladz",
     "symbol": "LADZ",
     "type": "ERC20",
     "decimals": 4,
-    "description": "-",
-    "website": "",
+    "description": "$LADZ is the social token of the Layer1 channel and network.",
+    "website": "http://ladz.city/",
     "explorer": "https://etherscan.io/token/0x1287c0509df9a475Ef178471aB2132b9dfD312B3",
-    "status": "abandoned",
-    "id": "0x1287c0509df9a475Ef178471aB2132b9dfD312B3"
+    "status": "active",
+    "id": "0x1287c0509df9a475Ef178471aB2132b9dfD312B3",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/ladzcity"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/aX5bGCBkmR/"
+        },
+        {
+            "name": "youtube",
+            "url": "https://youtube.com/LADZCity"
+        }
+    ],
+    "tags": [
+        "nft"
+    ]
 }
