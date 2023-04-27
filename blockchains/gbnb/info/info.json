@@ -2,9 +2,9 @@
     "name": "BNB Greenfield",
     "website": "https://greenfield.bnbchain.org/en",
     "description": "The goal of the BNB Greenfield is to unleash the power of decentralized blockchain and storage technology on data ownership and data economy.",
-    "explorer": "https://greenfieldscan.com/?ref=binance.ghost.io",
+    "explorer": "https://greenfieldscan.com",
     "symbol": "gBNB",
-    "rpc_url": "https://data-seed-prebsc-2-s3.binance.org:8545",
+    "rpc_url": "https://greenfield-bsc-testnet-ap.nodereal.io",
     "type": "coin",
     "decimals": 18,
     "status": "active"
