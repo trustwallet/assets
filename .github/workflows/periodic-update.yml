@@ -11,11 +11,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          token: ${{ secrets.COMMIT_TOKEN }}
+          token: ${{ secrets.CI_GITHUB_TOKEN }}
           ref: ${{ github.head_ref }}
 
       - name: Set up Go
-        uses: actions/setup-go@v3
+        uses: actions/setup-go@v4
         with:
           go-version: 1.18
         id: go
@@ -34,8 +34,8 @@ jobs:
 
       - name: Commit changes
         if: success()
-        uses: stefanzweifel/git-auto-commit-action@v4.15.3
+        uses: stefanzweifel/git-auto-commit-action@v4.16.0
         with:
-          commit_user_name: release_process
-          commit_user_email: release_process@blockwallet.io
           commit_message: External Updates
+          commit_user_name: trust-ci
+          commit_user_email: "117647528+trust-ci@users.noreply.github.com"
