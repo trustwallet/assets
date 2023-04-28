@@ -5,7 +5,7 @@
     "explorer": "https://etherscan.io/token/0x5919DeA604631016c15c805e3D948A0384879892",
     "type": "ERC20",
     "symbol": "PEEPS",
-    "decimals": 18,
+    "decimals": 9,
     "status": "active",
     "id": "0x5919DeA604631016c15c805e3D948A0384879892",
     "links": [
@@ -25,5 +25,9 @@
             "name": "telegram",
             "url": "https://t.me/ThePeoplesCoinOfficial"
         }
+    ],
+    "tags": [
+        "defi",
+        "governance"
     ]
 }
