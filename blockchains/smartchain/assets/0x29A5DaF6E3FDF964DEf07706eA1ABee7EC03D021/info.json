@@ -3,35 +3,27 @@
     "type": "BEP20",
     "symbol": "TLC",
     "decimals": 18,
-    "description": "The Trillioner crypto project aims to bridge the gap between traditional finance and the crypto world by offering financial services for both crypto projects and private users.",
-    "explorer": "https://bscscan.com/token/0x29a5daf6e3fdf964def07706ea1abee7ec03d021",
-    "website": "https://www.trillioner.io/",
+    "website": "https://trillioner.io",
+    "description": "The Trillioner crypto project aims to bridge the gap between traditional finance and the crypto world by offering financial services for both crypto projects and private users. ",
+    "explorer": "https://bscscan.com/token/0x29A5DaF6E3FDF964DEf07706eA1ABee7EC03D021",
     "status": "active",
-    "id":"0x29a5daf6e3fdf964def07706ea1abee7ec03d021",
+    "id": "0x29A5DaF6E3FDF964DEf07706eA1ABee7EC03D021",
     "links": [
-        {
-            "name": "github",
-            "url": "https://github.com/trillionertoken"
-        },
         {
             "name": "twitter",
             "url": "https://twitter.com/Trillionertoken"
         },
         {
-            "name": "facebook",
-            "url": "https://www.facebook.com/Trillionertoken"
-        },
-        {
-            "name": "telegram_news",
-            "url": "https://t.me/Trillioner_News"
+            "name": "github",
+            "url": "https://github.com/trillionertoken"
         },
         {
             "name": "telegram",
             "url": "https://t.me/Trillionertoken"
         },
         {
-            "name": "linkedin",
-            "url": "https://www.linkedin.com/company/trillionertoken"
+            "name": "telegram_news",
+            "url": "https://t.me/Trillioner_News"
         },
         {
             "name": "whitepaper",
@@ -39,11 +31,10 @@
         },
         {
             "name": "coinmarketcap",
-            "url": "https://coinmarketcap.com/currencies/trillioner"
+            "url": "https://coinmarketcap.com/currencies/trillioner/"
         }
     ],
     "tags": [
         "defi"
     ]
 }
-
