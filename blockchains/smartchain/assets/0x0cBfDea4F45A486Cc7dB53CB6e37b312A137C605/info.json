@@ -1,11 +1,36 @@
-{ 
-"name": "SEEDx",
-"website": "https://seedx.app",
-"description": "Built on the Binance Smart Chain, SEEDx is an AMM that uses a limit and Market order book to provide instantaneous trades, pooled liquidity, and innovative yield-generating features. ",
-"explorer": "https://bscscan.com/token/0x0cbfdea4f45a486cc7db53cb6e37b312a137c605",
-"type": "BEP20",
-"symbol": "SEEDx",
-"decimals": 18,
-"status": "active",
-"id": "0x0cBfDea4F45A486Cc7dB53CB6e37b312A137C605"
-}
+{
+    "name": "SEEDx",
+    "type": "BEP20",
+    "symbol": "SEEDx",
+    "decimals": 18,
+    "website": "https://seedx.app",
+    "description": "Built on the Binance Smart Chain, SEEDx is an AMM that uses a limit and Market order book to provide instantaneous trades, pooled liquidity, and innovative yield-generating features.",
+    "explorer": "https://bscscan.com/token/0x0cbfdea4f45a486cc7db53cb6e37b312a137c605",
+    "status": "active",
+    "id": "0x0cbfdea4f45a486cc7db53cb6e37b312a137c605",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/seedxapp"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/seedxapp"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://docs.seedx.app/"
+        },
+        {
+            "name": "source_code",
+            "url": "https://bscscan.com/address/0x0cbfdea4f45a486cc7db53cb6e37b312a137c605#code"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/seedxapp"
+        }
+    ],
+    "tags": [
+        "defi, Dex, Dao"
+    ]
+} 
