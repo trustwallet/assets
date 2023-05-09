@@ -1,17 +1,14 @@
 {
     "name": "USD Coin",
-    "website": "https://www.centre.io",
-    "description": "USDC is a fully collateralized US Dollar stablecoin developed by CENTRE, the open source project with Circle being the first of several forthcoming issuers.",
-    "explorer": "https://suiscan.xyz/mainnet/object/0x4fbf84f3029bd0c0b77164b587963be957f853eccf834a67bb9ecba6ec80f189",
-    "research": "https://research.binance.com/en/projects/usd-coin",
-    "type": "SUI",
     "symbol": "USDC",
+    "type": "SUI",
     "decimals": 6,
+    "description": "USDC is a fully collateralized US Dollar stablecoin developed by CENTRE, the open source project with Circle being the first of several forthcoming issuers.",
+    "website": "https://www.centre.io",
+    "explorer": "https://explorer.sui.io/address/0x4fbf84f3029bd0c0b77164b587963be957f853eccf834a67bb9ecba6ec80f189",
+    "research": "https://research.binance.com/en/projects/usd-coin",
     "status": "active",
     "id": "0x4fbf84f3029bd0c0b77164b587963be957f853eccf834a67bb9ecba6ec80f189",
-    "tags": [
-        "stablecoin"
-    ],
     "links": [
         {
             "name": "github",
@@ -25,12 +22,16 @@
             "name": "coinmarketcap",
             "url": "https://coinmarketcap.com/currencies/usd-coin/"
         },
-        {   "name": "coingecko",
+        {
+            "name": "coingecko",
             "url": "https://coingecko.com/en/coins/usd-coin/"
         },
         {
-             "name": "medium",
-             "url": "https://medium.com/centre-blog"
-    }
-]
+            "name": "medium",
+            "url": "https://medium.com/centre-blog"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
 }
