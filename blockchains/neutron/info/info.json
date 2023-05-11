@@ -2,23 +2,23 @@
     "name": "Neutron",
     "type": "coin",
     "symbol": "NTRN",
-    "decimals": 18,
-    "website": "https://www.neutroncoin.com",
-    "description": "Neutron coin (NTRN) is a maturing, dependable blockchain that features Proof of Stake and a Nucleus Node System",
-    "explorer": "https://openchains.info/coin/neutron/blocks",
+    "decimals": 6,
+    "website": "https://neutron.org/",
+    "description": "The most secure CosmWasm platform in Cosmos, Neutron lets smart-contracts leverage bleeding-edge Interchain technology with minimal overhead.",
+    "explorer": "https://www.mintscan.io/neutron",
     "status": "active",
+    "rpc_url": "https://rpc-kralum.neutron-1.neutron.org",
+    "denom": "untrn",
+    "lcd_url": "https://rest-kralum.neutron-1.neutron.org",
+    "hrp": "neutron",
     "links": [
         {
             "name": "twitter",
-            "url": "https://twitter.com/Neutron_Crypto"
+            "url": "https://twitter.com/Neutron_org"
         },
         {
-            "name": "telegram",
-            "url": "https://t.me/NeutronCoin"
-        },
-        {
-            "name": "coinmarketcap",
-            "url": "https://coinmarketcap.com/currencies/neutron/"
+            "name": "github",
+            "url": "https://github.com/neutron-org"
         }
     ]
 }
