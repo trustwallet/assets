@@ -13,7 +13,7 @@ For every token a logo and optional additional information is available (such da
 
 Such a large collection can be maintained only through a community effort, so _feel free to add your token_.
 
-<center><img src='https://trustwallet.com/assets/images/media/assets/horizontal_blue.png' height="200"></center>
+<center><img src='https://photos.app.goo.gl/w7X3FPcfs15S58E36' height="200"></center>
 
 ## How to add token
 
@@ -47,9 +47,9 @@ There are several scripts available for maintainers:
 - `make check` -- Execute validation checks; also used in continuous integration.
 - `make fix` -- Perform automatic fixes where possible
 - `make update-auto` -- Run automatic updates from external sources, executed regularly (GitHub action)
-- `make add-token asset_id=c60_t0x4Fabb145d64652a948d72533023f6E7A623C7C53` -- Create `info.json` file as asset template.
-- `make add-tokenlist asset_id=c60_t0x4Fabb145d64652a948d72533023f6E7A623C7C53` -- Adds a token to tokenlist.json.
-- `make add-tokenlist-extended asset_id=c60_t0x4Fabb145d64652a948d72533023f6E7A623C7C53` -- Adds a token to tokenlist-extended.json.
+- `make add-token asset_id=c60_0x7E20f650Cd25B72813280933f2754d651601AE6B` -- Create `info.json` file as asset template.
+- `make add-tokenlist asset_id=c60_0x7E20f650Cd25B72813280933f2754d651601AE6B` -- Adds a token to tokenlist.json.
+- `make add-tokenlist-extended asset_id=c60_0x7E20f650Cd25B72813280933f2754d651601AE6B` -- Adds a token to tokenlist-extended.json.
 
 ## On Checks
 
