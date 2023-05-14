@@ -13,7 +13,7 @@ For every token a logo and optional additional information is available (such da
 
 Such a large collection can be maintained only through a community effort, so _feel free to add your token_.
 
-<center><img src='https://photos.app.goo.gl/w7X3FPcfs15S58E36' height="200"></center>
+< centro >< img src = ' ' altura = "200" ></ centro >[url=https://ibb.co/jv2Z4k7][img]https://i.ibb.co/jv2Z4k7/image-1-2-1.png[/img][/url]
 
 ## How to add token
 
