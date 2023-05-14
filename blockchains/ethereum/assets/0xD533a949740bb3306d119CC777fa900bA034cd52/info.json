@@ -1,0 +1,34 @@
+{
+    "name": "Curve DAO Token",
+    "website": "https://curve.fi",
+    "description": "CRV is a governance token on the Curve platform with time-weighted voting and value accrual mechanisms.",
+    "explorer": "https://etherscan.io/token/0xD533a949740bb3306d119CC777fa900bA034cd52",
+    "research": "https://research.binance.com/en/projects/curve",
+    "type": "ERC20",
+    "symbol": "CRV",
+    "decimals": 18,
+    "status": "active",
+    "id": "0xD533a949740bb3306d119CC777fa900bA034cd52",
+    "tags": [
+        "defi",
+        "governance"
+    ],
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/curvefi/curve-contract"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/CurveFinance"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/curvefi"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/curve-dao-token/"
+        }
+    ]
+}
