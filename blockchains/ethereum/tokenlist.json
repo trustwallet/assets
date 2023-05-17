@@ -507,6 +507,9 @@
                 },
                 {
                     "base": "c60_t0xB0c7a3Ba49C7a6EaBa6cD4a96C55a1391070Ac9A"
+                },
+                {
+                    "base": "c60_t0xCEBA2a8F6Ec221AEB5f3a7bcd15Cbc7e6a387bfb"
                 }
             ]
         },
@@ -3506,6 +3509,16 @@
             "symbol": "MAGIC",
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0xB0c7a3Ba49C7a6EaBa6cD4a96C55a1391070Ac9A/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c60_t0xCEBA2a8F6Ec221AEB5f3a7bcd15Cbc7e6a387bfb",
+            "type": "ERC20",
+            "address": "0xCEBA2a8F6Ec221AEB5f3a7bcd15Cbc7e6a387bfb",
+            "name": "Peter Pan",
+            "symbol": "PAN",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0xCEBA2a8F6Ec221AEB5f3a7bcd15Cbc7e6a387bfb/logo.png",
             "pairs": []
         }
     ],
