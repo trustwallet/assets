@@ -1,0 +1,32 @@
+{
+    "name": "Djed",
+    "website": "https://djed.xyz/",
+    "description": "The first algorithmic over collaterelized stablecoin on Cardano.",
+    "explorer": "https://bscscan.com/",
+    "research": "https://eprint.iacr.org/2021/1069.pdf",
+    "symbol": "DJED",
+    "type": "Token",
+    "decimals": 6,
+    "status": "active",
+    "tags": [
+        "staking-native"
+    ],
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/input-output-hk/stablecoin-plutus"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/DjedStablecoin?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+        },
+        {
+            "name": "reddit",
+            "url": "None"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://eprint.iacr.org/2021/1069.pdf"
+        }
+    ]
+}
