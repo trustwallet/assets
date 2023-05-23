@@ -2,10 +2,28 @@
     "name": "Tsan Token",
     "website": "https://tamagosan.io",
     "description": "Tsan Token is use for economy in-app at https://apps.tamagosan.io for exchange, swap, buy another parts of your TamagoSan NFT",
-    "explorer": "https://arbiscan.io/token/0x242d400be2c70e2db9f1eb83a90d009870fd9e34",
+    "explorer": "https://arbiscan.io/address/0x242d400be2c70e2db9f1eb83a90d009870fd9e34",
     "type": "ERC20",
     "symbol": "TSAN",
     "decimals": 18,
     "status": "active",
-    "id": "0x242d400be2c70e2db9f1eb83a90d009870fd9e34"
+    "id": "0x242d400bE2c70E2db9f1EB83a90d009870fd9e34",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/TamagoSan_NFT"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/@tamagosan_nft"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.gg/tPXv7zN3rJ"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://tamagosan.gitbook.io/tamagosan-we-are-san/"
+        }
+    ]
 }
