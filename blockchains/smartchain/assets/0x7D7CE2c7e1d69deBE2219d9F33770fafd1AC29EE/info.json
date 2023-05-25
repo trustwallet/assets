@@ -1,24 +1,32 @@
 {
     "name": "Success Kid",
-    "website": "https://successkid.fun",
-    "description": "$SCCS is #memecoin - 0% buy tax, 10% sell tax goes to burn",
-    "explorer": "https://bscscan.com/",
-    "research": "https://coinmarketcap.com/currencies/success-kid/",
+    "type": "BEP20",
     "symbol": "SCCS",
-    "type": "coin",
     "decimals": 18,
+    "website": "https://successkid.fun/",
+    "description": "SCCS is #memecoin - 0% buy tax, 10% sell tax goes to burn",
+    "explorer": "https://bscscan.com/token/0x7d7ce2c7e1d69debe2219d9f33770fafd1ac29ee",
     "status": "active",
-    "tags": [
-        "memecoin"
-    ],
+    "id": "0x7D7CE2c7e1d69deBE2219d9F33770fafd1AC29EE",
     "links": [
         {
             "name": "twitter",
-            "url": "https://twitter.com/SuccessKidBNB"
+            "url": "https://twitter.com/web2inu"
         },
         {
-            "name": "reddit",
-            "url": "https://reddit.com/r/SuccessKidBNB"
+            "name": "telegram",
+            "url": "https://t.me/successkidbnb"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/success-kid/"
+        },
+        {
+            "name": "source_code",
+            "url": "https://bscscan.com/token/0x7d7ce2c7e1d69debe2219d9f33770fafd1ac29ee#code"
         }
+    ],
+    "tags": [
+        "deflationary"
     ]
 }
