@@ -2,13 +2,13 @@
     "name": "Stride Staked Evmos",
     "type": "STRIDE",
     "symbol": "STEVMOS",
-    "decimals": 6,
+    "decimals": 18,
     "website": "https://stride.zone",
     "description": "Stride Staked Evmos is the token received in exchange for staking EVMOS with Stride.",
     "explorer": "https://www.mintscan.io/stride",
     "status": "active",
     "id": "staevmos",
     "tags": [
-        "staking-native"
+        "staking-liquid"
     ]
 }
