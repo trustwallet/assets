@@ -1,11 +1,11 @@
 {
     "name": "Stride Staked Atom",
-    "type": "STRIDE",
     "symbol": "STATOM",
+    "type": "STRIDE",
     "decimals": 6,
-    "website": "https://stride.zone",
     "description": "Stride Staked Atom is the token received in exchange for staking ATOM with Stride. STATOM is redeemable 1:1 for ATOM, subject to the 21 day unbonding period on Cosmos.",
-    "explorer": "https://www.mintscan.io/stride",
+    "website": "https://stride.zone",
+    "explorer": "https://www.mintscan.io/stride/account/stuatom",
     "status": "active",
     "id": "stuatom",
     "links": [
@@ -17,4 +17,4 @@
     "tags": [
         "staking-native"
     ]
-} 
+}
