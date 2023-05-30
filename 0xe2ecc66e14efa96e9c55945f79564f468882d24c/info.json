@@ -1,48 +1,15 @@
 {
-    "name": "Disney Coin",
-    "website": "https://miningtw.xyz",
-    "description": "Disney (DIS) is a meme currency that brings joy, used for community exchange, gift, reward, and charity purposes",
-    "explorer": "https://bscscan.com/token/0xe2ecc66e14efa96e9c55945f79564f468882d24c",
-    "research": "https://miningtw.xyz/wp-content/uploads/2023/05/DisneyDIS-COIN-Whitepaper.pdf",
-    "symbol": "DIS",
-    "type": "token",
-    "decimals": 18,
-    "status": "active",
-    "tags": [
-        "community"
-    ],
-    "links": [
-        {
-            "name": "github",
-            "url": "https://github.com/MiningTW"
-        },
-        {
-            "name": "twitter",
-            "url": "https://twitter.com/DaddyPigTW"
-        },
-        {
-            "name": "telegram",
-            "url": "https://t.me/daddypig4559"
-        },
-        {
-            "name": "facebook",
-            "url": "https://facebook.com/daddypig4559"
-        },
-        {
-            "name": "discord",
-            "url": "https://discord.gg/bKEhBxJ3"
-        },
-        {
-            "name": "youtube",
-            "url": "https://youtube.com/@DaddyPigTW"
-        },
-        {
-            "name": "medium",
-            "url": "https://medium.com/@miningtw"
-        },
-        {
-            "name": "whitepaper",
-            "url": "https://miningtw.xyz/disneycoinwhitepaper/"
-        }
-    ]
+  "name": "Disney",
+  "website": "https://distoken.xyz",
+  "description": "Hong Kong and Taiwan co-issued Memecoin",
+  "explorer": "https://bscscan.com/token/0xe2ecc66e14efa96e9c55945f79564f468882d24c",
+  "type": "BEP20",
+  "symbol": "DIS",
+  "decimals": 18,
+  "status": "active",
+  "id": "0xE2Ecc66E14eFa96E9C55945F79564F468882d24C",
+  "links": {
+    "twitter": "https://twitter.com/distoken_xyz",
+    "telegram": "https://t.me/miningtwxyz"
+  }
 }
