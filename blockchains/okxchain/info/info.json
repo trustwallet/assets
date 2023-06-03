@@ -1,11 +1,13 @@
 {
     "name": "OKC Token",
     "type": "coin",
+    "coin_type": 996,
     "symbol": "OKT",
     "decimals": 18,
     "website": "https://www.okx.com/okc",
     "description": "OKC is a secure & programmable smart contracts platform for the next-gen Web3 applications.",
     "explorer": "https://www.oklink.com/en/",
+    "rpc_url": "https://exchainrpc.okex.org",
     "status": "active",
     "links": [
         {
