@@ -1,11 +1,28 @@
 {
-    "name": "CREDITS",
-    "symbol": "CS",
+    "name": "CREDITS (CS)",
     "type": "ERC20",
+    "symbol": "CS",
     "decimals": 6,
-    "description": "-",
     "website": "https://credits.com",
+    "description": "think this is local crypto ??this project has been around a while",
     "explorer": "https://etherscan.io/token/0x46b9Ad944d1059450Da1163511069C718F699D31",
-    "status": "abandoned",
-    "id": "0x46b9Ad944d1059450Da1163511069C718F699D31"
+    "status": "active",
+    "id": "0x46b9Ad944d1059450Da1163511069C718F699D31",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/dawnbass360@gmail.com"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/@dawnbass702"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/dawnbass"
+        }
+    ],
+    "tags": [
+        "wrapped"
+    ]
 }
