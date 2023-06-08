@@ -1,7 +1,7 @@
 {
-    "name": "Trust Wallet: Optimism List",
+    "name": "Trust Wallet: Optimism Ethereum",
     "logoURI": "https://trustwallet.com/assets/images/favicon.png",
-    "timestamp": "2022-01-27T14:33:26.183301",
+    "timestamp": "2023-06-08T16:39:55.952598",
     "tokens": [
         {
             "asset": "c10000070_t0x4200000000000000000000000000000000000006",
@@ -10,8 +10,7 @@
             "name": "Wrapped Ether",
             "symbol": "WETH",
             "decimals": 18,
-            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/optimism/assets/0x4200000000000000000000000000000000000006/logo.png",
-            "pairs": []
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/optimism/assets/0x4200000000000000000000000000000000000006/logo.png"
         },
         {
             "asset": "c10000070_t0x8700dAec35aF8Ff88c16BdF0418774CB3D7599B4",
@@ -20,8 +19,7 @@
             "name": "Synthetix Network",
             "symbol": "SNX",
             "decimals": 18,
-            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/optimism/assets/0x8700dAec35aF8Ff88c16BdF0418774CB3D7599B4/logo.png",
-            "pairs": []
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/optimism/assets/0x8700dAec35aF8Ff88c16BdF0418774CB3D7599B4/logo.png"
         },
         {
             "asset": "c10000070_t0x350a791Bfc2C21F9Ed5d10980Dad2e2638ffa7f6",
@@ -30,8 +28,7 @@
             "name": "ChainLink",
             "symbol": "LINK",
             "decimals": 18,
-            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/optimism/assets/0x350a791Bfc2C21F9Ed5d10980Dad2e2638ffa7f6/logo.png",
-            "pairs": []
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/optimism/assets/0x350a791Bfc2C21F9Ed5d10980Dad2e2638ffa7f6/logo.png"
         },
         {
             "asset": "c10000070_t0x61BAADcF22d2565B0F471b291C475db5555e0b76",
@@ -40,8 +37,7 @@
             "name": "Aelin Token",
             "symbol": "AELIN",
             "decimals": 18,
-            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/optimism/assets/0x61BAADcF22d2565B0F471b291C475db5555e0b76/logo.png",
-            "pairs": []
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/optimism/assets/0x61BAADcF22d2565B0F471b291C475db5555e0b76/logo.png"
         },
         {
             "asset": "c10000070_t0x9e1028F5F1D5eDE59748FFceE5532509976840E0",
@@ -50,8 +46,7 @@
             "name": "Perpetual",
             "symbol": "PERP",
             "decimals": 18,
-            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/optimism/assets/0x9e1028F5F1D5eDE59748FFceE5532509976840E0/logo.png",
-            "pairs": []
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/optimism/assets/0x9e1028F5F1D5eDE59748FFceE5532509976840E0/logo.png"
         },
         {
             "asset": "c10000070_t0xF98dCd95217E15E05d8638da4c91125E59590B07",
@@ -60,12 +55,20 @@
             "name": "Kromatika",
             "symbol": "KROM",
             "decimals": 18,
-            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/optimism/assets/0xF98dCd95217E15E05d8638da4c91125E59590B07/logo.png",
-            "pairs": []
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/optimism/assets/0xF98dCd95217E15E05d8638da4c91125E59590B07/logo.png"
+        },
+        {
+            "asset": "c10000070_t0x9A601C5bb360811d96A23689066af316a30c3027",
+            "type": "OPTIMISM",
+            "address": "0x9A601C5bb360811d96A23689066af316a30c3027",
+            "name": "Pika Protocol",
+            "symbol": "PIKA",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/optimism/assets/0x9A601C5bb360811d96A23689066af316a30c3027/logo.png"
         }
     ],
     "version": {
-        "major": 1,
+        "major": 3,
         "minor": 0,
         "patch": 0
     }
