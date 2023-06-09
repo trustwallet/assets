@@ -199,7 +199,10 @@
                 },
                 {
                     "base": "c20000714_t0xc748673057861a797275CD8A068AbB95A902e8de"
-                }
+                },
+                {
+                    "base": "c20000714_t0xb06327e91cc9c1a8979edcca0d6b67808aff4506"
+                },
             ]
         },
         {
@@ -929,6 +932,18 @@
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0x95c91eEf65F50570cFC3f269961a00108Cf7BF59/logo.png",
             "pairs": []
         }
+        {
+            "asset": "c20000714_t0xf5BDe7Eb378661F04C841B22bA057326B0370153",
+            "type": "BEP20",
+            "address": "0xf5BDe7Eb378661F04C841B22bA057326B0370153",
+            "name": "Pink BNB",
+            "symbol": "PNB",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0xf5BDe7Eb378661F04C841B22bA057326B0370153/logo.png",
+            "pairs": []
+        }
+        
+        
     ],
     "version": {
         "major": 11,
