@@ -1,0 +1,32 @@
+{
+    "name": "Matic Token",
+    "symbol": "MATIC",
+    "type": "CRC20",
+    "decimals": 18,
+    "description": "Matic Network is a Layer-2 scaling solution that uses sidechains for off-chain computation while ensuring asset security using the Plasma framework and a decentralized network of Proof-of-Stake (PoS) validators.",
+    "website": "https://matic.network",
+    "explorer": "https://cronos.org/explorer/address/0xf78a326ACd53651F8dF5D8b137295e434B7c8ba5/token-transfers",
+    "status": "active",
+    "id": "0xf78a326ACd53651F8dF5D8b137295e434B7c8ba5",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/0xPolygon"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/polygonofficial"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/maticnetwork/"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/polygon/"
+        }
+    ],
+    "tags": [
+        "defi"
+    ]
+}

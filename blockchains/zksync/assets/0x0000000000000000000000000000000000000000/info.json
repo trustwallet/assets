@@ -1,0 +1,32 @@
+{
+    "name": "Wrapped Ether",
+    "type": "ZKSYNC",
+    "symbol": "WETH",
+    "decimals": 18,
+    "website": "https://ethereum.org/en/",
+    "description": "wETH is 'wrapped ETH'",
+    "explorer": "https://explorer.zksync.io/address/0x0000000000000000000000000000000000000000",
+    "status": "active",
+    "id": "0x0000000000000000000000000000000000000000",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/ethdotorg"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/ethereum/ethereum-org-website"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/CetY6Y4"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/weth/"
+        }
+    ],
+    "tags": [
+        "wrapped"
+    ]
+}
