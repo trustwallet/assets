@@ -1,11 +1,24 @@
 {
-    "name": "WETH",
-    "symbol": "WETH",
+    "name": "WETH (WETH)",
     "type": "ERC20",
+    "symbol": "WETH",
     "decimals": 18,
-    "description": "-",
     "website": "https://weth.io/",
+    "description": "Wrapped Eth Contract sending to my wallet address 0x57D17Ebc82AB2A052a4f434b0AaA28d885354240",
     "explorer": "https://etherscan.io/token/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
     "status": "active",
-    "id": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+    "id": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/thawood37"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/Woodpile37"
+        }
+    ],
+    "tags": [
+        "wrapped"
+    ]
 }
