@@ -1,23 +1,11 @@
 {
     "name": "CryptHub",
+    "type": "BEP20",
+    "symbol": "CRHT",
+    "decimals": 9,
     "website": "https://crypthub.io",
     "description": "CryptHub is the first social-marketing platform based on AI (artificial intelligence), created for blockchain and web 3.0 project owners, as well as potential investors. The platform's goal is to simplify the interaction between projects and investors by providing quality project analysis and helping to attract investments.",
-    "explorer": "https://bscscan.com/",
-    "symbol": "CRHT",
-    "type": "token",
-    "decimals": 9,
+    "explorer": "https://bscscan.com/token/0x98d4c60dEEa495c94D50D162d331278658A6B681",
     "status": "active",
-    "tags": [
-        "staking-native"
-    ],
-    "links": [
-        {
-            "name": "twitter",
-            "url": "https://twitter.com/Crypthub_io"
-        },
-	{
-            "name": "whitepaper",
-            "url": "https://crypthub.io/roadmap"
-        }
-    ]
+    "id": "0x98d4c60dEEa495c94D50D162d331278658A6B681"
 }
