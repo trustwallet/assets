@@ -1,11 +1,24 @@
 {
-    "name": "Civic",
-    "website": "https://civic.com",
-    "description": "Civic is an identity management service that allows one to protect and authorize the use of their identity in real-time.",
-    "explorer": "https://etherscan.io/token/0x41e5560054824eA6B0732E656E3Ad64E20e94E45",
+    "name": "Civic (CVC)",
     "type": "ERC20",
     "symbol": "CVC",
     "decimals": 8,
+    "website": "https://www.civic.com/",
+    "description": "Civic Pass Platform is a multi-chain, wallet-agnostic identity and access management solution (IAM) for smart contracts, dApps, and Web2 companies entering blockchain.",
+    "explorer": "https://etherscan.io/token/0x41e5560054824eA6B0732E656E3Ad64E20e94E45",
     "status": "active",
-    "id": "0x41e5560054824eA6B0732E656E3Ad64E20e94E45"
+    "id": "0x41e5560054824eA6B0732E656E3Ad64E20e94E45",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/civickey?t=nmHBkvDqDOvojdsl1PNvJw&s=09"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/MWmhXauJw8"
+        }
+    ],
+    "tags": [
+        "governance"
+    ]
 }
