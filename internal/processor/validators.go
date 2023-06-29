@@ -2,7 +2,6 @@ package processor
 
 import (
 	"bytes"
-	"encoding/json"
 	"fmt"
 	"os"
 
@@ -346,29 +345,6 @@ func (s *Service) ValidateValidatorsAssetFolder(f *file.AssetFile) error {
 	}
 
 	return nil
-}
-
-func applyRename(asset info.AssetModel) (info.AssetModel, error) {
-	var z info.AssetModel
-
-	data, err := json.Marshal(asset)
-	if err != nil {
-		return z, fmt.Errorf("json.Marshal: %w", err)
-	}
-
-	var res info.AssetModel
-	err = json.Unmarshal(data, &res)
-	if err != nil {
-		return z, fmt.Errorf("json.Unmarshal: %w", err)
-	}
-
-	// to handle cronos -> cryptoorg rename
-	if asset.Symbol != nil && *asset.Symbol == "CRO" {
-		asset.Name = strPtr("Crypto.org")
-		asset.Explorer = strPtr("https://crypto.org/explorer")
-	}
-
-	return res, nil
 }
 
 func strPtr(in string) *string {
