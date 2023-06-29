@@ -5,9 +5,9 @@ go 1.18
 require (
 	github.com/sirupsen/logrus v1.9.0
 	github.com/spf13/cobra v1.7.0
-	github.com/trustwallet/assets-go-libs v0.3.5
+	github.com/trustwallet/assets-go-libs v0.3.6-0.20230629071828-ea4bb0afbcd1
 	github.com/trustwallet/go-libs v0.7.3
-	github.com/trustwallet/go-primitives v0.0.77
+	github.com/trustwallet/go-primitives v0.0.80-0.20230629073213-0303c2292173
 )
 
 require (
