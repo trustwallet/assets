@@ -346,7 +346,3 @@ func (s *Service) ValidateValidatorsAssetFolder(f *file.AssetFile) error {
 
 	return nil
 }
-
-func strPtr(in string) *string {
-	return &in
-}
