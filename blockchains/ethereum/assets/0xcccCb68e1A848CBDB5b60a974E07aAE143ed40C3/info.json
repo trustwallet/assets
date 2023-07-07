@@ -1,9 +1,9 @@
 {
-    "name": "TOPIA Token",
+    "name": "TOPIA (TOPIA)",
     "type": "ERC20",
     "symbol": "TOPIA",
     "decimals": 18,
-    "website": "https://topia.gg/",
+    "website": "https://topia.gg",
     "description": "The official in-game currency and governance token of TOPIA.",
     "explorer": "https://etherscan.io/token/0xcccCb68e1A848CBDB5b60a974E07aAE143ed40C3",
     "status": "active",
@@ -14,20 +14,16 @@
             "url": "https://twitter.com/topiagg"
         },
         {
-            "name": "github",
-            "url": "https://github.com/Topia-Game"
+            "name": "docs",
+            "url": "https://docs.topia.gg"
         },
         {
             "name": "discord",
             "url": "https://discord.com/invite/topiagg"
-        },
-        {
-            "name": "docs",
-            "url": "https://docs.topia.gg"
         }
     ],
     "tags": [
-        "gamefi",
-        "governance"
+        "governance",
+        "gamefi"
     ]
 }
