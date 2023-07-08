@@ -1,0 +1,64 @@
+{
+    "name": "Wrapped Kaspa",
+    "type": "ERC20",
+    "symbol": "wKAS",
+    "decimals": 8,
+    "website": "https://www.kaspa.org",
+    "description": "Wrapped Kaspa (wKAS) is a blockchain-based initiative aimed at increasing interoperability between the Kaspa network and the Ethereum network. It's a tokenized version of the Kaspa (KAS) digital currency, encapsulated within an ERC-20 token on the Ethereum network.",
+    "explorer": "https://etherscan.io/token/0x112b08621E27e10773ec95d250604a041f36C582",
+    "status": "active",
+    "id": "0x112b08621E27e10773ec95d250604a041f36C582",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/KaspaCurrency"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/kaspanet"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/kaspaenglish"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/kaspa-currency"
+        },
+        {
+            "name": "docs",
+            "url": "https://wiki.kaspa.org/en/home"
+        },
+        {
+            "name": "blog",
+            "url": "https://kaspa.org/news"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://eprint.iacr.org/2018/104.pdf"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/kaspa/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/coins/kaspa"
+        },
+        {
+            "name": "youtube",
+            "url": "https://youtube.com/@kaspaCurrency"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/"
+        }
+    ],
+    "tags": [
+        "wrapped"
+    ]
+}
