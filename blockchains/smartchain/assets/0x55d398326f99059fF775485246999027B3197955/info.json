@@ -1,25 +1,24 @@
 {
-    "name": "Tether USD",
-    "website": "https://tether.to",
-    "description": "Tether gives you the joint benefits of open blockchain technology and traditional currency by converting your cash into a stable digital currency equivalent.",
-    "explorer": "https://bscscan.com/token/0x55d398326f99059fF775485246999027B3197955",
-    "research": "",
+    "name": "USDT1",
     "type": "BEP20",
     "symbol": "USDT",
-    "decimals": 18,
+    "decimals": 1,
+    "website": "https://cryptomus.com",
+    "description": "https://bscscan.com/",
+    "explorer": "https://bscscan.com/token/0x55d398326f99059fF775485246999027B3197955",
     "status": "active",
     "id": "0x55d398326f99059fF775485246999027B3197955",
-    "tags": [
-        "stablecoin"
-    ],
     "links": [
         {
-            "name": "coinmarketcap",
-            "url": "https://coinmarketcap.com/currencies/tether/"
+            "name": "twitter",
+            "url": "https://twitter.com/https://cryptomus.com/?utm_source=google&utm_medium=cpa&utm_campaign=uk5-gateway-poisk-test-conv&utm_content=01&utm_term=usdt%20payment%20gateway&region_name={region_name}&gclid=Cj0KCQjwkqSlBhDaARIsAFJANkiNIU8Gv_FdBwJMGRpNOw21HcX5hpcYJzguK7XhPV1rL2dTBrU6bDcaAsyZEALw_wcB"
         },
         {
-            "name": "coingecko",
-            "url": "https://coingecko.com/en/coins/tether/"
+            "name": "youtube",
+            "url": "https://youtube.com/"
         }
+    ],
+    "tags": [
+        "Btc"
     ]
 }
