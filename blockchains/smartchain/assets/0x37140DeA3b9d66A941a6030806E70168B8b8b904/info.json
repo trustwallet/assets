@@ -1,32 +1,40 @@
 {
     "name": "BPAY",
-    "website": "https://www.beexchange.io",
-    "description": "BPAY are excited to announce the launch of our new payment platform, BeePay, and we can't wait for you to experience the benefits it offers.",
-    "explorer": "https://bscscan.com/token/0x37140dea3b9d66a941a6030806e70168b8b8b904",
-    "symbol": "BPAY",
     "type": "BEP20",
+    "symbol": "BPAY",
     "decimals": 18,
+    "website": "https://beexchange.io/",
+    "description": "bPay is a proprietary token developed by BeExchanges, a cutting-edge blockchain platform. Designed with convenience and efficiency in mind, bPay serves as a digital currency for seamless transactions within the BeExchanges ecosystem. ",
+    "explorer": "https://bscscan.com/token/0x37140DeA3b9d66A941a6030806E70168B8b8b904",
     "status": "active",
     "id": "0x37140DeA3b9d66A941a6030806E70168B8b8b904",
-    "tags": [
-        "Payments-token"
-    ],
     "links": [
-        {
-            "name": "github",
-            "url": "https://github.com/Beexchangeio"
-        },
         {
             "name": "twitter",
             "url": "https://twitter.com/BeexchangeI"
         },
         {
-            "name": "reddit",
-            "url": "https://www.reddit.com/user/Beexchange_io/comments/135mgmn/beexchange/"
+            "name": "github",
+            "url": "https://github.com/Beexchangeio/"
         },
         {
-            "name": "whitepaper",
-            "url": "https://whitepaper.beexchange.io"
+            "name": "telegram",
+            "url": "https://t.me/+qXt8p6qkOKs1NGJk"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/beexchange/"
+        },
+        {
+            "name": "facebook",
+            "url": "https://facebook.com/BEEXCHANGEE"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/user/Beexchange_io/"
         }
+    ],
+    "tags": [
+        "defi"
     ]
 }
