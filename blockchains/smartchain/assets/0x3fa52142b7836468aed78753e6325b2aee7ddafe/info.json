@@ -1,36 +1,24 @@
 {
     "name": "ShieldTokenCoin",
+    "type": "BEP20",
+    "symbol": "0STC",
+    "decimals": 18,
     "website": "https://shieldtokencoin.org/",
     "description": "Our groundbreaking project aims to create a decentralized blockchain with high performance and low cost. Through innovative technologies, we are developing a solution that enables fast and efficient transactions while ensuring the security and reliability of data. By eliminating intermediaries and reducing transaction costs, our blockchain has the potential to transform entire sectors of the economy, providing a transparent and trustworthy environment for businesses and users.",
     "explorer": "https://bscscan.com/token/0x3fa52142b7836468aed78753e6325b2aee7ddafe",
-    "symbol": "0STC",
-    "type": "BEP20",
-    "decimals": 18,
     "status": "active",
-	"id":"0x3fa52142b7836468aed78753e6325b2aee7ddafe",
+    "id": "0x3fa52142b7836468aed78753e6325b2aee7ddafe",
     "tags": [
-        "staking-native"
+        "technology","deflationary"
     ],
     "links": [
-        {
-            "name": "github",
-            "url": "https://github.com/RoneyVM/ShieldTokenCoin"
-        },
         {
             "name": "twitter",
             "url": "https://twitter.com/ShieldTokenCoin"
         },
         {
-            "name": "linkedin",
-            "url": "https://www.linkedin.com/in/roneyvelosomoreira/"
-        },
-        {
             "name": "telegram",
             "url": "https://t.me/ShieldTokenCoin"
-        },		
-        {
-            "name": "reddit",
-            "url": "https://reddit.com/r/BinanceExchange"
         },
         {
             "name": "whitepaper",
