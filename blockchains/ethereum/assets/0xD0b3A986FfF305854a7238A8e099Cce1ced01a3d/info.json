@@ -5,12 +5,9 @@
     "explorer": "https://etherscan.io/address/0xD0b3A986FfF305854a7238A8e099Cce1ced01a3d",
     "research": "https://etherscan.io/address/0xD0b3A986FfF305854a7238A8e099Cce1ced01a3d",
     "symbol": "NOVA",
-    "type": "coin",
+    "type": "ERC20",
     "decimals": 18,
     "status": "active",
-    "tags": [
-        "meme", "UBI"
-    ],
     "links": [
         {
             "name": "github",
@@ -24,5 +21,6 @@
             "name": "telegram",
             "url": "https://t.me/NovaUBI"
         }
-    ]
+    ],
+    "id": "0xD0b3A986FfF305854a7238A8e099Cce1ced01a3d"
 }
