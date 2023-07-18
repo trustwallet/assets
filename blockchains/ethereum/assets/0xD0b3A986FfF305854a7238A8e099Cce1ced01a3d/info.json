@@ -2,12 +2,14 @@
     "name": "Nova UBI",
     "website": "https://www.nova.win",
     "description": "Nova is more than just a meme on the Ethereum blockchain; it represents an innovative social experiment embodying the essence of Universal Basic Income (UBI) within a crypto-utopia. Nova aims to create a digital civilization shaped by collective agreement, where the value of NOVA is determined solely by community consensus, free from external influences",
-    "explorer": "https://etherscan.io/address/0xD0b3A986FfF305854a7238A8e099Cce1ced01a3d",
-    "research": "https://etherscan.io/address/0xD0b3A986FfF305854a7238A8e099Cce1ced01a3d",
+    "explorer": "https://etherscan.io/token/0xD0b3A986FfF305854a7238A8e099Cce1ced01a3d",
     "symbol": "NOVA",
     "type": "ERC20",
     "decimals": 18,
     "status": "active",
+    "tags": [
+        "erc20"
+    ],
     "links": [
         {
             "name": "github",
