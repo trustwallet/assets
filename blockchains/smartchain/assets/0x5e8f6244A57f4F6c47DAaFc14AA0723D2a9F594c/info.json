@@ -2,10 +2,20 @@
     "name": "Pay It Now",
     "website": "https://payitnow.io/",
     "description": "Making Digital Payments Simple & Secure.",
-    "explorer": "https://pinscan.io/",
+    "explorer": "https://bscscan.com/token/0x5e8f6244A57f4F6c47DAaFc14AA0723D2a9F594c",
     "type": "BEP20",
     "symbol": "PIN",
     "decimals": 9,
     "status": "active",
-    "id": "0x5e8f6244A57f4F6c47DAaFc14AA0723D2a9F594c"
+    "id": "0x5e8f6244A57f4F6c47DAaFc14AA0723D2a9F594c",
+    "links": [
+        {
+            "name": "telegram",
+            "url": "https://t.me/PayItNow_PIN"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://payitnow.io/whitepaper"
+        }
+    ]
 }
