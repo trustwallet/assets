@@ -1,0 +1,28 @@
+{
+    "name": "Wrapped Pulse from PulseChain (WPLS)",
+    "website": "https://pulsechain.com/",
+    "description": "WPLS is the wrapped version of PLS. PLS is the native token of the PulseChain Network (PRC20). PulseChain is a hard fork of the Ethereum blockchain. PLS can be used to activate validators, pay for transactions, and bridge to other chains.",
+    "explorer": "https://etherscan.io/token/0xA882606494D86804B5514E07e6Bd2D6a6eE6d68A",
+    "symbol": "WPLS",
+    "type": "ERC20",
+    "decimals": 18,
+    "status": "active",
+    "id": "0xA882606494D86804B5514E07e6Bd2D6a6eE6d68A",
+    "tags": [
+        "wrapped defi"
+    ],
+    "links": [
+         {
+            "name": "twitter",
+            "url": "https://twitter.com/PulsechainCom"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/PulseChainCom"
+        },
+        {
+            "name": "source_code",
+            "url": "https://gitlab.com/pulsechaincom"
+        }
+    ]
+}
