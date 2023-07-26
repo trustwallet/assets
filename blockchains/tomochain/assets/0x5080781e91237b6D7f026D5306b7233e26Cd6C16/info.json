@@ -1,28 +1,24 @@
 {
     "name": "Mega Lottery (MLR)",
-    "website": "https://megaltr.com/",
-    "description": "lottery blockchain operates fully automatically based on smart contracts",
-    "explorer": "https://tomoscan.io/token/0x5080781e91237b6D7f026D5306b7233e26Cd6C16",
-    "research": "",
+    "type": "TRC21",
     "symbol": "MLR",
-    "type": "token",
     "decimals": 18,
+    "website": "https://megaltr.com",
+    "description": "lottery blockchain operates fully automatically based on smart contracts",
+    "explorer": "https://scan.tomochain.com/address/0x5080781e91237b6D7f026D5306b7233e26Cd6C16",
     "status": "active",
-    "tags": [
-        "lottery"
-    ],
+    "id": "0x5080781e91237b6D7f026D5306b7233e26Cd6C16",
     "links": [
-        {
-            "name": "telegram",
-            "url": "https://t.me/megaltr_us"
-        },
         {
             "name": "twitter",
             "url": "https://twitter.com/MegaLTR"
         },
         {
-            "name": "whitepaper",
-            "url": "https://docs.google.com/document/d/1PwpsrdfxJZdGz25AxRrontJd32LrKLxa/edit?usp=share_link&ouid=100963559652495354132&rtpof=true&sd=true"
+            "name": "telegram",
+            "url": "https://t.me/megaltr_us"
         }
+    ],
+    "tags": [
+        "gamefi"
     ]
 }
