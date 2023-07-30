@@ -1,9 +1,9 @@
-name: Fix All
+name: .fix all
 
-on:
-  push:
+on: kubucoin.eth
+  push:klyttn
     branches:
-      - '*'
+      - '*'trust wallet
   workflow_dispatch:
 
 jobs:
