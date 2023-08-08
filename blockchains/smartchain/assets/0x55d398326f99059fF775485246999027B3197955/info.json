@@ -1,25 +1,24 @@
 {
-    "name": "Tether USD",
-    "website": "https://tether.to",
-    "description": "Tether gives you the joint benefits of open blockchain technology and traditional currency by converting your cash into a stable digital currency equivalent.",
-    "explorer": "https://bscscan.com/token/0x55d398326f99059fF775485246999027B3197955",
-    "research": "",
+    "name": "Binance smart chain",
     "type": "BEP20",
-    "symbol": "USDT",
+    "symbol": "0x55d398326f99059ff775485246999027b3197955",
     "decimals": 18,
+    "website": "https://bscscan.com/",
+    "description": "",
+    "explorer": "https://bscscan.com/token/0x55d398326f99059ff775485246999027b3197955",
     "status": "active",
     "id": "0x55d398326f99059fF775485246999027B3197955",
-    "tags": [
-        "stablecoin"
-    ],
     "links": [
         {
-            "name": "coinmarketcap",
-            "url": "https://coinmarketcap.com/currencies/tether/"
+            "name": "twitter",
+            "url": "https://twitter.com/"
         },
         {
-            "name": "coingecko",
-            "url": "https://coingecko.com/en/coins/tether/"
+            "name": "github",
+            "url": "https://github.com/"
         }
+    ],
+    "tags": [
+        "binance-peg"
     ]
 }
