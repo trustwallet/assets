@@ -1,21 +1,37 @@
 {
-    "name": "ADA Shiba Inu",
-    "website": "https://ashib.io/",
-    "description": "ADA Shiba Inu is the 2.0 version of Shiba Inu built on Cardano",
+    "name": "USD Coin",
+    "website": "https://www.centre.io",
+    "description": "USDC provides a fully collateralized US dollar stablecoin, and is based on the open source asset-backed stablecoin framework developed by Centre.",
     "explorer": "https://cexplorer.io/asset/asset1fc7e54kds62yggplh0vs65vcgrmn5n577per23",
+    "research": "https://research.binance.com/en/projects/usd-coin",
     "type": "CARDANO",
-    "symbol": "ASHIB",
+    "symbol": "USDC",
     "decimals": 6,
     "status": "active",
     "id": "asset1fc7e54kds62yggplh0vs65vcgrmn5n577per23",
+    "tags": [
+        "stablecoin"
+    ],
     "links": [
         {
-            "name": "coinmarketcap",
-            "url": "https://coinmarketcap.com/currencies/snek/"
+            "name": "github",
+            "url": "https://github.com/centrehq"
         },
         {
-            "name": "twitter",
-            "url": "https://twitter.com/snekcoinada"
+            "name": "whitepaper",
+            "url": "https://centre.io/pdfs/centre-whitepaper.pdf"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/usd-coin/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/usd-coin/"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/centre-blog"
         }
     ]
 }
