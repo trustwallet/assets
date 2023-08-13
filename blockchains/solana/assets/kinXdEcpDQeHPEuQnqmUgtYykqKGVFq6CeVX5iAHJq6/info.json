@@ -1,11 +1,33 @@
 {
     "name": "Kin",
-    "website": "https://kin.org/",
-    "description": "Kin is money for the digital world. It is used to generate value through a shared, decentralized cryptocurrency in a digital ecosystem of apps and their users.",
-    "explorer": "https://explorer.solana.com/address/kinXdEcpDQeHPEuQnqmUgtYykqKGVFq6CeVX5iAHJq6",
-    "type": "SPL",
     "symbol": "KIN",
+    "type": "SPL",
     "decimals": 5,
+    "description": "Kin gives everyone skin in the game – making it easy for apps and brands to reward users and create exciting experiences with cryptocurrency.",
+    "website": "https://www.kin.org/",
+    "explorer": "https://solscan.io/token/kinXdEcpDQeHPEuQnqmUgtYykqKGVFq6CeVX5iAHJq6",
     "status": "active",
-    "id": "kinXdEcpDQeHPEuQnqmUgtYykqKGVFq6CeVX5iAHJq6"
+    "id": "kinXdEcpDQeHPEuQnqmUgtYykqKGVFq6CeVX5iAHJq6",
+    "links": [
+        {
+            "name": "blog",
+            "url": "https://kin.org/news"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/kin_ecosystem"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/kin"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://kin.org/whitepaper"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/kin"
+        }
+    ]
 }
