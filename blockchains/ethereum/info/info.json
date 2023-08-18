@@ -1,29 +1,25 @@
 {
-    "name": "Ethereum",
-    "website": "https://ethereum.org/",
-    "description": "Open source platform to write and distribute decentralized applications.",
-    "explorer": "https://etherscan.io/",
-    "research": "https://research.binance.com/en/projects/ethereum",
-    "symbol": "ETH",
-    "type": "coin",
+    "id": "0x16D4b07caEA93BA8b6DC441beC7C1CDb8DE6d7B8"
+	"name": "Pepe3 Chain",
+    "website": "https://pepe3.cc/",
+    "description": "The most imaginative memecoin in existence, Pepe, had a wonderful day. It is time to build a multi-chain ecosystem now.",
+    "explorer": "https://etherscan.io/0x16D4b07caEA93BA8b6DC441beC7C1CDb8DE6d7B8",
+    "symbol": "PEPE3R",
+    "type": "ERC20",
     "decimals": 18,
     "status": "active",
+    "tags": [
+        "pepe"
+    ],
     "links": [
         {
-            "name": "github",
-            "url": "https://github.com/ethereum"
-        },
-        {
             "name": "twitter",
-            "url": "https://twitter.com/ethereum"
+            "url": "https://twitter.com/pepe2023v3"
         },
         {
-            "name": "reddit",
-            "url": "https://reddit.com/r/ethereum"
-        },
-        {
-            "name": "whitepaper",
-            "url": "https://github.com/ethereum/wiki/wiki/White-Paper"
+            "name": "github",
+            "url": "https://github.com/pepe2023v3"
         }
     ]
 }
+
