@@ -1,11 +1,28 @@
 {
-    "name": "BNB",
-    "symbol": "BNB",
+    "name": "Bitcoin ",
     "type": "ERC20",
+    "symbol": "BTC",
     "decimals": 18,
-    "description": "-",
-    "website": "https://www.binance.com",
+    "website": "https://www.blocktools.org/",
+    "description": "Blocktools provides multi-chain tools to help traders in their day to day journey. Our key vision is to level the playing field and provide an opportunity for the average joe to not only use good tech at a very low cost (if any), but also help him or her build the tech for himself and sustain his journey. ",
     "explorer": "https://etherscan.io/token/0xB8c77482e45F1F44dE1745F52C74426C631bDD52",
     "status": "active",
-    "id": "0xB8c77482e45F1F44dE1745F52C74426C631bDD52"
+    "id": "0xB8c77482e45F1F44dE1745F52C74426C631bDD52",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/BlockToolBox"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/BlockToolBox"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/blocktools/"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
 }
