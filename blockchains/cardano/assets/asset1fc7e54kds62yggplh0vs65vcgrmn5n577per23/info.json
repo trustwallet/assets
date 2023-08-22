@@ -1,14 +1,17 @@
 {
-    "name": "USD Base Coin",
-    "symbol": "USDC",
-    "type": "BASE",
-    "decimals": 6,
-    "description": "USDC is a fully collateralized US dollar stablecoin, an Ethereum powered coin and is the brainchild of CENTRE, an open source project bootstrapped by contributions from Circle and Coinbase.",
+    "name": "USD Coin",
     "website": "https://www.centre.io",
-    "explorer": "https://basescan.org/token/0xd9aaec86b65d86f6a7b5b1b0c42ffa531710b6ca",
+    "description": "USDC provides a fully collateralized US dollar stablecoin, and is based on the open source asset-backed stablecoin framework developed by Centre.",
+    "explorer": "https://cexplorer.io/asset/asset1fc7e54kds62yggplh0vs65vcgrmn5n577per23",
     "research": "https://research.binance.com/en/projects/usd-coin",
+    "type": "CARDANO",
+    "symbol": "USDC",
+    "decimals": 6,
     "status": "active",
-    "id": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+    "id": "asset1fc7e54kds62yggplh0vs65vcgrmn5n577per23",
+    "tags": [
+        "stablecoin"
+    ],
     "links": [
         {
             "name": "github",
@@ -30,8 +33,5 @@
             "name": "medium",
             "url": "https://medium.com/centre-blog"
         }
-    ],
-    "tags": [
-        "stablecoin"
     ]
 }
