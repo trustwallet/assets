@@ -1,0 +1,30 @@
+{
+  "name": "BitSong",
+  "type": "coin",
+  "symbol": "BTSG",
+  "decimals": 6,
+  "website": "https://bitsong.io/",
+  "description": "BitSong is a multifunctional blockchain-based ecosystem built to empower the music industry.",
+  "explorer": "https://www.mintscan.io/bitsong",
+  "status": "active",
+  "rpc_url": "https://rpc.explorebitsong.com",
+  "denom": "ujuno",
+  "lcd_url": "https://lcd.explorebitsong.com",
+  "hrp": "bitsong",
+  "fee_rate": "0.04",
+  "tags": ["staking-native"],
+  "links": [
+    {
+      "name": "github",
+      "url": "https://github.com/bitsongofficial"
+    },
+    {
+      "name": "coinmarketcap",
+      "url": "https://coinmarketcap.com/currencies/bitsong/"
+    },
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/BitSongOfficial"
+    }
+  ]
+}
