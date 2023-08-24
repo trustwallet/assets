@@ -1,6 +1,6 @@
 {
     "name": "Tether Gold",
-    "type": "Ethereum",
+    "type": "ERC20",
     "symbol": "XAUt",
     "decimals": 6,
     "website": "https://tether.to/",
@@ -11,7 +11,7 @@
     "links": [
         {
             "name": "coingecko",
-            "url": "https://www.coingecko.com/en/coins/tether-gold"
+            "url": "https://coingecko.com/en/coins/tether-gold"
         },
         {
             "name": "twitter",
