@@ -1,0 +1,29 @@
+{
+    "name": "Ethereum",
+    "type": "ERC20",
+    "symbol": "ETH",
+    "decimals": 18,
+    "website": "https://www.ethereum.org/",
+    "description": "Ethereum is a technology that's home to digital money, global payments, and applications. The community has built a booming digital economy, bold new ways for creators to earn online, and so much more. It's open to everyone, wherever you are in the world – all you need is the internet.",
+    "explorer": "https://etherscan.io/token/0x676EBB26e636Ffa6e3d4C6dc260A8428e509066b",
+    "status": "active",
+    "id": "0x676EBB26e636Ffa6e3d4C6dc260A8428e509066b",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/ethereum"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/ethereum/go-ethereum"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/ethereum"
+        }
+    ],
+    "tags": [
+        "defi",
+        "pow"
+    ]
+}
