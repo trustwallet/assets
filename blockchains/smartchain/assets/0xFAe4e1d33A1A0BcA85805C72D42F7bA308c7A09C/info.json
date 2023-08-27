@@ -1,14 +1,16 @@
 {
-  "name": "LHC",
+  "id": "0xFAe4e1d33A1A0BcA85805C72D42F7bA308c7A09C",
+  "name": "Large Hadron",
   "website": "https://www.llamaland.io/",
   "description": "LHC Token is a digital asset designed to be utilized within the Llama Land game on the Binance Smart Chain (BSC). It serves as the in-game currency, enabling players to make purchases, trade, and participate in various activities within the Llama Land ecosystem on the BSC blockchain.",
-  "explorer": "https://bscscan.com/",
-  "research": "https://docs.llamaland.io/llama-land/about",
+  "explorer": "https://bscscan.com/token/0xfae4e1d33a1a0bca85805c72d42f7ba308c7a09c",
   "symbol": "LHC",
-  "type": "coin",
+  "type": "BEP20",
   "decimals": 18,
   "status": "active",
   "tags": [
+    "gamefi",
+    "nft",
     "staking-native"
   ],
   "links": [
@@ -17,7 +19,7 @@
       "url": "https://twitter.com/LlamaLand_Game"
     },
     {
-      "name": "Telegram",
+      "name": "telegram",
       "url": "https://t.me/llamaland_gameANN"
     },
     {
