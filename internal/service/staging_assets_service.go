@@ -43,6 +43,7 @@ func NewStagingAssetsService(fs *file.Service, rs *report.Service, paths []strin
 			coin.OPTIMISM:   true,
 			coin.ARBITRUM:   true,
 			coin.SMARTCHAIN: true,
+			coin.BASE:       true,
 		},
 	}
 }
@@ -139,13 +140,15 @@ func (s *StagingAssetsService) handleError(err error, info *file.AssetFile, valN
 	errors := UnwrapComposite(err)
 
 	for _, err := range errors {
-		log.WithFields(log.Fields{
-			"type":       info.Type(),
-			"chain":      info.Chain().Handle,
-			"asset":      info.Asset(),
-			"path":       info.Path(),
-			"validation": valName,
-		}).Error(err)
+		log.WithFields(
+			log.Fields{
+				"type":       info.Type(),
+				"chain":      info.Chain().Handle,
+				"asset":      info.Asset(),
+				"path":       info.Path(),
+				"validation": valName,
+			},
+		).Error(err)
 
 		s.reportService.IncErrors()
 	}
