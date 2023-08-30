@@ -1,81 +1,13 @@
-# Trust Wallet Assets Info
+# RSS Builder by B!Soft MarkBook RSS Feed
 
-![Check](https://github.com/trustwallet/assets/workflows/Check/badge.svg)
-
-## Overview
-
-Trust Wallet token repository is a comprehensive, up-to-date collection of information about several thousands (!) of crypto tokens.
-
-[Trust Wallet](https://trustwallet.com) uses token logos from this source, alongside a number of other projects.
-
-The repository contains token info from several blockchains, info on dApps, staking validators, etc.
-For every token a logo and optional additional information is available (such data is not available on-chain).
-
-Such a large collection can be maintained only through a community effort, so _feel free to add your token_.
-
-<center><img src='https://trustwallet.com/assets/images/media/assets/horizontal_blue.png' height="200"></center>
-
-## How to add token
-
-Please note that __brand new tokens are not accepted__,
-the projects have to be sound, with information available, and __non-minimal circulation__
-(for limit details see <https://developer.trustwallet.com/listing-new-assets/requirements>).
-
-### Assets App
-
-The [Assets web app](https://assets.trustwallet.com) can be used for most new token additions (Github account is needed).
-
-### Quick starter
-
-Details of the repository structure and contribution guidelines are listed on the
-[Developers site](https://developer.trustwallet.com/listing-new-assets/new-asset).
-Here is a quick starter summary for the most common use case.
-
-
-## Documentation
-
-For details, see the [Developers site](https://developer.trustwallet.com):
-
-- [Contribution guidelines](https://developer.trustwallet.com/listing-new-assets/repository_details)
-
-- [FAQ](https://developer.trustwallet.com/listing-new-assets/faq)
-
-## Scripts
-
-There are several scripts available for maintainers:
-
-- `make check` -- Execute validation checks; also used in continuous integration.
-- `make fix` -- Perform automatic fixes where possible
-- `make update-auto` -- Run automatic updates from external sources, executed regularly (GitHub action)
-- `make add-token asset_id=c60_t0x4Fabb145d64652a948d72533023f6E7A623C7C53` -- Create `info.json` file as asset template.
-- `make add-tokenlist asset_id=c60_t0x4Fabb145d64652a948d72533023f6E7A623C7C53` -- Adds a token to tokenlist.json.
-- `make add-tokenlist-extended asset_id=c60_t0x4Fabb145d64652a948d72533023f6E7A623C7C53` -- Adds a token to tokenlist-extended.json.
-
-## On Checks
-
-This repo contains a set of scripts for verification of all the information. Implemented as Golang scripts, available through `make check`, and executed in CI build; checks the whole repo.
-There are similar check logic implemented:
-
-- in assets-management app; for checking changed token files in PRs, or when creating a PR.  Checks diffs, can be run from browser environment.
-- in merge-fee-bot, which runs as a GitHub app shows result in PR comment. Executes in a non-browser environment.
-
-## Trading pair maintenance
-
-Info on supported trading pairs are stored in `tokenlist.json` files.
-Trading pairs can be updated --
-from Uniswap/Ethereum and PancakeSwap/Smartchain -- using update script (and checking in changes).
-Minimal limit values for trading pair inclusion are set in the [config file](https://github.com/trustwallet/assets/blob/master/.github/assets.config.yaml).
-There are also options for force-include and force-exclude in the config.
-
-## Disclaimer
-
-Trust Wallet team allows anyone to submit new assets to this repository. However, this does not mean that we are in direct partnership with all of the projects.
-
-Trust Wallet team will reject projects that are deemed as scam or fraudulent after careful review.
-Trust Wallet team reserves the right to change the terms of asset submissions at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.
-
-Additionally, spam-like behavior, including but not limited to mass distribution of tokens to random addresses will result in the asset being flagged as spam and possible removal from the repository.
-
-## License
-
-The scripts and documentation in this project are released under the [MIT License](LICENSE)
+https://www.markbook.com MarkBook RSS Feed. Keep up to date on the latest news. en-us mrichardson@acadiemgroup.com The Acadiem Group 2020 NEW MarkBook HTML5 is Here! 10 Oct 2020 10:00:00 -0400 
+https://www.markbook.com mrichardson@acadiemgroup.com News Our ALL NEW MarkBook HTML5 Web Application is Here! Flash or Flex is no longer required. Many added features in a clean new look. Now you can use MarkBook on your Chromebook, Android or iPadOS tablet as well as Windows, macOS or Linux devices. (Select tablets only) A new version of the app, 1.1.0 22 Dec 2020 16:30:00 -0400 
+https://www.markbook.com mrichardson@acadiemgroup.com News A new version of the app, 1.1.0, has been launched. It contains a major security update. Please see the Release Notes for the details. A new version of the app, 1.2.0 26 Jan 2021 17:30:00 -0400 
+https://www.markbook.com mrichardson@acadiemgroup.com News A new version of the app, 1.2.0, has been launched. You can now Copy Comments to many students at once and easily input entries on tablets using Numeric Keypad. Please see the Release Notes for the details. A new version of the app, 1.3.0 25 Mar 2021 17:30:00 -0400 
+https://www.markbook.com mrichardson@acadiemgroup.com News A new version of the app, 1.3.0, has been launched. Please see the Release Notes for the details. A new version of the app, 1.4.0 30 Apr 2021 08:00:00 -0400 
+https://www.markbook.com mrichardson@acadiemgroup.com News A new version of the app, 1.4.0, has been launched. Please see the Release Notes for the details. For TDSB users 6 Aug 2021 08:00:00 -0400 http://tdsb.on.ca/ mrichardson@acadiemgroup.com News TDSB users: In preparation for Single Sign On service in September, all usernames now use your Toronto District School Board email address. TDSB-logo.png Attention TDSB Users 18 Sep 2021 01:00:00 -0400 
+https://www.markbook.com mrichardson@acadiemgroup.com News On Saturday September 18th, Single Sign On (SSO) will be implemented for TDSB MarkBook (Cloud) users. After the implementation is completed, teachers will be required to sign onto MarkBook using their TDSB e- mail address and password. Teachers that are already signing onto MarkBook with their TDSB email address will have their existing class data maintained. Teachers that are currently using personal email accounts will need to contact 
+support@markbookapp.com to request existing class data transfers, if required. TDSB-logo.png For TVDSB Users 09 Sep 2022 01:00:00 -0400 
+https://www.markbook.com News On Tuesday, September 6th, Single Sign On (SSO) was implemented for TVDSB MarkBook (Cloud) users. Teachers are now required to sign onto MarkBook using their TVDSB e-mail address and password in the Microsoft 365 Apps environment. Please follow the Information Guidesheet for "Transfer from Individual to Corporate Domain using SSO in MarkBook®”. Teachers that are already signing onto MarkBook with their TVDSB email address will have their existing class data maintained. Teachers that are currently using personal email accounts will need to contact 
+support@markbookapp.com to request existing class data transfers, if required. TVDSB-logo.webp WECDSB 31 Oct 2022 01:00:00 -0400 
+https://www.markbook.com News WECDSB users, please ensure that you have updated ALL of your courses with the most recent Aspen extract that has your first initial and last name in the file name (i.e. see below). Furthermore, please ensure you have submitted a copy (screenshots) of your updated courses to your school-issued Google form. WECDSB-logo.png
