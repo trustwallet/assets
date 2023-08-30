@@ -2,17 +2,22 @@
     "name": "Treat",
     "website": "https://www.treattoken.org",
     "description": "The final step to full decentralization. Fullfilling Ryoshi´s mission.",
+    "explorer": "https://etherscan.io/token/0xFbD5fD3f85e9f4c5E8B40EEC9F8B8ab1cAAa146b",
     "symbol": "TREAT",
     "type": "ERC20",
     "decimals": 18,
     "status": "active",
+    "id": "0xFbD5fD3f85e9f4c5E8B40EEC9F8B8ab1cAAa146b"
+    "tags": [
+        "ERC20"
+    ],
     "links": [
         {
             "name": "telegram",
             "url": "https://t.me/TreatPortal"
         },
         {
-            "name": "telegram announcements",
+            "name": "telegram_news",
             "url": "https://t.me/treatannouncements"
         },
         {
@@ -22,14 +27,6 @@
         {
             "name": "medium",
             "url": "https://medium.com/@TreatArmy"
-        },
-	{
-            "name": "instagram",
-            "url": "https://www.instagram.com/treat.shibaswap/"
-        },
-	{
-            "name": "tiktok",
-            "url": "https://www.tiktok.com/@treatarmy"
         },
 	{
             "name": "coinmarketcap",
