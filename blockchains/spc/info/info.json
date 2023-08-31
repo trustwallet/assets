@@ -1,0 +1,35 @@
+{
+    "name": "Star Pacific Coin",
+    "website": "https://spcscan.io/",
+    "description": "Star Pacific Coin is a cryptocurrency that utilizes a blockchain network. It is designed to offer fast and secure transactions and is built on the Ethereum blockchain.",
+    "explorer": "https://explorer.spcscan.io/",
+    "research": "",
+    "symbol": "SPC",
+    "type": "coin",
+    "coin_type": 3490,
+    "rpc_url": "https://explorer.spcscan.io/api",
+    "decimals": 18,
+    "status": "active",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/coin_pacific"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/star-pacific-coin/"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/spccoin/SPCChain"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/StarPacificGroup"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://docs.spcscan.io/"
+        }
+    ]
+}
