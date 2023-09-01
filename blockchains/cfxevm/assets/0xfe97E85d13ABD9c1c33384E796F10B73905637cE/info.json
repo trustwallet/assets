@@ -1,16 +1,13 @@
 {
     "name": "Tether",
-    "website": "https://tether.to",
-    "description": "Tether (USDT) is a cryptocurrency with a value meant to mirror the value of the U.S. dollar.",
-    "explorer": "https://evm.confluxscan.net/address/0xfe97e85d13abd9c1c33384e796f10b73905637ce",
-    "type": "CFXEVM",
     "symbol": "USDT",
+    "type": "CONFLUX",
     "decimals": 18,
+    "description": "Tether (USDT) is a cryptocurrency with a value meant to mirror the value of the U.S. dollar.",
+    "website": "https://tether.to",
+    "explorer": "https://evm.confluxscan.net/address/0xfe97e85d13abd9c1c33384e796f10b73905637ce",
     "status": "active",
     "id": "0xfe97E85d13ABD9c1c33384E796F10B73905637cE",
-    "tags": [
-        "stablecoin"
-    ],
     "links": [
         {
             "name": "facebook",
@@ -24,5 +21,8 @@
             "name": "coinmarketcap",
             "url": "https://coinmarketcap.com/ru/currencies/tether/"
         }
+    ],
+    "tags": [
+        "stablecoin"
     ]
 }
