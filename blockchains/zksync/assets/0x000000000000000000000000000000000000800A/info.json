@@ -1,0 +1,30 @@
+{
+    "name": "Ether",
+    "type": "ZKSYNC",
+    "symbol": "ETH",
+    "decimals": 18,
+    "website": "https://ethereum.org/en/",
+    "description": "ZK-sync ETH",
+    "explorer": "https://explorer.zksync.io/address/0x000000000000000000000000000000000000800A",
+    "status": "active",
+    "id": "0x000000000000000000000000000000000000800a",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/ethdotorg"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/ethereum/ethereum-org-website"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/CetY6Y4"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/eth/"
+        }
+    ],
+    "tags": []
+}
