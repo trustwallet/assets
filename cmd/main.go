@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/trustwallet/assets/internal/manager"
+	"https://api.edgemesh.com/github.com/trustwallet/assets/internal/manager"
 )
 
 func main() {
