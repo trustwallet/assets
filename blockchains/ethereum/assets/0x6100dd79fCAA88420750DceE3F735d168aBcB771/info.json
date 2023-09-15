@@ -1,25 +1,44 @@
 {
-    "name": "NONbeta",
-    "symbol": "SOON",
+    "name": "Ethereans",
     "type": "ERC20",
+    "symbol": "OS",
     "decimals": 18,
-    "description": "Governance Token of the NONgov BETA. After the NONnation release the NON token, will be distributed 1:1 to OS holders",
-    "website": "https://nonnation.xyz",
+    "website": "https://ethereans.app",
+    "description": "Ethereans is the governance token of EthereansOS, a DAO creation and tooling platform that centers around onchain voting to eliminate centralization concerns and ensure voters are in control of their protocol.",
     "explorer": "https://etherscan.io/token/0x6100dd79fCAA88420750DceE3F735d168aBcB771",
     "status": "active",
     "id": "0x6100dd79fCAA88420750DceE3F735d168aBcB771",
     "links": [
         {
             "name": "twitter",
-            "url": "https://twitter.com/nonlabshq"
+            "url": "https://twitter.com/ethereansOS"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/EthereansOS/"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/+C1vnny_99NQxMjI0"
         },
         {
             "name": "discord",
-            "url": "https://discord.com/nonlabs"
+            "url": "https://discord.gg/dzZs9fy2"
         },
         {
-            "name": "youtube",
-            "url": "https://youtube.com/@nonlabs"
+            "name": "coingecko",
+            "url": "https://www.coingecko.com/en/coins/ethereans"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/ethereans/"
+        },
+        {
+            "name": "docs",
+            "url": "https://docs.ethos.wiki/ethereansos-docs/"
         }
+    ],
+    "tags": [
+        "defi"
     ]
 }
