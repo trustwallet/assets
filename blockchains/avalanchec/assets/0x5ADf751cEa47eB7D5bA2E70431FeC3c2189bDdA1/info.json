@@ -1,12 +1,28 @@
 {
-    "name": "USDT.e",
-    "symbol": "USDT.e",
-    "type": "AVALANCHE",
-    "decimals": 18,
-    "description": "USDT token",
-    "website": "https://testnet.snowtrace.io/token/0x5ADf751cEa47eB7D5bA2E70431FeC3c2189bDdA1",
+    "name": "USDT",
+    "website": "https://stargate.finance",
+    "description": "USDT",
     "explorer": "https://testnet.snowtrace.io/token/0x5ADf751cEa47eB7D5bA2E70431FeC3c2189bDdA1",
-    "research": "https://research.binance.com/en/projects/avalanche",
+    "type": "AVALANCHE",
+    "symbol": "USDT",
+    "decimals": 18,
     "status": "active",
     "id": "0x5ADf751cEa47eB7D5bA2E70431FeC3c2189bDdA1",
+    "links": [
+        {
+            "name": "medium",
+            "url": "https://medium.com/stargate-official"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/joinchat/LEM0ELklmO1kODdh"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/stargate-finance/"
+        }
+    ],
+    "tags": [
+        "defi"
+    ]
 }
