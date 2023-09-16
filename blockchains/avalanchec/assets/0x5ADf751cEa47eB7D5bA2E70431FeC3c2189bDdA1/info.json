@@ -1,10 +1,12 @@
 {
-    "name": "USDT",
+    "name": "USDT.e",
+    "symbol": "USDT.e",
     "type": "AVALANCHE",
-    "symbol": "WOO",
     "decimals": 18,
-    "description": "test coin",
+    "description": "USDT token",
+    "website": "https://testnet.snowtrace.io/token/0x5ADf751cEa47eB7D5bA2E70431FeC3c2189bDdA1",
     "explorer": "https://testnet.snowtrace.io/token/0x5ADf751cEa47eB7D5bA2E70431FeC3c2189bDdA1",
+    "research": "https://research.binance.com/en/projects/avalanche",
     "status": "active",
     "id": "0x5ADf751cEa47eB7D5bA2E70431FeC3c2189bDdA1",
 }
