@@ -1,0 +1,27 @@
+{
+    "name": "REDTHEHORSE",
+    "symbol": "RTH",
+    "type": "ERC-20",
+    "contractAddress": "0x8a9e6d160d7c0087121e40e398fa3f67a4598b75",
+    "totalSupply": "1000000000000000",
+    "decimals": 18,
+    "description": "Red The Horse! Representing the dynamism and agility of the cryptocurrency trading space, Red the Horse stands as a symbol of speed, strength, and endurance.",
+    "website": "http://www.redthehorse.com",
+    "officialChannels": {
+      "telegram": "https://t.me/+OruRR2Tgn3EwZTEx",
+      "twitter": "https://twitter.com/redthehorseeth/",
+      "dextools": "https://dextools.io/app/en/ether/pair-explorer/0x214abb7b14d6037a1aed56565aeddb0115f2c8b4"
+    },
+    "tokenomics": {
+      "buyAndSellFees": "A nominal fee of 2% is applied on both buying and selling transactions to support the token's ecosystem.",
+      "walletRestrictions": {
+        "maxWalletSize": "3% of the total supply",
+        "maxTransactionAmount": "2% of the total supply"
+      },
+      "swapMechanism": "Fees accumulated in the contract are swapped, typically for ETH, once they reach 0.02% of the total supply."
+    },
+    "features": {
+      "speedAndAgility": "Embodying the spirit of a horse, the RTH token promises rapid transactions and lightning-fast transfers, making it an ideal choice for quick decentralized finance (DeFi) operations.",
+      "communityFocus": "With an emphasis on community involvement and growth, Red the Horse is not only a cryptocurrency but also a movement."
+    }
+  }
