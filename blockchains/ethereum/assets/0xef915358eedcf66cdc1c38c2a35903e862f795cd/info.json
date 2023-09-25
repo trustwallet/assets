@@ -2,28 +2,34 @@
     "name": "DUDE Coin",
     "website": "https://dude.army",
     "description": "DUDE coin ain't just another meme coin, bro. It's a symbol of brotherhood, uniting all the homies against that toxic vibe and shilding from those ex-drama.",
-    "explorer": "https://etherscan.io/address/0xef915358eedcf66cdc1c38c2a35903e862f795cd",
+    "explorer": "https://etherscan.io/token/0xef915358eedcf66cdc1c38c2a35903e862f795cd",
     "symbol": "DUDE",
     "type": "ERC20",
     "socials": [
         {
-            "name": "Twitter",
+            "name": "twitter",
             "url": "https://twitter.com/dudecoin1337"
         },
         {
-            "name": "Telegram News",
+            "name": "telegram",
             "url": "https://t.me/heydudecoin"
         },
         {
-            "name": "Telegram Chat",
+            "name": "telegram chat",
             "url": "https://t.me/thedudecoinchat"
         },
         {
-            "name": "Github",
+            "name": "github",
             "url": "https://github.com/Dude-Army/"
         }
-    ],    
+    ],
     "decimals": 18,
     "status": "active",
-    "id": "0xef915358eedcf66cdc1c38c2a35903e862f795cd"
+    "id": "0xef915358EeDCF66CdC1C38C2A35903E862F795cD",
+    "tags": [
+        "memcoin",
+        "dude",
+        "pepe",
+        "AndrewTate"
+    ]
 }
