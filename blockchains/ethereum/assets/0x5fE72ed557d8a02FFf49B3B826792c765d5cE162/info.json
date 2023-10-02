@@ -4,12 +4,12 @@
     "description": "Shezmu is an elastic-supply protocol built synergistically with NFT secondary markets to allow for a hyper liquid ecosystem.",
     "explorer": "https://etherscan.io/token/0x5fE72ed557d8a02FFf49B3B826792c765d5cE162",
     "symbol": "SHEZMU",
-    "type": "coin",
+    "type": "ERC20",
     "decimals": 18,
     "status": "active",
     "id": "0x5fE72ed557d8a02FFf49B3B826792c765d5cE162",
     "links": [
-	{
+        {
             "name": "github",
             "url": "https://github.com/Shezmu-Team"
         },
@@ -24,8 +24,9 @@
         {
             "name": "whitepaper",
             "url": "https://shezmu.gitbook.io/shezmu/introduction/welcome-to-shezmu"
+        }
     ],
     "tags": [
-        "Utility"
+        "nft"
     ]
 }
