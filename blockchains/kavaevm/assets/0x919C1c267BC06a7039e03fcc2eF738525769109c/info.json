@@ -1,16 +1,13 @@
 {
     "name": "Tether",
-    "website": "https://tether.to",
-    "description": "Tether (USDT) is a cryptocurrency with a value meant to mirror the value of the U.S. dollar.",
-    "explorer": "https://kavascan.com/token/0x919C1c267BC06a7039e03fcc2eF738525769109c/token-transfers",
-    "type": "ERC20",
     "symbol": "USDT",
+    "type": "KAVAERC20",
     "decimals": 6,
+    "description": "Tether (USDT) is a cryptocurrency with a value meant to mirror the value of the U.S. dollar.",
+    "website": "https://tether.to",
+    "explorer": "https://explorer.kava.io/token/0x919C1c267BC06a7039e03fcc2eF738525769109c",
     "status": "active",
     "id": "0x919C1c267BC06a7039e03fcc2eF738525769109c",
-    "tags": [
-        "stablecoin"
-    ],
     "links": [
         {
             "name": "facebook",
@@ -24,5 +21,8 @@
             "name": "coinmarketcap",
             "url": "https://coinmarketcap.com/ru/currencies/tether/"
         }
+    ],
+    "tags": [
+        "stablecoin"
     ]
 }
