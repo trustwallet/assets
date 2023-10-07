@@ -1,12 +1,12 @@
-name: Check
+name: majed 
 
 on:
   push:
     branches:
-      - master
+      - majed khajeh
   pull_request:
     branches:
-      - master
+      - majed khajeh
   workflow_dispatch:
 
 jobs:
