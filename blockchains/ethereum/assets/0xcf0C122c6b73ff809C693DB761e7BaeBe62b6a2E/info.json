@@ -1,15 +1,15 @@
 {
-    "name": "Floki Inu",
-    "website": "https://theflokiinu.com",
-    "description": "Floki Inu is a meme token that provides deflationary rewards to holders.",
-    "explorer": "https://etherscan.io/token/0xcf0C122c6b73ff809C693DB761e7BaeBe62b6a2E",
+    "name": "FLOKI",
     "type": "ERC20",
     "symbol": "FLOKI",
     "decimals": 9,
+    "website": "https://floki.com",
+    "description": "The people's cryptocurrency. By combining the power of memes with real utility and charitability, FLOKI gives power and opportunity to the people — to the underdogs — instead of venture capitalists and hedge funds. FLOKI aims to be the most known and most used cryptocurrency in the world.",
+    "explorer": "https://etherscan.io/token/0xcf0c122c6b73ff809c693db761e7baebe62b6a2e",
     "status": "active",
     "id": "0xcf0C122c6b73ff809C693DB761e7BaeBe62b6a2E",
     "tags": [
-        "deflationary"
+        "memes"
     ],
     "links": [
         {
@@ -18,7 +18,7 @@
         },
         {
             "name": "twitter",
-            "url": "https://twitter.com/RealFlokiInu"
+            "url": "https://twitter.com/realflokiinu"
         },
         {
             "name": "coinmarketcap",
@@ -27,6 +27,18 @@
         {
             "name": "coingecko",
             "url": "https://coingecko.com/en/coins/floki-inu"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/floki"
+        },
+        {
+            "name": "medium",
+            "url": "https://realflokiinu.medium.com/"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://docs.theflokiinu.com/"
         }
     ]
 }
