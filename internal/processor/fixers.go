@@ -146,7 +146,7 @@ func (s *Service) FixAssetInfo(f *file.AssetFile) error {
 		expectedTokenType = strings.ToUpper(assetType)
 	}
 
-	if chain.ID != coin.CRYPTOORG {
+	if chain.ID != coin.CRYPTOORG && chain.ID != coin.CRONOS {
 		if chain.ID != f.Chain().ID || !strings.EqualFold(assetType, expectedTokenType) {
 			assetInfo.Type = &expectedTokenType
 			isModified = true
