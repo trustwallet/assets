@@ -206,9 +206,12 @@ func (s *Service) ValidateAssetInfoFile(f *file.AssetFile) error {
 		return err
 	}
 
-	err := info.ValidateAsset(assetInfo, f.Chain(), f.Asset())
-	if err != nil {
-		return err
+	// https://github.com/trustwallet/backend/issues/2561
+	if f.Chain() != coin.Cryptoorg() && f.Chain() != coin.Cronos() {
+		err := info.ValidateAsset(assetInfo, f.Chain(), f.Asset())
+		if err != nil {
+			return err
+		}
 	}
 
 	return nil
