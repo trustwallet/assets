@@ -1,32 +1,29 @@
 {
     "name": "Awkward Monkey Puppet",
+    "type": "ERC20",
+    "symbol": "AMP",
+    "decimals": 18,
     "website": "https://awkwardmonkeypuppet.com/",
     "description": "The Awkward Monkey meme typically features an image of a cartoonish monkey in various humorous or socially awkward situations, often accompanied by witty or relatable captions. The humor often stems from the monkey’s facial expressions and body language, which are exaggerated to make it appear uncomfortable or out of place in the given scenario.",
     "explorer": "https://etherscan.io/token/0x03B9e120007E69771373248298B2ee941fd08138",
-    "research": "https://research.binance.com/en/projects/bnb",
-    "symbol": "AMP",
-    "type": "token",
-    "decimals": 18,
     "status": "active",
-    "tags": [
-        "memes-AI"
-    ],
+    "id": "0x03B9e120007E69771373248298B2ee941fd08138",
     "links": [
-        {
-            "name": "telegram",
-            "url": "https://t.me/Awkward_Monkey_Puppet"
-        },
         {
             "name": "twitter",
             "url": "https://twitter.com/AwkwardMonkeyPP"
         },
         {
-            "name": "reddit",
-            "url": "https://www.reddit.com/r/awkwardmonkey_puppet"
-        },        
+            "name": "telegram",
+            "url": "https://t.me/Awkward_Monkey_Puppet"
+        },
         {
             "name": "whitepaper",
-            "url": " http://awkwardmonkeypuppet.com/wp-content/uploads/2023/10/Awkward-Monkey-Puppet-AMP-Whitepaper.pdf"
+            "url": "http://awkwardmonkeypuppet.com/wp-content/uploads/2023/10/Awkward-Monkey-Puppet-AMP-Whitepaper.pdf"
         }
+    ],
+    "tags": [
+        "governance",
+        "defi"
     ]
 }
