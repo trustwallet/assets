@@ -1,0 +1,25 @@
+{
+    "name": "Cool Token",
+    "type": "ERC20",
+    "symbol": "COOL",
+    "decimals": 18,
+    "website": "https://cool.token/",
+    "description": "This is a very cool token",
+    "explorer": "https://etherscan.io/token/0x1b4839DdBF2da29fA3B9833855da4A4f2a787Ebd",
+    "status": "active",
+    "id": "0x1b4839DdBF2da29fA3B9833855da4A4f2a787Ebd",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/cool/"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/cool/"
+        }
+    ],
+    "tags": [
+        "defi",
+        "dapp"
+    ]
+}
