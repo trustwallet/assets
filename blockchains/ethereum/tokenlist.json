@@ -507,6 +507,9 @@
                 },
                 {
                     "base": "c60_t0xB0c7a3Ba49C7a6EaBa6cD4a96C55a1391070Ac9A"
+                },
+                {
+                    "base": "c60_t0xCEBA2a8F6Ec221AEB5f3a7bcd15Cbc7e6a387bfb"
                 }
             ]
         },
@@ -2662,16 +2665,6 @@
             "pairs": []
         },
         {
-            "asset": "c60_t0xbE9375C6a420D2eEB258962efB95551A5b722803",
-            "type": "ERC20",
-            "address": "0xbE9375C6a420D2eEB258962efB95551A5b722803",
-            "name": "StormX",
-            "symbol": "STMX",
-            "decimals": 18,
-            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0xbE9375C6a420D2eEB258962efB95551A5b722803/logo.png",
-            "pairs": []
-        },
-        {
             "asset": "c60_t0xbEa98c05eEAe2f3bC8c3565Db7551Eb738c8CCAb",
             "type": "ERC20",
             "address": "0xbEa98c05eEAe2f3bC8c3565Db7551Eb738c8CCAb",
@@ -3369,13 +3362,13 @@
             "pairs": []
         },
         {
-            "asset": "c60_t0x15D4c048F83bd7e37d49eA4C83a07267Ec4203dA",
+            "asset": "c60_t0xd1d2Eb1B1e90B638588728b4130137D262C87cae",
             "type": "ERC20",
-            "address": "0x15D4c048F83bd7e37d49eA4C83a07267Ec4203dA",
+            "address": "0xd1d2Eb1B1e90B638588728b4130137D262C87cae",
             "name": "Gala",
             "symbol": "GALA",
             "decimals": 8,
-            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0x15D4c048F83bd7e37d49eA4C83a07267Ec4203dA/logo.png",
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0xd1d2Eb1B1e90B638588728b4130137D262C87cae/logo.png",
             "pairs": []
         },
         {
@@ -3506,6 +3499,16 @@
             "symbol": "MAGIC",
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0xB0c7a3Ba49C7a6EaBa6cD4a96C55a1391070Ac9A/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c60_t0xCEBA2a8F6Ec221AEB5f3a7bcd15Cbc7e6a387bfb",
+            "type": "ERC20",
+            "address": "0xCEBA2a8F6Ec221AEB5f3a7bcd15Cbc7e6a387bfb",
+            "name": "Peter Pan",
+            "symbol": "PAN",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0xCEBA2a8F6Ec221AEB5f3a7bcd15Cbc7e6a387bfb/logo.png",
             "pairs": []
         }
     ],
