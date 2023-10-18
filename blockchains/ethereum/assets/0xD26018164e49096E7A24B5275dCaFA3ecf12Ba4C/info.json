@@ -7,5 +7,26 @@
     "website": "https://klaytn.foundation/",
     "explorer": "https://etherscan.io/token/0xD26018164e49096E7A24B5275dCaFA3ecf12Ba4C",
     "status": "active",
-    "id": "0xD26018164e49096E7A24B5275dCaFA3ecf12Ba4C"
+    "id": "0xD26018164e49096E7A24B5275dCaFA3ecf12Ba4C",
+    "tags": [
+        "Wrapped"
+    ],
+    "links": [
+        {
+            "name": "orbitchain",
+            "url": "https://bridge.orbitchain.io/"
+        },
+        {
+            "name": "klaytn",
+            "url": "https://github.com/klaytn/klaytn"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/klaytn_official"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/klaytn"
+        }
+    ]
 }
