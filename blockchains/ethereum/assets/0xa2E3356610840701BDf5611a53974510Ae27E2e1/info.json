@@ -8,7 +8,7 @@
     "explorer": "https://etherscan.io/token/0xa2E3356610840701BDf5611a53974510Ae27E2e1",
     "status": "active",
     "id": "0xa2E3356610840701BDf5611a53974510Ae27E2e1",
-    "links":[
+    "links": [
         {
             "name": "coinmarketcap",
             "url": "https://coinmarketcap.com/currencies/wrapped-beacon-eth"
@@ -18,5 +18,7 @@
             "url": "https://coingecko.com/en/coins/wrapped-beacon-eth"
         }
     ],
-    "tags":["wrapped"]
+    "tags": [
+        "wrapped"
+    ]
 }
