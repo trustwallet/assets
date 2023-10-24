@@ -1,24 +1,20 @@
 {
-    "name": "Blockton",
-    "website": "https://blocktoncoin.com",
-    "short_description": "Blockton is a fast, high-throughput open-source Scalable, fast, and secure blockchain ecosystem.",
-    "description": "Blockton is a fast, high-throughput open-source Scalable, fast, and secure blockchain ecosystem.",
-    "explorer": "https://blocktonscan.com/",
-    "research": "https://docs.blocktonscan.com",
+    "name": "Acala",
+    "website": "https://alifcoin.id",
+    "description": "ALIF COIN is the first decentralized project in Indonesia that focuses on helping the first decentralized social services in Indonesia by utilizing blockchain technology in financial management",
+    "explorer": "https://bscscan.com/token/0x967784950655b8e74a2d3d3503933f0015660074",
+    "symbol": "ALIF",
     "type": "coin",
-    "symbol": "BTON",
-    "rpc_url": "https://rpc.blocktonscan.com/",
     "decimals": 18,
     "status": "active",
     "links": [
         {
             "name": "github",
-            "url": "https://github.com/blocktoncoin"
+            "url": "https://github.com/alifproject"
         },
         {
-            "name": "whitepaper",
-            "url": "https://blocktoncoin.com/whitepaper.pdf"
+            "name": "twitter",
+            "url": "https://twitter.com/alif_coin"
         }
     ]
 }
-
