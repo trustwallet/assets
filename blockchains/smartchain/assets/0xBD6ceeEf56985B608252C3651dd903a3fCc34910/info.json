@@ -19,15 +19,19 @@
         },
         {
             "name": "coingecko",
-            "url": "https://www.coingecko.com"
+            "url": "https://coingecko.com/en/coins/twelve-zodiac"
         },
         {
             "name": "coinmarketcap",
             "url": "https://coinmarketcap.com/currencies/twelve-zodiac/"
+        },
+        {
+            "name": "tokenholders",
+            "url": "https://bscscan.com/token/tokenholderchart/0xBD6ceeEf56985B608252C3651dd903a3fCc34910"
         }
     ],
     "tags": [
-        "metaverse"
+        "staking"
     ],
     "holders": "3,427"
 }
