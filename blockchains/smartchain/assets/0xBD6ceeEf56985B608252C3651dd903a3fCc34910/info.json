@@ -24,14 +24,11 @@
         {
             "name": "coinmarketcap",
             "url": "https://coinmarketcap.com/currencies/twelve-zodiac/"
-        },
-        {
-            "name": "tokenholders",
-            "url": "https://bscscan.com/token/tokenholderchart/0xBD6ceeEf56985B608252C3651dd903a3fCc34910"
         }
+       
     ],
     "tags": [
-        "staking"
+        "staking","dapp"
     ],
-    "holders": "3,427"
+    "holders": "https://bscscan.com/token/tokenholderchart/0xBD6ceeEf56985B608252C3651dd903a3fCc34910"
 }
