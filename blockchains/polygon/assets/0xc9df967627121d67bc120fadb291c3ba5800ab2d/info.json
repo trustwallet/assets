@@ -5,7 +5,7 @@
     "explorer": "https://polygonscan.com/token/0xC9dF967627121D67BC120fAdb291C3BA5800aB2d",
     "id": "0xC9dF967627121D67BC120fAdb291C3BA5800aB2d",
     "symbol": "FWD",
-    "type": "ERC20",
+    "type": "POLYGON",
     "decimals": 18,
     "status": "active",
     "links": [
@@ -16,10 +16,9 @@
         {
             "name": "twitter",
             "url": "https://twitter.com/RewindProtocol"
-        },
-        {
-            "name": "discord",
-            "url": "https://discord.gg/7Us2d26yey"
         }
+    ],
+    "tags": [
+        "gaming"
     ]
 }
