@@ -1,10 +1,10 @@
 {
-    "name": "Twelve Zodiac",
+    "name": "TWELVE",
     "type": "BEP20",
     "symbol": "TWELVE",
     "decimals": 18,
     "website": "https://twelvezodiac.co/",
-    "description": "Twelve is the main currency for the Twelve Metaverse Project.",
+    "description": "Main currency for Metaverse and Staking",
     "explorer": "https://bscscan.com/token/0xBD6ceeEf56985B608252C3651dd903a3fCc34910",
     "status": "active",
     "id": "0xBD6ceeEf56985B608252C3651dd903a3fCc34910",
@@ -18,17 +18,19 @@
             "url": "https://t.me/twelvezodiacofficial"
         },
         {
-            "name": "coingecko",
-            "url": "https://coingecko.com/en/coins/twelve-zodiac"
+            "name": "whitepaper",
+            "url": "https://twelvezodiac.co/Pitch%20Deck.pdf"
         },
         {
             "name": "coinmarketcap",
             "url": "https://coinmarketcap.com/currencies/twelve-zodiac/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/twelve-zodiac"
         }
-       
     ],
     "tags": [
-        "staking","dapp"
-    ],
-    "holders": "https://bscscan.com/token/tokenholderchart/0xBD6ceeEf56985B608252C3651dd903a3fCc34910"
+        "staking"
+    ]
 }
