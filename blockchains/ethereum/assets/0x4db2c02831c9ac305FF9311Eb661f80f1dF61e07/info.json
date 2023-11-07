@@ -1,0 +1,32 @@
+{
+    "name": "Stable ICHI",
+    "website": "app.ichi.org",
+    "description": "oneICHI is an ICHI-created stablecoin backed by USDC and ICHI built for the ICHI DAO.",
+    "explorer": "https://etherscan.io/token/0x4db2c02831c9ac305FF9311Eb661f80f1dF61e07",
+    "type": "ERC20",
+    "symbol": "oneICHI",
+    "decimals": 18,
+    "status": "active",
+    "id": "0x4db2c02831c9ac305FF9311Eb661f80f1dF61e07",
+    "tags": [
+        "defi"
+    ],
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/ichifarm/ichi-oneToken"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/ichifoundation"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/ichifarm"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/ichifarm"
+        }
+    ]
+}

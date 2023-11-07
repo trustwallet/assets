@@ -1,13 +1,13 @@
 {
-    "type": "ESDTSFT",
-    "id": "EGLDUSDCF-8600f8",
     "name": "EGLD/USDC LP Staked",
     "symbol": "EGLDUSDCF",
+    "type": "ESDT",
     "decimals": 18,
-    "status": "active",
     "description": "This token tracks your LP token stake in the EGLD/USDC farm on the Maiar DEX.",
     "website": "https://maiar.exchange",
-    "explorer": "https://explorer.elrond.com/collections/EGLDUSDCF-8600f8",
+    "explorer": "https://explorer.multiversx.com/tokens/EGLDUSDCF-8600f8",
+    "status": "abandoned",
+    "id": "EGLDUSDCF-8600f8",
     "links": [
         {
             "name": "docs",
