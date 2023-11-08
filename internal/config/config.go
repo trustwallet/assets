@@ -9,8 +9,9 @@ import (
 type (
 	Config struct {
 		App                App                `mapstructure:"app"`
-		ClientURLs         ClientsURLs        `mapstructure:"client_urls"`
+		ClientURLs         ClientURLs         `mapstructure:"client_urls"`
 		URLs               URLs               `mapstructure:"urls"`
+		TimeFormat         string             `mapstructure:"time_format"`
 		ValidatorsSettings ValidatorsSettings `mapstructure:"validators_settings"`
 	}
 
@@ -18,16 +19,17 @@ type (
 		LogLevel string `mapstructure:"log_level"`
 	}
 
-	ClientsURLs struct {
+	ClientURLs struct {
 		Binance struct {
 			Dex      string `mapstructure:"dex"`
 			Explorer string `mapstructure:"explorer"`
 		} `mapstructure:"binance"`
-		BackendAPI string `mapstructure:"backend_api"`
+		AssetsManagerAPI string `mapstructure:"assets_manager_api"`
 	}
 
 	URLs struct {
-		TWAssetsApp string `mapstructure:"tw_assets_app"`
+		AssetsApp string `mapstructure:"assets_app"`
+		Logo      string `mapstructure:"logo"`
 	}
 
 	ValidatorsSettings struct {
@@ -37,12 +39,11 @@ type (
 		ChainInfoFolder            ChainInfoFolder            `mapstructure:"chain_info_folder"`
 		ChainValidatorsAssetFolder ChainValidatorsAssetFolder `mapstructure:"chain_validators_asset_folder"`
 		DappsFolder                DappsFolder                `mapstructure:"dapps_folder"`
-		CoinInfoFile               CoinInfoFile               `mapstructure:"coin_info_file"`
 	}
 )
 
 // Default is a configuration instance.
-var Default = Config{} // nolint:gochecknoglobals // config must be global
+var Default = Config{} //nolint:gochecknoglobals // config must be global
 
 // SetConfig reads a config file and returs an initialized config instance.
 func SetConfig(confPath string) error {
