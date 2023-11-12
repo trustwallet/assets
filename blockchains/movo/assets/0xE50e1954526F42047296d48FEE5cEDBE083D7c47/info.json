@@ -1,0 +1,25 @@
+{
+    "name": "Tether USD",
+    "type": "USDT",
+    "symbol": "USDT",
+    "decimals": 18,
+    "website": "https://bridge.movo.uk/",
+    "description": "Tether (USDT) ERC20 All Tether tokens (USDT) are pegged at 1-to-1 with a matching fiat currency and are backed 100%",
+    "explorer": "https://movoscan.com/token/0xE50e1954526F42047296d48FEE5cEDBE083D7c47",
+    "status": "active",
+    "id": "0xE50e1954526F42047296d48FEE5cEDBE083D7c47",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/MovoFoundation"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/MovochainSupport"
+        }
+    ],
+    "tags": [
+        "stablecoin",
+        "wrapped"
+    ]
+}
