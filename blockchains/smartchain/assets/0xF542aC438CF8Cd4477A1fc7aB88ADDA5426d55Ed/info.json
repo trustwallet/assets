@@ -2,17 +2,17 @@
     "name": "MikeToken",
     "website": "https://www.miketoken.io/",
     "description": "Mike Token, the dynamic and innovative cryptocurrency designed to bring a fresh and entertaining twist to the world of digital assets.",
-    "explorer": "https://bscscan.com/",
+    "explorer": "https://bscscan.com/token/0xF542aC438CF8Cd4477A1fc7aB88ADDA5426d55Ed",
     "research": "https://miketoken-io.gitbook.io/miketoken.io/",
     "symbol": "MKT",
     "type": "BEP20",
     "decimals": 18,
     "status": "active",
+    "id":"0xF542aC438CF8Cd4477A1fc7aB88ADDA5426d55Ed"
     "tags": [
-        "staking",
-	   "farms",
-	   "pools",
-	   "LP-token"
+	"staking",
+	"pools",
+	"LP-token"
     ],
     "links": [
         {
@@ -22,6 +22,10 @@
         {
             "name": "twitter",
             "url": "https://twitter.com/miketokenio"
+        },
+		        {
+            "name": "telegram",
+            "url": "https://t.me/miketoken"
         },
         {
             "name": "whitepaper",
