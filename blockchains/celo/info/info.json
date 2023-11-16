@@ -7,8 +7,11 @@
     "symbol": "CELO",
     "type": "coin",
     "rpc_url": "https://forno.celo.org",
-    "decimals": 8,
+    "decimals": 18,
     "status": "active",
+    "tags": [
+        "dapp"
+    ],
     "links": [
         {
             "name": "github",
