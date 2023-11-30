@@ -1,51 +1,38 @@
 {
     "name": "CryptoPeso",
-    "website": "www.cryptopeso.com",
+    "website": "https://cryptopesos.pro/index.html",
     "description": "It is an innovative initiative that seeks to revolutionize the financial landscape in Latin America through the implementation of a robust and sustainable blockchain. Our main goal is to promote access to decentralized financial services and foster economic inclusion in the region.",
     "explorer": "https://bscscan.com/token/0xbb21c4a6257f3306d0458e92ad0fe583ad0ce858",
-    "research": "https://beats-ecosystem.gitbook.io/beats-ecosystem-2/whitepaper/beats-token",
+    "research": "https://cryptopesos.pro/index.html",
     "symbol": "CryptoPesos",
-    "type": "coin",
+    "type": "BEP20",
     "decimals": 18,
     "status": "active",
+    "id": "0xbB21c4A6257f3306d0458E92aD0FE583AD0cE858",
     "tags": [
         "staking-native",
-        "defi",
-        "payments"
-        
+        "defi"
     ],
     "links": [
-        {
-            "name": "instagram",
-            "url": "https://instagram.com/cryptopesocolombia"
-        },
         {
             "name": "twitter",
             "url": "https://twitter.com/Crypto_Pesos"
         },
         {
-            "name": "reddit",
-            "url": "https://www.reddit.com/user/CryptoPesos"
-        },
-        {
             "name": "whitepaper",
-            "url": "https://beats-ecosystem.gitbook.io/beats-ecosystem-2/"
+            "url": "https://cryptopesos.pro/index.html"
         },
         {
             "name":"telegram",
             "url":"https://t.me/CryptoPesoColombia"
         },
         {
-            "name":"GitHub",
+            "name":"github",
             "url":"https://github.com/CryptoPesos"
         },
         {
-            "name":"Coinmarketcap",
+            "name":"coinmarketcap",
             "url":"https://coinmarketcap.com/dexscan/bsc/0x6c7336d6dd9947481bc6f81f670a104cb963ea39/"
-        },
-        {
-            "name":"Blocksafu",
-            "url":"https://blocksafu.com/audit/0xbB21c4A6257f3306d0458E92aD0FE583AD0cE858"
         }
     ]
 }
