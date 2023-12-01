@@ -1,0 +1,24 @@
+{
+    "name": "Aave Polygon USDC",
+    "type": "POLYGON",
+    "symbol": "aPolUSDC",
+    "decimals": 6,
+    "website": "https://aave.com",
+    "description": "Aave USDC V3 is an interest bearing token pegged 1:1 to the underlying USDC deposited in Aave V3. aUSDC V3 accrue interest in real time in your wallet.",
+    "explorer": "https://polygonscan.com/token/0x625E7708f30cA75bfd92586e17077590C60eb4cD",
+    "status": "active",
+    "id": "0x625E7708f30cA75bfd92586e17077590C60eb4cD",
+    "links": [
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/aave-v3-usdc"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/aave"
+        }
+    ],
+    "tags": [
+        "defi"
+    ]
+}
