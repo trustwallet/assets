@@ -2,12 +2,12 @@
     "name": "Poolz Finance",
     "website": "https://www.poolz.finance",
     "description": "Poolz is a decentralized swapping protocol for cross-chain token pools and auctions, enabling projects to raise capital.",
-    "explorer": "https://etherscan.io/token/0x69A95185ee2a045CDC4bCd1b1Df10710395e4e23",
-    "type": "ERC20",
-    "symbol": "POOLZ",
+    "explorer": "https://bscscan.com/token/0xbAeA9aBA1454DF334943951d51116aE342eAB255",
+    "type": "BEP20",
+    "symbol": "POOLX",
     "decimals": 18,
     "status": "active",
-    "id": "0x69A95185ee2a045CDC4bCd1b1Df10710395e4e23",
+    "id": "0xbAeA9aBA1454DF334943951d51116aE342eAB255",
     "links": [
         {
             "name": "github",
@@ -15,15 +15,11 @@
         },
         {
             "name": "twitter",
-            "url": "https://twitter.com/Poolz"
+            "url": "https://twitter.com/Poolz__"
         },
         {
             "name": "telegram",
             "url": "https://t.me/PoolzOfficialCommunity"
-        },
-        {
-            "name": "discord",
-            "url": "https://discord.com/invite/xwtWw4sGPp"
         }
     ]
 }
