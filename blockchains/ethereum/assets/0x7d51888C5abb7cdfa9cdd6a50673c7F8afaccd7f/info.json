@@ -8,7 +8,7 @@
     "decimals": 18,
     "status": "active",
     "tags": [
-        "access"
+        "staking-native"
     ],
     "ID": "0x7d51888C5ABb7CDfa9cdd6A50673c7F8afAccD7F",
 
@@ -19,8 +19,12 @@
             "url": "https://twitter.com/dao_duck"
         },
         {
-            "name": "telegam",
+            "name": "telegram",
             "url": "https://t.me/duckdaolobby"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://www.coingecko.com/en/coins/duckdao"
         }
     ]
 }
