@@ -1,16 +1,13 @@
 {
-    "name": "Ethereans",
-    "symbol": "OS",
+    "name": "Ethereans (OS)",
     "type": "ERC20",
+    "symbol": "OS",
     "decimals": 18,
-    "description": "Governance Token of EthereansOS (EthOS) protocol. More info: https://ethos.eth",
     "website": "https://ethereans.app",
+    "description": "Governance Token of EthereansOS (EthOS) protocol. More info: https://ethos.eth",
     "explorer": "https://etherscan.io/token/0x6100dd79fCAA88420750DceE3F735d168aBcB771",
     "status": "active",
     "id": "0x6100dd79fCAA88420750DceE3F735d168aBcB771",
-    "tags": [
-        "governance"
-    ],
     "links": [
         {
             "name": "twitter",
@@ -24,5 +21,8 @@
             "name": "youtube",
             "url": "https://youtube.com/@EthereansOS"
         }
+    ],
+    "tags": [
+        "governance"
     ]
-} 
+}
