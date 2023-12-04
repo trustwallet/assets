@@ -1,5 +1,11 @@
 [
     {
+        "id": "trust-nodes.poolv1.near",
+        "name": "Trust Nodes",
+        "description": "The most trusted & secure crypto wallet",
+        "website": "https://trustwallet.com"
+    },
+    {
         "id": "staked.poolv1.near",
         "name": "staked",
         "description": "staked.poolv1.near is a trusted Proof-of-Stake infrastructure provider and validator to comfortably stake your coins and earn rewards.",
@@ -18,6 +24,12 @@
         "website": "https://zavodil.ru/"
     },
     {
+        "id": "autostake.poolv1.near",
+        "name": "AutoStake.com",
+        "description": "Earn extra Rewards with AutoStake.com 🛡️ 100% Refund on ALL forms of slashing backed by a SAFU fund 🛡️",
+        "website": "https://autostake.com"
+    },
+    {
         "id": "epic.poolv1.near",
         "name": "epic",
         "description": "epic.poolv1.near is a trusted Proof-of-Stake infrastructure provider and validator to comfortably stake your coins and earn rewards with NEAR Protocol.",
@@ -34,5 +46,23 @@
         "name": "p2p-org",
         "description": "P2P Validator helps investors compound their cryptocurrency investments by participating in staking. We offer secure, non-custodial staking services across a range of top-tier networks with over $3.2 billion in total assets staked.",
         "website": "https://p2p.org/networks/near"
+    },
+    {
+        "id": "stakin.poolv1.near",
+        "name": "Stakin",
+        "description": "NEAR staking services by an experienced enterprise validator trusted by institutions and the communities",
+        "website": "https://stakin.com"
+    },
+    {
+        "id": "stakeflow.poolv1.near",
+        "name": "Stakeflow",
+        "description": "Stakeflow is a reliable and secure non-custodial validator that has been running since 2018. We focus on providing public goods for our delegators and supported chains. Check our block explorer https://stakeflow.io and website https://validator.stakeflow.io for more information.",
+        "website": "https://validator.stakeflow.io"
+    },
+    {
+        "id": "lavenderfive.poolv1.near",
+        "name": "Lavender.Five Nodes 🐝 | 1% Commission",
+        "description": "Fortifying crypto networks with Horcrux security, 100% slash insurance, and open source contributions. Connect with us at https://linktr.ee/lavenderfive.",
+        "website": "https://lavenderfive.com/"
     }
 ]
