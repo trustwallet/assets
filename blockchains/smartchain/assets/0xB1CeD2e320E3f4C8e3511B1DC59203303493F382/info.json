@@ -1,11 +1,44 @@
 {
     "name": "Moonlight Token",
-    "symbol": "MOONLIGHT",
     "type": "BEP20",
+    "symbol": "MOONLIGHT",
     "decimals": 9,
-    "description": "Moonlight is a comprehensive set of analytical tools for the BSC network.",
-    "website": "https://moonlighttoken.com/",
-    "explorer": "https://bscscan.com/token/0xb1ced2e320e3f4c8e3511b1dc59203303493f382",
+    "website": "https://bubblemaps.io",
+    "description": "Hold Moonlight Token to get premium access to Bubblemaps",
+    "explorer": "https://bscscan.com/token/0xB1CeD2e320E3f4C8e3511B1DC59203303493F382",
     "status": "active",
-    "id": "0xB1CeD2e320E3f4C8e3511B1DC59203303493F382"
+    "id": "0xB1CeD2e320E3f4C8e3511B1DC59203303493F382",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/bubblemaps"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/bubblemaps"
+        },
+        {
+            "name": "telegram_news",
+            "url": "https://t.me/BubblemapsNEWS"
+        },
+        {
+            "name": "medium",
+            "url": "https://bubblemaps.medium.com/"
+        },
+        {
+            "name": "youtube",
+            "url": "https://youtube.com/@Bubblemaps"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/moonlight-token/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/moonlight-token"
+        }
+    ],
+    "tags": [
+        "dapp"
+    ]
 }
