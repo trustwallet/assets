@@ -1,13 +1,13 @@
 {
-  "name": "Openleverage Token (Old)",
+  "name": "Openleverage Token V2",
   "website": "https://openleverage.finance/",
   "description": "OpenLeverage is a permissionless money market protocol enabling decentralized lending, borrowing, and margin trading across a diverse range of cryptocurrency pairs, fostering an accessible and efficient DeFi ecosystem.",
-  "explorer": "https://etherscan.io/token/0x92cfbec26c206c90aee3b7c66a9ae673754fab7e",
+  "explorer": "https://etherscan.io/token/0x1B6e9c73beE68102d9dd4A2627f97bFf4183ab0A",
   "type": "ERC20",
-  "symbol": "Old OLE",
+  "symbol": "OLE",
   "decimals": 18,
   "status": "active",
-  "id": "0x92cfbec26c206c90aee3b7c66a9ae673754fab7e",
+  "id": "0x1B6e9c73beE68102d9dd4A2627f97bFf4183ab0A",
   "tags": [
     "defi"
   ],
@@ -42,7 +42,7 @@
     },
     {
       "name": "coingecko",
-      "url": "https://www.coingecko.com/en/coins/openleverage"
+      "url": "https://coingecko.com/en/coins/openleverage"
     },
     {
       "name": "Dune",
