@@ -3,7 +3,7 @@
   "website": "https://openleverage.finance/",
   "description": "OpenLeverage is a permissionless money market protocol enabling decentralized lending, borrowing, and margin trading across a diverse range of cryptocurrency pairs, fostering an accessible and efficient DeFi ecosystem.",
   "explorer": "https://arbiscan.io/token/0xD4d026322C88C2d49942A75DfF920FCfbC5614C1",
-  "type": "ERC20",
+  "type": "ARBITRUM",
   "symbol": "Old OLE",
   "decimals": 18,
   "status": "active",
@@ -43,10 +43,6 @@
     {
       "name": "coingecko",
       "url": "https://coingecko.com/en/coins/openleverage"
-    },
-    {
-      "name": "Dune",
-      "url": "https://dune.com/openleveragedev/dashboard"
     }
   ]
 }
