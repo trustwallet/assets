@@ -1,25 +1,28 @@
 {
-    "name": "NONbeta",
-    "symbol": "SOON",
+    "name": "Ethereans",
+    "symbol": "OS",
     "type": "ERC20",
     "decimals": 18,
-    "description": "Governance Token of the NONgov BETA. After the NONnation release the NON token, will be distributed 1:1 to OS holders",
-    "website": "https://nonnation.xyz",
+    "description": "Governance Token of EthereansOS (EthOS) protocol. More info: https://ethos.eth",
+    "website": "https://ethereans.app",
     "explorer": "https://etherscan.io/token/0x6100dd79fCAA88420750DceE3F735d168aBcB771",
     "status": "active",
     "id": "0x6100dd79fCAA88420750DceE3F735d168aBcB771",
+    "tags": [
+        "governance"
+    ],
     "links": [
         {
             "name": "twitter",
-            "url": "https://twitter.com/nonlabshq"
+            "url": "https://twitter.com/ethereansOS"
         },
         {
             "name": "discord",
-            "url": "https://discord.com/nonlabs"
+            "url": "https://discord.com/invite/ncbK6nYdFU"
         },
         {
             "name": "youtube",
-            "url": "https://youtube.com/@nonlabs"
+            "url": "https://youtube.com/@EthereansOS"
         }
     ]
-}
+} 
