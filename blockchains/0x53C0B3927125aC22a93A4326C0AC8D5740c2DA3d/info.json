@@ -1,10 +1,8 @@
 {
-    "name": "BNB Smart Chain",
-    "website": "https://www.bnbchain.world/en/smartChain",
-    "description": "A blockchain with a full-fledged environment for developing high-performance decentralized applications and cross-chain compatibility with Binance Chain.",
-    "explorer": "https://bscscan.com/",
-    "research": "https://research.binance.com/en/projects/bnb",
-    "symbol": "BNB",
+    "name": "Shiba Inu Diamond",
+    "description": "Shiba Inu Diamond is global transaction for all people",
+    "explorer": "https://bscscan.com/token/0x53C0B3927125aC22a93A4326C0AC8D5740c2DA3d",
+    "symbol": "SID",
     "type": "coin",
     "decimals": 18,
     "status": "active",
@@ -13,20 +11,16 @@
     ],
     "links": [
         {
-            "name": "github",
-            "url": "https://github.com/binance-chain/"
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/dexscan/bsc/0x26772310f6ac807a0192c62ee19f4b183d45b5f/"
         },
         {
             "name": "twitter",
-            "url": "https://twitter.com/BNBCHAIN"
+            "url": "https://twitter.com/FPLSTofficial"
         },
         {
-            "name": "reddit",
-            "url": "https://reddit.com/r/BinanceExchange"
+            "name": "geckoterminal",
+            "url": "https://www.geckoterminal.com/bsc/pools/0x26772310f6ac807a0192c62ee19f4b183d45b5ff"
         },
-        {
-            "name": "whitepaper",
-            "url": "https://www.binance.com/resources/ico/Binance_WhitePaper_en.pdf"
-        }
     ]
 }
