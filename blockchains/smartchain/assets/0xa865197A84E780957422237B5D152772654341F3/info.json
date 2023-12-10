@@ -1,12 +1,12 @@
 {
-    "name": "Openleverage Token",
+    "name": "Openleverage Token (Old)",
     "website": "https://openleverage.finance/",
-    "description": "A permissionless lending and margin trading protocol, enabling traders to go long or short with any pairs on DEXs efficiently and securely.",
+    "description": "OpenLeverage is a permissionless money market protocol enabling decentralized lending, borrowing, and margin trading across a diverse range of cryptocurrency pairs, fostering an accessible and efficient DeFi ecosystem.",
     "explorer": "https://bscscan.com/token/0xa865197A84E780957422237B5D152772654341F3",
     "type": "BEP20",
-    "symbol": "OLE",
+    "symbol": "Old OLE",
     "decimals": 18,
-    "status": "active",
+    "status": "abandoned",
     "id": "0xa865197A84E780957422237B5D152772654341F3",
     "tags": [
         "defi"
@@ -27,6 +27,26 @@
         {
             "name": "coinmarketcap",
             "url": "https://coinmarketcap.com/currencies/openleverage/"
+        },
+        {
+            "name": "docs",
+            "url": "https://docs.openleverage.finance/main/"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/openleverageofficial"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/OpenLeverageDev/openleverage-contracts"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/openleverage"
+        },
+        {
+            "name": "youtube",
+            "url": "https://youtube.com/@openleverageprotocol9047"
         }
     ]
 }
