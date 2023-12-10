@@ -1,7 +1,7 @@
 {
     "name": "yearn.finance",
     "website": "https://yearn.finance/",
-    "description": "YFI is the governance token for Yearn.Finance, a site that performs a variety of functions for DeFi users, moving their assets in and out of different liquidity pools in order to find the best yields.",
+    "description": "YFI is the governance token for Yearn.Finance, DeFi’s premier yield aggregator. Yearn gives individuals, DAOs and other protocols a way to deposit digital assets and receive yield.",
     "explorer": "https://etherscan.io/token/0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e",
     "research": "https://research.binance.com/en/projects/yearnfinance",
     "type": "ERC20",
@@ -16,11 +16,11 @@
     "links": [
         {
             "name": "github",
-            "url": "https://github.com/iearn-finance"
+            "url": "https://github.com/yearn"
         },
         {
             "name": "twitter",
-            "url": "https://twitter.com/iearnfinance"
+            "url": "https://twitter.com/yearnfi"
         },
         {
             "name": "blog",
@@ -28,11 +28,15 @@
         },
         {
             "name": "telegram",
-            "url": "https://t.me/iearnfinance"
+            "url": "https://t.me/yearnfinance"
         },
         {
-            "name": "whitepaper",
-            "url": "https://docs.yearn.finance/"
+            "name": "docs",
+            "url": "https://docs.yearn.fi/"
+        },
+        {
+            "name": "forum",
+            "url": "https://gov.yearn.fi/"
         },
         {
             "name": "coingecko",
