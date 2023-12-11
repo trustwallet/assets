@@ -1,13 +1,13 @@
 {
-    "name": "Openleverage Token (Old)",
+    "name": "Openleverage Token V2",
     "website": "https://openleverage.finance/",
     "description": "OpenLeverage is a permissionless money market protocol enabling decentralized lending, borrowing, and margin trading across a diverse range of cryptocurrency pairs, fostering an accessible and efficient DeFi ecosystem.",
-    "explorer": "https://bscscan.com/token/0xa865197A84E780957422237B5D152772654341F3",
-    "type": "BEP20",
-    "symbol": "Old OLE",
+    "explorer": "https://etherscan.io/token/0x1B6e9c73beE68102d9dd4A2627f97bFf4183ab0A",
+    "type": "ERC20",
+    "symbol": "OLE",
     "decimals": 18,
-    "status": "abandoned",
-    "id": "0xa865197A84E780957422237B5D152772654341F3",
+    "status": "active",
+    "id": "0x1B6e9c73beE68102d9dd4A2627f97bFf4183ab0A",
     "tags": [
         "defi"
     ],
