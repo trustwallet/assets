@@ -1,0 +1,12 @@
+{
+    "name": "Arbitrum Nova",
+    "website": "https://arbitrum.io/anytrust",
+    "description": "Arbitrum Nova is an AnyTrust chain that aims for ultra low transaction fees. Nova differs from Arbitrum One by not posting transaction data on chain, but to Data Availability Committee.",
+    "explorer": "https://nova.arbiscan.io",
+    "research": "https://docs.arbitrum.io/for-devs/gentle-introduction-dapps",
+    "symbol": "ETH",
+    "rpc_url": "https://nova.arbitrum.io/rpc",
+    "type": "coin",
+    "decimals": 18,
+    "status": "active"
+}
