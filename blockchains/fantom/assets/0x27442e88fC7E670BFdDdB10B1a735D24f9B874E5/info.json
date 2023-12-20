@@ -1,5 +1,5 @@
 {
-    "name": "wBTC",
+    "name": "BTC",
     "website": "https://wrappedtokens.space/",
     "description": "Wrapped Bitcoin (wBTC) is a representation of Bitcoin on the Ethereum blockchain, operating as an ERC-20 token. This page focuses on the technical details, use cases, and advantages of wBTC.",
     "explorer": "https://ftmscan.com/token/0x27442e88fc7e670bfdddb10b1a735d24f9b874e5",
@@ -10,7 +10,7 @@
     "id": "0x27442e88fc7e670bfdddb10b1a735d24f9b874e5",
     "links": [
         {
-            "name": "website",
+            "name": "source_code",
             "url": "https://wrappedtokens.space/"
         },
         {
@@ -19,6 +19,7 @@
         }
     ],
     "tags": [
-        "defi"
+        "wBTC",
+        "wrapped"
     ]
 }
