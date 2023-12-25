@@ -1,19 +1,20 @@
-name: Fix All
-
+name: Fixes
+# Runs on:
+# - on master branch of trustwallet repo: fix, checkin
+# - on other branch of trustwallet repo: fix, checkin
+# - on fork repos: fix-sanity only
 on:
   push:
     branches:
+      - 'master'
       - '*'
   workflow_dispatch:
-
 jobs:
   fix-all:
     runs-on: ubuntu-latest
-
-    if: github.repository_owner == 'trustwallet' && github.event.repository.fork == false
-
     steps:
       - name: Checkout (trustwallet repo, secret token)
+        if: github.repository_owner == 'trustwallet'
         uses: actions/checkout@v3
         with:
           # Use trust-ci fine-grained PAT to checkout and later commit the code
@@ -21,12 +22,21 @@ jobs:
           token: ${{ secrets.CI_GITHUB_TOKEN }}
           ref: ${{ github.ref }}
 
+      - name: Checkout (fork repo, default token)
+        if: github.repository_owner != 'trustwallet'
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          ref: ${{ github.ref }}
+
       - name: Set up Go
         uses: actions/setup-go@v4
         with:
           go-version: 1.18
+        id: go
 
       - name: Run fix
+        if: github.repository_owner == 'trustwallet'
         run: make fix
 
       - name: Show fix result (diff)
@@ -43,4 +53,4 @@ jobs:
         with:
           commit_user_name: trust-ci
           commit_user_email: "117647528+trust-ci@users.noreply.github.com"
-          commit_message: Auto fix all (sanity and consistency)
+          commit_message: Fixes (sanity and consistency, auto)
