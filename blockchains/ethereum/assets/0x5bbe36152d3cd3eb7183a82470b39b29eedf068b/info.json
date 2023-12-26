@@ -1,0 +1,40 @@
+{
+    "name": "Hord ETH Staking",
+    "website": "https://www.hord.fi/",
+    "description": "hETH is a liquid staking token that accumulates awards, increasing in value as the pool it's representing earns ETH through validator rewards.",
+    "explorer": "https://etherscan.io/token/0x5bbe36152d3cd3eb7183a82470b39b29eedf068b",
+    "type": "ERC20",
+    "symbol": "hETH",
+    "decimals": 18,
+    "status": "active",
+    "id": "0x5bbe36152d3cd3eb7183a82470b39b29eedf068b",
+    "tags": [
+        "eth-staking", "liquid-staking", "lsd", "defi"
+    ],
+    "links": [
+        {
+            "name": "website",
+            "url": "https://hord.fi"
+        },
+        {
+            "name": "X",
+            "url": "https://x.com/hordapp"
+        },
+        {
+            "name": "Discord",
+            "url": "https://discord.gg/xeTWKHWEbS/"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/hordnews"
+        },
+        {
+            "name": "Defillama",
+            "url": "https://defillama.com/protocol/hord"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://www.coingecko.com/en/coins/hord-heth"
+        }
+    ]
+}
