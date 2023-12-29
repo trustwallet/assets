@@ -5,9 +5,9 @@
   "decimals": 18,
   "website": "https://frgx.finance",
   "description": "FRGX is a token on BNB Chain with a fair launch in a decentralized environment and an audience of 1.6 M users prepared over 4 years",
-  "explorer": "https://bscscan.com/address/0xc703da39ae3b9db67c207c7bad8100e1afdc0f9c",
+  "explorer": "https://bscscan.com/token/0xc703da39ae3b9db67c207c7bad8100e1afdc0f9c",
   "status": "active",
-  "id": "0xc703da39ae3b9db67c207c7bad8100e1afdc0f9c",
+  "id": "0xC703dA39aE3B9Db67C207c7Bad8100E1AfdC0F9c",
   "links": [
       {
           "name": "twitter",
@@ -18,12 +18,20 @@
           "url": "https://t.me/frgxfinance"
       },
       {
-          "name": "litepaper",
+          "name": "whitepaper",
           "url": "https://frgx.finance/litepaper"
       },
       {
           "name": "source_code",
-          "url": "https://bscscan.com/address/0xc703da39ae3b9db67c207c7bad8100e1afdc0f9c#code"
+          "url": "https://bscscan.com/token/0xc703da39ae3b9db67c207c7bad8100e1afdc0f9c#code"
+      },
+      {
+        "name": "docs",
+        "url": "https://docs.frgx.finance/"
+      },
+      {
+        "name": "discord",
+        "url": "https://discord.gg/frgxfinance"
       }
   ],
   "tags": [
