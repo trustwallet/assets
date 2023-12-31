@@ -1,0 +1,3 @@
+import { walletConnect } from "@thirdweb-dev/react";
+
+const walletConnectConfig = walletConnect(options);
