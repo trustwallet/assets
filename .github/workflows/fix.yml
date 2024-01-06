@@ -44,3 +44,25 @@ jobs:
           commit_user_name: trust-ci
           commit_user_email: "117647528+trust-ci@users.noreply.github.com"
           commit_message: Auto fix all (sanity and consistency)
+            - ad: gitStream repo aracısı
+  # Tam işlemi veya sürümü sabitleyebilirsiniz.
+  # kullanımlar: doğrusal-b/gitstream-github-action@5b9097d1c596daa01d7a4859dd979bf4771d5a51
+  kullanım alanları: doğrusal-b/gitstream-github-action@v1.0.13
+  ile:
+    # Tam Havuzun Yolu
+    tam_depo:
+    # Ödeme yapılacak Merkez Şube Referansı
+    head_ref:
+    # Ödeme yapılacak Ana Şube Referansı
+    base_ref:
+    # İstemci yükü
+    client_payload:
+    # Github uygulama yükleme kimliği
+    kurulum_id: # isteğe bağlı
+    # Sonuçların gönderileceği çözümleyici URL'si
+    çözümleyici_url:
+    # Çözümleyici için isteğe bağlı belirteç
+    çözücü_token: # isteğe bağlı
+    # Ayrıştırıcıyı hata ayıklama modunda çalıştır
+    debug_mode: # isteğe bağlı
+          
