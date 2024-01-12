@@ -8,10 +8,10 @@ import (
 	"github.com/trustwallet/assets-go-libs/file"
 	"github.com/trustwallet/assets-go-libs/path"
 	"github.com/trustwallet/assets-go-libs/validation"
-	"github.com/trustwallet/assets-go-libs/validation/info"
 	"github.com/trustwallet/assets-go-libs/validation/list"
 	"github.com/trustwallet/assets-go-libs/validation/tokenlist"
 	"github.com/trustwallet/assets/internal/config"
+	"github.com/trustwallet/assets/internal/info"
 	"github.com/trustwallet/go-primitives/coin"
 )
 
