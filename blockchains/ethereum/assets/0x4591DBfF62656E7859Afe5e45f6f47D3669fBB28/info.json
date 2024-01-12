@@ -1,0 +1,37 @@
+{
+    "name": "Prisma mkUSD",
+    "website": "https://prismafinance.com/",
+    "description": "The end game for liquid staking tokens. A non-custodial and decentralized Ethereum LST-backed stablecoin.",
+    "explorer": "https://etherscan.io/address/0x4591DBfF62656E7859Afe5e45f6f47D3669fBB28",
+    "symbol": "mkUSD",
+    "type": "ERC20",
+    "decimals": 18,
+    "status": "active",
+    "id": "0x4591DBfF62656E7859Afe5e45f6f47D3669fBB28",
+    "tags": [
+        "defi",
+        "stablecoin"
+    ],
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/prisma-fi"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/PrismaFi"
+        },
+	{
+            "name": "discord",
+            "url": "https://discord.gg/prismafinance"
+	},
+	{
+            "name": "coingecko",
+            "url": "https://www.coingecko.com/en/coins/prisma-mkusd"
+	},
+	{
+            "name": "docs",
+            "url": "https://docs.prismafinance.com/"
+	}
+    ]
+}
