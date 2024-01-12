@@ -224,7 +224,7 @@ func ValidateDescriptionWebsite(description, website string) error {
 }
 
 func ValidateExplorer(explorer, name string, chain coin.Coin, addr, tokenType string) error {
-	// explorer url is composed with values outside info.json
+	// explorer url is composed with values outside info.json.
 	if chain == coin.Nativeinjective() {
 		return nil
 	}
