@@ -44,6 +44,7 @@ func NewStagingAssetsService(fs *file.Service, rs *report.Service, paths []strin
 			coin.ARBITRUM:   true,
 			coin.SMARTCHAIN: true,
 			coin.BASE:       true,
+			coin.AVALANCHEC: true,
 		},
 	}
 }
