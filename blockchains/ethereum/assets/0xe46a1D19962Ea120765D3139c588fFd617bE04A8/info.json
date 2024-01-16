@@ -1,32 +1,32 @@
 {
     "name": "EverETH",
-    "website": "https://www.evereth.net",
-    "description": "Building dApps and protocols for the Ethereum network.",
-    "explorer": "https://etherscan.io/token/0xe46a1d19962ea120765d3139c588ffd617be04a8",
-    "research": "https://docs.evereth.net",
-    "symbol": "EETH",
     "type": "ERC20",
+    "symbol": "EETH",
     "decimals": 18,
+    "website": "https://EverETH.net/",
+    "description": "Building dApps and protocols for the Ethereum network.",
+    "explorer": "https://etherscan.io/token/0xe46a1D19962Ea120765D3139c588fFd617bE04A8",
     "status": "active",
-    "tags": [
-        "dApps"
-    ],
+    "id": "0xe46a1D19962Ea120765D3139c588fFd617bE04A8",
     "links": [
-        {
-            "name": "github",
-            "url": "https://github.com/EverETHcode/"
-        },
         {
             "name": "twitter",
             "url": "https://twitter.com/EverETHofficial"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/EverETHcode"
         },
         {
             "name": "telegram",
             "url": "https://t.me/EverETHofficial"
         },
         {
-            "name": "whitepaper",
+            "name": "docs",
             "url": "https://docs.evereth.net"
         }
+    ],
+    "tags": [
+        "DeFi"
     ]
 }
