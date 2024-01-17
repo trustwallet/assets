@@ -1,14 +1,14 @@
 {
     "name": "ANKR",
-    "website": "https://ankr.com",
+    "symbol": "ANKR",
+    "type": "BEP2",
+    "decimals": 8,
     "description": "Ankr is building an infrastructure platform and marketplace for Web3-stack deployment.",
+    "website": "https://ankr.com",
     "explorer": "https://explorer.binance.org/asset/ANKR-E97",
     "research": "https://research.binance.com/en/projects/ankr-network",
-    "type": "BEP2",
-    "symbol": "ANKR",
-    "decimals": 8,
     "status": "active",
-    "id": "ANKR-E97",
+    "id": "ankr-e97",
     "links": [
         {
             "name": "blog",

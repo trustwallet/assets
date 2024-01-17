@@ -1,41 +1,41 @@
 {
-    "type": "ESDT",
-    "id": "EGLDRIDE-7bd51a",
-    "name": "EGLD/RIDE LP (on MultiversX)",
+    "name": "EGLD/RIDE LP",
     "symbol": "EGLDRIDE",
+    "type": "ESDT",
     "decimals": 18,
+    "description": "Liquidity Provider (LP) Token obtained by adding liquidity in the EGLD/RIDE pool on the Maiar DEX.",
+    "website": "https://maiar.exchange",
+    "explorer": "https://explorer.multiversx.com/tokens/egldride-7bd51a",
     "status": "active",
-    "description": "Liquidity Provider (LP) Token obtained by adding liquidity in the EGLD/RIDE pool on xExchange.",
-    "website": "https://xexchange.com",
-    "explorer": "https://explorer.multiversx.com/tokens/EGLDRIDE-7bd51a",
+    "id": "egldride-7bd51a",
     "links": [
         {
             "name": "docs",
-            "url": "https://docs.xexchange.com"
+            "url": "https://docs.maiar.exchange"
         },
         {
             "name": "twitter",
-            "url": "https://twitter.com/xExchangeApp"
+            "url": "https://twitter.com/MaiarExchange"
         },
         {
             "name": "telegram",
-            "url": "https://t.me/xExchangeApp"
+            "url": "https://t.me/MaiarExchange"
         },
         {
             "name": "facebook",
-            "url": "https://facebook.com/MultiversX"
+            "url": "https://facebook.com/ElrondNetwork"
         },
         {
             "name": "blog",
-            "url": "https://multiversx.com/blog"
+            "url": "https://elrond.com/blog"
         },
         {
             "name": "github",
-            "url": "https://github.com/multiversx"
+            "url": "https://github.com/ElrondNetwork"
         },
         {
             "name": "source_code",
-            "url": "https://github.com/multiversx/mx-exchange-sc"
+            "url": "https://github.com/ElrondNetwork/sc-dex-rs"
         }
     ],
     "tags": [

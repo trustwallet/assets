@@ -1,13 +1,13 @@
 {
-    "type": "ESDT",
-    "id": "USDC-c76f1f",
-    "name": "Wrapped USDC (on MultiversX)",
+    "name": "Wrapped USDC",
     "symbol": "USDC",
+    "type": "ESDT",
     "decimals": 6,
+    "description": "USDC stablecoin originating on Ethereum, bridged as an ESDT token on Elrond. 1 USDC = 1 Wrapped USDC",
+    "website": "https://www.centre.io/usdc",
+    "explorer": "https://explorer.multiversx.com/tokens/usdc-c76f1f",
     "status": "active",
-    "description": "USDC stablecoin originating on Ethereum, bridged as an ESDT token on MultiversX. 1 USDC = 1 Wrapped USDC",
-    "website": "https://xexchange.com",
-    "explorer": "https://explorer.multiversx.com/tokens/USDC-c76f1f",
+    "id": "usdc-c76f1f",
     "links": [
         {
             "name": "github",

@@ -1,12 +1,12 @@
 {
     "name": "IoTeX Network",
-    "website": "https://iotex.io",
+    "symbol": "IOTX",
+    "type": "BEP2",
+    "decimals": 8,
     "description": "IOTX will be a Decentralized Network for Internet of Things. Powered by a Privacy-Centric Blockchain.",
+    "website": "https://iotex.io",
     "explorer": "https://explorer.binance.org/asset/IOTX-0ED",
     "research": "https://research.binance.com/en/projects/iotx",
-    "type": "BEP2",
-    "symbol": "IOTX",
-    "decimals": 8,
     "status": "active",
-    "id": "IOTX-0ED"
+    "id": "iotx-0ed"
 }

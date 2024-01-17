@@ -1,45 +1,45 @@
 {
-    "type": "ESDT",
-    "id": "WEGLD-bd4d79",
-    "name": "Wrapped EGLD (on MultiversX)",
+    "name": "Wrapped EGLD",
     "symbol": "WEGLD",
+    "type": "ESDT",
     "decimals": 18,
+    "description": "WEGLD is an ESDT token that has the same value as EGLD, the native coin of the Elrond blockchain.",
+    "website": "https://maiar.exchange",
+    "explorer": "https://explorer.multiversx.com/tokens/wegld-bd4d79",
     "status": "active",
-    "description": "WEGLD is an ESDT token that has the same value as EGLD, the native coin of the MultiversX blockchain.",
-    "website": "https://xexchange.com",
-    "explorer": "https://explorer.multiversx.com/tokens/WEGLD-bd4d79",
+    "id": "wegld-bd4d79",
     "links": [
         {
             "name": "docs",
-            "url": "https://docs.multiversx.com"
+            "url": "https://docs.elrond.com"
         },
         {
             "name": "twitter",
-            "url": "https://twitter.com/MultiversX"
+            "url": "https://twitter.com/elrondnetwork"
         },
         {
             "name": "telegram",
-            "url": "https://t.me/MultiversX"
+            "url": "https://t.me/ElrondNetwork"
         },
         {
             "name": "facebook",
-            "url": "https://facebook.com/MultiversX"
+            "url": "https://facebook.com/ElrondNetwork"
         },
         {
             "name": "blog",
-            "url": "https://multiversx.com/blog"
+            "url": "https://elrond.com/blog"
         },
         {
             "name": "github",
-            "url": "https://github.com/multiversx"
+            "url": "https://github.com/ElrondNetwork"
         },
         {
             "name": "coinmarketcap",
-            "url": "https://coinmarketcap.com/currencies/wrapped-multiversx-egld"
+            "url": "https://coinmarketcap.com/currencies/wrapped-elrond-egld"
         },
         {
             "name": "coingecko",
-            "url": "https://coingecko.com/en/coins/wrapped-egld"
+            "url": "https://coingecko.com/en/coins/wrapped-elrond"
         }
     ],
     "tags": [

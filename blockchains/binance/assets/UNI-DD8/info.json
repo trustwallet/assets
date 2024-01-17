@@ -1,12 +1,12 @@
 {
     "name": "Uniswap",
-    "website": "https://uniswap.org",
+    "symbol": "UNI",
+    "type": "BEP2",
+    "decimals": 8,
     "description": "UNI is the Uniswap protocol token. Uniswap is a decentralized protocol for automated liquidity provision on Ethereum.",
+    "website": "https://uniswap.org",
     "explorer": "https://explorer.binance.org/asset/UNI-DD8",
     "research": "https://research.binance.com/en/projects/uniswap",
-    "type": "BEP2",
-    "symbol": "UNI",
-    "decimals": 8,
     "status": "active",
-    "id": "UNI-DD8"
+    "id": "uni-dd8"
 }
