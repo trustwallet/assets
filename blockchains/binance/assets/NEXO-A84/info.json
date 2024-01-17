@@ -1,13 +1,13 @@
 {
     "name": "Nexo",
-    "symbol": "NEXO",
-    "type": "BEP2",
-    "decimals": 8,
-    "description": "NEXO (NEXO) is a compliant token that is backed by the underlying assets of Nexo’s loan portfolio.",
     "website": "http://nexo.io",
+    "description": "NEXO (NEXO) is a compliant token that is backed by the underlying assets of Nexo’s loan portfolio.",
     "explorer": "https://explorer.binance.org/asset/NEXO-A84",
+    "type": "BEP2",
+    "symbol": "NEXO",
+    "decimals": 8,
     "status": "active",
-    "id": "nexo-a84",
+    "id": "NEXO-A84",
     "links": [
         {
             "name": "github",

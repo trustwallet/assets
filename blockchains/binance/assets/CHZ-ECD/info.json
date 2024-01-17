@@ -1,13 +1,16 @@
 {
     "name": "Chiliz",
-    "symbol": "CHZ",
-    "type": "BEP2",
-    "decimals": 8,
-    "description": "Chiliz, powering Socios.com, aims to give sports and esports fans the ability to crowd-manage their favorite teams, games, leagues, and events.",
     "website": "https://chiliz.com",
+    "description": "Chiliz, powering Socios.com, aims to give sports and esports fans the ability to crowd-manage their favorite teams, games, leagues, and events.",
     "explorer": "https://explorer.binance.org/asset/CHZ-ECD",
+    "type": "BEP2",
+    "symbol": "CHZ",
+    "decimals": 8,
     "status": "active",
-    "id": "chz-ecd",
+    "id": "CHZ-ECD",
+    "tags": [
+        "nft"
+    ],
     "links": [
         {
             "name": "telegram",
@@ -33,8 +36,5 @@
             "name": "coingecko",
             "url": "https://coingecko.com/en/coins/chiliz/"
         }
-    ],
-    "tags": [
-        "nft"
     ]
 }
