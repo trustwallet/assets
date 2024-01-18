@@ -915,6 +915,17 @@
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0x95c91eEf65F50570cFC3f269961a00108Cf7BF59/logo.png",
             "pairs": []
+        },
+           {
+            "chainId": 56,
+            "asset": "c20000714_t0x0115d5689f9cf13C837Cdc347fFA22E7b0361c12",
+            "type": "BEP20",
+            "address": "0x0115d5689f9cf13C837Cdc347fFA22E7b0361c12",
+            "name": "Tether USD",
+            "symbol": "USDT",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0x55d398326f99059fF775485246999027B3197955/logo.png",
+            "pairs": []
         }
     ],
     "version": {
