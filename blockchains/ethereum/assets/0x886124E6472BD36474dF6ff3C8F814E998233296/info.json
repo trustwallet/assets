@@ -6,6 +6,7 @@
     "type": "ERC20",
     "symbol": "FUR",
     "decimals": 18,
+    "status": "active",
     "id": "0x886124E6472BD36474dF6ff3C8F814E998233296",
     "tags": [
         "memes"
@@ -25,7 +26,7 @@
         },
         {
             "name": "coingecko",
-            "url": "https://www.coingecko.com/en/coins/furari"
+            "url": "https://coingecko.com/en/coins/furari"
         }
     ]
 }
