@@ -1,11 +1,40 @@
 {
     "name": "Baby Doge Coin",
-    "website": "https://babydogecoin.com/",
-    "description": "Earn Coins & Rescue Dogs. Baby Doge has learned a few tricks and lessons from his meme father, Doge Coin. A new crypto birthed by members of the Doge Coin online community. Baby Doge seeks to impress his father by showing his new improved transaction speeds & adorableness. He is Hyper-deflationary with an integrated smart staking system built in to reward you, so more baby doge coins are being automatically added to your wallet each transaction. Simply Love, pet, and watch your baby doge grow.",
-    "explorer": "https://bscscan.com/token/0xc748673057861a797275CD8A068AbB95A902e8de",
     "type": "BEP20",
     "symbol": "BabyDoge",
     "decimals": 9,
+    "website": "https://babydoge.com/",
+    "description": "Baby Doge Coin has learned a few tricks and lessons from his meme father, Doge. A new crypto birthed by fans of the Doge Meme online community. He is Hyper-deflationary with static reflection that rewards holders, so more baby doge coins are being automatically added to your wallet each transaction. Simply Love, pet, and hold as 5% from each transaction is automatically redistributed to baby doge holders via smart contract.",
+    "explorer": "https://bscscan.com/token/0xc748673057861a797275CD8A068AbB95A902e8de",
     "status": "active",
-    "id": "0xc748673057861a797275CD8A068AbB95A902e8de"
+    "id": "0xc748673057861a797275CD8A068AbB95A902e8de",
+    "tags": [
+        "deflationary"
+    ],
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/babydogecoin"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/babydogecoin"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/babydogecoin"
+        },
+        {
+            "name": "facebook",
+            "url": "https://facebook.com/babydogecoin"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/user/Baby_doge_coin"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://cdn.filestackcontent.com/FNtpWVlfRGyCGhth5FMA"
+        }
+    ]
 }

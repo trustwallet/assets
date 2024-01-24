@@ -1,7 +1,7 @@
 {
-    "name": "Uniswap",
+    "name": "BNB pegged Uniswap",
     "website": "https://uniswap.org",
-    "description": "UNI is the Uniswap protocol token. Uniswap is a decentralized protocol for automated liquidity provision on Ethereum.",
+    "description": "BNB pegged Uniswap (UNI BEP20) is a token issued by Binance on Smart Chain; its price is pegged to Uniswap (UNI ERC20) at a ratio of 1:1.",
     "explorer": "https://bscscan.com/token/0xBf5140A22578168FD562DCcF235E5D43A02ce9B1",
     "research": "https://research.binance.com/en/projects/uniswap",
     "type": "BEP20",
@@ -9,6 +9,11 @@
     "decimals": 18,
     "status": "active",
     "id": "0xBf5140A22578168FD562DCcF235E5D43A02ce9B1",
+    "tags": [
+        "binance-peg",
+        "defi",
+        "governance"
+    ],
     "links": [
         {
             "name": "blog",
