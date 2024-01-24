@@ -195,9 +195,6 @@
                     "base": "c20000714_t0xff44967f2E4EBE0b8c5b6812f25e1b9BceC70b34"
                 },
                 {
-                    "base": "c20000714_t0x88479186BAC914E4313389a64881F5ed0153C765"
-                },
-                {
                     "base": "c20000714_t0xc748673057861a797275CD8A068AbB95A902e8de"
                 }
             ]
@@ -890,16 +887,6 @@
             "pairs": []
         },
         {
-            "asset": "c20000714_t0x88479186BAC914E4313389a64881F5ed0153C765",
-            "type": "BEP20",
-            "address": "0x88479186BAC914E4313389a64881F5ed0153C765",
-            "name": "SquidGrow",
-            "symbol": "SquidGrow",
-            "decimals": 19,
-            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0x88479186BAC914E4313389a64881F5ed0153C765/logo.png",
-            "pairs": []
-        },
-        {
             "asset": "c20000714_t0xC3137c696796D69F783CD0Be4aB4bB96814234Aa",
             "type": "BEP20",
             "address": "0xC3137c696796D69F783CD0Be4aB4bB96814234Aa",
@@ -917,6 +904,16 @@
             "symbol": "BabyDoge",
             "decimals": 9,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0xc748673057861a797275CD8A068AbB95A902e8de/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c20000714_t0x95c91eEf65F50570cFC3f269961a00108Cf7BF59",
+            "type": "BEP20",
+            "address": "0x95c91eEf65F50570cFC3f269961a00108Cf7BF59",
+            "name": "The DONS",
+            "symbol": "DONS",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0x95c91eEf65F50570cFC3f269961a00108Cf7BF59/logo.png",
             "pairs": []
         }
     ],
