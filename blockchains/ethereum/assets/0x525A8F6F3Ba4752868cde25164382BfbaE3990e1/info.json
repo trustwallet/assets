@@ -1,11 +1,11 @@
 {
-    "name": "NYM",
+    "name": "NYM (NYM)",
     "type": "ERC20",
     "symbol": "NYM",
     "decimals": 6,
-    "website": "https://nymtech.net/",
-    "description": "Nym is an open-source, decentralized and permissionless privacy system. It provides full-stack privacy, allowing other applications, services or blockchains to provide their users with strong metadata protection, at both the network level (mixnet), and the application level (anonymous credentials).",
-    "explorer": "https://etherscan.io/token/0x525A8F6F3Ba4752868cde25164382BfbaE3990e1",
+    "website": "https://nymtech.net",
+    "description": "Nym provides strong network-level privacy against sophisticated end-to-end attackers, and anonymous transactions using blinded, re-randomizable, decentralized credentials.",
+    "explorer": "https://etherscan.io/token/0x525a8f6f3ba4752868cde25164382bfbae3990e1",
     "status": "active",
     "id": "0x525A8F6F3Ba4752868cde25164382BfbaE3990e1",
     "links": [
@@ -22,11 +22,35 @@
             "url": "https://t.me/nymchan"
         },
         {
+            "name": "blog",
+            "url": "https://blog.nymtech.net"
+        },
+        {
+            "name": "telegram_news",
+            "url": "https://t.me/nymtech"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/nym"
+        },
+        {
             "name": "coinmarketcap",
-            "url": "https://coinmarketcap.com/ru/currencies/nym/"
+            "url": "https://coinmarketcap.com/currencies/nym/"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/nym"
+        },
+        {
+            "name": "youtube",
+            "url": "https://youtube.com/@Nymtech"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://nymtech.net/nym-whitepaper.pdf"
         }
     ],
     "tags": [
-        "defi"
+        "privacy"
     ]
 }
