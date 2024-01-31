@@ -1,16 +1,13 @@
 {
     "name": "Cat Intelligence Agency",
-    "website": "https://www.cia.com/",
-    "description": "Uniting the fun of memecoins with the power of community engagement to revolutionize the Ethereum blockchain, while fostering charity and innovation.",
-    "explorer": "https://etherscan.io/token/0x886124E6472BD36474dF6ff3C8F814E998233296",
     "type": "ERC20",
     "symbol": "CIA",
     "decimals": 18,
+    "website": "https://cia.com",
+    "description": "Uniting the fun of memecoins with the power of community engagement to revolutionize the Ethereum blockchain, while fostering charity and innovation.",
+    "explorer": "https://etherscan.io/token/0x886124E6472BD36474dF6ff3C8F814E998233296",
     "status": "active",
     "id": "0x886124E6472BD36474dF6ff3C8F814E998233296",
-    "tags": [
-        "memes"
-    ],
     "links": [
         {
             "name": "twitter",
@@ -19,10 +16,9 @@
         {
             "name": "telegram",
             "url": "https://t.me/cia_entry"
-        },
-        {
-            "name": "coingecko",
-            "url": "https://coingecko.com/en/coins/cat-intelligence-agency"
         }
+    ],
+    "tags": [
+        "memes"
     ]
 }
