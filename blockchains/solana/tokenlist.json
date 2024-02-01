@@ -1,0 +1,462 @@
+{
+    "name": "Trust Wallet: Solana List",
+    "logoURI": "https://trustwallet.com/assets/images/favicon.png",
+    "timestamp": "2024-02-01T14:23:26.183301",
+    "tokens": [
+        {
+            "asset": "c501_t2FPyTwcZLUg1MDrwsyoP4D6s1tM7hAkHYRjkNb5w6Pxk",
+            "type": "SPL",
+            "address": "2FPyTwcZLUg1MDrwsyoP4D6s1tM7hAkHYRjkNb5w6Pxk",
+            "name": "Wrapped Ether",
+            "symbol": "WETH",
+            "decimals": 6,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/solana/assets/2FPyTwcZLUg1MDrwsyoP4D6s1tM7hAkHYRjkNb5w6Pxk/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c501_t2ueY1bLcPHfuFzEJq7yN1V2Wrpu8nkun9xG2TVCE1mhD",
+            "type": "SPL",
+            "address": "2ueY1bLcPHfuFzEJq7yN1V2Wrpu8nkun9xG2TVCE1mhD",
+            "name": "Hedget (Portal)",
+            "symbol": "HGET",
+            "decimals": 6,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/solana/assets/2ueY1bLcPHfuFzEJq7yN1V2Wrpu8nkun9xG2TVCE1mhD/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c501_t2wpTofQ8SkACrkZWrZDjXPitYa8AwWgX8AfxdeBRRVLX",
+            "type": "SPL",
+            "address": "2wpTofQ8SkACrkZWrZDjXPitYa8AwWgX8AfxdeBRRVLX",
+            "name": "Chainlink (Portal)",
+            "symbol": "LINK",
+            "decimals": 8,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/solana/assets/2wpTofQ8SkACrkZWrZDjXPitYa8AwWgX8AfxdeBRRVLX/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c501_t3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh",
+            "type": "SPL",
+            "address": "3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh",
+            "name": "Wrapped BTC (Portal)",
+            "symbol": "WBTC",
+            "decimals": 8,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/solana/assets/3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c501_t3vAs4D1WE6Na4tCgt4BApgFfENbm8WY7q4cSPD1yM4Cg",
+            "type": "SPL",
+            "address": "3vAs4D1WE6Na4tCgt4BApgFfENbm8WY7q4cSPD1yM4Cg",
+            "name": "Aave Token (Portal)",
+            "symbol": "AAVE",
+            "decimals": 8,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/solana/assets/3vAs4D1WE6Na4tCgt4BApgFfENbm8WY7q4cSPD1yM4Cg/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c501_t4CsZsUCoKFiaGyU7DEVDayqeVtG8iqgGDR6RjzQmzQao",
+            "type": "SPL",
+            "address": "4CsZsUCoKFiaGyU7DEVDayqeVtG8iqgGDR6RjzQmzQao",
+            "name": "AnchorUST (Portal)",
+            "symbol": "aUST",
+            "decimals": 6,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/solana/assets/4CsZsUCoKFiaGyU7DEVDayqeVtG8iqgGDR6RjzQmzQao/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c501_t4Fo67MYQpVhZj9R7jQTd63FPAnWbPpaafAUxsMGX2geP",
+            "type": "SPL",
+            "address": "4Fo67MYQpVhZj9R7jQTd63FPAnWbPpaafAUxsMGX2geP",
+            "name": "DAI (Portal from Polygon)",
+            "symbol": "DAIpo",
+            "decimals": 8,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/solana/assets/4Fo67MYQpVhZj9R7jQTd63FPAnWbPpaafAUxsMGX2geP/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c501_t4hpngEp1v3CXpeKB81Gw4sv7YvwUVRKvY3SGag9ND8Q4",
+            "type": "SPL",
+            "address": "4hpngEp1v3CXpeKB81Gw4sv7YvwUVRKvY3SGag9ND8Q4",
+            "name": "Smooth Love Potion (Portal)",
+            "symbol": "SLP",
+            "decimals": 0,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/solana/assets/4hpngEp1v3CXpeKB81Gw4sv7YvwUVRKvY3SGag9ND8Q4/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c501_t4Hx6Bj56eGyw8EJrrheM6LBQAvVYRikYCWsALeTrwyRU",
+            "type": "SPL",
+            "address": "4Hx6Bj56eGyw8EJrrheM6LBQAvVYRikYCWsALeTrwyRU",
+            "name": "dYdX (Portal)",
+            "symbol": "DYDX",
+            "decimals": 8,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/solana/assets/4Hx6Bj56eGyw8EJrrheM6LBQAvVYRikYCWsALeTrwyRU/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c501_t4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R",
+            "type": "SPL",
+            "address": "4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R",
+            "name": "Raydium",
+            "symbol": "RAY",
+            "decimals": 6,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/solana/assets/4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c501_t5goWRao6a3yNC4d6UjMdQxonkCMvKBwdpubU3qhfcdf1",
+            "type": "SPL",
+            "address": "5goWRao6a3yNC4d6UjMdQxonkCMvKBwdpubU3qhfcdf1",
+            "name": "Tether USD (PoS) (Portal from Polygon)",
+            "symbol": "USDTpo",
+            "decimals": 6,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/solana/assets/5goWRao6a3yNC4d6UjMdQxonkCMvKBwdpubU3qhfcdf1/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c501_t4wjPQJ6PrkC4dHhYghwJzGBVP78DkBzA2U3kHoFNBuhj",
+            "type": "SPL",
+            "address": "4wjPQJ6PrkC4dHhYghwJzGBVP78DkBzA2U3kHoFNBuhj",
+            "name": "LIQ Protocol",
+            "symbol": "LIQ",
+            "decimals": 6,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/solana/assets/4wjPQJ6PrkC4dHhYghwJzGBVP78DkBzA2U3kHoFNBuhj/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c501_t5RpUwQ8wtdPCZHhu6MERp2RGrpobsbZ6MH5dDHkUjs2",
+            "type": "SPL",
+            "address": "5RpUwQ8wtdPCZHhu6MERp2RGrpobsbZ6MH5dDHkUjs2",
+            "name": "Binance USD (Portal from BSC)",
+            "symbol": "BUSDbs",
+            "decimals": 8,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/solana/assets/5RpUwQ8wtdPCZHhu6MERp2RGrpobsbZ6MH5dDHkUjs2/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c501_t5TtSKAamFq88grN1QGrEaZ1AjjyciqnCya1aiMhAgFvG",
+            "type": "SPL",
+            "address": "5TtSKAamFq88grN1QGrEaZ1AjjyciqnCya1aiMhAgFvG",
+            "name": "Chiliz (Portal)",
+            "symbol": "CHZ",
+            "decimals": 8,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/solana/assets/5TtSKAamFq88grN1QGrEaZ1AjjyciqnCya1aiMhAgFvG/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c501_t7dgHoN8wBZCc5wbnQ2C47TDnBMAxG4Q5L3KjP67z8kNi",
+            "type": "SPL",
+            "address": "7dgHoN8wBZCc5wbnQ2C47TDnBMAxG4Q5L3KjP67z8kNi",
+            "name": "Decentraland (Portal)",
+            "symbol": "MANA",
+            "decimals": 8,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/solana/assets/7dgHoN8wBZCc5wbnQ2C47TDnBMAxG4Q5L3KjP67z8kNi/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c501_t7dVH61ChzgmN9BwG4PkzwRP8PbYwPJ7ZPNF2vamKT2H8",
+            "type": "SPL",
+            "address": "7dVH61ChzgmN9BwG4PkzwRP8PbYwPJ7ZPNF2vamKT2H8",
+            "name": "Huobi BTC (Portal)",
+            "symbol": "HBTC",
+            "decimals": 8,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/solana/assets/7dVH61ChzgmN9BwG4PkzwRP8PbYwPJ7ZPNF2vamKT2H8/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c501_t7gjNiPun3AzEazTZoFEjZgcBMeuaXdpjHq2raZTmTrfs",
+            "type": "SPL",
+            "address": "7gjNiPun3AzEazTZoFEjZgcBMeuaXdpjHq2raZTmTrfs",
+            "name": "Curve DAO Token (Portal)",
+            "symbol": "CRV",
+            "decimals": 8,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/solana/assets/7gjNiPun3AzEazTZoFEjZgcBMeuaXdpjHq2raZTmTrfs/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c501_t7i5KKsX2weiTkry7jA4ZwSuXGhs5eJBEjY8vVxR4pfRx",
+            "type": "SPL",
+            "address": "7i5KKsX2weiTkry7jA4ZwSuXGhs5eJBEjY8vVxR4pfRx",
+            "name": "Green Metaverse Token",
+            "symbol": "GMT",
+            "decimals": 9,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/solana/assets/7i5KKsX2weiTkry7jA4ZwSuXGhs5eJBEjY8vVxR4pfRx/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c501_t7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs",
+            "type": "SPL",
+            "address": "7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs",
+            "name": "Ether (Portal)",
+            "symbol": "ETH",
+            "decimals": 8,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/solana/assets/7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c501_t7VQo3HFLNH5QqGtM8eC3XQbPkJUu7nS9LeGWjerRh5Sw",
+            "type": "SPL",
+            "address": "7VQo3HFLNH5QqGtM8eC3XQbPkJUu7nS9LeGWjerRh5Sw",
+            "name": "HUSD Stablecoin (Portal)",
+            "symbol": "HUSD",
+            "decimals": 8,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/solana/assets/7VQo3HFLNH5QqGtM8eC3XQbPkJUu7nS9LeGWjerRh5Sw/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c501_t8cTNUtcV2ueC3royJ642uRnvTxorJAWLZc58gxAo7y56",
+            "type": "SPL",
+            "address": "8cTNUtcV2ueC3royJ642uRnvTxorJAWLZc58gxAo7y56",
+            "name": "Synthetix Network Token (Portal)",
+            "symbol": "SNX",
+            "decimals": 8,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/solana/assets/8cTNUtcV2ueC3royJ642uRnvTxorJAWLZc58gxAo7y56/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c501_t8FU95xFJhUUkyyCLU13HSzDLs7oC4QZdXQHL6SCeab36",
+            "type": "SPL",
+            "address": "8FU95xFJhUUkyyCLU13HSzDLs7oC4QZdXQHL6SCeab36",
+            "name": "Uniswap (Portal)",
+            "symbol": "UNI",
+            "decimals": 8,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/solana/assets/8FU95xFJhUUkyyCLU13HSzDLs7oC4QZdXQHL6SCeab36/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c501_t8gC27rQF4NEDYfyf5aS8ZmQJUum5gufowKGYRRba4ENN",
+            "type": "SPL",
+            "address": "8gC27rQF4NEDYfyf5aS8ZmQJUum5gufowKGYRRba4ENN",
+            "name": "Fantom (Portal from Ethereum)",
+            "symbol": "FTMet",
+            "decimals": 8,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/solana/assets/8gC27rQF4NEDYfyf5aS8ZmQJUum5gufowKGYRRba4ENN/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c501_t8qJSyQprMC57TWKaYEmetUR3UUiTP2M3hXdcvFhkZdmv",
+            "type": "SPL",
+            "address": "8qJSyQprMC57TWKaYEmetUR3UUiTP2M3hXdcvFhkZdmv",
+            "name": "Tether USD (Portal from BSC)",
+            "symbol": "USDTbs",
+            "decimals": 8,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/solana/assets/8qJSyQprMC57TWKaYEmetUR3UUiTP2M3hXdcvFhkZdmv/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c501_t9gP2kCy3wA1ctvYWQk75guqXuHfrEomqydHLtcTCqiLa",
+            "type": "SPL",
+            "address": "9gP2kCy3wA1ctvYWQk75guqXuHfrEomqydHLtcTCqiLa",
+            "name": "Binance Coin (Portal)",
+            "symbol": "BNB",
+            "decimals": 8,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/solana/assets/9gP2kCy3wA1ctvYWQk75guqXuHfrEomqydHLtcTCqiLa/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c501_t9n4nbM75f5Ui33ZbPYXn59EwSgE8CGsHtAeTH5YFeJ9E",
+            "type": "SPL",
+            "address": "9n4nbM75f5Ui33ZbPYXn59EwSgE8CGsHtAeTH5YFeJ9E",
+            "name": "Wrapped BTC",
+            "symbol": "BTC",
+            "decimals": 6,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/solana/assets/9n4nbM75f5Ui33ZbPYXn59EwSgE8CGsHtAeTH5YFeJ9E/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c501_t49c7WuCZkQgc3M4qH8WuEUNXfgwupZf1xqWkDQ7gjRGt",
+            "type": "SPL",
+            "address": "49c7WuCZkQgc3M4qH8WuEUNXfgwupZf1xqWkDQ7gjRGt",
+            "name": "The Sandbox (Portal)",
+            "symbol": "SAND",
+            "decimals": 8,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/solana/assets/49c7WuCZkQgc3M4qH8WuEUNXfgwupZf1xqWkDQ7gjRGt/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c501_tA9mUU4qviSctJVPJdBJWkb28deg915LYJKrzQ19ji3FM",
+            "type": "SPL",
+            "address": "A9mUU4qviSctJVPJdBJWkb28deg915LYJKrzQ19ji3FM",
+            "name": "USD Coin (Portal from Ethereum)",
+            "symbol": "USDCet",
+            "decimals": 6,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/solana/assets/A9mUU4qviSctJVPJdBJWkb28deg915LYJKrzQ19ji3FM/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c501_tAFbX8oGjGpmVFywbVouvhQSRmiW2aR1mohfahi4Y2AdB",
+            "type": "SPL",
+            "address": "AFbX8oGjGpmVFywbVouvhQSRmiW2aR1mohfahi4Y2AdB",
+            "name": "Green Satoshi Token",
+            "symbol": "GST",
+            "decimals": 9,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/solana/assets/AFbX8oGjGpmVFywbVouvhQSRmiW2aR1mohfahi4Y2AdB/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c501_tAGFEad2et2ZJif9jaGpdMixQqvW5i81aBdvKe7PHNfz3",
+            "type": "SPL",
+            "address": "AGFEad2et2ZJif9jaGpdMixQqvW5i81aBdvKe7PHNfz3",
+            "name": "Wrapped FTX",
+            "symbol": "FTT",
+            "decimals": 6,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/solana/assets/AGFEad2et2ZJif9jaGpdMixQqvW5i81aBdvKe7PHNfz3/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c501_tAjkPkq3nsyDe1yKcbyZT7N4aK4Evv9om9tzhQD3wsRC",
+            "type": "SPL",
+            "address": "AjkPkq3nsyDe1yKcbyZT7N4aK4Evv9om9tzhQD3wsRC",
+            "name": "1INCH Token (Portal)",
+            "symbol": "1INCH",
+            "decimals": 8,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/solana/assets/AjkPkq3nsyDe1yKcbyZT7N4aK4Evv9om9tzhQD3wsRC/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c501_tAwEauVaTMQRB71WeDnwf1DWSBxaMKjEPuxyLr1uixFom",
+            "type": "SPL",
+            "address": "AwEauVaTMQRB71WeDnwf1DWSBxaMKjEPuxyLr1uixFom",
+            "name": "Compound (Portal)",
+            "symbol": "COMP",
+            "decimals": 8,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/solana/assets/AwEauVaTMQRB71WeDnwf1DWSBxaMKjEPuxyLr1uixFom/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c501_tBCsFXYm81iqXyYmrLKgAp3AePcgLHnirb8FjTs6sjM7U",
+            "type": "SPL",
+            "address": "BCsFXYm81iqXyYmrLKgAp3AePcgLHnirb8FjTs6sjM7U",
+            "name": "Spell Token (Portal)",
+            "symbol": "SPELL",
+            "decimals": 8,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/solana/assets/BCsFXYm81iqXyYmrLKgAp3AePcgLHnirb8FjTs6sjM7U/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c501_tBQcdHdAQW1hczDbBi9hiegXAR7A98Q9jx3X3iBBBDiq4",
+            "type": "SPL",
+            "address": "BQcdHdAQW1hczDbBi9hiegXAR7A98Q9jx3X3iBBBDiq4",
+            "name": "Wrapped USDT",
+            "symbol": "USDT",
+            "decimals": 6,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/solana/assets/BQcdHdAQW1hczDbBi9hiegXAR7A98Q9jx3X3iBBBDiq4/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c501_tBXZX2JRJFjvKazM1ibeDFxgAngKExb74MRXzXKvgikxX",
+            "type": "SPL",
+            "address": "BXZX2JRJFjvKazM1ibeDFxgAngKExb74MRXzXKvgikxX",
+            "name": "yearn.finance (Portal)",
+            "symbol": "YFI",
+            "decimals": 8,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/solana/assets/BXZX2JRJFjvKazM1ibeDFxgAngKExb74MRXzXKvgikxX/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c501_tC7NNPWuZCNjZBfW5p6JvGsR8pUdsRpEdP1ZAhnoDwj7h",
+            "type": "SPL",
+            "address": "C7NNPWuZCNjZBfW5p6JvGsR8pUdsRpEdP1ZAhnoDwj7h",
+            "name": "MATIC (Portal from Ethereum)",
+            "symbol": "MATICet",
+            "decimals": 8,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/solana/assets/C7NNPWuZCNjZBfW5p6JvGsR8pUdsRpEdP1ZAhnoDwj7h/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c501_tChVzxWRmrTeSgwd3Ui3UumcN8KX7VK3WaD4KGeSKpypj",
+            "type": "SPL",
+            "address": "ChVzxWRmrTeSgwd3Ui3UumcN8KX7VK3WaD4KGeSKpypj",
+            "name": "SushiToken (Portal)",
+            "symbol": "SUSHI",
+            "decimals": 8,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/solana/assets/ChVzxWRmrTeSgwd3Ui3UumcN8KX7VK3WaD4KGeSKpypj/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c501_tCiKu4eHsVrc1eueVQeHn7qhXTcVu95gSQmBpX4utjL9z",
+            "type": "SPL",
+            "address": "CiKu4eHsVrc1eueVQeHn7qhXTcVu95gSQmBpX4utjL9z",
+            "name": "Shiba Inu (Portal)",
+            "symbol": "SHIB",
+            "decimals": 8,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/solana/assets/CiKu4eHsVrc1eueVQeHn7qhXTcVu95gSQmBpX4utjL9z/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c501_tDvjMYMVeXgKxaixGKpzQThLoG98nc7HSU7eanzsdCboA",
+            "type": "SPL",
+            "address": "DvjMYMVeXgKxaixGKpzQThLoG98nc7HSU7eanzsdCboA",
+            "name": "Crypto.com Coin (Portal)",
+            "symbol": "CRO",
+            "decimals": 8,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/solana/assets/DvjMYMVeXgKxaixGKpzQThLoG98nc7HSU7eanzsdCboA/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c501_tEPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+            "type": "SPL",
+            "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+            "name": "USD Coin",
+            "symbol": "USDC",
+            "decimals": 6,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/solana/assets/EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c501_tEs9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+            "type": "SPL",
+            "address": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+            "name": "USDT",
+            "symbol": "USDT",
+            "decimals": 6,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/solana/assets/Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c501_tF6v4wfAdJB8D8p77bMXZgYt8TDKsYxLYxH5AFhUkYx9W",
+            "type": "SPL",
+            "address": "F6v4wfAdJB8D8p77bMXZgYt8TDKsYxLYxH5AFhUkYx9W",
+            "name": "LUNA (Portal)",
+            "symbol": "LUNA",
+            "decimals": 6,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/solana/assets/F6v4wfAdJB8D8p77bMXZgYt8TDKsYxLYxH5AFhUkYx9W/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c501_tEPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+            "type": "SPL",
+            "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+            "name": "USD Coin",
+            "symbol": "USDC",
+            "decimals": 6,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/solana/assets/EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c501_tGz7VkD4MacbEB6yC5XD3HcumEiYx2EtDYYrfikGsvopG",
+            "type": "SPL",
+            "address": "Gz7VkD4MacbEB6yC5XD3HcumEiYx2EtDYYrfikGsvopG",
+            "name": "MATIC (Portal from Polygon)",
+            "symbol": "MATICpo",
+            "decimals": 8,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/solana/assets/Gz7VkD4MacbEB6yC5XD3HcumEiYx2EtDYYrfikGsvopG/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c501_tHUCyuyqESEUV4YWTKFvvB4JiQLqoovscTBpRXfGzW4Wx",
+            "type": "SPL",
+            "address": "HUCyuyqESEUV4YWTKFvvB4JiQLqoovscTBpRXfGzW4Wx",
+            "name": "Rocket Pool (Portal)",
+            "symbol": "RPL",
+            "decimals": 8,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/solana/assets/HUCyuyqESEUV4YWTKFvvB4JiQLqoovscTBpRXfGzW4Wx/logo.png",
+            "pairs": []
+        }
+    ],
+    "version": {
+        "major": 1,
+        "minor": 0,
+        "patch": 0
+    }
+}
