@@ -1,44 +1,42 @@
 {
-    "name": "OVR",
-    "symbol": "OVR",
-    "type": "ERC20",
-    "decimals": 18,
-    "description": "OVR is the decentralized infrastructure for the spatial web, merging physical and virtual world through Augmented Reality, creating a new dimension where everything is possible.",
-    "website": "https://www.ovr.ai",
-    "explorer": "https://etherscan.io/token/0x21bfbda47a0b4b5b1248c767ee49f7caa9b23697",
-    "status": "active",
-    "id": "0x21BfBDa47A0B4B5b1248c767Ee49F7caA9B23697",
-    "tags": [
-        "nft"
-    ],
-    "links": [
-        {
-            "name": "telegram",
-            "url": "https://t.me/OVRtheReality"
-        },
-        {
-            "name": "twitter",
-            "url": "https://twitter.com/OVRtheReality"
-        },
-        {
-            "name": "facebook",
-            "url": "https://facebook.com/OVRmetaverse/"
-        },
-        {
-            "name": "telegram_news",
-            "url": "https://t.me/ovrannouncements"
-        },
-        {
-            "name": "medium",
-            "url": "https://medium.com/ovrthereality"
-        },
-        {
-            "name": "coingecko",
-            "url": "https://coingecko.com/en/coins/ovr"
-        },
-        {
-            "name": "coinmarketcap",
-            "url": "https://coinmarketcap.com/currencies/ovr/"
-        }
-    ]
+  "name": "OVR",
+  "symbol": "OVR",
+  "type": "ERC20",
+  "decimals": 18,
+  "description": "OVR is the decentralized infrastructure for the spatial web, merging physical and virtual world through Augmented Reality, creating a new dimension where everything is possible.",
+  "website": "https://www.overthereality.ai/",
+  "explorer": "https://etherscan.io/token/0x21bfbda47a0b4b5b1248c767ee49f7caa9b23697",
+  "status": "active",
+  "id": "0x21BfBDa47A0B4B5b1248c767Ee49F7caA9B23697",
+  "tags": ["nft"],
+  "links": [
+    {
+      "name": "telegram",
+      "url": "https://t.me/OVRtheReality"
+    },
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/OVRtheReality"
+    },
+    {
+      "name": "facebook",
+      "url": "https://www.facebook.com/OVERmetaverse"
+    },
+    {
+      "name": "telegram_news",
+      "url": "https://t.me/ovrannouncements"
+    },
+    {
+      "name": "medium",
+      "url": "https://medium.com/ovrthereality"
+    },
+    {
+      "name": "coingecko",
+      "url": "https://coingecko.com/en/coins/ovr"
+    },
+    {
+      "name": "coinmarketcap",
+      "url": "https://coinmarketcap.com/currencies/ovr/"
+    }
+  ]
 }
