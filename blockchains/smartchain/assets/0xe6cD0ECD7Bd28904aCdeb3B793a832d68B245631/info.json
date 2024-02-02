@@ -1,0 +1,37 @@
+{
+    "name": "cNGN",
+    "type": "BEP20",
+    "symbol": "cNGN",
+    "decimals": 6,
+    "website": "https://asc.africa",
+    "description": "The cNGN is a compliant stablecoin backed 1:1 to the Naira with regulatory supervision by the CBN, SEC and relevant regulatory bodies, and enables licensed partners and exchanges to seamlessly convert cNGN to Naira and vice versa.",
+    "explorer": "https://bscscan.com/token/0xe6cD0ECD7Bd28904aCdeb3B793a832d68B245631",
+    "status": "active",
+    "id": "0xe6cD0ECD7Bd28904aCdeb3B793a832d68B245631",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/AS_Consortium"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/asc-africa/stablecoin"
+        },
+        {
+            "name": "blog",
+            "url": "https://asc.africa/blogs"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/@AfricaStablecoinConsortium"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://github.com/asc-africa/stablecoin/blob/main/cNGN%20Whitepaper%20.pdf"
+        }
+    ],
+    "tags": [
+        "stablecoin",
+        "wrapped"
+    ]
+}
