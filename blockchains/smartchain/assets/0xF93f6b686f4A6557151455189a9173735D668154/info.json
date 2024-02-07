@@ -1,11 +1,11 @@
 {
     "name": "LFG Token",
-    "symbol": "LFG",
     "type": "BEP20",
+    "symbol": "LFG",
     "decimals": 18,
-    "description": "GAMΞRSΞ is the new home for NFT gaming and the metaverse social economy. Our cross-chain, cross-platform, and cross-verse solutions are unifying the fragmented NFT gaming ecosystem.",
-    "website": "https://www.gamerse.com",
-    "explorer": "https://bscscan.com/token/0xF93f6b686f4A6557151455189a9173735D668154",
+    "website": "https://www.gamerse.network/",
+    "description": "Web3 Social Game Hub for Gamers. SOCIAL. TRADE . PLAY ",
+    "explorer": "https://bscscan.com/token/0xf93f6b686f4a6557151455189a9173735d668154",
     "status": "active",
     "id": "0xF93f6b686f4A6557151455189a9173735D668154",
     "links": [
@@ -14,33 +14,11 @@
             "url": "https://twitter.com/Gamersenft"
         },
         {
-            "name": "telegram",
-            "url": "https://t.me/gamersecommunity"
-        },
-        {
             "name": "discord",
             "url": "https://discord.com/invite/SVAXQ7rNrp"
-        },
-        {
-            "name": "coinmarketcap",
-            "url": "https://coinmarketcap.com/currencies/gamerse/"
-        },
-        {
-            "name": "coingecko",
-            "url": "https://coingecko.com/en/coins/gamerse"
-        },
-        {
-            "name": "whitepaper",
-            "url": "https://gamerse.gitbook.io/gamerse/"
-        },
-        {
-            "name": "medium",
-            "url": "https://gamerse.medium.com/"
         }
     ],
     "tags": [
-        "nft",
-        "gamefi",
-        "metaverse"
+        "gamefi"
     ]
 }
