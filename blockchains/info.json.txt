@@ -1,32 +1,37 @@
-Z{
+{
     "name": "BNB GODZILLA",
-    "website": "https://bnbgodzilla.com/",
-    "description": "BNB GODZILLA IS THE KING OF MONSTERS.",
-    "explorer": "https://bscscan.com/address/0xFFd3FF27Ec7BC4490a7F9fd7035C1519Fa918CE9https://bscscan.com/",
-    "dextools": "https://www.dextools.io/app/en/bnb/pair-explorer/0x7ad8a88111112f38abbfa972a2cc1c2772818521?t=1707400083846",
+    "type": "BEP20",
     "symbol": "BNB GODZILLA",
-    "type": "MEME TOKEN",
     "decimals": 9,
+    "website": "https://bnbgodzilla.com",
+    "description": "BNB godzilla is the king of monsters. They are the symbol of victory and strength. Powerful and tough.and our $BNBgodzilla community is the same.",
+    "explorer": "https://bscscan.com/token/0xFFd3FF27Ec7BC4490a7F9fd7035C1519Fa918CE9",
     "status": "active",
-    "tags": [
-        "staking-native"
-    ],
+    "id": "0xFFd3FF27Ec7BC4490a7F9fd7035C1519Fa918CE9",
     "links": [
         {
-            "name": "github",
-            "url": "https://github.com/binance-chain/"
-        },
-        {
             "name": "twitter",
-            "url": "https://twitter.com/BNBGODZILLA"
+            "url": "https://twitter.com/Bnbgodzilla"
         },
         {
             "name": "telegram",
-            "url": "https://t.me/bnbgodzilla"
+            "url": "https://t.me/BNBGODZILLA"
+        },
+     
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/dexscan/bsc/0x7ad8a88111112f38abbfa972a2cc1c2772818521/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://www.geckoterminal.com/bsc/pools/0x7ad8a88111112f38abbfa972a2cc1c2772818521?utm_source=coingecko&utm_medium=referral&utm_campaign=searchresults"
         },
         {
             "name": "whitepaper",
             "url": "https://godzillawppdf.kotobee.com/#/reader"
         }
+    ],
+    "tags": [
+        "memes"
     ]
 }
