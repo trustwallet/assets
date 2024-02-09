@@ -452,6 +452,116 @@
             "decimals": 8,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/solana/assets/HUCyuyqESEUV4YWTKFvvB4JiQLqoovscTBpRXfGzW4Wx/logo.png",
             "pairs": []
+        },
+        {
+            "asset": "c501_t27G8MtK7VtTcCHkpASjSDdkWWYfoqT6ggEuKidVJidD4",
+            "type": "SPL",
+            "address": "27G8MtK7VtTcCHkpASjSDdkWWYfoqT6ggEuKidVJidD4",
+            "name": "Jupiter Perps LP",
+            "symbol": "JLP",
+            "decimals": 6,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/solana/assets/27G8MtK7VtTcCHkpASjSDdkWWYfoqT6ggEuKidVJidD4/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c501_t5MAYDfq5yxtudAhtfyuMBuHZjgAbaS9tbEyEQYAhDS5y",
+            "type": "SPL",
+            "address": "5MAYDfq5yxtudAhtfyuMBuHZjgAbaS9tbEyEQYAhDS5y",
+            "name": "Access Protocol",
+            "symbol": "ACS",
+            "decimals": 6,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/solana/assets/5MAYDfq5yxtudAhtfyuMBuHZjgAbaS9tbEyEQYAhDS5y/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c501_t8wXtPeU6557ETkp9WHFY1n1EcU6NxDvbAggHGsMYiHsB",
+            "type": "SPL",
+            "address": "8wXtPeU6557ETkp9WHFY1n1EcU6NxDvbAggHGsMYiHsB",
+            "name": "GameStop",
+            "symbol": "GME",
+            "decimals": 9,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/solana/assets/8wXtPeU6557ETkp9WHFY1n1EcU6NxDvbAggHGsMYiHsB/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c501_tC98A4nkJXhpVZNAZdHUA95RpTF3T4whtQubL3YobiUX9",
+            "type": "SPL",
+            "address": "C98A4nkJXhpVZNAZdHUA95RpTF3T4whtQubL3YobiUX9",
+            "name": "Coin98",
+            "symbol": "C98",
+            "decimals": 6,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/solana/assets/C98A4nkJXhpVZNAZdHUA95RpTF3T4whtQubL3YobiUX9/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c501_tEKpQGSJtjMFqKZ9KQanSqYXRcF8fBopzLHYxdM65zcjm",
+            "type": "SPL",
+            "address": "EKpQGSJtjMFqKZ9KQanSqYXRcF8fBopzLHYxdM65zcjm",
+            "name": "dogwifhat",
+            "symbol": "WIF",
+            "decimals": 6,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/solana/assets/EKpQGSJtjMFqKZ9KQanSqYXRcF8fBopzLHYxdM65zcjm/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c501_tGTH3wG3NErjwcf7VGCoXEXkgXSHvYhx5gtATeeM5JAS1",
+            "type": "SPL",
+            "address": "GTH3wG3NErjwcf7VGCoXEXkgXSHvYhx5gtATeeM5JAS1",
+            "name": "Whales Market",
+            "symbol": "WHALES",
+            "decimals": 6,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/solana/assets/GTH3wG3NErjwcf7VGCoXEXkgXSHvYhx5gtATeeM5JAS1/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c501_tHZ1JovNiVvGrGNiiYvEozEVgZ58xaU3RKwX8eACQBCt3",
+            "type": "SPL",
+            "address": "HZ1JovNiVvGrGNiiYvEozEVgZ58xaU3RKwX8eACQBCt3",
+            "name": "Pyth Network",
+            "symbol": "PYTH",
+            "decimals": 6,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/solana/assets/HZ1JovNiVvGrGNiiYvEozEVgZ58xaU3RKwX8eACQBCt3/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c501_tJ1toso1uCk3RLmjorhTtrVwY9HJ7X8V9yYac6Y7kGCPn",
+            "type": "SPL",
+            "address": "J1toso1uCk3RLmjorhTtrVwY9HJ7X8V9yYac6Y7kGCPn",
+            "name": "Jito Staked SOL",
+            "symbol": "JitoSOL",
+            "decimals": 9,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/solana/assets/J1toso1uCk3RLmjorhTtrVwY9HJ7X8V9yYac6Y7kGCPn/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c501_tbSo13r4TkiE4KumL71LsHTPpL2euBYLFx6h9HP3piy1",
+            "type": "SPL",
+            "address": "bSo13r4TkiE4KumL71LsHTPpL2euBYLFx6h9HP3piy1",
+            "name": "BlazeStake Staked SOL",
+            "symbol": "bSOL",
+            "decimals": 9,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/solana/assets/bSo13r4TkiE4KumL71LsHTPpL2euBYLFx6h9HP3piy1/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c501_thntyVP6YFm1Hg25TN9WGLqM12b8TQmcknKrdu1oxWux",
+            "type": "SPL",
+            "address": "hntyVP6YFm1Hg25TN9WGLqM12b8TQmcknKrdu1oxWux",
+            "name": "Helium Network",
+            "symbol": "HNT",
+            "decimals": 8,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/solana/assets/hntyVP6YFm1Hg25TN9WGLqM12b8TQmcknKrdu1oxWux/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c501_trndrizKT3MK1iimdxRdWabcF7Zg7AR5T4nud4EkHBof",
+            "type": "SPL",
+            "address": "rndrizKT3MK1iimdxRdWabcF7Zg7AR5T4nud4EkHBof",
+            "name": "Render Token",
+            "symbol": "RNDR",
+            "decimals": 8,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/solana/assets/rndrizKT3MK1iimdxRdWabcF7Zg7AR5T4nud4EkHBof/logo.png",
+            "pairs": []
         }
     ],
     "version": {
