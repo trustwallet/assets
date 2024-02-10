@@ -1,36 +1,36 @@
 {
-    "name": "Onschain (ONS)",
-    "website": "https://www.onschain.com",
-    "description": "Onschain is the world's first blockchain project created by CHAT GPT-4 and will be managed by artificial intelligence.",
+    "name": "Onschain",
+    "website": "https://onschain.com/",
+    "description": "Onschain is the world's first blockchain project created by CHAT GPT-4 and will be managed by artificial intelligence",
     "explorer": "https://bscscan.com/token/0x57fc32015c09ef510584648b89bfe42642cd2d76",
-    "research": "https://www.binance.com/en/price/onschain",
-    "symbol": "ONS",
     "type": "BEP20",
+    "symbol": "ONS",
     "decimals": 18,
     "status": "active",
+    "id": "0x57fc32015c09ef510584648b89bfe42642cd2d76",
     "tags": [
-        "onschain"
+        "blockchain"
     ],
     "links": [
         {
-            "name": "Telegram",
-            "url": "https://t.me/onschain"
-        },
-        {
-            "name": "Twitter",
+            "name": "twitter",
             "url": "https://twitter.com/onschain"
         },
         {
-            "name": "Reddit",
-            "url": "https://reddit.com/r/onschain/"
+            "name": "telegram",
+            "url": "https://t.me/onschain"
         },
         {
-            "name": "Github",
+            "name": "github",
             "url": "https://github.com/onschain"
         },
         {
             "name": "whitepaper",
             "url": "https://www.onschain.com/whitepaper.pdf"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/onschain/"
         }
     ]
 }
