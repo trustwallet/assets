@@ -1,0 +1,48 @@
+{
+    "name": "NEAR",
+    "type": "ERC20",
+    "symbol": "NEAR",
+    "decimals": 24,
+    "website": "https://near.org/",
+    "description": "NEAR is a user-friendly and carbon-neutral blockchain, built from the ground up to be performant, secure, and infinitely scalable.\nIn technical terms, NEAR is a layer one, sharded, proof-of-stake blockchain built with usability in mind. In simple terms, NEAR is a blockchain for everyone.",
+    "explorer": "https://etherscan.io/token/0x85F17Cf997934a597031b2E18a9aB6ebD4B9f6a4",
+    "status": "active",
+    "id": "0x85F17Cf997934a597031b2E18a9aB6ebD4B9f6a4",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/@NEARProtocol"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/near"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/cryptonear"
+        },
+        {
+            "name": "docs",
+            "url": "https://docs.near.org/"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://pages.near.org/papers/the-official-near-white-paper/"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/near-protocol/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://www.coingecko.com/en/coins/near"
+        }
+    ],
+    "tags": [
+        "dapp",
+        "governance",
+        "nft",
+        "wrapped",
+        "staking"
+    ]
+}
