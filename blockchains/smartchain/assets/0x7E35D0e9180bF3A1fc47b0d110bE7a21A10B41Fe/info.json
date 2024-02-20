@@ -1,44 +1,42 @@
 {
-    "name": "OVR",
-    "symbol": "OVR",
-    "type": "BEP20",
-    "decimals": 18,
-    "description": "OVR is the decentralized infrastructure for the metaverse, merging physical and virtual world through Augmented Reality",
-    "website": "https://www.ovr.ai/",
-    "explorer": "https://bscscan.com/token/0x7e35d0e9180bf3a1fc47b0d110be7a21a10b41fe",
-    "status": "active",
-    "id": "0x7E35D0e9180bF3A1fc47b0d110bE7a21A10B41Fe",
-    "tags": [
-        "nft"
-    ],
-    "links": [
-        {
-            "name": "telegram",
-            "url": "https://t.me/OVRtheReality"
-        },
-        {
-            "name": "twitter",
-            "url": "https://twitter.com/OVRtheReality"
-        },
-        {
-            "name": "facebook",
-            "url": "https://facebook.com/OVRmetaverse/"
-        },
-        {
-            "name": "telegram_news",
-            "url": "https://t.me/ovrannouncements"
-        },
-        {
-            "name": "medium",
-            "url": "https://medium.com/ovrthereality"
-        },
-        {
-            "name": "coingecko",
-            "url": "https://coingecko.com/en/coins/ovr"
-        },
-        {
-            "name": "coinmarketcap",
-            "url": "https://coinmarketcap.com/currencies/ovr/"
-        }
-    ]
+  "name": "OVR",
+  "symbol": "OVR",
+  "type": "BEP20",
+  "decimals": 18,
+  "description": "OVR is the decentralized infrastructure for the metaverse, merging physical and virtual world through Augmented Reality",
+  "website": "https://www.overthereality.ai/",
+  "explorer": "https://bscscan.com/token/0x7e35d0e9180bf3a1fc47b0d110be7a21a10b41fe",
+  "status": "active",
+  "id": "0x7E35D0e9180bF3A1fc47b0d110bE7a21A10B41Fe",
+  "tags": ["nft"],
+  "links": [
+    {
+      "name": "telegram",
+      "url": "https://t.me/OVRtheReality"
+    },
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/OVRtheReality"
+    },
+    {
+      "name": "facebook",
+      "url": "https://facebook.com/Overmetaverse"
+    },
+    {
+      "name": "telegram_news",
+      "url": "https://t.me/ovrannouncements"
+    },
+    {
+      "name": "medium",
+      "url": "https://medium.com/ovrthereality"
+    },
+    {
+      "name": "coingecko",
+      "url": "https://coingecko.com/en/coins/ovr"
+    },
+    {
+      "name": "coinmarketcap",
+      "url": "https://coinmarketcap.com/currencies/ovr/"
+    }
+  ]
 }
