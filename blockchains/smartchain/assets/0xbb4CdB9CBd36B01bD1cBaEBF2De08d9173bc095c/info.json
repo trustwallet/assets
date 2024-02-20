@@ -1,15 +1,22 @@
 {
     "name": "Wrapped BNB",
-    "website": "https://binance.org",
-    "description": "As the native coin of Binance Chain, BNB has multiple use cases: fueling transactions on the Chain, paying for transaction fees on Binance Exchange, making in-store payments, and many more.",
-    "explorer": "https://bscscan.com/token/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
-    "research": "https://research.binance.com/en/projects/bnb",
     "type": "BEP20",
     "symbol": "WBNB",
     "decimals": 18,
+    "website": "https://github.com/Mohamaxx",
+    "description": "I have to get my token but is empty\nPlease fix this issue ",
+    "explorer": "https://bscscan.com/token/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
     "status": "active",
     "id": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
-    "tags": [
-        "wrapped"
-    ]
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/@az90227"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/Mohamaxx"
+        }
+    ],
+    "tags": []
 }
