@@ -1,36 +1,32 @@
 {
-  "name": "TRUD",
-  "website": "https://trud.family/",
-  "description": "The TRUD token is a pioneer in promoting a new economic concept.",
-  "explorer": "https://etherscan.io/token/0x2e7729f4E4AA8E68D13830D372F975046d4a498F",
-  "research": "https://samigrella-company.gitbook.io/trud/trud-idea/root-of-trud",
-  "symbol": "TRUD",
-  "type": "token",
-  "decimals": 9,
-  "status": "active",
-  "tags": [
-      "staking-native"
-  ],
-  "links": [
-      {
-          "name": "github",
-          "url": "https://github.com/TRUDtoken"
-      },
-      {
-        "name": "telegram",
-        "url": "https://t.me/TRUDtoken"
-      },
-      {
-          "name": "twitter",
-          "url": "https://x.com/trudtoken"
-      },
-      {
-          "name": "reddit",
-          "url": "https://www.reddit.com/user/TRUDtoken"
-      },
-      {
-          "name": "whitepaper",
-          "url": "https://samigrella-company.gitbook.io/trud/trud-idea/root-of-trud"
-      }
-  ]
+    "name": "TRUD (TRUD)",
+    "type": "ERC20",
+    "symbol": "TRUD",
+    "decimals": 9,
+    "website": "https://trud.family/",
+    "description": "The TRUD token is a pioneer in promoting a new economic concept.",
+    "explorer": "https://etherscan.io/token/0x2e7729f4E4AA8E68D13830D372F975046d4a498F",
+    "status": "active",
+    "id": "0x2e7729f4E4AA8E68D13830D372F975046d4a498F",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/trudtoken"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/TRUDtoken"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://samigrella-company.gitbook.io/trud/trud-idea/root-of-trud"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/historicalcollection"
+        }
+    ],
+    "tags": [
+        "memes"
+    ]
 }
