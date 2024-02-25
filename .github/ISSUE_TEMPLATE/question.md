@@ -2,7 +2,7 @@
 name: Question
 about: Any questions related to this repo
 title: ''
-labels: 'Type: Question'
+labels: ''
 assignees: ''
 
 ---
