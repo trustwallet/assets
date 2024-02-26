@@ -272,9 +272,6 @@
                     "base": "c60_t0x8a854288a5976036A725879164Ca3e91d30c6A1B"
                 },
                 {
-                    "base": "c60_t0xCE3f08e664693ca792caCE4af1364D5e220827B2"
-                },
-                {
                     "base": "c60_t0x8CE9137d39326AD0cD6491fb5CC0CbA0e089b6A9"
                 },
                 {
@@ -1169,7 +1166,7 @@
             "asset": "c60_t0x3593D125a4f7849a1B059E64F4517A86Dd60c95d",
             "type": "ERC20",
             "address": "0x3593D125a4f7849a1B059E64F4517A86Dd60c95d",
-            "name": "MANTRA DAO",
+            "name": "MANTRA",
             "symbol": "OM",
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0x3593D125a4f7849a1B059E64F4517A86Dd60c95d/logo.png",
@@ -1642,16 +1639,6 @@
             "pairs": []
         },
         {
-            "asset": "c60_t0x69A95185ee2a045CDC4bCd1b1Df10710395e4e23",
-            "type": "ERC20",
-            "address": "0x69A95185ee2a045CDC4bCd1b1Df10710395e4e23",
-            "name": "Poolz Finance",
-            "symbol": "POOLZ",
-            "decimals": 18,
-            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0x69A95185ee2a045CDC4bCd1b1Df10710395e4e23/logo.png",
-            "pairs": []
-        },
-        {
             "asset": "c60_t0x69af81e73A73B40adF4f3d4223Cd9b1ECE623074",
             "type": "ERC20",
             "address": "0x69af81e73A73B40adF4f3d4223Cd9b1ECE623074",
@@ -2028,16 +2015,6 @@
             "pairs": []
         },
         {
-            "asset": "c60_t0xCE3f08e664693ca792caCE4af1364D5e220827B2",
-            "type": "ERC20",
-            "address": "0xCE3f08e664693ca792caCE4af1364D5e220827B2",
-            "name": "SAITAMA",
-            "symbol": "SAITAMA",
-            "decimals": 9,
-            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0xCE3f08e664693ca792caCE4af1364D5e220827B2/logo.png",
-            "pairs": []
-        },
-        {
             "asset": "c60_t0x8B39B70E39Aa811b69365398e0aACe9bee238AEb",
             "type": "ERC20",
             "address": "0x8B39B70E39Aa811b69365398e0aACe9bee238AEb",
@@ -2166,16 +2143,6 @@
             "symbol": "SHIB",
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0x95aD61b0a150d79219dCF64E1E6Cc01f0B64C4cE/logo.png",
-            "pairs": []
-        },
-        {
-            "asset": "c60_t0x961C8c0B1aaD0c0b10a51FeF6a867E3091BCef17",
-            "type": "ERC20",
-            "address": "0x961C8c0B1aaD0c0b10a51FeF6a867E3091BCef17",
-            "name": "Dypius",
-            "symbol": "DYP",
-            "decimals": 18,
-            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0x961C8c0B1aaD0c0b10a51FeF6a867E3091BCef17/logo.png",
             "pairs": []
         },
         {
