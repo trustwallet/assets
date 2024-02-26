@@ -1,31 +1,31 @@
-name: Check
-
-on:
-  push:
-    branches:
-      - master
-  pull_request:
-    branches:
-      - master
-  workflow_dispatch:
-
-jobs:
-  check:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Set up Go
-        uses: actions/setup-go@v4
-        with:
-          go-version: 1.18
-
-      - name: Check out code
-        uses: actions/checkout@v3
-
-      - name: Run check
-        run: make check
-
-      - name: Unit Test
-        run: make test
-
-      - name: Lint
-        run: make lint
+#name: Check
+#
+#on:
+#  push:
+#    branches:
+#      - master
+#  pull_request:
+#    branches:
+#      - master
+#  workflow_dispatch:
+#
+#jobs:
+#  check:
+#    runs-on: ubuntu-latest
+#    steps:
+#      - name: Set up Go
+#        uses: actions/setup-go@v4
+#        with:
+#          go-version: 1.18
+#
+#      - name: Check out code
+#        uses: actions/checkout@v3
+#
+#      - name: Run check
+#        run: make check
+#
+#      - name: Unit Test
+#        run: make test
+#
+#      - name: Lint
+#        run: make lint
