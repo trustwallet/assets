@@ -1,5 +1,14 @@
 [
     {
+        "id": "TFqEaQBVpJmc6y6sbvXgzu9zsXL1pTKw47",
+        "name": "Trust Nodes",
+        "description": "The most trusted & secure crypto wallet",
+        "website": "https://trustwallet.com",
+        "payout": {
+            "commission": 100
+        }
+    },
+    {
         "id": "TLyqzVGLV1srkB7dToTAEqgDSfPtXRJZYH",
         "name": "Binance",
         "description": "Binance is a global cryptocurrency exchange that provides a platform for trading more than 100 cryptocurrencies. Since early 2018, Binance is considered as the biggest cryptocurrency exchange in the world in terms of trading volume.",
@@ -85,6 +94,15 @@
         "name": "Poloniex",
         "description": "Poloniex Futures provides both REST APIs and Websocket Feeds for interacting with our futures exchange.",
         "website": "https://poloniex.com/",
+        "payout": {
+            "commission": 0
+        }
+    },
+    {
+        "id": "TMAqheVWMaNm15UJTNgasEVpJ7YHYiZVZ8",
+        "name": "Allnodes.com ⚡️ 0% fee",
+        "description": "Reliable non-custodial Validator run by the industry leader - Allnodes.",
+        "website": "https://wwww.allnodes.com/trx/staking",
         "payout": {
             "commission": 0
         }

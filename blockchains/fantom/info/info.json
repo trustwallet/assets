@@ -7,7 +7,11 @@
     "symbol": "FTM",
     "type": "coin",
     "decimals": 18,
+    "rpc_url": "https://rpc.ftm.tools",
     "status": "active",
+    "tags": [
+        "dapp"
+    ],
     "links": [
         {
             "name": "discord",

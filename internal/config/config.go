@@ -43,7 +43,7 @@ type (
 )
 
 // Default is a configuration instance.
-var Default = Config{} // nolint:gochecknoglobals // config must be global
+var Default = Config{} //nolint:gochecknoglobals // config must be global
 
 // SetConfig reads a config file and returs an initialized config instance.
 func SetConfig(confPath string) error {
