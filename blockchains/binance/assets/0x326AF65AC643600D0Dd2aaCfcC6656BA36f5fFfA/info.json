@@ -5,10 +5,11 @@
   "decimals": 18,
   "description": "PEPE BITCOIN (PBTC) is a decentralized digital currency from a world of PEPE verse as a FAN token of BITCOIN.",
   "website": "http://pepebtcs.xyz",
-  "explorer": "https://bscscan.com/address/0x326AF65AC643600D0Dd2aaCfcC6656BA36f5fFfA",
+  "explorer": "https://bscscan.com/token/0x326AF65AC643600D0Dd2aaCfcC6656BA36f5fFfA",
   "status": "active",
   "id": "0x326AF65AC643600D0Dd2aaCfcC6656BA36f5fFfA",
-  "twitter": "https://twitter.com/PepeBtc001",
-  "telegram": "https://t.me/pepebtcs",
-  "tags": ["DeFi"]
+  "links": {
+    "twitter": "https://twitter.com/PepeBtc001",
+    "telegram": "https://t.me/pepebtcs"
+  },
 }
