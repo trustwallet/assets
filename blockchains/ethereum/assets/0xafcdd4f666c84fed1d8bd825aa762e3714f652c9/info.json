@@ -1,13 +1,13 @@
 {
     "name": "Vita Inu",
-    "type": "BEP20",
+    "type": "ERC20",
     "symbol": "VINU",
     "decimals": 18,
     "website": "https://vitainu.org",
     "description": "Vita Inu is the world’s first fast and feeless dog coin with high TPS and native smart contracts. VINU is the powerful multi-chain currency and governance token of the Vinuverse. The VINU community believes cryptocurrencies should be moved around freely, securely, and efficiently.",
-    "explorer": "https://bscscan.com/token/0xfebe8c1ed424dbf688551d4e2267e7a53698f0aa",
+    "explorer": "https://etherscan.io/token/0xafcdd4f666c84fed1d8bd825aa762e3714f652c9",
     "status": "active",
-    "id": "0xfEbe8C1eD424DbF688551D4E2267e7A53698F0aa",
+    "id": "0xafcdd4f666c84fed1d8bd825aa762e3714f652c9",
     "links": [
         {
             "name": "twitter",
@@ -59,7 +59,7 @@
         },
         {
             "name": "source_code",
-            "url": "https://bscscan.com/address/0xfebe8c1ed424dbf688551d4e2267e7a53698f0aa#code"
+            "url": "https://etherscan.io/address/0xafcdd4f666c84fed1d8bd825aa762e3714f652c9#code"
         }
     ],
     "tags": [
@@ -72,4 +72,4 @@
         "governance",
         "wrapped"
     ]
-} 
+}
