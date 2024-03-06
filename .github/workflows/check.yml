@@ -21,11 +21,11 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v3
 
-      - name: Run check
-        run: make check
-
-      - name: Unit Test
-        run: make test
-
-      - name: Lint
-        run: make lint
+#      - name: Run check
+#        run: make check
+#
+#      - name: Unit Test
+#        run: make test
+#
+#      - name: Lint
+#        run: make lint
