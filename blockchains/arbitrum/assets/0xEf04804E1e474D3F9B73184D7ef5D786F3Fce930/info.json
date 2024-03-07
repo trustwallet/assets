@@ -2,15 +2,15 @@
     "name": "Wall Street Games",
     "website": "https://wsg.gg",
     "description": "Wall Street Games is a hybrid blockchain-based online gaming platform, where players can earn cryptocurrencies by playing fun and addictive games, collect tradable NFTs and win rewards.",
-    "explorer": "https://arbiscan.io/",
+    "explorer": "https://arbiscan.io/token/0xEf04804E1e474D3F9B73184D7ef5D786F3Fce930",
     "research": "https://docs.wallstreetgames.net/",
     "symbol": "WSG",
-    "type": "coin",
+    "type": "ERC20",
     "decimals": 18,
     "status": "active",
+	"id": "0xEf04804E1e474D3F9B73184D7ef5D786F3Fce930",
     "tags": [
         "staking-native",
-		"gaming",
 		"ai"
     ],
     "links": [
@@ -31,12 +31,8 @@
             "url": "https://docs.wallstreetgames.net/"
         },
         {
-            "name": "android",
-            "url": "https://play.google.com/store/apps/details?id=com.wsg.games"
-        },
-		{
-            "name": "ios",
-            "url": "https://apps.apple.com/app/id1632001352"
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/wall-street-games-new/"
         }
     ]
 }
