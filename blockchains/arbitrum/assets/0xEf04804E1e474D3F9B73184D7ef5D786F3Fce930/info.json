@@ -1,37 +1,38 @@
 {
-    "name": "Wall Street Games",
-    "website": "https://wsg.gg",
-    "description": "Wall Street Games is a hybrid blockchain-based online gaming platform, where players can earn cryptocurrencies by playing fun and addictive games, collect tradable NFTs and win rewards.",
-    "explorer": "https://arbiscan.io/token/0xEf04804E1e474D3F9B73184D7ef5D786F3Fce930",
-    "research": "https://docs.wallstreetgames.net/",
-    "symbol": "WSG",
-    "type": "ERC20",
-    "decimals": 18,
-    "status": "active",
-	"id": "0xEf04804E1e474D3F9B73184D7ef5D786F3Fce930",
-    "tags": [
-        "staking-native"
-    ],
-    "links": [
-        {
-            "name": "twitter",
-            "url": "https://twitter.com/WSGToken"
-        },
-        {
-            "name": "telegram",
-            "url": "https://t.me/wallstreetgamesarb"
-        },
-        {
-            "name": "medium",
-            "url": "https://medium.com/@WSGToken"
-        },
-		{
-            "name": "docs",
-            "url": "https://docs.wallstreetgames.net/"
-        },
-        {
-            "name": "coinmarketcap",
-            "url": "https://coinmarketcap.com/currencies/wall-street-games-new/"
-        }
-    ]
+   "name":"Wall Street Games",
+   "website":"https://wsg.gg",
+   "description":"Wall Street Games is a hybrid blockchain-based online gaming platform, where players can earn cryptocurrencies by playing fun and addictive games, collect tradable NFTs and win rewards.",
+   "explorer":"https://arbiscan.io/token/0xEf04804E1e474D3F9B73184D7ef5D786F3Fce930",
+   "research":"https://docs.wallstreetgames.net/",
+   "symbol":"WSG",
+   "type":"ERC20",
+   "decimals":18,
+   "status":"active",
+   "id":"0xEf04804E1e474D3F9B73184D7ef5D786F3Fce930",
+   "tags":[
+      "staking-native",
+      "gamefi"
+   ],
+   "links":[
+      {
+         "name":"twitter",
+         "url":"https://twitter.com/WSGToken"
+      },
+      {
+         "name":"telegram",
+         "url":"https://t.me/wallstreetgamesarb"
+      },
+      {
+         "name":"medium",
+         "url":"https://medium.com/@WSGToken"
+      },
+      {
+         "name":"docs",
+         "url":"https://docs.wallstreetgames.net/"
+      },
+      {
+         "name":"coinmarketcap",
+         "url":"https://coinmarketcap.com/currencies/wall-street-games-new/"
+      }
+   ]
 }
