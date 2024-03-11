@@ -1,29 +1,11 @@
 {
     "name": "Quotes Token",
-    "website": "https://www.quotestoken.com/",
-    "description": "An exchange with the capability of conducting B2B transactions but with a new method.",
-    "explorer": "https://tronscan.org/#/contract/TTjxdJA5fH6DF3YXEYBgSBwg9S7hqRfo6r",
-    "research": "https://tronscan.org/#/token20/TTjxdJA5fH6DF3YXEYBgSBwg9S7hqRfo6r",
     "symbol": "QTN",
-    "type": "token",
+    "type": "TRC20",
     "decimals": 18,
+    "description": "An exchange with the capability of conducting B2B transactions but with a new method.",
+    "website": "https://www.quotestoken.com/",
+    "explorer": "https://tronscan.org/#/token20/TTjxdJA5fH6DF3YXEYBgSBwg9S7hqRfo6r",
     "status": "active",
-    "tags": [
-        "staking-native"
-    ],
-    "links": [
-        {
-            "name": "twitter",
-            "url": "https://twitter.com/quotestoken"
-        },
-        {
-            "name": "telegram",
-            "url": "https://t.me/quotestoken"
-        },
-        {
-            "name": "reddit",
-            "url": "https://instagram.com/quotestoken"
-        }
-
-    ]
+    "id": "TTjxdJA5fH6DF3YXEYBgSBwg9S7hqRfo6r"
 }
