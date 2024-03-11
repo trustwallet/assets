@@ -1,11 +1,36 @@
 {
     "name": "TrueUSD",
-    "website": "https://trusttoken.com",
-    "description": "TrueUSD is a USD-pegged stablecoin, that provides its users with regular attestations of escrowed balances, full collateral and legal protection against the misappropriation of the underlying USD.",
+    "website": "https://www.trueusd.com/",
+    "description": "TrueUSD is the first independently-verified digital asset redeemable 1-for-1 for US Dollars.",
     "explorer": "https://etherscan.io/token/0x0000000000085d4780B73119b644AE5ecd22b376",
     "type": "ERC20",
     "symbol": "TUSD",
     "decimals": 18,
     "status": "active",
-    "id": "0x0000000000085d4780B73119b644AE5ecd22b376"
+    "id": "0x0000000000085d4780B73119b644AE5ecd22b376",
+    "tags": [
+        "stablecoin"
+    ],
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/trusttoken/TrueUSD"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/tusd_official"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/TUSDofficial_EN"
+        },
+        {
+            "name": "medium",
+            "url": "https://trueusd.medium.com/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/true-usd/"
+        }
+    ]
 }

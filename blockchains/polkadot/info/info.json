@@ -1,25 +1,32 @@
 {
     "name": "Polkadot",
     "website": "https://polkadot.network",
-    "source_code": "https://github.com/w3f",
-    "white_paper": "https://polkadot.network/PolkaDotPaper.pdf",
     "description": "Polkadot is a blockchain project that aims to connect blockchains, to enable the transfer of value and logic across chains. DOT is the native coin of the network.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/polkadotnetwork",
-            "handle": "polkadotnetwork"
-        },
-        {
-            "name": "Reddit",
-            "url": "https://reddit.com/r/dot",
-            "handle": "dot"
-        }
-    ],
     "explorer": "http://polkascan.io",
     "research": "https://research.binance.com/en/projects/polkadot",
     "symbol": "DOT",
-    "type": "COIN",
+    "type": "coin",
     "decimals": 10,
-    "status": "active"
+    "status": "active",
+    "tags": [
+        "staking-native"
+    ],
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/w3f"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/polkadotnetwork"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/dot"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://polkadot.network/PolkaDotPaper.pdf"
+        }
+    ]
 }

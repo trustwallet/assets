@@ -1,0 +1,73 @@
+app:
+  log_level: "debug"
+
+client_urls:
+  binance:
+    dex: "https://dex.binance.org"
+    explorer: "https://explorer.binance.org"
+  assets_manager_api: "https://assets.trustwallet.com/api"
+
+urls:
+  assets_app: "https://assets-cdn.trustwallet.com"
+  logo: "https://trustwallet.com/assets/images/favicon.png"
+
+time_format: "2006-01-02T15:04:05.000000"
+
+validators_settings:
+  root_folder:
+    allowed_files:
+      - ".github"
+      - "blockchains"
+      - "dapps"
+      - "media"
+      - "node_modules"
+      - "script-old"
+      - "script"
+      - "test"
+      - ".gitignore"
+      - "azure-pipelines.yml"
+      - "jest.config.js"
+      - "LICENSE"
+      - "package-lock.json"
+      - "package.json"
+      - "README.md"
+      - ".git"
+      - ".eslintignore"
+      - ".eslintrc.js"
+      - "cmd"
+      - "internal"
+      - "go.mod"
+      - "go.sum"
+      - ".golangci.yml"
+      - "Makefile"
+      - "bin"
+    skip_files:
+      - "node_modules"
+    skip_dirs:
+      - ".git"
+
+  chain_folder:
+    allowed_files:
+      - "assets"
+      - "tokenlist.json"
+      - "chainlist.json"
+      - "tokenlist-extended.json"
+      - "validators"
+      - "info"
+
+  asset_folder:
+    allowed_files:
+      - "logo.png"
+      - "info.json"
+
+  chain_info_folder:
+    has_files:
+      - "logo.png"
+      - "info.json"
+
+  chain_validators_asset_folder:
+    has_files:
+      - "logo.png"
+
+  dapps_folder:
+    ext: ".png"

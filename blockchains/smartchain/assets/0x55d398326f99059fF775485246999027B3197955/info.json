@@ -8,5 +8,18 @@
     "symbol": "USDT",
     "decimals": 18,
     "status": "active",
-    "id": "0x55d398326f99059fF775485246999027B3197955"
+    "id": "0x55d398326f99059fF775485246999027B3197955",
+    "tags": [
+        "stablecoin"
+    ],
+    "links": [
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/tether/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/tether/"
+        }
+    ]
 }

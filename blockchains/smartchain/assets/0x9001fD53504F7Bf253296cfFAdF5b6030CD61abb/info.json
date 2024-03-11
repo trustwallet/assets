@@ -1,29 +1,29 @@
 {
     "name": "CyberFM Radio",
     "website": "https://cyber-fm.com",
-    "source_code": "https://github.com/CyberFM/",
     "description": "Utility token to reward Radio listeners and is 1 of 2 in the DLPRO Dual Token Economy.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/cyber_fm",
-            "handle": "CyberFM"
-        },
-        {
-            "name": "Facebook",
-            "url": "https://facebook.com/cyberfm",
-            "handle": "CyberFM"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/mftudotnet",
-            "handle": "CyberFM"
-        }
-    ],
     "explorer": "https://bscscan.com/token/0x9001fd53504f7bf253296cffadf5b6030cd61abb",
     "type": "BEP20",
     "symbol": "CYFM",
     "decimals": 18,
     "status": "active",
-    "id": "0x9001fD53504F7Bf253296cfFAdF5b6030CD61abb"
+    "id": "0x9001fD53504F7Bf253296cfFAdF5b6030CD61abb",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/CyberFM/"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/CyberFM"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/mftudotnet"
+        },
+        {
+            "name": "facebook",
+            "url": "https://facebook.com/cyberfm"
+        }
+    ]
 }
