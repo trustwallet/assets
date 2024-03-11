@@ -9,17 +9,18 @@
     "status": "active",
     "id": "0x85614A474dBeED440d5BBDB8aC50b0f22367F997",
     "links": [
-        {
-            "name": "coinmarketcap",
-            "url": "https://coinmarketcap.com/currencies/verge-eth/"
-        },
-        {
-            "name": "github",
-            "url": "https://github.com/vergecurrency"
-        },
-        {
-            "name": "discord",
-            "url": "https://discord.gg/vergecurrency"
-        }
+    {
+        "name": "coinmarketcap",
+        "url": "https://coinmarketcap.com/currencies/verge-eth/"
+    },
+    {
+        "name": "github",
+        "url": "https://github.com/vergecurrency"
+    }
+    ],
+    "tags": [
+        "staking",
+        "defi",
+        "farming"
     ]
 }
