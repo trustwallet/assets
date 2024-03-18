@@ -1,8 +1,7 @@
 {
     "name": "Ape Swap LP BNB-BTCB",
     "website": "https://apeswap.finance",
-    "description": "ApeSwap is an Automated Market Maker, Yield Farming, and Staking platform on Binance Smart Chain (forked from PancakeSwap). ApeSwap was built by DeFi Apes, for DeFi Apes. We have a dedicated team of experienced monkeys, who have been in the crypto space for years.",
-    "research": "https://obiedobo.gitbook.io/apeswap-finance/",
+    "description": "ApeSwap is an Automated Market Maker, Yield Farming, and Staking platform on Binance Smart Chain. ApeSwap was built by DeFi Apes, for DeFi Apes. We have a dedicated team of experienced monkeys, who have been in the crypto space for years.",
     "explorer": "https://bscscan.com/token/0x1E1aFE9D9c5f290d8F6996dDB190bd111908A43D",
     "type": "BEP20",
     "symbol": "APE-LP",
@@ -15,6 +14,10 @@
             "url": "https://github.com/ApeSwapFinance"
         },
         {
+            "name": "docs",
+            "url": "https://apeswap.gitbook.io/apeswap-finance/"
+        },
+        {
             "name": "twitter",
             "url": "https://twitter.com/ape_swap"
         },
@@ -23,8 +26,28 @@
             "url": "https://t.me/ape_swap"
         },
         {
+            "name": "telegram_news",
+            "url": "https://t.me/ape_swap_news"
+        },
+        {
             "name": "medium",
             "url": "https://ape-swap.medium.com/"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/AbVxfGRCSd/"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/Apeswap/"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/apeswap-finance/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/apeswap-finance"
         }
     ]
 }
