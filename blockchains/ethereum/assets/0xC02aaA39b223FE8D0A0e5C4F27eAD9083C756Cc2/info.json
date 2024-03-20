@@ -1,11 +1,32 @@
 {
-    "name": "WETH",
-    "symbol": "WETH",
+    "name": "WETH (WETH)",
     "type": "ERC20",
+    "symbol": "WETH",
     "decimals": 18,
-    "description": "-",
-    "website": "https://weth.io/",
-    "explorer": "https://etherscan.io/token/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+    "website": "https://peacefulputin.com",
+    "description": "A transparent, decentralized, open-source, peer-to-peer digital asset designed to shift power away from centralized systems, restoring it directly to the individual user. This project is more than a MemeCoin; it's a symbol of economic empowerment and a beacon for unity across the globe.",
+    "explorer": "https://etherscan.io/token/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
     "status": "active",
-    "id": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+    "id": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/peaceful_putin"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://peacefulputin.com/roadmap"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/Vt4yhe8h"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/peacefulputintoken"
+        }
+    ],
+    "tags": [
+        "memes"
+    ]
 }
