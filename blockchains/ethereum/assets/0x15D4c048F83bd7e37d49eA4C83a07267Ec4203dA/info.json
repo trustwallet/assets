@@ -1,44 +1,37 @@
 {
-    "name": "GALA",
+    "name": "Gala",
     "website": "https://gala.games",
-    "source_code": "https://etherscan.io/address/0x15D4c048F83bd7e37d49eA4C83a07267Ec4203dA#code",
     "description": "GALA is the utility token powering the Gala Games ecosystem.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/GoGalaGames",
-            "handle": "GoGalaGames"
-        },
-        {
-            "name": "Facebook",
-            "url": "https://facebook.com/GoGalaGames",
-            "handle": "GoGalaGames"
-        },
-        {
-            "name": "Instagram",
-            "url": "https://instagram.com/GoGalaGames",
-            "handle": "GoGalaGames"
-        },
-        {
-            "name": "Telegram",
-            "url": "http://galagames.tel",
-            "handle": "GoGalaGames"
-        },
-        {
-            "name": "Discord",
-            "url": "http://galagames.chat",
-            "handle": "GoGalaGames"
-        },
-        {
-            "name": "Reddit",
-            "url": "https://reddit.com/r/GoGalaGames",
-            "handle": "GoGalaGames"
-        }
-    ],
     "explorer": "https://etherscan.io/token/0x15D4c048F83bd7e37d49eA4C83a07267Ec4203dA",
     "type": "ERC20",
     "symbol": "GALA",
     "decimals": 8,
-    "status": "active",
-    "id": "0x15D4c048F83bd7e37d49eA4C83a07267Ec4203dA"
+    "status": "abandoned",
+    "id": "0x15D4c048F83bd7e37d49eA4C83a07267Ec4203dA",
+    "tags": [
+        "nft",
+        "gamefi"
+    ],
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/GoGalaGames"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/GoGalaGames"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/GoGalaGames"
+        },
+        {
+            "name": "facebook",
+            "url": "https://facebook.com/GoGalaGames"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/GoGalaGames"
+        }
+    ]
 }

@@ -1,0 +1,23 @@
+{
+    "name": "Trust Wallet: Linea List",
+    "logoURI": "https://trustwallet.com/assets/images/favicon.png",
+    "timestamp": "2024-03-18T14:33:26.183301",
+    "tokens": [
+        {
+            "asset": "c59144_t0xEB466342C4d449BC9f53A865D5Cb90586f405215",
+            "type": "ETH",
+            "address": "0xEB466342C4d449BC9f53A865D5Cb90586f405215",
+            "name": "Axelar Wrapped USDC",
+            "symbol": "axlUSDC",
+            "decimals": 6,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/linea/assets/0xEB466342C4d449BC9f53A865D5Cb90586f405215/logo.png",
+            "pairs": []
+        }
+       
+    ],
+    "version": {
+        "major": 1,
+        "minor": 0,
+        "patch": 0
+    }
+}

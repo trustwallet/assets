@@ -1,29 +1,25 @@
 {
     "name": "Hermez Network Token",
     "website": "https://hermez.io/",
-    "source_code": "https://github.com/hermeznetwork",
     "description": "Hermez is a decentralized zk-rollup focused on scaling payments and token transfers on top of Ethereum.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/hermez_network",
-            "handle": "hermez_network"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/hermez_network",
-            "handle": "hermez_network"
-        },
-        {
-            "name": "GitHub",
-            "url": "https://github.com/hermeznetwork",
-            "handle": "hermeznetwork"
-        }
-    ],
     "explorer": "https://etherscan.io/token/0xEEF9f339514298C6A857EfCfC1A762aF84438dEE",
     "type": "ERC20",
     "symbol": "HEZ",
     "decimals": 18,
     "status": "active",
-    "id": "0xEEF9f339514298C6A857EfCfC1A762aF84438dEE"
+    "id": "0xEEF9f339514298C6A857EfCfC1A762aF84438dEE",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/hermeznetwork"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/hermez_network"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/hermez_network"
+        }
+    ]
 }

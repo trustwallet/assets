@@ -1,12 +1,15 @@
 {
-    "name": "NEAR Protocol",
+    "name": "BNB pegged NEAR Protocol",
     "website": "https://near.org",
-    "description": "NEAR is an open source platform that accelerates the development of decentralized applications.",
+    "description": "BNB pegged NEAR Protocol (NEAR BEP20) is a token issued by Binance on Smart Chain; its price is pegged to NEAR Protocol (NEAR) at a ratio of 1:1.",
     "explorer": "https://bscscan.com/token/0x1Fa4a73a3F0133f0025378af00236f3aBDEE5D63",
     "research": "https://research.binance.com/en/projects/near-protocol",
     "type": "BEP20",
     "symbol": "NEAR",
     "decimals": 18,
     "status": "active",
-    "id": "0x1Fa4a73a3F0133f0025378af00236f3aBDEE5D63"
+    "id": "0x1Fa4a73a3F0133f0025378af00236f3aBDEE5D63",
+    "tags": [
+        "binance-peg"
+    ]
 }

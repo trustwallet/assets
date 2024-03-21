@@ -3,19 +3,19 @@
     "website": "https://squirrel.finance",
     "description": "Squirrel Finance is a new ecosystem on the BinanceSmartChain to empower simple & secure DeFi.",
     "explorer": "https://bscscan.com/token/0x8893D5fA71389673C5c4b9b3cb4EE1ba71207556",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/SquirrelDeFi"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/SquirrelDeFi"
-        }
-    ],
     "type": "BEP20",
     "symbol": "NUTS",
     "decimals": 18,
     "status": "active",
-    "id": "0x8893D5fA71389673C5c4b9b3cb4EE1ba71207556"
+    "id": "0x8893D5fA71389673C5c4b9b3cb4EE1ba71207556",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/SquirrelDeFi"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/SquirrelDeFi"
+        }
+    ]
 }

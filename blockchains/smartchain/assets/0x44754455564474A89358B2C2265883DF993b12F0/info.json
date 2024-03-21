@@ -1,29 +1,29 @@
 {
-    "name": "ZeroSwap",
+    "name": "ZeroSwapToken",
     "website": "https://zeroswap.io/",
-    "source_code": "https://github.com/ZeroswapLabs",
     "description": "ZeroSwap.io is a Multi-Chain, Zero-fee, On-chain Trading protocol with Liquidity Mining, DeFi Token Offering, and DEX Aggregation. The protocol will reward users every time they make an on-chain trade and provide liquidity to existing DEXes. All transactions would be Gasless with Zero Trade Fee.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/ZeroSwapLabs",
-            "handle": "ZeroSwapLabs"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/zeroswap",
-            "handle": "zeroswap"
-        },
-        {
-            "name": "Medium",
-            "url": "https://medium.com/zeroswaplabs",
-            "handle": "zeroswaplabs"
-        }
-    ],
     "explorer": "https://bscscan.com/token/0x44754455564474A89358B2C2265883DF993b12F0",
     "type": "BEP20",
     "symbol": "ZEE",
     "decimals": 18,
     "status": "active",
-    "id": "0x44754455564474A89358B2C2265883DF993b12F0"
+    "id": "0x44754455564474A89358B2C2265883DF993b12F0",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/ZeroswapLabs"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/ZeroSwapLabs"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/zeroswap"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/zeroswaplabs"
+        }
+    ]
 }

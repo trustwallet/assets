@@ -1,30 +1,33 @@
 {
     "name": "DEUS",
     "website": "https://deus.finance/",
-    "source_code": "https://github.com/deusfinance",
-    "white_paper": "https://deus.finance/litepaper.pdf",
     "description": "DEUS finance the next generation asset tokenization transpose any verifiable digital or non-digital asset securely onto the blockchain.",
     "explorer": "https://etherscan.io/token/0x3b62F3820e0B035cc4aD602dECe6d796BC325325",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/DeusDao",
-            "handle": "DeusDao"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/deusfinance",
-            "handle": "deusfinance"
-        },
-        {
-            "name": "Medium",
-            "url": "https://medium.com/@deusfinance",
-            "handle": "deusfinance"
-        }
-    ],
     "type": "ERC20",
     "symbol": "DEUS",
     "decimals": 18,
-    "status": "active",
-    "id": "0x3b62F3820e0B035cc4aD602dECe6d796BC325325"
+    "status": "abandoned",
+    "id": "0x3b62F3820e0B035cc4aD602dECe6d796BC325325",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/deusfinance"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/DeusDao"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/deusfinance"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/@deusfinance"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://deus.finance/litepaper.pdf"
+        }
+    ]
 }

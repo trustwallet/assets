@@ -1,24 +1,25 @@
 {
     "name": "TimeMiner",
     "website": "https://TimeMiner.site",
-    "white_paper": "https://www.TimeMiner.site/TimeMiner.pdf",
     "description": "A new project seeking to change how tokens are generated utilizing Proof of Time. Only one new coin is minted every hour.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/_timeminer",
-            "handle": "TimeMiner"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/timeminer",
-            "handle": "TimeMiner"
-        }
-    ],
     "explorer": "https://etherscan.io/token/0xA54C67bd320Da4F9725a6f585b7635a0c09B122e",
     "type": "ERC20",
     "symbol": "TIME",
     "decimals": 6,
     "status": "active",
-    "id": "0xA54C67bd320Da4F9725a6f585b7635a0c09B122e"
+    "id": "0xA54C67bd320Da4F9725a6f585b7635a0c09B122e",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/TimeMiner"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/timeminer"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://www.TimeMiner.site/TimeMiner.pdf"
+        }
+    ]
 }

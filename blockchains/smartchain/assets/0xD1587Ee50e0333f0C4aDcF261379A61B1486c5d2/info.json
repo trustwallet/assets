@@ -2,20 +2,23 @@
     "name": "WindSwap",
     "website": "https://windswap.finance/",
     "description": "WindSwap is a Deflationary Bridging Token & DEX Platform.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/windswap"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/windswapmembers"
-        }
-    ],
     "explorer": "https://bscscan.com/token/0xD1587Ee50e0333f0C4aDcF261379A61B1486c5d2",
     "type": "BEP20",
     "symbol": "WINDY",
     "decimals": 8,
     "status": "active",
-    "id": "0xD1587Ee50e0333f0C4aDcF261379A61B1486c5d2"
+    "id": "0xD1587Ee50e0333f0C4aDcF261379A61B1486c5d2",
+    "tags": [
+        "deflationary"
+    ],
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/windswap"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/windswapmembers"
+        }
+    ]
 }
