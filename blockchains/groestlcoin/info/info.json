@@ -1,21 +1,29 @@
 {
     "name": "Groestlcoin",
     "website": "http://groestlcoin.org",
-    "source_code": "https://github.com/Groestlcoin",
-    "white_paper": "http://www.groestl.info/groestl-implementation-guide.pdf",
-    "short_description": "Groestlcoin (GRS) is a cryptocoin, that is optionally private. Anyone can mine it effectively, with GPU.",
-    "description": "Launched in Mar 2014, Groestlcoin (GRS) is a peer-to-peer (p2p) cryptocurrency with a focus on technological advancement. GRS is reportedly he first coin to implement Segregated Witness (SegWit) and perform the first Lightning Network transaction on its mainnet network. GRS utilizes two rounds of Grøstl-512 for its mining algorithm. GRS claims to have major development releases every 3 months.",
-    "socials": [
+    "description": "Groestlcoin (GRS) is a cryptocoin, that is optionally private. Anyone can mine it effectively, with GPU.",
+    "explorer": "https://grs.tokenview.com/",
+    "research": "https://research.binance.com/en/projects/groestlcoin",
+    "symbol": "GRS",
+    "type": "coin",
+    "decimals": 8,
+    "status": "active",
+    "links": [
         {
-            "name": "Twitter",
-            "url": "https://twitter.com/GroestlcoinTeam",
-            "handle": "GroestlcoinTeam"
+            "name": "github",
+            "url": "https://github.com/Groestlcoin"
         },
         {
-            "name": "Reddit",
-            "url": "https://reddit.com/r/groestlcoin",
-            "handle": "groestlcoin"
+            "name": "twitter",
+            "url": "https://twitter.com/GroestlcoinTeam"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/groestlcoin"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://www.groestl.info/groestl-implementation-guide.pdf"
         }
-    ],
-    "explorer": "https://grs.tokenview.com/"
+    ]
 }

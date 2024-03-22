@@ -1,21 +1,29 @@
 {
     "name": "Bitcoin Gold",
     "website": "https://bitcoingold.org/",
-    "source_code": "https://github.com/BTCGPU/BTCGPU",
-    "white_paper": "https://github.com/BTCGPU/BTCGPU/wiki/Technical-Spec",
-    "short_description": "Bitcoin Gold is a Hard Fork of Bitcoin. BTG implements a new PoW algorithm, Equihash, that makes mining decentralized again with ASIC resistant algorithm.",
-    "description": "Bitcoin Gold (BTG) is a fork of Bitcoin that occurred on October 24, 2017 on block 419406. Bitcoin Gold changed Bitcoin’s proof-of-work algorithm from SHA256 to Equihash rendering specialised mining equipment obsolete in an attempt to democratise the Bitcoin mining process.",
-    "socials": [
+    "description": "Bitcoin Gold is a Hard Fork of Bitcoin. BTG implements a new PoW algorithm, Equihash, that makes mining decentralized again with ASIC resistant algorithm.",
+    "explorer": "https://explorer.bitcoingold.org/insight/",
+    "research": "https://research.binance.com/en/projects/bitcoin-gold",
+    "symbol": "BTG",
+    "type": "coin",
+    "decimals": 8,
+    "status": "active",
+    "links": [
         {
-            "name": "Twitter",
-            "url": "https://twitter.com/bitcoingold",
-            "handle": "bitcoingold"
+            "name": "github",
+            "url": "https://github.com/BTCGPU/BTCGPU"
         },
         {
-            "name": "Reddit",
-            "url": "https://reddit.com/r/BitcoinGoldHQ",
-            "handle": "BitcoinGoldHQ"
+            "name": "twitter",
+            "url": "https://twitter.com/bitcoingold"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/BitcoinGoldHQ"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://github.com/BTCGPU/BTCGPU/wiki/Technical-Spec"
         }
-    ],
-    "explorer": "https://explorer.bitcoingold.org/insight/"
+    ]
 }

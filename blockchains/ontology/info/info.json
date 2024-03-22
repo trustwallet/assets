@@ -1,21 +1,29 @@
 {
     "name": "Ontology",
     "website": "https://ont.io",
-    "source_code": "https://github.com/ontio",
-    "white_paper": "https://ont.io/wp/Ontology-Introductory-White-Paper-EN.pdf",
-    "short_description": "Ontology is a new high-performance public blockchain project & a distributed trust collaboration platform that include a series of complete distributed ledgers and smart contract systems.",
-    "description": "Ontology describes itself as a provider of high-performance public blockchains, which includes distributed ledger and smart contract systems.\r\n\r\nThe Ontology blockchain framework reportedly supports public blockchain systems that can be customized for different applications. Ontology supports collaboration among chain networks with its various protocol groups.\r\n\r\nOntology aims to constantly provide common modules on the underlying infrastructure for different kinds of distributed scenarios, such as those for the distributed digital identity framework and distributed data exchange protocol. Ontology intends to continue developing new common modules based on specific scenario requirements. \r\n\r\nOntology uses a dual token (ONT and ONG) model. ONT is a coin and can be used for staking in consensus, whereas ONG is a utility token used for on-chain services. ONT releases ONG periodically.",
-    "socials": [
+    "description": "Ontology is a new high-performance public blockchain project & a distributed trust collaboration platform that include a series of complete distributed ledgers and smart contract systems.",
+    "explorer": "https://explorer.ont.io",
+    "research": "https://research.binance.com/en/projects/ontology",
+    "symbol": "ONT",
+    "type": "coin",
+    "decimals": 0,
+    "status": "active",
+    "links": [
         {
-            "name": "Twitter",
-            "url": "https://twitter.com/OntologyNetwork",
-            "handle": "OntologyNetwork"
+            "name": "github",
+            "url": "https://github.com/ontio"
         },
         {
-            "name": "Reddit",
-            "url": "https://reddit.com/r/OntologyNetwork",
-            "handle": "OntologyNetwork"
+            "name": "twitter",
+            "url": "https://twitter.com/OntologyNetwork"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/OntologyNetwork"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://ont.io/wp/Ontology-Introductory-White-Paper-EN.pdf"
         }
-    ],
-    "explorer": "https://explorer.ont.io"
+    ]
 }

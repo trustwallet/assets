@@ -1,21 +1,29 @@
 {
     "name": "THETA",
     "website": "https://thetatoken.org",
-    "source_code": "https://github.com/thetatoken",
-    "white_paper": "https://s3.us-east-2.amazonaws.com/assets.thetatoken.org/Theta-white-paper-latest.pdf",
-    "short_description": "Theta is a decentralized video delivery network, powered by users and an innovative new blockchain.",
-    "description": "THETA (THETA) is an open source protocol that powers a decentralized streaming network. It will allow for decentralized apps (DApps) to be built on top of the platform to enable use cases that span esports, entertainment, and peer-to-peer streaming. SLIVER.tv’s DApp was the first application built on the Theta network leveraging its existing user base of millions of esports viewers. In Nov 2018, Tencent Games announced a collaboration with SLIVER.tv to bring Theta rewards to Ring of Elysium players. The founding team has a combined 30+ years of experience in the video streaming space with advisors including Steve Chen, Co-Founder of YouTube, and Justin Kan, Co-Founder of Twitch.",
-    "socials": [
+    "description": "Theta is a decentralized video delivery network, powered by users and an innovative new blockchain.",
+    "explorer": "https://explorer.thetatoken.org",
+    "research": "https://research.binance.com/en/projects/theta-network",
+    "symbol": "THETA",
+    "type": "coin",
+    "decimals": 18,
+    "status": "active",
+    "links": [
         {
-            "name": "Twitter",
-            "url": "https://twitter.com/Theta_Network",
-            "handle": "Theta_Network"
+            "name": "github",
+            "url": "https://github.com/thetatoken"
         },
         {
-            "name": "Reddit",
-            "url": "https://reddit.com/r/theta_network",
-            "handle": "theta_network"
+            "name": "twitter",
+            "url": "https://twitter.com/Theta_Network"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/theta_network"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://s3.us-east-2.amazonaws.com/assets.thetatoken.org/Theta-white-paper-latest.pdf"
         }
-    ],
-    "explorer": "https://explorer.thetatoken.org"
+    ]
 }

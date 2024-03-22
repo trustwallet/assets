@@ -1,21 +1,29 @@
 {
     "name": "VeChain",
     "website": "https://vechain.org",
-    "source_code": "https://github.com/vechain",
-    "white_paper": "https://www.vechain.org/whitepaper/#header",
-    "short_description": "VeChain is the world’s leading blockchain platform offering Blockchain-as-a-Service to enterprises for products and information. VeChain strives to build a trust-free and distributed business ecosystem.",
-    "description": "VeChain is an enterprise-focused blockchain ecosystem that aims to enhance supply chain management by connecting blockchain technology with the real world through 'a comprehensive governance structure, a robust economic model, and advanced IoT integration'. VeChain enables manufacturers to assign products with unique identifiers on the platform, thereby allowing participants to track the movement and provenance of products in a supply chain. \r\n Started in June 2015, VeChain describes itself as 'a pioneer of real-world applications using public blockchain technology, with international operations in Singapore, Luxembourg, Tokyo, Shanghai, Paris, Hong Kong, and San Francisco'",
-    "socials": [
+    "description": "VeChain is the world’s leading blockchain platform offering Blockchain-as-a-Service to enterprises for products and information. VeChain strives to build a trust-free and distributed business ecosystem.",
+    "explorer": "https://insight.vecha.in",
+    "research": "https://research.binance.com/en/projects/vechain",
+    "symbol": "VET",
+    "type": "coin",
+    "decimals": 18,
+    "status": "active",
+    "links": [
         {
-            "name": "Twitter",
-            "url": "https://twitter.com/vechainofficial",
-            "handle": "vechainofficial"
+            "name": "github",
+            "url": "https://github.com/vechain"
         },
         {
-            "name": "Reddit",
-            "url": "https://reddit.com/r/vechain",
-            "handle": "vechain"
+            "name": "twitter",
+            "url": "https://twitter.com/vechainofficial"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/vechain"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://www.vechain.org/whitepaper/#header"
         }
-    ],
-    "explorer": "https://insight.vecha.in"
+    ]
 }

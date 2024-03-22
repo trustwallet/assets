@@ -1,13 +1,17 @@
 {
     "name": "USDX",
     "description": "A fast way to transfer money globally in secured digital transactions.",
-    "socials": [
+    "website": "-",
+    "explorer": "https://etherscan.io/token/0xBec4A69D6A5fbCb2303c13D24ea1A51a6F19bd12",
+    "type": "ERC20",
+    "symbol": "USDX",
+    "decimals": 0,
+    "status": "active",
+    "id": "0xBec4A69D6A5fbCb2303c13D24ea1A51a6F19bd12",
+    "links": [
         {
-            "name": "Twitter",
-            "url": "https://twitter.com/coinusdx",
-            "handle": "coinusdx"
+            "name": "twitter",
+            "url": "https://twitter.com/coinusdx"
         }
-
-    ],
-    "explorer": "https://etherscan.io/token/0xbec4a69d6a5fbcb2303c13d24ea1a51a6f19bd12"
+    ]
 }

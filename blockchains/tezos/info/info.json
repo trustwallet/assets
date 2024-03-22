@@ -1,21 +1,32 @@
 {
     "name": "Tezos",
     "website": "https://tezos.com/",
-    "source_code": "https://gitlab.com/tezos/tezos",
-    "white_paper": "https://www.tezos.com/static/papers/white_paper.pdf",
-    "short_description": "Tezos is a smart contract platform that uses blockchain voting to be self-governing by its token holders. Also, the platform aims to boost the security of smart contracts.",
-    "description": "Developed by ex-Morgan Stanley analyst Arthur Breitman. Tezos (XTZ) is a multi-purpose platform that supports dApps and smart contracts. It aims to combine a self-correcting protocol and on-chain governance to manage network modifications. Tezos is powered by XTZ, which is created through 'baking'. Bakers put up deposits and are rewarded for signing and publishing blocks. Witnesses then validate the blocks. Dishonest bakers lose their XTZ deposits. Tezos uses delegated proof-of-stake (DPoS) and supports Turing complete smart contracts. Tezos is implemented in the OCaml programming language, which is said to offer 'functional, imperative, and object-oriented styles'.",
-    "socials": [
+    "description": "Tezos is a smart contract platform that uses blockchain voting to be self-governing by its token holders. Also, the platform aims to boost the security of smart contracts.",
+    "explorer": "https://tezos.id",
+    "research": "https://research.binance.com/en/projects/tezos",
+    "symbol": "XTZ",
+    "type": "coin",
+    "decimals": 6,
+    "status": "active",
+    "tags": [
+        "staking-native"
+    ],
+    "links": [
         {
-            "name": "Twitter",
-            "url": "https://twitter.com/tezos",
-            "handle": "tezos"
+            "name": "source_code",
+            "url": "https://gitlab.com/tezos/tezos"
         },
         {
-            "name": "Reddit",
-            "url": "https://reddit.com/r/tezos",
-            "handle": "tezos"
+            "name": "twitter",
+            "url": "https://twitter.com/tezos"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/tezos"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://www.tezos.com/static/papers/white_paper.pdf"
         }
-    ],
-    "explorer": "https://tezos.id"
+    ]
 }

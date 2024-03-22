@@ -1,21 +1,29 @@
 {
     "name": "Nebulas",
     "website": "https://nebulas.io",
-    "source_code": "https://github.com/nebulasio",
-    "white_paper": "https://nebulas.io/docs/NebulasWhitepaper.pdf",
-    "short_description": "Nebulas is a decentralized platform which provides a search framework for all blockchains. Nebulas is a next generation public blockchain, aiming for a continuously improving ecosystem.",
-    "description": "Nebulas describes itself as an autonomous metanet, which focuses on on-chain data, interactions, and collaboration. Its hyper-mapped structural metadata can reportedly handle increasingly complex on-chain data and describe these interactions. On 15 April 2019, the team released Nebulas NOVA, a blockchain network with native on-chain incentive. After Nebulas NOVA goes live, developers and users will be able to participate in the development of the Nebulas ecosystem to realize its vision  - let everyone benefit fairly from decentralized collaboration. To facilitate ecosystem development, asset management, and promote the “autonomous metanet”, the founding team of Nebulas will form the “Nebulas Community Group” together with the community. The Nebulas Community Group comprises 3 organizations - Nebulas Council, Nebulas Foundation, and Nebulas Technical Committee. These organizations will supervise each other and support the sustainable development of Nebulas.",
-    "socials": [
+    "description": "Nebulas is a decentralized platform which provides a search framework for all blockchains. Nebulas is a next generation public blockchain, aiming for a continuously improving ecosystem.",
+    "explorer": "https://explorer.nebulas.io",
+    "research": "https://research.binance.com/en/projects/nebulas",
+    "symbol": "NAS",
+    "type": "coin",
+    "decimals": 18,
+    "status": "active",
+    "links": [
         {
-            "name": "Twitter",
-            "url": "https://twitter.com/nebulasio",
-            "handle": "nebulasio"
+            "name": "github",
+            "url": "https://github.com/nebulasio"
         },
         {
-            "name": "Reddit",
-            "url": "https://reddit.com/r/nebulas",
-            "handle": "nebulas"
+            "name": "twitter",
+            "url": "https://twitter.com/nebulasio"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/nebulas"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://nebulas.io/docs/NebulasWhitepaper.pdf"
         }
-    ],
-    "explorer": "https://explorer.nebulas.io"
+    ]
 }

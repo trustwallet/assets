@@ -1,21 +1,29 @@
 {
     "name": "Waves",
     "website": "https://wavesplatform.com",
-    "source_code": "https://github.com/wavesplatform",
-    "white_paper": "https://blog.wavesplatform.com/waves-whitepaper-164dd6ca6a23",
-    "short_description": "Waves is an open-source blockchain platform, developed, marketed, and operated by Waves Platform AG, that allows users to launch their own custom cryptocurrency tokens.",
-    "description": "Waves Platform’s mission lies in creating an ecosystem that aims to accelerate the shift from centralized to decentralized systems and an emphasis on the individual’s control of their own funds and assets, personal data, and privacy. Waves Platform describes itself as an open network for Web 3.0 applications and custom decentralized solutions, with a range of purpose-designed tools for making the process of developing and running dApps easy and accessible. Launched in 2016, Waves has since released several blockchain-based solutions. Waves’ technology is designed to address the needs of developers and companies that want to leverage the properties of blockchain systems – including their security, auditability, verifiability and the trustless execution of transactions and business logic.\r\n\r\nWaves Platform claims to provide everything required to support the backend of Web 3.0 services. In 2017, Waves launched its mainnet with LPoS, decentralized exchange DEX, and later the Waves-NG protocol. In 2018, the Waves development team delivered the first implementation of smart contracts. This was followed by the release of the RIDE programming language in 2019, Strightforward, Predictible and Failproof language for programming logic. In June 2019 the mainnet of Waves Enterprise, a global private blockchain solution, was launched. All of this is complemented with a broad infrastructure: an IDE for sandbox development, tools, SDKs, libraries, frameworks, and protocols for convenient and easy integrations.\r\n\r\nWaves Platform consists of three core layers:\r\n\r\nProtocol layer: LPoS, Waves-NG, fixed fees, easy mining start, various transactions models\r\n\r\nInfrastructure layer: Keeper for private key management, IDE for sandbox development, smart-contracts programming language RIDE and other tools for dApp development, API’s, libraries, tools, and frameworks.\r\n\r\nApplication layer: basic core open-source apps (decentralized exchange, mobile apps, and voting) and various dApps running on the network.",
-    "socials": [
+    "description": "Waves is an open-source blockchain platform, developed, marketed, and operated by Waves Platform AG, that allows users to launch their own custom cryptocurrency tokens.",
+    "explorer": "http://wavesexplorer.com",
+    "research": "https://research.binance.com/en/projects/waves",
+    "symbol": "WAVES",
+    "type": "coin",
+    "decimals": 8,
+    "status": "active",
+    "links": [
         {
-            "name": "Twitter",
-            "url": "https://twitter.com/wavesplatform",
-            "handle": "wavesplatform"
+            "name": "github",
+            "url": "https://github.com/wavesplatform"
         },
         {
-            "name": "Reddit",
-            "url": "https://reddit.com/r/Wavesplatform",
-            "handle": "Wavesplatform"
+            "name": "twitter",
+            "url": "https://twitter.com/wavesplatform"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/Wavesplatform"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://blog.wavesplatform.com/waves-whitepaper-164dd6ca6a23"
         }
-    ],
-    "explorer": "http://wavesexplorer.com"
+    ]
 }

@@ -1,21 +1,29 @@
 {
     "name": "Nano",
     "website": "http://nano.org/en",
-    "source_code": "https://github.com/nanocurrency",
-    "white_paper": "https://nano.org/en/whitepaper",
-    "short_description": "Digital currency for the real world – the fast and free way to pay for everything in life.",
-    "description": "Launched in 2015, Nano describes itself as an open source, sustainable, and secure next-generation digital currency focused on removing perceived inefficiencies present in existing cryptocurrencies. Designed to solve peer to peer transfer of value, Nano aims to revolutionize the world economy through an ultrafast and fee-less network that is open and accessible to everyone. \r\n\r\nNano is reportedly able to offer fast and feeless transactions due to the Block Lattice - a data structure in which all accounts each have their own blockchain, rather than competing with others on a central chain. Consensus is generated through representative voting, where accounts can freely choose their representative at any time with an update of their account chain, thereby providing more control for users to decide who validates transactions.\r\n\r\nEach component of the protocol was created with the long term goals of decentralization and accessibility in mind. By creating a system where representatives are not paid to operate, the incentive to participate in the network is shifted to indirect, operational cost savings. The team claims that this change in incentive model is more efficient and removes one of the factors driving centralization in other systems because participants are not encouraged to interact beyond their direct needs and supporting the network, and thus economies of scale become less critical.",
-    "socials": [
+    "description": "Digital currency for the real world – the fast and free way to pay for everything in life.",
+    "explorer": "https://nanocrawler.cc",
+    "research": "https://research.binance.com/en/projects/nano",
+    "symbol": "XNO",
+    "type": "coin",
+    "decimals": 30,
+    "status": "active",
+    "links": [
         {
-            "name": "Twitter",
-            "url": "https://twitter.com/nano",
-            "handle": "nano"
+            "name": "github",
+            "url": "https://github.com/nanocurrency"
         },
         {
-            "name": "Reddit",
-            "url": "https://reddit.com/r/nanocurrency",
-            "handle": "nanocurrency"
+            "name": "twitter",
+            "url": "https://twitter.com/nano"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/nanocurrency"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://nano.org/en/whitepaper"
         }
-    ],
-    "explorer": "https://nanocrawler.cc"
+    ]
 }

@@ -1,21 +1,32 @@
 {
     "name": "Cosmos",
     "website": "https://cosmos.network/",
-    "source_code": "https://github.com/cosmos",
-    "white_paper": "https://cosmos.network/resources/whitepaper",
-    "short_description": "Cosmos is a secure & scalable blockchain ecosystem where thousands of dApps interoperate to create the foundation for a new token economy.",
-    "description": "Cosmos is a decentralized network of independent parallel blockchains, each powered by BFT consensus algorithms like Tendermint consensus. Cosmos is an ecosystem of blockchains that can scale and interoperate with each other.",
-    "socials": [
+    "description": "Cosmos is a secure & scalable blockchain ecosystem where thousands of dApps interoperate to create the foundation for a new token economy.",
+    "explorer": "https://www.mintscan.io/",
+    "research": "https://research.binance.com/en/projects/cosmos-network",
+    "symbol": "ATOM",
+    "type": "coin",
+    "decimals": 6,
+    "status": "active",
+    "tags": [
+        "staking-native"
+    ],
+    "links": [
         {
-            "name": "Twitter",
-            "url": "https://twitter.com/cosmos",
-            "handle": "cosmos"
+            "name": "github",
+            "url": "https://github.com/cosmos"
         },
         {
-            "name": "Reddit",
-            "url": "https://reddit.com/r/cosmosnetwork",
-            "handle": "cosmosnetwork"
+            "name": "twitter",
+            "url": "https://twitter.com/cosmos"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/cosmosnetwork"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://cosmos.network/resources/whitepaper"
         }
-    ],
-    "explorer": "https://www.mintscan.io/"
+    ]
 }

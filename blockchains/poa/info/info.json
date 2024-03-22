@@ -1,21 +1,29 @@
 {
     "name": "POA",
     "website": "https://poa.network",
-    "source_code": "https://github.com/poanetwork",
-    "white_paper": "https://github.com/poanetwork/wiki/wiki/POA-Network-Whitepaper",
-    "short_description": "An open network based on Ethereum protocol with Proof of Authority consensus by independent actors. Public notaries with known identity serve as private validators to secure the network.",
-    "description": "The POA Network is an Ethereum-based platform that offers an open-source framework for smart contracts. The project is an Ethereum sidechain that uses Proof of Autonomy as its consensus mechanism, relying on a set of pre-selected validators to secure the network. The validators' identity will be public. \r\n\r\nIts purported benefits are the flexibility to code in Ethereum standards with the benefits of scalability and interoperability in blockchain networks. \r\n\r\nThe POA Network will allow organizations to build their own networks with their own validators and developers to deploy DApps.",
-    "socials": [
+    "description": "An open network based on Ethereum protocol with Proof of Authority consensus by independent actors. Public notaries with known identity serve as private validators to secure the network.",
+    "explorer": "https://blockscout.com/poa/core",
+    "research": "https://research.binance.com/en/projects/poa-network",
+    "symbol": "POA",
+    "type": "coin",
+    "decimals": 18,
+    "status": "active",
+    "links": [
         {
-            "name": "Twitter",
-            "url": "https://twitter.com/poanetwork",
-            "handle": "poanetwork"
+            "name": "github",
+            "url": "https://github.com/poanetwork"
         },
         {
-            "name": "Reddit",
-            "url": "https://reddit.com/r/POA",
-            "handle": "POA"
+            "name": "twitter",
+            "url": "https://twitter.com/poanetwork"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/POA"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://github.com/poanetwork/wiki/wiki/POA-Network-Whitepaper"
         }
-    ],
-    "explorer": "https://blockscout.com/poa/core"
+    ]
 }

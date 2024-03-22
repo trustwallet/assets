@@ -1,21 +1,29 @@
 {
     "name": "Zilliqa",
     "website": "https://zilliqa.com",
-    "source_code": "https://github.com/Zilliqa/Zilliqa",
-    "white_paper": "https://docs.zilliqa.com/whitepaper.pdf",
-    "short_description": "Zilliqa will be the world's first high-throughput public blockchain platform - designed to scale to thousands ​of transactions per second.",
-    "description": "Introduced in 2017, Zilliqa (ZIL) is centered around the idea of 'Sharding' and was designed to enhance the scalability of cryptocurrency networks such as Ethereum. Sharding is analogous to the concept of 'divide and conquer', where transactions are divided into smaller groups for miners to perform parallel transactional verification. The upshot of this is the ability to reach consensus more quickly, which would increase the number of transactions in a given period. According to the white paper, transactions speed could scale to approximately 1000x that of Ethereum's network. Zilliqa’s high throughput means that developers can focus on fleshing out their ideas rather than worrying about network congestion.",
-    "socials": [
+    "description": "Zilliqa will be the world's first high-throughput public blockchain platform - designed to scale to thousands ​of transactions per second.",
+    "explorer": "https://viewblock.io/zilliqa",
+    "research": "https://research.binance.com/en/projects/zilliqa",
+    "symbol": "ZIL",
+    "type": "coin",
+    "decimals": 12,
+    "status": "active",
+    "links": [
         {
-            "name": "Twitter",
-            "url": "https://twitter.com/zilliqa",
-            "handle": "zilliqa"
+            "name": "github",
+            "url": "https://github.com/Zilliqa/Zilliqa"
         },
         {
-            "name": "Reddit",
-            "url": "https://reddit.com/r/zilliqa",
-            "handle": "zilliqa"
+            "name": "twitter",
+            "url": "https://twitter.com/zilliqa"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/zilliqa"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://docs.zilliqa.com/whitepaper.pdf"
         }
-    ],
-    "explorer": "https://viewblock.io/zilliqa"
+    ]
 }

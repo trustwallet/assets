@@ -1,21 +1,32 @@
 {
     "name": "TRON",
     "website": "https://tron.network/",
-    "source_code": "https://github.com/tronprotocol",
-    "white_paper": "https://developers.tron.network/docs",
-    "short_description": "TRON is dedicated to building the infrastructure for a truly decentralized Internet.",
-    "description": "TRON (TRX) strives to build the future of a truly decentralized internet and global free content entertainment system that utilizes blockchain technology. The TRON Protocol represents the architecture of an operating system based on the blockchain which could enable developers to create smart contracts and decentralized applications, freely publish, own, and store data and other content. According to the TRON Foundation, the ecosystem surrounding this network specializes in offering massive scalability and consistent reliability capable of processing transactions at a high rate via high-throughput computing.",
-    "socials": [
+    "description": "TRON is dedicated to building the infrastructure for a truly decentralized Internet.",
+    "explorer": "https://tronscan.io/#/",
+    "research": "https://research.binance.com/en/projects/tron",
+    "symbol": "TRX",
+    "type": "coin",
+    "decimals": 6,
+    "status": "active",
+    "tags": [
+        "staking-native"
+    ],
+    "links": [
         {
-            "name": "Twitter",
-            "url": "https://twitter.com/Tronfoundation",
-            "handle": "Tronfoundation"
+            "name": "github",
+            "url": "https://github.com/tronprotocol"
         },
         {
-            "name": "Reddit",
-            "url": "https://reddit.com/r/Tronix",
-            "handle": "Tronix"
+            "name": "twitter",
+            "url": "https://twitter.com/Tronfoundation"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/Tronix"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://developers.tron.network/docs"
         }
-    ],
-    "explorer": "https://tronscan.org/#/"
+    ]
 }

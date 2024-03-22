@@ -1,0 +1,27 @@
+#Disabled, we have 'check' job, 'fix' job do invisible changes which is not convenient to debug
+
+#name: Fix (Dry run)
+#on:
+#  pull_request:
+#    branches: [ master ]
+#
+#jobs:
+#  fix-dryrun:
+#    runs-on: ubuntu-latest
+#    steps:
+#      - name: Set up Go
+#        uses: actions/setup-go@v4
+#        with:
+#          go-version: 1.18
+#
+#      - name: Check out code
+#        uses: actions/checkout@v3
+#
+#      - name: Run fix
+#        run: make fix
+#
+#      - name: Show fix result (diff)
+#        run: |
+#          git config core.ignorecase false
+#          git status
+#          git diff

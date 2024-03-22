@@ -1,6 +1,11 @@
 {
-    "Name": "REBITCOIN",
-    "Symbol": "RBTC",
-    "short_description": "REBITCOIN",
-    "explorer": "https://etherscan.io/token/0x7f65BE7FAd0c22813e51746E7e8f13a20bAa9411"
+    "name": "REBITCOIN",
+    "website": "https://rebitcoin.com",
+    "description": "REBITCOIN",
+    "explorer": "https://etherscan.io/token/0x7f65BE7FAd0c22813e51746E7e8f13a20bAa9411",
+    "type": "ERC20",
+    "symbol": "RBTC",
+    "decimals": 8,
+    "status": "abandoned",
+    "id": "0x7f65BE7FAd0c22813e51746E7e8f13a20bAa9411"
 }

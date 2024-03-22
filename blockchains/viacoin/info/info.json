@@ -1,21 +1,29 @@
 {
     "name": "Viacoin",
     "website": "http://viacoin.org",
-    "source_code": "https://github.com/viacoin/viacoin",
-    "white_paper": "https://github.com/viacoin/documents/blob/master/whitepapers/Viacoin_fullcolor_whitepaper.pdf",
-    "short_description": "Viacoin is an open source crypto-currency created in 2014, derived from the Bitcoin protocol that supports embedded consensus with an extended OP_RETURN of 120 byte.",
-    "description": "Viacoin (VIA) is a cryptocurrency. Users are able to generate VIA through the process of mining. Viacoin has a current supply of 23,163,449.824. More information can be found at http://viacoin.org.",
-    "socials": [
+    "description": "Viacoin is an open source crypto-currency created in 2014, derived from the Bitcoin protocol that supports embedded consensus with an extended OP_RETURN of 120 byte.",
+    "explorer": "https://chainz.cryptoid.info/via",
+    "research": "https://research.binance.com/en/projects/viacoin",
+    "symbol": "VIA",
+    "type": "coin",
+    "decimals": 8,
+    "status": "active",
+    "links": [
         {
-            "name": "Twitter",
-            "url": "https://twitter.com/viacoin",
-            "handle": "viacoin"
+            "name": "github",
+            "url": "https://github.com/viacoin/viacoin"
         },
         {
-            "name": "Reddit",
-            "url": "https://reddit.com/r/viacoin",
-            "handle": "viacoin"
+            "name": "twitter",
+            "url": "https://twitter.com/viacoin"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/viacoin"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://github.com/viacoin/documents/blob/master/whitepapers/Viacoin_fullcolor_whitepaper.pdf"
         }
-    ],
-    "explorer": "https://chainz.cryptoid.info/via"
+    ]
 }

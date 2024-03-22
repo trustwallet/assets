@@ -1,0 +1,24 @@
+{
+    "name": "TT-USDC",
+    "website": "https://bridge.thundercore.com/",
+    "description": "Bridged token of USDC on ThunderCore blockchain. The Bridge allows users to convert assets between Ethereum, BSC, HECO and ThunderCore. This is a customized version of POA network Bridge",
+    "explorer": "https://viewblock.io/thundercore/address/0x22e89898A04eaf43379BeB70bf4E38b1faf8A31e",
+    "type": "TT20",
+    "symbol": "TT-USDC",
+    "decimals": 6,
+    "status": "active",
+    "id": "0x22e89898A04eaf43379BeB70bf4E38b1faf8A31e",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/ThunderCoreLab"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/channels/467102816230440970/468561199790030849"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}

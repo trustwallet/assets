@@ -1,21 +1,28 @@
 {
     "name": "Kava",
     "website": "https://kava.io",
-    "source_code": "https://github.com/kava-labs",
-    "white_paper": "https://docsend.com/view/gwbwpc3",
-    "short_description": "Kava is a decentralized financial services platform. Kava's principle product is a DeFi lending platform for the world's biggest cryptocurrencies.",
-    "description": "Kava is a decentralized financial services platform. Kava's principle product is a DeFi lending platform for the world's biggest cryptocurrencies.",
-    "socials": [
+    "description": "Kava is a cross-chain DeFi Lending platform enabling stablecoin loans for users of major cryptocurrencies.",
+    "explorer": "https://kava.mintscan.io/",
+    "research": "https://research.binance.com/en/projects/kava",
+    "symbol": "KAVA",
+    "type": "coin",
+    "decimals": 6,
+    "status": "active",
+    "tags": [
+        "staking-native"
+    ],
+    "links": [
         {
-            "name": "Twitter",
-            "url": "https://twitter.com/kava_labs",
-            "handle": "kava_labs"
+            "name": "github",
+            "url": "https://github.com/kava-labs"
         },
         {
-            "name": "Reddit",
-            "url": "",
-            "handle": ""
+            "name": "twitter",
+            "url": "https://twitter.com/kava_labs"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://docsend.com/view/gwbwpc3"
         }
-    ],
-    "explorer": "https://kava.mintscan.io/"
+    ]
 }

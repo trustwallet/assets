@@ -1,21 +1,33 @@
 {
     "name": "Ethereum",
     "website": "https://ethereum.org/",
-    "source_code": "https://github.com/ethereum",
-    "white_paper": "https://github.com/ethereum/wiki/wiki/White-Paper",
-    "short_description": "Open source platform to write and distribute decentralized applications.",
     "description": "Open source platform to write and distribute decentralized applications.",
-    "socials": [
+    "explorer": "https://etherscan.io/",
+    "research": "https://research.binance.com/en/projects/ethereum",
+    "symbol": "ETH",
+    "type": "coin",
+    "decimals": 18,
+    "status": "active",
+    "tags": [
+        "dapp",
+        "staking-native"
+    ],
+    "links": [
         {
-            "name": "Twitter",
-            "url": "https://twitter.com/ethereum",
-            "handle": "ethereum"
+            "name": "github",
+            "url": "https://github.com/ethereum"
         },
         {
-            "name": "Reddit",
-            "url": "https://www.reddit.com/r/ethereum",
-            "handle": "ethereum"
+            "name": "twitter",
+            "url": "https://twitter.com/ethereum"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/ethereum"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://github.com/ethereum/wiki/wiki/White-Paper"
         }
-    ],
-    "explorer": "https://etherscan.io/"
+    ]
 }

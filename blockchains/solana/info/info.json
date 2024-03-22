@@ -1,21 +1,32 @@
 {
     "name": "Solana",
     "website": "https://solana.com/",
-    "source_code": "https://github.com/solana-labs",
-    "white_paper": "https://github.com/solana-labs/whitepaper",
-    "short_description": "Solana is the worlds most performant blockchain in the world at 710k transactions per second. 710k TPS is achieved by encoding the passage of time as data.",
-    "description": "Solana is the worlds most performant blockchain in the world at 710k transactions per second. 710k TPS is achieved by encoding the passage of time as data. The company has headquarters in San Francisco, San Diego, and Boulder. Solana will be a Proof of Stake (PoS) network, and uses Proof of History (PoH) as our scaling solution (not sharding). Solana will have smart contract capability and will likely begin by supporting Solidity and JS, and later move toward a safer, established contract language that caters to our high-throughput pipeline.",
-    "socials": [
+    "description": "Solana is the worlds most performant blockchain in the world at 710k transactions per second. 710k TPS is achieved by encoding the passage of time as data.",
+    "explorer": "https://explorer.solana.com/",
+    "research": "https://research.binance.com/en/projects/solana",
+    "symbol": "SOL",
+    "type": "coin",
+    "decimals": 9,
+    "status": "active",
+    "tags": [
+        "staking-native"
+    ],
+    "links": [
         {
-            "name": "Twitter",
-            "url": "https://twitter.com/solana",
-            "handle": "solana"
+            "name": "github",
+            "url": "https://github.com/solana-labs"
         },
         {
-            "name": "Reddit",
-            "url": "https://www.reddit.com/r/solana",
-            "handle": "solana"
+            "name": "twitter",
+            "url": "https://twitter.com/solana"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/solana"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://github.com/solana-labs/whitepaper"
         }
-    ],
-    "explorer": "https://edge.explorer.solana.com/"
+    ]
 }

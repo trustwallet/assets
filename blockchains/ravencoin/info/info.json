@@ -1,21 +1,29 @@
 {
     "name": "Ravencoin",
     "website": "https://ravencoin.org",
-    "source_code": "https://github.com/RavenProject/Ravencoin",
-    "white_paper": "https://ravencoin.org/whitepaper",
-    "short_description": "Ravencoin is a digital peer to peer network that aims to implement a use case specific blockchain, designed to efficiently handle the transfer of assets from one party to another.",
-    "description": "Ravencoin (RVN) is an open-source blockchain project that specializes in the creation and peer-to-peer transfer of assets. Ravencoin enables users to create and trade any real-world (e.g. commodities) or digital (e.g. virtual goods) assets on a network. The core developers launched Ravencoin on 3 Jan 2018. The project has some prominent backers: Bruce Fenton, Board Member of The Bitcoin Foundation, advises the team while Overstock has made a multi-million dollar investment into the project.",
-    "socials": [
+    "description": "Ravencoin is a digital peer to peer network that aims to implement a use case specific blockchain, designed to efficiently handle the transfer of assets from one party to another.",
+    "explorer": "https://ravencoin.network",
+    "research": "https://research.binance.com/en/projects/ravencoin",
+    "symbol": "RVN",
+    "type": "coin",
+    "decimals": 8,
+    "status": "active",
+    "links": [
         {
-            "name": "Twitter",
-            "url": "https://twitter.com/ravencoin",
-            "handle": "ravencoin"
+            "name": "github",
+            "url": "https://github.com/RavenProject/Ravencoin"
         },
         {
-            "name": "Reddit",
-            "url": "https://reddit.com/r/Ravencoin",
-            "handle": "Ravencoin"
+            "name": "twitter",
+            "url": "https://twitter.com/ravencoin"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/Ravencoin"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://ravencoin.org/whitepaper"
         }
-    ],
-    "explorer": "https://ravencoin.network"
+    ]
 }

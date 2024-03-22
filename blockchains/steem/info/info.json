@@ -1,21 +1,29 @@
 {
     "name": "Steem",
     "website": "https://steem.com",
-    "source_code": "https://github.com/steemit/steem",
-    "white_paper": "https://steem.io/SteemWhitePaper.pdf",
-    "short_description": "A new way for publishers to monetize their online content and community, based on battle-tested blockchain technology.",
-    "description": "Steem bills itself as 'a social blockchain that grows communities and makes revenue streams possible for users by rewarding them for sharing content'. It also powers real applications via social apps like Steemit. \n\nSteem started out as the cryptocurrency on the Steemit platform that rewards users for community building through the upvoting and the posting of meaningful content. Founded in 2016 by Ned Scott and BitShares creator Dan Larimer, the Steemit platform, built atop the Steem blockchain, is a social media network that seeks to be a source of community-driven curated content such as news, Q&A and job boards. The more value a particular piece of content is able to deliver across a greater number of people, the greater the reward received by the creator. Steemit users can cast votes to create a hierarchy of content. The higher the upvote count received on a content piece, the more Steem is earned by its publisher. Steemit’s meritocratic system also enables users that hold more currency to cast more meaningful, greater influence votes.",
-    "socials": [
+    "description": "A new way for publishers to monetize their online content and community, based on battle-tested blockchain technology.",
+    "explorer": "https://steemd.com/",
+    "research": "https://research.binance.com/en/projects/steem",
+    "symbol": "STEEM",
+    "type": "coin",
+    "decimals": 8,
+    "status": "abandoned",
+    "links": [
         {
-            "name": "Twitter",
-            "url": "https://twitter.com/Steemit",
-            "handle": "Steemit"
+            "name": "github",
+            "url": "https://github.com/steemit/steem"
         },
         {
-            "name": "Reddit",
-            "url": "https://reddit.com/r/steemit",
-            "handle": "steemit"
+            "name": "twitter",
+            "url": "https://twitter.com/Steemit"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/steemit"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://steem.io/SteemWhitePaper.pdf"
         }
-    ],
-    "explorer": "https://steemd.com/"
+    ]
 }

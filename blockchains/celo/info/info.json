@@ -1,0 +1,29 @@
+{
+    "name": "Celo",
+    "website": "https://celo.org/",
+    "description": "Celo is an open platform that makes financial tools accessible to anyone with a mobile phone",
+    "explorer": "https://explorer.celo.org/",
+    "research": "https://docs.celo.org/",
+    "symbol": "CELO",
+    "type": "coin",
+    "rpc_url": "https://forno.celo.org",
+    "decimals": 18,
+    "status": "active",
+    "tags": [
+        "dapp"
+    ],
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/celo-org/celo-blockchain"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/CeloOrg"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://celo.org/papers"
+        }
+    ]
+}

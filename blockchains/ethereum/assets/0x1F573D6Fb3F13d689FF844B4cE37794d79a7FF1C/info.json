@@ -1,7 +1,45 @@
 {
     "name": "Bancor",
     "website": "https://bancor.network",
-    "short_description": "Bancor is an on-chain liquidity protocol that enables automated, decentralized exchange on Ethereum and across blockchains.",
-    "socials": [],
-    "explorer": "https://etherscan.io/token/0x1f573d6fb3f13d689ff844b4ce37794d79a7ff1c"
+    "description": "Bancor is an on-chain liquidity protocol that enables automated, decentralized exchange on Ethereum and across blockchains.",
+    "explorer": "https://etherscan.io/token/0x1F573D6Fb3F13d689FF844B4cE37794d79a7FF1C",
+    "research": "https://research.binance.com/en/projects/bancor",
+    "type": "ERC20",
+    "symbol": "BNT",
+    "decimals": 18,
+    "status": "active",
+    "id": "0x1F573D6Fb3F13d689FF844B4cE37794d79a7FF1C",
+    "tags": [
+        "defi"
+    ],
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/bancorprotocol"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/bancornetwork"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/Bancor/"
+        },
+        {
+            "name": "blog",
+            "url": "https://blog.bancor.network/"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/bancor"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://storage.googleapis.com/website-bancor/2018/04/01ba8253-bancor_protocol_whitepaper_en.pdf"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/bancor/"
+        }
+    ]
 }

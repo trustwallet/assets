@@ -1,21 +1,29 @@
 {
     "name": "NULS",
     "website": "https://nuls.io",
-    "source_code": "https://github.com/nuls-io/nuls",
-    "white_paper": "http://docs.nuls.io",
-    "short_description": "NULS is a global blockchain open-source project which is a highly customizable modular blockchain infrastructure; it consists of a microkernel and functional modules.",
-    "description": "NULS is a microservices-driven blockchain project that uses the Proof of Credit (PoC) consensus mechanism (dPoS plus credit rating) to mine via staking. The NULS modular design features NULSTAR, a microservices-based framework reportedly enabling enterprise-grade blockchain solutions for smart contracts, private chains, public chains, dApps and NRC-20 tokenization. NULS 1.0 mainnet launched in July, 2018. The main product of NULS is Chain Factory, a chain-building tool that allows businesses to utilize the plug-and-play selection of modules from the NULS Module Repository including cross-chain consensus for asset value circulation within the NULS ecosystem.",
-    "socials": [
+    "description": "NULS is a global blockchain open-source project which is a highly customizable modular blockchain infrastructure; it consists of a microkernel and functional modules.",
+    "explorer": "https://nulscan.io",
+    "research": "https://research.binance.com/en/projects/nuls",
+    "symbol": "NULS",
+    "type": "coin",
+    "decimals": 8,
+    "status": "active",
+    "links": [
         {
-            "name": "Twitter",
-            "url": "https://twitter.com/nuls",
-            "handle": "nuls"
+            "name": "github",
+            "url": "https://github.com/nuls-io/nuls"
         },
         {
-            "name": "Reddit",
-            "url": "https://reddit.com/r/nulsservice",
-            "handle": "nulsservice"
+            "name": "twitter",
+            "url": "https://twitter.com/nuls"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/nulsservice"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://docs.nuls.io"
         }
-    ],
-    "explorer": "https://nulscan.io"
+    ]
 }

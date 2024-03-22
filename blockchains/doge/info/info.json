@@ -1,21 +1,29 @@
 {
     "name": "Dogecoin",
     "website": "http://dogecoin.com",
-    "source_code": "https://github.com/dogecoin/dogecoin",
-    "white_paper": "https://github.com/dogecoin/dogecoin/blob/master/README.md",
-    "short_description": "Dogecoin is an open source peer-to-peer digital currency, favored by Shiba Inus worldwide. Introduced as a joke currency on 6 December 2013, Dogecoin quickly developed its own online community.",
-    "description": "Based on the popular \"Doge\" Internet meme and featuring a Shiba Inu on its logo, Dogecoin (DOGE) is a cryptocurrency that was forked from Litecoin in Dec 2013. Dogecoin has been used primarily as a tipping system on Reddit and Twitter to reward the creation or sharing of quality content. Dogecoin was created by Billy Markus from Portland, Oregon and Jackson Palmer from Sydney, Australia. Both had envisaged Dogecoin as a fun, light-hearted cryptocurrency that would have greater appeal beyond the core Bitcoin audience.",
-    "socials": [
+    "description": "Dogecoin is an open source peer-to-peer digital currency, favored by Shiba Inus worldwide. Introduced as a joke currency on 6 December 2013, Dogecoin quickly developed its own online community.",
+    "explorer": "https://blockchair.com/dogecoin",
+    "research": "https://research.binance.com/en/projects/dogecoin",
+    "symbol": "DOGE",
+    "type": "coin",
+    "decimals": 8,
+    "status": "active",
+    "links": [
         {
-            "name": "Twitter",
-            "url": "https://twitter.com/dogecoin",
-            "handle": "dogecoin"
+            "name": "github",
+            "url": "https://github.com/dogecoin/dogecoin"
         },
         {
-            "name": "Reddit",
-            "url": "https://reddit.com/r/dogecoin",
-            "handle": "dogecoin"
+            "name": "twitter",
+            "url": "https://twitter.com/dogecoin"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/dogecoin"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://github.com/dogecoin/dogecoin/blob/master/README.md"
         }
-    ],
-    "explorer": "https://blockchair.com/dogecoin"
+    ]
 }
