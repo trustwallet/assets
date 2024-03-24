@@ -1,0 +1,73 @@
+{
+    "name": "Trust Wallet: Base List",
+    "logoURI": "https://trustwallet.com/assets/images/favicon.png",
+    "timestamp": "2024-03-18T14:33:26.183301",
+    "tokens": [
+        {
+            "asset": "c8453_t0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+            "type": "BASE",
+            "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+            "name": "USD Base Coin",
+            "symbol": "USDC",
+            "decimals": 6,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/base/assets/0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c8453_t0x78a087d713Be963Bf307b18F2Ff8122EF9A63ae9",
+            "type": "BASE",
+            "address": "0x78a087d713Be963Bf307b18F2Ff8122EF9A63ae9",
+            "name": "Baseswap",
+            "symbol": "BSWAP",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/base/assets/0x78a087d713Be963Bf307b18F2Ff8122EF9A63ae9/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c8453_t0xEB466342C4d449BC9f53A865D5Cb90586f405215",
+            "type": "BASE",
+            "address": "0xEB466342C4d449BC9f53A865D5Cb90586f405215",
+            "name": "Axelar Wrapped USDC",
+            "symbol": "axlUSDC",
+            "decimals": 6,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/base/assets/0xEB466342C4d449BC9f53A865D5Cb90586f405215/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c8453_t0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
+            "type": "BASE",
+            "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
+            "name": "Dai",
+            "symbol": "DAI",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/base/assets/0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c8453_t0x9EaF8C1E34F05a589EDa6BAfdF391Cf6Ad3CB239",
+            "type": "BASE",
+            "address": "0x9EaF8C1E34F05a589EDa6BAfdF391Cf6Ad3CB239",
+            "name": "yearn.finance",
+            "symbol": "YFI",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/base/assets/0x9EaF8C1E34F05a589EDa6BAfdF391Cf6Ad3CB239/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c8453_t0xB6fe221Fe9EeF5aBa221c348bA20A1Bf5e73624c",
+            "type": "BASE",
+            "address": "0xB6fe221Fe9EeF5aBa221c348bA20A1Bf5e73624c",
+            "name": "Rocket Pool ETH",
+            "symbol": "rETH",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/base/assets/0xB6fe221Fe9EeF5aBa221c348bA20A1Bf5e73624c/logo.png",
+            "pairs": []
+        }
+       
+    ],
+    "version": {
+        "major": 1,
+        "minor": 0,
+        "patch": 0
+    }
+}
