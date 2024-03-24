@@ -1,11 +1,28 @@
 {
-    "name": "WETH",
-    "symbol": "WETH",
+    "name": "WETH (WETH)",
     "type": "ERC20",
+    "symbol": "WETH",
     "decimals": 18,
-    "description": "-",
-    "website": "https://weth.io/",
+    "website": "https://weth.io",
+    "description": "Wallet",
     "explorer": "https://etherscan.io/token/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
     "status": "active",
-    "id": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+    "id": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/"
+        }
+    ],
+    "tags": [
+        "wrapped"
+    ]
 }
