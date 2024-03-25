@@ -1,15 +1,16 @@
 {
     "name": "Picasso",
+    "type": "ERC20",
     "website": "https://picasso.xyz/",
     "description": "Picasso is a DeFi infrastructure-focused Layer 1 protocol that leads the industry in building the trust-minimized interoperability solution -Cross-Ecosystem IBC. Complementary to the interoperability work, Picasso is building the first Generalized Restaking Layer.",
     "explorer": "https://etherscan.io/token/0xbb63a9b64a80e9338b8ea298c51765e57c4f159c",
     "research": "https://research.composable.finance/",
     "symbol": "PICA",
-    "type": "coin",
     "decimals": 12,
     "status": "active",
+    "id": "0xBB63a9b64a80E9338b8Ea298c51765E57C4F159c",
     "tags": [
-        "restaking",
+        "staking",
         "bridging"
     ],
     "links": [
@@ -22,8 +23,12 @@
             "url": "https://twitter.com/picasso_network"
         },
         {
-            "name": "Documentation",
+            "name": "docs",
             "url": "https://www.docs.composable.finance"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://www.coingecko.com/en/coins/picasso"
         }
     ]
 }
