@@ -2,7 +2,7 @@
     "name": "INOWATTIO",
     "website": "https://inowattio.com",
     "description": "Decentralised energy market for prosumers.",
-    "explorer": "https://etherscan.io/address/0x3a313d31084046b61B31eEE59d75948015C00BD6",
+    "explorer": "https://etherscan.io/token/0x3a313d31084046b61B31eEE59d75948015C00BD6",
     "type": "ERC20",
     "symbol": "INO",
     "decimals": 18,
@@ -16,10 +16,6 @@
         {
           "name": "twitter",
           "url": "https://twitter.com/inowattio"
-        },
-        {
-            "name": "linkedin",
-            "url": "https://www.linkedin.com/company/inowattio"
-          }
+        }
       ]
 }
