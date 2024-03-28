@@ -3,7 +3,7 @@
     "website": "https://clearpool.finance",
     "description": "Clearpool is a cecentralized capital markets ecosystem, where institutional borrowers can access unsecured loans directly from the DeFi ecosystem. Clearpool introduces a dynamic interest model driven by market supply and demand forces.",
     "explorer": "https://etherscan.io/token/0x66761fa41377003622aee3c7675fc7b5c1c2fac5",
-    "type": "SPL",
+    "type": "ERC20",
     "symbol": "CPOOL",
     "decimals": 18,
     "status": "active",
@@ -14,7 +14,7 @@
             "url": "https://twitter.com/ClearpoolFin"
         },
         {
-            "name": "coingecko",
+            "name": "coinmarketcap",
             "url": "https://coinmarketcap.com/currencies/clearpool/"
         }
     ]
