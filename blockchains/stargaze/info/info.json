@@ -10,7 +10,8 @@
     "rpc_url": "https://stargaze.c29r3.xyz/rpc/",
     "denom": "ustars",
     "lcd_url": "https://api-stargaze.d-stake.xyz",
-    "hrp": "star",
+    "hrp": "stars",
+    "fee_rate": "0.0025",
     "links": [
         {
             "name": "medium",
@@ -24,5 +25,8 @@
             "name": "twitter",
             "url": "https://twitter.com/StargazeZone"
         }
+    ],
+    "tags": [
+        "staking-native"
     ]
 }
