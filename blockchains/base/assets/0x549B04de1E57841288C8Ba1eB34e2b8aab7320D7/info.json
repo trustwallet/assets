@@ -4,11 +4,19 @@
     "description": "In the heart of the magical realm, where wizards and dogs unite in the quest for enchantment and camaraderie, emerges the Wizard of Dog (WIZ) - a cryptocurrency not bound by the ordinary laws of physics or finance but by the powerful magic of memes and community.",
     "explorer": "https://basescan.org/token/0x549b04de1e57841288c8ba1eb34e2b8aab7320d7",
     "symbol": "WIZ",
-    "type": "ERC20",
+    "type": "BASE",
     "decimals": 18,
     "status": "active",
     "id": "0x549b04de1e57841288c8ba1eb34e2b8aab7320d7",
     "links": [
+         {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/dexscan/base/0xaa69a52cf69268953c82e16626d03136d849206e/"
+        },
+	    {
+            "name": "coingecko",
+            "url": "https://www.geckoterminal.com/base/pools/0xaa69a52cf69268953c82e16626d03136d849206e"
+        },
         {
             "name": "twitter",
             "url": "https://twitter.com/wizDogCoin"
@@ -19,7 +27,6 @@
         },
     ],
     "tags": [
-        "memes",
-        "community"
+        "memes"
     ],
 }
