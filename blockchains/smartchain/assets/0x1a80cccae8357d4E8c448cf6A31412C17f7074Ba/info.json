@@ -1,0 +1,28 @@
+{
+    "name": "Tether USD",
+    "type": "BEP20",
+    "symbol": "USDT",
+    "decimals": 18,
+    "website": "https://www.binance.com/en/trade/BNB_USDT",
+    "description": "educational project for undrestandig the blockchain",
+    "explorer": "https://bscscan.com/token/0x1a80cccae8357d4e8c448cf6a31412c17f7074ba",
+    "status": "active",
+    "id": "0x1a80cccae8357d4E8c448cf6A31412C17f7074Ba",
+    "links": [
+        {
+            "name": "source_code",
+            "url": "https://bscscan.com/token/0x1a80cccae8357d4E8c448cf6A31412C17f7074Ba#code#L1"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/StepCrypto/USDTTOKEN.git"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/"
+        }
+    ],
+    "tags": [
+        "binance-peg"
+    ]
+}
