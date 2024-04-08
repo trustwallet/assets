@@ -1,0 +1,18 @@
+{
+    "name": "Goerli Testnet",
+    "website": "https://goerlifaucet.com",
+    "description": "The Alchemy Goerli faucet is free, fast, and does not require authentication, though you can optionally login to Alchemy to get an increased drip.",
+    "explorer": "https://goerli.etherscan.io",
+    "research": "https://goerli.net/#about",
+    "symbol": "tETH",
+    "rpc_url": "https://rpc.goerli.mudit.blog",
+    "type": "coin",
+    "decimals": 18,
+    "status": "active",
+    "links": [
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/community/search/top/goerli-eth/"
+        }
+    ]
+}

@@ -6,10 +6,13 @@
     "research": "https://github.com/zksync-sdk",
     "symbol": "ETH",
     "rpc_url": "https://zksync2-mainnet.zksync.io",
-    "coin_type": 324,
     "type": "coin",
+    "coin_type": 324,
     "decimals": 18,
     "status": "active",
+    "tags": [
+        "dapp"
+    ],
     "links": [
         {
             "name": "twitter",
