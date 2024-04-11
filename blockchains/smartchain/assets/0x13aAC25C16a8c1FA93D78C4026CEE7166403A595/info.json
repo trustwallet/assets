@@ -3,9 +3,30 @@
     "type": "BEP20",
     "symbol": "///M3GA",
     "decimals": 18,
-    "website": "https://www.m3ga.group/",
-    "description": "The only official coin of Professor Moriarty. Your payments are under my protection. Contact: Youtube https://youtube.com/@moriartymega?si=Y2k-yi-Z3DkGjfIP TG https://t.me/professor_youtube TG admin coin @m3ga_coin ///MEGA.",
+    "website": "https://m3ga.group",
+    "description": "My first coin... Professor Moriarty",
     "explorer": "https://bscscan.com/token/0x13aAC25C16a8c1FA93D78C4026CEE7166403A595",
     "status": "active",
-    "id": "0x13aAC25C16a8c1FA93D78C4026CEE7166403A595"
+    "id": "0x13aAC25C16a8c1FA93D78C4026CEE7166403A595",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/Moriarty_M3GA"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/Moriartycoin"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/m3ga_coin"
+        },
+        {
+            "name": "docs",
+            "url": "https://m3ga.group/whitepepar"
+        }
+    ],
+    "tags": [
+        "memes"
+    ]
 }
