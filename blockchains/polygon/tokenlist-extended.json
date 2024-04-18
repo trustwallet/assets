@@ -1,10 +1,236 @@
 {
-    "name": "Trust Wallet: Polygon Extended List",
+    "name": "Trust Wallet: Polygon",
     "logoURI": "https://trustwallet.com/assets/images/favicon.png",
-    "timestamp": "2022-01-27T14:33:26.183301",
-    "tokens": [],
+    "timestamp": "2022-08-27T11:20:36.086215",
+    "tokens": [
+        {
+            "asset": "c966_t0xaAa5B9e6c589642f98a1cDA99B9D024B8407285A",
+            "type": "POLYGON",
+            "address": "0xaAa5B9e6c589642f98a1cDA99B9D024B8407285A",
+            "name": "IRON Titanium Token",
+            "symbol": "TITAN",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/polygon/assets/0xaAa5B9e6c589642f98a1cDA99B9D024B8407285A/logo.png"
+        },
+        {
+            "asset": "c966_t0xD86b5923F3AD7b585eD81B448170ae026c65ae9a",
+            "type": "POLYGON",
+            "address": "0xD86b5923F3AD7b585eD81B448170ae026c65ae9a",
+            "name": "IRON Stablecoin",
+            "symbol": "IRON",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/polygon/assets/0xD86b5923F3AD7b585eD81B448170ae026c65ae9a/logo.png"
+        },
+        {
+            "asset": "c966_t0xc1c93D475dc82Fe72DBC7074d55f5a734F8cEEAE",
+            "type": "POLYGON",
+            "address": "0xc1c93D475dc82Fe72DBC7074d55f5a734F8cEEAE",
+            "name": "Pegaxy",
+            "symbol": "PGX",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/polygon/assets/0xc1c93D475dc82Fe72DBC7074d55f5a734F8cEEAE/logo.png"
+        },
+        {
+            "asset": "c966_t0xb33EaAd8d922B1083446DC23f610c2567fB5180f",
+            "type": "POLYGON",
+            "address": "0xb33EaAd8d922B1083446DC23f610c2567fB5180f",
+            "name": "Uniswap (PoS)",
+            "symbol": "UNI",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/polygon/assets/0xb33EaAd8d922B1083446DC23f610c2567fB5180f/logo.png"
+        },
+        {
+            "asset": "c966_t0x0b3F868E0BE5597D5DB7fEB59E1CADBb0fdDa50a",
+            "type": "POLYGON",
+            "address": "0x0b3F868E0BE5597D5DB7fEB59E1CADBb0fdDa50a",
+            "name": "SushiToken (PoS)",
+            "symbol": "SUSHI",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/polygon/assets/0x0b3F868E0BE5597D5DB7fEB59E1CADBb0fdDa50a/logo.png"
+        },
+        {
+            "asset": "c966_t0x8C92e38eCA8210f4fcBf17F0951b198Dd7668292",
+            "type": "POLYGON",
+            "address": "0x8C92e38eCA8210f4fcBf17F0951b198Dd7668292",
+            "name": "dHEDGE DAO Token (PoS)",
+            "symbol": "DHT",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/polygon/assets/0x8C92e38eCA8210f4fcBf17F0951b198Dd7668292/logo.png"
+        },
+        {
+            "asset": "c966_t0x3a9A81d576d83FF21f26f325066054540720fC34",
+            "type": "POLYGON",
+            "address": "0x3a9A81d576d83FF21f26f325066054540720fC34",
+            "name": "Streamr",
+            "symbol": "DATA",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/polygon/assets/0x3a9A81d576d83FF21f26f325066054540720fC34/logo.png"
+        },
+        {
+            "asset": "c966_t0xef938b6da8576a896f6E0321ef80996F4890f9c4",
+            "type": "POLYGON",
+            "address": "0xef938b6da8576a896f6E0321ef80996F4890f9c4",
+            "name": "Decentral Games",
+            "symbol": "DG",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/polygon/assets/0xef938b6da8576a896f6E0321ef80996F4890f9c4/logo.png"
+        },
+        {
+            "asset": "c966_t0xC168E40227E4ebD8C1caE80F7a55a4F0e6D66C97",
+            "type": "POLYGON",
+            "address": "0xC168E40227E4ebD8C1caE80F7a55a4F0e6D66C97",
+            "name": "DFYN Token (PoS)",
+            "symbol": "DFYN",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/polygon/assets/0xC168E40227E4ebD8C1caE80F7a55a4F0e6D66C97/logo.png"
+        },
+        {
+            "asset": "c966_t0x229b1b6C23ff8953D663C4cBB519717e323a0a84",
+            "type": "POLYGON",
+            "address": "0x229b1b6C23ff8953D663C4cBB519717e323a0a84",
+            "name": "BLOK",
+            "symbol": "BLOK",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/polygon/assets/0x229b1b6C23ff8953D663C4cBB519717e323a0a84/logo.png"
+        },
+        {
+            "asset": "c966_t0x16ECCfDbb4eE1A85A33f3A9B21175Cd7Ae753dB4",
+            "type": "POLYGON",
+            "address": "0x16ECCfDbb4eE1A85A33f3A9B21175Cd7Ae753dB4",
+            "name": "Route",
+            "symbol": "ROUTE",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/polygon/assets/0x16ECCfDbb4eE1A85A33f3A9B21175Cd7Ae753dB4/logo.png"
+        },
+        {
+            "asset": "c966_t0x05089C9EBFFa4F0AcA269e32056b1b36B37ED71b",
+            "type": "POLYGON",
+            "address": "0x05089C9EBFFa4F0AcA269e32056b1b36B37ED71b",
+            "name": "Krill",
+            "symbol": "Krill",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/polygon/assets/0x05089C9EBFFa4F0AcA269e32056b1b36B37ED71b/logo.png"
+        },
+        {
+            "asset": "c966_t0x3a3Df212b7AA91Aa0402B9035b098891d276572B",
+            "type": "POLYGON",
+            "address": "0x3a3Df212b7AA91Aa0402B9035b098891d276572B",
+            "name": "Fish",
+            "symbol": "FISH",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/polygon/assets/0x3a3Df212b7AA91Aa0402B9035b098891d276572B/logo.png"
+        },
+        {
+            "asset": "c966_t0x4c4BF319237D98a30A929A96112EfFa8DA3510EB",
+            "type": "POLYGON",
+            "address": "0x4c4BF319237D98a30A929A96112EfFa8DA3510EB",
+            "name": "WaultSwap Polygon",
+            "symbol": "WEXpoly",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/polygon/assets/0x4c4BF319237D98a30A929A96112EfFa8DA3510EB/logo.png"
+        },
+        {
+            "asset": "c966_t0xFbdd194376de19a88118e84E279b977f165d01b8",
+            "type": "POLYGON",
+            "address": "0xFbdd194376de19a88118e84E279b977f165d01b8",
+            "name": "beefy.finance",
+            "symbol": "BIFI",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/polygon/assets/0xFbdd194376de19a88118e84E279b977f165d01b8/logo.png"
+        },
+        {
+            "asset": "c966_t0x5d47bAbA0d66083C52009271faF3F50DCc01023C",
+            "type": "POLYGON",
+            "address": "0x5d47bAbA0d66083C52009271faF3F50DCc01023C",
+            "name": "Ape Swap Finance Banana",
+            "symbol": "BANANA",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/polygon/assets/0x5d47bAbA0d66083C52009271faF3F50DCc01023C/logo.png"
+        },
+        {
+            "asset": "c966_t0xcf32822ff397Ef82425153a9dcb726E5fF61DCA7",
+            "type": "POLYGON",
+            "address": "0xcf32822ff397Ef82425153a9dcb726E5fF61DCA7",
+            "name": "GAMEE Token",
+            "symbol": "GMEE",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/polygon/assets/0xcf32822ff397Ef82425153a9dcb726E5fF61DCA7/logo.png"
+        },
+        {
+            "asset": "c966_t0xa3Fa99A148fA48D14Ed51d610c367C61876997F1",
+            "type": "POLYGON",
+            "address": "0xa3Fa99A148fA48D14Ed51d610c367C61876997F1",
+            "name": "miMATIC",
+            "symbol": "miMATIC",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/polygon/assets/0xa3Fa99A148fA48D14Ed51d610c367C61876997F1/logo.png"
+        },
+        {
+            "asset": "c966_t0x76e63a3E7Ba1e2E61D3DA86a87479f983dE89a7E",
+            "type": "POLYGON",
+            "address": "0x76e63a3E7Ba1e2E61D3DA86a87479f983dE89a7E",
+            "name": "Augury Finance",
+            "symbol": "OMEN",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/polygon/assets/0x76e63a3E7Ba1e2E61D3DA86a87479f983dE89a7E/logo.png"
+        },
+        {
+            "asset": "c966_t0x8A953CfE442c5E8855cc6c61b1293FA648BAE472",
+            "type": "POLYGON",
+            "address": "0x8A953CfE442c5E8855cc6c61b1293FA648BAE472",
+            "name": "PolyDoge",
+            "symbol": "PolyDoge",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/polygon/assets/0x8A953CfE442c5E8855cc6c61b1293FA648BAE472/logo.png"
+        },
+        {
+            "asset": "c966_t0xc3FdbadC7c795EF1D6Ba111e06fF8F16A20Ea539",
+            "type": "POLYGON",
+            "address": "0xc3FdbadC7c795EF1D6Ba111e06fF8F16A20Ea539",
+            "name": "Adamant",
+            "symbol": "ADDY",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/polygon/assets/0xc3FdbadC7c795EF1D6Ba111e06fF8F16A20Ea539/logo.png"
+        },
+        {
+            "asset": "c966_t0x172370d5Cd63279eFa6d502DAB29171933a610AF",
+            "type": "POLYGON",
+            "address": "0x172370d5Cd63279eFa6d502DAB29171933a610AF",
+            "name": "CRV (PoS)",
+            "symbol": "CRV",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/polygon/assets/0x172370d5Cd63279eFa6d502DAB29171933a610AF/logo.png"
+        },
+        {
+            "asset": "c966_t0x580A84C73811E1839F75d86d75d88cCa0c241fF4",
+            "type": "POLYGON",
+            "address": "0x580A84C73811E1839F75d86d75d88cCa0c241fF4",
+            "name": "Qi Dao",
+            "symbol": "QI",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/polygon/assets/0x580A84C73811E1839F75d86d75d88cCa0c241fF4/logo.png"
+        },
+        {
+            "asset": "c966_t0xdF7837DE1F2Fa4631D716CF2502f8b230F1dcc32",
+            "type": "POLYGON",
+            "address": "0xdF7837DE1F2Fa4631D716CF2502f8b230F1dcc32",
+            "name": "Telcoin",
+            "symbol": "TEL",
+            "decimals": 2,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/polygon/assets/0xdF7837DE1F2Fa4631D716CF2502f8b230F1dcc32/logo.png"
+        },
+        {
+            "asset": "c966_t0x8f18dC399594b451EdA8c5da02d0563c0b2d0f16",
+            "type": "POLYGON",
+            "address": "0x8f18dC399594b451EdA8c5da02d0563c0b2d0f16",
+            "name": "moonwolf.io",
+            "symbol": "WOLF",
+            "decimals": 9,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/polygon/assets/0x8f18dC399594b451EdA8c5da02d0563c0b2d0f16/logo.png"
+        }
+    ],
     "version": {
-        "major": 1,
+        "major": 26,
         "minor": 0,
         "patch": 0
     }
