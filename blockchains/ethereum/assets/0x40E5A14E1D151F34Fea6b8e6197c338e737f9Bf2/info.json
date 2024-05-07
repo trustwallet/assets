@@ -1,39 +1,32 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2757
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\margl1440\margr1440\vieww19740\viewh16040\viewkind0
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
-
-\f0\fs24 \cf0 \{\
-    "name": \'93Valinity\'94,\
-    "website": "https://www.valinity.io\'94,\
-    "description": "A blockchain with a full-fledged environment for developing high-performance decentralized applications and cross-chain compatibility with Binance Chain.",\
-    "explorer": "https://etherscan.com/",\
-    "research": "https://www.valinity.io",\
-    "symbol": \'93V\'94Y,\
-    "type": \'93token\'94,\
-    "decimals": 18,\
-    "status": "active",\
-    "tags": [\
-        "staking-native"\
-    ],\
-    "links": [\
-        \{\
-            "name": \'93discord\'94,\
-            "url": "https://discord.com/invite/3xVJDSSAQv"\
-        \},\
-        \{\
-            "name": "twitter",\
-            "url": "https://twitter.com/valinitydefi"\
-        \},\
-        \{\
-            "name": \'93telegram\'94,\
-            "url": "https://t.me/valinitydefi"\
-        \},\
-        \{\
-            "name": "whitepaper",\
-            "url": "https://valinity.io/read-wp"\
-        \}\
-    ]\
-\}}
+{
+    "name": "Valinity",
+    "website": "https://www.valinity.io",
+    "description": "Experience the power of Valinity, where each VY generates Ethereum. Valinity is a new Staking protocol that offers immediate and consistent Ethereum rewards. Valinity eliminates the risk of pump and dumps and rug-pulls by providing liquidity through smart contracts instead of liquidity pools. Say goodbye to traditional staking and hello to fair governance.",
+    "explorer": "https://etherscan.com/",
+    "research": "https://www.valinity.io",
+    "symbol": "VY",
+    "type": "token",
+    "decimals": 18,
+    "status": "active",
+    "tags": [
+        "reverse staking"
+    ],
+    "links": [
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/3xVJDSSAQv"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/valinitydefi"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/valinitydefi"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://valinity.io/read-wp"
+        }
+    ]
+}
