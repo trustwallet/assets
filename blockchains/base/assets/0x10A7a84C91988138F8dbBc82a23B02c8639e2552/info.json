@@ -1,32 +1,26 @@
 {
     "name": "ROXY FROG",
-    "website": "https://roxytoken.com/",
-    "description": "Roxy emerges as a captivating force within the cryptocurrency realm, pulsating with vitality on the Base blockchain.",
-    "explorer": "https://basescan.org/",
-    "research": "https://coinmarketcap.com/currencies/roxy-frog/",
+    "type": "ERC20",
     "symbol": "ROXY",
-    "type": "coin",
     "decimals": 18,
+    "description": "Roxy emerges as a captivating force within the cryptocurrency realm, pulsating with vitality on the Base blockchain.",
+    "website": "https://roxytoken.com/",
+    "explorer": "https://basescan.org/token/0x10A7a84C91988138F8dbBc82a23B02c8639e2552",
+    "id": "0x10A7a84C91988138F8dbBc82a23B02c8639e2552",
+    "type": "coin",
     "status": "active",
     "tags": [
-        "staking-native"
+        "Memes", 
+        "Base Ecosystem"
     ],
     "links": [
         {
-            "name": "github",
-            "url": "https://github.com/"
+            "name": "telegram",
+            "url": "https://t.me/roxythefrog"
         },
         {
             "name": "twitter",
             "url": "https://twitter.com/roxythefrog"
         },
-        {
-            "name": "reddit",
-            "url": "https://reddit.com/"
-        },
-        {
-            "name": "whitepaper",
-            "url": "https://coinmarketcap.com/currencies/roxy-frog/"
-        }
     ]
 }
