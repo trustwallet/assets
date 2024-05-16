@@ -1,11 +1,22 @@
 {
-    "name": "BNB",
-    "symbol": "BNB",
+    "name": "Binance Coin (BNB)",
     "type": "ERC20",
+    "symbol": "BNB",
     "decimals": 18,
-    "description": "-",
-    "website": "https://www.binance.com",
+    "website": "https://www.binance.com/",
+    "description": "",
     "explorer": "https://etherscan.io/token/0xB8c77482e45F1F44dE1745F52C74426C631bDD52",
     "status": "active",
-    "id": "0xB8c77482e45F1F44dE1745F52C74426C631bDD52"
+    "id": "0xB8c77482e45F1F44dE1745F52C74426C631bDD52",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/markhullett3@gmail.com"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/Marley1989"
+        }
+    ],
+    "tags": []
 }
