@@ -1,0 +1,56 @@
+{
+    "name": "Wrapped XFI",
+    "type": "BEP20",
+    "symbol": "WXFI",
+    "decimals": 18,
+    "website": "https://crossfi.org/",
+    "description": "XFI is a liquid asset that will be used and open access to all products and services of the EVM part of CrossFi CHain and give unique opportunities in CrossFi xAPP. It is also a means of payment along with fiat funds in the CrossFi APP. XFI is a token in CrossFi blockchain based on Cosmos and WXFI is a bridged XFI from Cosmos to BSC (0x4ae1cD329e3aa0F70164424D2E5688723A6F9B71) and Base (0x015e7B67198C29462D6653BA72C8a6612DC21014) through official CrossFi bridge (https://get.crossfi.org/xfi-bridge)",
+    "explorer": "https://bscscan.com/token/0x4ae1cD329e3aa0F70164424D2E5688723A6F9B71",
+    "status": "active",
+    "id": "0x4ae1cD329e3aa0F70164424D2E5688723A6F9B71",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/crossfichain"
+        },
+        {
+            "name": "facebook",
+            "url": "https://facebook.com/crossfiofficial"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/crossfichain"
+        },
+        {
+            "name": "youtube",
+            "url": "https://youtube.com/channel/UCjRmS5kRmkH-qBTrAR73uLA"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/@crossfichain"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/crossfi-2"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/crossfinance"
+        },
+        {
+            "name": "docs",
+            "url": "https://crossfi.org/documents/"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/crossfichain/"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/crossfi"
+        }
+    ],
+    "tags": [
+        "wrapped"
+    ]
+}
