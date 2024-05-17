@@ -1,7 +1,7 @@
 {
-    "name": "Binance-Peg Basic Attention Token",
+    "name": "BNB pegged Basic Attention Token",
     "website": "https://basicattentiontoken.org",
-    "description": "Binance-Peg Basic Attention Token (BAT BEP20) is a token issued by Binance on Smart Chain; its price is pegged to Basic Attention (BAT ERC20) at a ratio of 1:1.",
+    "description": "BNB pegged Basic Attention Token (BAT BEP20) is a token issued by Binance on Smart Chain; its price is pegged to Basic Attention (BAT ERC20) at a ratio of 1:1.",
     "explorer": "https://bscscan.com/token/0x101d82428437127bF1608F699CD651e6Abf9766E",
     "research": "https://research.binance.com/en/projects/basic-attention-token",
     "type": "BEP20",
@@ -10,7 +10,8 @@
     "status": "active",
     "id": "0x101d82428437127bF1608F699CD651e6Abf9766E",
     "tags": [
-        "binance-peg"
+        "binance-peg",
+        "defi"
     ],
     "links": [
         {
