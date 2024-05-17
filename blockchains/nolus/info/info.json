@@ -1,0 +1,23 @@
+{
+    "name": "Nolus",
+    "type": "coin",
+    "symbol": "NLS",
+    "decimals": 6,
+    "website": "https://nolus.io",
+    "description": "Nolus is a semi-permissioned blockchain bridging lenders and borrowers in a DeFi cross-chain money market.",
+    "explorer": "https://ping.pub/nolus",
+    "status": "active",
+    "rpc_url": "https://pirin-cl.nolus.network:26657",
+    "denom": "unls",
+    "lcd_url": "https://pirin-cl.nolus.network:1317",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/nolus-protocol"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/NolusProtocol"
+        }
+    ]
+}
