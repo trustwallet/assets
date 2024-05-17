@@ -1,7 +1,7 @@
 {
-  "name": "sUSDe",
+  "name": "Ethena sUSDe",
   "website": "https://ethena.fi",
-  "description": "The 'Internet Bond', sUSDe will accumulates value from staked Ethereum as well as the funding & basis spread from perpetual and futures' markets, to create the first onchain crypto-native 'bond' that can function as a dollar-denominated savings instrument for users in permitted jurisdictions.",
+  "description": "The Internet Bond, sUSDe will accumulates value from staked Ethereum as well as the funding & basis spread from perpetual and futures' markets, to create the first onchain crypto-native 'bond' that can function as a dollar-denominated savings instrument for users in permitted jurisdictions.",
   "explorer": "https://etherscan.io/token/0x9d39a5de30e57443bff2a8307a4256c8797a3497",
   "type": "ERC20",
   "symbol": "sUSDe",
@@ -10,6 +10,14 @@
   "id": "0x9D39A5DE30e57443BfF2A8307A4256c8797A3497",
   "tags": ["defi"],
   "links": [
+    {
+      "name": "whitepaper",
+      "url": "https://ethena-labs.gitbook.io/ethena-labs"
+    },
+    {
+      "name": "mirror",
+      "url": "https://mirror.xyz/0xF99d0E4E3435cc9C9868D1C6274DfaB3e2721341"
+    },
     {
       "name": "github",
       "url": "https://github.com/ethena-labs"
