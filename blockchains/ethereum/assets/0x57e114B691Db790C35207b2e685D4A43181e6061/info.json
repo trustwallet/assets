@@ -1,34 +1,29 @@
 {
-  "name": "Ethena USDe",
-  "website": "https://ethena.fi",
-  "description": "USDe is the first censorship resistant, scalable and stable crypto-native solution for money achieved by delta-hedging staked Ethereum collateral.",
-  "explorer": "https://etherscan.io/token/0x4c9edd5852cd905f086c759e8383e09bff1e68b3",
+  "name": "Ethena",
+  "website": "https://www.ethena.fi/",
+  "description": "Ethena is a synthetic dollar protocol built on Ethereum that provides a crypto-native solution for money not reliant on traditional banking system infrastructure, alongside a globally accessible dollar-denominated savings instrument - the 'Internet Bond'.",
+  "explorer": "https://etherscan.io/token/0x57e114B691Db790C35207b2e685D4A43181e6061",
   "type": "ERC20",
-  "symbol": "USDe",
+  "symbol": "ENA",
   "decimals": 18,
   "status": "active",
-  "id": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3",
-  "tags": ["stablecoin", "defi"],
+  "id": "0x57e114B691Db790C35207b2e685D4A43181e6061",
   "links": [
     {
-      "name": "whitepaper",
+      "name": "docs",
       "url": "https://ethena-labs.gitbook.io/ethena-labs"
-    },
-    {
-      "name": "mirror",
-      "url": "https://mirror.xyz/0xF99d0E4E3435cc9C9868D1C6274DfaB3e2721341"
     },
     {
       "name": "github",
       "url": "https://github.com/ethena-labs"
     },
     {
-      "name": "coinmarketcap",
-      "url": "https://coinmarketcap.com/currencies/ethena-usde/"
+      "name": "twitter",
+      "url": "https://twitter.com/ethena_labs"
     },
     {
-      "name": "coingecko",
-      "url": "https://coingecko.com/en/coins/ethena-usde"
+      "name": "telegram",
+      "url": "https://t.me/ethena_labs"
     }
   ]
 }
