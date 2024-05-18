@@ -1,32 +1,17 @@
 {
-    "name": "Based Father Pepe",
-    "website": "https://www.basedfatherpepe.com",
-    "description": "Father Pepe has been created to educate meme coin enthusiast and to exploit the evil developers of crypto.",
-    "explorer": "https://basescan.org/",
-    "research": "https://basescan.org/",
-    "symbol": "FPEPE",
-    "type": "token",
-    "decimals": 8,
-    "status": "active",
-    "tags": [
-        "memecoin"
-    ],
-    "links": [
-        {
-            "name": "github",
-            "url": "https://github.com/BlakeyAd"
-        },
-        {
-            "name": "twitter",
-            "url": "https://twitter.com/Basedfatherpepe"
-        },
-        {
-            "name": "reddit",
-            "url": ""
-        },
-        {
-            "name": "whitepaper",
-            "url": ""
-        }
+    "name":"Based Father Pepe",
+    "type":"BASE",
+    "symbol":"FPEPE",
+    "decimals":18,
+    "website":"https://www.basedfatherpepe.com",
+    "description":"Father Pepe has been created to educate meme coin enthusiast and to exploit the evil developers of crypto.",
+    "explorer":"https://basescan.org/token/0x81f91fe59ee415735d59bd5be5cca91a0ea4fa69",
+    "status":"active",
+    "id":"0x81f91fe59ee415735d59bd5be5cca91a0ea4fa69",
+    "links":[
+       {
+          "name":"twitter",
+          "url":"https://twitter.com/basedfatherpepe"
+       }
     ]
-}
+ }
