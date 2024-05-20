@@ -1,11 +1,11 @@
 {
     "name": "Tellor",
-    "website": "https://tellor.io",
-    "description": "Tellor (a decentralized oracle) aims to address the Oracle problem on Ethereum.",
-    "explorer": "https://optimistic.etherscan.io/token/0xaf8cA653Fa2772d58f4368B0a71980e9E3cEB888",
-    "type": "OPTIMISM",
     "symbol": "TRB",
+    "type": "OPTIMISM",
     "decimals": 18,
+    "description": "Tellor (a decentralized oracle) aims to address the Oracle problem on Ethereum.",
+    "website": "https://tellor.io",
+    "explorer": "https://optimistic.etherscan.io/token/0xaf8cA653Fa2772d58f4368B0a71980e9E3cEB888",
     "status": "active",
     "id": "0xaf8cA653Fa2772d58f4368B0a71980e9E3cEB888",
     "links": [
@@ -26,4 +26,4 @@
             "url": "https://coingecko.com/en/coins/tellor/"
         }
     ]
-} 
+}

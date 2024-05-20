@@ -1,16 +1,13 @@
 {
     "name": "Balancer",
-    "website": "https://balancer.finance/",
-    "description": "Balancer is an automated portfolio manager and trading platform.",
-    "explorer": "https://optimistic.etherscan.io/token/0xFE8B128bA8C78aabC59d4c64cEE7fF28e9379921",
-    "type": "OPTIMISM",
     "symbol": "BAL",
+    "type": "OPTIMISM",
     "decimals": 18,
+    "description": "Balancer is an automated portfolio manager and trading platform.",
+    "website": "https://balancer.finance/",
+    "explorer": "https://optimistic.etherscan.io/token/0xFE8B128bA8C78aabC59d4c64cEE7fF28e9379921",
     "status": "active",
     "id": "0xFE8B128bA8C78aabC59d4c64cEE7fF28e9379921",
-    "tags": [
-        "defi"
-    ],
     "links": [
         {
             "name": "github",
@@ -24,5 +21,8 @@
             "name": "coinmarketcap",
             "url": "https://coinmarketcap.com/currencies/balancer/"
         }
+    ],
+    "tags": [
+        "defi"
     ]
 }
