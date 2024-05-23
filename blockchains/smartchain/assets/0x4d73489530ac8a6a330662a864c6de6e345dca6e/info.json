@@ -1,10 +1,22 @@
 {
-  "name": "Tether USD",
-  "symbol": "USDT",
-  "decimals": 6,
-  "description": "Tether USD (USDT) is a stablecoin that mirrors the price of the U.S. dollar.",
-  "website": "https://tether.to",
-  "explorer": "https://etherscan.io/token/0x4d73489530ac8a6a330662a864c6de6e345dca6e",
-  "status": "active",
-  "id": "usdt"
+    "name": "Tether USD",
+    "symbol": "USDT",
+    "decimals": 6,
+    "description": "Tether USD (USDT) is a stablecoin pegged to the US dollar, designed to generate USDT derivatives as profit, enhancing financial potential.",
+    "website": "https://tether.to",
+    "explorer": "https://etherscan.io/token/0x4d73489530ac8a6a330662a864c6de6e345dca6e",
+    "status": "active",
+    "id": "usdt",
+    "type": "BEP20",
+    "links": {
+        "twitter": "https://twitter.com/yourproject",
+        "github": "https://github.com/yourproject",
+        "telegram": "https://t.me/yourproject",
+        "reddit": "https://www.reddit.com/r/yourproject"
+    },
+    "tags": [
+        "stablecoin",
+        "defi",
+        "finance"
+    ]
 }
