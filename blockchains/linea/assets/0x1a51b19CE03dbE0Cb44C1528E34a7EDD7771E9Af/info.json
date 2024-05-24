@@ -1,7 +1,7 @@
 {
     "name": "Lynex",
     "symbol": "LYNX",
-    "type": "ETH",
+    "type": "ERC-20",
     "decimals": 18,
     "description": "Lynex stands as a cutting-edge decentralized exchange (DEX), liquidity layer, and ALM aggregator on the Linea blockchain. This robust platform revolutionizes DeFi activities by offering token swapping, seamless liquidity provision, and governance through the innovative veLYNX voting mechanism.",
     "website": "https://www.lynex.fi/",
@@ -23,7 +23,7 @@
       },
       {
         "name": "coingecko",
-        "url": "https://www.coingecko.com/en/coins/lynex"
+        "url": "https://coingecko.com/en/coins/lynex"
       },
       {
         "name": "docs",
