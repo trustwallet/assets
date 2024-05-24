@@ -1,5 +1,6 @@
 {
   "name": "Bankje",
+  "type": "ERC20", 
   "symbol": "BANKJE",
   "decimals": 18,
   "description": "Bankje is een token op het Arbitrum netwerk.",
@@ -7,5 +8,12 @@
   "explorer": "https://arbiscan.io/token/0x72f06886b34a5383630A1Fd218f2F3Ab16cFf608",
   "status": "active",
   "id": "0x72f06886b34a5383630A1Fd218f2F3Ab16cFf608",
-  "logo": "https://bankje.xyz/logo.png"
+  "logo": "https://bankje.xyz/logo.png",
+  "links": {
+    "twitter": "https://x.com/BankjeApp", 
+  },
+  "tags": [
+    "web3",
+    "gaming"
+  ]
 }
