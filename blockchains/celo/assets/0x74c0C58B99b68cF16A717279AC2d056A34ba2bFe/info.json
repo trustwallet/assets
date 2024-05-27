@@ -1,16 +1,13 @@
 {
     "name": "SOURCE",
-    "website": "https://resource.finance",
-    "description": "SOURCE is the utility token that powers the ReSource protocol—a DeFi protocol enabling the world’s first on-chain mutual credit economic system.",
-    "explorer": "https://explorer.bitquery.io/celo_rc1/token/0x74c0c58b99b68cf16a717279ac2d056a34ba2bfe",
-    "type": "CELO",
     "symbol": "SOURCE",
+    "type": "CELO",
     "decimals": 18,
+    "description": "SOURCE is the utility token that powers the ReSource protocol—a DeFi protocol enabling the world’s first on-chain mutual credit economic system.",
+    "website": "https://resource.finance",
+    "explorer": "https://explorer.celo.org/mainnet/address/0x74c0C58B99b68cF16A717279AC2d056A34ba2bFe",
     "status": "active",
     "id": "0x74c0C58B99b68cF16A717279AC2d056A34ba2bFe",
-    "tags": [
-        "defi"
-    ],
     "links": [
         {
             "name": "twitter",
@@ -24,5 +21,8 @@
             "name": "github",
             "url": "https://github.com/ReSource-Network/"
         }
+    ],
+    "tags": [
+        "defi"
     ]
 }

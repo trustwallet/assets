@@ -1,11 +1,11 @@
 {
     "name": "ezETH",
-    "website": "https://www.renzoprotocol.com/",
-    "description": "Renzo is a Liquid Restaking Token (LRT) and Strategy Manager for EigenLayer. It is the interface to the EigenLayer ecosystem securing Actively Validated Services (AVSs).",
-    "explorer": "https://blastscan.io/token/0x2416092f143378750bb29b79eD961ab195CcEea5",
-    "type": "BLAST",
     "symbol": "Renzo Restaked ETH",
+    "type": "BRC20",
     "decimals": 18,
+    "description": "Renzo is a Liquid Restaking Token (LRT) and Strategy Manager for EigenLayer. It is the interface to the EigenLayer ecosystem securing Actively Validated Services (AVSs).",
+    "website": "https://www.renzoprotocol.com/",
+    "explorer": "https://unisat.io/brc20/0x2416092f143378750bb29b79eD961ab195CcEea5",
     "status": "active",
     "id": "0x2416092f143378750bb29b79eD961ab195CcEea5",
     "links": [

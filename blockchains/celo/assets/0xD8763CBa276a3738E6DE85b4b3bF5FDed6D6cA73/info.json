@@ -1,16 +1,13 @@
 {
     "name": "Celo Euro",
-    "website": "https://celo.org",
-    "description": "Celo Euro (cEUR) ERC20 Token in Celo Mainnet. Token is implemented as ERC20 smart contract with address",
-    "explorer": "https://explorer.bitquery.io/celo_rc1/token/0xd8763cba276a3738e6de85b4b3bf5fded6d6ca73",
-    "type": "CELO",
     "symbol": "cEUR",
+    "type": "CELO",
     "decimals": 18,
+    "description": "Celo Euro (cEUR) ERC20 Token in Celo Mainnet. Token is implemented as ERC20 smart contract with address",
+    "website": "https://celo.org",
+    "explorer": "https://explorer.celo.org/mainnet/address/0xD8763CBa276a3738E6DE85b4b3bF5FDed6D6cA73",
     "status": "active",
     "id": "0xD8763CBa276a3738E6DE85b4b3bF5FDed6D6cA73",
-    "tags": [
-        "stablecoin"
-    ],
     "links": [
         {
             "name": "twitter",
@@ -24,5 +21,8 @@
             "name": "github",
             "url": "https://github.com/celo-org/celo-monorepo"
         }
+    ],
+    "tags": [
+        "stablecoin"
     ]
 }

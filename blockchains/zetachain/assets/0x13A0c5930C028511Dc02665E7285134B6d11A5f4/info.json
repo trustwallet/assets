@@ -1,11 +1,11 @@
 {
     "name": "Bitcoin",
-    "website": "https://bitcoin.org/en/",
-    "description": "Bitcoin is a decentralized cryptocurrency originally described in a 2008 whitepaper by a person, or group of people, using the alias Satoshi Nakamoto. It was launched soon after, in January 2009.",
-    "explorer": "https://zetachain.blockscout.com/token/0x13A0c5930C028511Dc02665E7285134B6d11A5f4",
-    "type": "ZETACHAIN",
     "symbol": "BTC",
+    "type": "ZETACHAIN",
     "decimals": 8,
+    "description": "Bitcoin is a decentralized cryptocurrency originally described in a 2008 whitepaper by a person, or group of people, using the alias Satoshi Nakamoto. It was launched soon after, in January 2009.",
+    "website": "https://bitcoin.org/en/",
+    "explorer": "https://explorer.zetachain.com/address/0x13A0c5930C028511Dc02665E7285134B6d11A5f4",
     "status": "active",
     "id": "0x13A0c5930C028511Dc02665E7285134B6d11A5f4",
     "links": [

@@ -1,11 +1,11 @@
 {
     "name": "USDB",
     "symbol": "USDB",
-    "type": "BLAST",
-    "description": "Blast's native stablecoin.",
+    "type": "BRC20",
     "decimals": 18,
+    "description": "Blast's native stablecoin.",
     "website": "https://blast.io/en",
-    "explorer": "https://blastscan.io/token/0x4300000000000000000000000000000000000003",
+    "explorer": "https://unisat.io/brc20/0x4300000000000000000000000000000000000003",
     "status": "active",
     "id": "0x4300000000000000000000000000000000000003",
     "links": [

@@ -1,18 +1,14 @@
 {
     "name": "Aave",
-    "website": "https://aave.com",
-    "description": "Aave Protocol is a decentralised liquidity protocol where people can lend and borrow digital assets. The AAVE token is the governance token of the protocol, so AAVE holders can vote on proposals for updates. AAVE holders can also stake their AAVE in the protocol Safety Module and earn Safety Incentives for securing the protocol",
-    "explorer": "https://scrollscan.com/token/0x79379c0e09a41d7978f883a56246290ee9a8c4d3",
-    "research": "https://research.binance.com/en/projects/aave-protocol",
-    "type": "SCROLL",
     "symbol": "AAVE",
+    "type": "BRC20",
     "decimals": 18,
+    "description": "Aave Protocol is a decentralised liquidity protocol where people can lend and borrow digital assets. The AAVE token is the governance token of the protocol, so AAVE holders can vote on proposals for updates. AAVE holders can also stake their AAVE in the protocol Safety Module and earn Safety Incentives for securing the protocol",
+    "website": "https://aave.com",
+    "explorer": "https://unisat.io/brc20/0x79379C0E09a41d7978f883a56246290eE9a8c4d3",
+    "research": "https://research.binance.com/en/projects/aave-protocol",
     "status": "active",
     "id": "0x79379C0E09a41d7978f883a56246290eE9a8c4d3",
-    "tags": [
-        "defi",
-        "governance"
-    ],
     "links": [
         {
             "name": "github",
@@ -46,5 +42,9 @@
             "name": "coingecko",
             "url": "https://coingecko.com/en/coins/aave/"
         }
+    ],
+    "tags": [
+        "defi",
+        "governance"
     ]
 }

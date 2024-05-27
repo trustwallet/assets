@@ -1,11 +1,11 @@
 {
     "name": "Curve DAO Token",
-    "website": "https://www.lido.fi/",
-    "description": "wstETH is a wrapped version of stETH. As some DeFi protocols require a constant balance mechanism for tokens, wstETH keeps your balance of stETH fixed and uses an underlying share system to reflect your earned staking rewards.",
-    "explorer": "https://scrollscan.com/token/0xf610a9dfb7c89644979b4a0f27063e9e7d7cda32",
-    "type": "SCROLL",
     "symbol": "wstETH",
+    "type": "BRC20",
     "decimals": 18,
+    "description": "wstETH is a wrapped version of stETH. As some DeFi protocols require a constant balance mechanism for tokens, wstETH keeps your balance of stETH fixed and uses an underlying share system to reflect your earned staking rewards.",
+    "website": "https://www.lido.fi/",
+    "explorer": "https://unisat.io/brc20/0xf610A9dfB7C89644979b4A0f27063E9e7d7Cda32",
     "status": "active",
     "id": "0xf610A9dfB7C89644979b4A0f27063E9e7d7Cda32",
     "links": [

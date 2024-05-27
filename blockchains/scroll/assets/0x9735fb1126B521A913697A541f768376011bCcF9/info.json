@@ -1,12 +1,12 @@
 {
     "name": "Chess",
-    "website": "https://tranchess.com/",
-    "description": "Tranchess Protocol is a tokenized asset management and derivatives trading protocol. Inspired by tranches fund that caters investors with different risk appetite, Tranchess aims to provide different risk/return matrix out of a single main fund that tracks a specific underlying asset.",
-    "type": "SCROLL",
     "symbol": "CHESS",
+    "type": "BRC20",
     "decimals": 18,
+    "description": "Tranchess Protocol is a tokenized asset management and derivatives trading protocol. Inspired by tranches fund that caters investors with different risk appetite, Tranchess aims to provide different risk/return matrix out of a single main fund that tracks a specific underlying asset.",
+    "website": "https://tranchess.com/",
+    "explorer": "https://unisat.io/brc20/0x9735fb1126B521A913697A541f768376011bCcF9",
     "status": "active",
-    "explorer": "https://scrollscan.com/token/0x9735fb1126b521a913697a541f768376011bccf9",
     "id": "0x9735fb1126B521A913697A541f768376011bCcF9",
     "links": [
         {

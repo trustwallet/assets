@@ -1,11 +1,11 @@
 {
     "name": "Wrapped Ether",
     "symbol": "WETH",
-    "type": "SCROLL",
+    "type": "BRC20",
     "decimals": 18,
     "description": "wETH is wrapped ETH",
     "website": "https://weth.io/",
-    "explorer": "https://scrollscan.com/token/0x5300000000000000000000000000000000000004",
+    "explorer": "https://unisat.io/brc20/0x5300000000000000000000000000000000000004",
     "status": "active",
     "id": "0x5300000000000000000000000000000000000004",
     "links": [

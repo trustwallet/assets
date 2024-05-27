@@ -1,17 +1,14 @@
 {
     "name": "BUSD",
-    "website": "https://paxos.com/busd",
-    "description": "BUSD is a token issued by Binance on Smart Chain; its price is pegged to BUSD (BUSD LINEA) at a ratio of 1:1.",
-    "explorer": "https://lineascan.build/token/0x7d43AABC515C356145049227CeE54B608342c0ad",
-    "research": "https://research.binance.com/en/projects/binance-usd",
-    "type": "LINEA",
     "symbol": "BUSD",
+    "type": "LINEA",
     "decimals": 18,
+    "description": "BUSD is a token issued by Binance on Smart Chain; its price is pegged to BUSD (BUSD LINEA) at a ratio of 1:1.",
+    "website": "https://paxos.com/busd",
+    "explorer": "https://explorer.linea.build/token/0x7d43AABC515C356145049227CeE54B608342c0ad",
+    "research": "https://research.binance.com/en/projects/binance-usd",
     "status": "active",
     "id": "0x7d43AABC515C356145049227CeE54B608342c0ad",
-    "tags": [
-        "stablecoin"
-    ],
     "links": [
         {
             "name": "github",
@@ -37,5 +34,8 @@
             "name": "coingecko",
             "url": "https://coingecko.com/en/coins/binance-usd/"
         }
+    ],
+    "tags": [
+        "stablecoin"
     ]
 }
