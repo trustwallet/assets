@@ -1,28 +1,29 @@
 {
     "name": "Algorand",
     "website": "http://algorand.foundation",
-    "source_code": "https://github.com/algorand",
-    "white_paper": "https://www.algorand.com/resources/white-papers/",
     "description": "Algorand is the first blockchain to provide immediate transaction finality. No forking. No uncertainty. Algorand removes the technical barriers that for years undermined mainstream blockchain adoption: decentralization, scale, and security.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/AlgoFoundation",
-            "handle": "AlgoFoundation"
-        },
-        {
-            "name": "Reddit",
-            "url": "https://www.reddit.com/r/AlgorandOfficial",
-            "handle": "AlgorandOfficial"
-        }
-    ],
     "explorer": "https://algoexplorer.io/",
     "research": "https://research.binance.com/en/projects/algorand",
     "symbol": "ALGO",
-    "type": "COIN",
+    "type": "coin",
     "decimals": 6,
     "status": "active",
-    "tags": [
-        "staking-native"
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/algorand"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/AlgoFoundation"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/AlgorandOfficial"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://www.algorand.com/resources/white-papers/"
+        }
     ]
 }

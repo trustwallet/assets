@@ -1,24 +1,25 @@
 {
-    "name": "Wrapped Anatha Token",
+    "name": "Anatha",
     "website": "https://anatha.io",
-    "source_code": "https://github.com/anathatech/",
     "description": "Reward token for the Anatha ecosystem.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/anatha_io",
-            "handle": "Anatha_IO"
-        },
-        {
-            "name": "Reddit",
-            "url": "https://www.reddit.com/r/Anatha",
-            "handle": "Anatha"
-        }
-    ],
     "explorer": "https://etherscan.io/token/0x3383c5a8969Dc413bfdDc9656Eb80A1408E4bA20",
     "type": "ERC20",
     "symbol": "wANATHA",
     "decimals": 18,
     "status": "active",
-    "id": "0x3383c5a8969Dc413bfdDc9656Eb80A1408E4bA20"
+    "id": "0x3383c5a8969Dc413bfdDc9656Eb80A1408E4bA20",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/anathatech/"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/Anatha_IO"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/Anatha"
+        }
+    ]
 }

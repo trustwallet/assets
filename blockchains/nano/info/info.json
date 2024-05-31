@@ -1,25 +1,29 @@
 {
     "name": "Nano",
     "website": "http://nano.org/en",
-    "source_code": "https://github.com/nanocurrency",
-    "white_paper": "https://nano.org/en/whitepaper",
     "description": "Digital currency for the real world – the fast and free way to pay for everything in life.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/nano",
-            "handle": "nano"
-        },
-        {
-            "name": "Reddit",
-            "url": "https://reddit.com/r/nanocurrency",
-            "handle": "nanocurrency"
-        }
-    ],
     "explorer": "https://nanocrawler.cc",
     "research": "https://research.binance.com/en/projects/nano",
-    "symbol": "NANO",
-    "type": "COIN",
+    "symbol": "XNO",
+    "type": "coin",
     "decimals": 30,
-    "status": "active"
+    "status": "active",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/nanocurrency"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/nano"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/nanocurrency"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://nano.org/en/whitepaper"
+        }
+    ]
 }

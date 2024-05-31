@@ -1,24 +1,48 @@
 {
-    "name": "Telegram Open Network",
-    "website": "https://telegram.org/",
-    "source_code": "https://github.com/ton-blockchain/ton",
-    "white_paper": "https://test.ton.org/ton.pdf",
-    "description": "The Telegram Open Network (TON) describes itself as a fast, secure and scalable blockchain and network project, reportedly capable of handling millions of transactions per second.",
-    "socials": [
+    "name": "The Open Network",
+    "website": "https://ton.org",
+    "description": "The Open Network is a blockchain-based decentralized computer network. TON is designed to enable processing millions of transactions per second via infinite sharding paradigm. It allows building Web 3.0 empowered by decentralized storage and DNS, instant payments and decentralized services.",
+    "explorer": "https://tonscan.org/",
+    "symbol": "TON",
+    "type": "coin",
+    "decimals": 9,
+    "status": "active",
+    "links": [
         {
-            "name": "Twitter",
-            "url": "",
-            "handle": ""
+            "name": "github",
+            "url": "https://github.com/ton-blockchain"
         },
         {
-            "name": "Reddit",
-            "url": "",
-            "handle": ""
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/toncoin/"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/toncoin"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://ton.org/whitepaper.pdf"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/ton_blockchain"
+        },
+        {
+            "name": "telegram_news",
+            "url": "https://t.me/tonblockchain"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/the-open-network"
+        },
+        {
+            "name": "docs",
+            "url": "https://ton.org/docs"
+        },
+        {
+            "name": "source_code",
+            "url": "https://github.com/ton-blockchain/ton"
         }
-    ],
-    "explorer": "https://test.ton.org/testnet/",
-    "symbol": "GRAM",
-    "type": "COIN",
-    "decimals": 9,
-    "status": "abandoned"
+    ]
 }

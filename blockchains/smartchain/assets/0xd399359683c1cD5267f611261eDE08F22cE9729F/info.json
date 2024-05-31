@@ -1,24 +1,25 @@
 {
     "name": "Mainstream For The Underground",
     "website": "https://mftu.net",
-    "source_code": "https://github.com/CyberFM/",
     "description": "Utility token to pay Independent Musicians as a Distributed Ledger Performance Rights Organization.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/mftu_currency",
-            "handle": "Mainstream For The Underground"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/mftudotnet",
-            "handle": "Mainstream For The Underground"
-        }
-    ],
     "explorer": "https://bscscan.com/token/0xd399359683c1cd5267f611261ede08f22ce9729f",
     "type": "BEP20",
     "symbol": "MFTU",
     "decimals": 18,
     "status": "active",
-    "id": "0xd399359683c1cD5267f611261eDE08F22cE9729F"
+    "id": "0xd399359683c1cD5267f611261eDE08F22cE9729F",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/CyberFM/"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/Mainstream For The Underground"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/mftudotnet"
+        }
+    ]
 }

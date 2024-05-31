@@ -2,32 +2,28 @@
     "name": "OliveCash",
     "website": "https://olive.cash",
     "description": "OliveCash has the goal of fostering AMM, Yeild Farming and DeFi market by facilitating the participation of traditional investors to the Crypto Ecosystem. Expanding the potential market reach requires simple and smooth interfaces as well as easier connections between Fiat and Crypto markets. To increase protocol economical sustainability, we aim at increasing burning fees and defining additional deflationary strategies benefitting holders",
-    "socials": [
-        {
-            "name": "Medium",
-            "url": "https://olive-cash.medium.com"
-        },
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/OliveCashBsc"
-        },
-        {
-            "name": "Telegram News",
-            "url": "https://t.me/olive_cash"
-        },
-        {
-            "name": "Telegram Chat",
-            "url": "https://t.me/olive_cash_chat"
-        },
-        {
-            "name": "Github",
-            "url": "https://github.com/olive-cash"
-        }
-    ],
     "explorer": "https://bscscan.com/token/0x617724974218A18769020A70162165A539c07E8a",
     "type": "BEP20",
     "symbol": "OLIVE",
     "decimals": 18,
     "status": "active",
-    "id": "0x617724974218A18769020A70162165A539c07E8a"
+    "id": "0x617724974218A18769020A70162165A539c07E8a",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/olive-cash"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/OliveCashBsc"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/olive_cash_chat"
+        },
+        {
+            "name": "medium",
+            "url": "https://olive-cash.medium.com"
+        }
+    ]
 }

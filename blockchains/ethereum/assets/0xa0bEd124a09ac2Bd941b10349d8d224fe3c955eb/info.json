@@ -3,42 +3,35 @@
     "website": "https://depay.fi",
     "description": "DePay is a simple, decentralized payment protocol that simplifies crypto payments.",
     "explorer": "https://etherscan.io/token/0xa0bEd124a09ac2Bd941b10349d8d224fe3c955eb",
-    "source_code": "https://github.com/DePayFi",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/DePayFi",
-            "handle": "DePayFi"
-        },
-        {
-            "name": "Reddit",
-            "url": "https://www.reddit.com/r/DePayFi",
-            "handle": "DePayFi"
-        },
-        {
-            "name": "Medium",
-            "url": "https://depay.medium.com",
-            "handle": "DePay"
-        },
-        {
-            "name": "Telegram",
-            "url": "https://t.me/depayfi",
-            "handle": "DePayFi"
-        },
-        {
-            "name": "Linkedin",
-            "url": "https://www.linkedin.com/company/DePay",
-            "handle": "DePay"
-        },
-        {
-            "name": "Discord",
-            "url": "https://discord.gg/smDs5zK",
-            "handle": "DePay"
-        }
-    ],
     "type": "ERC20",
     "symbol": "DEPAY",
     "decimals": 18,
     "status": "active",
-    "id": "0xa0bEd124a09ac2Bd941b10349d8d224fe3c955eb"
+    "id": "0xa0bEd124a09ac2Bd941b10349d8d224fe3c955eb",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/DePayFi"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/DePayFi"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/depayfi"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/smDs5zK"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/DePayFi"
+        },
+        {
+            "name": "medium",
+            "url": "https://depay.medium.com"
+        }
+    ]
 }

@@ -3,41 +3,27 @@
     "website": "https://mellotoken.com/",
     "description": "The Mello Token is a cryptocurrency designed for integration into the Mello Virtual Reality Casino Concept.",
     "explorer": "https://bscscan.com/token/0x651bfbb26455294408aabc61a7adf427bf149898",
-    "socials": [
-        {
-            "name": "Instagram",
-            "url": "https://www.instagram.com/mello.token/",
-            "handle": "@mello.token"
-        },
-        {
-            "name": "Reddit",
-            "url": "https://www.reddit.com/r/MelloToken/",
-            "handle": "r/MelloToken"
-        },
-        {
-            "name": "Facebook",
-            "url": "https://www.facebook.com/Mellotoken/",
-            "handle": "@Mellotoken"
-        },
-        {
-            "name": "Youtube",
-            "url": "https://www.youtube.com/channel/UC7vRh9a85iyi9DDujGwEy4g",
-            "handle": "Mello Token"
-        },
-        {
-            "name": "Tiktok",
-            "url": "https://www.tiktok.com/@mellotoken?lang=en",
-            "handle": "mellotoken"
-        },
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/mellotoken",
-            "handle": "@mellotoken"
-        }
-    ],
     "type": "BEP20",
     "symbol": "mello",
     "decimals": 9,
     "status": "active",
-    "id": "0x651BfbB26455294408Aabc61a7ADF427bf149898"
+    "id": "0x651BfbB26455294408Aabc61a7ADF427bf149898",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/@mellotoken"
+        },
+        {
+            "name": "facebook",
+            "url": "https://facebook.com/Mellotoken/"
+        },
+        {
+            "name": "youtube",
+            "url": "https://youtube.com/channel/UC7vRh9a85iyi9DDujGwEy4g"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/MelloToken/"
+        }
+    ]
 }

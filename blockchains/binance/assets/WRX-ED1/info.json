@@ -1,5 +1,5 @@
 {
-    "name": "WazirX",
+    "name": "WazirX Token",
     "website": "https://wazirx.com",
     "description": "The WRX token is used for trading fee discounts, WRX Trade Mining (unlock and earn WRX tokens by performing trades), paying for margin fees, and more.",
     "explorer": "https://explorer.binance.org/asset/WRX-ED1",
@@ -8,5 +8,23 @@
     "symbol": "WRX",
     "decimals": 8,
     "status": "active",
-    "id": "WRX-ED1"
+    "id": "WRX-ED1",
+    "links": [
+        {
+            "name": "whitepaper",
+            "url": "https://download.wazirx.com/wrx/wrx-whitepaper.pdf"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/wazirxindiap"
+        },
+        {
+            "name": "facebook",
+            "url": "https://facebook.com/wazirx"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/wazirx"
+        }
+    ]
 }
