@@ -1,0 +1,33 @@
+{
+    "name": "Dai Stablecoin",
+    "type": "ARBITRUM",
+    "symbol": "DAI",
+    "decimals": 18,
+    "website": "https://tether.to/",
+    "description": "Multi-Collateral Dai, brings a lot of new and exciting features, such as support for new CDP collateral types and Dai Savings Rate.",
+    "explorer": "https://arbiscan.io/token/0xda10009cbd5d07dd0cecc66161fc93d7c9000da1",
+    "status": "active",
+    "id": "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
+    "links": [
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/multi-collateral-dai/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/coins/dai/"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/MakerDAO"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://makerdao.com/whitepaper/"
+        }
+    ],
+    "tags": [
+        "stablecoin",
+        "defi"
+    ]
+} 

@@ -1,7 +1,7 @@
 {
-    "name": "Binance-Peg USD Coin",
+    "name": "BNB pegged USD Coin",
     "website": "https://www.centre.io",
-    "description": "Binance-Peg USD Coin (USD BEP20) is a token issued by Binance on Smart Chain; its price is pegged to USD Coin (USD ERC20) at a ratio of 1:1.",
+    "description": "BNB pegged USD Coin (USD BEP20) is a token issued by Binance on Smart Chain; its price is pegged to USD Coin (USD ERC20) at a ratio of 1:1.",
     "explorer": "https://bscscan.com/token/0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d",
     "research": "https://research.binance.com/en/projects/usd-coin",
     "type": "BEP20",
@@ -10,7 +10,8 @@
     "status": "active",
     "id": "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d",
     "tags": [
-        "binance-peg"
+        "binance-peg",
+        "stablecoin"
     ],
     "links": [
         {
