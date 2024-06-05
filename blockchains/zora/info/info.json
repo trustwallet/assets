@@ -8,5 +8,15 @@
     "type": "coin",
     "decimals": 18,
     "status": "active",
-    "rpc_url": "https://rpc.zora.energy/"
+    "rpc_url": "https://rpc.zora.energy/",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/ourZORA"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/ourzora"
+        }
+    ]
 }
