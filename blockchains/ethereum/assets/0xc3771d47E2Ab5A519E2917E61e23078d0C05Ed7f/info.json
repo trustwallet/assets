@@ -6,8 +6,11 @@
     "type": "ERC20",
     "symbol": "GTH",
     "decimals": 18,
-    "status": "active",
+    "status": "abandoned",
     "id": "0xc3771d47E2Ab5A519E2917E61e23078d0C05Ed7f",
+    "tags": [
+        "governance"
+    ],
     "links": [
         {
             "name": "twitter",
@@ -25,5 +28,9 @@
             "name": "whitepaper",
             "url": "https://gather.network/whitepaper.html"
         }
-    ]
+    ],
+    "migrate": {
+        "asset_id": "c60_t0xeb986DA994E4a118d5956b02d8b7c3C7CE373674",
+        "url": "https://twitter.com/Gather_Network/status/1479180753967915008"
+    }
 }

@@ -1,0 +1,29 @@
+{
+    "type": "ESDT",
+    "id": "USDC-c76f1f",
+    "name": "Wrapped USDC (on MultiversX)",
+    "symbol": "USDC",
+    "decimals": 6,
+    "status": "active",
+    "description": "USDC stablecoin originating on Ethereum, bridged as an ESDT token on MultiversX. 1 USDC = 1 Wrapped USDC",
+    "website": "https://xexchange.com",
+    "explorer": "https://explorer.multiversx.com/tokens/USDC-c76f1f",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/centrehq"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/usd-coin"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/usd-coin"
+        }
+    ],
+    "tags": [
+        "stablecoin",
+        "wrapped"
+    ]
+}
