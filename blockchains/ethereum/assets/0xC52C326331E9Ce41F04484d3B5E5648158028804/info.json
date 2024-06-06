@@ -1,12 +1,33 @@
 {
-    "name": "ZEN Exchange Token",
+    "name": "Unizen",
     "website": "https://unizen.io",
-    "description": "Utility token to at Unizen Smart Exchange Ecosystem.",
+    "description": "Seamless omni-chain enabled swapping with industry leading rates and access to millions of digital assets, from the moment of their inception.",
     "explorer": "https://etherscan.io/token/0xC52C326331E9Ce41F04484d3B5E5648158028804",
-    "research": "https://unizen.io/docs/unizen-v1-litepaper-2021-04-23-22-02.pdf",
-    "type": "ERC20",
+    "research": "https://docs.unizen.io",
     "symbol": "ZCX",
+    "type": "ERC20",
     "decimals": 18,
     "status": "active",
-    "id": "0xC52C326331E9Ce41F04484d3B5E5648158028804"
+    "tags": [
+        "staking-native"
+    ],
+    "id": "0xC52C326331E9Ce41F04484d3B5E5648158028804",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/unizen-io/"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/unizen_io"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/unizen/"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://docs.unizen.io"
+        }
+    ]
 }

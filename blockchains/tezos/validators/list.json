@@ -1,5 +1,19 @@
 [
     {
+        "id": "tz1hAYfexyzPGG6RhZZMpDvAHifubsbb6kgn",
+        "name": "Swiss Staking",
+        "description": "Experienced validator based in Switzerland. We offer a highly secure and stable staking infrastructure.",
+        "website": "https://swiss-staking.ch",
+        "payout": {
+            "commission": 10,
+            "payoutDelay": 6,
+            "payoutPeriod": 1
+        },
+        "staking": {
+            "minDelegation": 100
+        }
+    },
+    {
         "id": "tz1NMNQYrYrfNpmUqQrMhJypf6ovnaDZhJHM",
         "name": "Smart Node",
         "description": "SmartNode is a Staking Service Provider aimed at giving anyone the opportunity to grow their crypto assets",
