@@ -1,0 +1,52 @@
+{
+    "name": "Taiko Token",
+    "website": "https://taiko.xyz/",
+    "description": "Taiko is a permissionless based rollup on Ethereum",
+    "explorer": "https://etherscan.io/token/0x10dea67478c5f8c5e2d90e5e9b26dbe60c54d800",
+    "symbol": "TAIKO",
+    "type": "ERC20",
+    "decimals": 18,
+    "status": "active",
+    "tags": [
+        "Blockchain", "Layer 2", "Governance", "Bond"
+    ],
+    "id": "0x10dea67478c5F8C5E2D90e5E9B26dBe60c54d800",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/taikoxyz/taiko-mono"
+        },
+        {
+            "name": "docs",
+            "url": "https://docs.taiko.xyz/start-here/getting-started"
+        },
+        {
+            "name": "twitter",
+            "url": "https://x.com/taikoxyz"
+        },
+        {
+            "name": "reddit",
+            "url": "https://www.reddit.com/r/taiko_xyz/"
+        },
+        {
+            "name": "tokenomics whitepaper",
+            "url": "https://github.com/taikoxyz/taiko-mono/blob/main/packages/protocol/docs/tokenomics-whitepaper.pdf"
+        },
+        {
+            "name": "audits",
+            "url": "https://github.com/taikoxyz/taiko-mono/tree/main/packages/protocol/audit"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.gg/taikoxyz"
+        }, 
+        {
+            "name": "coingecko",
+            "url": "https://www.coingecko.com/en/coins/taiko"
+        }, 
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/taiko/"
+        }
+    ]
+}
