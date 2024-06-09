@@ -2,11 +2,12 @@
     "name": "RCH Token",
     "website": "https://sofa.org",
     "description": "RCH is the SOFA.org utility token. SOFA.org is a non-profit DAO dedicated to developing a comprehensive asset settlement framework on-chain.",
-    "explorer": "https://etherscan.io/address/0x57B96D4aF698605563A4653D882635da59Bf11AF",
+    "explorer": "https://etherscan.io/token/0x57B96D4aF698605563A4653D882635da59Bf11AF",
     "symbol": "RCH",
     "type": "ERC20",
     "decimals": 18,
     "status": "active",
+    "id": "0x57B96D4aF698605563A4653D882635da59Bf11AF",
     "tags": [
         "defi"
     ],
@@ -17,7 +18,7 @@
         },
         {
             "name": "twitter",
-            "url": "https://x.com/SOFAorgDAO"
+            "url": "https://twitter.com/SOFAorgDAO"
         },
         {
             "name": "telegram",
