@@ -1,34 +1,31 @@
 {
     "name": "Invisibleeggs",
-    "website": "https://bleggs.com",
+    "website": "https://www.bnbchain.world/en/smartChain",
     "description": "InvisibleEggs is an innovative NFT project based in Dubai, blending digital art with blockchain technology. It offers unique, collectible NFTs and features the native utility token, BLEGGS, to build a vibrant, community-driven ecosystem.",
     "explorer": "https://bscscan.com/token/0x3b7b142c198e0575110bc81bbaddeb6ab0a6046c",
-    "research": "https://bleggs.com/whitepaper",
+    "research": "",
     "symbol": "BLEGGS",
     "type": "BEP20",
     "decimals": 18,
     "status": "active",
-    "id": "0x3b7b142c198e0575110bc81bbaddeb6ab0a6046c",
     "tags": [
-        "meme",
-        "NFT",
-        "blockchain",
+        "meme"
     ],
     "links": [
         {
-            "name": "Twitter",
+            "name": "twitter",
             "url": "https://x.com/BLEGGSToken"
         },
         {
-            "name": "Telegram",
+            "name": "telegram",
             "url": "https://t.me/bleggs"
         },
         {
-            "name": "Instagram",
-            "url": "https://www.instagram.com/bleggstoken/"
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/dexscan/bsc/0x8bd422ca2fb7441c5ca35fed053fa2fe28b7e6fe/"
         },
         {
-            "name": "Official Website",
+            "name": "blog",
             "url": "https://bleggs.com"
         }
     ]
