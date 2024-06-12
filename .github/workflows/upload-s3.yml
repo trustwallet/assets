@@ -38,7 +38,7 @@ jobs:
           if [ "${{ github.event.inputs.use-size-only }}" == "true" ]; then
             SYNC_OPTIONS="$SYNC_OPTIONS --size-only"
           fi
-          aws s3 sync . s3://$AWS_S3_BUCKET $SYNC_OPTIONS
+          eval "aws s3 sync . s3://$AWS_S3_BUCKET $SYNC_OPTIONS"
         env:
           AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
 
