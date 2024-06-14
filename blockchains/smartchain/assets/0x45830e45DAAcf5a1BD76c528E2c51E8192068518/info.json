@@ -5,12 +5,10 @@
   "explorer": "https://bscscan.com/token/0x45830e45daacf5a1bd76c528e2c51e8192068518",
   "research": "https://www.yoozico.com/wp-content/uploads/2024/06/yoozico-white-paper.pdf",
   "symbol": "yoozic",
-  "type": "token",
+  "type": "BEP20",
   "decimals": 4,
   "status": "active",
-  "tags": [
-    "staking-native"
-  ],
+  "id" : "0x45830e45DAAcf5a1BD76c528E2c51E8192068518",
   "links": [
     {
       "name": "github",
@@ -18,11 +16,11 @@
     },
     {
       "name": "twitter",
-      "url": "https://Twitter.com/yoozico_"
+      "url": "https://twitter.com/yoozico_"
     },
     {
       "name": "instagram",
-      "url": "https://Instagram.com/yoozico"
+      "url": "https://instagram.com/yoozico"
     },
     {
       "name": "whitepaper",
