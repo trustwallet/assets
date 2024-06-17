@@ -1,0 +1,29 @@
+{
+  "name": "Happy Childhood Token",
+  "symbol": "HCH",
+  "decimals": 18,
+  "description": "Happy Childhood Token (HCH) is created within the Happy Childhood NFT collection. There are 9999 NFTs in the collection, and a total of 9,999,000 HCH tokens have been minted. Each NFT holder from the Happy Childhood collection receives 1000 HCH tokens per NFT they own. These tokens are distributed only once for each NFT purchased directly from the creator of the collection. The purpose of HCH tokens is to support various projects aimed at improving the lives of children around the world.",
+  "website": "https://opensea.io/collection/happy-childhood-nft",
+  "explorer": "https://polygonscan.com/token/0x4A86Fe7Ae5230A2eEfE2b39B21ccDE86B73aCce9",
+  "status": "active",
+  "id": "0x4A86Fe7Ae5230A2eEfE2b39B21ccDE86B73aCce9",
+  "logo": "https://github.com/Rayhona01/HCH-Token-Assets/blob/main/logo.png?raw=true",
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://x.com/Collection_HCH"
+    },
+    {
+      "name": "website",
+      "url": "https://opensea.io/collection/happy-childhood-nft"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/Rayhona01/HCH-Token-Assets"
+    }
+  ],
+  "tags": ["utility", "nft"],
+  "type": "ERC20",
+  "holders": 1228,
+  "additionalComments": "The number of token holders was checked on Polygonscan and GeckoTerminal."
+}
