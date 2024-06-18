@@ -1,0 +1,19 @@
+import { ThirdwebStorage } from "@thirdweb-dev/storage";
+
+// First, instantiate the thirdweb IPFS storage
+const storage = new ThirdwebStorage({
+  secretKey: "f008c1d0af64540d07cb30dc0a819693", // You can get one from dashboard settings
+});
+
+// Here we get the IPFS URI of where our metadata has been uploaded
+const uri = await storage.upload(metadata);
+// This will log a URL like ipfs://QmWgbcjKWCXhaLzMz4gNBxQpAHktQK6MkLvBkKXbsoWEEy/0
+console.info(uri);
+
+// Here we a URL with a gateway that we can look at in the browser
+const url = await storage.resolveScheme(uri);
+// This will log a URL like https://ipfs.thirdwebstorage.com/ipfs/QmWgbcjKWCXhaLzMz4gNBxQpAHktQK6MkLvBkKXbsoWEEy/0
+console.info(url);
+
+// You can also download the data from the uri
+const data = await storage.downloadJSON(uri);
