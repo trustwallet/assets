@@ -1,35 +1,32 @@
 {
     "name": "Happy Childhood Token",
+    "type": "POLYGON",
     "symbol": "HCH",
     "decimals": 18,
+    "website": "https://github.com/Rayhona01",
     "description": "Happy Childhood Token (HCH) is created within the Happy Childhood NFT collection. There are 9999 NFTs in the collection, and a total of 9,999,000 HCH tokens have been minted. Each NFT holder from the Happy Childhood collection receives 1000 HCH tokens per NFT they own. These tokens are distributed only once for each NFT purchased directly from the creator of the collection. The purpose of HCH tokens is to support various projects aimed at improving the lives of children around the world.",
-    "website": "https://opensea.io/collection/happy-childhood-nft",
-    "explorer": {
-      "type": "POLYGON",
-      "url": "https://polygonscan.com/token/0x4A86Fe7Ae5230A2eEfE2b39B21ccDE86B73aCce9"
-    },
+    "explorer": "https://polygonscan.com/token/0x4A86Fe7Ae5230A2eEfE2b39B21ccDE86B73aCce9",
     "status": "active",
     "id": "0x4A86Fe7Ae5230A2eEfE2b39B21ccDE86B73aCce9",
-    "logo": "logo.png",
     "links": [
-      {
-        "name": "twitter",
-        "url": "https://twitter.com/Collection_HCH"
-      },
-      {
-        "name": "website",
-        "url": "https://opensea.io/collection/happy-childhood-nft"
-      },
-      {
-        "name": "explorer",
-        "url": "https://polygonscan.com/token/0x4A86Fe7Ae5230A2eEfE2b39B21ccDE86B73aCce9"
-      }
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/Collection_HCH"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/Rayhona01"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/Aaa20148"
+        },
+        {
+            "name": "docs",
+            "url": ""
+        }
     ],
     "tags": [
-      "nft"
-    ],
-    "type": "ERC20",
-    "holders": 1228,
-    "additionalComments": "The number of token holders was checked on Polygonscan and GeckoTerminal."
-  }
-  
+        "nft"
+    ]
+}
