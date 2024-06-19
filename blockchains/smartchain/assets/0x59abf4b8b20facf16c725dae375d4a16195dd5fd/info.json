@@ -5,7 +5,28 @@
     "decimals": 18,
     "website": "https://www.cbdtoken.com",
     "description": "CBD token is a utility token issued by the CBD development team.",
-    "explorer": "https://bscscan.com/token/0x59ABF4B8B20FAcF16C725dae375D4A16195dD5FD",
+    "explorer": "https://bscscan.com/token/0x59abf4b8b20facf16c725dae375d4a16195dd5fd",
     "status": "active",
-    "id": "0x59ABF4B8B20FAcF16C725dae375D4A16195dD5FD"
+    "id": "0x59abf4b8b20facf16c725dae375d4a16195dd5fd",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/cbdtoken"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/CBDTokenOfficial"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://www.cbdtoken.com/whitepaper"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/cbdtoken"
+        }
+    ],
+    "tags": [
+        "utility"
+    ]
 }
