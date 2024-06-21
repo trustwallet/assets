@@ -5,16 +5,17 @@
     "explorer": "https://polygonscan.com/token/0x8da57ffab00442f1feece9be6813b15e44a78c41",
     "research": "https://lcrscan.com",
     "symbol": "LCR",
-    "type": "Token",
+    "type": "ERC20",
     "decimals": 18,
     "status": "active",
+     "id": "0x8da57ffab00442f1feece9be6813b15e44a78c41",
     "tags": [
-        "Pioneering the Crypto Utility Landscape"
+        "Defi"
     ],
     "links": [
         {
             "name": "github",
-            "url": "https://github.com/Lucreway"
+            "url": "https://github.com/Lucreway/"
         },
         {
             "name": "coinmarketcap",
@@ -22,7 +23,8 @@
         },
         {
             "name": "twitter",
-            "url": "https://twitter.com/@lucreway"
+            "url": "https://twitter.com/lucreway"
+            
         },
         {
             "name": "telegram",
@@ -30,7 +32,7 @@
         },
         {
             "name": "Blog",
-            "url": "https://medium.com/@lucreway"
+            "url": "https://medium.com/lucreway"
         },
         {
             "name": "whitepaper",
