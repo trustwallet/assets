@@ -1,11 +1,28 @@
 {
-    "name": "XEROCOIN",
-    "symbol": "XRO",
+    "name": "Xerocoin",
     "type": "BEP20",
-    "decimals": 8,
+    "symbol": "XRO",
+    "decimals": 18,
+    "website": "https://xeromine.com",
     "description": "XeroMine is one of the leading cryptocurrency buying and selling (XEROCOIN/XRO) platforms, offering cryptocurrency buying and selling capacity at every range - for newcomers. Our mission is to make buying and selling (XEROCOIN/XRO) cryptocurrency easy and fast for everyone.",
-    "website": "https://xeromine.com/",
-    "explorer": "https://bscscan.com/token/0x0bb1c04c0bb8623fbaf5e9adeba098d00711e3b5",
+    "explorer": "https://bscscan.com/token/0x0BB1C04c0bb8623FBAf5E9ADeba098D00711E3B5",
     "status": "active",
-    "id": "XRO-2FA"
+    "id": "0x0BB1C04c0bb8623FBAf5E9ADeba098D00711E3B5",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/xeromine/"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/"
+        },
+        {
+            "name": "blog",
+            "url": "https://xeromine.com/blogs"
+        }
+    ],
+    "tags": [
+        "staking-native"
+    ]
 }
