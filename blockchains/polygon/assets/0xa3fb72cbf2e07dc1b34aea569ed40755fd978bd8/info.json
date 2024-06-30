@@ -1,33 +1,36 @@
 {
     "name": "Opex",
-    "website": "https://opxtoken.com/",
-    "description": "Welcome to the World of OPX, a Cryptocurrency created in Kyrgyzstan. OPX is a stablecoin, a digital asset pegged to the Kyrgyz som (KGS), and is designed to facilitate payment transactions, as well as to protect against the volatility common to many other cryptocurrencies.",
-    "explorer": "https://polygonscan.com/token/0xa3fb72cbf2e07dc1b34aea569ed40755fd978bd8",
     "type": "POLYGON",
     "symbol": "OPX",
     "decimals": 6,
+    "website": "https://opxtoken.com",
+    "description": "Opex OPX is a stablecoin, a digital asset pegged to the Kyrgyz som (KGS), and is designed to facilitate payment transactions, as well as to protect against the volatility common to many other cryptocurrencies. ",
+    "explorer": "https://polygonscan.com/token/0xa3fb72cbf2e07dc1b34aea569ed40755fd978bd8",
     "status": "active",
     "id": "0xa3fb72cbf2e07dc1b34aea569ed40755fd978bd8",
     "links": [
         {
-            "name": "discord",
-            "url": ""
-        },
-        {
             "name": "twitter",
-            "url": ""
+            "url": "https://twitter.com/Opxtoken"
         },
         {
-            "name": "coingecko",
-            "url": ""
+            "name": "telegram",
+            "url": "https://t.me/opextokencom"
         },
         {
-            "name": "medium",
-            "url": ""
+            "name": "github",
+            "url": "https://github.com/OPXToken/"
         },
         {
             "name": "coinmarketcap",
-            "url": ""
+            "url": "https://coinmarketcap.com/currencies/opex/"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/@opxtoken"
         }
+    ],
+    "tags": [
+        "stablecoin"
     ]
 }
