@@ -1,29 +1,26 @@
 {
-    "name": "Wrapped Bitcoin",
-    "website": "https://wbtc.network",
-    "description": "Wrapped Bitcoin (WBTC) is the first ERC20 token backed 1:1 with Bitcoin.",
-    "explorer": "https://ftmscan.com/token/0x321162Cd933E2Be498Cd2267a90534A804051b11",
+    "name": "Bitcoin ",
     "type": "FANTOM",
     "symbol": "BTC",
-    "decimals": 8,
+    "decimals": 5,
+    "website": "https://trustwallet.com/",
+    "description": "FantomToken (FTM) is a native utility token of the Fantom blockchain, designed to power its high-performance, scalable, and secure smart contract platform. FTM is used for securing the network through staking, governance by voting on proposals, and paying for transaction fees within the ecosystem.The Fantom network aims to provide fast, low-cost transactions suitable for real-world applications, including decentralized finance (DeFi) and Internet of Things (IoT). With its unique consensus mechanism, Lachesis, Fantom ensures near-instant finality and high throughput, making it an ideal platform for developers and users seeking efficiency and scalability.FTM holders benefit from staking rewards, governance rights, and access to a wide array of DeFi applications built on the Fantom network. Join the growing community of Fantom and explore the future of decentralized technology.",
+    "explorer": "https://ftmscan.com/token/0x321162Cd933E2Be498Cd2267a90534A804051b11",
     "status": "active",
     "id": "0x321162Cd933E2Be498Cd2267a90534A804051b11",
-    "tags": [
-        "defi",
-        "wrapped"
-    ],
     "links": [
         {
-            "name": "whitepaper",
-            "url": "https://wbtc.network/assets/wrapped-tokens-whitepaper.pdf"
+            "name": "github",
+            "url": "https://github.com/"
         },
         {
-            "name": "coinmarketcap",
-            "url": "https://coinmarketcap.com/currencies/wrapped-bitcoin/"
+            "name": "twitter",
+            "url": "https://twitter.com/"
         },
         {
-            "name": "coingecko",
-            "url": "https://coingecko.com/en/coins/wrapped-bitcoin/"
+            "name": "source_code",
+            "url": null
         }
-    ]
+    ],
+    "tags": []
 }
