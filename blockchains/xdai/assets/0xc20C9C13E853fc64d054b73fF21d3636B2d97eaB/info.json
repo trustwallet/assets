@@ -3,7 +3,7 @@
     "website": "https://cow.fi/",
     "description": "CoW Protocol lets you swap assets MEV protected at the best exchange rate by leveraging its batch settlement layer built on top of AMMs and DEX Aggregators.",
     "explorer": "https://gnosisscan.io/token/0xc20C9C13E853fc64d054b73fF21d3636B2d97eaB",
-    "type": "ERC20",
+    "type": "XDAI",
     "symbol": "vCOW",
     "decimals": 18,
     "status": "active",
@@ -21,7 +21,7 @@
             "url": "https://github.com/cowprotocol"
         },
         {
-            "name": "source_code",
+            "name": "github",
             "url": "https://github.com/cowprotocol/token"
         },
         {
