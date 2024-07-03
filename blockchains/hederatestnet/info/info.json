@@ -1,0 +1,22 @@
+{
+    "name": "Hedera Testnet",
+    "website": "https://hedera.com",
+    "description": "Hedera Testnet is a blockchain test network for developers to test their decentralized applications on the Hedera platform.",
+    "explorer": "https://testnet.explorer.hedera.com/",
+    "symbol": "tHBAR",
+    "rpc_url": "https://testnet.rpc.hedera.com",
+    "type": "coin",
+    "decimals": 18,
+    "status": "active",
+    "tags": [
+        "testnet",
+        "dapp",
+        "scalability"
+    ],
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/hedera"
+        }
+    ]
+}

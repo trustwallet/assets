@@ -1,0 +1,22 @@
+{
+    "name": "DogeChain Testnet",
+    "website": "https://dogechain.io",
+    "description": "DogeChain Testnet is a blockchain test network for developers to test their decentralized applications on the DogeChain platform.",
+    "explorer": "https://testnet.explorer.dogechain.io/",
+    "symbol": "tDOGE",
+    "rpc_url": "https://testnet.rpc.dogechain.io",
+    "type": "coin",
+    "decimals": 18,
+    "status": "active",
+    "tags": [
+        "testnet",
+        "dapp",
+        "scalability"
+    ],
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/dogechain_io"
+        }
+    ]
+}

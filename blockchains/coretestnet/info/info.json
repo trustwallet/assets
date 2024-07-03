@@ -1,0 +1,22 @@
+{
+    "name": "Core Testnet",
+    "website": "https://core.io",
+    "description": "Core Testnet is a blockchain test network for developers to test their decentralized applications on the Core platform.",
+    "explorer": "https://testnet.explorer.core.io/",
+    "symbol": "tCORE",
+    "rpc_url": "https://testnet.rpc.core.io",
+    "type": "coin",
+    "decimals": 18,
+    "status": "active",
+    "tags": [
+        "testnet",
+        "dapp",
+        "scalability"
+    ],
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/core_io"
+        }
+    ]
+}

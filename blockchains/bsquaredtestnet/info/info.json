@@ -1,0 +1,22 @@
+{
+    "name": "B² Testnet",
+    "website": "https://bsquared.io",
+    "description": "B² Testnet is a blockchain test network for developers to test their decentralized applications on the B² platform.",
+    "explorer": "https://testnet.explorer.bsquared.io/",
+    "symbol": "tB²",
+    "rpc_url": "https://testnet.rpc.bsquared.io",
+    "type": "coin",
+    "decimals": 18,
+    "status": "active",
+    "tags": [
+        "testnet",
+        "dapp",
+        "scalability"
+    ],
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/bsquared_io"
+        }
+    ]
+}
