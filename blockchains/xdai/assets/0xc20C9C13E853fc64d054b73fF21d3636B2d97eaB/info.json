@@ -1,13 +1,16 @@
 {
-    "name": "CoW Protocol Token",
-    "type": "ERC20",
-    "symbol": "COW",
+    "name": "CoW Protocol Virtual Token",
+    "website": "https://cow.fi/",
+    "description": "CoW Protocol lets you swap assets MEV protected at the best exchange rate by leveraging its batch settlement layer built on top of AMMs and DEX Aggregators.",
+    "explorer": "https://gnosisscan.io/token/0xc20C9C13E853fc64d054b73fF21d3636B2d97eaB",
+    "type": "XDAI",
+    "symbol": "vCOW",
     "decimals": 18,
-    "website": "https://cow.fi",
-    "description": "COW token allows its holders the right to govern and curate the infrastructure of the CoW Protocol ecosystem through the CowDAO. Additionally, COW token holders receive fee discounts when trading on CowSwap & some other perks.",
-    "explorer": "https://etherscan.io/token/0xDEf1CA1fb7FBcDC777520aa7f396b4E015F497aB",
     "status": "active",
-    "id": "0xDEf1CA1fb7FBcDC777520aa7f396b4E015F497aB",
+    "id": "0xc20C9C13E853fc64d054b73fF21d3636B2d97eaB",
+    "tags": [
+        "defi"
+    ],
     "links": [
         {
             "name": "twitter",
@@ -18,7 +21,7 @@
             "url": "https://github.com/cowprotocol"
         },
         {
-            "name": "source_code",
+            "name": "github",
             "url": "https://github.com/cowprotocol/token"
         },
         {
@@ -49,8 +52,5 @@
             "name": "youtube",
             "url": "https://youtube.com/@CoWSwap"
         }
-    ],
-    "tags": [
-        "defi"
     ]
 }
