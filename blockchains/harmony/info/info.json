@@ -1,0 +1,34 @@
+{
+    "name": "Harmony",
+    "website": "https://harmony.one",
+    "description": "Harmony aims to offer a high-throughput, low-latency, and low-fee consensus platform designed to power decentralized economies of the future.",
+    "explorer": "https://explorer.harmony.one/",
+    "research": "https://research.binance.com/en/projects/harmony",
+    "rpc_url": "https://api.harmony.one",
+    "coin_type": 1023,
+    "symbol": "ONE",
+    "type": "coin",
+    "decimals": 18,
+    "status": "active",
+    "tags": [
+        "dapp"
+    ],
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/harmony-one"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/harmonyprotocol"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/harmony_one"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://harmony.one/pdf/whitepaper.pdf"
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "name": "Starknet",
+    "type": "ERC20",
+    "symbol": "STRK",
+    "decimals": 18,
+    "website": "https://starknet.io/",
+    "description": "StarkNet is a permissionless decentralized Validity-Rollup (also known as a “ZK-Rollup”). It operates as an L2 network over Ethereum, enabling any dApp to its computation – without compromising Ethereum’s composability and security, thanks to StarkNet’s cryptographic proof system – STARK.",
+    "explorer": "https://etherscan.io/token/0xCa14007Eff0dB1f8135f4C25B34De49AB0d42766",
+    "status": "active",
+    "id": "0xCa14007Eff0dB1f8135f4C25B34De49AB0d42766",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/StarkWareLtd"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/orgs/starkware-libs/repositories"
+        }
+    ]
+}

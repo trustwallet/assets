@@ -1,0 +1,28 @@
+{
+    "name": "Sommelier",
+    "type": "coin",
+    "symbol": "SOMM",
+    "decimals": 6,
+    "website": "https://www.sommelier.finance/",
+    "description": "Sommelier Finance is a Cosmos SDK-based blockchain that provides risk-managed multichain DeFi strategies.",
+    "explorer": "https://www.mintscan.io/sommelier",
+    "status": "active",
+    "rpc_url": "https://sommelier-rpc.polkachu.com/",
+    "denom": "usomm",
+    "lcd_url": "https://sommelier-api.polkachu.com/",
+    "hrp": "somm",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/PeggyJV"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://tricky-sand-5e6.notion.site/Sommelier-Documentation-006e748753e34a1299f9b1d6ae3a4544"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/sommfinance"
+        }
+    ]
+}
