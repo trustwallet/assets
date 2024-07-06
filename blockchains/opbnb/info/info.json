@@ -1,13 +1,15 @@
 {
-    "name": "opBNB Testnet",
+    "name": "opBNB",
     "website": "https://opbnb.bnbchain.org/en",
     "description": "An Optimized Layer-2 Solution That Delivers Lower Fees And Higher Throughput To Unlock The Full Potential Of The BNB Chain.",
     "explorer": "https://opbnbscan.com/",
     "type": "coin",
-    "symbol": "tBNB",
+    "symbol": "BNB",
     "decimals": 18,
     "status": "active",
-    "rpc_url": "https://opbnb-testnet-rpc.bnbchain.org/",
+    "tags": [
+        "dapp"
+    ],
     "links": [
         {
             "name": "twitter",
