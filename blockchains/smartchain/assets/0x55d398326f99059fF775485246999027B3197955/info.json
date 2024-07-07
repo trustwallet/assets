@@ -1,25 +1,32 @@
 {
-    "name": "Tether USD",
-    "website": "https://tether.to",
-    "description": "Tether gives you the joint benefits of open blockchain technology and traditional currency by converting your cash into a stable digital currency equivalent.",
-    "explorer": "https://bscscan.com/token/0x55d398326f99059fF775485246999027B3197955",
-    "research": "",
+    "name": "Tether USD ",
     "type": "BEP20",
     "symbol": "USDT",
     "decimals": 18,
+    "website": "https://mbitwallet.com/",
+    "description": "MBIT - Best Crypto wallet for you",
+    "explorer": "https://bscscan.com/token/0x55d398326f99059fF775485246999027B3197955",
     "status": "active",
     "id": "0x55d398326f99059fF775485246999027B3197955",
-    "tags": [
-        "stablecoin"
-    ],
     "links": [
         {
-            "name": "coinmarketcap",
-            "url": "https://coinmarketcap.com/currencies/tether/"
+            "name": "twitter",
+            "url": "https://twitter.com/Mbitwallet"
         },
         {
-            "name": "coingecko",
-            "url": "https://coingecko.com/en/coins/tether/"
+            "name": "telegram",
+            "url": "https://t.me/Mbitwallet_Channel"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/WhWmggk8"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/@Mbitwallet"
         }
+    ],
+    "tags": [
+        "dapp"
     ]
 }
