@@ -1,0 +1,20 @@
+{
+    "name": "Fantom Testnet",
+    "website": "https://fantom.foundation",
+    "description": "Fantom Testnet is a blockchain test network for developers to test their decentralized applications on the Fantom platform.",
+    "explorer": "https://testnet.explorer.fantom.network/",
+    "symbol": "FTM",
+    "rpc_url": "https://rpc.testnet.fantom.network",
+    "type": "coin",
+    "decimals": 18,
+    "status": "active",
+    "tags": [
+        "dapp"
+    ],
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/FantomFDN"
+        }
+    ]
+}

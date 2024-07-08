@@ -1,0 +1,20 @@
+{
+    "name": "Kava EVM Testnet",
+    "website": "https://kava.io",
+    "description": "Kava EVM Testnet is a blockchain test network for developers to test their decentralized applications on the Kava EVM platform.",
+    "explorer": "https://testnet.explorer.kava.io/",
+    "symbol": "tKAVA",
+    "rpc_url": "https://testnet.rpc.kava.io",
+    "type": "coin",
+    "decimals": 18,
+    "status": "active",
+    "tags": [
+        "dapp"
+    ],
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/kava_platform"
+        }
+    ]
+}

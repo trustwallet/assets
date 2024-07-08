@@ -1,0 +1,20 @@
+{
+    "name": "Bob Testnet",
+    "website": "https://bobtestnet.com",
+    "description": "Bob Testnet is a blockchain test network for developers to test their decentralized applications.",
+    "explorer": "https://explorer.bobtestnet.com/",
+    "symbol": "tBOB",
+    "rpc_url": "https://rpc.bobtestnet.com",
+    "type": "coin",
+    "decimals": 18,
+    "status": "active",
+    "tags": [
+        "dapp"
+    ],
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/bobtestnet"
+        }
+    ]
+}

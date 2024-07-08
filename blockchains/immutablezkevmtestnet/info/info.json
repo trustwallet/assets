@@ -1,0 +1,20 @@
+{
+    "name": "Immutable zkEVM Testnet",
+    "website": "https://immutable.com",
+    "description": "Immutable zkEVM Testnet is a blockchain test network for developers to test their decentralized applications on the Immutable zkEVM platform.",
+    "explorer": "https://testnet.explorer.immutable.com/",
+    "symbol": "tIMX",
+    "rpc_url": "https://testnet.rpc.immutable.com",
+    "type": "coin",
+    "decimals": 18,
+    "status": "active",
+    "tags": [
+        "dapp"
+    ],
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/Immutable"
+        }
+    ]
+}
