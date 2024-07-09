@@ -1,7 +1,7 @@
 {
-    "name": "Bholdus Token",
-    "website": "https://bholdus.com",
-    "description": "A blockchain dedicated to DeFi apps and NFTs with unprecedented transaction throughput and security.",
+    "name": "BHO Token",
+    "website": "https://bho.network",
+    "description": "Bring blockchain to life.",
     "explorer": "https://bscscan.com/token/0x8717e80eff08f53a45b4a925009957e14860a8a8",
     "id": "0x8717e80EfF08F53A45b4A925009957E14860A8a8",
     "type": "BEP20",
@@ -11,19 +11,20 @@
     "links": [
         {
             "name": "twitter",
-            "url": "https://twitter.com/bholdus"
-        },
-        {
-            "name": "medium",
-            "url": "https://annexfinance.medium.com/"
+            "url": "https://twitter.com/bhonetwork"
         },
         {
             "name": "telegram",
-            "url": "https://t.me/Bholdus_ENcommunity"
+            "url": "https://t.me/bhonetwork_en"
         },
         {
             "name": "github",
-            "url": "https://github.com/Bholdus"
+            "url": "https://github.com/bhonetwork"
         }
+    ],
+    "tags": [
+        "gamefi",
+        "defi",
+        "nft"
     ]
 }

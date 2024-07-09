@@ -1,0 +1,24 @@
+{
+    "name": "EthereumPoW",
+    "type": "coin",
+    "symbol": "ETHW",
+    "decimals": 18,
+    "website": "https://ethereumpow.org/",
+    "description": "The Original Ethereum Blockchain powered by Proof of Work",
+    "explorer": "https://www.oklink.com/en/ethw",
+    "status": "active",
+    "rpc_url": "https://mainnet.ethereumpow.org",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/EthereumPoW"
+        },
+        {
+            "name": "telegram_news",
+            "url": "https://t.me/ethereumpow_official"
+        }
+    ],
+    "tags": [
+        "pow"
+    ]
+}

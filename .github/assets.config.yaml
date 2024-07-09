@@ -5,10 +5,10 @@ client_urls:
   binance:
     dex: "https://dex.binance.org"
     explorer: "https://explorer.binance.org"
-  assets_manager_api: "https://api.assets.trustwallet.com"
+  assets_manager_api: "https://assets.trustwallet.com/api"
 
 urls:
-  assets_app: "https://assets.trustwalletapp.com"
+  assets_app: "https://assets-cdn.trustwallet.com"
   logo: "https://trustwallet.com/assets/images/favicon.png"
 
 time_format: "2006-01-02T15:04:05.000000"
@@ -43,11 +43,14 @@ validators_settings:
       - "bin"
     skip_files:
       - "node_modules"
+    skip_dirs:
+      - ".git"
 
   chain_folder:
     allowed_files:
       - "assets"
       - "tokenlist.json"
+      - "chainlist.json"
       - "tokenlist-extended.json"
       - "validators"
       - "info"

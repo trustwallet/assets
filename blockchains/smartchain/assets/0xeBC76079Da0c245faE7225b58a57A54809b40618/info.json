@@ -6,8 +6,12 @@
     "website": "https://www.bnbpay.io/",
     "description": "BNBPay is a decentralized scalable crypto payment tailored for merchant transactions. BNBPay incorporates the ERC-1363 protocol to enable users to pay expenses using BPAY tokens and crypto tokens where users are rewarded with BPAY tokens as they spend their crypto tokens at the same time.",
     "explorer": "https://bscscan.com/token/0xeBC76079Da0c245faE7225b58a57A54809b40618",
-    "status": "active",
+    "status": "abandoned",
     "id": "0xeBC76079Da0c245faE7225b58a57A54809b40618",
+    "migrate": {
+        "asset_id": "c20000714_t0xe580074A10360404AF3ABfe2d524D5806D993ea3",
+        "url": "https://twitter.com/bnbpay/status/1498267922992533505?s=21"
+    },
     "links": [
         {
             "name": "telegram",

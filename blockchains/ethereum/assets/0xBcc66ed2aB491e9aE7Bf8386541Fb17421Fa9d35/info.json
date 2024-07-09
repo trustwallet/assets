@@ -3,9 +3,26 @@
     "symbol": "SKULL",
     "type": "ERC20",
     "decimals": 4,
-    "description": "SKULL is the social money of the digital artist Skeenee.",
-    "website": "https://app.tryroll.com/rewards/SKULL",
+    "description": "SKULL is social money circulated by Skeenee and supported by the Roll contract. Created back in October 2019, it was one of the first social money tokens issued by Roll. Over the years, SKULL has created a passionate and loyal community of artists, collectors, and crypto enthusiasts who are interested in growing the pie and bringing new forms of value and artistic expression.",
+    "website": "https://linktr.ee/skeenee",
     "explorer": "https://etherscan.io/token/0xBcc66ed2aB491e9aE7Bf8386541Fb17421Fa9d35",
     "status": "active",
-    "id": "0xBcc66ed2aB491e9aE7Bf8386541Fb17421Fa9d35"
+    "id": "0xBcc66ed2aB491e9aE7Bf8386541Fb17421Fa9d35",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/skeenee_art"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/DZm9tY3"
+        },
+        {
+            "name": "youtube",
+            "url": "https://youtube.com/skeenee"
+        }
+    ],
+    "tags": [
+        "nft"
+    ]
 }

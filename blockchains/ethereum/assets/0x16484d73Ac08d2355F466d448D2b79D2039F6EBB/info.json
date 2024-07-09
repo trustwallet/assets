@@ -1,7 +1,7 @@
 {
-    "name": "KnoxsterCoin",
+    "name": "FortKnoxster",
     "website": "https://fortknoxster.com",
-    "description": "FortKnoxster is a cyber-security company offering secure and private communications for all.",
+    "description": "FortKnoxster's DieFi solution is an automated crypto testament and inheritance platform. DieFi users' crypto portfolio information and credentials are automatically passed on to the chosen beneficiaries in case of emergency, memory loss, or death.",
     "explorer": "https://etherscan.io/token/0x16484d73ac08d2355f466d448d2b79d2039f6ebb",
     "type": "ERC20",
     "symbol": "FKX",
@@ -27,11 +27,26 @@
         },
         {
             "name": "reddit",
-            "url": "https://reddit.com/r/FortKnoxster/"
+            "url": "https://reddit.com/r/FortKnoxster"
         },
         {
-            "name": "medium",
-            "url": "https://medium.com/fortknoxster"
+            "name": "whitepaper",
+            "url": "https://fortknoxster.com/FortKnoxster_Whitepaper_English.pdf"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/fortknoxster"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/fortknoxster"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/fortknoxster"
         }
+    ],
+    "tags": [
+        "nft"
     ]
 }
