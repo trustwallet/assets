@@ -1,0 +1,22 @@
+
+{
+  "name": "Popo Token List",
+  "timestamp": "2024-07-09T12:48:00Z",  // Updated timestamp to 12:48 PM UTC (08:48 AM EST)
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "tokens": [
+    {
+      "chainId": 8453,  // Use the correct chain ID for the Base network
+      "address": "0x7422f030958edf9884ce9c46a211029e03ef6da7",
+      "symbol": "POPO",
+      "name": "Pepes Dog",
+      "decimals": 18,
+      "logoURI": "ipfs://Qma8EKPYEi7wRAPzf8Ewq4Fx8eYtzDqJweyVTKayHqSWAG"
+    }
+  ],
+  "keywords": ["popo", "token", "cryptocurrency"],
+  "logoURI": "ipfs://Qma8EKPYEi7wRAPzf8Ewq4Fx8eYtzDqJweyVTKayHqSWAG"  // Using the same logo URI as the token
+}
