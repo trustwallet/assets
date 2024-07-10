@@ -1,25 +1,29 @@
 {
     "name": "Aion",
     "website": "https://theoan.com",
-    "source_code": "https://github.com/aionnetwork",
-    "white_paper": "https://aion.network/developers/#whitepapers",
     "description": "The Aion blockchain addresses the scalabilty problem. It has a bridging mechanism that makes inter-blockchain communication with data and value possible. The Aion blockchain also addresses the scalability problem with its virtual machine and enabling of applications to establish a multiple chain connection.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/Aion_OAN",
-            "handle": "Aion_OAN"
-        },
-        {
-            "name": "Reddit",
-            "url": "https://reddit.com/r/AionNetwork",
-            "handle": "AionNetwork"
-        }
-    ],
     "explorer": "https://mainnet.aion.network",
     "research": "https://research.binance.com/en/projects/aion",
     "symbol": "AION",
-    "type": "COIN",
+    "type": "coin",
     "decimals": 18,
-    "status": "active"
+    "status": "active",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/aionnetwork"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/Aion_OAN"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/AionNetwork"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://aion.network/developers/#whitepapers"
+        }
+    ]
 }

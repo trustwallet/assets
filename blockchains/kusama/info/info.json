@@ -1,24 +1,27 @@
 {
     "name": "Kusama",
     "website": "https://kusama.network",
-    "source_code": "https://github.com/kusamanetwork",
-    "white_paper": "",
     "description": "Kusama is described as a canary-net: It is an early, highly experimental version of Polkadot presenting real economic conditions.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/kusamanetwork",
-            "handle": "kusamanetwork"
-        },
-        {
-            "name": "Reddit",
-            "url": "https://www.reddit.com/r/Kusama",
-            "handle": "Kusama"
-        }
-    ],
     "explorer": "https://polkascan.io/pre/kusama-cc3",
     "symbol": "KSM",
-    "type": "COIN",
+    "type": "coin",
     "decimals": 12,
-    "status": "active"
+    "status": "active",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/kusamanetwork"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/kusamanetwork"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/Kusama"
+        }
+    ],
+    "tags": [
+        "staking-native"
+    ]
 }

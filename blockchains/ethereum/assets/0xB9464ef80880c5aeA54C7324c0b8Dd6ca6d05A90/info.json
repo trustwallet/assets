@@ -1,26 +1,26 @@
 {
     "name": "LOCK",
     "website": "https://sherlocksecurity.io",
-    "source_code": "https://etherscan.io/address/0xb9464ef80880c5aea54c7324c0b8dd6ca6d05a90#code",
-    "white_paper": "https://sherlocksecurity.io/SherlockWhitepaperV1.pdf",
     "description": "Sherlock is a decentralized security service offering dapp launchpad, liquidity and team token escrow, and dapp incubator.",
-    "socials": [
-        {
-            "name": "SherLOCKSecured",
-            "url": "https://twitter.com/SherLOCKSecured",
-            "handle": "ethereum"
-        },
-        {
-            "name": "Reddit",
-            "url": "https://www.reddit.com/r/ethereum",
-            "handle": "ethereum"
-        }
-    ],
     "explorer": "https://etherscan.io/token/0xB9464ef80880c5aeA54C7324c0b8Dd6ca6d05A90",
     "research": "https://etherscan.io/address/0xb9464ef80880c5aea54c7324c0b8dd6ca6d05a90",
     "type": "ERC20",
     "symbol": "LOCK",
     "decimals": 18,
     "status": "active",
-    "id": "0xB9464ef80880c5aeA54C7324c0b8Dd6ca6d05A90"
+    "id": "0xB9464ef80880c5aeA54C7324c0b8Dd6ca6d05A90",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/ethereum"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/ethereum"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://sherlocksecurity.io/SherlockWhitepaperV1.pdf"
+        }
+    ]
 }

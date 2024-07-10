@@ -3,11 +3,16 @@
     "website": "https://charizardtoken.com/",
     "twitter": "https://twitter.com/CharizardToken",
     "description": "The Charizard Token is a deflationary cryptocurrency, a 5% tax is applied to each transaction made using CHZ006.",
-    "white_paper": "https://charizardtoken.com/whitepaper.pdf",
     "explorer": "https://bscscan.com/token/0x706954491ebfd6b38e5b1e6f079dbefae0f5eba0",
     "type": "BEP20",
     "symbol": "CHZ006",
     "decimals": 8,
     "status": "active",
-    "id": "0x706954491EBFD6b38e5B1e6F079dBEfae0F5EBa0"
+    "id": "0x706954491EBFD6b38e5B1e6F079dBEfae0F5EBa0",
+    "links": [
+        {
+            "name": "whitepaper",
+            "url": "https://charizardtoken.com/whitepaper.pdf"
+        }
+    ]
 }

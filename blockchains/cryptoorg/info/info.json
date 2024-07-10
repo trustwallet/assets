@@ -1,27 +1,31 @@
 {
     "name": "Crypto.org",
     "website": "https://crypto.org/",
-    "source_code": "https://github.com/crypto-org-chain",
-    "white_paper": "https://crypto.org/chain_whitepaper.pdf",
     "description": "Crypto.org Chain is a blockchain application built using Cosmos SDK and Tendermint, intended as a backbone for some of the existing and future Crypto.org ecosystem.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/cryptocom",
-            "handle": "cryptocom"
-        },
-        {
-            "name": "Reddit",
-            "url": "https://www.reddit.com/r/Crypto_com/",
-            "handle": "Crypto_com"
-        }
-    ],
     "explorer": "https://crypto.org/explorer",
     "symbol": "CRO",
-    "type": "COIN",
+    "type": "coin",
     "decimals": 8,
     "status": "active",
     "tags": [
         "staking-native"
+    ],
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/crypto-org-chain"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/cryptocom"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/Crypto_com/"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://crypto.org/chain_whitepaper.pdf"
+        }
     ]
 }

@@ -1,25 +1,32 @@
 {
     "name": "Solana",
     "website": "https://solana.com/",
-    "source_code": "https://github.com/solana-labs",
-    "white_paper": "https://github.com/solana-labs/whitepaper",
     "description": "Solana is the worlds most performant blockchain in the world at 710k transactions per second. 710k TPS is achieved by encoding the passage of time as data.",
-    "socials": [
-        {
-            "name": "Twitter",
-            "url": "https://twitter.com/solana",
-            "handle": "solana"
-        },
-        {
-            "name": "Reddit",
-            "url": "https://www.reddit.com/r/solana",
-            "handle": "solana"
-        }
-    ],
     "explorer": "https://explorer.solana.com/",
     "research": "https://research.binance.com/en/projects/solana",
     "symbol": "SOL",
-    "type": "COIN",
+    "type": "coin",
     "decimals": 9,
-    "status": "active"
+    "status": "active",
+    "tags": [
+        "staking-native"
+    ],
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/solana-labs"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/solana"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/solana"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://github.com/solana-labs/whitepaper"
+        }
+    ]
 }
