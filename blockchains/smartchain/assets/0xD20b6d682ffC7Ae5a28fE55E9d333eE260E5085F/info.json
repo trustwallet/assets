@@ -1,17 +1,13 @@
 {
-     "name": "TEDDY BEAR - TBC",
-    "website": "https://tbcland.com/",
-    "description": "Teddy Bear (TBC) is a cryptocurrency designed for online gambling and gaming, integrating blockchain technology for secure and seamless transactions.",
-    "explorer": "https://bscscan.com/address/0xD20b6d682ffC7Ae5a28fE55E9d333eE260E5085F",
-    "research": "https://research.binance.com/en/projects/binance-usd",
+    "name": "TEDDY BREAR -TBC",
     "type": "BEP20",
     "symbol": "TBC",
     "decimals": 18,
+    "website": "https://tbcland.com/",
+    "description": "The unique utility proposition of Teddy- Bear Coin ($TBC) within the Teddy Bear ecosystem sets it apart from traditional meme coins that often lack tangible use cases. As the designated utility token, $TBC grants holders exclusive access to minting exclusive NFTs, which serve as indispensable assets within the play-to- earn game. ",
+    "explorer": "https://bscscan.com/token/0xD20b6d682ffC7Ae5a28fE55E9d333eE260E5085F",
     "status": "active",
     "id": "0xD20b6d682ffC7Ae5a28fE55E9d333eE260E5085F",
-    "tags": [
-        "staking-native"
-    ],
     "links": [
         {
             "name": "twitter",
@@ -20,14 +16,9 @@
         {
             "name": "telegram",
             "url": "https://t.me/TeddyBearCoins"
-        },
-        {
-            "name": "youtube",
-            "url": "https://youtube.com/@teddybearcoins?si=FM8fweZO7JEL0KH2"
-        },
-        {
-            "name": "whitepaper",
-            "url": "https://tbcland.com/wp-content/uploads/2022/07/Teddy-Bear-Coin-TBC-Whitepaper-1.pdf"
         }
+    ],
+    "tags": [
+        "staking-native"
     ]
 }
