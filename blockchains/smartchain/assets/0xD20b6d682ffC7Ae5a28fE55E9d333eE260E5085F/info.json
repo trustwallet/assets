@@ -1,21 +1,16 @@
 {
-    "name": "TEDDY BEAR - TBC",
+     "name": "TEDDY BEAR - TBC",
     "website": "https://tbcland.com/",
-    "description": "Teddy Bear Coin (TBC) is a cryptocurrency designed for online gambling and gaming, integrating blockchain technology for secure and seamless transactions.",
+    "description": "Teddy Bear (TBC) is a cryptocurrency designed for online gambling and gaming, integrating blockchain technology for secure and seamless transactions.",
     "explorer": "https://bscscan.com/address/0xd20b6d682ffc7ae5a28fe55e9d333ee260e5085f",
-    "research": "https://research.binance.com/en/projects/bnb",
+    "research": "https://research.binance.com/en/projects/binance-usd",
+    "type": "BEP20",
     "symbol": "TBC",
-    "type": "token",
     "decimals": 18,
     "status": "active",
-    "tags": [
-        "staking-native"
-    ],
+    "id": "0xD20b6d682ffC7Ae5a28fE55E9d333eE260E5085F",
+    
     "links": [
-        {
-            "name": "youtube",
-            "url": "https://youtube.com/@teddybearcoins?si=FM8fweZO7JEL0KH2"
-        },
         {
             "name": "twitter",
             "url": "https://twitter.com/TeddyBearCoins"
@@ -23,6 +18,10 @@
         {
             "name": "telegram",
             "url": "https://t.me/TeddyBearCoins"
+        },
+        {
+            "name": "youtube",
+            "url": "https://youtube.com/@teddybearcoins?si=FM8fweZO7JEL0KH2"
         },
         {
             "name": "whitepaper",
