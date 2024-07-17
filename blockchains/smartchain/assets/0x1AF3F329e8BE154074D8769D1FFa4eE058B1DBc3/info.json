@@ -1,7 +1,7 @@
 {
-    "name": "Dai Token",
+    "name": "BNB pegged Dai Token",
     "website": "http://makerdao.com",
-    "description": "Dai is a stable cryptocurrency supported by Maker (MKR).",
+    "description": "BNB pegged Dai Token (DAI BEP20) is a token issued by Binance on Smart Chain; its price is pegged to DAI (DAI ERC20) at a ratio of 1:1.",
     "explorer": "https://bscscan.com/token/0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3",
     "research": "https://research.binance.com/en/projects/dai",
     "type": "BEP20",
@@ -9,6 +9,11 @@
     "decimals": 18,
     "status": "active",
     "id": "0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3",
+    "tags": [
+        "binance-peg",
+        "stablecoin",
+        "defi"
+    ],
     "links": [
         {
             "name": "blog",

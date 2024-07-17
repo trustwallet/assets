@@ -1,11 +1,11 @@
 {
-    "name": "LTO Network Token",
+    "name": "LTO Network",
     "symbol": "LTO",
     "type": "ERC20",
     "decimals": 8,
-    "description": "LTO Network is a blockchain platform for creating decentralized workflow applications, while maintaining data privacy and GDPR compliance.",
-    "website": "https://lto.network/",
+    "description": "Old ERC20 Smart Contract for LTO Network, please swap to v2. LTO Network is a layer-1 platform for decentralized identities, verifiable credentials and decentralized workflow applications, while maintaining data privacy and GDPR compliance.",
+    "website": "https://www.ltonetwork.com/",
     "explorer": "https://etherscan.io/token/0x3DB6Ba6ab6F95efed1a6E794caD492fAAabF294D",
-    "status": "active",
+    "status": "abandoned",
     "id": "0x3DB6Ba6ab6F95efed1a6E794caD492fAAabF294D"
 }

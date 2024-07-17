@@ -1,11 +1,25 @@
 {
-    "name": "Clover Finance",
+    "name": "CLV",
+    "website": "https://clv.org/",
+    "description": "Clover is the native token of CLV M-Chain, and is used for staking to take part in network consensus, transaction fees, platform rewards, and network governance.",
+    "explorer": "https://etherscan.io/token/0x80C62FE4487E1351b47Ba49809EBD60ED085bf52",
     "symbol": "CLV",
     "type": "ERC20",
     "decimals": 18,
-    "description": "Clover Finance is an infrastructure platform focused on cross-chain compatibility.",
-    "website": "https://clover.finance",
-    "explorer": "https://etherscan.io/token/0x80c62fe4487e1351b47ba49809ebd60ed085bf52",
     "status": "active",
-    "id": "0x80C62FE4487E1351b47Ba49809EBD60ED085bf52"
+    "id": "0x80C62FE4487E1351b47Ba49809EBD60ED085bf52",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/clover-network"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/clv_org"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/@clv_org"
+        }
+    ]
 }

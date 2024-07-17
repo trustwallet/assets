@@ -1,7 +1,7 @@
 {
-    "name": "Binance-Peg BUSD",
+    "name": "BNB pegged BUSD",
     "website": "https://paxos.com/busd",
-    "description": "BUSD is a stablecoin issued by Paxos in partnership with Binance.",
+    "description": "BNB pegged BUSD (BUSD BEP20) is a token issued by Binance on Smart Chain; its price is pegged to BUSD (BUSD ERC20) at a ratio of 1:1.",
     "explorer": "https://bscscan.com/token/0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56",
     "research": "https://research.binance.com/en/projects/binance-usd",
     "type": "BEP20",
@@ -9,6 +9,9 @@
     "decimals": 18,
     "status": "active",
     "id": "0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56",
+    "tags": [
+        "binance-peg"
+    ],
     "links": [
         {
             "name": "github",
