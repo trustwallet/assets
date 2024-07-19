@@ -1,16 +1,13 @@
 {
     "name": "AviaCoin",
-    "website": "https://aviacoinus7.com/",
-    "description": "A blockchain with a full-fledged environment for developing high-performance decentralized applications and cross-chain compatibility with Binance Chain.",
-    "explorer": "https://bscscan.com/token/0xbc548d1c9661753635a3d77d433a288f4851affd",
-    "research": "https://tokpie.com/dashboard/make_request/us7-usdt/",
+    "type": "BEP20",
     "symbol": "US7",
-    "type": "coin",
     "decimals": 3,
+    "website": "https://aviacoinus7.com/",
+    "description": "US7 is developing hydrogen-electric engines for aviation in order to create a truly zero-emission aviation by 2025.",
+    "explorer": "https://bscscan.com/token/0xbc548d1c9661753635a3d77d433a288f4851affd",
     "status": "active",
-    "tags": [
-        "staking-native"
-    ],
+    "id": "0xbc548d1c9661753635a3d77d433a288f4851affd",
     "links": [
         {
             "name": "github",
@@ -28,5 +25,8 @@
             "name": "whitepaper",
             "url": "https://aviacoinus7.com/wp-content/uploads/2024/01/US7.pdf"
         }
+    ],
+    "tags": [
+        "airtechno"
     ]
 }
