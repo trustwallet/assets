@@ -1,24 +1,24 @@
 {
-    "name": "European Medical Exchange",
-    "website": "https://www.mobydicom.com",
+    "name": "European medical exchange (MED)",
+    "type": "ERC20",
+    "symbol": "MED",
+    "decimals": 18,
+    "website": "https://mobydicom.com/",
     "description": "MED is an ERC20 token that allows healthcare institutions, patients and insurers to access direct payment for services. The MED token of the European Medical Exchange will be freely shared between the healthcare institution and the one traded on crypto exchanges.",
     "explorer": "https://etherscan.io/token/0x025B555d25F387d9e1A7EbEa7c0c9655431e2F42",
-    "research": "https://www.mobydicom.com/med.html",
-    "symbol": "MED",
-    "type": "ERC20",
-    "decimals": 18,
     "status": "active",
-    "tags": [
-        "MED"
-    ],
+    "id": "0x025B555d25F387d9e1A7EbEa7c0c9655431e2F42",
     "links": [
         {
-            "name": "linkedin",
-            "url": "https://www.linkedin.com/in/alexander-belousov-3aab3883/"
+            "name": "discord",
+            "url": "https://discord.com/invite/sascha_50163"
         },
         {
             "name": "whitepaper",
             "url": "https://www.mobydicom.com/WhitePaperMED.pdf"
         }
+    ],
+    "tags": [
+        "defi"
     ]
 }
