@@ -1,0 +1,12 @@
+cat <<EOL > blockchains/smartchain/assets/0x500e63135fc1899e6342815c8ada406c0775a820/info.json
+{
+  "name": "LPS Token",
+  "symbol": "LPS",
+  "decimals": 18,
+  "description": "Luxury Property Solutions, LLC. Token",
+  "website": "https://LPSLAMA.com",
+  "explorer": "https://bscscan.com/token/0x500e63135fc1899e6342815c8ada406c0775a820",
+  "status": "active",
+  "id": "0x500e63135fc1899e6342815c8ada406c0775a820"
+}
+EOL
