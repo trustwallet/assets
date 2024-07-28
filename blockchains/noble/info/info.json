@@ -1,0 +1,24 @@
+{
+    "name": "Noble",
+    "type": "coin",
+    "symbol": "USDC",
+    "decimals": 6,
+    "website": "https://nobleassets.xyz/",
+    "description": "Noble is a Cosmos chain bringing native asset issuance to the IBC ecosystem.",
+    "explorer": "https://www.mintscan.io/noble",
+    "status": "active",
+    "rpc_url": "https://noble-rpc.polkachu.com/",
+    "denom": "ustake",
+    "lcd_url": "https://noble-api.polkachu.com/",
+    "hrp": "noble",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/strangelove-ventures/noble"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/noble_xyz"
+        }
+    ]
+}
