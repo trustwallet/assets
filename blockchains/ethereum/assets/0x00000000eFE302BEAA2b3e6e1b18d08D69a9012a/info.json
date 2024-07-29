@@ -1,0 +1,24 @@
+{
+    "name": "AUSD",
+    "type": "ERC20",
+    "symbol": "AUSD",
+    "decimals": 6,
+    "website": "https://agora.finance",
+    "description": "AUSD is a digital dollar minted 1:1 with USD fiat. AUSD may be used, kept, or exchanged online wherever parties are willing to accept AUSD. AUSD is 100% backed by Agora’s Reserves, which means traditional currency and cash equivalents, such as short-term US Treasury securities.",
+    "explorer": "https://etherscan.io/token/0x00000000eFE302BEAA2b3e6e1b18d08D69a9012a",
+    "status": "active",
+    "id": "0x00000000eFE302BEAA2b3e6e1b18d08D69a9012a",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://x.com/withAUSD"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/agora-dollar"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}
