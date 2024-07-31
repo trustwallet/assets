@@ -1,0 +1,32 @@
+{
+    "name": "Wrapped USDT (Raydium)",
+    "type": "SPL",
+    "symbol": "WUSDT",
+    "decimals": 9,
+    "website": "https://raydium.io/",
+    "description": "Wrapped USDT (Raydium)",
+    "explorer": "https://solscan.io/token/USDWaA8frMgZwpbvBTZNR24Q7omqVqS3mJNtrxtjSFg",
+    "status": "active",
+    "id": "USDWaA8frMgZwpbvBTZNR24Q7omqVqS3mJNtrxtjSFg",
+    "links": [
+        {
+            "name": "blog",
+            "url": "https://www.dextools.io/app/en/solana/pair-explorer/BwgaPNs4i68WAsPg2LpqrkzpoB3N2XewX8qzmhHZKGca?t=1722419124741"
+        },
+        {
+            "name": "twitter",
+            "url": "https://x.com/RaydiumProtocol"
+        },
+        {
+            "name": "source_code",
+            "url": "https://github.com/solana-labs/solana-program-library/tree/master/token/program-2022"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/solana-labs/solana-program-library/tree/master/token/program-2022"
+        }
+    ],
+    "tags": [
+        "wrapped"
+    ]
+}
