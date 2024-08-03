@@ -4,21 +4,17 @@
     "description": "Infrastructure layer for powering transparent, trustless auctions in web 3.0",
     "explorer": "https://basescan.org/address/0x4707eb16c91fccb10cc9ac56fa51e73d78001a3a",
     "symbol": "AuX",
-    "type": "coin",
+    "type": "BASE",
     "decimals": 18,
     "status": "active",
+    "id": "0x4707eb16c91fccb10cc9ac56fa51e73d78001a3a",
+    "tags": [
+        "defi"
+    ],
     "links": [
-        {
-            "name": "gitbook",
-            "url": "https://auctionx.gitbook.io/"
-        },
         {
             "name": "twitter",
             "url": "https://x.com/auctionx_live"
-        },
-        {
-            "name": "linkedin",
-            "url": "https://www.linkedin.com/company/auctionx"
         },
         {
             "name": "discord",
