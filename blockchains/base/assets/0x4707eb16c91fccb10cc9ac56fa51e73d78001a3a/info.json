@@ -2,7 +2,7 @@
     "name": "AuctionX",
     "website": "https://auctionx.live",
     "description": "Infrastructure layer for powering transparent, trustless auctions in web 3.0",
-    "explorer": "https://basescan.org/address/0x4707eb16c91fccb10cc9ac56fa51e73d78001a3a",
+    "explorer": "https://basescan.org/token/0x4707eb16c91fccb10cc9ac56fa51e73d78001a3a",
     "symbol": "AuX",
     "type": "BASE",
     "decimals": 18,
@@ -18,7 +18,7 @@
         },
         {
             "name": "discord",
-            "url": "https://discord.gg/NHMQMWHp"
+            "url": "https://discord.com/invite/NHMQMWHp"
         },
         {
             "name": "telegram",
@@ -27,6 +27,10 @@
         {
             "name": "medium",
             "url": "https://medium.com/@auctionx"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://auctionx.gitbook.io/auctionx"
         }
     ]
 }
