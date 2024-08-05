@@ -1,7 +1,7 @@
 {
     "name": "Deda coin",
     "website": "https://dedacoin.co/",
-    "description": "What is the Deda Ecosystem? The Deda ecosystem is designed to provide a seamless and secure platform for users to interact with digital assets. The initial launch product, DedaBit, is a secure exchange where users can swap their fiat currencies for leading cryptocurrencies. What is DedaCoin native token $DEDA ? DedaCoin ($DEDA) is the primary digital currency powering the Deda ecosystem, designed for seamless digital transactions and governance. Built on innovative liquidity measures and supported by hedging investments, DedaCoin serves as a utility token for staking, voting, and incentivization within the ecosystem. Its interoperability across multiple blockchain networks is facilitated by DedaBridge, ensuring efficient and secure token transfers. DedaCoin is poised to revolutionize digital asset interactions and transactions globally. DedaCoin mission Deda’s mission is to make cryptocurrency transactions as straightforward and accessible as possible, encouraging widespread adoption and use. Team The technical core of DEDACoin is the beating pulse of this platform and is considered a central element in the continuous development of technologies. The combination of knowledge and expertise has made this team an irreplaceable source of innovation. Consisting of selected members, with acceptable academic records from prestigious universities, including winners of world olympiads in computer science and mathematics, our technical team also includes people with a brilliant and experienced work history in blockchain projects and partnerships with prominent digital exchanges. This geographical diversity, including experts from various places such as: America, Canada, the Middle East region, India and Germany, contains the convergence of different cultures and perspectives, which is the basis for growth and development.",
+    "description": "DedaCoin ($DEDA) is the primary digital currency powering the Deda ecosystem, designed for seamless digital transactions and governance",
     "explorer": "https://bscscan.com/token/0x15F9EB4b9BEaFa9Db35341c5694c0b6573809808",
     "symbol": "Deda",
     "type": "BEP20",
@@ -14,15 +14,11 @@
             "url": "https://github.com/dedaland/dedacoin_contract"
         },
         {
-            "name": "whitepaper",
-            "url": "https://dedacoin.co/white-paper/"
-        },
-        {
             "name": "instagram",
             "url": "https://instagram.com/dedacoin"
         },
         {
-            "name": "X(twitter)",
+            "name": "twitter",
             "url": "https://x.com/dedacoin_co"
         },
         {
@@ -40,10 +36,9 @@
         {
             "name": "discord",
             "url": "https://discord.gg/Unaewhrg3V"
-        },
-        {
-            "name": "linktr",
-            "url": "https://linktr.ee/dedacoin"
         }
+    ],
+    "tags": [
+        "defi"
     ]
 }
