@@ -3,51 +3,6 @@
     "logoURI": "https://trustwallet.com/assets/images/favicon.png",
     "timestamp": "2022-01-30T13:48:32.500787",
     "tokens": [
-        {
-            "asset": "c10042221_t0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
-            "type": "ARBITRUM",
-            "address": "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
-            "name": "Wrapped Ether",
-            "symbol": "WETH",
-            "decimals": 18,
-            "logoURI": "https://assets.trustwalletapp.com/blockchains/arbitrum/assets/0x82af49447d8a07e3bd95bd0d56f35241523fbab1/logo.png"
-        },
-        {
-            "asset": "c10042221_t0xfc5A1A6EB076a2C7aD06eD22C90d7E710E35ad0a",
-            "type": "ARBITRUM",
-            "address": "0xfc5A1A6EB076a2C7aD06eD22C90d7E710E35ad0a",
-            "name": "GMX",
-            "symbol": "GMX",
-            "decimals": 18,
-            "logoURI": "https://assets.trustwalletapp.com/blockchains/arbitrum/assets/0xfc5a1a6eb076a2c7ad06ed22c90d7e710e35ad0a/logo.png"
-        },
-        {
-            "asset": "c10042221_t0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8",
-            "type": "ARBITRUM",
-            "address": "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8",
-            "name": "USD Coin (Arb1)",
-            "symbol": "USDC",
-            "decimals": 18,
-            "logoURI": "https://assets.trustwalletapp.com/blockchains/arbitrum/assets/0xff970a61a04b1ca14834a43f5de4533ebddb5cc8/logo.png"
-        },
-        {
-            "asset": "c10042221_t0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9",
-            "type": "ARBITRUM",
-            "address": "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9",
-            "name": "Tether USD",
-            "symbol": "USDT",
-            "decimals": 6,
-            "logoURI": "https://assets.trustwalletapp.com/blockchains/arbitrum/assets/0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9/logo.png"
-        },
-        {
-            "asset": "c10042221_t0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
-            "type": "ARBITRUM",
-            "address": "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
-            "name": "Dai Stablecoin",
-            "symbol": "DAI",
-            "decimals": 18,
-            "logoURI": "https://assets.trustwalletapp.com/blockchains/arbitrum/assets/0xda10009cbd5d07dd0cecc66161fc93d7c9000da1/logo.png"
-        }
     ],
     "version": {
         "major": 6,

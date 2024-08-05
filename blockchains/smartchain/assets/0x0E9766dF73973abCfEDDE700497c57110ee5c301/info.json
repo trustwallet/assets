@@ -3,8 +3,8 @@
     "type": "BEP20",
     "symbol": "HODL",
     "decimals": 9,
-    "website": "https://www.HODLtoken.net",
-    "description": "Passive Income Made Easy.",
+    "website": "https://www.hodltoken.net",
+    "description": "HODL Token is the longest-serving, highest-paying reward token on the Binance Smart Chain (BSC). Simply hold $HODL and get BNB rewards and reflection within a deflationary ecosystem. HODL is - Passive Income Made Easy.",
     "explorer": "https://bscscan.com/token/0x0E9766dF73973abCfEDDE700497c57110ee5c301",
     "status": "active",
     "id": "0x0E9766dF73973abCfEDDE700497c57110ee5c301",
@@ -38,16 +38,38 @@
             "url": "https://coinmarketcap.com/currencies/hodl/"
         },
         {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/hodl"
+        },
+        {
             "name": "telegram_news",
             "url": "https://t.me/HodlAnnouncements"
+        },
+        {
+            "name": "blog",
+            "url": "https://hodltoken.net/news/"
         },
         {
             "name": "whitepaper",
             "url": "https://hodltoken.net/whitepaper/"
         },
         {
+            "name": "medium",
+            "url": "https://medium.com/@HODL-token"
+        },
+        {
+            "name": "source_code",
+            "url": "https://bscscan.com/address/0xb656129b6a3e2ca66f2788e4071aca5cb9f83f81#code"
+        },
+        {
             "name": "github",
-            "url": "https://github.com/hodl-token/HODL"
+            "url": "https://github.com/HODL-org/contract"
         }
+    ],
+    "tags": [
+        "defi",
+        "staking",
+        "deflationary",
+        "memes"
     ]
 }
