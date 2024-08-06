@@ -1,28 +1,33 @@
 {
-    "name": "NELO Metaverse",
-    "website": "https://nelo.world",
-    "description": "NELO Metaverse = NFT Mining + Gamefi + SocialFi on BSC",
-    "explorer": "https://bscscan.com/token/0xE38950f71E2D2Fc4cA9dC9C3625d82560b0A5d8F",
-    "type": "BEP20",
-    "symbol": "NELO",
     "decimals": 9,
-    "status": "active",
+    "description": "NELO is a protocol and infrastructure that is leveraging the Proof-of-Stake consensus algorithm to help developers deploy their games and Metaverse projects.",
+    "explorer": "https://bscscan.com/token/0xE38950f71E2D2Fc4cA9dC9C3625d82560b0A5d8F",
     "id": "0xE38950f71E2D2Fc4cA9dC9C3625d82560b0A5d8F",
-    "tags": [
-        "deflationary"
-    ],
     "links": [
         {
-            "name": "telegram",
-            "url": "https://t.me/NeloMetaverseOfficial"
-        },
-        {
-            "name": "coinmarketcap",
-            "url": "https://coinmarketcap.com/ru/currencies/nelo-metaverse/"
-        },
-        {
             "name": "twitter",
-            "url": "https://twitter.com/NeloMetaverse"
+            "url": "https://twitter.com/NELOnetwork"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/NELOnetwork"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/NELOnetwork"
+        },
+        {
+            "name": "facebook",
+            "url": "https://facebook.com/NELOnetwork/"
         }
-    ]
-} 
+    ],
+    "name": "NELO",
+    "status": "active",
+    "symbol": "NELO",
+    "tags": [
+        "nft",
+        "defi"
+    ],
+    "type": "BEP20",
+    "website": "https://nelo.network/"
+}
