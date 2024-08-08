@@ -1,8 +1,17 @@
 {
-  "name": "GlobalGrid",
+  "name": "Global Grid",
   "symbol": "GGD",
   "decimals": 18,
-  "description": "GlobalGrid (GGD) is a utility token that supports the GPARK platform. It provides access to an interactive map, allowing users to search for and interact with digital objects worldwide. GlobalGrid combines technology and nature, creating a network for exchange, collection, and gamification.",
-  "website": "https://nftpark.io/",
-  "logoURI": "https://raw.githubusercontent.com/GPARKPRO/assets/main/blockchains/ethereum/assets/0x6964e7674d935a87c2aa87e41eef64313dffa592/logo.png"
+  "description": "GPARK Token is used for transactions and governance within the GPARK ecosystem.",
+  "website": "https://nftpark.io",
+  "explorer": "https://etherscan.io/token/0x6964e7674d935a87c2aa87e41eef64313dffa592",
+  "status": "active",
+  "id": "0x6964e7674d935a87c2aa87e41eef64313dffa592",
+  "type": "ERC20",
+  "logoURI": "https://github.com/GPARKPRO/assets/blob/add-token-logo/blockchains/ethereum/assets/0x6964e7674d935a87c2aa87e41eef64313dffa592/logo.png",
+  "links": {
+    "twitter": "https://x.com/nftpark_io",
+    "telegram": "https://t.me/ggdpro"
+  },
+  "tags": ["defi", "governance"]
 }
