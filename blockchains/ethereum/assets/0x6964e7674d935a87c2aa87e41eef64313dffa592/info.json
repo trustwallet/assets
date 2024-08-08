@@ -1,5 +1,5 @@
 {
-  "name": "Global Grid",
+  "name": "GPARK Token",
   "symbol": "GGD",
   "decimals": 18,
   "description": "GPARK Token is used for transactions and governance within the GPARK ecosystem.",
@@ -9,9 +9,9 @@
   "id": "0x6964e7674d935a87c2aa87e41eef64313dffa592",
   "type": "ERC20",
   "logoURI": "https://github.com/GPARKPRO/assets/blob/add-token-logo/blockchains/ethereum/assets/0x6964e7674d935a87c2aa87e41eef64313dffa592/logo.png",
-  "links": {
-    "twitter": "https://x.com/nftpark_io",
-    "telegram": "https://t.me/ggdpro"
-  },
+  "links": [
+    {"name": "twitter", "url": "https://x.com/nftpark_io"},
+    {"name": "telegram", "url": "https://t.me/ggdpro"}
+  ],
   "tags": ["defi", "governance"]
 }
