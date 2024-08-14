@@ -1,0 +1,28 @@
+{
+    "name": "Quidax Token",
+    "type": "BEP20",
+    "symbol": "QDX",
+    "decimals": 18,
+    "website": "https://www.quidax.com",
+    "description": "Quidax token, QDX, is the native token of the Quidax ecosystem.",
+    "explorer": "https://bscscan.com/token/0x08BC237aA00F275b758542c9F5c125b568bc390A",
+    "status": "active",
+    "id": "0x08BC237aA00F275b758542c9F5c125b568bc390A",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://x.com/QuidaxGlobal"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/quidax/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/quidax"
+        }
+    ],
+    "tags": [
+        "staking-native"
+    ]
+}
