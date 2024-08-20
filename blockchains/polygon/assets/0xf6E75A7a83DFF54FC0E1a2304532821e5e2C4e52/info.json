@@ -1,17 +1,24 @@
 {
-  "name": "Sex Coin",
-  "symbol": "SEX",
-  "description": "Sex Coin is a token on the Polygon network.",
-  "website": "https://www.sexcoin.fun/",
-  "twitter": "https://x.com/SexCoin2023",
-  "github": "https://github.com/Sex-Coin",
-  "explorer": "https://polygonscan.com/token/0xf6E75A7a83DFF54FC0E1a2304532821e5e2C4e52",
-  "type": "ERC20",
-  "decimals": 10,
-  "status": "active",
-  "id": "0xf6E75A7a83DFF54FC0E1a2304532821e5e2C4e52",
-  "tags": ["defi"],
-  "holders_count": 131
+  "Files OK": 2,
+  "Token in PR": {
+    "network": "POLYGON",
+    "contract_address": "0xf6E75A7a83DFF54FC0E1a2304532821e5e2C4e52",
+    "symbol": "SEX",
+    "decimals": 10,
+    "links": {
+      "logo": "https://ibb.co/n0fKjQf",
+      "info": "https://polygonscan.com/token/0xf6E75A7a83DFF54FC0E1a2304532821e5e2C4e52",
+      "website": "https://www.sexcoin.fun/",
+      "explorer": "https://polygonscan.com/token/0xf6E75A7a83DFF54FC0E1a2304532821e5e2C4e52"
+    },
+    "tags": ["defi"]
+  },
+  "Token check errors": {
+    "explorer_field_incorrect": "The explorer field should use the Polygonscan URL as the token is on the Polygon network.",
+    "links_required": "At least 2 links are present: Website and Twitter.",
+    "holders_not_checked": "The number of holders has been manually verified and is 131."
+  }
 }
+
 
 
