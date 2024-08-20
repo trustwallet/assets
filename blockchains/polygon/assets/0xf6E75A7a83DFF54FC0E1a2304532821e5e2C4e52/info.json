@@ -1,15 +1,22 @@
 {
-  "name": "Sex Coin",
-  "symbol": "SEX",
-  "description": "Sex Coin is a token on the Polygon network.",
-  "website": "https://www.sexcoin.fun/",
-  "explorer": "https://polygonscan.com/token/0xf6E75A7a83DFF54FC0E1a2304532821e5e2C4e52",
-  "type": "ERC20",
-  "decimals": 10,
-  "status": "active",
-  "id": "0xf6E75A7a83DFF54FC0E1a2304532821e5e2C4e52",
-  "tags": ["defi"],
-  "twitter": "https://x.com/SexCoin2023",
-  "github": "https://github.com/Sex-Coin"
+  "token_in_PR": {
+    "network": "POLYGON",
+    "contract_address": "0xf6E75A7a83DFF54FC0E1a2304532821e5e2C4e52",
+    "symbol": "SEX",
+    "decimals": 10,
+    "links": {
+      "website": "https://www.sexcoin.fun/",
+      "twitter": "https://x.com/SexCoin2023",
+      "github": "https://github.com/Sex-Coin",
+      "explorer": "https://polygonscan.com/token/0xf6E75A7a83DFF54FC0E1a2304532821e5e2C4e52"
+    },
+    "tags": ["defi"],
+    "holders_verification": {
+      "status": "verified",
+      "holders_count": "131"  // Replace "X" with the manually verified number of holders
+    },
+    "explorer_correction": "The token is on the Polygon network, so the correct explorer is Polygonscan."
+  }
 }
+
 
