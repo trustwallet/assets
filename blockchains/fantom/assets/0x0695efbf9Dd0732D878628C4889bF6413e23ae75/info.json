@@ -1,0 +1,37 @@
+{
+    "name": "Bitcoin X",
+    "website": "https://wbtc.network/",
+    "description": "Wrapped Bitcoin is a tokenized version of Bitcoin (BTC) that runs on the Ethereum (ETH) blockchain. WBTC is compliant with ERC-20 — the basic compatibility standard of the Ethereum blockchain — allowing it to be fully integrated into the latter’s ecosystem of decentralized exchanges, crypto lending services, prediction markets and other ERC-20-enabled decentralized finance (DeFi) applications.",
+    "explorer": "https://ftmscan.com/token/0x0695efbf9Dd0732D878628C4889bF6413e23ae75",
+    "type": "FANTOM",
+    "symbol": "BTCx",
+    "decimals": 8,
+    "status": "active",
+    "id": "0x0695efbf9Dd0732D878628C4889bF6413e23ae75",
+    "tags": [
+        "erc20",
+        "wrapped-token"
+    ],
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/WrappedBTC/bitcoin-token-smart-contracts"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/WrappedBTC"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://www.wbtc.network/assets/wrapped-tokens-whitepaper.pdf"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/wrapped-bitcoin/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://www.coingecko.com/en/coins/wrapped-bitcoin"
+        }
+    ]
+}
