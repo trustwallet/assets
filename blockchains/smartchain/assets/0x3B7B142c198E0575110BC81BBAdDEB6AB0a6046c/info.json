@@ -1,16 +1,14 @@
 {
     "name": "Invisibleeggs",
-    "website": "https://www.bnbchain.world/en/smartChain",
-    "description": "InvisibleEggs is an innovative NFT project based in Dubai, blending digital art with blockchain technology. It offers unique, collectible NFTs and features the native utility token, BLEGGS, to build a vibrant, community-driven ecosystem.",
-    "explorer": "https://bscscan.com/",
-    "research": "",
+    "website": "https://bleggs.com",
+    "description": "InvisibleEggs combines the digital and physical worlds by offering an innovative ecosystem where users mine BLEGGS tokens on Telegram and use them to purchase NFTs that grant access to an exclusive real-world community in Dubai. The project focuses on creating a hybrid community experience, integrating digital mining with tangible benefits, including exclusive NFT ownership and membership in a Dubai-based club.",
+    "explorer": "https://bscscan.com/token/0x3B7B142c198E0575110BC81BBAdDEB6AB0a6046c",
+    "type": "BEP20",
     "symbol": "BLEGGS",
     "type": "token",
     "decimals": 18,
     "status": "active",
-    "tags": [
-        "staking-native"
-    ],
+    "id": "0x3B7B142c198E0575110BC81BBAdDEB6AB0a6046c",
     "links": [
         {
             "name": "x",
@@ -28,5 +26,9 @@
             "name": "Website",
             "url": "https://bleggs.com"
         }
+ {
+            "name": "whitepaper",
+            "url": "https://ecosystem.bleggs.com/"
+        },
     ]
 }
