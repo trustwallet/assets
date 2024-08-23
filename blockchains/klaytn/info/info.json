@@ -7,8 +7,11 @@
     "symbol": "KLAY",
     "type": "coin",
     "decimals": 18,
-    "rpc_url": "https://klaytn04.fandom.finance",
+    "rpc_url": "https://public-node-api.klaytnapi.com/v1/cypress",
     "status": "active",
+    "tags": [
+        "dapp"
+    ],
     "links": [
         {
             "name": "twitter",
