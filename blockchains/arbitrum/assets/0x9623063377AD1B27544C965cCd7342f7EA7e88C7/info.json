@@ -1,0 +1,37 @@
+{
+    "name": "The Graph",
+    "website": "https://thegraph.com",
+    "description": "The Graph is an indexing protocol and global API for organizing blockchain data and making it easily accessible with GraphQL. Developers can use Graph Explorer to search, find, and publish all the public data they need to build decentralized applications. The Graph Network makes it possible to build serverless dApps that run entirely on public infrastructure.",
+    "explorer": "https://arbiscan.io/token/0x9623063377ad1b27544c965ccd7342f7ea7e88c7",
+    "research": "https://github.com/graphprotocol/research",
+    "type": "ARBITRUM",
+    "symbol": "GRT",
+    "decimals": 18,
+    "status": "active",
+    "id": "0x9623063377AD1B27544C965cCd7342f7EA7e88C7",
+    "tags": [
+        "defi"
+    ],
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/graphprotocol/graph-node"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/graphprotocol"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/thegraph"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/graphprotocol"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/the-graph/"
+        }
+    ]
+}

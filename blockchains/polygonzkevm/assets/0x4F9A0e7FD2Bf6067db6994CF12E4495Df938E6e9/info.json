@@ -1,0 +1,32 @@
+{
+    "name": "Wrapped Ether",
+    "type": "ZKEVM",
+    "symbol": "WETH",
+    "decimals": 18,
+    "website": "https://ethereum.org/en/",
+    "description": "wETH is 'wrapped ETH'",
+    "explorer": "https://explorer.public.zkevm-test.net/address/0x4F9A0e7FD2Bf6067db6994CF12E4495Df938E6e9",
+    "status": "active",
+    "id": "0x4F9A0e7FD2Bf6067db6994CF12E4495Df938E6e9",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/ethdotorg"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/ethereum/ethereum-org-website"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/CetY6Y4"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/weth/"
+        }
+    ],
+    "tags": [
+        "wrapped"
+    ]
+}
