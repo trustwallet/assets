@@ -1,15 +1,21 @@
 {
-    "address": "EQBynBO23ywHy_CgarY9NK9FTz0yDsG82PtcbSTQgGoXwiuA",
-    "name": "jUSDT",
-    "type": "TON",
+    "name": "TON Bridged USDT",
+    "website": "https://bridge.ton.org/",
+    "description": "Tether USD transferred from Ethereum via bridge.ton.org.",
+    "explorer": "https://tonscan.org/ru/jetton/EQBynBO23ywHy_CgarY9NK9FTz0yDsG82PtcbSTQgGoXwiuA",
+    "type": "JETTON",
     "symbol": "jUSDT",
     "decimals": 6,
-    "description": "USDT transferred from Ethereum via bridge.ton.org. Token address in Ethereum: 0xdAC17F958D2ee523a2206206994597C13D831ec7",
     "status": "active",
-    "explorer": "https://tonscan.org/address/EQBynBO23ywHy_CgarY9NK9FTz0yDsG82PtcbSTQgGoXwiuA",
     "id": "EQBynBO23ywHy_CgarY9NK9FTz0yDsG82PtcbSTQgGoXwiuA",
-    "website": "https://bridge.ton.org/",
-    "tags": [
-        "wrapped"
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/tether_to"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/ru/currencies/ton-bridged-usdt/"
+        }
     ]
 }
