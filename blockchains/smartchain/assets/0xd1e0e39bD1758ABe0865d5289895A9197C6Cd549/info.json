@@ -1,13 +1,13 @@
 {
     "name": "UAHg",
-    "type": "TRC20",
+    "type": "BEP20",
     "symbol": "UAHg",
     "decimals": 6,
     "website": "https://uahg.io/en",
     "description": "A digital asset denominated in hryvnia and backed by a basket of top stablecoins.",
-    "explorer": "https://tronscan.io/#/token20/TK4zHRAU1WrRPivksia3BMs2JvSLT63opb",
+    "explorer": "https://bscscan.com/token/0xd1e0e39bd1758abe0865d5289895a9197c6cd549",
     "status": "active",
-    "id": "TK4zHRAU1WrRPivksia3BMs2JvSLT63opb",
+    "id": "0xd1e0e39bD1758ABe0865d5289895A9197C6Cd549",
     "links": [
         {
             "name": "twitter",
@@ -29,4 +29,4 @@
     "tags": [
         "stablecoin"
     ]
-}
+    }
