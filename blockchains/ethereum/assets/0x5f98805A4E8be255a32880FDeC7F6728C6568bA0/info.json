@@ -1,5 +1,5 @@
 {
-    "name": "LUSD Token",
+    "name": "Liquity USD",
     "website": "https://www.liquity.org",
     "description": "Liquity is a decentralized borrowing protocol that allows you to draw 0% interest loans against Ether used as collateral.",
     "explorer": "https://etherscan.io/token/0x5f98805A4E8be255a32880FDeC7F6728C6568bA0",
@@ -8,5 +8,9 @@
     "symbol": "LUSD",
     "decimals": 18,
     "status": "active",
-    "id": "0x5f98805A4E8be255a32880FDeC7F6728C6568bA0"
+    "id": "0x5f98805A4E8be255a32880FDeC7F6728C6568bA0",
+    "tags": [
+        "defi",
+        "stablecoin"
+    ]
 }
