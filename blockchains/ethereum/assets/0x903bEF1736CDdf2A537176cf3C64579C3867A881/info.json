@@ -1,11 +1,32 @@
 {
-    "name": "ICHI",
-    "website": "https://ichi.farm",
-    "description": "ICHI is the ichi.farm governance token that enables (1) proposal submission, (2) voting, and (3) governance of ichi.farm's living agreement. The living agreement is between major cryptocurrencies to drive mass adoption of crypto through purchasing power protection, attractive passive income, and superior incentives.",
+    "name": "Legacy ICHI",
+    "website": "app.ichi.org",
+    "description": "Legacy ICHI is a token deprecated by the ICHI DAO, you can swap it 1-1 for ICHI at app.ichi.org.",
     "explorer": "https://etherscan.io/token/0x903bEF1736CDdf2A537176cf3C64579C3867A881",
     "type": "ERC20",
     "symbol": "ICHI",
     "decimals": 9,
     "status": "active",
-    "id": "0x903bEF1736CDdf2A537176cf3C64579C3867A881"
+    "id": "0x903bEF1736CDdf2A537176cf3C64579C3867A881",
+    "tags": [
+        "defi"
+    ],
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/ichifarm"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/ichifoundation"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/ichifarm"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/ichifarm"
+        }
+    ]
 }
