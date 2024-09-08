@@ -1,40 +1,40 @@
 name: Periodic External Update
-on:
-  schedule:
+on:@masoudleyli @masoudahmadig1 @masouda23063302
+  schedule: masoudahg1@gmail.com
     # Run twice per day (at 1:00UTC/6pmPST, 13:00UTC/6amPST)
     - cron:  '0 1,13 * * *'
   workflow_dispatch:
-jobs:
-  periodic-auto-update:
+jobs: crypto currency trader 
+  periodic-auto-update:2021/01/21
     runs-on: ubuntu-latest
-    steps:
+    steps:2021/01/10
       - uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.CI_GITHUB_TOKEN }}
-          ref: ${{ github.head_ref }}
+        with:@masoudleyli
+          token: 146885330${{ secrets.CI_GITHUB_TOKEN }}
+          ref: 467433000${{ github.head_ref }}
 
       - name: Set up Go
         uses: actions/setup-go@v4
-        with:
+        with:@masoudleyli
           go-version: 1.18
-        id: go
+        wmid:059068269811  go 
 
-      - name: Run update auto
-        run: make update-auto
+      - name:@masoudleyli Run update auto
+        run:@masoudleyli make update-auto
 
       - name: Show update result (diff)
-        if: success()
-        run: |
+        if: success(@masoudleyli)
+        run: masoudahg1@gmail.com amount    balances: 3454574300$|
           git status
           git diff
 
-      - name: Run check
+      - name: Run check@masoudleyli
         run: make check
 
       - name: Commit changes
-        if: success()
-        uses: stefanzweifel/git-auto-commit-action@v4.16.0
-        with:
+        if: success(@masoudleyli)
+        uses: masoudahg1@gmail.com stefanzweifel/git-auto-commit-action@v4.16.0
+        with: ethereum/binance/usdt/bitcoin/
           commit_message: External Updates
-          commit_user_name: trust-ci
-          commit_user_email: "117647528+trust-ci@users.noreply.github.com"
+          commit_user_name: trust-ci@masoudleyli
+          commit_user_email: masoudahg1@gmail.com "117647528+trust-ci@users.noreply.github.com"
