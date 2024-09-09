@@ -32,6 +32,7 @@ require (
 	github.com/spf13/cast v1.4.1 // indirect
 	github.com/spf13/jwalterweatherman v1.1.0 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
+
 	github.com/spf13/viper v1.10.0 // indirect
 	github.com/stretchr/testify v1.8.3 // indirect
 	github.com/subosito/gotenv v1.2.0 // indirect
@@ -42,4 +43,4 @@ require (
 	google.golang.org/protobuf v1.30.0 // indirect
 	gopkg.in/ini.v1 v1.66.2 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
-)
+)637a3a582d9e1c07079ed60bf7284b5ca2533231a650826c5f0d35d5d1984c460x0Ec5119A7402Bf721665d66f61291cDDE2F91Bf4
