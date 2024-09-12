@@ -20,9 +20,6 @@
                     "base": "c60_t0x0000000000095413afC295d19EDeb1Ad7B71c952"
                 },
                 {
-                    "base": "c60_t0x00a8b738E453fFd858a7edf03bcCfe20412f0Eb0"
-                },
-                {
                     "base": "c60_t0x00c83aeCC790e8a4453e5dD3B0B4b3680501a7A7"
                 },
                 {
@@ -138,9 +135,6 @@
                 },
                 {
                     "base": "c60_t0x3845badAde8e6dFF049820680d1F14bD3903a5d0"
-                },
-                {
-                    "base": "c60_t0x389999216860AB8E0175387A0c90E5c52522C945"
                 },
                 {
                     "base": "c60_t0x38e4adB44ef08F22F5B5b76A8f0c2d0dCbE7DcA1"
@@ -276,9 +270,6 @@
                 },
                 {
                     "base": "c60_t0x8a854288a5976036A725879164Ca3e91d30c6A1B"
-                },
-                {
-                    "base": "c60_t0x8B3192f5eEBD8579568A2Ed41E6FEB402f93f73F"
                 },
                 {
                     "base": "c60_t0x8CE9137d39326AD0cD6491fb5CC0CbA0e089b6A9"
@@ -504,6 +495,15 @@
                 },
                 {
                     "base": "c60_t0xf4d2888d29D722226FafA5d9B24F9164c092421E"
+                },
+                {
+                    "base": "c60_t0x70e8dE73cE538DA2bEEd35d14187F6959a8ecA96"
+                },
+                {
+                    "base": "c60_t0xB0c7a3Ba49C7a6EaBa6cD4a96C55a1391070Ac9A"
+                },
+                {
+                    "base": "c60_t0xCEBA2a8F6Ec221AEB5f3a7bcd15Cbc7e6a387bfb"
                 }
             ]
         },
@@ -526,16 +526,6 @@
             "symbol": "LON",
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0x0000000000095413afC295d19EDeb1Ad7B71c952/logo.png",
-            "pairs": []
-        },
-        {
-            "asset": "c60_t0x00a8b738E453fFd858a7edf03bcCfe20412f0Eb0",
-            "type": "ERC20",
-            "address": "0x00a8b738E453fFd858a7edf03bcCfe20412f0Eb0",
-            "name": "AllianceBlock",
-            "symbol": "ALBT",
-            "decimals": 18,
-            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0x00a8b738E453fFd858a7edf03bcCfe20412f0Eb0/logo.png",
             "pairs": []
         },
         {
@@ -1140,16 +1130,6 @@
             "pairs": []
         },
         {
-            "asset": "c60_t0x3155BA85D5F96b2d030a4966AF206230e46849cb",
-            "type": "ERC20",
-            "address": "0x3155BA85D5F96b2d030a4966AF206230e46849cb",
-            "name": "THORChain ETH.RUNE",
-            "symbol": "RUNE",
-            "decimals": 18,
-            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0x3155BA85D5F96b2d030a4966AF206230e46849cb/logo.png",
-            "pairs": []
-        },
-        {
             "asset": "c60_t0x3301Ee63Fb29F863f2333Bd4466acb46CD8323E6",
             "type": "ERC20",
             "address": "0x3301Ee63Fb29F863f2333Bd4466acb46CD8323E6",
@@ -1183,7 +1163,7 @@
             "asset": "c60_t0x3593D125a4f7849a1B059E64F4517A86Dd60c95d",
             "type": "ERC20",
             "address": "0x3593D125a4f7849a1B059E64F4517A86Dd60c95d",
-            "name": "MANTRA DAO",
+            "name": "MANTRA",
             "symbol": "OM",
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0x3593D125a4f7849a1B059E64F4517A86Dd60c95d/logo.png",
@@ -1207,16 +1187,6 @@
             "symbol": "SAND",
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0x3845badAde8e6dFF049820680d1F14bD3903a5d0/logo.png",
-            "pairs": []
-        },
-        {
-            "asset": "c60_t0x389999216860AB8E0175387A0c90E5c52522C945",
-            "type": "ERC20",
-            "address": "0x389999216860AB8E0175387A0c90E5c52522C945",
-            "name": "FEG Token",
-            "symbol": "FEGeth",
-            "decimals": 9,
-            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0x389999216860AB8E0175387A0c90E5c52522C945/logo.png",
             "pairs": []
         },
         {
@@ -1666,16 +1636,6 @@
             "pairs": []
         },
         {
-            "asset": "c60_t0x69A95185ee2a045CDC4bCd1b1Df10710395e4e23",
-            "type": "ERC20",
-            "address": "0x69A95185ee2a045CDC4bCd1b1Df10710395e4e23",
-            "name": "Poolz Finance",
-            "symbol": "POOLZ",
-            "decimals": 18,
-            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0x69A95185ee2a045CDC4bCd1b1Df10710395e4e23/logo.png",
-            "pairs": []
-        },
-        {
             "asset": "c60_t0x69af81e73A73B40adF4f3d4223Cd9b1ECE623074",
             "type": "ERC20",
             "address": "0x69af81e73A73B40adF4f3d4223Cd9b1ECE623074",
@@ -2052,16 +2012,6 @@
             "pairs": []
         },
         {
-            "asset": "c60_t0x8B3192f5eEBD8579568A2Ed41E6FEB402f93f73F",
-            "type": "ERC20",
-            "address": "0x8B3192f5eEBD8579568A2Ed41E6FEB402f93f73F",
-            "name": "Saitama Inu",
-            "symbol": "SAITAMA",
-            "decimals": 9,
-            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0x8B3192f5eEBD8579568A2Ed41E6FEB402f93f73F/logo.png",
-            "pairs": []
-        },
-        {
             "asset": "c60_t0x8B39B70E39Aa811b69365398e0aACe9bee238AEb",
             "type": "ERC20",
             "address": "0x8B39B70E39Aa811b69365398e0aACe9bee238AEb",
@@ -2103,13 +2053,13 @@
             "pairs": []
         },
         {
-            "asset": "c60_t0x8eB24319393716668D768dCEC29356ae9CfFe285",
+            "asset": "c60_t0x5B7533812759B45C2B44C19e320ba2cD2681b542",
             "type": "ERC20",
-            "address": "0x8eB24319393716668D768dCEC29356ae9CfFe285",
+            "address": "0x5B7533812759B45C2B44C19e320ba2cD2681b542",
             "name": "SingularityNET Token",
-            "symbol": "AGI",
+            "symbol": "AGIX",
             "decimals": 8,
-            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0x8eB24319393716668D768dCEC29356ae9CfFe285/logo.png",
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0x5B7533812759B45C2B44C19e320ba2cD2681b542/logo.png",
             "pairs": []
         },
         {
@@ -2190,16 +2140,6 @@
             "symbol": "SHIB",
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0x95aD61b0a150d79219dCF64E1E6Cc01f0B64C4cE/logo.png",
-            "pairs": []
-        },
-        {
-            "asset": "c60_t0x961C8c0B1aaD0c0b10a51FeF6a867E3091BCef17",
-            "type": "ERC20",
-            "address": "0x961C8c0B1aaD0c0b10a51FeF6a867E3091BCef17",
-            "name": "DeFi Yield Protocol",
-            "symbol": "DYP",
-            "decimals": 18,
-            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0x961C8c0B1aaD0c0b10a51FeF6a867E3091BCef17/logo.png",
             "pairs": []
         },
         {
@@ -2547,13 +2487,13 @@
             "pairs": []
         },
         {
-            "asset": "c60_t0xB4d930279552397bbA2ee473229f89Ec245bc365",
+            "asset": "c60_t0x745407c86DF8DB893011912d3aB28e68B62E49B0",
             "type": "ERC20",
-            "address": "0xB4d930279552397bbA2ee473229f89Ec245bc365",
+            "address": "0x745407c86DF8DB893011912d3aB28e68B62E49B0",
             "name": "MahaDAO",
             "symbol": "MAHA",
             "decimals": 18,
-            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0xB4d930279552397bbA2ee473229f89Ec245bc365/logo.png",
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0x745407c86DF8DB893011912d3aB28e68B62E49B0/logo.png",
             "pairs": []
         },
         {
@@ -2679,16 +2619,6 @@
             "pairs": []
         },
         {
-            "asset": "c60_t0xbE9375C6a420D2eEB258962efB95551A5b722803",
-            "type": "ERC20",
-            "address": "0xbE9375C6a420D2eEB258962efB95551A5b722803",
-            "name": "StormX",
-            "symbol": "STMX",
-            "decimals": 18,
-            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0xbE9375C6a420D2eEB258962efB95551A5b722803/logo.png",
-            "pairs": []
-        },
-        {
             "asset": "c60_t0xbEa98c05eEAe2f3bC8c3565Db7551Eb738c8CCAb",
             "type": "ERC20",
             "address": "0xbEa98c05eEAe2f3bC8c3565Db7551Eb738c8CCAb",
@@ -2764,7 +2694,7 @@
             "asset": "c60_t0xC52C326331E9Ce41F04484d3B5E5648158028804",
             "type": "ERC20",
             "address": "0xC52C326331E9Ce41F04484d3B5E5648158028804",
-            "name": "ZEN Exchange Token",
+            "name": "Unizen",
             "symbol": "ZCX",
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0xC52C326331E9Ce41F04484d3B5E5648158028804/logo.png",
@@ -3058,7 +2988,7 @@
             "asset": "c60_t0xe53EC727dbDEB9E2d5456c3be40cFF031AB40A55",
             "type": "ERC20",
             "address": "0xe53EC727dbDEB9E2d5456c3be40cFF031AB40A55",
-            "name": "SuperFarm",
+            "name": "SuperVerse",
             "symbol": "SUPER",
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0xe53EC727dbDEB9E2d5456c3be40cFF031AB40A55/logo.png",
@@ -3386,13 +3316,13 @@
             "pairs": []
         },
         {
-            "asset": "c60_t0x15D4c048F83bd7e37d49eA4C83a07267Ec4203dA",
+            "asset": "c60_t0xd1d2Eb1B1e90B638588728b4130137D262C87cae",
             "type": "ERC20",
-            "address": "0x15D4c048F83bd7e37d49eA4C83a07267Ec4203dA",
+            "address": "0xd1d2Eb1B1e90B638588728b4130137D262C87cae",
             "name": "Gala",
             "symbol": "GALA",
             "decimals": 8,
-            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0x15D4c048F83bd7e37d49eA4C83a07267Ec4203dA/logo.png",
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0xd1d2Eb1B1e90B638588728b4130137D262C87cae/logo.png",
             "pairs": []
         },
         {
@@ -3493,6 +3423,36 @@
             "symbol": "STG",
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0xAf5191B0De278C7286d6C7CC6ab6BB8A73bA2Cd6/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c60_t0x70e8dE73cE538DA2bEEd35d14187F6959a8ecA96",
+            "type": "ERC20",
+            "address": "0x70e8dE73cE538DA2bEEd35d14187F6959a8ecA96",
+            "name": "XSGD",
+            "symbol": "XSGD",
+            "decimals": 6,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0x70e8dE73cE538DA2bEEd35d14187F6959a8ecA96/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c60_t0xB0c7a3Ba49C7a6EaBa6cD4a96C55a1391070Ac9A",
+            "type": "ERC20",
+            "address": "0xB0c7a3Ba49C7a6EaBa6cD4a96C55a1391070Ac9A",
+            "name": "MAGIC",
+            "symbol": "MAGIC",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0xB0c7a3Ba49C7a6EaBa6cD4a96C55a1391070Ac9A/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c60_t0xCEBA2a8F6Ec221AEB5f3a7bcd15Cbc7e6a387bfb",
+            "type": "ERC20",
+            "address": "0xCEBA2a8F6Ec221AEB5f3a7bcd15Cbc7e6a387bfb",
+            "name": "Peter Pan",
+            "symbol": "PAN",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0xCEBA2a8F6Ec221AEB5f3a7bcd15Cbc7e6a387bfb/logo.png",
             "pairs": []
         }
     ],
