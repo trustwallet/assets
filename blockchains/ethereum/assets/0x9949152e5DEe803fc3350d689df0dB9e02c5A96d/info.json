@@ -4,7 +4,13 @@
   "decimals": 6,
   "description": "A stablecoin pegged to the US dollar.",
   "website": "https://tether.to/",
-  "explorer": "https://etherscan.io/token/0xdAC17F958D2ee523a2206206994597C13D831ec7",
+  "explorer": "https://etherscan.io/token/0x9949152e5DEe803fc3350d689df0dB9e02c5A96d",
   "status": "active",
-  "id": "usdt"
+  "id": "usdt",
+  "type": "ERC20",
+  "links": {
+    "twitter": "https://twitter.com/tether_to",
+    "telegram": "https://t.me/tether"
+  },
+  "tags": ["stablecoin", "usd"]
 }
