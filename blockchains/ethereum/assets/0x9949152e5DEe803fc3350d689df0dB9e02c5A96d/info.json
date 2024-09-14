@@ -1,0 +1,10 @@
+{
+  "name": "Tether USD",            // Token's name
+  "symbol": "USDT",                // Token's symbol (e.g., USDT)
+  "decimals": 6,                   // Number of decimals (USDT has 6)
+  "description": "A stablecoin pegged to the US dollar.",
+  "website": "https://tether.to/",  // Official website
+  "explorer": "https://etherscan.io/token/0xdAC17F958D2ee523a2206206994597C13D831ec7",  // Link to blockchain explorer (like Etherscan)
+  "status": "active",              // Token status (e.g., "active")
+  "id": "usdt"                     // Token's ID used internally or for categorization
+}
