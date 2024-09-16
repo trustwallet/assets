@@ -1,0 +1,36 @@
+{
+    "name": "Virtual USD",
+    "type": "ERC20",
+    "symbol": "VUSD",
+    "decimals": 6,
+    "description": "Virtual USD (VUSD) is a U.S. dollar based stablecoin backed by onchain and 24/7 verifiable reserves.",
+    "website": "https://vusd.com",
+    "explorer": "https://etherscan.io/address/0x0BFFDD787C83235f6F0afa0Faed42061a4619B7a",
+    "id": "0x0BFFDD787C83235f6F0afa0Faed42061a4619B7a",
+    "status": "active",
+    "links": [
+        {
+            "name": "whitepaper",
+            "url": "https://vusd.com/whitepaper.pdf"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/vusd"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/virtual-usd/"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/vusd"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/Virtual-USD"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}
