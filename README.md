@@ -1,1 +1,1 @@
-binamce
+binance
