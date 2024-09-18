@@ -1,0 +1,28 @@
+{
+    "name": "Classic USDC",
+    "type": "BEP20",
+    "symbol": "USDC",
+    "decimals": 18,
+    "website": "https://classicusdc.com/",
+    "description": "Classic USDC is a public, decentralized blockchain and smart contract platform that enables message passing and value transfer between any blockchain.",
+    "explorer": "https://bscscan.com/token/0x7db54758503c25200b331131c219acd64cfa74c8",
+    "status": "active",
+    "id": "0x7DB54758503c25200B331131C219acD64CFa74c8",
+    "links": [
+
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/classic-usdc/"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/classicusdc"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/usdcnew"
+    ]
+    "tags": [
+        "stablecoin"
+    ]
+}
