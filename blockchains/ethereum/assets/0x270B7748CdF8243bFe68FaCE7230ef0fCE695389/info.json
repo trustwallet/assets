@@ -1,0 +1,32 @@
+{
+    "name": "Hinkal ETH",
+    "type": "ERC20",
+    "symbol": "hETH",
+    "decimals": 18,
+    "website": "https://hinkal.pro/",
+    "description": "Liquid Privacy Token representing staked ETH on Hinkal, accrues yield generated from private transactions, instantly redeemable.",
+    "explorer": "https://etherscan.io/token/0x270B7748CdF8243bFe68FaCE7230ef0fCE695389",
+    "status": "active",
+    "id": "0x270B7748CdF8243bFe68FaCE7230ef0fCE695389",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://x.com/hinkal_protocol"
+        },
+        {
+            "name": "blog",
+            "url": "https://blog.hinkal.pro/"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/hinkalofficial"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://hinkal-team.gitbook.io/hinkal"
+        }
+    ],
+    "tags": [
+        "wrapped"
+    ]
+}
