@@ -1,0 +1,41 @@
+https://polygonscan.com/token/0x0c54916876e7a9e64399845B4b239659a560BB3b
+- **Initial Supply**: 1,000,000 MFT
+- **Decimals**: 6
+- **Symbol**: MFT
+- **Price**: Real-time price based on Oracle data, initially set to 1 MFT = 1 USD.
+
+
+## **Flash Token Whitepaper**
+
+### **Introduction**
+Flash Token (MFT) is a next-generation token designed to facilitate fast, secure, and decentralized flash loans. Built on the Ethereum blockchain as an ERC20 token, it allows users to execute flash loans without the need for collateral, provided the loan is repaid within the same transaction. MFT is powered by real-time pricing through an integrated Oracle, ensuring transparent and fair value for all transactions.
+
+### **Key Features**
+- **ERC20 Standard**: MFT is fully compliant with the ERC20 standard, making it compatible with most wallets and decentralized applications (dApps).
+- **6 Decimal Places**: To enable micro-transactions, MFT has 6 decimals, ensuring flexibility in pricing and transactions.
+- **Oracle Integration**: Real-time pricing of MFT is ensured via a decentralized Oracle, providing up-to-date price data for all flash loan operations.
+- **Flash Loans**: MFT allows for instant, collateral-free flash loans that must be repaid within the same transaction. A 1% fee is charged on each loan.
+- **Security**: MFT’s flash loan system is secured by the Ethereum blockchain, leveraging the decentralization and security features of Ethereum.
+
+### **How Flash Loans Work**
+Flash loans are unique as they allow users to borrow assets without collateral, as long as the loan is repaid within the same transaction. This allows users to leverage arbitrage opportunities, refinance debt, or perform other complex operations that require immediate liquidity without risk.
+
+1. **Initiate Loan**: Users can request a flash loan by calling the `flashLoan()` function.
+2. **Execute Arbitrage or Other Operation**: During the transaction, users can execute any operation such as arbitrage.
+3. **Repay Loan**: The loan, along with a 1% fee, must be repaid before the transaction is completed. If not, the entire transaction is reverted.
+
+### **Tokenomics**
+- **Initial Supply**: 1,000,000 MFT
+- **Decimals**: 6
+- **Symbol**: MFT
+- **Price**: Real-time price based on Oracle data, initially set to 1 MFT = 1 USD.
+
+
+### **Conclusion
+Flash Token (MFT) is an innovative step in decentralized finance, leveraging the power of flash loans and real-time pricing through an oracle. With its focus on fast and secure loans, MFT is set to empower users with greater flexibility and opportunities in the DeFi space.
+         
+
+Laleh_nour@yahoo.com
+https://linktr.ee/laleh42024
+
+
