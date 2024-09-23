@@ -1,8 +1,8 @@
 {
-    "name": "USD Coin (Arb1)",
+    "name": "Bridged USDC",
     "type": "ARBITRUM",
-    "symbol": "USDC",
-    "decimals": 18,
+    "symbol": "USDC.e",
+    "decimals": 6,
     "website": "https://www.centre.io/usdc",
     "description": "USDC is a fully collateralized US Dollar stablecoin developed by CENTRE, the open source project with Circle being the first of several forthcoming issuers.",
     "explorer": "https://arbiscan.io/token/0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",

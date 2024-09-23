@@ -4,9 +4,30 @@
     "description": "DIA (Decentralised Information Asset) claims to provide financial institutions with an immutable and verified single source of financial market data for any market and asset type.",
     "explorer": "https://etherscan.io/token/0x84ca8bc7997272c7cfb4d0cd3d55cd942b3c9419",
     "research": "https://research.binance.com/en/projects/dia",
-    "type": "ERC20",
     "symbol": "DIA",
+    "type": "ERC20",
     "decimals": 18,
     "status": "active",
+    "tags": [
+        "defi"
+    ],
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/DIAdata_org"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/diadata-org"
+        },
+        {
+            "name": "blog",
+            "url": "https://medium.com/dia-insights"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/DIAdata_org"
+        }
+    ],
     "id": "0x84cA8bc7997272c7CfB4D0Cd3D55cd942B3c9419"
 }
