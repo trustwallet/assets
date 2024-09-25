@@ -1,5 +1,5 @@
 {
-    "name": "ZRX",
+    "name": "0x",
     "website": "https://0x.org",
     "description": "0x (ZRX) is an open-source protocol that provides smart contract infrastructure and liquidity to enable the peer-to-peer exchange of tokens on the Ethereum blockchain.",
     "explorer": "https://etherscan.io/token/0xE41d2489571d322189246DaFA5ebDe1F4699F498",
@@ -9,6 +9,10 @@
     "decimals": 18,
     "status": "active",
     "id": "0xE41d2489571d322189246DaFA5ebDe1F4699F498",
+    "tags": [
+        "defi",
+        "governance"
+    ],
     "links": [
         {
             "name": "github",
