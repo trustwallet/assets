@@ -1,0 +1,32 @@
+{
+    "name": "Sakai-Peg USD",
+    "type": "BEP20",
+    "symbol": "sUSD",
+    "decimals": 18,
+    "website": "https://sakaivault.io",
+    "description": "Sakai-Peg USD (sUSD) is a token concept launched from the community consent of Sakai DAO proposal ID#6. Sakai-Peg USD is the stablecoin of the Sakai Vault ecosystem. It is designed for use within the liquid farming system, with a 1 sUSD = 1 USD peg.",
+    "explorer": "https://bscscan.com/token/0x5E4FAF13A3D66E741F1e9B8743B8d26F6AFe9CE7",
+    "status": "active",
+    "id": "0x5E4FAF13A3D66E741F1e9B8743B8d26F6AFe9CE7",
+    "links": [
+        {
+            "name": "twitter",
+            "url": " https://twitter.com/SakaiVault"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/SakaiVault"
+        },
+        {
+            "name": "telegram",
+            "url": " https://t.me/SakaiVault"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://docs.sakaivault.io/features/liquidity-farming-protocol/farming-pair-susd-paxe"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}
