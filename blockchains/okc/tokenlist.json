@@ -1,0 +1,43 @@
+ {
+    "name": "Trust Wallet: OKC List",
+    "logoURI": "https://trustwallet.com/assets/images/favicon.png",
+    "timestamp": "2022-07-27T00:00:00.000Z",
+    "tokens": [
+        {
+            "asset": "c996_t0x8F8526dbfd6E38E3D8307702cA8469Bae6C56C15",
+            "type": "KIP20",
+            "address":"0x8F8526dbfd6E38E3D8307702cA8469Bae6C56C15",
+            "name": "Wrapped OKT",
+            "symbol": "WOKT",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/okc/assets/0x8F8526dbfd6E38E3D8307702cA8469Bae6C56C15/logo.png"
+        },
+        {
+            "asset": "c996_t0xdF54B6c6195EA4d948D03bfD818D365cf175cFC2",
+            "type": "KIP20",
+            "address": "0xdF54B6c6195EA4d948D03bfD818D365cf175cFC2",
+            "name": "OKB Token",
+            "symbol": "OKB",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/okc/assets/0xdF54B6c6195EA4d948D03bfD818D365cf175cFC2/logo.png"
+        },
+        {
+            "asset": "c996_t0x382bB369d343125BfB2117af9c149795C6C65C50",
+            "type": "KIP20",
+            "address": "0x382bB369d343125BfB2117af9c149795C6C65C50",
+            "name": "Tether USD",
+            "symbol": "USDT",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/okc/assets/0x382bB369d343125BfB2117af9c149795C6C65C50/logo.png"
+        },
+        {
+            "asset": "c996_t0xc946DAf81b08146B1C7A8Da2A851Ddf2B3EAaf85",
+            "type": "KIP20",
+            "address": "0xc946DAf81b08146B1C7A8Da2A851Ddf2B3EAaf85",
+            "name": "USD Coin",
+            "symbol": "USDC",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/okc/assets/0xc946DAf81b08146B1C7A8Da2A851Ddf2B3EAaf85/logo.png"
+        }
+    ]
+ }

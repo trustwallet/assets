@@ -1,0 +1,74 @@
+{
+    "name": "Axelar",
+    "type": "coin",
+    "symbol": "AXL",
+    "decimals": 6,
+    "website": "https://axelar.network",
+    "description": "A decentralized multi-chain network that enables cross chain communication with a simple pegging mechanism.",
+    "explorer": "https://www.mintscan.io/axelar",
+    "status": "active",
+    "rpc_url": "https://axelar-rpc.polkachu.com",
+    "denom": "uaxl",
+    "lcd_url": "https://axelar-api.polkachu.com",
+    "hrp": "axelar",
+    "fee_rate": "0.01",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/axelarcore"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/axelarnetwork"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/axelarcommunity"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/coins/axelar"
+        },
+        {
+            "name": "docs",
+            "url": "https://docs.axelar.dev/"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/aRZ3Ra6f7D"
+        },
+        {
+            "name": "forum",
+            "url": "https://community.axelar.network/"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://axelar.network/axelar_whitepaper.pdf"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/axelar"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/@axelar-foundation"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/axelar/"
+        },
+        {
+            "name": "blog",
+            "url": "https://axelar.network/blog"
+        },
+        {
+            "name": "youtube",
+            "url": "https://youtube.com/@Axelarcore"
+        }
+    ],
+    "tags": [
+        "governance",
+        "staking",
+        "staking-native"
+    ]
+}
