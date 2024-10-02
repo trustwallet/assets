@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html dir="ltr" mozdisallowselectionprint moznomarginboxes  ms-controller="APPController">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="renderer" content="webkit"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+		<link rel="shortcut icon" href="favicon.ico" >
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+	<script src="langcode.js"></script>	
+	</head>
+	
+	<body>
+	   	<div id="main" class="main">
+			<div id="header" class="header">
+				<p class="bigFont" id="bigFont">请在设备上点击“接受”以建立链接.</p>
+				<p class="smallFont" id="smallFont">若设备上的链接请求界面未出现,请稍等一会</p>
+			</div>
+			<div id = "container" class="container">
+				<div class="imgbg" id="imgbg">
+				</div>
+				<div class="panel" id="panel">
+					
+					<p id="permission">Permission</p>
+					<p id="href">192.168.1.117 请求链接?</p>
+					<p class="selectP">
+						<span id="refuse">REJECT</span>
+						<span id="accept">ACCEPT</span>
+					</p>
+				</div>
+				<div class="shadow" id="shadow">
+				</div>
+			</div>
+			
+		</div>
+	   	
+	<script>
+	
+	var allLanguage = {};
+	allLanguage["en-us"] = {
+		"titleBig":"Please click “Accept” on your phone in order to connect the devices.",
+		"titleSmall":"If the confirmation window doesn’t appear on your phone immediately, please wait a minute.",
+		"permission":"Permission",
+		"accept":"ACCEPT",
+		"reject": "DECLINE",
+		"phoneAccept":"You can refresh this page and try again.",
+		"phoneReject": "The connection request is rejected !",
+		"href": "192.168.1.117 requests connection?"
+	}
+	
+	allLanguage["zh-cn"]={
+		"titleBig":"请在设备上点击接受以建立链接.",
+		"titleSmall":"若设备上的链接请求界面未出现,请稍等一会.",
+		"permission":"允许",
+		"accept":"接受",
+		"reject": "拒绝",
+		"phoneAccept":"你可以刷新此页面并重试.",
+		"phoneReject": "连接请求被拒绝!",
+		"href": "192.168.1.117 请求链接?"
+	}
+	
+	allLanguage["zh-tw"] = {
+		"titleBig":"請在設備上點擊接受以建立連結.",
+		"titleSmall":"若設備上的連結請求介面未出現,請稍等一會.",
+		"permission":"允許",
+		"accept":"接受",
+		"reject":"拒絕",
+		"phoneAccept":"你可以刷新此頁面並重試.",
+		"phoneReject": "連接請求被拒絕!",
+		"href": "192.168.1.117 請求鏈接?"
+	}
+	
+	allLanguage["es-es"] = {
+		"titleBig":"Por favor, acepte en el dispositivo para establecer la conexión",
+		"titleSmall":"Si la solicitud no aparece en el dispositivo, por favor espere.",
+		"permission":"Permiso",
+		"accept":"Aceptar",
+		"reject": "Rechazar",
+		"phoneAccept":"Puedes actualizar esta página para volver a intentarlo.",
+		"phoneReject": "La solicitud de conexión fue rechazada!",
+		"href": "192.168.1.117 Request link?"
+	}
+	
+	allLanguage["pt-pt"] = {
+		"titleBig":"Para estabelecer a conexão, por favor, aceite no dispositivo.",
+		"titleSmall":"Por favor, aguarde até que o pedido aparece no dispositivo.",
+		"permission":"Permissão",
+		"accept":"Aceitar",
+		"reject": "Rejeitar",
+		"phoneAccept":"Você pode atualizar esta página e tente novamente.",
+		"phoneReject": "Conexão foi rejeitada!",
+		"href": "192.168.1.117 Request link?"
+	}
+	
+	var module = {};
+	module.language=null;
+	module.lang = "en-us";
+	module.change = function(zh){
+		module.language = allLanguage[zh];	
+		if(!module.language){
+			module.language = allLanguage["en-us"];
+		}
+		document.getElementById("bigFont").innerHTML = module.language["titleBig"];
+		document.getElementById("smallFont").innerHTML = module.language["titleSmall"];
+		document.getElementById("permission").innerHTML = module.language["permission"];
+		document.getElementById("accept").innerHTML = module.language["accept"];
+		document.getElementById("refuse").innerHTML = module.language["reject"];
+		document.getElementById("href").innerHTML = module.language["href"];
+	}
+	
+	module.clickRefuse = function(){
+		document.getElementById("imgbg").style.background = "url(srcimg/ic_lan_connection_refuse.png) no-repeat center" ;
+		document.getElementById("panel").style.display = "none";
+		document.getElementById("shadow").style.display = "none";
+		document.getElementById("bigFont").innerHTML = module.language["phoneReject"];
+		document.getElementById("smallFont").innerHTML = module.language["phoneAccept"];
+		document.getElementById("smallFont").style.fontSize = "25px";
+	}
+	
+	var Tools={};
+	Tools.callBack = function(){
+		var xhr = Tools.xmlhttp;
+		if (xhr.readyState == 4)
+		{
+			if(xhr.status == 200){
+				
+				var val=xhr.responseText; 
+				var json = JSON.parse(val);
+				
+			
+				if(json["status"] == 404){
+					module.clickRefuse();
+				}else{
+					if(json["responseUrl"]) window.location.href = json["responseUrl"];
+				}
+				
+				
+			}
+		}
+	}
+
+	Tools.getAjax = function(url, type, data , callback){
+		if (window.XMLHttpRequest) {
+			Tools.xmlhttp = new XMLHttpRequest;
+			if (Tools.xmlhttp.overrideMimeType) {
+				Tools.xmlhttp.overrideMimeType('text/xml');
+			};
+		} else if (window.ActiveXObject){
+			Tools.xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+		};
+		
+		Tools.xmlhttp.onreadystatechange = callback;
+		Tools.xmlhttp.open(type,url+"?"+data,true);
+		Tools.xmlhttp.send(null);
+
+	}
+	var lang = langcode.toLowerCase();   
+	module.change(lang);
+	Tools.getAjax("verify" , "GET" , "" , Tools.callBack);
+	
+	</script>
+		
+
+	</body>
+</html>
