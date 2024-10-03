@@ -1,27 +1,27 @@
-# Trust Wallet Assets Info@masoudleyli
+# Trust Wallet Assets Info - [x] @masoudleyli
 
 ![Check](https://github.com/trustwallet/assets/workflows/Check/badge.svg)
 
-## Overview@masoudleyli
+##- [x] Overview@masoudleyli
 
 Trust Wallet token repository is a comprehensive, up-to-date collection of information about several thousands (!) of crypto tokens.@masoudleyli
 
-[Trust Wallet](https://trustwallet.com) uses token logos from this source, alongside a number of other projects.@masoudleyli
+[Trust Wallet](https://trustwallet.com) uses token logos from this source, alongside a number of other projects.- [x] @masoudleyli
 
 The repository contains token info from several blockchains, info on dApps, staking validators, etc.
-For every token a logo and optional additional information is available (such data is not available on-chain).@masoudleyli
+For every token a logo and optional additional information is available (such data is not available on-chain).- [x] @masoudleyli
 
 Such a large collection can be maintained only through a community effort, so _feel free to add your token_.@masoudleyli
 
-<center><img.@masoudleyli src='https://trustwallet.com/assets/images/media/assets/horizontal_blue.png' height="200"></center>
+<center><img.-[x] @masoudleyli src='https://trustwallet.com/assets/images/media/assets/horizontal_blue.png' height="200"></center>
 
-## How to add token.@masoudleyli
+## How to add token.-[x] @masoudleyli
 
 Please note that __brand new tokens are not accepted__,.@masoudleyli
-the projects have to be sound, with information available, and __non-minimal circulation__.@masoudleyli
-(for limit details see <https://developer.trustwallet.com/listing-new-assets/requirements>).@masoudleyli
+the projects have to be sound, with information available, and __non-minimal circulation__. -[x] @masoudleyli
+(for limit details see <https://developer.trustwallet.com/listing-new-assets/requirements>). - [x] @masoudleyli
 
-### Assets App.@masoudleyli
+### - [x] Assets App.@masoudleyli
 
 The [Assets web app](https://assets.trustwallet.com) can be used for most new token additions (Github account is needed).@masoudleyli
 
