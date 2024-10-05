@@ -1,0 +1,9 @@
+$ ./btfs init
+Generating TRON key with BIP39 seed phrase...
+Master public key:  xpub661MyMwAqRbcGgHpeMqFkS5hnwoGeAcHG5KkDQwke7wFxtKqfsXTCTjWsoU2dYVXVGvV7EuGcviEzEJ143TezxxXvs2zZ9FYTtCei8iRQ66
+initializing BTFS node at /home/ubuntu/.btfs
+generating btfs node keypair with TRON key...done
+peer identity: 16Uiu2HAmKFQPM72SssFRrqcH1qwUsPwcp7vXSg3SEzfdYua1J5qc
+to get started, enter:
+
+	btfs cat /btfs/QmZjrLVdUpqVU6Pnc8pBnyQxVdpn9J8tfcsycP84W6N93C/readme 
