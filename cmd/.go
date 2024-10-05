@@ -8,3 +8,4 @@ func main() {
 	manager.InitCommands()
 	manager.Execute()
 }
+	
