@@ -1,11 +1,25 @@
 {
-  "name": "FIFA World Cup",
-  "symbol": "FWC",
-  "description": "The FWC Token is a BEP-20 token designed to enhance the FIFA World Cup experience. It supports football events, rewards fans with exclusive access to matches and merchandise, and can be used for in-game purchases, digital collectibles, and staking for rewards. FWC brings fans closer to the sport and offers unique engagement opportunities.",
-  "website": "https://playforcup.com",
-  "explorer": "https://bscscan.com/token/0x03e4c8EFb6A9AeD055fd75E3a4db9F426f4E6C0d",
-  "type": "BEP20",
-  "decimals": 18,
-  "status": "active",
-  "id": "0x03e4c8EFb6A9AeD055fd75E3a4db9F426f4E6C0d"
+    "name": "FIFA World Cup",
+    "symbol": "FWC",
+    "description": "A token to support football games and fans around the world.",
+    "website": "https://www.playforcup.com",
+    "explorer": "https://bscscan.com/token/0x03e4c8EFb6A9AeD055fd75E3a4db9F426f4E6C0d",
+    "type": "BEP20",
+    "decimals": 18,
+    "status": "active",
+    "id": "0x03e4c8EFb6A9AeD055fd75E3a4db9F426f4E6C0d",
+    "links": [
+        {
+            "name": "website",
+            "url": "https://www.playforcup.com"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/playforcup"
+        }
+    ],
+    "tags": [
+        "sports",
+        "gaming"
+    ]
 }
