@@ -1,0 +1,28 @@
+{
+    "name": "Tether USD (USDT)",
+    "type": "ERC20",
+    "symbol": "USDT",
+    "decimals": 6,
+    "website": "https://tether.to",
+    "description": "TETHER US",
+    "explorer": "https://etherscan.io/token/0x9477f48a278909A94D8cd9480dFA85D07103F004",
+    "status": "active",
+    "id": "0x9477f48a278909A94D8cd9480dFA85D07103F004",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://x.com/tether_to"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/tether/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/tether"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}
