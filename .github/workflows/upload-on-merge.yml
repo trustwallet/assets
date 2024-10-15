@@ -32,6 +32,7 @@ jobs:
         run: |
           apt install pipx
           pipx install cloudinary-cli
+          cld --version
 
 #      - name: Upload assets to Cloudinary
 #        env:
