@@ -3,7 +3,7 @@ name: Upload assets on merge
 
 on:
   push:
-    branches: [@benjamin/fix_ci]
+    branches: [benjamin_fix_ci]
   workflow_dispatch:
 
 jobs:
