@@ -29,7 +29,10 @@ jobs:
           cp -r exchanges staging/exchanges
 
       - name: Install Cloudinary CLI
-        run: pip3 install --upgrade cloudinary-cli
+        run: |
+          sudo apt install pipx
+          pipx install cloudinary-cli
+          cld --version
 
       - name: Upload assets to Cloudinary
         env:
