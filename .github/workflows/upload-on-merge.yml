@@ -30,7 +30,7 @@ jobs:
 
       - name: Install Cloudinary CLI
         run: |
-          apt install pipx
+          sudo apt install pipx
           pipx install cloudinary-cli
           cld --version
 
