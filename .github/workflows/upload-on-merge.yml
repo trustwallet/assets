@@ -3,7 +3,7 @@ name: Upload assets on merge
 
 on:
   push:
-    branches: [benjamin_fix_ci]
+    branches: [master]
   workflow_dispatch:
 
 jobs:
@@ -21,12 +21,12 @@ jobs:
 
       - name: Checkout repo
         uses: actions/checkout@v2
-#
-#      - name: Sync assets to staging folder
-#        run: |
-#          make copy-logos-to-staging
-#          cp -r dapps staging/dapps
-#          cp -r exchanges staging/exchanges
+
+      - name: Sync assets to staging folder
+        run: |
+          make copy-logos-to-staging
+          cp -r dapps staging/dapps
+          cp -r exchanges staging/exchanges
 
       - name: Install Cloudinary CLI
         run: |
@@ -34,23 +34,23 @@ jobs:
           pipx install cloudinary-cli
           cld --version
 
-#      - name: Upload assets to Cloudinary
-#        env:
-#          CLOUDINARY_URL: ${{ secrets.CLOUDINARY_URL }}
-#        run: |
-#          cd staging
-#          cld sync -FK --push assets assets
-#          cld sync -FK --push dapps dapps
-#          cld sync -FK --push exchanges exchanges
-#
-#      - name: Configure AWS Credentials
-#        uses: aws-actions/configure-aws-credentials@v1
-#        with:
-#          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-#          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-#          aws-region: us-east-1
-#
-#      - name: Upload asset logos manifest to S3 and invalidate cloudfront
-#        run: |
-#          aws s3 cp staging/assets/asset-logos-manifest.json s3://rainbow-metadata-production/token-list/asset-logos-manifest.json
-#          aws cloudfront create-invalidation --distribution-id "E1FFQRZXAO7TUP" --paths "/token-list/*"
+      - name: Upload assets to Cloudinary
+        env:
+          CLOUDINARY_URL: ${{ secrets.CLOUDINARY_URL }}
+        run: |
+          cd staging
+          cld sync -FK --push assets assets
+          cld sync -FK --push dapps dapps
+          cld sync -FK --push exchanges exchanges
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1
+
+      - name: Upload asset logos manifest to S3 and invalidate cloudfront
+        run: |
+          aws s3 cp staging/assets/asset-logos-manifest.json s3://rainbow-metadata-production/token-list/asset-logos-manifest.json
+          aws cloudfront create-invalidation --distribution-id "E1FFQRZXAO7TUP" --paths "/token-list/*"
