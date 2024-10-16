@@ -3,7 +3,7 @@
     "symbol": "NAYM",
     "type": "BASE",
     "decimals": 18,
-    "description": "NAYM is the governance token of the Nayms market, designed to capitalize the Nayms Liquidity Facility (NLF). The NLF functions as a third-party capital provider, selectively offering capital to insurance programs underwritten by Nayms. Through these investments, the NLF seeks to earn distributions, which are reinvested to generate rewards for NAYM token holders. Holders of NAYM can actively engage in governance by participating in proposals, discussions, staking, and voting. Active involvement in the governance process not only contributes to the positive performance of the marketplace but also allows participants to receive rewards from the NAYM governance pool.",
+    "description": "NAYM is the governance token of the Nayms market, designed to capitalize the Nayms Liquidity Facility (NLF). The NLF functions as a third-party capital provider, selectively offering capital to insurance programs underwritten by Nayms. Through these investments, the NLF seeks to earn distributions, which are reinvested to generate rewards for NAYM token holders. Holders of NAYM can actively engage in governance by participating in proposals, discussions, staking, and voting.",
     "website": "https://www.nayms.com/",
     "explorer": "https://basescan.org/token/0x314d7f9e2f55B430ef656FBB98A7635D43a2261E",
     "status": "active",
@@ -23,12 +23,16 @@
             "url": "https://x.com/nayms"
         },
         {
-            "name": "technical documentation",
+            "name": "docs",
             "url": "https://docs.nayms.com/"
         },
         {
-            "name": "quantstamp audit report",
-            "url": "https://certificate.quantstamp.com/full/nayms-2024-retainer/04e1c37c-19e8-4c7d-b743-268e4a6466c9/index.html"
+            "name": "whitepaper",
+            "url": "https://docsend.com/view/hzvqb3bm8gbzuqh4/d/hsmyh5c5nr6uxjh4"
+        },
+        {
+            "name": "source_code",
+            "url": "https://github.com/nayms/naym-coin"
         }
     ]
 }
