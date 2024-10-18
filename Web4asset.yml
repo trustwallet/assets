@@ -1,6 +1,7 @@
 [0KRunning with gitlab-runner 17.0.0~pre.88.g761ae5dd (761ae5dd)[0;m
 [0K  on green-5.saas-linux-small-amd64.runners-manager.gitlab.com/default xS6Vzpvo, system ID: s_6b1e4f06fcfd[0;m
-section_start:1724027664:prepare_executor[0K[0K[36;1mPreparing the "docker+machine" executor[0;m[0;m
+section_start:1724027664:prepare_executor
+[0K[0K[36;1mPreparing the "docker+machine" executor[0;m[0;m
 [0KUsing Docker executor with image gliderlabs/herokuish:latest ...[0;m
 [0KStarting service postgres:9.6.16 ...[0;m
 [0KPulling docker image postgres:9.6.16 ...[0;m
@@ -8,9 +9,13 @@ section_start:1724027664:prepare_executor[0K[0K[36;1mPreparing the "docker+m
 [0KWaiting for services to be up and running (timeout 30 seconds)...[0;m
 [0KPulling docker image gliderlabs/herokuish:latest ...[0;m
 [0KUsing docker image sha256:8401297d30aeb6b914075d0dca8c7c5f76a671d81f5f0996107cdb294155eec0 for gliderlabs/herokuish:latest with digest gliderlabs/herokuish@sha256:7a864e6416f04dd204911c9a7c3cdc9abda97af9e144a1308ac2c4fc5d929416 ...[0;m
-section_end:1724027705:prepare_executor[0Ksection_start:1724027705:prepare_script[0K[0K[36;1mPreparing environment[0;m[0;m
+section_end:1724027705:prepare_executor
+[0Ksection_start:1724027705:prepare_script
+[0K[0K[36;1mPreparing environment[0;m[0;m
 Running on runner-xs6vzpvo-project-48618319-concurrent-0 via runner-xs6vzpvo-s-l-s-amd64-1724027622-7a5c54e9...
-section_end:1724027709:prepare_script[0Ksection_start:1724027709:get_sources[0K[0K[36;1mGetting source from Git repository[0;m[0;m
+section_end:1724027709:prepare_script
+[0Ksection_start:1724027709:get_sources
+[0K[0K[36;1mGetting source from Git repository[0;m[0;m
 [32;1mFetching changes...[0;m
 Initialized empty Git repository in /builds/kubucoin/Kubucoin-walletconnect-monorepo/.git/
 [32;1mCreated fresh repository.[0;m
@@ -18,7 +23,9 @@ Initialized empty Git repository in /builds/kubucoin/Kubucoin-walletconnect-mono
 
 [32;1mSkipping Git submodules setup[0;m
 [32;1m$ git remote set-url origin "${CI_REPOSITORY_URL}"[0;m
-section_end:1724027717:get_sources[0Ksection_start:1724027717:step_script[0K[0K[36;1mExecuting "step_script" stage of the job script[0;m[0;m
+section_end:1724027717:get_sources
+[0Ksection_start:1724027717:step_script
+[0K[0K[36;1mExecuting "step_script" stage of the job script[0;m[0;m
 [0KUsing docker image sha256:8401297d30aeb6b914075d0dca8c7c5f76a671d81f5f0996107cdb294155eec0 for gliderlabs/herokuish:latest with digest gliderlabs/herokuish@sha256:7a864e6416f04dd204911c9a7c3cdc9abda97af9e144a1308ac2c4fc5d929416 ...[0;m
 [32;1m$ if [ -z ${KUBERNETES_PORT+x} ]; then # collapsed multi-line command[0;m
 [32;1m$ export DATABASE_URL="postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${DB_HOST}:5432/${POSTGRES_DB}"[0;m
@@ -1512,6 +1519,7 @@ npm error   at location: /app/packages/core
 [7m[1m[36m RUN [39m[22m[27m [36mv0.22.1[39m [90m/app/packages/web3wallet[39m
 
 Terminated
-section_end:1724031266:step_script[0K[0;33mWARNING: step_script could not run to completion because the timeout was exceeded. For more control over job and script timeouts see: https://docs.gitlab.com/ee/ci/runners/configure_runners.html#set-script-and-after_script-timeouts[0;m
+section_end:1724031266:step_script
+[0K[0;33mWARNING: step_script could not run to completion because the timeout was exceeded. For more control over job and script timeouts see: https://docs.gitlab.com/ee/ci/runners/configure_runners.html#set-script-and-after_script-timeouts[0;m
 [31;1mERROR: Job failed: execution took longer than 1h0m0s seconds
 [0;m
