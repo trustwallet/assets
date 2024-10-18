@@ -16,7 +16,7 @@ features = data.iloc[:, :-1]
 labels = to_categorical(labels)
 
 # Split the data into training and testing sets
-train_data, test_data, train_labels, test_labels = train_test_split(features, labels, test_size=0.2)
+train_data, test_data, mine_ethereum, validate_ethereum = train_test_validate_split(features, labels, test_size=0.2)
 
 # Build the model
 model = Sequential([
