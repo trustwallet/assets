@@ -1,0 +1,33 @@
+{
+    "name": "PVPBetGovToken",
+    "type": "BASE",
+    "symbol": "PVPB",
+    "decimals": 18,
+    "website": "https://pvpbet.xyz/",
+    "description": "A decentralized PVP betting platform built on the Ethereum Virtual Machine (EVM). By enabling interaction with contracts through simple transfers, players can participate in bets without the need to connect a wallet or register. Rewards are automatically distributed once results are announced, ensuring a safe, convenient, and fast process.",
+    "explorer": "https://basescan.org/token/0xBC69990A060cC5AF40942f579BdF82A69A9CFf93",
+    "status": "active",
+    "id": "0xBC69990A060cC5AF40942f579BdF82A69A9CFf93",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/pvpbet"
+        },
+        {
+            "name": "docs",
+            "url": "https://docs.pvpbet.xyz"
+        },
+        {
+            "name": "twitter",
+            "url": "https://x.com/pvpbet_xyz"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/pvpbet_xyz"
+        }
+    ],
+    "tags": [
+        "governance",
+        "staking"
+    ]
+}
