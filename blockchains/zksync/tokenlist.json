@@ -1,0 +1,53 @@
+{
+    "name": "Trust Wallet: zkSync List",
+    "logoURI": "https://trustwallet.com/assets/images/favicon.png",
+    "timestamp": "2024-03-18T14:33:26.183301",
+    "tokens": [
+        {
+            "asset": "c324_t0x0000000000000000000000000000000000000000",
+            "type": "ZKSYNC",
+            "address": "0x0000000000000000000000000000000000000000",
+            "name": "Wrapped Ether",
+            "symbol": "WETH",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/zksync/assets/0x0000000000000000000000000000000000000000/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c324_t0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4",
+            "type": "ZKSYNC",
+            "address": "0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4",
+            "name": "USD Coin",
+            "symbol": "USDC",
+            "decimals": 6,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/zksync/assets/0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c324_t0x31C2c031fDc9d33e974f327Ab0d9883Eae06cA4A",
+            "type": "ZKSYNC",
+            "address": "0x31C2c031fDc9d33e974f327Ab0d9883Eae06cA4A",
+            "name": "zkSwap Finance",
+            "symbol": "ZF",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/zksync/assets/0x31C2c031fDc9d33e974f327Ab0d9883Eae06cA4A/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c324_t0xdd9f72afED3631a6C85b5369D84875e6c42f1827",
+            "type": "ZKSYNC",
+            "address": "0xdd9f72afED3631a6C85b5369D84875e6c42f1827",
+            "name": "Symbiosis",
+            "symbol": "SIS",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/zksync/assets/0xdd9f72afED3631a6C85b5369D84875e6c42f1827/logo.png",
+            "pairs": []
+        }
+       
+    ],
+    "version": {
+        "major": 1,
+        "minor": 0,
+        "patch": 0
+    }
+}
