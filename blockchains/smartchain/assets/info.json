@@ -1,7 +1,10 @@
 {
-    "name": "Ramah Bumi Consortium",
-    "symbol": "RBC",
-    "contract": "0x6A7f16D89e59A28B11e3fC1Ba0FDFF6F3e7D2AF3",
-    "decimals": 18,
-    "logo": "blockchains/smartchain/rbclogook.png"
+  "name": "Ramah Bumi Consortium",
+  "symbol": "RBC",
+  "decimals": 18,
+  "contract": {
+    "address": "0x6A7f16D89e59A28B11e3fC1Ba0FDFF6F3e7D2AF3",
+    "blockchain": "Binance Smart Chain"
+  },
+  "logo": "blockchains/smartchain/assets/0x6A7f16D89e59A28B11e3fC1Ba0FDFF6F3e7D2AF3/logo.png"
 }
