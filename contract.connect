@@ -1,0 +1,14 @@
+import { createThirdwebClient, getContract } from "thirdweb";
+import { defineChain } from "thirdweb/chains";
+
+// create the client with your clientId, or secretKey if in a server environment
+const client = createThirdwebClient({
+  clientId: "5580b055b1923ac1069b830e5af6ad39"
+ });
+
+// connect to your contract
+const contract = getContract({
+  client,
+  chain: defineChain(1),
+  address: "0x094638Ba98eEA0655fa865504e6Cb93AD94791ba"
+});
