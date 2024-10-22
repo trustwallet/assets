@@ -1,0 +1,17 @@
+{
+    "name": "ApeChain",
+    "website": "https://apechain.com",
+    "description": "ApeChain is a dedicated infrastructure layer to power the ApeCoin ecosystem. ApeChain utilizes $APE as its native gas token. ",
+    "explorer": "https://apescan.io/",
+    "symbol": "APE",
+    "rpc_url": "https://rpc.apechain.com/http",
+    "type": "coin",
+    "decimals": 18,
+    "status": "active",
+    "links": [
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/community/search/top/ape/"
+        }
+    ]
+}
