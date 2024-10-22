@@ -8,11 +8,16 @@
   "explorer": "https://bscscan.com/token/0x210c7D238bb66DB421764AcdA138c5E8777B294b",
   "status": "active",
   "website": "https://flamingo.com",
-  "links": {
-    "twitter": "https://twitter.com/FlaminGo",
-    "telegram": "https://t.me/FLGO"
-  },
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/FlaminGo"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/FLGO"
+    }
+  ],
   "tags": ["meme", "defi"]
 }
-
 
