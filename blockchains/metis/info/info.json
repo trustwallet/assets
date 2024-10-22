@@ -6,8 +6,13 @@
     "research": "",
     "symbol": "METIS",
     "type": "coin",
+    "coin_type": 10001088,
+    "rpc_url": "https://andromeda.metis.io/?owner=1088",
     "decimals": 18,
     "status": "active",
+    "tags": [
+        "dapp"
+    ],
     "links": [
         {
             "name": "twitter",

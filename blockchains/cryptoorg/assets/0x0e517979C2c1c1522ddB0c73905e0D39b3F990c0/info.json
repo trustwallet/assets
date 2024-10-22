@@ -1,0 +1,32 @@
+{
+    "name": "ADA",
+    "symbol": "ADA",
+    "type": "CRC20",
+    "decimals": 6,
+    "description": "Cardano (ADA) is a decentralized platform that will allow complex programmable transfers of value in a secure and scalable fashion. Cardano is built in the secure Haskell programming language.",
+    "website": "https://crypto.org/",
+    "explorer": "https://crypto.org/explorer/account/0x0e517979C2c1c1522ddB0c73905e0D39b3F990c0",
+    "status": "active",
+    "id": "0x0e517979C2c1c1522ddB0c73905e0D39b3F990c0",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/cardano"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/cardano/"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/CardanoAnnouncements"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/cardano/"
+        }
+    ],
+    "tags": [
+        "defi"
+    ]
+}
