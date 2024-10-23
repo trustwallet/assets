@@ -8,10 +8,9 @@
   "type": "BEP20",
   "decimals": 18,
   "status": "active",
-  "tags": ["gaming"],
   "links": [
     {
-      "name": "x",
+      "name": "twitter",
       "url": "https://x.com/IztarSurvivor?prefetchTimestamp=1729587992693"
     },
     {
@@ -31,20 +30,16 @@
       "url": "https://www.youtube.com/@IztarSurvivor"
     },
     {
-      "name": "tiktok",
-      "url": "https://www.tiktok.com/@iztarsurvivor"
-    },
-    {
-      "name": "instagram",
-      "url": "https://www.instagram.com/iztar_survivor/"
-    },
-    {
       "name": "facebook",
       "url": "https://www.facebook.com/profile.php?id=61561192150952"
     },
     {
-      "name": "linkedin",
-      "url": "https://www.linkedin.com/company/iztar-survivor"
-    }
+      "name": "coinmarketcap",
+      "url": "https://coinmarketcap.com/dexscan/bsc/0xfe3f20a03f2b134dc71a8ab8a02bb9b3f4b6842f"
+    },
+    {
+      "name": "coingecko",
+      "url": "https://www.geckoterminal.com/id/bsc/pools/0xfe3f20a03f2b134dc71a8ab8a02bb9b3f4b6842f"
+    },
   ]
 }
