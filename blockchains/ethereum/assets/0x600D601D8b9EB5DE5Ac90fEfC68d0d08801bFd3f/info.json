@@ -8,19 +8,33 @@
   "type": "ERC20",
   "decimals": 8,
   "status": "active",
-  "tags": ["governance"],
+  "tags": [
+    "governance"
+  ],
   "links": [
-      {
-          "name": "twitter",
-          "url": "https://x.com/GoElementUnited"
-      },
-      {
-          "name": "discord",
-          "url": "https://discord.com/servers/official-element-community-946465435363180545"
-      },
-      {
-          "name": "whitepaper",
-          "url": "https://assets-global.website-files.com/6380357e992fec357842f913/64090a78ef5f2a191c38fce4_ElementOverview_V14_Mar2023_Small.pdf"
-      }
+    {
+      "name": "twitter",
+      "url": "https://x.com/GoElementUnited"
+    },
+    {
+      "name": "discord",
+      "url": "https://discord.com/servers/official-element-community-946465435363180545"
+    },
+    {
+      "name": "youtube",
+      "url": "https://www.youtube.com/channel/UCZVJWx8qzon6pBKcHgTfgew"
+    },
+    {
+      "name": "coinmarketcap",
+      "url": "https://coinmarketcap.com/currencies/element"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/ElementUnited"
+    },
+    {
+      "name": "whitepaper",
+      "url": "https://assets-global.website-files.com/6380357e992fec357842f913/64090a78ef5f2a191c38fce4_ElementOverview_V14_Mar2023_Small.pdf"
+    }
   ]
 }
