@@ -1,4 +1,9 @@
-# Trust Wallet Assets Info - [x] @masoudleyli
+make check -- Execute validation checks; also used in continuous integration.
+make fix -- Perform automatic fixes where possible
+make update-auto -- Run automatic updates from external sources, executed regularly (GitHub action)
+make add-token asset_id=c60_t0x4Fabb145d64652a948d72533023f6E7A623C7C53 -- Create info.json file as asset template.
+make add-tokenlist asset_id=c60_t0x4Fabb145d64652a948d72533023f6E7A623C7C53 -- Adds a token to tokenlist.json.
+make add-tokenlist-extended asset_id=c60_t0x4Fabb145d64652a948d72533023f6E7A623C7C53 -- Adds a token to tokenlist-extended.json.# Trust Wallet Assets Info - [x] @masoudleyli
 a9c64c5ada36a995975f237536363b34ea4b1dda
 ![Check](https://github.com/trustwallet/assets/workflows/Check/badge.svg)27756517228a273f3c48663ff222824b6e4501c6
 
