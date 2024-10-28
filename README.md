@@ -1,10 +1,10 @@
 # Trust Wallet Assets Info - [x] @masoudleyli
+a9c64c5ada36a995975f237536363b34ea4b1dda
+![Check](https://github.com/trustwallet/assets/workflows/Check/badge.svg)27756517228a273f3c48663ff222824b6e4501c6
 
-![Check](https://github.com/trustwallet/assets/workflows/Check/badge.svg)
+##- [x] Overview@masoudleyli290fb0a377fa14471760676e78b51e458c277c27
 
-##- [x] Overview@masoudleyli
-
-Trust Wallet token repository is a comprehensive, up-to-date collection of information about several thousands (!) of crypto tokens.@masoudleyli
+Trust Wallet token repository is a comprehensive, up-to-date collection of information about several thousands (!) of crypto tokens.@masoudleylica61e0c3226dabeb8d4411d510cc8700a508aa43
 
 [Trust Wallet](https://trustwallet.com) uses token logos from this source, alongside a number of other projects.- [x] @masoudleyli
 
