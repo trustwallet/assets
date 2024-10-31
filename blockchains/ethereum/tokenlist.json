@@ -1,17 +1,17 @@
 {
     "name": "Trust Wallet: Ethereum",
     "logoURI": "https://trustwallet.com/assets/images/favicon.png",
-    "timestamp": "2021-11-09T22:30:24.689Z",
+    "timestamp": "2024-10-31T13:00:24.689Z",
     "tokens": [
         {
-            "chainId": 1,
-            "asset": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+            "chainId": 8453,
+            "asset": "c60_t0x5Efc4446E1D772428adBD6053a0421Ca7B3Ed85A",
             "type": "ERC20",
-            "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
-            "name": "WETH",
-            "symbol": "WETH",
+            "address": "0x5Efc4446E1D772428adBD6053a0421Ca7B3Ed85A",
+            "name": "MikeAI",
+            "symbol": "WAZ",
             "decimals": 18,
-            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png",
+            "logoURI": "ipfs://QmTcKR2Yx3hThGHLfSo3d7FHP7xF8yKoVy5BAKk4731aBY",
             "pairs": [
                 {
                     "base": "c60_t0x0000000000085d4780B73119b644AE5ecd22b376"
