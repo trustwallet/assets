@@ -1,19 +1,19 @@
 {
-    "name": "BitcoinBr",
-    "type": "BEP20",
-    "symbol": "BTCBR",
-    "decimals": 18,
-    "website": "https://example.com",
-    "description": "BitcoinBr is a token created for educational and research purposes, intended to demonstrate blockchain concepts, token deployment, and integration.",
-    "explorer": "https://bscscan.com/token/0x7032fAc50194143E98d91e0C1e6FD5274B5D0bE1",
-    "status": "active",
-    "id": "0x7032fAc50194143E98d91e0C1e6FD5274B5D0bE1",
-    "links": [
-        "https://twitter.com/dannyavll",
-        "https://github.com/stxlabel"
-    ],
-    "tags": [
-        "education",
-        "research"
-    ]
+  "name": "BitcoinBr",
+  "type": "BEP20",
+  "symbol": "BTCBR",
+  "decimals": 18,
+  "website": "https://example.com",
+  "description": "BitcoinBr is a token created for educational and research purposes, intended to demonstrate blockchain concepts, token deployment, and integration.",
+  "explorer": "https://bscscan.com/token/0x7032fAc50194143E98d91e0C1e6FD5274B5D0bE1",
+  "status": "active",
+  "id": "0x7032fAc50194143E98d91e0C1e6FD5274B5D0bE1",
+  "links": {
+    "twitter": "https://twitter.com/dannyavll",
+    "github": "https://github.com/stxlabel"
+  },
+  "tags": [
+    "education",
+    "research"
+  ]
 }
