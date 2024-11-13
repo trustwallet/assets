@@ -1,21 +1,22 @@
 {
-  "name": "Shrub",
+  "id": "0x3b991130eae3cca364406d718da22fa1c3e7c256",
+  "name": "shrub",
   "website": "http://shrub.io",
-  "description": "Shrub is a community-managed project inspired by Elon's pet hedgehog, aiming to become the world's most viral meme.",
-  "explorer": "https://etherscan.io/token/0x3b991130eae3cca364406d718da22fa1c3e7c256",
-  "type": "ERC20",
-  "symbol": "SHRUB",
+  "description": "shrub is a community-managed project inspired by elon's pet hedgehog, aiming to become the world's most viral meme.",
+  "explorer": "https://etherscan.io/",
+  "type": "erc20",
+  "symbol": "shrub",
   "decimals": 18,
   "status": "active",
-  "tags": ["community", "entertainment"],
+  "tags": ["entertainment", "social"],
   "links": [
     {
       "name": "twitter",
-      "url": "https://x.com/ShrubHedgehog"
+      "url": "https://x.com/shrubhedgehog"
     },
     {
       "name": "telegram",
-      "url": "https://t.me/ShrubTheHedgehog"
+      "url": "https://t.me/shrubthehedgehog"
     }
   ]
 }
