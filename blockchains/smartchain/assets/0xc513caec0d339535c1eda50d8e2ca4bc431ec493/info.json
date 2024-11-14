@@ -4,15 +4,27 @@
     "symbol": "ACC",
     "decimals": 18,
     "website": "https://aderlo.io",
-    "tags": ["ecommerce"],
     "description": "Aderlo Cashback Coin (ACC) is an innovative Binance blockchain-based token designed to transform e-commerce by integrating loyalty and rewards. ACC serves as a cashback system for customers on the ECAT eCommerce platform, providing a transparent and efficient way to earn rewards that can be redeemed for future purchases, saved as an investment, or traded on exchanges.",
     "explorer": "https://bscscan.com/token/0xc513caec0d339535c1eda50d8e2ca4bc431ec493",
     "status": "active",
     "id": "0xc513caec0d339535c1eda50d8e2ca4bc431ec493",
-    "links": {
-  "twitter": "https://twitter.com/AderloMetaverse",
-  "telegram": "https://t.me/aderlometaverse",
-  "telegram_news": "https://t.me/aderlo",
-  "discord": "https://discord.gg/ecat"
-}
+    "links": [
+        {
+           "name": "twitter",
+           "url": "https://twitter.com/AderloMetaverse"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/aderlometaverse"
+         },
+         {
+            "name": "telegram_news",
+            "url": "https://t.me/aderlo"
+         },
+         {
+            "name": "discord",
+            "url": "https://discord.gg/ecat"
+         }
+],
+    "tags": ["ecommerce", "loyalty", "cashback", "metaverse", "blockchain", "rewards", "defi"]
 }
