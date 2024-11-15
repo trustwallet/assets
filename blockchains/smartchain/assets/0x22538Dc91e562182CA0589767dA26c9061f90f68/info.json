@@ -1,0 +1,24 @@
+{
+    "name": "Binance-Peg BUSD ",
+    "type": "BEP20",
+    "symbol": "BUSD",
+    "decimals": 18,
+    "website": "https://www.binance.com/",
+    "description": "Alternative Binance-Peg BUSD (BUSD) refers to versions or variations of the Binance-Peg BUSD token available across different blockchain networks or use cases. These alternatives maintain the same core principle of being a stablecoin pegged 1:1 to the U.S. dollar but may differ in deployment or specific functionalities to support various ecosystems.",
+    "explorer": "https://bscscan.com/token/0x22538Dc91e562182CA0589767dA26c9061f90f68",
+    "status": "active",
+    "id": "0x22538Dc91e562182CA0589767dA26c9061f90f68",
+    "links": [
+        {
+            "name": "source_code",
+            "url": "https://bscscan.com/token/0x22538Dc91e562182CA0589767dA26c9061f90f68#code"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/alexcorat/alt_busd.git"
+        }
+    ],
+    "tags": [
+        "binance-peg"
+    ]
+}
