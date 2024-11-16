@@ -8,10 +8,28 @@
     "explorer": "https://etherscan.io/token/0x00000000000007C8612bA63Df8DdEfD9E6077c97",
     "status": "active",
     "id": "0x00000000000007C8612bA63Df8DdEfD9E6077c97",
+    "tags": [
+        "defi",
+        "ai",
+        "dao",
+        "abstraction"
+    ],
     "links": [
         {
             "name": "twitter",
             "url": "https://x.com/nani__ooo"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/NaniDAO"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://nani.ooo/whitepaper"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/dexscan/ethereum/0x58cf91c080f7052f6da209bf605d6cf1cefd65f3/"
         }
     ]
 }
