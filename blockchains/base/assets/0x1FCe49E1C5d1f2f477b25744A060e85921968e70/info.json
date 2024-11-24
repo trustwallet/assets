@@ -1,17 +1,24 @@
 {
     "name": "DOB on Base",
     "website": "https://difi.market/",
-    "description": "DOB is a decentralized token built on the Base Blockchain, fueling an innovative marketplace for both digital and physical goods. This platform provides unique features, including efficient shipping management, secure dispute resolution, and comprehensive seller verification, designed to create a trusted environment for buyers and sellers. DOB’s mission is to revolutionize online commerce by enhancing security, transparency, and reliability. With blockchain technology at its foundation, DOB empowers users with full control of their transactions, making e-commerce more accessible and resilient. Join us in shaping the future of online trade with a decentralized approach that prioritizes community and trust.",
+    "description": "DOB is a decentralized token built on the Base Blockchain, fueling an innovative marketplace for both digital and physical goods.",
     "explorer": "https://basescan.org/token/0x1FCe49E1C5d1f2f477b25744A060e85921968e70",
     "type": "BASE",
     "symbol": "DOB",
     "decimals": 18,
     "status": "active",
     "id": "0x1FCe49E1C5d1f2f477b25744A060e85921968e70",
+        "tags": [
+        "ecommerce"
+    ],
     "links": [
         {
             "name": "twitter",
-            "url": "https://twitter.com/difimarket"
+            "url": "https://x.com/difimarket"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/difitoken"
         },
         {
             "name": "coinmarketcap",
