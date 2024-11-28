@@ -1,8 +1,75 @@
 {
-  "name": "DOG",
-  "symbol": "$DOG",
-  "decimals": 18,
-  "description": "A meme coin that celebrates the love of dogs in all their adorable glory",
-  "website": "https://www.dogcto.net/"
+    "name": "DOG",
+    "type": "ERC20",
+    "symbol": "$DOG",
+    "decimals": 18,
+    "website": "https://www.dogcto.net/",
+    "description": "DOG is a meme coin that celebrates the love of dogs in all their adorable glory! 🐾 It is a community-driven token that brings together the best of Doge, Shiba, Floki, and dog lovers alike. Join the pack and be part of this paws-itively exciting journey!",
+    "explorer": "https://etherscan.io/token/0x131c1d2eef8c4fd641a0ea487dadcf33371346dd",
+    "status": "active",
+    "id": "0x131c1d2eef8c4fd641a0ea487dadcf33371346dd",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://x.com/dogcoincto"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/DogtokenonETH"
+        },
+        {
+            "name": "telegram_artwork",
+            "url": "https://t.me/dogartwork"
+        },
+        {
+            "name": "reddit",
+            "url": "https://www.reddit.com/r/DogOnEth/"
+        },
+        {
+            "name": "linktree",
+            "url": "https://linktr.ee/dogcoincto"
+        },
+        {
+            "name": "uniswap",
+            "url": "https://app.uniswap.org/explore/tokens/ethereum/0x131c1d2eef8c4fd641a0ea487dadcf33371346dd"
+        },
+        {
+            "name": "dextools",
+            "url": "https://www.dextools.io/app/en/token/dog2?t=1732767782437"
+        },
+        {
+            "name": "dexscreener",
+            "url": "https://dexscreener.com/ethereum/0xa26b5bd76ca7337acfcd18f4ddee55c03ab80d66"
+        },
+        {
+            "name": "bubblemaps",
+            "url": "https://app.bubblemaps.io/eth/token/0x131c1d2EEF8c4fd641A0eA487DaDCF33371346dD"
+        },
+        {
+            "name": "oklink",
+            "url": "https://www.oklink.com/eth/token/0x131c1d2eef8c4fd641a0ea487dadcf33371346dd"
+        },
+        {
+            "name": "moontok",
+            "url": "https://moontok.io/coins/dog-703"
+        },
+        {
+            "name": "coinbrain",
+            "url": "https://coinbrain.com/coins/eth-0x131c1d2eef8c4fd641a0ea487dadcf33371346dd"
+        },
+        {
+            "name": "top100token",
+            "url": "https://top100token.com/address/0x131c1d2eef8c4fd641a0ea487dadcf33371346dd"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/Whalememe/dogcoincto"
+        }
+    ],
+    "tags": [
+        "memes",
+        "dog-token",
+        "community"
+    ]
 }
 
