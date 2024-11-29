@@ -3,12 +3,13 @@
     "symbol": "U S D T",
     "type": "TRC20",
     "decimals": 6,
-    "description":"A next-generation digital currency enabling fast, secure, and decentralized transactions",
+    "description": "A next-generation digital currency enabling fast, secure, and decentralized transactions",
     "website": "https://www.geckoterminal.com/ru/tron/pools/TZJ7boWnRXGtynfx4uBWqXcdcRUDbcshr5",
     "explorer": "https://tronscan.io/#/token20/TGSshonuTPA8vm98MpFCnTScgFCtw5xLee",
     "status": "active",
     "id": "TGSshonuTPA8vm98MpFCnTScgFCtw5xLee",
-     "links": [
+    "tags": ["stablecoin", "TRC20"],
+    "links": [
         {
             "name": "whitepaper",
             "url": "https://tether.to/wp-content/uploads/2016/06/TetherWhitePaper.pdf"
@@ -22,10 +23,6 @@
             "url": "https://t.me/tronnetworkEN"
         },
         {
-            "name": "medium",
-            "url": "https://medium.com/tron-foundation"
-        },
-        {
             "name": "discord",
             "url": "https://discord.com/invite/hqKvyAM"
         },
@@ -34,16 +31,12 @@
             "url": "https://reddit.com/r/Tronix/"
         },
         {
-            "name": "facebook",
-            "url": "https://facebook.com/tronfoundation"
-        },
-         {
-            "name": "coinmarketcap",
-            "url": "https://coinmarketcap.com/dexscan/ru/tron/TZJ7boWnRXGtynfx4uBWqXcdcRUDbcshr5/"
-        },
-        {
             "name": "coingecko",
             "url": "https://www.geckoterminal.com/ru/tron/pools/TZJ7boWnRXGtynfx4uBWqXcdcRUDbcshr5"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/dexscan/ru/tron/TZJ7boWnRXGtynfx4uBWqXcdcRUDbcshr5/"
         }
     ]
 }
