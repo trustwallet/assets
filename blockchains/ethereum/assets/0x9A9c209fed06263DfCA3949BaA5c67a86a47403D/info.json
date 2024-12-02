@@ -6,9 +6,15 @@
   "description": "USDT is a stablecoin pegged to the US Dollar.",
   "website": "https://tether.to",
   "explorer": "https://etherscan.io/token/0x9A9c209fed06263DfCA3949BaA5c67a86a47403D",
- "links": [
-  { "name": "twitter", "url": "https://x.com/Tether_to" },
-  { "name": "github", "url": "https://github.com/tether" }
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://x.com/Tether_to"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/tether"
+    }
   ],
   "tags": ["stablecoin"],
   "status": "active",
