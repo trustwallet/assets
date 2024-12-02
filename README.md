@@ -1,0 +1,1 @@
+[{"name":"8a506589a6.trustwallet.com.","type":1}],"Authority":[{"name":"trustwallet.com.","type":6,"TTL":1800,"data":"roxy.ns.cloudflare.com. dns.cloudflare.com. 2358412385 10000 2400 604800 1800"}],"Comment":"Response from 108.162.193.247."}
