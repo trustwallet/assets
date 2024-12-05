@@ -1,22 +1,16 @@
 {
-    "name": "Propchain",
-    "website": "https://propchain.com",
-    "description": "Propchain is focusing on transforming the real estate sector through blockchain technology. This organization is pioneering in the tokenization of real estate assets, allowing for fractionalized investments in real estate strategies and assets.",
-    "explorer": "https://etherscan.io/token/0x9ff58067Bd8D239000010c154C6983A325Df138E",
-    "symbol": "PROPC",
+    "name": "Propchzin",
     "type": "ERC20",
+    "symbol": "PROPC",
     "decimals": 18,
+    "website": "https://www.propchain.com/",
+    "description": "Propchain is an innovative organization focusing on transforming the real estate sector through blockchain technology. Allowing for fractionalized investments in real estate strategies and assets. ",
+    "explorer": "https://etherscan.io/token/",
     "status": "active",
-    "tags": [
-        "RWA"
-    ],
+    "id": "0x9ff58067Bd8D239000010c154C6983A325Df138E",
     "links": [
         {
-            "name": "coinmarketcap",
-            "url": "https://coinmarketcap.com/currencies/propchain/"
-        },
-        {
-            "name": "X",
+            "name": "twitter",
             "url": "https://x.com/PropChainGlobal"
         },
         {
@@ -25,7 +19,20 @@
         },
         {
             "name": "whitepaper",
-            "url": "https://files.prop.com/hubfs/Prop.com%20Whitepaper%20-%20October%202023%20-%20V1.1.pdf"
+            "url": "https://www.propchain.com/insights-category/whitepaper"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/propchain/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/propchain"
         }
+    ],
+    "tags": [
+        "defi",
+        "staking",
+        "dapp"
     ]
 }
