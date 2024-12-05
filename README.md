@@ -1,4 +1,5 @@
-make check -- Execute validation checks;@masoudleyli also used in continuous integration.
+masoudahg1: "5bd257c20271b5850eab9f161bce5c9399693689","b8b3178def689301b6683bd648752ba4ad0f5d0b","718d4ccfd8b6a200f3d2fe3dd3990c1bba27f9f6"
+"466ed9937ffe5609ab565f43d7305a5d46410622"make check -- Execute validation checks;@masoudleyli also used in continuous integration.
 make fix -- Perform automatic fixes where possible
 make update-auto -- Run automatic updates from external sources, executed regularly (GitHub action)
 make add-token asset_id=c60_t0x4Fabb145d64652a948d72533023f6E7A623C7C53 -- Create info.json file as asset template.
