@@ -7,6 +7,19 @@
     "description": "By using the Noorapayment POS device, you can receive cryptocurrency payments from your customers.",
     "explorer": "https://bscscan.com/token/0x9271d06D130990c23dC9d473813A2418Bd82914B",
     "status": "active",
-    "id": "0x9271d06D130990c23dC9d473813A2418Bd82914B"
+    "id": "0x9271d06D130990c23dC9d473813A2418Bd82914B",
+    "tags": [
+        "noora-payment"
+    ],
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://x.com/Noora_payment"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://noorapayment.com/Noora_present.pdf"
+        }
+    ]
      
 }
