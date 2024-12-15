@@ -1,0 +1,24 @@
+{
+    "name": "Fantom USD Coin",
+    "website": "https://wbtc.network",
+    "description": "USD Coin fantom (USDCf) ERC20 token on Fantom Network backed 1:1 with USDC.",
+    "explorer": "https://ftmscan.com/token/0xf3F328e404b3cbF7dC611fFf9E7692Dc0949f07F",
+    "type": "FANTOM",
+    "symbol": "USDCf",
+    "decimals": 18,
+    "status": "active",
+    "id": "0xf3F328e404b3cbF7dC611fFf9E7692Dc0949f07F",
+    "tags": [
+        "defi"
+    ],
+    "links": [
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/dexscan/fantom/0x054673a6a8f526f5fa53784342eb0bdd7d21bb76"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://www.geckoterminal.com/ftm/pools/0x054673a6a8f526f5fa53784342eb0bdd7d21bb76"
+        }
+    ]
+}
