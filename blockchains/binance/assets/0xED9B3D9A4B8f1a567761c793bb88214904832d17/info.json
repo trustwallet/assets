@@ -1,5 +1,6 @@
 {
   "name": "RAGSCOIN2.0",
+  "id": "RAGSCOIN2.0",
   "symbol": "RAGSCOIN2.0",
   "type": "BEP2",
   "decimals": 9,
@@ -7,6 +8,7 @@
   "website": "https://www.ragscoin.io/",
   "explorer": "https://bscscan.com/token/0xED9B3D9A4B8f1a567761c793bb88214904832d17",
   "status": "active",
+  "tags": ["Ragscoin2", "RAGSCOIN2.0", "BEP20", "hybrid", "Intelligence"],
   "links": [
     {
       "name": "X",
@@ -18,11 +20,7 @@
     },
     {
       "name": "reddit",
-      "url": "https://www.reddit.com/r/Ragscoin/"
-    },
-    {
-      "name": "policy",
-      "url": "https://www.ragscoin.io/assets/doc/Rags_Policy.pdf"
+      "url": "https://www.reddit.com/r/Ragscoin"
     }
   ]
 }
