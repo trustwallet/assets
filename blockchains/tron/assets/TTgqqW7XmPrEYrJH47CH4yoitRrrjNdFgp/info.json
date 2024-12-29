@@ -7,13 +7,22 @@
   "id": "TTgqqW7XmPrEYrJH47CH4yoitRrrjNdFgp",
   "type": "TRC20",
   "website": "https://yourwebsite.com",
-  "explorer": "https://tronscan.org/#/token20/TTgqqW7XmPrEYrJH47CH4yoitRrrjNdFgp",
+  "explorer": "https://tronscan.io/#/token20/TTgqqW7XmPrEYrJH47CH4yoitRrrjNdFgp",
   "status": "active",
   "tags": ["stablecoin"],
-  "links": {
-    "github": "https://github.com/KambisAtossa/assets",
-    "twitter": "https://x.com/QuickShooters",
-    "telegram": "https://t.me/QuickShootersIncorporated"
-  },
+  "links": [
+    {
+      "name": "github",
+      "url": "https://github.com/KambisAtossa/assets"
+    },
+    {
+      "name": "twitter",
+      "url": "https://x.com/QuickShooters"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/QuickShootersIncorporated"
+    }
+  ],
   "description": "Tether USD (USDT) is a stablecoin that mirrors the value of the US dollar."
 }
