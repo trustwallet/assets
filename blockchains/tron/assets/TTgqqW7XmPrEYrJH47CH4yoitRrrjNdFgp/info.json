@@ -3,5 +3,11 @@
   "symbol": "USDT",
   "decimals": 6,
   "contract": "TTgqqW7XmPrEYrJH47CH4yoitRrrjNdFgp",
-  "blockchain": "tron"
+  "blockchain": "tron",
+  "type": "TRC20",
+  "website": "https://yourwebsite.com",
+  "explorer": "https://tronscan.org/#/contract/TTgqqW7XmPrEYrJH47CH4yoitRrrjNdFgp",
+  "status": "active",
+  "tags": ["stablecoin", "usd"],
+  "description": "Tether USD (USDT) is a stablecoin that mirrors the value of the US dollar."
 }
