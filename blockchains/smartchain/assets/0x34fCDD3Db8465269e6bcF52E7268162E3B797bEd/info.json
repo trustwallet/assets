@@ -1,12 +1,13 @@
 {
     "name": "MBX TOKEN",
+	"type": "BEP20",
+	"symbol": "MBX",
+	"decimals": 18,
     "website": "https://mbxtoken.com",
     "description": "MBX TOKEN is an investment-focused token. Users can deposit tokens into the contract and withdraw profits periodically based on their selected investment plan.",
     "explorer": "https://bscscan.com/token/0x34fCDD3Db8465269e6bcF52E7268162E3B797bEd",
-    "symbol": "MBX",
-    "type": "token",
-    "decimals": 18,
     "status": "active",
+	"id": "0x34fCDD3Db8465269e6bcF52E7268162E3B797bEd",
     "tags": [
         "investment",
         "profit-sharing"
