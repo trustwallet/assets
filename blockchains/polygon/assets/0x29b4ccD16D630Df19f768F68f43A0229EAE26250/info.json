@@ -1,33 +1,32 @@
 {
     "name": "ATRNO",
-    "website": "https://aeternus.foundation/",
-    "description": "The multi-utility token will ease down your daily Hussle. Aeterno Token is a new way of doing things.",
-    "explorer": "https://polygonscan.com/token/0x29b4ccD16D630Df19f768F68f43A0229EAE26250",
+    "website": "https://aeternus.foundation",
+    "description": "ATRNO is token for multi utility retail payment purpose. It will be mother coin of Aeternus Blockchain soon.",
+    "explorer": "https://polygonscan.com/token/0x29b4ccd16d630df19f768f68f43a0229eae26250",
     "type": "POLYGON",
     "symbol": "ATRNO",
     "decimals": 18,
     "status": "active",
-    "id": "0x29b4ccD16D630Df19f768F68f43A0229EAE26250",
+    "id": "0x29b4ccd16d630df19f768f68f43a0229eae26250",
+    "tags": [
+        "defi, multiutility, retail, gamefi"
+    ],
     "links": [
         {
-            "name": "github",
-            "url": "https://github.com/aeternusfoundation/ATRNO-Token"
-        },
-        {
             "name": "twitter",
-            "url": "https://twitter.com/AeternusF"
-        },
-        {
-            "name": "coinmarketcap",
-            "url": "https://coinmarketcap.com/currencies/aeternus/"
+            "url": "https://x.com/AeternusF"
         },
         {
             "name": "telegram",
             "url": "https://t.me/aeternusfoundation"
         },
         {
-            "name": "medium",
-            "url": "https://medium.com/@aeternusfoundation_11096"
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/aeternus/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://www.geckoterminal.com/polygon_pos/pools/0x0fd8b69778037ad91e52e18f4f52ecae62f68c08"
         }
     ]
 }
