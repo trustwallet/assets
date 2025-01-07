@@ -3,9 +3,10 @@
   "type": "SPL",
   "symbol": "AURA",
   "decimals": 8,
+  "logoURI": "https://i.imgur.com/I7JIAQl.png",
   "description": "Aura is a next-generation cryptocurrency designed to provide cost-efficient international payments.",
   "coin-website": "https://www.auracoinsol.com",
-  "company-website": "https://auranetwork.io",  // In Progress
+  "company-website": "https://auranetwork.io",
   "explorer": "https://solscan.io/account/53CyLimctpVQijWkgonSG1s46YBTgu5fL5vDq1Rep1Q6",
   "id": "28SmfcNAVz7F9Eq6nNUcUiEQ3f6CHyPAKeBVqmYSgaUu",
   "links": [
@@ -37,6 +38,5 @@
       "name": "coingecko",
       "url": "https://www.geckoterminal.com/solana/pools/CFRoofrnizQjUWp3VCG7XMuiPvykmiSR995QwTW1GPSe?utm_source=coingecko&utm_medium=referral&utm_campaign=searchresults"
     }
-  ],
-  "tags": ["coin", "solana", "crypto"] // Add relevant tags
+  ]
 }
