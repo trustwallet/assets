@@ -8,9 +8,22 @@
     "type": "BEP20",
     "status": "active",
     "id": "0x8ff6881b6101cE426B719519cc41910DdAD4567c",
-	"tags": ["defi"],
 	"links": [
-		"https://twitter.com/tether_quest",
-		"https://t.me/tether_is_usdt"
-	]
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/tether_quest"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/tether_is_usdt"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://tether-usdt.gitbook.io/tether.quest-whitelist"
+        }
+    ],
+	"tags": [
+        "nft",
+        "memes"
+    ]
 }
