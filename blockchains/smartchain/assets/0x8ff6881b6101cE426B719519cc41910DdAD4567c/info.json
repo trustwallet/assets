@@ -5,7 +5,7 @@
     "description": "The stablecoin in quest world",
     "website": "https://tether.quest",
     "explorer": "https://bscscan.com/token/0x8ff6881b6101cE426B719519cc41910DdAD4567c",
-	"research": "",
+	"holders": "5",
     "type": "BEP20",
     "status": "active",
     "id": "0x8ff6881b6101cE426B719519cc41910DdAD4567c",
@@ -25,6 +25,6 @@
     ],
 	"tags": [
         "stablecoin"
-    ],
-	"holders": "5"
+    ]
+	
 }
