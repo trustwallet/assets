@@ -8,9 +8,9 @@
     "type": "BEP20",
     "status": "active",
     "id": "0x8ff6881b6101cE426B719519cc41910DdAD4567c",
+	"tags": ["defi"],
 	"links": [
-		{ "url": "https://twitter.com/tether_quest" },
-		{ "url": "https://t.me/tether_is_usdt" }
-	],
-	"tags": ["defi"]
+		"https://twitter.com/tether_quest",
+		"https://t.me/tether_is_usdt"
+	]
 }
