@@ -2,11 +2,14 @@
   "name": "BeeBucks",
   "symbol": "BBUX",
   "decimals": 18,
-  "description": "BeeBucks is a fun and mission-driven token for community rewards and conservation.",
+  "description": "BeeBucks is a fun and mission-driven token for community rewards and honeybee conservation.",
   "website": "https://www.beekingshoney.com/beebucks",
+  "type": "token",
+  "explorer": "https://bscscan.com/token/0x09617048875C6Cd1E34231f3C691DFA21d19187d",
   "socials": {
-    "twitter": "https://twitter.com/beekingsco"
+    "twitter": "https://twitter.com/beekingsco",
+    "telegram": "https://t.me/beekingsco"
   },
-  "status": "active",
+  "tags": ["community", "meme", "defi"],
   "id": "0x09617048875C6Cd1E34231f3C691DFA21d19187d"
 }
