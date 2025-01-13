@@ -4,12 +4,14 @@
   "decimals": 18,
   "description": "BeeBucks is a fun and mission-driven token for community rewards and honeybee conservation.",
   "website": "https://www.beekingshoney.com/beebucks",
-  "type": "token",
+  "type": "ERC20",
+  "status": "active",
   "explorer": "https://bscscan.com/token/0x09617048875C6Cd1E34231f3C691DFA21d19187d",
   "socials": {
     "twitter": "https://twitter.com/beekingsco",
     "facebook": "https://facebook.com/beekingsco"
+    "telegram": "https://t.me/beekingsco"
   },
-  "tags": ["community", "meme", "defi"],
+  "tags": ["meme", "defi"],
   "id": "0x09617048875C6Cd1E34231f3C691DFA21d19187d"
 }
