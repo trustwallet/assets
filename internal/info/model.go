@@ -35,7 +35,7 @@ type (
 		Ticker        *string  `json:"ticker,omitempty"`
 		ExplorerEth   *string  `json:"explorer-ETH,omitempty"`
 		Address       *string  `json:"address,omitempty"`
-		Twitter       *string  `json:"twitter,omitempty"`
+		X             *string  `json:"x,omitempty"`
 		CoinMarketcap *string  `json:"coinmarketcap,omitempty"`
 		DataSource    *string  `json:"data_source,omitempty"`
 	}
