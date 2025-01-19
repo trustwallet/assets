@@ -8,10 +8,10 @@
     "id": "0xc023323bD53ED90a3bE5C49AB8819Defd421F39E",
     "type": "token",
     "status": "active",
-    "links": {
-        "twitter": "https://twitter.com/yourtoken",
-        "telegram": "https://t.me/yourtoken",
-        "github": "https://github.com/yourproject"
-    },
+    "links": [
+        "https://twitter.com/yourtoken",
+        "https://t.me/yourtoken",
+        "https://github.com/yourproject"
+    ],
     "tags": ["meme", "ai"]
 }
