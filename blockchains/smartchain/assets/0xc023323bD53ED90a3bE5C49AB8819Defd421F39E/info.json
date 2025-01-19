@@ -4,6 +4,14 @@
     "decimals": 18,
     "description": "A meme coin powered by AI and technology.",
     "website": "https://yourwebsite.com",
-    "explorer": "https://bscscan.com/token/<indirizzo_del_tuo_contratto>",
-    "id": "<indirizzo_del_tuo_contratto>"
+    "explorer": "https://bscscan.com/token/0xc023323bD53ED90a3bE5C49AB8819Defd421F39E",
+    "id": "0xc023323bD53ED90a3bE5C49AB8819Defd421F39E",
+    "type": "token",
+    "status": "active",
+    "links": {
+        "twitter": "https://twitter.com/yourtoken",
+        "telegram": "https://t.me/yourtoken",
+        "github": "https://github.com/yourproject"
+    },
+    "tags": ["meme", "ai"]
 }
