@@ -1,6 +1,6 @@
 {
     "name": "Based Monsta",
-    "type": "ERC20",
+    "type": "BASE",
     "symbol": "MONSTA",
     "decimals": 18,
     "description": "Based Monsta ($MONSTA) is a deflationary token on Base chain, powering a gamified DeFi ecosystem with vault-backed rewards, innovative gameplay, and sustainable growth.",
@@ -31,7 +31,7 @@
         },
         {
             "name": "coingecko",
-            "url": "https://www.coingecko.com/en/coins/based-monsta"
+            "url": "https://coingecko.com/en/coins/based-monsta"
         },
         {
             "name": "coinmarketcap",
@@ -47,8 +47,7 @@
         }
     ],
     "tags": [
-        "meme",
-        "community",
+        "defi",
         "gamefi",
         "vault"
     ]
