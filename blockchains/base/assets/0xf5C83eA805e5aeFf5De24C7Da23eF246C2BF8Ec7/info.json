@@ -5,15 +5,16 @@
     "decimals": 18,
     "description": "Based Monsta ($MONSTA) is a deflationary token on Base chain, powering a gamified DeFi ecosystem with vault-backed rewards, innovative gameplay, and sustainable growth.",
     "website": "https://monstacorp.com/based-monsta",
-    "explorer": "https://basescan.com",
+    "explorer": "https://basescan.org/token/0xf5C83eA805e5aeFf5De24C7Da23eF246C2BF8Ec7",
     "id": "0xf5C83eA805e5aeFf5De24C7Da23eF246C2BF8Ec7",
+    "status": "active",
     "links": [
         {
-            "name": "gitbook",
+            "name": "docs",
             "url": "https://docs.monstacorp.com/based-monsta"
         },
         {
-            "name": "x",
+            "name": "twitter",
             "url": "https://x.com/BasedMonsta"
         },
         {
@@ -23,12 +24,32 @@
         {
             "name": "github",
             "url": "https://github.com/monsta-corp"
+        },
+        {
+            "name": "youtube",
+            "url": "https://youtube.com/@monstacorp"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://www.coingecko.com/en/coins/based-monsta"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/based-monsta"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/BasedMonsta"
+        },
+        {
+            "name": "telegram_news",
+            "url": "https://t.me/BasedMonstaNews"
         }
     ],
     "tags": [
-        "DeFi",
-        "GameFi",
-        "Vault",
-        "Meme"
+        "meme",
+        "community",
+        "gamefi",
+        "vault"
     ]
 }
