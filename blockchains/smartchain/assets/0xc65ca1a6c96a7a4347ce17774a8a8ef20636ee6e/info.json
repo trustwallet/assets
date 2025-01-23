@@ -5,17 +5,21 @@
     "explorer": "https://bscscan.com",
     "research": "https://research.binance.com/en/projects/bnb",
     "symbol": "VGC",
-    "type": "coin",
+    "type": "BEP20",
     "decimals": 18,
+    "id": "0xc65ca1a6c96a7a4347ce17774a8a8ef20636ee6e",
     "status": "active",
+    "tags": [
+        "GameFi","AI"
+    ],
     "links": [
         {
             "name": "github",
             "url": "https://github.com/VGC-Team/VirtualGameCoin"
         },
         {
-            "name": "x",
-            "url": "https://x.com/VGC_DAO"
+            "name": "twitter",
+            "url": "https://twitter.com/VGC_DAO"
         }
 
     ]
