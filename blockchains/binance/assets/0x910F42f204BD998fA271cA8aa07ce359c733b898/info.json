@@ -1,36 +1,29 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2821
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 HelveticaNeue;}
-{\colortbl;\red255\green255\blue255;\red0\green0\blue109;\red247\green247\blue247;\red51\green51\blue51;
-\red210\green0\blue53;\red13\green16\blue19;\red255\green255\blue255;\red17\green137\blue135;}
-{\*\expandedcolortbl;;\cssrgb\c0\c0\c50196;\cssrgb\c97647\c97647\c97647;\cssrgb\c26275\c26275\c26275;
-\cssrgb\c86667\c6667\c26667;\cssrgb\c5882\c7843\c9804;\cssrgb\c100000\c100000\c100000;\cssrgb\c0\c60000\c60000;}
-\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\deftab720
-\pard\pardeftab720\partightenfactor0
-
-\f0\fs30 \cf2 \cb3 \expnd0\expndtw0\kerning0
-\{\cf4 \
-    "name"\cf2 :\cf4  \cf5 \cb3 \'93Vault \'93Zero\cf2 \cb3 ,\cf4 \
-    "website"\cf2 :\cf4  \cf5 \cb3 "{\field{\*\fldinst{HYPERLINK "https://www.vaultzero.ai/"}}{\fldrslt https://www.vaultzero.ai}}"\cf2 \cb3 ,\cf4 \
-    "description"\cf2 :\cf4  \cf5 \cb3 "
-\f1 \cf6 \cb7 The 1st gamified multi-agent AI platform on Web3. A unique blend of AI, strategy, and decentralized rewards.
-\f0 \cf5 \cb3 "\cf2 \cb3 ,\cf4 \
-    "explorer"\cf2 :\cf4  \cf5 \cb3 "{\field{\*\fldinst{HYPERLINK "https://bscscan.com/address/0x910F42f204BD998fA271cA8aa07ce359c733b898"}}{\fldrslt https://bscscan.com/address/0x910F42f204BD998fA271cA8aa07ce359c733b898}}"\cf2 \cb3 ,\cf4 \
-    "symbol"\cf2 :\cf4  \cf5 \cb3 \'93VZ\'94\cf2 \cb3 ,\cf4 \
-    "type"\cf2 :\cf4  \cf5 \cb3 "coin"\cf2 \cb3 ,\cf4 \
-    "decimals"\cf2 :\cf4  \cf8 \cb3 18\cf2 \cb3 ,\cf4 \
-    "status"\cf2 :\cf4  \cf5 \cb3 "active"\cf2 \cb3 ,\cf4 \
-    "tags"\cf2 :\cf4  \cf2 [\cf4 \
-        \cf5 \cb3 \'93AI-gaming-defi\'94\cf4 \cb3 \
-    \cf2 ],\cf4 \
-    "links"\cf2 :\cf4  \cf2 [\cf4 \
-        \cf2 \{\cf4 \
-            "name"\cf2 :\cf4  \cf5 \cb3 "twitter"\cf2 \cb3 ,\cf4 \
-            "url"\cf2 :\cf4  \cf5 \cb3 "{\field{\*\fldinst{HYPERLINK "https://x.com/vaultzeroai"}}{\fldrslt https://x.com/vaultzeroai}}\'94\cf4 \cb3 \
-        \cf2 \},\cf4 \
-        \cf2 \{\cf4 \
-            "name"\cf2 :\cf4  \cf5 \cb3 \'93discord\'94\cf2 \cb3 ,\cf4 \
-            "url"\cf2 :\cf4  \cf5 \cb3 "{\field{\*\fldinst{HYPERLINK "https://discord.com/invite/vaultzero"}}{\fldrslt https://discord.com/invite/vaultzero}}"\cf4 \cb3 \
-        \cf2 \},\cf4 \
-    \cf2 ]\cf4 \
-\cf2 \}}
+{
+    "name": "Vault Zero",
+    "website": "https://vaultzero.ai",
+    "description": "The 1st gamified multi-agent AI platform on Web3. A unique blend of AI, strategy, and decentralized rewards.",
+    "explorer": "https://bscscan.com/token/0x910F42f204BD998fA271cA8aa07ce359c733b898",
+    "research": "https://vaultzero.ai/how-it-works",
+    "symbol": "VZ",
+    "type": "token",
+    "decimals": 18,
+    "status": "active",
+    "tags": [
+        "defi",
+        "vaults",
+        "AI",
+        "gamified"
+    ],
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/vaultzero"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.gg/vaultzero"
+        }
+    ],
+    "contract_address": "0x910F42f204BD998fA271cA8aa07ce359c733b898",
+    "chain": "Binance Smart Chain"
+}
