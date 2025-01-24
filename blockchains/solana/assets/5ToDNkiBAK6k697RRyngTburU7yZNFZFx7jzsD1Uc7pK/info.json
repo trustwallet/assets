@@ -1,21 +1,25 @@
 {
-    "name": "NPC Solana",
-    "symbol": "ZUSD",
-    "type": "SPL",
-    "decimals": 6,
-    "description": "Meme for all Solana fans. We provide some of the most detailed and impressive meme's of Wojak, the worlds most recognizable NPC meme, across all social media platforms.",
-    "website": "https://www.solananpc.com/",
-    "explorer": "https://solscan.io/token/5ToDNkiBAK6k697RRyngTburU7yZNFZFx7jzsD1Uc7pK",
-    "status": "active",
-    "id": "5ToDNkiBAK6k697RRyngTburU7yZNFZFx7jzsD1Uc7pK",
-    "links": [
-      {
-        "name": "twitter",
-        "url": "https://twitter.com/npcsolananews"
-      },
-      {
-        "name": "coinmarketcap",
-        "url": "https://coinmarketcap.com/currencies/non-playable-coin-solana"
-      }
-    ]
-  }
+  "name": "NPC Solana",
+  "symbol": "NPCS",
+  "type": "SPL",
+  "decimals": 9,
+  "description": "Meme for all Solana fans. We provide some of the most detailed and impressive meme's of Wojak, the worlds most recognizable NPC meme, across all social media platforms.",
+  "website": "https://www.solananpc.com/",
+  "explorer": "https://solscan.io/token/5ToDNkiBAK6k697RRyngTburU7yZNFZFx7jzsD1Uc7pK",
+  "status": "active",
+  "id": "5ToDNkiBAK6k697RRyngTburU7yZNFZFx7jzsD1Uc7pK",
+  "links": [
+    {
+      "name": "x",
+      "url": "https://x.com/npcsolananews"
+    },
+    {
+      "name": "coinmarketcap",
+      "url": "https://coinmarketcap.com/currencies/non-playable-coin-solana"
+    }
+  ],
+  "tags": [
+    "memes",
+    "defi"
+  ]
+}
