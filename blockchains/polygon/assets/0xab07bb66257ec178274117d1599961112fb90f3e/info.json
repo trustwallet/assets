@@ -9,11 +9,23 @@
   "status": "active",
   "id": "0xab07Bb66257EC178274117D1599961112fB90F3e",
   "logoURI": "https://lxkeys.eu/wp-content/uploads/2025/01/logo.png",
-  "links": {
-    "website": "https://lxkeys.com",
-    "github": "https://github.com/LXK-Admin",
-    "facebook": "https://www.facebook.com/LXKeys",
-    "telegram": "https://t.me/LXKeys"
-  },
+  "links": [
+    {
+      "name": "website",
+      "url": "https://lxkeys.com"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/LXK-Admin"
+    },
+    {
+      "name": "facebook",
+      "url": "https://www.facebook.com/LXKeys"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/LXKeys"
+    }
+  ],
   "tags": ["defi"]
 }
