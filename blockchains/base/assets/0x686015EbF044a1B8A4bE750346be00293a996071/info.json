@@ -1,12 +1,12 @@
 {
     "name": "Minds",
-    "type": "ERC20",
+    "type": "BASE",
     "symbol": "MINDS",
     "decimals": 18,
     "description": "Minds Tokens are the fuel of the Minds network.",
     "website": "https://www.minds.com/",
     "explorer": "https://basescan.org/token/0x686015ebf044a1b8a4be750346be00293a996071",
-    "id": "0x686015ebf044a1b8a4be750346be00293a996071",
+    "id": "0x686015EbF044a1B8A4bE750346be00293a996071",
     "status": "active",
     "links": [
         {
@@ -15,10 +15,7 @@
         },
         {
             "name": "coingecko",
-            "url": "https://www.coingecko.com/en/coins/minds"
+            "url": "https://coingecko.com/"
         }
-    ],
-    "tags": [
-        "social"
     ]
 }
