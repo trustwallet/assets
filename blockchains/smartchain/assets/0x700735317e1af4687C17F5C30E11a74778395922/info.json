@@ -1,29 +1,30 @@
 {
     "name": "MeshChainCoin",
-    "website": "https://meshchain.ai",
-    "description": "Meshchain combines AI and Blockchain Technology to create a secure, transparent ecosystem.",
-    "explorer": "https://bscscan.com/token/0x700735317e1af4687c17f5c30e11a74778395922",
-    "symbol": "MCC",
     "type": "BEP20",
+    "symbol": "MCC",
     "decimals": 18,
+    "website": "https://meshchain.ai",
+    "description": "MeshChainCoin (MCC) merges AI-powered automation with Decentralized Physical Infrastructure Networks (DePIN), optimizing blockchain-driven mining and real-world connectivity. With advanced scalability and security, MCC redefines the future of AI-integrated decentralized ecosystems.",
+    "explorer": "https://bscscan.com/token/0x700735317e1af4687C17F5C30E11a74778395922",
     "status": "active",
     "id": "0x700735317e1af4687C17F5C30E11a74778395922",
-    "tags": [
-        "defi",
-        "dapp"
-    ],
     "links": [
         {
-            "name": "telegram",
-            "url": "https://t.me/meshchainai"
+            "name": "x",
+            "url": "https://x.com/MeshchainAi"
         },
         {
-            "name": "discord",
-            "url": "https://discord.com/invite/eg4pg9V8"
+            "name": "telegram",
+            "url": "https://t.me/MeshchainAi"
         },
         {
             "name": "whitepaper",
             "url": "https://docs.meshchain.ai/introduction/whitepaper"
         }
+    ],
+    "tags": [
+        "defi",
+        "dapp",
+        "staking"
     ]
 }
