@@ -1,11 +1,42 @@
 {
-    "name": "Dusk Network",
+    "name": "Dusk",
+    "website": "https://dusk.network/",
+    "description": "An open source and secure blockchain (DLT) infrastructure that businesses use to tokenize financial instruments and automate costly processes.",
+    "explorer": "https://bscscan.com/token/0xb2bd0749dbe21f623d9baba856d3b0f0e1bfec9c",
     "symbol": "DUSK",
     "type": "BEP2",
     "decimals": 8,
-    "description": "An open source and secure blockchain (DLT) infrastructure that businesses use to tokenize financial instruments and automate costly processes.",
-    "website": "https://dusk.network/",
-    "explorer": "https://explorer.binance.org/asset/DUSK-45E",
+    "id": "DUSK-45E",
     "status": "active",
-    "id": "DUSK-45E"
+    ],
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/dusk-network/dusk-blockchain"
+        },
+        {
+            "name": "twitter",
+            "url": "https://x.com/DuskFoundation"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/DuskNetwork/"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me.com/DuskNetwork"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.gg/dusk-official"
+        },
+        {
+            "name": "linkedin",
+            "url": "https://www.linkedin.com/company/dusknetwork/"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://dusk-cms.ams3.digitaloceanspaces.com/Dusk_Whitepaper_2024_4db72f92a1.pdf"
+        }
+    ]
 }
