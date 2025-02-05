@@ -2,8 +2,14 @@
   "name": "BUDDHA",
   "symbol": "BUDDHA",
   "decimals": 18,
-  "description": "BUDDHA is a lucky charm token that brings prosperity and good fortune to holders. Holding just 1 USD worth of BUDDHA in your wallet is believed to bring luck and wealth.",
-  "website": "https://yourwebsite.com",
+  "description": "BUDDHA is a lucky charm token created to symbolize good fortune and prosperity for its holders. Simply having BUDDHA stored in your digital wallet might enhance your luck and bring positive energy into your life.",
+  "type": "BEP20",
+  "website": "https://github.com/realsagiza/buddha",
+  "explorer": "https://bscscan.com/token/0xFE38FAdCB8829781BB1560ac06Ff79DfF0075EB0",
+  "links": {
+    "github": "https://github.com/realsagiza/buddha"
+  },
+  "tags": ["lucky", "charm", "bep20"],
   "status": "active",
   "id": "0xFE38FAdCB8829781BB1560ac06Ff79DfF0075EB0"
 }
