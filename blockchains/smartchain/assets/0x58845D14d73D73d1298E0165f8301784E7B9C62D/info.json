@@ -5,6 +5,13 @@
   "description": "CKAN Coin is a meme-inspired cryptocurrency built on Binance Smart Chain.",
   "website": "https://warriorckan.com",
   "explorer": "https://bscscan.com/token/0x58845D14d73D73d1298E0165f8301784E7B9C62D",
+  "type": "BEP20",
   "status": "active",
-  "id": "0x58845D14d73D73d1298E0165f8301784E7B9C62D"
+  "id": "0x58845D14d73D73d1298E0165f8301784E7B9C62D",
+  "links": {
+    "twitter": "https://x.com/CkanCoin",
+    "github": "https://github.com/CKANcoin",
+    "telegram": "https://t.me/CKANCoin"
+  },
+  "tags": ["meme", "gaming", "DeFi"]
 }
