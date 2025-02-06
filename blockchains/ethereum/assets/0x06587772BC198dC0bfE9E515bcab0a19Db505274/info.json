@@ -1,8 +1,12 @@
 {
-  "name": "Shiro Coin",
-  "symbol": "$Trains",
-  "decimals": 18,
-  "description": "The official SHIRO COIN ($Trains). Give it up for Crown Comedy!",
-  "website": "https://instagram.com/shiro.help.me",
-  "image": "https://raw.githubusercontent.com/S-Kumara/assets/refs/heads/master/blockchains/ethereum/assets/0x06587772BC198dC0bfE9E515bcab0a19Db505274/logo.png"
+    "name": "Shiro Coin",
+    "symbol": "$Trains",
+    "type": "ERC20",
+    "decimals": 8,
+    "description": "The official SHIRO COIN ($Trains). Give it up for Crown Comedy!",
+    "website": "instagram.com/shiro.help.me,  instagram.com/crown_comedy_sydney",
+"image": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/YOUR_CHECKSUMMED_CONTRACT_ADDRESS/logo.png"
+    "explorer": "https://etherscan.io/address/0x06587772BC198dC0bfE9E515bcab0a19Db505274",
+    "status": "active",
+    "id": "0x06587772BC198dC0bfE9E515bcab0a19Db505274"
 }
