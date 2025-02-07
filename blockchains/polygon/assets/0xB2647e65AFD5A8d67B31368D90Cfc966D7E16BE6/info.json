@@ -1,21 +1,23 @@
-    {
-        "name": "MarsFireCoin (MFC)",
-        "symbol": "MFC",
-        "type": "POLYGON",
-        "decimals": 18,
-        "description": "MarsFireCoin (MFC) powers Learn-to-Earn games by rewarding users for acquiring knowledge, enabling seamless integration of education and blockchain technology across multi-chain platforms.",
-        "website": "https://marsfirecoin.github.io/",
-        "explorer": "https://polygonscan.com/token/0xb2647e65afd5a8d67b31368d90cfc966d7e16be6",
-        "status": "active",
-        "id": "0xb2647e65afd5a8d67b31368d90cfc966d7e16be6",
-        "links": [
-            {
-                "name": "x",
-                "url": "https://twitter.com/MarsFireCoin"
-            },
-            {
-                "name": "telegram",
-                "url": "https://t.me/MarsFireCoin"
-            }
-        ]
-    }
+{
+    "name": "MarsFireCoin (MFC)",
+    "symbol": "MFC",
+    "type": "POLYGON",
+    "decimals": 18,
+    "description": "MarsFireCoin (MFC) powers Learn-to-Earn games by rewarding users for acquiring knowledge, enabling seamless integration of education and blockchain technology across multi-chain platforms.",
+    "website": "https://marsfirecoin.github.io/",
+    "explorer": "https://polygonscan.com/token/0xb2647e65afd5a8d67b31368d90cfc966d7e16be6",
+    "status": "active",
+    "id": "0xb2647e65afd5a8d67b31368d90cfc966d7e16be6",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/MarsFireCoin"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/MarsFireCoin"
+        }
+    ],
+    "tags": ["DeFi", "GameFi"],
+    "holders": 7
+}
