@@ -3,6 +3,17 @@
     "logoURI": "https://trustwallet.com/assets/images/favicon.png",
     "timestamp": "2024-02-01T14:23:26.183301",
     "tokens": [
+         {
+            "asset": "c501_t2FHceNu1xZsKRjAcXp4a6NUvdbtC2MuqYKATF9ujrg6pWQ",
+            "type": "SPL",
+            "address": "HceNu1xZsKRjAcXp4a6NUvdbtC2MuqYKATF9ujrg6pWQ",
+            "name": "USDX",
+            "symbol": "USDX",
+            "decimals": 9,
+             
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/solana/assets/HceNu1xZsKRjAcXp4a6NUvdbtC2MuqYKATF9ujrg6pWQ/logo.png",
+            "pairs": []
+        },
         {
             "asset": "c501_t2FPyTwcZLUg1MDrwsyoP4D6s1tM7hAkHYRjkNb5w6Pxk",
             "type": "SPL",
