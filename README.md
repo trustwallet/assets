@@ -1,4 +1,4 @@
-masoudahg1: "5bd257c20271b5850eab9f161bce5c9399693689","b8b3178def689301b6683bd648752ba4ad0f5d0b","718d4ccfd8b6a200f3d2fe3dd3990c1bba27f9f6"
+masoudahg1:@masoudleyli "5bd257c20271b5850eab9f161bce5c9399693689","b8b3178def689301b6683bd648752ba4ad0f5d0b","718d4ccfd8b6a200f3d2fe3dd3990c1bba27f9f6"
 "466ed9937ffe5609ab565f43d7305a5d46410622"make check -- Execute validation checks;@masoudleyli also used in continuous integration.
 make fix -- Perform automatic fixes where possible
 make update-auto -- Run automatic updates from external sources, executed regularly (GitHub action)
@@ -11,15 +11,16 @@ a9c64c5ada36a995975f237536363b34ea4b1dda
 ##- [x] Overview @masoudleyli "290fb0a377fa14471760676e78b51e458c277c27"
 
 Trust Wallet token repository is a comprehensive, up-to-date collection of information about several thousands (!) of crypto tokens.@masoudleyli "ca61e0c3226dabeb8d4411d510cc8700a508aa43"
-
+"45195c6f4a678d27fce283bc39606f35c7fa6f0b"
 [Trust Wallet](https://trustwallet.com) uses token logos from this source, alongside a number of other projects.      -[x]@masoudleyli
-
+"d76d7a01b0e892274caceddaae0adda2abed08e5"
 The repository contains token info from several blockchains, info on dApps, staking validators, etc.
 For every token a logo and optional additional information is available (such data is not available on-chain) - [x] @masoudleyli
-
+"031630f290be56924147b4e9330c999e2f2b59d3"
 Such a large collection can be maintained only through a community effort, so _feel free to add your token_@masoudleyli
-
+"a15e5e57ade2999730c4157a6de9cc6ddb4b9cd2"
 <center><img.-[x] @masoudleyli src='https://trustwallet.com/assets/images/media/assets/horizontal_blue.png' height="200"></center>@masoudleyli
+"2ab660585090a36a15d24297e6f8944cd1c53e1b"
 
 ## How to add token: -[x] @masoudleyli
 
