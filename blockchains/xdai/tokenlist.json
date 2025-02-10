@@ -1,0 +1,52 @@
+{
+    "name": "Trust Wallet: Fantom List",
+    "logoURI": "https://trustwallet.com/assets/images/favicon.png",
+    "timestamp": "2022-07-14T17:19:11.183301",
+    "tokens": [
+        {
+            "asset": "c10000100_t0x71850b7E9Ee3f13Ab46d67167341E4bDc905Eef9",
+            "type": "XDAI",
+            "address": "0x71850b7E9Ee3f13Ab46d67167341E4bDc905Eef9",
+            "name": "Honey",
+            "symbol": "HNY",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/xdai/assets/0x71850b7E9Ee3f13Ab46d67167341E4bDc905Eef9/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c10000100_t0x0116e28B43A358162B96f70B4De14C98A4465f25",
+            "type": "XDAI",
+            "address": "0x0116e28B43A358162B96f70B4De14C98A4465f25",
+            "name": "UniCrypt",
+            "symbol": "UNCX",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/xdai/assets/0x0116e28B43A358162B96f70B4De14C98A4465f25/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c10000100_t0xC25AF3123d2420054c8fcd144c21113aa2853F39",
+            "type": "XDAI",
+            "address": "0xC25AF3123d2420054c8fcd144c21113aa2853F39",
+            "name": "Xion Global Token",
+            "symbol": "XGT",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/xdai/assets/0xC25AF3123d2420054c8fcd144c21113aa2853F39/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c10000100_t0x1e16aa4Df73d29C029d94CeDa3e3114EC191E25A",
+            "type": "XDAI",
+            "address": "0x1e16aa4Df73d29C029d94CeDa3e3114EC191E25A",
+            "name": "Moons",
+            "symbol": "XMOON",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/xdai/assets/0x1e16aa4Df73d29C029d94CeDa3e3114EC191E25A/logo.png",
+            "pairs": []
+        }
+    ],
+    "version": {
+        "major": 1,
+        "minor": 0,
+        "patch": 0
+    }
+}
