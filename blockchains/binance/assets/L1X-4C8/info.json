@@ -1,0 +1,26 @@
+{
+    "name": "Layer One X",
+    "website": "https://www.l1x.foundation/",
+    "description": "Layer One X (L1X) is a fourth-generation decentralized platform designed to make interoperability between blockchains seamless and efficient. It allows developers to create new multi-chain applications or extend existing ones with cross-chain capabilities. It provides interoperability across EVM and altVM networks. As of February 2025, there are over 160 decentralized full validator nodes with over 2.5M+ Cross Chain Messages Passed. L1X has over 250,000 community members across its socials.\n\nThe network operates on a unique Proof-of-X consensus mechanism, ensuring security through staking while maintaining decentralization. L1X is supported by two types of nodes:\n• Full Validator Nodes (FVNs): Responsible for securing the blockchain’s state.\n• X-Talk Nodes: Handle cross-chain communication, enabling scalable and efficient multi-chain applications. It also features an inbuilt Oracle system.\n\nDevelopers have the flexibility to build on L1X using its high-performance Rust-based Virtual Machine with its proprietary compiler for WASM to eBPF for speed and efficiency. Alternatively, they can use Solidity, as L1X is fully EVM-compatible, making it easy to deploy applications across multiple blockchains.",
+    "explorer": "https://bscscan.com/address/0x64D1335b7B942385A60C50E57F647D1982F0C4C8",
+    "research": "https://docsend.com/view/yxxumg97x5mzv77v",
+    "symbol": "L1X",
+    "type": "coin",
+    "decimals": 18,
+    "status": "active",
+    "tags": [
+        "DeFi"
+    ],
+    "contract_address": "0x64D1335b7B942385A60C50E57F647D1982F0C4C8",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/LayerOneX"
+        },
+        {
+            "name": "twitter",
+            "url": "https://x.com/LayerOneX"
+        }
+    ],
+    "transaction_hash": "0x088ece5a938c16fab607605ee7b6ed49ba36848d70f12d75506a64e12d5b511f"
+}
