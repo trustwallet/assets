@@ -1,10 +1,14 @@
 {
-    "name": "HealthPay Token",
-    "symbol": "HPT",
-    "decimals": 18,
-    "description": "HealthPay Token is a digital asset for the healthcare sector.",
-    "website": "https://healthpaytoken.com/",
-    "explorer": "https://bscscan.com/address/0x1ab07811b3c16b4a18d08e756c289232d2d3234e",
-    "status": "active",
-    "id": "0x1AB07811B3C16b4a18D08e756c289232D2d3234E"
+  "name": "HealthPay Token",
+  "symbol": "HPT",
+  "decimals": 18,
+  "description": "HealthPay Token is a digital asset for seamless healthcare payments.",
+  "website": "https://healthpaytoken.com",
+  "github": "https://github.com/healthpaytoken",
+  "twitter": "https://x.com/healthpaytoken",
+  "explorer": "https://bscscan.com/token/0x1ab07811b3c16b4a18d08e756c289232d2d3234e",
+  "status": "active",
+  "id": "0x1ab07811b3c16b4a18d08e756c289232d2d3234e",
+  "type": "BEP20",
+  "tags": ["health", "payments", "crypto"]
 }
