@@ -1,15 +1,37 @@
 {
-  "name": "HealthPay Token",
-  "symbol": "HPT",
-  "decimals": 18,
-  "description": "HealthPay Token is a digital asset for seamless healthcare payments.",
-  "website": "https://healthpaytoken.com",
-  "github": "https://github.com/healthpaytoken",
-  "twitter": "https://x.com/healthpaytoken",
-  "explorer": "https://bscscan.com/token/0x1AB07811B3C16b4a18D08e756c289232D2d3234E",
-  "status": "active",
-  "id": "0x1AB07811B3C16b4a18D08e756c289232D2d3234E",
-  "type": "BEP20",
-  "tags": ["crypto", "defi"]
+    "name": "HealthPay Token",
+    "website": "https://healthpaytoken.com",
+    "description": "HealthPay Token is a digital asset designed for seamless healthcare payments and financial transactions in the medical sector.",
+    "explorer": "https://bscscan.com/token/0x1AB07811B3C16b4a18D08e756c289232D2d3234E",
+    "type": "BEP20",
+    "symbol": "HPT",
+    "decimals": 18,
+    "status": "active",
+    "id": "0x1AB07811B3C16b4a18D08e756c289232D2d3234E",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/healthpaytoken"
+        },
+        {
+            "name": "x",
+            "url": "https://x.com/healthpaytoken"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/healthpay-token"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/healthpaytoken"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/healthpay-token/"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/healthpaytoken"
+        }
+    ]
 }
-
