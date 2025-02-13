@@ -1,10 +1,18 @@
 {
-  "name": "Tether USDT",
+  "name": "Tether USD",
   "symbol": "USDT",
+  "type": "BEP20",
   "decimals": 6,
-  "description": "non tradable Tether on exchanges",
-  "website": "https://tether.org",
   "status": "active",
-  "id": "0xc12c767d9709f6c39399d9042f39d0060c88baec"
+  "id": "0xc12c767d9709f6c39399d9042f39d0060c88baec",
+  "logo": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xc12c767d9709f6c39399d9042f39d0060c88baec/logo.png",
+  "explorer": "https://bscscan.com/token/0xc12c767d9709f6c39399d9042f39d0060c88baec",
+  "website": "https://tether.to",
+  "description": "Tether (USDT) is a stablecoin pegged to the US Dollar and operates on multiple blockchains.",
+  "socials": {
+    "twitter": "https://twitter.com/Tether_to",
+    "github": "https://github.com/tether",
+    "telegram": "https://t.me/tether_to"
+  },
+  "tags": ["stablecoin"]
 }
-
