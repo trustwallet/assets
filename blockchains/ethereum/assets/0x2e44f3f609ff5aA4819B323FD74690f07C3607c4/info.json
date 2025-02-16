@@ -4,14 +4,23 @@
     "description": "PinLink is the first RWA-Tokenized DePIN platform, empowering users with fractionalized ownership of DePIN assets.",
     "explorer": "https://etherscan.io/token/0x2e44f3f609ff5aA4819B323FD74690f07C3607c4",
     "type": "ERC20",
-    "symbol": "PIN",
+    "symbol": "$PIN",
     "decimals": 18,
     "status": "active",
     "id": "0x2e44f3f609ff5aA4819B323FD74690f07C3607c4",
     "tags": ["defi"],
-    "links": {
-        "twitter": "https://x.com/pinlinkai",
-        "telegram": "https://t.me/pinlinkai",
-        "coingecko": "https://coingecko.com/en/coins/pinlink"
-    }
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://x.com/pinlinkai"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/pinlinkai"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/pinlink"
+        }
+    ]
 }
