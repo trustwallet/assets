@@ -1,6 +1,6 @@
 {
     "name": "TLFC - Ultimate Investment Token (TLFC)",
-    "asset": "trc20",
+    "type": "TRC20",
     "website": "https://www.tflc.io/",
     "description": "TLFC coin is a decentralized cryptocurrency that leverages blockchain technology to streamline real estate investments.",
     "explorer": "https://tronscan.org/#/token20/TH2eq3RmpZNRLEht6vAUQHxSZuLZepT8y7",
@@ -11,7 +11,7 @@
     "decimals": 6,
     "status": "active",
     "tags": [
-        "staking-native"
+        "Investment Token"
     ],
     "links": [
         {
