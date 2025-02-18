@@ -3,7 +3,14 @@
   "symbol": "NIGLIO",
   "decimals": 18,
   "description": "Niglio is a meme token built on Ethereum, combining fun, community engagement, and decentralization.",
+  "website": "https://niglio.xyz",
+  "explorer": "https://etherscan.io/token/0x0932e48F5B7f97Bf7b78A76Be4D2D36028C25867",
   "status": "active",
   "id": "0x0932e48F5B7f97Bf7b78A76Be4D2D36028C25867",
-  "type": "ERC20"
-  }
+  "type": "ERC20",
+  "links": {
+    "twitter": "https://x.com/niglioeth",
+    "github": "https://github.com/niglioeth"
+  },
+  "tags": ["meme-token"]
+}
