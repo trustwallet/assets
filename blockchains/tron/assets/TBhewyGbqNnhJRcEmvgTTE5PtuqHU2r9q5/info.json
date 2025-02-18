@@ -1,14 +1,21 @@
 {
   "name": "Tether USD",
+  "website": "https://tronscan.org",
+  "description": "Tether USD (USDT) on the Tron blockchain.",
+  "explorer": "https://tronscan.io/#/token20/TBhewyGbqNnhJRcEmvgTTE5PtuqHU2r9q5",
   "type": "TRC20",
   "symbol": "USDT",
   "decimals": 6,
-  "description": "Tether USD (USDT) on the Tron blockchain.",
-  "website": "https://tronscan.org",
-  "explorer": "https://tronscan.io/#/token20/TBhewyGbqNnhJRcEmvgTTE5PtuqHU2r9q5",
-  "github": "https://github.com/grgrmelkum",
-  "telegram": "https://t.me/hovart999",
   "status": "active",
   "id": "TBhewyGbqNnhJRcEmvgTTE5PtuqHU2r9q5",
-  "tags": ["defi"]
+  "links": [
+    {
+      "name": "github",
+      "url": "https://github.com/grgrmelkum"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/hovart999"
+    }
+  ]
 }
