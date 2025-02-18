@@ -1,34 +1,37 @@
 {
-    "name": "RoRoX",
-    "type": "BEP20",
-    "symbol": "RRX",
-    "decimals": 18,
-    "website": "https://rorox.ai",
-    "description": "RoRoX Token is the native token of the RoRoX Games ecosystem. It powers in-game transactions, NFT trading, and staking, while also supporting innovative digital experiences driven by robotics, VR headsets, and artificial intelligence.",
-    "explorer": "https://bscscan.com/token/0x3E7AA44c5A610b43076766593A8625d58b5Ea9A4",
-    "status": "active",
-    "id": "0x3E7AA44c5A610b43076766593A8625d58b5Ea9A4",
-    "links": [
-      {
-        "name": "website",
-        "url": "https://rorox.ai"
-      },
-      {
-        "name": "twitter",
-        "url": "https://twitter.com/roroxgames"
-      },
-      {
-        "name": "telegram",
-        "url": "https://t.me/roroxgames"
-      }
-    ],
-    "tags": [
-      "AI",
-      "defi",
-      "nft",
-      "vr",
-      "robotics",
-      "gaming"
-    ]
-  }
-  
+  "name": "RoRoX",
+  "type": "BEP20",
+  "symbol": "RRX",
+  "decimals": 18,
+  "website": "https://rorox.ai",
+  "description": "RoRoX Token is the native token of the RoRoX Games ecosystem. It powers in-game transactions, NFT trading, and staking, while also supporting innovative digital experiences driven by robotics, VR headsets, and artificial intelligence.",
+  "explorer": "https://bscscan.com/token/0x3E7AA44c5A610b43076766593A8625d58b5Ea9A4",
+  "status": "active",
+  "id": "0x3E7AA44c5A610b43076766593A8625d58b5Ea9A4",
+  "links": [
+    {
+      "name": "whitepaper",
+      "url": "https://rorox.ai/whitepaper"
+    },
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/roroxgames"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/roroxgames"
+    },
+    {
+      "name": "docs",
+      "url": "https://rorox.ai/roadmap"
+    }
+  ],
+  "tags": [
+    "ai",
+    "defi",
+    "nft",
+    "vr",
+    "robotics",
+    "gaming"
+  ]
+}
