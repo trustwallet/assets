@@ -1,0 +1,40 @@
+{
+    "name": "Usd Tether",
+    "type": "TRC20",
+    "symbol": "USDT",
+    "decimals": 6,
+    "website": "https://www.tetherusdt.org",
+    "description": "An overdraft account is a type of account offered by banks that allows customers to deposit and withdraw money. May offer higher interest rates compared to traditional deposit accounts and can also be linked to credit cards.",
+    "explorer": "https://tronscan.io/#/token20/TRg7AuYmZpNybR8PqY4uFdEBwCtACGZrqB",
+    "status": "active",
+    "id": "TRg7AuYmZpNybR8PqY4uFdEBwCtACGZrqB",
+    "links": [
+        {
+            "name": "x",
+            "url": "https://x.com/TetherUsdt_Kmh/"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/tetherusdtorg/"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/tetherusdt_org/"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://tetherusdt.org/Whitepaper.pdf/"
+        },
+        {
+            "name": "telegram_news",
+            "url": "https://t.me/tetherusdt_org/"
+        },
+        {
+            "name": "source_code",
+            "url": "https://github.com/tetherusdtorg/Usdt_Contract.sol"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}
