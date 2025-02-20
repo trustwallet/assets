@@ -1,14 +1,12 @@
 {
-    "name": "TSWAP",
-    "symbol": "TSWAP",
-    "type": "BRC20",
-    "decimals": 18,
-    "description": "Taraswap is a decentralized exchange (DEX) on the Taraxa blockchain. TSWAP is the governance token of the Taraxa DEX.",
-    "website": "https://www.taraswap.app",
-    "explorer": "https://unisat.io/brc20/0x712037beab9a29216650B8d032b4D9A59AF8AD6C",
-    "status": "active",
-    "id": "0x712037beab9a29216650B8d032b4D9A59AF8AD6C",
-    "tags": [
-        "dex"
-    ]
+  "name": "TSWAP",
+  "symbol": "TSWAP",
+  "type": "ERC20",
+  "decimals": 18,
+  "description": "Taraswap is a decentralized exchange (DEX) on the Taraxa blockchain. TSWAP is the governance token of the Taraxa DEX.",
+  "website": "https://www.taraswap.app",
+  "explorer": "https://tara.to/token/0x712037beab9a29216650B8d032b4D9A59AF8AD6C",
+  "status": "active",
+  "id": "0x712037beab9a29216650B8d032b4D9A59AF8AD6C",
+  "tags": ["dex"]
 }

@@ -1,14 +1,12 @@
 {
-    "name": "USDT",
-    "symbol": "USDT",
-    "type": "BRC20",
-    "decimals": 6,
-    "description": "-",
-    "website": "",
-    "explorer": "https://unisat.io/brc20/0x69D411CbF6dBaD54Bfe36f81d0a39922625bC78c",
-    "status": "active",
-    "id": "0x69D411CbF6dBaD54Bfe36f81d0a39922625bC78c",
-    "tags": [
-        "stablecoin"
-    ]
+  "name": "USDT",
+  "symbol": "USDT",
+  "type": "ERC20",
+  "decimals": 6,
+  "description": "Bridged USDT",
+  "website": "",
+  "explorer": "https://tara.to/token/0x69D411CbF6dBaD54Bfe36f81d0a39922625bC78c",
+  "status": "active",
+  "id": "0x69D411CbF6dBaD54Bfe36f81d0a39922625bC78c",
+  "tags": ["stablecoin"]
 }
