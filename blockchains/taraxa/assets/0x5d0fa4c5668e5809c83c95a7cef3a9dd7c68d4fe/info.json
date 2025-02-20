@@ -1,17 +1,17 @@
 {
-  "name": "WTARA",
-  "website": "https://taraxa.io",
-  "description": "WTARA is the wrapped token of TARA.",
-  "explorer": "https://tara.to/token/0x5d0fa4c5668e5809c83c95a7cef3a9dd7c68d4fe",
-  "type": "ERC20",
-  "symbol": "WTARA",
-  "decimals": 18,
-  "status": "active",
-  "id": "0x5d0fa4c5668e5809c83c95a7cef3a9dd7c68d4fe",
-  "links": [
-    {
-      "name": "twitter",
-      "url": "https://twitter.com/taraxa_project"
-    }
-  ]
+    "name": "WTARA",
+    "symbol": "WTARA",
+    "type": "BRC20",
+    "decimals": 18,
+    "description": "WTARA is the wrapped token of TARA.",
+    "website": "https://taraxa.io",
+    "explorer": "https://unisat.io/brc20/0x5d0fa4c5668e5809c83c95a7cef3a9dd7c68d4fe",
+    "status": "active",
+    "id": "0x5d0fa4c5668e5809c83c95a7cef3a9dd7c68d4fe",
+    "links": [
+        {
+            "name": "x",
+            "url": "https://x.com/taraxa_project"
+        }
+    ]
 }

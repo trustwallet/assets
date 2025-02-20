@@ -1,22 +1,24 @@
 {
-  "name": "Meridian Dollar",
-  "website": "https://www.meridianfinance.net/",
-  "description": "Meridian Mint is a decentralised, non-custodial, governance-free borrowing protocol that enables users to obtain interest-free loans against whitelisted collateral. ",
-  "explorer": "https://tara.to/token/0xC26B690773828999c2612549CC815d1F252EA15e",
-  "type": "ERC20",
-  "symbol": "USDM",
-  "decimals": 18,
-  "status": "active",
-  "id": "0xC26B690773828999c2612549CC815d1F252EA15e",
-  "links": [
-    {
-      "name": "twitter",
-      "url": "https://twitter.com/meridianfi"
-    },
-    {
-      "name": "docs",
-      "url": "https://docs.meridianfinance.net"
-    }
-  ],
-  "tags": ["stablecoin"]
+    "name": "Meridian Dollar",
+    "symbol": "USDM",
+    "type": "BRC20",
+    "decimals": 18,
+    "description": "Meridian Mint is a decentralised, non-custodial, governance-free borrowing protocol that enables users to obtain interest-free loans against whitelisted collateral. ",
+    "website": "https://www.meridianfinance.net/",
+    "explorer": "https://unisat.io/brc20/0xC26B690773828999c2612549CC815d1F252EA15e",
+    "status": "active",
+    "id": "0xC26B690773828999c2612549CC815d1F252EA15e",
+    "links": [
+        {
+            "name": "x",
+            "url": "https://x.com/meridianfi"
+        },
+        {
+            "name": "docs",
+            "url": "https://docs.meridianfinance.net"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
 }
