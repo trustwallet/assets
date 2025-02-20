@@ -1,18 +1,11 @@
 {
     "name": "Tether",
+    "type": "BEP20",
+    "symbol": "USDT",
+    "decimals": 18,
     "website": "http://tether-usdt.online/",
     "description": "Tether is a decentralized entertainment content platform based on the blockchain and using the Binance Smart Chain token. This token was created for entertainment purposes.",
-    "explorer": "https://bscscan.com/",
-    "research": "https://research.binance.com/",
-    "symbol": "USDT",
-    "type": "coin",
-    "decimals": 18,
+    "explorer": "https://bscscan.com/token/0x6d6B1c78595a61F1d44ce0E252629c29c03466df",
     "status": "active",
-    "tags": [
-        "token"
-    ],
-    "links": [
-        {
-        }
-    ]
+    "id": "0x6d6B1c78595a61F1d44ce0E252629c29c03466df"
 }
