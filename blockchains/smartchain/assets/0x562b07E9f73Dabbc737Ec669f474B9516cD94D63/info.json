@@ -4,27 +4,15 @@
   "decimals": 18,
   "type": "BEP20",
   "status": "active",
-  "id": "0x562b07e9f73dabbc737ec669f474b9516cd94d63",
-  "address": "0x562b07e9f73dabbc737ec669f474b9516cd94d63",
+  "id": "0x562b07E9f73Dabbc737Ec669f474B9516cD94D63",
+  "address": "0x562b07E9f73Dabbc737Ec669f474B9516cD94D63",
   "description": "TELLER US Token (TELLER) is a utility token designed for financial inclusion and DeFi applications.",
   "website": "https://www.tellertoken.com",
-  "explorer": "https://bscscan.com/token/0x562b07e9f73dabbc737ec669f474b9516cd94d63",
-  "coin": 56,
-  "logo": "https://raw.githubusercontent.com/Bemo1507/assets/master/blockchains/smartchain/assets/0x562b07e9f73dabbc737ec669f474b9516cd94d63/logo.png",
+  "explorer": "https://bscscan.com/token/0x562b07E9f73Dabbc737Ec669f474B9516cD94D63",
   "links": [
-    {
-      "name": "twitter",
-      "url": "https://x.com/teller_us"
-    },
-    {
-      "name": "telegram",
-      "url": "https://t.me/Teller_US"
-    },
-    {
-      "name": "github",
-      "url": "https://github.com/bemo1507"
-    }
+    { "name": "twitter", "url": "https://x.com/teller_us" },
+    { "name": "telegram", "url": "https://t.me/Teller_US" },
+    { "name": "github", "url": "https://github.com/bemo1507" }
   ],
-  "tags": ["defi", "token"]
+  "tags": ["defi"]
 }
-
