@@ -10,9 +10,18 @@
   "website": "https://www.tellertoken.com",
   "explorer": "https://bscscan.com/token/0x562b07e9f73dabbc737ec669f474b9516cd94d63",
   "links": [
-    "twitter": "https://x.com/teller_us",
-    "telegram": "https://t.me/Teller_US",
-    "github": "https://github.com/bemo1507"
+    {
+      "name": "twitter",
+      "url": "https://x.com/teller_us"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/Teller_US"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/bemo1507"
+    }
   ],
-  "tags": ["token"]
+  "tags": ["defi", "token"]
 }
