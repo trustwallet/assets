@@ -7,9 +7,16 @@
   "explorer": "https://bscscan.com/token/0xcCb7c6837709e068142813A12ae3338D91cea0F4",
   "status": "active",
   "id": "0xcCb7c6837709e068142813A12ae3338D91cea0F4",
-  "links": {
-    "facebook": "https://www.facebook.com/profile.php?id=61572788400849",
-    "github": "https://github.com/botasPT"
+ "links": [
+
+  {
+    "name": "facebook",
+    "url": "https://www.facebook.com/profile.php?id=61572788400849"
   },
+  {
+    "name": "github",
+    "url": "https://github.com/botasPT"
+  }
+]
   "tags": ["bep20", "defi"]
 }
