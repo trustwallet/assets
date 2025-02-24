@@ -1,20 +1,22 @@
 {
   "name": "BOTAS",
-  "type": "token",
+  "type": "BEP20",
   "symbol": "BOTAS",
   "decimals": 18,
   "status": "active",
   "id": "0xcCb7c6837709e068142813A12ae3338D91cea0F4",
   "links": [
     {
-      "name": "website",
+      "name": "Website",
       "url": "https://www.facebook.com/profile.php?id=61572788400849"
     },
     {
-      "name": "github",
+      "name": "GitHub",
       "url": "https://github.com/BotasPT"
     }
   ],
   "tags": ["defi", "utility"],
   "description": "BOTAS is a cryptocurrency token built on Binance Smart Chain (BEP-20) with a low transaction fee and a burning mechanism."
+  "explorer": "https://bscscan.com/token/0xcCb7c6837709e068142813A12ae3338D91cea0F4",
 }
+
