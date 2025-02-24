@@ -1,12 +1,13 @@
 {
-  "name": "RemedyCoin",
-  "symbol": "RMDY",
-  "decimals": 18,
-  "description": "A decentralized token for RemedyCoin.",
-  "website": "https://yourwebsite.com",
-  "explorer": "https://bscscan.com/token/0xE836c410e1F2c31A2f014b3fAB422Ad418b527Bf",
-  "type": "token",
-  "status": "active",
-  "id": "0xE836c410e1F2c31A2f014b3fAB422Ad418b527Bf",
-  "tags": ["defi", "staking"]
+    "name": "RemedyCoin",
+    "symbol": "RMDY",
+    "type": "token",
+    "decimals": 18,
+    "status": "active",
+    "id": "0xE836c410e1F2c31A2f014b3fAB422Ad418b527Bf",
+    "website": "https://yourwebsite.com",
+    "explorer": "https://bscscan.com/token/0xE836c410e1F2c31A2f014b3fAB422Ad418b527Bf",
+    "twitter": "https://twitter.com/YourProject",
+    "telegram": "https://t.me/YourProject",
+    "tags": ["defi", "staking"]
 }
