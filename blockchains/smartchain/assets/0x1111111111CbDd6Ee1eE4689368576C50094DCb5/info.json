@@ -1,19 +1,27 @@
 {
     "name": "Moodeng MDB",
-    "symbol": "MDB",
-    "type": "BEP20",
-    "decimals": 18,
-    "description": "Moodeng MDB is a meme token built on Binance Smart Chain.",
     "website": "https://moodengbnb.com",
-    "explorer": "https://bscscan.com/token/0x1111111111CbDd6Ee1eE4689368576C50094DCb5",
+    "description": "Moodeng MDB is a meme token built on Binance Smart Chain.",
+    "explorer": "https://bscscan.com/token/0x1111111111CbDd6Ee1eE4689368576c50094DCb5",
+    "type": "BEP20",
+    "symbol": "MDB",
+    "decimals": 18,
     "status": "active",
-    "id": "0x1111111111CbDd6Ee1eE4689368576C50094DCb5",
+    "id": "0x1111111111CbDd6Ee1eE4689368576c50094DCb5",
     "tags": ["defi"],
-    "officialWebsite": "https://moodengbnb.com",
     "links": [
-        { "name": "Twitter", "url": "https://twitter.com/moodengconnect" },
-        { "name": "GitHub", "url": "https://github.com/moodengmdb" },
-        { "name": "Telegram", "url": "https://t.me/moodeng_world" }
+        {
+            "name": "X",
+            "url": "https://x.com/moodengconnect"
+        },
+        {
+            "name": "GitHub",
+            "url": "https://github.com/moodengmdb"
+        },
+        {
+            "name": "Telegram",
+            "url": "https://t.me/moodeng_world"
+        }
     ],
     "holderCount": 8124
 }
