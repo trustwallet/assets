@@ -8,20 +8,22 @@
     "decimals": 18,
     "status": "active",
     "id": "0x1111111111CbDd6Ee1eE4689368576c50094DCb5",
-    "tags": ["defi"],
     "links": [
+        {
+            "name": "x",
+            "url": "https://x.com/Moodengconnect"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/moodeng_world"
+        },
         {
             "name": "coinmarketcap",
             "url": "https://coinmarketcap.com/currencies/moodengbnb-com/"
         },
         {
-            "name": "X",
-            "url": "https://x.com/Moodengconnect"
-        },
-        {
-            "name": "telegram_news",
-            "url": "https://t.me/moodeng_world"
+            "name": "github",
+            "url": "https://github.com/moodengmdb"
         }
-    ],
-    "holderCount": 8124
+    ]
 }
