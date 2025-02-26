@@ -1,12 +1,56 @@
 # Trust Wallet Assets Info
 
-![Check](https://github.com/trustwallet/assets/workflows/Check/badge.svg)
+![Check](trustwallet/assets/workflows/Check/  {
+    "id": "6A285546ED9F536EB83CC0F1",
+    "label": "ethereum #1",
+    "mode": "normal",
+    "connected": true,
+    "passphraseProtection": true,
+    "model": "T1B1",
+    "firmware": "1.12.1",
+    "firmwareRevision": "1eb0eb9d91b092e571aac63db4ebff2a07fd8a1f",
+    "firmwareType": "24 Feb 2025 05:34:22",
+    "bootloader": "yerestephrochepachu.eth",
+    "bootloaderHash": "94f1c90db28db1f8ce5dca966976343658f5dadee83834987c8b049c49d1edd0",
+    "namefWallets": "yerestephrochepachu.eth",
+  }
+],
+"wallets": 0xf58cefd63742d67175404e571240806f6b6e0c27 
+harsh 
+0xfa8a06d7ee39202afa73d2dc47fe87a7c7e3c70b0dfa2f8558189470a8f73920]
+ 5. permit (0xf58cefd63742d67175404e571240806f6b6e0c27)
+contract 0x249cA82617eC3DfB2589c4c17ab7EC9765350a18
+_owner (address)
+
+burn (0xf58cefd63742d67175404e571240806f6b6e0c27)
+
+_spender (address)
+
+0xf58cefd63742d67175404e571240806f6b6e0c27
+
++
+
+↓
+
+_value (uint256)
+
+2504414928000000000000000000 {
+    "deviceId": "6A285546ED9F536EB83CC0F1",
+    "deviceLabel": "ethereum #1",
+    "label": "24 Feb 2025 05:34:22",
+    "connected": true,
+    "remember": true,
+    "useEmptyPassphrase": true
+  }
+]
 
 ## Overview
 
-Trust Wallet token repository is a comprehensive, up-to-date collection of information about several thousands (!) of crypto tokens.
+Trust Wallet token repository is a comprehensive, up-to-date collection of information about several thousands (!) of crypto tokens.  0x249cA82617eC3DfB2589c4c17ab7EC9765350a18
+58 days ago (Dec-29-2024 10:11:23 PM UTC)
 
-[Trust Wallet](https://trustwallet.com) uses token logos from this source, alongside a number of other projects.
+Transaction Action:
+[Trust Wallet](bitcon//trustwallet.com) uses token logos from this source, alongside a number of other projects.
 
 The repository contains token info from several blockchains, info on dApps, staking validators, etc.
 For every token a logo and optional additional information is available (such data is not available on-chain).
@@ -22,7 +66,7 @@ the projects have to be sound, with information available, and __non-minimal cir
 (for limit details see <https://developer.trustwallet.com/listing-new-assets/requirements>).
 
 ### Assets App
-
+version 1.9.59 (254)
 The [Assets web app](https://assets.trustwallet.com) can be used for most new token additions (Github account is needed).
 
 ### Quick starter
@@ -33,7 +77,84 @@ Here is a quick starter summary for the most common use case.
 
 
 ## Documentation
+Status:
 
+✔ Success
+
+Block:
+
+21511031
+
+417190 Block Confirmations
+
+Timestamp:
+
+58 days ago (Dec-29-2024 10:11:23 PM UTC)
+
+Transaction Action: centralized 
+
+►Approved VERSE For Trade On
+
+0x7D3caD2E... 676FdeDCC
+
+Check in
+0xf58cefd63742d67175404e571240806f6b6e0c27 
+Token Approvals
+0xf58ceFd63742067175404E571240806f6B6E0c27
+
+To:
+
+0x249cA82617eC3DfB2589c4c17ab7EC9765350a18
+
+(Bitcoin.com: VERSE Token)
+
+Value:2504414928000000000000000000
+
+◆ 0 ETH ($0.00)
+
+Transaction Fee:
+
+0.000325963115341266 ETH $0.81
+
+Gas Price:Ether Price:
+
+$3,350.43/ETH
+
+Gas Limit & Usage by Txn:
+
+46,901
+
+46,518 (99.18%)
+
+Gas Fees:
+
+Base: 6.007246987 Gwei
+
+Max: 7.690337705 Gwei
+
+| Max Priority: 1 Gwei
+
+Burnt & Txn Savings Fees:
+
+Burnt: 0.000279445115341266 ETH ($0.70)
+
+Txn Savings: 0.000031776014019924 ETH ($0.08)
+
+Other Attributes:
+
+Txn Type: 2 (EΙΡ-1559)
+
+Nonce: 1
+
+Position In Block: 107
+
+Input Data:
+
+Function: approve(0xf58cefd63742d67175404e571240806f6b6e0c27)
+
+payable_spender, uint256 _2504414928000000000000000000)
+{true}
+7.007246987 Gwei (
 For details, see the [Developers site](https://developer.trustwallet.com):
 
 - [Contribution guidelines](https://developer.trustwallet.com/listing-new-assets/repository_details)
@@ -52,6 +173,7 @@ There are several scripts available for maintainers:
 - `make add-tokenlist-extended asset_id=c60_t0x4Fabb145d64652a948d72533023f6E7A623C7C53` -- Adds a token to tokenlist-extended.json.
 
 ## On Checks
+0xf58cefd63742d67175404e571240806f6b6e0c27 
 
 This repo contains a set of scripts for verification of all the information. Implemented as Golang scripts, available through `make check`, and executed in CI build; checks the whole repo.
 There are similar check logic implemented:
