@@ -1,0 +1,48 @@
+{
+    "name": "rzusd",
+    "type": "BEP20",
+    "symbol": "RZUSD",
+    "decimals": 18,
+    "website": "https://usd.rz.game",
+    "description": "RZUSD is a decentralized, crypto-backed stablecoin powering the RZChain ecosystem with secure, fast, and low-cost transactions.",
+    "explorer": "https://bscscan.com/token/0xc4a1cc5ca8955a4650bdc109bddf110e33a1e344",
+    "status": "active",
+    "id": "0xC4A1cc5cA8955a4650BDC109bddf110E33a1e344",
+    "links": [
+        {
+            "name": "x",
+            "url": "https://x.com/rzusd_rz"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/rz-game-dev"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/RZUSD_channel"
+        },
+        {
+            "name": "blog",
+            "url": "https://usd.rz.game/blog"
+        },
+        {
+            "name": "docs",
+            "url": "https://github.com/Mazyar60/rzusd"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://usd.rz.game/whitepaper"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/RZUSD"
+        },
+        {
+            "name": "source_code",
+            "url": "https://github.com/rz-game-dev/rzusd/blob/main/contracts%2FRZUSD.sol"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}
