@@ -1,0 +1,29 @@
+{
+    "name": "deUSD",
+    "type": "ERC20",
+    "symbol": "deUSD",
+    "decimals": 18,
+    "description": "deUSD ('Decentralized US Dollar') is a fully collateralized synthetic dollar powered by the Elixir Network. Minted by stETH and sDAI, deposited collateral will be used to short ETH, creating a delta neutral position.",
+    "website": "https://www.elixir.xyz/",
+    "explorer": "https://etherscan.io/token/0x15700b564ca08d9439c58ca5053166e8317aa138",
+    "id": "0x15700B564Ca08D9439C58cA5053166E8317aa138",
+    "status": "active",
+    "links": [
+        {
+            "name": "x",
+            "url": "https://x.com/elixir"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/elixir-deusd/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/elixir-deusd"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}
+    
