@@ -1,14 +1,23 @@
 {
     "name": "ONFA Chain",
+    "shortname": "onfachain",
+    "chainId": 8691942025,
+    "network": "mainnet",
+    "rpc": [
+      "https://rpc.onfachain.com",
+      "https://rpc.onfa.io",
+    ],
+    "explorer": "https://onfascan.com/",
     "website": "https://onfachain.com/",
     "description": "Fast and secure decentralized digital asset exchange. The new crypto currency trading standard is here.",
-    "explorer": "https://onfascan.com/",
     "research": "https://onfa.io/crypto/token/ofc",
-    "symbol": "OFC",
-    "type": "coin",
-    "decimals": 18,
+    "nativeCurrency": {
+      "name": "Onfa Coin",
+      "symbol": "OFC",
+      "decimals": 18
+    },
     "status": "active",
-    "tags": [
+    "tags": [ 
         "staking-native"
     ],
     "links": [
@@ -22,3 +31,4 @@
         }
     ]
 }
+ 
