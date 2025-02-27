@@ -7,15 +7,12 @@
       "https://rpc.onfachain.com",
       "https://rpc.onfa.io",
     ],
+    "symbol": "OFC",
+    "decimals": 18,
     "explorer": "https://onfascan.com/",
     "website": "https://onfachain.com/",
     "description": "Fast and secure decentralized digital asset exchange. The new crypto currency trading standard is here.",
     "research": "https://onfa.io/crypto/token/ofc",
-    "nativeCurrency": {
-      "name": "Onfa Coin",
-      "symbol": "OFC",
-      "decimals": 18
-    },
     "status": "active",
     "tags": [ 
         "staking-native"
