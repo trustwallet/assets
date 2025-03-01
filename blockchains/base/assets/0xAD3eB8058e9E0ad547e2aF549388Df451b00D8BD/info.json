@@ -1,16 +1,16 @@
 {
   "name": "SHROOMnation",
-  "website": "https://shroomnationtoken.com/",
-  "description": "Community-driven memecoin built on Base with locked WETH and cbBTC pools.",
-  "explorer": "https://basescan.org/token/",
-  "type": "ERC20",
+  "type": "BASE",
   "symbol": "SHRMN",
   "decimals": 18,
-  "status": "active",
+  "description": "Community-driven memecoin built on Base with locked WETH and cbBTC pools.",
+  "website": "https://shroomnationtoken.com/",
+  "explorer": "https://basescan.org/token/0xad3eb8058e9e0ad547e2af549388df451b00d8bd",
   "id": "0xAD3eB8058e9E0ad547e2aF549388Df451b00D8BD",
+  "status": "active",
   "links": [
     {
-      "name": "twitter",
+      "name": "x",
       "url": "https://x.com/MnationShr16271"
     },
     {
@@ -21,5 +21,9 @@
       "name": "whitepaper",
       "url": "https://shroomnationtoken.com/whitepaper"
     }
+  ],
+  "tags": [
+    "memes"
   ]
 }
+
