@@ -1,11 +1,11 @@
 {
-    "name": "Tree stuck in cat",
-    "website": "https://www.treeincat.com/",
-    "description": "TREEINCAT is a meme token inspired by the whimsical tale of a tree that finds itself stuck in a cat, told from the cat’s philosophical and confused perspective.",
-    "explorer": "https://solscan.io/token/5AzTQ5zUuWUNGetxaRpo9DK9w8FQXoPjn5a4ZXMMmoon",
+    "name": "Tree Stuck in Cat",
     "type": "SPL",
     "symbol": "TREEINCAT",
     "decimals": 9,
+    "website": "https://www.treeincat.com/",
+    "description": "TREEINCAT is a meme token inspired by the whimsical tale of a tree that finds itself stuck in a cat, told from the cat’s philosophical and confused perspective.",
+    "explorer": "https://explorer.solana.com/address/5AzTQ5zUuWUNGetxaRpo9DK9w8FQXoPjn5a4ZXMMmoon",
     "status": "active",
     "id": "5AzTQ5zUuWUNGetxaRpo9DK9w8FQXoPjn5a4ZXMMmoon",
     "links": [
@@ -14,8 +14,32 @@
             "url": "https://x.com/TreeStuckInCat"
         },
         {
+            "name": "telegram",
+            "url": "https://t.me/TreeInCat"
+        },
+        {
+            "name": "telegram_news",
+            "url": "https://t.me/TreeInCat_announcements"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://www.treeincat.com/TREEINCATwp.pdf"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/tree-stuck-in-cat/"
+        },
+        {
             "name": "coingecko",
-            "url": "https://coingecko.com/en/coins/tree-stuck-in-cat"
+            "url": "https://www.coingecko.com/en/coins/tree-stuck-in-cat"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/@treeincat"
         }
+    ],
+    "tags": [
+        "memes",
+        "gamefi"
     ]
 }
