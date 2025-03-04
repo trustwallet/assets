@@ -3,6 +3,7 @@
     "type": "BEP20",
     "symbol": "Marvin",
     "decimals": 9,
+	"holders": 1600,
     "website": "https://marvintoken.github.io/",
     "description": "The Token Inspired by Elon's Beloved Pet",
     "explorer": "https://bscscan.com/token/0xa2f14E3a5835cE525DA1AED4449bef1c0DeA5b84",
@@ -21,6 +22,9 @@
             "name": "github",
             "url": "https://github.com/marvintoken"
         }
+    ],
+	"tags": [
+        "dapp"
     ]
 	
 }
