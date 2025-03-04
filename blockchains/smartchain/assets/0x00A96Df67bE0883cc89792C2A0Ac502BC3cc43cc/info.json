@@ -1,10 +1,26 @@
 {
   "name": "Stellar.USDT",
   "symbol": "Stellar.USDT",
+  "type": "BEP20",
   "decimals": 6,
-  "description": "Stellar.USDT is a stablecoin designed for secure, low-cost transactions, ensuring financial stability and seamless cross-border payments.",
+  "description": "Stellar.USDT is a stable digital asset operating on Binance Smart Chain (BSC), developed by Stellar Spirits LLC. It provides secure, fast, and low-cost transactions with dividend distribution for holders.",
   "website": "https://www.stellarusdt.io/home",
-  "explorer": "https://bscscan.com/token/0xA96Df67bE0883cc89792C2A0Ac502BC3cc43cc",
+  "explorer": "https://bscscan.com/token/0x00A96Df67bE0883cc89792C2A0Ac502BC3cc43cc",
   "status": "active",
-  "id": "0xA96Df67bE0883cc89792C2A0Ac502BC3cc43cc"
+  "id": "0x00A96Df67bE0883cc89792C2A0Ac502BC3cc43cc",
+  "links": [
+    "https://t.me/Stellar_USDT",
+    "https://www.linkedin.com/in/josua-arnold-stellarusdt",
+    "https://www.facebook.com/share/g/1BQZjdoW4B",
+    "https://x.com/StellarUsdt",
+    "https://github.com/StellarUSDT",
+    "https://www.stellarusdt.io/home"
+  ],
+  "tags": [
+    "stablecoin",
+    "BEP20",
+    "dividend"
+  ],
+  "holders": 3118,
+  "total_transfers": 24418
 }
