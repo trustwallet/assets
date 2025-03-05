@@ -1,0 +1,32 @@
+{
+    "name": "Tether USD",
+    "type": "BEP20",
+    "symbol": "USDT ",
+    "decimals": 18,
+    "website": "https://tether.to/ru/channels/",
+    "description": "Tether USD is a BEP-20 token deployed on Binance Smart Chain, providing a stablecoin solution for the BSC ecosystem. Our token adheres to the BEP-20 standard and offers secure, fast, and low-cost transactions",
+    "explorer": "https://bscscan.com/token/0x3Fb466d9EDf4Fc5e1C6860dB90022ec61212Fe01",
+    "status": "active",
+    "id": "0x3Fb466d9EDf4Fc5e1C6860dB90022ec61212Fe01",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/tetherto"
+        },
+        {
+            "name": "x",
+            "url": "https://x.com/"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/tether/"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/OfficialTether"
+        }
+    ],
+    "tags": [
+        "USD"
+    ]
+}
