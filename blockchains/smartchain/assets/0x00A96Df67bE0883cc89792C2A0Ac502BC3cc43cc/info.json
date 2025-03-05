@@ -9,12 +9,30 @@
   "status": "active",
   "id": "0x00A96Df67bE0883cc89792C2A0Ac502BC3cc43cc",
   "links": [
-    "https://t.me/Stellar_USDT",
-    "https://www.linkedin.com/in/josua-arnold-stellarusdt",
-    "https://www.facebook.com/share/g/1BQZjdoW4B",
-    "https://x.com/StellarUsdt",
-    "https://github.com/StellarUSDT",
-    "https://www.stellarusdt.io/home"
+    {
+      "name": "telegram",
+      "url": "https://t.me/Stellar_USDT"
+    },
+    {
+      "name": "linkedin",
+      "url": "https://www.linkedin.com/in/josua-arnold-stellarusdt"
+    },
+    {
+      "name": "facebook",
+      "url": "https://www.facebook.com/share/g/1BQZjdoW4B"
+    },
+    {
+      "name": "twitter",
+      "url": "https://x.com/StellarUsdt"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/StellarUSDT"
+    },
+    {
+      "name": "website",
+      "url": "https://www.stellarusdt.io/home"
+    }
   ],
   "tags": [
     "stablecoin",
