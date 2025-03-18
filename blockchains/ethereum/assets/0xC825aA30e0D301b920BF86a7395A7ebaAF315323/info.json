@@ -6,5 +6,9 @@
   "chainId": 1,
   "logoURI": "https://raw.githubusercontent.com/skytradepro/assets/master/blockchains/ethereum/assets/0xC825aA30e0D301b920BF86a7395A7ebaAF315323/logo.png",
   "website": "https://yourwebsite.com",
-  "description": "SkyTrade USDT (SUSDT) is a stablecoin designed for seamless transactions on Ethereum."
+  "description": "SkyTrade USDT (SUSDT) is a stablecoin designed for seamless transactions on Ethereum.",
+  "type": "ERC20",
+  "explorer": "https://etherscan.io/token/0xC825aA30e0D301b920BF86a7395A7ebaAF315323",
+  "status": "active",
+  "tags": ["stablecoin"]
 }
