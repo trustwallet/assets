@@ -7,16 +7,20 @@
     "type": "ERC20",
     "symbol": "RSR",
     "decimals": 18,
-    "status": "active",
+    "status": "abandoned",
     "id": "0x8762db106B2c2A0bccB3A80d1Ed41273552616E8",
+    "tags": [
+        "defi",
+        "stablecoin"
+    ],
     "links": [
         {
             "name": "github",
             "url": "https://github.com/reserve-protocol/rsr"
         },
         {
-            "name": "twitter",
-            "url": "https://twitter.com/reserveprotocol"
+            "name": "x",
+            "url": "https://x.com/reserveprotocol"
         },
         {
             "name": "blog",
