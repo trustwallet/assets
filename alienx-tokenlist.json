@@ -1,0 +1,21 @@
+{
+    "name": "XCoinFund Token List",
+    "logoURI": "https://www.xcoinfund.net/alienx/alienx_logo.png",
+    "timestamp": "2025-03-18T00:00:00+00:00",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "patch": 0
+    },
+    "tokens": [
+      {
+        "chainId": 56,
+        "address": "0x870ba93027cC3ec876288C44246cc1253f20fb26", 
+        "name": "AlienX",
+        "symbol": "ALIENX",
+        "decimals": 18,
+        "logoURI": "https://www.xcoinfund.net/alienx/alienx_logo.png"
+      }
+    ]
+  }
+  
