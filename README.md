@@ -1,6 +1,6 @@
 # Trust Wallet Assets Info
 
-![Check](https://github.com/trustwallet/assets/workflows/Check/badge.svg)
+[![Check](https://github.com/trustwallet/assets/workflows/Check/badge.svg)](https://github.com/trustwallet/assets/actions/workflows/check.yml)
 
 ## Overview
 
