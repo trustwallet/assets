@@ -2,9 +2,22 @@
   "name": "FerIA",
   "symbol": "FerIA",
   "decimals": 18,
-  "address": "0x9d63966D04F7aA9E84a598eeEb7f04D9A7C48750",
+  "address": "0x9d63966d04f7aa9e84a598eeeb7f04d9a7c48750",
   "chainId": 137,
+  "type": "ERC20",
   "logoURI": "https://raw.githubusercontent.com/mercadocontrol/assets/master/blockchains/polygon/assets/0x9d63966D04F7aA9E84a598eeEb7f04D9A7C48750/logo.png",
   "website": "https://feria.foundation",
-  "description": "FerIA is a decentralized ecommerce platform built on Polygon, eliminating commissions and intermediaries to empower a fair, community-driven digital marketplace."
+  "explorer": "https://polygonscan.com/token/0x9d63966D04F7aA9E84a598eeEb7f04D9A7C48750",
+  "status": "active",
+  "description": "FerIA is a decentralized ecommerce platform on Polygon that eliminates commissions and intermediaries through community governance.",
+  "links": [
+    "https://feria.foundation",
+    "https://twitter.com/FerIAFoundation",
+    "https://t.me/FeriaFoundation"
+  ],
+  "tags": [
+    "ecommerce",
+    "defi",
+    "web3"
+  ]
 }
