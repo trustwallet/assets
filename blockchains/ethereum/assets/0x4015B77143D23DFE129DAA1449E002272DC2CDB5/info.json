@@ -5,11 +5,17 @@
   "address": "0x4015B77143D23DFE129DAA1449E002272DC2CDB5",
   "chainId": 1,
   "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x4015B77143D23DFE129DAA1449E002272DC2CDB5/logo.png",
+  "type": "ERC20",
+  "status": "active",
+  "id": "votumtoken",
+  "website": "https://votumproject.org",
+  "explorer": "https://etherscan.io/token/0x4015B77143D23DFE129DAA1449e002272DC2CDB5",
   "description": "VotumToken (VOT) is a governance token for decentralized decision-making systems, offering transparency, staking, and automatic burning features.",
-  "website": "",
+  "links": {
+    "github": "https://github.com/MaximBulanyy/votum-project",
+    "twitter": "https://twitter.com/votumtoken"
+  },
   "tags": [
-    "governance",
-    "utility",
-    "votum"
+    "governance"
   ]
 }
