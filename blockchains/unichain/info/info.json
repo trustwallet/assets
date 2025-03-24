@@ -1,0 +1,22 @@
+{
+  "name": "Unichain",
+  "website": "https://www.unichain.org/",
+  "description": "Seamlessly bridge funds, onramp and offramp, swap and provide liquidity, launch new assets, and use stablecoins from day one.",
+  "explorer": "https://unichain.blockscout.com/",
+  "research": "",
+  "symbol": "ETH",
+  "type": "coin",
+  "decimals": 18,
+  "status": "active",
+  "rpc_url": "https://mainnet.unichain.org/",
+  "links": [
+    {
+      "name": "twitter",
+      "url": "hhttps://x.com/unichain"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/Uniswap/unichain-node"
+    }
+  ]
+}
