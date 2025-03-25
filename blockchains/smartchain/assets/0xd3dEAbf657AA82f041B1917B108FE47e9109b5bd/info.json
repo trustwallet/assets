@@ -8,12 +8,27 @@
   "explorer": "https://bscscan.com/token/0xd3dEAbf657AA82f041B1917B108FE47e9109b5bd",
   "status": "active",
   "id": "0xd3dEAbf657AA82f041B1917B108FE47e9109b5bd",
-  "links": {
-    "twitter": "https://twitter.com/greatcoingr8",
-    "telegram": "https://t.me/greatcoingr8",
-    "instagram": "https://instagram.com/greatcoingr8",
-    "facebook": "https://facebook.com/greatcoingr8",
-    "linkedin": "https://linkedin.com/company/greatcoingr8"
-  },
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/greatcoingr8"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/greatcoingr8"
+    },
+    {
+      "name": "instagram",
+      "url": "https://instagram.com/greatcoingr8"
+    },
+    {
+      "name": "facebook",
+      "url": "https://facebook.com/greatcoingr8"
+    },
+    {
+      "name": "linkedin",
+      "url": "https://linkedin.com/company/greatcoingr8"
+    }
+  ],
   "tags": ["meme", "community", "patriotic", "defi", "token"]
 }
