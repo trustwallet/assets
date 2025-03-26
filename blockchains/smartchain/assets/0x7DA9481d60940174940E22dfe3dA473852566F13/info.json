@@ -1,14 +1,21 @@
 {
-  "symbol": "BOMBUS",
   "name": "Bombus Token",
-  "address": "0x7DA9481d60940174940E22dfe3dA473852566F13",
+  "type": "token",
+  "symbol": "BOMBUS",
   "decimals": 18,
-  "logoURI": "https://raw.githubusercontent.com/your_username/assets/main/blockchains/smartchain/assets/0x7DA9481d60940174940E22dfe3dA473852566F13/token-icon.png",
-  "tags": ["binance-smart-chain", "memecoin"],
-  "category": "tokens",
-  "id": "0x7DA9481d60940174940E22dfe3dA473852566F13",
-  "type": "bep20",
+  "website": "https://bombustoken.io",
+  "description": "Bombus Token is a community-driven memecoin on Binance Smart Chain.",
+  "explorer": "https://bscscan.com/token/0x7DA9481d60940174940E22dfe3dA473852566F13",
   "status": "active",
-  "website": "https://your-token-website.com",
-  "explorer": "https://bscscan.com/address/0x7DA9481d60940174940E22dfe3dA473852566F13"
+  "id": "0x7DA9481d60940174940E22dfe3dA473852566F13",
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/bombustoken"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/bombustoken"
+    }
+  ]
 }
