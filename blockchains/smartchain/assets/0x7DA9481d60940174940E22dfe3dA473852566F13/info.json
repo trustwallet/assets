@@ -3,7 +3,12 @@
   "name": "Bombus Token",
   "address": "0x7DA9481d60940174940E22dfe3dA473852566F13",
   "decimals": 18,
-  "logoURI": "https://github.com/bombustoken/trustwallet/blob/master/blockchains/smartchain/assets/0x7DA9481d60940174940E22dfe3dA473852566F13/token-icon.png",
-  "tags": ["bsc", "memecoin"],
-  "category": "tokens"
+  "logoURI": "https://raw.githubusercontent.com/your_username/assets/main/blockchains/smartchain/assets/0x7DA9481d60940174940E22dfe3dA473852566F13/token-icon.png",
+  "tags": ["binance-smart-chain", "memecoin"],
+  "category": "tokens",
+  "id": "0x7DA9481d60940174940E22dfe3dA473852566F13",
+  "type": "bep20",
+  "status": "active",
+  "website": "https://your-token-website.com",
+  "explorer": "https://bscscan.com/address/0x7DA9481d60940174940E22dfe3dA473852566F13"
 }
