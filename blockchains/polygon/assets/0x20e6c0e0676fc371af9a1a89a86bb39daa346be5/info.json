@@ -5,12 +5,21 @@
   "decimals": 18,
   "description": "HEALG is a fantasy-themed meme token from Cadpar Corp. It has no utility, no taxes, and no admin — just vibes. Verified, renounced, immutable, and part of the Cadpar Potions Series.",
   "website": "https://cadpar.com",
-  "explorer": "https://polygonscan.com/token/0x20e6c0E0676FC371AF9A1a89a86bB39daa346be5",
+  "explorer": "https://polygonscan.com/token/0x20e6c0e0676fc371af9a1a89a86bb39daa346be5",
   "status": "active",
   "id": "cadpar-healg",
-  "links": {
-    "twitter": "https://twitter.com/CadparCorp",
-    "github": "https://github.com/CadparCorp",
-    "email": "michael@cadpar.com"
-  }
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/CadparCorp"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/CadparCorp"
+    },
+    {
+      "name": "email",
+      "url": "mailto:michael@cadpar.com"
+    }
+  ]
 }
