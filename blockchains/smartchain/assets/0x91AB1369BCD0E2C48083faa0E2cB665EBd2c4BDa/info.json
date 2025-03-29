@@ -1,0 +1,28 @@
+{
+    "name": "TetherUSD",
+    "type": "BEP20",
+    "symbol": "USDT",
+    "decimals": 18,
+    "website": "https://tether.to/en/1",
+    "description": "Tether supports and empowers growing ventures and innovation throughout the blockchain as a digital token built on multiple blockchains.",
+    "explorer": "https://www.binance.com/en/price/tether",
+    "status": "active",
+    "id": "0x91AB1369BCD0E2C48083faa0E2cB665EBd2c4BDa",
+    "links": [
+        {
+            "name": "telegram",
+            "url": "https://t.me/tether"
+        },
+        {
+            "name": "facebook",
+            "url": "https://www.facebook.com/tether.to"
+        },
+        {
+            "name": "source_code",
+            "url": "https://github.com/tetherto"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}
