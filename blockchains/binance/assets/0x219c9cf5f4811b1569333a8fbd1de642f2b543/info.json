@@ -1,10 +1,21 @@
 {
   "name": "TRISHOOL COIN",
   "symbol": "TRSH",
-  "type": "BEP-20",
+  "type": "token",
   "decimals": 18,
   "description": "Forged by Lord Shiva’s Trishul to unite the crypto cosmos with faith and strength.",
+  "website": "https://trishoolcoin.com",
   "explorer": "https://bscscan.com/token/0x219C9cF5F4811B1569333a8fbD1dE642F2b543",
   "status": "active",
-  "id": "0x219C9cF5F4811B1569333a8fbD1dE642F2b543"
+  "id": "0x219C9cF5F4811B1569333a8fbD1dE642F2b543",
+  "links": [
+    {
+      "name": "twitter",
+  "url": "https://x.com/trishoolcoin"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/TRISHOOL COIN"
+    }
+  ]
 }
