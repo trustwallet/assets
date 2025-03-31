@@ -6,28 +6,25 @@
     "description": "Token Resmi MMA Pulsa",
     "website": "https://token.mmapulsa.com",
     "explorer": "https://bscscan.com/token/0x3C94926fF166ABB1D0160594cbBcdA700C73a6f8",
+    "status": "active",
     "id": "0x3C94926fF166ABB1D0160594cbBcdA700C73a6f8",
     "links": [
-      {
-        "name": "website",
-        "url": "https://token.mmapulsa.com"
-      },
       {
         "name": "whitepaper",
         "url": "https://token.mmapulsa.com/docs/MMAP_Whitepaper_EN.pdf"
       },
       {
-        "name": "x",
-        "url": "https://x.com/mmapulsatoken"
-      },
-      {
-        "name": "youtube",
-        "url": "https://www.youtube.com/@mmapulsa"
+        "name": "facebook",
+        "url": "https://www.facebook.com/mmapulsa"
       },
       {
         "name": "telegram",
         "url": "https://t.me/mmapulsa"
+      },
+      {
+        "name": "youtube",
+        "url": "https://www.youtube.com/@mmapulsa"
       }
     ],
-    "tags": ["token", "utility"]
+    "tags": ["utility"]
 }
