@@ -1,25 +1,26 @@
 {
-    "name": "MMA Pulsa",
-    "type": "BEP20",
-    "symbol": "MMAP",
-    "decimals": 18,
-    "description": "Token Resmi MMA Pulsa",
-    "website": "https://token.mmapulsa.com",
-    "explorer": "https://bscscan.com/token/0x3C94926fF166ABB1D0160594cbBcdA700C73a6f8",
-    "status": "active",
-    "id": "0x3C94926fF166ABB1D0160594cbBcdA700C73a6f8",
-    "links": [
-      {
-        "name": "whitepaper",
-        "url": "https://token.mmapulsa.com/docs/MMAP_Whitepaper_EN.pdf"
-      },
-      {
-        "name": "telegram",
-        "url": "https://t.me/mmapulsa"
-      },
-      {
-        "name": "youtube",
-        "url": "https://www.youtube.com/@mmapulsa"
-      }
-    ]
+  "name": "MMA Pulsa",
+  "type": "BEP20",
+  "symbol": "MMAP",
+  "decimals": 18,
+  "description": "Token Resmi MMA Pulsa",
+  "website": "https://token.mmapulsa.com",
+  "explorer": "https://bscscan.com/token/0x3C94926fF166ABB1D0160594cbBcdA700C73a6f8",
+  "status": "active",
+  "id": "0x3C94926fF166ABB1D0160594cbBcdA700C73a6f8",
+  "links": [
+    {
+      "name": "whitepaper",
+      "url": "https://token.mmapulsa.com/docs/MMAP_Whitepaper_EN.pdf"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/mmapulsa"
+    },
+    {
+      "name": "youtube",
+      "url": "https://youtube.com/@mmapulsa"
+    }
+  ],
+  "tags": ["defi"]
 }
