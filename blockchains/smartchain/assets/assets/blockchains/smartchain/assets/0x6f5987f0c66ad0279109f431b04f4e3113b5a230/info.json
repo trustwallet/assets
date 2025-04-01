@@ -1,1 +1,16 @@
-
+{
+  "name": "TetherUSDT-Sim",
+  "symbol": "USDTs",
+  "type": "BEP20",
+  "decimals": 6,
+  "description": "TetherUSDT-Simulated (USDTs) is a blockchain-based academic simulation of a fiat-pegged stablecoin for educational and research purposes on Binance Smart Chain.",
+  "website": "https://www.tetherusdt-simulated.org",
+  "explorer": "https://bscscan.com/token/0x6f5987f0c66ad0279109f431b04f4e3113b5a230",
+  "status": "active",
+  "id": "0x6f5987f0c66ad0279109f431b04f4e3113b5a230",
+  "links": {
+    "github": "https://github.com/TetherUSDT-Sim/TetherUSDT-Sim",
+    "whitepaper": "https://github.com/TetherUSDT-Sim/TetherUSDT-Sim/blob/main/TetherUSDT-Simulated_Whitepaper.pdf",
+    "email": "contact@tetherusdt-simulated.org"
+  }
+}
