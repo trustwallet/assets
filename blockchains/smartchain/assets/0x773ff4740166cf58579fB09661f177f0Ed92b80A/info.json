@@ -8,10 +8,19 @@
   "explorer": "https://bscscan.com/token/0x773ff4740166cf58579fB09661f177f0Ed92b80A",
   "status": "active",
   "id": "0x773ff4740166cf58579fB09661f177f0Ed92b80A",
-  "tags": ["defi", "utility", "bep20", "metapulsex"],
-  "links": {
-    "github": "https://github.com/MFD1982",
-    "twitter": "https://twitter.com/metapulsex",
-    "telegram": "https://t.me/metapulsex"
-  }
+  "links": [
+    {
+      "name": "github",
+      "url": "https://github.com/metapulsex"
+    },
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/metapulsex"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/metapulsex"
+    }
+  ],
+  "tags": ["utility"]
 }
