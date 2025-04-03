@@ -1,28 +1,26 @@
 {
-    "name": "MetaPulseX",
-    "symbol": "MPX",
-    "type": "BEP20",
-    "decimals": 18,
-    "description": "MetaPulseX is a BEP20 token on Binance Smart Chain that aims to power a decentralized ecosystem with unique utility and rewards for its community. The project features deflationary tokenomics and is focused on integrating DeFi services to benefit long-term holders.",
-    "website": "https://metapulsex.com",
-    "explorer": "https://bscscan.com/token/0x773ff4740166cf58579fB09661f177f0Ed92b80A",
-    "status": "active",
-    "id": "0x773ff4740166cf58579fB09661f177f0Ed92b80A",
-    "tags": [
-        "defi"
-    ],
-    "links": [
-        {
-            "name": "github",
-            "url": "https://github.com/MFD1982"
-        },
-        {
-            "name": "x",
-            "url": "https://x.com/MetaPulseX"
-        },
-        {
-            "name": "telegram",
-            "url": "https://t.me/MetaPulseX"
-        }
-    ]
+  "name": "MetaPulseX",
+  "symbol": "MPX",
+  "type": "BEP20",
+  "decimals": 18,
+  "description": "MetaPulseX is a BEP20 token on Binance Smart Chain that aims to power a decentralized ecosystem with unique utility and rewards for its community. The project features deflationary tokenomics and is focused on integrating DeFi services to benefit long-term holders.",
+  "website": "https://metapulsex.com",
+  "explorer": "https://bscscan.com/token/0x773ff4740166cf58579fB09661f177f0Ed92b80A",
+  "status": "active",
+  "id": "0x773ff4740166cf58579fB09661f177f0Ed92b80A",
+  "tags": ["defi"],
+  "links": [
+    {
+      "name": "github",
+      "url": "https://github.com/MFD1982"
+    },
+    {
+      "name": "twitter",
+      "url": "https://x.com/MetaPulseX"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/MetaPulseX"
+    }
+  ]
 }
