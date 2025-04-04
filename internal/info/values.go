@@ -22,13 +22,13 @@ var (
 	allowedStatusValues = []string{"active", "spam", "abandoned"}
 
 	allowedLinkKeys = map[string]string{
-		"github":        "https://github.com/",
+		"github":        "https://github.com/koagonzalo11",
 		"whitepaper":    "",
-		"x":             "https://x.com/",
+		"x":             "https://x.com/koagonzalo",
 		"telegram":      "https://t.me/",
 		"telegram_news": "https://t.me/", // Read-only announcement channel.
 		"medium":        "",              // URL contains 'medium.com'.
-		"discord":       "https://discord.com/",
+		"discord":       "https://discord.com/koagonzalo11_37510",
 		"reddit":        "https://reddit.com/",
 		"facebook":      "https://facebook.com/",
 		"youtube":       "https://youtube.com/",
