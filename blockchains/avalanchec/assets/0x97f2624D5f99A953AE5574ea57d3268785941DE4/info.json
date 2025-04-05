@@ -1,6 +1,6 @@
 {
     "name": "Cointel",
-    "type": "AVAX",
+    "type": "AVALANCHE",
     "symbol": "COLS",
     "decimals": 18,
     "description": "COLS is the utility token of Cointel...",
@@ -14,5 +14,5 @@
         {"name": "coinmarketcap", "url": "https://coinmarketcap.com/currencies/cointel/"},
         {"name": "coingecko", "url": "https://www.coingecko.com/en/coins/cointel"}
     ],
-    "tags": ["ai", "trading-tools", "avalanche-ecosystem"]
+    "tags": ["trading-tools", "avalanche-ecosystem"]
 }
