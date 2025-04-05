@@ -3,13 +3,23 @@
     "type": "AVALANCHE",
     "symbol": "COLS",
     "decimals": 18,
-    "description": "COLS is the utility token of Cointel...",
+    "description": "COLS is the native utility token of Cointel, a cutting-edge AI-powered crypto analytics platform. The token enables access to premium features including real-time trading signals, automated portfolio management tools, and institutional-grade market insights on the Avalanche blockchain. COLS holders benefit from reduced subscription fees, staking rewards, and governance rights within the Cointel ecosystem.",
     "website": "https://cointel.global/",
     "explorer": "https://snowtrace.io/token/0x97f2624D5f99A953AE5574ea57d3268785941DE4",
+    "explorers": [
+        {
+            "url": "https://snowtrace.io/token/0x97f2624D5f99A953AE5574ea57d3268785941DE4",
+            "standard": "EIP3091"
+        },
+        {
+            "url": "https://avascan.info/blockchain/c/token/0x97f2624D5f99A953AE5574ea57d3268785941DE4",
+            "standard": "none"
+        }
+    ],
     "id": "0x97f2624D5f99A953AE5574ea57d3268785941DE4",
     "status": "active",
     "links": [
-        {"name": "x", "url": "https://x.com/Cointel_Service"},
+        {"name": "twitter", "url": "https://x.com/Cointel_Service"},
         {"name": "telegram", "url": "https://t.me/CointelOfficial"},
         {"name": "coinmarketcap", "url": "https://coinmarketcap.com/currencies/cointel/"},
         {"name": "coingecko", "url": "https://www.coingecko.com/en/coins/cointel"}
