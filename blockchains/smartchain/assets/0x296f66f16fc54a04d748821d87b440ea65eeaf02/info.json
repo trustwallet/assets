@@ -1,9 +1,10 @@
 {
+  "id": "ogame-usdt",
   "name": "Tether USDT",
   "symbol": "Tether USDT",
   "decimals": 6,
   "status": "active",
-  "type": "token",
+  "type": "BEP20",
   "address": "0x296f66f16fc54a04d748821d87b440ea65eeaf02",
   "logoURI": "https://tradevizyon.com.tr/logo.png",
   "website": "https://tradevizyon.com.tr",
@@ -15,8 +16,12 @@
       "url": "https://x.com/ogameusdt"
     },
     {
-      "name": "uniswap",
+      "name": "source_code",
       "url": "https://app.uniswap.org/positions/v3/bnb/209651"
     }
+  ],
+  "tags": [
+    "gaming",
+    "stablecoin"
   ]
 }
