@@ -1,25 +1,24 @@
 {
-  "id": "ogame-usdt",
-  "name": "Tether USDT",
-  "symbol": "Tether USDT",
+  "name": "Ogame",
+  "symbol": "USDT",
   "decimals": 6,
-  "status": "active",
-  "type": "BEP20",
   "address": "0x296f66f16fc54a04d748821d87b440ea65eeaf02",
   "logoURI": "https://tradevizyon.com.tr/logo.png",
   "website": "https://tradevizyon.com.tr",
-  "socials": [
+  "description": "Ogame is an in-game utility token, pegged to Tether USDT, designed to support dollar-based pricing and prevent currency loss in gaming purchases.",
+  "explorer": "https://bscscan.com/token/0x296f66f16fc54a04d748821d87b440ea65eeaf02",
+  "links": [
     {
       "name": "twitter",
       "url": "https://x.com/ogameusdt"
     },
     {
-      "name": "source_code",
-      "url": "https://app.uniswap.org/positions/v3/bnb/209651"
+      "name": "github",
+      "url": "https://github.com/ogameusdt"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/hakanyasinirmak"
     }
-  ],
-  "tags": [
-    "gaming",
-    "stablecoin"
   ]
 }
