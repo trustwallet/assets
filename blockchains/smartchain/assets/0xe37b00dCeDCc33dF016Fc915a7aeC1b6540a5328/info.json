@@ -1,11 +1,16 @@
 {
-    "name": "Chinese Food",
-    "symbol": "CHOPSTK",
-    "type": "ERC20",
-    "decimals": 18,
-    "description": "A meme coin on the Base chain inspired by Chinese food and lucky 8s.",
-    "website": "",
-    "explorer": "https://basescan.org/token/0xe37b00dCeDCc33dF016Fc915a7aeC1b6540a5328",
-    "status": "active",
-    "id": "0xe37b00dCeDCc33dF016Fc915a7aeC1b6540a5328"
+  "name": "Chinese Food",
+  "symbol": "CHOPSTK",
+  "type": "ERC20",
+  "decimals": 18,
+  "description": "A meme coin on the Base chain inspired by Chinese food and lucky 8s.",
+  "website": "https://chopstk.carrd.co/",
+  "explorer": "https://etherscan.io/token/0xe37b00dCeDCc33dF016Fc915a7aeC1b6540a5328",
+  "status": "active",
+  "id": "0xe37b00dCeDCc33dF016Fc915a7aeC1b6540a5328",
+  "links": {
+    "website": "https://chopstk.carrd.co/",
+    "twitter": "https://twitter.com/CHOPSTKcoin"
+  },
+  "tags": ["meme", "community", "base"]
 }
