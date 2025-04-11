@@ -1,16 +1,24 @@
 {
-  "name": "OSPI Token",
-  "symbol": "OSPI",
-  "type": "ERC20",
-  "decimals": 18,
-  "description": "A utility token used for transactions in the OSPI Smart Farm ecosystem.",
-  "website": "https://ospifarm.com",
-  "explorer": "https://etherscan.io/token/0x7e7C1cA24c86aC891851b7ba79f94Dbf1966652",
-  "links": {
-    "twitter": "https://twitter.com/ospifarm",
-    "github": "https://github.com/ospifarm"
-  },
-  "status": "active",
-  "id": "0x7e7C1cA24c86aC891851b7ba79f94Dbf1966652",
-  "tags": ["utility"]
+    "name": "OSPI",
+    "type": "POLYGON",
+    "symbol": "OSPI",
+    "decimals": 18,
+    "website": "https://www.ospifarm.com",
+    "description": "A utility token used for transactions in the OSPI Smart Farm ecosystem.",
+    "explorer": "https://thirdweb.com/polygon/0x7e7C1cA2A4c86aC891851b7ba79f94Dbf1966652",
+    "status": "active",
+    "id": "0x7e7C1cA2A4c86aC891851b7ba79f94Dbf1966652",
+    "links": [
+        {
+            "name": "X",
+            "url": "https://x.com/ospifarm"
+        },
+        {
+             "name": "github",
+             "url": "https://github.com/OSPrimaryIndustry/"
+        },
+    ],
+    "tags": [
+        "utility"
+    ]
 }
