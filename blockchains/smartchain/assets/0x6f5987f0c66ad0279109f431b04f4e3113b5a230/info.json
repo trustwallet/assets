@@ -7,10 +7,16 @@
   "website": "https://www.tetherusdt-simulated.org",
   "explorer": "https://bscscan.com/token/0x6f5987f0c66ad0279109f431b04f4e3113b5a230",
   "tags": ["stablecoin", "simulation", "education"],
-  "links": {
-    "github": "https://github.com/TetherUSDT-Sim",
-    "telegram": "https://t.me/TetherUSDT_Sim"
-  },
+  "links": [
+    {
+      "name": "github",
+      "url": "https://github.com/TetherUSDT-Sim"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/TetherUSDT_Sim"
+    }
+  ],
   "status": "active",
   "id": "tetherusdt-sim"
 }
