@@ -3,7 +3,7 @@
   "symbol": "USDTs",
   "type": "BEP20",
   "decimals": 6,
-  "description": "A simulated stablecoin for educational and research purposes, mimicking fiat-pegged behavior on BSC.",
+  "description": "A simulated stablecoin created for research and educational use, mimicking fiat-pegged behavior on BSC.",
   "website": "https://www.tetherusdt-simulated.org",
   "explorer": "https://bscscan.com/token/0x6f5987f0c66ad0279109f431b04f4e3113b5a230",
   "tags": [
@@ -15,8 +15,8 @@
       "url": "https://github.com/TetherUSDT-Sim"
     },
     {
-      "name": "explorer",
-      "url": "https://bscscan.com/token/0x6f5987f0c66ad0279109f431b04f4e3113b5a230"
+      "name": "website",
+      "url": "https://www.tetherusdt-simulated.org"
     }
   ],
   "status": "active",
