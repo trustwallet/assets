@@ -1,12 +1,12 @@
 {
   "name": "TetherUSDT-Simulated",
   "symbol": "USDTs",
-  "type": "token",
+  "type": "coin",
   "decimals": 6,
-  "description": "A simulated stablecoin project created for academic and research purposes. It mimics the behavior of fiat-pegged stablecoins on BSC and is used in educational and experimental blockchain platforms.",
+  "description": "A simulated stablecoin project created for academic and research purposes. It mimics the behavior of fiat-pegged stablecoins on BSC and is used in experimental blockchain environments and sandbox platforms.",
   "website": "https://www.tetherusdt-simulated.org",
   "explorer": "https://bscscan.com/token/0x6f5987f0c66ad0279109f431b04f4e3113b5a230",
-  "tags": ["stablecoin", "education"],
+  "tags": ["stablecoin"],
   "links": [
     {
       "name": "github",
