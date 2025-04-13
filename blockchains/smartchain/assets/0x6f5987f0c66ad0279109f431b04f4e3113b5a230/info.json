@@ -1,1 +1,11 @@
-
+{
+  "name": "TetherUSDT-Simulated",
+  "symbol": "USDTs",
+  "type": "coin",
+  "decimals": 6,
+  "description": "A simulated stablecoin project for academic and research purposes, mimicking the behavior of fiat-pegged tokens on BSC.",
+  "website": "https://www.tetherusdt-simulated.org",
+  "explorer": "https://bscscan.com/token/0x6f5987f0c66ad0279109f431b04f4e3113b5a230",
+  "status": "active",
+  "id": "tetherusdt-sim"
+}
