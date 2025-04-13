@@ -1,10 +1,10 @@
 {
   "name": "Merci Coin",
   "symbol": "MRC",
-  "type": "BEP-20",
+  "type": "BEP20",
   "decimals": 18,
   "description": "A fixed-supply token for appreciation and rewards",
-  "website": "",
+  "website": "https://x.com/CoinMRC",
   "explorer": "https://bscscan.com/address/0x3c1399D9e15699f49a6682F85241C5C42A02EC78",
   "status": "active",
   "id": "0x3c1399D9e15699f49a6682F85241C5C42A02EC78",
@@ -12,6 +12,11 @@
     {
       "name": "X",
       "url": "https://x.com/CoinMRC"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/coinmarket433"
     }
-  ]
+  ],
+  "tags": ["utility", "rewards"]
 }
