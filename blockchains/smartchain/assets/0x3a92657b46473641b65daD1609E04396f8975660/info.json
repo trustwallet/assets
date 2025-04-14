@@ -1,11 +1,22 @@
 {
   "name": "ZootopiaX Token",
   "symbol": "ZOTX",
-  "type": "ERC20",
+  "type": "BEP20",
   "decimals": 18,
-  "description": "ZootopiaX \u662f BNB \u667a\u6167\u93c8\u4e0a\u7684 GameFi + NFT + DAO \u751f\u614b\u7cfb\u7d71\u4ee3\u5e63\u3002",
+  "description": "ZootopiaX is a GameFi + NFT + DAO token on BNB Smart Chain, building an interactive ecosystem for pets, mining, and community governance.",
   "website": "https://zootopiax.com",
   "explorer": "https://bscscan.com/token/0x3a92657b46473641b65daD1609E04396f8975660",
   "status": "active",
-  "id": "zootopiax-token"
+  "id": "zootopiax-token",
+  "tags": ["defi", "gamefi"],
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/ZooTopiaX2025GO"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/ZooTopiaX2025GO"
+    }
+  ]
 }
