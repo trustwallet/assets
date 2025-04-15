@@ -4,13 +4,14 @@
   "type": "BEP20",
   "decimals": 18,
   "description": "LuxaToken is a utility token for staking and rewards on BNB Smart Chain.",
-  "website": "https://www.luxanetwork.online",
+  "website": "https://www.luxanetwork.online/",
   "explorer": "https://bscscan.com/token/0x71b76BBA6D913bACa78ac26B9168f0e2dA9e1B5A",
   "status": "active",
   "id": "0x71b76BBA6D913bACa78ac26B9168f0e2dA9e1B5A",
-  "links": {
-    "twitter": "https://twitter.com/luxatoken",
-    "telegram": "https://t.me/luxacommunity"
-  },
+  "links": [
+    "https://twitter.com/luxatoken",
+    "https://t.me/luxacommunity",
+    "https://www.luxanetwork.online/"
+  ],
   "tags": ["defi"]
 }
