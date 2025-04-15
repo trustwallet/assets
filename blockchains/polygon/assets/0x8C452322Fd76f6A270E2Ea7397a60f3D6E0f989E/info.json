@@ -13,9 +13,18 @@
     "defi",
     "web3"
   ],
-  "links": {
-    "twitter": "https://x.com/aveumnetwork",
-    "telegram": "https://t.me/aveumnetwork",
-    "github": "https://github.com/aveumio"
-  }
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://x.com/aveumnetwork"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/aveumnetwork"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/aveumio"
+    }
+  ]
 }
