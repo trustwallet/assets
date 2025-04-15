@@ -1,12 +1,16 @@
-
 {
   "name": "LuxaToken",
   "symbol": "LUXA",
   "type": "BEP20",
   "decimals": 18,
-  "description": "LuxaToken (LUXA) is the native utility token of the Luxa Network ecosystem, built on BNB Smart Chain.",
+  "description": "LuxaToken is a utility token for staking and rewards on BNB Smart Chain.",
   "website": "https://www.luxanetwork.online",
-  "explorer": "https://bscscan.com/token/0x71b76bba6d913baca78ac26b9168f0e2da9e1b5a",
+  "explorer": "https://bscscan.com/token/0x71b76BBA6D913bACa78ac26B9168f0e2dA9e1B5A",
   "status": "active",
-  "id": "0x71b76bba6d913baca78ac26b9168f0e2da9e1b5a"
+  "id": "0x71b76BBA6D913bACa78ac26B9168f0e2dA9e1B5A",
+  "links": {
+    "twitter": "https://twitter.com/luxatoken",
+    "telegram": "https://t.me/luxacommunity"
+  },
+  "tags": ["defi"]
 }
