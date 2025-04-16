@@ -4,8 +4,19 @@
   "type": "BEP-20",
   "decimals": 6,
   "description": "A custom token created on BNB Chain",
-  "website": "",
+  "website": "https://example.com",  // یه وب‌سایت واقعی برای توکنت بذار، مثلاً یه صفحه ساده که توکنت رو معرفی کنه
   "explorer": "https://bscscan.com/token/0x5dB3Cb9e150020483F8F02cA9EBeC2d5Ff831316",
   "status": "active",
-  "id": "0x5db3cb9e150020483F8F02cA9EBeC2d5Ff831316"
+  "id": "0x5dB3Cb9e150020483F8F02cA9EBeC2d5Ff831316",
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/yourproject"  // اگه داری، لینک توییتر پروژه‌ت رو بذار
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/yourproject"  // اگه داری، لینک تلگرام پروژه‌ت رو بذار
+    }
+  ],
+  "tags": ["utility-token"]  // یه تگ مرتبط با توکنت بذار، مثلاً utility-token یا meme-token
 }
