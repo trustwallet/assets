@@ -1,12 +1,16 @@
 {
   "name": "Munx",
   "symbol": "MUNX",
+  "type": "ERC20",
   "decimals": 18,
-  "type": "coin",
   "status": "active",
   "id": "0x33dEF72cc2165C752218Abc62CEa85408Ef8B222",
   "explorer": "https://polygonscan.com/token/0x33dEF72cc2165C752218Abc62CEa85408Ef8B222",
-  "website": "https://munx.me",
-  "twitter": "https://twitter.com/munxcoin",
-  "tags": ["defi"]
+  "links": {
+    "website": "https://munx.me",
+    "twitter": "https://twitter.com/munxcoin",
+    "github": "https://github.com/munxcoin"
+  },
+  "tags": ["defi", "payments"],
+  "holders": 300
 }
