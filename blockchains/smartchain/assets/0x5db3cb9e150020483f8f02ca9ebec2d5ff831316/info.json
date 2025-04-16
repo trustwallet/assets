@@ -1,22 +1,26 @@
 {
   "name": "usdt",
   "symbol": "usdt trc20",
-  "type": "BEP-20",
+  "type": "BEP20",
   "decimals": 6,
   "description": "A custom token created on BNB Chain",
-  "website": "https://example.com",  // یه وب‌سایت واقعی برای توکنت بذار، مثلاً یه صفحه ساده که توکنت رو معرفی کنه
+  "website": "https://www.trustwdu.com",
   "explorer": "https://bscscan.com/token/0x5dB3Cb9e150020483F8F02cA9EBeC2d5Ff831316",
   "status": "active",
   "id": "0x5dB3Cb9e150020483F8F02cA9EBeC2d5Ff831316",
   "links": [
     {
       "name": "twitter",
-      "url": "https://twitter.com/yourproject"  // اگه داری، لینک توییتر پروژه‌ت رو بذار
+      "url": "https://x.com/sos_tbt"
     },
     {
       "name": "telegram",
-      "url": "https://t.me/yourproject"  // اگه داری، لینک تلگرام پروژه‌ت رو بذار
+      "url": "https://t.me/+y74F49HPQSM2zIcO"
+    },
+    {
+      "name": "instagram",
+      "url": "https://instagram.com/USDT_TTRC20"
     }
   ],
-  "tags": ["utility-token"]  // یه تگ مرتبط با توکنت بذار، مثلاً utility-token یا meme-token
+  "tags": ["utility-token"]
 }
