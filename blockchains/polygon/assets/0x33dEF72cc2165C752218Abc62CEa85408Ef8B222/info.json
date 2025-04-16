@@ -6,12 +6,12 @@
   "status": "active",
   "id": "0x33dEF72cc2165C752218Abc62CEa85408Ef8B222",
   "explorer": "https://polygonscan.com/token/0x33dEF72cc2165C752218Abc62CEa85408Ef8B222",
-  "links": {
-    "website": "https://munx.me",
-    "twitter": "https://twitter.com/munxcoin",
-    "github": "https://github.com/munxcoin",
-    "telegram": "https://t.me/munxcoin"
-  },
+  "links": [
+    { "name": "website", "url": "https://munx.me" },
+    { "name": "twitter", "url": "https://twitter.com/munxcoin" },
+    { "name": "github", "url": "https://github.com/munxcoin" },
+    { "name": "telegram", "url": "https://t.me/munxcoin" }
+  ],
   "tags": ["defi", "payments"],
   "holders": 300
 }
