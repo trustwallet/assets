@@ -2,7 +2,11 @@
   "name": "Munx",
   "symbol": "MUNX",
   "decimals": 18,
-  "description": "Munx is a Web3 token for decentralized micropayments to publishers and streamers.",
+  "type": "coin",
+  "status": "active",
+  "id": "0x33dEF72cc2165C752218Abc62CEa85408Ef8B222",
+  "explorer": "https://polygonscan.com/token/0x33dEF72cc2165C752218Abc62CEa85408Ef8B222",
   "website": "https://munx.me",
-  "twitter": "https://twitter.com/munxcoin"
+  "twitter": "https://twitter.com/munxcoin",
+  "tags": ["defi"]
 }
