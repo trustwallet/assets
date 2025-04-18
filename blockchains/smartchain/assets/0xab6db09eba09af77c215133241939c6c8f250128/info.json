@@ -1,13 +1,19 @@
 {
   "name": "Wrapped USDT Plus",
-  "website": "https://wusdtp.github.io/wusdt-coin",
-  "description": "WUSDT is a utility token on Binance Smart Chain with liquidity locked and available for trading on PancakeSwap. It powers Drazil's ecosystem and promotes decentralized access to stable digital assets.",
-  "explorer": "https://bscscan.com/token/0xAB6dB09EBA09af77C215133241939c6c8f250128",
-  "type": "BEP20",
   "symbol": "WUSDT",
+  "type": "BEP20",
   "decimals": 18,
+  "description": "WUSDT is a utility token on Binance Smart Chain with liquidity locked and available for trading on PancakeSwap. It powers Drazil's ecosystem and promotes decentralized access to stable digital assets.",
+  "website": "https://wusdtp.github.io/wusdt-coin/#",
+  "explorer": "https://bscscan.com/token/0xAB6dB09EBA09af77C215133241939c6c8f250128",
   "status": "active",
   "id": "0xAB6dB09EBA09af77C215133241939c6c8f250128",
-  "telegram": "https://t.me/wusdti",
+  "links": {
+    "telegram": "https://t.me/wusdti",
+    "twitter": "https://x.com/ferreirabdc31",
+    "dextools": "https://www.dextools.io/app/pt/bnb/pair-explorer/0xd6702f6edf139ac4866b42f220b339c89f84053b",
+    "poocoin": "https://poocoin.app/tokens/0xab6db09eba09af77c215133241939c6c8f250128",
+    "pancakeswap": "https://pancakeswap.finance/swap?outputCurrency=0xAB6dB09EBA09af77C215133241939c6c8f250128"
+  },
   "tags": ["defi"]
 }
