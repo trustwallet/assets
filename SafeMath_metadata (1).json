@@ -1,0 +1,46 @@
+{
+	"compiler": {
+		"version": "0.7.6+commit.7338295f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"details": "Wrappers over Solidity's arithmetic operations with added overflow checks.",
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"SafeMath.sol": "SafeMath"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"SafeMath.sol": {
+			"keccak256": "0xc7dcdb665eb127f9ef99f3fa0bce89ae769dfdddd2b90e938125ed411a24decc",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://eab6420f5b362274f2509df8d51a1d246cebd20e055d95a1067d11ca7a723d45",
+				"dweb:/ipfs/QmUrNmfeEH82LjYVvJsmNqBZ9Q87HcoTUydyPzJjP3acAq"
+			]
+		}
+	},
+	"version": 1
+}
