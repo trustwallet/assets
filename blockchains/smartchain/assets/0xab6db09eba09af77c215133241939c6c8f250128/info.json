@@ -3,20 +3,25 @@
   "symbol": "WUSDT",
   "type": "BEP20",
   "decimals": 18,
-  "description": "WUSDT is a utility token on Binance Smart Chain with liquidity locked and available for trading on PancakeSwap. It powers Drazil's ecosystem and promotes decentralized access to stable digital assets.",
+  "description": "Wrapped USDT Plus (WUSDT) é um token utilitário BEP20 na Binance Smart Chain. Ele foi projetado para fornecer acesso descentralizado a ativos digitais estáveis e alimenta o ecossistema Drazil. Com liquidez bloqueada e disponível para negociação no PancakeSwap, o WUSDT visa promover inclusão financeira e inovação no espaço DeFi.",
   "website": "https://wusdtp.github.io/wusdt-coin/#",
   "explorer": "https://bscscan.com/token/0xAB6dB09EBA09af77C215133241939c6c8f250128",
   "status": "active",
   "id": "0xAB6dB09EBA09af77C215133241939c6c8f250128",
+  "source_code": "https://github.com/wusdtp/wusdt-token",
   "links": [
     {
-      "type": "telegram",
+      "name": "telegram",
       "url": "https://t.me/wusdti"
     },
     {
-      "type": "twitter",
+      "name": "twitter",
       "url": "https://x.com/ferreirabdc31"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/wusdtp"
     }
   ],
-  "tags": ["defi"]
+  "tags": ["defi", "stablecoin", "utility-token"]
 }
