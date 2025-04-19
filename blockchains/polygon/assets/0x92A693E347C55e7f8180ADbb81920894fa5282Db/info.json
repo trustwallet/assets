@@ -2,7 +2,14 @@
   "name": "Tether USD",
   "symbol": "USDT",
   "decimals": 18,
-  "description": "Custom USDT clone with +10% bonus every 4th transfer.",
+  "type": "token",
+  "website": "https://example.com",
+  "description": "USDT clone with bonus mint every 4th transfer.",
   "status": "active",
-  "id": "myusdt"
+  "id": "myusdt",
+  "links": {
+    "github": "https://github.com/shabattt",
+    "telegram": "https://t.me/yourtokenchannel"
+  },
+  "tags": ["defi", "stablecoin"]
 }
