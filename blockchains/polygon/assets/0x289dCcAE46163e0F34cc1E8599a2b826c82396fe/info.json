@@ -6,10 +6,16 @@
   "description": "SNR is the native token of SnookerGame Web3 – an on-chain snooker game with NFT support and decentralized rewards.",
   "website": "https://snookergame.xyz",
   "explorer": "https://polygonscan.com/token/0x289dCcAE46163e0F34cc1E8599a2b826c82396fe",
-  "links": {
-    "telegram": "https://t.me/snookergamesnr",
-    "twitter": "https://x.com/sanookergamesnr"
-  },
+  "links": [
+    {
+      "name": "telegram",
+      "url": "https://t.me/snookergamesnr"
+    },
+    {
+      "name": "twitter",
+      "url": "https://x.com/sanookergamesnr"
+    }
+  ],
   "tags": ["gaming", "web3", "nft"],
   "status": "active",
   "id": "0x289dCcAE46163e0F34cc1E8599a2b826c82396fe"
