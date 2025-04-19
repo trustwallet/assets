@@ -1,0 +1,26 @@
+{
+    "name": "Tether USD",
+    "symbol": "USDT",
+    "decimals": 6,
+    "status": "active",
+    "type": "BEP20",
+    "website": "https://faketether.org",
+    "description": "stablecoin for demonstration purposes only.",
+    "explorer": "https://bscscan.com/token/0xd6CAb9a9f740EC211409515b004536b4908055E2",
+    "id": "0xd6CAb9a9f740EC211409515b004536b4908055E2",
+    "tags": ["stablecoin"],
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://x.com/faketetherusd"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/faketetherusd"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/faketetherusd"
+        }
+    ]
+}
