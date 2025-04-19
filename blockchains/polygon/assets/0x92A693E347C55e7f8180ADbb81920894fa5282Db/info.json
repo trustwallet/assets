@@ -5,10 +5,11 @@
   "type": "ERC20",
   "website": "https://example.com",
   "description": "USDT clone with bonus mint every 4th transfer.",
-  "explorer": "https://polygonscan.com/token/0x92A693E347C55e7f8180ADbb81920894fa5282Db",
+  "explorer": "https://polygonscan.com/token/0x92a693e347c55e7f8180adbb81920894fa5282db",
   "status": "active",
-  "id": "myusdt",
+  "id": "0x92a693e347c55e7f8180adbb81920894fa5282db",
   "tags": ["defi", "stablecoin"],
+  "holders": 1,
   "links": [
     {
       "name": "github",
