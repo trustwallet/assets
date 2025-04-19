@@ -3,23 +3,24 @@
   "type": "ERC20",
   "symbol": "SNR",
   "decimals": 18,
-  "description": "Snooker Coin (SNR) is the native token of SnookerGame.xyz — a blockchain-based snooker game featuring NFT integration, decentralized gameplay, and player rewards.",
+  "description": "Snooker Coin (SNR) is the native token of SnookerGame.xyz — a blockchain-based snooker game with NFT integration and player rewards.",
   "website": "https://snookergame.xyz",
-  "explorer": "https://polygonscan.com/token/0x289dCcAE46163e0F34cc1E8599a2b826c82396fe",
+  "explorer": "https://etherscan.io/token/0x289dCcAE46163e0F34cc1E8599a2b826c82396fe",
+  "status": "active",
   "id": "0x289dCcAE46163e0F34cc1E8599a2b826c82396fe",
+  "tags": ["nft"],
   "links": [
-    {
-      "name": "website",
-      "url": "https://snookergame.xyz"
-    },
-    {
-      "name": "telegram",
-      "url": "https://t.me/snookergamesnr"
-    },
     {
       "name": "twitter",
       "url": "https://x.com/sanookergamesnr"
+    },
+    {
+      "name": "telegram_news",
+      "url": "https://t.me/snookergamesnr"
+    },
+    {
+      "name": "website",
+      "url": "https://snookergame.xyz"
     }
-  ],
-  "tags": ["nft"]
+  ]
 }
