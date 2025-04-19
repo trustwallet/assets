@@ -7,9 +7,15 @@
   "description": "USDT clone with bonus mint every 4th transfer.",
   "status": "active",
   "id": "myusdt",
-  "links": {
-    "github": "https://github.com/shabattt",
-    "telegram": "https://t.me/yourtokenchannel"
-  },
-  "tags": ["defi", "stablecoin"]
+  "tags": ["defi", "stablecoin"],
+  "links": [
+    {
+      "name": "github",
+      "url": "https://github.com/yourproject"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/yourtoken"
+    }
+  ]
 }
