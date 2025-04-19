@@ -9,11 +9,11 @@
   "status": "active",
   "id": "TEpGiLGNB7W9W26LbvtU9wdukrLgLZwFgr",
   "links": [
-    "https://x.com/usdtgcoin",
-    "https://t.me/usdtgcoin",
-    "https://bitcointalk.org/index.php?topic=5538551",
-    "https://github.com/ta5jg",
-    "https://discord.gg/YOUR_INVITE"
+    { "name": "twitter", "url": "https://x.com/usdtgcoin" },
+    { "name": "telegram", "url": "https://t.me/usdtgcoin" },
+    { "name": "bitcointalk", "url": "https://bitcointalk.org/index.php?topic=5538551" },
+    { "name": "github", "url": "https://github.com/ta5jg" },
+    { "name": "discord", "url": "https://discord.gg/YOUR_INVITE" }
   ],
   "tags": ["stablecoin", "tron", "defi"]
 }
