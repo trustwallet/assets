@@ -1,0 +1,24 @@
+{
+  "name": "FakeUSDT_TRC20",
+  "type": "TRC20",
+  "symbol": "USDT",
+  "decimals": 6,
+  "description": "A fake TRC20 token simulating USDT on the TRON blockchain for testing purposes.",
+  "website": "https://tether.to",
+  "explorer": "https://tronscan.io/#/token20/TGgRcefxVCzTqa4o5yCtv7D4DHy1PGZ2sk",
+  "status": "active",
+  "id": "TGgRcefxVCzTqa4o5yCtv7D4DHy1PGZ2sk",
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://x.com/tether_to"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/Damirsila077/assets"
+    }
+  ],
+  "tags": [
+    "stablecoin"
+  ]
+}
