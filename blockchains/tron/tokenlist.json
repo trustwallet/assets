@@ -12,6 +12,16 @@
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/tron/assets/TMz2SWatiAtZVVcH2ebpsbVtYwUPT9EdjH/logo.png",
             "pairs": []
+        },
+        {
+            "asset": "c195_tTQwo1DsHZea8aku4cnXqBJPD35r7VTi8Du",
+            "type": "TRC20",
+            "address": "TQwo1DsHZea8aku4cnXqBJPD35r7VTi8Du",
+            "name": "Tether USDTR",
+            "symbol": "USDTR",
+            "decimals": 6,
+            "logoURI": "https://raw.githubusercontent.com/aslan13213547/assets/master/blockchains/tron/assets/TQwo1DsHZea8aku4cnXqBJPD35r7VTi8Du/logo.png",
+            "pairs": []
         }
     ],
     "version": {
@@ -19,4 +29,4 @@
         "minor": 0,
         "patch": 0
     }
-    }
+}
