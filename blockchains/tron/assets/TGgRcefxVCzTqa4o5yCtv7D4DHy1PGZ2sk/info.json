@@ -3,15 +3,21 @@
   "symbol": "USDT",
   "type": "TRC20",
   "decimals": 6,
-  "description": "This is a test TRC20 token that simulates USDT on TRON mainnet for demo purposes only.",
+  "description": "A simulated TRC20 version of USDT on TRON, used for testing and demo purposes.",
   "website": "https://tether.to",
   "explorer": "https://tronscan.io/#/token20/TGgRcefxVCzTqa4o5yCtv7D4DHy1PGZ2sk",
   "status": "active",
   "id": "TGgRcefxVCzTqa4o5yCtv7D4DHy1PGZ2sk",
-  "links": {
-    "twitter": "https://twitter.com/fakeusdt",
-    "github": "https://github.com/fakeusdtproject"
-  },
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/fakeusdt"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/fakeusdtproject"
+    }
+  ],
   "tags": [
     "stablecoin"
   ]
