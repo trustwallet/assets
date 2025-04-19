@@ -1,9 +1,9 @@
 {
   "name": "Tether USD",
-  "symbol": "USDT",
   "type": "TRC20",
+  "symbol": "USDT",
   "decimals": 6,
-  "description": "A test/demo TRC20 token mimicking USDT on Tron.",
+  "description": "A fake TRC20 test token simulating USDT on the TRON blockchain.",
   "website": "https://tether.to",
   "explorer": "https://tronscan.io/#/token20/TGgRcefxVCzTqa4o5yCtv7D4DHy1PGZ2sk",
   "status": "active",
@@ -11,14 +11,15 @@
   "links": [
     {
       "name": "twitter",
-      "url": "https://twitter.com/fakeusdt"
+      "url": "https://twitter.com/tether_to"
     },
     {
       "name": "github",
-      "url": "https://github.com/fakeusdtproject"
+      "url": "https://github.com/trustwallet/assets"
     }
   ],
   "tags": [
-    "stablecoin"
+    "stablecoin",
+    "usd"
   ]
 }
