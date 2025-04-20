@@ -1,14 +1,15 @@
 {
   "name": "Riviera Coin",
   "symbol": "RIV",
-  "address": "0xc7aedda8074db7779911ff6c9e8ac929969fd883",
-  "chainId": 56,
+  "type": "token",
+  "status": "active",
+  "id": "0xc7aedda8074db7779911ff6c9e8ac929969fd883",
   "decimals": 18,
-  "logoURI": "https://riviera-coin.com/logo.png",
-  "tags": [
-    "lifestyle",
-    "luxury",
-    "DeFi",
-    "BNB Smart Chain"
+  "description": "Riviera Coin (RIV) is a lifestyle and luxury token built on the BNB Smart Chain, inspired by the elegance of the French Riviera.",
+  "website": "https://riviera-coin.com",
+  "explorer": "https://bscscan.com/token/0xc7aedda8074db7779911ff6c9e8ac929969fd883",
+  "links": [
+    "https://twitter.com/RIVCoin06",
+    "https://www.instagram.com/rivieracoin/"
   ]
 }
