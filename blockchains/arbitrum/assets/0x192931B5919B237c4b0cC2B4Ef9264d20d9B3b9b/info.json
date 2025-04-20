@@ -1,15 +1,22 @@
 {
     "name": "Bluwhale Points Token",
-    "website": "https://bluwhale.com/",
-    "description": "The Bluwhale Points Token.",
-    "explorer": "https://arbiscan.io/token/0x192931B5919B237c4b0cC2B4Ef9264d20d9B3b9b",
-    "type": "ARBITRUM",
+    "type": "ERC20",
     "symbol": "BLUP",
     "decimals": 18,
-    "status": "active",
-    "tags": [
-      "ai",
-      "meme"
-    ],
+    "description": "The Bluwhale Points Token.",
+    "website": "https://bluwhale.com/",
+    "explorer": "https://arbiscan.io/token/0x192931B5919B237c4b0cC2B4Ef9264d20d9B3b9b",
     "id": "0x192931B5919B237c4b0cC2B4Ef9264d20d9B3b9b",
+    "status": "active",
+    "tags": ["ai", "meme"],
+    "links": [
+      {
+        "name": "telegram",
+        "url": "https://t.me/bluwhaleofficial"
+      },
+      {
+        "name": "twitter",
+        "url": "https://x.com/bluwhaleai"
+      }
+    ]
   }
