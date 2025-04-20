@@ -4,14 +4,14 @@
   "type": "BEP20",
   "decimals": 18,
   "description": "Silentis - Official token of the Silentis AI.",
-  "website": "https://yourprojectwebsite.com",
+  "website": "https://silentis.ai",
   "explorer": "https://bscscan.com/token/0x8a87562947422db0EB3070a5A1ac773C7a8D64e7",
   "status": "active",
   "id": "0x8a87562947422db0EB3070a5A1ac773C7a8D64e7",
   "links": [
     {
       "name": "twitter",
-      "url": "https://twitter.com/silentisproject"
+      "url": "https://x.com/silentisproject"
     },
     {
       "name": "telegram",
@@ -21,5 +21,6 @@
       "name": "github",
       "url": "https://github.com/SilentisOwner"
     }
-  ]
+  ],
+  "tags": ["ai", "utility"]
 }
