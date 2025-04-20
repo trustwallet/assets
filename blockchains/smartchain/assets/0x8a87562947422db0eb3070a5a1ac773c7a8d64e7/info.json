@@ -1,11 +1,25 @@
 {
-    "name": "Silentis",
-    "symbol": "SILENTIS",
-    "type": "BEP20",
-    "decimals": 18,
-    "description": "Silentis Ai Token.",
-    "website": "https://silentis.ai",
-    "explorer": "https://bscscan.com/token/0x8a87562947422db0eb3070a5a1ac773c7a8d64e7",
-    "status": "active",
-    "id": "0x8a87562947422db0eb3070a5a1ac773c7a8d64e7"
-  }
+  "name": "Silentis",
+  "symbol": "SILENTIS",
+  "type": "BEP20",
+  "decimals": 18,
+  "description": "Silentis - Official token of the Silentis AI.",
+  "website": "https://yourprojectwebsite.com",
+  "explorer": "https://bscscan.com/token/0x8a87562947422db0EB3070a5A1ac773C7a8D64e7",
+  "status": "active",
+  "id": "0x8a87562947422db0EB3070a5A1ac773C7a8D64e7",
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/silentisproject"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/SilentisAi"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/SilentisOwner"
+    }
+  ]
+}
