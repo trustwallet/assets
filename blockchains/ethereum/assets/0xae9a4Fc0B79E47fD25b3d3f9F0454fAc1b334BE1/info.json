@@ -3,17 +3,15 @@
   "symbol": "MEOV",
   "type": "ERC20",
   "decimals": 18,
+  "status": "active",
+  "id": "0xae9a4Fc0B79E47fD25b3d3f9F0454fAc1b334BE1",
   "description": "MEMEOVER is a meme-driven ERC20 token where the meme ends and value begins.",
-  "website": "https://memeover.xyz",
   "explorer": "https://etherscan.io/token/0xae9a4Fc0B79E47fD25b3d3f9F0454fAc1b334BE1",
+  "tags": ["memes"],
   "links": [
     {
-      "name": "X",
+      "name": "twitter",
       "url": "https://x.com/meov_official"
-    },
-    {
-      "name": "swap",
-      "url": "https://bit.ly/memeover-swap"
     }
   ]
 }
