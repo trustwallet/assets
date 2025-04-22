@@ -1,15 +1,6 @@
-{
-  "name": "Lamb Coin",
-  "symbol": "LAMD",
-  "type": "ERC20",
-  "decimals": 18,
-  "description": "Lamb Coin (LAMD) is a decentralized community-driven meme token on the Arbitrum network, focused on fun and utility.",
-  "website": "",
-  "explorer": "https://arbiscan.io/token/0xc336939f77c909cE1344F52Dff89F964A28130d4",
-  "status": "active",
-  "id": "0xc336939f77c909cE1344F52Dff89F964A28130d4",
-  "links": {
-    "twitter": "https://twitter.com/LambCoin1",
-    "telegram": "https://t.me/lambcoin18"
-  }
-}
+assets/
+└── blockchains/
+    └── arbitrum/
+        └── assets/
+            └── 0xc336939f77c909cE1344F52Dff89F964A28130d4/
+                └── logo.png
