@@ -1,18 +1,18 @@
 {
   "name": "Water Coin",
   "symbol": "WATER",
-  "type": "token",
+  "type": "coin",
   "decimals": 18,
-  "description": "Water Coin is a utility token developed to support decentralized engineering tools and workflow automation for estimators and infrastructure professionals.",
+  "description": "Water Coin is an asset designed to operate as part of the ELEMENTAL network, supporting tools and applications built for infrastructure.",
   "website": "https://water-coin.xyz",
   "explorer": "https://basescan.org/token/0x3d0ab782d19c7e35afb5b6eedd0ce90f983cc3bf",
   "status": "active",
   "id": "0x3d0ab782d19c7e35afb5b6eedd0ce90f983cc3bf",
-  "socials": {
-    "twitter": "https://twitter.com/watercointoken",
-    "telegram": "https://t.me/watercoinchat"
-  },
+  "links": [
+    "https://twitter.com/watercointoken",
+    "https://t.me/watercoinchat"
+  ],
   "tags": [
-    "utility"
+    "defi"
   ]
 }
