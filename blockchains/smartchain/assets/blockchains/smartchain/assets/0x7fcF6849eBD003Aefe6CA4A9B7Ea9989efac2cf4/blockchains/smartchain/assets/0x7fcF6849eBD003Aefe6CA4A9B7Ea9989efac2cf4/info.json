@@ -3,12 +3,20 @@
   "symbol": "TTS",
   "type": "BEP20",
   "decimals": 18,
-  "description": "Token komunitas sahur pertama yang menggabungkan edukasi dan hiburan.",
-  "website": "https://hasun21.github.io/ttscoin",
-  "telegram": "https://t.me/ttsmemeforce",
-  "twitter": "https://twitter.com/ttsonx",
+  "description": "Token komunitas sahur yang menggabungkan edukasi dan hiburan.",
+  "website": "https://hasun21.github.io/ttscoin/",
   "explorer": "https://bscscan.com/token/0x7fcF6849eBD003Aefe6CA4A9B7Ea9989efac2cf4",
   "status": "active",
   "id": "0x7fcF6849eBD003Aefe6CA4A9B7Ea9989efac2cf4",
-  "tags": ["meme"]
+  "links": [
+    {
+      "name": "x",
+      "url": "https://x.com/ttsonx"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/ttsmemeforce"
+    }
+  ],
+  "tags": ["defi"]
 }
