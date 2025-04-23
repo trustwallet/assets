@@ -8,10 +8,17 @@
   "explorer": "https://bscscan.com/token/0x7fcF6849eBD003Aefe6CA4A9B7Ea9989efac2cf4",
   "status": "active",
   "id": "0x7fcF6849eBD003Aefe6CA4A9B7Ea9989efac2cf4",
-  "links": {
-    "twitter": "https://twitter.com/ttsonx",
-    "telegram": "https://t.me/ttsmemeforce"
-  },
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/ttsonx"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/ttsmemeforce"
+    }
+  ],
   "tags": ["defi"]
 }
+
 
