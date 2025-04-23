@@ -9,8 +9,14 @@
   "explorer": "https://bscscan.com/token/0xac6aeE646B3dc8A9e49847F51A6E81bEecB0EFE7",
   "status": "active",
   "tags": ["Utility"],
-  "links": {
-    "twitter": "https://x.com/tradehouseofir1",
-    "telegram": "https://t.me/itscabrokers"
-  }
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://x.com/tradehouseofir1"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/itscabrokers"
+    }
+  ]
 }
