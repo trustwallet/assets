@@ -1,9 +1,16 @@
 {
+  "id": "itsca-token",
   "name": "Itsca Token",
   "symbol": "ITSCA",
   "type": "BEP20",
   "decimals": 18,
-  "description": "Official token of ITSCABrokers.net. A utility token for the upcoming financial tools and services platform.",
+  "description": "Official token of itsca-brokers.net. A utility token for the upcoming financial tools and services platform.",
   "website": "https://itsca-brokers.net/",
-  "explorer": "https://bscscan.com/token/0xac6aeE646B3dc8A9e49847F51A6E81bEecB0EFE7"
+  "explorer": "https://bscscan.com/token/0xac6aeE646B3dc8A9e49847F51A6E81bEecB0EFE7",
+  "status": "active",
+  "tags": ["Utility"],
+  "links": {
+    "twitter": "https://x.com/tradehouseofir1",
+    "telegram": "https://t.me/itscabrokers"
+  }
 }
