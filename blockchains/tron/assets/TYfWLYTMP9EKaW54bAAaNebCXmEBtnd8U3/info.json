@@ -8,10 +8,10 @@
   "description": "USD-pegged stablecoin on Tron",
   "website": "https://tether.to",
   "explorer": "https://tronscan.org/#/token20/TYfWLYTMP9EKaW54bAAaNebCXmEBtnd8U3",
-  "links": {
-    "twitter": "https://twitter.com/Tether_to",
-    "telegram": "https://t.me/Tether_to"
-  },
+  "links":  [
+  { "name": "twitter",  "url": "https://twitter.com/Tether_to" },
+  { "name": "telegram", "url": "https://t.me/Tether_to" }
+],,
   "tags": ["stablecoin","usd-pegged","trc20"],
   "holders": 1234567
 }
