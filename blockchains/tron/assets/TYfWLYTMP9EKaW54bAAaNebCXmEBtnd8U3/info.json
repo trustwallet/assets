@@ -7,12 +7,12 @@
   "decimals": 6,
   "description": "Tether USD (USDT) is a USD-pegged stablecoin on the Tron network.",
   "website": "https://tether.to",
-  "explorer": "https://tronscan.org/#/token20/TYfWLYTMP9EKaW54bAAaNebCXmEBtnd8U3",
+  "explorer": "https://tronscan.io/#/token20/TYfWLYTMP9EKaW54bAAaNebCXmEBtnd8U3",
   "links": [
-    { "name": "x",             "url": "https://twitter.com/Tether_to" },
-    { "name": "telegram",      "url": "https://t.me/Tether_to" },
-    { "name": "coinmarketcap", "url": "https://coinmarketcap.com/currencies/tether/" }
+    { "name": "twitter",    "url": "https://twitter.com/Tether_to" },
+    { "name": "telegram",   "url": "https://t.me/Tether_to" },
+    { "name": "coingecko",  "url": "https://www.coingecko.com/en/coins/tether" }
   ],
-  "tags": ["stablecoin", "usd-pegged", "trc20"],
+  "tags": ["stablecoin","trc20"],
   "holders": 1789997000
 }
