@@ -1,0 +1,37 @@
+{
+    "name": "USD Coin",
+    "website": "https://www.centre.io",
+    "description": "USDC provides a fully collateralized US dollar stablecoin, and is based on the open source asset-backed stablecoin framework developed by Centre.",
+    "explorer": "https://algoexplorer.io/asset/31566704",
+    "research": "https://research.binance.com/en/projects/usd-coin",
+    "type": "ASA",
+    "symbol": "USDC",
+    "decimals": 6,
+    "status": "active",
+    "id": "31566704",
+    "tags": [
+        "stablecoin"
+    ],
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/centrehq"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://centre.io/pdfs/centre-whitepaper.pdf"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/usd-coin/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/usd-coin/"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/centre-blog"
+        }
+    ]
+}
