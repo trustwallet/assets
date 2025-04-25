@@ -1,7 +1,20 @@
 {
-    "name": "MuskX Token",
-    "symbol": "MUSKX",
-    "decimals": 8,
-    "status": "active",
-    "id": "0x84d6783347f64df2FD07e4100C9575F77584EfDB"
+  "name": "MuskX Token",
+  "symbol": "MUSKX",
+  "type": "BEP20",
+  "decimals": 8,
+  "status": "active",
+  "website": "https://muskxtoken.netlify.app",
+  "description": "MuskX is a forward-thinking token designed to empower communities through decentralized technology, innovation, and trust.",
+  "explorer": "https://bscscan.com/token/0x84d6783347f64df2FD07e4100C9575F77584EfDB",
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://x.com/muskx_token"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/muskxtoken"
+    }
+  ]
 }
