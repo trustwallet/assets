@@ -1,11 +1,11 @@
 {
-    "name": "MantaDAO",
+    "name": "Liquidy",
     "symbol": "LQDY",
     "type": "cosmos-sdk/x/bank",
     "decimals": 8,
-    "description": "MantaDAO is a decentralized autonomous organization focused on creating revenue generating DeFi products and managing a profitable DAO treasury through without any centralized control.",
-    "website": "https://mantaswap.app/",
-    "explorer": "https://thorchain.net",
+    "description": "Liquidy is a decentralized autonomous organization running a series of profitable on-chain revenue streams. The primary revenue streams are Market Making and a Swap Router.",
+    "website": "https://liquidy.finance/",
+    "explorer": "https://thorchain.net/",
     "status": "active",
     "id": "lqdy",
     "links": [
@@ -19,7 +19,7 @@
         },
         {
             "name": "X",
-            "url": "https://x.com/manta_dao"
+            "url": "https://x.com/LiquidyFinance"
         },
         {
             "name": "discord",
@@ -27,7 +27,7 @@
         },
         {
             "name": "telegram",
-            "url": "https://t.me/MantaDAO"
+            "url": "https://t.me/LiquidyFinance"
         }
     ],
     "tags": [
