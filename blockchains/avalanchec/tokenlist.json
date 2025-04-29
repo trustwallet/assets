@@ -279,7 +279,7 @@
             "address": "0x19860CCB0A68fd4213aB9D8266F7bBf05A8dDe98",
             "name": "Binance USD",
             "symbol": "BUSD.e",
-            "decimals": 6,
+            "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/avalanchec/assets/0x19860CCB0A68fd4213aB9D8266F7bBf05A8dDe98/logo.png",
             "pairs": []
         },
@@ -554,16 +554,6 @@
             "pairs": []
         },
         {
-            "asset": "c10009000_t0x57319d41F71E81F3c65F2a47CA4e001EbAFd4F33",
-            "type": "AVALANCHE",
-            "address": "0x57319d41F71E81F3c65F2a47CA4e001EbAFd4F33",
-            "name": "JoeBar",
-            "symbol": "xJOE",
-            "decimals": 18,
-            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/avalanchec/assets/0x57319d41F71E81F3c65F2a47CA4e001EbAFd4F33/logo.png",
-            "pairs": []
-        },
-        {
             "asset": "c10009000_t0x2147EFFF675e4A4eE1C2f918d181cDBd7a8E208f",
             "type": "AVALANCHE",
             "address": "0x2147EFFF675e4A4eE1C2f918d181cDBd7a8E208f",
@@ -581,6 +571,16 @@
             "symbol": "BIFI",
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/avalanchec/assets/0xd6070ae98b8069de6B494332d1A1a81B6179D960/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c10009000_t0x62edc0692BD897D2295872a9FFCac5425011c661",
+            "type": "AVALANCHE",
+            "address": "0x62edc0692BD897D2295872a9FFCac5425011c661",
+            "name": "GMX",
+            "symbol": "GMX",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/avalanchec/assets/0x62edc0692BD897D2295872a9FFCac5425011c661/logo.png",
             "pairs": []
         }
     ],
