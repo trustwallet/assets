@@ -1,10 +1,17 @@
 {
   "name": "FREEBEE COIN",
   "symbol": "FREEBEE",
-  "status": "active",
   "type": "token",
-  "address": "0x4a5102228b37C27Cb8ef4fE58B7F8bdF51fb556A",
   "decimals": 18,
-  "chainId": 56,
-  "logoURI": "https://raw.githubusercontent.com/wan231285/assets/master/blockchains/smartchain/assets/0x4a5102228b37C27Cb8ef4fE58B7F8bdF51fb556A/logo.png"
+  "status": "active",
+  "id": "0x4a5102228b37C27Cb8ef4fE58B7F8bdF51fb556A",
+  "website": "https://freebeeeco.com",
+  "description": "FREEBEE COIN is a utility token that rewards pet owners for eco-friendly behavior and is accepted in partner stores.",
+  "explorer": "https://bscscan.com/token/0x4a5102228b37C27Cb8ef4fE58B7F8bdF51fb556A",
+  "links": {
+    "github": "https://github.com/wan231285",
+    "telegram": "https://t.me/freebeeeco",
+    "discord": "https://discord.gg/esaxQxtTFm"
+  },
+  "tags": ["utility", "eco", "pet"]
 }
