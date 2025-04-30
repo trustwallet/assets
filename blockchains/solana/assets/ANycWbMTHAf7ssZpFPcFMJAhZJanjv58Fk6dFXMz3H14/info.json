@@ -1,16 +1,16 @@
 {
   "name": "Tether USD",
   "symbol": "USDT",
+  "type": "spl",
   "decimals": 6,
-  "address": "ANycWbMTHAf7ssZpFPcFMJAhZJanjv58Fk6dFXMz3H14",
-  "chainId": 101,
-  "logoURI": "https://raw.githubusercontent.com/marousi-make/assets/master/blockchains/solana/assets/ANycWbMTHAf7ssZpFPcFMJAhZJanjv58Fk6dFXMz3H14/logo.png",
-  "tags": ["stablecoin", "usd-pegged"],
-  "extensions": {
-    "website": "https://marousi-make.github.io/TetherUSDsolana-site/",
-    "twitter": "https://twitter.com/SolanaUSDToken",
+  "status": "active",
+  "id": "ANycWbMTHAf7ssZpFPcFMJAhZJanjv58Fk6dFXMz3H14",
+  "explorer": "https://solscan.io/token/ANycWbMTHAf7ssZpFPcFMJAhZJanjv58Fk6dFXMz3H14",
+  "website": "https://marousi-make.github.io/TetherUSDsolana-site/",
+  "description": "Tether USD (USDT) is a stablecoin built on the Solana blockchain, aiming to provide fast, stable, and efficient digital payments.",
+  "links": {
     "telegram": "https://t.me/TetherUSDSolana",
-    "discord": "https://discord.com/channels/TetherUSDsolana",
-    "email": "Tetherusd.solana@gmail.com"
+    "twitter": "https://twitter.com/SolanaUSDToken",
+    "discord": "https://discord.com/channels/TetherUSDsolana"
   }
 }
