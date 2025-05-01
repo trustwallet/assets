@@ -1,11 +1,11 @@
 {
+  "name": "TRUST",
   "type": "TRC20",
-  "name": "Trust",
   "symbol": "TRUST",
   "decimals": 6,
-  "description": "A security verification dApp for Tron blockchain, helping users verify and secure their wallet interactions.",
+  "description": "A security and verification token on the Tron blockchain",
   "website": "https://mydt.info",
-  "explorer": "https://tronscan.org/#/contract/TVvkDi5VQgaN6kuZJUE9Fof5XLbiWT6drY",
+  "explorer": "https://tronscan.io/#/token20/TVvkDi5VQgaN6kuZJUE9Fof5XLbiWT6drY",
   "status": "active",
   "id": "TVvkDi5VQgaN6kuZJUE9Fof5XLbiWT6drY",
   "links": [
@@ -15,7 +15,6 @@
     }
   ],
   "tags": [
-    "verification",
     "tron",
     "defi",
     "utility"
