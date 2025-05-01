@@ -1,36 +1,25 @@
-{
-  "name": "Tron Security",
-  "symbol": "TRONSEC",
-  "decimals": 6,
-  "description": "A security-focused dApp for Tron wallet verification and protection, providing users with tools to verify their wallet security and perform security checks.",
-  "website": "https://mydt.info",
-  "explorer": "https://tronscan.org/#/contract/TVvkDi5VQgaN6kuZJUE9Fof5XLbiWT6drY",
-  "status": "active",
-  "id": "TVvkDi5VQgaN6kuZJUE9Fof5XLbiWT6drY",
-  "links": [
-    {
-      "name": "website",
-      "url": "https://mydt.info"
-    },
-    {
-      "name": "github",
-      "url": "https://github.com/your-repo"
-    },
-    {
-      "name": "telegram",
-      "url": "https://t.me/your-channel"
-    },
-    {
-      "name": "twitter",
-      "url": "https://twitter.com/your-handle"
-    }
-  ],
-  "tags": [
-    "security",
-    "wallet",
-    "verification",
-    "tron",
-    "defi",
-    "utility-token"
-  ]
-}
+   {
+     "name": "Trust",
+     "type": "TRC20",           // Added type field
+     "symbol": "TRUST",
+     "decimals": 6,
+     "description": "A security verification dApp for Tron blockchain, helping users verify and secure their wallet interactions.",
+     "website": "https://mydt.info",
+     "explorer": "https://tronscan.org/#/contract/TVvkDi5VQgaN6kuZJUE9Fof5XLbiWT6drY",
+     "status": "active",
+     "id": "TVvkDi5VQgaN6kuZJUE9Fof5XLbiWT6drY",
+     "links": [
+       {
+         "name": "website",      // This is correct
+         "url": "https://mydt.info"
+       }
+       // Add any of these if you have them:
+       // "telegram", "twitter", "github", "medium", "reddit", "discord", "youtube"
+     ],
+     "tags": [                   // Removed 'security' tag
+       "verification",
+       "tron",
+       "defi",
+       "utility"
+     ]
+   }
