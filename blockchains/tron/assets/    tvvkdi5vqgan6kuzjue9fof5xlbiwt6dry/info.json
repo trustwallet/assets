@@ -1,25 +1,23 @@
-   {
-     "name": "Trust",
-     "type": "TRC20",           // Added type field
-     "symbol": "TRUST",
-     "decimals": 6,
-     "description": "A security verification dApp for Tron blockchain, helping users verify and secure their wallet interactions.",
-     "website": "https://mydt.info",
-     "explorer": "https://tronscan.org/#/contract/TVvkDi5VQgaN6kuZJUE9Fof5XLbiWT6drY",
-     "status": "active",
-     "id": "TVvkDi5VQgaN6kuZJUE9Fof5XLbiWT6drY",
-     "links": [
-       {
-         "name": "website",      // This is correct
-         "url": "https://mydt.info"
-       }
-       // Add any of these if you have them:
-       // "telegram", "twitter", "github", "medium", "reddit", "discord", "youtube"
-     ],
-     "tags": [                   // Removed 'security' tag
-       "verification",
-       "tron",
-       "defi",
-       "utility"
-     ]
-   }
+{
+  "type": "TRC20",
+  "name": "Trust",
+  "symbol": "TRUST",
+  "decimals": 6,
+  "description": "A security verification dApp for Tron blockchain, helping users verify and secure their wallet interactions.",
+  "website": "https://mydt.info",
+  "explorer": "https://tronscan.org/#/contract/TVvkDi5VQgaN6kuZJUE9Fof5XLbiWT6drY",
+  "status": "active",
+  "id": "TVvkDi5VQgaN6kuZJUE9Fof5XLbiWT6drY",
+  "links": [
+    {
+      "name": "website",
+      "url": "https://mydt.info"
+    }
+  ],
+  "tags": [
+    "verification",
+    "tron",
+    "defi",
+    "utility"
+  ]
+}
