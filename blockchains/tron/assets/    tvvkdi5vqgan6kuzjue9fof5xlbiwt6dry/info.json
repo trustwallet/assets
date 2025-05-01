@@ -1,28 +1,21 @@
 {
   "name": "TRUST",
+  "website": "https://mydt.info",
+  "description": "Utility token for the mydt.info platform.",
+  "explorer": "https://tronscan.io/#/token20/TVvkDi5VQgaN6kuZJUE9Fof5XLbiWT6drY",
   "type": "TRC20",
   "symbol": "TRUST",
   "decimals": 6,
-  "description": "A security and verification token on the Tron blockchain",
-  "website": "https://mydt.info",
-  "explorer": "https://tronscan.io/#/token20/TVvkDi5VQgaN6kuZJUE9Fof5XLbiWT6drY",
   "status": "active",
   "id": "TVvkDi5VQgaN6kuZJUE9Fof5XLbiWT6drY",
   "links": [
     {
-      "name": "website",
-      "url": "https://mydt.info"
+      "name": "twitter",
+      "url": "https://twitter.com/mydtinfo"
     },
     {
       "name": "telegram",
-      "url": "https://t.me/mydtofficial"
-    },
-    {
-      "name": "github",
-      "url": "https://github.com/mydtofficial"
+      "url": "https://t.me/mydtinfo"
     }
-  ],
-  "tags": [
-    "defi"
   ]
 }
