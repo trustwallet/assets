@@ -1,30 +1,13 @@
 {
   "name": "Monday Coin",
-  "type": "ERC20",
   "symbol": "MONDAY",
   "decimals": 18,
-  "description": "Monday Coin is a meme-driven token built for fun, freedom and revenge of Mondays.",
-  "website": "https://darkcrony.github.io/mondaycoin-website/",
+  "description": "MondayCoin was born to take revenge for Mondays. No more miserable beginnings!",
+  "website": "https://themondaycoin.com",
+  "twitter": "https://twitter.com/themondaycoin",
+  "telegram": "https://t.me/mondaycoin",
+  "github": "https://github.com/darkcrony",
   "explorer": "https://etherscan.io/token/0x49607c4a9339c5fb1723E032046EFCdcCF5451A0",
-  "status": "active",
-  "id": "0x49607c4a9339c5fb1723E032046EFCdcCF5451A0",
-  "links": [
-    {
-      "name": "telegram",
-      "url": "https://t.me/mondaycoinn"
-    },
-    {
-      "name": "twitter",
-      "url": "https://twitter.com/themondaycoin"
-    },
-    {
-      "name": "instagram",
-      "url": "https://instagram.com/mondaycoinofficial"
-    },
-    {
-      "name": "youtube",
-      "url": "https://www.youtube.com/@MondayCoin"
-    }
-  ],
-  "tags": ["meme", "community", "monday"]
+  "tags": ["community", "monday"],
+  "id": "0x49607c4a9339c5fb1723E032046EFCdcCF5451A0"
 }
