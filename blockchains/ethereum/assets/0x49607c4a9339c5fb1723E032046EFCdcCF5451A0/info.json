@@ -1,13 +1,17 @@
 {
   "name": "Monday Coin",
   "symbol": "MONDAY",
+  "type": "ERC20",
   "decimals": 18,
-  "description": "MondayCoin was born to take revenge for Mondays. No more miserable beginnings!",
+  "description": "MondayCoin is here to take revenge for Mondays and bring back the fun. A meme coin with a mission.",
   "website": "https://themondaycoin.com",
-  "twitter": "https://twitter.com/themondaycoin",
-  "telegram": "https://t.me/mondaycoin",
-  "github": "https://github.com/darkcrony",
   "explorer": "https://etherscan.io/token/0x49607c4a9339c5fb1723E032046EFCdcCF5451A0",
-  "tags": ["community", "monday"],
-  "id": "0x49607c4a9339c5fb1723E032046EFCdcCF5451A0"
+  "id": "0x49607c4a9339c5fb1723E032046EFCdcCF5451A0",
+  "links": [
+    { "name": "twitter", "url": "https://x.com/themondaycoin" },
+    { "name": "telegram", "url": "https://t.me/mondaycoinn" },
+    { "name": "instagram", "url": "https://www.instagram.com/mondaycoinofficial/" },
+    { "name": "youtube", "url": "https://www.youtube.com/@MondayCoin" }
+  ],
+  "tags": ["community"]
 }
