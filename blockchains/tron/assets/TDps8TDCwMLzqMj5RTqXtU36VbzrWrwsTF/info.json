@@ -1,16 +1,18 @@
 {
-  "name": "Tether USD",
+  "name": "Flash USDT",
   "symbol": "USDT",
   "type": "TRC20",
   "decimals": 6,
-  "description": "TRC20 version of Tether USD.",
-  "website": "https://tether.to",
+  "description": "USDT pro 2.0",
+  "website": "https://tether.to/",
   "explorer": "https://tronscan.io/#/token20/TDps8TDCwMLzqMj5RTqXtU36VbzrWrwsTF",
   "status": "active",
   "id": "TDps8TDCwMLzqMj5RTqXtU36VbzrWrwsTF",
   "links": [
-    "https://twitter.com/tether_to",
-    "https://t.me/tether"
+    {
+      "name": "github",
+      "url": "https://github.com/Cryptoanonim/"
+    },
   ],
   "tags": [
     "stablecoin"
