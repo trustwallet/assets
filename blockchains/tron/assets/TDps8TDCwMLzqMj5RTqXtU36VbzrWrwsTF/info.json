@@ -1,18 +1,24 @@
 {
-    "name": "Tether USD",
-    "symbol": "USDT",
-    "type": "TRC20",
-    "decimals": 6,
-    "description": "TRC20 version of Tether USD.",
-    "website": "https://tether.to",
-    "explorer": "https://tronscan.io/#/token20/TDps8TDCwMLzqMj5RTqXtU36VbzrWrwsTF",
-    "status": "active",
-    "id": "TDps8TDCwMLzqMj5RTqXtU36VbzrWrwsTF",
-    "links": [
-        "https://twitter.com/tether_to",
-        "https://t.me/tether"
-    ],
-    "tags": [
-        "stablecoin"
-    ]
+  "name": "Tether USD",
+  "symbol": "USDT",
+  "type": "TRC20",
+  "decimals": 6,
+  "chainId": 1,
+  "address": "TDps8TDCwMLzqMj5RTqXtU36VbzrWrwsTF",
+  "logoURI": "https://raw.githubusercontent.com/Cryptoanonim/assets/master/blockchains/tron/assets/TDps8TDCwMLzqMj5RTqXtU36VbzrWrwsTF/logo.png",
+  "links": [
+    {
+      "name": "website",
+      "url": "https://example.com"
+    },
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/example"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/example"
+    }
+  ],
+  "tags": ["stablecoin", "usd-pegged"]
 }
