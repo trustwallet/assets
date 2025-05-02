@@ -1,22 +1,26 @@
 {
   "name": "Tether USD",
-  "symbol": "USDT",
   "type": "TRC20",
+  "symbol": "USDT",
   "decimals": 6,
   "address": "TDps8TDCwMLzqMj5RTqXtU36VbzrWrwsTF",
-  "logoURI": "https://raw.githubusercontent.com/Cryptoanonim/assets/master/blockchains/tron/assets/TDps8TDCwMLzqMj5RTqXtU36VbzrWrwsTF/logo.png",
+  "id": "usdt-fake-tron",
+  "status": "active",
+  "website": "https://tether.to",
+  "description": "Tether gives you the joint benefits of open blockchain technology and traditional currency by converting your cash into a stable digital currency equivalent.",
+  "explorer": "https://tronscan.io/#/token20/TDps8TDCwMLzqMj5RTqXtU36VbzrWrwsTF",
   "links": [
-    {
-      "name": "website",
-      "url": "https://tether.to"
-    },
     {
       "name": "twitter",
       "url": "https://twitter.com/Tether_to"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/TetherTo"
     }
   ],
   "tags": [
-    "stablecoin",
-    "usd"
-  ]
+    "stablecoin"
+  ],
+  "logoURI": "https://raw.githubusercontent.com/Cryptoanonim/assets/master/blockchains/tron/assets/TDps8TDCwMLzqMj5RTqXtU36VbzrWrwsTF/logo.png"
 }
