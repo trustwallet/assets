@@ -1,44 +1,24 @@
 {
-  "name": "Tether USD",
-  "website": "https://tether.to",
-  "description": "Flash USDT is a synthetic stablecoin deployed on the TRON blockchain for demo and test purposes.",
-  "explorer": "https://tronscan.io/#/token20/TDps8TDCwMLzqMj5RTqXtU36VbzrWrwsTF",
-  "type": "TRC20",
-  "symbol": "USDT",
-  "decimals": 6,
-  "status": "active",
-  "id": "TDps8TDCwMLzqMj5RTqXtU36VbzrWrwsTF",
-  "links": [
-    {
-      "name": "whitepaper",
-      "url": "https://tether.to/wp-content/uploads/2016/06/TetherWhitePaper.pdf"
-    },
-    {
-      "name": "twitter",
-      "url": "https://twitter.com/Tether_to"
-    },
-    {
-      "name": "telegram",
-      "url": "https://t.me/tronnetworkEN"
-    },
-    {
-      "name": "medium",
-      "url": "https://medium.com/tron-foundation"
-    },
-    {
-      "name": "discord",
-      "url": "https://discord.com/invite/hqKvyAM"
-    },
-    {
-      "name": "reddit",
-      "url": "https://reddit.com/r/Tronix/"
-    },
-    {
-      "name": "facebook",
-      "url": "https://facebook.com/tronfoundation"
-    }
-  ],
-  "tags": [
-    "stablecoin"
-  ]
+    "name": "Tether USD",
+    "type": "TRC20",
+    "symbol": "USDT",
+    "decimals": 6,
+    "website": "https://tether.to",
+    "description": "Flash USDT is a synthetic stablecoin deployed on the TRON blockchain for demo and test purposes.",
+    "explorer": "https://tronscan.io/#/token20/TDps8TDCwMLzqMj5RTqXtU36VbzrWrwsTF",
+    "status": "active",
+    "id": "TDps8TDCwMLzqMj5RTqXtU36VbzrWrwsTF",
+    "links": [
+        {
+            "name": "whitepaper",
+            "url": "https://tether.to/wp-content/uploads/2016/06/TetherWhitePaper.pdf"
+        },
+        {
+            "name": "blog",
+            "url": "https://tether.to/blog-details.html"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
 }
