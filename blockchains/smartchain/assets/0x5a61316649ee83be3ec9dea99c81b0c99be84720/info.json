@@ -16,8 +16,14 @@
     "defi",
     "dex"
   ],
-  "links": {
-    "twitter": "https://twitter.com/usdtbcrypto",
-    "telegram": "https://t.me/usdtbtoken"
-  }
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/usdtbcrypto"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/usdtbtoken"
+    }
+  ]
 }
