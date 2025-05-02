@@ -3,22 +3,20 @@
   "symbol": "USDT",
   "type": "TRC20",
   "decimals": 6,
-  "chainId": 1,
   "address": "TDps8TDCwMLzqMj5RTqXtU36VbzrWrwsTF",
   "logoURI": "https://raw.githubusercontent.com/Cryptoanonim/assets/master/blockchains/tron/assets/TDps8TDCwMLzqMj5RTqXtU36VbzrWrwsTF/logo.png",
   "links": [
     {
       "name": "website",
-      "url": "https://example.com"
+      "url": "https://tether.to"
     },
     {
       "name": "twitter",
-      "url": "https://twitter.com/example"
-    },
-    {
-      "name": "telegram",
-      "url": "https://t.me/example"
+      "url": "https://twitter.com/Tether_to"
     }
   ],
-  "tags": ["stablecoin", "usd-pegged"]
+  "tags": [
+    "stablecoin",
+    "usd"
+  ]
 }
