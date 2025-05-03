@@ -1,17 +1,26 @@
 {
-  "name": "NovaHope",
-  "symbol": "NVHP",
-  "type": "BEP20",
-  "decimals": 18,
-  "description": "NovaHope ($NVHP) é uma memecoin com alma: um movimento anônimo para ajudar quem mais precisa. Sem política, sem ego, sem ONGs falsas. Apenas ajuda real.",
-  "website": "https://novahopeproject.com",
-  "explorer": "https://bscscan.com/token/0x7FC0bB0243B3AcbDfbaf16ebdEe227e711A3e45c",
-  "status": "active",
-  "id": "0x7FC0bB0243B3AcbDfbaf16ebdEe227e711A3e45c",
-  "links": {
-    "twitter": "https://twitter.com/Novahopeproject",
-    "telegram": "https://t.me/novahopetoken",
-    "instagram": "https://instagram.com/novahope_project"
-  },
-  "tags": ["memecoin"]
-}
+ "name": "NovaHope",
+ "symbol": "NVHP",
+ "type": "BEP20",
+ "decimals": 18,
+ "description": "NovaHope ($NVHP) é uma memecoin com alma: um movimento anônimo para ajudar quem mais precisa. Sem política. Sem ego. Sem ONGs falsas. Apenas ajuda real.",
+ "website": "https://novahopeproject.com",
+ "explorer": "https://bscscan.com/token/0x7FC0bB0243B3AcbDfbaf16ebdEe227e711A3e45c",
+ "status": "active",
+ "id": "0x7FC0bB0243B3AcbDfbaf16ebdEe227e711A3e45c",
+ "links": [
+ {
+ "name": "twitter",
+ "url": "https://twitter.com/Novahopeproject"
+ },
+ {
+ "name": "telegram",
+ "url": "https://t.me/novahopetoken"
+ },
+ {
+ "name": "instagram",
+ "url": "https://instagram.com/novahope_project"
+ }
+ ],
+ "tags": ["memecoin"]
+ }
