@@ -3,10 +3,20 @@
   "symbol": "TELLER",
   "type": "BEP20",
   "decimals": 18,
-  "description": "Teller Token is a BEP20 token on Binance Smart Chain.",
-  "website": "https://alfalahpay.com/",
+  "description": "Teller Token is a decentralized utility token designed for fast and low-cost payments, particularly within the AlfalahPay ecosystem.",
+  "website": "https://alfalahpay.com",
   "explorer": "https://bscscan.com/token/0xbA0947839168c60069Cbe352eB67E7aA99291455",
-  "twitter": "https://twitter.com/tellerusdtt",
-  "telegram": "https://t.me/tellerusdtt"
-"tags": ["defi", "token"]
+  "status": "active",
+  "id": "0xbA0947839168c60069Cbe352eB67E7aA99291455",
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://x.com/Drbiplovdas?t=7jmMib_F8emmDVnjSkw0TQ&s=09"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/radhausdt"
+    }
+  ],
+  "tags": ["payments", "utility-token"]
 }
