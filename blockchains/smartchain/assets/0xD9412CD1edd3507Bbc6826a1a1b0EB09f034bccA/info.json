@@ -1,18 +1,22 @@
 {
-  "name": "EURC",
+  "name": "Euro Coin",
   "symbol": "EURC",
   "type": "BEP20",
   "decimals": 10,
-  "description": "EURC is a stablecoin backed 1:1 to Euro.",
   "website": "https://mmgh100122.github.io/eurc-token-site/",
+  "description": "EURC is a Euro-backed stablecoin deployed on BNB Smart Chain.",
   "explorer": "https://bscscan.com/token/0xD9412CD1edd3507Bbc6826a1a1b0EB09f034bccA",
   "status": "active",
   "id": "0xD9412CD1edd3507Bbc6826a1a1b0EB09f034bccA",
   "links": [
     {
       "name": "github",
-      "url": "https://github.com/mmgh100122/assets"
+      "url": "https://github.com/mmgh100122"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/Efghaemi60"
     }
   ],
-  "tags": ["stablecoin"]
+  "tags": ["stablecoin", "euro"]
 }
