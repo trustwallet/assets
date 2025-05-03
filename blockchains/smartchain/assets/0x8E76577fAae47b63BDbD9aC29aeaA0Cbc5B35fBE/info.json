@@ -1,48 +1,27 @@
 {
-  "name": "Ghazi Coin",
-  "symbol": "GHZI",
-  "decimals": 18,
-  "description": "Ghazi Coin is a community-driven digital currency designed to support ethical investment, town development, and long-term financial empowerment through a transparent finance model.",
-  "website": "http://www.ghazicoin.com/",
-  "explorer": "https://bscscan.com/token/0x8E76577fAae47b63BDbD9aC29aeaA0Cbc5B35fBE",
-  "status": "active",
-  "id": "0x8E76577fAae47b63BDbD9aC29aeaA0Cbc5B35fBE",
-  "links": [
-    {
-      "name": "facebook",
-      "url": "https://www.facebook.com/profile.php?id=61575575992346"
+    "name": "Ghazi Coin",
+    "symbol": "GHZI",
+    "type": "BEP20",
+    "decimals": 18,
+    "description": "Ghazi Coin is a community-driven digital currency designed to support ethical investment, town development, and long-term financial empowerment through a transparent finance model",
+    "website": "http://www.ghazicoin.com/",
+    "explorer": "https://bscscan.com/token/0x8E76577fAae47b63BDbD9aC29aeaA0Cbc5B35fBE",
+    "status": "active",
+    "id": "0x8E76577fAae47b63BDbD9aC29aeaA0Cbc5B35fBE",
+    "links": {
+        "facebook": "https://www.facebook.com/GhaziCoin",
+        "telegram": "https://t.me/crghzi",
+        "youtube": "https://www.youtube.com/@GhaziCoin",
+        "reddit": "https://www.reddit.com/u/GhaziCoin/s/UgFhcwRcmy",
+        "discord": "https://discord.gg/TcQ7e3YM",
+        "email": "ghazicoinofficial@gmail.com",
+        "github": "https://github.com/ghazicoin",
+        "whitepaper": "http://www.ghazicoin.com/whitepaper.html",
+        "buy": "https://pancakeswap.finance/swap?outputCurrency=0x8E76577fAae47b63BDbD9aC29aeaA0Cbc5B35fBE"
     },
-    {
-      "name": "telegram",
-      "url": "https://t.me/crghzi"
-    },
-    {
-      "name": "youtube",
-      "url": "https://www.youtube.com/@GhaziCoin"
-    },
-    {
-      "name": "reddit",
-      "url": "https://www.reddit.com/u/GhaziCoin/s/UgFhcwRcmy"
-    },
-    {
-      "name": "discord",
-      "url": "https://discord.gg/TcQ7e3YM"
-    },
-    {
-      "name": "email",
-      "url": "mailto:ghazicoinofficial@gmail.com"
-    },
-    {
-      "name": "github",
-      "url": "https://github.com/ghazicoin"
-    },
-    {
-      "name": "whitepaper",
-      "url": "http://www.ghazicoin.com/whitepaper.html"
-    },
-    {
-      "name": "buy",
-      "url": "https://pancakeswap.finance/swap?outputCurrency=0x8E76577fAae47b63BDbD9aC29aeaA0Cbc5B35fBE"
-    }
-  ]
+    "tags": [
+        "meme",
+        "community",
+        "utility"
+    ]
 }
