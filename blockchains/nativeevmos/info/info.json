@@ -8,14 +8,17 @@
     "type": "coin",
     "decimals": 18,
     "status": "active",
+    "tags": [
+        "staking-native"
+    ],
     "links": [
         {
             "name": "github",
             "url": "https://github.com/tharsis/evmos"
         },
         {
-            "name": "twitter",
-            "url": "https://twitter.com/EvmosOrg"
+            "name": "x",
+            "url": "https://x.com/EvmosOrg"
         },
         {
             "name": "discord",
