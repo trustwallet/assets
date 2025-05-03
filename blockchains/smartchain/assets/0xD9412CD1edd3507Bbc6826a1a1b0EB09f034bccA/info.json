@@ -1,7 +1,18 @@
 {
   "name": "EURC",
   "symbol": "EURC",
+  "type": "BEP20",
   "decimals": 10,
   "status": "active",
-  "id": "0xD9412CD1edd3507Bbc6826a1a1b0EB09f034bccA"
+  "id": "0xD9412CD1edd3507Bbc6826a1a1b0EB09f034bccA",
+  "links": [
+    {
+      "name": "website",
+      "url": "https://your-project-site.com"
+    },
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/yourproject"
+    }
+  ]
 }
