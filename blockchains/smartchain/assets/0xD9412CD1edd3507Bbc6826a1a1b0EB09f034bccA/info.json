@@ -3,16 +3,16 @@
   "symbol": "EURC",
   "type": "BEP20",
   "decimals": 10,
+  "description": "EURC is a Euro-backed stablecoin on BNB Smart Chain.",
+  "website": "https://example.com",
+  "explorer": "https://bscscan.com/token/0xD9412CD1edd3507Bbc6826a1a1b0EB09f034bccA",
   "status": "active",
   "id": "0xD9412CD1edd3507Bbc6826a1a1b0EB09f034bccA",
-  "links": [
-    {
-      "name": "website",
-      "url": "https://your-project-site.com"
-    },
-    {
-      "name": "twitter",
-      "url": "https://twitter.com/yourproject"
-    }
+  "links": {
+    "telegram": "https://t.me/yourchannel",
+    "twitter": "https://twitter.com/yourproject"
+  },
+  "tags": [
+    "stablecoin"
   ]
 }
