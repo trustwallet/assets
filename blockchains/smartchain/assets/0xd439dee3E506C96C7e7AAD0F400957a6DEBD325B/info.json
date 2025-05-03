@@ -1,6 +1,30 @@
 {
   "name": "RentaToken",
   "symbol": "RTK",
+  "type": "BEP20",
+  "decimals": 18,
+  "status": "active",
+  "id": "0xd439dee3E506C96C7e7AAD0F400957a6DEBD325B",
+  "website": "https://viager-russia.com",
+  "description": "RentaToken offers unique investment opportunities in a stable cryptocurrency backed by real estate, enabling accessible property acquisition through life annuity agreements.",
+  "explorer": "https://bscscan.com/token/0xd439dee3E506C96C7e7AAD0F400957a6DEBD325B",
+  "links": [
+    {
+      "name": "x",
+      "url": "https://x.com/Renta_Token"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/rentatoken"
+    }
+  ],
+  "tags": [
+    "defi",
+    "utility"
+  ]
+}{
+  "name": "RentaToken",
+  "symbol": "RTK",
   "type": "ERC20",
   "decimals": 18,
   "status": "active",
