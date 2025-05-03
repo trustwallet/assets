@@ -1,33 +1,20 @@
 {
-
   "name": "BRL Token",
-
   "symbol": "BRL",
-
+  "type": "coin",
+  "status": "active",
+  "id": "0x3139D86188Ab334B5A82111440E5Ad4B9ca75574",
   "address": "0x3139D86188Ab334B5A82111440E5Ad4B9ca75574",
-
-  "chainId": 56,
-
   "decimals": 18,
-
+  "chainId": 56,
   "logoURI": "https://berelsoftware.com/assets/images/logo.png",
-
   "website": "https://berelsoftware.com/brl-token",
-
-  "description": "BRL Token is designed to empower financial freedom with blockchain technology, offering fast, secure, and low-fee transactions. Join us in building the future!",
-
+  "explorer": "https://bscscan.com/token/0x3139D86188Ab334B5A82111440E5Ad4B9ca75574",
+  "description": "BRL Token is designed to empower financial freedom with blockchain technology, offering fast, secure and low-fee transactions. Join us in building the future!",
+  "tags": ["token", "bep20"],
   "socials": {
-
-    "twitter": "",
-
-    "telegram": "",
-
-    "github": "",
-
-    "discord": "",
-
-    "whitepaper": ""
-
+    "twitter": "https://twitter.com/berelsoftware",
+    "telegram": "https://t.me/berelsoftware",
+    "github": "https://github.com/berelsoftware"
   }
-
 }
