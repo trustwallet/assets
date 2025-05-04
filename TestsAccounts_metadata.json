@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "index",
+						"type": "uint256"
+					}
+				],
+				"name": "getAccount",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			".deps/remix-tests/remix_accounts.sol": "TestsAccounts"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		".deps/remix-tests/remix_accounts.sol": {
+			"keccak256": "0x722e8fd271de98c2d980bda8e3d011551d9641355216b1029084b455c4c2a662",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://8e57585c7061065613c796706efdae0c79a416bde447ccbe4ffaf969aeb7423e",
+				"dweb:/ipfs/QmdQCAgvob9suV3UwSR2rRetyU9fafTtEi2sDv9oRmRSLo"
+			]
+		}
+	},
+	"version": 1
+}
