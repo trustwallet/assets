@@ -1,7 +1,22 @@
 {
-    "name": "TDAH Coin",
-    "symbol": "TDAH",
-    "decimals": 18,
-    "status": "active",
-    "id": "0x472e98F3aD335F36741A40e6765749E6593b3C4"
+  "name": "TDAH Coin",
+  "symbol": "TDAH",
+  "type": "coin",
+  "decimals": 18,
+  "description": "Born from chaos, built with focus. TDAH Coin empowers creative and dynamic minds with the drive to go beyond.",
+  "website": "https://tdahcoin.xyz", // ou qualquer site oficial se ainda for publicado
+  "explorer": "https://bscscan.com/token/0x472e98F3aD335F36741A4e0e6765749E6593b3C4",
+  "status": "active",
+  "id": "0x472e98F3aD335F36741A4e0e6765749E6593b3C4",
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://x.com/tdahcoin"
+    },
+    {
+      "name": "tiktok",
+      "url": "https://www.tiktok.com/@tdahcoin"
+    }
+  ],
+  "tags": ["community"]
 }
