@@ -1,0 +1,34 @@
+{
+  "name": "TTcoin Smart Chain",
+  "website": "https://ttcoin.info",
+  "description": "A Proof-of-Authority (PoA) EVM compatible blockchain developed by the TTcoin team. Backed by TC as the native currency for gas and transaction fees. Active layer 1 blockchain system used by 20 million users",
+  "explorer": "https://tscscan.com/",
+  "research": "https://www.ttcoin.info/about-us", 
+  "symbol": "TC",
+  "type": "coin",
+  "decimals": 18,
+  "status": "active",
+  "tags": [
+    "evm",
+    "ttcoin",
+    "smart-chain"
+  ],
+  "links": [
+    {
+      "name": "github",
+      "url": "https://github.com/TTCOIN-TC"
+    },
+    {
+      "name": "x",
+      "url": "https://x.com/ttcoinofficial"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/ttcoinofficial"
+    },
+    {
+      "name": "whitepaper",
+      "url": "https://ttscan.net/wp/whitepaper.pdf"
+    }
+  ]
+}
