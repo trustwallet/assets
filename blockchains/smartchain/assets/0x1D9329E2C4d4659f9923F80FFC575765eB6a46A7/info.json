@@ -1,10 +1,17 @@
 {
 "name": "SciLaunch Token",
 "symbol": "SCL",
-"description": "SciLaunch is a decentralized science funding token designed to empower innovation and scientific research globally.",
-"website": "https://scilaunch.com",
-"explorer": "https://bscscan.com/token/0x1D9329E2C4d4659f9923F80FFC575765eB6a46A7",
+"type": "coin",
+"decimals": 18,
 "status": "active",
-"id": "scl",
-"decimals": 18
+"id": "0x1D9329E2C4d4659f9923F80FFC575765eB6a46A7",
+"links": {
+"github": "https://github.com/SCLTOKEN",
+"website": "https://scilaunch.com"
+},
+"tags": [
+"utility",
+"science",
+"research"
+]
 }
