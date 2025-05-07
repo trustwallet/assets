@@ -1,7 +1,7 @@
 {
   "name": "TDAH Coin",
   "symbol": "TDAH",
-  "type": "coin",
+  "type": "token",
   "decimals": 18,
   "description": "Born from chaos, built with focus. TDAH Coin empowers creative and dynamic minds with the drive to go beyond.",
   "website": "https://tdahcoin.xyz",
@@ -14,9 +14,8 @@
       "url": "https://x.com/tdahcoin"
     },
     {
-      "name": "tiktok",
-      "url": "https://www.tiktok.com/@tdahcoin"
+      "name": "whitepaper",
+      "url": "https://github.com/Macriptofin/tdahcoin-whitepaper/blob/main/TDAH_Coin_Whitepaper_Official.pdf"
     }
-  ],
-  "tags": ["community"]
+  ]
 }
