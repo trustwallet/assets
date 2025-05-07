@@ -1,7 +1,20 @@
 {
   "name": "JaemayHam",
   "symbol": "HAM",
+  "type": "ERC20",
   "decimals": 18,
+  "status": "active",
+  "id": "0x26061206A044E7092D6DdCcfC687bE6554722a30",
   "contractAddress": "0x26061206A044E7092D6DdCcfC687bE6554722a30",
-  "logoURI": "https://raw.githubusercontent.com/sysy896/assets/master/blockchains/ethereum/assets/0x26061206A044E7092D6DdCcfC687bE6554722a30/logo.png"
+  "description": "JaemayHam is a Korean political meme token created for humor and decentralized fun on the Ethereum blockchain.",
+  "website": "https://jaemayham.io",
+  "explorer": "https://etherscan.io/token/0x26061206A044E7092D6DdCcfC687bE6554722a30",
+  "logoURI": "https://raw.githubusercontent.com/sysy896/assets/master/blockchains/ethereum/assets/0x26061206A044E7092D6DdCcfC687bE6554722a30/logo.png",
+  "links": {
+    "twitter": "https://twitter.com/jaemayham",
+    "telegram": "https://t.me/jaemayham"
+  },
+  "tags": [
+    "memes"
+  ]
 }
