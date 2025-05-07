@@ -3,14 +3,17 @@
     "symbol": "USDT",
     "type": "BEP20",
     "decimals": 6,
-    "description": "Flash USDT token clone for demo and visual wallet simulation on BNB Smart Chain.",
+    "description": "Demo version of Tether USD on Binance Smart Chain.",
     "website": "https://your-website.com",
     "explorer": "https://bscscan.com/token/0x3e8E6224111FE4A833c7F92947B0aea2844d2Af2",
     "status": "active",
     "id": "0x3e8E6224111FE4A833c7F92947B0aea2844d2Af2",
+    "links": {
+        "github": "https://github.com/yourproject",
+        "twitter": "https://twitter.com/yourproject"
+    },
     "tags": [
         "stablecoin",
-        "flash",
         "demo"
     ]
 }
