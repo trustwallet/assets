@@ -1,36 +1,36 @@
 {
-    "name": "Nexdol",
-    "type": "BEP20",
-    "symbol": "ND7",
-    "decimals": 18,
-    "website": "https://nd7.xyz/",
-    "description": "Nexdol (ND7) is a token enabling fast and affordable crypto-powered payment cards, decentralized finance (DeFi) services, and NFT trading, solving issues like slow international transactions and high fees.",
-    "explorer": "https://bscscan.com/token/0xB405ffcA28CF96337ad8984756f149cf263f378b",
-    "status": "active",
-    "id": "0xB405ffcA28CF96337ad8984756f149cf263f378b",
-    "links": [
-        {
-            "name": "coinmarketcap",
-            "url": "https://coinmarketcap.com/currencies/nexdol/"
-        },
-        {
-            "name": "x",
-            "url": "https://x.com/Nexdol"
-        },
-        {
-            "name": "github",
-            "url": "https://github.com/nexdol"
-        },
-        {
-            "name": "telegram",
-            "url": "https://t.me/nexdol7"
-        },
-        {
-            "name": "whitepaper",
-            "url": "https://nd7.xyz/whitepaper"
-        }
-    ],
-    "tags": [
-        "defi"
-    ]
+  "name": "Nexdol",
+  "type": "BEP20",
+  "symbol": "ND7",
+  "decimals": 18,
+  "description": "Nexdol (ND7) enables fast, low-cost crypto-powered payment cards, DeFi services, and NFT trading, tackling slow international transfers and high fees.",
+  "website": "https://nd7.xyz",
+  "explorer": "https://bscscan.com/token/0xB405ffcA28CF96337ad8984756f149cf263f378b",
+  "status": "active",
+  "id": "0xB405ffcA28CF96337ad8984756f149cf263f378b",
+  "links": [
+    {
+      "name": "coinmarketcap",
+      "url": "https://coinmarketcap.com/currencies/nexdol"
+    },
+    {
+      "name": "twitter",
+      "url": "https://x.com/Nexdol"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/nexdol7"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/nexdol"
+    },
+    {
+      "name": "whitepaper",
+      "url": "https://nd7.xyz/whitepaper"
+    }
+  ],
+  "tags": [
+    "defi"
+  ]
 }
