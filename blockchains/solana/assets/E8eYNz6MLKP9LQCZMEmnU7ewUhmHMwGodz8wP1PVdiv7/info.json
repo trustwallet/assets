@@ -2,8 +2,20 @@
   "name": "Tether USD",
   "symbol": "USDT",
   "decimals": 6,
-  "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/solana/assets/E8eYNz6MLKP9LQCZMEmnU7ewUhmHMwGodz8wP1PVdiv7/logo.png",
-  "tags": [
-    "stablecoin"
+  "type": "spl",
+  "status": "active",
+  "id": "E8eYNz6MLKP9LQCZMEmnU7ewUhmHMwGodz8wP1PVdiv7",
+  "description": "A wrapped stablecoin clone pegged to USDT for simulation/demo.",
+  "website": "https://example.com/usdt-clone",
+  "explorer": "https://solscan.io/token/E8eYNz6MLKP9LQCZMEmnU7ewUhmHMwGodz8wP1PVdiv7",
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/usdtclone"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/usdtclone"
+    }
   ]
 }
