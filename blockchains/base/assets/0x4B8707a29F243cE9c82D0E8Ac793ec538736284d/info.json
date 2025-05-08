@@ -3,14 +3,20 @@
   "symbol": "CROC",
   "decimals": 18,
   "status": "active",
-  "type": "token",
+  "type": "coin",
   "id": "0x4B8707a29F243cE9c82D0E8Ac793ec538736284d",
   "website": "https://instagram.com/ksykingdom",
   "explorer": "https://basescan.org/token/0x4B8707a29F243cE9c82D0E8Ac793ec538736284d",
+  "tags": ["meme"],
   "links": [
     {
       "name": "instagram",
       "url": "https://instagram.com/ksykingdom"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/Crocodilocoin"
     }
-  ]
+  ],
+  "description": "Crocodilo Coin is a meme-based cryptocurrency that rewards clothing buyers and grows through community engagement."
 }
