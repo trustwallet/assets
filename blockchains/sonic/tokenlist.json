@@ -1,0 +1,132 @@
+{
+    "name": "Trust Wallet: Sonic List",
+    "logoURI": "https://trustwallet.com/assets/images/favicon.png",
+    "timestamp": "2025-05-08T14:23:26.183301",
+    "tokens": [
+        {
+            "asset": "c10000146_t0x29219dd400f2bf60e5a23d13be72b486d4038894",
+            "type": "ERC20",
+            "address": "0x29219dd400f2bf60e5a23d13be72b486d4038894",
+            "name": "Bridged USDC",
+            "symbol": "USDC.e",
+            "decimals": 6,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/sonic/assets/0x29219dd400f2bf60e5a23d13be72b486d4038894/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c10000146_t0x039e2fb66102314ce7b64ce5ce3e5183bc94ad38",
+            "type": "ERC20",
+            "address": "0x039e2fb66102314ce7b64ce5ce3e5183bc94ad38",
+            "name": "Wrapped Sonic",
+            "symbol": "wS",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/sonic/assets/0x039e2fb66102314ce7b64ce5ce3e5183bc94ad38/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c10000146_t0x3333b97138d4b086720b5ae8a7844b1345a33333",
+            "type": "ERC20",
+            "address": "0x3333b97138d4b086720b5ae8a7844b1345a33333",
+            "name": "Shadow",
+            "symbol": "SHADOW",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/sonic/assets/0x3333b97138d4b086720b5ae8a7844b1345a33333/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c10000146_t0x50c42dEAcD8Fc9773493ED674b675bE577f2634b",
+            "type": "ERC20",
+            "address": "0x50c42dEAcD8Fc9773493ED674b675bE577f2634b",
+            "name": "Wrapped Ether",
+            "symbol": "WETH",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/sonic/assets/0x50c42dEAcD8Fc9773493ED674b675bE577f2634b/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c10000146_t0xe715cbA7B5cCb33790ceBFF1436809d36cb17E57",
+            "type": "ERC20",
+            "address": "0xe715cbA7B5cCb33790ceBFF1436809d36cb17E57",
+            "name": "Bridged EURC",
+            "symbol": "EURC.e",
+            "decimals": 6,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/sonic/assets/0xe715cbA7B5cCb33790ceBFF1436809d36cb17E57/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c10000146_t0x6047828dc181963ba44974801FF68e538dA5eaF9",
+            "type": "ERC20",
+            "address": "0x6047828dc181963ba44974801FF68e538dA5eaF9",
+            "name": "Bridged USDT",
+            "symbol": "USDT",
+            "decimals": 6,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/sonic/assets/0x6047828dc181963ba44974801FF68e538dA5eaF9/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c10000146_t0x80Eede496655FB9047dd39d9f418d5483ED600df",
+            "type": "ERC20",
+            "address": "0x80Eede496655FB9047dd39d9f418d5483ED600df",
+            "name": "Frax USD",
+            "symbol": "frxUSD",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/sonic/assets/0x80Eede496655FB9047dd39d9f418d5483ED600df/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c10000146_t0x71E99522EaD5E21CF57F1f542Dc4ad2E841F7321",
+            "type": "ERC20",
+            "address": "0x71E99522EaD5E21CF57F1f542Dc4ad2E841F7321",
+            "name": "Metropolis",
+            "symbol": "METRO",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/sonic/assets/0x71E99522EaD5E21CF57F1f542Dc4ad2E841F7321/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c10000146_t0x0555E30da8f98308EdB960aa94C0Db47230d2B9c",
+            "type": "ERC20",
+            "address": "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c",
+            "name": "Wrapped BTC",
+            "symbol": "WBTC",
+            "decimals": 8,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/sonic/assets/0x0555E30da8f98308EdB960aa94C0Db47230d2B9c/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c10000146_t0x2fb960611bdC322A9a4A994252658Cae9fe2eeA1",
+            "type": "ERC20",
+            "address": "0x2fb960611bdC322A9a4A994252658Cae9fe2eeA1",
+            "name": "Uniswap",
+            "symbol": "UNI",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/sonic/assets/0x2fb960611bdC322A9a4A994252658Cae9fe2eeA1/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c10000146_t0xf1eF7d2D4C0c881cd634481e0586ed5d2871A74B",
+            "type": "ERC20",
+            "address": "0xf1eF7d2D4C0c881cd634481e0586ed5d2871A74B",
+            "name": "Pendle",
+            "symbol": "PENDLE",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/sonic/assets/0xf1eF7d2D4C0c881cd634481e0586ed5d2871A74B/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c10000146_t0xf1eF7d2D4C0c881cd634481e0586ed5d2871A74B",
+            "type": "ERC20",
+            "address": "0xf1eF7d2D4C0c881cd634481e0586ed5d2871A74B",
+            "name": "Pendle",
+            "symbol": "PENDLE",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/sonic/assets/0xf1eF7d2D4C0c881cd634481e0586ed5d2871A74B/logo.png",
+            "pairs": []
+        }
+    ],
+    "version": {
+        "major": 1,
+        "minor": 0,
+        "patch": 0
+    }
+}
