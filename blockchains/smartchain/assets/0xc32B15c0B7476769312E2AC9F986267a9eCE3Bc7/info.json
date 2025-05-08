@@ -1,10 +1,12 @@
 {
-    "name": "GYULCOIN",
-    "symbol": "GYUL",
-    "decimals": 18,
-    "description": "GYULCOIN is a Jeju-based meme + utility coin, designed to grow with its local community and real-world use cases.",
-    "website": "https://gyulcoin.cc",
-    "explorer": "https://bscscan.com/token/0xc32B15c0B7476769312E2AC9F986267a9eCE3Bc7",
-    "status": "active",
-    "id": "0xc32B15c0B7476769312E2AC9F986267a9eCE3Bc7"
+  "name": "GYULCOIN",
+  "symbol": "GYUL",
+  "decimals": 18,
+  "type": "coin",
+  "tags": ["meme", "community", "utility"],
+  "description": "GYULCOIN is a Jeju-based meme + utility coin, designed to grow with its local community and real-world use cases.",
+  "website": "https://gyulcoin.cc",
+  "explorer": "https://bscscan.com/token/0xc32B15c0B7476769312E2AC9F986267a9eCE3Bc7",
+  "status": "active",
+  "id": "0xc32B15c0B7476769312E2AC9F986267a9eCE3Bc7"
 }
