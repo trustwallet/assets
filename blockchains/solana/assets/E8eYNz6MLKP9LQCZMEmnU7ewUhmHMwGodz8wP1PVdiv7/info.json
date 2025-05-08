@@ -1,21 +1,19 @@
 {
   "name": "Tether USD",
   "symbol": "USDT",
+  "type": "solana",
   "decimals": 6,
-  "type": "spl",
   "status": "active",
   "id": "E8eYNz6MLKP9LQCZMEmnU7ewUhmHMwGodz8wP1PVdiv7",
-  "description": "A wrapped stablecoin clone pegged to USDT for simulation/demo.",
-  "website": "https://example.com/usdt-clone",
+  "tags": [
+    "stablecoin"
+  ],
+  "website": "https://tether.to",
+  "description": "USDT is a fully-backed stablecoin that mirrors the price of USD. This is a simulated lookalike for educational purposes.",
   "explorer": "https://solscan.io/token/E8eYNz6MLKP9LQCZMEmnU7ewUhmHMwGodz8wP1PVdiv7",
-  "links": [
-    {
-      "name": "twitter",
-      "url": "https://twitter.com/usdtclone"
-    },
-    {
-      "name": "telegram",
-      "url": "https://t.me/usdtclone"
-    }
-  ]
+  "links": {
+    "twitter": "https://twitter.com/Tether_to",
+    "github": "https://github.com/tether",
+    "telegram": "https://t.me/tether_official"
+  }
 }
