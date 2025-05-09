@@ -1,11 +1,37 @@
+
 {
-    "name": "Billion Happiness",
-    "type": "BEP2",
-    "symbol": "BHC",
-    "decimals": 8,
-    "website": "",
-    "description": "-",
-    "explorer": "https://explorer.binance.org/asset/BHC-3E8M",
-    "status": "abandoned",
-    "id": "BHC-3E8M"
+  "name": "Nexdol",
+  "type": "BEP20",
+  "symbol": "ND7",
+  "decimals": 18,
+  "description": "Nexdol (ND7) enables fast, low-cost crypto-powered payment cards, DeFi services, and NFT trading, tackling slow international transfers and high fees.",
+  "website": "https://nd7.xyz",
+  "explorer": "https://bscscan.com/token/0xB405ffcA28CF96337ad8984756f149cf263f378b",
+  "status": "active",
+  "id": "0xB405ffcA28CF96337ad8984756f149cf263f378b",
+  "links": [
+    {
+      "name": "coinmarketcap",
+      "url": "https://coinmarketcap.com/currencies/nexdol"
+    },
+    {
+      "name": "twitter",
+      "url": "https://x.com/Nexdol"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/nexdol7"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/nexdol"
+    },
+    {
+      "name": "whitepaper",
+      "url": "https://nd7.xyz/whitepaper"
+    }
+  ],
+  "tags": [
+    "defi"
+  ]
 }
