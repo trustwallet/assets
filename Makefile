@@ -52,7 +52,7 @@ update-auto: build
 
 # Helper commands.
 add-token: build
-	bin/assets add-token $(asset_id)
+	bin/assets add-token $(0x802ba6a112f4a7bbbc2d63c8ef4bc14dfcbe6245)
 
 add-tokenlist: build
 	bin/assets add-tokenlist $(asset_id)
