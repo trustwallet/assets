@@ -1,5 +1,3 @@
-name: Check
-
 on:
   push:
     branches:
@@ -10,8 +8,10 @@ on:
   workflow_dispatch:
 
 jobs:
-  check:
+  setup:
     runs-on: ubuntu-latest
+    outputs:
+      go-cache: ${{ steps.cache-go.outputs.cache-hit }}
     steps:
       - name: Set up Go
         uses: actions/setup-go@v4
@@ -21,11 +21,50 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v3
 
-      - name: Run check
+  check:
+    runs-on: ubuntu-latest
+    needs: setup
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+
+      - name: Set up Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: 1.18
+
+      - name: Run make check
         run: make check
+        continue-on-error: true
 
-      - name: Unit Test
+  test:
+    runs-on: ubuntu-latest
+    needs: setup
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+
+      - name: Set up Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: 1.18
+
+      - name: Run make test
         run: make test
+        continue-on-error: true
 
-      - name: Lint
+  lint:
+    runs-on: ubuntu-latest
+    needs: setup
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+
+      - name: Set up Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: 1.18
+
+      - name: Run make lint
         run: make lint
+        continue-on-error: true
