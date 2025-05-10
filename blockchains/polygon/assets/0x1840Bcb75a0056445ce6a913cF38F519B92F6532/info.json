@@ -1,10 +1,11 @@
 {
   "name": "emma token",
   "symbol": "EMMA",
+  "type": "ERC20",
   "decimals": 18,
-  "description": "EMMA is the infrastructure-native utility token for emma.ms \u2013 a platform for automating high-complexity cloud infrastructure at scale.",
+  "description": "Utility token for infrastructure usage and rewards within the emma.ms platform.",
   "website": "https://emma.ms",
-  "explorer": "https://amoy.polygonscan.com/address/0x1840Bcb75a0056445ce6a913cF38F519B92F6532",
+  "explorer": "https://polygonscan.com/token/0x1840Bcb75a0056445ce6a913cF38F519B92F6532",
   "status": "active",
-  "id": "0x1840Bcb75a0056445ce6a913cF38F519B92F6532"
+  "id": "emma-token"
 }
