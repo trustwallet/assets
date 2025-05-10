@@ -8,9 +8,19 @@
   "explorer": "https://polygonscan.com/token/0x1840Bcb75a0056445ce6a913cF38F519B92F6532",
   "status": "active",
   "id": "0x1840Bcb75a0056445ce6a913cF38F519B92F6532",
-  "links": {
-    "github": "https://github.com/emma-community",
-    "twitter": "https://x.com/theemmaplatform"
-  },
+  "links": [
+    {
+      "name": "github",
+      "url": "https://github.com/emma-community"
+    },
+    {
+      "name": "twitter",
+      "url": "https://x.com/theemmaplatform"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/emma_platform"
+    }
+  ],
   "tags": ["utility-token"]
 }
