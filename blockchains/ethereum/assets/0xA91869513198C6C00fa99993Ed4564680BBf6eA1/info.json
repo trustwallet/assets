@@ -5,18 +5,11 @@
   "website": "https://alaindelonfilmproductions.com",
   "explorer": "https://etherscan.io/token/0xA91869513198C6C00fa99993Ed4564680BBf6eA1",
   "status": "active",
-  "links": [
-    {
-      "name": "github",
-      "url": "https://github.com/DelonCoin"
-    },
-    {
-      "name": "whitepaper",
-      "url": "https://alaindelonfilmproductions.com/deloncoin-whitepaper.pdf"
-    }
-  ],
-  "tags": [
-    "defi",
-    "launchpad"
-  ]
+  "links": {
+    "github": "https://github.com/DelonCoin",
+    "reddit": "https://www.reddit.com/r/dlnfilmproductions/",
+    "twitter": "https://x.com/dlnfilmsprod",
+    "whitepaper": "https://www.alaindelonfilmproductions.com/_files/ugd/9a4681_4dc8c632d81d44cc83932d16e4bbe732.pdf"
+  },
+  "tags": ["defi", "launchpad"]
 }
