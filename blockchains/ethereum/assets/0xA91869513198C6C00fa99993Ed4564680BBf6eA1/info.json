@@ -1,14 +1,17 @@
 {
   "name": "DelonCoin",
   "symbol": "DLN",
+  "type": "ERC20",
+  "decimals": 18,
   "description": "DelonCoin (DLN) is a utility token launched by Alain Delon Film Productions to support European cinema and community participation in film and entertainment projects.",
   "website": "https://alaindelonfilmproductions.com",
   "explorer": "https://etherscan.io/token/0xA91869513198C6C00fa99993Ed4564680BBf6eA1",
   "status": "active",
-  "links": {
-    "github": "https://github.com/DelonCoin",
-    "instagram": "https://www.instagram.com/alainfabiendelon",
-    "official_site": "https://www.societe.com/societe/alain-delon-film-productions-943419408.html"
-  },
-  "tags": ["erc20", "dao", "defi", "launchpad"]
+  "id": "0xA91869513198C6C00fa99993Ed4564680BBf6eA1",
+  "links": [
+    { "name": "github", "url": "https://github.com/DelonCoin" },
+    { "name": "instagram", "url": "https://www.instagram.com/alainfabiendelon" },
+    { "name": "official_site", "url": "https://www.societe.com/societe/alain-delon-film-productions-943419408.html" }
+  ],
+  "tags": ["dao", "defi", "launchpad"]
 }
