@@ -5,16 +5,10 @@
   "decimals": 6,
   "description": "Educational stablecoin token for Eötvös Loránd University cybersecurity curriculum. NOT for trading or commercial use.",
   "website": "https://www.elte.hu",
-  "explorer": "https://bscscan.com/token/0x45b296c691f78a275a5241b7f74d1a41fb02c71a",
+  "explorer": "https://bscscan.com/token/0x45b296c691F78A275a5241B7f74d1a41fb02c71A",
   "status": "active",
-  "links": [
-    {
-      "name": "github",
-      "url": "https://github.com/pctsvn/stablecoin"
-    }
-  ],
-  "tags": ["educational", "stablecoin"],
+  "tags": ["stablecoin"],
   "fixedValue": true,
   "fixedPrice": 1.0,
-  "id": "0x45b296c691f78a275a5241b7f74d1a41fb02c71a"
+  "id": "0x45b296c691F78A275a5241B7f74d1a41fb02c71A"
 }
