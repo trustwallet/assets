@@ -1,23 +1,29 @@
 {
   "name": "Tether USD.z",
-  "symbol": "USDT.z",
-  "type": "ERC20",
-  "decimals": 6,
-  "description": "Tether USD.z is an experimental token on the Polygon network. It is not associated with the real USDT or Tether Limited in any form. This token is created for testing, educational, and demonstration purposes only.",
   "website": "https://github.com/tetherusdz", 
-  "explorer": "https://etherscan.io/token/0x71A3d9B3146296Ba357BB9858725305d0aE836C4",
+  "description": "Tether USD.z (USDT.z) is a decentralized stablecoin pegged to the US Dollar, offering a stable value on the Polygon network.",
+  "explorer": "https://polygonscan.com/token/0x71A3d9B3146296Ba357BB9858725305d0aE836C4",
+  "type": "POLYGON",
+  "symbol": "USDT.z",
+  "decimals": 6,
   "status": "active",
+  "tags": [
+    "stablecoin",
+    "defi"
+  ],
   "id": "0x71A3d9B3146296Ba357BB9858725305d0aE836C4",
   "links": [
     {
-      "title": "Twitter",
+      "name": "github",
+      "url": "https://github.com/tetherusdz"
+    },
+    {
+      "name": "x",
       "url": "https://x.com/TetherTBLOG"
     },
     {
-      "title": "GitHub",
-      "https://github.com/tetherusdz/Tether-USD.z-"
+      "name": "telegram",
+      "url": "https://t.me/tetherusdz"
     }
-  ],
-  "tags": ["DeFi"],
-  "holders": "1000"
+  ]
 }
