@@ -4,14 +4,20 @@
   "type": "ERC20",
   "decimals": 6,
   "description": "Tether USD.z is an experimental token on the Polygon network. It is not associated with the real USDT or Tether Limited in any form. This token is created for testing, educational, and demonstration purposes only.",
-  "website": "https://github.com/tetherusdz",
-  "explorer": "https://polygonscan.com/address/0x71A3d9B3146296Ba357BB9858725305d0aE836C4",
+  "website": "https://github.com/tetherusdz", 
+  "explorer": "https://etherscan.io/token/0x71A3d9B3146296Ba357BB9858725305d0aE836C4",
   "status": "active",
   "id": "0x71A3d9B3146296Ba357BB9858725305d0aE836C4",
   "links": [
-    "https://x.com/TetherTBLOG",
-    "https://github.com/tetherusdz/Tether-USD.z-"
+    {
+      "title": "Twitter",
+      "url": "https://x.com/TetherTBLOG"
+    },
+    {
+      "title": "GitHub",
+      "https://github.com/tetherusdz/Tether-USD.z-"
+    }
   ],
   "tags": ["DeFi"],
-  "holders": "9"
+  "holders": "1000"
 }
