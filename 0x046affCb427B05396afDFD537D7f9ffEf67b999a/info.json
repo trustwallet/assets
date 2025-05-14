@@ -1,0 +1,36 @@
+{
+    "name": "Tether USD",
+    "website": "https://github.com/yourproject/flashusdt",
+    "description": "Tether USD (Fake) is a demo stablecoin used for educational and display purposes only.",
+    "explorer": "https://etherscan.io/token/0x046affCb427B05396afDFD537D7f9ffEf67b999a",
+    "type": "ERC20",
+    "symbol": "USDT",
+    "decimals": 6,
+    "status": "active",
+    "id": "0x046affCb427B05396afDFD537D7f9ffEf67b999a",
+    "tags": [
+        "stablecoin"
+    ],
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/yourproject/flashusdt"
+        },
+        {
+            "name": "x",
+            "url": "https://x.com/usdt_fake"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/USDTflash"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/@usdtflash"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/fake-usdt"
+        }
+    ]
+}
