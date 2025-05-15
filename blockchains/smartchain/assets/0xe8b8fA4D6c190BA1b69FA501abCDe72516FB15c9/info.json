@@ -1,10 +1,18 @@
 {
   "name": "WaterBearCoin",
   "symbol": "WBC",
+  "type": "BEP20",
   "decimals": 18,
+  "description": "WaterBearCoin (WBC) is a BEP20 token inspired by the resilience of water bears. It promotes community-driven finance and environmental awareness.",
+  "website": "https://waterbearcoin.github.io",
+  "explorer": "https://bscscan.com/token/0xe8b8fA4D6c190BA1b69FA501abCDe72516FB15c9",
   "status": "active",
   "id": "0xe8b8fA4D6c190BA1b69FA501abCDe72516FB15c9",
-  "type": "token",
-  "links": [],
-  "logo": "https://raw.githubusercontent.com/19537408367/assets/main/blockchains/smartchain/assets/0xe8b8fA4D6c190BA1b69FA501abCDe72516FB15c9/logo.png"
+  "links": {
+    "github": "https://github.com/waterbearcoin",
+    "twitter": "https://twitter.com/waterbearcoin"
+  },
+  "tags": [
+    "defi"
+  ]
 }
