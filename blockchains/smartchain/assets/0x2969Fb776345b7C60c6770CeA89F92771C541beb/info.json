@@ -8,11 +8,17 @@
     "explorer": "https://bscscan.com/token/0x2969Fb776345b7C60c6770CeA89F92771C541beb",
     "status": "active",
     "id": "0x2969Fb776345b7C60c6770CeA89F92771C541beb",
-    "links": [
-        "https://eurc.finance",
-        "https://bscscan.com/token/0x2969Fb776345b7C60c6770CeA89F92771C541beb"
-    ],
     "tags": [
         "stablecoin"
+    ],
+    "links": [
+        {
+            "name": "website",
+            "url": "https://coinscrypto.cc"
+        },
+        {
+            "name": "explorer",
+            "url": "https://bscscan.com/token/0x2969Fb776345b7C60c6770CeA89F92771C541beb"
+        }
     ]
 }
