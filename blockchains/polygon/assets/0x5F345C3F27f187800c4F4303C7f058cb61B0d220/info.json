@@ -1,9 +1,11 @@
-
 {
   "name": "NebulaX",
   "symbol": "NBX",
+  "type": "ERC20",
   "decimals": 18,
-  "address": "0x5F345C3F27f187800c4F4303C7f058cb61B0d220",
-  "chainId": 137,
-  "logoURI": "https://raw.githubusercontent.com/kral8/assets/main/blockchains/polygon/assets/0x5F345C3F27f187800c4F4303C7f058cb61B0d220/logo.png.PNG"
+  "description": "NebulaX (NBX) — powering the decentralized future. A utility token for Web3 tools, DeFi and innovation.",
+  "website": "https://kral8.github.io/NBX/",
+  "explorer": "https://polygonscan.com/token/0x5F345C3F27f187800c4F4303C7f058cb61B0d220",
+  "status": "active",
+  "id": "0x5F345C3F27f187800c4F4303C7f058cb61B0d220"
 }
