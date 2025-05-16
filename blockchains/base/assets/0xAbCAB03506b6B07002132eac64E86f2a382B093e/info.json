@@ -3,20 +3,19 @@
   "symbol": "SLBR",
   "decimals": 18,
   "status": "active",
+  "type": "token",
+  "website": "https://slobberdog.io",
+  "explorer": "https://basescan.org/token/0xAbCAB03506b6B07002132eac64E86f2a382B093e",
   "id": "0xAbCAB03506b6B07002132eac64E86f2a382B093e",
   "description": "Slobber Dog (SLBR) is a meme coin with a big nose and a bigger dream. It is powered by community energy and aims to reward holders with NFTs, giveaways, and lots of meme magic.",
   "links": [
     {
-      "name": "website",
-      "url": "https://slobberdog.io"
-    },
-    {
       "name": "twitter",
       "url": "https://twitter.com/slobberdog"
-    },
-    {
-      "name": "explorer",
-      "url": "https://basescan.org/token/0xAbCAB03506b6B07002132eac64E86f2a382B093e"
     }
+  ],
+  "tags": [
+    "meme",
+    "community"
   ]
 }
