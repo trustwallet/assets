@@ -3,15 +3,15 @@
   "symbol": "SLBR",
   "decimals": 18,
   "status": "active",
-  "type": "tokenEVM",
+  "type": "ERC-20",
   "id": "0xAbCAB03506b6B07002132eac64E86f2a382B093e",
   "website": "https://slobberdog.io",
   "explorer": "https://basescan.org/token/0xAbCAB03506b6B07002132eac64E86f2a382B093e",
-  "description": "Slobber Dog (SLBR) is a community-powered meme coin on the Base network. Featuring a cartoonish chihuahua mascot, SLBR offers NFT rewards, humorous branding, and a loyal holder base.",
+  "description": "Slobber Dog (SLBR) is a community meme coin on the Base network. Featuring a cartoonish chihuahua mascot, SLBR offers NFT rewards, humorous branding, and a loyal holder base.",
   "links": [
     {
-      "name": "twitter",
-      "url": "https://twitter.com/slobberdog"
+      "name": "X",
+      "url": "https://x.com/slobberdog"
     },
     {
       "name": "github",
@@ -21,9 +21,5 @@
       "name": "discord",
       "url": "https://discord.gg/slobberdog"
     }
-  ],
-  "tags": [
-    "community"
-  ]
-}
+
 
