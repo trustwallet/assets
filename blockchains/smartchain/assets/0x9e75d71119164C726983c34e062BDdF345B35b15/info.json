@@ -1,14 +1,16 @@
 {
   "name": "NeptuneX",
   "symbol": "NTX",
+  "type": "BEP20",
   "decimals": 18,
   "status": "active",
   "id": "0x9e75d71119164C726983c34e062BDdF345B35b15",
-  "website": "https://neptunex.io",
+  "website": "https://neptune-x.com",
   "description": "NeptuneX is a BNB Smart Chain token supporting maritime innovation and seafarer training ecosystem.",
   "explorer": "https://bscscan.com/token/0x9e75d71119164C726983c34e062BDdF345B35b15",
   "links": {
-    "github": "https://github.com/Neptune-Marine-Solutions",
-    "twitter": "https://twitter.com/NeptuneX_Coin"
-  }
+    "github": "https://github.com/Neptune-marinesolutions",
+    "telegram": "https://t.me/+P_6fEJvg3dE4ZDE8"
+  },
+  "tags": ["defi", "utility", "maritime"]
 }
