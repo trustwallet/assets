@@ -6,11 +6,17 @@
   "status": "active",
   "id": "0x9e75d71119164C726983c34e062BDdF345B35b15",
   "website": "https://neptune-x.com",
-  "description": "NeptuneX is a BNB Smart Chain token supporting maritime innovation and seafarer training ecosystem.",
+  "description": "NeptuneX is a BNB Smart Chain token supporting maritime innovation and a digital ecosystem for seafarer training, rewards, and automation.",
   "explorer": "https://bscscan.com/token/0x9e75d71119164C726983c34e062BDdF345B35b15",
-  "links": {
-    "github": "https://github.com/Neptune-marinesolutions",
-    "telegram": "https://t.me/+P_6fEJvg3dE4ZDE8"
-  },
+  "links": [
+    {
+      "name": "github",
+      "url": "https://github.com/Neptune-marinesolutions"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/+P_6fEJvg3dE4ZDE8"
+    }
+  ],
   "tags": ["defi", "utility", "maritime"]
 }
