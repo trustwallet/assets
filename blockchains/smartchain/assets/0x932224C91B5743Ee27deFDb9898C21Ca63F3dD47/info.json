@@ -1,15 +1,14 @@
 {
-    "name": "ZUMP Coin",
-    "type": "BEP20",
-    "symbol": "ZUMP",
-    "decimals": 18,
-    "website": "https://zumpcoin.ei",
-    "description": "Meme coin.",
-    "explorer": "https://bscscan.com/token/0x932224c91b5743ee27defdb9898c21ca63f3dd47",
-    "status": "active",
-    "id": "0x932224c91b5743ee27defdb9898c21ca63f3dd47",
-    "links": [
-      {
+  "name": "Zump Coin",
+  "symbol": "ZUMP",
+  "type": "BEP20",
+  "decimals": 18,
+  "status": "active",
+  "id": "0x932224C91B5743Ee27deFDb9898C21Ca63F3dD47",
+  "address": "0x932224C91B5743Ee27deFDb9898C21Ca63F3dD47",
+  "explorer": "https://bscscan.com/token/0x932224C91B5743Ee27deFDb9898C21Ca63F3dD47",
+  "links": [
+    {
       "name": "twitter",
       "url": "https://x.com/ZumpCoin25"
     },
@@ -18,11 +17,11 @@
       "url": "https://t.me/+cymcdZXH8ApkM2Vk"
     },
     {
-      "name": "stranka",
+      "name": "blog",
       "url": "https://zumpcoin.eu"
     }
-    ],
-    "tags": [
-        "defi"
-    ]
+  ],
+  "tags": [
+    "defi"
+  ]
 }
