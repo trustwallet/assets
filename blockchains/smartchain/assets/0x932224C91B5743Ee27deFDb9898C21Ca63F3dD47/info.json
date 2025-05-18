@@ -4,15 +4,22 @@
   "type": "BEP20",
   "decimals": 18,
   "status": "active",
-  "id": "0x932224C91B5743Ee27deFDb9898C21Ca63F3dD47",
-  "address": "0x932224C91B5743Ee27deFDb9898C21Ca63F3dD47",
-  "explorer": "https://bscscan.com/token/0x932224C91B5743Ee27deFDb9898C21Ca63F3dD47",
-  "website": "https://zumpcoin.eu",
-  "info": "Zump Coin is a decentralized BEP20 token focused on DeFi.",
-  "logo": "logo.png",
+  "id": "0x932224c91b5743ee27defdb9898c21ca63f3dd47",
+  "address": "0x932224c91b5743ee27defdb9898c21ca63f3dd47",
+  "explorer": "https://bscscan.com/token/0x932224c91b5743ee27defdb9898c21ca63f3dd47",
   "links": [
-    "https://x.com/ZumpCoin25",
-    "https://t.me/+cymcdZXH8ApkM2Vk"
+    {
+      "name": "twitter",
+      "url": "https://x.com/ZumpCoin25"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/+cymcdZXH8ApkM2Vk"
+    },
+    {
+      "name": "website",
+      "url": "https://zumpcoin.eu"
+    }
   ],
   "tags": [
     "defi"
