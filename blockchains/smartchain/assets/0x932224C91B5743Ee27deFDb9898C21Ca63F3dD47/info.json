@@ -8,8 +8,14 @@
   "address": "0x932224C91B5743Ee27deFDb9898C21Ca63F3dD47",
   "explorer": "https://bscscan.com/token/0x932224C91B5743Ee27deFDb9898C21Ca63F3dD47",
   "links": [
-    "https://x.com/ZumpCoin25",
-    "https://t.me/+cymcdZXH8ApkM2Vk"
+    {
+      "name": "twitter",
+      "url": "https://x.com/ZumpCoin25"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/+cymcdZXH8ApkM2Vk"
+    }
   ],
   "tags": [
     "defi",
