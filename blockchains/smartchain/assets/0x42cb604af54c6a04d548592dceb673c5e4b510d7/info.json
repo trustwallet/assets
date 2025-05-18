@@ -6,8 +6,14 @@
   "explorer": "https://bscscan.com/token/0x42cb604af54c6a04d548592dceb673c5e4b510d7",
   "status": "active",
   "type": "coin",
-  "links": {
-    "github": "https://github.com/DrawCoin",
-    "twitter": "https://twitter.com/DrawKur"
-  }
+  "links": [
+    {
+      "name": "github",
+      "url": "https://github.com/DrawCoin"
+    },
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/DrawKur"
+    }
+  ]
 }
