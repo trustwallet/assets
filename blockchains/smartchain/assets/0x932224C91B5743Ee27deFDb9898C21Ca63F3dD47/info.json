@@ -7,10 +7,16 @@
   "id": "0x932224C91B5743Ee27deFDb9898C21Ca63F3dD47",
   "address": "0x932224C91B5743Ee27deFDb9898C21Ca63F3dD47",
   "explorer": "https://bscscan.com/token/0x932224C91B5743Ee27deFDb9898C21Ca63F3dD47",
-  "links": {
-    "twitter": "https://x.com/ZumpCoin25",
-    "telegram": "https://t.me/+cymcdZXH8ApkM2Vk"
-  },
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://x.com/ZumpCoin25"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/+cymcdZXH8ApkM2Vk"
+    }
+  ],
   "tags": [
     "defi",
     "bep20"
