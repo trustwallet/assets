@@ -5,7 +5,13 @@
   "website": "https://drawcoin.krd",
   "explorer": "https://bscscan.com/token/0x42cb604af54c6a04d548592dceb673c5e4b510d7",
   "status": "active",
-  "type": "coin",
+  "type": "token",
+  "id": "0x42cb604af54c6a04d548592dceb673c5e4b510d7",
+  "tags": [
+    "education",
+    "symbolic",
+    "community"
+  ],
   "links": [
     {
       "name": "github",
@@ -13,7 +19,7 @@
     },
     {
       "name": "twitter",
-      "url": "https://twitter.com/DrawKur"
+      "url": "https://x.com/DrawKur"
     }
   ]
 }
