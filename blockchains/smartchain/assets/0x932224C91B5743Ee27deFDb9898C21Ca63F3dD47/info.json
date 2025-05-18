@@ -1,12 +1,15 @@
 {
-  "name": "Zump Coin",
-  "symbol": "ZUMP",
-  "type": "BEP20",
-  "decimals": 18,
+    "name": "Zump Coin",
+    "symbol": "ZUMP",
+    "type": "BEP20",
+    "decimals": 18,
     "website": "https://www.zumpcoin.eu/index.php",
     "description": "meme coin",
     "explorer": "https://bscscan.com/token/0x932224C91B5743Ee27deFDb9898C21Ca63F3dD47",
     "status": "active",
-  "id": "0x932224C91B5743Ee27deFDb9898C21Ca63F3dD47",
-  "address": "0x932224C91B5743Ee27deFDb9898C21Ca63F3dD47"
+    "id": "0x932224C91B5743Ee27deFDb9898C21Ca63F3dD47",
+    "tags": [
+        "defi",
+        "bep20"
+    ]
 }
