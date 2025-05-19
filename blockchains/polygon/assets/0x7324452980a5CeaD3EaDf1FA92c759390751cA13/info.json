@@ -1,28 +1,19 @@
 {
   "name": "Trava",
   "symbol": "TVA",
-  "type": "ERC20",
+  "type": "token",
   "decimals": 18,
   "status": "active",
   "id": "0x7324452980a5CeaD3EaDf1fA92c759390751cA13",
-  "links": [
-    {
-      "name": "website",
-      "url": "https://trava.technology"
-    },
-    {
-      "name": "twitter",
-      "url": "https://twitter.com/trava_token"
-    },
-    {
-      "name": "telegram",
-      "url": "https://t.me/trava_token"
-    },
-    {
-      "name": "github",
-      "url": "https://github.com/megaape/TRAVA-TVA"
-    }
-  ],
+  "description": "Trava (TVA) is a next-generation digital currency designed for real-world transactions, enabling workers, families, and investors to send, spend, and grow value globally. With a name rooted in trade and valor, Trava empowers everyday users and professional markets alike.",
+  "explorer": "https://polygonscan.com/token/0x7324452980a5CeaD3EaDf1fA92c759390751cA13",
+  "links": {
+    "x": "https://x.com/Trava_token",
+    "website": "https://trava.technology",
+    "telegram": "https://t.me/trava_technology",
+    "github": "https://github.com/megaape/TRAVA-TVA",
+    "reddit": "https://www.reddit.com/user/Trava_technology"
+  },
   "tags": [
     "defi"
   ],
