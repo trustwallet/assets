@@ -9,12 +9,23 @@
     "id": "0x7324452980a5CeaD3EaDf1fA92c759390751cA13",
     "status": "active",
     "links": [
-        {
-            "x": "https://x.com/Trava_token",
-            "telegram": "https://t.me/trava_technology",
-            "github": "https://github.com/megaape/TRAVA-TVA",
-            "reddit": "https://www.reddit.com/user/Trava_technology"
-
-        }
-    ]
+    {
+      "name": "github",
+      "url": "https://github.com/megaape/TRAVA-TVA"
+    },
+    {
+      "name": "x",
+      "url": "https://x.com/trava_token"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/trava_technology"
+    },
+    {
+      "name": "reddit",
+      "url": "https://www.reddit.com/user/Trava_technology"
+    },
+    "tags": [
+    "defi"
+  ]
 }
