@@ -1,5 +1,6 @@
 {
   "name": "Dr.B",
+  "type": "BEP20",
   "symbol": "DRB",
   "decimals": 18,
   "description": "DRB Token is the first cryptocurrency directly tied to real healthcare services, offering exclusive medical and cosmetic discounts in Dubai.",
@@ -11,6 +12,15 @@
     {
       "name": "twitter",
       "url": "https://x.com/drbcoins"
+    },
+    {
+      "name": "website",
+      "url": "https://drbcoins.com"
     }
+  ],
+  "tags": [
+    "healthcare",
+    "discounts",
+    "medical-services"
   ]
 }
