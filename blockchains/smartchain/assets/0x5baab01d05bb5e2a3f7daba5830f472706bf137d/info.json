@@ -1,30 +1,22 @@
 {
   "name": "Dr.B",
-  "type": "coin",
   "symbol": "DRB",
+  "type": "token",
+  "address": "0x5baab01d05bb5e2a3f7daba5830f472706bf137d",
   "decimals": 18,
   "description": "DRB Token is the first cryptocurrency directly tied to real healthcare services, offering exclusive medical and cosmetic discounts in Dubai.",
-  "website": "https://drbcoins.com",
-  "explorer": "https://bscscan.com/token/0x5BaAb01D05Bb5e2a3f7DAba5830F472706Bf137D",
-  "status": "active",
-  "id": "drb-token",
   "links": [
     {
-      "name": "twitter",
-      "url": "https://x.com/drbcoins"
-    },
-    {
       "name": "website",
-      "url": "https://drbcoins.com"
+      "url": "https://drbcoins.com "
     },
     {
-      "name": "telegram",
-      "url": "https://t.me/drbcoins"
+      "name": "twitter",
+      "url": "https://x.com/drbcoins "
     }
   ],
-  "tags": [
-    "healthcare",
-    "utility-token",
-    "medical-discounts"
-  ]
+  "tags": ["utility-token", "medical-discounts"],
+  "status": "active",
+  "id": "drb-token",
+  "holders": 3
 }
