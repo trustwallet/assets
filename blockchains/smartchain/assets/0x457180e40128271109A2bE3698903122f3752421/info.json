@@ -1,11 +1,24 @@
 {
-  "name": "Bridged USDT Zedxion",
-  "symbol": "USDT.Z",
-  "type": "BEP20",
-  "decimals": 9,
-  "description": "USDT.Z is a BEP20 token backed by Tether USD.",
-  "website": "https://tether.to",
-  "explorer": "https://bscscan.com/token/0x457180e40128271109A2bE3698903122f3752421",
-  "status": "active",
-  "id": "0x457180e40128271109A2bE3698903122f3752421"
+    "name": "Bridged USDT Zedxion",
+    "type": "BEP20",
+    "symbol": "USDT.Z",
+    "decimals": 9,
+    "website": "https://tether.to",
+    "description": "USDT.Z is a BEP20 token backed by Tether USD.",
+    "explorer": "https://bscscan.com/token/0x457180e40128271109A2bE3698903122f3752421",
+    "status": "active",
+    "id": "0x457180e40128271109A2bE3698903122f3752421",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/jackoctavios"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/jackoctavios"
+        }
+    ],
+    "tags": [
+        "dapp"
+    ]
 }
