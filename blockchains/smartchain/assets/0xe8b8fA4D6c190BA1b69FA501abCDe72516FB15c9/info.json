@@ -1,12 +1,27 @@
 {
-  "name": "WaterBearCoin",
+  "name": "WhiteBear Coin",
   "symbol": "WBC",
-  "type": "BEP20",
   "decimals": 18,
-  "description": "YourTokenName is a decentralized meme token for entertainment purposes.",
-  "website": "https://yourtokenwebsite.com",
-  "explorer": "https://bscscan.com/token/0xe8b8fa4d6c190ba1b69fa501abcde72516fb15c9",
   "status": "active",
-  "id": "0xe8b8fa4d6c190ba1b69fa501abcde72516fb15c9"
+  "id": "0xe8b8fA4D6c190BA1b69FA501abCDe72516FB15c9",
+  "type": "token",
+  "links": [
+    {
+      "name": "website",
+      "url": "https://whitebearcoin.org"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/whitebearcoin"
+    },
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/whitebearcoin"
+    }
+  ],
+  "tags": [
+    "meme",
+    "community"
+  ]
 }
 
