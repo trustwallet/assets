@@ -1,19 +1,11 @@
 {
-  "type": "BEP20", 
-  "symbol": "WBC",  
-  "decimals": 18,   
-  "website": "https://yourprojectwebsite.com",  
-
-  "description": "WBC is a community-driven BEP20 token designed to foster decentralization and long-term value for holders.", 
-
-  "explorer": "https://bscscan.com/token/0xe8b8fA4D6c190BA1b69FA501abCDe72516FB15c9", 
-
-  "links": {
-    "twitter": "https://twitter.com/yourproject",     
-    "github": "https://github.com/yourproject"  
-  },
-
+  "type": "BEP20",
+  "symbol": "WBC",
+  "decimals": 18,
+  "website": "https://example.com/wbc", 
+  "description": "WBC is a community-driven BEP20 token aiming to foster decentralization and long-term value for holders.",
+  "explorer": "https://bscscan.com/token/0xe8b8fA4D6c190BA1b69FA501abCDe72516FB15c9",
+  "links": {},
   "tags": ["community"]
 }
-
 
