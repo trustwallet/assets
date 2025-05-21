@@ -3,7 +3,7 @@
   "symbol": "USDtx",
   "type": "ERC20",
   "decimals": 18,
-  "description": "USDtx is a demo stablecoin-style token built for testing, simulation, and educational purposes on the Ethereum blockchain.",
+  "description": "USDtx is a stablecoin-style token built for testing, simulation, and educational purposes on the Ethereum blockchain.",
   "website": "https://usdtx-token.org",
   "explorer": "https://etherscan.io/token/0x61726c5C239623e7A5b854451Fc41a92646F2aAB",
   "status": "active",
@@ -16,6 +16,5 @@
   ],
   "tags": [
     "stablecoin",
-    "demo"
   ]
 }
