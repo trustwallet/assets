@@ -9,9 +9,15 @@
   "explorer": "https://bscscan.com/token/0xe8b8fa4d6c190ba1b69fa501abcde72516fb15c9",
   "status": "active",
   "tags": ["defi"],
-  "links": {
-    "telegram": "https://t.me/dd886754",
-    "twitter": "https://twitter.com/WeiXie998"
-  },
+  "links": [
+    {
+      "name": "telegram",
+      "url": "https://t.me/dd886754"
+    },
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/WeiXie998"
+    }
+  ],
   "holders": 14
 }
