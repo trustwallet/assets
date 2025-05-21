@@ -1,11 +1,22 @@
 {
-  "name": "WaterBearCoin",
-  "symbol": "WBC",
+  "id": "0xe8b8fA4D6c190BA1b69FA501abCDe72516FB15c9",
   "type": "BEP20",
+  "symbol": "WBC",
+  "name": "WaterBearCoin",
   "decimals": 18,
-  "description": "WaterBearCoin is a meme token on BSC, purely for entertainment and experimentation.",
-  "website": "",
-  "explorer": "https://bscscan.com/token/0xe8b8fA4D6c190BA1b69FA501abCDe72516FB15c9",
   "status": "active",
-  "id": "0xe8b8fA4D6c190BA1b69FA501abCDe72516FB15c9"
+  "website": "https://example.com/wbc",
+  "description": "WBC is a community-driven BEP20 token aiming to foster decentralization and long-term value for holders.",
+  "explorer": "https://bscscan.com/token/0xe8b8fA4D6c190BA1b69FA501abCDe72516FB15c9",
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://x.com/WBCproject"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/WBCproject"
+    }
+  ],
+  "tags": ["defi"]
 }
