@@ -1,23 +1,19 @@
 {
-  "symbol": "WBC",
   "name": "WaterBearCoin",
-  "decimals": 18,
-  "description": "WaterBearCoin is a decentralized finance token.",
-  "website": "https://yourwebsite.com",
-  "explorer": "https://bscscan.com/token/waterbearcoin",
+  "symbol": "WBC",
+  "description": "WaterBearCoin is a DeFi token for the WaterBear ecosystem.",
   "type": "BEP20",
+  "id": "0xe8b8fA4D6c190BA1b69FA501abCDe72516FB15c9",
+  "decimals": 18,
+  "website": "https://waterbearcoin.org",
+  "explorer": "https://bscscan.com/token/waterbearcoin",
   "status": "active",
-  "id": "waterbearcoin",
-  "tags": ["defi"],
-  "socials": [
-    {
-      "name": "telegram",
-      "url": "https://t.me/dd886754"
-    },
-    {
-      "name": "twitter",
-      "url": "https://twitter.com/WeiXie998"
-    }
+  "tags": [
+    "defi"
   ],
+  "links": {
+    "telegram": "https://t.me/dd886754",
+    "twitter": "https://twitter.com/WeiXie998"
+  },
   "holders": 14
 }
