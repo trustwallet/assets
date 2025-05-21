@@ -4,8 +4,9 @@
   "decimals": 18,
   "id": "waterbearcoin",
   "description": "WaterBearCoin is a decentralized finance (DeFi) token on Binance Smart Chain.",
-  "website": "https://bscscan.com/token/0xe8b8fA4D6c190BA1b69FA501abCDe72516FB15c9",
-  "explorer": "https://bscscan.com/token/",
+  "website": "https://waterbearcoin.org",  // 建议你填一个官网，没有的话填你BscScan主页链接也行
+  "explorer": "https://bscscan.com/token/0xe8b8fA4D6c190BA1b69FA501abCDe72516FB15c9",
+  "type": "BEP20",
   "status": "active",
   "socials": [
     {
