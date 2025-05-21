@@ -1,29 +1,44 @@
 {
-  "name": "InfinitiCoin",
-  "type": "BEP20",
-  "symbol": "INCO",
-  "decimals": 18,
-  "website": "https://www.infiniticoin.com/",
-  "description": "InfinitiCoin is a cryptocurrency project that integrates Decentralized Finance (DeFi), Non-Fungible Tokens (NFTs), and Gold Investment. The project aims to offer a versatile platform catering to various investment strategies, both in the digital and traditional asset realms.",
-  "explorer": "https://bscscan.com/token/0xb617fab6b94ed1fe6df3cad71e1dc997927a2a0e",
-  "status": "active",
-  "id": "0xB617faB6b94ED1Fe6DF3cAD71e1Dc997927A2A0E",
-  "links": [
-    {
-      "name": "twitter",
-      "url": "https://twitter.com/Infiniti_Coin"
-    },
-    {
-      "name": "telegram",
-      "url": "https://t.me/InfinitiCoin_INCO"
-    },
-    {
-      "name": "facebook",
-      "url": "https://www.facebook.com/InfinitiCoin/"
-    },
-    {
-      "name": "discord",
-      "url": "https://discord.com/invite/DCWfRs6YNj"
-    }
-  ]
+    "name": "InfinitiCoin",
+    "type": "BEP20",
+    "symbol": "INCO",
+    "decimals": 18,
+    "website": "https://infiniticoin.com/",
+    "description": "InfinitiCoin is a cryptocurrency project that integrates Decentralized Finance (DeFi), Non-Fungible Tokens (NFTs), and Gold Investment. The project aims to offer a versatile platform catering to various investment strategies, both in the digital and traditional asset realms.",
+    "explorer": "https://bscscan.com/token/0xB617faB6b94ED1Fe6DF3cAD71e1Dc997927A2A0E",
+    "status": "active",
+    "id": "0xB617faB6b94ED1Fe6DF3cAD71e1Dc997927A2A0E",
+    "links": [
+        {
+            "name": "x",
+            "url": "https://x.com/Infiniti_Coin"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/InfinitiCoin_INCO"
+        },
+        {
+            "name": "facebook",
+            "url": "https://facebook.com/InfinitiCoin/"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/DCWfRs6YNj"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/infiniticoin/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://www.coingecko.com/en/coins/infiniticoin"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://infiniticoin.com/InfinitiCoin%20-White%C2%A0-Paper.pdf"
+        }
+    ],
+    "tags": [
+        "defi"
+    ]
 }
