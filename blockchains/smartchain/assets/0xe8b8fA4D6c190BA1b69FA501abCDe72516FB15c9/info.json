@@ -2,12 +2,15 @@
   "name": "WaterBearCoin",
   "symbol": "WBC",
   "decimals": 18,
-  "id": "waterbearcoin",
-  "description": "WaterBearCoin is a decentralized finance (DeFi) token on Binance Smart Chain.",
-  "website": "https://waterbearcoin.org",  // 建议你填一个官网，没有的话填你BscScan主页链接也行
+  "description": "WaterBearCoin is a decentralized finance token on Binance Smart Chain.",
+  "website": "https://waterbearcoin.org",
   "explorer": "https://bscscan.com/token/0xe8b8fA4D6c190BA1b69FA501abCDe72516FB15c9",
   "type": "BEP20",
   "status": "active",
+  "id": "waterbearcoin",
+  "tags": [
+    "defi"
+  ],
   "socials": [
     {
       "name": "telegram",
@@ -17,9 +20,6 @@
       "name": "twitter",
       "url": "https://twitter.com/WeiXie998"
     }
-  ],
-  "tags": [
-    "defi"
   ],
   "holders": 14
 }
