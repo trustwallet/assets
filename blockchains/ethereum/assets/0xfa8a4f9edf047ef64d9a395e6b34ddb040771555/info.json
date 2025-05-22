@@ -2,9 +2,18 @@
   "name": "PDGE Token",
   "symbol": "PDGE",
   "decimals": 18,
+  "type": "ERC20",
   "description": "PDGE is a privately managed semantic token designed for system architecture and ecosystem research.",
-  "website": "https://pdge.world",
+  "website": "https://vault.pdge.me",
   "explorer": "https://etherscan.io/token/0xfa8a4f9edf047ef64d9a395e6b34ddb040771555",
   "status": "active",
-  "id": "0xfa8a4f9edf047ef64d9a395e6b34ddb040771555"
+  "id": "0xfa8a4f9edf047ef64d9a395e6b34ddb040771555",
+  "links": [
+    "https://github.com/PDGEhotman",
+    "https://vault.pdge.me"
+  ],
+  "tags": [
+    "utility",
+    "semantic"
+  ]
 }
