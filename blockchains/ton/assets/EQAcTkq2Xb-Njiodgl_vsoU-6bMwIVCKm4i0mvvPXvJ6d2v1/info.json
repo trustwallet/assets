@@ -1,17 +1,22 @@
 {
-  "name": "XRP Crypto",
-  "type": "jetton",
-  "symbol": "XRP",
-  "decimals": 9,
-  "description": "Игровой токен XRP в сети TON с фиксированной ценой. Используется для покупок в игровых платформах.",
+  "name": "XRPCrypto",
   "website": "http://startio.site/xrp/",
+  "description": "Игровой токен XRP в сети TON с фиксированной ценой. Используется для расчётов внутри платформы.",
   "explorer": "https://tonscan.org/jetton/EQAcTkq2Xb-Njiodgl_vsoU-6bMwIVCKm4i0mvvPXvJ6d2v1",
+  "symbol": "XRP",
+  "type": "coin",
+  "decimals": 9,
   "status": "active",
   "id": "EQAcTkq2Xb-Njiodgl_vsoU-6bMwIVCKm4i0mvvPXvJ6d2v1",
+  "tags": ["gaming"],
   "links": [
     {
       "name": "telegram",
       "url": "https://t.me/financialcompliance"
+    },
+    {
+      "name": "twitter",
+      "url": "https://x.com/xrpcrypto_game"
     }
   ]
 }
