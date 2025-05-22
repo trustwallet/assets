@@ -6,18 +6,23 @@
   "chainId": 8453,
   "id": "0xAbCAB03506b6B07002132eac64E86f2a382B093e",
   "logo": "logo.png",
-  "description": "Slobberdog is a wild and chaotic meme token with hardcoded trading limits and maximum meme energy. Community powered and designed to lick the dip.",
+  "description": "Slobberdog is a wild and chaotic meme token with 1 billion supply, built for community-powered viral movement and organic launch limits.",
   "website": "https://slobberdog.io",
-  "explorer": "https://basescan.org/token/0xAbCAB03506b6B07002132eac64E86f2a382B093e",
+  "explorer": "https://etherscan.io/token/0xAbCAB03506b6B07002132eac64E86f2a382B093e",
   "status": "active",
   "type": "ERC20",
   "tags": [
-    "meme"
+    "community",
+    "token"
   ],
   "links": [
     {
       "name": "twitter",
       "url": "https://x.com/Slopperdog_io"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/NFTLiebhaber2000/slobberdog"
     }
   ]
 }
