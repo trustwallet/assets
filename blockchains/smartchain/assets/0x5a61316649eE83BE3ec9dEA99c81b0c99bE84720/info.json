@@ -1,28 +1,28 @@
 {
-  "name": "USDTB",
-  "symbol": "USDTB",
-  "decimals": 18,
-  "address": "0x5a61316649eE83BE3ec9dEA99c81b0c99bE84720",
-  "chainId": 56,
-  "type": "BEP20",
-  "id": "0x5a61316649eE83BE3ec9dEA99c81b0c99bE84720",
-  "explorer": "https://bscscan.com/token/0x5a61316649eE83BE3ec9dEA99c81b0c99bE84720",
-  "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x5a61316649eE83BE3ec9dEA99c81b0c99bE84720/logo.png",
-  "website": "https://www.usdtbcrypto.com",
-  "description": "USDTB is a stable cryptocurrency token designed for reliability, value consistency, and integration with decentralized finance platforms.",
-  "status": "active",
-  "tags": [
-    "stablecoin",
-    "defi"
-  ],
-  "links": [
-    {
-      "name": "twitter",
-      "url": "https://x.com/usdtbcrypto"
-    },
-    {
-      "name": "telegram",
-      "url": "https://t.me/usdtbtoken"
-    }
-  ]
+    "name": "USDTB",
+    "type": "BEP20",
+    "symbol": "USDTB",
+    "decimals": 18,
+    "website": "https://usdtbcrypto.com",
+    "description": "Hello Trust Wallet team,\n\nI previously submitted a pull request for listing my token USDTB under PR #31328, and I completed the payment of 2.5 BNB at the time (TxHash: 0x23464f96fd213fd57ba82e7ffea780ff0a6b8b87b4d77457277da63fc7e6e5d6).\n\nUnfortunately, that PR was closed due to inactivity before it was merged. I have now resubmitted the token under a new PR #31643.\n\nAccording to your official documentation, a second payment is not required if the asset was already accepted before. Since my token was already approved (but not merged), I kindly request you to transfer the paid fee from PR #31328 to PR #31643, so the new request can proceed.\n\nThank you very much for your support and clarification.\n\nBest regards,\nShadmehr Daniyali\nContract: 0x5a61316649eE83BE3ec9dEA99c81b0c99bE84720\n\n",
+    "explorer": "https://bscscan.com/token/0x5a61316649eE83BE3ec9dEA99c81b0c99bE84720",
+    "status": "active",
+    "id": "0x5a61316649eE83BE3ec9dEA99c81b0c99bE84720",
+    "links": [
+        {
+            "name": "telegram",
+            "url": "https://t.me/usdtbsupporting"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://usdtbcrypto.com/USDTB_Whitepaper.pdf"
+        },
+        {
+            "name": "x",
+            "url": "https://x.com/SUsdtb4260"
+        }
+    ],
+    "tags": [
+        "defi"
+    ]
 }
