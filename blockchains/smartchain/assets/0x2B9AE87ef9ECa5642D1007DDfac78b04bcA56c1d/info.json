@@ -1,1 +1,27 @@
-
+{
+  "name": "Teller USD",
+  "website": "https://yourprojectwebsite.com",
+  "description": "Teller USD is a stablecoin on the BNB Smart Chain, designed for [briefly describe its purpose, e.g., decentralized finance, stable value, etc.].",
+  "explorer": "https://bscscan.com/token/0x2B9AE87ef9ECa5642D1007DDfac78b04bcA56c1d",
+  "research": "https://yourprojectwebsite.com/whitepaper.pdf",
+  "symbol": "USDT",
+  "type": "BEP20",
+  "decimals": 18,
+  "status": "active",
+  "id": "0x2B9AE87ef9ECa5642D1007DDfac78b04bcA56c1d",
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/yourprojecttwitter"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/yourprojecttelegramgroup"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/yourprojectgithub"
+    }
+    // Add more links as needed, e.g., discord, medium, etc.
+  ]
+}
