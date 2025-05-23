@@ -1,14 +1,21 @@
 {
-  "name": "Munggoo Coin",
-  "symbol": "MNG",
+  "name": "MunggooCoin",
   "type": "BEP20",
+  "symbol": "MNG",
   "decimals": 18,
-  "description": "Munggoo Coin is a fun and community-driven token built around a sled-riding white dog mascot.",
-  "website": "https://example.com",
+  "website": "https://t.me/boost/munggoocoin",
+  "description": "MunggooCoin is a community-driven meme coin built on BNB Chain.",
   "explorer": "https://bscscan.com/token/0x7745a8736a24186C1824aa95B961284a3a900725",
   "status": "active",
   "id": "0x7745a8736a24186C1824aa95B961284a3a900725",
-  "links": {
-    "telegram": "https://t.me/boost/munggoocoin"
-  }
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/mungoocoin"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/boost/munggoocoin"
+    }
+  ]
 }
