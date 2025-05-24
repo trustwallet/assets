@@ -9,22 +9,14 @@
   "status": "active",
   "id": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
   "tags": ["stablecoin"],
-   "links": [
-        {
-            "name": "whitepaper",
-            "url": "https://tether.to/wp-content/uploads/2016/06/TetherWhitePaper.pdf"
-        },
-        {
-            "name": "x",
-            "url": "https://x.com/Tether_to"
-        },
-        {
-            "name": "medium",
-            "url": "https://medium.com/tron-foundation"
-        },
-        {
-            "name": "reddit",
-            "url": "https://reddit.com/r/Tronix/"
-        }
-    ]
+    "links": [
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/mytoken"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/mytoken"
+    }
+  ]
 }
