@@ -11,12 +11,16 @@
   "tags": ["stablecoin"],
     "links": [
     {
-      "name": "twitter",
-      "url": "https://twitter.com/mytoken"
+      "name": "coingecko",
+      "url": "https://www.coingecko.com/tr/coins/tether"
     },
     {
-      "name": "github",
-      "url": "https://github.com/mytoken"
+      "name": "whitepaper",
+      "url": "https://tether.to/es/whitepaper/"
+    },
+       {
+      "name": "coinmarketcap",
+      "url": "https://coinmarketcap.com/currencies/tether/"
     }
   ]
 }
