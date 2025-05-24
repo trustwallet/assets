@@ -4,7 +4,7 @@
   "type": "BEP20",
   "decimals": 18,
   "website": "https://usdtl.finance",
-  "description": "USDT Lite (USDTL) is a BEP-20 token on the Binance Smart Chain that replicates the behavior of a stable digital currency. Designed to serve real-world utility and secure digital transactions, USDTL incorporates deflationary mechanisms and long-term usability features.",
+  "description": "USDT Lite (USDTL) is a BEP-20 token on Binance Smart Chain, designed to act as a reliable digital stable-value asset for real-world usage and smart escrow agreements. The token aims to provide ease of transfer, trustless settlement options, and programmable logic for business and legal use cases.",
   "explorer": "https://bscscan.com/token/0x90832b8536D802807288431AAd5810Ee7Ae074b7",
   "status": "active",
   "id": "0x90832b8536D802807288431AAd5810Ee7Ae074b7",
@@ -28,7 +28,6 @@
   ],
   "tags": [
     "stablecoin",
-    "collateral-backed",
     "bep20"
   ]
 }
