@@ -1,18 +1,33 @@
 {
-    "name": "USDT Lite",
-    "symbol": "USDTL",
-    "type": "BEP20",
-    "decimals": 18,
-    "status": "active",
-    "id": "0x90832b8536D802807288431AAd5810Ee7Ae074b7",
-    "website": "https://usdtl.finance",
-    "description": "USDT Lite (USDTL) is a BEP-20 stable token inspired by USDT, designed to offer escrow-backed, legally compliant, and transparent digital transactions. It combines a deflationary fee system with trust-based operations.",
-    "explorer": "https://bscscan.com/token/0x90832b8536D802807288431AAd5810Ee7Ae074b7",
-    "links": {
-        "website": "https://usdtl.finance",
-        "github": "https://github.com/chanceroulette/usdtl-token"
+  "name": "USDT Lite",
+  "symbol": "USDTL",
+  "type": "BEP20",
+  "decimals": 18,
+  "description": "USDT Lite (USDTL) is a BEP-20 stable token inspired by Tether (USDT), with built-in escrow functionality and collateral mechanisms for real-world asset transactions.",
+  "website": "https://usdtl.finance",
+  "explorer": "https://bscscan.com/token/0x90832b8536D802807288431AAd5810Ee7Ae074b7",
+  "status": "active",
+  "id": "0x90832b8536D802807288431AAd5810Ee7Ae074b7",
+  "links": [
+    {
+      "name": "website",
+      "url": "https://usdtl.finance"
     },
-    "tags": [
-        "stablecoin"
-    ]
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/USDTL_Token"
+    },
+    {
+      "name": "explorer",
+      "url": "https://bscscan.com/token/0x90832b8536D802807288431AAd5810Ee7Ae074b7"
+    },
+    {
+      "name": "dexscreener",
+      "url": "https://dexscreener.com/bsc/0x90832b8536D802807288431AAd5810Ee7Ae074b7"
+    },
+    {
+      "name": "pancakeswap",
+      "url": "https://pancakeswap.finance/swap?outputCurrency=0x90832b8536D802807288431AAd5810Ee7Ae074b7"
+    }
+  ]
 }
