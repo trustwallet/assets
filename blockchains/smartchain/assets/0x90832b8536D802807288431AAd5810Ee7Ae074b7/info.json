@@ -3,15 +3,20 @@
   "symbol": "USDTL",
   "type": "BEP20",
   "decimals": 18,
-  "description": "USDT Lite (USDTL) is a BEP-20 stable token inspired by USDT, designed with escrow and fiduciary functions for real-world asset transactions and secure digital guarantees.",
   "website": "https://usdtl.finance",
+  "description": "USDT Lite (USDTL) is a BEP-20 stable token inspired by Tether (USDT), designed for secure and transparent digital transactions. It includes escrow and collateral mechanisms to support P2P and institutional use cases, with features such as burn-on-transfer, automatic fee distribution, and time-locked wallets for promotional distributions.",
   "explorer": "https://bscscan.com/token/0x90832b8536D802807288431AAd5810Ee7Ae074b7",
   "status": "active",
   "id": "0x90832b8536D802807288431AAd5810Ee7Ae074b7",
-  "tags": [
-    "stablecoin"
-  ],
   "links": [
+    {
+      "name": "website",
+      "url": "https://usdtl.finance"
+    },
+    {
+      "name": "whitepaper",
+      "url": "https://usdtl.finance/assets/USDTL_Whitepaper_EN.pdf"
+    },
     {
       "name": "twitter",
       "url": "https://x.com/USDTL_Token"
@@ -19,6 +24,20 @@
     {
       "name": "github",
       "url": "https://github.com/chanceroulette/assets"
+    },
+    {
+      "name": "coingecko",
+      "url": "https://www.coingecko.com/en/coins/usdt-lite"
+    },
+    {
+      "name": "coinmarketcap",
+      "url": "https://coinmarketcap.com/currencies/usdt-lite"
     }
+  ],
+  "tags": [
+    "stablecoin",
+    "escrow",
+    "collateral-backed",
+    "bep20"
   ]
 }
