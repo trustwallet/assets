@@ -1,0 +1,32 @@
+{
+  "name": "USDT Lite",
+  "symbol": "USDTL",
+  "type": "BEP20",
+  "decimals": 18,
+  "website": "https://usdtl.finance",
+  "description": "USDT Lite (USDTL) is a BEP-20 stablecoin designed for real-world transactions and digital escrow. It aims to offer a reliable, transparent, and easy-to-use digital asset experience.",
+  "explorer": "https://bscscan.com/token/0x90832b8536D802807288431AAd5810Ee7Ae074b7",
+  "status": "active",
+  "id": "0x90832b8536D802807288431AAd5810Ee7Ae074b7",
+  "links": [
+    {
+      "name": "docs",
+      "url": "https://usdtl.finance"
+    },
+    {
+      "name": "whitepaper",
+      "url": "https://usdtl.finance/assets/USDTL_Whitepaper_EN.pdf"
+    },
+    {
+      "name": "twitter",
+      "url": "https://x.com/USDTL_Token"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/chanceroulette/assets"
+    }
+  ],
+  "tags": [
+    "stablecoin"
+  ]
+}
