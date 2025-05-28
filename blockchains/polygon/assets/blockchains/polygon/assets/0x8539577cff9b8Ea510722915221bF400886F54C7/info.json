@@ -1,7 +1,7 @@
 {
   "name": "GetCoin",
   "symbol": "GET",
-  "type": "coin",
+  "type": "token",
   "status": "active",
   "id": "getcoin",
   "decimals": 18,
@@ -15,8 +15,8 @@
     },
     {
       "name": "facebook",
-      "url": "https://www.facebook.com/nearbyservices1"
+      "url": "https://facebook.com/nearbyservices1"
     }
   ],
-  "tags": ["wallet", "app"]
+  "tags": ["app", "defi"]
 }
