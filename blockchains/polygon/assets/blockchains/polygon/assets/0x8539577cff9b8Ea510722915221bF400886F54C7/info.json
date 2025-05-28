@@ -8,8 +8,15 @@
   "description": "GetCoin is the official token for the GetRide rideshare platform.",
   "website": "https://getservice.ca",
   "explorer": "https://polygonscan.com/token/0x8539577cff9b8ea510722915221bf400886f54c7",
-  "links": {
-    "twitter": "https://twitter.com/GetRideApp"
-  },
-  "tags": ["transportation", "ride-sharing"]
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/GetRideApp"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/GetRideApp"
+    }
+  ],
+  "tags": ["ride-sharing", "transportation"]
 }
