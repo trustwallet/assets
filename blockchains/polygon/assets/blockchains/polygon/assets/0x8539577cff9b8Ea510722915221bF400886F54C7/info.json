@@ -1,7 +1,6 @@
-{
   "name": "GetCoin",
   "symbol": "GET",
-  "type": "token",
+  "type": "coin",
   "status": "active",
   "id": "getcoin",
   "decimals": 18,
@@ -10,13 +9,13 @@
   "explorer": "https://polygonscan.com/token/0x8539577cff9b8ea510722915221bf400886f54c7",
   "links": [
     {
-      "name": "x",
-      "url": "https://x.com/GetServiceCa1"
+      "name": "twitter",
+      "url": "https://x.com/GetServiceCa"
     },
     {
       "name": "facebook",
       "url": "https://www.facebook.com/nearbyservices1"
     }
   ],
-  "tags": ["utility", "app"]
+  "tags": ["wallet", "app"]
 }
