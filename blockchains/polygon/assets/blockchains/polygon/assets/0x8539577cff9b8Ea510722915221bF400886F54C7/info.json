@@ -1,7 +1,7 @@
 {
   "name": "GetCoin",
   "symbol": "GET",
-  "type": "polygon",
+  "type": "token",
   "status": "active",
   "id": "0x8539577cff9b8ea510722915221bf400886f54c7",
   "decimals": 18,
@@ -19,5 +19,5 @@
     }
   ],
   "tags": ["governance"],
-  "holders": "1"
+  "holders": 1
 }
