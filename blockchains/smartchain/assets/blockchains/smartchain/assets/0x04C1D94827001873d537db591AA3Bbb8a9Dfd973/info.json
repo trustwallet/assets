@@ -1,8 +1,19 @@
 {
   "name": "MASON",
   "symbol": "MASON",
+  "type": "BEP20",
   "decimals": 18,
+  "website": "https://masoncoinofficial.tilda.ws",
+  "description": "MASON is a meme token built on Binance Smart Chain, symbolizing freedom, vision, and decentralization.",
+  "explorer": "https://bscscan.com/token/0x04C1D94827001873d537db591AA3Bbb8a9Dfd973",
   "status": "active",
-  "type": "token",
-  "id": "0x04C1D94827001873d537db591AA3Bbb8a9Dfd973"
+  "id": "0x04C1D94827001873d537db591AA3Bbb8a9Dfd973",
+  "tags": [
+    "defi",
+    "meme"
+  ],
+  "links": {
+    "telegram": "https://t.me/masoncoinclub",
+    "twitter": "https://x.com/MasonCoOfficial"
+  }
 }
