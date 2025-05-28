@@ -1,7 +1,7 @@
 {
   "name": "GetCoin",
   "symbol": "GET",
-  "type": "token",
+  "type": "coin",
   "status": "active",
   "id": "getcoin",
   "decimals": 18,
@@ -18,6 +18,6 @@
       "url": "https://facebook.com/nearbyservices1"
     }
   ],
-  "tags": ["app"],
+  "tags": ["governance"],
   "holders": 1
 }
