@@ -1,7 +1,7 @@
 {
   "name": "GetCoin",
   "symbol": "GET",
-  "type": "polygon:erc20", // Still verify this specific string!
+  "type": "polygon:erc20",
   "status": "active",
   "id": "0x8539577cff9b8ea510722915221bf400886f54c7",
   "decimals": 18,
@@ -19,5 +19,5 @@
     }
   ],
   "tags": ["governance"],
-  "holders": 5 // Updated to reflect current count on Polygonscan (verify at time of submission)
+  "holders": 5
 }
