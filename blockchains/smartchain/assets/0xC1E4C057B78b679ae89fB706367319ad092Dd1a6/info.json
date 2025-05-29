@@ -8,10 +8,16 @@
     "explorer": "https://bscscan.com/token/0xC1E4C057B78b679ae89fB706367319ad092Dd1a6",
     "status": "active",
     "id": "0xC1E4C057B78b679ae89fB706367319ad092Dd1a6",
-    "links": {
-        "telegram": "https://t.me/voltinoofficial",
-        "twitter": "https://x.com/voltinotoken"
-    },
+    "links": [
+        {
+            "name": "telegram",
+            "url": "https://t.me/voltinooffical"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/voltinotoken"
+        }
+    ],
     "tags": [
         "meme",
         "deflationary",
