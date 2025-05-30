@@ -1,0 +1,28 @@
+{
+    "name": "wUSDT",
+    "type": "SPL",
+    "symbol": "wUSDT",
+    "decimals": 6,
+    "website": "https://wusdt.pro",
+    "description": "Wrapped Tether (wUSDT) is a tokenized version of Tether (USDT) designed to provide the same stable value of USDT on the Solana blockchain. With wUSDT, users can benefit from low transaction costs, fast transactions, and the scalability of the Solana network while enjoying the stability of USDT.",
+    "explorer": "https://solscan.io/token/mntaanAtJB3gfuvtVVNMjXBkCeAVU73kZf1L57zKfQs",
+    "status": "active",
+    "id": "mntaanAtJB3gfuvtVVNMjXBkCeAVU73kZf1L57zKfQs",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/wusdt-sol"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://wusdt.pro/whitepaper"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/WUSDT_SOL"
+        }
+    ],
+    "tags": [
+        "wrapped"
+    ]
+}
