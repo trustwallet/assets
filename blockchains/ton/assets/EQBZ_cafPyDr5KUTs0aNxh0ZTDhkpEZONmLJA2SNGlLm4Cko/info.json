@@ -1,21 +1,28 @@
 {
-    "name": "Resistance Dog",
-    "website": "https://www.redoton.com/",
-    "description": "Pavel Durov Founder Of The Digital Resitance Dog - $REDO is a meme coin on the TON Blockchain.",
-    "explorer": "https://tonscan.org/ru/jetton/EQBZ_cafPyDr5KUTs0aNxh0ZTDhkpEZONmLJA2SNGlLm4Cko",
-    "type": "JETTON",
-    "symbol": "REDO",
-    "decimals": 9,
-    "status": "active",
-    "id": "EQBZ_cafPyDr5KUTs0aNxh0ZTDhkpEZONmLJA2SNGlLm4Cko",
-    "links": [
-        {
-            "name": "x",
-            "url": "https://x.com/redotoken"
-        },
-        {
-            "name": "coinmarketcap",
-            "url": "https://coinmarketcap.com/ru/currencies/resistance-dog/"
-        }
-    ]
+  "name": "FazzaCoin",
+  "symbol": "FAZZA",
+  "type": "BEP20",
+  "decimals": 18,
+  "status": "active",
+  "id": "0xeD83Cc33c5cB7a10AfB19D0dAd676Ee3127956c4",
+  "website": "https://fazzacoin.carrd.co",
+  "explorer": "https://bscscan.com/token/0xeD83Cc33c5cB7a10AfB19D0dAd676Ee3127956c4",
+  "description": "FazzaCoin is a BEP-20 token designed for decentralized utility and community-powered growth on the Binance Smart Chain.",
+  "links": [
+    {
+      "name": "github",
+      "url": "https://github.com/fazzacoin"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/fazzacoin1"
+    },
+    {
+      "name": "twitter",
+      "url": "https://x.com/fazzacoin"
+    }
+  ],
+  "tags": [
+    "defi"
+  ]
 }
