@@ -3,11 +3,15 @@
   "symbol": "FAZZA",
   "decimals": 18,
   "status": "active",
-  "type": "coin",
+  "type": "token",
   "id": "0xeD83Cc33c5cB7a10AfB19D0dAd676Ee3127956c4",
   "links": [
     {
-      "name": "website",
+      "name": "explorer",
+      "url": "https://bscscan.com/token/0xeD83Cc33c5cB7a10AfB19D0dAd676Ee3127956c4"
+    },
+    {
+      "name": "coinmarketcap",
       "url": "https://fazzacoin.carrd.co"
     },
     {
@@ -22,5 +26,5 @@
   "tags": [
     "defi"
   ],
-  "description": "FazzaCoin is a BEP20 meme-based utility token designed for fun, transparency, and community-driven projects."
+  "description": "FazzaCoin is a BEP20 token developed for community engagement and utility purposes. With transparent tokenomics, no pre-sale or team allocation, and over 500 holders, the project aims to grow through community-driven initiatives."
 }
