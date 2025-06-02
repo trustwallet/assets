@@ -1,8 +1,11 @@
-{
-  "name": "Tether USD Bridged ZED20",
-  "symbol": "USDT.z",
+{{
+  "name": "TOKEN_ADI",
+  "symbol": "TOKEN_SYMBOL",
   "decimals": 18,
-  "website": "https://usdtz.carrd.co/",
-  "bscscan": "https://bscscan.com/token/0x02fa3ff9cf67735e43829c3bde295820086cec40",
-  "description": "Tether USD token bridged on ZED20 blockchain."
+  "description": "Token açıklaması (Bu token, Binance Smart Chain üzerinde geliştirilmiş yenilikçi ve güvenli bir dijital varlıktır.)",
+ ,
+  "explorer": "https://bscscan.com/token/0x217ce73896499eb4ef9bce88313613cce580f22",
+  "type": "BEP20",
+  "status": "active",
+  "id": "0x217ce73896499eb4ef9bce88313613cce580f22"
 }
