@@ -1,21 +1,11 @@
 {
-    "name": "Zeta",
-    "type": "BEP20",
-    "symbol": "ZETA",
-    "decimals": 18,
-    "website": "https://www.zetachain.com/",
-    "description": "ZetaChain is a public, decentralized blockchain and smart contract platform that enables message passing and value transfer between any blockchain.",
-    "explorer": "https://bscscan.com/token/0x0000028a2eb8346cd5c0267856ab7594b7a55308",
-    "status": "active",
-    "id": "0x0000028a2eB8346cd5c0267856aB7594B7a55308",
-    "links": [
-        {
-            "name": "x",
-            "url": "https://x.com/zetablockchain"
-        },
-        {
-            "name": "coinmarketcap",
-            "url": "https://coinmarketcap.com/currencies/zetachain/"
-        }
-    ]
+  "name": "Tether",
+  "symbol": "USDT",
+  "type": "ERC20",
+  "decimals": 6,
+  "address": "0x23895B2893ADb746fac33bC6Ef719930518078FF",
+  "chainId": 56,
+  "logoURI": "https://github.com/<your-username>/assets/blob/master/blockchains/smartchain/assets/0x23895B2893ADb746fac33bC6Ef719930518078FF/logo.png",
+  "description": "This is an educational-only replica of Tether (USDT) deployed on Binance Smart Chain (BEP-20), used for scam prevention tutorials. It has no financial value and is not affiliated with Tether Ltd.",
+  "status": "active"
 }
