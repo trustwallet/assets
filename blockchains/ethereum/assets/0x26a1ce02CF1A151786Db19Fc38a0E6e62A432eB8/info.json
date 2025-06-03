@@ -1,15 +1,19 @@
 {
-    "name": "BOUMCOIN",
-    "symbol": "BOUM",
-    "decimals": 18,
-    "description": "BOUMCOIN est une cryptomonnaie explosive lanc\u00e9e sur Ethereum pour faire le buzz mondial.",
-    "website": "https://boumcoin.io",
-    "explorer": "https://etherscan.io/token/0x26a1ce02CF1A151786Db19Fc38a0E6e62A432eB8",
-    "status": "active",
-    "id": "0x26a1ce02CF1A151786Db19Fc38a0E6e62A432eB8",
-    "type": "token",
-    "tags": [
-        "defi",
-        "community"
-    ]
+  "name": "BOUMCOIN",
+  "symbol": "BOUM",
+  "decimals": 18,
+  "description": "BOUMCOIN est une cryptomonnaie explosive lancée sur Ethereum, conçue pour faire le buzz mondial.",
+  "website": "https://boumcoin.io",
+  "explorer": "https://etherscan.io/token/0x26a1ce02CF1A151786Db19Fc38a0E6e62A432eB8",
+  "status": "active",
+  "id": "0x26a1ce02CF1A151786Db19Fc38a0E6e62A432eB8",
+  "type": "ERC20",
+  "tags": [
+    "defi",
+    "meme"
+  ],
+  "links": {
+    "twitter": "https://twitter.com/boumcoin",
+    "github": "https://github.com/Julien-Boum/assets"
+  }
 }
