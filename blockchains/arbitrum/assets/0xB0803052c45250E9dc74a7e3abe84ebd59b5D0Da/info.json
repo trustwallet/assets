@@ -1,9 +1,33 @@
-
 {
   "name": "MEDYA TOKEN",
   "symbol": "MEDYA",
   "decimals": 8,
-  "description": "MEDYA TOKEN is a decentralized utility token for Media Publishing",
+  "description": "MEDYA TOKEN is a project created to enable truly independent media to operate freely and produce content without restrictions, seeking support solely from the public.",
   "website": "https://medyatoken.com",
-  "explorer": "https://arbiscan.io/token/0xB0803052c45250E9dc74a7e3abe84ebd59b5D0Da"
+  "explorer": "https://arbiscan.io/token/0xb0803052c45250e9dc74a7e3abe84ebd59b5d0da",
+  "status": "active",
+  "id": "0xb0803052c45250e9dc74a7e3abe84ebd59b5d0da",
+  "type": "ERC-20",
+  "links": [
+    {
+      "name": "whitepaper",
+      "url": "https://medyatoken.com/whitepaper.pdf"
+    },
+    {
+      "name": "medium",
+      "url": "https://medium.com/@medyatoken"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/medyatoken"
+    },
+    {
+      "name": "x",
+      "url": "https://x.com/medyatoken"
+    },
+    {
+      "name": "youtube",
+      "url": "https://youtube.com/@medyatoken"
+    }
+  ]
 }
