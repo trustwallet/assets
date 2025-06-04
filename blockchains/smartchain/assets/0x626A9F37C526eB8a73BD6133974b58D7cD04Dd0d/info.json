@@ -1,9 +1,16 @@
 {
-  "name": "khrutcoin",
+  "name": "KHC Token",
   "symbol": "KHC",
+  "type": "token",
   "decimals": 18,
-  "description": "Official token of the KhrutCoin ecosystem.",
-  "website": "https://kruthcoin.com", 
-  "status": "active",
-  "id": "khrutcoin"
+  "chainId": 56,
+  "address": "0x626A9F37C526eB8a73BD6133974b58D7cD04Dd0d",
+  "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x626A9F37C526eB8a73BD6133974b58D7cD04Dd0d/logo.png",
+  "tags": ["defi", "token"],
+  "explorer": "https://bscscan.com/token/0x626A9F37C526eB8a73BD6133974b58D7cD04Dd0d",
+  "links": {
+    "website": "https://kruthcoin.com",
+    "telegram": "https://t.me/kruthcoin",
+    "twitter": "https://twitter.com/kruthcoin"
+  }
 }
