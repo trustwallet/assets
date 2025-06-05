@@ -1,13 +1,15 @@
 {
   "name": "Burby",
   "symbol": "BURBY",
-  "type": "coin",
+  "type": "ERC20",
   "decimals": 18,
-  "chainId": 8453,
-  "address": "0xcf5abfd64cfdd0ca6a47408e0dd03bfa3cd86be3",
   "description": "Burby is a Base Chain token created for experimental and community-driven purposes. No promises, no roadmap — just Burby.",
   "website": "https://github.com/burbytoken",
   "explorer": "https://basescan.org/token/0xcf5abfd64cfdd0ca6a47408e0dd03bfa3cd86be3",
+  "status": "active",
+  "id": "burby",
+  "chainId": 8453,
+  "address": "0xcf5abfd64cfdd0ca6a47408e0dd03bfa3cd86be3",
   "links": [
     {
       "name": "github",
@@ -18,5 +20,7 @@
       "url": "https://t.me/burbytoken"
     }
   ],
-  "tags": ["community"]
+  "tags": [
+    "defi"
+  ]
 }
