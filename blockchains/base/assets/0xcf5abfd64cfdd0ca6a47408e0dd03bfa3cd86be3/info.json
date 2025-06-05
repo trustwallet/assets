@@ -1,15 +1,14 @@
 {
-  "name": "Burby",
+  "name": "BURBY",
   "symbol": "BURBY",
-  "type": "coin",
   "decimals": 18,
+  "type": "token",
+  "address": "0xcf5abfd64cfdd0ca6a47408e0dd03bfa3cd86be3",
+  "chainId": 8453,
   "website": "https://github.com/burbytoken",
+  "description": "BURBY is a community-driven token deployed on the Base Chain. It aims to combine meme culture with on-chain transparency.",
   "explorer": "https://basescan.org/token/0xcf5abfd64cfdd0ca6a47408e0dd03bfa3cd86be3",
-  "id": "0xcf5abfd64cfdd0ca6a47408e0dd03bfa3cd86be3",
-  "status": "active",
-  "tags": [
-    "meme"
-  ],
+  "tags": ["token"],
   "links": [
     {
       "name": "github",
