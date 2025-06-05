@@ -6,10 +6,16 @@
   "description": "SMS is a utility token for the Smart Shop ecosystem.",
   "website": "https://h5.smart-shopvip.com",
   "explorer": "https://bscscan.com/token/0x8d8491818A61618E93B05C53A8197306ae5D6Df0",
-  "links": {
-      "website": "https://h5.smart-shopvip.com",
-      "telegram": "https://t.me/SmartShop9999"
-    },
+  "links": [
+      {
+        "name": "twitter",
+        "url": "https://twitter.com/yourproject"
+      },
+      {
+        "name": "telegram",
+        "url": "https://t.me/SmartShop9999"
+      }
+    ]
   "status": "active",
   "id": "0x8d8491818a61618e93b05c53a8197306ae5d6df0",
   "tags": ["defi"]
