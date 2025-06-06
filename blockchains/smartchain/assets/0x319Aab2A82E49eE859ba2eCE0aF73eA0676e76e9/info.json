@@ -4,6 +4,14 @@
   "type": "BEP20",
   "decimals": 18,
   "description": "Carbon Credit Coin (CCC) allows carbon offsetting by burning tokens backed by real carbon credits.",
-  "website": "https://carboncreditcoin.com",
-  "explorer": "https://bscscan.com/token/0x319Aab2A82E49eE859ba2eCE0aF73eA0676e76e9"
+  "website": "https://carboncreditcoin.net",
+  "explorer": "https://bscscan.com/token/0x319Aab2A82E49eE859ba2eCE0aF73eA0676e76e9",
+  "status": "active",
+  "id": "0x319Aab2A82E49eE859ba2eCE0aF73eA0676e76e9",
+  "links": {
+    "twitter": "https://twitter.com/ClimateChange_e",
+    "github": "https://github.com/ClimateChangeInstitute",
+    "telegram": "https://t.me/CarbonCreditCoin"
+  },
+  "tags": ["carbon-offset", "bep20", "climate", "environment"]
 }
