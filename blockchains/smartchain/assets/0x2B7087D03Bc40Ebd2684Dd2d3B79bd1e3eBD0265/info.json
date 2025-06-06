@@ -3,9 +3,26 @@
   "symbol": "Z72",
   "type": "BEP20",
   "decimals": 18,
-  "description": "A meme coin created for fun and cultural evolution. Born from the idea of 072World.",
+  "description": "072Coin (Z72) is a meme token born out of humor, designed to blend entertainment with Web3 culture.",
   "website": "https://072coin.com",
   "explorer": "https://bscscan.com/token/0x2B7087D03Bc40Ebd2684Dd2d3B79bd1e3eBD0265",
   "status": "active",
-  "id": "0x2B7087D03Bc40Ebd2684Dd2d3B79bd1e3eBD0265"
+  "id": "0x2B7087D03Bc40Ebd2684Dd2d3B79bd1e3eBD0265",
+  "links": [
+    {
+      "name": "website",
+      "url": "https://072coin.com"
+    },
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/072coins"
+    },
+    {
+      "name": "explorer",
+      "url": "https://bscscan.com/token/0x2B7087D03Bc40Ebd2684Dd2d3B79bd1e3eBD0265"
+    }
+  ],
+  "tags": [
+    "meme"
+  ]
 }
