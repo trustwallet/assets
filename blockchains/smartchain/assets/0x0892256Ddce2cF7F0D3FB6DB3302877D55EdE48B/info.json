@@ -1,16 +1,22 @@
 {
   "name": "MomDadX",
   "symbol": "MMDX",
-  "type": "BEP20",
+  "website": "https://momdadx.site",
+  "description": "MomDadX is an emotional yet fun meme coin born from the bond of family — because even memes need parents!",
+  "explorer": "https://bscscan.com/token/0x0892256Ddce2cF7F0D3FB6DB3302877D55EdE48B",
   "decimals": 18,
   "status": "active",
   "id": "0x0892256Ddce2cF7F0D3FB6DB3302877D55EdE48B",
-  "description": "A fun & emotional meme token combining the love of Mom & Dad. Meme meets meaning.",
-  "website": "https://momdadx.site",
-  "explorer": "https://bscscan.com/token/0x0892256Ddce2cF7F0D3FB6DB3302877D55EdE48B?a=0",
-  "links": {
-    "x": "https://x.com/momdadx",
-    "telegram": "https://t.me/momdadxcoin"
-  },
-  "tags": ["meme", "community"]
+  "type": "BEP20",
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://x.com/momdadx"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/momdadxcoin"
+    }
+  ]
 }
+
