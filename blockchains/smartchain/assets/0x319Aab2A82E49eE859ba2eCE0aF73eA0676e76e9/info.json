@@ -8,10 +8,15 @@
   "explorer": "https://bscscan.com/token/0x319Aab2A82E49eE859ba2eCE0aF73eA0676e76e9",
   "status": "active",
   "id": "0x319Aab2A82E49eE859ba2eCE0aF73eA0676e76e9",
-  "links": {
-    "twitter": "https://twitter.com/ClimateChange_e",
-    "github": "https://github.com/ClimateChangeInstitute",
-    "telegram": "https://t.me/CarbonCreditCoin"
-  },
-  "tags": ["carbon-offset", "bep20", "climate", "environment"]
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/ClimateChange_e"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/climchg/assets"
+    }
+  ],
+  "tags": ["carbon", "climate", "offset", "eco"]
 }
