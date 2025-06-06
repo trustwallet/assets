@@ -1,15 +1,24 @@
 {
   "name": "GIGA",
   "symbol": "GIGA",
+  "type": "coin",
   "decimals": 18,
-  "description": "GIGA is a meme coin on the Base network with a bold mission: Tiny Coin. GIGA Dreams.",
+  "description": "$GIGA is a community-powered token on Base driving swaps, staking, and global traction.",
   "website": "https://linktr.ee/officialgigatoken",
   "explorer": "https://basescan.org/token/0x5E2a88E5903642C5e944D31247887bB13F350Dc4",
   "status": "active",
-  "id": "giga",
-  "tags": [
-    "meme",
-    "community",
-    "base"
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/GIGAisLive"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/GIGATokenOfficial"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/OfficialGIGA"
+    }
   ]
 }
