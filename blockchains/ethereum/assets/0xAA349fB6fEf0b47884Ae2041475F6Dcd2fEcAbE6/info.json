@@ -4,24 +4,19 @@
   "decimals": 18,
   "description": "YHAUZ Token powers ADU manufaturing and ADU-as-a-service platform",
   "logoURI": "https://yhauz.io/logo.png",
-  "chainId": 1,
   "address": "0xAA349fB6fEf0b47884Ae2041475F6Dcd2fEcAbE6",
   "website": "https://yhauz.co",
   "explorer": "https://etherscan.io/token/0xAA349fB6fEf0b47884Ae2041475F6Dcd2fEcAbE6",
   "status": "active",
   "id": "0xAA349fB6fEf0b47884Ae2041475F6Dcd2fEcAbE6",
-    "tags": [
-        "yhauz"
-    ],
-    "links": [
-        
-        {
-            "name": "x",
-            "url": "https://x.com/YhauzCo"
-        },
-        {
-            "name": "telegram",
-            "url": "https://t.me/YHauz"
-        }
-    ]
+  "links": [   
+      {
+          "name": "x",
+          "url": "https://x.com/YhauzCo"
+      },
+      {
+          "name": "telegram",
+          "url": "https://t.me/YHauz"
+      }
+  ]
 }
