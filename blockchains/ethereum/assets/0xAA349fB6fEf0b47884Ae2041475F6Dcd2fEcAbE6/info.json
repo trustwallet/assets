@@ -2,7 +2,7 @@
   "name": "YHAUZ Token",
   "symbol": "YHAUZ",
   "decimals": 18,
-  "description": "YHAUZ Token powers ADU manufaturing and ADU-as-a-service platform",
+  "description": "YHAUZ Token powers ADU manufacturing and ADU-as-a-service platform.",
   "logoURI": "https://yhauz.io/logo.png",
   "address": "0xAA349fB6fEf0b47884Ae2041475F6Dcd2fEcAbE6",
   "website": "https://yhauz.co",
@@ -10,15 +10,15 @@
   "status": "active",
   "id": "0xAA349fB6fEf0b47884Ae2041475F6Dcd2fEcAbE6",
   "type": "coin",
-  "tags": ["defi", "real-estate", "adu"]
+  "tags": ["defi", "real-estate"],
   "links": [   
-      {
-          "name": "twitter",
-          "url": "https://x.com/YhauzCo"
-      },
-      {
-          "name": "telegram",
-          "url": "https://t.me/YHauz"
-      }
+    {
+      "name": "twitter",
+      "url": "https://x.com/YhauzCo"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/YHauz"
+    }
   ]
 }
