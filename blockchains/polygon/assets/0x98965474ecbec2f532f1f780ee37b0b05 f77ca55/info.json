@@ -2,7 +2,7 @@
     "name": "SuperTrust",
     "type": "POLYGON",
     "symbol": "SUT",
-    "decimals": "18",
+    "decimals": 18,
     "website": "https://supertrust.club",
     "description": "SuperTrust is a decentralized blockchain-based platform revolutionizing trust establishment in digital interactions through smart contracts and community governance",
     "explorer": "https://polygonscan.com/token/0x98965474ecbec2f532f1f780ee37b0b05 f77ca55",
@@ -19,7 +19,7 @@
         },
         {
             "name": "whitepaper",
-            "url": "https://supertrust.club/white-paper?pdf_url=https://supertrust.club/wp-content/uploads/2022/10/SUPER-TRUST_WHITEPAPERENG_ver3.0_-1.pdf"
+            "url": "https://supertrust.club/wp-content/uploads/2022/10/SUPER-TRUST_WHITEPAPERENG_ver3.0_-1.pdf"
         },
         {
             "name": "coinmarketcap",
@@ -30,5 +30,5 @@
             "url": "https://coingecko.com/en/coins/super-trust/"
         }
     ],
-    "tags": []
+    "tags": ["gamifi"]
 }
