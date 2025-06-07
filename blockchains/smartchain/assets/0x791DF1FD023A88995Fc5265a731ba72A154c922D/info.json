@@ -6,11 +6,14 @@
   "status": "active",
   "id": "0x791DF1FD023A88995Fc5265a731ba72A154c922D",
   "logoURI": "https://raw.githubusercontent.com/sendusdtflash/assets/master/blockchains/smartchain/assets/0x791DF1FD023A88995Fc5265a731ba72A154c922D/logo.png",
-  "links": {
-    "website": "https://tether.to/en/"
-  },
+  "links": [
+    {
+      "name": "Website",
+      "url": "https://tether.to/en/"
+    }
+  ],
   "tags": [
     "stablecoin"
   ],
-  "explorer": "https://bscscan.com/token/git add ."
+  "explorer": "https://bscscan.com/token/0x791DF1FD023A88995Fc5265a731ba72A154c922D"
 }
