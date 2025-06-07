@@ -1,15 +1,21 @@
 {
-    "name": "XXX",
-    "symbol": "XXX",
-    "type": "BEP20",
-    "decimals": 18,
-    "description": "XXX is a powerful BEP-20 token on BNB Chain fueling the future of decentralized power.",
-    "website": "https://cryptofuture.shop",
-    "explorer": "https://bscscan.com/token/0xA533d8e2ec519ABb9a058C1fF418d7aa86bB9630",
-    "status": "active",
-    "id": "xxx",
-    "links": {
-        "telegram": "https://t.me/xxxtoken999",
-        "email": "sainiazad92@gmail.com"
+  "name": "XXX",
+  "symbol": "XXX",
+  "type": "BEP20",
+  "decimals": 18,
+  "description": "XXX is a powerful BEP-20 token on BNB Chain fueling the future of decentralized power.",
+  "website": "https://cryptofuture.shop",
+  "explorer": "https://bscscan.com/token/0xA533d8e2ec519ABb9a058C1fF418d7aa86bB9630",
+  "status": "active",
+  "id": "xxx",
+  "links": [
+    {
+      "name": "telegram",
+      "url": "https://t.me/xxxtoken999"
+    },
+    {
+      "name": "email",
+      "url": "mailto:sainiazad92@gmail.com"
     }
+  ]
 }
