@@ -8,9 +8,9 @@
   "explorer": "https://bscscan.com/token/0x3De88AC92B901f770803b39CD2d674AFe349039D",
   "status": "active",
   "id": "0x3De88AC92B901f770803b39CD2d674AFe349039D",
-  "links": {
-    "website": "https://vyun.io",
-    "telegram": "https://t.me/vyunlab"
-  },
+  "links": [
+    { "name": "website", "url": "https://vyun.io" },
+    { "name": "telegram", "url": "https://t.me/vyunlab" }
+  ],
   "tags": ["utility", "community"]
 }
