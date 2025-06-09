@@ -1,14 +1,21 @@
 {
   "name": "OnlyCoin",
   "symbol": "OnlyCoin",
+  "type": "BEP20",
   "decimals": 18,
   "status": "active",
-  "description": "OnlyCoin (OnlyCoin) is a meme-powered utility token inspired by OnlyFans culture, offering trading and community-powered features.",
+  "id": "0xC0912c990fe376Bc74776b79BAf28456dAdDC055",
   "website": "https://dr-pampersmuffin.github.io/OnlyCoinSite/",
+  "description": "OnlyCoin (OnlyCoin) is a BEP20 token blending meme-based community engagement with future staking, NFT utilities, and DeFi use cases.",
   "explorer": "https://bscscan.com/token/0xC0912c990fe376Bc74776b79BAf28456dAdDC055",
-  "twitter": "https://twitter.com/OnlyCoinToken",
-  "telegram": "https://t.me/OnlyCoinToken",
-  "discord": "https://discord.gg/k2w9uyUf",
-  "github": "https://github.com/Dr-PampersMuffin",
-  "tags": ["meme", "community", "utility"]
+  "links": {
+    "twitter": "https://twitter.com/OnlyCoinToken",
+    "telegram": "https://t.me/OnlyCoinToken",
+    "github": "https://github.com/Dr-PampersMuffin",
+    "discord": "https://discord.gg/k2w9uyUf"
+  },
+  "tags": [
+    "defi",
+    "community"
+  ]
 }
