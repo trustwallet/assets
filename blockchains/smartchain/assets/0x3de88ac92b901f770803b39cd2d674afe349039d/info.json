@@ -1,10 +1,16 @@
 {
   "name": "VYUN Token",
   "symbol": "VYUN",
+  "type": "token",
   "decimals": 18,
   "description": "Официальный токен бренда ВЬЮН для экосистемы vyun.io",
   "website": "https://vyun.io",
   "explorer": "https://bscscan.com/token/0x3De88AC92B901f770803b39CD2d674AFe349039D",
   "status": "active",
-  "id": "0x3De88AC92B901f770803b39CD2d674AFe349039D"
+  "id": "0x3De88AC92B901f770803b39CD2d674AFe349039D",
+  "links": {
+    "website": "https://vyun.io",
+    "telegram": "https://t.me/vyunlab"
+  },
+  "tags": ["utility", "community"]
 }
