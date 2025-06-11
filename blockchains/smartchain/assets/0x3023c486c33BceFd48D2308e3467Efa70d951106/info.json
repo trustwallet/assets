@@ -9,8 +9,14 @@
   "explorer": "https://bscscan.com",
   "status": "active",
   "tags": ["deflationary", "bep20"],
-  "links": {
-    "twitter": "https://twitter.com/profia_token",
-    "telegram": "https://t.me/profia_token"
-  }
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/profia_token"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/profia_token"
+    }
+  ]
 }
