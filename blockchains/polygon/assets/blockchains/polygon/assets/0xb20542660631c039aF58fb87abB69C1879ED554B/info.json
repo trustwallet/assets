@@ -1,10 +1,11 @@
-﻿{
+{
   "name": "Adocoin",
-  "symbol": "ADO",
+  "symbol": "ADOC",
+  "type": "ERC20",
   "decimals": 18,
-  "description": "Adocoin is a utility token designed to support and power future community-driven decentralized projects.",
+  "description": "Adocoin is a decentralized token for community use.",
   "website": "https://adocoin.org",
   "explorer": "https://polygonscan.com/token/0xb20542660631c039aF58fb87abB69C1879ED554B",
   "status": "active",
-  "id": "0xb20542660631c039aF58fb87abB69C1879ED554B"
+  "id": "adocoin"
 }
