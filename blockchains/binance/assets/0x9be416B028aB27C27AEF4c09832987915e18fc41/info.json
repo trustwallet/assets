@@ -9,8 +9,14 @@
   "status": "active",
   "id": "0x9be416B028aB27C27AEF4c09832987915e18fc41",
   "links": [
-    "https://www.itsmgc31.online",
-    "https://github.com/itsmgc31"
+    {
+      "name": "website",
+      "url": "https://www.itsmgc31.online"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/itsmgc31"
+    }
   ],
   "tags": [
     "cryptocurrency"
