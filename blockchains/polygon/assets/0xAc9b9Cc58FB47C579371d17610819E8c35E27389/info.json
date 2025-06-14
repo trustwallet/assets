@@ -5,8 +5,9 @@
   "status": "active",
   "id": "0xAc9b9Cc58FB47C579371d17610819E8c35E27389",
   "type": "token",
-  "links": {
-    "website": "https://usdpremium.example.com",
-    "twitter": "https://twitter.com/usdpremium"
-  }
+  "links": [
+  "https://usdpremium.example.com",
+  "https://twitter.com/usdpremium"
+]
+
 }
