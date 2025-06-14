@@ -5,12 +5,12 @@
   "symbol": "OnlyCoin",
   "decimals": 18,
   "status": "active",
-  "links": {
-    "website": "https://dr-pampersmuffin.github.io/OnlyCoinSite/",
-    "twitter": "https://twitter.com/OnlyCoinToken",
-    "telegram": "https://t.me/OnlyCoinToken",
-    "github": "https://github.com/Dr-PampersMuffin"
-  },
+  "links": [
+    { "name": "website", "url": "https://dr-pampersmuffin.github.io/OnlyCoinSite/" },
+    { "name": "twitter", "url": "https://twitter.com/OnlyCoinToken" },
+    { "name": "telegram", "url": "https://t.me/OnlyCoinToken" },
+    { "name": "github", "url": "https://github.com/Dr-PampersMuffin" }
+  ],
   "tags": ["defi", "binance-smart-chain"],
   "explorer": "https://bscscan.com/token/0xC0912c990fe376Bc74776b79BAf28456dAdDC055",
   "description": "OnlyCoin is a DeFi token blending accessibility with influencer-driven crypto culture. LP locked until Sept 2025. Fair launch on BSC."
