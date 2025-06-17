@@ -1,10 +1,16 @@
 {
   "name": "PindCoin",
   "symbol": "PIND",
+  "type": "token",
   "decimals": 18,
-  "description": "PindCoin is a community-powered meme coin inspired by Punjab’s rural culture and simplicity.",
+  "description": "PindCoin brings the spirit of Punjab’s rural culture and simplicity to Web3.",
   "website": "https://www.pindcoin.com",
   "explorer": "https://bscscan.com/token/0x7fd121dae5daeb1475aedf96456156905057770d",
   "status": "active",
-  "id": "pindcoin"
+  "id": "0x7fd121dae5daeb1475aedf96456156905057770d",
+  "links": {
+    "website": "https://www.pindcoin.com",
+    "telegram": "https://t.me/pindcoin"
+  },
+  "tags": ["meme", "community"]
 }
