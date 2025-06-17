@@ -1,7 +1,16 @@
 {
   "name": "BibiCoin",
   "symbol": "BIBI",
+  "type": "BEP20",
   "decimals": 18,
   "status": "active",
-  "id": "0x4B534dC1f97FC187F2174f94A2E4BEDFa488a677"
+  "description": "BibiCoin is a meme token inspired by Israeli PM Netanyahu — bringing politics and memes to the blockchain.",
+  "website": "https://bibicoin-placeholder.site", 
+  "explorer": "https://bscscan.com/token/0x4B534dC1f97FC187F2174f94A2E4BEDFa488a677",
+  "id": "0x4B534dC1f97FC187F2174f94A2E4BEDFa488a677",
+  "links": {
+    "twitter": "https://twitter.com/placeholder",
+    "telegram": "https://t.me/placeholdergroup"
+  },
+  "tags": ["meme", "bep20"]
 }
