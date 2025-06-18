@@ -1,11 +1,20 @@
 {
-  "name":        "Akzumite",
-  "symbol":      "AKZ",
-  "type":        "BEP20",
-  "decimals":    18,
-  "description": "Akzumite is the deflationary token powering the Akzu ecosystem.",
-  "website":     "https://www.akzumite.com/",
-  "explorer":    "https://bscscan.com/token/0x8e29bf81cd0e0645d7565db2311bf3bfbc3cdfde",
-  "status":      "active",
-  "id":          "0x8e29bf81cd0e0645d7565db2311bf3bfbc3cdfde"
+  "name":       "Akzumite",
+  "symbol":     "AKZ",
+  "type":       "BEP20",
+  "decimals":   18,
+  "description":"Akzumite is the deflationary token powering the Akzu ecosystem.",
+  
+  "website":    "https://akzumite.com",
+  "explorer":   "https://bscscan.com/token/0x8e29Bf81Cd0E0645d7565Db2311bf3BfBc3CdFDe",
+  "status":     "active",
+  "id":         "0x8e29Bf81Cd0E0645d7565Db2311bf3BfBc3CdFDe",
+
+  "links": [
+    { "name": "website",  "url": "https://akzumite.com" },
+    { "name": "explorer", "url": "https://bscscan.com/token/0x8e29Bf81Cd0E0645d7565Db2311bf3BfBc3CdFDe" }
+  ],
+  "tags": [
+    "deflationary"
+  ]
 }
