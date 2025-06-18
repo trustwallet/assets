@@ -11,9 +11,13 @@
   "id":         "0x8e29Bf81Cd0E0645d7565Db2311bf3BfBc3CdFDe",
 
   "links": [
-    { "name": "website",  "url": "https://akzumite.com" },
-    { "name": "explorer", "url": "https://bscscan.com/token/0x8e29Bf81Cd0E0645d7565Db2311bf3BfBc3CdFDe" }
-  ],
+  { "name": "website", "url": "https://akzumite.com" },
+  { "name": "telegram", "url": "https://t.me/akzumite" },
+  { "name": "twitter", "url": "https://x.com/akzumite" },
+  { "name": "instagram", "url": "https://www.instagram.com/akzumite" },
+  { "name": "facebook", "url": "https://www.facebook.com/akzumite" },
+  { "name": "youtube", "url": "https://www.youtube.com/@akzumite" },
+],
   "tags": [
     "deflationary"
   ]
