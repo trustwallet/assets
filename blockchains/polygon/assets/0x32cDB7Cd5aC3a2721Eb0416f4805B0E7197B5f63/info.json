@@ -8,7 +8,29 @@
   "description": "SLICEDBREAD is the internet’s bread. A meme-fueled, carb-loaded ERC-20 token built on Polygon for wallets that like it hot and toasted.",
   "website": "https://x.com/breadofinternet",
   "explorer": "https://etherscan.io/token/0x32cDB7Cd5aC3a2721Eb0416f4805B0E7197B5f63",
-  "twitter": "https://x.com/breadofinternet",
-  "github": "https://github.com/SlicedBreadcoin",
-  "tags": ["token"]
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://x.com/breadofinternet"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/SlicedBreadcoin"
+    },
+    {
+      "name": "dex",
+      "url": "https://app.uniswap.org/swap?chain=polygon&inputCurrency=NATIVE&outputCurrency=0x32cDB7Cd5aC3a2721Eb0416f4805B0E7197B5f63"
+    },
+    {
+      "name": "dex",
+      "url": "https://dapp.quickswap.exchange/swap/best/ETH/0x32cDB7Cd5aC3a2721Eb0416f4805B0E7197B5f63"
+    },
+    {
+      "name": "dex",
+      "url": "https://www.sushi.com/polygon/swap?token0=NATIVE&token1=0x32cDB7Cd5aC3a2721Eb0416f4805B0E7197B5f63"
+    }
+  ],
+  "tags": [
+    "defi"
+  ]
 }
