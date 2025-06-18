@@ -3,5 +3,20 @@
   "symbol": "CCC",
   "decimals": 18,
   "website": "https://carboncreditcoin.net",
-  "description": "Carbon Credit Coin (CCC) tokenizes carbon credits on BNB Chain for renewable energy projects, verified by UCR."
+  "description": "Carbon Credit Coin (CCC) tokenizes carbon credits on BNB Chain for renewable energy projects, verified by UCR.",
+  "type": "BEP20",
+  "id": "CCC-0x0BD1d8ad0fb9435dd23018b2B17b24147D6b2c7E",
+  "explorer": "https://bscscan.com/token/0x0BD1d8ad0fb9435dd23018b2B17b24147D6b2c7E",
+  "status": "active",
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://x.com/ClimateChange_e"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/climatechangeinstitute"
+    }
+  ],
+  "tags": ["defi", "carbon-credit"]
 }
