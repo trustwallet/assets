@@ -1,22 +1,13 @@
 {
+  "id": "0x32cdb7cd5ac3a2721eb0416f4805b0e7197b5f63",
   "name": "Sliced Bread Coin",
   "symbol": "SLICEDBREAD",
+  "type": "ERC20",
   "decimals": 18,
   "status": "active",
-  "id": "slicedbread",
-  "type": "ERC20",
   "description": "SLICEDBREAD is the internet’s bread. A meme-fueled, carb-loaded ERC-20 token built on Polygon for wallets that like it hot and toasted.",
-  "explorer": "https://etherscan.io/token/0x32cDB7Cd5aC3a2721Eb0416f4805B0E7197B5f63",
   "website": "https://x.com/breadofinternet",
-  "links": [
-    {
-      "name": "twitter",
-      "url": "https://x.com/breadofinternet"
-    },
-    {
-      "name": "github",
-      "url": "https://github.com/Slicedbreadcoin"
-    }
-  ],
-  "tags": ["meme"]
+  "explorer": "https://etherscan.io/token/0x32cdb7cd5ac3a2721eb0416f4805b0e7197b5f63",
+  "twitter": "https://x.com/breadofinternet",
+  "github": "https://github.com/SlicedBreadcoin"
 }
