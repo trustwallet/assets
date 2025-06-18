@@ -1,3 +1,4 @@
+
 {
   "name": "Sliced Bread Coin",
   "symbol": "SLICEDBREAD",
@@ -6,23 +7,17 @@
   "id": "0x32cDB7Cd5aC3a2721Eb0416f4805B0E7197B5f63",
   "description": "SLICEDBREAD is the internet’s bread. A meme-fueled, carb-loaded ERC-20 token built on Polygon for wallets that like it hot and toasted.",
   "website": "https://x.com/breadofinternet",
-  "twitter": "https://x.com/breadofinternet",
-  "github": "https://github.com/Slicedbreadcoin",
-  "explorer": "https://polygonscan.com/token/0x32cDB7Cd5aC3a2721Eb0416f4805B0E7197B5f63",
+  "explorer": "https://etherscan.io/token/0x32cDB7Cd5aC3a2721Eb0416f4805B0E7197B5f63",
   "type": "ERC20",
-  "tags": ["defi"],
   "links": [
     {
-      "name": "QuickSwap",
-      "url": "https://dapp.quickswap.exchange/swap/best/ETH/0x32cDB7Cd5aC3a2721Eb0416f4805B0E7197B5f63"
+      "name": "twitter",
+      "url": "https://x.com/breadofinternet"
     },
     {
-      "name": "Uniswap",
-      "url": "https://app.uniswap.org/swap?chain=polygon&inputCurrency=NATIVE&outputCurrency=0x32cdb7cd5ac3a2721eb0416f4805b0e7197b5f63"
-    },
-    {
-      "name": "SushiSwap",
-      "url": "https://www.sushi.com/polygon/swap?token0=NATIVE&token1=0x32cDB7Cd5aC3a2721Eb0416f4805B0E7197B5f63"
+      "name": "github",
+      "url": "https://github.com/Slicedbreadcoin"
     }
-  ]
+  ],
+  "tags": ["defi"]
 }
