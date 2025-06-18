@@ -3,14 +3,15 @@
   "symbol": "SFOGLY",
   "type": "ERC20",
   "decimals": 18,
-  "description": "Sfogliatelle ($SFOGLY) is a meme token inspired by the sweet tradition of Naples, aiming to bring flavor to the Ethereum blockchain. A fun, community-driven project that rewards holders with delicious vibes.",
+  "description": "Sfogliatelle ($SFOGLY) is a meme token inspired by the Neapolitan pastry, baked on the Ethereum blockchain to spread joy, flavor, and fun. Community-driven and sweetly deflationary.",
   "website": "https://sfogly.eth.limo",
-  "explorer": "https://etherscan.io/token/0xb96bcb20f2a549f682d7c0b31c80a24110dd8813"
-  "status": "active",
-  "id": "0xb96bcb20f2a549f682d7c0b31c80a24110dd8813"
+  "explorer": "https://etherscan.io/token/0xb96bcb20f2a549f682d7c0b31c80a24110dd8813",
+  "id": "0xb96bcb20f2a549f682d7c0b31c80a24110dd8813",
+  "tags": ["meme", "community", "defi"],
+  "links": {
+    "twitter": "https://twitter.com/sfoglytoken",
+    "github": "https://github.com/staniphone",
+    "telegram": "https://t.me/sfogly"
+  },
+  "status": "active"
 }
-"links": {
-  "twitter": "https://twitter.com/staniphone",
-  "github": "https://github.com/staniphone",
-}
-
