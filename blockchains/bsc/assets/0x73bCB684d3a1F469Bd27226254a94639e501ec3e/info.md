@@ -1,6 +1,6 @@
-# BTCBR Proxy Token
+# Tether USD Bridged ZED20
 
-## BTCBR
+## USDT.z
 
 BTCBR Proxy Token with advanced features including fees, pausing, and liquidity management.
 
@@ -10,7 +10,7 @@ BTCBR Proxy Token with advanced features including fees, pausing, and liquidity 
 - Telegram: https://t.me/usdtzcaptalize
 
 ### Contract
-- Address: `0x73bCB684d3a1F469Bd27226254a94639e501ec3e`
+- Address: `0x4BE35Ec329343d7d9F548d42B0F8c17FFfe07db4`
 - Decimals: 18
 - Type: BEP20
 
