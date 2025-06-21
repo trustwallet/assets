@@ -6,10 +6,16 @@
   "description": "SOPNOX is a decentralized token designed to promote innovation and community-driven development.",
   "website": "https://sopnox.rf.gd",
   "explorer": "https://bscscan.com/token/0x2Ab20a2e99469e7EC07e5271fe33B07DA4705Bea",
-  "links": {
-    "telegram": "https://t.me/sopnox",
-    "website": "https://sopnox.rf.gd"
-  },
+  "links": [
+    {
+      "name": "telegram",
+      "url": "https://t.me/sopnox"
+    },
+    {
+      "name": "website",
+      "url": "https://sopnox.rf.gd"
+    }
+  ],
   "tags": [
     "defi"
   ]
