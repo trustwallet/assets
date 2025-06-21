@@ -6,27 +6,23 @@
     "explorer": "https://basescan.org/token/0x7F5cfd4Dd6FA71289e60258569945b5f2d00917e",
     "decimals": 18,
     "status": "active",
-    "id": "0x7F5cfd4Dd6FA71289e60258569945b5f2d00917e",
+    "id": "0x7F5cfd4Dd6fa71289e60258569945b5f2d00917e",
     "type": "BASE",
+    "tags": [
+        "ai"
+    ],
     "links": [
         {
             "name": "github",
             "url": "https://github.com/velichko224/pdfmagik"
         },
         {
-            "name": "telegram_news",
+            "name": "telegram",
             "url": "https://t.me/pdfmagikbot_news"
         },
         {
-            "name": "telegram",
-            "url": "https://t.me/+jO9X-yyU3uM1YjU1"
-        },
-        {
-            "name": "telegram",
+            "name": "bot",
             "url": "https://t.me/PDFMagikBot"
         }
-    ],
-    "tags": [
-        "utility-token"
     ]
 }
