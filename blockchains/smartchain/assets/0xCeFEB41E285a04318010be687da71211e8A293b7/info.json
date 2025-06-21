@@ -3,10 +3,20 @@
   "symbol": "FRGX",
   "type": "BEP20",
   "decimals": 18,
-  "description": "FROGEX is a meme token created for fun, community and web3 virality.",
+  "description": "FROGEX is a meme token created for fun, community, and web3 virality.",
   "website": "https://frogexcrypto.com",
+  "email": "contact@frogexcrypto.com",
   "explorer": "https://bscscan.com/token/0xCeFEB41E285a04318010be687da71211e8A293b7",
+  "socials": {
+    "telegram": "https://t.me/FRGX_Finance",
+    "twitter": "https://twitter.com/FROGEXFinance"
+  },
   "status": "active",
   "id": "0xCeFEB41E285a04318010be687da71211e8A293b7",
-  "logoURI": "logo.png"
+  "tags": [
+    "memes",
+    "defi",
+    "community",
+    "governance"
+  ]
 }
