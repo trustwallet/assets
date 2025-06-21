@@ -1,10 +1,17 @@
 {
   "name": "Middle East Shadow War",
   "symbol": "MEWS",
+  "type": "BEP20",
   "decimals": 18,
-  "description": "Token MEWS - Middle East Shadow War",
+  "description": "Middle East Shadow War (MEWS) is a decentralized token project on BNB Smart Chain, reflecting the dynamics of geopolitical influence through blockchain.",
   "website": "https://middle-east-shadow-war.web.app/",
   "explorer": "https://bscscan.com/token/0x1dded4e73f03cc8bee224dbbcc400b701959c1d1",
   "status": "active",
-  "id": "0x1dded4e73f03cc8bee224dbbcc400b701959c1d1"
+  "id": "0x1dded4e73f03cc8bee224dbbcc400b701959c1d1",
+  "links": {
+    "telegram": "https://t.me/mewsmiddleeast",
+    "twitter": "https://x.com/MESW_MiddleEast",
+    "github": "https://gitlab.com/yourusername/mews-contracts"
+  },
+  "tags": ["defi", "bep20", "token"]
 }
