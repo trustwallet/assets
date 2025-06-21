@@ -8,10 +8,10 @@
   "explorer": "https://bscscan.com/token/0x1dded4e73f03cc8bee224dbbcc400b701959c1d1",
   "status": "active",
   "id": "0x1dded4e73f03cc8bee224dbbcc400b701959c1d1",
-  "links": {
-    "telegram": "https://t.me/mewsmiddleeast",
-    "twitter": "https://x.com/MESW_MiddleEast",
-    "github": "https://gitlab.com/yourusername/mews-contracts"
-  },
+  "links": [
+    "https://t.me/mewsmiddleeast",
+    "https://x.com/MESW_MiddleEast",
+    "https://gitlab.com/yourusername/mews-contracts"
+  ],
   "tags": ["defi", "bep20", "token"]
 }
