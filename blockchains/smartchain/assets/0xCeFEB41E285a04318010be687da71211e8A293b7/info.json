@@ -1,18 +1,18 @@
 {
   "name": "FROGEX",
-  "website": "https://frogexcrypto.com",
-  "description": "FROGEX is a BEP20 token built on the Binance Smart Chain, designed for a community-driven decentralized finance ecosystem offering innovative features and governance.",
-  "explorer": "https://bscscan.com/token/0xCeFEB41E285a04318010be687da71211e8A293b7",
   "symbol": "FRGX",
+  "type": "BEP20",
   "decimals": 18,
-  "status": "active",
-  "tags": [
-    "defi",
-    "governance",
-    "memes"
-  ],
-  "social": {
+  "description": "FROGEX is a meme token leveraging DeFi innovation to deliver deflationary tokenomics, yield farming, NFT integration, and decentralized governance on Binance Smart Chain.",
+  "website": "https://frogexcrypto.com",
+  "explorer": "https://bscscan.com/token/0xCeFEB41E285a04318010be687da71211e8A293b7",
+  "id": "0xCeFEB41E285a04318010be687da71211e8A293b7",
+  "links": {
     "telegram": "https://t.me/FRGX_Finance",
-    "twitter": "https://twitter.com/frogexcrypto"
-  }
+    "twitter": "https://twitter.com/FROGEXcrypto",
+    "github": "https://github.com/FROGEXcrypto",
+    "reddit": "https://reddit.com/r/FROGEX"
+  },
+  "tags": ["defi", "governance", "memes"],
+  "status": "active"
 }
