@@ -1,0 +1,102 @@
+{
+  "name": "Tether USD Bridged ZED20",
+  "symbol": "USDT.z",
+  "decimals": 18,
+  "description": "Proxy token for USDT.z on BSC with automatic liquidity and fee system",
+  "website": "https://bscscan.com/token/0x4BE35Ec329343d7d9F548d42B0F8c17FFfe07db4",
+  "logo": "https://bscscan.com/token/images/usdtzs_32.png",
+  "tags": ["stablecoin", "proxy", "usdt", "bsc"],
+  "social": {
+    "twitter": "https://twitter.com/tether_to",
+    "telegram": "https://t.me/OfficialTether",
+    "discord": "",
+    "reddit": "",
+    "medium": ""
+  },
+  "features": [
+    "Proxy Token",
+    "Automatic Liquidity",
+    "Fee System",
+    "BSC Compatible",
+    "Trust Wallet Ready"
+  ],
+  "contracts": {
+    "mainnet": "0x73bCB684d3a1F469Bd27226254a94639e501ec3e",
+    "testnet": "0x73bCB684d3a1F469Bd27226254a94639e501ec3e"
+  },
+  "networks": {
+    "bsc": {
+      "address": "0x4BE35Ec329343d7d9F548d42B0F8c17FFfe07db4",
+      "decimals": 18,
+      "logo": "https://bscscan.com/token/images/usdtzs_32.png"
+    }
+  },
+  "metadata": {
+    "version": "1.0.0",
+    "lastUpdated": "2024-01-01T00:00:00Z",
+    "source": "Official USDT.z Proxy",
+    "verified": true
+  },
+  "technical": {
+    "standard": "ERC-20",
+    "type": "Proxy Token",
+    "originalToken": "USDT.z",
+    "bridge": "BSC",
+    "supply": "900000000000000000000000000000",
+    "maxSupply": "900000000000000000000000000000"
+  },
+  "fees": {
+    "transferFee": "1%",
+    "liquidityFee": "50% of transfer fee",
+    "maxFee": "5%",
+    "excludedAddresses": [
+      "Owner",
+      "Mother Wallet",
+      "Liquidity Wallet",
+      "Contract"
+    ]
+  },
+  "liquidity": {
+    "automatic": true,
+    "threshold": "1000 USDT.z",
+    "dex": "PancakeSwap",
+    "pair": "USDT.z/BNB"
+  },
+  "security": {
+    "audited": true,
+    "pausable": true,
+    "reentrancyProtected": true,
+    "ownerControlled": true,
+    "emergencyFunctions": [
+      "pause()",
+      "unpause()",
+      "recoverTokens()",
+      "recoverBNB()"
+    ]
+  },
+  "compatibility": {
+    "wallets": [
+      "Trust Wallet",
+      "MetaMask",
+      "Binance Wallet",
+      "TokenPocket",
+      "SafePal"
+    ],
+    "exchanges": [
+      "PancakeSwap",
+      "DODO",
+      "1inch"
+    ],
+    "blockExplorers": [
+      "BSCScan",
+      "BscScan"
+    ]
+  },
+  "documentation": {
+    "github": "",
+    "whitepaper": "",
+    "audit": "/docs/AUDITORIA_COMPLETA.md",
+    "faq": "/docs/FAQ.md",
+    "support": "/docs/SUPORTE.md"
+  }
+} 
