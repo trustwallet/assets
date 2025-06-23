@@ -5,22 +5,24 @@
   "status": "active",
   "id": "0xCFE781c128008c35888f433eB1ecdB5d55aC62cd",
   "platform": {
-    "name": "Binance Smart Chain",
+    "name": "BSC",
     "token_address": "0xCFE781c128008c35888f433eB1ecdB5d55aC62cd"
   },
   "type": "BEP20",
-  "description": "Heba is a long-term savings token with fixed supply.",
-  "website": "https://lesteqlal48.github.io/assets/",
+  "description": "Heba Token is designed as a long-term savings asset for the future generation.",
+  "website": "https://hebatoken.netlify.app",
   "explorer": "https://bscscan.com/token/0xCFE781c128008c35888f433eB1ecdB5d55aC62cd",
-  "tags": ["defi"],
+  "tags": [
+    "defi"
+  ],
   "links": [
-    {
-      "name": "github",
-      "url": "https://github.com/lesteqlal48"
-    },
     {
       "name": "twitter",
       "url": "https://x.com/HebaToken"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/lesteqlal48/assets"
     }
   ]
 }
