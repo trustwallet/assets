@@ -3,9 +3,12 @@
   "symbol": "USDU",
   "type": "BEP20",
   "decimals": 6,
-  "description": "USDU is a decentralized stablecoin pegged to 1 USD. Powered by BEP-20 blockchain.",
+  "description": "USDU is a decentralized BEP-20 stablecoin designed to mirror the value of 1 US dollar.",
   "website": "https://usdu.online",
-  "explorer": "https://bscscan.com/token/0xb7a23876bAFA7223D256cAB41a2bf109B26A6018",
+  "explorer": "https://bscscan.com/token/",
+  "status": "active",
+  "id": "usdu",
+  "tags": ["stablecoin"],
   "links": [
     {
       "name": "twitter",
@@ -15,9 +18,5 @@
       "name": "telegram",
       "url": "https://t.me/USDUcommunity"
     }
-  ],
-  "tags": [
-    "stablecoin",
-    "payments"
   ]
 }
