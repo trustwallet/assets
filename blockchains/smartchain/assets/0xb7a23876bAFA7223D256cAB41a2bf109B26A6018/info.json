@@ -3,24 +3,13 @@
   "symbol": "USDU",
   "type": "BEP20",
   "decimals": 6,
-  "description": "USDU is a decentralized stablecoin operating on BNB Smart Chain with 1 USDU = 1 USD. Designed for speed, stability and global utility.",
   "website": "https://usdu.online",
-  "explorer": "https://bscscan.com/token/0xb7a23876bafa7223d256cab41a2bf109b26a6018",
+  "description": "USDU is a decentralized BEP-20 stablecoin designed to mirror the value of 1 US dollar. Built for stability, speed, and global access.",
+  "explorer": "https://bscscan.com/token/0xb7a23876bAFA7223D256cAB41a2bf109B26A6018",
   "status": "active",
-  "id": "0xb7a23876bAFA7223D256cAB41a2bf109B26A6018",
-  "links": [
-    {
-      "name": "twitter",
-      "url": "https://x.com/USDUofficial"
-    },
-    {
-      "name": "telegram",
-      "url": "https://t.me/USDUcommunity"
-    },
-    {
-      "name": "website",
-      "url": "https://usdu.online"
-    }
-  ],
-  "tags": ["stablecoin", "usd", "payments"]
+  "links": {
+    "twitter": "https://x.com/USDUofficial",
+    "telegram": "https://t.me/USDUcommunity"
+  },
+  "tags": ["stablecoin", "payments"]
 }
