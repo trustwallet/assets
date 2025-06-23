@@ -3,17 +3,26 @@
   "symbol": "HBA",
   "decimals": 18,
   "status": "active",
-  "id": "0xCFE781c128008c35888f433eB1ecdB5d55aC62cd",
+  "id": "0xcfe781c128008c35888f433eb1ecdb5d55ac62cd",
   "platform": {
     "name": "Binance Smart Chain",
-    "token_address": "0xCFE781c128008c35888f433eB1ecdB5d55aC62cd"
+    "token_address": "0xcfe781c128008c35888f433eb1ecdb5d55ac62cd"
   },
-  "type": "coin",
-  "description": "Heba is a long-term savings token with burn functionality and fixed supply.",
-  "website": "",
-  "explorer": "https://bscscan.com/token/0xCFE781c128008c35888f433eB1ecdB5d55aC62cd",
+  "type": "token",
+  "description": "Heba is a long-term savings token with fixed supply.",
+  "website": "https://lesteqlal48.github.io/assets/",
+  "explorer": "https://bscscan.com/token/0xcfe781c128008c35888f433eb1ecdb5d55ac62cd",
   "tags": [
-    "burnable",
     "fixed supply"
+  ],
+  "links": [
+    {
+      "name": "github",
+      "url": "https://github.com/lesteqlal48"
+    },
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/HebaToken"
+    }
   ]
 }
