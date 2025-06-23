@@ -1,0 +1,32 @@
+{
+    "name": "TeleBTC",
+    "type": "POLYGON",
+    "symbol": "TELEBTC",
+    "decimals": 8,
+    "website": "https://teleswap.xyz/",
+    "description": "TeleBTC is a decentralized wrapped Bitcoin bringing BTC into DeFi. It can be minted and burned permissionlessly by users. Each TeleBTC is backed by 1 BTC plus extra collateral, making it a secure wrapped asset.",
+    "explorer": "https://polygonscan.com/token/0x3BF668Fe1ec79a84cA8481CEAD5dbb30d61cC685",
+    "status": "active",
+    "id": "0x3BF668Fe1ec79a84cA8481CEAD5dbb30d61cC685",
+    "links": [
+        {
+            "name": "docs",
+            "url": "https://docs.teleswap.xyz/"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/teleportdao"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/telebtc-new/"
+        },
+        {
+            "name": "blog",
+            "url": "https://blog.teleswap.xyz/"
+        }
+    ],
+    "tags": [
+        "wrapped"
+    ]
+}
