@@ -10,8 +10,14 @@
   "id": "0x0121E51dA5630d3f4AC5c9E92732F4a1eD201E4E",
   "email": "info@alecplus.tech",
   "links": [
-    "https://www.linkedin.com/in/alec-plus-119248371",
-    "https://www.instagram.com/alec.plus"
+    {
+      "name": "linkedin",
+      "url": "https://www.linkedin.com/in/alec-plus-119248371"
+    },
+    {
+      "name": "instagram",
+      "url": "https://www.instagram.com/alec.plus"
+    }
   ],
   "tags": ["token"]
 }
