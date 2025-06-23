@@ -1,25 +1,11 @@
 {
-  "name": "KMNO Token",
+  "name": "KMNO",
   "symbol": "KMNO",
-  "type": "BEP20",
   "decimals": 18,
-  "description": "KMNO is a Binance Smart Chain token that powers DeFi, DEX and community tools.",
-  "website": "https://t.me/kmnotoken",
-  "explorer": "https://bscscan.com/token/0xb59693d72f6374F82b0d1B530C1d3be84Fe3615f",
+  "description": "KMNO Token is a decentralized finance token built on Binance Smart Chain (BEP20).",
+  "website": "https://kmnotoken.com",
+  "explorer": "https://bscscan.com/token/0xb59693d72f6374f82b0d1B530C1d3be84Fe3615f",
   "status": "active",
-  "id": "0xb59693d72f6374F82b0d1B530C1d3be84Fe3615f",
-  "links": [
-    {
-      "name": "twitter",
-      "url": "https://x.com/kmnotoken"
-    },
-    {
-      "name": "telegram",
-      "url": "https://t.me/kmnotoken"
-    },
-    {
-      "name": "github",
-      "url": "https://github.com/kmnotoken"
-    }
-  ]
+  "id": "0xb59693d72f6374f82b0d1B530C1d3be84Fe3615f",
+  "tags": ["defi"]
 }
