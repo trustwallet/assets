@@ -1,7 +1,15 @@
 {
+  "id": "0xd652a86a8a88fa6fa92c17ca8b3114286aebddda",
+  "type": "ERC20",
   "name": "IIIISOUL Token",
   "symbol": "IIIISOUL",
   "decimals": 18,
-  "description": "1 000 000 000 IIIISOUL on Abstract Mainnet",
-  "website": "https://cookierabinowitz.com"
+  "explorer": "https://mainnet.abscan.org/token/0xd652a86a8a88fa6fa92c17ca8b3114286aebddda",
+  "status": "active",
+  "links": {
+    "website": "https://cookierabinowitz.com",
+    "twitter": "https://twitter.com/jsixcsix"
+  },
+  "tags": ["utility"],
+  "holders": 42
 }
