@@ -5,8 +5,14 @@
   "status": "active",
   "type": "token",
   "id": "0x62ca1d41a799fb40cffc8d609afc1e6215002057",
-  "links": {
-    "website": "https://tok.com.pt/pt/home/",
-    "facebook": "https://www.facebook.com/plataformatok"
-  }
+  "links": [
+    {
+      "name": "website",
+      "url": "https://tok.com.pt/pt/home/"
+    },
+    {
+      "name": "facebook",
+      "url": "https://www.facebook.com/plataformatok"
+    }
+  ]
 }
