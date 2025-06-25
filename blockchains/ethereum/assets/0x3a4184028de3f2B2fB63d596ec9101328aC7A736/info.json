@@ -1,12 +1,16 @@
 {
   "name": "JUSDC",
   "symbol": "JUSDC",
+  "type": "ERC20",
   "decimals": 18,
-  "description": "JUSDC is a secure, transparent, and real-world asset-backed stablecoin designed for scalable DeFi integration.",
-  "website": "https://jusdc.io",
-  "explorer": "https://etherscan.io/token/0x3a4184028de3f2b2fb63d596ec9101328ac7a736",
-  "twitter": "https://x.com/JUSDC_Official",
-  "telegram": "https://t.me/JUSDCOfficial",
+  "status": "active",
+  "id": "0x3a4184028de3f2B2fB63d596ec9101328aC7A736",
+  "website": "https://jusdc.org",
+  "explorer": "https://etherscan.io/token/0x3a4184028de3f2B2fB63d596ec9101328aC7A736",
+  "links": {
+    "twitter": "https://x.com/JUSDC_Official",
+    "telegram": "https://t.me/JUSDCOfficial"
+  },
   "tags": [
     "stablecoin",
     "defi"
