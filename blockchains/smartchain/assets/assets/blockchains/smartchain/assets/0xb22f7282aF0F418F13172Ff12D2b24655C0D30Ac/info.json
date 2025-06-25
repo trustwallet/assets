@@ -1,0 +1,33 @@
+{
+  "name": "NeWorldCoin",
+  "type": "BEP20",
+  "symbol": "NWC",
+  "decimals": 8,
+  "description": "NeWorldCoin (NWC) is a transparent and ethical cryptocurrency designed for global payments and rewards, with a fixed supply of 100 million tokens and no minting allowed.",
+  "website": "https://neworldcoin.org",
+  "explorer": "https://bscscan.com/token/0xb22f7282aF0F418F13172Ff12D2b24655C0D30Ac",
+  "id": "0xb22f7282aF0F418F13172Ff12D2b24655C0D30Ac",
+  "links": [
+    {
+      "name": "telegram",
+      "url": "https://t.me/NeWorldCoinOficial"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/NeWorldCoin/neworldcoin-assets"
+    },
+    {
+      "name": "website",
+      "url": "https://neworldcoin.org"
+    },
+    {
+      "name": "pancakeswap",
+      "url": "https://pancakeswap.finance/swap?outputCurrency=0xb22f7282aF0F418F13172Ff12D2b24655C0D30Ac"
+    }
+  ],
+  "tags": [
+    "payments",
+    "rewards",
+    "micropayments"
+  ]
+}
