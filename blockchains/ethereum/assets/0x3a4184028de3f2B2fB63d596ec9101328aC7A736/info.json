@@ -3,15 +3,12 @@
   "symbol": "JUSDC",
   "decimals": 18,
   "description": "JUSDC stablecoin backed by real-world assets, providing secure and transparent tokenization.",
-  "id": "0x3a4184028de3f2b2fb63d596ec9101328ac7a736",
-  "type": "token",
+  "type": "ERC20",
   "status": "active",
+  "id": "0x3a4184028de3f2B2fB63d596ec9101328aC7A736",
   "website": "https://jusdc.io",
-  "explorer": "https://etherscan.io/token/0x3a4184028de3f2b2fb63d596ec9101328ac7a736",
-  "socials": {
-    "twitter": "https://twitter.com/Jusdc_Official",
-    "telegram": "https://t.me/JUSDCOfficial"
-  },
+  "explorer": "https://etherscan.io/token/0x3a4184028de3f2B2fB63d596ec9101328aC7A736",
+  "twitter": "https://twitter.com/JUSDC_Official",
+  "telegram": "https://t.me/JUSDCOfficial",
   "tags": ["stablecoin", "defi"]
 }
-
