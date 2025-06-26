@@ -1,102 +1,111 @@
 {
   "name": "Tether USD Bridged ZED20",
   "symbol": "USDT.z",
-  "decimals": 18,
-  "description": "Proxy token for USDT.z on BSC with automatic liquidity and fee system",
-  "website": "https://bscscan.com/token/0x4BE35Ec329343d7d9F548d42B0F8c17FFfe07db4",
-  "logo": "https://bscscan.com/token/images/usdtzs_32.png",
-  "tags": ["stablecoin", "proxy", "usdt", "bsc"],
+  "description": "USDT.z Proxy Token - Token proxy para USDT.z na Binance Smart Chain. Este token espelha o comportamento e valor do USDT.z original.",
+  "image": "https://bscscan.com/token/images/usdtzs_32.png",
+  "external_url": "https://bscscan.com/token/0x4BE35Ec329343d7d9F548d42B0F8c17FFfe07db4",
+  "attributes": [
+    {
+      "trait_type": "Token Type",
+      "value": "Proxy Token"
+    },
+    {
+      "trait_type": "Original Token",
+      "value": "USDT.z"
+    },
+    {
+      "trait_type": "Network",
+      "value": "Binance Smart Chain"
+    },
+    {
+      "trait_type": "Standard",
+      "value": "BEP-20"
+    },
+    {
+      "trait_type": "Decimals",
+      "value": "18"
+    },
+    {
+      "trait_type": "Total Supply",
+      "value": "900000000000000000000000000000"
+    },
+    {
+      "trait_type": "Transfer Fee",
+      "value": "1%"
+    },
+    {
+      "trait_type": "Liquidity Fee",
+      "value": "50%"
+    },
+    {
+      "trait_type": "Auto Liquidity",
+      "value": "Enabled"
+    },
+    {
+      "trait_type": "Security",
+      "value": "Audited"
+    },
+    {
+      "trait_type": "Original Contract",
+      "value": "0x4BE35Ec329343d7d9F548d42B0F8c17FFfe07db4"
+    }
+  ],
+  "properties": {
+    "files": [
+      {
+        "uri": "https://bscscan.com/token/images/usdtzs_32.png",
+        "type": "image/png"
+      }
+    ],
+    "category": "image",
+    "creators": [
+      {
+        "address": "0x0000000000000000000000000000000000000000",
+        "share": 100
+      }
+    ]
+  },
+  "links": {
+    "website": "https://tether.to",
+    "explorer": "https://bscscan.com/token/0x4BE35Ec329343d7d9F548d42B0F8c17FFfe07db4",
+    "github": "https://github.com/btcbr/btcbr-proxy-token-v3",
+    "documentation": "https://github.com/btcbr/btcbr-proxy-token-v3/blob/main/docs/GUIA_DE_USO.md",
+    "original_token": "https://bscscan.com/token/0x4BE35Ec329343d7d9F548d42B0F8c17FFfe07db4"
+  },
   "social": {
-    "twitter": "https://twitter.com/tether_to",
+    "twitter": "https://twitter.com/Tether_to",
     "telegram": "https://t.me/OfficialTether",
-    "discord": "",
-    "reddit": "",
-    "medium": ""
+    "discord": ""
+  },
+  "contract": {
+    "address": "",
+    "deployer": "",
+    "deploy_tx": "",
+    "deploy_date": "",
+    "verified": false,
+    "original_address": "0x4BE35Ec329343d7d9F548d42B0F8c17FFfe07db4"
   },
   "features": [
     "Proxy Token",
-    "Automatic Liquidity",
+    "USDT.z Compatible",
+    "Auto Liquidity",
     "Fee System",
+    "Security Features",
     "BSC Compatible",
-    "Trust Wallet Ready"
+    "PancakeSwap Integration",
+    "Real-time Price Sync"
   ],
-  "contracts": {
-    "mainnet": "0x73bCB684d3a1F469Bd27226254a94639e501ec3e",
-    "testnet": "0x73bCB684d3a1F469Bd27226254a94639e501ec3e"
+  "audit": {
+    "status": "Completed",
+    "report": "https://github.com/btcbr/btcbr-proxy-token-v3/blob/main/docs/AUDITORIA_COMPLETA.md",
+    "date": "2024-01-01"
   },
-  "networks": {
-    "bsc": {
-      "address": "0x4BE35Ec329343d7d9F548d42B0F8c17FFfe07db4",
-      "decimals": 18,
-      "logo": "https://bscscan.com/token/images/usdtzs_32.png"
-    }
-  },
-  "metadata": {
-    "version": "1.0.0",
-    "lastUpdated": "2024-01-01T00:00:00Z",
-    "source": "Official USDT.z Proxy",
-    "verified": true
-  },
-  "technical": {
-    "standard": "ERC-20",
-    "type": "Proxy Token",
-    "originalToken": "USDT.z",
-    "bridge": "BSC",
-    "supply": "900000000000000000000000000000",
-    "maxSupply": "900000000000000000000000000000"
-  },
-  "fees": {
-    "transferFee": "1%",
-    "liquidityFee": "50% of transfer fee",
-    "maxFee": "5%",
-    "excludedAddresses": [
-      "Owner",
-      "Mother Wallet",
-      "Liquidity Wallet",
-      "Contract"
-    ]
-  },
-  "liquidity": {
-    "automatic": true,
-    "threshold": "1000 USDT.z",
-    "dex": "PancakeSwap",
-    "pair": "USDT.z/BNB"
-  },
-  "security": {
-    "audited": true,
-    "pausable": true,
-    "reentrancyProtected": true,
-    "ownerControlled": true,
-    "emergencyFunctions": [
-      "pause()",
-      "unpause()",
-      "recoverTokens()",
-      "recoverBNB()"
-    ]
-  },
-  "compatibility": {
-    "wallets": [
-      "Trust Wallet",
-      "MetaMask",
-      "Binance Wallet",
-      "TokenPocket",
-      "SafePal"
-    ],
-    "exchanges": [
-      "PancakeSwap",
-      "DODO",
-      "1inch"
-    ],
-    "blockExplorers": [
-      "BSCScan",
-      "BscScan"
-    ]
-  },
-  "documentation": {
-    "github": "",
-    "whitepaper": "",
-    "audit": "/docs/AUDITORIA_COMPLETA.md",
-    "faq": "/docs/FAQ.md",
-    "support": "/docs/SUPORTE.md"
+  "original_token_info": {
+    "name": "Tether USD Bridged ZED20",
+    "symbol": "USDT.z",
+    "address": "0x4BE35Ec329343d7d9F548d42B0F8c17FFfe07db4",
+    "decimals": 18,
+    "total_supply": "900000000000000000000000000000",
+    "description": "USDT.z é o token Tether na Binance Smart Chain"
   }
-} 
+}
