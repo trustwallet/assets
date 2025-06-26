@@ -1,7 +1,7 @@
 {
   "name": "Benjamin Franklin Token",
   "symbol": "BJF",
-  "type": "token",
+  "type": "coin",
   "decimals": 18,
   "chainId": 56,
   "status": "active",
@@ -11,13 +11,13 @@
   "explorer": "https://bscscan.com/token/0xd5bab4c1b92176f9690c0d2771edbf18b73b8181",
   "links": [
     {
-      "name": "Twitter",
+      "name": "twitter",
       "url": "https://twitter.com/bjftoken"
     },
     {
-      "name": "Telegram",
+      "name": "telegram",
       "url": "https://t.me/benjaminfranklintoken"
     }
   ],
-  "tags": ["meme", "community", "airdrop"]
+  "tags": ["community", "airdrop", "defi"]
 }
