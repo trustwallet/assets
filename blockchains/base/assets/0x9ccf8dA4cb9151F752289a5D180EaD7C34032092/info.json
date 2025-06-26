@@ -1,10 +1,24 @@
 {
   "name": "Node Boi",
   "symbol": "NBOI",
+  "type": "coin",
   "decimals": 18,
-  "description": "Node Boi is a Base-native token to represent the Node culture.",
+  "description": "Node Boi is a memecoin that powers up Base with good vibes and tech energy.",
   "website": "https://nodeboi.xyz",
   "explorer": "https://basescan.org/token/0x9ccf8dA4cb9151F752289a5D180EaD7C34032092",
   "status": "active",
-  "id": "0x9ccf8dA4cb9151F752289a5D180EaD7C34032092"
+  "id": "0x9ccf8dA4cb9151F752289a5D180EaD7C34032092",
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/nodeboi_xyz"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/nodeboi-token"
+    }
+  ],
+  "tags": [
+    "memecoin"
+  ]
 }
