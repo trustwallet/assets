@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yeet Coin - The Meme Coin Revolution</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="path/to/your/logo.png" alt="Yeet Coin Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#roadmap">Roadmap</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section with Banner and Market Stats -->
+    <section id="home">
+        <div class="banner">
+            <img src="path/to/your/banner-image.jpg" alt="Yeet Coin Banner">
+        </div>
+        <div class="market-stats">
+            <div id="market-cap">Market Cap: <span id="market-cap-value">Loading...</span></div>
+            <div id="price">Price: <span id="price-value">Loading...</span></div>
+            <div id="supply">Total Supply: <span id="supply-value">Loading...</span></div>
+        </div>
+        <div class="contract">
+            <p>Contract Address: <a href="https://etherscan.io/address/0xf7632CFa2A6791D885136DAd93CC96aA9AdEcA79" target="_blank">View on Etherscan</a></p>
+        </div>
+        <div class="explorer">
+            <p>Explorer: <a href="https://etherscan.io/token/0xf7632CFa2A6791D885136DAd93CC96aA9AdEcA79" target="_blank">Etherscan</a></p>
+        </div>
+        <div class="cta">
+            <button onclick="window.location.href='https://trustwallet.com'">Buy Yeet Coin</button>
+            <button onclick="window.location.href='https://metamask.io'">MetaMask</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Yeet Coin</h2>
+        <p>Yeet Coin is a meme coin created to bring fun and excitement to the crypto space. It's designed with high energy and community in mind, aiming to revolutionize the meme coin sector.</p>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section id="roadmap">
+        <h2>Roadmap</h2>
+        <p>Details of the Yeet Coin roadmap will be updated here...</p>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <p>Here you will find common questions and their answers...</p>
+    </section>
+
+    <!-- Contact Section (Newsletter Subscription) -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="email-form">
+            <label for="email">Subscribe for Updates:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Yeet Coin. All rights reserved.</p>
+        <div class="social-media">
+            <a href="https://twitter.com/yeetcoin" target="_blank">X (Twitter)</a>
+            <a href="https://www.instagram.com/yeetcoin" target="_blank">Instagram</a>
+            <a href="https://t.me/yeetcoin" target="_blank">Telegram</a>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
