@@ -4,8 +4,19 @@
   "type": "ERC20",
   "decimals": 18,
   "description": "Official token of the MintoraFi DeFi platform on Base Chain.",
-  "website": "https://MintoraFi.com",
-  "explorer": "https://basescan.org/token/0x02C36352939C464CB72Ac2D4C49D7899A0B1d977",
+  "website": "https://mintorafi.com",
+  "explorer": "https://etherscan.io/token/0x02C36352939C464CB72Ac2D4C49D7899A0B1d977",
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/MintoraFi"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/MintoraFi"
+    }
+  ],
   "status": "active",
-  "id": "0x02C36352939C464CB72Ac2D4C49D7899A0B1d977"
+  "id": "0x02C36352939C464CB72Ac2D4C49D7899A0B1d977",
+  "tags": ["defi"]
 }
