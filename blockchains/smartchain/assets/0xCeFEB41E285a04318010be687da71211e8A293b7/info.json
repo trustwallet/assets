@@ -3,15 +3,24 @@
   "symbol": "FRGX",
   "type": "BEP20",
   "decimals": 18,
-  "address": "0xCeFEB41E285a04318010be687da71211e8A293b7",
   "description": "FROGEX is a meme token leveraging DeFi innovation to deliver deflationary tokenomics, yield farming, NFT integration, and on-chain governance on Binance Smart Chain.",
   "website": "https://frogexcrypto.com",
   "explorer": "https://bscscan.com/token/0xCeFEB41E285a04318010be687da71211e8A293b7",
+  "id": "0xCeFEB41E285a04318010be687da71211e8A293b7",
   "logoURI": "logo.png",
   "links": [
-    "https://frogexcrypto.com",
-    "https://t.me/FRGX_Finance",
-    "https://twitter.com/FRGX_Finance"
+    {
+      "name": "website",
+      "url": "https://frogexcrypto.com"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/FRGX_Finance"
+    },
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/FRGX_Finance"
+    }
   ],
   "tags": ["defi","governance","memes"],
   "holders": "1",
