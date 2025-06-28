@@ -1,33 +1,28 @@
 {
-    "name": "BNB Smart Chain",
-    "website": "https://www.bnbchain.world/en/smartChain",
-    "description": "A blockchain with a full-fledged environment for developing high-performance decentralized applications and cross-chain compatibility with Binance Chain.",
-    "explorer": "https://bscscan.com/",
-    "research": "https://research.binance.com/en/projects/bnb",
-    "symbol": "BNB",
-    "type": "coin",
-    "decimals": 18,
-    "status": "active",
-    "tags": [
-        "staking-native",
-        "dapp"
-    ],
-    "links": [
-        {
-            "name": "github",
-            "url": "https://github.com/binance-chain/"
-        },
-        {
-            "name": "x",
-            "url": "https://x.com/BNBCHAIN"
-        },
-        {
-            "name": "reddit",
-            "url": "https://reddit.com/r/BinanceExchange"
-        },
-        {
-            "name": "whitepaper",
-            "url": "https://www.binance.com/resources/ico/Binance_WhitePaper_en.pdf"
-        }
-    ]
+  "name": "FROGEX",
+  "symbol": "FRGX",
+  "type": "BEP20",
+  "decimals": 18,
+  "description": "FROGEX is a meme token leveraging DeFi innovation to deliver deflationary tokenomics, yield farming, NFT integration, and on-chain governance on Binance Smart Chain.",
+  "website": "https://frogexcrypto.com",
+  "explorer": "https://bscscan.com/token/0xCeFEB41E285a04318010be687da71211e8A293b7",
+  "id": "0xCeFEB41E285a04318010be687da71211e8A293b7",
+  "logoURI": "logo.png",
+  "links": [
+    {
+      "name": "website",
+      "url": "https://frogexcrypto.com"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/FRGX_Finance"
+    },
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/FRGX_Finance"
+    }
+  ],
+  "tags": ["defi","governance","memes"],
+  "holders": "1",
+  "status": "active"
 }
