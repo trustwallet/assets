@@ -1,10 +1,16 @@
 {
   "name": "JingDong Token",
   "symbol": "JDT",
+  "type": "token",
   "decimals": 18,
   "description": "JDT (JingDong Token) 是中国京东发行的一个虚拟货币，旨在探索区块链技术在电商领域的应用。",
   "website": "https://jingdong.com",
   "explorer": "https://bscscan.com/token/0xDCf05a52a51Dfe04536BE7295436472DD579A835",
   "status": "active",
-  "id": "0xDCf05a52a51Dfe04536BE7295436472DD579A835"
+  "id": "0xDCf05a52a51Dfe04536BE7295436472DD579A835",
+  "tags": ["defi", "utility-token"],
+  "links": {
+    "twitter": "https://twitter.com/jdt_official",
+    "telegram": "https://t.me/jdt_token"
+  }
 }
