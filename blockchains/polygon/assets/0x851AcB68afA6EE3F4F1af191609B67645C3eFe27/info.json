@@ -1,13 +1,13 @@
 {
   "name": "CautiousCoin",
+  "type": "ERC20",
   "symbol": "CAUT",
   "decimals": 18,
+  "description": "CautiousCoin (CAUT) is a One Piece-inspired digital currency forged in the spirit of legacy, freedom, and golden determination.",
+  "website": "https://cautiouscoin.world", 
+  "explorer": "https://polygonscan.com/token/0x851AcB68afA6EE3F4F1af191609B67645C3eFe27",
   "status": "active",
   "id": "0x851AcB68afA6EE3F4F1af191609B67645C3eFe27",
-  "type": "token",
-  "description": "CautiousCoin is a decentralized token inspired by the legendary lore of One Piece, promoting patience and resilience in DeFi.",
-  "website": "https://cautiouscoin.world",
-  "explorer": "https://polygonscan.com/token/0x851AcB68afA6EE3F4F1af191609B67645C3eFe27",
   "links": [
     {
       "name": "twitter",
@@ -15,7 +15,10 @@
     },
     {
       "name": "github",
-      "url": "https://github.com/Nathan-C-Rodrigues/assets"
+      "url": "https://github.com/Nathan-C-Rodrigues/cautiouscoin"
     }
+  ],
+  "tags": [
+    "defi"
   ]
 }
