@@ -1,16 +1,11 @@
 {
   "name": "CautiousCoin",
   "symbol": "CAUT",
+  "type": "ERC20",
   "decimals": 18,
-  "status": "active",
-  "type": "token",
-  "id": "0x851AcB68afA6EE3F4F1af191609B67645C3eFe27",
-  "website": "https://cautiouscoin.org",
+  "description": "CautiousCoin (CAUT) is a secure token born from logic and restraint, forged to stand the test of time. It represents the value of caution in a world rushing into the future.",
+  "website": "https://cautiouscoin.world",
   "explorer": "https://polygonscan.com/token/0x851AcB68afA6EE3F4F1af191609B67645C3eFe27",
-  "tags": ["utility-token", "community", "polygon"],
-  "links": {
-    "twitter": "https://twitter.com/CautiousCoin",
-    "github": "https://github.com/nathancrodrigues/cautiouscoin",
-    "telegram": "https://t.me/cautiouscoin"
-  }
+  "status": "active",
+  "id": "0x851AcB68afA6EE3F4F1af191609B67645C3eFe27"
 }
