@@ -2,7 +2,7 @@
   "name": "Liminal Token",
   "website": "https://www.liminalgames.net/",
   "description": "Liminal Games is a decentralized strategy and wagering protocol built on Base. Players engage in psychological, high-stakes games where every move matters. $LIM powers staking, governance, and liquidity. Transparent. On-chain. Designed for minds who thrive in uncertainty.",
-  "explorer": "https://basescan.org/address/0x7Aed7e8DB7b9284A8f99c52c592cC38215d9A13C",
+  "explorer": "https://basescan.org/token/0x7Aed7e8DB7b9284A8f99c52c592cC38215d9A13C",
   "type": "BASE",
   "symbol": "LIM",
   "decimals": 18,
@@ -12,6 +12,11 @@
     {
       "name": "x",
       "url": "https://x.com/MasterShiroku"
+    },
+    {
+      "name": "website",
+      "url": "https://www.liminalgames.net/"
     }
-  ]
+  ],
+  "tags": [ "game", "defi", "governance" ]
 }
