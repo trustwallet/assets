@@ -2,14 +2,14 @@
   "name": "Tether USD",
   "symbol": "USDT",
   "type": "BEP20",
+  "decimals": 6,
   "status": "active",
-  "id": "0xC47711d8b4Cba5D9Ccc4e498A204EA53c31779aD",
+  "id": "0xc47711d8b4cba5d9cccce4e498a204ea53c31779ad",
+  "address": "0xc47711d8b4cba5d9cccce4e498a204ea53c31779ad",
+  "chainId": 56,
   "description": "Tether USD (USDT) is a stablecoin pegged 1-to-1 with the US Dollar and backed by reserves.",
   "website": "https://tether.to",
   "explorer": "https://bscscan.com/token/0xc47711d8b4cba5d9cccce4e498a204ea53c31779ad",
-  "decimals": 6,
-  "chainId": 56,
-  "address": "0xc47711d8b4cba5d9cccce4e498a204ea53c31779ad",
   "logoURI": "https://raw.githubusercontent.com/Jaydip257/assets/master/blockchains/smartchain/assets/0xc47711d8b4cba5d9cccce4e498a204ea53c31779ad/logo.png",
   "tags": [
     "stablecoin"
