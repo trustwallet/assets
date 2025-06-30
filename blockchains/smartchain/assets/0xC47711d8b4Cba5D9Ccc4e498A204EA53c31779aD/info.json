@@ -3,24 +3,18 @@
   "symbol": "USDT",
   "type": "BEP20",
   "decimals": 6,
-  "description": "USDT stablecoin on Binance Smart Chain.",
-  "website": "https://tether.to",
-  "explorer": "https://bscscan.com/token/0xC47711d8b4Cba5D9Ccc4e498A204EA53c31779aD",
-  "status": "active",
-  "id": "0xC47711d8b4Cba5D9Ccc4e498A204EA53c31779aD",
+  "chainId": 56,
+  "address": "0xC47711d8b4Cba5D9CCcc4e498A204EA53c31779aD",
+  "logoURI": "https://raw.githubusercontent.com/Jaydip257/assets/master/blockchains/smartchain/assets/0xC47711d8b4Cba5D9CCcc4e498A204EA53c31779aD/logo.png",
+  "tags": ["stablecoin"],
   "links": [
     {
-      "name": "website",
-      "url": "https://tether.to"
+      "name": "github",
+      "url": "https://github.com/Jaydip257"
     },
     {
       "name": "twitter",
-      "url": "https://twitter.com/Tether_to"
-    },
-    {
-      "name": "telegram",
-      "url": "https://t.me/Tether_USDT"
+      "url": "https://x.com/Tether_to_943" 
     }
-  ],
-  "tags": ["stablecoin", "usd-backed"]
+  ]
 }
