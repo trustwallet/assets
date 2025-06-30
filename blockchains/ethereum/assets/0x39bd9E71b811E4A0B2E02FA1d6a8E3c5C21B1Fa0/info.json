@@ -1,0 +1,28 @@
+{
+    "name": "Tether USD (USDT)",
+    "type": "ERC20",
+    "symbol": "USDT",
+    "decimals": 6,
+    "website": "https://tethernewusd.com/",
+    "description": "Tether USD (USDT) is a widely-used stablecoin pegged to the US dollar, providing stability and fast transactions on the Ethereum blockchain",
+    "explorer": "https://etherscan.io/token/0x39bd9E71b811E4A0B2E02FA1d6a8E3c5C21B1Fa0",
+    "status": "active",
+    "id": "0x39bd9E71b811E4A0B2E02FA1d6a8E3c5C21B1Fa0",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/tethercoin/USDT"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/thether"
+        },
+        {
+            "name": "facebook",
+            "url": "https://facebook.com/tether.to"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}
