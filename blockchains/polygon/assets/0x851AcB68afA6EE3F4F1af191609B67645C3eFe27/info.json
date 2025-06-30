@@ -1,17 +1,17 @@
 {
   "name": "CautiousCoin",
+  "type": "token",
   "symbol": "CAUT",
-  "type": "ERC20",
   "decimals": 18,
   "status": "active",
   "id": "0x851AcB68afA6EE3F4F1af191609B67645C3eFe27",
+  "description": "CautiousCoin (CAUT) is a One Piece-inspired token representing calculated risk and legendary ambition on the Polygon blockchain.",
   "website": "https://cautiouscoin.xyz",
-  "description": "CautiousCoin (CAUT) is a DeFi-inspired token symbolizing the legendary treasure of caution and legacy, echoing the spirit of One Piece.",
-  "explorer": "https://etherscan.io/token/0x851AcB68afA6EE3F4F1af191609B67645C3eFe27",
-  "links": [
-    "https://x.com/CautiousCoin",
-    "https://github.com/CautiousCoin"
-  ],
+  "explorer": "https://polygonscan.com/token/0x851AcB68afA6EE3F4F1af191609B67645C3eFe27",
+  "links": {
+    "twitter": "https://x.com/CautiousCoin",
+    "github": "https://github.com/Nathan-C-Rodrigues/CautiousCoin"
+  },
   "tags": [
     "defi"
   ]
