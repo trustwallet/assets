@@ -1,4 +1,3 @@
-
 {
   "name": "Tether USD",
   "symbol": "USDT",
