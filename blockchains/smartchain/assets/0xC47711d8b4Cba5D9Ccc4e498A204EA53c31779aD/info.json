@@ -1,9 +1,14 @@
 {
   "name": "Tether USD",
   "symbol": "USDT",
+  "type": "token",
   "decimals": 6,
-  "description": "USDT-style token for testing and educational purposes.",
-  "website": "https://jaydip257.github.io/usdt-panel/",
   "status": "active",
-  "id": "0xC47711d8b4Cba5D9Ccc4e498A204EA53c31779aD"
+  "id": "0xC47711d8b4Cba5D9Ccc4e498A204EA53c31779aD",
+  "explorer": "https://bscscan.com/token/0xC47711d8b4Cba5D9Ccc4e498A204EA53c31779aD",
+  "links": {
+    "website": "https://tether.to",
+    "github": "https://github.com/Jaydip257"
+  },
+  "tags": ["stablecoin"]
 }
