@@ -1,7 +1,14 @@
 {
-  "name": "Cautious Coin",
+  "name": "CautiousCoin",
   "symbol": "CAUT",
   "decimals": 18,
-  "description": "The legendary Cautious Coin, launched like the One Piece legacy, spreading caution and power.",
-  "chainId": 137
+  "status": "active",
+  "type": "token",
+  "id": "0x851AcB68afA6EE3F4F1af191609B67645C3eFe27",
+  "website": "https://cautiouscoin.org",
+  "explorer": "https://polygonscan.com/token/0x851AcB68afA6EE3F4F1af191609B67645C3eFe27",
+  "tags": ["utility-token", "community", "polygon"],
+  "links": {
+    "github": "https://github.com/nathancrodrigues",
+  }
 }
