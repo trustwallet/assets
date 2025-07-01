@@ -1,24 +1,14 @@
 {
   "name": "MemeMancer",
   "symbol": "MANC",
-  "type": "BEP20",
   "decimals": 18,
-  "description": "MemeMancer (MANC) is a magical memecoin casting spells across BNB Chain.",
+  "description": "MemeMancer (MANC) is a magical memecoin crafted for community, humor, and creative expression on BNB Chain.",
   "website": "https://mememancer.com",
-  "explorer": "https://bscscan.com/token/0x14EBfC52793A3f6dEb9D27e44cA91D5A2cD04cD7",
-  "status": "active",
-  "id": "0x14EBfC52793A3f6dEb9D27e44cA91D5A2cD04cD7",
-  "links": [
-    {
-      "name": "telegram",
-      "url": "https://t.me/MANCToken"
-    },
-    {
-      "name": "github",
-      "url": "https://github.com/labubuda/assets"
-    }
-  ],
+  "links": {
+    "website": "https://mememancer.com",
+    "telegram": "https://t.me/MANCToken"
+  },
   "tags": [
-    "meme"
-  ]
+    "memes"
+  }
 }
