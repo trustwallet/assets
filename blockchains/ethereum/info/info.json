@@ -1,11 +1,33 @@
 {
-  "name": "Ethereum",
-  "symbol": "ETH",
-  "type": "coin",
-  "decimals": 18,
-  "description": "Ethereum is a decentralized platform that runs smart contracts: applications that run exactly as programmed without any possibility of downtime, fraud or third party interference.",
-  "website": "https://ethereum.org/",
-  "explorer": "https://etherscan.io/",
-  "status": "active",
-  "id": "eth"
+    "name": "Ethereum",
+    "website": "https://ethereum.org/",
+    "description": "Open source platform to write and distribute decentralized applications.",
+    "explorer": "https://etherscan.io/",
+    "research": "https://research.binance.com/en/projects/ethereum",
+    "symbol": "ETH",
+    "type": "coin",
+    "decimals": 18,
+    "status": "active",
+    "tags": [
+        "dapp",
+        "staking-native"
+    ],
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/ethereum"
+        },
+        {
+            "name": "x",
+            "url": "https://x.com/ethereum"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/ethereum"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://github.com/ethereum/wiki/wiki/White-Paper"
+        }
+    ]
 }
