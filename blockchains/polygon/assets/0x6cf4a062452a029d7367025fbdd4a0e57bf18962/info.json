@@ -1,4 +1,20 @@
 {
+  "name": "Tether USD Clone",
+  "symbol": "USDT",
+  "decimals": 6,
+  "type": "ERC20",
+  "status": "active",
+  "chainId": 137,
+  "address": "0x6cf4a062452A029d7367025Fbdd4a0e57Bf18962",
+  "website": "https://tetherclone.xyz",
+  "explorer": "https://polygonscan.com/token/0x6cf4a062452A029d7367025Fbdd4a0e57Bf18962",
+  "twitter": "https://twitter.com/tetherclone",
+  "github": "https://github.com/unknowbeast/tetherclone",
+  "tags": [
+    "stablecoin"
+  ]
+}
+{
   "name": "USDT",
   "symbol": "USDT",
   "type": "ERC20",
