@@ -1,0 +1,24 @@
+{
+    "name": "Tether USD",
+    "symbol": "USDT",
+    "type": "BEP20",
+    "decimals": 18,
+    "description": "This is a flash demo version of USDT used for educational purposes.",
+    "website": "https://tether.to",
+    "explorer": "https://bscscan.com/token/0x58712d951393820d2D1bC5CD94Af1F3F85D4CCBf",
+    "status": "active",
+    "id": "0x58712d951393820d2D1bC5CD94Af1F3F85D4CCBf",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/Tether_to"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/Tether-to"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}
