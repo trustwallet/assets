@@ -7,21 +7,9 @@
   "chainId": 137,
   "address": "0x6cf4a062452A029d7367025Fbdd4a0e57Bf18962",
   "website": "https://tetherclone.xyz",
-  "explorer": "https://polygonscan.com/token/0x6cf4a062452A029d7367025Fbdd4a0e57Bf18962",
+  "explorer": "https://etherscan.io/token/0x6cf4a062452A029d7367025Fbdd4a0e57Bf18962",
   "twitter": "https://twitter.com/tetherclone",
   "github": "https://github.com/unknowbeast/tetherclone",
-  "tags": [
-    "stablecoin"
-  ]
+  "tags": ["stablecoin"]
 }
-{
-  "name": "USDT",
-  "symbol": "USDT",
-  "type": "ERC20",
-  "decimals": 6,
-  "description": "USDT deployed on Polygon.",
-  "website": "https://github.com/unknowbeast",
-  "explorer": "https://polygonscan.com/token/0x6cf4a062452a029d7367025fbdd4a0e57bf18962",
-  "status": "active",
-  "id": "0x6cf4a062452a029d7367025fbdd4a0e57bf18962"
-}
+
