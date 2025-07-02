@@ -3,8 +3,38 @@
   "symbol": "MARX",
   "type": "ERC20",
   "decimals": 18,
-  "description": "Memecoin con propósito real y respaldo tangible en vivienda social.",
+  "status": "active",
+  "id": "0x21F487F6Be2E8913982d128C5d70C129cb0Ed2eE",
   "website": "https://marxcoin.org",
-  "explorer": "https://etherscan.io/token/0x21F487F6Be2E8913982d128C5d70C129cb0Ed2eE"
+  "explorer": "https://etherscan.io/token/0x21F487F6Be2E8913982d128C5d70C129cb0Ed2eE",
+  "description": "Memecoin con propósito real y respaldo tangible en vivienda social.",
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://www.tiktok.com/@marxcoin_org?_t=ZS-8xVt6ZwRcjX&_r=1" 
+    },
+    {
+      "name": "reddit",
+      "url": "https://www.reddit.com/user/marxcoin_org/"
+    },
+    {
+      "name": "facebook",
+      "url": "https://www.facebook.com/people/MarxCoin/61575925746783/?sk=about"
+    },
+    {
+      "name": "youtube",
+      "url": "https://www.youtube.com/@MarxCoin"
+    },
+    {
+      "name": "instagram",
+      "url": "https://www.instagram.com/marxcoin_org/?next=%2F"
+    },
+    {
+      "name": "tiktok",
+      "url": "https://www.tiktok.com/@marxcoin_org?_t=ZS-8xVt6ZwRcjX&_r=1"
+    }
+    
+  ],
+  "tags": ["defi", "utility", "housing"]
 }
 
