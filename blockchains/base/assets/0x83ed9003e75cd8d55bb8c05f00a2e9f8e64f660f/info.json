@@ -8,9 +8,15 @@
   "explorer": "https://basescan.org/token/0x83ed9003e75cd8d55bb8c05f00a2e9f8e64f660f",
   "status": "active",
   "id": "0x83ed9003e75cd8d55bb8c05f00a2e9f8e64f660f",
-  "links": {
-    "twitter": "https://x.com/crazyfrogmascot",
-    "telegram": "https://t.me/crazyfrogportal"
-  },
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://x.com/crazyfrogmascot"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/crazyfrogportal"
+    }
+  ],
   "tags": ["memes", "base", "community"]
 }
