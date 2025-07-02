@@ -4,18 +4,22 @@
   "decimals": 9,
   "status": "active",
   "id": "97jof1XfY7h91P3uVfYLocXDVHQseQzoL26n57Tzpump",
-  "type": "solana",
+  "type": "spl",
   "website": "https://reborne.fun",
   "explorer": "https://solscan.io/token/97jof1XfY7h91P3uVfYLocXDVHQseQzoL26n57Tzpump",
   "description": "Reborne is the resurrection engine for dead Solana tokens. Revive, reignite, and earn SOL by giving forgotten tokens a second life.",
   "links": [
     {
       "name": "twitter",
-      "url": "https://twitter.com/rebornefun"
+      "url": "https://x.com/rebornefun"
     },
     {
       "name": "coingecko",
       "url": "https://www.coingecko.com/en/coins/reborne"
     }
+  ],
+  "tags": [
+    "solana",
+    "defi"
   ]
 }
