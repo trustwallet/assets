@@ -1,4 +1,4 @@
-{
+echo '{
     "name": "Shiba Inu",
     "symbol": "SHIB",
     "type": "BEP20",
@@ -10,7 +10,7 @@
     "description": "This is a purely educational mintable token on BNB Smart Chain, not affiliated with the official Shiba Inu project. Used to demonstrate BEP20 deployment and Trust Wallet listing.",
     "links": [
         {
-            "name": "x",
+            "name": "twitter",
             "url": "https://x.com/education_only"
         },
         {
@@ -19,11 +19,9 @@
         }
     ],
     "tags": [
-        "social",
         "education"
     ]
-}
-
+}' > blockchains/smartchain/assets/0x7dFB1c18A37243315Ef4173Cf4eA2c7b380d3B91/info.json
 
 
 
