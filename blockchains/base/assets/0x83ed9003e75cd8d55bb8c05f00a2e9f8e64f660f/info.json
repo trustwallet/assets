@@ -1,22 +1,24 @@
 {
   "name": "Crazy Frog",
   "symbol": "FROG",
-  "address": "0x83ed9003e75cd8d55bb8c05f00a2e9f8e64f660f",
+  "type": "ERC20",
   "decimals": 9,
-  "description": "Crazy Frog (FROG) is a chaotic meme coin launched on Base to bring back the energy of the early internet. 100% community-powered and 0% serious.",
-  "website": "https://crazyfrog-token.github.io",
+  "chainId": 8453,
+  "address": "0x83ed9003e75cd8d55bb8c05f00a2e9f8e64f660f",
+  "description": "Crazy Frog is a meme token launched on Base chain, focused on community and internet culture. Built for fun, powered by memes.",
+  "website": "https://www.crazyfrog.xyz",
   "explorer": "https://basescan.org/token/0x83ed9003e75cd8d55bb8c05f00a2e9f8e64f660f",
   "status": "active",
   "id": "0x83ed9003e75cd8d55bb8c05f00a2e9f8e64f660f",
   "links": [
     {
       "name": "twitter",
-      "url": "https://x.com/crazyfrogmascot"
+      "url": "https://twitter.com/crazyfrog"
     },
     {
       "name": "telegram",
-      "url": "https://t.me/crazyfrogportal"
+      "url": "https://t.me/crazyfrog"
     }
   ],
-  "tags": ["memes", "base", "community"]
+  "tags": ["meme", "community"]
 }
