@@ -8,10 +8,16 @@
     "website": "https://splendorous-taffy-37c7f4.netlify.app",
     "explorer": "https://bscscan.com/token/0x7dFB1c18A37243315Ef4173Cf4eA2c7b380d3B91",
     "description": "This is a purely educational mintable token on BNB Smart Chain, not affiliated with the official Shiba Inu project. Used to demonstrate BEP20 deployment and Trust Wallet listing.",
-    "links": {
-        "twitter": "https://twitter.com/education_only",
-        "telegram": "https://t.me/education_only"
-    },
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/education_only"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/education_only"
+        }
+    ],
     "tags": [
         "meme",
         "education"
