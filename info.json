@@ -1,11 +1,17 @@
 {
-  "name": "BirthRage",
+  "name": "BRAGE",
   "symbol": "BRAGE",
-  "type": "BEP20",
   "decimals": 18,
-  "description": "BIRTHRAGE ($BRAGE) is a fire-fueled meme coin born in July, ruled by memes and chaos.",
-  "website": "https://birthrage.vercel.app",
-  "explorer": "https://bscscan.com/token/0x65539902E6a924EEb88dd89e992226AA9b833533",
   "status": "active",
-  "id": "0x65539902E6a924EEb88dd89e992226AA9b833533"
+  "id": "0x65539902E6a924EEb88dd89e992226AA9b833533",
+  "type": "token",
+  "network": "smartchain",
+  "website": "https://birthrage.vercel.app",
+  "description": "BRAGE is a meme-powered token aimed to fuel the next generation of community-driven fun and financial freedom.",
+  "explorer": "https://bscscan.com/token/0x65539902E6a924EEb88dd89e992226AA9b833533",
+  "links": {
+    "twitter": "https://twitter.com/brageofficial",
+    "telegram": "https://t.me/brageofficial",
+    "whitepaper": "https://birthrage.vercel.app/BIRTHRAGE_Whitepaper.pdf"
+  }
 }
