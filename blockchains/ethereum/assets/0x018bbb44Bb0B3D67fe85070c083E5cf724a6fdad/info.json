@@ -8,9 +8,18 @@
   "explorer": "https://etherscan.io/token/0x018bbb44Bb0B3D67fe85070c083E5cf724a6fdad",
   "status": "active",
   "id": "0x018bbb44Bb0B3D67fe85070c083E5cf724a6fdad",
-  "links": {
-    "website": "https://www.keithkppc.com/about",
-    "github": "https://opensea.io/UNITEDKDAEG"
+"links": [
+  {
+    "name": "website",
+    "url": "https://www.keithkppc.com/about/"
   },
-  "tags": ["meme", "game"]
+  {
+    "name": "explorer",
+    "url": "https://etherscan.io/token/0x018bbb44b80b3d67fe85070c083e5cf724a6fdad"
+  },
+  {
+    "name": "opensea",
+    "url": "https://opensea.io/UNITEDKDAEG"
+  }
+]  "tags": ["meme", "game"]
 }
