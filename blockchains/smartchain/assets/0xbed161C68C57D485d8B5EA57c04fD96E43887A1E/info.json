@@ -1,6 +1,7 @@
 {
   "name": "ACD Token",
   "symbol": "ACD",
+  "type": "token",
   "description": "ACD is a BEP20 token designed to power digital transformation and innovation.",
   "website": "https://www.aquamimarlik.com",
   "explorer": "https://bscscan.com/token/0xbed161C68C57D485d8B5EA57c04fD96E43887A1E",
@@ -21,7 +22,6 @@
     }
   ],
   "tags": [
-    "bep20",
     "token"
   ]
 }
