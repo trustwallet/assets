@@ -1,15 +1,18 @@
 {
   "name": "ACD Token",
   "symbol": "ACD",
-  "website": "https://www.aquamimarlik.com",
-  "description": "ACD Token, peyzaj ve doğa için birlikte üretmeyi hedefleyen sürdürülebilirlik odaklı projeleri desteklemek amacıyla geliştirilmiştir.",
+  "description": "ACD is a BEP20 token designed to power digital transformation and innovation.",
+  "website": "https://acdtoken.com",
   "explorer": "https://bscscan.com/token/0xbed161C68C57D485d8B5EA57c04fD96E43887A1E",
-  "type": "BEP20",
   "status": "active",
   "id": "0xbed161C68C57D485d8B5EA57c04fD96E43887A1E",
   "links": {
     "github": "https://github.com/acdtoken",
-    "twitter": "https://twitter.com/AcdToken",
-    "telegram": "https://t.me/Acdtoken"
-  }
+    "twitter": "https://x.com/AcdToken",
+    "telegram": "https://t.me/acdtoken"
+  },
+  "tags": [
+    "bep20",
+    "token"
+  ]
 }
