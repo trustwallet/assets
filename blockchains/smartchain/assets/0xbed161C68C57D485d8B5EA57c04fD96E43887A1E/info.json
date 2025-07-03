@@ -7,9 +7,18 @@
   "type": "BEP20",
   "status": "active",
   "id": "0xbed161C68C57D485d8B5EA57c04fD96E43887A1E",
-  "links": {
-    "github": "https://github.com/acdtoken",
-    "twitter": "https://twitter.com/AcdToken",
-    "telegram": "https://t.me/Acdtoken"
-  }
+  "links": [
+    {
+      "name": "github",
+      "url": "https://github.com/acdtoken"
+    },
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/AcdToken"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/Acdtoken"
+    }
+  ]
 }
