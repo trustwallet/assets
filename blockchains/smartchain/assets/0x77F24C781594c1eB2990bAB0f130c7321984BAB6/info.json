@@ -5,17 +5,18 @@
   "decimals": 6,
   "status": "active",
   "id": "0x77F24C781594c1eB2990bAB0f130c7321984BAB6",
-  "description": "Demo BEP-20 token used for client presentation—honeypot functionality included.",
+  "description": "Demo BEP-20 token used for client presentation — honeypot-style functionality included.",
   "website": "https://example.com",
   "explorer": "https://bscscan.com/token/0x77F24C781594c1eB2990bAB0f130c7321984BAB6",
   "tags": ["stablecoin"],
-"links": [
-  {
-    "name": "github",
-    "url": "https://github.com/work271223"
-  },
-  {
-    "name": "twitter",
-    "url": "https://twitter.com/demo_token"
-  }
-]
+  "links": [
+    {
+      "name": "github",
+      "url": "https://github.com/work271223"
+    },
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/demo_token"
+    }
+  ]
+}
