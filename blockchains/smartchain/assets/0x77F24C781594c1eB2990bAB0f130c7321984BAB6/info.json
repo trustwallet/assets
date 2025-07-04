@@ -8,7 +8,7 @@
   "explorer": "https://bscscan.com/token/0x77F24C781594c1eB2990bAB0f130c7321984BAB6",
   "status": "active",
   "id": "0x77F24C781594c1eB2990bAB0f130c7321984BAB6",
-  "holders": 1,  // Добавлено количество держателей
+  "holders": 1,
   "tags": ["stablecoin"],
   "links": [
     {
@@ -25,7 +25,7 @@
     },
     {
       "name": "discord",
-      "url": "https://discord.com/demo_token"  // Исправлено: .com вместо .gq
+      "url": "https://discord.com/demo_token"
     },
     {
       "name": "medium",
