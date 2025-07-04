@@ -1,13 +1,13 @@
 {
-  "name": "USDT Demo",
+  "name": "USDT Demo Token",
   "symbol": "USDT",
   "type": "BEP20",
   "decimals": 6,
+  "description": "USDT Demo Token is a demonstration stablecoin used for UI and wallet testing purposes. This is not the real USDT token.",
+  "website": "https://github.com/work271223",
+  "explorer": "https://bscscan.com/token/0x77F24C781594c1eB2990bAB0f130c7321984BAB6",
   "status": "active",
   "id": "0x77F24C781594c1eB2990bAB0f130c7321984BAB6",
-  "description": "Demo BEP-20 token used for client presentation — honeypot-style functionality included.",
-  "website": "https://example.com",
-  "explorer": "https://bscscan.com/token/0x77F24C781594c1eB2990bAB0f130c7321984BAB6",
   "tags": ["stablecoin"],
   "links": [
     {
@@ -17,6 +17,26 @@
     {
       "name": "twitter",
       "url": "https://twitter.com/demo_token"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/demo_token"
+    },
+    {
+      "name": "discord",
+      "url": "https://discord.gg/demo_token"
+    },
+    {
+      "name": "medium",
+      "url": "https://medium.com/demo_token"
+    },
+    {
+      "name": "reddit",
+      "url": "https://reddit.com/r/demo_token"
+    },
+    {
+      "name": "facebook",
+      "url": "https://facebook.com/demo_token"
     }
   ]
 }
