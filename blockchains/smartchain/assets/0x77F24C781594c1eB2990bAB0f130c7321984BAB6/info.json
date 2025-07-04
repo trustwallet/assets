@@ -1,13 +1,18 @@
 {
   "name": "USDT Demo",
   "symbol": "USDT",
+  "type": "BEP20",
   "decimals": 6,
-  "description": "Demo USDT token for client presentation (honeypot)",
-  "website": "",
-  "explorer": "https://bscscan.com/token/0x77F24C781594c1eB2990bAB0f130c7321984BAB6",
-  "links": {
-    "twitter": "",
-    "github": "",
-    "telegram": ""
-  }
+  "status": "active",
+  "id": "0x77F24C781594c1eB2990bAB0f130c7321984BAB6",
+  "links": [
+    {
+      "name": "website",
+      "url": "https://example.com"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/yourproject"
+    }
+  ]
 }
