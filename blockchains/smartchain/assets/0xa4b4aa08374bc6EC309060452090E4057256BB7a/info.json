@@ -3,10 +3,25 @@
   "symbol": "DIFIN",
   "type": "BEP20",
   "decimals": 18,
-  "description": "DiamondFi is a next-gen Web3 DeFi ecosystem backed by the real-world value of certified diamond.",
+  "status": "active",
+  "id": "0xa4b4aa08374bc6ec309060452090e4057256bb7a",
   "website": "https://diamondfi.io",
-  "social": {
-    "twitter": "https://x.com/diamondfi_one",
-    "telegram": "https://t.me/diamondfiofficial"
-  }
+  "explorer": "https://bscscan.com/token/0xa4b4aa08374bc6ec309060452090e4057256bb7a",
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/diamondfi_io"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/DiamondFi-web3"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/diamondfichat"
+    }
+  ],
+  "tags": [
+    "defi"
+  ]
 }
