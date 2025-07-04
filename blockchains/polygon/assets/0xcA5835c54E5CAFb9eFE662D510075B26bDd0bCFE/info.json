@@ -9,10 +9,22 @@
   "status": "active",
   "id": "0xcA5835c54E5CAFb9eFE662D510075B26bDd0bCFE",
   "tags": ["defi", "nft"],
-  "links": {
-    "twitter": "https://twitter.com/PlayZonz",
-    "telegram": "https://t.me/PlayZonz",
-    "bitcointalk": "https://bitcointalk.org/index.php?topic=5548690",
-    "github": "https://github.com/enoeryou"
-  }
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/PlayZonz"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/PlayZonz"
+    },
+    {
+      "name": "bitcointalk",
+      "url": "https://bitcointalk.org/index.php?topic=5548690"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/enoeryou"
+    }
+  ]
 }
