@@ -1,11 +1,24 @@
 {
-  "name": "URSA",
-  "symbol": "RSA",
-  "type": "BEP20",
-  "decimals": 18,
-  "description": "URSA \u2014 The Bear of the Blockchain",
-  "website": "https://example.com",
-  "explorer": "https://bscscan.com/token/0xFeB4953A05A1428374a70aC53f8F588e0F9D8137",
-  "status": "active",
-  "id": "ursa"
+    "name": "URSA",
+    "symbol": "RSA",
+    "type": "BEP20",
+    "decimals": 18,
+    "description": "URSA \u2013 The Bear of the Blockchain",
+    "website": "https://example.com",
+    "explorer": "https://bscscan.com/token/0xFeB4953A05A1428374a70aC53f8F588e0F9D8137",
+    "status": "active",
+    "id": "0xFeB4953A05A1428374a70aC53f8F588e0F9D8137",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://x.com/Tgrampr?t=V4nY3SzpFuUlNUFsJYmVDQ&s=09"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/InsideCryptom"
+        }
+    ],
+    "tags": [
+        "token"
+    ]
 }
