@@ -1,13 +1,13 @@
 {
   "name": "Binance Coin",
   "symbol": "BNB",
-  "type": "bep20",
+  "type": "token",
   "decimals": 18,
   "description": "Binance Coin (BNB) is a cryptocurrency used on Binance Chain and Binance Smart Chain.",
   "website": "https://www.binance.com/",
   "explorer": "https://bscscan.com/token/0x9834c008c1753bca76BE12d73d58E2998A95a302",
   "status": "active",
-  "id": "bnb",
+  "id": "0x9834c008c1753bca76BE12d73d58E2998A95a302",
   "links": [
     {
       "name": "twitter",
@@ -18,5 +18,5 @@
       "url": "https://github.com/binance-chain"
     }
   ],
-  "tags": ["bsc", "binance"]
+  "tags": ["binance"]
 }
