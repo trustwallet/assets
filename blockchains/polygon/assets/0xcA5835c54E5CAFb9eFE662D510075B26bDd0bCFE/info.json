@@ -1,17 +1,13 @@
 {
   "name": "PlayZonz Token",
+  "type": "POLYGON",
   "symbol": "PlayZonz",
-  "type": "ERC20",
   "decimals": 18,
-  "description": "PlayZonz Token (PlayZonz) is a Polygon-based community-driven token focused on NFTs, games, and Web3 engagement.",
   "website": "https://www.playzonz.my.id",
+  "description": "PlayZonz Token (PlayZonz) is a Polygon-based community-driven token focused on NFTs, games, and Web3 engagement.",
   "explorer": "https://polygonscan.com/token/0xcA5835c54E5CAFb9eFE662D510075B26bDd0bCFE",
   "status": "active",
   "id": "0xcA5835c54E5CAFb9eFE662D510075B26bDd0bCFE",
-  "tags": [
-    "defi",
-    "nft"
-  ],
   "links": [
     {
       "name": "twitter",
@@ -25,5 +21,9 @@
       "name": "forum",
       "url": "https://bitcointalk.org/index.php?topic=5548690"
     }
+  ],
+  "tags": [
+    "defi",
+    "nft"
   ]
 }
