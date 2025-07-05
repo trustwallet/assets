@@ -1,11 +1,20 @@
 {
   "name": "GenG",
-  "symbol": "GENG",
+  "symbol": "GEN-G",
   "type": "ERC20",
   "decimals": 18,
-  "description": "GenG (GENG) is a transparent, founder-led cryptocurrency project focused on long-term sustainability, value creation, and community contribution. Built on Polygon.",
-  "website": "https://www.gengtoken.com",
+  "description": "GenG (GEN-G) is a transparent, founder-led cryptocurrency project focused on long-term sustainability, value creation, and community contribution. Built on Polygon.",
+  "website": "https://www.gengtoken.com/",
   "explorer": "https://polygonscan.com/token/0xD791A97ACde81721084ffB97F0ceDC81D5770aD9",
   "status": "active",
-  "id": "0xD791A97ACde81721084ffB97F0ceDC81D5770aD9"
+  "id": "0xD791A97ACde81721084ffB97F0ceDC81D5770aD9",
+  "links": {
+    "twitter": "https://twitter.com/gengtoken",
+    "telegram": "https://t.me/GenGtoken",
+    "github": "https://github.com/GenGtoken/Gen-G"
+  },
+  "tags": [
+    "polygon",
+    "utility-token"
+  ]
 }
