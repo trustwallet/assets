@@ -1,28 +1,22 @@
 {
   "name": "Diamond Grey Canary",
   "symbol": "DGC",
+  "type": "ERC20",
   "decimals": 18,
-  "description": "Diamond Grey Canary is an in-game currency and meme token for a global environmental disaster prevention simulation game. It symbolizes early warning and resilience.",
+  "description": "Diamond Grey Canary is a meme token and in-game currency for a game.",
   "website": "https://www.keithkppc.com/about",
   "explorer": "https://etherscan.io/token/0x018bbb44Bb0B3D67fe85070c083E5cf724a6fdad",
+  "status": "active",
   "id": "0x018bbb44Bb0B3D67fe85070c083E5cf724a6fdad",
   "links": [
     {
-      "name": "Twitter",
-      "url": "https://twitter.com/keithkppc"
+      "name": "website",
+      "url": "https://www.keithkppc.com/about"
     },
     {
-      "name": "Telegram",
-      "url": "https://t.me/keithkppc"
-    },
-    {
-      "name": "GitHub",
-      "url": "https://github.com/keithkppc"
+      "name": "opensea",
+      "url": "https://opensea.io/UNITEDKDAEG"
     }
   ],
-  "tags": [
-    "game",
-    "utility",
-    "environmental"
-  ]
+  "tags": ["meme", "game"]
 }
