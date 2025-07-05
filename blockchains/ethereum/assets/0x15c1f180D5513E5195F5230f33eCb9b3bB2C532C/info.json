@@ -2,12 +2,21 @@
   "name": "USD.T ERC20",
   "symbol": "USD.T",
   "decimals": 6,
-  "description": "USD.T is a fixed-supply ERC-20 stable token with 6 decimals",
+  "description": "USD.T is a fixed-supply ERC-20 stable token with 6 decimals.",
   "website": "https://eth-host.one",
-  "telegram": "https://t.me/TOP_UNO",
-  "twitter": "https://x.com/XppUsd",
   "explorer": "https://etherscan.io/token/0x15c1f180D5513E5195F5230f33eCb9b3bB2C532C",
-  "type": "ERC20",
   "status": "active",
-  "id": "0x15c1f180D5513E5195F5230f33eCb9b3bB2C532C"
+  "type": "ERC20",
+  "id": "0x15c1f180D5513E5195F5230f33eCb9b3bB2C532C",
+  "links": [
+    {
+      "name": "telegram",
+      "url": "https://t.me/TOP_UNO"
+    },
+    {
+      "name": "twitter",
+      "url": "https://x.com/XppUsd"
+    }
+  ],
+  "tags": ["stablecoin", "usd-backed", "payments"]
 }
