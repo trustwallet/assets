@@ -1,11 +1,25 @@
 {
-  "name": "Gem Token",
+  "name": "GEM Token",
   "symbol": "GEM",
+  "type": "ERC20",
   "decimals": 13,
   "description": "GEM is a utility token for digital assets, NFTs, and DeFi access.",
   "website": "https://gem-token.site",
-  "telegram": "https://t.me/gemtokenportal",
-  "explorer": "https://etherscan.io/token/0xCAC6dA2753F1CD483b542FA93663bF5A3eC434eD",
-  "type": "ERC20",
-  "status": "active"
+  "explorer": "https://etherscan.io/token/",
+  "status": "active",
+  "id": "0xCAC6dA2753F1CD483b542FA93663bF5A3eC434eD",
+  "links": [
+    {
+      "name": "github",
+      "url": "https://github.com/loveslevchenko"
+    },
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/GEMtokenX"
+    }
+  ],
+  "tags": [
+    "defi",
+    "utility-token"
+  ]
 }
