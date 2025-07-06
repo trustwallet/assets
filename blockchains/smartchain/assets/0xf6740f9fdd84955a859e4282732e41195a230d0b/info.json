@@ -5,7 +5,21 @@
   "decimals": 18,
   "description": "LottoDeFi is a BEP20 token with decentralized lottery powered by Chainlink VRF and smart contract automation.",
   "website": "https://lottodefi.com",
-  "explorer": "https://bscscan.com/token/0xf6740f9fdd84955a859e4282732e41195a230d0b",
+  "explorer": "https://bscscan.com/token/0xF6740f9fDd84955A859E4282732E41195a230D0B",
   "status": "active",
-  "id": "0xf6740f9fdd84955a859e4282732e41195a230d0b"
+  "id": "0xF6740f9fDd84955A859E4282732E41195a230D0B",
+  "tags": [
+    "defi",
+    "lottery"
+  ],
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://x.com/TokenLottoDeFi"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/tokenLottoDeFi"
+    }
+  ]
 }
