@@ -3,18 +3,28 @@
   "symbol": "KABO",
   "type": "BEP20",
   "decimals": 18,
-  "description": "Karbono is a reforestation-backed blockchain token that represents verified tree planting and carbon offsetting through community engagement and transparent smart contracts.",
+  "description": "Karbono is a tree-pegged crypto token designed to promote community reforestation and carbon offset transparency. Each KABO token represents a contribution to sustainable environmental restoration efforts.",
   "website": "https://karbono.cc",
   "explorer": "https://bscscan.com/token/0xfDC38DDf4312Ff57B1B0DE03Fd4419337E4C621F",
   "status": "active",
   "id": "0xfDC38DDf4312Ff57B1B0DE03Fd4419337E4C621F",
-  "links": {
-    "twitter": "https://x.com/KarbonoToken",
-    "github": "https://github.com/fijibear/publicdata"
-  },
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://x.com/KarbonoToken"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/fijibear/publicdata"
+    },
+    {
+      "name": "website",
+      "url": "https://karbono.cc"
+    }
+  ],
   "tags": [
-    "community",
+    "carbon-offset",
     "reforestation",
-    "carbon-credit"
+    "community"
   ]
 }
