@@ -4,6 +4,7 @@
   "type": "ERC20",
   "decimals": 18,
   "description": "PlayZonz is a community-driven token for gaming and fun. Visit https://playzonz.my.id for more info.",
+  "explorer": "https://etherscan.io/token/0x970cE034A464Cb3FD026a540299f4F0d8b64FB98",
   "links": [
     {
       "name": "twitter",
@@ -14,7 +15,10 @@
       "url": "https://t.me/playzonz"
     }
   ],
-  "tags": ["defi", "gaming"],
+  "tags": [
+    "defi",
+    "gaming"
+  ],
   "platforms": {
     "polygon": "0x970cE034A464Cb3FD026a540299f4F0d8b64FB98"
   },
