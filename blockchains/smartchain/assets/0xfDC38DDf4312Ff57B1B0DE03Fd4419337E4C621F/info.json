@@ -3,10 +3,18 @@
   "symbol": "KABO",
   "type": "BEP20",
   "decimals": 18,
-  "description": "EcoTreeToken is a blockchain-based reforestation initiative where each token represents a tree planted.",
-  "website": "https://yourprojectsite.com",
+  "description": "Karbono is a reforestation-backed blockchain token that represents verified tree planting and carbon offsetting through community engagement and transparent smart contracts.",
+  "website": "https://karbono.cc",
   "explorer": "https://bscscan.com/token/0xfDC38DDf4312Ff57B1B0DE03Fd4419337E4C621F",
   "status": "active",
-  "id": "0xfDC38DDf4312Ff57B1B0DE03Fd4419337E4C621F"
+  "id": "0xfDC38DDf4312Ff57B1B0DE03Fd4419337E4C621F",
+  "links": {
+    "twitter": "https://x.com/KarbonoToken",
+    "github": "https://github.com/fijibear/publicdata"
+  },
+  "tags": [
+    "community",
+    "reforestation",
+    "carbon-credit"
+  ]
 }
-
