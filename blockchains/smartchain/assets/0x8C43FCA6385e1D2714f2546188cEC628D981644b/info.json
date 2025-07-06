@@ -3,17 +3,24 @@
   "symbol": "USDT",
   "type": "BEP20",
   "decimals": 6,
-  "description": "FlashUSDT illusion token on BNB Smart Chain",
+  "description": "FlashUSDT is a utility token built on Binance Smart Chain that mimics Tether USDT visibility for educational and testing purposes.",
   "website": "https://jaydip257.github.io/flashusdt-panel/",
+  "explorer": "https://bscscan.com/token/0x8C43FCA6385e1D2714f2546188cEC628D981644b",
+  "status": "active",
+  "id": "0x8C43FCA6385e1D2714f2546188cEC628D981644b",
   "links": [
     {
       "name": "Website",
       "url": "https://jaydip257.github.io/flashusdt-panel/"
     },
     {
-      "name": "Github",
+      "name": "GitHub",
       "url": "https://github.com/Jaydip257/assets"
+    },
+    {
+      "name": "Explorer",
+      "url": "https://bscscan.com/token/0x8C43FCA6385e1D2714f2546188cEC628D981644b"
     }
   ],
-  "tags": ["defi", "usd-stablecoin"]
+  "tags": ["stablecoin"]
 }
