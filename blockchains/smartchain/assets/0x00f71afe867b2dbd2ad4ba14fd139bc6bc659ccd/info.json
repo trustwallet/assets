@@ -9,9 +9,18 @@
   "status": "active",
   "id": "0x00F71Afe867b2DbD2Ad4bA14fD139BC6bc659CcD",
   "tags": ["meme", "defi"],
-  "links": {
-    "twitter": "https://twitter.com/XoXoVip_",
-    "telegram": "https://t.me/XoXoBSC",
-    "docs": "https://docs.xoxo.meme/"
-  }
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/XoXoVip_"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/XoXoBSC"
+    },
+    {
+      "name": "docs",
+      "url": "https://docs.xoxo.meme/"
+    }
+  ]
 }
