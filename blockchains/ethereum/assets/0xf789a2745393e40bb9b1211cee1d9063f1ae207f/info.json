@@ -8,9 +8,12 @@
   "explorer": "https://etherscan.io/token/0xf789a2745393e40bb9b1211cee1d9063f1ae207f",
   "status": "active",
   "id": "0xf789a2745393e40bb9b1211cee1d9063f1ae207f",
-  "links": {
-    "github": "https://github.com/jani38/Oblivion"
-  },
+  "links": [
+    {
+      "name": "github",
+      "url": "https://github.com/jani38/Oblivion"
+    }
+  ],
   "tags": [
     "token",
     "defi",
