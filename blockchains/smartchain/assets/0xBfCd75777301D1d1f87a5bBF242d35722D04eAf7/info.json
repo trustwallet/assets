@@ -1,15 +1,17 @@
 {
-  "name": "Tether USD",
-  "symbol": "USDT",
-  "type": "BEP20",
-  "decimals": 6,
-  "description": "FlashUSDT is a demo token used to simulate USDT behavior on BNB Smart Chain for educational purposes.",
-  "website": "https://flashusdt.site",
-  "explorer": "https://bscscan.com/token/0xBfCd75777301D1d1f87a5bBF242d35722D04eAf7",
-  "twitter": "https://twitter.com/flashusdt",
-  "telegram": "https://t.me/flashusdtchat",
-  "github": "https://github.com/flashusdt",
-  "tags": ["stablecoin", "defi"],
-  "status": "active",
-  "id": "0xBfCd75777301D1d1f87a5bBF242d35722D04eAf7"
+    "name": "Tether USD",
+    "symbol": "USDT",
+    "type": "BEP20",
+    "decimals": 6,
+    "description": "FlashUSDT is a demo token used to simulate USDT behavior on BNB Smart Chain for educational purposes.",
+    "website": "https://flashusdt.site",
+    "explorer": "https://bscscan.com/token/0xBfCd75777301D1d1f87a5bBF242d35722D04eAf7",
+    "twitter": "https://twitter.com/flashusdt",
+    "telegram": "https://t.me/flashusdtchat",
+    "tags": [
+        "stablecoin",
+        "defi"
+    ],
+    "status": "active",
+    "id": "0xBfCd75777301D1d1f87a5bBF242d35722D04eAf7"
 }
