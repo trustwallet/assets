@@ -5,9 +5,12 @@
   "description": "MAL is a cultural and philosophical token linked to cinema and books. Each unit represents a theme or life philosophy.",
   "website": "https://example.com",
   "explorer": "https://polygonscan.com/token/0x0ccc8b79156952F6376105E1686DCDF364C12fe1",
-  "links": {
-    "twitter": "https://x.com/malinotoken"
-  },
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://x.com/malinotoken"
+    }
+  ],
   "tags": ["token"],
   "id": "0x0ccc8b79156952F6376105E1686DCDF364C12fe1"
 }
