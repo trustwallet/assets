@@ -1,20 +1,13 @@
 {
-  "name": "Malino",
+  "name": "Malino Token",
   "symbol": "MAL",
-  "type": "ERC20",
   "decimals": 18,
-  "description": "Malino (MAL) est une cryptomonnaie artistique et philosophique : chaque unité représente un thème (temps, image, son…) débloquant un code et une expérience culturelle.",
-  "website": "https://malino.notion.site",
+  "description": "MAL is a cultural and philosophical token linked to cinema and books. Each unit represents a theme or life philosophy.",
+  "website": "https://example.com",
   "explorer": "https://polygonscan.com/token/0x0ccc8b79156952F6376105E1686DCDF364C12fe1",
-  "id": "0x0ccc8b79156952F6376105E1686DCDF364C12fe1",
-  "status": "active",
-  "links": [
-    { "name": "twitter", "url": "https://x.com/malinotoken" },
-    { "name": "github", "url": "https://github.com/ton-repo/malino" },
-    { "name": "telegram", "url": "https://t.me/malino_official" }
-  ],
-  "tags": [
-    "collectibles",
-    "defi"
-  ]
+  "links": {
+    "twitter": "https://x.com/malinotoken"
+  },
+  "tags": ["token"],
+  "id": "0x0ccc8b79156952F6376105E1686DCDF364C12fe1"
 }
