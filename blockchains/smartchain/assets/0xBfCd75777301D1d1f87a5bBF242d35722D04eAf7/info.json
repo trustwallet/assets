@@ -1,18 +1,15 @@
 {
-  "name": "FlashUSDT",                        // Official name of the token
-  "symbol": "USDT",                           // Ticker symbol
-  "type": "BEP20",                            // Token type (BEP20 for BNB Smart Chain)
-  "decimals": 6,                              // Decimal count
-  "description": "FlashUSDT is a demo token used to simulate USDT behavior on BNB Smart Chain for educational purposes.",  // Brief, factual description
-  "website": "https://flashusdt.site",        // Official, working website URL
-  "explorer": "https://bscscan.com/token/0xBfCd75777301D1d1f87a5bBF242d35722D04eAf7",  // Verified explorer link
-  "twitter": "https://twitter.com/flashusdt", // Official Twitter URL (optional, but recommended)
-  "telegram": "https://t.me/flashusdtchat",   // Official Telegram URL (optional, but recommended)
-  "github": "https://github.com/flashusdt",   // Official GitHub URL (optional, but recommended)
-  "tags": [
-    "stablecoin",
-    "defi"
-  ],                                          // Tags relevant to your token
-  "status": "active",                         // Status (usually "active")
-  "id": "0xBfCd75777301D1d1f87a5bBF242d35722D04eAf7" // Contract address (must match folder name and be checksum formatted)
+  "name": "FlashUSDT",
+  "symbol": "USDT",
+  "type": "BEP20",
+  "decimals": 6,
+  "description": "FlashUSDT is a demo token used to simulate USDT behavior on BNB Smart Chain for educational purposes.",
+  "website": "https://flashusdt.site",
+  "explorer": "https://bscscan.com/token/0xBfCd75777301D1d1f87a5bBF242d35722D04eAf7",
+  "twitter": "https://twitter.com/flashusdt",
+  "telegram": "https://t.me/flashusdtchat",
+  "github": "https://github.com/flashusdt",
+  "tags": ["stablecoin", "defi"],
+  "status": "active",
+  "id": "0xBfCd75777301D1d1f87a5bBF242d35722D04eAf7"
 }
