@@ -8,11 +8,11 @@
   "explorer": "https://polygonscan.com/token/0x0ccc8b79156952f6376105e1686dcdf364c12fe1",
   "status": "active",
   "id": "0x0ccc8b79156952f6376105e1686dcdf364c12fe1",
-  "links": {
-    "twitter": "https://twitter.com/malinotoken",
-    "github": "https://github.com/ton-repo/malino",
-    "telegram": "https://t.me/malino_official"
-  },
+  "links": [
+    { "name": "twitter",  "url": "https://twitter.com/malinotoken"       },
+    { "name": "github",   "url": "https://github.com/ton-repo/malino"     },
+    { "name": "telegram", "url": "https://t.me/malino_official"           }
+  ],
   "tags": [
     "art",
     "culture",
