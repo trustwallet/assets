@@ -3,9 +3,23 @@
   "symbol": "BCC",
   "type": "BEP20",
   "decimals": 9,
+  "description": "Baby Cat Coin (BCC) is a meme-based BEP20 token on BNB Chain with 21 million total supply.",
+  "website": "https://dexscreener.com/bsc/0xB21228114AD690C2D6E3b4F540624a509CeA805E",
+  "explorer": "https://bscscan.com/token/0xB21228114AD690C2D6E3b4F540624a509CeA805E",
   "status": "active",
   "id": "0xB21228114AD690C2D6E3b4F540624a509CeA805E",
-  "links": {
-    "telegram": "https://t.me/Baby_Cat_Coin"
-  }
+  "links": [
+    {
+      "name": "telegram",
+      "url": "https://t.me/Baby_Cat_Coin"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/sumitx100"
+    },
+    {
+      "name": "twitter",
+      "url": "https://x.com/Baby_Cat_Coin_?t=5bphwTaGzpqaR3kPW8g8CQ&s=03"
+    }
+  ]
 }
