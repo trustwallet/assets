@@ -1,20 +1,17 @@
 {
   "name": "GIGA",
-  "type": "token",
   "symbol": "GIGA",
+  "type": "ERC20",
   "decimals": 18,
-  "description": "The GIGA token powering the next-generation DeFi ecosystem on Base.",
-  "website": "https://gigatoken.io",
+  "description": "GIGA is a decentralized token powering the VaultOS and Quantum Alpha ecosystem.",
+  "website": "https://your-website.com",
   "explorer": "https://basescan.org/token/0x5E2a88E5903642C5e944D31247887bB13F350Dc4",
   "status": "active",
   "id": "0x5E2a88E5903642C5e944D31247887bB13F350Dc4",
-  "links": [
-    { "name": "twitter", "url": "https://twitter.com/GIGAisLive" },
-    { "name": "github", "url": "https://github.com/OfficialGIGA" },
-    { "name": "telegram", "url": "https://t.me/GIGATokenCommunity" },
-    { "name": "reddit", "url": "https://reddit.com/r/GIGAToken" }
-  ],
   "tags": [
     "defi"
-  ]
+  ],
+  "links": {
+    "twitter": "https://x.com/GIGAisLive"
+  }
 }
