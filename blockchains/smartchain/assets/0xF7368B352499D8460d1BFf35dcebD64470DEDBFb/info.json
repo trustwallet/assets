@@ -8,11 +8,11 @@
   "explorer": "https://bscscan.com/token/0xF7368B352499D8460d1BFf35dcebD64470DEDBFb",
   "status": "active",
   "id": "agt",
-  "links": {
-    "website": "https://agenticc-ai.io",
-    "facebook": "https://www.facebook.com/profile.php?id=61576319888143",
-    "telegram": "https://t.me/+AyTDxzogp3tjNzNl"
-  },
+  "links": [
+    "https://agenticc-ai.io",
+    "https://www.facebook.com/profile.php?id=61576319888143",
+    "https://t.me/+AyTDxzogp3tjNzNl"
+  ],
   "tags": [
     "ai",
     "defi"
