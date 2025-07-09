@@ -1,11 +1,19 @@
 {
   "name": "AGT Token",
-  "website": "https://agenticc-ai.io",
-  "description": "AGT is an AI-powered utility token for decentralized applications.",
-  "explorer": "https://bscscan.com/token/0xF7368B352499D8460d1BFf35dcebD64470DEDBFb",
-  "type": "BEP20",
   "symbol": "AGT",
+  "type": "BEP20",
   "decimals": 18,
+  "description": "AGT is an AI-powered utility token for decentralized applications.",
+  "website": "https://agenticc-ai.io",
+  "explorer": "https://bscscan.com/token/0xF7368B352499D8460d1BFf35dcebD64470DEDBFb",
   "status": "active",
-  "id": "agt"
+  "id": "agt",
+  "links": {
+    "website": "https://agenticc-ai.io",
+    "facebook": "https://www.facebook.com/profile.php?id=61576319888143"
+  },
+  "tags": [
+    "ai",
+    "defi"
+  ]
 }
