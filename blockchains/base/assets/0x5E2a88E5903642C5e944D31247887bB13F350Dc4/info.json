@@ -1,6 +1,6 @@
 {
   "name": "GIGA",
-  "type": "coin",
+  "type": "token",
   "symbol": "GIGA",
   "decimals": 18,
   "description": "The GIGA token powering the next-generation DeFi ecosystem on Base.",
@@ -8,12 +8,12 @@
   "explorer": "https://basescan.org/token/0x5E2a88E5903642C5e944D31247887bB13F350Dc4",
   "status": "active",
   "id": "0x5E2a88E5903642C5e944D31247887bB13F350Dc4",
-  "links": {
-    "twitter": "https://twitter.com/GIGAisLive",
-    "github": "https://github.com/OfficialGIGA",
-    "telegram": "https://t.me/GIGATokenCommunity",
-    "reddit": "https://reddit.com/r/GIGAToken"
-  },
+  "links": [
+    "https://twitter.com/GIGAisLive",
+    "https://github.com/OfficialGIGA",
+    "https://t.me/GIGATokenCommunity",
+    "https://reddit.com/r/GIGAToken"
+  ],
   "tags": [
     "defi"
   ]
