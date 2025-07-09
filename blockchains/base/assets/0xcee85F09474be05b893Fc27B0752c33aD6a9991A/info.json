@@ -2,11 +2,14 @@
   "name": "YOBO",
   "symbol": "YOBO",
   "decimals": 18,
-  "description": "YOBO — мем-токен на Base. Просто йобо, просто мем і трохи культу.",
-  "website": "https://t.me/yobotoken",
+  "description": "YOBO is for memes, culture, and pure vibes.",
   "explorer": "https://basescan.org/token/0xcee85F09474be05b893Fc27B0752c33aD6a9991A",
   "status": "active",
   "id": "yobo",
-  "type": "token",
-  "tags": ["meme"]
+  "type": "coin",
+  "tags": ["community"],
+  "links": {
+    "twitter": "https://x.com/yobotoken",
+    "telegram": "https://t.me/yobotoken"
+  }
 }
