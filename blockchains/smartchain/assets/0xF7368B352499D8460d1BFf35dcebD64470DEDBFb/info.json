@@ -8,9 +8,9 @@
   "explorer": "https://bscscan.com/token/0xF7368B352499D8460d1BFf35dcebD64470DEDBFb",
   "status": "active",
   "links": [
-    "https://agenticc-ai.io",
-    "https://www.facebook.com/profile.php?id=61576319888143",
-    "https://t.me/+AyTDxzogp3tjNzNl"
+    { "name": "website", "url": "https://agenticc-ai.io" },
+    { "name": "facebook", "url": "https://www.facebook.com/profile.php?id=61576319888143" },
+    { "name": "telegram", "url": "https://t.me/+AyTDxzogp3tjNzNl" }
   ],
   "tags": [
     "ai",
