@@ -2,14 +2,20 @@
   "name": "YOBO",
   "symbol": "YOBO",
   "decimals": 18,
-  "description": "YOBO is for memes, culture, and pure vibes.",
+  "description": "YOBO is a meme token built for fun, culture, and pure vibes.",
+  "website": "https://yobo.xyz",
   "explorer": "https://basescan.org/token/0xcee85F09474be05b893Fc27B0752c33aD6a9991A",
   "status": "active",
-  "id": "yobo",
-  "type": "coin",
-  "tags": ["community"],
-  "links": {
-    "x": "https://x.com/yobotoken",
-    "telegram": "https://t.me/yobotoken"
-  }
+  "id": "0xcee85F09474be05b893Fc27B0752c33aD6a9991A",
+  "type": "ERC20",
+  "links": [
+    {
+      "name": "x",
+      "url": "https://x.com/yobotoken"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/yobotoken"
+    }
+  ]
 }
