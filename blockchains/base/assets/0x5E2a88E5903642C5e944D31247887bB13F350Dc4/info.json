@@ -9,10 +9,10 @@
   "status": "active",
   "id": "0x5E2a88E5903642C5e944D31247887bB13F350Dc4",
   "links": [
-    "https://twitter.com/GIGAisLive",
-    "https://github.com/OfficialGIGA",
-    "https://t.me/GIGATokenCommunity",
-    "https://reddit.com/r/GIGAToken"
+    { "name": "twitter", "url": "https://twitter.com/GIGAisLive" },
+    { "name": "github", "url": "https://github.com/OfficialGIGA" },
+    { "name": "telegram", "url": "https://t.me/GIGATokenCommunity" },
+    { "name": "reddit", "url": "https://reddit.com/r/GIGAToken" }
   ],
   "tags": [
     "defi"
