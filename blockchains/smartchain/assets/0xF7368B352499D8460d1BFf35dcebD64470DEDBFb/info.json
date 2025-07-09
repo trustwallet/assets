@@ -1,20 +1,21 @@
 {
-  "name": "AGT Token",
-  "symbol": "AGT",
-  "type": "BEP20",
-  "decimals": 18,
-  "description": "AGT is an AI-powered utility token for decentralized applications.",
-  "website": "https://agenticc-ai.io",
-  "explorer": "https://bscscan.com/token/0xF7368B352499D8460d1BFf35dcebD64470DEDBFb",
-  "status": "active",
-  "id": "agt",
-  "links": [
-    "https://agenticc-ai.io",
-    "https://www.facebook.com/profile.php?id=61576319888143",
-    "https://t.me/+AyTDxzogp3tjNzNl"
-  ],
-  "tags": [
-    "ai",
-    "defi"
-  ]
+    "name": "AGT-Token",
+    "website": "https://agenticc-ai.io",
+    "description": "Every trade contributes toward automatically generating liquidity locked inside Pancakeswap LP.",
+    "explorer": "https://bscscan.com/token/0xf7368b352499d8460d1bff35dcebd64470dedbfb9",
+    "type": "BEP20",
+    "symbol": "AGT",
+    "decimals": 18,
+    "status": "active",
+    "id": "0xf7368b352499d8460d1bff35dcebd64470dedbfb9",
+    "links": [
+        {
+            "name": "youtube",
+            "url": "https://youtube.com/@agenticcai?si=9nn54ixB79B76Ocw"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/+AyTDxzogp3tjNzNl"
+        }
+    ]
 }
