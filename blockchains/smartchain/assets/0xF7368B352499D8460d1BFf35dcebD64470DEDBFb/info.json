@@ -1,19 +1,21 @@
 {
-  "name": "AGT-Token",
-  "symbol": "AGT",
-  "type": "BEP20",
-  "decimals": 18,
-  "description": "AGT is an AI-powered utility token for decentralized applications.",
-  "website": "https://agenticc-ai.io",
-  "explorer": "https://bscscan.com/token/0xF7368B352499D8460d1BFf35dcebD64470DEDBFb",
-  "status": "active",
-  "links": [
-    { "name": "website", "url": "https://agenticc-ai.io" },
-    { "name": "facebook", "url": "https://www.facebook.com/profile.php?id=61576319888143" },
-    { "name": "telegram", "url": "https://t.me/+AyTDxzogp3tjNzNl" }
-  ],
-  "tags": [
-    "ai",
-    "defi"
-  ]
+    "name": "AGT-Token",
+    "type": "BEP20",
+    "symbol": "AGT",
+    "decimals": 18,
+    "website": "https://agenticc-ai.io/",
+    "description": "Agenticc is a public, decentralized blockchain and smart contract platform that enables message passing and value transfer between any blockchain.",
+    "explorer": "https://bscscan.com/token/0xf7368b352499d8460d1bff35dcebd64470dedbfb",
+    "status": "active",
+    "id": "0xf7368b352499d8460d1bff35dcebd64470dedbfb",
+    "links": [
+        {
+            "name": "telegram",
+            "url": "https://t.me/+AyTDxzogp3tjNzNl"
+        },
+        {
+            "name": "youtube",
+            "url": "https://youtube.com/@agenticcai?si=9nn54ixB79B76Ocw"
+        }
+    ]
 }
