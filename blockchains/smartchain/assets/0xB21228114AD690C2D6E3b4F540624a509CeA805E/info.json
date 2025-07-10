@@ -1,26 +1,24 @@
 {
-  "name": "Baby Cat Coin",
-  "symbol": "BCC",
-  "type": "BEP20",
-  "decimals": 9,
-  "description": "Baby Cat Coin (BCC) is a meme-based BEP20 token on BNB Chain with 21 million total supply.",
-  "website": "https://dexscreener.com/bsc/0xB21228114AD690C2D6E3b4F540624a509CeA805E",
-  "explorer": "https://bscscan.com/token/0xB21228114AD690C2D6E3b4F540624a509CeA805E",
-  "status": "active",
-  "id": "0xB21228114AD690C2D6E3b4F540624a509CeA805E",
-  "tags": ["memes", "BCC" , "bcc" , "Baby Cat Coin" , "Babycat Coin" ],
-  "links": [
-    {
-      "name": "telegram",
-      "url": "https://t.me/Baby_Cat_Coin"
-    },
-    {
-      "name": "github",
-      "url": "https://github.com/sumitx100"
-    },
-    {
-      "name": "twitter",
-      "url": "https://x.com/Baby_Cat_Coin_?t=5bphwTaGzpqaR3kPW8g8CQ&s=03"
-    }
-  ]
+    "name": "Baby Cat Coin",
+    "type": "BEP20",
+    "symbol": "BCC",
+    "decimals": 9,
+    "website": "https://sites.google.com/view/babycatcoin/home",
+    "description": "\"This Isn't Just a Meme... It's a Memory.\"\nThis isn't just another cat picture.\nIt's a final memory of a beloved cat who has already passed away.\nBefore the last photo was taken, I made a promise:\n\"I'll create something big. A memory that lives forever.\"\n\nThis meme coin is more than crypto —\nIt's love, loyalty, and a tribute that will never fade.",
+    "explorer": "https://bscscan.com/token/0xb21228114ad690c2d6e3b4f540624a509cea805e",
+    "status": "active",
+    "id": "0xB21228114AD690C2D6E3b4F540624a509CeA805E",
+    "links": [
+        {
+            "name": "x",
+            "url": "https://x.com/Baby_Cat_Coin_"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/Baby_Cat_Coin"
+        }
+    ],
+    "tags": [
+        "BCC"
+    ]
 }
