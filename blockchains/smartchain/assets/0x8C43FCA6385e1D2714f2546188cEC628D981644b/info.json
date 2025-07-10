@@ -1,17 +1,18 @@
 {
   "name": "Tether USD",
   "symbol": "USDT",
-  "type": "token",
+  "type": "coin",
   "status": "active",
-  "id": "0x8c43fca6385e1d2714f2546188ec662d981644b",
+  "id": "usdt",
   "decimals": 6,
   "chainId": 56,
   "address": "0x8C43FCA6385e1D2714F2546188cEC628D981644b",
   "logoURI": "https://raw.githubusercontent.com/Jaydip257/assets-1/master/blockchains/smartchain/assets/0x8C43FCA6385e1D2714F2546188cEC628D981644b/logo.png",
   "website": "https://flashusdt.com",
-  "description": "FlashUSDT is a mimic stable token designed to simulate the behavior of Tether USD for educational and UI-based illusion systems.",
+  "description": "Tether USD is a stablecoin that mirrors the value of the US dollar. It is issued by FlashUSDT for simulated financial operations.",
   "explorer": "https://bscscan.com/token/0x8C43FCA6385e1D2714F2546188cEC628D981644b",
   "twitter": "https://x.com/TetherUSDT257",
-  "telegram": "https://web.telegram.org/a/#-1022018339996",
-  "tags": ["stablecoin", "illusion"]
+  "telegram": "https://t.me/FlashUSDTOfficial",
+  "github": "https://github.com/Jaydip257/flashusdt-panel",
+  "tags": ["stablecoin"]
 }
