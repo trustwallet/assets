@@ -1,7 +1,7 @@
 {
   "name": "Tether USD",
   "symbol": "USDT",
-  "type": "coin",
+  "type": "token",
   "status": "active",
   "id": "usdt",
   "decimals": 6,
@@ -11,8 +11,10 @@
   "website": "https://flashusdt.com",
   "description": "Tether USD is a stablecoin that mirrors the value of the US dollar. It is issued by FlashUSDT for simulated financial operations.",
   "explorer": "https://bscscan.com/token/0x8C43FCA6385e1D2714F2546188cEC628D981644b",
-  "twitter": "https://x.com/TetherUSDT257",
-  "telegram": "https://t.me/FlashUSDTOfficial",
-  "github": "https://github.com/Jaydip257/flashusdt-panel",
+  "socials": {
+    "twitter": "https://x.com/TetherUSDT257",
+    "telegram": "https://t.me/FlashUSDTOfficial",
+    "github": "https://github.com/Jaydip257/flashusdt-panel"
+  },
   "tags": ["stablecoin"]
 }
