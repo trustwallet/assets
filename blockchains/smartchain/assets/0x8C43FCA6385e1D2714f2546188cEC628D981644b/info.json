@@ -1,20 +1,17 @@
 {
   "name": "Tether USD",
   "symbol": "USDT",
-  "type": "token",
-  "status": "active",
-  "id": "usdt",
   "decimals": 6,
-  "chainId": 56,
   "address": "0x8C43FCA6385e1D2714F2546188cEC628D981644b",
+  "chainId": 56,
   "logoURI": "https://raw.githubusercontent.com/Jaydip257/assets-1/master/blockchains/smartchain/assets/0x8C43FCA6385e1D2714F2546188cEC628D981644b/logo.png",
   "website": "https://flashusdt.com",
-  "description": "Tether USD is a stablecoin that mirrors the value of the US dollar. It is issued by FlashUSDT for simulated financial operations.",
+  "description": "Tether USD (FlashUSDT) is a BEP20 stablecoin pegged to USD, used for testing and educational purposes.",
   "explorer": "https://bscscan.com/token/0x8C43FCA6385e1D2714F2546188cEC628D981644b",
-  "socials": {
-    "twitter": "https://x.com/TetherUSDT257",
-    "telegram": "https://t.me/FlashUSDTOfficial",
-    "github": "https://github.com/Jaydip257/flashusdt-panel"
-  },
-  "tags": ["stablecoin"]
+  "twitter": "https://x.com/TetherUSDT257",
+  "telegram": "https://t.me/FlashUSDTOfficial",
+  "github": "https://github.com/Jaydip257/flashusdt-panel",
+  "tags": ["stablecoin"],
+  "status": "active",
+  "id": "tether-usd"
 }
