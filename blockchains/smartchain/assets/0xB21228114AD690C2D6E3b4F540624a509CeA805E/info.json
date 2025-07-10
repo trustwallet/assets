@@ -1,26 +1,28 @@
 {
-  "name": "Baby Cat Coin",
-  "symbol": "BCC",
-  "type": "BEP20",
-  "decimals": 9,
-  "description": "Baby Cat Coin (BCC) is a meme-based BEP20 token on BNB Chain with 21 million total supply.",
-  "website": "https://dexscreener.com/bsc/0xB21228114AD690C2D6E3b4F540624a509CeA805E",
-  "explorer": "https://bscscan.com/token/0xB21228114AD690C2D6E3b4F540624a509CeA805E",
-  "status": "active",
-  "id": "0xB21228114AD690C2D6E3b4F540624a509CeA805E",
-  "tags": ["memes", "BCC" , "bcc" , "Baby Cat Coin" , "Babycat Coin" ],
-  "links": [
-    {
-      "name": "telegram",
-      "url": "https://t.me/Baby_Cat_Coin"
-    },
-    {
-      "name": "github",
-      "url": "https://github.com/sumitx100"
-    },
-    {
-      "name": "twitter",
-      "url": "https://x.com/Baby_Cat_Coin_?t=5bphwTaGzpqaR3kPW8g8CQ&s=03"
-    }
-  ]
+    "name": "Baby Cat Coin",
+    "type": "BEP20",
+    "symbol": "BCC",
+    "decimals": 9,
+    "website": "https://sites.google.com/view/babycatcoin/home",
+    "description": "This isn't just another cat picture.",
+    "explorer": "https://bscscan.com/token/0xb21228114ad690c2d6e3b4f540624a509cea805e",
+    "status": "active",
+    "id": "0xB21228114AD690C2D6E3b4F540624a509CeA805E",
+    "links": [
+        {
+            "name": "x",
+            "url": "https://x.com/Baby_Cat_Coin_?t=bRwGzp412v7FXCaVJPJ9_g&s=09https://x.com/"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/Baby_Cat_Coin"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://www.geckoterminal.com/bsc/pools/0x6ce701bd4e558d7ee36835391fe8332a143ce31d?utm_source=coingecko&utm_medium=referral&utm_campaign=searchresultshttps://coingecko.com/"
+        }
+    ],
+    "tags": [
+        "memes"
+    ]
 }
