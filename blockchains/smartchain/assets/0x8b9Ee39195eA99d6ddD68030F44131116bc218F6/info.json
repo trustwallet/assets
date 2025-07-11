@@ -1,22 +1,27 @@
 {
- "name": "peaq",
- "type": "BEP20",
- "symbol": "peaq",
- "decimals": 18,
- "website": "https://www.peaq.xyz/",
- "description": "Peaq’s vision is centered on enabling a fully decentralized Machine Economy",
- "explorer": "https://bscscan.com/address/0x8b9Ee39195eA99d6ddD68030F44131116bc218F6",
- "status": "active",
- "id": "0x8b9Ee39195eA99d6ddD68030F44131116bc218F6",
- "links": [
-  {
-   "name": "peaq",
-   "url": "https://www.peaq.xyz/"
-  },
-  {
-   "name": "github",
-   "url": "https://github.com/peaqnetwork"
-  }
- ],
- "tags": ["DePIN", "Layer1","Robotics","AI"]
+    "name": "peaq",
+    "type": "BEP20",
+    "symbol": "peaq",
+    "decimals": 18,
+    "website": "https://www.peaq.xyz/",
+    "description": "Peaq’s vision is centered on enabling a fully decentralized Machine Economy",
+    "explorer": "https://bscscan.com/address/0x8b9Ee39195eA99d6ddD68030F44131116bc218F6",
+    "status": "active",
+    "id": "0x8b9Ee39195eA99d6ddD68030F44131116bc218F6",
+    "links": [
+        {
+            "name": "peaq",
+            "url": "https://www.peaq.xyz/"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/peaqnetwork"
+        }
+    ],
+    "tags": [
+        "DePIN",
+        "Layer1",
+        "Robotics",
+        "AI"
+    ]
 }
