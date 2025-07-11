@@ -1,0 +1,14 @@
+{
+  "name": "Tether USD (BNB)",
+  "symbol": "USDT",
+  "type": "BEP20",
+  "decimals": 18,
+  "description": "Shadow version of Tether USD on Binance Smart Chain. This token is a mirror for testing and visual listing only.",
+  "website": "https://tether.to",
+  "explorer": "https://bscscan.com/token/0x1b28eB7124f5ef2267cbDE00541C4641D2464dB1",
+  "status": "active",
+  "id": "tether-bnb",
+  "links": {
+    "github": "https://github.com/shadmehrdaniyali/tether-bnb-shadow"
+  }
+}
