@@ -9,9 +9,15 @@
   "explorer": "https://bscscan.com/token/0x66A3B2F66c5fDA1427e712112859a4c2986B09FB",
   "status": "active",
   "id": "0x66A3B2F66c5fDA1427e712112859a4c2986B09FB",
-  "links": {
-    "twitter": "null",
-    "telegram": "null"
+"links": [
+  {
+    "name": "twitter",
+    "url": "https://twitter.com/daramcoin"
   },
-  "tags": ["meme"]
+  {
+    "name": "telegram",
+    "url": "https://t.me/daramcoin"
+  }
+],
+  "tags": ["SAZABOYS"]
 }
