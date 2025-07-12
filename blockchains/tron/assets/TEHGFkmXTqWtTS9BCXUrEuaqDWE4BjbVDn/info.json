@@ -1,22 +1,24 @@
 {
-    "id": "tehgfkmxtqwtts9bcxureuaqdwe4bjbvdn",
     "name": "OTC1124Token",
+    "website": "https://ipfs.io/ipfs/bafybeigzuqeotns7lyqu4bd5ftw76utxlwknxwcvtq2w3bavu6cbwdo344",
+    "description": "GRU-insured TRC20 token for OTC1124, fully verified and tradable.",
+    "explorer": "https://tronscan.org/#/token20/TEHGFkmXTqWtTS9BCXUrEuaqDWE4BjbVDn",
     "symbol": "OTC",
+    "type": "token",
     "decimals": 18,
-    "type": "trc20",
     "status": "active",
-    "holders": 1,
+    "tags": [
+        "defi",
+        "dapp"
+    ],
     "links": [
         {
-            "name": "docs",
-            "url": "https://ipfs.io/ipfs/bafybeigzuqeotns7lyqu4bd5ftw76utxlwknxwcvtq2w3bavu6cbwdo344"
+            "name": "explorer",
+            "url": "https://tronscan.org/#/token20/TEHGFkmXTqWtTS9BCXUrEuaqDWE4BjbVDn"
         },
         {
-            "name": "source_code",
-            "url": "https://ipfs.io/ipfs/bafybeigzuqeotns7lyqu4bd5ftw76utxlwknxwcvtq2w3bavu6cbwdo344/OTC1124Token.sol"
+            "name": "website",
+            "url": "https://ipfs.io/ipfs/bafybeigzuqeotns7lyqu4bd5ftw76utxlwknxwcvtq2w3bavu6cbwdo344"
         }
-    ],
-    "tags": [
-        "swap"
     ]
 }
