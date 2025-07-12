@@ -3,9 +3,14 @@
   "symbol": "DADDY",
   "decimals": 18,
   "status": "active",
-  "description": "DaddyToken is a BEP20 token deployed on BNB Smart Chain.",
-  "website": "https://your-website.com",
-  "explorer": "https://bscscan.com/token/0xac582de3683c87c95c1d5415a4a36798a9e6e234",
+  "description": "DaddyToken is a community-driven BEP20 token on BNB Smart Chain.",
+  "website": "https://example.com",
+  "explorer": "https://bscscan.com/token/0xAc582DE3683c87c95c1D5415a4A36798A9E6E234",
   "type": "BEP20",
-  "id": "0xac582de3683c87c95c1d5415a4a36798a9e6e234"
+  "id": "0xAc582DE3683c87c95c1D5415a4A36798A9E6E234",
+  "links": {
+    "telegram": "https://t.me/@normal1097",
+    "twitter": "https://twitter.com/"
+  },
+  "tags": ["token"]
 }
