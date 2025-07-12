@@ -1,24 +1,47 @@
 {
-    "name": "OTC1124Token",
-    "website": "https://ipfs.io/ipfs/bafybeigzuqeotns7lyqu4bd5ftw76utxlwknxwcvtq2w3bavu6cbwdo344",
-    "description": "GRU-insured TRC20 token for OTC1124, fully verified and tradable.",
-    "explorer": "https://tronscan.org/#/token20/TEHGFkmXTqWtTS9BCXUrEuaqDWE4BjbVDn",
-    "symbol": "OTC",
-    "type": "token",
-    "decimals": 18,
-    "status": "active",
-    "tags": [
-        "defi",
-        "dapp"
-    ],
-    "links": [
-        {
-            "name": "explorer",
-            "url": "https://tronscan.org/#/token20/TEHGFkmXTqWtTS9BCXUrEuaqDWE4BjbVDn"
-        },
-        {
-            "name": "website",
-            "url": "https://ipfs.io/ipfs/bafybeigzuqeotns7lyqu4bd5ftw76utxlwknxwcvtq2w3bavu6cbwdo344"
-        }
-    ]
+
+  "name": "OTC1124Token",
+
+  "type": "TRC20",
+
+  "symbol": "OTC",
+
+  "decimals": 18,
+
+  "description": "GRU-insured TRC20 token for OTC1124, fully verified and tradable.",
+
+  "website": "https://ipfs.io/ipfs/bafybeigzuqeotns7lyqu4bd5ftw76utxlwknxwcvtq2w3bavu6cbwdo344",
+
+  "explorer": "https://tronscan.org/#/token20/TEHGFkmXTqWtTS9BCXUrEuaqDWE4BjbVDn",
+
+  "id": "TEHGFkmXTqWtTS9BCXUrEuaqDWE4BjbVDn",
+
+  "links": [
+
+    {
+
+      "name": "docs",
+
+      "url": "https://ipfs.io/ipfs/bafybeigzuqeotns7lyqu4bd5ftw76utxlwknxwcvtq2w3bavu6cbwdo344"
+
+    },
+
+    {
+
+      "name": "source_code",
+
+      "url": "https://ipfs.io/ipfs/bafybeigzuqeotns7lyqu4bd5ftw76utxlwknxwcvtq2w3bavu6cbwdo344/OTC1124Token.sol"
+
+    }
+
+  ],
+
+  "tags": [
+
+    "defi",
+
+    "dapp"
+
+  ]
+
 }
