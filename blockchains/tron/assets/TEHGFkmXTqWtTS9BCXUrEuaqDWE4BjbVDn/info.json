@@ -1,8 +1,25 @@
 {
+    "id": "tehgfkmxtqwtts9bcxureuaqdwe4bjbvdn",
     "name": "OTC1124Token",
     "symbol": "OTC",
+    "type": "trc-20",
+    "status": "active",
     "decimals": 18,
     "description": "GRU-insured TRC20 token for OTC1124, fully verified and tradable.",
     "website": "https://ipfs.io/ipfs/bafybeigzuqeotns7lyqu4bd5ftw76utxlwknxwcvtq2w3bavu6cbwdo344",
-    "explorer": "https://tronscan.org/#/token20/TEHGFkmXTqWtTS9BCXUrEuaqDWE4BjbVDn"
+    "explorer": "https://tronscan.org/#/token20/TEHGFkmXTqWtTS9BCXUrEuaqDWE4BjbVDn",
+    "links": [
+        {
+            "name": "website",
+            "url": "https://ipfs.io/ipfs/bafybeigzuqeotns7lyqu4bd5ftw76utxlwknxwcvtq2w3bavu6cbwdo344"
+        },
+        {
+            "name": "explorer",
+            "url": "https://tronscan.org/#/token20/TEHGFkmXTqWtTS9BCXUrEuaqDWE4BjbVDn"
+        }
+    ],
+    "tags": [
+        "utility"
+    ],
+    "holders_count": 1
 }
