@@ -15,7 +15,9 @@
     "meme",
     "cult",
     "philosophical",
-    "community"
+    "community",
+    "fee-on-transfer",
+    "locked-supply"
   ],
   "links": [
     {
@@ -34,5 +36,15 @@
       "name": "telegram",
       "url": "https://t.me/NEKOXAUOFFICIAL"
     }
-  ]
+  ],
+  "tokenomics": {
+    "total_supply": "21000000",
+    "transfer_fee": "0.35%",
+    "locked_supply_percentage": "90%",
+    "locker_platform": "Unicrypt (UNCX)",
+    "locker_link": "https://app.uncx.network/lockers/token/chain/1/address/0x23864f621fe1e150e166502aa5aaa2ff306047ed",
+    "locked_duration": "1 year",
+    "locked_from": "2025-07-13",
+    "locked_until": "2026-07-13"
+  }
 }
