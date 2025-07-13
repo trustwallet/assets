@@ -1,10 +1,11 @@
 {
   "name": "AuraFarmingBoatKid",
   "symbol": "AFBK",
+  "type": "token",
   "decimals": 18,
-  "description": "AFBK is the native token of the AuraFarmingBoatKid project — a gamified ecosystem with economic control mechanics and integrated NFT logic.",
-  "website": "https://aurafarmingboatkid.io",
-  "explorer": "https://bscscan.com/token/0x5516cfa7A5c98C0A706f51E56D8D8f5628959528",
-  "status": "active",
-  "id": "0x5516cfa7A5c98C0A706f51E56D8D8f5628959528"
+  "description": "AFBK is the native utility token of the AuraFarmingBoatKid ecosystem.",
+  "website": "https://aurafarmingboatkid.com",
+  "telegram": "https://t.me/aurafarmingboatkid",
+  "tags": ["defi", "utility"],
+  "status": "active"
 }
