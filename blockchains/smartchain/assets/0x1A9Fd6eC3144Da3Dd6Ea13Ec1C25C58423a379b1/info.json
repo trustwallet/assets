@@ -1,13 +1,13 @@
 {
-    "name": "Sperax ",
-    "type": "ERC20",
+    "name": "Sperax",
+    "type": "BEP20",
     "symbol": "SPA",
     "decimals": 18,
     "website": "https://sperax.io",
     "description": "Sperax is a programmable agent layer for DeFi, enabling autonomous capital execution, dynamic yield optimization, and onchain risk defense. SperaxOS. Your edge, automated. Smart agents for fast, low-noise trading across chains.",
-    "explorer": "https://etherscan.io/token/0xB4A3B0Faf0Ab53df58001804DdA5Bfc6a3D59008",
+    "explorer": "https://bscscan.com/token/0x1A9Fd6eC3144Da3Dd6Ea13Ec1C25C58423a379b1",
     "status": "active",
-    "id": "0xB4A3B0Faf0Ab53df58001804DdA5Bfc6a3D59008",
+    "id": "0x1A9Fd6eC3144Da3Dd6Ea13Ec1C25C58423a379b1",
     "links": [
         {
             "name": "x",
@@ -34,5 +34,7 @@
             "url": "https://www.coingecko.com/en/coins/sperax"
         }
     ],
-    "tags": []
+    "tags": [
+        "defi"
+    ]
 }
