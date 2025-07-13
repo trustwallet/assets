@@ -155,9 +155,6 @@
                     "base": "c20000714_t0xC9849E6fdB743d08fAeE3E34dd2D1bc69EA11a51"
                 },
                 {
-                    "base": "c20000714_t0xCa3F508B8e4Dd382eE878A314789373D80A5190A"
-                },
-                {
                     "base": "c20000714_t0xcc2E12a9b5b75360c6FBf23B584c275D52cDdb0E"
                 },
                 {
@@ -191,9 +188,7 @@
                     "base": "c20000714_t0x734D66f635523D7ddb7d2373C128333DA313041b"
 
                 },
-                {
-                    "base": "c20000714_t0xff44967f2E4EBE0b8c5b6812f25e1b9BceC70b34"
-                },
+            
                 {
                     "base": "c20000714_t0xc748673057861a797275CD8A068AbB95A902e8de"
                 }
@@ -733,17 +728,6 @@
             "pairs": []
         },
         {
-            "chainId": 56,
-            "asset": "c20000714_t0xCa3F508B8e4Dd382eE878A314789373D80A5190A",
-            "type": "BEP20",
-            "address": "0xCa3F508B8e4Dd382eE878A314789373D80A5190A",
-            "name": "beefy.finance",
-            "symbol": "BIFI",
-            "decimals": 18,
-            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0xCa3F508B8e4Dd382eE878A314789373D80A5190A/logo.png",
-            "pairs": []
-        },
-        {
             "asset": "c20000714_t0xcc2E12a9b5b75360c6FBf23B584c275D52cDdb0E",
             "type": "BEP20",
             "address": "0xcc2E12a9b5b75360c6FBf23B584c275D52cDdb0E",
@@ -874,16 +858,6 @@
             "symbol": "USDZ",
             "decimals": 9,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0x734D66f635523D7ddb7d2373C128333DA313041b/logo.png",
-            "pairs": []
-        },
-        {
-            "asset": "c20000714_t0xff44967f2E4EBE0b8c5b6812f25e1b9BceC70b34",
-            "type": "BEP20",
-            "address": "0xff44967f2E4EBE0b8c5b6812f25e1b9BceC70b34",
-            "name": "ZEDXION",
-            "symbol": "ZEDXION",
-            "decimals": 18,
-            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0xff44967f2E4EBE0b8c5b6812f25e1b9BceC70b34/logo.png",
             "pairs": []
         },
         {

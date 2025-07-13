@@ -1,37 +1,21 @@
 {
-    "name": "USD Coin",
-    "symbol": "USDC",
+    "name": "USD Coin (Portal from Solana)",
+    "symbol": "USDCsol",
     "type": "SUI",
     "decimals": 6,
-    "description": "USDC is a fully collateralized US Dollar stablecoin developed by CENTRE, the open source project with Circle being the first of several forthcoming issuers.",
-    "website": "https://www.centre.io",
+    "description": "Cross Chain Portal Bridged Token",
+    "website": "https://portalbridge.com/?targetChain=sui",
     "explorer": "https://explorer.sui.io/address/0xb231fcda8bbddb31f2ef02e6161444aec64a514e2c89279584ac9806ce9cf037::coin::COIN",
-    "research": "https://research.binance.com/en/projects/usd-coin",
     "status": "active",
     "id": "0xb231fcda8bbddb31f2ef02e6161444aec64a514e2c89279584ac9806ce9cf037::coin::COIN",
     "links": [
         {
-            "name": "github",
-            "url": "https://github.com/centrehq"
-        },
-        {
-            "name": "whitepaper",
-            "url": "https://centre.io/pdfs/centre-whitepaper.pdf"
-        },
-        {
-            "name": "coinmarketcap",
-            "url": "https://coinmarketcap.com/currencies/usd-coin/"
-        },
-        {
-            "name": "coingecko",
-            "url": "https://coingecko.com/en/coins/usd-coin/"
-        },
-        {
-            "name": "medium",
-            "url": "https://medium.com/centre-blog"
+            "name": "docs",
+            "url": "https://portalbridge.com/docs/faqs/liquid-markets/#target-chain-sui"
         }
     ],
     "tags": [
-        "stablecoin"
+        "stablecoin",
+        "wrapped"
     ]
 }
