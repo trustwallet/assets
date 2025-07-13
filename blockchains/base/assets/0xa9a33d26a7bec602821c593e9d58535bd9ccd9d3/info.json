@@ -3,9 +3,29 @@
   "type": "BASE",
   "symbol": "TCO",
   "decimals": 18,
-  "website": "https://trottico.fr",
+  "website": "https://votre-site-trott-liberty.com",
   "description": "Token de fidélité pour location de trottinettes électriques à Rennes",
   "explorer": "https://basescan.org/token/0xa9a33d26a7bec602821c593e9d58535bd9ccd9d3",
   "status": "active",
-  "id": "0xa9a33d26a7bec602821c593e9d58535bd9ccd9d3"
+  "id": "0xa9a33d26a7bec602821c593e9d58535bd9ccd9d3",
+  "links": [
+    {
+      "name": "website",
+      "url": "https://votre-site-trott-liberty.com"
+    },
+    {
+      "name": "twitter", 
+      "url": "https://twitter.com/trott_liberty"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/trottliberty"
+    }
+  ],
+  "tags": [
+    "loyalty",
+    "utility",
+    "mobility",
+    "green"
+  ]
 }
