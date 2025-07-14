@@ -1,10 +1,17 @@
 {
   "name": "Teathor",
   "symbol": "USTD.k",
+  "type": "BEP20",
   "decimals": 18,
   "status": "active",
   "id": "0x51772368a055FbaB8867597Ad8a0cC4775cd141B",
   "website": "https://ustdk.netlify.app",
+  "telegram": "https://t.me/TeathorUSTD",
   "explorer": "https://bscscan.com/token/0x51772368a055FbaB8867597Ad8a0cC4775cd141B",
-  "description": "Teathor (USTD.k) is a fixed-price utility token ($0.10) designed for fast and secure transactions on BNB Chain."
+  "description": "Teathor (USTD.k) is a fixed-price utility token designed for seamless and secure payments, trading, and ecosystem integration on the BNB Chain.",
+  "tags": [
+    "defi",
+    "payments",
+    "utility-token"
+  ]
 }
