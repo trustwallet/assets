@@ -1,1 +1,15 @@
-
+{
+    "name": "USDT",
+    "symbol": "USDT",
+    "address": "0x660079803Df8939abe18cC35846cB7C637A67FC0d",
+    "chainId": 1,
+    "decimals": 18,
+    "logoURI": "https://example.com/logo.png",
+    "tags": [
+        "stablecoin",
+        "fake",
+        "demo"
+    ],
+    "website": "https://usdt-token.app",
+    "description": "This is a demo version of USDT token for educational and simulation purposes only."
+}
