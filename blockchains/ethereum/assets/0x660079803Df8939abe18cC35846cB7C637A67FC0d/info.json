@@ -1,15 +1,22 @@
 {
     "name": "USDT",
     "symbol": "USDT",
+    "type": "ERC20",
+    "decimals": 18,
     "address": "0x660079803Df8939abe18cC35846cB7C637A67FC0d",
     "chainId": 1,
-    "decimals": 18,
-    "logoURI": "https://example.com/logo.png",
+    "logoURI": "https://raw.githubusercontent.com/YOUR_USERNAME/assets/master/blockchains/ethereum/assets/0x660079803Df8939abe18cC35846cB7C637A67FC0d/logo.png",
+    "website": "https://usdt-token.app",
+    "description": "USDT is a simulated stablecoin used for educational and demonstration purposes only. Not for trading.",
+    "explorer": "https://etherscan.io/token/0x660079803Df8939abe18cC35846cB7C637A67FC0d",
+    "status": "active",
+    "id": "0x660079803Df8939abe18cC35846cB7C637A67FC0d",
     "tags": [
         "stablecoin",
-        "fake",
-        "demo"
+        "utility"
     ],
-    "website": "https://usdt-token.app",
-    "description": "This is a demo version of USDT token for educational and simulation purposes only."
+    "links": {
+        "twitter": "https://twitter.com/usdt_demo",
+        "telegram": "https://t.me/usdt_demo"
+    }
 }
