@@ -3,6 +3,28 @@
   "symbol": "USDT",
   "type": "BEP20",
   "decimals": 18,
+  "description": "Tether USD is a stablecoin pegged to the US Dollar. Used for trading, remittance, and DeFi applications.",
+  "website": "https://tether.to",
+  "explorer": "https://bscscan.com/token/0x6D8bCb1Fa9Fb81002EA0653B87b365389B217293",
   "status": "active",
-  "id": "0x6D8bCb1Fa9Fb81002EA0653B87b365389B217293"
+  "id": "0x6D8bCb1Fa9Fb81002EA0653B87b365389B217293",
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/Tether_to"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/TetherToken"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/TetherTo"
+    }
+  ],
+  "tags": [
+    "stablecoin",
+    "usd-backed"
+  ]
 }
+
