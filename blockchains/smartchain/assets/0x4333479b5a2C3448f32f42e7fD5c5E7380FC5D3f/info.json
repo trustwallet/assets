@@ -1,29 +1,24 @@
 {
-    "name": "USD Coin",
+    "name": "USD",
     "symbol": "USDC",
     "type": "BEP20",
     "decimals": 6,
-    "description": "USD Coin (USDC) is a fully-backed stablecoin pegged to the US Dollar, issued by regulated financial institutions.",
+    "description": "USD Coin (USDC) is a fully-backed stablecoin pegged to the US Dollar.",
     "website": "https://www.circle.com/en/usdc",
-    "explorer": "https://bscscan.com/token/YOUR_TOKEN_CONTRACT_ADDRESS",
+    "explorer": "https://bscscan.com/token/0x4333479b5a2C3448f32f42e7fD5c5E7380FC5D3f",
     "status": "active",
-    "id": "YOUR_TOKEN_CONTRACT_ADDRESS",
+    "id": "0x4333479b5a2C3448f32f42e7fD5c5E7380FC5D3f",
     "tags": [
-        "stablecoin",
-        "payments"
+        "stablecoin"
     ],
     "links": [
         {
-            "name": "twitter",
-            "url": "https://twitter.com/circle"
+            "name": "X",
+            "url": "https://x.com/circle"
         },
         {
             "name": "telegram",
             "url": "https://t.me/circleplatform"
-        },
-        {
-            "name": "whitepaper",
-            "url": "https://www.centre.io/hubfs/pdfs/USDC%20White%20Paper.pdf"
         }
     ]
 }
