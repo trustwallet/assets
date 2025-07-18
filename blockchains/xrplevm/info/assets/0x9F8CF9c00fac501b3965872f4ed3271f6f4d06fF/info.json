@@ -1,0 +1,12 @@
+{
+  "name": "Tether USD",
+  "type": "ERC20",
+  "symbol": "USDT",
+  "decimals": 6,
+  "website": "https://tether.to",
+  "description": "USDT bridged from Ethereum to XRPL-EVM via Squid Router.",
+  "explorer": "https://explorer.xrplevm.org/address/0x9F8CF9c00fac501b3965872f4ed3271f6f4d06fF",
+  "status": "active",
+  "id": "0x9F8CF9c00fac501b3965872f4ed3271f6f4d06fF",
+  "tags": ["wrapped", "stablecoin"]
+}
