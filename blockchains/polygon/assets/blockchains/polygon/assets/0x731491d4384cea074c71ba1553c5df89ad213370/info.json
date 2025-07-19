@@ -1,9 +1,19 @@
 {
   "name": "Legacy Reserve",
   "symbol": "LGR",
+  "type": "ERC20",
   "decimals": 18,
-  "description": "Legacy Reserve (LGR) is a mission-driven utility token designed to fortify the economic foundation of Black and Brown communities through digital finance and decentralized opportunity.",
+  "status": "active",
+  "id": "0x731491d4384cea074c71ba1553c5df89ad213370",
+  "description": "Legacy Reserve (LGR) is a mission-driven utility token focused on strengthening the economic foundation of Black and Brown communities through financial tools, education, and access.",
   "website": "https://legacyreservecoin.com",
+  "explorer": "https://polygonscan.com/token/0x731491d4384cea074c71ba1553c5df89ad213370",
+  "links": {
+    "twitter": "https://twitter.com/LegacyReserve",
+    "github": "https://github.com/JayBLegacy"
+  },
+  "tags": ["utility", "community", "defi"],
   "logoURI": "https://raw.githubusercontent.com/JayBLegacy/assets/master/blockchains/polygon/assets/0x731491d4384cea074c71ba1553c5df89ad213370/logo.png"
 }
+
 
