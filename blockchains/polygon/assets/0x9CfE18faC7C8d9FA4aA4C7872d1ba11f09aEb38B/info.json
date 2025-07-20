@@ -9,8 +9,14 @@
   "type": "coin",
   "id": "0x9CfE18faC7C8d9FA4aA4C7872d1ba11f09aEb38B",
   "tags": ["defi"],
-  "links": {
-    "twitter": "https://x.com/CoinFreepal",
-    "telegram": "https://t.me/FreepalCoin1"
-  }
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://x.com/CoinFreepal"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/FreepalCoin1"
+    }
+  ]
 }
