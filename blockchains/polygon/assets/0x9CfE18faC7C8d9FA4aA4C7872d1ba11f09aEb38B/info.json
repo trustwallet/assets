@@ -1,10 +1,16 @@
 {
   "name": "Freepal Coin",
   "symbol": "FPC",
-  "description": "Freepal Coin (FPC) adalah token crypto berbasis Polygon dengan misi mendukung kebebasan finansial dan kemanusiaan, khususnya di Palestina.",
+  "type": "token",
+  "status": "active",
+  "decimals": 18,
+  "chainId": 137,
+  "address": "0x9CfE18faC7C8d9FA4aA4C7872d1ba11f09aEb38B",
+  "website": "https://freepalcoin.xyz/",
+  "description": "Freepal Coin (FPC) is a Polygon-based token designed to raise awareness and support for freedom movements, with long-term utilities in crypto education and micro-donation systems.",
   "explorer": "https://polygonscan.com/token/0x9CfE18faC7C8d9FA4aA4C7872d1ba11f09aEb38B",
-  "twitter": "https://x.com/CoinFreepal",
-  "telegram": "https://t.me/FreepalCoin1",
-  "tags": ["token"],
-  "decimals": 18
+  "links": {
+    "twitter": "https://x.com/CoinFreepal",
+    "telegram": "https://t.me/FreepalCoin1"
+  }
 }
