@@ -1,0 +1,32 @@
+{
+    "name": "Wrapped USD₮",
+    "type": "SPL",
+    "symbol": "wUSDT",
+    "decimals": 6,
+    "website": "https://wusdt.pro",
+    "description": "wUSDT, as a \"wrapped\" version of USDT on Solana, isn't issued by Tether itself. Instead, it's created by a separate entity or protocol that \"wraps\" existing USDT (typically ERC-20 USDT from Ethereum or TRC-20 USDT from Tron) and issues an equivalent token on the Solana blockchain. This wrapping process usually involves a custodian (which can be a centralized entity, a DAO, or a smart contract) that holds the original USDT in reserve, ensuring the 1:1 peg to wUSDT.\n\nThis design is crucial for enabling interoperability between different blockchains. It allows users to leverage the stability of USDT within the Solana ecosystem, benefiting from its speed and low fees, without Tether needing to directly issue a Solana-native version.",
+    "explorer": "https://solscan.io/token/Gn8a9QmyFyED4apYSZ8L9AWWVeFp2yGuXJaV6p7XZbQ9",
+    "status": "active",
+    "id": "Gn8a9QmyFyED4apYSZ8L9AWWVeFp2yGuXJaV6p7XZbQ9",
+    "links": [
+        {
+            "name": "x",
+            "url": "https://x.com/WUSDT_SOL"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/wusdt-sol"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/WUSDT_SOL"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://wusdt.pro/whitepaper"
+        }
+    ],
+    "tags": [
+        "wrapped"
+    ]
+}
