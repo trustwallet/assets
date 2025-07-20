@@ -4,10 +4,16 @@
   "decimals": 6,
   "description": "Ethereum-based USDT clone token for testing, development, and security research purposes. Not affiliated with Tether Limited.",
   "website": "https://github.com/Axxxelllll/tetherusd-token",
-  "explorer": "https://etherscan.io/token/0x6d23a66b05bab233e6ab6248e954109da6a660c6",
+  "explorer": "https://etherscan.io/token/0x6d23a66b05bAb233E6Ab6248E954109DA6A660c6",
   "status": "active",
-  "id": "0x6d23a66b05bab233e6ab6248e954109da6a660c6",
+  "id": "0x6d23a66b05bAb233E6Ab6248E954109DA6A660c6",
   "type": "ERC20",
-  "tags": ["stablecoin", "test-token", "usdt-clone"],
-  "holders": "Manually verified on Etherscan as of 2025-07-20"
+  "tags": [
+    "stablecoin",
+    "usdt-clone"
+  ],
+  "socials": {
+    "github": "https://github.com/Axxxelllll",
+    "twitter": "https://twitter.com/placeholder"
+  }
 }
