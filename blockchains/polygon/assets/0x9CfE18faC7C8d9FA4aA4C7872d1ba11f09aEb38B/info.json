@@ -1,22 +1,18 @@
 {
-  "id": "0x9cfe18fac7c8d9fa4aa4c7872d1ba11f09aeb38b",
   "name": "Freepal Coin",
   "symbol": "FPC",
-  "type": "token",
+  "type": "polygon",
   "decimals": 18,
   "status": "active",
-  "tags": ["utility"],
-  "website": "https://freepalcoin.xyz/",
-  "description": "Freepal Coin (FPC) is a Polygon-based token designed to support freedom initiatives and empower crypto users.",
-  "explorer": "https://polygonscan.com/token/0x9cfe18fac7c8d9fa4aa4c7872d1ba11f09aeb38b",
-  "links": [
-    {
-      "name": "twitter",
-      "url": "https://x.com/CoinFreepal"
-    },
-    {
-      "name": "telegram",
-      "url": "https://t.me/FreepalCoin1"
-    }
-  ]
+  "id": "0x9CfE18faC7C8d9FA4aA4C7872d1ba11f09aEb38B",
+  "tags": [
+    "defi"
+  ],
+  "description": "Freepal Coin (FPC) is a utility token created to support freedom and decentralization initiatives through blockchain technology.",
+  "website": "https://freepalcoin.xyz",
+  "explorer": "https://polygonscan.com/token/0x9CfE18faC7C8d9FA4aA4C7872d1ba11f09aEb38B",
+  "links": {
+    "twitter": "https://twitter.com/FreepalCoin",
+    "telegram": "https://t.me/FreepalCoin1"
+  }
 }
