@@ -1,26 +1,17 @@
 {
+  "id": "0x9CfE18faC7C8d9FA4aA4C7872d1ba11f09aEb38B",
   "name": "Freepal Coin",
   "symbol": "FPC",
-  "type": "token",
   "decimals": 18,
-  "description": "Freepal Coin (FPC) adalah token Polygon yang mendukung perjuangan kemerdekaan Palestina serta mendorong kemandirian finansial.",
+  "description": "Freepal Coin (FPC) adalah token di jaringan Polygon yang mendukung kebebasan Palestina dan mendorong kemerdekaan finansial global.",
   "website": "https://freepalcoin.vercel.app/",
   "explorer": "https://polygonscan.com/token/0x9CfE18faC7C8d9FA4aA4C7872d1ba11f09aEb38B",
+  "type": "ERC20",
+  "links": {
+    "twitter": "https://x.com/CoinFreepal",
+    "telegram": "https://t.me/FREEPALCOIN1",
+    "github": "https://github.com/faktinya"
+  },
   "status": "active",
-  "id": "0x9CfE18faC7C8d9FA4aA4C7872d1ba11f09aEb38B",
-  "links": [
-    {
-      "name": "twitter",
-      "url": "https://x.com/CoinFreepal"
-    },
-    {
-      "name": "telegram",
-      "url": "https://t.me/FREEPALCOIN1"
-    },
-    {
-      "name": "github",
-      "url": "https://github.com/faktinya"
-    }
-  ],
   "tags": ["defi"]
 }
