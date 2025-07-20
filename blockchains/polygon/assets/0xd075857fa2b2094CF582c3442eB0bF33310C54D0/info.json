@@ -1,11 +1,29 @@
 {
   "name": "Wellie Token",
-  "symbol": "WELLIE",
   "type": "ERC20",
+  "symbol": "WELLIE",
   "decimals": 18,
   "description": "The official utility token of the Wellermen ecosystem.",
-  "website": "https://welliecoin.com",
-  "explorer": "https://polygonscan.com/token/0xd075857fa2b2094CF582c3442eB0bF33310C54D0",
+  "website": "https://www.thewellermengroup.com",
+  "explorer": "https://polygonscan.com/token/0xd075857fa2b2094cf582c3442eb0bf33310c54d0",
   "status": "active",
-  "id": "wellie"
+  "id": "0xd075857fa2b2094cf582c3442eb0bf33310c54d0",
+  "links": [
+    {
+      "name": "faucet",
+      "url": "https://welliecoin.com"
+    },
+    {
+      "name": "whitepaper",
+      "url": "https://www.thewellermengroup.com/white-paper"
+    },
+    {
+      "name": "facebook",
+      "url": "https://www.facebook.com/TheWellermenGroup"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/jackofall1232"
+    }
+  ]
 }
