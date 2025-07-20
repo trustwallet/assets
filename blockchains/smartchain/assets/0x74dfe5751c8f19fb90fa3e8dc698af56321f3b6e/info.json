@@ -6,9 +6,15 @@
   "id": "0x74dfe5751c8f19fb90fa3e8dc698af56321f3b6e",
   "website": "https://laodengs.github.io/",
   "explorer": "https://bscscan.com/address/0x74dfe5751c8f19fb90fa3e8dc698af56321f3b6e",
-  "links": {
-    "github": "https://github.com/laodengs",
-    "telegram": "https://t.me/laodeng6667"
-  },
+  "links": [
+    {
+      "name": "github",
+      "url": "https://github.com/laodengs"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/laodeng6667"
+    }
+  ],
   "tags": ["defi"]
 }
