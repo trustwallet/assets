@@ -3,22 +3,20 @@
   "symbol": "BTCBR",
   "type": "BEP20",
   "decimals": 18,
-  "address": "0xe625401b1f01d29c8b04e23b53232e01efc3d23d",
-  "id": "0xe625401b1f01d29c8b04e23b53232e01efc3d23d",
+  "address": "0xe625401B1f01D29C8b04e23B53232E01EFC3d23D",
+  "id": "0xe625401B1f01D29C8b04e23B53232E01EFC3d23D",
   "status": "active",
   "description": "BTCBR is a BEP20 token that mirrors Bitcoin on the Binance Smart Chain.",
+  "website": "https://coinmarketcap.com/currencies/bitcoinbr/",
+  "explorer": "https://bscscan.com/token/0xe625401B1f01D29C8b04e23B53232E01EFC3d23D",
   "links": [
     {
       "name": "twitter",
-      "url": "https://twitter.com/btcbr_test"
+      "url": "https://x.com/btcbr_test"
     },
     {
       "name": "coinmarketcap",
       "url": "https://coinmarketcap.com/currencies/bitcoinbr/"
-    },
-    {
-      "name": "explorer",
-      "url": "https://bscscan.com/token/0xe625401b1f01d29c8b04e23b53232e01efc3d23d"
     }
   ],
   "logo": "logo.png",
