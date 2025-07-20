@@ -1,11 +1,21 @@
 {
   "name": "Freepal Coin",
   "symbol": "FPC",
+  "type": "ERC20",
   "decimals": 18,
+  "description": "Freepal Coin (FPC) is a freedom-themed token created on Polygon.",
+  "website": "https://freepalcoin.com",
+  "explorer": "https://polygonscan.com/token/0x9CfE18faC7C8d9FA4aA4C7872d1ba11f09aEb38B",
   "status": "active",
-  "tags": ["defi", "governance"],
-  "links": {
-    "twitter": "https://twitter.com/FreepalCoin",
-    "telegram": "https://t.me/FreepalCoin1"
-  }
+  "id": "0x9CfE18faC7C8d9FA4aA4C7872d1ba11f09aEb38B",
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://x.com/CoinFreepal"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/FreepalCoin1"
+    }
+  ]
 }
