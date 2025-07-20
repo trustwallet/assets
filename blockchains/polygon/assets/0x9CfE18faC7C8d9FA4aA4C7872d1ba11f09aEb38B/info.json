@@ -3,7 +3,7 @@
   "symbol": "FPC",
   "type": "ERC20",
   "decimals": 18,
-  "description": "Freepal Coin (FPC) is a decentralized token to support freedom with real utility.",
+  "description": "Freepal Coin (FPC) is a token created to support the idea of freedom for Palestine while empowering digital asset holders. Built on the Polygon blockchain, it symbolizes economic resistance and digital activism.",
   "website": "https://freepalcoin.vercel.app/",
   "explorer": "https://polygonscan.com/token/0x9CfE18faC7C8d9FA4aA4C7872d1ba11f09aEb38B",
   "status": "active",
@@ -11,12 +11,20 @@
   "links": [
     {
       "name": "twitter",
-      "url": "https://x.com/CoinFreepal"
+      "url": "https://twitter.com/CoinFreepal"
     },
     {
       "name": "telegram",
       "url": "https://t.me/FreepalCoin1"
+    },
+    {
+      "name": "whitepaper",
+      "url": "https://freepalcoin.vercel.app/whitepaper.pdf"
     }
   ],
-  "tags": ["defi"]
+  "tags": [
+    "defi",
+    "charity",
+    "polygon"
+  ]
 }
