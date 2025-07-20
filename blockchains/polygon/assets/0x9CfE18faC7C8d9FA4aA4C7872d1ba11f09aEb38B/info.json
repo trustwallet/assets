@@ -1,26 +1,21 @@
 {
   "name": "Freepal Coin",
   "symbol": "FPC",
-  "type": "token",
+  "type": "ERC20",
   "decimals": 18,
+  "description": "Freepal Coin (FPC) is a decentralized token to support freedom with real utility.",
+  "website": "https://freepalcoin.vercel.app/",
+  "explorer": "https://polygonscan.com/token/0x9CfE18faC7C8d9FA4aA4C7872d1ba11f09aEb38B",
   "status": "active",
   "id": "0x9CfE18faC7C8d9FA4aA4C7872d1ba11f09aEb38B",
   "links": [
     {
-      "name": "website",
-      "url": "https://freepalcoin.vercel.app/"
+      "name": "twitter",
+      "url": "https://x.com/CoinFreepal"
     },
     {
       "name": "telegram",
       "url": "https://t.me/FreepalCoin1"
-    },
-    {
-      "name": "twitter",
-      "url": "https://twitter.com/FreepalCoin"
-    },
-    {
-      "name": "explorer",
-      "url": "https://polygonscan.com/token/0x9CfE18faC7C8d9FA4aA4C7872d1ba11f09aEb38B"
     }
   ],
   "tags": ["defi"]
