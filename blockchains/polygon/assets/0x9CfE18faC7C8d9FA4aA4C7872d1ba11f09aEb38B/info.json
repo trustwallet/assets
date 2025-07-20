@@ -1,14 +1,15 @@
 {
-  "name": "Freepal Coin",
-  "symbol": "FPC",
   "type": "token",
+  "assetType": "token",
   "decimals": 18,
   "website": "https://freepalcoin.vercel.app",
-  "description": "Freepal Coin (FPC) adalah token crypto yang mendukung kebebasan finansial melalui teknologi blockchain.",
+  "description": "Freepal Coin (FPC) is a token on the Polygon blockchain supporting financial freedom.",
   "explorer": "https://polygonscan.com/token/0x9CfE18faC7C8d9FA4aA4C7872d1ba11f09aEb38B",
   "status": "active",
   "id": "0x9CfE18faC7C8d9FA4aA4C7872d1ba11f09aEb38B",
-  "tags": ["defi"],
+  "tags": [
+    "defi"
+  ],
   "links": {
     "twitter": "https://x.com/CoinFreepal?t=UNwxCGePgcuuGYB8TsvqpA&s=09",
     "telegram": "https://t.me/FreepalCoin1"
