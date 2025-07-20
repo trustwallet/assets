@@ -8,10 +8,19 @@
   "explorer": "https://polygonscan.com/token/0x9CfE18faC7C8d9FA4aA4C7872d1ba11f09aEb38B",
   "status": "active",
   "id": "0x9CfE18faC7C8d9FA4aA4C7872d1ba11f09aEb38B",
-  "links": {
-    "twitter": "https://twitter.com/CoinFreepal",
-    "telegram": "https://t.me/FREEPALCOIN1",
-    "github": "https://github.com/faktinya"
-  },
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/CoinFreepal"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/FREEPALCOIN1"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/faktinya"
+    }
+  ],
   "tags": ["defi"]
 }
