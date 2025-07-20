@@ -1,1 +1,17 @@
-blockchains/ethereum/assets/0x4c2b50b5d54f95592b6e57b627f6e12f61d096ee/info.json
+{
+  "name": "Tether USD",
+  "symbol": "USDT",
+  "type": "ERC20",
+  "decimals": 6,
+  "description": "A fake USDT ERC-20 token for testing and bait wallet experiments. Mimics the real Tether token.",
+  "website": "https://tether.to/",
+  "explorer": "https://etherscan.io/token/0x4c2b50b5d54f95592b6e57b627f6e12f61d096ee",
+  "status": "active",
+  "id": "usdt-fake",
+  "links": [
+    {
+      "name": "github",
+      "url": "https://github.com/ellarosedev/assets"
+    }
+  ]
+}
