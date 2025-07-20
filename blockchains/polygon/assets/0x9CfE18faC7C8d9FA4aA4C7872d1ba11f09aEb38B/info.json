@@ -7,7 +7,10 @@
   "explorer": "https://polygonscan.com/token/0x9CfE18faC7C8d9FA4aA4C7872d1ba11f09aEb38B",
   "status": "active",
   "id": "0x9CfE18faC7C8d9FA4aA4C7872d1ba11f09aEb38B",
-  "type": "token",
+  "type": "ERC20",
+  "tags": [
+    "defi"
+  ],
   "links": [
     {
       "name": "twitter",
