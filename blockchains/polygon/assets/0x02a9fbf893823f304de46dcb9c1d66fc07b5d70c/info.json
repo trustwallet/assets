@@ -9,11 +9,20 @@
   "status": "active",
   "id": "0x02a9fBF893823f304DE46dCB9c1d66fc07b5D70c",
   "chainId": 137,
-  "links": {
-    "website": "https://golf.renard.family",
-    "instagram": "https://www.instagram.com/fox.cubs/",
-    "facebook": "https://www.facebook.com/zoerenardgolf"
-  },
+  "links": [
+    {
+      "name": "website",
+      "url": "https://golf.renard.family"
+    },
+    {
+      "name": "instagram",
+      "url": "https://www.instagram.com/fox.cubs/"
+    },
+    {
+      "name": "facebook",
+      "url": "https://www.facebook.com/zoerenardgolf"
+    }
+  ],
   "tags": [
     "utility",
     "community"
