@@ -4,8 +4,19 @@
     "symbol": "DAVE",
     "decimals": 18,
     "website": "https://www.davelabs.io/",
-    "description": "DAVE Token is the native utility asset powering the Dave Labs financial ecosystem. It enables access to tokenized real-world assets, seamless transactions, and lifetime royalty rewards via the exclusive Royalty Visa Card. Designed for global use, DAVE Token bridges next-gen financial technology with everyday utility, offering both liquidity and long-term value.",
+    "description": "DaveLabs token for innovative blockchain solutions",
     "explorer": "https://bscscan.com/token/0x1a82d5B44FD9b6f2647B5610a58561883d25F56",
     "status": "active",
-    "id": "0x1a82d5B44FD9b6f2647B5610a58561883d25F56"
+    "id": "0x1a82d5B44FD9b6f2647B5610a58561883d25F56",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://x.com/Dave_labs"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/DaveLabsOfficial"
+        }
+    ],
+    "tags": ["defi", "bsc"]
 }
