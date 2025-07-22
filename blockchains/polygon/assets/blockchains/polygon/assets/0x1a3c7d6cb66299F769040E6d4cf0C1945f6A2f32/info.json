@@ -3,27 +3,30 @@
   "type": "ERC20",
   "symbol": "KIA",
   "decimals": 18,
-  "description": "KIATOKEN is a Polygon-based token supporting global causes like education, environment, and health.",
+  "description": "KIATOKEN is a Polygon-based token created to support charity causes, environmental protection, education, animal welfare, and more. It is integrated with a Web3 platform for donations, staking, and a Telegram tap game.",
   "website": "https://kiahelps.com",
-  "explorer": "https://polygonscan.com/token/0x1a3c7d6cb66299f769040e6d4cf0c1945f6a2f32",
+  "explorer": "https://polygonscan.com/token/0x1a3c7d6cb66299F769040E6d4cf0C1945f6A2f32",
   "id": "0x1a3c7d6cb66299F769040E6d4cf0C1945f6A2f32",
   "links": [
     {
-      "name": "telegram",
-      "url": "https://t.me/kiacommunity"
+      "name": "github",
+      "url": "https://github.com/KiaTokenhelps"
     },
     {
       "name": "twitter",
       "url": "https://x.com/KiaToken"
     },
     {
-      "name": "github",
-      "url": "https://github.com/KiaTokenhelps"
+      "name": "telegram",
+      "url": "https://t.me/kiacommunity"
     },
     {
-      "name": "medium",
-      "url": "https://medium.com/@KiaToken"
+      "name": "youtube",
+      "url": "https://www.youtube.com/channel/UCNhQ3BdfCxWyOtmUwoAYaag"
     }
   ],
-  "tags": ["community", "defi"]
+  "tags": [
+    "charity"
+  ],
+  "status": "active"
 }
