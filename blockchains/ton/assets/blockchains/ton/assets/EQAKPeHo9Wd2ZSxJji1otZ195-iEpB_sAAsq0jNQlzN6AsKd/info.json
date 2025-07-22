@@ -1,11 +1,14 @@
 {
+  "id": "unitf",
   "name": "UNITF",
   "symbol": "UNITF",
   "decimals": 9,
+  "type": "jetton",
+  "status": "active",
   "description": "UNITF is the official token of Unitaet — a social network for preserving the history and culture of Russian Germans. The token rewards user activity and participation within the ecosystem.",
   "website": "https://unitaet.com",
   "explorer": "https://tonscan.org/address/EQAKPeHo9Wd2ZSxJji1otZ195-iEpB_sAAsq0jNQlzN6AsKd",
-  "tags": ["dao", "governance"],
+  "tags": ["governance"],
   "twitter": "https://twitter.com/unitatnetwork",
   "telegram": "https://t.me/unitaet_family"
 }
