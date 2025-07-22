@@ -1,20 +1,19 @@
 {
   "name": "KIATOKEN",
+  "type": "ERC20",
   "symbol": "KIA",
   "decimals": 18,
-  "address": "0x1a3c7d6cb66299F769040E6d4cf0C1945f6A2f32",
-  "chainId": 137,
-  "logoURI": "https://raw.githubusercontent.com/KiaTokenhelps/assets/master/blockchains/polygon/assets/0x1a3c7d6cb66299F769040E6d4cf0C1945f6A2f32/logo.png",
-  "type": "coin",
-  "status": "active",
   "description": "KIATOKEN on Polygon empowers global philanthropy by connecting nonprofits, donors, and companies for transparent giving.",
   "website": "https://kiahelps.com",
   "explorer": "https://polygonscan.com/token/0x1a3c7d6cb66299F769040E6d4cf0C1945f6A2f32",
-  "tags": ["charity", "community"],
+  "id": "0x1a3c7d6cb66299F769040E6d4cf0C1945f6A2f32",
+  "logoURI": "https://raw.githubusercontent.com/KiaTokenhelps/assets/master/blockchains/polygon/assets/0x1a3c7d6cb66299F769040E6d4cf0C1945f6A2f32/logo.png",
+  "status": "active",
   "links": {
     "telegram": "https://t.me/kiacommunity",
     "twitter": "https://twitter.com/KiaToken",
     "github": "https://github.com/KiaTokenhelps",
     "medium": "https://medium.com/@KiaToken"
-  }
+  },
+  "tags": ["charity", "community"]
 }
