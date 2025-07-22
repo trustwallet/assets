@@ -2,15 +2,25 @@
   "name": "WebPayback Token",
   "symbol": "WPT",
   "decimals": 18,
-  "address": "0x9077051d318b614f915e8a07861090856fdec91e",
-  "chainId": 137,
   "type": "ERC20",
   "status": "active",
-  "logo": "logo.png",
-  "explorer": "https://etherscan.io/token/0x9077051d318b614f915e8a07861090856fdec91e",
+  "chainId": 137,
+  "id": "0x9077051d318b614f915e8a07861090856fdec91e",
+  "explorer": "https://polygonscan.com/token/0x9077051d318b614f915e8a07861090856fdec91e",
+  "description": "WebPayback Token (WPT) is a Polygon-based utility token for Web3 rewards and creator economy applications.",
   "links": [
-    { "name": "website", "url": "https://web-payback-tokenizer.replit.app/" },
-    { "name": "github", "url": "https://github.com/cyper73/webpayback" }
+    {
+      "name": "website",
+      "url": "https://web-payback-tokenizer.replit.app/"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/cyper73/webpayback"
+    }
   ],
-  "tags": ["token", "polygon"]
+  "tags": [
+    "polygon",
+    "defi",
+    "rewards"
+  ]
 }
