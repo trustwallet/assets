@@ -9,8 +9,8 @@
   "status": "active",
   "id": "butterball",
   "tags": ["community", "memecoin"],
-  "links": [
-    {"type": "twitter", "url": "https://x.com/ButterBallC0in"},
-    {"type": "github", "url": "https://github.com/your-repo"}
-  ]
+  "links": {
+    "twitter": "https://x.com/ButterBallC0in",
+    "github": "https://github.com/your-repo"
+  }
 }
