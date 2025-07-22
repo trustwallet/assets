@@ -2,14 +2,12 @@
   "name": "ButterBall",
   "symbol": "BUTT",
   "decimals": 18,
-  "description": "A meme coin with flavor – ButterBall aims to be the most delicious token on Ethereum.",
-  "website": "https://normanrobert007-collab.github.io/butterball-token-site./",
-  "explorer": "https://etherscan.io/token/0x7e9ad1b9a8a7c71a82d03b39e727436b1fc79391",
+  "description": "A meme coin with flavor — ButterBall aims to be the most delicious token on Ethereum.",
+  "website": "https://normanrobert007-collab.github.io/butterball-token-site./", 
   "status": "active",
-  "id": "butterball",
-  "type": "ERC20",
-  "tags": ["community", "memecoin"],
-  "links": {
+  "id": "butterball"
+  "tags": "community", "memecoin",
+   "links": {
     "twitter": "https://x.com/ButterBallC0in",
     "github": "https://github.com/your-repo"
   }
