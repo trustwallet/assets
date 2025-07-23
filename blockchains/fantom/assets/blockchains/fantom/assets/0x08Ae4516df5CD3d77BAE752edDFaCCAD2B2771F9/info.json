@@ -10,8 +10,14 @@
   "description": "Tether USD is a stablecoin deployed on Fantom network for fast and stable transactions.",
   "website": "https://resourceful-ventures.org",
   "holders": 5,
-  "links": {
-    "twitter": "https://github.com/thomasbot777",
-    "telegram": "https://t.me/httpsthomas"
-  }
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://github.com/thomasbot777"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/httpsthomas"
+    }
+  ]
 }
