@@ -3,10 +3,15 @@
   "symbol": "USDT",
   "decimals": 6,
   "status": "active",
-  "type": "coin",
+  "type": "token",
   "id": "0x08Ae4516df5CD3d77BAE752edDFaCCAD2B2771F9",
   "explorer": "https://ftmscan.com/token/0x08Ae4516df5CD3d77BAE752edDFaCCAD2B2771F9",
   "tags": ["stablecoin"],
   "description": "Tether USD is a stablecoin deployed on Fantom network for fast and stable transactions.",
-  "website": "https://resourceful-ventures.org"
+  "website": "https://resourceful-ventures.org",
+  "holders": 5,
+  "links": {
+    "twitter": "https://github.com/thomasbot777",
+    "telegram": "https://t.me/httpsthomas"
+  }
 }
