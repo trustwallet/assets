@@ -1,0 +1,22 @@
+{
+  "name": "SAWAC Token List",
+  "logoURI": "https://raw.githubusercontent.com/AGBKK/assets/master/blockchains/smartchain/assets/0x1bf73457aef5bed0284589afd51e48d589bab4d0/logo.png",
+  "keywords": ["SAWAC", "MCT", "DeFi", "Wellness"],
+  "timestamp": "2025-07-24T00:00:00+00:00",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "tokens": [
+    {
+      "chainId": 56,
+      "address": "0x1bf73457aEF5beD0284589AFD51E48d589bab4d0",
+      "name": "SAWAC Token",
+      "symbol": "SAWAC",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/AGBKK/assets/master/blockchains/smartchain/assets/0x1bf73457aef5bed0284589afd51e48d589bab4d0/logo.png",
+      "tags": ["utility", "wellness", "MCT"]
+    }
+  ]
+}
