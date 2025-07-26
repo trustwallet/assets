@@ -4,13 +4,15 @@
   "type": "ERC20",
   "decimals": 18,
   "description": "Crowx is a meme token backed by real technology. It combines utility, Layer 2 capabilities, and meme power to lead the next generation of crypto.",
-  "website": "",
+  "website": "https://crowxtoken.com",
   "explorer": "https://etherscan.io/token/0x9c47534f015C4a871C1A6158518d932d377Db643",
   "status": "active",
   "id": "0x9c47534f015C4a871C1A6158518d932d377Db643",
   "tags": ["meme", "defi"],
-  "links": {
-    "twitter": "https://twitter.com/crowxtoken"
-  }
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/crowxtoken"
+    }
+  ]
 }
-
