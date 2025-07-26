@@ -1,13 +1,22 @@
 {
   "name": "Skyby Token",
   "symbol": "SKYBY",
-  "type": "coin",
+  "type": "BEP20",
   "decimals": 18,
+  "description": "Skyby è una nuova moneta nata da un'idea giovane e innovativa. Un progetto ambizioso costruito per portare nuove connessioni tra blockchain, comunità e tecnologia.",
+  "website": "https://skybytoken.com",
   "explorer": "https://bscscan.com/token/0xF74392FC14F6BEc99baBBAe9D6a68ba5D41EFE15",
-  "description": "Skyby Token è un token BEP-20 lanciato su Binance Smart Chain con uno spirito positivo e stile unico.",
   "status": "active",
   "id": "0xF74392FC14F6BEc99baBBAe9D6a68ba5D41EFE15",
-  "tags": [
-    "defi"
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://x.com/SkybyToken"
+    },
+    {
+      "name": "instagram",
+      "url": "https://www.instagram.com/skybytoken"
+    }
   ]
 }
+
