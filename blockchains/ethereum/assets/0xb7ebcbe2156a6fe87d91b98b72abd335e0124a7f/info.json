@@ -2,8 +2,13 @@
   "name": "CatDaddyToken",
   "symbol": "CATDA",
   "decimals": 18,
-  "description": "CatDaddyToken (CATDA) is a meme token inspired by the cat cultral from Chinese internet, it fight against those who value cats' life more than human's.",
+  "type": "ERC20",
+  "status": "active",
+  "id": "0xb7ebcbe2156a6fe87d91b98b72abd335e0124a7f",
+  "explorer": "https://etherscan.io/token/0xb7ebcbe2156a6fe87d91b98b72abd335e0124a7f",
+  "description": "CatDaddyToken (CATDA) is a meme token inspired by a famous internet cat from Chinese social media.",
   "website": "https://catdaddytoken.io",
   "twitter": "https://twitter.com/catdaddytoken",
-  "telegram": "https://t.me/catdaddytoken"
+  "telegram": "https://t.me/catdaddytoken",
+  "tags": ["meme", "token"]
 }
