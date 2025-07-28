@@ -1,19 +1,22 @@
 {
-    "name": "Doe Coin",
-    "symbol": "DOE",
-    "type": "BEP20",
-    "decimals": 18,
-    "description": "Doe Coin is an urban-style cryptocurrency born in Miami to empower the culture of the streets. Stylish, bold and real.",
-    "website": "https://doecoin.org",
-    "explorer": "https://bscscan.com/token/0x645225f4FF07E20417cC7eF0cB6AD17AEB089f84",
-    "status": "active",
-    "id": "0x645225f4FF07E20417cC7eF0cB6AD17AEB089f84",
-    "links": {
-        "twitter": "https://x.com/doecoin12406",
-        "instagram": "https://instagram.com/doecoin"
+  "name": "Doe Coin",
+  "symbol": "DOE",
+  "type": "BEP20",
+  "decimals": 18,
+  "description": "Doe Coin is an urban-style cryptocurrency born in Miami to empower the culture of the streets. Stylish, bold and real.",
+  "website": "https://doecoin.org",
+  "explorer": "https://bscscan.com/token/0x645225f4FF07E20417cC7eF0cB6AD17AEB089f84",
+  "status": "active",
+  "id": "0x645225f4FF07E20417cC7eF0cB6AD17AEB089f84",
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://x.com/doecoin12406"
     },
-    "tags": [
-        "meme",
-        "community"
-    ]
+    {
+      "name": "instagram",
+      "url": "https://instagram.com/doecoin"
+    }
+  ],
+  "tags": ["meme", "community"]
 }
