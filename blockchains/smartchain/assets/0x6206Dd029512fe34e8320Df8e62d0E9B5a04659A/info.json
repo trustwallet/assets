@@ -1,10 +1,29 @@
 {
   "name": "DAYF",
   "symbol": "DAYF",
+  "type": "BEP20",
   "decimals": 18,
-  "description": "SmartDAYF is a next-generation AI & Robotics ecosystem that connects smart machines with blockchain-based solutions.",
-  "website": "https://smartdayf.com/",
-  "twitter": "https://x.com/smartdayf",
-  "telegram": "https://t.me/SmartDAYF",
-  "email": "dayf@smartdayf.com"
+  "status": "active",
+  "id": "0x6206Dd029512fe34e8320Df8e62d0E9B5a04659A",
+  "explorer": "https://bscscan.com/token/0x6206Dd029512fe34e8320Df8e62d0E9B5a04659A",
+  "website": "https://smartdayf.com",
+  "email": "dayf@smartdayf.com",
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://x.com/smartdayf"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/SmartDAYF"
+    },
+    {
+      "name": "community",
+      "url": "https://t.me/ssmartmachinesDAYF"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/dafallh85/DAYF"
+    }
+  ]
 }
