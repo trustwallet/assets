@@ -1,10 +1,14 @@
 {
-  "name": "Leomak Technology Coin",
+  "name": "LEOMAK TECHNOLOGY COIN",
   "symbol": "LTC",
+  "type": "token",
   "decimals": 18,
-  "description": "Moeda oficial da Leomak Tecnologia, criada para transações, premiações e uso em plataformas da empresa.",
-  "website": "https://leomaktecnologia.com.br",
-  "explorer": "https://bscscan.com/token/0x4d4bf5844c420f2b3afc0a4da57d03dee7e84d14",
   "status": "active",
-  "id": "leomak-technology-coin"
+  "description": "Moeda oficial da Leomak Tecnologia, criada para transações, premiações e uso nas plataformas da empresa.",
+  "links": {
+    "website": "https://leomaktecnologia.com.br",
+    "explorer": "https://bscscan.com/token/0x4d4bf5844c20f2b3afc0a4da57d03dee7e84d14",
+    "github": "https://github.com/leomaktecnologia1"
+  },
+  "tags": ["utility-token"]
 }
