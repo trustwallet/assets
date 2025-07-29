@@ -8,9 +8,18 @@
   "explorer": "https://bscscan.com/token/0x0A7106FF0f786709270410832F33F802Af859c5E",
   "status": "active",
   "id": "0x0A7106FF0f786709270410832F33F802Af859c5E",
-  "links": {
-    "twitter": "https://x.com/Torumtigerinu", 
-    "telegram": "https://t.me/torumtigerinu", 
-       "whitepaper": "https://torumtigerinu.xyz/wp-content/uploads/2025/07/whitepaper.pdf"
-  }
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://x.com/Torumtigerinu"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/torumtigerinu"
+    },
+    {
+      "name": "whitepaper",
+      "url": "https://torumtigerinu.xyz/wp-content/uploads/2025/07/whitepaper.pdf"
+    }
+  ]
 }
