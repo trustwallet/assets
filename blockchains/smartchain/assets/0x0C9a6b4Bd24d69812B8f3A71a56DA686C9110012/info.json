@@ -1,30 +1,14 @@
 {
-  "name": "daf chain",
-  "symbol": "DAF1",
+  "name": "DAYF",
+  "symbol": "DAYF",
+  "type": "BEP20",
   "decimals": 18,
   "status": "active",
-  "type": "coin",
-  "id": "0x0C9a6b4Bd24d69812B8f3A71a56DA686C9110012",
-  "links": [
-    {
-      "name": "twitter",
-      "url": "https://x.com/daf1chain"
-    },
-    {
-      "name": "telegram",
-      "url": "https://t.me/DAFChoin"
-    },
-    {
-      "name": "telegram_news",
-      "url": "https://t.me/DAF1Choin"
-    },
-    {
-      "name": "source_code",
-      "url": "https://github.com/dafallh85/daf-chain"
-    },
-    {
-      "name": "website",
-      "url": "https://dafchain.com"
-    }
-  ]
+  "id": "0x6206Dd029512fe34e8320Df8e62d0E9B5a04659A",
+  "website": "https://smartdayf.com",
+  "explorer": "https://bscscan.com/token/0x6206Dd029512fe34e8320Df8e62d0E9B5a04659A",
+  "email": "dayf@smartdayf.com",
+  "telegram": "https://t.me/ssmartmachinesDAYF",
+  "twitter": "https://x.com/smartdayf",
+  "tags": ["defi", "dao"]
 }
