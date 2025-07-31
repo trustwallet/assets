@@ -9,8 +9,14 @@
   "type": "ERC20",
   "id": "0xA33499ad05991D047c43Cf68FB6B50d379eb0251",
   "links": [
-    "https://twitter.com/justixcoin",
-    "https://github.com/JustixCoin"
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/justixcoin"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/JustixCoin"
+    }
   ],
   "tags": [
     "community",
