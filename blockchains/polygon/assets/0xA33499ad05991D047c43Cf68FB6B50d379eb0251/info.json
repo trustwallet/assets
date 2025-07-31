@@ -1,25 +1,10 @@
 {
-  "name": "Justix Coin",
+  "name": "JustiXCoin",
   "symbol": "JTX",
   "decimals": 18,
-  "description": "A purpose-driven token empowering communities to support cold case investigations and amplify victims' voices.",
-  "website": "https://justixcoin.com",
   "explorer": "https://polygonscan.com/token/0xA33499ad05991D047c43Cf68FB6B50d379eb0251",
-  "status": "active",
-  "type": "ERC20",
-  "id": "0xA33499ad05991D047c43Cf68FB6B50d379eb0251",
-  "links": [
-    {
-      "name": "twitter",
-      "url": "https://x.com/justixcoin"
-    },
-    {
-      "name": "github",
-      "url": "https://github.com/JustixCoin"
-    }
-  ],
-  "tags": [
-    "governance",
-    "social"
-  ]
+  "website": "https://justixcoin.io",
+  "logo": "logo.png",
+  "tags": ["governance"],
+  "description": "JustiX Coin (JTX) empowers communities to solve cold cases and amplify victims’ voices through a Victim Fund and decentralized governance."
 }
