@@ -3,15 +3,17 @@
   "symbol": "ORX",
   "type": "ERC20",
   "decimals": 18,
-  "status": "active",
   "id": "0xDA1a8180A800576477c6182e4d1B918195830e44",
-  "network": {
-    "name": "polygon"
-  },
+  "chainId": 137,
   "website": "https://colsenxcxp.github.io/colsenx.github.io/",
-  "explorer": "https://polygonscan.com/token/0xDA1a8180A800576477c6182e4d1B918195830e44",
-  "description": "Orryx (ORX) is a governance and staking token deployed on Polygon with fixed supply.",
+  "explorer": "https://etherscan.io/token/0xDA1a8180A800576477c6182e4d1B918195830e44",
+  "status": "active",
+  "description": "Orryx (ORX) is a governance and staking token deployed on Polygon. Holders manually verified: [INSERT HOLDER COUNT] as of [INSERT DATE].",
   "links": [
+    {
+      "name": "polygonscan",
+      "url": "https://polygonscan.com/token/0xDA1a8180A800576477c6182e4d1B918195830e4d1B918195830e44"
+    },
     {
       "name": "twitter",
       "url": "https://x.com/OrryxOrx54232"
