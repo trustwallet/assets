@@ -1,8 +1,16 @@
 {
   "name": "Orryx",
   "symbol": "ORX",
-  "type": "ERC20",
   "decimals": 18,
-  "chainId": 137,
-  "address": "0xDA1a8180A800576477c6182e4d1B918195830e44"
+  "id": "da1a8180a800576477c6182e4d1b918195830e44",
+  "website": "https://orryxcrypto.com",
+  "explorer": "https://polygonscan.com/token/0xDA1a8180A800576477c6182e4d1B918195830e44",
+  "status": "active",
+  "description": "Orryx (ORX) is a Polygon-based cryptocurrency designed for staking, governance, and decentralized finance applications.",
+  "links": {
+    "twitter": "https://twitter.com/orryxcrypto",
+    "github": "https://github.com/orryxcrypto",
+    "telegram": "https://t.me/orryxcrypto"
+  },
+  "tags": ["defi", "polygon", "governance", "staking"]
 }
