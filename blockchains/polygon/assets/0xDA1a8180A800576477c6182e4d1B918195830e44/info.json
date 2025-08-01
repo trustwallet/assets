@@ -7,10 +7,10 @@
   "explorer": "https://polygonscan.com/token/0xDA1a8180A800576477c6182e4d1B918195830e44",
   "status": "active",
   "description": "Orryx (ORX) is a Polygon-based cryptocurrency designed for staking, governance, and decentralized finance applications.",
-  "links": {
-    "twitter": "https://twitter.com/orryxcrypto",
-    "github": "https://github.com/orryxcrypto",
-    "telegram": "https://t.me/orryxcrypto"
-  },
+  "links": [
+    { "name": "twitter", "url": "https://x.com/OrryxOrx54232" },
+    { "name": "github", "url": "https://colsenxcxp.github.io/colsenx.github.io/" },
+    { "name": "telegram", "url": "https://t.me/Colsenxx" }
+  ],
   "tags": ["defi", "polygon", "governance", "staking"]
 }
