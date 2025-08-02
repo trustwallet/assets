@@ -1,11 +1,12 @@
 {
   "name": "Tether USD",
   "symbol": "USDT",
-  "type": "ERC20",
+  "type": "BEP20",
   "decimals": 18,
-  "description": "A very accurate test token for educational and audit simulation purposes.",
-  "website": "https://tether.to",  
-  "explorer": "https://bscscan.com/token/0x967a82b72a7DE6F1474D5741bFdf4210B231283c",
-  "status": "active",
-  "id": "0x967a82b72a7DE6F1474D5741bFdf4210B231283c"
+  "description": "USDT is a stablecoin that mirrors the value of the U.S. dollar.",
+  "website": "https://tether.to",
+  "twitter": "https://twitter.com/usdtfake",
+  "tags": [
+    "stablecoin"
+  ]
 }
