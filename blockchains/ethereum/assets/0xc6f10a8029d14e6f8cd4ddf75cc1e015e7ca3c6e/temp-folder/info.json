@@ -3,14 +3,12 @@
   "symbol": "VTS",
   "decimals": 18,
   "description": "VTS Token je decentralizirani digitalni token temeljen na Ethereum mreži.",
-  "explorer": "https://etherscan.io/token/0xc6f10a8029d14e6f8cD4Ddf75cc1E015e7Ca3C6e"
   "website": "https://example.com",
-  "chainId": 1,
-  "address": "0xc6f10a8029d14e6f8cD4Ddf75cc1E015e7Ca3C6e",
-  "tags": ["defi"],
-  "type": "ERC20",
+  "explorer": "https://etherscan.io/token/0xc6f10a8029d14e6f8cd4ddf75cc1e015e7ca3c6e",
   "status": "active",
-  "id": "0xc6f10a8029d14e6f8cD4Ddf75cc1E015e7Ca3C6e",
+  "id": "0xc6f10a8029d14e6f8cd4ddf75cc1e015e7ca3c6e",
+  "type": "ERC20",
+  "tags": ["defi"],
   "links": [
     {
       "name": "github",
@@ -18,7 +16,8 @@
     },
     {
       "name": "twitter",
-      "url": "https://twitter.com/imeprojekta"
+      "url": "https://x.com/imeprojekta"
     }
   ]
 }
+
