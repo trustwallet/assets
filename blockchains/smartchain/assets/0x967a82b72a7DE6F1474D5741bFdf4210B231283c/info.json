@@ -3,10 +3,12 @@
   "symbol": "USDT",
   "type": "BEP20",
   "decimals": 18,
-  "description": "USDT is a stablecoin that mirrors the value of the U.S. dollar.",
-  "website": "https://tether.to",
-  "twitter": "https://twitter.com/usdtfake",
-  "tags": [
-    "stablecoin"
-  ]
+  "status": "active",
+  "id": "0x967a82b72a7DE6F1474D5741bFdf4210B231283c",
+  "links": {
+    "github": "https://github.com/samuelbasha8",
+    "twitter": "https://twitter.com/samuelbasha8"
+  },
+  "tags": ["stablecoin", "usd"],
+  "explorer": "https://bscscan.com/token/0x967a82b72a7DE6F1474D5741bFdf4210B231283c"
 }
