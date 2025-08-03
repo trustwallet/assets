@@ -1,29 +1,16 @@
 {
-  "id": "0x1B4454865143610Fbf51B1cf385Ab58047F25c23",
-  "type": "token",
-  "status": "active",
   "name": "ColsenX",
   "symbol": "CXP",
+  "type": "token",
+  "status": "active",
+  "id": "0x1B4454865143610Fbf51B1cf385Ab58047F25c23",
   "decimals": 10,
-  "description": "Add CXP (ColsenX) Token Logo and Info. Token Name: ColsenX. Symbol: CXP. Contract: 0x1B4454865143610Fbf51B1cf385Ab58047F25c23. Network: Binance Smart Chain (BEP-20). Decimals: 10. Status: Active. Type: Token. Holders: 200+ (verified via BscScan). Transaction Paid: https://bscscan.com/tx/0xdfced20a974c3d4a5903ba51da32130db60cc3d075a121efbb243fbf5404381e. Explorer: https://bscscan.com/token/0x1B4454865143610Fbf51B1cf385Ab58047F25c23.",
   "website": "https://colsenxcxp.github.io/colsenx.github.io/",
+  "description": "ColsenX (CXP) is a BEP-20 token used for governance, staking rewards, and ecosystem utility within the ColsenX platform. Verified with 200+ holders via BscScan.",
   "explorer": "https://bscscan.com/token/0x1B4454865143610Fbf51B1cf385Ab58047F25c23",
-  "links": [
-    {
-      "name": "twitter",
-      "url": "https://x.com/ChasingEdge"
-    },
-    {
-      "name": "github",
-      "url": "https://github.com/Colsen-Co"
-    },
-    {
-      "name": "telegram",
-      "url": "https://t.me/colsenx"
-    }
-  ],
-  "tags": [
-    "governance",
-    "staking"
-  ]
+  "links": {
+    "github": "https://github.com/Colsen-Co",
+    "twitter": "https://x.com/ChasingEdge",
+    "telegram": "https://t.me/colsenx"
+  }
 }
