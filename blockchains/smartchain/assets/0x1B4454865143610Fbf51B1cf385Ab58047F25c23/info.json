@@ -1,14 +1,10 @@
 {
   "name": "ColsenX",
   "symbol": "CXP",
-  "type": "BEP20",
   "decimals": 10,
-  "status": "active",
-  "id": "0x1B4454865143610Fbf51B1cf385Ab58047F25c23",
+  "description": "ColsenX (CXP) is a BEP-20 token on the BNB Smart Chain, powering staking, governance, and utility within the ColsenX ecosystem.",
   "website": "https://colsenxcxp.github.io/colsenx.github.io/",
-  "description": "ColsenX (CXP) is a BEP-20 token used for staking, governance, payments, and as a utility token in the Colsen ecosystem.",
   "explorer": "https://bscscan.com/token/0x1B4454865143610Fbf51B1cf385Ab58047F25c23",
-  "tags": ["governance", "staking"],
   "links": [
     {
       "name": "twitter",
@@ -22,5 +18,9 @@
       "name": "telegram",
       "url": "https://t.me/colsenx"
     }
+  ],
+  "tags": [
+    "governance",
+    "staking"
   ]
 }
