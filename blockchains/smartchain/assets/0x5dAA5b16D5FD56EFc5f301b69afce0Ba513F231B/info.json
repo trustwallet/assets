@@ -1,15 +1,22 @@
 {
   "name": "Argentus Token",
   "symbol": "ARG",
-  "type": "ERC20",
+  "type": "BEP20",
   "decimals": 18,
-  "description": "Argentus is a utility and savings token deployed on the BNB Smart Chain.",
-  "website": "https://argentustoken.carrd.co",
-  "explorer": "https://bscscan.com/token/0x5dAaA5b16d5fD56efC5f301b69afCE0ba513f231B",
   "status": "active",
-  "id": "0x5dAaA5b16d5fD56efC5f301b69afCE0ba513f231B",
-  "links": {
-    "twitter": "https://twitter.com/ArgentusToken",
-    "instagram": "https://instagram.com/ArgentusToken"
-  }
+  "id": "0x5dAaA5b16d5fD56EFc5f301b69afCE0Ba513f231B",
+  "links": [
+    {
+      "name": "website",
+      "url": "https://argentustoken.carrd.co"
+    },
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/ArgentusToken"
+    },
+    {
+      "name": "instagram",
+      "url": "https://instagram.com/ArgentusToken"
+    }
+  ]
 }
