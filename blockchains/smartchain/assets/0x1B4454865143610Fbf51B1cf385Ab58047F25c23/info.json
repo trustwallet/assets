@@ -1,15 +1,14 @@
 {
   "name": "ColsenX",
   "symbol": "CXP",
-  "type": "token",
+  "type": "BEP20",
   "status": "active",
   "id": "0x1B4454865143610Fbf51B1cf385Ab58047F25c23",
   "decimals": 10,
+  "description": "ColsenX (CXP) is a utility token powering staking, governance, and DeFi tools in the ColsenX ecosystem.",
+  "website": "https://colsenxcxp.github.io/colsenx.github.io/",
+  "explorer": "https://bscscan.com/token/0x1B4454865143610Fbf51B1cf385Ab58047F25c23",
   "links": [
-    {
-      "name": "website",
-      "url": "https://colsenxcxp.github.io/colsenx.github.io/"
-    },
     {
       "name": "twitter",
       "url": "https://x.com/ChasingEdge"
