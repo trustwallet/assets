@@ -1,13 +1,32 @@
 {
+  "id": "0x1B4454865143610Fbf51B1cf385Ab58047F25c23",
   "name": "ColsenX",
   "symbol": "CXP",
-  "type": "token",
+  "type": "coin",
   "decimals": 10,
   "chainId": 56,
   "address": "0x1B4454865143610Fbf51B1cf385Ab58047F25c23",
   "website": "https://colsenxcxp.github.io/colsenx.github.io/",
   "description": "ColsenX (CXP) is a decentralized utility token designed for governance, staking rewards, payments, and broader ecosystem utility. Built on the Binance Smart Chain, it powers the ColsenX platform, offering community-driven value and long-term sustainability.",
   "explorer": "https://bscscan.com/token/0x1B4454865143610Fbf51B1cf385Ab58047F25c23",
-  "status": "active",
-  "tags": ["defi", "governance", "staking"]
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://x.com/ChasingEdge"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/colsenx"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/Colsen-Co"
+    },
+    {
+      "name": "whitepaper",
+      "url": "https://colsenxcxp.github.io/colsenx.github.io/CXP_Whitepaper.pdf"
+    }
+  ],
+  "tags": ["defi", "staking", "governance"],
+  "status": "active"
 }
