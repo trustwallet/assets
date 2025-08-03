@@ -10,10 +10,16 @@
   "website": "https://argentustoken.carrd.co/",
   "explorer": "https://bscscan.com/token/0x5dAA5b16D5FD56EFc5f301b69afce0Ba513F231B",
   
-  "links": {
-    "twitter": "https://twitter.com/ArgentusToken",
-    "github": "https://github.com/augustoaraoz"
-  },
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/ArgentusToken"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/augustoaraoz"
+    }
+  ],
   
   "tags": ["defi"]
 }
