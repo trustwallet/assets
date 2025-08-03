@@ -1,13 +1,13 @@
 {
   "name": "ColsenX",
   "symbol": "CXP",
-  "type": "token",
-  "status": "active",
-  "id": "0x1B4454865143610Fbf51B1cf385Ab58047F25c23",
+  "type": "ERC20",
   "decimals": 10,
-  "description": "ColsenX (CXP) is a decentralized utility token designed for governance, staking rewards, payments, and overall ecosystem usage. It powers the ColsenX platform, providing value to holders and users through sustainable tokenomics and community-driven utility.",
+  "description": "ColsenX (CXP) is a decentralized utility token designed for governance, staking rewards, payments, and ecosystem usage. It powers the ColsenX platform, providing value to holders and users through sustainable tokenomics and community-driven utility.",
   "website": "https://colsenxcxp.github.io/colsenx.github.io/",
   "explorer": "https://bscscan.com/token/0x1B4454865143610Fbf51B1cf385Ab58047F25c23",
+  "status": "active",
+  "id": "0x1B4454865143610Fbf51B1cf385Ab58047F25c23",
   "links": [
     {
       "name": "twitter",
@@ -25,6 +25,5 @@
       "name": "whitepaper",
       "url": "https://colsenxcxp.github.io/colsenx.github.io/CXP_Whitepaper.pdf"
     }
-  ],
-  "tags": ["defi", "governance", "staking"]
+  ]
 }
