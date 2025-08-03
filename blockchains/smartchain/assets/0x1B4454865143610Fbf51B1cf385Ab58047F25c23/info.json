@@ -6,12 +6,21 @@
   "status": "active",
   "id": "0x1B4454865143610Fbf51B1cf385Ab58047F25c23",
   "website": "https://colsenxcxp.github.io/colsenx.github.io/",
-  "description": "ColsenX (CXP) is a BEP-20 token used for staking, payments, and governance in the Colsen ecosystem.",
+  "description": "ColsenX (CXP) is a BEP-20 token used for staking, governance, payments, and as a utility token in the Colsen ecosystem.",
   "explorer": "https://bscscan.com/token/0x1B4454865143610Fbf51B1cf385Ab58047F25c23",
+  "tags": ["utility", "governance", "staking"],
   "links": [
     {
-      "name": "https://t.me/Colsenxx",
+      "name": "twitter",
       "url": "https://x.com/ChasingEdge"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/Colsen-Co"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/colsenx"
     }
   ]
 }
