@@ -1,18 +1,17 @@
 {
   "name": "USDTB",
   "symbol": "USDTB",
-  "type": "ERC20",
+  "type": "BEP20",
   "decimals": 18,
   "status": "active",
   "id": "0x5a61316649eE83BE3ec9dEA99c81b0c99bE84720",
   "website": "https://usdtbcrypto.com",
   "explorer": "https://bscscan.com/token/0x5a61316649eE83BE3ec9dEA99c81b0c99bE84720",
   "tags": ["stablecoin"],
-  "holders": 1,
-  "description": "USDTB is a BEP20 token backed by fiat reserve, designed to mimic the behavior of Tether (USDT) on BNB Chain.",
+  "description": "USDTB is a BEP20 token backed by fiat reserve and designed for low-volatility transactions.",
   "links": [
-    { "name": "twitter", "url": "https://twitter.com/usdtbcrypto" },
+    { "name": "twitter", "url": "https://x.com/usdtbcrypto" },
     { "name": "telegram", "url": "https://t.me/usdtbcrypto" },
-    { "name": "github", "url": "https://github.com/USDTBcrypto" }
+    { "name": "github", "url": "https://github.com/usdtbcrypto" }
   ]
 }
