@@ -1,9 +1,10 @@
 {
-    "name": "NairaX",
-    "symbol": "NX",
-    "decimals": 18,
-    "description": "NairaX enables blockchain-based payments and remittances across Africa using a Naira-pegged stablecoin on the Polygon network.",
-    "website": "https://nairax.ng",
-    "twitter": "https://x.com/nairaxofficial",
-    "telegram": "https://t.me/NairaX_Official"
+  "name": "NairaX Token",
+  "symbol": "NX",
+  "type": "ERC20",
+  "decimals": 18,
+  "chainId": 137,
+  "address": "0x171123B339D64FEBf94F94b23d942401Bc9ebA97",
+  "logoURI": "https://ipfs.io/ipfs/QmQUJHC1624fNyJAsnhrT9XHumqnwPXMiiw63foXvmWXWZ?filename=logo.png",
+  "tags": ["stablecoin", "naira", "nx", "payments", "cross-border"]
 }
