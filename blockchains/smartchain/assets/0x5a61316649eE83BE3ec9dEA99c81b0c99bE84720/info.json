@@ -5,10 +5,10 @@
   "decimals": 18,
   "status": "active",
   "id": "0x5a61316649eE83BE3ec9dEA99c81b0c99bE84720",
-  "links": {
-    "website": "https://usdtbcrypto.com",
-    "twitter": "https://twitter.com/usdtbcrypto",
-    "telegram": "https://t.me/usdtbcrypto",
-    "instagram": "https://instagram.com/usdtbcrypto"
-  }
+  "links": [
+    { "name": "website", "url": "https://usdtbcrypto.com" },
+    { "name": "twitter", "url": "https://twitter.com/usdtbcrypto" },
+    { "name": "telegram", "url": "https://t.me/usdtbcrypto" },
+    { "name": "instagram", "url": "https://instagram.com/usdtbcrypto" }
+  ]
 }
