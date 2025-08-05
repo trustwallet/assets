@@ -1,11 +1,22 @@
 {
   "name": "fija ETH Yield Master K",
-  "symbol": "fjETH",
   "type": "ERC20",
+  "symbol": "fjETH",
   "decimals": 18,
   "description": "The fija Ethereum Strategy is based on tokens that track the value of Ethereum while capturing rewards for staked ETH.",
   "website": "https://www.fija.finance",
-  "explorer": "https://arbiscan.io/address/0x9510eb1572f8273A226a368E3af6bbDE18090ee1",
+  "explorer": "https://etherscan.io/token/0x9510eb1572f8273A226a368E3af6bbDE18090ee1",
   "status": "active",
+  "id": "0x9510eb1572f8273A226a368E3af6bbDE18090ee1",
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://x.com/fija_finance"
+    },
+    {
+      "name": "docs",
+      "url": "https://fija.finance/en/resources"
+    }
+  ]
   "tags": ["defi"]
 }
