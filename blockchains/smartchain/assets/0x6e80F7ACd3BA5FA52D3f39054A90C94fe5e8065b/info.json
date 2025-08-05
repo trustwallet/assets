@@ -1,21 +1,21 @@
 {
   "name": "USDT Demo",
   "symbol": "USDT",
-  "type": "BEP20",
   "decimals": 18,
-  "description": "This is a demo version of USDT used for testing and development purposes only. It is not backed by any real asset.",
+  "description": "This is a demo version of USDT for testing and display purposes only.",
   "website": "https://tether.to",
   "explorer": "https://bscscan.com/token/0x6e80F7ACd3BA5FA52D3f39054A90C94fe5e8065b",
   "status": "active",
   "id": "0x6e80F7ACd3BA5FA52D3f39054A90C94fe5e8065b",
   "links": [
     {
-      "name": "website",
-      "url": "https://tether.to"
+      "name": "twitter",
+      "url": "https://twitter.com/tether_to"
     },
     {
       "name": "github",
-      "url": "https://github.com/trustwallet/assets"
+      "url": "https://github.com/TetherToken"
     }
-  ]
+  ],
+  "tags": ["stablecoin"]
 }
