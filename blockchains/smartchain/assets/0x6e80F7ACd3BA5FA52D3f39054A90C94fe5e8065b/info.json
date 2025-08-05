@@ -8,10 +8,19 @@
   "description": "This is a demo version of the USDT token used for testing purposes only.",
   "explorer": "https://bscscan.com/token/0x6e80F7ACd3BA5FA52D3f39054A90C94fe5e8065b",
   "status": "active",
-  "links": {
-    "twitter": "https://x.com/tether_to",
-    "github": "https://github.com/demo",
-    "telegram": "https://t.me/demo"
-  },
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://x.com/tether_to"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/demo"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/demo"
+    }
+  ],
   "tags": ["stablecoin"]
 }
