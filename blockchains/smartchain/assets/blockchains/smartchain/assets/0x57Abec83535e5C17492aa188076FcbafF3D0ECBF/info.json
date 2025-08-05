@@ -3,16 +3,18 @@
   "symbol": "FTA",
   "type": "BEP20",
   "decimals": 18,
+  "description": "FinTrust AI è un token BEP-20 progettato per alimentare l'ecosistema di audit e validazione AI delle transazioni finanziarie globali.",
+  "website": "https://hypercreate.co.uk",
+  "explorer": "https://bscscan.com/token/0x2ca87c4a24b9ed10d18b3cf070111fdd8a992f37",
   "status": "active",
-  "id": "0x57Abec83535e5C17492aa188076FcbafF3D0ECBF",
-  "links": [
-    {
-      "name": "website",
-      "url": "https://hypercreate.co.uk"
-    },
-    {
-      "name": "email",
-      "url": "mailto:info@fintrustai.com"
-    }
+  "id": "0x2ca87c4a24b9ed10d18b3cf070111fdd8a992f37",
+  "links": {
+    "linkedin": "https://www.linkedin.com/company/fintrustai",
+    "instagram": "https://www.instagram.com/fintrustai"
+  },
+  "tags": [
+    "ai",
+    "audit",
+    "finance"
   ]
 }
