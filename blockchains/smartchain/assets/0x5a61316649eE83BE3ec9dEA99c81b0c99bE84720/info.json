@@ -1,17 +1,13 @@
 {
   "name": "USDTB",
   "symbol": "USDTB",
-  "type": "BEP20",
   "decimals": 18,
   "status": "active",
-  "id": "0x5a61316649eE83BE3ec9dEA99c81b0c99bE84720",
-  "website": "https://usdtbcrypto.com",
+  "description": "USDTB is a stablecoin on the BNB Smart Chain, aiming to replicate the functionality of USDT.",
   "explorer": "https://bscscan.com/token/0x5a61316649eE83BE3ec9dEA99c81b0c99bE84720",
-  "tags": ["stablecoin"],
-  "description": "USDTB is a BEP20 token backed by fiat reserve and designed for low-volatility transactions.",
-  "links": [
-    { "name": "twitter", "url": "https://x.com/usdtbcrypto" },
-    { "name": "telegram", "url": "https://t.me/usdtbcrypto" },
-    { "name": "github", "url": "https://github.com/usdtbcrypto" }
-  ]
+  "links": {
+    "website": "https://usdtbcrypto.com",
+    "twitter": "https://twitter.com/usdtbcrypto"
+  },
+  "tags": ["stablecoin"]
 }
