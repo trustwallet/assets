@@ -1,12 +1,13 @@
 {
   "name": "Baraka Coin",
   "symbol": "BRK",
+  "type": "token",
   "decimals": 18,
-  "type": "erc20",
-  "status": "active",
   "description": "Baraka Coin is a decentralized token powering a blockchain-based Zakat donation platform, built on Ethereum to enable transparent, secure, and automated giving.",
   "website": "https://barakacoin.org",
   "explorer": "https://etherscan.io/token/0x4fdF6b321a986B0975ee447751cF0ED66f57a76A",
+  "status": "active",
+  "id": "0x4fdF6b321a986B0975ee447751cF0ED66f57a76A",
   "links": [
     {
       "name": "twitter",
@@ -18,9 +19,7 @@
     }
   ],
   "tags": [
-    "zakat",
-    "platform",
-    "payments"
-  ],
-  "id": "0x4fdF6b321a986B0975ee447751cF0ED66f57a76A"
+    "payments",
+    "platform"
+  ]
 }
