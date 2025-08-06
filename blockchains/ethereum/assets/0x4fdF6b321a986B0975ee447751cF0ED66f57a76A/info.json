@@ -7,10 +7,16 @@
   "description": "Baraka Coin is a decentralized token powering a blockchain-based Zakat donation platform, built on Ethereum to enable transparent, secure, and automated giving.",
   "website": "https://barakacoin.org",
   "explorer": "https://etherscan.io/token/0x4fdF6b321a986B0975ee447751cF0ED66f57a76A",
-  "links": {
-    "twitter": "https://x.com/coinbaraka",
-    "telegram": "https://t.me/BarakaCoinChannel"
-  },
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://x.com/coinbaraka"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/BarakaCoinChannel"
+    }
+  ],
   "tags": [
     "charity",
     "zakat",
