@@ -3,10 +3,14 @@
   "symbol": "USDT.z",
   "type": "BEP20",
   "decimals": 18,
-  "description": "USDT.z is a simulated stablecoin for M1 off-market tokenization.",
-  "website": "https://example.com",
+  "description": "USDT.z is a simulated stablecoin for off‑market fund tokenization purposes.",
+  "website": "https://usdtz.com",
   "explorer": "https://bscscan.com/token/0xb3BAeFfC27f6Ac1120A08799e145124dd186739",
   "status": "active",
-  "id": "usdtz",
-  "links": []
+  "id": "0xb3BAeFfC27f6Ac1120A08799e145124dd186739",
+  "links": {
+    "twitter": "https://twitter.com/usdtzproject",
+    "github": "https://github.com/usdtz"
+  },
+  "tags": ["stablecoin", "usd‑pegged"]
 }
