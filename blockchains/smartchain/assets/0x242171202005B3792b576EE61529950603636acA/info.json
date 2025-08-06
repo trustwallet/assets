@@ -1,9 +1,19 @@
 {
   "name": "CRYPTODEX",
   "symbol": "DEX",
+  "type": "BEP20",
   "decimals": 6,
-  "description": "CRYPTODEX is a mintable DEX token on BSC.",
+  "status": "active",
+  "id": "0x242171202005B3792b576EE61529950603636acA",
+  "explorer": "https://bscscan.com/token/0x242171202005B3792b576EE61529950603636acA",
   "website": "https://cryptodex.store/",
-  "discord": "https://discord.com/channels/@cryptodexstore",
-  "twitter": "https://x.com/cryptodex_store"
+  "links": {
+    "twitter": "https://x.com/cryptodex_store",
+    "discord": "https://discord.com/channels/@cryptodexstore",
+    "github": "https://github.com/alert4sgs"
+  },
+  "tags": [
+    "dex",
+    "defi"
+  ]
 }
