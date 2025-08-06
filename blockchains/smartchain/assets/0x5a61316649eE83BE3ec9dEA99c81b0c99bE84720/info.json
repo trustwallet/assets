@@ -2,22 +2,16 @@
   "name": "USDTB",
   "symbol": "USDTB",
   "decimals": 18,
-  "type": "coin",
   "status": "active",
+  "type": "token",
+  "id": "0x5a61316649eE83BE3ec9dEA99c81b0c99bE84720",
   "description": "USDTB is a stablecoin on the BNB Smart Chain, aiming to replicate the functionality of USDT.",
   "explorer": "https://bscscan.com/token/0x5a61316649eE83BE3ec9dEA99c81b0c99bE84720",
-  "links": [
-    {
-      "name": "website",
-      "url": "https://usdtbcrypto.com"
-    },
-    {
-      "name": "x",
-      "url": "https://x.com/usdtbcrypto"
-    }
-  ],
-  "tags": ["stablecoin"],
-  "id": "0x5a61316649eE83BE3ec9dEA99c81b0c99bE84720",
-  "source_code": "https://x.com/usdtbcrypto?t=tBq4E7qY_Rih77WyDOxkRA&s=09",
-  "holders": 540
+  "website": "https://usdtbcrypto.com",
+  "links": {
+    "twitter": "https://twitter.com/usdtbcrypto"
+  },
+  "tags": [
+    "stablecoin"
+  ]
 }
