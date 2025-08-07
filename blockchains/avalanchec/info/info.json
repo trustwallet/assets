@@ -6,10 +6,12 @@
     "research": "https://research.binance.com/en/projects/avalanche",
     "symbol": "AVAX",
     "type": "coin",
+    "rpc_url": "https://api.avax.network/ext/bc/C/rpc",
     "decimals": 18,
     "status": "active",
     "tags": [
-        "defi"
+        "defi",
+        "dapp"
     ],
     "links": [
         {
