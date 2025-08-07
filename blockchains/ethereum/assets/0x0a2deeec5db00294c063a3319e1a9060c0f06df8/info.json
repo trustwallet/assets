@@ -1,19 +1,21 @@
 {
   "name": "BOLTVITA",
   "symbol": "BOLTVITA",
-  "type": "token",
+  "type": "ERC20",
   "address": "0x0a2dEEec5Db00294c063a3319E1a9060c0f06dF8",
+  "id": "0x0a2deeec5db00294c063a3319e1a9060c0f06df8",
   "decimals": 18,
   "chainId": 1,
+  "status": "active",
   "website": "https://boltvita.io",
   "explorer": "https://etherscan.io/token/0x0a2dEEec5Db00294c063a3319E1a9060c0f06dF8",
-  "status": "active",
-  "logoURI": "https://raw.githubusercontent.com/Boltvita/assets/master/blockchains/ethereum/assets/0x0a2deeec5db00294c063a3319e1a9060c0f06df8/logo.png",
+  "description": "BOLTVITA is a memetic token combining strength (bolt) and life (vita), backed by a real-world wood business.",
   "tags": ["defi"],
-  "description": "BOLTVITA is a memecoin that fuses the Tree of Life (growth) with the Bolt (strength) into a crypto project tied to the real-world wood industry.",
   "links": [
-    { "name": "twitter", "url": "https://x.com/Boltvita" },
+    { "name": "twitter",  "url": "https://x.com/Boltvita" },
     { "name": "telegram", "url": "https://t.me/Boltvita" }
-  ]
+  ],
+  "logoURI": "https://raw.githubusercontent.com/Boltvita/assets/master/blockchains/ethereum/assets/0x0a2deeec5db00294c063a3319e1a9060c0f06df8/logo.png"
 }
+
 
