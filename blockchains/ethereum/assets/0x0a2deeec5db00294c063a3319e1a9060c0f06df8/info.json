@@ -11,8 +11,9 @@
   "logoURI": "https://raw.githubusercontent.com/Boltvita/assets/master/blockchains/ethereum/assets/0x0a2deeec5db00294c063a3319e1a9060c0f06df8/logo.png",
   "tags": ["community", "defi"],
   "description": "BOLTVITA is a memecoin that fuses the Tree of Life (growth) with the Bolt (strength) into a crypto project tied to the real-world wood industry.",
-  "links": {
-    "twitter": "https://twitter.com/Boltvita",
-    "telegram": "https://t.me/Boltvita"
-  }
+  "links": [
+    { "name": "twitter", "url": "https://twitter.com/Boltvita" },
+    { "name": "telegram", "url": "https://t.me/Boltvita" }
+  ]
 }
+
