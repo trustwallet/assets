@@ -1,0 +1,137 @@
+{
+ "name": "Bazaars",
+ "symbol": "BZR",
+ "type": "ERC20",
+ "decimals": 18,
+ "description": "BZR is a revolutionary antifragile token that becomes stronger through destruction. Deployed across 10 blockchains with a deflationary mechanism where chain failures automatically burn supply. The first truly decentralized token with no admin functions, no minting capability, and a total supply that can only decrease.",
+ "website": "https://bazaars.io",
+ "explorer": "https://etherscan.io/token/0x85Cb098bdcD3Ca929d2cD18Fc7A2669fF0362242",
+ "status": "active",
+ "id": "0x85Cb098bdcD3Ca929d2cD18Fc7A2669fF0362242",
+ "links": [
+   {
+     "name": "twitter",
+     "url": "https://twitter.com/BazaarsBZR"
+   },
+   {
+     "name": "telegram",
+     "url": "https://t.me/bazaarstoken"
+   },
+   {
+     "name": "discord",
+     "url": "https://discord.gg/bazaars"
+   },
+   {
+     "name": "github",
+     "url": "https://github.com/BazaarsBZR"
+   },
+   {
+     "name": "whitepaper",
+     "url": "https://bazaars.io/whitepaper"
+   },
+   {
+     "name": "coingecko",
+     "url": "https://www.coingecko.com/en/coins/bazaars"
+   },
+   {
+     "name": "coinmarketcap",
+     "url": "https://coinmarketcap.com/currencies/bazaars"
+   }
+ ],
+ "tags": [
+   "defi",
+   "deflationary",
+   "multichain",
+   "antifragile",
+   "decentralized",
+   "no-mint"
+ ],
+ "total_supply": "555555555555555555555555555",
+ "circulating_supply": "555555555555555555555555555",
+ "contract_address": "0x85Cb098bdcD3Ca929d2cD18Fc7A2669fF0362242",
+ "deployed_chains": [
+   {
+     "chain": "ethereum",
+     "chain_id": 1,
+     "contract_address": "0x85Cb098bdcD3Ca929d2cD18Fc7A2669fF0362242",
+     "explorer": "https://etherscan.io/token/0x85Cb098bdcD3Ca929d2cD18Fc7A2669fF0362242"
+   },
+   {
+     "chain": "bsc",
+     "chain_id": 56,
+     "contract_address": "0x85Cb098bdcD3Ca929d2cD18Fc7A2669fF0362242",
+     "explorer": "https://bscscan.com/token/0x85Cb098bdcD3Ca929d2cD18Fc7A2669fF0362242"
+   },
+   {
+     "chain": "polygon",
+     "chain_id": 137,
+     "contract_address": "0x85Cb098bdcD3Ca929d2cD18Fc7A2669fF0362242",
+     "explorer": "https://polygonscan.com/token/0x85Cb098bdcD3Ca929d2cD18Fc7A2669fF0362242"
+   },
+   {
+     "chain": "arbitrum",
+     "chain_id": 42161,
+     "contract_address": "0x85Cb098bdcD3Ca929d2cD18Fc7A2669fF0362242",
+     "explorer": "https://arbiscan.io/token/0x85Cb098bdcD3Ca929d2cD18Fc7A2669fF0362242"
+   },
+   {
+     "chain": "optimism",
+     "chain_id": 10,
+     "contract_address": "0x85Cb098bdcD3Ca929d2cD18Fc7A2669fF0362242",
+     "explorer": "https://optimistic.etherscan.io/token/0x85Cb098bdcD3Ca929d2cD18Fc7A2669fF0362242"
+   },
+   {
+     "chain": "base",
+     "chain_id": 8453,
+     "contract_address": "0x85Cb098bdcD3Ca929d2cD18Fc7A2669fF0362242",
+     "explorer": "https://basescan.org/token/0x85Cb098bdcD3Ca929d2cD18Fc7A2669fF0362242"
+   },
+   {
+     "chain": "avalanche",
+     "chain_id": 43114,
+     "contract_address": "0x85Cb098bdcD3Ca929d2cD18Fc7A2669fF0362242",
+     "explorer": "https://snowtrace.io/token/0x85Cb098bdcD3Ca929d2cD18Fc7A2669fF0362242"
+   },
+   {
+     "chain": "zksync",
+     "chain_id": 324,
+     "contract_address": "0x85Cb098bdcD3Ca929d2cD18Fc7A2669fF0362242",
+     "explorer": "https://explorer.zksync.io/address/0x85Cb098bdcD3Ca929d2cD18Fc7A2669fF0362242"
+   },
+   {
+     "chain": "mantle",
+     "chain_id": 5000,
+     "contract_address": "0x85Cb098bdcD3Ca929d2cD18Fc7A2669fF0362242",
+     "explorer": "https://explorer.mantle.xyz/token/0x85Cb098bdcD3Ca929d2cD18Fc7A2669fF0362242"
+   },
+   {
+     "chain": "cronos",
+     "chain_id": 25,
+     "contract_address": "0x85Cb098bdcD3Ca929d2cD18Fc7A2669fF0362242",
+     "explorer": "https://cronoscan.com/token/0x85Cb098bdcD3Ca929d2cD18Fc7A2669fF0362242"
+   }
+ ],
+ "features": {
+   "burnable": true,
+   "mintable": false,
+   "pausable": false,
+   "upgradeable": false,
+   "admin_functions": false,
+   "max_supply": "555555555555555555555555555",
+   "burn_mechanism": "voluntary",
+   "deflationary": true,
+   "reentrancy_protection": true,
+   "race_condition_protection": true
+ },
+ "audit": {
+   "audited": false,
+   "audit_report": null,
+   "security_contact": "security@bazaars.io"
+ },
+ "logo": {
+   "png": "https://raw.githubusercontent.com/BazaarsBZR/bazaars-token/main/logo.png",
+   "svg": "https://raw.githubusercontent.com/BazaarsBZR/bazaars-token/main/logo.svg"
+ },
+ "version": "5.5",
+ "last_updated": "2025-08-08T00:00:00.000Z"
+}
