@@ -5,12 +5,13 @@
   "decimals": 18,
   "description": "USDi is a yield-bearing stablecoin fully backed by on-chain assets and managed by Imperimi.",
   "website": "https://imperimi.com",
-  "explorer": "https://basescan.org/token/0xc4Be3d8Ce8ed547eDc75C32300B6b0A0f8648A89",
+  "explorer": "https://etherscan.io/token/0xc4Be3d8Ce8ed547eDc75C32300B6b0A0f8648A89",
   "status": "active",
   "id": "0xc4Be3d8Ce8ed547eDc75C32300B6b0A0f8648A89",
   "links": [
-    { "name": "github",  "url": "https://github.com/Imperimi" },
-    { "name": "twitter", "url": "https://x.com/imperimidollar" }
+    { "name": "explorer", "url": "https://basescan.org/token/0xc4Be3d8Ce8ed547eDc75C32300B6b0A0f8648A89" },
+    { "name": "github",   "url": "https://github.com/Imperimi" },
+    { "name": "twitter",  "url": "https://x.com/imperimidollar" }
   ],
-  "tags": ["stablecoin", "defi", "yield"]
+  "tags": ["stablecoin", "defi"]
 }
