@@ -3,9 +3,14 @@
   "symbol": "JBC",
   "type": "BEP20",
   "decimals": 18,
-  "description": "JimmyBoss Collective (JBC) is a community-driven token built to empower and connect people globally through blockchain technology.",
+  "description": "JBC (JimmyBoss Collective) is a real-user-based, community-powered crypto project focused on long-term utility and adoption.",
   "website": "https://jbc.finance",
   "explorer": "https://bscscan.com/token/0x34a1C4ea57105a39685F613E3F3C9e4Daf1C2496",
   "status": "active",
-  "id": "0x34a1C4ea57105a39685F613E3F3C9e4Daf1C2496"
+  "id": "0x34a1C4ea57105a39685F613E3F3C9e4Daf1C2496",
+  "links": [
+    { "name": "telegram", "url": "https://t.me/JimmyBossCollective" },
+    { "name": "twitter",  "url": "https://x.com/JBCcollective" }
+  ],
+  "tags": ["utility", "community"]
 }
