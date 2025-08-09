@@ -1,17 +1,18 @@
 {
-  "name": "JimmyBoss Collective",
-  "symbol": "JBC",
-  "type": "BEP20",
-  "decimals": 18,
-  "description": "JimmyBoss Collective (JBC) is a community-powered crypto project focused on long-term utility and adoption.",
-  "website": "https://jbc.finance",
-  "explorer": "https://bscscan.com/token/0x34a1C4ea57105a39685F613E3F3C9e4Daf1C2496",
-  "status": "active",
-  "id": "0x34a1C4ea57105a39685F613E3F3C9e4Daf1C2496",
-  "links": [
-    { "name": "twitter",  "url": "https://x.com/JBCofficial" },
-    { "name": "twitter", "url": "https://x.com/JBCofficial" }
-  ],
-  "tags": ["defi", "staking"]
+    "name": "JimmyBoss Collective",
+    "symbol": "JBC",
+    "type": "BEP20",
+    "decimals": 18,
+    "description": "JimmyBoss Collective (JBC) is a community-powered crypto project focused on long-term utility and adoption.",
+    "website": "https://jbc.finance",
+    "explorer": "https://bscscan.com/token/0x34a1C4ea57105a39685F613E3F3C9e4Daf1C2496",
+    "status": "active",
+    "id": "0x34a1C4ea57105a39685F613E3F3C9e4Daf1C2496",
+    "links": [
+        { "name": "twitter", "url": "https://x.com/JBCofficial" },
+        { "name": "telegram", "url": "https://t.me/jbc_jimmyboss_collective_bot" }
+    ],
+    "tags": ["defi", "staking"],
+    "holders": 74264
 }
 
