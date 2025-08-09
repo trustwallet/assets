@@ -1,11 +1,11 @@
 {
-  "name": "USDTTRC20",
-  "symbol": "USDTTRC20",
-  "type": "TRC20",
-  "decimals": 6,
-  "description": "USDTTRC20 is a TRON-based stablecoin pegged to the US Dollar, deployed for testnet usage.",
-  "website": "",
-  "explorer": "https://shasta.tronscan.org/#/token20/TDuAc1CmvNR3mogvBXJFKcy9PfDozJ7JD",
+  "name": "Tether USD",
+  "symbol": "USDT",
+  "type": "BEP20",
+  "decimals": 18,
+  "description": "Tether USD (USDT) BEP20 Token",
+  "website": "https://tether.to",
+  "explorer": "https://bscscan.com/token/0xFc12F21b692B8cAEc9e56dfa85cDF3af339C41C2",
   "status": "active",
-  "id": "TDuAc1CmvNR3mogvBXJFKcy9PfDozJ7JD"
+  "id": "0xFc12F21b692B8cAEc9e56dfa85cDF3af339C41C2"
 }
