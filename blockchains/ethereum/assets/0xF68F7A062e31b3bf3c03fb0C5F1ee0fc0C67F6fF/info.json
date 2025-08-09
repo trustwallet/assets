@@ -1,12 +1,17 @@
 {
     "name": "ANDROID",
     "symbol": "AND",
+    "type": "ERC20",
     "decimals": 6,
-    "supply": "1000000",
-    "description": "ANDROID Token on Ethereum",
+    "description": "ANDROID est un token ERC20 basé sur Ethereum.",
     "website": "https://example.com",
     "explorer": "https://etherscan.io/token/0xF68F7A062e31b3bf3c03fb0C5F1ee0fc0C67F6fF",
-    "type": "ERC20",
     "status": "active",
-    "id": "0xF68F7A062e31b3bf3c03fb0C5F1ee0fc0C67F6fF"
+    "id": "0xF68F7A062e31b3bf3c03fb0C5F1ee0fc0C67F6fF",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/"
+        }
+    ]
 }
