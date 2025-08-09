@@ -1,11 +1,12 @@
 {
-  "name": "CLXToken",
+  "name": "CLX Token",
   "symbol": "CLX",
+  "type": "token",
   "decimals": 18,
-  "description": "CLXToken is a user-centric digital asset focused on accessibility and trust.",
+  "description": "CLX is a utility token designed for accessible, user-trusted financial applications. It represents a minimalist and technically disciplined approach to blockchain assets.",
   "website": "https://clxtoken.com",
-  "telegram": "https://t.me/clxtoken",
-  "github": "https://github.com/clxtoken",
+  "logo": "https://raw.githubusercontent.com/clxtoken/clxtoken-metadata/main/blockchains/smartchain/assets/0x8F9D00714F0925A3EC35d1E9E03c58511D3208Cb/logo.png",
   "explorer": "https://bscscan.com/token/0x8F9D00714F0925A3EC35d1E9E03c58511D3208Cb",
-  "status": "active"
+  "status": "active",
+  "id": "0x8F9D00714F0925A3EC35d1E9E03c58511D3208Cb"
 }
