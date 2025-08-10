@@ -1,33 +1,11 @@
 {
-    "name": "BNB Smart Chain",
-    "website": "https://www.bnbchain.world/en/smartChain",
-    "description": "A blockchain with a full-fledged environment for developing high-performance decentralized applications and cross-chain compatibility with Binance Chain.",
-    "explorer": "https://bscscan.com/",
-    "research": "https://research.binance.com/en/projects/bnb",
-    "symbol": "BNB",
-    "type": "coin",
-    "decimals": 18,
-    "status": "active",
-    "tags": [
-        "staking-native",
-        "dapp"
-    ],
-    "links": [
-        {
-            "name": "github",
-            "url": "https://github.com/binance-chain/"
-        },
-        {
-            "name": "x",
-            "url": "https://x.com/BNBCHAIN"
-        },
-        {
-            "name": "reddit",
-            "url": "https://reddit.com/r/BinanceExchange"
-        },
-        {
-            "name": "whitepaper",
-            "url": "https://www.binance.com/resources/ico/Binance_WhitePaper_en.pdf"
-        }
-    ]
+  "name": "NumJump",
+  "symbol": "NUMJ",
+  "type": "BEP20",
+  "decimals": 18,
+  "description": "NumJump is a fixed-supply BEP20 token on Binance Smart Chain with 25 million total supply.",
+  "website": "https://numjump.com",
+  "explorer": "https://bscscan.com/token/0x3017ef5F20c6102A01432FaF98BeeF7a90c56BD2",
+  "status": "active",
+  "id": "0x3017ef5F20c6102A01432FaF98BeeF7a90c56BD2"
 }
