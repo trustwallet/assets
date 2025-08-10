@@ -5,7 +5,26 @@
   "decimals": 18,
   "description": "RioStake is an ERC-20 token on the Base network with a total supply of 100 billion, designed for low-cost transactions and wide accessibility.",
   "website": "https://riostake.com",
-  "explorer": "https://basescan.org/token/0xacC8cfDd22B7DB43b65726f1e6965849Abc2917C",
+  "explorer": "https://etherscan.io/token/0xacC8cfDd22B7DB43b65726f1e6965849Abc2917C",
   "status": "active",
-  "id": "0xacC8cfDd22B7DB43b65726f1e6965849Abc2917C"
+  "id": "0xacC8cfDd22B7DB43b65726f1e6965849Abc2917C",
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/riostake"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/riostake"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/riostake"
+    }
+  ],
+  "tags": [
+    "defi",
+    "staking",
+    "base"
+  ]
 }
