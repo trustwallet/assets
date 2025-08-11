@@ -1,12 +1,19 @@
 {
-  "name": "Angle",
+  "name": "Angle Token",
   "symbol": "AG",
+  "type": "BEP20",
   "address": "0xe7691da916d3490b9ed86cdc0a56039a92699999",
   "decimals": 18,
-  "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0xe7691da916d3490b9ed86cdc0a56039a92699999/logo.png",
-  "description": " AG积分已经实现去中心化实体落地，赋能实体，消费增值，增值创富!购物送积分，积分再购物，拉动内外循环 做到了“机制共识“取代”人性共识”angle用了互联网 +区块链 +Defi+WEB3+AI智能,AG积分只送不卖的，薄饼里也不能买的",
+  "description": "AG is a utility token for the Angle ecosystem",
   "website": "https://www.hainanyungu.cn",
-  "explorer": "https://bscscan.com/token/0xE7691DA916D3490b9Ed86Cdc0a56039A92699999",
+  "explorer": "https://bscscan.com/token/0xe7691da916d3490b9ed86cdc0a56039a92699999",
   "status": "active",
-  "id": "0xe7691da916d3490b9ed86cdc0a56039a92699999"
+  "id": "angle-token",
+  "links": {
+    "twitter": "https://twitter.com/Angle_Official",
+    "telegram": "https://t.me/Angle_Chat"
+  },
+  "tags": [
+    "utility-token"
+  ]
 }
