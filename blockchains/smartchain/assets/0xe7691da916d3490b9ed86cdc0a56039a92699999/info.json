@@ -8,11 +8,17 @@
   "website": "https://www.hainanyungu.cn",
   "explorer": "https://bscscan.com/token/0xe7691da916d3490b9ed86cdc0a56039a92699999",
   "status": "active",
-  "id": "angle-token",
-  "links": {
-    "twitter": "https://twitter.com/Angle_yanhongw",
-    "qq": "1053500515"
-  },
+  "id": "0xe7691da916d3490b9ed86cdc0a56039a92699999",
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/Angle_yanhongw"
+    },
+    {
+      "name": "qq",
+      "url": "1053500515"
+    }
+  ],
   "gen": {
     "logo": "logo.png",
     "score": 20
