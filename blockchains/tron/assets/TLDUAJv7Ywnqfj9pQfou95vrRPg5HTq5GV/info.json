@@ -1,12 +1,11 @@
 {
-  "name": "Tether USD",                 // <- Your token display name
-  "symbol": "USDT",                     // <- Your token symbol
+  "name": "Tether USD",
+  "symbol": "USDT",
   "type": "TRC20",
-  "decimals": 6,                        // <- Your token decimals
-  "description": "Custom USDT-style TRC20 token.",
-  "website": "https://github.com/akrem", // <- Put your real site or a placeholder you control
+  "decimals": 6,
+  "description": "A custom TRC20 token with USDT-style properties for demonstration purposes.",
+  "website": "https://github.com/akrem",
   "explorer": "https://tronscan.org/#/contract/TLDUAJv7Ywnqfj9pQfou95vrRPg5HTq5GV",
   "status": "active",
-  "id": "TLDUAJv7Ywnqfj9pQfou95vrRPg5HTq5GV"  // <- EXACT contract address
+  "id": "TLDUAJv7Ywnqfj9pQfou95vrRPg5HTq5GV"
 }
-
