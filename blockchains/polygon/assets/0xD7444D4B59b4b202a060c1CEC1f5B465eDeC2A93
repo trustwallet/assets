@@ -1,0 +1,305 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.30;
+
+contract LuckCoin {
+    string public name = "Luck Coin";
+    string public symbol = "LUCK";
+    uint8 public decimals = 0;
+    uint256 public totalSupply;
+
+    address public lotteryWallet = 0x6048e42c10eC19728759f14E38F4bb06b7Ef160A;
+    address public owner;
+
+    // accounting of tokens assigned to lottery (updated on each transfer)
+    uint256 public lotteryPool;
+
+    uint256 public constant LOTTERY_THRESHOLD = 10_000_000_000; // example
+    uint256 public constant minPoolTokens = 100_000;
+    uint256 public groupSize = 1000;
+
+    mapping(address => uint256) public balances;
+    mapping(address => mapping(address => uint256)) public allowances;
+
+    address[] public participants; // append-only list of participants (all epochs)
+    // snapshot-related:
+    bool public lotteryActive;
+    uint256 public participantsSnapshotLength;
+    uint256 public groupCount;
+
+    // epoch to avoid deleting the whole participants array; each lottery increments epoch
+    uint256 public epoch;
+    mapping(address => uint256) public firstSeenEpoch; // address => epoch when first seen
+
+    // NEW: start index in participants array for each epoch
+    mapping(uint256 => uint256) public epochStartIndex; // epoch => start index in participants
+
+    // store the last selected winner and prize for owner to see
+    address public lastWinner;
+    uint256 public lastPrize;
+
+    event Transfer(address indexed from, address indexed to, uint256 value);
+    event Approval(address indexed owner, address indexed spender, uint256 value);
+    event LotteryWinner(address indexed winner, uint256 prize);
+    event PayoutRecorded(address indexed winner, uint256 amount);
+    event LotteryStarted(uint256 indexed epoch, uint256 snapshotStart, uint256 snapshotLength, uint256 groupCount);
+    event GroupProcessed(uint256 indexed epoch, uint256 indexed groupIndex, address winner, uint256 groupWeight);
+    event LotteryFinalized(uint256 indexed epoch, address finalWinner, uint256 prize);
+    event OwnershipTransferred(address indexed oldOwner, address indexed newOwner);
+
+    struct LotteryState {
+        uint256 currentGroup;
+        address[] groupWinners;
+        uint256 snapshotStart; // FIX: starting index in participants for this lottery
+    }
+    LotteryState public lotteryState;
+
+    modifier onlyOwner() {
+        require(msg.sender == owner, "Only owner");
+        _;
+    }
+
+    constructor(uint256 _initialSupply) {
+        owner = msg.sender;
+        totalSupply = _initialSupply;
+        balances[owner] = _initialSupply;
+        emit Transfer(address(0), owner, _initialSupply);
+        epoch = 1;
+        epochStartIndex[epoch] = 0; // FIX: first epoch starts at index 0
+    }
+
+    // Allow transfer of ownership if needed
+    function transferOwnership(address newOwner) external onlyOwner {
+        require(newOwner != address(0), "zero owner");
+        emit OwnershipTransferred(owner, newOwner);
+        owner = newOwner;
+    }
+
+    // --- ERC-like transfer with 1% fee: 0.5% to owner (development), 0.5% to lotteryWallet (and lotteryPool counter) ---
+    // NOTE: transfers are disabled while a lottery is active to guarantee snapshot-weight stability.
+    function transfer(address recipient, uint256 amount) public returns (bool) {
+        require(isValidAddress(recipient), "Invalid recipient");
+        require(amount > 0, "Amount must be > 0");
+        require(balances[msg.sender] >= amount, "Insufficient balance");
+        require(!lotteryActive, "Transfers disabled during active lottery");
+
+        uint256 fee = amount / 100; // 1%
+        uint256 toDevelopment = fee / 2;
+        uint256 toLottery = fee - toDevelopment; // to avoid rounding
+        uint256 transferAmount = amount - fee;
+
+        balances[msg.sender] -= amount;
+        balances[recipient] += transferAmount;
+
+        // pay development (owner)
+        balances[owner] += toDevelopment;
+        emit Transfer(msg.sender, owner, toDevelopment);
+
+        // send lottery portion to lotteryWallet and increment lotteryPool accounting
+        balances[lotteryWallet] += toLottery;
+        lotteryPool += toLottery;
+        emit Transfer(msg.sender, lotteryWallet, toLottery);
+
+        // add recipient to participants if first time in this epoch and not excluded
+        if (_shouldAddParticipant(recipient)) {
+            participants.push(recipient);
+            firstSeenEpoch[recipient] = epoch;
+        }
+
+        emit Transfer(msg.sender, recipient, transferAmount);
+        return true;
+    }
+
+    function approve(address spender, uint256 amount) public returns (bool) {
+        allowances[msg.sender][spender] = amount;
+        emit Approval(msg.sender, spender, amount);
+        return true;
+    }
+
+    function transferFrom(address sender, address recipient, uint256 amount) public returns (bool) {
+        require(!lotteryActive, "Transfers disabled during active lottery");
+        require(allowances[sender][msg.sender] >= amount, "Allowance exceeded");
+        require(balances[sender] >= amount, "Insufficient balance");
+
+        uint256 fee = amount / 100;
+        uint256 toDevelopment = fee / 2;
+        uint256 toLottery = fee - toDevelopment;
+        uint256 transferAmount = amount - fee;
+
+        allowances[sender][msg.sender] -= amount;
+
+        balances[sender] -= amount;
+        balances[recipient] += transferAmount;
+
+        balances[owner] += toDevelopment;
+        emit Transfer(sender, owner, toDevelopment);
+
+        balances[lotteryWallet] += toLottery;
+        lotteryPool += toLottery;
+        emit Transfer(sender, lotteryWallet, toLottery);
+
+        if (_shouldAddParticipant(recipient)) {
+            participants.push(recipient);
+            firstSeenEpoch[recipient] = epoch;
+        }
+
+        emit Transfer(sender, recipient, transferAmount);
+        return true;
+    }
+
+    function _shouldAddParticipant(address recipient) internal view returns (bool) {
+        // exclude zero address, owner, lotteryWallet and contract itself
+        if (recipient == address(0) || recipient == owner || recipient == lotteryWallet || recipient == address(this)) {
+            return false;
+        }
+        // if firstSeenEpoch[recipient] != epoch => not yet present this epoch
+        return firstSeenEpoch[recipient] != epoch;
+    }
+
+    // Improved randomness approach: owner provides externalSeed when calling processing functions.
+    // NOTE: still not as secure as VRF/Chainlink. Miner or owner can influence somewhat.
+    function randomFromSeed(uint256 externalSeed, uint256 extra) private view returns (uint256) {
+        return uint256(keccak256(abi.encodePacked(block.prevrandao, externalSeed, extra, block.timestamp, block.number)));
+    }
+
+    function isValidAddress(address _address) public pure returns (bool) {
+        return _address != address(0);
+    }
+
+    // --- Snapshot / two-phase tournament control ---
+    // Owner calls startLottery to "freeze" current participants length for this lottery.
+    // Transfers are disabled while lotteryActive to ensure weights are stable.
+    function startLottery() external onlyOwner {
+        require(!lotteryActive, "Lottery already active");
+
+        // FIX: determine snapshot start and length based on epochStartIndex
+        uint256 snapshotStart = epochStartIndex[epoch];
+        uint256 snapshotLength = participants.length - snapshotStart;
+
+        require(snapshotLength > 0, "No participants in this epoch to start");
+        lotteryActive = true;
+        participantsSnapshotLength = snapshotLength; // snapshot length for this epoch
+        uint256 groups = (participantsSnapshotLength + groupSize - 1) / groupSize;
+        groupCount = groups;
+
+        lotteryState.currentGroup = 0;
+        delete lotteryState.groupWinners;
+        lotteryState.snapshotStart = snapshotStart;
+
+        emit LotteryStarted(epoch, snapshotStart, participantsSnapshotLength, groupCount);
+    }
+
+    // Process a single group (owner calls repeatedly). externalSeed reduces manipulability.
+    function processGroup(uint256 groupIndex, uint256 externalSeed) external onlyOwner {
+        require(lotteryActive, "Lottery not active");
+        require(lotteryState.currentGroup == groupIndex, "Invalid group index");
+
+        uint256 snapshotStart = lotteryState.snapshotStart;
+        uint256 startOffset = groupIndex * groupSize;
+        uint256 start = snapshotStart + startOffset;
+        uint256 end = start + groupSize > snapshotStart + participantsSnapshotLength ? snapshotStart + participantsSnapshotLength : start + groupSize;
+        require(end > start, "Empty group");
+
+        // compute total weight (sum of balances) for this group (on-the-fly)
+        uint256 totalWeight = 0;
+        for (uint256 i = start; i < end; i++) {
+            totalWeight += balances[participants[i]];
+        }
+        require(totalWeight > 0, "Group total weight zero");
+
+        // pick weighted random winner within this group
+        uint256 r = randomFromSeed(externalSeed, groupIndex) % totalWeight;
+        uint256 cumulative = 0;
+        address winner = address(0);
+        for (uint256 i = start; i < end; i++) {
+            cumulative += balances[participants[i]];
+            if (r < cumulative) {
+                winner = participants[i];
+                break;
+            }
+        }
+        require(winner != address(0), "No winner found");
+
+        lotteryState.groupWinners.push(winner);
+        lotteryState.currentGroup++;
+
+        emit GroupProcessed(epoch, groupIndex, winner, totalWeight);
+    }
+
+    // Finalize lottery: select between group winners and emit the final winner.
+    // IMPORTANT: This function DOES NOT transfer tokens automatically.
+    function finalizeLottery(uint256 externalSeed) external onlyOwner {
+        require(lotteryActive, "Lottery not active");
+        require(lotteryState.currentGroup >= groupCount, "Groups not finished");
+        require(lotteryState.groupWinners.length > 0, "No group winners");
+
+        uint256 idx = randomFromSeed(externalSeed, 0) % lotteryState.groupWinners.length;
+        address finalWinner = lotteryState.groupWinners[idx];
+
+        // record for owner and emit: do NOT move tokens automatically
+        lastWinner = finalWinner;
+        lastPrize = lotteryPool; // prize amount currently allocated in lotteryPool (in tokens stored at lotteryWallet)
+        emit LotteryWinner(finalWinner, lastPrize);
+
+        emit LotteryFinalized(epoch, finalWinner, lastPrize);
+
+        // reset lottery state for next round
+        lotteryActive = false;
+        delete lotteryState;
+        participantsSnapshotLength = 0;
+        groupCount = 0;
+
+        // advance epoch: set start index for new epoch to current participants.length
+        epoch++;
+        epochStartIndex[epoch] = participants.length;
+    }
+
+    // Owner records that they did the payout (off-chain transfer from lotteryWallet). This updates internal accounting.
+    function recordPayout(address winner, uint256 amount) external onlyOwner {
+        require(winner == lastWinner, "Winner mismatch");
+        require(amount <= lotteryPool, "Amount exceeds pool");
+        require(balances[lotteryWallet] >= amount, "lotteryWallet lacks tokens");
+
+        balances[lotteryWallet] -= amount;
+        lotteryPool -= amount;
+        emit PayoutRecorded(winner, amount);
+    }
+
+    // Convenience view: get number of participants currently stored
+    function participantCount() external view returns (uint256) {
+        return participants.length;
+    }
+
+    // Convenience view: get group winners length
+    function groupWinnersCount() external view returns (uint256) {
+        return lotteryState.groupWinners.length;
+    }
+
+    // --- Utility: allow owner to clean participants array in chunks to free storage/gas across multiple txs ---
+    // WARNING: popping large counts is still gas-costly; do in small batches.
+    // NOTE: This pops from the END of participants array (removes newest entries).
+    // If you need to remove old entries (front), prefer leaving them and rely on epochStartIndex to skip them.
+    function clearParticipantsBatch(uint256 count) external onlyOwner {
+        uint256 len = participants.length;
+        require(count > 0, "count>0");
+        if (count >= len) {
+            // clear all
+            for (uint256 i = 0; i < len; i++) {
+                address a = participants[participants.length - 1];
+                firstSeenEpoch[a] = 0;
+                participants.pop();
+            }
+        } else {
+            for (uint256 i = 0; i < count; i++) {
+                address a = participants[participants.length - 1];
+                firstSeenEpoch[a] = 0;
+                participants.pop();
+            }
+        }
+    }
+
+    // Owner may adjust group size if needed for gas tuning
+    function setGroupSize(uint256 _groupSize) external onlyOwner {
+        require(_groupSize > 0, "groupSize>0");
+        groupSize = _groupSize;
+    }
+}
