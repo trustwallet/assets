@@ -1,12 +1,17 @@
 {
   "name": "GetFree",
   "symbol": "GOJFREE",
-  "type": "token",
+  "type": "BEP20",
   "decimals": 18,
+  "description": "GOJFREE is the native token of the Getfreecoin Ecosystem, enabling DeFi rewards, NFTs, staking and community engagement on BSC.",
   "website": "https://gotfreecoin.com",
-  "description": "GetFree (GOJFREE) powers the GOJFREE ecosystem—staking, NFTs, and gamified community rewards on BSC.",
   "explorer": "https://bscscan.com/token/0x3D700c138E59d16757B6723998B93C959c1E62D7",
   "status": "active",
   "id": "0x3D700c138E59d16757B6723998B93C959c1E62D7",
-  "tags": ["defi", "utility", "nft"]
+  "links": [
+    { "name": "website",  "url": "https://gotfreecoin.com" },
+    { "name": "facebook", "url": "https://www.facebook.com/GetfreecoinEcoSystemGoJfree" },
+    { "name": "discord",  "url": "https://discord.gg/gmeTgSzyCU" }
+  ],
+  "tags": ["defi", "nft"]
 }
