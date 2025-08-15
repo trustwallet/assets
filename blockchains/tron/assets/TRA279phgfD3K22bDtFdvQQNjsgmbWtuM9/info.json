@@ -4,14 +4,14 @@
   "type": "TRC20",
   "decimals": 6,
   "id": "TRA279phgfD3K22bDtFdvQQNjsgmbWtuM9",
-  "description": "Tether USD (USDT) is a stablecoin pegged 1-to-1 to the US dollar, issued on the TRON blockchain as a TRC20 token, enabling fast and low-cost digital transactions.",
+  "description": "Tether USD (USDT) is a TRC20 stablecoin pegged 1-to-1 to the US dollar, issued on the TRON blockchain for fast, secure, and low-cost digital transactions.",
   "website": "https://tether.to",
-  "explorer": "https://tronscan.org/#/token20/TRA279phgfD3K22bDtFdvQQNjsgmbWtuM9",
+  "explorer": "https://tronscan.io/#/token20/TRA279phgfD3K22bDtFdvQQNjsgmbWtuM9",
   "status": "active",
   "links": [
     {
       "name": "twitter",
-      "url": "https://twitter.com/Tether_to"
+      "url": "https://x.com/Tether_to"
     },
     {
       "name": "github",
@@ -30,5 +30,5 @@
       "url": "https://www.coingecko.com/en/coins/tether"
     }
   ],
-  "tags": ["stablecoin", "payments", "tron", "defi"]
+  "tags": ["stablecoin", "defi", "tron"]
 }
