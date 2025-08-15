@@ -3,9 +3,32 @@
   "symbol": "ELQT",
   "type": "BEP20",
   "decimals": 18,
-  "description": "Electricity Token (ELQT) is a token on Binance Smart Chain designed for the electricity and energy sector.",
+  "description": "Electricity Token (ELQT) is a community-driven cryptocurrency aimed at promoting clean energy projects and decentralized finance solutions.",
   "website": "https://electricitycoin.blogspot.com/",
   "explorer": "https://bscscan.com/token/0x2785a334d1C5583eB9B070C728F63030f7133f24",
   "status": "active",
-  "id": "0x2785a334d1C5583eB9B070C728F63030f7133f24"
+  "id": "0x2785a334d1C5583eB9B070C728F63030f7133f24",
+  "links": [
+    {
+      "name": "email",
+      "url": "mailto:elqtcoin@gmail.com"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/electricity_ELQT_coin"
+    },
+    {
+      "name": "twitter",
+      "url": "https://x.com/ELQTCoin"
+    },
+    {
+      "name": "discord",
+      "url": "https://discord.gg/zcM6y2UX"
+    }
+  ],
+  "tags": [
+    "defi",
+    "energy",
+    "bep20"
+  ]
 }
