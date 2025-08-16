@@ -1,18 +1,16 @@
 {
-  "name": "Tether USD Bridged ZED20"
-  "website": "https://www.youhodler.com/"
-  "description": "USDT.z is a stable token pegged 1:1 with USDT on Binance Smart Chain (BEP20)."
-  "explorer": "https://bscscan.com/token/0xBcFbECFBc2F49Dc8D658A48F4FE605698a0F7C62"
-  "type": "BEP20"
-  "symbol": "USDT.z"
-  "decimals": 18
-  "status": "active"
-  "id": "0xBcFbECFBc2F49Dc8D658A48F4FE605698a0F7C62"
-  "tags": ["stablecoin"]
+  "name": "Tether USD Bridged ZED20",
+  "website": "https://www.youhodler.com/",
+  "description": "USDT.z is a stable token pegged 1:1 with USDT on Binance Smart Chain.",
+  "explorer": "https://bscscan.com/token/0xBcFbECFBc2F49Dc8D658A48F4FE605698a0F7C62",
+  "type": "BEP20",
+  "symbol": "USDT.z",
+  "decimals": 18,
+  "status": "active",
+  "id": "0xBcFbECFBc2F49Dc8D658A48F4FE605698a0F7C62",
+  "tags": ["stablecoin"],
   "socials": {
-    "linkedin": "https://www.linkedin.com/youhodler/"
-    "discord": "https://discord.gg/youhodler"
-    "twitter": "https://x.com/youhodler"
+    "twitterx": "https://x.com/youhodler",
     "telegram": "https://t.me/youhodler_official"
   }
 }
