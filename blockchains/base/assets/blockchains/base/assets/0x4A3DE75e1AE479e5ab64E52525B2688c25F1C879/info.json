@@ -5,15 +5,14 @@
   "decimals": 18,
   "description": "BasePepe ($BPEPE) is a community-driven memecoin on Base chain.",
   "website": "https://base-pepe.com",
-  "explorer": "https://etherscan.io/token/0x4A3DE75e1AE479e5ab64E52525B2688c25F1C879",
+  "explorer": "https://basescan.org/token/0x4A3DE75e1AE479e5ab64E52525B2688c25F1C879",
   "status": "active",
   "id": "0x4A3DE75e1AE479e5ab64E52525B2688c25F1C879",
-  "links": {
-    "twitter": "https://x.com/basepepe",
-    "telegram": "https://t.me/BasePepeofficial",
-    "github": "https://github.com/erol6469"
-  },
-  "tags": [
-    "community"
-  ]
+  "links": [
+    { "name": "twitter",  "url": "https://x.com/basepepe" },
+    { "name": "telegram", "url": "https://t.me/BasePepeofficial" },
+    { "name": "github",   "url": "https://github.com/erol6469" },
+    { "name": "website",  "url": "https://base-pepe.com" }
+  ],
+  "tags": ["community"]
 }
