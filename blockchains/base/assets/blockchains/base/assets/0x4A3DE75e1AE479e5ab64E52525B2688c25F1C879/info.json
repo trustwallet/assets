@@ -9,12 +9,20 @@
   "status": "active",
   "id": "0x4A3DE75e1AE479e5ab64E52525B2688c25F1C879",
   "links": [
-    "https://x.com/basepepe",
-    "https://t.me/BasePepeofficial",
-    "https://github.com/erol6469"
+    {
+      "name": "twitter",
+      "url": "https://x.com/basepepe"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/BasePepeofficial"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/erol6469"
+    }
   ],
   "tags": [
-    "community",
-    "token"
+    "community"
   ]
 }
