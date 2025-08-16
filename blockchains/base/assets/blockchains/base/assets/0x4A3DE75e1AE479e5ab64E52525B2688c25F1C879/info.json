@@ -1,32 +1,28 @@
 {
-  "name": "Base Pepe",
+  "name": "BasePepe",
   "symbol": "BPEPE",
-  "type": "BASE",
   "decimals": 18,
-  "explorer": "https://etherscan.io/token/0x4A3DE75e1AE479e5ab64E52525B2688c25f1C879",
+  "description": "BasePepe ($BPEPE) is a community-driven meme token on the Base Chain ecosystem. Its mission is to build an engaged community around fun and crypto culture, while ensuring transparency, security, and liquidity for its holders.",
   "website": "https://base-pepe.com",
-  "description": "Base Pepe ($BPEPE) is a community-driven token built on the Base Chain ecosystem. Our mission is to build an engaged community around meme and crypto culture, while ensuring transparency, security, and liquidity for our holders.",
-  "status": "active",
-  "id": "0x4A3DE75e1AE479e5ab64E52525B2688c25f1C879",
-  "tags": [
-    "defi"
-  ],
+  "explorer": "https://basescan.org/token/0x4A3DE75e1AE479e5ab64E52525B2688c25F1C879",
   "links": [
     {
       "name": "twitter",
-      "url": "https://x.com/basepepeerc20"
+      "url": "https://x.com/basepepecoin"
     },
     {
       "name": "telegram",
-      "url": "https://t.me/BasePepeofficial"
+      "url": "https://t.me/BasePepePortal"
     },
     {
       "name": "github",
-      "url": "https://github.com/erol6469"
+      "url": "https://github.com/erol6469/bpepe-logo"
     },
     {
       "name": "whitepaper",
       "url": "https://github.com/erol6469/bpepe-logo/raw/main/BasePepe_Whitepaper_EN.pdf"
     }
-  ]
-}
+  ],
+  "tags": [
+    "defi"
+    ]
