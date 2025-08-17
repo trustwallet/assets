@@ -5,22 +5,13 @@
   "decimals": 18,
   "description": "Onion Token (.Onion) is a DeFi utility token on BNB Smart Chain, focused on staking and community growth.",
   "website": "https://blaznikolj.github.io/oniontoken-website/",
-  "explorer": "https://bscscan.com/token/0xf95a185f32aeA4Ae5e944bBC0F6c72687E607b0a",
+  "explorer": "https://bscscan.com/token/0xF95a185f32aea4Ae5e944bBC0F6c72687E607b0a",
   "status": "active",
-  "id": "0xf95a185f32aeA4Ae5e944bBC0F6c72687E607b0a",
+  "id": "0xF95a185f32aea4Ae5e944bBC0F6c72687E607b0a",
   "links": [
-    {
-      "name": "twitter",
-      "url": "https://x.com/infooniontoken?s=21"
-    },
-    {
-      "name": "telegram",
-      "url": "https://t.me/OnionTokenProject"
-    },
-    {
-      "name": "github",
-      "url": "https://github.com/Blaznikolj/oniontoken-website"
-    }
+    { "name": "twitter",  "url": "https://x.com/infooniontoken?s=21" },
+    { "name": "telegram", "url": "https://t.me/OnionTokenProject" },
+    { "name": "github",   "url": "https://github.com/Blaznikolj/oniontoken-website" }
   ],
   "tags": ["defi", "utility-token"]
 }
