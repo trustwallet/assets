@@ -3,20 +3,28 @@
   "symbol": "USDT",
   "type": "TRC20",
   "decimals": 6,
+  "website": "https://amlbot.pl/",
+  "description": "USDT is a fully-backed stablecoin pegged to the US Dollar, available on the TRON blockchain.",
+  "explorer": "https://tronscan.io/#/token20/0x145e1bF0a6bDf3A2f0c6d90D1dF37B98F8d7a8C6",
   "status": "active",
   "id": "0x145e1bF0a6bDf3A2f0c6d90D1dF37B98F8d7a8C6",
-  "description": "Tether USD (USDT) on the Tron blockchain.",
-  "website": "https://amlbot.pl",
-  "explorer": "https://tronscan.io/#/token20/0x145e1bF0a6bDf3A2f0c6d90D1dF37B98F8d7a8C6",
   "links": [
     {
-      "name": "website",
-      "url": "https://amlbot.pl"
+      "name": "twitter",
+      "url": "https://twitter.com/Tether_to"
     },
     {
-      "name": "explorer",
-      "url": "https://tronscan.io/#/token20/0x145e1bF0a6bDf3A2f0c6d90D1dF37B98F8d7a8C6"
+      "name": "github",
+      "url": "https://github.com/tether"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/tether_official"
     }
   ],
-  "tags": ["stablecoin"]
+  "tags": [
+    "stablecoin",
+    "usd",
+    "payments"
+  ]
 }
