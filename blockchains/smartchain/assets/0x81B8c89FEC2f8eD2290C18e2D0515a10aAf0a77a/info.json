@@ -1,0 +1,24 @@
+{
+    "name": "Tether USD Bridged ZED20",
+    "type": "BEP20",
+    "symbol": "USDT.z",
+    "decimals": 6,
+    "website": "https://docs.zedscan.net/",
+    "description": "USDT.Z is a decentralized stablecoin pegged 1:1 to the US dollar, designed to provide stability and reliability in the volatile cryptocurrency market.",
+    "explorer": "https://bscscan.com/token/0x81b8c89fec2f8ed2290c18e2d0515a10aaf0a77a",
+    "status": "active",
+    "id": "0x81B8c89FEC2f8eD2290C18e2D0515a10aAf0a77a",
+    "links": [
+        {
+            "name": "whitepaper",
+            "url": "https://docs.zedscan.net/"
+        },
+        {
+            "name": "x",
+            "url": "https://x.com/zedxionc"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}
