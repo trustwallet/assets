@@ -6,12 +6,17 @@
   "status": "active",
   "id": "0x145e1bF0a6bDf3A2f0c6d90D1dF37B98F8d7a8C6",
   "description": "Tether USD (USDT) on the Tron blockchain.",
-  "website": "https:/amlbot.pl",
-  "explorer": "https://tronscan.org/#/contract/TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+  "website": "https://amlbot.pl",
+  "explorer": "https://tronscan.io/#/token20/0x145e1bF0a6bDf3A2f0c6d90D1dF37B98F8d7a8C6",
   "links": [
     {
       "name": "website",
       "url": "https://amlbot.pl"
+    },
+    {
+      "name": "explorer",
+      "url": "https://tronscan.io/#/token20/0x145e1bF0a6bDf3A2f0c6d90D1dF37B98F8d7a8C6"
     }
-  ]
+  ],
+  "tags": ["stablecoin"]
 }
