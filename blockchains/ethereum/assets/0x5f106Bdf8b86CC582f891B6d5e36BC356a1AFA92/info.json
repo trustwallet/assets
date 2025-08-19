@@ -1,11 +1,33 @@
 {
-  "name": "ABAKUM",
-  "symbol": "ABM",
-  "type": "ERC20",
-  "decimals": 18,
-  "description": "ABAKUM (ABM Coin) is the official digital asset of the ABM Foundation, designed as the core element of the ABM ecosystem. It serves as the fundamental unit of value and exchange within the ABM Universe, enabling seamless transactions, governance participation, liquidity provision, and interaction across all ABM platforms and services. ABAKUM symbolizes trust, transparency, and innovation in decentralized finance.",
-  "website": "https://abmfoundation.ru",
-  "explorer": "https://etherscan.io/token/0x5f106Bdf8b86CC582f891B6d5e36BC356a1AFA92",
-  "status": "active",
-  "id": "0x5f106Bdf8b86CC582f891B6d5e36BC356a1AFA92"
+    "name": "ABAKUM",
+    "type": "BASE",
+    "symbol": "AB,",
+    "decimals": 18,
+    "website": "https://abmfoundation.ru/",
+    "description": "ABAKUM is a digital ecosystem uniting finance, technology, and innovation, built to empower users with transparency, trust, and limitless opportunities.",
+    "explorer": "https://etherscan.io/address/0x5f106bdf8b86cc582f891b6d5e36bc356a1afa92",
+    "status": "active",
+    "id": "0x5f106Bdf8b86CC582f891B6d5e36BC356a1AFA92",
+    "links": [
+        {
+            "name": "telegram",
+            "url": "https://t.me/abm_fund"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/ABM-Foundation"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/glockinmybape1"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://abmfoundation.ru/whitepapper.pdf"
+        }
+    ],
+    "tags": [
+        "abm"
+    ]
 }
+
