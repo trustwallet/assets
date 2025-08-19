@@ -3,14 +3,19 @@
   "symbol": "SPRAI",
   "type": "BEP20",
   "decimals": 18,
-  "description": "SPRAI is a meme token on BNB Smart Chain that promotes environmental awareness and digital inclusion with tree-planting rewards.",
-  "website": "https://spraicoin.github.io/",
+  "description": "SPRAI é uma memecoin brasileira criada na BNB Smart Chain com foco em comunidade e sustentabilidade. Projeto com campanha ambiental de incentivo ao plantio da Araucária, árvore símbolo do Paraná.",
+  "website": "https://www.instagram.com/sprai.token",
   "explorer": "https://bscscan.com/token/0x7C7e518D6d91498BbD850a834e36a96661ac9B1B",
   "status": "active",
   "id": "0x7C7e518D6d91498BbD850a834e36a96661ac9B1B",
   "links": [
-    { "name": "github", "url": "https://github.com/spraicoin" },
-    { "name": "facebook", "url": "https://www.facebook.com/spraitoken" }
+    {
+      "name": "facebook",
+      "url": "https://facebook.com/spraitoken"
+    }
   ],
-  "tags": ["memes"]
+  "tags": [
+    "memes"
+  ],
+  "holders": 11
 }
