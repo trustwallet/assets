@@ -1,7 +1,7 @@
 {
     "name": "XCOIN",
     "symbol": "XTH",
-    "type": "token",
+    "type": "ERC20",
     "decimals": 18,
     "description": "XCOIN (XTH) - Token revolutionnaire avec supply total de 777777777777 tokens. Concu pour innovation DeFi.",
     "website": "https://xcoineth.com",
@@ -18,5 +18,5 @@
             "url": "https://t.me/xcoin_xth"
         }
     ],
-    "tags": ["defi", "payment"]
+    "tags": ["defi"]
 }
