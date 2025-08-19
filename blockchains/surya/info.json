@@ -1,0 +1,13 @@
+{
+  "name": "SuryaChain",
+  "chain_id": 7008,
+  "network_id": 7008,
+  "rpc": ["https://suryaexplorer.hstn.me/rpc.php"],
+  "native_currency": {
+    "name": "Surya",
+    "symbol": "OHM",
+    "decimals": 18
+  },
+  "explorer": "https://suryascan.hstn.me",
+  "infoURL": "https://suryascan.hstn.me"
+}
