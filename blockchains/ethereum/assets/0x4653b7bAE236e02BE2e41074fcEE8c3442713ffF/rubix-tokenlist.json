@@ -1,0 +1,19 @@
+{
+  "name": "RubixCoin Token List",
+  "timestamp": "2025-08-20T00:00:00+00:00",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "tokens": [
+    {
+      "chainId": 1,
+      "address": "0x4653b7bAE236e02BE2e41074fcEE8c3442713ffF",
+      "symbol": "RubixC",
+      "name": "RubixCoin",
+      "decimals": 8,
+      "logoURI": "https://raw.githubusercontent.com/Anshsawaranya/RubixCoin/refs/heads/main/rubyCoin.png"
+    }
+  ]
+}
