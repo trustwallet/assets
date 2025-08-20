@@ -1,0 +1,25 @@
+{
+  "language": "Solidity",
+  "sources": {
+    "Wsol.sol": {
+      "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.20;\n\n/*\nPaste your EXACT Solidity source code here (the same code you deployed).\nDo not change anything.\nIf your contract imports other files, add them under `sources` as more entries using the same\n{\"content\": \"...\"} format, with the correct filenames, e.g. `IERC20.sol`, `Ownable.sol`.\n*/\n\n// --- BEGIN YOUR CONTRACT ---\n// contract ... { ... }\n// --- END YOUR CONTRACT ---\n"
+    }
+  },
+  "settings": {
+    "optimizer": {
+      "enabled": false,
+      "runs": 200
+    },
+    "viaIR": false,
+    "outputSelection": {
+      "*": {
+        "*": [
+          "abi",
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "metadata"
+        ]
+      }
+    }
+  }
+}
