@@ -1,18 +1,15 @@
 {
-    "name": "AiT Coin",
-    "symbol": "AiT",
-    "website": "https://aidigitalcoin.world",
-    "description": "Buy and sell AiT Coin (AiT) securely with seamless access to a cutting-edge cryptocurrency. Experience real-time prices, secure transactions, and effortless trading with AiT Coin (AiT) – designed to empower global cryptocurrency enthusiasts.",
-    "explorer": "https://tronscan.org/#/token20/TNvon3mXbRc3EWq8SWTgrhp3UY9bgpGMzv",
-    "type": "coin",
-    "decimals": 18,
-    "status": "active",
-    "links": [
-        {
-            "name": "coinmarketcap",
-            "url": "https://dex.coinmarketcap.com/token/tron/TNvon3mXbRc3EWq8SWTgrhp3UY9bgpGMzv/"
-        },
-        {
+  "name": "AiT Coin",
+  "symbol": "AiT",
+  "type": "TRC20",
+  "decimals": 18,
+  "description": "AiT Coin is a digital token by Ai Digital Coin.",
+  "website": "https://aidigitalcoin.world",
+  "explorer": "https://tronscan.org/#/token20/TNvon3mXbRc3EWq8SWTgrhp3UY9bgpGMzv",
+  "status": "active",
+  "id": "tnvon3mxbRc3ewq8swtgrhp3uy9bgpgmzv",
+  "links": [
+    {
             "name": "x",
             "url": "https://x.com/AiTcoin7860"
         },
@@ -20,5 +17,9 @@
             "name": "Telegram",
             "url": "https://t.me/+E_E1H0vQv0diZjBl"
         }
-    ]
+  ],
+  "tags": [
+    "defi",
+    "utility"
+  ]
 }
