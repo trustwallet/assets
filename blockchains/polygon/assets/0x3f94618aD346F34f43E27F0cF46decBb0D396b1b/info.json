@@ -1,36 +1,35 @@
 {
-    "name": "Flicker",
-    "type": "POLYGON",
-    "symbol": "FKR",
-    "decimals": 18,
-    "website": "https://flickerfkr.com/",
-    "description": "FlickerPro where we introduce an innovative crypto token designed to revolutionize finance, real estate, e-commerce, and the traveling & hospitality sectors.",
-    "explorer": "https://polygonscan.com/token/0x3f94618aD346F34f43E27F0cF46decBb0D396b1b",
-    "status": "active",
-    "id": "0x3f94618aD346F34f43E27F0cF46decBb0D396b1b",
-    "links": [
-        {
-            "name": "x",
-            "url": "https://x.com/Flicker46278331"
-        },
-        {
-            "name": "github",
-            "url": "https://github.com/flickerfkr"
-        },
-        {
-            "name": "facebook",
-            "url": "https://facebook.com/flickertechnology"
-        },
-        {
-            "name": "coingecko",
-            "url": "https://coingecko.com/en/coins/flicker"
-        },
-        {
-            "name": "coinmarketcap",
-            "url": "https://coinmarketcap.com/currencies/flicker/"
-        }
-    ],
-    "tags": [
-        "defi"
-    ]
+  "name": "Flicker",
+  "symbol": "FKR",
+  "decimals": 18,
+  "description": "Flicker (FKR) is a community-driven project focusing on decentralized finance and utility.",
+  "website": "https://flickerfkr.com",
+  "explorer": "https://polygonscan.com/token/0x3f94618aD346F34f43E27F0cF46decBb0D396b1b",
+  "status": "active",
+  "id": "0x3f94618aD346F34f43E27F0cF46decBb0D396b1b",
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/flickerfkr"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/flickerfkr"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/flickerfkr"
+    }
+    {
+       "name": "coingecko",
+       "url": "https://coingecko.com/en/coins/flicker"
+    },
+    {
+        "name": "coinmarketcap",
+        "url": "https://coinmarketcap.com/currencies/flicker/"
+     }
+     ],
+        "tags": [
+          "defi"
+     ]
 }
