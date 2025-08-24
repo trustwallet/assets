@@ -15,7 +15,7 @@ Token info:
 - Website: https://chronorift.org
 - Explorer: https://etherscan.io/token/0xBdA3d279102b8937b2fC9861fF0cd44d67aaFda2
 - Telegram: https://t.me/ChronoRiftOfficial
-- Discord: https://discord.gg/CMjd2UU4
 - X: https://x.com/ChronoRiftToken
+- Etherscan Profile: https://etherscan.io/public-profile?uid=5edc75fe
 
 After adding all files, commit and push to your fork, then open a PR against trustwallet/assets.

@@ -17,10 +17,6 @@
       "url": "https://t.me/ChronoRiftOfficial"
     },
     {
-      "name": "discord",
-      "url": "https://discord.gg/CMjd2UU4"
-    },
-    {
       "name": "x",
       "url": "https://x.com/ChronoRiftToken"
     }
@@ -28,9 +24,13 @@
   "explorer": "https://etherscan.io/token/0xBdA3d279102b8937b2fC9861fF0cd44d67aaFda2",
   "tag": ["defi", "community"],
   "socials": [
-    {
-      "name": "website",
-      "url": "https://chronorift.org"
-    }
+  {
+    "name": "website",
+    "url": "https://chronorift.org"
+  },
+  {
+    "name": "etherscan",
+    "url": "https://etherscan.io/public-profile?uid=5edc75fe"
+  }
   ]
 }
