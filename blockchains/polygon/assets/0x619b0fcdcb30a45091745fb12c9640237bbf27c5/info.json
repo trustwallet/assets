@@ -3,8 +3,20 @@
     "type": "POLYGON",
     "symbol": "BALBI",
     "decimals": 18,
-    "description": "The BALBI token.",
+    "description": "BALBI is a utility token focused on raising awareness and providing a tool for carbon emission compensation in the HVAC industry, contributing to projects on air quality and environmental studies.",
     "explorer": "https://polygonscan.com/token/0x619B0fcDcb30a45091745Fb12C9640237bbF27c5",
     "status": "active",
-    "id": "0x619B0fcDcb30a45091745Fb12C9640237bbF27c5"
+    "id": "0x619B0fcDcb30a45091745Fb12C9640237bbF27c5",
+    "website": "https://balbi-token.github.io/site/",
+    "links": [
+        {
+            "name": "instagram",
+            "url": "https://www.instagram.com/balbitoken/"
+        },
+        {
+            "name": "x",
+            "url": "https://x.com/BalbiToken93519"
+        }
+    ],
+    "tags": ["utility-token", "environmental", "carbon-offset"]
 }
