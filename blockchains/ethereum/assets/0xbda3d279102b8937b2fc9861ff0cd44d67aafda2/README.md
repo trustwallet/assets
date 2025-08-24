@@ -1,9 +1,21 @@
-Add `logo.png` (256x256 PNG) to this folder before creating a PR.
+Chrono Rift (CRFT) ERC-20 Token TrustWallet Asset Submission
 
-Logo filename must be `logo.png` and exactly 256x256 pixels.
+Folder name must use the EIP-55 checksum address:
+- blockchains/ethereum/assets/0xBdA3d279102b8937b2fC9861fF0cd44d67aaFda2/
 
-Example:
+Required files:
+- logo.png (256x256 PNG, <100KB)
+- info.json (with all required fields: id in checksum format, decimals=18, website, explorer, tags, valid links)
+- README.md (this file)
 
-- blockchains/ethereum/assets/0xbda3d279102b8937b2fc9861ff0cd44d67aafda2/logo.png
+Token info:
+- Name: Chrono Rift
+- Symbol: CRFT
+- Decimals: 18
+- Website: https://chronorift.org
+- Explorer: https://etherscan.io/token/0xBdA3d279102b8937b2fC9861fF0cd44d67aaFda2
+- Telegram: https://t.me/ChronoRiftOfficial
+- Discord: https://discord.gg/CMjd2UU4
+- X: https://x.com/ChronoRiftToken
 
-Once added, commit and push the changes to your fork and open a PR against trustwallet/assets.
+After adding all files, commit and push to your fork, then open a PR against trustwallet/assets.
