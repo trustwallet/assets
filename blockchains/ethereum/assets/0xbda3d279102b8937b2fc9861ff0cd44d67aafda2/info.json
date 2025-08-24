@@ -2,21 +2,31 @@
   "name": "Chrono Rift",
   "symbol": "CRFT",
   "type": "ERC20",
-  "id": "0xbda3d279102b8937b2fc9861ff0cd44d67aafda2",
+  "id": "0xBdA3d279102b8937b2fC9861fF0cd44d67aaFda2",
+  "decimals": 18,
   "status": "active",
+  "website": "https://chronorift.org",
   "description": "Chrono Rift (CRFT) is a community-driven ERC-20 token powering time-based digital experiences, gamified finance, and decentralized governance.",
   "links": [
     {
-      "name": "website",
-      "url": "https://chronorift.org"
+      "name": "github",
+      "url": "https://github.com/BeMintalitet/Chrono-Rift-Token"
     },
     {
-      "name": "explorer",
-      "url": "https://etherscan.io/token/0xbda3d279102b8937b2fc9861ff0cd44d67aafda2"
+      "name": "telegram",
+      "url": "https://t.me/ChronoRiftOfficial"
+    },
+    {
+      "name": "discord",
+      "url": "https://discord.gg/CMjd2UU4"
+    },
+    {
+      "name": "x",
+      "url": "https://x.com/ChronoRiftToken"
     }
   ],
-  "explorer": "https://etherscan.io/token/0xbda3d279102b8937b2fc9861ff0cd44d67aafda2",
-  "tag": ["defi"],
+  "explorer": "https://etherscan.io/token/0xBdA3d279102b8937b2fC9861fF0cd44d67aaFda2",
+  "tag": ["defi", "community"],
   "socials": [
     {
       "name": "website",
