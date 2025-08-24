@@ -1,0 +1,28 @@
+{
+    "name": "Tether USDT",
+    "type": "BEP20",
+    "symbol": "USDT",
+    "decimals": 18,
+    "website": "https://greeneyeghost.io",
+    "description": "digital token backed by fiat currency provides individuals and organizations with a non official USDT",
+    "explorer": "https://bscscan.com/token/0xb083f5976f0e8f5989136820ce78df81e1d34444",
+    "status": "active",
+    "id": "0x35E08236cC2CbccA6bBBC0301FFCd9bC21f5eF6B",
+    "links": [
+        {
+            "name": "telegram",
+            "url": "https://t.me/greeneyeghost"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://dex.coinmarketcap.com/token/bsc/0xb083f5976f0e8f5989136820ce78df81e1d34444/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://www.geckoterminal.com/de/bsc/pools/0xb083f5976f0e8f5989136820ce78df81e1d34444"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}
