@@ -1,14 +1,16 @@
 {
-  "name": "BNBFrog Inu", 
+  "name": "BNBFrog Inu",
   "symbol": "BNBFrog",
   "type": "BEP20",
   "decimals": 9,
-  "website": "https://bnbfrog.top", 
+  "website": "https://bnbfrog.top",
   "description": "BNBFrog is the king of frogs—symbol of victory and strength. Powerful and tough, our $BNBFROG community is the strongest you'll find.",
   "explorer": "https://bscscan.com/token/0x64da67A12a46f1DDF337393e2dA12eD0A507Ad3D",
   "status": "active",
   "id": "0x64da67A12a46f1DDF337393e2dA12eD0A507Ad3D",
-  "telegram": "https://t.me/bnbfrog",
-  "twitter": "https://twitter.com/bnbfrog", 
+  "links": [
+    { "name": "twitter",  "url": "https://twitter.com/bnbfrog" },
+    { "name": "telegram", "url": "https://t.me/bnbfrog" }
+  ],
   "tags": ["memes"]
 }
