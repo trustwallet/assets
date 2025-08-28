@@ -1,16 +1,18 @@
 {
-  "name": "CR7P Token",
+  "name": "CR7P",
   "symbol": "CR7P",
   "type": "ERC20",
   "decimals": 18,
+  "website": "https://tu-dominio.com",
+  "description": "Descripción breve del token (sin Markdown, 1–2 frases).",
+  "explorer": "https://etherscan.io/token/0x0f3Ea18896aF4F3d04920192810379B06465A063",
   "status": "active",
   "id": "0x0f3Ea18896aF4F3d04920192810379B06465A063",
-  "description": "CR7P is a community token inspired by Cristiano Ronaldo and football culture.",
-  "website": "https://tokentool.bitbond.com/managetoken/0x0f3Ea18896aF4F3d04920192810379B06465A063",
-  "explorer": "https://etherscan.io/token/0x0f3Ea18896aF4F3d04920192810379B06465A063",
-  "links": {
-    "twitter": "https://twitter.com/CR7PToken",
-    "telegram": "https://t.me/CR7PToken"
-  },
-  "tags": ["defi", "community"]
+  "tags": ["defi"],
+  "links": [
+    { "name": "twitter", "url": "https://x.com/tu_cuenta" },
+    { "name": "telegram", "url": "https://t.me/tu_canal" },
+    { "name": "coinmarketcap", "url": "https://coinmarketcap.com/currencies/tu-token" },
+    { "name": "coingecko", "url": "https://www.coingecko.com/en/coins/tu-token" }
+  ]
 }
