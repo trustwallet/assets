@@ -1,0 +1,25 @@
+{
+    "name": "Token BNB Chain coin",
+    "type": "BEP20",
+    "symbol": "BNBC",
+    "decimals": 18,
+    "website": "https://potrepolov.github.io/BNBC-/",
+    "description": "Цифровой токен на Binance Smart Chain для сообщества и децентрализованных приложений.",
+    "explorer": "https://bscscan.com/token/0xc324A50615b4421b019329CA20Fc910D2D7535E5",
+    "status": "active",
+    "id": "0xc324A50615b4421b019329CA20Fc910D2D7535E5",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://potrepolov.github.io/BNBC-/"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/BNBChainDevs"
+        }
+    ],
+    "tags": [
+        "defi",
+        "binance-peg"
+    ]
+}
