@@ -1,11 +1,18 @@
 {
-    "name": "Beamz Token",
-    "type": "BEP20",
-    "symbol": "BMT",
-    "decimals": 18,
-    "website": "https://brickandbeamz.com/",
-    "description": "Beamz Token — a BEP-20 token deployed on Binance Smart Chain, purpose-built for fan economy engagement, multi-platform utility payments, and a robust presale + MLM participation model that rewards true community growth while maintaining long-term supply discipline.",
-    "explorer": "https://bscscan.com/address/0x79d386ae36a08FB37d10Eb1b0efbA2e7b2f2640B",
-    "status": "active",
-    "id": "0x79d386ae36a08FB37d10Eb1b0efbA2e7b2f2640B"
+  "name": "Beamz Token",
+  "type": "BEP20",
+  "symbol": "BMT",
+  "decimals": 18,
+  "website": "https://brickandbeamz.com/",
+  "description": "Beamz Token — a BEP-20 token deployed on Binance Smart Chain, purpose-built for fan economy engagement, multi-platform utility payments, and a robust presale + MLM participation model that rewards true community growth while maintaining long-term supply discipline.",
+  "explorer": "https://bscscan.com/token/0x79d386ae36a08FB37d10Eb1b0efbA2e7b2f2640B",
+  "status": "active",
+  "id": "0x79d386ae36a08FB37d10Eb1b0efbA2e7b2f2640B",
+  "links": [
+    {
+      "name": "whitepaper",
+      "url": "https://brickandbeamz.com/whitepaper"
+    }
+  ],
+  "tags": ["defi"]
 }
