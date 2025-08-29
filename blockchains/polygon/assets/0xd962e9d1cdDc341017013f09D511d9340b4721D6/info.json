@@ -1,0 +1,17 @@
+{
+  "name": "USD Tether",
+  "type": "ERC20",
+  "symbol": "USD-T",
+  "decimals": 18,
+  "website": "https://bmverse.medium.com",
+  "description": "BMverse USD (USD-T) is a 1:1 USD-pegged stablecoin designed for fast, secure, and low-cost transactions within the BMverse ecosystem.", 
+  "explorer": "https://polygonscan.com/token/0xd962e9d1cdDc341017013f09D511d9340b4721D6",
+  "status": "active",
+  "id": "0xd962e9d1cdDc341017013f09D511d9340b4721D6",
+  "links": [
+    { "name": "x", "url": "https://x.com/bmverseio" },
+    { "name": "docs", "url": "https://www.geckoterminal.com/polygon/pools/0x37a57f6f457d045e8e4447f5381e22a120bbab8d" },
+    { "name": "coinmarketcap", "url": "https://coinmarketcap.com/dexscan/polygon/0x37a57f6f457d045e8e4447f5381e22a120bbab8d/" }
+  ],
+  "tags": ["stablecoin", "defi"]
+}
