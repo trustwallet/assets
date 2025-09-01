@@ -1,0 +1,24 @@
+{
+    "name": "BTCBR Token",
+    "type": "BEP2",
+    "symbol": "BTCBR",
+    "decimals": 18,
+    "website": "https://btcbr-wesite.vercel.app/",
+    "description": "BTCBR brings Bitcoin's reliability to the Binance Smart Chain ecosystem with enhanced speed, lower fees, and innovative DeFi capabilities.",
+    "explorer": "https://explorer.binance.org/asset/0x0209fd9AD4E169B8eCA0345Ef43fe0e822877c55",
+    "status": "active",
+    "id": "0x0209fd9AD4E169B8eCA0345Ef43fe0e822877c55",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/opxlabs/BTCBR"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/tokenbtcbr"
+        }
+    ],
+    "tags": [
+        "wrapped"
+    ]
+}
