@@ -1,13 +1,15 @@
 {
-  "name": "Xclu VIP",
+  "name": "Xclu.vip Token",
   "symbol": "XCLU",
   "type": "ERC20",
   "decimals": 18,
   "website": "https://token.xclu.vip",
-  "twitter": "https://twitter.com/xcluvip",
-  "telegram": "https://t.me/xcluvip",
   "description": "Utility token powering Xclu.vip, connecting Web3 and premium e-commerce.",
   "explorer": "https://etherscan.io/token/0x4503ebF1d2286bB0c4a0eC2760B4CECbCE4eaf70",
   "status": "active",
-  "id": "0x4503ebF1d2286bB0c4a0eC2760B4CECbCE4eaf70"
+  "id": "0x4503ebF1d2286bB0c4a0eC2760B4CECbCE4eaf70",
+  "tags": ["utility"],
+  "twitter": "https://twitter.com/xcluvip",
+  "telegram": "https://t.me/xcluvip",
+  "github": "https://github.com/xcluvip"
 }
