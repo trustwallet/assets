@@ -8,12 +8,24 @@
   "explorer": "https://solscan.io/token/5yDG4VkMFWgi8k3LCA2m9gYaNNuQP5TCnbhdvQ2hEPaM",
   "status": "active",
   "id": "5yDG4VkMFWgi8k3LCA2m9gYaNNuQP5TCnbhdvQ2hEPaM",
-  "links": {
-    "telegram": "https://t.me/xorachain",
-    "twitter": "https://x.com/X0RAchain",
-    "github": "https://github.com/Xorachain",
-    "coingecko": "https://www.coingecko.com/en/coins/bitcoin"
-  },
+  "links": [
+    {
+      "name": "telegram",
+      "url": "https://t.me/xorachain"
+    },
+    {
+      "name": "twitter",
+      "url": "https://x.com/X0RAchain"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/Xorachain"
+    },
+    {
+      "name": "coingecko",
+      "url": "https://www.coingecko.com/en/coins/bitcoin"
+    }
+  ],
   "tags": [
     "utility-token"
   ]
