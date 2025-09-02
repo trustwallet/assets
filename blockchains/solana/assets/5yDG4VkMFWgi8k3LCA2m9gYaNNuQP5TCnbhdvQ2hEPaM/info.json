@@ -3,20 +3,18 @@
   "symbol": "BTC",
   "type": "SPL",
   "decimals": 6,
-  "supply": "985000000000",
-  "explorer": "https://explorer.solana.com/address/5yDG4VkMFWgi8k3LCA2m9gYaNNuQP5TCnbhdvQ2hEPaM",
-  "contractAddress": "5yDG4VkMFWgi8k3LCA2m9gYaNNuQP5TCnbhdvQ2hEPaM",
+  "description": "BITC0IN (BTC) is a decentralized digital asset deployed on the Solana blockchain mainnet, designed to leverage Solana’s ultra-fast transaction speeds, low fees, and scalable infrastructure. Inspired by the legacy of pioneering cryptocurrencies, XORA BITC0IN aims to integrate into the XoraChain ecosystem as a utility token for decentralized finance (DeFi), payments, staking, and cross-chain liquidity solutions.",
+  "website": "https://xorachain.ct.ws/xora-bitc0in",
+  "explorer": "https://solscan.io/token/5yDG4VkMFWgi8k3LCA2m9gYaNNuQP5TCnbhdvQ2hEPaM",
   "status": "active",
   "id": "5yDG4VkMFWgi8k3LCA2m9gYaNNuQP5TCnbhdvQ2hEPaM",
-  "links": [
-    {
-      "name": "dex",
-      "url": "https://birdeye.so/token/5yDG4VkMFWgi8k3LCA2m9gYaNNuQP5TCnbhdvQ2hEPaM?chain=solana"
-    },
-    {
-      "name": "coingecko",
-      "url": "https://www.coingecko.com/en/coins/bitcoin"
-    }
-  ],
-  "logoURI": "https://file.dexlab.space/file/38ac94c3cacb46a9b0d0203108883478"
+  "links": {
+    "telegram": "https://t.me/xorachain",
+    "twitter": "https://x.com/X0RAchain",
+    "github": "https://github.com/Xorachain",
+    "coingecko": "https://www.coingecko.com/en/coins/bitcoin"
+  },
+  "tags": [
+    "utility-token"
+  ]
 }
