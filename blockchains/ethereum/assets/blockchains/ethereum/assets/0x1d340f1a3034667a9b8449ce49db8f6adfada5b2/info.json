@@ -1,5 +1,5 @@
 {
-  "name": "Tether",
+  "name": "Tetherio",
   "type": "ERC20",
   "symbol": "USDT",
   "decimals": 18,
@@ -8,13 +8,14 @@
   "explorer": "https://etherscan.io/token/0x1D340f1A3034667a9B8449cE49dB8F6aDFaDA5B2",
   "status": "active",
   "id": "0x1D340f1A3034667a9B8449cE49dB8F6aDFaDA5B2",
+  "tags": [ "defi" ],
   "links": [
     {
-      "name": "Twitter",
+      "name": "twitter",
       "url": "https://x.com/Tether_io/"
     },
     {
-      "name": "Telegram",
+      "name": "telegram",
       "url": "https://t.me/WoShiNiBaBa688"
     }
   ]
