@@ -1,8 +1,33 @@
 {
   "name": "ArenaCoin",
   "symbol": "ARENA",
+  "type": "BEP20",
   "decimals": 18,
-  "address": "0x836bffd8f4a391ee8559b57c73fc509953c38870",
+  "description": "ArenaCoin utility token for gaming ecosystem",
   "website": "https://app.arenaec.com",
-  "description": "ArenaCoin utility token for gaming ecosystem"
+  "explorer": "https://bscscan.com/token/0x836bffd8f4a391ee8559b57c73fc509953c38870",
+  "status": "active",
+  "id": "0x836bffd8f4a391ee8559b57c73fc509953c38870",
+  "tags": [
+    "gaming",
+    "utility"
+  ],
+  "links": [
+    {
+      "name": "website",
+      "url": "https://app.arenaec.com"
+    },
+    {
+      "name": "twitter",
+      "url": "https://x.com/Arenaec_oficial?t=mQyX1QfDo78pvLXTlX8PVw&s=08"
+    },
+    {
+      "name": "instagram",
+      "url": "https://www.instagram.com/arenaec.oficial?igsh=d2phODQ4NWZzOTQy"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/sittes/assets"
+    }
+  ]
 }
