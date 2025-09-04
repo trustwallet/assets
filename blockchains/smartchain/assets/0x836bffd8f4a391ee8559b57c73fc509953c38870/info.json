@@ -5,9 +5,9 @@
   "decimals": 18,
   "description": "ArenaCoin utility token for gaming ecosystem",
   "website": "https://app.arenaec.com",
-  "explorer": "https://bscscan.com/token/0x836bff08f4a391ee8559b57c73fc509953c38870",
+  "explorer": "https://bscscan.com/token/0x836bfF08FAA391eE8559B57c73fc509953c38870",
   "status": "active",
-  "id": "0x836bff08f4a391ee8559b57c73fc509953c38870",
+  "id": "0x836bfF08FAA391eE8559B57c73fc509953c38870",
   "tags": [
     "gamefi",
     "utility"
@@ -24,6 +24,18 @@
     {
       "name": "discord",
       "url": "https://discord.gg/t6wt3GXJ"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/arenaecoficial"
+    },
+    {
+      "name": "coinmarketcap",
+      "url": "https://coinmarketcap.com/currencies/arenacoin/"
+    },
+    {
+      "name": "coingecko",
+      "url": "https://www.coingecko.com/en/coins/arenacoin"
     }
   ]
 }
