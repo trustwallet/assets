@@ -1,11 +1,18 @@
 {
   "name": "USDB",
-  "website": "https://scamily.io/token",
-  "description": "is a test token without value.",
-  "explorer": "https://bscscan.com/token/0x22c58ea4dfd67fba252e715c5e9e33ff7f32caa8",
+  "website": "https://scanily.io/token",
+  "description": "USDB Stablecoin.",
+  "explorer": "https://bscscan.com/token/0x22C58ea4Dfd67FBa252e715c5E9E33fF7F32CAA8",
   "type": "BEP20",
   "symbol": "USDB",
   "decimals": 18,
   "status": "active",
-  "id": "0x22c58ea4dfd67fba252e715c5e9e33ff7f32caa8"
+  "id": "0x22C58ea4Dfd67FBa252e715c5E9E33fF7F32CAA8",
+  "links": {
+    "twitter": "https://twitter.com/deinprojekt",  
+    "telegram": "https://t.me/deinprojekt"
+  },
+  "tags": [
+    "stablecoin"
+  ]
 }
