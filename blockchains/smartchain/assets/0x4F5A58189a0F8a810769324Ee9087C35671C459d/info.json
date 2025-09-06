@@ -1,6 +1,24 @@
 {
   "name": "NV",
   "symbol": "NV",
+  "type": "BEP20",
   "decimals": 18,
-  "description": "The official token for NV."
+  "description": "The official token for NV.",
+  "website": "https://space.coze.cn/s/TZYTLW3vUh4/",
+  "explorer": "https://bscscan.com/token/0x4F5A58189a0F8a810769324Ee9087C35671C459d",
+  "status": "active",
+  "id": "0x4F5A58189a0F8a810769324Ee9087C35671C459d",
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/nvcoin"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/nvcoin"
+    }
+  ],
+  "tags": [
+    "defi"
+  ]
 }
