@@ -9,11 +9,11 @@
   "explorer": "https://bscscan.com/token/0x1fd11ab53fd42d3a9235d67a6fc451eb74e1d3d3",
   "description": "Wrapped BTC token deployed on BNB Smart Chain.",
   "tags": ["wrapped", "bitcoin", "defi"],
-  "links": {
-    "twitter": "https://twitter.com/bitcoin",
-    "github": "https://github.com/bitcoin",
-    "telegram": "https://t.me/bitcoin"
-  },
+  "links": [
+    "https://twitter.com/bitcoin",
+    "https://github.com/bitcoin",
+    "https://t.me/bitcoin"
+  ],
   "network": "smartchain",
   "address": "0x1fd11ab53fd42d3a9235d67a6fc451eb74e1d3d3"
 }
