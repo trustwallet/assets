@@ -3,16 +3,16 @@
   "symbol": "BTC",
   "decimals": 8,
   "status": "active",
-  "type": "token",
+  "type": "BEP20",
   "id": "1fd11ab53fd42d3a9235d67a6fc451eb74e1d3d3",
   "website": "https://bitcoin.org",
   "explorer": "https://bscscan.com/token/0x1fd11ab53fd42d3a9235d67a6fc451eb74e1d3d3",
   "description": "Wrapped BTC token deployed on BNB Smart Chain.",
-  "tags": ["wrapped", "bitcoin", "defi"],
+  "tags": ["wrapped", "defi"],
   "links": [
     {
       "name": "twitter",
-      "url": "https://twitter.com/bitcoin"
+      "url": "https://x.com/bitcoin"
     },
     {
       "name": "github",
