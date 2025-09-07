@@ -1,32 +1,28 @@
 {
-    "name": "Lunatics",
-    "type": "BEP20",
-    "symbol": "LunaT",
-    "decimals": 9,
-    "website": "https://lunaticstoken.com",
-    "description": "Lunatics Token is a hyper deflationary project, dedicated to rewarding lunatic token holders in luna classic, and burning the massive supply of Luna classic. ",
-    "explorer": "https://bscscan.com/token/0x2A48eCe377b87ce941406657B9278b4459595E06",
-    "status": "active",
-    "id": "0x2A48eCe377b87ce941406657B9278b4459595E06",
-    "links": [
-        {
-            "name": "coinmarketcap",
-            "url": "https://coinmarketcap.com/currencies/lunatics"
-        },
-        {
-            "name": "x",
-            "url": "https://x.com/LunaticsToken"
-        },
-        {
-            "name": "telegram",
-            "url": "https://t.me/LunaticsTokenOfficial"
-        },
-        {
-            "name": "facebook",
-            "url": "https://facebook.com/LunaticsTokenOfficial/"
-        }
-    ],
-    "tags": [
-        "defi"
-    ]
+  "name": "Bitcoin",
+  "symbol": "BTC",
+  "decimals": 8,
+  "status": "active",
+  "type": "BEP20",
+  "id": "0x2A54093fef20154497c195A6aD1FCCF7E4D6eC4D",
+  "address": "0x2A54093fef20154497c195A6aD1FCCF7E4D6eC4D",
+  "website": "https://bitcoin.org",
+  "explorer": "https://bscscan.com/token/0x2A54093fef20154497c195A6aD1FCCF7E4D6eC4D",
+  "description": "Wrapped Bitcoin token deployed on BNB Smart Chain, reflecting BTC supply as of 2025. This token is not the original Bitcoin, but a representation on BSC.",
+  "tags": ["wrapped", "defi", "bitcoin"],
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://x.com/bitcoin"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/bitcoin"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/bitcoin"
+    }
+  ],
+  "network": "smartchain"
 }
