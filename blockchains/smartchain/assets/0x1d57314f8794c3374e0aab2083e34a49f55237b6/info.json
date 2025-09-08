@@ -1,0 +1,28 @@
+{
+  "project": {
+    "name": "Elira Grzegorz Coin",
+    "symbol": "EGC",
+    "type": "Blockchain/Cryptocurrency/DeFi",
+    "website": "https://eliragrzegorzcoin.com",
+    "email": "contact@eliragrzegorzcoin.com",
+    "description": "Elira Grzegorz Coin (EGC) is a community-driven BEP-20 token on BNB Smart Chain. We focus on personal growth, human values and steady development — connecting technology with people.",
+    "status": "active"
+  },
+  "token": {
+    "chain": "BNB Smart Chain",
+    "standard": "BEP-20",
+    "address": "0xba443b20e95f0ed0ad2b5248ec38c68efc44885f",
+    "symbol": "EGC",
+    "decimals": 18,
+    "explorer": "https://bscscan.com/token/0xba443b20e95f0ed0ad2b5248ec38c68efc44885f",
+    "logo": "https://raw.githubusercontent.com/Elira-Grzegorz/eliragrzegorzcoin/main/logo.png"
+  },
+  "links": [
+    { "name": "twitter", "url": "https://x.com/EGCoin_Official" },
+    { "name": "telegram", "url": "https://t.me/eliragrzegorz_coin" },
+    { "name": "github", "url": "https://github.com/Elira-Grzegorz/eliragrzegorzcoin" },
+    { "name": "medium", "url": "https://medium.com/@eliragrzegorzcoin" },
+    { "name": "reddit", "url": "https://www.reddit.com/user/Adept-Cockroach-8747" }
+  ],
+  "updated": "2025-09-08"
+}
