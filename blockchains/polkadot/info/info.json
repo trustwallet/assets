@@ -8,14 +8,17 @@
     "type": "coin",
     "decimals": 10,
     "status": "active",
+    "tags": [
+        "staking-native"
+    ],
     "links": [
         {
             "name": "github",
             "url": "https://github.com/w3f"
         },
         {
-            "name": "twitter",
-            "url": "https://twitter.com/polkadotnetwork"
+            "name": "x",
+            "url": "https://x.com/polkadotnetwork"
         },
         {
             "name": "reddit",
