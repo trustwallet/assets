@@ -263,16 +263,10 @@
                     "base": "c60_t0x88ACDd2a6425c3FaAE4Bc9650Fd7E27e0Bebb7aB"
                 },
                 {
-                    "base": "c60_t0x88EF27e69108B2633F8E1C184CC37940A075cC02"
-                },
-                {
                     "base": "c60_t0x8a40c222996f9F3431f63Bf80244C36822060f12"
                 },
                 {
                     "base": "c60_t0x8a854288a5976036A725879164Ca3e91d30c6A1B"
-                },
-                {
-                    "base": "c60_t0xCE3f08e664693ca792caCE4af1364D5e220827B2"
                 },
                 {
                     "base": "c60_t0x8CE9137d39326AD0cD6491fb5CC0CbA0e089b6A9"
@@ -501,9 +495,6 @@
                 },
                 {
                     "base": "c60_t0x70e8dE73cE538DA2bEEd35d14187F6959a8ecA96"
-                },
-                {
-                    "base": "c60_t0xbAFDabaDcf19d0cFbbe0AB9C69CF050D86ff888C"
                 },
                 {
                     "base": "c60_t0xB0c7a3Ba49C7a6EaBa6cD4a96C55a1391070Ac9A"
@@ -1136,16 +1127,6 @@
             "pairs": []
         },
         {
-            "asset": "c60_t0x3155BA85D5F96b2d030a4966AF206230e46849cb",
-            "type": "ERC20",
-            "address": "0x3155BA85D5F96b2d030a4966AF206230e46849cb",
-            "name": "THORChain ETH.RUNE",
-            "symbol": "RUNE",
-            "decimals": 18,
-            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0x3155BA85D5F96b2d030a4966AF206230e46849cb/logo.png",
-            "pairs": []
-        },
-        {
             "asset": "c60_t0x3301Ee63Fb29F863f2333Bd4466acb46CD8323E6",
             "type": "ERC20",
             "address": "0x3301Ee63Fb29F863f2333Bd4466acb46CD8323E6",
@@ -1179,7 +1160,7 @@
             "asset": "c60_t0x3593D125a4f7849a1B059E64F4517A86Dd60c95d",
             "type": "ERC20",
             "address": "0x3593D125a4f7849a1B059E64F4517A86Dd60c95d",
-            "name": "MANTRA DAO",
+            "name": "MANTRA",
             "symbol": "OM",
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0x3593D125a4f7849a1B059E64F4517A86Dd60c95d/logo.png",
@@ -1652,16 +1633,6 @@
             "pairs": []
         },
         {
-            "asset": "c60_t0x69A95185ee2a045CDC4bCd1b1Df10710395e4e23",
-            "type": "ERC20",
-            "address": "0x69A95185ee2a045CDC4bCd1b1Df10710395e4e23",
-            "name": "Poolz Finance",
-            "symbol": "POOLZ",
-            "decimals": 18,
-            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0x69A95185ee2a045CDC4bCd1b1Df10710395e4e23/logo.png",
-            "pairs": []
-        },
-        {
             "asset": "c60_t0x69af81e73A73B40adF4f3d4223Cd9b1ECE623074",
             "type": "ERC20",
             "address": "0x69af81e73A73B40adF4f3d4223Cd9b1ECE623074",
@@ -1998,16 +1969,6 @@
             "pairs": []
         },
         {
-            "asset": "c60_t0x88EF27e69108B2633F8E1C184CC37940A075cC02",
-            "type": "ERC20",
-            "address": "0x88EF27e69108B2633F8E1C184CC37940A075cC02",
-            "name": "Dego Finance",
-            "symbol": "DEGO",
-            "decimals": 18,
-            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0x88EF27e69108B2633F8E1C184CC37940A075cC02/logo.png",
-            "pairs": []
-        },
-        {
             "asset": "c60_t0x89Ab32156e46F46D02ade3FEcbe5Fc4243B9AAeD",
             "type": "ERC20",
             "address": "0x89Ab32156e46F46D02ade3FEcbe5Fc4243B9AAeD",
@@ -2035,16 +1996,6 @@
             "symbol": "GET",
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0x8a854288a5976036A725879164Ca3e91d30c6A1B/logo.png",
-            "pairs": []
-        },
-        {
-            "asset": "c60_t0xCE3f08e664693ca792caCE4af1364D5e220827B2",
-            "type": "ERC20",
-            "address": "0xCE3f08e664693ca792caCE4af1364D5e220827B2",
-            "name": "SAITAMA",
-            "symbol": "SAITAMA",
-            "decimals": 9,
-            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0xCE3f08e664693ca792caCE4af1364D5e220827B2/logo.png",
             "pairs": []
         },
         {
@@ -2176,16 +2127,6 @@
             "symbol": "SHIB",
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0x95aD61b0a150d79219dCF64E1E6Cc01f0B64C4cE/logo.png",
-            "pairs": []
-        },
-        {
-            "asset": "c60_t0x961C8c0B1aaD0c0b10a51FeF6a867E3091BCef17",
-            "type": "ERC20",
-            "address": "0x961C8c0B1aaD0c0b10a51FeF6a867E3091BCef17",
-            "name": "Dypius",
-            "symbol": "DYP",
-            "decimals": 18,
-            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0x961C8c0B1aaD0c0b10a51FeF6a867E3091BCef17/logo.png",
             "pairs": []
         },
         {
@@ -2740,7 +2681,7 @@
             "asset": "c60_t0xC52C326331E9Ce41F04484d3B5E5648158028804",
             "type": "ERC20",
             "address": "0xC52C326331E9Ce41F04484d3B5E5648158028804",
-            "name": "ZEN Exchange Token",
+            "name": "Unizen",
             "symbol": "ZCX",
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0xC52C326331E9Ce41F04484d3B5E5648158028804/logo.png",
@@ -3034,7 +2975,7 @@
             "asset": "c60_t0xe53EC727dbDEB9E2d5456c3be40cFF031AB40A55",
             "type": "ERC20",
             "address": "0xe53EC727dbDEB9E2d5456c3be40cFF031AB40A55",
-            "name": "SuperFarm",
+            "name": "SuperVerse",
             "symbol": "SUPER",
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0xe53EC727dbDEB9E2d5456c3be40cFF031AB40A55/logo.png",
@@ -3178,16 +3119,6 @@
             "symbol": "RLY",
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0xf1f955016EcbCd7321c7266BccFB96c68ea5E49b/logo.png",
-            "pairs": []
-        },
-        {
-            "asset": "c60_t0xf21661D0D1d76d3ECb8e1B9F1c923DBfffAe4097",
-            "type": "ERC20",
-            "address": "0xf21661D0D1d76d3ECb8e1B9F1c923DBfffAe4097",
-            "name": "Realio Network",
-            "symbol": "RIO",
-            "decimals": 18,
-            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0xf21661D0D1d76d3ECb8e1B9F1c923DBfffAe4097/logo.png",
             "pairs": []
         },
         {
@@ -3479,16 +3410,6 @@
             "symbol": "XSGD",
             "decimals": 6,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0x70e8dE73cE538DA2bEEd35d14187F6959a8ecA96/logo.png",
-            "pairs": []
-        },
-        {
-            "asset": "c60_t0xbAFDabaDcf19d0cFbbe0AB9C69CF050D86ff888C",
-            "type": "ERC20",
-            "address": "0xbAFDabaDcf19d0cFbbe0AB9C69CF050D86ff888C",
-            "name": "ZEDXION",
-            "symbol": "ZEDXION",
-            "decimals": 18,
-            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0xbAFDabaDcf19d0cFbbe0AB9C69CF050D86ff888C/logo.png",
             "pairs": []
         },
         {
