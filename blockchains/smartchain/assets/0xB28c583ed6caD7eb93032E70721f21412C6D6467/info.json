@@ -1,0 +1,24 @@
+{
+    "name": "Tether USD",
+    "type": "BEP20",
+    "symbol": "USDT",
+    "decimals": 9,
+    "website": "https://www.binance.com/en/trade/BNB_USDT",
+    "description": "A pegged token which gives you the joint benefits of open blockchain technology and traditional currency by converting your cash into a stable digital currency equivalent.",
+    "explorer": "https://bscscan.com/token/0xB28c583ed6caD7eb93032E70721f21412C6D6467",
+    "status": "active",
+    "id": "0xB28c583ed6caD7eb93032E70721f21412C6D6467",
+    "links": [
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/tether/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/tether"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}
