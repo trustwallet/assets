@@ -1,13 +1,13 @@
 {
     "name": "Decentralized USD",
-    "symbol": "USDD (BTTC bridge)",
     "type": "ERC20",
+    "symbol": "USDD",
     "decimals": 18,
-    "description": "USDD is a fully decentralized algorithmic stablecoin",
     "website": "https://usdd.io/",
-    "explorer": "https://etherscan.io/token/0x3d7975eccfc61a2102b08925cbba0a4d4dbb6555",
+    "description": "Decentralized USD (USDD) is a fully decentralized stablecoin pegged to the US dollar through crypto reserves.",
+    "explorer": "https://etherscan.io/token/0x4f8e5de400de08b164e7421b3ee387f461becd1a",
     "status": "active",
-    "id": "0x3D7975EcCFc61a2102b08925CbBa0a4D4dBB6555",
+    "id": "0x4f8e5DE400DE08B164E7421B3EE387f461beCD1A",
     "links": [
         {
             "name": "x",
@@ -21,4 +21,4 @@
     "tags": [
         "stablecoin"
     ]
-}
+} 
