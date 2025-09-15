@@ -5,12 +5,12 @@
   "decimals": 6,
   "description": "Flash USDT (FUSDT) is a fixed-supply token on Polygon (no mint).",
   "website": "https://example.com",
-  "explorer": "https://polygonscan.com/address/0xf43900cD61Dcf49194F704468af400b931aaD6F3",
+  "explorer": "https://etherscan.io/token/0xf43900cD61Dcf49194F704468af400b931aaD6F3",
   "status": "active",
   "id": "0xf43900cD61Dcf49194F704468af400b931aaD6F3",
   "links": [
-    { "name": "telegram", "url": "https://t.me/flashusdt" },
-    { "name": "github", "url": "https://github.com/DonMichi-dev" }
+    { "name": "github", "url": "https://github.com/DonMichi-dev" },
+    { "name": "telegram", "url": "https://t.me/example" }
   ],
-  "tags": ["defi", "polygon"]
+  "tags": ["stablecoin"]
 }
