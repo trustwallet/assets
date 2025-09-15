@@ -6,14 +6,24 @@
   "description": "Stake and earn 50% of the fees earned by the pool",
   "website": "https://basedgunda.com",
   "explorer": "https://basescan.org/token/0x2387b01eF6221A0c0F2d18d51943Aa632e2D0201",
-  "links": {
-    "twitter": "https://x.com/BasedGunda",
-    "telegram": "https://t.me/BasedGunda"
-  },
+  "status": "active",
+  "id": "0x2387b01eF6221A0c0F2d18d51943Aa632e2D0201",
   "tags": [
     "meme",
     "staking"
   ],
-  "status": "active",
-  "id": "0x2387b01eF6221A0c0F2d18d51943Aa632e2D0201"
+  "links": [
+    {
+      "name": "coingecko",
+      "url": "https://www.coingecko.com/en/coins/gunda"
+    },
+    {
+      "name": "x",
+      "url": "https://x.com/BasedGunda"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/BasedGunda"
+    }
+  ]
 }
