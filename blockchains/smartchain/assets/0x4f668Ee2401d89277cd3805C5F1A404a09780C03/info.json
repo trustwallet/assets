@@ -1,5 +1,5 @@
 {
-    "name": "AGPU",
+    "name": "AGPU TOKEN",
     "website": "https://www.agputoken.io",
     "description": " AGPU is a token made for the community on the BSC Scan.",
     "explorer": "https://bscscan.com/token/0x4f668Ee2401d89277cd3805C5F1A404a09780C03",
@@ -8,5 +8,15 @@
     "decimals": 18,
     "status": "active",
     "id": "0x4f668Ee2401d89277cd3805C5F1A404a09780C03",
-    "tags": ["agpu", "ai", "compute"]
+    "tags": ["gpu", "ai", "compute"],
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://x.com/starminerglobal"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/StarMiner_Web3"
+        }
+    ]
 }
