@@ -1,11 +1,17 @@
 {
-  "name": "Dinec Humanitarian Productive",
+  "name": "DhP",
   "symbol": "DhP",
-  "type": "ERC20",
   "decimals": 18,
   "description": "DhP is a humanitarian, non-speculative token designed for productive, decentralized engagement.",
-  "website": "https://yourdomain.com",
+  "website": "https://diphumanitarian.com",
   "explorer": "https://etherscan.io/token/0xED87e88913248FE174e2623d3913259d5c8cB70E",
+  "type": "ERC20",
   "status": "active",
-  "id": "dhp"
+  "id": "0xED87e88913248FE174e2623d3913259d5c8cB70E",
+  "tags": ["humanitarian"],
+  "links": {
+    "twitter": "https://twitter.com/DhPtoken",
+    "github": "https://github.com/DINECProject"
+  },
+  "holders": 1200
 }
