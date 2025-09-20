@@ -1,5 +1,5 @@
 {
-  "name": "CRYLO",
+  "name": "Crylo Token",
   "type": "BEP20",
   "symbol": "CRYLO",
   "decimals": 18,
@@ -7,7 +7,6 @@
   "explorer": "https://bscscan.com/token/0x0eD55C16E4b8332091f5B1Af8cd5E3985C58770f",
   "status": "active",
   "id": "0x0eD55C16E4b8332091f5B1Af8cd5E3985C58770f",
-  "description": "CRYLO is a BNB Chain token powering Chainlink-VRF lottery draws with a 10% prize rollover. Trading tax allocates 2% prize, 1.5% LP, 1% dev.",
   "links": [
     { "name": "twitter",    "url": "https://x.com/crylocoin" },
     { "name": "telegram",   "url": "https://t.me/crylocoin" },
@@ -15,5 +14,6 @@
     { "name": "github",     "url": "https://github.com/BILLYBOBJNR/crylo-token" },
     { "name": "whitepaper", "url": "https://github.com/BILLYBOBJNR/crylo-token/blob/main/docs/whitepaper.md" }
   ],
-  "tags": ["defi", "gamefi", "memes"]
+  "tags": ["defi","gamefi"],
+  "description": "CRYLO is a BEP20 token on BNB Smart Chain with a 4.5% buy/sell fee that routes to development, a prize treasury, and auto-liquidity. It supports community rewards, promotions, and future GameFi integrations."
 }
