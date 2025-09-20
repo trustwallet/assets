@@ -1,0 +1,28 @@
+{
+  "name": "DhP TokenList",
+  "logoURI": "https://raw.githubusercontent.com/DINECProject/assets/master/tokenlists/dhp/logo.png",
+  "keywords": ["humanitarian", "non-speculative", "engagement"],
+  "tags": {
+    "humanitarian": {
+      "name": "Humanitarian",
+      "description": "Non-speculative, community-driven tokens"
+    }
+  },
+  "timestamp": "2025-09-20T10:06:00Z",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "tokens": [
+    {
+      "chainId": 1,
+      "address": "0xED87e88913248FE174e2623d3913259d5c8cB70E",
+      "name": "DhP",
+      "symbol": "DhP",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/DINECProject/assets/master/tokenlists/dhp/logo.png",
+      "tags": ["humanitarian"]
+    }
+  ]
+}
