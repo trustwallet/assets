@@ -3,7 +3,7 @@
   "symbol": "RBK",
   "type": "ERC20",
   "decimals": 18,
-  "description": "RBK Token da Rick Bank — utilidade para pagamentos e ecossistema bancário digital multimoedas na rede Polygon.",
+  "description": "RBK Token da Rick Bank - utilidade para pagamentos e ecossistema bancário digital multimoedas na rede Polygon.",
   "website": "https://www.rickbank.com.br",
   "explorer": "https://polygonscan.com/token/0x7Cb5f987f87C00061A40dA3395FF5963Ba0F3401",
   "status": "active",
@@ -12,10 +12,14 @@
     {
       "name": "twitter",
       "url": "https://x.com/rbktoken"
+    },
+    {
+      "name": "website",
+      "url": "https://www.rickbank.com.br"
     }
   ],
   "tags": [
     "defi",
-    "payments"
+    "utility"
   ]
 }
