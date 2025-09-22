@@ -3,28 +3,23 @@
   "symbol": "ENOC",
   "type": "ERC20",
   "decimals": 18,
+  "description": "ENOC is a community-driven token.",
   "website": "https://www.enoc.com",
-  "description": "ENOC is a decentralized token built on Ethereum network.",
-  "explorer": "https://etherscan.io/token/0x996d39d92210b845aba6bb12e02d163042c11001",
+  "explorer": "https://etherscan.io/token/0x996d3d92210b845bab6bb12e021d613042c11001",
   "status": "active",
-  "id": "0x996d39d92210b845aba6bb12e02d163042c11001",
-  "tags": [
-    "defi",
-    "community",
-    "utility"
-  ],
+  "id": "0x996d3d92210b845bab6bb12e021d613042c11001",
   "links": [
     {
-      "name": "twitter",
-      "url": "https://twitter.com/enoc"
-    },
-    {
       "name": "telegram",
-      "url": "https://t.me/enoc"
+      "url": "https://t.me/enoctoken"
     },
     {
-      "name": "github",
-      "url": "https://github.com/enoc"
+      "name": "twitter",
+      "url": "https://twitter.com/ENOC_token"
     }
+  ],
+  "tags": [
+    "defi",
+    "community"
   ]
 }
