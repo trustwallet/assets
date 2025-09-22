@@ -5,21 +5,17 @@
   "decimals": 18,
   "description": "RBK Token da Rick Bank - utilidade para pagamentos e ecossistema bancário digital multimoedas na rede Polygon.",
   "website": "https://www.rickbank.com.br",
-  "explorer": "https://polygonscan.com/token/0x7Cb5f987f87C00061A40dA3395FF5963Ba0F3401",
+  "explorer": "https://etherscan.io/token/0x7Cb5f987f87C00061A40dA3395FF5963Ba0F3401",
   "status": "active",
   "id": "0x7Cb5f987f87C00061A40dA3395FF5963Ba0F3401",
   "links": [
-    {
-      "name": "twitter",
-      "url": "https://x.com/rbktoken"
-    },
-    {
-      "name": "website",
-      "url": "https://www.rickbank.com.br"
-    }
+    { "name": "twitter", "url": "https://x.com/rbktoken" },
+    { "name": "telegram", "url": "https://t.me/rbktoken" },
+    { "name": "facebook", "url": "https://facebook.com/rickbank" },
+    { "name": "github", "url": "https://github.com/rickbank" },
+    { "name": "medium", "url": "https://medium.com/@rbktoken" },
+    { "name": "coinmarketcap", "url": "https://coinmarketcap.com/currencies/rbk-token" },
+    { "name": "coingecko", "url": "https://coingecko.com/en/coins/rbk-token" }
   ],
-  "tags": [
-    "defi",
-    "utility"
-  ]
+  "tags": ["defi"]
 }
