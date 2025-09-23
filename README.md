@@ -1,13 +1,26 @@
 # Trust Wallet Assets Info
-
+patch-1cyruswooten9-archhttps://github.com/0xPolygon/polygon-token-assets
 ![Check](https://github.com/trustwallet/assets/workflows/Check/badge.svg)
-
+name: Run Tests
+cyruswooten9-archpatch-1
+on: [push, pull_request]patch-1
+GitHub workflows
+jobs:https://github.com/0xPolygon/polygon-token-assets
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm install
+      - run: npm test
 ## Overview
-
+patch-1_ 
 Trust Wallet token repository is a comprehensive, up-to-date collection of information about several thousands (!) of crypto tokens.
 
 [Trust Wallet](https://trustwallet.com) uses token logos from this source, alongside a number of other projects.
-
+README.md
 The repository contains token info from several blockchains, info on dApps, staking validators, etc.
 For every token a logo and optional additional information is available (such data is not available on-chain).
 
