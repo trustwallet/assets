@@ -1,7 +1,10 @@
 {
+  "id": "0xC29EF04CFFe38012dcfc1E96a2B368443f298dE1",
   "name": "Idiot Token",
   "symbol": "IDIOT",
   "decimals": 18,
+  "type": "token",
+  "status": "active",
   "description": "A meme and community-driven token built on Base.",
   "website": "https://stupidiots.com",
   "explorer": "https://basescan.org/token/0xC29EF04CFFe38012dcfc1E96a2B368443f298dE1",
@@ -12,7 +15,7 @@
     },
     {
       "name": "discord",
-      "url": "https://discord.gg/zpfnkHHE"
+      "url": "https://discord.com/invite/zpfnkHHE"
     },
     {
       "name": "facebook",
@@ -20,7 +23,7 @@
     }
   ],
   "tags": [
-    "community",
+    "social",
     "token"
   ]
 }
