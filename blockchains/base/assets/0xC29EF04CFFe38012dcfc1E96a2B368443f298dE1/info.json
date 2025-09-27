@@ -1,37 +1,28 @@
 {
+  "id": "0xC29EF04CFFe38012dcfc1E96a2B368443f298dE1",
   "name": "Idiot Token",
   "symbol": "IDIOT",
-  "type": "ERC20",
-  "address": "0xC29EF04CFFe38012dcfc1E96a2B368443f298dE1",
-  "ens_address": "",
   "decimals": 18,
-  "website": "https://stupidiots.com",
-  "logo": {
-    "src": "",
-    "width": "",
-    "height": "",
-    "ipfs_hash": ""
-  },
-  "support": {
-    "email": "contact@stupidiots.com",
-    "url": "https://stupidiots.com"
-  },
-  "social": {
-    "blog": "",
-    "chat": "https://discord.com/invite/zpfnkHHE",
-    "facebook": "https://www.facebook.com/profile.php?id=61580473892697",
-    "forum": "",
-    "github": "",
-    "gitter": "",
-    "instagram": "",
-    "linkedin": "",
-    "reddit": "",
-    "slack": "",
-    "telegram": "",
-    "twitter": "https://x.com/Stup_IDIOT_s",
-    "youtube": ""
-  },
-  "explorer": "https://etherscan.io/token/0xC29EF04CFFe38012dcfc1E96a2B368443f298dE1",
   "status": "active",
-  "id": "0xC29EF04CFFe38012dcfc1E96a2B368443f298dE1"
+  "description": "A meme token deployed on the Base blockchain.",
+  "website": "https://stupidiots.com",
+  "explorer": "https://etherscan.io/token/0xC29EF04CFFe38012dcfc1E96a2B368443f298dE1",
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://x.com/Stup_IDIOT_s"
+    },
+    {
+      "name": "discord",
+      "url": "https://discord.com/invite/zpfnkHHE"
+    },
+    {
+      "name": "facebook",
+      "url": "https://facebook.com/profile.php?id=61580473892697"
+    }
+  ],
+  "tags": [
+    "defi",
+    "memes"
+  ]
 }
