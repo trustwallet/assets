@@ -3,9 +3,8 @@
   "name": "Idiot Token",
   "symbol": "IDIOT",
   "decimals": 18,
-  "type": "token",
   "status": "active",
-  "description": "A meme and community-driven token built on Base.",
+  "description": "A meme token deployed on the Base blockchain.",
   "website": "https://stupidiots.com",
   "explorer": "https://basescan.org/token/0xC29EF04CFFe38012dcfc1E96a2B368443f298dE1",
   "links": [
@@ -19,11 +18,10 @@
     },
     {
       "name": "facebook",
-      "url": "https://www.facebook.com/profile.php?id=61580473892697"
+      "url": "https://facebook.com/profile.php?id=61580473892697"
     }
   ],
   "tags": [
-    "social",
-    "token"
+    "fan-token"
   ]
 }
