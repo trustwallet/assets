@@ -35,8 +35,8 @@ require (
 	github.com/spf13/viper v1.10.0 // indirect
 	github.com/stretchr/testify v1.8.3 // indirect
 	github.com/subosito/gotenv v1.2.0 // indirect
-git commit -m "Merge branch 'dependabot/...' and resolve module version conflicts"
-	google.golang.org/protobuf v1.30.0 // indirect
+git add go.mod go.sum # Make sure to add both!
+git commit -m "Merge branch 'dependabot/...' and resolve go.mod version conflicts (using google.golang.org/protobuf v1.33.0)"
 	gopkg.in/ini.v1 v1.66.2 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 )
