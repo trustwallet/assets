@@ -4,14 +4,26 @@
   "type": "ERC20",
   "decimals": 18,
   "description": "ENOC is a community-driven token.",
-  "website": "https://www.ENOC-token.com",
+  "website": "https://www.enoc-token.com",
   "explorer": "https://etherscan.io/token/0x99643d92210b845aba6b1b2e021d613042c11001",
   "status": "active",
-  "id": "0x99643d92210b845aba6b1b2e021d613042c11001", 
+  "id": "0x99643d92210b845aba6b1b2e021d613042c11001",
   "links": [
     {
-      "name": "telegram",
+      "name": "Telegram",
       "url": "https://t.me/enoc_token"
+    },
+    {
+      "name": "Twitter",
+      "url": "https://twitter.com/enoc_token"
+    },
+    {
+      "name": "Website",
+      "url": "https://www.enoc-token.com"
+    },
+    {
+      "name": "Email",
+      "url": "mailto:enoctoken@gmail.com"
     }
   ]
 }
