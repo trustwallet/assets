@@ -5,6 +5,7 @@ VERSION := $(shell git describe --tags 2>/dev/null || git describe --all)
 BUILD := $(shell git rev-parse --short HEAD)
 PROJECT_NAME := $(shell basename "$(PWD)")
 BUILD_TARGETS := $(shell find cmd -name \*main.go | awk -F'/' '{print $$0}')
+GOLANGCI_LINT_VERSION ?= v1.62.2
 
 # Use linker flags to provide version/build settings
 LDFLAGS=-ldflags "-X=main.Version=$(VERSION) -X=main.Build=$(BUILD)"
@@ -31,14 +32,13 @@ fmt:
 	gofmt -w ${GOFMT_FILES}
 
 lint-install:
-ifeq (,$(wildcard test -f bin/golangci-lint))
 	@echo "  >  Installing golint"
-	curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- v1.50.1
-endif
+	rm -f bin/golangci-lint
+	curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- $(GOLANGCI_LINT_VERSION)
 
 lint: lint-install
 	@echo "  >  Running golint"
-	bin/golangci-lint run --timeout=2m
+	GOROOT=$$(go env GOROOT) bin/golangci-lint run --timeout=2m
 
 # Assets commands.
 check: build
