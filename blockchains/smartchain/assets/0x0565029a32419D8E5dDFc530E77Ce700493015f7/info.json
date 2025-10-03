@@ -8,14 +8,33 @@
   "explorer": "https://bscscan.com/token/0x0565029a32419D8E5dDFc530E77Ce700493015f7",
   "status": "active",
   "id": "0x0565029a32419D8E5dDFc530E77Ce700493015f7",
-  "links": {
-    "twitter": "https://x.com/tetherzaola",
-    "telegram": "https://t.me/tetherzaola",
-    "github": "https://github.com/mobilyasam71",
-    "exchange": "https://vindax.com/exchange-base.html?symbol=USDTz_USDT",
-    "dex": "https://apespace.io/bsc/0x0565029a32419D8E5dDFc530E77Ce700493015f7",
-    "geckoterminal": "https://www.geckoterminal.com/bsc/pools/0x0565029a32419D8E5dDFc530E77Ce700493015f7"
+  "links": [
+  {
+    "name": "twitter",
+    "url": "https://x.com/tetherzaola"
   },
-  "whitepaper": "https://drive.google.com/file/d/1BShZluqfRdsrcaIol9wWnWxiKEUuOuTj/view?usp=drive_link",
-  "tags": ["stablecoin", "defi"]
-}
+  {
+    "name": "telegram",
+    "url": "https://t.me/tetherzaola"
+  },
+  {
+    "name": "github",
+    "url": "https://github.com/mobilyasam71"
+  },
+  {
+    "name": "exchange",
+    "url": "https://vindax.com/exchange-base.html?symbol=USDTz_USDT"
+  },
+  {
+    "name": "dex",
+    "url": "https://apespace.io/bsc/0x0565029a32419D8E5dDFc530E77Ce700493015f7"
+  },
+  {
+    "name": "geckoterminal",
+    "url": "https://www.geckoterminal.com/bsc/pools/0x0565029a32419D8E5dDFc530E77Ce700493015f7"
+  },
+  {
+    "name": "whitepaper",
+    "url": "https://drive.google.com/file/d/1BShZluqfRdsrcaIol9wWnWxiKEUuOuTj/view?usp=drive_link"
+  }
+],
