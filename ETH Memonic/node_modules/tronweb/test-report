@@ -1,0 +1,58 @@
+
+[0m[0m
+[0m  TronWeb.lib.event[0m
+[0m    Trongrid-compatible version[0m
+[0m      #getEventsByTransactionID[0m
+[33mSleeping for 0.5 seconds...[39m[33m Slept.[39m
+[33m[39m[33mSleeping for 0.5 seconds...[39m[33m Slept.[39m
+[33m[39m[33mSleeping for 0.5 seconds...[39m[33m Slept.[39m
+[33m[39m      [32m  ✓[0m[90m should emit an unconfirmed event and get it[0m[31m (1562ms)[0m
+      [32m  ✓[0m[90m should emit an event, wait for confirmation and get it[0m[31m (9139ms)[0m
+[0m      #getEventsByContractAddress[0m
+      [31m  1) should emit an event and wait for it[0m
+[0m      #contract.method.watch[0m
+      [31m  2) should watch for an event[0m
+      [31m  3) should only watch for an event with given filters[0m
+
+
+[92m [0m[32m 2 passing[0m[90m (11s)[0m
+[31m  3 failing[0m
+
+[0m  1) TronWeb.lib.event
+       Trongrid-compatible version
+         #getEventsByContractAddress
+           should emit an event and wait for it:
+[0m[31m     Error: the object {
+  "error": {
+    "code": 404
+    "status": "Not Found"
+  }
+} was thrown, throw an Error :)[0m[90m
+      at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[0m
+[0m  2) TronWeb.lib.event
+       Trongrid-compatible version
+         #contract.method.watch
+           should watch for an event:
+[0m[31m     Error: the object {
+  "error": {
+    "code": 404
+    "status": "Not Found"
+  }
+} was thrown, throw an Error :)[0m[90m
+      at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[0m
+[0m  3) TronWeb.lib.event
+       Trongrid-compatible version
+         #contract.method.watch
+           should only watch for an event with given filters:
+[0m[31m     Error: the object {
+  "error": {
+    "code": 404
+    "status": "Not Found"
+  }
+} was thrown, throw an Error :)[0m[90m
+      at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[0m
+
+

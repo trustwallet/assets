@@ -1,0 +1,6 @@
+python .\impersonar_usdt.py
+
+
+anvil --fork-url https://eth.llamarpc.com
+
+ngrok http 8545

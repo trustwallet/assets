@@ -1,0 +1,39 @@
+Rode Anvil:
+
+NETWORK_ID=1 anvil \
+  --fork-url https://eth-mainnet.g.alchemy.com/v2/Gmy1_06DbzfTUAK7MFvYyx5pl93c9rWG \
+  --chain-id 1 \
+  --port 8545
+
+
+
+Se o Anvil está rodando HTTP, você pode usar:
+
+
+ngrok http 8545
+
+
+Isso expõe um túnel HTTP (sem cartão necessário).
+
+
+python impersonate_send.py 0x3565B722937886224800C207299014FA8E5D4bD2 150
+
+
+
+
+python impersonate_send_usdt.py 0x3565B722937886224800C207299014FA8E5D4bD2
+
+
+Como contornar isso?
+Opção 1: Usar HTTP forwarding do Ngrok com Anvil configurado para HTTP
+Por padrão, Anvil serve JSON-RPC em HTTP na porta 8545.
+
+Se o Anvil está rodando HTTP, você pode usar:
+
+ngrok http 8545
+
+ngrok config add-authtoken 2zQI5muhLmKpgRxbsHgXFQUW7x4_7JUPt2ZTuiFY1i7veufEA
+
+TRoca de Polygon para FANTOM
+
+https://www.squidrouter.com/

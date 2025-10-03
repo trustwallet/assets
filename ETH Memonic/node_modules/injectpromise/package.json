@@ -1,0 +1,20 @@
+{
+  "name": "injectpromise",
+  "version": "1.0.0",
+  "description": "A simple Promise injector",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "authors": [
+    {
+      "name": "Kondax",
+      "url": "https://github.com/Kondax"
+    },
+    {
+      "name": "sullof",
+      "url": "https://github.com/sullof"
+    }
+  ],
+  "license": "MIT"
+}

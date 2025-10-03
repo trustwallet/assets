@@ -1,0 +1,39 @@
+{
+  "name": "tronweb_dapp",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@ant-design/icons": "^4.2.1",
+    "@babel/plugin-proposal-decorators": "^7.10.1",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "cross-env": "^7.0.3",
+    "customize-cra": "^1.0.0",
+    "react": "^17.0.1",
+    "react-app-rewired": "^2.1.6",
+    "react-dom": "^17.0.1",
+    "react-scripts": "4.0.1",
+    "tronweb": "^4.1.0",
+    "web-vitals": "^0.2.4"
+  },
+  "scripts": {
+    "start": "PORT=18000 cross-env REACT_APP_ENV=qaTest react-app-rewired start",
+    "startPro": "PORT=18083 react-app-rewired start",
+    "startTest": "PORT=18084 cross-env REACT_APP_ENV=qaTest react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "cross-env REACT_APP_ENV=qaTest react-app-rewired build"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
