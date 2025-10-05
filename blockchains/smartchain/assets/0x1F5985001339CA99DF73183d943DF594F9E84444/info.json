@@ -6,9 +6,17 @@
   "description": "OOPSIE is a community-driven trading protocol on BNB Chain, combining transparent AI personas with on-chain governance.",
   "website": "https://oopsie.co",
   "explorer": "https://bscscan.com/token/0x1F5985001339CA99DF73183d943DF594F9E84444",
-  "twitter": "https://twitter.com/oopsiecox",
-  "telegram": "https://t.me/oopsieco",
   "status": "active",
-  "tags": ["defi"],
-  "id": "0x1F5985001339CA99DF73183d943DF594F9E84444"
+  "id": "0x1F5985001339CA99DF73183d943DF594F9E84444",
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/oopsiecox"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/oopsieco"
+    }
+  ],
+  "tags": ["defi", "community"]
 }
