@@ -1,22 +1,23 @@
 {
-  "name": "Real SFG",
-  "website": "https://solucionesfinancierasglobales.com",
-  "description": "Stable token backed 1:1 with Brazilian Real, part of Soluciones Financieras Globales.",
-  "explorer": "https://polygonscan.com/token/0x10351e3291070d8B31B0C5B56da3c24f39198B7C",
-  "type": "POLYGON",
-  "symbol": "rSFG",
-  "decimals": 18,
-  "status": "active",
-  "tags": ["defi", "stablecoin"],
-  "id": "0x10351e3291070d8B31B0C5B56da3c24f39198B7C",
-  "links": [
-    {
-      "name": "youtube",
-      "url": "https://youtube.com/@solucionesfinancierasglobales?si=QdVQmhL_BZ_feav5"
-    },
-    {
+    "name": "Real SFG",
+    "symbol": "rSFG",
+    "type": "POLYGON",
+    "decimals": 18,
+    "description": "Stable token backed 1:1 with the Brazilian Real, part of Soluciones Financieras Globales (SFG).",
+    "website": "https://solucionesfinancierasglobales.com",
+    "explorer": "https://polygonscan.com/token/0x10351e3291070d8b31b0c5b56da3c24f39198b7c",
+    "status": "active",
+    "tags": ["defi", "stablecoin"],
+    "id": "0x10351e3291070d8b31b0c5b56da3c24f39198b7c",
+    "links": [
+      {
         "name": "github",
         "url": "https://github.com/Soluciones-Financieras-Globales"
-    }
-  ]
+      },
+      {
+        "name": "youtube",
+        "url": "https://youtube.com/@solucionesfinancierasglobales?si=QdVQmhL_BZ_feav5"
+      }
+    ]
 }
+  
