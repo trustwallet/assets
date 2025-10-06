@@ -1,1 +1,19 @@
+{
+  "name": "AUREUM",
+  "symbol": "AUR",
+  "type": "BEP20",
+  "decimals": 18,
+  "status": "active",
+  "description": "AUREUM (AUR) is a BEP-20 token for fast, low-cost payments on BNB Smart Chain. Fixed 100,000,000 supply, 0% tax.",
+  "website": "https://aureum.gold/",
+  "explorer": "https://bscscan.com/token/0xE1B967d13E9609f262399efEBe7c258B9408Caa6",
+  "id": "0xE1B967d13E9609f262399efEBe7c258B9408Caa6",
+  "links": [
+    { "name": "twitter", "url": "https://x.com/AUREUM_labs" },
+    { "name": "telegram", "url": "https://t.me/aureumcoin" },
+    { "name": "github", "url": "https://github.com/aureumlabscoin-coin/aureum-docs" },
+    { "name": "whitepaper", "url": "https://raw.githubusercontent.com/aureumlabscoin-coin/aureum-docs/main/docs/AUREUM_Whitepaper_2025_Edition.pdf" }
+  ],
+  "tags": ["defi", "payments"]
+}
 
