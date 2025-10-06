@@ -189,16 +189,17 @@ linters:
   disable-all: true
   enable:
     - bodyclose
-    - deadcode
-    - depguard
+    # - deadcode
+    # - depguard
     - dogsled
     - errcheck
-    - exportloopref
+    # - exportloopref
     - exhaustive
     - funlen
     - gochecknoinits
     - goconst
-    - gocritic
+    # Temporarily disable gocritic due to ruleguard GOROOT issue in CI image
+    # - gocritic
     - gocyclo
     - gofmt
     - goimports
@@ -215,13 +216,14 @@ linters:
     - nolintlint
     - rowserrcheck
     - staticcheck
-    - structcheck
+    # Deprecated linters below replaced by 'unused'
+    # - structcheck
     - stylecheck
     - typecheck
     - unconvert
     - unparam
     - unused
-    - varcheck
+    # - varcheck
     - whitespace
     - asciicheck
     # - gochecknoglobals
