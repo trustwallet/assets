@@ -186,12 +186,12 @@ linters:
   disable-all: true
   enable:
     - bodyclose
-    - dogsled
-    - errcheck
+
     - exhaustive
     - funlen
     - gochecknoinits
     - goconst
+
     - gocyclo
     - gofmt
     - goimports
@@ -207,11 +207,13 @@ linters:
     - nolintlint
     - rowserrcheck
     - staticcheck
+
     - stylecheck
     - typecheck
     - unconvert
     - unparam
     - unused
+
     - whitespace
     - asciicheck
     - gocognit

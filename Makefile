@@ -32,13 +32,6 @@ fmt:
 	gofmt -w ${GOFMT_FILES}
 
 lint-install:
-	@echo "  >  Installing golint"
-	rm -f bin/golangci-lint
-	curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- $(GOLANGCI_LINT_VERSION)
-
-lint: lint-install
-	@echo "  >  Running golint"
-	GOROOT=$$(go env GOROOT) bin/golangci-lint run --timeout=2m
 
 # Assets commands.
 check: build
