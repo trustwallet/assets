@@ -8,10 +8,10 @@ import (
 	"github.com/trustwallet/assets-go-libs/file"
 	"github.com/trustwallet/assets-go-libs/path"
 	"github.com/trustwallet/assets-go-libs/validation"
-	"github.com/trustwallet/assets-go-libs/validation/info"
 	"github.com/trustwallet/assets-go-libs/validation/list"
 	"github.com/trustwallet/assets-go-libs/validation/tokenlist"
 	"github.com/trustwallet/assets/internal/config"
+	"github.com/trustwallet/assets/internal/info"
 	"github.com/trustwallet/go-primitives/coin"
 )
 
@@ -206,9 +206,12 @@ func (s *Service) ValidateAssetInfoFile(f *file.AssetFile) error {
 		return err
 	}
 
-	err := info.ValidateAsset(assetInfo, f.Chain(), f.Asset())
-	if err != nil {
-		return err
+	// https://github.com/trustwallet/backend/issues/2561
+	if f.Chain() != coin.Cryptoorg() && f.Chain() != coin.Cronos() {
+		err := info.ValidateAsset(assetInfo, f.Chain(), f.Asset())
+		if err != nil {
+			return err
+		}
 	}
 
 	return nil

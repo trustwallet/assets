@@ -19,7 +19,7 @@ Such a large collection can be maintained only through a community effort, so _f
 
 Please note that __brand new tokens are not accepted__,
 the projects have to be sound, with information available, and __non-minimal circulation__
-(for limit details see <https://developer.trustwallet.com/assets/requirements>).
+(for limit details see <https://developer.trustwallet.com/listing-new-assets/requirements>).
 
 ### Assets App
 
@@ -28,7 +28,7 @@ The [Assets web app](https://assets.trustwallet.com) can be used for most new to
 ### Quick starter
 
 Details of the repository structure and contribution guidelines are listed on the
-[Developers site](https://developer.trustwallet.com/assets/new-asset).
+[Developers site](https://developer.trustwallet.com/listing-new-assets/new-asset).
 Here is a quick starter summary for the most common use case.
 
 
@@ -36,9 +36,9 @@ Here is a quick starter summary for the most common use case.
 
 For details, see the [Developers site](https://developer.trustwallet.com):
 
-- [Contribution guidelines](https://developer.trustwallet.com/assets/repository_details)
+- [Contribution guidelines](https://developer.trustwallet.com/listing-new-assets/repository_details)
 
-- [FAQ](https://developer.trustwallet.com/assets/faq)
+- [FAQ](https://developer.trustwallet.com/listing-new-assets/faq)
 
 ## Scripts
 
