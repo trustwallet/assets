@@ -1,11 +1,22 @@
 {
-   "name": "TRAG Coin",
-   "symbol": "TRAG",
-   "type": "BEP20",
-   "decimals": 6,
-   "description": "TRAG Coin",
-   "website": "https://tragcoin.com",
-   "explorer": "https://bscscan.com/token/0x7Cc723dE7fBDb6B06d6628E259e6B8c62673BF1C",
-   "status": "active",
-   "id": "0x7Cc723dE7fBDb6B06d6628E259e6B8c62673BF1C"
+  "name": "TRAG Coin",
+  "symbol": "TRAG",
+  "type": "BEP20",
+  "decimals": 6,
+  "description": "TRAG Coin",
+  "website": "https://tragcoin.com",
+  "explorer": "https://bscscan.com/token/0x7Cc723dE7fBDb6B06d6628E259e6B8c62673BF1C",
+  "status": "active",
+  "id": "0x7Cc723dE7fBDb6B06d6628E259e6B8c62673BF1C",
+  "links": [
+    {
+      "name": "telegram",
+      "url": "https://t.me/tragcoin"
+    },
+    {
+      "name": "discord",
+      "url": "https://discord.gg/Zpw7cMUDnU"
+    }
+  ],
+  "tags": ["defi"]
 }
