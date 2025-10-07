@@ -5,12 +5,21 @@
   "decimals": 18,
   "description": "Workers’ Crypto, built to last. Don’t want 996, buy 996 first; refuse to work overtime, refuse to hype, keep building; it is suggested that holding of coins by a single person should not exceed 0.96%.",
   "website": "https://coin996.com",
-  "explorer": "https://etherscan.io/token/0x4aE304Be5B0F211F69Cc97dFB6913D6D13F45418",
+  "explorer": "https://etherscan.io/token/0x4aE304Be5B0F211F69cC97dFB6913D6D13f45418",
   "status": "active",
-  "id": "0x4aE304Be5B0F211F69Cc97dFB6913D6D13F45418",
-  "links": {
-    "twitter": "https://x.com/Coin996Official",
-    "telegram": "https://t.me/Coin996_Official",
-    "github": "https://github.com/coin996"
-  }
+  "id": "0x4aE304Be5B0F211F69cC97dFB6913D6D13f45418",
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://x.com/Coin996Official"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/Coin996_Official"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/coin996"
+    }
+  ]
 }
