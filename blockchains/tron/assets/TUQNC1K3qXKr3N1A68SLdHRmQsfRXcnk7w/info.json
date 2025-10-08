@@ -8,9 +8,15 @@
   "explorer": "https://tronscan.io/#/token20/UQNC1K3qXKr3N1A68SLdHRmQsfRXcnk7w",
   "status": "active",
   "id": "UQNC1K3qXKr3N1A68SLdHRmQsfRXcnk7w",
-  "links": {
-    "twitter": "https://x.com/trc20token",
-    "website": "https://x.com/trc20token"
-  },
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://x.com/trc20token"
+    },
+    {
+      "name": "website",
+      "url": "https://x.com/trc20token"
+    }
+  ],
   "tags": ["utility"]
 }
