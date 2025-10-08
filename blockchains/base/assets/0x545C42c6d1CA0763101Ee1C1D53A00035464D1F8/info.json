@@ -5,7 +5,18 @@
   "decimals": 18,
   "description": "The official token of 3rdeyeadvisors, providing access to DeFi utilities, vaults, and educational resources.",
   "website": "https://the3rdeyeadvisors.com",
-  "explorer": "https://basescan.org/token/0x545C42c6d1CA0763101Ee1C1D53A00035464D1F8",
+  "explorer": "https://basescan.org/address/0x545C42c6d1CA0763101Ee1C1D53A00035464D1F8",
   "status": "active",
-  "id": "0x545C42c6d1CA0763101Ee1C1D53A00035464D1F8"
+  "id": "0x545C42c6d1CA0763101Ee1C1D53A00035464D1F8",
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/3rdeyeadvisors"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/3rdeyeadvisors"
+    }
+  ],
+  "tags": ["defi", "utility"]
 }
