@@ -4,7 +4,6 @@
   "type": "TRC20",
   "decimals": 6,
   "description": "trcToken (TRC20) is a community-driven utility token built on the TRON blockchain, designed to enable fast, secure, and low-cost digital transactions with transparency and scalability.",
-  "website": "https://x.com/trc20token",
   "explorer": "https://tronscan.io/#/token20/UQNC1K3qXKr3N1A68SLdHRmQsfRXcnk7w",
   "status": "active",
   "id": "UQNC1K3qXKr3N1A68SLdHRmQsfRXcnk7w",
@@ -14,9 +13,9 @@
       "url": "https://x.com/trc20token"
     },
     {
-      "name": "website",
+      "name": "coinmarketcap",
       "url": "https://x.com/trc20token"
     }
   ],
-  "tags": ["utility"]
+  "tags": ["token"]
 }
