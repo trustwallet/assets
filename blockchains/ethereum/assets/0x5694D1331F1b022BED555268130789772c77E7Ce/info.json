@@ -7,10 +7,16 @@
   "website": "https://github.com/EugeneDemianPark",
   "explorer": "https://etherscan.io/token/0x5694d1331f1b022bed555268130789772c77e7ce",
   "id": "0x5694d1331f1b022bed555268130789772c77e7ce",
-  "links": {
-    "github": "https://github.com/EugeneDemianPark",
-    "twitter": "https://twitter.com/"
-  },
+  "links": [
+    {
+      "name": "github",
+      "url": "https://github.com/EugeneDemianPark"
+    },
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/"
+    }
+  ],
   "tags": ["community", "education", "social-token"],
   "status": "active"
 }
