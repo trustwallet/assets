@@ -1,28 +1,17 @@
 {
-    "name": "Lumera Coin",
-    "symbol": "LMC",
-    "type": "BEP20",
-    "decimals": 18,
-    "description": "A commodity-backed token powering the Lumera civilization and its economic ecosystem.",
-    "website": "https://lumeragovernance.com",
-    "explorer": "https://bscscan.com/token/0x169925844fFA87C9C8Fb87505D8a8bf7c0B03b7F",
-    "links": [
-        {
-            "name": "github",
-            "url": "https://github.com/LumeraGovernance"
-        },
-        {
-            "name": "twitter",
-            "url": "https://x.com/astrosilicon"
-        }
-    ],
-    "status": "active",
-    "tags": [
-        "defi",
-        "governance",
-        "vstate",
-        "lmc"
-    ],
-    "id": "0x169925844ffa87c9c8fb87505d8a8bf7c0b03b7f"
+  "name": "Lumera Coin",
+  "symbol": "LMC",
+  "type": "BEP20",
+  "decimals": 18,
+  "description": "A commodity-backed token powering the Lumera civilization and its economic ecosystem.",
+  "website": "https://lumeragovernance.com",
+  "explorer": "https://bscscan.com/token/0x169925844fFA87C9C8Fb87505D8a8bf7c0B03b7F",
+  "links": [
+    { "name": "github", "url": "https://github.com/LumeraGovernance" },
+    { "name": "twitter", "url": "https://x.com/astrosilicon" },
+    { "name": "website", "url": "https://lumeragovernance.com" }
+  ],
+  "status": "active",
+  "tags": ["defi", "governance", "vstate", "lmc"],
+  "id": "0x169925844ffa87c9c8fb87505d8a8bf7c0b03b7f"
 }
-
