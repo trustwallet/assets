@@ -1,0 +1,62 @@
+{
+  "name": "VENE Official Token List",
+  "logoURI": "https://raw.githubusercontent.com/VENEcoinOfficial/venecoin-tokenlist/main/venecoin-256.png",
+  "keywords": ["VENE", "Venezuela", "Polygon", "DeFi", "Community"],
+  "timestamp": "2025-10-09T00:00:00Z",
+  "version": {
+    "major": 1,
+    "minor": 1,
+    "patch": 0
+  },
+  "tags": {
+    "defi": {
+      "name": "DeFi",
+      "description": "Decentralized finance"
+    },
+    "latam": {
+      "name": "LATAM",
+      "description": "Latin American blockchain projects"
+    },
+    "community": {
+      "name": "Community",
+      "description": "Community-driven token"
+    }
+  },
+  "tokens": [
+    {
+      "chainId": 137,
+      "address": "0x4B9b9394a98dC6264c7d1CBfAd3E5633C0E886D8",
+      "symbol": "VENE",
+      "name": "Venezuela Nueva Libre y Eterna",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/VENEcoinOfficial/venecoin-tokenlist/main/venecoin-256.png",
+      "tags": ["defi", "latam", "community"],
+      "extensions": {
+        "website": "https://www.venecoin.xyz",
+        "explorer": "https://polygonscan.com/token/0x4B9b9394a98dC6264c7d1CBfAd3E5633C0E886D8",
+        "uniswap": "https://app.uniswap.org/explore/tokens/polygon/0x4B9b9394a98dC6264c7d1CBfAd3E5633C0E886D8",
+        "dexscreener": "https://dexscreener.com/polygon/0x4b9b9394a98dc6264c7d1cbfad3e5633c0e886d8",
+        "twitter": "https://twitter.com/VENEcoin",
+        "telegram": "https://t.me/venecoinofficial",
+        "github": "https://github.com/VENEcoinOfficial/venecoin-tokenlist",
+        "ownership": "renounced",
+        "ownershipTx": "0x9606deaf",
+        "liquidityLock": "Locked until Nov 30, 2025 (Team Finance)",
+        "tokenomics": {
+          "maxSupply": "1000000000",
+          "distribution": {
+            "treasury": "51.56%",
+            "marketing": "24.70%",
+            "liquidity": "22.20%"
+          }
+        },
+        "status": "active",
+        "audit": {
+          "source": "GoPlus Security",
+          "result": "0 risks detected",
+          "report": "https://gopluslabs.io/token-security/0x4B9b9394a98dC6264c7d1CBfAd3E5633C0E886D8"
+        }
+      }
+    }
+  ]
+}
