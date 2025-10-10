@@ -1,0 +1,18 @@
+{
+  "name": "Cryptohost Bridged USD",
+  "symbol": "CUSD",
+  "type": "BEP20",
+  "decimals": 18,
+  "description": "Cryptohost Bridged USD (CUSD) is a USD-pegged stablecoin deployed across BNB Smart Chain, Ethereum, Arbitrum and Optimism for on-chain payments and DeFi integrations.",
+  "website": "https://cryptohostbridgedusd.io/",
+  "explorer": "https://bscscan.com/token/0x7f32650c35Cf5a90447B922932b09262626a1346",
+  "status": "active",
+  "id": "0x7f32650c35Cf5a90447B922932b09262626a1346",
+  "tags": ["stablecoin", "defi"],
+  "links": [
+    { "name": "twitter", "url": "https://x.com/NenzyBrown" },
+    { "name": "telegram", "url": "https://t.me/CryptohostBridgedUSD" },
+    { "name": "github", "url": "https://github.com/Nenzy10/cryptohost-bridged-usd" },
+    { "name": "whitepaper", "url": "https://cryptohostbridgedusd.io/assets/CUSD_Whitepaper.pdf" }
+  ]
+}
