@@ -9,8 +9,14 @@
   "id": "0xbb7e20348fcfd959e314747873b41d51ef1f3474",
   "type": "bep20",
   "tags": ["stablecoin", "bep20"],
-  "links": {
-    "github": "https://github.com/yyoutoone-art",
-    "telegram": "https://t.me/yyoutoone"
-  }
+  "links": [
+    {
+      "name": "github",
+      "url": "https://github.com/yyoutoone-art"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/yyoutoone"
+    }
+  ]
 }
