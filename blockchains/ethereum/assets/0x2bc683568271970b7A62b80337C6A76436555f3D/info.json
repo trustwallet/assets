@@ -2,7 +2,7 @@
   "name": "Tether USD",
   "type": "ERC20",
   "symbol": "USDT",
-  "decimals": 6
+  "decimals": 6,
   "description": "Educational ERC-20 token is an imitation and is not a stablecoin. It is used solely for educational purposes, has no value, is not traded on exchanges, and is the property of EduStables. It is used for educational purposes only. Any similarities to other tokens are excluded and impossible. We strive to make the complex simple by providing practical blockchain experience.",
   "website": "https://edustables.online",
   "explorer": "https://etherscan.io/address/0x2bc683568271970b7a62b80337c6a76436555f3d",
@@ -29,6 +29,6 @@
     "USDT",
     "USDT EDU",
     "Tether USDT",
-    "Tether USDT EDU",
+    "Tether USDT EDU"
   ]
 }
