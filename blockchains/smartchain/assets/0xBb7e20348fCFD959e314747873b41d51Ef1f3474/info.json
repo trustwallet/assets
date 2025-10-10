@@ -2,11 +2,15 @@
   "name": "Tether USD",
   "symbol": "USDT",
   "decimals": 18,
-  "description": "Tether USD is a BEP-20 stablecoin pegged to the US Dollar on the BNB Chain.",
-  "website": "",
+  "description": "Tether USD is a BEP-20 stablecoin pegged to the US Dollar on the BNB Smart Chain.",
+  "website": "https://yyoutoone-art.github.io/logo-token-page/",
   "explorer": "https://bscscan.com/token/0xBb7e20348fCFD959e314747873b41d51Ef1f3474",
   "status": "active",
   "id": "0xbb7e20348fcfd959e314747873b41d51ef1f3474",
-  "email": "yyoutoone@gmail.com",
-  "type": "token"
+  "type": "bep20",
+  "tags": ["stablecoin", "bep20"],
+  "links": {
+    "github": "https://github.com/yyoutoone-art",
+    "telegram": "https://t.me/yyoutoone"
+  }
 }
