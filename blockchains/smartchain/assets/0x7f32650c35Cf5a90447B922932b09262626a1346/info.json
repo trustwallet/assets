@@ -1,0 +1,31 @@
+{
+  "name": "Cryptohost Bridged USD",
+  "symbol": "CUSD",
+  "type": "BEP20",
+  "decimals": 18,
+  "description": "Cryptohost Bridged USD (CUSD) is a decentralized, USD-pegged stablecoin deployed across multiple chains, including BNB Smart Chain, Ethereum, Arbitrum, and Optimism. It provides a stable unit of account, payment medium, and cross-chain liquidity source for decentralized finance and digital settlements.",
+  "website": "https://cryptohostbridgedusd.io/",
+  "explorer": "https://bscscan.com/token/0x7f32650c35Cf5a90447B922932b09262626a1346",
+  "status": "active",
+  "id": "0x7f32650c35Cf5a90447B922932b09262626a1346",
+  "logo": "https://cryptohostbridgedusd.io/assets/CUSD.png",
+  "links": [
+    { "name": "website", "url": "https://cryptohostbridgedusd.io/" },
+    { "name": "whitepaper", "url": "https://cryptohostbridgedusd.io/assets/CUSD_Whitepaper.pdf" },
+    { "name": "twitter", "url": "https://twitter.com/NenzyBrown" },
+    { "name": "telegram", "url": "https://t.me/CryptohostBridgedUSD" },
+    { "name": "github", "url": "https://github.com/Nenzy10/cryptohost-bridged-usd" },
+    {
+      "name": "pricefeed",
+      "url": "https://dex.coinmarketcap.com/token/bsc/0x7f32650c35cf5a90447b922932b09262626a1346/"
+    },
+    {
+      "name": "liquidity",
+      "url": "https://www.geckoterminal.com/bsc/pools/0x91f21966972d6a00c5dc21d07956b69123daf782"
+    },
+    {
+      "name": "transactionProof",
+      "url": "https://bscscan.com/tx/0xbe8a9713666b5865a581536ee17d9cc6b241bb871466f0f4780e197cde848fae"
+    }
+  ]
+}
