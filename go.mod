@@ -3,7 +3,7 @@ module github.com/trustwallet/assets
 go 1.19
 
 require (
-	github.com/sirupsen/logrus v1.9.0
+	github.com/sirupsen/logrus v1.9.3
 	github.com/spf13/cobra v1.7.0
 	github.com/trustwallet/assets-go-libs v0.3.9-0.20240905070109-9da7e7c4847a
 	github.com/trustwallet/go-libs v0.7.3
