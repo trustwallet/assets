@@ -48,8 +48,10 @@ jobs:
         id: files
 
       - name: Filter files to invalidate
+        env:
+          PATHS: ${{ steps.files.outputs.added_modified }}
         run: |
-          echo "::set-output name=paths::$(echo ${{ steps.files.outputs.added_modified }} | tr ' ' '\n' | grep -E 'blockchains/|dapps/' | awk '{print "/"$1}' | tr '\n' ' ')"
+          echo "::set-output name=paths::$(echo "$PATHS" | tr ' ' '\n' | grep -E 'blockchains/|dapps/' | awk '{print "/"$1}' | tr '\n' ' ')"
         if: github.event_name == 'push'
         id: filter
 
