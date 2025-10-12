@@ -3,16 +3,23 @@
   "symbol": "USDT.z",
   "type": "BEP20",
   "decimals": 11,
-  "description": "USDT.z — a community-backed stable token on the BNB Smart Chain, designed for low-fee transfers, transparency, and long-term sustainability.",
-  "website": "https://usdtz.site",
+  "description": "USDT.z is a community-driven stable ecosystem token designed to unify micro-liquidity networks, empower project scaling, and enhance real-world adoption across decentralized platforms.",
+  "website": "https://usdtz.site/",
   "explorer": "https://bscscan.com/token/0xC70ea41F0F11D6463dbdA6C9B5d84367d14D6d25",
   "status": "active",
   "id": "0xC70ea41F0F11D6463dbdA6C9B5d84367d14D6d25",
-  "tags": ["stablecoin", "payments"],
-  "socials": {
+  "links": {
     "twitter": "https://x.com/Project_USDTz",
     "telegram": "https://t.me/USDTzOfficial",
     "github": "https://github.com/iamthat5/USDT.z"
-  }
+  },
+  "tags": [
+    "defi",
+    "stablecoin",
+    "bep20"
+  ]
+}
+
+
 }
 
