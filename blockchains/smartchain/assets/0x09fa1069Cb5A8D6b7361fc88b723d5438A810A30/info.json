@@ -1,0 +1,24 @@
+{
+    "name": "TestCoin",
+    "type": "BEP20",
+    "symbol": "TEST",
+    "decimals": 10,
+    "website": "https://test.com",
+    "description": "test",
+    "explorer": "https://bscscan.com/token/0x09fa1069cb5a8d6b7361fc88b723d5438a810a30",
+    "status": "active",
+    "id": "0x09fa1069Cb5A8D6b7361fc88b723d5438A810A30",
+    "links": [
+        {
+            "name": "telegram",
+            "url": "https://t.me/test"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/crypto"
+        }
+    ],
+    "tags": [
+        "memes"
+    ]
+}
