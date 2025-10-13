@@ -3,7 +3,7 @@
   "symbol": "TOTH",
   "type": "BEP20",
   "decimals": 18,
-  "description": "$TOTH is the symbolic token of The Order of Thoth — uniting art, AI, and blockchain in a new digital renaissance. It serves as a key to creative freedom and decentralized artistic evolution.",
+  "description": "$TOTH is the symbolic token of The Order of Thoth — uniting art, AI, and blockchain in a new digital renaissance. It serves as a key to creative freedom and innovation.",
   "website": "https://tothcoin.com",
   "explorer": "https://bscscan.com/token/0xDF83B7aff9614Ab4AA9D0869244B459e35B1354d",
   "status": "active",
@@ -25,9 +25,6 @@
       "name": "youtube",
       "url": "https://youtube.com/@TheOrderofThoth"
     }
-    {
-      "name": "tags",
-      "tags": ["art", "music", "ai", "culture"]
-    }
-  ]
+  ],
+  "tags": ["art", "music", "ai", "culture"]
 }
