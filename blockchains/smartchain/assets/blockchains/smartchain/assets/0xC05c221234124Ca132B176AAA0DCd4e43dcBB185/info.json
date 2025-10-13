@@ -4,8 +4,9 @@
   "type": "BEP20",
   "decimals": 18,
   "website": "https://example.com",
-  "description": "HatsuneToken (MIKU) is a community-driven token inspired by digital culture and anime creativity.",
+  "description": "HatsuneToken (MIKU) is a community-driven token inspired by the digital idol Hatsune Miku.",
   "explorer": "https://bscscan.com/token/0xC05c221234124Ca132B176AAA0DCd4e43dcBB185",
-  "status": "active",
-  "id": "0xC05c221234124Ca132B176AAA0DCd4e43dcBB185"
+  "links": {
+    "twitter": "https://twitter.com/HatsuneToken"
+  }
 }
