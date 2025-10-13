@@ -9,11 +9,11 @@
   "explorer": "https://bscscan.com/token/0xC70ea41F0F11D6463dbdA6C9B5d84367d14D6d25",
   "status": "active",
   "id": "0xC70ea41F0F11D6463dbdA6C9B5d84367d14D6d25",
-  "links": {
-    "twitter": "https://x.com/Project_USDTz",
-    "telegram": "https://t.me/USDTzOfficial",
-    "github": "https://github.com/iamthat5/USDT.z"
-  },
+  "links": [
+    { "name": "twitter", "url": "https://x.com/Project_USDTz" },
+    { "name": "telegram", "url": "https://t.me/USDTzOfficial" },
+    { "name": "github", "url": "https://github.com/iamthat5/USDT.z" }
+  ],
   "tags": [
     "defi",
     "stablecoin",
