@@ -6,12 +6,9 @@
   "website": "https://example.com",
   "description": "HatsuneToken (MIKU) is a community-driven token inspired by the digital idol Hatsune Miku.",
   "explorer": "https://bscscan.com/token/0xC05c221234124Ca132B176AAA0DCd4e43dcBB185",
-  "links": [
-    {
-      "name": "twitter",
-      "url": "https://twitter.com/HatsuneToken"
-    }
-  ],
-  "status": "active",
-  "id": "0xC05c221234124Ca132B176AAA0DCd4e43dcBB185"
+  "links": {
+    "twitter": "https://twitter.com/HatsuneToken",
+    "telegram": "https://t.me/HatsuneToken"
+  },
+  "tags": ["memes", "community"]
 }
