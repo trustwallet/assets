@@ -1,9 +1,9 @@
 {
   "name": "Miku Token",
   "symbol": "MIKU",
-  "decimals": 18,
   "type": "BEP20",
-  "description": "Launched in July 2022 on BNB Smart Chain, Miku is a crypto project inspired by the virtual idol Hatsune Miku, featuring a swap platform and plans for token staking, an NFT collection, and a metaverse.",
+  "decimals": 18,
+  "description": "Miku Token is an anime-inspired BEP20 community token on BNB Smart Chain, symbolizing creativity, freedom, and culture.",
   "website": "https://mikutoken.netlify.app",
   "explorer": "https://bscscan.com/token/0xC05c221234124Ca132B176AAA0DCd4e43dcBB185",
   "status": "active",
@@ -11,11 +11,14 @@
   "links": [
     {
       "name": "twitter",
-      "url": "https://twitter.com/sen34866"
+      "url": "https://x.com/sen34866"
     },
     {
       "name": "github",
       "url": "https://github.com/sen34866/assets"
     }
+  ],
+  "tags": [
+    "memes"
   ]
 }
