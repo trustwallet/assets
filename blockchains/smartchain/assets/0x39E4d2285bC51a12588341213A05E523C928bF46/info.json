@@ -1,20 +1,11 @@
 {
-  "name": "NOVARIC",
+  "name": "NOVARIC Token",
   "symbol": "NVX",
-  "decimals": 18,
-  "status": "active",
-  "id": "0x39e4d2285bc51a12588341213a05e523c928bf46",
   "type": "BEP20",
-  "website": "https://novaric.co/novaric-token",
-  "explorer": "https://bscscan.com/token/0x39e4d2285bc51a12588341213a05e523c928bf46",
-  "links": {
-    "twitter": "https://twitter.com/novaric_ltd",
-    "telegram": "https://t.me/novaric_eu",
-    "github": "https://github.com/novaric-ltd",
-    "reddit": "https://reddit.com/r/novaric"
-  },
-  "tags": [
-    "defi",
-    "utility-token"
-  ]
+  "decimals": 18,
+  "description": "A fiat-backed stablecoin issued by NOVARIC®, designed for transparent digital finance and DeFi interoperability.",
+  "website": "https://novaric.co",
+  "explorer": "https://bscscan.com/token/0x39E4d2285bC51a12588341213A05E523C928bF46",
+  "status": "active",
+  "id": "0x39E4d2285bC51a12588341213A05E523C928bF46"
 }
