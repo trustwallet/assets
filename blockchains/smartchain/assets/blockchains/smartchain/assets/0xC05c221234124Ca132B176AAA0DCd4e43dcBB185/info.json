@@ -1,13 +1,20 @@
 {
   "name": "Miku Token",
-  "symbol": "MIKU",
   "type": "BEP20",
+  "symbol": "MIKU",
   "decimals": 18,
-  "description": "Miku Token is a community-driven anime-inspired digital asset, symbolizing creativity and decentralized culture.",
-  "website": "https://mikuworld.app",
+  "website": "https://mikutoken.netlify.app",
+  "description": "Miku Token (MIKU) is a BEP20 cryptocurrency on Binance Smart Chain. The project aims to build a community-driven ecosystem around the token.",
   "explorer": "https://bscscan.com/token/0xC05c221234124Ca132B176AAA0DCd4e43dcBB185",
-  "twitter": "https://twitter.com/sen34866",
-  "telegram": "https://t.me/mikutokencommunity",
   "status": "active",
-  "id": "0xC05c221234124Ca132B176AAA0DCd4e43dcBB185"
+  "id": "0xC05c221234124Ca132B176AAA0DCd4e43dcBB185",
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/sen34866"
+    }
+  ],
+  "tags": [
+    "memes"
+  ]
 }
