@@ -4,17 +4,16 @@
   "type": "BEP20",
   "decimals": 18,
   "website": "https://www.prizrak.ai",
-  "description": "PRZK is the utility token powering the Prizrak AI trading ecosystem: an intelligent platform providing real-time crypto signals, analytics, and community-driven trading tools.",
+  "description": "PRZK is the utility token powering the Prizrak AI ecosystem: an intelligent platform providing real-time crypto signals, analytics, and community-driven AI-based trading tools.",
   "explorer": "https://bscscan.com/token/0x0D736EDE94EA41BB67E6A6D0E00Bd43eC3183271",
   "status": "active",
   "id": "0x0D736EDE94EA41BB67E6A6D0E00Bd43eC3183271",
   "tags": [
     "defi",
-    "ecosystem"
   ],
   "links": [
     {
-      "name": "x",
+      "name": "twitter",
       "url": "https://x.com/prizrak_ai"
     },
     {
@@ -28,6 +27,10 @@
     {
       "name": "github",
       "url": "https://github.com/YvesAngel"
+    },
+    {
+      "name": "whitepaper",
+      "url": "https://prizrak.ai/przk/whitepaper/en.pdf"
     }
   ]
 }
