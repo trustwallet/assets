@@ -1,9 +1,17 @@
 {
-  "name": "GoranoCoin",
-  "symbol": "GCN",
-  "chainId": 137,
-  "description": "GoranoCoin is a fixed supply token on Polygon.",
-  "links": {
-    "website": "https://skbg.net/gcn"
-  }
+    "name": "GoranoCoin",
+    "symbol": "GCN",
+    "type": "POLYGON",
+    "decimals": 18,
+    "status": "active",
+    "id": "0x0473E4E2AF98e0DE3672d77B44F8Cc33b1696DC0",
+    "description": "GoranoCoin is a fixed supply token on Polygon.",
+    "website": "https://skbg.net/gcn",
+    "explorer": "https://polygonscan.com/token/0x0473E4E2AF98e0DE3672d77B44F8Cc33b1696DC0",
+    "links": [
+        {
+            "name": "website",
+            "url": "https://skbg.net/gcn"
+        }
+    ]
 }
