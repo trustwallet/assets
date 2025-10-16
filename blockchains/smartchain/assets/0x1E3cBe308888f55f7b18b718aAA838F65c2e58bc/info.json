@@ -1,16 +1,15 @@
 {
-  "name": "Muterra",
+  "name": "MUTERRA",
   "symbol": "MUTA",
   "type": "BEP20",
   "decimals": 18,
   "description": "Muterra is a decentralized digital asset on the BNB Smart Chain.",
-  "website": "https://muterra.io", 
+  "website": "https://muterra.com",
   "explorer": "https://bscscan.com/token/0x1E3cBe308888f55f7b18b718aAA838F65c2e58bc",
+  "github": "https://github.com/mutatoken/mutatoken-hardhat-mainnet-10-oct-2025",
+  "twitter": "https://x.com/muterra_com",
+  "telegram": "http://t.me/muterra_com",
+  "tags": ["gamefi", "nft", "gaming"],
   "status": "active",
-  "id": "0x1E3cBe308888f55f7b18b718aAA838F65c2e58bc",
-  "links": {
-    "twitter": "https://twitter.com/muterra_game",
-    "github": "https://github.com/muterra"
-  },
-  "tags": ["gamefi", "nft"]
+  "id": "0x1E3cBe308888f55f7b18b718aAA838F65c2e58bc"
 }
