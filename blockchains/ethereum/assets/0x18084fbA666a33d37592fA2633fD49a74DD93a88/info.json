@@ -1,0 +1,53 @@
+{
+    "name": "tBTC v2 (tBTC)",
+    "type": "ERC20",
+    "symbol": "tBTC",
+    "decimals": 18,
+    "website": "https://threshold.network",
+    "description": "tBTC is a decentralized Bitcoin onchain that allows Bitcoin holders to use their BTC across multiple blockchains, decentralized finance, and other financial markets.",
+    "explorer": "https://etherscan.io/token/0x18084fbA666a33d37592fA2633fD49a74DD93a88",
+    "status": "active",
+    "id": "0x18084fbA666a33d37592fA2633fD49a74DD93a88",
+    "links": [
+        {
+            "name": "x",
+            "url": "https://x.com/tbtc_project"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/threshold-network/"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/@thresholdnetwork"
+        },
+        {
+            "name": "forum",
+            "url": "https://forum.threshold.network"
+        },
+        {
+            "name": "blog",
+            "url": "https://threshold.network/blog"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.threshold.network/"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/tbtc-token/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://www.coingecko.com/en/coins/tbtc"
+        },
+        {
+            "name": "docs",
+            "url": "https://docs.threshold.network"
+        }
+    ],
+    "tags": [
+        "wrapped",
+        "defi"
+    ]
+}
