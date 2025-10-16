@@ -1,8 +1,6 @@
 {
     "name": "Peet DeFi",
     "website": "https://peetdecentralized.finance/",
-    "source_code": "https://etherscan.io/address/0x51bb9c623226ce781f4a54fc8f4a530a47142b6b#code",
-    "white_paper": "https://peetdecentralized.finance/litepaper.pdf",
     "description": "Core utility, staking, and governance token for Peet decentralized finance platform.",
     "explorer": "https://etherscan.io/token/0x51bb9c623226ce781f4a54fc8f4a530a47142b6b",
     "research": "https://peetdefi.gitbook.io/docs/",
@@ -10,5 +8,11 @@
     "symbol": "PTE",
     "decimals": 18,
     "status": "active",
-    "id": "0x51Bb9c623226CE781F4A54FC8F4A530a47142b6B"
+    "id": "0x51Bb9c623226CE781F4A54FC8F4A530a47142b6B",
+    "links": [
+        {
+            "name": "whitepaper",
+            "url": "https://peetdecentralized.finance/litepaper.pdf"
+        }
+    ]
 }

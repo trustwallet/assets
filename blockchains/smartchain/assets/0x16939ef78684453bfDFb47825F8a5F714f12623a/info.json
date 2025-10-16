@@ -1,12 +1,17 @@
 {
-    "name": "Tezos Token",
+    "name": "BNB pegged Tezos Token",
     "website": "https://tezos.com",
-    "description": "Tezos is a smart contract platform that uses blockchain voting to be self-governing by its token holders.",
+    "description": "BNB pegged Tezos Token (XTZ BEP20) is a token issued by Binance on Smart Chain; its price is pegged to Tezos (XTZ) at a ratio of 1:1.",
     "explorer": "https://bscscan.com/token/0x16939ef78684453bfDFb47825F8a5F714f12623a",
     "research": "https://research.binance.com/en/projects/tezos",
     "type": "BEP20",
     "symbol": "XTZ",
     "decimals": 18,
     "status": "active",
-    "id": "0x16939ef78684453bfDFb47825F8a5F714f12623a"
+    "id": "0x16939ef78684453bfDFb47825F8a5F714f12623a",
+    "tags": [
+        "binance-peg",
+        "defi",
+        "nft"
+    ]
 }
