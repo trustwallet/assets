@@ -76,6 +76,10 @@ Trust Wallet team reserves the right to change the terms of asset submissions at
 
 Additionally, spam-like behavior, including but not limited to mass distribution of tokens to random addresses will result in the asset being flagged as spam and possible removal from the repository.
 
+## Security
+
+For guidance on reporting vulnerabilities, please see our [Security Policy](.github/SECURITY.md).
+
 ## License
 
 The scripts and documentation in this project are released under the [MIT License](LICENSE)
