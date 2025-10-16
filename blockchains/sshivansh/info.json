@@ -1,0 +1,21 @@
+{
+  "name": "SSHIVANSH",
+  "chainId": 222345,
+  "shortName": "sivz",
+  "network": "mainnet",
+  "nativeCurrency": {
+    "name": "SIVZ",
+    "symbol": "SIVZ",
+    "decimals": 18
+  },
+  "rpc": ["https://apiprod.sshivanshcoin.com/ext/bc/2XWN3PW4Qdjw3AtG6eqH8PCzj49G9Qay6SLNWbGLjsDF1qPgsW/rpc"],
+  "explorers": [
+    {
+      "name": "Sshivansh Explorer",
+      "url": "https://explorer.sshivanshcoin.com",
+      "standard": "EIP3091"
+    }
+  ],
+  "slip44": 222345,
+  "status": "active"
+}
