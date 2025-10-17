@@ -7,10 +7,10 @@
   "description": "Hotdog (HOTD) is a transparent, community-driven DeFi token on the Polygon network. 75% of tokens support programming students and AI trainees, and 25% fund project development via a multi-sig wallet to promote Web3 and POL usage in the MENA region.",
   "website": "https://github.com/hebishm/Hotdog",
   "explorer": "https://polygonscan.com/token/0x00D423E70C2F631d963B17C3661fD07aAcCCd41b",
-  "category": "Community / DeFi",
   "type": "ERC20",
   "logo": "logo.png",
-  "links": {
-    "email": "hebishpartner@gmail.com"
-  }
+  "links": [
+    { "name": "email", "url": "mailto:hebishpartner@gmail.com" },
+    { "name": "github", "url": "https://github.com/hebishm/Hotdog" }
+  ]
 }
