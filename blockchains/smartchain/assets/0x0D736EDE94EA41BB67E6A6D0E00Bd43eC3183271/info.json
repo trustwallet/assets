@@ -1,36 +1,36 @@
 {
-    "name": "Prizrak AI",
-    "type": "BEP20",
-    "symbol": "PRZK",
-    "decimals": 18,
-    "website": "https://www.prizrak.ai",
-    "description": "PRZK is the utility token powering the Prizrak AI ecosystem — an intelligent platform providing real-time crypto signals, analytics, and community-driven AI-based trading tools.\n",
-    "explorer": "https://bscscan.com/token/0x0D736EDE94EA41BB67E6A6D0E00Bd43eC3183271",
-    "status": "active",
-    "id": "0x0D736EDE94EA41BB67E6A6D0E00Bd43eC3183271",
-    "links": [
-        {
-            "name": "x",
-            "url": "https://x.com/prizrak_ai"
-        },
-        {
-            "name": "telegram",
-            "url": "https://t.me/prizrak_ai"
-        },
-        {
-            "name": "discord",
-            "url": "https://discord.com/invite/9U8EGhutZX"
-        },
-        {
-            "name": "github",
-            "url": "https://github.com/YvesAngel"
-        },
-        {
-            "name": "whitepaper",
-            "url": "https://prizrak.ai/przk/whitepaper/en.pdf"
-        }
+  "name": "Prizrak AI",
+  "symbol": "PRZK",
+  "type": "BEP20",
+  "decimals": 18,
+  "website": "https://www.prizrak.ai",
+  "description": "PRZK is the utility token powering the Prizrak AI ecosystem — an intelligent platform providing real-time crypto signals, analytics, and community-driven AI-based trading tools.",
+  "explorer": "https://bscscan.com/token/0x0D736EDE94EA41BB67E6A6D0E00Bd43eC3183271",
+  "status": "active",
+  "id": "0x0D736EDE94EA41BB67E6A6D0E00Bd43eC3183271",
+  "tags": [
+    "defi"
     ],
-    "tags": [
-        "defi"
-    ]
+  "links": [
+    {
+      "name": "telegram",
+      "url": "https://t.me/prizrak_ai"
+    },
+    {
+      "name": "twitter",
+      "url": "https://x.com/prizrak_ai"
+    },
+    {
+      "name": "discord",
+      "url": "https://discord.com/invite/9U8EGhutZX"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/YvesAngel"
+    },
+    {
+      "name": "whitepaper",
+      "url": "https://prizrak.ai/przk/whitepaper/en.pdf"
+    }
+  ]
 }
