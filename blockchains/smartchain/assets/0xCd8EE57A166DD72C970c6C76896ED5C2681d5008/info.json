@@ -1,0 +1,33 @@
+{
+  "name": "Tether USD Bridged ZED20",
+  "type": "BEP20",
+  "symbol": "USDT.z",
+  "decimals": 18,
+  "website": "https://leanlk.github.io/USDT.z-token/",
+  "description": "USDT.z is a next-generation stablecoin pegged 1:1 to USD on Binance Smart Chain. Built with OpenZeppelin standards, featuring mint/burn, pausable, whitelist/blacklist. Educational project with verified contract, PancakeSwap V3 liquidity, comprehensive documentation and security audit (8.5/10).",
+  "explorer": "https://bscscan.com/token/0xCd8EE57A166DD72C970c6C76896ED5C2681d5008",
+  "status": "active",
+  "id": "0xCd8EE57A166DD72C970c6C76896ED5C2681d5008",
+  "links": [
+    {
+      "name": "github",
+      "url": "https://github.com/LeanLK/USDT.z-token"
+    },
+    {
+      "name": "twitter",
+      "url": "https://x.com/USDTzCommunity"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/USDTzCommunity"
+    },
+    {
+      "name": "whitepaper",
+      "url": "https://github.com/LeanLK/USDT.z-token/blob/main/docs/Whitepapaer.pdf"
+    }
+  ],
+  "tags": [
+    "stablecoin",
+    "defi"
+  ]
+}
