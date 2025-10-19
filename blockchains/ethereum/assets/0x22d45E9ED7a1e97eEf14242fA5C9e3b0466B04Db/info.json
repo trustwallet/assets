@@ -1,0 +1,18 @@
+{
+  "name": "ARICOIN",
+  "symbol": "ARI",
+  "type": "ERC20",
+  "decimals": 18,
+  "description": "ARI (ARICOIN) is a standard ERC-20 token with permanently burned liquidity and no owner privileges, designed for transparent and trustless trading.",
+  "website": "https://github.com/web3ari/ari-token",
+  "explorer": "https://etherscan.io/token/0x22d45E9ED7a1e97eEf14242fA5C9e3b0466B04Db",
+  "status": "active",
+  "id": "0x22d45E9ED7a1e97eEf14242fA5C9e3b0466B04Db",
+  "links": [
+    {
+      "name": "uniswap",
+      "url": "https://app.uniswap.org/#/swap?outputCurrency=0x22d45E9ED7a1e97eEf14242fA5C9e3b0466B04Db"
+    }
+  ],
+  "tags": ["defi", "token"]
+}
