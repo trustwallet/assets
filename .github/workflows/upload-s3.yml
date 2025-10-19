@@ -58,6 +58,32 @@ jobs:
       - name: Invalidate CloudFront
         if: github.repository_owner == 'trustwallet' && github.event_name == 'push' && steps.filter.outputs.paths != ''
         uses: chetan/invalidate-cloudfront-action@v2
+        env: PATHS: ${{ steps.filter.outputs.paths }}
         env:
-          PATHS: ${{ steps.filter.outputs.paths }}
-          DISTRIBUTION: ${{ secrets.AWS_DISTRIBUTION }}
+        AWS_REGION: us-east-1
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        DISTRIBUTION: ${{ secrets.AWS_DISTRIBUTION }}
+
+                    - name: Setup Go environment
+  uses: actions/setup-go@v6.0.0
+  with:
+    # The Go version to download (if necessary) and use. Supports semver spec and ranges. Be sure to enclose this option in single quotation marks.
+    go-version: # go.work
+    # Path to the go.mod or go.work file.
+    go-version-file: # true
+    # Set this option to true if you want the action to always check for the latest available version that satisfies the version spec
+    check-latest: # optional
+    # Used to pull Go distributions from go-versions. Since there's a default, this is typically not supplied by the user. When running this action on github.com, the default value is sufficient. When running on GHES, you can pass a personal access token for github.com if you are experiencing rate limiting.
+    token: # true, default is ${{ github.server_url == 'https://github.com' && github.token || '' }}
+    # Used to specify whether caching is needed. Set to true, if you'd like to enable caching.
+    cache: # optional, default is true
+    # Used to specify the path to a dependency file - go.sum
+    cache-dependency-path: # optional
+    # Target architecture for Go to use. Examples: x86, x64. Will use system architecture by default.
+    architecture: # optional
+          
+
+          
+        
+
