@@ -3,23 +3,18 @@
   "symbol": "SPRAI",
   "type": "BEP20",
   "decimals": 18,
-  "description": "SPRAI é uma memecoin brasileira criada na BNB Smart Chain com foco em comunidade e sustentabilidade. Projeto com campanha ambiental de incentivo ao plantio da Araucária, árvore símbolo do Paraná.",
-  "website": "https://coinmarketcap.com/currencies/sprai/",
-  "explorer": "https://bscscan.com/token/0x7C7e518D6d91498BbD850a834e36a96661ac9B1B",
+  "description": "SPRAI is a Brazilian community token built on the BNB Smart Chain, focused on sustainability and environmental awareness. The project promotes tree planting through the 'Plante e Ganhe SPRAI' campaign, encouraging people to contribute to nature preservation.",
+  "website": "https://spracoin.github.io/",
+  "explorer": "https://bscscan.com/token/0x7C7e518D6D91498Bbd850a834e36a96661ac9B1B",
   "status": "active",
-  "id": "0x7C7e518D6d91498BbD850a834e36a96661ac9B1B",
+  "id": "0x7C7e518D6D91498Bbd850a834e36a96661ac9B1B",
   "links": [
-    {
-      "name": "facebook",
-      "url": "https://facebook.com/spraitoken"
-    },
-    {
-      "name": "github",
-      "url": "https://github.com/spraicoin"
-    }
+    { "name": "facebook", "url": "https://facebook.com/spraitoken" },
+    { "name": "github", "url": "https://github.com/spracoin/spracoin.github.io" },
+    { "name": "whitepaper", "url": "https://spracoin.github.io/whitepaper-en.pdf" },
+    { "name": "coinmarketcap", "url": "https://coinmarketcap.com/currencies/sprai/" },
+    { "name": "telegram", "url": "https://t.me/spraitoken" },
+    { "name": "twitter", "url": "https://twitter.com/spraitoken" }
   ],
-  "tags": [
-    "memes"
-  ],
-  "holders": 11
+  "tags": ["community", "environment"]
 }
