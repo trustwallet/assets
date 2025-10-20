@@ -1,0 +1,27 @@
+{
+  "name": "Tethor USD",
+  "symbol": "USDT eth",
+  "type": "ERC20",
+  "decimals": 6,
+  "description": "Tethor USD (USDT eth) é um token estável baseado em Ethereum, com fornecimento total de 12 bilhões de unidades e compatibilidade com carteiras Web3 como Trust Wallet e MetaMask.",
+  "website": "https://tethor.finance",
+  "explorer": "https://etherscan.io/token/0x40052868B2BC56B90Fe9823428C1291929551512",
+  "status": "active",
+  "id": "0x40052868B2BC56B90Fe9823428C1291929551512",
+  "supply": "12000000000",
+  "links": [
+    {
+      "name": "Twitter",
+      "url": "https://twitter.com/tethorfinance"
+    },
+    {
+      "name": "Telegram",
+      "url": "https://t.me/tethorfinance"
+    },
+    {
+      "name": "GitHub",
+      "url": "https://github.com/tethorfinance"
+    }
+  ],
+  "tags": ["stablecoin", "usd", "finance"]
+}
