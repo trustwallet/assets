@@ -3,18 +3,35 @@
   "symbol": "SPRAI",
   "type": "BEP20",
   "decimals": 18,
-  "description": "SPRAI is a Brazilian community token built on the BNB Smart Chain, focused on sustainability and environmental awareness. The project promotes tree planting through the 'Plante e Ganhe SPRAI' campaign, encouraging people to contribute to nature preservation.",
-  "website": "https://spracoin.github.io/",
-  "explorer": "https://bscscan.com/token/0x7C7e518D6D91498Bbd850a834e36a96661ac9B1B",
+  "description": "SPRAI is a Brazilian community token built on the BNB Smart Chain, focused on sustainability and environmental awareness. The project promotes tree planting through the campaign 'Plante e Ganhe SPRAI'.",
+  "website": "https://spraicoin.github.io/",
+  "explorer": "https://bscscan.com/token/0x7C7e518D6d91498BBD850a834e36a96661ac9B1B",
   "status": "active",
-  "id": "0x7C7e518D6D91498Bbd850a834e36a96661ac9B1B",
+  "id": "0x7C7e518D6d91498BBD850a834e36a96661ac9B1B",
   "links": [
-    { "name": "facebook", "url": "https://facebook.com/spraitoken" },
-    { "name": "github", "url": "https://github.com/spracoin/spracoin.github.io" },
-    { "name": "whitepaper", "url": "https://spracoin.github.io/whitepaper-en.pdf" },
-    { "name": "coinmarketcap", "url": "https://coinmarketcap.com/currencies/sprai/" },
-    { "name": "telegram", "url": "https://t.me/spraitoken" },
-    { "name": "twitter", "url": "https://twitter.com/spraitoken" }
-  ],
-  "tags": ["community", "environment"]
+    {
+      "name": "github",
+      "url": "https://github.com/spraicoin/spraicoin.github.io"
+    },
+    {
+      "name": "whitepaper",
+      "url": "https://spraicoin.github.io/whitepaper-sprai.pdf"
+    },
+    {
+      "name": "twitter",
+      "url": "https://x.com/spraitoken"
+    },
+    {
+      "name": "facebook",
+      "url": "https://facebook.com/spraitoken"
+    },
+    {
+      "name": "coinmarketcap",
+      "url": "https://coinmarketcap.com/currencies/sprai/"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/spraitoken"
+    }
+  ]
 }
