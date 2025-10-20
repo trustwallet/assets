@@ -1,0 +1,52 @@
+{
+    "name": "Tensora",
+    "type": "BEP20",
+    "symbol": "Tora",
+    "decimals": 18,
+    "website": "https://tensora.sh",
+    "description": "Tensora is an AI-powered Layer 2 (L2) rollup built with the OP Stack and secured by Binance Smart Chain (BSC). It uses BSC calldata as its data availability layer, creating a decentralized network where anyone can contribute compute, inference, or evaluation and earn $TORA in return. Essentially “Bittensor built on BSC,” Tensora brings decentralized machine intelligence to the EVM ecosystem. It features a modular architecture with on-chain smart contracts for staking, governance, and subnet creation, while off-chain nodes handle AI model inference and validation. Users can deploy or join specialized subnets for different intelligence types such as language, trading, or vision, and participate in reward cycles through staking and delegation. With native OP Stack bridging, ERC-4337 account abstraction, and Paymaster integration, Tensora allows users to pay gas in $TORA instead of BNB. Designed to be fully upgradeable and governed by its community, Tensora unites the scalability of rollups with the incentive structure of AI networks, enabling open, permissionless markets for machine intelligence across the EVM world.",
+    "explorer": "https://bscscan.com/token/0x4444d14d522386647c29FD9cD9723F7339ac0F3c",
+    "status": "active",
+    "id": "0x4444d14d522386647c29FD9cD9723F7339ac0F3c",
+    "links": [
+        {
+            "name": "x",
+            "url": "https://x.com/TensoraL2"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/TensoraL2"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/TensoraL2"
+        },
+        {
+            "name": "telegram_news",
+            "url": "https://t.me/TensoraL2Announcements"
+        },
+        {
+            "name": "blog",
+            "url": "https://tensora.sh"
+        },
+        {
+            "name": "docs",
+            "url": "https://docs.tensora.sh"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.gg/Tensora"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://www.coingecko.com/en/coins/tensora"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/tensora/"
+        }
+    ],
+    "tags": [
+        "defi"
+    ]
+}
