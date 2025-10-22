@@ -25,7 +25,9 @@ build:
 
 test:
 	@echo "  >  Running unit tests"
-	go test -cover -race -coverprofile=coverage.txt -covermode=atomic -v ./...
+	# ensure artifacts don't pollute the repo root
+	mkdir -p bin
+	go test -cover -race -coverprofile=bin/coverage.txt -covermode=atomic -v ./...
 
 fmt:
 	@echo "  >  Format all go files"
