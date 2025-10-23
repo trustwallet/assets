@@ -18,11 +18,16 @@ import (
 )
 
 var configPath, root string
+var reportFormat, reportOutput string
 
 func InitCommands() {
 	rootCmd.Flags().StringVar(&configPath, "config", ".github/assets.config.yaml",
 		"config file (default is $HOME/.github/assets.config.yaml)")
 	rootCmd.Flags().StringVar(&root, "root", ".", "root path to files")
+
+    // Reporting flags
+    rootCmd.PersistentFlags().StringVar(&reportFormat, "report-format", "text", "report format: text|json")
+    rootCmd.PersistentFlags().StringVar(&reportOutput, "report-output", "", "path to write report (optional)")
 
 	rootCmd.AddCommand(checkCmd)
 	rootCmd.AddCommand(fixCmd)
@@ -145,9 +150,9 @@ func InitAssetsService() *service.Service {
 
 	fileService := file.NewService(paths...)
 	validatorsService := processor.NewService(fileService)
-	reportService := report.NewService()
+    reportService := report.NewService()
 
-	return service.NewService(fileService, validatorsService, reportService, paths)
+    return service.NewService(fileService, validatorsService, reportService, paths, reportFormat, reportOutput)
 }
 
 func setup() {
