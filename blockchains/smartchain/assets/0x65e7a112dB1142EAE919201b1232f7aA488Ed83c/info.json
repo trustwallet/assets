@@ -9,29 +9,11 @@
     "status": "active",
     "id": "0x65e7a112dB1142EAE919201b1232f7aA488Ed83c",
     "links": [
-        {
-            "name": "twitter",
-            "url": "https://x.com/RealLink001"
-        },
-        {
-            "name": "telegram",
-            "url": "https://t.me/RealLinkchat"
-        },
-        {
-            "name": "coinmarketcap",
-            "url": "https://coinmarketcap.com/currencies/reallink/"
-        },
-        {
-            "name": "coingecko",
-            "url": "https://coingecko.com/en/coins/reallink"
-        },
-        {
-            "name": "whitepaper",
-            "url": "https://www.reallink.vip/RealLink-whitepaper.pdf"
-        }
+        { "name": "twitter", "url": "https://x.com/RealLink001" },
+        { "name": "telegram", "url": "https://t.me/RealLinkchat" },
+        { "name": "coinmarketcap", "url": "https://coinmarketcap.com/currencies/reallink/" },
+        { "name": "coingecko", "url": "https://coingecko.com/en/coins/reallink" },
+        { "name": "whitepaper", "url": "https://www.reallink.vip/RealLink-whitepaper.pdf" }
     ],
-    "tags": [
-        "socialfi",
-        "web3"
-    ]
+    "tags": ["utility", "payments"]
 }
