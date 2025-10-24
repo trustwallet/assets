@@ -3,14 +3,14 @@
     "symbol": "REAL",
     "type": "BEP20",
     "decimals": 6,
-    "description": "RealLink is a Web3 social finance ecosystem integrating content creation, social interaction, and crypto payments via its REAL token, pioneering \"Social-to-Earn.\"",
+    "description": "RealLink is a Web3 social finance ecosystem integrating content creation, social interaction, and crypto payments via its REAL token, pioneering Social-to-Earn.",
     "website": "https://www.reallink.vip/",
     "explorer": "https://bscscan.com/token/0x65e7a112dB1142EAE919201b1232f7aA488Ed83c",
     "status": "active",
     "id": "0x65e7a112dB1142EAE919201b1232f7aA488Ed83c",
     "links": [
         {
-            "name": "x",
+            "name": "twitter",
             "url": "https://x.com/RealLink001"
         },
         {
@@ -29,5 +29,9 @@
             "name": "whitepaper",
             "url": "https://www.reallink.vip/RealLink-whitepaper.pdf"
         }
+    ],
+    "tags": [
+        "socialfi",
+        "web3"
     ]
 }
