@@ -2,5 +2,15 @@
   "name": "PeacockCoin",
   "symbol": "PCK",
   "decimals": 18,
-  "description": "A meme token with a peacock theme."
+  "website": "https://peacockcoin.io",
+  "description": "A fun meme token with a peacock theme.",
+  "explorer": "https://bscscan.com/token/0x97B9d65a5D8FCaE13a57dF7E2D1bEA34D3891D91",
+  "type": "BEP20",
+  "status": "active",
+  "id": "peacockcoin",
+  "tags": ["meme", "community"],
+  "links": {
+    "twitter": "https://twitter.com/peacockcoin",
+    "github": "https://github.com/peacockcoin"
+  }
 }
