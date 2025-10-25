@@ -1,1 +1,28 @@
-
+{
+  "name": "MellCoin",
+  "symbol": "MELL",
+  "type": "BEP20",
+  "decimals": 18,
+  "description": "MellCoin — это комьюнити-токен, созданный для развлечения и объединения людей в криптопространстве.",
+  "website": "https://linktr.ee/mellcoin",
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://x.com/mellcoin"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/mellcoingame"
+    },
+    {
+      "name": "reddit",
+      "url": "https://reddit.com/r/mellcoin"
+    }
+  ],
+  "explorer": "https://bscscan.com/token/0x73aBc196aFDB1751760B741f239B2165316a6eeC",
+  "status": "active",
+  "id": "0x73aBc196aFDB1751760B741f239B2165316a6eeC",
+  "tags": [
+    "entertainment"
+  ]
+}
