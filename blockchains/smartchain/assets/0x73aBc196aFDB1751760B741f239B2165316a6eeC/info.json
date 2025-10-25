@@ -4,8 +4,17 @@
   "type": "BEP20",
   "decimals": 18,
   "description": "MellCoin — это мем-токен.",
-  "website": "https://t.me/mellcoingame",
+  "links": {
+    "website": "https://linktr.ee/",
+    "twitter": "https://twitter.com/mellcoin",
+    "telegram": "https://t.me/mellcoingame"
+  }
   "explorer": "https://bscscan.com/token/0x73aBc196aFDB1751760B741f239B2165316a6eeC",
   "status": "active",
-  "id": "0x73aBc196aFDB1751760B741f239B2165316a6eeC"
+  "id": "0x73aBc196aFDB1751760B741f239B2165316a6eeC",
+  "tags": [
+    "meme",
+    "community",
+    "entertainment"
+  ]
 }
