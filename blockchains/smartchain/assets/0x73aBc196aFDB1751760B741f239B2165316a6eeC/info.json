@@ -3,12 +3,21 @@
   "symbol": "MELL",
   "type": "BEP20",
   "decimals": 18,
-  "description": "MellCoin — это мем-токен.",
-  "links": {
-    "website": "https://linktr.ee/",
-    "twitter": "https://twitter.com/mellcoin",
-    "telegram": "https://t.me/mellcoingame"
-  },
+  "description": "MellCoin — это мем-токен, созданный в честь популярного блогера, чтобы объединить фанатов и комьюнити вокруг его образа.",
+  "links": [
+    {
+      "name": "website",
+      "url": "https://linktr.ee/mellcoin"
+    },
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/mellcoin"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/mellcoingame"
+    }
+  ],
   "explorer": "https://bscscan.com/token/0x73aBc196aFDB1751760B741f239B2165316a6eeC",
   "status": "active",
   "id": "0x73aBc196aFDB1751760B741f239B2165316a6eeC",
