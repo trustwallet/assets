@@ -1,0 +1,20 @@
+{
+  "name": "OFFICIAL ZUNO",
+  "symbol": "ZUNO",
+  "type": "SPL",
+  "decimals": 9,
+  "description": "OFFICIAL ZUNO is a community-powered meme token on Solana with fixed supply, no mint authority, no freeze authority, immutable on-chain metadata, and transparent vesting via Streamflow. It provides community participation and staking rewards.",
+  "website": "https://zuno.guru",
+  "explorer": "https://solscan.io/token/G1VhWSAhYXRRzokGqxs4aQ8u5DSuP69ki2bN7hnapjzZ",
+  "status": "active",
+  "id": "G1VhWSAhYXRRzokGqxs4aQ8u5DSuP69ki2bN7hnapjzZ",
+  "links": [
+    { "name": "Twitter", "url": "https://x.com/zuno_guru" },
+    { "name": "Telegram", "url": "https://t.me/zuno_guru" },
+    { "name": "GitHub", "url": "https://github.com/companyzuno/zuno" },
+    { "name": "CoinGecko", "url": "https://www.coingecko.com/en/coins/official-zuno" },
+    { "name": "Audit (QuillAudits)", "url": "https://github.com/Quillhash/QuillAudit_Reports/blob/25009b67dc5425f0c2fe9e1163ee64f7f6a96f5f/Zuno%20SPL%20Token%20Audit%20report%20-%20QuillAudits.pdf" },
+    { "name": "Liquidity Pool (Meteora ZUNO/SOL)", "url": "https://www.meteora.ag/dlmm/7jfWod7G5YTFuhtvtKeKgRWipoMhS2LpSMAS1fVyo6WM" }
+  ],
+  "tags": ["meme-token", "solana", "staking", "community"]
+}
