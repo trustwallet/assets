@@ -6,20 +6,33 @@
   "description": "This artwork may or may not be notable.",
   "website": "https://checks.art",
   "explorer": "https://etherscan.io/token/0x718477C471B335ee0ca29B9f4b95Edd26d2eDE54",
-  "status": "abandoned",
+  "status": "active",
   "id": "0x718477C471B335ee0ca29B9f4b95Edd26d2eDE54",
+  "tags": [
+    "nft",
+    "wrapped",
+    "deflationary"
+  ],
   "links": [
     {
       "name": "github",
       "url": "https://github.com/visualizevalue/black-check"
     },
     {
-      "name": "x",
+      "name": "twitter",
       "url": "https://x.com/checksvv"
     },
     {
       "name": "whitepaper",
       "url": "https://github.com/visualizevalue/vvhitepapers/blob/main/projects/BLACK_CHECK.md"
+    },
+    {
+      "name": "coingecko",
+      "url": "https://www.geckoterminal.com/eth/pools/0x132c1c936dcb7837f24cc558745bbd4df0f393c6422eff8d1d406cd8004ded43"
+    },
+    {
+      "name": "coinmarketcap",
+      "url": "https://dex.coinmarketcap.com/token/ethereum/0x718477c471b335ee0ca29b9f4b95edd26d2ede54/"
     }
   ]
 }
