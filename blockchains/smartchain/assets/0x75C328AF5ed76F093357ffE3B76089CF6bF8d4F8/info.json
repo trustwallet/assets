@@ -1,15 +1,25 @@
 {
-    "name": "LuckyToken",
-    "type": "BEP20",
-    "symbol": "LCK",
-    "decimals": 18,
-    "website": "https://www.luckylevel.io/",
-    "description": "Token used for transactions and services on Lucky Level, a Web3 marketplace for game developers",
-    "explorer": "https://bscscan.com/token/0x75C328AF5ed76F093357ffE3B76089CF6bF8d4F8",
-    "status": "active",
-    "id": "0x75C328AF5ed76F093357ffE3B76089CF6bF8d4F8", 
-    "tags": [
-        "dap",
-        "marketplace"
-    ]
+  "name": "Lucky Level",
+  "type": "BEP20",
+  "symbol": "LCK",
+  "decimals": 18,
+  "website": "https://luckystudios.io/luckylevel/",
+  "description": "Utility token for Lucky Level, a decentralized marketplace for game development services",
+  "explorer": "https://bscscan.com/token/0x75C328AF5ed76F093357ffE3B76089CF6bF8d4F8",
+  "status": "active",
+  "id": "0x75C328AF5ed76F093357ffE3B76089CF6bF8d4F8",
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://x.com/CryptoLuckyof"
+    },
+    {
+      "name": "telegram",
+      "url": "t.me/LuckyStudiosOficial"
+    }
+  ],
+  "tags": [
+    "dapp",
+    "marketplace"
+  ]
 }
