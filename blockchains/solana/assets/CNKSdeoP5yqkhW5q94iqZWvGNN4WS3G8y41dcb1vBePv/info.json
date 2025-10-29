@@ -1,0 +1,22 @@
+{
+  "name": "USDC Bridged Solana",
+  "symbol": "USDC.c",
+  "type": "solana",
+  "address": "CNKSdeoP5yqkhW5q94iqZWvGNN4WS3G8y41dcb1vBePv",
+  "decimals": 6,
+  "logoURI": "https://raw.githubusercontent.com/cowbridged/assets/main/blockchains/solana/assets/CNKSdeoP5yqkhW5q94iqZWvGNN4WS3G8y41dcb1vBePv/logo.png",
+  "tags": [
+    "stablecoin",
+    "bridge",
+    "wrapped"
+  ],
+  "extensions": {
+    "website": "https://www.cowbridge.online",
+    "telegram": "https://t.me/cowbridged",
+    "twitter": "https://x.com/cowsbridged",
+    "github": "https://github.com/cowbridged",
+    "explorer": "https://solscan.io/token/CNKSdeoP5yqkhW5q94iqZWvGNN4WS3G8y41dcb1vBePv",
+    "totalSupply": "9988776600000",
+    "circulatingSupply": "9988770600000"
+  }
+}
