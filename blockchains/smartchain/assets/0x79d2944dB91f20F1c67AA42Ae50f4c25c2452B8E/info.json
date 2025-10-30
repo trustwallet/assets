@@ -1,12 +1,24 @@
 {
     "name": "USD Xevon Company Token",
-    "symbol": "USDX",
     "type": "BEP20",
+    "symbol": "USDX",
     "decimals": 18,
-    "description": "Token for Xevon company internal ecosystem. Used for transfers and future exchange for resources within the company.",
-    "website": "https://xevon.space",
+    "website": "https://xevon.space/",
+    "description": "This token is created for the Xevon company, which provides internal transfers for its companies and employees. The tokens will later be exchanged for various resources within the company.",
     "explorer": "https://bscscan.com/token/0x79d2944dB91f20F1c67AA42Ae50f4c25c2452B8E",
     "status": "active",
     "id": "0x79d2944dB91f20F1c67AA42Ae50f4c25c2452B8E",
-    "telegram": "https://t.me/ahmad_sharifi_peace"
+    "links": [
+        {
+            "name": "telegram",
+            "url": "https://t.me/@ahmad_sharifi_peace"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/AhmadiSharifi"
+        }
+    ],
+    "tags": [
+        "synthetics"
+    ]
 }
