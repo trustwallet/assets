@@ -1,11 +1,14 @@
 {
-  "name": "BotCoinAi",
-  "type": "POLYGON",
-  "symbol": "BOT",
-  "decimals": 18,
-  "description": "BotCoinAi is an AI-powered decentralized token designed for smart Web3 automation.",
-  "website": "https://botcoin.sbs",
-  "explorer": "https://polygonscan.com/token/0x800c1e8144639e186ECBDB834D93797956287107",
-  "status": "active",
-  "id": "0x800c1e8144639e186ECBDB834D93797956287107"
+    "name": "BotCoinAi",
+    "symbol": "BOT",
+    "type": "POLYGON",
+    "decimals": 18,
+    "description": "BotCoinAi is an experimental AI-powered token for gamified airdrops.",
+    "website": "https://botcoin.sbs",
+    "explorer": "https://polygonscan.com/token/0x800c1e8144639e186ECBDB834D93797956287107",
+    "links": {
+        "website": "https://botcoin.sbs",
+        "telegram": "https://t.me/BotCooinAi"
+    },
+    "tags": ["utility-token"]
 }
