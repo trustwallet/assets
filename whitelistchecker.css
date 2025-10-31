@@ -1,0 +1,189 @@
+/* NOTE: This CSS file provides a complete, responsive design.
+   Developers should customize colors, fonts, and shadows to match their project's branding. */
+
+/* Presale Live Banner Styles */
+.presale-banner {
+    background: linear-gradient(90deg, #00B2A9, #00D9CC); /* Example: a vibrant green */
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 0 auto 2.5rem auto;
+    max-width: 400px;
+    box-shadow: 0 5px 20px rgba(0, 217, 204, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: live-glow 1.5s infinite;
+}
+
+.live-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin-right: 10px;
+    box-shadow: 0 0 10px #ffffff;
+}
+
+@keyframes live-glow {
+    0% { box-shadow: 0 5px 20px rgba(0, 217, 204, 0.3); transform: scale(1); }
+    50% { box-shadow: 0 8px 30px rgba(0, 217, 204, 0.5); transform: scale(1.03); }
+    100% { box-shadow: 0 5px 20px rgba(0, 217, 204, 0.3); transform: scale(1); }
+}
+
+/* Language Selector Styles */
+.language-selector-container {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.language-selector-container label {
+    font-weight: 600;
+    color: #D1D5DB;
+    margin-right: 10px;
+}
+#language-select {
+    background-color: #1F2937;
+    color: #D1D5DB;
+    border: 1px solid #374151;
+    border-radius: 8px;
+    padding: 0.5rem 0.8rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+#language-select:focus {
+    outline: none;
+    border-color: #5865F2; /* Example focus color */
+}
+
+/* General Page Container */
+.whitelist-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.page-header {
+    margin-bottom: 2rem;
+}
+/* NOTE: The 'hero-title' and 'info-title-gradient' classes likely come from your global CSS.
+   If not, you will need to style them here. */
+.hero-title { font-size: 2.5rem; font-weight: bold; }
+.hero-title span { color: #00D9CC; }
+.info-title-gradient { font-size: 1.5rem; font-weight: bold; color: #00D9CC; }
+
+
+/* Statistics Box Styles */
+.stats-container {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto 2.5rem auto;
+}
+.stat-item {
+    flex: 1;
+    padding: 1.2rem 1rem;
+    border-radius: 0.75rem;
+    text-align: center;
+    color: white;
+    transition: transform 0.2s ease-in-out;
+}
+.stat-item:hover { transform: translateY(-5px); }
+.stat-accepted { background: linear-gradient(135deg, #00B2A9, #00D9CC); box-shadow: 0 4px 15px rgba(0, 217, 204, 0.2); }
+.stat-rejected { background: linear-gradient(135deg, #ED4245, #FF5C5F); box-shadow: 0 4px 15px rgba(237, 66, 69, 0.2); }
+.stat-number { font-size: 2.5rem; font-weight: 700; line-height: 1; }
+.stat-label { margin-top: 0.5rem; font-size: 0.9rem; font-weight: 500; }
+
+/* Info Panel Styles */
+.application-info-box {
+    text-align: left;
+    margin: 2.5rem auto;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    background: #23272A; /* Dark theme color */
+    border: 1px solid #2C2F33;
+    color: #e2e2e2;
+    line-height: 1.7;
+}
+.application-info-box h4 { font-size: 1.2rem; margin-top: 1rem; margin-bottom: 0.75rem; }
+.application-info-box ul { list-style: none; padding-left: 0; }
+.application-info-box li { margin-bottom: 0.5rem; }
+.application-info-box .icon { margin-right: 10px; }
+.warning-text { font-weight: bold; color: #FAA61A; /* Warning color */ }
+
+/* Wallet Query and List Sections */
+.list-section { margin-bottom: 2.5rem; }
+.check-section { margin-top: 2.5rem; }
+.input-group { display: flex; gap: 1rem; margin-bottom: 1rem; max-width: 700px; margin-left: auto; margin-right: auto; }
+#wallet-input {
+    flex-grow: 1; padding: 0.85rem 1.2rem; font-size: 1rem; color: #ffffff;
+    background-color: #2C2F33; border: 2px solid #4F545C; border-radius: 0.75rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+#wallet-input:focus { outline: none; border-color: #5865F2; box-shadow: 0 0 15px 3px rgba(88, 101, 242, 0.25); }
+
+/* Message Box Styles */
+.message-box { margin: 1.5rem auto; padding: 1rem; border-radius: 0.75rem; font-weight: 600; max-width: 700px; font-size: 1.1rem; }
+.message-box.success { background-color: rgba(3, 166, 166, 0.15); color: #00D9CC; border: 1px solid rgba(3, 166, 166, 0.4); }
+.message-box.error { background-color: rgba(237, 66, 69, 0.15); color: #ED4245; border: 1px solid rgba(237, 66, 69, 0.4); }
+.message-box.info { background-color: rgba(88, 101, 242, 0.15); color: #5865F2; border: 1px solid rgba(88, 101, 242, 0.4); }
+
+/* Table Styles */
+.table-wrapper { overflow-x: auto; background: #23272A; border-radius: 1rem; padding: 0.5rem; border: 1px solid #2C2F33; margin-top: 1.5rem; }
+table { width: 100%; border-collapse: collapse; color: #D1D5DB; }
+th, td { padding: 1rem 1.2rem; text-align: left; border-bottom: 1px solid #2C2F33; white-space: nowrap; }
+th { font-size: 1rem; color: #00D9CC; }
+td:first-child { font-family: 'Courier New', Courier, monospace; color: #FAA61A; }
+tr:last-child td { border-bottom: none; }
+
+/* Button Styles */
+.cta-button {
+    background: #00B2A9; color: white; padding: 0.75rem 1.5rem; border-radius: 0.75rem;
+    font-weight: bold; text-decoration: none; font-size: 1rem; transition: all 0.3s ease;
+    border: none; cursor: pointer;
+}
+.cta-button:hover { background: #008D86; transform: scale(1.05); }
+.cta-button.danger { background: #ED4245; }
+.cta-button.danger:hover { background: #BF3638; }
+
+/* Form Link Section */
+.whitelist-link-container { padding: 2rem; background-color: #23272A; border-radius: 1rem; }
+.whitelist-link-text { font-size: 1.1rem; color: #D1D5DB; margin-bottom: 1rem; }
+.cta-button.form-link { background: #5865F2; }
+.cta-button.form-link:hover { background: #4752C4; }
+
+/* Promotional Box Styles */
+.promo-box {
+    margin-top: 3rem; padding: 1.5rem 2rem; border: 2px solid #FAA61A; border-radius: 1rem;
+    background: linear-gradient(135deg, rgba(35, 39, 42, 0.8), rgba(44, 47, 51, 0.8));
+    backdrop-filter: blur(5px); box-shadow: 0 0 25px rgba(250, 166, 26, 0.2); text-align: center;
+}
+.promo-title { font-size: 1.8rem; font-weight: 700; color: #FAA61A; margin: 0 0 1rem 0; text-transform: uppercase; letter-spacing: 1px; }
+.promo-text { font-size: 1.1rem; color: #D1D5DB; line-height: 1.6; margin: 0; }
+
+/* RTL Language Support */
+.whitelist-container.rtl { direction: rtl; text-align: right; }
+.whitelist-container.rtl .application-info-box,
+.whitelist-container.rtl th,
+.whitelist-container.rtl td { text-align: right; }
+.whitelist-container.rtl .icon { margin-right: 0; margin-left: 10px; }
+.whitelist-container.rtl .live-dot { margin-right: 0; margin-left: 10px; }
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .hero-title { font-size: 1.8rem !important; }
+    .input-group { flex-direction: column; }
+    .stats-container { flex-direction: column; }
+    .stat-number { font-size: 2.2rem; }
+    .application-info-box { padding: 1rem; font-size: 0.95rem; }
+    .presale-banner { font-size: 1rem; max-width: 95%; padding: 0.6rem 1rem; }
+    .promo-box { padding: 1.2rem; }
+    .promo-title { font-size: 1.5rem; }
+    .promo-text { font-size: 1rem; }
+}
