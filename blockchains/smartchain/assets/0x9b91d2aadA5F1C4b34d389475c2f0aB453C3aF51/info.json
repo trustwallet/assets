@@ -1,36 +1,32 @@
 {
-  "name": "MindEcho Token",
-  "symbol": "MEC",
-  "type": "BEP20",
-  "decimals": 18,
-  "description": "MindEcho Token (MEC) ist der Community- und Utility-Token des Offene Gedanken / MindEcho Ökosystems – eine Verbindung aus Kreativität, Blockchain und gemeinschaftlicher Energie. Der Token wurde fair gelauncht (ohne Presale) und verfügt über Anti-Whale-Schutz (2 %), Burn- und Pause-Funktionen sowie ein transparentes Team-Vesting über einen verifizierten Smart Contract.",
-  "website": "https://mindecho.digital",
-  "explorer": "https://bscscan.com/token/0x9b91d2aadA5F1C4b34d389475c2f0aB453C3aF51",
-  "status": "active",
-  "id": "0x9b91d2aadA5F1C4b34d389475c2f0aB453C3aF51",
-  "links": [
-    {
-      "name": "twitter",
-      "url": "https://x.com/MindEchoToken"
-    },
-    {
-      "name": "telegram",
-      "url": "https://t.me/mindecho"
-    },
-    {
-      "name": "whitepaper",
-      "url": "https://mindecho.digital/whitepaper.pdf"
-    },
-    {
-      "name": "email",
-      "url": "mailto:hello@mindecho.digital"
-    }
-  ],
-  "tags": [
-    "community",
-    "utility",
-    "bep20",
-    "mindecho",
-    "offenegedanken"
-  ]
+    "name": "MindEcho Token",
+    "type": "BEP20",
+    "symbol": "MEC",
+    "decimals": 18,
+    "website": "https://mindecho.digital",
+    "description": "MindEcho Token (MEC) ist ein BEP-20-Token auf der BNB Smart Chain mit einem Gesamtvorrat von 1 Milliarde MEC. Der Token wurde am 31. Oktober 2025 als Fair Launch ohne Presale veröffentlicht und steht für Transparenz, Community-Stärkung und nachhaltige Entwicklung. Zu den zentralen Merkmalen zählen ein vesting-gesicherter Teamanteil, Anti-Whale-Mechanismen, Burn- und Pausierungsfunktionen sowie eine faire und nachvollziehbare Verteilung der Token-Allokationen für Liquidität, Marketing, Community-Belohnungen und Reserve.",
+    "explorer": "https://bscscan.com/token/0x9b91d2aadA5F1C4b34d389475c2f0aB453C3aF51",
+    "status": "active",
+    "id": "0x9b91d2aadA5F1C4b34d389475c2f0aB453C3aF51",
+    "links": [
+        {
+            "name": "x",
+            "url": "https://x.com/MindEchoToken"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/mindechotoken"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.gg/KAJ5znXFCx"
+        },
+        {
+            "name": "facebook",
+            "url": "https://www.facebook.com/MindEchoToken"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
 }
