@@ -1,0 +1,27 @@
+{
+  "name": "Bitcoin Bridged ZED20",
+  "symbol": "BTC.z",
+  "type": "BEP20",
+  "decimals": 18,
+  "chainId": 56,
+  "contractAddress": "0xB338B6306699a53aA1804FD21A3A44e48b57018E",
+  "website": "https://www.zedscan.net",
+  "description": "BTC.z (Bitcoin Bridged ZED20) is a BEP-20 wrapped version of Bitcoin bridged to Binance Smart Chain via the ZED20 protocol. It enables users to interact with BSC DeFi applications while maintaining Bitcoin-backed value.",
+  "explorer": "https://bscscan.com/token/0xB338B6306699a53aA1804FD21A3A44e48b57018E",
+  "maxSupply": "1000000000000",
+  "status": "active",
+  "tags": [
+    "wrapped",
+    "bridge",
+    "bitcoin",
+    "bep20"
+  ],
+  "links": {
+    "website": "https://www.zedscan.net",
+    "explorer": "https://bscscan.com/token/0xB338B6306699a53aA1804FD21A3A44e48b57018E"
+  },
+  "metadata": {
+    "displayDecimals": 18,
+    "displayTicker": "BTC.z"
+  }
+}
