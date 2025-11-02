@@ -1,32 +1,20 @@
 {
-  "name": "Real Utility Stable Dollar",
-  "symbol": "RUSD",
-  "type": "BEP20",
-  "decimals": 18,
-  "chainId": 56,
-  "network": "Binance Smart Chain Mainnet",
-  "address": "0x0F08b7420E8c71992e26109264c6e16c5Af25a1c",
-  "website": "https://rusdminting.uk/",
-  "description": "RUSD (Real Utility Stable Dollar) is a decentralized, asset-backed stablecoin built to deliver true financial utility, transparency, and stability across blockchain ecosystems. Designed for real-world use, RUSD enables seamless payments, DeFi participation, trading, and remittance without volatility risk.",
-  "logoURI": "https://ik.imagekit.io/xucvuI65s/rusd_logo.svg",
-  "tags": [
-    "stablecoin",
-    "defi",
-    "payments",
-    "utility"
-  ],
-  "links": {
-    "email": "rusdminting8@gmail.com",
-    "github": "",
-    "telegram": "",
-    "twitter": "",
-    "medium": "",
-    "whitepaper": ""
-  },
-  "supply": {
-    "type": "mintable-burnable",
-    "maxSupply": "Unlimited",
-    "mintAuthority": "Contract Owner (0x8315CA695913898900F41c1d10defC86E2365078)",
-    "burnAuthority": "Contract Owner (via burn function)"
-  }
+    "name": "Real Utility Stable Dollar",
+    "type": "BEP20",
+    "symbol": "RUSD",
+    "decimals": 18,
+    "website": "https://rusdminting.uk/",
+    "description": "RUSD is a decentralized, asset-backed stablecoin designed to provide transparency, stability, and real-world utility across DeFi ecosystems.\n",
+    "explorer": "https://bscscan.com/token/0x0F08b7420E8c71992e26109264c6e16c5Af25a1c",
+    "status": "active",
+    "id": "0x0F08b7420E8c71992e26109264c6e16c5Af25a1c",
+    "links": [
+        {
+            "name": "whitepaper",
+            "url": "https://rusdminting.uk/rusd_whitepaper.pdf"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
 }
