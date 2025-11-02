@@ -1,0 +1,25 @@
+module.exports = {
+  chain: "smartchain",
+  address: "0xBb7e20348fCFD959e314747873b41d51Ef1f3474",
+  name: "Tether USD",
+  symbol: "USDT",
+  type: "BEP20",
+  decimals: 18,
+  description:
+    "Tether USD (USDT) is a stable digital token pegged to the US Dollar, deployed on the Binance Smart Chain (BEP20).",
+  website: "https://tether.to/",
+  explorer:
+    "https://bscscan.com/token/0xBb7e20348fCFD959e314747873b41d51Ef1f3474",
+  status: "active",
+  id: "0xBb7e20348fCFD959e314747873b41d51Ef1f3474",
+  links: {
+    twitter: "https://twitter.com/Tether_to",
+    github: "https://github.com/tether",
+    telegram: "https://t.me/tether_to",
+    source_code:
+      "https://bscscan.com/token/0xBb7e20348fCFD959e314747873b41d51Ef1f3474#code",
+    email: "tethertousdt@gmail.com"
+  },
+  tags: ["stablecoin"]
+};
+
