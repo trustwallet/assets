@@ -41,6 +41,7 @@ validators_settings:
       - ".golangci.yml"
       - "Makefile"
       - "bin"
+      - "spam_assets"
     skip_files:
       - "node_modules"
     skip_dirs:
