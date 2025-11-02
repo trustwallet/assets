@@ -1,0 +1,43 @@
+{{define "forum"}}
+{{template "layout" .}}
+{{end}}
+
+{{define "title"}}Governance Forum - Bitcoin Real Token{{end}}
+{{define "content"}}
+<section class="page-header">
+    <h1>Governance Forum</h1>
+    <p class="lede">Participate in policy, collateral management, and roadmap discussions for Bitcoin Real Token.</p>
+</section>
+
+<section class="forum-grid">
+    {{range .Forum.Categories}}
+    <article class="forum-card">
+        <header>
+            <h2>{{.Name}}</h2>
+            <p class="description">{{.Description}}</p>
+        </header>
+        <ul>
+            {{range .Topics}}
+            <li>
+                <a href="{{.URL}}" target="_blank" rel="noopener">{{.Title}}</a>
+                <p class="meta">Last activity {{formatRelative .LastActivity}} - {{.Posts}} posts</p>
+            </li>
+            {{end}}
+        </ul>
+        <footer>
+            <a class="cta" href="{{.CreateURL}}" target="_blank" rel="noopener">Start a new topic</a>
+        </footer>
+    </article>
+    {{end}}
+</section>
+
+<section class="forum-guidelines">
+    <h2>Participation Guidelines</h2>
+    <ol>
+        <li>Authenticate with a wallet holding at least 1 BRT to propose policy or collateral changes.</li>
+        <li>Share reproducible proof when challenging supply figures or reserve balances.</li>
+        <li>Keep discussions professional; security disclosures should go to <a href="mailto:security@bitcoinrealtoken.org">security@bitcoinrealtoken.org</a>.</li>
+        <li>Use the <em>Integrations</em> category for technical support and API requests.</li>
+    </ol>
+</section>
+{{end}}

@@ -1,0 +1,33 @@
+{
+    "name": "Bitcoin Real Token",
+    "symbol": "BRT",
+    "type": "BRC20",
+    "decimals": 18,
+    "description": "Bitcoin Real Token (BRT) is a collateral-backed BRC-20 asset on Bitcoin with minting, transfer, and redemption flows anchored to provable BTC reserves. Supply is capped at 21,000,000 BRT with 5,000,000 BRT currently in circulation, and every token corresponds to locked collateral held under transparent multi-signature control.",
+    "website": "https://bitcoinrealtoken.org",
+    "explorer": "https://unisat.io/brc20/brt",
+    "status": "active",
+    "id": "brt",
+    "links": [
+        {
+            "name": "x",
+            "url": "https://x.com/BitcoinRealToken"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/bitcoinrealtoken"
+        },
+        {
+            "name": "docs",
+            "url": "https://github.com/trustwallet/assets/blob/master/.github/bitcoin-real-token.md"
+        },
+        {
+            "name": "blog",
+            "url": "https://bitcoinrealtoken.org/proof-of-reserves"
+        },
+        {
+            "name": "forum",
+            "url": "https://forum.bitcoinrealtoken.org"
+        }
+    ]
+}

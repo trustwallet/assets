@@ -1,0 +1,47 @@
+{
+    "updated_at": "2025-11-02T00:00:00Z",
+    "collateral_ratio": 1.05,
+    "max_supply": 21000000,
+    "circulating_supply": 5000000,
+    "btc_locked": 5250.0,
+    "reserve_addresses": [
+        {
+            "address": "bc1qn7k3z6l4dq9z70m36v5y5vhwjttep7g3l6rv4c",
+            "description": "Primary reserve multisig",
+            "balance_btc": 5250.0,
+            "last_proof_tx": "6d3f8aa3d8cd8b0a5c2f71f8c563789f4a0c1f3a1b0c5d2e6f1c4a9b7d8e5f6"
+        }
+    ],
+    "attestations": [
+        {
+            "id": "2025-10-28-weekly",
+            "url": "https://github.com/bitcoinrealtoken/proof-of-reserves/blob/main/2025-10-28.pdf",
+            "hash": "0x2a3b1c4d5e6f708192a3b4c5d6e7f8091a2b3c4d5e6f708192a3b4c5d6e7f809",
+            "issued_at": "2025-10-28T12:00:00Z"
+        },
+        {
+            "id": "2025-10-21-weekly",
+            "url": "https://github.com/bitcoinrealtoken/proof-of-reserves/blob/main/2025-10-21.pdf",
+            "hash": "0x1f2e3d4c5b6a7988a9b0c1d2e3f405162738495a6b7c8d9e0f1a2b3c4d5e6f70",
+            "issued_at": "2025-10-21T12:00:00Z"
+        }
+    ],
+    "pending_mints": [
+        {
+            "type": "mint",
+            "amount": 200000,
+            "txid": "b6e3c7d9012a4f5b6d7c8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8090",
+            "description": "Batch #12 approved by governance",
+            "timestamp": "2025-10-30T18:00:00Z"
+        }
+    ],
+    "recent_burns": [
+        {
+            "type": "burn",
+            "amount": 5000,
+            "txid": "c1d2e3f4a5b6c7d8e9f00112233445566778899aabbccddeeff0011223344556",
+            "description": "Custodial rebalance",
+            "timestamp": "2025-10-25T15:30:00Z"
+        }
+    ]
+}

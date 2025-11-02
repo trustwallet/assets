@@ -1,0 +1,124 @@
+{{define "proof"}}
+{{template "layout" .}}
+{{end}}
+
+{{define "title"}}Proof of Reserves - Bitcoin Real Token{{end}}
+{{define "content"}}
+<section class="page-header">
+    <h1>Proof of Reserves</h1>
+    <p class="lede">Transparent collateral monitoring for the Bitcoin Real Token (BRT) supply.</p>
+</section>
+
+<section class="stats-grid">
+    <article>
+        <h2>Circulating Supply</h2>
+        <p class="stat-value">{{formatNumber .Proof.CirculatingSupply 0}} BRT</p>
+        <p class="stat-meta">Updated {{formatRelative .Proof.UpdatedAt}}</p>
+    </article>
+    <article>
+        <h2>Maximum Supply</h2>
+        <p class="stat-value">{{formatNumber .Proof.MaxSupply 0}} BRT</p>
+        <p class="stat-meta">Governance capped</p>
+    </article>
+    <article>
+        <h2>BTC Locked</h2>
+        <p class="stat-value">{{formatNumber .Proof.BTCLocked 2}} BTC</p>
+        <p class="stat-meta">Across reserve wallets</p>
+    </article>
+    <article>
+        <h2>Collateral Ratio</h2>
+        <p class="stat-value">{{formatPercent .Proof.CollateralRatio}}</p>
+        <p class="stat-meta">Minimum threshold: 100%</p>
+    </article>
+</section>
+
+<section>
+    <h2>Reserve Addresses</h2>
+    <div class="table-scroll">
+        <table>
+            <thead>
+            <tr>
+                <th>Address</th>
+                <th>Description</th>
+                <th>Balance (BTC)</th>
+                <th>Last Proof TX</th>
+            </tr>
+            </thead>
+            <tbody>
+            {{range .Proof.ReserveAddresses}}
+            <tr>
+                <td><code>{{.Address}}</code></td>
+                <td>{{.Description}}</td>
+                <td>{{formatNumber .BalanceBTC 5}}</td>
+                <td><code class="truncate">{{.LastProofTx}}</code></td>
+            </tr>
+            {{end}}
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<section>
+    <h2>Attestations</h2>
+    <ul class="card-list">
+        {{range .Proof.Attestations}}
+        <li class="card">
+            <div class="card-header">
+                <strong>{{.ID}}</strong>
+                <span class="badge">{{formatDate .IssuedAt}}</span>
+            </div>
+            <div class="card-body">
+                <p><span class="label">Document:</span> <a href="{{.URL}}" target="_blank" rel="noopener">{{.URL}}</a></p>
+                <p><span class="label">Hash:</span> <code class="truncate">{{.Hash}}</code></p>
+            </div>
+        </li>
+        {{end}}
+    </ul>
+</section>
+
+<section class="two-column">
+    <div>
+        <h2>Pending Mints</h2>
+        {{if .Proof.PendingMints}}
+        <ul class="timeline">
+            {{range .Proof.PendingMints}}
+            <li>
+                <span class="timestamp">{{formatDateTime .Timestamp}}</span>
+                <div>
+                    <strong>{{title .Type}} {{formatNumber .Amount 0}} BRT</strong>
+                    <p>{{.Description}}</p>
+                    <code class="truncate">{{.TxID}}</code>
+                </div>
+            </li>
+            {{end}}
+        </ul>
+        {{else}}
+        <p>No pending mint operations.</p>
+        {{end}}
+    </div>
+    <div>
+        <h2>Recent Burns</h2>
+        {{if .Proof.RecentBurns}}
+        <ul class="timeline">
+            {{range .Proof.RecentBurns}}
+            <li>
+                <span class="timestamp">{{formatDateTime .Timestamp}}</span>
+                <div>
+                    <strong>{{title .Type}} {{formatNumber .Amount 0}} BRT</strong>
+                    <p>{{.Description}}</p>
+                    <code class="truncate">{{.TxID}}</code>
+                </div>
+            </li>
+            {{end}}
+        </ul>
+        {{else}}
+        <p>No burns recorded in the last 30 days.</p>
+        {{end}}
+    </div>
+</section>
+
+<section>
+    <h2>API</h2>
+    <p>Programmatic access is available at <code>/api/proof-of-reserves</code>. The endpoint returns the same dataset in JSON format.</p>
+</section>
+{{end}}

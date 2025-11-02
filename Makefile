@@ -20,8 +20,11 @@ GOFMT_FILES?=$$(find . -name '*.go' | grep -v vendor)
 all: fmt lint test
 
 build:
+	@mkdir -p bin
 	@echo "  >  Building main.go to bin/assets"
 	go build $(LDFLAGS) -o bin/assets ./cmd
+	@echo "  >  Building brtserver to bin/brtserver"
+	go build -o bin/brtserver ./cmd/brtserver
 
 test:
 	@echo "  >  Running unit tests"
@@ -54,3 +57,8 @@ add-tokenlist: build
 
 add-tokenlist-extended: build
 	bin/assets add-tokenlist-extended $(asset_id)
+
+.PHONY: brt-serve
+brt-serve:
+	@echo "  >  Serving Bitcoin Real Token dashboard on http://localhost:8080"
+	go run ./cmd/brtserver --listen :8080

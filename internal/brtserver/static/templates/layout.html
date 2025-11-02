@@ -1,0 +1,50 @@
+{{define "layout"}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{block "title" .}}Bitcoin Real Token{{end}}</title>
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<header class="brt-header">
+    <div class="container">
+        <div class="brand">
+            <img src="/assets/favicon.svg" alt="BRT" width="32" height="32">
+            <div>
+                <strong>Bitcoin Real Token</strong>
+                <span class="tagline">Collateral-backed BRC-20 on Bitcoin</span>
+            </div>
+        </div>
+        <nav>
+            <a href="/proof-of-reserves">Proof of Reserves</a>
+            <a href="/forum">Governance Forum</a>
+            <a href="https://github.com/bitcoinrealtoken" rel="noopener" target="_blank">GitHub</a>
+        </nav>
+    </div>
+</header>
+<main class="container">
+    {{block "content" .}}{{end}}
+</main>
+<footer class="brt-footer">
+    <div class="container footer-grid">
+        <div>
+            <strong>Need help?</strong>
+            <p>Email <a href="mailto:security@bitcoinrealtoken.org">security@bitcoinrealtoken.org</a></p>
+        </div>
+        <div>
+            <strong>Integrations</strong>
+            <p><a href="https://github.com/bitcoinrealtoken/integrations" target="_blank" rel="noopener">Open an issue on GitHub</a></p>
+        </div>
+        <div>
+            <strong>Stay updated</strong>
+            <p><a href="https://x.com/BitcoinRealToken" target="_blank" rel="noopener">Follow on X</a></p>
+        </div>
+    </div>
+    <div class="container copyright">&copy; {{.Now.Year}} Bitcoin Real Token Reserve Council</div>
+</footer>
+</body>
+</html>
+{{end}}

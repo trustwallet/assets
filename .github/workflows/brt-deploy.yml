@@ -1,0 +1,116 @@
+name: Bitcoin Real Token Deploy
+
+on:
+  workflow_dispatch:
+    inputs:
+      circulating_supply:
+        description: "Updated circulating supply"
+        required: false
+        type: string
+      btc_locked:
+        description: "Total BTC locked"
+        required: false
+        type: string
+      collateral_ratio:
+        description: "Collateral ratio (e.g. 1.05)"
+        required: false
+        type: string
+  push:
+    paths:
+      - "internal/brtserver/data/latest.json"
+      - ".github/workflows/brt-deploy.yml"
+      - ".github/scripts/update_brt_state.py"
+      - "cmd/brtserver/**"
+      - "internal/brtserver/**"
+      - ".github/infra/terraform/**"
+
+env:
+  AWS_REGION: us-east-1
+  TF_VAR_region: us-east-1
+
+jobs:
+  update-state:
+    name: Refresh reserve snapshot
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Update snapshot
+        env:
+          BRT_CIRCULATING_SUPPLY: ${{ inputs.circulating_supply || '' }}
+          BRT_BTC_LOCKED: ${{ inputs.btc_locked || '' }}
+          BRT_COLLATERAL_RATIO: ${{ inputs.collateral_ratio || '' }}
+          BRT_PIPELINE_TRIGGERED: github-actions
+        run: |
+          python3 .github/scripts/update_brt_state.py
+
+      - name: Commit snapshot (if changed)
+        run: |
+          if ! git diff --quiet -- internal/brtserver/data/latest.json; then
+            git config user.name "github-actions"
+            git config user.email "actions@github.com"
+            git commit -am "chore: update BRT reserve snapshot"
+            git push
+          else
+            echo "No state changes detected"
+          fi
+
+  deploy:
+    name: Build and deploy
+    needs: update-state
+    runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: https://bitcoinrealtoken.org/proof-of-reserves
+    permissions:
+      id-token: write
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_IAM_ROLE_ARN }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: "1.24"
+
+      - name: Build container image
+        run: |
+          docker build -t ${{ secrets.ECR_REPO }}:${{ github.sha }} -f .github/infra/docker/Dockerfile .
+
+      - name: Login to Amazon ECR
+        uses: aws-actions/amazon-ecr-login@v2
+
+      - name: Push image
+        run: |
+          docker push ${{ secrets.ECR_REPO }}:${{ github.sha }}
+
+      - name: Terraform init
+        working-directory: .github/infra/terraform
+        run: terraform init
+
+      - name: Terraform apply
+        working-directory: .github/infra/terraform
+        env:
+          TF_VAR_container_image: ${{ secrets.ECR_REPO }}:${{ github.sha }}
+          TF_VAR_vpc_id: ${{ secrets.AWS_VPC_ID }}
+          TF_VAR_public_subnet_ids: ${{ secrets.AWS_PUBLIC_SUBNETS }}
+          TF_VAR_private_subnet_ids: ${{ secrets.AWS_PRIVATE_SUBNETS }}
+          TF_VAR_hosted_zone_id: ${{ secrets.AWS_HOSTED_ZONE_ID }}
+          TF_VAR_primary_domain: bitcoinrealtoken.org
+          TF_VAR_forum_domain: forum.bitcoinrealtoken.org
+          TF_VAR_ecs_execution_role_arn: ${{ secrets.AWS_ECS_EXEC_ROLE_ARN }}
+          TF_VAR_ecs_task_role_arn: ${{ secrets.AWS_ECS_TASK_ROLE_ARN }}
+          TF_VAR_data_path: ${{ secrets.BRT_DATA_PATH || "" }}
+        run: terraform apply -auto-approve
