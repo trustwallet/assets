@@ -3,9 +3,16 @@
   "symbol": "DAVC",
   "type": "BEP20",
   "decimals": 18,
-  "description": "DavinCoin (DAVC) is a BEP-20 utility token for a modular on-chain ecosystem (staking, insurance, and additional modules).",
+  "description": "DavinCoin (DAVC) ist ein BEP-20 Utility-Token für ein modulares On-Chain-Ökosystem (Staking, Insurance, zusätzliche Module).",
   "website": "https://www.davincoin.com",
-  "explorer": "https://bscscan.com/token/0xfc419fc9dd8aEa4B74e0a9CEB2F6463E48a33fcf",
+  "explorer": "https://bscscan.com/token/0xfC419fC9d8d8aEa4B74e0a9CEB2F6463E48a33fcf",
   "status": "active",
-  "id": "0xfc419fc9dd8aEa4B74e0a9CEB2F6463E48a33fcf"
+  "id": "0xfC419fC9d8d8aEa4B74e0a9CEB2F6463E48a33fcf",
+  "links": [
+    { "name": "twitter",   "url": "https://twitter.com/davincoin" },
+    { "name": "telegram",  "url": "https://t.me/davincoin" },
+    { "name": "github",    "url": "https://github.com/DavinCoin" },
+    { "name": "medium",    "url": "https://medium.com/@davincoin" }
+  ],
+  "tags": ["defi", "utility"]
 }
