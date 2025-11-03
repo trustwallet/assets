@@ -2,9 +2,11 @@ package external
 
 import (
 	"fmt"
+	"math/big"
 	"regexp"
 	"strconv"
 	"strings"
+	"time"
 
 	"github.com/trustwallet/assets-go-libs/http"
 )
@@ -16,9 +18,23 @@ var (
 )
 
 type TokenInfo struct {
-	Symbol       string
-	Decimals     int
-	HoldersCount int
+	Symbol         string
+	Name           string
+	Decimals       int
+	HoldersCount   int
+	TotalSupply    *big.Int
+	TransfersCount int
+	Price          *TokenPrice
+}
+
+type TokenPrice struct {
+	Rate            float64
+	Diff            float64
+	Diff7d          float64
+	MarketCapUSD    float64
+	AvailableSupply float64
+	Volume24h       float64
+	UpdatedAt       time.Time
 }
 
 func GetTokenInfo(tokenID, tokentType string) (*TokenInfo, error) {
