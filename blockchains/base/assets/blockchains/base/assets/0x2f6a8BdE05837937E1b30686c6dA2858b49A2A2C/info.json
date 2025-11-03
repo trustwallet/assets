@@ -1,1 +1,18 @@
-
+{
+  "name": "MellGameTest",
+  "symbol": "MLGT",
+  "type": "ERC20",
+  "decimals": 18,
+  "description": "Тестовый токен игрового проекта MellstroyGame, созданный для проверки интеграции смарт-контрактов и игровых функций.",
+  "website": "https://github.com/KozakFN/mellgametest",
+  "explorer": "https://basescan.org/token/0x2f6a8BdE05837937E1b30686c6dA2858b49A2A2C",
+  "status": "active",
+  "id": "0x2f6a8BdE05837937E1b30686c6dA2858b49A2A2C",
+  "links": [
+    {
+      "name": "github",
+      "url": "https://github.com/KozakFN/mellgametest"
+    }
+  ],
+  "tags": ["game", "test", "token"]
+}
