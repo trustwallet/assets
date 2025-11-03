@@ -51,6 +51,10 @@ type rawProof struct {
 	MaxSupply         float64          `json:"max_supply"`
 	CirculatingSupply float64          `json:"circulating_supply"`
 	BTCLocked         float64          `json:"btc_locked"`
+	BTCPriceUSD       float64          `json:"btc_price_usd"`
+	BRTMarketPriceUSD float64          `json:"brt_market_price_usd"`
+	LiquidityDepthUSD float64          `json:"liquidity_depth_usd"`
+	TreasuryYieldBps  int              `json:"treasury_yield_bps"`
 	ReserveAddresses  []ReserveAddress `json:"reserve_addresses"`
 	Attestations      []Attestation    `json:"attestations"`
 	PendingMints      []SupplyEvent    `json:"pending_mints"`
@@ -64,6 +68,15 @@ type ProofOfReserves struct {
 	MaxSupply         float64
 	CirculatingSupply float64
 	BTCLocked         float64
+	BTCPriceUSD       float64
+	BRTMarketPriceUSD float64
+	NAVPerTokenUSD    float64
+	PremiumDiscount   float64
+	MarketCapUSD      float64
+	FullyDilutedUSD   float64
+	CollateralValue   float64
+	LiquidityDepthUSD float64
+	TreasuryYieldBps  int
 	ReserveAddresses  []ReserveAddress
 	Attestations      []Attestation
 	PendingMints      []SupplyEvent
@@ -257,6 +270,18 @@ func loadState(path string) error {
 		return fmt.Errorf("parse updated_at: %w", err)
 	}
 
+	navPerToken := 0.0
+	if raw.CirculatingSupply > 0 {
+		navPerToken = (raw.BTCLocked * raw.BTCPriceUSD) / raw.CirculatingSupply
+	}
+	premiumDiscount := 0.0
+	if navPerToken > 0 {
+		premiumDiscount = (raw.BRTMarketPriceUSD - navPerToken) / navPerToken
+	}
+	marketCap := raw.BRTMarketPriceUSD * raw.CirculatingSupply
+	fullyDiluted := raw.BRTMarketPriceUSD * raw.MaxSupply
+	collateralValue := raw.BTCLocked * raw.BTCPriceUSD
+
 	stateMu.Lock()
 	defer stateMu.Unlock()
 	state = ProofOfReserves{
@@ -265,6 +290,15 @@ func loadState(path string) error {
 		MaxSupply:         raw.MaxSupply,
 		CirculatingSupply: raw.CirculatingSupply,
 		BTCLocked:         raw.BTCLocked,
+		BTCPriceUSD:       raw.BTCPriceUSD,
+		BRTMarketPriceUSD: raw.BRTMarketPriceUSD,
+		NAVPerTokenUSD:    navPerToken,
+		PremiumDiscount:   premiumDiscount,
+		MarketCapUSD:      marketCap,
+		FullyDilutedUSD:   fullyDiluted,
+		CollateralValue:   collateralValue,
+		LiquidityDepthUSD: raw.LiquidityDepthUSD,
+		TreasuryYieldBps:  raw.TreasuryYieldBps,
 		ReserveAddresses:  cloneAddresses(raw.ReserveAddresses),
 		Attestations:      cloneAttestations(raw.Attestations),
 		PendingMints:      cloneEvents(raw.PendingMints),
@@ -302,6 +336,15 @@ func currentState() ProofOfReserves {
 		MaxSupply:         state.MaxSupply,
 		CirculatingSupply: state.CirculatingSupply,
 		BTCLocked:         state.BTCLocked,
+		BTCPriceUSD:       state.BTCPriceUSD,
+		BRTMarketPriceUSD: state.BRTMarketPriceUSD,
+		NAVPerTokenUSD:    state.NAVPerTokenUSD,
+		PremiumDiscount:   state.PremiumDiscount,
+		MarketCapUSD:      state.MarketCapUSD,
+		FullyDilutedUSD:   state.FullyDilutedUSD,
+		CollateralValue:   state.CollateralValue,
+		LiquidityDepthUSD: state.LiquidityDepthUSD,
+		TreasuryYieldBps:  state.TreasuryYieldBps,
 		ReserveAddresses:  cloneAddresses(state.ReserveAddresses),
 		Attestations:      cloneAttestations(state.Attestations),
 		PendingMints:      cloneEvents(state.PendingMints),
@@ -322,6 +365,64 @@ func getTemplates() *template.Template {
 			},
 			"formatPercent": func(v float64) string {
 				return fmt.Sprintf("%.2f%%", v*100)
+			},
+			"formatSignedPercent": func(v float64) string {
+				formatted := fmt.Sprintf("%.2f%%", v*100)
+				if v > 0 {
+					return "+" + formatted
+				}
+				return formatted
+			},
+			"formatCurrency": func(v float64, precision int) string {
+				// Helper to add thousand separators
+				addCommas := func(s string) string {
+					n := len(s)
+					if n <= 3 {
+						return s
+					}
+					var neg string
+					if s[0] == '-' {
+						neg = "-"
+						s = s[1:]
+						n--
+					}
+					// Find decimal point, if any
+					intPart := s
+					fracPart := ""
+					if dot := strings.Index(s, "."); dot != -1 {
+						intPart = s[:dot]
+						fracPart = s[dot:]
+					}
+					// Insert commas into intPart
+					var out []byte
+					for i, c := range intPart {
+						if i != 0 && (len(intPart)-i)%3 == 0 {
+							out = append(out, ',')
+						}
+						out = append(out, byte(c))
+					}
+					return neg + string(out) + fracPart
+				}
+
+				if precision == 0 {
+					// Round to nearest integer and format with commas
+					rounded := int64(v + 0.5)
+					if v < 0 {
+						rounded = int64(v - 0.5)
+					}
+					return "$" + addCommas(fmt.Sprintf("%d", rounded))
+				}
+				// Format with specified precision and commas
+				s := fmt.Sprintf("%.*f", precision, v)
+				// Remove trailing zeros and decimal if needed
+				if strings.Contains(s, ".") {
+					s = strings.TrimRight(s, "0")
+					s = strings.TrimRight(s, ".")
+				}
+				return "$" + addCommas(s)
+			},
+			"formatBPS": func(v int) string {
+				return fmt.Sprintf("%.2f%%", float64(v)/100.0)
 			},
 			"formatRelative": func(t time.Time) string {
 				if t.IsZero() {
@@ -442,6 +543,15 @@ func handleAPIProof(w http.ResponseWriter, r *http.Request) {
 		MaxSupply         float64          `json:"max_supply"`
 		CirculatingSupply float64          `json:"circulating_supply"`
 		BTCLocked         float64          `json:"btc_locked"`
+		BTCPriceUSD       float64          `json:"btc_price_usd"`
+		BRTMarketPriceUSD float64          `json:"brt_market_price_usd"`
+		NAVPerTokenUSD    float64          `json:"nav_per_token_usd"`
+		PremiumDiscount   float64          `json:"premium_discount"`
+		MarketCapUSD      float64          `json:"market_cap_usd"`
+		FullyDilutedUSD   float64          `json:"fully_diluted_value_usd"`
+		CollateralValue   float64          `json:"collateral_value_usd"`
+		LiquidityDepthUSD float64          `json:"liquidity_depth_usd"`
+		TreasuryYieldBps  int              `json:"treasury_yield_bps"`
 		ReserveAddresses  []ReserveAddress `json:"reserve_addresses"`
 		Attestations      []Attestation    `json:"attestations"`
 		PendingMints      []SupplyEvent    `json:"pending_mints"`
@@ -452,6 +562,15 @@ func handleAPIProof(w http.ResponseWriter, r *http.Request) {
 		MaxSupply:         snapshot.MaxSupply,
 		CirculatingSupply: snapshot.CirculatingSupply,
 		BTCLocked:         snapshot.BTCLocked,
+		BTCPriceUSD:       snapshot.BTCPriceUSD,
+		BRTMarketPriceUSD: snapshot.BRTMarketPriceUSD,
+		NAVPerTokenUSD:    snapshot.NAVPerTokenUSD,
+		PremiumDiscount:   snapshot.PremiumDiscount,
+		MarketCapUSD:      snapshot.MarketCapUSD,
+		FullyDilutedUSD:   snapshot.FullyDilutedUSD,
+		CollateralValue:   snapshot.CollateralValue,
+		LiquidityDepthUSD: snapshot.LiquidityDepthUSD,
+		TreasuryYieldBps:  snapshot.TreasuryYieldBps,
 		ReserveAddresses:  snapshot.ReserveAddresses,
 		Attestations:      snapshot.Attestations,
 		PendingMints:      snapshot.PendingMints,

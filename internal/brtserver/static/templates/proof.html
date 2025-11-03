@@ -32,6 +32,47 @@
     </article>
 </section>
 
+<section class="stats-grid">
+    <article>
+        <h2>Market Price</h2>
+        <p class="stat-value">{{formatCurrency .Proof.BRTMarketPriceUSD 2}}</p>
+        <p class="stat-meta">Derived from verified exchange venues</p>
+    </article>
+    <article>
+        <h2>NAV per Token</h2>
+        <p class="stat-value">{{formatCurrency .Proof.NAVPerTokenUSD 2}}</p>
+        <p class="stat-meta">Collateral value per circulating BRT</p>
+    </article>
+    <article>
+        <h2>Premium / Discount</h2>
+        <p class="stat-value">{{formatSignedPercent .Proof.PremiumDiscount}}</p>
+        <p class="stat-meta">Relative to collateral NAV</p>
+    </article>
+    <article>
+        <h2>Market Capitalization</h2>
+        <p class="stat-value">{{formatCurrency .Proof.MarketCapUSD 0}}</p>
+        <p class="stat-meta">Circulating supply x market price</p>
+    </article>
+</section>
+
+<section class="stats-grid">
+    <article>
+        <h2>Collateral Value</h2>
+        <p class="stat-value">{{formatCurrency .Proof.CollateralValue 0}}</p>
+        <p class="stat-meta">BTC reserves marked at {{formatCurrency .Proof.BTCPriceUSD 0}}/BTC</p>
+    </article>
+    <article>
+        <h2>Liquidity Depth</h2>
+        <p class="stat-value">{{formatCurrency .Proof.LiquidityDepthUSD 0}}</p>
+        <p class="stat-meta">Two-sided depth across primary venues</p>
+    </article>
+    <article>
+        <h2>Treasury Yield</h2>
+        <p class="stat-value">{{formatBPS .Proof.TreasuryYieldBps}}</p>
+        <p class="stat-meta">30d trailing net yield in basis points</p>
+    </article>
+</section>
+
 <section>
     <h2>Reserve Addresses</h2>
     <div class="table-scroll">
