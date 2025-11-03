@@ -1,15 +1,15 @@
 package service
 
 import (
-    "fmt"
-    "os"
+	"fmt"
+	"os"
 
-    "github.com/trustwallet/assets-go-libs/file"
-    "github.com/trustwallet/assets-go-libs/validation"
-    "github.com/trustwallet/assets/internal/processor"
-    "github.com/trustwallet/assets/internal/report"
+	"github.com/trustwallet/assets-go-libs/file"
+	"github.com/trustwallet/assets-go-libs/validation"
+	"github.com/trustwallet/assets/internal/processor"
+	"github.com/trustwallet/assets/internal/report"
 
-    log "github.com/sirupsen/logrus"
+	log "github.com/sirupsen/logrus"
 )
 
 type Service struct {
@@ -17,18 +17,25 @@ type Service struct {
 	processorService *processor.Service
 	reportService    *report.Service
 	paths            []string
-    reportFormat     string
-    reportOutput     string
+	reportFormat     string
+	reportOutput     string
 }
 
-func NewService(fs *file.Service, cs *processor.Service, rs *report.Service, paths []string, reportFormat string, reportOutput string) *Service {
+func NewService(
+	fs *file.Service,
+	cs *processor.Service,
+	rs *report.Service,
+	paths []string,
+	reportFormat string,
+	reportOutput string,
+) *Service {
 	return &Service{
 		fileService:      fs,
 		processorService: cs,
 		reportService:    rs,
-        paths:            paths,
-        reportFormat:     reportFormat,
-        reportOutput:     reportOutput,
+		paths:            paths,
+		reportFormat:     reportFormat,
+		reportOutput:     reportOutput,
 	}
 }
 
@@ -39,35 +46,35 @@ func (s *Service) RunJob(job func(*file.AssetFile)) {
 		job(f)
 	}
 
-    // Output report in requested format
-    if s.reportFormat == "json" {
-        data, err := s.reportService.BuildJSONReport()
-        if err != nil {
-            log.WithError(err).Fatal("failed to build JSON report")
-        }
+	// Output report in requested format.
+	if s.reportFormat == "json" {
+		data, err := s.reportService.BuildJSONReport()
+		if err != nil {
+			log.WithError(err).Fatal("failed to build JSON report")
+		}
 
-        if s.reportOutput != "" {
-            if err := os.WriteFile(s.reportOutput, data, 0o644); err != nil {
-                log.WithError(err).Fatal("failed to write JSON report to file")
-            }
-        } else {
-            // Print JSON to stdout only; error logs remain on stderr
-            fmt.Println(string(data))
-        }
+		if s.reportOutput != "" {
+			if err := os.WriteFile(s.reportOutput, data, 0o600); err != nil {
+				log.WithError(err).Fatal("failed to write JSON report to file")
+			}
+		} else {
+			// Print JSON to stdout only; error logs remain on stderr.
+			fmt.Println(string(data))
+		}
 
-        if s.reportService.IsFailed() {
-            os.Exit(1)
-        }
-        return
-    }
+		if s.reportService.IsFailed() {
+			os.Exit(1)
+		}
+		return
+	}
 
-    // Default text output via logger
-    reportMsg := s.reportService.GetReport()
-    if s.reportService.IsFailed() {
-        log.Fatal(reportMsg)
-    } else {
-        log.Info(reportMsg)
-    }
+	// Default text output via logger.
+	reportMsg := s.reportService.GetReport()
+	if s.reportService.IsFailed() {
+		log.Fatal(reportMsg)
+	} else {
+		log.Info(reportMsg)
+	}
 }
 
 func (s *Service) Check(f *file.AssetFile) {
@@ -116,14 +123,14 @@ func (s *Service) handleError(err error, info *file.AssetFile, valName string) {
 			"validation": valName,
 		}).Error(err)
 
-        s.reportService.AddErrorDetail(report.ErrorDetail{
-            Type:       fmt.Sprintf("%v", info.Type()),
-            Chain:      info.Chain().Handle,
-            Asset:      info.Asset(),
-            Path:       info.Path(),
-            Validation: valName,
-            Error:      err.Error(),
-        })
+		s.reportService.AddErrorDetail(report.ErrorDetail{
+			Type:       fmt.Sprintf("%v", info.Type()),
+			Chain:      info.Chain().Handle,
+			Asset:      info.Asset(),
+			Path:       info.Path(),
+			Validation: valName,
+			Error:      err.Error(),
+		})
 	}
 }
 

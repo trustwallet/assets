@@ -171,19 +171,17 @@ var (
 	}
 )
 
-// Run starts the HTTP server and blocks until the context is cancelled or an error occurs.
-func Run(ctx context.Context, cfg Config) error {
+func applyDefaults(cfg Config) Config {
 	if cfg.ListenAddr == "" {
 		cfg.ListenAddr = ":8080"
 	}
 	if cfg.ReloadInterval == 0 {
 		cfg.ReloadInterval = 30 * time.Second
 	}
+	return cfg
+}
 
-	if err := loadState(cfg.DataPath); err != nil {
-		return fmt.Errorf("load state: %w", err)
-	}
-
+func newMux() (*http.ServeMux, error) {
 	mux := http.NewServeMux()
 	mux.HandleFunc("/", handleRoot)
 	mux.HandleFunc("/proof-of-reserves", handleProof)
@@ -193,9 +191,71 @@ func Run(ctx context.Context, cfg Config) error {
 
 	assetsFS, err := fs.Sub(embeddedStatic, "static/public")
 	if err != nil {
-		return fmt.Errorf("prepare assets fs: %w", err)
+		return nil, fmt.Errorf("prepare assets fs: %w", err)
 	}
 	mux.Handle("/assets/", http.StripPrefix("/assets/", http.FileServer(http.FS(assetsFS))))
+
+	return mux, nil
+}
+
+func watchStateReload(ctx context.Context, dataPath string, interval time.Duration, errCh chan<- error) {
+	if dataPath == "" {
+		return
+	}
+
+	ticker := time.NewTicker(interval)
+	defer ticker.Stop()
+
+	for {
+		select {
+		case <-ctx.Done():
+			return
+		case <-ticker.C:
+			if err := loadState(dataPath); err != nil {
+				select {
+				case errCh <- fmt.Errorf("reload state: %w", err):
+				default:
+				}
+			}
+		}
+	}
+}
+
+func serveHTTP(srv *http.Server, errCh chan<- error) {
+	if err := srv.ListenAndServe(); err != nil && !errors.Is(err, http.ErrServerClosed) {
+		errCh <- err
+	}
+}
+
+func waitForShutdown(ctx context.Context, srv *http.Server, errCh <-chan error) error {
+	select {
+	case <-ctx.Done():
+		gracefulShutdown(srv)
+		return nil
+	case err := <-errCh:
+		gracefulShutdown(srv)
+		return err
+	}
+}
+
+func gracefulShutdown(srv *http.Server) {
+	shutdownCtx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
+	defer cancel()
+	_ = srv.Shutdown(shutdownCtx)
+}
+
+// Run starts the HTTP server and blocks until the context is canceled or an error occurs.
+func Run(ctx context.Context, cfg Config) error {
+	cfg = applyDefaults(cfg)
+
+	if err := loadState(cfg.DataPath); err != nil {
+		return fmt.Errorf("load state: %w", err)
+	}
+
+	mux, err := newMux()
+	if err != nil {
+		return err
+	}
 
 	srv := &http.Server{
 		Addr:    cfg.ListenAddr,
@@ -203,53 +263,14 @@ func Run(ctx context.Context, cfg Config) error {
 	}
 
 	errCh := make(chan error, 1)
-	go func() {
-		if cfg.DataPath != "" {
-			ticker := time.NewTicker(cfg.ReloadInterval)
-			defer ticker.Stop()
-			for {
-				select {
-				case <-ctx.Done():
-					return
-				case <-ticker.C:
-					if err := loadState(cfg.DataPath); err != nil {
-						errCh <- fmt.Errorf("reload state: %w", err)
-					}
-				}
-			}
-		}
-	}()
+	go watchStateReload(ctx, cfg.DataPath, cfg.ReloadInterval, errCh)
+	go serveHTTP(srv, errCh)
 
-	go func() {
-		if err := srv.ListenAndServe(); err != nil && !errors.Is(err, http.ErrServerClosed) {
-			errCh <- err
-		}
-	}()
-
-	select {
-	case <-ctx.Done():
-		shutdownCtx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
-		defer cancel()
-		_ = srv.Shutdown(shutdownCtx)
-		return nil
-	case err := <-errCh:
-		shutdownCtx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
-		defer cancel()
-		_ = srv.Shutdown(shutdownCtx)
-		return err
-	}
+	return waitForShutdown(ctx, srv, errCh)
 }
 
 func loadState(path string) error {
-	var reader io.ReadCloser
-	var err error
-
-	switch {
-	case path != "":
-		reader, err = os.Open(filepath.Clean(path))
-	default:
-		reader, err = embeddedData.Open("data/latest.json")
-	}
+	reader, err := openStateSource(path)
 	if err != nil {
 		return err
 	}
@@ -260,31 +281,52 @@ func loadState(path string) error {
 		return err
 	}
 
-	var raw rawProof
-	if err := json.Unmarshal(data, &raw); err != nil {
+	raw, err := decodeProof(data)
+	if err != nil {
 		return err
 	}
 
+	proof, err := buildProof(raw)
+	if err != nil {
+		return err
+	}
+
+	setState(proof)
+	return nil
+}
+
+func openStateSource(path string) (io.ReadCloser, error) {
+	if path != "" {
+		return os.Open(filepath.Clean(path))
+	}
+	return embeddedData.Open("data/latest.json")
+}
+
+func decodeProof(data []byte) (rawProof, error) {
+	var raw rawProof
+	if err := json.Unmarshal(data, &raw); err != nil {
+		return rawProof{}, err
+	}
+	return raw, nil
+}
+
+func buildProof(raw rawProof) (ProofOfReserves, error) {
 	parsedTime, err := time.Parse(time.RFC3339, raw.UpdatedAt)
 	if err != nil {
-		return fmt.Errorf("parse updated_at: %w", err)
+		return ProofOfReserves{}, fmt.Errorf("parse updated_at: %w", err)
 	}
 
 	navPerToken := 0.0
 	if raw.CirculatingSupply > 0 {
 		navPerToken = (raw.BTCLocked * raw.BTCPriceUSD) / raw.CirculatingSupply
 	}
+
 	premiumDiscount := 0.0
 	if navPerToken > 0 {
 		premiumDiscount = (raw.BRTMarketPriceUSD - navPerToken) / navPerToken
 	}
-	marketCap := raw.BRTMarketPriceUSD * raw.CirculatingSupply
-	fullyDiluted := raw.BRTMarketPriceUSD * raw.MaxSupply
-	collateralValue := raw.BTCLocked * raw.BTCPriceUSD
 
-	stateMu.Lock()
-	defer stateMu.Unlock()
-	state = ProofOfReserves{
+	proof := ProofOfReserves{
 		UpdatedAt:         parsedTime,
 		CollateralRatio:   raw.CollateralRatio,
 		MaxSupply:         raw.MaxSupply,
@@ -294,9 +336,9 @@ func loadState(path string) error {
 		BRTMarketPriceUSD: raw.BRTMarketPriceUSD,
 		NAVPerTokenUSD:    navPerToken,
 		PremiumDiscount:   premiumDiscount,
-		MarketCapUSD:      marketCap,
-		FullyDilutedUSD:   fullyDiluted,
-		CollateralValue:   collateralValue,
+		MarketCapUSD:      raw.BRTMarketPriceUSD * raw.CirculatingSupply,
+		FullyDilutedUSD:   raw.BRTMarketPriceUSD * raw.MaxSupply,
+		CollateralValue:   raw.BTCLocked * raw.BTCPriceUSD,
 		LiquidityDepthUSD: raw.LiquidityDepthUSD,
 		TreasuryYieldBps:  raw.TreasuryYieldBps,
 		ReserveAddresses:  cloneAddresses(raw.ReserveAddresses),
@@ -305,7 +347,13 @@ func loadState(path string) error {
 		RecentBurns:       cloneEvents(raw.RecentBurns),
 	}
 
-	return nil
+	return proof, nil
+}
+
+func setState(next ProofOfReserves) {
+	stateMu.Lock()
+	defer stateMu.Unlock()
+	state = next
 }
 
 func cloneAddresses(in []ReserveAddress) []ReserveAddress {
@@ -352,124 +400,148 @@ func currentState() ProofOfReserves {
 	}
 }
 
+func templateFuncMap() template.FuncMap {
+	return template.FuncMap{
+		"formatNumber":        formatNumber,
+		"formatPercent":       formatPercent,
+		"formatSignedPercent": formatSignedPercent,
+		"formatCurrency":      formatCurrency,
+		"formatBPS":           formatBPS,
+		"formatRelative":      formatRelative,
+		"formatDate":          formatDate,
+		"formatDateTime":      formatDateTime,
+		"title":               title,
+	}
+}
+
+func formatNumber(v float64, precision int) string {
+	format := fmt.Sprintf("%%.%df", precision)
+	value := strings.TrimRight(strings.TrimRight(fmt.Sprintf(format, v), "0"), ".")
+	if value == "" {
+		return "0"
+	}
+	return value
+}
+
+func formatPercent(v float64) string {
+	return fmt.Sprintf("%.2f%%", v*100)
+}
+
+func formatSignedPercent(v float64) string {
+	formatted := formatPercent(v)
+	if v > 0 {
+		return "+" + formatted
+	}
+	return formatted
+}
+
+func formatCurrency(v float64, precision int) string {
+	if precision == 0 {
+		rounded := int64(v + 0.5)
+		if v < 0 {
+			rounded = int64(v - 0.5)
+		}
+		return "$" + addCommas(fmt.Sprintf("%d", rounded))
+	}
+
+	s := fmt.Sprintf("%.*f", precision, v)
+	if strings.Contains(s, ".") {
+		s = strings.TrimRight(s, "0")
+		s = strings.TrimRight(s, ".")
+	}
+	return "$" + addCommas(s)
+}
+
+func addCommas(s string) string {
+	neg := ""
+	if strings.HasPrefix(s, "-") {
+		neg = "-"
+		s = s[1:]
+	}
+
+	intPart := s
+	fracPart := ""
+	if dot := strings.Index(s, "."); dot != -1 {
+		intPart = s[:dot]
+		fracPart = s[dot:]
+	}
+
+	if len(intPart) <= 3 {
+		return neg + intPart + fracPart
+	}
+
+	var builder strings.Builder
+	for i, r := range intPart {
+		if i != 0 && (len(intPart)-i)%3 == 0 {
+			builder.WriteByte(',')
+		}
+		builder.WriteByte(byte(r))
+	}
+
+	return neg + builder.String() + fracPart
+}
+
+func formatBPS(v int) string {
+	return fmt.Sprintf("%.2f%%", float64(v)/100.0)
+}
+
+func formatRelative(t time.Time) string {
+	if t.IsZero() {
+		return "never"
+	}
+
+	delta := time.Since(t)
+	if delta < time.Minute {
+		return "just now"
+	}
+	if delta < time.Hour {
+		return fmt.Sprintf("%d minutes ago", int(delta.Minutes()))
+	}
+	if delta < 24*time.Hour {
+		return fmt.Sprintf("%d hours ago", int(delta.Hours()))
+	}
+	return fmt.Sprintf("%d days ago", int(delta.Hours()/24))
+}
+
+func formatDate(s string) string {
+	t, err := time.Parse(time.RFC3339, s)
+	if err != nil {
+		return s
+	}
+	return t.Format("02 Jan 2006")
+}
+
+func formatDateTime(s string) string {
+	t, err := time.Parse(time.RFC3339, s)
+	if err != nil {
+		return s
+	}
+	return t.Format(time.RFC822)
+}
+
+func title(s string) string {
+	s = strings.ReplaceAll(s, "-", " ")
+	words := strings.Fields(s)
+	for i, word := range words {
+		if len(word) == 0 {
+			continue
+		}
+		lower := strings.ToLower(word)
+		words[i] = strings.ToUpper(lower[:1]) + lower[1:]
+	}
+	return strings.Join(words, " ")
+}
+
 func getTemplates() *template.Template {
 	tplOnce.Do(func() {
-		funcMap := template.FuncMap{
-			"formatNumber": func(v float64, precision int) string {
-				format := fmt.Sprintf("%%.%df", precision)
-				value := strings.TrimRight(strings.TrimRight(fmt.Sprintf(format, v), "0"), ".")
-				if value == "" {
-					return "0"
-				}
-				return value
-			},
-			"formatPercent": func(v float64) string {
-				return fmt.Sprintf("%.2f%%", v*100)
-			},
-			"formatSignedPercent": func(v float64) string {
-				formatted := fmt.Sprintf("%.2f%%", v*100)
-				if v > 0 {
-					return "+" + formatted
-				}
-				return formatted
-			},
-			"formatCurrency": func(v float64, precision int) string {
-				// Helper to add thousand separators
-				addCommas := func(s string) string {
-					n := len(s)
-					if n <= 3 {
-						return s
-					}
-					var neg string
-					if s[0] == '-' {
-						neg = "-"
-						s = s[1:]
-						n--
-					}
-					// Find decimal point, if any
-					intPart := s
-					fracPart := ""
-					if dot := strings.Index(s, "."); dot != -1 {
-						intPart = s[:dot]
-						fracPart = s[dot:]
-					}
-					// Insert commas into intPart
-					var out []byte
-					for i, c := range intPart {
-						if i != 0 && (len(intPart)-i)%3 == 0 {
-							out = append(out, ',')
-						}
-						out = append(out, byte(c))
-					}
-					return neg + string(out) + fracPart
-				}
-
-				if precision == 0 {
-					// Round to nearest integer and format with commas
-					rounded := int64(v + 0.5)
-					if v < 0 {
-						rounded = int64(v - 0.5)
-					}
-					return "$" + addCommas(fmt.Sprintf("%d", rounded))
-				}
-				// Format with specified precision and commas
-				s := fmt.Sprintf("%.*f", precision, v)
-				// Remove trailing zeros and decimal if needed
-				if strings.Contains(s, ".") {
-					s = strings.TrimRight(s, "0")
-					s = strings.TrimRight(s, ".")
-				}
-				return "$" + addCommas(s)
-			},
-			"formatBPS": func(v int) string {
-				return fmt.Sprintf("%.2f%%", float64(v)/100.0)
-			},
-			"formatRelative": func(t time.Time) string {
-				if t.IsZero() {
-					return "never"
-				}
-				delta := time.Since(t)
-				if delta < time.Minute {
-					return "just now"
-				}
-				if delta < time.Hour {
-					return fmt.Sprintf("%d minutes ago", int(delta.Minutes()))
-				}
-				if delta < 24*time.Hour {
-					return fmt.Sprintf("%d hours ago", int(delta.Hours()))
-				}
-				return fmt.Sprintf("%d days ago", int(delta.Hours()/24))
-			},
-			"formatDate": func(s string) string {
-				t, err := time.Parse(time.RFC3339, s)
-				if err != nil {
-					return s
-				}
-				return t.Format("02 Jan 2006")
-			},
-			"formatDateTime": func(s string) string {
-				t, err := time.Parse(time.RFC3339, s)
-				if err != nil {
-					return s
-				}
-				return t.Format(time.RFC822)
-			},
-			"title": func(s string) string {
-				s = strings.ReplaceAll(s, "-", " ")
-				words := strings.Fields(s)
-				for i, word := range words {
-					if len(word) == 0 {
-						continue
-					}
-					lower := strings.ToLower(word)
-					words[i] = strings.ToUpper(lower[:1]) + lower[1:]
-				}
-				return strings.Join(words, " ")
-			},
-		}
-
-		tpl = template.Must(template.New("layout.html").Funcs(funcMap).
-			ParseFS(embeddedStatic, "static/templates/layout.html", "static/templates/proof.html", "static/templates/forum.html"))
+		tpl = template.Must(
+			template.New("layout.html").Funcs(templateFuncMap()).ParseFS(
+				embeddedStatic,
+				"static/templates/layout.html",
+				"static/templates/proof.html",
+				"static/templates/forum.html",
+			),
+		)
 	})
 	return tpl
 }

@@ -130,11 +130,5 @@ func convertTokenPrice(raw *tokenPriceERC20) *TokenPrice {
 		price.UpdatedAt = time.Unix(*raw.Timestamp, 0).UTC()
 	}
 
-	if raw.Rate == nil && raw.Diff == nil && raw.Diff7d == nil &&
-		raw.MarketCapUSD == nil && raw.AvailableSupply == nil && raw.Volume24h == nil &&
-		raw.Timestamp == nil {
-		return nil
-	}
-
 	return price
 }
