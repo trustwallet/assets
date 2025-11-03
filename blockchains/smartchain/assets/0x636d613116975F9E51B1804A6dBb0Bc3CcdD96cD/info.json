@@ -1,0 +1,39 @@
+{
+  "name": "USDC Bridged",
+  "symbol": "USDC.c",
+  "type": "BEP20",
+  "decimals": 18,
+  "description": "USDC Bridged (USDC.c) is a wrapped version of USD Coin on Solana, Ethereum, and Binance Smart Chain, fully backed by on-chain and off-chain reserves and transparently pegged to $1. More than just a stablecoin, USDC.c is marketed as the future of digital dollars — faster than Ethereum, stronger than legacy stablecoins, and positioned as the next Bitcoin killer for global payments. With unmatched speed, near-zero fees, and unstoppable DeFi integration, USDC.c isn’t just another bridge asset — it’s the backbone of the new financial internet.",
+  "website": "https://www.cowbridge.online",
+  "explorer": "https://bscscan.com/token/0x636d613116975F9E51B1804A6dBb0Bc3CcdD96cD",
+  "status": "active",
+  "id": "0x636d613116975F9E51B1804A6dBb0Bc3CcdD96cD",
+  "tags": [
+    "stablecoin",
+    "bridged",
+    "defi",
+    "multichain"
+  ],
+  "links": [
+    {
+      "name": "telegram",
+      "url": "https://t.me/cowbridged"
+    },
+    {
+      "name": "twitter",
+      "url": "https://x.com/cowsbridged"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/USDBridgedCoin"
+    },
+    {
+      "name": "whitepaper",
+      "url": "https://tinyurl.com/CowBridged"
+    },
+    {
+      "name": "logo",
+      "url": "https://tinyurl.com/CowBridgedLogo"
+    }
+  ]
+}
