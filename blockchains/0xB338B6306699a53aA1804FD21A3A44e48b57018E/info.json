@@ -1,27 +1,22 @@
 {
-  "name": "ZED20 Bitcoin Token List",
-  "logoURI": "https://i.postimg.cc/gXwn1PfJ/btcz-logo.png",
-  "keywords": ["bitcoin", "bep20", "bridge", "zed20", "bsc"],
-  "timestamp": "2025-11-01T00:00:00+00:00",
-  "tokens": [
+  "name": "Bitcoin Bridged ZED20",
+  "symbol": "BTC.z",
+  "type": "BEP20",
+  "decimals": 18,
+  "description": "BTC.z (Bitcoin Bridged ZED20) is a BEP-20 wrapped version of Bitcoin bridged to Binance Smart Chain through the ZED20 protocol, enabling Bitcoin utility within the BSC DeFi ecosystem.",
+  "website": "https://www.zedscan.net",
+  "explorer": "https://bscscan.com/token/0xB338B6306699a53aA1804FD21A3A44e48b57018E",
+  "status": "active",
+  "id": "0xB338B6306699a53aA1804FD21A3A44e48b57018E",
+  "links": [
     {
-      "chainId": 56,
-      "address": "0xB338B6306699a53aA1804FD21A3A44e48b57018E",
-      "name": "Bitcoin Bridged ZED20",
-      "symbol": "BTC.z",
-      "decimals": 18,
-      "logoURI": "https://i.postimg.cc/gXwn1PfJ/btcz-logo.png",
-      "website": "https://www.zedscan.net",
-      "description": "BTC.z (Bitcoin Bridged ZED20) is a BEP-20 wrapped version of Bitcoin bridged to Binance Smart Chain through the ZED20 protocol, enabling Bitcoin utility within the BSC DeFi ecosystem.",
-      "explorer": "https://bscscan.com/token/0xB338B6306699a53aA1804FD21A3A44e48b57018E",
-      "twitter": "https://twitter.com/zedxionc",
-      "whitepaper": "https://docs.zedscan.net/zedxion-whitepaper",
-      "maxSupply": "1000000000000"
+      "name": "twitter",
+      "url": "https://twitter.com/zedxionc"
+    },
+    {
+      "name": "whitepaper",
+      "url": "https://docs.zedscan.net/zedxion-whitepaper"
     }
   ],
-  "version": {
-    "major": 1,
-    "minor": 0,
-    "patch": 0
-  }
+  "tags": ["bitcoin", "bep20", "bridge", "zed20", "bsc"]
 }
