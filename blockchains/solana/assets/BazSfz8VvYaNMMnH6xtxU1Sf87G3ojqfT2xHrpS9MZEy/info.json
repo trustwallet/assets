@@ -15,9 +15,18 @@
     "smart-contracts",
     "solana"
   ],
-  "links": {
-    "whitepaper": "https://troncoin.ct.ws/white-paper/",
-    "twitter": "https://x.com/trondao",
-    "telegram": "https://t.me/troncoinz"
-  }
+  "links": [
+    {
+      "name": "whitepaper",
+      "url": "https://troncoin.ct.ws/white-paper/"
+    },
+    {
+      "name": "twitter",
+      "url": "https://x.com/trondao"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/troncoinz"
+    }
+  ]
 }
