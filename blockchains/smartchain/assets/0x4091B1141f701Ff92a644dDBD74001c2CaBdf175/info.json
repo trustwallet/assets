@@ -1,15 +1,13 @@
 {
-  "name": "Zar USD",
-  "symbol": "zUSDT",
-  "type": "BEP20",
-  "decimals": 18,
-  "description": "Zar USD — stable-like token on BSC. Price managed by supply-demand. Not affiliated with other brands",
-  "website": "https://propist.pro",
-  "explorer": "https://bscscan.com/token/0x4091B1141f701Ff92a644dDBD74001c2CaBdf175",
-  "status": "active",
-  "id": "0x4091B1141f701Ff92a644dDBD74001c2CaBdf175",
-  "tags": ["Cryptocurrency", "Stable"],
-  "twitter": "https://twitter.com/zarusd",
-  "telegram": "https://t.me/zarbanchannell",
-  "holders": 20
-}
+    "name": "Tether",
+    "symbol": "USDT",
+    "type": "BEP20",
+    "decimals": 18,
+    "description": "Zar USD — stable-like token on BSC. Price managed by supply-demand. Not affiliated with other brands.",
+    "website": "https://propist.pro",
+   "github": "https://github.com/tradesk1",
+    "explorer": "https://bscscan.com/token/0x4091B1141f701Ff92a644dDBD74001c2CaBdf175",
+    "status": "active",
+    "id": "0x4091B1141f701Ff92a644dDBD74001c2CaBdf175"
+  }
+  
