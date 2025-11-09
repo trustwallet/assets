@@ -1,6 +1,6 @@
 {
-  "name": "Tether",
-  "symbol": "USDT",
+  "name": "Zar USD",
+  "symbol": "zUSDT",
   "type": "BEP20",
   "decimals": 18,
   "description": "Zar USD — stable-like token on BSC. Price managed by supply-demand. Not affiliated with other brands.",
@@ -9,8 +9,7 @@
   "explorer": "https://bscscan.com/token/0x4091B1141f701Ff92a644dDBD74001c2CaBdf175",
   "status": "active",
   "id": "0x4091B1141f701Ff92a644dDBD74001c2CaBdf175",
-  "tags": [
-    "Stablecoin",
-    "BEP20"
-  ]
+  "tags": ["BEP20", "Cryptocurrency"],
+  "telegram": "https://t.me/zarbanchannel",
+  "holders": 2
 }
