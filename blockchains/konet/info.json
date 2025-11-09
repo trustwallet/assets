@@ -1,0 +1,22 @@
+{
+  "name": "Konet Network",
+  "chain": "KONET",
+  "network": "mainnet",
+  "rpc": ["https://rpc.konet.network"],
+  "faucets": [],
+  "nativeCurrency": {
+    "name": "Konet Coin",
+    "symbol": "KON",
+    "decimals": 18
+  },
+  "infoURL": "https://konet.network",
+  "shortName": "konet",
+  "chainId": 25050,
+  "explorers": [
+    {
+      "name": "Konet Explorer",
+      "url": "https://explorer.konet.network",
+      "standard": "EIP3091"
+    }
+  ]
+}
