@@ -1,0 +1,46 @@
+{
+  "name": "Tron X Test",
+  "symbol": "TRX",
+  "type": "TRC20",
+  "decimals": 6,
+  "description": "TRC20 token deployed on Tron MainNet compatible with TronWeb and SunSwap V2 LP.",
+  "website": "https://tron.network",
+  "explorer": "https://tronscan.org/#/token/TTkUWcrQNvPwr7wf6WFqvXTEx3bQhx3vtM",
+  "status": "active",
+  "id": "41TTkUWcrQNvPwr7wf6WFqvXTEx3bQhx3vtM",
+  "network": {
+    "name": "Tron MainNet",
+    "chainId": "0x2b6653dc",
+    "rpc": [
+      "https://api.trongrid.io",
+      "https://rpc.ankr.com/http/tron",
+      "https://tron-rpc.publicnode.com"
+    ],
+    "nativeCurrency": {
+      "name": "TRX",
+      "symbol": "TRX",
+      "decimals": 6
+    }
+  },
+  "links": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/tronprotocol"
+    },
+    {
+      "name": "Docs",
+      "url": "https://developers.tron.network"
+    },
+    {
+      "name": "Explorer",
+      "url": "https://tronscan.org"
+    }
+  ],
+  "tags": [
+    "tron",
+    "mainnet",
+    "trc20",
+    "defi"
+  ],
+  "logoURI": "https://raw.githubusercontent.com/matkhorshidsavar/assets-1/master/tron_logo.png"
+}
