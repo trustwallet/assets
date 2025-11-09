@@ -3,7 +3,7 @@
   "symbol": "TIP",
   "type": "BEP20",
   "decimals": 18,
-  "description": "Tipcoin is a tipping token designed for micro-payments, creator rewards, and community appreciation in the blockchain ecosystem.",
+  "description": "Tipcoin is a decentralized tipping token built on Binance Smart Chain. It enables micro-payments, creator rewards, and community appreciation within the Web3 ecosystem.",
   "website": "https://tipcoin.io",
   "explorer": "https://bscscan.com/token/0x35E0507Ca627Bf37B842C4F8B1DED59d943AE153",
   "status": "active",
@@ -20,7 +20,11 @@
     {
       "name": "github",
       "url": "https://github.com/coinmsz369/Tipcoin"
+    },
+    {
+      "name": "coinmarketcap",
+      "url": "https://coinmarketcap.com/"
     }
   ],
-  "tags": ["defi", "tipping", "payment"]
+  "tags": ["defi", "community", "payment"]
 }
