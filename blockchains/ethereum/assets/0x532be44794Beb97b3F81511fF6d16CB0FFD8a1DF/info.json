@@ -3,13 +3,14 @@
   "symbol": "sETH",
   "type": "ERC20",
   "decimals": 18,
-  "description": "Synth sETH is an experimental blockchain asset created solely for academic and research purposes in decentralized finance (DeFi) environments. The official sETH token is currently undergoing migration with reduced trading activity, allowing this token to be used for research purposes analyzing user behavior and network interactions. This token is officially launched, with all necessary operations completed, including providing liquidity, pairing with Ethereum, and ensuring a strong holder base. The token has more than 12,000 holders and over 15,500 transactions. This asset is not intended for public investment or speculation. Differences between this token and the official sETH are clearly explained on our website and social media.",
+  "description": "Experimental ERC20 token for academic research. Not for investment. Differences with the official sETH are explained on the website and social media.",
+  "extended_description": "This token is created to study user behavior and network interactions in DeFi. Official sETH is migrating with low trading activity, allowing this token to be used for research purposes only. Liquidity is provided, holders exceed 12,000, and transactions exceed 15,500.",
   "website": "https://mehditk-hash.github.io/research-synthseth",
-  "explorer": "https://etherscan.io/token/0x532be44794Beb97b3F81511Ff6d16CB0FFD8a1DF",
-  "telegram": "https://t.me/synth_seth",
+  "explorer": "https://etherscan.io/token/0x532be44794Beb97b3F81511Ff6d16CB0FFD8A1DF",
   "twitter": "https://x.com/synth_seth",
+  "telegram": "https://t.me/synth_seth",
   "email": "valeradopavlodar@gmail.com",
   "status": "active",
-  "id": "0x532be44794Beb97b3F81511Ff6d16CB0FFD8a1DF",
-  "tags": ["research", "experimental"]
+  "id": "0x532be44794Beb97b3F81511Ff6d16CB0FFD8A1DF",
+  "tags": ["experimental", "defi", "research"]
 }
