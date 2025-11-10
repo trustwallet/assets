@@ -3,13 +3,14 @@
   "symbol": "sETH",
   "type": "ERC20",
   "decimals": 18,
-  "description": "Synth sETH is an experimental token created solely for academic and research purposes in decentralized finance (DeFi).",
+  "description": "Synth sETH is an experimental token created for academic exploration in decentralized finance (DeFi).",
   "website": "https://mehditk-hash.github.io/research-synthseth",
-  "explorer": "https://etherscan.io/token/0x532be44794Beb97b3F81511Ff6d16CB0FFD8a1DF",
-  "telegram": "https://t.me/synth_seth",
-  "twitter": "https://x.com/synth_seth",
-  "email": "valeradopavlodar@gmail.com",
+  "explorer": "https://etherscan.io/token/0x532be44794Beb97b3F81511Ff6d16CB0FFD8A1DF",
   "status": "active",
-  "id": "0x532be44794Beb97b3F81511Ff6d16CB0FFD8a1DF",
-  "tags": ["defi", "research"]
+  "id": "0x532be44794Beb97b3F81511Ff6d16CB0FFD8A1DF",
+  "tags": ["defi", "utility"],
+  "links": {
+    "twitter": "https://x.com/synth_seth",
+    "telegram": "https://t.me/synth_seth"
+  }
 }
