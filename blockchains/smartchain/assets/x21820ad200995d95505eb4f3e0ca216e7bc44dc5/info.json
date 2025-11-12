@@ -3,15 +3,21 @@
   "symbol": "IND",
   "type": "BEP20",
   "decimals": 18,
-  "description": "Ind Shield (IND) is a decentralized token on the BNB Smart Chain designed to promote secure, transparent, and community-driven digital asset management.",
+  "description": "Ind Shield (IND) is a decentralized token on the BNB Smart Chain designed to promote secure, transparent, and community-driven asset management.",
   "website": "https://indshield.io",
   "explorer": "https://bscscan.com/token/0x21820ad200995d95505eb4f3e0ca216e7bc44dc5",
-  "links": {
-    "twitter": "https://twitter.com/indshield",
-    "github": "https://github.com/indshield"
-  },
   "status": "active",
   "id": "0x21820ad200995d95505eb4f3e0ca216e7bc44dc5",
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/indshield"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/IndShield"
+    }
+  ],
   "tags": [
     "defi",
     "utility"
