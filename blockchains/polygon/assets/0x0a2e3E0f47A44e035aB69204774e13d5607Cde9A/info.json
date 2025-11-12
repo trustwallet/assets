@@ -3,11 +3,26 @@
     "symbol": "TKTA",
     "type": "ERC20",
     "decimals": 18,
-    "description": "Tokenized property in Dubai - Avior Tower",
+    "description": "Tokenized real estate property in Dubai - Avior Tower",
     "website": "https://dimax.org",
     "twitter": "https://x.com/WayPool3",
+    "website": "https://elysiumdubai.net",
     "explorer": "https://polygonscan.com/token/0x0a2e3E0f47A44e035aB69204774e13d5607Cde9A",
     "status": "active",
     "id": "0x0a2e3E0f47A44e035aB69204774e13d5607Cde9A",
-    "tags": ["property", "real-estate", "defi"]
+    "links": [
+        {
+            "name": "website",
+            "url": "https://dimax.org"
+        },
+        {
+            "name": "twitter",
+            "url": "https://x.com/WayPool3"
+        },
+        {
+            "name": "website",
+            "url": "https://elysiumdubai.net"
+        }
+    ],
+    "tags": ["defi", "governance"]
 }
