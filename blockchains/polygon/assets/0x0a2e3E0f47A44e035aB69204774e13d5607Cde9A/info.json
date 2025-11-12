@@ -4,8 +4,6 @@
     "type": "ERC20",
     "decimals": 18,
     "description": "Tokenized real estate property in Dubai - Avior Tower",
-    "website": "https://dimax.org",
-    "twitter": "https://x.com/WayPool3",
     "website": "https://elysiumdubai.net",
     "explorer": "https://polygonscan.com/token/0x0a2e3E0f47A44e035aB69204774e13d5607Cde9A",
     "status": "active",
@@ -13,15 +11,15 @@
     "links": [
         {
             "name": "website",
-            "url": "https://dimax.org"
+            "url": "https://elysiumdubai.net"
         },
         {
             "name": "twitter",
             "url": "https://x.com/WayPool3"
         },
         {
-            "name": "website",
-            "url": "https://elysiumdubai.net"
+            "name": "docs",
+            "url": "https://dimax.org"
         }
     ],
     "tags": ["defi", "governance"]
