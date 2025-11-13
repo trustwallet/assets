@@ -1,0 +1,28 @@
+{
+    "name": "USDT",
+    "type": "TRC20",
+    "symbol": "USDTr",
+    "decimals": 6,
+    "website": "https://tether.to",
+    "description": "Tether USDTr",
+    "explorer": "https://tronscan.io/#/token20/TFRr29tAaTGCgrroDE48FhJmew477h7rCd",
+    "status": "active",
+    "id": "TFRr29tAaTGCgrroDE48FhJmew477h7rCd",
+    "links": [
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://tether.to/en/whitepaper/"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}
