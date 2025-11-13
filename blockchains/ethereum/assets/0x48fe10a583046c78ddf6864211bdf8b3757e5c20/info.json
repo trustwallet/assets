@@ -1,7 +1,25 @@
 {
   "name": "XOR",
   "symbol": "XOR",
+  "type": "ERC20",
   "decimals": 18,
+  "description": "XOR is a decentralized digital asset used for fast and secure transfers on the Ethereum network.",
+  "website": "https://yourwebsite.com",
+  "explorer": "https://etherscan.io/token/0x48fe10a583046c78ddf6864211bdf8b3757e5c20",
   "status": "active",
-  "id": "0x48fe10a583046c78ddf6864211bdf8b3757e5c20"
+  "id": "0x48fe10a583046c78ddf6864211bdf8b3757e5c20",
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/XOR_Token"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/XOR_Token"
+    }
+  ],
+  "tags": [
+    "token"
+  ]
 }
+
