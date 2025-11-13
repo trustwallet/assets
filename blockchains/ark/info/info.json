@@ -1,29 +1,34 @@
 {
-    "name": "Ark",
-    "website": "http://ark.io/",
-    "description": "ARK provides users, developers, and startups with innovative blockchain technologies. Aim to create an entire ecosystem of linked chains and a virtual spiderweb of endless use-cases that make ARK highly flexible, adaptable, and scalable.",
-    "explorer": "https://explorer.ark.io",
-    "research": "https://research.binance.com/en/projects/ark",
-    "symbol": "ARK",
-    "type": "coin",
-    "decimals": 8,
-    "status": "abandoned",
-    "links": [
-        {
-            "name": "github",
-            "url": "https://github.com/ArkEcosystem"
-        },
-        {
-            "name": "x",
-            "url": "https://x.com/ArkEcosystem"
-        },
-        {
-            "name": "reddit",
-            "url": "https://reddit.com/r/ArkEcosystem"
-        },
-        {
-            "name": "whitepaper",
-            "url": "https://ark.io/Whitepaper.pdf"
-        }
-    ]
+  "name": "AtheistWorldToken",
+  "website": "https://atheistworldtoken.com",
+  "description": "AtheistWorldToken (AWT) is a BEP-20 utility token on BSC for community-driven DeFi and rational thinking initiatives with staking rewards.",
+  "explorer": "https://bscscan.com/token/0x11d2E5FB3EB729fC829bAEE1d2ADa09bFa4EC4D7",
+  "type": "BEP20",
+  "symbol": "AWT",
+  "decimals": 18,
+  "status": "active",
+  "id": "0x11d2E5FB3EB729fC829bAEE1d2ADa09bFa4EC4D7",
+  "tags": ["DeFi", "Community", "Utility"],
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://x.com/teamawt"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/+uJikM5E5HzkwNTE1"
+    },
+    {
+      "name": "discord",
+      "url": "https://discord.com/invite/yRmv2UXk"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/atheistworldtoken/atheistworld"
+    },
+    {
+      "name": "youtube",
+      "url": "https://www.youtube.com/@atheistworldtoken"
+    }
+  ]
 }
