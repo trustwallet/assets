@@ -1,1 +1,25 @@
-
+{
+  "name": "LotMap Coin",
+  "symbol": "LMC",
+  "type": "BEP20",
+  "decimals": 18,
+  "website": "https://lotmap.web.app",
+  "explorer": "https://bscscan.com/token/0x21A24A9dCcB526848F3B397e4452AF6857720120",
+  "description": "LotMap Coin (LMC) is a utility token for land mapping, location indexing, and real-estate data services.",
+  "status": "active",
+  "id": "0x21A24A9dCcB526848F3B397e4452AF6857720120",
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/lotmap"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/lotmap"
+    }
+  ],
+  "tags": [
+    "defi"
+  ],
+  "holders": 1
+}
