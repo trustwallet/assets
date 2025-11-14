@@ -1,12 +1,16 @@
 {
   "name": "XOR",
   "symbol": "XOR",
-  "type": "token",
   "decimals": 18,
+  "description": "XOR is a utility token deployed on Base network, used for DeFi operations and ecosystem rewards.",
+  "type": "token",
   "website": "https://xlonly407.cloud",
-  "description": "XOR is a multi-chain token available on Ethereum, BSC, and Base.",
-  "explorer": "https://basescan.org/token/0x7B0F41158A472a5B14848D756bF0DDEC758e8F08",
-  "links": {
-    "telegram": "https://t.me/XOR_Tokenbot"
-  }
+  "explorer": "https://base.blockscan.com/token/0x7B0F41158A472a5B14848D756bF0DDEC758e8F08",
+  "tags": ["defi"],
+  "links": [
+    { "name": "website", "url": "https://xlonly407.cloud" },
+    { "name": "telegram", "url": "https://t.me/XOR_Tokenbot" },
+    { "name": "twitter", "url": "https://twitter.com/XOR_Token" }
+  ]
 }
+
