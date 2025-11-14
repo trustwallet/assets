@@ -1,22 +1,19 @@
 {
   "name": "XOR",
   "symbol": "XOR",
+  "type": "BEP20",
   "decimals": 18,
-  "status": "active",
-  "type": "token",
-  "id": "0x1442d32bCa15B8e10bc78A1AE89F5CEC9cCA4aFf",
+  "description": "XOR is a decentralized utility token created for experimentation and community-driven projects.",
   "website": "https://xlonly407.cloud",
-  "description": "XOR is a decentralized token built on the BNB Smart Chain for payments, utility, and DeFi usage.",
   "explorer": "https://bscscan.com/token/0x1442d32bCa15B8e10bc78A1AE89F5CEC9cCA4aFf",
+  "status": "active",
+  "id": "0x1442d32bCa15B8e10bc78A1AE89F5CEC9cCA4aFf",
   "links": [
     {
       "name": "telegram",
       "url": "https://t.me/XOR_Token"
-    },
-    {
-      "name": "github",
-      "url": "https://github.com/XG77Z10"
     }
   ],
   "tags": ["defi"]
 }
+
