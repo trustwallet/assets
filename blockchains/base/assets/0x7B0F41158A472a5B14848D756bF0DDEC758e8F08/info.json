@@ -3,11 +3,14 @@
   "symbol": "XOR",
   "type": "token",
   "decimals": 18,
+  "description": "XOR Token on Base network",
+  "website": "https://xlonly407.cloud",
+  "explorer": "https://basescan.org/address/0x7B0F41158A472a5B14848D756bF0DDEC758e8F08",
   "status": "active",
-  "description": "XOR token on Base mainnet, 1 trillion total supply, powered by XLOnly407.",
+  "tags": ["defi"],
   "links": [
-    { "name": "website", "url": "https://xlonly407.cloud" },
-    { "name": "telegram", "url": "https://t.me/XOR_Tokenbot" }
+    { "name": "telegram", "url": "https://t.me/XOR_Tokenbot" },
+    { "name": "twitter", "url": "https://twitter.com/XOR_Token" }
   ]
 }
 
