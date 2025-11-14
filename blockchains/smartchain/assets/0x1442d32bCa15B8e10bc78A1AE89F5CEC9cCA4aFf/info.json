@@ -1,7 +1,7 @@
 {
   "name": "XOR",
   "symbol": "XOR",
-  "type": "token",
+  "type": "BEP20",
   "decimals": 18,
   "description": "XOR is a decentralized utility token created for experimentation and community-driven projects.",
   "website": "https://xlonly407.cloud",
@@ -11,7 +11,11 @@
   "links": [
     {
       "name": "telegram",
-      "url": "https://t.me/XOR_Token"
+      "url": "https://t.me/XOR_Tokenbot"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/XG77Z10"
     }
   ],
   "tags": ["defi"]
