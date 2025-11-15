@@ -6,11 +6,20 @@
     "description": "Noreum (NOR) is the official ERC20 representation of the Noreum mainnet asset (chainId 1177), used for identity, liquidity routing, and future cross-chain bridging.",
     "website": "https://noreum.io",
     "explorer": "https://etherscan.io/token/0x9Ac2b82F6e54bdb46Fa78DdcfDD42f26850Fe1F5",
-    "links": {
-        "twitter": "https://x.com/noreum1",
-        "telegram": "https://t.me/Noreum_oa",
-        "github": "https://github.com/noreum"
-    },
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://x.com/noreum1"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/Noreum_oa"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/noreum"
+        }
+    ],
     "tags": ["layer1", "governance", "noreum"],
     "status": "active",
     "id": "0x9Ac2b82F6e54bdb46Fa78DdcfDD42f26850Fe1F5"
