@@ -45,7 +45,7 @@ type (
 // Default is a configuration instance.
 var Default = Config{} //nolint:gochecknoglobals // config must be global
 
-// SetConfig reads a config file and returs an initialized config instance.
+// SetConfig reads a config file and returns an initialized config instance.
 func SetConfig(confPath string) error {
 	confPath, err := filepath.Abs(confPath)
 	if err != nil {
