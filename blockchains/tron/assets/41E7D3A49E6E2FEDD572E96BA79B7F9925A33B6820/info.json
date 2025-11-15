@@ -2,10 +2,10 @@
     "name": "Noreum",
     "symbol": "NOR",
     "type": "TRC20",
-    "decimals": 18,
-    "description": "Noreum (NOR) is the official TRC20 representation of the Noreum mainnet asset (chainId 1177).",
+    "decimals": 6,
+    "description": "Noreum (NOR) is the official TRC20 representation of the Noreum mainnet asset (chainId 1177), enabling early liquidity, routing, and future cross-chain bridging.",
     "website": "https://noreum.io",
-    "explorer": "https://tronscan.io/#/token20/TE7ZPS8JjhA3kWTSVfXhEX7Cyi8ieDTaDW",
+    "explorer": "https://tronscan.io/#/token20/41E7D3A49E6E2FEDD572E96BA79B7F9925A33B6820",
     "links": [
         {
             "name": "twitter",
@@ -14,9 +14,15 @@
         {
             "name": "telegram",
             "url": "https://t.me/Noreum_oa"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/noreum"
         }
     ],
-    "tags": ["noreum"],
+    "tags": [
+        "noreum"
+    ],
     "status": "active",
     "id": "41E7D3A49E6E2FEDD572E96BA79B7F9925A33B6820"
 }
