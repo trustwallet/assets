@@ -8,20 +8,18 @@
   "explorer": "https://bscscan.com/token/0x21A24A9dCCB526848f3B397e4452AF6857720120",
 
   "links": [
-    {
-      "name": "website",
-      "url": "https://lotmap.web.app"
-    },
-    {
-      "name": "github",
-      "url": "https://github.com/B5420414"
-    }
-  ],
+  {
+    "name": "github",
+    "url": "https://github.com/B5420414"
+  },
+  {
+    "name": "blog",
+    "url": "https://lotmap.web.app"
+  }
+],
 
-  "tags": [
-    "token"
-  ],
+  "tags": [],
 
   "status": "active",
-  "id": "0x21a24a9dccB526848F3B397e4452af6857720120"
+  "id": "0x21a24a9dCCB526848f3B397e4452AF6857720120"
 }
