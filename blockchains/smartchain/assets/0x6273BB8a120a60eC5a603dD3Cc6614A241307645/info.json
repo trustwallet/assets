@@ -1,0 +1,29 @@
+{
+  "name": "USDT.z Token List",
+  "timestamp": "2025-01-01T00:00:00+00:00",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "logoURI": "https://raw.githubusercontent.com/mdpelumii/USDT.Z/main/IMG-20251116-WA0013.jpg",
+  "keywords": ["stablecoin", "usdtz"],
+  "tokens": [
+    {
+      "chainId": 56,
+      "address": "0x6273BB8a120a60eC5a603dD3Cc6614A241307645",
+      "name": "Tether USD Bridged",
+      "symbol": "USDT.z",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/yourrepo/token-icons/main/usdtz.png",
+      "tags": ["stablecoin", "educational"],
+      "extensions": {
+        "website": "https://tether.to",
+        "description": "USDT.z is an educational example token for demonstrating wallet metadata, price feeds, and token list structure.",
+        "coingeckoId": "tether",
+        "cmcId": "825",
+        "recommendedSlug": "usdtz"
+      }
+    }
+  ]
+}
