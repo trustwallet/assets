@@ -1,30 +1,20 @@
 {
-  "name": "Tether USD Bridged ZED20",
+  "name": "USDT.z",
   "symbol": "USDT.z",
   "type": "token",
   "decimals": 18,
-  "description": "USDT.z is an educational bridged stablecoin for testing and development purposes.",
-  "website": "https://tether.to/",
+  "description": "USDT.z is a synthetic USDT-pegged stablecoin clone for cross-chain test deployments.",
+  "website": "https://tether.to",
   "explorer": "https://bscscan.com/token/0x6273BB8a120a60eC5a603dD3Cc6614A241307645",
   "status": "active",
-  "id": "usdt-z",
+  "id": "0x6273BB8a120a60eC5a603dD3Cc6614A241307645",
+  "links": {
+    "twitter": "https://x.com/Tether_to",
+    "github": "https://github.com/mdpelumii/USDT.Z"
+  },
   "tags": [
     "stablecoin",
-    "usd",
     "bridge"
   ],
-  "links": [
-    {
-      "name": "twitter",
-      "url": "https://twitter.com/Tether_to"
-    },
-    {
-      "name": "github",
-      "url": "https://github.com/mdpelumii/USDT.Z"
-    },
-    {
-      "name": "telegram",
-      "url": "https://t.me/TetherOfficial"
-    }
-  ]
+  "holders": "1"
 }
