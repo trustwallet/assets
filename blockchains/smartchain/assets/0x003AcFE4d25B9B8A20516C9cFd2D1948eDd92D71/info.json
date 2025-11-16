@@ -19,38 +19,3 @@
     }
   ]
 }
-```
-
-**4. Scroll down:**
-- Commit message: `Add Paper Token info.json`
-- Click **"Commit new file"**
-
----
-
-### Step 2: Add Your Logo
-
-**After committing info.json:**
-
-**1. Navigate to your new folder:**
-- You should see it in the list: `0x003AcFE4d25B9B8A20516C9cFd2D1948eDd92D71`
-- Click on that folder
-
-**2. Click "Add file" → "Upload files"**
-
-**3. Upload your logo:**
-- Drag your logo file
-- **MUST be named:** `logo.png` (exactly, lowercase)
-- **MUST be:** 256x256px PNG
-- **MUST be:** Under 100KB
-
-**4. Commit:**
-- Message: `Add Paper Token logo`
-- Click "Commit changes"
-
----
-
-## 📊 Your Folder Structure Should Look Like:
-```
-blockchains/smartchain/assets/0x003AcFE4d25B9B8A20516C9cFd2D1948eDd92D71/
-├── logo.png
-└── info.json
