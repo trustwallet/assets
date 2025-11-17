@@ -1,0 +1,20 @@
+{
+    "name": "Tether USD",
+    "website": "https://www.usdt.com",
+    "description": "A stablecoin replica deployed on the BNB Smart Chain , pegged to 1.00 USDC via an immutable liquidity pool. This token is for educational and testing purposes only.",
+    "explorer": "https://bscscan.com/address/0xB803fC46115aAf115F00dD464634bE356d4019bA",
+    "status": "active",
+    "type": "BEP20",
+    "symbol": "USDT",
+    "decimals": 6,
+    "tags": [
+        "stablecoin",
+        "defi",
+    ],
+    "links": [
+        {
+            "name": "Twitter",
+            "url": "https://twitter.com/Tether_to"
+        }
+    ]
+}
