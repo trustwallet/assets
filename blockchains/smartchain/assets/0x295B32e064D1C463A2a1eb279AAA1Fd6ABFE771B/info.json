@@ -1,12 +1,26 @@
 {
   "name": "Bazrkar",
   "symbol": "BZR",
-  "type": "BEP20",
+  "type": "ERC20",
   "decimals": 18,
   "description": "Bazrkar Token",
-  "website": "",
-  "explorer": "",
+  "website": "https://bazrkar.com",
+  "explorer": "https://etherscan.io/token/0x295B32e064D1C463A2a1eb279AAA1Fd6ABFE771B",
   "status": "active",
-  "id": "0x295B32e064D1C463A2a1eb279AAA1Fd6ABFE771B"
-}
+  "id": "0x295B32e064D1C463A2a1eb279AAA1Fd6ABFE771B",
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://x.com/BAZRKAR_TOKEN"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/BAZRKARTOKEN"
+    }
+  ],
+"tags": [
+  "utility",
+  "community"
+]
 
+}
