@@ -1,11 +1,11 @@
 {
   "name": "Bazrkar",
   "symbol": "BZR",
-  "type": "ERC20",
+  "type": "BEP20",
   "decimals": 18,
-  "description": "Bazrkar Token",
+  "description": "Bazrkar Token is a community-driven and utility-focused asset in the Bazrkar ecosystem.",
   "website": "https://bazrkar.com",
-  "explorer": "https://etherscan.io/token/0x295B32e064D1C463A2a1eb279AAA1Fd6ABFE771B",
+  "explorer": "https://bscscan.com/token/0x295B32e064D1C463A2a1eb279AAA1Fd6ABFE771B",
   "status": "active",
   "id": "0x295B32e064D1C463A2a1eb279AAA1Fd6ABFE771B",
   "links": [
@@ -16,11 +16,14 @@
     {
       "name": "telegram",
       "url": "https://t.me/BAZRKARTOKEN"
+    },
+    {
+      "name": "website",
+      "url": "https://bazrkar.com"
     }
   ],
-"tags": [
-  "utility",
-  "community"
-]
-
+  "tags": [
+    "utility",
+    "community"
+  ]
 }
