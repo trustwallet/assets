@@ -1,27 +1,23 @@
 {
     "name": "Resil Crypto",
-    "website": "https://resilcrypto.com/",
-    "description": "Solana is the worlds most performant blockchain in the world at 710k transactions per second. 710k TPS is achieved by encoding the passage of time as data.",
-    "explorer": "https://explorer.solana.com/address/EaqFYzBcP2ySSxeRuE1JTpoztjD1bMrtbaS5cTtvKFEx",
     "symbol": "RSL",
-    "type": "coin",
+    "type": "SPL",
     "decimals": 6,
+    "description": "Token da galera, do povo, do mundo.",
+    "website": "https://tokenresil.com/",
+    "explorer": "https://solscan.io/token/EaqFYzBcP2ySSxeRuE1JTpoztjD1bMrtbaS5cTtvKFEx",
     "status": "active",
-    "tags": [
-        "staking-native"
-    ],
+    "holders": 13,
+    "id": "EaqFYzBcP2ySSxeRuE1JTpoztjD1bMrtbaS5cTtvKFEx",
     "links": [
         {
-            "name": "github",
-            "url": "https://github.com/resilbrasil"
-        },
-        {
-            "name": "x",
+            "name": "twitter",
             "url": "https://x.com/tokenresil"
         },
         {
-            "name": "reddit",
-            "url": "https://reddit.com/r/tokenresil"
+            "name": "telegram",
+            "url": "https://t.me/tokenresil"
         }
-    ]
+    ],
+    "tags": ["governance"]
 }
