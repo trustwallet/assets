@@ -6,11 +6,17 @@
     "description": "Token da galera, do povo, do mundo.",
     "website": "https://tokenresil.com/",
     "explorer": "https://solscan.io/token/EaqFYzBcP2ySSxeRuE1JTpoztjD1bMrtbaS5cTtvKFEx",
-    "id": "EaqFYzBcP2ySSxeRuE1JTpoztjD1bMrtbaS5cTtvKFEx",
-    "links": {
-        "twitter": "https://twitter.com/tokenresil",
-        "telegram": "https://t.me/tokenresil"
-    },
     "status": "active",
+    "id": "EaqFYzBcP2ySSxeRuE1JTpoztjD1bMrtbaS5cTtvKFEx",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/tokenresil"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/tokenresil"
+        }
+    ],
     "tags": ["governance"]
 }
