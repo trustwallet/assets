@@ -1,6 +1,5 @@
 {
   "name": "Bitcoin Zed",
-  "type": "BEP20",
   "symbol": "BTCz",
   "decimals": 18,
   "status": "active",
@@ -18,12 +17,8 @@
       "url": "https://bitcoinzed.site"
     },
     {
-      "name": "telegram",
-      "url": "https://t.me/btcz"
-    },    
-    {
-      "name": "twitter",
-      "url": "https://x.com/btcz"
+      "name": "github",
+      "url": "https://github.com/tcshibato"
     }
   ]
 }
