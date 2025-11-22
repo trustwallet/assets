@@ -1,6 +1,7 @@
 {
   "name": "Bitcoin Zed",
   "symbol": "BTCz",
+  "type": "BEP20",
   "decimals": 18,
   "status": "active",
   "id": "0xC3B119B72687a4f1b5887E526A5D85bEd6D8d5B7",
@@ -8,12 +9,11 @@
   "description": "Bitcoin Zed is an experimental BEP20 token on BNB Smart Chain.",
   "explorer": "https://bscscan.com/token/0xC3B119B72687a4f1b5887E526A5D85bEd6D8d5B7",
   "tags": [
-    "defi",
-    "community"
+    "defi"
   ],
   "links": [
     {
-      "name": "website",
+      "name": "docs",
       "url": "https://bitcoinzed.site"
     },
     {
