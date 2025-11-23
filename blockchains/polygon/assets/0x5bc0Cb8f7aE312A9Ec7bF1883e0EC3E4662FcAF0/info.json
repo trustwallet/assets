@@ -3,17 +3,20 @@
   "type": "POLYGON",
   "symbol": "THRN",
   "decimals": 18,
-  "website": "",
+  "website": "https://github.com/glizzard27/Project-Theron",
   "description": "The Strategic Hunter - A cryptocurrency token designed for strategic traders who hunt for opportunities in the crypto market. Built on Polygon for fast and low-cost transactions.",
   "explorer": "https://polygonscan.com/token/0x5bc0Cb8f7aE312A9Ec7bF1883e0EC3E4662FcAF0",
   "status": "active",
   "id": "0x5bc0Cb8f7aE312A9Ec7bF1883e0EC3E4662FcAF0",
   "tags": [
     "defi",
-    "polygon",
     "erc20"
   ],
   "links": [
+    {
+      "name": "github",
+      "url": "https://github.com/glizzard27/Project-Theron"
+    },
     {
       "name": "polygonscan",
       "url": "https://polygonscan.com/token/0x5bc0Cb8f7aE312A9Ec7bF1883e0EC3E4662FcAF0"
