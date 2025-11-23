@@ -1,17 +1,12 @@
 {
-  "name": "Konbeck Token",
+  "name": "KONBECK Token",
   "symbol": "KONB",
-  "type": "ERC20",
   "decimals": 18,
-  "description": "Official token of Konbeck Garage, the Web3 Moto Experience. A community-driven project combining racing passion, NFTs, and a real-world connected ecosystem.",
-  "website": "https://konbeck.com",
-  "explorer": "https://polygonscan.com/token/0x3d03D969Ce65b3DBB4FccF5a51d40BeE5820EA44",
   "status": "active",
   "id": "0x3d03D969Ce65b3DBB4FccF5a51d40BeE5820EA44",
-  "tags": [
-    "defi",
-    "nft"
-  ],
+  "description": "Official token of Konbeck Garage, a community-driven Web3 motorcycle ecosystem.",
+  "website": "https://konbeck.com",
+  "explorer": "https://polygonscan.com/token/0x3d03D969Ce65b3DBB4FccF5a51d40BeE5820EA44",
   "links": [
     {
       "name": "twitter",
@@ -20,10 +15,9 @@
     {
       "name": "telegram",
       "url": "https://t.me/konbeckWeb3Garage"
-    },
-    {
-      "name": "youtube",
-      "url": "https://youtube.com/@konbeck22"
     }
+  ],
+  "tags": [
+    "community"
   ]
 }
