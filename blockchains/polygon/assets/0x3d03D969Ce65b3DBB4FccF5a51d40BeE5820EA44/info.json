@@ -1,19 +1,20 @@
 {
-  "name": "KONBECK Token",
+  "name": "Konbeck Token",
   "symbol": "KONB",
+  "type": "ERC20",
   "decimals": 18,
-  "description": "Official token of Konbeck Garage, the Web3 Moto Experience. A community-driven project combining racing passion, innovation and real-world connected ecosystem.",
+  "description": "Official token of Konbeck Garage, the Web3 Moto Experience. A community-driven project combining racing passion, innovation and a real-world connected ecosystem.",
   "website": "https://konbeck.com",
-  "explorer": "https://polygonscan.com/token/0x3d03D969Ce65b3DBB4FccF5a51d40BeE5820EA44",
-  "type": "token",
+  "explorer": "https://etherscan.io/token/0x3d03D969Ce65b3DBB4FccF5a51d40BeE5820EA44",
+  "status": "active",
+  "id": "0x3d03D969Ce65b3DBB4FccF5a51d40BeE5820EA44",
+  "tags": [
+    "token"
+  ],
   "links": [
     {
-      "name": "youtube",
-      "url": "https://youtube.com/@konbeck22"
-    },
-    {
       "name": "twitter",
-      "url": "https://x.com/konbeckcom22"
+      "url": "https://x.com/konbeckcom22?s=21"
     }
   ]
 }
