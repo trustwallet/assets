@@ -1,25 +1,34 @@
 {
-    "name": "Trust Wallet",
-    "symbol": "TWT",
+    "name": "Trust Wallet (Wormhole)",
     "type": "SPL",
+    "symbol": "TWT",
     "decimals": 8,
-    "description": "Utility token to increase adoption of cryptocurrency.",
-    "website": "https://trustwallet.com",
+    "website": "https://solscan.io/token/HZNpqL7RT9gxf9eWoWsWzC5DfjzQ41XTQgEA7p3VzaaD",
+    "description": "https://solscan.io/token/HZNpqL7RT9gxf9eWoWsWzC5DfjzQ41XTQgEA7p3VzaaD",
     "explorer": "https://solscan.io/token/HZNpqL7RT9gxf9eWoWsWzC5DfjzQ41XTQgEA7p3VzaaD",
     "status": "active",
     "id": "HZNpqL7RT9gxf9eWoWsWzC5DfjzQ41XTQgEA7p3VzaaD",
     "links": [
         {
-            "name": "github",
-            "url": "https://github.com/trustwallet/"
-        },
-        {
             "name": "x",
-            "url": "https://x.com/trustwallet"
+            "url": "https://x.com/token/HZNpqL7RT9gxf9eWoWsWzC5DfjzQ41XTQgEA7p3VzaaD"
         },
         {
-            "name": "reddit",
-            "url": "https://reddit.com/r/trustapp"
+            "name": "discord",
+            "url": "https://discord.com/token/HZNpqL7RT9gxf9eWoWsWzC5DfjzQ41XTQgEA7p3VzaaD"
         }
+    ],
+    "tags": [
+        "stablecoin",
+        "synthetics",
+        "wrapped",
+        "nft",
+        "defi",
+        "governance",
+        "staking",
+        "staking-native",
+        "nsfw",
+        "privacy",
+        "RWA"
     ]
 }
