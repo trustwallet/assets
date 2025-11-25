@@ -1,25 +1,14 @@
 {
-  "name": "AIF",
-  "symbol": "AIF",
-  "type": "BEP20",
-  "decimals": 18,
-  "website": "https://www.olafei.org",
-  "explorer": "https://bscscan.com/token/",
-  "status": "active",
-  "id": "0xA0efEEc3b2a0B58AFdB48785c77C8F8032cDd4e4",
-  "links": [
-    {
-      "name": "telegram",
-      "url": "https://t.me/AIF15688"
-    },
-    {
-      "name": "github",
-      "url": "https://github.com/fc15696437721-lang" 
-    }
-  ],
-  "tags": [
-    "defi",
-    "token",
-    "community"
-  ]
+    "name": "AIF",
+    "type": "BEP20",
+    "symbol": "AIF",
+    "decimals": 18,
+    "website": "https://www.olafei.org/",
+    "description": "AIF (AIF) is an AI-powered digital asset integrating intelligent analytics and decentralized finance.",
+    "explorer": "https://bscscan.com/token/0xA0efEEc3b2a0B58AFdB48785c77C8F8032cDd4e4",
+    "status": "active",
+    "id": "0xA0efEEc3b2a0B58AFdB48785c77C8F8032cDd4e4",
+    "tags": [
+        "defi"
+    ]
 }
