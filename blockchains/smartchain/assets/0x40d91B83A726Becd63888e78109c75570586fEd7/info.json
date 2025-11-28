@@ -1,25 +1,32 @@
 {
-  "name": "Trether USD",
-  "symbol": "USTD",
-  "type": "BEP20",
-  "decimals": 18,
-  "description": "Trether USD ($USTD) is a USD-anchored digital asset engineered for high-throughput, low-cost, and globally accessible value transfer.",
-  "website": "https://www.tretherusd.io/",
-  "explorer": "https://bscscan.com/token/0x40d91B83A726Becd63888e78109c75570586fEd7",
-  "status": "active",
-  "id": "0x40d91B83A726Becd63888e78109c75570586fEd7",
-  "links": [
-    {
-      "name": "Telegram",
-      "url": "https://t.me/TretherUSD"
-    },
-    {
-      "name": "Twitter",
-      "url": "https://x.com/TretherUSD"
-    },
-    {
-      "name": "email",
-      "url": "mailto:tretherusd@protonmail.com"
-    }
-  ]
+    "name": "Trether USD",
+    "type": "BEP20",
+    "symbol": "USTD",
+    "decimals": 18,
+    "website": "https://www.tretherusd.io",
+    "description": "Trether USD ($USTD) is a USD-anchored digital asset engineered for high-throughput, low-cost, and globally accessible value transfer.",
+    "explorer": "https://bscscan.com/token/0x40d91B83A726Becd63888e78109c75570586fEd7",
+    "status": "active",
+    "id": "0x40d91B83A726Becd63888e78109c75570586fEd7",
+    "links": [
+        {
+            "name": "x",
+            "url": "https://x.com/TretherUSD"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/TretherUSD"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/TretherUSD"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://tretherusd.notion.site/Trether-USD-USTD-A-Stable-Digital-Asset-for-the-Next-Era-of-Decentralized-Finance-White-Paper-2a5c47d902e2804983edc43eb56333a3"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
 }
