@@ -1,11 +1,20 @@
 {
   "name": "AI Smart Fund",
-  "symbol": "AIF",
-  "type": "BEP20",
-  "decimals": 18,
-  "description": "AI Smart Fund is a blockchain-based intelligent investment token.",
   "website": "https://bscscan.com/token/0xD42b9594B75Bc9DB3944098B454Bbc0Ee2df24eb",
+  "description": "AIF (AIF) is an AI-powered digital asset integrating intelligent analytics and decentralized finance.",
   "explorer": "https://bscscan.com/token/0xD42b9594B75Bc9DB3944098B454Bbc0Ee2df24eb",
+  "type": "BEP20",
+  "symbol": "AIF",
+  "decimals": 18,
   "status": "active",
-  "id": "0xd42b9594b75bc9db3944098b454bbc0ee2df24eb"
+  "id": "0xD42b9594B75Bc9DB3944098B454Bbc0Ee2df24eb",
+  "tags": [
+    "RWA"
+  ],
+  "links": [
+    {
+      "name": "Telegram",
+      "url": "https://t.me/AIF15688"
+    }
+  ]
 }
