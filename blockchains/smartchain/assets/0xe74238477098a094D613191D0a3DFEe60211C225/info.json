@@ -1,21 +1,13 @@
 {
   "name": "MJM",
   "symbol": "MJM",
-  "type": "BEP20",
   "decimals": 18,
-  "description": "MJM is a meme token launched on BNB Chain powered by its community.",
-  "website": "https://your-mjm-website.com",
-  "explorer": "https://bscscan.com/token/0xe74238477098a094D613191D0a3DFEe60211C225",
   "status": "active",
-  "id": "0xe74238477098a094D613191D0a3DFEe60211C225",
-  "links": [
-    {
-      "name": "twitter",
-      "url": "https://twitter.com/"
-    },
-    {
-      "name": "telegram",
-      "url": "https://t.me/"
-    }
-  ]
+  "id": "0xe74238477098a094d613191d0a3dfee60211c225",
+  "description": "MJM is a meme token powered by community and utility expansion.",
+  "tags": ["meme", "community", "mjm"],
+  "links": {
+    "explorer": "https://bscscan.com/token/0xe74238477098a094D613191D0a3DFEe60211C225",
+    "website": "https://mjm.community",
+  }
 }
