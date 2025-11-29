@@ -1,13 +1,40 @@
 {
-  "name": "LITTLES",
-  "symbol": "LITL",
-  "type": "BEP20",
-  "decimals": 18,
-  "status": "active",
-  "id": "0x100fCAAfD8e00E18f685C705B89fB0A8e6545901",
-  "links": [
-    { "name": "website", "url": "https://littlescoin.org" },
-    { "name": "twitter", "url": "https://twitter.com/littlescoin" }
-  ],
-  "tags": ["defi"]
+    "name": "LITTLES",
+    "symbol": "LITL",
+    "type": "BEP20",
+    "decimals": 18,
+    "website": "https://littlescoin.org",
+    "description": "LITTLES is a social impact token created to support families of children fighting cancer.",
+    "explorer": "https://bscscan.com/token/0x100fCAAfd8e00E18f685C705B89fB0A8e6545901",
+    "status": "active",
+    "id": "0x100fCAAfd8e00E18f685C705B89fB0A8e6545901",
+
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/LITTLEScoin"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/+QT0KYaTjOrRiNTZh"
+        },
+        {
+            "name": "instagram",
+            "url": "https://instagram.com/littlescoin"
+        },
+        {
+            "name": "youtube",
+            "url": "https://youtube.com/@littlescoin"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/LITTLEScoin"
+        }
+    ],
+
+    "tags": [
+        "defi",
+        "charity",
+        "social"
+    ]
 }
