@@ -6,10 +6,16 @@
   "description": "SeekIntellect (SINTEL) is a BEP-20 token created on Binance Smart Chain.",
   "website": "https://SEEKINTELLECT.com",
   "explorer": "https://bscscan.com/token/0x85FB97081611792c0b28FCaFE18F122Aa1DAA2df",
-  "links": {
-    "github": "https://github.com/seekintellect1-debug",
-    "telegram": "https://t.me/seekintellect"
-  },
+  "links": [
+    {
+      "name": "github",
+      "url": "https://github.com/seekintellect1-debug"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/seekintellect"
+    }
+  ],
   "tags": ["defi"],
   "status": "active",
   "id": "0x85FB97081611792c0b28FCaFE18F122Aa1DAA2df"
