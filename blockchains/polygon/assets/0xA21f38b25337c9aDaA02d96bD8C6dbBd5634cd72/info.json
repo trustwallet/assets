@@ -1,7 +1,7 @@
 {
   "name": "NOVA",
   "symbol": "NOVA",
-  "type": "coin",
+  "type": "ERC20",
   "decimals": 18,
   "status": "active",
   "id": "0xA21f38b25337c9aDaA02d96bD8C6dbBd5634cd72",
@@ -9,15 +9,9 @@
   "description": "NOVA is a community powered digital currency.",
   "explorer": "https://polygonscan.com/token/0xA21f38b25337c9aDaA02d96bD8C6dbBd5634cd72",
   "image": "https://i.ibb.co/Ndp2YLW/image-27-1.png",
-  "links": {
-    "website": "https://sites.google.com/view/nova-token-official/home",
-    "github": "https://github.com/saiyedfaizanalidatari-cmd",
-    "telegram": "https://t.me/YourTokenGroup",
-    "twitter": "https://twitter.com/YourTokenHandle"
-  },
-  "tags": [
-    "community",
-    "polygon",
-    "crypto"
-  ]
+  "links": [
+    { "name": "website", "url": "https://sites.google.com/view/nova-token-official/home" },
+    { "name": "github", "url": "https://github.com/saiyedfaizanalidatari-cmd" }
+  ],
+  "tags": ["crypto", "polygon", "community"]
 }
