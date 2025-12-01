@@ -1,20 +1,21 @@
 {
   "name": "AI Smart Fund",
-  "website": "https://olafei.org",
-  "description": "AIF (AIF) is an AI-powered digital asset integrating intelligent analytics and decentralized finance.",
-  "explorer": "https://bscscan.com/token/0xD42b9594B75Bc9DB3944098B454Bbc0Ee2df24eb",
-  "type": "BEP20",
   "symbol": "AIF",
+  "type": "BEP20",
   "decimals": 18,
+  "description": "AIF is a Web3 AI Smart Fund token designed for intelligent asset management.",
+  "website": "https://dexscreener.com/bsc/0xad031c7e5ee55f81c2de446e02e1e2fcdd96b4ac",
+  "explorer": "https://bscscan.com/token/0xD42b9594B75Bc9DB3944098B454Bbc0Ee2df24eb",
   "status": "active",
   "id": "0xD42b9594B75Bc9DB3944098B454Bbc0Ee2df24eb",
-  "tags": [
-    "defi"
-  ],
   "links": [
     {
-      "name": "Telegram",
+      "name": "telegram",
       "url": "https://t.me/AIF15688"
+    },
+    {
+      "name": "twitter",
+      "url": "https://x.com/aismartfund?s=11"
     }
   ]
 }
