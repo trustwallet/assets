@@ -1,13 +1,16 @@
 {
-    "name": "Phala Network",
-    "website": "https://phala.com/",
-    "description": "The New Cloud for Confidential AI",
-    "explorer": "https://bscscan.com/token/0x0112e557d400474717056c4e6d40edd846f38351",
-    "type": "BEP20",
-    "symbol": "PHA",
+    "name": "Phala Vault",
+    "symbol": "vPHA",
+    "type": "ERC20",
     "decimals": 18,
+    "description": "Vault contract for staking PHA tokens provided by Phala Network.",
+    "website": "https://app.phala.network/staking",
+    "explorer": "https://etherscan.io/token/0x21d6eC8fc14CaAcc55aFA23cBa66798DAB3a0ec0",
+    "tags": [
+        "staking"
+    ],
     "status": "active",
-    "id": "0x0112e557d400474717056C4e6D40eDD846F38351",
+    "id": "0x21d6eC8fc14CaAcc55aFA23cBa66798DAB3a0ec0",
     "links": [
         {
             "name": "github",
@@ -31,15 +34,7 @@
         },
         {
             "name": "docs",
-            "url": "https://docs.phala.com/"
-        },
-        {
-            "name": "coinmarketcap",
-            "url": "https://coinmarketcap.com/currencies/phala-network/"
-        },
-        {
-            "name": "coingecko",
-            "url": "https://coingecko.com/en/coins/phala-network"
+            "url": "https://docs.phala.com/network/overview/phala-staking"
         }
     ]
 }
