@@ -1,12 +1,13 @@
 {
   "name": "Euro Finance",
   "symbol": "WEURC",
+  "type": "BEP20",
   "decimals": 18,
   "description": "Euro Finance (WEURC) is an independent DeFi project with a EUR-oriented token on BNB Smart Chain, not affiliated with Circle or Circle's EURC.",
   "website": "https://europa-club.org/",
   "explorer": "https://bscscan.com/token/0x6ec6968D9869e024c7B05429fFcB8e8794c610c6",
   "status": "active",
-  "type": "token",
+  "id": "0x6ec6968D9869e024c7B05429fFcB8e8794c610c6",
   "links": [
     {
       "name": "twitter",
