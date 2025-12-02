@@ -7,11 +7,20 @@
   "website": "https://ciwi.family",
   "explorer": "https://bscscan.com/token/0xFC02274a97c5CAFaB53087D721A1A886a2C6A6F3",
   "id": "0xFC02274a97c5CAFaB53087D721A1A886a2C6A6F3",
-  "links": {
-    "website": "https://ciwi.family",
-    "twitter": "https://twitter.com/ciwiofficial",
-    "telegram": "https://t.me/ciwifamily"
-  },
+  "links": [
+    {
+      "name": "website",
+      "url": "https://ciwi.family"
+    },
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/ciwiofficial"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/ciwifamily"
+    }
+  ],
   "tags": [
     "memecoin"
   ]
