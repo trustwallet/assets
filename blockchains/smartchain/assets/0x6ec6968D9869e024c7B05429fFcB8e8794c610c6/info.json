@@ -1,38 +1,35 @@
 {
-    "name": "Euro Finance",
-    "type": "BEP20",
-    "symbol": "EURC",
-    "decimals": 18,
-    "website": "https://europa-club.org/",
-    "description": "description contains not allowed characters (new line, double space)",
-    "explorer": "https://bscscan.com/token/tokenholderchart/0x6ec6968D9869e024c7B05429fFcB8e8794c610c6?range=10560",
-    "status": "active",
-    "id": "0x6ec6968D9869e024c7B05429fFcB8e8794c610c6",
-    "links": [
-        {
-            "name": "x",
-            "url": "https://x.com/EuroFinanceClub"
-        },
-        {
-            "name": "github",
-            "url": "https://github.com/europa-club"
-        },
-        {
-            "name": "telegram",
-            "url": "https://t.me/eurofindefi"
-        },
-        {
-            "name": "whitepaper",
-            "url": "https://europa-club.github.io/euro-finance-contracts/eurofinance-whitepaper-tokenomics.html"
-        },
-        {
-            "name": "coinmarketcap",
-            "url": "https://coinmarketcap.com/euro-finance/"
-        },
-        {
-            "name": "telegram_news",
-            "url": "https://t.me/eurofindefi"
-        }
-    ],
-    "tags": []
+  "name": "Euro Finance",
+  "symbol": "WEURC",
+  "decimals": 18,
+  "description": "Euro Finance (WEURC) is an independent DeFi project with a EUR-oriented token on BNB Smart Chain, not affiliated with Circle or Circle's EURC.",
+  "website": "https://europa-club.org/",
+  "explorer": "https://bscscan.com/token/0x6ec6968D9869e024c7B05429fFcB8e8794c610c6",
+  "status": "active",
+  "type": "token",
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://x.com/EuroFinanceClub"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/eurofindefi"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/europa-club"
+    },
+    {
+      "name": "coinmarketcap",
+      "url": "https://coinmarketcap.com/currencies/euro-finance/"
+    },
+    {
+      "name": "whitepaper",
+      "url": "https://europa-club.github.io/euro-finance-contracts/eurofinance-whitepaper-tokenomics.html"
+    }
+  ],
+  "tags": [
+    "defi"
+  ]
 }
