@@ -3,13 +3,22 @@
   "symbol": "NVX",
   "type": "TRC20",
   "decimals": 6,
-  "description": "NOVS is a community-driven token built on the TRON blockchain.",
-  "website": "",
-  "explorer": "https://tronscan.org/#/token20/TCj25XvrzuPgRS9H6KgdiBHQc0bCYAQpABp",
+  "description": "NOVS is a community-driven TRC20 token built on the TRON blockchain.",
+  "website": "https://novsnvxtoken.com",
+  "explorer": "https://tronscan.org/#/token20/TCj25XvrzuPgRS9H6KgdiBHQcbCYAQpABp",
   "status": "active",
-  "id": "TCj25XvrzuPgRS9H6KgdiBHQc0bCYAQpABp",
+  "id": "TCj25XvrzuPgRS9H6KgdiBHQcbCYAQpABp",
+  "links": [
+    {
+      "name": "Twitter",
+      "url": "https://x.com/TncyUs63958"
+    },
+    {
+      "name": "Telegram",
+      "url": "https://t.me/NOVS_NVX"
+    }
+  ],
   "tags": [
-    "defi",
-    "community"
+    "defi"
   ]
 }
