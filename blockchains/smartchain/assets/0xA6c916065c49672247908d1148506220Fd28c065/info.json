@@ -1,19 +1,18 @@
 {
-  "asset_type": "token",
-  "chain": "bsc",
-  "address": "0xA6c916065c49672247908d1148506220Fd28c065",
+  "type": "BEP20",
+  "token_type": "token",  
+  "contract_address": "0xA6c916065c49672247908d1148506220Fd28c065",
   "name": "Dumb Panda",
   "symbol": "DMP",
   "decimals": 18,
-  "description": "Dumb Panda is a community-driven token. Pre-launch: registering metadata and logo before initial distribution.",
-  "website": "https://dumbpanda.github.io/dumbpanda.io",
-  "explorer": "https://bscscan.com/token/0xA6c916065c49672247908d1148506220Fd28c065",
-  "socials": {
+  "description": "...",
+  "links": {
+    "website": "https://dumbpanda.github.io/dumbpanda.io",
+    "bscscan": "https://bscscan.com/token/0xA6c916065c49672247908d1148506220Fd28c065",
     "twitter": "https://x.com/AliR2Crypto",
-    "telegram": "https://t.me/dumbpandacrypto",
-    "github": "https://github.com/dumbpandacrypto"  
+    "telegram": "https://t.me/dumbpandacrypto"
   },
-  "tags": ["defi", "community"],
-  "holders": 3,  
+  "tags": ["defi"],
+  "holder_count": 3,
   "status": "active"
 }
