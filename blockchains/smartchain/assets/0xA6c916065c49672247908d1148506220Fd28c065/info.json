@@ -4,12 +4,24 @@
   "name": "Dumb Panda",
   "symbol": "DMP",
   "decimals": 18,
-  "description": "Dumb Panda is a community-driven token.",
+  "description": "Pre-launch: registering metadata and logo before initial distribution.",
   "links": [
-    {"name": "website", "url": "https://dumbpanda.github.io/dumbpanda.io"},
-    {"name": "bscscan", "url": "https://bscscan.com/token/0xA6c916065c49672247908d1148506220Fd28c065"},
-    {"name": "twitter", "url": "https://twitter.com/AliR2Crypto"},
-    {"name": "telegram", "url": "https://t.me/dumbpandacrypto"}
+    {
+      "name": "website",
+      "url": "https://dumbpanda.github.io/dumbpanda.io"
+    },
+    {
+      "name": "explorer",
+      "url": "https://bscscan.com/0xA6c916065c49672247908d1148506220Fd28c065"
+    },
+    {
+      "name": "twitter",
+      "url": "https://x.com/AliR2Crypto"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/dumbpandacrypto"
+    }
   ],
   "tags": ["defi"],
   "holders": 3,
