@@ -1,0 +1,36 @@
+{
+    "name": "USDGOLD",
+    "type": "BEP20",
+    "symbol": "USDG",
+    "decimals": 18,
+    "website": "https://usdgdefi.com",
+    "description": "Digital-gold DeFi token on BNB Smart Chain with transparent tokenomics.",
+    "explorer": "https://bscscan.com/token/0x0caf8956cd1a219cc4e56005593f80f221b5e666",
+    "status": "active",
+    "id": "0x0Caf8956cd1a219Cc4e56005593F80f221B5E666",
+    "links": [
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/usdgold/"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/usdggold"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://usdgdefi.com/whitepaper"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/usdgoldmem"
+        },
+        {
+            "name": "docs",
+            "url": "https://github.com/usdgoldmem/usdgold-info/raw/main/USDG-BSC-AUDIT-70599982%20(1).pdf"
+        }
+    ],
+    "tags": [
+        "defi"
+    ]
+}
