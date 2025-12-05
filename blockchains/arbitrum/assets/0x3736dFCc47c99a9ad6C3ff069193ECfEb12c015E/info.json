@@ -1,15 +1,18 @@
 {
-  "name": "Astro",
-  "symbol": "ASTRO",
-  "decimals": 18,
-  "address": "0x3736dFCc47c99a9ad6C3ff069193ECfEb12c015E",
+    "name": "Astro",
+    "symbol": "ASTRO",
+    "type": "ERC20",
+    "decimals": 18,
+    "description": "Astro is a utility token created for learning, experimentation and decentralized interactions.",
+    "github": "https://github.com/gabrieluquis2023-art"
+  "website": "https://www.instagram.com/novax2900",
+    "explorer": "https://arbiscan.io/token/0x3736dFCc47c99a9ad6C3ff069193ECfEb12c015E",
+    "status": "active",
+    "id": "0x3736dFCc47c99a9ad6C3ff069193ECfEb12c015E"
   "chainId": 42161,
   "logoURI": "https://raw.githubusercontent.com/gabrieluquis2023-art/assets/refs/heads/master/blockchains/arbitrum/assets/0x3736dFCc47c99a9ad6C3ff069193ECfEb12c015E/logo.png",
   "explorer": "https://arbiscan.io/token/0x3736dFCc47c99a9ad6C3ff069193ECfEb12c015E",
-  "socials": {
-    "instagram": "https://www.instagram.com/novax2900",
-    "github": "https://github.com/gabrieluquis2023-art"
-  },
-  "tags": ["defi", "utility", "astro-token"],
+"tags": ["defi", "utility", "astro-token"],
   "holders": 11
+
 }
