@@ -1,21 +1,21 @@
 {
-  "id": "astro-token-arbitrum",
+  "id": "astro-arbitrum",
   "name": "Astro",
   "symbol": "ASTRO",
   "decimals": 18,
   "address": "0x3736dFCc47c99a9ad6C3ff069193ECfEb12c015E",
   "chainId": 42161,
-  "type": "token",
-  "description": "Astro es un token de utilidad en la red Arbitrum para la plataforma Astro X",
+  "type": "ERC20",
+  "description": "Astro es un token de utilidad de la plataforma Nova X en Arbitrum.",
   "status": "active",
   "logoURI": "https://raw.githubusercontent.com/gabrieluquis2023-art/assets/main/blockchains/arbitrum/assets/0x3736dFCc47c99a9ad6C3ff069193ECfEb12c015E/logo.png",
-  "website": "https://www.instagram.com/novax2900",
+  "website": "https://astro.io",
   "explorer": "https://arbiscan.io/token/0x3736dFCc47c99a9ad6C3ff069193ECfEb12c015E",
   "socials": {
-    "twitter": "https://twitter.com/novax2900",
-    "github": "https://github.com/gabrieluquis2023-art",
-    "instagram": "https://www.instagram.com/novax2900"
+    "instagram": "https://www.instagram.com/novax2900/",
+    "telegram": "https://t.me/CesarlLuquis",
+    "github": "https://github.com/gabrieluquis2023-art"
   },
-  "tags": ["defi", "astro-token"],
+  "tags": ["defi"],
   "holders": 11
 }
