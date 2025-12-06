@@ -1,14 +1,45 @@
 {
     "name": "Binance USD",
-    "website": "https://paxos.com/busd/",
-    "description": "BUSD is a stablecoin issued by Paxos in partnership with Binance.",
+    "website": "https://www.paxos.com/busd/",
+    "description": "Binance USD (BUSD) is a USD-backed stablecoin that is issued by Paxos in partnership with Binance and regulated by the New York State Department of Financial Services.",
     "explorer": "https://etherscan.io/token/0x4Fabb145d64652a948d72533023f6E7A623C7C53",
-    "research": "https://research.binance.com/en/projects/binance-usd",
     "type": "ERC20",
     "symbol": "BUSD",
     "decimals": 18,
     "status": "active",
     "id": "0x4Fabb145d64652a948d72533023f6E7A623C7C53",
+    "links": [
+        {
+            "name": "x",
+            "url": "https://x.com/PaxosGlobal"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/binance-usd/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/binance-usd/"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+{
+    "name": "Binance USD",
+    "symbol": "BUSD",
+    "type": "ERC20",
+    "decimals": 18,
+    "website": "https://paxos.com/busd/",
+    "explorer": "https://etherscan.io/token/0x4Fabb145d64652a948d72533023f6E7A623C7C53",
+    "status": "active",
+    "id": "0x4Fabb145d64652a948d72533023f6E7A623C7C53",
+    "links": [
+        {
+            "name": "research",
+            "url": "https://research.binance.com/en/projects/binance-usd"
+        }
+    ],
     "tags": [
         "stablecoin"
     ]

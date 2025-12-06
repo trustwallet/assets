@@ -1,7 +1,7 @@
 {
     "name": "Trust Wallet: Ethereum",
     "logoURI": "https://trustwallet.com/assets/images/favicon.png",
-    "timestamp": "2025-11-02T16:12:22.273673",
+    "timestamp": "2025-12-06T21:12:45.000000",
     "tokens": [
         {
             "asset": "c60_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
@@ -3024,15 +3024,6 @@
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0x6Bba316c48b49BD1eAc44573c5c871ff02958469/logo.png"
         },
         {
-            "asset": "c60_t0x4Fabb145d64652a948d72533023f6E7A623C7C53",
-            "type": "ERC20",
-            "address": "0x4Fabb145d64652a948d72533023f6E7A623C7C53",
-            "name": "Binance USD",
-            "symbol": "BUSD",
-            "decimals": 18,
-            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0x4Fabb145d64652a948d72533023f6E7A623C7C53/logo.png"
-        },
-        {
             "asset": "c60_t0x9E32b13ce7f2E80A01932B42553652E053D6ed8e",
             "type": "ERC20",
             "address": "0x9E32b13ce7f2E80A01932B42553652E053D6ed8e",
@@ -3115,7 +3106,7 @@
         }
     ],
     "version": {
-        "major": 15,
+        "major": 16,
         "minor": 0,
         "patch": 0
     }
