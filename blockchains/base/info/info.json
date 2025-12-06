@@ -1,26 +1,24 @@
 {
-    "name": "Base",
-    "website": "https://base.org",
-    "description": "Base is a secure, low-cost, builder-friendly Ethereum L2 built to bring the next billion users onchain.",
-    "explorer": "https://basescan.org",
-    "research": "https://base.mirror.xyz",
-    "symbol": "ETH",
-    "type": "coin",
-    "coin_type": 8453,
+    "name": "Gold Digital Dinar",
+    "website": "https://gold-digital-dinar.com",
+    "description": "GDD is an ecosystem that opens new horizons for you, GDD is global platform dedicated to common men to make the rising crypto world handy & a utility platform.",
+    "explorer": "https://basescan.org/address/0x02780c931c8bd05878ff7e436b1df69ea6b20013",
+    "type": "BASE",
+    "symbol": "GDD",
     "decimals": 18,
     "status": "active",
-    "rpc_url": "https://base-mainnet.public.blastapi.io",
-    "tags": [
-        "dapp"
-    ],
+    "id": "0x02780c931c8Bd05878fF7e436B1dF69ea6B20013",
     "links": [
         {
-            "name": "x",
-            "url": "https://x.com/buildonbase"
+            "name": "telegram",
+            "url": "https://t.me/GoldDigitalDinar"
         },
         {
-            "name": "github",
-            "url": "https://github.com/base-org"
+            "name": "x",
+            "url": "https://x.com/gold_dinar_2025"
         }
+    ],
+    "tags": [
+        "staking"
     ]
 }
