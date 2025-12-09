@@ -4,7 +4,24 @@
   "symbol": "OKY101",
   "decimals": 18,
   "description": "OKY101 is a utility token built on the BNB Chain and designed for the OKAY101 ecosystem.",
-  "website": "https://masadis.com",
+   "links": [
+        {
+            "name": "x",
+            "url": "https://x.com/Token101318980"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/token101"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://masadis.com"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/token101"
+        }
+    ],
   "explorer": "https://bscscan.com/token/0xc6dbc5d22c2b45062de363e7734d2098c1c1b9d2",
   "status": "active",
   "id": "0xc6dbc5D22C2b45062de363E7734D2098c1c1B9d2",
