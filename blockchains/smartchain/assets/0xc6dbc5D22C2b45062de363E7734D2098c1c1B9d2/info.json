@@ -1,16 +1,14 @@
 {
-  "name": "OKY101",
-  "symbol": "OKY101",
+  "name": "OKAY101",
   "type": "BEP20",
+  "symbol": "OKY101",
   "decimals": 18,
-  "description": "OKY101, BNB Chain üzerinde oluşturulmuş bir yardımcı tokendir.",
-  "website": "https://token101.co",
-  "twitter": "https://x.com/Token101318980",
-  "telegram": "https://t.me/oky101token",
-  "github": "https://github.com/oky101",
-  "explorer": "https://bscscan.com/token/0x6C6dBC5d22c2b45062DE363E7734d2098c1c18B2",
+  "description": "OKY101 is a utility token built on the BNB Chain and designed for the OKAY101 ecosystem.",
+  "website": "https://masadis.com",
+  "explorer": "https://bscscan.com/token/0x6c6dbc5D22C2b45062de363E7734D2098c1c18D2",
   "status": "active",
-  "tags": ["community"],
-  "owner": "0x36b6a46d6b25bc4315cbedb7eae151bbd4be3ba2022fbde21761a970dec9735",
-  "id": "0x6C6dBC5d22c2b45062DE363E7734d2098c1c18B2"
+  "id": "0xc6dbc5D22C2b45062de363E7734D2098c1c1B9d2"
+  "tags": [
+        "stablecoin"
+    ]
 }
