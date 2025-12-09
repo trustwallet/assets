@@ -1,17 +1,36 @@
 {
-  "name": "Tethar USDT•",
-  "symbol": "USDT•",
-  "type": "BEP20",
-  "decimals": 18,
-  "description": "Tethar USDT• (USDT dot) is an independent BEP-20 token on BNB Smart Chain that targets a 1 USD price via USDT/USDT• liquidity on PancakeSwap. It is not affiliated with Tether or the original USDT stablecoin.",
-  "website": "https://usdt-dot.fluxionx.com",
-  "explorer": "https://bscscan.com/token/0x73dAD96ae4B1572a5C7c4a0616a5bDc07295B129",
-  "status": "active",
-  "id": "0x73dAD96ae4B1572a5C7c4a0616a5bDc07295B129",
-  "socials": {
-    "email": "hello@fluxionx.com",
-    "twitter": "https://x.com/Tethar_USDT_Dot",
-    "telegram": "https://t.me/Tethar_USDT_Dot",
-    "github": "https://github.com/Tethar-USDT-Dot",
-    "website": "https://usdt-dot.fluxionx.com"
+    "name": "Tethar USDT•",
+    "type": "BEP20",
+    "symbol": "USDT•",
+    "decimals": 18,
+    "website": "https://usdt-dot.fluxionx.com",
+    "description": "Tethar USDT• (USDT dot) is an independent BEP-20 token on BNB Smart Chain that targets a 1 USD price via USDT/USDT• liquidity on PancakeSwap. It is not affiliated with Tether or the original USDT stablecoin.",
+    "explorer": "https://bscscan.com/token/0x73dAD96ae4B1572a5C7c4a0616a5bDc07295B129",
+    "status": "active",
+    "id": "0x73dAD96ae4B1572a5C7c4a0616a5bDc07295B129",
+    "links": [
+        {
+            "name": "whitepaper",
+            "url": "https://tethar-usdt-dot.github.io/whitepaper"
+        },
+        {
+            "name": "x",
+            "url": "https://x.com/Tethar_USDT_Dot"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/Tethar_USDT_Dot"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/Tethar-USDT-Dot"
+        },
+        {
+            "name": "source_code",
+            "url": "https://github.com/Tethar-USDT-Dot/Source_code/tree/main"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
   }
