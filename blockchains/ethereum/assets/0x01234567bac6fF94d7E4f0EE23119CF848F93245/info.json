@@ -1,0 +1,24 @@
+{
+    "name": "ETH Blocks (ETHB)",
+    "type": "ERC20",
+    "symbol": "ETHB",
+    "decimals": 16,
+    "website": "https://www.etherscan",
+    "description": "{\n  \"version\": \"1\",\n  \"hash\": \"0x7f27ffbccbbf32b53697930c508137e451e8de080231008d945c6e3ed631b74a\",\n  \"attributes\": [\n    {\n      \"trait_type\": \"number\",\n      \"display_type\": \"number\",\n      \"value\": 199999\n    },\n    {\n      \"trait_type\": \"time\",\n      \"display_type\": \"date\",\n      \"value\": 1441661588\n    },\n    {\n      \"trait_type\": \"date\",\n      \"value\": \"9/7/2015\"\n    },\n    {\n      \"trait_type\": \"author\",\n      \"value\": \"0x7e6930b63d03e88f5928c5cd6ee3fcee4d714f7f\"\n    },\n    {\n      \"trait_type\": \"transactions\",\n      \"display_type\": \"number\",\n      \"value\": 0\n    },\n    {\n      \"trait_type\": \"Gas Used\",\n      \"display_type\": \"boost_percentage\",\n      \"max_value\": 100,\n      \"value\": 0\n    },\n    {\n      \"trait_type\": \"uncles\",\n      \"display_type\": \"number\",\n      \"value\": 0\n    },\n    {\n      \"trait_type\": \"sequence\",\n      \"value\": \"Prime\"\n    },\n    {\n      \"trait_type\": \"sequence\",\n      \"value\": \"Odd\"\n    }\n  ],\n  \"description\": \"Completed on 9/7/2015, this iconic piece of history included 0 transactions. Note the use of 0 in gas. With a size of 539 bytes, this immutable piece will look fantastic next to a wine fridge.\",\n  \"external_url\": \"https://www.myetherwallet.com/wallet/dapps/eth-blocks/block/199999\",\n  \"image\": \"ipfs://QmdQfDb41ngybq3YYjXiurpoAKa13kXPCAAr2hd7y6Cvad/image.png\",\n  \"name\": \"Block #199999\",\n  \"mintPrice\": \"0xb1a2bc2ec50000\",\n  \"block\": {\n    \"difficulty\": \"0x5adba636920\",\n    \"extraData\": \"0xd583010102844765746885676f312e35856c696e7578\",\n    \"gasLimit\": \"0x2fefd8\",\n    \"gasUsed\": \"0x0\",\n    \"hash\": \"0x7f27ffbccbbf32b53697930c508137e451e8de080231008d945c6e3ed631b74a\",\n    \"logsBloom\": \"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\",\n    \"miner\": \"0x7e6930b63d03e88f5928c5cd6ee3fcee4d714f7f\",\n    \"mixHash\": \"0x19023734f013aa6d156a6458073542144979bec68b848f216e9ba2bfb91bfb2a\",\n    \"nonce\": \"0x3844af5464887e6a\",\n    \"number\": \"0x30d3f\",\n    \"parentHash\": \"0x1d64ab47e3cc3bc09ba6e680b6c5e47086e3612c6d61fde379d1f916f9bec9f1\",\n    \"receiptsRoot\": \"0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421\",\n    \"sha3Uncles\": \"0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347\",\n    \"size\": \"0x21b\",\n    \"stateRoot\": \"0xe449d628c5dcd02f006ff794e39b98cda056786a2a36ce2121c027f77b9c983b\",\n    \"timestamp\": \"0x55ee0294\",\n    \"totalDifficulty\": \"0xa6d3e0979c85ade\",\n    \"transactions\": [],\n    \"transactionsRoot\": \"0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421\",\n    \"uncles\": []\n  }\n}",
+    "explorer": "https://etherscan.io/token/0x01234567bac6fF94d7E4f0EE23119CF848F93245",
+    "status": "active",
+    "id": "0x01234567bac6fF94d7E4f0EE23119CF848F93245",
+    "links": [
+        {
+            "name": "x",
+            "url": "https://x.com/myetherwallet"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/myetherwallet"
+        }
+    ],
+    "tags": [
+        "nft"
+    ]
+}
