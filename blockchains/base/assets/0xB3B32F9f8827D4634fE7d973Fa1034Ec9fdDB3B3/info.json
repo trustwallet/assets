@@ -1,14 +1,26 @@
 {
-    "name": "B3 (Base)",
-    "type": "BASE",
-    "symbol": "B3",
-    "decimals": 18,
-    "website": "https://www.b3.fun/",
-    "description": "Created by the ex-Base team, B3 is the first horizontally scaled, hyper-operable gaming ecosystem, built on top of Base",
-    "explorer": "https://basescan.org/token/0xB3B32F9f8827D4634fE7d973Fa1034Ec9fdDB3B3",
-    "status": "active",
-    "id": "0xB3B32F9f8827D4634fE7d973Fa1034Ec9fdDB3B3",
-    "tags": [
-        "gamefi"
-    ]
+  "name": "B3",
+  "website": "https://b3.fun/",
+  "description": "B3 is a layer 3 gaming ecosystem. We believe the future of gaming is open, connected, and shaped by the players themselves",
+  "explorer": "https://basescan.org/token/0xB3B32F9f8827D4634fE7d973Fa1034Ec9fdDB3B3",
+  "type": "BASE",
+  "symbol": "B3",
+  "decimals": 18,
+  "status": "active",
+  "id": "0xB3B32F9f8827D4634fE7d973Fa1034Ec9fdDB3B3",
+  "tags": [
+    "gamefi",
+    "defi",
+    "governance"
+  ],
+  "links": [
+    {
+      "name": "x",
+      "url": "https://x.com/b3dotfun"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/b3-fun"
+    }
+  ]
 }
