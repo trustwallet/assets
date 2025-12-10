@@ -3,9 +3,24 @@
   "symbol": "AU",
   "type": "POLYGON",
   "decimals": 18,
+  "description": "Autody (AU) is a digital currency designed for payments and use inside the Autody ecosystem.",
   "website": "https://autody.online",
   "explorer": "https://polygonscan.com/token/0xa2746a48211cd3cb0fc6356deb10d79feb792c57",
-  "description": "Autody (AU) is a digital currency designed for payments and use inside the Autody ecosystem.",
   "status": "active",
-  "id": "0xa2746a48211cd3cb0fc6356deb10d79feb792c57"
+  "id": "0xa2746a48211cd3cb0fc6356deb10d79feb792c57",
+
+  "links": [
+    {
+      "name": "Website",
+      "url": "https://autody.online"
+    },
+    {
+      "name": "Explorer",
+      "url": "https://polygonscan.com/token/0xa2746a48211cd3cb0fc6356deb10d79feb792c57"
+    }
+  ],
+
+  "tags": [
+    "utility-token"
+  ]
 }
