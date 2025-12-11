@@ -8,17 +8,24 @@
   "website": "https://pak92.top",
   "description": "PAK92 is a community-driven meme token created for culture, joy, and creativity. Built on BNB Chain, it focuses on community engagement and digital culture. This token does not represent any investment and exists purely for community purposes.",
   "explorer": "https://bscscan.com/token/0xA34eB4BABdE4C7797eD9b88d97F784bAaec1e238",
-  "links": {
-    "twitter": "https://x.com/tokenpak92",
-    "telegram": "https://t.me/pak92community",
-    "email": "mailto:tokenpak92@gmail.com",
-    "github": "https://github.com/pak92-team"
-  },
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://x.com/tokenpak92"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/pak92community"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/pak92-team"
+    }
+  ],
   "tags": [
-    "Token",
+    "community",
+    "memes",
     "wallet",
-    "Meme",
-    "Community",
-    "Web3"
+    "web3"
   ]
 }
