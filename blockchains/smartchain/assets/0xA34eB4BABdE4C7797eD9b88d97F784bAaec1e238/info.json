@@ -1,14 +1,36 @@
 {
   "name": "Pakacoin",
   "symbol": "PAK92",
+  "type": "BEP20",
   "decimals": 18,
-  "description": "PAK92 is a meme token born from community energy — where culture meets crypto. What begins as humor grows into influence, creativity, and real connection.\n\nBuilt on BNB Chain, PAK92 celebrates collective fun and digital culture.\n\n⚠️ This project does not promote or solicit any form of investment — it exists solely for creative and community purposes.",
+  "status": "active",
+  "id": "0xA34eB4BABdE4C7797eD9b88d97F784bAaec1e238",
   "website": "https://pak92.top",
+  "description": "PAK92 is a meme token created purely for community joy, culture, and creativity. Built on BNB Chain, it brings people together through humor and digital culture. This project does not promote any form of investment and exists solely for community purposes.",
   "explorer": "https://bscscan.com/token/0xA34eB4BABdE4C7797eD9b88d97F784bAaec1e238",
-  "socials": {
-    "twitter": "https://x.com/tokenpak92",
-    "telegram": "https://t.me/pak92community",
-    "email": "tokenpak92@gmail.com"
-  }
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://x.com/tokenpak92"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/pak92community"
+    },
+    {
+      "name": "email",
+      "url": "mailto:tokenpak92@gmail.com"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/pak92-team"
+    }
+  ],
+  "tags": [
+    "DeFi",
+    "Web3",
+    "staking",
+    "memes",
+    "community"
+  ]
 }
-
