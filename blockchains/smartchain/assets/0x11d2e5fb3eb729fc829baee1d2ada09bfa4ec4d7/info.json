@@ -2,24 +2,15 @@
   "name": "AtheistWorldToken",
   "website": "https://atheistworldtoken.com/",
   "description": "Atheist World Token (AWT) is a community-driven project on BNB Chain.",
-  "explorer": "https://bscscan.com/token/AWT-0x11d2e5fb3eb729fc829baee1d2ada09bfa4ec4d7",
+  "explorer": "https://bscscan.com/token/0x11d2e5fb3eb729fc829baee1d2ada09bfa4ec4d7",
   "type": "BEP20",
   "symbol": "AWT",
   "decimals": 18,
   "status": "active",
-  "tags": ["community"],
+  "tags": ["defi"],
   "links": [
-    {
-      "name": "twitter",
-      "url": "https://x.com/teamawt"
-    },
-    {
-      "name": "telegram",
-      "url": "https://t.me/+uJikM5E5HzkwNTE1"
-    },
-    {
-      "name": "github",
-      "url": "https://github.com/atheistworldtoken/atheistworld"
-    }
+    {"name": "twitter", "url": "https://x.com/teamawt"},
+    {"name": "telegram", "url": "https://t.me/+uJikM5E5HzkwNTE1"},
+    {"name": "github", "url": "https://github.com/atheistworldtoken/atheistworld"}
   ]
 }
