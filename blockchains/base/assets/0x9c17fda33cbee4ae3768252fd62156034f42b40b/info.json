@@ -3,11 +3,11 @@
   "symbol": "NXC",
   "type": "ERC20",
   "decimals": 18,
-  "description": "NeoX Coin (NXC) is the native token of the NeoX ecosystem on Base, powering Web3 gaming, NFTs, and decentralized experiences.",
-  "website": "https://neoxcoin.github.io",
-  "explorer": "https://basescan.org/token/0x9c17fda33cbee4ae3768252fd62156034f42b40b",
+  "description": "NeoX Coin (NXC) is the native token of the NeoX Ecosystem on Base Mainnet, powering NFTs, gaming, art and the metaverse.",
+  "website": "https://neoxcoin.io",
+  "explorer": "https://etherscan.io/token/0x9C17fDa33CBEe4aE3768252Fd62156034F42B40B",
   "status": "active",
-  "id": "0x9c17fda33cbee4ae3768252fd62156034f42b40b",
+  "id": "0x9C17fDa33CBEe4aE3768252Fd62156034F42B40B",
   "links": [
     {
       "name": "twitter",
@@ -16,6 +16,15 @@
     {
       "name": "github",
       "url": "https://github.com/NeoXCoin"
+    },
+    {
+      "name": "medium",
+      "url": "https://medium.com/@neoxcoin_37132"
     }
+  ],
+  "tags": [
+    "defi",
+    "web3",
+    "nft"
   ]
 }
