@@ -1,0 +1,30 @@
+## Token List Addition: IRANcoin Global Reserve (IRCOIN) on Base Chain
+
+Adding IRANcoin Global Reserve to Binance Web3 Wallet tokenlist for better user experience.
+
+### Token Entry
+{
+  "chainId": 8453,
+  "address": "0x49BA5D9A00115D494a01fb938EBd94BD919AA445",
+  "name": "IRANcoin Global Reserve",
+  "symbol": "IRCOIN",
+  "decimals": 18,
+  "logoURI": "https://i.ibb.co/353MDWVg/IRANcoin-LLC-256x256xtrustwallet.png",
+  "extensions": {
+    "website": "https://irancoinglobalreserve.edgeone.app/",
+    "twitter": "https://x.com/IRANcoinGlobal"
+  }
+}
+
+### Project Summary
+IRANcoin Global Reserve (IRCOIN) is a Base-native token launched in 2025 for decentralized global payments, using algorithmic stablecoins backed by IRCOIN reserves. Early-stage project with 200+ holders, focused on innovation and fairness.
+
+### Proof of Legitimacy
+- Verified Listings: Blockscout (green tick + logo: https://base.blockscout.com/token/0x49BA5D9A00115D494a01FB938EBd94BD919AA445), Routescan (https://routescan.io/token/0x49BA5D9A00115D494a01fb938EBd94BD919AA445?chainid=8453)
+- Explorers: Arkham (https://intel.arkm.com/explorer/address/0x49BA5D9A00115D494a01fb938EBd94BD919AA445), DexGuru (https://base.dex.guru/token/0x49ba5d9a00115d494a01fb938ebd94bd919aa445)
+- Community/Analyses: Medium (https://medium.com/@xlogan1987/emerging-powerhouse-irancoin-global-reserve-ircoin-a-comparative-analysis-against-peer-efb460ddb33a), Substack (https://ircoin.substack.com/p/88e278d1-6bf0-413f-bdef-74d5c35aebb9), MEXC (https://www.mexc.com/news/irancoin-global-reserve-ircoin-launches-to-reshape-global-digital-payments/140208)
+- DexGuru PR Reference: https://github.com/dex-guru/assets/pull/69
+
+This addition supports Binance Wallet's multi-chain growth. Thanks for consideration!
+
+#binance/web3-wallet-tokenlist
