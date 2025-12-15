@@ -1,0 +1,28 @@
+{
+    "name": "Chainlink Token",
+    "symbol": "LINK.e",
+    "type": "AVALANCHE",
+    "decimals": 18,
+    "description": "A blockchain-based middleware, acting as a bridge between cryptocurrency smart contracts, data feeds, APIs and traditional bank account payments.",
+    "website": "https://chain.link/",
+    "explorer": "https://snowtrace.io/token/0x5947BB275c521040051D82396192181b413227A3",
+    "status": "active",
+    "id": "0x5947BB275c521040051D82396192181b413227A3",
+    "links": [
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/chainlink/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/chainlink/"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/chainlinkofficial"
+        }
+    ],
+    "tags": [
+        "wrapped"
+    ]
+}

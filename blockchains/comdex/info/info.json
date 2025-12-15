@@ -1,0 +1,24 @@
+{
+    "name": "Comdex",
+    "type": "coin",
+    "symbol": "CMDX",
+    "decimals": 6,
+    "website": "https://comdex.one/",
+    "description": "Comdex is an interchain DeFi infrastructure layer housing a suite of composable solutions on-chain.",
+    "explorer": "https://www.mintscan.io/comdex",
+    "status": "active",
+    "rpc_url": "https://rpc-comdex.whispernode.com/",
+    "denom": "ucmdx",
+    "lcd_url": "https://rest.comdex.one/",
+    "hrp": "comdex",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/comdex-official"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/ComdexOfficial"
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+name: Upload S3
+on:
+  push:
+    branches:
+      - master
+
+  workflow_dispatch:
+
+permissions:
+  id-token: write
+
+env:
+  AWS_REGION: us-east-1
+
+jobs:
+  upload-s3:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Confiugre AWS credentials
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Sync to S3
+        if: github.repository_owner == 'trustwallet'
+        shell: bash
+        run: aws s3 sync . s3://$AWS_S3_BUCKET  --follow-symlinks --delete --exclude '*' --include 'dapps/*' --include 'blockchains/*' --size-only
+        env:
+          AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
+
+      - name: Get changed files
+        uses: jitterbit/get-changed-files@v1
+        if: github.event_name == 'push'
+        id: files
+
+      - name: Filter files to invalidate
+        run: |
+          echo "::set-output name=paths::$(echo ${{ steps.files.outputs.added_modified }} | tr ' ' '\n' | grep -E 'blockchains/|dapps/' | awk '{print "/"$1}' | tr '\n' ' ')"
+        if: github.event_name == 'push'
+        id: filter
+
+      - name: Invalidate CloudFront
+        if: github.repository_owner == 'trustwallet' && github.event_name == 'push' && steps.filter.outputs.paths != ''
+        uses: chetan/invalidate-cloudfront-action@v2
+        env:
+          PATHS: ${{ steps.filter.outputs.paths }}
+          DISTRIBUTION: ${{ secrets.AWS_DISTRIBUTION }}
+
