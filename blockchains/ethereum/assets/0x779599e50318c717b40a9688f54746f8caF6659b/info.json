@@ -6,8 +6,8 @@
   "description": "RET is a tokenized real estate investment platform that allows investors to own fractional shares of premium real estate properties. Each RET token represents $50,000 USDC worth of fractional ownership in real estate assets.",
   "status": "active",
   "type": "ERC20",
-  "id": "0x779599e50318c717b40a9688f54746f8caf6659b",
-  "explorer": "https://etherscan.io/token/0x779599e50318c717b40a9688f54746f8caf6659b",
+  "id": "0x779599e50318c717b40a9688f54746f8caF6659b",
+  "explorer": "https://etherscan.io/token/0x779599e50318c717b40a9688f54746f8caF6659b",
   "links": [
     {
       "name": "telegram",
@@ -15,11 +15,12 @@
     },
     {
       "name": "twitter",
-      "url": "https://twitter.com/rettokens"
+      "url": "https://x.com/rettokens"
     },
     {
       "name": "discord",
       "url": "https://discord.gg/ret-token"
     }
-  ]
+  ],
+  "tags": ["real-estate", "asset-backed"]
 }
