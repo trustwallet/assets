@@ -1,0 +1,37 @@
+{
+    "name": "APXCOIN (APX)",
+    "type": "ERC20",
+    "symbol": "APX",
+    "decimals": 18,
+    "website": "https://theapxgroup.com/",
+    "description": "APXCOIN® (APX) is a standard ERC-20 utility token deployed on the Ethereum Mainnet (Chain ID: 1) with a fixed maximum supply of 2,000,000,000 tokens. The smart contract utilizes OpenZeppelin's robust security standards, ensuring compatibility with all major wallets and decentralized applications (dApps). The contract includes standard transfer, approval, and allowance mechanisms necessary for DeFi integration.",
+    "explorer": "https://etherscan.io/token/0xbD4b6F3b2278D727aE740c5449AaED6a09788E7c",
+    "status": "active",
+    "id": "0xbD4b6F3b2278D727aE740c5449AaED6a09788E7c",
+    "links": [
+        {
+            "name": "whitepaper",
+            "url": "https://whitepaper.theapxgroup.com/"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/theapxgroup/"
+        },
+        {
+            "name": "docs",
+            "url": ""
+        },
+        {
+            "name": "blog",
+            "url": ""
+        },
+        {
+            "name": "x",
+            "url": "https://twitter.com/the_apx16788"
+        }
+    ],
+    "tags": [
+        "dapp",
+        "governance"
+    ]
+}
