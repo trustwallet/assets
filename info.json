@@ -1,13 +1,27 @@
 {
   "name": "USDT",
   "symbol": "USDT",
-  "type": "spl",
+  "type": "SPL",
   "decimals": 6,
-  "description": "USDT-style token on Solana via Meteore.ag/Serum pool.",
-  "website": "",
-  "explorer": "https://solscan.io/token/5iHdWfSbdYmHYoDb7MfYxA2PGwm9uzzdi3DeN6QykhiY",
+  "description": "USDT (Solana) \u2014 stablecoin pegged 1:1 to USD",
+  "website": "https://tether.to",
+  "explorer": "https://solscan.io/token/GQeznChPPvd29z4S1XSqnKhX7s1KB876iKhnSuvjXGpG",
   "status": "active",
-  "id": "5iHdWfSbdYmHYoDb7MfYxA2PGwm9uzzdi3DeN6QykhiY",
-  "links": [],
-  "tags": []
+  "id": "GQeznChPPvd29z4S1XSqnKhX7s1KB876iKhnSuvjXGpG",
+  "tags": [
+    "Tokenization",
+    "NFT",
+    "Airdrop"
+  ],
+  "links": {
+    "twitter": "https://twitter.com/Tether_to",
+    "telegram": "https://t.me/tether",
+    "youtube": "https://youtube.com/@tether_io",
+    "reddit": "https://www.reddit.com/r/Tether/",
+    "facebook": "https://www.facebook.com/tether.to"
+  },
+  "creator": {
+    "name": "CoinFactory",
+    "site": "https://coinfactory.app"
+  }
 }
