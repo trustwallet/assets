@@ -1,0 +1,25 @@
+{
+    "name": "tBTC v2 (tBTC)",
+    "type": "ERC20",
+    "symbol": "tBTC",
+    "decimals": 18,
+    "website": "https://threshold.network",
+    "description": "tBTC is a decentralized Bitcoin onchain that allows Bitcoin holders to use their BTC across multiple blockchains, decentralized finance, and other financial markets.",
+    "explorer": "https://etherscan.io/token/0x18084fbA666a33d37592fA2633fD49a74DD93a88",
+    "status": "active",
+    "id": "0x18084fbA666a33d37592fA2633fD49a74DD93a88",
+    "links": [
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/tbtc-token/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/tbtc"
+        }
+    ],
+    "tags": [
+        "wrapped",
+        "defi"
+    ]
+}
