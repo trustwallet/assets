@@ -1,11 +1,17 @@
 {
+  "id": "0x70f9c0d8e346ad960780e299238f8c49c896704c",
   "name": "Crypto",
+  "symbol": "USDT",
   "website": "https://github.com/erolorme1-byte/assets",
   "description": "A reliable and fast BEP20 token for seamless transactions on Binance Smart Chain.",
-  "explorer": "https://bscscan.com/token/0x70f9c0d8e346ad960780e299238f8c49c896704c",
+  "explorer": "https://bscscan.com/token/",
   "type": "BEP20",
-  "symbol": "USDT",
   "decimals": 6,
-  "status": "active"
+  "status": "active",
+  "links": {
+    "github": "https://github.com/erolorme1-byte/assets",
+    "twitter": "https://twitter.com/Developercrpt",
+    "telegram": "https://t.me/er_ylm"
+  },
+  "tags": ["defi"]
 }
-
