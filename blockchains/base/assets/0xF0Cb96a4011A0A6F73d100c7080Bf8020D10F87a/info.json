@@ -10,12 +10,12 @@
     "type": "BASE",
     "links": [
         {
-            "name": "x",
-            "url": "https://x.com/Mr_Lightspeed"
-        },
-        {
             "name": "telegram",
             "url": "https://t.me/Mister_Lightspeed"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/MrLightspeed"
         },
         {
             "name": "coinmarketcap",
@@ -25,5 +25,8 @@
             "name": "coingecko",
             "url": "https://coingecko.com/en/coins/mr-lightspeed-creator-coin"
         }
+    ],
+    "tags": [
+        "nft"
     ]
 }
