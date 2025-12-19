@@ -1,13 +1,13 @@
 {
-    "name": "Mento Euro",
+    "name": "Mento South African Rand",
     "type": "CELO",
-    "symbol": "EURm",
+    "symbol": "ZARm",
     "decimals": 18,
-    "description": "Mento Euro (cEUR) is a decentralized stablecoin pegged to the Euro on the Celo blockchain.",
+    "description": "Mento South African Rand (cZAR) is a decentralized stablecoin pegged to the South African Rand on the Celo blockchain.",
     "website": "https://www.mento.org/",
     "explorer": "https://celoscan.io",
     "status": "active",
-    "id": "0xD8763CBa276a3738E6DE85b4b3bF5FDed6D6cA73",
+    "id": "0x4c35853A3B4e647fD266f4de678dCc8fEC410BF6",
     "links": [
         {
             "name": "x",
@@ -20,10 +20,6 @@
         {
             "name": "discord",
             "url": "http://discord.mento.org/"
-        },
-        {
-            "name": "coinmarketcap",
-            "url": "https://coinmarketcap.com/currencies/celo-euro/"
         },
         {
             "name": "docs",

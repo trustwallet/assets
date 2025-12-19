@@ -1,13 +1,13 @@
 {
-    "name": "Mento Euro",
+    "name": "Mento West African CFA Franc",
     "type": "CELO",
-    "symbol": "EURm",
+    "symbol": "XOFm",
     "decimals": 18,
-    "description": "Mento Euro (cEUR) is a decentralized stablecoin pegged to the Euro on the Celo blockchain.",
+    "description": "Mento West African CFA Franc (cXOF) is a decentralized stablecoin pegged to the West African CFA Franc on the Celo blockchain.",
     "website": "https://www.mento.org/",
     "explorer": "https://celoscan.io",
     "status": "active",
-    "id": "0xD8763CBa276a3738E6DE85b4b3bF5FDed6D6cA73",
+    "id": "0x73F93dcc49cB8A239e2032663e9475dd5ef29A08",
     "links": [
         {
             "name": "x",
@@ -20,10 +20,6 @@
         {
             "name": "discord",
             "url": "http://discord.mento.org/"
-        },
-        {
-            "name": "coinmarketcap",
-            "url": "https://coinmarketcap.com/currencies/celo-euro/"
         },
         {
             "name": "docs",
