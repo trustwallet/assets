@@ -1,13 +1,13 @@
 {
-    "name": "Mento Brazilian Real",
+    "name": "Mento Swiss Franc",
     "type": "CELO",
-    "symbol": "BRLm",
+    "symbol": "CHFm",
     "decimals": 18,
-    "description": "Mento Brazilian Real (BRLm) is a decentralized stablecoin pegged to the Brazilian Real on the Celo blockchain.",
+    "description": "Mento Swiss Franc (CHFm) is a decentralized stablecoin pegged to the Swiss Franc on the Celo blockchain.",
     "website": "https://www.mento.org/",
-    "explorer": "https://celoscan.io/token/0xe8537a3d056DA446677B9E9d6c5dB704EaAb4787",
+    "explorer": "https://celoscan.io/token/0xb55a79F398E759E43C95b979163f30eC87Ee131D",
     "status": "active",
-    "id": "0xe8537a3d056DA446677B9E9d6c5dB704EaAb4787",
+    "id": "0xb55a79F398E759E43C95b979163f30eC87Ee131D",
     "links": [
         {
             "name": "x",
@@ -20,10 +20,6 @@
         {
             "name": "discord",
             "url": "https://discord.com/invite/Zszgng9NdF"
-        },
-        {
-            "name": "coinmarketcap",
-            "url": "https://coinmarketcap.com/currencies/celo-brazilian-real/"
         },
         {
             "name": "docs",
