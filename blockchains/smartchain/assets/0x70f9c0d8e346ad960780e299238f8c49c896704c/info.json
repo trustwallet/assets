@@ -8,10 +8,19 @@
   "type": "BEP20",
   "decimals": 6,
   "status": "active",
-  "links": {
-    "github": "https://github.com/erolorme1-byte/assets",
-    "twitter": "https://twitter.com/Developercrpt",
-    "telegram": "https://t.me/er_ylm"
-  },
+  "links": [
+    {
+      "name": "github",
+      "url": "https://github.com/erolorme1-byte/assets"
+    },
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/Developercrpt"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/er_ylm"
+    }
+  ],
   "tags": ["defi"]
 }
