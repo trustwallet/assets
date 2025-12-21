@@ -1,0 +1,20 @@
+{
+    "name": "XRPL EVM Sidechain",
+    "website": "https://xrplevm.org",
+    "description": "The XRPL EVM Sidechain is a cosmos-evm blockchain funded by Ripple and built by Peersyst that uses bridged XRP via Axelar from the XRPL as native currency. ",
+    "explorer": "https://explorer.xrplevm.org",
+    "symbol": "XRP",
+    "type": "coin",
+    "decimals": 18,
+    "status": "active",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/xrplevm"
+        },
+        {
+            "name": "x",
+            "url": "https://x.com/Peersyst"
+        }
+    ]
+}
