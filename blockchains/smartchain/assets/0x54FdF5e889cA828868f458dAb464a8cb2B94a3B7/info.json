@@ -1,32 +1,31 @@
 {
-    "name": "Sidhu Coin",
-    "type": "BEP20",
-    "symbol": "SIDHU",
-    "decimals": 18,
-    "website": "https://sidhucoin.com/",
-    "description": "SIDHU COIN is a community-focused token on the Binance Smart Chain with a fixed supply, designed for transparency and simple peer-to-peer transactions.",
-    "explorer": "https://bscscan.com/address/0x54FdF5e889cA828868f458dAb464a8cb2B94a3B7",
-    "status": "active",
-    "id": "0x54FdF5e889cA828868f458dAb464a8cb2B94a3B7",
-    "links": [
-        {
-            "name": "x",
-            "url": "https://x.com/sidhucoin?s=21"
-        },
-        {
-            "name": "telegram",
-            "url": "https://t.me/sidhucoin"
-        },
-        {
-            "name": "youtube",
-            "url": "https://youtube.com/@sidhucoin?si=jz6O6ZeRYad0negH"
-        }
-    ],
-    "tags": [
-        "bep20",
-        "cryptocurrency",
-        "fixed-supply",
-        "community-driven",
-        "binance-smart-chain"
-    ]
+  "name": "SIDHU COIN",
+  "symbol": "SIDHU",
+  "type": "BEP20",
+  "decimals": 18,
+  "description": "SIDHU COIN is a fixed-supply community-driven cryptocurrency built on Binance Smart Chain.",
+  "website": "https://sidhucoin.com",
+  "explorer": "https://bscscan.com/address/0x54FdF5e889cA828868f458dAb464a8cb2B94a3B7",
+  "status": "active",
+  "id": "0x54FdF5e889cA828868f458dAb464a8cb2B94a3B7",
+  "tags": [
+    "cryptocurrency",
+    "fixed-supply",
+    "community-driven",
+    "binance-smart-chain"
+  ],
+  "links": [
+    {
+      "name": "telegram",
+      "url": "https://t.me/sidhucoin"
+    },
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/sidhucoin"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/HBENIPAL33"
+    }
+  ]
 }
