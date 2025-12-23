@@ -1,0 +1,11 @@
+  {
+      "name": "My Awesome Token",
+      "website": "https://www.myawesometoken.com",
+      "description": "This is a description of my awesome token.",
+      "explorer": "https://bscscan.com/token/0x1234...abcd",
+      "type": "BEP20", // یا "ERC20"
+      "symbol": "MAT",
+      "decimals": 18,
+      "status": "active",
+      "id": "0x1234...abcd"
+    }
