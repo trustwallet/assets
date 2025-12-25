@@ -3,17 +3,29 @@
   "symbol": "TRLK",
   "type": "token",
   "decimals": 18,
-  "description": "TRLK — cosmic musical token of the Orchestra Chain ecosystem.",
+  "description": "TRLK — cosmic musical token of the Orchestra Chain.",
   "website": "https://brilliant1972.github.io/OrchestraChain/",
   "explorer": "https://basescan.org/token/0x1d1692841fa380dd4d4dc7adfcb7ec2545555990",
   "status": "active",
   "id": "0x1d1692841fa380dd4d4dc7adfcb7ec2545555990",
-  "links": {
-    "twitter": "https://x.com/OrchestraChain",
-    "telegram": "https://t.me/OrchestraChain",
-    "discord": "https://discord.com/invite/VsSCbbQ4",
-    "github": "https://github.com/brilliant1972/OrchestraChain"
-  },
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://x.com/OrchestraChain"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/OrchestraChain"
+    },
+    {
+      "name": "discord",
+      "url": "https://discord.com/invite/VsSCbbQ4"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/brilliant1972/OrchestraChain"
+    }
+  ],
   "tags": [
     "meme",
     "community"
