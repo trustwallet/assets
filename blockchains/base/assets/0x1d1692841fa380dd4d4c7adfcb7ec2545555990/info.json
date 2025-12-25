@@ -1,29 +1,38 @@
 {
-  "name": "Trombone Traveler",
+  "name": "Tralik Trombon",
   "symbol": "TRLK",
-  "type": "BASE",
+  "type": "ERC20",
   "decimals": 18,
-  "description": "TRLK is the first musician of the Orchestra Chain — the Trombone Traveler. A long-term, transparent, lore-driven ecosystem token.",
-  "website": "https://brilliant1972.github.io",
+  "description": "Tralik Trombon (TRLK) is the first token of the Orchestra Chain — a cosmic music memecoin on Base chain.",
+  "website": "https://brilliant1972.github.io/OrchestraChain/",
   "explorer": "https://basescan.org/token/0x1d1692841fa380dd4d4c7adfcb7ec2545555990",
+  "status": "active",
+  "id": "0x1d1692841fa380dd4d4c7adfcb7ec2545555990",
+  "tags": [
+    "music",
+    "memes",
+    "base"
+  ],
   "links": [
     {
       "name": "twitter",
-      "url": "https://x.com/orchestrachain"
+      "url": "https://x.com/OrchestraChain"
     },
     {
       "name": "telegram",
-      "url": "https://t.me/orchestrachain"
+      "url": "https://t.me/OrchestraChain"
+    },
+    {
+      "name": "discord",
+      "url": "https://discord.gg/VsSCbbQ4"
     },
     {
       "name": "github",
-      "url": "https://github.com/Brilliant1972"
+      "url": "https://github.com/Brilliant1972/OrchestraChain"
+    },
+    {
+      "name": "docs",
+      "url": "https://brilliant1972.github.io/OrchestraChain/"
     }
-  ],
-  "tags": [
-    "defi",
-    "ecosystem"
-  ],
-  "status": "active",
-  "id": "0x1d1692841fa380dd4d4c7adfcb7ec2545555990"
+  ]
 }
