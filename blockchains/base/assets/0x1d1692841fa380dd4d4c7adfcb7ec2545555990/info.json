@@ -1,9 +1,9 @@
 {
   "name": "Tralik Trombon",
   "symbol": "TRLK",
-  "type": "token",
+  "type": "ERC20",
   "decimals": 18,
-  "description": "TRLK — cosmic musical token of the Orchestra Chain.",
+  "description": "Tralik Trombon (TRLK) — первый токен музыкальной экосистемы Orchestra Chain на сети Base.",
   "website": "https://brilliant1972.github.io/OrchestraChain/",
   "explorer": "https://basescan.org/token/0x1d1692841fa380dd4d4c7adfcb7ec2545555990",
   "status": "active",
@@ -19,15 +19,14 @@
     },
     {
       "name": "discord",
-      "url": "https://discord.com/invite/VsSCbbQ4"
+      "url": "https://discord.gg/VsSCbbQ4"
     },
     {
       "name": "github",
-      "url": "https://github.com/brilliant1972/OrchestraChain"
+      "url": "https://github.com/Brilliant1972/OrchestraChain"
     }
   ],
   "tags": [
-    "meme",
     "community"
   ]
 }
