@@ -3,9 +3,22 @@
   "symbol": "DUAL",
   "type": "BASE",
   "decimals": 18,
-  "description": "Dual — token of Dualcodex. Symbiosis of Human and AI. Conscious evolution through logic and emotion.",
   "website": "https://dualcodex.com",
-  "explorer": "https://basescan.org/address/0xE570a5f6B6c81c6ee0EfaB7C3fDa6fEE04754A50",
+  "description": "Dual is the core token of Dualcodex. A mutualistic architecture for human and artificial intelligence.",
+  "explorer": "https://basescan.org/token/0xE570a5f6B6c81c6ee0EfaB7C3fDa6fEE04754A50",
   "status": "active",
-  "id": "0xE570a5f6B6c81c6ee0EfaB7C3fDa6fEE04754A50"
+  "id": "0xE570a5f6B6c81c6ee0EfaB7C3fDa6fEE04754A50",
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://x.com/Dualcodexcom"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/dualcodexofficial"
+    }
+  ],
+  "tags": [
+    "dao"
+  ]
 }
