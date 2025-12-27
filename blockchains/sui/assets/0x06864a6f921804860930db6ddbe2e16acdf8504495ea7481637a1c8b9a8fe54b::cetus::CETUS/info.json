@@ -6,16 +6,19 @@
     "type": "SUI",
     "symbol": "CETUS",
     "decimals": 9,
-    "status": "active",
+    "status": "abandoned",
     "id": "0x06864a6f921804860930db6ddbe2e16acdf8504495ea7481637a1c8b9a8fe54b::cetus::CETUS",
     "links": [
         {
-            "name": "twitter",
-            "url": "https://twitter.com/CetusProtocol"
+            "name": "x",
+            "url": "https://x.com/CetusProtocol"
         },
         {
             "name": "telegram",
             "url": "https://t.me/cetusprotocol"
         }
+    ],
+    "tags": [
+        "defi"
     ]
 }
