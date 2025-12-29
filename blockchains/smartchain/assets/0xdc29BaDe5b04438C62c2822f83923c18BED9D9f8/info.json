@@ -1,0 +1,25 @@
+{
+  "name": "Tether USD Test",
+  "symbol": "USDTT",
+  "type": "BEP20",
+  "decimals": 18,
+  "description": "Educational and experimental BEP-20 token deployed on BNB Smart Chain. This token is created strictly for development, learning, and testing purposes only and has no affiliation with any existing stablecoin, brand, or financial product.",
+  "website": "https://azhcrypto.github.io",
+  "explorer": "https://bscscan.com/token/0xdc29BaDe5b04438C62c2822f83923c18BED9D9f8",
+  "status": "active",
+  "id": "0xdc29BaDe5b04438C62c2822f83923c18BED9D9f8",
+  "links": [
+    {
+      "name": "website",
+      "url": "https://azhcrypto.github.io"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/NewBornPrince9"
+    }
+  ],
+  "tags": [
+    "test-token",
+    "experimental"
+  ]
+}
