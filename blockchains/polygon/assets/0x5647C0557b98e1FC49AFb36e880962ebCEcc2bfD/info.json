@@ -1,20 +1,22 @@
 {
-    "name": "Mentors",
-    "type": "POLYGON",
-    "symbol": "MRT",
-    "decimals": 18,
-    "website": "https://sites.google.com/view/mrt-token",
-    "description": "The MRT token project aims to create a secure, decentralized digital currency for seamless transactions and community governance.",
-    "explorer": "https://polygonscan.com/token/https:/0x5647C0557b98e1FC49AFb36e880962ebCEcc2bfD",
-    "status": "active",
-    "id": "0x5647C0557b98e1FC49AFb36e880962ebCEcc2bfD",
-    "links": [
-        {
-            "name": "x",
-            "url": "https://x.com/mrt_tokendex?s=11"
-        },
-        {
-            "name": "telegram",
-            "url": "https://t.me/MRT_TokenDexl"
-    ]
+  "name": "Mentors",
+  "symbol": "MRT",
+  "type": "ERC20",
+  "address": "0x5647C0557b98e1FC49AFb36e880962ebCEcc2bfD",
+  "decimals": 18,
+  "website": "https://sites.google.com/view/mrt-token",
+  "description": "The MRT token project aims to create a secure, decentralized digital currency for seamless transactions and community governance.",
+  "explorer": "https://polygonscan.com/token/0x5647C0557b98e1FC49AFb36e880962ebCEcc2bfD",
+  "status": "active",
+  "id": "0x5647C0557b98e1FC49AFb36e880962ebCEcc2bfD",
+  "links": [
+    {
+      "name": "x",
+      "url": "https://x.com/mrt_tokendex?s=11"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/MRT_TokenDex1"
+    }
+  ]
 }
