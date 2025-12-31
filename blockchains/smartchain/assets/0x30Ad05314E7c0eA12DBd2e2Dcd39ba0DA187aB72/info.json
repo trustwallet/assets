@@ -4,12 +4,15 @@
   "type": "BEP20",
   "decimals": 18,
   "description": "Vandal Coin is an urban-inspired token created for street culture, art, fashion and decentralized ecosystems.",
+  "website": "https://vandalcoin.com",
+  "explorer": "https://bscscan.com/token/0x30a405314E7c0eA12DBd2e2Dcd39ba0DA187aB72",
   "status": "active",
-  "id": "0x30Ad05314E7c0eA12DBd2e2Dcd39ba0DA187aB72",
+  "id": "0x30A405314E7c0eA12DBd2e2Dcd39ba0DA187aB72",
+
   "links": [
     {
       "name": "twitter",
-      "url": "https://twitter.com/vandalcoinc"
+      "url": "https://x.com/vandalcoinc"
     },
     {
       "name": "telegram",
@@ -18,11 +21,11 @@
     {
       "name": "instagram",
       "url": "https://instagram.com/vandalcoin"
-    },
-    {
-      "name": "website",
-      "url": "https://vandalcoin.com"
     }
   ],
-  "explorer": "https://bscscan.com/token/0x30Ad05314E7c0eA12DBd2e2Dcd39ba0DA187aB72"
+
+  "tags": [
+    "community",
+    "art"
+  ]
 }
