@@ -1,0 +1,7 @@
+echo '{
+  "name": "usdt.z",
+  "symbol": "usdt.z",
+  "decimals": 18,
+  "website": "",
+  "description": "Bridged stable token usdt.z"
+}' > info.json
