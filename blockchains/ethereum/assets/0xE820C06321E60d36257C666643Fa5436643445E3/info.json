@@ -1,5 +1,5 @@
 {
-    "name": "Gold dollar",
+    "name": "USDKG",
     "type": "ERC20",
     "symbol": "USDKG",
     "decimals": 6,
@@ -9,6 +9,10 @@
     "status": "active",
     "id": "0xE820C06321E60d36257C666643Fa5436643445E3",
     "links": [
+        {
+            "name": "x",
+            "url": "https://x.com/USDKG_Official"  
+        },
         {
             "name": "github",
             "url": "https://github.com/USDkg/USDkg"
