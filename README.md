@@ -1,3 +1,4 @@
+[![Board Status](https://dev.azure.com/ahmedfaroukegy1/83a44b45-8f72-4004-aa4e-ac026c02e36c/28e76b92-e9b3-4eba-9cff-d6e901cb4741/_apis/work/boardbadge/5105868b-eabe-4fa6-a3cd-202153095eeb)](https://dev.azure.com/ahmedfaroukegy1/83a44b45-8f72-4004-aa4e-ac026c02e36c/_boards/board/t/28e76b92-e9b3-4eba-9cff-d6e901cb4741/Microsoft.RequirementCategory)
 # Trust Wallet Assets Info
 
 ![Check](https://github.com/trustwallet/assets/workflows/Check/badge.svg)
