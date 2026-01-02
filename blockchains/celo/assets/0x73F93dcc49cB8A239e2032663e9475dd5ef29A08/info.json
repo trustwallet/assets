@@ -1,13 +1,13 @@
 {
-    "name": "Mento Brazilian Real",
+    "name": "Mento West African CFA Franc",
     "type": "CELO",
-    "symbol": "BRLm",
+    "symbol": "XOFm",
     "decimals": 18,
-    "description": "Mento Brazilian Real (BRLm) is a decentralized stablecoin pegged to the Brazilian Real on the Celo blockchain.",
+    "description": "Mento West African CFA Franc (XOFm) is a decentralized stablecoin pegged to the West African CFA Franc on the Celo blockchain.",
     "website": "https://www.mento.org/",
-    "explorer": "https://celoscan.io/token/0xe8537a3d056DA446677B9E9d6c5dB704EaAb4787",
+    "explorer": "https://celoscan.io/token/0x73F93dcc49cB8A239e2032663e9475dd5ef29A08",
     "status": "active",
-    "id": "0xe8537a3d056DA446677B9E9d6c5dB704EaAb4787",
+    "id": "0x73F93dcc49cB8A239e2032663e9475dd5ef29A08",
     "links": [
         {
             "name": "x",
@@ -20,10 +20,6 @@
         {
             "name": "discord",
             "url": "https://discord.com/invite/Zszgng9NdF"
-        },
-        {
-            "name": "coinmarketcap",
-            "url": "https://coinmarketcap.com/currencies/celo-brazilian-real/"
         },
         {
             "name": "docs",

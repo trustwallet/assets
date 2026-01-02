@@ -1,13 +1,13 @@
 {
-    "name": "Mento Brazilian Real",
+    "name": "Mento Australian Dollar",
     "type": "CELO",
-    "symbol": "BRLm",
+    "symbol": "AUDm",
     "decimals": 18,
-    "description": "Mento Brazilian Real (BRLm) is a decentralized stablecoin pegged to the Brazilian Real on the Celo blockchain.",
+    "description": "Mento Australian Dollar (AUDm) is a decentralized stablecoin pegged to the Australian Dollar on the Celo blockchain.",
     "website": "https://www.mento.org/",
-    "explorer": "https://celoscan.io/token/0xe8537a3d056DA446677B9E9d6c5dB704EaAb4787",
+    "explorer": "https://celoscan.io/token/0x7175504C455076F15c04A2F90a8e352281F492F9",
     "status": "active",
-    "id": "0xe8537a3d056DA446677B9E9d6c5dB704EaAb4787",
+    "id": "0x7175504C455076F15c04A2F90a8e352281F492F9",
     "links": [
         {
             "name": "x",
@@ -20,10 +20,6 @@
         {
             "name": "discord",
             "url": "https://discord.com/invite/Zszgng9NdF"
-        },
-        {
-            "name": "coinmarketcap",
-            "url": "https://coinmarketcap.com/currencies/celo-brazilian-real/"
         },
         {
             "name": "docs",
