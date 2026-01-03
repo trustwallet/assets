@@ -10,10 +10,13 @@
     "decimals": 18,
     "status": "active",
     "rpc_url": "https://base-mainnet.public.blastapi.io",
+    "tags": [
+        "dapp"
+    ],
     "links": [
         {
-            "name": "twitter",
-            "url": "https://twitter.com/buildonbase"
+            "name": "x",
+            "url": "https://x.com/buildonbase"
         },
         {
             "name": "github",
