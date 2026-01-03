@@ -218,7 +218,7 @@ func (s *Service) ValidateAssetInfoFile(f *file.AssetFile) error {
 }
 
 func (s *Service) ValidateValidatorsListFile(f *file.AssetFile) error {
-	if !isStackingChain(f.Chain()) {
+	if !isStakingChain(f.Chain()) {
 		return nil
 	}
 
@@ -253,9 +253,9 @@ func (s *Service) ValidateValidatorsListFile(f *file.AssetFile) error {
 	return nil
 }
 
-func isStackingChain(c coin.Coin) bool {
-	for _, stackingChain := range config.StackingChains {
-		if c.ID == stackingChain.ID {
+func isStakingChain(c coin.Coin) bool {
+	for _, stakingChain := range config.StakingChains {
+		if c.ID == stakingChain.ID {
 			return true
 		}
 	}

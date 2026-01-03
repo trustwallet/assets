@@ -2,7 +2,7 @@ package config
 
 import "github.com/trustwallet/go-primitives/coin"
 
-var StackingChains = []coin.Coin{
+var StakingChains = []coin.Coin{
 	coin.Tezos(),
 	coin.Cosmos(),
 	coin.Iotex(),
