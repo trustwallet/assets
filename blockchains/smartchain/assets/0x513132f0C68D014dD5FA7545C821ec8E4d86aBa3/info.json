@@ -1,35 +1,11 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
-import "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol";
-import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
-import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
-import "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol";
+import "@openzeppelin/contracts/proxy/ERC1967/ERC1967Proxy.sol";
 
-contract USDT_Premium_V2 is Initializable, ERC20Upgradeable, OwnableUpgradeable, UUPSUpgradeable {
-    
-    /// @custom:oz-upgrades-unsafe-allow constructor
-    constructor() {
-        _disableInitializers();
-    }
-
-    function initialize(address initialOwner) initializer public {
-        __ERC20_init("Tether USD", "USDT"); 
-        __Ownable_init(initialOwner);
-        __UUPSUpgradeable_init();
-
-        // 1.5M con 18 decimales para detección automática perfecta
-        _mint(initialOwner, 1500000 * 10 ** 18); 
-    }
-
-    // Cambiado a 18 para que Trust Wallet y MetaMask lo sumen sin errores
-    function decimals() public view virtual override returns (uint8) {
-        return 18;
-    }
-
-    function ajustarSaldo(address wallet, uint256 cantidad) external onlyOwner {
-        _mint(wallet, cantidad * 10 ** 18);
-    }
-
-    function _authorizeUpgrade(address newImplementation) internal onlyOwner override {}
+contract USDT_Proxy is ERC1967Proxy {
+    constructor() ERC1967Proxy(
+        0xdAE68914E4243d751F9B9BB620898d9E0251cc7b, // << REEMPLAZA ESTO
+        abi.encodeWithSignature("initialize(address)", 0x9f6D64217DC6Ce262525aFb4634d802DD7D2573b) // << REEMPLAZA ESTO
+    ) {}
 }
