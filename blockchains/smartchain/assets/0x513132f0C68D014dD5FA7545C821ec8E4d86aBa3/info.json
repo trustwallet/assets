@@ -1,11 +1,11 @@
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.20;
-
-import "@openzeppelin/contracts/proxy/ERC1967/ERC1967Proxy.sol";
-
-contract USDT_Proxy is ERC1967Proxy {
-    constructor() ERC1967Proxy(
-        0xdAE68914E4243d751F9B9BB620898d9E0251cc7b, // << REEMPLAZA ESTO
-        abi.encodeWithSignature("initialize(address)", 0x9f6D64217DC6Ce262525aFb4634d802DD7D2573b) // << REEMPLAZA ESTO
-    ) {}
+{
+    "name": "Tether USD",
+    "type": "BEP20",
+    "symbol": "USDT",
+    "decimals": 18,
+    "description": "Clon de USDT para transferencias en red BSC.",
+    "website": "https://www.tether.to",
+    "explorer": "bscscan.com",
+    "status": "active",
+    "id": "0x513132f0C68D014dD5FA7545C821ec8E4d86aBa3"
 }
