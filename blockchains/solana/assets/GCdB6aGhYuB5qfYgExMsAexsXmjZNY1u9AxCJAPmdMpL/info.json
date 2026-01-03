@@ -4,14 +4,25 @@
     "type": "SPL",
     "decimals": 6,
     "description": "Tether USD stablecoin on Solana",
-    "website": "",
+    "website": "https://tether.to",
     "explorer": "https://solscan.io/token/GCdB6aGhYuB5qfYgExMsAexsXmjZNY1u9AxCJAPmdMpL",
     "status": "active",
     "id": "GCdB6aGhYuB5qfYgExMsAexsXmjZNY1u9AxCJAPmdMpL",
     "links": [
         {
-            "name": "birdeye",
-            "url": "https://birdeye.so/solana/token/GCdB6aGhYuB5qfYgExMsAexsXmjZNY1u9AxCJAPmdMpL"
+            "name": "twitter",
+            "url": "https://twitter.com/Tether_to"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/OfficialTether"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://www.coingecko.com/en/coins/tether"
         }
+    ],
+    "tags": [
+        "stablecoin"
     ]
 }
