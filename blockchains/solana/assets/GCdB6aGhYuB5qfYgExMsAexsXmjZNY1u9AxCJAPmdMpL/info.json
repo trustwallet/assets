@@ -1,14 +1,14 @@
-﻿{
+{
     "name": "Tether USD",
     "symbol": "USDT",
     "type": "SPL",
     "decimals": 6,
     "description": "Tether USD stablecoin on Solana",
     "website": "https://tether.to",
-    "explorer": "https://solscan.io/token/GCdB6aGhYuB5qfYgExMsAexsXmjZNY1u9AxCJAPmdMpL",
+    "explorer": "https://solscan.io/token/GCdB6aGhYuB5qfYgExMsAexsXmjZNY1u9AxCJAPmdMpL?cluster=mainnet",
+    "holders": 266,
     "status": "active",
     "id": "GCdB6aGhYuB5qfYgExMsAexsXmjZNY1u9AxCJAPmdMpL",
-    "holders": 266,
     "links": [
         {
             "name": "twitter",
@@ -22,9 +22,13 @@
             "name": "coingecko",
             "url": "https://www.coingecko.com/en/coins/tether"
         }
+        ,
+        {
+            "name": "solscan",
+            "url": "https://solscan.io/token/GCdB6aGhYuB5qfYgExMsAexsXmjZNY1u9AxCJAPmdMpL?cluster=mainnet"
+        }
     ],
     "tags": [
         "stablecoin"
     ]
-}
 }
