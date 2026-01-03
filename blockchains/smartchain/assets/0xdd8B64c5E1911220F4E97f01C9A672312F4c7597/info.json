@@ -3,8 +3,8 @@
   "symbol": "BTZ",
   "type": "BEP20",
   "decimals": 18,
-  "description": "Bitaza (BTZ) is a BEP-20 token on BNB Smart Chain focused on community-driven growth and Web3 utilities.",
   "website": "https://bitazabtz.com",
+  "description": "Bitaza (BTZ) is a BEP-20 token on BNB Smart Chain focused on community-driven growth and Web3 utilities.",
   "explorer": "https://bscscan.com/token/0xdd8B64c5E1911220F4E97f01C9A672312F4c7597",
   "links": [
     {
@@ -16,18 +16,13 @@
       "url": "https://t.me/bitazabtz"
     },
     {
-      "name": "instagram",
-      "url": "https://www.instagram.com/bitazabtz"
-    },
-    {
-      "name": "tiktok",
-      "url": "https://www.tiktok.com/@bitazaupdates"
+      "name": "github",
+      "url": "https://github.com/bitazabtz"
     }
   ],
   "tags": [
     "defi",
-    "utility-token"
-  ],
-  "status": "active",
-  "id": "0xdd8B64c5E1911220F4E97f01C9A672312F4c7597"
+    "bsc",
+    "community"
+  ]
 }
