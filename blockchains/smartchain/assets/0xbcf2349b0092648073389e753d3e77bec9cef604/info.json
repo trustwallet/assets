@@ -1,13 +1,17 @@
 {
   "name": "Bitcos Pro BOS",
   "symbol": "BOS",
+  "type": "BEP20",
   "decimals": 18,
   "description": "Bitcos Pro BOS token on Binance Smart Chain",
   "website": "https://bitcos.io",
   "explorer": "https://bscscan.com/token/0xbcf2349b0092648073389e753d3e77bec9cef604",
-  "social": {
-    "telegram": "https://t.me/mybitcos",
-    "twitter": "https://x.com/mybitcos",
-    "medium": "https://medium.com/@BitcosPro"
-  }
+  "status": "active",
+  "id": "0xbcf2349b0092648073389e753d3e77bec9cef604",
+  "links": [
+    {"name": "telegram", "url": "https://t.me/mybitcos"},
+    {"name": "twitter", "url": "https://x.com/mybitcos"},
+    {"name": "medium", "url": "https://medium.com/@BitcosPro"}
+  ],
+  "tags": ["defi"]
 }
