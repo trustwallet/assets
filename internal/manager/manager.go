@@ -27,6 +27,7 @@ func InitCommands() {
 	rootCmd.AddCommand(checkCmd)
 	rootCmd.AddCommand(fixCmd)
 	rootCmd.AddCommand(updateAutoCmd)
+	rootCmd.AddCommand(web3Cmd)
 	rootCmd.AddCommand(addTokenCmd)
 	rootCmd.AddCommand(addTokenlistCmd)
 	rootCmd.AddCommand(addTokenlistExtendedCmd)
@@ -61,6 +62,13 @@ var (
 		Run: func(cmd *cobra.Command, args []string) {
 			assetsService := InitAssetsService()
 			assetsService.RunUpdateAuto()
+		},
+	}
+	web3Cmd = &cobra.Command{
+		Use:   "web3",
+		Short: "Print web3 status message",
+		Run: func(cmd *cobra.Command, args []string) {
+			cmd.Println("web3 application running")
 		},
 	}
 
