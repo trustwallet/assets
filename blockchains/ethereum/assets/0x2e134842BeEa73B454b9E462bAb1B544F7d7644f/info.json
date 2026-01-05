@@ -1,20 +1,15 @@
 {
-  "name": "Billionairely",
-  "symbol": "BNLY",
-  "type": "ERC20",
-  "decimals": 18,
-  "description": "Billionairely (BNLY) is an educational token created to demonstrate how market cap can appear inflated with minimal liquidity. It also draws historical parallels to 19th-century shinplasters.",
-  "website": "https://www.josephmoorebooks.com/billionairely",
-  "explorer": "https://etherscan.io/token/0x2e134842BeEa73B454b9E462bAb1B544F7d7644f",
-  "links": {
-    "github": "https://github.com/WilliamWellsBrown/assets",
-    "website": "https://www.josephmoorebooks.com/billionairely"
-  },
-  "status": "active",
-  "id": "0x2e134842BeEa73B454b9E462bAb1B544F7d7644f",
-  "tags": [
-    "education",
-    "utility",
-    "experimental"
-  ]
+    "name": "Billionairely (BNLY)",
+    "type": "ERC20",
+    "symbol": "BNLY",
+    "decimals": 18,
+    "website": "https://www.josephmoorebooks.com/billionairely",
+    "description": "an educational token on the history of shinplaster currency in 19th century American history celebrating a runaway slave who created his own currency",
+    "explorer": "https://etherscan.io/token/0x2e134842BeEa73B454b9E462bAb1B544F7d7644f",
+    "status": "active",
+    "id": "0x2e134842BeEa73B454b9E462bAb1B544F7d7644f",
+    "links": [],
+    "tags": [
+        "educational"
+    ]
 }
