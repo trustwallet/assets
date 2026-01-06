@@ -1,0 +1,32 @@
+{
+    "name": "Tether Simulate",
+    "type": "ERC20",
+    "symbol": "USDT.s",
+    "decimals": 18,
+    "website": "https://tethersimulate.com/",
+    "description": "This simulated Tether token serves as an advanced educational platform, meticulously designed to replicate functionalities—including price dynamics, wallet interoperability, and exchange mechanisms—within a completely isolated testing environment.",
+    "explorer": "https://etherscan.io/token/0x35BBe9489A3088906488507423ff4809E1AC6376",
+    "status": "active",
+    "id": "0x35BBe9489A3088906488507423ff4809E1AC6376",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/TetherSimulate"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/Tethersimulate"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://www.geckoterminal.com/bsc/pools/0x35BBe9489A3088906488507423ff4809E1AC6376"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://tethersimulate.com/file/TetherSimulate(USDT.s)-Whitepaper.pdf"
+        }
+    ],
+    "tags": [
+        "defi"
+    ]
+}
