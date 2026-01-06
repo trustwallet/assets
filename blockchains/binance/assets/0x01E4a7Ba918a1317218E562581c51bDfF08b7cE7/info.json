@@ -8,11 +8,10 @@
   "type": "BEP20",
   "status": "active",
   "id": "0x01E4a7Ba918a1317218E562581c51bDfF08b7cE7",
-  "tags": ["defi", "payment"],
-  "socials": {
-    "telegram": "https://t.me/usdxteam",
-    "twitter": "https://x.com/USDX_Team",
-    "contact_email": "joiytasaklieem@gmail.com",
-    "contact_telegram": "https://t.me/USDX_Team"
-  }
+  "tags": ["defi"],
+  "links": [
+    { "name": "twitter", "url": "https://x.com/USDX_Team" },
+    { "name": "telegram", "url": "https://t.me/usdxteam" },
+    { "name": "github", "url": "https://github.com/joiytasaklieem-stack" }
+  ]
 }
