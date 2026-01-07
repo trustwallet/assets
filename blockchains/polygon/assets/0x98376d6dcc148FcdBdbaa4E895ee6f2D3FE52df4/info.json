@@ -1,0 +1,33 @@
+{
+    "name": "SAFWA",
+    "type": "POLYGON",
+    "symbol": "SFW§",
+    "decimals": 18,
+    "website": "https://safwa.network",
+    "description": "SAFWA (SFW§) operates on a mathematical bonding curve on Polygon, allowing users to mint (buy) and burn (sell) tokens instantly against a smart contract. It eliminates liquidity issues by maintaining a 100% solvent USDC reserve. Features include a fair 0.1% sell tax, slippage protection, and fully immutable logic with no admin access to funds.",
+    "explorer": "https://polygonscan.com/token/0x98376d6dcc148FcdBdbaa4E895ee6f2D3FE52df4",
+    "status": "active",
+    "id": "0x98376d6dcc148FcdBdbaa4E895ee6f2D3FE52df4",
+    "links": [
+        {
+            "name": "x",
+            "url": "https://x.com/Safwamatrix"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/SafwaNetwork/SAFWA"
+        },
+        {
+            "name": "docs",
+            "url": "https://github.com/SafwaNetwork/SAFWA/tree/main/docs"
+        }
+    ],
+    "tags": [
+        "stablecoin",
+        "defi",
+        "gamefi",
+        "dapp",
+        "deflationary",
+        "synthetics"
+    ]
+}
