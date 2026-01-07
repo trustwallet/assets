@@ -1,27 +1,19 @@
 {
   "name": "USDT",
   "symbol": "USDT",
-  "type": "SPL",
   "decimals": 6,
-  "description": "USDT (Solana) \u2014 stablecoin pegged 1:1 to USD",
-  "website": "https://tether.to",
-  "explorer": "https://solscan.io/token/GQeznChPPvd29z4S1XSqnKhX7s1KB876iKhnSuvjXGpG",
-  "status": "active",
-  "id": "GQeznChPPvd29z4S1XSqnKhX7s1KB876iKhnSuvjXGpG",
-  "tags": [
-    "Tokenization",
-    "NFT",
-    "Airdrop"
-  ],
-  "links": {
-    "twitter": "https://twitter.com/Tether_to",
-    "telegram": "https://t.me/tether",
-    "youtube": "https://youtube.com/@tether_io",
-    "reddit": "https://www.reddit.com/r/Tether/",
-    "facebook": "https://www.facebook.com/tether.to"
+  "network": "Solana",
+  "contract_address": "FHWPTZ6ESMEnUvz7WcPJ6MwPVkcxDkk3v3gGP28odJzi",
+  "logo_uri": "https://i.ibb.co/0RTpTr8T/USDT.png",
+  "peg": {
+    "currency": "USD",
+    "reference": "USDC",
+    "ratio": "1:1"
   },
-  "creator": {
-    "name": "CoinFactory",
-    "site": "https://coinfactory.app"
-  }
+  "description": "USDT on Solana is a Solana-native stablecoin implemented as an SPL token, designed to maintain a 1:1 peg with the US dollar via parity with USDC. It leverages Solana\u2019s high-performance, low-cost infrastructure to enable fast settlements, efficient trading, payments, remittances, and DeFi integrations across the Solana ecosystem.",
+  "website": "https://artablockchain.com/",
+  "explorer": "https://solscan.io/token/FHWPTZ6ESMEnUvz7WcPJ6MwPVkcxDkk3v3gGP28odJzi",
+  "standard": "SPL",
+  "type": "Stablecoin",
+  "status": "Active"
 }
