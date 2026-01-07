@@ -3,9 +3,33 @@
   "symbol": "PUSHXXXX",
   "type": "BEP20",
   "decimals": 18,
-  "description": "Algorithmic monetary anchor token. PUSHXXXX represents a global conversion reserve unit with permanently increasing price.",
-  "website": "https://pushxxxx.com",
+
+  "description": "PUSHXXXX is an algorithmic monetary anchor token. Each unit represents a certified global conversion reserve unit with permanently increasing price.",
+
+  "website": "https://pushxxxx.io",
+
   "explorer": "https://bscscan.com/token/0xcC4B377BBA35df0d48AeAAcd445518285f6F7A8E",
+
   "status": "active",
-  "id": "0xcC4B377BBA35df0d48AeAAcd445518285f6F7A8E"
+
+  "tags": [
+    "defi",
+    "algorithmic",
+    "stable-asset"
+  ],
+
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://x.com/push_XXXX"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/pushxxxx"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/marcellorizioli-bnop/pushxxxx-assets"
+    }
+  ]
 }
