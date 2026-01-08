@@ -20,8 +20,7 @@ import (
 var configPath, root string
 
 func InitCommands() {
-	rootCmd.Flags().StringVar(&configPath, "config", ".github/assets.config.yaml",
-		"config file (default is $HOME/.github/assets.config.yaml)")
+	rootCmd.Flags().StringVar(&configPath, "config", ".github/assets.config.yaml", "config file (default is $HOME/.github/assets.config.yaml)")
 	rootCmd.Flags().StringVar(&root, "root", ".", "root path to files")
 
 	rootCmd.AddCommand(checkCmd)

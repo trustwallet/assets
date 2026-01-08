@@ -13,6 +13,7 @@ type (
 		URLs               URLs               `mapstructure:"urls"`
 		TimeFormat         string             `mapstructure:"time_format"`
 		ValidatorsSettings ValidatorsSettings `mapstructure:"validators_settings"`
+		ChainInfo          ChainInfo          `mapstructure:"chain_info"`
 	}
 
 	App struct {

@@ -19,6 +19,7 @@ GOFMT_FILES?=$$(find . -name '*.go' | grep -v vendor)
 all: fmt lint test
 
 build:
+	@mkdir -p bin
 	@echo "  >  Building main.go to bin/assets"
 	go build $(LDFLAGS) -o bin/assets ./cmd
 
@@ -31,10 +32,11 @@ fmt:
 	gofmt -w ${GOFMT_FILES}
 
 lint-install:
-ifeq (,$(wildcard test -f bin/golangci-lint))
-	@echo "  >  Installing golint"
-	curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- v1.50.1
-endif
+	@mkdir -p bin
+	@if [ ! -f bin/golangci-lint ]; then \
+		echo "  >  Installing golangci-lint"; \
+		curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b bin v1.50.1; \
+	fi
 
 lint: lint-install
 	@echo "  >  Running golint"

@@ -5,6 +5,13 @@ import (
 )
 
 func main() {
-	manager.InitCommands()
-	manager.Execute()
+	import (
+		"fmt"
+	)
+	if err := manager.InitCommands(); err != nil {
+		panic(err)
+	}
+	if err := manager.Execute(); err != nil {
+		panic(err)
+	}
 }

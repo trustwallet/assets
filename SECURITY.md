@@ -2,20 +2,22 @@
 
 ## Supported Versions
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+The following table lists which versions of this project currently receive security updates:
 
 | Version | Supported          |
 | ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+| 5.1.x   | ✅ Supported       |
+| 5.0.x   | ❌ Not Supported   |
+| 4.0.x   | ✅ Supported       |
+| < 4.0   | ❌ Not Supported   |
 
 ## Reporting a Vulnerability
 
-Use this section to tell people how to report a vulnerability.
+To report a security vulnerability:
 
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+1. **Contact:** Please email your report to [security@trustwallet.com](mailto:security@trustwallet.com).
+2. **Response Time:** You can expect an initial response within 5 business days.
+3. **Process:** After triage, we will keep you updated on the status of your report.
+4. **Resolution:** If the vulnerability is accepted, we will work with you to coordinate a fix and disclosure. If declined, we will provide a clear explanation.
+
+Thank you for helping us keep our project safe!

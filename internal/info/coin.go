@@ -11,28 +11,53 @@ func ValidateCoin(c CoinModel, allowedTags []string) error {
 
 	// All fields validated for nil and can be safety used.
 	compErr := validation.NewErrComposite()
-	if err := ValidateCoinType(*c.Type); err != nil {
-		compErr.Append(err)
+	if c.Type != nil {
+		if err := ValidateCoinType(*c.Type); err != nil {
+			compErr.Append(err)
+		}
+	} else {
+		compErr.Append(validation.NewErr("Type is nil"))
 	}
 
-	if err := ValidateDecimals(*c.Decimals); err != nil {
-		compErr.Append(err)
+	if c.Decimals != nil {
+		if err := ValidateDecimals(*c.Decimals); err != nil {
+			compErr.Append(err)
+		}
+	} else {
+		compErr.Append(validation.NewErr("Decimals is nil"))
 	}
 
-	if err := ValidateStatus(*c.Status); err != nil {
-		compErr.Append(err)
+	if c.Status != nil {
+		if err := ValidateStatus(*c.Status); err != nil {
+			compErr.Append(err)
+		}
+	} else {
+		compErr.Append(validation.NewErr("Status is nil"))
 	}
 
 	if err := ValidateTags(c.Tags, allowedTags); err != nil {
 		compErr.Append(err)
 	}
 
-	if err := ValidateDescription(*c.Description); err != nil {
-		compErr.Append(err)
+	if c.Description != nil {
+		if err := ValidateDescription(*c.Description); err != nil {
+			compErr.Append(err)
+		}
+	} else {
+		compErr.Append(validation.NewErr("Description is nil"))
 	}
 
-	if err := ValidateDescriptionWebsite(*c.Description, *c.Website); err != nil {
-		compErr.Append(err)
+	if c.Description != nil && c.Website != nil {
+		if err := ValidateDescriptionWebsite(*c.Description, *c.Website); err != nil {
+			compErr.Append(err)
+		}
+	} else {
+		if c.Description == nil {
+			compErr.Append(validation.NewErr("Description is nil for website validation"))
+		}
+		if c.Website == nil {
+			compErr.Append(validation.NewErr("Website is nil for description website validation"))
+		}
 	}
 
 	if err := ValidateLinks(c.Links); err != nil {
