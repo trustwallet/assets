@@ -1,15 +1,12 @@
 {
   "name": "Tether USD Bridged ZED20",
-  "symbol": "USDT.z",
   "type": "BEP20",
+  "symbol": "USDT.z",
   "decimals": 18,
-  "description": "USDT.z is a BEP20-compatible digital asset deployed on the BNB Smart Chain under the ZED20 standard. This entry provides non-promotional, technical metadata and public on-chain references.",
+  "description": "USDT.z is a BEP20-compatible digital asset deployed on BNB Smart Chain under the ZED20 standard. This entry provides non-promotional technical metadata and public on-chain references only.",
   "explorer": "https://bscscan.com/token/0x2AEa38D43347FF819875d576331dBd31a4a7f41c",
   "status": "active",
   "id": "0x2AEa38D43347FF819875d576331dBd31a4a7f41c",
-  "tags": [
-    "stablecoin"
-  ],
   "links": [
     {
       "name": "docs",
@@ -19,5 +16,8 @@
       "name": "github",
       "url": "https://github.com/bridgedzgrp-lab"
     }
+  ],
+  "tags": [
+    "stablecoin"
   ]
 }
