@@ -1,0 +1,19 @@
+@'
+{
+  "name": "Tether National USD",
+  "type": "BEP20",
+  "symbol": "USDT.n",
+  "decimals": 6,
+  "description": "Tether National USD is a BEP20 stablecoin pegged to the US dollar, built on Binance Smart Chain.",
+  "website": "https://tethernationalusd.medium.com/",
+  "explorer": "https://bscscan.com/token/0x82E68B7ec35c3E43Bfd2b337dcCbb94A8E0c61e0",
+  "status": "active",
+  "id": "0x82E68B7ec35c3E43Bfd2b337dcCbb94A8E0c61e0",
+  "links": [
+    { "name": "medium", "url": "https://tethernationalusd.medium.com/" }
+  ],
+  "tags": [
+    "stablecoin"
+  ]
+}
+'@ | Out-File -FilePath ".\blockchains\smartchain\assets\0x82E68B7ec35c3E43Bfd2b337dcCbb94A8E0c61e0\info.json" -Encoding utf8
