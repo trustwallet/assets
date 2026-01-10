@@ -1,0 +1,34 @@
+{
+  "name": "ZED20 Token",
+  "type": "BEP20",
+  "symbol": "ZED20",
+  "decimals": 8,
+  "description": "ZED20 Token is a BEP-20 utility token on Binance Smart Chain designed for DeFi interoperability, cross-chain bridging, and transparent value transfer. It has a fixed supply of 200 million tokens and zero protocol fees.",
+  "website": "https://usdtzcontroller.io",
+  "explorer": "https://bscscan.com/token/0xC8fd86B786c48DD840Ae3d89A21649EC51fA2F5b",
+  "id": "0xC8fd86B786c48DD840Ae3d89A21649EC51fA2F5b",
+  "logoURI": "logo.png",
+  "tags": ["defi", "cross-chain"],
+  "links": [
+    {
+      "name": "website",
+      "url": "https://usdtzcontroller.io"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/Maxrighttalent/zed20-official"
+    },
+    {
+      "name": "twitter",
+      "url": "https://x.com/usdtzofficial"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/zed20_official"
+    },
+    {
+      "name": "whitepaper",
+      "url": "https://maxrighttalent.github.io/zed20-official/ZED20_Token_Whitepaper_v1.1.pdf"
+    }
+  ]
+}
