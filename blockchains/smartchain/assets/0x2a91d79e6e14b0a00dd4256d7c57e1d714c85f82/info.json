@@ -3,11 +3,11 @@
   "type": "BEP20",
   "symbol": "BIT",
   "decimals": 18,
-  "website": "https://bit4k.com",
-  "description": "BIT4K is a token supporting sustainable IT reuse and circular economy through a trusted B2B and B2C marketplace for refurbished electronics.",
-  "explorer": "https://bscscan.com/token/0x2a91D79e6E14B0A00DD4256d7c57E1d714c85F82",
+  "website": "https://www.bit4k.com/token-bit4k",
+  "description": "BIT4K is the native utility token of the BIT4K ecosystem, supporting a sustainable IT reuse marketplace and circular economy initiatives.",
+  "explorer": "https://bscscan.com/token/0x2a91D79e6E14B0A00DD4256d7c57e1d714c85F82",
   "status": "active",
-  "id": "0x2a91D79e6E14B0A00DD4256d7c57E1d714c85F82",
+  "id": "0x2a91D79e6E14B0A00DD4256d7c57e1d714c85F82",
   "links": [
     {
       "name": "telegram",
@@ -22,5 +22,7 @@
       "url": "https://github.com/cdefra/BIT4K-SmartContract"
     }
   ],
-  "tags": ["defi"]
+  "tags": [
+    "defi"
+  ]
 }
