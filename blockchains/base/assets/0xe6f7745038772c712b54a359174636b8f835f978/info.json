@@ -1,11 +1,29 @@
 {
   "name": "EL VAUGHNS Coin",
   "symbol": "EV",
-  "type": "BASE",
+  "type": "ERC20",
   "decimals": 8,
   "description": "The cornerstone store of value for The Vaughns Family Ecosystem. Built for long-term wealth accumulation.",
   "website": "https://thevaughnstoken.com",
   "explorer": "https://basescan.org/token/0xe6f7745038772c712b54a359174636b8f835f978",
   "status": "active",
-  "id": "0xe6f7745038772c712b54a359174636b8f835f978"
+  "id": "0xe6f7745038772c712b54a359174636b8f835f978",
+  "links": [
+    {
+      "name": "youtube",
+      "url": "https://youtube.com/@von-elvaughn"
+    },
+    {
+      "name": "tiktok",
+      "url": "https://www.tiktok.com/@devaughnparker"
+    },
+    {
+      "name": "facebook",
+      "url": "https://www.facebook.com/share/14Scrn127y9/"
+    }
+  ],
+  "tags": [
+    "defi",
+    "staking"
+  ]
 }
