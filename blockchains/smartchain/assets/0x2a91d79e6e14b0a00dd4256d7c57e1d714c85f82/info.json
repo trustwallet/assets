@@ -8,9 +8,15 @@
   "website": "https://www.bit4k.com/token-bit4k",
   "explorer": "https://bscscan.com/token/0x2a91d79e6e14b0a00dd4256d7c57e1d714c85f82",
   "description": "BIT4K Token is the native utility token of the BIT4K ecosystem, used for transactions, staking and rewards.",
-  "links": {
-    "telegram": "https://t.me/BIT4KTokenCommunity",
-    "github": "https://github.com/cdefra/BIT4K-SmartContract"
-  },
+  "links": [
+    {
+      "name": "telegram",
+      "url": "https://t.me/BIT4KTokenCommunity"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/cdefra/BIT4K-SmartContract"
+    }
+  ],
   "tags": ["utility"]
 }
