@@ -1,0 +1,19 @@
+{
+  "name": "USDT",
+  "symbol": "USDT",
+  "decimals": 6,
+  "network": "Solana",
+  "contract_address": "FHWPTZ6ESMEnUvz7WcPJ6MwPVkcxDkk3v3gGP28odJzi",
+  "logo_uri": "https://i.ibb.co/0RTpTr8T/USDT.png",
+  "peg": {
+    "currency": "USD",
+    "reference": "USDC",
+    "ratio": "1:1"
+  },
+  "description": "USDT on Solana is a Solana-native stablecoin implemented as an SPL token, designed to maintain a 1:1 peg with the US dollar via parity with USDC. It leverages Solana\u2019s high-performance, low-cost infrastructure to enable fast settlements, efficient trading, payments, remittances, and DeFi integrations across the Solana ecosystem.",
+  "website": "https://artablockchain.com/",
+  "explorer": "https://solscan.io/token/FHWPTZ6ESMEnUvz7WcPJ6MwPVkcxDkk3v3gGP28odJzi",
+  "standard": "SPL",
+  "type": "Stablecoin",
+  "status": "Active"
+}
