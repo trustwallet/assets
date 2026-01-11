@@ -1,11 +1,29 @@
 {
   "name": "Nature Force EL VAUGHNS Token",
   "symbol": "NFEV",
-  "type": "BASE",
+  "type": "ERC20",
   "decimals": 10,
   "description": "Premium reserve asset for NFT minting, governance voting, and elite marketplace access in The Vaughns Family Ecosystem.",
   "website": "https://thevaughnstoken.com",
   "explorer": "https://basescan.org/token/0xd5f5e79ef859dd7777b2097d4b82d44059a5aaa4",
   "status": "active",
-  "id": "0xd5f5e79ef859dd7777b2097d4b82d44059a5aaa4"
+  "id": "0xd5f5e79ef859dd7777b2097d4b82d44059a5aaa4",
+  "links": [
+    {
+      "name": "youtube",
+      "url": "https://youtube.com/@von-elvaughn"
+    },
+    {
+      "name": "tiktok",
+      "url": "https://www.tiktok.com/@devaughnparker"
+    },
+    {
+      "name": "facebook",
+      "url": "https://www.facebook.com/share/14Scrn127y9/"
+    }
+  ],
+  "tags": [
+    "defi",
+    "staking"
+  ]
 }
