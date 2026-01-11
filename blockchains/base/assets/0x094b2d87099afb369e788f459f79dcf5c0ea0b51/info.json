@@ -1,11 +1,29 @@
 {
   "name": "Von EL VAUGHNS Coin",
   "symbol": "VEV",
-  "type": "BASE",
+  "type": "ERC20",
   "decimals": 6,
   "description": "The utility token of The Vaughns Family Ecosystem. Powers daily transactions, boost purchases, and community rewards.",
   "website": "https://thevaughnstoken.com",
   "explorer": "https://basescan.org/token/0x094b2d87099afb369e788f459f79dcf5c0ea0b51",
   "status": "active",
-  "id": "0x094b2d87099afb369e788f459f79dcf5c0ea0b51"
+  "id": "0x094b2d87099afb369e788f459f79dcf5c0ea0b51",
+  "links": [
+    {
+      "name": "youtube",
+      "url": "https://youtube.com/@von-elvaughn"
+    },
+    {
+      "name": "tiktok",
+      "url": "https://www.tiktok.com/@devaughnparker"
+    },
+    {
+      "name": "facebook",
+      "url": "https://www.facebook.com/share/14Scrn127y9/"
+    }
+  ],
+  "tags": [
+    "defi",
+    "staking"
+  ]
 }
