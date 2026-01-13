@@ -1,19 +1,25 @@
 {
-  "name": "Genesis Core",
+  "name": "AGC",
   "symbol": "AGC",
   "type": "ERC20",
   "decimals": 18,
-  "description": "Genesis Core (AGC) is a Polygon-based utility and fan token designed for NFT and community ecosystems.",
-  "explorer": "https://polygonscan.com/token/0x5850ef30c280b66c3ded80291a6abe50c2a336",
+  "description": "AGC is a utility and fan token designed for NFT, community engagement and digital assets.",
+  "website": "https://example.com",
+  "explorer": "https://etherscan.io/token/0xf5850ef30c280b66c3ded80291a6abe50c2a336",
+  "status": "active",
+  "id": "0xf5850ef30c280b66c3ded80291a6abe50c2a336",
   "links": [
-    {
-      "name": "website",
-      "url": "https://example.com"
-    },
     {
       "name": "twitter",
       "url": "https://twitter.com/example"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/example"
     }
   ],
-  "tags": ["utility-token"]
+  "tags": [
+    "nft",
+    "fan-token"
+  ]
 }
