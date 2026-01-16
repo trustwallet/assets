@@ -16,6 +16,7 @@ import { TokenomicsSection } from "./tokenomics-section"
 import { TestimonialsSection } from "./testimonials-section"
 import { CTASection } from "./cta-section"
 import { ContactSection } from "./contact-section"
+import { LogoSection } from "./logo-section"
 import { Footer } from "./footer"
 
 export function LandingPage() {
@@ -32,6 +33,7 @@ export function LandingPage() {
         <StatsCounter />
         <AboutSection />
         <FeaturesSection />
+        <LogoSection />
         <PartnersSection />
         <WhitepaperSection />
         <RoadmapSection />
