@@ -5,24 +5,24 @@ import { Download, ArrowLeft } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 
-const OPM_LOGO_URL = "/images/6f10bccb-b857-43f7-95dd.jpeg"
+const OPM_LOGO_URL = "/images/opm-logo-full.png"
+const OPM_LOGO_200_URL = "/images/opm-logo-200.png"
 
 export default function OPMLogoAssetPage() {
-  const handleDownload = async () => {
+  const handleDownload = async (url: string, filename: string) => {
     try {
-      const response = await fetch(OPM_LOGO_URL)
+      const response = await fetch(url)
       const blob = await response.blob()
-      const url = URL.createObjectURL(blob)
+      const blobUrl = URL.createObjectURL(blob)
       const a = document.createElement("a")
-      a.href = url
-      a.download = "opm-logo.png"
+      a.href = blobUrl
+      a.download = filename
       document.body.appendChild(a)
       a.click()
       document.body.removeChild(a)
-      URL.revokeObjectURL(url)
+      URL.revokeObjectURL(blobUrl)
     } catch (error) {
-      // Fallback: open in new tab
-      window.open(OPM_LOGO_URL, "_blank")
+      window.open(url, "_blank")
     }
   }
 
@@ -47,50 +47,86 @@ export default function OPMLogoAssetPage() {
           </p>
         </div>
 
-        {/* Logo Display */}
-        <div className="max-w-2xl mx-auto">
-          <div className="bg-card border border-border rounded-2xl p-8 md:p-12 mb-8">
-            <div className="flex justify-center mb-8">
-              <div className="relative w-64 h-64 md:w-80 md:h-80">
-                <Image
-                  src={OPM_LOGO_URL || "/placeholder.svg"}
-                  alt="OnePremium OPM Logo"
-                  fill
-                  className="object-contain"
-                  priority
-                />
+        {/* Logo Display - Main and 200px versions */}
+        <div className="max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
+            <div className="bg-card border border-border rounded-2xl p-6 md:p-8">
+              <h2 className="text-lg font-semibold text-foreground mb-4 text-center">Full Size</h2>
+              <div className="flex justify-center mb-6">
+                <div className="relative w-64 h-64">
+                  <Image
+                    src={OPM_LOGO_URL || "/placeholder.svg"}
+                    alt="OnePremium OPM Logo - Full Size"
+                    fill
+                    className="object-contain"
+                    priority
+                  />
+                </div>
+              </div>
+              <div className="text-center text-sm text-muted-foreground mb-4">Original Resolution</div>
+              <div className="flex flex-col gap-3">
+                <Button
+                  onClick={() => handleDownload(OPM_LOGO_URL, "opm-logo-full.png")}
+                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground gap-2"
+                >
+                  <Download className="w-4 h-4" />
+                  Download Full Size
+                </Button>
+                <Button asChild variant="outline" className="w-full gap-2 bg-transparent">
+                  <a href={OPM_LOGO_URL} target="_blank" rel="noopener noreferrer">
+                    View Full Size
+                  </a>
+                </Button>
               </div>
             </div>
 
-            {/* Actions */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button onClick={handleDownload} className="bg-primary hover:bg-primary/90 text-primary-foreground gap-2">
-                <Download className="w-4 h-4" />
-                Download Logo
-              </Button>
-              <Button asChild variant="outline" className="gap-2 bg-transparent">
-                <a href={OPM_LOGO_URL} target="_blank" rel="noopener noreferrer">
-                  View Full Size
-                </a>
-              </Button>
+            <div className="bg-card border border-border rounded-2xl p-6 md:p-8">
+              <h2 className="text-lg font-semibold text-foreground mb-4 text-center">200 x 200 px</h2>
+              <div className="flex justify-center mb-6">
+                <div className="relative w-[200px] h-[200px] border border-dashed border-border rounded-lg flex items-center justify-center">
+                  <Image
+                    src={OPM_LOGO_200_URL || "/placeholder.svg"}
+                    alt="OnePremium OPM Logo - 200x200"
+                    width={200}
+                    height={200}
+                    className="object-contain"
+                    priority
+                  />
+                </div>
+              </div>
+              <div className="text-center text-sm text-muted-foreground mb-4">200 x 200 pixels</div>
+              <div className="flex flex-col gap-3">
+                <Button
+                  onClick={() => handleDownload(OPM_LOGO_200_URL, "opm-logo-200x200.png")}
+                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground gap-2"
+                >
+                  <Download className="w-4 h-4" />
+                  Download 200x200
+                </Button>
+                <Button asChild variant="outline" className="w-full gap-2 bg-transparent">
+                  <a href={OPM_LOGO_200_URL} target="_blank" rel="noopener noreferrer">
+                    View 200x200
+                  </a>
+                </Button>
+              </div>
             </div>
           </div>
 
           {/* Specifications */}
-          <div className="bg-card border border-border rounded-xl p-6">
+          <div className="bg-card border border-border rounded-xl p-6 mb-6">
             <h2 className="text-lg font-semibold text-foreground mb-4">Specifications</h2>
-            <div className="grid grid-cols-2 gap-4 text-sm">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
               <div>
                 <span className="text-muted-foreground">Format:</span>
-                <span className="ml-2 text-foreground">PNG / JPEG</span>
+                <span className="ml-2 text-foreground">PNG</span>
               </div>
               <div>
-                <span className="text-muted-foreground">Resolution:</span>
-                <span className="ml-2 text-foreground">High Definition</span>
+                <span className="text-muted-foreground">Full Size:</span>
+                <span className="ml-2 text-foreground">Original HD</span>
               </div>
               <div>
-                <span className="text-muted-foreground">Primary Color:</span>
-                <span className="ml-2 text-foreground">#D4A024 (Gold)</span>
+                <span className="text-muted-foreground">Small Size:</span>
+                <span className="ml-2 text-foreground">200 x 200 px</span>
               </div>
               <div>
                 <span className="text-muted-foreground">License:</span>
@@ -100,19 +136,20 @@ export default function OPMLogoAssetPage() {
           </div>
 
           {/* Usage Guidelines */}
-          <div className="mt-6 bg-card border border-border rounded-xl p-6">
+          <div className="bg-card border border-border rounded-xl p-6 mb-6">
             <h2 className="text-lg font-semibold text-foreground mb-4">Usage Guidelines</h2>
             <ul className="text-sm text-muted-foreground space-y-2">
               <li>• Use the logo without modifications to maintain brand integrity</li>
               <li>• Ensure adequate spacing around the logo (minimum 20% of logo width)</li>
               <li>• Do not distort, rotate, or change the logo proportions</li>
               <li>• The logo should be clearly visible against any background</li>
+              <li>• Use 200x200 version for profile pictures, favicons, and small displays</li>
               <li>• For press and media inquiries: kontakt@onepremium.de</li>
             </ul>
           </div>
 
           {/* Brand Colors */}
-          <div className="mt-6 bg-card border border-border rounded-xl p-6">
+          <div className="bg-card border border-border rounded-xl p-6">
             <h2 className="text-lg font-semibold text-foreground mb-4">Brand Colors</h2>
             <div className="flex flex-wrap gap-4">
               <div className="flex items-center gap-3">
