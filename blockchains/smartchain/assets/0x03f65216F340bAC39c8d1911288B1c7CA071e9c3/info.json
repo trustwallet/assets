@@ -1,0 +1,29 @@
+{
+  "name": "USDDD",
+  "symbol": "USDDD",
+  "type": "BEP20",
+  "decimals": 6,
+  "description": "USDDD is the protocol-native stablecoin of DIGDUG.DO. It is an upgradeable BEP-20 token designed for protocol operations, treasury flows, and future on-chain utility within the DIGDUG ecosystem.",
+  "website": "https://digdug.do",
+  "explorer": "https://bscscan.com/token/0x03f65216F340bAC39c8d1911288B1c7CA071e9c3",
+  "status": "active",
+  "id": "0x03f65216F340bAC39c8d1911288B1c7CA071e9c3",
+  "tags": [
+    "defi",
+    "stablecoin"
+  ],
+  "links": [
+    {
+      "name": "website",
+      "url": "https://digdug.do"
+    },
+    {
+      "name": "docs",
+      "url": "https://github.com/noblegatefze/digdug-whitepaper"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/digdugdo"
+    }
+  ]
+}
