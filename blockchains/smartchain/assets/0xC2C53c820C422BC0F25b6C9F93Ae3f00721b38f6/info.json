@@ -1,0 +1,28 @@
+{
+    "name": "Tether USD",
+    "type": "BEP20",
+    "symbol": "USDT",
+    "decimals": 6,
+    "website": "https://tether.to",
+    "description": "Tether USD (USDT) stablecoin on BNB Smart Chain",
+    "explorer": "https://bscscan.com/token/0xc2c53c820c422bc0f25b6c9f93ae3f00721b38f6",
+    "status": "active",
+    "id": "0xC2C53c820C422BC0F25b6C9F93Ae3f00721b38f6",
+    "links": [
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/tether (for real USDT)"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/TetherDiscussion"
+        },
+        {
+            "name": "telegram_news",
+            "url": "https://t.me/TetherDiscussion"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}
