@@ -8,7 +8,7 @@ import { useWallet } from "@/hooks/use-wallet"
 import { LanguageSwitcher } from "./language-switcher"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { Menu, Wallet, LogOut } from "lucide-react"
+import { Menu, Wallet, LogOut, ArrowRightLeft, Activity, FileCode } from "lucide-react"
 
 export function Header() {
   const { t } = useLanguage()
@@ -20,7 +20,8 @@ export function Header() {
     { href: "#whitepaper", label: t.nav.whitepaper },
     { href: "#roadmap", label: t.nav.roadmap },
     { href: "#tokenomics", label: t.nav.tokenomics },
-    { href: "#contact", label: "Contact" },
+    { href: "/dex", label: "DEX", icon: ArrowRightLeft },
+    { href: "/price-watcher", label: "Markets", icon: Activity },
   ]
 
   const formatAddress = (addr: string) => `${addr.slice(0, 6)}...${addr.slice(-4)}`
@@ -31,19 +32,20 @@ export function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
           <div className="relative w-10 h-10 rounded-full overflow-hidden border border-primary/30">
-            <Image src="/images/3bffe8d5-1382-49f5-92e7.jpeg" alt="OnePremium" fill className="object-cover" />
+            <Image src="/images/opm-logo-200.png" alt="OnePremium" fill className="object-cover" />
           </div>
           <span className="font-serif text-xl font-bold text-gradient">OnePremium</span>
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-6">
+        <nav className="hidden lg:flex items-center gap-4">
           {navItems.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+              className="flex items-center gap-1.5 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors px-2 py-1 rounded-lg hover:bg-primary/5"
             >
+              {item.icon && <item.icon className="h-4 w-4" />}
               {item.label}
             </Link>
           ))}
@@ -78,22 +80,32 @@ export function Header() {
           {/* Mobile Menu */}
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon" className="md:hidden">
+              <Button variant="ghost" size="icon" className="lg:hidden">
                 <Menu className="h-5 w-5" />
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] bg-background border-border">
-              <div className="flex flex-col gap-6 mt-8">
+              <div className="flex flex-col gap-4 mt-8">
                 {navItems.map((item) => (
                   <Link
                     key={item.href}
                     href={item.href}
                     onClick={() => setIsOpen(false)}
-                    className="text-lg font-medium text-foreground"
+                    className="flex items-center gap-2 text-lg font-medium text-foreground p-2 rounded-lg hover:bg-primary/5"
                   >
+                    {item.icon && <item.icon className="h-5 w-5 text-primary" />}
                     {item.label}
                   </Link>
                 ))}
+                <hr className="border-border" />
+                <Link
+                  href="/smart-contracts"
+                  onClick={() => setIsOpen(false)}
+                  className="flex items-center gap-2 text-lg font-medium text-foreground p-2 rounded-lg hover:bg-primary/5"
+                >
+                  <FileCode className="h-5 w-5 text-primary" />
+                  Smart Contracts
+                </Link>
                 <hr className="border-border" />
                 {isConnected ? (
                   <>
