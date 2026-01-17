@@ -3,10 +3,15 @@
   "symbol": "KDOD",
   "type": "POLYGON",
   "decimals": 18,
-  "description": "KDOD Token is a utility and payment token deployed on the Polygon blockchain. It is designed for transactions, rewards, and digital services within the KDOD ecosystem.",
+  "description": "KDOD Token is a Polygon-based payment and utility token designed for transactions, in-app rewards, and digital services within the KDOD ecosystem.",
   "website": "https://lorddiboty.github.io/kdod-token/",
-  "explorer": "https://polygonscan.com/token/0x06c48b625c7e8aec973199c8b0201989285c4feb",
-  "social links": [
+  "explorer": "https://polygonscan.com/token/",
+  "status": "active",
+  "id": "0x06c48b625c7e8aec973199c8b0201989285c4feb",
+  "tags": [
+    "payments"
+  ],
+  "links": [
     {
       "name": "twitter",
       "url": "https://x.com/kdodtoken"
@@ -16,12 +21,8 @@
       "url": "https://t.me/kdodtoken"
     },
     {
-      "name": "tiktok",
-      "url": "https://www.tiktok.com/@thekdodtoken"
+      "name": "linkedin",
+      "url": "https://www.linkedin.com/company/kdodtoken/"
     }
-  ],
-  "tags": [
-    "utility-token",
-    "payment"
   ]
 }
