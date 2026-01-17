@@ -3,7 +3,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { useLanguage } from "@/hooks/use-language"
-import { Twitter, Send, Globe, Mail, Shield, FileText, Users } from "lucide-react"
+import { Twitter, Send, Globe, Mail, Shield, FileText, Users, Code2 } from "lucide-react"
 import { CONTACT_EMAIL, TWITTER_URL, TELEGRAM_URL, WEBSITE_URL, OPM_TOKEN_ADDRESS } from "@/lib/constants"
 
 export function Footer() {
@@ -24,7 +24,7 @@ export function Footer() {
           <div className="space-y-4 lg:col-span-2">
             <Link href="/" className="flex items-center gap-2">
               <div className="relative w-10 h-10 rounded-full overflow-hidden">
-                <Image src="/images/3bffe8d5-1382-49f5-92e7.jpeg" alt="OnePremium" fill className="object-cover" />
+                <Image src="/images/6f10bccb-b857-43f7-95dd.jpeg" alt="OnePremium" fill className="object-cover" />
               </div>
               <span className="font-serif text-xl font-bold text-primary">OnePremium</span>
             </Link>
@@ -79,6 +79,17 @@ export function Footer() {
                   </span>
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/smart-contracts"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  <span className="flex items-center gap-1">
+                    <Code2 className="h-3 w-3" />
+                    Smart Contracts
+                  </span>
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -110,6 +121,16 @@ export function Footer() {
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
                   {language === "de" ? "Verifizierter Contract" : "Verified Contract"}
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://solidityscan.com/quickscan/0xE430b07F7B168E77B07b29482DbF89EafA53f484/etherscan/mainnet?ref=etherscan"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  {language === "de" ? "Audit-Bericht" : "Audit Report"}
                 </a>
               </li>
             </ul>
@@ -181,6 +202,14 @@ export function Footer() {
                 >
                   Uniswap
                 </a>
+              </li>
+              <li>
+                <Link
+                  href="/assets/opm-logo"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  {language === "de" ? "Logo & Medien" : "Logo & Media"}
+                </Link>
               </li>
               <li>
                 <a

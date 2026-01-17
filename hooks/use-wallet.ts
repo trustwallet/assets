@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useCallback, useEffect } from "react"
+import { useState, useCallback, useEffect, useRef } from "react"
 
 declare global {
   interface Window {
@@ -54,7 +54,7 @@ function openMetaMaskDeepLink() {
   }
 }
 
-export function useWallet() {
+export function useWallet(autoConnect = false) {
   const [state, setState] = useState<WalletState>({
     isConnected: false,
     address: null,
@@ -62,6 +62,8 @@ export function useWallet() {
     isConnecting: false,
     error: null,
   })
+
+  const hasAttemptedAutoConnect = useRef(false)
 
   const checkConnection = useCallback(async () => {
     if (typeof window !== "undefined" && window.ethereum) {
@@ -76,11 +78,13 @@ export function useWallet() {
             isConnecting: false,
             error: null,
           })
+          return true
         }
       } catch (error) {
         console.error("Failed to check connection:", error)
       }
     }
+    return false
   }, [])
 
   const connect = useCallback(async () => {
@@ -139,7 +143,22 @@ export function useWallet() {
   }, [])
 
   useEffect(() => {
-    checkConnection()
+    const init = async () => {
+      const alreadyConnected = await checkConnection()
+
+      if (autoConnect && !alreadyConnected && !hasAttemptedAutoConnect.current) {
+        hasAttemptedAutoConnect.current = true
+        const hasMetaMask = hasMetaMaskExtension()
+        if (hasMetaMask) {
+          // Small delay to ensure page is ready
+          setTimeout(() => {
+            connect()
+          }, 500)
+        }
+      }
+    }
+
+    init()
 
     if (typeof window !== "undefined" && window.ethereum) {
       const handleAccountsChanged = (accounts: unknown) => {
@@ -163,7 +182,7 @@ export function useWallet() {
         window.ethereum?.removeListener("chainChanged", handleChainChanged)
       }
     }
-  }, [checkConnection, disconnect])
+  }, [checkConnection, disconnect, autoConnect, connect])
 
   return {
     ...state,

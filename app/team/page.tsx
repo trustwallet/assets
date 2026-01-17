@@ -4,143 +4,214 @@ import { useLanguage } from "@/hooks/use-language"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { AnimatedBackground } from "@/components/animated-background"
-import { ArrowLeft, Users, Linkedin, Twitter, Github, Building, Scale, Vote, Shield } from "lucide-react"
+import {
+  ArrowLeft,
+  Users,
+  Building,
+  Scale,
+  Vote,
+  Shield,
+  Globe,
+  Mail,
+  Award,
+  Target,
+  Eye,
+  Sparkles,
+} from "lucide-react"
 import Link from "next/link"
-import Image from "next/image"
+import { CONTACT_EMAIL } from "@/lib/constants"
 
 export default function TeamPage() {
   const { language } = useLanguage()
 
   const content = {
     en: {
-      title: "Team & Governance",
-      subtitle: "Transparent leadership and decentralized decision-making",
-      teamTitle: "Core Team",
-      teamDescription: "Our team combines expertise in blockchain technology, finance, and business development.",
-      advisorsTitle: "Advisors",
+      title: "Leadership & Governance",
+      subtitle: "Building the future of premium digital assets with transparency and innovation",
+      visionTitle: "Our Vision",
+      visionText:
+        "To establish OnePremium as the world's leading ultra-scarce digital asset, creating unprecedented value for our community through innovation, transparency, and unwavering commitment to excellence.",
+      missionTitle: "Our Mission",
+      missionText:
+        "Democratizing access to premium investment opportunities while maintaining the highest standards of security, compliance, and community governance.",
+      valuesTitle: "Core Values",
+      values: [
+        {
+          title: "Transparency",
+          description: "Every decision, transaction, and development is openly communicated to our community.",
+        },
+        {
+          title: "Innovation",
+          description: "Continuously pushing boundaries in blockchain technology and DeFi solutions.",
+        },
+        {
+          title: "Security",
+          description: "Implementing industry-leading security measures to protect community assets.",
+        },
+        {
+          title: "Community",
+          description: "Empowering token holders through decentralized governance and shared success.",
+        },
+      ],
+      leadershipTitle: "Executive Leadership",
+      leadershipDescription:
+        "Our leadership team combines decades of experience in blockchain technology, financial services, and enterprise development.",
+      ceo: {
+        name: "Executive Team",
+        role: "Strategic Leadership",
+        description:
+          "The OnePremium executive team operates with a focus on long-term value creation, regulatory compliance, and community-driven development. Our leadership brings together expertise from traditional finance, blockchain technology, and enterprise software development.",
+        highlights: [
+          "Strategic partnership development",
+          "Regulatory compliance oversight",
+          "Community governance implementation",
+          "Technology roadmap execution",
+        ],
+      },
+      advisorsTitle: "Advisory Board",
       advisorsNote:
-        "Advisory board to be announced. We are in discussions with industry experts in DeFi, compliance, and enterprise blockchain adoption.",
-      governanceTitle: "Governance Model",
+        "OnePremium is actively building relationships with industry experts in DeFi, regulatory compliance, institutional investment, and enterprise blockchain adoption. Advisory appointments will be announced following completion of due diligence processes.",
+      governanceTitle: "Governance Framework",
       governanceDescription:
-        "OnePremium is transitioning towards a decentralized autonomous organization (DAO) structure.",
+        "OnePremium operates under a progressive decentralization model, transitioning from foundation oversight to full community governance.",
       governancePhases: [
         {
-          title: "Current Phase: Foundation",
+          title: "Phase 1: Foundation Governance (Current)",
+          status: "active",
           description:
-            "Core team manages operations with community input through governance proposals and voting mechanisms.",
+            "Core team manages daily operations with community input through governance proposals, feedback channels, and transparent reporting.",
         },
         {
-          title: "Phase 2: Hybrid Governance",
+          title: "Phase 2: Hybrid Governance (2026)",
+          status: "upcoming",
           description:
-            "Token holders gain voting rights on key decisions including treasury allocations, partnership approvals, and protocol upgrades.",
+            "Token holders gain formal voting rights on key decisions including treasury allocations, partnership approvals, and protocol upgrades.",
         },
         {
-          title: "Phase 3: Full DAO",
+          title: "Phase 3: Full DAO (2027-2028)",
+          status: "planned",
           description:
-            "Complete transition to decentralized governance with elected council members and on-chain voting for all major decisions.",
+            "Complete transition to decentralized autonomous organization with elected council members and on-chain voting for all major decisions.",
         },
       ],
-      treasuryTitle: "Treasury Transparency",
+      treasuryTitle: "Treasury Management",
       treasuryDescription:
-        "All treasury operations are conducted through multi-signature wallets requiring multiple team member approvals.",
+        "All treasury operations are conducted with maximum transparency and security through multi-signature protocols.",
       treasuryItems: [
-        "Multi-sig wallet requiring 3-of-5 signatures",
-        "Monthly treasury reports published on-chain",
-        "Community oversight of major expenditures",
-        "Transparent allocation tracking",
+        "Multi-signature wallet requiring 3-of-5 executive approvals",
+        "Monthly treasury reports published on-chain and community platforms",
+        "Community oversight committee for expenditures exceeding threshold",
+        "Real-time allocation tracking via public dashboard",
+        "Annual third-party audits of treasury operations",
       ],
-      votingTitle: "Voting Rights",
-      votingDescription: "Token holders can participate in governance based on their tier status:",
+      votingTitle: "Token Holder Rights",
+      votingDescription: "OnePremium token holders participate in governance based on their tier status:",
       votingTiers: [
-        { tier: "Starter/Bronze", rights: "Forum participation, feedback submission" },
-        { tier: "Silver/Gold", rights: "Proposal voting, community polls" },
-        { tier: "Platinum/Diamond", rights: "Full voting rights, proposal creation, council eligibility" },
+        { tier: "Starter / Bronze", rights: "Community forum access, feedback submission, newsletter participation" },
+        { tier: "Silver / Gold", rights: "Proposal voting, community polls, early access to announcements" },
+        {
+          tier: "Platinum / Diamond",
+          rights: "Full voting rights, proposal creation, council election eligibility, direct team communication",
+        },
       ],
-      disclaimer: "Team information will be updated as we expand. All team members undergo verification processes.",
+      contactTitle: "Contact Leadership",
+      contactDescription: "For partnership inquiries, media requests, or governance matters:",
     },
     de: {
-      title: "Team & Governance",
-      subtitle: "Transparente Führung und dezentralisierte Entscheidungsfindung",
-      teamTitle: "Kernteam",
-      teamDescription: "Unser Team vereint Expertise in Blockchain-Technologie, Finanzen und Geschäftsentwicklung.",
-      advisorsTitle: "Berater",
+      title: "Führung & Governance",
+      subtitle: "Die Zukunft premium digitaler Assets mit Transparenz und Innovation gestalten",
+      visionTitle: "Unsere Vision",
+      visionText:
+        "OnePremium als weltweit führendes ultra-knappes digitales Asset zu etablieren und beispiellosen Wert für unsere Community durch Innovation, Transparenz und kompromissloses Engagement für Exzellenz zu schaffen.",
+      missionTitle: "Unsere Mission",
+      missionText:
+        "Den Zugang zu Premium-Investitionsmöglichkeiten zu demokratisieren und dabei höchste Standards in Sicherheit, Compliance und Community-Governance aufrechtzuerhalten.",
+      valuesTitle: "Kernwerte",
+      values: [
+        {
+          title: "Transparenz",
+          description: "Jede Entscheidung, Transaktion und Entwicklung wird offen an unsere Community kommuniziert.",
+        },
+        {
+          title: "Innovation",
+          description: "Kontinuierliches Vorantreiben der Grenzen in Blockchain-Technologie und DeFi-Lösungen.",
+        },
+        {
+          title: "Sicherheit",
+          description: "Implementierung branchenführender Sicherheitsmaßnahmen zum Schutz der Community-Assets.",
+        },
+        {
+          title: "Community",
+          description: "Ermächtigung der Token-Inhaber durch dezentralisierte Governance und geteilten Erfolg.",
+        },
+      ],
+      leadershipTitle: "Führungsteam",
+      leadershipDescription:
+        "Unser Führungsteam vereint jahrzehntelange Erfahrung in Blockchain-Technologie, Finanzdienstleistungen und Unternehmensentwicklung.",
+      ceo: {
+        name: "Führungsteam",
+        role: "Strategische Leitung",
+        description:
+          "Das OnePremium-Führungsteam arbeitet mit Fokus auf langfristige Wertschöpfung, regulatorische Compliance und community-gesteuerte Entwicklung. Unsere Führung vereint Expertise aus traditionellem Finanzwesen, Blockchain-Technologie und Enterprise-Softwareentwicklung.",
+        highlights: [
+          "Strategische Partnerschaftsentwicklung",
+          "Regulatorische Compliance-Überwachung",
+          "Community-Governance-Implementierung",
+          "Technologie-Roadmap-Ausführung",
+        ],
+      },
+      advisorsTitle: "Beratergremium",
       advisorsNote:
-        "Beratergremium wird noch bekannt gegeben. Wir führen Gespräche mit Branchenexperten in DeFi, Compliance und Enterprise-Blockchain-Adoption.",
-      governanceTitle: "Governance-Modell",
+        "OnePremium baut aktiv Beziehungen zu Branchenexperten in DeFi, regulatorischer Compliance, institutionellen Investitionen und Enterprise-Blockchain-Adoption auf. Beraterernennungen werden nach Abschluss der Due-Diligence-Prozesse bekannt gegeben.",
+      governanceTitle: "Governance-Rahmenwerk",
       governanceDescription:
-        "OnePremium befindet sich im Übergang zu einer dezentralisierten autonomen Organisationsstruktur (DAO).",
+        "OnePremium operiert unter einem progressiven Dezentralisierungsmodell mit Übergang von Stiftungsaufsicht zu vollständiger Community-Governance.",
       governancePhases: [
         {
-          title: "Aktuelle Phase: Fundament",
+          title: "Phase 1: Stiftungs-Governance (Aktuell)",
+          status: "active",
           description:
-            "Das Kernteam verwaltet den Betrieb mit Community-Input durch Governance-Vorschläge und Abstimmungsmechanismen.",
+            "Kernteam verwaltet den täglichen Betrieb mit Community-Input durch Governance-Vorschläge, Feedback-Kanäle und transparente Berichterstattung.",
         },
         {
-          title: "Phase 2: Hybride Governance",
+          title: "Phase 2: Hybride Governance (2026)",
+          status: "upcoming",
           description:
-            "Token-Inhaber erhalten Stimmrechte bei wichtigen Entscheidungen, einschließlich Treasury-Zuteilungen, Partnerschaftsgenehmigungen und Protokoll-Upgrades.",
+            "Token-Inhaber erhalten formelle Stimmrechte bei wichtigen Entscheidungen einschließlich Treasury-Zuteilungen, Partnerschaftsgenehmigungen und Protokoll-Upgrades.",
         },
         {
-          title: "Phase 3: Vollständige DAO",
+          title: "Phase 3: Vollständige DAO (2027-2028)",
+          status: "planned",
           description:
-            "Vollständiger Übergang zur dezentralisierten Governance mit gewählten Ratsmitgliedern und On-Chain-Abstimmungen für alle wichtigen Entscheidungen.",
+            "Vollständiger Übergang zur dezentralisierten autonomen Organisation mit gewählten Ratsmitgliedern und On-Chain-Abstimmungen für alle wichtigen Entscheidungen.",
         },
       ],
-      treasuryTitle: "Treasury-Transparenz",
+      treasuryTitle: "Treasury-Management",
       treasuryDescription:
-        "Alle Treasury-Operationen werden über Multi-Signatur-Wallets durchgeführt, die mehrere Teamgenehmigungen erfordern.",
+        "Alle Treasury-Operationen werden mit maximaler Transparenz und Sicherheit durch Multi-Signatur-Protokolle durchgeführt.",
       treasuryItems: [
-        "Multi-Sig-Wallet erfordert 3-von-5 Signaturen",
-        "Monatliche Treasury-Berichte on-chain veröffentlicht",
-        "Community-Aufsicht bei größeren Ausgaben",
-        "Transparente Zuweisungsverfolgung",
+        "Multi-Signatur-Wallet erfordert 3-von-5 Führungsgenehmigungen",
+        "Monatliche Treasury-Berichte on-chain und auf Community-Plattformen veröffentlicht",
+        "Community-Aufsichtsausschuss für Ausgaben über Schwellenwert",
+        "Echtzeit-Zuweisungsverfolgung über öffentliches Dashboard",
+        "Jährliche Drittanbieter-Audits der Treasury-Operationen",
       ],
-      votingTitle: "Stimmrechte",
-      votingDescription: "Token-Inhaber können basierend auf ihrem Tier-Status an der Governance teilnehmen:",
+      votingTitle: "Token-Inhaber-Rechte",
+      votingDescription: "OnePremium Token-Inhaber nehmen basierend auf ihrem Tier-Status an der Governance teil:",
       votingTiers: [
-        { tier: "Starter/Bronze", rights: "Forumsteilnahme, Feedback-Einreichung" },
-        { tier: "Silber/Gold", rights: "Vorschlagsabstimmung, Community-Umfragen" },
-        { tier: "Platin/Diamant", rights: "Volle Stimmrechte, Vorschlagserstellung, Ratsberechtigung" },
+        { tier: "Starter / Bronze", rights: "Community-Forum-Zugang, Feedback-Einreichung, Newsletter-Teilnahme" },
+        { tier: "Silber / Gold", rights: "Vorschlagsabstimmung, Community-Umfragen, früher Zugang zu Ankündigungen" },
+        {
+          tier: "Platin / Diamant",
+          rights: "Volle Stimmrechte, Vorschlagserstellung, Ratswahl-Berechtigung, direkter Team-Kontakt",
+        },
       ],
-      disclaimer:
-        "Teaminformationen werden bei Erweiterung aktualisiert. Alle Teammitglieder durchlaufen Verifizierungsprozesse.",
+      contactTitle: "Führung kontaktieren",
+      contactDescription: "Für Partnerschaftsanfragen, Medienanfragen oder Governance-Angelegenheiten:",
     },
   }
 
   const t = content[language]
-
-  const team = [
-    {
-      name: "To Be Announced",
-      role: language === "de" ? "Gründer & CEO" : "Founder & CEO",
-      description:
-        language === "de"
-          ? "Verifizierung ausstehend. Vollständiges Profil wird nach Abschluss der Compliance-Prüfungen veröffentlicht."
-          : "Verification pending. Full profile will be published upon completion of compliance reviews.",
-      image: "/professional-business-portrait-silhouette.jpg",
-      social: { linkedin: "#", twitter: "#" },
-    },
-    {
-      name: "To Be Announced",
-      role: language === "de" ? "CTO" : "CTO",
-      description:
-        language === "de"
-          ? "Blockchain-Entwicklung und Smart-Contract-Architektur. Profil wird nach Verifizierung veröffentlicht."
-          : "Blockchain development and smart contract architecture. Profile to be published after verification.",
-      image: "/tech-professional-portrait-silhouette.jpg",
-      social: { linkedin: "#", github: "#" },
-    },
-    {
-      name: "To Be Announced",
-      role: language === "de" ? "Leiter Compliance" : "Head of Compliance",
-      description:
-        language === "de"
-          ? "Regulatorische Compliance und rechtliche Angelegenheiten. Verifizierung läuft."
-          : "Regulatory compliance and legal affairs. Verification in progress.",
-      image: "/legal-professional-portrait-silhouette.jpg",
-      social: { linkedin: "#" },
-    },
-  ]
 
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -157,79 +228,101 @@ export default function TeamPage() {
 
         <div className="max-w-5xl mx-auto">
           {/* Header */}
-          <div className="mb-12 p-6 bg-card/50 backdrop-blur border border-border/50 rounded-xl text-center">
-            <div className="flex items-center justify-center gap-3 mb-2">
-              <Users className="h-8 w-8 text-primary" />
-              <h1 className="text-3xl md:text-4xl font-serif font-bold text-foreground">{t.title}</h1>
+          <div className="mb-12 p-8 bg-gradient-to-br from-primary/10 to-primary/5 backdrop-blur border border-primary/20 rounded-2xl text-center">
+            <div className="flex items-center justify-center gap-3 mb-3">
+              <div className="p-3 bg-primary/20 rounded-full">
+                <Users className="h-8 w-8 text-primary" />
+              </div>
             </div>
-            <p className="text-muted-foreground">{t.subtitle}</p>
+            <h1 className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-2">{t.title}</h1>
+            <p className="text-muted-foreground max-w-2xl mx-auto">{t.subtitle}</p>
           </div>
 
-          {/* Team Section */}
-          <div className="mb-12">
-            <h2 className="text-2xl font-semibold text-foreground mb-2 flex items-center gap-2">
-              <Building className="h-5 w-5 text-primary" />
-              {t.teamTitle}
-            </h2>
-            <p className="text-muted-foreground mb-6">{t.teamDescription}</p>
+          {/* Vision & Mission */}
+          <div className="grid md:grid-cols-2 gap-6 mb-12">
+            <div className="p-6 bg-card/50 backdrop-blur border border-border/50 rounded-xl">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="p-2 bg-primary/10 rounded-lg">
+                  <Eye className="h-5 w-5 text-primary" />
+                </div>
+                <h2 className="text-xl font-semibold">{t.visionTitle}</h2>
+              </div>
+              <p className="text-muted-foreground leading-relaxed">{t.visionText}</p>
+            </div>
 
-            <div className="grid gap-6 md:grid-cols-3">
-              {team.map((member, index) => (
-                <div key={index} className="p-6 bg-card/30 backdrop-blur border border-border/50 rounded-xl">
-                  <div className="relative w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden bg-secondary">
-                    <Image
-                      src={member.image || "/placeholder.svg"}
-                      alt={member.name}
-                      fill
-                      className="object-cover opacity-50"
-                    />
-                  </div>
-                  <h3 className="text-lg font-semibold text-foreground text-center">{member.name}</h3>
-                  <p className="text-sm text-primary text-center mb-3">{member.role}</p>
-                  <p className="text-sm text-muted-foreground text-center mb-4">{member.description}</p>
-                  <div className="flex justify-center gap-3">
-                    {member.social.linkedin && (
-                      <a
-                        href={member.social.linkedin}
-                        className="text-muted-foreground hover:text-primary transition-colors"
-                      >
-                        <Linkedin className="h-4 w-4" />
-                      </a>
-                    )}
-                    {member.social.twitter && (
-                      <a
-                        href={member.social.twitter}
-                        className="text-muted-foreground hover:text-primary transition-colors"
-                      >
-                        <Twitter className="h-4 w-4" />
-                      </a>
-                    )}
-                    {member.social.github && (
-                      <a
-                        href={member.social.github}
-                        className="text-muted-foreground hover:text-primary transition-colors"
-                      >
-                        <Github className="h-4 w-4" />
-                      </a>
-                    )}
-                  </div>
+            <div className="p-6 bg-card/50 backdrop-blur border border-border/50 rounded-xl">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="p-2 bg-primary/10 rounded-lg">
+                  <Target className="h-5 w-5 text-primary" />
+                </div>
+                <h2 className="text-xl font-semibold">{t.missionTitle}</h2>
+              </div>
+              <p className="text-muted-foreground leading-relaxed">{t.missionText}</p>
+            </div>
+          </div>
+
+          {/* Core Values */}
+          <div className="mb-12">
+            <h2 className="text-2xl font-semibold text-foreground mb-6 flex items-center gap-2">
+              <Sparkles className="h-6 w-6 text-primary" />
+              {t.valuesTitle}
+            </h2>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              {t.values.map((value, index) => (
+                <div
+                  key={index}
+                  className="p-5 bg-card/30 backdrop-blur border border-border/50 rounded-xl text-center"
+                >
+                  <h3 className="font-semibold text-foreground mb-2">{value.title}</h3>
+                  <p className="text-sm text-muted-foreground">{value.description}</p>
                 </div>
               ))}
             </div>
+          </div>
 
-            <p className="text-xs text-muted-foreground/70 mt-4 text-center italic">{t.disclaimer}</p>
+          {/* Executive Leadership */}
+          <div className="mb-12">
+            <h2 className="text-2xl font-semibold text-foreground mb-2 flex items-center gap-2">
+              <Building className="h-6 w-6 text-primary" />
+              {t.leadershipTitle}
+            </h2>
+            <p className="text-muted-foreground mb-6">{t.leadershipDescription}</p>
+
+            <div className="p-6 bg-gradient-to-br from-card/80 to-card/40 backdrop-blur border border-border/50 rounded-xl">
+              <div className="flex items-start gap-4 mb-4">
+                <div className="p-4 bg-primary/10 rounded-xl">
+                  <Award className="h-8 w-8 text-primary" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-foreground">{t.ceo.name}</h3>
+                  <p className="text-primary">{t.ceo.role}</p>
+                </div>
+              </div>
+              <p className="text-muted-foreground mb-4 leading-relaxed">{t.ceo.description}</p>
+              <div className="grid sm:grid-cols-2 gap-2">
+                {t.ceo.highlights.map((highlight, index) => (
+                  <div key={index} className="flex items-center gap-2 text-sm text-muted-foreground">
+                    <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+                    {highlight}
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
 
           {/* Advisors */}
           <div className="mb-12 p-6 bg-card/30 backdrop-blur border border-border/50 rounded-xl">
-            <h2 className="text-xl font-semibold text-foreground mb-4">{t.advisorsTitle}</h2>
+            <h2 className="text-xl font-semibold text-foreground mb-4 flex items-center gap-2">
+              <Globe className="h-5 w-5 text-primary" />
+              {t.advisorsTitle}
+            </h2>
             <p className="text-muted-foreground">{t.advisorsNote}</p>
           </div>
 
           {/* Governance Model */}
           <div className="mb-12">
             <h2 className="text-2xl font-semibold text-foreground mb-2 flex items-center gap-2">
-              <Scale className="h-5 w-5 text-primary" />
+              <Scale className="h-6 w-6 text-primary" />
               {t.governanceTitle}
             </h2>
             <p className="text-muted-foreground mb-6">{t.governanceDescription}</p>
@@ -238,17 +331,34 @@ export default function TeamPage() {
               {t.governancePhases.map((phase, index) => (
                 <div
                   key={index}
-                  className={`p-5 rounded-xl border ${index === 0 ? "bg-primary/5 border-primary/30" : "bg-card/30 border-border/50"}`}
+                  className={`p-5 rounded-xl border transition-all ${
+                    phase.status === "active"
+                      ? "bg-primary/10 border-primary/40 shadow-lg shadow-primary/5"
+                      : phase.status === "upcoming"
+                        ? "bg-blue-500/5 border-blue-500/30"
+                        : "bg-card/30 border-border/50"
+                  }`}
                 >
-                  <h3 className="font-semibold text-foreground mb-2 flex items-center gap-2">
+                  <h3 className="font-semibold text-foreground mb-2 flex items-center gap-3">
                     <span
-                      className={`w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold ${index === 0 ? "bg-primary text-primary-foreground" : "bg-muted text-muted-foreground"}`}
+                      className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold ${
+                        phase.status === "active"
+                          ? "bg-primary text-primary-foreground"
+                          : phase.status === "upcoming"
+                            ? "bg-blue-500/20 text-blue-500 border border-blue-500/30"
+                            : "bg-muted text-muted-foreground"
+                      }`}
                     >
                       {index + 1}
                     </span>
                     {phase.title}
+                    {phase.status === "active" && (
+                      <span className="ml-auto text-xs bg-primary/20 text-primary px-2 py-1 rounded-full">
+                        {language === "de" ? "Aktuell" : "Current"}
+                      </span>
+                    )}
                   </h3>
-                  <p className="text-sm text-muted-foreground ml-8">{phase.description}</p>
+                  <p className="text-sm text-muted-foreground ml-11">{phase.description}</p>
                 </div>
               ))}
             </div>
@@ -263,8 +373,8 @@ export default function TeamPage() {
             <p className="text-muted-foreground mb-4">{t.treasuryDescription}</p>
             <ul className="space-y-2">
               {t.treasuryItems.map((item, index) => (
-                <li key={index} className="flex items-center gap-2 text-sm text-muted-foreground">
-                  <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+                <li key={index} className="flex items-start gap-3 text-sm text-muted-foreground">
+                  <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
                   {item}
                 </li>
               ))}
@@ -272,7 +382,7 @@ export default function TeamPage() {
           </div>
 
           {/* Voting Rights */}
-          <div className="p-6 bg-card/30 backdrop-blur border border-border/50 rounded-xl">
+          <div className="mb-12 p-6 bg-card/30 backdrop-blur border border-border/50 rounded-xl">
             <h2 className="text-xl font-semibold text-foreground mb-4 flex items-center gap-2">
               <Vote className="h-5 w-5 text-primary" />
               {t.votingTitle}
@@ -280,12 +390,31 @@ export default function TeamPage() {
             <p className="text-muted-foreground mb-4">{t.votingDescription}</p>
             <div className="space-y-3">
               {t.votingTiers.map((tier, index) => (
-                <div key={index} className="flex items-start gap-4 p-3 bg-background/50 rounded-lg">
-                  <div className="text-sm font-medium text-primary min-w-[120px]">{tier.tier}</div>
+                <div
+                  key={index}
+                  className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 p-4 bg-background/50 rounded-lg"
+                >
+                  <div className="text-sm font-medium text-primary min-w-[140px]">{tier.tier}</div>
                   <div className="text-sm text-muted-foreground">{tier.rights}</div>
                 </div>
               ))}
             </div>
+          </div>
+
+          {/* Contact */}
+          <div className="p-6 bg-gradient-to-br from-primary/10 to-primary/5 backdrop-blur border border-primary/20 rounded-xl text-center">
+            <h2 className="text-xl font-semibold text-foreground mb-2 flex items-center justify-center gap-2">
+              <Mail className="h-5 w-5 text-primary" />
+              {t.contactTitle}
+            </h2>
+            <p className="text-muted-foreground mb-4">{t.contactDescription}</p>
+            <a
+              href={`mailto:${CONTACT_EMAIL}`}
+              className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors"
+            >
+              <Mail className="h-4 w-4" />
+              {CONTACT_EMAIL}
+            </a>
           </div>
         </div>
       </main>
