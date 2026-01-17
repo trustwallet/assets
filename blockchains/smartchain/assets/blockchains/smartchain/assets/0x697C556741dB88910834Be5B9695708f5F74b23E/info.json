@@ -3,9 +3,35 @@
   "symbol": "USDDD",
   "type": "BEP20",
   "decimals": 18,
-  "description": "USDDD is the protocol fuel token for DIGDUG.DO. This is a verified placeholder (sentinel) on BNB Smart Chain; minting is permanently disabled.",
+  "description": "USDDD is the protocol fuel token for DIGDUG.DO. This is a verified placeholder (sentinel) token on BNB Smart Chain. Minting is permanently disabled.",
   "website": "https://digdug.do",
   "explorer": "https://bscscan.com/token/0x697C556741dB88910834Be5B9695708f5F74b23E",
   "status": "active",
-  "id": "0x697C556741dB88910834Be5B9695708f5F74b23E"
+  "id": "0x697C556741dB88910834Be5B9695708f5F74b23E",
+  "links": [
+    {
+      "name": "telegram",
+      "url": "https://t.me/digdugdo"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/noblegatefze/digdug-whitepaper"
+    },
+    {
+      "name": "docs",
+      "url": "https://github.com/noblegatefze/digdug-whitepaper/blob/main/WHITEPAPER.md"
+    },
+    {
+      "name": "docs",
+      "url": "https://github.com/noblegatefze/digdug-whitepaper/blob/main/GENESIS.md"
+    },
+    {
+      "name": "docs",
+      "url": "https://github.com/noblegatefze/digdug-whitepaper/blob/main/USDDD_MONETARY_POLICY.md"
+    }
+  ],
+  "tags": [
+    "defi",
+    "stablecoin"
+  ]
 }
