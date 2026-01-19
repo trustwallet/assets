@@ -1,0 +1,25 @@
+{
+    "name": "Tether",
+    "type": "BEP20",
+    "symbol": "USDT.z",
+    "decimals": 18,
+    "website": "https://github.com/nensailimited-hash/usdtz-demo2",
+    "description": "📝 Submission Trust Wallet – USDT.z\nToken Name\n\nTether\n\nSymbol\n\nUSDT.z\n\nBlockchain\n\nBNB Smart Chain (BEP20)\n\nContract Address (Proxy)\n\n0x8F912e0b1971E5e16bc5834d1A34667B5Ec38CcA\n\nProject Description\nUSDT.z is a demonstration and educational BEP20 token created to showcase advanced smart contract architecture on BNB Smart Chain.\nThe project demonstrates:\nERC1967 transparent proxy upgradeability\nVersioned implementations (V1–V8)\nControlled pause mechanisms\nInteraction with decentralized liquidity pools (1:1 reference pool on PancakeSwap)\nImportant: USDT.z is not an official stablecoin, is not affiliated with Tether, and is intended solely for technical demonstration and testing purposes.\nUse Case\nUSDT.z is used as a technical demo token to:\nTest upgradeable proxy patterns\nDemonstrate smart contract versioning\nShowcase liquidity pool behavior\nEducate developers and users on proxy-based token design\nIt is not a financial product and not marketed for trading profits.\nOfficial Links\nBscScan (Proxy): https://bscscan.com/address/0x8F912e0b1971E5e16bc5834d1A34667B5Ec38CcA\nBscScan (Implementation V8): <inserisci qui il link verificato della V8>\nDEX Pool (PancakeSwap): https://pancakeswap.finance/info/pair/0x0a3C22428266B20c9bF1Bb894C712F327CE589F7\nGitHub Repository (logo + metadata): https://raw.githubusercontent.com/nensailimited-hash/usdtz-demo2/main/tokenlist.json\nToken Logo\nPNG format, 256×256 px, transparent background\nDirect link per il form:\nhttps://raw.githubusercontent.com/nensailimited-hash/usdtz-demo2/main/logo.png\nAdditional Notes for Reviewers\nProxy uses transparent ERC1967 pattern\nImplementation contract V8 is verified on BscScan\nUpgradeability included for demonstration only\nFunctions mint(), pause(), upgradeTo() are owner-only\nLiquidity pool exists solely for demonstration\nToken name may resemble a stablecoin, but this is strictly educational",
+    "explorer": "https://bscscan.com/token/0x8F912e0b1971E5e16bc5834d1A34667B5Ec38CcA",
+    "status": "active",
+    "id": "0x8F912e0b1971E5e16bc5834d1A34667B5Ec38CcA",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/nensailimited-hash/usdtz-demo2"
+        },
+        {
+            "name": "source_code",
+            "url": "https://bscscan.com/address/0x8F912e0b1971E5e16bc5834d1A34667B5Ec38CcA"
+        }
+    ],
+    "tags": [
+        "memes",
+        "dapp"
+    ]
+}
