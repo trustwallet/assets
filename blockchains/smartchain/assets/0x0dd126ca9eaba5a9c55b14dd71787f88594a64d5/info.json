@@ -3,15 +3,16 @@
   "symbol": "USDT",
   "type": "BEP20",
   "decimals": 18,
-  "description": "Tether stablecoin for the Turbo USD ecosystem on BNB Smart Chain.",
+  "description": "Native stablecoin of the Turbo USD Finance ecosystem on BNB Smart Chain. 1:1 USD-backed token designed for low-cost DeFi transactions.",
   "website": "https://turbousd.io",
-  "explorer": "https://bscscan.com/token/0x0dd126ca9eaba5a9c55b14dd71787f88594a64d5",
+  "explorer": "https://bscscan.com/token/0x0DD126CA9EAbA5A9c55B14dd71787F88594A64d5",
   "status": "active",
-  "id": "0x0dd126ca9eaba5a9c55b14dd71787f88594a64d5",
+  "id": "0x0DD126CA9EAbA5A9c55B14dd71787F88594A64d5",
   "links": [
-    {"name": "website", "url": "https://turbousd.io"},
-    {"name": "twitter", "url": "https://twitter.com/turbousd"},
-    {"name": "telegram", "url": "https://t.me/turbousdtron"},
-    {"name": "github", "url": "https://github.com/Nenzy10/Turbousd.io"}
-  ]
+    {"name": "github", "url": "https://github.com/Nenzy10/Turbousd.io"},
+    {"name": "twitter", "url": "https://twitter.com/nenzybrown"},
+    {"name": "telegram", "url": "https://t.me/TurboUSDtron"},
+    {"name": "whitepaper", "url": "https://turbousd.io/turbo-usd-whitepaper.pdf"}
+  ],
+  "tags": ["stablecoin"]
 }
