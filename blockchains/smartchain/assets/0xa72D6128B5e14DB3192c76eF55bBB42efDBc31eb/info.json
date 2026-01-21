@@ -1,26 +1,34 @@
 {
-  "name": "Tether USD Bridged ZED20",
-  "symbol": "USDT.z",
-  "type": "BEP20",
-  "decimals": 18,
-  "description": "USDT.z is a bridged stablecoin on BNB Smart Chain.",
-  "website": "https://tether-usd.cc",
-  "explorer": "https://bscscan.com/token/0xa72D6128B5e14DB3192c76eF55bBB42efDBc31eb",
-  "status": "active",
-  "id": "0xa72D6128B5e14DB3192c76eF55bBB42efDBc31eb",
-  "links": [
-    {
-      "name": "twitter",
-      "url": "https://x.com/PZbridged"
-    },
-    {
-      "name": "telegram",
-      "url": "https://t.me/tether-usd_cc"
-    },
-    {
-      "name": "github",
-      "url": "https://github.com/projecttetherusdtz"
-    }
-  ],
-  "tags": ["stablecoin", "defi", "bridge"]
+    "name": "Tether USD Bridged ZED20",
+    "symbol": "USDT.z",
+    "type": "BEP20",
+    "decimals": 18,
+    "website": "https://tether-usd.cc",
+    "description": "USDT.z is a ZED20-bridged stablecoin deployed on Binance Smart Chain, designed for fast, low-cost and interoperable transfers.",
+    "explorer": "https://bscscan.com/token/0xa72D6128B5e14DB3192c76eF55bBB42efDBc31eb",
+    "status": "active",
+    "id": "0xa72D6128B5e14DB3192c76eF55bBB42efDBc31eb",
+    "links": [
+        {
+            "name": "Telegram",
+            "url": "https://t.me/tether-usd_cc"
+        },
+        {
+            "name": "X",
+            "url": "https://x.com/PZbridged"
+        },
+        {
+            "name": "GitHub",
+            "url": "https://github.com/projecttetherusdtz"
+        },
+        {
+            "name": "GeckoTerminal",
+            "url": "https://www.geckoterminal.com/bsc/pools/0xa948b9854f3f0c94911d76d686d2461a316b7762"
+        }
+    ],
+    "tags": [
+        "stablecoin",
+        "defi",
+        "wrapped"
+    ]
 }
