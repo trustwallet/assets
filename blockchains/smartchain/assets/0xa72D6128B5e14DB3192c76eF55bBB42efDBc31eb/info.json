@@ -1,26 +1,19 @@
 {
-  "name": "Tether USD Bridged ZED20",
-  "symbol": "USDT.z",
-  "type": "BEP20",
-  "decimals": 18,
-  "description": "USDT.z is a bridged stablecoin on BNB Smart Chain.",
-  "website": "https://tether-usd.cc",
-  "explorer": "https://bscscan.com/token/0xa72D6128B5e14DB3192c76eF55bBB42efDBc31eb",
-  "status": "active",
-  "id": "0xa72D6128B5e14DB3192c76eF55bBB42efDBc31eb",
-  "links": [
-    {
-      "name": "twitter",
-      "url": "https://x.com/PZbridged"
-    },
-    {
-      "name": "telegram",
-      "url": "https://t.me/tether-usd_cc"
-    },
-    {
-      "name": "github",
-      "url": "https://github.com/projecttetherusdtz"
-    }
-  ],
-  "tags": ["stablecoin", "defi", "bridge"]
+    "name": "Tether USD Bridged ZED20",
+    "symbol": "USDT.z",
+    "type": "BEP20",
+    "decimals": 18,
+    "description": "Tether USD Bridged to ZED20 Blockchain from BNB Smart Chain. A stablecoin pegged to USD operating within the Zedxion ecosystem.",
+    "website": "https://tether-usd.cc",
+    "explorer": "https://bscscan.com/token/0xa72D6128B5e14DB3192c76eF55bBB42efDBc31eb",
+    "status": "active",
+    "id": "0xa72D6128B5e14DB3192c76eF55bBB42efDBc31eb",
+    "links": [
+        {"name": "twitter", "url": "https://x.com/PZbridged"},
+        {"name": "telegram", "url": "https://t.me/tether_usd_cc"},
+        {"name": "discord", "url": "https://discord.gg/projecttetherusdt.zbridged"},
+        {"name": "coingecko", "url": "https://www.coingecko.com/en/coins/tether-usd-bridged-zed20"},
+        {"name": "coinmarketcap", "url": "https://coinmarketcap.com/currencies/tether-usd-bridged-zed20-usdt/"}
+    ],
+    "tags": ["stablecoin", "defi"]
 }
