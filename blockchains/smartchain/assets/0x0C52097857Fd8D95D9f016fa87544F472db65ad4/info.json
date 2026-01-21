@@ -7,5 +7,16 @@
   "description": "SNSC is a BEP20 token deployed on BNB Smart Chain.",
   "explorer": "https://bscscan.com/token/0x0C52097857Fd8D95D9f016fa87544F472db65ad4",
   "status": "active",
-  "id": "0x0C52097857Fd8D95D9f016fa87544F472db65ad4"
+  "id": "0x0C52097857Fd8D95D9f016fa87544F472db65ad4",
+  "tags": [ "defi"],
+   "links": [
+    {
+      "name": "website",
+      "url": "https://www.snsc.finance.com"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/skullcat2008/SNSC-token"
+    }
+  ]
 }
