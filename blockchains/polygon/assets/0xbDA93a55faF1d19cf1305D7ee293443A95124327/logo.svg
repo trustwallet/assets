@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <defs>
+    <!-- Blue Purple Gradient -->
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5f8cff"/>
+      <stop offset="100%" stop-color="#7b4dff"/>
+    </linearGradient>
+
+    <!-- Gold Metallic Gradient -->
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff6c2"/>
+      <stop offset="30%" stop-color="#f5c542"/>
+      <stop offset="65%" stop-color="#d4af37"/>
+      <stop offset="100%" stop-color="#8f6a00"/>
+    </linearGradient>
+
+    <!-- Glow Effect -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="120" height="120" rx="24" fill="#0b0f1a"/>
+
+  <!-- Hexagon -->
+  <polygon
+    points="60,14 100,36 100,84 60,106 20,84 20,36"
+    fill="url(#grad)"
+    opacity="0.9"
+  />
+
+  <!-- Inner Hexagon -->
+  <polygon
+    points="60,26 90,42 90,78 60,94 30,78 30,42"
+    fill="#0b0f1a"
+  />
+
+  <!-- ZN Text with Glow -->
+  <text
+    x="50%"
+    y="62%"
+    text-anchor="middle"
+    fill="url(#gold)"
+    font-size="36"
+    font-family="Arial, Helvetica, sans-serif"
+    font-weight="900"
+    letter-spacing="3"
+    filter="url(#glow)">
+    ZN
+  </text>
+</svg>
