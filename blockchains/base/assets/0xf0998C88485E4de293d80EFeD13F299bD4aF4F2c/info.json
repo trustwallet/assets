@@ -3,8 +3,22 @@
   "symbol": "ERC20",
   "type": "BASE",
   "decimals": 6,
-  "website": "",
+  "website": "https://erc2020.netlify.app/",
+  "description": "ERC20 is a Base network token designed for fast and low-cost transfers.",
   "explorer": "https://basescan.org/token/0xf0998C88485E4de293d80EFeD13F299bD4aF4F2c",
   "status": "active",
-  "id": "0xf0998C88485E4de293d80EFeD13F299bD4aF4F2c"
+  "id": "0xf0998C88485E4de293d80EFeD13F299bD4aF4F2c",
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://x.com/Erc20_erc20"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/erc20_base_chain"
+    }
+  ],
+  "tags": [
+    "defi"
+  ]
 }
