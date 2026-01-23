@@ -1,0 +1,24 @@
+{
+    "name": "BNBTiger",
+    "type": "BEP20",
+    "symbol": "BNBTiger",
+    "decimals": 18,
+    "website": "https://github.com/TheACJ/BNBTiger",
+    "description": "BNBTiger is a demonstration BEP-20 token deployed on BNB Smart Chain for portfolio showcase and educational purposes. The contract implements standard ERC-20 functionality with additional controls: transfers are restricted by default (requiring owner whitelisting), anti-whale limits (2% max transaction, 5% max wallet of total supply), and optional configurable transfer fees (currently set to 0%).",
+    "explorer": "https://bscscan.com/token/0x10190859d099aef5844c17a4dc66e3ae0ff7d9fe",
+    "status": "active",
+    "id": "0x10190859D099aeF5844C17A4dC66e3Ae0ff7D9FE",
+    "links": [
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/TheACJ/BNBTiger"
+        }
+    ],
+    "tags": [
+        "memes"
+    ]
+}
