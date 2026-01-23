@@ -1,6 +1,24 @@
 {
   "name": "TND STABLE",
+  "website": "https://matrixiafinance.wordpress.com",
+  "description": "TND STABLE is a cryptocurrency built for digital money payments and financial stability.",
+  "explorer": "https://bscscan.com/token/0x6ae8193d14fb289e43ad1238aadeb1e537edca6b",
+  "type": "BEP20",
   "symbol": "TNDS",
-  "websites": ["https://matrixiafinance.wordpress.com"],
-  "socials": []
+  "decimals": 18,
+  "status": "active",
+  "id": "0x6ae8193d14fb289e43ad1238aadeb1e537edca6b",
+  "links": [
+    {
+      "name": "website",
+      "url": "https://matrixiafinance.wordpress.com"
+    },
+    {
+      "name": "explorer",
+      "url": "https://bscscan.com/token/0x6ae8193d14fb289e43ad1238aadeb1e537edca6b"
+    }
+  ],
+  "tags": [
+    "stablecoin"
+  ]
 }
