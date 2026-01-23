@@ -1,14 +1,12 @@
 {
   "name": "OnePremium",
-  "website": "https://onepremium.de",
-  "description": "OnePremium (OPM) is an ERC20 governance and DeFi token for multi-chain ecosystem applications.",
-  "explorer": "https://etherscan.io/token/0xE430b07F7B168E77b07b29482DbF89EafA53f484",
-  "type": "ERC20",
   "symbol": "OPM",
   "decimals": 18,
+  "chain": "ethereum",
+  "contract": "0xE430b07F7B168E77b07b29482DbF89EafA53f484",
   "status": "active",
-  "id": "0xE430b07F7B168E77b07b29482DbF89EafA53f484",
   "links": [
+    {"name": "website", "url": "https://onepremium.de"},
     {"name": "twitter", "url": "https://twitter.com/onepremium"},
     {"name": "telegram", "url": "https://t.me/onepremium"},
     {"name": "discord", "url": "https://discord.gg/onepremium"},
@@ -17,6 +15,5 @@
     {"name": "medium", "url": "https://medium.com/onepremium"},
     {"name": "whitepaper", "url": "https://onepremium.de/whitepaper"},
     {"name": "docs", "url": "https://docs.onepremium.de"}
-  ],
-  "tags": ["governance", "defi", "opm"]
+  ]
 }
