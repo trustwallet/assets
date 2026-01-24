@@ -4,13 +4,21 @@
   "decimals": 18,
   "description": "SFY est le token utilitaire du projet LAIZZA permettant d’accéder à des services et avantages dans l’écosystème LAIZZA et ses plateformes partenaires.",
   "type": "cryptocurrency",
-  "links": {
-    "website": "https://laizza.io",
-    "explorer": "https://polygonscan.com/token/0x901a16110b42d868a250ca2e0110944d63c6d41a",
-    "twitter": "https://twitter.com/LAIZZAofficial"
-  },
+  "links": [
+    {
+      "name": "website",
+      "url": "https://laizza.io"
+    },
+    {
+      "name": "explorer",
+      "url": "https://polygonscan.com/token/0x901a16110b42d868a250ca2e0110944d63c6d41a"
+    },
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/LAIZZAofficial"
+    }
+  ],
   "tags": ["utility-token", "polygon", "laizza"],
   "status": "active",
-  "id": "safyre",
-  "holders": 1
+  "id": "safyre"
 }
