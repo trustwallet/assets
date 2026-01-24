@@ -3,22 +3,20 @@
   "symbol": "SFY",
   "decimals": 18,
   "description": "SFY est le token utilitaire du projet LAIZZA permettant d’accéder à des services et avantages dans l’écosystème LAIZZA et ses plateformes partenaires.",
-  "type": "cryptocurrency",
+  "type": "ERC20",
+  "website": "https://laizza.io",
+  "explorer": "https://polygonscan.com/token/0x901a16110b42d868a250ca2e0110944d63c6d41a",
   "links": [
-    {
-      "name": "website",
-      "url": "https://laizza.io"
-    },
-    {
-      "name": "explorer",
-      "url": "https://polygonscan.com/token/0x901a16110b42d868a250ca2e0110944d63c6d41a"
-    },
     {
       "name": "twitter",
       "url": "https://twitter.com/LAIZZAofficial"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/laizza-io"
     }
   ],
-  "tags": ["utility-token", "polygon", "laizza"],
+  "tags": ["polygon", "laizza"],
   "status": "active",
   "id": "safyre"
 }
