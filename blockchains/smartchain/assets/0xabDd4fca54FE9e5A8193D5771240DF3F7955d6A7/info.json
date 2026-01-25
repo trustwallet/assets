@@ -8,9 +8,15 @@
   "website": "https://seninwebsiten.com",
   "description": "USDT.z stable token",
   "explorer": "https://bscscan.com/token/0xabDd4fca54FE9e5A8193D5771240DF3F7955d6A7",
-  "links": {
-    "twitter": "https://twitter.com/seninhesabin",
-    "telegram": "https://t.me/seningrupun"
-  },
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/seninhesabin"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/seningrupun"
+    }
+  ],
   "tags": ["stablecoin"]
 }
