@@ -1,0 +1,1 @@
+CUCA token assets
