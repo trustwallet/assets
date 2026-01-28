@@ -1,21 +1,24 @@
 {
-    "name": "MIDAS",
-    "symbol": "MIDAS",
-    "type": "BEP20",
-    "decimals": 18,
-    "website": "https://midascoin.cash/",
-    "description": "Midas is a utility token on BNB Smart Chain designed to support ecosystem growth, community incentives, and on-chain participation within the Midas platform.",
-    "explorer": "https://bscscan.com/token/0xa059080853b2f273a452424859a4701a1ce13a0e",
-    "status": "active",
-    "id": "0xa059080853b2f273a452424859a4701a1ce13a0e",
-    "links": [
-        {
-            "name": "telegram",
-            "url": "https://t.me/midascoinofficial"
-        },
-        {
-            "name": "x",
-            "url": "https://x.com/midascoin2025"
-        }
-    ]
+  "name": "MIDAS",
+  "symbol": "MIDAS",
+  "type": "BEP20",
+  "decimals": 18,
+  "description": "Midas is a utility token on BNB Smart Chain designed to support ecosystem growth, community incentives, and on-chain participation within the Midas platform.",
+  "website": "https://midascoin.cash",
+  "explorer": "https://bscscan.com/token/0xa059080853b2f273a452424859a4701a1ce13a0e",
+  "status": "active",
+  "id": "0xa059080853b2f273a452424859a4701a1ce13a0e",
+  "tags": [
+    "defi"
+  ],
+  "links": [
+    {
+      "name": "telegram",
+      "url": "https://t.me/midascoinofficial"
+    },
+    {
+      "name": "x",
+      "url": "https://x.com/midascoin2025"
+    }
+  ]
 }
