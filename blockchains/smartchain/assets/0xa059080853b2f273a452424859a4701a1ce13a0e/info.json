@@ -8,11 +8,7 @@
   "explorer": "https://bscscan.com/token/0xa059080853b2f273a452424859a4701a1ce13a0e",
   "status": "active",
   "id": "0xa059080853b2f273a452424859a4701a1ce13a0e",
-  "tags": [
-    "defi"
-  ],
-  "links": [
-    {
+  "links": [ {
       "name": "telegram",
       "url": "https://t.me/midascoinofficial"
     },
@@ -20,5 +16,8 @@
       "name": "x",
       "url": "https://x.com/midascoin2025"
     }
+  ], 
+   "tags": [
+    "defi"
   ]
 }
