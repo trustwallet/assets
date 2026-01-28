@@ -2,10 +2,21 @@
   "name": "USDTz",
   "symbol": "USDTz",
   "type": "BEP20",
-  "decimals": 18,
+  "decimals": 0,
   "description": "USDTz is a BEP20 token deployed on BNB Smart Chain.",
   "website": "https://example.com",
-  "explorer": "https://bscscan.com/token/0xA60A1E2e39288944ca549C2dF047c05112b39242",
-  "status": "active",
-  "id": "usdtz"
+  "explorer": "https://bscscan.com/token/usdtz",
+  "links": [
+    {
+      "name": "website",
+      "url": "https://example.com"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/miworldptyltd"
+    }
+  ],
+  "tags": [
+    "stablecoin"
+  ]
 }
