@@ -1,19 +1,31 @@
 {
-  "id": "slxt",
+  "id": "0xfE7e20DB5B3eD79721bEA52693D2bF9839aAe8Ab",
   "name": "scalerX.ai Token",
   "symbol": "SLXT",
   "type": "ERC20",
   "decimals": 18,
   "address": "0xfe7e20db5b3ed79721bea52693d2bf9839aae8ab",
-  "chainId": 8453,
   "status": "active",
   "website": "https://scalerx.ai",
   "explorer": "https://basescan.org/token/0xfe7e20db5b3ed79721bea52693d2bf9839aae8ab",
   "description": "SLXT is the utility token used within the scalerX.ai ecosystem for subscriptions, usage, and protocol incentives.",
   "links": [
-    { "name": "twitter", "url": "https://x.com/scalerx_ai" },
-    { "name": "github", "url": "https://github.com/scalerx-ai" },
-    { "name": "telegram", "url": "https://t.me/scalerxai" }
+    { 
+      "name": "x", 
+      "url": "https://x.com/scalerx_ai" 
+    },
+    { 
+      "name": "github", "url": 
+      "https://github.com/scalerx-ai" 
+    },
+    { 
+      "name": "telegram", 
+      "url": "https://t.me/scalerxai" 
+    },
+    { 
+      "name": "economy", 
+      "url": "https://token.scalerx.ai" 
+    }
   ],
   "tags": [
     "utility",
