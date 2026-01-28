@@ -1,8 +1,25 @@
 {
-  "name": "Exalt Coin",
-  "symbol": "EXALT",
-  "type": "BEP20",
-  "decimals": 18,
-  "description": "Exalt Coin is a community-powered DeFi project on BNB Smart Chain focused on transparency, utility, sustainable growth, and decentralized governance.",
-  "explorer": "https://bscscan.com/token/0xb564e37070c081a93d7a0a48ce0db5ada22a4444"
+ "name": "Exalt Coin",
+ "website": "https://exaltcoincommunity.com/",
+ "description": "Exalt Coin is a community-powered DeFi project on BNB Smart Chain focused on transparency, utility, sustainable growth, and decentralized governance.",
+ "explorer": "https://bscscan.com/token/0xB564e37070c081a93D7a0a48Ce0db5ADa22A4444",
+ "type": "BEP20",
+ "symbol": "EXALT",
+ "decimals": 18,
+ "status": "active",
+ "id": "0xB564e37070c081a93D7a0a48Ce0db5ADa22A4444",
+ "links": [
+  {
+   "name": "twitter",
+   "url": "https://x.com/exalt_coin"
+  },
+  {
+   "name": "telegram",
+   "url": "https://t.me/exaltcommunity"
+  }
+ ],
+ "tags": [
+  "defi",
+  "meme"
+ ]
 }
