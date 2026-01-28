@@ -1,9 +1,30 @@
 {
+  "id": "0xf1cDA94f51B8757dd2C25b85eFbc8d4cF85656Ec",
   "name": "EINCZ",
   "symbol": "EINCZ",
   "type": "AVALANCHE",
   "decimals": 18,
-  "description": "Utility token focused on clean energy coordination and governance.",
+  "status": "active",
+  "description": "Utility token focused on clean energy coordination, incentives and governance.",
   "website": "https://www.eincz.com/?lang=en",
-  "explorer": "https://snowtrace.io/token/0xf1cDA94f51B8757dd2C25b85eFbc8d4cF85656Ec"
+  "explorer": "https://snowtrace.io/token/",
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://x.com/EINCZ_energy"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/EINCZ_energy"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/EINCZ"
+    }
+  ],
+  "tags": [
+    "energy",
+    "governance",
+    "utility"
+  ]
 }
