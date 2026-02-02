@@ -1,21 +1,36 @@
 {
-    "name": "XinFin Network",
-    "website": "https://xinfin.network",
-    "source_code": "https://github.com/XinFinORG",
-    "white_paper": "https://xinfin.org/docs/whitepaper-tech.pdf",
-    "short_description": "XinFin Network is a Enterprise Ready Hybrid Blockchain For Global Trade and Finance,Combining the power of Public & Private blockchains with Interoperable Smart Contracts ",
-    "description": "XinFin Hybrid Blockchain Network is now live in production with enterprise friendly KYC enforced set of validators that run on energy efficient machines with very Low cost.XinFin can Currently process 2000+ TPS with scalability Upto 50,000 TPS in the near future. XinFin has already secured Reglab sandbox with ADGM (regulator in Abu Dhabi). XinFin has been liaising with 29+ global regulators with positive results. Any industry like trade and supply chain finance, cross border payment, open banking and fintech & IOT for asset and logisting tracking etc.. can connect with XinFin Network.",
-    "socials": [
+    "name": "XDC Network",
+    "website": "https://xdc.org",
+    "description": "XDC Network is an enterprise-grade, EVM-compatible Layer 1 blockchain optimized for international trade and finance. It features a delegated proof-of-stake consensus mechanism (XDPoS) with 2-second block times and near-zero gas fees.",
+    "explorer": "https://xdcscan.com",
+    "symbol": "XDC",
+    "type": "coin",
+    "decimals": 18,
+    "status": "active",
+    "links": [
         {
-            "name": "Twitter",
-            "url": "https://twitter.com/XinFin_Official",
-            "handle": "XinFin_Official"
+            "name": "github",
+            "url": "https://github.com/XinFinOrg"
         },
         {
-            "name": "Reddit",
-            "url": "https://reddit.com/r/xinfin",
-            "handle": "xinfin"
+            "name": "x",
+            "url": "https://x.com/XDCFoundation"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/xaboratory"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.gg/xdc"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/xinfin"
+        },
+        {
+            "name": "docs",
+            "url": "https://docs.xdc.org"
         }
-    ],
-    "explorer": "https://explorer.xinfin.network/"
+    ]
 }
