@@ -8,6 +8,9 @@
   "explorer": "https://bscscan.com/token/0x08fa658593f0eae226d8892b2e4cb43d8912c643",
   "status": "active",
   "id": "0x08fa658593f0eae226d8892b2e4cb43d8912c643",
+  "chainId": 56,
+  "address": "0x08fa658593f0eae226d8892b2e4cb43d8912c643",
+  "logoURI": "ipfs://bafkreie2elehtmfff5rporybitvuqarxot2dmsli5sc5chqeqfaozczsau",
   "links": [
     {
       "name": "website",
@@ -18,9 +21,10 @@
       "url": "https://bscscan.com/token/0x08fa658593f0eae226d8892b2e4cb43d8912c643"
     }
   ],
-  "tags": [
-    "bridge",
-    "wrapped",
-    "defi"
-  ]
+  "tags": ["bridge", "wrapped", "defi"],
+  "social": {
+    "twitter": "",
+    "telegram": "",
+    "github": ""
+  }
 }
