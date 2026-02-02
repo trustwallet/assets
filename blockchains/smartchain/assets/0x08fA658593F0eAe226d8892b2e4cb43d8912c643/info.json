@@ -5,11 +5,11 @@
   "decimals": 18,
   "description": "Tether USD Bridged BEP20 (on-chain symbol USDT.$) is a custom bridged token on BSC. Not affiliated with Tether Limited.",
   "website": "https://carlos-qqqa75144.github.io/alphateam-token/root",
-  "explorer": "https://bscscan.com/token/0x08fa658593f0eae226d8892b2e4cb43d8912c643",
+  "explorer": "https://bscscan.com/token/0x08fA658593F0eAe226d8892b2e4cb43d8912c643",
   "status": "active",
-  "id": "0x08fa658593f0eae226d8892b2e4cb43d8912c643",
+  "id": "0x08fA658593F0eAe226d8892b2e4cb43d8912c643",
   "chainId": 56,
-  "logoURI": "https://carlos-qqqa75144.github.io/alphateam-token/root/logo.png",
+  "logoURI": "https://raw.githubusercontent.com/carlos-qqqa75144/alphateam-token/refs/heads/main/root/logo.png",
   "links": [
     {
       "name": "website",
@@ -17,7 +17,7 @@
     },
     {
       "name": "explorer",
-      "url": "https://bscscan.com/token/0x08fa658593f0eae226d8892b2e4cb43d8912c643"
+      "url": "https://bscscan.com/token/0x08fA658593F0eAe226d8892b2e4cb43d8912c643"
     }
   ],
   "tags": ["stablecoin", "defi"]
