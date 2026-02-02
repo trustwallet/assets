@@ -1,0 +1,26 @@
+{
+  "name": "Tether UsD Bridged BEP20",
+  "type": "BEP20",
+  "symbol": "USDT.$",
+  "decimals": 18,
+  "description": "Tether UsD Bridged BEP20 is a custom bridged token deployed on Binance Smart Chain. This token is not issued by or affiliated with Tether Limited. It represents a bridged or wrapped asset used within a specific ecosystem or application.",
+  "website": "https://carlos-qqqa75144.github.io/alphateam-token/root/",
+  "explorer": "https://bscscan.com/token/0x08fa658593f0eae226d8892b2e4cb43d8912c643",
+  "status": "active",
+  "id": "0x08fa658593f0eae226d8892b2e4cb43d8912c643",
+  "links": [
+    {
+      "name": "website",
+      "url": "https://carlos-qqqa75144.github.io/alphateam-token/root/"
+    },
+    {
+      "name": "explorer",
+      "url": "https://bscscan.com/token/0x08fa658593f0eae226d8892b2e4cb43d8912c643"
+    }
+  ],
+  "tags": [
+    "bridge",
+    "wrapped",
+    "defi"
+  ]
+}
