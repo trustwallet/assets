@@ -1,0 +1,21 @@
+{
+  "name": "Quai (Symbiosis)",
+  "symbol": "QUAI",
+  "type": "ERC20",
+  "decimals": 18,
+  "website": "https://qu.ai",
+  "description": "Symbiosis representation of QUAI for bridging.",
+  "explorer": "https://etherscan.io/token/0x70b7f7044D2ca8E2F1E999B90EF16d7Cb7A0cDA1",
+  "status": "active",
+  "id": "0x70b7f7044D2ca8E2F1E999B90EF16d7Cb7A0cDA1",
+  "links": [
+    { "name": "twitter", "url": "https://x.com/QuaiNetwork" },
+    { "name": "github", "url": "https://github.com/dominant-strategies" },
+    { "name": "discord", "url": "https://discord.com/invite/quai" },
+    { "name": "docs", "url": "https://docs.qu.ai" },
+    { "name": "telegram", "url": "https://t.me/QuaiNetwork" },
+    { "name": "coinmarketcap", "url": "https://coinmarketcap.com/currencies/quai-network/" },
+    { "name": "coingecko", "url": "https://coingecko.com/en/coins/quai-network" }
+  ],
+  "tags": ["wrapped"]
+}
