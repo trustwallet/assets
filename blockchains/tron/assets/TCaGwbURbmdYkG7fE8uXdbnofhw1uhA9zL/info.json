@@ -1,0 +1,20 @@
+{
+    "name": "Coinbase xStock",
+    "type": "TRC20",
+    "symbol": "COINx",
+    "decimals": 18,
+    "description": "Coinbase xStock",
+    "website": "https://assets.backed.fi/products",
+    "explorer": "https://tronscan.org/#/token20/TCaGwbURbmdYkG7fE8uXdbnofhw1uhA9zL",
+    "status": "active",
+    "id": "TCaGwbURbmdYkG7fE8uXdbnofhw1uhA9zL",
+    "links": [
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/coinbase-tokenized-stock-xstock/"
+        }
+    ],
+    "tags": [
+        "RWA"
+    ]
+}
