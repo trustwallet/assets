@@ -4,7 +4,17 @@
   "type": "BEP20",
   "decimals": 18,
   "description": "NO Coin (NC) is a BEP-20 token deployed on BNB Smart Chain.",
-  "explorer": "https://bscscan.com/token/0x5b5dD531C75F58BCCDC5308191B43Ed7E431677F",
+  "explorer": "https://bscscan.com/token/0x5b5dd531c75f58bccdc5308191b43ed7e431677f",
   "status": "active",
-  "id": "0x5b5dD531C75F58BCCDC5308191B43Ed7E431677F"
+  "id": "0x5b5dd531c75f58bccdc5308191b43ed7e431677f",
+  "links": [
+    {
+      "name": "source_code",
+      "url": "https://bscscan.com/address/0x5b5dd531c75f58bccdc5308191b43ed7e431677f"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/trustwallet/assets"
+    }
+  ]
 }
