@@ -9,21 +9,10 @@
   "status": "active",
   "id": "0x641A0DC00d9a42aA3639834687A62356504d9325",
   "links": [
-    {
-      "name": "website",
-      "url": "https://oldchain-oldc.com"
-    },
-    {
-      "name": "twitter",
-      "url": "https://x.com/OldChainToken"
-    },
-    {
-      "name": "telegram",
-      "url": "https://t.me/OfficialOldchain"
-    }
+    { "name": "website", "url": "https://oldchain-oldc.com" },
+    { "name": "twitter", "url": "https://x.com/OldChainToken" },
+    { "name": "telegram", "url": "https://t.me/OfficialOldchain" },
+    { "name": "github", "url": "https://github.com/OldChain-OLDC" }
   ],
-  "tags": [
-    "defi",
-    "community"
-  ]
+  "tags": ["defi", "community"]
 }
