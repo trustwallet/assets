@@ -10,7 +10,6 @@ NOVS (NVX) is a TRON TRC20 standard token designed for fast, scalable and secure
 
 ### Official Links
 - *Website:* https://novsnvxtoken.com
-https://raw.githubusercontent.com/tncyus/assets/master/blockchains/tron/logo.png
-  
+  ![NOVS (NVX) Logo](https://raw.githubusercontent.com/tncyus/assets/master/blockchains/tron/logo.png)
 
 More documentation, technical paper and token distribution details will be added soon.
