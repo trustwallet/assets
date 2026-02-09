@@ -7,6 +7,7 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { AnimatedBackground } from "@/components/animated-background"
 import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
 import {
   TrendingUp,
   TrendingDown,
@@ -18,13 +19,16 @@ import {
   ArrowDownRight,
   RefreshCw,
   Clock,
-  DollarSign,
   LineChart,
   CandlestickChart,
-  Sparkles,
+  Search,
+  Star,
+  StarOff,
+  SortAsc,
+  SortDesc,
+  X,
 } from "lucide-react"
 import Image from "next/image"
-import Link from "next/link"
 
 interface CryptoData {
   symbol: string
@@ -36,9 +40,9 @@ interface CryptoData {
   volume24h: number
   logo: string
   sparkline: number[]
+  rank?: number
 }
 
-// Mathematical indicators
 const calculateRSI = (prices: number[], period = 14): number => {
   if (prices.length < period + 1) return 50
   let gains = 0,
@@ -59,7 +63,7 @@ const calculateMACD = (prices: number[]): { macd: number; signal: number; histog
   const ema12 = calculateEMA(prices, 12)
   const ema26 = calculateEMA(prices, 26)
   const macd = ema12 - ema26
-  const signal = macd * 0.9 // Simplified
+  const signal = macd * 0.9
   return { macd, signal, histogram: macd - signal }
 }
 
@@ -90,7 +94,18 @@ const calculateVolatility = (prices: number[]): number => {
   }
   const mean = returns.reduce((a, b) => a + b, 0) / returns.length
   const variance = returns.reduce((sum, r) => sum + Math.pow(r - mean, 2), 0) / returns.length
-  return Math.sqrt(variance) * Math.sqrt(365) * 100 // Annualized volatility %
+  return Math.sqrt(variance) * Math.sqrt(365) * 100
+}
+
+const calculateFibonacci = (high: number, low: number): number[] => {
+  const diff = high - low
+  return [low, low + diff * 0.236, low + diff * 0.382, low + diff * 0.5, low + diff * 0.618, low + diff * 0.786, high]
+}
+
+const calculateSMA = (prices: number[], period: number): number => {
+  if (prices.length < period) return 0
+  const slice = prices.slice(-period)
+  return slice.reduce((a, b) => a + b, 0) / period
 }
 
 export default function PriceWatcherPage() {
@@ -100,6 +115,18 @@ export default function PriceWatcherPage() {
   const [selectedTimeframe, setSelectedTimeframe] = useState("24h")
   const [isRefreshing, setIsRefreshing] = useState(false)
   const [lastUpdate, setLastUpdate] = useState(new Date())
+
+  const [searchQuery, setSearchQuery] = useState("")
+  const [favorites, setFavorites] = useState<string[]>(() => {
+    if (typeof window !== "undefined") {
+      const saved = localStorage.getItem("opm-favorites")
+      return saved ? JSON.parse(saved) : ["OPM", "BTC", "ETH"]
+    }
+    return ["OPM", "BTC", "ETH"]
+  })
+  const [showFavoritesOnly, setShowFavoritesOnly] = useState(false)
+  const [sortBy, setSortBy] = useState<"rank" | "price" | "change24h" | "marketCap" | "volume24h">("rank")
+  const [sortOrder, setSortOrder] = useState<"asc" | "desc">("asc")
 
   const content = {
     en: {
@@ -137,6 +164,16 @@ export default function PriceWatcherPage() {
       neutral_fg: "Neutral",
       greed: "Greed",
       extreme_greed: "Extreme Greed",
+      search: "Search cryptocurrencies...",
+      favorites: "Favorites",
+      showFavorites: "Show Favorites Only",
+      addToFavorites: "Add to Favorites",
+      removeFromFavorites: "Remove from Favorites",
+      sortBy: "Sort by",
+      rank: "Rank",
+      fibonacci: "Fibonacci Levels",
+      sma: "Moving Averages",
+      allCoins: "All Coins",
     },
     de: {
       title: "Preis-Beobachter",
@@ -173,12 +210,22 @@ export default function PriceWatcherPage() {
       neutral_fg: "Neutral",
       greed: "Gier",
       extreme_greed: "Extreme Gier",
+      search: "Kryptowährungen suchen...",
+      favorites: "Favoriten",
+      showFavorites: "Nur Favoriten anzeigen",
+      addToFavorites: "Zu Favoriten hinzufügen",
+      removeFromFavorites: "Aus Favoriten entfernen",
+      sortBy: "Sortieren nach",
+      rank: "Rang",
+      fibonacci: "Fibonacci-Niveaus",
+      sma: "Gleitende Durchschnitte",
+      allCoins: "Alle Münzen",
     },
   }
 
   const t = content[language]
 
-  // Generate simulated price history for indicators
+  // Generate price history for indicators
   const priceHistory = useMemo(() => {
     const basePrice = price || 259.58
     const history: number[] = []
@@ -197,6 +244,12 @@ export default function PriceWatcherPage() {
   const macd = useMemo(() => calculateMACD(priceHistory), [priceHistory])
   const bollinger = useMemo(() => calculateBollingerBands(priceHistory), [priceHistory])
   const volatility = useMemo(() => calculateVolatility(priceHistory), [priceHistory])
+  const fibonacci = useMemo(
+    () => calculateFibonacci(Math.max(...priceHistory), Math.min(...priceHistory)),
+    [priceHistory],
+  )
+  const sma20 = useMemo(() => calculateSMA(priceHistory, 20), [priceHistory])
+  const sma50 = useMemo(() => calculateSMA(priceHistory, 50), [priceHistory])
 
   // Fear & Greed calculation
   const fearGreedIndex = useMemo(() => {
@@ -206,7 +259,7 @@ export default function PriceWatcherPage() {
     return Math.round((rsiWeight + volWeight + priceWeight) / 3)
   }, [rsi, volatility, priceChange24h])
 
-  // Fetch trending crypto data
+  // Fetch crypto data
   useEffect(() => {
     const fetchCryptoData = async () => {
       const mockData: CryptoData[] = [
@@ -220,6 +273,7 @@ export default function PriceWatcherPage() {
           volume24h: volume24h || 259.5,
           logo: "/images/opm-logo-200.png",
           sparkline: priceHistory.slice(-24),
+          rank: 1,
         },
         {
           symbol: "BTC",
@@ -231,6 +285,7 @@ export default function PriceWatcherPage() {
           volume24h: 45000000000,
           logo: "https://s2.coinmarketcap.com/static/img/coins/64x64/1.png",
           sparkline: Array.from({ length: 24 }, () => 100000 + Math.random() * 10000),
+          rank: 2,
         },
         {
           symbol: "ETH",
@@ -242,6 +297,7 @@ export default function PriceWatcherPage() {
           volume24h: 18000000000,
           logo: "https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png",
           sparkline: Array.from({ length: 24 }, () => 3700 + Math.random() * 400),
+          rank: 3,
         },
         {
           symbol: "SOL",
@@ -253,6 +309,7 @@ export default function PriceWatcherPage() {
           volume24h: 8500000000,
           logo: "https://s2.coinmarketcap.com/static/img/coins/64x64/5426.png",
           sparkline: Array.from({ length: 24 }, () => 200 + Math.random() * 40),
+          rank: 4,
         },
         {
           symbol: "BNB",
@@ -264,6 +321,7 @@ export default function PriceWatcherPage() {
           volume24h: 2200000000,
           logo: "https://s2.coinmarketcap.com/static/img/coins/64x64/1839.png",
           sparkline: Array.from({ length: 24 }, () => 700 + Math.random() * 40),
+          rank: 5,
         },
         {
           symbol: "XRP",
@@ -275,6 +333,7 @@ export default function PriceWatcherPage() {
           volume24h: 12000000000,
           logo: "https://s2.coinmarketcap.com/static/img/coins/64x64/52.png",
           sparkline: Array.from({ length: 24 }, () => 2.3 + Math.random() * 0.3),
+          rank: 6,
         },
         {
           symbol: "DOGE",
@@ -286,6 +345,7 @@ export default function PriceWatcherPage() {
           volume24h: 5500000000,
           logo: "https://s2.coinmarketcap.com/static/img/coins/64x64/74.png",
           sparkline: Array.from({ length: 24 }, () => 0.35 + Math.random() * 0.14),
+          rank: 7,
         },
         {
           symbol: "ADA",
@@ -297,6 +357,31 @@ export default function PriceWatcherPage() {
           volume24h: 1800000000,
           logo: "https://s2.coinmarketcap.com/static/img/coins/64x64/2010.png",
           sparkline: Array.from({ length: 24 }, () => 1.05 + Math.random() * 0.2),
+          rank: 8,
+        },
+        {
+          symbol: "AVAX",
+          name: "Avalanche",
+          price: 45.5,
+          change24h: 4.2,
+          change7d: 11.8,
+          marketCap: 18500000000,
+          volume24h: 890000000,
+          logo: "https://s2.coinmarketcap.com/static/img/coins/64x64/5805.png",
+          sparkline: Array.from({ length: 24 }, () => 42 + Math.random() * 7),
+          rank: 9,
+        },
+        {
+          symbol: "LINK",
+          name: "Chainlink",
+          price: 18.9,
+          change24h: 1.5,
+          change7d: 6.2,
+          marketCap: 11500000000,
+          volume24h: 620000000,
+          logo: "https://s2.coinmarketcap.com/static/img/coins/64x64/1975.png",
+          sparkline: Array.from({ length: 24 }, () => 17.5 + Math.random() * 3),
+          rank: 10,
         },
       ]
       setCryptoData(mockData)
@@ -305,6 +390,16 @@ export default function PriceWatcherPage() {
     fetchCryptoData()
   }, [price, priceChange24h, marketCap, volume24h, priceHistory])
 
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      localStorage.setItem("opm-favorites", JSON.stringify(favorites))
+    }
+  }, [favorites])
+
+  const toggleFavorite = (symbol: string) => {
+    setFavorites((prev) => (prev.includes(symbol) ? prev.filter((s) => s !== symbol) : [...prev, symbol]))
+  }
+
   const handleRefresh = () => {
     setIsRefreshing(true)
     setTimeout(() => {
@@ -312,6 +407,31 @@ export default function PriceWatcherPage() {
       setIsRefreshing(false)
     }, 1000)
   }
+
+  const filteredAndSortedData = useMemo(() => {
+    let data = [...cryptoData]
+
+    // Filter by search
+    if (searchQuery) {
+      const query = searchQuery.toLowerCase()
+      data = data.filter((c) => c.symbol.toLowerCase().includes(query) || c.name.toLowerCase().includes(query))
+    }
+
+    // Filter by favorites
+    if (showFavoritesOnly) {
+      data = data.filter((c) => favorites.includes(c.symbol))
+    }
+
+    // Sort
+    data.sort((a, b) => {
+      const aVal = a[sortBy] || 0
+      const bVal = b[sortBy] || 0
+      if (sortOrder === "asc") return aVal > bVal ? 1 : -1
+      return aVal < bVal ? 1 : -1
+    })
+
+    return data
+  }, [cryptoData, searchQuery, showFavoritesOnly, favorites, sortBy, sortOrder])
 
   const topGainers = [...cryptoData].sort((a, b) => b.change24h - a.change24h).slice(0, 4)
   const topLosers = [...cryptoData].sort((a, b) => a.change24h - b.change24h).slice(0, 4)
@@ -357,7 +477,7 @@ export default function PriceWatcherPage() {
       .join(" ")
 
     return (
-      <svg viewBox="0 0 100 100" className="w-20 h-8" preserveAspectRatio="none">
+      <svg viewBox="0 0 100 100" className="w-24 h-10" preserveAspectRatio="none">
         <polyline
           points={points}
           fill="none"
@@ -403,6 +523,62 @@ export default function PriceWatcherPage() {
             </div>
           </div>
 
+          <div className="mb-8 p-4 bg-card/50 backdrop-blur border border-border/50 rounded-xl">
+            <div className="flex flex-col md:flex-row gap-4">
+              {/* Search Input */}
+              <div className="relative flex-1">
+                <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
+                <Input
+                  placeholder={t.search}
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  className="pl-10 bg-background/50"
+                />
+                {searchQuery && (
+                  <button
+                    onClick={() => setSearchQuery("")}
+                    className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground"
+                  >
+                    <X className="h-4 w-4" />
+                  </button>
+                )}
+              </div>
+
+              {/* Favorites Toggle */}
+              <Button
+                variant={showFavoritesOnly ? "default" : "outline"}
+                onClick={() => setShowFavoritesOnly(!showFavoritesOnly)}
+                className={`gap-2 ${showFavoritesOnly ? "bg-primary" : "bg-transparent"}`}
+              >
+                <Star className={`h-4 w-4 ${showFavoritesOnly ? "fill-current" : ""}`} />
+                {t.favorites} ({favorites.length})
+              </Button>
+
+              {/* Sort Controls */}
+              <div className="flex items-center gap-2">
+                <select
+                  value={sortBy}
+                  onChange={(e) => setSortBy(e.target.value as any)}
+                  className="px-3 py-2 bg-background/50 border border-border rounded-lg text-sm"
+                >
+                  <option value="rank">{t.rank}</option>
+                  <option value="price">{t.price}</option>
+                  <option value="change24h">{t.change}</option>
+                  <option value="marketCap">{t.marketCap}</option>
+                  <option value="volume24h">{t.volume}</option>
+                </select>
+                <Button
+                  variant="outline"
+                  size="icon"
+                  onClick={() => setSortOrder(sortOrder === "asc" ? "desc" : "asc")}
+                  className="bg-transparent"
+                >
+                  {sortOrder === "asc" ? <SortAsc className="h-4 w-4" /> : <SortDesc className="h-4 w-4" />}
+                </Button>
+              </div>
+            </div>
+          </div>
+
           {/* OPM Technical Analysis Card */}
           <div className="mb-8 p-6 bg-gradient-to-br from-primary/20 via-primary/10 to-transparent backdrop-blur border border-primary/30 rounded-2xl">
             <div className="flex items-center gap-3 mb-6">
@@ -433,7 +609,7 @@ export default function PriceWatcherPage() {
             </div>
 
             {/* Technical Indicators Grid */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
               {/* RSI */}
               <div className="p-4 bg-background/50 rounded-xl border border-border/30">
                 <div className="flex items-center justify-between mb-2">
@@ -444,7 +620,6 @@ export default function PriceWatcherPage() {
                 <div className={`text-xs mt-1 ${getRSISignal(rsi).color}`}>
                   {getRSISignal(rsi).text} - {getRSISignal(rsi).signal}
                 </div>
-                {/* RSI Gauge */}
                 <div className="mt-2 h-2 bg-gradient-to-r from-green-500 via-yellow-500 to-red-500 rounded-full relative">
                   <div
                     className="absolute top-1/2 -translate-y-1/2 w-3 h-3 bg-white rounded-full border-2 border-black shadow-lg"
@@ -463,7 +638,6 @@ export default function PriceWatcherPage() {
                 <div className={`text-xs mt-1 ${getMACDSignal(macd).color}`}>
                   {getMACDSignal(macd).text} - {getMACDSignal(macd).signal}
                 </div>
-                {/* MACD Histogram */}
                 <div className="mt-2 flex items-end gap-0.5 h-6">
                   {Array.from({ length: 12 }).map((_, i) => {
                     const val = macd.histogram * (0.5 + Math.random() * 0.5) * (i % 2 === 0 ? 1 : -0.8)
@@ -509,7 +683,6 @@ export default function PriceWatcherPage() {
                 </div>
                 <div className="text-2xl font-bold">{volatility.toFixed(1)}%</div>
                 <div className="text-xs mt-1 text-muted-foreground">Annualized</div>
-                {/* Volatility indicator */}
                 <div className="mt-2 h-2 bg-muted rounded-full overflow-hidden">
                   <div
                     className={`h-full rounded-full ${volatility > 80 ? "bg-red-500" : volatility > 40 ? "bg-yellow-500" : "bg-green-500"}`}
@@ -518,89 +691,146 @@ export default function PriceWatcherPage() {
                 </div>
               </div>
             </div>
-          </div>
 
-          {/* Fear & Greed Index */}
-          <div className="mb-8 p-6 bg-card/50 backdrop-blur border border-border/50 rounded-2xl">
-            <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
-              <PieChart className="h-5 w-5 text-primary" />
-              {t.fearGreed}
-            </h3>
-            <div className="flex items-center gap-6">
-              <div className="relative w-32 h-32">
-                <svg viewBox="0 0 100 100" className="w-full h-full -rotate-90">
-                  <circle
-                    cx="50"
-                    cy="50"
-                    r="45"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="10"
-                    className="text-muted/20"
-                  />
-                  <circle
-                    cx="50"
-                    cy="50"
-                    r="45"
-                    fill="none"
-                    strokeWidth="10"
-                    strokeDasharray={`${fearGreedIndex * 2.83} 283`}
-                    strokeLinecap="round"
-                    className={getFearGreedLabel(fearGreedIndex).color.replace("bg-", "text-")}
-                  />
-                </svg>
-                <div className="absolute inset-0 flex flex-col items-center justify-center">
-                  <span className="text-3xl font-bold">{fearGreedIndex}</span>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+              {/* Fibonacci Levels */}
+              <div className="p-4 bg-background/50 rounded-xl border border-border/30">
+                <div className="flex items-center justify-between mb-3">
+                  <span className="text-sm font-medium">{t.fibonacci}</span>
+                </div>
+                <div className="space-y-1 text-xs">
+                  {[0, 23.6, 38.2, 50, 61.8, 78.6, 100].map((level, i) => (
+                    <div key={level} className="flex justify-between items-center">
+                      <span className="text-muted-foreground">{level}%</span>
+                      <span className="font-mono">${fibonacci[i]?.toFixed(2)}</span>
+                    </div>
+                  ))}
                 </div>
               </div>
-              <div>
-                <div
-                  className={`inline-block px-3 py-1 rounded-full text-sm font-medium text-white ${getFearGreedLabel(fearGreedIndex).color}`}
-                >
-                  {getFearGreedLabel(fearGreedIndex).text}
+
+              {/* Moving Averages */}
+              <div className="p-4 bg-background/50 rounded-xl border border-border/30">
+                <div className="flex items-center justify-between mb-3">
+                  <span className="text-sm font-medium">{t.sma}</span>
                 </div>
-                <p className="text-sm text-muted-foreground mt-2 max-w-md">
-                  {language === "en"
-                    ? "The Fear & Greed Index analyzes emotions and sentiments from different sources including volatility, market momentum, social media trends, and surveys."
-                    : "Der Angst & Gier Index analysiert Emotionen und Stimmungen aus verschiedenen Quellen einschließlich Volatilität, Marktdynamik, Social Media Trends und Umfragen."}
-                </p>
+                <div className="space-y-3">
+                  <div>
+                    <div className="flex justify-between text-sm mb-1">
+                      <span className="text-muted-foreground">SMA 20</span>
+                      <span className={sma20 < (price || 259.58) ? "text-green-500" : "text-red-500"}>
+                        ${sma20.toFixed(2)}
+                      </span>
+                    </div>
+                    <div className="h-1.5 bg-muted rounded-full overflow-hidden">
+                      <div
+                        className="h-full bg-blue-500 rounded-full"
+                        style={{ width: `${(sma20 / (price || 259.58)) * 50}%` }}
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div className="flex justify-between text-sm mb-1">
+                      <span className="text-muted-foreground">SMA 50</span>
+                      <span className={sma50 < (price || 259.58) ? "text-green-500" : "text-red-500"}>
+                        ${sma50.toFixed(2)}
+                      </span>
+                    </div>
+                    <div className="h-1.5 bg-muted rounded-full overflow-hidden">
+                      <div
+                        className="h-full bg-purple-500 rounded-full"
+                        style={{ width: `${(sma50 / (price || 259.58)) * 50}%` }}
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Fear & Greed Index */}
+              <div className="p-4 bg-background/50 rounded-xl border border-border/30">
+                <div className="flex items-center justify-between mb-3">
+                  <span className="text-sm font-medium">{t.fearGreed}</span>
+                  <PieChart className="h-4 w-4 text-primary" />
+                </div>
+                <div className="flex items-center gap-4">
+                  <div className="relative w-20 h-20">
+                    <svg viewBox="0 0 100 100" className="w-full h-full -rotate-90">
+                      <circle
+                        cx="50"
+                        cy="50"
+                        r="40"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="8"
+                        className="text-muted"
+                      />
+                      <circle
+                        cx="50"
+                        cy="50"
+                        r="40"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="8"
+                        strokeDasharray={`${fearGreedIndex * 2.51} 251`}
+                        className={getFearGreedLabel(fearGreedIndex).color.replace("bg-", "text-")}
+                      />
+                    </svg>
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <span className="text-xl font-bold">{fearGreedIndex}</span>
+                    </div>
+                  </div>
+                  <div>
+                    <div
+                      className={`px-2 py-1 rounded text-xs font-medium text-white ${getFearGreedLabel(fearGreedIndex).color}`}
+                    >
+                      {getFearGreedLabel(fearGreedIndex).text}
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
-          {/* Gainers & Losers */}
+          {/* Top Gainers and Losers */}
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             {/* Top Gainers */}
-            <div className="p-6 bg-card/50 backdrop-blur border border-border/50 rounded-2xl">
+            <div className="p-5 bg-card/50 backdrop-blur border border-border/50 rounded-xl">
               <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
                 <TrendingUp className="h-5 w-5 text-green-500" />
                 {t.topGainers}
               </h3>
               <div className="space-y-3">
-                {topGainers.map((coin, i) => (
+                {topGainers.map((crypto) => (
                   <div
-                    key={coin.symbol}
-                    className="flex items-center gap-3 p-3 bg-green-500/5 rounded-xl border border-green-500/20"
+                    key={crypto.symbol}
+                    className="flex items-center justify-between p-3 bg-background/50 rounded-lg hover:bg-green-500/5 transition-colors"
                   >
-                    <span className="text-sm font-medium text-muted-foreground w-5">{i + 1}</span>
-                    <Image
-                      src={coin.logo || "/placeholder.svg"}
-                      alt={coin.symbol}
-                      width={32}
-                      height={32}
-                      className="rounded-full"
-                    />
-                    <div className="flex-1">
-                      <div className="font-medium">{coin.symbol}</div>
-                      <div className="text-xs text-muted-foreground">{coin.name}</div>
-                    </div>
-                    <Sparkline data={coin.sparkline} positive={true} />
-                    <div className="text-right">
-                      <div className="font-medium">
-                        ${coin.price.toLocaleString(undefined, { maximumFractionDigits: 2 })}
+                    <div className="flex items-center gap-3">
+                      <button
+                        onClick={() => toggleFavorite(crypto.symbol)}
+                        className="text-muted-foreground hover:text-yellow-500"
+                      >
+                        {favorites.includes(crypto.symbol) ? (
+                          <Star className="h-4 w-4 fill-yellow-500 text-yellow-500" />
+                        ) : (
+                          <StarOff className="h-4 w-4" />
+                        )}
+                      </button>
+                      <Image
+                        src={crypto.logo || "/placeholder.svg"}
+                        alt={crypto.symbol}
+                        width={32}
+                        height={32}
+                        className="rounded-full"
+                      />
+                      <div>
+                        <div className="font-medium">{crypto.symbol}</div>
+                        <div className="text-xs text-muted-foreground">{crypto.name}</div>
                       </div>
+                    </div>
+                    <div className="text-right">
+                      <div className="font-semibold">${crypto.price.toLocaleString()}</div>
                       <div className="text-sm text-green-500 flex items-center justify-end gap-1">
-                        <ArrowUpRight className="h-3 w-3" />+{coin.change24h.toFixed(2)}%
+                        <ArrowUpRight className="h-3 w-3" />+{crypto.change24h.toFixed(2)}%
                       </div>
                     </div>
                   </div>
@@ -609,37 +839,45 @@ export default function PriceWatcherPage() {
             </div>
 
             {/* Top Losers */}
-            <div className="p-6 bg-card/50 backdrop-blur border border-border/50 rounded-2xl">
+            <div className="p-5 bg-card/50 backdrop-blur border border-border/50 rounded-xl">
               <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
                 <TrendingDown className="h-5 w-5 text-red-500" />
                 {t.topLosers}
               </h3>
               <div className="space-y-3">
-                {topLosers.map((coin, i) => (
+                {topLosers.map((crypto) => (
                   <div
-                    key={coin.symbol}
-                    className="flex items-center gap-3 p-3 bg-red-500/5 rounded-xl border border-red-500/20"
+                    key={crypto.symbol}
+                    className="flex items-center justify-between p-3 bg-background/50 rounded-lg hover:bg-red-500/5 transition-colors"
                   >
-                    <span className="text-sm font-medium text-muted-foreground w-5">{i + 1}</span>
-                    <Image
-                      src={coin.logo || "/placeholder.svg"}
-                      alt={coin.symbol}
-                      width={32}
-                      height={32}
-                      className="rounded-full"
-                    />
-                    <div className="flex-1">
-                      <div className="font-medium">{coin.symbol}</div>
-                      <div className="text-xs text-muted-foreground">{coin.name}</div>
-                    </div>
-                    <Sparkline data={coin.sparkline} positive={false} />
-                    <div className="text-right">
-                      <div className="font-medium">
-                        ${coin.price.toLocaleString(undefined, { maximumFractionDigits: 2 })}
+                    <div className="flex items-center gap-3">
+                      <button
+                        onClick={() => toggleFavorite(crypto.symbol)}
+                        className="text-muted-foreground hover:text-yellow-500"
+                      >
+                        {favorites.includes(crypto.symbol) ? (
+                          <Star className="h-4 w-4 fill-yellow-500 text-yellow-500" />
+                        ) : (
+                          <StarOff className="h-4 w-4" />
+                        )}
+                      </button>
+                      <Image
+                        src={crypto.logo || "/placeholder.svg"}
+                        alt={crypto.symbol}
+                        width={32}
+                        height={32}
+                        className="rounded-full"
+                      />
+                      <div>
+                        <div className="font-medium">{crypto.symbol}</div>
+                        <div className="text-xs text-muted-foreground">{crypto.name}</div>
                       </div>
+                    </div>
+                    <div className="text-right">
+                      <div className="font-semibold">${crypto.price.toLocaleString()}</div>
                       <div className="text-sm text-red-500 flex items-center justify-end gap-1">
                         <ArrowDownRight className="h-3 w-3" />
-                        {coin.change24h.toFixed(2)}%
+                        {crypto.change24h.toFixed(2)}%
                       </div>
                     </div>
                   </div>
@@ -648,99 +886,85 @@ export default function PriceWatcherPage() {
             </div>
           </div>
 
-          {/* Full Market Table */}
-          <div className="p-6 bg-card/50 backdrop-blur border border-border/50 rounded-2xl">
-            <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
-              <BarChart3 className="h-5 w-5 text-primary" />
-              {t.marketOverview}
+          <div className="p-5 bg-card/50 backdrop-blur border border-border/50 rounded-xl">
+            <h3 className="text-lg font-semibold mb-4 flex items-center justify-between">
+              <span className="flex items-center gap-2">
+                <BarChart3 className="h-5 w-5 text-primary" />
+                {showFavoritesOnly ? t.favorites : t.allCoins}
+              </span>
+              <span className="text-sm font-normal text-muted-foreground">
+                {filteredAndSortedData.length} {language === "en" ? "coins" : "Münzen"}
+              </span>
             </h3>
-            <div className="overflow-x-auto">
-              <table className="w-full">
-                <thead>
-                  <tr className="border-b border-border/50">
-                    <th className="text-left p-3 text-sm font-medium text-muted-foreground">#</th>
-                    <th className="text-left p-3 text-sm font-medium text-muted-foreground">Token</th>
-                    <th className="text-right p-3 text-sm font-medium text-muted-foreground">{t.price}</th>
-                    <th className="text-right p-3 text-sm font-medium text-muted-foreground">24h</th>
-                    <th className="text-right p-3 text-sm font-medium text-muted-foreground">7d</th>
-                    <th className="text-right p-3 text-sm font-medium text-muted-foreground hidden md:table-cell">
-                      {t.marketCap}
-                    </th>
-                    <th className="text-right p-3 text-sm font-medium text-muted-foreground hidden lg:table-cell">
-                      {t.volume}
-                    </th>
-                    <th className="text-right p-3 text-sm font-medium text-muted-foreground hidden sm:table-cell">
-                      Chart
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {cryptoData.map((coin, i) => (
-                    <tr key={coin.symbol} className="border-b border-border/30 hover:bg-primary/5 transition-colors">
-                      <td className="p-3 text-sm text-muted-foreground">{i + 1}</td>
-                      <td className="p-3">
-                        <div className="flex items-center gap-3">
-                          <Image
-                            src={coin.logo || "/placeholder.svg"}
-                            alt={coin.symbol}
-                            width={32}
-                            height={32}
-                            className="rounded-full"
-                          />
-                          <div>
-                            <div className="font-medium">{coin.symbol}</div>
-                            <div className="text-xs text-muted-foreground">{coin.name}</div>
-                          </div>
-                        </div>
-                      </td>
-                      <td className="p-3 text-right font-medium">
-                        ${coin.price.toLocaleString(undefined, { maximumFractionDigits: coin.price < 1 ? 4 : 2 })}
-                      </td>
-                      <td className={`p-3 text-right ${coin.change24h >= 0 ? "text-green-500" : "text-red-500"}`}>
-                        <div className="flex items-center justify-end gap-1">
-                          {coin.change24h >= 0 ? (
-                            <ArrowUpRight className="h-3 w-3" />
-                          ) : (
-                            <ArrowDownRight className="h-3 w-3" />
-                          )}
-                          {Math.abs(coin.change24h).toFixed(2)}%
-                        </div>
-                      </td>
-                      <td className={`p-3 text-right ${coin.change7d >= 0 ? "text-green-500" : "text-red-500"}`}>
-                        {coin.change7d >= 0 ? "+" : ""}
-                        {coin.change7d.toFixed(2)}%
-                      </td>
-                      <td className="p-3 text-right hidden md:table-cell">{formatLargeNumber(coin.marketCap)}</td>
-                      <td className="p-3 text-right hidden lg:table-cell">{formatLargeNumber(coin.volume24h)}</td>
-                      <td className="p-3 hidden sm:table-cell">
-                        <div className="flex justify-end">
-                          <Sparkline data={coin.sparkline} positive={coin.change24h >= 0} />
-                        </div>
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </div>
 
-          {/* Quick Actions */}
-          <div className="mt-8 flex flex-wrap justify-center gap-4">
-            <Link href="/dex">
-              <Button className="gap-2 bg-primary hover:bg-primary/90">
-                <Sparkles className="h-4 w-4" />
-                {language === "en" ? "Trade on OPM DEX" : "Handel auf OPM DEX"}
-              </Button>
-            </Link>
-            <Link
-              href="https://dex.coinmarketcap.com/token/ethereum/0xe430b07f7b168e77b07b29482dbf89eafa53f484/"
-              target="_blank"
-            >
-              <Button variant="outline" className="gap-2 bg-transparent">
-                <DollarSign className="h-4 w-4" />
-                CoinMarketCap
-              </Button>
-            </Link>
+            {/* Table Header */}
+            <div className="hidden md:grid grid-cols-7 gap-4 p-3 text-sm text-muted-foreground border-b border-border/30 mb-2">
+              <div className="col-span-2">{language === "en" ? "Name" : "Name"}</div>
+              <div className="text-right">{t.price}</div>
+              <div className="text-right">24h %</div>
+              <div className="text-right">7d %</div>
+              <div className="text-right">{t.marketCap}</div>
+              <div className="text-center">{language === "en" ? "Chart" : "Chart"}</div>
+            </div>
+
+            <div className="space-y-2">
+              {filteredAndSortedData.map((crypto) => (
+                <div
+                  key={crypto.symbol}
+                  className="grid grid-cols-2 md:grid-cols-7 gap-4 p-3 bg-background/50 rounded-lg hover:bg-primary/5 transition-colors items-center"
+                >
+                  <div className="col-span-2 flex items-center gap-3">
+                    <button
+                      onClick={() => toggleFavorite(crypto.symbol)}
+                      className="text-muted-foreground hover:text-yellow-500"
+                    >
+                      {favorites.includes(crypto.symbol) ? (
+                        <Star className="h-4 w-4 fill-yellow-500 text-yellow-500" />
+                      ) : (
+                        <StarOff className="h-4 w-4" />
+                      )}
+                    </button>
+                    <span className="text-xs text-muted-foreground w-6">{crypto.rank}</span>
+                    <Image
+                      src={crypto.logo || "/placeholder.svg"}
+                      alt={crypto.symbol}
+                      width={32}
+                      height={32}
+                      className="rounded-full"
+                    />
+                    <div>
+                      <div className="font-medium">{crypto.symbol}</div>
+                      <div className="text-xs text-muted-foreground">{crypto.name}</div>
+                    </div>
+                  </div>
+                  <div className="text-right font-semibold">
+                    ${crypto.price < 1 ? crypto.price.toFixed(4) : crypto.price.toLocaleString()}
+                  </div>
+                  <div className={`text-right ${crypto.change24h >= 0 ? "text-green-500" : "text-red-500"}`}>
+                    {crypto.change24h >= 0 ? "+" : ""}
+                    {crypto.change24h.toFixed(2)}%
+                  </div>
+                  <div
+                    className={`text-right hidden md:block ${crypto.change7d >= 0 ? "text-green-500" : "text-red-500"}`}
+                  >
+                    {crypto.change7d >= 0 ? "+" : ""}
+                    {crypto.change7d.toFixed(2)}%
+                  </div>
+                  <div className="text-right hidden md:block text-muted-foreground">
+                    {formatLargeNumber(crypto.marketCap)}
+                  </div>
+                  <div className="hidden md:flex justify-center">
+                    <Sparkline data={crypto.sparkline} positive={crypto.change24h >= 0} />
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {filteredAndSortedData.length === 0 && (
+              <div className="text-center py-8 text-muted-foreground">
+                {language === "en" ? "No coins found" : "Keine Münzen gefunden"}
+              </div>
+            )}
           </div>
         </div>
       </main>
