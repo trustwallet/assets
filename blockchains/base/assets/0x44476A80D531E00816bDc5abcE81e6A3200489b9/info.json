@@ -8,9 +8,21 @@
   "explorer": "https://etherscan.io/token/0x44476A80D531E00816bDc5abcE81e6A3200489b9",
   "status": "active",
   "id": "0x44476A80D531E00816bDc5abcE81e6A3200489b9",
-  "tags": ["defi"],
   "links": [
-    { "name": "telegram", "url": "https://t.me/GRCdog" },
-    { "name": "twitter",  "url": "https://x.com/GRC__Community" }
+    {
+      "name": "telegram",
+      "url": "https://t.me/GRCdog"
+    },
+    {
+      "name": "twitter",
+      "url": "https://x.com/GRC__Community"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/grccoin12-star/grc-logo"
+    }
+  ],
+  "tags": [
+    "defi"
   ]
 }
