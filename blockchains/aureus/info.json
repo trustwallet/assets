@@ -1,0 +1,29 @@
+{
+  "id": "aureus",
+  "name": "Aureus",
+  "symbol": "AUR",
+  "coinId": 2026, 
+  "type": "bitcoin",
+  "decimals": 8,
+  "blockchain": "Bitcoin",
+  "pubKeyHash": 23,
+  "scriptHash": 10,
+  "hrp": "aur",
+  "p2pkhPrefix": 23,
+  "p2shPrefix": 10,
+  "staticPrefix": 128,
+  "explorer": {
+    "url": "https://aurascan.gt.tc",
+    "txPath": "/tx/",
+    "accountPath": "/address/"
+    "name": "Aureus",
+    "website": "https://auracoin.gt.tc",
+    "description": "Aureus is a decentralized Layer 1 POW blockchain with a fixed supply of 31M coins, built for security and scarcity.",
+    "explorer": "https://aurascan.gt.tc",
+    "type": "coin",
+    "symbol": "AUR",
+    "decimals": 8,
+    "status": "active",
+    "id": "aureus"
+    )
+}
