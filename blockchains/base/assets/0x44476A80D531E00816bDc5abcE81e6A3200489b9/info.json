@@ -2,23 +2,15 @@
   "name": "Golden Retriever Coin",
   "symbol": "GRC",
   "type": "ERC20",
-  "decimals": 18,
-  "description": "Golden Retriever Coin (GRC) is a community-driven meme token on Base.",
+  "decimals": 6,
+  "description": "Golden Retriever Coin (GRC) is a community-driven token on Base.",
   "website": "https://x.com/GRC__Community",
-  "explorer": "https://basescan.org/token/0x44476A80D531E00816bDc5abcE81e6A3200489b9",
+  "explorer": "https://etherscan.io/token/0x44476A80D531E00816bDc5abcE81e6A3200489b9",
   "status": "active",
   "id": "0x44476A80D531E00816bDc5abcE81e6A3200489b9",
+  "tags": ["defi"],
   "links": [
-    {
-      "name": "telegram",
-      "url": "https://t.me/GRCdog"
-    },
-    {
-      "name": "twitter",
-      "url": "https://x.com/GRC__Community"
-    }
-  ],
-  "tags": [
-    "meme"
+    { "name": "telegram", "url": "https://t.me/GRCdog" },
+    { "name": "twitter",  "url": "https://x.com/GRC__Community" }
   ]
 }
