@@ -1,18 +1,26 @@
 {
-    "name": "Krown Network",
-    "website": "https://krown.network",
-    "description": "Krown Network is an EVM-compatible blockchain.",
-    "explorer": "https://explorer.krown.network",
-    "symbol": "KROWN",
-    "type": "coin",
-    "coin_type": 1983,
-    "decimals": 18,
-    "status": "active",
-    "rpc_url": "https://mainnet.krown.network",
-    "links": [
-        {
-            "name": "website",
-            "url": "https://krown.network"
-        }
-    ]
+  "name": "Krown Network",
+  "website": "https://krown.network",
+  "description": "Krown Network is a high-performance Proof-of-Stake EVM blockchain built for speed, security, and real-world utility. It delivers fast transactions, sustainable infrastructure, and quantum-resistant protection for a global crypto ecosystem.",
+  "explorer": "https://explorer.krown.network",
+  "symbol": "KROWN",
+  "type": "evm",
+  "coin_type": 1983,
+  "decimals": 18,
+  "status": "active",
+  "rpc_url": "https://mainnet.krown.network",
+  "links": [
+    { "name": "website", "url": "https://krown.network" },
+    { "name": "whitepaper", "url": "https://krown.network/The-Krown-Paper-v6.pdf" },
+    { "name": "telegram", "url": "https://t.me/krownnetwork" },
+    { "name": "x", "url": "https://x.com/krownnetwork" },
+    { "name": "discord", "url": "https://discord.com/invite/AqwnnPBNzV" },
+    { "name": "linkedin", "url": "https://www.linkedin.com/company/krownnetwork" },
+    { "name": "youtube", "url": "https://www.youtube.com/@Krown.Network" }
+  ],
+  "tags": [
+    "defi",
+    "evm",
+    "layer1"
+  ]
 }

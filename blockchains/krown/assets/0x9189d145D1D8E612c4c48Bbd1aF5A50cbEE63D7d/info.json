@@ -1,17 +1,22 @@
 {
-    "name": "Wrapped Krown",
-    "website": "https://krown.network",
-    "description": "Wrapped Krown token on Krown Network.",
-    "explorer": "https://explorer.krown.network/token/0x9189d145D1D8E612c4c48Bbd1aF5A50cbEE63D7d",
-    "type": "ERC20",
-    "symbol": "WKROWN",
-    "decimals": 18,
-    "status": "active",
-    "id": "0x9189d145D1D8E612c4c48Bbd1aF5A50cbEE63D7d",
-    "links": [
-        {
-            "name": "website",
-            "url": "https://krown.network"
-        }
-    ]
+  "name": "Wrapped Krown",
+  "website": "https://krown.network",
+  "description": "Wrapped Krown (WKROWN) is the ERC20 representation of Krown used within the Krown Network ecosystem for DeFi, liquidity, and interoperability.",
+  "explorer": "https://explorer.krown.network/token/0x9189d145D1D8E612c4c48Bbd1aF5A50cbEE63D7d",
+  "type": "ERC20",
+  "symbol": "WKROWN",
+  "decimals": 18,
+  "status": "active",
+  "id": "0x9189d145D1D8E612c4c48Bbd1aF5A50cbEE63D7d",
+  "links": [
+    { "name": "website", "url": "https://krown.network" },
+    { "name": "coinmarketcap", "url": "https://dex.coinmarketcap.com/token/krown/0x9189d145d1d8e612c4c48bbd1af5a50cbee63d7d/" },
+    { "name": "telegram", "url": "https://t.me/krownnetwork" },
+    { "name": "x", "url": "https://x.com/krownnetwork" }
+  ],
+  "tags": [
+    "defi",
+    "wrapped",
+    "evm"
+  ]
 }
