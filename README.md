@@ -1,6 +1,7 @@
 # Trust Wallet Assets Info
 
-![Check](https://github.com/trustwallet/assets/workflows/Check/badge.svg)
+<img src="https://raw.githubusercontent.com/kowalczyk14881-ctrl/assets/master/logo.png" width="120"/>
+
 
 ## Overview
 
