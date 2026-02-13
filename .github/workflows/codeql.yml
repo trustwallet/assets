@@ -1,28 +1,19 @@
-# For most projects, this workflow file will not need changing; you simply need
-# to commit it to your repository.
-#
-# You may wish to alter this file to override the set of languages analyzed,
-# or to provide custom queries or build logic.
-#
-# ******** NOTE ********
-# We have attempted to detect the languages in your repository. Please check
-# the `language` matrix defined below to confirm you have the correct set of
-# supported CodeQL languages.
-#
-name: "CodeQL"
+# AfricaCryptoChainx CodeQL Security Scanning
+# Automated security analysis for ACCX Wallet, smart contracts, bots, and dApps
+
+name: "ACCX CodeQL Security Scan"
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "master", "main", "development" ]
   pull_request:
-    # The branches below must be a subset of the branches above
-    branches: [ "master" ]
+    branches: [ "master", "main", "development" ]
   schedule:
-    - cron: '43 20 * * 6'
+    - cron: '0 20 * * 0' # Weekly Sunday 8PM UTC
 
 jobs:
   analyze:
-    name: Analyze
+    name: Analyze ACCX Ecosystem
     runs-on: ubuntu-latest
     permissions:
       actions: read
@@ -32,32 +23,51 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        language: [ 'go' ]
-        # CodeQL supports [ 'cpp', 'csharp', 'go', 'java', 'javascript', 'python', 'ruby' ]
-        # Use only 'java' to analyze code written in Java, Kotlin or both
-        # Use only 'javascript' to analyze code written in JavaScript, TypeScript or both
-        # Learn more about CodeQL language support at https://aka.ms/codeql-docs/language-support
+        # ACCX Ecosystem Languages: Wallet (JS/TS), Contracts (JS), ACCXBot (Python), GameFi (JS)
+        language: [ 'javascript', 'python' ]
+        # CodeQL supports: 'cpp', 'csharp', 'go', 'java', 'javascript', 'python', 'ruby'
+        # Using 'javascript' covers ACCX Wallet (TypeScript), GameFi, dApps, and smart contract tests
+        # Using 'python' covers ACCXBot Telegram integration
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
+    - name: Checkout ACCX Repository
+      uses: actions/checkout@v4
 
-    # Initializes the CodeQL tools for scanning.
-    - name: Initialize CodeQL
+    - name: Setup ACCX Node.js Environment
+      if: matrix.language == 'javascript'
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+
+    - name: Setup ACCX Python Environment
+      if: matrix.language == 'python'
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        cache: 'pip'
+
+    - name: Initialize CodeQL for ACCX
       uses: github/codeql-action/init@v2
       with:
         languages: ${{ matrix.language }}
-        # If you wish to specify custom queries, you can do so here or in a config file.
-        # By default, queries listed here will override any specified in a config file.
-        # Prefix the list here with "+" to use these queries and those in the config file.
+        # Custom queries for blockchain security
+        queries: security-extended,security-and-quality
+        # Additional security focus for financial/blockchain code
+        config-file: ./.github/codeql/codeql-config.yml
 
-        # Details on CodeQL's query packs refer to : https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/configuring-code-scanning#using-queries-in-ql-packs
-        # queries: security-extended,security-and-quality
+    - name: Build ACCX Components
+      run: |
+        # Build ACCX Wallet and components
+        npm ci
+        npm run build --if-present
+        
+        # Build ACCXBot Python dependencies
+        if [ -f "requirements.txt" ]; then
+          pip install -r requirements.txt
+        fi
 
-    - name: Build assets binary
-      run: make build
-
-    - name: Perform CodeQL Analysis
+    - name: Perform ACCX Security Analysis
       uses: github/codeql-action/analyze@v2
       with:
         category: "/language:${{matrix.language}}"
