@@ -1,11 +1,21 @@
 {
-  "name": "AXTO Digital",
-  "website": "https://axto.dev",
-  "description": "AXTO Digital token on Polygon network.",
-  "explorer": "https://polygonscan.com/address/0x1914c13242936f1c3cDb82b50BE39118F684482",
+  "name": "AXTO",
   "type": "ERC20",
   "symbol": "AXTO",
   "decimals": 18,
+  "description": "AXTO token on Polygon network.",
+  "website": "https://axto.dev",
+  "explorer": "https://etherscan.io/token/0x1914c13242936f1c3cDb82b50BE39118F684482",
   "status": "active",
-  "id": "0x1914c13242936f1c3cDb82b50BE39118F684482"
+  "id": "0x1914c13242936f1c3cDb82b50BE39118F684482",
+  "links": [
+    {
+      "name": "website",
+      "url": "https://axto.dev"
+    },
+    {
+      "name": "website2",
+      "url": "https://axto.io"
+    }
+  ]
 }
