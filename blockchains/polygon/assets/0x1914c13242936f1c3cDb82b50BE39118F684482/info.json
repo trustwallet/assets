@@ -3,19 +3,22 @@
   "type": "ERC20",
   "symbol": "AXTO",
   "decimals": 18,
-  "description": "AXTO token on Polygon network.",
+  "description": "AXTO is a utility token deployed on the Polygon network.",
   "website": "https://axto.dev",
   "explorer": "https://etherscan.io/token/0x1914c13242936f1c3cDb82b50BE39118F684482",
   "status": "active",
   "id": "0x1914c13242936f1c3cDb82b50BE39118F684482",
+  "tags": [
+    "utility"
+  ],
   "links": [
     {
-      "name": "website",
+      "name": "docs",
       "url": "https://axto.dev"
     },
     {
-      "name": "website2",
-      "url": "https://axto.io"
+      "name": "telegram",
+      "url": "https://t.me/axto"
     }
   ]
 }
