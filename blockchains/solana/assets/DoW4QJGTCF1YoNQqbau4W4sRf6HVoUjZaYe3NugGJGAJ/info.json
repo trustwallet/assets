@@ -1,11 +1,26 @@
 {
-  "name": "DoW investment token",
+  "name": "DOW",
   "symbol": "DOW",
   "type": "SPL",
   "decimals": 6,
-  "description": "DOW is a fixed-supply deflationary token on Solana with a total issuance of 5,000,000 tokens.",
+  "description": "DOW is the official project token with active liquidity on Raydium.",
   "website": "https://dow-invest.com",
   "explorer": "https://solscan.io/token/DoW4QJGTCF1YoNQqbau4W4sRf6HVoUjZaYe3NugGJGAJ",
   "status": "active",
-  "id": "DoW4QJGTCF1YoNQqbau4W4sRf6HVoUjZaYe3NugGJGAJ"
+  "id": "DoW4QJGTCF1YoNQqbau4W4sRf6HVoUjZaYe3NugGJGAJ",
+  "links": [
+    {
+      "name": "website",
+      "url": "https://dow-invest.com"
+    },
+    {
+      "name": "explorer",
+      "url": "https://solscan.io/token/DoW4QJGTCF1YoNQqbau4W4sRf6HVoUjZaYe3NugGJGAJ"
+    }
+  ],
+  "tags": [
+    "defi",
+    "token",
+    "solana"
+  ]
 }
