@@ -1,14 +1,16 @@
 {
+  "id": "ggqn",
   "name": "过个球年",
   "symbol": "GGQN",
   "type": "BEP20",
   "decimals": 18,
+  "status": "active",
   "website": "https://ggqn.github.io/guogeqiunian-site/",
-  "explorer": "https://bscscan.com/token/0x522798dDb5FACF944e57400356FaB78929104676",
-  "description": "GGQN is a community-driven utility token built on BNB Smart Chain, focusing on social interaction, entertainment, and ecosystem expansion.",
+  "explorer": "https://bscscan.com/token/",
+  "description": "GGQN is a community-driven utility token built on BNB Smart Chain, focusing on social interaction and ecosystem development.",
   "links": [
-    { "name": "Telegram", "url": "https://t.me/guogeqiunian" },
-    { "name": "Twitter", "url": "https://x.com/guogeqiunian" }
+    { "name": "telegram", "url": "https://t.me/guogeqiunian" },
+    { "name": "twitter", "url": "https://x.com/guogeqiunian" }
   ],
   "tags": ["utility"]
 }
