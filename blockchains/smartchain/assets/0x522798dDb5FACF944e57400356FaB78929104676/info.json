@@ -3,16 +3,22 @@
   "symbol": "GGQN",
   "type": "BEP20",
   "decimals": 18,
-  "description": " 过个球年 是部署在 BNB Smart Chain 上的 BEP20 代币。",
-  "website": "https://ggqn.github.io/guogeqiunian-site/",
+  "description": "过个球年 是部署在 BNB Smart Chain 上的 BEP20 代币。",
   "explorer": "https://bscscan.com/token/0x522798dDb5FACF944e57400356FaB78929104676",
   "status": "active",
   "id": "0x522798dDb5FACF944e57400356FaB78929104676",
-  "tags": ["meme"],
+  "tags": [
+    "utility"
+  ],
   "links": [
-    { "name": "telegram", "url": "https://t.me/guogeqiunian" },
-    { "name": "twitter", "url": "https://x.com/guogeqiunian" },
-    { "name": "github", "url": "https://github.com/GGQN" },
-    { "name": "website", "url": "https://ggqn.github.io/guogeqiunian-site/" }
+    {
+      "name": "twitter",
+      "url": "https://x.com/guogejiuqian"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/GGQN"
+    }
   ]
 }
+ 
