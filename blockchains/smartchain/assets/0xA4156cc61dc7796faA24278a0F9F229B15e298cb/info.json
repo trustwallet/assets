@@ -1,21 +1,11 @@
 {
-    "name": "Bitcoin Bridged ZED20",
-    "website": "https://zedscan.net/",
-    "description": "BTC.z, a cutting-edge stablecoin tightly linked to the US dollar, the founders of this stablecoin have 35 years of successful experience in economics and business, launched in 2024 within the ZEDX neobanking blockchain network.",
-    "explorer": "https://bscscan.com/token/0xA4156cc61dc7796faA24278a0F9F229B15e298cb",
+    "name": "HIGH-RISK Bitcoin Bridged ZED20",
     "type": "BEP20",
-    "symbol": "BTC.z",
+    "symbol": "HIGH RISK",
     "decimals": 18,
-    "status": "active",
-    "id": "0xA4156cc61dc7796faA24278a0F9F229B15e298cb",
-    "links": [
-        {
-            "name": "x",
-            "url": "https://x.com/zedxionc"
-        },
-        {
-            "name": "coinmarketcap",
-            "url": "https://coinmarketcap.com/currencies/token-bitcoin-bridged-zed20/"
-        }
-    ]
+    "description": "Token assessed as high-risk and not affiliated with Bitcoin",
+    "website": "https://bscscan.com/token/0xA4156cc61dc7796faA24278a0F9F229B15e298cb",
+    "explorer": "https://bscscan.com/token/0xA4156cc61dc7796faA24278a0F9F229B15e298cb",
+    "status": "spam",
+    "id": "0xA4156cc61dc7796faA24278a0F9F229B15e298cb"
 }
