@@ -1,11 +1,30 @@
 {
     "name": "Euro Token",
-    "website": "https://quaestus-advisory.com",
-    "description": "Euro Token (EURT) is a fully regulated digital asset backed 1:1 by Euro reserves held at Deutsche Bank AG.",
+    "website": "https://quaestus-international.com",
+    "description": "A regulated Euro-backed stablecoin for institutional settlement.",
     "explorer": "https://etherscan.io/token/0xE6B4F6d8A3dfA3B289be37a679314Cb84EDAE130",
     "type": "ERC20",
     "symbol": "EURT",
     "decimals": 18,
     "status": "active",
-    "id": "0xE6B4F6d8A3dfA3B289be37a679314Cb84EDAE130"
+    "id": "0xE6B4F6d8A3dfA3B289be37a679314Cb84EDAE130",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/Quaestus_EURT"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/Quaestus_EURT"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://quaestus-international.com/whitepaper.pdf"
+        }
+    ],
+    "tags": [
+        "stablecoin",
+        "defi",
+        "ethereum"
+    ]
 }
