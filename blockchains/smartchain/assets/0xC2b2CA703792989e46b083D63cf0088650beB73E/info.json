@@ -3,22 +3,14 @@
   "symbol": "USDT.z",
   "type": "BEP20",
   "decimals": 18,
-  "description": "USDT.z is a BEP-20 token on BNB Smart Chain. Not affiliated with Tether",
+  "description": "USDT.z is a BEP-20 token on BNB Smart Chain. Not affiliated with Tether.",
   "website": "https://www.usdt-z.cloud/",
   "explorer": "https://bscscan.com/token/0xC2b2CA703792989e46b083D63cf0088650beB73E",
   "status": "active",
   "id": "0xC2b2CA703792989e46b083D63cf0088650beB73E",
-"links": [
-    {
-      "name": "twitter",
-      "url": "https://x.com/ZUsdt81051"
-    },
-    {
-      "name": "github",
-      "url": "https://github.com/jmadman1"
-    }
+  "links": [
+    { "name": "twitter", "url": "https://x.com/ZUsdt81051" },
+    { "name": "github", "url": "https://github.com/jmadman1" }
   ],
-  "tags": [
-    "utility"
-  ]
+  "tags": ["defi"]
 }
