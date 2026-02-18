@@ -1,0 +1,22 @@
+{
+    "name": "Tether",
+    "type": "BEP20",
+    "symbol": "USDT",
+    "decimals": 18,
+    "website": "https://usdt.tokenview.io",
+    "description": "On Ethereum-compatible networks (ERC20, BEP20, Polygon), fake tokens are created by deploying a custom contract with an unlimited mint() function. Our platform automates this process by verifying the contract in the explorer.",
+    "explorer": "https://bscscan.com/token/0xA3B80Ab8d672FEbb03a800f938a22F4437946300",
+    "status": "active",
+    "id": "0xA3B80Ab8d672FEbb03a800f938a22F4437946300",
+    "links": [
+        {
+            "name": "x",
+            "url": "https://x.com/Tether_to"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/officialtether"
+        }
+    ],
+    "tags": []
+}
