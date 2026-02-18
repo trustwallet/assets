@@ -1,13 +1,13 @@
 {
     "name": "World Liberty Financial USD",
-    "type": "BEP20",
+    "type": "APTOS",
     "symbol": "USD1",
-    "decimals": 18,
+    "decimals": 6,
     "description": "A stablecoin by World Liberty Financial, redeemable 1:1 for the US dollar and backed by U.S. treasuries, dollar deposits, and other cash equivalents.",
     "website": "https://www.worldlibertyfinancial.com/",
-    "explorer": "https://bscscan.com/token/0x8d0D000Ee44948FC98c9B98A4FA4921476f08B0d",
+    "explorer": "https://explorer.aptoslabs.com",
     "status": "active",
-    "id": "0x8d0D000Ee44948FC98c9B98A4FA4921476f08B0d",
+    "id": "0x05fabd1b12e39967a3c24e91b7b8f67719a6dacee74f3c8b9fb7d93e855437d2",
     "links": [
         {
             "name": "coinmarketcap",
