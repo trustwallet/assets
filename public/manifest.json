@@ -1,0 +1,25 @@
+{
+  "name": "OnePremium",
+  "short_name": "OPM",
+  "description": "Premium Token Ecosystem - Experience exclusive benefits with $OPM token",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0908",
+  "theme_color": "#D4AF37",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/images/3bffe8d5-1382-49f5-92e7.jpeg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/3bffe8d5-1382-49f5-92e7.jpeg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["finance", "crypto"]
+}
