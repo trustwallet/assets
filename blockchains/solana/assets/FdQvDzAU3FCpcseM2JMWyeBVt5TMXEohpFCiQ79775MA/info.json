@@ -3,8 +3,15 @@
   "symbol": "UЅDT",
   "type": "SPL",
   "decimals": 6,
+  "description": "Tether USD (USDT) is a stablecoin pegged 1:1 to the US Dollar, issued on the Solana blockchain as an SPL token.",
   "website": "https://tether.to",
   "explorer": "https://solscan.io/token/FdQvDzAU3FCpcseM2JMWyeBVt5TMXEohpFCiQ79775MA",
   "status": "active",
-  "id": "FdQvDzAU3FCpcseM2JMWyeBVt5TMXEohpFCiQ79775MA"
+  "id": "FdQvDzAU3FCpcseM2JMWyeBVt5TMXEohpFCiQ79775MA",
+  "tags": ["stablecoin"],
+  "links": [
+    { "name": "twitter", "url": "https://twitter.com/Tether_to" },
+    { "name": "telegram", "url": "https://t.me/OfficialTether" },
+    { "name": "github", "url": "https://github.com/tetherto" }
+  ]
 }
