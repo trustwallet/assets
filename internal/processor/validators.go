@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"os"
 
+	log "github.com/sirupsen/logrus"
 	"github.com/trustwallet/assets-go-libs/file"
 	"github.com/trustwallet/assets-go-libs/path"
 	"github.com/trustwallet/assets-go-libs/validation"
@@ -184,7 +185,8 @@ func (s *Service) ValidateChainInfoFile(f *file.AssetFile) error {
 
 	receivedTags, err := s.assetsManager.GetTagValues()
 	if err != nil {
-		return fmt.Errorf("failed to get tag values: %w", err)
+		log.Debugf("Skipping tag validation for %s: failed to get tag values: %s", f.Path(), err)
+		return nil
 	}
 
 	tags := make([]string, len(receivedTags.Tags))
