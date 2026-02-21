@@ -62,10 +62,20 @@
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/arbitrum/assets/0x9623063377AD1B27544C965cCd7342f7EA7e88C7/logo.png",
             "pairs": []
+        },
+        {
+            "asset": "c10042221_t0x02C1b10e5329c4502469396B2ce9f200E60b4a77",
+            "type": "ARBITRUM",
+            "address": "0x02C1b10e5329c4502469396B2ce9f200E60b4a77",
+            "name": "Wrapped Medtronic Tokenized stock (xStock)",
+            "symbol": "WMDTX",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/arbitrum/assets/0x02C1b10e5329c4502469396B2ce9f200E60b4a77/logo.png",
+            "pairs": []
         }
     ],
     "version": {
-        "major": 1,
+        "major": 2,
         "minor": 0,
         "patch": 0
     }
