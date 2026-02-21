@@ -1,16 +1,13 @@
 {
     "name": "USDC",
-    "website": "https://circle.com/usdc",
-    "description": "USDC is a stablecoin that is pegged to the U.S. dollar on a 1:1 basis",
-    "explorer": "0xbae207659db88bea0cbead6da0ed00aac12edcdda169e591cd41c94180b46f3b",
     "symbol": "USDC",
-    "type": "APTOSFA",
+    "type": "APTOS",
     "decimals": 6,
+    "description": "USDC is a stablecoin that is pegged to the U.S. dollar on a 1:1 basis",
+    "website": "https://circle.com/usdc",
+    "explorer": "https://explorer.aptoslabs.com/",
     "status": "active",
     "id": "0xbae207659db88bea0cbead6da0ed00aac12edcdda169e591cd41c94180b46f3b",
-    "tags": [
-        "stablecoin"
-    ],
     "links": [
         {
             "name": "x",
@@ -20,5 +17,8 @@
             "name": "coinmarketcap",
             "url": "https://coinmarketcap.com/currencies/usd-coin/"
         }
+    ],
+    "tags": [
+        "stablecoin"
     ]
 }

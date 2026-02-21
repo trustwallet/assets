@@ -1,17 +1,13 @@
 {
     "name": "DOVU",
-    "website": "https://dovu.earth/",
-    "description": "DOVU is a technology infrastructure provider, powering trusted environmental and carbon digital markets by providing market integrity. The DOVU token serves as the protocol’s utility token, enabling holders to participate and create their own environmental audit trail ecosystems. Token holders can stake their DOVU to earn multiplier rewards, aligning long-term incentives with the protocol’s mission of building reliable carbon markets.",
-    "explorer": "https://hashscan.io/mainnet/token/0x000000000000000000000000000000000038b3db",
-    "type": "HEDERA",
     "symbol": "DOVU",
+    "type": "BRC20",
     "decimals": 8,
+    "description": "DOVU is a technology infrastructure provider, powering trusted environmental and carbon digital markets by providing market integrity. The DOVU token serves as the protocol’s utility token, enabling holders to participate and create their own environmental audit trail ecosystems. Token holders can stake their DOVU to earn multiplier rewards, aligning long-term incentives with the protocol’s mission of building reliable carbon markets.",
+    "website": "https://dovu.earth/",
+    "explorer": "https://unisat.io/brc20/0x000000000000000000000000000000000038b3db",
     "status": "active",
     "id": "0x000000000000000000000000000000000038b3db",
-    "tags": [
-        "governance",
-        "staking"
-    ],
     "links": [
         {
             "name": "github",
@@ -37,5 +33,9 @@
             "name": "youtube",
             "url": "https://youtube.com/@DOVUearth"
         }
+    ],
+    "tags": [
+        "governance",
+        "staking"
     ]
 }

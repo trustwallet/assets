@@ -1,16 +1,13 @@
 {
     "name": "USDT0",
-    "website": "https://usdt0.to/",
-    "description": "USDT0 is how USDT gets to new chains, such as Ink, Berachain, MegaETH, and Plasma. USDT0 is secure and omnichain.",
-    "explorer": "https://monadvision.com/token/0xe7cd86e13AC4309349F30B3435a9d337750fC82D",
-    "type": "MONAD",
     "symbol": "USDT0",
+    "type": "BRC20",
     "decimals": 6,
+    "description": "USDT0 is how USDT gets to new chains, such as Ink, Berachain, MegaETH, and Plasma. USDT0 is secure and omnichain.",
+    "website": "https://usdt0.to/",
+    "explorer": "https://unisat.io/brc20/0xe7cd86e13AC4309349F30B3435a9d337750fC82D",
     "status": "active",
     "id": "0xe7cd86e13AC4309349F30B3435a9d337750fC82D",
-    "tags": [
-        "stablecoin"
-    ],
     "links": [
         {
             "name": "coingecko",
@@ -28,5 +25,8 @@
             "name": "x",
             "url": "https://x.com/usdt0_to"
         }
+    ],
+    "tags": [
+        "stablecoin"
     ]
 }

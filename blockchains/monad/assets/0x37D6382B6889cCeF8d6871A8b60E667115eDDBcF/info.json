@@ -1,16 +1,13 @@
 {
     "name": "pufETH",
-    "website": "https://www.puffer.fi/",
-    "description": "Puffer is a decentralized native liquid restaking protocol (nLRP) built on Eigenlayer.",
-    "explorer": "https://monadvision.com/token/0x37D6382B6889cCeF8d6871A8b60E667115eDDBcF",
-    "type": "MONAD",
     "symbol": "pufETH",
+    "type": "BRC20",
     "decimals": 18,
+    "description": "Puffer is a decentralized native liquid restaking protocol (nLRP) built on Eigenlayer.",
+    "website": "https://www.puffer.fi/",
+    "explorer": "https://unisat.io/brc20/0x37D6382B6889cCeF8d6871A8b60E667115eDDBcF",
     "status": "active",
     "id": "0x37D6382B6889cCeF8d6871A8b60E667115eDDBcF",
-    "tags": [
-        "defi"
-    ],
     "links": [
         {
             "name": "coinmarketcap",
@@ -20,5 +17,8 @@
             "name": "x",
             "url": "https://x.com/puffer_finance"
         }
+    ],
+    "tags": [
+        "defi"
     ]
 }

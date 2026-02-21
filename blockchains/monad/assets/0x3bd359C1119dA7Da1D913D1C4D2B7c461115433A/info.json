@@ -1,16 +1,13 @@
 {
     "name": "Wrapped MON",
-    "website": "https://www.monad.xyz/",
-    "description": "Monad is a high-performance Layer 1 blockchain that is 100% EVM-compatible. It processes 10,000 transactions per second with near-zero fees and sub-second finality. MON is the native token of the Monad blockchain, used for gas fees and network operations.",
-    "explorer": "https://monadvision.com/token/0x3bd359C1119dA7Da1D913D1C4D2B7c461115433A",
-    "type": "MONAD",
     "symbol": "WMON",
+    "type": "BRC20",
     "decimals": 18,
+    "description": "Monad is a high-performance Layer 1 blockchain that is 100% EVM-compatible. It processes 10,000 transactions per second with near-zero fees and sub-second finality. MON is the native token of the Monad blockchain, used for gas fees and network operations.",
+    "website": "https://www.monad.xyz/",
+    "explorer": "https://unisat.io/brc20/0x3bd359C1119dA7Da1D913D1C4D2B7c461115433A",
     "status": "active",
     "id": "0x3bd359C1119dA7Da1D913D1C4D2B7c461115433A",
-    "tags": [
-        "wrapped"
-    ],
     "links": [
         {
             "name": "x",
@@ -28,5 +25,8 @@
             "name": "coingecko",
             "url": "https://coingecko.com/coins/monad"
         }
+    ],
+    "tags": [
+        "wrapped"
     ]
 }

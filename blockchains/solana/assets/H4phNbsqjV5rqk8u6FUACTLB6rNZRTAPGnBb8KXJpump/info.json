@@ -1,13 +1,13 @@
 {
     "name": "Solana Social Explorer",
-    "type": "SOL",
     "symbol": "SSE",
+    "type": "SPL",
     "decimals": 6,
     "description": "Solana Social Explorer is the first trading platform that tracks & confirms social blockchain data from top traders, powering users with automated tools and insights to optimize token trading. Powered by Tapestry.",
     "website": "https://www.usetapestry.dev/",
     "explorer": "https://solscan.io/token/H4phNbsqjV5rqk8u6FUACTLB6rNZRTAPGnBb8KXJpump",
-    "id": "H4phNbsqjV5rqk8u6FUACTLB6rNZRTAPGnBb8KXJpump",
     "status": "active",
+    "id": "H4phNbsqjV5rqk8u6FUACTLB6rNZRTAPGnBb8KXJpump",
     "links": [
         {
             "name": "x",
@@ -17,10 +17,8 @@
             "name": "coingecko",
             "url": "https://coingecko.com/en/coins/solana-social-explorer"
         }
-
     ],
     "tags": [
         "defi"
     ]
 }
-    

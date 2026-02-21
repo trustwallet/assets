@@ -1,16 +1,13 @@
 {
     "name": "Kintsu Staked Monad",
-    "website": "https://kintsu.xyz/",
-    "description": "The Kintsu Liquid Staking protocol automates the process by which users can pool their MON tokens together for network staking via non-custodial smart contracts. Kintsu creates sMON, a liquid version of the core MON gas token.",
-    "explorer": "https://monadvision.com/token/0xA3227C5969757783154C60bF0bC1944180ed81B9",
-    "type": "MONAD",
     "symbol": "sMON",
+    "type": "BRC20",
     "decimals": 18,
+    "description": "The Kintsu Liquid Staking protocol automates the process by which users can pool their MON tokens together for network staking via non-custodial smart contracts. Kintsu creates sMON, a liquid version of the core MON gas token.",
+    "website": "https://kintsu.xyz/",
+    "explorer": "https://unisat.io/brc20/0xA3227C5969757783154C60bF0bC1944180ed81B9",
     "status": "active",
     "id": "0xA3227C5969757783154C60bF0bC1944180ed81B9",
-    "tags": [
-        "staking"
-    ],
     "links": [
         {
             "name": "x",
@@ -20,5 +17,8 @@
             "name": "whitepaper",
             "url": "https://docs.kintsu.xyz/supported-blockchains/kintsu-on-monad"
         }
+    ],
+    "tags": [
+        "staking"
     ]
 }

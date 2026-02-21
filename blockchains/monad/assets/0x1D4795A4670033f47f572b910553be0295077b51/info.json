@@ -1,16 +1,13 @@
 {
     "name": "mcMON",
-    "website": "https://moonmace.ai/",
-    "description": "mcMON is Moonmace's non-rebasing liquid staking token (LST).",
-    "explorer": "https://monadvision.com/token/0x1D4795A4670033f47f572b910553be0295077b51",
-    "type": "MONAD",
     "symbol": "mcMON",
+    "type": "BRC20",
     "decimals": 18,
+    "description": "mcMON is Moonmace's non-rebasing liquid staking token (LST).",
+    "website": "https://moonmace.ai/",
+    "explorer": "https://unisat.io/brc20/0x1D4795A4670033f47f572b910553be0295077b51",
     "status": "active",
     "id": "0x1D4795A4670033f47f572b910553be0295077b51",
-    "tags": [
-        "staking"
-    ],
     "links": [
         {
             "name": "x",
@@ -20,5 +17,8 @@
             "name": "whitepaper",
             "url": "https://moonmace.gitbook.io/moonmace-docs/introduction"
         }
+    ],
+    "tags": [
+        "staking"
     ]
 }

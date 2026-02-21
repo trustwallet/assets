@@ -1,13 +1,13 @@
 {
     "name": "Automatic Treasury Machine",
-    "type": "SOL",
     "symbol": "ATM",
+    "type": "SPL",
     "decimals": 6,
     "description": "Automatic Treasury MACHINE. Simply hold $ATM tokens and watch your USDC rewards grow automatically",
     "website": "https://atmsolcoin.com/",
     "explorer": "https://solscan.io/token/8QhSMvYfXome11VgxFMD75hNbGQXW5QTnjA8khENkY2c",
-    "id": "8QhSMvYfXome11VgxFMD75hNbGQXW5QTnjA8khENkY2c",
     "status": "active",
+    "id": "8QhSMvYfXome11VgxFMD75hNbGQXW5QTnjA8khENkY2c",
     "links": [
         {
             "name": "x",
@@ -17,10 +17,8 @@
             "name": "coinmarketcap",
             "url": "https://coinmarketcap.com/currencies/automatic-treasury-machine/"
         }
-
     ],
     "tags": [
         "memes"
     ]
 }
-    

@@ -1,13 +1,13 @@
 {
     "name": "Doge Dividends",
-    "type": "SOL",
     "symbol": "DogeD",
+    "type": "SPL",
     "decimals": 9,
     "description": "$DogeD is a Solana-based token that rewards holders with USDC through a 5% transaction tax The token leverages community- driven benefits linked to potential economic policies and savings related to digital assets like DOGE.",
     "website": "https://doged-token.com/",
     "explorer": "https://solscan.io/token/EFS13abzbWru8aV5TnYUdy2dvjGGZbGuAHpJSSFdoge",
-    "id": "EFS13abzbWru8aV5TnYUdy2dvjGGZbGuAHpJSSFdoge",
     "status": "active",
+    "id": "EFS13abzbWru8aV5TnYUdy2dvjGGZbGuAHpJSSFdoge",
     "links": [
         {
             "name": "x",
@@ -17,10 +17,8 @@
             "name": "coinmarketcap",
             "url": "https://coinmarketcap.com/currencies/doge-dividends/"
         }
-
     ],
     "tags": [
         "deflationary"
     ]
 }
-    

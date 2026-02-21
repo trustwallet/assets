@@ -1,18 +1,14 @@
 {
     "name": "Nova Dai Stablecoin",
-    "website": "http://makerdao.com",
-    "description": "Dai is a stable cryptocurrency supported by Maker (MKR). To ensure price stability, Dai minimizes the price volatility against the US dollar, through an incentive structure for its participants.",
-    "explorer": "https://explorer.zklink.io/address/0xF573fA04A73d5AC442F3DEa8741317fEaA3cDeab",
-    "research": "https://research.binance.com/en/projects/dai",
-    "type": "ZKLINK",
     "symbol": "DAI",
+    "type": "BRC20",
     "decimals": 18,
+    "description": "Dai is a stable cryptocurrency supported by Maker (MKR). To ensure price stability, Dai minimizes the price volatility against the US dollar, through an incentive structure for its participants.",
+    "website": "http://makerdao.com",
+    "explorer": "https://unisat.io/brc20/0xF573fA04A73d5AC442F3DEa8741317fEaA3cDeab",
+    "research": "https://research.binance.com/en/projects/dai",
     "status": "active",
     "id": "0xF573fA04A73d5AC442F3DEa8741317fEaA3cDeab",
-    "tags": [
-        "defi",
-        "stablecoin"
-    ],
     "links": [
         {
             "name": "x",
@@ -38,5 +34,9 @@
             "name": "coingecko",
             "url": "https://coingecko.com/en/coins/dai/"
         }
+    ],
+    "tags": [
+        "defi",
+        "stablecoin"
     ]
 }

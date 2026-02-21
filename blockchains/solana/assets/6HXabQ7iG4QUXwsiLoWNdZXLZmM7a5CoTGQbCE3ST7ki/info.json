@@ -1,13 +1,13 @@
 {
     "name": "Earn Solana",
-    "type": "SOL",
     "symbol": "ESOL",
+    "type": "SPL",
     "decimals": 2,
     "description": "Token with 5% tax and gives solana rewards to all holders",
     "website": "https://earnsolana.site/",
     "explorer": "https://solscan.io/token/6HXabQ7iG4QUXwsiLoWNdZXLZmM7a5CoTGQbCE3ST7ki",
-    "id": "6HXabQ7iG4QUXwsiLoWNdZXLZmM7a5CoTGQbCE3ST7ki",
     "status": "active",
+    "id": "6HXabQ7iG4QUXwsiLoWNdZXLZmM7a5CoTGQbCE3ST7ki",
     "links": [
         {
             "name": "x",
@@ -17,10 +17,8 @@
             "name": "coinmarketcap",
             "url": "https://coinmarketcap.com/currencies/earn-solana/"
         }
-
     ],
     "tags": [
         "deflationary"
     ]
 }
-    

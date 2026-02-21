@@ -1,13 +1,13 @@
 {
     "name": "Memebets",
-    "type": "SOL",
     "symbol": "MBET",
+    "type": "SPL",
     "decimals": 6,
     "description": "$MBET is the official meme token of Memebets.io, a decentralized peer-to-peer (P2P) price prediction game centered around the volatility of memecoins. Built for traders and speculators, Memebets allows users to place bets on the price movements of popular memecoins like $DOGE, $SHIB, and $PEPE, creating an on-chain, permissionless environment for high-risk, high-reward trading.",
     "website": "https://www.memebets.io/",
     "explorer": "https://solscan.io/token/MbetZheK6wDs22ftMat7PLiBtoXYBdrMHfpkKRihCYK",
-    "id": "MbetZheK6wDs22ftMat7PLiBtoXYBdrMHfpkKRihCYK",
     "status": "active",
+    "id": "MbetZheK6wDs22ftMat7PLiBtoXYBdrMHfpkKRihCYK",
     "links": [
         {
             "name": "x",
@@ -21,10 +21,8 @@
             "name": "coingecko",
             "url": "https://coingecko.com/en/coins/memebets"
         }
-   
     ],
     "tags": [
         "memes"
     ]
 }
-    

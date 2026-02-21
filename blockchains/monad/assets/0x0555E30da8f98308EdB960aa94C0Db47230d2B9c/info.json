@@ -1,16 +1,13 @@
 {
     "name": "Wrapped BTC",
-    "website": "https://wbtc.network/",
-    "description": "WBTC — first and largest tokenized Bitcoin, 1:1 with BTC across multiple chains. Wrapped Bitcoin is a tokenized version of Bitcoin (BTC) that runs on the Ethereum (ETH) blockchain.",
-    "explorer": "https://monadvision.com/token/0x0555E30da8f98308EdB960aa94C0Db47230d2B9c",
-    "type": "MONAD",
     "symbol": "WBTC",
+    "type": "BRC20",
     "decimals": 8,
+    "description": "WBTC — first and largest tokenized Bitcoin, 1:1 with BTC across multiple chains. Wrapped Bitcoin is a tokenized version of Bitcoin (BTC) that runs on the Ethereum (ETH) blockchain.",
+    "website": "https://wbtc.network/",
+    "explorer": "https://unisat.io/brc20/0x0555E30da8f98308EdB960aa94C0Db47230d2B9c",
     "status": "active",
     "id": "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c",
-    "tags": [
-        "wrapped"
-    ],
     "links": [
         {
             "name": "coingecko",
@@ -20,5 +17,8 @@
             "name": "coinmarketcap",
             "url": "https://coinmarketcap.com/currencies/wrapped-bitcoin/"
         }
+    ],
+    "tags": [
+        "wrapped"
     ]
 }

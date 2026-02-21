@@ -1,17 +1,13 @@
 {
     "name": "Nova Wrapped BTC",
-    "website": "https://wbtc.network",
-    "description": "Wrapped Bitcoin (WBTC) is the first ERC20 token backed 1:1 with Bitcoin.",
-    "explorer": "https://explorer.zklink.io/address/0xDa4AaEd3A53962c83B35697Cd138cc6df43aF71f",
-    "type": "ZKLINK",
     "symbol": "WBTC",
+    "type": "BRC20",
     "decimals": 18,
+    "description": "Wrapped Bitcoin (WBTC) is the first ERC20 token backed 1:1 with Bitcoin.",
+    "website": "https://wbtc.network",
+    "explorer": "https://unisat.io/brc20/0xDa4AaEd3A53962c83B35697Cd138cc6df43aF71f",
     "status": "active",
     "id": "0xDa4AaEd3A53962c83B35697Cd138cc6df43aF71f",
-    "tags": [
-        "defi",
-        "wrapped"
-    ],
     "links": [
         {
             "name": "whitepaper",
@@ -25,5 +21,9 @@
             "name": "coingecko",
             "url": "https://coingecko.com/en/coins/wrapped-bitcoin/"
         }
+    ],
+    "tags": [
+        "defi",
+        "wrapped"
     ]
 }
