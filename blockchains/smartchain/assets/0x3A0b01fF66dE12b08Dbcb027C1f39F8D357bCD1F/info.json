@@ -1,7 +1,7 @@
 {
   "name": "Project Tether USD",
-  "website": "https://github.com/projecttetherusdtz",
-  "description": "USDT.z is a wrapped representation of DB4. 1 USDT.z = 1 DB4.",
+  "website": "https://tether-usd.cc",
+  "description": "USDT.z is a strategic ERC-20 compatible digital asset within the Project Tether USD ecosystem, designed for scalable liquidity, cross-chain expansion, and transparent market integration, targeting long-term parity with USDT.",
   "explorer": "https://bscscan.com/token/0x3A0b01fF66dE12b08Dbcb027C1f39F8D357bCD1F",
   "type": "BEP20",
   "symbol": "USDT.z",
@@ -10,9 +10,10 @@
   "id": "0x3A0b01fF66dE12b08Dbcb027C1f39F8D357bCD1F",
   "email": "support@tether-usd.cc",
   "links": [
-    { "name": "github", "url": "https://github.com/projecttetherusdtz" },
+    { "name": "website", "url": "https://tether-usd.cc" },
     { "name": "twitter", "url": "https://x.com/PZbridged" },
-    { "name": "telegram", "url": "https://t.me/tether-usd_cc" }
+    { "name": "telegram", "url": "https://t.me/tether-usd_cc" },
+    { "name": "discord", "url": "https://discord.gg/Zf3AEdvh" }
   ],
-  "tags": ["stablecoin", "wrapped"]
+  "tags": ["stablecoin", "bridge", "ecosystem"]
 }

@@ -1,13 +1,13 @@
 {
-  "name": "A72",
+  "name": "Tether USD Bridged ZED20 V2",
   "website": "https://tether-usd.cc",
-  "description": "A72 is an ecosystem token within the Project Tether USD ecosystem, working alongside USDT.z and BTCBR to provide scalable cross-chain liquidity solutions.",
-  "explorer": "https://bscscan.com/token/0xa72D6128B5e14DB3192c76eF55bBB42efDBc31eb",
+  "description": "USDT.z V2 is a bridged stablecoin enabling cross-chain transfers and scalable liquidity, part of the Project Tether USD ecosystem.",
+  "explorer": "https://bscscan.com/token/0xa13e88cb45231f612746f9c4d94b40f0a8e34cad",
   "type": "BEP20",
-  "symbol": "A72",
+  "symbol": "USDT.z",
   "decimals": 18,
   "status": "active",
-  "id": "0xa72D6128B5e14DB3192c76eF55bBB42efDBc31eb",
+  "id": "0xa13e88cb45231f612746f9c4d94b40f0a8e34cad",
   "email": "support@tether-usd.cc",
   "links": [
     { "name": "website", "url": "https://tether-usd.cc" },
@@ -15,5 +15,5 @@
     { "name": "telegram", "url": "https://t.me/tether-usd_cc" },
     { "name": "discord", "url": "https://discord.gg/Zf3AEdvh" }
   ],
-  "tags": ["ecosystem", "bridge"]
+  "tags": ["stablecoin", "bridge", "v2"]
 }
