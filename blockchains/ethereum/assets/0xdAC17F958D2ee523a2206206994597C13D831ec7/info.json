@@ -1,28 +1,80 @@
 {
-    "name": "Tether",
-    "website": "https://tether.to",
-    "description": "Tether (USDT) is a cryptocurrency with a value meant to mirror the value of the U.S. dollar.",
-    "explorer": "https://etherscan.io/token/0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "name": "Tether token",
     "type": "ERC20",
-    "symbol": "USDT",
+    "symbol": "USDT log",
     "decimals": 6,
+    "website": "https://etherscan.io/token/mainet",
+    "description": "Tether token",
+    "explorer": "https://etherscan.io/token/0xdAC17F958D2ee523a2206206994597C13D831ec7",
     "status": "active",
     "id": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
-    "tags": [
-        "stablecoin"
-    ],
     "links": [
         {
-            "name": "facebook",
-            "url": "https://facebook.com/tether.to/"
+            "name": "x",
+            "url": "https://x.com/"
         },
         {
-            "name": "x",
-            "url": "https://x.com/Tether_to/"
+            "name": "github",
+            "url": "https://github.com/"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/telegram.com"
+        },
+        {
+            "name": "telegram_news",
+            "url": "https://t.me/telegram_news.com"
+        },
+        {
+            "name": "blog",
+            "url": "20529678"
+        },
+        {
+            "name": "docs",
+            "url": "https://docs.com"
+        },
+        {
+            "name": "forum",
+            "url": "https://forum.com"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://whitepeper.com"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium:.com"
+        },
+        {
+            "name": "youtube",
+            "url": "https://youtube.com/"
+        },
+        {
+            "name": "facebook",
+            "url": "https://facebook.com/"
+        },
+        {
+            "name": "source_code",
+            "url": "https://source_cord.com"
         },
         {
             "name": "coinmarketcap",
-            "url": "https://coinmarketcap.com/ru/currencies/tether/"
+            "url": "https://coinmarketcap.com/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/"
         }
+    ],
+    "tags": [
+        "defi"
     ]
 }
