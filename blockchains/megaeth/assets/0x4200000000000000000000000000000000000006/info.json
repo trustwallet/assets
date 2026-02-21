@@ -1,11 +1,11 @@
 {
     "name": "Wrapped Ether",
-    "type": "MEGAETH",
     "symbol": "WETH",
+    "type": "BRC20",
     "decimals": 18,
     "description": "Wrapped Ether on MegaETH",
     "website": "https://www.megaeth.com",
-    "explorer": "https://megaeth.blockscout.com/token/0x4200000000000000000000000000000000000006",
+    "explorer": "https://unisat.io/brc20/0x4200000000000000000000000000000000000006",
     "status": "active",
     "id": "0x4200000000000000000000000000000000000006",
     "links": [

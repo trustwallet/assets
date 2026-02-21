@@ -1,13 +1,13 @@
 {
     "name": "KittyMineCoin",
-    "type": "SOL",
     "symbol": "KMC",
+    "type": "SPL",
     "decimals": 6,
     "description": "The first ever encoded key layer-1 blockchain on a video game, with the ability to implement into any game.",
     "website": "https://www.thekittymine.com",
     "explorer": "https://solscan.io/token/41fZewbrb8x24yE9KeMJExoVXCDggebPMEwRVvX8pump",
-    "id": "41fZewbrb8x24yE9KeMJExoVXCDggebPMEwRVvX8pump",
     "status": "active",
+    "id": "41fZewbrb8x24yE9KeMJExoVXCDggebPMEwRVvX8pump",
     "links": [
         {
             "name": "x",
@@ -17,10 +17,8 @@
             "name": "coingecko",
             "url": "https://coingecko.com/en/coins/kittyminecoin"
         }
-
     ],
     "tags": [
         "gamefi"
     ]
 }
-    

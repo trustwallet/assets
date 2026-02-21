@@ -1,16 +1,13 @@
 {
     "name": "Cartesi Token (PoS)",
-    "website": "https://cartesi.io",
-    "description": "Cartesi is the first Blockchain OS. It allows developers to build decentralized logic with Linux and standard programming environments preserving the decentralization and security of blockchains.",
-    "explorer": "https://snowtrace.io/token/0x6b289CCeAA8639e3831095D75A3e43520faBf552",
-    "type": "AVALANCHEC",
     "symbol": "CTSI",
+    "type": "AVALANCHE",
     "decimals": 18,
+    "description": "Cartesi is the first Blockchain OS. It allows developers to build decentralized logic with Linux and standard programming environments preserving the decentralization and security of blockchains.",
+    "website": "https://cartesi.io",
+    "explorer": "https://snowtrace.io/token/0x6b289CCeAA8639e3831095D75A3e43520faBf552",
     "status": "active",
     "id": "0x6b289CCeAA8639e3831095D75A3e43520faBf552",
-    "tags": [
-        "defi"
-    ],
     "links": [
         {
             "name": "x",
@@ -24,5 +21,8 @@
             "name": "coinmarketcap",
             "url": "https://coinmarketcap.com/ru/currencies/cartesi/"
         }
+    ],
+    "tags": [
+        "defi"
     ]
 }

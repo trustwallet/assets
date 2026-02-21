@@ -1,16 +1,13 @@
 {
     "name": "Folks Finance",
-    "website": "https://folks.finance/",
-    "description": "Folks Finance is a crosschain decentralized finance (DeFi) protocol that enables users to supply, borrow, and manage digital assets across multiple blockchains from a single platform.",
-    "explorer": "https://monadvision.com/token/0xFF7F8F301F7A706E3CfD3D2275f5dc0b9EE8009B",
-    "type": "MONAD",
     "symbol": "FOLKS",
+    "type": "BRC20",
     "decimals": 6,
+    "description": "Folks Finance is a crosschain decentralized finance (DeFi) protocol that enables users to supply, borrow, and manage digital assets across multiple blockchains from a single platform.",
+    "website": "https://folks.finance/",
+    "explorer": "https://unisat.io/brc20/0xFF7F8F301F7A706E3CfD3D2275f5dc0b9EE8009B",
     "status": "active",
     "id": "0xFF7F8F301F7A706E3CfD3D2275f5dc0b9EE8009B",
-    "tags": [
-        "defi"
-    ],
     "links": [
         {
             "name": "coingecko",
@@ -24,5 +21,8 @@
             "name": "x",
             "url": "https://x.com/FolksFinance"
         }
+    ],
+    "tags": [
+        "defi"
     ]
 }

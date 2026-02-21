@@ -1,20 +1,20 @@
 {
     "name": "Sumerian BTC",
-    "website": "https://sumer.money/",
-    "description": "Synthetic asset under sumer.money",
-    "explorer": "https://monadvision.com/token/0xe85411C030fB32A9D8b14Bbbc6CB19417391F711",
-    "type": "MONAD",
     "symbol": "suBTC",
+    "type": "BRC20",
     "decimals": 18,
+    "description": "Synthetic asset under sumer.money",
+    "website": "https://sumer.money/",
+    "explorer": "https://unisat.io/brc20/0xe85411C030fB32A9D8b14Bbbc6CB19417391F711",
     "status": "active",
     "id": "0xe85411C030fB32A9D8b14Bbbc6CB19417391F711",
-    "tags": [
-        "defi"
-    ],
     "links": [
         {
             "name": "whitepaper",
             "url": "https://docs.sumer.money/frequently-asked-questions/minting-synthetic-assets-sutokens"
         }
+    ],
+    "tags": [
+        "defi"
     ]
 }

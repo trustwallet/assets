@@ -1,16 +1,13 @@
 {
     "name": "Wrapped SOL",
-    "website": "https://solana.com/",
-    "description": "Wrapped Solana (SOL) is a cryptocurrency token and operates on the Solana platform.",
-    "explorer": "https://monadvision.com/token/0xea17E5a9efEBf1477dB45082d67010E2245217f1",
-    "type": "MONAD",
     "symbol": "SOL",
+    "type": "BRC20",
     "decimals": 9,
+    "description": "Wrapped Solana (SOL) is a cryptocurrency token and operates on the Solana platform.",
+    "website": "https://solana.com/",
+    "explorer": "https://unisat.io/brc20/0xea17E5a9efEBf1477dB45082d67010E2245217f1",
     "status": "active",
     "id": "0xea17E5a9efEBf1477dB45082d67010E2245217f1",
-    "tags": [
-        "defi"
-    ],
     "links": [
         {
             "name": "coingecko",
@@ -24,5 +21,8 @@
             "name": "x",
             "url": "https://x.com/solana"
         }
+    ],
+    "tags": [
+        "defi"
     ]
 }

@@ -1,16 +1,13 @@
 {
     "name": "Lombard Staked Bitcoin",
-    "website": "https://www.lombard.finance/",
-    "description": "Lombard unlocks Bitcoin's potential as a dynamic financial tool by connecting it to the world of decentralized finance (DeFi).",
-    "explorer": "https://monadvision.com/token/0xecAc9C5F704e954931349Da37F60E39f515c11c1",
-    "type": "MONAD",
     "symbol": "LBTC",
+    "type": "BRC20",
     "decimals": 8,
+    "description": "Lombard unlocks Bitcoin's potential as a dynamic financial tool by connecting it to the world of decentralized finance (DeFi).",
+    "website": "https://www.lombard.finance/",
+    "explorer": "https://unisat.io/brc20/0xecAc9C5F704e954931349Da37F60E39f515c11c1",
     "status": "active",
     "id": "0xecAc9C5F704e954931349Da37F60E39f515c11c1",
-    "tags": [
-        "defi"
-    ],
     "links": [
         {
             "name": "coingecko",
@@ -20,5 +17,8 @@
             "name": "coinmarketcap",
             "url": "https://coinmarketcap.com/currencies/lombard-staked-btc/"
         }
+    ],
+    "tags": [
+        "defi"
     ]
 }

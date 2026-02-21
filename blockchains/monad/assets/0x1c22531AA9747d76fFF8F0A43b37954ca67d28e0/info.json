@@ -1,16 +1,13 @@
 {
     "name": "Sumerian ETH",
-    "website": "https://sumer.money/",
-    "description": "suETH is a multichain fungible synthetic asset by Sumer.Money pegged to ETH and representing same security characteristics and collateral backing across all supported networks.",
-    "explorer": "https://monadvision.com/token/0x1c22531AA9747d76fFF8F0A43b37954ca67d28e0",
-    "type": "MONAD",
     "symbol": "suETH",
+    "type": "BRC20",
     "decimals": 18,
+    "description": "suETH is a multichain fungible synthetic asset by Sumer.Money pegged to ETH and representing same security characteristics and collateral backing across all supported networks.",
+    "website": "https://sumer.money/",
+    "explorer": "https://unisat.io/brc20/0x1c22531AA9747d76fFF8F0A43b37954ca67d28e0",
     "status": "active",
     "id": "0x1c22531AA9747d76fFF8F0A43b37954ca67d28e0",
-    "tags": [
-        "defi"
-    ],
     "links": [
         {
             "name": "x",
@@ -20,5 +17,8 @@
             "name": "coingecko",
             "url": "https://coingecko.com/en/coins/sumer-money-sueth"
         }
+    ],
+    "tags": [
+        "defi"
     ]
 }

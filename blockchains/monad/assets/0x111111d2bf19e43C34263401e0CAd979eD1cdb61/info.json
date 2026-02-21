@@ -1,16 +1,13 @@
 {
     "name": "USD1",
-    "website": "https://worldlibertyfinancial.com/",
-    "description": "USD1 is a fiat-backed digital asset, designed to maintain a 1:1 equivalence with the U.S. dollar. ",
-    "explorer": "https://monadvision.com/token/0x111111d2bf19e43C34263401e0CAd979eD1cdb61",
-    "type": "MONAD",
     "symbol": "USD1",
+    "type": "BRC20",
     "decimals": 6,
+    "description": "USD1 is a fiat-backed digital asset, designed to maintain a 1:1 equivalence with the U.S. dollar. ",
+    "website": "https://worldlibertyfinancial.com/",
+    "explorer": "https://unisat.io/brc20/0x111111d2bf19e43C34263401e0CAd979eD1cdb61",
     "status": "active",
     "id": "0x111111d2bf19e43C34263401e0CAd979eD1cdb61",
-    "tags": [
-        "stablecoin"
-    ],
     "links": [
         {
             "name": "coinmarketcap",
@@ -20,5 +17,8 @@
             "name": "whitepaper",
             "url": "https://static.worldlibertyfinancial.com/docs/gold-paper.pdf"
         }
+    ],
+    "tags": [
+        "stablecoin"
     ]
 }

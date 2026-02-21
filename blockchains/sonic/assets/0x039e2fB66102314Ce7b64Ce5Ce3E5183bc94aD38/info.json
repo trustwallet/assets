@@ -1,16 +1,13 @@
 {
     "name": "Wrapped Sonic",
-    "website": "https://www.soniclabs.com/",
-    "description": "Sonic is the highest-performing EVM L1",
-    "explorer": "https://sonicscan.org/token/0x039e2fb66102314ce7b64ce5ce3e5183bc94ad38",
     "symbol": "wS",
-    "type": "SONIC",
+    "type": "BRC20",
     "decimals": 18,
-    "id": "0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38",
+    "description": "Sonic is the highest-performing EVM L1",
+    "website": "https://www.soniclabs.com/",
+    "explorer": "https://unisat.io/brc20/0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38",
     "status": "active",
-    "tags": [
-        "dapp"
-    ],
+    "id": "0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38",
     "links": [
         {
             "name": "discord",
@@ -28,5 +25,8 @@
             "name": "reddit",
             "url": "https://reddit.com/r/0xSonic/"
         }
+    ],
+    "tags": [
+        "dapp"
     ]
 }

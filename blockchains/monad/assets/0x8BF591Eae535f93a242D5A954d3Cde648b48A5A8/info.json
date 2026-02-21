@@ -1,20 +1,20 @@
 {
     "name": "Sumerian USD",
-    "website": "https://sumer.money/",
-    "description": "suUSD is a multichain fungible synthetic asset by Sumer.Money pegged to USD and representing the same security characteristics and collateral backing across all supported networks.",
-    "explorer": "https://monadvision.com/token/0x8BF591Eae535f93a242D5A954d3Cde648b48A5A8",
-    "type": "MONAD",
     "symbol": "suUSD",
+    "type": "BRC20",
     "decimals": 18,
+    "description": "suUSD is a multichain fungible synthetic asset by Sumer.Money pegged to USD and representing the same security characteristics and collateral backing across all supported networks.",
+    "website": "https://sumer.money/",
+    "explorer": "https://unisat.io/brc20/0x8BF591Eae535f93a242D5A954d3Cde648b48A5A8",
     "status": "active",
     "id": "0x8BF591Eae535f93a242D5A954d3Cde648b48A5A8",
-    "tags": [
-        "stablecoin"
-    ],
     "links": [
         {
             "name": "coingecko",
             "url": "https://coingecko.com/en/coins/sumer-money-suusd"
         }
+    ],
+    "tags": [
+        "stablecoin"
     ]
 }

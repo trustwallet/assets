@@ -1,11 +1,11 @@
 {
     "name": "USDai",
-    "type": "PLASMA",
     "symbol": "USDai",
+    "type": "BRC20",
     "decimals": 18,
-    "website": "https://usd.ai/",
     "description": "USDai is a low risk, fully-backed synthetic dollar, which allows it to be redeemed instantly at all times. USDai does not pass yield through to holders, instead providing users with deep secondary market liquidity across DeFi and CeFi.",
-    "explorer": "https://plasmascan.to/token/0x0A1a1A107E45b7Ced86833863f482BC5f4ed82EF",
+    "website": "https://usd.ai/",
+    "explorer": "https://unisat.io/brc20/0x0A1a1A107E45b7Ced86833863f482BC5f4ed82EF",
     "status": "active",
     "id": "0x0A1a1A107E45b7Ced86833863f482BC5f4ed82EF",
     "links": [

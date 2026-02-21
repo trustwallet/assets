@@ -1,13 +1,13 @@
 {
     "name": "Storm Money",
-    "type": "SOL",
     "symbol": "STORM",
+    "type": "SPL",
     "decimals": 6,
     "description": "Storm Money is a groundbreaking project deployed on the Solana blockchain, aiming to provide passive income $USDT and add value to its community",
     "website": "https://stormmoney.io/",
     "explorer": "https://solscan.io/token/GUdXKe5B35QBcqa8VrPQqn8LCQrK2X1aecCQSJs3EVrS",
-    "id": "GUdXKe5B35QBcqa8VrPQqn8LCQrK2X1aecCQSJs3EVrS",
     "status": "active",
+    "id": "GUdXKe5B35QBcqa8VrPQqn8LCQrK2X1aecCQSJs3EVrS",
     "links": [
         {
             "name": "x",
@@ -17,10 +17,8 @@
             "name": "coingecko",
             "url": "https://coingecko.com/en/coins/storm-money"
         }
-
     ],
     "tags": [
         "defi"
     ]
 }
-    

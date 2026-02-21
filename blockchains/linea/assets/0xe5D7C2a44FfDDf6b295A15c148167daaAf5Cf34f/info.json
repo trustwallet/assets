@@ -1,11 +1,11 @@
 {
     "name": "Wrapped Ether",
-    "type": "LINEA",
     "symbol": "WETH",
+    "type": "LINEA",
     "decimals": 18,
-    "website": "https://weth.io/",
     "description": "wETH is wrapped ETH",
-    "explorer": "https://lineascan.build/token/0xe5d7c2a44ffddf6b295a15c148167daaaf5cf34f",
+    "website": "https://weth.io/",
+    "explorer": "https://explorer.linea.build/token/0xe5D7C2a44FfDDf6b295A15c148167daaAf5Cf34f",
     "status": "active",
     "id": "0xe5D7C2a44FfDDf6b295A15c148167daaAf5Cf34f",
     "links": [
@@ -18,4 +18,4 @@
             "url": "https://coingecko.com/coins/weth/"
         }
     ]
-} 
+}
