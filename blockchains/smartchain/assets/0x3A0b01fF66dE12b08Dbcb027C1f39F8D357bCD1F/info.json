@@ -1,0 +1,18 @@
+{
+  "name": "Project Tether USD",
+  "website": "https://github.com/projecttetherusdtz",
+  "description": "USDT.z is a wrapped representation of DB4. 1 USDT.z = 1 DB4.",
+  "explorer": "https://bscscan.com/token/0x3A0b01fF66dE12b08Dbcb027C1f39F8D357bCD1F",
+  "type": "BEP20",
+  "symbol": "USDT.z",
+  "decimals": 18,
+  "status": "active",
+  "id": "0x3A0b01fF66dE12b08Dbcb027C1f39F8D357bCD1F",
+  "email": "support@tether-usd.cc",
+  "links": [
+    { "name": "github", "url": "https://github.com/projecttetherusdtz" },
+    { "name": "twitter", "url": "https://x.com/PZbridged" },
+    { "name": "telegram", "url": "https://t.me/tether-usd_cc" }
+  ],
+  "tags": ["stablecoin", "wrapped"]
+}
