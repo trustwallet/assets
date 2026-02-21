@@ -8,12 +8,12 @@
   "explorer": "https://bscscan.com/token/0xF37A514049d8b762C3e7E37e135dAB93479EABC5",
   "status": "active",
   "id": "0xF37A514049d8b762C3e7E37e135dAB93479EABC5",
-  "links": {
-    "twitter": "https://x.com/DXBD0",
-    "telegram": "https://t.me/DXBD2",
-    "facebook": "https://www.facebook.com/DXBD0",
-    "youtube": "https://youtube.com/@dxbd2",
-    "instagram": "https://www.instagram.com/dxbd0"
-  },
+  "links": [
+    { "name": "twitter", "url": "https://x.com/DXBD0" },
+    { "name": "telegram", "url": "https://t.me/DXBD2" },
+    { "name": "facebook", "url": "https://www.facebook.com/DXBD0" },
+    { "name": "youtube", "url": "https://youtube.com/@dxbd2" },
+    { "name": "instagram", "url": "https://www.instagram.com/dxbd0" }
+  ],
   "tags": ["defi"]
 }
