@@ -1,0 +1,43 @@
+name: 🔒 محافظ فایل‌های مهم
+
+on:
+  pull_request:
+    branches: [ main, master ]
+  push:
+    branches: [ main, master ]
+
+jobs:
+  guard:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📥 دریافت کد
+        uses: actions/checkout@v4
+
+      - name: 🛡️ چک کردن فایل‌های ضروری
+        id: check
+        run: |
+          MISSING=""
+          FILES=(
+            ".github/dependabot.yml"
+            "info.json"
+            "logo.png"
+          )
+          for file in "${FILES[@]}"; do
+            if [ ! -f "$file" ]; then
+              echo "⚠️ فایل گم شده: $file"
+              MISSING="$MISSING\n- $file"
+            fi
+          done
+          
+          if [ -n "$MISSING" ]; then
+            echo "missing=true" >> $GITHUB_ENV
+            echo "missing_files=$MISSING" >> $GITHUB_ENV
+          else
+            echo "missing=false" >> $GITHUB_ENV
+          fi
+
+      - name: 🚫 بستن PR در صورت گم شدن فایل
+        if: github.event_name == 'pull_request' && env.missing == 'true'
+        run: |
+          echo "::error::❌ فایل‌های ضروری توی این PR پاک شدن: ${{ env.missing_files }}"
+          exit 1
