@@ -1,11 +1,11 @@
 {
-    "name": "Oscar",
+    "name": "Oscar ",
     "type": "ERC20",
     "symbol": "OSCAR",
     "decimals": 9,
-    "website": "https://www.oscarshibatoken.com/",
-    "description": "Oscar is a famous meme featuring a Shiba on a trampoline that went viral on the internet.",
-    "explorer": "https://etherscan.io/token/0xebb66a88cedd12bfe3a289df6dfee377f2963f12",
+    "website": "https://www.oscartoken.com",
+    "description": "Oscar Token is a community-driven cryptocurrency dedicated to helping stray animals. Every transaction contributes to food, shelter, and medical care for animals in need, turning crypto into compassion.",
+    "explorer": "https://etherscan.io/token/0xeBb66a88cEdd12bfE3a289df6DFEe377F2963F12",
     "status": "active",
     "id": "0xeBb66a88cEdd12bfE3a289df6DFEe377F2963F12",
     "links": [
@@ -15,7 +15,14 @@
         },
         {
             "name": "telegram",
-            "url": "https://t.me/oscarshib"
+            "url": "t.me/OscarShibaInu"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com"
         }
+    ],
+    "tags": [
+        "memes"
     ]
 }
