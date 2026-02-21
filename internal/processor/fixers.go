@@ -146,8 +146,11 @@ func (s *Service) FixAssetInfo(f *file.AssetFile) error {
 		expectedTokenType = strings.ToUpper(assetType)
 	}
 
+	// Skip type fix for chains not recognized by go-primitives (Symbol is empty for unknown chains).
+	chainKnown := f.Chain().Symbol != ""
+
 	// https://github.com/trustwallet/backend/issues/2561
-	if chain.ID != coin.CRYPTOORG && chain.ID != coin.CRONOS {
+	if chainKnown && chain.ID != coin.CRYPTOORG && chain.ID != coin.CRONOS {
 		if chain.ID != f.Chain().ID || !strings.EqualFold(assetType, expectedTokenType) {
 			assetInfo.Type = &expectedTokenType
 			isModified = true
@@ -161,15 +164,18 @@ func (s *Service) FixAssetInfo(f *file.AssetFile) error {
 		isModified = true
 	}
 
-	expectedExplorerURL, err := coin.GetCoinExploreURL(f.Chain(), f.Asset(), assetType)
-	if err != nil {
-		return err
-	}
-
-	// Fix asset explorer url.
-	if assetInfo.Explorer == nil || !strings.EqualFold(expectedExplorerURL, *assetInfo.Explorer) {
-		assetInfo.Explorer = &expectedExplorerURL
-		isModified = true
+	if chainKnown {
+		expectedExplorerURL, err := coin.GetCoinExploreURL(f.Chain(), f.Asset(), assetType)
+		if err != nil {
+			log.WithField("chain", f.Chain().Handle).WithField("asset", f.Asset()).
+				Debugf("Skipping explorer URL fix: %s", err)
+		} else {
+			// Fix asset explorer url.
+			if assetInfo.Explorer == nil || !strings.EqualFold(expectedExplorerURL, *assetInfo.Explorer) {
+				assetInfo.Explorer = &expectedExplorerURL
+				isModified = true
+			}
+		}
 	}
 
 	if isModified {
