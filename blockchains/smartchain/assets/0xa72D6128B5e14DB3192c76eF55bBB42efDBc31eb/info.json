@@ -1,7 +1,7 @@
 {
   "name": "A72",
   "website": "https://tether-usd.cc",
-  "description": "A72 is an ecosystem token within the Project Tether USD ecosystem, working alongside USDT.z and BTCBR to provide scalable cross-chain liquidity solutions.",
+  "description": "A72 is an ecosystem token within the Project Tether USD ecosystem.",
   "explorer": "https://bscscan.com/token/0xa72D6128B5e14DB3192c76eF55bBB42efDBc31eb",
   "type": "BEP20",
   "symbol": "A72",
@@ -15,5 +15,5 @@
     { "name": "telegram", "url": "https://t.me/tether-usd_cc" },
     { "name": "discord", "url": "https://discord.gg/Zf3AEdvh" }
   ],
-  "tags": ["ecosystem", "bridge"]
+  "tags": ["stablecoin", "wrapped"]
 }

@@ -1,13 +1,13 @@
 {
   "name": "Tether USD Bridged ZED20 V2",
   "website": "https://tether-usd.cc",
-  "description": "USDT.z V2 is a bridged stablecoin enabling cross-chain transfers and scalable liquidity, part of the Project Tether USD ecosystem.",
-  "explorer": "https://bscscan.com/token/0xa13e88cb45231f612746f9c4d94b40f0a8e34cad",
+  "description": "USDT.z V2 is a bridged stablecoin enabling cross-chain transfers and scalable liquidity.",
+  "explorer": "https://bscscan.com/token/0xA13E88cB45231f612746f9C4D94B40F0a8e34caD",
   "type": "BEP20",
   "symbol": "USDT.z",
   "decimals": 18,
   "status": "active",
-  "id": "0xa13e88cb45231f612746f9c4d94b40f0a8e34cad",
+  "id": "0xA13E88cB45231f612746f9C4D94B40F0a8e34caD",
   "email": "support@tether-usd.cc",
   "links": [
     { "name": "website", "url": "https://tether-usd.cc" },
@@ -15,5 +15,5 @@
     { "name": "telegram", "url": "https://t.me/tether-usd_cc" },
     { "name": "discord", "url": "https://discord.gg/Zf3AEdvh" }
   ],
-  "tags": ["stablecoin", "bridge", "v2"]
+  "tags": ["stablecoin", "wrapped"]
 }
