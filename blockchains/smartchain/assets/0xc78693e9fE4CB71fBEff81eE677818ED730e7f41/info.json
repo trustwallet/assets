@@ -1,14 +1,16 @@
 {
   "name": "Freedom USDT",
-  "website": "https://freedomusdt.com",
-  "socials": [
-    {
-      "name": "Twitter",
-      "url": "https://twitter.com/freedomusdt"
-    }
-  ],
-  "explorer": "https://bscscan.com/token/0xc78693e9fE4CB71fBEff81eE677818ED730e7f41",
   "symbol": "FUSDT",
+  "type": "BEP20",
   "decimals": 18,
-  "type": "BEP20"
+  "website": "https://freedomusdt.com",
+  "explorer": "https://bscscan.com/token/0xc78693e9fE4CB71fBEff81eE677818ED730e7f41",
+  "socials": [
+    {"name": "Twitter", "url": "https://twitter.com/freedomusdt"},
+    {"name": "Telegram", "url": "https://t.me/freedomusdt"}
+  ],
+  "description": "Freedom USDT is a BEP20 stablecoin inspired by Tether, designed for easy transactions and DeFi applications.",
+  "status": "active",
+  "id": "0xc78693e9fE4CB71fBEff81eE677818ED730e7f41",
+  "tags": ["stablecoin", "defi"]
 }
