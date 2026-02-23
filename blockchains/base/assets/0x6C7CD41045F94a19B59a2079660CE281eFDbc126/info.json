@@ -1,8 +1,22 @@
 {
+  "id": "0x6C7CD41045F94a19B59a2079660CE281eFDbc126",
   "name": "EaseFy Currency",
   "symbol": "EFC",
   "type": "ERC20",
   "decimals": 18,
   "description": "EaseFy Currency (EFC) on Base.",
-  "website": "https://github.com/MandeepSingh1998255/efc-token"
+  "website": "https://github.com/MandeepSingh1998255/efc-token",
+  "explorer": "https://basescan.org/token/0x6C7CD41045F94a19B59a2079660CE281eFDbc126",
+  "status": "active",
+  "tags": ["utility"],
+  "links": [
+    {
+      "name": "github",
+      "url": "https://github.com/MandeepSingh1998255/efc-token"
+    },
+    {
+      "name": "explorer",
+      "url": "https://basescan.org/token/0x6C7CD41045F94a19B59a2079660CE281eFDbc126"
+    }
+  ]
 }
