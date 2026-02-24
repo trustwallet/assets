@@ -1,9 +1,9 @@
 module github.com/trustwallet/assets
 
-go 1.24.0
+go 1.23.0
 
 require (
-	github.com/sirupsen/logrus v1.9.1
+	github.com/sirupsen/logrus v1.9.0
 	github.com/spf13/cobra v1.7.0
 	github.com/trustwallet/assets-go-libs v0.3.9-0.20240905070109-9da7e7c4847a
 	github.com/trustwallet/go-libs v0.7.3
@@ -35,10 +35,10 @@ require (
 	github.com/spf13/viper v1.10.0 // indirect
 	github.com/stretchr/testify v1.8.3 // indirect
 	github.com/subosito/gotenv v1.2.0 // indirect
-	golang.org/x/crypto v0.45.0 // indirect
+	golang.org/x/crypto v0.35.0 // indirect
 	golang.org/x/image v0.18.0 // indirect
-	golang.org/x/sys v0.38.0 // indirect
-	golang.org/x/text v0.31.0 // indirect
+	golang.org/x/sys v0.30.0 // indirect
+	golang.org/x/text v0.22.0 // indirect
 	google.golang.org/protobuf v1.33.0 // indirect
 	gopkg.in/ini.v1 v1.66.2 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
