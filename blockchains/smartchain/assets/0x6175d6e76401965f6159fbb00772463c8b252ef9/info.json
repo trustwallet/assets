@@ -1,11 +1,28 @@
 {
   "name": "Hefesto",
-  "website": "https://seusite.com",
+  "website": "https://www.hefestometa.com.br/htocoin",
   "description": "Hefesto Token",
-  "explorer": "https://bscscan.com/token/0x6175d6e76401965f6159fbb00772463c8b252ef9",
+  "explorer": "https://bscscan.com/token/0x6175d6e76401965f6159FbB00772463C8B252ef9",
   "type": "BEP20",
   "symbol": "HTO",
   "decimals": 18,
   "status": "active",
-  "id": "0x6175d6e76401965f6159fbb00772463c8b252ef9"
+  "id": "0x6175d6e76401965f6159FbB00772463C8B252ef9",
+  "links": [
+    {
+      "name": "website",
+      "url": "https://www.hefestometa.com.br/htocoin"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/hefestometa"
+    },
+    {
+      "name": "explorer",
+      "url": "https://bscscan.com/token/0x6175d6e76401965f6159FbB00772463C8B252ef9"
+    }
+  ],
+  "tags": [
+    "defi"
+  ]
 }
