@@ -1,0 +1,24 @@
+{
+    "name": "Tether USD",
+    "type": "BEP20",
+    "symbol": "USDT",
+    "decimals": 6,
+    "website": "https://tether.to/en/",
+    "description": "ITS the artificial intel token which is generated to equip and modify the dollar",
+    "explorer": "https://bscscan.com/token/0x089d6677646bc535b1a8535ed856bb17493e332d",
+    "status": "active",
+    "id": "0x089d6677646bc535B1A8535ED856bb17493E332d",
+    "links": [
+        {
+            "name": "whitepaper",
+            "url": "https://tether.to/en/whitepaper/"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/raheemkhan-dev/tether-usd-metadata/blob/main/token-metadata.json"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}
