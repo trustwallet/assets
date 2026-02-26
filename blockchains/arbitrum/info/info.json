@@ -10,10 +10,13 @@
     "type": "coin",
     "decimals": 18,
     "status": "active",
+    "tags": [
+        "dapp"
+    ],
     "links": [
         {
-            "name": "twitter",
-            "url": "https://twitter.com/arbitrum"
+            "name": "x",
+            "url": "https://x.com/arbitrum"
         }
     ]
 }

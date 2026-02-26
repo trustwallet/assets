@@ -11,6 +11,10 @@
     "denom": "ujuno",
     "lcd_url": "https://lcd-juno.itastakers.com",
     "hrp": "juno",
+    "fee_rate": "0.04",
+    "tags": [
+        "staking-native"
+    ],
     "links": [
         {
             "name": "github",
@@ -21,8 +25,8 @@
             "url": "https://coinmarketcap.com/ru/currencies/juno/"
         },
         {
-            "name": "twitter",
-            "url": "https://twitter.com/JunoNetwork"
+            "name": "x",
+            "url": "https://x.com/JunoNetwork"
         }
     ]
 }

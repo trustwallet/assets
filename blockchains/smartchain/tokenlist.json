@@ -155,9 +155,6 @@
                     "base": "c20000714_t0xC9849E6fdB743d08fAeE3E34dd2D1bc69EA11a51"
                 },
                 {
-                    "base": "c20000714_t0xCa3F508B8e4Dd382eE878A314789373D80A5190A"
-                },
-                {
                     "base": "c20000714_t0xcc2E12a9b5b75360c6FBf23B584c275D52cDdb0E"
                 },
                 {
@@ -189,9 +186,11 @@
                 },
                 {
                     "base": "c20000714_t0x734D66f635523D7ddb7d2373C128333DA313041b"
+
                 },
+            
                 {
-                    "base": "c20000714_t0xFbC4f3f645C4003a2E4F4e9b51077d2DaA9a9341"
+                    "base": "c20000714_t0xc748673057861a797275CD8A068AbB95A902e8de"
                 }
             ]
         },
@@ -210,7 +209,7 @@
             "asset": "c20000714_t0x0D8Ce2A99Bb6e3B7Db580eD848240e4a0F9aE153",
             "type": "BEP20",
             "address": "0x0D8Ce2A99Bb6e3B7Db580eD848240e4a0F9aE153",
-            "name": "Binance-Peg Filecoin",
+            "name": "BNB pegged Filecoin",
             "symbol": "FIL",
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0x0D8Ce2A99Bb6e3B7Db580eD848240e4a0F9aE153/logo.png",
@@ -231,7 +230,7 @@
             "asset": "c20000714_t0x0Eb3a705fc54725037CC9e008bDede697f62F335",
             "type": "BEP20",
             "address": "0x0Eb3a705fc54725037CC9e008bDede697f62F335",
-            "name": "Binance-Peg Cosmos Token",
+            "name": "BNB pegged Cosmos Token",
             "symbol": "ATOM",
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0x0Eb3a705fc54725037CC9e008bDede697f62F335/logo.png",
@@ -241,7 +240,7 @@
             "asset": "c20000714_t0x16939ef78684453bfDFb47825F8a5F714f12623a",
             "type": "BEP20",
             "address": "0x16939ef78684453bfDFb47825F8a5F714f12623a",
-            "name": "Binance-Peg Tezos Token",
+            "name": "BNB pegged Tezos Token",
             "symbol": "XTZ",
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0x16939ef78684453bfDFb47825F8a5F714f12623a/logo.png",
@@ -262,7 +261,7 @@
             "asset": "c20000714_t0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3",
             "type": "BEP20",
             "address": "0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3",
-            "name": "Binance-Peg Dai Token",
+            "name": "BNB pegged Dai Token",
             "symbol": "DAI",
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3/logo.png",
@@ -272,7 +271,7 @@
             "asset": "c20000714_t0x1D2F0da169ceB9fC7B3144628dB156f3F6c60dBE",
             "type": "BEP20",
             "address": "0x1D2F0da169ceB9fC7B3144628dB156f3F6c60dBE",
-            "name": "Binance-Peg XRP Token",
+            "name": "BNB pegged XRP Token",
             "symbol": "XRP",
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0x1D2F0da169ceB9fC7B3144628dB156f3F6c60dBE/logo.png",
@@ -293,7 +292,7 @@
             "asset": "c20000714_t0x2170Ed0880ac9A755fd29B2688956BD959F933F8",
             "type": "BEP20",
             "address": "0x2170Ed0880ac9A755fd29B2688956BD959F933F8",
-            "name": "Binance-Peg Ethereum",
+            "name": "BNB pegged Ethereum",
             "symbol": "ETH",
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0x2170Ed0880ac9A755fd29B2688956BD959F933F8/logo.png",
@@ -343,7 +342,7 @@
             "asset": "c20000714_t0x3EE2200Efb3400fAbB9AacF31297cBdD1d435D47",
             "type": "BEP20",
             "address": "0x3EE2200Efb3400fAbB9AacF31297cBdD1d435D47",
-            "name": "Binance-Peg Cardano Token",
+            "name": "BNB pegged Cardano Token",
             "symbol": "ADA",
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0x3EE2200Efb3400fAbB9AacF31297cBdD1d435D47/logo.png",
@@ -363,7 +362,7 @@
             "asset": "c20000714_t0x4338665CBB7B2485A8855A139b75D5e34AB0DB94",
             "type": "BEP20",
             "address": "0x4338665CBB7B2485A8855A139b75D5e34AB0DB94",
-            "name": "Binance-Peg Litecoin Token",
+            "name": "BNB pegged Litecoin Token",
             "symbol": "LTC",
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0x4338665CBB7B2485A8855A139b75D5e34AB0DB94/logo.png",
@@ -426,7 +425,7 @@
             "asset": "c20000714_t0x56b6fB708fC5732DEC1Afc8D8556423A2EDcCbD6",
             "type": "BEP20",
             "address": "0x56b6fB708fC5732DEC1Afc8D8556423A2EDcCbD6",
-            "name": "Binance-Peg EOS Token",
+            "name": "BNB pegged EOS Token",
             "symbol": "EOS",
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0x56b6fB708fC5732DEC1Afc8D8556423A2EDcCbD6/logo.png",
@@ -477,7 +476,7 @@
             "asset": "c20000714_t0x7083609fCE4d1d8Dc0C979AAb8c869Ea2C873402",
             "type": "BEP20",
             "address": "0x7083609fCE4d1d8Dc0C979AAb8c869Ea2C873402",
-            "name": "Binance-Peg Polkadot Token",
+            "name": "BNB pegged Polkadot Token",
             "symbol": "DOT",
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0x7083609fCE4d1d8Dc0C979AAb8c869Ea2C873402/logo.png",
@@ -488,7 +487,7 @@
             "asset": "c20000714_t0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c",
             "type": "BEP20",
             "address": "0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c",
-            "name": "Binance-Peg BTCB Token",
+            "name": "BNB pegged BTCB Token",
             "symbol": "BTCB",
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c/logo.png",
@@ -548,7 +547,7 @@
             "asset": "c20000714_t0x7F70642d88cf1C4a3a7abb072B53B929b653edA5",
             "type": "BEP20",
             "address": "0x7F70642d88cf1C4a3a7abb072B53B929b653edA5",
-            "name": "Binance-Peg YFII.finance Token",
+            "name": "BNB pegged YFII.finance Token",
             "symbol": "YFII",
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0x7F70642d88cf1C4a3a7abb072B53B929b653edA5/logo.png",
@@ -568,7 +567,7 @@
             "asset": "c20000714_t0x88f1A5ae2A3BF98AEAF342D26B30a79438c9142e",
             "type": "BEP20",
             "address": "0x88f1A5ae2A3BF98AEAF342D26B30a79438c9142e",
-            "name": "Binance-Peg yearn.finance",
+            "name": "BNB pegged yearn.finance",
             "symbol": "YFI",
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0x88f1A5ae2A3BF98AEAF342D26B30a79438c9142e/logo.png",
@@ -578,7 +577,7 @@
             "asset": "c20000714_t0x8fF795a6F4D97E7887C79beA79aba5cc76444aDf",
             "type": "BEP20",
             "address": "0x8fF795a6F4D97E7887C79beA79aba5cc76444aDf",
-            "name": "Binance-Peg Bitcoin Cash Token",
+            "name": "BNB pegged Bitcoin Cash Token",
             "symbol": "BCH",
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0x8fF795a6F4D97E7887C79beA79aba5cc76444aDf/logo.png",
@@ -661,7 +660,7 @@
             "asset": "c20000714_t0xAD6cAEb32CD2c308980a548bD0Bc5AA4306c6c18",
             "type": "BEP20",
             "address": "0xAD6cAEb32CD2c308980a548bD0Bc5AA4306c6c18",
-            "name": "Binance-Peg Band Protocol Token",
+            "name": "BNB pegged Band Protocol Token",
             "symbol": "BAND",
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0xAD6cAEb32CD2c308980a548bD0Bc5AA4306c6c18/logo.png",
@@ -682,7 +681,7 @@
             "asset": "c20000714_t0xBf5140A22578168FD562DCcF235E5D43A02ce9B1",
             "type": "BEP20",
             "address": "0xBf5140A22578168FD562DCcF235E5D43A02ce9B1",
-            "name": "Binance-Peg Uniswap",
+            "name": "BNB pegged Uniswap",
             "symbol": "UNI",
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0xBf5140A22578168FD562DCcF235E5D43A02ce9B1/logo.png",
@@ -692,7 +691,7 @@
             "asset": "c20000714_t0xbF7c81FFF98BbE61B40Ed186e4AfD6DDd01337fe",
             "type": "BEP20",
             "address": "0xbF7c81FFF98BbE61B40Ed186e4AfD6DDd01337fe",
-            "name": "Binance-Peg Elrond",
+            "name": "BNB pegged Elrond",
             "symbol": "EGLD",
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0xbF7c81FFF98BbE61B40Ed186e4AfD6DDd01337fe/logo.png",
@@ -726,17 +725,6 @@
             "symbol": "BUNNY",
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0xC9849E6fdB743d08fAeE3E34dd2D1bc69EA11a51/logo.png",
-            "pairs": []
-        },
-        {
-            "chainId": 56,
-            "asset": "c20000714_t0xCa3F508B8e4Dd382eE878A314789373D80A5190A",
-            "type": "BEP20",
-            "address": "0xCa3F508B8e4Dd382eE878A314789373D80A5190A",
-            "name": "beefy.finance",
-            "symbol": "BIFI",
-            "decimals": 18,
-            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0xCa3F508B8e4Dd382eE878A314789373D80A5190A/logo.png",
             "pairs": []
         },
         {
@@ -785,7 +773,7 @@
             "asset": "c20000714_t0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56",
             "type": "BEP20",
             "address": "0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56",
-            "name": "Binance-Peg BUSD",
+            "name": "BNB pegged BUSD",
             "symbol": "BUSD",
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56/logo.png",
@@ -826,7 +814,7 @@
             "asset": "c20000714_t0xF8A0BF9cF54Bb92F17374d9e9A321E6a111a51bD",
             "type": "BEP20",
             "address": "0xF8A0BF9cF54Bb92F17374d9e9A321E6a111a51bD",
-            "name": "Binance-Peg ChainLink",
+            "name": "BNB pegged ChainLink",
             "symbol": "LINK",
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0xF8A0BF9cF54Bb92F17374d9e9A321E6a111a51bD/logo.png",
@@ -853,16 +841,6 @@
             "pairs": []
         },
         {
-            "asset": "c20000714_t0x8C851d1a123Ff703BD1f9dabe631b69902Df5f97",
-            "type": "BEP20",
-            "address": "0x8C851d1a123Ff703BD1f9dabe631b69902Df5f97",
-            "name": "BinaryX",
-            "symbol": "BNX",
-            "decimals": 18,
-            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0x8C851d1a123Ff703BD1f9dabe631b69902Df5f97/logo.png",
-            "pairs": []
-        },
-                {
             "asset": "c20000714_t0x6679eB24F59dFe111864AEc72B443d1Da666B360",
             "type": "BEP20",
             "address": "0x6679eB24F59dFe111864AEc72B443d1Da666B360",
@@ -883,13 +861,33 @@
             "pairs": []
         },
         {
-            "asset": "c20000714_t0xFbC4f3f645C4003a2E4F4e9b51077d2DaA9a9341",
+            "asset": "c20000714_t0xC3137c696796D69F783CD0Be4aB4bB96814234Aa",
             "type": "BEP20",
-            "address": "0xFbC4f3f645C4003a2E4F4e9b51077d2DaA9a9341",
-            "name": "ZEDXION",
-            "symbol": "ZEDXION",
+            "address": "0xC3137c696796D69F783CD0Be4aB4bB96814234Aa",
+            "name": "Pepa Inu",
+            "symbol": "PEPA",
+            "decimals": 9,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0xC3137c696796D69F783CD0Be4aB4bB96814234Aa/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c20000714_t0xc748673057861a797275CD8A068AbB95A902e8de",
+            "type": "BEP20",
+            "address": "0xc748673057861a797275CD8A068AbB95A902e8de",
+            "name": "Baby Doge Coin",
+            "symbol": "BabyDoge",
+            "decimals": 9,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0xc748673057861a797275CD8A068AbB95A902e8de/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c20000714_t0x95c91eEf65F50570cFC3f269961a00108Cf7BF59",
+            "type": "BEP20",
+            "address": "0x95c91eEf65F50570cFC3f269961a00108Cf7BF59",
+            "name": "The DONS",
+            "symbol": "DONS",
             "decimals": 18,
-            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0xFbC4f3f645C4003a2E4F4e9b51077d2DaA9a9341/logo.png",
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/0x95c91eEf65F50570cFC3f269961a00108Cf7BF59/logo.png",
             "pairs": []
         }
     ],
