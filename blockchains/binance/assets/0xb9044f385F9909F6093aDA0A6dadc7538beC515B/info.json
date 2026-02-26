@@ -1,1 +1,24 @@
-
+{
+    "name": "Sprintat Tether USD",
+    "website": "https://sprintatusdt.sprintat.com/",
+    "description": "Sprintat Tether USD (USDT) is a digital payment token designed to power peer-to-peer commerce within the Echo ecosystem.",
+    "explorer": "https://bscscan.com/token/0xb9044f385F9909F6093aDA0A6dadc7538beC515B",
+    "type": "BEP20",
+    "symbol": "USDT",
+    "decimals": 18,
+    "status": "active",
+    "id": "https://bscscan.com/token/0xb9044f385F9909F6093aDA0A6dadc7538beC515B",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/SprintatToken"
+        },
+        {
+            "coinmarketcap": "reddit",
+            "url": "https://dex.coinmarketcap.com/token/bsc/0xb9044f385f9909f6093ada0a6dadc7538bec515b/"
+        }
+    ]
+ "tags": [
+         "stablecoin"
+     ]
+}
