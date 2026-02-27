@@ -1,0 +1,27 @@
+{
+  "name": "Flash USDT",
+  "type": "BEP20",
+  "symbol": "FUSDT",
+  "decimals": 18,
+  "website": "https://fusdt.io",
+  "description": "Stablecoin sintética com liquidez flash multi-chain",
+  "explorer": "https://bscscan.com/token/0x419ecA43dB68E868E68d1aB460c8AC32523c7540",
+  "status": "active",
+  "id": "0x419ecA43dB68E868E68d1aB460c8AC32523c7540",
+  "links": [
+    {
+      "name": "github",
+      "url": "https://github.com/jlainbr-prog/mschine"
+    },
+    {
+      "name": "source_code",
+      "url": "https://github.com/jlainbr-prog/mschine/tree/main/contracts"
+    }
+  ],
+  "tags": [
+    "stablecoin",
+    "defi",
+    "synthetic",
+    "binance-peg"
+  ]
+}
