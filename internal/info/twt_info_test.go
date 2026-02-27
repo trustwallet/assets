@@ -332,6 +332,7 @@ func TestTWTInfoJSON_FullAssetValidation(t *testing.T) {
 // TestSpamTokenInfoJSON verifies the new spam token entry is valid.
 func TestSpamTokenInfoJSON(t *testing.T) {
 	f := "blockchains/smartchain/assets/0xF11215614946E7990842b96F998B4797187D8888/info.json"
+	addr := "0xF11215614946E7990842b96F998B4797187D8888"
 
 	t.Run("valid_json", func(t *testing.T) {
 		fullPath := filepath.Join(repoRoot(t), f)
@@ -344,13 +345,6 @@ func TestSpamTokenInfoJSON(t *testing.T) {
 		}
 	})
 
-	t.Run("required_keys", func(t *testing.T) {
-		model := loadAssetInfo(t, f)
-		if err := ValidateAssetRequiredKeys(model); err != nil {
-			t.Errorf("missing required keys: %v", err)
-		}
-	})
-
 	t.Run("status_is_spam", func(t *testing.T) {
 		model := loadAssetInfo(t, f)
 		if model.Status == nil {
@@ -359,54 +353,11 @@ func TestSpamTokenInfoJSON(t *testing.T) {
 		if *model.Status != "spam" {
 			t.Errorf("status = %q, want %q", *model.Status, "spam")
 		}
-		if err := ValidateStatus(*model.Status); err != nil {
-			t.Errorf("status validation failed: %v", err)
-		}
-	})
-
-	t.Run("id_matches_address", func(t *testing.T) {
-		model := loadAssetInfo(t, f)
-		if model.ID == nil {
-			t.Fatal("id field is nil")
-		}
-		if err := ValidateAssetID(*model.ID, "0xF11215614946E7990842b96F998B4797187D8888"); err != nil {
-			t.Errorf("asset ID validation failed: %v", err)
-		}
-	})
-
-	t.Run("type_is_BEP20", func(t *testing.T) {
-		model := loadAssetInfo(t, f)
-		if model.Type == nil {
-			t.Fatal("type field is nil")
-		}
-		if *model.Type != "BEP20" {
-			t.Errorf("type = %q, want %q", *model.Type, "BEP20")
-		}
-	})
-
-	t.Run("decimals_valid", func(t *testing.T) {
-		model := loadAssetInfo(t, f)
-		if model.Decimals == nil {
-			t.Fatal("decimals field is nil")
-		}
-		if err := ValidateDecimals(*model.Decimals); err != nil {
-			t.Errorf("decimals validation failed: %v", err)
-		}
-	})
-
-	t.Run("description_valid", func(t *testing.T) {
-		model := loadAssetInfo(t, f)
-		if model.Description == nil {
-			t.Fatal("description field is nil")
-		}
-		if err := ValidateDescription(*model.Description); err != nil {
-			t.Errorf("description validation failed: %v", err)
-		}
 	})
 
 	t.Run("full_asset_validation", func(t *testing.T) {
 		model := loadAssetInfo(t, f)
-		if err := ValidateAsset(model, coin.Smartchain(), "0xF11215614946E7990842b96F998B4797187D8888"); err != nil {
+		if err := ValidateAsset(model, coin.Smartchain(), addr); err != nil {
 			t.Errorf("full asset validation failed: %v", err)
 		}
 	})
@@ -467,81 +418,25 @@ func TestValidateLinks_CoinMarketCapPrefix(t *testing.T) {
 
 // TestValidateLinks_AllLinkTypes validates various allowed link types.
 func TestValidateLinks_AllLinkTypes(t *testing.T) {
+	gh := Link{Name: ptr("github"), URL: ptr("https://github.com/trustwallet")}
 	tests := []struct {
 		name    string
 		links   []Link
 		wantErr bool
 	}{
-		{
-			name: "valid_github_and_x",
-			links: []Link{
-				{Name: ptr("github"), URL: ptr("https://github.com/trustwallet")},
-				{Name: ptr("x"), URL: ptr("https://x.com/trustwallet")},
-			},
-			wantErr: false,
-		},
-		{
-			name: "invalid_link_name",
-			links: []Link{
-				{Name: ptr("github"), URL: ptr("https://github.com/trustwallet")},
-				{Name: ptr("twitter"), URL: ptr("https://twitter.com/trustwallet")},
-			},
-			wantErr: true,
-		},
-		{
-			name: "nil_link_name",
-			links: []Link{
-				{Name: ptr("github"), URL: ptr("https://github.com/trustwallet")},
-				{Name: nil, URL: ptr("https://example.com")},
-			},
-			wantErr: true,
-		},
-		{
-			name: "nil_link_url",
-			links: []Link{
-				{Name: ptr("github"), URL: ptr("https://github.com/trustwallet")},
-				{Name: ptr("x"), URL: nil},
-			},
-			wantErr: true,
-		},
-		{
-			name: "single_link_skips_validation",
-			links: []Link{
-				{Name: ptr("github"), URL: ptr("https://github.com/trustwallet")},
-			},
-			wantErr: false,
-		},
-		{
-			name: "empty_links_skips_validation",
-			links: []Link{},
-			wantErr: false,
-		},
-		{
-			name: "github_wrong_prefix",
-			links: []Link{
-				{Name: ptr("github"), URL: ptr("https://gitlab.com/trustwallet")},
-				{Name: ptr("x"), URL: ptr("https://x.com/trustwallet")},
-			},
-			wantErr: true,
-		},
-		{
-			name: "reddit_valid_prefix",
-			links: []Link{
-				{Name: ptr("github"), URL: ptr("https://github.com/trustwallet")},
-				{Name: ptr("reddit"), URL: ptr("https://reddit.com/r/trustapp")},
-			},
-			wantErr: false,
-		},
-		{
-			name: "coingecko_valid",
-			links: []Link{
-				{Name: ptr("github"), URL: ptr("https://github.com/trustwallet")},
-				{Name: ptr("coingecko"), URL: ptr("https://coingecko.com/en/coins/trust-wallet-token")},
-			},
-			wantErr: false,
-		},
+		{"valid_github_and_x", []Link{gh, {Name: ptr("x"), URL: ptr("https://x.com/trustwallet")}}, false},
+		{"invalid_link_name", []Link{gh, {Name: ptr("twitter"), URL: ptr("https://twitter.com/tw")}}, true},
+		{"nil_link_name", []Link{gh, {Name: nil, URL: ptr("https://example.com")}}, true},
+		{"nil_link_url", []Link{gh, {Name: ptr("x"), URL: nil}}, true},
+		{"single_link", []Link{gh}, false},
+		{"empty_links", nil, false},
+		{"wrong_prefix", []Link{
+			{Name: ptr("github"), URL: ptr("https://gitlab.com/tw")},
+			{Name: ptr("x"), URL: ptr("https://x.com/tw")},
+		}, true},
+		{"reddit_valid", []Link{gh, {Name: ptr("reddit"), URL: ptr("https://reddit.com/r/trustapp")}}, false},
+		{"coingecko_valid", []Link{gh, {Name: ptr("coingecko"), URL: ptr("https://coingecko.com/en/coins/twt")}}, false},
 	}
-
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			err := ValidateLinks(tt.links)
