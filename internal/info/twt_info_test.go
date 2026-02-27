@@ -306,19 +306,19 @@ func TestTWTInfoJSON_FullAssetValidation(t *testing.T) {
 		{
 			name:    "binance",
 			file:    "blockchains/binance/assets/TWT-8C2/info.json",
-			chain:   coin.BINANCE,
+			chain:   coin.Binance(),
 			address: "TWT-8C2",
 		},
 		{
 			name:    "smartchain",
 			file:    "blockchains/smartchain/assets/0x4B0F1812e5Df2A09796481Ff14017e6005508003/info.json",
-			chain:   coin.SMARTCHAIN,
+			chain:   coin.Smartchain(),
 			address: "0x4B0F1812e5Df2A09796481Ff14017e6005508003",
 		},
 		{
 			name:    "solana",
 			file:    "blockchains/solana/assets/HZNpqL7RT9gxf9eWoWsWzC5DfjzQ41XTQgEA7p3VzaaD/info.json",
-			chain:   coin.SOLANA,
+			chain:   coin.Solana(),
 			address: "HZNpqL7RT9gxf9eWoWsWzC5DfjzQ41XTQgEA7p3VzaaD",
 		},
 	}
@@ -411,7 +411,7 @@ func TestSpamTokenInfoJSON(t *testing.T) {
 
 	t.Run("full_asset_validation", func(t *testing.T) {
 		model := loadAssetInfo(t, f)
-		if err := ValidateAsset(model, coin.SMARTCHAIN, "0xF11215614946E7990842b96F998B4797187D8888"); err != nil {
+		if err := ValidateAsset(model, coin.Smartchain(), "0xF11215614946E7990842b96F998B4797187D8888"); err != nil {
 			t.Errorf("full asset validation failed: %v", err)
 		}
 	})
