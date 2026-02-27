@@ -1,0 +1,22 @@
+{
+  "name": "assets-skills",
+  "owner": {
+    "name": "Trust Wallet",
+    "email": "developer@trustwallet.com"
+  },
+  "metadata": {
+    "description": "Claude Code skills for contributing to the Trust Wallet assets repository",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "assets-skills",
+      "description": "Skills for listing and contributing new token assets to trustwallet/assets",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/add-asset"
+      ]
+    }
+  ]
+}
