@@ -20,7 +20,7 @@ func repoRoot(t *testing.T) string {
 		t.Fatal("unable to determine caller file")
 	}
 
-	// internal/info/twt_info_test.go -> repo root is two directories up
+	// internal/info/twt_info_test.go -> repo root is two directories up.
 	return filepath.Join(filepath.Dir(filename), "..", "..")
 }
 
@@ -46,11 +46,6 @@ func loadAssetInfo(t *testing.T, relPath string) AssetModel {
 // ptr returns a pointer to the given string.
 func ptr(s string) *string {
 	return &s
-}
-
-// intPtr returns a pointer to the given int.
-func intPtr(i int) *int {
-	return &i
 }
 
 // TestTWTInfoJSON_ValidJSON verifies that all modified TWT info.json files are valid JSON.
