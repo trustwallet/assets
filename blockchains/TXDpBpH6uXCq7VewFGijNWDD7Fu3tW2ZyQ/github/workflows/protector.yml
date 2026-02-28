@@ -1,5 +1,4 @@
 name: 🔒 محافظ فایل‌های مهم
-
 on:
   pull_request:
     branches: [ main, master ]
