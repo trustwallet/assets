@@ -1,3 +1,5 @@
+<a href="https://coindizzy.com/coin/0xb99925EA17c3780e8B96B4254b911364434Be7cc" target="_blank" rel="noreferrer" title="Kubucoin (KBC) token on CoinDizzy"><img src="https://api.coindizzy.com/token_embed_422130.svg" width="350" alt="Kubucoin (KBC) token badge" /></a>
+
 # Trust Wallet Assets Info
 
 ![Check](https://github.com/trustwallet/assets/workflows/Check/badge.svg)
