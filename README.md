@@ -1,81 +1,42 @@
-# Trust Wallet Assets Info
+# AfricaCryptoChainx Information
 
-![Check](https://github.com/trustwallet/assets/workflows/Check/badge.svg)
+![Check](https://github.com/Africacryptochainx-Com/assets/workflows/Check/badge.svg)
 
 ## Overview
 
-Trust Wallet token repository is a comprehensive, up-to-date collection of information about several thousands (!) of crypto tokens.
+This repository is the official, community-maintained source of token information, logos, dApp metadata, and validator details for the AfricaCryptoChainx (ACCX) ecosystem.
 
-[Trust Wallet](https://trustwallet.com) uses token logos from this source, alongside a number of other projects.
+Projects and wallets that support AfricaCryptoChainx tokens (including Trust Wallet, MetaMask, and others) use the assets and info stored here.
 
-The repository contains token info from several blockchains, info on dApps, staking validators, etc.
-For every token a logo and optional additional information is available (such data is not available on-chain).
+The collection currently covers:
+- ACCX native token and governance assets
+- BEP-20 tokens on Binance Smart Chain
+- Staking validators and DeFi integrations
+- Wallet and dApp branding assets
 
-Such a large collection can be maintained only through a community effort, so _feel free to add your token_.
+All data is stored off-chain (logos, names, symbols, decimals, websites, social links) and kept up-to-date through community contributions.
 
-<center><img src='https://trustwallet.com/assets/images/media/assets/horizontal_blue.png' height="200"></center>
+<center><img src="https://africacryptochainx.com/assets/logo-horizontal.png" height="180" alt="AfricaCryptoChainx"></center>
 
-## How to add token
+## How to Add Your Token or Asset
 
-Please note that __brand new tokens are not accepted__,
-the projects have to be sound, with information available, and __non-minimal circulation__
-(for limit details see <https://developer.trustwallet.com/listing-new-assets/requirements>).
+New tokens are accepted only if the project is live, has real circulation, and meets basic trust and transparency requirements.
 
-### Assets App
+### Quick Start
+Use the [AfricaCryptoChainx Assets Portal](https://assets.africacryptochainx.com) (GitHub login required) — fastest way for most submissions.
 
-The [Assets web app](https://assets.trustwallet.com) can be used for most new token additions (Github account is needed).
-
-### Quick starter
-
-Details of the repository structure and contribution guidelines are listed on the
-[Developers site](https://developer.trustwallet.com/listing-new-assets/new-asset).
-Here is a quick starter summary for the most common use case.
-
+Full guidelines: https://africacryptochainx.com/developers/assets
 
 ## Documentation
 
-For details, see the [Developers site](https://developer.trustwallet.com):
+- [Contribution Guidelines](https://africacryptochainx.com/developers/assets/contributing)
+- [Folder Structure & Standards](https://africacryptochainx.com/developers/assets/structure)
+- [FAQ](https://africacryptochainx.com/developers/assets/faq)
 
-- [Contribution guidelines](https://developer.trustwallet.com/listing-new-assets/repository_details)
+## Scripts (for maintainers)
 
-- [FAQ](https://developer.trustwallet.com/listing-new-assets/faq)
-
-## Scripts
-
-There are several scripts available for maintainers:
-
-- `make check` -- Execute validation checks; also used in continuous integration.
-- `make fix` -- Perform automatic fixes where possible
-- `make update-auto` -- Run automatic updates from external sources, executed regularly (GitHub action)
-- `make add-token asset_id=c60_t0x4Fabb145d64652a948d72533023f6E7A623C7C53` -- Create `info.json` file as asset template.
-- `make add-tokenlist asset_id=c60_t0x4Fabb145d64652a948d72533023f6E7A623C7C53` -- Adds a token to tokenlist.json.
-- `make add-tokenlist-extended asset_id=c60_t0x4Fabb145d64652a948d72533023f6E7A623C7C53` -- Adds a token to tokenlist-extended.json.
-
-## On Checks
-
-This repo contains a set of scripts for verification of all the information. Implemented as Golang scripts, available through `make check`, and executed in CI build; checks the whole repo.
-There are similar check logic implemented:
-
-- in assets-management app; for checking changed token files in PRs, or when creating a PR.  Checks diffs, can be run from browser environment.
-- in merge-fee-bot, which runs as a GitHub app shows result in PR comment. Executes in a non-browser environment.
-
-## Trading pair maintenance
-
-Info on supported trading pairs are stored in `tokenlist.json` files.
-Trading pairs can be updated --
-from Uniswap/Ethereum and PancakeSwap/Smartchain -- using update script (and checking in changes).
-Minimal limit values for trading pair inclusion are set in the [config file](https://github.com/trustwallet/assets/blob/master/.github/assets.config.yaml).
-There are also options for force-include and force-exclude in the config.
-
-## Disclaimer
-
-Trust Wallet team allows anyone to submit new assets to this repository. However, this does not mean that we are in direct partnership with all of the projects.
-
-Trust Wallet team will reject projects that are deemed as scam or fraudulent after careful review.
-Trust Wallet team reserves the right to change the terms of asset submissions at any time due to changing market conditions, risk of fraud, or any other factors we deem relevant.
-
-Additionally, spam-like behavior, including but not limited to mass distribution of tokens to random addresses will result in the asset being flagged as spam and possible removal from the repository.
-
-## License
-
-The scripts and documentation in this project are released under the [MIT License](LICENSE)
+```bash
+make check          # Run all validation checks (also used in CI)
+make fix            # Auto-fix common issues
+make update-auto    # Pull latest data from explorers
+make add-token asset_id=bsc_0x...
