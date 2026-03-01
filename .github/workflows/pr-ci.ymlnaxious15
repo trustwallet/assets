@@ -1,0 +1,30 @@
+name: Pull Request CI
+on:
+  push:
+    branches:
+      - '*'
+      - '!master'
+  pull_request:
+    branches: [master]
+  workflow_dispatch:
+jobs:
+  pull_request_ci:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Go
+        uses: actions/setup-go@v2
+        with:
+          go-version: 1.17
+        id: go
+
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Run check
+        run: make check
+
+      - name: Unit Test
+        run: make test
+
+      - name: Lint
+        run: make lint
