@@ -1,26 +1,25 @@
 {
-  "name": "Lunzy",
-  "symbol": "LNZ",
-  "type": "AVALANCHE",
-  "decimals": 18,
-  "description": "Lunzy is a zero-tax ERC20 token on Avalanche.",
-  "website": "https://www.lunzy.org",
-  "links": [
-    {
-      "name": "Website",
-      "url": "https://www.lunzy.org"
-    },
-    {
-      "name": "Twitter",
-      "url": "https://x.com/lunzymeme"
-    }
-  ],
-  "explorer": "https://snowtrace.io/token/0x1F810F5Be3460fc2Fe8DB71C6aBe34619C9Da690",
-  "snowscan": "https://snowscan.xyz/token/0x1F810F5Be3460fc2Fe8DB71C6aBe34619C9Da690",
-  "status": "active",
-  "id": "0x1F810F5Be3460fc2Fe8DB71C6aBe34619C9Da690",
-  "tags": [
-    "defi",
-    "memes"
-  ]
+    "name": "Lunzy",
+    "symbol": "LNZ",
+    "type": "AVALANCHE",
+    "decimals": 18,
+    "description": "Lunzy is a zero-tax ERC20 token on Avalanche.",
+    "website": "https://www.lunzy.org",
+    "explorer": "https://snowtrace.io/token/0x1F810F5Be3460fc2Fe8DB71C6aBe34619C9Da690",
+    "status": "active",
+    "id": "0x1F810F5Be3460fc2Fe8DB71C6aBe34619C9Da690",
+    "links": [
+        {
+            "name": "website",
+            "url": "https://www.lunzy.org"
+        },
+        {
+            "name": "twitter",
+            "url": "https://x.com/lunzymeme"
+        }
+    ],
+    "tags": [
+        "defi",
+        "memes"
+    ]
 }
