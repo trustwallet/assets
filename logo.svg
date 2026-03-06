@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 256 256">
+  <defs>
+    <clipPath id="circleClip">
+      <circle cx="128" cy="128" r="128"/>
+    </clipPath>
+  </defs>
+
+  <image 
+    href="https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x86c86a84004fa803161b3444088a74809ba3b1f4/logo.png"
+    width="256"
+    height="256"
+    clip-path="url(#circleClip)"
+  />
+</svg>
