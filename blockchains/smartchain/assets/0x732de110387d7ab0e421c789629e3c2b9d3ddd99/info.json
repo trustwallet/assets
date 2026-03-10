@@ -7,5 +7,11 @@
   "symbol": "GPASS",
   "decimals": 18,
   "status": "active",
-  "id": "0x732de110387d7Ab0e421C789629e3C2B9d3DDD99"
+  "id": "0x732de110387d7Ab0e421C789629e3C2B9d3DDD99",
+  "tags": ["gaming"],
+  "links": [
+    { "name": "website", "url": "https://gpass.live" },
+    { "name": "x", "url": "https://x.com/gpasslive" },
+    { "name": "telegram", "url": "https://t.me/gpasslive" }
+  ]
 }
