@@ -1,16 +1,24 @@
 {
     "name": "Bonanza",
+    "type": "BASE",
     "symbol": "BNZA",
-    "type": "ERC20",
     "decimals": 18,
     "description": "Bonanza (BNZA) is an ERC-20 utility token deployed on Base Mainnet. Governed by a 2-of-3 multisig Safe, it features role-based access control for minting, pausing, and burning. Designed for MiCA compliance under Irish regulation with a maximum supply of 10 billion tokens.",
     "website": "https://bnza.io",
-    "explorer": "https://etherscan.io/token/0x9B15D9357A1E28372997C4Fdaf07E2e4a637bF92",
-    "status": "active",
+    "explorer": "https://basescan.org/token/0x9b15d9357a1e28372997c4fdaf07e2e4a637bf92",
     "id": "0x9B15D9357A1E28372997C4Fdaf07E2e4a637bF92",
+    "status": "active",
     "links": [
-        {"name": "twitter", "url": "https://x.com/bnza_io"},
-        {"name": "github", "url": "https://github.com/bnza-io"}
+        {
+            "name": "github",
+            "url": "https://github.com/bnza-io"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://bnza.io/wp/"
+        }
     ],
-    "tags": ["defi", "stablecoin"]
+    "tags": [
+        "defi"
+    ]
 }
