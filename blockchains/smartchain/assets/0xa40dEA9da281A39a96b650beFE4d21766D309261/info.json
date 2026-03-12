@@ -2,17 +2,16 @@
   "name": "Vebit Token",
   "website": "https://www.vebit.io",
   "description": "Vebit Token (VBT) is the core utility token of the Vebit ecosystem, supporting Web3 infrastructure, decentralized services, and ecosystem incentives.",
-  "explorer": "https://bscscan.com/token/0xa40dea9da281a39a96b650befe4d21766d309261",
+  "explorer": "https://bscscan.com/token/0xa40dEA9da281A39a96b650beFE4d21766D309261",
   "type": "BEP20",
   "symbol": "VBT",
   "decimals": 18,
   "status": "active",
-  "id": "0xa40dea9da281a39a96b650befe4d21766d309261",
+  "id": "0xa40dEA9da281A39a96b650beFE4d21766D309261",
+  "tags": [
+    "cex"
+  ],
   "links": [
-    {
-      "name": "website",
-      "url": "https://www.vebit.io"
-    },
     {
       "name": "twitter",
       "url": "https://x.com/VebitGlobal"
