@@ -1,11 +1,26 @@
 {
- "name": "CCU",
- "type": "ERC20",
+ "name": "Compensation Credits",
  "symbol": "CCU",
- "decimals": 18,
- "description": "CCU token",
- "website": "",
- "explorer": "https://polygonscan.com/token/0xea1f8D12A14e1F143d66fcdcfEf24E137B658f17",
+ "type": "ERC20",
+ "decimals": 6,
  "status": "active",
- "id": "0xea1f8D12A14e1F143d66fcdcfEf24E137B658f17"
+ "id": "0xea1f8D12A14e1F143d66fcdcfE24E137B658f17",
+ "description": "Verified Compensation Credits issued under the CCU Protocol.",
+ "website": "https://ccu-protocol.github.io/ccu-site/",
+ "explorer": "https://etherscan.io/token/0xea1f8D12A14e1F143d66fcdcfE24E137B658f17",
+
+ "links": [
+  {
+   "name": "github",
+   "url": "https://github.com/ccu-protocol"
+  },
+  {
+   "name": "website",
+   "url": "https://ccu-protocol.github.io/ccu-site/"
+  }
+ ],
+
+ "tags": [
+  "utility-token"
+ ]
 }
