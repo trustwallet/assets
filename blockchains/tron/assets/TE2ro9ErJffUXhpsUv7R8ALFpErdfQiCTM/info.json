@@ -1,11 +1,24 @@
 {
   "name": "TRC Token",
-  "website": "https://tronscan.org/#/token20/TE2ro9ErJffUXhpsUv7R8ALFpErdfQiCTM",
-  "description": "TRC20 token on TRON",
-  "explorer": "https://tronscan.org/#/token20/TE2ro9ErJffUXhpsUv7R8ALFpErdfQiCTM",
+  "website": "https://tronscan.io/#/token20/TE2ro9ErJffUXhpsUv7R8ALFpErdfQiCTM",
+  "description": "TRC20 token on TRON.",
+  "explorer": "https://tronscan.io/#/token20/TE2ro9ErJffUXhpsUv7R8ALFpErdfQiCTM",
   "type": "TRC20",
   "symbol": "UЅĐŦ",
   "decimals": 6,
   "status": "active",
-  "id": "TE2ro9ErJffUXhpsUv7R8ALFpErdfQiCTM"
+  "id": "TE2ro9ErJffUXhpsUv7R8ALFpErdfQiCTM",
+  "tags": [
+    "defi"
+  ],
+  "links": [
+    {
+      "name": "github",
+      "url": "https://github.com/trustwallet/assets"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/tronnetworkEN"
+    }
+  ]
 }
