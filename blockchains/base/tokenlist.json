@@ -82,7 +82,17 @@
       "decimals": 18,
       "logoURI": "https://assets-cdn.trustwallet.com/blockchains/base/assets/0xaC27fa800955849d6D17cC8952Ba9dD6EAA66187/logo.png",
       "pairs": []
-    }
+    },
+    {
+  "asset": "c8453_t0x264d88c6Dc8eB35880d9548626510650e6DFDc85",
+  "type": "BASE",
+  "address": "0x264d88c6Dc8eB35880d9548626510650e6DFDc85",
+  "name": "Tea",
+  "symbol": "TEA",
+  "decimals": 18,
+  "logoURI": "https://raw.githubusercontent.com/abcmath30-ship-it/tea/main/TEA%20Logo.png",
+  "pairs": []
+    } 
   ],
   "version": {
     "major": 1,
