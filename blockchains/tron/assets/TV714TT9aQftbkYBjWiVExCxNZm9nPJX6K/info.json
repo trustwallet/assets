@@ -1,11 +1,22 @@
 {
-  "name": "AEDT Tethered Dirham",
-  "symbol": "AEDT",
+  "name": "AEDT",
   "type": "TRC20",
+  "symbol": "AEDT",
   "decimals": 6,
-  "description": "AEDT is a TRC20 stable token designed to mirror the UAE Dirham value and backed by USDT reserves, operating transparently on the TRON blockchain.",
-  "website": "https://tronscan.org/#/token20/TV714TT9aQftbkYBjWiVExCxNZm9nPJX6K",
-  "explorer": "https://tronscan.org/#/token20/TV714TT9aQftbkYBjWiVExCxNZm9nPJX6K",
+  "website": "https://assetsalphabet.com",
+  "description": "AEDT is a TRON-based token designed to represent AED value through decentralized liquidity pools.",
+  "explorer": "https://tronscan.io/#/token20/TV714TT9aQftbkYBjWiVExCxNZm9nPJX6K",
   "status": "active",
-  "id": "TV714TT9aQftbkYBjWiVExCxNZm9nPJX6K"
+  "id": "TV714TT9aQftbkYBjWiVExCxNZm9nPJX6K",
+  "links": [
+    {
+      "name": "website",
+      "url": "https://assetsalphabet.com"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/ALPROASSETS"
+    }
+  ],
+  "tags": ["stablecoin"]
 }
