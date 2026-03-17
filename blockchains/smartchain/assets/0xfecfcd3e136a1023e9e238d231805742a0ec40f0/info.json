@@ -2,16 +2,21 @@
   "name": "Horus Crypto",
   "website": "https://horuscrypto.com",
   "description": "Horus Crypto is a structured blockchain project focused on building a transparent and utility-driven ecosystem.",
-  "explorer": "https://bscscan.com/token/0xfecfcd3e136a1023e9e238d231805742a0ec40f0",
+  "explorer": "https://bscscan.com/token/0xfECFCd3E136a1023E9E238D231805742a0eC40f0",
   "type": "BEP20",
   "symbol": "HORUS",
   "decimals": 18,
   "status": "active",
-  "id": "0xfecfcd3e136a1023e9e238d231805742a0ec40f0",
+  "id": "0xfECFCd3E136a1023E9E238D231805742a0eC40f0",
+  "tags": ["defi"],
   "links": [
     {
       "name": "telegram",
       "url": "https://t.me/HorusBSC_Chat"
+    },
+    {
+      "name": "website",
+      "url": "https://horuscrypto.com"
     }
   ]
 }
