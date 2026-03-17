@@ -1,14 +1,13 @@
 {
-    "name": "Binance-Peg Aave Token",
-    "website": "https://aave.com",
-    "description": "Aave is a decentralized finance protocol that allows people to lend and borrow crypto.",
-    "explorer": "https://bscscan.com/token/0xfb6115445Bff7b52FeB98650C87f44907E58f802",
-    "research": "https://research.binance.com/en/projects/aave-protocol",
-    "type": "BEP20",
+    "name": "Aave",
+    "website": "https://aave.com/",
+    "description": "Aave is an Open Source and Non-Custodial protocol to earn interest on deposits & borrow assets. It also features access to highly innovative flash loans, which let developers borrow instantly and easily; no collateral needed.",
+    "explorer": "https://snowscan.xyz/token/0x8cE2Dee54bB9921a2AE0A63dBb2DF8eD88B91dD9",
+    "type": "AVALANCHE",
     "symbol": "AAVE",
     "decimals": 18,
     "status": "active",
-    "id": "0xfb6115445Bff7b52FeB98650C87f44907E58f802",
+    "id": "0x8cE2Dee54bB9921a2AE0A63dBb2DF8eD88B91dD9",
     "tags": [
         "defi",
         "governance"
