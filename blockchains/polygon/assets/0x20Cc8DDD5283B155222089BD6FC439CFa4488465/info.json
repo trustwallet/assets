@@ -1,0 +1,22 @@
+{
+    "name": "Wrapped DeFCoN",
+    "symbol": "wDFCN",
+    "type": "ERC20",
+    "decimals": 18,
+    "description": "Wrapped DeFCoN (wDFCN) is an ERC-20 token on Polygon backed 1:1 by native DFCN via the DFCNBridge.",
+    "website": "https://minusz.com",
+    "explorer": "https://polygonscan.com/token/0x20Cc8DDD5283B155222089BD6FC439CFa4488465",
+    "status": "active",
+    "id": "0x20Cc8DDD5283B155222089BD6FC439CFa4488465",
+    "tags": ["wrapped"],
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/minuszka/dfcnbridge"
+        },
+        {
+            "name": "twitter",
+            "url": "https://x.com/dfcn_io"
+        }
+    ]
+}
