@@ -1,16 +1,11 @@
 {
     "name": "Bitcopper Reserve",
-    "website": "https://bitcoppertech.cl/cupr",
-    "description": "CUPR is the sovereign reserve token of the Bitcopper ecosystem. 29,000,000 fixed supply on Polygon, backed by BITCU mined with real physical heat via Proof of Heat consensus. Cuprum in Veritas.",
-    "explorer": "https://polygonscan.com/token/0x6c2CC1E6EB37c6fa3f008f74D5DA5bc9Fa84Ada1",
-    "research": "https://bitcoppertech.cl/bitcu#whitepaper",
     "symbol": "CUPR",
+    "type": "ERC20",
     "decimals": 18,
+    "description": "CUPR is the sovereign human reserve token of the Bitcopper ecosystem, backed by thermodynamic proof-of-work mining and pegged to the LME copper price. Generation 1: 2026-2029. Max supply: 29,000,000 CUPR.",
+    "website": "https://bitcoppertech.cl",
+    "explorer": "https://polygonscan.com/token/0x6c2CC1E6EB37c6fa3f008f74D5DA5bc9Fa84Ada1",
     "status": "active",
-    "id": "0x6c2CC1E6EB37c6fa3f008f74D5DA5bc9Fa84Ada1",
-    "links": [
-        { "name": "github", "url": "https://github.com/bitcoppertech-collab" },
-        { "name": "whitepaper", "url": "https://bitcoppertech.cl/bitcu#whitepaper" }
-    ],
-    "tags": ["defi", "polygon", "reserve", "copper", "proof-of-heat"]
+    "tags": ["defi"]
 }
