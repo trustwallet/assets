@@ -1,30 +1,28 @@
-
 {
   "name": "TSL Crypto",
-  "symbol": "TSL",
-  "type": "BEP20",
-  "decimals": 18,
-  "description": "TSL is a BEP-20 token on BNB Smart Chain focused on transparency, simplicity, and long-term sustainability.",
   "website": "https://tslcrypto.com",
+  "description": "TSL Crypto is a token focused on Technology, Sustainability, and Liquidity on BNB Smart Chain.",
   "explorer": "https://bscscan.com/token/0xD12ECbD5f508106ec242881530767FF15A6A7549",
+  "type": "BEP20",
+  "symbol": "TSL",
+  "decimals": 18,
   "status": "active",
   "id": "0xD12ECbD5f508106ec242881530767FF15A6A7549",
   "links": [
     {
-      "name": "website",
-      "url": "https://tslcrypto.com"
+      "name": "telegram",
+      "url": "https://t.me/tsl_token"
     },
     {
       "name": "twitter",
       "url": "https://x.com/tsl_token"
     },
     {
-      "name": "telegram",
-      "url": "https://t.me/tsl_token"
+      "name": "facebook",
+      "url": "https://www.facebook.com/profile.php?id=61579891263999"
     }
   ],
   "tags": [
-    "defi",
-    "payments"
+    "defi"
   ]
 }
