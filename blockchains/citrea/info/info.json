@@ -1,0 +1,29 @@
+{
+    "name": "Citrea",
+    "website": "https://citrea.xyz",
+    "description": "Citrea is Bitcoin's first ZK rollup, bringing EVM compatibility to Bitcoin with trust-minimized bridging via zero-knowledge proofs.",
+    "explorer": "https://explorer.mainnet.citrea.xyz",
+    "symbol": "cBTC",
+    "type": "coin",
+    "coin_type": 4114,
+    "decimals": 18,
+    "status": "active",
+    "rpc_url": "https://rpc.mainnet.citrea.xyz",
+    "tags": [
+        "dapp"
+    ],
+    "links": [
+        {
+            "name": "x",
+            "url": "https://x.com/citrea_xyz"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/chainwayxyz/citrea"
+        },
+        {
+            "name": "docs",
+            "url": "https://docs.citrea.xyz"
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "name": "Citrea Testnet",
+    "website": "https://citrea.xyz",
+    "description": "Citrea Testnet is the test network for Citrea, Bitcoin's first ZK rollup with EVM compatibility.",
+    "explorer": "https://explorer.testnet.citrea.xyz",
+    "symbol": "cBTC",
+    "type": "coin",
+    "coin_type": 5115,
+    "decimals": 18,
+    "status": "active",
+    "rpc_url": "https://rpc.testnet.citrea.xyz",
+    "tags": [
+        "dapp"
+    ],
+    "links": [
+        {
+            "name": "x",
+            "url": "https://x.com/citrea_xyz"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/chainwayxyz/citrea"
+        },
+        {
+            "name": "docs",
+            "url": "https://docs.citrea.xyz"
+        }
+    ]
+}
