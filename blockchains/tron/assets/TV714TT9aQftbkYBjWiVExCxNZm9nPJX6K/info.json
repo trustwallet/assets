@@ -1,11 +1,24 @@
 {
-  "name": "AEDT",
-  "website": "https://tetheraedt.io",
-  "description": "AEDT is an independent dirham-denominated digital token on the TRON 
-  "explorer": "https://tronscan.io/#/token20/TV714TT9aQftbkYBjWiVExCxNZm9nPJX6K"
-  "type": "TRC20",
-  "symbol": "AEDT",
-  "decimals": 6,
-  "status": "active",
-  "id": "TV714TT9aQftbkYBjWiVExCxNZm9nPJX6K"
+    "name": "AEDT - Tethered AED",
+    "type": "TRC20",
+    "symbol": "AEDT",
+    "decimals": 6,
+    "website": "https://tetheraedt.io/",
+    "description": "AEDT is a TRC20 stable token designed to mirror the UAE Dirham value through USDT-backed liquidity mechanisms. Built on the TRON blockchain, AEDT enables fast, low-cost transactions and global accessibility. The token operates transparently with publicly visible liquidity pools and on-chain verification, ensuring trust and stability for users worldwide.",
+    "explorer": "https://tronscan.io/#/token20/TV714TT9aQftbkYBjWiVExCxNZm9nPJX6K",
+    "status": "active",
+    "id": "TV714TT9aQftbkYBjWiVExCxNZm9nPJX6K",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/cryptoassetsalpha-ui/AEDT-website"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/ALPROASSETS"
+        }
+    ],
+    "tags": [
+        "defi"
+    ]
 }
