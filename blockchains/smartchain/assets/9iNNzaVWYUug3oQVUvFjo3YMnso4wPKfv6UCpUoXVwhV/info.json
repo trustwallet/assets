@@ -1,0 +1,22 @@
+{
+    "name": "Wrapped DeFCoN",
+    "symbol": "wDFCN",
+    "type": "SPL",
+    "decimals": 9,
+    "description": "Wrapped DeFCoN (wDFCN) is an SPL token on Solana backed 1:1 by native DFCN via the DFCNBridge.",
+    "website": "https://minusz.com",
+    "explorer": "https://solscan.io/token/9iNNzaVWYUug3oQVUvFjo3YMnso4wPKfv6UCpUoXVwhV",
+    "status": "active",
+    "id": "9iNNzaVWYUug3oQVUvFjo3YMnso4wPKfv6UCpUoXVwhV",
+    "tags": ["wrapped"],
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/minuszka/dfcnbridge"
+        },
+        {
+            "name": "twitter",
+            "url": "https://x.com/dfcn_io"
+        }
+    ]
+}
