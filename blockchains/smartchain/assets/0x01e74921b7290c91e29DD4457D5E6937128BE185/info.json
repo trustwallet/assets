@@ -7,5 +7,16 @@
   "symbol": "USDT.Z",
   "decimals": 18,
   "status": "active",
-  "id": "0x01e74921b7290c91e29DD4457D5E6937128BE185"
+  "id": "0x01e74921b7290c91e29DD4457D5E6937128BE185",
+  "tags": ["stablecoin"],
+  "links": [
+    {
+      "name": "github",
+      "url": "https://github.com/Badarado1998/badausdt"
+    },
+    {
+      "name": "explorer",
+      "url": "https://bscscan.com/token/0x01e74921b7290c91e29DD4457D5E6937128BE185"
+    }
+  ]
 }
