@@ -2,7 +2,7 @@
     "name": "Purple Squirrel",
     "website": "https://purplesquirrel.media",
     "description": "Native utility token for Purple Squirrel Media DePIN satellite ground station network. Climate-linked pricing via SST oracle on Solana, bridged via Wormhole Portal Bridge.",
-    "explorer": "https://polygonscan.com/token/0x7E3d55C91eb4Ee0cda7439615F3a44087ac80c6C",
+    "explorer": "https://etherscan.io/token/0x7E3d55C91eb4Ee0cda7439615F3a44087ac80c6C",
     "research": "",
     "type": "ERC20",
     "symbol": "PURP",
@@ -10,17 +10,20 @@
     "status": "active",
     "id": "0x7E3d55C91eb4Ee0cda7439615F3a44087ac80c6C",
     "tags": [
-        "wormhole",
-        "depin"
+        "defi"
     ],
     "links": [
         {
-            "name": "x",
+            "name": "twitter",
             "url": "https://x.com/squirrel_eth"
         },
         {
             "name": "telegram",
             "url": "https://t.me/purplesquirrelmedia"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/ExpertVagabond/purp-contracts"
         }
     ]
 }
