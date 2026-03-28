@@ -1,25 +1,30 @@
 {
-  "name": "Purple Squirrel",
-  "symbol": "PURP",
-  "type": "ERC20",
-  "decimals": 9,
-  "description": "Native utility token for Purple Squirrel Media DePIN satellite ground station network. Climate-linked pricing via SST oracle on Solana, bridged via Wormhole Portal Bridge.",
-  "website": "https://purplesquirrel.media",
-  "explorer": "",
-  "status": "active",
-  "id": "0xdE3f50D7122BcD8dAfbE055B120d5C7aC6FB164B",
-  "links": [
-    {
-      "name": "twitter",
-      "url": "https://x.com/squirrel_eth"
-    },
-    {
-      "name": "discord",
-      "url": "https://discord.gg/vDdkc6djFE"
-    },
-    {
-      "name": "telegram",
-      "url": "https://t.me/purplesquirrelmedia"
-    }
-  ]
+    "name": "Purple Squirrel",
+    "website": "https://purplesquirrel.media",
+    "description": "Native utility token for Purple Squirrel Media DePIN satellite ground station network. Climate-linked pricing via SST oracle on Solana, bridged via Wormhole Portal Bridge.",
+    "explorer": "https",
+    "research": "",
+    "type": "//optimistic.etherscan.io/token/0xdE3f50D7122BcD8dAfbE055B120d5C7aC6FB164B:ERC20",
+    "symbol": "PURP",
+    "decimals": 9,
+    "status": "active",
+    "id": "0xdE3f50D7122BcD8dAfbE055B120d5C7aC6FB164B",
+    "tags": [
+        "wormhole",
+        "depin"
+    ],
+    "links": [
+        {
+            "name": "x",
+            "url": "https://x.com/squirrel_eth"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.gg/vDdkc6djFE"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/purplesquirrelmedia"
+        }
+    ]
 }
