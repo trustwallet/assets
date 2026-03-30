@@ -1,11 +1,24 @@
 {
-  "name": "AEDT",
-  "website": "https://tetheraedt.io",
-  "description": "AEDT is an independent dirham-denominated digital token on the TRON 
-  "explorer": "https://tronscan.io/#/token20/TV714TT9aQftbkYBjWiVExCxNZm9nPJX6K"
-  "type": "TRC20",
-  "symbol": "AEDT",
-  "decimals": 6,
-  "status": "active",
-  "id": "TV714TT9aQftbkYBjWiVExCxNZm9nPJX6K"
+    "name": "AEDT ",
+    "type": "TRC20",
+    "symbol": "AEDT",
+    "decimals": 6,
+    "website": "https://tetheraedt.io/",
+    "description": "AEDT is a TRON-based digital asset developed to facilitate efficient, scalable, and low-cost transactions across global markets. Leveraging the TRC20 standard, AEDT ensures fast settlement, minimal fees, and transparent on-chain activity, making it suitable for modern digital payment ecosystems.",
+    "explorer": "https://tronscan.io/#/token20/TV714TT9aQftbkYBjWiVExCxNZm9nPJX6K",
+    "status": "active",
+    "id": "TV714TT9aQftbkYBjWiVExCxNZm9nPJX6K",
+    "links": [
+        {
+            "name": "telegram",
+            "url": "https://t.me/AEDTASSETS"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/cryptoassetsalpha-ui"
+        }
+    ],
+    "tags": [
+        "defi"
+    ]
 }
