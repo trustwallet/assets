@@ -3,7 +3,7 @@
   "symbol": "VESC",
   "type": "ERC20",
   "decimals": 18,
-  "description": "Venezuelan bolivar-indexed stablecoin backed 1:1 by USDC at the official VES/USD exchange rate",
+  "description": "Venezuelan bolivar-indexed token on Base. 1 VESC = 1 VES. Users deposit USDC and receive VESC priced at the live VES/USD rate. Redeem anytime for USDC at the current rate.",
   "website": "https://vesc-protocol.vibe3.link/",
   "explorer": "https://etherscan.io/token/0xDc83741833CA8e140137a9A63B23970d55205BA0",
   "status": "active",
