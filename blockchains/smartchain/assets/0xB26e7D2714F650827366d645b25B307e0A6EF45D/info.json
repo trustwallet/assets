@@ -1,11 +1,24 @@
 {
   "name": "XBITU",
-  "symbol": "XBITU",
-  "type": "BEP20",
-  "decimals": 18,
-  "description": "XBITU token",
-  "website": "https://xbitu.com",
+  "website": "https://www.xbitu.com",
+  "description": "XBITU is a crypto wallet and payment platform enabling users to spend digital assets seamlessly via cards and payment infrastructure.",
   "explorer": "https://bscscan.com/token/0xB26e7D2714F650827366d645b25B307e0A6EF45D",
+  "type": "BEP20",
+  "symbol": "XBITU",
+  "decimals": 18,
   "status": "active",
-  "id": "0xB26e7D2714F650827366d645b25B307e0A6EF45D"
+  "id": "0xB26e7D2714F650827366d645b25B307e0A6EF45D",
+  "links": [
+    {
+      "name": "website",
+      "url": "https://www.xbitu.com"
+    },
+    {
+      "name": "twitter",
+      "url": "https://x.com/XBITUPRO"
+    }
+  ],
+  "tags": [
+    "wallet"
+  ]
 }
