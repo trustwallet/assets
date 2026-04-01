@@ -1,6 +1,6 @@
 {
   "name": "XBITU",
-  "website": "https://www.xbitu.com",
+  "website": "https://xbitu.com",
   "description": "XBITU is a crypto wallet and payment platform enabling users to spend digital assets seamlessly via cards and payment infrastructure.",
   "explorer": "https://bscscan.com/token/0xB26e7D2714F650827366d645b25B307e0A6EF45D",
   "type": "BEP20",
@@ -10,15 +10,15 @@
   "id": "0xB26e7D2714F650827366d645b25B307e0A6EF45D",
   "links": [
     {
-      "name": "website",
-      "url": "https://www.xbitu.com"
-    },
-    {
       "name": "twitter",
       "url": "https://x.com/XBITUPRO"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/xbitu"
     }
   ],
   "tags": [
-    "wallet"
+    "payment"
   ]
 }
