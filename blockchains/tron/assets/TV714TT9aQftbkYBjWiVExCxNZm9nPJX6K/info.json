@@ -1,11 +1,25 @@
 {
-  "name": "AEDT",
-  "website": "https://tetheraedt.io",
-  "description": "AEDT is an independent dirham-denominated digital token on the TRON 
-  "explorer": "https://tronscan.io/#/token20/TV714TT9aQftbkYBjWiVExCxNZm9nPJX6K"
-  "type": "TRC20",
-  "symbol": "AEDT",
-  "decimals": 6,
-  "status": "active",
-  "id": "TV714TT9aQftbkYBjWiVExCxNZm9nPJX6K"
+    "name": "AEDT-Tethered AED",
+    "type": "TRC20",
+    "symbol": "AEDT",
+    "decimals": 6,
+    "website": "https://tetheraedt.io/",
+    "description": "AEDT (Tethered AED) is a next-generation TRC20 stablecoin bringing the UAE Dirham on-chain. Built on TRON for speed and efficiency, AEDT powers seamless global payments, DeFi integrations, and real-world financial use cases.",
+    "explorer": "https://tronscan.io/#/token20/TV714TT9aQftbkYBjWiVExCxNZm9nPJX6K",
+    "status": "active",
+    "id": "TV714TT9aQftbkYBjWiVExCxNZm9nPJX6K",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/cryptoassetsalpha-ui"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/AEDTASSETS"
+        }
+    ],
+    "tags": [
+        "defi",
+        "stablecoin"
+    ]
 }
