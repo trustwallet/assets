@@ -1,11 +1,25 @@
 {
-  "name": "金银铜铁",
-  "website": "https://www.jyttcoin.com",
-  "description": "金银铜铁是锚定四大贵金属的恒定总量代币，12348888的编码象征财富与永续。合约已锁死权限，安全透明。在全球贵金属暴涨的当下，它是你链上布局避险资产的极简选择。 1. 恒定总量：12,348,888枚永不增发，稀缺性保障价值 2. 合约安全：已抛弃权限，代码锁死，无任何后门风险 3. 财富编码：1234对应四大贵金属，8888寓意四季发财 4. 避险锚定：紧跟全球贵金属牛市，价值随贵金属同步增长",
-  "explorer": "https://bscscan.com/token/0x9CE89AA15eA25C481fe1adB03e3f397eCEA1620C",
-  "type": "BEP20",
-  "symbol": "金银铜铁",
-  "decimals": 18,
-  "status": "active",
-  "id": "0x9CE89AA15eA25C481fe1adB03e3f397eCEA1620C"
+    "name": "金银铜铁",
+    "website": "https://www.jyttcoin.com",
+    "description": "金银铜铁是锚定四大贵金属的恒定总量代币，12348888的编码象征财富与永续。合约已锁死权限，安全透明。在全球贵金属暴涨的当下，它是你链上布局避险资产的极简选择。 1. 恒定总量：12,348,888枚永不增发，稀缺性保障价值 2. 合约安全：已抛弃权限，代码锁死，无任何后门风险 3. 财富编码：1234对应四大贵金属，8888寓意四季发财 4. 避险锚定：紧跟全球贵金属牛市，价值随贵金属同步增长",
+    "explorer": "https://bscscan.com/token/0x9CE89AA15eA25C481fe1adB03e3f397eCEA1620C",
+    "type": "BEP20",
+    "symbol": "金银铜铁",
+    "decimals": 18,
+    "status": "active",
+    "id": "0x9CE89AA15eA25C481fe1adB03e3f397eCEA1620C",
+    "links": [
+        {
+            "name": "telegram",
+            "url": "https://t.me/jyttqqgssq12348888"
+        },
+        {
+            "name": "telegram_news",
+            "url": "https://t.me/cfdqb233"
+        }
+    ],
+    "tags": [
+        "RWA",
+        "DEX"
+    ]
 }
