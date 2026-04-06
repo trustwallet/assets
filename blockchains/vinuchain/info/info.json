@@ -1,0 +1,29 @@
+{
+    "name": "VinuChain",
+    "website": "https://vinuchain.org",
+    "description": "VinuChain is an EVM-compatible Layer 1 blockchain secured by the Lachesis asynchronous DAG-BFT consensus algorithm.",
+    "explorer": "https://vinuexplorer.org",
+    "symbol": "VC",
+    "type": "coin",
+    "decimals": 18,
+    "rpc_url": "https://rpc.vinuchain.org",
+    "status": "active",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://x.com/vinuchain"
+        },
+        {
+            "name": "telegram",
+            "url": "https://telegram.me/vitainu"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.gg/vinu"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/vinuchain"
+        }
+    ]
+}
