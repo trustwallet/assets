@@ -1,22 +1,32 @@
 {
-  "name": "Tether USD",
-  "type": "BEP20",
-  "symbol": "USDT.z",
-  "decimals": 18,
-  "description": "Official USDT.z token on BNB Smart Chain.",
-  "website": "https://your-website.com",
-  "explorer": "https://bscscan.com/token/0x50F03e8f6550F2EE9a6d2DDC602fE5FD40fA7Db4",
-  "status": "active",
-  "id": "0x50F03e8f6550F2EE9a6d2DDC602fE5FD40fA7Db4",
-  "tags": ["stablecoin"],
-  "links": [
-    {
-      "name": "X",
-      "url": "https://x.com/Tether0USD"
-    },
-    {
-      "name": "telegram",
-      "url": "https://t.me/Tether0USD"
-    }
-  ]
+    "name": "Tether USD",
+    "type": "BEP20",
+    "symbol": "USDT.z",
+    "decimals": 18,
+    "website": "https://tetherusdt.manus.space",
+    "description": "Official Tether USDt.z token on BNB Smart Chain.",
+    "explorer": "https://bscscan.com/token/0x50F03e8f6550F2EE9a6d2DDC602fE5FD40fA7Db4",
+    "status": "active",
+    "id": "0x50F03e8f6550F2EE9a6d2DDC602fE5FD40fA7Db4",
+    "links": [
+        {
+            "name": "x",
+            "url": "https://x.com/Tether0USD"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/Tether0USD"
+        },
+        {
+            "name": "telegram_news",
+            "url": "https://t.me/"
+        }
+    ],
+    "tags": [
+        "memes"
+    ]
 }
