@@ -1,22 +1,25 @@
 {
-  "name": "Tether USD",
-  "type": "BEP20",
-  "symbol": "USDT.z",
-  "decimals": 18,
-  "description": "Official USDT.z token on BNB Smart Chain.",
-  "website": "https://your-website.com",
-  "explorer": "https://bscscan.com/token/0x50F03e8f6550F2EE9a6d2DDC602fE5FD40fA7Db4",
-  "status": "active",
-  "id": "0x50F03e8f6550F2EE9a6d2DDC602fE5FD40fA7Db4",
-  "tags": ["stablecoin"],
-  "links": [
-    {
-      "name": "X",
-      "url": "https://x.com/Tether0USD"
-    },
-    {
-      "name": "telegram",
-      "url": "https://t.me/Tether0USD"
-    }
-  ]
+    "name": " Tether USD Bridged ZED20",
+    "type": "BEP20",
+    "symbol": "USD.Z",
+    "decimals": 18,
+    "website": "https://tetherusdt.manus.space",
+    "description": "USDT.z is a stablecoin deployed on Binance Smart Chain, providing price stability and liquidity for the DeFi ecosystem. Built with robust smart contract architecture and comprehensive security measures, USDT.z enables fast and secure transactions for users and developers.",
+    "explorer": "https://bscscan.com/token/0x50f03e8f6550f2ee9a6d2ddc602fe5fd40fa7db4",
+    "status": "active",
+    "id": "0x50F03e8f6550F2EE9a6d2DDC602fE5FD40fA7Db4",
+    "links": [
+        {
+            "name": "x",
+            "url": "https://twitter.com/Tether0USD"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/Tether0USD"
+        }
+    ],
+    "tags": [
+        "memes",
+        "stablecoin"
+    ]
 }
