@@ -1,0 +1,21 @@
+{
+  "name": "Tetra (USD Pool)",
+  "type": "BEP20",
+  "symbol": "TETRA",
+  "decimals": 18,
+  "description": "Tetra USD (TETRA) is a fully collateralized, USD-pegged stablecoin built on BNB Smart Chain. Every TETRA is backed 1:1 by verified USD reserves. Holders can stake TETRA to earn on-chain yield through fixed-term staking plans — combining dollar stability with passive income in a single DeFi-native asset.",
+  "website": "https://tetra-usd.com/",
+  "explorer": "https://bscscan.com/token/0x01C142543F8Dbe9e5B7B755549c157Ffe4562D63",
+  "status": "active",
+  "id": "0x01C142543F8Dbe9e5B7B755549c157Ffe4562D63",
+  "links": [
+    {
+      "name": "whitepaper",
+      "url": "https://tetrausd-1.gitbook.io/tetra-usd-powering-the-future-of-digital-value/"
+    }
+  ],
+  "tags": [
+    "stablecoin",
+    "staking"
+  ]
+}
