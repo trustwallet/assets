@@ -3,15 +3,22 @@
   "symbol": "QGOLD",
   "type": "ERC20",
   "decimals": 18,
-  "description": "QGOLD is a quantitative DeFi token backed by algorithmic trading strategies on Arbitrum.",
+  "description": "QGOLD is a decentralized protocol built on Arbitrum that combines algorithmic trading strategies with transparent on-chain vault management.",
   "website": "https://q-gold.io",
-  "explorer": "https://arbiscan.io/token/0x5452F11831B9DCe7Ed139f45571d00ECeF19B916",
+  "explorer": "https://etherscan.io/token/0x5452F11831B9DCe7Ed139f45571d00ECeF19B916",
   "status": "active",
   "id": "0x5452F11831B9DCe7Ed139f45571d00ECeF19B916",
+  "tags": [
+    "defi"
+  ],
   "links": [
     {
       "name": "website",
       "url": "https://q-gold.io"
+    },
+    {
+      "name": "twitter",
+      "url": "https://x.com/qgoldprotocol"
     }
   ]
 }
