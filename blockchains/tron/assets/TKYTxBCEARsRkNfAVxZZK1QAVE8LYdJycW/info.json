@@ -2,19 +2,22 @@
   "name": "Verified Stable Dollar",
   "website": "https://tetherdapp.manus.space",
   "description": "Verified Stable Dollar (VSD) is a TRC-20 stablecoin on the TRON Network, designed to maintain a 1:1 value peg with the US Dollar (USD).",
-  "explorer": "https://tronscan.org/#/token20/TKYTxBCEARsRkNfAVxZZK1QAVE8LYdJycW",
+  "explorer": "https://tronscan.io/#/token20/TKYTxBCEARsRkNfAVxZZK1QAVE8LYdJycW",
   "type": "TRC20",
   "symbol": "VSD",
   "decimals": 6,
   "status": "active",
   "id": "TKYTxBCEARsRkNfAVxZZK1QAVE8LYdJycW",
+  "tags": [
+    "stablecoin"
+  ],
   "links": [
     {
       "name": "whitepaper",
       "url": "https://files.manuscdn.com/user_upload_by_id/8100/vsd-whitepaper.pdf"
     },
     {
-      "name": "x",
+      "name": "twitter",
       "url": "https://x.com/CommunityUSDT"
     },
     {
