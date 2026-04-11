@@ -1,20 +1,18 @@
 {
   "name": "Own The Economy Coin",
   "website": "https://www.otec.money",
-  "short_description": "An alignment token — issued only to people who understand what's forming in the digital economy before it becomes obvious to everyone else.",
+  "description": "An alignment token issued only to people who understand what's forming in the digital economy before it becomes obvious to everyone else.",
   "explorer": "https://basescan.org/token/0xD2465ab071623d04633df0e8a44fBEEd1E83Ee92",
   "symbol": "OTEC",
   "decimals": 18,
+  "type": "ERC20",
   "status": "active",
   "id": "0xD2465ab071623d04633df0e8a44fBEEd1E83Ee92",
+  "tags": ["defi"],
   "links": [
     {
       "name": "twitter",
       "url": "https://x.com/chipmahoney9"
-    },
-    {
-      "name": "website",
-      "url": "https://www.otec.money"
     }
   ]
 }
