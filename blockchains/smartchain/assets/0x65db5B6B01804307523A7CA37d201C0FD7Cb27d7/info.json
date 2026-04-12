@@ -1,11 +1,21 @@
 {
   "name": "Tether USD",
-  "website": "https://tusitio.com",
-  "description": "Token BEP20 en BNB Smart Chain",
-  "explorer": "https://bscscan.com/token/0x65db5B6B01804307523A7CA37d201C0FD7Cb27d7",
+  "website": "https://tether.to",
+  "socials": [
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/tether_to"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/OfficialTether"
+    }
+  ],
+  "description": "Tether (USDT) is a stablecoin pegged to the US Dollar on the BNB Smart Chain.",
+  "explorer": "https://bscscan.com/token/0x55d398326f99059fF775485246999027B3197955",
   "type": "BEP20",
   "symbol": "USDT",
   "decimals": 18,
   "status": "active",
-  "id": "0x65db5B6B01804307523A7CA37d201C0FD7Cb27d7"
+  "id": "0x55d398326f99059fF775485246999027B3197955"
 }
