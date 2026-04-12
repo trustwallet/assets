@@ -1,0 +1,41 @@
+{
+    "name": "UltraDAG",
+    "type": "ARBITRUM",
+    "symbol": "UDAG",
+    "decimals": 8,
+    "website": "https://ultradag.com",
+    "description": "UltraDAG is a DAG-BFT consensus protocol built for IoT and machine-to-machine micropayments. It uses a directed acyclic graph structure with deterministic finality in 2-3 rounds (~10 seconds), runs on a $15 Raspberry Pi Zero 2 W, and features passkey-native WebAuthn smart accounts. 21M max supply, 8 decimals, bridge-backed on Arbitrum.",
+    "explorer": "https://arbiscan.io/token/0x9cFD2011DF13d9E394B5Bb59f0f7e7A5C512155b",
+    "status": "active",
+    "id": "0x9cFD2011DF13d9E394B5Bb59f0f7e7A5C512155b",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/UltraDAGcom/core"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/ultradagcom"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/ultradagcom"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://ultradag.com/whitepaper"
+        },
+        {
+            "name": "docs",
+            "url": "https://ultradag.com/docs"
+        },
+        {
+            "name": "source_code",
+            "url": "https://github.com/UltraDAGcom/core"
+        }
+    ],
+    "tags": [
+        "defi",
+        "infrastructure"
+    ]
+}
