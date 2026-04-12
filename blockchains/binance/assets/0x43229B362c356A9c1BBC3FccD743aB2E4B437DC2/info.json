@@ -9,11 +9,20 @@
   "status": "active",
   "id": "0x43229B362c356A9c1BBC3FccD743aB2E4B437DC2",
 
-  "links": {
-    "twitter": "https://x.com/Protocol_USDT",
-    "telegram": "https://t.me/Protocol_USDT",
-    "github": "https://github.com/USDT-Network/usdt-network"
-  },
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://x.com/Protocol_USDT"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/Protocol_USDT"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/USDT-Network/usdt-network"
+    }
+  ],
 
   "tags": [
     "defi"
