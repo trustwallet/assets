@@ -1,11 +1,18 @@
 {
-  "name": "Tether USD",
+  "name": "Tether USD (Scaled)",
   "symbol": "USDT",
   "type": "BEP20",
   "decimals": 18,
-  "description": "Tether USD (scaled) is a BEP-20 token with 1:1,000,000 scale, backed by real USDT.",
+  "description": "Tether USD (Scaled) is a BEP-20 token on BNB Smart Chain that acts as a wrapper for real USDT. It features a 1:1,000,000 scale (1 USDT real = 1,000,000 USDT tokens). Users can deposit USDT to mint tokens, withdraw USDT by burning tokens, and check the real collateral via the realBalanceOf function. The contract is verified and audited on BscScan.",
   "website": "https://tether-usd.cc",
   "explorer": "https://bscscan.com/token/0x79ff656609C85232652A196d4b1417b8Ca51E58D",
   "status": "active",
-  "id": "0x79ff656609C85232652A196d4b1417b8Ca51E58D"
+  "id": "0x79ff656609C85232652A196d4b1417b8Ca51E58D",
+  "links": [
+    {"name": "twitter", "url": "https://x.com/PZbridged"},
+    {"name": "telegram", "url": "https://t.me/tether-usd_cc"},
+    {"name": "discord", "url": "https://discord.com/invite/AuxRZJ3y"},
+    {"name": "github", "url": "https://github.com/projecttetherusdtz"}
+  ],
+  "tags": ["stablecoin", "wrapped"]
 }
