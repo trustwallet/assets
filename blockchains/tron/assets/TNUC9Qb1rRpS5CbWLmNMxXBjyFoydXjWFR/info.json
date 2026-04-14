@@ -1,0 +1,32 @@
+{
+    "name": "Wrapped TRX",
+    "type": "TRC20",
+    "symbol": "WTRX",
+    "decimals": 6,
+    "website": "https://tron.network/",
+    "description": "Wrapped version of Tron (TRX)",
+    "explorer": "https://tronscan.org/#/token20/TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+    "status": "active",
+    "id": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+    "links": [
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/wrapped-tron/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/wrapped-tron"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/@trondao"
+        },
+        {
+            "name": "docs",
+            "url": "https://developers.tron.network/docs/getting-start"
+        }
+    ],
+    "tags": [
+        "wrapped"
+    ]
+}
