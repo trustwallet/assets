@@ -1,0 +1,25 @@
+{
+  "name": "AGU Guard",
+  "symbol": "AGU",
+  "type": "BEP20",
+  "description": "AGU Guard is a real-time multichain smart contract explorer. Security audits, live prices, holder concentration and DEX pairs across BNB Chain, Ethereum, Solana and more networks.",
+  "website": "https://aguguard.com",
+  "explorer": "https://bscscan.com/token/0x0B768f0a19d8a18090DDcAFB9bC55211D38B2B22",
+  "research": "https://aguguard.com",
+  "status": "active",
+  "id": "0x0B768f0a19d8a18090DDcAFB9bC55211D38B2B22",
+  "links": [
+    { "name": "website",  "url": "https://aguguard.com" },
+    { "name": "twitter",  "url": "https://x.com/Agu_GUard" },
+    { "name": "telegram", "url": "https://t.me/+vH7D8JMzl5E4NmVh" },
+    { "name": "facebook", "url": "https://www.facebook.com/share/1Ghxdq1u5p/" },
+    { "name": "email",    "url": "mailto:info@aguguard.com" }
+  ]
+}
+```
+
+---
+
+**Recuerda el nombre del archivo al crearlo:**
+```
+blockchains/smartchain/assets/0x0B768f0a19d8a18090DDcAFB9bC55211D38B2B22/info.json
