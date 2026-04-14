@@ -4,7 +4,7 @@
   "symbol": "PACT",
   "decimals": 18,
   "website": "https://dopeasset.com",
-  "description": "PACT is the native token for PACT Protocol, trustless agent-to-agent payment infrastructure on Arbitrum. PactEscrow enables autonomous agents to lock payment at task assignment and release on confirmed execution — no trusted third party required.",
+  "description": "PACT is the native token for PACT Protocol, trustless agent-to-agent payment infrastructure on Arbitrum. PactEscrow enables autonomous agents to lock payment at task assignment and release on confirmed execution \u2014 no trusted third party required.",
   "explorer": "https://arbiscan.io/token/0x809c2540358E2cF37050cCE41A610cb6CE66Abe1",
   "status": "active",
   "id": "0x809c2540358E2cF37050cCE41A610cb6CE66Abe1",
@@ -15,6 +15,10 @@
     {
       "name": "github",
       "url": "https://github.com/praxisagent/pact-channels"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/praxisagent/pact-vibekit-plugin"
     }
   ]
 }
