@@ -1,23 +1,17 @@
 {
   "name": "Tether USD",
-  "website": "https://www.blocktrustt.com",
-  "socials": [
-    {
-      "name": "Reddit",
-      "url": "https://reddit.com/user/usdttether_future"
-    },
-    {
-      "name": "telegram",
-      "url": "https://t.me/usdttether_future"
-    }
-  ],
-  "description": "Tether (USDT) is a stablecoin pegged to the US Dollar on the BNB Smart Chain.",
-  "explorer": "https://bscscan.com/token/ 0x65db5B6B01804307523A7CA37d201C0FD7Cb27d7
-",
+  "website": "https://tether.to",
+  "description": "Tether (USDT) is a stablecoin pegged to the US Dollar.",
+  "explorer": "https://bscscan.com/token/0x65db5B6B01804307523A7CA37d201C0FD7Cb27d7",
   "type": "BEP20",
   "symbol": "USDT",
   "decimals": 18,
   "status": "active",
-  "id": " 0x65db5B6B01804307523A7CA37d201C0FD7Cb27d7
-"
+  "id": "0x65db5B6B01804307523A7CA37d201C0FD7Cb27d7",
+  "socials": [
+    {
+      "name": "Twitter",
+      "url": "https://twitter.com/tether_to"
+    }
+  ]
 }
