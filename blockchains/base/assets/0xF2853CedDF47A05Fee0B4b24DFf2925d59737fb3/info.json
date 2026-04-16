@@ -1,0 +1,22 @@
+{
+    "name": "Wrapped FairCoin",
+    "type": "BASE",
+    "symbol": "WFAIR",
+    "decimals": 18,
+    "website": "https://fairco.in",
+    "description": "1:1 wrapped FairCoin (FAIR) on Base. Native bridge from the FairCoin chain to Ethereum L2 for use in DeFi. Contract verified on Basescan.",
+    "explorer": "https://basescan.org/token/0xF2853CedDF47A05Fee0B4b24DFf2925d59737fb3",
+    "status": "active",
+    "id": "0xF2853CedDF47A05Fee0B4b24DFf2925d59737fb3",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/FairCoinOfficial"
+        },
+        {
+            "name": "source_code",
+            "url": "https://github.com/FairCoinOfficial/faircoin-bridge"
+        }
+    ],
+    "tags": ["wrapped", "defi"]
+}
