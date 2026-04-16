@@ -1,0 +1,36 @@
+{
+    "name": "Wien Euro Reserve Coin",
+    "symbol": "WERC",
+    "type": "BEP20",
+    "decimals": 18,
+    "description": "Euro Finance (WERC) is an independent multi-chain DeFi protocol. Not affiliated with Circle, not EURC, not a stablecoin, not pegged to EUR.",
+    "website": "https://werc.finance/",
+    "explorer": "https://bscscan.com/token/0x1abFa06E7EbE1c647604781EA0495d132714c6E6",
+    "status": "active",
+    "id": "0x1abFa06E7EbE1c647604781EA0495d132714c6E6",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://x.com/EuroFinanceClub"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/eurofindefi"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/euro-finance/"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/europa-club"
+        },
+        {
+            "name": "audit",
+            "url": "https://github.com/europa-club/werc-docs/tree/main/audits"
+        }
+    ],
+    "tags": [
+        "defi"
+    ]
+}
