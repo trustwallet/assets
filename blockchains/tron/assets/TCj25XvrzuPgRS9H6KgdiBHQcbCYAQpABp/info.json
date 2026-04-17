@@ -1,10 +1,32 @@
 {
-  "name": "NOVS",
-  "symbol": "NVX",
-  "type": "TRC20",
-  "decimals": 6,
-  "description": "NOVS NVX Token on TRON",
-  "explorer": "https://tronscan.org/#/token20/TCj25XvrzuPgRS9H6KgdiBHQcbCYAQpABp",
-  "status": "active",
-  "id": "TCj25XvrzuPgRS9H6KgdiBHQcbCYAQpABp"
+    "name": "NOVS",
+    "type": "TRC20",
+    "symbol": "NVX",
+    "decimals": 6,
+    "website": "https://novs-nvx.tuncaysehmus72.workers.dev/",
+    "description": "NOVS (NVX) is a TRON-based decentralized token focused on real-world utility, trading, and ecosystem growth.",
+    "explorer": "https://tronscan.io/#/token20/TCj25XvrzuPgRS9H6KgdiBHQcbCYAQpABp",
+    "status": "active",
+    "id": "TCj25XvrzuPgRS9H6KgdiBHQcbCYAQpABp",
+    "links": [
+        {
+            "name": "x",
+            "url": "https://x.com/TncyUs63958"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/Tncyus"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/+miW0qO5gSqVkYzRi"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/TPhDBRZEh5A9Z9PF5M76GqdbwkUUGYw61N"
+        }
+    ],
+    "tags": [
+        "defi"
+    ]
 }
