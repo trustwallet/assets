@@ -1,0 +1,36 @@
+{
+    "name": "ChaiYao Fractional Token",
+    "type": "BEP20",
+    "symbol": "CHAI",
+    "decimals": 18,
+    "website": "https://chaiyao.io/",
+    "description": "For the chaiyao.io (Chai Huang Coin) project, using a single piece from a top-tier Chai Kiln system collection as the underlying asset, establish a standardized certification structure consisting of an \"auction transaction record + bank safe deposit box custody document.\" Then, write its immutable hash and governance events into a smart contract, thereby completing a full implementation solution for art RWA (Real-World Assets).",
+    "explorer": "https://bscscan.com/token/0xBedD3af0DcE80EDE8468fDA671DC54c921f4AE00",
+    "status": "active",
+    "id": "0xBedD3af0DcE80EDE8468fDA671DC54c921f4AE00",
+    "links": [
+        {
+            "name": "telegram",
+            "url": "https://t.me/cbid_io"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/cbid-io/sa-rwa-contracts"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://cbid.oss-cn-hongkong.aliyuncs.com/docs/chaiyao_whitepaper_FINAL_EN_1212.pdf"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/@cbid_io"
+        },
+        {
+            "name": "source_code",
+            "url": "https://bscscan.com/token/0xBedD3af0DcE80EDE8468fDA671DC54c921f4AE00#code"
+        }
+    ],
+    "tags": [
+        "defi"
+    ]
+}
