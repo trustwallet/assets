@@ -8,30 +8,13 @@
     "decimals": 18,
     "status": "active",
     "id": "0xc311FD6DA9686507F33991543d8158EF5FaDd5E7",
+    "tags": ["defi"],
     "links": [
-        {
-            "name": "twitter",
-            "url": "https://x.com/ZaroProject"
-        },
-        {
-            "name": "telegram",
-            "url": "https://t.me/zaroprojectofficial"
-        },
-        {
-            "name": "github",
-            "url": "https://github.com/zarocoin/zarocoin"
-        },
-        {
-            "name": "reddit",
-            "url": "https://www.reddit.com/r/ZaroProject/"
-        },
-        {
-            "name": "coingecko",
-            "url": "https://www.coingecko.com/en/coins/zaro-coin"
-        },
-        {
-            "name": "coinmarketcap",
-            "url": "https://coinmarketcap.com/currencies/zaro-coin"
-        }
+        {"name": "twitter", "url": "https://x.com/ZaroProject"},
+        {"name": "telegram", "url": "https://t.me/zaroprojectofficial"},
+        {"name": "github", "url": "https://github.com/zarocoin/zarocoin"},
+        {"name": "reddit", "url": "https://reddit.com/r/ZaroProject/"},
+        {"name": "coingecko", "url": "https://coingecko.com/en/coins/zaro-coin"},
+        {"name": "coinmarketcap", "url": "https://coinmarketcap.com/currencies/zaro-coin"}
     ]
 }
