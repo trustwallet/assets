@@ -1,17 +1,16 @@
-
 {
     "name": "FishFi",
     "symbol": "FISHFI",
     "type": "ERC20",
     "decimals": 18,
+    "id": "0x986130b867c173f24771329ead487f633aCE2863",
     "description": "FishFi is a decentralized finance token on Polygon network, enabling fast and low-cost swaps, trading, and DeFi participation.",
     "website": "https://fish-fi.com",
     "explorer": "https://polygonscan.com/token/0x986130b867c173f24771329ead487f633aCE2863",
     "status": "active",
-    "tags": ["defi", "polygon"],
+    "tags": ["defi"],
     "links": [
-        { "name": "twitter", "url": "https://twitter.com/fishfi" },
+        { "name": "twitter", "url": "https://x.com/fishfi" },
         { "name": "telegram", "url": "https://t.me/fishfi" }
-    ],
-    "logo": "https://fish-fi.com/FishFi_logo.png"
+    ]
 }
