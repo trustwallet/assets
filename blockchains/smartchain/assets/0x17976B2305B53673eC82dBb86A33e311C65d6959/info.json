@@ -1,18 +1,22 @@
 {
   "name": "Namori",
   "website": "https://discord.gg/Vn8558FxPJ",
-  "description": "Namori Token - Liquid Freedom Driver",
+  "description": "Namori Token - Liquid Freedom Driver. A community-driven project focused on liquid freedom and decentralized growth.",
   "explorer": "https://bscscan.com/token/0x17976B2305B53673eC82dBb86A33e311C65d6959",
-  "type": "BEP20",
+  "type": "COIN",
   "symbol": "NMO",
   "decimals": 18,
   "status": "active",
   "id": "0x17976B2305B53673eC82dBb86A33e311C65d6959",
-  "tags": ["bep20", "token"],
+  "tags": [],
   "links": [
     {
       "name": "discord",
       "url": "https://discord.gg/Vn8558FxPJ"
+    },
+    {
+      "name": "reddit",
+      "url": "https://www.reddit.com/r/NamoriToken/"
     }
   ]
 }
