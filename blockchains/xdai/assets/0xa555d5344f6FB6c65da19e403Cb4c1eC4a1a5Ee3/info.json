@@ -1,16 +1,16 @@
 {
     "name": "Bread Cooperative",
-    "website": "https://bread.coop",
-    "description": "Digital money built for mutual aid. BREAD is a stablecoin that enables anyone to support post-capitalist community projects.",
-    "explorer": "https://blockscout.com/xdai/mainnet/tokens/0xa555d5344f6FB6c65da19e403Cb4c1eC4a1a5Ee3",
     "type": "XDAI",
     "symbol": "BREAD",
     "decimals": 18,
+    "website": "https://bread.coop",
+    "description": "Digital money built for mutual aid. BREAD is a stablecoin that enables anyone to support post-capitalist community projects.",
+    "explorer": "https://gnosisscan.io/token/0xa555d5344f6FB6c65da19e403Cb4c1eC4a1a5Ee3",
     "status": "active",
     "id": "0xa555d5344f6FB6c65da19e403Cb4c1eC4a1a5Ee3",
     "links": [
         {
-            "name": "twitter",
+            "name": "x",
             "url": "https://x.com/breadcoop"
         },
         {
@@ -25,5 +25,8 @@
             "name": "docs",
             "url": "https://docs.bread.coop"
         }
+    ],
+    "tags": [
+        "stablecoin"
     ]
 }
