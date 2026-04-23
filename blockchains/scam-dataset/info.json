@@ -1,0 +1,24 @@
+{
+  "last_update": "2026-04-23",
+  "source": "Arta Security Lab",
+  "type": "scam_token_dataset",
+  "tokens": [
+    {"network":"solana","address":"EqBwbzaRPwP8R4TSoHcF5u3daZcEmkpVeJEK3nKGAnNJ","symbol":"USDT","risk":"high"},
+    {"network":"solana","address":"4zpV5uq3Uc5GpiuujFX5EJD3CJhiELUSawMTW6Ha9age","symbol":"USDT","risk":"high"},
+    {"network":"solana","address":"4hyvTS9P4Y4FkfZn2WSvsA1tucm47wMbrmM9rNVDdhMr","symbol":"USDT","risk":"high"},
+    {"network":"solana","address":"GHdqveWq74KFU7qguj7AM4i8HtzzZtAF4Tt8LfXV1Yn3","symbol":"USD.T","risk":"high"},
+    {"network":"solana","address":"51CVRGtyrV9DF3cbJ6xNxmjyvFFEyE2PLDraRqQU4Cu6","symbol":"USDT.T","risk":"high"},
+    {"network":"solana","address":"JACymcU6sL18DRabJP9MHYCrUrim5pkUSbvKx3Y35HXz","symbol":"USDT","risk":"high"},
+
+    {"network":"ethereum","address":"0x7fF317158a3C437675Ee1F027C407AbF92968201","symbol":"USD.T","risk":"high"},
+    {"network":"ethereum","address":"0x099E9E6a2252B952931EDa64950E87Bc73861594","symbol":"USD.T","risk":"high"},
+    {"network":"ethereum","address":"0x267B66243463427C101caBDA4adAfe64c380CA89","symbol":"USD.C","risk":"high"},
+    {"network":"ethereum","address":"0x6F8aAD52c0127aE0B676BDDEe340A24Afec5fC8E","symbol":"USDT.T","risk":"high"},
+
+    {"network":"bsc","address":"0x332C0F58763E3990204B780d33237DF4524d6d09","symbol":"USDT.T","risk":"high"},
+    {"network":"arbitrum","address":"0x6d011934C23B44559F237bF4C28A8919906C5955","symbol":"USD.T","risk":"high"},
+
+    {"network":"tron","address":"TKBuv1du4NnrevTCvpvpr7oAaiVcnRntNE","symbol":"USD.T","risk":"high"},
+    {"network":"tron","address":"TQZzxARTUFFMvWbVp7mZnjFA6CetQqT9z8","symbol":"USDT.T","risk":"high"}
+  ]
+}
