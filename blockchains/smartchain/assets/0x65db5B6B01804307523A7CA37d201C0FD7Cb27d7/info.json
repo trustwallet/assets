@@ -1,10 +1,7 @@
 {
-  "name": "Tether USD",
-  "website": "https://tether.to",
-  "description": "Tether (USDT) is a stablecoin pegged to the US Dollar.",
-  "explorer": "https://bscscan.com/token/0x65db5B6B01804307523A7CA37d201C0FD7Cb27d7",
+  
   "type": "BEP20",
-  "symbol": "USDT"
+  "symbol": "USDT",
   "decimals": 18,
   "status": "active",
   "id": "0x65db5B6B01804307523A7CA37d201C0FD7Cb27d7",
