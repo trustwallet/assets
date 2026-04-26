@@ -1,0 +1,18 @@
+{
+  "chainId": 100,
+  "address": "0x3C1ECB059d8B79402420e84cA17FFbBe1264eBd8",
+  "symbol": "DVGAS",
+  "name": "DirvenBank Gas",
+  "decimals": 18,
+  "logoURI": "https://raw.githubusercontent.com/dirven/assets/main/dvgas.png",
+  "tags": [
+    {
+      "id": "gas",
+      "name": "Gas Token"
+    }
+  ],
+  "extensions": {
+    "website": "https://dirven.bank",
+    "description": "DirvenBank - Cross-chain arbitrage system"
+  }
+}
