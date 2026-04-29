@@ -1,0 +1,32 @@
+{
+    "name": "FXRP",
+    "website": "https://flare.network/fassets",
+    "description": "FXRP is the FAsset representation of XRP on the Flare network. This is the LayerZero OFT (Omnichain Fungible Token) version on Ethereum, allowing FXRP to be bridged across chains while maintaining a 1:1 backing.",
+    "explorer": "https://etherscan.io/token/0xCE6170EA245dC8D1f275A710a062b70f125F0110",
+    "symbol": "FXRP",
+    "type": "ERC20",
+    "decimals": 6,
+    "id": "0xCE6170EA245dC8D1f275A710a062b70f125F0110",
+    "status": "active",
+    "tags": [
+        "defi"
+    ],
+    "links": [
+        {
+            "name": "docs",
+            "url": "https://dev.flare.network/fxrp/oft"
+        },
+        {
+            "name": "x",
+            "url": "https://x.com/FlareNetworks"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/FlareNetwork"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/flare-foundation"
+        }
+    ]
+}
