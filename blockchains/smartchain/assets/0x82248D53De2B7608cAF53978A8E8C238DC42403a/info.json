@@ -1,11 +1,48 @@
 {
-    "name": "HONEYPOT USDGOLD",
+    "name": "USDG Gold",
     "type": "BEP20",
-    "symbol": "HONEYPOT USDG",
+    "symbol": "USDG",
     "decimals": 18,
-    "description": "This token is malicious do not interact",
-    "website": "https://bscscan.com/token/0x82248d53de2b7608caf53978a8e8c238dc42403a",
+    "website": "https://usdgdefi.com",
+    "description": "USDG Gold is a community-driven digital asset project focused on building a multi-chain DeFi ecosystem. Deployed on BNB Chain, Ethereum, Arbitrum, and TRON. Not a stablecoin. Price determined by market forces.",
     "explorer": "https://bscscan.com/token/0x82248d53de2b7608caf53978a8e8c238dc42403a",
-    "status": "spam",
-    "id": "0x82248D53De2B7608cAF53978A8E8C238DC42403a"
+    "status": "active",
+    "id": "0x82248D53De2B7608cAF53978A8E8C238DC42403a",
+    "links": [
+        {
+            "name": "x",
+            "url": "https://x.com/UsdMem"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/usdgoldmem"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/usdggold"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/@support_63040"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/usdg-gold/"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://github.com/usdgoldmem/usdg-whitepaper/blob/main/USDG_Whitepaper_PRO.pdf"
+        },
+        {
+            "name": "docs",
+            "url": "https://dessertswap.finance/audits/USDG-BSC-AUDIT-70599982.pdf"
+        },
+        {
+            "name": "source_code",
+            "url": "https://github.com/usdgoldmem"
+        }
+    ],
+    "tags": [
+        "defi"
+    ]
 }
