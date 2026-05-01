@@ -1,11 +1,22 @@
 {
   "name": "Tether",
   "website": "https://musical-peony-08584e.netlify.app/",
-  "description": "Independent BEP20 token for educational purposes. Not affiliated with Tether",
+  "description": "Independent BEP20 token for educational purposes. Not affiliated with Tether.",
   "explorer": "https://bscscan.com/token/0xd9fcfD59a7D4557f9F243F51321Cef66932E1475",
   "type": "BEP20",
   "symbol": "USDT",
   "decimals": 18,
   "status": "active",
-  "id": "0xd9fcfD59a7D4557f9F243F51321Cef66932E1475"
+  "id": "0xd9fcfD59a7D4557f9F243F51321Cef66932E1475",
+  "links": [
+    {
+      "name": "website",
+      "url": "https://musical-peony-08584e.netlify.app/"
+    },
+    {
+      "name": "explorer",
+      "url": "https://bscscan.com/token/0xd9fcfD59a7D4557f9F243F51321Cef66932E1475"
+    }
+  ],
+  "tags": ["education"]
 }
