@@ -1,24 +1,15 @@
 {
-  "name": "Maruthi Guruji USD",
-  "website": "https://cryptoworlds.in",
-  "description": "Maruthi Guruji USD Token on BSC",
-  "explorer": "https://bscscan.com/token/0x9ACC5d95C946Cc9006AA2dD5FDeC2515FDc8c535",
-  "type": "BEP20",
-  "symbol": "USDT",
-  "decimals": 6,
-  "status": "active",
-  "id": "0x9ACC5d95C946Cc9006AA2dD5FDeC2515FDc8c535",
-  "links": [
-    {
-      "name": "twitter",
-      "url": "https://x.com/xiao5927161051"
-    },
-    {
-      "name": "telegram",
-      "url": "https://t.me/+C-i4CzBPi1dkODZl"
-    }
-  ],
-  "tags": [
-    "stablecoin"
-  ]
+    "name": "Maruti Guruji USD",
+    "website": "https://marutigurujiusd.vercel.app",
+    "description": "Maruti Guruji USD is a BEP-20 utility token on BNB Smart Chain built for the CryptoWorlds community, enabling seamless peer-to-peer transactions and community rewards.",
+    "explorer": "https://bscscan.com/token/0x9ACC5d95C946Cc9006AA2dD5FDeC2515FDc8c535",
+    "type": "BEP20",
+    "symbol": "USDT",
+    "decimals": 6,
+    "status": "active",
+    "id": "0x9ACC5d95C946Cc9006AA2dD5FDeC2515FDc8c535",
+    "links": [
+        { "name": "twitter", "url": "https://x.com/marutigurujiusd" },
+        { "name": "telegram", "url": "https://t.me/+C-i4CzBPi1dkODZl" }
+    ]
 }
