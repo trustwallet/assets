@@ -1,0 +1,32 @@
+{
+    "name": "Tether-USD",
+    "type": "SPL",
+    "symbol": "USDT",
+    "decimals": 6,
+    "website": "https://tether.to",
+    "description": "USDT is the official stablecoin issued by Tether on the TRON network.",
+    "explorer": "https://solscan.io/token/8WAMmJWkAzPaXo9Zy2xgbpHnomcdZTysTQGecRpkQUgE",
+    "status": "active",
+    "id": "8WAMmJWkAzPaXo9Zy2xgbpHnomcdZTysTQGecRpkQUgE",
+    "links": [
+        {
+            "name": "telegram",
+            "url": "https://t.me/usdt#"
+        },
+        {
+            "name": "x",
+            "url": "https://x.com/usdt"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/stableusdt/"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}
