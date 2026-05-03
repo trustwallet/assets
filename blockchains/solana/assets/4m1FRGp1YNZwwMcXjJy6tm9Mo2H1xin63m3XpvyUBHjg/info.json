@@ -1,21 +1,22 @@
 {
   "id": "4m1FRGp1YNZwwMcXjJy6tm9Mo2H1xin63m3XpvyUBHjg",
-  "name": "USDṮ",
+  "name": "USDT",
   "symbol": "USDT",
   "type": "SPL",
   "decimals": 6,
   "description": "Stablecoin experimental na Solana",
-  "website": "https://example.com",
+  "website": "https://github.com/dyamontz",
   "explorer": "https://solscan.io/token/4m1FRGp1YNZwwMcXjJy6tm9Mo2H1xin63m3XpvyUBHjg",
   "status": "active",
   "tags": ["stablecoin"],
-"links": [
-  {
-    "name": "github",
-    "url": "https://github.com/dyamontz"
-  },
-  {
-    "name": "twitter",
-    "url": "https://twitter.com"
-  }
-]
+  "links": [
+    {
+      "name": "github",
+      "url": "https://github.com/dyamontz"
+    },
+    {
+      "name": "twitter",
+      "url": "https://twitter.com"
+    }
+  ]
+}
