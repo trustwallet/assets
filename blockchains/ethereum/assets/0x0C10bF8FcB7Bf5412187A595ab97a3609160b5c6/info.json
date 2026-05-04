@@ -1,17 +1,17 @@
 {
-    "name": "Decentralized USD",
-    "symbol": "USDD",
+    "name": "Decentralized USDOLD",
+    "symbol": "USDDOLD",
     "type": "ERC20",
     "decimals": 18,
     "description": "USDD is a fully decentralized algorithmic stablecoin",
     "website": "https://usdd.io/",
     "explorer": "https://etherscan.io/token/0x0c10bf8fcb7bf5412187a595ab97a3609160b5c6",
-    "status": "active",
+    "status": "abandoned",
     "id": "0x0C10bF8FcB7Bf5412187A595ab97a3609160b5c6",
     "links": [
         {
-            "name": "twitter",
-            "url": "https://twitter.com/usddio"
+            "name": "x",
+            "url": "https://x.com/usddio"
         },
         {
             "name": "whitepaper",
@@ -22,4 +22,3 @@
         "stablecoin"
     ]
 }
-
