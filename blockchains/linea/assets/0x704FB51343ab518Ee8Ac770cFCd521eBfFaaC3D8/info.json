@@ -1,11 +1,24 @@
 {
+  "id": "ront-linea",
   "name": "RONT",
   "symbol": "RONT",
   "type": "ERC20",
   "decimals": 18,
   "address": "0x704FB51343ab518Ee8Ac770cFCd521eBfFaaC3D8",
   "chainId": 59144,
+  "status": "active",
   "website": "https://ront.ro",
-  "description": "RONT is an ERC-20 token deployed on the Linea blockchain for educational and technical demonstration purposes.",
-  "explorer": "https://lineascan.build/address/0x704FB51343ab518Ee8Ac770cFCd521eBfFaaC3D8"
+  "explorer": "https://etherscan.io/token/0x704FB51343ab518Ee8Ac770cFCd521eBfFaaC3D8",
+
+  "links": [
+    "https://t.me/rontoken",
+    "https://lineascan.build/address/0x704FB51343ab518Ee8Ac770cFCd521eBfFaaC3D8"
+  ],
+
+  "tags": [
+    "education",
+    "token"
+  ],
+
+  "description": "RONT is an ERC-20 token deployed on the Linea blockchain for educational and technical demonstration purposes."
 }
