@@ -9,22 +9,19 @@
   "status": "active",
   "website": "https://ront.ro",
   "explorer": "https://etherscan.io/token/0x704FB51343ab518Ee8Ac770cFCd521eBfFaaC3D8",
-
   "links": [
-  {
-    "name": "telegram",
-    "url": "https://t.me/rontoken"
-  },
-  {
-    "name": "explorer",
-    "url": "https://lineascan.build/address/0x704FB51343ab518Ee8Ac770cFCd521eBfFaaC3D8"
-  }
-]
-
+    {
+      "name": "telegram",
+      "url": "https://t.me/rontoken"
+    },
+    {
+      "name": "explorer",
+      "url": "https://lineascan.build/address/0x704FB51343ab518Ee8Ac770cFCd521eBfFaaC3D8"
+    }
+  ],
   "tags": [
     "education",
     "token"
   ],
-
   "description": "RONT is an ERC-20 token deployed on the Linea blockchain for educational and technical demonstration purposes."
 }
