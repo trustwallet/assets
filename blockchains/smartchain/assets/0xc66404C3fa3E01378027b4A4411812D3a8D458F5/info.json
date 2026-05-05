@@ -3,9 +3,36 @@
   "type": "BEP20",
   "symbol": "SYL",
   "decimals": 18,
-  "description": "Sylvan Token is a sustainability-focused BEP20 token supporting environmental initiatives through automated on-chain mechanisms.",
+  "description": "Sylvan Token is a sustainability-focused BEP20 token supporting environmental initiatives with audited smart contracts and transparent tokenomics.",
   "website": "https://www.sylvantoken.org",
   "explorer": "https://bscscan.com/token/0xc66404C3fa3E01378027b4A4411812D3a8D458F5",
   "status": "active",
-  "id": "0xc66404C3fa3E01378027b4A4411812D3a8D458F5"
+  "id": "0xc66404C3fa3E01378027b4A4411812D3a8D458F5",
+  "links": [
+    {
+      "name": "website",
+      "url": "https://www.sylvantoken.org"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/SylvanToken/SylvanToken"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/SylvanCommunity"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/sylvantoken"
+    },
+    {
+      "name": "documentation",
+      "url": "https://sylvan-token.gitbook.io/sylvan-token-docs/about/about"
+    },
+    {
+      "name": "audit",
+      "url": "https://app.solidproof.io/projects/sylvan-token"
+    }
+  ],
+  "tags": ["defi", "sustainability"]
 }
