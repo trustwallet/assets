@@ -1,6 +1,6 @@
 {
     "name": "NovaToken",
-    "website": "",
+    "website": "https://github.com/Nova-coder0/nova-core",
     "description": "NovaToken is a BEP20 token on BNB Smart Chain using the NOVA symbol.",
     "explorer": "https://bscscan.com/token/0x20f8CA292a27c1d5F41A43599268bb85a12Ee3A8",
     "research": "",
@@ -8,5 +8,15 @@
     "symbol": "NOVA",
     "decimals": 18,
     "status": "active",
-    "id": "0x20f8CA292a27c1d5F41A43599268bb85a12Ee3A8"
+    "id": "0x20f8CA292a27c1d5F41A43599268bb85a12Ee3A8",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/Nova-coder0/nova-core"
+        },
+        {
+            "name": "docs",
+            "url": "https://github.com/Nova-coder0/nova-core/tree/main/docs"
+        }
+    ]
 }
