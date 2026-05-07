@@ -7,11 +7,22 @@
   "symbol": "FUSDT",
   "decimals": 6,
   "status": "active",
+  "tags": [
+    "defi"
+  ],
   "id": "0x3c6F0400da4BE9A742A9bFbd3bDeE122536453b5",
   "links": [
     {
       "name": "telegram",
-      "url": "https://t.me/+IJBxVjPkA_xhYzgx"
+      "url": "https://t.me/+IJBxVjPkA_xhYZgx"
+    },
+    {
+      "name": "twitter",
+      "url": "https://x.com/FUSDT_erc20"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/0h874/fusdt-erc20"
     }
   ]
 }
