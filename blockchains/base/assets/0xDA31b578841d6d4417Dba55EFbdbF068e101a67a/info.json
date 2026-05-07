@@ -1,17 +1,16 @@
 {
   "name": "SMESH",
   "website": "https://smesh.gg",
-  "description": "SMESH is the liquidity token powering blockchain-native trade finance. Real yield from short-duration trade finance deals flows to SMESH LP holders via Aerodrome.",
-  "explorer": "https://basescan.org/token/0xDA31b578841d6d4417Dba55EFbdbF068e101a67a",
-  "research": "https://smesh.gg/tokenomics",
+  "description": "SMESH is the liquidity token powering blockchain-native trade finance. Real yield from short-duration trade finance deals flows to SMESH LP holders via Aerodrome on Base.",
+  "explorer": "https://etherscan.io/token/0xDA31b578841d6d4417Dba55EFbdbF068e101a67a",
+  "research": "https://smesh.gg",
   "type": "ERC20",
   "symbol": "SMESH",
   "decimals": 18,
   "status": "active",
   "id": "0xDA31b578841d6d4417Dba55EFbdbF068e101a67a",
   "links": [
-    { "name": "website", "url": "https://smesh.gg" },
     { "name": "twitter", "url": "https://x.com/smesh_gg" },
-    { "name": "email", "url": "mailto:admin@traidefi.ai" }
+    { "name": "whitepaper", "url": "https://smesh.gg" }
   ]
 }
