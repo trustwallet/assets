@@ -4,14 +4,21 @@
   "type": "ERC20",
   "decimals": 18,
   "description": "TetherCat USDT.C - a USD-pegged ERC20 token deployed on Avalanche C-Chain.",
-  "website": "",
+  "website": "https://snowtrace.io/token/0xA1f0BE6a2E7a885f95ed9B971127b6f70559F409",
   "explorer": "https://snowtrace.io/token/0xA1f0BE6a2E7a885f95ed9B971127b6f70559F409",
   "status": "active",
   "id": "0xA1f0BE6a2E7a885f95ed9B971127b6f70559F409",
+  "tags": [
+    "stablecoin"
+  ],
   "links": [
     {
       "name": "explorer",
       "url": "https://snowtrace.io/token/0xA1f0BE6a2E7a885f95ed9B971127b6f70559F409"
+    },
+    {
+      "name": "source_code",
+      "url": "https://snowtrace.io/address/0xA1f0BE6a2E7a885f95ed9B971127b6f70559F409#code"
     }
   ]
 }
