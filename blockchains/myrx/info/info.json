@@ -1,9 +1,14 @@
 {
   "name": "MYRX-MAINNET",
   "website": "https://myrxwallet.io",
-  "short_description": "Sovereign EVM blockchain for healthcare data and provider settlement.",
+  "short_description": "Sovereign EVM blockchain for healthcare data monetization and provider settlement.",
   "explorer": "https://explorer.myrxwallet.io",
   "research": "https://github.com/MyRxWallet",
+  "rpc_url": "https://rpc.myrxwallet.io",
+  "chain_id": "8472",
+  "symbol": "MRT",
+  "decimals": 18,
+  "status": "active",
   "links": [
     {
       "name": "github",
@@ -12,6 +17,10 @@
     {
       "name": "homepage",
       "url": "https://myrxwallet.io"
+    },
+    {
+      "name": "explorer",
+      "url": "https://explorer.myrxwallet.io"
     }
   ],
   "tags": [
