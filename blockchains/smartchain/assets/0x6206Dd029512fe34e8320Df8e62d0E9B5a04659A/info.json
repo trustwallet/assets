@@ -3,12 +3,16 @@
   "type": "BEP20",
   "symbol": "DAYF",
   "decimals": 18,
-  "website": "https://dayf.space/",
+  "website": "https://dayf.space",
   "description": "DAYF is a blockchain project focused on smart technologies, digital systems, automated trading, and future decentralized solutions.",
   "explorer": "https://bscscan.com/token/0x6206Dd029512fe34e8320Df8e62d0E9B5a04659A",
   "status": "active",
   "id": "0x6206Dd029512fe34e8320Df8e62d0E9B5a04659A",
   "links": [
+    {
+      "name": "website",
+      "url": "https://dayf.space"
+    },
     {
       "name": "twitter",
       "url": "https://x.com/smrtdayf"
@@ -19,15 +23,16 @@
     },
     {
       "name": "github",
-      "url": "https://github.com/dafallh85/DAYF"
+      "url": "https://github.com/dafallh85/dayf"
     },
     {
       "name": "youtube",
-      "url": "https://youtube.com/watch?v=cv14Qs4f_mg"
+      "url": "https://youtu.be/cv14Qs4f_mg?si=TeZaAommSUsZthAk"
     }
   ],
   "tags": [
     "defi",
-    "gamefi"
+    "gamefi",
+    "technology"
   ]
 }
