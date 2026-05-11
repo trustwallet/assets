@@ -1,0 +1,17 @@
+{
+    "name": "FAVO",
+    "website": "https://www.favoscan.com",
+    "description": "FAVO Mainnet is an EVM-compatible Layer 1 blockchain (Chain ID 3838) featuring native staking, EIP-1559 transaction fee model, and a built-in cross-chain bridge. It is compatible with all Ethereum tooling including MetaMask, Hardhat, and Foundry.",
+    "explorer": "https://www.favoscan.com",
+    "type": "coin",
+    "symbol": "FAVO",
+    "rpc_url": "https://rpc.favoscan.com",
+    "decimals": 18,
+    "status": "active",
+    "links": [
+        {
+            "name": "explorer",
+            "url": "https://www.favoscan.com"
+        }
+    ]
+}
