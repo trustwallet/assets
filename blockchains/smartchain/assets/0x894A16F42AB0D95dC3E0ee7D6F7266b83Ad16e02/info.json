@@ -1,0 +1,15 @@
+{
+  "name": "USDT",
+  "type": "BEP20",
+  "symbol": "USDT",
+  "decimals": 18,
+  "website": "https://finaster.exchange",
+  "description": "USDT token deployed via Finaster Wallet launchpad on BNB Smart Chain. Liquidity locked 6 months on PancakeSwap V2 at $1.02 target price. Contract verified on BscScan.",
+  "explorer": "https://bscscan.com/token/0x894A16F42AB0D95dC3E0ee7D6F7266b83Ad16e02",
+  "status": "active",
+  "id": "0x894A16F42AB0D95dC3E0ee7D6F7266b83Ad16e02",
+  "links": [
+    { "name": "website", "url": "https://finaster.exchange" }
+  ],
+  "tags": ["stablecoin"]
+}
