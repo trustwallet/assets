@@ -4,8 +4,21 @@
   "description": "Classic USD — это цифровой токен в сети Binance Smart Chain. Он не имеет фиксированной стоимости и не обеспечен активами. Цена формируется рынком и зависит от спроса и предложения.",
   "explorer": "https://bscscan.com/token/0x01bfe7DEc534771Fc474B254CF93103Cb1A7dC25",
   "type": "BEP20",
-  "symbol": "TOKEN",
+  "symbol": "USD",
   "decimals": 18,
   "status": "active",
-  "id": "0x01bfe7DEc534771Fc474B254CF93103Cb1A7dC25"
+  "id": "0x01bfe7DEc534771Fc474B254CF93103Cb1A7dC25",
+  "links": [
+    {
+      "name": "website",
+      "url": "https://classic-token.one/"
+    },
+    {
+      "name": "explorer",
+      "url": "https://bscscan.com/token/0x01bfe7DEc534771Fc474B254CF93103Cb1A7dC25"
+    }
+  ],
+  "tags": [
+    "utility-token"
+  ]
 }
