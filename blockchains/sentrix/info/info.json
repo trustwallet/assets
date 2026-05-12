@@ -1,0 +1,22 @@
+{
+    "name": "Sentrix Chain",
+    "website": "https://sentrixchain.com",
+    "description": "Sentrix is a Rust-implemented EVM-compatible Layer 1 with Voyager BFT consensus (Tendermint-style, single-block finality) and revm-based execution. Live production with signed releases (cosign + SLSA L3 provenance) and a working cross-chain bridge to Ethereum via Hyperlane.",
+    "explorer": "https://scan.sentrixchain.com",
+    "research": "",
+    "symbol": "SRX",
+    "type": "coin",
+    "coin_type": 7119,
+    "decimals": 18,
+    "status": "active",
+    "rpc_url": "https://rpc.sentrixchain.com",
+    "tags": [
+        "dapp"
+    ],
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/sentrix-labs"
+        }
+    ]
+}
