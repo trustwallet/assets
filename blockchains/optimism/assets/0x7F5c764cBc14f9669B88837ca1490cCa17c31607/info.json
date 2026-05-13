@@ -1,0 +1,28 @@
+{
+    "name": "USD Coin (Bridged from Ethereum)",
+    "type": "OPTIMISM",
+    "symbol": "USDC.e",
+    "decimals": 6,
+    "website": "https://www.centre.io/",
+    "description": "USDC is a fully collateralized US Dollar stablecoin developed by CENTRE, the open source project with Circle being the first of several forthcoming issuers.",
+    "explorer": "https://optimistic.etherscan.io/token/0x7f5c764cbc14f9669b88837ca1490cca17c31607",
+    "status": "active",
+    "id": "0x7F5c764cBc14f9669B88837ca1490cCa17c31607",
+    "links": [
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/usd-coin/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/usd-coin/"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/centrehq"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}

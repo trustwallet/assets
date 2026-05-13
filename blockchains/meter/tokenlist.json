@@ -1,0 +1,106 @@
+{
+    "name": "Trust Wallet: Meter List",
+    "logoURI": "https://trustwallet.com/assets/images/favicon.png",
+    "timestamp": "2022-07-03T00:00:00.000Z",
+    "tokens": [
+        {
+            "asset": "c18000_t0x1cf09D1B5Da9d9d24365D87B932A7c4bD018A419",
+            "type": "METER",
+            "address": "0x1cf09D1B5Da9d9d24365D87B932A7c4bD018A419",
+            "name": "AmpleForth",
+            "symbol": "AMPL",
+            "decimals": 9,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/metter/assets/0x1cf09D1B5Da9d9d24365D87B932A7c4bD018A419/logo.png"
+        },
+        {
+            "asset": "c18000_t0xF0E86246519Be0810C9FAfc8430C49799985aAA8",
+            "type": "METER",
+            "address": "0xF0E86246519Be0810C9FAfc8430C49799985aAA8",
+            "name": "BNB from BSC on Meter",
+            "symbol": "BNB",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/metter/assets/0xF0E86246519Be0810C9FAfc8430C49799985aAA8/logo.png"
+        },
+        {
+            "asset": "c18000_t0x24aA189DfAa76c671c279262F94434770F557c35",
+            "type": "METER",
+            "address": "0x24aA189DfAa76c671c279262F94434770F557c35",
+            "name": "BUSD from BSC on Meter",
+            "symbol": "BUSD.bsc",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/metter/assets/0x24aA189DfAa76c671c279262F94434770F557c35/logo.png"
+        },
+        {
+            "asset": "c18000_t0x983147FB73A45FC7F8B4DFA1cd61Bdc7b111e5b6",
+            "type": "METER",
+            "address": "0x983147FB73A45FC7F8B4DFA1cd61Bdc7b111e5b6",
+            "name": "ETH from Ethereum on Meter",
+            "symbol": "ETH",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/metter/assets/0x983147FB73A45FC7F8B4DFA1cd61Bdc7b111e5b6/logo.png"
+        },
+        {
+            "asset": "c18000_t0x6CFe9AdaD5215195c1Aa9755DAed29360e6Ab986",
+            "type": "METER",
+            "address": "0x6CFe9AdaD5215195c1Aa9755DAed29360e6Ab986",
+            "name": "Factory Builders Token",
+            "symbol": "FTB",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/metter/assets/0x6CFe9AdaD5215195c1Aa9755DAed29360e6Ab986/logo.png"
+        },
+        {
+            "asset": "c18000_t0xb158870beB809Ad955Bf56065C5C10D7Fd957cC0",
+            "type": "METER",
+            "address": "0xb158870beB809Ad955Bf56065C5C10D7Fd957cC0",
+            "name": "MOVR from MoonRiver on Meter",
+            "symbol": "MOVR",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/metter/assets/0xb158870beB809Ad955Bf56065C5C10D7Fd957cC0/logo.png"
+        },
+        {
+            "asset": "c18000_t0x228ebBeE999c6a7ad74A6130E81b12f9Fe237Ba3",
+            "type": "METER",
+            "address": "0x228ebBeE999c6a7ad74A6130E81b12f9Fe237Ba3",
+            "name": "Meter Governance",
+            "symbol": "MTRG",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/metter/assets/0x228ebBeE999c6a7ad74A6130E81b12f9Fe237Ba3/logo.png"
+        },
+        {
+            "asset": "c18000_t0xD86e243FC0007e6226B07c9A50C9d70D78299EB5",
+            "type": "METER",
+            "address": "0xD86e243FC0007e6226B07c9A50C9d70D78299EB5",
+            "name": "USDC from Ethereum on Meter",
+            "symbol": "USDC.eth",
+            "decimals": 6,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/metter/assets/0xD86e243FC0007e6226B07c9A50C9d70D78299EB5/logo.png"
+        },
+        {
+            "asset": "c18000_t0x5Fa41671c48e3C951AfC30816947126CCC8C162e",
+            "type": "METER",
+            "address": "0x5Fa41671c48e3C951AfC30816947126CCC8C162e",
+            "name": "USDT from Ethereum on Meter",
+            "symbol": "USDT.eth",
+            "decimals": 6,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/metter/assets/0x5Fa41671c48e3C951AfC30816947126CCC8C162e/logo.png"
+        },
+        {
+            "asset": "c18000_t0x8Df95e66Cb0eF38F91D2776DA3c921768982fBa0",
+            "type": "METER",
+            "address": "0x8Df95e66Cb0eF38F91D2776DA3c921768982fBa0",
+            "name": "Volt",
+            "symbol": "VOLT",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/metter/assets/0x8Df95e66Cb0eF38F91D2776DA3c921768982fBa0/logo.png"
+        },
+        {
+            "asset": "c18000_t0xc1f6C86ABEe8e2e0B6fd5BD80F0b51fef783635C",
+            "type": "METER",
+            "address": "0xc1f6C86ABEe8e2e0B6fd5BD80F0b51fef783635C",
+            "name": "WBTC from Ethereum on Meter",
+            "symbol": "WBTC.eth",
+            "decimals": 8,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/metter/assets/0xc1f6C86ABEe8e2e0B6fd5BD80F0b51fef783635C/logo.png"
+        }
+    ]
+}
