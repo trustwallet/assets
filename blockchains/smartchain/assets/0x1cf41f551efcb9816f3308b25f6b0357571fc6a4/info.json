@@ -2,10 +2,14 @@
   "name": "BuildVerse",
   "symbol": "VRS",
   "decimals": 0,
+  "id": "vrs",
   "website": "https://buildverse.one",
+  "explorer": "https://bscscan.com/token/0x1cf41f551efcb9816f3308b25f6b0357571fc6a4",
+  "status": "active",
   "description": "Real Estate meets innovation. Fractional investing worldwide.",
-  "type": "BEP20",
+  "tags": ["rwa", "real-estate"],
   "social": {
-    "twitter": "https://x.com/BuildVrs01"
+    "twitter": "https://x.com/BuildVrs01",
+    "github": "https://github.com/BuildVerseProject"
   }
 }
