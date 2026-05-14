@@ -1,0 +1,12 @@
+{
+  "name": "Aurum",
+  "type": "BEP20",
+  "symbol": "ARM",
+  "decimals": 18,
+  "website": "https://aurumswap.finance",
+  "description": "Aurum (ARM) is the native utility token of the AurumSwap protocol on BNB Smart Chain. ARM is a minimal, immutable ERC-20 with no admin functions: total supply of 100,000,000 was minted at deployment and cannot change. Holders may burn their own tokens via burn() / burnFrom(). The token powers a non-custodial staking pool with variable APR and a Chainlink-bound zap for one-click USDT/BNB onboarding. Source code is verified on BscScan.",
+  "explorer": "https://bscscan.com/token/0xAEb0EB3628eAE1B36Ac94FE1033530342ADE0E26",
+  "status": "active",
+  "id": "0xAEb0EB3628eAE1B36Ac94FE1033530342ADE0E26",
+  "tags": ["defi", "staking", "yield"]
+}
