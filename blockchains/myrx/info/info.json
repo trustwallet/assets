@@ -1,0 +1,30 @@
+{
+  "name": "MYRX-MAINNET",
+  "website": "https://myrxwallet.io",
+  "description": "Sovereign EVM healthcare settlement rail. ONC-certified FHIR R4 EHR platform operated by MyRxWallet North America Corporation (Wyoming, USA).",
+  "explorer": "https://explorer.myrxwallet.io",
+  "type": "EVM",
+  "symbol": "MYRX",
+  "decimals": 18,
+  "status": "active",
+  "id": "myrx",
+  "links": [
+    {
+      "name": "website",
+      "url": "https://myrxwallet.io"
+    },
+    {
+      "name": "explorer",
+      "url": "https://explorer.myrxwallet.io"
+    },
+    {
+      "name": "rpc",
+      "url": "https://rpc.myrxwallet.io"
+    }
+  ],
+  "tags": [
+    "healthcare",
+    "evm",
+    "layer1"
+  ]
+}
