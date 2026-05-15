@@ -1,0 +1,18 @@
+{
+    "name": "MyrxWallet Network",
+    "website": "https://myrxwallet.io",
+    "description": "Healthcare-focused EVM-compatible blockchain powering prescription management, pharmacy benefits, and DeFi health savings. Native DEX MyrxSwap live on-chain.",
+    "explorer": "https://explorer.myrxwallet.io",
+    "symbol": "MRT",
+    "rpc_url": "https://rpc.myrxwallet.io",
+    "coin_type": 8472,
+    "type": "coin",
+    "decimals": 18,
+    "status": "active",
+    "tags": ["healthcare", "defi", "dapp"],
+    "links": [
+        { "name": "twitter",   "url": "https://twitter.com/myrxwallet" },
+        { "name": "github",    "url": "https://github.com/myrxwallet" },
+        { "name": "whitepaper","url": "https://myrxwallet.io/docs" }
+    ]
+}
