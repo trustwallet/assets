@@ -1,12 +1,24 @@
 {
-  "id": "0x1CF41f551efCb9816f3308B25f6b0357571FC6A4",
-  "symbol": "VRS",
   "name": "BuildVerse",
   "type": "BEP20",
+  "symbol": "VRS",
   "decimals": 0,
   "website": "https://buildverse.one",
-  "twitter": "https://x.com/BuildVrs01",
-  "github": "https://github.com/BuildVerseProject",
-  "tags": ["defi"],
-  "description": "Real Estate meets innovation."
+  "description": "Real Estate meets innovation.",
+  "explorer": "https://bscscan.com/token/0x1CF41f551efCb9816f3308B25f6b0357571FC6A4",
+  "status": "active",
+  "id": "0x1CF41f551efCb9816f3308B25f6b0357571FC6A4",
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://x.com/BuildVrs01"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/BuildVerseProject"
+    }
+  ],
+  "tags": [
+    "defi"
+  ]
 }
