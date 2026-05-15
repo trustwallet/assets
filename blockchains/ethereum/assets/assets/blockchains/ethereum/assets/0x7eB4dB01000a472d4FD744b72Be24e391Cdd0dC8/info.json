@@ -4,8 +4,15 @@
   "type": "ERC20",
   "decimals": 18,
   "description": "SexCoin is a digital asset built on the Ethereum blockchain.",
-  "website": "",
-  "explorer": "[etherscan.io](https://etherscan.io/token/0x7eB4dB01000a472d4FD744b72Be24e391Cdd0dC8)",
+  "website": "https://sexcoinprofilo.github.io/SexCoin-Site/",
+  "explorer": "https://etherscan.io/token/0x7eB4dB01000a472d4FD744b72Be24e391Cdd0dC8",
   "status": "active",
-  "id": "0x7eB4dB01000a472d4FD744b72Be24e391Cdd0dC8"
+  "id": "0x7eB4dB01000a472d4FD744b72Be24e391Cdd0dC8",
+
+  "links": {
+    "website": "https://sexcoinprofilo.github.io/SexCoin-Site/",
+    "github": "https://github.com/SexCoinProfilo/assets",
+  },
+
+  "tags": ["DeFi", "ERC20"]
 }
