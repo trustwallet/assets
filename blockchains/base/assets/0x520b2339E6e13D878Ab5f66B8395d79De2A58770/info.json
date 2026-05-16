@@ -3,10 +3,20 @@
     "type": "BASE",
     "symbol": "OWENSY",
     "decimals": 18,
-    "description": "First token backed by cryptographic claims on abandoned Ethereum wallets. $63K in verified claims.",
-    "website": "",
-    "explorer": "https://basescan.org/address/0x520b2339E6e13D878Ab5f66B8395d79De2A58770",
+    "description": "First token backed by cryptographic claims on abandoned Ethereum wallets. $63K in verified claims across 378 wallets.",
+    "website": "https://dexscreener.com/base/0x520b2339E6e13D878Ab5f66B8395d79De2A58770",
+    "explorer": "https://basescan.org/token/0x520b2339E6e13D878Ab5f66B8395d79De2A58770",
     "status": "active",
     "id": "0x520b2339E6e13D878Ab5f66B8395d79De2A58770",
-    "links": []
+    "tags": ["defi"],
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://x.com"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/trustwallet/assets"
+        }
+    ]
 }
