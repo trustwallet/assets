@@ -1,20 +1,23 @@
 {
-  "name": "Timer",
-  "symbol": "TMR",
-  "type": "BEP20",
-  "decimals": 18,
-  "description": "Timer token on BSC",
-  "website": "https://www.the-timer.cloud/",
-  "explorer": "https://bscscan.com/token/0xe3cf7286fc0505c1522af3c6b68d3e376b5a4dc3",
-  "links": [
-    {
-      "name": "twitter",
-      "url": "https://twitter.com/timer148731"
-    },
-    {
-      "name": "telegram",
-      "url": "https://t.me/timer_project"
-    }
-  ],
-  "tags": ["bep20"]
+    "name": "Timer",
+    "type": "BEP20",
+    "symbol": "TMR",
+    "decimals": 18,
+    "description": "Timer token on BSC",
+    "website": "https://www.the-timer.cloud/",
+    "explorer": "https://bscscan.com/token/0xe3cf7286fc0505c1522af3c6b68d3e376b5a4dc3",
+    "status": "active",
+    "links": [
+        {
+            "name": "x",
+            "url": "https://twitter.com/timer148731"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/timer_project"
+        }
+    ],
+    "tags": [
+        "bep20"
+    ]
 }
