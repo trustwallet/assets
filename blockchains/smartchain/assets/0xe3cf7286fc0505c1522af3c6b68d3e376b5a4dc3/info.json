@@ -1,12 +1,11 @@
 {
-  "id": "0xe3cf7286fc0505c1522af3c6b68d3e376b5a4dc3",
   "name": "Timer",
   "symbol": "TMR",
   "type": "BEP20",
   "decimals": 18,
   "description": "Timer token on BSC",
   "website": "https://www.the-timer.cloud/",
-  "explorer": "https://bscscan.com/token/timer-token",
+  "explorer": "https://bscscan.com/token/0xe3cf7286fc0505c1522af3c6b68d3e376b5a4dc3",
   "links": [
     {
       "name": "twitter",
@@ -16,5 +15,6 @@
       "name": "telegram",
       "url": "https://t.me/timer_project"
     }
-  ]
+  ],
+  "tags": ["bep20"]
 }
