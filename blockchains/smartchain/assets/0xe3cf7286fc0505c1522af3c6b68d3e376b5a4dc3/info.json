@@ -9,8 +9,14 @@
   "explorer": "https://bscscan.com/token/",
   "tags": ["token", "bep20"],
   "links": [
-    "https://twitter.com/timer148731",
-    "https://t.me/timer_project"
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/timer148731"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/timer_project"
+    }
   ],
   "status": "active"
 }
