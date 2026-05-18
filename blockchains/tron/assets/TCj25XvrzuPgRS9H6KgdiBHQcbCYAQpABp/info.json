@@ -4,7 +4,22 @@
   "type": "TRC20",
   "decimals": 6,
   "description": "NOVS NVX Token on TRON",
+  "website": "https://novsnvxtoken.com",
   "explorer": "https://tronscan.org/#/token20/TCj25XvrzuPgRS9H6KgdiBHQcbCYAQpABp",
   "status": "active",
-  "id": "TCj25XvrzuPgRS9H6KgdiBHQcbCYAQpABp"
+  "id": "TCj25XvrzuPgRS9H6KgdiBHQcbCYAQpABp",
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://x.com/TncyUs63958"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/+miW0qO5gSqVkYzRi"
+    },
+    {
+      "name": "research",
+      "url": "https://sun.io/?lang=en-US#/scan/pairDetail?pairAddress=TPhDBRZEh5A9Z9PF5M76GqdbwkUUGYw61N&version=v2"
+    }
+  ]
 }
