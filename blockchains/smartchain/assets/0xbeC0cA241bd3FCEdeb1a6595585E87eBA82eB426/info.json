@@ -4,8 +4,13 @@
   "symbol": "BRTC",
   "decimals": 18,
   "website": "https://brunotoken.com",
-  "description": "Bruno Token Coin (BRTC) - utility token of Bruno Kapital Web3 ecosystem on Binance Smart Chain",
+  "description": "Bruno Token Coin (BRTC) is the on-chain utility token of Bruno Kapital ecosystem. Built on Binance Smart Chain (BEP-20), 0% buy/sell tax, ownership renounced, liquidity locked.",
   "explorer": "https://bscscan.com/token/0xbeC0cA241bd3FCEdeb1a6595585E87eBA82eB426",
   "status": "active",
-  "id": "0xbeC0cA241bd3FCEdeb1a6595585E87eBA82eB426"
+  "id": "0xbeC0cA241bd3FCEdeb1a6595585E87eBA82eB426",
+  "links": [
+    { "name": "website", "url": "https://brunotoken.com" },
+    { "name": "telegram", "url": "https://t.me/brunokapital" }
+  ],
+  "tags": ["staking"]
 }
