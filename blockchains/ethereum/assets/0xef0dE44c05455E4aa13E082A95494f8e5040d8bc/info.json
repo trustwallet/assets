@@ -1,0 +1,24 @@
+{
+  "name": "ɄniTether",
+  "type": "ERC20",
+  "symbol": "ɄSDT",
+  "decimals": 18,
+  "website": "https://unitether.help",
+  "description": "ɄniTether (ɄSDT) is an ERC-20 stablecoin issued exclusively to the Blockchain-Vetted Charity Fund (BV-CF). The destination address is hard-coded into the contract as an immutable variable, making it impossible for any actor to redirect newly minted tokens. The contract enforces a 1,000,000,000 hard cap and emits on-chain events for every mint and burn — providing a complete, publicly auditable issuance history.",
+  "explorer": "https://etherscan.io/token/0xef0dE44c05455E4aa13E082A95494f8e5040d8bc",
+  "status": "active",
+  "id": "0xef0dE44c05455E4aa13E082A95494f8e5040d8bc",
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://x.com/UniTether"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/UniTether"
+    }
+  ],
+  "tags": [
+    "stablecoin"
+  ]
+}
