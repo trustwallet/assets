@@ -1,24 +1,11 @@
 {
-  "name": "Angel Guard",
-  "type": "BEP20",
-  "symbol": "AGU",
-  "decimals": 18,
-  "description": "Angel Guard (AGU) is a security-focused project dedicated to building trust through a transparent and fixed supply model.",
-  "website": "https://aguguard.com",
-  "explorer": "https://bscscan.com/token/0x0B768f0a19d8a18090DDcAFB9bC55211D38B2B22",
-  "status": "active",
-  "id": "0x0B768f0a19d8a18090DDcAFB9bC55211D38B2B22",
-  "tags": [
-    "defi"
-  ],
-  "links": [
-    {
-      "name": "twitter",
-      "url": "https://x.com/Agu_GUard"
-    },
-    {
-      "name": "telegram",
-      "url": "https://t.me/+vH7D8JMzl5E4NmVh/"
-    }
-  ]
+    "name": "AGU Guard",
+    "website": "https://aguguard.com",
+    "description": "Token oficial del ecosistema de seguridad AGU Scan en la BNB Chain.",
+    "explorer": "https://bscscan.com/token/0x0B768f0a19d8a18090DDcAFB9bC55211D38B2B22",
+    "type": "BEP20",
+    "symbol": "AGU",
+    "decimals": 18,
+    "status": "active",
+    "id": "0x0B768f0a19d8a18090DDcAFB9bC55211D38B2B22"
 }
