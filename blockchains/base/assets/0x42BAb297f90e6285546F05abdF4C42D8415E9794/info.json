@@ -1,4 +1,21 @@
 {
   "name": "Pup Cup",
   "website": "https://theanvil.xyz",
-  "description": "PUPCUP is the token powering the World Pup Protocol 
+  "description": "PUPCUP is the token powering the World Pup Protocol, a World Cup prediction market on Base. Bridge ETH to Base via The Hammer, stake for bridge and LP rewards, or swap for Pup Cup NFTs.",
+  "explorer": "https://basescan.org/token/0x42bab297f90e6285546f05abdf4c42d8415e9794",
+  "type": "ERC20",
+  "symbol": "PUPCUP",
+  "decimals": 18,
+  "status": "active",
+  "id": "0x42BAb297f90e6285546F05abdF4C42D8415E9794",
+  "links": [
+    {
+      "name": "dexscreener",
+      "url": "https://dexscreener.com/base/0x42bab297f90e6285546f05abdf4c42d8415e9794"
+    },
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/clutchlabs_"
+    }
+  ]
+}
