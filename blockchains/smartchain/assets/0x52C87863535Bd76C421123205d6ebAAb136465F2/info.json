@@ -3,6 +3,7 @@
   "type": "BEP20",
   "symbol": "SC",
   "decimals": 18,
+  "status": "active",
   "description": "SovereignCoin (SC) is a decentralized digital currency built on the BNB Smart Chain. Inspired by the principles of Adam Smith \u2014 value, freedom, and prosperity \u2014 SC aims to be a currency of trust and a foundation for the future.",
   "website": "https://sovereigncoin.io",
   "explorer": "https://bscscan.com/token/0x52C87863535Bd76C421123205d6ebAAb136465F2",
@@ -10,7 +11,7 @@
   "links": [
     {
       "name": "twitter",
-      "url": "https://twitter.com/SovereignCoinSC"
+      "url": "https://x.com/SovereignCoinSC"
     },
     {
       "name": "telegram",
@@ -22,7 +23,6 @@
     }
   ],
   "tags": [
-    "defi",
-    "bep20"
+    "defi"
   ]
 }
