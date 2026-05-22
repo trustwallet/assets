@@ -1,11 +1,25 @@
 {
   "name": "streetcoinz.com",
   "website": "https://streetcoinz.com",
-  "description": "Onchain branding token for StreetCoinz.",
+  "description": "Onchain branding token for streetcoinz.com ecosystem.",
   "explorer": "https://bscscan.com/token/0x98d80614C6360B62c95227C3663F21A3ef044a7B",
   "type": "BEP20",
   "symbol": "streetcoinz.com",
   "decimals": 18,
   "status": "active",
-  "id": "0x98d80614C6360B62c95227C3663F21A3ef044a7B"
+  "id": "0x98d80614C6360B62c95227C3663F21A3ef044a7B",
+  "links": [
+    {
+      "name": "website",
+      "url": "https://streetcoinz.com"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/streetcoinz-bit"
+    }
+  ],
+  "tags": [
+    "memes",
+    "gaming"
+  ]
 }
