@@ -1,0 +1,16 @@
+{
+    "name": "Staked BRLE",
+    "type": "BASE",
+    "symbol": "sBRLE",
+    "decimals": 18,
+    "website": "https://efix.finance",
+    "description": "sBRLE is the ERC-4626 yield vault for BRLE, accruing yield from underlying BRL-denominated investments held in regulated custody.",
+    "explorer": "https://basescan.org/token/0xC65069694e32ef72CD94649BC5174DF9D18475D0",
+    "status": "active",
+    "id": "0xC65069694e32ef72CD94649BC5174DF9D18475D0",
+    "links": [
+        { "name": "github", "url": "https://github.com/Develop-ltda" },
+        { "name": "whitepaper", "url": "https://efix.finance/efixDI_Whitepaper_v1.pdf" }
+    ],
+    "tags": ["defi", "staking"]
+}
