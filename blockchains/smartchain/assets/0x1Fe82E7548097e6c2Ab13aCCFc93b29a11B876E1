@@ -1,0 +1,23 @@
+{
+  "id": "0x1Fe82E7548097e6c2Ab13aCCFc93b29a11B876E1",
+  "name": "USDT",
+  "symbol": "USDT",
+  "type": "BEP20",
+  "decimals": 18,
+  "status": "active",
+  "website": "https://example.com",
+  "description": "A BEP20 token deployed on BNB Smart Chain.",
+  "explorer": "https://bscscan.com/token/0x1Fe82E7548097e6c2Ab13aCCFc93b29a11B876E1",
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/usdt_official"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/usdt_official"
+    }
+  ],
+  "tags": ["stablecoin"],
+  "logo": "logo.png"
+}
