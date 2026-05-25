@@ -1,15 +1,24 @@
 {
     "name": "DevSwap Protocol",
     "website": "https://devswap.pro",
-    "description": "Decentralized non-custodial P2P marketplace for developer services on BNB Smart Chain. Smart contracts automatically settle payments in USDT. $DSWP is the protocol buyback-burn token — 1.5% of every settlement auto-buys and burns $DSWP via PancakeSwap.",
+    "description": "Decentralized non-custodial P2P marketplace for developer services on BNB Smart Chain. Smart contracts automatically settle payments in USDT. $DSWP is the protocol buyback-burn token \u2014 1.5%% of every settlement auto-buys and burns $DSWP via PancakeSwap.",
     "explorer": "https://bscscan.com/token/0xE950eb93aCa1f29848f5cBac61d78657e3c97287",
     "type": "BEP20",
     "symbol": "DSWP",
     "decimals": 18,
     "status": "active",
     "id": "0xE950eb93aCa1f29848f5cBac61d78657e3c97287",
+    "tags": [
+        "defi"
+    ],
     "links": [
-        {"name": "github", "url": "https://github.com/DevSwap-org"},
-        {"name": "whitepaper", "url": "https://devswap.pro/whitepaper"}
+        {
+            "name": "github",
+            "url": "https://github.com/DevSwap-org"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://devswap.pro/whitepaper"
+        }
     ]
 }
