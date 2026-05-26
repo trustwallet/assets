@@ -1,1 +1,28 @@
-
+{
+    "name": "Lightning",
+    "type": "BEP20",
+    "symbol": "LTG",
+    "decimals": 18,
+    "website": "https://lightningdao.co",
+    "description": "Lightning (LTG) is a Bitcoin Layer2 ecosystem on BSC that incentivizes users through DeFi-style liquidity mining rewards to participate in Bitcoin mainnet asset protocols: running Lightning Network nodes, providing channel liquidity, and forwarding asset transactions. Fixed supply 21,000,000 LTG, no mint, renounceable ownership.",
+    "explorer": "https://bscscan.com/token/0x00994586DBBd777D265189e92e9ec0B83ad9EC60",
+    "status": "active",
+    "id": "0x00994586DBBd777D265189e92e9ec0B83ad9EC60",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/mybasecn/lightning-contracts"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/Lightningdao"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/LightningLTG"
+        }
+    ],
+    "tags": [
+        "defi"
+    ]
+}
