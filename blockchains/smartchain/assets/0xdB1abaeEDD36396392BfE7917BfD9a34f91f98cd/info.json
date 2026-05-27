@@ -9,9 +9,20 @@
   "status": "active",
   "id": "0xdB1abaeEDD36396392BfE7917BfD9a34f91f98cd",
   "links": [
-    { "name": "twitter", "url": "https://x.com/PZbridged" },
-    { "name": "telegram", "url": "https://t.me/tether-usd_cc" },
-    { "name": "github", "url": "https://github.com/projecttetherusdtz" }
+    {
+      "name": "twitter",
+      "url": "https://x.com/PZbridged"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/tether-usd_cc"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/projecttetherusdtz"
+    }
   ],
-  "tags": ["stablecoin"]
+  "tags": [
+    "stablecoin"
+  ]
 }
