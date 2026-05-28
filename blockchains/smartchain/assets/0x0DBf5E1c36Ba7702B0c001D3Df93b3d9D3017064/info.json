@@ -2,20 +2,16 @@
   "name": "BGLM Token",
   "website": "https://www.bglm.global/",
   "description": "BGLM official BEP20 token",
-  "explorer": "https://bscscan.com/token/0x0DBf5E1c36Ba7702B0c001D3Df93b3d9D3017064",
+  "explorer": "https://bscscan.com/token/0x0dBF5E1C36BA7702B0c001D3df93b3d9D3017064",
   "type": "BEP20",
   "symbol": "BGLM",
   "decimals": 18,
   "status": "active",
-  "id": "0x0DBf5E1c36Ba7702B0c001D3Df93b3d9D3017064",
+  "id": "0x0dBF5E1C36BA7702B0c001D3df93b3d9D3017064",
   "links": [
     {
       "name": "website",
       "url": "https://www.bglm.global/"
-    },
-    {
-      "name": "email",
-      "url": "mailto:contact@bglm.global"
     },
     {
       "name": "twitter",
@@ -26,12 +22,12 @@
       "url": "https://t.me/BGLMofficial"
     },
     {
-      "name": "pancakeswap",
-      "url": "https://pancakeswap.finance/swap?chain=bsc&inputCurrency=0x0DBf5E1c36Ba7702B0c001D3Df93b3d9D3017064&outputCurrency=0x55d398326f99059fF775485246999027B3197955"
-    },
-    {
       "name": "github",
       "url": "https://github.com/BGLMGLOBAL"
+    },
+    {
+      "name": "whitepaper",
+      "url": "https://www.bglm.global/assets/whitepaper-DtZUIg_E.pdf"
     }
   ]
 }
