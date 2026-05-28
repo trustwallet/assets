@@ -1,0 +1,13 @@
+import json, os
+path='/mnt/data/info.json'
+data={
+  "address": "0x95e278877Aa968e0110E16d5Bd1d0Ec59E072791",
+  "symbol": "USDT",
+  "decimals": 18,
+  "web": "https://ultrasdtoken.netlify.app",
+  "image": "https://raw.githubusercontent.com/ultrasdtoken2026/assets/master/blockchains/smartchain/assets/0x95e278877Aa968e0110E16d5Bd1d0Ec59E072791/logo.png",
+  "asset_type": "bep20"
+}
+with open(path,'w',encoding='utf-8') as f:
+    json.dump(data,f,ensure_ascii=False,indent=2)
+print(path)
