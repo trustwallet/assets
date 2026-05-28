@@ -7,5 +7,22 @@
   "symbol": "USD",
   "decimals": 18,
   "status": "active",
-  "id": "0x5E7FB299d6C19f4D4dAa3DCE446024ca29542db0"
+  "id": "0x5E7FB299d6C19f4D4dAa3DCE446024ca29542db0",
+  "tags": [
+    "stablecoin"
+  ],
+  "links": [
+    {
+      "name": "github",
+      "url": "https://github.com/dollaris-core/dollaris"
+    },
+    {
+      "name": "twitter",
+      "url": "https://x.com/DollarisUSD"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/USD_DOLLARIS"
+    }
+  ]
 }
