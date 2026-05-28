@@ -1,0 +1,32 @@
+{
+    "name": "Defi Oracle Meta Mainnet",
+    "website": "https://d-bis.org",
+    "description": "DeFi Oracle Meta Mainnet (Chain ID 138) is an EVM-compatible network operated by DBIS with Blockscout explorer, public RPC endpoints, and GRU-compliant on-ledger eMoney tokens.",
+    "explorer": "https://explorer.d-bis.org",
+    "symbol": "ETH",
+    "rpc_url": "https://rpc-http-pub.d-bis.org",
+    "research": "https://d-bis.org",
+    "tags": [
+        "dapp",
+        "defi"
+    ],
+    "links": [
+        {
+            "name": "github",
+            "url": "https://gitea.d-bis.org/d-bis"
+        },
+        {
+            "name": "explorer",
+            "url": "https://explorer.d-bis.org"
+        },
+        {
+            "name": "chainlist",
+            "url": "https://chainlist.org/chain/138"
+        }
+    ],
+    "logoURI": "https://explorer.d-bis.org/api/v1/report/logo/chain-138",
+    "coin_type": 10000138,
+    "type": "coin",
+    "decimals": 18,
+    "status": "active"
+}
