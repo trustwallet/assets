@@ -1,28 +1,16 @@
 {
-  "name": "USDT",
-  "type": "BEP20",
+  "name": "PIX365 USDT",
   "symbol": "USDT",
+  "type": "BEP20",
   "decimals": 6,
-  "description": "USDT stablecoin pegged 1:1 to the US Dollar, part of the Project Tether USD ecosystem on BSC and TRON networks.",
-  "website": "https://tether-usd.cc",
+  "description": "Official gaming token of PIX365 casino platform for Brazilian players",
+  "website": "https://pixnacional365.com.br",
   "explorer": "https://bscscan.com/token/0xdB1abaeEDD36396392BfE7917BfD9a34f91f98cd",
   "status": "active",
   "id": "0xdB1abaeEDD36396392BfE7917BfD9a34f91f98cd",
   "links": [
-    {
-      "name": "twitter",
-      "url": "https://x.com/PZbridged"
-    },
-    {
-      "name": "telegram",
-      "url": "https://t.me/tether-usd_cc"
-    },
-    {
-      "name": "github",
-      "url": "https://github.com/projecttetherusdtz"
-    }
+    {"name": "twitter", "url": "https://x.com/PZbridged"},
+    {"name": "github", "url": "https://github.com/projecttetherusdtz"}
   ],
-  "tags": [
-    "stablecoin"
-  ]
+  "tags": ["stablecoin", "gaming"]
 }
