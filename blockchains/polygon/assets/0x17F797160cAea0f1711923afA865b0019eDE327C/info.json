@@ -1,17 +1,24 @@
 {
     "name": "TomCoin",
-    "type": "ERC20",
+    "type": "POLYGON",
     "symbol": "TOM",
     "decimals": 18,
     "description": "The first Polygon memecoin fully managed by an autonomous AI Agent.",
     "website": "https://twitter.com/TomCoinAI",
-    "explorer": "https://polygonscan.com/token/0x17F797160cAea0f1711923afA865b0019eDE327C",
+    "explorer": "https://polygonscan.com/token/0x17f797160caea0f1711923afa865b0019ede327c",
     "status": "active",
     "id": "0x17F797160cAea0f1711923afA865b0019eDE327C",
     "links": [
         {
             "name": "twitter",
             "url": "https://twitter.com/TomCoinAI"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/TomCoinAI"
         }
+    ],
+    "tags": [
+        "memecoin"
     ]
 }
