@@ -1,0 +1,25 @@
+{
+    "name": "zkTanenbaum Testnet",
+    "website": "https://syscoin.org",
+    "description": "zkTanenbaum is the Syscoin zkSYS edge testnet running ZKsync OS with standard EVM-compatible JSON-RPC, Syscoin data availability, and Airbender RISC-V proving.",
+    "explorer": "https://explorer-zk.tanenbaum.io",
+    "symbol": "TSYS",
+    "rpc_url": "https://rpc-zk.tanenbaum.io",
+    "coin_type": 10057057,
+    "type": "coin",
+    "decimals": 18,
+    "status": "active",
+    "tags": [
+        "dapp"
+    ],
+    "links": [
+        {
+            "name": "x",
+            "url": "https://x.com/syscoin"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/syscoin"
+        }
+    ]
+}
