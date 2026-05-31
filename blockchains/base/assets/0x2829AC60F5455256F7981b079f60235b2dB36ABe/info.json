@@ -4,8 +4,13 @@
   "type": "ERC20",
   "decimals": 18,
   "description": "ELAHS is an exclusive private community token on Base, built for trusted members to share and transact within a close group.",
-  "website": "",
-  "explorer": "https://basescan.org/token/0x2829AC60F5455256F7981b079f60235b2dB36ABe",
+  "website": "https://elahs.org",
+  "explorer": "https://etherscan.io/token/0x2829AC60F5455256F7981b079f60235b2dB36ABe",
   "status": "active",
-  "links": []
+  "id": "0x2829AC60F5455256F7981b079f60235b2dB36ABe",
+  "tags": ["community"],
+  "links": [
+    { "name": "twitter", "url": "https://x.com/Sangjin16071305" },
+    { "name": "explorer", "url": "https://basescan.org/token/0x2829AC60F5455256F7981b079f60235b2dB36ABe" }
+  ]
 }
