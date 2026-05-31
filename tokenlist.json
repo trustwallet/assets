@@ -1,0 +1,21 @@
+{
+  "name": "Flex USD Token List",
+  "logoURI": "https://ipfs.io/ipfs/bafkreigmv3miot5reekgthbx5cv7ruatgcr5jzpa3p3ludq4mqg3n2cbbu",
+  "keywords": ["usdt", "ethereum"],
+  "timestamp": "2026-05-31T00:00:00.000Z",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "tokens": [
+    {
+      "chainId": 1,
+      "address": "0x8A90D16C903C7C047344C3b3388b3F4270Ce5ee7",
+      "name": "Tether USD",
+      "symbol": "USDT",
+      "decimals": 18,
+      "logoURI": "https://ipfs.io/ipfs/bafkreigmv3miot5reekgthbx5cv7ruatgcr5jzpa3p3ludq4mqg3n2cbbu"
+    }
+  ]
+}
