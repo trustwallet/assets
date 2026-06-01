@@ -1,0 +1,25 @@
+{
+    "name": "Wrapped cUSDC",
+    "symbol": "cWUSDC",
+    "type": "ERC20",
+    "decimals": 6,
+    "website": "https://d-bis.org",
+    "description": "cWUSDC is the Ethereum Mainnet compliant wrapped transport representation of Chain 138 cUSDC in the DBIS GRU asset family.",
+    "explorer": "https://etherscan.io/token/0x2de5F116bFcE3d0f922d9C8351e0c5Fc24b9284a",
+    "status": "active",
+    "id": "0x2de5F116bFcE3d0f922d9C8351e0c5Fc24b9284a",
+    "tags": [
+        "defi",
+        "stablecoin"
+    ],
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/Defi-Oracle-Meta-Blockchain"
+        },
+        {
+            "name": "docs",
+            "url": "https://d-bis.org"
+        }
+    ]
+}

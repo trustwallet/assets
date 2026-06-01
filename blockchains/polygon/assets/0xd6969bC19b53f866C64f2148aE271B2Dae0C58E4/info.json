@@ -1,0 +1,25 @@
+{
+    "name": "Wrapped cUSDC",
+    "symbol": "cWUSDC",
+    "type": "POLYGON",
+    "decimals": 6,
+    "website": "https://d-bis.org",
+    "description": "cWUSDC is the Polygon compliant wrapped transport representation of Chain 138 cUSDC in the DBIS GRU asset family.",
+    "explorer": "https://polygonscan.com/token/0xd6969bC19b53f866C64f2148aE271B2Dae0C58E4",
+    "status": "active",
+    "id": "0xd6969bC19b53f866C64f2148aE271B2Dae0C58E4",
+    "tags": [
+        "defi",
+        "stablecoin"
+    ],
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/Defi-Oracle-Meta-Blockchain"
+        },
+        {
+            "name": "docs",
+            "url": "https://d-bis.org"
+        }
+    ]
+}
