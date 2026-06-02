@@ -8,6 +8,9 @@
   "status": "active",
   "id": "0xCEDB2638f789D98EE724B92FF758D4a8a30b55ac",
   "logoURI": "https://raw.githubusercontent.com/dollaris-core/usdb-token/main/blockchains/smartchain/assets/0xCEDB2638f789D98EE724B92FF758D4a8a30b55ac/logo.png",
+  "tags": [
+    "defi"
+  ],
   "links": [
     {
       "name": "telegram",
@@ -18,8 +21,12 @@
       "url": "https://x.com/Dollaris_USDB"
     },
     {
-      "name": "email",
-      "url": "mailto:usdb@dollaris.pro"
+      "name": "github",
+      "url": "https://github.com/dollaris-core/usdb-token"
+    },
+    {
+      "name": "docs",
+      "url": "https://dollaris.pro"
     }
   ]
 }
