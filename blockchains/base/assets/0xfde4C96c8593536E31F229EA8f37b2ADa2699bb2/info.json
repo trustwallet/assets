@@ -1,0 +1,20 @@
+{
+    "name": "Bridged Tether USD",
+    "type": "BASE",
+    "symbol": "USDT",
+    "decimals": 6,
+    "website": "https://gfx.xyz/",
+    "description": "This bridged token is not issued by, redeemable by, or affiliated with, Tether. Tether is not responsible for it. The T Logo is used under license from Tether solely to identify a bridged version of a token issued by Tether.",
+    "explorer": "https://basescan.org/token/0xfde4C96c8593536E31F229EA8f37b2ADa2699bb2",
+    "status": "active",
+    "id": "0xfde4C96c8593536E31F229EA8f37b2ADa2699bb2",
+    "links": [
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/tether/"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}
