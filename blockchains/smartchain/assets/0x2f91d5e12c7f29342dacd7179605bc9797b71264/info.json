@@ -5,7 +5,10 @@
   "decimals": 18,
   "description": "Distributed Salary Systems — cross-border contractor payout and settlement infrastructure on BNB Chain",
   "website": "https://dssyst.icu",
-  "links": "https://www.linkedin.com/in/brjdetc-boyarski, https://x.com/DSSystemsInc",
+  "links": {
+    "linkedin": "https://www.linkedin.com/in/brjdetc-boyarski",
+    "twitter": "https://x.com/DSSystemsInc"
+  },
   "explorer": "https://bscscan.com/token/0x2F91D5E12c7F29342dAcd7179605Bc9797b71264",
   "status": "active",
   "id": "0x2F91D5E12c7F29342dAcd7179605Bc9797b71264"
