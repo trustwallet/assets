@@ -1,22 +1,29 @@
 {
-  "name": "BiteByte",
-  "symbol": "BBT",
-  "description": "BiteByte (BBT) is a next-generation digital currency focused on secure trading and ecosystem utility, suitable for DeFi and loyalty rewards.",
-  "website": "https://bitebyte.io",
-  "explorer": "https://bscscan.com/token/0x0f4Ae674D1EAA86634c738896A7205B211201F4e",
-  "status": "active",
-  "id": "0x0f4Ae674D1EAA86634c738896A7205B211201F4e",
-  "type": "BEP20",
-  "logo": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/smartchain/assets/0x0f4Ae674D1EAA86634c738896A7205B211201F4e/logo.png",
-  "decimals": 18,
-  "socials": [
-    {
-      "type": "twitter",
-      "url": "https://twitter.com/bitebyte"
-    },
-    {
-      "type": "telegram",
-      "url": "https://t.me/bitebyte"
-    }
-  ]
+    "symbol":  "BBT",
+    "description":  "BiteByte (BBT) is a next-generation digital currency focused on secure trading and ecosystem utility, suitable for DeFi and loyalty rewards.",
+    "type":  "BEP20",
+    "id":  "0x0f4Ae674D1EAA86634c738896A7205B211201F4e",
+    "tags":  [
+                 "memes",
+                 "defi"
+             ],
+    "name":  "BiteByte",
+    "links":  [
+                  {
+                      "name":  "twitter",
+                      "url":  "https://twitter.com/bitebyte"
+                  },
+                  {
+                      "name":  "telegram",
+                      "url":  "https://t.me/bitebyte"
+                  },
+                  {
+                      "name":  "github",
+                      "url":  "https://github.com/bitebyte"
+                  }
+              ],
+    "website":  "https://bitebyte.io",
+    "status":  "active",
+    "decimals":  18,
+    "explorer":  "https://bscscan.com/token/0x0f4Ae674D1EAA86634c738896A7205B211201F4e"
 }
