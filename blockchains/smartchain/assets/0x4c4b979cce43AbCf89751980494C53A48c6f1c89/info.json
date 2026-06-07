@@ -3,10 +3,27 @@
     "type": "BEP20",
     "symbol": "HYPE",
     "decimals": 18,
-    "website": "",
-    "description": "Hyper Liquidity Token on BSC",
+    "website": "https://hyperliquid.xyz",
+    "description": "Hyper Liquidity Token is a decentralized BEP20 token on BSC, designed for seamless peer-to-peer transfers and liquidity provision.",
     "explorer": "https://bscscan.com/token/0x4c4b979cce43AbCf89751980494C53A48c6f1c89",
     "status": "active",
     "id": "0x4c4b979cce43AbCf89751980494C53A48c6f1c89",
-    "links": []
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://x.com/HyperLiquidX"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/trustwallet/assets"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/HyperLiquidOfficial"
+        }
+    ],
+    "tags": [
+        "defi",
+        "bep20"
+    ]
 }
