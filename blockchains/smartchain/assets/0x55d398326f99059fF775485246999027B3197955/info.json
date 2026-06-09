@@ -1,12 +1,12 @@
 {
-  "name": "Tether USD",
-  "type": "BEP20",
+  "name": "Tether USD (BEP20)",
+  "website": "https://tether.to",
+  "description": "Tether USD (USDT) on Binance Smart Chain (BEP20).",
+  "explorer": "https://bscscan.com/token/0x55d398326f99059fF775485246999027B3197955",
+  "research": "https://tether.to/en/",
   "symbol": "USDT",
   "decimals": 18,
-  "description": "Tether USD - Binance Bridged USDT on BNB Smart Chain",
-  "website": "https://tether.to",
-  "explorer": "https://bscscan.com/token/0x55d398326f99059fF775485246999027B3197955",
-  "research": "https://tether.to/en/supported-protocols/",
   "status": "active",
-  "id": "0x55d398326f99059fF775485246999027B3197955"
+  "id": "tether-bep20",
+  "tags": ["stablecoin","usd-pegged","bep20"]
 }
