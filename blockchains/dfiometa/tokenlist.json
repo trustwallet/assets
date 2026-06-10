@@ -1,0 +1,97 @@
+{
+    "name": "Trust Wallet: Defi Oracle Meta Mainnet List",
+    "logoURI": "https://trustwallet.com/assets/images/favicon.png",
+    "timestamp": "2026-06-10T10:34:05.000000",
+    "tokens": [
+        {
+            "asset": "c10000138_t0x93E66202A11B1772E55407B32B44e5Cd8eda7f22",
+            "type": "DFIOMETA",
+            "address": "0x93E66202A11B1772E55407B32B44e5Cd8eda7f22",
+            "name": "Tether USD (Compliant)",
+            "symbol": "cUSDT",
+            "decimals": 6,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/dfiometa/assets/0x93E66202A11B1772E55407B32B44e5Cd8eda7f22/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c10000138_t0xf22258f57794CC8E06237084b353Ab30fFfa640b",
+            "type": "DFIOMETA",
+            "address": "0xf22258f57794CC8E06237084b353Ab30fFfa640b",
+            "name": "USD Coin (Compliant)",
+            "symbol": "cUSDC",
+            "decimals": 6,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/dfiometa/assets/0xf22258f57794CC8E06237084b353Ab30fFfa640b/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c10000138_t0xe94260c555aC1d9D3CC9E1632883452ebDf0082E",
+            "type": "DFIOMETA",
+            "address": "0xe94260c555aC1d9D3CC9E1632883452ebDf0082E",
+            "name": "Compliant Bitcoin",
+            "symbol": "cBTC",
+            "decimals": 8,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/dfiometa/assets/0xe94260c555aC1d9D3CC9E1632883452ebDf0082E/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c10000138_t0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+            "type": "DFIOMETA",
+            "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+            "name": "Wrapped Ether",
+            "symbol": "WETH",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/dfiometa/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c10000138_t0xb7721dD53A8c629d9f1Ba31a5819AFe250002b03",
+            "type": "DFIOMETA",
+            "address": "0xb7721dD53A8c629d9f1Ba31a5819AFe250002b03",
+            "name": "Chainlink Token",
+            "symbol": "LINK",
+            "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/dfiometa/assets/0xb7721dD53A8c629d9f1Ba31a5819AFe250002b03/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c10000138_t0x290E52a8819A4fbD0714E517225429aA2B70EC6b",
+            "type": "DFIOMETA",
+            "address": "0x290E52a8819A4fbD0714E517225429aA2B70EC6b",
+            "name": "Gold (Compliant)",
+            "symbol": "cXAUC",
+            "decimals": 6,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/dfiometa/assets/0x290E52a8819A4fbD0714E517225429aA2B70EC6b/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c10000138_t0x94e408E26c6FD8F4ee00b54dF19082FDA07dC96E",
+            "type": "DFIOMETA",
+            "address": "0x94e408E26c6FD8F4ee00b54dF19082FDA07dC96E",
+            "name": "Tether XAU (Compliant)",
+            "symbol": "cXAUT",
+            "decimals": 6,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/dfiometa/assets/0x94e408E26c6FD8F4ee00b54dF19082FDA07dC96E/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c10000138_t0x8085961F9cF02b4d800A3c6d386D31da4B34266a",
+            "type": "DFIOMETA",
+            "address": "0x8085961F9cF02b4d800A3c6d386D31da4B34266a",
+            "name": "Euro Coin (Compliant)",
+            "symbol": "cEURC",
+            "decimals": 6,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/dfiometa/assets/0x8085961F9cF02b4d800A3c6d386D31da4B34266a/logo.png",
+            "pairs": []
+        },
+        {
+            "asset": "c10000138_t0x003960f16D9d34F2e98d62723B6721Fb92074aD2",
+            "type": "DFIOMETA",
+            "address": "0x003960f16D9d34F2e98d62723B6721Fb92074aD2",
+            "name": "Pound Sterling (Compliant)",
+            "symbol": "cGBPC",
+            "decimals": 6,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/dfiometa/assets/0x003960f16D9d34F2e98d62723B6721Fb92074aD2/logo.png",
+            "pairs": []
+        }
+    ]
+}
