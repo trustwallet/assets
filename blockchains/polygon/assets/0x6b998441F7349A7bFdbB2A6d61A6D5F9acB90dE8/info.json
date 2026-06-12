@@ -1,0 +1,24 @@
+{
+    "name": "ATH",
+    "website": "https://aegisdefi.io/",
+    "description": "Aegis DeFi is a reserve-backed DeFi protocol built on Polygon. It features a four-wheel mechanism where bonding, staking, and governance create a unidirectional cycle for the treasury-backed ATH token.",
+    "explorer": "https://polygonscan.com/token/0x6b998441F7349A7bFdbB2A6d61A6D5F9acB90dE8",
+    "type": "POLYGON",
+    "symbol": "ATH",
+    "decimals": 9,
+    "status": "active",
+    "id": "0x6b998441F7349A7bFdbB2A6d61A6D5F9acB90dE8",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/aegis-defi/aegis-defi-v3/"
+        },
+         {
+            "name": "whitepaper",
+            "url": "https://aegisdefi.io/docs/aegis-defi-whitepaper.pdf"
+        }
+    ],
+    "tags": [
+        "staking"
+    ]
+}
