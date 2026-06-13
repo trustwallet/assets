@@ -1,0 +1,18 @@
+{
+  "name": "Wrapped HobbyHash",
+  "type": "BEP20",
+  "symbol": "wHOBC",
+  "decimals": 8,
+  "website": "https://hobbyhashcoin.com",
+  "description": "Wrapped HobbyHash (wHOBC) is the BEP-20 representation of HobbyHash Coin (HOBC), a SHA-256 proof-of-work coin built for home solo miners. Each wHOBC is backed 1:1 by HOBC locked in the official HobbyHash bridge.",
+  "explorer": "https://bscscan.com/token/0x8eC9d91c4B30686Bc5D97B72E1BefEf1566FD878",
+  "status": "active",
+  "id": "0x8eC9d91c4B30686Bc5D97B72E1BefEf1566FD878",
+  "links": [
+    { "name": "twitter", "url": "https://twitter.com/HobbyHashCoin" },
+    { "name": "telegram", "url": "https://t.me/+lxPNRkRljR00NjUx" },
+    { "name": "facebook", "url": "https://www.facebook.com/people/HobbyHash-Coin/61590689639798/" },
+    { "name": "github", "url": "https://github.com/HobbyHash-Coin-LLC/HobbyHash" }
+  ],
+  "tags": ["wrapped-tokens"]
+}
