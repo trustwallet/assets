@@ -1,14 +1,13 @@
 {
     "name": "ADAR",
-    "website": "https://adar.kz",
-    "description": "ADAR is a location-based AR mobile game on Polygon where users earn tokens by physically visiting airdrop locations. Proof of Location mining.",
-    "explorer": "https://polygonscan.com/token/0xCa0dD885572e62536180186Cfd99e5AA6B09a2dc",
     "type": "POLYGON",
     "symbol": "ADAR",
     "decimals": 18,
+    "website": "https://adar.kz",
+    "description": "ADAR is a location-based AR mobile game on Polygon where users earn tokens by physically visiting airdrop locations. Proof of Location mining.",
+    "explorer": "https://polygonscan.com/token/0xCa0dD885572e62536180186Cfd99e5AA6B09a2dc",
     "status": "active",
     "id": "0xCa0dD885572e62536180186Cfd99e5AA6B09a2dc",
-    "tags": ["defi"],
     "links": [
         {
             "name": "twitter",
@@ -18,5 +17,8 @@
             "name": "telegram",
             "url": "https://t.me/adarappp"
         }
+    ],
+    "tags": [
+        "defi"
     ]
 }
