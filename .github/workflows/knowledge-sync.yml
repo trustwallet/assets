@@ -1,0 +1,320 @@
+# Knowledge Sync — keeps knowledge/ up to date and syncs to Bedrock
+# Installed by sdd-knowledge. See: https://github.com/trustwallet/sdd-tools
+#
+# What it does:
+#   On push to main / schedule / manual:
+#     1. Optionally runs sdd-knowledge --full (when SDD_KNOWLEDGE_FULL=true)
+#     2. Runs sdd-knowledge --garden (maintains knowledge/ + .claude/repo.yml,
+#        syncs knowledge/ to S3 and the repo manifest to s3://<bucket>/_catalog/
+#        for cross-repo agent routing)
+#     3. Opens a PR with any repo changes (knowledge/, .claude/repo.yml, claude.md, workflow)
+#     4. Triggers Bedrock re-ingestion (S3 is already updated by garden)
+#
+# Triggers:
+#   - Push/merge to main: full sync
+#   - Weekly Monday 6am (catches staleness)
+#   - Manual via workflow_dispatch
+
+name: Knowledge Sync
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**/*.md'
+      - '.claude/**'
+      - 'docs/**'
+  schedule:
+    - cron: '0 6 * * 1'
+  workflow_dispatch:
+
+env:
+  SDD_KNOWLEDGE_SYNC_ROLE: ${{ secrets.SDD_KNOWLEDGE_SYNC_ROLE }}
+  SDD_KNOWLEDGE_S3_BUCKET: ${{ secrets.SDD_KNOWLEDGE_S3_BUCKET }}
+  SDD_KNOWLEDGE_KB_ID: ${{ secrets.SDD_KNOWLEDGE_KB_ID }}
+  SDD_KNOWLEDGE_DATA_SOURCE_ID: ${{ secrets.SDD_KNOWLEDGE_DATA_SOURCE_ID }}
+
+jobs:
+  sync:
+    if: >-
+      !contains(github.event.head_commit.message || '', 'sdd-knowledge garden sync')
+      && !contains(github.event.head_commit.message || '', 'chore/knowledge-sync')
+    runs-on: [self-hosted, linux, platform-ci-v2]
+    permissions:
+      contents: write
+      pull-requests: write
+      id-token: write  # required for OIDC
+    steps:
+      - uses: trustwallet/github-actions-proxy/actions/checkout@main
+        with:
+          fetch-depth: 0
+
+      - uses: trustwallet/github-actions-proxy/actions/setup-node@main
+        with:
+          node-version: "20"
+
+      - name: Fetch Nexus credentials
+        id: nexus-token
+        uses: trustwallet/github-actions-proxy/actions/nexus-token-fetcher@main
+        with:
+          nexus_url: https://nexus.twprod.net
+          nexus_username: ${{ secrets.NEXUS_USERNAME }}
+          nexus_password: ${{ secrets.NEXUS_PASSWORD }}
+
+      - name: Install sdd-tools
+        run: |
+          if [ -z "$NEXUS_USER" ] || [ -z "$NEXUS_PASS" ]; then
+            echo "::error::Nexus token fetcher returned empty credentials"
+            exit 1
+          fi
+          npm config set "//nexus.twprod.net/repository/sdd-tools/:_auth" "$(echo -n "${NEXUS_USER}:${NEXUS_PASS}" | base64 -w0)"
+          npm install -g sdd-tools@latest --registry=https://nexus.twprod.net/repository/sdd-tools/
+        env:
+          NEXUS_USER: ${{ steps.nexus-token.outputs.nexus_token_username }}
+          NEXUS_PASS: ${{ steps.nexus-token.outputs.nexus_token_password }}
+
+      - name: Configure AWS credentials
+        if: env.SDD_KNOWLEDGE_SYNC_ROLE != ''
+        # Pinned to a 40-char SHA so repos with pin-discipline guards
+        # (e.g. lint-uses-refs) accept this workflow out of the box. Update
+        # the SHA when bumping versions and keep the trailing `# v4.x.y`
+        # comment in sync — that comment is what `pinact` uses to detect
+        # upgrades.
+        uses: aws-actions/configure-aws-credentials@e3dd6a429d7300a6a4c196c26e071d42e0343502 # v4.0.2
+        with:
+          role-to-assume: ${{ secrets.SDD_KNOWLEDGE_SYNC_ROLE }}
+          aws-region: eu-west-1
+
+      - name: Maintain knowledge base
+        run: |
+          if [ "$SDD_KNOWLEDGE_FULL" = "true" ]; then
+            sdd-knowledge . --full
+          fi
+          sdd-knowledge . --garden
+        env:
+          SDD_KNOWLEDGE_S3_BUCKET: ${{ secrets.SDD_KNOWLEDGE_S3_BUCKET }}
+          SDD_KNOWLEDGE_S3_PREFIX: knowledge/${{ github.event.repository.name }}
+          SDD_KNOWLEDGE_FULL: ${{ vars.SDD_KNOWLEDGE_FULL }}
+
+      - name: Benchmark quality gate
+        id: benchmark
+        run: |
+          sdd-knowledge . --benchmark || echo "::warning::Benchmark failed — skipping quality gate"
+          if [ -f knowledge/.benchmark.json ]; then
+            TOTAL=$(jq -r '.totalTests // 0' knowledge/.benchmark.json)
+            PASSED=$(jq -r '.passed // 0' knowledge/.benchmark.json)
+            FAILED=$(jq -r '.failed // 0' knowledge/.benchmark.json)
+            if [ "$TOTAL" -gt 0 ]; then
+              PCT=$((PASSED * 100 / TOTAL))
+              echo "Benchmark: $PASSED/$TOTAL passed ($PCT%)"
+              echo "benchmark_score=$PCT" >> "$GITHUB_OUTPUT"
+              if [ "$PCT" -lt 90 ]; then
+                echo "::warning::Knowledge quality below 90% ($PCT%) — review before merging"
+                echo "quality_gate=warn" >> "$GITHUB_OUTPUT"
+              else
+                echo "quality_gate=pass" >> "$GITHUB_OUTPUT"
+              fi
+              if [ "$FAILED" -gt 0 ]; then
+                echo "Failed tests:"
+                jq -r '(.tests // [])[] | select(.passed == false) | "  - \(.name): \(.message)"' knowledge/.benchmark.json
+              fi
+            else
+              echo "No benchmark tests generated"
+              echo "quality_gate=skip" >> "$GITHUB_OUTPUT"
+            fi
+          else
+            echo "Benchmark file not found — skipping quality gate"
+            echo "quality_gate=skip" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Install GitHub CLI
+        run: |
+          if command -v gh &>/dev/null; then
+            echo "gh is already installed: $(gh --version)"
+          else
+            echo "Installing gh..."
+            type -p curl >/dev/null || (sudo apt-get update && sudo apt-get install curl -y)
+            curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
+            sudo chmod go+r /usr/share/keyrings/githubcli-archive-keyring.gpg
+            echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
+            sudo apt-get update && sudo apt-get install gh -y
+          fi
+
+      # Optional: mint a GitHub App token so the PR can trigger downstream
+      # workflows. PRs and commits created with the default GITHUB_TOKEN
+      # are silently skipped by other workflows (GitHub's anti-recursion
+      # safeguard), leaving the PR with zero checks. When CI_APP_ID and
+      # CI_PRIVATE_KEY are unset this step is skipped and the next step
+      # falls back to GITHUB_TOKEN.
+      - name: Generate GitHub App token
+        id: app-token
+        if: env.CI_APP_ID != '' && env.CI_PRIVATE_KEY != ''
+        env:
+          CI_APP_ID: ${{ secrets.CI_APP_ID }}
+          CI_PRIVATE_KEY: ${{ secrets.CI_PRIVATE_KEY }}
+        # Pinned to a 40-char SHA — see pin-discipline note on
+        # aws-actions/configure-aws-credentials above.
+        uses: actions/create-github-app-token@d72941d797fd3113feb6b93fd0dec494b13a2547 # v1.12.0
+        with:
+          app-id: ${{ secrets.CI_APP_ID }}
+          private-key: ${{ secrets.CI_PRIVATE_KEY }}
+
+      - name: Open PR with changes
+        id: create-pr
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token || secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: |
+          # Check for changes (including untracked files)
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "No changes to commit"
+            echo "pr_created=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          # Stage relevant files
+          git add knowledge/ .claude/repo.yml '[Cc][Ll][Aa][Uu][Dd][Ee].[Mm][Dd]' '**/[Cc][Ll][Aa][Uu][Dd][Ee].[Mm][Dd]' .github/workflows/knowledge-sync.yml 2>/dev/null || true
+
+          # Skip if nothing staged
+          if git diff --cached --quiet; then
+            echo "No relevant changes to commit"
+            echo "pr_created=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          BRANCH="chore/knowledge-sync-$(date +%Y%m%d-%H%M%S)"
+
+          # Use GitHub API to create a signed commit (bypasses GH013 ruleset)
+          # Use local HEAD (matches checkout) — not live remote main which may have advanced
+          BASE_SHA=$(git rev-parse HEAD)
+          # shellcheck disable=SC1083 # HEAD^{tree} is git ref-peeling syntax, not brace expansion
+          BASE_TREE=$(git rev-parse HEAD^{tree})
+          if [ -z "$BASE_SHA" ] || [ "$BASE_SHA" = "null" ]; then
+            echo "::error::Failed to resolve HEAD SHA"
+            exit 1
+          fi
+
+          # Build tree entries from staged files (NUL-delimited for path safety)
+          TREE_ENTRIES="[]"
+          while IFS= read -r -d '' FILE; do
+            if [ -f "$FILE" ]; then
+              BLOB_SHA=$(base64 -w0 < "$FILE" | jq -Rs '{content: ., encoding: "base64"}' | \
+                gh api "repos/${REPO}/git/blobs" --input - --jq '.sha')
+              TREE_ENTRIES=$(echo "$TREE_ENTRIES" | jq --arg path "$FILE" --arg sha "$BLOB_SHA" \
+                '. + [{"path": $path, "mode": "100644", "type": "blob", "sha": $sha}]')
+            else
+              TREE_ENTRIES=$(echo "$TREE_ENTRIES" | jq --arg path "$FILE" \
+                '. + [{"path": $path, "mode": "100644", "type": "blob", "sha": null}]')
+            fi
+          done < <(git diff --cached --name-only -z)
+
+          # Create tree
+          TREE_SHA=$(echo "{}" | jq --arg base "$BASE_TREE" --argjson tree "$TREE_ENTRIES" \
+            '{base_tree: $base, tree: $tree}' | \
+            gh api "repos/${REPO}/git/trees" --input - --jq '.sha')
+          if [ -z "$TREE_SHA" ] || [ "$TREE_SHA" = "null" ]; then
+            echo "::error::Failed to create tree"
+            exit 1
+          fi
+
+          # Create commit (GitHub auto-signs it)
+          COMMIT_SHA=$(jq -n \
+            --arg msg "chore: sdd-knowledge garden sync" \
+            --arg tree "$TREE_SHA" \
+            --arg parent "$BASE_SHA" \
+            '{message: $msg, tree: $tree, parents: [$parent]}' | \
+            gh api "repos/${REPO}/git/commits" --input - --jq '.sha')
+          if [ -z "$COMMIT_SHA" ] || [ "$COMMIT_SHA" = "null" ]; then
+            echo "::error::Failed to create commit"
+            exit 1
+          fi
+
+          # Create branch ref
+          gh api "repos/${REPO}/git/refs" \
+            -f ref="refs/heads/${BRANCH}" -f sha="${COMMIT_SHA}"
+
+          # Open PR
+          QUALITY="${{ steps.benchmark.outputs.quality_gate || 'skip' }}"
+          SCORE="${{ steps.benchmark.outputs.benchmark_score || 'N/A' }}"
+          BODY="Automated knowledge base maintenance by \`sdd-knowledge --garden\`."
+          if [ "$QUALITY" = "warn" ]; then
+            BODY="$BODY\n\n⚠️ **Quality gate: ${SCORE}%** (below 90% threshold — review before merging)"
+          elif [ "$QUALITY" = "pass" ]; then
+            BODY="$BODY\n\n✅ **Quality gate: ${SCORE}%**"
+          fi
+          # Prepend the per-run garden summary so reviewers can orient
+          # before reading the diff. Emitted by `sdd-knowledge --garden`
+          # at knowledge/.garden-summary.txt; ≤60 lines, plain text.
+          if [ -f knowledge/.garden-summary.txt ]; then
+            SUMMARY=$(cat knowledge/.garden-summary.txt)
+            BODY="## What changed\n\n\`\`\`\n${SUMMARY}\n\`\`\`\n\n${BODY}"
+          fi
+          PR_URL=$(gh pr create \
+            --base main \
+            --head "$BRANCH" \
+            --title "chore: sdd-knowledge garden sync" \
+            --body "$(printf '%b' "$BODY")")
+
+          echo "pr_url=$PR_URL" >> "$GITHUB_OUTPUT"
+          echo "pr_created=true" >> "$GITHUB_OUTPUT"
+          echo "Created PR: $PR_URL"
+
+      - name: Trigger Bedrock re-ingestion
+        if: "!cancelled() && env.SDD_KNOWLEDGE_KB_ID != ''"
+        run: |
+          RESULT=$(aws bedrock-agent start-ingestion-job \
+            --knowledge-base-id "$SDD_KNOWLEDGE_KB_ID" \
+            --data-source-id "$SDD_KNOWLEDGE_DATA_SOURCE_ID" \
+            --region eu-west-1)
+          echo "$RESULT"
+          JOB_ID=$(echo "$RESULT" | jq -r '.ingestionJob.ingestionJobId // empty')
+          if [ -z "$JOB_ID" ]; then
+            echo "::warning::Failed to extract ingestion job ID from response"
+          else
+            echo "job_id=$JOB_ID" >> "$GITHUB_OUTPUT"
+          fi
+        id: ingestion
+
+      - name: Wait for ingestion to complete
+        if: "!cancelled() && steps.ingestion.outputs.job_id != ''"
+        run: |
+          JOB_ID="${{ steps.ingestion.outputs.job_id }}"
+          echo "Waiting for ingestion job $JOB_ID..."
+          TIMED_OUT=true
+          for i in $(seq 1 20); do
+            sleep 30
+            STATUS=$(aws bedrock-agent get-ingestion-job \
+              --knowledge-base-id "$SDD_KNOWLEDGE_KB_ID" \
+              --data-source-id "$SDD_KNOWLEDGE_DATA_SOURCE_ID" \
+              --ingestion-job-id "$JOB_ID" \
+              --region eu-west-1 2>&1) || true
+            # If GetIngestionJob is not permitted, skip polling
+            if echo "$STATUS" | grep -q "AccessDeniedException"; then
+              TIMED_OUT=false
+              echo "::warning::No bedrock:GetIngestionJob permission — add it to the OIDC role to enable ingestion monitoring"
+              break
+            fi
+            # If response is not valid JSON (API error), log and break
+            if ! echo "$STATUS" | jq -e '.ingestionJob' >/dev/null 2>&1; then
+              TIMED_OUT=false
+              echo "::warning::Unexpected API response: $STATUS"
+              break
+            fi
+            JOB_STATUS=$(echo "$STATUS" | jq -r '.ingestionJob.status // empty')
+            echo "[$((i*30))s] Status: $JOB_STATUS"
+            if [ "$JOB_STATUS" = "COMPLETE" ] || [ "$JOB_STATUS" = "FAILED" ]; then
+              TIMED_OUT=false
+              echo "$STATUS" | jq '.ingestionJob.statistics'
+              SCANNED=$(echo "$STATUS" | jq -r '.ingestionJob.statistics.numberOfDocumentsScanned // 0')
+              FAILED=$(echo "$STATUS" | jq -r '.ingestionJob.statistics.numberOfDocumentsFailed // 0')
+              INDEXED=$(echo "$STATUS" | jq -r '.ingestionJob.statistics.numberOfNewDocumentsIndexed // 0')
+              MODIFIED=$(echo "$STATUS" | jq -r '.ingestionJob.statistics.numberOfModifiedDocumentsIndexed // 0')
+              echo "::notice::Ingestion $JOB_STATUS — scanned=$SCANNED indexed=$INDEXED modified=$MODIFIED failed=$FAILED"
+              if [ "$JOB_STATUS" = "FAILED" ] || [ "$FAILED" != "0" ]; then
+                echo "::warning::Ingestion had failures — check Bedrock console for details"
+              fi
+              break
+            fi
+          done
+          if [ "$TIMED_OUT" = "true" ] && [ -n "$JOB_ID" ]; then
+            echo "::warning::Ingestion still running after 10 minutes (job $JOB_ID) — check Bedrock console"
+          fi
