@@ -1,11 +1,24 @@
 {
     "name": "FIX",
-    "website": "",
-    "description": "FIX is a utility token on Polygon blockchain with a maximum supply of 21,000,000 tokens.",
+    "website": "https://github.com/finmatteo96/fix-token-logo",
+    "description": "FIX is a utility token on Polygon blockchain with a maximum supply of 21,000,000 tokens, tradeable on QuickSwap DEX.",
     "explorer": "https://polygonscan.com/token/0xe82363C4e93F6Eb4E5591d4b1d79B59fbD9156a2",
     "type": "ERC20",
     "symbol": "FIX",
     "decimals": 18,
     "status": "active",
-    "id": "0xe82363C4e93F6Eb4E5591d4b1d79B59fbD9156a2"
+    "id": "0xe82363C4e93F6Eb4E5591d4b1d79B59fbD9156a2",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/finmatteo96/fix-token-logo"
+        },
+        {
+            "name": "explorer",
+            "url": "https://polygonscan.com/token/0xe82363C4e93F6Eb4E5591d4b1d79B59fbD9156a2"
+        }
+    ],
+    "tags": [
+        "erc20"
+    ]
 }
