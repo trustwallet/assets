@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{TITLE}}</title>
+<style>
+:root {
+  --page-bg: #f4f7fb;
+  --text: #1e293b;
+  --text-muted: #475569;
+  --text-faint: #94a3b8;
+  --heading: #0f2b3d;
+  --card-bg: white;
+  --card-border: #e2e8f0;
+  --card-shadow: 0 12px 24px -16px rgba(30,41,59,0.35);
+  --link: #2563eb;
+  --toolbar-bg: rgba(255,255,255,0.92);
+  --toolbar-border: #e2e8f0;
+  --toolbar-shadow: 0 6px 14px rgba(0,27,55,0.08);
+  --btn-bg: #e9eef3;
+  --btn-hover: #d1d9e6;
+  --btn-text: #1e293b;
+}
+[data-theme="dark"] {
+  --page-bg: #0f172a;
+  --text: #e2e8f0;
+  --text-muted: #94a3b8;
+  --text-faint: #64748b;
+  --heading: #93c5fd;
+  --card-bg: #1e293b;
+  --card-border: #334155;
+  --card-shadow: 0 12px 24px -16px rgba(0,0,0,0.5);
+  --link: #60a5fa;
+  --toolbar-bg: rgba(15,23,42,0.92);
+  --toolbar-border: #334155;
+  --toolbar-shadow: 0 6px 14px rgba(0,0,0,0.4);
+  --btn-bg: #334155;
+  --btn-hover: #475569;
+  --btn-text: #e2e8f0;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  background: var(--page-bg);
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow: hidden;
+}
+/* --- Toolbar --- */
+.toolbar {
+  position: fixed; top: 1rem; right: 1rem;
+  display: flex; gap: 0.5rem; z-index: 100;
+  background: var(--toolbar-bg);
+  backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+  padding: 0.5rem 0.75rem;
+  border-radius: 40px;
+  transition: right 0.3s ease;
+  border: 1px solid var(--toolbar-border);
+  box-shadow: var(--toolbar-shadow);
+}
+.toolbar button, .toolbar-back {
+  background: var(--btn-bg); color: var(--btn-text); border: none;
+  padding: 0.4rem 1rem; border-radius: 40px;
+  cursor: pointer; font-size: 0.8rem; font-weight: 600;
+  transition: background 0.15s; text-decoration: none;
+  display: inline-flex; align-items: center; gap: 0.35rem;
+}
+.toolbar button:hover, .toolbar-back:hover { background: var(--btn-hover); text-decoration: none; }
+/* --- Split View --- */
+.split-icon {
+  display: inline-block; width: 14px; height: 12px;
+  border: 2px solid currentColor; border-radius: 2px;
+  position: relative; vertical-align: middle;
+}
+.split-icon::after {
+  content: ''; position: absolute; left: 50%; top: 1px; bottom: 1px;
+  width: 2px; background: currentColor; transform: translateX(-50%);
+}
+body.split-mode #split-btn { background: var(--link); color: white; }
+body.split-mode #split-btn .split-icon { border-color: white; }
+body.split-mode #split-btn .split-icon::after { background: white; }
+#split-pane {
+  position: fixed; top: 0; bottom: 0; z-index: 80;
+  right: 0; width: calc((100vw - 220px) / 2);
+  background: var(--page-bg); border-left: 2px solid var(--card-border);
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+}
+#split-pane.active { transform: translateX(0); }
+#split-pane iframe { width: 100%; height: 100%; border: none; }
+#split-pane .split-close {
+  position: absolute; top: 0.75rem; right: 0.75rem; z-index: 10;
+  width: 30px; height: 30px; border-radius: 50%;
+  background: var(--btn-bg); color: var(--btn-text);
+  border: 1px solid var(--card-border); cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.2rem; line-height: 1;
+  box-shadow: var(--toolbar-shadow); transition: background 0.15s;
+}
+#split-pane .split-close:hover { background: var(--btn-hover); }
+body.split-mode #content-frame { width: calc((100vw - 220px) / 2); }
+body.split-mode .toolbar { right: calc((100vw - 220px) / 2 + 1rem); }
+/* Review counter */
+.review-counter {
+  position: fixed; bottom: 1.5rem; right: 1.5rem; z-index: 99;
+  background: var(--toolbar-bg);
+  backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+  padding: 0.4rem 0.9rem;
+  border-radius: 40px;
+  border: 1px solid var(--toolbar-border);
+  box-shadow: var(--toolbar-shadow);
+  font-size: 0.8rem; font-weight: 600; color: var(--text-muted);
+  transition: right 0.3s ease;
+}
+.review-counter .count { color: #b45309; font-weight: 700; }
+.review-counter.all-done { color: var(--text-faint); }
+.review-counter.all-done .count { color: var(--text-faint); }
+body.split-mode .review-counter { right: calc((100vw - 220px) / 2 + 1.5rem); }
+/* --- Content iframe --- */
+#content-frame {
+  position: fixed; top: 0; left: 220px;
+  width: calc(100vw - 220px); height: 100vh;
+  border: none; background: var(--page-bg);
+  transition: width 0.3s ease;
+}
+/* --- Nav Sidebar --- */
+.nav-sidebar {
+  position: fixed; left: 0; top: 0; bottom: 0; width: 220px;
+  background: var(--card-bg); border-right: 1px solid var(--card-border);
+  padding: 1.5rem 1rem 1.5rem 1.2rem; overflow-y: auto; z-index: 90;
+  font-size: 0.82rem; display: flex; flex-direction: column;
+}
+.nav-sidebar .nav-feature { font-weight: 700; color: var(--heading); font-size: 0.75rem;
+  text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 1.2rem;
+  word-wrap: break-word; overflow-wrap: break-word; line-height: 1.4; }
+.nav-chain { flex: 1; }
+.nav-item { display: flex; align-items: flex-start; position: relative; cursor: pointer;
+  text-decoration: none; color: var(--text-muted); padding: 22px 0; }
+.nav-item:hover { color: var(--link); }
+.nav-item.disabled { cursor: default; color: var(--text-faint); opacity: 0.5; }
+.nav-item.disabled:hover { color: var(--text-faint); }
+.nav-item .nav-line { position: absolute; left: 7px; top: 29px; bottom: -23px;
+  width: 2px; background: var(--card-border); }
+.nav-item.done .nav-line { background: #10b981; }
+.nav-item.current .nav-line { background: #10b981; }
+.nav-item.dotted .nav-line,
+.nav-item.line-to-dotted .nav-line { background: none;
+  border-left: 2px dashed var(--text-faint); width: 0; }
+.nav-item:last-child .nav-line,
+.nav-item.no-line .nav-line { display: none; }
+.nav-circle { width: 16px; height: 16px; border-radius: 50%; flex-shrink: 0;
+  border: 2px solid var(--card-border); background: transparent;
+  margin-right: 10px; margin-top: 1px; position: relative; z-index: 1; }
+.nav-item.exists .nav-circle { border-color: var(--text-muted); }
+.nav-item.done .nav-circle { border-color: #10b981; background: #10b981; }
+.nav-item.current .nav-circle { border-color: #f59e0b; background: #f59e0b;
+  box-shadow: 0 0 0 4px rgba(245,158,11,0.3); animation: nav-pulse 2s ease-in-out infinite; }
+.nav-item.dotted .nav-circle { border-style: dashed; border-color: var(--text-faint); }
+@keyframes nav-pulse {
+  0%, 100% { box-shadow: 0 0 0 4px rgba(245,158,11,0.3); }
+  50% { box-shadow: 0 0 0 8px rgba(245,158,11,0.15); }
+}
+.nav-label { line-height: 18px; font-weight: 500; }
+.nav-item.current .nav-label { font-weight: 700; color: #d97706; }
+.nav-item.done .nav-label { color: #10b981; }
+.nav-chk-count {
+  font-size: 0.7rem; font-weight: 600; color: var(--text);
+  margin-left: 4px; white-space: nowrap;
+}
+.nav-chk-count.all-done { color: #10b981; }
+.nav-branch { padding-left: 28px; padding-top: 12px; padding-bottom: 12px; position: relative; }
+.nav-branch::before { content: ''; position: absolute; left: 7px; top: 13px;
+  width: 14px; height: 2px; background: var(--card-border); }
+.nav-branch.done::before { background: #10b981; }
+.nav-branch.current::before { background: #f59e0b; }
+.nav-branch::after { content: ''; position: absolute; left: 7px; top: 0; bottom: 0;
+  width: 2px; background: var(--card-border); }
+.nav-branch.trunk-done::after { background: #10b981; }
+.nav-branch.trunk-current::after { background: #10b981; }
+.nav-branch.last-branch::after { bottom: -23px; }
+.nav-branch .nav-line { left: 35px; display: none; }
+.nav-tooltip {
+  position: absolute; left: 26px; top: 100%;
+  margin-top: 2px; padding: 3px 10px; border-radius: 6px;
+  background: var(--card-bg); border: 1px solid var(--card-border);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  font-size: 0.75rem; font-weight: 600; color: #60a5fa;
+  font-family: 'SF Mono','JetBrains Mono','Fira Code',Menlo,monospace;
+  white-space: normal; pointer-events: none; opacity: 0;
+  transition: opacity 0.15s; z-index: 100; max-width: 180px;
+}
+.nav-item.dotted:hover .nav-tooltip,
+.nav-branch.dotted:hover .nav-tooltip,
+.nav-item:hover .nav-tooltip { opacity: 1; }
+/* Info icon with hover tooltip */
+.nav-info { display: inline-flex; align-items: center; justify-content: center;
+  width: 14px; height: 14px; font-size: 0.55rem; color: var(--text-faint);
+  cursor: help; margin-left: 3px; position: relative; vertical-align: middle;
+  border: 1px solid var(--text-faint); border-radius: 50%; line-height: 1; }
+.nav-info:hover { color: var(--link); border-color: var(--link); }
+.nav-info-tip { position: absolute; left: 50%; top: 100%; transform: translateX(-50%);
+  margin-top: 4px; padding: 3px 8px; border-radius: 6px;
+  background: var(--card-bg); border: 1px solid var(--card-border);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  font-size: 0.7rem; font-weight: 600; color: #60a5fa;
+  font-family: 'SF Mono','JetBrains Mono','Fira Code',Menlo,monospace;
+  white-space: nowrap; pointer-events: none; opacity: 0;
+  transition: opacity 0.15s; z-index: 100; }
+.nav-info:hover .nav-info-tip { opacity: 1; }
+.nav-sep { border: none; height: 1px; background: var(--card-border);
+  margin: 1rem 0 0.75rem 0; }
+/* --- Mobile: hide sidebar, iframe full-width --- */
+@media (max-width: 900px) {
+  .nav-sidebar { display: none; }
+  #content-frame { left: 0; width: 100vw; }
+  #split-pane { display: none !important; }
+  body.split-mode #content-frame { width: 100vw; }
+  #split-btn { display: none; }
+}
+</style>
+</head>
+<body>
+<div class="toolbar">
+  <a id="back-link" href="{{INDEX_PATH}}" class="toolbar-back">&#9664; Dashboard</a>
+  <button id="theme-btn" onclick="toggleTheme()">&#9790; Dark</button>
+  <button id="collapse-btn" onclick="toggleAll()">&#9776; Expand All</button>
+  <button id="split-btn" onclick="toggleSplitView()" title="Split view"><span class="split-icon"></span></button>
+</div>
+<div id="review-counter" class="review-counter" style="display:none"></div>
+<div id="nav-sidebar" class="nav-sidebar"></div>
+<div id="split-pane"><button class="split-close" onclick="closeSplitView()" title="Close">&times;</button><iframe id="split-iframe"></iframe></div>
+<iframe id="content-frame"></iframe>
+<script>
+var NAV_DATA = {{NAV_DATA}};
+var DEFAULT_PAGE = '{{DEFAULT_PAGE}}';
+var currentPage = '';
+
+/* --- Path ↔ PageId mapping --- */
+var PAGE_TO_PATH = {};
+var PATH_TO_PAGE = {};
+(function buildMaps() {
+  var nav = NAV_DATA;
+  if (!nav || !nav.feature) return;
+  var entries = [
+    ['spec', nav.spec], ['plan', nav.plan], ['research', nav.research],
+    ['data-model', nav.dataModel], ['quickstart', nav.quickstart],
+    ['tasks', nav.tasks], ['analyze', nav.analyze]
+  ];
+  entries.forEach(function(e) {
+    if (e[1]) { PAGE_TO_PATH[e[0]] = e[1]; PATH_TO_PAGE[e[1]] = e[0]; }
+  });
+  if (nav.checklists) {
+    nav.checklists.forEach(function(chk) {
+      if (chk.path) {
+        var id = 'chk-' + chk.name;
+        PAGE_TO_PATH[id] = chk.path;
+        PATH_TO_PAGE[chk.path] = id;
+      }
+    });
+  }
+  if (nav.constitution) {
+    PAGE_TO_PATH['constitution'] = nav.constitution;
+    PATH_TO_PAGE[nav.constitution] = 'constitution';
+  }
+})();
+
+function getPageFromHash() {
+  var hash = location.hash.replace('#', '');
+  if (hash && PAGE_TO_PATH[hash]) return hash;
+  if (PAGE_TO_PATH[DEFAULT_PAGE]) return DEFAULT_PAGE;
+  // Fallback: find the first page that has a valid path
+  var fallbackOrder = ['spec', 'plan', 'tasks', 'research', 'analyze'];
+  for (var i = 0; i < fallbackOrder.length; i++) {
+    if (PAGE_TO_PATH[fallbackOrder[i]]) return fallbackOrder[i];
+  }
+  // Try checklists
+  var nav = NAV_DATA;
+  if (nav && nav.checklists) {
+    for (var j = 0; j < nav.checklists.length; j++) {
+      if (nav.checklists[j].path) return 'chk-' + nav.checklists[j].name;
+    }
+  }
+  return DEFAULT_PAGE;
+}
+
+/* --- Theme --- */
+/* --- Theme storage: window.name survives reloads on file:// where localStorage is blocked (Safari) --- */
+function saveTheme(theme) {
+  try { localStorage.setItem('speckit-theme', theme); } catch(e) {}
+  window.name = window.name.replace(/speckit-theme=\w*/, '').replace(/;+$/, '') + ';speckit-theme=' + theme;
+}
+function getSavedTheme() {
+  var m = window.name.match(/speckit-theme=(\w+)/);
+  if (m) return m[1];
+  try { return localStorage.getItem('speckit-theme'); } catch(e) {}
+  return null;
+}
+function toggleTheme() {
+  var h = document.documentElement, btn = document.getElementById('theme-btn');
+  var newTheme;
+  if (h.getAttribute('data-theme') === 'dark') {
+    h.setAttribute('data-theme', 'light'); btn.innerHTML = '&#9790; Dark';
+    newTheme = 'light';
+  } else {
+    h.setAttribute('data-theme', 'dark'); btn.innerHTML = '&#9788; Light';
+    newTheme = 'dark';
+  }
+  saveTheme(newTheme);
+  // Notify child iframes with theme value directly
+  var frames = [document.getElementById('content-frame'), document.getElementById('split-iframe')];
+  frames.forEach(function(f) {
+    if (f && f.contentWindow) {
+      try { f.contentWindow.postMessage({ type: 'speckit-theme-change', theme: newTheme }, '*'); } catch(e) {}
+    }
+  });
+}
+
+/* --- Expand All / Collapse All --- */
+function toggleAll() {
+  var btn = document.getElementById('collapse-btn');
+  var isExpand = btn.innerHTML.indexOf('Expand') >= 0;
+  btn.innerHTML = isExpand ? '&#9776; Collapse All' : '&#9776; Expand All';
+  // Send toggle command to content iframe
+  var frame = document.getElementById('content-frame');
+  if (frame && frame.contentWindow) {
+    try { frame.contentWindow.postMessage({ type: 'speckit-toggle-all', expand: isExpand }, '*'); } catch(e) {}
+  }
+  var splitFrame = document.getElementById('split-iframe');
+  if (splitFrame && splitFrame.contentWindow) {
+    try { splitFrame.contentWindow.postMessage({ type: 'speckit-toggle-all', expand: isExpand }, '*'); } catch(e) {}
+  }
+}
+
+/* --- Review Counter --- */
+function updateParentReviewCounter(pending, total) {
+  var counter = document.getElementById('review-counter');
+  if (!counter) return;
+  if (total === 0) { counter.style.display = 'none'; return; }
+  counter.style.display = '';
+  if (pending === 0) {
+    counter.className = 'review-counter all-done';
+    counter.innerHTML = '<span class="count">0</span> sections need review';
+  } else {
+    counter.className = 'review-counter';
+    counter.innerHTML = '<span class="count">' + pending + '</span> sections need review';
+  }
+}
+(function initTheme() {
+  if (getSavedTheme() === 'dark') {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    document.getElementById('theme-btn').innerHTML = '&#9788; Light';
+  }
+})();
+
+/* --- Split View --- */
+function toggleSplitView() {
+  if (document.body.classList.contains('split-mode')) {
+    closeSplitView();
+  } else {
+    var path = PAGE_TO_PATH[currentPage] || '';
+    if (path) openSplitView(path);
+  }
+}
+function openSplitView(url) {
+  var pane = document.getElementById('split-pane');
+  var iframe = document.getElementById('split-iframe');
+  // Add expand=1 param so split-pane pages open with all sections expanded
+  var hashIdx = url.indexOf('#');
+  var hash = hashIdx >= 0 ? url.slice(hashIdx) : '';
+  var base = hashIdx >= 0 ? url.slice(0, hashIdx) : url;
+  iframe.src = themedUrl(base) + '&expand=1' + hash;
+  pane.classList.add('active');
+  document.body.classList.add('split-mode');
+}
+function closeSplitView() {
+  var pane = document.getElementById('split-pane');
+  var iframe = document.getElementById('split-iframe');
+  iframe.src = '';
+  pane.classList.remove('active');
+  document.body.classList.remove('split-mode');
+}
+
+/* --- Navigation --- */
+function navGo(path) {
+  if (document.body.classList.contains('split-mode')) {
+    var iframe = document.getElementById('split-iframe');
+    iframe.src = themedUrl(path) + '&expand=1';
+  } else {
+    var frame = document.getElementById('content-frame');
+    frame.src = themedUrl(path);
+    var pageId = PATH_TO_PAGE[path] || '';
+    if (pageId) {
+      currentPage = pageId;
+      history.replaceState(null, '', '#' + pageId);
+      renderNavSidebar();
+    }
+  }
+}
+
+function esc(s) { return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+function escPath(p) { return String(p).replace(/'/g,"\\'"); }
+
+/* --- Review counters --- */
+// Cache of review counts received from child iframes via postMessage.
+// Keyed by page ID (e.g. 'spec', 'plan'). Solves file:// cross-origin
+// iframe localStorage isolation where parent can't read child's localStorage.
+var _iframeReviewCache = Object.create(null);
+// Restore cached review counts from window.name (survives Cmd+R on file:// where localStorage is blocked)
+(function() {
+  var m = window.name.match(/speckit-rcache=([^;]*)/);
+  if (m) { try { var parsed = JSON.parse(decodeURIComponent(m[1])); Object.keys(parsed).forEach(function(k) { _iframeReviewCache[k] = parsed[k]; }); } catch(e) {} }
+})();
+
+function saveReviewCache() {
+  try {
+    var encoded = encodeURIComponent(JSON.stringify(_iframeReviewCache));
+    window.name = window.name.replace(/speckit-rcache=[^;]*;?/, '').replace(/;+$/, '') + ';speckit-rcache=' + encoded;
+  } catch(e) {}
+}
+
+function getReviewedCountFromStorage(pagePath, totalSections) {
+  if (!pagePath || !totalSections) return null;
+  try {
+    var absPath = new URL(pagePath, location.href).pathname;
+    var storeKey = 'speckit-reviews-' + absPath;
+    var store = JSON.parse(localStorage.getItem(storeKey) || '{}');
+    var reviewed = Object.keys(store).filter(function(k) { return store[k]; }).length;
+    return { reviewed: Math.min(reviewed, totalSections), total: totalSections };
+  } catch(e) { return null; }
+}
+
+function updateNavReviewCounters() {
+  var nav = NAV_DATA;
+  if (!nav || !nav.feature) return;
+  var pages = [
+    { id: 'spec', path: nav.spec, total: nav.specSections || 0 },
+    { id: 'plan', path: nav.plan, total: nav.planSections || 0 },
+    { id: 'tasks', path: nav.tasks, total: nav.tasksSections || 0 }
+  ];
+  pages.forEach(function(pg) {
+    var el = document.getElementById('nav-review-' + pg.id);
+    if (!el) return;
+    var count;
+    // Prefer iframe cache (works on file://) over localStorage
+    if (_iframeReviewCache[pg.id]) {
+      count = _iframeReviewCache[pg.id];
+    } else {
+      count = getReviewedCountFromStorage(pg.path, pg.total);
+    }
+    if (!count || !count.total) { el.textContent = ''; return; }
+    var allDone = count.reviewed === count.total;
+    el.className = 'nav-chk-count' + (allDone ? ' all-done' : '');
+    el.textContent = ' ' + count.reviewed + '/' + count.total;
+  });
+}
+
+/* --- Listen for review updates, collapse state, and xref navigation from child iframes --- */
+window.addEventListener('message', function(e) {
+  if (e.data && e.data.type === 'speckit-review-updated') {
+    // Cache review counts from child iframe (solves file:// localStorage isolation)
+    if (e.data.page && typeof e.data.reviewed === 'number' && typeof e.data.total === 'number') {
+      _iframeReviewCache[e.data.page] = { reviewed: e.data.reviewed, total: e.data.total };
+      saveReviewCache();
+    }
+    updateNavReviewCounters();
+    if (typeof e.data.pending === 'number' && typeof e.data.total === 'number') {
+      updateParentReviewCounter(e.data.pending, e.data.total);
+    }
+  }
+  if (e.data && e.data.type === 'speckit-collapse-state') {
+    var btn = document.getElementById('collapse-btn');
+    if (btn) {
+      btn.innerHTML = e.data.anyOpen ? '&#9776; Collapse All' : '&#9776; Expand All';
+    }
+  }
+  if (e.data && e.data.type === 'speckit-xref-navigate') {
+    var url = e.data.path + '#' + e.data.anchor;
+    if (!document.body.classList.contains('split-mode')) {
+      openSplitView(url);
+    } else {
+      var base = e.data.path;
+      document.getElementById('split-iframe').src = themedUrl(base) + '&expand=1#' + e.data.anchor;
+    }
+  }
+});
+/* --- Listen for storage changes (cross-tab or iframe localStorage updates) --- */
+window.addEventListener('storage', function(e) {
+  if (e.key && e.key.indexOf('speckit-reviews-') === 0) {
+    updateNavReviewCounters();
+  }
+});
+
+/* --- Render Nav Sidebar --- */
+function renderNavSidebar() {
+  var nav = NAV_DATA;
+  var sb = document.getElementById('nav-sidebar');
+  if (!sb || !nav || !nav.feature) return;
+
+  var cur = currentPage;
+
+  // Implementation status
+  var implDone = !!(nav.implementationDone);
+  // Ready to Implement is reachable when tasks exist and analyze is clear
+  var readyReachable = !!(nav.tasks && nav.analyze && nav.analyzeClear);
+
+  var mainSteps = [
+    { id: 'spec', label: 'Spec', path: nav.spec },
+    { id: 'plan', label: 'Plan', path: nav.plan },
+    { id: 'checklists', label: 'Checklists', path: '' },
+    { id: 'tasks', label: 'Tasks', path: nav.tasks },
+    { id: 'analyze', label: 'Analyze', path: nav.analyze || '' },
+    { id: 'ready', label: implDone ? 'Implementation Done' : 'Ready to Implement', path: '' },
+    { id: 'post-analyze', label: 'Post Analyze', path: '' }
+  ];
+  var planSubs = [];
+  if (nav.research || cur === 'research') planSubs.push({ id: 'research', label: 'Research', path: nav.research });
+  if (nav.dataModel || cur === 'data-model') planSubs.push({ id: 'data-model', label: 'Data Model', path: nav.dataModel });
+  if (nav.quickstart || cur === 'quickstart') planSubs.push({ id: 'quickstart', label: 'Quickstart', path: nav.quickstart });
+
+  var curMain = cur;
+  if (cur === 'research' || cur === 'data-model' || cur === 'quickstart') curMain = 'plan';
+  if (cur.indexOf('chk-') === 0) curMain = 'checklists';
+
+  var mainOrder = { spec: 0, plan: 1, checklists: 2, tasks: 3, analyze: 4, ready: 5, 'post-analyze': 6 };
+  var curIdx = mainOrder[curMain] !== undefined ? mainOrder[curMain] : -1;
+
+  function getState(stepId, stepIdx) {
+    if (stepId === cur) return 'current';
+    if (stepId === curMain && curMain !== cur) return 'done';
+    if (stepIdx < curIdx) return 'done';
+    // Analyze: green only when page exists and report is clear (empty or no concerns)
+    if (stepId === 'analyze' && nav.analyze && nav.analyzeClear) return 'done';
+    // Ready to Implement: green when implementation done or reachable (tasks + analyze clear)
+    if (stepId === 'ready' && (implDone || readyReachable)) return 'done';
+    // Post Analyze: solid (not dotted) when Ready to Implement is reachable
+    if (stepId === 'post-analyze' && (implDone || readyReachable)) return 'reachable';
+    return '';
+  }
+
+  function itemClass(state, hasPath, isLast, noLine) {
+    var cls = 'nav-item';
+    if (state === 'current') cls += ' current exists';
+    else if (state === 'done') cls += ' done exists';
+    else if (state === 'reachable') cls += ' exists';
+    else if (hasPath) cls += ' exists';
+    else cls += ' dotted disabled';
+    if (noLine) cls += ' no-line';
+    return cls;
+  }
+
+  var cmdMap = { spec: '/speckit.specify', plan: '/speckit.plan', checklists: '/speckit.checklist', tasks: '/speckit.tasks',
+    analyze: '/speckit.analyze', ready: '/speckit.implement', 'post-analyze': '/speckit.analyze --post-impl',
+    research: '/speckit.plan', 'data-model': '/speckit.plan', quickstart: '/speckit.plan' };
+
+  // Info icon map: items that show (i) with /speckit.clarify tooltip
+  var infoMap = { spec: '/speckit.clarify', plan: '/speckit.clarify', checklists: '/speckit.clarify' };
+
+  function tooltipHtml(id) { var cmd = cmdMap[id]; return cmd ? '<span class="nav-tooltip">' + cmd + '</span>' : ''; }
+  function infoIconHtml(id) { var cmd = infoMap[id]; return cmd ? '<span class="nav-info" onclick="event.stopPropagation()">i<span class="nav-info-tip">' + cmd + '</span></span>' : ''; }
+
+  // Pre-compute which steps will be dotted (for line-to-dotted lookahead)
+  function isDotted(stepId, stepIdx) {
+    var s = getState(stepId, stepIdx);
+    if (s === 'current' || s === 'reachable') return false;
+    // Virtual steps (ready, post-analyze) are not dotted when done
+    if (s === 'done' && (stepId === 'ready' || stepId === 'post-analyze')) return false;
+    // Items without paths stay dotted even if "done" by order (speckit.fast skipped items)
+    if (stepId === 'checklists') return !(nav.checklists && nav.checklists.length > 0);
+    var st = mainSteps[stepIdx];
+    return !st || !st.path;
+  }
+
+  var html = '<div class="nav-feature" title="' + esc(nav.feature) + '">' + esc(nav.feature) + '</div>';
+  html += '<div class="nav-chain">';
+
+  for (var mi = 0; mi < mainSteps.length; mi++) {
+    var step = mainSteps[mi];
+    var state = getState(step.id, mi);
+    var hasPath = !!step.path;
+
+    if (step.id === 'checklists') {
+      hasPath = nav.checklists && nav.checklists.length > 0;
+      if (hasPath) step.path = nav.checklists[0].path;
+    }
+
+    // Items without paths stay dotted even if "done" by order (speckit.fast skipped items)
+    if (state === 'done' && !hasPath && step.id !== 'ready' && step.id !== 'post-analyze') {
+      state = '';
+    }
+
+    // Line is dotted if either this node or the next node is dotted
+    var nextDotted = (mi + 1 < mainSteps.length) && isDotted(mainSteps[mi + 1].id, mi + 1);
+    var lineCls = nextDotted ? ' line-to-dotted' : '';
+
+    var href = hasPath ? ' onclick="navGo(\'' + escPath(step.path) + '\')"' : '';
+    html += '<div class="' + itemClass(state, hasPath, false, false) + lineCls + '"' + href + '>';
+    html += '<div class="nav-line"></div>';
+    html += '<div class="nav-circle"></div>';
+    var aggSpan = (step.id === 'checklists') ? '<span id="nav-chk-aggregate"></span>' : '';
+    var reviewSpan = (['spec', 'plan', 'tasks'].indexOf(step.id) >= 0) ? '<span class="nav-chk-count" id="nav-review-' + step.id + '"></span>' : '';
+    html += '<div class="nav-label">' + esc(step.label) + reviewSpan + aggSpan + infoIconHtml(step.id) + '</div>';
+    if (!hasPath) html += tooltipHtml(step.id);
+    html += '</div>';
+
+    if (step.id === 'plan' && planSubs.length > 0) {
+      var trunkCls = (state === 'done' || curMain === 'plan') ? ' trunk-done' : '';
+      for (var pi = 0; pi < planSubs.length; pi++) {
+        var ps = planSubs[pi];
+        var pState = (cur === ps.id) ? 'current' : (curIdx > 1 && ps.path ? 'done' : '');
+        var pHref = ps.path ? ' onclick="navGo(\'' + escPath(ps.path) + '\')"' : '';
+        var lastBranch = (pi === planSubs.length - 1) ? ' last-branch' : '';
+        html += '<div class="nav-branch' + trunkCls + lastBranch + ' ' + itemClass(pState, !!ps.path, false, false) + '"' + pHref + '>';
+        html += '<div class="nav-circle"></div>';
+        html += '<div class="nav-label">' + esc(ps.label) + '</div>';
+        if (!ps.path) html += tooltipHtml(ps.id);
+        html += '</div>';
+      }
+    }
+
+    if (step.id === 'checklists' && nav.checklists && nav.checklists.length > 0) {
+      var chkTrunkCls = (state === 'done' || curMain === 'checklists') ? ' trunk-done' : '';
+      for (var ci = 0; ci < nav.checklists.length; ci++) {
+        var chk = nav.checklists[ci];
+        var cState = (cur === 'chk-' + chk.name) ? 'current' : (curIdx > 2 && chk.path ? 'done' : '');
+        var cHref = chk.path ? ' onclick="navGo(\'' + escPath(chk.path) + '\')"' : '';
+        var lastChk = (ci === nav.checklists.length - 1) ? ' last-branch' : '';
+        html += '<div class="nav-branch' + chkTrunkCls + lastChk + ' ' + itemClass(cState, !!chk.path, false, false) + '"' + cHref + '>';
+        html += '<div class="nav-circle"></div>';
+        html += '<div class="nav-label">' + esc(chk.name) + '</div>';
+        if (chk.total > 0 && chk.name !== 'requirements') {
+          var chkAllDone = chk.checked === chk.total ? ' all-done' : '';
+          html += '<span class="nav-chk-count' + chkAllDone + '">' + chk.checked + '/' + chk.total + '</span>';
+        }
+        if (!chk.path) html += tooltipHtml('checklists');
+        html += '</div>';
+      }
+    }
+  }
+
+  html += '</div>'; // close nav-chain
+
+  if (nav.constitution) {
+    html += '<hr class="nav-sep">';
+    var cState = (cur === 'constitution') ? 'current' : 'exists';
+    html += '<div class="nav-item no-line ' + cState + ' exists" onclick="navGo(\'' + escPath(nav.constitution) + '\')">';
+    html += '<div class="nav-circle"></div>';
+    html += '<div class="nav-label">Constitution</div>';
+    html += '</div>';
+  }
+
+  sb.innerHTML = html;
+
+  // Populate aggregate checkbox counter
+  if (nav.checklists && nav.checklists.length > 0) {
+    var totalChecked = 0, totalAll = 0;
+    nav.checklists.forEach(function(chk) { totalChecked += chk.checked || 0; totalAll += chk.total || 0; });
+    if (totalAll > 0) {
+      var aggEl = document.getElementById('nav-chk-aggregate');
+      if (aggEl) {
+        var allDone = totalChecked === totalAll;
+        aggEl.className = 'nav-chk-count' + (allDone ? ' all-done' : '');
+        aggEl.textContent = ' ' + totalChecked + '/' + totalAll;
+      }
+    }
+  }
+
+  updateNavReviewCounters();
+}
+
+/* --- Append current theme as URL param so child iframes get it synchronously --- */
+function themedUrl(url) {
+  var theme = document.documentElement.getAttribute('data-theme') || 'light';
+  var sep = url.indexOf('?') >= 0 ? '&' : '?';
+  return url + sep + 'theme=' + theme;
+}
+
+/* --- Preload hidden iframes for pages missing review data (file:// only) --- */
+function preloadReviewCounts() {
+  // On http(s):// localStorage works cross-iframe, so preloading is unnecessary.
+  // Only needed on file:// where cross-origin isolation prevents reading child localStorage.
+  if (location.protocol !== 'file:') return;
+  var nav = NAV_DATA;
+  if (!nav) return;
+  var pages = [
+    { id: 'spec', path: nav.spec },
+    { id: 'plan', path: nav.plan },
+    { id: 'tasks', path: nav.tasks }
+  ];
+  pages.forEach(function(pg) {
+    // Skip if no path, already cached, or it's the current page (already in main iframe)
+    if (!pg.path || _iframeReviewCache[pg.id] || pg.id === currentPage) return;
+    var f = document.createElement('iframe');
+    f.style.cssText = 'position:absolute;width:0;height:0;border:none;visibility:hidden';
+    f.src = themedUrl(pg.path);
+    f.onload = function() { setTimeout(function() { try { f.remove(); } catch(e) {} }, 600); };
+    document.body.appendChild(f);
+  });
+}
+
+/* --- Init: load page from hash or default --- */
+(function init() {
+  currentPage = getPageFromHash();
+  var path = PAGE_TO_PATH[currentPage];
+  if (path) {
+    document.getElementById('content-frame').src = themedUrl(path);
+  }
+  renderNavSidebar();
+  preloadReviewCounts();
+})();
+
+window.addEventListener('hashchange', function() {
+  var page = getPageFromHash();
+  if (page !== currentPage) {
+    currentPage = page;
+    var path = PAGE_TO_PATH[currentPage];
+    if (path) {
+      document.getElementById('content-frame').src = themedUrl(path);
+    }
+    renderNavSidebar();
+  }
+});
+</script>
+</body>
+</html>
