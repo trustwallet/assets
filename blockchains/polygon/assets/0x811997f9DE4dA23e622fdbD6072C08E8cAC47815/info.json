@@ -1,11 +1,24 @@
 {
   "name": "RICO Token",
   "website": "https://website-two-rouge-26.vercel.app",
-  "short_description": "RICO Token is a decentralized ERC-20 token on Polygon. Contract is verified and ownership renounced.",
-  "explorer": "https://polygonscan.com/token/0x811997f9DE4dA23e622fdbD6072C08E8cAC47815",
+  "description": "RICO Token is a decentralized ERC-20 token on Polygon mainnet. The smart contract is open source, verified on Polygonscan, and ownership has been permanently renounced with no admin controls. Active liquidity pool on Uniswap V3.",
+  "explorer": "https://etherscan.io/token/0x811997f9DE4dA23e622fdbD6072C08E8cAC47815",
   "type": "ERC20",
   "symbol": "RICO",
   "decimals": 18,
   "status": "active",
-  "id": "0x811997f9DE4dA23e622fdbD6072C08E8cAC47815"
+  "id": "0x811997f9DE4dA23e622fdbD6072C08E8cAC47815",
+  "links": [
+    {
+      "name": "github",
+      "url": "https://github.com/ricardocbernardi-ship-it"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/vovoBolsonara"
+    }
+  ],
+  "tags": [
+    "defi"
+  ]
 }
