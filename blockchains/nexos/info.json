@@ -1,0 +1,23 @@
+{
+  "name": "Nexos Chain",
+  "website": "https://nexoschain.com",
+  "short_description": "A Layer-1 blockchain built for Decentralized Physical Infrastructure Networks (DePIN). Sub-3s finality, ultra-low gas, fully EVM-native.",
+  "explorer": "https://explorer.nexoschain.com",
+  "research": "https://nexoschain.com/whitepaper.html",
+  "symbol": "NXOS",
+  "decimals": 18,
+  "status": "active",
+  "rpc_url": "https://rpc.nexoschain.com",
+  "chain_id": "90001",
+  "coin_type": "60",
+  "links": [
+    {
+      "name": "website",
+      "url": "https://nexoschain.com"
+    },
+    {
+      "name": "explorer",
+      "url": "https://explorer.nexoschain.com"
+    }
+  ]
+}
