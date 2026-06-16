@@ -1,7 +1,8 @@
 {
   "name": "Vovo Bolsonara",
-  "short_description": "Vovô Bolsonara (BOZO) is a Brazilian meme token on Polygon. Verified and tradeable on Uniswap V3.",
-  "explorer": "https://polygonscan.com/token/0x32941dD4136eE9985dd570d52D61A74DDba80533",
+  "website": "https://website-two-rouge-26.vercel.app",
+  "description": "Vovô Bolsonara (BOZO) is a Brazilian meme token on Polygon mainnet. Contract is verified on Polygonscan. Dual trading pairs on Uniswap V3 (BOZO/WPOL and BOZO/USDC). Includes the BozoNFT collection.",
+  "explorer": "https://etherscan.io/token/0x32941dD4136eE9985dd570d52D61A74DDba80533",
   "type": "ERC20",
   "symbol": "BOZO",
   "decimals": 18,
@@ -10,11 +11,14 @@
   "links": [
     {
       "name": "twitter",
-      "url": "https://twitter.com/BozoTokenBR"
+      "url": "https://x.com/BozoTokenBR"
     },
     {
       "name": "telegram",
       "url": "https://t.me/vovoBolsonara"
     }
+  ],
+  "tags": [
+    "meme"
   ]
 }
