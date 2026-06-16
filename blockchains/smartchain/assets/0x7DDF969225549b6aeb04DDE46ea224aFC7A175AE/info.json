@@ -1,11 +1,24 @@
 {
-  "name": "USDT",
-  "symbol": "USDT",
+  "name": "FAKE Tether USD",
   "type": "BEP20",
+  "symbol": "FAKE",
   "decimals": 18,
+  "description": "FAKE Tether USD token on BNB Smart Chain.",
   "website": "https://example.com",
-  "description": "Custom practice token named USDT (not official Tether).",
-  "explorer": "https://bscscan.com/token/0x7DDF969225549b6aeb04DDE46ea224afC7A175AE",
+  "explorer": "https://bscscan.com",
   "status": "active",
-  "id": "0x7DDF969225549b6aeb04DDE46ea224afC7A175AE"
+  "id": "0x7DDF969225549b6aeb04DDE46ea224aFC7A175AE",
+  "tags": [
+    "stablecoin"
+  
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://x.com"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me"
+    }
+  ]
 }
