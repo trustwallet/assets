@@ -1,10 +1,24 @@
 {
   "name": "PELELECA",
-  "short_description": "PELELECA (LECA) is a decentralized ERC-20 token on Polygon with no admin controls. Verified on Polygonscan.",
-  "explorer": "https://polygonscan.com/token/0x44Ef1c5e42bfA594E18e39F600Ed5cE6Ff2db841",
+  "website": "https://website-two-rouge-26.vercel.app",
+  "description": "PELELECA (LECA) is a decentralized ERC-20 meme token on Polygon mainnet. Contract is verified on Polygonscan with active liquidity on Uniswap V3.",
+  "explorer": "https://etherscan.io/token/0x44Ef1c5e42bfA594E18e39F600Ed5cE6Ff2db841",
   "type": "ERC20",
   "symbol": "LECA",
   "decimals": 18,
   "status": "active",
-  "id": "0x44Ef1c5e42bfA594E18e39F600Ed5cE6Ff2db841"
+  "id": "0x44Ef1c5e42bfA594E18e39F600Ed5cE6Ff2db841",
+  "links": [
+    {
+      "name": "github",
+      "url": "https://github.com/ricardocbernardi-ship-it"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/vovoBolsonara"
+    }
+  ],
+  "tags": [
+    "meme"
+  ]
 }
