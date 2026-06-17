@@ -1,11 +1,24 @@
 {
-  "name": "Cash Protocol",
-  "website": "https://www.cashprotocol.biz",
-  "description": "Cash Protocol is a decentralized digital asset ecosystem built on BNB Smart Chain.",
-  "explorer": "https://bscscan.com/token/0x7645c09e31A04b0711da9BC82BDa20268F439cE9",
-  "type": "BEP20",
-  "symbol": "CASH",
-  "decimals": 18,
-  "status": "active",
-  "id": "0x7645c09e31A04b0711da9BC82BDa20268F439cE9"
+"name": "Cash Protocol",
+"website": "https://www.cashprotocol.biz",
+"description": "Cash Protocol is a decentralized digital asset ecosystem built on BNB Smart Chain.",
+"explorer": "https://bscscan.com/token/0x7645c09e31A04b0711da9BC82BDa20268F439cE9",
+"type": "BEP20",
+"symbol": "CASH",
+"decimals": 18,
+"status": "active",
+"id": "0x7645c09e31A04b0711da9BC82BDa20268F439cE9",
+"links": [
+{
+"name": "twitter",
+"url": "https://x.com/CashProtocol"
+},
+{
+"name": "telegram",
+"url": "https://t.me/CashProtocolOfficial"
+}
+],
+"tags": [
+"defi"
+]
 }
