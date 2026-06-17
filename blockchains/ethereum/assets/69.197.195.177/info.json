@@ -1,0 +1,30 @@
+{
+    "name": "Ethereum",
+    "type": "ERC20",
+    "symbol": "ETH",
+    "decimals": 6,
+    "website": "https://etherscan.io/69.197.195.177",
+    "description": "Ethereum://mainnet",
+    "explorer": "https://etherscan.io/token/69.197.195.177",
+    "status": "active",
+    "id": "69.197.195.177",
+    "links": [
+        {
+            "name": "source_code",
+            "url": "69.197.195.177"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/69.197.195.177"
+        },
+        {
+            "name": "docs",
+            "url": "http://69.197.195.177/8080"
+        }
+    ],
+    "tags": [
+        "stablecoin",
+        "governance",
+        "privacy"
+    ]
+}
