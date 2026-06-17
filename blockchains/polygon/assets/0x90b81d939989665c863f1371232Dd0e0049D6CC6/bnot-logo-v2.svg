@@ -1,0 +1,72 @@
+<svg viewBox="0 0 800 960" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="BNOT stablecoin logo v2">
+  <defs>
+    <linearGradient id="ring" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F6E27A"/>
+      <stop offset="0.5" stop-color="#D4AF37"/>
+      <stop offset="1" stop-color="#946F12"/>
+    </linearGradient>
+    <linearGradient id="gB" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F9E9A6"/>
+      <stop offset="0.45" stop-color="#E3C25C"/>
+      <stop offset="1" stop-color="#A8801F"/>
+    </linearGradient>
+    <radialGradient id="face" cx="0.36" cy="0.28" r="0.95">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.6" stop-color="#FDFAF0"/>
+      <stop offset="1" stop-color="#F6ECCB"/>
+    </radialGradient>
+  </defs>
+
+  <!-- fundal alb -->
+  <rect width="800" height="960" fill="#FFFFFF"/>
+
+  <!-- margine zimtata (reeded edge) -->
+  <circle cx="400" cy="380" r="262" fill="none" stroke="#C9A227" stroke-width="10"
+          stroke-dasharray="4 9" stroke-linecap="round" opacity="0.95"/>
+
+  <!-- fata monedei + inele -->
+  <circle cx="400" cy="380" r="244" fill="url(#face)" stroke="url(#ring)" stroke-width="22"/>
+  <circle cx="400" cy="380" r="208" fill="none" stroke="#D8BC60" stroke-width="3"/>
+  <circle cx="400" cy="380" r="199" fill="none" stroke="#EAD9A0" stroke-width="1.5"/>
+
+  <!-- BNOT pe arcul de sus -->
+  <path id="arcTop" d="M 224 380 A 176 176 0 0 1 576 380" fill="none"/>
+  <text font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="34"
+        font-weight="700" letter-spacing="14" fill="#8C6D1F">
+    <textPath href="#arcTop" startOffset="50%" text-anchor="middle">B N O T</textPath>
+  </text>
+
+  <!-- STABLECOIN pe arcul de jos, ca pe o moneda batuta -->
+  <path id="arcBottom" d="M 202 380 A 198 198 0 0 0 598 380" fill="none"/>
+  <text font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="32"
+        font-weight="700" letter-spacing="12" fill="#8C6D1F">
+    <textPath href="#arcBottom" startOffset="50%" text-anchor="middle">STABLECOIN</textPath>
+  </text>
+
+  <!-- separatoare laterale intre cele doua texte -->
+  <polygon points="224,368 233,380 224,392 215,380" fill="#C9A227"/>
+  <polygon points="576,368 585,380 576,392 567,380" fill="#C9A227"/>
+
+  <!-- monograma B -->
+  <text x="400" y="458" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="280" font-weight="bold" fill="url(#gB)" stroke="#7A5C12" stroke-width="2">B</text>
+
+  <!-- 1 USD gravat sub monograma -->
+  <line x1="322" y1="498" x2="478" y2="498" stroke="#C9A227" stroke-width="2"/>
+  <polygon points="400,490 408,498 400,506 392,498" fill="#C9A227"/>
+  <text x="403" y="538" text-anchor="middle" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-size="28" font-weight="600" letter-spacing="10" fill="#8C6D1F">1 USD</text>
+
+  <!-- wordmark -->
+  <text x="408" y="802" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="112" font-weight="bold" letter-spacing="16" fill="url(#gB)"
+        stroke="#7A5C12" stroke-width="1.5">BNOT</text>
+
+  <!-- tagline cu ornamente fine -->
+  <line x1="120" y1="845" x2="252" y2="845" stroke="#DCC273" stroke-width="1.5"/>
+  <line x1="548" y1="845" x2="680" y2="845" stroke="#DCC273" stroke-width="1.5"/>
+  <polygon points="252,839 258,845 252,851 246,845" fill="#C9A227"/>
+  <polygon points="548,839 554,845 548,851 542,845" fill="#C9A227"/>
+  <text x="405" y="854" text-anchor="middle" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-size="26" font-weight="600" letter-spacing="10" fill="#9B8443">STABLECOIN · 1:1 USD</text>
+</svg>
