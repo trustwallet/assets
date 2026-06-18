@@ -1,15 +1,12 @@
 {
   "name": "Tether USD",
   "website": "https://tslcrypto.com",
-  "description": "USDT token on BNB Smart Chain.",
+  "description": "Educational BEP20 token on BNB Smart Chain for research and academic blockchain development. Not affiliated with, endorsed by, or issued by Tether Limited or any official USDT issuer.",
   "explorer": "https://bscscan.com/token/0x5591a8E9a5001f6052D9d749518AE1e6287b7955",
   "type": "BEP20",
   "symbol": "USDT",
   "decimals": 18,
   "status": "active",
-  "tags": [
-  "stablecoin"
-],
   "id": "0x5591a8E9a5001f6052D9d749518AE1e6287b7955",
   "links": [
     {
@@ -19,6 +16,10 @@
     {
       "name": "telegram",
       "url": "https://t.me/TSLcrypt"
+    },
+    {
+      "name": "twitter",
+      "url": "https://x.com/tsl_token"
     }
   ]
 }
