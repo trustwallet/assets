@@ -1,7 +1,7 @@
 {
-  "name": "JERT Utility Token",
+  "name": "JERT",
   "website": "https://token.jert.ch",
-  "description": "Infrastructure utility token for settlement of energy, cold energy recovery, logistics and compute services within the JERT Infrastructure Platform.",
+  "description": "Infrastructure utility token for settlement of energy, cold energy recovery, logistics, and compute services within the JERT Infrastructure Platform.",
   "explorer": "https://arbiscan.io/token/0x6ebe6b6e7e49ad8d09142dbe0964d034f8774f16",
   "type": "ARBITRUM",
   "symbol": "JERT",
@@ -10,8 +10,8 @@
   "id": "0x6ebe6b6e7e49ad8d09142dbe0964d034f8774f16",
   "links": [
     {
-      "name": "website",
-      "url": "https://token.jert.ch"
+      "name": "whitepaper",
+      "url": "https://token.jert.ch/docs/whitepaper.pdf"
     },
     {
       "name": "github",
@@ -19,7 +19,6 @@
     }
   ],
   "tags": [
-    "utility-token",
     "infrastructure",
     "energy"
   ]
