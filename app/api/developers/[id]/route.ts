@@ -1,0 +1,2 @@
+import { prisma } from '@/lib/prisma';import { NextResponse } from 'next/server';
+export async function GET(_:Request,{params}:{params:{id:string}}){return NextResponse.json(await prisma.developer.findUniqueOrThrow({where:{id:params.id}}))} export async function PUT(req:Request,{params}:{params:{id:string}}){return NextResponse.json(await prisma.developer.update({where:{id:params.id},data:await req.json()}))} export async function DELETE(_:Request,{params}:{params:{id:string}}){await prisma.developer.delete({where:{id:params.id}});return new NextResponse(null,{status:204})}
