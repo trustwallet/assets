@@ -1,0 +1,3 @@
+import { prisma } from '@/lib/prisma';import { NextResponse } from 'next/server';
+const include={project:true,financials:true,healthcare:true,accessibility:true,airportAccess:true,safety:true,expatCommunity:true,management:true,lifestyle:true,scores:true,media:true};
+export async function GET(_:Request,{params}:{params:{id:string}}){return NextResponse.json(await prisma.property.findUniqueOrThrow({where:{id:params.id},include}))} export async function PUT(req:Request,{params}:{params:{id:string}}){return NextResponse.json(await prisma.property.update({where:{id:params.id},data:await req.json(),include}))} export async function DELETE(_:Request,{params}:{params:{id:string}}){await prisma.property.delete({where:{id:params.id}});return new NextResponse(null,{status:204})}
