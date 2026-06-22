@@ -1,11 +1,11 @@
 {
-  "website": "https://bsc.org",
-  "description": "BSC USDT on Binance Smart Chain",
-  "explorer": "https://bscscan.com/token/0xe4ac7550061d15cedf6420dc9f55979d56348c3d",
-  "research": "https://binplorer.com/address/0xe4ac7550061d15cedf6420dc9f55979d56348c3d/en/",
+  "name": "Tether USD",
+  "website": "https://tether.to",
+  "description": "Tether USD (USDT) is a USD-pegged stablecoin issued by Tether.",
+  "explorer": "https://bscscan.com/token/0xe4ac7550061D15CEdf6420dC9F55979d56348c3D",
   "symbol": "USDT",
+  "type": "BEP20",
   "decimals": 18,
   "status": "active",
-  "id": "BSC USDT",
-  "logo": "Logo.png"
+  "id": "0xe4ac7550061D15CEdf6420dC9F55979d56348c3D"
 }
