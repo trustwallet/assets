@@ -1,0 +1,3 @@
+import { prisma } from '@/lib/prisma';import { calculateRetirementScores } from '@/lib/scoring';import { NextResponse } from 'next/server';
+const include={project:true,financials:true,healthcare:true,accessibility:true,airportAccess:true,safety:true,expatCommunity:true,management:true,lifestyle:true,scores:true,media:true};
+export async function GET(){return NextResponse.json(await prisma.property.findMany({include}))} export async function POST(req:Request){const data=await req.json(); if(data.healthcare&&data.accessibility){data.scores={create:calculateRetirementScores(data)}} return NextResponse.json(await prisma.property.create({data,include}),{status:201})}
