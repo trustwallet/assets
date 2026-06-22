@@ -1,0 +1,835 @@
+generator client { provider = "prisma-client-js" }
+datasource db { provider = "postgresql" url = env("DATABASE_URL") }
+
+enum UserRole { ADMIN MANAGER VIEWER ADVISOR DEVELOPER CLIENT }
+enum ProjectType { VILLA TOWNHOUSE CONDOMINIUM MIXED_USE }
+enum OwnershipType { FREEHOLD LEASEHOLD FOREIGN_FREEHOLD COMPANY_OWNERSHIP }
+enum ConstructionStatus { PLANNING OFF_PLAN UNDER_CONSTRUCTION COMPLETED READY_TO_MOVE_IN }
+enum PropertyType { VILLA TOWNHOUSE CONDOMINIUM PENTHOUSE }
+enum MediaType { IMAGE VIDEO FLOORPLAN DOCUMENT }
+
+model User { id String @id @default(uuid()) name String email String @unique role UserRole @default(VIEWER) createdAt DateTime @default(now()) @map("created_at") @@map("users") }
+model Developer { id String @id @default(uuid()) developerName String @map("developer_name") website String? yearsInBusiness Int? @map("years_in_business") completedProjects Int? @map("completed_projects") unitsDelivered Int? @map("units_delivered") reputationScore Decimal? @map("reputation_score") financialStabilityScore Decimal? @map("financial_stability_score") notes String? projects Project[] submissions DeveloperSubmission[] commissions Commission[] createdAt DateTime @default(now()) updatedAt DateTime @updatedAt @@map("developers") }
+model Project { id String @id @default(uuid()) developerId String @map("developer_id") developer Developer @relation(fields:[developerId], references:[id], onDelete:Cascade) projectName String @map("project_name") projectType ProjectType @map("project_type") location String country String? province String? region String? city String? submarket String? latitude Decimal? longitude Decimal? ownershipType OwnershipType @map("ownership_type") constructionStatus ConstructionStatus @map("construction_status") launchDate DateTime? @map("launch_date") handoverDate DateTime? @map("handover_date") totalUnits Int? @map("total_units") unitsSold Int? @map("units_sold") unitsAvailable Int? @map("units_available") projectDescription String? @map("project_description") properties Property[] createdAt DateTime @default(now()) updatedAt DateTime @updatedAt @@index([developerId]) @@map("projects") }
+model Property { id String @id @default(uuid()) projectId String @map("project_id") project Project @relation(fields:[projectId], references:[id], onDelete:Cascade) country String? province String? region String? city String? submarket String? propertyCode String @unique @map("property_code") propertyType PropertyType @map("property_type") bedrooms Int bathrooms Int interiorSqm Decimal @map("interior_sqm") landSqm Decimal? @map("land_sqm") privatePool Boolean @default(false) @map("private_pool") garden Boolean @default(false) parking Boolean @default(false) elevator Boolean @default(false) furnished Boolean @default(false) smartHome Boolean @default(false) @map("smart_home") petFriendly Boolean @default(false) @map("pet_friendly") financials PropertyFinancials? healthcare PropertyHealthcare? accessibility PropertyAccessibility? airportAccess PropertyAirportAccess? safety PropertySafety? expatCommunity PropertyExpatCommunity? management PropertyManagement? lifestyle PropertyLifestyle? scores PropertyScores? media PropertyMedia[] aiRecommendations AiRecommendation[] shortlists ClientShortlist[] documents Document[] portfolioHoldings PortfolioHolding[] rentalAnalytics RentalAnalytic[] revenueOpportunities RevenueOpportunity[] commissions Commission[] createdAt DateTime @default(now()) updatedAt DateTime @updatedAt @@index([projectId]) @@map("properties") }
+model PropertyFinancials { id String @id @default(uuid()) propertyId String @unique @map("property_id") property Property @relation(fields:[propertyId], references:[id], onDelete:Cascade) listPrice Decimal @map("list_price") currency String @default("THB") pricePerSqm Decimal? @map("price_per_sqm") reservationFee Decimal? @map("reservation_fee") depositRequired Decimal? @map("deposit_required") paymentPlan String? @map("payment_plan") maintenanceFee Decimal? @map("maintenance_fee") sinkingFund Decimal? @map("sinking_fund") transferTax Decimal? @map("transfer_tax") ownershipTax Decimal? @map("ownership_tax") rentalManagementFee Decimal? @map("rental_management_fee") @@map("property_financials") }
+model PropertyHealthcare { id String @id @default(uuid()) propertyId String @unique @map("property_id") property Property @relation(fields:[propertyId], references:[id], onDelete:Cascade) nearestHospital String? @map("nearest_hospital") hospitalDistanceKm Decimal? @map("hospital_distance_km") hospitalDriveMinutes Int? @map("hospital_drive_minutes") englishSpeakingDoctors Boolean @default(false) @map("english_speaking_doctors") emergencyServices Boolean @default(false) @map("emergency_services") specialistServices Boolean @default(false) @map("specialist_services") cardiology Boolean @default(false) oncology Boolean @default(false) dialysis Boolean @default(false) @@map("property_healthcare") }
+model PropertyAccessibility { id String @id @default(uuid()) propertyId String @unique @map("property_id") property Property @relation(fields:[propertyId], references:[id], onDelete:Cascade) beachDistanceKm Decimal? @map("beach_distance_km") groceryDistanceKm Decimal? @map("grocery_distance_km") pharmacyDistanceKm Decimal? @map("pharmacy_distance_km") restaurantDistanceKm Decimal? @map("restaurant_distance_km") walkabilityScore Int? @map("walkability_score") @@map("property_accessibility") }
+model PropertyAirportAccess { id String @id @default(uuid()) propertyId String @unique @map("property_id") property Property @relation(fields:[propertyId], references:[id], onDelete:Cascade) airportDistanceKm Decimal? @map("airport_distance_km") airportDriveMinutes Int? @map("airport_drive_minutes") @@map("property_airport_access") }
+model PropertySafety { id String @id @default(uuid()) propertyId String @unique @map("property_id") property Property @relation(fields:[propertyId], references:[id], onDelete:Cascade) crimeRating Int? @map("crime_rating") walkingSafety Int? @map("walking_safety") nightSafety Int? @map("night_safety") securityRating Int? @map("security_rating") @@map("property_safety") }
+model PropertyExpatCommunity { id String @id @default(uuid()) propertyId String @unique @map("property_id") property Property @relation(fields:[propertyId], references:[id], onDelete:Cascade) expatDensity Int? @map("expat_density") socialClubs Int? @map("social_clubs") churches Int? golfCourses Int? @map("golf_courses") fitnessCenters Int? @map("fitness_centers") @@map("property_expat_community") }
+model PropertyManagement { id String @id @default(uuid()) propertyId String @unique @map("property_id") property Property @relation(fields:[propertyId], references:[id], onDelete:Cascade) security Boolean @default(false) reception Boolean @default(false) maintenance Boolean @default(false) rentalManagement Boolean @default(false) @map("rental_management") concierge Boolean @default(false) @@map("property_management") }
+model PropertyLifestyle { id String @id @default(uuid()) propertyId String @unique @map("property_id") property Property @relation(fields:[propertyId], references:[id], onDelete:Cascade) beachScore Int? @map("beach_score") golfScore Int? @map("golf_score") marinaScore Int? @map("marina_score") restaurantScore Int? @map("restaurant_score") shoppingScore Int? @map("shopping_score") wellnessScore Int? @map("wellness_score") @@map("property_lifestyle") }
+model PropertyScores { id String @id @default(uuid()) propertyId String @unique @map("property_id") property Property @relation(fields:[propertyId], references:[id], onDelete:Cascade) healthcareScore Int @map("healthcare_score") accessibilityScore Int @map("accessibility_score") airportScore Int @map("airport_score") expatScore Int @map("expat_score") safetyScore Int @map("safety_score") managementScore Int @map("management_score") lifestyleScore Int @map("lifestyle_score") retirementScore Int @map("retirement_score") retirementGrade String @map("retirement_grade") calculatedAt DateTime @default(now()) @map("calculated_at") @@map("property_scores") }
+model PropertyMedia { id String @id @default(uuid()) propertyId String @map("property_id") property Property @relation(fields:[propertyId], references:[id], onDelete:Cascade) mediaType MediaType @map("media_type") fileUrl String @map("file_url") title String? createdAt DateTime @default(now()) @@index([propertyId]) @@map("property_media") }
+
+enum LeadStage {
+  LEAD
+  QUALIFIED
+  CONSULTATION
+  VISA_PLANNING
+  PROPERTY_SEARCH
+  PROPERTY_SHORTLIST
+  PROPERTY_VIEWING
+  OFFER_SUBMITTED
+  CONTRACT_SIGNED
+  DEPOSIT_PAID
+  CLOSED
+  POST_PURCHASE
+}
+
+enum TaskStatus {
+  TODO
+  IN_PROGRESS
+  DONE
+  CANCELLED
+}
+
+model Retiree {
+  id                String    @id @default(uuid())
+  firstName         String    @map("first_name")
+  lastName          String    @map("last_name")
+  email             String    @unique
+  phone             String?
+  nationality       String?
+  country           String?
+  age               Int?
+  maritalStatus     String?   @map("marital_status")
+  retirementDate    DateTime? @map("retirement_date")
+  relocationDate    DateTime? @map("relocation_date")
+  relocationUrgency String?   @map("relocation_urgency")
+  leadStage         LeadStage @default(LEAD) @map("lead_stage")
+  notes             String?
+  financialProfile  FinancialProfile?
+  visaRequirement   VisaRequirement?
+  propertyPreference PropertyPreference?
+  healthcarePreference HealthcarePreference?
+  lifestylePreference LifestylePreference?
+  travelPreference  TravelPreference?
+  activities        Activity[]
+  tasks             Task[]
+  profileNotes      Note[]
+  aiConversations  AiConversation[]
+  aiRecommendations AiRecommendation[]
+  shortlists       ClientShortlist[]
+  documents        Document[]
+  visaWorkflows    VisaWorkflow[]
+  appointments     Appointment[]
+  communications   Communication[]
+  portfolioHoldings PortfolioHolding[]
+  assessmentResults AssessmentResult[]
+  leadMagnetDownloads LeadMagnetDownload[]
+  aiGeneratedReports AiGeneratedReport[]
+  clientProposals ClientProposal[]
+  revenueOpportunities RevenueOpportunity[]
+  commissions Commission[]
+  partnerReferrals PartnerReferral[]
+  advisorAssets AdvisorAsset[]
+  journeyEvents ClientJourneyEvent[]
+  emailEvents EmailEvent[]
+  referrals Referral[]
+  createdAt         DateTime  @default(now()) @map("created_at")
+  updatedAt         DateTime  @updatedAt @map("updated_at")
+
+  @@index([leadStage])
+  @@map("retirees")
+}
+
+model FinancialProfile {
+  id                String  @id @default(uuid())
+  retireeId         String  @unique @map("retiree_id")
+  retiree           Retiree @relation(fields: [retireeId], references: [id], onDelete: Cascade)
+  netWorthRange     String? @map("net_worth_range")
+  annualIncomeRange String? @map("annual_income_range")
+  investmentBudget  Decimal? @map("investment_budget")
+  cashAvailable     Decimal? @map("cash_available")
+  financingRequired Boolean @default(false) @map("financing_required")
+
+  @@map("financial_profiles")
+}
+
+model VisaRequirement {
+  id               String  @id @default(uuid())
+  retireeId        String  @unique @map("retiree_id")
+  retiree          Retiree @relation(fields: [retireeId], references: [id], onDelete: Cascade)
+  visaType         String? @map("visa_type")
+  visaStatus       String? @map("visa_status")
+  applicationStage String? @map("application_stage")
+  notes            String?
+
+  @@map("visa_requirements")
+}
+
+model PropertyPreference {
+  id                    String  @id @default(uuid())
+  retireeId             String  @unique @map("retiree_id")
+  retiree               Retiree @relation(fields: [retireeId], references: [id], onDelete: Cascade)
+  propertyType          PropertyType? @map("property_type")
+  preferredLocations    String[] @default([]) @map("preferred_locations")
+  minBedrooms           Int? @map("min_bedrooms")
+  maxBedrooms           Int? @map("max_bedrooms")
+  minBudget             Decimal? @map("min_budget")
+  maxBudget             Decimal? @map("max_budget")
+  privatePoolRequired   Boolean @default(false) @map("private_pool_required")
+  walkabilityImportance Int? @map("walkability_importance")
+  airportImportance     Int? @map("airport_importance")
+
+  @@map("property_preferences")
+}
+
+model HealthcarePreference {
+  id                   String  @id @default(uuid())
+  retireeId            String  @unique @map("retiree_id")
+  retiree              Retiree @relation(fields: [retireeId], references: [id], onDelete: Cascade)
+  mobilityNeeds        String? @map("mobility_needs")
+  specialistRequirements String? @map("specialist_requirements")
+  preferredHospital    String? @map("preferred_hospital")
+  longTermCareInterest Boolean @default(false) @map("long_term_care_interest")
+
+  @@map("healthcare_preferences")
+}
+
+model LifestylePreference {
+  id             String  @id @default(uuid())
+  retireeId      String  @unique @map("retiree_id")
+  retiree        Retiree @relation(fields: [retireeId], references: [id], onDelete: Cascade)
+  golf           Boolean @default(false)
+  boating        Boolean @default(false)
+  pickleball     Boolean @default(false)
+  tennis         Boolean @default(false)
+  fitness        Boolean @default(false)
+  beachLifestyle Boolean @default(false) @map("beach_lifestyle")
+  church         Boolean @default(false)
+  volunteerWork  Boolean @default(false) @map("volunteer_work")
+  socialClubs    Boolean @default(false) @map("social_clubs")
+
+  @@map("lifestyle_preferences")
+}
+
+model TravelPreference {
+  id                           String  @id @default(uuid())
+  retireeId                    String  @unique @map("retiree_id")
+  retiree                      Retiree @relation(fields: [retireeId], references: [id], onDelete: Cascade)
+  tripsPerYear                 Int? @map("trips_per_year")
+  airportConvenienceImportance Int? @map("airport_convenience_importance")
+  preferredAirlines            String? @map("preferred_airlines")
+  familyVisitFrequency         String? @map("family_visit_frequency")
+
+  @@map("travel_preferences")
+}
+
+model Activity {
+  id            String   @id @default(uuid())
+  retireeId     String   @map("retiree_id")
+  retiree       Retiree  @relation(fields: [retireeId], references: [id], onDelete: Cascade)
+  activityType  String   @map("activity_type")
+  activityDate  DateTime @map("activity_date")
+  activityNotes String?  @map("activity_notes")
+
+  @@index([retireeId, activityDate])
+  @@map("activities")
+}
+
+model Task {
+  id          String     @id @default(uuid())
+  retireeId   String     @map("retiree_id")
+  retiree     Retiree    @relation(fields: [retireeId], references: [id], onDelete: Cascade)
+  title       String
+  description String?
+  dueDate     DateTime?  @map("due_date")
+  status      TaskStatus @default(TODO)
+
+  @@index([retireeId, dueDate])
+  @@map("tasks")
+}
+
+model Note {
+  id        String   @id @default(uuid())
+  retireeId String   @map("retiree_id")
+  retiree   Retiree  @relation(fields: [retireeId], references: [id], onDelete: Cascade)
+  noteText  String   @map("note_text")
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@index([retireeId, createdAt])
+  @@map("notes")
+}
+
+model EmailTemplate {
+  id          String   @id @default(uuid())
+  name        String   @unique
+  subject     String
+  body        String
+  category    String
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  @@map("email_templates")
+}
+
+enum PortalRole { ADMIN ADVISOR DEVELOPER CLIENT }
+enum AiConversationType { ADVISOR CLIENT PROPERTY_RECOMMENDATION VISA_GUIDANCE RETIREMENT_PLANNING }
+enum DocumentType { PASSPORT VISA_DOCUMENT PROPERTY_CONTRACT RESERVATION_AGREEMENT PAYMENT_RECEIPT HEALTHCARE_DOCUMENT INSURANCE_POLICY TRAVEL_DOCUMENT BROCHURE PHOTO VIDEO OTHER }
+enum VisaWorkflowStatus { NOT_STARTED DOCUMENT_COLLECTION SUBMITTED UNDER_REVIEW APPROVED REJECTED RENEWAL_REQUIRED EXPIRED }
+enum WorkflowEventType { NEW_LEAD CLIENT_PROFILE_UPDATED VISA_STATUS_UPDATED PROPERTY_HANDOVER DOCUMENT_EXPIRY }
+enum WorkflowRunStatus { PENDING SENT FAILED COMPLETED }
+enum AppointmentType { CONSULTATION PROPERTY_VIEWING VISA_MEETING HEALTHCARE_INTRODUCTION DEVELOPER_MEETING }
+enum CommunicationType { EMAIL CALL MEETING WHATSAPP NOTE }
+enum ReportType { CLIENT_PROPERTY RETIREMENT_SUITABILITY INVESTMENT_ANALYSIS PORTFOLIO VISA_STATUS PIPELINE EXECUTIVE }
+enum ReportFormat { PDF EXCEL }
+enum SubmissionStatus { DRAFT SUBMITTED APPROVED REJECTED }
+
+model AiPrompt {
+  id          String   @id @default(uuid())
+  name        String
+  version     Int
+  model       String   @default("gpt-4o-mini")
+  systemPrompt String  @map("system_prompt")
+  userTemplate String? @map("user_template")
+  isActive    Boolean  @default(true) @map("is_active")
+  createdAt   DateTime @default(now()) @map("created_at")
+  conversations AiConversation[]
+
+  @@unique([name, version])
+  @@map("ai_prompts")
+}
+
+model AiKnowledgeBase {
+  id        String   @id @default(uuid())
+  category  String
+  title     String
+  region    String?
+  content   String
+  sourceUrl String?  @map("source_url")
+  version   Int      @default(1)
+  isActive  Boolean  @default(true) @map("is_active")
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@index([category, region])
+  @@map("ai_knowledge_base")
+}
+
+model AiConversation {
+  id        String   @id @default(uuid())
+  retireeId String?  @map("retiree_id")
+  retiree   Retiree? @relation(fields: [retireeId], references: [id], onDelete: Cascade)
+  promptId  String?  @map("prompt_id")
+  prompt    AiPrompt? @relation(fields: [promptId], references: [id])
+  type      AiConversationType
+  model     String
+  messages  Json
+  response  String?
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@index([retireeId, type])
+  @@map("ai_conversations")
+}
+
+model AiRecommendation {
+  id          String   @id @default(uuid())
+  retireeId   String   @map("retiree_id")
+  retiree     Retiree  @relation(fields: [retireeId], references: [id], onDelete: Cascade)
+  propertyId  String   @map("property_id")
+  property    Property @relation(fields: [propertyId], references: [id], onDelete: Cascade)
+  matchScore  Int      @map("match_score")
+  confidenceScore Int  @map("confidence_score")
+  explanation String
+  pros        String[] @default([])
+  cons        String[] @default([])
+  risks       String[] @default([])
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  @@index([retireeId, matchScore])
+  @@map("ai_recommendations")
+}
+
+model ClientShortlist {
+  id         String   @id @default(uuid())
+  retireeId  String   @map("retiree_id")
+  retiree    Retiree  @relation(fields: [retireeId], references: [id], onDelete: Cascade)
+  propertyId String   @map("property_id")
+  property   Property @relation(fields: [propertyId], references: [id], onDelete: Cascade)
+  notes      String?
+  createdAt  DateTime @default(now()) @map("created_at")
+
+  @@unique([retireeId, propertyId])
+  @@map("client_shortlists")
+}
+
+model Document {
+  id          String   @id @default(uuid())
+  retireeId   String?  @map("retiree_id")
+  retiree     Retiree? @relation(fields: [retireeId], references: [id], onDelete: Cascade)
+  propertyId  String?  @map("property_id")
+  property    Property? @relation(fields: [propertyId], references: [id], onDelete: Cascade)
+  documentType DocumentType @map("document_type")
+  fileUrl     String   @map("file_url")
+  title       String
+  issueDate   DateTime? @map("issue_date")
+  expiryDate  DateTime? @map("expiry_date")
+  version     Int      @default(1)
+  notes       String?
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  @@index([retireeId, documentType])
+  @@index([expiryDate])
+  @@map("documents")
+}
+
+model VisaWorkflow {
+  id          String   @id @default(uuid())
+  retireeId   String   @map("retiree_id")
+  retiree     Retiree  @relation(fields: [retireeId], references: [id], onDelete: Cascade)
+  visaType    String   @map("visa_type")
+  status      VisaWorkflowStatus @default(NOT_STARTED)
+  requiredDocuments String[] @default([]) @map("required_documents")
+  missingDocuments  String[] @default([]) @map("missing_documents")
+  submissionDate DateTime? @map("submission_date")
+  renewalDate DateTime? @map("renewal_date")
+  expirationDate DateTime? @map("expiration_date")
+  advisorNotes String? @map("advisor_notes")
+
+  @@index([retireeId, status])
+  @@index([expirationDate])
+  @@map("visa_workflows")
+}
+
+model WorkflowAutomation {
+  id          String   @id @default(uuid())
+  name        String
+  eventType   WorkflowEventType @map("event_type")
+  webhookUrl  String?  @map("webhook_url")
+  enabled     Boolean  @default(true)
+  payloadTemplate Json? @map("payload_template")
+  createdAt   DateTime @default(now()) @map("created_at")
+  runs        WorkflowRun[]
+
+  @@index([eventType, enabled])
+  @@map("workflow_automations")
+}
+
+model WorkflowRun {
+  id           String   @id @default(uuid())
+  automationId String   @map("automation_id")
+  automation   WorkflowAutomation @relation(fields: [automationId], references: [id], onDelete: Cascade)
+  retireeId    String?  @map("retiree_id")
+  payload      Json
+  status       WorkflowRunStatus @default(PENDING)
+  response     String?
+  createdAt    DateTime @default(now()) @map("created_at")
+
+  @@index([automationId, status])
+  @@map("workflow_runs")
+}
+
+model Appointment {
+  id          String   @id @default(uuid())
+  retireeId   String?  @map("retiree_id")
+  retiree     Retiree? @relation(fields: [retireeId], references: [id], onDelete: Cascade)
+  title       String
+  type        AppointmentType
+  startTime   DateTime @map("start_time")
+  endTime     DateTime @map("end_time")
+  location    String?
+  calendarProvider String? @map("calendar_provider")
+  externalCalendarId String? @map("external_calendar_id")
+  advisorReminder Boolean @default(true) @map("advisor_reminder")
+  clientReminder  Boolean @default(true) @map("client_reminder")
+
+  @@index([retireeId, startTime])
+  @@map("appointments")
+}
+
+model Communication {
+  id        String   @id @default(uuid())
+  retireeId String?  @map("retiree_id")
+  retiree   Retiree? @relation(fields: [retireeId], references: [id], onDelete: Cascade)
+  type      CommunicationType
+  subject   String?
+  body      String?
+  direction String?
+  channelMessageId String? @map("channel_message_id")
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@index([retireeId, createdAt])
+  @@map("communications")
+}
+
+model PortfolioHolding {
+  id          String   @id @default(uuid())
+  retireeId   String   @map("retiree_id")
+  retiree     Retiree  @relation(fields: [retireeId], references: [id], onDelete: Cascade)
+  propertyId  String?  @map("property_id")
+  property    Property? @relation(fields: [propertyId], references: [id])
+  purchaseDate DateTime @map("purchase_date")
+  purchasePrice Decimal @map("purchase_price")
+  currentValue Decimal? @map("current_value")
+  rentalIncome Decimal? @map("rental_income")
+  expenses     Decimal? @default(0)
+  netYield     Decimal? @map("net_yield")
+  capitalAppreciation Decimal? @map("capital_appreciation")
+  cashFlow     Decimal? @map("cash_flow")
+
+  @@index([retireeId])
+  @@map("portfolio_holdings")
+}
+
+model RentalAnalytic {
+  id          String   @id @default(uuid())
+  propertyId  String   @map("property_id")
+  property    Property @relation(fields: [propertyId], references: [id], onDelete: Cascade)
+  month       DateTime
+  occupancy   Decimal?
+  averageDailyRate Decimal? @map("average_daily_rate")
+  monthlyRevenue Decimal? @map("monthly_revenue")
+  annualRevenue Decimal? @map("annual_revenue")
+  grossYield Decimal? @map("gross_yield")
+  netYield Decimal? @map("net_yield")
+  rentalManagementFees Decimal? @map("rental_management_fees")
+  marketComparison Json? @map("market_comparison")
+
+  @@unique([propertyId, month])
+  @@map("rental_analytics")
+}
+
+model DeveloperSubmission {
+  id          String   @id @default(uuid())
+  developerId String?  @map("developer_id")
+  developer   Developer? @relation(fields: [developerId], references: [id], onDelete: SetNull)
+  projectName String   @map("project_name")
+  region      String?
+  availability Json?
+  pricing     Json?
+  paymentPlans Json? @map("payment_plans")
+  status      SubmissionStatus @default(DRAFT)
+  notes       String?
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  @@index([developerId, status])
+  @@map("developer_submissions")
+}
+
+model ReportJob {
+  id          String   @id @default(uuid())
+  reportType  ReportType @map("report_type")
+  format      ReportFormat
+  parameters  Json?
+  fileUrl     String? @map("file_url")
+  status      String  @default("queued")
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  @@index([reportType, status])
+  @@map("report_jobs")
+}
+
+model AuditLog {
+  id        String   @id @default(uuid())
+  actorId   String?  @map("actor_id")
+  actorRole PortalRole? @map("actor_role")
+  action    String
+  entity    String
+  entityId  String?  @map("entity_id")
+  metadata  Json?
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@index([actorId, createdAt])
+  @@map("audit_logs")
+}
+
+model LoginHistory {
+  id        String   @id @default(uuid())
+  userId    String?  @map("user_id")
+  email     String?
+  ipAddress String?  @map("ip_address")
+  userAgent String?  @map("user_agent")
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@index([email, createdAt])
+  @@map("login_history")
+}
+
+model DocumentAccessLog {
+  id         String   @id @default(uuid())
+  documentId String   @map("document_id")
+  document   Document @relation(fields: [documentId], references: [id], onDelete: Cascade)
+  actorId    String?  @map("actor_id")
+  action     String
+  createdAt  DateTime @default(now()) @map("created_at")
+
+  @@index([documentId, createdAt])
+  @@map("document_access_logs")
+}
+
+enum AssessmentType { RETIREMENT_READINESS SUITABILITY VISA_ELIGIBILITY AFFORDABILITY }
+enum ContentType { BLOG ARTICLE AREA_GUIDE HOSPITAL_GUIDE DEVELOPER_REVIEW MARKET_REPORT VISA_UPDATE RETIREMENT_GUIDE LANDING_PAGE }
+enum RevenueServiceLine { PROPERTY_COMMISSION DEVELOPER_REFERRAL VISA_SERVICE RELOCATION HEALTHCARE_REFERRAL INSURANCE_REFERRAL PROPERTY_MANAGEMENT RENTAL_MANAGEMENT CONSULTING }
+enum RevenueStatus { PIPELINE EXPECTED CLOSED LOST }
+enum PaymentStatus { PENDING INVOICED PAID OVERDUE CANCELLED }
+enum PartnerType { DEVELOPER LAW_FIRM VISA_AGENT HOSPITAL INSURANCE_PROVIDER PROPERTY_MANAGER TAX_ADVISOR BANK }
+enum ReferralType { CLIENT PARTNER ADVISOR }
+enum BrandType { RETIREMENT_ADVISORY VISA_ADVISORY PROPERTY_ADVISORY HEALTHCARE_CONCIERGE WEALTH_PRESERVATION ESTATE_PLANNING }
+
+model AssessmentResult {
+  id          String   @id @default(uuid())
+  retireeId   String?  @map("retiree_id")
+  retiree     Retiree? @relation(fields: [retireeId], references: [id], onDelete: Cascade)
+  type        AssessmentType
+  email       String?
+  name        String?
+  country     String?
+  inputs      Json
+  score       Int
+  recommendations Json
+  createdLead Boolean @default(false) @map("created_lead")
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  @@index([type, score])
+  @@index([email])
+  @@map("assessment_results")
+}
+
+model LeadMagnet {
+  id          String   @id @default(uuid())
+  slug        String   @unique
+  title       String
+  description String?
+  resourceUrl String?  @map("resource_url")
+  targetMarket String? @map("target_market")
+  downloads   LeadMagnetDownload[]
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  @@map("lead_magnets")
+}
+
+model LeadMagnetDownload {
+  id          String   @id @default(uuid())
+  leadMagnetId String  @map("lead_magnet_id")
+  leadMagnet   LeadMagnet @relation(fields: [leadMagnetId], references: [id], onDelete: Cascade)
+  retireeId    String? @map("retiree_id")
+  retiree      Retiree? @relation(fields: [retireeId], references: [id], onDelete: SetNull)
+  name         String
+  email        String
+  country      String?
+  timeline     String?
+  createdAt    DateTime @default(now()) @map("created_at")
+
+  @@index([email])
+  @@map("lead_magnet_downloads")
+}
+
+model ContentItem {
+  id          String   @id @default(uuid())
+  type        ContentType
+  slug        String   @unique
+  title       String
+  excerpt     String?
+  body        String
+  seoTitle    String?  @map("seo_title")
+  seoDescription String? @map("seo_description")
+  keywords    String[] @default([])
+  region      String?
+  language    String   @default("en")
+  brandId     String?  @map("brand_id")
+  brand       Brand?   @relation(fields: [brandId], references: [id], onDelete: SetNull)
+  publishedAt DateTime? @map("published_at")
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  @@index([type, region, publishedAt])
+  @@map("content_items")
+}
+
+model LandingPage {
+  id          String   @id @default(uuid())
+  slug        String   @unique
+  headline    String
+  region      String?
+  propertyType String? @map("property_type")
+  seoTitle    String?  @map("seo_title")
+  seoDescription String? @map("seo_description")
+  faq         Json?
+  ctaText     String?  @map("cta_text")
+  calculatorType AssessmentType? @map("calculator_type")
+  brandId     String? @map("brand_id")
+  brand       Brand?  @relation(fields: [brandId], references: [id], onDelete: SetNull)
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  @@index([region, propertyType])
+  @@map("landing_pages")
+}
+
+model AiGeneratedReport {
+  id          String   @id @default(uuid())
+  retireeId   String?  @map("retiree_id")
+  retiree     Retiree? @relation(fields: [retireeId], references: [id], onDelete: Cascade)
+  reportType  ReportType @map("report_type")
+  title       String
+  content     Json
+  pdfUrl      String? @map("pdf_url")
+  excelUrl    String? @map("excel_url")
+  portalPublished Boolean @default(false) @map("portal_published")
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  @@index([retireeId, reportType])
+  @@map("ai_generated_reports")
+}
+
+model ClientProposal {
+  id          String   @id @default(uuid())
+  retireeId   String   @map("retiree_id")
+  retiree     Retiree  @relation(fields: [retireeId], references: [id], onDelete: Cascade)
+  title       String
+  editableContent Json @map("editable_content")
+  pdfUrl      String? @map("pdf_url")
+  status      String @default("draft")
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  @@index([retireeId, status])
+  @@map("client_proposals")
+}
+
+model RevenueOpportunity {
+  id          String   @id @default(uuid())
+  retireeId   String?  @map("retiree_id")
+  retiree     Retiree? @relation(fields: [retireeId], references: [id], onDelete: SetNull)
+  propertyId  String?  @map("property_id")
+  property    Property? @relation(fields: [propertyId], references: [id], onDelete: SetNull)
+  serviceLine RevenueServiceLine @map("service_line")
+  expectedRevenue Decimal @map("expected_revenue")
+  closedRevenue   Decimal? @map("closed_revenue")
+  status      RevenueStatus @default(PIPELINE)
+  region      String?
+  currency    String @default("THB")
+  expectedCloseDate DateTime? @map("expected_close_date")
+  commissions Commission[]
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  @@index([serviceLine, status])
+  @@index([region, status])
+  @@map("revenue_opportunities")
+}
+
+model Commission {
+  id          String   @id @default(uuid())
+  revenueOpportunityId String? @map("revenue_opportunity_id")
+  revenueOpportunity RevenueOpportunity? @relation(fields: [revenueOpportunityId], references: [id], onDelete: SetNull)
+  developerId String? @map("developer_id")
+  developer   Developer? @relation(fields: [developerId], references: [id], onDelete: SetNull)
+  propertyId  String? @map("property_id")
+  property    Property? @relation(fields: [propertyId], references: [id], onDelete: SetNull)
+  retireeId   String? @map("retiree_id")
+  retiree     Retiree? @relation(fields: [retireeId], references: [id], onDelete: SetNull)
+  advisorId   String? @map("advisor_id")
+  source      String?
+  commissionPercent Decimal? @map("commission_percent")
+  commissionAmount  Decimal @map("commission_amount")
+  paymentStatus PaymentStatus @default(PENDING) @map("payment_status")
+  paymentDate DateTime? @map("payment_date")
+
+  @@index([paymentStatus])
+  @@map("commissions")
+}
+
+model Partner {
+  id          String   @id @default(uuid())
+  name        String
+  type        PartnerType
+  country     String?
+  region      String?
+  contactName String? @map("contact_name")
+  email       String?
+  phone       String?
+  referrals   PartnerReferral[]
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  @@index([type, region])
+  @@map("partners")
+}
+
+model PartnerReferral {
+  id          String   @id @default(uuid())
+  partnerId   String   @map("partner_id")
+  partner     Partner  @relation(fields: [partnerId], references: [id], onDelete: Cascade)
+  retireeId   String?  @map("retiree_id")
+  retiree     Retiree? @relation(fields: [retireeId], references: [id], onDelete: SetNull)
+  revenueGenerated Decimal? @map("revenue_generated")
+  status      String @default("new")
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  @@index([partnerId, status])
+  @@map("partner_referrals")
+}
+
+model AdvisorAsset {
+  id          String   @id @default(uuid())
+  retireeId   String?  @map("retiree_id")
+  retiree     Retiree? @relation(fields: [retireeId], references: [id], onDelete: Cascade)
+  assetType   String   @map("asset_type")
+  title       String
+  content     String
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  @@index([assetType, createdAt])
+  @@map("advisor_assets")
+}
+
+model ClientJourneyEvent {
+  id          String   @id @default(uuid())
+  retireeId   String   @map("retiree_id")
+  retiree     Retiree  @relation(fields: [retireeId], references: [id], onDelete: Cascade)
+  stage       String
+  enteredAt   DateTime @default(now()) @map("entered_at")
+  exitedAt    DateTime? @map("exited_at")
+  revenueAtStage Decimal? @map("revenue_at_stage")
+
+  @@index([stage, enteredAt])
+  @@map("client_journey_events")
+}
+
+model MarketingMetric {
+  id          String   @id @default(uuid())
+  date        DateTime
+  source      String
+  campaign    String?
+  landingPage String? @map("landing_page")
+  visitors    Int @default(0)
+  leads       Int @default(0)
+  conversions Int @default(0)
+  spend       Decimal? @default(0)
+  revenue     Decimal? @default(0)
+  region      String?
+
+  @@index([date, source])
+  @@map("marketing_metrics")
+}
+
+model EmailCampaign {
+  id          String   @id @default(uuid())
+  name        String
+  sequenceType String @map("sequence_type")
+  audience    String?
+  status      String @default("draft")
+  steps       EmailSequenceStep[]
+  events      EmailEvent[]
+  revenueGenerated Decimal? @default(0) @map("revenue_generated")
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  @@map("email_campaigns")
+}
+
+model EmailSequenceStep {
+  id          String   @id @default(uuid())
+  campaignId  String   @map("campaign_id")
+  campaign    EmailCampaign @relation(fields: [campaignId], references: [id], onDelete: Cascade)
+  stepNumber  Int      @map("step_number")
+  subject     String
+  body        String
+  delayDays   Int @default(0) @map("delay_days")
+
+  @@unique([campaignId, stepNumber])
+  @@map("email_sequence_steps")
+}
+
+model EmailEvent {
+  id          String   @id @default(uuid())
+  campaignId  String?  @map("campaign_id")
+  campaign    EmailCampaign? @relation(fields: [campaignId], references: [id], onDelete: SetNull)
+  retireeId   String?  @map("retiree_id")
+  retiree     Retiree? @relation(fields: [retireeId], references: [id], onDelete: SetNull)
+  eventType   String   @map("event_type")
+  revenue     Decimal? @default(0)
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  @@index([campaignId, eventType])
+  @@map("email_events")
+}
+
+model Referral {
+  id          String   @id @default(uuid())
+  type        ReferralType
+  referrerName String @map("referrer_name")
+  referrerEmail String? @map("referrer_email")
+  referredRetireeId String? @map("referred_retiree_id")
+  referredRetiree Retiree? @relation(fields: [referredRetireeId], references: [id], onDelete: SetNull)
+  revenue     Decimal? @default(0)
+  status      String @default("submitted")
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  @@index([type, status])
+  @@map("referrals")
+}
+
+model Brand {
+  id          String   @id @default(uuid())
+  name        String
+  type        BrandType
+  domain      String?
+  country     String?
+  language    String @default("en")
+  currency    String @default("THB")
+  contentItems ContentItem[]
+  landingPages LandingPage[]
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  @@index([type, country, language])
+  @@map("brands")
+}

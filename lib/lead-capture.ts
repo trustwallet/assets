@@ -1,0 +1,2 @@
+import { prisma } from '@/lib/prisma';
+export async function createOrUpdateLead(input: { name?: string; email: string; country?: string; notes?: string }) { const [firstName, ...rest] = (input.name || 'Website Lead').split(' '); return prisma.retiree.upsert({ where: { email: input.email }, update: { country: input.country, notes: input.notes }, create: { firstName, lastName: rest.join(' ') || 'Lead', email: input.email, country: input.country, notes: input.notes, leadStage: 'LEAD' } }); }

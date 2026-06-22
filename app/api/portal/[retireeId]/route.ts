@@ -1,0 +1,2 @@
+import { prisma } from '@/lib/prisma';import { NextResponse } from 'next/server';
+export async function GET(_: Request, { params }: { params: { retireeId: string } }) { const retireeId = params.retireeId; return NextResponse.json({ profile: await prisma.retiree.findUniqueOrThrow({ where: { id: retireeId }, include: { financialProfile: true, visaWorkflows: true, tasks: true, appointments: true, communications: true, documents: true, portfolioHoldings: true, shortlists: { include: { property: true } }, aiRecommendations: { include: { property: true } } } }) }); }
