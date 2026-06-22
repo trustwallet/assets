@@ -1,4 +1,4 @@
-# TRELA Database ERD
+# TRELA/TRLA Database ERD
 
 ```mermaid
 erDiagram
@@ -15,4 +15,17 @@ erDiagram
   properties ||--|| property_lifestyle : has
   properties ||--|| property_scores : calculated_as
   properties ||--o{ property_media : stores
+
+  retirees ||--|| financial_profiles : has
+  retirees ||--|| visa_requirements : has
+  retirees ||--|| property_preferences : has
+  retirees ||--|| healthcare_preferences : has
+  retirees ||--|| lifestyle_preferences : has
+  retirees ||--|| travel_preferences : has
+  retirees ||--o{ activities : records
+  retirees ||--o{ tasks : owns
+  retirees ||--o{ notes : captures
+  email_templates { uuid id string name string subject string category datetime created_at }
 ```
+
+Phase 2 matching is computed dynamically by comparing `retirees` and their preference tables against `properties`, `projects`, `property_financials`, and `property_scores`.
