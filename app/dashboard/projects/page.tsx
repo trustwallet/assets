@@ -1,0 +1,2 @@
+import { prisma } from '@/lib/prisma';import { EntityTable } from '@/components/EntityTable';
+export default async function Page(){const rows=(await prisma.project.findMany({include:{developer:true},orderBy:{projectName:'asc'}})).map(p=>({...p,developerName:p.developer.developerName}));return <EntityTable title="Projects" href="/dashboard/projects/new" rows={rows} cols={['projectName','developerName','projectType','location','constructionStatus','unitsAvailable']}/>}

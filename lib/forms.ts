@@ -1,0 +1,1 @@
+export const toBool=(v:FormDataEntryValue|null)=>v==='on'||v==='true'; export const num=(v:FormDataEntryValue|null)=>v===''||v==null?undefined:Number(v); export const str=(v:FormDataEntryValue|null)=>v==null?undefined:String(v);
