@@ -1,0 +1,2 @@
+import { prisma } from '@/lib/prisma';
+export default async function Page(){const magnets=await prisma.leadMagnet.findMany({include:{downloads:true},orderBy:{createdAt:'desc'}});return <section><h2 className="text-3xl font-bold">Lead Magnet System</h2><div className="mt-6 grid gap-4 md:grid-cols-2">{magnets.map(m=><article className="card p-5" key={m.id}><h3 className="font-bold">{m.title}</h3><p>{m.description}</p><p className="text-sm text-brand-700">{m.downloads.length} downloads · {m.targetMarket}</p></article>)}</div></section>}

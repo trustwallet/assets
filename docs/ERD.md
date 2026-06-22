@@ -56,3 +56,29 @@ erDiagram
 ```
 
 Multi-region fields are added to `projects` and `properties` (`country`, `province`, `region`, `city`, `submarket`) so TRLA can expand beyond Phuket into Hua Hin, Koh Samui, Pattaya, Chiang Mai, Bangkok, Krabi, and future international markets.
+
+## Phase 4 Revenue Acceleration Layer
+
+```mermaid
+erDiagram
+  retirees ||--o{ assessment_results : completes
+  lead_magnets ||--o{ lead_magnet_downloads : captures
+  retirees ||--o{ lead_magnet_downloads : converts
+  brands ||--o{ content_items : publishes
+  brands ||--o{ landing_pages : owns
+  retirees ||--o{ ai_generated_reports : receives
+  retirees ||--o{ client_proposals : receives
+  retirees ||--o{ revenue_opportunities : monetizes
+  properties ||--o{ revenue_opportunities : sources
+  revenue_opportunities ||--o{ commissions : pays
+  developers ||--o{ commissions : owes
+  partners ||--o{ partner_referrals : sends
+  retirees ||--o{ client_journey_events : progresses
+  email_campaigns ||--o{ email_sequence_steps : sequences
+  email_campaigns ||--o{ email_events : measures
+  retirees ||--o{ email_events : engages
+  retirees ||--o{ referrals : referred_client
+  marketing_metrics { uuid id datetime date string source int visitors int leads decimal revenue }
+```
+
+Phase 4 adds a revenue acceleration layer for public calculators, lead magnets, SEO landing pages, CMS content, AI reports/proposals, revenue opportunities, commissions, partner/referral performance, email marketing, client journey analytics, multi-brand growth, multi-currency, and multi-language scaling.

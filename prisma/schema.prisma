@@ -9,9 +9,9 @@ enum PropertyType { VILLA TOWNHOUSE CONDOMINIUM PENTHOUSE }
 enum MediaType { IMAGE VIDEO FLOORPLAN DOCUMENT }
 
 model User { id String @id @default(uuid()) name String email String @unique role UserRole @default(VIEWER) createdAt DateTime @default(now()) @map("created_at") @@map("users") }
-model Developer { id String @id @default(uuid()) developerName String @map("developer_name") website String? yearsInBusiness Int? @map("years_in_business") completedProjects Int? @map("completed_projects") unitsDelivered Int? @map("units_delivered") reputationScore Decimal? @map("reputation_score") financialStabilityScore Decimal? @map("financial_stability_score") notes String? projects Project[] submissions DeveloperSubmission[] createdAt DateTime @default(now()) updatedAt DateTime @updatedAt @@map("developers") }
+model Developer { id String @id @default(uuid()) developerName String @map("developer_name") website String? yearsInBusiness Int? @map("years_in_business") completedProjects Int? @map("completed_projects") unitsDelivered Int? @map("units_delivered") reputationScore Decimal? @map("reputation_score") financialStabilityScore Decimal? @map("financial_stability_score") notes String? projects Project[] submissions DeveloperSubmission[] commissions Commission[] createdAt DateTime @default(now()) updatedAt DateTime @updatedAt @@map("developers") }
 model Project { id String @id @default(uuid()) developerId String @map("developer_id") developer Developer @relation(fields:[developerId], references:[id], onDelete:Cascade) projectName String @map("project_name") projectType ProjectType @map("project_type") location String country String? province String? region String? city String? submarket String? latitude Decimal? longitude Decimal? ownershipType OwnershipType @map("ownership_type") constructionStatus ConstructionStatus @map("construction_status") launchDate DateTime? @map("launch_date") handoverDate DateTime? @map("handover_date") totalUnits Int? @map("total_units") unitsSold Int? @map("units_sold") unitsAvailable Int? @map("units_available") projectDescription String? @map("project_description") properties Property[] createdAt DateTime @default(now()) updatedAt DateTime @updatedAt @@index([developerId]) @@map("projects") }
-model Property { id String @id @default(uuid()) projectId String @map("project_id") project Project @relation(fields:[projectId], references:[id], onDelete:Cascade) country String? province String? region String? city String? submarket String? propertyCode String @unique @map("property_code") propertyType PropertyType @map("property_type") bedrooms Int bathrooms Int interiorSqm Decimal @map("interior_sqm") landSqm Decimal? @map("land_sqm") privatePool Boolean @default(false) @map("private_pool") garden Boolean @default(false) parking Boolean @default(false) elevator Boolean @default(false) furnished Boolean @default(false) smartHome Boolean @default(false) @map("smart_home") petFriendly Boolean @default(false) @map("pet_friendly") financials PropertyFinancials? healthcare PropertyHealthcare? accessibility PropertyAccessibility? airportAccess PropertyAirportAccess? safety PropertySafety? expatCommunity PropertyExpatCommunity? management PropertyManagement? lifestyle PropertyLifestyle? scores PropertyScores? media PropertyMedia[] aiRecommendations AiRecommendation[] shortlists ClientShortlist[] documents Document[] portfolioHoldings PortfolioHolding[] rentalAnalytics RentalAnalytic[] createdAt DateTime @default(now()) updatedAt DateTime @updatedAt @@index([projectId]) @@map("properties") }
+model Property { id String @id @default(uuid()) projectId String @map("project_id") project Project @relation(fields:[projectId], references:[id], onDelete:Cascade) country String? province String? region String? city String? submarket String? propertyCode String @unique @map("property_code") propertyType PropertyType @map("property_type") bedrooms Int bathrooms Int interiorSqm Decimal @map("interior_sqm") landSqm Decimal? @map("land_sqm") privatePool Boolean @default(false) @map("private_pool") garden Boolean @default(false) parking Boolean @default(false) elevator Boolean @default(false) furnished Boolean @default(false) smartHome Boolean @default(false) @map("smart_home") petFriendly Boolean @default(false) @map("pet_friendly") financials PropertyFinancials? healthcare PropertyHealthcare? accessibility PropertyAccessibility? airportAccess PropertyAirportAccess? safety PropertySafety? expatCommunity PropertyExpatCommunity? management PropertyManagement? lifestyle PropertyLifestyle? scores PropertyScores? media PropertyMedia[] aiRecommendations AiRecommendation[] shortlists ClientShortlist[] documents Document[] portfolioHoldings PortfolioHolding[] rentalAnalytics RentalAnalytic[] revenueOpportunities RevenueOpportunity[] commissions Commission[] createdAt DateTime @default(now()) updatedAt DateTime @updatedAt @@index([projectId]) @@map("properties") }
 model PropertyFinancials { id String @id @default(uuid()) propertyId String @unique @map("property_id") property Property @relation(fields:[propertyId], references:[id], onDelete:Cascade) listPrice Decimal @map("list_price") currency String @default("THB") pricePerSqm Decimal? @map("price_per_sqm") reservationFee Decimal? @map("reservation_fee") depositRequired Decimal? @map("deposit_required") paymentPlan String? @map("payment_plan") maintenanceFee Decimal? @map("maintenance_fee") sinkingFund Decimal? @map("sinking_fund") transferTax Decimal? @map("transfer_tax") ownershipTax Decimal? @map("ownership_tax") rentalManagementFee Decimal? @map("rental_management_fee") @@map("property_financials") }
 model PropertyHealthcare { id String @id @default(uuid()) propertyId String @unique @map("property_id") property Property @relation(fields:[propertyId], references:[id], onDelete:Cascade) nearestHospital String? @map("nearest_hospital") hospitalDistanceKm Decimal? @map("hospital_distance_km") hospitalDriveMinutes Int? @map("hospital_drive_minutes") englishSpeakingDoctors Boolean @default(false) @map("english_speaking_doctors") emergencyServices Boolean @default(false) @map("emergency_services") specialistServices Boolean @default(false) @map("specialist_services") cardiology Boolean @default(false) oncology Boolean @default(false) dialysis Boolean @default(false) @@map("property_healthcare") }
 model PropertyAccessibility { id String @id @default(uuid()) propertyId String @unique @map("property_id") property Property @relation(fields:[propertyId], references:[id], onDelete:Cascade) beachDistanceKm Decimal? @map("beach_distance_km") groceryDistanceKm Decimal? @map("grocery_distance_km") pharmacyDistanceKm Decimal? @map("pharmacy_distance_km") restaurantDistanceKm Decimal? @map("restaurant_distance_km") walkabilityScore Int? @map("walkability_score") @@map("property_accessibility") }
@@ -77,6 +77,17 @@ model Retiree {
   appointments     Appointment[]
   communications   Communication[]
   portfolioHoldings PortfolioHolding[]
+  assessmentResults AssessmentResult[]
+  leadMagnetDownloads LeadMagnetDownload[]
+  aiGeneratedReports AiGeneratedReport[]
+  clientProposals ClientProposal[]
+  revenueOpportunities RevenueOpportunity[]
+  commissions Commission[]
+  partnerReferrals PartnerReferral[]
+  advisorAssets AdvisorAsset[]
+  journeyEvents ClientJourneyEvent[]
+  emailEvents EmailEvent[]
+  referrals Referral[]
   createdAt         DateTime  @default(now()) @map("created_at")
   updatedAt         DateTime  @updatedAt @map("updated_at")
 
@@ -507,4 +518,318 @@ model DocumentAccessLog {
 
   @@index([documentId, createdAt])
   @@map("document_access_logs")
+}
+
+enum AssessmentType { RETIREMENT_READINESS SUITABILITY VISA_ELIGIBILITY AFFORDABILITY }
+enum ContentType { BLOG ARTICLE AREA_GUIDE HOSPITAL_GUIDE DEVELOPER_REVIEW MARKET_REPORT VISA_UPDATE RETIREMENT_GUIDE LANDING_PAGE }
+enum RevenueServiceLine { PROPERTY_COMMISSION DEVELOPER_REFERRAL VISA_SERVICE RELOCATION HEALTHCARE_REFERRAL INSURANCE_REFERRAL PROPERTY_MANAGEMENT RENTAL_MANAGEMENT CONSULTING }
+enum RevenueStatus { PIPELINE EXPECTED CLOSED LOST }
+enum PaymentStatus { PENDING INVOICED PAID OVERDUE CANCELLED }
+enum PartnerType { DEVELOPER LAW_FIRM VISA_AGENT HOSPITAL INSURANCE_PROVIDER PROPERTY_MANAGER TAX_ADVISOR BANK }
+enum ReferralType { CLIENT PARTNER ADVISOR }
+enum BrandType { RETIREMENT_ADVISORY VISA_ADVISORY PROPERTY_ADVISORY HEALTHCARE_CONCIERGE WEALTH_PRESERVATION ESTATE_PLANNING }
+
+model AssessmentResult {
+  id          String   @id @default(uuid())
+  retireeId   String?  @map("retiree_id")
+  retiree     Retiree? @relation(fields: [retireeId], references: [id], onDelete: Cascade)
+  type        AssessmentType
+  email       String?
+  name        String?
+  country     String?
+  inputs      Json
+  score       Int
+  recommendations Json
+  createdLead Boolean @default(false) @map("created_lead")
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  @@index([type, score])
+  @@index([email])
+  @@map("assessment_results")
+}
+
+model LeadMagnet {
+  id          String   @id @default(uuid())
+  slug        String   @unique
+  title       String
+  description String?
+  resourceUrl String?  @map("resource_url")
+  targetMarket String? @map("target_market")
+  downloads   LeadMagnetDownload[]
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  @@map("lead_magnets")
+}
+
+model LeadMagnetDownload {
+  id          String   @id @default(uuid())
+  leadMagnetId String  @map("lead_magnet_id")
+  leadMagnet   LeadMagnet @relation(fields: [leadMagnetId], references: [id], onDelete: Cascade)
+  retireeId    String? @map("retiree_id")
+  retiree      Retiree? @relation(fields: [retireeId], references: [id], onDelete: SetNull)
+  name         String
+  email        String
+  country      String?
+  timeline     String?
+  createdAt    DateTime @default(now()) @map("created_at")
+
+  @@index([email])
+  @@map("lead_magnet_downloads")
+}
+
+model ContentItem {
+  id          String   @id @default(uuid())
+  type        ContentType
+  slug        String   @unique
+  title       String
+  excerpt     String?
+  body        String
+  seoTitle    String?  @map("seo_title")
+  seoDescription String? @map("seo_description")
+  keywords    String[] @default([])
+  region      String?
+  language    String   @default("en")
+  brandId     String?  @map("brand_id")
+  brand       Brand?   @relation(fields: [brandId], references: [id], onDelete: SetNull)
+  publishedAt DateTime? @map("published_at")
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  @@index([type, region, publishedAt])
+  @@map("content_items")
+}
+
+model LandingPage {
+  id          String   @id @default(uuid())
+  slug        String   @unique
+  headline    String
+  region      String?
+  propertyType String? @map("property_type")
+  seoTitle    String?  @map("seo_title")
+  seoDescription String? @map("seo_description")
+  faq         Json?
+  ctaText     String?  @map("cta_text")
+  calculatorType AssessmentType? @map("calculator_type")
+  brandId     String? @map("brand_id")
+  brand       Brand?  @relation(fields: [brandId], references: [id], onDelete: SetNull)
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  @@index([region, propertyType])
+  @@map("landing_pages")
+}
+
+model AiGeneratedReport {
+  id          String   @id @default(uuid())
+  retireeId   String?  @map("retiree_id")
+  retiree     Retiree? @relation(fields: [retireeId], references: [id], onDelete: Cascade)
+  reportType  ReportType @map("report_type")
+  title       String
+  content     Json
+  pdfUrl      String? @map("pdf_url")
+  excelUrl    String? @map("excel_url")
+  portalPublished Boolean @default(false) @map("portal_published")
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  @@index([retireeId, reportType])
+  @@map("ai_generated_reports")
+}
+
+model ClientProposal {
+  id          String   @id @default(uuid())
+  retireeId   String   @map("retiree_id")
+  retiree     Retiree  @relation(fields: [retireeId], references: [id], onDelete: Cascade)
+  title       String
+  editableContent Json @map("editable_content")
+  pdfUrl      String? @map("pdf_url")
+  status      String @default("draft")
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  @@index([retireeId, status])
+  @@map("client_proposals")
+}
+
+model RevenueOpportunity {
+  id          String   @id @default(uuid())
+  retireeId   String?  @map("retiree_id")
+  retiree     Retiree? @relation(fields: [retireeId], references: [id], onDelete: SetNull)
+  propertyId  String?  @map("property_id")
+  property    Property? @relation(fields: [propertyId], references: [id], onDelete: SetNull)
+  serviceLine RevenueServiceLine @map("service_line")
+  expectedRevenue Decimal @map("expected_revenue")
+  closedRevenue   Decimal? @map("closed_revenue")
+  status      RevenueStatus @default(PIPELINE)
+  region      String?
+  currency    String @default("THB")
+  expectedCloseDate DateTime? @map("expected_close_date")
+  commissions Commission[]
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  @@index([serviceLine, status])
+  @@index([region, status])
+  @@map("revenue_opportunities")
+}
+
+model Commission {
+  id          String   @id @default(uuid())
+  revenueOpportunityId String? @map("revenue_opportunity_id")
+  revenueOpportunity RevenueOpportunity? @relation(fields: [revenueOpportunityId], references: [id], onDelete: SetNull)
+  developerId String? @map("developer_id")
+  developer   Developer? @relation(fields: [developerId], references: [id], onDelete: SetNull)
+  propertyId  String? @map("property_id")
+  property    Property? @relation(fields: [propertyId], references: [id], onDelete: SetNull)
+  retireeId   String? @map("retiree_id")
+  retiree     Retiree? @relation(fields: [retireeId], references: [id], onDelete: SetNull)
+  advisorId   String? @map("advisor_id")
+  source      String?
+  commissionPercent Decimal? @map("commission_percent")
+  commissionAmount  Decimal @map("commission_amount")
+  paymentStatus PaymentStatus @default(PENDING) @map("payment_status")
+  paymentDate DateTime? @map("payment_date")
+
+  @@index([paymentStatus])
+  @@map("commissions")
+}
+
+model Partner {
+  id          String   @id @default(uuid())
+  name        String
+  type        PartnerType
+  country     String?
+  region      String?
+  contactName String? @map("contact_name")
+  email       String?
+  phone       String?
+  referrals   PartnerReferral[]
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  @@index([type, region])
+  @@map("partners")
+}
+
+model PartnerReferral {
+  id          String   @id @default(uuid())
+  partnerId   String   @map("partner_id")
+  partner     Partner  @relation(fields: [partnerId], references: [id], onDelete: Cascade)
+  retireeId   String?  @map("retiree_id")
+  retiree     Retiree? @relation(fields: [retireeId], references: [id], onDelete: SetNull)
+  revenueGenerated Decimal? @map("revenue_generated")
+  status      String @default("new")
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  @@index([partnerId, status])
+  @@map("partner_referrals")
+}
+
+model AdvisorAsset {
+  id          String   @id @default(uuid())
+  retireeId   String?  @map("retiree_id")
+  retiree     Retiree? @relation(fields: [retireeId], references: [id], onDelete: Cascade)
+  assetType   String   @map("asset_type")
+  title       String
+  content     String
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  @@index([assetType, createdAt])
+  @@map("advisor_assets")
+}
+
+model ClientJourneyEvent {
+  id          String   @id @default(uuid())
+  retireeId   String   @map("retiree_id")
+  retiree     Retiree  @relation(fields: [retireeId], references: [id], onDelete: Cascade)
+  stage       String
+  enteredAt   DateTime @default(now()) @map("entered_at")
+  exitedAt    DateTime? @map("exited_at")
+  revenueAtStage Decimal? @map("revenue_at_stage")
+
+  @@index([stage, enteredAt])
+  @@map("client_journey_events")
+}
+
+model MarketingMetric {
+  id          String   @id @default(uuid())
+  date        DateTime
+  source      String
+  campaign    String?
+  landingPage String? @map("landing_page")
+  visitors    Int @default(0)
+  leads       Int @default(0)
+  conversions Int @default(0)
+  spend       Decimal? @default(0)
+  revenue     Decimal? @default(0)
+  region      String?
+
+  @@index([date, source])
+  @@map("marketing_metrics")
+}
+
+model EmailCampaign {
+  id          String   @id @default(uuid())
+  name        String
+  sequenceType String @map("sequence_type")
+  audience    String?
+  status      String @default("draft")
+  steps       EmailSequenceStep[]
+  events      EmailEvent[]
+  revenueGenerated Decimal? @default(0) @map("revenue_generated")
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  @@map("email_campaigns")
+}
+
+model EmailSequenceStep {
+  id          String   @id @default(uuid())
+  campaignId  String   @map("campaign_id")
+  campaign    EmailCampaign @relation(fields: [campaignId], references: [id], onDelete: Cascade)
+  stepNumber  Int      @map("step_number")
+  subject     String
+  body        String
+  delayDays   Int @default(0) @map("delay_days")
+
+  @@unique([campaignId, stepNumber])
+  @@map("email_sequence_steps")
+}
+
+model EmailEvent {
+  id          String   @id @default(uuid())
+  campaignId  String?  @map("campaign_id")
+  campaign    EmailCampaign? @relation(fields: [campaignId], references: [id], onDelete: SetNull)
+  retireeId   String?  @map("retiree_id")
+  retiree     Retiree? @relation(fields: [retireeId], references: [id], onDelete: SetNull)
+  eventType   String   @map("event_type")
+  revenue     Decimal? @default(0)
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  @@index([campaignId, eventType])
+  @@map("email_events")
+}
+
+model Referral {
+  id          String   @id @default(uuid())
+  type        ReferralType
+  referrerName String @map("referrer_name")
+  referrerEmail String? @map("referrer_email")
+  referredRetireeId String? @map("referred_retiree_id")
+  referredRetiree Retiree? @relation(fields: [referredRetireeId], references: [id], onDelete: SetNull)
+  revenue     Decimal? @default(0)
+  status      String @default("submitted")
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  @@index([type, status])
+  @@map("referrals")
+}
+
+model Brand {
+  id          String   @id @default(uuid())
+  name        String
+  type        BrandType
+  domain      String?
+  country     String?
+  language    String @default("en")
+  currency    String @default("THB")
+  contentItems ContentItem[]
+  landingPages LandingPage[]
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  @@index([type, country, language])
+  @@map("brands")
 }

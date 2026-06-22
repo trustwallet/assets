@@ -1,0 +1,2 @@
+import { prisma } from '@/lib/prisma';import { NextResponse } from 'next/server';
+export async function POST(req:Request){const {retireeId,assetType='Follow-Up Email'}=await req.json();const retiree=retireeId?await prisma.retiree.findUnique({where:{id:retireeId}}):null;const content=`AI draft ${assetType} for ${retiree?`${retiree.firstName} ${retiree.lastName}`:'client'}: summarize goals, next steps, and a clear CTA.`;return NextResponse.json(await prisma.advisorAsset.create({data:{retireeId,assetType,title:assetType,content}}),{status:201})}
