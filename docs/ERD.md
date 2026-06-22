@@ -29,3 +29,30 @@ erDiagram
 ```
 
 Phase 2 matching is computed dynamically by comparing `retirees` and their preference tables against `properties`, `projects`, `property_financials`, and `property_scores`.
+
+## Phase 3 Platform Expansion
+
+```mermaid
+erDiagram
+  retirees ||--o{ ai_conversations : asks
+  ai_prompts ||--o{ ai_conversations : powers
+  retirees ||--o{ ai_recommendations : receives
+  properties ||--o{ ai_recommendations : recommended
+  retirees ||--o{ client_shortlists : saves
+  properties ||--o{ client_shortlists : shortlisted
+  retirees ||--o{ documents : uploads
+  documents ||--o{ document_access_logs : audits
+  retirees ||--o{ visa_workflows : tracks
+  workflow_automations ||--o{ workflow_runs : triggers
+  retirees ||--o{ appointments : schedules
+  retirees ||--o{ communications : records
+  retirees ||--o{ portfolio_holdings : owns
+  properties ||--o{ portfolio_holdings : held_as
+  properties ||--o{ rental_analytics : measures
+  developers ||--o{ developer_submissions : submits
+  report_jobs { uuid id ReportType report_type ReportFormat format string status }
+  audit_logs { uuid id PortalRole actor_role string action string entity datetime created_at }
+  ai_knowledge_base { uuid id string category string title string region int version }
+```
+
+Multi-region fields are added to `projects` and `properties` (`country`, `province`, `region`, `city`, `submarket`) so TRLA can expand beyond Phuket into Hua Hin, Koh Samui, Pattaya, Chiang Mai, Bangkok, Krabi, and future international markets.
