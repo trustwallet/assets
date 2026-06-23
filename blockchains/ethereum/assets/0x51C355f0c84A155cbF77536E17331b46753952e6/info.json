@@ -1,0 +1,25 @@
+{
+    "symbol":  "DTX",
+    "description":  "DTX is an algorithmic ERC20 stablecoin pegged 1:1 to the US Dollar, issued by DTX Protocol Ltd. It features a 100 Billion max supply, built-in staking with 25% APY, and is designed to power the AgriFi ecosystem - tokenizing agricultural land assets globally.",
+    "type":  "ERC20",
+    "decimals":  6,
+    "id":  "0x51C355f0c84A155cbF77536E17331b46753952e6",
+    "name":  "DTX",
+    "links":  [
+                  {
+                      "name":  "twitter",
+                      "url":  "https://twitter.com/DTXProtocol"
+                  },
+                  {
+                      "name":  "github",
+                      "url":  "https://github.com/DTXPROTOCOL"
+                  },
+                  {
+                      "name":  "whitepaper",
+                      "url":  "https://www.dtxcoin.io/whitepaper"
+                  }
+              ],
+    "website":  "https://www.dtxcoin.io",
+    "status":  "active",
+    "explorer":  "https://etherscan.io/token/0x51C355f0c84A155cbF77536E17331b46753952e6"
+}
