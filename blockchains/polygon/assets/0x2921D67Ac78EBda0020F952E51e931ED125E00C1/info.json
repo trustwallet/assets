@@ -4,7 +4,7 @@
   "type": "ERC20",
   "symbol": "VIK",
   "decimals": 18,
-  "description": "VIK is a Polygon PoS-based token by Vikasa Network that rewards users through Ads, Tasks, and Daily Claims. With a total supply of 24,000,000 VIK, it offers staking starting from 50 VIK with a maximum APY of 15% over 5 years.",
+  "description": "VIKASA Network is a global rewards ecosystem allowing users to earn VIK rewards by participating in micro-tasks and engagement metrics. Built natively on the Polygon network, the ecosystem features secure staking mechanisms, localized milestones, and transparent token economics.",
   "website": "https://www.vikasanetwork.com",
   "explorer": "https://polygonscan.com/token/0x2921D67Ac78EBda0020F952E51e931ED125E00C1",
   "status": "active",
@@ -12,6 +12,10 @@
     {
       "name": "twitter",
       "url": "https://x.com/vikasanetwork"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/vikasanetwork"
     }
   ],
   "tags": ["defi"]
