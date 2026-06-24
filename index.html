@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BravoTags — Digital Business Cards</title>
+<meta name="description" content="BravoTags turns your identity into a living digital card. Share instantly, update anytime, leave a lasting impression.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --black: #030507;
+    --dark: #0a0d12;
+    --card-dark: #0e1218;
+    --cyan: #00f0ff;
+    --cyan-dim: #00c8d4;
+    --gold: #f0b429;
+    --gold-dim: #c99a1e;
+    --white: #f0f4f8;
+    --muted: #5a6880;
+    --border: rgba(255,255,255,0.06);
+    --glow-cyan: 0 0 40px rgba(0,240,255,0.25), 0 0 80px rgba(0,240,255,0.1);
+    --glow-gold: 0 0 40px rgba(240,180,41,0.3), 0 0 80px rgba(240,180,41,0.1);
+    --font-sans: 'Inter', -apple-system, sans-serif;
+    --font-display: 'Space Grotesk', 'Inter', sans-serif;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--black);
+    color: var(--white);
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── CANVAS BACKGROUND ── */
+  #bg-canvas {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    padding: 24px 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, rgba(3,5,7,0.9) 0%, transparent 100%);
+    backdrop-filter: blur(0px);
+    transition: backdrop-filter 0.3s, background 0.3s;
+  }
+  nav.scrolled {
+    background: rgba(3,5,7,0.85);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-logo {
+    display: flex; align-items: center; gap: 10px;
+    text-decoration: none;
+  }
+  .logo-mark {
+    width: 36px; height: 36px;
+    background: linear-gradient(135deg, var(--cyan), var(--gold));
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px; font-weight: 900;
+    color: var(--black);
+    font-family: var(--font-display);
+    box-shadow: var(--glow-cyan);
+  }
+  .logo-text {
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: var(--white);
+  }
+  .logo-text span { color: var(--cyan); }
+  .nav-links { display: flex; gap: 40px; list-style: none; }
+  .nav-links a {
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--white); }
+  .nav-cta {
+    background: transparent;
+    border: 1px solid rgba(0,240,255,0.4);
+    color: var(--cyan);
+    padding: 10px 24px;
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+  }
+  .nav-cta:hover {
+    background: var(--cyan);
+    color: var(--black);
+    box-shadow: var(--glow-cyan);
+  }
+
+  /* ── HERO ── */
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 120px 24px 80px;
+    z-index: 1;
+  }
+  .hero-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--cyan);
+    border: 1px solid rgba(0,240,255,0.2);
+    background: rgba(0,240,255,0.05);
+    padding: 6px 16px;
+    border-radius: 100px;
+    margin-bottom: 32px;
+    animation: fadeUp 0.8s ease both;
+  }
+  .hero-eyebrow::before {
+    content: '';
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--cyan);
+    box-shadow: 0 0 8px var(--cyan);
+    animation: pulse 2s ease infinite;
+  }
+  .hero-title {
+    font-family: var(--font-display);
+    font-size: clamp(52px, 8vw, 110px);
+    font-weight: 700;
+    line-height: 0.95;
+    letter-spacing: -0.03em;
+    margin-bottom: 24px;
+    animation: fadeUp 0.8s 0.1s ease both;
+  }
+  .hero-title .line-1 { display: block; color: var(--white); }
+  .hero-title .line-2 {
+    display: block;
+    background: linear-gradient(90deg, var(--cyan) 0%, var(--gold) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .hero-sub {
+    max-width: 540px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: var(--muted);
+    margin-bottom: 48px;
+    animation: fadeUp 0.8s 0.2s ease both;
+  }
+  .hero-sub strong { color: var(--white); font-weight: 500; }
+  .hero-actions {
+    display: flex; gap: 16px; flex-wrap: wrap; justify-content: center;
+    animation: fadeUp 0.8s 0.3s ease both;
+  }
+  .btn-primary {
+    background: linear-gradient(135deg, var(--cyan), var(--cyan-dim));
+    color: var(--black);
+    border: none;
+    padding: 16px 36px;
+    border-radius: 100px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.25s;
+    text-decoration: none;
+    letter-spacing: 0.01em;
+    box-shadow: var(--glow-cyan);
+  }
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 60px rgba(0,240,255,0.4), 0 0 120px rgba(0,240,255,0.15);
+  }
+  .btn-ghost {
+    background: transparent;
+    color: var(--white);
+    border: 1px solid var(--border);
+    padding: 16px 36px;
+    border-radius: 100px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.25s;
+    text-decoration: none;
+  }
+  .btn-ghost:hover {
+    border-color: rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.04);
+  }
+
+  /* ── FLOATING CARD ── */
+  .hero-card-wrap {
+    margin-top: 80px;
+    perspective: 1200px;
+    animation: fadeUp 0.8s 0.4s ease both;
+  }
+  .card-scene {
+    position: relative;
+    width: 380px;
+    height: 220px;
+    transform-style: preserve-3d;
+    animation: cardFloat 6s ease-in-out infinite, cardRotate 12s ease-in-out infinite;
+  }
+  .biz-card {
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    padding: 28px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    backface-visibility: hidden;
+  }
+  .biz-card-front {
+    background: linear-gradient(135deg, #0d1520 0%, #0a1a2e 50%, #061015 100%);
+    border: 1px solid rgba(0,240,255,0.2);
+    box-shadow: 0 30px 80px rgba(0,0,0,0.8), 0 0 0 1px rgba(0,240,255,0.1), inset 0 1px 0 rgba(255,255,255,0.06);
+  }
+  .card-logo-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .card-brand {
+    font-family: var(--font-display);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--cyan);
+  }
+  .card-nfc {
+    width: 28px; height: 28px;
+    border: 1.5px solid rgba(0,240,255,0.4);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    position: relative;
+  }
+  .card-nfc::before, .card-nfc::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid rgba(0,240,255,0.2);
+    animation: nfcPulse 2s ease-in-out infinite;
+  }
+  .card-nfc::before { width: 42px; height: 42px; animation-delay: 0s; }
+  .card-nfc::after  { width: 58px; height: 58px; animation-delay: 0.5s; }
+  .nfc-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--cyan); box-shadow: 0 0 6px var(--cyan); }
+  .card-info { }
+  .card-name {
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    color: var(--white);
+    margin-bottom: 4px;
+  }
+  .card-title {
+    font-size: 12px;
+    color: var(--muted);
+    font-weight: 400;
+    letter-spacing: 0.05em;
+  }
+  .card-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .card-contact { font-size: 11px; color: rgba(255,255,255,0.4); }
+  .card-qr {
+    width: 40px; height: 40px;
+    background: rgba(0,240,255,0.08);
+    border: 1px solid rgba(0,240,255,0.2);
+    border-radius: 6px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2px;
+    padding: 4px;
+  }
+  .qr-dot {
+    background: var(--cyan);
+    border-radius: 1px;
+    opacity: 0.7;
+  }
+  .qr-dot:nth-child(2), .qr-dot:nth-child(5), .qr-dot:nth-child(10), .qr-dot:nth-child(14) { opacity: 0; }
+  .card-glow {
+    position: absolute;
+    inset: -2px;
+    border-radius: 22px;
+    background: transparent;
+    box-shadow: 0 0 60px rgba(0,240,255,0.15), 0 0 120px rgba(0,240,255,0.08);
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  /* ── STATS STRIP ── */
+  .stats-strip {
+    position: relative;
+    z-index: 1;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    background: linear-gradient(to right, rgba(0,240,255,0.03), rgba(240,180,41,0.03));
+    padding: 40px 48px;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+  }
+  .stat { text-align: center; }
+  .stat-num {
+    font-family: var(--font-display);
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    background: linear-gradient(135deg, var(--white) 0%, var(--cyan) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .stat-label { font-size: 13px; color: var(--muted); margin-top: 4px; font-weight: 400; }
+
+  /* ── SECTIONS SHARED ── */
+  section {
+    position: relative;
+    z-index: 1;
+    padding: 120px 48px;
+  }
+  .section-inner { max-width: 1100px; margin: 0 auto; }
+  .section-eyebrow {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--cyan);
+    margin-bottom: 16px;
+    display: flex; align-items: center; gap: 12px;
+  }
+  .section-eyebrow::before {
+    content: '';
+    display: block;
+    width: 32px; height: 1px;
+    background: var(--cyan);
+    opacity: 0.5;
+  }
+  .section-title {
+    font-family: var(--font-display);
+    font-size: clamp(36px, 4vw, 56px);
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+    margin-bottom: 20px;
+  }
+  .section-sub {
+    font-size: 17px;
+    color: var(--muted);
+    line-height: 1.7;
+    max-width: 520px;
+  }
+
+  /* ── FEATURES ── */
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    overflow: hidden;
+    margin-top: 64px;
+  }
+  .feature-card {
+    background: var(--dark);
+    padding: 40px 36px;
+    transition: background 0.3s;
+  }
+  .feature-card:hover { background: var(--card-dark); }
+  .feature-icon {
+    width: 52px; height: 52px;
+    border-radius: 14px;
+    background: rgba(0,240,255,0.08);
+    border: 1px solid rgba(0,240,255,0.15);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 24px;
+    margin-bottom: 24px;
+    transition: box-shadow 0.3s;
+  }
+  .feature-card:hover .feature-icon { box-shadow: var(--glow-cyan); }
+  .feature-name {
+    font-family: var(--font-display);
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    letter-spacing: -0.3px;
+  }
+  .feature-desc { font-size: 14px; color: var(--muted); line-height: 1.7; }
+
+  /* ── HOW IT WORKS ── */
+  #how { background: radial-gradient(ellipse at 50% 0%, rgba(0,240,255,0.04) 0%, transparent 60%); }
+  .steps { display: flex; flex-direction: column; gap: 0; margin-top: 64px; }
+  .step {
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    gap: 32px;
+    padding: 40px 0;
+    border-bottom: 1px solid var(--border);
+    position: relative;
+  }
+  .step:last-child { border-bottom: none; }
+  .step-num {
+    font-family: var(--font-display);
+    font-size: 48px;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(0,240,255,0.25);
+    line-height: 1;
+  }
+  .step-content { padding-top: 6px; }
+  .step-title {
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+    margin-bottom: 10px;
+  }
+  .step-desc { font-size: 15px; color: var(--muted); line-height: 1.7; max-width: 480px; }
+  .step-badge {
+    display: inline-flex;
+    margin-top: 14px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold);
+    background: rgba(240,180,41,0.08);
+    border: 1px solid rgba(240,180,41,0.2);
+    padding: 4px 12px;
+    border-radius: 100px;
+  }
+
+  /* ── SHOWCASE ── */
+  #showcase {
+    background: radial-gradient(ellipse at 80% 50%, rgba(240,180,41,0.04) 0%, transparent 60%);
+  }
+  .showcase-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+    margin-top: 64px;
+  }
+  .showcase-cards {
+    position: relative;
+    height: 340px;
+  }
+  .sc-card {
+    position: absolute;
+    width: 280px;
+    height: 165px;
+    border-radius: 16px;
+    padding: 20px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.4s ease;
+  }
+  .sc-card-1 {
+    top: 0; left: 0;
+    background: linear-gradient(135deg, #0f1f2e, #081018);
+    border: 1px solid rgba(0,240,255,0.2);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.6), 0 0 40px rgba(0,240,255,0.1);
+    transform: rotate(-6deg);
+    z-index: 3;
+  }
+  .sc-card-2 {
+    top: 60px; left: 80px;
+    background: linear-gradient(135deg, #1a0f08, #0e0a05);
+    border: 1px solid rgba(240,180,41,0.25);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.6), 0 0 40px rgba(240,180,41,0.1);
+    transform: rotate(2deg);
+    z-index: 2;
+  }
+  .sc-card-3 {
+    top: 130px; left: 40px;
+    background: linear-gradient(135deg, #0a0f1a, #060810);
+    border: 1px solid rgba(130,100,255,0.25);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.6), 0 0 40px rgba(130,100,255,0.1);
+    transform: rotate(-2deg);
+    z-index: 1;
+  }
+  .sc-card:hover { transform: rotate(0deg) translateY(-8px) scale(1.02) !important; z-index: 10 !important; }
+  .sc-name { font-family: var(--font-display); font-size: 15px; font-weight: 600; }
+  .sc-role { font-size: 10px; color: var(--muted); letter-spacing: 0.08em; text-transform: uppercase; }
+  .sc-accent { font-size: 10px; font-weight: 600; letter-spacing: 0.1em; }
+  .sc-accent-cyan { color: var(--cyan); }
+  .sc-accent-gold { color: var(--gold); }
+  .sc-accent-purple { color: #a78bfa; }
+  .showcase-text { }
+  .showcase-list { list-style: none; margin-top: 32px; display: flex; flex-direction: column; gap: 16px; }
+  .showcase-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    font-size: 15px;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+  .showcase-list li::before {
+    content: '→';
+    color: var(--cyan);
+    font-size: 16px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .showcase-list li strong { color: var(--white); font-weight: 500; }
+
+  /* ── PRICING ── */
+  #pricing { background: radial-gradient(ellipse at 50% 100%, rgba(0,240,255,0.03) 0%, transparent 60%); }
+  .pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 64px;
+  }
+  .price-card {
+    background: var(--dark);
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    padding: 36px 32px;
+    position: relative;
+    transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+  }
+  .price-card:hover { transform: translateY(-4px); }
+  .price-card.featured {
+    border-color: rgba(0,240,255,0.3);
+    box-shadow: var(--glow-cyan);
+    background: linear-gradient(160deg, #0a1520 0%, var(--dark) 100%);
+  }
+  .price-badge {
+    position: absolute;
+    top: -12px; left: 50%; transform: translateX(-50%);
+    background: linear-gradient(90deg, var(--cyan), var(--cyan-dim));
+    color: var(--black);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 4px 16px;
+    border-radius: 100px;
+    white-space: nowrap;
+  }
+  .price-tier { font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 12px; }
+  .price-amount {
+    font-family: var(--font-display);
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: var(--white);
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+  .price-period { font-size: 13px; color: var(--muted); margin-bottom: 28px; }
+  .price-features { list-style: none; display: flex; flex-direction: column; gap: 12px; margin-bottom: 32px; }
+  .price-features li { font-size: 14px; color: var(--muted); display: flex; align-items: center; gap: 10px; }
+  .price-features li::before { content: '✓'; color: var(--cyan); font-weight: 700; }
+  .btn-plan {
+    width: 100%;
+    padding: 14px;
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    letter-spacing: 0.02em;
+  }
+  .btn-plan-outline {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--white);
+  }
+  .btn-plan-outline:hover { border-color: rgba(255,255,255,0.2); background: rgba(255,255,255,0.04); }
+  .btn-plan-filled {
+    background: linear-gradient(135deg, var(--cyan), var(--cyan-dim));
+    border: none;
+    color: var(--black);
+    box-shadow: var(--glow-cyan);
+  }
+  .btn-plan-filled:hover { transform: translateY(-1px); box-shadow: 0 0 60px rgba(0,240,255,0.4); }
+
+  /* ── CTA ── */
+  #cta {
+    padding: 160px 48px;
+    text-align: center;
+    background: radial-gradient(ellipse at 50% 50%, rgba(0,240,255,0.06) 0%, rgba(240,180,41,0.03) 50%, transparent 70%);
+  }
+  .cta-title {
+    font-family: var(--font-display);
+    font-size: clamp(44px, 6vw, 88px);
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    line-height: 0.95;
+    margin-bottom: 24px;
+  }
+  .cta-sub { font-size: 17px; color: var(--muted); max-width: 460px; margin: 0 auto 48px; line-height: 1.7; }
+  .cta-form {
+    display: flex;
+    gap: 12px;
+    max-width: 420px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .cta-input {
+    flex: 1;
+    min-width: 200px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid var(--border);
+    border-radius: 100px;
+    padding: 14px 22px;
+    color: var(--white);
+    font-size: 15px;
+    font-family: var(--font-sans);
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  .cta-input:focus {
+    border-color: rgba(0,240,255,0.4);
+    box-shadow: 0 0 0 3px rgba(0,240,255,0.08);
+  }
+  .cta-input::placeholder { color: var(--muted); }
+
+  /* ── FOOTER ── */
+  footer {
+    position: relative;
+    z-index: 1;
+    border-top: 1px solid var(--border);
+    padding: 40px 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .footer-left { display: flex; align-items: center; gap: 10px; }
+  .footer-links { display: flex; gap: 32px; }
+  .footer-links a { font-size: 13px; color: var(--muted); text-decoration: none; transition: color 0.2s; }
+  .footer-links a:hover { color: var(--white); }
+  .footer-copy { font-size: 13px; color: var(--muted); }
+  .footer-copy span { color: var(--cyan); }
+
+  /* ── ANIMATIONS ── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0.4; }
+  }
+  @keyframes cardFloat {
+    0%, 100% { transform: translateY(0px) rotateX(4deg); }
+    50%       { transform: translateY(-16px) rotateX(6deg); }
+  }
+  @keyframes cardRotate {
+    0%, 100% { transform: rotateY(-8deg); }
+    50%       { transform: rotateY(8deg); }
+  }
+  @keyframes nfcPulse {
+    0%   { transform: scale(1); opacity: 0.4; }
+    50%  { transform: scale(1.15); opacity: 0; }
+    100% { transform: scale(1); opacity: 0; }
+  }
+
+  /* ── SCROLL REVEAL ── */
+  .reveal {
+    opacity: 0;
+    transform: translateY(32px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ── MOBILE ── */
+  @media (max-width: 900px) {
+    nav { padding: 18px 24px; }
+    .nav-links { display: none; }
+    section { padding: 80px 24px; }
+    .features-grid { grid-template-columns: 1fr; }
+    .showcase-grid { grid-template-columns: 1fr; }
+    .pricing-grid { grid-template-columns: 1fr; }
+    .stats-strip { padding: 32px 24px; gap: 40px; }
+    footer { padding: 32px 24px; flex-direction: column; align-items: flex-start; }
+    .card-scene { width: 320px; height: 185px; }
+    #cta { padding: 100px 24px; }
+  }
+  @media (max-width: 600px) {
+    .hero { padding: 100px 20px 60px; }
+    .hero-title { font-size: 48px; }
+    .hero-actions { flex-direction: column; align-items: center; }
+    .btn-primary, .btn-ghost { width: 100%; max-width: 280px; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a class="nav-logo" href="#">
+    <div class="logo-mark">B</div>
+    <span class="logo-text">Bravo<span>Tags</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#features">Features</a></li>
+    <li><a href="#how">How It Works</a></li>
+    <li><a href="#showcase">Gallery</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+  </ul>
+  <a href="#cta" class="nav-cta">Get Your Card</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-eyebrow">Digital Business Cards · NFC + QR</div>
+  <h1 class="hero-title">
+    <span class="line-1">Your Identity,</span>
+    <span class="line-2">Digitized.</span>
+  </h1>
+  <p class="hero-sub">
+    BravoTags transforms your brand into a <strong>living digital card</strong> — share instantly with a tap or scan, update your info in real time, and track every connection you make.
+  </p>
+  <div class="hero-actions">
+    <a href="#cta" class="btn-primary">Create Your Card</a>
+    <a href="#how" class="btn-ghost">See How It Works</a>
+  </div>
+
+  <div class="hero-card-wrap">
+    <div class="card-scene">
+      <div class="biz-card biz-card-front">
+        <div class="card-logo-row">
+          <span class="card-brand">BravoTags</span>
+          <div class="card-nfc"><div class="nfc-dot"></div></div>
+        </div>
+        <div class="card-info">
+          <div class="card-name">Alexandra Chen</div>
+          <div class="card-title">Creative Director · Design Studio</div>
+        </div>
+        <div class="card-bottom">
+          <div class="card-contact">alex@designstudio.co · bravotags.com/alex</div>
+          <div class="card-qr">
+            <div class="qr-dot"></div><div class="qr-dot"></div><div class="qr-dot"></div><div class="qr-dot"></div>
+            <div class="qr-dot"></div><div class="qr-dot"></div><div class="qr-dot"></div><div class="qr-dot"></div>
+            <div class="qr-dot"></div><div class="qr-dot"></div><div class="qr-dot"></div><div class="qr-dot"></div>
+            <div class="qr-dot"></div><div class="qr-dot"></div><div class="qr-dot"></div><div class="qr-dot"></div>
+          </div>
+        </div>
+      </div>
+      <div class="card-glow"></div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-strip">
+  <div class="stat reveal">
+    <div class="stat-num" data-count="50000">0</div>
+    <div class="stat-label">Cards Created</div>
+  </div>
+  <div class="stat reveal">
+    <div class="stat-num" data-count="2400000">0</div>
+    <div class="stat-label">Connections Made</div>
+  </div>
+  <div class="stat reveal">
+    <div class="stat-num" data-count="98">0</div>
+    <div class="stat-label">% Satisfaction</div>
+  </div>
+  <div class="stat reveal">
+    <div class="stat-num" data-count="120">0</div>
+    <div class="stat-label">Countries Reached</div>
+  </div>
+</div>
+
+<!-- FEATURES -->
+<section id="features">
+  <div class="section-inner">
+    <div class="section-eyebrow reveal">Everything You Need</div>
+    <h2 class="section-title reveal">The card that<br>works as hard as you do.</h2>
+    <p class="section-sub reveal">Forget paper. BravoTags cards live online, update instantly, and make first impressions that stick.</p>
+
+    <div class="features-grid reveal">
+      <div class="feature-card">
+        <div class="feature-icon">⚡</div>
+        <div class="feature-name">Instant Sharing</div>
+        <div class="feature-desc">Share via NFC tap, QR scan, or direct link. No app needed on the other end — it just works on any device, any browser.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">✏️</div>
+        <div class="feature-name">Live Updates</div>
+        <div class="feature-desc">Changed your job or number? Update your card once and every link you've ever shared reflects it immediately.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📊</div>
+        <div class="feature-name">Analytics & Tracking</div>
+        <div class="feature-desc">Know who viewed your card, when, and from where. Real-time insights to fuel smarter follow-ups.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🎨</div>
+        <div class="feature-name">Custom Branding</div>
+        <div class="feature-desc">Your colors, your fonts, your logo. Design a card that's unmistakably you — or your entire team's brand, unified.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔗</div>
+        <div class="feature-name">All Your Links</div>
+        <div class="feature-desc">Connect LinkedIn, portfolio, booking links, social profiles — everything a new contact needs in one beautiful page.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🏢</div>
+        <div class="feature-name">Team Management</div>
+        <div class="feature-desc">Deploy branded cards for your entire organization from one dashboard. Brand changes cascade across all cards instantly.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how">
+  <div class="section-inner">
+    <div class="section-eyebrow reveal">Simple by Design</div>
+    <h2 class="section-title reveal">Up and running<br>in minutes.</h2>
+
+    <div class="steps">
+      <div class="step reveal">
+        <div class="step-num">01</div>
+        <div class="step-content">
+          <div class="step-title">Build Your Profile</div>
+          <div class="step-desc">Add your name, role, photo, contact details, and links. Our intuitive editor lets you design and preview your card in real time — no design skills required.</div>
+          <span class="step-badge">Takes under 5 minutes</span>
+        </div>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">02</div>
+        <div class="step-content">
+          <div class="step-title">Get Your BravoTag</div>
+          <div class="step-desc">Receive your unique smart card — physical NFC card, digital-only link, or both. Your card lives at a custom URL like <strong>bravotags.com/yourname</strong>.</div>
+          <span class="step-badge">Ships in 3–5 days</span>
+        </div>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">03</div>
+        <div class="step-content">
+          <div class="step-title">Tap, Scan, Share</div>
+          <div class="step-desc">Tap your NFC card to any phone or scan the QR code. Your full profile loads instantly — no app, no friction. Recipients can save your contact with one click.</div>
+          <span class="step-badge">Works on every device</span>
+        </div>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">04</div>
+        <div class="step-content">
+          <div class="step-title">Track & Refine</div>
+          <div class="step-desc">Watch your dashboard fill with views and saves. See which events drove traffic, update your card anytime, and let data guide your networking strategy.</div>
+          <span class="step-badge">Real-time analytics</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SHOWCASE -->
+<section id="showcase">
+  <div class="section-inner">
+    <div class="showcase-grid">
+      <div class="showcase-cards reveal">
+        <div class="sc-card sc-card-1">
+          <div>
+            <div class="sc-name">Marcus Rivera</div>
+            <div class="sc-role">Venture Capital · Partner</div>
+          </div>
+          <div class="sc-accent sc-accent-cyan">bravotags.com/marcus</div>
+        </div>
+        <div class="sc-card sc-card-2">
+          <div>
+            <div class="sc-name">Priya Sharma</div>
+            <div class="sc-role">Product Design · Lead</div>
+          </div>
+          <div class="sc-accent sc-accent-gold">bravotags.com/priya</div>
+        </div>
+        <div class="sc-card sc-card-3">
+          <div>
+            <div class="sc-name">James O'Brien</div>
+            <div class="sc-role">Full-Stack Engineer</div>
+          </div>
+          <div class="sc-accent sc-accent-purple">bravotags.com/james</div>
+        </div>
+      </div>
+      <div class="showcase-text reveal">
+        <div class="section-eyebrow">Your Brand, Your Way</div>
+        <h2 class="section-title">One card.<br>Infinite first impressions.</h2>
+        <p class="section-sub">Every BravoTag is crafted to represent you — your aesthetic, your industry, your vibe. Fully customizable, always on-brand.</p>
+        <ul class="showcase-list">
+          <li><strong>Choose your accent color</strong> and the card adapts to match your brand palette perfectly.</li>
+          <li><strong>Pick a layout</strong> — minimal, bold, or rich — depending on how much you want to show.</li>
+          <li><strong>Add a photo or logo</strong> for instant brand recognition at a glance.</li>
+          <li><strong>Custom domain</strong> support so your card lives on your own URL.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing">
+  <div class="section-inner">
+    <div class="section-eyebrow reveal">Simple Pricing</div>
+    <h2 class="section-title reveal">Start free.<br>Grow when you're ready.</h2>
+    <p class="section-sub reveal">No hidden fees. Cancel anytime. Switch plans as your needs evolve.</p>
+
+    <div class="pricing-grid">
+      <div class="price-card reveal">
+        <div class="price-tier">Starter</div>
+        <div class="price-amount">Free</div>
+        <div class="price-period">Forever</div>
+        <ul class="price-features">
+          <li>1 digital card</li>
+          <li>QR code sharing</li>
+          <li>Basic analytics</li>
+          <li>BravoTags subdomain</li>
+          <li>All social links</li>
+        </ul>
+        <a href="#cta" class="btn-plan btn-plan-outline">Get Started Free</a>
+      </div>
+      <div class="price-card featured reveal">
+        <div class="price-badge">Most Popular</div>
+        <div class="price-tier">Pro</div>
+        <div class="price-amount">$9</div>
+        <div class="price-period">per month</div>
+        <ul class="price-features">
+          <li>Unlimited cards</li>
+          <li>NFC physical card included</li>
+          <li>Advanced analytics</li>
+          <li>Custom domain</li>
+          <li>Priority support</li>
+          <li>Remove BravoTags branding</li>
+        </ul>
+        <a href="#cta" class="btn-plan btn-plan-filled">Start Pro Trial</a>
+      </div>
+      <div class="price-card reveal">
+        <div class="price-tier">Business</div>
+        <div class="price-amount">$29</div>
+        <div class="price-period">per month</div>
+        <ul class="price-features">
+          <li>Everything in Pro</li>
+          <li>Up to 25 team members</li>
+          <li>Team brand controls</li>
+          <li>CRM integrations</li>
+          <li>API access</li>
+          <li>Dedicated support</li>
+        </ul>
+        <a href="#cta" class="btn-plan btn-plan-outline">Contact Sales</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="cta">
+  <div class="hero-eyebrow" style="display:inline-flex; margin-bottom:32px; animation:none; opacity:1;">
+    Join 50,000+ professionals
+  </div>
+  <h2 class="cta-title reveal">
+    Make your<br>
+    <span style="background:linear-gradient(90deg,var(--cyan),var(--gold));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">
+      next impression
+    </span><br>
+    unforgettable.
+  </h2>
+  <p class="cta-sub reveal">Create your free digital business card today. No credit card required.</p>
+  <div class="cta-form reveal">
+    <input class="cta-input" type="email" placeholder="your@email.com" />
+    <a href="#" class="btn-primary" style="white-space:nowrap;">Get Your Tag</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-left">
+    <div class="logo-mark" style="width:28px;height:28px;font-size:14px;">B</div>
+    <span style="font-family:var(--font-display);font-size:15px;font-weight:600;">Bravo<span style="color:var(--cyan);">Tags</span></span>
+  </div>
+  <div class="footer-links">
+    <a href="#">Privacy</a>
+    <a href="#">Terms</a>
+    <a href="#">Support</a>
+    <a href="#">Blog</a>
+  </div>
+  <div class="footer-copy">© 2025 <span>BravoTags</span>. All rights reserved.</div>
+</footer>
+
+<script>
+// ── PARTICLE CANVAS ──
+(function() {
+  const canvas = document.getElementById('bg-canvas');
+  const ctx = canvas.getContext('2d');
+  let W, H, particles = [], lines = [];
+  const PARTICLE_COUNT = 80;
+  const LINE_DIST = 160;
+
+  function resize() {
+    W = canvas.width = window.innerWidth;
+    H = canvas.height = window.innerHeight;
+  }
+
+  class Particle {
+    constructor() { this.reset(true); }
+    reset(init) {
+      this.x = Math.random() * (W || 1200);
+      this.y = init ? Math.random() * (H || 800) : (Math.random() > 0.5 ? -5 : (H || 800) + 5);
+      this.vx = (Math.random() - 0.5) * 0.3;
+      this.vy = (Math.random() - 0.5) * 0.3;
+      this.r = Math.random() * 1.5 + 0.3;
+      this.alpha = Math.random() * 0.5 + 0.1;
+      this.color = Math.random() > 0.7 ? [0, 240, 255] : Math.random() > 0.5 ? [240, 180, 41] : [255, 255, 255];
+    }
+    update() {
+      this.x += this.vx;
+      this.y += this.vy;
+      if (this.x < -10 || this.x > W + 10 || this.y < -10 || this.y > H + 10) this.reset(false);
+    }
+    draw() {
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(${this.color[0]},${this.color[1]},${this.color[2]},${this.alpha})`;
+      ctx.fill();
+    }
+  }
+
+  function init() {
+    resize();
+    particles = Array.from({ length: PARTICLE_COUNT }, () => new Particle());
+  }
+
+  function drawGrid() {
+    const step = 80;
+    ctx.strokeStyle = 'rgba(0,240,255,0.03)';
+    ctx.lineWidth = 1;
+    for (let x = 0; x < W; x += step) {
+      ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, H); ctx.stroke();
+    }
+    for (let y = 0; y < H; y += step) {
+      ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke();
+    }
+  }
+
+  function loop() {
+    ctx.clearRect(0, 0, W, H);
+    drawGrid();
+    particles.forEach(p => { p.update(); p.draw(); });
+
+    // Connect nearby particles
+    for (let i = 0; i < particles.length; i++) {
+      for (let j = i + 1; j < particles.length; j++) {
+        const a = particles[i], b = particles[j];
+        const dx = a.x - b.x, dy = a.y - b.y;
+        const d = Math.sqrt(dx * dx + dy * dy);
+        if (d < LINE_DIST) {
+          const alpha = (1 - d / LINE_DIST) * 0.12;
+          ctx.beginPath();
+          ctx.moveTo(a.x, a.y);
+          ctx.lineTo(b.x, b.y);
+          ctx.strokeStyle = `rgba(0,240,255,${alpha})`;
+          ctx.lineWidth = 0.5;
+          ctx.stroke();
+        }
+      }
+    }
+    requestAnimationFrame(loop);
+  }
+
+  window.addEventListener('resize', () => { resize(); });
+  init();
+  loop();
+})();
+
+// ── NAV SCROLL ──
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  navbar.classList.toggle('scrolled', window.scrollY > 40);
+});
+
+// ── SCROLL REVEAL ──
+const reveals = document.querySelectorAll('.reveal');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('visible'); }
+  });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+reveals.forEach(el => observer.observe(el));
+
+// ── COUNT-UP ANIMATION ──
+function formatNum(n, max) {
+  if (max >= 1000000) return (n / 1000000).toFixed(1) + 'M';
+  if (max >= 1000) return (n / 1000).toFixed(0) + 'K';
+  return n.toString();
+}
+const counters = document.querySelectorAll('[data-count]');
+const countObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (!e.isIntersecting) return;
+    const el = e.target;
+    const target = parseInt(el.dataset.count);
+    const duration = 1600;
+    const start = performance.now();
+    function step(now) {
+      const p = Math.min((now - start) / duration, 1);
+      const ease = 1 - Math.pow(1 - p, 3);
+      el.textContent = formatNum(Math.round(ease * target), target);
+      if (p < 1) requestAnimationFrame(step);
+      else el.textContent = formatNum(target, target);
+    }
+    requestAnimationFrame(step);
+    countObserver.unobserve(el);
+  });
+}, { threshold: 0.5 });
+counters.forEach(c => countObserver.observe(c));
+
+// ── CARD TILT ON MOUSE ──
+const cardScene = document.querySelector('.card-scene');
+if (cardScene) {
+  document.addEventListener('mousemove', (e) => {
+    const cx = window.innerWidth / 2, cy = window.innerHeight / 2;
+    const dx = (e.clientX - cx) / cx;
+    const dy = (e.clientY - cy) / cy;
+    cardScene.style.transform = `rotateY(${dx * 12}deg) rotateX(${-dy * 6}deg)`;
+  });
+}
+
+// ── SMOOTH CTA EMAIL FOCUS ──
+document.querySelectorAll('a[href="#cta"]').forEach(a => {
+  a.addEventListener('click', (e) => {
+    setTimeout(() => {
+      const inp = document.querySelector('.cta-input');
+      if (inp) inp.focus();
+    }, 600);
+  });
+});
+</script>
+</body>
+</html>
