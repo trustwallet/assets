@@ -1,0 +1,24 @@
+{
+    "name": "Polymarket USD",
+    "type": "POLYGON",
+    "symbol": "pUSD",
+    "decimals": 6,
+    "website": "https://polymarket.com/",
+    "description": "pUSD (Polymarket USD) is the collateral token used for all trading on Polymarket. It’s a standard ERC-20 token on Polygon, backed by USDC.",
+    "explorer": "https://polygonscan.com/token/0xC011a7E12a19f7B1f670d46F03B03f3342E82DFB",
+    "status": "active",
+    "id": "0xC011a7E12a19f7B1f670d46F03B03f3342E82DFB",
+    "links": [
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/polymarket-usd/"
+        },
+        {
+            "name": "x",
+            "url": "https://x.com/Polymarket"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}
