@@ -5,12 +5,13 @@
   "decimals": 18,
   "description": "Oxypay (OXP) is a Web3 payment token built on Polygon.",
   "website": "https://oxypay.io",
-  "explorer": "https://polygonscan.com/token/0x7719F4E4e639cB4EA96596e653005Afd9C022310",
+  "explorer": "https://etherscan.io/token/0x7719F4E4e639cB4EA96596e653005Afd9C022310",
   "status": "active",
   "id": "0x7719F4E4e639cB4EA96596e653005Afd9C022310",
   "links": [
     {"name": "twitter", "url": "https://x.com/traiding20"},
-    {"name": "website", "url": "https://oxypay.io"}
+    {"name": "coingecko", "url": "https://www.coingecko.com"},
+    {"name": "discord", "url": "https://oxypay.io"}
   ],
-  "tags": ["polygon", "payments", "defi"]
+  "tags": ["payments", "defi"]
 }
