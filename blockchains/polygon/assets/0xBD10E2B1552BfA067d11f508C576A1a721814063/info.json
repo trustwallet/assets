@@ -1,7 +1,7 @@
 {
   "name": "MyRxWallet",
   "website": "https://myrxwallet.io",
-  "description": "MyRxWallet is a healthcare AI and DeFi platform. MyRxW is the utility token powering the MyRxWallet ecosystem on Polygon, enabling healthcare payments, rewards, and decentralized exchange.",
+  "description": "MyRxWallet is a healthcare AI and DeFi platform on Polygon. MyRxW is the utility token powering payments, rewards, and decentralized exchange within the MyRxWallet ecosystem.",
   "explorer": "https://polygonscan.com/token/0xBD10E2B1552BfA067d11f508C576A1a721814063",
   "research": "",
   "type": "ERC20",
@@ -17,10 +17,13 @@
     {
       "name": "github",
       "url": "https://github.com/MyRxWallet"
+    },
+    {
+      "name": "polygonscan",
+      "url": "https://polygonscan.com/token/0xBD10E2B1552BfA067d11f508C576A1a721814063"
     }
   ],
   "tags": [
-    "defi",
-    "healthcare"
+    "defi"
   ]
 }
