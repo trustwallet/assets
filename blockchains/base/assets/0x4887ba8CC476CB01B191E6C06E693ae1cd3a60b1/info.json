@@ -9,20 +9,21 @@
     "status": "active",
     "id": "0x4887ba8CC476CB01B191E6C06E693ae1cd3a60b1",
     "tags": [
-        "defi"
+        "defi",
+        "community"
     ],
     "links": [
         {
             "name": "twitter",
-            "url": "https://x.com/RicoTokenBR"
-        },
-        {
-            "name": "github",
-            "url": "https://github.com/ricardocbernardi-ship-it"
+            "url": "https://twitter.com/RicoTokenBR"
         },
         {
             "name": "explorer",
             "url": "https://basescan.org/token/0x4887ba8CC476CB01B191E6C06E693ae1cd3a60b1"
+        },
+        {
+            "name": "dex",
+            "url": "https://dexscreener.com/base/0x4887ba8CC476CB01B191E6C06E693ae1cd3a60b1"
         }
     ]
 }
