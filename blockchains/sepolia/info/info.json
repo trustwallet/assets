@@ -8,10 +8,21 @@
   "decimals": 18,
   "status": "active",
   "id": "0x95A87AD38d191f4DCE5698791c7E38CC323d8B93",
-
-  "links": {
-    "website": "https://biggocoin.com",
-    "twitter": "https://x.com/coinbiggo",
-    "telegram": "https://t.me/biggoofficial",
-    "github": "https://github.com/COINBIGGO"
-  }
+  "links": [
+    {
+      "name": "x",
+      "url": "https://x.com/coinbiggo"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/biggoofficial"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/COINBIGGO"
+    }
+  ],
+  "tags": [
+    "defi"
+  ]
+}
