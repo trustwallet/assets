@@ -4,11 +4,19 @@
   "type": "ERC20",
   "status": "active",
   "id": "0x51Fb9B6b0e008eFC867492D2930D959879A5bCfB",
-  "description": "Token oficial del ecosistema Camino al Mictlán, un sistema de rituales y gestión de activos en la red Polygon.",
+  "description": "Soulgeist (SG) is the official utility token for the Camino al Mictlán ecosystem, supporting digital ritual mechanics and asset management on the Polygon blockchain.",
   "explorer": "https://etherscan.io/token/0x51Fb9B6b0e008eFC867492D2930D959879A5bCfB",
   "website": "https://caminoamictlan.com",
-  "telegram": "https://t.me/SinDiosnigobierno",
-  "twitter": "https://twitter.com/MartinAlmarazm",
+  "links": [
+    {
+      "name": "telegram",
+      "url": "https://t.me/SinDiosnigobierno"
+    },
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/MartinAlmarazm"
+    }
+  ],
   "tags": [
     "defi"
   ]
