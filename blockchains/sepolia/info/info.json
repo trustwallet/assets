@@ -1,7 +1,7 @@
 {
   "name": "BIGGO COIN",
   "website": "https://biggocoin.com",
-  "description": "Community-driven BEP20 token powering the BIGGO Ecosystem.",
+  "description": "BIGGO COIN is a community-driven BEP20 token powering the BIGGO Ecosystem with transparent governance, digital payments, and decentralized utilities.",
   "explorer": "https://bscscan.com/token/0x95A87AD38d191f4DCE5698791c7E38CC323d8B93",
   "type": "BEP20",
   "symbol": "BIGGO",
@@ -9,6 +9,10 @@
   "status": "active",
   "id": "0x95A87AD38d191f4DCE5698791c7E38CC323d8B93",
   "links": [
+    {
+      "name": "github",
+      "url": "https://github.com/COINBIGGO"
+    },
     {
       "name": "x",
       "url": "https://x.com/coinbiggo"
@@ -18,8 +22,12 @@
       "url": "https://t.me/biggoofficial"
     },
     {
-      "name": "github",
-      "url": "https://github.com/COINBIGGO"
+      "name": "youtube",
+      "url": "https://youtube.com/@biggocoinchannel"
+    },
+    {
+      "name": "docs",
+      "url": "https://biggocoin.com"
     }
   ],
   "tags": [
