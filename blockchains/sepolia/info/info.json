@@ -1,11 +1,22 @@
 {
-    "name": "Sepolia Testnet",
-    "website": "https://sepolia.dev",
-    "description": "Sepolia was designed to simulate harsh network conditions, and has shorter block times, which enable faster transaction confirmation times and feedback for developers.",
-    "explorer": "https://sepolia.etherscan.io",
-    "symbol": "ETH",
-    "rpc_url": "https://rpc.sepolia.org",
-    "type": "coin",
-    "decimals": 18,
-    "status": "active"
+  "name": "BIGGO COIN",
+  "website": "https://biggocoin.com",
+  "description": "Community-driven BEP20 token powering the BIGGO Ecosystem.",
+  "explorer": "https://bscscan.com/token/0x95A87AD38d191f4DCE5698791c7E38CC323d8B93",
+  "type": "BEP20",
+  "symbol": "BIGGO",
+  "decimals": 18,
+  "status": "active",
+  "id": "0x95A87AD38d191f4DCE5698791c7E38CC323d8B93",
+
+  "links": {
+    "website": "https://biggocoin.com",
+    "twitter": "https://x.com/coinbiggo",
+    "telegram": "https://t.me/biggoofficial",
+    "github": "https://github.com/COINBIGGO"
+  },
+
+  "tags": [
+    "utility-token"
+  ]
 }
