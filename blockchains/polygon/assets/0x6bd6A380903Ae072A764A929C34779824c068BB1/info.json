@@ -3,7 +3,27 @@
   "type": "ERC20",
   "symbol": "MD1usd",
   "decimals": 6,
-  "website": "https://md1usd.com",
   "description": "USD-pegged stablecoin collateralized 1:1 by USDC on Polygon",
-  "explorer": "https://polygonscan.com/token/0x6bd6A380903Ae072A764A929C34779824c068BB1"
+  "website": "https://md1usd.com",
+  "explorer": "https://etherscan.io/token/0x6bd6A380903Ae072A764A929C34779824c068BB1",
+  "status": "active",
+  "id": "md1usd",
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://x.com/MDm111000000"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/dido599999"
+    },
+    {
+      "name": "youtube",
+      "url": "https://www.youtube.com/@MD-m1"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/Mdm111000000"
+    }
+  ]
 }
