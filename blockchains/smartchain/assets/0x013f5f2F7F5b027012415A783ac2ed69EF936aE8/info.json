@@ -1,7 +1,7 @@
 {
   "name": "Quazenthor",
   "website": "https://quazenthor.com",
-  "description": "Educational non-financial BEP-20 reference token on BNB Smart Chain. Purely technical project for learning BEP-20 standards.",
+  "description": "Educational non-financial BEP-20 reference token on BNB Smart Chain for learning BEP-20 standard.",
   "explorer": "https://bscscan.com/token/0x013f5f2F7F5b027012415A783ac2ed69EF936aE8",
   "type": "BEP20",
   "symbol": "QWBQ",
@@ -9,12 +9,11 @@
   "status": "active",
   "id": "0x013f5f2F7F5b027012415A783ac2ed69EF936aE8",
   "links": [
-    { "name": "website", "url": "https://quazenthor.com" },
-    { "name": "twitter", "url": "https://x.com/quazenthorQWBQ" },
-    { "name": "telegram", "url": "https://t.me/Quazenthor" },
-    { "name": "medium", "url": "https://medium.com/@quazenthor" },
-    { "name": "github", "url": "https://github.com/toorandokhtafshari/QWBQ-Token-" },
-    { "name": "facebook", "url": "https://www.facebook.com/quazenthor" }
+    {"name": "website", "url": "https://quazenthor.com"},
+    {"name": "twitter", "url": "https://x.com/quazenthorQWBQ"},
+    {"name": "telegram", "url": "https://t.me/Quazenthor"},
+    {"name": "github", "url": "https://github.com/toorandokhtafshari/QWBQ-Token-"},
+    {"name": "facebook", "url": "https://www.facebook.com/quazenthor"}
   ],
   "tags": ["defi"]
 }
