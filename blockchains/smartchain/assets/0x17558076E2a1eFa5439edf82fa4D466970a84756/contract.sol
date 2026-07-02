@@ -1,10 +1,6 @@
 // SPDX-License-Identifier: GNU LGPLv3
 pragma solidity 0.7.6;
 
-/**
- * @dev Wrappers over Solidity's arithmetic operations with added overflow
- * checks.
- */
 library SafeMath {
     function add(uint256 a, uint256 b) internal pure returns (uint256) {
         uint256 c = a + b;
@@ -120,12 +116,27 @@ contract ERC20 is Context, IERC20, Ownable {
     mapping(address => mapping(address => uint256)) private _allowances;
 
     uint256 private _totalSupply;
+    string private _name;
+    string private _symbol;
+    uint8 private _decimals;
 
-    string public constant name = "BNB";
-    string public constant symbol = "BNB";
-    uint8 public constant decimals = 18;
+    constructor(string memory name_, string memory symbol_) public {
+        _name = name_;
+        _symbol = symbol_;
+        _decimals = 18;
+    }
 
-    constructor() public {}
+    function name() public view returns (string memory) {
+        return _name;
+    }
+
+    function symbol() public view returns (string memory) {
+        return _symbol;
+    }
+
+    function decimals() public view returns (uint8) {
+        return _decimals;
+    }
 
     function totalSupply() public view override returns (uint256) {
         return _totalSupply;
@@ -221,6 +232,8 @@ contract BEP20Burnable is ERC20 {
 }
 
 contract BEP20 is BEP20Burnable {
+    constructor(string memory name_, string memory symbol_) public ERC20(name_, symbol_) {}
+
     function mint(address to, uint256 amount) public onlyOwner {
         _mint(to, amount);
     }
