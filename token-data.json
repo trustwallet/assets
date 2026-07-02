@@ -1,0 +1,58 @@
+{
+  "last_indexed_slot": 430196425,
+  "interface": "FungibleToken",
+  "id": "4LwmFScV2ZPEjx3VqssXGrxVeMqH1jKVS3wxCmtBcYdi",
+  "content": {
+    "$schema": "https://schema.metaplex.com/nft1.0.json",
+    "json_uri": "https://ipfs.io/ipfs/QmZ2aBEmXH3LBtnWcvwyJoYaMX3Nidysd9TzYJcN4QcBnu",
+    "files": [
+      {
+        "uri": "https://ipfs.io/ipfs/Qmd9RCjBa5T5cfR1hSaLJmWV2Sf7T8hDx6cS1DR7NGJrys",
+        "cdn_uri": "https://cdn.helius-rpc.com/cdn-cgi/image//https://ipfs.io/ipfs/Qmd9RCjBa5T5cfR1hSaLJmWV2Sf7T8hDx6cS1DR7NGJrys",
+        "mime": "image/png"
+      }
+    ],
+    "metadata": {
+      "description": "USDT is a stablecoin designed to maintain a 1:1 value with the US dollar. Issued by Ticrypto, it is backed by reserves and widely used for trading, payments, and transferring value across blockchain networks on Solana.",
+      "name": "Tether",
+      "symbol": "USDT",
+      "token_standard": "Fungible"
+    },
+    "links": {
+      "image": "https://ipfs.io/ipfs/Qmd9RCjBa5T5cfR1hSaLJmWV2Sf7T8hDx6cS1DR7NGJrys"
+    }
+  },
+  "authorities": [
+    {
+      "address": "9w9BuD6Utgqdroa5Wcf8WFfFEKiUCtoev1FVAx78fHhy",
+      "scopes": [
+        "full"
+      ]
+    }
+  ],
+  "compression": {
+    "eligible": false,
+    "compressed": false,
+    "seq": 0,
+    "leaf_id": 0
+  },
+  "royalty": {
+    "royalty_model": "creators",
+    "percent": 0,
+    "basis_points": 0,
+    "primary_sale_happened": false,
+    "locked": false
+  },
+  "ownership": {
+    "frozen": false,
+    "delegated": false,
+    "ownership_model": "token"
+  },
+  "mutable": false,
+  "burnt": false,
+  "token_info": {
+    "supply": 99999999999992880,
+    "decimals": 6,
+    "token_program": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+  }
+}
