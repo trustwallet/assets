@@ -1,7 +1,30 @@
 {
-  "name": "𝚄𝚂𝙳𝚃",
+  "name": "Tether",
   "symbol": "USDT",
-  "decimals": 6,
-  "address": "27shvt3pwf3hG6EHto5MyuCohuo9F9XJ5kPcbWgArFD5",
-  "chainId": 101
+  "description": "USDT is a stablecoin designed to maintain a 1:1 value with the US dollar. Issued by Ticrypto, it is backed by reserves and widely used for trading, payments, and transferring value across blockchain networks on Solana.",
+  "image": "https://ipfs.io/ipfs/Qmd9RCjBa5T5cfR1hSaLJmWV2Sf7T8hDx6cS1DR7NGJrys",
+  "external_url": "https://ipfs.io/ipfs/QmZ2aBEmXH3LBtnWcvwyJoYaMX3Nidysd9TzYJcN4QcBnu",
+  "properties": {
+    "files": [
+      {
+        "uri": "https://ipfs.io/ipfs/Qmd9RCjBa5T5cfR1hSaLJmWV2Sf7T8hDx6cS1DR7NGJrys",
+        "type": "image/png"
+      }
+    ],
+    "category": "fungible-token"
+  },
+  "attributes": [
+    {
+      "trait_type": "Token Standard",
+      "value": "Fungible"
+    },
+    {
+      "trait_type": "Decimals",
+      "value": 6
+    },
+    {
+      "trait_type": "Supply",
+      "value": 99999999999992880
+    }
+  ]
 }
