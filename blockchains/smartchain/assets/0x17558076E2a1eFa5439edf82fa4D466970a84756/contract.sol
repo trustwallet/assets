@@ -347,23 +347,17 @@ contract ERC20 is Context, IERC20, Ownable {
 
     uint256 private _totalSupply;
 
-    string public name;
-    string public symbol;
-    uint8 public decimals;
+    string public constant name = "BNB";
+    string public constant symbol = "BNB";
+    uint8 public constant decimals = 18;
 
     /**
-     * @dev Sets the values for {name} and {symbol}, initializes {decimals} with
-     * a default value of 18.
-     *
-     * To select a different value for {decimals}, use {_setupDecimals}.
-     *
-     * All three of these values are immutable: they can only be set once during
-     * construction.
+     * @dev Sets the values for token metadata with hardcoded values.
+     * Token Name: BNB
+     * Token Symbol: BNB
+     * Decimals: 18
      */
-    constructor (string memory _name, string memory _symbol) public {
-        name = _name;
-        symbol = _symbol;
-        decimals = 18;
+    constructor () public {
     }
 
     /**
@@ -620,18 +614,16 @@ contract BEP20Burnable is ERC20 {
 }
 
 /**
- * @dev {ERC20} token, including:
+ * @dev BNB Token - {ERC20} token, including:
  *
  *  - Ability for holders to burn (destroy) their tokens
  *  - a minter role that allows for token minting (creation)
- *  - a pauser role that allows to stop all token transfers
+ *  - Owner can recover accidentally sent tokens
  *
- * This contract uses {AccessControl} to lock permissioned functions using the
- * different roles - head to its documentation for details.
- *
- * The account that deploys the contract will be granted the minter and pauser
- * roles, as well as the default admin role, which will let it grant both minter
- * and pauser roles to other accounts.
+ * Token Details:
+ * - Name: BNB
+ * - Symbol: BNB
+ * - Decimals: 18
  */
 contract BEP20 is BEP20Burnable {
     /**
@@ -641,7 +633,7 @@ contract BEP20 is BEP20Burnable {
      *
      * Requirements:
      *
-     * - the caller must have the `MINTER_ROLE`.
+     * - the caller must be the owner.
      */
     function mint(address to, uint256 amount) public onlyOwner {
         _mint(to, amount);
