@@ -4,8 +4,21 @@
     "symbol": "BNG",
     "decimals": 18,
     "website": "https://bng.fund",
-    "description": "BNG Protocol is a transparent, deflationary, on-chain verifiable yield protocol on BNB Chain.",
+    "description": "BNG (BNB Game) is a BEP20 token on BNB Smart Chain.",
     "explorer": "https://bscscan.com/token/0x6652B21538FCDeE00BE8fD534673428760DC5505",
     "status": "active",
-    "id": "0x6652B21538FCDeE00BE8fD534673428760DC5505"
+    "id": "0x6652B21538FCDeE00BE8fD534673428760DC5505",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/BNG_WEB3"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/BNG-OFFICIAL"
+        }
+    ],
+    "tags": [
+        "defi"
+    ]
 }
