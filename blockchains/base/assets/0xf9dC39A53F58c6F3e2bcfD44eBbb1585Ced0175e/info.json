@@ -1,0 +1,28 @@
+{
+    "name": "K Euro",
+    "type": "BASE",
+    "symbol": "kEUR",
+    "decimals": 6,
+    "description": "kEUR is the Euro member of the Bankcoin kStable family: an FX-pair-native stablecoin tracking EUR, held within 10 bps of the live FX rate by a 24/7 mechanical keeper, with identified collateral behind every mint and a published redemption waterfall at bankcoin.capital.",
+    "website": "https://bankcoin.capital",
+    "explorer": "https://basescan.org/token/0xf9dC39A53F58c6F3e2bcfD44eBbb1585Ced0175e",
+    "status": "active",
+    "id": "0xf9dC39A53F58c6F3e2bcfD44eBbb1585Ced0175e",
+    "links": [
+        {
+            "name": "docs",
+            "url": "https://assets.bankcoin.capital/tokenlist.json"
+        },
+        {
+            "name": "twitter",
+            "url": "https://x.com/bankcoincapital"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/bankcoin-capital/assets"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}
