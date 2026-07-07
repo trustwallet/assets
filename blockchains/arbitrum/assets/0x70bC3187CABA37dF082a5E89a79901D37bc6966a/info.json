@@ -5,7 +5,12 @@
   "decimals": 18,
   "description": "DUCAL Space conservation DAO token on Arbitrum One",
   "website": "https://ducalspace.com",
-  "explorer": "https://arbiscan.io/token/0x70bC3187CABA37dF082a5E89a79901D37bc6966a",
+  "explorer": "https://etherscan.io/token/0x70bC3187CABA37dF082a5E89a79901D37bc6966a",
   "status": "active",
-  "id": "0x70bC3187CABA37dF082a5E89a79901D37bc6966a"
+  "id": "0x70bC3187CABA37dF082a5E89a79901D37bc6966a",
+  "links": [
+    { "name": "twitter", "url": "https://x.com/ducalspace" },
+    { "name": "linkedin", "url": "https://www.linkedin.com/company/99838475" }
+  ],
+  "tags": ["conservation", "environment", "dao"]
 }
