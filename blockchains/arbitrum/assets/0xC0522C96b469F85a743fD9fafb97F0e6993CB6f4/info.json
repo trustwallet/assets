@@ -1,0 +1,20 @@
+{
+    "name": "K Norwegian Krone",
+    "type": "ARBITRUM",
+    "symbol": "kNOK",
+    "decimals": 6,
+    "description": "kNOK is the Norwegian Krone member of the Bankcoin kStable family: an FX-pair-native stablecoin tracking NOK, held within 10 bps of the live FX rate by a 24/7 mechanical keeper, with identified collateral behind every mint and a published redemption waterfall at bankcoin.capital.",
+    "website": "https://bankcoin.capital",
+    "explorer": "https://arbiscan.io/token/0xC0522C96b469F85a743fD9fafb97F0e6993CB6f4",
+    "status": "active",
+    "id": "0xC0522C96b469F85a743fD9fafb97F0e6993CB6f4",
+    "links": [
+        {
+            "name": "docs",
+            "url": "https://assets.bankcoin.capital/tokenlist.json"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}

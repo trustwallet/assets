@@ -1,0 +1,20 @@
+{
+    "name": "K Egyptian Pound",
+    "type": "ARBITRUM",
+    "symbol": "kEGP",
+    "decimals": 6,
+    "description": "kEGP is the Egyptian Pound member of the Bankcoin kStable family: an FX-pair-native stablecoin tracking EGP, held within 10 bps of the live FX rate by a 24/7 mechanical keeper, with identified collateral behind every mint and a published redemption waterfall at bankcoin.capital.",
+    "website": "https://bankcoin.capital",
+    "explorer": "https://arbiscan.io/token/0x5fcFe0A8FC01526175e1e2047750F64cEbe36E7a",
+    "status": "active",
+    "id": "0x5fcFe0A8FC01526175e1e2047750F64cEbe36E7a",
+    "links": [
+        {
+            "name": "docs",
+            "url": "https://assets.bankcoin.capital/tokenlist.json"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "name": "K Vietnamese Dong",
+    "type": "BASE",
+    "symbol": "kVND",
+    "decimals": 6,
+    "description": "kVND is the Vietnamese Dong member of the Bankcoin kStable family: an FX-pair-native stablecoin tracking VND, held within 10 bps of the live FX rate by a 24/7 mechanical keeper, with identified collateral behind every mint and a published redemption waterfall at bankcoin.capital.",
+    "website": "https://bankcoin.capital",
+    "explorer": "https://basescan.org/token/0x451f8C9FD15e2f81CC0e514cC6a5724Dd3537dAc",
+    "status": "active",
+    "id": "0x451f8C9FD15e2f81CC0e514cC6a5724Dd3537dAc",
+    "links": [
+        {
+            "name": "docs",
+            "url": "https://assets.bankcoin.capital/tokenlist.json"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "name": "K Naira",
+    "type": "BASE",
+    "symbol": "kNGN",
+    "decimals": 6,
+    "description": "kNGN is the Nigerian Naira member of the Bankcoin kStable family: an FX-pair-native stablecoin tracking NGN, held within 10 bps of the live FX rate by a 24/7 mechanical keeper, with identified collateral behind every mint and a published redemption waterfall at bankcoin.capital.",
+    "website": "https://bankcoin.capital",
+    "explorer": "https://basescan.org/token/0xd0a0042139d1Febe85b2FfC4f7049E059a6d949F",
+    "status": "active",
+    "id": "0xd0a0042139d1Febe85b2FfC4f7049E059a6d949F",
+    "links": [
+        {
+            "name": "docs",
+            "url": "https://assets.bankcoin.capital/tokenlist.json"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}

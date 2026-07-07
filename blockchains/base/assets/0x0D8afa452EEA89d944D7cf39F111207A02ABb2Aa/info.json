@@ -1,0 +1,20 @@
+{
+    "name": "K Won",
+    "type": "BASE",
+    "symbol": "kKRW",
+    "decimals": 6,
+    "description": "kKRW is the Korean Won member of the Bankcoin kStable family: an FX-pair-native stablecoin tracking KRW, held within 10 bps of the live FX rate by a 24/7 mechanical keeper, with identified collateral behind every mint and a published redemption waterfall at bankcoin.capital.",
+    "website": "https://bankcoin.capital",
+    "explorer": "https://basescan.org/token/0x0D8afa452EEA89d944D7cf39F111207A02ABb2Aa",
+    "status": "active",
+    "id": "0x0D8afa452EEA89d944D7cf39F111207A02ABb2Aa",
+    "links": [
+        {
+            "name": "docs",
+            "url": "https://assets.bankcoin.capital/tokenlist.json"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}

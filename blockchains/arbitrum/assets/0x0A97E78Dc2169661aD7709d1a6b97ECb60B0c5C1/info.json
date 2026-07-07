@@ -1,0 +1,20 @@
+{
+    "name": "K Dirham",
+    "type": "ARBITRUM",
+    "symbol": "kAED",
+    "decimals": 6,
+    "description": "kAED is the UAE Dirham member of the Bankcoin kStable family: an FX-pair-native stablecoin tracking AED, held within 10 bps of the live FX rate by a 24/7 mechanical keeper, with identified collateral behind every mint and a published redemption waterfall at bankcoin.capital.",
+    "website": "https://bankcoin.capital",
+    "explorer": "https://arbiscan.io/token/0x0A97E78Dc2169661aD7709d1a6b97ECb60B0c5C1",
+    "status": "active",
+    "id": "0x0A97E78Dc2169661aD7709d1a6b97ECb60B0c5C1",
+    "links": [
+        {
+            "name": "docs",
+            "url": "https://assets.bankcoin.capital/tokenlist.json"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}

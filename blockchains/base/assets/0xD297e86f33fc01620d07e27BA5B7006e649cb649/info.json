@@ -1,0 +1,20 @@
+{
+    "name": "K Shekel",
+    "type": "BASE",
+    "symbol": "kILS",
+    "decimals": 6,
+    "description": "kILS is the Israeli Shekel member of the Bankcoin kStable family: an FX-pair-native stablecoin tracking ILS, held within 10 bps of the live FX rate by a 24/7 mechanical keeper, with identified collateral behind every mint and a published redemption waterfall at bankcoin.capital.",
+    "website": "https://bankcoin.capital",
+    "explorer": "https://basescan.org/token/0xD297e86f33fc01620d07e27BA5B7006e649cb649",
+    "status": "active",
+    "id": "0xD297e86f33fc01620d07e27BA5B7006e649cb649",
+    "links": [
+        {
+            "name": "docs",
+            "url": "https://assets.bankcoin.capital/tokenlist.json"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}

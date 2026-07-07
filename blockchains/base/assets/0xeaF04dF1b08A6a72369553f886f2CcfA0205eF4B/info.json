@@ -1,0 +1,20 @@
+{
+    "name": "K Australian Dollar",
+    "type": "BASE",
+    "symbol": "kAUD",
+    "decimals": 6,
+    "description": "kAUD is the Australian Dollar member of the Bankcoin kStable family: an FX-pair-native stablecoin tracking AUD, held within 10 bps of the live FX rate by a 24/7 mechanical keeper, with identified collateral behind every mint and a published redemption waterfall at bankcoin.capital.",
+    "website": "https://bankcoin.capital",
+    "explorer": "https://basescan.org/token/0xeaF04dF1b08A6a72369553f886f2CcfA0205eF4B",
+    "status": "active",
+    "id": "0xeaF04dF1b08A6a72369553f886f2CcfA0205eF4B",
+    "links": [
+        {
+            "name": "docs",
+            "url": "https://assets.bankcoin.capital/tokenlist.json"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "name": "K Yen",
+    "type": "BASE",
+    "symbol": "kJPY",
+    "decimals": 6,
+    "description": "kJPY is the Japanese Yen member of the Bankcoin kStable family: an FX-pair-native stablecoin tracking JPY, held within 10 bps of the live FX rate by a 24/7 mechanical keeper, with identified collateral behind every mint and a published redemption waterfall at bankcoin.capital.",
+    "website": "https://bankcoin.capital",
+    "explorer": "https://basescan.org/token/0xA65CC044383BE92522C9Ce0287838ADd3c999cDb",
+    "status": "active",
+    "id": "0xA65CC044383BE92522C9Ce0287838ADd3c999cDb",
+    "links": [
+        {
+            "name": "docs",
+            "url": "https://assets.bankcoin.capital/tokenlist.json"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}

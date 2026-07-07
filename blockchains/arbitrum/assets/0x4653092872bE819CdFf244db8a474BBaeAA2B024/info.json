@@ -1,0 +1,20 @@
+{
+    "name": "K Dollar",
+    "type": "ARBITRUM",
+    "symbol": "kUSD",
+    "decimals": 6,
+    "description": "kUSD is the US Dollar member of the Bankcoin kStable family: an FX-pair-native stablecoin tracking USD, held within 10 bps of the live FX rate by a 24/7 mechanical keeper, with identified collateral behind every mint and a published redemption waterfall at bankcoin.capital.",
+    "website": "https://bankcoin.capital",
+    "explorer": "https://arbiscan.io/token/0x4653092872bE819CdFf244db8a474BBaeAA2B024",
+    "status": "active",
+    "id": "0x4653092872bE819CdFf244db8a474BBaeAA2B024",
+    "links": [
+        {
+            "name": "docs",
+            "url": "https://assets.bankcoin.capital/tokenlist.json"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "name": "K Kenyan Shilling",
+    "type": "BASE",
+    "symbol": "kKES",
+    "decimals": 6,
+    "description": "kKES is the Kenyan Shilling member of the Bankcoin kStable family: an FX-pair-native stablecoin tracking KES, held within 10 bps of the live FX rate by a 24/7 mechanical keeper, with identified collateral behind every mint and a published redemption waterfall at bankcoin.capital.",
+    "website": "https://bankcoin.capital",
+    "explorer": "https://basescan.org/token/0xee2aA52C8485564CFcdba83CA0EaA9757021d781",
+    "status": "active",
+    "id": "0xee2aA52C8485564CFcdba83CA0EaA9757021d781",
+    "links": [
+        {
+            "name": "docs",
+            "url": "https://assets.bankcoin.capital/tokenlist.json"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "name": "K Pound",
+    "type": "BASE",
+    "symbol": "kGBP",
+    "decimals": 6,
+    "description": "kGBP is the British Pound member of the Bankcoin kStable family: an FX-pair-native stablecoin tracking GBP, held within 10 bps of the live FX rate by a 24/7 mechanical keeper, with identified collateral behind every mint and a published redemption waterfall at bankcoin.capital.",
+    "website": "https://bankcoin.capital",
+    "explorer": "https://basescan.org/token/0x372117419A8c0F59A79d7fFd8F4A5C6a2b347EDa",
+    "status": "active",
+    "id": "0x372117419A8c0F59A79d7fFd8F4A5C6a2b347EDa",
+    "links": [
+        {
+            "name": "docs",
+            "url": "https://assets.bankcoin.capital/tokenlist.json"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}

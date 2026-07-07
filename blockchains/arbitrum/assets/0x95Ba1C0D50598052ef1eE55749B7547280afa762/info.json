@@ -1,0 +1,20 @@
+{
+    "name": "K Hong Kong Dollar",
+    "type": "ARBITRUM",
+    "symbol": "kHKD",
+    "decimals": 6,
+    "description": "kHKD is the Hong Kong Dollar member of the Bankcoin kStable family: an FX-pair-native stablecoin tracking HKD, held within 10 bps of the live FX rate by a 24/7 mechanical keeper, with identified collateral behind every mint and a published redemption waterfall at bankcoin.capital.",
+    "website": "https://bankcoin.capital",
+    "explorer": "https://arbiscan.io/token/0x95Ba1C0D50598052ef1eE55749B7547280afa762",
+    "status": "active",
+    "id": "0x95Ba1C0D50598052ef1eE55749B7547280afa762",
+    "links": [
+        {
+            "name": "docs",
+            "url": "https://assets.bankcoin.capital/tokenlist.json"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}

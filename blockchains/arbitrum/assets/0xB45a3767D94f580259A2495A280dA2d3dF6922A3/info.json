@@ -1,0 +1,20 @@
+{
+    "name": "K Lira",
+    "type": "ARBITRUM",
+    "symbol": "kTRY",
+    "decimals": 6,
+    "description": "kTRY is the Turkish Lira member of the Bankcoin kStable family: an FX-pair-native stablecoin tracking TRY, held within 10 bps of the live FX rate by a 24/7 mechanical keeper, with identified collateral behind every mint and a published redemption waterfall at bankcoin.capital.",
+    "website": "https://bankcoin.capital",
+    "explorer": "https://arbiscan.io/token/0xB45a3767D94f580259A2495A280dA2d3dF6922A3",
+    "status": "active",
+    "id": "0xB45a3767D94f580259A2495A280dA2d3dF6922A3",
+    "links": [
+        {
+            "name": "docs",
+            "url": "https://assets.bankcoin.capital/tokenlist.json"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}

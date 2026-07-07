@@ -1,0 +1,20 @@
+{
+    "name": "K Mexican Peso",
+    "type": "BASE",
+    "symbol": "kMXN",
+    "decimals": 6,
+    "description": "kMXN is the Mexican Peso member of the Bankcoin kStable family: an FX-pair-native stablecoin tracking MXN, held within 10 bps of the live FX rate by a 24/7 mechanical keeper, with identified collateral behind every mint and a published redemption waterfall at bankcoin.capital.",
+    "website": "https://bankcoin.capital",
+    "explorer": "https://basescan.org/token/0x0102D2c860aBdC8e2D1DF04CdC42b593D5a198e3",
+    "status": "active",
+    "id": "0x0102D2c860aBdC8e2D1DF04CdC42b593D5a198e3",
+    "links": [
+        {
+            "name": "docs",
+            "url": "https://assets.bankcoin.capital/tokenlist.json"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}

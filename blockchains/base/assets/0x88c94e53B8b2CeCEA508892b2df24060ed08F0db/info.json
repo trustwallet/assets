@@ -1,0 +1,20 @@
+{
+    "name": "K Rand",
+    "type": "BASE",
+    "symbol": "kZAR",
+    "decimals": 6,
+    "description": "kZAR is the South African Rand member of the Bankcoin kStable family: an FX-pair-native stablecoin tracking ZAR, held within 10 bps of the live FX rate by a 24/7 mechanical keeper, with identified collateral behind every mint and a published redemption waterfall at bankcoin.capital.",
+    "website": "https://bankcoin.capital",
+    "explorer": "https://basescan.org/token/0x88c94e53B8b2CeCEA508892b2df24060ed08F0db",
+    "status": "active",
+    "id": "0x88c94e53B8b2CeCEA508892b2df24060ed08F0db",
+    "links": [
+        {
+            "name": "docs",
+            "url": "https://assets.bankcoin.capital/tokenlist.json"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "name": "K Rupee",
+    "type": "BASE",
+    "symbol": "kINR",
+    "decimals": 6,
+    "description": "kINR is the Indian Rupee member of the Bankcoin kStable family: an FX-pair-native stablecoin tracking INR, held within 10 bps of the live FX rate by a 24/7 mechanical keeper, with identified collateral behind every mint and a published redemption waterfall at bankcoin.capital.",
+    "website": "https://bankcoin.capital",
+    "explorer": "https://basescan.org/token/0xac99f373934E44a027b54c1D75222fdc5075448d",
+    "status": "active",
+    "id": "0xac99f373934E44a027b54c1D75222fdc5075448d",
+    "links": [
+        {
+            "name": "docs",
+            "url": "https://assets.bankcoin.capital/tokenlist.json"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}

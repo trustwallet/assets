@@ -1,0 +1,20 @@
+{
+    "name": "K Riyal",
+    "type": "ARBITRUM",
+    "symbol": "kSAR",
+    "decimals": 6,
+    "description": "kSAR is the Saudi Riyal member of the Bankcoin kStable family: an FX-pair-native stablecoin tracking SAR, held within 10 bps of the live FX rate by a 24/7 mechanical keeper, with identified collateral behind every mint and a published redemption waterfall at bankcoin.capital.",
+    "website": "https://bankcoin.capital",
+    "explorer": "https://arbiscan.io/token/0xf9225263624104F8f0C12c88901c6330a5b2ca44",
+    "status": "active",
+    "id": "0xf9225263624104F8f0C12c88901c6330a5b2ca44",
+    "links": [
+        {
+            "name": "docs",
+            "url": "https://assets.bankcoin.capital/tokenlist.json"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}

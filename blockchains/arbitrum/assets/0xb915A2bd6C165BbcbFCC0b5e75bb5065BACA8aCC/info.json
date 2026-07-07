@@ -1,0 +1,20 @@
+{
+    "name": "K Cedi",
+    "type": "ARBITRUM",
+    "symbol": "kGHS",
+    "decimals": 6,
+    "description": "kGHS is the Ghanaian Cedi member of the Bankcoin kStable family: an FX-pair-native stablecoin tracking GHS, held within 10 bps of the live FX rate by a 24/7 mechanical keeper, with identified collateral behind every mint and a published redemption waterfall at bankcoin.capital.",
+    "website": "https://bankcoin.capital",
+    "explorer": "https://arbiscan.io/token/0xb915A2bd6C165BbcbFCC0b5e75bb5065BACA8aCC",
+    "status": "active",
+    "id": "0xb915A2bd6C165BbcbFCC0b5e75bb5065BACA8aCC",
+    "links": [
+        {
+            "name": "docs",
+            "url": "https://assets.bankcoin.capital/tokenlist.json"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}

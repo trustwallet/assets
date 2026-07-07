@@ -1,0 +1,20 @@
+{
+    "name": "K Offshore Yuan",
+    "type": "BASE",
+    "symbol": "kCNH",
+    "decimals": 6,
+    "description": "kCNH is the Offshore Yuan member of the Bankcoin kStable family: an FX-pair-native stablecoin tracking CNH, held within 10 bps of the live FX rate by a 24/7 mechanical keeper, with identified collateral behind every mint and a published redemption waterfall at bankcoin.capital.",
+    "website": "https://bankcoin.capital",
+    "explorer": "https://basescan.org/token/0x68A40D02d1c7F477d1c3D4E60C6A35a737775c0A",
+    "status": "active",
+    "id": "0x68A40D02d1c7F477d1c3D4E60C6A35a737775c0A",
+    "links": [
+        {
+            "name": "docs",
+            "url": "https://assets.bankcoin.capital/tokenlist.json"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "name": "K Canadian Dollar",
+    "type": "ARBITRUM",
+    "symbol": "kCAD",
+    "decimals": 6,
+    "description": "kCAD is the Canadian Dollar member of the Bankcoin kStable family: an FX-pair-native stablecoin tracking CAD, held within 10 bps of the live FX rate by a 24/7 mechanical keeper, with identified collateral behind every mint and a published redemption waterfall at bankcoin.capital.",
+    "website": "https://bankcoin.capital",
+    "explorer": "https://arbiscan.io/token/0x5f7cDa7328E114690a1836Cc39B659604C955D0d",
+    "status": "active",
+    "id": "0x5f7cDa7328E114690a1836Cc39B659604C955D0d",
+    "links": [
+        {
+            "name": "docs",
+            "url": "https://assets.bankcoin.capital/tokenlist.json"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}

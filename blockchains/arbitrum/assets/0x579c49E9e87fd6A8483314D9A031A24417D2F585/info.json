@@ -1,0 +1,20 @@
+{
+    "name": "K Rupiah",
+    "type": "ARBITRUM",
+    "symbol": "kIDR",
+    "decimals": 6,
+    "description": "kIDR is the Indonesian Rupiah member of the Bankcoin kStable family: an FX-pair-native stablecoin tracking IDR, held within 10 bps of the live FX rate by a 24/7 mechanical keeper, with identified collateral behind every mint and a published redemption waterfall at bankcoin.capital.",
+    "website": "https://bankcoin.capital",
+    "explorer": "https://arbiscan.io/token/0x579c49E9e87fd6A8483314D9A031A24417D2F585",
+    "status": "active",
+    "id": "0x579c49E9e87fd6A8483314D9A031A24417D2F585",
+    "links": [
+        {
+            "name": "docs",
+            "url": "https://assets.bankcoin.capital/tokenlist.json"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}

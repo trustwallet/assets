@@ -1,0 +1,20 @@
+{
+    "name": "K Real",
+    "type": "BASE",
+    "symbol": "kBRL",
+    "decimals": 6,
+    "description": "kBRL is the Brazilian Real member of the Bankcoin kStable family: an FX-pair-native stablecoin tracking BRL, held within 10 bps of the live FX rate by a 24/7 mechanical keeper, with identified collateral behind every mint and a published redemption waterfall at bankcoin.capital.",
+    "website": "https://bankcoin.capital",
+    "explorer": "https://basescan.org/token/0xD3F212dbca70cD493F1D3A20407aABAe34bE3117",
+    "status": "active",
+    "id": "0xD3F212dbca70cD493F1D3A20407aABAe34bE3117",
+    "links": [
+        {
+            "name": "docs",
+            "url": "https://assets.bankcoin.capital/tokenlist.json"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}

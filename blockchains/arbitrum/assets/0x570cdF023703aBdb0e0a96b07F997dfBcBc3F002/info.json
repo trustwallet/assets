@@ -1,0 +1,20 @@
+{
+    "name": "K Swedish Krona",
+    "type": "ARBITRUM",
+    "symbol": "kSEK",
+    "decimals": 6,
+    "description": "kSEK is the Swedish Krona member of the Bankcoin kStable family: an FX-pair-native stablecoin tracking SEK, held within 10 bps of the live FX rate by a 24/7 mechanical keeper, with identified collateral behind every mint and a published redemption waterfall at bankcoin.capital.",
+    "website": "https://bankcoin.capital",
+    "explorer": "https://arbiscan.io/token/0x570cdF023703aBdb0e0a96b07F997dfBcBc3F002",
+    "status": "active",
+    "id": "0x570cdF023703aBdb0e0a96b07F997dfBcBc3F002",
+    "links": [
+        {
+            "name": "docs",
+            "url": "https://assets.bankcoin.capital/tokenlist.json"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}

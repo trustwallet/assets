@@ -1,0 +1,20 @@
+{
+    "name": "K Philippine Peso",
+    "type": "BASE",
+    "symbol": "kPHP",
+    "decimals": 6,
+    "description": "kPHP is the Philippine Peso member of the Bankcoin kStable family: an FX-pair-native stablecoin tracking PHP, held within 10 bps of the live FX rate by a 24/7 mechanical keeper, with identified collateral behind every mint and a published redemption waterfall at bankcoin.capital.",
+    "website": "https://bankcoin.capital",
+    "explorer": "https://basescan.org/token/0x94428676620c4444947b4f3E6A4E0D475396F75B",
+    "status": "active",
+    "id": "0x94428676620c4444947b4f3E6A4E0D475396F75B",
+    "links": [
+        {
+            "name": "docs",
+            "url": "https://assets.bankcoin.capital/tokenlist.json"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}

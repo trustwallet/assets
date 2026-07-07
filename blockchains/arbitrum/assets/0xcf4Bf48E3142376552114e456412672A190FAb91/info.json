@@ -1,0 +1,20 @@
+{
+    "name": "K New Taiwan Dollar",
+    "type": "ARBITRUM",
+    "symbol": "kTWD",
+    "decimals": 6,
+    "description": "kTWD is the Taiwan Dollar member of the Bankcoin kStable family: an FX-pair-native stablecoin tracking TWD, held within 10 bps of the live FX rate by a 24/7 mechanical keeper, with identified collateral behind every mint and a published redemption waterfall at bankcoin.capital.",
+    "website": "https://bankcoin.capital",
+    "explorer": "https://arbiscan.io/token/0xcf4Bf48E3142376552114e456412672A190FAb91",
+    "status": "active",
+    "id": "0xcf4Bf48E3142376552114e456412672A190FAb91",
+    "links": [
+        {
+            "name": "docs",
+            "url": "https://assets.bankcoin.capital/tokenlist.json"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}
