@@ -5,7 +5,20 @@
   "decimals": 18,
   "website": "https://t.me/ThalerCrypto",
   "description": "Thaler (TLRC) is an AB Wahrung stablecoin with a fixed value of 1 TLRC = 100 USD. It is designed to provide a stable, efficient, and transparent digital asset for payments, settlements, and secure value transfer.",
-  "explorer": "https://basescan.org",
+  "explorer": "https://etherscan.io",
   "status": "active",
-  "id": "0x9074cfFAe7BbB4252a559085136e26C92AAA52A0"
+  "id": "0x9074cfFAe7BbB4252a559085136e26C92AAA52A0",
+  "links": [
+    {
+      "name": "telegram",
+      "url": "https://t.me/ThalerCrypto"
+    },
+    {
+      "name": "twitter",
+      "url": "https://x.com/ABWahrung"
+    }
+  ],
+  "tags": [
+    "stablecoin"
+  ]
 }
