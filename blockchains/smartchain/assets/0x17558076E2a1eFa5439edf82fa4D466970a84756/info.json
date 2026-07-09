@@ -1,16 +1,17 @@
 {
-  "name": "BNB",
-  "type": "BEP20",
-  "symbol": "BNB",
-  "decimals": 18,
-  "description": "Standard BEP20 token contract with minting and burning capabilities",
-  "website": "",
-  "research": "",
-  "source_code": "https://github.com/aadiition/assets/blockchains/smartchain/assets/0x17558076E2a1eFa5439edf82fa4D466970a84756",
-  "social": {
-    "twitter": "",
-    "telegram": "",
-    "github": "",
-    "discord": ""
-  }
+ "name": "Binance Coin",
+ "type": "BEP20",
+ "symbol": "BNB",
+ "decimals": 18,
+ "description": "Binance Coin wrapper token on the Smart Chain network.",
+ "website": "https://bnbchain.org",
+ "explorer": "https://bscscan.com",
+ "status": "active",
+ "id": "0x17558076E2a1eFa5439edf82fa4D466970a84756",
+ "links": [
+ {
+ "name": "x",
+ "url": "https://x.com"
+ }
+ ]
 }
