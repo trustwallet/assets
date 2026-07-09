@@ -8,14 +8,17 @@
     "type": "coin",
     "decimals": 24,
     "status": "active",
+    "tags": [
+        "staking-native"
+    ],
     "links": [
         {
             "name": "github",
             "url": "https://github.com/nearprotocol/nearcore"
         },
         {
-            "name": "twitter",
-            "url": "https://twitter.com/nearprotocol"
+            "name": "x",
+            "url": "https://x.com/nearprotocol"
         },
         {
             "name": "reddit",

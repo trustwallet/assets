@@ -75,7 +75,7 @@ func (s *Service) FixLogo(f *file.AssetFile) error {
 	}
 
 	err = validation.ValidateLogoFileSize(f.Path())
-	if err != nil { // nolint:staticcheck
+	if err != nil { //nolint:staticcheck
 		// TODO: Compress images.
 	}
 
@@ -146,9 +146,12 @@ func (s *Service) FixAssetInfo(f *file.AssetFile) error {
 		expectedTokenType = strings.ToUpper(assetType)
 	}
 
-	if chain.ID != f.Chain().ID || !strings.EqualFold(assetType, expectedTokenType) {
-		assetInfo.Type = &expectedTokenType
-		isModified = true
+	// https://github.com/trustwallet/backend/issues/2561
+	if chain.ID != coin.CRYPTOORG && chain.ID != coin.CRONOS {
+		if chain.ID != f.Chain().ID || !strings.EqualFold(assetType, expectedTokenType) {
+			assetInfo.Type = &expectedTokenType
+			isModified = true
+		}
 	}
 
 	// Fix asset id.

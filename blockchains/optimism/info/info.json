@@ -6,7 +6,12 @@
     "research": "https://github.com/ethereum-optimism/optimism",
     "symbol": "OETH",
     "type": "coin",
+    "coin_type": 614,
     "decimals": 18,
     "status": "active",
-    "links": []
+    "rpc_url": "https://mainnet.optimism.io",
+    "links": [],
+    "tags": [
+        "dapp"
+    ]
 }
