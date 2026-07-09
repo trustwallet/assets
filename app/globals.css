@@ -1,4 +1,34 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-:root{color-scheme:light} body{background:#f7fbf9;color:#10231d}.card{border-radius:1rem;border:1px solid #dce9e4;background:white;box-shadow:0 10px 30px rgba(6,72,56,.06)}
+
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #f8fafc;
+  color: #0f172a;
+  font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+}
+
+::selection {
+  background: rgba(45, 212, 191, 0.35);
+}
+
+.card {
+  border-radius: 1.5rem;
+  border: 1px solid rgba(226, 232, 240, 0.95);
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.08);
+  backdrop-filter: blur(18px);
+}
