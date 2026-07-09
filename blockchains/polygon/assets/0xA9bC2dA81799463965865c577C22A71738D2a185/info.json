@@ -1,1 +1,25 @@
-
+{
+    "name": "Wrapped BRC",
+    "website": "https://birr.foundation",
+    "description": "Wrapped BRC (WBRC) is the Polygon representation of Birr Coin (BRC), the utility token of BRDPoSChain. It is issued 1:1 and used for on-chain liquidity and trading on Polygon.",
+    "explorer": "https://polygonscan.com/token/0xA9bC2dA81799463965865c577C22A71738D2a185",
+    "type": "POLYGON",
+    "symbol": "WBRC",
+    "decimals": 18,
+    "status": "active",
+    "id": "0xA9bC2dA81799463965865c577C22A71738D2a185",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/birrChain"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/Building_Resilience_Community"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/BirrFoundation"
+        }
+    ]
+}
