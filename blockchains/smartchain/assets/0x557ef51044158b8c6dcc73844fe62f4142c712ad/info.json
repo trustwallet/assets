@@ -3,6 +3,31 @@
   "symbol": "METTA",
   "type": "BEP20",
   "decimals": 18,
-  "description": "METAVEST Ecosystem Token",
-  "website": "https://metainfo.xyz"
+  "description": "METAVEST Ecosystem Token powering the METAVEST Web3 ecosystem.",
+  "website": "https://metainfo.xyz",
+  "explorer": "https://bscscan.com/token/0x557ef51044158b8c6dcc73844fe62f4142c712ad",
+  "status": "active",
+  "id": "0x557ef51044158b8c6dcc73844fe62f4142c712ad",
+  "links": [
+    {
+      "name": "website",
+      "url": "https://metainfo.xyz"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/mettatoken"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/mettatoken"
+    },
+    {
+      "name": "twitter",
+      "url": "https://x.com/mettatoken"
+    }
+  ],
+  "tags": [
+    "defi",
+    "utility"
+  ]
 }
