@@ -1,0 +1,74 @@
+{
+  "name": "Synth sETH",
+  "symbol": "sETH",
+  "type": "ERC20",
+  "decimals": 18,
+  "address": "0x25f2aabC1180DddAF5a859Be517dDA6dEC418773",
+  "id": "0x25f2aabC1180DddAF5a859Be517dDA6dEC418773",
+  "status": "active",
+  "logo": "https://photos.pinksale.finance/file/pinksale-logo-upload/1783594240891-d87307b26ea371cdafa96d22de8f934c.png",
+  "logo_ipfs": "https://bafkreiamy6stfz25ez2ggmz3cj6apixuctmbl4cotlqkim4ke5ch5jlu2i.ipfs.inbrowser.link/",
+  "description": "Synth sETH is a next-generation synthetic asset on Ethereum Mainnet, 100% backed by physical gold, silver, copper, luxury automobiles (Ferrari, Porsche, Rolls-Royce), and prime real estate held in Russia and international markets. Pegged at $1,900 USD with an integrated anti-sell mechanism, it bridges traditional wealth with DeFi, offering stability, transparency, and long-term value.",
+  "website": "https://sether.netlify.app/",
+  "explorer": "https://etherscan.io/token/0x25f2aabC1180DddAF5a859Be517dDA6dEC418773",
+  "peg_price_usd": 1900,
+  "total_supply": "1000000000000000",
+  "tags": ["synthetic", "asset-backed", "real-world-assets", "stablecoin", "erc20", "ethereum"],
+  "links": {
+    "x": "https://x.com/SynthsETH",
+    "telegram": "https://t.me/sETH_NEW",
+    "coinmarketcap": "https://dex.coinmarketcap.com/token/ethereum/0x25f2aabC1180DddAF5a859Be517dDA6dEC418773/",
+    "coingecko": "https://www.geckoterminal.com/eth/pools/0xd5e9826551463035af0b3bb6f49db903db13eeb7",
+    "coinranking": "https://coinranking.com/coin/Bw1DySxbu+synthseth-seth",
+    "coinpaprika": "https://coinpaprika.com/coin/seth-synth-seth/",
+    "dextools": "https://www.dextools.io/app/ether/pair-explorer/0xd5e9826551463035af0b3bb6f49db903db13eeb7",
+    "dexscreener": "https://dexscreener.com/ethereum/0x25f2aabc1180dddaf5a859be517dda6dec418773",
+    "etherscan": "https://etherscan.io/token/0x25f2aabC1180DddAF5a859Be517dDA6dEC418773",
+    "blockscout": "https://eth.blockscout.com/token/0x25f2aabC1180DddAF5a859Be517dDA6dEC418773",
+    "routescan": "https://routescan.io/token/0x25f2aabC1180DddAF5a859Be517dDA6dEC418773?chainid=1"
+  },
+  "audit": {
+    "status": "in_progress",
+    "third_party": true,
+    "proof_of_reserves": "coming_soon"
+  },
+  "team": [
+    {
+      "name": "Mr. Alireza",
+      "role": "Founder & Financial Manager",
+      "experience": "15+ years in commodities, luxury assets, real estate"
+    },
+    {
+      "name": "SH.MRD (Shahin)",
+      "role": "Lead Developer",
+      "experience": "Ethereum, Solidity, DeFi",
+      "note": "Developer only – no ownership, financial liability, or asset control"
+    }
+  ],
+  "roadmap": {
+    "phase_1": {
+      "status": "done",
+      "description": "Launch, deployment, contract verification"
+    },
+    "phase_2": {
+      "status": "in_progress",
+      "description": "Audits, transparency, community building",
+      "timeline": "Q3 2026"
+    },
+    "phase_3": {
+      "status": "upcoming",
+      "description": "Liquidity deployment, DEX/CEX listings",
+      "timeline": "Q4 2026"
+    },
+    "phase_4": {
+      "status": "upcoming",
+      "description": "Cross-chain expansion, staking rewards",
+      "timeline": "2027"
+    },
+    "phase_5": {
+      "status": "upcoming",
+      "description": "DAO governance",
+      "timeline": "2028+"
+    }
+  }
+}
