@@ -1,17 +1,23 @@
 {
   "id": "0x557ef51044158b8c6dcc73844fe62f4142c712ad",
-  "name": "METAVEST",
+  "name": "Metavest",
   "symbol": "METTA",
   "type": "BEP20",
   "decimals": 18,
-  "description": "METAVEST Ecosystem Token powering the METAVEST Web3 ecosystem.",
+  "description": "Metavest Ecosystem Token powering the METAVEST Web3 ecosystem.",
   "website": "https://metainfo.xyz",
   "explorer": "https://bscscan.com/token/0x557ef51044158b8c6dcc73844fe62f4142c712ad",
   "status": "active",
-  "links": {
-    "website": "https://metainfo.xyz",
-    "explorer": "https://bscscan.com/token/0x557ef51044158b8c6dcc73844fe62f4142c712ad"
-  },
+  "links": [
+    {
+      "name": "telegram",
+      "url": "https://t.me/metaves"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/mettatoken/assets"
+    }
+  ],
   "tags": [
     "utility"
   ]
