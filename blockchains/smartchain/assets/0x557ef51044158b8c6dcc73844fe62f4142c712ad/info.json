@@ -1,4 +1,5 @@
 {
+  "id": "0x557ef51044158b8c6dcc73844fe62f4142c712ad",
   "name": "METAVEST",
   "symbol": "METTA",
   "type": "BEP20",
@@ -7,27 +8,11 @@
   "website": "https://metainfo.xyz",
   "explorer": "https://bscscan.com/token/0x557ef51044158b8c6dcc73844fe62f4142c712ad",
   "status": "active",
-  "id": "0x557ef51044158b8c6dcc73844fe62f4142c712ad",
-  "links": [
-    {
-      "name": "website",
-      "url": "https://metainfo.xyz"
-    },
-    {
-      "name": "github",
-      "url": "https://github.com/mettatoken"
-    },
-    {
-      "name": "telegram",
-      "url": "https://t.me/mettatoken"
-    },
-    {
-      "name": "twitter",
-      "url": "https://x.com/mettatoken"
-    }
-  ],
+  "links": {
+    "website": "https://metainfo.xyz",
+    "explorer": "https://bscscan.com/token/0x557ef51044158b8c6dcc73844fe62f4142c712ad"
+  },
   "tags": [
-    "defi",
     "utility"
   ]
 }
