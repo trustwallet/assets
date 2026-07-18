@@ -1,21 +1,28 @@
 {
-    "name": "UNITED INFORMATION TECHNOLOGY PROJECT",
-    "symbol": "UITP",
-    "type": "BEP20",
-    "decimals": 2,
-    "description": "UITP is a BEP-20 utility token powering the uitp.us ecosystem - a multilingual online marketplace where deals settle on-chain. UITP is used for payments, settlements, and platform services within the marketplace.",
-    "website": "https://uitp.us",
-    "explorer": "https://bscscan.com/token/0x78D210802912edC415BC8Ba6Af9FB0938021890f",
-    "status": "active",
-    "id": "0x78D210802912edC415BC8Ba6Af9FB0938021890f",
-    "links": [
-        {
-            "name": "telegram",
-            "url": "https://t.me/u_itp"
-        },
-        {
-            "name": "twitter",
-            "url": "https://x.com/UITP_X"
-       }
-    ]
+  "name": "UITP",
+  "type": "BEP20",
+  "symbol": "UITP",
+  "decimals": 2,
+  "description": "UITP is the native token of the UITPX ecosystem, powering a decentralized exchange and a multilingual classifieds marketplace at uitp.us.",
+  "website": "https://uitp.us",
+  "explorer": "https://bscscan.com/token/0x78D210802912edC415BC8Ba6Af9FB0938021890f",
+  "status": "active",
+  "id": "0x78D210802912edC415BC8Ba6Af9FB0938021890f",
+  "tags": [
+    "defi"
+  ],
+  "links": [
+    {
+      "name": "twitter",
+      "url": ""
+    },
+    {
+      "name": "telegram",
+      "url": ""
+    },
+    {
+      "name": "github",
+      "url": ""
+    }
+  ]
 }
