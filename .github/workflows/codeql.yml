@@ -55,7 +55,7 @@ jobs:
         # queries: security-extended,security-and-quality
 
     - name: Build assets binary
-      run: make build
+      run: go build
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2
