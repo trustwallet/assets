@@ -1,12 +1,14 @@
 {
   "name": "DAGrow",
   "website": "https://dagrow.app",
-  "description": "DAGrow is a DeFi protocol on Ethereum with a native on-chain AMM, DAGrow Swap, where DAGR trades against USDT.",
-  "explorer": "https://etherscan.io/token/0xFD06F2eA2A769A7698e3A5eF4a42A41A2cC0d4B9",
-  "type": "ERC20",
+  "id": "0xFD06F2eA2A769A7698e3A5eF4a42A41A2cC0d4B9",
   "symbol": "DAGR",
   "decimals": 18,
+  "description": "DAGrow is a DeFi protocol on Ethereum with a native on-chain AMM, DAGrow Swap, where DAGR trades against USDT.",
+  "explorer": "https://etherscan.io/token/",
+  "type": "ERC20",
   "status": "active",
+  "tags": ["defi"],
   "links": [
     { "name": "twitter", "url": "https://x.com/teamdagrow" },
     { "name": "whitepaper", "url": "https://dagrow.app/whitepaper" }
