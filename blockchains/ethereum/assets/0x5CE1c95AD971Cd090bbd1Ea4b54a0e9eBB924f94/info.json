@@ -2,9 +2,9 @@
   "name": "Tether USD",
   "type": "ERC20",
   "symbol": "USDT",
-  "decimals": 18,
-  "website": "",
-  "description": "-",
+  "decimals": 6,
+  "website": "https://tether.to",
+  "description": "Tether USD (USDT). Decimals set to 6 (common for USDT) — please verify the contract on-chain and update if incorrect.",
   "explorer": "https://etherscan.io/token/0x5CE1c95AD971Cd090bbd1Ea4b54a0e9eBB924f94",
   "status": "active",
   "id": "0x5ce1c95ad971cd090bbd1ea4b54a0e9ebb924f94"
