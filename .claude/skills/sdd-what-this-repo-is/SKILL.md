@@ -66,7 +66,7 @@ Read each file fully (not partial) when present:
 | 1 | `package.json` / `pyproject.toml` / `Cargo.toml` / `go.mod` / `build.gradle*` / `Package.swift` | Stack, version, declared `description`, dependencies that hint at domain (e.g. `aws-sdk` → infra service; a mobile UI SDK → mobile app; `kafka-node` → event-driven service) |
 | 2 | `README.md` (first 2 screens) | Tagline, primary use case, install/run instructions |
 | 3 | `knowledge/constitution.md` (table of contents) | Which knowledge categories are populated, what the repo's structured docs cover |
-| 4 | `knowledge/architecture/index.md` and its top-listed docs | Architecture in one paragraph (read the first doc whose title contains "architecture" / "overview" / "design") |
+| 4 | `knowledge/ci/index.md` and its top-listed docs | Architecture in one paragraph (read the first doc whose title contains "architecture" / "overview" / "design") |
 | 5 | The repo's actual top-level directory layout (`ls -la`) | Code organization: `src/`, `bin/`, `lib/`, `services/`, `apps/`, `packages/` etc. |
 | 6 | Manifest `bin` / `main` / `exports` / build outputs | What artifacts ship |
 | 7 | `.github/workflows/*.yml`, `Dockerfile`, `docker-compose.yml`, `Makefile` (only if present) | How the repo is built/run — informs "produces" line |
