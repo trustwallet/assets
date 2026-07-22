@@ -20,3 +20,4 @@ Here is a quick starter summary for the most common use case.
 - [trading pair maintenance](../ci/workflows/trading-pair-maintenance.md) <!-- rel:strong -->
 - [scripts](../ci/workflows/scripts.md) <!-- rel:related -->
 - [on checks](../ci/workflows/on-checks.md) <!-- rel:weak -->
+- [add token](../guides/add-token.md) <!-- rel:strong -->

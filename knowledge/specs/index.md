@@ -8,6 +8,7 @@
 
 ## Documents
 
-| Document | Source |
-|----------|--------|
-| [quick starter](quick-starter.md) | README.md |
+| Document | Description | Source |
+|----------|-------------|--------|
+| [quick starter](quick-starter.md) | Details of the repository structure and contribution guidelines are listed on the | README.md |
+

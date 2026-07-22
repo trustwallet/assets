@@ -37,3 +37,7 @@ _No patterns recorded yet. Patterns will be captured after implementation sessio
 -->
 
 _No anti-patterns recorded yet. Anti-patterns will be captured after implementation sessions._
+
+## See Also
+- [anti patterns failed approaches](code-conventions/code-style/anti-patterns-failed-approaches.md) <!-- rel:strong -->
+- [patterns validated approaches](patterns/patterns-validated-approaches.md) <!-- rel:strong -->

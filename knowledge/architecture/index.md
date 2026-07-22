@@ -15,4 +15,6 @@
 | [layers.md](layers.md) | Architectural Layers |
 | [project-structure.md](project-structure.md) | Project Structure |
 | [rationale.md](rationale.md) | Design Rationale (the "why") |
+| [repo-overview.md](repo-overview.md) | Assets Repository Overview — domain, directory layout, consumers |
+| [external-data-sources.md](external-data-sources.md) | External Token Data Fetching (ERC20, SPL, TRC10/TRC20, scraping) |
 

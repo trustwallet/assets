@@ -17,3 +17,9 @@
 
 **Key Types**: none
 
+## See Also
+- [config](../libs/config.md) <!-- rel:strong -->
+- [layers](../architecture/layers.md) <!-- rel:weak -->
+- [dependency graph](../architecture/dependency-graph.md) <!-- rel:weak -->
+- [project structure](../architecture/project-structure.md) <!-- rel:weak -->
+- [constitution](../constitution.md) <!-- rel:weak -->

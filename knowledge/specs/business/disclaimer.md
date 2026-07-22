@@ -24,3 +24,4 @@ Additionally, spam-like behavior, including but not limited to mass distribution
 - [scripts](../../ci/workflows/scripts.md) <!-- rel:related -->
 - [on checks](../../ci/workflows/on-checks.md) <!-- rel:related -->
 - [trading pair maintenance](../../ci/workflows/trading-pair-maintenance.md) <!-- rel:weak -->
+- [repo overview](../../architecture/repo-overview.md) <!-- rel:strong -->

@@ -24,3 +24,7 @@ _No anti-patterns recorded yet. Anti-patterns will be captured after implementat
 
 ## See Also
 - [patterns validated approaches](../../patterns/patterns-validated-approaches.md) <!-- rel:strong -->
+- [learnings](../../learnings.md) <!-- rel:strong -->
+- [constitution](../../constitution.md) <!-- rel:weak -->
+- [on checks](../../ci/workflows/on-checks.md) <!-- rel:weak -->
+- [trading pair maintenance](../../ci/workflows/trading-pair-maintenance.md) <!-- rel:weak -->

@@ -4,6 +4,7 @@
 
 ## Documents
 
-| Document | Source |
-|----------|--------|
-| [disclaimer](disclaimer.md) | README.md |
+| Document | Description | Source |
+|----------|-------------|--------|
+| [disclaimer](disclaimer.md) | Trust Wallet team allows anyone to submit new assets to this repository. | README.md |
+

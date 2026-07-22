@@ -35,3 +35,9 @@ classDiagram
 
 **Key Types**: Service
 
+## See Also
+- [config](../libs/config.md) <!-- rel:strong -->
+- [call graph](../architecture/call-graph.md) <!-- rel:strong -->
+- [layers](../architecture/layers.md) <!-- rel:related -->
+- [project structure](../architecture/project-structure.md) <!-- rel:related -->
+- [entities](../architecture/data/entities.md) <!-- rel:related -->

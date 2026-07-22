@@ -25,3 +25,5 @@ There are several scripts available for maintainers:
 - [overview](../../patterns/brand/overview.md) <!-- rel:strong -->
 - [disclaimer](../../specs/business/disclaimer.md) <!-- rel:strong -->
 - [quick starter](../../specs/quick-starter.md) <!-- rel:related -->
+- [repo overview](../../architecture/repo-overview.md) <!-- rel:strong -->
+- [external data sources](../../architecture/external-data-sources.md) <!-- rel:strong -->

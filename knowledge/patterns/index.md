@@ -8,6 +8,8 @@
 
 ## Documents
 
-| Document | Source |
-|----------|--------|
-| [patterns validated approaches](patterns-validated-approaches.md) | .specify/memory/learnings.md |
+| Document | Description | Source |
+|----------|-------------|--------|
+| [patterns validated approaches](patterns-validated-approaches.md) | --> | .specify/memory/learnings.md |
+| [validator fixer updater](validator-fixer-updater.md) | The repo's asset-quality enforcement uses three parallel strategy patterns, each represented as a named function value. | internal/processor/, internal/service/service.go |
+

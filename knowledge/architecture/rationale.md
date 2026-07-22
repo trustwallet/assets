@@ -13,3 +13,10 @@ Inline rationale comments (NOTE / WHY / HACK / FIXME / GOTCHA / WARNING / CAVEAT
 ## `internal/processor/validators.go`
 
 - **TODO** (L97) _(in `ValidateImage`)_: Replace it with validation.ValidatePngImageDimension when "assets" repo is fixed.
+
+## See Also
+- [processor](../features/processor.md) <!-- rel:strong -->
+- [validator fixer updater](../patterns/validator-fixer-updater.md) <!-- rel:related -->
+- [overview](../patterns/brand/overview.md) <!-- rel:related -->
+- [ci overview](../ci/workflows/ci-overview.md) <!-- rel:related -->
+- [testing strategy](../tests/testing-strategy.md) <!-- rel:related -->

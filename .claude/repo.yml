@@ -14,8 +14,18 @@
 schemaVersion: 1
 name: assets
 summary: |-
-  Trust Wallet token repository is a comprehensive, up-to-date collection of information about several thousands (!) of crypto tokens.
-domain: library
+  Crypto token asset registry — logos, metadata (info.json), and trading-pair tokenlists for ~188 blockchains maintained by the Trust Wallet community.
+
+  Route here for: Token logo additions/updates, info.json validation, blockchain tokenlist (tokenlist.json, tokenlist-extended.json) maintenance, asset validation tooling (Go CLI), DApp metadata.
+
+  Do NOT route here for: Wallet logic, key management, transaction signing, mobile/extension app code, backend API services.
+
+  Consumers: Trust Wallet mobile app (CDN token logos/metadata), external wallet projects, assets-management web app (via the Assets Manager API).
+
+  Ships: Compiled Go binary (bin/assets) with subcommands check / fix / update-auto / add-token / add-tokenlist. Also ships the asset file tree itself (consumed via GitHub raw URLs and CDN).
+
+  Agent routing: To add a token — use make add-token; to validate — make check; to auto-fix — make fix; to update trading pairs — make update-auto. See [guides/add-token.md](knowledge/guides/add-token.md).
+domain: cli-tool
 status: active
 
 # Capabilities this repo is authoritative for — the sharpest routing
@@ -25,12 +35,12 @@ owns: [assets]
 topics: [make, run, anti-pattern, logo, partnership, pattern, script, use case]
 
 # Repos/teams that depend on this one (curated — fill in).
-consumers: []
+consumers: [Trust Wallet mobile app, external wallet projects, assets-management web app]
 # Internal repos this one depends on (auto-detected from shared npm scope).
 depends_on: []
 
 # Artifacts this repo ships, and its tech stack (auto-detected).
-ships: []
+ships: [Compiled Go binary with subcommands check / fix / update-auto / add-token /…]
 stack: [Go]
 
 generatedBy: sdd-knowledge

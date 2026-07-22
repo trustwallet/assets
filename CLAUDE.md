@@ -2,8 +2,13 @@
 
 ## What this repo is
 
+- **Domain**: Crypto token asset registry — logos, metadata (`info.json`), and trading-pair tokenlists for ~188 blockchains maintained by the Trust Wallet community.
+- **Route here**: Token logo additions/updates, `info.json` validation, blockchain tokenlist (`tokenlist.json`, `tokenlist-extended.json`) maintenance, asset validation tooling (Go CLI), DApp metadata.
+- **Do not route here**: Wallet logic, key management, transaction signing, mobile/extension app code, backend API services.
+- **Consumers**: Trust Wallet mobile app (CDN token logos/metadata), external wallet projects, `assets-management` web app (via the Assets Manager API).
+- **Ships**: Compiled Go binary (`bin/assets`) with subcommands `check` / `fix` / `update-auto` / `add-token` / `add-tokenlist`. Also ships the asset file tree itself (consumed via GitHub raw URLs and CDN).
+- **Agent map**: To add a token — use `make add-token`; to validate — `make check`; to auto-fix — `make fix`; to update trading pairs — `make update-auto`. See [guides/add-token.md](knowledge/guides/add-token.md).
 - Stack: Go
-- Knowledge base: 4 categories — ci, code-conventions, patterns, specs
 
 ## Repo Manifest (for agents)
 
@@ -20,9 +25,15 @@ For the structured knowledge base, see [knowledge/constitution.md](knowledge/con
 - [patterns](knowledge/patterns/index.md) — Coding patterns, recipes, and proven approaches
 - [specs](knowledge/specs/index.md) — Feature specifications and requirements
 
+- [architecture](knowledge/architecture/index.md) — Architecture
+- [features](knowledge/features/index.md) — Features
+- [guides](knowledge/guides/index.md) — Guides
+- [libs](knowledge/libs/index.md) — Libs
+- [tests](knowledge/tests/index.md) — Tests
+
 ## Learnings
 
-This repo may keep a living archive of incident-derived rules in [`learnings/`](learnings/) — each file a postmortem of a real bug or a non-obvious pattern that bit once and would bite again: root cause, the rule that prevents recurrence, and tags for matching. The folder is **optional and may be absent** — create it the first time you have a learning worth saving.
+This repo may keep a living archive of incident-derived rules in ~~[`learnings/`](learnings/)~~ — each file a postmortem of a real bug or a non-obvious pattern that bit once and would bite again: root cause, the rule that prevents recurrence, and tags for matching. The folder is **optional and may be absent** — create it the first time you have a learning worth saving.
 
 **Before** investigating any bug, regression, or "weird behavior", *if a `learnings/` directory exists*:
 
