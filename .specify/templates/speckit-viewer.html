@@ -1,0 +1,2199 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{TITLE}}</title>
+<style>
+:root {
+  --page-bg: #f4f7fb;
+  --text: #1e293b;
+  --text-body: #334155;
+  --text-muted: #475569;
+  --text-faint: #94a3b8;
+  --heading: #0f2b3d;
+  --heading-grad: linear-gradient(145deg, #0f2b3d, #1e4a6f);
+  --card-bg: white;
+  --card-border: #e2e8f0;
+  --card-shadow: 0 12px 24px -16px rgba(30,41,59,0.35);
+  --card-radius: 28px;
+  --card-left: #cbd5e1;
+  --sub-bg: #f8fafc;
+  --sub-border: #cbd5e1;
+  --sub-radius: 20px;
+  --h3-left: #3b82f6;
+  --h4-left: #a855f7;
+  --code-bg: #f1f5f9;
+  --code-border: #e2e8f0;
+  --code-text: #1e293b;
+  --inline-code-bg: #e9eef3;
+  --inline-code-text: #0f2b3d;
+  --link: #2563eb;
+  --cb-green: #10b981;
+  --cb-empty: #cbd5e1;
+  --diff-add-bg: #ecfdf5; --diff-add-text: #065f46;
+  --diff-del-bg: #fef2f2; --diff-del-text: #991b1b;
+  --diff-hunk-bg: #eff6ff; --diff-hunk-text: #1e40af;
+  --tbl-head-bg: #f1f5f9;
+  --tbl-border: #e2e8f0;
+  --tbl-stripe: #f8fafc;
+  --bq-border: #3b82f6;
+  --bq-bg: #f8fafc;
+  --toolbar-bg: rgba(255,255,255,0.92);
+  --toolbar-border: #e2e8f0;
+  --toolbar-shadow: 0 6px 14px rgba(0,27,55,0.08);
+  --btn-bg: #e9eef3;
+  --btn-hover: #d1d9e6;
+  --btn-text: #1e293b;
+  --kw: #7c3aed; --str: #059669; --cmt: #94a3b8; --num: #d97706; --typ: #2563eb;
+}
+[data-theme="dark"] {
+  --page-bg: #0f172a;
+  --text: #e2e8f0;
+  --text-body: #cbd5e1;
+  --text-muted: #94a3b8;
+  --text-faint: #64748b;
+  --heading: #93c5fd;
+  --heading-grad: linear-gradient(145deg, #60a5fa, #a5b4fc);
+  --card-bg: #1e293b;
+  --card-border: #334155;
+  --card-shadow: 0 12px 24px -16px rgba(0,0,0,0.5);
+  --card-left: #475569;
+  --sub-bg: #1e293b;
+  --sub-border: #475569;
+  --h3-left: #3b82f6;
+  --h4-left: #a78bfa;
+  --code-bg: #0f172a;
+  --code-border: #334155;
+  --code-text: #e2e8f0;
+  --inline-code-bg: #334155;
+  --inline-code-text: #93c5fd;
+  --link: #60a5fa;
+  --cb-green: #34d399;
+  --cb-empty: #475569;
+  --diff-add-bg: #064e3b; --diff-add-text: #6ee7b7;
+  --diff-del-bg: #450a0a; --diff-del-text: #fca5a5;
+  --diff-hunk-bg: #1e3a5f; --diff-hunk-text: #93c5fd;
+  --tbl-head-bg: #334155;
+  --tbl-border: #475569;
+  --tbl-stripe: #1e293b;
+  --bq-border: #3b82f6;
+  --bq-bg: #1e293b;
+  --toolbar-bg: rgba(15,23,42,0.92);
+  --toolbar-border: #334155;
+  --toolbar-shadow: 0 6px 14px rgba(0,0,0,0.4);
+  --btn-bg: #334155;
+  --btn-hover: #475569;
+  --btn-text: #e2e8f0;
+  --kw: #c084fc; --str: #6ee7b7; --cmt: #64748b; --num: #fbbf24; --typ: #60a5fa;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: var(--page-bg);
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  padding: 5rem 1.5rem;
+  color: var(--text-body);
+  line-height: 1.7;
+  transition: padding-right 0.3s ease;
+}
+/* --- Toolbar --- */
+.toolbar {
+  position: fixed; top: 1rem; right: 1rem;
+  display: flex; gap: 0.5rem; z-index: 100;
+  background: var(--toolbar-bg);
+  backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+  padding: 0.5rem 0.75rem;
+  border-radius: 40px;
+  border: 1px solid var(--toolbar-border);
+  box-shadow: var(--toolbar-shadow);
+  transition: right 0.3s ease;
+}
+.toolbar button, .toolbar-back {
+  background: var(--btn-bg); color: var(--btn-text); border: none;
+  padding: 0.4rem 1rem; border-radius: 40px;
+  cursor: pointer; font-size: 0.8rem; font-weight: 600;
+  transition: background 0.15s; text-decoration: none;
+  display: inline-flex; align-items: center; gap: 0.35rem;
+}
+.toolbar button:hover, .toolbar-back:hover { background: var(--btn-hover); text-decoration: none; }
+/* --- Layout --- */
+.container { max-width: 1000px; margin: 0 auto; }
+/* --- H1 Title --- */
+h1 {
+  font-size: 2.2rem; font-weight: 600;
+  background: var(--heading-grad);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.5rem; line-height: 1.3;
+}
+.doc-subtitle {
+  font-size: 1.1rem; color: var(--text-muted);
+  border-left: 4px solid #3b82f6;
+  padding: 0.75rem 1.5rem; margin-bottom: 2rem;
+  background: var(--sub-bg);
+  border-radius: 0 12px 12px 0;
+}
+/* --- Section cards (H2) --- */
+details.sec-h2 {
+  background: var(--card-bg);
+  border-radius: var(--card-radius);
+  border: 1px solid var(--card-border);
+  box-shadow: var(--card-shadow);
+  border-left: 10px solid var(--card-left);
+  margin-bottom: 1.5rem;
+}
+details.sec-h2 > summary {
+  display: flex; align-items: center; gap: 16px;
+  padding: 1.5rem 2rem; cursor: pointer; list-style: none;
+  user-select: none; flex-wrap: wrap;
+}
+details.sec-h2 > summary::-webkit-details-marker { display: none; }
+details.sec-h2 > summary .sec-icon {
+  background: var(--heading);
+  color: white; width: 38px; height: 38px;
+  border-radius: 30px; display: flex;
+  align-items: center; justify-content: center;
+  font-weight: 700; font-size: 1rem; flex-shrink: 0;
+}
+[data-theme="dark"] details.sec-h2 > summary .sec-icon {
+  background: #3b82f6;
+}
+details.sec-h2 > summary .heading-text {
+  font-size: 1.5rem; font-weight: 600; color: var(--heading); flex: 1; user-select: text;
+}
+details.sec-h2 > summary .sec-tag {
+  padding: 3px 12px; border-radius: 40px;
+  font-size: 0.75rem; font-weight: 600;
+  white-space: nowrap; cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  user-select: none; border: none;
+  margin-left: auto;
+}
+.sec-tag.review-required { background: #fef3c7; color: #92400e; }
+.sec-tag.reviewed { background: #d1fae5; color: #065f46; }
+[data-theme="dark"] .sec-tag.review-required { background: #78350f; color: #fde68a; }
+[data-theme="dark"] .sec-tag.reviewed { background: #064e3b; color: #6ee7b7; }
+/* Priority badges */
+.priority-badge {
+  display: inline-flex; align-items: center; gap: 5px;
+  padding: 2px 10px; border-radius: 40px;
+  font-size: 0.75rem; font-weight: 700; white-space: nowrap;
+  margin-left: 0.3em;
+}
+.priority-badge::before {
+  content: ''; width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0;
+}
+.priority-p1 { background: #fef2f2; color: #b91c1c; }
+.priority-p1::before { background: #ef4444; }
+.priority-p2 { background: #fffbeb; color: #b45309; }
+.priority-p2::before { background: #f59e0b; }
+.priority-p3 { background: #eff6ff; color: #1d4ed8; }
+.priority-p3::before { background: #3b82f6; }
+.priority-p4 { background: #f5f3ff; color: #6d28d9; }
+.priority-p4::before { background: #8b5cf6; }
+[data-theme="dark"] .priority-p1 { background: #450a0a; color: #fca5a5; }
+[data-theme="dark"] .priority-p2 { background: #451a03; color: #fcd34d; }
+[data-theme="dark"] .priority-p3 { background: #1e3a5f; color: #93c5fd; }
+[data-theme="dark"] .priority-p4 { background: #2e1065; color: #c4b5fd; }
+/* --- Status chips (PASS/FAIL/SKIP/WARN/N/A) --- */
+.status-chip {
+  display: inline-block; padding: 2px 12px; border-radius: 40px;
+  font-size: 0.8em; font-weight: 700; white-space: nowrap;
+}
+.status-pass { background: #dcfce7; color: #166534; }
+.status-fail { background: #fee2e2; color: #991b1b; }
+.status-skip { background: #fef3c7; color: #92400e; }
+.status-na { background: #f1f5f9; color: #475569; }
+.status-warn { background: #fff7ed; color: #9a3412; }
+[data-theme="dark"] .status-pass { background: #14532d; color: #86efac; }
+[data-theme="dark"] .status-fail { background: #450a0a; color: #fca5a5; }
+[data-theme="dark"] .status-skip { background: #78350f; color: #fde68a; }
+[data-theme="dark"] .status-na { background: #334155; color: #94a3b8; }
+[data-theme="dark"] .status-warn { background: #431407; color: #fdba74; }
+/* --- Next page button --- */
+.next-page-btn {
+  display: flex; align-items: center; justify-content: center; gap: 0.5rem;
+  margin: 2.5rem auto 1rem auto; padding: 0.75rem 2rem;
+  background: var(--btn-bg); color: var(--btn-text);
+  border: 1px solid var(--card-border); border-radius: 40px;
+  cursor: pointer; font-size: 0.95rem; font-weight: 600;
+  text-decoration: none; transition: background 0.15s;
+  max-width: 360px;
+}
+.next-page-btn:hover { background: var(--btn-hover); text-decoration: none; }
+.next-page-hint {
+  display: flex; align-items: center; justify-content: center; gap: 0.5rem;
+  margin: 2.5rem auto 1rem auto; padding: 0.75rem 2rem;
+  background: var(--sub-bg); color: var(--text-faint);
+  border: 1px dashed var(--card-border); border-radius: 40px;
+  font-size: 0.85rem; font-weight: 600;
+  max-width: 420px; user-select: none;
+  font-family: 'SF Mono','JetBrains Mono','Fira Code',Menlo,monospace;
+}
+body.in-iframe .next-page-btn,
+body.in-iframe .next-page-hint { display: none; }
+/* --- File path chip --- */
+.file-chip {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  margin-top: 0.35rem; padding: 0.3rem 0.9rem;
+  background: var(--sub-bg); border: 1px solid var(--sub-border);
+  border-radius: 6px; font-size: 0.8rem; line-height: 1.4;
+  font-family: 'SF Mono','JetBrains Mono','Fira Code',Menlo,monospace;
+  color: var(--text-muted); word-break: break-all; white-space: normal;
+  max-width: 100%;
+}
+.file-chip-icon { flex-shrink: 0; font-size: 0.9rem; }
+/* Review counter */
+.review-counter {
+  position: fixed; bottom: 1.5rem; right: 1.5rem; z-index: 99;
+  background: var(--toolbar-bg);
+  backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+  padding: 0.4rem 0.9rem;
+  border-radius: 40px;
+  border: 1px solid var(--toolbar-border);
+  box-shadow: var(--toolbar-shadow);
+  font-size: 0.8rem; font-weight: 600; color: var(--text-muted);
+  transition: right 0.3s ease;
+}
+.review-counter .count { color: #b45309; font-weight: 700; }
+.review-counter.all-done { color: var(--text-faint); }
+.review-counter.all-done .count { color: var(--text-faint); }
+details.sec-h2 > summary .chevron {
+  font-size: 0.9rem; color: var(--text-faint);
+  transition: transform 0.2s;
+}
+details.sec-h2[open] > summary .chevron { transform: rotate(90deg); }
+details.sec-h2 > .section-content {
+  padding: 0.5rem 2rem 1.5rem 2rem;
+}
+/* --- Subsection cards (H3) --- */
+details.sec-h3 {
+  background: var(--sub-bg);
+  border-radius: var(--sub-radius);
+  border: 1px dashed var(--sub-border);
+  border-left: 4px solid var(--h3-left);
+  margin: 0.8rem 0;
+}
+details.sec-h3 > summary {
+  display: flex; align-items: center; gap: 10px;
+  padding: 0.8rem 1.2rem; cursor: pointer; list-style: none;
+  user-select: none; flex-wrap: wrap;
+}
+details.sec-h3 > summary .sec-tag {
+  padding: 3px 12px; border-radius: 40px;
+  font-size: 0.75rem; font-weight: 600;
+  white-space: nowrap; cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  user-select: none; border: none;
+  margin-left: auto;
+}
+details.sec-h3 > summary::-webkit-details-marker { display: none; }
+details.sec-h3 > summary .heading-text {
+  font-size: 1.05rem; font-weight: 700; color: var(--heading); flex: 1; user-select: text;
+}
+details.sec-h3 > summary .chevron {
+  font-size: 0.8rem; color: var(--text-faint);
+  transition: transform 0.2s;
+}
+details.sec-h3[open] > summary .chevron { transform: rotate(90deg); }
+details.sec-h3 > .section-content { padding: 0.5rem 1.2rem 1rem 1.2rem; }
+/* --- H4+ sections --- */
+details.sec-h4 {
+  margin: 0.5rem 0; border-radius: 12px;
+  border: 1px solid var(--card-border);
+  border-left: 3px solid var(--h4-left);
+}
+details.sec-h4 > summary {
+  display: flex; align-items: center; gap: 8px;
+  padding: 0.6rem 1rem; cursor: pointer; list-style: none;
+  user-select: none; background: var(--sub-bg);
+}
+details.sec-h4 > summary::-webkit-details-marker { display: none; }
+details.sec-h4 > summary .heading-text {
+  font-size: 0.95rem; font-weight: 600; color: var(--text); flex: 1; user-select: text;
+}
+details.sec-h4 > summary .chevron {
+  font-size: 0.75rem; color: var(--text-faint);
+  transition: transform 0.2s;
+}
+details.sec-h4[open] > summary .chevron { transform: rotate(90deg); }
+details.sec-h4 > .section-content { padding: 0.5rem 1rem 0.8rem 1rem; }
+/* --- Meta card --- */
+.meta-card {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 0.6rem 2rem;
+  background: var(--sub-bg);
+  border: 2px dashed var(--sub-border);
+  border-radius: 20px;
+  padding: 1.2rem 1.8rem;
+  margin-bottom: 2rem;
+}
+.meta-item { font-size: 0.92rem; color: var(--text-body); }
+.meta-item .meta-label {
+  font-weight: 700; color: var(--heading);
+  margin-right: 0.4em;
+}
+.meta-item .meta-label::before {
+  content: ''; display: inline-block;
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--h3-left); margin-right: 8px;
+  vertical-align: middle;
+}
+.meta-item:nth-child(4n+2) .meta-label::before { background: var(--h4-left); }
+.meta-item:nth-child(4n+3) .meta-label::before { background: #10b981; }
+.meta-item:nth-child(4n+4) .meta-label::before { background: #f59e0b; }
+@media (max-width: 640px) {
+  .meta-card { grid-template-columns: 1fr; }
+}
+/* --- Content --- */
+.section-content { font-style: normal; }
+.section-content > :first-child { margin-top: 0; }
+.section-content > :last-child { margin-bottom: 0; }
+p { margin: 0.6rem 0; font-size: 1rem; color: var(--text-body); }
+ul, ol { margin: 0.6rem 0; padding-left: 1.4em; list-style: none; }
+li {
+  font-size: 0.95rem; margin-bottom: 0.5rem;
+  position: relative; color: var(--text-body);
+}
+li::before {
+  content: '\25CF'; font-size: 0.45rem; color: var(--text-faint);
+  position: absolute; left: -1.1em; top: 0.65em;
+}
+ol { counter-reset: li-counter; }
+ol li::before {
+  counter-increment: li-counter;
+  content: counter(li-counter) '.';
+  font-size: 0.85rem; font-weight: 700; color: var(--heading);
+  left: -1.5em; top: 0;
+}
+li.checkbox-item { padding-left: 0; }
+li.checkbox-item::before { content: none; }
+.cb {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 1.2em; height: 1.2em; border-radius: 5px;
+  flex-shrink: 0; font-size: 0.8em; margin-right: 0.6em;
+}
+.cb-checked { background: var(--cb-green); color: #fff; font-weight: 700; }
+.cb-checked::after { content: '\2713'; }
+.cb-empty { border: 2px solid var(--cb-empty); }
+/* --- Tag blobs --- */
+.tag {
+  display: inline-flex; align-items: center; gap: 5px;
+  padding: 2px 10px 2px 8px; border-radius: 40px;
+  font-size: 0.8em; font-weight: 700;
+  font-family: 'SF Mono','JetBrains Mono','Fira Code',Menlo,monospace;
+  white-space: nowrap; vertical-align: baseline; line-height: 1.5;
+}
+.tag::before {
+  content: ''; width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0;
+}
+.tag-task { background: #eff6ff; color: #1d4ed8; }
+.tag-task::before { background: #3b82f6; }
+.tag-fr { background: #ecfdf5; color: #047857; }
+.tag-fr::before { background: #10b981; }
+.tag-nfr { background: #f5f3ff; color: #6d28d9; }
+.tag-nfr::before { background: #8b5cf6; }
+.tag-sc { background: #fffbeb; color: #b45309; }
+.tag-sc::before { background: #f59e0b; }
+.tag-chk { background: #f0fdfa; color: #0f766e; }
+.tag-chk::before { background: #14b8a6; }
+.tag-us { background: #eef2ff; color: #4338ca; }
+.tag-us::before { background: #6366f1; }
+.tag-p { background: #fef2f2; color: #b91c1c; }
+.tag-p::before { background: #ef4444; }
+[data-theme="dark"] .tag-task { background: #1e3a5f; color: #93c5fd; }
+[data-theme="dark"] .tag-fr { background: #064e3b; color: #6ee7b7; }
+[data-theme="dark"] .tag-nfr { background: #2e1065; color: #c4b5fd; }
+[data-theme="dark"] .tag-sc { background: #451a03; color: #fcd34d; }
+[data-theme="dark"] .tag-chk { background: #042f2e; color: #5eead4; }
+[data-theme="dark"] .tag-us { background: #1e1b4b; color: #a5b4fc; }
+[data-theme="dark"] .tag-p { background: #450a0a; color: #fca5a5; }
+.tag-td { background: #fff7ed; color: #c2410c; }
+.tag-td::before { background: #f97316; }
+[data-theme="dark"] .tag-td { background: #431407; color: #fdba74; }
+/* --- Cross-reference links --- */
+.xref { cursor: pointer; }
+.xref:hover { filter: brightness(0.92); }
+.xref-highlight { animation: xref-flash 1.5s ease-out; }
+@keyframes xref-flash {
+  0% { box-shadow: 0 0 0 4px rgba(59,130,246,0.5); border-radius: 40px; }
+  100% { box-shadow: 0 0 0 0 rgba(59,130,246,0); }
+}
+.tag-unresolvable { opacity: 0.5; }
+/* --- Code --- */
+pre {
+  margin: 0.8rem 0; border-radius: 16px; overflow-x: auto;
+  border: 1px solid var(--code-border); background: var(--code-bg);
+}
+pre code {
+  display: block; padding: 1rem 1.4rem;
+  font-family: 'SF Mono', 'JetBrains Mono', 'Fira Code', Menlo, monospace;
+  font-size: 0.84rem; line-height: 1.65; color: var(--code-text);
+  white-space: pre;
+}
+code {
+  font-family: 'SF Mono', 'JetBrains Mono', 'Fira Code', Menlo, monospace;
+  font-size: 0.85em;
+  background: var(--inline-code-bg); color: var(--inline-code-text);
+  padding: 0.15em 0.5em; border-radius: 4px; font-weight: 600;
+  white-space: normal; word-break: break-all; overflow-wrap: break-word;
+  -webkit-box-decoration-break: clone; box-decoration-break: clone;
+}
+pre code code { background: none; padding: 0; color: inherit; font-weight: inherit; border-radius: 0; }
+.diff-add { background: var(--diff-add-bg); color: var(--diff-add-text); display: block; padding: 0 0.5rem; border-radius: 4px; margin: 1px 0; }
+.diff-del { background: var(--diff-del-bg); color: var(--diff-del-text); display: block; padding: 0 0.5rem; border-radius: 4px; margin: 1px 0; }
+.diff-hunk { background: var(--diff-hunk-bg); color: var(--diff-hunk-text); display: block; padding: 0 0.5rem; border-radius: 4px; margin: 1px 0; font-weight: 600; }
+/* --- Tables --- */
+table {
+  width: 100%; border-collapse: separate; border-spacing: 0;
+  margin: 0.8rem 0; font-size: 0.9rem;
+  border-radius: 16px; overflow: hidden; border: 1px solid var(--tbl-border);
+}
+th, td { padding: 0.6rem 1rem; text-align: left; }
+th {
+  background: var(--tbl-head-bg); font-weight: 700; font-size: 0.82rem;
+  text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-muted);
+  border-bottom: 2px solid var(--tbl-border);
+}
+td { border-bottom: 1px solid var(--tbl-border); }
+tr:last-child td { border-bottom: none; }
+tr:nth-child(even) td { background: var(--tbl-stripe); }
+/* --- Blockquotes --- */
+blockquote {
+  margin: 0.8rem 0; padding: 0.8rem 1.5rem;
+  border-left: 4px solid var(--bq-border);
+  background: var(--bq-bg); border-radius: 0 12px 12px 0;
+  color: var(--text-muted);
+}
+blockquote p { margin: 0.3rem 0; }
+/* --- Inline --- */
+a { color: var(--link); text-decoration: none; font-weight: 500; }
+a:hover { text-decoration: underline; }
+strong { font-weight: 700; color: var(--text); }
+em { font-style: italic; }
+hr { border: none; height: 2px; background: var(--card-border); margin: 1.2rem 0; border-radius: 1px; }
+/* --- Syntax --- */
+.kw { color: var(--kw); font-weight: 600; }
+.str { color: var(--str); }
+.cmt { color: var(--cmt); font-style: italic; }
+.num { color: var(--num); }
+.typ { color: var(--typ); font-weight: 500; }
+/* --- Split View --- */
+.split-icon {
+  display: inline-block; width: 14px; height: 12px;
+  border: 2px solid currentColor; border-radius: 2px;
+  position: relative; vertical-align: middle;
+}
+.split-icon::after {
+  content: ''; position: absolute; left: 50%; top: 1px; bottom: 1px;
+  width: 2px; background: currentColor; transform: translateX(-50%);
+}
+body.split-mode #split-btn { background: var(--link); color: white; }
+body.split-mode #split-btn .split-icon { border-color: white; }
+body.split-mode #split-btn .split-icon::after { background: white; }
+#split-pane {
+  position: fixed; top: 0; bottom: 0; z-index: 80;
+  /* Right pane: takes half of the space right of the nav, minus gap */
+  right: 0; width: calc((100vw - 220px - 12px) / 2);
+  background: var(--page-bg); border-left: 2px solid var(--card-border);
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+}
+#split-pane.active { transform: translateX(0); }
+#split-pane iframe { width: 100%; height: 100%; border: none; }
+#split-pane .split-close {
+  position: absolute; top: 0.75rem; right: 0.75rem; z-index: 10;
+  width: 30px; height: 30px; border-radius: 50%;
+  background: var(--btn-bg); color: var(--btn-text);
+  border: 1px solid var(--card-border); cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.2rem; line-height: 1;
+  box-shadow: var(--toolbar-shadow); transition: background 0.15s;
+}
+#split-pane .split-close:hover { background: var(--btn-hover); }
+/* Left pane gets padding to leave room for right pane + gap */
+body.split-mode { padding-right: calc((100vw - 220px + 12px) / 2); }
+body.split-mode .toolbar { right: calc((100vw - 220px + 12px) / 2 + 1rem); }
+body.split-mode .review-counter { right: calc((100vw - 220px + 12px) / 2 + 1.5rem); }
+/* In iframe: no nav, no toolbar, full-width content */
+body.in-iframe { padding-left: 1.5rem !important; padding-right: 1.5rem !important; }
+body.in-iframe .nav-sidebar,
+body.in-iframe .toolbar,
+body.in-iframe .review-counter,
+body.in-iframe #split-pane { display: none !important; }
+/* --- Nav Sidebar --- */
+.nav-sidebar {
+  position: fixed; left: 0; top: 0; bottom: 0; width: 220px;
+  background: var(--card-bg); border-right: 1px solid var(--card-border);
+  padding: 1.5rem 1rem 1.5rem 1.2rem; overflow-y: auto; z-index: 90;
+  font-size: 0.82rem; display: flex; flex-direction: column;
+}
+.nav-sidebar .nav-feature { font-weight: 700; color: var(--heading); font-size: 0.75rem;
+  text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 1.2rem;
+  word-wrap: break-word; overflow-wrap: break-word; line-height: 1.4; }
+.nav-chain { flex: 1; }
+.nav-item { display: flex; align-items: flex-start; position: relative; cursor: pointer;
+  text-decoration: none; color: var(--text-muted); padding: 22px 0; }
+.nav-item:hover { color: var(--link); }
+.nav-item.disabled { cursor: default; color: var(--text-faint); opacity: 0.5; }
+.nav-item.disabled:hover { color: var(--text-faint); }
+/* Vertical line from circle to next item */
+.nav-item .nav-line { position: absolute; left: 7px; top: 29px; bottom: -23px;
+  width: 2px; background: var(--card-border); }
+.nav-item.done .nav-line { background: #10b981; }
+.nav-item.current .nav-line { background: #10b981; }
+.nav-item.dotted .nav-line,
+.nav-item.line-to-dotted .nav-line { background: none;
+  border-left: 2px dashed var(--text-faint); width: 0; }
+.nav-item:last-child .nav-line,
+.nav-item.no-line .nav-line { display: none; }
+/* Circle indicator */
+.nav-circle { width: 16px; height: 16px; border-radius: 50%; flex-shrink: 0;
+  border: 2px solid var(--card-border); background: transparent;
+  margin-right: 10px; margin-top: 1px; position: relative; z-index: 1; }
+.nav-item.exists .nav-circle { border-color: var(--text-muted); }
+.nav-item.done .nav-circle { border-color: #10b981; background: #10b981; }
+.nav-item.current .nav-circle { border-color: #f59e0b; background: #f59e0b;
+  box-shadow: 0 0 0 4px rgba(245,158,11,0.3); animation: nav-pulse 2s ease-in-out infinite; }
+.nav-item.dotted .nav-circle { border-style: dashed; border-color: var(--text-faint); }
+@keyframes nav-pulse {
+  0%, 100% { box-shadow: 0 0 0 4px rgba(245,158,11,0.3); }
+  50% { box-shadow: 0 0 0 8px rgba(245,158,11,0.15); }
+}
+.nav-label { line-height: 18px; font-weight: 500; }
+.nav-item.current .nav-label { font-weight: 700; color: #d97706; }
+.nav-item.done .nav-label { color: #10b981; }
+/* Checkbox counter badge */
+.nav-chk-count {
+  font-size: 0.7rem; font-weight: 600; color: var(--text);
+  margin-left: 4px; white-space: nowrap;
+}
+.nav-chk-count.all-done { color: #10b981; }
+/* Branch items (indented with horizontal connector) */
+.nav-branch { padding-left: 28px; padding-top: 12px; padding-bottom: 12px; position: relative; }
+/* Horizontal connector from trunk to branch circle */
+.nav-branch::before { content: ''; position: absolute; left: 7px; top: 13px;
+  width: 14px; height: 2px; background: var(--card-border); }
+.nav-branch.done::before { background: #10b981; }
+.nav-branch.current::before { background: #f59e0b; }
+/* Vertical trunk line continuing through branches */
+.nav-branch::after { content: ''; position: absolute; left: 7px; top: 0; bottom: 0;
+  width: 2px; background: var(--card-border); }
+.nav-branch.trunk-done::after { background: #10b981; }
+.nav-branch.trunk-current::after { background: #10b981; }
+/* Last branch extends trunk to reach next main item's circle */
+.nav-branch.last-branch::after { bottom: -23px; }
+/* Branch's own sub-line (for chained branches) */
+.nav-branch .nav-line { left: 35px; display: none; }
+/* Command tooltip for dotted (not yet generated) items */
+.nav-tooltip {
+  position: absolute; left: 26px; top: 100%;
+  margin-top: 2px; padding: 3px 10px; border-radius: 6px;
+  background: var(--card-bg); border: 1px solid var(--card-border);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  font-size: 0.75rem; font-weight: 600; color: #60a5fa;
+  font-family: 'SF Mono','JetBrains Mono','Fira Code',Menlo,monospace;
+  white-space: normal; pointer-events: none; opacity: 0;
+  transition: opacity 0.15s; max-width: 180px;
+  z-index: 100;
+}
+.nav-item.dotted:hover .nav-tooltip,
+.nav-branch.dotted:hover .nav-tooltip,
+.nav-item:hover .nav-tooltip { opacity: 1; }
+/* Info icon with hover tooltip */
+.nav-info { display: inline-flex; align-items: center; justify-content: center;
+  width: 14px; height: 14px; font-size: 0.55rem; color: var(--text-faint);
+  cursor: help; margin-left: 3px; position: relative; vertical-align: middle;
+  border: 1px solid var(--text-faint); border-radius: 50%; line-height: 1; }
+.nav-info:hover { color: var(--link); border-color: var(--link); }
+.nav-info-tip { position: absolute; left: 50%; top: 100%; transform: translateX(-50%);
+  margin-top: 4px; padding: 3px 8px; border-radius: 6px;
+  background: var(--card-bg); border: 1px solid var(--card-border);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  font-size: 0.7rem; font-weight: 600; color: #60a5fa;
+  font-family: 'SF Mono','JetBrains Mono','Fira Code',Menlo,monospace;
+  white-space: nowrap; pointer-events: none; opacity: 0;
+  transition: opacity 0.15s; z-index: 100; }
+.nav-info:hover .nav-info-tip { opacity: 1; }
+/* Separator before constitution */
+.nav-sep { border: none; height: 1px; background: var(--card-border);
+  margin: 1rem 0 0.75rem 0; }
+/* Has sidebar body shift */
+body.has-nav { padding-left: 232px; }
+/* --- Mobile: hide sidebar --- */
+@media (max-width: 900px) {
+  .nav-sidebar { display: none; }
+  body.has-nav { padding-left: 0; }
+  #split-pane { display: none !important; }
+  body.split-mode { padding-right: 0; }
+  #split-btn { display: none; }
+}
+/* --- Mobile --- */
+@media (max-width: 640px) {
+  body { padding: 1rem 0.75rem; }
+  h1 { font-size: 1.6rem; }
+  details.sec-h2 > summary { padding: 1rem 1.2rem; }
+  details.sec-h2 > summary .heading-text { font-size: 1.2rem; }
+  details.sec-h2 > .section-content { padding: 0.5rem 1.2rem 1rem; }
+  .toolbar { top: 0.5rem; right: 0.5rem; }
+}
+/* --- Edit UI (only visible when served via http://) --- */
+.edit-btn {
+  display: none; /* hidden by default; shown via .edit-enabled */
+  background: var(--btn-bg); color: var(--text-muted); border: none;
+  padding: 0.25rem 0.6rem; border-radius: 6px; cursor: pointer;
+  font-size: 0.7rem; font-weight: 600; margin-left: auto;
+  transition: background 0.15s, color 0.15s;
+  flex-shrink: 0; order: 90;
+}
+.edit-btn:hover { background: var(--btn-hover); color: var(--text); }
+.edit-enabled .edit-btn { display: inline-flex; }
+.edit-overlay {
+  position: fixed; inset: 0; z-index: 2000;
+  background: rgba(0,0,0,0.5); backdrop-filter: blur(4px);
+  display: flex; align-items: center; justify-content: center;
+}
+.edit-panel {
+  background: var(--card-bg); border-radius: 16px;
+  border: 1px solid var(--card-border);
+  box-shadow: 0 24px 48px rgba(0,0,0,0.25);
+  width: 90vw; max-width: 900px; height: 80vh;
+  display: flex; flex-direction: column; overflow: hidden;
+}
+.edit-header {
+  display: flex; align-items: center; gap: 0.75rem;
+  padding: 1rem 1.5rem; border-bottom: 1px solid var(--card-border);
+  flex-shrink: 0;
+}
+.edit-header .edit-title {
+  font-weight: 600; font-size: 1rem; color: var(--text); flex: 1;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.edit-header button {
+  background: var(--btn-bg); color: var(--btn-text); border: none;
+  padding: 0.4rem 1rem; border-radius: 8px; cursor: pointer;
+  font-size: 0.8rem; font-weight: 600; transition: background 0.15s;
+}
+.edit-header button:hover { background: var(--btn-hover); }
+.edit-header .edit-save {
+  background: #2563eb; color: #fff;
+}
+.edit-header .edit-save:hover { background: #1d4ed8; }
+.edit-header .edit-save:disabled { opacity: 0.5; cursor: not-allowed; }
+.edit-textarea {
+  flex: 1; width: 100%; border: none; resize: none;
+  padding: 1rem 1.5rem; font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', monospace;
+  font-size: 0.85rem; line-height: 1.6;
+  background: var(--card-bg); color: var(--text);
+  outline: none; tab-size: 2;
+}
+.edit-status {
+  padding: 0.5rem 1.5rem; font-size: 0.75rem; color: var(--text-muted);
+  border-top: 1px solid var(--card-border); flex-shrink: 0;
+  display: flex; align-items: center; gap: 0.5rem;
+}
+.edit-status .edit-saving { color: #f59e0b; }
+.edit-status .edit-saved { color: #10b981; }
+.edit-status .edit-error { color: #ef4444; }
+.edit-toast {
+  position: fixed; bottom: 1.5rem; left: 50%; transform: translateX(-50%);
+  z-index: 3000; background: #1e293b; color: #f1f5f9;
+  padding: 0.75rem 1.25rem; border-radius: 12px;
+  font-size: 0.85rem; line-height: 1.5;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  display: flex; align-items: center; gap: 0.75rem;
+  max-width: 540px; animation: toast-in 0.3s ease;
+}
+[data-theme="dark"] .edit-toast { background: #334155; color: #e2e8f0; }
+.edit-toast .toast-icon { font-size: 1.1rem; flex-shrink: 0; }
+.edit-toast .toast-close {
+  background: none; border: none; color: #94a3b8; cursor: pointer;
+  font-size: 1rem; padding: 0 0 0 0.5rem; flex-shrink: 0;
+}
+.edit-toast .toast-close:hover { color: #f1f5f9; }
+.edit-toast code { background: rgba(96,165,250,0.2); color: #60a5fa; padding: 0.1rem 0.4rem; border-radius: 4px; font-size: 0.8rem; }
+.add-section-btn {
+  display: none; /* shown via .edit-enabled */
+  width: 100%; padding: 0.75rem; margin-bottom: 1.5rem;
+  background: var(--sub-bg); color: var(--text-muted);
+  border: 2px dashed var(--card-border); border-radius: 16px;
+  cursor: pointer; font-size: 0.85rem; font-weight: 600;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+.add-section-btn:hover { background: var(--card-bg); color: var(--text); border-color: var(--h3-left); }
+.edit-enabled .add-section-btn { display: block; }
+@keyframes toast-in { from { opacity: 0; transform: translateX(-50%) translateY(1rem); } to { opacity: 1; transform: translateX(-50%) translateY(0); } }
+</style>
+</head>
+<body>
+<div class="toolbar">
+  <a id="back-link" href="{{INDEX_PATH}}" class="toolbar-back">&#9664; Dashboard</a>
+  <button id="theme-btn" onclick="toggleTheme()">&#9790; Dark</button>
+  <button id="collapse-btn" onclick="toggleAll()">&#9776; Expand All</button>
+  <button id="split-btn" onclick="toggleSplitView()" title="Split view"><span class="split-icon"></span></button>
+</div>
+<div id="review-counter" class="review-counter" style="display:none"></div>
+<div id="nav-sidebar" class="nav-sidebar"></div>
+<div id="split-pane"><button class="split-close" onclick="closeSplitView()" title="Close">&times;</button><iframe id="split-iframe"></iframe></div>
+<div class="container" id="content"></div>
+<script>
+var NAV_DATA = {{NAV_DATA}};
+var MD_PATH = {{MD_PATH_JSON}};
+var MARKDOWN = `{{MARKDOWN}}`;
+
+/* --- Theme storage: window.name survives reloads on file:// where localStorage is blocked (Safari) --- */
+function saveTheme(theme) {
+  try { localStorage.setItem('speckit-theme', theme); } catch(e) {}
+  window.name = window.name.replace(/speckit-theme=\w*/, '').replace(/;+$/, '') + ';speckit-theme=' + theme;
+}
+function getSavedTheme() {
+  var m = window.name.match(/speckit-theme=(\w+)/);
+  if (m) return m[1];
+  try { return localStorage.getItem('speckit-theme'); } catch(e) {}
+  return null;
+}
+function toggleTheme() {
+  var h = document.documentElement, btn = document.getElementById('theme-btn');
+  if (h.getAttribute('data-theme') === 'dark') {
+    h.setAttribute('data-theme', 'light'); btn.innerHTML = '&#9790; Dark';
+    saveTheme('light');
+  } else {
+    h.setAttribute('data-theme', 'dark'); btn.innerHTML = '&#9788; Light';
+    saveTheme('dark');
+  }
+}
+function toggleAll() {
+  var ds = document.querySelectorAll('details'), btn = document.getElementById('collapse-btn');
+  var anyOpen = [].some.call(ds, function(d){ return d.open; });
+  [].forEach.call(ds, function(d){ d.open = !anyOpen; });
+  btn.innerHTML = anyOpen ? '&#9776; Expand All' : '&#9776; Collapse All';
+}
+/* --- Split View --- */
+function toggleSplitView() {
+  if (document.body.classList.contains('split-mode')) {
+    closeSplitView();
+  } else {
+    openSplitView(location.href);
+  }
+}
+function openSplitView(url) {
+  var pane = document.getElementById('split-pane');
+  var iframe = document.getElementById('split-iframe');
+  // Add expand=1 param so split-pane pages open with all sections expanded
+  var hashIdx = url.indexOf('#');
+  var hash = hashIdx >= 0 ? url.slice(hashIdx) : '';
+  var base = hashIdx >= 0 ? url.slice(0, hashIdx) : url;
+  iframe.src = base + (base.indexOf('?') >= 0 ? '&' : '?') + 'expand=1' + hash;
+  pane.classList.add('active');
+  document.body.classList.add('split-mode');
+  localStorage.setItem('speckit-split-active', 'true');
+  localStorage.setItem('speckit-split-url', url);
+}
+function closeSplitView() {
+  var pane = document.getElementById('split-pane');
+  var iframe = document.getElementById('split-iframe');
+  iframe.src = '';
+  pane.classList.remove('active');
+  document.body.classList.remove('split-mode');
+  localStorage.removeItem('speckit-split-active');
+  localStorage.removeItem('speckit-split-url');
+}
+function navGo(url) {
+  if (document.body.classList.contains('split-mode')) {
+    var iframe = document.getElementById('split-iframe');
+    iframe.src = url;
+    localStorage.setItem('speckit-split-url', url);
+  } else {
+    location.href = url;
+  }
+}
+(function initTheme() {
+  var theme = null;
+  try { theme = new URLSearchParams(location.search).get('theme'); } catch(e) {}
+  if (!theme) theme = getSavedTheme();
+  if (theme === 'dark') {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    var btn = document.getElementById('theme-btn');
+    if (btn) btn.innerHTML = '&#9788; Light';
+  }
+})();
+
+function highlight(code, lang) {
+  var keywords = {
+    kotlin: ['fun','val','var','class','object','interface','when','if','else','return','import','package','data','sealed','enum','override','private','public','internal','protected','abstract','open','companion','suspend','coroutine','by','lazy','init','constructor','this','super','null','true','false','is','as','in','out','try','catch','finally','throw','for','while','do','break','continue','typealias','inline','reified','crossinline','noinline','tailrec','operator','infix','annotation','expect','actual'],
+    swift: ['func','var','let','class','struct','enum','protocol','extension','import','return','if','else','guard','switch','case','default','for','while','repeat','break','continue','throw','throws','try','catch','do','nil','true','false','self','super','init','deinit','private','public','internal','fileprivate','open','static','override','mutating','associatedtype','typealias','where','some','any','async','await','actor'],
+    bash: ['if','then','else','elif','fi','for','while','do','done','case','esac','function','return','local','export','source','echo','exit','set','unset','readonly','shift','test','true','false','in'],
+    python: ['def','class','import','from','return','if','elif','else','for','while','break','continue','try','except','finally','raise','with','as','pass','yield','lambda','and','or','not','is','in','True','False','None','self','async','await','print'],
+    js: ['function','const','let','var','return','if','else','for','while','do','switch','case','break','continue','try','catch','finally','throw','new','delete','typeof','instanceof','in','of','class','extends','import','export','default','from','async','await','yield','true','false','null','undefined','this','super','static','get','set'],
+    json: [],
+    yaml: ['true','false','null','yes','no','on','off'],
+    typescript: ['function','const','let','var','return','if','else','for','while','do','switch','case','break','continue','try','catch','finally','throw','new','delete','typeof','instanceof','in','of','class','extends','import','export','default','from','async','await','yield','true','false','null','undefined','this','super','static','get','set','interface','type','enum','implements','declare','namespace','module','abstract','as','is','keyof','readonly','private','public','protected','override','infer','never','unknown','any','void']
+  };
+  var types = ['String','Int','Long','Float','Double','Boolean','Unit','Any','Nothing','List','Map','Set','Array','MutableList','MutableMap','MutableSet','Pair','Triple','Result','Flow','StateFlow','SharedFlow','LiveData','Observable','Promise','Error','Date','RegExp','Object','Number','Symbol','BigInt','Void','Optional','Self','some','Never','Type','Dict','Tuple','Sequence','Iterator'];
+  lang = (lang || '').toLowerCase().replace('sh','bash').replace('ts','typescript').replace('javascript','js');
+  var kws = keywords[lang] || keywords.js || [];
+  var kwSet = {}; kws.forEach(function(k){ kwSet[k]=1; });
+  var tySet = {}; types.forEach(function(t){ tySet[t]=1; });
+  var result = '', i = 0, s = code;
+  while (i < s.length) {
+    if ((s[i]==='/'&&s[i+1]==='/')||(lang==='bash'&&s[i]==='#'&&(i===0||s[i-1]==='\n'||s[i-1]===' '))||(lang==='python'&&s[i]==='#')||(lang==='yaml'&&s[i]==='#')) {
+      var end = s.indexOf('\n',i); if(end===-1)end=s.length;
+      result+='<span class="cmt">'+esc(s.slice(i,end))+'</span>'; i=end;
+    } else if(s[i]==='/'&&s[i+1]==='*') {
+      var end=s.indexOf('*/',i+2); if(end===-1)end=s.length; else end+=2;
+      result+='<span class="cmt">'+esc(s.slice(i,end))+'</span>'; i=end;
+    } else if(s[i]==='"'||s[i]==="'"||s[i]==='`') {
+      var q=s[i],j=i+1; while(j<s.length&&s[j]!==q){if(s[j]==='\\')j++;j++;}
+      j=Math.min(j+1,s.length);
+      result+='<span class="str">'+esc(s.slice(i,j))+'</span>'; i=j;
+    } else if(/[0-9]/.test(s[i])&&(i===0||/[\s,:(=[\]{}<>+\-*/|&!]/.test(s[i-1]))) {
+      var j=i; while(j<s.length&&/[0-9.xXa-fA-FeE_LlFf]/.test(s[j]))j++;
+      result+='<span class="num">'+esc(s.slice(i,j))+'</span>'; i=j;
+    } else if(/[a-zA-Z_$@]/.test(s[i])) {
+      var j=i; while(j<s.length&&/[a-zA-Z0-9_$@]/.test(s[j]))j++;
+      var w=s.slice(i,j);
+      if(kwSet[w])result+='<span class="kw">'+esc(w)+'</span>';
+      else if(tySet[w])result+='<span class="typ">'+esc(w)+'</span>';
+      else result+=esc(w); i=j;
+    } else { result+=esc(s[i]); i++; }
+  }
+  return result;
+}
+function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function escPath(p){return String(p).replace(/'/g,"\\'");}
+
+function inlineFormat(text) {
+  text = esc(text);
+  text = text.replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>');
+  text = text.replace(/\*(.+?)\*/g,'<em>$1</em>');
+  text = text.replace(/(^|[\s(])__([^_]+?)__(?=[\s.,;:!?)\]]|$)/g,'$1<strong>$2</strong>');
+  text = text.replace(/(^|[\s(])_([^_]+?)_(?=[\s.,;:!?)\]]|$)/g,'$1<em>$2</em>');
+  text = text.replace(/~~(.+?)~~/g,'<s>$1</s>');
+  text = text.replace(/`([^`]+)`/g,'<code>$1</code>');
+  text = text.replace(/\[([^\]]+)\]\(([^)]+)\)/g,'<a href="$2" target="_blank" rel="noopener">$1</a>');
+  // Tag blobs — bracketed forms first, then standalone
+  text = text.replace(/\[(T\d{3,})\]/g, '<span class="tag tag-task" data-xref="$1">$1</span>');
+  text = text.replace(/\[(TD-\d+)\]/gi, '<span class="tag tag-td" data-xref="$1">$1</span>');
+  text = text.replace(/\[(FR-\d+[a-z]?)\]/gi, '<span class="tag tag-fr" data-xref="$1">$1</span>');
+  text = text.replace(/\[(NFR-\d+)\]/gi, '<span class="tag tag-nfr" data-xref="$1">$1</span>');
+  text = text.replace(/\[(SC-(\d+))\]/gi, '<a href="https://app.shortcut.com/trust-wallet-1/story/$2" target="_blank" rel="noopener" class="tag tag-sc">$1</a>');
+  text = text.replace(/\[(CHK\d{3,})\]/gi, '<span class="tag tag-chk" data-xref="$1">$1</span>');
+  text = text.replace(/\[(US-?\d+)\]/gi, '<span class="tag tag-us" data-xref="$1">$1</span>');
+  text = text.replace(/\[(P)(\d+)\]/g, '<span class="tag tag-p" data-xref="P$2">P$2</span>');
+  text = text.replace(/\[P\]/g, '<span class="tag tag-p" title="Task can run concurrently">Parallel</span>');
+  // Standalone forms (skip if already inside a span)
+  text = text.replace(/\b(T\d{3,})\b(?![^<]*<\/span>)/g, '<span class="tag tag-task" data-xref="$1">$1</span>');
+  text = text.replace(/\b(TD-\d+)\b(?![^<]*<\/span>)/gi, '<span class="tag tag-td" data-xref="$1">$1</span>');
+  text = text.replace(/\b(FR-\d+[a-z]?)\b(?![^<]*<\/span>)/gi, '<span class="tag tag-fr" data-xref="$1">$1</span>');
+  text = text.replace(/\b(NFR-\d+)\b(?![^<]*<\/span>)/gi, '<span class="tag tag-nfr" data-xref="$1">$1</span>');
+  text = text.replace(/\b(SC-(\d+))\b(?![^<]*<\/span>)(?![^<]*<\/a>)/gi, '<a href="https://app.shortcut.com/trust-wallet-1/story/$2" target="_blank" rel="noopener" class="tag tag-sc">$1</a>');
+  text = text.replace(/\b(CHK\d{3,})\b(?![^<]*<\/span>)/gi, '<span class="tag tag-chk" data-xref="$1">$1</span>');
+  text = text.replace(/\b(US-?\d+)\b(?![^<]*<\/span>)/gi, '<span class="tag tag-us" data-xref="$1">$1</span>');
+  // File path chip: extract ". File: `path`" or "File: `path`" at end of text
+  text = text.replace(/\.?\s*File:\s*<code>([^<]+)<\/code>\s*$/g, '<br><span class="file-chip"><span class="file-chip-icon">&#128194;</span>$1</span>');
+  // File path chip: extract ", in `long/path`" or "in `long/path`" at end of text (paths with / and >= 40 chars)
+  text = text.replace(/,?\s+in\s+<code>([^<]*\/[^<]{30,})<\/code>\s*$/g, '<br><span class="file-chip"><span class="file-chip-icon">&#128194;</span>$1</span>');
+  // Auto-detect bare file paths (word/word/.../file.ext) not already inside tags, and wrap in file-chip
+  text = text.replace(/((?:^|[ ]))((?:[\w.~-]+\/)+[\w.-]+\.(?:kt|kts|java|py|ts|tsx|js|jsx|md|json|xml|yaml|yml|gradle|swift|html|css|sh|toml|properties))(?=[\s,;:—)}\]]|&mdash;|$)/g, function(m, pre, path) {
+    return pre + '<br><span class="file-chip"><span class="file-chip-icon">&#128194;</span>' + path + '</span>';
+  });
+  return text;
+}
+
+function formatStatusChips(html) {
+  return html
+    .replace(/\bPASS\b/g, '<span class="status-chip status-pass">PASS</span>')
+    .replace(/\bFAIL\b/g, '<span class="status-chip status-fail">FAIL</span>')
+    .replace(/\bSKIP\b/g, '<span class="status-chip status-skip">SKIP</span>')
+    .replace(/\bWARN\b/g, '<span class="status-chip status-warn">WARN</span>')
+    .replace(/\bN\/A\b/g, '<span class="status-chip status-na">N/A</span>');
+}
+
+function parseMarkdown(md) {
+  var lines=md.split('\n'), html='', i=0, inList=false, listType='', inBq=false, seenH1=false, metaDone=false;
+  function closeList(){if(inList){html+=listType==='ul'?'</ul>':'</ol>';inList=false;}}
+  function closeBq(){if(inBq){html+='</blockquote>';inBq=false;}}
+  while(i<lines.length){
+    var line=lines[i], tr=line.trim();
+    if(tr===''){closeList();closeBq();i++;continue;}
+    // Detect metadata block: consecutive **Key**: Value lines right after H1
+    if(seenH1&&!metaDone&&/^\*\*[^*]+\*\*[:\s]/.test(tr)){
+      var metaItems=[];
+      while(i<lines.length){
+        var ml=lines[i].trim();
+        if(ml===''){i++;continue;} // skip blank lines between meta items
+        var mm=ml.match(/^\*\*([^*]+)\*\*[:\s]\s*(.*)/);
+        if(!mm)break;
+        metaItems.push({label:mm[1],value:mm[2]});
+        i++;
+      }
+      if(metaItems.length>0){
+        html+='<div class="meta-card">';
+        metaItems.forEach(function(m){
+          html+='<div class="meta-item"><span class="meta-label">'+esc(m.label)+'</span> '+inlineFormat(m.value)+'</div>';
+        });
+        html+='</div>';
+      }
+      metaDone=true;
+      continue;
+    }
+    if(tr.indexOf('```')===0){
+      closeList();closeBq();
+      var lang=tr.slice(3).trim(), codeLines=[];i++;
+      while(i<lines.length&&lines[i].trim().indexOf('```')!==0){codeLines.push(lines[i]);i++;}i++;
+      var codeText=codeLines.join('\n');
+      var isDiff=lang==='diff'||(!lang&&codeLines.some(function(l){return/^[-+@]/.test(l.trim());}));
+      if(isDiff){
+        html+='<pre><code>'+codeLines.map(function(cl){
+          var t=cl.replace(/^\s+/,'');
+          if(t.indexOf('+ ')===0||(t[0]==='+'&&t.indexOf('+++')!==0))return'<span class="diff-add">'+esc(cl)+'</span>';
+          if(t.indexOf('- ')===0||(t[0]==='-'&&t.indexOf('---')!==0))return'<span class="diff-del">'+esc(cl)+'</span>';
+          if(t.indexOf('@@')===0)return'<span class="diff-hunk">'+esc(cl)+'</span>';
+          return esc(cl);
+        }).join('\n')+'</code></pre>';
+      } else { html+='<pre><code>'+highlight(codeText,lang)+'</code></pre>'; }
+      continue;
+    }
+    if(/^#{1,6}\s/.test(tr)){
+      closeList();closeBq();
+      var lvl=tr.match(/^(#{1,6})\s/)[1].length, txt=tr.slice(lvl+1);
+      if(lvl===1){html+='<h1>'+inlineFormat(txt)+'</h1>';seenH1=true;}
+      else{html+='{{SECTION:'+lvl+':'+txt+'}}';}
+      i++;continue;
+    }
+    if(tr[0]==='|'&&tr[tr.length-1]==='|'){
+      closeList();closeBq();var tl=[];
+      while(i<lines.length&&lines[i].trim()[0]==='|'&&lines[i].trim().slice(-1)==='|'){tl.push(lines[i].trim());i++;}
+      if(tl.length>=2){
+        html+='<table><thead><tr>';
+        tl[0].split('|').filter(function(c){return c.trim()!=='';}).forEach(function(c){html+='<th>'+inlineFormat(c.trim())+'</th>';});
+        html+='</tr></thead><tbody>';
+        for(var r=2;r<tl.length;r++){html+='<tr>';tl[r].split('|').filter(function(c){return c.trim()!=='';}).forEach(function(c){html+='<td>'+formatStatusChips(inlineFormat(c.trim()))+'</td>';});html+='</tr>';}
+        html+='</tbody></table>';
+      }continue;
+    }
+    if(tr[0]==='>'){closeList();if(!inBq){html+='<blockquote>';inBq=true;}html+='<p>'+inlineFormat(tr.slice(1).trim())+'</p>';i++;continue;}
+    if(tr==='---'||tr==='***'||tr==='___'){closeList();closeBq();html+='<hr>';i++;continue;}
+    var cbM=tr.match(/^[-*]\s+\[([ xX])\]\s+(.*)/);
+    if(cbM){if(!inList){html+='<ul>';inList=true;listType='ul';}
+      var ck=cbM[1]!==' ',cls=ck?'cb cb-checked':'cb cb-empty';
+      html+='<li class="checkbox-item"><span class="'+cls+'"></span>'+inlineFormat(cbM[2])+'</li>';i++;continue;}
+    var ulM=tr.match(/^[-*+]\s+(.*)/);
+    if(ulM){if(!inList||listType!=='ul'){closeList();html+='<ul>';inList=true;listType='ul';}
+      html+='<li>'+inlineFormat(ulM[1])+'</li>';i++;continue;}
+    var olM=tr.match(/^\d+\.\s+(.*)/);
+    if(olM){if(!inList||listType!=='ol'){closeList();html+='<ol>';inList=true;listType='ol';}
+      html+='<li>'+inlineFormat(olM[1])+'</li>';i++;continue;}
+    closeList();closeBq();html+='<p>'+inlineFormat(tr)+'</p>';i++;
+  }
+  closeList();closeBq();return html;
+}
+
+var sectionIcons = ['','','&#9670;','&#9672;','&#9674;','&#8227;','&#8226;'];
+var _cleaned = MARKDOWN.replace(/<!--[\s\S]*?-->/g,'').trim();
+var isConstitution = /^#\s+.*[Cc]onstitution/.test(_cleaned);
+var isChecklist = /^#\s+.*[Cc]hecklist/.test(_cleaned);
+var isTasks = /^#\s+.*[Tt]ask/.test(_cleaned);
+var isPlan = /^#\s+.*[Pp]lan/.test(_cleaned);
+var isSpec = /^#\s+.*[Ss]pecification/.test(_cleaned);
+var isResearch = /^#\s+.*[Rr]esearch/.test(_cleaned);
+var _reviewTagId = 0;
+
+function stripMandatory(text) {
+  return text.replace(/\s*\*?\(mandatory\)\*?\s*/gi, '');
+}
+
+function formatPriority(text) {
+  return text.replace(/\(Priority:\s*(P[1-4])\)/gi, function(match, p) {
+    var cls = 'priority-' + p.toLowerCase();
+    return '<span class="priority-badge ' + cls + '">' + p + '</span>';
+  });
+}
+
+function buildSections(html) {
+  var parts=html.split(/\{\{SECTION:(\d+):(.+?)\}\}/);
+  var result='', openD=[], secCount=0;
+  var showReviewTags = !isConstitution && !isChecklist;
+  for(var i=0;i<parts.length;i++){
+    if(i%3===0){result+=parts[i];}
+    else if(i%3===1){
+      var level=parseInt(parts[i]),text=parts[i+1];i++;
+      text = stripMandatory(text);
+      // Inject [USx] tag into "User Story x" headings for xref navigation
+      text = text.replace(/(user\s+story\s+(\d+))/i, function(m, full, n) {
+        return full + ' [US' + n + ']';
+      });
+      while(openD.length>0&&openD[openD.length-1]>=level){result+='</div></details>';openD.pop();}
+      secCount++;
+      if(level<=2){
+        var tagId = 'review-tag-' + (_reviewTagId++);
+        var showTag = showReviewTags && !(isTasks && !/phase\s+\d/i.test(text));
+        result+='<details class="sec-h2"><summary>'
+          +'<span class="sec-icon">'+secCount+'</span>'
+          +'<span class="heading-text">'+formatPriority(inlineFormat(text))+'</span>'
+          +(showTag ? '<span class="sec-tag review-required" id="'+tagId+'" onclick="toggleReview(event,\''+tagId+'\')">&#9888;&#65039; Review required</span>' : '')
+          +'<span class="chevron">&#9654;</span>'
+          +'</summary><div class="section-content">';
+      } else if(level===3){
+        var h3TagId = 'review-tag-' + (_reviewTagId++);
+        var showH3Tag = showReviewTags && /user\s+story|edge\s+cases|td-\d+/i.test(text);
+        result+='<details class="sec-h3"><summary>'
+          +'<span class="heading-text">'+formatPriority(inlineFormat(text))+'</span>'
+          +(showH3Tag ? '<span class="sec-tag review-required" id="'+h3TagId+'" onclick="toggleReview(event,\''+h3TagId+'\')">&#9888;&#65039; Review required</span>' : '')
+          +'<span class="chevron">&#9654;</span>'
+          +'</summary><div class="section-content">';
+      } else {
+        result+='<details class="sec-h4"><summary>'
+          +'<span class="heading-text">'+formatPriority(inlineFormat(text))+'</span>'
+          +'<span class="chevron">&#9654;</span>'
+          +'</summary><div class="section-content">';
+      }
+      openD.push(level);
+    }
+  }
+  while(openD.length>0){result+='</div></details>';openD.pop();}
+  return result;
+}
+
+// Simple djb2 hash for content change detection
+function hashContent(str) {
+  var s = str.replace(/\s+/g, ' ').trim();
+  var hash = 5381;
+  for (var i = 0; i < s.length; i++) {
+    hash = ((hash << 5) + hash) + s.charCodeAt(i);
+    hash |= 0;
+  }
+  return 'h' + (hash >>> 0).toString(36);
+}
+
+// Get content hash for the section containing a review tag.
+// For H2 sections, hashes only direct content (excludes nested H3 subsections).
+function getSectionHash(el) {
+  var details = el.closest('details.sec-h3') || el.closest('details.sec-h2');
+  if (!details) return '';
+  var content = details.querySelector('.section-content');
+  if (!content) return '';
+  if (details.classList.contains('sec-h2')) {
+    var clone = content.cloneNode(true);
+    [].forEach.call(clone.querySelectorAll('details.sec-h3'), function(d) { d.parentNode.removeChild(d); });
+    return hashContent(clone.textContent);
+  }
+  return hashContent(content.textContent);
+}
+
+var _reviewStoreKey = 'speckit-reviews-' + location.pathname;
+
+function markTagReviewed(el, store) {
+  el.classList.remove('review-required');
+  el.classList.add('reviewed');
+  el.innerHTML = '&#10003; Reviewed';
+  store[el.id] = getSectionHash(el) || true;
+}
+function markTagPending(el, store) {
+  el.classList.remove('reviewed');
+  el.classList.add('review-required');
+  el.innerHTML = '&#9888;&#65039; Review required';
+  delete store[el.id];
+}
+function syncParentH2(h3El, store) {
+  var parentH2 = h3El.closest('details.sec-h2');
+  if (!parentH2) return;
+  var h3Tags = parentH2.querySelectorAll('details.sec-h3 > summary > .sec-tag');
+  if (h3Tags.length === 0) return;
+  var allReviewed = [].every.call(h3Tags, function(t) { return t.classList.contains('reviewed'); });
+  var h2Tag = parentH2.querySelector(':scope > summary > .sec-tag');
+  if (!h2Tag) return;
+  if (allReviewed) {
+    markTagReviewed(h2Tag, store);
+    parentH2.open = false;
+  } else if (h2Tag.classList.contains('reviewed')) {
+    markTagPending(h2Tag, store);
+  }
+}
+function toggleReview(event, tagId) {
+  event.stopPropagation();
+  event.preventDefault();
+  var el = document.getElementById(tagId);
+  if (!el) return;
+  var store;
+  try { store = JSON.parse(localStorage.getItem(_reviewStoreKey) || '{}'); } catch(e) { store = {}; }
+  var isH3 = !!el.closest('details.sec-h3');
+  var isH2 = !isH3 && !!el.closest('details.sec-h2');
+  if (el.classList.contains('review-required')) {
+    markTagReviewed(el, store);
+    // Collapse the toggled section
+    var details = el.closest('details.sec-h3') || el.closest('details.sec-h2');
+    if (details) details.open = false;
+    // If H3: check if all sibling H3s in parent H2 are reviewed → auto-review parent
+    if (isH3) syncParentH2(el, store);
+    // If H2: also mark all child H3 User Story tags as reviewed
+    if (isH2) {
+      var parentH2 = el.closest('details.sec-h2');
+      if (parentH2) {
+        [].forEach.call(parentH2.querySelectorAll('details.sec-h3 > summary > .sec-tag'), function(t) {
+          markTagReviewed(t, store);
+          var d = t.closest('details.sec-h3'); if (d) d.open = false;
+        });
+      }
+    }
+  } else {
+    markTagPending(el, store);
+    // Expand the toggled section
+    var details = el.closest('details.sec-h3') || el.closest('details.sec-h2');
+    if (details) {
+      details.open = true;
+      [].forEach.call(details.querySelectorAll('details'), function(c){ c.open = true; });
+    }
+    // If H3: un-review parent H2 if it was auto-reviewed
+    if (isH3) {
+      var parentH2 = el.closest('details.sec-h2');
+      if (parentH2) {
+        var h2Tag = parentH2.querySelector(':scope > summary > .sec-tag');
+        if (h2Tag && h2Tag.classList.contains('reviewed')) {
+          markTagPending(h2Tag, store);
+          parentH2.open = true;
+        }
+      }
+    }
+    // If H2: also un-review all child H3 User Story tags
+    if (isH2) {
+      var parentH2 = el.closest('details.sec-h2');
+      if (parentH2) {
+        [].forEach.call(parentH2.querySelectorAll('details.sec-h3 > summary > .sec-tag'), function(t) {
+          markTagPending(t, store);
+          var d = t.closest('details.sec-h3'); if (d) { d.open = true; [].forEach.call(d.querySelectorAll('details'), function(c){ c.open = true; }); }
+        });
+      }
+    }
+  }
+  localStorage.setItem(_reviewStoreKey, JSON.stringify(store));
+  updateReviewCounter();
+  // Update collapse button text to reflect current state
+  var btn = document.getElementById('collapse-btn');
+  if (btn) {
+    var anyOpen = [].some.call(document.querySelectorAll('details'), function(d){ return d.open; });
+    btn.innerHTML = anyOpen ? '&#9776; Collapse All' : '&#9776; Expand All';
+  }
+}
+
+function restoreReviewStates() {
+  var store;
+  try { store = JSON.parse(localStorage.getItem(_reviewStoreKey) || '{}'); } catch(e) { store = {}; }
+  Object.keys(store).forEach(function(tagId) {
+    var el = document.getElementById(tagId);
+    if (el && store[tagId]) {
+      // If a content hash was stored, compare against current content.
+      // If the section was modified since review, reset to pending.
+      if (typeof store[tagId] === 'string') {
+        var currentHash = getSectionHash(el);
+        if (currentHash && store[tagId] !== currentHash) {
+          delete store[tagId];
+          return; // leave as review-required
+        }
+      }
+      el.classList.remove('review-required');
+      el.classList.add('reviewed');
+      el.innerHTML = '&#10003; Reviewed';
+      var details = el.closest('details.sec-h3') || el.closest('details.sec-h2');
+      if (details) details.open = false;
+    }
+  });
+  // Sync parent H2 sections
+  [].forEach.call(document.querySelectorAll('details.sec-h2'), function(h2) {
+    var h3Tags = h2.querySelectorAll('details.sec-h3 > summary > .sec-tag');
+    if (h3Tags.length === 0) return;
+    var allReviewed = [].every.call(h3Tags, function(t) { return t.classList.contains('reviewed'); });
+    var h2Tag = h2.querySelector(':scope > summary > .sec-tag');
+    if (!h2Tag) return;
+    if (allReviewed) {
+      // All child H3 tags reviewed → auto-review parent H2
+      markTagReviewed(h2Tag, store);
+      h2.open = false;
+    } else if (h2Tag.classList.contains('reviewed')) {
+      // H2 was reviewed but some children are now pending → un-review H2
+      markTagPending(h2Tag, store);
+    }
+  });
+  localStorage.setItem(_reviewStoreKey, JSON.stringify(store));
+}
+
+function updateReviewCounter() {
+  var counter = document.getElementById('review-counter');
+  var tags = document.querySelectorAll('.sec-tag');
+  var total = tags.length;
+  var pending = document.querySelectorAll('.sec-tag.review-required').length;
+  if (counter) {
+    if (total === 0) { counter.style.display = 'none'; }
+    else {
+      counter.style.display = '';
+      if (pending === 0) {
+        counter.className = 'review-counter all-done';
+        counter.innerHTML = '<span class="count">0</span> sections need review';
+      } else {
+        counter.className = 'review-counter';
+        counter.innerHTML = '<span class="count">' + pending + '</span> sections need review';
+      }
+    }
+  }
+  // Notify parent frame with counter data (includes page ID and reviewed count
+  // to work around file:// cross-origin iframe localStorage isolation)
+  if (window !== window.top) {
+    var reviewed = total - pending;
+    var page = (typeof NAV_DATA !== 'undefined' && NAV_DATA.currentPage) ? NAV_DATA.currentPage : '';
+    window.parent.postMessage({ type: 'speckit-review-updated', pending: pending, total: total, page: page, reviewed: reviewed }, '*');
+  }
+  updateNavReviewCounters();
+}
+
+function getReviewedCountFromStorage(pagePath, totalSections) {
+  if (!pagePath || !totalSections) return null;
+  try {
+    var absPath = new URL(pagePath, location.href).pathname;
+    var storeKey = 'speckit-reviews-' + absPath;
+    var store = JSON.parse(localStorage.getItem(storeKey) || '{}');
+    var reviewed = Object.keys(store).filter(function(k) { return store[k]; }).length;
+    return { reviewed: Math.min(reviewed, totalSections), total: totalSections };
+  } catch(e) { return null; }
+}
+
+function updateNavReviewCounters() {
+  if (typeof NAV_DATA === 'undefined' || !NAV_DATA.feature) return;
+  var nav = NAV_DATA;
+  var pages = [
+    { id: 'spec', path: nav.spec, total: nav.specSections || 0 },
+    { id: 'plan', path: nav.plan, total: nav.planSections || 0 },
+    { id: 'tasks', path: nav.tasks, total: nav.tasksSections || 0 }
+  ];
+  var curPage = nav.currentPage;
+  pages.forEach(function(pg) {
+    var el = document.getElementById('nav-review-' + pg.id);
+    if (!el) return;
+    var count;
+    if (pg.id === curPage) {
+      // Current page - count from DOM (most accurate)
+      var reviewed = document.querySelectorAll('.sec-tag.reviewed').length;
+      var total = document.querySelectorAll('.sec-tag').length;
+      count = total > 0 ? { reviewed: reviewed, total: total } : null;
+    } else {
+      count = getReviewedCountFromStorage(pg.path, pg.total);
+    }
+    if (!count || !count.total) { el.textContent = ''; return; }
+    var allDone = count.reviewed === count.total;
+    el.className = 'nav-chk-count' + (allDone ? ' all-done' : '');
+    el.textContent = ' ' + count.reviewed + '/' + count.total;
+  });
+}
+
+/* --- Cross-reference navigation --- */
+var TAG_PAGE_MAP = { task:'tasks', td:'plan', fr:'spec', nfr:'spec', us:'spec' };
+
+function assignTagAnchors() {
+  var seen = {};
+  var preferred = {};
+  var els = document.querySelectorAll('[data-xref]');
+  // First pass: find preferred anchors inside headings (summary elements)
+  for (var i = 0; i < els.length; i++) {
+    var ref = els[i].getAttribute('data-xref');
+    if (!preferred[ref] && els[i].closest('summary')) {
+      preferred[ref] = els[i];
+    }
+  }
+  // Second pass: assign IDs, preferring heading elements
+  for (var i = 0; i < els.length; i++) {
+    var ref = els[i].getAttribute('data-xref');
+    if (!seen[ref]) {
+      var target = preferred[ref] || els[i];
+      target.id = 'ref-' + ref;
+      seen[ref] = true;
+    }
+  }
+}
+
+function activateXrefs() {
+  if (!NAV_DATA || !NAV_DATA.feature) return;
+  var nav = NAV_DATA;
+  var curPage = nav.currentPage;
+  var pagePaths = {};
+  if (nav.spec) pagePaths['spec'] = nav.spec;
+  if (nav.plan) pagePaths['plan'] = nav.plan;
+  if (nav.tasks) pagePaths['tasks'] = nav.tasks;
+
+  var els = document.querySelectorAll('[data-xref]');
+  for (var i = 0; i < els.length; i++) {
+    var el = els[i];
+    var type = '';
+    if (el.classList.contains('tag-task')) type = 'task';
+    else if (el.classList.contains('tag-td')) type = 'td';
+    else if (el.classList.contains('tag-fr')) type = 'fr';
+    else if (el.classList.contains('tag-nfr')) type = 'nfr';
+    else if (el.classList.contains('tag-us')) type = 'us';
+    if (!type) continue;
+
+    var targetPage = TAG_PAGE_MAP[type];
+    if (!targetPage) continue;
+    if (targetPage === curPage) continue;
+    if (!pagePaths[targetPage]) {
+      el.classList.add('tag-unresolvable');
+      continue;
+    }
+    el.classList.add('xref');
+    el.setAttribute('data-xref-path', pagePaths[targetPage]);
+    el.onclick = function() { xrefClick(this); };
+  }
+}
+
+function xrefClick(el) {
+  var path = el.getAttribute('data-xref-path');
+  var ref = el.getAttribute('data-xref');
+  var anchor = 'ref-' + ref;
+  if (window !== window.top) {
+    // Resolve relative path to absolute so the parent page (which may be in a
+    // different directory) can use it directly as an iframe src.
+    var a = document.createElement('a');
+    a.href = path;
+    window.parent.postMessage({ type: 'speckit-xref-navigate', path: a.href, anchor: anchor }, '*');
+  } else {
+    openSplitView(path + '#' + anchor);
+  }
+}
+
+function scrollToRef(anchorId) {
+  var el = document.getElementById(anchorId);
+  if (!el) return;
+  var node = el.parentElement;
+  while (node) {
+    if (node.tagName === 'DETAILS') node.open = true;
+    node = node.parentElement;
+  }
+  el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  el.classList.add('xref-highlight');
+  setTimeout(function() { el.classList.remove('xref-highlight'); }, 1500);
+}
+
+function render(){
+  var cleaned=MARKDOWN.replace(/<!--[\s\S]*?-->/g,'');
+  var rawHtml=parseMarkdown(cleaned);
+  // Backward compat: flatten old nested specs to flat H2 structure
+  if (isSpec) {
+    // Remove parent wrappers (old format had these as H2 with H3 children)
+    rawHtml = rawHtml.replace(/\{\{SECTION:2:User Scenarios[^}]*\}\}/gi, '');
+    rawHtml = rawHtml.replace(/\{\{SECTION:2:Requirements[^}]*\}\}/gi, '');
+    // Promote H3 children to H2
+    rawHtml = rawHtml.replace(/\{\{SECTION:3:(User Story[^}]*)\}\}/gi, '{{SECTION:2:$1}}');
+    rawHtml = rawHtml.replace(/\{\{SECTION:3:(Edge Cases[^}]*)\}\}/gi, '{{SECTION:2:$1}}');
+    rawHtml = rawHtml.replace(/\{\{SECTION:3:(Functional Requirements[^}]*)\}\}/gi, '{{SECTION:2:$1}}');
+    rawHtml = rawHtml.replace(/\{\{SECTION:3:(Key Entities[^}]*)\}\}/gi, '{{SECTION:2:$1}}');
+  }
+  var structured=buildSections(rawHtml);
+  document.getElementById('content').innerHTML=structured;
+  // Auto-expand child subsections when parent h2 opens
+  [].forEach.call(document.querySelectorAll('details.sec-h2'), function(d){
+    d.addEventListener('toggle', function(){
+      if(d.open){
+        [].forEach.call(d.querySelectorAll('details'), function(child){ child.open=true; });
+      }
+    });
+  });
+  // Page-type specific: expand sections on load
+  if(isChecklist || isSpec){
+    [].forEach.call(document.querySelectorAll('details'), function(d){ d.open=true; });
+  } else if(isTasks||isPlan){
+    [].forEach.call(document.querySelectorAll('details.sec-h2'), function(d){
+      var txt=d.querySelector('.heading-text');
+      if(txt&&/\bformat\b/i.test(txt.textContent)){return;}
+      d.open=true;
+      [].forEach.call(d.querySelectorAll('details'), function(c){ c.open=true; });
+    });
+  } else if(isResearch){
+    // Expand all; restoreReviewStates() will collapse reviewed sections
+    [].forEach.call(document.querySelectorAll('details'), function(d){ d.open=true; });
+  }
+  // Restore review states and show counter
+  restoreReviewStates();
+  updateReviewCounter();
+  // Expand all if loaded in split pane (via ?expand=1 URL param)
+  if (new URLSearchParams(location.search).get('expand') === '1') {
+    [].forEach.call(document.querySelectorAll('details'), function(d) { d.open = true; });
+  }
+  // Assign anchor IDs and activate cross-page references
+  assignTagAnchors();
+  activateXrefs();
+  // Hash-based scroll to ref
+  if (location.hash && location.hash.indexOf('#ref-') === 0) {
+    setTimeout(function() { scrollToRef(location.hash.slice(1)); }, 200);
+  }
+  // Update collapse button state if all expanded
+  var btn = document.getElementById('collapse-btn');
+  if(btn){
+    var anyOpen = [].some.call(document.querySelectorAll('details'), function(d){ return d.open; });
+    btn.innerHTML = anyOpen ? '&#9776; Collapse All' : '&#9776; Expand All';
+  }
+}
+render();
+
+/* --- Iframe detection & split restore --- */
+(function() {
+  if (window !== window.top) {
+    document.body.classList.add('in-iframe');
+    // Send initial state to parent
+    var anyOpen = [].some.call(document.querySelectorAll('details'), function(d){ return d.open; });
+    window.parent.postMessage({ type: 'speckit-collapse-state', anyOpen: anyOpen }, '*');
+    return;
+  }
+  // Restore split view from localStorage
+  if (localStorage.getItem('speckit-split-active') === 'true') {
+    var url = localStorage.getItem('speckit-split-url');
+    if (url) openSplitView(url);
+  }
+})();
+
+/* --- Parent page communication --- */
+window.addEventListener('message', function(e) {
+  if (e.data && e.data.type === 'speckit-theme-change') {
+    var theme = e.data.theme || localStorage.getItem('speckit-theme') || 'light';
+    document.documentElement.setAttribute('data-theme', theme);
+    var btn = document.getElementById('theme-btn');
+    if (btn) btn.innerHTML = theme === 'dark' ? '&#9788; Light' : '&#9790; Dark';
+  }
+  if (e.data && e.data.type === 'speckit-toggle-all') {
+    var ds = document.querySelectorAll('details');
+    [].forEach.call(ds, function(d){ d.open = e.data.expand; });
+    var btn = document.getElementById('collapse-btn');
+    if (btn) btn.innerHTML = e.data.expand ? '&#9776; Collapse All' : '&#9776; Expand All';
+    // Notify parent of new collapse state
+    if (window !== window.top) {
+      window.parent.postMessage({ type: 'speckit-collapse-state', anyOpen: e.data.expand }, '*');
+    }
+  }
+  if (e.data && e.data.type === 'speckit-scroll-to-ref') {
+    scrollToRef(e.data.anchor);
+  }
+});
+
+/* --- Navigation Sidebar --- */
+(function renderNavSidebar() {
+  var nav = NAV_DATA;
+  var sb = document.getElementById('nav-sidebar');
+  if (!sb) return;
+
+  // For constitution/global pages, show sidebar with last feature context
+  if (!nav || !nav.feature) {
+    if (!isConstitution) return;
+    // On constitution page, try to restore last feature's nav from localStorage
+    var lastNav = localStorage.getItem('speckit-nav-data');
+    if (!lastNav) return;
+    try { nav = JSON.parse(lastNav); } catch(e) { return; }
+    if (!nav || !nav.feature) return;
+    nav.currentPage = 'constitution';
+  }
+
+  // Save nav data for constitution page use
+  if (nav.feature && nav.currentPage !== 'constitution') {
+    localStorage.setItem('speckit-nav-data', JSON.stringify(nav));
+  }
+
+  document.body.classList.add('has-nav');
+
+  var cur = nav.currentPage; // e.g. "spec", "plan", "research", "tasks", "chk-requirements"
+
+  // Implementation status
+  var implDone = !!(nav.implementationDone);
+  // Ready to Implement is reachable when tasks exist and analyze is clear
+  var readyReachable = !!(nav.tasks && nav.analyze && nav.analyzeClear);
+
+  // Define the workflow chain order
+  var mainSteps = [
+    { id: 'spec', label: 'Spec', path: nav.spec },
+    { id: 'plan', label: 'Plan', path: nav.plan },
+    { id: 'checklists', label: 'Checklists', path: '' }, // virtual parent
+    { id: 'tasks', label: 'Tasks', path: nav.tasks },
+    { id: 'analyze', label: 'Analyze', path: nav.analyze || '' },
+    { id: 'ready', label: implDone ? 'Implementation Done' : 'Ready to Implement', path: '' },
+    { id: 'post-analyze', label: 'Post Analyze', path: '' }
+  ];
+  // Plan sub-items
+  var planSubs = [];
+  if (nav.research || cur === 'research') planSubs.push({ id: 'research', label: 'Research', path: nav.research });
+  if (nav.dataModel || cur === 'data-model') planSubs.push({ id: 'data-model', label: 'Data Model', path: nav.dataModel });
+  if (nav.quickstart || cur === 'quickstart') planSubs.push({ id: 'quickstart', label: 'Quickstart', path: nav.quickstart });
+
+  // Determine which main step is current
+  var curMain = cur;
+  if (cur === 'research' || cur === 'data-model' || cur === 'quickstart') curMain = 'plan';
+  if (cur.indexOf('chk-') === 0) curMain = 'checklists';
+
+  // Order for "done" logic: spec=0, plan=1, checklists=2, tasks=3, analyze=4, ready=5, post-analyze=6
+  var mainOrder = { spec: 0, plan: 1, checklists: 2, tasks: 3, analyze: 4, ready: 5, 'post-analyze': 6 };
+  var curIdx = mainOrder[curMain] !== undefined ? mainOrder[curMain] : -1;
+
+  function getState(stepId, stepIdx) {
+    // If this IS the current page exactly, pulse it
+    if (stepId === cur) return 'current';
+    // If we're on a sub-page (research/checklist), mark the parent as done not current
+    if (stepId === curMain && curMain !== cur) return 'done';
+    // All steps before the current main step are done
+    if (stepIdx < curIdx) return 'done';
+    // Analyze: green only when page exists and report is clear (empty or no concerns)
+    if (stepId === 'analyze' && nav.analyze && nav.analyzeClear) return 'done';
+    // Ready to Implement: green when implementation done or reachable (tasks + analyze clear)
+    if (stepId === 'ready' && (implDone || readyReachable)) return 'done';
+    // Post Analyze: solid (not dotted) when Ready to Implement is reachable
+    if (stepId === 'post-analyze' && (implDone || readyReachable)) return 'reachable';
+    // Everything else is default (exists or dotted based on path)
+    return '';
+  }
+
+  function itemClass(state, hasPath, isLast, noLine) {
+    var cls = 'nav-item';
+    if (state === 'current') cls += ' current exists';
+    else if (state === 'done') cls += ' done exists';
+    else if (state === 'reachable') cls += ' exists';
+    else if (hasPath) cls += ' exists';
+    else cls += ' dotted disabled';
+    if (noLine) cls += ' no-line';
+    return cls;
+  }
+
+  // Map nav items to speckit commands for tooltip on dotted items
+  var cmdMap = { spec: '/speckit.specify', plan: '/speckit.plan', checklists: '/speckit.checklist', tasks: '/speckit.tasks',
+    analyze: '/speckit.analyze', ready: '/speckit.implement', 'post-analyze': '/speckit.analyze --post-impl',
+    research: '/speckit.plan', 'data-model': '/speckit.plan', quickstart: '/speckit.plan' };
+
+  // Info icon map: items that show (i) with /speckit.clarify tooltip
+  var infoMap = { spec: '/speckit.clarify', plan: '/speckit.clarify', checklists: '/speckit.clarify' };
+
+  function tooltipHtml(id) { var cmd = cmdMap[id]; return cmd ? '<span class="nav-tooltip">' + cmd + '</span>' : ''; }
+  function infoIconHtml(id) { var cmd = infoMap[id]; return cmd ? '<span class="nav-info" onclick="event.stopPropagation()">i<span class="nav-info-tip">' + cmd + '</span></span>' : ''; }
+
+  // Pre-compute which steps will be dotted (for line-to-dotted lookahead)
+  function isDotted(stepId, stepIdx) {
+    var s = getState(stepId, stepIdx);
+    if (s === 'current' || s === 'reachable') return false;
+    // Virtual steps (ready, post-analyze) are not dotted when done
+    if (s === 'done' && (stepId === 'ready' || stepId === 'post-analyze')) return false;
+    // Items without paths stay dotted even if "done" by order (speckit.fast skipped items)
+    if (stepId === 'checklists') return !(nav.checklists && nav.checklists.length > 0);
+    var st = mainSteps[stepIdx];
+    return !st || !st.path;
+  }
+
+  var html = '<div class="nav-feature" title="' + esc(nav.feature) + '">' + esc(nav.feature) + '</div>';
+  html += '<div class="nav-chain">';
+
+  for (var mi = 0; mi < mainSteps.length; mi++) {
+    var step = mainSteps[mi];
+    var state = getState(step.id, mi);
+    var hasPath = !!step.path;
+    var isLast = mi === mainSteps.length - 1 && planSubs.length === 0 && (!nav.checklists || nav.checklists.length === 0);
+
+    // Virtual "checklists" parent: make it clickable to first checklist if exists
+    if (step.id === 'checklists') {
+      hasPath = nav.checklists && nav.checklists.length > 0;
+      if (hasPath) step.path = nav.checklists[0].path;
+    }
+
+    // Items without paths stay dotted even if "done" by order (speckit.fast skipped items)
+    if (state === 'done' && !hasPath && step.id !== 'ready' && step.id !== 'post-analyze') {
+      state = '';
+    }
+
+    // Line is dotted if either this node or the next node is dotted
+    var nextDotted = (mi + 1 < mainSteps.length) && isDotted(mainSteps[mi + 1].id, mi + 1);
+    var lineCls = nextDotted ? ' line-to-dotted' : '';
+
+    var href = hasPath ? ' onclick="navGo(\'' + escPath(step.path) + '\')"' : '';
+    html += '<div class="' + itemClass(state, hasPath, false, false) + lineCls + '"' + href + '>';
+    html += '<div class="nav-line"></div>';
+    html += '<div class="nav-circle"></div>';
+    var aggSpan = (step.id === 'checklists') ? '<span id="nav-chk-aggregate"></span>' : '';
+    var reviewSpan = (['spec', 'plan', 'tasks'].indexOf(step.id) >= 0) ? '<span class="nav-chk-count" id="nav-review-' + step.id + '"></span>' : '';
+    html += '<div class="nav-label">' + esc(step.label) + reviewSpan + aggSpan + infoIconHtml(step.id) + '</div>';
+    if (!hasPath) html += tooltipHtml(step.id);
+    html += '</div>';
+
+    // Plan sub-items after plan
+    if (step.id === 'plan' && planSubs.length > 0) {
+      // Trunk state: green if plan step is done, or if we're in plan section (current or sub-page)
+      var trunkCls = (state === 'done' || curMain === 'plan') ? ' trunk-done' : '';
+      for (var pi = 0; pi < planSubs.length; pi++) {
+        var ps = planSubs[pi];
+        var pState = (cur === ps.id) ? 'current' : (curIdx > 1 && ps.path ? 'done' : '');
+        var pHref = ps.path ? ' onclick="navGo(\'' + escPath(ps.path) + '\')"' : '';
+        var lastBranch = (pi === planSubs.length - 1) ? ' last-branch' : '';
+        html += '<div class="nav-branch' + trunkCls + lastBranch + ' ' + itemClass(pState, !!ps.path, false, false) + '"' + pHref + '>';
+        html += '<div class="nav-circle"></div>';
+        html += '<div class="nav-label">' + esc(ps.label) + '</div>';
+        if (!ps.path) html += tooltipHtml(ps.id);
+        html += '</div>';
+      }
+    }
+
+    // Checklist sub-items after checklists
+    if (step.id === 'checklists' && nav.checklists && nav.checklists.length > 0) {
+      var chkTrunkCls = (state === 'done' || curMain === 'checklists') ? ' trunk-done' : '';
+      for (var ci = 0; ci < nav.checklists.length; ci++) {
+        var chk = nav.checklists[ci];
+        var cState = (cur === 'chk-' + chk.name) ? 'current' : (curIdx > 2 && chk.path ? 'done' : '');
+        var cHref = chk.path ? ' onclick="navGo(\'' + escPath(chk.path) + '\')"' : '';
+        var lastChk = (ci === nav.checklists.length - 1) ? ' last-branch' : '';
+        html += '<div class="nav-branch' + chkTrunkCls + lastChk + ' ' + itemClass(cState, !!chk.path, false, false) + '"' + cHref + '>';
+        html += '<div class="nav-circle"></div>';
+        html += '<div class="nav-label">' + esc(chk.name) + '</div>';
+        if (chk.total > 0 && chk.name !== 'requirements') {
+          var chkAllDone = chk.checked === chk.total ? ' all-done' : '';
+          html += '<span class="nav-count' + chkAllDone + '">' + chk.checked + '/' + chk.total + '</span>';
+        }
+        if (!chk.path) html += tooltipHtml('checklists');
+        html += '</div>';
+      }
+    }
+  }
+
+  html += '</div>'; // close nav-chain
+
+  // Constitution at bottom, separated
+  if (nav.constitution) {
+    html += '<hr class="nav-sep">';
+    var cState = (cur === 'constitution') ? 'current' : 'exists';
+    html += '<div class="nav-item no-line ' + cState + ' exists" onclick="navGo(\'' + escPath(nav.constitution) + '\')">';
+    html += '<div class="nav-circle"></div>';
+    html += '<div class="nav-label">Constitution</div>';
+    html += '</div>';
+  }
+
+  sb.innerHTML = html;
+
+  // Populate aggregate checkbox counter for Checklists parent
+  if (nav._chkAggregate && nav._chkAggregate.total > 0) {
+    var aggEl = document.getElementById('nav-chk-aggregate');
+    if (aggEl) {
+      var allDone = nav._chkAggregate.checked === nav._chkAggregate.total;
+      aggEl.className = 'nav-chk-count' + (allDone ? ' all-done' : '');
+      aggEl.textContent = ' ' + nav._chkAggregate.checked + '/' + nav._chkAggregate.total;
+    }
+  }
+
+  // Populate review counters for Spec, Plan, Tasks nav items
+  updateNavReviewCounters();
+
+  // Save feature name for constitution page
+  localStorage.setItem('speckit-last-feature', nav.feature);
+})();
+
+/* --- Next Page Button / Hint --- */
+(function renderNextButton() {
+  if (window !== window.top) return; // skip in iframe
+  var nav = NAV_DATA;
+  if (!nav || !nav.feature) return;
+  var cur = nav.currentPage;
+  var container = document.getElementById('content');
+
+  // Hints for when the next page hasn't been generated yet
+  var nextHints = {
+    spec: '/speckit.plan OR /speckit.clarify',
+    plan: '/speckit.checklist OR /speckit.tasks',
+    tasks: '/speckit.analyze'
+  };
+
+  // Check if a clickable next page exists
+  var pages = [];
+  if (nav.spec) pages.push({ id: 'spec', label: 'Spec', path: nav.spec });
+  if (nav.plan) pages.push({ id: 'plan', label: 'Plan', path: nav.plan });
+  if (nav.research) pages.push({ id: 'research', label: 'Research', path: nav.research });
+  if (nav.dataModel) pages.push({ id: 'data-model', label: 'Data Model', path: nav.dataModel });
+  if (nav.quickstart) pages.push({ id: 'quickstart', label: 'Quickstart', path: nav.quickstart });
+  if (nav.checklists) {
+    nav.checklists.forEach(function(chk) {
+      if (chk.path) pages.push({ id: 'chk-' + chk.name, label: chk.name.charAt(0).toUpperCase() + chk.name.slice(1) + ' Checklist', path: chk.path });
+    });
+  }
+  if (nav.tasks) pages.push({ id: 'tasks', label: 'Tasks', path: nav.tasks });
+
+  var curIdx = -1;
+  for (var i = 0; i < pages.length; i++) {
+    if (pages[i].id === cur) { curIdx = i; break; }
+  }
+
+  // If there's a next page in the chain, show the clickable button
+  if (curIdx >= 0 && curIdx < pages.length - 1) {
+    var next = pages[curIdx + 1];
+    var btn = document.createElement('a');
+    btn.className = 'next-page-btn';
+    btn.href = next.path;
+    btn.innerHTML = 'Next: ' + esc(next.label) + ' &#10132;';
+    container.appendChild(btn);
+    return;
+  }
+
+  // Otherwise, show a non-clickable hint if one is defined for this page type
+  var hint = nextHints[cur];
+  if (hint) {
+    var el = document.createElement('div');
+    el.className = 'next-page-hint';
+    el.textContent = 'Next run ' + hint;
+    container.appendChild(el);
+  }
+})();
+
+/* --- Section Editing (http:// only) --- */
+(function initEditUI() {
+  // Only enable when served via HTTP (dev server provides /api/save)
+  if (location.protocol !== 'http:' && location.protocol !== 'https:') return;
+  if (!MD_PATH) return;
+  // No editing for research, data-model, quickstart, checklists, analyze
+  if (isResearch || isChecklist) return;
+  var _isDataModel = /^#\s+.*[Dd]ata\s*[Mm]odel/.test(_cleaned);
+  var _isQuickstart = /^#\s+.*[Qq]uickstart/.test(_cleaned);
+  var _isAnalyze = /^#\s+.*[Aa]nalys/.test(_cleaned);
+  if (_isDataModel || _isQuickstart || _isAnalyze) return;
+  // Only spec, plan, tasks pages get edit buttons
+  if (!isSpec && !isPlan && !isTasks) return;
+
+  // Determine which sections are editable based on page type
+  function isEditableSection(heading) {
+    if (isSpec) {
+      if (/user\s+story/i.test(heading)) return true;
+      if (/edge\s+cases/i.test(heading)) return true;
+      if (/functional\s+requirements/i.test(heading)) return true;
+      if (/non.?functional\s+requirements/i.test(heading)) return true;
+      if (/success\s+criteria/i.test(heading)) return true;
+      if (/assumptions/i.test(heading)) return true;
+      if (/key\s+entities/i.test(heading)) return true;
+      return false;
+    }
+    if (isPlan) {
+      if (/td-\d+/i.test(heading)) return true;
+      if (/architecture/i.test(heading)) return true;
+      if (/api\s+design/i.test(heading)) return true;
+      return false;
+    }
+    if (isTasks) {
+      // Phase sections and Notes section
+      if (/phase\s+\d/i.test(heading)) return true;
+      if (/notes/i.test(heading)) return true;
+      return false;
+    }
+    return false;
+  }
+
+  // Parse MARKDOWN into sections: array of { heading, level, startLine, endLine }
+  var lines = MARKDOWN.split('\n');
+  var sections = []; // { level, heading, startLine, endLine (exclusive) }
+  for (var i = 0; i < lines.length; i++) {
+    var m = lines[i].match(/^(#{2,6})\s+(.+)/);
+    if (m) {
+      sections.push({ level: m[1].length, heading: m[2].trim(), startLine: i, endLine: lines.length });
+    }
+  }
+  // Compute endLine for each section
+  for (var i = 0; i < sections.length; i++) {
+    for (var j = i + 1; j < sections.length; j++) {
+      if (sections[j].level <= sections[i].level) {
+        sections[i].endLine = sections[j].startLine;
+        break;
+      }
+    }
+  }
+
+  // Check if any section is editable before enabling the CSS class
+  var hasEditable = sections.some(function(s) { return isEditableSection(s.heading); });
+  if (!hasEditable) return;
+
+  // Enable edit buttons via CSS class
+  document.body.classList.add('edit-enabled');
+
+  // Add edit buttons only to editable section summaries
+  var allDetails = document.querySelectorAll('details.sec-h2, details.sec-h3, details.sec-h4');
+  var sectionIdx = 0;
+
+  for (var di = 0; di < allDetails.length; di++) {
+    var det = allDetails[di];
+    var summary = det.querySelector(':scope > summary');
+    if (!summary) continue;
+    var headingEl = summary.querySelector('.heading-text');
+    if (!headingEl) continue;
+
+    // Match this DOM section to a parsed section by heading text similarity
+    var headingText = headingEl.textContent.trim()
+      .replace(/^\d+\s*/, '') // remove section number prefix
+      .replace(/\s*Review required$/, '').replace(/\s*✓ Reviewed$/, '') // remove review tag text
+      .replace(/\s*P[1-4]$/, '') // remove priority badge text
+      .replace(/\s*\bUS-?\d+\b/g, '') // remove injected [USx] tag text
+      .replace(/\s*\bParallel\b/g, '') // remove injected [P] tag text
+      .replace(/\s+/g, ' ').trim(); // normalize whitespace
+
+    var matchIdx = -1;
+    for (var si = sectionIdx; si < sections.length; si++) {
+      var secHeading = sections[si].heading
+        .replace(/\s*\(mandatory\)/gi, '')
+        .replace(/\s*\(Priority:\s*P[1-4]\)/gi, '')
+        .trim();
+      if (secHeading === headingText || secHeading.indexOf(headingText) >= 0 || headingText.indexOf(secHeading) >= 0) {
+        matchIdx = si;
+        sectionIdx = si + 1;
+        break;
+      }
+    }
+
+    if (matchIdx < 0) continue;
+    // Skip non-editable sections
+    if (!isEditableSection(sections[matchIdx].heading)) continue;
+
+    var btn = document.createElement('button');
+    btn.className = 'edit-btn';
+    btn.innerHTML = '&#9998; Edit';
+    btn.setAttribute('data-section-idx', String(matchIdx));
+    btn.onclick = function(e) {
+      e.stopPropagation();
+      e.preventDefault();
+      openSectionEditor(parseInt(this.getAttribute('data-section-idx'), 10));
+    };
+    // Insert before chevron (last element in summary)
+    var chevron = summary.querySelector('.chevron');
+    if (chevron) {
+      summary.insertBefore(btn, chevron);
+    } else {
+      summary.appendChild(btn);
+    }
+  }
+
+  // --- "(+) Add" buttons for spec/plan/tasks pages ---
+  function findDomForSection(targetSecIdx) {
+    var allDets = document.querySelectorAll('details.sec-h2, details.sec-h3, details.sec-h4');
+    var domSi = 0;
+    for (var di = 0; di < allDets.length; di++) {
+      var hEl = allDets[di].querySelector(':scope > summary .heading-text');
+      if (!hEl) continue;
+      var ht = hEl.textContent.trim().replace(/^\d+\s*/, '')
+        .replace(/\s*Review required$/, '').replace(/\s*✓ Reviewed$/, '')
+        .replace(/\s*P[1-4]$/, '').replace(/\s*\bUS-?\d+\b/g, '')
+        .replace(/\s*\bParallel\b/g, '').replace(/\s+/g, ' ').trim();
+      for (var sj = domSi; sj < sections.length; sj++) {
+        var sh = sections[sj].heading.replace(/\s*\(mandatory\)/gi, '')
+          .replace(/\s*\(Priority:\s*P[1-4]\)/gi, '').trim();
+        if (sh === ht || sh.indexOf(ht) >= 0 || ht.indexOf(sh) >= 0) {
+          if (sj === targetSecIdx) return allDets[di];
+          domSi = sj + 1;
+          break;
+        }
+      }
+    }
+    return null;
+  }
+
+  function insertAddButton(label, sectionPattern, buildTemplate) {
+    var lastIdx = -1;
+    for (var si = 0; si < sections.length; si++) {
+      if (sectionPattern.test(sections[si].heading)) lastIdx = si;
+    }
+    if (lastIdx < 0) return;
+    var insertBeforeIdx = lastIdx + 1;
+
+    // Find the last matching section's DOM element and insert button after it
+    var lastMatchDom = findDomForSection(lastIdx);
+    var addBtn = document.createElement('button');
+    addBtn.className = 'add-section-btn';
+    addBtn.textContent = label;
+    addBtn.onclick = function() {
+      var count = 0;
+      for (var k = 0; k < sections.length; k++) {
+        if (sectionPattern.test(sections[k].heading)) count++;
+      }
+      var tmpl = buildTemplate(count + 1);
+      openInsertEditor(insertBeforeIdx, tmpl.title, tmpl.text);
+    };
+    if (lastMatchDom && lastMatchDom.nextSibling) {
+      lastMatchDom.parentNode.insertBefore(addBtn, lastMatchDom.nextSibling);
+    } else if (lastMatchDom) {
+      lastMatchDom.parentNode.appendChild(addBtn);
+    } else {
+      document.getElementById('content').appendChild(addBtn);
+    }
+  }
+
+  function attachAddButtons() {
+    // Remove existing add buttons
+    [].forEach.call(document.querySelectorAll('.add-section-btn'), function(el) { el.parentNode.removeChild(el); });
+
+    if (isSpec) {
+      insertAddButton('(+) Add User Story', /user\s+story\s+\d/i, function(n) {
+        return { title: 'New User Story ' + n, text:
+          '## User Story ' + n + ' - [Brief Title] (Priority: P2)\n\n' +
+          '[Describe this user journey in plain language]\n\n' +
+          '**Why this priority**: [Explain the value and why it has this priority level]\n\n' +
+          '**Independent Test**: [Describe how this can be tested independently]\n\n' +
+          '**Acceptance Scenarios**:\n\n' +
+          '1. **Given** [initial state], **When** [action], **Then** [expected outcome]\n' +
+          '2. **Given** [initial state], **When** [action], **Then** [expected outcome]\n\n' +
+          '---' };
+      });
+    }
+    if (isPlan) {
+      insertAddButton('(+) Add Technical Decision', /td-\d+/i, function(n) {
+        var num = String(n).padStart(3, '0');
+        return { title: 'New TD-' + num, text:
+          '### TD-' + num + ': [Decision Title]\n\n' +
+          '**Context**: [What problem or question does this decision address?]\n\n' +
+          '**Decision**: [What was decided and why?]\n\n' +
+          '**Alternatives Considered**:\n' +
+          '- [Alternative 1]: [Why rejected]\n' +
+          '- [Alternative 2]: [Why rejected]\n\n' +
+          '**Consequences**: [What are the implications of this decision?]' };
+      });
+    }
+  }
+  attachAddButtons();
+
+  function openInsertEditor(insertBeforeSecIdx, title, templateText) {
+    openEditorPanel(title, templateText, templateText, function(newText, done) {
+      var fullLines = MARKDOWN.split('\n');
+      var insertLine = (insertBeforeSecIdx < sections.length) ? sections[insertBeforeSecIdx].startLine : fullLines.length;
+      var before = fullLines.slice(0, insertLine);
+      var after = fullLines.slice(insertLine);
+      var insertLines = ('\n' + newText + '\n').split('\n');
+      var reconstructed = before.concat(insertLines).concat(after).join('\n');
+      doSave(reconstructed, done);
+    });
+  }
+
+  // --- Generic editor panel (shared by edit and insert) ---
+  function openEditorPanel(title, initialText, originalText, onSave) {
+    var overlay = document.createElement('div');
+    overlay.className = 'edit-overlay';
+    overlay.innerHTML =
+      '<div class="edit-panel">' +
+        '<div class="edit-header">' +
+          '<span class="edit-title">' + esc(title) + '</span>' +
+          '<button class="edit-cancel" id="edit-cancel-btn">Cancel</button>' +
+          '<button class="edit-save" id="edit-save-btn" disabled>Save</button>' +
+        '</div>' +
+        '<textarea class="edit-textarea" id="edit-textarea" spellcheck="false"></textarea>' +
+        '<div class="edit-status" id="edit-status">Press Ctrl+S / Cmd+S to save</div>' +
+      '</div>';
+
+    document.body.appendChild(overlay);
+    var textarea = document.getElementById('edit-textarea');
+    var saveBtn = document.getElementById('edit-save-btn');
+    var statusEl = document.getElementById('edit-status');
+    textarea.value = initialText;
+    textarea.focus();
+
+    // Track changes: disable Save when content matches original
+    function checkDirty() {
+      var dirty = textarea.value !== originalText;
+      saveBtn.disabled = !dirty;
+    }
+    textarea.addEventListener('input', checkDirty);
+
+    overlay.addEventListener('click', function(e) {
+      if (e.target === overlay) closeEditor();
+    });
+
+    document.getElementById('edit-cancel-btn').onclick = closeEditor;
+    saveBtn.onclick = function() { if (!saveBtn.disabled) doSaveAction(); };
+
+    textarea.addEventListener('keydown', function(e) {
+      if ((e.ctrlKey || e.metaKey) && e.key === 's') {
+        e.preventDefault();
+        if (!saveBtn.disabled) doSaveAction();
+      }
+      if (e.key === 'Escape') { e.preventDefault(); closeEditor(); }
+      if (e.key === 'Tab') {
+        e.preventDefault();
+        var start = this.selectionStart, end = this.selectionEnd;
+        this.value = this.value.substring(0, start) + '  ' + this.value.substring(end);
+        this.selectionStart = this.selectionEnd = start + 2;
+      }
+    });
+
+    function closeEditor() {
+      if (overlay.parentNode) overlay.parentNode.removeChild(overlay);
+    }
+
+    function doSaveAction() {
+      saveBtn.disabled = true;
+      statusEl.innerHTML = '<span class="edit-saving">Saving...</span>';
+      onSave(textarea.value, function(ok, errMsg) {
+        if (ok) {
+          statusEl.innerHTML = '<span class="edit-saved">Saved successfully</span>';
+          setTimeout(function() { closeEditor(); showClarifyToast(); }, 600);
+        } else {
+          statusEl.innerHTML = '<span class="edit-error">' + esc(errMsg) + '</span>';
+          saveBtn.disabled = false;
+        }
+      });
+    }
+  }
+
+  // --- Editor for existing sections ---
+  function openSectionEditor(secIdx) {
+    var sec = sections[secIdx];
+    if (!sec) return;
+
+    var currentLines = MARKDOWN.split('\n');
+    var sectionText = currentLines.slice(sec.startLine, sec.endLine).join('\n');
+
+    openEditorPanel(sec.heading, sectionText, sectionText, function(newText, done) {
+      var fullLines = MARKDOWN.split('\n');
+      var before = fullLines.slice(0, sec.startLine);
+      var after = fullLines.slice(sec.endLine);
+      var newLines = newText.split('\n');
+      var reconstructed = before.concat(newLines).concat(after).join('\n');
+      doSave(reconstructed, done);
+    });
+  }
+
+  // --- Shared save logic ---
+  function doSave(reconstructed, done) {
+    // Reverse HTML sanitization applied by md-to-html.sh
+    reconstructed = reconstructed
+      .replace(/<\u200Bscript/gi, '<script')
+      .replace(/<\u200B\/script/gi, '</script')
+      .replace(/<\u200Biframe/gi, '<iframe')
+      .replace(/<\u200B\/iframe/gi, '</iframe')
+      .replace(/javascript\u200B:/gi, 'javascript:');
+
+    _skipNextReload = true;
+    fetch('/api/save', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ mdPath: MD_PATH, markdown: reconstructed })
+    })
+    .then(function(resp) {
+      if (!resp.ok) throw new Error('Server returned ' + resp.status);
+      return resp.json();
+    })
+    .then(function(data) {
+      if (data.ok) {
+        MARKDOWN = reconstructed;
+        try {
+          _reviewTagId = 0;
+          render();
+          recomputeSections();
+          reattachEditButtons();
+          attachAddButtons();
+        } catch(renderErr) {
+          console.error('[sdd-viewer] Re-render error:', renderErr);
+        }
+        done(true);
+      } else {
+        _skipNextReload = false;
+        done(false, 'Error: ' + (data.error || 'Unknown'));
+      }
+    })
+    .catch(function(err) {
+      _skipNextReload = false;
+      done(false, 'Save failed: ' + err.message);
+    });
+  }
+
+  function showClarifyToast() {
+    // Remove existing toast if any
+    var existing = document.querySelector('.edit-toast');
+    if (existing) existing.parentNode.removeChild(existing);
+
+    var pageLabel = isSpec ? 'spec' : isPlan ? 'plan' : 'tasks';
+    var toast = document.createElement('div');
+    toast.className = 'edit-toast';
+    toast.innerHTML =
+      '<span class="toast-icon">&#9888;&#65039;</span>' +
+      '<span>Section saved. Run <code>/speckit.clarify</code> to verify consistency across ' + pageLabel + ' artifacts.</span>' +
+      '<button class="toast-close" onclick="this.parentNode.parentNode.removeChild(this.parentNode)">&times;</button>';
+    document.body.appendChild(toast);
+  }
+
+  function recomputeSections() {
+    var newLines = MARKDOWN.split('\n');
+    sections.length = 0;
+    for (var i = 0; i < newLines.length; i++) {
+      var m = newLines[i].match(/^(#{2,6})\s+(.+)/);
+      if (m) {
+        sections.push({ level: m[1].length, heading: m[2].trim(), startLine: i, endLine: newLines.length });
+      }
+    }
+    for (var i = 0; i < sections.length; i++) {
+      for (var j = i + 1; j < sections.length; j++) {
+        if (sections[j].level <= sections[i].level) {
+          sections[i].endLine = sections[j].startLine;
+          break;
+        }
+      }
+    }
+  }
+
+  function reattachEditButtons() {
+    var allDetails = document.querySelectorAll('details.sec-h2, details.sec-h3, details.sec-h4');
+    var si = 0;
+    for (var di = 0; di < allDetails.length; di++) {
+      var det = allDetails[di];
+      var summary = det.querySelector(':scope > summary');
+      if (!summary) continue;
+      var headingEl = summary.querySelector('.heading-text');
+      if (!headingEl) continue;
+      // Remove existing edit button if any
+      var old = summary.querySelector('.edit-btn');
+      if (old) old.parentNode.removeChild(old);
+
+      var headingText = headingEl.textContent.trim()
+        .replace(/^\d+\s*/, '')
+        .replace(/\s*Review required$/, '').replace(/\s*✓ Reviewed$/, '')
+        .replace(/\s*P[1-4]$/, '')
+        .replace(/\s*\bUS-?\d+\b/g, '')
+        .replace(/\s*\bParallel\b/g, '')
+        .replace(/\s+/g, ' ').trim();
+
+      var matchIdx = -1;
+      for (var j = si; j < sections.length; j++) {
+        var secH = sections[j].heading
+          .replace(/\s*\(mandatory\)/gi, '')
+          .replace(/\s*\(Priority:\s*P[1-4]\)/gi, '')
+          .trim();
+        if (secH === headingText || secH.indexOf(headingText) >= 0 || headingText.indexOf(secH) >= 0) {
+          matchIdx = j;
+          si = j + 1;
+          break;
+        }
+      }
+      if (matchIdx < 0) continue;
+      if (!isEditableSection(sections[matchIdx].heading)) continue;
+
+      var btn = document.createElement('button');
+      btn.className = 'edit-btn';
+      btn.innerHTML = '&#9998; Edit';
+      btn.setAttribute('data-section-idx', String(matchIdx));
+      btn.onclick = function(e) {
+        e.stopPropagation();
+        e.preventDefault();
+        openSectionEditor(parseInt(this.getAttribute('data-section-idx'), 10));
+      };
+      var chevron = summary.querySelector('.chevron');
+      if (chevron) summary.insertBefore(btn, chevron);
+      else summary.appendChild(btn);
+    }
+  }
+
+  // Flag to suppress SSE reload when we triggered the save ourselves
+  var _skipNextReload = false;
+
+  // --- SSE: listen for reload events ---
+  if (typeof EventSource !== 'undefined') {
+    var es = new EventSource('/api/events');
+    es.onmessage = function(e) {
+      try {
+        var data = JSON.parse(e.data);
+        if (data.type === 'reload' && data.mdPath === MD_PATH) {
+          // Skip reload if we triggered the save (toast needs to stay visible)
+          if (_skipNextReload) { _skipNextReload = false; return; }
+          // Reload the page to pick up regenerated HTML
+          location.reload();
+        }
+      } catch(err) {}
+    };
+    es.onerror = function() {
+      // Silently reconnect (EventSource auto-reconnects)
+    };
+  }
+})();
+</script>
+</body>
+</html>
