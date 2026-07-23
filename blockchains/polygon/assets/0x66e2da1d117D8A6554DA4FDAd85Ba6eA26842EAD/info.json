@@ -1,13 +1,18 @@
 {
     "name": "Bowo Protocol",
     "website": "https://bowo.fi",
-    "description": "Bowo.fi is a decentralized Treasury-backed protocol building algorithmic growth engines with $BOWO, its native governance and utility asset.",
+    "description": "Bowo.fi is a decentralized Treasury-backed protocol building autonomous capital intelligence infrastructure with $BOWO, its native reserve and utility token backed by a $1.00 USD intrinsic floor.",
     "explorer": "https://polygonscan.com/token/0x66e2da1d117D8A6554DA4FDAd85Ba6eA26842EAD",
     "type": "ERC20",
     "symbol": "BOWO",
     "decimals": 18,
     "status": "active",
     "id": "0x66e2da1d117D8A6554DA4FDAd85Ba6eA26842EAD",
+    "tags": [
+        "defi",
+        "staking",
+        "governance"
+    ],
     "links": [
         {
             "name": "github",
@@ -15,7 +20,11 @@
         },
         {
             "name": "twitter",
-            "url": "https://twitter.com/bowoprotocol"
+            "url": "https://x.com/bowoprotocol"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://bowo.fi/whitepaper"
         }
     ]
 }
