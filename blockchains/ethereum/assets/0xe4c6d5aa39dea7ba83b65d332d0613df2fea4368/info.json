@@ -1,0 +1,24 @@
+{
+  "name": "JERT Utility Token",
+  "website": "https://token.jert.ch",
+  "description": "Infrastructure utility token for settlement of energy, cold energy recovery, logistics, and compute services within the JERT Infrastructure Platform.",
+  "explorer": "https://etherscan.io/token/0xe4c6d5aa39dea7ba83b65d332d0613df2fea4368",
+  "type": "ERC20", 
+  "symbol": "JERT",
+  "decimals": 18,
+  "status": "active",
+  "id": "0xe4c6d5aa39dea7ba83b65d332d0613df2fea4368",
+  "links": [
+    {
+      "name": "whitepaper",
+      "url": "https://token.jert.ch/docs/whitepaper.pdf"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/Jertole"
+    }
+  ],
+  "tags": [
+    "defi"
+  ]
+}
