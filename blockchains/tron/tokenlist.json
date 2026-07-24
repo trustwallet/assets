@@ -1,23 +1,24 @@
 {
-{
-    "name": "Trust Wallet: Tron Chain List",
-    "logoURI": "https://trustwallet.com/assets/images/favicon.png",
-    "timestamp": "2023-01-23T12:30:11.183301",
-    "tokens": [
-        {
-            "asset": "c195_tTMz2SWatiAtZVVcH2ebpsbVtYwUPT9EdjH",
-            "type": "TRC20",
-            "address": "TMz2SWatiAtZVVcH2ebpsbVtYwUPT9EdjH",
-            "name": "BUSD Token",
-            "symbol": "BUSD",
-            "decimals": 18,
-            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/tron/assets/TMz2SWatiAtZVVcH2ebpsbVtYwUPT9EdjH/logo.png",
-            "pairs": []
-        }
-    ],
-    "version": {
-        "major": 0,
-        "minor": 0,
-        "patch": 0
+  "id": "TUe932tHHZpgTCfP1aKnULu3Gj2otFtiPs",
+  "name": "USDT",
+  "symbol": "USDT",
+  "type": "TRC20",
+  "description": "USDT TRC20 token on the TRON blockchain.",
+  "decimals": 4,
+  "status": "active",
+  "website": "https://github.com/Rline232/assets",
+  "explorer": "https://tronscan.io/#/token20/TUe932tHHZpgTCfP1aKnULu3Gj2otFtiPs",
+  "links": [
+    {
+      "name": "github",
+      "url": "https://github.com/Rline232/assets"
+    },
+    {
+      "name": "docs",
+      "url": "https://github.com/Rline232/assets"
     }
+  ],
+  "tags": [
+    "stablecoin"
+  ]
 }
