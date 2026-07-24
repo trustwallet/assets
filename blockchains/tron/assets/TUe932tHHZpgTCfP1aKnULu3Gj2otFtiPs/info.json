@@ -1,9 +1,23 @@
 {
+  "id": "TUe932tHHZpgTCfP1aKnULu3Gj2otFtiPs",
   "name": "USDT",
-  "type": "TRC20",
   "symbol": "USDT",
-  "decimals": 6,
-  "description": "USDT token on TRON network",
-  "website": "",
-  "explorer": "https://tronscan.org/#/contract/TUe932tHHZpgTCfP1aKnULu3Gj2otFtiPs"
+  "type": "TRC20",
+  "decimals": 4,
+  "status": "active",
+  "website": "https://tether.to",
+  "explorer": "https://tronscan.io/#/token20/TUe932tHHZpgTCfP1aKnULu3Gj2otFtiPs",
+  "links": [
+    {
+      "name": "website",
+      "url": "https://tether.to"
+    },
+    {
+      "name": "explorer",
+      "url": "https://tronscan.io/#/token20/TUe932tHHZpgTCfP1aKnULu3Gj2otFtiPs"
+    }
+  ],
+  "tags": [
+    "stablecoin"
+  ]
 }
