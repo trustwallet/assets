@@ -1,0 +1,14 @@
+{
+  "name": "Tether USD",
+  "symbol": "USDT",
+  "decimals": 18,
+  "description": "USDT-compatible token deployed as TokenV2 (proxy). This info.json is provided for TrustWallet assets integration. Decimals set to 18 to match popular USDT metadata on BSC.",
+  "website": "",
+  "explorer": "https://bscscan.com/token/0x28f5846f2e21b8c45471aede344581aacfb15230",
+  "status": "active",
+  "type": "BEP20",
+  "socials": {
+    "twitter": "",
+    "telegram": ""
+  }
+}
