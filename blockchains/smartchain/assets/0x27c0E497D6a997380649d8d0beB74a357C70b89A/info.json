@@ -7,11 +7,20 @@
   "description": "DE4ULT is a decentralized digital asset built on BNB Smart Chain.",
   "website": "https://de4ult-website.vercel.app/",
   "explorer": "https://bscscan.com/token/0x27c0E497D6a997380649d8d0beB74a357C70b89A",
-  "links": {
-    "website": "https://de4ult-website.vercel.app/",
-    "github": "https://github.com/GHOST-XII-Cyber/de4ult-website",
-    "twitter": "https://x.com/DE4ULT_COIN"
-  },
+  "links": [
+    {
+      "name": "Website",
+      "url": "https://de4ult-website.vercel.app/"
+    },
+    {
+      "name": "GitHub",
+      "url": "https://github.com/GHOST-XII-Cyber/de4ult-website"
+    },
+    {
+      "name": "X",
+      "url": "https://x.com/DE4ULT_COIN"
+    }
+  ],
   "tags": [
     "crypto",
     "defi",
