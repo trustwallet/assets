@@ -59,6 +59,5 @@
 ## See Also
 - [constitution](../constitution.md) <!-- rel:strong -->
 - [report](../features/report.md) <!-- rel:strong -->
-- [learnings](../learnings.md) <!-- rel:strong -->
 - [validator fixer updater](../patterns/validator-fixer-updater.md) <!-- rel:strong -->
 - [manager](../features/manager.md) <!-- rel:strong -->

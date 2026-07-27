@@ -39,10 +39,9 @@ Unit tests via `go test -race -cover`. Run with `make test`. Coverage report wri
 
 ## External dependencies
 
-Key deps: `trustwallet/assets-go-libs` (file, path, validation), `trustwallet/go-primitives` (coin, asset, path types). These are TW-internal libraries — updates must coordinate with those repos.
+Key deps: `trustwallet/assets-go-libs` (file, path, validation), `trustwallet/go-primitives` (coin, asset, path types). Both are Trust Wallet-maintained public repos — updates must coordinate with those repos.
 
 ## See Also
-- [code-conventions/code-style/anti-patterns-failed-approaches.md](code-style/anti-patterns-failed-approaches.md)
 - [repo overview](../architecture/repo-overview.md) <!-- rel:strong -->
 - [config system](../libs/config-system.md) <!-- rel:strong -->
 - [testing strategy](../tests/testing-strategy.md) <!-- rel:strong -->

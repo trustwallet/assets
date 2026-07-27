@@ -21,6 +21,4 @@ There are similar check logic implemented:
 ## See Also
 - [overview](../../patterns/brand/overview.md) <!-- rel:strong -->
 - [disclaimer](../../specs/business/disclaimer.md) <!-- rel:related -->
-- [patterns validated approaches](../../patterns/patterns-validated-approaches.md) <!-- rel:weak -->
-- [anti patterns failed approaches](../../code-conventions/code-style/anti-patterns-failed-approaches.md) <!-- rel:weak -->
 - [quick starter](../../specs/quick-starter.md) <!-- rel:weak -->
