@@ -41,6 +41,11 @@ validators_settings:
       - ".golangci.yml"
       - "Makefile"
       - "bin"
+      - ".claude"
+      - ".mcp.json"
+      - "CLAUDE.md"
+      - "knowledge"
+      - ".specify"
     skip_files:
       - "node_modules"
     skip_dirs:
