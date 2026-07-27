@@ -21,6 +21,4 @@ There are also options for force-include and force-exclude in the config.
 ## See Also
 - [overview](../../patterns/brand/overview.md) <!-- rel:strong -->
 - [quick starter](../../specs/quick-starter.md) <!-- rel:strong -->
-- [anti patterns failed approaches](../../code-conventions/code-style/anti-patterns-failed-approaches.md) <!-- rel:related -->
-- [patterns validated approaches](../../patterns/patterns-validated-approaches.md) <!-- rel:related -->
 - [disclaimer](../../specs/business/disclaimer.md) <!-- rel:related -->
