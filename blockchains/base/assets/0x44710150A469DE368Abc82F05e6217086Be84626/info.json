@@ -1,36 +1,21 @@
 {
-  "name": "Akita Share Token",
-  "symbol": "■AKITA",
-  "type": "BASE",
-  "decimals": 18,
-  "description": "Share token for the Akita creator vault on 4626.fun (Base).",
-  "website": "https://4626.fun",
-  "explorer": "https://basescan.org/token/0x44710150A469DE368Abc82F05e6217086Be84626",
-  "status": "active",
-  "id": "0x44710150A469DE368Abc82F05e6217086Be84626",
-  "links": [
-    {
-      "name": "github",
-      "url": "https://github.com/4626fun/4626"
-    },
-    {
-      "name": "twitter",
-      "url": "https://twitter.com/4626fun"
-    },
-    {
-      "name": "telegram",
-      "url": "https://t.me/fun4626"
-    },
-    {
-      "name": "discord",
-      "url": "https://discord.com/invite/4626"
-    },
-    {
-      "name": "docs",
-      "url": "https://docs.4626.fun"
-    }
-  ],
-  "tags": [
-    "defi"
-  ]
+    "name": "Akita Share Token",
+    "website": "https://4626.fun",
+    "description": "Share token for the Akita creator vault on 4626.fun (Base).",
+    "explorer": "https://basescan.org/token/0x44710150A469DE368Abc82F05e6217086Be84626",
+    "type": "BASE",
+    "symbol": "■AKITA",
+    "decimals": 18,
+    "status": "active",
+    "id": "0x44710150A469DE368Abc82F05e6217086Be84626",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/4626fun/4626"
+        },
+        {
+            "name": "x",
+            "url": "https://x.com/4626fun"
+        }
+    ]
 }
