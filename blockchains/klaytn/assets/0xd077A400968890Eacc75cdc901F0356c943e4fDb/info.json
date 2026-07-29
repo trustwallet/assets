@@ -1,0 +1,28 @@
+{
+    "name": "Tether USD",
+    "type": "KAIA",
+    "symbol": "USD₮",
+    "decimals": 6,
+    "website": "https://tether.to",
+    "description": "Tether gives you the joint benefits of open blockchain technology and traditional currency by converting your cash into a stable digital currency equivalent.",
+    "explorer": "https://kaiascan.io/token/0xd077A400968890Eacc75cdc901F0356c943e4fDb",
+    "status": "active",
+    "id": "0xd077A400968890Eacc75cdc901F0356c943e4fDb",
+    "links": [
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/tether/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/tether/"
+        },
+        {
+            "name": "x",
+            "url": "https://x.com/tether"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}
