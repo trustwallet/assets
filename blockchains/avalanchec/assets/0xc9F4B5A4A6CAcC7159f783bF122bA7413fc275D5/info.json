@@ -1,10 +1,28 @@
 {
   "name": "CEDOMIS",
-  "type": "AVAX",
+  "type": "ERC20",
   "symbol": "CEDO",
   "decimals": 18,
   "description": "Official CEDOMIS Protocol Token on Avalanche C-Chain",
+  "website": "https://cedomis.com",
   "explorer": "https://snowtrace.io/token/0xc9F4B5A4A6CAcC7159f783bF122bA7413fc275D5",
   "status": "active",
-  "id": "0xc9F4B5A4A6CAcC7159f783bF122bA7413fc275D5"
+  "id": "0xc9F4B5A4A6CAcC7159f783bF122bA7413fc275D5",
+  "links": [
+    {
+      "name": "github",
+      "url": "https://github.com/cedomis"
+    },
+    {
+      "name": "x",
+      "url": "https://x.com/cedomis"
+    },
+    {
+      "name": "website",
+      "url": "https://cedomis.xyz"
+    }
+  ],
+  "tags": [
+    "utility"
+  ]
 }
