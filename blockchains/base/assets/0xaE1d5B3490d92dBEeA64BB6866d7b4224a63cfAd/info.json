@@ -1,1 +1,24 @@
-{ "name": "Ulsan Coin", "type": "ERC20", "symbol": "ULSC", "decimals": 18, "website": "https://ulsancoin.com", "description": "Ulsan Coin is a token on Base network.", "explorer": "https://basescan.org/token/0xaE1d5B3490d92dBEeA64BB6866d7b4224a63cfAd", "links": [ { "name": "website", "url": "https://ulsancoin.com" }, { "name": "instagram", "url": "https://www.instagram.com/ulsancoin/" } ], "tags": [ "utility-token" ], "status": "active", "id": "0xaE1d5B3490d92dBEeA64BB6866d7b4224a63cfAd" }
+{
+    "name": "Ulsan Coin",
+    "type": "ERC20",
+    "symbol": "ULSC",
+    "decimals": 18,
+    "website": "https://ulsancoin.com",
+    "description": "Ulsan Coin is a token on Base network.",
+    "explorer": "https://basescan.org/token/0xaE1d5B3490d92dBEeA64BB6866d7b4224a63cfAd",
+    "links": [
+        {
+            "name": "facebook",
+            "url": "www.facebook.com/profile.php?id=61592760507070"
+        },
+        {
+            "name": "youtube",
+            "url": "https://www.youtube.com/channel/UCJWezmzp10FChDQexiGXccg"
+        }
+    ],
+    "tags": [
+        "utility-token"
+    ],
+    "status": "active",
+    "id": "0xaE1d5B3490d92dBEeA64BB6866d7b4224a63cfAd"
+}
