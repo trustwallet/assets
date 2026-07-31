@@ -20,7 +20,9 @@
   "references": {
     "etherscanTokenUrl": "https://etherscan.io/token/0x9301d03bC62B79eA914Ebf73ce0dDF71dc95E921",
     "liquidityPairUrl": "https://dexscreener.com/ethereum/0xD149e51E6fE5E23D290dAe233D87f1E8448f3338",
-    "tokenListUrl": "https://ipfs.io/ipfs/bafkreifh5ohrtipfwlag4diqimd4fx3ecfs3emnn4qe6a25aysitz2v27u"
+    "tokenListUrl": "https://ipfs.io/ipfs/bafkreifh5ohrtipfwlag4diqimd4fx3ecfs3emnn4qe6a25aysitz2v27u",
+      "coinmarketcapUrl":"https://dex.coinmarketcap.com/token/ethereum/0x9301d03bc62b79ea914ebf73ce0ddf71dc95e921/",
+    "coingeckoUrl": "https://www.geckoterminal.com/eth/pools/0xd149e51e6fe5e23d290dae233d87f1e8448f3338?utm_source=coingecko&utm_medium=referral&utm_campaign=searchresults"
   },
   "notes": {
     "contractVerifiedOnEtherscan": true,
