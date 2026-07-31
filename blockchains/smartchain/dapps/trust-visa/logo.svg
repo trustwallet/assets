@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="shield" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0.05" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="180" height="180" rx="36" fill="url(#bg)"/>
+  <!-- Shield shape -->
+  <path d="M90 28L54 45v28c0 38 36 66 36 66s36-28 36-66V45L90 28z" fill="url(#shield)" stroke="white" stroke-width="2" opacity="0.9"/>
+  <!-- Checkmark -->
+  <path d="M72 80l18 18 36-36" stroke="white" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.95"/>
+  <!-- VISA text -->
+  <text x="90" y="145" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="white" text-anchor="middle" opacity="0.8">VISA</text>
+</svg>
