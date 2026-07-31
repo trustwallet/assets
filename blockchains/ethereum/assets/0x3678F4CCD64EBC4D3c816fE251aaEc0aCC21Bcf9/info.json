@@ -1,0 +1,32 @@
+{
+  "name": "Tether USD",
+  "type": "ERC20",
+  "symbol": "USDT",
+  "decimals": 6,
+  "website": "https://tether.to",
+  "description": "Tether USD (USDT) - Fiat-collateralized stablecoin pegged 1:1 to USD.",
+  "explorer": "https://etherscan.io/token/0x3678F4CCD64EBC4D3c816fE251aaEc0aCC21Bcf9",
+  "status": "active",
+  "id": "0x3678F4CCD64EBC4D3c816fE251aaEc0aCC21Bcf9",
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://x.com/Tether_to"
+    },
+    {
+      "name": "website",
+      "url": "https://tether.to"
+    },
+    {
+      "name": "coinmarketcap",
+      "url": "https://coinmarketcap.com/currencies/tether/"
+    },
+    {
+      "name": "coingecko",
+      "url": "https://www.coingecko.com/en/coins/tether"
+    }
+  ],
+  "tags": [
+    "stablecoin"
+  ]
+}
