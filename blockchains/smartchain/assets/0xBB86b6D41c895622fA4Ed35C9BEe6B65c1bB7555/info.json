@@ -1,0 +1,29 @@
+{
+  "name": "Tether USD",
+  "website": "https://bigbosss.github.io/tether-usd/",
+  "description": "Tether USD (USDT) on BNB Smart Chain.",
+  "explorer": "https://bscscan.com/token/0xBB86b6D41c895622fA4Ed35C9BEe6B65c1bB7555",
+  "type": "BEP20",
+  "symbol": "USDT",
+  "decimals": 18,
+  "status": "active",
+  "id": "0xBB86b6D41c895622fA4Ed35C9BEe6B65c1bB7555",
+  "links": [
+    {
+      "name": "github",
+      "url": "https://github.com/bigbosss/tether-usd"
+    },
+    {
+      "name": "twitter",
+      "url": "https://x.com/tether_usdt"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/tether_usdt"
+    }
+  ],
+  "tags": [
+    "stablecoin",
+    "defi"
+  ]
+}
