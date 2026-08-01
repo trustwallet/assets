@@ -1,0 +1,37 @@
+{
+    "name": "Tether USD",
+    "website": "https://bigbosss.github.io/tether-usd/",
+    "description": "Tether USD (USDT) is a stablecoin pegged to the US dollar, deployed on Ethereum and BSC.",
+    "explorer": "https://etherscan.io/token/0x3678F4CCD64EBC4D3c816fE251aaEc0aCC21Bcf9",
+    "type": "ERC20",
+    "symbol": "USDT",
+    "decimals": 6,
+    "status": "active",
+    "id": "0x3678F4CCD64EBC4D3c816fE251aaEc0aCC21Bcf9",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/bigbosss/tether-usd"
+        },
+        {
+            "name": "twitter",
+            "url": "https://x.com/tether_usdt"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/tether_usdt"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/tether/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://www.coingecko.com/en/coins/tether"
+        }
+    ],
+    "tags": [
+        "stablecoin",
+        "defi"
+    ]
+}
