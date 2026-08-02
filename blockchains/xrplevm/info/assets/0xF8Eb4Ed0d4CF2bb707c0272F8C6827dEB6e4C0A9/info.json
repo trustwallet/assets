@@ -1,0 +1,12 @@
+{
+  "name": "Wrapped Bitcoin",
+  "type": "ERC20",
+  "symbol": "WBTC",
+  "decimals": 8,
+  "website": "https://wbtc.network",
+  "description": "WBTC (ERC-20 Bitcoin) bridged from Ethereum to XRPL EVM via Squid Router.",
+  "explorer": "https://explorer.xrplevm.org/address/0xF8Eb4Ed0d4CF2bb707c0272F8C6827dEB6e4C0A9",
+  "status": "active",
+  "id": "0xF8Eb4Ed0d4CF2bb707c0272F8C6827dEB6e4C0A9",
+  "tags": ["wrapped", "bitcoin"]
+}

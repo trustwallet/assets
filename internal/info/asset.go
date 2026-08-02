@@ -12,9 +12,6 @@ func ValidateAsset(a AssetModel, chain coin.Coin, addr string) error {
 
 	// All fields validated for nil and can be safety used.
 	compErr := validation.NewErrComposite()
-	if err := ValidateAssetType(*a.Type, chain); err != nil {
-		compErr.Append(err)
-	}
 
 	if err := ValidateAssetID(*a.ID, addr); err != nil {
 		compErr.Append(err)
