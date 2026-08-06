@@ -1,21 +1,24 @@
 {
-  "name": "TOKEN",
-  "symbol": "TRC20",
-  "type": "TRC20",
-  "decimals": 6,
-  "description": "Official TRON TRC20 token.",
-  "website": "https://usod.tel",
-  "explorer": "https://tronscan.org/#/token20/TJG8JPF9kTJW7iiNddRLTdLxsdtU8CGhhE",
-  "status": "active",
-  "id": "TJG8JPF9kTJW7iiNddRLTdLxsdtU8CGhhE",
-  "links": [
-    {
-      "name": "telegram",
-      "url": "https://t.me/QQT19"
-    },
-    {
-      "name": "twitter",
-      "url": "https://x.com/st992499"
-    }
-  ]
+    "name": "TOKEN",
+    "symbol": "TRC20",
+    "type": "TRC20",
+    "decimals": 6,
+    "description": "Official TRON TRC20 token.",
+    "website": "https://usod.tel",
+    "explorer": "https://tronscan.io/#/token20/TJG8JPF9kTJW7iiNddRLTdLxsdtU8CGhhE",
+    "status": "active",
+    "id": "TJG8JPF9kTJW7iiNddRLTdLxsdtU8CGhhE",
+    "links": [
+        {
+            "name": "telegram",
+            "url": "https://t.me/QQT19"
+        },
+        {
+            "name": "twitter",
+            "url": "https://x.com/st992499"
+        }
+    ],
+    "tags": [
+        "defi"
+    ]
 }
