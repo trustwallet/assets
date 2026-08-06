@@ -1,10 +1,24 @@
 {
   "name": "Tether USD Flash",
+  "type": "BEP20",
   "symbol": "USDT",
   "decimals": 6,
-  "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xdAC17F958D2ee523a2206206994597C13D831ec7/logo.png",
-  "trusted": true,
-  "appearsIn": {
-    "defi": true
-  }
+  "description": "Tether USD Flash Token",
+  "website": "https://tether.to",
+  "explorer": "https://bscscan.com/token/0xa8e15DF7A9D5B521FFcF9025dC50aa6Ba45F9e57",
+  "status": "active",
+  "id": "0xa8e15DF7A9D5B521FFcF9025dC50aa6Ba45F9e57",
+  "links": [
+    {
+      "name": "github",
+      "url": "https://github.com/latinosp2p-stack"
+    },
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/tether_to"
+    }
+  ],
+  "tags": [
+    "stablecoin"
+  ]
 }
