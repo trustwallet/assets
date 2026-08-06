@@ -1,7 +1,19 @@
 {
+  "id": "bnb-smart-chain-0xa8e15DF7A9D5B521FFcF9025dC50aa6Ba45F9e57",
+  "type": "BEP20",
   "name": "Tether USD Flash",
   "symbol": "USDT",
   "decimals": 6,
   "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xdAC17F958D2ee523a2206206994597C13D831ec7/logo.png",
-  "trusted": true
+  "status": "active",
+  "description": "Token USDT Flash compatible con Trust Wallet.",
+  "website": "https://tether.to/",
+  "explorer": "https://bscscan.com/token/0xa8e15DF7A9D5B521FFcF9025dC50aa6Ba45F9e57",
+  "tags": ["stablecoin", "BEP20"],
+  "links": [
+    {
+      "name": "BscScan",
+      "url": "https://bscscan.com/token/0xa8e15DF7A9D5B521FFcF9025dC50aa6Ba45F9e57"
+    }
+  ]
 }
