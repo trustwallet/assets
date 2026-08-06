@@ -1,7 +1,7 @@
 {
   "name": "TimeCoin",
   "website": "https://timepays.io",
-  "description": "TimeCoin (TMC) is the native DeFi token of the TimePays ecosystem on BNB Smart Chain, integrating staking, rewards and decentralized utilities.",
+  "description": "TimeCoin (TMC) is the native utility token of the TimePays ecosystem on BNB Smart Chain, supporting staking, decentralized rewards and ecosystem utilities.",
   "explorer": "https://bscscan.com/token/0xD58b03258901Cd58f203564623427247b1961384",
   "type": "BEP20",
   "symbol": "TMC",
@@ -10,16 +10,17 @@
   "id": "0xD58b03258901Cd58f203564623427247b1961384",
   "links": [
     {
-      "name": "twitter",
-      "url": "https://x.com/timepaysio"
+      "name": "website",
+      "url": "https://timepays.io"
     },
     {
-      "name": "telegram",
-      "url": "https://t.me/timepays"
+      "name": "whitepaper",
+      "url": "https://defi.timepays.io/files/Timepays_Whitepaper_Tmc_English.pdf"
     }
   ],
   "tags": [
     "defi",
-    "staking"
+    "staking",
+    "bnb-chain"
   ]
 }
