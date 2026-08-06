@@ -1,0 +1,20 @@
+{
+    "name": "RORStrategy",
+    "type": "ROBINHOODCHAIN",
+    "symbol": "ROR",
+    "decimals": 18,
+    "description": "The token behind the Rouns NFT collection. A 10% fee on every trade funds an autonomous agent that buys the cheapest Rouns listing and burns it, permanently reducing the collection's supply. Ownership is renounced and the liquidity position is held by the contract itself.",
+    "website": "https://rounshood.com",
+    "explorer": "https://robinhoodchain.blockscout.com/token/0x1364d0Ac846A5a05459EF9d9cB91939Eba4955D6",
+    "status": "active",
+    "id": "0x1364d0Ac846A5a05459EF9d9cB91939Eba4955D6",
+    "links": [
+        {
+            "name": "x",
+            "url": "https://x.com/rounshood"
+        }
+    ],
+    "tags": [
+        "nft"
+    ]
+}
