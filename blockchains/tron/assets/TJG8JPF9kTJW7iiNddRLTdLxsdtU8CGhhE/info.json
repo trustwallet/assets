@@ -1,21 +1,21 @@
 {
-  "name": "Token",
-  "type": "TRC20",
+  "name": "TOKEN",
   "symbol": "TRC20",
+  "type": "TRC20",
   "decimals": 6,
-  "website": "https://www.usod.tel",
-  "description": "TRC20 is a community token deployed on the TRON Mainnet. It is designed for payments, ecosystem participation, community incentives, and future Web3 applications.",
+  "description": "Official TRON TRC20 token.",
+  "website": "https://usod.tel",
   "explorer": "https://tronscan.org/#/token20/TJG8JPF9kTJW7iiNddRLTdLxsdtU8CGhhE",
   "status": "active",
   "id": "TJG8JPF9kTJW7iiNddRLTdLxsdtU8CGhhE",
   "links": [
     {
-      "name": "x",
-      "url": "https://x.com/st992499"
-    },
-    {
       "name": "telegram",
       "url": "https://t.me/QQT19"
+    },
+    {
+      "name": "twitter",
+      "url": "https://x.com/st992499"
     }
   ]
 }
