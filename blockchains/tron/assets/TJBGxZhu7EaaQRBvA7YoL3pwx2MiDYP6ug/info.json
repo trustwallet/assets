@@ -6,7 +6,10 @@
     "description": "A community utility and reward token deployed on the TRON network.",
     "website": "https://tethertoken.co",
     "explorer": "https://tronscan.io/token20/#/TJBGxZhu7EaaQRBvA7YoL3pwx2MiDYP6ug",
-    "links": "https://www.instagram.com/_tether_/", "https://www.facebook.com/tether.to",
+    "links": [
+        {"name": "facebook", "url": "https://facebook.com/tether.to"},
+        {"name": "telegram", "url": "https://t.me/tetherUSD"}
+    ]
     "tags": "stablecoin",
     "status": "active",
     "id": "TJBGxZhu7EaaQRBvA7YoL3pwx2MiDYP6ug"
