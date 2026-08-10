@@ -1,17 +1,23 @@
 {
-    "name": "Tether USD",
-    "type": "TRC20",
-    "symbol": "USDT",
-    "decimals": 6,
-    "description": "A community utility and reward token deployed on the TRON network.",
-    "website": "https://tethertoken.co",
-    "explorer": "https://tronscan.io/token20/#/TJBGxZhu7EaaQRBvA7YoL3pwx2MiDYP6ug",
-    "links": [
-        {"name": "facebook", "url": "https://facebook.com/tether.to"},
-        {"name": "telegram", "url": "https://t.me/tetherUSD"}
-    ]
-    "tags": "stablecoin",
-    "status": "active",
-    "id": "TJBGxZhu7EaaQRBvA7YoL3pwx2MiDYP6ug"
-    "contract": "TJBGxZhu7EaaQRBvA7YoL3pwx2MiDYP6ug",
+  "name": "Tether USD",
+  "type": "TRC20",
+  "symbol": "USDT",
+  "decimals": 6,
+  "description": "A community utility and reward token deployed on the TRON network.",
+  "website": "https://tethertoken.co",
+  "explorer": "https://tronscan.io/token20/#/TJBGxZhu7EaaQRBvA7YoL3pwx2MiDYP6ug",
+  "links": [
+    {
+      "name": "facebook",
+      "url": "https://facebook.com/tether.to"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/tetherUSD"
+    }
+  ],
+  "tags": "stablecoin",
+  "status": "active",
+  "id": "TJBGxZhu7EaaQRBvA7YoL3pwx2MiDYP6ug",
+  "contract": "TJBGxZhu7EaaQRBvA7YoL3pwx2MiDYP6ug"
 }
