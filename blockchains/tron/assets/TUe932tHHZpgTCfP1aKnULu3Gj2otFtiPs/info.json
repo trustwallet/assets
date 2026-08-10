@@ -1,10 +1,10 @@
 {
   "id": "TUe932tHHZpgTCfP1aKnULu3Gj2otFtiPs",
-  "name": "USDT",
+  "name": "USDT TRON",
   "symbol": "USDT",
   "type": "TRC20",
-  "description": "USDT TRC20 token on the TRON blockchain.",
-  "decimals": 4,
+  "description": "USDT TRON is an independent TRC20 token on the TRON blockchain and is not affiliated with Tether.",
+  "decimals": 6,
   "status": "active",
   "website": "https://github.com/Rline232/assets",
   "explorer": "https://tronscan.io/#/token20/TUe932tHHZpgTCfP1aKnULu3Gj2otFtiPs",
@@ -17,8 +17,5 @@
       "name": "docs",
       "url": "https://github.com/Rline232/assets"
     }
-  ],
-  "tags": [
-    "stablecoin"
   ]
 }
