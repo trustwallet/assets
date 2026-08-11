@@ -1,10 +1,24 @@
 {
-  "name": "iBridgeCoin",
-  "website": "https://drive.google.com/file/d/1nIZ3pVffvbcegs_0HUfnwvufuzG5LUjG/view",
-  "short_description": "Cross-chain token on Solana and BNB Chain",
-  "explorer": "https://bscscan.com/token/0xa8E67BC109a985FDF9d3320D4793236a3BE09140",
-  "id": "0xa8E67BC109a985FDF9d3320D4793236a3BE09140",
-  "symbol": "IBRIDGE",
-  "decimals": 18,
-  "tags": ["defi"]
+    "name": "iBridgeCoin",
+    "type": "BEP20",
+    "symbol": "IBRIDGE",
+    "decimals": 18,
+    "description": "iBridgeCoin (IBRIDGE) - Cross-chain token bridging Solana and BNB Chain. Fast, borderless, and built for the next generation of crypto.",
+    "website": "https://drive.google.com/file/d/1nIZ3pVffvbcegs_0HUfnwvufuzG5LUjG/view",
+    "explorer": "https://bscscan.com/token/0xa8E67BC109a985FDF9d3320D4793236a3BE09140",
+    "status": "active",
+    "id": "0xa8E67BC109a985FDF9d3320D4793236a3BE09140",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/rr3910815-cpu"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://drive.google.com/file/d/1nIZ3pVffvbcegs_0HUfnwvufuzG5LUjG/view"
+        }
+    ],
+    "tags": [
+        "defi"
+    ]
 }
