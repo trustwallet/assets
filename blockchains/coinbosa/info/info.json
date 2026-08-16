@@ -1,0 +1,18 @@
+{
+    "name": "Coinbosa",
+    "website": "https://coinbosa.com",
+    "short_description": "Coinbosa Chain is an EVM-compatible network with a fixed supply of 700,000,000 BOSA and 5-second blocks.",
+    "description": "Coinbosa Chain is an EVM-compatible blockchain operated by coinbosa, Inc. (Delaware). The native coin BOSA has 18 decimals and a fixed supply of 700,000,000, allocated entirely in the genesis block with no programmed emission. The network uses Parlia proof-of-staked-authority consensus with 5-second blocks and is currently operated by a single validator, so it is not presented as decentralised. Token contracts follow the BRC20 standard, which is ERC-20 compatible.",
+    "explorer": "https://explorer.coinbosa.com",
+    "type": "coin",
+    "symbol": "BOSA",
+    "rpc_url": "https://explorer.coinbosa.com/rpc",
+    "decimals": 18,
+    "status": "active",
+    "links": [
+        { "name": "github", "url": "https://github.com/Coinbosa/coinbosa-chain" },
+        { "name": "whitepaper", "url": "https://coinbosa.com/whitepaper/" },
+        { "name": "telegram", "url": "https://t.me/coinbosa" },
+        { "name": "facebook", "url": "https://www.facebook.com/coinbosa" }
+    ]
+}
