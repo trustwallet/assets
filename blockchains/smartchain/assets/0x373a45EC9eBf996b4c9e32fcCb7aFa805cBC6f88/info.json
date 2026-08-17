@@ -1,32 +1,47 @@
 {
-  "name": "FLOKІ",
-  "symbol": "FLOKІ",
-  "description": "FLOKI is the utility token of the Floki ecosystem, a cryptocurrency project focused on community, utility and charity.",
+  "name": "FLOKI",
+  "type": "BEP20",
+  "symbol": "FLOKI",
+  "decimals": 9,
+  "description": "FLOKI is the utility token of the Floki ecosystem, focused on community, utility, gaming, DeFi and charitable initiatives.",
   "website": "https://floki.com/",
-  "coinmarketcap": "https://coinmarketcap.com/currencies/floki-inu/",
-  "social": {
-    "twitter": "https://x.com/RealFlokiInu",
-    "facebook": "https://www.facebook.com/RealFlokiInu",
-    "telegram": "https://t.me/RealFlokiInu",
-    "reddit": "https://www.reddit.com/r/Floki/",
-    "discord": "https://discord.com/invite/floki",
-    "medium": "https://medium.com/@realflokiinu",
-    "github": "https://github.com/Floki-Inu"
-  },
-  "contracts": {
-    "ethereum": {
-      "address": "0xcf0c122c6b73ff809c693db761e7baebe62b6a2e",
-      "symbol": "FLOKI",
-      "decimals": 9,
-      "type": "ERC20",
-      "explorer": "https://etherscan.io/"
+  "explorer": "https://bscscan.com/token/0x373a45EC9eBf996b4c9e32fcCb7aFa805cBC6f88",
+  "status": "active",
+  "id": "0x373a45EC9eBf996b4c9e32fcCb7aFa805cBC6f88",
+  "links": [
+    {
+      "name": "x",
+      "url": "https://x.com/RealFlokiInu"
     },
-    "bsc": {
-      "address": "0x373a45EC9eBf996b4c9e32fcCb7aFa805cBC6f88",
-      "symbol": "FLOKI",
-      "decimals": 9,
-      "type": "BEP20",
-      "explorer": "https://bscscan.com/"
+    {
+      "name": "telegram",
+      "url": "https://t.me/RealFlokiInu"
+    },
+    {
+      "name": "reddit",
+      "url": "https://www.reddit.com/r/Floki/"
+    },
+    {
+      "name": "discord",
+      "url": "https://discord.com/invite/floki"
+    },
+    {
+      "name": "medium",
+      "url": "https://medium.com/@realflokiinu"
+    },
+    {
+      "name": "facebook",
+      "url": "https://www.facebook.com/RealFlokiInu"
+    },
+    {
+      "name": "coinmarketcap",
+      "url": "https://coinmarketcap.com/currencies/floki-inu/"
     }
-  }
+  ],
+  "tags": [
+    "memes",
+    "defi",
+    "gamefi",
+    "deflationary"
+  ]
 }
