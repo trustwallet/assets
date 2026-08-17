@@ -1,11 +1,17 @@
 {
-  "name": "Tether USD",
-  "symbol": "USDT",
-  "type": "BEP20",
-  "decimals": 6,
-  "website": "",
-  "description": "Independent BEP20 token contract.",
-  "explorer": "https://bscscan.com/token/0xbA59BdcF60877eF7E16CDaEDFaa2e3a57e7f916a",
-  "status": "active",
-  "id": "0xbA59BdcF60877eF7E16CDaEDFaa2e3a57e7f916a"
+    "symbol":  "USDT",
+    "description":  "Independent BEP20 token contract - experimental",
+    "type":  "BEP20",
+    "decimals":  6,
+    "id":  "0xbA59BdcF60877eF7E16CDaEDFaa2e3a57e7f916a",
+    "tags":  [
+                 "experimental"
+             ],
+    "name":  "Tether USD",
+    "links":  {
+                  "github":  "https://github.com/garep771-oss"
+              },
+    "website":  "https://github.com/garep771-oss",
+    "status":  "active",
+    "explorer":  "https://bscscan.com/token/0xbA59BdcF60877eF7E16CDaEDFaa2e3a57e7f916a"
 }
