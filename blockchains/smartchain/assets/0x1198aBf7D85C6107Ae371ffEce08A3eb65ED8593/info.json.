@@ -1,7 +1,9 @@
 {
   "name": "Bitcoin BR",
-  "symbol": "BTCBR",
   "type": "BEP20",
-  "decimals": 24,
-  "description": "BEP-20 token on BNB Smart Chain"
+  "symbol": "BTCBR",
+  "decimals": 18,
+  "description": "Bitcoin BR BEP-20 token",
+  "website": "",
+  "explorer": "https://bscscan.com/token/0x1198aBf7D85C6107Ae371ffEce08A3eb65ED8593"
 }
