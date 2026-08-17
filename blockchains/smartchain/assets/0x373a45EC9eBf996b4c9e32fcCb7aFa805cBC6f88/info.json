@@ -1,0 +1,30 @@
+{
+  "name": "FLOKІ",
+  "symbol": "FLOKІ",
+  "type": "BEP20",
+  "decimals": 9,
+  "description": "Floki (FLOKI) is the people's cryptocurrency and the utility token of the Floki Ecosystem. Floki is a multichain cryptocurrency available on Ethereum and BNB Smart Chain.",
+  "website": "https://floki.com/",
+  "explorer": "https://etherscan.io/token/0xcf0c122c6b73ff809c693db761e7baebe62b6a2e",
+  "status": "active",
+  "tags": [
+    "memes",
+    "gaming",
+    "defi"
+  ],
+  "contracts": {
+    "ethereum": {
+      "address": "0x373a45EC9eBf996b4c9e32fcCb7aFa805cBC6f88",
+      "decimals": 9,
+      "explorer": "https://etherscan.io/token/0x373a45EC9eBf996b4c9e32fcCb7aFa805cBC6f88"
+    },
+    "bsc": {
+      "address": "0x373a45EC9eBf996b4c9e32fcCb7aFa805cBC6f88",
+      "decimals": 9,
+      "explorer": "https://bscscan.com/token/0x373a45EC9eBf996b4c9e32fcCb7aFa805cBC6f88"
+    }
+  },
+  "whitepaper": "https://docs.floki.com/",
+  "coinmarketcap": "https://coinmarketcap.com/currencies/floki-inu/",
+  "coinmarketcap_id": 10804
+}
