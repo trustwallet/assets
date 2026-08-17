@@ -1,30 +1,32 @@
 {
   "name": "FLOKІ",
   "symbol": "FLOKІ",
-  "type": "BEP20",
-  "decimals": 9,
-  "description": "Floki (FLOKI) is the people's cryptocurrency and the utility token of the Floki Ecosystem. Floki is a multichain cryptocurrency available on Ethereum and BNB Smart Chain.",
+  "description": "FLOKI is the utility token of the Floki ecosystem, a cryptocurrency project focused on community, utility and charity.",
   "website": "https://floki.com/",
-  "explorer": "https://etherscan.io/token/0xcf0c122c6b73ff809c693db761e7baebe62b6a2e",
-  "status": "active",
-  "tags": [
-    "memes",
-    "gaming",
-    "defi"
-  ],
+  "coinmarketcap": "https://coinmarketcap.com/currencies/floki-inu/",
+  "social": {
+    "twitter": "https://x.com/RealFlokiInu",
+    "facebook": "https://www.facebook.com/RealFlokiInu",
+    "telegram": "https://t.me/RealFlokiInu",
+    "reddit": "https://www.reddit.com/r/Floki/",
+    "discord": "https://discord.com/invite/floki",
+    "medium": "https://medium.com/@realflokiinu",
+    "github": "https://github.com/Floki-Inu"
+  },
   "contracts": {
     "ethereum": {
-      "address": "0x373a45EC9eBf996b4c9e32fcCb7aFa805cBC6f88",
+      "address": "0xcf0c122c6b73ff809c693db761e7baebe62b6a2e",
+      "symbol": "FLOKI",
       "decimals": 9,
-      "explorer": "https://etherscan.io/token/0x373a45EC9eBf996b4c9e32fcCb7aFa805cBC6f88"
+      "type": "ERC20",
+      "explorer": "https://etherscan.io/"
     },
     "bsc": {
       "address": "0x373a45EC9eBf996b4c9e32fcCb7aFa805cBC6f88",
+      "symbol": "FLOKI",
       "decimals": 9,
-      "explorer": "https://bscscan.com/token/0x373a45EC9eBf996b4c9e32fcCb7aFa805cBC6f88"
+      "type": "BEP20",
+      "explorer": "https://bscscan.com/"
     }
-  },
-  "whitepaper": "https://docs.floki.com/",
-  "coinmarketcap": "https://coinmarketcap.com/currencies/floki-inu/",
-  "coinmarketcap_id": 10804
+  }
 }
