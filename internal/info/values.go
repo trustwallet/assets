@@ -24,7 +24,7 @@ var (
 	allowedLinkKeys = map[string]string{
 		"github":        "https://github.com/",
 		"whitepaper":    "",
-		"twitter":       "https://twitter.com/",
+		"x":             "https://x.com/",
 		"telegram":      "https://t.me/",
 		"telegram_news": "https://t.me/", // Read-only announcement channel.
 		"medium":        "",              // URL contains 'medium.com'.

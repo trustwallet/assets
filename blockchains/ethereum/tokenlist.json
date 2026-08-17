@@ -125,9 +125,6 @@
                     "base": "c60_t0x2b591e99afE9f32eAA6214f7B7629768c40Eeb39"
                 },
                 {
-                    "base": "c60_t0x3301Ee63Fb29F863f2333Bd4466acb46CD8323E6"
-                },
-                {
                     "base": "c60_t0x3383c5a8969Dc413bfdDc9656Eb80A1408E4bA20"
                 },
                 {
@@ -261,9 +258,6 @@
                 },
                 {
                     "base": "c60_t0x88ACDd2a6425c3FaAE4Bc9650Fd7E27e0Bebb7aB"
-                },
-                {
-                    "base": "c60_t0x88EF27e69108B2633F8E1C184CC37940A075cC02"
                 },
                 {
                     "base": "c60_t0x8a40c222996f9F3431f63Bf80244C36822060f12"
@@ -532,7 +526,7 @@
             "asset": "c60_t0x00c83aeCC790e8a4453e5dD3B0B4b3680501a7A7",
             "type": "ERC20",
             "address": "0x00c83aeCC790e8a4453e5dD3B0B4b3680501a7A7",
-            "name": "SKALE Network",
+            "name": "SKALE",
             "symbol": "SKL",
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0x00c83aeCC790e8a4453e5dD3B0B4b3680501a7A7/logo.png",
@@ -654,7 +648,7 @@
             "asset": "c60_t0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e",
             "type": "ERC20",
             "address": "0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e",
-            "name": "yearn.finance",
+            "name": "Yearn",
             "symbol": "YFI",
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e/logo.png",
@@ -767,7 +761,7 @@
             "asset": "c60_t0x111111111117dC0aa78b770fA6A738034120C302",
             "type": "ERC20",
             "address": "0x111111111117dC0aa78b770fA6A738034120C302",
-            "name": "1INCH Token",
+            "name": "1inch",
             "symbol": "1INCH",
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0x111111111117dC0aa78b770fA6A738034120C302/logo.png",
@@ -1130,16 +1124,6 @@
             "pairs": []
         },
         {
-            "asset": "c60_t0x3301Ee63Fb29F863f2333Bd4466acb46CD8323E6",
-            "type": "ERC20",
-            "address": "0x3301Ee63Fb29F863f2333Bd4466acb46CD8323E6",
-            "name": "Akita Inu",
-            "symbol": "AKITA",
-            "decimals": 18,
-            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0x3301Ee63Fb29F863f2333Bd4466acb46CD8323E6/logo.png",
-            "pairs": []
-        },
-        {
             "asset": "c60_t0x3383c5a8969Dc413bfdDc9656Eb80A1408E4bA20",
             "type": "ERC20",
             "address": "0x3383c5a8969Dc413bfdDc9656Eb80A1408E4bA20",
@@ -1315,7 +1299,7 @@
             "asset": "c60_t0x4691937a7508860F876c9c0a2a617E7d9E945D4B",
             "type": "ERC20",
             "address": "0x4691937a7508860F876c9c0a2a617E7d9E945D4B",
-            "name": "WOO Network",
+            "name": "WOO",
             "symbol": "WOO",
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0x4691937a7508860F876c9c0a2a617E7d9E945D4B/logo.png",
@@ -1972,16 +1956,6 @@
             "pairs": []
         },
         {
-            "asset": "c60_t0x88EF27e69108B2633F8E1C184CC37940A075cC02",
-            "type": "ERC20",
-            "address": "0x88EF27e69108B2633F8E1C184CC37940A075cC02",
-            "name": "Dego Finance",
-            "symbol": "DEGO",
-            "decimals": 18,
-            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0x88EF27e69108B2633F8E1C184CC37940A075cC02/logo.png",
-            "pairs": []
-        },
-        {
             "asset": "c60_t0x89Ab32156e46F46D02ade3FEcbe5Fc4243B9AAeD",
             "type": "ERC20",
             "address": "0x89Ab32156e46F46D02ade3FEcbe5Fc4243B9AAeD",
@@ -2066,7 +2040,7 @@
             "asset": "c60_t0x8f8221aFbB33998d8584A2B05749bA73c37a938a",
             "type": "ERC20",
             "address": "0x8f8221aFbB33998d8584A2B05749bA73c37a938a",
-            "name": "Request Token",
+            "name": "Request",
             "symbol": "REQ",
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0x8f8221aFbB33998d8584A2B05749bA73c37a938a/logo.png",
@@ -2269,7 +2243,7 @@
             "asset": "c60_t0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
             "type": "ERC20",
             "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
-            "name": "USD Coin",
+            "name": "USDC",
             "symbol": "USDC",
             "decimals": 6,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png",
@@ -2369,7 +2343,7 @@
             "asset": "c60_t0xaA7a9CA87d3694B5755f213B5D04094b8d0F0A6F",
             "type": "ERC20",
             "address": "0xaA7a9CA87d3694B5755f213B5D04094b8d0F0A6F",
-            "name": "Trace Token",
+            "name": "OriginTrail",
             "symbol": "TRAC",
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0xaA7a9CA87d3694B5755f213B5D04094b8d0F0A6F/logo.png",
@@ -2430,7 +2404,7 @@
             "asset": "c60_t0xADE00C28244d5CE17D72E40330B1c318cD12B7c3",
             "type": "ERC20",
             "address": "0xADE00C28244d5CE17D72E40330B1c318cD12B7c3",
-            "name": "Ambire AdEx",
+            "name": "heyAura",
             "symbol": "ADX",
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0xADE00C28244d5CE17D72E40330B1c318cD12B7c3/logo.png",
@@ -2572,7 +2546,7 @@
             "asset": "c60_t0xBA11D00c5f74255f56a5E366F4F77f5A186d7f55",
             "type": "ERC20",
             "address": "0xBA11D00c5f74255f56a5E366F4F77f5A186d7f55",
-            "name": "Band Protocol",
+            "name": "Band",
             "symbol": "BAND",
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0xBA11D00c5f74255f56a5E366F4F77f5A186d7f55/logo.png",
@@ -3108,7 +3082,7 @@
             "asset": "c60_t0xEEF9f339514298C6A857EfCfC1A762aF84438dEE",
             "type": "ERC20",
             "address": "0xEEF9f339514298C6A857EfCfC1A762aF84438dEE",
-            "name": "Hermez Network Token",
+            "name": "Hermez Network",
             "symbol": "HEZ",
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0xEEF9f339514298C6A857EfCfC1A762aF84438dEE/logo.png",
@@ -3132,16 +3106,6 @@
             "symbol": "RLY",
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0xf1f955016EcbCd7321c7266BccFB96c68ea5E49b/logo.png",
-            "pairs": []
-        },
-        {
-            "asset": "c60_t0xf21661D0D1d76d3ECb8e1B9F1c923DBfffAe4097",
-            "type": "ERC20",
-            "address": "0xf21661D0D1d76d3ECb8e1B9F1c923DBfffAe4097",
-            "name": "Realio Network",
-            "symbol": "RIO",
-            "decimals": 18,
-            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0xf21661D0D1d76d3ECb8e1B9F1c923DBfffAe4097/logo.png",
             "pairs": []
         },
         {
@@ -3329,7 +3293,7 @@
             "asset": "c60_t0x4e3FBD56CD56c3e72c1403e103b45Db9da5B9D2B",
             "type": "ERC20",
             "address": "0x4e3FBD56CD56c3e72c1403e103b45Db9da5B9D2B",
-            "name": "Convex Token",
+            "name": "Convex Finance",
             "symbol": "CVX",
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0x4e3FBD56CD56c3e72c1403e103b45Db9da5B9D2B/logo.png",
@@ -3419,7 +3383,7 @@
             "asset": "c60_t0xAf5191B0De278C7286d6C7CC6ab6BB8A73bA2Cd6",
             "type": "ERC20",
             "address": "0xAf5191B0De278C7286d6C7CC6ab6BB8A73bA2Cd6",
-            "name": "StargateToken",
+            "name": "Stargate Finance",
             "symbol": "STG",
             "decimals": 18,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0xAf5191B0De278C7286d6C7CC6ab6BB8A73bA2Cd6/logo.png",
