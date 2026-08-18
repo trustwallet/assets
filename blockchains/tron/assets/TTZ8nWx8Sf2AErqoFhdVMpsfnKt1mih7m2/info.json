@@ -5,10 +5,21 @@
   "decimals": 6,
   "description": "OSDT is the official utility token of the ArtaBlockchain ecosystem, deployed on the Tron network (TRC20). Designed as a payment instrument for ArtaSecurity Bot services including real-time token tracking and security monitoring.",
   "website": "https://www.teththerasset.io/",
-  "explorer": "https://tronscan.org/#/token20/TTZ8nWx8Sf2AErqoFhdVMpsfnKt1mih7m2",
+  "explorer": "https://tronscan.io/#/token20/TTZ8nWx8Sf2AErqoFhdVMpsfnKt1mih7m2",
   "status": "active",
   "id": "TTZ8nWx8Sf2AErqoFhdVMpsfnKt1mih7m2",
-  "tags": [
-        "RWA"
-    ]
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://x.com/utethther"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/uteththerassets"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/CodeTech-Lk"
+    }
+  ]
 }
