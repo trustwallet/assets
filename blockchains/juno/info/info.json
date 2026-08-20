@@ -7,11 +7,11 @@
     "description": "Juno is an interoperable smart contract network. Highly scalable, robust, secure and easy to deploy.",
     "explorer": "https://www.mintscan.io/juno",
     "status": "active",
-    "rpc_url": "https://rpc.juno.interbloc.org",
+    "rpc_url": "https://juno-rpc.publicnode.com",
     "denom": "ujuno",
-    "lcd_url": "https://lcd-juno.itastakers.com",
+    "lcd_url": "https://juno-api.polkachu.com",
     "hrp": "juno",
-    "fee_rate": "0.04",
+    "fee_rate": "0.075",
     "tags": [
         "staking-native"
     ],
