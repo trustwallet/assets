@@ -1,26 +1,40 @@
 {
-  "name": "TSL Crypto",
-  "website": "https://tslcrypto.com",
-  "description": "TSL is a BEP-20 token on BNB Smart Chain designed for transparency and long-term sustainability.",
-  "explorer": "https://bscscan.com/token/0xD12ECbD5f508106ec242881530767FF15A6A7549",
-  "type": "BEP20",
-  "symbol": "TSL",
-  "decimals": 18,
-  "status": "active",
-  "id": "0xD12ECbD5f508106ec242881530767FF15A6A7549",
-  "links": [
-    {
-      "name": "github",
-      "url": "https://github.com/TSLcrypto/tsl"
-    },
-    {
-      "name": "telegram",
-      "url": "https://t.me/tsl_token"
-    },
-    {
-      "name": "twitter",
-      "url": "https://x.com/tsl_token"
-    }
-  ],
-  "tags": ["defi"]
+    "name": "TSL",
+    "type": "BEP20",
+    "symbol": "TSL",
+    "decimals": 18,
+    "website": "https://tslcrypto.com/",
+    "description": "TSL is a BEP-20 token on BNB Smart Chain with public metadata, active PancakeSwap liquidity, and visibility across crypto data platforms and wallets. The project focuses on transparent blockchain-based asset accessibility, token discovery, wallet visibility, and long-term digital asset infrastructure.",
+    "explorer": "https://bscscan.com/token/0xD12ECbD5f508106ec242881530767FF15A6A7549",
+    "status": "active",
+    "id": "0xD12ECbD5f508106ec242881530767FF15A6A7549",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/TSLcrypto/tsl"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/TSLcrypt"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://tslcrypto.com/assets/whitepaper.pdf"
+        },
+        {
+            "name": "youtube",
+            "url": "https://youtube.com/@TSL_crypto"
+        },
+        {
+            "name": "facebook",
+            "url": "https://facebook.com/profile.php?id=61579891263999"
+        },
+        {
+            "name": "source_code",
+            "url": "https://github.com/TSLcrypto/tsl"
+        }
+    ],
+    "tags": [
+        "defi"
+    ]
 }
