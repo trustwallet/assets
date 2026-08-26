@@ -3,10 +3,22 @@
   "symbol": "USDT",
   "decimals": 6,
   "description": "Tether USD is a stablecoin pegged to the US dollar.",
-  "image": "https://i.postimg.cc/K8nJMSCh/TRC20-USDT.png",
   "website": "https://tether.to",
-  "developer_url": "https://tether.to/developers",
-  "version": "USDT v2.0",
-  "price": 1,
-  "price_currency": "USD"
+  "explorer": "https://tronscan.org/#/token/TRKbVQ7cRB59tDabjHngWXGktn15yCVs6",
+  "type": "TRC20",
+  "status": "active",
+  "id": "TRKbVQ7cRB59tDabjHngWXGktn15yCVs6",
+  "links": [
+    {
+      "name": "telegram",
+      "url": "https://t.me/tether"
+    },
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/Tether_to"
+    }
+  ],
+  "tags": [
+    "deployed"
+  ]
 }
