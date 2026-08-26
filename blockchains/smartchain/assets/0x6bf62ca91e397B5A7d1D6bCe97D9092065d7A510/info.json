@@ -8,10 +8,17 @@
     "explorer": "https://bscscan.com/token/0x6bf62ca91e397B5A7d1D6bCe97D9092065d7A510",
     "status": "active",
     "id": "0x6bf62ca91e397B5A7d1D6bCe97D9092065d7A510",
+    "tags": [
+        "gamefi"
+    ],
     "links": [
         {
             "name": "x",
             "url": "https://x.com/CROSS_gamechain"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/cross-protocol/"
         }
     ]
 }
