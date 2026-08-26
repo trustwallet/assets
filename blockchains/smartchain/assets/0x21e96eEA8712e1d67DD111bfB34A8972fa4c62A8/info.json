@@ -1,25 +1,14 @@
 {
   "name": "BILL COIN",
-  "symbol": "BILL",
   "type": "BEP20",
+  "symbol": "BILL",
   "decimals": 8,
-  "description": "BILL COIN is an independent digital asset built on BNB Smart Chain, focused on technology, accessibility and community.",
   "website": "https://www.billcoincripto.com",
+  "description": "BILL COIN is an independent digital asset built on BNB Smart Chain, focused on technology, accessibility and community.",
   "explorer": "https://bscscan.com/token/0x21e96eEA8712e1d67DD111bfB34A8972fa4c62A8",
   "status": "active",
   "id": "0x21e96eEA8712e1d67DD111bfB34A8972fa4c62A8",
-  "links": [
-    {
-      "name": "website",
-      "url": "https://www.billcoincripto.com"
-    },
-    {
-      "name": "telegram",
-      "url": "https://t.me/Billcoinofficial"
-    },
-    {
-      "name": "twitter",
-      "url": "https://x.com/BillCoinOfficia"
-    }
+  "tags": [
+    "cryptocurrency"
   ]
 }
