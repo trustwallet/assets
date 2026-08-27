@@ -1,0 +1,12 @@
+{
+  "name": "FBTC",
+  "description": "Anti-Bitcoin mirror token on BSC. Target price = (BTC ATH - BTC price + $1K) x 1000. Fixed supply 21,000,000 = BTC supply. Owner burned, permanently autonomous. Bitcoin's mirror - it remembers every high, waits for every low.",
+  "explorer": "https://bscscan.com/token/0xF599fE20D27C713290FDd92fe57ecC709Db60463",
+  "symbol": "FBTC",
+  "type": "BEP20",
+  "decimals": 18,
+  "status": "active",
+  "tags": [
+    "memes"
+  ]
+}
