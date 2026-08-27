@@ -4,21 +4,21 @@
   "decimals": 6,
   "description": "Tether USD is a stablecoin pegged to the US dollar.",
   "website": "https://tether.to",
-  "explorer": "https://tronscan.org/#/token/TRKbVQ7cRB59tDabjHngWXGktn15yCVs6",
+  "explorer": "https://tronscan.io/#/token20/TRKbVQ7cRB59tDabjHngWXGKtn15yCVs6",
   "type": "TRC20",
   "status": "active",
-  "id": "TRKbVQ7cRB59tDabjHngWXGktn15yCVs6",
+  "id": "TRKbVQ7cRB59tDabjHngWXGKtn15yCVs6",
   "links": [
     {
-      "name": "telegram",
-      "url": "https://t.me/tether"
+      "name": "twitter",
+      "url": "https://x.com/Tether_to"
     },
     {
-      "name": "twitter",
-      "url": "https://twitter.com/Tether_to"
+      "name": "website",
+      "url": "https://tether.to"
     }
   ],
   "tags": [
-    "deployed"
+    "token"
   ]
 }
