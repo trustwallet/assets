@@ -1,11 +1,24 @@
 {
     "name": "董老贼",
-    "website": "",
+    "website": "http://0penstack.com",
     "description": "董老贼 Token",
     "explorer": "https://bscscan.com/token/0x9cB8B6Ec70e9604947AE6A9C319f9Ac3ba6E0B64",
     "type": "BEP20",
     "symbol": "董老贼",
     "decimals": 3,
     "status": "active",
-    "id": "0x9cB8B6Ec70e9604947AE6A9C319f9Ac3ba6E0B64"
+    "id": "0x9cB8B6Ec70e9604947AE6A9C319f9Ac3ba6E0B64",
+    "tags": [
+        "memes"
+    ],
+    "links": [
+        {
+            "name": "telegram",
+            "url": "https://t.me/+BH4yumMTOt41YjY1"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/dxl0318"
+        }
+    ]
 }
