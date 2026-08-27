@@ -41,8 +41,12 @@ validators_settings:
       - ".golangci.yml"
       - "Makefile"
       - "bin"
+      - "CLAUDE.md"
+      - "knowledge"
     skip_files:
       - "node_modules"
+    skip_dirs:
+      - ".git"
 
   chain_folder:
     allowed_files:

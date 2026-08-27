@@ -3,6 +3,7 @@ package config
 type RootFolder struct {
 	AllowedFiles []string `mapstructure:"allowed_files,omitempty"`
 	SkipFiles    []string `mapstructure:"skip_files,omitempty"`
+	SkipDirs     []string `mapstructure:"skip_dirs,omitempty"`
 }
 
 type ChainFolder struct {

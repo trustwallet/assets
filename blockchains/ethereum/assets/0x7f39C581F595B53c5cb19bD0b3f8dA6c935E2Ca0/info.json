@@ -1,0 +1,21 @@
+{
+    "name": "Wrapped liquid staked Ether 2.0",
+    "type": "ERC20",
+    "symbol": "wstETH",
+    "decimals": 18,
+    "website": "https://www.lido.fi/",
+    "description": "wstETH is a wrapped version of stETH. As some DeFi protocols require a constant balance mechanism for tokens, wstETH keeps your balance of stETH fixed and uses an underlying share system to reflect your earned staking rewards.",
+    "explorer": "https://etherscan.io/token/0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+    "status": "active",
+    "id": "0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0",
+    "links": [
+        {
+            "name": "x",
+            "url": "https://x.com/lidofinance"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/lidofinance"
+        }
+    ]
+}
