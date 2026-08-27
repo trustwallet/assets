@@ -1,11 +1,24 @@
 {
-  "name": "Intellica",
-  "type": "ERC20",
-  "symbol": "INTCA",
-  "decimals": 18,
-  "description": "INTCA is the utility token of Intellica - the AI assistant platform at intellica.world.",
-  "website": "https://intellica.world",
-  "explorer": "https://etherscan.io/token/0x40f27D221aA93260DB1cE79F3ad4517707C9bd74",
-  "status": "active",
-  "id": "0x40f27D221aA93260DB1cE79F3ad4517707C9bd74"
+    "name": "Intellica",
+    "website": "https://intellica.world",
+    "description": "INTCA is the utility token of Intellica - the AI assistant platform at intellica.world.",
+    "explorer": "https://etherscan.io/token/0x40f27D221aA93260DB1cE79F3ad4517707C9bd74",
+    "type": "ERC20",
+    "symbol": "INTCA",
+    "decimals": 18,
+    "status": "active",
+    "id": "0x40f27D221aA93260DB1cE79F3ad4517707C9bd74",
+    "tags": [
+        "ai"
+    ],
+    "links": [
+        {
+            "name": "x",
+            "url": "https://x.com/intellica_os"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/Intellica-World"
+        }
+    ]
 }
