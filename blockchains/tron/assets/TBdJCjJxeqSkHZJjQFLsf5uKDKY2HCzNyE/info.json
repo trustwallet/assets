@@ -1,8 +1,21 @@
 {
   "name": "Tether USD",
+  "type": "ERC20",
   "symbol": "USDT",
   "decimals": 6,
   "description": "Tether USD stablecoin on TRON network TRC-20",
   "website": "https://tether.to",
-  "status": "active"
+  "explorer": "https://tronscan.org/#/token20/TBdJCjJxeqSkHZJjQFLsf5uKDKY2HCzNyE",
+  "id": "TBdJCjJxeqSkHZJjQFLsf5uKDKY2HCzNyE",
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/Tether_to"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/OfficialTether"
+    }
+  ],
+  "tags": ["stablecoin"]
 }
