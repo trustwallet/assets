@@ -1,11 +1,24 @@
 {
-    "name": "Tether",
-    "symbol": "USDT",
-    "type": "TRC20",
-    "decimals": 6,
-    "description": "-",
-    "website": "https://mancityuz300-arch.github.io/tether-site/",
-    "explorer": "https://tronscan.org/token20/TYLpUgP1Khpj7PnXSMw8e3DSoXTXExyj2q/",
-    "status": "abandoned",
-    "id": "TYLpUgP1Khpj7PnXSMw8e3DSoXTXExyj2q"
+  "name": "Tether",
+  "type": "TRC20",
+  "symbol": "USDT",
+  "decimals": 6,
+  "description": "Tether is a TRC-20 utility token deployed on the TRON blockchain.",
+  "website": "https://mancityuz300-arch.github.io/tether-site/",
+  "explorer": "https://tronscan.io/#/token20/TYLpUgP1Khpj7PnXSMw8e3DSoXTXExyj2q",
+  "status": "active",
+  "id": "TYLpUgP1Khpj7PnXSMw8e3DSoXTXExyj2q",
+  "links": [
+    {
+      "name": "github",
+      "url": "https://github.com/mancityuz300-arch"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/tether_usdt_site"
+    }
+  ],
+  "tags": [
+    "utility"
+  ]
 }
