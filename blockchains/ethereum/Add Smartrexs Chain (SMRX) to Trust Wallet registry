@@ -1,0 +1,35 @@
+This PR adds Smartrexs Chain (SMRX) to the Trust Wallet registry.
+
+- Chain name: Smartrexs Chain
+- Symbol: SMRX
+- CoinType: 10001 (pending approval in SLIP-0044)
+- Decimals: 18
+- Explorer: https://explorer.smartrexs.org
+- RPC: https://rpc.smartrexs.org
+- Testnet: false
+- Logo: smrx.png
+- Description: Smartrexs Chain (SMRX) is a decentralized blockchain platform designed for scalable smart contracts, fast transactions, and secure digital asset management.
+
+Contracts:
+- Native token contract: 0x1234567890abcdef1234567890abcdef12345678 (ERC20 standard){
+  "id": "smrx",
+  "name": "Smartrexs Chain",
+  "symbol": "SMRX",
+  "decimals": 18,
+  "explorer": "https://explorer.smartrexs.org",
+  "type": "coin",
+  "coinType": 10001,
+  "rpc": "https://rpc.smartrexs.org",
+  "testnet": false,
+  "logo": "smrx.png",
+  "description": "Smartrexs Chain (SMRX) is a decentralized blockchain platform designed for scalable smart contracts, fast transactions, and secure digital asset management.",
+  "contracts": [
+    {
+      "address": "0x1234567890abcdef1234567890abcdef12345678",
+      "symbol": "SMRX",
+      "decimals": 18,
+      "type": "ERC20",
+      "chain": "smrx"
+    }
+  ]
+}
