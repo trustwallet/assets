@@ -5,7 +5,20 @@
   "decimals": 18,
   "description": "USK is a test TRC20 token created for learning smart contract development on the Tron blockchain.",
   "website": "https://telegra.ph/USK-TOKEN-09-05",
-  "explorer": "https://tronscan.org/#/token20/TJeipASLRv6kqZfbLMoGfhwkFmq7o8fnwL",
+  "explorer": "https://tronscan.io/#/token20/TJeipASLRv6kqZfbLMoGfhwkFmq7o8fnwL",
   "status": "active",
-  "id": "TJeipASLRv6kqZfbLMoGfhwkFmq7o8fnwL"
+  "id": "TJeipASLRv6kqZfbLMoGfhwkFmq7o8fnwL",
+  "links": [
+    {
+      "name": "github",
+      "url": "https://github.com/NewSTY-dev"
+    },
+    {
+      "name": "blog",
+      "url": "https://telegra.ph/USK-TOKEN-09-05"
+    }
+  ],
+  "tags": [
+    "utility-token"
+  ]
 }
