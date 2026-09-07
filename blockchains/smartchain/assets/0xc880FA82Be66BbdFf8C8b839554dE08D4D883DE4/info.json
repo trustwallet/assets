@@ -1,0 +1,20 @@
+{
+  "name": "Wrapped ZENX",
+  "website": "https://zenx.network",
+  "description": "wZENX is the BEP-20 mirror of ZENX, minted by the ZENX bridge relayer when ZENX is locked on the ZENX chain (chain ID 88991) and burned when value returns. Wrapping lets ZENX trade and bridge on BNB Smart Chain.",
+  "explorer": "https://bscscan.com/token/0xc880FA82Be66BbdFf8C8b839554dE08D4D883DE4",
+  "type": "BEP20",
+  "symbol": "wZENX",
+  "decimals": 18,
+  "status": "active",
+  "id": "0xc880FA82Be66BbdFf8C8b839554dE08D4D883DE4",
+  "tags": [
+    "wrapped"
+  ],
+  "links": [
+    {
+      "name": "website",
+      "url": "https://zenx.network"
+    }
+  ]
+}
