@@ -1,0 +1,24 @@
+{
+    "name": "Staked Cap USD",
+    "type": "MEGAETH",
+    "symbol": "stcUSD",
+    "decimals": 18,
+    "website": "https://cap.app/",
+    "description": "stcUSD is a savings product issued by staking cUSD. Any cUSD holder has open access to stcUSD. Yield is generated via an autonomous layer of operators, who self-select in and out based on the current hurdle rate of the protocol. The risk of yield generation is covered, meaning users have full downside protection that is verifiable by code.",
+    "explorer": "https://megaeth.blockscout.com/token/0x88887bE419578051FF9F4eb6C858A951921D8888",
+    "status": "active",
+    "id": "0x88887bE419578051FF9F4eb6C858A951921D8888",
+    "links": [
+        {
+            "name": "x",
+            "url": "https://x.com/capmoney_"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://docs.cap.app/"
+        }
+    ],
+    "tags": [
+        "staking"
+    ]
+}

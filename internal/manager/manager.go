@@ -2,6 +2,7 @@ package manager
 
 import (
 	"os"
+	"strings"
 
 	"github.com/trustwallet/assets-go-libs/file"
 	"github.com/trustwallet/assets-go-libs/path"
@@ -116,6 +117,15 @@ func handleAddTokenList(args []string, tokenlistType path.TokenListType) {
 	}
 }
 
+func filter[T any](ss []T, test func(T) bool) (ret []T) {
+	for _, s := range ss {
+		if test(s) {
+			ret = append(ret, s)
+		}
+	}
+	return
+}
+
 func InitAssetsService() *service.Service {
 	setup()
 
@@ -123,6 +133,15 @@ func InitAssetsService() *service.Service {
 	if err != nil {
 		log.WithError(err).Fatal("Failed to load file structure.")
 	}
+
+	paths = filter(paths, func(path string) bool {
+		for _, dir := range config.Default.ValidatorsSettings.RootFolder.SkipDirs {
+			if strings.Contains(path, dir) {
+				return false
+			}
+		}
+		return true
+	})
 
 	fileService := file.NewService(paths...)
 	validatorsService := processor.NewService(fileService)

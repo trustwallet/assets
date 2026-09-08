@@ -9,14 +9,17 @@
     "rpc_url": "https://forno.celo.org",
     "decimals": 18,
     "status": "active",
+    "tags": [
+        "dapp"
+    ],
     "links": [
         {
             "name": "github",
             "url": "https://github.com/celo-org/celo-blockchain"
         },
         {
-            "name": "twitter",
-            "url": "https://twitter.com/CeloOrg"
+            "name": "x",
+            "url": "https://x.com/CeloOrg"
         },
         {
             "name": "whitepaper",
