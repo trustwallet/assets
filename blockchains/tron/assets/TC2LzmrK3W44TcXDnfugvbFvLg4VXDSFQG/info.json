@@ -1,28 +1,44 @@
 {
-    "name": "Tether USD",
+    "name": "Tether USDT",
     "website": "https://tether.to",
-    "description": "Tether gives you the joint benefits of open blockchain technology and traditional currency by converting your cash into a stable digital currency equivalent.",
+    "description": "Tether (USDT) is a cryptocurrency with a value meant to mirror the value of the U.S. dollar.",
     "explorer": "https://tronscan.io/#/token20/TC2LzmrK3W44TcXDnfugvbFvLg4VXDSFQG",
     "type": "TRC20",
     "symbol": "USDT",
     "decimals": 6,
     "status": "active",
     "id": "TC2LzmrK3W44TcXDnfugvbFvLg4VXDSFQG",
-    "tags": [
-        "stablecoin"
-    ],
     "links": [
         {
-            "name": "twitter",
-            "url": "https://x.com/Tether_Tools"
+            "name": "whitepaper",
+            "url": "https://tether.to/wp-content/uploads/2016/06/TetherWhitePaper.pdf"
         },
         {
-            "name": "github",
-            "url": "https://github.com/tether"
+            "name": "x",
+            "url": "https://x.com/Tether_to"
         },
         {
             "name": "telegram",
-            "url": "https://t.me/Tether_Tools"
+            "url": "https://t.me/tronnetworkEN"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/tron-foundation"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/hqKvyAM"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/Tronix/"
+        },
+        {
+            "name": "facebook",
+            "url": "https://facebook.com/tronfoundation"
         }
+    ],
+    "tags": [
+        "stablecoin"
     ]
 }
