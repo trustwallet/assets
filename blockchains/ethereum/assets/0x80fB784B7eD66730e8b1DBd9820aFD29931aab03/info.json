@@ -1,7 +1,12 @@
 {
     "name": "Aave",
     "website": "https://aave.com",
-    "short_description": "Aave is an Open Source and Non-Custodial protocol to earn interest on deposits & borrow assets.",
-    "socials": [],
-    "explorer": "https://etherscan.io/token/0x80fB784B7eD66730e8b1DBd9820aFD29931aab03"
+    "description": "Aave is an Open Source and Non-Custodial protocol to earn interest on deposits & borrow assets.",
+    "explorer": "https://etherscan.io/token/0x80fB784B7eD66730e8b1DBd9820aFD29931aab03",
+    "research": "https://research.binance.com/en/projects/aave-protocol",
+    "type": "ERC20",
+    "symbol": "LEND",
+    "decimals": 18,
+    "status": "abandoned",
+    "id": "0x80fB784B7eD66730e8b1DBd9820aFD29931aab03"
 }

@@ -1,7 +1,11 @@
 {
-    "name": "Pundi X",
+    "name": "Pundi X (Old)",
     "website": "https://pundix.com",
-    "short_description": "Pundi X (NPXS) aims to make the use of cryptocurrency as a form of payment into a reality for retailers and consumers alike.",
-    "socials": [],
-    "explorer": "https://etherscan.io/token/0xa15c7ebe1f07caf6bff097d8a589fb8ac49ae5b3"
+    "description": "Pundi X (NPXS) aims to make the use of cryptocurrency as a form of payment into a reality for retailers and consumers alike.",
+    "explorer": "https://etherscan.io/token/0xA15C7Ebe1f07CaF6bFF097D8a589fb8AC49Ae5B3",
+    "type": "ERC20",
+    "symbol": "NPXS",
+    "decimals": 18,
+    "status": "abandoned",
+    "id": "0xA15C7Ebe1f07CaF6bFF097D8a589fb8AC49Ae5B3"
 }
