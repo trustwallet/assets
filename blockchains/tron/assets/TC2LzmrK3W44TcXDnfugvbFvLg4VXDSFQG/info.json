@@ -2,16 +2,27 @@
     "name": "Tether USD",
     "website": "https://tether.to",
     "description": "Tether gives you the joint benefits of open blockchain technology and traditional currency by converting your cash into a stable digital currency equivalent.",
-    "explorer": "https://tronscan.org/#/token20/TC2LzmrK3W44TcXDnfugvbFvLg4VXDSFQG",
+    "explorer": "https://tronscan.io/#/token20/TC2LzmrK3W44TcXDnfugvbFvLg4VXDSFQG",
     "type": "TRC20",
     "symbol": "USDT",
     "decimals": 6,
     "status": "active",
     "id": "TC2LzmrK3W44TcXDnfugvbFvLg4VXDSFQG",
-    "tags": ["stablecoin"],
+    "tags": [
+        "stablecoin"
+    ],
     "links": [
-        {"name": "twitter", "url": "https://twitter.com/Tether_Tools"},
-        {"name": "github", "url": "https://github.com/tether"},
-        {"name": "telegram", "url": "https://t.me/Tether_Tools"}
+        {
+            "name": "twitter",
+            "url": "https://x.com/Tether_Tools"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/tether"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/Tether_Tools"
+        }
     ]
 }
