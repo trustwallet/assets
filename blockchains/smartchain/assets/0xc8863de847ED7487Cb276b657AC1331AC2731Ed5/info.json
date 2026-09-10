@@ -1,21 +1,28 @@
 {
-  "name": "ACHIEVE",
-  "symbol": "ACHV",
-  "type": "BEP20",
-  "decimals": 18,
-  "description": "ACHIEVE $ACHV - Official Community Token.",
+  "name": "Achieve Token",
   "website": "https://t.me/ACHIEVEToken",
+  "description": "Achieve Token is a community-driven BEP20 token on BNB Smart Chain focused on long-term growth and utility.",
   "explorer": "https://bscscan.com/token/0xc8863de847ED7487Cb276b657AC1331AC2731Ed5",
+  "type": "BEP20",
+  "symbol": "ACHIEVE",
+  "decimals": 18,
   "status": "active",
   "id": "0xc8863de847ED7487Cb276b657AC1331AC2731Ed5",
   "links": [
     {
-      "name": "bscscan",
-      "url": "https://bscscan.com/token/0xc8863de847ED7487Cb276b657AC1331AC2731Ed5"
-    },
-    {
       "name": "telegram",
       "url": "https://t.me/ACHIEVEToken"
+    },
+    {
+      "name": "twitter",
+      "url": "https://x.com/achievetoken"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/snoppyjames-arch"
     }
+  ],
+  "tags": [
+    "defi"
   ]
 }
