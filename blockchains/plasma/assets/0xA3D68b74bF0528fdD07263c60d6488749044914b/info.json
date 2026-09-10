@@ -1,0 +1,24 @@
+{
+    "name": "Wrapped eETH",
+    "type": "PLASMA",
+    "symbol": "weETH",
+    "decimals": 18,
+    "website": "https://www.ether.fi/",
+    "description": "This is the wrapped version of eETH, the first native liquid restaking token on Ethereum. Stakers can mint eETH on ether.fi. When a user does this, ether.fi will then stake and restake the ETH, allowing users to maximize rewards.",
+    "explorer": "https://plasmascan.to/token/0xA3D68b74bF0528fdD07263c60d6488749044914b",
+    "status": "active",
+    "id": "0xA3D68b74bF0528fdD07263c60d6488749044914b",
+    "links": [
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/wrapped-eeth/"
+        },
+        {
+            "name": "x",
+            "url": "https://x.com/ether_fi"
+        }
+    ],
+    "tags": [
+        "wrapped"
+    ]
+}
