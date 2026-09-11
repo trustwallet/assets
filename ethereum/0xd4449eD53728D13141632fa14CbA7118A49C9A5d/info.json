@@ -1,0 +1,58 @@
+{
+  "name": "Kongali Bitcoin",
+  "symbol": "KBTC",
+  "type": "ERC20",
+  "decimals": 18,
+  "description": "Kongali Bitcoin (KBTC) is a decentralized ERC20 token inspired by Bitcoin's scarcity and transparency, designed to empower the Kongali ecosystem with fast, secure, and community-driven transactions on the Ethereum blockchain.",
+  "website": "https://kongali1720.com",
+  "explorer": "https://etherscan.io/token/0xd4449eD53728D13141632fa14CbA7118A49C9A5d",
+  "status": "active",
+  "id": "0xd4449eD53728D13141632fa14CbA7118A49C9A5d",
+  "whitepaper": "https://kongali1720.com/whitepaper-KBTC.pdf",
+  "social": {
+    "twitter": "https://twitter.com/kongali1720",
+    "telegram": "https://t.me/kongali1720",
+    "github": "https://github.com/kongali1720",
+    "discord": "https://discord.gg/kongali1720",
+    "medium": "https://medium.com/@kongali1720"
+  },
+  "team": [
+    {
+      "name": "Kong Ali",
+      "role": "Founder & CEO",
+      "wallet": "0x5448c44c2088f43d651dbeAACee99aFf5fEC95c6"
+    }
+  ],
+  "tags": [
+    "defi",
+    "bitcoin-backed",
+    "ethereum",
+    "community-token",
+    "store-of-value"
+  ],
+  "market_data": {
+    "total_supply": "21000000",
+    "circulating_supply": "21000000",
+    "launch_date": "2025-10-20",
+    "network": "Ethereum Mainnet"
+  },
+  "tokenomics": {
+    "allocation": {
+      "community": "60%",
+      "development": "20%",
+      "reserve": "10%",
+      "marketing": "5%",
+      "liquidity": "5%"
+    },
+    "burn_policy": "No scheduled burns. Community-driven governance can decide future burns via on-chain voting."
+  },
+  "audit": {
+    "verified": true,
+    "platforms": [
+      "Sourcify",
+      "Blockscout",
+      "Routescan"
+    ],
+    "audit_link": "https://sourcify.dev/#/lookup/0xd4449eD53728D13141632fa14CbA7118A49C9A5d"
+  }
+}
