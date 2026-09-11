@@ -1,9 +1,11 @@
 {
-  "name": "Sigma",
-  "symbol": "SIGMA",
+  "name": "SIGMA",
+  "website": "https://sigma-token.com/",
+  "description": "SIGMA is a TRON-based TRC20 token with 6 decimal places, designed for fast and low-cost transactions on the TRON network.",
+  "explorer": "https://tronscan.org/#/token20/TGTmqfBQFeXjfoAfYyAGr7ayc4NU8SqDp2",
   "type": "TRC20",
+  "symbol": "SIGMA",
   "decimals": 6,
-  "description": "Sigma token on TRON",
-  "website": "https://sigma-token.com",
-  "explorer": "https://tronscan.org/#/token20/TGTmqfBQFeXjfoAfYyAGr7ayc4NU8SqDp2"
+  "status": "active",
+  "id": "TGTmqfBQFeXjfoAfYyAGr7ayc4NU8SqDp2"
 }
