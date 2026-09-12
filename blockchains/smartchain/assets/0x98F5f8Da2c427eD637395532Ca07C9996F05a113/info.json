@@ -1,36 +1,28 @@
 {
   "name": "LEAND",
-  "website": "https://leand.finance",
-  "description": "LEAND is a BEP20 utility token on BNB Smart Chain focused on DeFi ecosystem.",
+  "website": "https://tradingleand.com",
+  "description": "LEAND - BEP20 token for TradingLeand ecosystem on BNB Smart Chain.",
   "explorer": "https://bscscan.com/token/0x98F5f8Da2c427eD637395532Ca07C9996F05a113",
   "type": "BEP20",
   "symbol": "LEAND",
   "decimals": 18,
   "status": "active",
-  "id": "0x98F5f8Da2c427eD637395532Ca07C9996F05a113",
+  "id": "0x98f5f8da2c427ed637395532ca07c9996f05a113",
   "links": [
     {
       "name": "website",
-      "url": "https://leand.finance"
+      "url": "https://tradingleand.com"
     },
     {
       "name": "explorer",
       "url": "https://bscscan.com/token/0x98F5f8Da2c427eD637395532Ca07C9996F05a113"
-    },
-    {
-      "name": "twitter",
-      "url": "https://x.com/leandtoken"
-    },
-    {
-      "name": "telegram",
-      "url": "https://t.me/leandtoken"
     }
   ],
   "tags": [
     {
       "id": "defi",
       "name": "DeFi",
-      "description": "Tokens that are used for Decentralized Finance."
+      "description": "DeFi token"
     }
   ]
 }
