@@ -1,0 +1,25 @@
+{
+    "name": "Arab USD",
+    "website": "https://investarab.com/markets/ausd",
+    "description": "Arab USD (AUSD) is InvestArab's BNB Smart Chain token with a $1 accounting value and a $1 external target. Supply is capped at 10 billion and issued only against deposited collateral, redeemable 1:1. The deployed collateral is a custom token named USDT, not canonical BSC USDT; its dollar value is not independently attested. AUSD trades against canonical BSC USDT on PancakeSwap V2. Source is verified on BscScan and Sourcify.",
+    "explorer": "https://bscscan.com/token/0x4Bf63e029e90b7dd08E02320045743D3176a67E6",
+    "research": "https://investarab.com/markets/ausd/transparency",
+    "type": "BEP20",
+    "symbol": "AUSD",
+    "decimals": 18,
+    "status": "active",
+    "id": "0x4Bf63e029e90b7dd08E02320045743D3176a67E6",
+    "tags": [
+        "defi"
+    ],
+    "links": [
+        {
+            "name": "source_code",
+            "url": "https://repo.sourcify.dev/56/0x4Bf63e029e90b7dd08E02320045743D3176a67E6"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://investarab.com/markets/ausd/transparency"
+        }
+    ]
+}
