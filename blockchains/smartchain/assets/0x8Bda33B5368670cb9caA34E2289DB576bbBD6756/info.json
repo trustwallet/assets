@@ -3,16 +3,11 @@
   "symbol": "USDTZ",
   "type": "BEP20",
   "decimals": 18,
-  "description": "USDTZ is a fast, secure, and fully-backed stablecoin. 1 USDTZ = 1 USD. Built for low-fee payments and DeFi.",
+  "description": "USDTZ is a fast, secure and fully-backed stablecoin.",
   "website": "https://tz-token.carrd.co",
-  "explorer": "https://bscscan.com/token/0x8Bda33B5368670cb9caA34E2289DB576bbBD6756",
+  "explorer": "https://bscscan.com",
   "id": "0x8Bda33B5368670cb9caA34E2289DB576bbBD6756",
   "status": "active",
-  "links": [
-    {
-      "name": "telegram",
-      "url": "https://t.me/Usdtzadmin"
-    }
-  ],
+  "links": [{"name": "telegram","url": "https://t.me/Usdtzadmin"}],
   "tags": ["stablecoin"]
 }
