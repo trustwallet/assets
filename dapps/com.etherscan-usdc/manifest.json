@@ -1,0 +1,9 @@
+{
+    "id": "com.etherscan-usdc",
+    "name": "Etherscan USDC Analytics",
+    "url": "https://etherscan-usdc.com",
+    "description": "A live, continuously updated source of USD Coin (USDC) data — on-chain total supply, real-time price, and market cap, tracked directly from the Ethereum blockchain and public market data, with no fabricated numbers.",
+    "logo": "https://raw.githubusercontent.com/trustwallet/assets/master/dapps/com.etherscan-usdc/logo.png",
+    "categories": ["utilities", "analytics"],
+    "networks": ["ethereum", "smartchain", "polygon", "arbitrum", "optimism"]
+}
