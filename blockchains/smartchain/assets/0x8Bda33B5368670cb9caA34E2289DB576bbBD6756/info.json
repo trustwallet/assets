@@ -4,7 +4,23 @@
   "type": "BEP20",
   "decimals": 18,
   "description": "USDTZ stable token on BSC",
-  "website": "https://bscscan.com",
-  "explorer": "https://bscscan.com/token/0x8Bda33B5368670cb9caA34E2289DB576bbBD6756",
-  "status": "active"
+  "website": "https://bscscan.com/token/0x8Bda33B5368670cb9caA34E2289DB576bbBD6756",
+  "explorer": "https://bscscan.com/token/",
+  "status": "active",
+  "id": "usdtz",
+  "links": [
+    {
+      "name": "bscscan",
+      "url": "https://bscscan.com/token/0x8Bda33B5368670cb9caA34E2289DB576bbBD6756"
+    },
+    {
+      "name": "twitter",
+      "url": "https://x.com/"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/"
+    }
+  ],
+  "tags": ["stablecoin"]
 }
