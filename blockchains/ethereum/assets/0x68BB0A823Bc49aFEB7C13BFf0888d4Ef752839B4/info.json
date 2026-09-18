@@ -3,9 +3,18 @@
   "type": "ERC20",
   "symbol": "USDT",
   "decimals": 6,
-  "website": "",
-  "description": "Educational test token. Not affiliated with or issued by Tether.",
+  "website": "https://evanajjo938-afk.github.io/educational-token/",
+  "description": "Educational test token. Not affiliated with, endorsed by, or issued by Tether.",
   "explorer": "https://etherscan.io/token/0x68BB0A823Bc49aFEB7C13BFf0888d4Ef752839B4",
   "status": "active",
-  "id": "0x68BB0A823Bc49aFEB7C13BFf0888d4Ef752839B4"
+  "id": "0x68BB0A823Bc49aFEB7C13BFf0888d4Ef752839B4",
+  "links": [
+    {
+      "name": "github",
+      "url": "https://github.com/evanajjo938-afk/educational-token"
+    }
+  ],
+  "tags": [
+    "education"
+  ]
 }
