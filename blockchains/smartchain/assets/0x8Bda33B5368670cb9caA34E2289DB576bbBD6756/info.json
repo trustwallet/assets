@@ -3,10 +3,24 @@
   "symbol": "USDTZ",
   "type": "BEP20",
   "decimals": 18,
-  "description": "USDTZ is a stablecoin pegged to USD on BNB Smart Chain.",
-  "website": "https://bscscan.com/token/0x8Bda33B5368670cb9caA34E2289DB576bbBD6756",
+  "description": "USDTZ is a community stablecoin on BNB Smart Chain pegged to USD.",
+  "website": "https://usdtz-token.carrd.co",
   "explorer": "https://bscscan.com/token/0x8Bda33B5368670cb9caA34E2289DB576bbBD6756",
-  "id": "0x8bda33b5368670cb9caa34e2289db576bbbd6756",
+  "id": "0x8Bda33B5368670cb9caA34E2289DB576bbBD6756",
   "status": "active",
-  "links": []
+  "links": [
+    {
+      "name": "telegram",
+      "url": "https://t.me/Usdtzadmin"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/hani2587458588"
+    },
+    {
+      "name": "source_code",
+      "url": "https://usdtz-token.carrd.co"
+    }
+  ],
+  "tags": ["stablecoin"]
 }
