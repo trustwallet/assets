@@ -4,6 +4,13 @@
   "description": "USDT.z is the stablecoin of the NOMATRIX ecosystem, pegged to the US Dollar.",
   "symbol": "USDT.z",
   "decimals": 18,
+  "type": "BEP20",
   "status": "active",
-  "id": "0x58bdfe42F94998Fae11a2609df6226cDB1FE6db4"
+  "id": "0x58bdfe42F94998Fae11a2609df6226cDB1FE6db4",
+  "explorer": "https://bscscan.com/token/0x58bdfe42F94998Fae11a2609df6226cDB1FE6db4",
+  "links": [
+    { "name": "github", "url": "https://github.com/ClaudineiRibeiro-br" },
+    { "name": "twitter", "url": "https://twitter.com/nxwallet_finance" }
+  ],
+  "tags": ["stablecoin"]
 }
