@@ -1,0 +1,24 @@
+{
+  "name": "Arab USD",
+  "symbol": "AUSD",
+  "decimals": 18,
+  "type": "BEP20",
+  "id": "0x968a93011A7486d6c87301907c22fB89d0A7Be80",
+  "description": "Arab USD (AUSD) is InvestArab's token with a $1 accounting value and external target. Supply is capped at 10 billion. Issuance requires deposited collateral, redeemable 1:1. The deployed collateral is a custom token named USDT, not canonical USDT; its dollar value is not independently attested. Market prices may deviate from the target.",
+  "website": "https://investarab.com/markets/ausd",
+  "explorer": "https://bscscan.com/token/0x968a93011A7486d6c87301907c22fB89d0A7Be80",
+  "status": "active",
+  "tags": [
+    "defi"
+  ],
+  "links": [
+    {
+      "name": "whitepaper",
+      "url": "https://investarab.com/markets/ausd/transparency"
+    },
+    {
+      "name": "source_code",
+      "url": "https://repo.sourcify.dev/56/0x968a93011A7486d6c87301907c22fB89d0A7Be80"
+    }
+  ]
+}
