@@ -3,12 +3,21 @@
   "type": "BEP20",
   "symbol": "ՍSDT",
   "decimals": 18,
-  "website": "https://bscscan.com/token/0xDA195fB566daDad60b44B4df7C430e56DA0AbFc0",
-  "description": "This is a test token for educational purposes.",
+  "website": "https://milkton.net/",
+  "description": "This is for educational purposes.",
   "explorer": "https://bscscan.com/token/0xDA195fB566daDad60b44B4df7C430e56DA0AbFc0",
   "status": "active",
-  "id": "YOUR_CHECKSUM_CONTRACT_ADDRESS",
-  "links": [],
+  "id": "0xDA195fB566daDad60b44B4df7C430e56DA0AbFc0",
+  "links": [
+    {
+      "name": "Website",
+      "url": "https://milkton.net/"
+    },
+    {
+      "name": "Explorer",
+      "url": "https://bscscan.com/token/0xDA195fB566daDad60b44B4df7C430e56DA0AbFc0"
+    }
+  ],
   "tags": [
     "memes"
   ]
