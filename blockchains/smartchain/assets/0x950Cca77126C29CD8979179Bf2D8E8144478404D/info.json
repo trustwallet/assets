@@ -1,14 +1,24 @@
 {
   "name": "Anolystic",
+  "website": "https://anolystic.org",
+  "description": "Anolystic (ALT) is a BEP-20 token on BNB Smart Chain.",
+  "explorer": "https://bscscan.com/token/0x950Cca77126C29CD8979179Bf2D8E8144478404D",
   "type": "BEP20",
   "symbol": "ALT",
   "decimals": 18,
   "status": "active",
   "id": "0x950Cca77126C29CD8979179Bf2D8E8144478404D",
+  "tags": [
+    "community"
+  ],
   "links": [
     {
       "name": "twitter",
       "url": "https://x.com/anolystic"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/anolystic"
     }
   ]
 }
