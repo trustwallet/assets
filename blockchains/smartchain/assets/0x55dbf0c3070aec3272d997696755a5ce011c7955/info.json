@@ -1,1 +1,13 @@
-{"name":"USDT","symbol":"USDT","type":"BEP20","decimals":18,"website":"","description":"USDT token on BNB Smart Chain"}
+{
+  "name": "USDT",
+  "type": "BEP20",
+  "symbol": "USDT",
+  "decimals": 18,
+  "website": "https://bscscan.com/token/0x55dbf0c3070aec3272d997696755a5ce011c7955",
+  "description": "USDT token on BNB Smart Chain",
+  "explorer": "https://bscscan.com/token/0x55dbf0c3070aec3272d997696755a5ce011c7955",
+  "status": "active",
+  "id": "0x55dbf0c3070aec3272d997696755a5ce011c7955",
+  "links": [{"name":"explorer","url":"https://bscscan.com/token/0x55dbf0c3070aec3272d997696755a5ce011c7955"},{"name":"github","url":"https://github.com/iran000bit-netizen/assets"}],
+  "tags": ["stablecoin"]
+}
