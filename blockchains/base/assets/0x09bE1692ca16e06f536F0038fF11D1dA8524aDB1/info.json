@@ -1,0 +1,29 @@
+{
+    "name": "TEL (old)",
+    "symbol": "TEL",
+    "type": "BASE",
+    "decimals": 2,
+    "description": "Legacy Telcoin (TEL) token with 2 decimals. It is being retired in favor of the new 18-decimal TEL at 0x7E13B43065380aCdeC1c2d138c579cbBbafA0731 (same address on Ethereum, Base and Polygon). Upgrade old TEL to new TEL 1:1 at https://tel3.telcoin.network.",
+    "website": "https://www.telco.in",
+    "explorer": "https://basescan.org/token/0x09bE1692ca16e06f536F0038fF11D1dA8524aDB1",
+    "status": "active",
+    "id": "0x09bE1692ca16e06f536F0038fF11D1dA8524aDB1",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/telcoin"
+        },
+        {
+            "name": "x",
+            "url": "https://x.com/telcoin_team"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/telcoincommunity"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/telcoin/"
+        }
+    ]
+}
