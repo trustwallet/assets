@@ -1,15 +1,18 @@
+
 {
     "name": "Aave",
-    "website": "https://aave.com/",
-    "description": "Aave is an Open Source and Non-Custodial protocol to earn interest on deposits & borrow assets. It also features access to highly innovative flash loans, which let developers borrow instantly and easily; no collateral needed.",
+    "website": "https://aave.com",
+    "description": "Aave Protocol is a decentralised liquidity protocol where people can lend and borrow digital assets. The AAVE token is the governance token of the protocol, so AAVE holders can vote on proposals for updates. AAVE holders can also stake their AAVE in the protocol Safety Module and earn Safety Incentives for securing the protocol",
     "explorer": "https://ftmscan.com/token/0x6a07A792ab2965C72a5B8088d3a069A7aC3a993B",
+    "research": "https://research.binance.com/en/projects/aave-protocol",
     "type": "FANTOM",
     "symbol": "AAVE",
     "decimals": 18,
     "status": "active",
     "id": "0x6a07A792ab2965C72a5B8088d3a069A7aC3a993B",
     "tags": [
-        "defi"
+        "defi",
+        "governance"
     ],
     "links": [
         {
@@ -18,15 +21,31 @@
         },
         {
             "name": "x",
-            "url": "https://x.com/aaveaave"
+            "url": "https://x.com/aave"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/Aave_Official"
+        },
+        {
+            "name": "blog",
+            "url": "https://medium.com/aave"
+        },
+        {
+            "name": "facebook",
+            "url": "https://facebook.com/AaveCom"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://github.com/aave/aave-protocol/blob/master/docs/Aave_Protocol_Whitepaper_v1_0.pdf/"
         },
         {
             "name": "coinmarketcap",
             "url": "https://coinmarketcap.com/currencies/aave/"
         },
         {
-            "name": "whitepaper",
-            "url": "https://github.com/aave/protocol-v2/blob/master/aave-v2-whitepaper.pdf"
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/aave/"
         }
     ]
 }
