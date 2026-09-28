@@ -5,7 +5,11 @@
     "decimals": 9,
     "description": "Utility and reward token for pwn.rande.xyz, a hands-on security (CTF) training platform where operators earn RANDE by solving challenges and spend it on premium access. Fixed supply of 1,000,000,000; minting permanently disabled.",
     "website": "https://pwn.rande.xyz",
-    "explorer": "https://tonviewer.com/EQAcP9qPJCXMKb_sb52DTvS1cbAciYjcurGqqPEsTQc_c82s",
+    "explorer": "https://tonscan.org/address/EQAcP9qPJCXMKb_sb52DTvS1cbAciYjcurGqqPEsTQc_c82s",
     "status": "active",
-    "id": "EQAcP9qPJCXMKb_sb52DTvS1cbAciYjcurGqqPEsTQc_c82s"
+    "id": "EQAcP9qPJCXMKb_sb52DTvS1cbAciYjcurGqqPEsTQc_c82s",
+    "tags": ["gamefi"],
+    "links": [
+        { "name": "github", "url": "https://github.com/Rande-Team/rande-jetton-metadata" }
+    ]
 }
