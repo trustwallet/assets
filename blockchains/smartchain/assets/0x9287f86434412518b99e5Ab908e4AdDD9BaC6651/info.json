@@ -1,0 +1,40 @@
+{
+    "name": "Quai",
+    "type": "BEP20",
+    "symbol": "QUAI",
+    "decimals": 18,
+    "website": "https://qu.ai",
+    "description": "Quai Network is a scalable Proof-of-Work blockchain with EVM-compatible smart contracts. This BEP-20 token is the Symbiosis bridged representation of QUAI on BNB Smart Chain.",
+    "explorer": "https://bscscan.com/token/0x9287f86434412518b99e5Ab908e4AdDD9BaC6651",
+    "status": "active",
+    "id": "0x9287f86434412518b99e5Ab908e4AdDD9BaC6651",
+    "links": [
+        {
+            "name": "x",
+            "url": "https://x.com/QuaiNetwork"
+        },
+        {
+            "name": "blog",
+            "url": "https://qu.ai/blog"
+        },
+        {
+            "name": "docs",
+            "url": "https://qu.ai/docs"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/quai-network/"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/QuaiNetwork"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://qu.ai/litepaper"
+        }
+    ],
+    "tags": [
+        "pow"
+    ]
+}
