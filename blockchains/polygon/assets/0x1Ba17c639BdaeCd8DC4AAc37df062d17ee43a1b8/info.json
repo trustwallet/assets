@@ -2,6 +2,11 @@
     "name": "Wrapped IXS",
     "website": "https://www.ixs.finance",
     "description": "IXS is the token powering InvestaX, a MAS-licensed platform for tokenized real-world assets. The protocol provides ERC-4626 vaults for regulated structured products, tokenized funds, bonds and equities across Ethereum and 8+ EVM chains.",
+    "tags": [
+        "defi",
+        "RWA",
+        "wrapped"
+    ],
     "explorer": "https://polygonscan.com/token/0x1ba17c639bdaecd8dc4aac37df062d17ee43a1b8",
     "type": "POLYGON",
     "symbol": "WIXS",
@@ -9,10 +14,29 @@
     "status": "active",
     "id": "0x1Ba17c639BdaeCd8DC4AAc37df062d17ee43a1b8",
     "links": [
-        { "name": "x", "url": "https://x.com/IxsFinance" },
-        { "name": "github", "url": "https://github.com/IX-Swap" },
-        { "name": "discord", "url": "https://discord.com/invite/XXHzsJGYkq" },
-        { "name": "coinmarketcap", "url": "https://coinmarketcap.com/currencies/ix-swap/" },
-        { "name": "coingecko", "url": "https://www.coingecko.com/en/coins/ixs" }
+        {
+            "name": "twitter",
+            "url": "https://x.com/IxsFinance"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/ixsfinance"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/IX-Swap"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/XXHzsJGYkq"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/ix-swap/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://www.coingecko.com/en/coins/ixs"
+        }
     ]
 }
