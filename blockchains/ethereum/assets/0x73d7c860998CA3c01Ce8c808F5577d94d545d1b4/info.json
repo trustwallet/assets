@@ -1,7 +1,7 @@
 {
-    "name": "Ixs",
-    "website": "https://ixswap.io/",
-    "description": "IX Swap is the “Uniswap” for security tokens (STO) and tokenized stocks (TSO). IX Swap will be the FIRST platform to provide liquidity pools and automated market making functions for the security token (STO) & tokenized stock industry (TSO).",
+    "name": "IXS",
+    "website": "https://www.ixs.finance",
+    "description": "IXS is the token powering InvestaX, a MAS-licensed platform for tokenized real-world assets. The protocol provides ERC-4626 vaults for regulated structured products, tokenized funds, bonds and equities across Ethereum and 8+ EVM chains.",
     "explorer": "https://etherscan.io/token/0x73d7c860998ca3c01ce8c808f5577d94d545d1b4",
     "type": "ERC20",
     "symbol": "IXS",
@@ -9,13 +9,10 @@
     "status": "active",
     "id": "0x73d7c860998CA3c01Ce8c808F5577d94d545d1b4",
     "links": [
-        {
-            "name": "github",
-            "url": "https://github.com/IX-Swap"
-        },
-        {
-            "name": "coinmarketcap",
-            "url": "https://coinmarketcap.com/currencies/ix-swap/"
-        }
+        { "name": "x", "url": "https://x.com/IxsFinance" },
+        { "name": "github", "url": "https://github.com/IX-Swap" },
+        { "name": "discord", "url": "https://discord.com/invite/XXHzsJGYkq" },
+        { "name": "coinmarketcap", "url": "https://coinmarketcap.com/currencies/ix-swap/" },
+        { "name": "coingecko", "url": "https://www.coingecko.com/en/coins/ixs" }
     ]
 }
