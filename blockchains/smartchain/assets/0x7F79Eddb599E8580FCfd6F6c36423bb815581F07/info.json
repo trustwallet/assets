@@ -1,0 +1,40 @@
+{
+    "name": "Tethern USD",
+    "type": "BEP20",
+    "symbol": "USDT",
+    "decimals": 18,
+    "website": "https://tether.to/en/",
+    "description": "USDT (Tether) is a stablecoin pegged 1:1 to the U.S. dollar, functioning as a digital dollar on multiple blockchains.",
+    "explorer": "https://bscscan.com/token/0x7F79Eddb599E8580FCfd6F6c36423bb815581F07",
+    "status": "active",
+    "id": "0x7F79Eddb599E8580FCfd6F6c36423bb815581F07",
+    "links": [
+        {
+            "name": "x",
+            "url": "https://x.com/tether"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/tether"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/tether"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/"
+        },
+        {
+            "name": "docs",
+            "url": null
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}
