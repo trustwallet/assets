@@ -2,15 +2,19 @@
     "name": "SAF Synthetic USD",
     "website": "https://github.com/luccmick121/saf-synthetic-usd",
     "description": "SAF Synthetic USD (sUSD) is a TRC20 synthetic asset issued on TRON with on-chain governance metadata (name, symbol and characteristics updatable by the owner). Asset characteristics: FIAT-USD-PEGGED.",
-    "explorer": "https://tronscan.org/#/token20/TRfGaxNXQzeApzfLjrGTBJBK9uw8aDxaWh",
+    "explorer": "https://tronscan.io/#/token20/TRfGaxNXQzeApzfLjrGTBJBK9uw8aDxaWh",
     "type": "TRC20",
     "symbol": "sUSD",
     "decimals": 6,
     "status": "active",
     "id": "TRfGaxNXQzeApzfLjrGTBJBK9uw8aDxaWh",
     "links": [
-        { "name": "github", "url": "https://github.com/luccmick121/saf-synthetic-usd" },
-        { "name": "logo", "url": "https://raw.githubusercontent.com/luccmick121/saf-synthetic-usd/main/logo.png" }
+        {
+            "name": "github",
+            "url": "https://github.com/luccmick121/saf-synthetic-usd"
+        }
     ],
-    "tags": ["stablecoin"]
+    "tags": [
+        "stablecoin"
+    ]
 }
