@@ -1,0 +1,12 @@
+{
+  "name": "USD Coin (Ethereum)",
+  "type": "ERC20",
+  "symbol": "USDC",
+  "decimals": 6,
+  "website": "https://www.circle.com/usdc",
+  "description": "USDC bridged from Ethereum to XRPL-EVM via Squid Router.",
+  "explorer": "https://explorer.xrplevm.org/address/0xa16148c6Ac9EDe0D82f0c52899e22a575284f131",
+  "status": "active",
+  "id": "0xa16148c6Ac9EDe0D82f0c52899e22a575284f131",
+  "tags": ["wrapped", "stablecoin"]
+}

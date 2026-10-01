@@ -1,18 +1,31 @@
 {
-    "name": "Ambire AdEx",
-    "website": "https://adex.network",
-    "description": "The AdEx Network aims to build a decentralized solution for digital advertising that reduces fraud, improves budgets, and protects user privacy.",
+    "name": "heyAura",
+    "website": "https://www.heyaura.com/",
+    "description": "heyAura is an AI Infrastructure company that’s working to build reliable AI frameworks for Web3 projects. heyAura’s flagship product is the very first Agentic copilot that can securely and privately research, plan, execute and orchestrate on-chain tasks.",
     "explorer": "https://etherscan.io/token/0xADE00C28244d5CE17D72E40330B1c318cD12B7c3",
-    "research": "https://research.binance.com/en/projects/adex-network",
     "type": "ERC20",
     "symbol": "ADX",
     "decimals": 18,
     "status": "active",
     "id": "0xADE00C28244d5CE17D72E40330B1c318cD12B7c3",
+    "tags": [
+        "defi"
+    ],
     "links": [
         {
             "name": "x",
-            "url": "https://x.com/AdExNetwork"
+            "url": "https://x.com/heyaura"
+        },
+        {   "name": "github",
+            "url": "https://github.com/heyAuraDev/"
+        },
+        {
+            "name": "blog",
+            "url": "https://blog.heyaura.com/"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/adx-net/"
         }
     ]
 }

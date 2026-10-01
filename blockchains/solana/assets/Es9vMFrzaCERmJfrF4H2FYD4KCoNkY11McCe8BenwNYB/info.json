@@ -1,5 +1,5 @@
 {
-    "name": "USDT",
+    "name": "Tether USDT",
     "symbol": "USDT",
     "type": "SPL",
     "decimals": 6,
@@ -25,5 +25,8 @@
             "name": "whitepaper",
             "url": "https://tether.to/wp-content/uploads/2016/06/TetherWhitePaper.pdf"
         }
+    ],
+    "tags": [
+        "stablecoin"
     ]
 }

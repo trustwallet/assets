@@ -1,0 +1,12 @@
+{
+  "name": "XRP",
+  "type": "ERC20",
+  "symbol": "XRP",
+  "decimals": 18,
+  "website": "https://xrplevm.org",
+  "description": "XRP bridged from the XRP Ledger to XRPL EVM via Squid Router, enabling native XRP liquidity inside the EVM ecosystem.",
+  "explorer": "https://explorer.xrplevm.org/address/0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
+  "status": "active",
+  "id": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
+  "tags": ["wrapped"]
+}
