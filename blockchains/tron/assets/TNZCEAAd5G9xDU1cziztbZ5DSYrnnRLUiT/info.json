@@ -3,9 +3,23 @@
     "symbol": "stUSDT",
     "type": "TRC20",
     "decimals": 6,
-    "description": "Staked Tether USD on TRON",
+    "description": "Staked Tether USD on TRON - Earn staking rewards on your USDT",
     "website": "https://tether.to",
     "explorer": "https://tronscan.io/#/token20/TNZCEAAd5G9xDU1cziztbZ5DSYrnnRLUiT",
     "status": "active",
-    "id": "TNZCEAAd5G9xDU1cziztbZ5DSYrnnRLUiT"
+    "id": "TNZCEAAd5G9xDU1cziztbZ5DSYrnnRLUiT",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/wolf7575"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/StakedTetherOfficial"
+        }
+    ],
+    "tags": [
+        "stablecoin",
+        "staking"
+    ]
 }
