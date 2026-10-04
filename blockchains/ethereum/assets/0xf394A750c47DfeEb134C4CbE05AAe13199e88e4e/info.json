@@ -1,38 +1,81 @@
 {
-    "name": "RISASIMANI",
-    "type": "ERC20",
-    "symbol": "RSM",
-    "decimals": 18,
-    "website": "https://risasimanirasemdappbank.netlify.app/",
-    "description": "dijital empia alım satım  dijital  varlık eco sistem",
-    "explorer": "https://etherscan.io/token/0xf394A750c47DfeEb134C4CbE05AAe13199e88e4e",
-    "status": "active",
-    "id": "0xf394A750c47DfeEb134C4CbE05AAe13199e88e4e",
-    "links": [
-        {
-            "name": "x",
-            "url": "https://x.karakuzular0659.com/"
-        },
-        {
-            "name": "github",
-            "url": "https://github.risasi_hup.com/"
-        },
-        {
-            "name": "telegram",
-            "url": "https://t.RISASIMANIme/"
-        },
-        {
-            "name": "telegram_news",
-            "url": "https://karakuzular0659.com/"
-        },
-        {
-            "name": "blog",
-            "url": null
-        },
-        {
-            "name": "docs",
-            "url": "https://risasimanirasemdappbank.netlify.app/"
-        }
-    ],
-    "tags": []
-}
+  "name": "Rısasımanı",
+  "symbol": "RSM",
+  "type": "BEP20",
+  "chainId": 56,
+  "decimals": 18,
+  "address": "0xf394A750c47DfeEb134C4CbE05AAe13199e88e4e",
+  "website": "https://risasimanirasemdappbank.netlify.app/",
+  "description": "Rısasımanı (RSM), BNB Smart Chain üzerinde geliştirilen bir BEP-20 tokendir. Proje; hızlı işlemler, düşük ağ ücretleri ve topluluk odaklı bir yapı hedefler. RSM, merkeziyetsiz finans ekosistemine erişimi kolaylaştırmayı ve şeffaf proje gelişimiyle uzun vadeli değer üretmeyi amaçlar.",
+  "explorer": "https://bscscan.com/token/0xf394A750c47DfeEb134C4CbE05AAe13199e88e4e",
+  "status": "active",
+  "links": [
+    {
+      "name": "website",
+      "url": "https://risasimanirasemdappbank.netlify.app/"
+    },
+    {
+      "name": "x",
+      "url": "https://x.com/karakuzular0659"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/risasi-hup"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/RISASIMANI"
+    }
+  ],
+  "tags": [
+    "defi",
+    "community-token",
+    "bnb-chain"
+  ]
+}{
+  "name": "Rısasımanı",
+  "website": "https://risasimanirasemdappbank.netlify.app/",
+  "description": "Rısasımanı (RSM), BNB Smart Chain üzerinde geliştirilen topluluk odaklı bir BEP-20 tokendir.",
+  "explorer": "https://bscscan.com/token/0xf394A750c47DfeEb134C4CbE05AAe13199e88e4e",
+  "type": "BEP20",
+  "symbol": "RSM",
+  "decimals": 18,
+  "status": "active",
+  "id": "0xf394A750c47DfeEb134C4CbE05AAe13199e88e4e",
+  "links": [
+    {
+      "name": "website",
+      "url": "https://risasimanirasemdappbank.netlify.app/"
+    },
+    {
+      "name": "x",
+      "url": "https://x.com/karakuzular0659"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/risasi-hup"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/RISASIMANI"
+    }
+  ],
+  "tags": [
+    "defi",
+    "community-token",
+    "bnb-chain"
+  ]
+}<meta name="description" content="Rısasımanı (RSM), BNB Smart Chain üzerinde geliştirilen topluluk odaklı BEP-20 tokendir.">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Rısasımanı (RSM)">
+<meta property="og:description" content="BNB Smart Chain üzerinde topluluk odaklı BEP-20 token.">
+<meta property="og:url" content="https://risasimanirasemdappbank.netlify.app/">
+<meta property="og:image" content="https://risasimanirasemdappbank.netlify.app/assets/og-image.png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Rısasımanı (RSM)">
+<meta name="twitter:description" content="BNB Smart Chain üzerinde topluluk odaklı BEP-20 token.">
+<meta name="twitter:image" content="https://risasimanirasemdappbank.netlify.app/assets/og-image.png">
+
+<link rel="icon" type="image/png" href="/assets/logo-512.png">
