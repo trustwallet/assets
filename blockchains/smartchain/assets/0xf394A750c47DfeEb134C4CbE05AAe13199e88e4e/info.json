@@ -1,0 +1,80 @@
+{
+    "name": "RISASIMANI",
+    "type": "BEP20",
+    "symbol": "RSM",
+    "decimals": 18,
+    "website": "https://risasimanirasemdappbank.netlify.app/",
+    "description": "popüler cüzdan listelemeleri, stratejik ortaklıklar ve topluluk etkinlikleri ile ekosistemimizi büyütmeye devam edeceğiz.\nProjemiz hakkında en güncel bilgi",
+    "explorer": "https://bscscan.com/token/0xf394A750c47DfeEb134C4CbE05AAe13199e88e4e",
+    "status": "active",
+    "id": "0xf394A750c47DfeEb134C4CbE05AAe13199e88e4e",
+    "links": [
+        {
+            "name": "x",
+            "url": "https://x.com/karakuular0659"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/risashup"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/rısasımanı"
+        },
+        {
+            "name": "telegram_news",
+            "url": "https://t.me/"
+        },
+        {
+            "name": "blog",
+            "url": "Sürdürülebilir Ekonomi: Uzun vadeli değer yaratmayı hedefleyen token ekonomisi (tokenomics) modeli."
+        },
+        {
+            "name": "docs",
+            "url": "https://bscscan.com/address/0xf394A750c47DfeEb134C4CbE05AAe13199e88e4e)"
+        },
+        {
+            "name": "forum",
+            "url": "Sözleşme Adresi (CA): 0xf394A750c47DfeEb134C4CbE05AAe13199e88e4e"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/"
+        },
+        {
+            "name": "whitepaper",
+            "url": "var"
+        },
+        {
+            "name": "medium",
+            "url": "var"
+        },
+        {
+            "name": "youtube",
+            "url": "https://youtube.com/"
+        },
+        {
+            "name": "facebook",
+            "url": "https://facebook.com/"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/coinmarketcap.com/community/profile/KARAKUZULAR0659/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/karakuzular0659"
+        },
+        {
+            "name": "source_code",
+            "url": "// SPDX-License-Identifier: MIT pragma solidity ^0.8.20;  abstract contract Context {     function _msgSender() internal view virtual returns (address) {         return msg.sender;     } }  interface IERC20 {     function totalSupply() external view returns (uint256);     function balanceOf(address account) external view returns (uint256Ethereum (ERC-20) ve BNB Smart Chain (BEP-20) ağları için kullanabileceğiniz standart, güvenli ve OpenZeppelin altyapısına sahip **Solidity akıllı sözleşme (smart contract) kaynak kodu**:  ```solidity // SPDX-License-Identifier: MIT pragma solidity ^0.8.20;  import \"@openzeppelin/contracts/token/ERC20/ERC20.sol\"; import \"@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol\"; import \"@openzeppelin/contracts/access/Ownable.sol\";  contract MyToken is ERC20, ERC20Burnable, Ownable {          // Kurucu fonksiyon: Token adı, sembolü ve ilk arz burada belirlenir.     constructor(         string memory name,         string memory symbol,         uint256 initialSupply     ) ERC20(name, symbol) Ownable(msg.sender) {         // Belirtilen arz miktarını 18 ondalık (decimals) ile çarparak oluşturan kişiye aktarır         _mint(msg.sender, initialSupply * 10 ** decimals());     }      // İsteğe bağlı: Sözleşme sahibinin yeni token basabilmesi için (Minting)     function mint(address to, uint256 amount) public onlyOwner {         _mint(to, amount);     } }"
+        }
+    ],
+    "tags": [
+        "pow"
+    ]
+}
