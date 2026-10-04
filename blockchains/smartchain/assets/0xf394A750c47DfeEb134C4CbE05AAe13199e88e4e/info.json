@@ -1,24 +1,40 @@
 {
-    "name": "RISASIMANI",
-    "type": "BEP20",
-    "symbol": "RSM",
-    "decimals": 18,
-    "website": "https://risasimanirasemdappbank.netlify.app/",
-    "description": "Kripto para dünyası hızla gelişmeye devam ederken, topluluk odaklı, şeffaf ve sürdürülebilir projelere olan ihtiyaç her geçen gün artıyor. [RISASIMANI RSM], tam da bu ihtiyaca yanıt vermek ve kullanıcılarına güvenli bir merkeziyetsiz finans tecrübesi sunmak amacıyla hayata geçirildi.",
-    "explorer": "https://bscscan.com/token/0xf394A750c47DfeEb134C4CbE05AAe13199e88e4e",
-    "status": "active",
-    "id": "0xf394A750c47DfeEb134C4CbE05AAe13199e88e4e",
-    "links": [
-        {
-            "name": "x",
-            "url": "https://x.com/karakular0659"
-        },
-        {
-            "name": "github",
-            "url": "https://github.com/risasi-hup"
-        }
-    ],
-    "tags": [
-        "wrapped"
-    ]
-}
+  "name": "RISASIMANI",
+  "type": "BEP20",
+  "symbol": "RSM",
+  "decimals": 18,
+  "website": "https://risasimanirasemdappbank.netlify.app/",
+  "description": "RISASIMANI (RSM), BNB Smart Chain üzerinde çalışan bir BEP-20 tokenıdır. Proje, merkeziyetsiz uygulamalar ve dijital lisanslama kullanım senaryolarını desteklemeyi amaçlar.",
+  "explorer": "https://bscscan.com/token/0xf394A750c47DfeEb134C4CbE05AAe13199e88e4e",
+  "status": "active",
+  "id": "0xf394A750c47DfeEb134C4CbE05AAe13199e88e4e",
+  "links": [
+    {
+      "name": "x",
+      "url": "https://x.com/karakuzular0659"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/risasi-hup"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/RISASIMANI"
+    }
+  ],
+  "tags": []
+}"tags": [
+  "dapp"
+]| Kontrol    | Beklenen                                   |
+| ---------- | ------------------------------------------ |
+| Ağ         | BNB                                        |
+| Tip        | BEP20                                      |
+| Kon        | 0xf394A750c47DfeEb134C4CbE05AAe13199e88e4e |
+| İsim       | Kontrattakiname()sonucu                    |
+| Sembol     | Kontrattaki symbol()sonucu                 |
+| Ondalık    | Kontrattakidecimals()sonucu                |
+| Dosya      | logo.png                                   |
+| Logo       | PNG, 128 ×                                 |
+| Web sitesi | Açık,                                      |
+| Kaşif      | Sözleşme sayfası                           |
+| Logo       | “TÜVİST CÜZDAN” gibi                       |
