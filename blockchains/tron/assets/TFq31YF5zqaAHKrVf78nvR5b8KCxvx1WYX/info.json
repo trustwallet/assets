@@ -1,9 +1,11 @@
 {
-  "name": "USDT",
-  "symbol": "USDT",
-  "type": "TRC20",
-  "decimals": 18,
-  "description": "My Token",
-  "website": "",
-  "explorer": "https://tronscan.org/#/token20/TFq31YF5zqaAHKrVf78nvR5b8KCxvx1WYX"
+    "name": "USDT",
+    "type": "TRC20",
+    "symbol": "USDT",
+    "decimals": 18,
+    "description": "My Token",
+    "website": "",
+    "explorer": "https://tronscan.org/#/token20/TFq31YF5zqaAHKrVf78nvR5b8KCxvx1WYX",
+    "status": "active",
+    "id": "TFq31YF5zqaAHKrVf78nvR5b8KCxvx1WYX"
 }
