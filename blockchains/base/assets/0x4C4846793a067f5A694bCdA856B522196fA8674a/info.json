@@ -1,0 +1,23 @@
+{
+  "name": "SYNCLIVE V_Token",
+  "symbol": "VTK",
+  "type": "ERC20",
+  "decimals": 18,
+  "description": "V_Token is the native token of SYNCLIVE OS, a Proof-of-Useful-Work (PoUW) system based on the Landauer principle. Each VTK represents verified thermodynamic entropy reduction (kT·ln2 @ 300K). Genesis Price: $0.02853 (permanently inscribed on Base L2).",
+  "website": "https://nexus.synclive.win",
+  "explorer": "https://basescan.org/token/0x4C4846793a067f5A694bCdA856B522196fA8674a",
+  "status": "active",
+  "id": "0x4C4846793a067f5A694bCdA856B522196fA8674a",
+  "links": [
+    {
+      "name": "github",
+      "url": "https://github.com/synclive"
+    }
+  ],
+  "tags": [
+    "esg",
+    "proof-of-useful-work",
+    "landauer",
+    "thermodynamic"
+  ]
+}
