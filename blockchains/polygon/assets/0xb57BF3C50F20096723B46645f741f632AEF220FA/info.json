@@ -8,9 +8,21 @@
     "decimals": 18,
     "status": "active",
     "id": "0xb57BF3C50F20096723B46645f741f632AEF220FA",
+    "tags": [
+        "stablecoin"
+    ],
     "links": [
-        { "name": "whitepaper", "url": "https://audit.quantvestrix.io/spec" },
-        { "name": "docs", "url": "https://qusd.us/manual" },
-        { "name": "blog", "url": "https://qusdscan.us" }
+        {
+            "name": "whitepaper",
+            "url": "https://audit.quantvestrix.io/spec"
+        },
+        {
+            "name": "docs",
+            "url": "https://qusd.us/manual"
+        },
+        {
+            "name": "blog",
+            "url": "https://qusdscan.us"
+        }
     ]
 }
