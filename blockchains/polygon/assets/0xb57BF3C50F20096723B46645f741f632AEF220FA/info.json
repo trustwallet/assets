@@ -1,0 +1,16 @@
+{
+    "name": "QVTX USD",
+    "website": "https://qusd.us",
+    "description": "QUSD is a 1:1 fiat-backed US dollar stablecoin issued by QUANTVESTRIX. The peg is enforced on chain: QUSD_PEG() returns 100000000 (1.00 at 8 decimals) and AggregatorV3 oracles on Polygon, BSC, Base and Arbitrum each return latestAnswer 100000000. Redemption is always at par and is never priced below par. Reserve and supply documents are published openly.",
+    "explorer": "https://polygonscan.com/token/0xb57bf3c50f20096723b46645f741f632aef220fa",
+    "type": "POLYGON",
+    "symbol": "QUSD",
+    "decimals": 18,
+    "status": "active",
+    "id": "0xb57BF3C50F20096723B46645f741f632AEF220FA",
+    "links": [
+        { "name": "whitepaper", "url": "https://audit.quantvestrix.io/spec" },
+        { "name": "docs", "url": "https://qusd.us/manual" },
+        { "name": "blog", "url": "https://qusdscan.us" }
+    ]
+}
