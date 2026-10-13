@@ -1,0 +1,18 @@
+{
+  "status": "active",
+  "description": "USD Coin (USDC) is a US dollar stablecoin deployed on Base by our wallet platform. It follows the official USDC metadata: name 'USD Coin', symbol 'USDC', and 6 decimals. The contract is verified on BaseScan and backed by a Uniswap V3 pool anchored near $1.00.",
+  "website": "https://basescan.org/address/0x6E977e752d64fB05FB6a3aA1E4BB779c9B6c3848",
+  "explorer": "https://basescan.org/address/0x6E977e752d64fB05FB6a3aA1E4BB779c9B6c3848",
+  "socials": [],
+  "contractAddress": "0x6E977e752d64fB05FB6a3aA1E4BB779c9B6c3848",
+  "name": "USD Coin",
+  "symbol": "USDC",
+  "decimals": 6,
+  "pool": "0x869BD45BCBe1f7c52b7C471E194D2fCc8d7fEBcE",
+  "poolPriceUsd": "0.99984",
+  "verification": {
+    "basescan": "Verified",
+    "verifiedAt": "2026-10-13"
+  },
+  "tags": ["stablecoin", "usdc"]
+}
