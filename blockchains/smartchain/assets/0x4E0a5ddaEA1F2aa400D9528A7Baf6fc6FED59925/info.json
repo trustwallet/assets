@@ -1,11 +1,11 @@
 {
-  "name": "Test Token",
-  "website": "https://example.com",
-  "description": "Local testing asset for validator logic",
-  "explorer": "https://bscscan.com/token/0x4E0a5ddaEA1F2aa400D9528A7Baf6fc6FED59925",
+  "name": "Token",
   "type": "BEP20",
-  "symbol": "TST",
+  "symbol": "TOKEN",
   "decimals": 18,
+  "description": "BEP20 Token",
+  "website": "",
+  "explorer": "https://bscscan.com/token/0x4E0a5ddaEA1F2aa400D9528A7Baf6fc6FED59925",
   "status": "active",
-  "id": "0x4E0a5ddaEA1F2aa400D9528A7Baf6fc6FED59925"
+  "socials": []
 }
