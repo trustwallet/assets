@@ -1,11 +1,28 @@
 {
-  "name": "USDTW",
-  "type": "SPL",
-  "symbol": "USDTW",
-  "decimals": 6,
-  "description": "USDTW - fixed-supply settlement token on Solana and Tron. 80,000,000 per network, minted once, no more can ever be created. No mint, no freeze, no owner.",
-  "website": "https://afritz77.github.io/usdt-token/",
-  "explorer": "https://solscan.io/token/AFNnpqWGngEe8FUrwcc7kPb2ooXZP9u6dzbfehBnoBT",
-  "status": "active",
-  "id": "AFNnpqWGngEe8FUrwcc7kPb2ooXZP9u6dzbfehBnoBT"
+    "name": "USDTW",
+    "symbol": "USDTW",
+    "type": "SPL",
+    "decimals": 6,
+    "description": "USDTW - fixed-supply settlement token on Solana and TRON. 80,000,000 per network, minted once, no more can ever be created. No mint authority. No freeze. No owner. Live Raydium pool.",
+    "website": "https://afritz77.github.io/usdt-token/",
+    "explorer": "https://solscan.io/token/AFNnpqWGngEe8FUrwcc7kPb2ooXZP9u6dzbfehBnoBT",
+    "status": "active",
+    "id": "AFNnpqWGngEe8FUrwcc7kPb2ooXZP9u6dzbfehBnoBT",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://x.com/asilimeme"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/afritz77/usdt-token"
+        },
+        {
+            "name": "docs",
+            "url": "https://afritz77.github.io/usdt-token/"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
 }
