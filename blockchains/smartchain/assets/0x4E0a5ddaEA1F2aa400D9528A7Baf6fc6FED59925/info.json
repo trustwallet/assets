@@ -1,11 +1,19 @@
 {
-  "name": "Token",
-  "type": "BEP20",
+  "name": "Token Name",
   "symbol": "TOKEN",
+  "type": "BEP20",
   "decimals": 18,
-  "description": "BEP20 Token",
-  "website": "",
+  "description": "وصف مختصر للعملة الخاصة بك",
+  "website": "https://your-website.com",
   "explorer": "https://bscscan.com/token/0x4E0a5ddaEA1F2aa400D9528A7Baf6fc6FED59925",
-  "status": "active",
-  "socials": []
+  "socials": [
+    {
+      "name": "Telegram",
+      "url": "https://t.me/your_channel"
+    },
+    {
+      "name": "Twitter",
+      "url": "https://twitter.com/your_handle"
+    }
+  ]
 }
