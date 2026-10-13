@@ -1,3 +1,24 @@
 {
-  "explorer": "https://tronscan.org/#/token20/TRfGaxNXQzeApzfLjrGTBJBK9uw8aDxaWh"
+  "name": "Anduin USD",
+  "website": "https://luccmick121.github.io/adn-anduin-usd/",
+  "description": "Anduin USD (ADN) is a synthetic USD-pegged asset on TRON mainnet, issued under a dynamic-governance contract with owner-controlled transfer modes, whitelist and exchange protections.",
+  "explorer": "https://tronscan.org/#/token20/TRfGaxNXQzeApzfLjrGTBJBK9uw8aDxaWh",
+  "type": "TRC20",
+  "symbol": "ADN",
+  "decimals": 6,
+  "status": "active",
+  "id": "TRfGaxNXQzeApzfLjrGTBJBK9uw8aDxaWh",
+  "links": [
+    {
+      "name": "github",
+      "url": "https://github.com/luccmick121/adn-anduin-usd"
+    },
+    {
+      "name": "whitepaper",
+      "url": "https://github.com/luccmick121/adn-anduin-usd#readme"
+    }
+  ],
+  "tags": [
+    "stablecoin"
+  ]
 }
