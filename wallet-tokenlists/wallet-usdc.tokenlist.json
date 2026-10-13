@@ -1,0 +1,28 @@
+{
+  "name": "Wallet Custom USDC List",
+  "timestamp": "2026-10-13T08:10:00.000Z",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "tags": {},
+  "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/base/assets/0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913/logo.png",
+  "keywords": [
+    "usdc",
+    "stablecoin"
+  ],
+  "tokens": [
+    {
+      "chainId": 8453,
+      "address": "0x6E977e752d64fB05FB6a3aA1E4BB779c9B6c3848",
+      "name": "USD Coin",
+      "symbol": "USDC",
+      "decimals": 6,
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/base/assets/0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913/logo.png",
+      "tags": [
+        "stablecoin"
+      ]
+    }
+  ]
+}
