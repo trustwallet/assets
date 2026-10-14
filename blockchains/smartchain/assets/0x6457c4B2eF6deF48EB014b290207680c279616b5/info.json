@@ -1,10 +1,22 @@
 {
   "name": "BTCBABA",
-  "symbol": "BTCBABA",
-  "type": "BEP20",
-  "decimals": 18,
-  "description": "BTCBABA - BSC token",
   "website": "https://sites.google.com/view/btcbaba",
+  "description": "BTCBABA is a community-driven BEP20 token on BSC.",
   "explorer": "https://bscscan.com/token/0x6457c4B2eF6deF48EB014b290207680c279616b5",
-  "status": "active"
+  "type": "BEP20",
+  "symbol": "BTCBABA",
+  "decimals": 18,
+  "status": "active",
+  "id": "0x6457c4b2ef6def48eb014b290207680c279616b5",
+  "links": [
+    {
+      "name": "telegram",
+      "url": "https://t.me/BTCbabaAdmin5"
+    },
+    {
+      "name": "x",
+      "url": "https://x.com/BTCBABA_Token"
+    }
+  ],
+  "tags": ["memes"]
 }
