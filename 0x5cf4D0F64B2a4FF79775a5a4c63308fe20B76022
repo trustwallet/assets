@@ -1,13 +1,13 @@
 {
   "name": "TenterUSD",
-  "id": "AQUÍ_CONTRATO_ARBITRUM",
+  "id": "0x5cf4D0F64B2a4FF79775a5a4c63308fe20B76022",
   "symbol": "TNUSD",
   "type": "ERC20",
   "decimals": 6,
   "status": "active",
   "website": "https://tenter.app",
   "description": "TenterUSD official utility and payment stable asset.",
-  "explorer": "https://arbiscan.io/token/AQUÍ_CONTRATO_ARBITRUM",
+  "explorer": "https://arbiscan.io/token/0x5cf4D0F64B2a4FF79775a5a4c63308fe20B76022",
   "links": [
     {
       "name": "x",
@@ -19,6 +19,9 @@
     }
   ],
   "tags": [
+    "stablecoin"
+  ]
+}
     "stablecoin"
   ]
 }
