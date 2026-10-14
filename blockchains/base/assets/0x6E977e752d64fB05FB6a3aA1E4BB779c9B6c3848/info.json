@@ -1,0 +1,32 @@
+{
+    "name": "USD Coin",
+    "symbol": "USDC",
+    "type": "BASE",
+    "decimals": 6,
+    "description": "USD Coin (USDC) is a US dollar stablecoin deployed on Base. Verified on BaseScan with a Uniswap V3 liquidity pool anchored near $1.00.",
+    "website": "https://usdc.dataorigin.one",
+    "explorer": "https://basescan.org/token/0x6E977e752d64fB05FB6a3aA1E4BB779c9B6c3848",
+    "status": "active",
+    "id": "0x6E977e752d64fB05FB6a3aA1E4BB779c9B6c3848",
+    "links": [
+        {
+            "name": "website",
+            "url": "https://usdc.dataorigin.one"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/eanhome88"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/usd-coin/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://www.coingecko.com/en/coins/usd-coin"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}
