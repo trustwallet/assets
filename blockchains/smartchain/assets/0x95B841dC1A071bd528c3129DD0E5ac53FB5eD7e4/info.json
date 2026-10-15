@@ -3,11 +3,21 @@
     "type": "BEP20",
     "symbol": "AQAI",
     "decimals": 18,
-    "description": "AQAI (智能体) is a fixed-supply BEP20 token on BNB Smart Chain. No owner, no mint, no pause, no blacklist, no transfer tax. Total supply was minted once at deployment and can never change.",
+    "description": "AQAI (智能体) is a fixed-supply BEP20 token on BNB Smart Chain. No owner, no mint, no pause, no blacklist, no transfer tax. Total supply was minted once at deployment and can never change. AQAI is used as a prize pool token in the ARKIE battle royale game.",
     "website": "https://game.aiaq.top",
     "explorer": "https://bscscan.com/token/0x95B841dC1A071bd528c3129DD0E5ac53FB5eD7e4",
     "status": "active",
     "id": "0x95B841dC1A071bd528c3129DD0E5ac53FB5eD7e4",
-    "tags": [],
-    "links": []
+    "tags": ["gaming"],
+    "links": [
+        {
+            "name": "telegram",
+            "url": "https://t.me/+ZHPWjlubpyU0ZTIx"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/aqai777"
+        }
+    ]
+}
 }
