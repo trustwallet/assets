@@ -1,10 +1,17 @@
+
 {
   "name": "WALS",
   "symbol": "WALS",
   "type": "BEP20",
   "decimals": 18,
-  "description": "WALS Token - Swallow bird community token on BNB Smart Chain",
-  "website": "https://bscscan.com/token/0x8B6027DDD8ab35DF9Fe25A94Eb15846459F95e19",
+  "description": "WALS Token - Falko Finance",
+  "website": "https://falko.finance/",
   "explorer": "https://bscscan.com/token/0x8B6027DDD8ab35DF9Fe25A94Eb15846459F95e19",
-  "status": "active"
+  "status": "active",
+  "links": [
+    {
+      "name": "website",
+      "url": "https://falko.finance/"
+    }
+  ]
 }
