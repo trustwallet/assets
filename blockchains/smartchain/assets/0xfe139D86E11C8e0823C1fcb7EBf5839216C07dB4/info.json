@@ -1,4 +1,6 @@
 {
+  "id": "0xfe139D86E11C8e0823C1fcb7EBf5839216C07dB4",
+  "type": "BEP20",
   "name": "Tether USD Bridged ZED20",
   "website": "https://zed-07db4.com",
   "description": "USDT.z is a community-focused token on BNB Smart Chain, guided by the vision \"Bridging Value. Connecting Lives.\" The project aims to develop cross-chain utility while connecting community generosity with practical assistance for families in need. Cross-chain bridging and community grant programs are planned initiatives under development.",
@@ -6,10 +8,9 @@
   "symbol": "USDT.z",
   "decimals": 18,
   "status": "active",
-  "tags": ["defi", "stablecoin", "bridged"],
+  "tags": ["defi", "stablecoin"],
   "links": [
-    {"name": "website", "url": "https://zed-07db4.com"},
-    {"name": "twitter", "url": "https://twitter.com/yourhandle"},
-    {"name": "telegram", "url": "https://t.me/yourgroup"}
+    {"name": "twitter", "url": "https://twitter.com/zed-07db4"},
+    {"name": "telegram", "url": "https://t.me/zed-07db4"}
   ]
 }
