@@ -8,5 +8,18 @@
     "symbol": "BNB",
     "decimals": 18,
     "status": "active",
-    "id": "0x255aA25F9c1104B11d39dCDFE048BaeC6442A876"
+    "id": "0x255aA25F9c1104B11d39dCDFE048BaeC6442A876",
+    "tags": [
+        "utility"
+    ],
+    "links": [
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/bnb/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://www.coingecko.com/en/coins/binancecoin"
+        }
+    ]
 }
