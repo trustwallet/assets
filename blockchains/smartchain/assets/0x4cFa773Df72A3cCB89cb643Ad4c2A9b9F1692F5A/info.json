@@ -1,12 +1,40 @@
-
 {
-  "name": "ZacrocoZ",
-  "type": "BEP20",
-  "symbol": "ZRZ",
-  "decimals": 18,
-  "website": "https://zacrocoz.com",
-  "description": "ZacrocoZ (ZRZ) is a structured blockchain ecosystem built on BNB Smart Chain, focused on transparency, security, and long-term utility. Its WalletSphere platform supports wallet intelligence, project wallet registration, and community-driven wallet engagement.",
-  "explorer": "https://bscscan.com/token/0x4cFa773Df72A3cCB89cb643Ad4c2A9b9F1692F5A",
-  "status": "active",
-  "id": "0x4cFa773Df72A3cCB89cb643Ad4c2A9b9F1692F5A"
+    "name": "ZacrocoZ",
+    "type": "BEP20",
+    "symbol": "ZRZ",
+    "decimals": 18,
+    "website": "https://zacrocoz.com",
+    "description": "ZacrocoZ (ZRZ) is a structured blockchain ecosystem built on BNB Smart Chain, focused on transparency, security, and long-term utility. Its WalletSphere platform supports wallet intelligence, project wallet registration, and community-driven wallet engagement.",
+    "explorer": "https://bscscan.com/token/0x4cFa773Df72A3cCB89cb643Ad4c2A9b9F1692F5A",
+    "status": "active",
+    "id": "0x4cFa773Df72A3cCB89cb643Ad4c2A9b9F1692F5A",
+    "links": [
+        {
+            "name": "x",
+            "url": "https://x.com/ZacrocoZZRZ"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/ZacrocoZ/zacrocoz-smart-contract"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/zacrocozofficial"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/"
+        },
+        {
+            "name": "medium",
+            "url": ""
+        },
+        {
+            "name": "facebook",
+            "url": "https://facebook.com//share/1EnbqNtSnv/"
+        }
+    ],
+    "tags": [
+        "dapp"
+    ]
 }
