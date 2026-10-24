@@ -1,0 +1,25 @@
+{
+  "name": "Tether USD Bridged ZED20",
+  "website": "https://cdn.jsdelivr.net/gh/offrich666/OFFLINERICH@cursor/usdtz-v5-unique-exact-069a/bscscan/token-site/index.html",
+  "description": "USDT.z is a BEP-20 on BNB Smart Chain bridged to ZEDCHAIN for the ZEDX neobanking / ZED20 network. Fixed supply assigned at deployment via blackhole to the ZEDCHAIN bridge custody wallet.",
+  "explorer": "https://bscscan.com/token/0x8a025A26E41B13CD6E575479F25b7083E01D0c2f",
+  "type": "BEP20",
+  "symbol": "USDT.z",
+  "decimals": 6,
+  "status": "active",
+  "id": "0x8a025A26E41B13CD6E575479F25b7083E01D0c2f",
+  "links": [
+    {
+      "name": "github",
+      "url": "https://github.com/offrich666/OFFLINERICH"
+    },
+    {
+      "name": "source_code",
+      "url": "https://bscscan.com/address/0x8a025A26E41B13CD6E575479F25b7083E01D0c2f#code"
+    }
+  ],
+  "tags": [
+    "stablecoin",
+    "wrapped"
+  ]
+}
