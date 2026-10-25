@@ -1,0 +1,24 @@
+{
+    "name": "Tether USD",
+    "type": "BEP20",
+    "symbol": "USDT",
+    "decimals": 18,
+    "website": "https://bscscan.com",
+    "description": "This is a stable token",
+    "explorer": "https://etherscan.io/token/0xC9ef6717533F8C30B6fb80909407B6ea2F01d393",
+    "status": "active",
+    "id": "0xC9ef6717533F8C30B6fb80909407B6ea2F01d393",
+    "links": [
+        {
+            "name": "x",
+            "url": "https://x.com/bscscan?lang=en"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/api-evangelist/bscscan"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}
