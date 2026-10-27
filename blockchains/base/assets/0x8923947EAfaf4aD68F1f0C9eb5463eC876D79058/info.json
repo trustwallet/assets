@@ -10,10 +10,6 @@
     "id": "0x8923947EAfaf4aD68F1f0C9eb5463eC876D79058",
     "links": [
         {
-            "name": "x",
-            "url": "https://x.com/MERC_token"
-        },
-        {
             "name": "whitepaper",
             "url": "https://www.liquidmercury.com/mica"
         },
@@ -23,10 +19,11 @@
         },
         {
             "name": "coingecko",
-            "url": "https://www.coingecko.com/en/coins/liquid-mercury"
+            "url": "https://coingecko.com/en/coins/liquid-mercury"
         }
     ],
     "tags": [
         "wrapped"
-    ]
+    ],
+    "x": "https://x.com/MERC_token"
 }
