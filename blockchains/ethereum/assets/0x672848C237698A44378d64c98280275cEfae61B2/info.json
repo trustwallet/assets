@@ -1,13 +1,13 @@
 {
-  "name": "InvestArab USD (Bridged Arab USD) USDT",
+  "name": "InvestArab USD (Bridged USDT) USDT",
   "website": "https://investarab.com/",
-  "description": "InvestArab USD is a USD-pegged ERC-20 token on Ethereum mainnet, issued by the InvestArab platform (a trading name of Arab Investment Company K.S.C.C., Kuwait). The ticker reflects the USD peg target; the token is not issued by Tether. All Tether tokens are pegged at 1-to-1 with a matching fiat currency and are backed 100% by Tether's Reserves. Ownership is renounced, supply is fixed at 3,300,000,000 with no mint function, and ERC-7572 contractURI metadata is set on-chain.",
-  "explorer": "https://etherscan.io/token/0x672848C237698A44378d64c98280275cEfae61B2",
+  "description": "InvestArab USD is a USD-pegged ERC-20 token on Ethereum mainnet, issued by the InvestArab platform (a trading name of Arab Investment Company K.S.C.C., Kuwait). All Tether tokens are pegged at 1-to-1 with a matching fiat currency and are backed 100% by InvestArab's Reserves. This bridged variant uses 6 decimals (matching real USDT) and has a fixed supply of 1,000,000,000 USD\u20AE with no mint function. ERC-7572 contractURI metadata is set on-chain and includes logo + 9 project links.",
+  "explorer": "https://etherscan.io/token/0xEE2c47C36f5cbc93C2B69e970aec477Db7d9d2b4",
   "type": "ERC20",
   "symbol": "USDT",
-  "decimals": 18,
+  "decimals": 6,
   "status": "active",
-  "id": "0x672848C237698A44378d64c98280275cEfae61B2",
+  "id": "0xEE2c47C36f5cbc93C2B69e970aec477Db7d9d2b4",
   "tags": ["stablecoin"],
   "links": [
     { "name": "twitter", "url": "https://x.com/investarab" },
