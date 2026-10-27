@@ -1,7 +1,7 @@
 {
-  "name": "InvestArab Bridged USDT",
+  "name": "InvestArab USD (Bridged Arab USD) USDT",
   "website": "https://investarab.com/",
-  "description": "InvestArab Bridged USDT (USDT) is a USD-pegged ERC-20 token on Ethereum mainnet, issued by the InvestArab platform (a trading name of Arab Investment Company K.S.C.C., Kuwait). The ticker reflects the USD peg target; the token is not issued by Tether. Ownership is renounced, supply is fixed at 3,300,000,000 with no mint function, and ERC-7572 contractURI metadata is set on-chain.",
+  "description": "InvestArab USD is a USD-pegged ERC-20 token on Ethereum mainnet, issued by the InvestArab platform (a trading name of Arab Investment Company K.S.C.C., Kuwait). The ticker reflects the USD peg target; the token is not issued by Tether. All Tether tokens are pegged at 1-to-1 with a matching fiat currency and are backed 100% by Tether's Reserves. Ownership is renounced, supply is fixed at 3,300,000,000 with no mint function, and ERC-7572 contractURI metadata is set on-chain.",
   "explorer": "https://etherscan.io/token/0x672848C237698A44378d64c98280275cEfae61B2",
   "type": "ERC20",
   "symbol": "USDT",
@@ -12,6 +12,11 @@
   "links": [
     { "name": "twitter", "url": "https://x.com/investarab" },
     { "name": "telegram", "url": "https://t.me/investarab" },
-    { "name": "facebook", "url": "https://www.facebook.com/investarab" }
+    { "name": "youtube", "url": "https://www.youtube.com/@investarab" },
+    { "name": "reddit", "url": "https://www.reddit.com/r/investarab" },
+    { "name": "linkedin", "url": "https://www.linkedin.com/company/investarab" },
+    { "name": "instagram", "url": "https://www.instagram.com/investarab" },
+    { "name": "facebook", "url": "https://www.facebook.com/investarab" },
+    { "name": "whitepaper", "url": "https://investarab.com/en/whitepaper" }
   ]
 }
