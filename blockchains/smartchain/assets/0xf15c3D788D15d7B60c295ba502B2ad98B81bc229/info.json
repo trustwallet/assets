@@ -1,11 +1,16 @@
-    {
-      "name": "Kottu Token",
-      "symbol": "KOTTU",
-      "type": "BEP20",
-      "decimals": 18,
-      "description": "KOTTU - Sri Lanka's First Community Meme Token",
-      "website": "https://kottu-token.pages.dev",
-      "explorer": "https://bscscan.com/token/0xf15c3D788D15d7B60c295ba502B2ad98B81bc229",
-      "status": "active",
-      "id": "0xf15c3D788D15d7B60c295ba502B2ad98B81bc229"
-    }
+{
+  "name": "KOTTU",
+  "symbol": "KOTTU",
+  "type": "BEP20",
+  "decimals": 18,
+  "description": "KOTTU is a community-driven BEP20 token on BNB Smart Chain.",
+  "website": "https://kottu-token.pages.dev",
+  "explorer": "https://bscscan.com/token/0xf15c3D788D15d7B60c295ba502B2ad98B81bc229",
+  "links": [
+    {"name": "website", "url": "https://kottu-token.pages.dev"},
+    {"name": "explorer", "url": "https://bscscan.com/token/0xf15c3D788D15d7B60c295ba502B2ad98B81bc229"},
+    {"name": "github", "url": "https://github.com/chamodsupun9-wq/assets"},
+    {"name": "telegram", "url": "https://t.me/kottutoken"}
+  ],
+  "tags": ["defi"]
+}
