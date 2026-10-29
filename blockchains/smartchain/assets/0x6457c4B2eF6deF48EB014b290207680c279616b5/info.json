@@ -1,22 +1,13 @@
 {
   "name": "BTCBABA",
-  "website": "https://www.btcbaba-token.org",
-  "description": "BTCBABA is a community-driven meme token on BSC. 0% Tax, Liquidity Locked, Verified Contract.",
-  "explorer": "https://bscscan.com/token/0x6457c4B2eF6deF48EB014b290207680c279616b5",
-  "type": "BEP20",
   "symbol": "BTCBABA",
+  "type": "BEP20",
   "decimals": 18,
+  "description": "BTCBABA is a community-driven BEP20 token on BNB Smart Chain.",
+  "website": "https://www.btcbaba-token.org/",
+  "explorer": "https://bscscan.com/token/0x6457c4B2eF6deF48EB014b290207680c279616b5",
+  "twitter": "https://x.com/BTCBABA",
+  "telegram": "https://t.me/BTCbabaAdmin5",
   "status": "active",
-  "id": "0x6457c4B2eF6deF48EB014b290207680c279616b5",
-  "links": [
-    {
-      "name": "telegram",
-      "url": "https://t.me/BTCbabaAdmin5"
-    },
-    {
-      "name": "x",
-      "url": "https://x.com/BTCBABA_BSC"
-    }
-  ],
-  "tags": ["memes"]
+  "id": "0x6457c4B2eF6deF48EB014b290207680c279616b5"
 }
