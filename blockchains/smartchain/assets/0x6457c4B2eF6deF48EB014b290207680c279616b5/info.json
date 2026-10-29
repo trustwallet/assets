@@ -3,12 +3,15 @@
   "symbol": "BTCBABA",
   "type": "BEP20",
   "decimals": 18,
-  "description": "BTCBABA is a community-driven BEP20 token on BNB Smart Chain with 2200+ holders. 0% Tax, Liquidity Locked, Verified Contract.",
-  "website": "https://www.btcbaba-token.org/",
+  "description": "BTCBABA is a community-driven BEP20 token on BNB Smart Chain.",
+  "website": "https://www.btcbaba-token.org",
   "explorer": "https://bscscan.com/token/0x6457c4B2eF6deF48EB014b290207680c279616b5",
-  "twitter": "https://x.com/BTCBABA_BSC",
-  "telegram": "https://t.me/BTCbabaAdmin5",
-  "tags": ["defi"],
   "status": "active",
-  "id": "0x6457c4B2eF6deF48EB014b290207680c279616b5"
+  "id": "0x6457c4B2eF6deF48EB014b290207680c279616b5",
+  "links": [
+    {"name": "website", "url": "https://www.btcbaba-token.org"},
+    {"name": "explorer", "url": "https://bscscan.com/token/0x6457c4B2eF6deF48EB014b290207680c279616b5"},
+    {"name": "telegram", "url": "https://t.me/BTCbabaAdmin5"}
+  ],
+  "tags": ["defi"]
 }
