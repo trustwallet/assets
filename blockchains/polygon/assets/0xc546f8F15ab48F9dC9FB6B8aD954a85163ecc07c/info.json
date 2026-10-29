@@ -1,12 +1,18 @@
 {
     "name": "LestarX Carbon Credit",
-    "symbol": "LXCC",
-    "type": "ERC20",
-    "decimals": 18,
-    "description": "LestarX Carbon Credit (LXCC) is a digital carbon credit token on the Polygon network, supporting decarbonization and carbon offset initiatives.",
     "website": "https://lestarx.com",
-    "explorer": "https://polygonscan.com/token/0xc546f8F15ab48F9dC9FB6B8aD954a85163ecc07c",
+    "description": "LXCC is Indonesia's blockchain-based carbon credit token on Polygon, compliant with Perpres No. 110 Tahun 2025 and registered in SRUK (Sistem Registri Unit Karbon).",
+    "explorer": "https://etherscan.io/token/0xc546f8F15ab48F9dC9FB6B8aD954a85163ecc07c",
+    "research": "https://lestarx.com/wp-content/uploads/2026/10/LXCC_Token_Whitepaper_V2.0.pdf",
+    "type": "ERC20",
+    "symbol": "LXCC",
+    "decimals": 18,
     "status": "active",
-    "id": "0xc546f8F15ab48F9dC9FB6B8aD954a85163ecc07c"
+    "id": "0xc546f8F15ab48F9dC9FB6B8aD954a85163ecc07c",
+    "links": [
+        { "name": "twitter", "url": "https://x.com/lestarxofficial" },
+        { "name": "github", "url": "https://github.com/lestarx" }
+    ],
+    "tags": ["carbon-credit"]
 }
 
