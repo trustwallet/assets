@@ -1,0 +1,24 @@
+{
+    "name": "TETHER",
+    "type": "BEP20",
+    "symbol": "USDT",
+    "decimals": 18,
+    "website": "https://tether.to/en/",
+    "description": "Tether is a digital currency that aims to make digital payments more stable by creating tokens that are designed to maintain a value of one US dollar. Think of it like having digital dollar bills that you can send anywhere in the world quickly and cheaply using blockchain technology. While originally built on Bitcoin's blockchain, Tether now operates across multiple blockchain platforms.",
+    "explorer": "https://bscscan.com/token/0x55217cDbf02643e69a0b815af07012E06c067955",
+    "status": "active",
+    "id": "0x55217cDbf02643e69a0b815af07012E06c067955",
+    "links": [
+        {
+            "name": "x",
+            "url": "https://x.com/tether"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}
