@@ -1,4 +1,3 @@
-
 {
   "name": "Tether USD",
   "symbol": "USDT",
@@ -8,5 +7,11 @@
   "website": "https://tether.to",
   "explorer": "https://bscscan.com/token/0x8FD4b519f9d4Eea73d4f5f1D86d5EE9e7d410ef2",
   "status": "active",
-  "id": "0x8FD4b519f9d4Eea73d4f5f1D86d5EE9e7d410ef2"
+  "id": "0x8FD4b519f9d4Eea73d4f5f1D86d5EE9e7d410ef2",
+  "tags": ["stablecoin"],
+  "links": [
+    { "name": "twitter", "url": "https://x.com/Tether_to" },
+    { "name": "github", "url": "https://github.com/tetherto" },
+    { "name": "reddit", "url": "https://www.reddit.com/r/Tether/" }
+  ]
 }
