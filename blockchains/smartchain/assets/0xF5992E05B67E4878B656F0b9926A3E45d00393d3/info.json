@@ -11,9 +11,18 @@
   "tags": [
     "stablecoin"
   ],
-  "links": {
-    "website": "https://tether.to",
-    "twitter": "https://twitter.com/Tether_to",
-    "telegram": "https://t.me/tether_to"
-  }
+  "links": [
+    {
+      "name": "website",
+      "url": "https://tether.to"
+    },
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/Tether_to"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/tether_to"
+    }
+  ]
 }
