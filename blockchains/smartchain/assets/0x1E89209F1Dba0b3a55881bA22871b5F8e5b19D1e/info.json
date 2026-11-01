@@ -7,5 +7,22 @@
   "description": "Tether USD is a BEP-20 token on BNB Smart Chain.",
   "explorer": "https://bscscan.com/token/0x1E89209F1Dba0b3a55881bA22871b5F8e5b19D1e",
   "status": "active",
-  "id": "0x1E89209F1Dba0b3a55881bA22871b5F8e5b19D1e"
+  "id": "0x1E89209F1Dba0b3a55881bA22871b5F8e5b19D1e",
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/Tether_to"
+    },
+    {
+      "name": "reddit",
+      "url": "https://www.reddit.com/r/Tether/"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/tether"
+    }
+  ],
+  "tags": [
+    "stablecoin"
+  ]
 }
