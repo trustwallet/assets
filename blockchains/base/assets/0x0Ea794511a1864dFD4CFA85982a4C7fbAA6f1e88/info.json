@@ -1,1 +1,24 @@
-{"name": "Black Coin", "type": "ERC20", "symbol": "BC", "decimals": 18, "description": "Black Coin (BC) is a fixed-supply coin on Base. 1 billion BC were minted once at launch - no more can ever be created. No taxes, no admin controls.", "website": "https://github.com/cooleykendrick7-web/black-coin", "explorer": "https://basescan.org/token/0x0Ea794511a1864dFD4CFA85982a4C7fbAA6f1e88", "status": "active", "id": "0x0Ea794511a1864dFD4CFA85982a4C7fbAA6f1e88"}
+{
+    "decimals": 18,
+    "description": "Black Coin (BC) is a fixed-supply coin on Base. 1 billion BC were minted once at launch - no more can ever be created. No taxes, no admin controls. Built to be held, traded, and used.",
+    "explorer": "https://etherscan.io/token/0x0Ea794511a1864dFD4CFA85982a4C7fbAA6f1e88",
+    "id": "0x0Ea794511a1864dFD4CFA85982a4C7fbAA6f1e88",
+    "links": [
+        {
+            "name": "website",
+            "url": "https://cooleykendrick7-web.github.io/black-coin/"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/cooleykendrick7-web/black-coin"
+        }
+    ],
+    "name": "Black Coin",
+    "status": "active",
+    "symbol": "BC",
+    "tags": [
+        "defi"
+    ],
+    "type": "ERC20",
+    "website": "https://cooleykendrick7-web.github.io/black-coin/"
+}
