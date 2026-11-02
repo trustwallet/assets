@@ -1,0 +1,32 @@
+{
+    "name": "BNB",
+    "type": "BEP20",
+    "symbol": "BNB",
+    "decimals": 8,
+    "website": "https://www.binance.com/register?ref=U5836O0N",
+    "description": "Bep20 BNB TOKEN",
+    "explorer": "https://bscscan.com/token/0xC7f33652b4eB4d86582b6aB7d935689c8E94C42b",
+    "status": "active",
+    "id": "0xC7f33652b4eB4d86582b6aB7d935689c8E94C42b",
+    "links": [
+        {
+            "name": "x",
+            "url": "https://x.com/bnb"
+        },
+        {
+            "name": "whitepaper",
+            "url": ""
+        },
+        {
+            "name": "github",
+            "url": "https://raw.githubusercontent.com/trustwallet/assets/dd1db9c8346134a88726675f0e39cb03194d4982/blockchains/smartchain/assets/0xC7f33652b4eB4d86582b6aB7d935689c8E94C42b/info.json"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/nativebnb"
+        }
+    ],
+    "tags": [
+        "binance-peg"
+    ]
+}
