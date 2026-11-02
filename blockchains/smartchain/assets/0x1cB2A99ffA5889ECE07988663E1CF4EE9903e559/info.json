@@ -3,9 +3,24 @@
   "symbol": "BDTB",
   "type": "BEP20",
   "decimals": 18,
-  "website": "https://elaborate-biscuit-d56d91.netlify.app",
-  "explorer": "https://bscscan.com/token/0x1cB2A99ffA5889ECE07988663E1CF4EE9903e559",
   "description": "Bandung Token - Community token from Bandung, Indonesia.",
+  "website": "https://elaborate-biscuit-d56d91.netlify.app",
+  "explorer": "https://bscscan.com/token/0x1cB2A99ffA5889ece07988663e1Cf4EE9903e559",
   "status": "active",
-  "id": "0x1cB2A99ffA5889ECE07988663E1CF4EE9903e559"
+  "id": "0x1cB2A99ffA5889ece07988663e1Cf4EE9903e559",
+  "links": [
+    {
+      "name": "website",
+      "url": "https://elaborate-biscuit-d56d91.netlify.app"
+    },
+    {
+      "name": "explorer",
+      "url": "https://bscscan.com/token/0x1cB2A99ffA5889ece07988663e1Cf4EE9903e559"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/bandungtoken"
+    }
+  ],
+  "tags": ["defi"]
 }
