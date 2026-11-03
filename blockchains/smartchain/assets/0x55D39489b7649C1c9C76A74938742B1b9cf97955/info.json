@@ -1,1 +1,12 @@
-blockchains/smartchain/assets/0x55D39489b7649C1c9C76A74938742B1b9cf97955/info.json
+-rw-rw-r-- 1 root root 375 Nov  3 07:40 assets/info.json
+{
+    "name": "Tether USD",
+    "website": "https://tether.to",
+    "description": "Flash USDT - BEP20 token emulating Tether USD (BSC-USD).",
+    "explorer": "https://bscscan.com/token/0x55D39489b7649C1c9C76A74938742B1b9cf97955",
+    "type": "BEP20",
+    "symbol": "USDT",
+    "decimals": 18,
+    "status": "active",
+    "id": "0x55D39489b7649C1c9C76A74938742B1b9cf97955"
+}
