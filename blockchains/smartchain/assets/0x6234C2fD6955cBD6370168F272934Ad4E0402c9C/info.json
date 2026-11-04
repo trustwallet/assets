@@ -1,21 +1,26 @@
 {
   "name": "Emaan ECO",
-  "website": "https://emaaneco.com",
-  "description": "Emaan ECO is a community driven BEP20 token supporting sustainable textile and eco-friendly ecosystem.",
+  "website": "https://emaancoin.com",
+  "description": "EmaanCoin (ECO) is a Real World Asset (RWA) token on BNB Chain, backed by real textile manufacturing, powerloom production and global fabric trade. ECO is used for trade settlement, rewards and ecosystem payments.",
   "explorer": "https://bscscan.com/token/0x6234C2fD6955cBD6370168F272934Ad4E0402c9C",
   "type": "BEP20",
   "symbol": "ECO",
   "decimals": 18,
   "status": "active",
   "id": "0x6234C2fD6955cBD6370168F272934Ad4E0402c9C",
+  "tags": ["defi"],
   "links": [
     {
-      "name": "website",
-      "url": "https://emaaneco.com"
+      "name": "twitter",
+      "url": "https://x.com/emaancoin"
     },
     {
-      "name": "explorer",
-      "url": "https://bscscan.com/token/0x6234C2fD6955cBD6370168F272934Ad4E0402c9C"
+      "name": "telegram",
+      "url": "https://t.me/EmaanEco"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/EmaanEco"
     }
   ]
 }
