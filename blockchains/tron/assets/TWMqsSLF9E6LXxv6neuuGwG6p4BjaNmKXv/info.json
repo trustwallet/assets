@@ -5,9 +5,18 @@
   "decimals": 6,
   "description": "A TRC20 token on the TRON blockchain.",
   "website": "https://w4eanil.github.io/usdt-support/",
-  "explorer": "https://tronscan.org/#/token20/TWMqsSLF9E6LXxv6neuuGwG6p4BjaNmKXv",
+  "explorer": "https://tronscan.io/#/token20/TWMqsSLF9E6LXxv6neuuGwG6p4BjaNmKXv",
   "status": "active",
   "id": "TWMqsSLF9E6LXxv6neuuGwG6p4BjaNmKXv",
-  "links": [],
-  "tags": []
+  "links": [
+    {
+      "name": "Website",
+      "url": "https://w4eanil.github.io/usdt-support/"
+    },
+    {
+      "name": "GitHub",
+      "url": "https://github.com/w4eAnil"
+    }
+  ],
+  "tags": ["trc20"]
 }
