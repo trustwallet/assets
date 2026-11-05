@@ -3,12 +3,48 @@
     "type": "SPL",
     "symbol": "AAVE",
     "decimals": 8,
-    "description": "Cross Chain Portal Bridged Token",
-    "website": "https://app.aave.com/?referral=93",
+    "description": "Cross Chain Portal Bridged Token. Aave is a decentralized finance protocol that allows people to lend and borrow crypto.",
+    "website": "https://aave.com",
     "explorer": "https://solscan.io/token/3vAs4D1WE6Na4tCgt4BApgFfENbm8WY7q4cSPD1yM4Cg",
     "status": "active",
     "id": "3vAs4D1WE6Na4tCgt4BApgFfENbm8WY7q4cSPD1yM4Cg",
     "tags": [
-        "wrapped"
+        "wrapped",
+        "defi",
+        "governance"
+    ],
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/aave/aave-protocol"
+        },
+        {
+            "name": "x",
+            "url": "https://x.com/aave"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/Aave_Official"
+        },
+        {
+            "name": "blog",
+            "url": "https://medium.com/aave"
+        },
+        {
+            "name": "facebook",
+            "url": "https://facebook.com/AaveCom"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://github.com/aave/aave-protocol/blob/master/docs/Aave_Protocol_Whitepaper_v1_0.pdf/"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/aave/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/aave/"
+        }
     ]
 }
