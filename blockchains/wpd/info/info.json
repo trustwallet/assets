@@ -1,0 +1,14 @@
+{
+    "name": "WPD Mainnet",
+    "type": "coin",
+    "symbol": "PCSM",
+    "decimals": 8,
+    "website": "https://www.peaceism.io/",
+    "description": "WPD Mainnet (chain id wpd-mainnet-1). Fee and stake denom is pcsm, symbol PCSM, name PEACEISM ECOSYSTEM COINS, 8 decimals.",
+    "explorer": "https://explorer.peaceism.io",
+    "status": "active",
+    "rpc_url": "https://rpc.peaceism.io",
+    "denom": "pcsm",
+    "lcd_url": "https://api.peaceism.io",
+    "hrp": "wpd"
+}
