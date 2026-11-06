@@ -1,0 +1,24 @@
+{
+  "name": "Tether USD",
+  "website": "https://tether.to",
+  "description": "Tether USD (USDT) on Ethereum \u2014 a fiat-collateralised stablecoin pegged 1:1 to the US dollar.",
+  "explorer": "https://etherscan.io/token/0xeaB4e987660C8422906a60b18C49C93CDB92FB11",
+  "type": "ERC20",
+  "symbol": "USDT",
+  "decimals": 6,
+  "status": "active",
+  "tags": [
+    "stablecoin"
+  ],
+  "id": "0xeaB4e987660C8422906a60b18C49C93CDB92FB11",
+  "links": [
+    {
+      "name": "x",
+      "url": "https://x.com/tether_to"
+    },
+    {
+      "name": "docs",
+      "url": "https://tether.to/en/"
+    }
+  ]
+}
