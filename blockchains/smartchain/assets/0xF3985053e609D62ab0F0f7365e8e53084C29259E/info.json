@@ -1,6 +1,6 @@
 {
     "name": "BITRUN",
-    "website": "https://bitrun.io",
+    "website": "https://bitrun.finance",
     "description": "BITRUN (BTR) is a BEP-20 token on BNB Smart Chain.",
     "explorer": "https://bscscan.com/token/0xF3985053e609D62ab0F0f7365e8e53084C29259E",
     "type": "BEP20",
@@ -10,7 +10,8 @@
     "id": "0xF3985053e609D62ab0F0f7365e8e53084C29259E",
     "links": [
         { "name": "twitter", "url": "https://x.com/BitrunOfficial" },
-        { "name": "github", "url": "https://github.com/supportbitrun-a11y" }
+        { "name": "github", "url": "https://github.com/supportbitrun-a11y" },
+        { "name": "website", "url": "https://bitrun.finance" }
     ],
     "tags": ["defi"]
 }
