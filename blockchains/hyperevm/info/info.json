@@ -1,0 +1,33 @@
+{
+    "name": "HyperEVM",
+    "website": "https://hyperliquid.xyz/",
+    "description": "HyperEVM is an EVM-compatible execution layer secured by the same HyperBFT consensus as HyperCore, Hyperliquid's native blockchain. Rather than operating as a separate chain, it enables direct interaction with HyperCore's spot and perpetual order books, allowing developers to build applications that leverage deep onchain liquidity. Builders can deploy smart contracts using standard EVM tooling and create tokenized assets that trade on unified order books without bridging risk or permission requirements.",
+    "explorer": "https://hyperevmscan.io/",
+    "symbol": "HYPE",
+    "rpc_url": "https://rpc.hyperliquid.xyz/evm",
+    "coin_type": 10000999,
+    "type": "coin",
+    "decimals": 18,
+    "status": "active",
+    "tags": [
+        "defi"
+    ],
+    "links": [
+        {
+            "name": "x",
+            "url": "https://x.com/HyperliquidX"
+        },
+        {
+            "name": "docs",
+            "url": "https://hyperliquid.gitbook.io/hyperliquid-docs"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/hyperliquid/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/coins/hyperliquid"
+        }
+    ]
+}
