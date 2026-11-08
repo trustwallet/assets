@@ -1,0 +1,33 @@
+{
+    "name": "Nami",
+    "type": "ROBINHOODCHAIN",
+    "symbol": "NAMI",
+    "decimals": 18,
+    "description": "NAMI is the native multichain token of nami, a unified DeFi protocol that coordinates trading, liquidity, lending, and governance across networks. NAMI is used for trading, providing liquidity, and rewarding liquidity providers, and can be locked into veNAMI positions for voting power and voting rewards. It is the same token at the same address on Ethereum, Base, and Robinhood Chain, with supply minted on Ethereum and distributed across chains with no wrapped versions.",
+    "website": "https://nami.fi",
+    "explorer": "https://robin.etherscan.io/token/0x8888CDad9Ef66382f89E68f95Ec384d89ec28888",
+    "status": "active",
+    "id": "0x8888CDad9Ef66382f89E68f95Ec384d89ec28888",
+    "links": [
+        {
+            "name": "x",
+            "url": "https://x.com/namidefi"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/namidefi"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/namidefi"
+        },
+        {
+            "name": "docs",
+            "url": "https://docs.nami.fi/understand-nami/tokenomics/the-nami-tokens"
+        }
+    ],
+    "tags": [
+        "defi",
+        "governance"
+    ]
+}
