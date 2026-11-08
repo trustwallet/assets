@@ -1,0 +1,25 @@
+{
+    "name": "Tether Gold",
+    "type": "BEP20",
+    "symbol": "XAUt",
+    "decimals": 6,
+    "website": "https://gold.tether.to/",
+    "description": "Tether Gold (XAUT) is a stablecoin that provides ownership on a 1:1 basis of one fine troy ounce of gold on a physical bar of gold that meets the Good Delivery standard of the London Bullion Market Association (LBMA). This technology allows access to a stablecoin that provides ownership of physical gold while avoiding the drawbacks associated with physical gold such as high storage cost and limit.",
+    "explorer": "https://bscscan.com/token/0x21cAef8A43163Eea865baeE23b9C2E327696A3bf",
+    "status": "active",
+    "id": "0x21cAef8A43163Eea865baeE23b9C2E327696A3bf",
+    "links": [
+        {
+            "name": "x",
+            "url": "https://x.com/tethergold"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/tether-gold/"
+        }
+    ],
+    "tags": [
+        "stablecoin",
+        "RWA"
+    ]
+}
