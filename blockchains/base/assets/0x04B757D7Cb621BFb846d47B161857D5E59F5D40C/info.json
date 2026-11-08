@@ -1,10 +1,29 @@
+
 {
   "name": "The Last Chick",
-  "symbol": "TLC",
   "type": "ERC20",
+  "symbol": "TLC",
   "decimals": 18,
-  "description": "The Last Chick (TLC) token on Base network.",
+  "description": "The Last Chick (TLC) is a community-driven Web3 project built on hope, resilience, and purpose.",
   "website": "https://thelastchick.com/",
   "explorer": "https://basescan.org/token/0x04B757D7Cb621BFb846d47B161857D5E59F5D40C",
-  "socials": []
+  "status": "active",
+  "id": "0x04B757D7Cb621BFb846d47B161857D5E59F5D40C",
+  "links": [
+    {
+      "name": "x",
+      "url": "https://x.com/thelastchicktlc"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/thelastchick"
+    },
+    {
+      "name": "whitepaper",
+      "url": "https://thelastchick.com/whitepaper"
+    }
+  ],
+  "tags": [
+    "gamefi"
+  ]
 }
