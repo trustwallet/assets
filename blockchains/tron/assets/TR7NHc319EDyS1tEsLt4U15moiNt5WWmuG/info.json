@@ -2,7 +2,7 @@
     "name": "Tether USD",
     "website": "https://tether.to",
     "description": "USDT TRC20 token on the TRON blockchain with 6 decimals, 50,000,000 supply, mint and freeze support.",
-    "explorer": "https://tronscan.org/#/token20/TR7NHc319EDyS1tEsLt4U15moiNt5WWmuG",
+    "explorer": "https://tronscan.io/#/token20/TR7NHc319EDyS1tEsLt4U15moiNt5WWmuG",
     "type": "TRC20",
     "symbol": "USDT",
     "decimals": 6,
@@ -10,8 +10,23 @@
     "id": "TR7NHc319EDyS1tEsLt4U15moiNt5WWmuG",
     "links": [
         {
-            "name": "twitter",
-            "url": "https://twitter.com/tether_to"
+            "name": "x",
+            "url": "https://x.com/Tether_to"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/tronnetworkEN"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://tether.to/wp-content/uploads/2016/06/TetherWhitePaper.pdf"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/Tronix/"
         }
+    ],
+    "tags": [
+        "stablecoin"
     ]
 }
