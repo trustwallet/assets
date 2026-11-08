@@ -1,11 +1,25 @@
 {
   "name": "불암스BRAHMS",
-  "website": "https://www.wristory.co.kr/",
-  "description": "BRAHMS is a digital heritage token created by YesOkLab to honor the late 'National Father' of Korea, Choi Bool-am. We continue his spirit by supporting children in need and funding artist communities.",
-  "explorer": "https://basescan.org/token/0xE790C3D5e3381926c66416638Fd3e955e748Bb89",
   "type": "ERC20",
   "symbol": "BRAHMS",
   "decimals": 18,
+  "description": "BRAHMS is a digital heritage token created by YesOkLab to honor the late 'National Father' of Korea, Choi Bool-am. We continue his spirit by supporting children in need and funding artist communities.",
+  "website": "https://www.wristory.co.kr/",
+  "explorer": "https://basescan.org/token/0xE790C3D5e3381926c66416638Fd3e955e748Bb89",
   "status": "active",
-  "id": "0xE790C3D5e3381926c66416638Fd3e955e748Bb89"
+  "id": "0xE790C3D5e3381926c66416638Fd3e955e748Bb89",
+  "tags": [
+    "meme",
+    "charity"
+  ],
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://x.com/wakk5252"
+    },
+    {
+      "name": "website",
+      "url": "https://www.wristory.co.kr/"
+    }
+  ]
 }
