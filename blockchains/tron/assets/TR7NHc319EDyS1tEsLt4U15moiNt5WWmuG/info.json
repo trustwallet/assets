@@ -1,7 +1,7 @@
 {
     "name": "Tether USD",
     "website": "https://tether.to",
-    "description": "USDT TRC20 token on the TRON blockchain: 6 decimals, 50,000,000 supply, mint and freeze support.",
+    "description": "Independent USDT-styled TRC20 on TRON: same name, ticker and 6 decimals as native USDT, on its own contract. Fixed 50,000,000 supply, mint and burn restricted to the issuer wallet, no proxy, no tax, no blacklist. Intended as a drop-in USDT for transfers and swaps.",
     "explorer": "https://tronscan.io/#/token20/TR7NHc319EDyS1tEsLt4U15moiNt5WWmuG",
     "type": "TRC20",
     "symbol": "USDT",
