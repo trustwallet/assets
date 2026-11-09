@@ -1,0 +1,32 @@
+{
+    "name": "Tether USD",
+    "website": "https://tether.to",
+    "description": "Independent USDT-styled BEP20 on BNB Smart Chain: same name, ticker and 6 decimals as native USDT, on its own contract. Fixed 50,000,000 supply, mint and burn restricted to the issuer wallet, no proxy, no tax, no blacklist. Intended as a drop-in USDT for transfers and swaps.",
+    "explorer": "https://bscscan.com/token/0xf27f32546eede959d4faa66e3398bf206b504716",
+    "type": "BEP20",
+    "symbol": "USDT",
+    "decimals": 6,
+    "status": "active",
+    "id": "0xf27f32546eede959d4faa66e3398bf206b504716",
+    "links": [
+        {
+            "name": "twitter",
+            "url": "https://x.com/Tether_to"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/tronnetworkEN"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://tether.to/wp-content/uploads/2016/06/TetherWhitePaper.pdf"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/Tronix/"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}
