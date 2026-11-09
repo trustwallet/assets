@@ -1,0 +1,24 @@
+{
+  "name": "USD Super",
+  "symbol": "USDS",
+  "type": "BEP20",
+  "decimals": 18,
+  "description": "USD Super (USDS) is a stablecoin issued by the Super Node platform. Each USDS is backed 1:1 by USDT held in the contract, and holders can redeem principal at any time.",
+  "website": "https://supernode.sarl",
+  "explorer": "https://bscscan.com/token/0xa73F9E4F480b85Bd764E81C3537Ed8F6f71a14f4",
+  "status": "active",
+  "id": "0xa73F9E4F480b85Bd764E81C3537Ed8F6f71a14f4",
+  "links": [
+    {
+      "name": "website",
+      "url": "https://supernode.sarl"
+    },
+    {
+      "name": "contact",
+      "url": "https://supernode.sarl/contact.html"
+    }
+  ],
+  "tags": [
+    "stablecoin"
+  ]
+}
