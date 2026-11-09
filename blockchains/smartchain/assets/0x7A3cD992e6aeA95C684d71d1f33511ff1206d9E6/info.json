@@ -1,1 +1,24 @@
-{"decimals":18,"description":"JOLT is a game-based daily-claim token on BNB Smart Chain. Players solve the CORE RUSH route puzzle to receive a signed voucher and claim JOLT on-chain. Its 3-day claim season concluded with 283 claims, and the JOLT/WBNB PancakeSwap V2 pool is now live with burned LP and a 2% trading tax.","explorer":"https://bscscan.com/token/0x7A3cD992e6aeA95C684d71d1f33511ff1206d9E6","id":"0x7A3cD992e6aeA95C684d71d1f33511ff1206d9E6","links":[{"name":"github","url":"https://github.com/Goatleaf12/jolt-claim-season"},{"name":"telegram","url":"https://t.me/joltbnb"}],"name":"JOLT","status":"active","symbol":"JOLT","type":"BEP20","website":"https://jolt-2fe.pages.dev/"}
+{
+    "decimals": 18,
+    "description": "JOLT is a game-based daily-claim token on BNB Smart Chain. Players solve the CORE RUSH route puzzle to receive a signed voucher and claim JOLT on-chain. Its 3-day claim season concluded with 283 claims, and the JOLT/WBNB PancakeSwap V2 pool is now live with burned LP and a 2% trading tax.",
+    "explorer": "https://bscscan.com/token/0x7A3cD992e6aeA95C684d71d1f33511ff1206d9E6",
+    "id": "0x7A3cD992e6aeA95C684d71d1f33511ff1206d9E6",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/Goatleaf12/jolt-claim-season"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/joltbnb"
+        }
+    ],
+    "name": "JOLT",
+    "status": "active",
+    "symbol": "JOLT",
+    "tags": [
+        "gamefi"
+    ],
+    "type": "BEP20",
+    "website": "https://jolt-2fe.pages.dev/"
+}
