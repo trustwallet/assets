@@ -1,29 +1,24 @@
 {
   "name": "Ghat Pe Chai",
-  "symbol": "GPC",
-  "type": "BEP20",
-  "decimals": 18,
-  "description": "Ghat Pe Chai (GPC) - Varanasi's first chai community token. Utility meme coin for chai lovers at Assi Ghat. 1 Chai = 10 INR = 500,000 GPC. 99.9% LP Locked, Owner Renounced. Not an investment, not ICO. Community Sale only.",
   "website": "https://ghatpechai.tiiny.site",
+  "description": "Ghat Pe Chai (GPC) - Varanasi's chai community token on BNB Smart Chain. Utility for chai lovers at Assi Ghat.",
   "explorer": "https://bscscan.com/token/0xc92462DD230017351B360335e80DfCfD5Dec28C8",
+  "type": "BEP20",
+  "symbol": "GPC",
+  "decimals": 18,
   "status": "active",
   "id": "0xc92462DD230017351B360335e80DfCfD5Dec28C8",
+  "tags": [
+    "meme"
+  ],
   "links": [
     {
-      "name": "website",
+      "name": "github",
+      "url": "https://github.com/GPCTOKEN"
+    },
+    {
+      "name": "blog",
       "url": "https://ghatpechai.tiiny.site"
-    },
-    {
-      "name": "explorer",
-      "url": "https://bscscan.com/token/0xc92462DD230017351B360335e80DfCfD5Dec28C8"
-    },
-    {
-      "name": "dexscreener",
-      "url": "https://dexscreener.com/bsc/0xdccaca91ee135a8b784cf85a79153a728c0d03da"
-    },
-    {
-      "name": "pancakeswap",
-      "url": "https://pancakeswap.finance/swap?outputCurrency=0xc92462DD230017351B360335e80DfCfD5Dec28C8"
     }
   ]
 }
