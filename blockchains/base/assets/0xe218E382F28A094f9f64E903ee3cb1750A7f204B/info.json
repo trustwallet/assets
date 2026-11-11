@@ -5,7 +5,7 @@
     "decimals": 18,
     "description": "Legacy treasury address of DEX fleet - non-custodial, on-chain payment rails on Base. A plain account (EOA), not a token contract; still receives protocol fees from pre-migration contracts.",
     "website": "https://dngr2.github.io/dex-products/",
-    "explorer": "https://basescan.org/address/0xe218E382F28A094f9f64E903ee3cb1750A7f204B",
+    "explorer": "https://basescan.org/token/0xe218E382F28A094f9f64E903ee3cb1750A7f204B",
     "status": "active",
     "id": "0xe218E382F28A094f9f64E903ee3cb1750A7f204B",
     "links": [
@@ -17,5 +17,8 @@
             "name": "docs",
             "url": "https://dngr2.github.io/dex-products/"
         }
+    ],
+    "tags": [
+        "defi"
     ]
 }
