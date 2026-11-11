@@ -1,11 +1,22 @@
 {
   "name": "USDI",
   "symbol": "USDI",
-  "type": "TRC20",
   "decimals": 6,
   "description": "USDI token on TRON",
-  "website": "https://tronscan.org",
-  "explorer": "https://tronscan.org/#/token/TALvqfm6ucWuFCXyYoeDD87qMSe1Ez4H1D",
+  "website": "https://coinlize.com",
+  "explorer": "https://tronscan.io/#/token20/TALvqfm6ucWuFCXyYoeDD87qMSe1Ez4H1D",
+  "type": "TRC20",
   "status": "active",
-  "id": "TALvqfm6ucWuFCXyYoeDD87qMSe1Ez4H1D"
+  "id": "TALvqfm6ucWuFCXyYoeDD87qMSe1Ez4H1D",
+  "links": [
+    {
+      "name": "website",
+      "url": "https://coinlize.com"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/coinlize-lgtm"
+    }
+  ],
+  "tags": ["stablecoin"]
 }
