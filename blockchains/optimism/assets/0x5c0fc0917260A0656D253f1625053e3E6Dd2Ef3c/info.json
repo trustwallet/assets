@@ -1,0 +1,21 @@
+{
+    "name": "DEX fleet",
+    "type": "OPTIMISM",
+    "symbol": "DEXFLEET",
+    "decimals": 18,
+    "description": "Current treasury address of DEX fleet - non-custodial, on-chain payment rails on Base (pay links, escrow, streaming, subscriptions). A plain account (EOA), not a token contract; it receives protocol fees.",
+    "website": "https://dngr2.github.io/dex-products/",
+    "explorer": "https://optimistic.etherscan.io/address/0x5c0fc0917260A0656D253f1625053e3E6Dd2Ef3c",
+    "status": "active",
+    "id": "0x5c0fc0917260A0656D253f1625053e3E6Dd2Ef3c",
+    "links": [
+        {
+            "name": "github",
+            "url": "https://github.com/dngr2"
+        },
+        {
+            "name": "docs",
+            "url": "https://dngr2.github.io/dex-products/"
+        }
+    ]
+}
