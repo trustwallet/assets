@@ -1,13 +1,28 @@
 {
-  "name": "MGG Magnus World",
+  "name": "Magnus World",
   "symbol": "MGG",
   "type": "BEP20",
   "decimals": 18,
-  "description": "MGG Magnus World is a utility token on opBNB chain.",
-  "status": "active",
-  "id": "0x7bAFE03A292fEf5bF3c60ae2c924a9956ff1B39D",
+  "description": "Magnus World - Gaming Ecosystem Token on opBNB",
+  "website": "https://magnusworld.app",
+  "explorer": "https://opbnbscan.com/token/0x7bAFE03A292fEf5bF3c60ae2c924a9956ff1B39D",
+  "tags": ["gaming"],
   "links": [
-    {"name": "website", "url": "https://magnusworld.app"},
-    {"name": "explorer", "url": "https://opbnbscan.com/token/0x7bAFE03A292fEf5bF3c60ae2c924a9956ff1B39D"}
+    {
+      "name": "website",
+      "url": "https://magnusworld.app"
+    },
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/magnusworld"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/magnusworld"
+    },
+    {
+      "name": "explorer",
+      "url": "https://opbnbscan.com/token/0x7bAFE03A292fEf5bF3c60ae2c924a9956ff1B39D"
+    }
   ]
 }
