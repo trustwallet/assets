@@ -1,8 +1,19 @@
 {
-  "name": "Intertech Digital Euro",
-  "symbol": "IEUR",
-  "type": "ERC20",
-  "decimals": 18,
-  "status": "active",
-  "id": "0x3F37CD3E82e10435D34920C4ca1E7ebf0057E781"
+  "website": "https://jss.business",
+  "description": "Intertech Digital Euro (IEUR) is an ERC20 token operating on the Ethereum blockchain.",
+  "explorer": "https://etherscan.io/token/0x3F37CD3E82e10435D34920C4ca1E7ebf0057E781",
+  "links": [
+    {
+      "name": "website",
+      "url": "https://jss.business"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/jssbusiness"
+    }
+  ],
+  "tags": [
+    "ethereum",
+    "payments"
+  ]
 }
