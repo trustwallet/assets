@@ -1,0 +1,28 @@
+{
+    "name": "TSL",
+    "type": "BEP20",
+    "symbol": "TSL",
+    "decimals": 18,
+    "website": "https://tslcrypto.com/",
+    "description": "TSL is a fixed-supply BEP-20 token on BNB Smart Chain. Current functions include on-chain transfers, trading and liquidity provision through third-party PancakeSwap pools. Project documentation publishes dated liquidity additions and distinguishes locked from unlocked LP tokens.",
+    "explorer": "https://bscscan.com/token/0xD12ECbD5f508106ec242881530767FF15A6A7549",
+    "status": "active",
+    "id": "0xD12ECbD5f508106ec242881530767FF15A6A7549",
+    "links": [
+        {
+            "name": "whitepaper",
+            "url": "https://tslcrypto.com/assets/whitepaper.pdf"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/TSLcrypto/tsl"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/TSLcrypt"
+        }
+    ],
+    "tags": [
+        "defi"
+    ]
+}
