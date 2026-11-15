@@ -1,15 +1,15 @@
 {
   "name": "WRISTORY",
-  "type": "ERC20",
+  "type": "BASE",
   "symbol": "WR",
   "decimals": 18,
-  "description": "WRISTORY is a digital heritage project preserving historical narratives through generative art and blockchain technology.",
   "website": "https://www.wristory.co.kr/",
+  "description": "WRISTORY is a digital heritage and historical archiving ecosystem built on Base by YesOkLab.",
   "explorer": "https://basescan.org/token/0x9DE688b818d1755F4Daf82d25662Da1bBEdd17b7",
   "status": "active",
   "id": "0x9DE688b818d1755F4Daf82d25662Da1bBEdd17b7",
   "tags": [
-    "utility"
+    "defi"
   ],
   "links": [
     {
@@ -17,8 +17,20 @@
       "url": "https://x.com/wakk5252"
     },
     {
-      "name": "website",
-      "url": "https://www.wristory.co.kr/"
+      "name": "github",
+      "url": "https://github.com/yesoklab/wristory-portal-v2"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/WRISTORY_YesOkLab"
+    },
+    {
+      "name": "discord",
+      "url": "https://discord.com/invite/H4mr9qhM6"
+    },
+    {
+      "name": "medium",
+      "url": "https://medium.com/@wakk5252"
     }
   ]
 }
