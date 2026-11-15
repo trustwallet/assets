@@ -1,0 +1,24 @@
+{
+    "name": "Tether USD",
+    "website": "https://investarab.com/",
+    "description": "USDT is the bridged Arabic-market representation of Tether USD on TRON, issued by InvestArab with 6 decimals and a fixed 50,000,000 supply. Tether tokens are pegged 1-to-1 with the matching fiat currency. No proxy, no tax, no owner mint after deployment; trades against TRX on SunSwap V2.",
+    "explorer": "https://tronscan.io/#/token20/TR7NHc319EDyS1tEsLt4U15moiNt5WWmuG",
+    "type": "TRC20",
+    "symbol": "USDT",
+    "decimals": 6,
+    "status": "active",
+    "id": "TR7NHc319EDyS1tEsLt4U15moiNt5WWmuG",
+    "links": [
+        {
+            "name": "x",
+            "url": "https://x.com/InvestArab_Intl"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/investarab"
+        }
+    ],
+    "tags": [
+        "stablecoin"
+    ]
+}
