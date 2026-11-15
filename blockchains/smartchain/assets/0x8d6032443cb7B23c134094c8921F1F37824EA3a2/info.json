@@ -1,0 +1,32 @@
+{
+    "name": "APX Token",
+    "type": "BEP20",
+    "symbol": "APX",
+    "decimals": 18,
+    "website": "https://apxfund.xyz",
+    "description": "APX is the utility and rewards token of APXfund, operating on BNB Smart Chain. The token supports rewards and related platform features.",
+    "explorer": "https://bscscan.com/token/0x8d6032443cb7B23c134094c8921F1F37824EA3a2",
+    "status": "active",
+    "id": "0x8d6032443cb7B23c134094c8921F1F37824EA3a2",
+    "links": [
+        {
+            "name": "telegram",
+            "url": "https://t.me/apxfund"
+        },
+        {
+            "name": "docs",
+            "url": "https://apxfund.xyz/litepaper"
+        },
+        {
+            "name": "telegram_news",
+            "url": "t.me/APXfund"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/solid-web/ApxFund"
+        }
+    ],
+    "tags": [
+        "binance-peg"
+    ]
+}
