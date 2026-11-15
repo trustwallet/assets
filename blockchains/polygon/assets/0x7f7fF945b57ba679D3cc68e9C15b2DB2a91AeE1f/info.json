@@ -7,5 +7,20 @@
   "symbol": "TAT",
   "decimals": 17,
   "status": "active",
-  "id": "0x7f7fF945b57ba679D3cc68e9C15b2DB2a91AeE1f"
+  "id": "0x7f7fF945b57ba679D3cc68e9C15b2DB2a91AeE1f",
+  "tags": ["dapp"],
+  "links": [
+    {
+      "name": "twitter",
+      "url": "https://x.com/agentsmartai"
+    },
+    {
+      "name": "whitepaper",
+      "url": "https://app.agentsmart.online/tradamint-whitepaper.pdf"
+    },
+    {
+      "name": "docs",
+      "url": "https://app.agentsmart.online/tradamint"
+    }
+  ]
 }
