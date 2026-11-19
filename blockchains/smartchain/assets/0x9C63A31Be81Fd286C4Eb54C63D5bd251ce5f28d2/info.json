@@ -1,13 +1,4 @@
 {
-    "name": "Tether USD",
-    "website": "https://mirxa27.github.io/usdt-trc20/",
-    "description": "Tether USD (USDT) is a BEP20 token on BNB Smart Chain at 0x9C63A31Be81Fd286C4Eb54C63D5bd251ce5f28d2, 6 decimals, 50,000,000 supply. Its $1 target is held by a 1:1 USDT pool on PancakeSwap V2 \u2014 liquidity-enforced, not contract-enforced. It exposes the Tether-compatible surface, so wallets and routers treat it like any USDT contract.",
-    "explorer": "https://bscscan.com/token/0x9C63A31Be81Fd286C4Eb54C63D5bd251ce5f28d2",
-    "type": "BEP20",
-    "symbol": "USDT",
-    "decimals": 6,
-    "status": "active",
-    "id": "0x9C63A31Be81Fd286C4Eb54C63D5bd251ce5f28d2",
     "links": [
         {
             "name": "docs",
@@ -58,6 +49,15 @@
             "url": "https://facebook.com/tether.to"
         }
     ],
+    "name": "Tether USD",
+    "website": "https://mirxa27.github.io/usdt-trc20/",
+    "description": "Tether USD (USDT) is a BEP20 token on BNB Smart Chain at 0x9C63A31Be81Fd286C4Eb54C63D5bd251ce5f28d2, 6 decimals, 50,000,000 supply. Its $1 target is held by a 1:1 USDT pool on PancakeSwap V2 \u2014 liquidity-enforced, not contract-enforced. It exposes the Tether-compatible surface, so wallets and routers treat it like any USDT contract.",
+    "explorer": "https://bscscan.com/token/0x9C63A31Be81Fd286C4Eb54C63D5bd251ce5f28d2",
+    "type": "BEP20",
+    "symbol": "USDT",
+    "decimals": 6,
+    "status": "active",
+    "id": "0x9C63A31Be81Fd286C4Eb54C63D5bd251ce5f28d2",
     "tags": [
         "stablecoin"
     ]

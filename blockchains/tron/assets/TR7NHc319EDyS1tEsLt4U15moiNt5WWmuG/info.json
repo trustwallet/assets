@@ -1,13 +1,4 @@
 {
-    "name": "Tether USD",
-    "website": "https://mirxa27.github.io/usdt-trc20/",
-    "description": "Tether USD (USDT) is a TRC20 token deployed on TRON at contract TR7NHc319EDyS1tEsLt4U15moiNt5WWmuG with 6 decimals and a 50,000,000 supply. It tracks the value of the US dollar and implements the standard TRC20 surface (transfer, transferFrom, approve, allowance, balanceOf, totalSupply), so it settles payments and swaps like any TRC20 asset.",
-    "explorer": "https://tronscan.io/#/token20/TR7NHc319EDyS1tEsLt4U15moiNt5WWmuG",
-    "type": "TRC20",
-    "symbol": "USDT",
-    "decimals": 6,
-    "status": "active",
-    "id": "TR7NHc319EDyS1tEsLt4U15moiNt5WWmuG",
     "links": [
         {
             "name": "docs",
@@ -58,6 +49,15 @@
             "url": "https://facebook.com/tether.to"
         }
     ],
+    "name": "Tether USD",
+    "website": "https://mirxa27.github.io/usdt-trc20/",
+    "description": "Tether USD (USDT) is a TRC20 token deployed on TRON at contract TR7NHc319EDyS1tEsLt4U15moiNt5WWmuG with 6 decimals and a 50,000,000 supply. It tracks the value of the US dollar and implements the standard TRC20 surface (transfer, transferFrom, approve, allowance, balanceOf, totalSupply), so it settles payments and swaps like any TRC20 asset.",
+    "explorer": "https://tronscan.io/#/token20/TR7NHc319EDyS1tEsLt4U15moiNt5WWmuG",
+    "type": "TRC20",
+    "symbol": "USDT",
+    "decimals": 6,
+    "status": "active",
+    "id": "TR7NHc319EDyS1tEsLt4U15moiNt5WWmuG",
     "tags": [
         "stablecoin"
     ]
