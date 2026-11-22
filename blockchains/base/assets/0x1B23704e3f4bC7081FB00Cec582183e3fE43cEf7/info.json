@@ -1,0 +1,36 @@
+{
+    "name": "Alien Base Token",
+    "type": "BASE",
+    "symbol": "ALB",
+    "decimals": 18,
+    "description": "Current ALB token of Alien Base, a DEX on Base. Legacy ALB migrates 1:1 to this contract.",
+    "website": "https://alienbase.xyz/",
+    "explorer": "https://basescan.org/token/0x1B23704e3f4bC7081FB00Cec582183e3fE43cEf7",
+    "id": "0x1B23704e3f4bC7081FB00Cec582183e3fE43cEf7",
+    "status": "active",
+    "links": [
+        {
+            "name": "x",
+            "url": "https://x.com/AlienBaseDEX"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/alienbase-xyz"
+        },
+        {
+            "name": "docs",
+            "url": "https://docs.alienbase.xyz/alb-esalb-and-govalb/alb-token"
+        },
+        {
+            "name": "coinmarketcap",
+            "url": "https://coinmarketcap.com/currencies/alien-base/"
+        },
+        {
+            "name": "coingecko",
+            "url": "https://coingecko.com/en/coins/alienbase"
+        }
+    ],
+    "tags": [
+        "defi"
+    ]
+}
