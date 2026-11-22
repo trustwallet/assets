@@ -1,1 +1,15 @@
-{"name":"Tether USD","symbol":"USDT","decimals":6,"address":"TPNXpP6NpaTQPgN7wRo3Q1WAtnmdwQ7WFe","logo":"", "website":"https://tether.to","description":"Tether USD (TRC20)"}
+{
+      "name": "Tether USD",
+      "website": "https://tether.to",
+      "description": "Tether USD (TRC20) token with 6 decimals.",
+      "explorer": "https://tronscan.org/#/token20/TPNXpP6NpaTQPgN7wRo3Q1WAtnmdwQ7WFe",       "type": "TRC20",
+      "symbol": "USDT",
+      "decimals": 6,
+      "status": "active",
+      "id": "TPNXpP6NpaTQPgN7wRo3Q1WAtnmdwQ7WFe",
+      "links": [
+          { "name": "x", "url": "https://x.com/Tether_to" },
+          { "name": "docs", "url": "https://tether.to" }
+      ],
+      "tags": ["defi"]
+  }
