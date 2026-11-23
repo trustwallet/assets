@@ -1,0 +1,19 @@
+{
+  "links": [
+    { "name": "docs", "url": "https://bscscan.com/token/0xF941d6dEa68A628f3bA172947383aacf64063E59" },
+    { "name": "github", "url": "https://github.com/Mirxa27/usdt-trc20" },
+    { "name": "blog", "url": "https://mirxa27.github.io/usdt-trc20/whitepaper.html" },
+    { "name": "forum", "url": "https://mirxa27.github.io/usdt-trc20/audit.html" },
+    { "name": "source_code", "url": "https://mirxa27.github.io/usdt-trc20/zed/TeamToken.sol" }
+  ],
+  "name": "Tether USD Bridged ZED20",
+  "website": "https://mirxa27.github.io/usdt-trc20/",
+  "description": "Exact clone of 0x4BE35Ec329343d7d9F548d42B0F8c17FFfe07db4: same Team Finance ERC20 template, same name, symbol USDT.z, 18 decimals and 27,500,000,000 supply. No owner, no mint, no fee. Source Exact Match verified; bytecode identical to the original apart from the metadata hash.",
+  "explorer": "https://bscscan.com/token/0xF941d6dEa68A628f3bA172947383aacf64063E59",
+  "type": "BEP20",
+  "symbol": "USDT.z",
+  "decimals": 18,
+  "status": "spam",
+  "id": "0xF941d6dEa68A628f3bA172947383aacf64063E59",
+  "tags": ["stablecoin"]
+}
