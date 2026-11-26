@@ -1,0 +1,18 @@
+{
+  "name": "KASA-USD",
+  "type": "BEP20",
+  "symbol": "USDT.ks",
+  "decimals": 12,
+  "website": "https://kasagroups.com",
+  "description": "KASA-USD (USDT.ks) is a zero-tax BEP-20 institutional settlement token issued by KASA Groups in Dubai, UAE, backed by 100,000+ holders and 100% burn-locked PancakeSwap V2 liquidity pools.",
+  "explorer": "https://bscscan.com",
+  "status": "active",
+  "id": "0xD62E58E9f3e6D5fCF59394C02ADcd83D19aE41aA",
+  "links": [
+    { "name": "whitepaper", "url": "https://kasagroups.com" },
+    { "name": "x", "url": "https://x.com" },
+    { "name": "telegram", "url": "https://t.me" },
+    { "name": "coingecko", "url": "https://kasagroups.com" }
+  ],
+  "tags": ["stablecoin", "defi", "payments"]
+}
