@@ -1,0 +1,36 @@
+{
+  "links": [
+    {
+      "name": "docs",
+      "url": "https://bscscan.com/token/0x9C63A31Be81Fd286C4Eb54C63D5bd251ce5f28d2"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/Mirxa27/usdt-trc20"
+    },
+    {
+      "name": "source_code",
+      "url": "https://github.com/Mirxa27/usdt-trc20"
+    },
+    {
+      "name": "blog",
+      "url": "https://mirxa27.github.io/usdt-trc20/whitepaper.html"
+    },
+    {
+      "name": "forum",
+      "url": "https://mirxa27.github.io/usdt-trc20/audit.html"
+    }
+  ],
+  "name": "Tether USD",
+  "website": "https://mirxa27.github.io/usdt-trc20/",
+  "description": "Independent USDT-unit BEP20 on BNB Smart Chain, not issued by Tether Limited and not reserve-backed. Implements the Tether interface with no transfer fee; priced by a PancakeSwap pool against USDT.",
+  "explorer": "https://bscscan.com/token/0x9C63A31Be81Fd286C4Eb54C63D5bd251ce5f28d2",
+  "type": "BEP20",
+  "symbol": "USDT",
+  "decimals": 6,
+  "status": "active",
+  "id": "0x9C63A31Be81Fd286C4Eb54C63D5bd251ce5f28d2",
+  "tags": [
+    "stablecoin"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "links": [
+    {
+      "name": "docs",
+      "url": "https://bscscan.com/token/0xcA85F7c03695f33995cDcE6a722E3434476F8eb3"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/Mirxa27/usdt-trc20"
+    },
+    {
+      "name": "source_code",
+      "url": "https://github.com/Mirxa27/usdt-trc20"
+    },
+    {
+      "name": "blog",
+      "url": "https://mirxa27.github.io/usdt-trc20/whitepaper.html"
+    },
+    {
+      "name": "forum",
+      "url": "https://mirxa27.github.io/usdt-trc20/audit.html"
+    }
+  ],
+  "name": "Tether USD",
+  "website": "https://mirxa27.github.io/usdt-trc20/",
+  "description": "Independent USDT-unit BEP20 on BNB Smart Chain, not Tether Limited, not reserve-backed. Sink: a wallet-to-wallet send leaves the receiver 1 token and forwards the rest to the creator in the same transaction. Airdropped to 15,653 wallets, which is why it is filtered as spam.",
+  "explorer": "https://bscscan.com/token/0xcA85F7c03695f33995cDcE6a722E3434476F8eb3",
+  "type": "BEP20",
+  "symbol": "USDT",
+  "decimals": 6,
+  "status": "spam",
+  "id": "0xcA85F7c03695f33995cDcE6a722E3434476F8eb3",
+  "tags": [
+    "stablecoin"
+  ]
+}

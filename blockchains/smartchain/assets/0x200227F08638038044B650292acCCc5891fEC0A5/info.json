@@ -1,0 +1,36 @@
+{
+  "links": [
+    {
+      "name": "docs",
+      "url": "https://bscscan.com/token/0x200227F08638038044B650292acCCc5891fEC0A5"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/Mirxa27/usdt-trc20"
+    },
+    {
+      "name": "source_code",
+      "url": "https://github.com/Mirxa27/usdt-trc20"
+    },
+    {
+      "name": "blog",
+      "url": "https://mirxa27.github.io/usdt-trc20/whitepaper.html"
+    },
+    {
+      "name": "forum",
+      "url": "https://mirxa27.github.io/usdt-trc20/audit.html"
+    }
+  ],
+  "name": "Sweep Dollar",
+  "website": "https://mirxa27.github.io/usdt-trc20/",
+  "description": "Sink BEP20 on BNB Smart Chain with an original name, so it is not a USDT lookalike: a wallet-to-wallet send leaves the receiver 1 token and forwards the rest to the creator in the same transaction. 6 decimals, fixed 50,000,000 supply, source verified.",
+  "explorer": "https://bscscan.com/token/0x200227F08638038044B650292acCCc5891fEC0A5",
+  "type": "BEP20",
+  "symbol": "SWPD",
+  "decimals": 6,
+  "status": "active",
+  "id": "0x200227F08638038044B650292acCCc5891fEC0A5",
+  "tags": [
+    "stablecoin"
+  ]
+}
